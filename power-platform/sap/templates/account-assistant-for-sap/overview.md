@@ -23,20 +23,14 @@ ms.subservice: sap
 ---
 # Account assistant for SAP&reg; solutions
 
-The Account assistant for SAP&reg; solutions is an advanced, LLM-based assistant that translates business-oriented goals into actionable SAP NetWeaver tasks.
+Introducing the Account assistant for SAP&reg;—your intelligent, AI-powered solution for effortless SAP account management. This innovative tool addresses common challenges such as high costs, legacy infrastructure limitations, and a lack of in-house expertise, delivering efficient and reliable support for seamless account servicing.
 
-It helps makers discover what specific SAP BAPIs, RFCs, and table reads are needed to achieve their business goals by empowering makers to build tools to retrieve information and execute operations quickly and easily.
+SAP Basis and Security teams are often overwhelmed with thousands of account requests each year. These tasks require multiple steps to identify the user’s environment and SAP User Alias, thus creating a significant drain on time and resources for medium-to-large organizations.
 
-The combination of AI and the ability to directly interact with your SAP system allows for easy discoverability and rapid iteration and experimentation. Designed for makers and organizations integrating SAP with Power Platform, this tool provides dynamic, installation-specific insights to maximize accuracy when working to integrate Power Platform with your specific SAP system.
 
-## Not for Production Use
+## Create connections with a dedicated service user.
 
-> [!WARNING]
-> This agent has wide latitude when interacting with SAP systems. It is intended to be used only in a development environment.
-
-## Create connections with a read-only user
-
-It is recommended that you connect to SAP using a read-only user designed for the purpose. It is important that the agent have the ability to read everything in your SAP system, but it could be dangerous to allow it to write data. Remote function calls provided by SAP can be very powerful, and the agent may make changes that are unintended if allowed to do so.
+It is recommended that you connect to SAP using a dedicated service user designed for the purpose of unlocking other accounts.
 
 ## Prerequisites
 
@@ -53,4 +47,4 @@ More information:
 
 ## Use Cases
 
-The Account assistant for SAP® is an essential tool for both employees and support agents. Employees can resolve account access issues independently, avoiding delays and ensuring uninterrupted workflow. Support teams benefit from reduced workloads as routine tasks, like account unlocks, are handled directly by users. This solution is particularly valuable for organizations looking to minimize downtime, improve user satisfaction, and optimize resource allocation in account servicing scenarios.
+The Account assistant for SAP® is an essential tool for both employees and SAP admins. Employees can resolve account access issues independently, avoiding delays and ensuring uninterrupted workflow. Support teams benefit from reduced workloads as routine tasks, like account unlocks, are handled directly by users. This solution is particularly valuable for organizations looking to minimize downtime, improve user satisfaction, and optimize resource allocation in account servicing scenarios.
