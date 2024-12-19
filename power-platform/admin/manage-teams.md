@@ -147,7 +147,7 @@ You can add and delete members from a team.
 
 4. Select **Delete** twice to confirm. Note that this action can't be undone.
 
-### Convert owner teams to access teams (preview)
+### Convert owner teams to access teams
 
 You can convert _owner_ teams to become _access_ teams. 
 
@@ -166,7 +166,7 @@ You can convert _owner_ teams to become _access_ teams.
 1. Select **Convert Owner team to Access Team** from the command bar. 
 1. Select **OK** to complete the action.
 
-### Reassign team's records (preview)
+### Reassign team's records
 
 You can reassign the owner team's records to another user or team.  
 
