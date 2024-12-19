@@ -32,7 +32,7 @@ Data masking helps protect sensitive information during customer interactions an
 
 - These rules use *regular expressions* to identify specific patterns, for example a credit card number, social security number, and email address.
 
-- These patterns are detected and the core fields are replaced with masked characters.
+- These patterns are detected and the sensitive fields are replaced with masked characters when the row is retrieved. 
 
 ## Create masking rules
 
@@ -65,11 +65,20 @@ You get a predefined set of masking rules, to start, or you can create your own.
 
 1. Enter a **Masked Character**, for example `#`.
 
-1. Enter an original value in the **Enter Test Data** field, for example a social security number.
+1. Enter an original value in the **Enter Plain Text Test Data** field, for example a social security number, email address, etc.
+
+1. Enter an original value in the **Enter Rich Text Test Data** field, for example a social security number, email address, etc. (for testing Text Data type with Rich text format columns).
+>   [!NOTE]
+>   For **Rich text** field, the raw value of the field needs to be taken into account when defining the **Regular Expression**. You can view the raw value using a Web API to query the table/column with rich text, example <org url>/api/data/v9.2/maskingrules(<id>)?$select=richtestdata
+>
+> (result)
+>
+> "richtestdata": "<div class=\"ck-content\" data-wrapper=\"true\" dir=\"ltr\" style=\"--ck-image-style-spacing: 1.5em; --ck-inline-image-style-spacing: calc(var(--ck-image-style-spacing) / 2); --ck-color-selector-caption-background: hsl(0, 0%, 97%); --ck-color-selector-caption-text: hsl(0, 0%, 20%); font-family: Segoe UI; font-size: 11pt;\"><p style=\"margin: 0;\">123-45-789<//p><//div>"
+>
 
 1. Select **Save**.
 
-   Now you see **Masked test data**.
+   Now you see **Masked Plain Text test data**, and **Masked Rich Text test data**.
 
    Your masked values might be masked like this:
 
@@ -95,9 +104,9 @@ You get a predefined set of masking rules, to start, or you can create your own.
 
 1. Select **Tables** and choose the **All** filter.
 
-1. Enter *Secured masking rule* in the search bar.
+1. Enter *masking rule* in the search bar.
 
-1. Select the **Secured masking rule** table.
+1. Select the line Table **Masking Rule** with Name **maskingrule**.
 
    A list of masking rules is displayed. You can expand the list by selecting the **+ more** dropdown.
 
@@ -127,6 +136,12 @@ You get a predefined set of masking rules, to start, or you can create your own.
 
 1. Select **Save**.
 
+>   [!NOTE]
+>   Data types that masking rule can be set:
+>   1. Text (single-line and multi-line).
+>   2. Number.
+> 
+
 ### Grant permissions to a secured column with a masking rule
 
 Permissions to read masked fields are granted using the [Column security profiles](/power-platform/admin/set-up-security-permissions-field#associate-security-profiles-and-set-permissions).
@@ -154,6 +169,10 @@ Users or Teams groups can be granted access through column security:
 - **Create**
 
   **Allowed** - Users are allowed to create records.
+  
+>   [!NOTE]
+>   System and application users with **Read** and **Read unmasked** permissions will get masked values by default. To read unmasked values, see [options for viewing masked fields](/power-platform/admin/create-manage-masking-rules.md#options-for-viewing-masked-fields)
+> 
 
 ### View all columns that have a masking rule
 
@@ -161,25 +180,25 @@ You can get a list of all secured columns from all tables with masking rules.
 
 1. Go to the [Power Apps portal](https://make.powerapps.com).
 
-1. Select the environment where you want to add a masking rule to a column.
+1. Select the environment where you want to view all the columns with masking rule.
 
-1. Select **Tables** and choose your preferred table with a secured column.
+1. Select **Tables** and choose the **All** filter.
 
-1. Enter *Secured masking columns* in the search bar.
+1. Enter *attributemaskingrule* in the search bar.
 
-1. Select the **Secured masking columns** table.
+1. Select the **AttributMaskingRule** table.
 
    A list of columns with masking rules is displayed. You can expand the list by selecting the **+ more** dropdown.
 
 ### How are masked fields displayed?
 
-If you have permission to **Read** unmasked fields, you see unmasked values.
+If you have permission to **Read** unmasked fields, you see masked values by default here:
 
 | **Field type** | **Masked columns returned with masked values?** |
 |----------------|-------------------------------------------------|
 | Grid           | Always                                          |
 | Form           | Always                                          |
-| Copilot        | You can ask copilot to search in a secured column, but results are returned with masked values. |
+| Copilot        | Always                                          |
 | Excel report   | Always                                          |
 
 > [!NOTE]
@@ -192,27 +211,19 @@ If you have permission to **Read** unmasked fields, you see unmasked values.
 
 Permission to read unmasked values is required. You can read unmasked values in a record.
 
-In these examples, replace `<url>`, `<tablename>`, and `<recordid>` with your own values.
+In these examples, replace `<url>`, `<table collection name>`, and `<recordid>` with your own values.
 
 - Example for all masked columns in a record:
 
-  `https://<url>/api/data/v9.1/<tablename>(<recordid>)?UnMaskedData=true`
+  `https://<url>/api/data/v9.1/<table collection name>(<recordid>)?UnMaskedData=true`
 
 - Example for individual masked columns:
 
   Replace `<column_name>` with your secured column name.
 
-  `https://<url>/api/data/v9.1/<tablename>(<recordid>)?$select=<column_name>&UnMaskedData=true`
+  `https://<url>/api/data/v9.1/<table collection name>(<recordid>)?$select=<column_name>&UnMaskedData=true`
 
 ## Known limitations
-
-- **Using Search**
-
-  You can enable **Search** on a secured column with masking rules. When you search on a sensitive column with unmasked values, the results might return as unmasked values.
-
-- **Using Copilot**
-
-  Copilot might return the unmasked values when prompted.
 
 - **Reading unmasked values on the form**
 
@@ -221,3 +232,8 @@ In these examples, replace `<url>`, `<tablename>`, and `<recordid>` with your ow
 - **Creating and updating unmasked values on the form**
 
   When you create a new record, you enter the sensitive field as unmasked values. After you save, the form automatically refreshes, and the sensitive field is immediately masked. You can update the field but make sure that you enter the unmasked values.
+
+- **Audit log**
+
+  Unmasked values are displayed in the audit log. In future releases, these will be masked with option to read unmasked for users who have **Read unmasked** permission.
+
