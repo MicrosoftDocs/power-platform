@@ -2,7 +2,7 @@
 title: Create and manage masking rules (preview)
 description: Learn how to create and manage masking rules in Microsoft Power Apps.
 ms.component: pa-admin
-ms.date: 08/14/2024
+ms.date: 12/20/2024
 ms.topic: overview
 ms.custom: "admin-security"
 author: paulliew
@@ -68,8 +68,10 @@ You get a predefined set of masking rules, to start, or you can create your own.
 1. Enter an original value in the **Enter Plain Text Test Data** field, for example a social security number, email address, etc.
 
 1. Enter an original value in the **Enter Rich Text Test Data** field, for example a social security number, email address, etc. (for testing Text Data type with Rich text format columns).
->   [!NOTE]
->   For **Rich text** field, the raw value of the field needs to be taken into account when defining the **Regular Expression**. You can view the raw value using a Web API to query the table/column with rich text, example <org url>/api/data/v9.2/maskingrules(<id>)?$select=richtestdata
+
+> [!NOTE]
+> For **Rich text** field, the raw value of the field needs to be taken into account when defining the **Regular Expression**. You can view the raw value using a Web API to query the table/column with rich text. For example, 
+> `https://<org url>/api/data/v9.2/maskingrules(<id>)?$select=richtestdata`
 >
 > (result)
 >
@@ -136,11 +138,10 @@ You get a predefined set of masking rules, to start, or you can create your own.
 
 1. Select **Save**.
 
->   [!NOTE]
->   Data types that masking rule can be set:
->   1. Text (single-line and multi-line).
->   2. Number.
-> 
+> [!NOTE]
+> Data types that masking rule can be set:
+> 1. Text (single-line and multi-line).
+> 1. Number.
 
 ### Grant permissions to a secured column with a masking rule
 
@@ -170,9 +171,8 @@ Users or Teams groups can be granted access through column security:
 
   **Allowed** - Users are allowed to create records.
   
->   [!NOTE]
->   System and application users with **Read** and **Read unmasked** permissions will get masked values by default. To read unmasked values, see [options for viewing masked fields](/power-platform/admin/create-manage-masking-rules.md#options-for-viewing-masked-fields)
-> 
+> [!NOTE]
+> System and application users with **Read** and **Read unmasked** permissions will get masked values by default. To read unmasked values, see [options for viewing masked fields](#options-for-viewing-masked-fields).
 
 ### View all columns that have a masking rule
 
@@ -236,4 +236,3 @@ In these examples, replace `<url>`, `<table collection name>`, and `<recordid>` 
 - **Audit log**
 
   Unmasked values are displayed in the audit log. In future releases, these will be masked with option to read unmasked for users who have **Read unmasked** permission.
-
