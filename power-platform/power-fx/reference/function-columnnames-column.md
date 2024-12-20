@@ -61,7 +61,9 @@ Given the following JSON string in a variable named `JsonString`
         Concat(
             ColumnNames( untyped ),
             $"{Value}: {Column( untyped, Value )}",
-            ", "))
+            ", "
+        )
+    )
     ```
 
 ### Blanks
