@@ -35,7 +35,7 @@ As reporting needs grew, so did the solution. For example, to align time trackin
 
 Dataverse makes it easier to display data in Power BI, enabling managers to quickly review worker activity on a daily, real-time basis. In fact, almost all of the apps at John Cockerill are run on Dataverse and include a Power BI dashboard. As Bonsangue explains, "Our digitalization strategy isn't just about building apps but using these apps to gather quality data that is easily analyzed by managers." His ultimate strategy is to use this data to drive CRM activities and continuous improvement.
 
-:::image type="content" source="../media/solution-flow-diagram.png" alt-text="Diagram showing the flow of the time tracking solution." lightbox="media/engineering-time-tracking/solution-flow-diagram.png":::
+:::image type="content" source="../../media/solution-flow-diagram.png" alt-text="Diagram showing the flow of the time tracking solution." lightbox="media/engineering-time-tracking/solution-flow-diagram.png":::
 
 Today, there are more than 30 Power Platform solutions deployed at John Cockerill, with more than 2,000 daily users. Other enterprise-wide solutions include more efficient processes for ordering company cars, creating customer contracts, and hiring temporary workers. "Power Platform enabled us to create bespoke applications that meet the specific demands of each business unit. These applications are key to our successful digital transformation, ensuring that every part of our organization benefits from innovation, no matter how unique their needs," says Debroux.
 
