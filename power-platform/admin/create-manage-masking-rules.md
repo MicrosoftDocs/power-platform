@@ -69,13 +69,13 @@ You get a predefined set of masking rules, to start, or you can create your own.
 
 1. Enter an original value in the **Enter Rich Text Test Data** field, for example a social security number, email address, etc. (for testing Text Data type with Rich text format columns).
 
-> [!NOTE]
-> For **Rich text** field, the raw value of the field needs to be taken into account when defining the **Regular Expression**. You can view the raw value using a Web API to query the table/column with rich text. For example, 
-> `https://<org url>/api/data/v9.2/maskingrules(<id>)?$select=richtestdata`
->
-> (result)
->
-> "richtestdata": "<div class=\"ck-content\" data-wrapper=\"true\" dir=\"ltr\" style=\"--ck-image-style-spacing: 1.5em; --ck-inline-image-style-spacing: calc(var(--ck-image-style-spacing) / 2); --ck-color-selector-caption-background: hsl(0, 0%, 97%); --ck-color-selector-caption-text: hsl(0, 0%, 20%); font-family: Segoe UI; font-size: 11pt;\"><p style=\"margin: 0;\">123-45-789<//p><//div>"
+    > [!NOTE]
+    > For **Rich text** field, the raw value of the field needs to be taken into account when defining the **Regular Expression**. You can view the raw value using a Web API to query the table/column with rich text. For example, 
+    > `https://<org url>/api/data/v9.2/maskingrules(<id>)?$select=richtestdata`
+    >
+    > (result)
+    >
+    > "richtestdata": "<div class=\"ck-content\" data-wrapper=\"true\" dir=\"ltr\" style=\"--ck-image-style-spacing: 1.5em; --ck-inline-image-style-spacing: calc(var(--ck-image-style-spacing) / 2); --ck-color-selector-caption-background: hsl(0, 0%, 97%); --ck-color-selector-caption-text: hsl(0, 0%, 20%); font-family: Segoe UI; font-size: 11pt;\"><p style=\"margin: 0;\">123-45-789<//p><//div>"
 >
 
 1. Select **Save**.
