@@ -24,6 +24,9 @@ On the left of the overview, makers will see their failed deployments. By select
 ## Active deployments
 On the right of the overview, makers will see their ongoing deployments. Upon selecting these deployments, makers can view the in-progress details of the deployment (e.g. waiting for a pre-deployment approval). This is useful for makers who work in multiple solutions that they are deploying simultaneously.
 
+## Deployment history
+At the bottom of the overview, makers will see their deployment history. This section provides a comprehensive list of all deployments, including the deployment status, the solution, the pipeline, and the environment. Makers can filter this list by solution, pipeline, and environment to quickly find the deployment they are looking for. This run history view is unique in that 1) it's filtered to only show the current user's deployments specifically to/from this environment, and (2) it is upleveled to show all the current user's deployments, not just involving one solution or pipeline. Clicking on a deployment in this grid will show a details panel, summarizing all the deployment information and displaying the deployment notes as well.
+
 ## Frequently asked questions
 
 ### Why can't I see solution deployments other than those that I initiated?
