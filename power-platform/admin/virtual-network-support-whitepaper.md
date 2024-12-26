@@ -231,6 +231,42 @@ Securing outbound connections from Power Platform services is crucial to mitigat
 
 By following these best practices, you can secure outbound connections from Power Platform services, protect your data from exfiltration, and ensure compliance with security policies.
 
+## Sample Scenarios for VNet set up and configuration
+### When the Enterprise's Azure resources are in one of the paired azure regions and Power Platform Environment is in United States.
+
+**Assumptions:**
+
+1. The Enterprise's Power Platform environment is located in the United States
+2. The primary and failover Azure region for VNet is set to West US ad East US respectively.
+3. The Enterprise's resources are in a virtual network (VNET1) in Azure West US region.
+
+**Minimum Configuration needed to configure VNet on for the environment are as below:**
+
+1. Create a virtual network (VNET1) in West US and set up subnet(s) for delegation.
+2. Create a virtual network (VNET2) in East US and set up subnet(s) for delegation.
+3. Establish a peering connection between VNET1 and VNET2.
+4. Configure Power Platform VNET Integration for the desired environments using the subnet(s) created in steps 1 and 2.
+
+:::image type="content" source="media/VNet-Sample-Scenario-1.png" alt-text="A diagram showing VNet configuration When the Enterprise's Azure resources are in one of the paired azure regions and Power Platform Environment is in United States." lightbox="media/VNet-Sample-Scenario-1.png":::
+
+### When the Enterprise's Azure resources are in Central US Azure region and Power Platform is in United States
+
+**Assumptions:**
+
+1. The Enterprises's Power Platform environment is located in United States.
+2. The primary and failover Azure region for VNet is set to West US ad East US respectively.
+3. The customer's resources are in a virtual network (VNET1) in Central US Azure region.
+
+**Minimum Configuration needed to configure VNet on for the environment are as below:**
+
+1. Create a virtual network (VNET2) in West US and set up subnet(s) for delegation.
+2. Create a virtual network (VNET3) in East US and set up subnet(s) for delegation.
+3. Establish a peering connection between VNET1 and VNET2.
+4. Establish a peering connection between VNET1 and VNET3.
+5. Configure Power Platform VNET Integration for the desired environments using the subnet(s) created in steps 1 and 2.
+
+:::image type="content" source="media/VNet-Sample-Scenario-2.png" alt-text="A diagram showing VNet configuration When the Enterprise's Azure resources are in Central US Azure region and Power Platform is in United States." lightbox="media/VNet-Sample-Scenario-2.png":::
+
 ## Case study
 ### Enhancing business agility with generative AI and secure integration using Azure Virtual Network
 
