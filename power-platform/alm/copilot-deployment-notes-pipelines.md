@@ -29,6 +29,8 @@ When you deploy solutions in a pipeline in Power Platform, you can [deploy with 
 - You must have access to run a pipeline. More information: [Grant access to edit or run pipelines](custom-host-pipelines.md#grant-access-to-edit-or-run-pipelines)
 - The setting for **AI deployment notes** must be set to **Enabled** in the **Deployment Pipeline Configuration** app for each pipeline you want to use this feature with.
 
+:::image type="content" source="media/Enable AI Deployment Notes.png" alt-text="Enable AI deployment notes in pipeline settings within the Deployment Pipeline Configuration app" lightbox="media/Enable AI Deployment Notes":::
+
 ## Deploy a solution with Copilot generated deployment notes
 
 Solutions can become complex, often containing dozens of components that are difficult to partition and summarize. With pipeline deployments, admins and deployment approvers have to open the solutions themselves to gain an understanding of what’s included unless that information is provided in the deployment notes. By helping makers generate useful solution descriptions with AI, Copilot saves valuable time and provides better, more accurate information than makers could within the generation time. These descriptions are generated for you, pre-filling the deployment notes field.
