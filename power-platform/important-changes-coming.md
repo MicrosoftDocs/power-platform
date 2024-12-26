@@ -1,7 +1,7 @@
 ---
 title: Important changes (deprecations) coming in Power Platform
 description: Important changes (deprecations) coming in Power Platform 
-ms.date: 12/03/2024
+ms.date: 12/26/2024
 ms.topic: conceptual
 ms.subservice: admin
 searchScope:
@@ -97,7 +97,7 @@ The Connector Certification Portal was a preview portal that allowed partners to
 
 After careful consideration, and thanks to the feedback from partners, a decision was made to decommission the portal starting 15th Jan 2025.
 
-While the portal will be decommissioned, the program will continue. For the latest information on the status of the program and how to certify your connector, learn more about the [Data Factory Connector Certification](https://learn.microsoft.com/en-us/fabric/data-factory/connector-certification)”
+While the portal will be decommissioned, the program will continue. For the latest information on the status of the program and how to certify your connector, learn more about the [Data Factory Connector Certification](/fabric/data-factory/connector-certification).
 
 
 ## DLP resource exemption feature
