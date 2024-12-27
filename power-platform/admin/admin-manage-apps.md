@@ -134,7 +134,7 @@ Set-AppAsUnquarantined -EnvironmentName <EnvironmentName> -AppName <AppName>
 Get-AppQuarantineState -EnvironmentName <EnvironmentName> -AppName <AppName>
 ```
 
-## Conditional Access on individual apps (preview)
+## Conditional Access on individual apps
 In addition to respecting Conditional Access policies applied to the Power Apps service, it's possible to apply Microsoft Entra Conditional Access policies to individual apps created using Power Apps. For example, an admin can apply a Conditional Access policy requiring Multi-factor authentication only on apps containing sensitive data. Power Apps uses [Conditional Access authentication context](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps#authentication-context-preview) as the mechanism to target Conditional Access policies on granular apps. Admins are the persona allowed to add and remove authentication contexts on an app. Makers cannot edit authentication contexts on an app.   
 
 > [!NOTE]
@@ -160,7 +160,7 @@ The following table reflects conditional access on granular apps support:
 
 | Power Apps type  | Conditional Access on individual apps support |
 |------------------|---------------------------------------------|
-| Canvas app       | Preview availability                        |
+| Canvas app       | General availability                        |
 | Model-driven app | Not supported                               |
 
 ### Add Conditional Access authentication context IDs to an app
