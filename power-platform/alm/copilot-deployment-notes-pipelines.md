@@ -29,7 +29,7 @@ When you deploy solutions in a pipeline in Power Platform, you can [deploy with 
 - You must have access to run a pipeline. More information: [Grant access to edit or run pipelines](custom-host-pipelines.md#grant-access-to-edit-or-run-pipelines)
 - The setting for **AI deployment notes** must be set to **Enabled** in the **Deployment Pipeline Configuration** app for each pipeline you want to use this feature with.
 
-:::image type="content" source="media/Enable AI Deployment Notes.png" alt-text="Enable AI deployment notes in pipeline settings within the Deployment Pipeline Configuration app" lightbox="media/Enable AI Deployment Notes":::
+:::image type="content" source="media/Enable AI Deployment Notes.png" alt-text="Enable AI deployment notes in pipeline settings within the Deployment Pipeline Configuration app" lightbox="media/Enable AI Deployment Notes.png":::
 
 ## Deploy a solution with Copilot generated deployment notes
 
