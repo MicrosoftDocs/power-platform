@@ -29,6 +29,8 @@ Consider the following information about security roles:
 > [!NOTE]
 >  By default, the System Administrator security role has all the required privileges to assign security roles to any user, including assigning the System Administrator security role. If you have a need to allow **non-System Administrators** to assign security roles, you should consider creating a custom security role with all the privileges listed in [Create an administrative user and prevent elevation of security role privilege](prevent-elevation-security-role-privilege.md). Assign the custom security role and all the security roles that the non-System Administrator can assign to other users, to the non-System Administrator. This security role requirement is also required if you allow non-System Administrators to [manage team members in owner teams](manage-teams.md#manage-team-members).
 >
+> System Administrator role should be assigned directly to users, or to a security group the users are part of.
+> 
 > It's important to note that custom security roles are **not** supported for canvas apps.
  
 For more information about the difference between [!INCLUDE[pn_MS_Online_Services](../includes/pn-ms-online-services.md)] administrator roles and security roles, see [Grant users access](grant-users-access.md).
