@@ -241,7 +241,7 @@ By following these best practices, you can secure outbound connections from Powe
 - The primary and failover Azure region for Virtual Network is set to West US ad East US respectively.
 - The enterprise's resources are in a Virtual Network (VNET1) in Azure West US region.
 
-**Minimum configuration needed to configure Virtual Network**
+**Minimum configuration needed to configure Virtual Network:**
 
 1. Create a Virtual Network (VNET1) in West US and set up subnet(s) for delegation.
 2. Create a virtual network (VNET2) in East US and set up subnet(s) for delegation.
