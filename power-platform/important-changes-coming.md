@@ -1,7 +1,7 @@
 ---
 title: Important changes (deprecations) coming in Power Platform
 description: Important changes (deprecations) coming in Power Platform 
-ms.date: 12/03/2024
+ms.date: 12/26/2024
 ms.topic: conceptual
 ms.subservice: admin
 searchScope:
@@ -91,7 +91,14 @@ Thanks to our ISV partners for trying out ISV Studio during the preview. After c
 
 To continue accessing analytics related to your AppSource solutions, use the reporting features in Partner Center. Although this alternative might not offer the same data from ISV Studio, Partner Center serves as a valuable resource for insights and tools to empower your business growth and success.
 
-For the connector certification wizard, learn more about [directly accessing the connector certification portal](/connectors/custom-connectors/submit-certification).
+## Connector Certification Portal Deprecation
+
+The Connector Certification Portal was a preview portal that allowed partners to submit and certify connectors created using the Power Query SDK. Once certified, these connectors would ship in products such as Power BI Desktop, On-Premises Data Gateway and Power Query Online in general.
+
+After careful consideration, and thanks to the feedback from partners, a decision was made to decommission the portal starting 15th Jan 2025.
+
+While the portal will be decommissioned, the program will continue. For the latest information on the status of the program and how to certify your connector, learn more about the [Data Factory Connector Certification](/fabric/data-factory/connector-certification).
+
 
 ## DLP resource exemption feature
 
