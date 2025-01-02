@@ -125,7 +125,7 @@ You can use "\*" as a special character to signify all tenants are allowed in th
 You can edit the direction of the tenant allowlist entry based on business requirements. Note that the **Tenant Domain or ID** field can't be edited in the **Edit tenant rule** page. 
 
 > [!NOTE]
-> To ensure that tenant isolation doesn't block any calls when used, turn tenant isolation **On**, add a new tenant rule, set Tenant ID as *****, and set allowed direction to **inbound** and **outbound**.
+> To ensure that tenant isolation doesn't block any calls when used, turn tenant isolation **On**, add a new tenant rule, set Tenant ID as "\*", and set allowed direction to **inbound** and **outbound**.
 
 You can perform all the allowlist operations like add, edit, and delete while tenant isolation is turned **On** or **Off**. Allowlist entries do have an effect on the connection behavior when tenant isolation is turned **Off** since all cross-tenant connections are allowed. 
 
