@@ -1,7 +1,7 @@
 ---
 title: Restrict cross-tenant inbound and outbound access
-description: "Use tenant restrictions to control access to SaaS cloud applications based on the Microsoft Entra tenant. You can also enforce tenant isolation for Power Platform connections."  
-ms.date: 07/26/2024
+description: Use tenant restrictions to control access to SaaS cloud applications based on the Microsoft Entra tenant. You can also enforce tenant isolation for Power Platform connections. 
+ms.date: 01/02/2025
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: conceptual
@@ -15,6 +15,8 @@ ms.reviewer: sericks
 ms.custom: "admin-security"
 search.audienceType: 
   - admin
+contributors:
+  - akadrno
 ---
 
 # Cross-tenant inbound and outbound restrictions
@@ -123,7 +125,7 @@ You can use "\*" as a special character to signify all tenants are allowed in th
 You can edit the direction of the tenant allowlist entry based on business requirements. Note that the **Tenant Domain or ID** field can't be edited in the **Edit tenant rule** page. 
 
 > [!NOTE]
-> To ensure that Tenant Isolation doesn't block any calls when enabled, turn Tenant Isolation On, add a New tenant rule, set Tenant ID as *, and set Allowed direction to Inbound and Outbound.
+> To ensure that tenant isolation doesn't block any calls when used, turn tenant isolation **On**, add a new tenant rule, set Tenant ID as "\*", and set allowed direction to **inbound** and **outbound**.
 
 You can perform all the allowlist operations like add, edit, and delete while tenant isolation is turned **On** or **Off**. Allowlist entries do have an effect on the connection behavior when tenant isolation is turned **Off** since all cross-tenant connections are allowed. 
 
