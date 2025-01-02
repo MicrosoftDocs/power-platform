@@ -4,7 +4,7 @@ description: Learn about Microsoft Azure Virtual Network support within Power Pl
 author: ritesp
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/26/2024
+ms.date: 01/02/2025
 ms.subservice: admin
 ms.author: ritesp
 ms.reviewer: sericks
@@ -247,7 +247,7 @@ By following these best practices, you can secure outbound connections from Powe
 3. Establish a peering connection between VNET1 and VNET2.
 4. Configure Power Platform VNET Integration for the desired environments using the subnet(s) created in steps 1 and 2.
 
-:::image type="content" source="media/VNet-Sample-Scenario-1.png" alt-text="A diagram showing VNet configuration When the Enterprise's Azure resources are in one of the paired azure regions and Power Platform Environment is in United States." lightbox="media/VNet-Sample-Scenario-1.png":::
+:::image type="content" source="media/vnet-sample-scenario-1.png" alt-text="A diagram showing VNet configuration When the Enterprise's Azure resources are in one of the paired azure regions and Power Platform Environment is in United States." lightbox="media/vnet-sample-scenario-1.png":::
 
 ### When the Enterprise's Azure resources are in Central US Azure region and Power Platform is in United States
 
@@ -265,7 +265,7 @@ By following these best practices, you can secure outbound connections from Powe
 4. Establish a peering connection between VNET1 and VNET3.
 5. Configure Power Platform VNET Integration for the desired environments using the subnet(s) created in steps 1 and 2.
 
-:::image type="content" source="media/VNet-Sample-Scenario-2.png" alt-text="A diagram showing VNet configuration When the Enterprise's Azure resources are in Central US Azure region and Power Platform is in United States." lightbox="media/VNet-Sample-Scenario-2.png":::
+:::image type="content" source="media/vnet-sample-scenario-2.png" alt-text="A diagram showing VNet configuration When the Enterprise's Azure resources are in Central US Azure region and Power Platform is in United States." lightbox="media/vnet-sample-scenario-2.png":::
 
 ## Case study
 ### Enhancing business agility with generative AI and secure integration using Azure Virtual Network
