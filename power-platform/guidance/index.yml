@@ -114,40 +114,38 @@ productDirectory:
 additionalContent:
   # Supports up to 4 subsections
   sections:
-   - title: Tools and resources
-     items:
-       - title: Center of Excellence (CoE) Kit
-         imageSrc: ./media/sample-coe.svg
-         links:
-          - url: /power-platform/guidance/coe/overview
-            text: CoE overview
-          - url: /power-platform/guidance/coe/starter-kit-explained
-            text: What's in the CoE starter Kit
-          - url: /power-platform/guidance/coe/setup
-            text: Set up the CoE starter Kit
-          - url: /power-platform/guidance/coe/power-bi
-            text: Use the CoE starter Kit
+    - title: Tools and resources
+      items:
+        - title: Center of Excellence (CoE) Kit
+          imageSrc: ./media/sample-coe.svg
+          links:
+           - url: /power-platform/guidance/coe/overview
+             text: CoE overview
+           - url: /power-platform/guidance/coe/starter-kit-explained
+             text: What's in the CoE starter Kit
+           - url: /power-platform/guidance/coe/setup
+             text: Set up the CoE starter Kit
+           - url: /power-platform/guidance/coe/power-bi
+             text: Use the CoE starter Kit
         # Card
-      - title: Creator Kit
-        imageSrc: ./media/sample-creator.svg
-        links:
-          - url: /power-platform/guidance/creator-kit/overview
-            text: Creator Kit overview
-          - url: /power-platform/guidance/creator-kit/components
-            text: What's in the Creator Kit
-          - url: /power-platform/guidance/creator-kit/setup
-            text: Install the Creator Kit
-          - url: /power-platform/guidance/creator-kit/creator-kit-explained
-            text: Use the Creator Kit
-      - title: More...
-        imageSrc: ./media/sample-more.svg
-        links:
-          - url: /power-platform/guidance/expressroute/overview
-            text: Azure ExpressRoute and Power Platform
-          - url: /power-platform/guidance/white-papers
-            text: White papers
-          - url: /power-platform/guidance/icons
-            text: Power Platform icons
+        - title: Creator Kit
+          imageSrc: ./media/sample-creator.svg
+          links:
+            - url: /power-platform/guidance/creator-kit/overview
+              text: Creator Kit overview
+            - url: /power-platform/guidance/creator-kit/components
+              text: What's in the Creator Kit
+            - url: /power-platform/guidance/creator-kit/setup
+              text: Install the Creator Kit
+            - url: /power-platform/guidance/creator-kit/creator-kit-explained
+              text: Use the Creator Kit
+        - title: More...
+          imageSrc: ./media/sample-more.svg
+          links:
+            - url: /power-platform/guidance/white-papers
+              text: White papers
+            - url: /power-platform/guidance/icons
+              text: Power Platform icons
     - title: Related guidance centers
       summary: Guidance information focused on individual Power Platform components # < 160 chars (optional)
       items:
