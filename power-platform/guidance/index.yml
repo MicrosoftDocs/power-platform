@@ -86,7 +86,7 @@ productDirectory:
           text: Nurture and educate
     - title: Ready
       # imageSrc should be square in ratio with no white space
-      imageSrc: ./media/implement.svg
+      imageSrc: ./media/innovate.svg
       links:
         - url: /power-platform/guidance/adoption/methodology
           text: Adoption overview
