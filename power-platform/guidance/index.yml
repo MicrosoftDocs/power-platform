@@ -13,18 +13,20 @@ metadata:
   ms.collection: collection
   author: sericks007
   ms.author: sericks
-  ms.date: 12/21/2022
+  ms.date: 02/28/2025
 
 # highlightedContent section (optional)
 # Maximum of 8 items
 
 # productDirectory section (optional)
 productDirectory:
+  title: Power Platform Adoption guidance # < 60 chars (optional)
+  summary: Find guidance for each phase of your Power Platform adoption journey. # < 160 chars (optional)
   items:
     # Card
-    - title: Adoption best practices
+    - title: Strategy
       # imageSrc should be square in ratio with no white space
-      imageSrc: ./media/sample-adoption.svg
+      imageSrc: ./media/strategy.svg
       links:
         - url: /power-platform/guidance/adoption/methodology
           text: Adoption overview
@@ -34,47 +36,117 @@ productDirectory:
           text: Admin and governance
         - url: /power-platform/guidance/adoption/nurture-best-practices
           text: Nurture and educate
-    # Card
-    - title: Center of Excellence (CoE) Kit
-      imageSrc: ./media/sample-coe.svg
+    - title: Plan
+      # imageSrc should be square in ratio with no white space
+      imageSrc: ./media/plan.svg
       links:
-        - url: /power-platform/guidance/coe/overview
-          text: CoE overview
-        - url: /power-platform/guidance/coe/starter-kit-explained
-          text: What's in the CoE starter Kit
-        - url: /power-platform/guidance/coe/setup
-          text: Set up the CoE starter Kit
-        - url: /power-platform/guidance/coe/power-bi
-          text: Use the CoE starter Kit
-    # Card
-    - title: Creator Kit
-      imageSrc: ./media/sample-creator.svg
+        - url: /power-platform/guidance/adoption/methodology
+          text: Adoption overview
+        - url: /power-platform/guidance/adoption/strategy-best-practices
+          text: Strategy and vision
+        - url: /power-platform/guidance/adoption/admin-best-practices
+          text: Admin and governance
+        - url: /power-platform/guidance/adoption/nurture-best-practices
+          text: Nurture and educate
+    - title: Secure
+      # imageSrc should be square in ratio with no white space
+      imageSrc: ./media/secure.svg
       links:
-        - url: /power-platform/guidance/creator-kit/overview
-          text: Creator Kit overview
-        - url: /power-platform/guidance/creator-kit/components
-          text: What's in the Creator Kit
-        - url: /power-platform/guidance/creator-kit/setup
-          text: Install the Creator Kit
-        - url: /power-platform/guidance/creator-kit/creator-kit-explained
-          text: Use the Creator Kit
-    # Card
-    - title: More...
-      imageSrc: ./media/sample-more.svg
+        - url: /power-platform/guidance/adoption/methodology
+          text: Adoption overview
+        - url: /power-platform/guidance/adoption/strategy-best-practices
+          text: Strategy and vision
+        - url: /power-platform/guidance/adoption/admin-best-practices
+          text: Admin and governance
+        - url: /power-platform/guidance/adoption/nurture-best-practices
+          text: Nurture and educate
+    - title: Govern
+      # imageSrc should be square in ratio with no white space
+      imageSrc: ./media/govern.svg
       links:
-        - url: /power-platform/guidance/architecture/real-world-examples/overview
-          text: Real-world solution architecture examples
-        - url: /power-platform/guidance/expressroute/overview
-          text: Azure ExpressRoute and Power Platform
-        - url: /power-platform/guidance/white-papers
-          text: White papers
-        - url: /power-platform/guidance/icons
-          text: Power Platform icons
+        - url: /power-platform/guidance/adoption/methodology
+          text: Adoption overview
+        - url: /power-platform/guidance/adoption/strategy-best-practices
+          text: Strategy and vision
+        - url: /power-platform/guidance/adoption/admin-best-practices
+          text: Admin and governance
+        - url: /power-platform/guidance/adoption/nurture-best-practices
+          text: Nurture and educate
+    - title: Operate
+      # imageSrc should be square in ratio with no white space
+      imageSrc: ./media/operate.svg
+      links:
+        - url: /power-platform/guidance/adoption/methodology
+          text: Adoption overview
+        - url: /power-platform/guidance/adoption/strategy-best-practices
+          text: Strategy and vision
+        - url: /power-platform/guidance/adoption/admin-best-practices
+          text: Admin and governance
+        - url: /power-platform/guidance/adoption/nurture-best-practices
+          text: Nurture and educate
+    - title: Ready
+      # imageSrc should be square in ratio with no white space
+      imageSrc: ./media/implement.svg
+      links:
+        - url: /power-platform/guidance/adoption/methodology
+          text: Adoption overview
+        - url: /power-platform/guidance/adoption/strategy-best-practices
+          text: Strategy and vision
+        - url: /power-platform/guidance/adoption/admin-best-practices
+          text: Admin and governance
+        - url: /power-platform/guidance/adoption/nurture-best-practices
+          text: Nurture and educate
+    - title: Nurture
+      # imageSrc should be square in ratio with no white space
+      imageSrc: ./media/nurture.svg
+      links:
+        - url: /power-platform/guidance/adoption/methodology
+          text: Adoption overview
+        - url: /power-platform/guidance/adoption/strategy-best-practices
+          text: Strategy and vision
+        - url: /power-platform/guidance/adoption/admin-best-practices
+          text: Admin and governance
+        - url: /power-platform/guidance/adoption/nurture-best-practices
+          text: Nurture and educate
+
 
 # additionalContent section (optional)
 additionalContent:
   # Supports up to 4 subsections
   sections:
+   - title: Tools and resources
+      - title: Center of Excellence (CoE) Kit
+        imageSrc: ./media/sample-coe.svg
+        links:
+          - url: /power-platform/guidance/coe/overview
+            text: CoE overview
+          - url: /power-platform/guidance/coe/starter-kit-explained
+            text: What's in the CoE starter Kit
+          - url: /power-platform/guidance/coe/setup
+            text: Set up the CoE starter Kit
+          - url: /power-platform/guidance/coe/power-bi
+            text: Use the CoE starter Kit
+        # Card
+      - title: Creator Kit
+        imageSrc: ./media/sample-creator.svg
+        links:
+          - url: /power-platform/guidance/creator-kit/overview
+            text: Creator Kit overview
+          - url: /power-platform/guidance/creator-kit/components
+            text: What's in the Creator Kit
+          - url: /power-platform/guidance/creator-kit/setup
+            text: Install the Creator Kit
+          - url: /power-platform/guidance/creator-kit/creator-kit-explained
+            text: Use the Creator Kit
+      - title: More...
+        imageSrc: ./media/sample-more.svg
+        links:
+          - url: /power-platform/guidance/expressroute/overview
+            text: Azure ExpressRoute and Power Platform
+          - url: /power-platform/guidance/white-papers
+            text: White papers
+          - url: /power-platform/guidance/icons
+            text: Power Platform icons
     - title: Related guidance centers
       summary: Guidance information focused on individual Power Platform components # < 160 chars (optional)
       items:
