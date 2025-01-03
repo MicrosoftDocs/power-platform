@@ -12,6 +12,8 @@ search.audienceType:
 contributors:
 - Mattp123
 - JimDaly
+ms.contributors:
+- erjost
 ---
 # Restore deleted Microsoft Dataverse table records (preview)
 
@@ -33,7 +35,7 @@ Developers should read [Restore deleted records with code (preview)](/power-apps
 
 To use this feature, it must be enabled in the environment where you want to restore Dataverse table records.
 
-### Enable restore table records
+### Turn on the recycle bin feature
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 admin or Microsoft Power Platform admin).
 1. Select **Environments** and open the environment you want.
@@ -42,6 +44,12 @@ To use this feature, it must be enabled in the environment where you want to res
 
    - Turn **On** the **Recycle Bin** setting.
    - Specify the time interval, to be able to restore table records. You can restore table records up to *30* days after the record was deleted.
+  
+1. Select **Save**.
+1. Allow 30 minutes for the system to configure the recycle bin.
+  
+   > [!Note]
+   > Only records deleted after the recyle bin feature has been turned on can be restored.
 
 ## View and restore the deleted records in Power Apps 
 
@@ -55,6 +63,10 @@ Viewing and acting on the deleted records in the Power Apps user experience is o
 1. Select **Ok** to confirm the action to restore.
 
 ## Limitations
+
+### Recycle bin is only supported for delete operations
+
+The recycle bin is only supported for delete operations, not updates.
 
 ### Some records aren't restored
 
@@ -73,7 +85,6 @@ If the **Status Reason** isn't **Succeeded**, or despite the success state appea
 Records that were deleted through automated, cascading behaviors can't be restored independently. These records need to be restored in the order in which they were deleted. The original record that was deleted must be restored before any related records that were deleted through automated cascading behaviors. 
 
 For more information about cascading behavior, go to [Configure table relationship cascading behavior](/power-apps/developer/data-platform/configure-entity-relationship-cascading-behavior).
-
 
 ## Tables not supported
 
@@ -449,7 +460,6 @@ Your environment might have different results. Tables customized by adding large
    :::column-end:::
 :::row-end:::
 
-### See also
-
+### Related content
 [Restore deleted records with code (preview)](/power-apps/developer/data-platform/restore-deleted-records)
 
