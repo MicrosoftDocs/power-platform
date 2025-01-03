@@ -4,7 +4,7 @@ description: Learn how to use the Power Platform admin center to view restore de
 author: shahzorkhan123
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/29/2024
+ms.date: 01/03/2025
 ms.subservice: admin
 ms.author: shkhan
 search.audienceType: 
