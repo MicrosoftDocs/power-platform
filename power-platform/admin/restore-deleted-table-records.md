@@ -33,9 +33,9 @@ Developers should read [Restore deleted records with code (preview)](/power-apps
 
 ## Prerequisites
 
-To use this feature, it must be enabled in the environment where you want to restore Dataverse table records.
+To restore deleted Dataverse records, turn on the recycle bin in your environment.
 
-### Turn on the recycle bin feature
+### Turn on the recycle bin
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 admin or Microsoft Power Platform admin).
 1. Select **Environments** and open the environment you want.
@@ -53,7 +53,7 @@ To use this feature, it must be enabled in the environment where you want to res
 
 ## View and restore the deleted records in Power Apps 
 
-Viewing and acting on the deleted records in the Power Apps user experience is only enabled for System Administrators in the preview phase. 
+Viewing and acting on the deleted records in the Power Apps user experience is only available for System Administrators in the preview phase. 
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a user with the system administrator security role. 
 1. Select **Environments** and open the environment you want to view and restore deleted records.
