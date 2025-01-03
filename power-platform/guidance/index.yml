@@ -26,7 +26,7 @@ productDirectory:
     # Card
     - title: Strategy
       # imageSrc should be square in ratio with no white space
-      imageSrc: ./media/strategy.svg
+      imageSrc: /media/strategy.svg
       links:
         - url: /power-platform/guidance/adoption/methodology
           text: Adoption overview
@@ -38,7 +38,7 @@ productDirectory:
           text: Nurture and educate
     - title: Plan
       # imageSrc should be square in ratio with no white space
-      imageSrc: ./media/plan.svg
+      imageSrc: /media/plan.svg
       links:
         - url: /power-platform/guidance/adoption/methodology
           text: Adoption overview
@@ -50,7 +50,7 @@ productDirectory:
           text: Nurture and educate
     - title: Secure
       # imageSrc should be square in ratio with no white space
-      imageSrc: ./media/secure.svg
+      imageSrc: /media/secure.svg
       links:
         - url: /power-platform/guidance/adoption/methodology
           text: Adoption overview
@@ -62,7 +62,7 @@ productDirectory:
           text: Nurture and educate
     - title: Govern
       # imageSrc should be square in ratio with no white space
-      imageSrc: ./media/govern.svg
+      imageSrc: /media/govern.svg
       links:
         - url: /power-platform/guidance/adoption/methodology
           text: Adoption overview
@@ -74,7 +74,7 @@ productDirectory:
           text: Nurture and educate
     - title: Operate
       # imageSrc should be square in ratio with no white space
-      imageSrc: ./media/operate.svg
+      imageSrc: /media/operate.svg
       links:
         - url: /power-platform/guidance/adoption/methodology
           text: Adoption overview
@@ -86,7 +86,7 @@ productDirectory:
           text: Nurture and educate
     - title: Ready
       # imageSrc should be square in ratio with no white space
-      imageSrc: ./media/implement.svg
+      imageSrc: /media/implement.svg
       links:
         - url: /power-platform/guidance/adoption/methodology
           text: Adoption overview
@@ -98,7 +98,7 @@ productDirectory:
           text: Nurture and educate
     - title: Nurture
       # imageSrc should be square in ratio with no white space
-      imageSrc: ./media/nurture.svg
+      imageSrc: /media/nurture.svg
       links:
         - url: /power-platform/guidance/adoption/methodology
           text: Adoption overview
@@ -117,7 +117,6 @@ additionalContent:
     - title: Tools and resources
       items:
         - title: Center of Excellence (CoE) Kit
-          imageSrc: ./media/sample-coe.svg
           links:
            - url: /power-platform/guidance/coe/overview
              text: CoE overview
@@ -129,7 +128,6 @@ additionalContent:
              text: Use the CoE starter Kit
         # Card
         - title: Creator Kit
-          imageSrc: ./media/sample-creator.svg
           links:
             - url: /power-platform/guidance/creator-kit/overview
               text: Creator Kit overview
@@ -140,7 +138,6 @@ additionalContent:
             - url: /power-platform/guidance/creator-kit/creator-kit-explained
               text: Use the Creator Kit
         - title: More...
-          imageSrc: ./media/sample-more.svg
           links:
             - url: /power-platform/guidance/white-papers
               text: White papers
