@@ -115,9 +115,10 @@ additionalContent:
   # Supports up to 4 subsections
   sections:
    - title: Tools and resources
-      - title: Center of Excellence (CoE) Kit
-        imageSrc: ./media/sample-coe.svg
-        links:
+     items:
+       - title: Center of Excellence (CoE) Kit
+         imageSrc: ./media/sample-coe.svg
+         links:
           - url: /power-platform/guidance/coe/overview
             text: CoE overview
           - url: /power-platform/guidance/coe/starter-kit-explained
