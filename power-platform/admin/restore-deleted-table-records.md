@@ -68,6 +68,10 @@ Viewing and acting on the deleted records in the Power Apps user experience is o
 
 The recycle bin is only supported for delete operations, not updates.
 
+### Restore operation is for records
+
+The restore operation is only for records. It doesn't support recovering organizations or tables.
+
 ### Some records aren't restored
 
 Some organizations add custom business logic that deletes records related to a record that is deleted. To restore related records deleted by custom business logic, you need to apply the opposite logic on the `Restore` operation to recover the records when you restore the original record that was deleted.
