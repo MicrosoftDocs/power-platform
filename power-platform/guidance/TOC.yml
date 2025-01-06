@@ -4,75 +4,96 @@
     - name: Power Platform adoption best practices
       href: adoption/methodology.md
       items:
-        - name: Adoption maturity model
+        - name: What's new
+          href: whats-new.md
+        - name: Strategy
           items:
-            - name: Overview
-              href: adoption/maturity-model.md
-            - name: Goals and opportunities
-              href: adoption/maturity-model-goals.md
-            - name: Detailed capabilities
-              href: adoption/maturity-model-details.md
-        - name: Strategy and vision
-          href: adoption/strategy-best-practices.md
-          items:
-            - name: Establishing a Center of Excellence
-              href: adoption/coe.md
-            - name: Measure business value
+            - name: Vision, Metrics and Goals
+              href: vision.md
+            - name: Common objectives
+              items: 
+                - name: Overview
+                  href: adoption/common-vision/vision-overview.md
+                - name: Establish a Center of Excellence with governance patterns and practices
+                  href: adoption/common-vision/establish-coe.md
+                - name: Measure value and realize return of investment
+                  href: adoption/common-vision/realize-value.md
+                - name: Get leadership buy-in and organization alignment
+                  href: adoption/common-vision/get-leadership-buyin.md
+                - name: Nurture a maker and champion community
+                  href: adoption/common-vision/enable-maker-community.md
+                - name: Empower innovation and AI culture
+                  href: adoption/common-vision/empower-innovation.md
+                - name: Enhance operational efficiency
+                  href: adoption/common-vision/enhance-opex.md
+                - name: Improve employee experience
+                  href: adoption/common-vision/improve-employee-ex.md
+            - name: Business value
               href: adoption/business-value.md
-            - name: Roles and responsibilities
-              href: adoption/roles.md
             - name: Executive sponsorship
               href: adoption/executive-sponsorship.md
+        - name: Plan
+          items:
+            - name: Roles and responsibilities
+              href: adoption/roles.md
             - name: Delivery models
               href: adoption/delivery-models.md
             - name: License assignment strategies
               href: adoption/license-assignment-strategies.md
-            - name: "Case study: Success Hub"
-              items:
-                - name: Overview
-                  href: successhub/overview.md
-                - name: Digitizing Digital Transformation Platform group
-                  href: successhub/digitizing-digital-transformation-platform-group.md
-        - name: Admin and governance
+        - name: Secure
           items:
-            - name: Best practices checklist
-              href: adoption/admin-best-practices.md
-            - name: Manage
-              items:
-                - name: Designate a Power Platform admin
-                  href: adoption/pp-admin.md
-                - name: Plan and manage licenses and capacity
-                  href: adoption/capacity-and-licenses.md
-                - name: Establish an environment strategy
-                  href: white-papers/environment-strategy.md
-                - name: Manage Dataverse for Teams environments
-                  href: adoption/teams-environment-strategy.md
-                - name: Manage the default environment
-                  href: adoption/manage-default-environment.md
-            - name: Secure
-              items:
-                - name: Establish DLP policies
-                  href: adoption/dlp-strategy.md
-                - name: Set up Microsoft Entra Conditional Access
-                  href: adoption/conditional-access.md
-                - name: Enable cross-tenant isolation
-                  href: /power-platform/admin/cross-tenant-restrictions
-                - name: Secure the default environment
-                  href: adoption/secure-default-environment.md
-            - name: Monitor and alert
-              items:
-                - name: Report on resource usage
-                  href: adoption/resource-usage.md
-                - name: Track user access
-                  href: adoption/access-usage.md
-                - name: Monitor Microsoft Dataverse usage
-                  href: adoption/cds-usage.md
-                - name: Monitor new connectors
-                  href: adoption/new-connectors.md
-                - name: Set up sharing alerts and mitigations
-                  href: adoption/sharing-alerts.md
-        - name: Nurture and educate
+            - name: Establish DLP policies
+              href: adoption/dlp-strategy.md
+            - name: Set up Microsoft Entra Conditional Access
+              href: adoption/conditional-access.md
+            - name: Enable cross-tenant isolation
+              href: /power-platform/admin/cross-tenant-restrictions
+            - name: Secure the default environment
+              href: adoption/secure-default-environment.md
+        - name: Govern
           items:
+            - name: Designate a Power Platform admin
+              href: adoption/pp-admin.md
+            - name: Plan and manage licenses and capacity
+              href: adoption/capacity-and-licenses.md
+            - name: Establish an environment strategy
+              href: white-papers/environment-strategy.md
+            - name: Manage Dataverse for Teams environments
+              href: adoption/teams-environment-strategy.md
+            - name: Manage the default environment
+              href: adoption/manage-default-environment.md
+        - name: Operate
+          items:
+            - name: Report on resource usage
+              href: adoption/resource-usage.md
+            - name: Track user access
+              href: adoption/access-usage.md
+            - name: Monitor Microsoft Dataverse usage
+              href: adoption/cds-usage.md
+            - name: Monitor new connectors
+              href: adoption/new-connectors.md
+            - name: Set up sharing alerts and mitigations
+              href: adoption/sharing-alerts.md
+            - name: Support
+              items:
+                - name: Support strategy - Overview
+                  href: adoption/support-strategy.md
+                - name: End-user support
+                  href: adoption/support-strategy-solutions.md
+                - name: Maker support
+                  href: adoption/support-strategy-makers.md
+                - name: Support strategy - Maturity Levels
+                  href: adoption/support-strategy-maturity.md
+        - name: Ready
+          items: 
+            - name: Training and upskilling strategy
+              href: adoption/training-strategy.md
+            - name: Internal training events
+              href: adoption/in-a-day.md
+            - name: Solution envisioning workshops
+              href: adoption/solution-envisioning.md
+        - name: Nurture
+          items: 
             - name: Best practices checklist
               href: adoption/nurture-best-practices.md
             - name: Community
@@ -99,16 +120,14 @@
                   href: adoption/in-a-day.md
                 - name: Solution envisioning workshops
                   href: adoption/solution-envisioning.md
-        - name: Support
+        - name: Adoption maturity model
           items:
-            - name: Support strategy - Overview
-              href: adoption/support-strategy.md
-            - name: End-user support
-              href: adoption/support-strategy-solutions.md
-            - name: Maker support
-              href: adoption/support-strategy-makers.md
-            - name: Support strategy - Maturity Levels
-              href: adoption/support-strategy-maturity.md
+            - name: Overview
+              href: adoption/maturity-model.md
+            - name: Goals and opportunities
+              href: adoption/maturity-model-goals.md
+            - name: Detailed capabilities
+              href: adoption/maturity-model-details.md
     - name: Power Platform Center of Excellence (CoE) Kit
       href: coe/starter-kit.md
       items:
