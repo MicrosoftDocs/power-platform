@@ -1,49 +1,49 @@
 - name: Power Platform toolkits
-  href: toolkits/index.yml
+  href: index.yml
   items:
     - name: Power Platform Center of Excellence (CoE) Kit
-      href: coe/starter-kit.md
+      href: ./coe/starter-kit.md
       items:
         - name: Overview
-          href: coe/overview.md
+          href: ./coe/overview.md
         - name: Establishing tenant hygiene
-          href: coe/after-setup-tenant-hygiene.md
+          href: ./coe/after-setup-tenant-hygiene.md
         - name: Set up the CoE starter kit
           items:
             - name: Get started with setup
-              href: coe/setup.md
+              href: ./coe/setup.md
             - name: Set up inventory components
-              href: coe/setup-core-components.md
+              href: ./coe/setup-core-components.md
             - name: Set up environment request management
-              href: coe/setup-environment-components.md
+              href: ./coe/setup-environment-components.md
             - name: Set up other core components
-              href: coe/setup-othercore-components.md
+              href: ./coe/setup-othercore-components.md
             - name: Get started with setting up governance components
-              href: coe/before-setup-gov.md
+              href: ./coe/before-setup-gov.md
             - name: Set up compliance processes
-              href: coe/setup-governance-components.md
+              href: ./coe/setup-governance-components.md
             - name: Set up inactivity processes
-              href: coe/setup-archive-components.md
+              href: ./coe/setup-archive-components.md
             - name: Set up Microsoft Teams governance processes
-              href: coe/setup-teams-components.md
+              href: ./coe/setup-teams-components.md
             - name: Set up cleanup for orphaned resources
-              href: coe/setup-orphan-components.md
+              href: ./coe/setup-orphan-components.md
             - name: Set up app quarantine components
-              href: coe/setup-quarantine-components.md
+              href: ./coe/setup-quarantine-components.md
             - name: Collect audit log data
               items:
                   - name: Using Microsoft Graph API (recommended)
-                    href: coe/setup-auditlog-http-graphapi.md  
+                    href: ./coe/setup-auditlog-http-graphapi.md  
                   - name: Using Office 365 Management API
-                    href: coe/setup-auditlog-http.md
+                    href: ./coe/setup-auditlog-http.md
                   - name: Collect historic audit log events
-                    href: coe/setup-auditlog-http-old-data.md
+                    href: ./coe/setup-auditlog-http-old-data.md
                   - name: Troubleshooting
-                    href: coe/setup-auditlog-troubleshooting.md
+                    href: ./coe/setup-auditlog-troubleshooting.md
             - name: Set up Power BI reports
-              href: coe/setup-powerbi.md
+              href: ./coe/setup-powerbi.md
             - name: Set up nurture components
-              href: coe/setup-nurture-components.md
+              href: ./coe/setup-nurture-components.md
             - name: Set up Innovation Backlog components
               href: coe/setup-innovationbacklog.md
             - name: Set up administration planning components
