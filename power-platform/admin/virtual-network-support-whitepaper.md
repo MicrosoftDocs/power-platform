@@ -4,7 +4,7 @@ description: Learn about Microsoft Azure Virtual Network support within Power Pl
 author: ritesp
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/02/2025
+ms.date: 01/06/2025
 ms.subservice: admin
 ms.author: ritesp
 ms.reviewer: sericks
@@ -254,14 +254,14 @@ By following these best practices, you can secure outbound connections from Powe
 
 **Assumptions:**
 
-1. The enterprises's Power Platform environment is located in United States.
-2. The primary and failover Azure region for Virtual Network is set to West US ad East US respectively.
-3. The customer's resources are in a virtual network (VNET1) in Central US Azure region.
+- The enterprises's Power Platform environment is located in United States.
+- The primary and failover Azure region for Virtual Network is set to West US ad East US respectively.
+- The customer's resources are in a Virtual Network (VNET1) in Central US Azure region.
 
 **Minimum configuration needed to configure Virtual Network:**
 
-1. Create a virtual network (VNET2) in West US and set up subnet(s) for delegation.
-2. Create a virtual network (VNET3) in East US and set up subnet(s) for delegation.
+1. Create a Virtual Network (VNET2) in West US and set up subnet(s) for delegation.
+2. Create a Virtual Network (VNET3) in East US and set up subnet(s) for delegation.
 3. Establish a peering connection between VNET1 and VNET2.
 4. Establish a peering connection between VNET1 and VNET3.
 5. Configure Power Platform Virtual Network integration for the desired environments using the subnet(s) created in steps 1 and 2.
