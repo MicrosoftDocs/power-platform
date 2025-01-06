@@ -116,27 +116,28 @@ additionalContent:
   sections:
     - title: Tools and resources
       items:
-        - title: Center of Excellence (CoE) Kit
+        - title: Power Platform toolkits
           links:
            - url: /power-platform/guidance/coe/overview
-             text: CoE overview
-           - url: /power-platform/guidance/coe/starter-kit-explained
-             text: What's in the CoE starter Kit
-           - url: /power-platform/guidance/coe/setup
-             text: Set up the CoE starter Kit
-           - url: /power-platform/guidance/coe/power-bi
-             text: Use the CoE starter Kit
-        # Card
-        - title: Creator Kit
+             text: Center of Excellence Starter Kit overview
+           - url: /power-platform/guidance/creator-kit/overview
+             text: Creator Kit overview
+           - url: /power-apps/maker/data-platform/dataverse-accelerator/dataverse-accelerator
+             text: Dataverse Accelerator overview
+           - url: /power-automate/guidance/automation-kit/overview/introduction
+             text: Automation Kit overview
+           - url: /power-automate/guidance/business-approvals-templates/introduction
+             text: Business Approvals templates overview
+        - title: Real-world case studies
           links:
-            - url: /power-platform/guidance/creator-kit/overview
-              text: Creator Kit overview
-            - url: /power-platform/guidance/creator-kit/components
-              text: What's in the Creator Kit
-            - url: /power-platform/guidance/creator-kit/setup
-              text: Install the Creator Kit
-            - url: /power-platform/guidance/creator-kit/creator-kit-explained
-              text: Use the Creator Kit
+            - url: /power-platform/guidance/case-studies/boost-efficiency-experience-case-study
+              text: A1 Inteligencia em Viagens boosts team efficiency
+            - url: /power-platform/guidance/case-studies/streamline-employee-onboarding
+              text: Epiq streamlines employee onboarding
+            - url: /power-platform/guidance/case-studies/nonprofit
+              text: Degrees of Change automates nonprofit operations
+            - url: /power-platform/guidance/case-studies/automate-business-processes
+              text: Cineplex automates business processes
         - title: More...
           links:
             - url: /power-platform/guidance/white-papers
@@ -200,6 +201,14 @@ additionalContent:
               url: /power-virtual-agents/guidance/measuring-engagement
             - text: More...
               url: /power-virtual-agents/guidance
+        - title: Power Platform Well-Architected guidance
+          links:
+            - text: What is Power Platform Well-Architected?
+              url: /power-platform/well-architected/what-is-power-well-architected
+            - text: Implementing recommendations
+              url: /power-platform/well-architected/implementing-recommendations
+            - text: More...
+              url: /power-virtual-agents/well-architected
 
     - title: Documentation # < 60 chars (optional)
       summary: Official documentation for Power Platform components

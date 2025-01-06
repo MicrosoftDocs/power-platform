@@ -128,6 +128,8 @@
                   href: adoption/in-a-day.md
                 - name: Solution envisioning workshops
                   href: adoption/solution-envisioning.md
+    - name: Power Platform toolkits
+      href: toolkits/index.yml
     - name: Real-world case studies
       items:
         - name: A1 Inteligencia em Viagens boosts team efficiency
