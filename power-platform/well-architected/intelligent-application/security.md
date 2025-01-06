@@ -13,7 +13,7 @@ ms.topic: conceptual
 
 Security is critical for any architecture. Microsoft Power Platform offers a comprehensive range of tools to effectively secure your intelligent application workload. This article describes security considerations and recommendations for developing intelligent application workloads with Power Platform.
 
-Copilot for Dynamics 365 and Power Platform features follow a set of core security and privacy practices and the Microsoft [Responsible AI Standard](https://www.microsoft.com/ai/principles-and-approach). Dynamics 365 and Power Platform data is protected by comprehensive, industry-leading compliance, security, and privacy controls. For more information on Copilot Studio and Power Platform security features, see [Copilot Studio security and governance](/microsoft-copilot-studio/security-and-governance), [FAQ for Copilot data security and privacy for Dynamics 365 and Power Platform](/power-platform/faqs-copilot-data-security-privacy), and [Security in Microsoft Power Platform](/power-platform/admin/security/overview).
+Copilot for Dynamics 365 and Power Platform features follow a set of core security and privacy practices and the Microsoft [Responsible AI Standard](https://www.microsoft.com/ai/principles-and-approach). Dynamics 365 and Power Platform data is protected by comprehensive, industry-leading compliance, security, and privacy controls. For more information on Microsoft Copilot Studio and Power Platform security features, see [Copilot Studio security and governance](/microsoft-copilot-studio/security-and-governance), [FAQ for Copilot data security and privacy for Dynamics 365 and Power Platform](/power-platform/faqs-copilot-data-security-privacy), and [Security in Microsoft Power Platform](/power-platform/admin/security/overview).
 
 You should periodically assess the services and technologies you employ to ensure that your security measures align with the changing threat landscape.
 
@@ -25,7 +25,7 @@ Understand the key requirements for the intelligent application workload you're 
 
 - How will you implement access control and authentication mechanisms to ensure only authorized users can access the intelligent application workload?
 - How do you ensure secure and seamless user authentication?
-- How do you control which apps can interact with the Copilot and what measures ensure these restrictions are effective?
+- How do you control which apps can interact with the generative AI (agent) and what measures ensure these restrictions are effective?
  
 ### Security and incident management
 
@@ -50,15 +50,15 @@ Understand the key requirements for the intelligent application workload you're 
 
 ## Implement robust authentication and access control measures
 
-Authentication allows users to sign in, giving your copilot access to a restricted resource or information. Users can sign in with [Microsoft Entra ID](/microsoft-copilot-studio/configuration-authentication-azure-ad) or with any [OAuth2 identity provider](/azure/active-directory/develop/v2-oauth2-auth-code-flow) such as Google or Facebook.
+Authentication allows users to sign in, giving your agent access to a restricted resource or information. Users can sign in with [Microsoft Entra ID](/microsoft-copilot-studio/configuration-authentication-azure-ad) or with any [OAuth2 identity provider](/azure/active-directory/develop/v2-oauth2-auth-code-flow) such as Google or Facebook.
 
-Implement robust authentication and access control measures to ensure authorized users can access Copilot. Ensuring only authorized users can access Copilot is the foundation of security. [Implementing multifactor authentication](/entra/identity/authentication/concept-mfa-howitworks) adds an extra layer of security. To minimize the risk of unauthorized access, define roles and permissions to ensure that users have access only to the resources they need. Implement conditional access policies to control access based on specific conditions, such as user location, device compliance, or risk level.
+Implement robust authentication and access control measures to ensure authorized users can access the agent. Ensuring only authorized users can access the agent is the foundation of security. [Implementing multifactor authentication](/entra/identity/authentication/concept-mfa-howitworks) adds an extra layer of security. To minimize the risk of unauthorized access, define roles and permissions to ensure that users have access only to the resources they need. Implement conditional access policies to control access based on specific conditions, such as user location, device compliance, or risk level.
  
 Learn more:
 
 - [Configure user authentication](/microsoft-copilot-studio/configuration-authentication-azure-ad)
 - [Configure single sign-on](/microsoft-copilot-studio/configure-sso?tabs=webApp)
-- [Configure web channel security](/microsoft-copilot-studio/configure-web-security)
+- [Configure web and Direct Line channel security](/microsoft-copilot-studio/configure-web-security)
 
 ## Understand how regulatory requirements affect your project
 

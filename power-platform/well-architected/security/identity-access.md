@@ -103,8 +103,8 @@ Consider the following:
 - Does the workload need permanent access or can conditional access be considered?
 - Does the workload perform actions that require administrative/elevated permissions?
 - How will the workload interact with third-party services?
-- For copilots, do you have single sign-on (SSO) requirements?
-- Is the copilot operating in unauthenticated mode, authenticated mode, or both?
+- For intelligent application workloads such as agents, do you have single sign-on (SSO) requirements?
+- Is the agent operating in unauthenticated mode, authenticated mode, or both?
 
 #### Role assignment
 
@@ -264,16 +264,16 @@ One of the key features of Dataverse is its rich security model that can adapt t
 
 ### Configure user authentication in Copilot Studio
 
-Copilot Studio supports several authentication options. Choose the one that meets your needs. Authentication allows users to sign in, thereby granting your copilot access to restricted resources or information. Users can sign in using Microsoft Entra ID or any OAuth 2.0 identity provider, such as Google or Facebook. Learn more in [Configure user authentication in Copilot Studio](/microsoft-copilot-studio/configuration-end-user-authentication).
+Microsoft Copilot Studio supports several authentication options. Choose the one that meets your needs. Authentication allows users to sign in, thereby granting your agent access to restricted resources or information. Users can sign in using Microsoft Entra ID or any OAuth 2.0 identity provider, such as Google or Facebook. Learn more in [Configure user authentication in Copilot Studio](/microsoft-copilot-studio/configuration-end-user-authentication).
 
 With [Direct Line-based security](/microsoft-copilot-studio/configure-web-security), you can restrict access to locations that you control by enabling secured access with Direct Line secrets or tokens.
 
-Copilot Studio supports single sign-on (SSO), which means copilots can sign the user in. SSO must be implemented on your web pages and mobile applications. For Microsoft Teams, SSO is seamless if you select the "Only in Teams" authentication option. It can also be configured manually with Azure AD v2; however, in this case the Teams app must be deployed as a zip file, not through the 1-click Teams deployment from Copilot Studio.
+Copilot Studio supports single sign-on (SSO), which means agents can sign the user in. SSO must be implemented on your web pages and mobile applications. For Microsoft Teams, SSO is seamless if you select the "Only in Teams" authentication option. It can also be configured manually with Azure AD v2; however, in this case the Teams app must be deployed as a zip file, not through the 1-click Teams deployment from Copilot Studio.
 
 Learn more:
 
 - [Configure single sign-on with Microsoft Entra ID](/microsoft-copilot-studio/configure-sso?tabs=webApp)
-- [Configure single sign-on with Microsoft Entra ID for copilots in Microsoft Teams](/microsoft-copilot-studio/configure-sso-teams)
+- [Configure single sign-on with Microsoft Entra ID for agents in Microsoft Teams](/microsoft-copilot-studio/configure-sso-teams)
 - [Configure single sign-on with a generic OAuth provider](/microsoft-copilot-studio/configure-sso-3p)
 
 ### Securely access data using Customer Lockbox
