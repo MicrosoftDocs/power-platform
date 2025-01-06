@@ -82,7 +82,9 @@ Records deleted via the table relationship cascade behavior process can be resto
 
 Deleted records might not appear when the recycle bin feature is turned on. Verify that the **Enable RecycleBin for Organization** system job is turned on. Go to the Power Platform admin center, select the environment where this issue is happening, and select **Settings** > **Audit and logs** > **System jobs**. On the **System Jobs** page, search for **Enable RecycleBin**. Confirm that the **Status Reason** is **Succeeded**. 
 
-If the **Status Reason** isn't **Succeeded**, or despite the success state appearing correct, and you're not seeing the **Restore** option for deleted records, contact a [Microsoft support representative and create a support request](get-help-support.md).
+If the **Status Reason** isn't **Succeeded** and it has been at least 30 minutes since enabling the feature, or despite the success state appearing correct, and you're not seeing the **Restore** option for deleted records, contact a [Microsoft support representative and create a support request](get-help-support.md).
+
+Deleted records will only appear after recycle bin is turned on and they will only appear for records deleted after enabling the feature. You cannot restore records deleted before recycle bin feature was enabled.
 
 ### Records deleted through cascading behaviors aren't present in Deleted Records view
 
