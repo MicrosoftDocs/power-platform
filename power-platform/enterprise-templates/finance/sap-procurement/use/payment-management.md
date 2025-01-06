@@ -10,9 +10,10 @@ contributors:
   - tverhasselt
   - ryanb58
   - Wrighttyler
+  - shanep
 ms.reviewer: ellenwehrle
 ms.topic: conceptual
-ms.date: 08/14/2023
+ms.date: 11/14/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -32,19 +33,19 @@ You have three options for viewing a vendor payment:
 
 ### Enter a vendor payment number
   
-If you know the vendor payment number of the document you want to view, you can type it in the _Search vendor payment number_ field.
+If you know the vendor payment number of the document you want to view, you can type it in the _Search vendor payment number_ field and select **Search**. You can also optionally provide company code and fiscal year.
 
 ### Select a vendor payment
   
-You can select a recently viewed vendor payment from the _Select recent vendor payment_ drop-down list. Choose a vendor from the list to load the data for that vendor payment.
+You can select a recently viewed vendor payment from the _Recently searched payments_ list. Select a vendor from the list to load the data for that vendor payment.
   
 :::image type="content" source="media/payments/sap-procure-payments-ed.png" alt-text="Image of the Microsoft's SAP Procurement payment app for Power Platform.":::
   
 ### Search for vendor payment
   
-If you haven't interacted with the vendor payment, and you don't know the exact number, you can search for a vendor payment. Select the **funnel** to open the vendor payment search screen.
+If you haven't interacted with the vendor payment, and you don't know the exact number, you can search for a vendor payment. Select **Search Payments** to open the vendor payment search screen.
 
-The vendor payment search screen allows you to search by any individual field or a combination of _Vendor_ and _Due date range_.
+The vendor payment search screen allows you to search by any individual field or a combination of _Vendor_ and _Due date range_. If you don't know the Vendor Number you can select **Go to advanced search** and search for vendors by name and address.
 
 1. Enter your selection criteria.
 1. Select **Search** to display your results.

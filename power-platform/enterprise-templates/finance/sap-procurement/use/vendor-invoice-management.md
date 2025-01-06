@@ -10,9 +10,10 @@ contributors:
 - tverhasselt
 - ryanb58
 - Wrighttyler
+- shanep
 ms.reviewer: ellenwehrle
 ms.topic: conceptual
-ms.date: 08/14/2023
+ms.date: 12/01/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -34,11 +35,11 @@ You have three options for viewing a vendor invoice:
 
 ### Select a vendor invoice
 
-You can select a recently viewed vendor invoice from a drop-down list. Choose a _vendor invoice_ to load onto the screen.
+Select a recently viewed vendor invoice from *Recent Vendor Invoices* list to load onto the screen.
 
 ### Search for vendor invoice
 
-If you haven't interacted with the vendor invoice and don't know the exact number, you can search for it by selecting the **funnel** icon to open the vendor invoice search screen.
+If you haven't interacted with the vendor invoice and don't know the exact number, you can search for it by selecting **Search Vendor Invoices** to open the vendor invoice search screen.
 
 The vendor invoice search screen allows you to search by an individual field or a combination of these fields:
 
@@ -55,19 +56,16 @@ Take these steps to perform a search:
 
 ### Enter a vendor invoice number
 
-If you know the vendor invoice number of the material document you want to view, you can type it in the _Search vendor invoice number_ field.
+If you know the vendor invoice number of the material document you want to view, you can type it in the _Search Vendor Invoices_ field.
 
 ### Create vendor invoice
 
-1. Select the **Create** button.
-1. Enter a _purchase order_ number.
-1. Select the **right-pointing arrow** next to the purchase order number to view:
-
-    - Vendor number and name
-    - Purchase order items
-
-1. Adjust the _Quantity received_ as needed.
-1. Select **Save** to post the vendor invoice.
+1. Select the **New Vendor Invoice** button.
+1. Enter a _purchase order_ number and select the **Search** button.
+1. Select a _Payment Method_ from the drop-down list and select **Next**.
+1. Review the line items and adjust as needed. To make changes to a line item, select the line item row and then select **Edit**. Make the appropriate changes and select **Update**.
+1. Select **Next** when all invoice line items are correct.
+1. Review the invoice and select **Submit** if everything is correct.
 
 ## Field mappings
 
