@@ -208,7 +208,7 @@ additionalContent:
             - text: Implementing recommendations
               url: /power-platform/well-architected/implementing-recommendations
             - text: More...
-              url: /power-virtual-agents/well-architected
+              url: /power-platform/well-architected
 
     - title: Documentation # < 60 chars (optional)
       summary: Official documentation for Power Platform components
