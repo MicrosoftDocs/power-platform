@@ -2,310 +2,310 @@
   href: index.yml
   items:
     - name: Power Platform Center of Excellence (CoE) Kit
-      href: ./adoption/coe/starter-kit.md
+      href: ../coe/starter-kit.md
       items:
         - name: Overview
-          href: ./adoption/coe/overview.md
+          href: ../coe/overview.md
         - name: Establishing tenant hygiene
-          href: ./adoption/coe/after-setup-tenant-hygiene.md
+          href: ../coe/after-setup-tenant-hygiene.md
         - name: Set up the CoE starter kit
           items:
             - name: Get started with setup
-              href: ./adoption/coe/setup.md
+              href: ../coe/setup.md
             - name: Set up inventory components
-              href: ./adoption/coe/setup-core-components.md
+              href: ../coe/setup-core-components.md
             - name: Set up environment request management
-              href: ./adoption/coe/setup-environment-components.md
+              href: ../coe/setup-environment-components.md
             - name: Set up other core components
-              href: ./adoption/coe/setup-othercore-components.md
+              href: ../coe/setup-othercore-components.md
             - name: Get started with setting up governance components
-              href: ./adoption/coe/before-setup-gov.md
+              href: ../coe/before-setup-gov.md
             - name: Set up compliance processes
-              href: ./adoption/coe/setup-governance-components.md
+              href: ../coe/setup-governance-components.md
             - name: Set up inactivity processes
-              href: ./adoption/coe/setup-archive-components.md
+              href: ../coe/setup-archive-components.md
             - name: Set up Microsoft Teams governance processes
-              href: ./adoption/coe/setup-teams-components.md
+              href: ../coe/setup-teams-components.md
             - name: Set up cleanup for orphaned resources
-              href: ./adoption/coe/setup-orphan-components.md
+              href: ../coe/setup-orphan-components.md
             - name: Set up app quarantine components
-              href: ./adoption/coe/setup-quarantine-components.md
+              href: ../coe/setup-quarantine-components.md
             - name: Collect audit log data
               items:
                   - name: Using Microsoft Graph API (recommended)
-                    href: ./adoption/coe/setup-auditlog-http-graphapi.md  
+                    href: ../coe/setup-auditlog-http-graphapi.md  
                   - name: Using Office 365 Management API
-                    href: ./adoption/coe/setup-auditlog-http.md
+                    href: ../coe/setup-auditlog-http.md
                   - name: Collect historic audit log events
-                    href: ./adoption/coe/setup-auditlog-http-old-data.md
+                    href: ../coe/setup-auditlog-http-old-data.md
                   - name: Troubleshooting
-                    href: ./adoption/coe/setup-auditlog-troubleshooting.md
+                    href: ../coe/setup-auditlog-troubleshooting.md
             - name: Set up Power BI reports
-              href: ./adoption/coe/setup-powerbi.md
+              href: ../coe/setup-powerbi.md
             - name: Set up nurture components
-              href: ./adoption/coe/setup-nurture-components.md
+              href: ../coe/setup-nurture-components.md
             - name: Set up Innovation Backlog components
-              href: ./adoption/coe/setup-innovationbacklog.md
+              href: ../coe/setup-innovationbacklog.md
             - name: Set up administration planning components
-              href: ./adoption/coe/setup-admin-tasks-component.md
+              href: ../coe/setup-admin-tasks-component.md
             - name: Set up theming components
-              href: ./adoption/coe/setup-theming.md
+              href: ../coe/setup-theming.md
             - name: Set up the Business value toolkit
-              href: ./adoption/coe/setup-business-value-toolkit.md              
+              href: ../coe/setup-business-value-toolkit.md              
             - name: What's next - updating the CoE Starter Kit
-              href: ./adoption/coe/after-setup.md
+              href: ../coe/after-setup.md
             - name: What's next - extending the CoE Starter Kit
-              href: ./adoption/coe/modify-components.md
+              href: ../coe/modify-components.md
         - name: What's in the CoE starter kit
           items:
             - name: CoE starter kit modules
-              href: ./adoption/coe/starter-kit-explained.md
+              href: ../coe/starter-kit-explained.md
             - name: Components overview
               items:
                 - name: Core components
-                  href: ./adoption/coe/core-components.md
+                  href: ../coe/core-components.md
                 - name: Business value toolkit
-                  href: ./adoption/coe/business-value-toolkit.md
+                  href: ../coe/business-value-toolkit.md
                 - name: Governance components
-                  href: ./adoption/coe/governance-components.md
+                  href: ../coe/governance-components.md
                 - name: Nurture components
-                  href: ./adoption/coe/nurture-components.md
+                  href: ../coe/nurture-components.md
                 - name: Theming components
-                  href: ./adoption/coe/theming-components.md
+                  href: ../coe/theming-components.md
                 - name: Innovation backlog components
-                  href: ./adoption/coe/innovationbacklog-components.md
+                  href: ../coe/innovationbacklog-components.md
         - name: How to use the CoE Starter Kit
           items:
             - name: CoE dashboard explained
               items:
                 - name: Overview
-                  href: ./adoption/coe/power-bi.md
+                  href: ../coe/power-bi.md
                 - name: Monitor
-                  href: ./adoption/coe/power-bi-monitor.md
+                  href: ../coe/power-bi-monitor.md
                 - name: Govern
-                  href: ./adoption/coe/power-bi-govern.md
+                  href: ../coe/power-bi-govern.md
                 - name: Nurture
-                  href: ./adoption/coe/power-bi-nurture.md
+                  href: ../coe/power-bi-nurture.md
                 - name: Compliance and Adoption
-                  href: ./adoption/coe/power-bi-compliance.md
+                  href: ../coe/power-bi-compliance.md
             - name: Sample audit process
-              href: ./adoption/coe/example-processes.md
+              href: ../coe/example-processes.md
             - name: Dataverse for Teams environment management
-              href: ./adoption/coe/teams-governance.md
+              href: ../coe/teams-governance.md
             - name: Use the Innovation Backlog app
-              href: ./adoption/coe/use-innovationbacklog.md
+              href: ../coe/use-innovationbacklog.md
             - name: Use the Administration planning components
-              href: ./adoption/coe/admin-tasks-component.md
+              href: ../coe/admin-tasks-component.md
             - name: Environment management
-              href: ./adoption/coe/env-mgmt.md
+              href: ../coe/env-mgmt.md
             - name: Capacity alerting and reporting
-              href: ./adoption/coe/capacity-alerting.md
+              href: ../coe/capacity-alerting.md
         - name: CoE command line interface
-          href: ./adoption/coe/cli/overview.md
+          href: ../coe/cli/overview.md
           items:
             - name: Install CoE CLI
-              href: ./adoption/coe/cli/install.md
+              href: ../coe/cli/install.md
             - name: Install CoE CLI using Docker
-              href: ./adoption/coe/cli/sample-docker-install.md
+              href: ../coe/cli/sample-docker-install.md
             - name: Install CoE CLI using local machine
-              href: ./adoption/coe/cli/sample-local-install.md
+              href: ../coe/cli/sample-local-install.md
             - name: Upgrade CoE CLI
-              href: ./adoption/coe/cli/upgrade.md
+              href: ../coe/cli/upgrade.md
             - name: ALM Accelerator for Power Platform
-              href: ./adoption/coe/cli/alm/overview.md
+              href: ../coe/cli/alm/overview.md
               items:
                 - name: Set up ALM Accelerator for Power Platform
-                  href: ./adoption/coe/cli/alm/admin-install.md
+                  href: ../coe/cli/alm/admin-install.md
                 - name: Before you start
-                  href: ./adoption/coe/cli/alm/before-you-start.md
+                  href: ../coe/cli/alm/before-you-start.md
                 - name: Branching and merging
-                  href: ./adoption/coe/cli/alm/branching-and-merging.md
+                  href: ../coe/cli/alm/branching-and-merging.md
                 - name: Development environments
-                  href: ./adoption/coe/cli/alm/development-environments.md
+                  href: ../coe/cli/alm/development-environments.md
                 - name: Key concepts
-                  href: ./adoption/coe/cli/alm/key-concepts.md
+                  href: ../coe/cli/alm/key-concepts.md
                 - name: Maker set-up
-                  href: ./adoption/coe/cli/alm/maker-setup.md
+                  href: ../coe/cli/alm/maker-setup.md
                 - name: Maturity
-                  href: ./adoption/coe/cli/alm/personas.md
+                  href: ../coe/cli/alm/personas.md
                 - name: Personas
-                  href: ./adoption/coe/cli/alm/personas.md
+                  href: ../coe/cli/alm/personas.md
             - name: CLI development
-              href: ./adoption/coe/cli/cli-development/overview.md
+              href: ../coe/cli/cli-development/overview.md
               items:
                 - name: Adding a new command
-                  href: ./adoption/coe/cli/cli-development/adding-new-command.md
+                  href: ../coe/cli/cli-development/adding-new-command.md
                 - name: Documentation
-                  href: ./adoption/coe/cli/cli-development/documentation.md
+                  href: ../coe/cli/cli-development/documentation.md
         - name: FAQ and Tips
           items:
             - name: CoE Starter Kit - FAQ
-              href: ./adoption/coe/faq.md
+              href: ../coe/faq.md
             - name: Questions related to the Data Export integration
-              href: ./adoption/coe/faq-dataexport.md
+              href: ../coe/faq-dataexport.md
         - name: Limitations
-          href: ./adoption/coe/limitations.md
+          href: ../coe/limitations.md
         - name: Release notes
-          href: ./adoption/coe/release-notes.md
+          href: ../coe/release-notes.md
         - name: Feedback and support
-          href: ./adoption/coe/feedback-support.md
+          href: ../coe/feedback-support.md
     - name: Power Platform ALM Accelerator
       items:
         - name: Overview
-          href: ./adoption/alm-accelerator/overview.md
+          href: ../alm-accelerator/overview.md
         - name: Maturity model
-          href: ./adoption/alm-accelerator/maturity/overview.md
+          href: ../alm-accelerator/maturity/overview.md
         - name: Branching and environment strategy
-          href: ./adoption/alm-accelerator/branching-environment-strategy.md
+          href: ../alm-accelerator/branching-environment-strategy.md
         - name: Scenarios
           items:
             - name: Deployment scenarios
-              href: ./adoption/alm-accelerator/scenarios/overview.md
+              href: ../alm-accelerator/scenarios/overview.md
             - name: DevOps deployment model
-              href: ./adoption/alm-accelerator/scenarios/devops-deployment-model.md
+              href: ../alm-accelerator/scenarios/devops-deployment-model.md
             - name: Tenant deployments
-              href: ./adoption/alm-accelerator/scenarios/tenant-deployments.md
+              href: ../alm-accelerator/scenarios/tenant-deployments.md
         - name: Install the ALM Accelerator
           items:
             - name: Configure the ALM Accelerator using the admin app
-              href: ./adoption/alm-accelerator/setup-admin-tasks.md
+              href: ../alm-accelerator/setup-admin-tasks.md
             - name: Configure the ALM Accelerator manually
-              href: ./adoption/alm-accelerator/setup-components-manually.md
+              href: ../alm-accelerator/setup-components-manually.md
             - name: Upgrade the ALM Accelerator
-              href: ./adoption/alm-accelerator/setup-upgrade-configuration.md
+              href: ../alm-accelerator/setup-upgrade-configuration.md
         - name: Configure the ALM Accelerator
           items:
             - name: Configure deployment user settings
-              href: ./adoption/alm-accelerator/setup-deployment-user-settings.md
+              href: ../alm-accelerator/setup-deployment-user-settings.md
             - name: Configure deployment profiles
-              href: ./adoption/alm-accelerator/setup-deployment-user-profiles.md
+              href: ../alm-accelerator/setup-deployment-user-profiles.md
             - name: Deployment configuration guide
-              href: ./adoption/alm-accelerator/setup-data-deployment-configuration.md
+              href: ../alm-accelerator/setup-data-deployment-configuration.md
             - name: Configure user permissions
-              href: ./adoption/alm-accelerator/setup-app-user-permissions.md
+              href: ../alm-accelerator/setup-app-user-permissions.md
             - name: Configure pipelines
-              href: ./adoption/alm-accelerator/configure-azuredevops-pipelines.md
+              href: ../alm-accelerator/configure-azuredevops-pipelines.md
             - name: Configure pipeline sync
-              href: ./adoption/alm-accelerator/setup-pipeline-sync.md
+              href: ../alm-accelerator/setup-pipeline-sync.md
             - name: Customize deployment pipelines with templates
-              href: ./adoption/alm-accelerator/customize-deployment-pipelines.md
+              href: ../alm-accelerator/customize-deployment-pipelines.md
             - name: Configure pipeline extension points
-              href: ./adoption/alm-accelerator/setup-hook-extensions.md
+              href: ../alm-accelerator/setup-hook-extensions.md
             - name: Considerations when creating Azure app registrations
-              href: ./adoption/alm-accelerator/app-registration-strategy.md
+              href: ../alm-accelerator/app-registration-strategy.md
             - name: Deployment settings
-              href: ./adoption/alm-accelerator/deployment-settings-payload.md
+              href: ../alm-accelerator/deployment-settings-payload.md
         - name: Use the ALM Accelerator
           items:
             - name: What's in the ALM Accelerator
-              href: ./adoption/alm-accelerator/kit-contents.md
+              href: ../alm-accelerator/kit-contents.md
             - name: New maker experience
-              href: ./adoption/alm-accelerator/new-maker-experience.md
+              href: ../alm-accelerator/new-maker-experience.md
             - name: Advanced maker experience
-              href: ./adoption/alm-accelerator/advanced-maker-experience.md
+              href: ../alm-accelerator/advanced-maker-experience.md
             - name: Create an import configuration
-              href: ./adoption/alm-accelerator/create-import-deployment-configuration.md
+              href: ../alm-accelerator/create-import-deployment-configuration.md
             - name: Configure for Power Pages
-              href: ./adoption/alm-accelerator/configure-power-pages.md
+              href: ../alm-accelerator/configure-power-pages.md
             - name: Build and package code-first components
-              href: ./adoption/alm-accelerator/build-package-codefirst-components.md
+              href: ../alm-accelerator/build-package-codefirst-components.md
             - name: Maintenance tasks
-              href: ./adoption/alm-accelerator/maintain-admin-tasks.md
+              href: ../alm-accelerator/maintain-admin-tasks.md
             - name: Learn more about the ALM Accelerator
-              href: ./adoption/alm-accelerator/learning-resources-catalog.md
+              href: ../alm-accelerator/learning-resources-catalog.md
     - name: Power Platform Creator Kit
       items:
         - name: Overview
-          href: ./adoption/creator-kit/overview.md
+          href: ../creator-kit/overview.md
         - name: Install the Creator Kit
-          href: ./adoption/creator-kit/setup.md
+          href: ../creator-kit/setup.md
         - name: Use the Creator Kit
-          href: ./adoption/creator-kit/creator-kit-explained.md
+          href: ../creator-kit/creator-kit-explained.md
         - name: Creator Kit components
           items:
             - name: Overview
-              href: ./adoption/creator-kit/components.md
+              href: ../creator-kit/components.md
             - name: Basic Inputs
               items:
                 - name: AutoWidthLabel
-                  href: ./adoption/creator-kit/autowidthlabel.md
+                  href: ../creator-kit/autowidthlabel.md
                 - name: Icon
-                  href: ./adoption/creator-kit/icon.md
+                  href: ../creator-kit/icon.md
                 - name: ResizableTextArea
-                  href: ./adoption/creator-kit/resizabletextarea.md
+                  href: ../creator-kit/resizabletextarea.md
                 - name: SearchBox (preview)
-                  href: ./adoption/creator-kit/searchbox.md
+                  href: ../creator-kit/searchbox.md
                 - name: SpinButton (preview)
-                  href: ./adoption/creator-kit/spinbutton.md
+                  href: ../creator-kit/spinbutton.md
             - name: Commands, Menus & Navs
               items:
                 - name: Breadcrumb
-                  href: ./adoption/creator-kit/breadcrumb.md
+                  href: ../creator-kit/breadcrumb.md
                 - name: ContextMenu
-                  href: ./adoption/creator-kit/contextmenu.md
+                  href: ../creator-kit/contextmenu.md
                 - name: CommandBar
-                  href: ./adoption/creator-kit/commandbar.md
+                  href: ../creator-kit/commandbar.md
                 - name: Header (experimental)
-                  href: ./adoption/creator-kit/header.md
+                  href: ../creator-kit/header.md
                 - name: ExpandMenu (experimental)
-                  href: ./adoption/creator-kit/expandmenu.md
+                  href: ../creator-kit/expandmenu.md
                 - name: Nav
-                  href: ./adoption/creator-kit/nav.md
+                  href: ../creator-kit/nav.md
                 - name: Pivot
-                  href: ./adoption/creator-kit/pivot.md
+                  href: ../creator-kit/pivot.md
                 - name: SubwayNav (preview)
-                  href: ./adoption/creator-kit/subwaynav.md
+                  href: ../creator-kit/subwaynav.md
             - name: Items and Lists
               items:
                 - name: DetailsList
-                  href: ./adoption/creator-kit/detailslist.md
+                  href: ../creator-kit/detailslist.md
                 - name: Facepile (preview)
-                  href: ./adoption/creator-kit/facepile.md
+                  href: ../creator-kit/facepile.md
                 - name: Persona (preview)
-                  href: ./adoption/creator-kit/persona.md
+                  href: ../creator-kit/persona.md
                 - name: TagList
-                  href: ./adoption/creator-kit/taglist.md
+                  href: ../creator-kit/taglist.md
             - name: Pickers
               items:
                 - name: Calendar
-                  href: ./adoption/creator-kit/calendar.md
+                  href: ../creator-kit/calendar.md
                 - name: PeoplePicker (preview)
-                  href: ./adoption/creator-kit/peoplepicker.md
+                  href: ../creator-kit/peoplepicker.md
                 - name: Picker
-                  href: ./adoption/creator-kit/picker.md
+                  href: ../creator-kit/picker.md
             - name: Progress
               items:
                 - name: Spinner
-                  href: ./adoption/creator-kit/spinner.md
+                  href: ../creator-kit/spinner.md
                 - name: ProgressIndicator
-                  href: ./adoption/creator-kit/progressindicator.md
+                  href: ../creator-kit/progressindicator.md
             - name: Surfaces
               items:
                 - name: Dialog (experimental)
-                  href: ./adoption/creator-kit/dialog.md
+                  href: ../creator-kit/dialog.md
                 - name: Panel (experimental)
-                  href: ./adoption/creator-kit/panel.md
+                  href: ../creator-kit/panel.md
             - name: Charts
               items:
                 - name: DonutChart (preview)
-                  href: ./adoption/creator-kit/donutchart.md
+                  href: ../creator-kit/donutchart.md
                 - name: GaugeChart (preview)
-                  href: ./adoption/creator-kit/gaugechart.md
+                  href: ../creator-kit/gaugechart.md
                 - name: HorizontalBar
                   items:
                   - name: HorizontalBarChart (preview)
-                    href: ./adoption/creator-kit/horizontalbarchart.md
+                    href: ../creator-kit/horizontalbarchart.md
                   - name: HorizontalBarChart - Stacked (preview)
-                    href: ./adoption/creator-kit/stackedbarchart.md
+                    href: ../creator-kit/stackedbarchart.md
             - name: Utilities
               items:
                 - name: Elevation
-                  href: ./adoption/creator-kit/elevation.md
+                  href: ../creator-kit/elevation.md
                 - name: KeyboardShortcuts
-                  href: ./adoption/creator-kit/keyboardshortcuts.md
+                  href: ../creator-kit/keyboardshortcuts.md
         - name: Reference
           items:
             - name: Theming
-              href: ./adoption/creator-kit/theme.md
+              href: ../creator-kit/theme.md
             - name: Set focus
-              href: ./adoption/creator-kit/setfocus.md
+              href: ../creator-kit/setfocus.md
