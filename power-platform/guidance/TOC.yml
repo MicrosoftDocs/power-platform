@@ -5,11 +5,11 @@
       href: adoption/methodology.md
       items:
         - name: What's new
-          href: whats-new.md
+          href: adoption/whats-new.md
         - name: Strategy
           items:
             - name: Vision, Metrics and Goals
-              href: vision.md
+              href: adoption/vision.md
             - name: Common objectives
               items: 
                 - name: Overview
