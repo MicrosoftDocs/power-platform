@@ -2,7 +2,6 @@
   href: index.yml
   items:
     - name: Power Platform adoption best practices
-      href: adoption/methodology.md
       items:
         - name: What's new
           href: adoption/whats-new.md
