@@ -3,7 +3,7 @@ title: Licensing
 description: Learn about licensing Managed Environments.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 12/05/2024
+ms.date: 01/06/2025
 author: mihaelablendea
 ms.author: mihaelab
 ms.reviewer: sericks
@@ -20,7 +20,7 @@ contributors:
 ---
 # Licensing
 
-Managed Environments is included as an entitlement in Power Apps Premium, Power Automate Premium, Microsoft Copilot Studio, Power Pages, and Dynamics 365 licenses. When Managed Environments is activated in an environment all active users require at least one premium license per user or capacity add-ons for accessing respective resources. For example: 
+Managed Environments are included as an entitlement in Power Apps Premium, Power Automate Premium, Microsoft Copilot Studio, Power Pages, and Dynamics 365 licenses. When Managed Environments are activated in an environment, all active users require at least one premium license per user or capacity add-ons for accessing respective resources. For example: 
 
 - Every user running an app in a Managed Environment must have a Power Apps Premium or a Dynamics 365 Enterprise license that gives premium Power Apps usage rights \*. If you use capacity-based licenses, a Managed Environment must have Power Apps per app plans such as app passes allocated to it. Use of Power Apps capabilities included with Dynamics 365 Pro licenses must be only within the context of the licensed Dynamics 365 application. 
 - Every user running a Power Automate cloud flow in a Managed Environment must have a Power Automate Premium license or a Dynamics 365 Enterprise license with premium Power Automate usage rights \*. If you use capacity-based licenses, a Managed Environment must have Power Automate per flow plan such as Flow per business process allocated to it. Use of Power Automate capabilities included with Dynamics 365 Pro licenses must be only within the context of the licensed Dynamics 365 application. Power Automate cloud flows that are triggered within apps or in context of apps or chatbots are covered by the respective Power Apps or Microsoft Copilot Studio standalone licenses. 
