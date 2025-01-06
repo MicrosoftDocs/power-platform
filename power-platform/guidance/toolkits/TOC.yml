@@ -1,7 +1,7 @@
 - name: Power Platform toolkits
   href: toolkits/index.yml
   items:
-      - name: Power Platform Center of Excellence (CoE) Kit
+    - name: Power Platform Center of Excellence (CoE) Kit
       href: coe/starter-kit.md
       items:
         - name: Overview

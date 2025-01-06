@@ -34,25 +34,25 @@ landingContent:
   - title: Creator Kit
     linkLists:
       - linkListType: overview
-          links:
-            - url: /power-platform/guidance/creator-kit/overview
-              text: Creator Kit overview
-            - url: /power-platform/guidance/creator-kit/components
-              text: What's in the Creator Kit
-            - url: /power-platform/guidance/creator-kit/setup
-              text: Install the Creator Kit
-            - url: /power-platform/guidance/creator-kit/creator-kit-explained
-              text: Use the Creator Kit
+        links:
+           - url: /power-platform/guidance/creator-kit/overview
+             text: Creator Kit overview
+           - url: /power-platform/guidance/creator-kit/components
+             text: What's in the Creator Kit
+           - url: /power-platform/guidance/creator-kit/setup
+             text: Install the Creator Kit
+           - url: /power-platform/guidance/creator-kit/creator-kit-explained
+             text: Use the Creator Kit
   - title: ALM Accelerator
     linkLists:
       - linkListType: overview
-          links:
-            - url: /power-platform/guidance/alm-accelerator/overview
-              text: ALM Accelerator overview
-            - url: /power-platform/guidance/alm-accelerator/kit-contents
-              text: What's in the ALM Accelerator
-            - url: /power-platform/guidance/creator-kit/setup-admin-tasks
-              text: Install the ALM Accelerator
-            - url: /power-platform/guidance/creator-kit/new-maker-experience
-              text: Use the ALM Accelerator
+        links:
+           - url: /power-platform/guidance/alm-accelerator/overview
+             text: ALM Accelerator overview
+           - url: /power-platform/guidance/alm-accelerator/kit-contents
+             text: What's in the ALM Accelerator
+           - url: /power-platform/guidance/creator-kit/setup-admin-tasks
+             text: Install the ALM Accelerator
+           - url: /power-platform/guidance/creator-kit/new-maker-experience
+             text: Use the ALM Accelerator
   
