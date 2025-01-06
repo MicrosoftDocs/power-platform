@@ -1,17 +1,17 @@
 ---
-title: "Known issues with document management | MicrosoftDocs"
-description: "Learn about known issues with document management"
+title: Known issues with document management 
+description: Learn about known issues with document management.
 keywords: encrypt
-ms.date: 12/16/2024
+ms.date: 01/06/2025
 ms.custom: 
 ms.topic: article
 applies_to: 
   - PowerApps
 ms.assetid: 
-author: sericks007
+author: adrianorth
 ms.subservice: admin
-ms.author: sericks
-ms.reviewer: 
+ms.author: aorth
+ms.reviewer: sericks
 ms.suite: 
 ms.tgt_pltfrm: 
 topic-status: Drafting
