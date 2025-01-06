@@ -58,6 +58,8 @@
               href: live-chat-support.md
             - name: View known issues
               href: view-known-issues.md
+            - name: View service health
+              href: view-service-health.md
             - name: Support environments and the consent process
               href: support-environment.md
             - name: Determine your organization ID and name
@@ -80,6 +82,8 @@
                   href: view-license-consumption-issues.md
                 - name: View license consumption for finance and operations apps
                   href: view-license-consumption-finops-apps.md
+                - name: Manage Copilot Studio messages and capacity
+                  href: manage-copilot-studio-messages-capacity.md
                 - name: View intelligent recommendations about licensing
                   href: get-recommendations-licensing.md
                 - name: Administer without a license
@@ -486,6 +490,12 @@
                 href: security/network-security.md
               - name: Access control 
                 href: security/access-control.md
+              - name: App access control
+                items: 
+                    - name: Control which apps are allowed in your environment (preview)
+                      href: control-app-access-environment.md
+                    - name: Commonly used Microsoft first-party services and portal apps (preview)
+                      href: apps-to-allow.md
               - name: Threat detection 
                 href: security/threat-detection.md
               - name: Compliance 
