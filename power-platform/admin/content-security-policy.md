@@ -30,7 +30,7 @@ Each component of the CSP header value controls the assets that can be downloade
 This results in a default CSP of `script-src * 'unsafe-inline' 'unsafe-eval'; worker-src 'self' blob:; style-src * 'unsafe-inline'; font-src * data:; frame-ancestors 'self' https://*.powerapps.com;`. In our roadmap, we have the ability to modify currently noncustomizable headers.
 
 > [!Note]
-> The content security policy is only applicable for environments using Dataverse.
+> The content security policy only applies to environments using Dataverse.
 
 ### Prerequisites
 - For Dynamics 365 customer engagement apps and other model-driven apps, CSP is only available in online environments and in organizations with Dynamics 365 customer engagement (on-premises), version 9.1 or later version.
