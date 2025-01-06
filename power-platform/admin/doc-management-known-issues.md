@@ -43,13 +43,13 @@ SharePoint document locations are records in model-driven apps, such as Dynamics
 
 To store documents for records, the document libraries or folders must be in place. If model-driven apps are unable to create the document libraries and folders automatically, you can manually create these in SharePoint. After you create the document libraries and folders in SharePoint, you must create document location records in model-driven apps to point to these SharePoint document libraries and folders.
 
-For more information, see [Create or edit document location records](./create-edit-document-location-records.md).
+Learn more in [Create or edit document location records](./create-edit-document-location-records.md).
 
 ## "File not found" error when using multiple SharePoint sites
 
 If you receive a **File not found** error when using multiple SharePoint sites, the likely cause is that there are no document libraries for a new SharePoint site. You must run the Document Management Settings wizard for any newly added SharePoint sites.
 
-The following steps describes the scenario that causes the error.
+The following steps describe the scenario that causes the error.
 
 1. Run the Document Management Settings wizard for the default SharePoint site.
 
@@ -86,7 +86,7 @@ In Microsoft Dataverse, you can create an entity and enable the Document managem
 Documents of a child entity only appear in the parent documents folder when the parent document location has been created. To create the location, navigate to the Documents tab of the parent record. If no such location is created, child documents don't appear in the parent entity folder. Once the location is created, child documents begin to appear in the parent entity folder.
 
 ## Document folder location for multiple lookups
-If the entity selected for the Based on entity folder structure has two lookups, documents can't be stored inside the entity folder, but can be stored in the root folder. An example is when you have the Based on entity folder structure set to Account and you have an entity with two lookup accounts like Work Order. The documents related to Work Orders can't be stored inside any account document location, but can be stored in the root folder.
+If the entity selected for the **Based on entity** folder structure has two lookups, documents can't be stored inside the entity folder, but can be stored in the root folder. An example is when you have the **Based on entity** folder structure set to **Account** and you have an entity with two lookup accounts like **Work Order**. The documents related to **Work Orders** can't be stored inside any account document location, but can be stored in the root folder.
 
 ## Entering a date for OneNote documents
 
@@ -133,7 +133,7 @@ Configuring the following in the **DocumentGrid** pane is ignored:
 - **Maximum number of rows**: a value
 - **Use available space**: unchecked
 
-For Unified Interface and backward compatibility, the row limit in the document associated grid is set to 5000 and **Use available space** is disabled. This behavior is a known limitation.
+For Unified Interface and backward compatibility, the row limit in the document associated grid is set to 5000 and **Use available space** is turned off. This behavior is a known limitation.
 
 ### Error message when opening a record: "The record doesn't have a SharePoint location associated with it. Add a SharePoint location."
 
@@ -161,9 +161,9 @@ This error occurs with the following filter by options in the document associate
 
 This error occurs because these filter by options aren't currently supported with the document associated grid.
 
-### Next and previous page arrow buttons in the SharePoint grid don't work
+### Next and Previous page arrow buttons in the SharePoint grid don't work
 
-The next and previous page arrow buttons in the SharePoint grid don't work. This behavior is a known issue.
+The **Next** and **Previous** page arrow buttons in the SharePoint grid don't work. This behavior is a known issue.
 
 **Resolution**: Users can select the **Load More** button at the bottom of the page or select **Open Location** to go to the SharePoint site to access files.
 
@@ -173,9 +173,9 @@ OneDrive for Businees for new users can't be configured currently. This behavior
 
 ### Removing support for Microsoft default service principal
 
-Starting in March 2024, support for connecting to the Dataverse virtual table `sharepointdocument` using Microsoft default service principal ends. This change is being made to improve security. Switch to connect using a user account to prevent loss of access to the table.
+In March 2025, support for connecting to the Dataverse virtual table `sharepointdocument` using the Microsoft default service principal ends. This change is being made to improve security. Switch to connect using a user account to prevent loss of access to the table.
 
-### See also
+### Related content
 
 [Troubleshooting server-based authentication](troubleshooting-server-based-authentication.md) <br />
 [Troubleshoot SharePoint integration](troubleshoot-set-up-sharepoint-online.md)
