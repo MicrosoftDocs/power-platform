@@ -41,7 +41,7 @@ The following table offers a high-level overview of each Power Platform product.
 
 The Power Platform product family relies on a few supporting capabilities and concepts. The following table describes the most important ones to understand.
 
-| **Power Fx** | **Power Fx is an** [**open-sourced**](https://github.com/microsoft/Power-Fx)**, low-code language inspired by Excel formulas. Strongly typed, declarative, and functional, with imperative logic and state management, all expressed in human-friendly text, Power Fx makes common programming tasks easy for citizen developers and pro developers alike. It supports the full spectrum of development, from no-code for those who have never programmed before to "pro-code" for the seasoned professional, empowering diverse teams to collaborate and save time and expense.** |
+| **Power Fx** | Power Fx is an [open-sourced](https://github.com/microsoft/Power-Fx), low-code language inspired by Excel formulas. Strongly typed, declarative, and functional, with imperative logic and state management, all expressed in human-friendly text, Power Fx makes common programming tasks easy for citizen developers and pro developers alike. It supports the full spectrum of development, from no-code for those who have never programmed before to "pro-code" for the seasoned professional, empowering diverse teams to collaborate and save time and expense. |
 |---|---|
 | **Connectors**  | Connectors are vital for allowing low-code and traditional coding to work together to deliver modern apps. Connectors are a wrapper around an API that allows Power Apps and Power Automate to use internal and external data sources and services. More than a thousand pre-built connectors are available, and you can create your own for any RESTful API. The connector definition includes the necessary metadata to make the API easy for low-code apps to consume. |
 | **Dataverse** | Dataverse is a cloud-scale hybrid data store built on Azure data management services—but it's much more than a database. It's the underlying data platform for both Dynamics 365 and Power Platform, with server-side logic in the form of workflows and plug-ins, business rules and process flows, a highly sophisticated security model, and an extensible development platform with built-in support for multi-language and multi-currency apps. Applications can be quickly constructed from the data model, making it one of the fastest ways to deploy a form-over-data solution. |
@@ -235,14 +235,14 @@ Just as important as identifying low-code opportunities is recognizing when a lo
 
 #### Front-end scenarios that don't fit a low-code approach
 
-| **User device isn't compatible** | **Power Platform recognizes mobile devices and specialized devices like barcode scanners. Devices that depend on specific APIs or drivers might not be supported and would require a more traditional approach.** |
+| **User device isn't compatible** | Power Platform recognizes mobile devices and specialized devices like barcode scanners. Devices that depend on specific APIs or drivers might not be supported and would require a more traditional approach. |
 |---|---|
 | **Heavy volume of client-side data** | The user experience in some applications requires large quantities of data, a challenge for any technology, not just low-code. Downloading and processing that much data can stress back-end systems and degrade the performance of both the app and the device it runs on. Users aren't as productive when they're forced to navigate a sea of data.Before turning to traditional coding methods to handle the load, explore whether proper filtering and navigation can provide a better user experience. |
 | **Complex offline requirements** | Applications that need to work in places where connectivity is poor or nonexistent can be challenging to implement and support, whether they use low-code or traditional code. Power Apps offers basic capability for simple offline scenarios. For example, an app that captures leads during an event and uploads them to a marketing database after the event would work fine. For applications that require files and images, non-Dataverse connectors, or complex conflict resolution, you should look to traditional code techniques. |
 
 #### Back-end scenarios that don't fit a low-code approach
 
-| **High-velocity data** | **Importing millions of rows of data as part of migrations and similar events is commonly supported. However, workloads that involve processing millions of rows of data hourly or daily should be subject to additional evaluation. For example, collecting high volumes of Internet of Things (IoT) telemetry into Dataverse wouldn't make sense. Instead, Azure cloud services could be used to collect and analyze the data and relevant signals added to Dataverse to trigger actions in the application. Applications that involve a high volume of updates to Dataverse data on a regular basis might require the assistance of traditional code to scale the updates.** |
+| **High-velocity data** | Importing millions of rows of data as part of migrations and similar events is commonly supported. However, workloads that involve processing millions of rows of data hourly or daily should be subject to additional evaluation. For example, collecting high volumes of Internet of Things (IoT) telemetry into Dataverse wouldn't make sense. Instead, Azure cloud services could be used to collect and analyze the data and relevant signals added to Dataverse to trigger actions in the application. Applications that involve a high volume of updates to Dataverse data on a regular basis might require the assistance of traditional code to scale the updates. |
 |---|---|
 | **Background workloads with complex logic** | Background workloads that involve complex logic or a high volume of API calls might not be right for a low-code solution. Instead, the logic can be centralized in an API that a low-code solution can call. |
 | **APIs that use non-RESTful protocols** | Power Platform connectors support only REST APIs. If you need to connect to another style API like SOAP or gRPC, provide your own REST API that communicates with the incompatible one. |
@@ -255,13 +255,10 @@ As you evaluate your application portfolio, it isn't enough to identify good can
 
 Prioritization should consider the following factors:
 
-The low-code maturity of your organization
-
-The complexity of the opportunity
-
-ROI for the organization, users, and IT
-
-Time to value
+- The low-code maturity of your organization
+- The complexity of the opportunity
+- ROI for the organization, users, and IT
+- Time to value
 
 Being realistic about your organization's low-code capabilities can help you choose an opportunity that challenges your team to grow but doesn't overwhelm them to fail. You don't have to pick the most straightforward application without any challenges. An ideal one would offer some opportunities to explore how to combine traditional code with low-code solutions.
 
@@ -277,7 +274,7 @@ User adoption of the modernized application is important. Users need to feel tha
 
 Organizations that are successful in modernizing their legacy apps don't just assign a modernization project to a team of traditional code developers and hope they succeed. It's important to give your team the knowledge and confidence in low-code development it needs to successfully complete a modernization effort.
 
-A team of low-code resources working alongside traditional code resources is referred to as a fusion team. Fusion teams are designed to encourage collaboration by training both types of resources on integrating low-code solutions with traditional code. A solution architect establishes how the solution will be architected between low-code and traditional code. 
+A team of low-code resources working alongside traditional code resources is referred to as a fusion team. Fusion teams are designed to encourage collaboration by training both types of resources on integrating low-code solutions with traditional code. A solution architect establishes how the solution will be architected between low-code and traditional code.
 
 While it's easy to default to assigning all the work to traditional developers, low-code modernization efforts are good opportunities to expand the project team. Many business users make excellent low-code resources. They can accelerate the team's work because they already understand the business problem. They just need to learn how to complete the types of low-code work the team will take on and be familiar with testing and ALM procedures. That might mean learning how to build apps in Power Apps or workflows in Power Automate. They should also understand what traditional coders can develop to make their low-code efforts easier. This doesn't mean they need to know how to write traditional code.
 
@@ -341,7 +338,7 @@ The Power Apps runtime engine is built on the React framework. Applications are 
 
 ### Inside connectors
 
-Connectors use Azure API Management to manage credentials and connections from each user. 
+Connectors use Azure API Management to manage credentials and connections from each user.
 
 ![A diagram showing Power Apps, API Management, Connects, and Data Sources connected together](media/app-mod/image3.png)
 
@@ -357,7 +354,7 @@ Extensibility is a key feature that differentiates Microsoft Power Platform from
 
 The following table provides a high-level overview of some of the common extensibility options. We'll refer to some of them again later, when we discuss how to approach modernization and patterns that you can apply.
 
-| **APIs and custom connectors** | **Custom connectors for your REST APIs centralize app logic and allow it to be exposed to low-code components in a secure and governed way. You can use this approach in an API-first strategy for application modernization. The custom connector uses an OpenAPI document to define how a low-code component can interact with the REST API. For example, you could create an API using Azure Functions and publish it to Azure API Management. Azure API Management can export an OpenAPI definition to automatically create the custom connector for use in a low-code solution.This approach decouples client applications from the APIs, allowing them to evolve independently. The APIs are centrally managed, adding a layer of security by not exposing the API directly and using authentication techniques like subscription keys, tokens, client certificates, and custom headers.** |
+| **APIs and custom connectors** | Custom connectors for your REST APIs centralize app logic and allow it to be exposed to low-code components in a secure and governed way. You can use this approach in an API-first strategy for application modernization. The custom connector uses an OpenAPI document to define how a low-code component can interact with the REST API. For example, you could create an API using Azure Functions and publish it to Azure API Management. Azure API Management can export an OpenAPI definition to automatically create the custom connector for use in a low-code solution.This approach decouples client applications from the APIs, allowing them to evolve independently. The APIs are centrally managed, adding a layer of security by not exposing the API directly and using authentication techniques like subscription keys, tokens, client certificates, and custom headers. |
 |---|---|
 | **Power Apps Component framework** | The Power Apps Component framework is an extensibility framework for creating custom visuals for Power Apps and Power Pages. The code components are created using HTML, JavaScript, or TypeScript. Think of code components as UI building blocks that can be reused to build one or more apps. The components include a manifest that defines how a low-code component can interact with the code component. The component interface allows the hosting runtime engine to communicate the hosting container's lifecycle events. This allows the code component to render its visuals using context information provided by the hosting container.For ideas, browse the community gallery at <https://pcf.gallery>. |
 | **Virtual tables** | Virtual tables make it easier to integrate data that resides in external systems. They seamlessly represent the external data as tables in Microsoft Dataverse, without replicating the data and often without the need for custom coding.Dataverse ships with data providers for OData v4 and Azure Cosmos DB. A virtual connector provider, currently in preview, expands the available data providers to include a subset of the Power Platform connectors, including SharePoint and SQL Server. For more advanced scenarios, developers can create custom data providers. Creating custom data providers requires deep knowledge of both the external data and Dataverse. The ability to create Dataverse plug-ins using Power Fx for the logic is in preview. |
@@ -377,7 +374,7 @@ Workloads should be designed so that users can complete much of their work witho
 
 The following table describes the two types of apps you can build with Power Apps, canvas apps and model-driven apps.
 
-| **Canvas apps** | **Canvas apps are highly customizable. They consist of one or more screens that users interact with. You control the layout of each screen and the navigation across screens. Canvas apps work with data using connectors. A single app can work with multiple connectors, making it good for integrating across multiple data sources as a composite app.** |
+| **Canvas apps** | Canvas apps are highly customizable. They consist of one or more screens that users interact with. You control the layout of each screen and the navigation across screens. Canvas apps work with data using connectors. A single app can work with multiple connectors, making it good for integrating across multiple data sources as a composite app. |
 |---|---|
 | **Model-driven apps** | Model-driven apps use Dataverse as the primary data source. They consist of one or more pages, which can be Dataverse tables or custom pages. A Dataverse table page can be drilled down to a detail page for viewing and editing. Custom pages can incorporate a canvas app screen and data from connectors. Model-driven apps have a customizable built-in navigation structure. It's consistent across all model-driven apps, which helps with user adoption. |
 
@@ -415,7 +412,7 @@ You have the following options for the data architecture of the modernized appli
 
 **Migrate to data lake:** For historical, analytical, or telemetry data, use a data lake. The data in the lake can be used to generate Power BI analytics or processed to generate AI-powered insights.
 
-When evaluating options for the data architecture of a modernized application, keep the following considerations in mind: 
+When evaluating options for the data architecture of a modernized application, keep the following considerations in mind:
 
 **Impact on other applications:** While migrating to a more efficient data store might be ideal for one application, the initial impact on other applications that use the data might be too high. Some organizations consider leaving the data in old data stores and creating new data in Dataverse, migrating from the old store as more applications are modernized.
 
@@ -507,7 +504,9 @@ For example, Ernst & Young used the pre-built SAP integration to rapidly develop
 
 As solutions move to the cloud, connectivity back to on-premises resources can be essential in ensuring that integrations still work with the modernized application. These applications must also be able to integrate with other traditional cloud resources that might reside in different network environments. The Power Platform supports the four primary options for secure connectivity: data gateways, virtual network data gateways, private links, and ExpressRoute.
 
-**Data gateways** allow low-code components from Power Apps, Power Automate, and Power BI to reach back to on-premises resources to support hybrid integration scenarios. Gateways provide a quick way for modernized low-code applications to access data sources that are still on-premises. With a gateway, you can connect to on-premises data from sources like a local file system, DB2, Oracle, SAP ERP, SQL Server, and SharePoint. One gateway can support multiple users and access to multiple sources. You can also configure data gateways as clusters to provide high availability.<br><br>Gateway support is integrated into the connection process for connectors, allowing indication when a gateway is required and selection of the configured gateway. After the connection is configured, apps and flows can use the connector just like one without a gateway. 
+**Data gateways** allow low-code components from Power Apps, Power Automate, and Power BI to reach back to on-premises resources to support hybrid integration scenarios. Gateways provide a quick way for modernized low-code applications to access data sources that are still on-premises. With a gateway, you can connect to on-premises data from sources like a local file system, DB2, Oracle, SAP ERP, SQL Server, and SharePoint. One gateway can support multiple users and access to multiple sources. You can also configure data gateways as clusters to provide high availability.
+
+Gateway support is integrated into the connection process for connectors, allowing indication when a gateway is required and selection of the configured gateway. After the connection is configured, apps and flows can use the connector just like one without a gateway. 
 
 ![Diagram of a data gateway.](media/app-mod/image11.png)
 
@@ -515,7 +514,7 @@ As solutions move to the cloud, connectivity back to on-premises resources can b
 
 **Azure private link** and Azure networking private endpoints allows apps and flows to access Power BI securely. Private endpoints are used to send data traffic privately using Microsoft's backbone network infrastructure instead of going across the internet. Private endpoints ensure that traffic going into your organization's Power BI resources, such as reports or workspaces, always follow your organization's configured private link network path. 
 
-**Azure ExpressRoute** provides an advanced way to connect your on-premises network to Microsoft cloud services using private connectivity. A single ExpressRoute connection can access multiple online services like Power Platform, Dynamics 365, Microsoft 365, and Azure cloud services without traversing the public Internet. ExpressRoute requires significant planning and configuration and involves additional cost for the ExpressRoute service and the connectivity provider. 
+**Azure ExpressRoute** provides an advanced way to connect your on-premises network to Microsoft cloud services using private connectivity. A single ExpressRoute connection can access multiple online services like Power Platform, Dynamics 365, Microsoft 365, and Azure cloud services without traversing the public Internet. ExpressRoute requires significant planning and configuration and involves additional cost for the ExpressRoute service and the connectivity provider.
 
 Regardless of which approaches you use for integration connectivity, you should evaluate your connectivity to ensure it has low enough latency and enough bandwidth to support both your integrations and the modernized application.
 
@@ -523,7 +522,7 @@ Regardless of which approaches you use for integration connectivity, you should 
 
 When building modern applications, you can choose what to implement business logic with and where to implement it in your application architecture. Without guidance, most organizations would end up with business logic chaos. Having reusable logic that ensures consistency in implementation can help speed up modernization efforts.
 
-For our purposes, we'll define business logic as being different from user experience logic. For example, logic to navigate from screen to screen based on inspection data values is user experience logic. The logic you implement to determine if an inspection is complete might include several condition evaluations and would be considered business logic. 
+For our purposes, we'll define business logic as being different from user experience logic. For example, logic to navigate from screen to screen based on inspection data values is user experience logic. The logic you implement to determine if an inspection is complete might include several condition evaluations and would be considered business logic.
 
 When architecting a solution that includes low-code, the following considerations can help you decide where you might place business logic.
 
@@ -547,21 +546,14 @@ Power Platform takes a multiple-layer approach to security that you can use to b
 
 Let's take a high-level look at the multiple layers of security that make up the Power Platform security model.
 
-Users are authenticated by Azure AD, and use can be restricted using conditional access policies.
-
-Licensing is the first control-gate to allowing access to Power Platform components.
-
-The ability to create applications and workflows is controlled by security roles in the context of environments.
-
-Users' ability to see and use Power Platform resources is controlled by sharing the application with them. Resources are shared directly with the user or Azure AD group.
-
-Environments act as security boundaries, allowing different security needs to be implemented in each one.
-
-Power Automate flows and canvas apps use connectors. The specific connection credentials and associated service entitlements determine permissions when apps use the connectors.
-
-Environments with a Dataverse instance support more advanced security models that are specific to controlling access to data and services in that Dataverse instance.
-
-Connector use can be further restricted with data loss prevention (DLP) policies. Cross-tenant inbound and outbound restrictions can also be applied to the connectors.
+- Users are authenticated by Azure AD, and use can be restricted using conditional access policies.
+- Licensing is the first control-gate to allowing access to Power Platform components.
+- The ability to create applications and workflows is controlled by security roles in the context of environments.
+- Users' ability to see and use Power Platform resources is controlled by sharing the application with them. Resources are shared directly with the user or Azure AD group.
+- Environments act as security boundaries, allowing different security needs to be implemented in each one.
+- Power Automate flows and canvas apps use connectors. The specific connection credentials and associated service entitlements determine permissions when apps use the connectors.
+- Environments with a Dataverse instance support more advanced security models that are specific to controlling access to data and services in that Dataverse instance.
+- Connector use can be further restricted with data loss prevention (DLP) policies. Cross-tenant inbound and outbound restrictions can also be applied to the connectors.
 
 It's important to note that when accessing data sources using connectors, all the underlying security that the data source offers is in addition to the layers of security just described. Power Apps and Power Automate don't by default provide users with access to the connector data source that they don't already have. Users should only have access to data that they genuinely require access to.
 
@@ -645,49 +637,30 @@ Low-code opens the door to a broader set of people than just traditional coders.
 
 This whitepaper establishes the foundation for you. The next steps are yours. Here are some suggestions:
 
-Take a few minutes to find out what your organization is already doing with low-code. It might surprise you! 
-
-Evaluate your application modernization opportunities.
-
-Identify and prioritize a good first candidate.
-
-Staff a team that will modernize the application. For the best results, make sure it's a fusion team.
-
-Make sure the team has the necessary training to be successful.
-
-Allow the team to modernize the application.
-
-Reflect on the modernization effort. Refine and scale it to other legacy applications.
+- Take a few minutes to find out what your organization is already doing with low-code. It might surprise you! 
+- Evaluate your application modernization opportunities.
+- Identify and prioritize a good first candidate.
+- Staff a team that will modernize the application. For the best results, make sure it's a fusion team.
+- Make sure the team has the necessary training to be successful.
+- Allow the team to modernize the application.
+- Reflect on the modernization effort. Refine and scale it to other legacy applications.
 
 Every organization's journey to application modernization is unique. Your Microsoft account team or Power Platform partner can help you plan your journey and keep you on the right path along the way.
 
-### Resources
+### Additional information
 
-[The Total Economic Impact™ of Microsoft Power Platform Premium Capabilities](https://info.microsoft.com/ww-landing-forrester-tei-of-power-platform-premium-capabilities.html)
+- [The Total Economic Impact™ of Microsoft Power Platform Premium Capabilities](https://info.microsoft.com/ww-landing-forrester-tei-of-power-platform-premium-capabilities.html)
+- [American Airlines ConnectMe app creates a smoother travel experience for customers and better technology tools for team members](https://news.microsoft.com/2022/05/18/american-airlines-and-microsoft-partnership-takes-flight-to-create-a-smoother-travel-experience-for-customers-and-better-technology-tools-for-team-members/)
+- [Power Fx open-sourced](https://github.com/microsoft/Power-Fx) repository on GitHub
+- [CoE Starter Kit](/power-platform/guidance/coe/starter-kit)
+- [Power Platform Adoption Assessment](/assessments/3c62fd23-9d36-491c-8941-26d5553365f8/)
+- [Digital insurance agency automates a complex purchasing process using Power Platform](https://customers.microsoft.com/en-us/story/1432427877109295124-nsure-power-apps)
+- [PCF Gallery](https://pcf.gallery/)
+- [EY helps enable entry at source for a global finance process with Power Platform, reducing lead times by 95 percent](https://customers.microsoft.com/en-SG/story/1517917618455612643-eyzilla-professionalservices)
+- [Azure private Link](/power-bi/enterprise/service-security-private-links)
+- [Microsoft Azure ExpressRoute](/power-platform/guidance/expressroute/overview)
+- [Power Platform Release Planner](https://releaseplans.microsoft.com/en-US/?app=Power+Apps)
+- [Microsoft Power Platform Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130)
+- [Microsoft outlines framework for building AI apps and copilots; expands AI plugin ecosystem](https://news.microsoft.com/source/features/ai/microsoft-outlines-framework-for-building-ai-apps-and-copilots-expands-ai-plugin-ecosystem/)
 
-[American Airlines ConnectMe app creates a smoother travel experience for customers and better technology tools for team members](https://news.microsoft.com/2022/05/18/american-airlines-and-microsoft-partnership-takes-flight-to-create-a-smoother-travel-experience-for-customers-and-better-technology-tools-for-team-members/)
-
-[Power Fx open-sourced](https://github.com/microsoft/Power-Fx) repository on GitHub
-
-[CoE Starter Kit](/power-platform/guidance/coe/starter-kit)
-
-[Power Platform Adoption Assessment](/assessments/3c62fd23-9d36-491c-8941-26d5553365f8/)
-
-[Digital insurance agency automates a complex purchasing process using Power Platform](https://customers.microsoft.com/en-us/story/1432427877109295124-nsure-power-apps)
-
-[PCF Gallery](https://pcf.gallery/)
-
-[EY helps enable entry at source for a global finance process with Power Platform, reducing lead times by 95 percent](https://customers.microsoft.com/en-SG/story/1517917618455612643-eyzilla-professionalservices)
-
-[Azure private Link](/power-bi/enterprise/service-security-private-links)
-
-[Microsoft Azure ExpressRoute](/power-platform/guidance/expressroute/overview)
-
-[Power Platform Release Planner](https://releaseplans.microsoft.com/en-US/?app=Power+Apps)
-
-[Microsoft Power Platform Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130)
-
-[Microsoft outlines framework for building AI apps and copilots; expands AI plugin ecosystem](https://news.microsoft.com/source/features/ai/microsoft-outlines-framework-for-building-ai-apps-and-copilots-expands-ai-plugin-ecosystem/)
-
-
-**Download**: Download the white paper from [https://aka.ms/lowcode/modernize](https://aka.ms/lowcode/modernize).
+<!-- **Download**: Download the white paper from [https://aka.ms/lowcode/modernize](https://aka.ms/lowcode/modernize).-->
