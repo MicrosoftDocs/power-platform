@@ -229,7 +229,7 @@ For example, if you determine an application isn't a good fit because Power Apps
 
 NSure.com, a proprietary online insurance shopping platform, offers a real-world example. The company's initial launch relied on traditionally developed Angular, Xamarin, and Azure services. By adding Power Platform and Dynamics 365, NSure.com created a next-generation solution using both low-code and traditional coding techniques, as the following diagram illustrates. [Learn more about the company’s journey.](https://customers.microsoft.com/en-us/story/1432427877109295124-nsure-power-apps)
 
-![Diagram illustrating the insurance quotation process incorporating both traditional code and low-code components.](media/app-mod/image2.jpeg)
+![Diagram illustrating the insurance quotation process incorporating both traditional code and low-code components.](media/app-mod/image2.png)
 
 Just as important as identifying low-code opportunities is recognizing when a low-code approach isn't the right one. The following tables describe use cases that are commonly not a good fit for low-code solutions. Organizations face different challenges on the front end and the back end, so let's consider them separately.
 
@@ -501,7 +501,7 @@ Organizations should also consider pre-built integration options available from 
 
 For example, Ernst & Young used the pre-built SAP integration to rapidly develop a solution to optimize a high-frequency global finance process. The following diagram of the [company’s PowerPost solution](https://customers.microsoft.com/en-SG/story/1517917618455612643-eyzilla-professionalservices) shows how finance users post documents to its GL SAP ERP system using Power Platform.
 
-![Diagram of the Ernst & Young integrated SAP solution.](media/app-mod/image10.jpeg)
+![Diagram of the Ernst & Young integrated SAP solution.](media/app-mod/image10.png)
 
 ##### Integration connectivity options
 
