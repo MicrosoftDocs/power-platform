@@ -5,10 +5,11 @@ author: ananthar-msft
 ms.author: ananthar
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 10/28/2024
+ms.date: 01/07/2025
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
+# customer intent: As a Checklist app user, I want to understand how to use the Checklist template for Power Platform.
 ---
 
 # Get started using the Checklist app

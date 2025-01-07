@@ -5,7 +5,7 @@ author: ananthar-msft
 ms.author: ananthar
 ms.reviewer: ellenwehrle
 ms.topic: overview
-ms.date: 10/28/2024
+ms.date: 01/07/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -42,7 +42,7 @@ Be sure to check back often for new templates that become available.
    :::column span="":::
       ![Employee Kudos](media/overview/kudos-icon-sq.png "Employee Kudos") <br> **Employee Kudos template** <br> Enable an employee recognition program <br> [Documentation](https://aka.ms/LearnEmployeeKudosTemplate) <br> [AppSource](https://aka.ms/AccessEmployeeKudosTemplate)
    :::column-end:::
-   :::column span="":::
+      :::column span="":::
       ![Awards and Recognition](media/overview/awards-req-icon-sq.png "Awards and Recognition") <br> **Awards and Recognition template** <br> Facilitate an employee awards program <br> [Documentation](https://aka.ms/LearnAwardsAndRecognitionTemplate) <br> [AppSource](https://aka.ms/AccessAwardsandRecognitionTemplate)
    :::column-end:::
 :::row-end:::
@@ -56,8 +56,6 @@ Be sure to check back often for new templates that become available.
    :::column span="":::
       ![Hardware Request and Management](media/overview/hrm-sq-icon.png "Hardware Request and Management") <br> **Hardware Request and Management template**<br> Manage hardware requests and assets <br> [Documentation](https://aka.ms/LearnHardwareRequestAndManagementTemplate) <br> [AppSource](https://aka.ms/AccessHardwareRequestandManagementTemplate)
    :::column-end:::
-:::row-end:::
-:::row:::
    :::column span="":::
       ![Appointment Booking](media/overview/ab-as-icon.png "Appointment Booking") <br> **Appointment Booking template** <br> Organize the appointment booking process <br> [Documentation](https://aka.ms/LearnAppointmentBookingTemplate) <br> [AppSource](https://aka.ms/AccessAppointmentBookingTemplate)
    :::column-end:::
@@ -68,6 +66,13 @@ Be sure to check back often for new templates that become available.
       ![Checklist](media/overview/checklist-sq-logo.png "Checklist") <br> **Checklist template** <br> Create checklists to manage tasks and projects <br> [Documentation](https://aka.ms/LearnChecklistReqTemplate) <br> [AppSource](<https://aka.ms/AccessChecklistTemplate>)
    :::column-end:::
 :::row-end:::
+
+## SAP Procurement-related templates
+
+There are also two templates that support the SAP Procurement template:
+
+- [**SAP Setup Assistant**](finance/sap-procurement/administer/sap-setup-assistant/overview.md): Helps you integrate Power Platform with SAP and set up the the SAP Procurement template.
+- [**SAP Supplier Self Service**](finance/sap-supplier-self-service/overview.md): Allows you to create a customizable Power Pages site to complement the SAP Procurement template.
 
 ## Benefits of using enterprise templates
 

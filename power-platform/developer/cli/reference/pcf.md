@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: laneswenka
 ms.author: laswenka
-ms.date: 8/22/2024
+ms.date: 12/2/2024
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 

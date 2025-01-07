@@ -26,6 +26,8 @@
               href: check-online-service-health.md
             - name: Enabling preview features
               href: what-are-preview-features-how-do-i-enable-them.md
+            - name: Use the new Power Platform admin center (preview)
+              href: new-admin-center.md
             - name: Requirements
               items:
                 - name: URLs and IP address ranges
@@ -52,8 +54,12 @@
               href: get-help-support.md
             - name: Support overview
               href: support-overview.md
+            - name: Use live chat with persistence
+              href: live-chat-support.md
             - name: View known issues
               href: view-known-issues.md
+            - name: View service health
+              href: view-service-health.md
             - name: Support environments and the consent process
               href: support-environment.md
             - name: Determine your organization ID and name
@@ -76,6 +82,8 @@
                   href: view-license-consumption-issues.md
                 - name: View license consumption for finance and operations apps
                   href: view-license-consumption-finops-apps.md
+                - name: Manage Copilot Studio messages and capacity
+                  href: manage-copilot-studio-messages-capacity.md
                 - name: View intelligent recommendations about licensing
                   href: get-recommendations-licensing.md
                 - name: Administer without a license
@@ -458,15 +466,41 @@
                   href: wp-task-automation-powershell.md
                 - name: Automation of tasks with Power Automate
                   href: wp-task-automation-flow.md
+        - name: Managed operations
+          items:
+            - name: Overview
+              href: operations/overview.md
+            - name: Monitor page (preview)
+              href: monitoring/monitoring-overview.md
+            - name: View logs (preview)
+              href: monitoring/logs.md
         - name: Security and governance
           items:
             - name: Security and governance
               href: security.yml
             - name: Overview of Power Platform security
               href: security/overview.md
-            - name: Manage security (preview)
-              href: security/security-posture-overview.md
-            - name: Manage Copilot (preview)
+            - name: Managed security
+              href: security/managed-security.md
+            - name: Security page
+              items:
+              - name: Overview
+                href: security/security-overview.md
+              - name: Network security 
+                href: security/network-security.md
+              - name: Access control 
+                href: security/access-control.md
+              - name: App access control
+                items: 
+                    - name: Control which apps are allowed in your environment (preview)
+                      href: control-app-access-environment.md
+                    - name: Commonly used Microsoft first-party services and portal apps (preview)
+                      href: apps-to-allow.md
+              - name: Threat detection 
+                href: security/threat-detection.md
+              - name: Compliance 
+                href: security/compliance.md
+            - name: Manage Copilot
               href: copilot/copilot-hub.md
             - name: Power Platform managed identity
               items:
@@ -649,7 +683,9 @@
             - name: Virtual Network support
               items:
                 - name: Virtual Network support overview
-                  href: vnet-support-overview.md
+                  href: vnet-support-overview.md                
+                - name: Virtual Network support white paper
+                  href: virtual-network-support-whitepaper.md   
                 - name: Set up Virtual Network support
                   href: vnet-support-setup-configure.md
             - name: Security FAQs
@@ -1059,6 +1095,8 @@
                   items:
                     - name: Troubleshooting server-based authentication
                       href: troubleshooting-server-based-authentication.md
+                    - name: Troubleshooting conditional access authentication
+                      href: troubleshooting-conditional-access-authentication.md
                     - name: Troubleshoot set up with SharePoint online
                       href: troubleshoot-set-up-sharepoint-online.md
                     - name: Troubleshooting document management issues

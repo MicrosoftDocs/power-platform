@@ -36,12 +36,9 @@ The following outlines the types of content blocks that are in a blueprint:
 > [!div class="mx-imgBorder"]
 > ![Workspace blocks.](media/workspace-blocks.png)
 
-
 Legend
 
 1. **Text Overview**: Provides a summary and key insights at a glance.
 2. **Chart**: Facilitates visual understanding of complex data or research findings. Chart blocks can render various chart types. The primary focus is on presenting top 10 items for quick overviews, but you can modify this range, filter data, or modify chart type using the AI Cursor. 
 3. **News**: Delivers at least three current news articles or resources from global sources. The relevance and quantity of the news articles is influenced by your specific selection within a block using the AI Cursor, or from a generic question, with or without a file association. If there's a file association, world data is augmented to the local asset to ensure contextual relevance. Each article provides a link to the full resource, enabling users to explore the topic further. The news block, along with the context awareness of the AI Cursor, provides a comprehensive response to questions that are asked.
 4. **Suggested next steps**: Designed to inspire deeper explorations or actions based on the information currently available on the canvas. When you interact with the system either by asking questions or uploading a file, the suggested next step block suggests up to five actions. You can try to expand your analysis. You aren't limited to the suggested next steps generated as you can use AI Cursor to write your own next step. 
-
-

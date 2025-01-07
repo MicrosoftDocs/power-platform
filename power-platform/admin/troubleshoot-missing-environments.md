@@ -1,16 +1,19 @@
 ---
-title: "Troubleshoot missing environments"
+title: Troubleshoot missing environments
 description: "Learn how to update a record’s owner, an Owning Business Unit, or both an Owner and Owning Business Unit because the record changes ownership."
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/31/2024
+ms.date: 12/03/2024
 ms.subservice: admin
 author: davidme-ms
 ms.author: davidme 
 ms.reviewer: sericks
 search.audienceType: 
   - admin
+contributors:
+  - jordanchodakWork
 ---
+
 # Troubleshoot missing environments
 
 It’s not uncommon for an administrator or a maker to expect to find an environment in the environment list and discover that one or more environments is “missing” from the list. This can occur in the Power Platform admin center, in the Power Apps maker portal, or in the Power Automate portal. Each of these experiences has different requirements for inclusion of environments in the list. The set of environments a given user will see in the list in the context of each of these experiences will vary. 
@@ -35,7 +38,7 @@ This table lays out the unique requirements that must be met for an environment 
 |Product experience   |Inclusion rules   |
 |---------|---------|
 |Power Platform admin center environment list      | Users must have administrative access to the environment for the environment to show up in the main Power Platform admin center environment list (System Administrator role in Dataverse, Environment Admin role for environments without Dataverse). Power Platform admins, delegated admins, and authorized service principals will see all environments in the tenant. Dynamics 365 admins are limited to seeing environments in which they're a member of the environment security group, if one has been applied.         |
-|Power Apps maker portal environment list      | The environment list in the Power Apps maker portal includes all environments in which the user has been assigned the Environment maker role plus any environments in which the user has maker permission to one or more apps. **Note**: Assignment of the Environment Administrator role doesn't cause the environment to be included in the environment list in the maker portal.         |
+|Power Apps maker portal environment list      | The environment list in the Power Apps maker portal includes all environments in which the user has been assigned the Environment Maker role plus any environments in which the user has maker permission to one or more apps. **Note**: Assignment of the Environment Administrator role or any custom role doesn't cause the environment to be included in the environment list in the maker portal.         |
 |Power Automate portal environment list      | The Power Automate portal includes environments in which the user has any built-in security role plus any environments in which the user is a co-owner of one or more flows.         |
 
 > [!NOTE]

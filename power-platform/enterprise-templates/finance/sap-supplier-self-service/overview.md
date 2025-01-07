@@ -39,4 +39,3 @@ The template uses third-party libraries to show data in forms and lists from clo
 
 - **Form.io**: https://cdn.form.io/js/formio.embed.js ([License information](https://github.com/formio/formio.js/blob/4.19.x/LICENSE.txt))
 - **Data tables**: https://cdn.datatables.net/2.0.8/js/dataTables.min.js ([License information](https://datatables.net/license/mit))
-

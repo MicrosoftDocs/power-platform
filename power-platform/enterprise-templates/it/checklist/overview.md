@@ -5,11 +5,11 @@ author: ananthar-msft
 ms.author: ananthar
 ms.reviewer: ellenwehrle
 ms.topic: overview
-ms.date: 10/28/2024
+ms.date: 01/07/2025
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
-# customer intent: As a reader, I want to understand the purpose and benefits of the Checklist template for Power Platform.
+# customer intent: As a business manager, I want to understand the purpose and benefits of the Checklist template for Power Platform.
 ---
 
 # What is the Checklist template Microsoft Power Platform?

@@ -61,7 +61,7 @@ landingContent:
             url: /training/paths/responsible-ai-business-principles/
           - text: Copilot Foundations
             url: /training/paths/copilot-foundations/
-          - text: Create and extend custom copilots in Microsoft Copilot Studio
+          - text: Create agents in Microsoft Copilot Studio
             url: /training/paths/create-extend-custom-copilots-microsoft-copilot-studio/
       - linkListType: reference
         links:

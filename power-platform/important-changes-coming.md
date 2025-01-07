@@ -1,7 +1,7 @@
 ---
-title: "Important changes (deprecations) coming in Power Platform"
+title: Important changes (deprecations) coming in Power Platform
 description: Important changes (deprecations) coming in Power Platform 
-ms.date: 10/28/2024
+ms.date: 12/26/2024
 ms.topic: conceptual
 ms.subservice: admin
 searchScope:
@@ -46,6 +46,8 @@ To ensure the security and integrity of your system and data, we encourage custo
 
 > [!Note]
 > If application onboarding isn't expected, remove that app or replace it with a compliant app that has a client service principal in the tenant.
+>
+> Make sure that the access token being acquired is from your tenant endpoint (`https://login.microsoftonline.com/{yourtenant}`), not your organization endpoint (`https://login.microsoftonline.com/organizations`).
 
 ### When is this change coming into effect? 
 
@@ -53,7 +55,7 @@ Support for app-only tokens by multitenant apps that don't have a service princi
 
 ## Hierarchy control in model-driven apps is deprecated
 
-Effective October 2024, the hierarchy control, which is used to define and query hierarchically related data in model-driven apps, is deprecated. The control will continue to work in existing apps until April 2025, at which time it will be removed from the product.
+Effective October 2024, the hierarchy control, which is used to define and query hierarchically related data in model-driven apps, is deprecated. The control will continue to work in existing apps until October 2025, at which time it will be removed from the product.
 
 The hierarchy control allows users to visualize relationships between records for a table. This is applicable for any table that has a self-referential relationship.
 
@@ -69,7 +71,7 @@ After its removal, end users will not be able to view the visual representation 
 
 You can temporarily enable the control until its removed in the product by editing the app settings. Go to Power Apps (make.powerapps.com) and open the app you want for editing. Then go to **Settings** > **Features** tab and enable the **Enable the "View hierarchy" capability** setting.
 
-This feature will be fully removed April 2025.
+This feature will be fully removed October 2025.
 
 If the hierarchy view is essential to your app, a custom PCF control that handles the hierarchy view must be created and deployed. For information about how to create a code component, go to [Create and build a code component](/power-apps/developer/component-framework/create-custom-controls-using-pcf).
 
@@ -89,7 +91,14 @@ Thanks to our ISV partners for trying out ISV Studio during the preview. After c
 
 To continue accessing analytics related to your AppSource solutions, use the reporting features in Partner Center. Although this alternative might not offer the same data from ISV Studio, Partner Center serves as a valuable resource for insights and tools to empower your business growth and success.
 
-For the connector certification wizard, learn more about [directly accessing the connector certification portal](/connectors/custom-connectors/submit-certification).
+## Connector Certification Portal Deprecation
+
+The Connector Certification Portal was a preview portal that allowed partners to submit and certify connectors created using the Power Query SDK. Once certified, these connectors would ship in products such as Power BI Desktop, On-Premises Data Gateway and Power Query Online in general.
+
+After careful consideration, and thanks to the feedback from partners, a decision was made to decommission the portal starting 15th Jan 2025.
+
+While the portal will be decommissioned, the program will continue. For the latest information on the status of the program and how to certify your connector, learn more about the [Data Factory Connector Certification](/fabric/data-factory/connector-certification).
+
 
 ## DLP resource exemption feature
 
