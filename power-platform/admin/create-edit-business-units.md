@@ -4,13 +4,14 @@ description: Learn how to create or edit business units
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/24/2024
+ms.date: 01/07/2025
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
   - admin
 contributors:
-- paulliew 
+- paulliew
+- val-bc 
 ---
 # Create or edit business units 
 
