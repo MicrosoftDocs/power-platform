@@ -1,7 +1,7 @@
 ---
 title: Dataverse capacity-based storage details  
 description: Learn about the Microsoft Dataverse capacity-based storage model.
-ms.date: 10/16/2024
+ms.date: 12/01/2024
 ms.topic: conceptual
 author: MicroSri
 ms.subservice: admin
@@ -115,28 +115,6 @@ Note the following features:
 > - For the default environment, the list view shows the amount of capacity consumed beyond the included quota. Select the **Details** button (![Storage data details button.](media/storage-data-details-button.png "Storage data details button")) to see usage.
 > - The capacity check conducted prior to creating new environments excludes the default environment's included storage capacity when calculating whether you have sufficient capacity to create a new environment.
 
-#### Allocate capacity for an environment (preview)
-
-> [!IMPORTANT]
->
-> - This is a preview feature.
-> - Preview features aren't meant for production use and might have restricted functionality. These features are subject to [supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2189520), and are available before an official release so that customers can get early access and provide feedback.
-> - This feature is being gradually rolled out across regions and might not be available in your region yet.
-
-In the **Dataverse** tab, you can allocate capacity to a specific environment. Once capacity is allocated, you can view the status of your environments to determine whether they are within capacity or in an overage state.
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-1. In the navigation pane, select **Resources** > **Capacity**.
-1. On the **Capacity** page, select the **Datavese** tab.
-1. Select the environment for which you want to allocate capacity.
-1. Select the **Allocate capacity** button, located above the environment list. The **Allocate capacity** pane is displayed on the right side of the page.
-1. In the **Allocate capacity** pane, view the currently allocated and consumed capacity for the environment.
-1. Allocate capacity by entering the desired value in the **Database**, **File**, and **Log** fields. 
-
-    Ensure the capacity values are positive integers and don't exceed the available capacity displayed at the top of the panel.
-
-1. Opt in to receive daily email alerts sent to tenant and environment admins when the consumed capacity (Database, Log, or File) reaches a set percentage of the allocated capacity.
-1. Select **Save** to apply the changes.
 
 #### Environment storage capacity details
 
@@ -185,13 +163,76 @@ To view this page, select **Resources** > **Capacity** > **Trials** tab.
 |Download     | Select **Download** above the list of environments to download an Excel .CSV file with high-level storage information for each environment that the signed-in admin has permission to see in the Power Platform admin center.        |
 |Search     | Use **Search** to search by the environment name and the environment type.         |
 
+## Dataverse page in Licenses (preview)
+
+> [!IMPORTANT]
+>
+> - This is a preview feature.
+> - Preview features aren't meant for production use and might have restricted functionality. These features are subject to [supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2189520), and are available before an official release so that customers can get early access and provide feedback.
+> - This feature is being gradually rolled out across regions and might not be available in your region yet.
+
+#### Track tenant usage
+You can track and manage Dataverse capacity in the **Licenses** section of Power Platform admin center. 
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+2. In the navigation pane, select **Billing** > **Licenses** > **Dataverse**.
+
+##### Usage per storage type
+
+In the **Usage per storage type** tile, you can view the consumption of your Database, Log, and File storage. This section displays your prepaid entitled capacity along with the corresponding usage. Additionally, it indicates if any part of your Dataverse usage is billed under a pay-as-you-go plan.
+
+##### Top environment consuming storage 
+
+The **Top environment consuming storage** tile displays the environments using the most capacity. It also indicates whether any of these top-consuming environments are in overage and provides a breakdown of prepaid versus pay-as-you-go usage. You can select **Database**, **File**, or **Log** to view the corresponding consumption details.
+
+##### Dataverse environment usage  
+
+In the **Top environments consuming storage** tile, select **See all environments** to view capacity consumption across all your Dataverse environments. The following details are provided:
+
+- Name of the environment
+- Overage status if capacity is allocated to the environment
+- Whether capacity is preallocated to the environment
+- Environment type
+- Managed Environment status
+- Pay-as-you-go plan linkage status
+- Ability to draw capacity from available tenant pool 
+- Database, File, and Log consumption
+
+#### Track environment usage
+1. In the **Dataverse** page, select **Environment** and choose an environment from the list. 
+2. Alternatively in the **Top environment consuming storage** tile, select **See all environments** and select an environment name.
+
+##### Usage per storage type
+In the **Usage per storage type** tile, you can view the consumption of your Database, Log, and File storage. This section displays your prepaid allocated capacity, if any, along with the corresponding usage. Additionally, it indicates if any part of your Dataverse usage is billed under a pay-as-you-go plan. 
+
+##### Consumption per table 
+In the **Consumption per table** section, you can view the amount of storage consumed by each Dataverse table. To see table consumption for a specific storage type, select **Database**, **File**, or **Log** in the **Usage per storage type tile**. Select the  table name for the consumption trend, with the option to track daily usage trends for up to the past three months. 
+
+#### Allocate capacity for an environment 
+
+In the **Dataverse** tab, you can allocate capacity to a specific environment. Once capacity is allocated, you can view the status of your environments to determine whether they are within capacity or in an overage state.
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+2. In the navigation pane, select **Billing** > **Licenses**.
+3. On the **Summary** page, select the **Dataverse** tab and select **Manage Capacity**. The **Manage capacity** pane is displayed on the right side of the page.
+4. Select the environment for which you want to allocate capacity.
+6. In the **Manage capacity** pane, view the currently allocated and consumed capacity for the environment.
+7. Allocate capacity by entering the desired value in the **Database**, **File**, and **Log** fields. Ensure the capacity values are positive integers and don't exceed the available capacity displayed at the top of the panel.
+8. Opt in to receive daily email alerts sent to tenant and environment admins when the consumed capacity (Database, Log, or File) reaches a set percentage of the allocated capacity.
+9. Select **Save** to apply the changes.
+
+#### Managing capacity overage 
+When an environment's capacity consumption exceeds the preallocated capacity, you have two options to manage the overage:   
+1. In the **Manage capacity** pane you can utilize capacity available from the tenant's overall capacity pool.
+2. Alternatively, in the **Manage capacity** pane you can link the environment to a pay-as-you-go billing plan, where any overage is charged to the associated Azure subscription. 
+
 ## Changes for exceeding storage capacity entitlements
 
 We're making changes for what happens when an organization's storage capacity is close to, or exceeds the capacity entitled or purchased via add-ons.
 
 Notifications for capacity approaching storage limits are triggered when any of the three storage capacities (database, file, or log) have less than 15% of space available.  Another warning notification that admin operations could be impacted are sent when any of the three storage capacities have less than 5% of space available.  The final tier of notification triggers when the tenant is ‘in overage’ (storage usage exceeds capacity entitlements), which alerts the admin that the following operations are no longer available until the overage is resolved.
 
-- Create a new environment (requires minimum 1GB capacity available)
+- Create a new environment (requires minimum 1 GB capacity available)
 - Copy an environment
 - Restore an environment
 - Convert a trial environment to paid (requires minimum 1GB capacity available)

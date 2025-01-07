@@ -4,24 +4,24 @@ description: Learn how to create or edit business units
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/24/2024
+ms.date: 01/07/2025
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
   - admin
 contributors:
-- paulliew 
+- paulliew
+- val-bc 
 ---
 # Create or edit business units 
 
 A business unit is a logical grouping of related business activities.
 
 This article explains how to create or edit business units. There are two experiences available:
-- [Preview experience](#preview-experience)
+- [New experience](#new-experience)
 - [Legacy experience](#legacy-experience)
 
-## Preview experience
-[This section is prerelease documentation and is subject to change.]
+## New experience
 
 A business unit is a logical grouping of related business activities.
 
@@ -29,9 +29,6 @@ If your organization is structured around departments or divisions that have sep
 
 Business units, security roles, and users are linked together in a way that conforms to the role-based security model. Use business units together with security roles to control data access so people see just the information they need to do their jobs.
 
-> [!Important]
-> - This is a preview feature.
-> - Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 
 Keep the following in mind when creating business units:
 
@@ -57,9 +54,9 @@ Keep the following in mind when creating business units:
 
 -   A team can consist of users from one or many business units. Consider using this type of team if you have a situation where users from different business units need to work together on a shared set of records.
 
-- **(Preview)** To allow your users to access data in a business unit, you can assign the user a security role from that business unit.
+-  To allow your users to access data in a business unit, you can assign the user a security role from that business unit.
 
-- **(Preview)** A user can be assigned to security roles from any business unit regardless of what the business unit the user belongs to.
+-  A user can be assigned to security roles from any business unit regardless of what the business unit the user belongs to.
 
 ### Create a new business unit
 

@@ -126,9 +126,8 @@ While the system should be intuitive enough to use without documentation, there 
 
 Copilot-powered experiences in Power Apps can help users discover valuable insights during conversations:
 
-- [Add a Chatbot control to a canvas app](/power-apps/maker/canvas-apps/add-ai-chatbot)
 - [Add a Copilot control to a canvas app](/power-apps/maker/canvas-apps/add-ai-copilot)
-- [Add a custom copilot to a canvas app](/power-apps/maker/canvas-apps/add-custom-copilot)
+- [Add a custom Copilot to a canvas app](/power-apps/maker/canvas-apps/add-custom-copilot)
 - [Add Copilot for app users in model-driven apps](/power-apps/maker/model-driven-apps/add-ai-copilot)
 - [Filter, sort, and search galleries with Copilot](/power-apps/user/smartgrid)
 - [Draft well-written input text with Copilot](/power-apps/user/well-written-input-text-copilot)
