@@ -60,7 +60,7 @@ For resources available in the monitoring experience, you can learn more about r
 
 | Product | Resource | Availability |
 |---------|------------|------------|
-| Power Apps | Canvas app | Preview|
+| Power Apps | Canvas app | Preview - [Learn more](https://learn.microsoft.com/power-apps/maker/canvas-apps/monitor-app-performance)|
 | Power Apps | Model-driven apps | Not available yet|
 | Power Automate | Cloud flows | Not available yet|
 | Power Automate | Desktop flows | Not available yet|
