@@ -33,7 +33,7 @@ Each product in the Power Platform family has a unique focus area. Organizations
 
 The following table offers a high-level overview of each Power Platform product.
 
-| **Power Apps** | **Create custom applications in an intuitive, drag-and-drop canvas. With more than a thousand connectors, internal and external data sources and services are just a few clicks away. Your apps can run in a browser, on the desktop, or on mobile devices.** |
+| **Power Apps** | Create custom applications in an intuitive, drag-and-drop canvas. With more than a thousand connectors, internal and external data sources and services are just a few clicks away. Your apps can run in a browser, on the desktop, or on mobile devices. |
 |---|---|
 | **Power Automate** | Build workflows to automate even complex processes. Incorporate internal and external data sources and services using built-in and custom connectors. Use digital process automation (DPA) when applications have an application programming interface (API). Use robotic process automation (RPA) to automate repetitive tasks performed in a browser or desktop app. Trigger workflows to run when events occur in other systems and services or schedule them to run at a specific time. |
 | **Power BI** | Drag charts, tables, and other visuals to a canvas to easily create sophisticated reports that uncover insights locked inside your data. Include automated machine learning for predictive modeling and AI visualizations with decomposition trees for detailed root cause analysis drilldowns. Explore your data by asking natural-language questions in a simple Q&A format. |
@@ -202,7 +202,7 @@ The following table describes each option, the ALM stage when it's most appropri
 
 The following table suggests ways that a low-code approach can apply to each of the app modernization options.
 
-| **Rehost** | **Rehosting moves an app as-is from an older environment to a newer one. A low-code approach doesn't apply directly, but rehosting can be the first step before applying other strategies that would include low-code solutions.** |
+| **Rehost** | Rehosting moves an app as-is from an older environment to a newer one. A low-code approach doesn't apply directly, but rehosting can be the first step before applying other strategies that would include low-code solutions. |
 |---|---|
 | **Refactor or rearchitect** | Refactoring tweaks the code so that apps can get the most benefit from a cloud-first environment. Rearchitecting significantly modifies the code. It could include encapsulating existing logic by moving it to an API that can be exposed to low-code solutions through a connector. |
 | **Replace or rebuild** | Replacing swaps an app with a different one. Rebuilding recreates an app from the ground up. This option is commonly where a low-code approach achieves the best business outcomes. Starting with an application from Dynamics 365 or Microsoft AppSource can help jump-start modernization when the use case matches a prebuilt capability. Organizations can then use Power Platform components to customize the app for their unique needs. |
