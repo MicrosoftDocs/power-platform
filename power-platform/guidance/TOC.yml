@@ -139,21 +139,24 @@
           href: case-studies/nonprofit.md
         - name: Cineplex automates business processes
           href: case-studies/automate-business-processes.md
+    - name: White papers
+      items:
+        - name: Power Platform white papers
+          href: white-papers/index.md
+        - name: Develop an environment strategy
+          href: white-papers/environment-strategy.md
+        - name: Enterprise security
+          href: white-papers/enterprise-security.md
+        - name: Activating Managed Environments
+          href: white-papers/managed-environment-activation.md
+        - name: Application modernization with Power Platform
+          href: white-papers/application-modernization.md
+        - name: Migrating apps and flows from the default environment
+          href: white-papers/migrating-from-default-environment.md
     - name: Resources
       items:
         - name: Icons
           href: icons.md
-        - name: White papers
-          items:
-          - name: Power Platform white papers
-            href: white-papers/index.md
-          - name: Develop an environment strategy
-            href: white-papers/environment-strategy.md
-          - name: Enterprise security
-            href: white-papers/enterprise-security.md
-          - name: Activating Managed Environments
-            href: white-papers/managed-environment-activation.md
-          - name: Application modernization with Power Platform
-            href: white-papers/application-modernization.md
-          - name: Migrating apps and flows from the default environment
-            href: white-papers/migrating-from-default-environment.md
+        - name: Automation adoption best practices
+          href: /power-automate/guidance/automation-coe/overview
+        

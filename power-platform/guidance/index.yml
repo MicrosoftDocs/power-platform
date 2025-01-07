@@ -18,6 +18,15 @@ metadata:
 # highlightedContent section (optional)
 # Maximum of 8 items
 
+highlightedContent:
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | training | overview | quickstart | reference | sample | tutorial | video | whats-new
+  items:
+    # Card
+    - title: Take the Power Platform Adoption assessment
+      itemType: get-started
+      url: /assessments/3c62fd23-9d36-491c-8941-26d5553365f8/
+
+
 # productDirectory section (optional)
 productDirectory:
   title: Power Platform Adoption guidance # < 60 chars (optional)
