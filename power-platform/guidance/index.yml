@@ -24,7 +24,7 @@ highlightedContent:
     # Card
     - title: Take the Power Platform Adoption assessment
       itemType: get-started
-      url: /assessments/3c62fd23-9d36-491c-8941-26d5553365f8/
+      url: adoption/take-assessment.md
 
 
 # productDirectory section (optional)

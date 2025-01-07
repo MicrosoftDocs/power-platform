@@ -17,6 +17,8 @@
           items:
             - name: Vision, Metrics and Goals
               href: adoption/vision.md
+            - name: Assess Power Platform adoption strategy
+              href: adoption/take-assessment.md
             - name: Common objectives
               items: 
                 - name: Overview
@@ -158,5 +160,9 @@
         - name: Icons
           href: icons.md
         - name: Automation adoption best practices
-          href: /power-automate/guidance/automation-coe/overview
+          href: /power-automate/guidance/automation-coe/overview      
+        - name: Microsoft Power Platform Well-Architected
+          href: /power-platform/well-architected/
+        - name: Microsoft Power Platform Training
+          href: /training/browse/?products=power-platform
         
