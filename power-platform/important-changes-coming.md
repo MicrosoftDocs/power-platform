@@ -29,7 +29,7 @@ What Happens If Migration Is Not Completed?
 Effective June 1, 2025, customers will be unable to apply BYOK to production environments. 
 If your migration to CMK is not completed by January 6, 2026, your environment will automatically revert to Microsoft Managed Keys. While this ensures continuity of encryption, it will limit the control and flexibility you currently enjoy with BYOK. To avoid disruption and take full advantage of the enhanced features and security offered by CMK, we strongly recommend beginning your migration process as soon as possible. 
 
-We recommend starting your transition to CMK (Customer Managed Keys) at your earliest convenience, please review https://learn.microsoft.com/en-us/power-platform/admin/customer-managed-key.
+We recommend starting your transition to CMK (Customer Managed Keys) at your earliest convenience, please review [Manage your customer-managed encryption key](admin/customer-managed-key.md).
 
 ## Deprecation of Organization Insights Dashboard
 
