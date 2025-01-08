@@ -56,6 +56,8 @@ Be sure to check back often for new templates that become available.
    :::column span="":::
       ![Hardware Request and Management](media/overview/hrm-sq-icon.png "Hardware Request and Management") <br> **Hardware Request and Management template**<br> Manage hardware requests and assets <br> [Documentation](https://aka.ms/LearnHardwareRequestAndManagementTemplate) <br> [AppSource](https://aka.ms/AccessHardwareRequestandManagementTemplate)
    :::column-end:::
+:::row-end:::
+:::row:::
    :::column span="":::
       ![Appointment Booking](media/overview/ab-as-icon.png "Appointment Booking") <br> **Appointment Booking template** <br> Organize the appointment booking process <br> [Documentation](https://aka.ms/LearnAppointmentBookingTemplate) <br> 
    :::column-end:::
