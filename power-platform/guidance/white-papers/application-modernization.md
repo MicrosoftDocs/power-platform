@@ -34,8 +34,8 @@ Each product in the Power Platform family has a unique focus area. Organizations
 The following table offers a high-level overview of each Power Platform product.
 
 | **Power Apps** | Create custom applications in an intuitive, drag-and-drop canvas. With more than a thousand connectors, internal and external data sources and services are just a few clicks away. Your apps can run in a browser, on the desktop, or on mobile devices. |
-|---|---|
 | **Power Automate** | Build workflows to automate even complex processes. Incorporate internal and external data sources and services using built-in and custom connectors. Use digital process automation (DPA) when applications have an application programming interface (API). Use robotic process automation (RPA) to automate repetitive tasks performed in a browser or desktop app. Trigger workflows to run when events occur in other systems and services or schedule them to run at a specific time. |
+| **Copilot Studio** | Creation of conversational agents using a no-code graphical interface. You can deploy agents to multiple channels, including websites, mobile apps, and messaging platforms like Microsoft Teams. AI-assisted authoring can speed up the creation of topics. Generative answers can find and present information from multiple sources without requiring creation of topics.
 | **Power BI** | Drag charts, tables, and other visuals to a canvas to easily create sophisticated reports that uncover insights locked inside your data. Include automated machine learning for predictive modeling and AI visualizations with decomposition trees for detailed root cause analysis drilldowns. Explore your data by asking natural-language questions in a simple Q&A format. |
 | **Power Pages** | Quickly build attractive, data-driven websites on a secure, enterprise-grade, low-code software as a service (SaaS) platform. With rich, customizable templates and a fluid visual experience, creating, hosting, and administering modern external-facing business websites is easier. |
 
@@ -474,7 +474,7 @@ Integration can also help right-size a modernized application. You can partition
 
 Before carrying forward any custom integrations, you should evaluate the integration capabilities built into Power Apps.
 
-**Microsoft Teams:** Power Apps canvas apps can be embedded in Teams channels. Using the Teams connector, apps and flows can easily post and consume Teams messages. Power Apps cards can be used like micro-apps to share actionable information in a Teams channel.
+**Microsoft Teams:** Power Apps canvas apps and Copilot Studio agents can be embedded in Teams channels. Using the Teams connector, apps and flows can easily post and consume Teams messages. Power Apps cards can be used like micro-apps to share actionable information in a Teams channel.
 
 **SharePoint:** Power Apps model-driven apps can be configured to connect to documents stored in a SharePoint library to make them available in a Dataverse row. Microsoft Lists or a SharePoint list, users can run Power Automate flows in the context of a list item.
 
