@@ -1,6 +1,6 @@
 ---
-title: Set up Microsoft Entra ID (with certificates) - single sign-on
-description: This guide walks you through setting up the connector so your users can access SAP data and run RFC in Microsoft Power Platform using their Microsoft Entra ID for authentication.​
+title: Set up Microsoft Entra ID with certificates for SSO
+description: Set up the SAP ERP connector so your users can access SAP data and run RFC in Microsoft Power Platform using their Microsoft Entra ID for authentication.​
 author: ryanb58
 ms.author: tbrazelton
 contributors:
@@ -15,25 +15,28 @@ contributors:
   - EllenWehrle
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 08/15/2024
-ms.custom: bap-template
+ms.date: 11/01/2024
+ms.custom: ignite-2024
 ms.service: power-platform
-ms.subservice: solution-templates
+ms.subservice: sap
+# Customer intent: As an administrator, I want to learn how to set up Microsoft Entra ID with certificates so users can access SAP data through Power Platform with single sign.
 ---
 
 # Microsoft Entra ID (with certificates) - single sign-on
 
-This guide walks you through setting up the connector so your users can access SAP data and run RFC (short for Remove Function Call) in Microsoft Power Platform using their Microsoft Entra ID for authentication. T​he process involves configuring both public and private certificates for secure communication.
+This guide walks you through setting up the connector so your users can access SAP data and run RFCs (Remote Function Call) in Microsoft Power Platform using their Microsoft Entra ID for authentication. T​he process involves configuring both public and private certificates for secure communication.
 
 > [!IMPORTANT]
 > This article is for setting up a proof of concept only. The settings and recommendations are not intended for production use. For more information about this topic, consult your security team, internal policies, and Microsoft Partner for more guidance.
 
 ## Prerequisites
 
- 1. [Set up SAP Connection](getting-started-with-the-sap-erp-connector.md). 
-	- Be sure to use version July 2024 - 3000.230 or higher of the [On-premise data gateway](https://powerapps.microsoft.com/downloads/).
- 1. [Set up Secure Network Communications](set-up-secure-network-communications.md).
- 1. Be familiar with public and private key technologies.
+Be sure you have already:
+
+- [Set up SAP Connection](sap-erp-connector.md). Be sure to use version July 2024 - 3000.230 or later of the [On-premise data gateway](https://powerapps.microsoft.com/downloads/).
+- [Set up Secure Network Communications](secure-network-communications.md).
+
+You also need to be familiar with public and private key technologies.
 
 ## Certificate
 
@@ -41,7 +44,7 @@ We generate an example self-signed root certificate similar to those certificate
 
 ### Create a demo public key infrastructure
 
-Extend the [Set up Secure Network Communication](set-up-secure-network-communications.md) documentation by implementing the other half of our demo PKI (Public Key Infrastructure).
+Extend the [Set up Secure Network Communication](secure-network-communications.md) documentation by implementing the other half of our demo PKI (Public Key Infrastructure).
 
 ![Flow Chart of demo PKI](./media/setup-microsoft-entra-id-with-certificates/fc-pki-demo.svg)
 
@@ -58,8 +61,8 @@ mkdir userCerts
 Create extension files to ensure our certificates are created with the correct metadata and restrictions.
 
 `signingUsersCert/extensions.cnf`
-```
-[ v3_ca ]
+
+``` [ v3_ca ]
 subjectKeyIdentifier=hash
 authorityKeyIdentifier=keyid:always,issuer
 basicConstraints = critical,CA:true,pathlen:0
@@ -67,8 +70,8 @@ keyUsage = cRLSign, keyCertSign
 ```
 
 `userCerts/extensions.cnf`
-```
-basicConstraints=CA:FALSE
+
+``` basicConstraints=CA:FALSE
 subjectKeyIdentifier=hash
 authorityKeyIdentifier=keyid,issuer
 keyUsage = digitalSignature, keyEncipherment
@@ -101,7 +104,7 @@ openssl x509 -req -in signingUsersCert/users.csr.pem -days 3650 `
 
 ### Generate user certs
 
-Run the following to generate and sign a certificate for a user with the SAP username `TESTUSER01`.
+Run the following to generate and sign a certificate for a user with the SAP username `TESTUSER01`:
 
 ```powershell
 # Create the private key.
@@ -134,24 +137,24 @@ userCerts/TESTUSER01.cert.pem: OK
 
 Take these steps to add users signing certificate and certificate chain to Windows Store.
 
-Generate .p12 file from users signing certificate & private key.
+1. Generate .p12 file from users signing certificate & private key.
 
 ```powershell
 openssl pkcs12 -export -out user_signing_cert.p12 -inkey .\signingUsersCert\users.key.pem -in .\signingUsersCert\users.cert.pem
 ```
 
-1. Open the Windows Certificate Manager:
-	1. Press `Win + R`, type `certlm.msc`, and press Enter.
-1.  Import the public Root CA certificate.
-	1. Import into `Trusted Root Certification Authorities`.
+2. Open the Windows Certificate Manager:
+    1. Press `Win + R`, type `certlm.msc`, and press Enter.
+1. Import the public Root CA certificate.
+    1. Import into `Trusted Root Certification Authorities`.
 1. Import the User Certificate + Key:
-	1. In the Certificate Manager, navigate to the appropriate certificate store (for example, Personal).
-	1. Right-click and select `All Tasks > Import`.
-	1. Follow the wizard to import the `.p12` file, ensuring to **mark the key as exportable** so the OPDG (short for On Premises Data Gateway) can use it to encrypt data.
-	1. Right click on `Users Intermediate Cert` and select `All Tasks>Manage Private Keys...`.
-  1. Add the `NT SERVICE\PBIEgwService` user to the list of people who have permissions.
+    1. In the Certificate Manager, navigate to the appropriate certificate store (for example, Personal).
+    1. Right-click and select `All Tasks > Import`.
+    1. Follow the wizard to import the `.p12` file, ensuring to **mark the key as exportable** so the OPDG (short for On Premises Data Gateway) can use it to encrypt data.
+    1. Right click on `Users Intermediate Cert` and select `All Tasks>Manage Private Keys...`.
+1. Add the `NT SERVICE\PBIEgwService` user to the list of people who have permissions.
+1. Check subject name of certificate in the Windows Certificate Store:
 
-Check subject name of certificate in the Windows Certificate Store
 ```powershell
 Get-ChildItem -Path Cert:\LocalMachine\My | Where-Object { $_.Subject -like "*Users Intermediate Cert*" } | Format-List -Property Subject
 ```
@@ -193,38 +196,33 @@ Then create the following rule in t-code `CERTRULE`
 
 ## User intermediate certificate
 
-You'll need to add a user intermeditate certificate to SAP.
+Take these steps to add a user intermediate certificate to SAP:
 
-Open t-code `STRUST` and double-click 
-on `STRUST` to add the public certificate users.cert.pem file to the box.
-
+1. Open t-code `STRUST` and double-click
+on `STRUST` to add the public certificate *users.cert.pem* file to the box.
 1. In SAP GUI, go to transaction code STRUST.
-2. If *SNC SAPCryptolib* has a red X, right-click and select **Create**.
-3. Select **SNC SAPCryptolib** and then double-click your Own Certificate.
-4. Select **Import Certificate** and choose your `signingUsersCert\users.cert.pem` public certificate.
-5. Select **Add to Certificate List**.
+1. If *SNC SAPCryptolib* has a red X, right-click and select **Create**.
+1. Select **SNC SAPCryptolib** and then double-click your *Own Certificate*.
+1. Select **Import Certificate** and choose your `signingUsersCert\users.cert.pem` public certificate.
+1. Select **Add to Certificate List**.
 
 ## SAP system update
 
 Add the `SsoCertificateSubject` to your SAP System parameters.
 
-```
-"SsoCertificateSubject": "CN=Users Intermediate Cert, O=Contoso",
-```
+``` "SsoCertificateSubject": "CN=Users Intermediate Cert, O=Contoso", ```
 
 Also enable
-```
-"SncSso": "On"
-```
+
+``` "SncSso": "On" ```
 
 Replace the connection with a new one that uses `Microsoft Entra ID (using certificates)` to sign in to SAP with your Microsoft Entra ID account.
-
 
 > [!IMPORTANT]
 > Delete the temporary TESTUSER01 public and private keys on completion of this tutorial.
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > Ensure the secure handling and eventual deletion of private keys upon completion of this setup to maintain security integrity.
 
 Learn more:
-[On-premises data gateway FAQ | Microsoft Learn](/data-integration/gateway/service-gateway-onprem-faq#what-is-the-actual-windows-service-called---)
+[On-premises data gateway FAQ](/data-integration/gateway/service-gateway-onprem-faq)
