@@ -30,7 +30,7 @@ As an administrator, you use the Checklist app to:
 As an administrator, you create reports in the Checklist app.
 
 1. On the *Home* screen, select **Start new report**.
-1. On the *Start new report* screen, select an item in the Inventory dropdown list to populate the Checklist category.
+1. On the *Start new report* screen, select an **inventory item** in the Inventory dropdown list to populate the Checklist category.
 1. On the *Checklist item*, select an item in the dropdown list.
 1. On the *Name*, type in the **title of the report**.
 1. On the *Comment*, type in notes to provide users with more context on what the reports are intended to accomplish.
@@ -51,7 +51,7 @@ It also shows you:
 
 The *Navigation-Stepper* feature that appears on the left and lists all the steps needed to complete the report:
 
-- **Step Number**: For example: *Step 1* or *Step 2*.
+- **Step Number**: Step numbers look like, *Step 1* or *Step 2*.
 - **Step Name**: Description located beneath the step number.
 - **Step Status**: A read-only indicator that shows whether a step is *Not Started*, *In Progress*, *Skipped*, or *Completed*.
 
@@ -70,7 +70,7 @@ The *Step Attributes* that are located on the top right and include:
 
 Take these steps to complete reports:
 
-1. On the *Stepper*, select **a step** to work on and fill in the necessary step sections and sub-step sections. You are able to freely navigate through each of the steps and their sub-steps.
+1. On the *Stepper*, select a step to work on and fill in the necessary step sections and sub-step sections. You are able to freely navigate through each of the steps and their sub-steps.
 1. On each *step*, update the step status and the comment as needed.
 1. On each *sub-step*, accomplish the required action depending on the validation type as follows:
 
