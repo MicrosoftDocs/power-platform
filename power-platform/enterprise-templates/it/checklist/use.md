@@ -23,7 +23,7 @@ As an administrator, you use the Checklist app to:
 
 - Create reports against the inventory and items you set up. The application automatically creates a report template based on the selected items and the template mapped to it in the reference data.
 
-- The report template is created through the checklist form, providing you access to each step and their sub steps. You selectively fill them in based on your reporting needs.
+- Create a report template through the checklist form. The form provides access to each step and their sub steps. You selectively fill them in based on your reporting needs.
 
 ## Create reports
 
@@ -57,8 +57,8 @@ It also shows you:
 - Step Attributes are located in the top right section, these include:
   - Step Status: A dropdown menu to update or review the current status.
   - Comment: A field for adding details or notes about the step.
-- Sub Step is located at the bottom of the step section, this includes:
-  - Sub Step Navigation: A dropdown menu to move between different sub-steps.
+- Sub-Step is located at the bottom of the step section, this includes:
+  - Sub-Step Navigation: A dropdown menu to move between different sub-steps.
   - Validation Details: Controls for completing sub-steps, which vary by type:
     - Attachment: Attach images relevant to the sub-step.
     - List: Select from a list of options.
@@ -67,14 +67,14 @@ It also shows you:
 
 Take these steps to complete reports:
 
-1. On the Stepper, select a step you will work on and fill in the step section and sub-step section as required. You may freely navigate through each of the steps and their sub-steps.
+1. On the *Stepper*, select a step to work on and fill in the step section and sub-step section as required. You may freely navigate through each of the steps and their sub-steps.
 1. On each step, update the step status and the comment as needed.
 1. On each Sub-Step, accomplish the required action depending on the validation type as follows:
 
     - Attachment: Select the clip icon and browse for an image to attach.
     - List: Select an item from the dropdown list.
     - Open Text: Type in the information required for the current sub-step.
-    - Unit: Check sub-step instruction for what needs to be quantified and supply the value and the unit.
+    - Unit: Check sub-step instructions for what needs to be quantified and supply the value and the unit.
 
 ## Review the steps
 
@@ -85,7 +85,7 @@ Administrators review the steps. Take these steps:
 
    - *Skipped* is the section that shows the list of steps that have *skipped* status. You can navigate to each step as needed.
    - *In Progress* is the section that provides a list of steps that have an *In Progress* or *Not Started* status. You can navigate to each step as needed.
-1. If you need to, you can select **Go back and edit** to back to the last step you were at before going to the *Review steps* screen.
+1. If you need to, select **Go back and edit** to back to the last step you were at before going to the *Review steps* screen.
 1. When you are ready, select **Ready for review** to submit your report for review. Only select this if all the *In Progress* steps are complete.
 
 ### See also
