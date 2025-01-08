@@ -5,7 +5,7 @@ author: ananthar-msft
 ms.author: ananthar
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 01/07/2025
+ms.date: 01/08/2025
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -34,11 +34,15 @@ As an administrator, you create reports in the Checklist app.
 1. On the *Checklist item*, select an item in the dropdown list.
 1. On the *Name*, type in the **title of the report**.
 1. On the *Comment*, type in notes to provide users with more context on what the reports are intended to accomplish.
-1. Select **Continue** to create a report based on the custom template that's mapped to the item you selected. Next, you're on the *Checklists Steps* screen to complete the report.
+1. Select **Continue**. This creates a report based on the custom template that's mapped to the item you selected and takes you to the *Checklists Steps* screen to complete the report.
 
-## Complete reports
+## Learn about Checklist app sections
 
-As an administrator, you complete report details in the Checklist app. You can also save your work and go back later to the home screen to complete your report. On the *Report* screen, you complete each step of the report, taking note of key sections and their functions. Report details are located at the top of the screen. This section displays:
+As an administrator, you complete report details in the Checklist app. You can also save your work and go back later to the home screen to complete your report. On the *Report* screen, you complete each step of the report, taking note of key sections and their functions. This section gives an overview of the Checklist app's sections and their functions.
+
+### Report details section
+
+The key report details you need to track each report are located at the top of the screen. This section displays:
 
 - **Report title**
 - **Report comments**
@@ -47,19 +51,21 @@ As an administrator, you complete report details in the Checklist app. You can a
 - **Report number**
 - **Submitter**
 
-It also shows you:
+### Navigation-Stepper section
 
-The *Navigation-Stepper* feature that appears on the left and lists all the steps needed to complete the report:
+The *Navigation Stepper* section is on the left of the screen and lists all the steps needed to complete the report. It features:
 
-- **Step Number**: Step numbers look like, *Step 1* or *Step 2*.
-- **Step Name**: Description located beneath the step number.
+- **Step Number**: The step indicator that shows step numbers as, *Step 1* or *Step 2*.
+- **Step Name**: A field for adding the step description.
 - **Step Status**: A read-only indicator that shows whether a step is *Not Started*, *In Progress*, *Skipped*, or *Completed*.
 
-The *Step Attributes* that are located on the top right and include:
+### Step Attributes section
+
+The *Step Attributes* section is on the top-right of the screen and includes:
 
 - **Step Status**: A dropdown menu to update or review the current status.
 - **Comment**: A field for adding details or notes about the step.
-- **Sub-Step**: A type of step located at the bottom of the step section, this includes:
+- **Sub-Step**: A type of step located at the bottom of the step section. A Sub Step includes:
 
   - **Sub-Step Navigation**: A dropdown menu to move between different sub-steps.
   - **Validation Details**: Controls for completing sub-steps, which vary by type:
@@ -68,9 +74,11 @@ The *Step Attributes* that are located on the top right and include:
     - **Open Text**: Enter text as needed.
     - **Unit**: Input numerical values and select units for quantifiable sub-steps.
 
-Take these steps to complete reports:
+## Complete Reports
 
-1. On the *Stepper*, select a step to work on and fill in the necessary step sections and sub-step sections. You are able to freely navigate through each of the steps and their sub-steps.
+Once you learn about the Checklist app's sections and what features each one offers, you are ready to take these steps to complete reports:
+
+1. On the *Navigation-Stepper*, select a step to work on and fill in the necessary step sections and sub-step sections. You are able to freely navigate through each of the steps and their sub-steps.
 1. On each *step*, update the step status and the comment as needed.
 1. On each *sub-step*, accomplish the required action depending on the validation type as follows:
 
