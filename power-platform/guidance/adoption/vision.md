@@ -1,6 +1,6 @@
 ---
 title: Develop a vision for adopting Microsoft Power Platform
-description: Guidance for developing a vision for adopting Microsoft Power Platform
+description: Guidance for developing a vision with goals, reasons, and methods for adopting Microsoft Power Platform
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: conceptual
@@ -12,13 +12,13 @@ ms.reviewer: sericks
 
 # Develop a vision for adopting Microsoft Power Platform
 
-"Why are we adopting Microsoft Power Platform?" This is a common question for both businesses and technical stakeholders. If the answer is, "Our board (or CIO or C-level executives) told us to use low code," it might be more difficult for those businesses to achieve their expected outcomes. Similarly, organization that start their adoption journey with a viewpoint that’s focused on governance and control often take longer to reach success than those that start their journey with commitment and a shared purpose for why low code is important to the organization. 
+"Why are we adopting Microsoft Power Platform?" is a common question for both businesses and technical stakeholders. If the answer is, "Our board (or C-level executives) told us to use low code," it might be more difficult for those businesses to achieve their expected outcomes. Similarly, organizations that start their adoption journey with a viewpoint focused on governance and control often take longer to reach success than organizations that start their journey with commitment and a shared purpose for why low code is important to the organization. 
 
-This article discusses will help you craft an emergent vision, focus areas and key success measures for Power Platform adoption in your organization.​ Understanding the vision and objectives will help you achieve positive business outcomes and alignment with your organizational strategy. 
+This article helps you craft an emergent vision, focus areas, and key success measures for Power Platform adoption in your organization.​ Understanding the vision and objectives helps you achieve positive business outcomes and alignment with your organizational strategy. 
 
 ## Motivation
 
-Various motivations can drive business transformations that are supported by Power Platform adoption. Several motivations likely apply at the same time. The goal of the following table is to list common goals, reasons and methods and to help generate ideas about which goals are relevant to your organization. From there, you can mix and match the components to create cohesive and comprehensive vision statements that align with multiple goals, reasons and methods. Your Power Platform adoption team should meet with the stakeholders, executives, and business leaders and discuss which motivations can help your business's cloud adoption.
+Power Platform adoption can drive various business transformations. Several motivations likely apply at the same time. The goal of the following table is to list common goals, reasons, and methods and to help generate ideas about which goals are relevant to your organization. From there, you can mix and match the components to create cohesive and comprehensive vision statements that align with multiple goals, reasons, and methods. Your Power Platform adoption team should meet with the stakeholders, executives, and business leaders and discuss which motivations can help your business's cloud adoption.
 
 | Common Goals | Common Reasons | Common Methods |
 | --- | --- | --- |
@@ -28,17 +28,15 @@ Various motivations can drive business transformations that are supported by Pow
 | Automation and Efficiency: Streamline processes and increase operational efficiency. | Improve Processes: To optimize and refine business operations. | Implementing Robust Governance: Establishing strong governance practices. |
 | Increased Productivity and Accelerated Value: Enhance productivity and deliver value rapidly. | Achieve Strategic Goals: To meet long-term organizational objectives. | Ensuring Data Cleanliness and Security: Maintaining high standards for data quality and protection. |
 
-## Model (Strategy on a page?)
-
 To define a Power Platform adoption vision, we use a structured model that involves crafting an emergent vision, defining focus areas and key success measures for Power Platform in your organization.​​
 
-### Identify key results
+## Identify key results
 
-Begin by identifying potential success measures for Power Platform adoption, using the collective insights of stakeholders within your organisation. It is important to evaluate these success measures to ensure they align with the organisational vision and supporting strategies. Reflect on the question: If Power Platform were to be successful, what tangible benefits would we observe compared to the current state?
+Begin by identifying potential success measures for Power Platform adoption, using the collective insights of stakeholders within your organization. It's important to evaluate the success measures to ensure they align with the organizational vision and supporting strategies. Reflect on the question: If Power Platform is successful, what tangible benefits would we observe compared to the current state?
 
-Key Results are specific, measurable outcomes that indicate progress towards achieving the strategic objectives. Key results help in tracking performance and ensuring that the objectives are being met. They provide clear benchmarks for success and are often quantifiable, such as reducing operational costs by 15%, increasing employees that use Power Platform by 20%, or reducing cost and potential errors through using automation.
+Key Results are specific, measurable outcomes that indicate progress towards achieving the strategic objectives. Key results help in tracking performance and ensuring that the objectives are being met. They provide clear benchmarks for success and are often quantifiable. For example, a key result could be reducing operational costs by 15% or increasing employees that use Power Platform by 20%.
 
-Imagine Power Platform is executed brilliantly and becomes a huge success. How might things be different from now? Consider the indicators of success: how will you know you have succeeded? What changes, including behaviours, would signify success? For instance, you might observe reduced third-party product spend, increased business areas building their own solutions, and a reduced IT development backlog. Reflect on the potential shifts in behaviour within your team, division, and organisation. For example, business departments might start seeing IT as enablers and consult IT in their decisions on tools to use, or might use Power Platform to solve their own problems. Identify the current challenges or issues and explore the opportunities that may arise from addressing them. These insights will inform your success measures.
+Imagine Power Platform is executed brilliantly and becomes a huge success. How might things be different from now? Consider the indicators of success: how will you know you succeeded? What changes, including behaviors, would signify success? For instance, you might observe reduced third-party license spend, increased business areas building their own solutions, and a reduced IT development backlog. Reflect on the potential shifts in behavior within your team, division, and organization. For example, business departments might start seeing IT as enablers and consult IT in their decisions on tools to use, or might use Power Platform to solve their own problems. Identify the current challenges or issues and explore the opportunities that might arise from addressing them. These insights inform your success measures.
 
 Here are some examples for measurable key results:
 
@@ -46,21 +44,21 @@ Here are some examples for measurable key results:
 - Enable citizen developers through a standard onboarding process and training, increasing IT capacity by ___% and decreasing time to value by ___%. 
 - Achieve ___% increase in automated processes year over year. 
 
-Review [common themes for adopting Power Platform](common-vision/vision-overview.md) to get more inspiration for measurable key results based on why you are adopting Power Platform.
+Review [common themes for adopting Power Platform](common-vision/vision-overview.md) to get more inspiration for measurable key results based on why you're adopting Power Platform.
 
-#### Aligning to organization direction
+### Aligning to organization direction
 
-Aligning Power Platform adoption with the organisational direction involves a strategic approach to ensure that the platform's capabilities are fully leveraged to support the company's overall goals and objectives. 
+Aligning Power Platform adoption with the organizational direction involves a strategic approach to ensure that the platform's capabilities are fully used to support the company's overall goals and objectives. 
 
-It is important to understand your organizations's vision, mission, and strategic goals. This involves engaging with key stakeholders, including executives and department heads, to gather insights into the long-term objectives and priorities of the organisation. By doing so, you can ensure that the Power Platform strategy aligns with the broader organisational direction.
+It's important to understand your organization's vision, mission, and strategic goals. Engage with key stakeholders, including executives and department heads, to gather insights into the long-term objectives and priorities of the organization. By doing so, you can ensure that the Power Platform strategy aligns with the broader organizational direction.
 
-### Disocver objectives
+## Discover objectives
 
-Proceed to discover the top themes that will drive this success. This involves a thorough discussion of the important aspects that must be addressed to ensure the desired outcomes. Understanding the underlying reasons for these themes will provide a solid foundation to ensure success.​
+Proceed to discover the top themes that drive this success. Discuss the important aspects that must be addressed to ensure the desired outcomes. Understanding the underlying reasons for these themes provide a solid foundation to ensure success.​
 
-Objectives are the key themes or focus areas that the strategy aims to achieve. They are broad, overarching goals that align with the organisational vision and priorities. Objectives provide direction and set the stage for the initiatives and key results. For example, an objective might be to enhance employee engagement or improve operational efficiency
+Objectives are the key themes or focus areas that the strategy aims to achieve. They're broad, overarching goals that align with the organizational vision and priorities. Objectives provide direction and set the stage for the initiatives and key results. For example, an objective might be to enhance employee engagement or improve operational efficiency
 
-Once the objectives are defined, the next step is to create a detailed roadmap that outlines the necessary steps to achieve these objectives. This roadmap should include setting milestones, timelines, and assigning responsibilities for each initiative. It is important to ensure that the roadmap remains flexible to accommodate changes and adjustments based on feedback and evolving business needs. By following this structured approach, we can effectively align our Power Platform strategy with the organisational direction and ensure successful implementation.
+Once the objectives are defined, the next step is to create a detailed roadmap that outlines the necessary steps to achieve these objectives. This roadmap should include setting milestones, timelines, and assigning responsibilities for each initiative. It's important to ensure that the roadmap remains flexible to accommodate changes and adjustments based on feedback and evolving business needs. By following this structured approach, we can effectively align our Power Platform strategy with the organizational direction and ensure successful implementation.
 
 Here are some examples for objectives:
 
@@ -68,29 +66,29 @@ Here are some examples for objectives:
 - Establish an inclusive culture of innovation and experimentation 
 - Create a culture of collaboration that drives employee satisfaction and tangible outcomes 
 
-Review [common themes for adopting Power Platform](common-vision/vision-overview.md) to get more inspiration for objectives based on why you are adopting Power Platform.
+Review [common themes for adopting Power Platform](common-vision/vision-overview.md) to get more inspiration for objectives based on why you're adopting Power Platform.
 
-### Define initiatives
+## Define initiatives
 
-Next, outline the initiatives that need to be implemented to achieve the identified success measures. Consider actions required in the immediate term, and those planned for the next year and the following three years. Planning iniatives includes setting milestones, timelines, and assigning responsibilities for each initiative. A clear roadmap will help facilitate the execution these initiatives.
+Next, outline the initiatives that need to be implemented to achieve the identified success measures. Consider actions required in the immediate term, and actions planned for the next year and the following three years. Planning initiatives includes setting milestones, timelines, and assigning responsibilities for each initiative. A clear roadmap helps facilitate the execution these initiatives.
 
-Initiatives are the specific actions or projects that need to be implemented to achieve the objectives. They outline what needs to be done in the immediate term, as well as in the next year and three years. Initiatives are actionable steps that drive progress towards the key results and objectives. Examples of initiatives might include launching a new customer loyalty programme or implementing a new IT system.
+Initiatives are the specific actions or projects that need to be implemented to achieve the objectives. They outline what needs to be done in the immediate term, and in the next year and three years. Initiatives are actionable steps that drive progress towards the key results and objectives. Examples of initiatives might include launching a new customer loyalty program or implementing a new IT system.
 
-Here are some examples for iniatives:
+Here are some examples for initiatives:
 
-- Develop and publish a catalogue of reusable app templates & components to help makers build with a reliable, reusable toolkit. 
+- Develop and publish a catalog of reusable app templates & components to help makers build with a reliable, reusable toolkit. 
 - Identify champion candidates and create incentives for makers, champions, and departments to participate in your internal Power Platform Champions program.
 - Create a Maker Portal with onboarding collateral, development guidelines, self-guided learning, and success stories.
 
-### Craft a vision statement
+## Craft a vision statement
 
-The vision statement is an aspirational declaration that encapsulates the desired future state of the organisation. It serves as a guiding beacon, providing a clear direction for the strategy. The vision statement should be inspiring and actionable, reflecting the organisation's goals and aspirations. 
+The vision statement is an aspirational declaration that encapsulates the desired future state of the organization. It serves as a guiding beacon, providing a clear direction for the strategy. The vision statement should be inspiring and actionable, reflecting the organization's goals and aspirations. 
 
-The vision statement should be a statement that isn’t true today but is something you want to achieve over the next 1 – 2 years, articulating the organisation’s aspirations, values and the impact it wants to make.​ Most vision statements provide direction and purpose to the organisation on Power Platform.​
+The vision statement should be a statement that isn’t true today but is something you want to achieve over the next 1-2 years. The vision statement should articulate the organization’s aspirations, values, and the impact it wants to make.​ Most vision statements provide direction and purpose to the organization on Power Platform.​
 
 Here are some key steps to guide you through the process of defining a meaningful vision statement.
 
-1. **Understand the purpose**: A vision statement should articulate the long-term aspirations of your organisation. It should be inspiring and provide a clear picture of what success looks like in the future.
+1. **Understand the purpose**: A vision statement should articulate the long-term aspirations of your organization. It should be inspiring and provide a clear picture of what success looks like in the future.
 1. **Identify Key Components**: A well-crafted vision statement typically includes the following components:
     - **Goal**: 
         - What you aim to achieve.
@@ -112,64 +110,64 @@ Here are some key steps to guide you through the process of defining a meaningfu
         - How you plan to achieve it.
         - Examples of common methods:
             - Using secure, low-code solutions
-            - Leveraging AI and automation
+            - Using AI and automation
             - Providing tools and support
             - Implementing robust governance
             - Ensuring data cleanliness and security
             - Using data-driven decision-making
-1. **Engage stakeholders**: Involve key stakeholders in the process to ensure that the vision resonates with everyone in the organisation. This collaborative approach helps in gaining buy-in and aligning the vision with the organisational values and goals.
+1. **Engage stakeholders**: Involve key stakeholders in the process to ensure that the vision resonates with everyone in the organization. This collaborative approach helps in gaining buy-in and aligning the vision with the organizational values and goals.
 1. **Be clear and concise**: The vision statement should be easy to understand and remember. Avoid jargon and keep it concise while ensuring it captures the essence of your aspirations.
-1. **Make it inspirational**: The vision statement should inspire and motivate employees. It should reflect the organisation's commitment to excellence and continuous improvement.
-1. **Reflect organisational values**: Ensure that the vision statement aligns with the core values of your organisation. It should reflect what the organisation stands for and its commitment to its stakeholders.
-1. **Test and refine**: Once you have drafted the vision statement, test it with a small group of stakeholders to gather feedback. Refine it based on the feedback to ensure it resonates well and accurately reflects the organisation's aspirations
+1. **Make it inspirational**: The vision statement should inspire and motivate employees. It should reflect the organization's commitment to excellence and continuous improvement.
+1. **Reflect organizational values**: Ensure that the vision statement aligns with the core values of your organization. It should reflect what the organization stands for and its commitment to its stakeholders.
+1. **Test and refine**: Once you drafted the vision statement, test it with a small group of stakeholders to gather feedback. Refine it based on the feedback to ensure it resonates well and accurately reflects the organization's aspirations
 
 For instance, a vision statement might be "Transform our business by fostering collaboration and leveraging digital tools to enhance efficiency and customer engagement." This statement clearly outlines the goal, the reason behind it, and the method to achieve it.
 
-#### Example Vision Statements
+### Example Vision Statements
 
-When crafting a vision statement, it can be helpful to look at examples that include the goal, reason, and method. These examples serve as a starting point to inspire your own vision statement and facilitate discussions within your team. 
+When you craft a vision statement, it can be helpful to look at examples that include the goal, reason, and method. These examples serve as a starting point to inspire your own vision statement and facilitate discussions within your team. 
 
-The goal of the example vision statements is to help generate ideas about which goals, reasons and methods are relevant to your organization. By looking examples, you can better understand how to structure your vision statement and evaluate and assess how a vision statement can align with your organisation's strategic objectives. 
+The goal of the example vision statements is to help generate ideas about which goals, reasons and methods are relevant to your organization. By looking examples, you can better understand how to structure your vision statement and evaluate and assess how a vision statement can align with your organization's strategic objectives. 
 
-##### Empowerment and Innovation
+#### Empowerment and Innovation
 
 **Goal:** Empower our workforce to innovate and create impactful solutions
 **Why:** To drive business value and foster a culture of innovation
 **Method:** By providing the necessary tools and support
 **Vision Statement:** "Empower our workforce to innovate and create impactful solutions by providing the necessary tools and support to drive business value and foster a culture of innovation."
 
-###### Digital Transformation
+##### Digital Transformation
 
 **Goal:** Transform our business
 **Why:** To enhance productivity and improve processes
 **Method:** By adopting digital tools and processes
 **Vision Statement:** "Transform our business by adopting digital tools and processes that enhance productivity and improve processes."
 
-##### Continuous Improvement
+#### Continuous Improvement
 
 **Goal:** Foster a culture of continuous improvement and learning
 **Why:** To achieve strategic goals and improve processes
 **Method:** By implementing robust governance
 **Vision Statement:** "Foster a culture of continuous improvement and learning to achieve strategic goals and improve processes by implementing robust governance."
 
-##### Automation and Efficiency
+#### Automation and Efficiency
 
 **Goal:** Streamline our processes and increase efficiency
 **Why:** To enhance productivity and drive business value
-**Method:** By leveraging AI and automation
+**Method:** By using AI and automation
 **Vision Statement:** "Streamline our processes and increase efficiency by leveraging AI and automation to enhance productivity and drive business value."
 
-##### Increased Productivity and Accelerated Value
+#### Increased Productivity and Accelerated Value
 
 **Goal:** Boost productivity and accelerate value delivery
 **Why:** To drive business value and achieve strategic goals
 **Method:** By ensuring data cleanliness and security
 Vision Statement:** "Boost productivity and accelerate value delivery by ensuring data cleanliness and security to drive business value and achieve strategic goals."
 
-### Engage stakeholders
+## Engage stakeholders
 
 Engage and enable stakeholders by onboarding key individuals and building a coalition of support for your Power Platform strategy. Provide training, resources, and ongoing communication to ensure that everyone is aligned and committed to the strategy.
 
-### Monitor and refine
+## Monitor and refine
 
-Continuously monitor the progress of your Power Platform adoption strategy against the defined success measures. Gather feedback from stakeholders and make necessary adjustments to the strategy to ensure it remains aligned with the organisational direction.
+Continuously monitor the progress of your Power Platform adoption strategy against the defined success measures. Gather feedback from stakeholders and make necessary adjustments to the strategy to ensure it remains aligned with the organizational direction.
