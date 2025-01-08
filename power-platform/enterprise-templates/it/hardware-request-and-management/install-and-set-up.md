@@ -55,7 +55,7 @@ Confirm your organization has the necessary licensing to use enterprise template
 > A free Developer Plan combined with a free Power BI in Microsoft Fabric free account is a great way to install the template for evaluation purposes.
 >
 > [Learn more about Power Apps Developer Plan](https://powerapps.microsoft.com/developerplan/)
-
+>
 > [Learn more about Microsoft Power Platform Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130)
 
 ### Set up environments and data policies
@@ -149,7 +149,7 @@ You have two options for installing the Hardware Request and Management solution
 
 > [!TIP]
 >
-> Go to the [Templates-for-Power-Platform](https://aka.ms/PowerPlatformTemplateSupport) GitHub project site to log your questions or issues and get support for the Hardware Request and Management template.
+> Go to the [Templates-for-Power-Platform](https://aka.ms/PowerPlatformTemplateSupport) GitHub project site to log your questions or issues and get support for the Hardware Request and Management template. You can also check for updates to the [deployment packages](https://github.com/microsoft/Templates-for-Power-Platform/tree/main/DeploymentPackages) on this site.
 
 ### Install from AppSource
 
