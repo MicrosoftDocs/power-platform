@@ -13,7 +13,7 @@ contributors:
   - shanep
 ms.reviewer: ellenwehrle
 ms.topic: conceptual
-ms.date: 11/14/2024
+ms.date: 1/8/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -36,7 +36,7 @@ You have three options for viewing a purchase order:
 
 ### Enter a purchase order number
 
-If you know the purchase order number, you can enter it in the _Search Purchase Orders_ field adn select **Search**.
+If you know the purchase order number, you can enter it in the _Search Purchase Orders_ field and select **Search**.
 
 ### Select a recent purchase order
 

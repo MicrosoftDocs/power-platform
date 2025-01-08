@@ -12,9 +12,10 @@ contributors:
   - ryanb58
   - scottwoodallmsft
   - Wrighttyler
+  - shanep
 ms.reviewer: ellenwehrle
 ms.topic: overview
-ms.date: 06/24/2024
+ms.date: 1/8/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates

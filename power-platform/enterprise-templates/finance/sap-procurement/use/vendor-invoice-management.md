@@ -13,7 +13,7 @@ contributors:
 - shanep
 ms.reviewer: ellenwehrle
 ms.topic: conceptual
-ms.date: 12/01/2024
+ms.date: 1/8/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
