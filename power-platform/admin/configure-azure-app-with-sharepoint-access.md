@@ -25,7 +25,7 @@ When SharePoint integration access is needed from Power Automate or an API conte
 1. Enter **Name** for the application
 
 1. Under **Supported account types** select value **Accounts in this organizational directory only**
-   - NOTE: Other types are not supported at this time
+   - NOTE: Other types aren't supported at this time
 
 1. Select **Register** button to create the **App registration**
 
@@ -62,7 +62,7 @@ When SharePoint integration access is needed from Power Automate or an API conte
    - Replace `<tenant-id>` with the **Directory (tenant) ID** guid value from the previous section
    - Example `https://login.microsoftonline.com/00000000-0000-0000-0000-000000000000/v2.0`
 
-1. In **Value** field, enter the Subject Identifer 
+1. In **Value** field, enter the Subject Identifier 
     - Value Format: `/eid1/c/pub/t/v4j5cvGGr0GRqy180BHbRw/a/CQSGf3JJtEi27nY2ePL7UQ/Env/3a5a51c7-a395-e61d-8f8c-c67df78a983b/powerpagesmanagedidentity/<any-guid>`
     - Example: `/eid1/c/pub/t/v4j5cvGGr0GRqy180BHbRw/a/CQSGf3JJtEi27nY2ePL7UQ/Env/3a5a51c7-a395-e61d-8f8c-c67df78a983b/powerpagesmanagedidentity/00000000-0000-0000-0000-000000000000`
    
