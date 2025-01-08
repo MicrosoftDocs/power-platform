@@ -72,15 +72,15 @@ When SharePoint integration access is needed from Power Automate or an API conte
 
 ### Add record in **Managed Identities** table
 
-First insert into the [managedidentities](https://learn.microsoft.com/power-apps/developer/data-platform/reference/entities/managedidentity) table using values from the table.
+First insert into the [`managedidentities`](https://learn.microsoft.com/power-apps/developer/data-platform/reference/entities/managedidentity) table using values from the table.
 
 | Table Field | Value |
 | --- | --- |
-| applicationid | Use **Application (client) ID** value from first section |
-| tenantid | Use **Directory (tenant) ID** value from first section |
-| managedidentityid | Create new guid |
-| credentialsource | 2 |
-| subjectscope | 1 |
+| `applicationid` | Use **Application (client) ID** value from first section |
+| `tenantid` | Use **Directory (tenant) ID** value from first section |
+| `managedidentityid` | Create new guid |
+| `credentialsource` | 2 |
+| `subjectscope` | 1 |
 
 An example using POST: 
 - Request: `https://contoso.crm.dynamics.com/api/data/v9.0/managedidentities`
@@ -101,10 +101,10 @@ Next insert into `sharepointmanagedidentities` table using values from the table
 
 | Table Field | Value |
 | --- | --- |
-| sharepointmanagedidentityid | Create new guid |
-| uniquename | "msft_ppmiforsharepointauth" |
-| name | "PPMI For SharePoint Auth" |
-| ManagedIdentity@odata.bind | `/managedidentities(<managedidentityid>)` replacing `<managedidentityid>` with value from previous section  |
+| `sharepointmanagedidentityid` | Create new guid |
+| `uniquename` | "msft_ppmiforsharepointauth" |
+| `name` | "PPMI For SharePoint Auth" |
+| `ManagedIdentity@odata.bind` | `/managedidentities(<managedidentityid>)` replacing `<managedidentityid>` with value from previous section  |
 
 An example using POST: 
 - Request: `https://contoso.crm.dynamics.com/api/data/v9.0/sharepointmanagedidentities`
