@@ -68,5 +68,54 @@ When SharePoint integration access is needed from Power Automate or an API conte
    
 1. Select **Add** button to create the credential
 
-## Post into Dataverse tables
+## Setup Managed Identities in Dataverse
+
+### Add record in **Managed Identities** table
+
+First insert into the `managedidentities` table using values from the table.
+
+| Table Field | Value |
+| -- | -- |
+| applicationid | Use **Application (client) ID** value from first section |
+| tenantid | Use **Directory (tenant) ID** value from first section |
+| managedidentityid | Create new guid |
+| credentialsource | 2 |
+| subjectscope | 1 |
+
+Using POST this would look like 
+- Request: `https://contoso.crm.dynamics.com/api/data/v9.0/managedidentities`
+- Body: 
+  ```json
+  {
+  "applicationid": "00000000-0000-0000-0000-000000000000",
+  "managedidentityid": "00000000-0000-0000-0000-000000000000",
+  "credentialsource": 2,
+  "subjectscope": 1,
+  "tenantid": "00000000-0000-0000-0000-000000000000"
+  }
+  ```
+
+### Add record in **Share Point Managed Identities** table
+
+Next insert into `sharepointmanagedidentities` table using values from the table.
+
+| Table Field | Value |
+| -- | -- |
+| sharepointmanagedidentityid | Create new guid |
+| uniquename | "msft_ppmiforsharepointauth" |
+| name | "PPMI For SharePoint Auth" |
+| ManagedIdentity@odata.bind | `/managedidentities(<managedidentityid>)` replacing `<managedidentityid>` with value from previous section  |
+
+Using POST this would look like 
+- Request: `https://contoso.crm.dynamics.com/api/data/v9.0/sharepointmanagedidentities`
+- Body:
+  ```json
+  {
+  "sharepointmanagedidentityid": "00000000-0000-0000-0000-000000000000",
+  "uniquename": "msft_ppmiforsharepointauth",
+  "name": "PPMI For SharePoint Auth",
+  "ManagedIdentity@odata.bind": "/managedidentities(00000000-0000-0000-0000-000000000000)"
+  }
+  ```
+
 
