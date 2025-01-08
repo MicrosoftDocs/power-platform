@@ -243,60 +243,6 @@
         }
       },
       "additionalProperties": false
-    },
-    "SharedConnector": {
-      "type": "object",
-      "properties": {
-        "id": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        },
-        "type": {
-          "type": "string"
-        },
-        "displayName": {
-          "type": "string"
-        },
-        "isCustomApi": {
-          "type": "boolean"
-        },
-        "iconUri": {
-          "type": "string"
-        },
-        "tier": {
-          "type": "string"
-        },
-        "tags": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
-        },
-        "externalDocumentUri": {
-          "type": "string"
-        },
-        "externalDocumentDescription": {
-          "type": "boolean"
-        }
-      },
-      "additionalProperties": false
-    },
-    "SharedConnectorsResponseWithOdataContinuation": {
-      "type": "object",
-      "properties": {
-        "value": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/SharedConnector"
-          }
-        },
-        "@odata.nextLink": {
-          "type": "string"
-        }
-      },
-      "additionalProperties": false
     }
   },
   "securityDefinitions": {

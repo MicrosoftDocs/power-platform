@@ -137,7 +137,7 @@
           "Websites"
         ],
         "summary": "Get the Power Pages website details by specifying its unique identifier (ID).",
-        "description": "Get website details from Website Id",
+        "description": "Get website details from Website id",
         "operationId": "GetWebsiteById",
         "produces": [
           "application/json"
@@ -677,14 +677,6 @@
         "websiteRecordId": {
           "description": "Dataverse record unique identifier (ID) of the website",
           "type": "string"
-        }
-      }
-    },
-    "ODataWebsiteDto": {
-      "type": "object",
-      "properties": {
-        "@odata.metadata": {
-          "$ref": "#/definitions/WebsiteDto"
         }
       }
     },

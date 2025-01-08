@@ -90,9 +90,6 @@
               "value-path": "scenario",
               "value-title": "scenarioName",
               "parameters": {
-                "tenantId": {
-                  "parameter": "tenantId"
-                },
                 "x-ms-api-version": {
                   "parameter": "api-version"
                 }
@@ -103,9 +100,6 @@
               "itemValuePath": "scenario",
               "itemTitlePath": "scenarioName",
               "parameters": {
-                "tenantId": {
-                  "parameterReference": "tenantId"
-                },
                 "x-ms-api-version": {
                   "parameterReference": "api-version"
                 }
@@ -186,9 +180,6 @@
               "value-path": "actionType",
               "value-title": "actionName",
               "parameters": {
-                "tenantId": {
-                  "parameter": "tenantId"
-                },
                 "scenario": {
                   "parameter": "scenario"
                 },
@@ -202,9 +193,6 @@
               "itemValuePath": "actionType",
               "itemTitlePath": "actionName",
               "parameters": {
-                "tenantId": {
-                  "parameterReference": "tenantId"
-                },
                 "scenario": {
                   "parameterReference": "body/scenario"
                 },

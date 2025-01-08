@@ -41,20 +41,6 @@
       }
     }
   },
-  "definitions": {
-    "SyncReport": {
-      "description": "Organization Sync report contains last sync information from kepler",
-      "type": "object",
-      "properties": {
-        "lastSyncTime": {
-          "description": "Last sync time for the org",
-          "type": "string",
-          "example": ""
-        },
-        "additionalProperties": false
-      }
-    }
-  },
   "securityDefinitions": {
     "oauth2": {
       "type": "oauth2",
