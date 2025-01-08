@@ -12,7 +12,7 @@ search.audienceType:
 ---
 # Configure Azure App for SharePoint Access
 
-When SharePoint access is needed from Power Automate or non-user context, an Azure Application needs to be setup to access. Starting in March 2025, the current access is being removed to improve system reliability.
+When SharePoint access is needed from Power Automate or non-user context, an Azure Application needs to be set up to access. Starting in March 2025, the current access is being removed to improve system reliability.
 
 ## Create an Azure Application with SharePoint permissions
 
@@ -26,7 +26,7 @@ When SharePoint access is needed from Power Automate or non-user context, an Azu
 1. In the left navigation list, select **Manage** > **API permissions**
 1. Under **Configured permissions** select button **Add a permission** to open the **Request API permissions** panel
    1. Select button **SharePoint**
-   1. Under *What types of perimissions does yoru application require?* select button **Application permissions**
+   1. Under *What types of permissions does your application require?* select button **Application permissions**
 
 ## Setup Admin Consent
 
