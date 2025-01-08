@@ -50,7 +50,9 @@ Review [common themes for adopting Power Platform](common-vision/vision-overview
 
 #### Aligning to organization direction
 
-TODO
+Aligning Power Platform adoption with the organisational direction involves a strategic approach to ensure that the platform's capabilities are fully leveraged to support the company's overall goals and objectives. 
+
+It is important to understand your organizations's vision, mission, and strategic goals. This involves engaging with key stakeholders, including executives and department heads, to gather insights into the long-term objectives and priorities of the organisation. By doing so, you can ensure that the Power Platform strategy aligns with the broader organisational direction.
 
 ### Disocver objectives
 
@@ -70,7 +72,7 @@ Review [common themes for adopting Power Platform](common-vision/vision-overview
 
 ### Define initiatives
 
-Next, outline the initiatives that need to be implemented to achieve the identified success measures. This includes detailing the actions required in the immediate term, and those planned for the next year and the following three years. A clear roadmap will help facilitate the execution these initiatives.
+Next, outline the initiatives that need to be implemented to achieve the identified success measures. Consider actions required in the immediate term, and those planned for the next year and the following three years. Planning iniatives includes setting milestones, timelines, and assigning responsibilities for each initiative. A clear roadmap will help facilitate the execution these initiatives.
 
 Initiatives are the specific actions or projects that need to be implemented to achieve the objectives. They outline what needs to be done in the immediate term, as well as in the next year and three years. Initiatives are actionable steps that drive progress towards the key results and objectives. Examples of initiatives might include launching a new customer loyalty programme or implementing a new IT system.
 
@@ -78,7 +80,7 @@ Here are some examples for iniatives:
 
 - Develop and publish a catalogue of reusable app templates & components to help makers build with a reliable, reusable toolkit. 
 - Identify champion candidates and create incentives for makers, champions, and departments to participate in your internal Power Platform Champions program.
-- Create a Maker Portal with onboarding collateral, development guidelines, self-guided learning, and success stories. 
+- Create a Maker Portal with onboarding collateral, development guidelines, self-guided learning, and success stories.
 
 ### Craft a vision statement
 
@@ -164,4 +166,10 @@ The goal of the example vision statements is to help generate ideas about which 
 **Method:** By ensuring data cleanliness and security
 Vision Statement:** "Boost productivity and accelerate value delivery by ensuring data cleanliness and security to drive business value and achieve strategic goals."
 
+### Engage stakeholders
 
+Engage and enable stakeholders by onboarding key individuals and building a coalition of support for your Power Platform strategy. Provide training, resources, and ongoing communication to ensure that everyone is aligned and committed to the strategy.
+
+### Monitor and refine
+
+Continuously monitor the progress of your Power Platform adoption strategy against the defined success measures. Gather feedback from stakeholders and make necessary adjustments to the strategy to ensure it remains aligned with the organisational direction.
