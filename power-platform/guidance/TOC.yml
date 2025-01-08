@@ -19,7 +19,7 @@
               href: adoption/vision.md
             - name: Assess Power Platform adoption strategy
               href: adoption/take-assessment.md
-            - name: Common objectives
+            - name: Common goals
               items: 
                 - name: Overview
                   href: adoption/common-vision/vision-overview.md
@@ -121,14 +121,6 @@
                   href: adoption/show-and-tell.md
                 - name: Organize hackathons
                   href: adoption/hackathons.md
-            - name: Training
-              items:
-                - name: Training and upskilling strategy
-                  href: adoption/training-strategy.md
-                - name: Internal training events
-                  href: adoption/in-a-day.md
-                - name: Solution envisioning workshops
-                  href: adoption/solution-envisioning.md
     - name: Power Platform toolkits
       href: toolkits/index.yml
     - name: Real-world case studies
