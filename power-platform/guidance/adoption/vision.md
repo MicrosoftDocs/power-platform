@@ -130,38 +130,38 @@ The goal of the example vision statements is to help generate ideas about which 
 
 #### Empowerment and Innovation
 
-**Goal:** Empower our workforce to innovate and create impactful solutions
-**Why:** To drive business value and foster a culture of innovation
-**Method:** By providing the necessary tools and support
-**Vision Statement:** "Empower our workforce to innovate and create impactful solutions by providing the necessary tools and support to drive business value and foster a culture of innovation."
+- **Goal:** Empower our workforce to innovate and create impactful solutions
+- **Why:** To drive business value and foster a culture of innovation
+- **Method:** By providing the necessary tools and support
+- **Vision Statement:** "Empower our workforce to innovate and create impactful solutions by providing the necessary tools and support to drive business value and foster a culture of innovation."
 
 ##### Digital Transformation
 
-**Goal:** Transform our business
-**Why:** To enhance productivity and improve processes
-**Method:** By adopting digital tools and processes
-**Vision Statement:** "Transform our business by adopting digital tools and processes that enhance productivity and improve processes."
+- **Goal:** Transform our business
+- **Why:** To enhance productivity and improve processes
+- **Method:** By adopting digital tools and processes
+- **Vision Statement:** "Transform our business by adopting digital tools and processes that enhance productivity and improve processes."
 
 #### Continuous Improvement
 
-**Goal:** Foster a culture of continuous improvement and learning
-**Why:** To achieve strategic goals and improve processes
-**Method:** By implementing robust governance
-**Vision Statement:** "Foster a culture of continuous improvement and learning to achieve strategic goals and improve processes by implementing robust governance."
+- **Goal:** Foster a culture of continuous improvement and learning
+- **Why:** To achieve strategic goals and improve processes
+- **Method:** By implementing robust governance
+- **Vision Statement:** "Foster a culture of continuous improvement and learning to achieve strategic goals and improve processes by implementing robust governance."
 
 #### Automation and Efficiency
 
-**Goal:** Streamline our processes and increase efficiency
-**Why:** To enhance productivity and drive business value
-**Method:** By using AI and automation
-**Vision Statement:** "Streamline our processes and increase efficiency by leveraging AI and automation to enhance productivity and drive business value."
+- **Goal:** Streamline our processes and increase efficiency
+- **Why:** To enhance productivity and drive business value
+- **Method:** By using AI and automation
+- **Vision Statement:** "Streamline our processes and increase efficiency by leveraging AI and automation to enhance productivity and drive business value."
 
 #### Increased Productivity and Accelerated Value
 
-**Goal:** Boost productivity and accelerate value delivery
-**Why:** To drive business value and achieve strategic goals
-**Method:** By ensuring data cleanliness and security
-Vision Statement:** "Boost productivity and accelerate value delivery by ensuring data cleanliness and security to drive business value and achieve strategic goals."
+- **Goal:** Boost productivity and accelerate value delivery
+- **Why:** To drive business value and achieve strategic goals
+- **Method:** By ensuring data cleanliness and security
+- **Vision Statement:** "Boost productivity and accelerate value delivery by ensuring data cleanliness and security to drive business value and achieve strategic goals."
 
 ## Engage stakeholders
 
