@@ -72,7 +72,7 @@ When SharePoint integration access is needed from Power Automate or an API conte
 
 ### Add record in **Managed Identities** table
 
-First insert into the `managedidentities` table using values from the table.
+First insert into the [`managedidentities`](../../power-apps/developer/data-platform/reference/entities/managedidentity) table using values from the table.
 
 | Table Field | Value |
 | -- | -- |
