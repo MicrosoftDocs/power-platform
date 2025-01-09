@@ -52,13 +52,13 @@ The Checklist solution contains components that enable the user and admin experi
   - **Checklist App Administrator** provides access to model-driven app and canvas app.
   - **Checklist App User** proves access to canvas app.
 
-- **Validation-Type Choices** is the one choice that stores the available validation types. For example, Attachment, List, Open text, and Unit.
+- **Validation Type Choices** is the one choice that stores the available validation types. For example, Attachment, List, Open text, and Unit.
 
 - Three connection references:
 
-  - **Checklist App - [Dataverse](/connectors/commondataserviceforapps/)** - Connection reference to Microsoft Dataverse
-  - **Checklist App - [Office 365 Outlook](/connectors/office365/)** - Connection reference to Microsoft Office 365 Outlook
-  - **Checklist App _ [Teams](/connectors/teams/)** - Connection reference to Microsoft Teams
+  - **Checklist App – [Dataverse](/connectors/commondataserviceforapps/)** - Connection reference to Microsoft Dataverse
+  - **Checklist App – [Office 365 Outlook](/connectors/office365/)** - Connection reference to Microsoft Office 365 Outlook
+  - **Checklist App – [Teams](/connectors/teams/)** - Connection reference to Microsoft Teams
   
 ## Next steps
 

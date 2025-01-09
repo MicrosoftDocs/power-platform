@@ -14,31 +14,24 @@ ms.subservice: solution-templates
 
 # Get started using the Checklist app
 
-There are two kinds of users who interact with the Checklist app:
+Use the Checklist app to create reports against the inventory and items you set up. The application automatically creates a report template based on the selected items and the template mapped to it in the reference data.
 
-- Checklist App – User
-- Checklist App - Administrator
-
-As an administrator, you use the Checklist app to:
-
-- Create reports against the inventory and items you set up. The application automatically creates a report template based on the selected items and the template mapped to it in the reference data.
-
-- Create a report template through the checklist form. The form provides access to each step and their sub-steps. You can selectively fill them in based on your reporting needs.
+You can access the report templateThe Checklist form provides access to the steps and sub-steps set up in the report template. Select a report template to use for  fill in the Checklist form based on your reporting needs.
 
 ## Create reports
 
 As an administrator, you create reports in the Checklist app.
 
 1. On the *Home* screen, select **Start new report**.
-1. On the *Start new report* screen, select an **inventory item** in the Inventory dropdown list to populate the Checklist category.
+1. On the *Start new report* screen, select an inventory item in the Inventory dropdown list to populate the Checklist category.
 1. On the *Checklist item*, select an item in the dropdown list.
-1. On the *Name*, type in the **title of the report**.
+1. On the *Name*, type in the title of the report.
 1. On the *Comment*, type in notes to provide users with more context on what the reports are intended to accomplish.
-1. Select **Continue**. This creates a report based on the custom template that's mapped to the item you selected and takes you to the *Checklists Steps* screen to complete the report.
+1. Select **Continue**. This creates a report and takes you to the *Checklists Steps* screen to complete the report.
 
-## Learn about Checklist app sections
+## Learn about Reports screen sections
 
-As an administrator, you complete report details in the Checklist app. You can also save your work and go back later to the home screen to complete your report. On the *Report* screen, you complete each step of the report, taking note of key sections and their functions. This section gives an overview of the Checklist app's sections and their functions.
+As an administrator, you complete report details in the Checklist app. You can also save your work and go back later to complete your report. On the Reports screen, you complete each step of the report, taking note of key sections and their functions. This section gives an overview of the Report screen's sections and their functions.
 
 ### Report details section
 
@@ -51,23 +44,23 @@ The key report details you need to track each report are located at the top of t
 - **Report number**
 - **Submitter**
 
-### Navigation-Stepper section
+### Step section
 
-The *Navigation Stepper* section is on the left of the screen and lists all the steps needed to complete the report. It features:
+The step navigation section is on the left of the Reports screen and lists all the steps needed to complete the report. It features:
 
-- **Step Number**: The step indicator that shows step numbers as, *Step 1* or *Step 2*.
+- **Step Number**: A link that shows each step number.
 - **Step Name**: A field for adding the step description.
 - **Step Status**: A read-only indicator that shows whether a step is *Not Started*, *In Progress*, *Skipped*, or *Completed*.
 
-### Step Attributes section
+### Step attributes section
 
-The *Step Attributes* section is on the top-right of the screen and includes:
+The *Step Attributes* section is on the top-right of the Reports screen and includes:
 
 - **Step Status**: A dropdown menu to update or review the current status.
 - **Comment**: A field for adding details or notes about the step.
-- **Sub-Step**: A type of step located at the bottom of the step section. A Sub Step includes:
+- **Sub-step**: A type of step located at the bottom of the step section. A sub-step includes:
 
-  - **Sub-Step Navigation**: A dropdown menu to move between different sub-steps.
+  - **Sub-step Navigation**: A dropdown menu to move between different sub-steps.
   - **Validation Details**: Controls for completing sub-steps, which vary by type:
     - **Attachment**: Attach images relevant to the sub-step.
     - **List**: Select from a list of options.
@@ -76,9 +69,9 @@ The *Step Attributes* section is on the top-right of the screen and includes:
 
 ## Complete Reports
 
-Once you learn about the Checklist app's sections and what features each one offers, you are ready to take these steps to complete reports:
+Once you learn about the Reports screen's sections and what features each one offers, you are ready to take these steps to complete reports:
 
-1. On the *Navigation-Stepper*, select a step to work on and fill in the necessary step sections and sub-step sections. You are able to freely navigate through each of the steps and their sub-steps.
+1. In the *step navigation* section, select a step to work on and fill in the necessary step sections and sub-step sections. You are able to freely navigate through each of the steps and their sub-steps.
 1. On each *step*, update the step status and the comment as needed.
 1. On each *sub-step*, accomplish the required action depending on the validation type as follows:
 

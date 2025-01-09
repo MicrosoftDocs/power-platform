@@ -31,17 +31,17 @@ Each checklist template requires steps to guide users in creating effective repo
 1. Start the Checklist Administrator model-driven app and select **Templates**.
 1. Select a template to add a step to.
 1. Select **+ New Template Step** to go to the *New Template Step* form.
-1. Fill up the Name and the Step Number for the step.
+1. Fill out the *Name* and the *Step Number* for the step.
 1. Select **Save**.
 
-## Create custom sub steps
+## Create custom sub-steps
 
 Each checklist template allows you to create multiple sub-steps for each step, enabling users to provide necessary validation information. You can add sub-steps directly within any created step.
 
 1. Start the *Checklist Administrator* model-driven app and select **Templates**.
 1. If there are no steps yet, follow the *Create custom Template Steps* section.
 1. Select **+ New Template Sub Step** to go to the *New Template Sub Step* form.
-1. Fill out *Name*, *Validation Type*, and the *Sub Step Order* for the step. You can create Validation Types ahead of time so you can just select them during the Sub Step creation process.
+1. Fill out *Name*, *Validation Type*, and the *Sub Step Order* for the step. You can create Validation Types ahead of time so you can just select them during the sub-step creation process.
 1. Select **Save**.
 1. Repeat the steps to create as many templates and sub steps you need under a template step.
 
@@ -60,7 +60,7 @@ Inventories are categories of items you have on hand. Take these steps to add an
 
 1. Start the *Checklist Administrator* model-driven app and select **Inventories**.
 1. Select **+ New** to go to the *New Inventory* form.
-1. Fill out the *Name*, this is a required field and select Category from the list of already set up categories. It's recommended you have already set up categories before setting up the inventory.
+1. Fill out the *Name*, this is a required field and select Category from the list of already set up categories. It's best to set up categories before setting up the inventory.
 1. Select **Save**.
 1. Repeat the steps as necessary.
 
@@ -70,7 +70,7 @@ Items are specific entries in your inventory that you can map to a specific chec
 
 1. Start the *Checklist Administrator* model-driven app and select **Items**.
 1. Select **+ New** to go to the *New Item* form.
-1. Fill out *Name* and select the required *Checklist Category*. It's recommended that you set up Categories before setting up Items.
+1. Fill out *Name* and select the required *Checklist Category*. It's best to set up categories before setting up items.
 1. Select **Save**.
 1. Repeat the steps as necessary.
 
