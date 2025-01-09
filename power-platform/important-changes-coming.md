@@ -1,7 +1,7 @@
 ---
 title: Important changes (deprecations) coming in Power Platform
 description: Important changes (deprecations) coming in Power Platform 
-ms.date: 01/06/2025
+ms.date: 01/08/2025
 ms.topic: conceptual
 ms.subservice: admin
 searchScope:
@@ -22,14 +22,15 @@ For deprecation information of other products, see [Other deprecation articles](
 > [!IMPORTANT]
 > "Deprecated" means we intend to remove the feature or capability from a future release. The feature or capability is fully supported until it's officially removed. This deprecation notification can span a few months or years. After removal, the feature or capability will no longer work. This notice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
 
-## Deprecation of Bring-Your-Own-Key BYOK Dataverse service
-Starting January 6, 2026, we will discontinue support for Bring Your Own Key (BYOK). Customers are encouraged to transition to Customer Managed Keys (CMK), an enhanced solution that offers improved functionality, broader support for data sources, and better performance.
+## Deprecation of Bring-Your-Own-Key (BYOK) Dataverse service
+Starting January 6, 2026, we will discontinue support for Bring Your Own Key (BYOK). Customers are encouraged to transition to Customer-Managed Keys (CMK), an enhanced solution that offers improved functionality, broader support for data sources, and better performance.
 
-What Happens If Migration Is Not Completed? 
+### What happens if migration isn't completed? 
 Effective June 1, 2025, customers will be unable to apply BYOK to production environments. 
-If your migration to CMK is not completed by January 6, 2026, your environment will automatically revert to Microsoft Managed Keys. While this ensures continuity of encryption, it will limit the control and flexibility you currently enjoy with BYOK. To avoid disruption and take full advantage of the enhanced features and security offered by CMK, we strongly recommend beginning your migration process as soon as possible. 
 
-We recommend starting your transition to CMK (Customer Managed Keys) at your earliest convenience, please review [Manage your customer-managed encryption key](admin/customer-managed-key.md).
+If your migration to CMK is not completed by January 6, 2026, your environment will automatically revert to Microsoft Managed Keys. While this ensures continuity of encryption, it limits the control and flexibility you currently enjoy with BYOK. To avoid disruption and take full advantage of the enhanced features and security offered by CMK, we strongly recommend beginning your migration process as soon as possible. 
+
+We recommend starting your transition to CMK (Customer-Managed Keys) at your earliest convenience, please review [Manage your customer-managed encryption key](admin/customer-managed-key.md).
 
 ## Deprecation of Organization Insights Dashboard
 
