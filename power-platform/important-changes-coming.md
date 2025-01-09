@@ -22,8 +22,8 @@ For deprecation information of other products, see [Other deprecation articles](
 > [!IMPORTANT]
 > "Deprecated" means we intend to remove the feature or capability from a future release. The feature or capability is fully supported until it's officially removed. This deprecation notification can span a few months or years. After removal, the feature or capability will no longer work. This notice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
 
-## Deprecation of Bring-Your-Own-Key (BYOK) Dataverse service
-Starting January 6, 2026, we will discontinue support for Bring Your Own Key (BYOK). Customers are encouraged to transition to Customer-Managed Keys (CMK), an enhanced solution that offers improved functionality, broader support for data sources, and better performance.
+## Deprecation of bring-your-own-key (BYOK) Dataverse service
+Starting January 6, 2026, we will discontinue support for bring-your-own-key (BYOK) feature. Customers are encouraged to transition to customer-managed keys (CMK), an enhanced solution that offers improved functionality, broader support for data sources, and better performance.
 
 ### What happens if migration isn't completed? 
 Effective June 1, 2025, customers will be unable to apply BYOK to production environments. 
