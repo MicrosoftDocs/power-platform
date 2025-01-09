@@ -71,7 +71,7 @@ For resources available in the monitoring experience, you can learn more about r
 | Dynamics 365 |Apps | Not available yet|
    
 ## Monitoring experiences for makers
-When tenant-wide analytics is turned on, metrics and logs are available to Power Apps makers. Power Apps Makers can only see metrics and logs for which they have edit privileges. Environment-level settings exist to control what analytics information is available to makers. One setting controls whether makers see any analytics data in monitoring experiences including metrics and logs. The second setting controls whether makers see End User Pseudonymous Identifiers (EUPI), like session IDs and user object IDs in event logs.
+When tenant-wide analytics is turned on, metrics and logs are available to makers. Makers can only see metrics and logs for which they have edit privileges. Environment-level settings exist to control what analytics information is available to makers. One setting controls whether makers see any analytics data in monitoring experiences including metrics and logs. The second setting controls whether makers see End User Pseudonymous Identifiers (EUPI), like session IDs and user object IDs in event logs.
 
 
 ### Turn on the monitoring experiences for makers
