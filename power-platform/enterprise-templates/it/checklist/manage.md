@@ -1,23 +1,25 @@
 ---
-title: Get started managing the Checklist program
-description: Learn how to manage the Checklist apps.
+title: Get started managing the Checklist App program
+description: Learn how to set up and manage the Checklist App's apps.
 author: ananthar-msft
 ms.author: ananthar
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 01/08/2025
+ms.date: 01/09/2025
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
-# customer intent: As the Checklist program manager, I want to understand how to manage and maintain the Checklist template for Power Platform.
+# customer intent: As the Checklist App program manager, I want to understand how to manage and maintain the Checklist App template for Power Platform.
 ---
 # Get started managing checklists
 
 As an administrator, go to the *Checklist Administrator* model-driven app to create custom checklist templates and configure the reference data for use in the canvas application. You'll also be able to monitor the data in the model-driven app.
 
+:::image type="content" source="media/manage/ca-mda-new-template.png" alt-text="Screenshot Checklist Administrator app's new template creation screen.":::
+
 ## Create custom templates
 
-The templates you create can be associated with items in your inventory and you can use them in checklist reports. You can add templates directly in the application.
+The templates you create can be associated with items in your inventory and you can use them in Checklist reports. You can add templates directly in the application.
 
 1. Start the *Checklist Administrator* model-driven app and select **Templates**.
 1. Select **+ New** and assign a name for the new template.
@@ -26,7 +28,7 @@ The templates you create can be associated with items in your inventory and you 
 
 ## Create custom steps
 
-Each checklist template requires steps to guide users in creating effective reports. You can add steps directly to existing templates.
+Each Checklist template requires steps to guide users in creating effective reports. You can add steps directly to existing templates.
 
 1. Start the Checklist Administrator model-driven app and select **Templates**.
 1. Select a template to add a step to.
@@ -36,7 +38,7 @@ Each checklist template requires steps to guide users in creating effective repo
 
 ## Create custom sub-steps
 
-Each checklist template allows you to create multiple sub-steps for each step, enabling users to provide necessary validation information. You can add sub-steps directly within any created step.
+Each Checklist template allows you to create multiple sub-steps for each step, enabling users to provide necessary validation information. You can add sub-steps directly within any created step.
 
 1. Start the *Checklist Administrator* model-driven app and select **Templates**.
 1. If there are no steps yet, follow the *Create custom Template Steps* section.

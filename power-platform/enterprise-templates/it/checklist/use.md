@@ -1,6 +1,6 @@
 ---
-title: Use the Checklist template for Power Platform
-description: Learn how you can use the Checklist app for Microsoft Power Platform to streamline and automate managing your appointments.
+title: Use the Checklist App for Power Platform
+description: Learn how you can use the Checklist App for Microsoft Power Platform to to create, complete, and review reports.
 author: ananthar-msft
 ms.author: ananthar
 ms.reviewer: ellenwehrle
@@ -9,18 +9,22 @@ ms.date: 01/09/2025
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
-# customer intent: As a Checklist app user, I want to understand how to use the Checklist template for Power Platform.
+# customer intent: As a Checklist app user, I want to understand how to create, complete, and review reports in the Checklist App for Power Platform.
 ---
 
-# Get started using the Checklist app
+# Get started using the Checklist App
 
-You use the Checklist app to create inventory reports. The app can automatically generate a report based on the item you select and the template that's mapped to it.
+You use the Checklist App to create inventory reports. The app can automatically generate a report based on the item you select and the template that's mapped to it.
 
-This article gives you the steps to create reports
+This article gives you the steps to create, complete, and review reports.
+
+:::image type="content" source="media/use/ca-start-new-report.png" alt-text="Screenshot of Checklist App's Start a new report screen.":::
 
 ## Create reports
 
-Take these steps to create reports in the Checklist app:
+Reports are created on the Checklist App's home screen.
+
+Take these steps to create reports in the Checklist App:
 
 1. On the *Home* screen, select **Start new report**.
 1. On the *Start new report* screen, select an inventory item in the Inventory dropdown list to populate the Checklist category.
@@ -31,7 +35,9 @@ Take these steps to create reports in the Checklist app:
 
 ## Learn about Reports screen sections
 
-The Checklist app offers several capabilities to help you easily complete reports on the reports screen. For instance, you can skip and revisit steps as needed and save your work so you can complete your report at a later time. Take the time to learn what's on the Reports screen, and take note of key sections and their functions.
+The Checklist App offers several capabilities to help you easily complete reports on the reports screen. For instance, you can skip and revisit steps as needed and save your work so you can complete your report at a later time. Take the time to learn what's on the Reports screen, and take note of key sections and their functions.
+
+:::image type="content" source="media/use/ca-reports-screen.png" alt-text="Screenshot of the Checklist App's Reports screen.":::
 
 ### Report details section
 

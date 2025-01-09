@@ -1,18 +1,18 @@
 ---
-title: Install and set up the Checklist template
-description: Learn how to install, set up, and deploy the Checklist template for Microsoft Power Platform.
+title: Install and set up the Checklist App template
+description: Learn how to install, set up, and deploy the Checklist App template for Microsoft Power Platform.
 author: ananthar-msft
 ms.author: ananthar
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 01/08/2025
+ms.date: 01/09/2025
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
-# customer intent: As an administrator, I want to understand how to install and set up the Checklist template for Power Platform.
+# customer intent: As an administrator, I want to understand how to install and set up the Checklist App template for Power Platform.
 ---
 
-# Install and set up the Checklist template
+# Install and set up the Checklist App template
 
 Enterprise templates for Power Platform are enterprise-ready solutions that are designed to be installed, customized, deployed, and managed by a [centralized team](/power-platform/guidance/adoption/delivery-models#centralized) at your organization to support common [governance and security](/power-platform/guidance/adoption/admin-best-practices) practices.
 
@@ -52,7 +52,7 @@ More license details are available in the [Microsoft Power Platform Licensing Gu
 
 ### Create environments and data policies
 
-It's important to have a cohesive environment and data policy strategy for enterprise templates. To successfully install and manage the Appointment Booking template, confirm these resources and practices are in place.
+It's important to have a cohesive environment and data policy strategy for enterprise templates. To successfully install and manage the Checklist App template, confirm these resources and practices are in place.
 
 - **Administrators** - Be sure admins with the necessary privileges are available to coordinate and assign licensing and create environments.
 
@@ -61,7 +61,7 @@ It's important to have a cohesive environment and data policy strategy for enter
 
   More information: [Microsoft Power Platform admin](/power-platform/admin/)
 
-- **Environments** - Follow [application lifecycle management (ALM)](/power-platform/alm/) best practices in [creating and managing environments](/power-platform/admin/create-environment). Create and prepare a Power Platform developer environment specifically for the Checklist solution files. Also consider:
+- **Environments** - Follow [application lifecycle management (ALM)](/power-platform/alm/) best practices in [creating and managing environments](/power-platform/admin/create-environment). Create and prepare a Power Platform developer environment specifically for the Checklist App solution files. Also consider:
 
   - The Power Platform environment is set up with a Dataverse database
   - Environment maker security role privileges, at a minimum, are assigned to the user who installs the solutions in that environment
@@ -87,7 +87,7 @@ To create the connections in advance, take these steps:
 
 ## Step 3: Install solution files
 
-You have two options for installing the Checklist solution:
+You have two options for installing the Checklist App solution:
 
 - [Select **Get it now** on the template's AppSource page](#install-from-appsource) and an installation window opens automatically in the Power Platform admin center.
 - [Download a managed or unmanaged version of the solution files and manually import them into your environment](#download-and-manually-install-solution-files).
@@ -109,7 +109,7 @@ AppSource is a Microsoft digital storefront. Take these steps to go through the 
 
 ### Download and manually install solution files
 
-1. Download the Checklist solution files. You can download either Managed *or* Unmanaged versions:
+1. Download the Checklist App solution files. You can download either Managed *or* Unmanaged versions:
 
     - Managed: [mpa_Checklist_managed.zip](https://aka.ms/ChecklistManagedSolution)
     - Unmanaged: [mpa_Checklist_unmanaged.zip](https://aka.ms/ChecklistUnManagedSolution)
@@ -127,14 +127,14 @@ AppSource is a Microsoft digital storefront. Take these steps to go through the 
 
 ## Step 4: Assign security roles
 
-Set up security roles in your solutions so admins and users can use the apps. The Checklist solution contains two security roles:
+Set up security roles in your solutions so admins and users can use the apps. The Checklist App solution contains two security roles:
 
 - **Checklist App - Administrator** is the administrator of the Checklist app. The admin security role grants access to the canvas app and model-driven app where they can:
 
   - Create and modify templates, template steps, and template sub steps.
   - Manage categories, inventories, items, validation types and validation units.
   - Manage report through the model-driven application.
-- **Checklist App - User** is the user of the Checklist app. The user security role grants access to the canvas app to create reports on existing inventory with the respective custom template mapped for the item category.
+- **Checklist App - User** is the user of the Checklist App. The user security role grants access to the canvas app to create reports on existing inventory with the respective custom template mapped for the item category.
 
 1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. Select **Environments** on the left-side menu and select the environment where the solution is installed.  
@@ -153,10 +153,10 @@ More information:
 
 ## Step 5: Share the app
 
-Share the Checklist app with users in your organization.
+Share the Checklist App with users in your organization.
 
 > [!TIP]
-> Share the app with Checklist program managers first so that they can configure the app to meet your organization's needs. After that configuration is complete, share the app to the wider organization.
+> Share the Checklist App with program managers first so they can configure the app to meet your organization's needs. After that configuration is complete, share the app to the wider organization.
 
 1. Go to [Power Apps](https://make.preview.powerapps.com/) and select the environment you installed the solution in.
 1. Select **Solutions** on the left pane and select the **Checklist** solution from the list.
@@ -173,7 +173,7 @@ Share the Checklist app with users in your organization.
 :::image type="content" source="media/install/share-app.png" alt-text="Screenshot of sharing the Checklist app with users.":::
 
 > [!NOTE]
->If the Checklist app isn't shared with you and you cannot access it directly in Power Apps, please contact your admin.
+>If the Checklist App isn't shared with you and you cannot access it directly in Power Apps, please contact your admin.
 
 [Learn how to share a canvas app with your organization.](/power-apps/maker/canvas-apps/share-app)
 
@@ -191,8 +191,8 @@ Take these steps to enable the audit settings:
 
 ### Next step
 
-[Manage the Checklist app](manage.md)
+[Manage the Checklist App](manage.md)
 
 ### See also
 
-[Use the Checklist app](use.md)
+[Use the Checklist App](use.md)
