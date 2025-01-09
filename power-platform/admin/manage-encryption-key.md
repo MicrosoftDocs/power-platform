@@ -22,7 +22,7 @@ All environments of Microsoft Dataverse use [!INCLUDE[pn_MS_SQL_Server](../inclu
  By default, [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] stores and manages the database encryption key for your environments so you don't have to. The managed keys feature in the Microsoft Power Platform admin center gives administrators the ability to self-manage the database encryption key that is associated with the Dataverse tenant. 
 
 > [!IMPORTANT]
-> Starting January 6, 2026, we will discontinue support for bring-your-own-key (BYOK). Customers are encouraged to transition to customer-managed keys (CMK), an enhanced solution that offers improved functionality, broader support for data sources, and better performance. Learn more in [Manage your customer-managed encryption key](customer-managed-key.md).
+> Starting January 6, 2026, we will discontinue support for bring-your-own-key (BYOK). Customers are encouraged to transition to customer-managed keys (CMK), an enhanced solution that offers improved functionality, broader support for data sources, and better performance. Learn more in [Manage your customer-managed encryption key](customer-managed-key.md) and [Migrate bring-your-own-key (BYOK) environments to customer-managed key](cmk-migrate-from-byok.md).
 
 Encryption key management is only applicable to Azure SQL environment databases. The following features and services continue to use the Microsoft-managed encryption key to encrypt their data and can't be encrypted with the self-managed encryption key:
 - Copilots and generative AI features in [Microsoft Power Platform and Microsoft Dynamics 365](geographical-availability-copilot.md) 
