@@ -3,7 +3,7 @@ title: Environment routing
 description: Learn how to use the environment routing governance feature. 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/12/2024
+ms.date: 01/09/2025
 author: akadrno
 ms.author: kauguillard 
 ms.reviewer: sericks
