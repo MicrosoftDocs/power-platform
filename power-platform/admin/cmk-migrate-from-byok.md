@@ -12,39 +12,39 @@ ms.custom: template-how-to
 
 # Migrate bring-your-own-key (BYOK) environments to customer-managed key
 
-For customers using the previous [manage the encryption key](manage-encryption-key.md) (BYOK) feature, they can change their BYOK enabled environment's encryption to use the new [customer-managed key](customer-managed-key.md). You can also add your existing non-BYOK enabled environments to use the new customer-managed key.
+For customers using the previous [manage the encryption key](manage-encryption-key.md) (BYOK) feature, they can change their environment's encryption to use the new [customer-managed key](customer-managed-key.md). You can also add your existing non-BYOK environments to use the new customer-managed key.
 
 - Add non-BYOK enabled environments – these are environments that you haven’t encrypted with your own key.
 - Migrate BYOK enabled environments – these are environments that you have encrypted with your own key.
 
-> [!Note]
-> BYOK tenants' environments are locked out of the following services unless they migrate to customer-managed key:
-> 
-> - Audit in IP firewall
-> -	Audit data in Synapse workspace and Power BI 
-> -	Copilot search index which uses Dataverse search 
-> - AI Builder
-> - Dataverse search index
-> - Elastic tables
-> - Power BI embedded – applications and customers’ Power BI reports and dashboards
-> - Canvas apps 
-> - Power Automate flows
+## Services that don't work in BYOK environments
+BYOK tenants' environments are locked out of the following services unless they migrate to customer-managed key:
+ 
+- Audit in IP firewall
+-	Audit data in Synapse workspace and Power BI 
+-	Copilot search index which uses Dataverse search 
+- AI Builder
+- Dataverse search index
+- Elastic tables
+- Power BI embedded – applications and customers’ Power BI reports and dashboards
+- Canvas apps 
+- Power Automate flows
 
-> [!IMPORTANT]
-> To ensure uninterrupted service, customers currently using the bring-your-own-key (BYOK) feature, must migrate to customer-managed keys (CMK) before January 6, 2026.
-> 
-> **What action do I need to take?** 
+## Migrate as soon as possible
+To ensure uninterrupted service, customers currently using the bring-your-own-key (BYOK) feature, must migrate to customer-managed keys (CMK) before January 6, 2026.
+
+### What action do I need to take?
 Starting January 6, 2026, we will discontinue support for the bring-your-own-key (BYOK) feature. Customers are encouraged to transition to customer-managed keys (CMK), an enhanced solution that offers improved functionality, broader support for data sources, and better performance.
-> 
-> **Benefits of migrating to CMK**
-> - Enhanced data protection: CMK allows you to manage the database encryption key for your Microsoft Dataverse environment, providing greater control over your data security.
-> - No file size limitations: CMK removes upload size limits for files and images, allowing seamless management of larger data assets.
-> - Broader service support: CMK supports a wider range of first-party services, including environments where files and logs are stored in non-Azure SQL databases, allowing compatibility and scalability.
->
-> **What happens if migration isn't completed?**
-> Effective June 1, 2025, customers will be unable to apply BYOK to production environments.
-> 
-> If your migration to CMK isn't completed by January 6, 2026, your environment automatically reverts to Microsoft-managed keys. While this ensures continuity of encryption, it limits the control and flexibility you currently enjoy with BYOK. To avoid disruption and take full advantage of the enhanced features and security offered by CMK, we strongly recommend that you begin your migration process as soon as possible. 
+ 
+### Benefits of migrating to CMK
+- **Enhanced data protection**: CMK allows you to manage the database encryption key for your Microsoft Dataverse environment, providing greater control over your data security.
+- **No file size limitations**: CMK removes upload size limits for files and images, allowing seamless management of larger data assets.
+- **Broader service support**: CMK supports a wider range of first-party services, including environments where files and logs are stored in non-Azure SQL databases, allowing compatibility and scalability.
+
+### What happens if migration isn't completed?
+Effective June 1, 2025, customers will be unable to apply BYOK to production environments.
+
+If your migration to CMK isn't completed by January 6, 2026, your environment automatically reverts to Microsoft-managed keys. While this ensures continuity of encryption, it limits the control and flexibility you currently enjoy with BYOK. To avoid disruption and take full advantage of the enhanced features and security offered by CMK, we strongly recommend that you begin your migration process as soon as possible. 
 
 > [!IMPORTANT]
 > You can migrate to [customer-managed key](customer-managed-key.md) immediately without the need to contact Microsoft. If you need assistance, reach out to your FastTrack or account manager, or submit a support ticket.
