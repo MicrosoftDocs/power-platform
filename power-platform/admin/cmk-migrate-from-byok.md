@@ -31,6 +31,27 @@ For customers using the previous [manage the encryption key](manage-encryption-k
 > - Power Automate flows
 
 > [!IMPORTANT]
+> **To ensure uninterrupted service, customers currently using Bring Your Own Key (BYOK) must migrate to Customer Managed Keys (CMK) before January 6, 2026.**
+> 
+> **What action do I need to take?** 
+Starting January 6, 2026, we will discontinue support for Bring Your Own Key (BYOK). Customers are encouraged to transition to Customer Managed Keys (CMK), an enhanced solution that offers improved functionality, broader support for data
+sources, and better performance.
+> 
+> **Benefits of Migrating to CMK:**
+> - Enhanced Data Protection: 
+CMK allows you to manage the database encryption key for your Microsoft Dataverse environment, providing greater control over your data security.
+> - No File Size Limitations: 
+CMK removes upload size limits for files and images, enabling seamless management of larger data assets.
+> - Broader Service Support: 
+CMK supports a wider range of first-party services, including environments where files and logs are stored in non-Azure SQL databases, ensuring compatibility and scalability.
+>
+> **What Happens If Migration Is Not Completed?**
+> - Effective June 1, 2025, customers will be unable to apply BYOK to production environments.
+> 
+> - If your migration to CMK is not completed by January 6, 2026, your environment will automatically revert to Microsoft Managed Keys. While this ensures continuity of encryption, it will limit the control and flexibility you currently enjoy with BYOK. To avoid disruption and take full advantage of the enhanced features and security offered by CMK, we strongly recommend beginning your migration process as soon as possible. 
+>
+
+> [!IMPORTANT]
 > You can migrate to [customer-managed key](customer-managed-key.md) immediately without the need to contact Microsoft. If you need assistance, reach out to your FastTrack or account manager, or submit a support ticket.
 >
 > Upon completion of migrating your last BYOK environment, create a support ticket and request Microsoft to remove the BYOK option from your Power Platform admin center. Microsoft will also remove the SQL service restriction from all of your remaining environments and delete the BYOK key vaults from your tenant, after 28 days from the date the final BYOK environment was migrated.  
