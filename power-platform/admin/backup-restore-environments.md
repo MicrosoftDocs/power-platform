@@ -138,7 +138,7 @@ The following restrictions apply to restoration from both system backups and man
 | Sandbox     | Sandbox                   |
 | Developer   | Sandbox, Developer        |
 | Teams       | Teams (self-restore only) |
-| Default     | Not supported             |
+| Default     | Developer             |
 
 For more information about how to restore to a production environment, see the [Can I restore to a production environment?](#can-i-restore-to-a-production-environment) section.
 
