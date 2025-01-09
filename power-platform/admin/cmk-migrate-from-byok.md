@@ -31,7 +31,7 @@ BYOK tenants' environments are locked out of the following services unless they 
 - Power Automate flows
 
 ## Migrate as soon as possible
-To ensure uninterrupted service, customers currently using the bring-your-own-key (BYOK) feature, must migrate to customer-managed keys (CMK) before January 6, 2026.
+To ensure uninterrupted service, customers currently using the bring-your-own-key (BYOK) feature, must migrate to customer-managed keys (CMK) before January 6, 2026. You can migrate to [customer-managed key](customer-managed-key.md) immediately without the need to contact Microsoft. If you need assistance, reach out to your FastTrack or account manager, or submit a support ticket.
 
 ### What action do I need to take?
 Starting January 6, 2026, we will discontinue support for the bring-your-own-key (BYOK) feature. Customers are encouraged to transition to customer-managed keys (CMK), an enhanced solution that offers improved functionality, broader support for data sources, and better performance.
@@ -40,18 +40,26 @@ Starting January 6, 2026, we will discontinue support for the bring-your-own-key
 - **Enhanced data protection**: CMK allows you to manage the database encryption key for your Microsoft Dataverse environment, providing greater control over your data security.
 - **No file size limitations**: CMK removes upload size limits for files and images, allowing seamless management of larger data assets.
 - **Broader service support**: CMK supports a wider range of first-party services, including environments where files and logs are stored in non-Azure SQL databases, allowing compatibility and scalability.
+- **No downtime**: There is no downtime when you migrate your BYOK environment.
 
 ### What happens if migration isn't completed?
 Effective June 1, 2025, customers will be unable to apply BYOK to production environments.
 
 If your migration to CMK isn't completed by January 6, 2026, your environment automatically reverts to Microsoft-managed keys. While this ensures continuity of encryption, it limits the control and flexibility you currently enjoy with BYOK. To avoid disruption and take full advantage of the enhanced features and security offered by CMK, we strongly recommend that you begin your migration process as soon as possible. 
 
-> [!IMPORTANT]
-> You can migrate to [customer-managed key](customer-managed-key.md) immediately without the need to contact Microsoft. If you need assistance, reach out to your FastTrack or account manager, or submit a support ticket.
->
-> Upon completion of migrating your last BYOK environment, create a support ticket and request Microsoft to remove the BYOK option from your Power Platform admin center. Microsoft will also remove the SQL service restriction from all of your remaining environments and delete the BYOK key vaults from your tenant, after 28 days from the date the final BYOK environment was migrated.  
->
-> Once an environment is migrated to customer-managed key, the audit log is automatically moved to Azure CosmosDB and the upload files and images are moved to file storage and are encrypted automatically with the customer-managed key. The migrated environment can't be re-encrypted with the BYOK key. The environment also can't be reverted to Microsoft managed key for at least 7 days.
+### about audit and search
+If you have turned on audit and search in the BYOK environment and have uploaded files and created a data lake, all these storages will be automatically created and encrypted with the customer-managed encryption key.
+
+Similarly, if you didn’t turn on the audit or search functionalities and turned them on after your environment is encrypted with this feature, all these storages will be automatically created and encrypted with the encryption key.
+
+### After migragion
+When a BYOK environment is migrated to customer-managed key, the environment shows up in the **Environments with policies** list, and shows that it is managed by **CustomerViaMicrosoft** on the **Environment Settings\Environment encryption** page.
+
+Upon completion of migrating your last BYOK environment, create a support ticket and request Microsoft to remove the BYOK option from your Power Platform admin center. Microsoft will also remove the SQL service restriction from all of your remaining environments and delete the BYOK key vaults from your tenant, after 28 days from the date the final BYOK environment was migrated.  
+
+Once an environment is migrated to customer-managed key, the audit log is automatically moved to Azure CosmosDB and the upload files and images are moved to file storage and are encrypted automatically with the customer-managed key. The migrated environment can't be re-encrypted with the BYOK key. The environment also can't be reverted to Microsoft-managed key for at least 7 days.
+
+
 >
 > When BYOK-enabled environments are migrated to this key management feature, the BYOK key in the Microsoft key vault is retained for at least 28 days so that support is available for restoring the environment.
 >
@@ -61,14 +69,9 @@ If you have enabled audit and search in the BYOK environment and have uploaded f
 
 Similarly, if you didn’t enable these audit or search functionalities and enabled them after your environment is encrypted with this feature, all these storages will be automatically created and encrypted with the encryption key.
 
-1. Create a new encryption key and a new enterprise policy, or use an existing key and enterprise policy. More information: [Create encryption key and grant access](customer-managed-key.md#create-encryption-key-and-grant-access) and [Create enterprise policy](customer-managed-key.md#create-enterprise-policy).
-1. Enable the non-BYOK or BYOK environment as **Managed Environment**. More information: [Enable Managed Environment](customer-managed-key.md#enable-managed-environment-to-be-added-to-the-enterprise-policy).
-1. Add the non-BYOK or BYOK environment to the policy to the enterprise policy to encrypt data: More information: [Add an environment to the enterprise policy to encrypt data](customer-managed-key.md#add-an-environment-to-the-enterprise-policy-to-encrypt-data).
-
-> [!NOTE]
-> There is no downtime when you migrate your BYOK environment.
->
-> When a BYOK environment is migrated to customer-managed key, the environment shows up in the **Environments with policies** list, and shows that it is managed by **CustomerViaMicrosoft** on the **Environment Settings\Environment encryption** page.
+1. Create a new encryption key and a new enterprise policy, or use an existing key and enterprise policy. Learn more in [Create encryption key and grant access](customer-managed-key.md#create-encryption-key-and-grant-access) and [Create enterprise policy](customer-managed-key.md#create-enterprise-policy).
+1. Configure the non-BYOK or BYOK environment as a **Managed Environment**. Learn more in [Enable Managed Environment](customer-managed-key.md#enable-managed-environment-to-be-added-to-the-enterprise-policy).
+1. Add the non-BYOK or BYOK environment to the policy to the enterprise policy to encrypt data. Learn more in [Add an environment to the enterprise policy to encrypt data](customer-managed-key.md#add-an-environment-to-the-enterprise-policy-to-encrypt-data).
 
 ## Next steps
 
