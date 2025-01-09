@@ -41,7 +41,7 @@ Audit logs help administrators and other privileged users to answer questions li
 
 The following operations can be audited:
 
-- Audit changes at the entity, attribute, and organization level. For example, enabling audit for an environment or a table.
+- Audit changes at the table, column, and organization level. For example, enabling audit for an environment or a table.
 - Create, update, and delete operations on records.
 - Changes to the sharing privileges of a record.
 - The N:N association or disassociation of records.
@@ -211,16 +211,16 @@ This feature allows you to quickly turn on auditing for multiple tables (entitie
 
 1. In the web app, go to **Settings** (![Settings.](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
 
-2. Select **Settings** > **Administration**.
+2. Select **System** > **Administration**.
   
-3. Select **System Settings**, and then select the **Auditing** tab.  
+3. Select **Auditing** tab.  
 
 4. Select the table (entities) you want to track. To start or stop auditing on specific tables, select or clear the following check boxes:
   
    - **Common Entities**. Tracks common entities like Account, Contact, Goal, Product, and User.  
    - **Sales Entities**. Tracks sales-related entities like Competitor, Opportunity, Invoice, Order, and Quote.  
-   - **Marketing Entities**. Tracks Campaign entity activity.  
-   - **Customer Service Entities**. Tracks Case, Contract, Queue, and Service entity activity.  
+   - **Marketing Entities**. Tracks Campaign table activity.  
+   - **Customer Service Entities**. Tracks Case, Contract, Queue, and Service table activity.  
   
 5. Select **OK**.  
 
@@ -271,43 +271,55 @@ This task requires the System Administrator or System Customizer role or equival
 
 15. Repeat steps 3 – 10 for all tables and columns you want to edit.
 
-## Turn on or off auditing for entities and fields
+## Turn on or off auditing for tables and columns
 
 <!-- this content copied from audit-data-user-activity -->
 
-System administrators or customizers can change the default audit settings for entities and for specific fields for an entity.  
+System administrators or customizers can change the default audit settings for tables and for specific columns for a table.  
   
-### Turn on or off auditing for an entity  
+### Turn on or off auditing for a table.  
   
-1. Browse to the Power Platform admin center and sign in using administrator credentials.
-  
-2. Go to **Environments** > [select an environment] > **Settings** > expand **Audit and logs** > **Entity and Field Audit Settings**.
+1. Sign in to [Power Apps](https://make.powerapps.com) using your System Administrator or System Customizer credentials.
 
-3. Under **Components**, expand **Entities**.  
-  
-4. Select the entity for which you want to turn on auditing.  
-  
-5. To start auditing, on the **General** tab, in the **Data Services** section, select the **Auditing** check box to turn on auditing, or clear the **Auditing** check box to turn it off.  
-  
-   By default, when you start or stop auditing for an entity, you also start or stop auditing for all the fields of this entity.  
+2. Select the environment for which you want to configure auditing.
+
+   > [!NOTE]
+   > We recommend that you manage the audit configuration as part of a solution. This allows you to easily find your customizations, apply your own solution published prefix, and export your solution for distribution to other environments. To learn more about solutions, see [Use a solution to customize](../alm/use-solutions-for-your-customizations.md). When using a solution, add all tables you want to configure for auditing to your solution, then perform steps 3-8 before saving and publishing your solution.
+
+3. Select **Dataverse** > **Tables**.
+
+4. Select a table.
+
+   :::image type="content" source="media/field-security-tables-contact.png" alt-text="Select the Contact table.":::
+
+5. On the command bar, select **Edit**.
+
+6. On the command bar, select **Edit table properties**.
+
+7. Expand **Advanced options**.
+
+8. Select the **Audit changes to its data** checkbox to turn on audit for the table.
+
+   :::image type="content" source="media/dataverse-audit-changes-to-data.png" alt-text="Select Audit changes to its data":::
+
+  or 
+  Un-select the **Audit changes to its data** checkbox to turn off audit for the table.
+
+10. Select **Save**.
 
    If you have turned on the **Read Logs** in the environment's audit settings, you'll need to turn on the **Single record auditing. Log a record when opened** and **Multiple record auditing. Log all records displayed on an opened page** auditing settings to see the read audit logs from this table. Learn more at [Activity logging](/power-platform/admin/enable-use-comprehensive-auditing).
+   
+11. Publish the customization. To publish for a single table, choose the table, such as Account, and then select **Publish** on the toolbar.  
   
-6. Select **Save**.  
+### Turn on or off auditing for specific column on a table
   
-7. Publish the customization. To publish for a single entity, choose the entity, such as Account, and then select **Publish** on the toolbar.  
+1. Under the table for which you want to turn on auditing with specific columns, select **Columns**.  
   
-### Turn on or off auditing for specific fields on an entity
-  
-1. Under the entity for which you want to turn on auditing with specific fields, select **Fields**.  
-  
-2. To turn on or off auditing for a single field, open the field and in the **Auditing** section, select **Enable** or **Disable**.  
-  
-   To turn on or off auditing for more than one field, select the fields you want, and then on the toolbar select **Edit**. In the **Edit Multiple Fields** dialog box, in the **Auditing** area, select **Enabled** or **Disabled**.  
+2. To turn on or off auditing for a single column, open the column and expand the **Advanced options** in the **General** section, select or unselect the **Enable auditing** option.   
   
 3. Select **Save**.  
   
-4. Publish the customization. To publish for a single entity, choose the entity, such as Account, and then select **Publish** on the Actions toolbar.  
+4. Publish the customization. To publish for a single table, choose the table, such as Account, and then select **Publish** on the Actions toolbar.  
 
 More information: [Dataverse developer guide: Configure auditing > Configure tables and columns](/power-apps/developer/data-platform/auditing/configure#configure-tables-and-columns)
 
@@ -333,15 +345,22 @@ The Audit Summary view is a comprehensive list of all audit logs in an environme
 
  Users must have the View Audit Summary privilege to see the Audit Summary view.
 
-1. Sign in to the Power Platform admin center, and then select an environment.
+There are 2 ways to get to the Audit Summary page:
+1. From the environment's **Apps** menu, select the **Power Platform Environment Settings** app, or
+1. From the app, select the **Settings** icon on the banner, and select **Advanced Settings**, select **System > Auditing > Audit Summary view**.
 
-2. In the Auditing card, select **Delete Logs**.
+  > [!NOTE]
+  > The form filters for **Record** and **Entity** do not show the list of available values when selecting "Equals" or "Does not equal" **filter by**. To filter by a record or table, you can use the "Contains" filter and by entering the record or table name. 
 
-3. Select **View Audit Logs**.
+## Delete audit logs
+
+6. In the Auditing card, select **Delete Logs**.
+
+7. Select **View Audit Logs**.
 
    :::image type="content" source="media/dataverse-audit-select-view-audit-logs.png" alt-text="Select Delete logs":::
 
-4. Use the **Enable/Disable** **Filters** option to narrow down the list of audit records needed to answer your question. You can apply several filters at once.
+8. Use the **Enable/Disable** **Filters** option to narrow down the list of audit records needed to answer your question. You can apply several filters at once.
 
    :::image type="content" source="media/dataverse-audit-select-enable-disable-filters.png" alt-text="Select Enable/Disable Filters":::
 
