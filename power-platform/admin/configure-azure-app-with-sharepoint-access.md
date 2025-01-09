@@ -63,8 +63,8 @@ When SharePoint integration access is needed from Power Automate or an API conte
    - Example `https://login.microsoftonline.com/00000000-0000-0000-0000-000000000000/v2.0`
 
 1. In **Value** field, enter the Subject Identifier 
-    - Value Format: `/eid1/c/pub/t/v4j5cvGGr0GRqy180BHbRw/a/CQSGf3JJtEi27nY2ePL7UQ/Env/3a5a51c7-a395-e61d-8f8c-c67df78a983b/powerpagesmanagedidentity/<any-guid>`
-    - Example: `/eid1/c/pub/t/v4j5cvGGr0GRqy180BHbRw/a/CQSGf3JJtEi27nY2ePL7UQ/Env/3a5a51c7-a395-e61d-8f8c-c67df78a983b/powerpagesmanagedidentity/00000000-0000-0000-0000-000000000000`
+    - Value Format: `/eid1/c/pub/t/v4j5cvGGr0GRqy180BHbRw/a/CQSGf3JJtEi27nY2ePL7UQ/Env/3a5a51c7-a395-e61d-8f8c-c67df78a983b/sharepointmanagedidentity/<any-guid>`
+    - Example: `/eid1/c/pub/t/v4j5cvGGr0GRqy180BHbRw/a/CQSGf3JJtEi27nY2ePL7UQ/Env/3a5a51c7-a395-e61d-8f8c-c67df78a983b/sharepointmanagedidentity/00000000-0000-0000-0000-000000000000`
    
 1. Select **Add** button to create the credential
 
@@ -97,7 +97,7 @@ An example using POST:
 
 ### Add record in **Share Point Managed Identities** table
 
-Next insert into `sharepointmanagedidentities` table using values from the table.
+Next insert into `sharepointmanagedidentity` table using values from the table.
 
 | Table Field | Value |
 | --- | --- |
