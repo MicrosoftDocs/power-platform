@@ -48,9 +48,9 @@ Understand that environment routing is a tenant-level, admin setting that:
 
 ## Enable the environment routing setting
 
-The **Environment routing** setting is disabled by default and must be enabled using [Power Platform admin center](https://admin.powerplatform.microsoft.com), or [PowerShell](/powershell/).
+The **Environment routing** setting is disabled by default and must be enabled using Power Platform admin center&mdash;both the classic admin center or the new admin center; or PowerShell.
 
-#### [Power Platform admin center](#tab/ppac)
+#### [Classic admin center](#tab/ppac)
 
 1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select **Settings**.
 1. On the **Tenant settings** page, select **Environment routing**.
@@ -59,8 +59,13 @@ The **Environment routing** setting is disabled by default and must be enabled u
 1. (Optional) Select an environment group, to which the newly created developer environments are automatically assigned. This environment group inherits all the defined environment group rules. For more information, see [Environments groups](environment-groups.md).
 1. (Optional) Admins can select a security group to limit routing only to the member makers of the configured security group. For more information, see [Configure security groups](../enterprise-templates/finance/sap-procurement/administer/configure-security-groups.md).
 
-    :::image type="content" source="media/default-environment-routing/environment-routing.png" alt-text="Screenshot that shows where various Environment routing options in Tenant settings are located." lightbox="media/default-environment-routing/environment-routing.png":::
+#### [New admin center](#tab/ppac)
 
+1. In the navigation pane, select **This**.
+1. Do this.
+1. Do this.
+1. Do this.
+1. Do this.
 
 #### [PowerShell](#tab/powershell)
 
