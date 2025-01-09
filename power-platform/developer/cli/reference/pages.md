@@ -82,7 +82,7 @@ Download only the entities specified for this argument using comma separated ent
 
 #### `--modelVersion` `-mv`
 
-Power Pages website data model version to download. When not specified, 'Standard' will be used. [1: Standard, 2: Enhanced]
+Power Pages website data model version to download. When not specified, 'Standard' will be used. [Enhanced or Standard]
 
 #### `--overwrite` `-o`
 
@@ -197,7 +197,7 @@ This parameter requires no value. It's a switch.
 
 #### `--modelVersion` `-mv`
 
-Power Pages website data model version to upload. [1: Standard, 2: Enhanced]
+Power Pages website data model version to upload.
 
 [!INCLUDE [pages-upload-remarks](includes/pages-upload-remarks.md)]
 
