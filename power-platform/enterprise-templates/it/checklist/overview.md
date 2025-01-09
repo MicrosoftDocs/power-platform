@@ -5,7 +5,7 @@ author: ananthar-msft
 ms.author: ananthar
 ms.reviewer: ellenwehrle
 ms.topic: overview
-ms.date: 01/08/2025
+ms.date: 01/09/2025
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -14,7 +14,7 @@ ms.subservice: solution-templates
 
 # What is the Checklist template Microsoft Power Platform?
 
-The Checklist template provides a quick way to create custom checklists tailored to specific needs. Once set up, you can use the Checklist app to document and report on a wide range of tasks and projects. The app even includes options to use detailed steps and sub-steps, so it's a great app to use for complex repair and maintenance tasks.
+The Checklist app template provides a quick way to create custom checklists tailored to specific needs. Once set up, you can use the Checklist app to document and report on a wide range of tasks and projects. The app even includes options to use detailed steps and sub-steps, so it's a great app to use for complex repair and maintenance tasks.
 
 The Checklist template comes with many capabilities:
 

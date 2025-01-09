@@ -5,7 +5,7 @@ author: ananthar-msft
 ms.author: ananthar
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 01/08/2025
+ms.date: 01/09/2025
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -14,13 +14,13 @@ ms.subservice: solution-templates
 
 # Get started using the Checklist app
 
-Use the Checklist app to create reports against the inventory and items you set up. The application automatically creates a report template based on the selected items and the template mapped to it in the reference data.
+You use the Checklist app to create inventory reports. The app can automatically generate a report based on the item you select and the template that's mapped to it.
 
-You can access the report templateThe Checklist form provides access to the steps and sub-steps set up in the report template. Select a report template to use for  fill in the Checklist form based on your reporting needs.
+This article gives you the steps to create reports
 
 ## Create reports
 
-As an administrator, you create reports in the Checklist app.
+Take these steps to create reports in the Checklist app:
 
 1. On the *Home* screen, select **Start new report**.
 1. On the *Start new report* screen, select an inventory item in the Inventory dropdown list to populate the Checklist category.
@@ -31,7 +31,7 @@ As an administrator, you create reports in the Checklist app.
 
 ## Learn about Reports screen sections
 
-As an administrator, you complete report details in the Checklist app. You can also save your work and go back later to complete your report. On the Reports screen, you complete each step of the report, taking note of key sections and their functions. This section gives an overview of the Report screen's sections and their functions.
+The Checklist app offers several capabilities to help you easily complete reports on the reports screen. For instance, you can skip and revisit steps as needed and save your work so you can complete your report at a later time. Take the time to learn what's on the Reports screen, and take note of key sections and their functions.
 
 ### Report details section
 
@@ -69,7 +69,7 @@ The *Step Attributes* section is on the top-right of the Reports screen and incl
 
 ## Complete Reports
 
-Once you learn about the Reports screen's sections and what features each one offers, you are ready to take these steps to complete reports:
+Once you've reviewed the Reports screen, your're ready to take these steps to complete reports:
 
 1. In the *step navigation* section, select a step to work on and fill in the necessary step sections and sub-step sections. You are able to freely navigate through each of the steps and their sub-steps.
 1. On each *step*, update the step status and the comment as needed.
@@ -80,9 +80,9 @@ Once you learn about the Reports screen's sections and what features each one of
     - **Open Text**: Type in the information required for the current sub-step.
     - **Unit**: Check sub-step instructions for what needs to be quantified and supply the value and the unit.
 
-## Review the steps
+## Review steps
 
-Administrators review the steps. Take these steps:
+Before you submit your report it's important to take the time to review it. Take these steps to complete the review process:
 
 1. On the *Report* screen, select **Review steps**.
 1. On the *Review steps* screen, there are two sections:
