@@ -350,7 +350,7 @@ There are 2 ways to get to the Audit Summary page:
 1. From the app, select the **Settings** icon on the banner, and select **Advanced Settings**, select **System > Auditing > Audit Summary view**.
 
   > [!NOTE]
-  > The form filters for **Record** and **Entity** do not show the list of available values when selecting "Equals" or "Does not equal" **filter by**. To filter by a record or table, you can use the "Contains" filter and by entering the record or table name. 
+  > The **Record** column filter does not work and will be removed in the future. The filter options "Equals" and "Does not equal" of the **Entity** column filter do not show any table values. To filter by entity, you can use the "Contains" option and by entering the table name. 
 
 ## Delete audit logs
 
