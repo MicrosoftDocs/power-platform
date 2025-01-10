@@ -49,9 +49,9 @@ The following operations can be audited:
 - Deletion of audit logs.
 - For changes made to entity fields that can be localized, such as the Product entity name or description fields, the locale ID (LCID) appears in the audit record.
 
-Auditing is not supported on table or column definition changes or during authentication. Furthermore, auditing does not support retrieve operations or export operations. [Dataverse and model-driven apps activity logging](enable-use-comprehensive-auditing.md) can be turned on, in addition to Dataverse auditing, to log data retrieve operations and export operations.
+Auditing isn't supported on table or column definition changes or during authentication. Furthermore, auditing doesn't support retrieve operations or export operations. [Dataverse and model-driven apps activity logging](enable-use-comprehensive-auditing.md) can be turned on, in addition to Dataverse auditing, to log data retrieve operations and export operations.
 
-The following list enumerates the non-customizable tables that cannot be audited. This list was obtained by testing for a CanModifyAuditSettings column value of false on each table's definition:
+The following list enumerates the noncustomizable tables that can't be audited. This list was obtained by testing for a CanModifyAuditSettings column value of false on each table's definition:
 
 - ActivityPointer
 - Annotation
@@ -103,7 +103,7 @@ Auditing can be configured manually through the [Power Platform admin center](ht
 
 You must be assigned to the Power Platform or Dynamics 365 admin role to turn on or off auditing through the [Security page](security/security-overview.md).
 
-To meet your external and internal auditing, compliance, security, and governance policies that are common to many enterprises, auditing for the following tables are turned on automatically when you turn on auditing through the Security page. You can audit other tables, where applicable, but please note that there are some core tables that audit is turned on by default. 
+To meet your external and internal auditing, compliance, security, and governance policies that are common to many enterprises, auditing for the following tables are turned on automatically when you turn on auditing through the Security page. You can audit other tables, where applicable, but note that there are some core tables that audit is turned on by default. 
 
 > [!IMPORTANT]
 >
@@ -164,14 +164,14 @@ To meet your external and internal auditing, compliance, security, and governanc
 1. The selected period is effective from the current date and overrides the existing retention policy. To apply the new retention policy for new logs only, select to switch the **Existing logs** to **On**. 
 
 > [!NOTE]
-> It is recommended that you apply the new retention policy to all logs. If you turned on the **Existing logs** switch, older logs continue to be retained using the prior retention policy. For example, by default, the initial logs are kept **Forever** and they aren't deleted with the new retention policy.
+> It's recommended that you apply the new retention policy to all logs. If you turned on the **Existing logs** switch, older logs continue to be retained using the prior retention policy. For example, by default, the initial logs are kept **Forever** and they aren't deleted with the new retention policy.
 
 ## Start/stop auditing for an environment and set retention policy
 
 This task requires the System Administrator or System Customizer role or equivalent permissions.
 
 > [!Important]
-> The audit retention period is not available for Dynamics 365 Customer Engagement (on-premises) or for environments encrypted with a customer's own encryption key.
+> The audit retention period isn't available for Dynamics 365 Customer Engagement (on-premises) or for environments encrypted with a customer's own encryption key.
 >  
 > It's recommended that you use the Security page auditing option to set the retention policy. This provides the flexibility to apply the retention policy to existing logs. 
 
@@ -183,7 +183,7 @@ This task requires the System Administrator or System Customizer role or equival
    |--------------------|---------------------|
    | Start Auditing   | Start or stop auditing.    |
    | Log access | Log whenever the system is accessed, generally by signing in.  |  
-   | Read logs  | Logs will be sent to the [Microsoft Purview compliance portal](https://compliance.microsoft.com/auditlogsearch). |
+   | Read logs  | Logs are sent to the [Microsoft Purview compliance portal](https://compliance.microsoft.com/auditlogsearch). |
 
 3. You can set a retention period for how long audit logs are kept in an environment. Under **Retain these logs for**, choose the period of time you wish to retain the logs.
 
@@ -197,7 +197,7 @@ This task requires the System Administrator or System Customizer role or equival
 >
 > For example, assume the retention policy is set to 30 days. Audit records that were created 30 days, and one second ago, start to be deleted in the background.
 >
-> Each audit log is stamped with the currently active retention period. **Changing the retention period here does not change the retention period for already existing records.** The new retention period is applied to all new records created after the retention policy was changed. For example, assume the retention period is changed from 30 days to 90 days. Audit records that were created prior to the change are deleted in the background after 30 days. Audit records that were created after the change are deleted in the background after 90 days.
+> Each audit log is stamped with the currently active retention period. **Changing the retention period here doesn't change the retention period for already existing records.** The new retention period is applied to all new records created after the retention policy was changed. For example, assume the retention period is changed from 30 days to 90 days. Audit records that were created prior to the change are deleted in the background after 30 days. Audit records that were created after the change are deleted in the background after 90 days.
 
 5. Select **Save**.
 
@@ -308,7 +308,7 @@ System administrators or customizers can change the default audit settings for t
 
 10. Select **Save**.
 
-    If you have turned on the **Read Logs** in the environment's audit settings, you'll need to turn on the **Single record auditing. Log a record when opened** and **Multiple record auditing. Log all records displayed on an opened page** auditing settings to see the read audit logs from this table. Learn more at [Activity logging](/power-platform/admin/enable-use-comprehensive-auditing).
+    If you have turned on the **Read Logs** in the environment's audit settings, you need to turn on the **Single record auditing. Log a record when opened** and **Multiple record auditing. Log all records displayed on an opened page** auditing settings to see the read audit logs from this table. Learn more at [Activity logging](/power-platform/admin/enable-use-comprehensive-auditing).
    
 11. Publish the customization. To publish for a single table, choose the table, such as Account, and then select **Publish** on the toolbar.  
   
@@ -370,7 +370,7 @@ There are two ways to get to the **Audit Summary** page:
    >
    > Exporting of Audit logs is currently not supported. Use the Web API or SDK for .NET to retrieve audit data from your environment. See [Retrieve and delete the history of audited data changes](/power-apps/developer/data-platform/retrieve-and-delete-the-history-of-audited-data-changes).
    >
-   > Large attribute values, such as [Email.description](/powerapps/developer/common-data-service/reference/entities/email) or [Annotation](/powerapps/developer/common-data-service/reference/entities/annotation), are limited (capped) at 5KB or ~5,000 characters. A capped attribute value can be recognized by three dots at the end of the text, for example, "lorem ipsum, lorem ip…".
+   > Large attribute values, such as [Email.description](/powerapps/developer/common-data-service/reference/entities/email) or [Annotation](/powerapps/developer/common-data-service/reference/entities/annotation), are limited (capped) at 5 KB or about 5,000 characters. A capped attribute value is recognized by three dots at the end of the text, for example, "lorem ipsum, lorem ip…".
 
 More information: [Dataverse developer guide: Retrieve the history of audited data changes](/power-apps/developer/data-platform/auditing/retrieve-audit-data)
 
@@ -414,7 +414,7 @@ The deletion of a record's audit history can be done in a model-driven applicati
 
 ## Reduce log storage: Delete audit logs – legacy process
 
-When you turn on Dataverse auditing, your apps create audit logs to store changes to the records and user access. You can delete audit logs when they are no longer needed to free up log capacity space.
+When you turn on Dataverse auditing, your apps create audit logs to store changes to the records and user access. You can delete audit logs when they're no longer needed to free up log capacity space.
 
 > [!WARNING]
 > When you delete audit logs, you can no longer view the audit history for the period covered by that audit log.
@@ -428,11 +428,11 @@ When you turn on Dataverse auditing, your apps create audit logs to store change
 4. Select **OK** to confirm.
 
 > [!NOTE]
-> You can only delete the oldest audit log in the system. To delete more than one audit log repeat deleting the oldest available audit log until you have deleted enough logs.
+> You can only delete the oldest audit log in the system. To delete more than one audit log, repeat delete the oldest available audit log until you have deleted enough logs.
 
 ## Reduce log storage: Delete audit logs – new process
 
-When you turn on Dataverse auditing, your apps create audit logs to store changes to the records and user access. You can delete audit logs when they are no longer needed to free up log capacity space.
+When you turn on Dataverse auditing, your apps create audit logs to store changes to the records and user access. You can delete audit logs when they're no longer needed to free up log capacity space.
 
 > [!WARNING]
 > When you delete audit logs, you can no longer view the audit history for the tables, user access, period covered by that audit log.
@@ -446,7 +446,7 @@ When you turn on Dataverse auditing, your apps create audit logs to store change
    |Delete logs  |Description  |System job name   |
    |---------|---------|---------|
    |Logs by table      | Select one or more tables for which you want to delete audit logs. By default, all tables in the environment will be shown, whether they contain audit data or not.         | Delete logs for [number of] tables.         |
-   |Access logs by people and systems      | Delete all access logs. This will delete all logs for all users and systems.         | Delete access logs.         |
+   |Access logs by people and systems      | Delete all access logs. This deletes all logs for all users and systems.         | Delete access logs.         |
    |All logs up to and including the selected date      | Delete logs including the date selected.             | Delete all logs before and including [timestamp].         |
 
    :::image type="content" source="media/dataverse-audit-select-delete-log-selection.png" alt-text="Select a method to select logs to delete.":::
@@ -454,7 +454,7 @@ When you turn on Dataverse auditing, your apps create audit logs to store change
 4. Select **Delete**, and then confirm.
 
    > [!NOTE]
-   > Audit logs will be deleted in an asynchronous background system job. The duration of the deletion depends on the amount of audit records to be deleted. The current rate is approximately 100 million records per day, or approximately 4 million records per hour.
+   > Audit logs are deleted in an asynchronous background system job. The duration of the deletion depends on the amount of audit records to be deleted. The current rate is approximately 100 million records per day, or approximately 4 million records per hour.
    >
    > To monitor the status of audit delete jobs, see the next section.
 
@@ -470,11 +470,11 @@ Several features use system jobs to perform tasks automatically, including workf
 
 2. Select **Settings** > **Audit and logs** > **System Jobs** to see a grid view of system jobs.
 
- If there is a problem with a system job, you can cancel, postpone, pause, or resume it. Select a job and then select the **Actions** menu.
+ If there's a problem with a system job, you can cancel, postpone, pause, or resume it. Select a job and then select the **Actions** menu.
   
 - **Canceling system jobs**  
   
-     You cannot resume a canceled system job.  
+     You can't resume a canceled system job.  
   
 - **Postponing completion of system jobs**  
   
@@ -494,7 +494,7 @@ Several features use system jobs to perform tasks automatically, including workf
   > 2. To view system job failures in a format that you can print or copy and paste, select the **Print** button.  
   
 > [!NOTE]
-> You cannot make changes to the status of a system job that has been completed or canceled.
+> You can't make changes to the status of a system job that has been completed or canceled.
 
 ## Monitor the status of audit delete jobs
 
@@ -508,9 +508,9 @@ Select the system job name to open details about your delete job.
 
 ## Access audit data using Azure Synapse Link for Dataverse
 
-You can use Azure Synapse link for Dataverse to link the audit table and create reports using Power BI to meet your external and internal auditing, compliance, and governance needs. More information: [Access audit data using Azure Synapse Link for Dataverse and Power BI](audit-data-azure-synapse-link.md)
+You can use Azure Synapse Link for Dataverse to link the audit table and create reports using Power BI to meet your external and internal auditing, compliance, and governance needs. More information: [Access audit data using Azure Synapse Link for Dataverse and Power BI](audit-data-azure-synapse-link.md)
 
-### See also
+### Related content
 
 [Auditing overview](/power-apps/developer/data-platform/auditing-overview) <br />
 [Audit user access](/power-apps/developer/data-platform/audit-user-access)
