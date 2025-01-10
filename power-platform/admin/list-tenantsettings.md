@@ -5,12 +5,13 @@ author: laneswenka
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 11/19/2024
+ms.date: 01/10/2025
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
   - admin
 contributors:
+- DBEKI 
 - arjunmayur 
 - bibekTimalsina948
 - dannylevymsft
@@ -119,6 +120,7 @@ The response is always a **200 OK** response, unless you aren't correctly authen
 |powerPlatform.teamsIntegration.shareWithColleaguesUserLimit | Integer | Maximum value setting for the number of users in a security group used to share an app built using Power Apps on Microsoft Teams. Default value is 10000 but can be increased or decreased, as required.|
 |powerPlatform.powerAutomate.disableCopilot | Boolean | Disables cloud flows copilot in Power Automate.<br><br>It doesn't control the ability to add AI-related connectors or actions in the flow designer. For example, the Skills connector or AI Builder creates text with a GPT action. Default value is false.|
 |powerPlatform.powerAutomate.disableCopilotWithBing | Boolean | Disables the copilot-enhanced help feature within Power Automate to enhance answers on product documentation through Bing Search. Default value is false.|
+|powerPlatform.powerAutomate.disableFlowRunResubmission | Boolean | When this setting is **True**, Power Automate cloud flows initiated using instant triggers can't utilize the flow run resubmission function to restart a previous flow run.  Default value is **True**.  Set the value to **False** to allow users to resubmit previous flow runs that were started with instant triggers.
 |powerPlatform.environments.preferredEnvironmentLocation | String | Explicitly set the default location (Geo) for environments that are created without a location (Geo) specified. This includes Teams environments.|
 |powerPlatform.environments.disablePreferredDataLocationForTeamsEnvironment | Boolean | Ignore the Teams group-preferred data location when provisioning a Teams environment. Default value is false.|
 |powerPlatform.governance.disableAdminDigest | Boolean | Disables the weekly admin digest email for Managed Environments. Default value is false. |
