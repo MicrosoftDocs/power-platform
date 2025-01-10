@@ -61,11 +61,13 @@ The **Environment routing** setting is turned off by default and must be turned 
 #### [New admin center](#tab/new)
 
 1. In the navigation pane, select **Manage**.
-1. In the **Manage** pane [Power Platform admin center](https://admin.powerplatform.microsoft.com/manage/environments), select **Tenant settings** [Power Platform admin center](https://admin.powerplatform.microsoft.com/manage/tenantsettings) .
+1. In the **Manage** pane, select **Tenant settings**.
 1. On the **Tenant settings** page, select **Environment routing**.
-1. In the **Environment routing** pane, in the **Turn on environment routing for** section, select the product portals to enable routing for each.
-1. In the **Apply routing to** section, selecting the **everyone** option routes all makers into existing or new personal developer environments. Optionally, admins can select a security group to limit routing only to the member makers of the configured security group. For more information, see [Configure security groups](../enterprise-templates/finance/sap-procurement/administer/configure-security-groups.md).
-1. (Optional) Select an environment group, to which the newly created developer environments are automatically assigned. This environment group inherits all the defined environment group rules. For more information, see [Environments groups](environment-groups.md).
+1. In the **Set up environment routing** pane, in the **Turn on environment routing for** section, select the product portals for which you want to allow routing.
+1. In the **Apply routing to** section, select Everyone or specify a specific security group.
+     - Selecting the **Everyone** option routes all makers into existing or new personal, developer environments.
+     - Admins can select a security group to limit routing only to the member makers of the configured security group. Learn more in [Configure security groups](../enterprise-templates/finance/sap-procurement/administer/configure-security-groups.md).
+1. (Optional) Select an environment group to which the newly created developer environments are automatically assigned. This environment group inherits all the defined environment group rules. Learn more in [Environments groups](environment-groups.md).
 
 #### [PowerShell](#tab/powershell)
 
