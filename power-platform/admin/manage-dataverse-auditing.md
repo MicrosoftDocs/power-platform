@@ -192,12 +192,12 @@ This task requires the System Administrator or System Customizer role or equival
    | Set the retention policy for these logs   | Default: Forever   |
    | Set a custom retention policy | Maximum: 24,855 days. Visible if you select "Custom" in the above setting.   |  
 
->[!NOTE]
-> When the audit retention period is set to **Forever**, logs aren't deleted. When the audit retention period is set to any other value, logs are deleted continuously starting at the time an audit record exceeds the time defined in the retention policy.
->
-> For example, assume the retention policy is set to 30 days. Audit records that were created 30 days, and one second ago, start to be deleted in the background.
->
-> Each audit log is stamped with the currently active retention period. **Changing the retention period here doesn't change the retention period for already existing records.** The new retention period is applied to all new records created after the retention policy was changed. For example, assume the retention period is changed from 30 days to 90 days. Audit records that were created prior to the change are deleted in the background after 30 days. Audit records that were created after the change are deleted in the background after 90 days.
+    >[!NOTE]
+    > When the audit retention period is set to **Forever**, logs aren't deleted. When the audit retention period is set to any other value, logs are deleted continuously starting at the time an audit record exceeds the time defined in the retention policy.
+    >
+    > For example, assume the retention policy is set to 30 days. Audit records that were created 30 days, and one second ago, start to be deleted in the background.
+    >
+    > Each audit log is stamped with the currently active retention period. **Changing the retention period here doesn't change the retention period for already existing records.** The new retention period is applied to all new records created after the retention policy was changed. For example, assume the retention period is changed from 30 days to 90 days. Audit records that were created prior to the change are deleted in the background after 30 days. Audit records that were created after the change are deleted in the background after 90 days.
 
 5. Select **Save**.
 
@@ -372,7 +372,7 @@ There are two ways to get to the **Audit Summary** page:
    >
    > Large attribute values, such as [Email.description](/powerapps/developer/common-data-service/reference/entities/email) or [Annotation](/powerapps/developer/common-data-service/reference/entities/annotation), are limited (capped) at 5 KB or about 5,000 characters. A capped attribute value is recognized by three dots at the end of the text, for example, "lorem ipsum, lorem ip…".
 
-More information: [Dataverse developer guide: Retrieve the history of audited data changes](/power-apps/developer/data-platform/auditing/retrieve-audit-data)
+Learn more in [Dataverse developer guide: Retrieve the history of audited data changes](/power-apps/developer/data-platform/auditing/retrieve-audit-data).
 
 ## Delete the change history for a record
 
@@ -488,10 +488,10 @@ Several features use system jobs to perform tasks automatically, including workf
   
      Resuming restarts a system job that was paused.  
   
-  > [!TIP]
-  >
-  > 1. If a system job fails, you can view the details about what steps failed and what the problems may have been.  First, open the system job record.  To display details about system job failures, move your pointer over the warning symbols.  
-  > 2. To view system job failures in a format that you can print or copy and paste, select the **Print** button.  
+> [!TIP]
+>
+> 1. If a system job fails, you can view the details about what steps failed and what the problems may have been.  First, open the system job record.  To display details about system job failures, move your pointer over the warning symbols.  
+> 2. To view system job failures in a format that you can print or copy and paste, select the **Print** button.  
   
 > [!NOTE]
 > You can't make changes to the status of a system job that has been completed or canceled.
@@ -504,7 +504,7 @@ Several features use system jobs to perform tasks automatically, including workf
 
 2. Select **Settings** > **Data management** > **Bulk deletion**.
 
-Select the system job name to open details about your delete job.
+    Select the system job name to open details about your delete job.
 
 ## Access audit data using Azure Synapse Link for Dataverse
 
