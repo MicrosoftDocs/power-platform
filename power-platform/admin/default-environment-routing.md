@@ -3,7 +3,7 @@ title: Environment routing
 description: Learn how to use the environment routing governance feature. 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/09/2025
+ms.date: 01/10/2025
 author: akadrno
 ms.author: kauguillard 
 ms.reviewer: sericks
@@ -50,7 +50,7 @@ Understand that environment routing is a tenant-level, admin setting that:
 
 The **Environment routing** setting is turned off by default and must be turned on using the Power Platform admin center&mdash;both the classic admin center or the new admin center&mdash;or you can use PowerShell.
 
-#### [Classic admin center](#tab/ppac)
+#### [Classic admin center](#tab/classic)
 
 1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select **Settings**.
 1. On the **Tenant settings** page, select **Environment routing**.
@@ -58,7 +58,7 @@ The **Environment routing** setting is turned off by default and must be turned 
 1. In the **Apply routing to** section, selecting the **everyone** option routes all makers into existing or new personal developer environments. Optionally, admins can select a security group to limit routing only to the member makers of the configured security group. For more information, see [Configure security groups](../enterprise-templates/finance/sap-procurement/administer/configure-security-groups.md).
 1. (Optional) Select an environment group, to which the newly created developer environments are automatically assigned. This environment group inherits all the defined environment group rules. For more information, see [Environments groups](environment-groups.md).
 
-#### [New admin center](#tab/ppac)
+#### [New admin center](#tab/new)
 
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane [Power Platform admin center](https://admin.powerplatform.microsoft.com/manage/environments), select **Tenant settings** [Power Platform admin center](https://admin.powerplatform.microsoft.com/manage/tenantsettings) .
