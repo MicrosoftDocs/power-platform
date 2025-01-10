@@ -4,7 +4,7 @@ description: Learn how to turn on copilots and generative AI features.
 author: amchern
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 12/05/2024
+ms.date: 01/10/2025
 ms.subservice: admin
 ms.author: amchern
 ms.reviewer: sericks
@@ -52,7 +52,7 @@ The following table lists the regions where your Power Platform or Dynamics 365 
 | United Kingdom | In region*, Spain, Sweden or Switzerland | United States |
 | Government cloud (GCC, GCC High) | In region* | United States |
 
-\*In region means within the geographical region of your Power Platform or Dynamics 365 environment
+\*In region means within the geographical region of your Power Platform or Dynamics 365 environment.
 
 \**If your Power Platform and Dynamics 365 environments are hosted in the EU Data Boundary, we use an Azure OpenAI endpoint in the same boundary.
 
