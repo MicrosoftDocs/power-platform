@@ -16,7 +16,7 @@ When SharePoint integration access is needed to the Dataverse `SharePoint Docume
 
 ## Create an Azure Application with SharePoint permissions
 
-For more information see [Azure Quickstart Register App](
+The first step is to create an App registration with an API permission to SharePoint. For more information see [Azure Quickstart Register App](
 https://learn.microsoft.com/entra/identity-platform/quickstart-register-app?tabs=certificate) and [SharePoint access via Azure AD App-Only](https://learn.microsoft.com/sharepoint/dev/solution-guidance/security-apponly-azuread).
 
 1. Open [Microsoft Azure](https://portal.azure.com/#home)
@@ -47,6 +47,8 @@ https://learn.microsoft.com/entra/identity-platform/quickstart-register-app?tabs
 
 ## Setup Federated Credential
 
+Next step is to create a Federated creditial for the app registration. For more information see [Configure an application for federated identity credential](https://learn.microsoft.com/entra/workload-id/workload-identity-federation-config-app-trust-managed-identity?tabs=microsoft-entra-admin-center).
+
 1. Open [Microsoft Azure](https://portal.azure.com/#home)
 
 1. Select **Microsoft Entra ID** button
@@ -76,6 +78,8 @@ https://learn.microsoft.com/entra/identity-platform/quickstart-register-app?tabs
 
 ## Setup Managed Identities in Dataverse
 
+Final step is to create mananged identity records in Dataverse. For more information see [Setup Dataverse Managed Identities](https://learn.microsoft.com/power-platform/admin/set-up-managed-identity).
+
 ### Add record in **Managed Identities** table
 
 First insert into the [`managedidentities`](https://learn.microsoft.com/power-apps/developer/data-platform/reference/entities/managedidentity) table using values from the table.
@@ -93,11 +97,11 @@ An example using POST:
 - Body: 
   ```json
   {
-  "applicationid": "00000000-0000-0000-0000-000000000000",
-  "managedidentityid": "00000000-0000-0000-0000-000000000000",
+  "applicationid": "<<appId>>",
+  "managedidentityid": "<<newGuid>",
   "credentialsource": 2,
   "subjectscope": 1,
-  "tenantid": "00000000-0000-0000-0000-000000000000"
+  "tenantid": "<<tenantId>>"
   }
   ```
 
@@ -117,10 +121,10 @@ An example using POST:
 - Body:
   ```json
   {
-  "sharepointmanagedidentityid": "00000000-0000-0000-0000-000000000000",
+  "sharepointmanagedidentityid": "<<newGuid>>",
   "uniquename": "msft_ppmiforsharepointauth",
   "name": "PPMI For SharePoint Auth",
-  "ManagedIdentity@odata.bind": "/managedidentities(00000000-0000-0000-0000-000000000000)"
+  "ManagedIdentity@odata.bind": "/managedidentities(<<managedIdentityId>>)"
   }
   ```
 
