@@ -10,9 +10,10 @@ contributors:
   - tverhasselt
   - ryanb58
   - Wrighttyler
+  - shanep
 ms.reviewer: ellenwehrle
 ms.topic: conceptual
-ms.date: 04/23/2024
+ms.date: 1/8/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -22,11 +23,6 @@ ms.subservice: solution-templates
 
 The SAP Purchase Order Management app is part of the SAP Procurement solution for Microsoft Power Platform. It allows you to do several functions in SAP quicker and easier than using SAP GUI. You can search for, view, and change an existing purchase order (PO), or create a new PO.
 
-## Watch the demo
-
-Watch the demo to see how you can manage your SAP PO data using the SAP Purchase Order Management app.
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RW18zOb]
 
 ## View a purchase order
 
@@ -40,33 +36,33 @@ You have three options for viewing a purchase order:
 
 ### Enter a purchase order number
 
-If you know the purchase order number, you can enter it in the _Search purchase order number_ field.
+If you know the purchase order number, you can enter it in the _Search Purchase Orders_ field and select **Search**.
 
 ### Select a recent purchase order
 
-You can select a recently viewed PO from the _Select recent purchase order_ drop-down list. Choose a _purchase order_ from the list to load onto your screen.
+You can select a recently viewed PO from the _Recently Searched Purchase Orders_ list. Select a _purchase order_ from the list to load onto your screen.
 
 ### Search for a purchase order
 
 If you haven't interacted with the purchase order, and you don't know the exact number, you can search for a PO.
 
-1. Select the **funnel** to open the purchase order search screen. On the screen, you can search by entering information in either the _Order number_, _Vendor_, or _Created from/Created to_ field or any combination of the fields.
+1. Select **Search Purchase Orders** to open the purchase order search screen. On the screen, you can search by entering information in either the _Order number_, _Vendor Number_, or _Created from/Created to_ field or any combination of the fields.
 
    :::image type="content" source="media/purchase-order-management/search-po.png" alt-text="The purchase order search screen.":::
 
 1. Enter your selection criteria in the fields.
 1. Select **Search** to display your results.
-1. Select the _PO_ you would like to see displayed on the PO overview screen.
+1. Select the _PO_ from the search results you would like to see displayed.
 
 ## Create a purchase order
 
 You can create a new purchase order:
 
-1. Select **Create**.
+1. Select **New Purchase Order**.
 
 1. Enter a _vendor number_.
 
-1. Select the **arrow** next to the vendor number to determine the vendor name.
+1. Select **Search** next to the vendor number to determine the vendor name.
 
 1. Select the appropriate _purchasing organization_ from the drop-down list.
 
@@ -76,37 +72,31 @@ You can create a new purchase order:
 
 1. Select the appropriate _currency_ from the drop-down list.
 
-## Add a line item to a purchase order
+1. Optionally provide header text.
 
-1. Select **+ Add** at the Items level.
+1. Select **Next**.
 
-1. View the new purchase order item details page.
+## Add line items to a purchase order
 
 1. Select your _location_ (plant).
 
-1. You can add the line item one of two ways:
+1. Specify a material number. You can do this in one of two ways:
 
     - Enter a known _material number_.
-    - Search for a material. Select the **filter** symbol to open the material search page so you can search by _material number_, _description_, _material type_, or _location (plant)_.
+    - Search for a material. Select **Go to advanced search** to open the material search page so you can search by _material number_, _description_, _material type_, or _location (plant)_.
 
-### Example
+1. Specify the _Quantity_ and _Unit price_.
 
-Here is an example of a partial material number search within a location.
+1. Select **Add Line Item**
 
- 1. Select **material number** to search for a material.
- 1. Select a _material_ from the drop-down list to populate that data into the new purchase order item detail screen.
+1. Continue to add additional line items until complete.
 
- 1. Enter the _quantity_ and the _unit price_. Performing the material search and selecting the material prepopulates the Unit field.
 
- 1. View the total automatically calculated based on the quantity multiplied by the unit price.
+## Review and Submit Purchase Order
 
- 1. Select **Done** to add this line item to the purchase order.
+1. Select **Next** after adding all line items.
 
-### Add, cancel, or save the purchase order
-
-- Select **+ Add** for additional line items or select **Cancel** if you don't want to keep the purchase order. Selecting _cancel_ removes everything.
-
-- Select **Save** when you're finished. When you select _Save_, the purchase order data will be saved to SAP and the SAP document number will appear in the upper left corner.
+1. Review the Purchase Order details and select **Submit**.
 
 ## Additional functionality
 
@@ -114,24 +104,23 @@ When you load an existing purchase order, you have the ability to edit or approv
 
 ### Edit a purchase order
 
-If you select **Edit**, you're able to:
+If you select **Edit Purchase Order**, you're able to:
 
 - Change values
 - Add line items
-- Delete unwanted line items. To delete an unwanted line item, select the **check box** on the left side of the line item, and select **Delete**. You can also copy an existing line item by selecting it and selecting **Copy**.
+- Delete unwanted line items. To delete an unwanted line item, select a line item and then select **Delete**. You can also copy an existing line item by selecting it and selecting **Copy**.
 
-- If you want to edit a line, select the **Edit** link at the right side of the line item under _Details_.
+- If you want to edit a line item, select the line item and then select **Edit**.
 
 ### Additional items functionality
 
-- You can sort column headings by ascending or descending order. To sort, select **Column Heading**. An _arrow_ will appear to show you the sort order.
+- You can sort column headings by ascending or descending order. To sort, select **Column Heading** and choose a sort order.
 
   > [!NOTE]
   >
   > The sort is done as a character string, so numbers may not be in numeric order.
 
-- You can also filter items in the _Items_ list. The filter box can be found on the right side of the Items list.
-
+- You can edit the column width of columns in the _Items_ list. Select **Column Heading** and then select **Column Width** in the drop-down list. Specify the width.
 ## Field mappings
 
 Field mappings from purchase order screen to the function module.
