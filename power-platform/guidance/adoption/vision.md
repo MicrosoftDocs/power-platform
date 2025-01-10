@@ -13,11 +13,13 @@ ms.reviewer: sericks
 
 "Why are we adopting Microsoft Power Platform?" is a common question for both businesses and technical stakeholders. If the answer is, "Our board (or C-level executives) told us to use low code," it might be more difficult for those businesses to achieve their expected outcomes. Similarly, organizations that start their adoption journey with a viewpoint focused on governance and control often take longer to reach success than organizations that start their journey with commitment and a shared purpose for why low code is important to the organization. 
 
-This article helps you craft an emergent vision, focus areas, and key success measures for Power Platform adoption in your organization.​ Understanding the vision and objectives helps you achieve positive business outcomes and alignment with your organizational strategy. 
+Digital transformation is largely nontechnical, focusing on cultural, organizational, and process changes, and this guidance covers those important aspects to ensure a successful transformation. This article helps you craft an initial vision, focus areas, and key success measures for Power Platform adoption in your organization. Understanding the vision and objectives helps you achieve positive business outcomes and alignment with your organizational strategy. 
 
-## Motivation
+## A structured approach to creating your Power Platform adoption vision
 
-Power Platform adoption can drive various business transformations. Several motivations likely apply at the same time. The goal of the following table is to list common goals, reasons, and methods and to help generate ideas about which goals are relevant to your organization. From there, you can mix and match the components to create cohesive and comprehensive vision statements that align with multiple goals, reasons, and methods. Your Power Platform adoption team should meet with the stakeholders, executives, and business leaders and discuss which motivations can help your business's cloud adoption.
+Power Platform adoption can drive various business transformations. Several motivations likely apply at the same time. A vision statement is important as it provides a clear and inspiring direction for an organization, aligning efforts, and motivating stakeholders towards a common goal. Creating a vision for low code and AI is often a collaborative effort that spans several days, involving input from various team members to ensure it resonates with the entire organization. We found that effective vision statements are composed of three key aspects: goals, reasons, and methods. By sharing common vision statements, you can generate ideas and tailor a vision that aligns with your organization's unique objectives and aspirations. This structured approach ensures that your vision isn't only inspiring but also actionable, guiding your team towards successful digital transformation. 
+
+From this table, you can mix and match the components to create cohesive and comprehensive vision statements that align with multiple goals, reasons, and methods. Your Power Platform adoption team should meet with the stakeholders, executives, and business leaders and discuss which motivations can help your business's cloud adoption.
 
 | Common Goals | Common Reasons | Common Methods |
 | --- | --- | --- |
@@ -27,57 +29,7 @@ Power Platform adoption can drive various business transformations. Several moti
 | Automation and Efficiency: Streamline processes and increase operational efficiency. | Improve Processes: To optimize and refine business operations. | Implementing Robust Governance: Establishing strong governance practices. |
 | Increased Productivity and Accelerated Value: Enhance productivity and deliver value rapidly. | Achieve Strategic Goals: To meet long-term organizational objectives. | Ensuring Data Cleanliness and Security: Maintaining high standards for data quality and protection. |
 
-To define a Power Platform adoption vision, we use a structured model that involves crafting an emergent vision, defining focus areas and key success measures for Power Platform in your organization.​​
-
-## Identify key results
-
-Begin by identifying potential success measures for Power Platform adoption, using the collective insights of stakeholders within your organization. It's important to evaluate the success measures to ensure they align with the organizational vision and supporting strategies. Reflect on the question: If Power Platform is successful, what tangible benefits would we observe compared to the current state?
-
-Key Results are specific, measurable outcomes that indicate progress towards achieving the strategic objectives. Key results help in tracking performance and ensuring that the objectives are being met. They provide clear benchmarks for success and are often quantifiable. For example, a key result could be reducing operational costs by 15% or increasing employees that use Power Platform by 20%.
-
-Imagine Power Platform is executed brilliantly and becomes a huge success. How might things be different from now? Consider the indicators of success: how will you know you succeeded? What changes, including behaviors, would signify success? For instance, you might observe reduced third-party license spend, increased business areas building their own solutions, and a reduced IT development backlog. Reflect on the potential shifts in behavior within your team, division, and organization. For example, business departments might start seeing IT as enablers and consult IT in their decisions on tools to use, or might use Power Platform to solve their own problems. Identify the current challenges or issues and explore the opportunities that might arise from addressing them. These insights inform your success measures.
-
-Here are some examples for measurable key results:
-
-- Cultivate a low-code first mindset among employees, with ___% of employees trained and skilled in low-code development.
-- Enable citizen developers through a standard onboarding process and training, increasing IT capacity by ___% and decreasing time to value by ___%. 
-- Achieve ___% increase in automated processes year over year. 
-
-Review [common themes for adopting Power Platform](common-vision/vision-overview.md) to get more inspiration for measurable key results based on why you're adopting Power Platform.
-
-### Aligning to organization direction
-
-Aligning Power Platform adoption with the organizational direction involves a strategic approach to ensure that the platform's capabilities are fully used to support the company's overall goals and objectives. 
-
-It's important to understand your organization's vision, mission, and strategic goals. Engage with key stakeholders, including executives and department heads, to gather insights into the long-term objectives and priorities of the organization. By doing so, you can ensure that the Power Platform strategy aligns with the broader organizational direction.
-
-## Discover objectives
-
-Proceed to discover the top themes that drive this success. Discuss the important aspects that must be addressed to ensure the desired outcomes. Understanding the underlying reasons for these themes provide a solid foundation to ensure success.​
-
-Objectives are the key themes or focus areas that the strategy aims to achieve. They're broad, overarching goals that align with the organizational vision and priorities. Objectives provide direction and set the stage for the initiatives and key results. For example, an objective might be to enhance employee engagement or improve operational efficiency
-
-Once the objectives are defined, the next step is to create a detailed roadmap that outlines the necessary steps to achieve these objectives. This roadmap should include setting milestones, timelines, and assigning responsibilities for each initiative. It's important to ensure that the roadmap remains flexible to accommodate changes and adjustments based on feedback and evolving business needs. By following this structured approach, we can effectively align our Power Platform strategy with the organizational direction and ensure successful implementation.
-
-Here are some examples for objectives:
-
-- Develop a comprehensive data governance framework that ensures data quality, security, and compliance with relevant regulations 
-- Establish an inclusive culture of innovation and experimentation 
-- Create a culture of collaboration that drives employee satisfaction and tangible outcomes 
-
-Review [common themes for adopting Power Platform](common-vision/vision-overview.md) to get more inspiration for objectives based on why you're adopting Power Platform.
-
-## Define initiatives
-
-Next, outline the initiatives that need to be implemented to achieve the identified success measures. Consider actions required in the immediate term, and actions planned for the next year and the following three years. Planning initiatives includes setting milestones, timelines, and assigning responsibilities for each initiative. A clear roadmap helps facilitate the execution these initiatives.
-
-Initiatives are the specific actions or projects that need to be implemented to achieve the objectives. They outline what needs to be done in the immediate term, and in the next year and three years. Initiatives are actionable steps that drive progress towards the key results and objectives. Examples of initiatives might include launching a new customer loyalty program or implementing a new IT system.
-
-Here are some examples for initiatives:
-
-- Develop and publish a catalog of reusable app templates & components to help makers build with a reliable, reusable toolkit. 
-- Identify champion candidates and create incentives for makers, champions, and departments to participate in your internal Power Platform Champions program.
-- Create a Maker Portal with onboarding collateral, development guidelines, self-guided learning, and success stories.
+Creating a vision for low-code adoption involves a structured framework that ensures alignment with organizational goals and drives successful implementation. The framework begins with crafting a clear and inspiring vision that encapsulates the desired future state of low-code adoption within the organization. This vision serves as a guiding beacon, providing direction and motivation for the team. Next, the focus shifts to defining specific objectives that align with the vision. These objectives represent the key themes and focus areas that need to be achieved to realize the vision. Once the objectives are established, measurable key results are identified to track progress and ensure that the objectives are being met. These key results provide clear benchmarks for success and help in monitoring performance. Finally, initiatives are outlined to deliver the key results and objectives. These initiatives are actionable steps and projects that drive progress towards the vision, ensuring that the low-code adoption strategy is both comprehensive and actionable. By following this framework, organizations can effectively align their low-code adoption efforts with their strategic goals, fostering innovation and driving business value. 
 
 ## Craft a vision statement
 
@@ -162,6 +114,56 @@ The goal of the example vision statements is to help generate ideas about which 
 - **Why:** To drive business value and achieve strategic goals
 - **Method:** By ensuring data cleanliness and security
 - **Vision Statement:** "Boost productivity and accelerate value delivery by ensuring data cleanliness and security to drive business value and achieve strategic goals."
+
+## Identify key results
+
+Begin by identifying potential success measures for Power Platform adoption, using the collective insights of stakeholders within your organization. It's important to evaluate the success measures to ensure they align with the organizational vision and supporting strategies. Reflect on the question: If Power Platform is successful, what tangible benefits would we observe compared to the current state?
+
+Key Results are specific, measurable outcomes that indicate progress towards achieving the strategic objectives. Key results help in tracking performance and ensuring that the objectives are being met. They provide clear benchmarks for success and are often quantifiable. For example, a key result could be reducing operational costs by 15% or increasing employees that use Power Platform by 20%.
+
+Imagine Power Platform is executed brilliantly and becomes a huge success. How might things be different from now? Consider the indicators of success: how will you know you succeeded? What changes, including behaviors, would signify success? For instance, you might observe reduced third-party license spend, increased business areas building their own solutions, and a reduced IT development backlog. Reflect on the potential shifts in behavior within your team, division, and organization. For example, business departments might start seeing IT as enablers and consult IT in their decisions on tools to use, or might use Power Platform to solve their own problems. Identify the current challenges or issues and explore the opportunities that might arise from addressing them. These insights inform your success measures.
+
+Here are some examples for measurable key results:
+
+- Cultivate a low-code first mindset among employees, with ___% of employees trained and skilled in low-code development.
+- Enable citizen developers through a standard onboarding process and training, increasing IT capacity by ___% and decreasing time to value by ___%. 
+- Achieve ___% increase in automated processes year over year. 
+
+Review [common themes for adopting Power Platform](common-vision/vision-overview.md) to get more inspiration for measurable key results based on why you're adopting Power Platform.
+
+### Aligning to organization direction
+
+Aligning Power Platform adoption with the organizational direction involves a strategic approach to ensure that the platform's capabilities are fully used to support the company's overall goals and objectives. 
+
+It's important to understand your organization's vision, mission, and strategic goals. Engage with key stakeholders, including executives and department heads, to gather insights into the long-term objectives and priorities of the organization. By doing so, you can ensure that the Power Platform strategy aligns with the broader organizational direction.
+
+## Discover objectives
+
+Proceed to discover the top themes that drive this success. Discuss the important aspects that must be addressed to ensure the desired outcomes. Understanding the underlying reasons for these themes provide a solid foundation to ensure success.​
+
+Objectives are the key themes or focus areas that the strategy aims to achieve. They're broad, overarching goals that align with the organizational vision and priorities. Objectives provide direction and set the stage for the initiatives and key results. For example, an objective might be to enhance employee engagement or improve operational efficiency
+
+Once the objectives are defined, the next step is to create a detailed roadmap that outlines the necessary steps to achieve these objectives. This roadmap should include setting milestones, timelines, and assigning responsibilities for each initiative. It's important to ensure that the roadmap remains flexible to accommodate changes and adjustments based on feedback and evolving business needs. By following this structured approach, we can effectively align our Power Platform strategy with the organizational direction and ensure successful implementation.
+
+Here are some examples for objectives:
+
+- Develop a comprehensive data governance framework that ensures data quality, security, and compliance with relevant regulations 
+- Establish an inclusive culture of innovation and experimentation 
+- Create a culture of collaboration that drives employee satisfaction and tangible outcomes 
+
+Review [common themes for adopting Power Platform](common-vision/vision-overview.md) to get more inspiration for objectives based on why you're adopting Power Platform.
+
+## Define initiatives
+
+Next, outline the initiatives that need to be implemented to achieve the identified success measures. Consider actions required in the immediate term, and actions planned for the next year and the following three years. Planning initiatives includes setting milestones, timelines, and assigning responsibilities for each initiative. A clear roadmap helps facilitate the execution these initiatives.
+
+Initiatives are the specific actions or projects that need to be implemented to achieve the objectives. They outline what needs to be done in the immediate term, and in the next year and three years. Initiatives are actionable steps that drive progress towards the key results and objectives. Examples of initiatives might include launching a new customer loyalty program or implementing a new IT system.
+
+Here are some examples for initiatives:
+
+- Develop and publish a catalog of reusable app templates & components to help makers build with a reliable, reusable toolkit. 
+- Identify champion candidates and create incentives for makers, champions, and departments to participate in your internal Power Platform Champions program.
+- Create a Maker Portal with onboarding collateral, development guidelines, self-guided learning, and success stories.
 
 ## Engage stakeholders
 
