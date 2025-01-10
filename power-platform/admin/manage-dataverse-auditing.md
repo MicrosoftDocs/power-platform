@@ -3,7 +3,7 @@ title: Manage Dataverse auditing
 description: Configure Dataverse auditing to log changes to customer records, user access, operations on records, and security roles. This feature meets external and internal auditing, compliance, security, and governance policies.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/27/2024
+ms.date: 01/10/2025
 author: paulliew 
 ms.subservice: admin
 ms.author: paulliew 
@@ -41,7 +41,7 @@ Audit logs help administrators and other privileged users to answer questions li
 
 The following operations can be audited:
 
-- Audit changes at the table, column, and organization level. For example, enabling audit for an environment or a table.
+- Audit changes at the table, column, and organization level. For example, turn on audit for an environment or a table.
 - Create, update, and delete operations on records.
 - Changes to the sharing privileges of a record.
 - The N:N association or disassociation of records.
@@ -173,7 +173,7 @@ This task requires the System Administrator or System Customizer role or equival
 > [!Important]
 > The audit retention period is not available for Dynamics 365 Customer Engagement (on-premises) or for environments encrypted with a customer's own encryption key.
 >  
->  It is recommended that you use the Security page auditing option to set the retention policy. This provides the flexibility to apply the retention policy to existing logs. 
+> It's recommended that you use the Security page auditing option to set the retention policy. This provides the flexibility to apply the retention policy to existing logs. 
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) using administrator credentials.
   
@@ -275,16 +275,16 @@ This task requires the System Administrator or System Customizer role or equival
 
 <!-- this content copied from audit-data-user-activity -->
 
-System administrators or customizers can change the default audit settings for tables and for specific columns for a table.  
+System administrators or customizers can change the default audit settings for tables and for specific columns of a table.  
   
-### Turn on or off auditing for a table.  
+### Turn on or off auditing for a table 
   
 1. Sign in to [Power Apps](https://make.powerapps.com) using your System Administrator or System Customizer credentials.
 
 2. Select the environment for which you want to configure auditing.
 
    > [!NOTE]
-   > We recommend that you manage the audit configuration as part of a solution. This allows you to easily find your customizations, apply your own solution published prefix, and export your solution for distribution to other environments. To learn more about solutions, see [Use a solution to customize](../alm/use-solutions-for-your-customizations.md). When using a solution, add all tables you want to configure for auditing to your solution, then perform steps 3-8 before saving and publishing your solution.
+   > We recommend that you manage the audit configuration as part of a solution. This allows you to easily find your customizations, apply your own solution published prefix, and export your solution for distribution to other environments. Learn more about solutions in [Use a solution to customize](../alm/use-solutions-for-your-customizations.md). When using a solution, add all tables you want to configure for auditing to your solution, then perform steps 3-8 before saving and publishing your solution.
 
 3. Select **Dataverse** > **Tables**.
 
@@ -298,30 +298,31 @@ System administrators or customizers can change the default audit settings for t
 
 7. Expand **Advanced options**.
 
-8. Select the **Audit changes to its data** checkbox to turn on audit for the table.
+8. Select the **Audit changes to its data** checkbox to turn on auditing for the table.
 
    :::image type="content" source="media/dataverse-audit-changes-to-data.png" alt-text="Select Audit changes to its data":::
 
-  or 
-  Un-select the **Audit changes to its data** checkbox to turn off audit for the table.
+    -or-
+  
+    Clear the **Audit changes to its data** checkbox to turn off auditing for the table.
 
 10. Select **Save**.
 
-   If you have turned on the **Read Logs** in the environment's audit settings, you'll need to turn on the **Single record auditing. Log a record when opened** and **Multiple record auditing. Log all records displayed on an opened page** auditing settings to see the read audit logs from this table. Learn more at [Activity logging](/power-platform/admin/enable-use-comprehensive-auditing).
+    If you have turned on the **Read Logs** in the environment's audit settings, you'll need to turn on the **Single record auditing. Log a record when opened** and **Multiple record auditing. Log all records displayed on an opened page** auditing settings to see the read audit logs from this table. Learn more at [Activity logging](/power-platform/admin/enable-use-comprehensive-auditing).
    
 11. Publish the customization. To publish for a single table, choose the table, such as Account, and then select **Publish** on the toolbar.  
   
-### Turn on or off auditing for specific column on a table
+### Turn on or off auditing for a specific column on a table
   
 1. Under the table for which you want to turn on auditing with specific columns, select **Columns**.  
   
-2. To turn on or off auditing for a single column, open the column and expand the **Advanced options** in the **General** section, select or unselect the **Enable auditing** option.   
+2. To turn on or off auditing for a single column, open the column and expand the **Advanced options** in the **General** section, and then select or clear the **Enable auditing** option.   
   
 3. Select **Save**.  
   
-4. Publish the customization. To publish for a single table, choose the table, such as Account, and then select **Publish** on the Actions toolbar.  
+4. Publish the customization. To publish for a single table, choose the table, such as Account, and then select **Publish** on the toolbar.  
 
-More information: [Dataverse developer guide: Configure auditing > Configure tables and columns](/power-apps/developer/data-platform/auditing/configure#configure-tables-and-columns)
+Learn more in [Dataverse developer guide: Configure auditing > Configure tables and columns](/power-apps/developer/data-platform/auditing/configure#configure-tables-and-columns).
 
 ## Use the Audit History in a model-driven app
 
@@ -345,22 +346,22 @@ The Audit Summary view is a comprehensive list of all audit logs in an environme
 
  Users must have the View Audit Summary privilege to see the Audit Summary view.
 
-There are 2 ways to get to the Audit Summary page:
-1. From the environment's **Apps** menu, select the **Power Platform Environment Settings** app, or
-1. From the app, select the **Settings** icon on the banner, and select **Advanced Settings**, select **System > Auditing > Audit Summary view**.
+There are two ways to get to the **Audit Summary** page:
+- From the environment's **Apps** menu, select the **Power Platform Environment Settings** app
+- From the app, select the **Settings** icon on the banner, select **Advanced Settings**, and select **System > Auditing > Audit Summary view**.
 
   > [!NOTE]
-  > The **Record** column filter does not work and will be removed in the future. The filter options "Equals" and "Does not equal" of the **Entity** column filter do not show any table values. To filter by entity, you can use the "Contains" option and by entering the table name. 
+  > The **Record** column filter doesn't work and will be removed in the future. The filter options **Equals** and **Does not equal** of the **Entity** column filter don't show any table values. To filter by entity, you can use the **Contains** option and enter the table name. 
 
 ## Delete audit logs
 
-6. In the Auditing card, select **Delete Logs**.
+1. In the Auditing card, select **Delete Logs**.
 
-7. Select **View Audit Logs**.
+1. Select **View Audit Logs**.
 
    :::image type="content" source="media/dataverse-audit-select-view-audit-logs.png" alt-text="Select Delete logs":::
 
-8. Use the **Enable/Disable** **Filters** option to narrow down the list of audit records needed to answer your question. You can apply several filters at once.
+1. Use the **Enable/Disable** **Filters** option to narrow down the list of audit records needed to answer your question. You can apply several filters at once.
 
    :::image type="content" source="media/dataverse-audit-select-enable-disable-filters.png" alt-text="Select Enable/Disable Filters":::
 
