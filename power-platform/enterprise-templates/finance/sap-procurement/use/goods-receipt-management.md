@@ -10,9 +10,10 @@ contributors:
 - tverhasselt
 - ryanb58
 - Wrighttyler
+- shanep
 ms.reviewer: ellenwehrle
 ms.topic: conceptual
-ms.date: 08/14/2023
+ms.date: 1/8/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -28,13 +29,13 @@ The SAP Goods Receipt Management app is part of the SAP Procurement solution for
 
 You have three options for viewing a goods receipt:
 
-- Enter a known goods receipt number.
+- Enter a known goods receipt number and fiscal year.
 - Select a recent goods receipt that you have interacted with.
-- Search for a goods receipt based on vendor, purchase order, and date range.
+- Search for a goods receipt based on vendor, purchase order, material, and date range.
 
 ### Enter a goods receipt
 
-If you know the goods receipt number of the material document you want to view, you can type it in the _Search goods receipt number_ field.
+If you know the goods receipt number of the material document you want to view, you can type it in the _Search goods receipt number_ field, select a _Fiscal Year_ and select **Search**.
 
 ### Select a goods receipt
 
@@ -42,9 +43,9 @@ You can select a recently viewed goods receipt from the _Select recent goods rec
 
 ### Search for a goods receipt
 
-If you haven't interacted with the goods receipt and you don't know the exact number, you can search for a goods receipt. Select the **funnel** to open the goods receipt search screen.
+If you haven't interacted with the goods receipt and you don't know the exact number, you can search for a goods receipt. Select the **Search Goods Receipt** button to open the goods receipt search screen.
 
-The goods receipt search screen allows you to search by any individual field or a combination of _Vendor_, _Purchase order_, _Movement type_ and _Posting date range_.
+The goods receipt search screen allows you to search by any individual field or a combination of _Vendor_, _Purchase order_, _Material_ and _Posting date range_.
 
 1. Enter your selection criteria.
 1. Select **Search** to display your results.
@@ -52,14 +53,16 @@ The goods receipt search screen allows you to search by any individual field or 
 
 ## Create a goods receipt
 
-1. Select the **Create** button.
-1. Enter a _purchase order number_.
-1. Select the right-pointing **arrow** next to the purchase order number to view:
+1. Select the **New Goods Receipt** button.
+1. Enter a _purchase order number_ and select **Search**.
+1. Confirm the retrieved purchase order and select **Next**.
+1. Adjust the line items as needed.
+    - Select a line item in the list and select **Edit**.
+    - Make adjustments and select **Update Line Item**.
+1. Select **Next** to reveiw the goods receipt.
+1. Select **Submit** to post the goods receipt.
 
-    - Vendor number and name
-    - Purchase order items
-1. Adjust the _Quantity received_ as needed.
-1. Select **Save** to post the goods receipt.
+:::image type="content" source="media/goods-receipts/sap-procure-gr-post.png" alt-text="Image of the Review Goods Receipt screen in Microsoft's SAP Procurement purchase order app for Power Platform.":::
 
 ## Field mappings
 
