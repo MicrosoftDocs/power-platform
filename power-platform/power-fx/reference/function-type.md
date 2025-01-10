@@ -1,6 +1,6 @@
 ---
-title: Type function
-description: Reference information including syntax and examples for the Type function.
+title: RecordOf and Type functions
+description: Reference information including syntax and examples for the RecordOf and Type functions.
 author: gregli-msft
 
 ms.topic: reference
@@ -17,52 +17,66 @@ contributors:
   - gregli
 ---
 
-# Type function
+# RecordOf and Type functions
 
 **Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps
 
-Returns a user defined type.
+Constructs a user defined type for use with user defined functions and untyped values.
+
+> [!IMPORTANT]
+> - This is an experimental feature.
+> - Experimental features aren't meant for production use and may have restricted functionality. These features are available before an official release so that you can get early access and provide feedback. More information: [**Understand experimental, preview, and retired features in canvas apps**](/power-apps/maker/canvas-apps/working-with-experimental-preview)
+> - The behavior that this article describes is available only when the **User-defined types** experimental feature in [**Settings &gt; Upcoming features &gt; Experimental**](/power-apps/maker/canvas-apps/working-with-experimental-preview#controlling-which-features-are-enabled) is turned on (it's off by default).
+> - Your feedback is very valuable to us. Please let us know what you think in the [**Power Apps experimental features community forum**](https://community.powerplatform.com/forums/thread/details/?threadid=c8824a08-8198-ef11-8a69-7c1e52494f33).
 
 ## Description
 
-Power Fx is a strongly typed language. The parameters and return values of built-in functions are pre-defined and usage is checked for consistency when writing a formula. You will need to provide type information when creating your own user defined functions. User defined types can also be useful with JSON payloads returned by web APIs that become untyped values.
+Every function in Power Fx defines the types of values that can be passed in as parameters and the type of the output. These types are checked when you write a formula and an error is produced if they don't agree with what is expected. This helps the editor suggest good options for what to pass into the function and helps detect errors as early as possible. 
 
-Basic types such as **Text** and **Number** can be used directly without the **Type** function. 
+When creating your own user defined functions, you will need to specify the input and output types. For simple types like [**Decimal**](../data-types.md) or [**Text**](../data-types.md), this is easy as these basic types are predefined. For more complex types, such as records or tables, you will use the **Type** function to create the type.
 
-Use the **Type** function to create a custom type made up of tables and records for:
-- Passing a table or record to a user defined function.  
-- Returning a table or record from a user defined function.
-- Converting an untyped record to a typed record for easier use and error checking.
+The **Type** function also makes untyped objects easier to work with. In conjunction with [**ParseJSON**](function-parsejson.md), [**IsType**](function-astype-istype.md), and [**AsType**](function-astype-istype.md) functions, an untyped object can be converted to a typed object in which columns no longer need to be individually typed at the point of usage.
 
-The **Type** function, and the type value it returns, can only be used in specific places such as the second argument to **ParseJSON**. In Canvas apps, the **Type** function can only be used with a named formula in **App.Formulas**.
+The **Type** function takes a *TypeSpecification* as its only argument. The simples type specification is to reference an existing type, for example `Type( Text )`. A type specification for a record or table is similar to defining a record or table with literal values, where the values are replaced by type names. For example, `{Name: "Jane"}` would be typed with `Type( {Name: Text} )`. Tables are specified with square brackets and not the [**Table**](function-table.md) function and only one record can be provided. For example, `[1,2,3]` would be typed with `Type( [Number] )`.
 
-## Type specification
+Use the **RecordOf** function to extract the record type of a table type. For example, `Type( RecordOf( Library ) )` would return the type of a single book from the library. To make a table type from a record type, wrap the record type in square brackets, for example `Type( [ Book ] )` would define a library.  **RecordOf** can only be used within the **Type** function.
 
-Types are specified in the same manner as a standard record or table, with values replaced by type names.
+The **Type** function, and the type value it returns, can only be used in specific places in Power Fx such as the second argument to **ParseJSON**. In Canvas apps, the **Type** function can be used with a named formula in [**App.Formulas**](object-app.md#formulas-property).
 
-For example, consider the following definitions:
+## Syntax
+
+**RecordOf**( *TableType* )
+
+- _TableType_ – Required. A type specification for a table.
+
+**Type**( *TypeSpecification* )
+
+- _TypeSpecification_ – Required. A type specification.
+
+## Examples
+
+Consider the following definitions in **App.Formulas**:
 
 ```powerapps-dot
-// Table of books
-bookTable = 
+Library = 
   [ { Title: "A Study in Scarlet", Author: "Sir Arthur Conan Doyle", Published: 1887 }, 
     { Title: "And Then There Were None", Author: "Agatha Christie", Published: 1939 },
     { Title: "The Marvelous Land of Oz", Author: "L. Frank Baum", Published: 1904 } ];
 
 // Type definition for a single book
-bookRecordType := Type( { Title: Text, Author: Text, Published: Number } );
+BookType := Type( { Title: Text, Author: Text, Published: Number } );
 
 // Type definition for a table of books
-bookTableType := Type( [ bookRecordType ] );
+LibraryType := Type( [ BookType ] );
 ```
 
-Notice how the actual title text `"A Study in Scarlet"` has been replaced with the type name `Text` in the type definition, a placeholder for any text value.  A parameter or variable of type `bookRecordType` can hold one of the books in `bookTable`, while `bookTableType` can hold the entire table.  With these types in place, we can define these user defined functions:
+Notice how the actual title text `"A Study in Scarlet"` has been replaced with the type name `Text` in the type specification, a placeholder for any text value.  A parameter or variable of type `BookType` can hold one of the books in `Library`, while `LibraryType` can hold the entire table.  With these types in place, we can define these user defined functions:
 
 ```powerapps-dot
-SortedBooks( books: bookTableType ): bookTableType = 
+SortedBooks( books: LibraryType ): LibraryType = 
     SortByColumns( bookTable, Author, SortOrder.Ascending, Title, SortOrder.Ascending );
 
-PublishedInLeapYear( book: bookRecordType ): Boolean = 
+PublishedInLeapYear( book: BookType ): Boolean = 
     Mod( book.Published, 4 ) = 0 And 
     (Mod( book.Published, 100 ) <> 0 Or Mod( book.Published, 400 ) = 0);
 ```
@@ -74,16 +88,6 @@ ParseJSON( "{""Title"":""Gulliver's Travels"", ""Author"": ""Jonathan Swift"", "
 )
 ```
 
-Using `bookRecordType` as the second argument ensures that the fields have the right names and data types, and also returns a strongly typed value for easier use. For example, if the field `Title` is renamed to `BookTitle` then an error will be produced. Likewise, if the Boolean value `true` is passed for the field `Published` then an error will be produced as it needs to be a number.
-
-## Syntax
-
-**Type**( *TypeSpecification* )
-
-- _TypeSpecification_ – Required. A type specification.
-
-## Examples
-
-
+Using `bookRecordType` as the second argument to **ParseJSON** ensures that the fields have the right names and data types, and also returns a strongly typed value for easier use. For example, if the field `Title` is renamed to `BookTitle` then an error will be produced. Likewise, if the Boolean value `true` is passed for the field `Published` then an error will be produced as it needs to be a number.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

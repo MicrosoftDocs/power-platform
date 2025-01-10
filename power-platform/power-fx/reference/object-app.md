@@ -180,6 +180,64 @@ Some limitations of named formulas:
 - They can't use behavior functions or otherwise cause side effects within the app. 
 - They can't create a circular reference.  Having **a = b;** and **b = a;** in the same app isn't allowed.
 
+### User defined functions
+
+> [!IMPORTANT]
+> - This is an experimental feature.
+> - Experimental features aren't meant for production use and may have restricted functionality. These features are available before an official release so that you can get early access and provide feedback. More information: [**Understand experimental, preview, and retired features in canvas apps**](/power-apps/maker/canvas-apps/working-with-experimental-preview)
+> - The behavior that this article describes is available only when the **User-defined functions** experimental feature in [**Settings &gt; Upcoming features &gt; Experimental**](/power-apps/maker/canvas-apps/working-with-experimental-preview#controlling-which-features-are-enabled) is turned on (it's off by default).
+> - Your feedback is very valuable to us. Please let us know what you think in the [**Power Apps experimental features community forum**](https://community.powerplatform.com/forums/thread/details/?threadid=c8824a08-8198-ef11-8a69-7c1e52494f33).
+
+Power Fx includes a long list of built in functions, such as **If**, **Text**, and **Set**. User defined functions enable you to write your own functions that take parameters and return a value, just as the built in functions do. You can think of user defined functions as an extension to named formulas that adds parameters and supports behavior formulas.
+
+For example, you might define a named formula that returns fiction books from a library:
+
+```powerapps-dot
+Library = [ { Title: "The Hobbit", Author: "J. R. R. Tolkien", Genre: "Fiction" },
+            { Title: "Oxford English Dictionary", Author: "Oxford University", Genre: "Reference" } ];
+
+LibraryFiction = Filter( Library, Genre = "Fiction" );
+```
+
+Without parameters, we would need to define separate named formulas for each genre. But instead, let's use a parameter:
+
+```powerapps-dot
+LibraryType := Type( [ { Title: Text, Author: Text, Genre: Text } ] );
+
+LibraryGenre( SelectedGenre: Text ): LibraryType = Filter( Library, Genre = SelectedGenre );
+```
+
+Now we can call `LibraryGenre( "Fiction" )` as well as `LibraryGenre( "Reference" )` or other genres with a single user defined function.
+
+Each parameter and the output from the user define function must be typed.  In this example, `SelectedGenre: Text` defines the first parameter to our function to be of type **Text** and `SelectedGenre` is the name of the parameter that is used in the body for the [**Filter** operation](function-filter-lookup.md). See [**Data types**](../data-types.md) for the supported type names. The [**Type** function](function-type.md) is used to create an aggregate type for our library, so that we can return a table of books from our function.
+
+Named formulas and most user defined functions do not support behavior functions, such as **Set** or **Notify**. In general, it is best to avoid updating state if you can, instead relying on functional programming patterns and allowing Power Fx to recalculate formulas as needed automatically. But, there are cases where it is unavoidable. To include behavior logic in a user defined function, wrap the body in curly braces:
+
+```powerapps-dot
+Spend( Amount: Number ) : Void = {
+    If( Amount > Savings, 
+        Error( $"{Amount} is more than available savings" ),
+        Set( Savings, Savings - Amount );
+        Set( Spent, Spent + Amount) 
+    );
+}
+```
+
+Now we can call `Spend( 12 )` to check if we have 12 in our Savings, and if so, to debit it by 12 and add 12 to the Spent variable. Note that our user defined function returns `Void`, indicating that it does not have a return value. Even though it returns Void, we can still return an Error if there is a problem, but the Error function will not stop execution and the changes to Savings and Spent if the **If** function did not prevent them from running.
+
+> [!NOTE]
+> Recursion is not yet supported in user defined functions. It is planned for a future release.
+
+### User defined types
+
+> [!IMPORTANT]
+> - This is an experimental feature.
+> - Experimental features aren't meant for production use and may have restricted functionality. These features are available before an official release so that you can get early access and provide feedback. More information: [**Understand experimental, preview, and retired features in canvas apps**](/power-apps/maker/canvas-apps/working-with-experimental-preview)
+> - The behavior that this article describes is available only when the **User-defined types** experimental feature in [**Settings &gt; Upcoming features &gt; Experimental**](/power-apps/maker/canvas-apps/working-with-experimental-preview#controlling-which-features-are-enabled) is turned on (it's off by default).
+> - Your feedback is very valuable to us. Please let us know what you think in the [**Power Apps experimental features community forum**](https://community.powerplatform.com/forums/thread/details/?threadid=c8824a08-8198-ef11-8a69-7c1e52494f33).
+
+Named formulas can be used with the [**Type**](reference/function-type.md) function to create user defined types. Use `:=` instead of `=` to define a user defined type, for example `Book := Type( { Title: Text, Author: Text } )`. See the [**Type** function](reference/function-type.md) for more information and examples.
+
 ## OnError property
 
 Use **OnError** to take action after an error has been detected.  It provides a global opportunity to intercept an error banner before it's displayed to the end user.  It can also be used to log an error with the [**Trace** function](function-trace.md) or write to a database or web service.
