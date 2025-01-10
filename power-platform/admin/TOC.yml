@@ -308,10 +308,8 @@
                       href: recover-database-space-deleting-audit-logs.md
                     - name: Audit settings
                       href: system-settings-dialog-box-auditing-tab.md
-                    - name: Audit summary view
-                      href: manage-dataverse-auditing.md#use-the-audit-summary-view
-                    - name: Tables and column audit settings
-                      href: manage-dataverse-auditing.md##turn-on-or-off-auditing-for-tables-and-columns
+                    - name: Manage Dataverse auditing
+                      href: manage-dataverse-auditing.md
                     - name: Audit security roles
                       href: audit-security-roles.md
                     - name: Access audit data using Azure Synapse Link for Dataverse
