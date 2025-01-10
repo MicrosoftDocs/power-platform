@@ -12,7 +12,7 @@ ms.reviewer: sericks
 
 # Establish a Center of Excellence with governance patterns and practices
 
-This article describes a common vision for the Power Platform - establishing a Center of Excellence (CoE) with robust governance patterns and practices. It follows a [structured framework](../vision.md) that includes defining clear objectives, measurable key results, and actionable initiatives. This article aims to guide you in creating your own vision for Power Platform adoption.
+This article describes a common vision for Power Platform - establishing a Center of Excellence (CoE) with robust governance patterns and practices. It follows a [structured framework](../vision.md) that includes defining clear objectives, measurable key results, and actionable initiatives. This article aims to guide you in creating your own vision for Power Platform adoption.
 
 ## Vision
 
@@ -71,9 +71,9 @@ Typical key results, aligned with some of the [objectives](#objectives), for est
     - Increase the use of official channels for data by ___% within six months. 
     - Improve governance and security of data across the organization, reducing risks by ___% within the next quarter. 
     - Establish a collection of secure environments and processes tailored to their purpose, with ___% compliance. 
-    - Ensure a well-understood lifecycle of data within the power platform, with ___% of data following the defined lifecycle. 
+    - Ensure a well-understood lifecycle of data within Power Platform, with ___% of data following the defined lifecycle. 
     - Implement clear, structured governance that is reportable, with ___% of governance activities documented. 
-    - Achieve zero security incidents sourced from the Power Platform. 
+    - Achieve zero security incidents sourced from Power Platform. 
     - Ensure data is fully governed, secure, and accessible in its system of record, with ___% compliance and high security and trust standards. 
     - Make data trusted and discoverable, with stewardship for reliable reuse, achieving ___% data accuracy. 
     - Standardize solutions and strengthen governance in the CoE, ensuring consistent operations, compliance, and a ___% faster delivery of results. 

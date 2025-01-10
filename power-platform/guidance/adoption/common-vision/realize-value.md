@@ -12,13 +12,13 @@ ms.reviewer: sericks
 
 # Measure value and realize return of investment
 
-This article describes a common vision for the Power Platform - measuring value and realizing return of investment. It follows a [structured framework](../vision.md) that includes defining clear objectives, measurable key results, and actionable initiatives. This article aims to guide you in creating your own vision for Power Platform adoption.
+This article describes a common vision for Power Platform - measuring value and realizing return of investment. It follows a [structured framework](../vision.md) that includes defining clear objectives, measurable key results, and actionable initiatives. This article aims to guide you in creating your own vision for Power Platform adoption.
 
 ## Vision
 
 Measuring value and realizing return on investment (ROI) is a common vision for Power Platform adoption because it ensures that the platform's initiatives are aligned with the organization's strategic goals and deliver tangible benefits. 
 
-By focusing on ROI, organizations can prioritize projects that provide the most significant impact, optimize resource allocation, and justify investments in the platform. This approach fosters a culture of accountability and continuous improvement, where success is measured not just by the completion of projects but by the value they bring to the business. Regularly tracking and reporting on ROI helps maintain transparency, build stakeholder confidence, and drive informed decision-making, ultimately leading to more effective and efficient use of the Power Platform.
+By focusing on ROI, organizations can prioritize projects that provide the most significant impact, optimize resource allocation, and justify investments in the platform. This approach fosters a culture of accountability and continuous improvement, where success is measured not just by the completion of projects but by the value they bring to the business. Regularly tracking and reporting on ROI helps maintain transparency, build stakeholder confidence, and drive informed decision-making, ultimately leading to more effective and efficient use of Power Platform.
 
 ## Objectives
 
