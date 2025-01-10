@@ -52,7 +52,13 @@ If you have turned on audit and search functionality in the BYOK environment and
 
 Similarly, if you didn’t turn on the audit or search functionalities or turned them on after your environment was encrypted with this feature, all these storages are automatically created and encrypted with the encryption key.
 
-### After migragion
+## Migration steps
+
+1. Create a new encryption key and a new enterprise policy, or use an existing key and enterprise policy. Learn more in [Create encryption key and grant access](customer-managed-key.md#create-encryption-key-and-grant-access) and [Create enterprise policy](customer-managed-key.md#create-enterprise-policy).
+1. Configure the non-BYOK or BYOK environment as a **Managed Environment**. Learn more in [Enable Managed Environment](customer-managed-key.md#enable-managed-environment-to-be-added-to-the-enterprise-policy).
+1. Add the non-BYOK or BYOK environment to the policy to the enterprise policy to encrypt data. Learn more in [Add an environment to the enterprise policy to encrypt data](customer-managed-key.md#add-an-environment-to-the-enterprise-policy-to-encrypt-data).
+
+## After migragion
 After you complete the migration, note the following:
 
 - When a BYOK environment is migrated to customer-managed key, the environment shows up in the **Environments with policies** list, and shows that it is managed by **CustomerViaMicrosoft** on the **Environment Settings\Environment encryption** page.
@@ -64,12 +70,6 @@ After you complete the migration, note the following:
 - When BYOK-enabled environments are migrated to this key management feature, the BYOK key in the Microsoft key vault is retained for at least 28 days so that support is available for restoring the environment.
 
 - In addition to having the ability to use different or multiple encryption keys for separate environments and better management of your encryption key in your own key vault, upgrading BYOK to customer-managed key opens up your environments to all other Power Platform services that use non-SQL storage. For example, Customer Insights and Analytics, larger file upload sizes, more cost effective audit storage with audit retention, elastic table services, Dataverse search, and long-term retention are available.
-
-## Migration steps
-
-1. Create a new encryption key and a new enterprise policy, or use an existing key and enterprise policy. Learn more in [Create encryption key and grant access](customer-managed-key.md#create-encryption-key-and-grant-access) and [Create enterprise policy](customer-managed-key.md#create-enterprise-policy).
-1. Configure the non-BYOK or BYOK environment as a **Managed Environment**. Learn more in [Enable Managed Environment](customer-managed-key.md#enable-managed-environment-to-be-added-to-the-enterprise-policy).
-1. Add the non-BYOK or BYOK environment to the policy to the enterprise policy to encrypt data. Learn more in [Add an environment to the enterprise policy to encrypt data](customer-managed-key.md#add-an-environment-to-the-enterprise-policy-to-encrypt-data).
 
 ## Next steps
 
