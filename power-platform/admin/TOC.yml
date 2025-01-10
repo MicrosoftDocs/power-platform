@@ -310,8 +310,8 @@
                       href: system-settings-dialog-box-auditing-tab.md
                     - name: Audit summary view
                       href: manage-dataverse-auditing.md#use-the-audit-summary-view
-                    - name: Entity and field audit settings
-                      href: manage-dataverse-auditing.md#turn-on-or-off-auditing-for-entities-and-fields
+                    - name: Tables and column audit settings
+                      href: manage-dataverse-auditing.md##turn-on-or-off-auditing-for-tables-and-columns
                     - name: Audit security roles
                       href: audit-security-roles.md
                     - name: Access audit data using Azure Synapse Link for Dataverse
