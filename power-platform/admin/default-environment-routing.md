@@ -64,6 +64,7 @@ The **Environment routing** setting is turned off by default and must be turned 
 
 #### [New admin center](#tab/new)
 
+1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Tenant settings**.
 1. On the **Tenant settings** page, select **Environment routing**.
