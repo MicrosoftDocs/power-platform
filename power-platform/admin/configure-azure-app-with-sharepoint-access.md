@@ -12,9 +12,12 @@ search.audienceType:
 ---
 # Configure Azure App for SharePoint Access
 
-When SharePoint integration access is needed from Power Automate or an API context, an Azure Application needs to be set up to grant access. Starting in March 2025, the current access is being removed to improve system protection.
+When SharePoint integration access is needed to the Dataverse `SharePoint Documents` table within a Dynamics 365 environment, an Azure Application needs to be set up to grant access. Starting in March 2025, the current access is being removed to improve system protection.
 
 ## Create an Azure Application with SharePoint permissions
+
+For more information see [Azure Quickstart Register App](
+https://learn.microsoft.com/en-us/entra/identity-platform/quickstart-register-app?tabs=certificate) and [SharePoint access via Azure AD App-Only](https://learn.microsoft.com/en-us/sharepoint/dev/solution-guidance/security-apponly-azuread).
 
 1. Open [Microsoft Azure](https://portal.azure.com/#home)
 
@@ -38,8 +41,11 @@ When SharePoint integration access is needed from Power Automate or an API conte
 1. Under **Configured permissions** select **Add a permission** button to open the **Request API permissions** panel
    1. Select **SharePoint** button
    1. Under *What type of permissions does your application require?* select button **Application permissions**
+   1. Under **Select permissions**, select **Sites.FullControl.All**
+   1. Select **Add permission** button to create the SharePoint permission
+   1. Select **Grant admin consent for <tenant-name>** button
 
-## Setup Admin Consent
+## Setup Federated Credential
 
 1. Open [Microsoft Azure](https://portal.azure.com/#home)
 
