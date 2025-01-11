@@ -26,7 +26,7 @@ Dataverse uses role-based security to group together a collection of privileges.
 ## Business units
 
 > [!TIP]
-> ![Video symbol](../admin/media/video-thumbnail-4.png "Video symbol") Check out the following video: [Modernize business units](https://www.microsoft.com/videoplayer/embed/RWOdR4). 
+> ![Video symbol](../admin/media/video-thumbnail-4.png "Video symbol") Check out the following video: [Modernize business units](https://learn-video.azurefd.net/vod/player?id=66e9e218-232d-4559-afb6-100433531b47). 
 
 
 Business units work with security roles to determine the effective security that a user has. Business units are a security modeling building block that helps in managing users and the data they can access. Business units define a security boundary. Every Dataverse database has a single root business unit.
