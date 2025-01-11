@@ -253,7 +253,7 @@ You can only select Basic-level privileges in the member's privilege inheritance
 > Since July 2024, the **Team member's privilege inheritance** attribute of a role is no longer a [managed property](../alm/use-managed-properties.md). When you import a solution that has security roles, this attribute isn't included. 
 
 ### Related information
-- [Video: Administer application users, security roles, teams, and users in the Power Platform admin center](https://www.microsoft.com/en-us/videoplayer/embed/RWJBr8)  
+- [Video: Administer application users, security roles, teams, and users in the Power Platform admin center](https://learn-video.azurefd.net/vod/player?id=5799c67e-f283-4cbd-aafa-bc38a3f53276)  
 - [Video: Check Access feature](https://youtu.be/rigZ1FvrgSY)  
 - [Predefined security roles](database-security.md#predefined-security-roles)
 
