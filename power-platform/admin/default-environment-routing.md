@@ -3,7 +3,7 @@ title: Environment routing
 description: Learn how to use the environment routing governance feature. 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/12/2024
+ms.date: 01/10/2025
 author: akadrno
 ms.author: kauguillard 
 ms.reviewer: sericks
@@ -20,7 +20,7 @@ When the **Environment routing** setting is enabled in [Power Platform Admin Cen
 
 :::image type="content" source="media/default-environment-routing/diagram-environment-routing.png" alt-text="Diagram showing how new and existing makers fit into the environment routing and environment group.":::
   
-When the feature is turned on, the selected maker type (i.e. new or existing makers), will always land into their own personal developer environment. If the maker has access to one or more existing developer environment that is not owned by them, they will be routed to a new developer environment. 
+When the feature is turned on, the selected maker type (that is, new or existing makers), are directed into their own, personal developer environment. If the maker has access to one or more existing developer environments that aren't owned by them, they're routed to a new developer environment. 
 
 Dataverse is available in developer environments, and these environments are [Managed Environments](managed-environment-overview.md) with the admin settings preconfigured according to the assigned environment group rules. Admins no longer need to worry that their makers are working in the default environment, where their work can conflict with others.
 
@@ -38,7 +38,7 @@ Understand that environment routing is a tenant-level, admin setting that:
 
 - Requires the use of Managed Environments, since all of the newly, created environments are managed. Users in a _managed_ developer environment must have premium licenses to run Power Platform assets.
 
-- A personal developer environment is automatically created for Power Apps new or existing makers (depending on the configured user type) when they go to [make.powerapps.com](https://make.powerapps.com).
+- A personal developer environment is automatically created for new or existing makers (depending on the configured user type) when accessing a supported product's maker portal.
 
 - Routed makers will land into their existing developer environment if they already have a developer environment that they own.
 
@@ -48,19 +48,32 @@ Understand that environment routing is a tenant-level, admin setting that:
 
 ## Enable the environment routing setting
 
-The **Environment routing** setting is disabled by default and must be enabled using [Power Platform admin center](https://admin.powerplatform.microsoft.com), or [PowerShell](/powershell/).
+The **Environment routing** setting is turned off by default and must be turned on using the Power Platform admin center&mdash;both the classic admin center or the new admin center&mdash;or you can use PowerShell.
 
-#### [Power Platform admin center](#tab/ppac)
+#### [Classic admin center](#tab/classic)
 
-1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select **Settings**.
+1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. In the navigation pane, select **Settings**.
+1. In the **Tenant settings** page, select **Environment routing**.
+1. In the **Set up environment routing** pane, in the **Turn on environment routing for** section, select the product portals for which you want to allow routing.
+1. In the **Apply routing to** section, select **Everyone** or select a specific security group:
+    - Selecting the **Everyone** option routes all makers into existing or new personal developer environments. 
+    - Admins can select a security group to limit routing only to the member makers of the configured security group. Learn more in [Configure security groups](../enterprise-templates/finance/sap-procurement/administer/configure-security-groups.md).
+1. (**Optional**) Select an environment group to which the newly created developer environments are automatically assigned. This environment group inherits all the defined environment group rules. Learn more in [Environments groups](environment-groups.md).
+1. Select **Save**.
+
+#### [New admin center](#tab/new)
+
+1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Tenant settings**.
 1. On the **Tenant settings** page, select **Environment routing**.
-1. In the **Environment routing** pane, turn on the **Create personal developer environments for makers** option.
-1. Select the desired user type to include in routing. The **All Makers** option routes all Power Apps makers into existing or new personal developer environments. The **New Makers** option routes new makers only.
-1. (Optional) Select an environment group, to which the newly created developer environments are automatically assigned. This environment group inherits all the defined environment group rules. For more information, see [Environments groups](environment-groups.md).
-1. (Optional) Admins can select a security group to limit routing only to the member makers of the configured security group. For more information, see [Configure security groups](../enterprise-templates/finance/sap-procurement/administer/configure-security-groups.md).
-
-    :::image type="content" source="media/default-environment-routing/environment-routing.png" alt-text="Screenshot that shows where various Environment routing options in Tenant settings are located." lightbox="media/default-environment-routing/environment-routing.png":::
-
+1. In the **Set up environment routing** pane, in the **Turn on environment routing for** section, select the product portals for which you want to allow routing.
+1. In the **Apply routing to** section, select **Everyone** or select a specific security group:
+    - Selecting the **Everyone** option routes all makers into existing or new personal, developer environments.
+    - Admins can select a security group to limit routing only to the member makers of the configured security group. Learn more in [Configure security groups](../enterprise-templates/finance/sap-procurement/administer/configure-security-groups.md).
+1. (**Optional**) Select an environment group to which the newly created developer environments are automatically assigned. This environment group inherits all the defined environment group rules. Learn more in [Environments groups](environment-groups.md).
+1. Select **Save**.
 
 #### [PowerShell](#tab/powershell)
 

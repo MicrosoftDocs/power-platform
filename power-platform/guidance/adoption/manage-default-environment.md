@@ -5,10 +5,11 @@ author: rranjit83
 ms.author: rranjit
 ms.reviewer: sericks
 ms.topic: how-to
-ms.date: 06/13/2024
+ms.date: 01/10/2024
 ms.custom: bap-template
 ms.subservice: guidance
 contributors:
+- matapg007 
 - iscohen-microsoft
 ---
 
@@ -158,20 +159,14 @@ Keep these key points in mind:
 
 ## Backup and restoration of the default environment
 
-Like every other environment type (sandbox, production, developer), the default environment is archived automatically. However, you can request a restore for the default environment. If you need to restore a backup, contact Microsoft Support. They can restore your environment data to a [Support environment](/power-platform/admin/support-environment). Once that restore is complete, you can view and export data as you need. Keep in mind, that when you restore the default environment, you might also be restoring unused or orphaned apps and flows that were removed during cleanup. More information: [Backup and restore environments](/power-platform/admin/backup-restore-environments).
+Like every other environment type (sandbox, production, developer), the default environment is archived automatically. If you need to restore a backup you can restore from the default environment to any developer environment only in the Power Platform admin center. Once the restore is complete, you can view and export data as you need. Keep in mind, that when you restore the default environment, you might also be restoring unused or orphaned apps and flows that were removed during cleanup. Learn more in [Backup and restore environments](/power-platform/admin/backup-restore-environments).
 
-### See also
+### Related content
 
-[Secure the default environment](secure-default-environment.md)
-
-[Power Platform for Admins - Connectors](/connectors/powerplatformforadmins/)
-
-[Power Automate Management - Connectors](/connectors/flowmanagement/)
-
-[Power Automate for Admins - Connectors](/connectors/microsoftflowforadmins/)
-
-[Power Apps for Admins - Connectors](/connectors/powerappsforadmins/)
-
-[Programmability and Extensibility - PowerShell - Getting started](/power-platform/admin/powershell-getting-started)
-
-[Support environments and consent to access customer data](/power-platform/admin/support-environment)
+- [Secure the default environment](secure-default-environment.md)
+- [Power Platform for Admins - Connectors](/connectors/powerplatformforadmins/)
+- [Power Automate Management - Connectors](/connectors/flowmanagement/)
+- [Power Automate for Admins - Connectors](/connectors/microsoftflowforadmins/)
+- [Power Apps for Admins - Connectors](/connectors/powerappsforadmins/)
+- [Programmability and Extensibility - PowerShell - Getting started](/power-platform/admin/powershell-getting-started)
+- [Support environments and consent to access customer data](/power-platform/admin/support-environment)
