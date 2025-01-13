@@ -15,7 +15,7 @@ ms.date: 1/14/2025
 
 The **Deployment** page in the Power Platform admin center provides a streamlined experience to help administrators navigate the complexities of managing Power Platform application lifecycle management (ALM) workloads, including managing pipelines deployments at enterprise scale. Admins have visibility to all the deployments in their tenant and can approve deployment requests and troubleshoot issues.
 
-:::image type="content" source="media/deployment-page-ppac.png" alt-text="Deployment page in the Power Platform admin center":::
+:::image type="content" source="media/deployment-page-ppac.png" alt-text="Deployment page in the Power Platform admin center" lightbox="media/deployment-page-ppac.png":::
 
 > [!IMPORTANT]
 >
