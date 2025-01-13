@@ -4,7 +4,7 @@ description: Follow these steps to set up pay-as-you-go plans with an Azure subs
 author: amiyapatr-zz
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 12/01/2024
+ms.date: 01/13/2025
 ms.subservice: admin
 ms.author: ampatra 
 ms.reviewer: sericks
@@ -90,10 +90,12 @@ To create a billing plan, link environments to it, and add Azure subscription de
 1. select **Save**. 
 
 ---
-## Create billing Plan for Microsoft 365 copilot chat
-Microsoft 365 users without a paid Copilot license can now access Copilot agents by enabling a pay-as-you-go (Pay-G) meter. Setting up a billing plan for Microsoft Copilot agents differs slightly from the standard billing plan setup proces.
-To set it up:
-1. In the navigation pane, go to  **Billing > Billing plans**. The **Billing plans** page is displayed, which can also be accessed via the Microsoft 365 Admin Center .To do so In Microsoft 365 admins center select **Copilot > Settings > Copilot agent consumption meter ** .
+## Create billing plan for Microsoft 365 Copilot chat
+Microsoft 365 users without a paid Copilot license can now access Copilot agents by using a pay-as-you-go meter. Setting up a billing plan for Microsoft Copilot agents differs slightly from the standard billing plan setup proces.
+
+Complete the follwoing steps to set it up:
+
+1. In the navigation pane, go to  **Billing > Billing plans**. The **Billing plans** page is displayed.
 
 1. Select **New billing plan**.
 
