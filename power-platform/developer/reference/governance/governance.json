@@ -2,7 +2,7 @@
   "swagger": "2.0",
   "info": {
     "title": "Microsoft Power Platform REST API",
-    "description": "Unified API for all administrative capabilities in Microsoft Power Platform",
+    "description": "Unified API for all administrative capabilities in Microsoft Power Platform.",
     "version": "2022-03-01-preview"
   },
   "host": "api.powerplatform.com",
