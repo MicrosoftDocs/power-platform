@@ -105,6 +105,9 @@ Use the following links to view and manage proactive policies for governance and
 - [Threat detection](threat-detection.md): Protect your organization’s assets and resources with a unified detection with features like auditing.
 - [Compliance](compliance.md): Implement robust compliance measures to safeguard organizational data and ensure adherence to industry regulations with features like [Customer Lockbox](../about-lockbox.md) and [customer-managed key](../customer-managed-key.md).
 
+## Provide feedback
+Each security page has a **Feedback** button in the lower-right corner. When you select the **Feedback** button, a Microsoft survey opens, where you can provide your thoughts and suggestions about the security experience.
+
 ## Frequently asked questions (FAQs)
 
 ### How is the security score calculated?
