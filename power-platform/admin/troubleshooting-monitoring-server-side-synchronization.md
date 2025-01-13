@@ -290,14 +290,14 @@ The synchronization process for _email_ is a separate process, which also update
 
 ### Email Address Approved By and Test and Enable Last Attempted By
 
-As of the **9.2.2412.2** release, when a mailbox email address is approved or when it is tested and enabled, the system will record the authenticated user and time stamp of when either operation occurred. These values will be stored in the **Email Address Approved By** and **Test and Enable Last Attempted By** fields with their corresponding time stamps (**Email Address Approved On** and **Test and Enable Last Attempted On**).
+As of the **9.2.2412.2** release, when a mailbox email address is approved or when it is tested and enabled, the system will record the authenticated user and time stamp of when either operation occurred. These values will be stored in the **Email Address Approved By** and **Test and Enable Last Attempted By** columns with their corresponding time stamps (**Email Address Approved On** and **Test and Enable Last Attempted On**).
 
-However, these fields will appear empty for mailboxes whose email addresses were previously approved or were tested and enabled prior to the 9.2.2412.2 release.  
+However, these columns will appear empty for mailboxes whose email addresses were previously approved or were tested and enabled prior to the 9.2.2412.2 release.  
 
 ![image](https://github.com/user-attachments/assets/211efe68-c66f-493b-b83f-707110edc9c6)
 
 > [!NOTE]
-> Rejecting a mailbox’s email address will clear the Email Address Approved By and Email Address Approved On fields if they were previously set. You can [enable auditing](/power-platform/admin/manage-dataverse-auditing#configure-auditing-for-one-or-more-tables-and-columns-in-power-apps) on these fields to view their previous values if needed.
+> Rejecting a mailbox’s email address will clear the Email Address Approved By and Email Address Approved On columns if they were previously set. You can [enable auditing](/power-platform/admin/manage-dataverse-auditing#configure-auditing-for-one-or-more-tables-and-columns-in-power-apps) on these columns to view their previous values if needed.
 
 ### See also  
 [Server-side synchronization](../admin/server-side-synchronization.md) <br />
