@@ -47,7 +47,7 @@ If an environment has already been deleted, you have a limited window of time to
 
 A cleanup mechanism in Power Platform automatically removes environments that aren't being used. After 90 days of inactivity, an environment is turned off. After 30 days, if no action is taken, the environment that was turned off is deleted. You have seven days to recover deleted environments.
 
-Only default, developer and [Dataverse for Teams environments](inactive-teams-environment.md) are affected by the activity-based automatic cleanup.
+Only default, developer, and [Dataverse for Teams environments](inactive-teams-environment.md) are affected by the activity-based automatic cleanup.
 
 ## Default environment 
 Power Platform is implementing a cleanup process for default environments that meet the following criteria:
@@ -55,14 +55,14 @@ Power Platform is implementing a cleanup process for default environments that m
 - Environments with no flows and no premium licenses are included in the cleanup.
 - Inactive, default environment admins are notified 30 days before the deletion process begins.
   
-During the deletion process, a new default environment is created without Dataverse, with an option to add Dataverse later. Once an environment is deleted, it can be recovered within the next seven days. However, note that the environment type is changed to **production** type upon restoration, as we can't overwrite the new default environment.
+During the deletion process, a new default environment is created without Dataverse, with an option to add Dataverse later. Once an environment is deleted, it can be recovered within the next seven days. However, the environment type is changed to **production** type upon restoration, as we can't overwrite the new default environment.
 
 > [!IMPORTANT]
 > You can't turn off this cleanup mechanism. However, you can review the last activity date for environments in the Power Platform admin center. 
 
 ### Timeline for unused environments
 
-The time between the first warning that the environment will be disabled to the final deletion of the environment is 37 days. Production enviroments are not subject to this timeline.
+The time between the first warning that the environment will be disabled to the final deletion of the environment is 37 days. Production environments aren't subject to this timeline.
 
 The environment's administrators and the user who created the environment are notified by email according to the schedule described in the following table.
 
