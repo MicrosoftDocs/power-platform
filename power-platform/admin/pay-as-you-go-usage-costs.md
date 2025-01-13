@@ -15,21 +15,21 @@ search.audienceType:
 ---
 # View usage and billing information
 
-Aggregated billing information is available in the Azure portal, and detailed usage drill-downs are available in the Power Platform admin center. Reporting is available for Power Apps per-app meter and Dataverse capacity add-on meters.
+Aggregated billing information is available in the Azure portal, and detailed usage drill-downs are available in the Power Platform admin center.Reporting is available for Power Platform (Power Apps per-app, Copilot Studio meter and Dataverse capacity add-on meters) as well as Microsoft 365 (Copilot Chat via Copilot Studio meter) consumptive services. 
 
 In March 2022, we will release a preview of the Power Platform requests meter. During this preview we will report on usage of Power Platform requests in the Power Platform admin center downloadable report. However, we will not bill for this usage until we reach general availability (GA) for this meter; usage will not appear in the Azure portal until then. 
 
 ### View billing information in the Azure portal
 
-All Power Platform meters are billed to Azure subscriptions. You can view the amounts that have been billed for each meter in the Azure portal using Azure Cost Management. Billed amounts are updated daily (and sometimes more frequently), but it can take up to 24 hours after usage of a Microsoft Power Platform service to show up in Azure Cost Management.
+All Power Platform and Microsoft 365 copilot meters are billed to Azure subscriptions. You can view the amounts that have been billed for each meter in the Azure portal using Azure Cost Management. Billed amounts are updated daily (and sometimes more frequently), but it can take up to 24 hours after usage of a service to show up in Azure Cost Management.
 
-Within Azure Cost Management, you can filter and view billing details by meter and/or by Azure resource. Note that each billing policy corresponds to a Power Platform account resource. So to view charges for a specific billing policy, simply filter for the Power Platform account resource of the same name.
+Within Azure Cost Management, you can filter and view billing details by meter and/or by Azure resource. Note that each billing plan corresponds to a Power Platform account resource. So to view charges for a specific billing plan, simply filter for the Power Platform account resource of the same name.
 
 :::image type="content" source="media/pay-as-you-go-billing-info-azure-portal.png" alt-text="Billing information in the Azure portal":::
 
 ### View detailed usage information in the Power Platform admin center
 
-While Azure Cost Management can show the amount that was billed for each meter and each billing policy, it won't provide a breakdown of which environments, apps, and users drove usage of the meters. For this level of information, a downloadable report is available on the **Billing policies** page in the Power Platform admin center.
+While Azure Cost Management can show the amount that was billed for each meter and each billing policy, it won't provide a breakdown of which environments, apps/agents, and users drove usage of the meters. For this level of information, a downloadable report is available on the **Billing plan** page in the Power Platform admin center.
 
 :::image type="content" source="media/pay-as-you-go-powerapps-download-reports.png" alt-text="Select Download reports":::
 
@@ -62,11 +62,13 @@ The downloadable report contains the following fields:
 
 The units of measure and the reporting frequency impact the granular billed quantity amount in both the usage report and the quantities sent to Azure.  Today, usage is reported to Azure three times per 24-hour period. 
 
-There are two types of units of measure: unique users, which are measured in numbers, and the Dataverse capacity, which is measured in gigabytes.
+There are three types of units of measure: unique users, which are measured in numbers, copilot/agent usage , which is measured in messages and the Dataverse capacity, which is measured in gigabytes.
 
 For the Power Apps per-app meter, you'll see the number of unique users in the report, which will be a numeric quantity such as 15. This means that a total of 15 unique users ran at least one app or portal in a month.
 
 For Dataverse capacity add-on meters, units are in gigabytes per month, with three usage reports sent to Azure every 24 hours. In your report, you'll see capacity distribution across database, files, and logs based on your consumption. 
+
+For copilot/agents  meters, units are in messages consumed which will be a numeric quanity like 32 . This means that a total of 32 messages units have been consumed . 
 
 ## How to manage costs
 
