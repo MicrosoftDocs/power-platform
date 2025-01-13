@@ -2,7 +2,7 @@
   "swagger": "2.0",
   "info": {
     "title": "Microsoft Power Platform REST API",
-    "description": "Unified API for all administrative capabilities in Microsoft Power Platform",
+    "description": "Unified API for all administrative capabilities in Microsoft Power Platform.",
     "version": "2022-03-01-preview"
   },
   "host": "api.powerplatform.com",
@@ -16,7 +16,7 @@
           "Websites"
         ],
         "summary": "List Power Pages websites.",
-        "description": "Get a list of all the websites in your environment",
+        "description": "Get a list of all the websites in your environment.",
         "operationId": "GetWebsites",
         "produces": [
           "application/json"
@@ -36,7 +36,7 @@
           {
             "in": "query",
             "name": "api-version",
-            "description": "The API version",
+            "description": "The API version.",
             "required": true,
             "type": "string",
             "default": "2022-03-01-preview"
@@ -68,7 +68,7 @@
           "Websites"
         ],
         "summary": "Create a Power Pages website.",
-        "description": "Trigger the creation of a new website",
+        "description": "Trigger the creation of a new website.",
         "operationId": "CreateWebsite",
         "consumes": [
           "application/json"
@@ -86,7 +86,7 @@
           {
             "in": "query",
             "name": "api-version",
-            "description": "The API version",
+            "description": "The API version.",
             "required": true,
             "type": "string",
             "default": "2022-03-01-preview"
@@ -105,7 +105,7 @@
             "description": "Accepted",
             "headers": {
               "Operation-Location": {
-                "description": "Location of a resource",
+                "description": "Location of a resource.",
                 "type": "string"
               }
             }
@@ -137,7 +137,7 @@
           "Websites"
         ],
         "summary": "Get the Power Pages website details by specifying its unique identifier (ID).",
-        "description": "Get website details from Website id",
+        "description": "Get website details from the website ID.",
         "operationId": "GetWebsiteById",
         "produces": [
           "application/json"
@@ -158,7 +158,7 @@
           {
             "in": "query",
             "name": "api-version",
-            "description": "The API version",
+            "description": "The API version.",
             "required": true,
             "type": "string",
             "default": "2022-03-01-preview"
@@ -196,7 +196,7 @@
           "Websites"
         ],
         "summary": "Delete a Power Pages website.",
-        "description": "Trigger the deletion of a website by specifying the website ID",
+        "description": "Trigger the deletion of a website by specifying the website ID.",
         "operationId": "DeleteWebsite",
         "produces": [
           "application/json"
@@ -223,7 +223,7 @@
           {
             "in": "query",
             "name": "api-version",
-            "description": "The API version",
+            "description": "The API version.",
             "required": true,
             "type": "string",
             "default": "2022-03-01-preview"
@@ -234,7 +234,7 @@
             "description": "Accepted",
             "headers": {
               "Operation-Location": {
-                "description": "Location of a resource",
+                "description": "Location of a resource.",
                 "type": "string"
               }
             }
@@ -266,7 +266,7 @@
           "Websites"
         ],
         "summary": "Restart a Power Pages website.",
-        "description": "Restart the website for the given site id",
+        "description": "Restart the website for the given site ID.",
         "operationId": "RestartWebsite",
         "produces": [
           "application/json"
@@ -287,7 +287,7 @@
           {
             "in": "query",
             "name": "api-version",
-            "description": "The API version",
+            "description": "The API version.",
             "required": true,
             "type": "string",
             "default": "2022-03-01-preview"
@@ -323,8 +323,8 @@
         "tags": [
           "Websites"
         ],
-        "summary": "Stamp data model version for website.",
-        "description": "Stamp data model version for website",
+        "summary": "Stamp data model version for the website.",
+        "description": "Stamp data model version for the website.",
         "operationId": "SetPortalDataModelVersion",
         "consumes": [
           "application/json"
@@ -348,7 +348,7 @@
           {
             "in": "query",
             "name": "api-version",
-            "description": "The API version",
+            "description": "The API version.",
             "required": true,
             "type": "string",
             "default": "2022-03-01-preview"
@@ -393,7 +393,7 @@
           "Websites"
         ],
         "summary": "Stop a Power Pages website.",
-        "description": "Stop the website for the given site id",
+        "description": "Stop the website for the given site ID.",
         "operationId": "StopWebsite",
         "produces": [
           "application/json"
@@ -414,7 +414,7 @@
           {
             "in": "query",
             "name": "api-version",
-            "description": "The API version",
+            "description": "The API version.",
             "required": true,
             "type": "string",
             "default": "2022-03-01-preview"
@@ -451,7 +451,7 @@
           "Websites"
         ],
         "summary": "Start a Power Pages website.",
-        "description": "Start the website for the given site id",
+        "description": "Start the website for the given site ID.",
         "operationId": "StartWebsite",
         "produces": [
           "application/json"
@@ -472,7 +472,7 @@
           {
             "in": "query",
             "name": "api-version",
-            "description": "The API version",
+            "description": "The API version.",
             "required": true,
             "type": "string",
             "default": "2022-03-01-preview"
@@ -508,8 +508,8 @@
         "tags": [
           "Websites"
         ],
-        "summary": "Enable Web Application Firewall on a Power Pages website.",
-        "description": "Enable Web Application Firewall on the given website",
+        "summary": "Enable a web application firewall on a Power Pages website.",
+        "description": "Enable a web application firewall on the given website.",
         "operationId": "EnableWAF",
         "produces": [
           "application/json"
@@ -530,7 +530,7 @@
           {
             "in": "query",
             "name": "api-version",
-            "description": "The API version",
+            "description": "The API version.",
             "required": true,
             "type": "string",
             "default": "2022-03-01-preview"
@@ -541,7 +541,7 @@
             "description": "Accepted",
             "headers": {
               "Operation-Location": {
-                "description": "Location of a resource",
+                "description": "Location of a resource.",
                 "type": "string"
               }
             }
@@ -578,8 +578,8 @@
         "tags": [
           "Websites"
         ],
-        "summary": "Get the Web Application Firewall status.",
-        "description": "Get the status of Web Application Firewall associated with the given website",
+        "summary": "Get the web application firewall status.",
+        "description": "Get the status of web application firewall associated with the given website.",
         "operationId": "GetWAFStatus",
         "produces": [
           "application/json"
@@ -600,7 +600,7 @@
           {
             "in": "query",
             "name": "api-version",
-            "description": "The API version",
+            "description": "The API version.",
             "required": true,
             "type": "string",
             "default": "2022-03-01-preview"
@@ -648,16 +648,16 @@
       "properties": {
         "dataverseOrganizationId": {
           "format": "uuid",
-          "description": "Dataverse organization's unique identifier (ID)",
+          "description": "Dataverse organization's unique identifier (ID).",
           "type": "string",
           "example": "00000000-0000-0000-0000-000000000000"
         },
         "name": {
-          "description": "Name of the website",
+          "description": "Name of the website.",
           "type": "string"
         },
         "templateName": {
-          "description": "Website template name",
+          "description": "Website template name.",
           "enum": [
             "DefaultPortalTemplate",
             "PowerPortals_ProgramRegistration",
@@ -667,15 +667,15 @@
         },
         "selectedBaseLanguage": {
           "format": "int32",
-          "description": "Language unique identifier (ID) of the website - https://go.microsoft.com/fwlink/?linkid=2208135",
+          "description": "Language unique identifier (ID) of the website (see https://go.microsoft.com/fwlink/?linkid=2208135).",
           "type": "integer"
         },
         "subdomain": {
-          "description": "Subdomain for the website URL",
+          "description": "Subdomain for the website URL.",
           "type": "string"
         },
         "websiteRecordId": {
-          "description": "Dataverse record unique identifier (ID) of the website",
+          "description": "Dataverse record unique identifier (ID) of the website.",
           "type": "string"
         }
       }
@@ -704,15 +704,15 @@
           "type": "object",
           "properties": {
             "code": {
-              "description": "Error code",
+              "description": "Error code.",
               "type": "string"
             },
             "message": {
-              "description": "Error message",
+              "description": "Error message.",
               "type": "string"
             },
             "target": {
-              "description": "Target parameter",
+              "description": "Target parameter.",
               "type": "string"
             },
             "details": {
@@ -721,15 +721,15 @@
                 "type": "object",
                 "properties": {
                   "code": {
-                    "description": "Error code",
+                    "description": "Error code.",
                     "type": "string"
                   },
                   "message": {
-                    "description": "Error message",
+                    "description": "Error message.",
                     "type": "string"
                   },
                   "target": {
-                    "description": "Target parameter",
+                    "description": "Target parameter.",
                     "type": "string"
                   }
                 }
@@ -743,19 +743,19 @@
       "type": "object",
       "properties": {
         "id": {
-          "description": "Website unique identifier (ID)",
+          "description": "Website unique identifier (ID).",
           "type": "string"
         },
         "name": {
-          "description": "Website name",
+          "description": "Website name.",
           "type": "string"
         },
         "createdOn": {
-          "description": "Website creation time in the ISO 8601 UTC format",
+          "description": "Website creation time in ISO 8601 UTC format.",
           "type": "string"
         },
         "templateName": {
-          "description": "Website template name",
+          "description": "Website template name.",
           "enum": [
             "DefaultPortalTemplate",
             "PowerPortals_ProgramRegistration",
@@ -764,51 +764,51 @@
           "type": "string"
         },
         "websiteUrl": {
-          "description": "Website URL",
+          "description": "Website URL.",
           "type": "string"
         },
         "tenantId": {
-          "description": "Tenant unique identifier (ID) of the website",
+          "description": "Tenant unique identifier (ID) of the website.",
           "type": "string"
         },
         "dataverseInstanceUrl": {
-          "description": "Organization URL of the website",
+          "description": "Organization URL of the website.",
           "type": "string"
         },
         "environmentName": {
-          "description": "Environment name of the website",
+          "description": "Environment name of the website.",
           "type": "string"
         },
         "environmentId": {
-          "description": "Environment unique identifier (ID) of the website",
+          "description": "Environment unique identifier (ID) of the website.",
           "type": "string"
         },
         "dataverseOrganizationId": {
-          "description": "Organization unique identifier (ID) of the website",
+          "description": "Organization unique identifier (ID) of the website.",
           "type": "string"
         },
         "selectedBaseLanguage": {
           "format": "int32",
-          "description": "Language unique identifier (ID) of the website - https://go.microsoft.com/fwlink/?linkid=2208135",
+          "description": "Language unique identifier (ID) of the website (see https://go.microsoft.com/fwlink/?linkid=2208135).",
           "type": "integer"
         },
         "customHostNames": {
-          "description": "Custom hostnames added for the website",
+          "description": "Custom host names added for the website.",
           "type": "array",
           "items": {
             "type": "string"
           }
         },
         "websiteRecordId": {
-          "description": "Dataverse record unique identifier (ID) of the website",
+          "description": "Dataverse record unique identifier (ID) of the website.",
           "type": "string"
         },
         "subdomain": {
-          "description": "Subdomain of website",
+          "description": "Subdomain of the website.",
           "type": "string"
         },
         "packageInstallStatus": {
-          "description": "Package installation status of the website",
+          "description": "Package installation status of the website.",
           "enum": [
             "None",
             "Installed",
@@ -826,7 +826,7 @@
           "type": "string"
         },
         "type": {
-          "description": "Application type of the website",
+          "description": "Application type of the website.",
           "enum": [
             "Trial",
             "Production"
@@ -835,36 +835,36 @@
         },
         "trialExpiringInDays": {
           "format": "int32",
-          "description": "Time (in days) to expiration of the website",
+          "description": "Time (in days) to expiration of the website.",
           "type": "integer"
         },
         "suspendedWebsiteDeletingInDays": {
           "format": "int32",
-          "description": "Time (in days) to website deletion, if suspended",
+          "description": "Time (in days) to website deletion (if suspended).",
           "type": "integer"
         },
         "packageVersion": {
-          "description": "Package version of the website",
+          "description": "Package version of the website.",
           "type": "string"
         },
         "isEarlyUpgradeEnabled": {
-          "description": "Website eligibility for early upgrade",
+          "description": "Website eligibility for early upgrade.",
           "type": "boolean"
         },
         "isCustomErrorEnabled": {
-          "description": "Custom error enablement for Website",
+          "description": "Custom error enablement for the Website.",
           "type": "boolean"
         },
         "applicationUserAadAppId": {
-          "description": "Azure Active Directory (AAD) object unique identifier (ID)",
+          "description": "Microsoft Entra ID (formerly Azure Active Directory) object unique identifier (ID).",
           "type": "string"
         },
         "ownerId": {
-          "description": "User unique identifier (ID) of the website owner",
+          "description": "User unique identifier (ID) of the website owner.",
           "type": "string"
         },
         "status": {
-          "description": "Website status",
+          "description": "Website status.",
           "enum": [
             "OperationComplete",
             "OperationInProgress",
@@ -874,7 +874,7 @@
           "type": "string"
         },
         "siteVisibility": {
-          "description": "Website visibility status",
+          "description": "Website visibility status.",
           "enum": [
             "public",
             "private"
@@ -890,13 +890,13 @@
       "type": "object",
       "properties": {
         "dataModelVersionValue": {
-          "description": "value of data model version for IsNewDataModel",
+          "description": "value of the data model version for IsNewDataModel.",
           "type": "boolean"
         }
       }
     },
     "WebApplicationFirewallStatus": {
-      "description": "Web Application Firewall status",
+      "description": "Web application firewall status.",
       "enum": [
         "None",
         "Creating",
@@ -916,7 +916,7 @@
       "scopes": {
         ".default": ".default"
       },
-      "description": "Microsoft Entra ID OAuth2"
+      "description": "Microsoft Entra ID OAuth2."
     }
   },
   "security": [
