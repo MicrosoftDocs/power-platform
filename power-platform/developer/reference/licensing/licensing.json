@@ -24,13 +24,13 @@
           {
             "in": "query",
             "name": "$top",
-            "description": "Top limit of results",
+            "description": "Top limit of results.",
             "type": "string"
           },
           {
             "in": "query",
             "name": "api-version",
-            "description": "The API version",
+            "description": "The API version.",
             "required": true,
             "type": "string",
             "default": "2022-03-01-preview"
@@ -70,7 +70,7 @@
           {
             "in": "query",
             "name": "api-version",
-            "description": "The API version",
+            "description": "The API version.",
             "required": true,
             "type": "string",
             "default": "2022-03-01-preview"
@@ -78,7 +78,7 @@
           {
             "in": "body",
             "name": "body",
-            "description": "The billing policy",
+            "description": "The billing policy.",
             "schema": {
               "$ref": "#/definitions/BillingPolicyPostRequestModel"
             }
@@ -117,14 +117,14 @@
           {
             "in": "path",
             "name": "billingPolicyId",
-            "description": "The billing policy ID",
+            "description": "The billing policy ID,",
             "required": true,
             "type": "string"
           },
           {
             "in": "query",
             "name": "api-version",
-            "description": "The API version",
+            "description": "The API version.",
             "required": true,
             "type": "string",
             "default": "2022-03-01-preview"
@@ -167,14 +167,14 @@
           {
             "in": "path",
             "name": "billingPolicyId",
-            "description": "The billing policy ID",
+            "description": "The billing policy ID.",
             "required": true,
             "type": "string"
           },
           {
             "in": "query",
             "name": "api-version",
-            "description": "The API version",
+            "description": "The API version.",
             "required": true,
             "type": "string",
             "default": "2022-03-01-preview"
@@ -182,7 +182,7 @@
           {
             "in": "body",
             "name": "body",
-            "description": "The billing policy",
+            "description": "The billing policy.",
             "schema": {
               "$ref": "#/definitions/BillingPolicyPutRequestModel"
             }
@@ -219,14 +219,14 @@
           {
             "in": "path",
             "name": "billingPolicyId",
-            "description": "The billing policy ID",
+            "description": "The billing policy ID.",
             "required": true,
             "type": "string"
           },
           {
             "in": "query",
             "name": "api-version",
-            "description": "The API version",
+            "description": "The API version.",
             "required": true,
             "type": "string",
             "default": "2022-03-01-preview"
@@ -265,14 +265,14 @@
           {
             "in": "path",
             "name": "billingPolicyId",
-            "description": "The billing policy ID",
+            "description": "The billing policy ID.",
             "required": true,
             "type": "string"
           },
           {
             "in": "query",
             "name": "api-version",
-            "description": "The API version",
+            "description": "The API version.",
             "required": true,
             "type": "string",
             "default": "2022-03-01-preview"
@@ -314,21 +314,21 @@
           {
             "in": "path",
             "name": "billingPolicyId",
-            "description": "The billing policy ID",
+            "description": "The billing policy ID.",
             "required": true,
             "type": "string"
           },
           {
             "in": "path",
             "name": "environmentId",
-            "description": "The environment ID",
+            "description": "The environment ID.",
             "required": true,
             "type": "string"
           },
           {
             "in": "query",
             "name": "api-version",
-            "description": "The API version",
+            "description": "The API version.",
             "required": true,
             "type": "string",
             "default": "2022-03-01-preview"
@@ -370,14 +370,14 @@
           {
             "in": "path",
             "name": "environmentId",
-            "description": "The environment ID",
+            "description": "The environment ID.",
             "required": true,
             "type": "string"
           },
           {
             "in": "query",
             "name": "api-version",
-            "description": "The API version",
+            "description": "The API version.",
             "required": true,
             "type": "string",
             "default": "2022-03-01-preview"
@@ -420,14 +420,14 @@
           {
             "in": "path",
             "name": "environmentId",
-            "description": "The environment ID",
+            "description": "The environment ID.",
             "required": true,
             "type": "string"
           },
           {
             "in": "query",
             "name": "api-version",
-            "description": "The API version",
+            "description": "The API version.",
             "required": true,
             "type": "string",
             "default": "2022-03-01-preview"
@@ -435,7 +435,7 @@
           {
             "in": "body",
             "name": "body",
-            "description": "Environment currency allocation",
+            "description": "Environment currency allocation.",
             "schema": {
               "$ref": "#/definitions/AllocationsByEnvironmentPatchRequestModelV1"
             }
@@ -477,14 +477,14 @@
           {
             "in": "path",
             "name": "billingPolicyId",
-            "description": "The billing policy ID",
+            "description": "The billing policy ID.",
             "required": true,
             "type": "string"
           },
           {
             "in": "query",
             "name": "api-version",
-            "description": "The API version",
+            "description": "The API version.",
             "required": true,
             "type": "string",
             "default": "2022-03-01-preview"
@@ -526,14 +526,14 @@
           {
             "in": "path",
             "name": "billingPolicyId",
-            "description": "The billing policy ID",
+            "description": "The billing policy ID.",
             "required": true,
             "type": "string"
           },
           {
             "in": "query",
             "name": "api-version",
-            "description": "The API version",
+            "description": "The API version.",
             "required": true,
             "type": "string",
             "default": "2022-03-01-preview"
@@ -541,7 +541,7 @@
           {
             "in": "body",
             "name": "body",
-            "description": "Model to represents the list of environments to be linked",
+            "description": "Model to represents the list of environments to be linked.",
             "schema": {
               "$ref": "#/definitions/BillingPolicyEnvironmentAddRequestModel"
             }
@@ -580,14 +580,14 @@
           {
             "in": "path",
             "name": "billingPolicyId",
-            "description": "The billing policy ID",
+            "description": "The billing policy ID.",
             "required": true,
             "type": "string"
           },
           {
             "in": "query",
             "name": "api-version",
-            "description": "The API version",
+            "description": "The API version.",
             "required": true,
             "type": "string",
             "default": "2022-03-01-preview"
@@ -595,7 +595,7 @@
           {
             "in": "body",
             "name": "body",
-            "description": "Model to represents the list of environments to be unlinked",
+            "description": "Model to represents the list of environments to be unlinked.",
             "schema": {
               "$ref": "#/definitions/BillingPolicyEnvironmentRemoveRequestModel"
             }
@@ -634,14 +634,14 @@
           {
             "in": "path",
             "name": "environmentId",
-            "description": "The environment ID",
+            "description": "The environment ID.",
             "required": true,
             "type": "string"
           },
           {
             "in": "query",
             "name": "api-version",
-            "description": "The API version",
+            "description": "The API version.",
             "required": true,
             "type": "string",
             "default": "2022-03-01-preview"
@@ -681,13 +681,13 @@
           {
             "in": "query",
             "name": "$top",
-            "description": "Top limit of results",
+            "description": "Top limit of results.",
             "type": "string"
           },
           {
             "in": "query",
             "name": "api-version",
-            "description": "The API version",
+            "description": "The API version.",
             "required": true,
             "type": "string",
             "default": "2022-03-01-preview"
@@ -728,7 +728,7 @@
           {
             "in": "query",
             "name": "api-version",
-            "description": "The API version",
+            "description": "The API version.",
             "required": true,
             "type": "string",
             "default": "2022-03-01-preview"
@@ -736,7 +736,7 @@
           {
             "in": "body",
             "name": "body",
-            "description": "The ISV contract",
+            "description": "The ISV contract.",
             "schema": {
               "$ref": "#/definitions/IsvContractPostRequestModel"
             }
@@ -776,14 +776,14 @@
           {
             "in": "path",
             "name": "isvContractId",
-            "description": "The ISV contract ID",
+            "description": "The ISV contract ID.",
             "required": true,
             "type": "string"
           },
           {
             "in": "query",
             "name": "api-version",
-            "description": "The API version",
+            "description": "The API version.",
             "required": true,
             "type": "string",
             "default": "2022-03-01-preview"
@@ -827,14 +827,14 @@
           {
             "in": "path",
             "name": "isvContractId",
-            "description": "The ISV contract ID",
+            "description": "The ISV contract ID.",
             "required": true,
             "type": "string"
           },
           {
             "in": "query",
             "name": "api-version",
-            "description": "The API version",
+            "description": "The API version.",
             "required": true,
             "type": "string",
             "default": "2022-03-01-preview"
@@ -842,7 +842,7 @@
           {
             "in": "body",
             "name": "body",
-            "description": "The ISV contract",
+            "description": "The ISV contract.",
             "schema": {
               "$ref": "#/definitions/IsvContractPutRequestModel"
             }
@@ -880,14 +880,14 @@
           {
             "in": "path",
             "name": "isvContractId",
-            "description": "The ISV contract ID",
+            "description": "The ISV contract ID.",
             "required": true,
             "type": "string"
           },
           {
             "in": "query",
             "name": "api-version",
-            "description": "The API version",
+            "description": "The API version.",
             "required": true,
             "type": "string",
             "default": "2022-03-01-preview"
@@ -918,7 +918,7 @@
       "type": "object",
       "properties": {
         "currencyAllocations": {
-          "description": "Specify the request body with environment ID and currency details",
+          "description": "Specify the request body with environment ID and currency details.",
           "type": "array",
           "items": {
             "$ref": "#/definitions/CurrencyAllocationRequestModelV1"
@@ -928,16 +928,16 @@
       "additionalProperties": false
     },
     "AllocationsByEnvironmentResponseModelV1": {
-      "description": "The response body includes environment ID and allocated currencies",
+      "description": "The response body includes environment ID and allocated currencies.",
       "type": "object",
       "properties": {
         "environmentId": {
-          "description": "The environment ID for which the currency has been allocated",
+          "description": "The environment ID for which the currency has been allocated.",
           "type": "string",
           "example": "00000000-0000-0000-0000-000000000000"
         },
         "currencyAllocations": {
-          "description": "The collection of currencies with allocation count",
+          "description": "The collection of currencies with allocation count.",
           "type": "array",
           "items": {
             "$ref": "#/definitions/CurrencyAllocationResponseModelV1"
@@ -954,7 +954,7 @@
         },
         "allocated": {
           "format": "int32",
-          "description": "Specify the currency count",
+          "description": "Specify the currency count.",
           "type": "integer",
           "example": 10
         }
@@ -969,7 +969,7 @@
         },
         "allocated": {
           "format": "int32",
-          "description": "The allocated count of currency type",
+          "description": "The allocated count of currency type.",
           "type": "integer",
           "example": 10
         }
@@ -977,7 +977,7 @@
       "additionalProperties": false
     },
     "ExternalCurrencyType": {
-      "description": "Available currency type which can be allocated to environment",
+      "description": "Available currency type which can be allocated to environment.",
       "enum": [
         "AppPass",
         "AI",
@@ -1024,7 +1024,7 @@
           "type": "boolean"
         },
         "requiredApis": {
-          "description": "A list of connectors, at least one of which which must be involved in the metered usage to be attributed.",
+          "description": "A list of connectors, at least one of which must be involved in the metered usage to be attributed.",
           "type": "array",
           "items": {
             "$ref": "#/definitions/BillingPolicyConditionsApiModel"
@@ -1049,7 +1049,7 @@
       "properties": {
         "subscriptionId": {
           "format": "uuid",
-          "description": "The tenant subscription Id.",
+          "description": "The tenant subscription ID.",
           "type": "string",
           "example": {
             "subscriptionId": "00000000-0000-0000-0000-000000000000"
@@ -1242,7 +1242,7 @@
           "$ref": "#/definitions/BillingPolicyStatus"
         },
         "geo": {
-          "description": "Specify the desired resource location for creation of Azure Power Platform account for billing. Once set, this property cannot be updated. Power Platform Environments using this ISV Contract for pay-as-you-go billing must be in the same location.",
+          "description": "Specify the desired resource location for creation of an Azure Power Platform account for billing. Once set, this property cannot be updated. Power Platform environments, using this ISV contract for pay-as-you-go billing, must be in the same location.",
           "type": "string",
           "items": {
             "example": [
@@ -1389,7 +1389,7 @@
       "additionalProperties": false
     },
     "PowerAutomatePolicyModel": {
-      "description": "The Power Platform Requests policies.",
+      "description": "The Power Platform requests policies.",
       "type": "object",
       "properties": {
         "cloudFlowRunsPayAsYouGoState": {
@@ -1441,7 +1441,7 @@
       "scopes": {
         ".default": ".default"
       },
-      "description": "Microsoft Entra ID OAuth2"
+      "description": "Microsoft Entra ID OAuth2."
     }
   },
   "security": [
