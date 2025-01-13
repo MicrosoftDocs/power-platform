@@ -69,7 +69,7 @@ To create a billing plan, link environments to it, and add Azure subscription de
 1. In the navigation pane, select **Licensing**.
 1. In the **Licensing** pane, select **Pay-as-you-go plans**. The **Billing plans** page is displayed.
 
-1. Select **New billing plan**.
+1. Select **New billing plan**. The **New billing plan** pane is displayed.
 
 1. Select **Azure subscription**.
 
@@ -95,7 +95,7 @@ Microsoft 365 users without a paid Copilot license can now access Copilot agents
 
 # [Classic admin center](#tab/classic)
 
-1. In the navigation pane, go to  **Billing > Billing plans**. The **Billing plans** page is displayed.
+1. In the navigation pane, select **Billing > Billing plans**. The **Billing plans** page is displayed.
 
 1. Select **New billing plan**.
 
@@ -119,9 +119,9 @@ When a billing plan is created, a new environment named **Microsoft 365 Copilot 
 
 1. In the navigation pane, select **Licensing**.
 
-1. Under **Licensing**, select **Pay-as-you-go plans**.
+1. In the **Licensing** pane, select **Pay-as-you-go plans**. The **Billing plans** page is displayed.
 
-1. On the Billing plans page, select **New billing plan**.
+1. Select **New billing plan**. The **New billing plan** pane is displayed.
 
 1. Select **Microsoft 365 Copilot Chat**.
 
