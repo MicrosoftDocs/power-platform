@@ -221,7 +221,7 @@ Removing a license from a user might not always result in disabling the user acc
 For users to have access to applications and data in an environment, at a minimum the SystemUser table in Dataverse must have a record corresponding to the respective user identity. There are different mechanisms to add users in Dataverse, either automatic or on demand: 
 
 > [!TIP]
-> Check out the following video: [Adding users to Dataverse](https://www.microsoft.com/videoplayer/embed/RWJBra).
+> Check out the following video: [Adding users to Dataverse](https://learn-video.azurefd.net/vod/player?id=373c7bec-b315-4958-8bb7-1d5d6fb03a81).
 
 1. A system background process runs periodically to synchronize changes from Microsoft Entra and updates the SystemUser records in Dataverse based on predetermined set of [requirements](#requirements-for-successfully-adding-users-in-dataverse). The time taken to synchronize all changes into Dataverse is dependent on total number of users must be added or updated. For large organizations with thousands of users in Microsoft Entra ID, we recommend creating security groups associated with each environment, so only the required subset of users is added into Dataverse.
 
