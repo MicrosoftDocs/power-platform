@@ -95,7 +95,7 @@ The **Environments** tab  provides details on the Copilot Studio message capacit
 1. Select the environment you want to use and select the **Select** button.
 
 ---
-To view Copilot Studio capacity consumed for Micrsoft 365 copilot chat , select **Microsoft 365 Copilot Chat** environment in the enviroment selection page. 
+To view Copilot Studio capacity consumed for Micrsoft 365 copilot chat, select **Microsoft 365 Copilot Chat** environment in the enviroment selection page. 
  
 View the Copilot Studio capacity consumed within that environment. The following cards are displayed on the **Messages capacity** tab.
 
