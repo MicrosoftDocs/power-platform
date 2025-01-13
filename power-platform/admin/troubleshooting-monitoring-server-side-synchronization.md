@@ -287,7 +287,18 @@ There is a maximum limit of 150 MB for incoming emails. Emails that exceed a tot
 If a user is configured to synchronize _appointments_, _contacts_, and _tasks_, the synchronization process for those items is performed by that user. The synchronization process checks for any changes every 15 minutes, and possibly more often if certain updates are detected. When the synchronization process runs, it runs as that user and updates columns stored in the mailbox record during each sync cycle. This results in that user potentially appearing in the [Dataverse analytics reports](../admin/analytics-common-data-service.md), which are available in the Power Platform admin center, even though that user isn't actively logging into the application. 
 
 The synchronization process for _email_ is a separate process, which also updates mailbox records. The synchronization process for email runs as the SYSTEM user.
-  
+
+### Email Address Approved By and Test and Enable Last Attempted By
+
+As of the **9.2.2412.2** release, when a mailbox email address is approved or when it is tested and enabled, the system will record the authenticated user and time stamp of when either operation occurred. These values will be stored in the **Email Address Approved By** and **Test and Enable Last Attempted By** fields with their corresponding time stamps (**Email Address Approved On** and **Test and Enable Last Attempted On**).
+
+However, these fields will appear empty for mailboxes whose email addresses were previously approved or were tested and enabled prior to the 9.2.2412.2 release.  
+
+![image](https://github.com/user-attachments/assets/211efe68-c66f-493b-b83f-707110edc9c6)
+
+> [!NOTE]
+> Rejecting a mailbox’s email address will clear the Email Address Approved By and Email Address Approved On fields if they were previously set. You can [enable auditing](/power-platform/admin/manage-dataverse-auditing#configure-auditing-for-one-or-more-tables-and-columns-in-power-apps) on these fields to view their previous values if needed.
+
 ### See also  
 [Server-side synchronization](../admin/server-side-synchronization.md) <br />
 [Test connection to Exchange Server (on-premises)](test-connection-exchange-server-onpremises.md) <br />
