@@ -33,52 +33,28 @@ https://learn.microsoft.com/entra/identity-platform/quickstart-register-app?tabs
 1. Select **Register** button to create the **App registration**
 
 1. Note the **Application (client) ID** and **Directory (tenant) ID**
+
    1. In the navigation list, select **Overview**
+
    1. Under **Essentials**, copy the **Application (client) ID** and **Directory (tenant) ID** values for use in the next section
 
 1. In the navigation list, select **Manage** > **API permissions**
 
 1. Under **Configured permissions** select **Add a permission** button to open the **Request API permissions** panel
+
    1. Select **SharePoint** button
+
    1. Under *What type of permissions does your application require?* select button **Application permissions**
+
    1. Under **Select permissions**, select **Sites.FullControl.All**
+
    1. Select **Add permission** button to create the SharePoint permission
+
    1. Select **Grant admin consent for {tenant-name}** button
-
-## Setup Federated Credential
-
-Next step is to create a Federated creditial for the app registration. For more information see [Configure an application for federated identity credential](https://learn.microsoft.com/entra/workload-id/workload-identity-federation-config-app-trust-managed-identity?tabs=microsoft-entra-admin-center).
-
-1. Open [Microsoft Azure](https://portal.azure.com/#home)
-
-1. Select **Microsoft Entra ID** button
-
-1. In the navigation list, select **Manage** > **App registrations**
-
-1. In the applications list, select the app registration name created in the previous section
-
-1. In the navigation list, select **Manage** > **Certificates & secrets**
-
-1. Select tab **Federated credentials**
-
-1. Select button **Add credential**
-
-1. In **Federated credential scenario** field, select **Other issuer**
-
-1. In **Issuer** field, enter the Issuer URL
-   - Value Format: `https://login.microsoftonline.com/<tenant-id>/v2.0`
-   - Replace `<tenant-id>` with the **Directory (tenant) ID** guid value from the previous section
-   - Example `https://login.microsoftonline.com/00000000-0000-0000-0000-000000000000/v2.0`
-
-1. In **Value** field, enter the Subject Identifier 
-    - Value Format: `/eid1/c/pub/t/v4j5cvGGr0GRqy180BHbRw/a/CQSGf3JJtEi27nY2ePL7UQ/Env/3a5a51c7-a395-e61d-8f8c-c67df78a983b/sharepointmanagedidentity/<any-guid>`
-    - Example: `/eid1/c/pub/t/v4j5cvGGr0GRqy180BHbRw/a/CQSGf3JJtEi27nY2ePL7UQ/Env/3a5a51c7-a395-e61d-8f8c-c67df78a983b/sharepointmanagedidentity/00000000-0000-0000-0000-000000000000`
-   
-1. Select **Add** button to create the credential
 
 ## Setup Managed Identities in Dataverse
 
-Final step is to create mananged identity records in Dataverse. For more information see [Setup Dataverse Managed Identities](https://learn.microsoft.com/power-platform/admin/set-up-managed-identity).
+Next step is to create mananged identity records in Dataverse. For more information see [Setup Dataverse Managed Identities](https://learn.microsoft.com/power-platform/admin/set-up-managed-identity).
 
 ### Add record in **Managed Identities** table
 
@@ -120,12 +96,46 @@ An example using POST:
 - Request: `https://contoso.crm.dynamics.com/api/data/v9.0/sharepointmanagedidentities`
 - Body:
   ```json
-  {
+  
   "sharepointmanagedidentityid": "<<newGuid>>",
   "uniquename": "msft_ppmiforsharepointauth",
   "name": "PPMI For SharePoint Auth",
   "ManagedIdentity@odata.bind": "/managedidentities(<<managedIdentityId>>)"
   }
   ```
+
+## Setup Federated Credential
+
+Last step is to create a Federated creditial for the app registration. For more information see [Configure an application for federated identity credential](https://learn.microsoft.com/entra/workload-id/workload-identity-federation-config-app-trust-managed-identity?tabs=microsoft-entra-admin-center).
+
+1. Open [Microsoft Azure](https://portal.azure.com/#home)
+
+1. Select **Microsoft Entra ID** button
+
+1. In the navigation list, select **Manage** > **App registrations**
+
+1. In the applications list, select the app registration name created in the previous section
+
+1. In the navigation list, select **Manage** > **Certificates & secrets**
+
+1. Select tab **Federated credentials**
+
+1. Select button **Add credential**
+
+1. In **Federated credential scenario** field, select **Other issuer**
+
+1. In **Issuer** field, enter the Issuer URL
+
+   - Value Format: `https://login.microsoftonline.com/<<tenantId>>/v2.0`
+   - Replace `<<tenantId>>` with the **Directory (tenant) ID** guid value from the previous section
+
+1. In **Value** field, enter the Subject Identifier 
+
+    - Value Format: `/eid1/c/pub/t/v4j5cvGGr0GRqy180BHbRw/a/CQSGf3JJtEi27nY2ePL7UQ/Env/<<orgid>>/sharepointmanagedidentity/<<sharepointmanagedidentityid>>`
+    - Replace `<<orgid>>` with the
+    - Replace `<<sharepointmanagedidentityid>>` with the GUID created earlier with the sharepointmanagedidentities record insert
+   
+1. Select **Add** button to create the credential
+
 
 
