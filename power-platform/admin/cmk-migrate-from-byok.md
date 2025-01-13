@@ -5,8 +5,10 @@ author: paulliew
 ms.author: paulliew
 ms.reviewer: matp, ratrtile, sericks
 ms.topic: how-to 
-ms.date: 08/06/2024
+ms.date: 01/13/2025
 ms.custom: template-how-to
+contributors:
+- MSFTSimranKaur
 
 ---
 
@@ -58,14 +60,14 @@ Similarly, if you didn’t turn on the audit or search functionalities or turned
 1. Configure the non-BYOK or BYOK environment as a **Managed Environment**. Learn more in [Enable Managed Environment](customer-managed-key.md#enable-managed-environment-to-be-added-to-the-enterprise-policy).
 1. Add the non-BYOK or BYOK environment to the policy to the enterprise policy to encrypt data. Learn more in [Add an environment to the enterprise policy to encrypt data](customer-managed-key.md#add-an-environment-to-the-enterprise-policy-to-encrypt-data).
 
-## After migragion
+## After migration
 After you complete the migration, note the following:
 
 - When a BYOK environment is migrated to customer-managed key, the environment shows up in the **Environments with policies** list, and shows that it is managed by **CustomerViaMicrosoft** on the **Environment Settings\Environment encryption** page.
 
 - Upon completion of migrating your last BYOK environment, create a support ticket and request Microsoft to remove the BYOK option from your Power Platform admin center. Microsoft will also remove the SQL service restriction from all of your remaining environments and delete the BYOK key vaults from your tenant, after 28 days from the date the final BYOK environment was migrated.  
 
-- Once an environment is migrated to customer-managed key, the audit log is automatically moved to Azure CosmosDB and the upload files and images are moved to file storage and are encrypted automatically with the customer-managed key. The migrated environment can't be re-encrypted with the BYOK key. The environment also can't be reverted to Microsoft-managed key for at least 7 days.
+- Once an environment is migrated to customer-managed key, the audit log is automatically moved to Azure CosmosDB and the upload files and images are moved to file storage and are encrypted automatically with the customer-managed key. The migrated environment can't be re-encrypted with the BYOK key. The environment also can't be reverted to Microsoft-managed key for at least seven days.
 
 - When BYOK-enabled environments are migrated to this key management feature, the BYOK key in the Microsoft key vault is retained for at least 28 days so that support is available for restoring the environment.
 
