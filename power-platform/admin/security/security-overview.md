@@ -106,7 +106,7 @@ Use the following links to view and manage proactive policies for governance and
 - [Compliance](compliance.md): Implement robust compliance measures to safeguard organizational data and ensure adherence to industry regulations with features like [Customer Lockbox](../about-lockbox.md) and [customer-managed key](../customer-managed-key.md).
 
 ## Provide feedback
-You can find a **Feedback** button in the lower-right corner of all security pages. Select the **Feedback** button to open a Microsoft Form, where you can provide feedback and suggestions regarding the Security page and its related features.
+You can find a **Feedback** button in the lower-right corner of all security pages. Select the **Feedback** button to open a Microsoft Form, where you can submit feedback and suggestions regarding the Security page and its related features.
 
 ## Frequently asked questions (FAQs)
 
