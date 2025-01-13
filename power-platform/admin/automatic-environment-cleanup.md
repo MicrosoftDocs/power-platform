@@ -3,7 +3,7 @@ title: Automatic deletion of Power Platform environments
 description: Learn about the automatic processes that identify and disable Power Platform environments and how you can prevent them from being deleted.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 04/01/2024
+ms.date: 01/13/2025
 ms.subservice: admin
 author: matapg007
 ms.author: matgupta 
@@ -43,18 +43,19 @@ If an environment has already been deleted, you have a limited window of time to
 > [!IMPORTANT]
 > Allow ample time to renew or purchase licenses before your environments are deleted. Your organization may have a central admin and purchasing group and might be purchasing through Microsoft partners. Plan accordingly.
 
-## Inactivity based cleanup
+## Inactivity-based cleanup
 
-A cleanup mechanism in Power Platform automatically removes environments that aren't being used. After 90 days of inactivity, an environment is disabled. After 30 days, if no action is taken, the disabled environment is deleted. You have seven days to recover deleted environments.
+A cleanup mechanism in Power Platform automatically removes environments that aren't being used. After 90 days of inactivity, an environment is turned off. After 30 days, if no action is taken, the environment that was turned off is deleted. You have seven days to recover deleted environments.
 
 Only default, developer and [Dataverse for Teams environments](inactive-teams-environment.md) are affected by the activity-based automatic cleanup.
 
 ## Default environment 
-Power platform implementing a cleanup process for default environments that meet the following criteria:
-- Environments with no flows and no premium license will be included in the cleanup.
-- Inactive default environment admins will be notified 30 days before the deletion process begins.
-During the deletion process, a new default environment will be created without Dataverse, with an option to add Dataverse later. Once an environment is deleted, it can be recovered within the next 7 days. However, please note that the environment type will be changed to production type upon restoration, as we cannot overwrite the new default environment.
+Power Platform is implementing a cleanup process for default environments that meet the following criteria:
 
+- Environments with no flows and no premium licenses are included in the cleanup.
+- Inactive, default environment admins are notified 30 days before the deletion process begins.
+  
+During the deletion process, a new default environment is created without Dataverse, with an option to add Dataverse later. Once an environment is deleted, it can be recovered within the next seven days. However, note that the environment type is changed to **production** type upon restoration, as we can't overwrite the new default environment.
 
 > [!IMPORTANT]
 > You can't turn off this cleanup mechanism. However, you can review the last activity date for environments in the Power Platform admin center. 
