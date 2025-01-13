@@ -37,86 +37,74 @@ productDirectory:
       # imageSrc should be square in ratio with no white space
       imageSrc: ./media/strategy.svg
       links:
-        - url: /power-platform/guidance/adoption/methodology
-          text: Adoption overview
+        - url: /power-platform/guidance/adoption/vision
+          text: Vision, metrics and goals
         - url: /power-platform/guidance/adoption/strategy-best-practices
-          text: Strategy and vision
+          text: Adoption Strategy assessment
         - url: /power-platform/guidance/adoption/admin-best-practices
-          text: Admin and governance
+          text: Business Value
         - url: /power-platform/guidance/adoption/nurture-best-practices
-          text: Nurture and educate
+          text: Executive Sponsorship
     - title: Plan
       # imageSrc should be square in ratio with no white space
       imageSrc: ./media/plan.svg
       links:
         - url: /power-platform/guidance/adoption/methodology
-          text: Adoption overview
+          text: Roles and responsibilities
         - url: /power-platform/guidance/adoption/strategy-best-practices
-          text: Strategy and vision
+          text: Delivery models
         - url: /power-platform/guidance/adoption/admin-best-practices
-          text: Admin and governance
-        - url: /power-platform/guidance/adoption/nurture-best-practices
-          text: Nurture and educate
+          text: License assignment strategies
     - title: Secure
       # imageSrc should be square in ratio with no white space
       imageSrc: ./media/secure.svg
       links:
         - url: /power-platform/guidance/adoption/methodology
-          text: Adoption overview
+          text: Prevent Data Loss
         - url: /power-platform/guidance/adoption/strategy-best-practices
-          text: Strategy and vision
+          text: Enable cross-tenant isolation
         - url: /power-platform/guidance/adoption/admin-best-practices
-          text: Admin and governance
-        - url: /power-platform/guidance/adoption/nurture-best-practices
-          text: Nurture and educate
+          text: Secure the default environment
     - title: Govern
       # imageSrc should be square in ratio with no white space
       imageSrc: ./media/govern.svg
       links:
         - url: /power-platform/guidance/adoption/methodology
-          text: Adoption overview
+          text: Establish an environment strategy
         - url: /power-platform/guidance/adoption/strategy-best-practices
-          text: Strategy and vision
-        - url: /power-platform/guidance/adoption/admin-best-practices
-          text: Admin and governance
-        - url: /power-platform/guidance/adoption/nurture-best-practices
-          text: Nurture and educate
+          text: Manage the default environment
     - title: Operate
       # imageSrc should be square in ratio with no white space
       imageSrc: ./media/operate.svg
       links:
         - url: /power-platform/guidance/adoption/methodology
-          text: Adoption overview
+          text: Establish a support strategy
         - url: /power-platform/guidance/adoption/strategy-best-practices
-          text: Strategy and vision
+          text: Monitor usage
         - url: /power-platform/guidance/adoption/admin-best-practices
-          text: Admin and governance
-        - url: /power-platform/guidance/adoption/nurture-best-practices
-          text: Nurture and educate
+          text: Track resource usage
     - title: Ready
       # imageSrc should be square in ratio with no white space
       imageSrc: ./media/innovate.svg
       links:
         - url: /power-platform/guidance/adoption/methodology
-          text: Adoption overview
+          text: Establish a training and upskilling strategy
         - url: /power-platform/guidance/adoption/strategy-best-practices
-          text: Strategy and vision
+          text: Host internal training events
         - url: /power-platform/guidance/adoption/admin-best-practices
-          text: Admin and governance
-        - url: /power-platform/guidance/adoption/nurture-best-practices
-          text: Nurture and educate
+          text: Envision solutions
     - title: Nurture
       # imageSrc should be square in ratio with no white space
       imageSrc: ./media/nurture.svg
       links:
         - url: /power-platform/guidance/adoption/methodology
-          text: Adoption overview
+          text: Identify champions
         - url: /power-platform/guidance/adoption/strategy-best-practices
-          text: Strategy and vision
+          text: Create a Maker portal
         - url: /power-platform/guidance/adoption/admin-best-practices
-          text: Admin and governance
+          text: Share success stories
         - url: /power-platform/guidance/adoption/nurture-best-practices
-          text: Nurture and educate
+          text: Organize hackathons
 
 
 # additionalContent section (optional)
