@@ -1,6 +1,6 @@
 ---
 title: Use the Meeting Room Services app
-description: Learn how to use the Appointment Booking app to streamline and automate the appointment booking process.
+description: Learn how to use the Meeting Room Services app to streamline and automate the meeting room services process.
 author: ananthar-msft
 ms.author: ananthar
 ms.reviewer: ellenwehrle

@@ -5,7 +5,7 @@ author: ananthar-msft
 ms.author: ananthar
 ms.reviewer: ellenwehrle
 ms.topic: overview
-ms.date: 08/11/2024
+ms.date: 01/14/2025
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -14,17 +14,17 @@ ms.collection: bap-ai-copilot
 
 # What is the Parking Reservation template for Microsoft Power Platform?
 
-The Parking Reservation template is and enterprise-grade solution designed to help your organization streamline the process of managing and reserving parking spaces.
+The Parking Reservation template is an enterprise-grade solution designed to help your organization streamline the process of managing and reserving parking spaces.
 
-The Parking Reservation template offers the following capabilities:
+The Parking Reservation template allows you to:
 
 - Configure parking slots across multiple geographic locations.
 - Set customizable policies for advanced booking and cancellations for each building.
 - Manage both short-term and long-term parking reservations.
 - Cancel existing parking reservations.
-- Utilize filtering options to reserve accessible parking spots.
+- Use filtering options to reserve accessible parking spots.
 
-You can further extend the capabilities of the Parking Reservation template by customizing the apps to meet your organization's unique processing needs.
+You can extend the capabilities of the Parking Reservation template by customizing the apps to meet your organization's unique processing needs.
 
 The Parking Reservation template package is available on Microsoft AppSource. The package consists of two solutions:
 
