@@ -16,26 +16,26 @@ ms.custom:
 ---
 # Configure Azure app for SharePoint access
 
-When SharePoint integration access is needed to the Dataverse `SharePoint Documents` table within a Dynamics 365 environment, an Azure application needs to be set up to grant access. Starting in March 2025, the current access is being removed to improve system protection.
+To access the SharePoint Documents table in a Dynamics 365 environment through integration, you need to set up an Azure application. Starting in March 2025, the current access is removed to enhance system protection.
 
 ## Create an Azure Application with SharePoint permissions
 
-The first step is to create an App registration with an API permission to SharePoint. For more information, see [Azure Quickstart Register App](/entra/identity-platform/quickstart-register-app?tabs=certificate) and [SharePoint access via Azure AD App-Only](/sharepoint/dev/solution-guidance/security-apponly-azuread).
+Create an App registration with API permission to SharePoint. Learn more about registering an app and SharePoint access in [Azure Quickstart Register App](/entra/identity-platform/quickstart-register-app?tabs=certificate) and [SharePoint access via Azure AD App-Only](/sharepoint/dev/solution-guidance/security-apponly-azuread).
 
 1. Open the [Azure portal](https://portal.azure.com/).
 
-1. Under **Azure services** select **App registrations**.
+1. Under **Azure services**, select **App registrations**.
 
 1. Select **New registration**.
 
 1. Enter a **Name** for the application.
 
-1. Under **Supported account types** select value **Accounts in this organizational directory only**.
+1. Under **Supported account types**, select **Accounts in this organizational directory only**.
 
     > [!NOTE]
-    > Other types aren't supported at this time
+    > Other types aren't supported at this time.
 
-1. Select **Register** to create the **App registration**
+1. Select **Register** to create the **App registration**.
 
 1. Note the **Application (client) ID** and **Directory (tenant) ID**:
 
@@ -45,11 +45,11 @@ The first step is to create an App registration with an API permission to ShareP
 
 1. In the navigation list, select **Manage** > **API permissions**.
 
-1. Under **Configured permissions** select **Add a permission** to open the **Request API permissions** panel.
+1. Under **Configured permissions**, select **Add a permission** to open the **Request API permissions** panel.
 
    1. Select **SharePoint**.
 
-   1. Under **What type of permissions does your application require?** select **Application permissions**.
+   1. Under **What type of permissions does your application require?**, select **Application permissions**.
 
    1. Under **Select permissions**, select **Sites.FullControl.All**.
 
@@ -59,11 +59,11 @@ The first step is to create an App registration with an API permission to ShareP
 
 ## Setup managed identities in Dataverse
 
-Next step is to create managed identity records in Dataverse. Learn more about managed identities in [Setup Dataverse Managed Identities](/power-platform/admin/set-up-managed-identity).
+Create managed identity records in Dataverse. Learn more about managed identities in [Setup Dataverse Managed Identities](/power-platform/admin/set-up-managed-identity).
 
 ### Add record in Managed Identities table
 
-First insert a row into the [`managedidentities`](/power-apps/developer/data-platform/reference/entities/managedidentity) table using values from the following table.
+Insert a row into the [`managedidentities`](/power-apps/developer/data-platform/reference/entities/managedidentity) table using values from the following table.
 
 | Table field | Value |
 | --- | --- |
@@ -91,7 +91,7 @@ An example using POST:
 
 ### Add record in Share Point Managed Identities table
 
-Next insert a row into `sharepointmanagedidentity` table using values from the following table.
+Insert a row into the `sharepointmanagedidentity` table using values from the following table.
 
 | Table field | Value |
 | --- | --- |
@@ -115,9 +115,9 @@ An example using POST:
   }
   ```
 
-## Setup Federated Credential
+## Setup federated credential
 
-Last step is to create a Federated Credential for the app registration. For more information, see [Configure an application for federated identity credential](/entra/workload-id/workload-identity-federation-config-app-trust-managed-identity?tabs=microsoft-entra-admin-center).
+Create a federated credential for the app registration. Learn more about federated identity credentials in [Configure an application for federated identity credential](/entra/workload-id/workload-identity-federation-config-app-trust-managed-identity?tabs=microsoft-entra-admin-center).
 
 1. Open the [Azure portal](https://portal.azure.com/).
 
@@ -133,17 +133,17 @@ Last step is to create a Federated Credential for the app registration. For more
 
 1. Select **Add credential**.
 
-1. In **Federated credential scenario** field, select **Other issuer**.
+1. In the **Federated credential scenario** field, select **Other issuer**.
 
-1. In **Issuer** field, enter the Issuer URL:
+1. In the **Issuer** field, enter the Issuer URL:
 
    - Value format: `https://login.microsoftonline.com/<tenantId>/v2.0`
    - Replace `<tenantId>` with the **Directory (tenant) ID** GUID value from the previous section.
 
-1. In **Value** field, enter the Subject Identifier:
+1. In the **Value** field, enter the Subject Identifier:
 
-    - Value Format: `/eid1/c/pub/t/v4j5cvGGr0GRqy180BHbRw/a/CQSGf3JJtEi27nY2ePL7UQ/Env/<orgid>/sharepointmanagedidentity/<sharepointmanagedidentityid>`
-    - Replace `<orgid>` with the
+    - Value format: `/eid1/c/pub/t/v4j5cvGGr0GRqy180BHbRw/a/CQSGf3JJtEi27nY2ePL7UQ/Env/<orgid>/sharepointmanagedidentity/<sharepointmanagedidentityid>`
+    - Replace `<orgid>` with the organization ID.
     - Replace `<sharepointmanagedidentityid>` with the GUID created earlier with the sharepointmanagedidentities record.
 
 1. Select **Add** to create the credential.
