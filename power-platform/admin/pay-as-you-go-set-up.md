@@ -203,11 +203,11 @@ You can set up pay-as-you-go for your environment right from your app's setting 
 
 You can turn off pay-as-you-go for an environment at any time by doing either of the following:
 
-1. Remove the environment from a billing policy by going to the Power Platform admin center > **Billing policies** page and editing the billing policy.
+- Remove the environment from a billing policy by going to the Power Platform admin center > **Billing policies** page and editing the billing policy.
 
 **OR**
 
-2. Delete the environment's billing policy.
+- Delete the environment's billing policy.
 
    As soon as you take either action above, the environment ceases to be pay-as-you-go and goes back to functioning as a regular environment. Any usage that was already incurred up to this point is billed to your Azure subscription, but no further usage is charged.
 
