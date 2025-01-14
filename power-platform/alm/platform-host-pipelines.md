@@ -5,7 +5,7 @@ author: asheehi1
 ms.author: asheehi
 ms.reviewer: matp
 ms.topic: how-to
-ms.date: 09/30/2024
+ms.date: 01/06/2025
 ms.custom: template-how-to
 contributors:
 - asheehi1
@@ -86,6 +86,19 @@ From the **Pipelines** page within any solution, the **Manage pipelines** button
 - If the current environment is associated with the platform host, the button links to an embedded Deployment Pipeline Configuration app within Power Apps.
 
 The Deployment Pipeline Configuration app can be accessed by anyone with the Deployment Pipeline Administrator role if using a custom host, and any tenant administrator for the app associated with the Platform host.
+
+## Assigning pipeline roles via Security Teams in the Deployment Pipeline Configuration app
+
+As a **Deployment Pipeline Administrator**, you can assign out-of-the-box pipelines roles easily in the **Deployment Pipeline Configuration** app.
+
+1. Play the **Deployment Pipeline Configuration** app.
+1. Select **Security Teams** under **Settings** in the left navigation pane.
+
+There are three teams:
+
+- **Deployment Pipeline Administrators**. These users have full access to all pipelines and can play the Deployment Pipeline Configuration app.
+- **Deployment Pipeline Makers**. These users can create and consume personal pipelines that are managed in the custom host. If a maker needs to use a shared pipeline, we recommend that the user is assigned the **Deployment Pipeline Users** role to gain access to shared artifacts and shared stage runs.
+- **Deployment Pipeline Users**. These users can trigger a pipeline that is shared with them. Deployment Pipeline Users also have read access to all deployment stage runs within the same business unit.
 
 ## Frequently asked questions
 
