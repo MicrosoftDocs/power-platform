@@ -90,7 +90,7 @@ To create a [billing plan](pay-as-you-go-overview.md), link [environments](envir
 1. Select **Save**. 
 
 ---
-## Create billing plan for Microsoft 365 copilot chat
+## Create billing plan for Microsoft 365 Copilot Chat
 Microsoft 365 users without a paid Copilot license can now access and use Copilot agents by using a pay-as-you-go meter. Setting up a billing plan for Microsoft Copilot Agents differs slightly from the standard billing plan setup proces.
 
 # [Classic admin center](#tab/classic)
