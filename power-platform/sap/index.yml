@@ -56,13 +56,13 @@ sections:
         #   text: Watch videos
         #   url: /collections/20mijo44z6xq6
      - componentType: card
-       title: "Step 4. Leverage templates"
-       summary: Use one of the SAP templates for Power Platform as is, extend it to meet your requirements, or build your own solution based on template patterns.
+       title: "Step 4. Leverage templates and prebuilt agents"
+       summary: Use templates and prebuilt agents to accelerate your Power Platform and SAP integration and solution development.
        imageUrl: media/index-page/Leverage_templates.png
       # links: 
       #   - componentType: link
-      #     text: Procurement template for SAP
-       url: https://learn.microsoft.com/power-platform/enterprise-templates/finance/sap-procurement/administer/get-started
+      #     text: Use templates and prebuilt agents
+       url: templates/overview.md
 - componentType: grid
   title: Find Power Platform and SAP resources for your role
     # summary: Discover how Power Platform and SAP integration is relevant to your role and explore these Microsoft Learn resources.

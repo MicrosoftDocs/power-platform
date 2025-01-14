@@ -4,7 +4,7 @@ description: Learn about how to monitor and improve operational health.
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/18/2024
+ms.date: 01/08/2025
 ms.custom: ignite-2024
 author: alaug
 ms.author: alaug
@@ -60,7 +60,7 @@ For resources available in the monitoring experience, you can learn more about r
 
 | Product | Resource | Availability |
 |---------|------------|------------|
-| Power Apps | Canvas app | Preview|
+| Power Apps | Canvas app | Preview - Learn more in [Use Monitor to get insights and recommendations for your canvas app](/power-apps/maker/canvas-apps/monitor-app-performance).|
 | Power Apps | Model-driven apps | Not available yet|
 | Power Automate | Cloud flows | Not available yet|
 | Power Automate | Desktop flows | Not available yet|

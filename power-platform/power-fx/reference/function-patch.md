@@ -29,7 +29,7 @@ To update records in a data source more easily for simple changes, use the **Edi
 
 Watch this video to learn how to use the Patch function:
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWLgbF]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=4f09e796-64f3-4895-89d9-70c8462dac37]
 
 ## Overview
 
