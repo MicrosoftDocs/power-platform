@@ -60,7 +60,9 @@ The Prepaid capacity card shows the number of prepaid capacity units that have b
 The following cards are displayed in the **Messages capacity** tab.
 
 ##### Capacity consumption by product
-This tile presents a product-focused view of Copilot message units consumed, detailing the number of units deducted from prepaid capacity packs and/or pay-as-you-go units.
+This tile presents a product-focused view of Copilot Studio message units consumed, detailing the number of units deducted from prepaid capacity packs and/or pay-as-you-go units.
+
+If Copilot Studio message units are consumed for Microsoft 365 Copilot Chat, the number of copilot unit consumed can be found under the Microsoft 365 Copilot Chat product.
  
 ##### Total capacity consumption trend
 Displays the daily trend of capacity consumption over the past three months.
@@ -93,6 +95,7 @@ The **Environments** tab  provides details on the Copilot Studio message capacit
 1. Select the environment you want to use and select the **Select** button.
 
 ---
+To view Copilot Studio capacity consumed for Micrsoft 365 copilot chat, select **Microsoft 365 Copilot Chat** environment in the enviroment selection page. 
  
 View the Copilot Studio capacity consumed within that environment. The following cards are displayed on the **Messages capacity** tab.
 
