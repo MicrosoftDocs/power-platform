@@ -44,7 +44,7 @@ Admins can apply various rules to groups to govern many environments in bulk, re
 > - The rules are in the process of rolling out and might not be available in your region yet.
 > - The rules that have “(preview)” in their name are in public preview, while rules without it are considered generally available.
 
-When these rules are applied, they lock the settings at the environment-level, preventing any system administrator of those individual environments from editing the settings. This empowers IT teams to delegate administration and governance to other teams as Power Platform adoption grows, without relinquishing control over key environment settings. By doing so, it unlocks scalability and maintains a high standard of operational efficiency and security.
+When these rules are applied, they lock the settings at the environment-level, preventing any system administrator of those individual environments from editing the settings. To change the setting, admins must modify the corresponding rule in the environment group that includes the environment. This empowers IT teams to delegate administration and governance to other teams as Power Platform adoption grows, without relinquishing control over key environment settings. By doing so, it unlocks scalability and maintains a high standard of operational efficiency and security.
 
 > [!IMPORTANT]
 > Environment groups can only contain Managed Environments.
