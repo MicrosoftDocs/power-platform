@@ -30,7 +30,7 @@ The administrator can create Microsoft Entra group teams that are associated to 
 When members of these group teams access these environments, their access rights are automatically granted based on the group team's security role.
 
 > [!TIP]
-> ![Video symbol](../admin/media/video-thumbnail-4.png "Video symbol") Check out the following video: [Dynamic Microsoft Entra Groups](https://www.microsoft.com/en-us/videoplayer/embed/RE58gAd).  
+> ![Video symbol](../admin/media/video-thumbnail-4.png "Video symbol") Check out the following video: [Dynamic Microsoft Entra Groups](https://learn-video.azurefd.net/vod/player?id=2624ecc4-a40a-451d-a5b4-8bc9d4d0069a).  
 
 
 #### Provision and deprovision users 
