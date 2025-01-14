@@ -100,7 +100,7 @@ In this article, learn about all the functions available in [Power Automate for 
 
 **[Dec2Hex](reference/function-hexdec.md)** – Convert a number to a hexadecimal text string.
 
-**[Degrees](reference/function-trig.md)** - Converts radians to degrees.
+**[Degrees](reference/function-trig.md)** – Converts radians to degrees.
 
 **[Distinct](reference/function-distinct.md)** – Summarizes records of a table, removing duplicates.
 
@@ -118,7 +118,7 @@ In this article, learn about all the functions available in [Power Automate for 
 
 **[Error](reference/function-iferror.md)** – Create a custom error or pass through an error.
 
-**[Exp](reference/function-numericals.md)** - Returns _e_ raised to a power.
+**[Exp](reference/function-numericals.md)** – Returns _e_ raised to a power.
 
 ## F
 
@@ -146,7 +146,7 @@ In this article, learn about all the functions available in [Power Automate for 
 
 **[If](reference/function-if.md)** – Returns one value if a condition is true and another value if not.
 
-**[IfError](reference/function-iferror.md)** - Detects errors and provides an alternative value or takes action.
+**[IfError](reference/function-iferror.md)** – Detects errors and provides an alternative value or takes action.
 
 **[Index](reference/function-first-last.md)** – Returns a record from a table based on ordered position.
 
@@ -220,7 +220,7 @@ In this article, learn about all the functions available in [Power Automate for 
 
 ## R
 
-**[Radians](reference/function-trig.md)** - Converts degrees to radians.
+**[Radians](reference/function-trig.md)** – Converts degrees to radians.
 
 **[Rand](reference/function-rand.md)** – Returns a pseudo-random number between 0 and 1.
 
@@ -266,7 +266,7 @@ In this article, learn about all the functions available in [Power Automate for 
 
 **[Table](reference/function-table.md)** – Creates a temporary table.
 
-**[Tan](reference/function-trig.md)** - Returns the tangent of an angle specified in radians.
+**[Tan](reference/function-trig.md)** – Returns the tangent of an angle specified in radians.
 
 **[Text](reference/function-text.md)** – Converts any value and formats a number or date/time value to a string of text.
 
