@@ -31,7 +31,7 @@ You can further extend the capabilities of the Expense Reimbursement template by
 
 Watch the demo to see how an employee uses the Expense Reimbursement canvas app.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RW1kAs0]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=f1e40677-8e60-4950-9530-ba798e1d7cb7]
 
 ## Expense Reimbursement package
 
