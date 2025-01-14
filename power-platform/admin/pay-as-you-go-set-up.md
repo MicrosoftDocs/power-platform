@@ -62,7 +62,7 @@ To create a billing plan, link environments to it, and add Azure subscription de
 
 1. Select the environment you want to add to the billing plan.
 
-1. select **Save**. 
+1. Select **Save**. 
 
 # [New admin center](#tab/new)
 
