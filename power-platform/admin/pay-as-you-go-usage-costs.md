@@ -18,7 +18,7 @@ search.audienceType:
 
 Aggregated billing information is available in the Azure portal, and detailed usage drill-downs are available in the Power Platform admin center. Reporting is available for Power Platform (Power Apps per-app, Copilot Studio meter, and Dataverse capacity add-on meters) as well as Microsoft 365 (Copilot Chat via Copilot Studio meter) consumptive services. 
 
-In March 2022, we will release a preview of the Power Platform requests meter. During this preview we will report on usage of Power Platform requests in the Power Platform admin center downloadable report. However, we will not bill for this usage until we reach general availability (GA) for this meter; usage will not appear in the Azure portal until then. 
+In March 2022, we released a preview of the Power Platform requests meter. During this preview we will report on usage of Power Platform requests in the Power Platform admin center downloadable report. However, we will not bill for this usage until we reach general availability (GA) for this meter; usage will not appear in the Azure portal until then. 
 
 ### View billing information in the Azure portal
 
