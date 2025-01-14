@@ -79,7 +79,7 @@ Make the following settings for each user mailbox.
 >
 > Note that server-side synchronization will always utilize the greater value between the Process Emails From date on the email server profile and the mailbox record.
 
-## About Test and Enable and multiple Dataverse instances
+## Manage Exchange mailbox synchronization with multiple Dataverse instances
 
 A single Exchange mailbox (email address) can only synchronize with a single Dataverse mailbox row in a single Dataverse instance. When you Test and Enable a mailbox row in a Dataverse instance, that instance and mailbox row link to the corresponding Exchange mailbox. From that point forward, only that Dataverse instance and mailbox row can synchronize with the Exchange mailbox. If a mailbox row in any other Dataverse instance was previously configured to use the same Exchange mailbox (email address), the row automatically turns off for synchronization in that instance.
 
