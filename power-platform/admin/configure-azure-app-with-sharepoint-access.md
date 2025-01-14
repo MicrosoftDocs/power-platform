@@ -16,7 +16,7 @@ ms.custom:
 ---
 # Configure Azure app for SharePoint access
 
-To access the SharePoint Documents table in a Dynamics 365 environment through integration, you need to set up an Azure application. Starting in March 2025, the current access is removed to enhance system protection.
+To access the SharePoint Documents table in a Dynamics 365 environment through integration, you need to set up an Azure application. Starting in March 2025, the current access is removed to enhance system protection. Follow these steps to create an Azure application with the necessary SharePoint permissions, set up managed identities in Dataverse, and configure federated credentials.
 
 ## Create an Azure Application with SharePoint permissions
 
