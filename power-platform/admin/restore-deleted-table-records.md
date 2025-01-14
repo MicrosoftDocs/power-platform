@@ -29,7 +29,7 @@ Developers should read [Restore deleted records with code (preview)](/power-apps
 > - [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
 > - This feature is currently being deployed and might not yet be available in your region.
 > - Any storage used by the recycle bin doesn't count against your organization's storage capacity.
-> - The recycle bin feature isn't available for [Dataverse for Teams](about-teams-environment.md) or trial environments or default environments.
+> - The recycle bin feature **isn't available** for [Dataverse for Teams](about-teams-environment.md), trial environments, or default environments.
 
 ## Prerequisites
 
