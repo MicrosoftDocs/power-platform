@@ -97,7 +97,7 @@ Microsoft 365 users without a paid Copilot license can now access and use Copilo
 
 1. In the navigation pane, select **Billing > Billing plans**. The **Billing plans** page is displayed.
 
-1. Select **New billing plan**.
+1. Select **New billing plan**. The **New billing plan** pane is displayed.
 
 1. Select **Microsoft 365 Copilot Chat**.
 
@@ -111,7 +111,7 @@ Microsoft 365 users without a paid Copilot license can now access and use Copilo
 
     If there are no resource groups in the specified subscription, you must create one in the [Azure portal](https://portal.azure.com) before proceeding. Learn more about Azure resources in [What is Azure Resource Manager?](/azure/azure-resource-manager/management/overview).
 
-1. select **Save**.
+1. Select **Save**.
 
 When a billing plan is created, a new environment named **Microsoft 365 Copilot Chat ** is automatically provisioned and linked to the newly created billing plan. Copilot consumption reporting is accessible through this environment. If a new billing plan is created for **Microsoft 365 Copilot Chat** and an environment already exists, it's automatically linked to the new billing plan.
 
@@ -135,7 +135,7 @@ When a billing plan is created, a new environment named **Microsoft 365 Copilot 
 
     If there are no resource groups in the specified subscription, you must create one in the [Azure portal](https://portal.azure.com) before proceeding. Learn more about Azure resources in [What is Azure Resource Manager?](/azure/azure-resource-manager/management/overview).
 
-1. select **Save**.
+1. Select **Save**.
 
 When a billing plan is created, a new environment named **Microsoft 365 Copilot Chat ** is automatically provisioned and linked to the newly created billing plan. Copilot consumption reporting is accessible through this environment. If a new billing plan is created for **Microsoft 365 Copilot Chat** and an environment already exists, it's automatically linked to the new billing plan.
 
