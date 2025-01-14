@@ -23,6 +23,9 @@ Similar to folders, _environment groups_ are designed to help administrators org
 
 Admins can apply various rules to groups to govern many environments in bulk, reducing manual effort and ensuring consistency. For example, admins might apply rules to security, licensing, compliance, or other facets. Specifically, the following rules are available within each environment group, with many more to be introduced over time.
 
+> [!Note]
+> This feature is in the process of rolling out and might not be available in your region yet.
+
 | # | Rules (in alphabetical order) |
 |----|----------|
 | 1 | [AI prompts](/ai-builder/administer#enable-or-disable-ai-prompts-in-power-platform-and-copilot-studio) |
