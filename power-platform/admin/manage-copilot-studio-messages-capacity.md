@@ -2,7 +2,7 @@
 title: Manage Copilot Studio messages and capacity 
 description: Learn how to manage Copilot Studio messages and capacity.
 author: amiyapatr-zz
-ms.date: 01/14/2025
+ms.date: 01/15/2025
 ms.reviewer: sericks
 ms.topic: conceptual
 ms.subservice: admin
@@ -50,7 +50,7 @@ When viewing the Copilot Studio summary, the following cards are displayed in th
 :::image type="content" source="media/environment-tab.png" alt-text="The following cards are displayed in the **Capacity summary** section on the page and provide information to you.":::
 
 ### Pay-as-you-go messages
-This card displays the count of active billing plans with the Copilot Studio meter applied, along with the month-to-date total of Copilot Studio message units billed to these plans. A billing plan in the Power Platform admin center is a configuration that allows administrators to group one or more environments, allowing them to track and bill Copilot message capacity usage directly to an Azure subscription on a pay-as-you-go basis.
+This card displays the count of active billing plans with the Copilot Studio meter applied, along with the month-to-date total of Copilot Studio message units billed to these plans. A billing plan in the Power Platform admin center is a configuration that allows administrators to group one or more environments, allowing them to track and bill Copilot Studio message capacity usage directly to an Azure subscription on a pay-as-you-go basis.
 
 ### Prepaid capacity
 The Prepaid capacity card shows the number of prepaid capacity units that have been purchased, assigned, and consumed. These units can be either session-based or message capacity units, with a link provided to manage each type.
@@ -62,7 +62,7 @@ The following cards are displayed in the **Messages capacity** tab.
 ##### Capacity consumption by product
 This tile presents a product-focused view of Copilot Studio message units consumed, detailing the number of units deducted from prepaid capacity packs and/or pay-as-you-go units.
 
-If Copilot Studio message units are consumed for Microsoft 365 Copilot Chat, the number of copilot unit consumed can be found under the Microsoft 365 Copilot Chat product.
+If Copilot Studio message units are consumed for Microsoft 365 Copilot Chat, the number of units consumed can be found under the Microsoft 365 Copilot Chat product.
  
 ##### Total capacity consumption trend
 Displays the daily trend of capacity consumption over the past three months.
@@ -95,7 +95,7 @@ The **Environments** tab  provides details on the Copilot Studio message capacit
 1. Select the environment you want to use and select the **Select** button.
 
 ---
-To view Copilot Studio capacity consumed for Micrsoft 365 copilot chat, select **Microsoft 365 Copilot Chat** environment in the enviroment selection page. 
+To view Copilot Studio capacity consumed for Micrsoft 365 Copilot Chat, select the **Microsoft 365 Copilot Chat** environment in the enviroment selection page. 
  
 View the Copilot Studio capacity consumed within that environment. The following cards are displayed on the **Messages capacity** tab.
 
