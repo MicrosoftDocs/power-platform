@@ -16,8 +16,7 @@ When SharePoint integration access is needed to the Dataverse `SharePoint Docume
 
 ## Create an Azure Application with SharePoint permissions
 
-The first step is to create an App registration with an API permission to SharePoint. For more information see [Azure Quickstart Register App](
-https://learn.microsoft.com/entra/identity-platform/quickstart-register-app?tabs=certificate) and [SharePoint access via Azure AD App-Only](https://learn.microsoft.com/sharepoint/dev/solution-guidance/security-apponly-azuread).
+The first step is to create an App registration with an API permission to SharePoint. For more information see [Azure Quickstart Register App](/entra/identity-platform/quickstart-register-app?tabs=certificate) and [SharePoint access via Azure AD App-Only](/sharepoint/dev/solution-guidance/security-apponly-azuread).
 
 1. Open [Microsoft Azure](https://portal.azure.com/#home)
 
@@ -54,11 +53,11 @@ https://learn.microsoft.com/entra/identity-platform/quickstart-register-app?tabs
 
 ## Setup Managed Identities in Dataverse
 
-Next step is to create mananged identity records in Dataverse. For more information see [Setup Dataverse Managed Identities](https://learn.microsoft.com/power-platform/admin/set-up-managed-identity).
+Next step is to create mananged identity records in Dataverse. For more information see [Setup Dataverse Managed Identities](/power-platform/admin/set-up-managed-identity).
 
 ### Add record in **Managed Identities** table
 
-First insert into the [`managedidentities`](https://learn.microsoft.com/power-apps/developer/data-platform/reference/entities/managedidentity) table using values from the table.
+First insert into the [`managedidentities`](/power-apps/developer/data-platform/reference/entities/managedidentity) table using values from the table.
 
 | Table Field | Value |
 | --- | --- |
@@ -96,7 +95,7 @@ An example using POST:
 - Request: `https://contoso.crm.dynamics.com/api/data/v9.0/sharepointmanagedidentities`
 - Body:
   ```json
-  
+  {
   "sharepointmanagedidentityid": "<<newGuid>>",
   "uniquename": "msft_ppmiforsharepointauth",
   "name": "PPMI For SharePoint Auth",
@@ -106,7 +105,7 @@ An example using POST:
 
 ## Setup Federated Credential
 
-Last step is to create a Federated creditial for the app registration. For more information see [Configure an application for federated identity credential](https://learn.microsoft.com/entra/workload-id/workload-identity-federation-config-app-trust-managed-identity?tabs=microsoft-entra-admin-center).
+Last step is to create a Federated creditial for the app registration. For more information see [Configure an application for federated identity credential](/entra/workload-id/workload-identity-federation-config-app-trust-managed-identity?tabs=microsoft-entra-admin-center).
 
 1. Open [Microsoft Azure](https://portal.azure.com/#home)
 
