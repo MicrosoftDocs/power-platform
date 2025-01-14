@@ -86,6 +86,12 @@ If the record reference is _blank_, **IsType** returns FALSE, and **AsType** ret
 
 ### Untyped Objects
 
+> [!IMPORTANT]
+> - Using **AsType** and **IsType** with untyped objects is an experimental feature.
+> - Experimental features aren't meant for production use and may have restricted functionality. These features are available before an official release so that you can get early access and provide feedback. More information: [**Understand experimental, preview, and retired features in canvas apps**](/power-apps/maker/canvas-apps/working-with-experimental-preview)
+> - The behavior that this article describes is available only when the **User-defined types** experimental feature in [**Settings &gt; Upcoming features &gt; Experimental**](/power-apps/maker/canvas-apps/working-with-experimental-preview#controlling-which-features-are-enabled) is turned on (it's off by default).
+> - Your feedback is very valuable to us. Please let us know what you think in the [**Power Apps experimental features community forum**](https://community.powerplatform.com/forums/thread/details/?threadid=c8824a08-8198-ef11-8a69-7c1e52494f33).
+
 An untyped object coming from a web API or the [**ParseJSON** function] needs to be converted to a strongly typed object before it can be used in Power Fx. There are multiple ways to do this:
 1. Implicitly type the field at the point it is used. For example, an object is converted to a number if it is used with the `+` operator, if it can be converted to a number. This it he most prone to performing a conversion that is unexpected.
 1. Explicitly type each field individually with the **Decimal**, **Text**, **DateTime**, **GUID** and other type constructor functions. This is the most invasive in your formulas as each field must be done separately.
