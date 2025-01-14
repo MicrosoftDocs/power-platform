@@ -105,7 +105,7 @@ An example using POST:
 
 ## Setup Federated Credential
 
-Last step is to create a Federated creditial for the app registration. For more information see [Configure an application for federated identity credential](/entra/workload-id/workload-identity-federation-config-app-trust-managed-identity?tabs=microsoft-entra-admin-center).
+Last step is to create a Federated Credential for the app registration. For more information see [Configure an application for federated identity credential](/entra/workload-id/workload-identity-federation-config-app-trust-managed-identity?tabs=microsoft-entra-admin-center).
 
 1. Open [Microsoft Azure](https://portal.azure.com/#home)
 
