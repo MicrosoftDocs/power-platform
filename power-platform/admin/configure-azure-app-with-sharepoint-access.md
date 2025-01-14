@@ -16,7 +16,7 @@ When SharePoint integration access is needed to the Dataverse `SharePoint Docume
 
 ## Create an Azure Application with SharePoint permissions
 
-The first step is to create an App registration with an API permission to SharePoint. For more information see [Azure Quickstart Register App](/entra/identity-platform/quickstart-register-app?tabs=certificate) and [SharePoint access via Azure AD App-Only](/sharepoint/dev/solution-guidance/security-apponly-azuread).
+The first step is to create an App registration with an API permission to SharePoint. For more information, see [Azure Quickstart Register App](/entra/identity-platform/quickstart-register-app?tabs=certificate) and [SharePoint access via Azure AD App-Only](/sharepoint/dev/solution-guidance/security-apponly-azuread).
 
 1. Open [Microsoft Azure](https://portal.azure.com/#home)
 
@@ -53,7 +53,7 @@ The first step is to create an App registration with an API permission to ShareP
 
 ## Setup Managed Identities in Dataverse
 
-Next step is to create mananged identity records in Dataverse. For more information see [Setup Dataverse Managed Identities](/power-platform/admin/set-up-managed-identity).
+Next step is to create managed identity records in Dataverse. For more information, see [Setup Dataverse Managed Identities](/power-platform/admin/set-up-managed-identity).
 
 ### Add record in **Managed Identities** table
 
@@ -88,7 +88,7 @@ Next insert into `sharepointmanagedidentity` table using values from the table.
 | --- | --- |
 | `sharepointmanagedidentityid` | Create new guid |
 | `uniquename` | "msft_ppmiforsharepointauth" |
-| `name` | "PPMI For SharePoint Auth" |
+| `name` | "Managed Identity For SharePoint Auth" |
 | `ManagedIdentity@odata.bind` | `/managedidentities(<managedidentityid>)` replacing `<managedidentityid>` with value from previous section  |
 
 An example using POST: 
@@ -98,14 +98,14 @@ An example using POST:
   {
   "sharepointmanagedidentityid": "<<newGuid>>",
   "uniquename": "msft_ppmiforsharepointauth",
-  "name": "PPMI For SharePoint Auth",
+  "name": "Managed Identity For SharePoint Auth",
   "ManagedIdentity@odata.bind": "/managedidentities(<<managedIdentityId>>)"
   }
   ```
 
 ## Setup Federated Credential
 
-Last step is to create a Federated Credential for the app registration. For more information see [Configure an application for federated identity credential](/entra/workload-id/workload-identity-federation-config-app-trust-managed-identity?tabs=microsoft-entra-admin-center).
+Last step is to create a Federated Credential for the app registration. For more information, see [Configure an application for federated identity credential](/entra/workload-id/workload-identity-federation-config-app-trust-managed-identity?tabs=microsoft-entra-admin-center).
 
 1. Open [Microsoft Azure](https://portal.azure.com/#home)
 
