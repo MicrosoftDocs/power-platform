@@ -1,17 +1,17 @@
 ---
-title: "Known issues with document management | MicrosoftDocs"
-description: "Learn about known issues with document management"
+title: Known issues with document management 
+description: Learn about known issues with document management.
 keywords: encrypt
-ms.date: 06/10/2024
+ms.date: 01/06/2025
 ms.custom: 
 ms.topic: article
 applies_to: 
   - PowerApps
 ms.assetid: 
-author: sericks007
+author: adrianorth
 ms.subservice: admin
-ms.author: sericks
-ms.reviewer: 
+ms.author: aorth
+ms.reviewer: sericks
 ms.suite: 
 ms.tgt_pltfrm: 
 topic-status: Drafting
@@ -29,7 +29,7 @@ Opening a component from an Iframe in an entity form from a Unified Interface ap
 
 ## Third-party solutions that modify Document Management folders 
 Deploying third-party solutions that modify the folders used with the Document Management feature can cause unexpected behavior. 
-Examples include the following: 
+Examples include: 
 - Creation of entity record level SharePoint folders. 
 - Renaming of previously autocreated entity record level SharePoint folders.
 - Moving previously autocreated entity record level SharePoint folders to another location.
@@ -43,13 +43,13 @@ SharePoint document locations are records in model-driven apps, such as Dynamics
 
 To store documents for records, the document libraries or folders must be in place. If model-driven apps are unable to create the document libraries and folders automatically, you can manually create these in SharePoint. After you create the document libraries and folders in SharePoint, you must create document location records in model-driven apps to point to these SharePoint document libraries and folders.
 
-For more information, see [Create or edit document location records](./create-edit-document-location-records.md).
+Learn more in [Create or edit document location records](./create-edit-document-location-records.md).
 
 ## "File not found" error when using multiple SharePoint sites
 
 If you receive a **File not found** error when using multiple SharePoint sites, the likely cause is that there are no document libraries for a new SharePoint site. You must run the Document Management Settings wizard for any newly added SharePoint sites.
 
-The following describes the scenario that causes the error.
+The following steps describe the scenario that causes the error.
 
 1. Run the Document Management Settings wizard for the default SharePoint site.
 
@@ -86,7 +86,7 @@ In Microsoft Dataverse, you can create an entity and enable the Document managem
 Documents of a child entity only appear in the parent documents folder when the parent document location has been created. To create the location, navigate to the Documents tab of the parent record. If no such location is created, child documents don't appear in the parent entity folder. Once the location is created, child documents begin to appear in the parent entity folder.
 
 ## Document folder location for multiple lookups
-If the entity selected for the Based on entity folder structure has two lookups, documents can't be stored inside the entity folder, but can be stored in the root folder. For example, if the Based on entity folder structure is set to Account, and you have an entity with two lookup accounts, such as Work Order, the documents related to Work Orders can't be stored inside any account document location, but can be stored in the root folder.
+If the entity selected for the **Based on entity** folder structure has two lookups, documents can't be stored inside the entity folder, but can be stored in the root folder. An example is when you have the **Based on entity** folder structure set to **Account** and you have an entity with two lookup accounts like **Work Order**. The documents related to **Work Orders** can't be stored inside any account document location, but can be stored in the root folder.
 
 ## Entering a date for OneNote documents
 
@@ -96,17 +96,17 @@ In order to add a date to a OneNote document, you can open the OneNote document 
 
 ## SharePoint Document table doesn’t display inputs when you create a flow
 
-When you create a flow trigger in Power Automate that acts on the Dataverse SharePoint Documents table (named Documents in Power Automate), no data from the table is passed to the flow editor, and the flow inputs appear as an empty array.
+When you create a Power Automate flow trigger on the Dataverse SharePoint Documents table (named Documents in Power Automate), no data from the table is passed to the flow editor. The flow inputs appear as an empty array.
 
 This behavior occurs because the SharePoint Documents table is a virtual table and the SharePoint and OneDrive document table data isn't stored in Dataverse. Below is an example of a flow trigger using the SharePoint Documents table.
 
-:::image type="content" source="media/flow-trigger-documents-table.png" alt-text="Low trigger using the SharePoint documents table from Dataverse":::
+:::image type="content" source="media/flow-trigger-documents-table.png" alt-text="Flow trigger using the SharePoint documents table from Dataverse":::
 
 ## "Record is unavailable" message when you attempt to open a file from the SharePoint documents grid
 
-This message might appear when a certain customization is made to the ribbon bar. Ribbon customizations can be implemented by using a third-party tool called Ribbon Workbench. When hiding a button on the ribbon bar, the `Mscrm.OpenRecordItem` command might have also been hidden by using the tool, which can cause the error message.
+This message might appear when a certain customization is made to the ribbon bar. Ribbon customizations can be implemented by using a third-party tool called Ribbon Workbench. When hiding a button on the ribbon bar, the `Mscrm.OpenRecordItem` command might be hidden by using the tool, which can cause the error message.
 
-To resolve this issue, follow these steps.
+To resolve the issue, follow these steps.
 
 1. Go to [Power Apps](https://make.powerapps.com/) > **Advanced settings** > **Settings** > **Customizations**.
 1. Select the third-party tool **Ribbon Workbench**, then select the solution that contains the SharePoint document table.
@@ -133,13 +133,13 @@ Configuring the following in the **DocumentGrid** pane is ignored:
 - **Maximum number of rows**: a value
 - **Use available space**: unchecked
 
-For Unified Interface and backward compatibility, the row limit in the document associated grid is set to 5000 and **Use available space** is disabled. This is a known limitation.
+For Unified Interface and backward compatibility, the row limit in the document associated grid is set to 5000 and **Use available space** is turned off. This behavior is a known limitation.
 
 ### Error message when opening a record: "The record doesn't have a SharePoint location associated with it. Add a SharePoint location."
 
 This issue can occur when you're using the legacy list component for document management. The list component isn't supported with the current versions of Power Apps or Dynamics 365 apps.
 
-In 2015, [we announced the deprecation of the list component]( https://cloudblogs.microsoft.com/dynamics365/no-audience/2015/05/15/dynamics-crm-2015-update-1-list-component-deprecation/?source=crm). Notice that, a list component wasn’t released for Power Apps or the current versions of Dynamics 365 and previous versions of the list component aren’t supported with these versions.
+In 2015, [we announced the deprecation of the list component]( https://cloudblogs.microsoft.com/dynamics365/no-audience/2015/05/15/dynamics-crm-2015-update-1-list-component-deprecation/?source=crm).
 
 If you're using the list component, you must move your document management to use server-based authentication.
 
@@ -161,17 +161,21 @@ This error occurs with the following filter by options in the document associate
 
 This error occurs because these filter by options aren't currently supported with the document associated grid.
 
-### Next and previous page arrow buttons in the SharePoint grid don't work
+### Next and Previous page arrow buttons in the SharePoint grid don't work
 
-The next and previous page arrow buttons in the SharePoint grid don't work. This is a known issue.
+The **Next** and **Previous** page arrow buttons in the SharePoint grid don't work. This behavior is a known issue.
 
 **Resolution**: Users can select the **Load More** button at the bottom of the page or select **Open Location** to go to the SharePoint site to access files.
 
 ### OneDrive for Business configuration
 
-OneDrive for Businees for new users can't be configured currently. This is a known issue and is planned to be fixed in a future release. 
+OneDrive for Businees for new users can't be configured currently. This behavior is a known issue and is planned to be fixed in a future release. 
 
-### See also
+### Removing support for Microsoft default service principal
+
+In March 2025, support for connecting to the Dataverse virtual table `sharepointdocument` using the Microsoft default service principal ends. This change is being made to improve security. Switch to connect using a user account to prevent loss of access to the table.
+
+### Related content
 
 [Troubleshooting server-based authentication](troubleshooting-server-based-authentication.md) <br />
 [Troubleshoot SharePoint integration](troubleshoot-set-up-sharepoint-online.md)

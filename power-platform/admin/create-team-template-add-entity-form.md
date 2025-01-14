@@ -27,7 +27,7 @@ After you create a team template, you have to customize the entity main form to 
 
 To learn more about creating, using, and adding access teams to a solution, watch the following video.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RW18Hte] 
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=16ecba96-02be-4d54-aaa2-5359c18983cd] 
 
     
 ## Enable an entity for access teams  
