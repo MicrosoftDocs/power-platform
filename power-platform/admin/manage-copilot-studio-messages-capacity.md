@@ -14,7 +14,7 @@ search.audienceType:
 
 # Manage Copilot Studio messages and capacity 
 
-The Microsoft Copilot Studio capacity management experience in the Power Platform admin center allows administrators to manage Copilot Studio message and session capacity, while monitoring overall capacity consumption. This experience also provides an overview of the licensing models in use.
+The Microsoft Copilot Studio capacity management experience in the Power Platform admin center allows administrators to manage Copilot Studio message capacity, while monitoring overall capacity consumption. This experience also provides an overview of the licensing models in use. Additionaly , this experince allows administrators to efficiently manage their available session capacity.
 
 ## Use the Summary tab
 
@@ -50,7 +50,7 @@ When viewing the Copilot Studio summary, the following cards are displayed in th
 :::image type="content" source="media/environment-tab.png" alt-text="The following cards are displayed in the **Capacity summary** section on the page and provide information to you.":::
 
 ### Pay-as-you-go messages
-This card displays the count of active billing plans with the Copilot Studio meter applied, along with the month-to-date total of Copilot Studio message units billed to these plans.
+This card displays the count of active billing plans with the Copilot Studio meter applied, along with the month-to-date total of Copilot Studio message units billed to these plans.A billing plan in the Power Platform admin center is a configuration that enables administrators to group one or more environments, allowing them to track and bill Copilot message capacity usage directly to an Azure subscription on a pay-as-you-go basis.
 
 ### Prepaid capacity
 The Prepaid capacity card shows the number of prepaid capacity units that have been purchased, assigned, and consumed. These units can be either session-based or message capacity units, with a link provided to manage each type.
