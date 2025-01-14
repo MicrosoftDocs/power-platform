@@ -6,7 +6,7 @@ author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 6/10/2024
+ms.date: 1/14/2025
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
@@ -27,6 +27,10 @@ Checks a record reference for a specific table type (**IsType**) and treats the 
 > [PAC CLI pac power-fx commands](/power-platform/developer/cli/reference/power-fx) do not support **IsType**.
 
 ## Description
+
+The **AsType** and **IsType** functions can be used to convert record references (for example polymorphic lookups in Dataverse) and untyped objects to strongly typed objects.
+
+### Record References
 
 Read [Understand record references and polymorphic lookups](/power-apps/maker/canvas-apps/working-with-references) for a broader introduction and more details.
 
@@ -80,19 +84,39 @@ For both functions, you specify the type through the name of the data source tha
 
 If the record reference is _blank_, **IsType** returns FALSE, and **AsType** returns _blank_. All fields of a _blank_ record will be _blank_.
 
+### Untyped Objects
+
+An untyped object coming from a web API or the [**ParseJSON** function] needs to be converted to a strongly typed object before it can be used in Power Fx. There are multiple ways to do this:
+1. Implicitly type the field at the point it is used. For example, an object is converted to a number if it is used with the `+` operator, if it can be converted to a number. This it he most prone to performing a conversion that is unexpected.
+1. Explicitly type each field individually with the **Decimal**, **Text**, **DateTime**, **GUID** and other type constructor functions. This is the most invasive in your formulas as each field must be done separately.
+1. Explicitly type JSON with the second argument to the **ParseJSON** function. This is an easy way to do it which avoids having an untyped object in Power Fx at all.
+1. Explicitly type an untyped object using the **AsType** function.  You can also test type before attempting the conversion with the **IsType** function.
+
 ## Syntax
 
 **AsType**( _RecordReference_, _TableType_ )
 
 - _RecordReference_ - Required. A record reference, often a lookup field that can refer to a record in any of multiple tables.
 - _TableType_ - Required. The specific table to which the record should be cast.
+ 
+**AsType**( _UntypedObject_, _TypeSpecification_ )
+
+- _UntypedObject_ - Required. A record reference, often a lookup field that can refer to a record in any of multiple tables.
+- _TypeSpecification_ - Required. A type name or type specification defined with the [**Type** function](function-type.md).
 
 **IsType**( _RecordReference_, _TableType_ )
 
 - _RecordReference_ - Required. A record reference, often a lookup field that can refer to a record in any of multiple tables.
 - _TableType_ - Required. The specific table for which to test.
 
-## Example
+**IsType**( _UntypedObject_, _TypeSpecification_ )
+
+- _UntypedObject_ - Required. A record reference, often a lookup field that can refer to a record in any of multiple tables.
+- _TypeSpecification_ - Required. A type name or type specification defined with the [**Type** function](function-type.md).
+
+## Examples
+
+### Record References
 
 [Understand record references and polymorphic lookups](/power-apps/maker/canvas-apps/working-with-references) contains extensive examples.
 
@@ -146,5 +170,44 @@ If the record reference is _blank_, **IsType** returns FALSE, and **AsType** ret
    - "Contact: " and then the **Full Name** field from the **Contacts** table if the **Company Name** field refers to a contact.
 
    Your results might differ from those in this topic because it uses sample data that was modified to show additional types of results.
+
+### Untyped Objects
+
+The following examples show a very simple JSON record interpreted in various ways by **ParseJSON**, **AsType**, and **IsType** in the [Pac CLI Power Fx REPL](../../developer/cli/reference/power-fx.md).
+
+In this first example, no type information is provided to ParseJSON, so it returns an untyped object.
+
+```powerapps-dot
+>> Set( rec, ParseJSON( "{""a"":1}" ) )
+rec: <Untyped: Use Value, Text, Boolean, or other functions to establish the type>
+```
+
+We can use the value in this record in a numerical context, in which case the value is implicitly converted to a number.
+
+```powerapps-dot
+>> 1 + rec.a
+2
+```
+
+We could have explicitly converted the record to a strongly typed Power Fx record with the second argument to **ParseJSON**.
+
+```powerapps-dot
+>> ParseJSON( "{""a"":1}", Type( {a: Number} ) )
+{a:1}
+```
+
+We could have also explicitly converted the record to a strongly typed Power Fx record with the second argument to **AsType**.
+
+```powerapps-dot
+>> AsType( ParseJSON( "{""a"":1}" ), Type( {a: Number} ) )
+{a:1}
+```
+
+Finally, if we weren't sure, we could have tested the type before converting it with **IsType**.
+
+```powerapps-dot
+>> IsType( ParseJSON( "{""a"":1}" ), Type( {a: Number} ) )
+true
+```
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

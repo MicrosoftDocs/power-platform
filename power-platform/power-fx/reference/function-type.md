@@ -6,7 +6,7 @@ author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 10/28/2024
+ms.date: 1/14/2025
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
@@ -47,7 +47,7 @@ The **Type** function, and the type value it returns, can only be used in specif
 
 **RecordOf**( *TableType* )
 
-- _TableType_ – Required. A type specification for a table.
+- _TableType_ – Required. The type name of a table. This does not accept a type specification, it needs to be the name of a previously defined type for a table.
 
 **Type**( *TypeSpecification* )
 
@@ -74,20 +74,20 @@ Notice how the actual title text `"A Study in Scarlet"` has been replaced with t
 
 ```powerapps-dot
 SortedBooks( books: LibraryType ): LibraryType = 
-    SortByColumns( bookTable, Author, SortOrder.Ascending, Title, SortOrder.Ascending );
+    SortByColumns( Library, Author, SortOrder.Ascending, Title, SortOrder.Ascending );
 
 PublishedInLeapYear( book: BookType ): Boolean = 
     Mod( book.Published, 4 ) = 0 And 
     (Mod( book.Published, 100 ) <> 0 Or Mod( book.Published, 400 ) = 0);
 ```
 
-We can also use the `bookRecordType` to parse a JSON string that contains a book:
+We can also use the `BookType` to parse a JSON string that contains a book:
 
 ```powerapps-dot
-ParseJSON( "{""Title"":""Gulliver's Travels"", ""Author"": ""Jonathan Swift"", ""Published"": 1900}", bookRecordType
+ParseJSON( "{""Title"":""Gulliver's Travels"", ""Author"": ""Jonathan Swift"", ""Published"": 1900}", BookType
 )
 ```
 
-Using `bookRecordType` as the second argument to **ParseJSON** ensures that the fields have the right names and data types, and also returns a strongly typed value for easier use. For example, if the field `Title` is renamed to `BookTitle` then an error will be produced. Likewise, if the Boolean value `true` is passed for the field `Published` then an error will be produced as it needs to be a number.
+Using `BookType` as the second argument to **ParseJSON** ensures that the fields have the right names and data types, and also returns a strongly typed value for easier use. For example, if the field `Title` is renamed to `BookTitle` then an error will be produced. Likewise, if the Boolean value `true` is passed for the field `Published` then an error will be produced as it needs to be a number.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -6,9 +6,9 @@ author: gregli
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 6/10/2024
+ms.date: 1/14/2025
 ms.subservice: power-fx
-ms.author: jorisde
+ms.author: gregli
 search.audienceType: 
   - maker
 contributors:
@@ -19,20 +19,21 @@ contributors:
 
 **Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Pages :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
 
-Interprets a JSON string and returns an [untyped object](../untyped-object.md).
+Interprets a JSON string and returns an [untyped object](../untyped-object.md) or typed object.
 
 ## Description
-The ParseJSON function will parse a valid JSON string and return an [untyped object](../untyped-object.md) representing the JSON structure. 
+The ParseJSON function will parse a valid JSON string and return an [untyped object](../untyped-object.md) representing the JSON structure. Optionally, a Power Fx type definition can be provided to strongly type the output.
 
 The ParseJSON function may return errors if the text isn't valid JSON according to the JavaScript Object Notation (JSON) format described in [ECMA-404](https://www.ecma-international.org/publications-and-standards/standards/ecma-404) and [IETF RFC 8259](https://tools.ietf.org/html/rfc8259).
 
 ## Syntax
-**ParseJSON**( *JSONString* )
+**ParseJSON**( *JSONString* [ , *Type* ] )
 
-* *JSONString* – Required. The JSON structure represented as text.
+- *JSONString* – Required. The JSON structure represented as text.
+- *Type* - Optional. The Power Fx type definition for the JSON structure. Without this argument, **ParseJSON** returns an untyped object; with it and the function returns a strongly typed object.
 
 ## Converting Untyped object data type
-ParseJSON returns an [untyped object](../untyped-object.md) which requires explicit conversion of field values in supported data types. The following table lists the [data types](../data-types.md) in Power Apps and a corresponding JSON data type and how to convert it.
+Without the second argument, ParseJSON returns an [untyped object](../untyped-object.md) which requires explicit conversion of field values in supported data types. The following table lists the [data types](../data-types.md) in Power Apps and a corresponding JSON data type and how to convert it.
 
 | Data type | JSON examples | Description  | Example conversion |
 | --- | --- | --- | --- |
@@ -150,7 +151,7 @@ Given the following JSON string in a variable named `JsonString`
 **Table()** returns a single-column table of **untyped objects** that represents each json object in the array.
 
   ```power-fx
-    Set(untypedTable, Table( ParseJSON( JsonString ).array );
+    Set(untypedTable, Table( ParseJSON( JsonString ).array ) );
     
     Text( Index(untypedTable, 1).Value.name )
    ```

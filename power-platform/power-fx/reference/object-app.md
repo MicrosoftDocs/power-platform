@@ -5,7 +5,7 @@ author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 11/14/2024
+ms.date: 1/14/2025
 ms.author: gregli
 search.audienceType: 
   - maker
@@ -199,7 +199,7 @@ Library = [ { Title: "The Hobbit", Author: "J. R. R. Tolkien", Genre: "Fiction" 
 LibraryFiction = Filter( Library, Genre = "Fiction" );
 ```
 
-Without parameters, we would need to define separate named formulas for each genre. But instead, let's use a parameter:
+Without parameters, we would need to define separate named formulas for each genre. But instead, let's parameterize our named formula:
 
 ```powerapps-dot
 LibraryType := Type( [ { Title: Text, Author: Text, Genre: Text } ] );
@@ -209,9 +209,29 @@ LibraryGenre( SelectedGenre: Text ): LibraryType = Filter( Library, Genre = Sele
 
 Now we can call `LibraryGenre( "Fiction" )` as well as `LibraryGenre( "Reference" )` or other genres with a single user defined function.
 
+The syntax is:
+
+**FunctionName**( [ *ParameterName1*: *ParameterType1* [ , *ParameterName2*: *ParameterType2* ... ] ] ) : *ReturnType* = *Formula*;
+
+- *FunctionName* – Required. The name of the user defined function.
+- *ParameterName(s)* – Optional. The name of a function parameter.   
+- *ParameterType(s)* – Optional. The name of a type, either a built in [data type name](../data-types.md), a data source name, or a type defined with the **Type** function.   
+- *ReturnType* – Required. The type of the return value from the function.
+- *Formula* – Required. The formula that calculates the value of the function based on the parameters.
+
 Each parameter and the output from the user define function must be typed.  In this example, `SelectedGenre: Text` defines the first parameter to our function to be of type **Text** and `SelectedGenre` is the name of the parameter that is used in the body for the [**Filter** operation](function-filter-lookup.md). See [**Data types**](../data-types.md) for the supported type names. The [**Type** function](function-type.md) is used to create an aggregate type for our library, so that we can return a table of books from our function.
 
-Named formulas and most user defined functions do not support behavior functions, such as **Set** or **Notify**. In general, it is best to avoid updating state if you can, instead relying on functional programming patterns and allowing Power Fx to recalculate formulas as needed automatically. But, there are cases where it is unavoidable. To include behavior logic in a user defined function, wrap the body in curly braces:
+We defined `LibraryType` as a plural table of records type. If we want to pass a single book to a function, we can extract the type of the record for this table with the [**RecordOf** function](function-type.md):
+
+```powerapps-dot
+BookType := Type( RecordOf( LibraryType ) );
+
+IsGenre( Book: BookType, SelectedGenre: Text ): Boolean = (Book.Genre = SelectedGenre);
+```
+
+Record matching for function parameters is tighter than it is in other parts of Power Fx. The fields of a record value must be a proper subset of the type definition and can't include additional fields.  For example, `IsGenre( { Title: "My Book", Published: 2001 }, "Fiction" )` will result in an error.
+
+Named formulas and most user defined functions do not support behavior functions with side effects, such as **Set** or **Notify**. In general, it is best to avoid updating state if you can, instead relying on functional programming patterns and allowing Power Fx to recalculate formulas as needed automatically. But, there are cases where it is unavoidable. To include behavior logic in a user defined function, wrap the body in curly braces:
 
 ```powerapps-dot
 Spend( Amount: Number ) : Void = {
@@ -225,8 +245,18 @@ Spend( Amount: Number ) : Void = {
 
 Now we can call `Spend( 12 )` to check if we have 12 in our Savings, and if so, to debit it by 12 and add 12 to the Spent variable. Note that our user defined function returns `Void`, indicating that it does not have a return value. Even though it returns Void, we can still return an Error if there is a problem, but the Error function will not stop execution and the changes to Savings and Spent if the **If** function did not prevent them from running.
 
+The syntax of a behavior user defined function is:
+
+**FunctionName**( [ *ParameterName1*: *ParameterType1* [ , *ParameterName2*: *ParameterType2* ... ] ] ) : *ReturnType* = { *Formula1* [ ; *Formula2* ... ] };
+
+- *FunctionName* – Required. The name of the user defined function.
+- *ParameterName(s)* – Optional. The name of a function parameter.   
+- *ParameterType(s)* – Optional. The name of a type, either a built in [data type name](../data-types.md), a data source name, or a type defined with the **Type** function.   
+- *ReturnType* – Required. The type of the return value from the function.  Use **Void** if the function does not return a value.
+- *Formula(s)* – Required. The formula that calculates the value of the function based on the parameters.
+
 > [!NOTE]
-> Recursion is not yet supported in user defined functions. It is planned for a future release.
+> Recursion is not yet supported by user defined functions. 
 
 ### User defined types
 
