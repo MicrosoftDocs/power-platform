@@ -67,11 +67,11 @@ Insert a row into the [`managedidentities`](/power-apps/developer/data-platform/
 
 | Table field | Value |
 | --- | --- |
-| `ApplicationId` | Use the **Application (client) ID** value from first section |
-| `TenantId` | Use the **Directory (tenant) ID** value from first section |
-| `ManagedIdentityId` | Create new GUID |
-| `CredentialSource` | 2 |
-| `SubjectScope` | 1 |
+| `applicationid` | Use the **Application (client) ID** value from first section |
+| `tenantid` | Use the **Directory (tenant) ID** value from first section |
+| `managedidentityid` | Create new GUID |
+| `credentialsource` | 2 |
+| `subjectscope` | 1 |
 
 An example using POST:
 
