@@ -44,8 +44,8 @@ Early access begins approximately two months before general availability of each
 | Switzerland                  | January 22, 2025  |
 | Norway                       | January 22, 2025  |
 | Korea                        | January 22, 2025  |
-| Singapore                    | January 20, 2025  |
-| Sweden                       | January 20, 2025  |
+| Singapore                    | January 22, 2025  |
+| Sweden                       | January 22, 2025  |
 | United Arab Emirates         | January 27, 2025  |
 | Japan                        | January 27, 2025  |
 | Asia Pacific                 | January 27, 2025  |
