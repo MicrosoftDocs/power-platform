@@ -21,19 +21,25 @@ Similar to folders, _environment groups_ are designed to help administrators org
 
 Admins can apply various rules to groups to govern many environments in bulk, reducing manual effort and ensuring consistency. For example, admins might apply rules to security, licensing, compliance, or other facets. Specifically, the following rules are available within each environment group, with many more to be introduced over time.
 
-| # | Rule (in alphabetical order) |
+| # | Rules (in alphabetical order) |
 |----|----------|
-| 1 | [Back-up retention](backup-restore-environments.md) |
-| 2 | [Block unmanaged customizations](../alm/block-unmanaged-customizations.md) |
-| 3 | [Copilot enable prompts](/ai-builder/administer#enable-or-disable-ai-prompts-in-power-platform-and-copilot-studio) |
-| 4 | [Copilot features for makers](/power-apps/maker/canvas-apps/ai-overview?WT.mc_id=ppac_inproduct_settings) |
-| 5 | [Enable AI-generated descriptions](/power-apps/maker/canvas-apps/save-publish-app#create-an-app-description-with-copilot-preview) |
-| 6 | [Generative AI settings](geographical-availability-copilot.md) |
-| 7 | [Maker welcome content](welcome-content.md) |
-| 8 | [Power Apps component framework for canvas apps](/power-apps/developer/component-framework/component-framework-for-canvas-apps) |
-| 9 | [Sharing controls for canvas apps](managed-environment-sharing-limits.md) |
-| 10 | [Solution checker enforcement](managed-environment-solution-checker.md) |
-| 11 | [Usage insights](managed-environment-usage-insights.md) |
+| 1 | [AI prompts](/ai-builder/administer#enable-or-disable-ai-prompts-in-power-platform-and-copilot-studio) |
+| 2 | [AI-generated descriptions (preview)](/power-apps/maker/canvas-apps/save-publish-app#create-an-app-description-with-copilot-preview) |
+| 3 | [AI-powered Copilot features](/power-apps/maker/canvas-apps/ai-overview?WT.mc_id=ppac_inproduct_settings) |
+| 4 | [Back-up retention](backup-restore-environments.md) |
+| 5 | [Generative AI settings (preview)](geographical-availability-copilot.md) |
+| 6 | [Maker welcome content](welcome-content.md) |
+| 7 | [Power Apps component framework for canvas apps](/power-apps/developer/component-framework/component-framework-for-canvas-apps) |
+| 8 | [Release channel](https://go.microsoft.com/fwlink/?linkid=2237290) |
+| 9 | [Sharing agents with Editor permissions (preview)](managed-environment-sharing-limits.md) |
+| 10 | [Sharing agents with Viewer permissions (preview)](managed-environment-sharing-limits.md) |
+| 11 | [Sharing controls for canvas apps](managed-environment-sharing-limits.md) |
+| 12 | [Sharing controls for solution-aware cloud flows](managed-environment-sharing-limits.md) |
+| 13 | [Solution checker enforcement](managed-environment-solution-checker.md) |
+| 14 | [Usage insights](managed-environment-usage-insights.md) |
+
+> [!NOTE]
+> The rules that have “(preview)” in their name are in Public Preview, while rules without it are considered Generally Available.
 
 When these rules are applied, they lock the settings at the environment level, preventing any system administrator of those individual environments from editing the settings. This empowers IT teams to delegate administration and governance to other teams as Power Platform adoption grows, without relinquishing control over key environment settings. By doing so, it unlocks scalability and maintains a high standard of operational efficiency and security.
 
