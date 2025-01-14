@@ -3,7 +3,7 @@ title: "Troubleshooting and monitoring server-side synchronization  | MicrosoftD
 description: Troubleshooting and monitoring server-side synchronization
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/23/2024
+ms.date: 01/14/2025
 author: rahulmital 
 ms.subservice: admin
 ms.author: rahulmital 
@@ -287,6 +287,17 @@ There is a maximum limit of 150 MB for incoming emails. Emails that exceed a tot
 If a user is configured to synchronize _appointments_, _contacts_, and _tasks_, the synchronization process for those items is performed by that user. The synchronization process checks for any changes every 15 minutes, and possibly more often if certain updates are detected. When the synchronization process runs, it runs as that user and updates columns stored in the mailbox record during each sync cycle. This results in that user potentially appearing in the [Dataverse analytics reports](../admin/analytics-common-data-service.md), which are available in the Power Platform admin center, even though that user isn't actively logging into the application. 
 
 The synchronization process for _email_ is a separate process, which also updates mailbox records. The synchronization process for email runs as the SYSTEM user.
+
+### Email Address Approved By and Test and Enable Last Attempted By
+
+Starting with version 9.2.2412.2, when a mailbox email address is approved or tested and enabled, the system records the authenticated user and timestamp of when either operation occurs. These values are stored in the **Email Address Approved By** and **Test and Enable Last Attempted By** columns. The corresponding timestamps are stored in **Email Address Approved On** and **Test and Enable Last Attempted On**.
+
+These columns appear empty for mailboxes whose email addresses were previously approved or were tested and enabled before version 9.2.2412.2.
+
+![image](https://github.com/user-attachments/assets/211efe68-c66f-493b-b83f-707110edc9c6)
+
+> [!NOTE]
+> Rejecting a mailbox’s email address clears the Email Address Approved By and Email Address Approved On columns if they were previously set. You can [enable auditing](/power-platform/admin/manage-dataverse-auditing#configure-auditing-for-one-or-more-tables-and-columns-in-power-apps) on these columns to view their previous values.
   
 ### See also  
 [Server-side synchronization](../admin/server-side-synchronization.md) <br />
