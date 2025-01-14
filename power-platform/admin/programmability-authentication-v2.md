@@ -25,7 +25,7 @@ The following steps are required to obtain a bearer token with the correct permi
 Navigate to the [Microsoft Entra app registration](https://go.microsoft.com/fwlink/?linkid=2083908) page and create a new registration.  Give the application a name, and ensure the **Single tenant** option is selected.  You can skip the redirect URI setup.
 
 ## Step 2. Configure API permissions
-Within your new app registration, navigate to the **Manage - API Permissions** tab.  Under the **Configure permissions** section, select **Add a Permission**.  On the dialog window that opens, select the **APIs my organization uses** tab, and then search for **Power Platform API**.  You might see several entries with a name similar to this, so ensure you use the one with the GUID **00001111-aaaa-2222-bbbb-3333cccc4444**.  
+Within your new app registration, navigate to the **Manage - API Permissions** tab.  Under the **Configure permissions** section, select **Add a Permission**.  On the dialog window that opens, select the **APIs my organization uses** tab, and then search for **Power Platform API**.  You might see several entries with a name similar to this, so ensure you use the one with the GUID **8578e004-a5c6-46e7-913e-12f58912df43**.  
 
 If you don't see Power Platform API showing up in the list when searching by GUID, it's possible that you still have access to it but the visibility isn't refreshed. To force a refresh run the below PowerShell script:
 ```powershell
@@ -33,7 +33,7 @@ If you don't see Power Platform API showing up in the list when searching by GUI
 Install-Module AzureAD
 
 Connect-AzureAD
-New-AzureADServicePrincipal -AppId 00001111-aaaa-2222-bbbb-3333cccc4444 -DisplayName "Power Platform API"
+New-AzureADServicePrincipal -AppId 8578e004-a5c6-46e7-913e-12f58912df43 -DisplayName "Power Platform API"
 ```
 
 From here, you must select the permissions you require. These are grouped by [**Namespaces** ](/rest/api/power-platform).  Within a namespace, you'll see resource types and actions for example *AppManagement.ApplicationPackages.Read* which give read permissions for application packages.  For more information, see our [Permission reference](programmability-permission-reference.md) article.

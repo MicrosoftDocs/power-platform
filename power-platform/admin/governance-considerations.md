@@ -1,22 +1,21 @@
 ---
-title: Security and governance considerations in Power Platform | Microsoft Docs
-description: Explains how Power Apps and Power Automate be made widely available to their business and be supported by IT.
-
+title: Security and governance considerations in Power Platform
+description: Learn how Power Apps and Power Automate are made widely available to their business and are supported by IT.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/26/2024
+ms.date: 12/02/2024
 author: sericks007
 ms.subservice: admin
 ms.author: sericks
-ms.reviewer: sericks
+ms.reviewer: angieandrews
 ms.custom: "admin-security"
 search.audienceType: 
   - admin
 ---
 
-# Security and governance considerations
+# Security and governance considerations in Power Platform
 
-Many customers wonder how can Power Platform be made available to their broader business and supported by IT? Governance is the answer. It aims to enable business groups to focus on solving business problems efficiently while complying with IT and business compliance standards. The following content is intended to structure themes often associated with governing software and bring awareness to capabilities available for each theme as it relates to governing Power Platform. 
+Many customers wonder how can Power Platform be made available to their broader business and supported by IT? Governance is the answer. It aims to enable business groups to focus on solving business problems efficiently while complying with IT and business compliance standards. The following content is intended to structure themes often associated with governing software and bring awareness to capabilities available for each theme as it relates to governing Power Platform.
 
 |Theme  |Common questions related to each theme for which this content answers  |
 |---------|---------|
@@ -26,6 +25,7 @@ Many customers wonder how can Power Platform be made available to their broader 
 |Monitor     | <ul><li>How are we capturing compliance / auditing data?</li> <br /><li>How can I measure adoption and usage within my organization?</li></ul> |
 
 ## Architecture
+
 It's best to familiarize oneself with Environments as the first step to building the right governance story for your company. Environments are the containers for all resources used by a Power Apps, Power Automate and Dataverse. [Environments Overview](environments-overview.md) is a good primer, which should be followed by [What is Dataverse?](/powerapps/maker/common-data-service/data-platform-intro), [Types of Power Apps](/powerapps/maker/), [Microsoft Power Automate](/power-automate/getting-started), [Connectors](/powerapps/maker/canvas-apps/connections-list),  and [On-premises Gateways](wp-onpremises-gateway.md). 
 
 ## Security 
@@ -92,7 +92,7 @@ Customers with Microsoft Intune can set mobile application protection policies f
 
 ### Consider location-based conditional access
 
-For customers with Microsoft Entra ID P1 or P2, conditional access policies can be defined in Azure for Power Apps and Power Automate. This allows granting or blocking access based upon: user/group, device, location. 
+For customers with Microsoft Entra ID P1 or P2, conditional access policies can be defined in Azure for Power Apps and Power Automate. This allows granting or blocking access based upon: user/group, device, location.
 
 #### Creating a Conditional Access Policy
 
@@ -112,7 +112,7 @@ For customers with Microsoft Entra ID P1 or P2, conditional access policies can 
 
 Q: Can I control, on the tenant level, which connector is at all available, for example No to Dropbox or Twitter but Yes to SharePoint?
 
-A: This is possible by utilizing the [connectors classification](dlp-connector-classification.md) capabilities and assigning the **Blocked** classifier to one or more connectors that you want to keep from being used. Note that there are a [set of connectors that can’t be blocked](dlp-connector-classification.md#list-of-connectors-that-cant-be-blocked).
+A: This is possible by utilizing the [connectors classification](dlp-connector-classification.md) capabilities and assigning the **Blocked** classifier to one or more connectors that you want to keep from being used. There's a [set of connectors that can’t be blocked](dlp-connector-classification.md#list-of-connectors-that-cant-be-blocked).
 
 Q: What about Sharing connectors between users? For example, the connector for Teams is a general one that can be shared?
 
@@ -130,12 +130,8 @@ In addition to monitoring, many customers want to subscribe to software creation
 ### Build the policies you need with Power Apps, Power Automate, and PowerShell
 
 1. These [PowerShell cmdlets](powerapps-powershell.md) place full control in the hands of admins to automate the governance policies necessary. 
-1. The [Management connectors](https://powerapps.microsoft.com/blog/new-connectors-for-powerapps-and-flow-resources/) provide the same level of control but with added extensibility and ease-of-uses by using Power Apps and Power Automate. 
-1. The following Power Automate templates for administration connectors exist for ramping up quickly:
-    1. [List new Power Automate Connectors](https://preview.flow.microsoft.com/galleries/public/templates/5a6ef26db3b749ed88b7afb377d11ecf/list-new-microsoft-flow-connectors/)
-    1. [Get List of new Power Apps, Power Automate flows and Connectors](https://preview.flow.microsoft.com/galleries/public/templates/0b2ffb0174724ad6b4681728c0f53062/get-list-of-new-powerapps-flows-and-connectors/)
-    1. [Email me a weekly summary of Office 365 Message Center notices](https://preview.flow.microsoft.com/galleries/public/templates/c2537df7b47340e6bcf1ba931a459355/email-me-a-weekly-summary-of-office-365-message-center-notices/)
-    1. [Access Office 365 Security and Compliance Logs from Power Automate](https://tip1.flow.microsoft.com/blog/accessing-office-365-security-compliance-center-logs-from-microsoft-flow/)
+1. The [Power Platform for Admins V2 (Preview)](/connectors/powerplatformadminv2/) and [Power Automate Management](/connectors/flowmanagement/) connectors provide the same level of control but with added extensibility and ease-of-uses by using Power Apps and Power Automate.
+1. Review the [Power Platform admin and governance best practices](../guidance/adoption/admin-best-practices.md) and consider setting up the [Center of Excellence (CoE) Starter Kit](../guidance/coe/starter-kit.md).
 1. Use this [blog and app template](https://powerapps.microsoft.com/blog/custom-admin-dashboard-with-the-powerapps-admin-connectors/) ramp up quickly on the administration connectors. 
 1. Additionally, it's worth checking out content shared in the [Community Apps Gallery](https://powerusers.microsoft.com/t5/Community-Apps-Gallery/PowerApps-admin-app-version-2/m-p/247560), here's another example of an administrative experience built using Power Apps and admin connectors.
 
@@ -145,6 +141,7 @@ In addition to monitoring, many customers want to subscribe to software creation
 Currently, all users with Microsoft E3 licenses can create apps in the Default environment. How can we enable Environment Maker rights to a select group, for example. Ten persons to create apps?
 
 **Recommendation**
+
 The [PowerShell cmdlets](https://powerapps.microsoft.com/blog/gdpr-admin-powershell-cmdlets/) and [Management connectors](https://powerapps.microsoft.com/blog/new-connectors-for-powerapps-and-flow-resources/) provide full flexibility and control to administrators to build the policies they want for their organization.
 
 ## Monitor
@@ -194,9 +191,10 @@ The export can take a while for tenants with a large number of Power Platform us
 2. Select an Environment.
 3. Optionally, the list of resources used in an Environment can be downloaded as a .csv.
 
-### See also
-[Use best practices to secure and govern Power Automate environments](/training/paths/best-practices-environments/) <br />
-[Microsoft Power Platform Center of Excellence (CoE) Starter Kit](../guidance/coe/starter-kit.md)
+## Related information
+
+- [Use best practices to secure and govern Power Automate environments](/training/paths/best-practices-environments/) <br />
+- [Microsoft Power Platform Center of Excellence (CoE) Starter Kit](../guidance/coe/starter-kit.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

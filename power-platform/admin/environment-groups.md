@@ -3,7 +3,7 @@ title: Environment groups
 description: Learn how to organize your Managed Environments into groups and govern them in bulk with rules.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/28/2024
+ms.date: 01/14/2025
 author: mikferland-msft
 ms.author: miferlan
 ms.reviewer: sericks
@@ -11,6 +11,8 @@ ms.subservice: admin
 ms.custom: "admin-security"
 search.audienceType: 
   - admin
+contributors:
+- arjunmayur
 ---
 
 # Environment groups
@@ -77,17 +79,40 @@ Enabling _default environment routing_ might give you more environments to manag
 
 After you create the environment group, Power Platform tenant administrators can immediately add Managed Environments or configure the group's rules.
 
-### The sharing limits rule
+### The sharing limits rules
 
-You can also configure the _sharing limits_ rule. Since the environment group is intended for personal productivity, makers are restricted from sharing their canvas apps with other users. This helps ensure that each environment in the group remains a private space for individual work.
+You can also configure the _sharing limit_ rules for canvas apps, solution-aware cloud flows, and agents created in Copilot Studio. Since the environment group is intended for personal productivity, makers are restricted from sharing their canvas apps, solution-aware cloud flows, and agents with other users. This helps ensure that each environment in the group remains a private space for individual work.
 
-1. In the **Personal Productivity** group, select the **Rules** tab.
-1. Select the **Sharing Limits** rule to open its configuration panel.
+#### For canvas apps
+1. Select **Environment groups** in the navigation pane.
+1. Select your environment group, and then select the **Rules** tab.
+1. Select the **Sharing controls for canvas apps** rule to open its configuration panel.
 1. Select **Exclude sharing with security group**.
-1. Select **Limit total individuals who can share to** and enter the number **1** in the box.
+1. Select **Limit total individuals who can share to** and enter the desired number in the box.
 1. Select **Save**.
-1. Repeat these steps until all desired rules are configured.
-1. Select **Publish rules**.
+
+#### For solution-aware cloud flows
+1. Select the **Sharing controls for Solution-aware cloud flows** rule to open its configuration panel.
+2. Unmark the **Let people share solution-aware cloud flows** option. This will turn off all sharing for solution-aware cloud flows in this environment group.
+3. Select **Save**
+
+#### For agents (preview)
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
+
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/production-ready-preview-powerplatform.md)]
+
+1. Select **Environment groups** in the navigation pane.
+1. Select your environment group, and then select the **Rules** tab.
+1. Select the **Sharing agents with Editor permissions** rule to open its configuration panel.
+1. Be sure that the **Let people grant Editor permissions when agents are shared** option is **not** selected.
+1. Select **Save**.
+1. Select the **Sharing agents with Viewer permissions** rule to open its configuration panel.
+1. Select the **Let people grant Viewer permissions when agents are shared** option.
+1. Select the **Only share with individuals (no security groups)** option.
+1. Select the **Limit the number of viewers who can access each agent** option and enter the desired number of viewers you would like to have on the copilot.
+1. Select **Save**.
+
+Repeat these steps until all desired rules are configured and select **Publish rules**.
 
 > [!NOTE]
 > All rules are equally applied to all environments in the group.
@@ -152,9 +177,7 @@ As you experiment with environment groups, you might have leftover groups that y
 > [!IMPORTANT]
 > When you delete a group, first remove all of its environments and ensure no developer environments are routed to it. If a group still has environments, you see a warning that prevents you from deleting the group.
 
-
-
-## See also
+## Related content
 
 [Managed Environments overview](managed-environment-overview.md) <br>
 [Usage insights](managed-environment-usage-insights.md) <br>
