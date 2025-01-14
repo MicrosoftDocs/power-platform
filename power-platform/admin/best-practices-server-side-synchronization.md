@@ -83,6 +83,18 @@ Make the following settings for each user mailbox.
 >
 > Note that server-side synchronization will always utilize the greater value between the Process Emails From date on the email server profile and the mailbox record.
 
+## About Test and Enable and multiple Dataverse Instances
+
+A single Exchange mailbox (email address) can only be configured to synchronize with a single Dataverse mailbox row in a single Dataverse instance. When you Test and Enable a mailbox row in a particular Dataverse instance, that instance and mailbox row will be linked to the corresponding Exchange mailbox. From that point forward, only that Dataverse instance and mailbox row will be allowed to synchronize with the Exchange mailbox. If a mailbox row in any other Dataverse instance was previously configured to use the same Exchange mailbox (email address), the row will be automatically disabled for synchronization in that instance. 
+
+To make sure an administrator doesn’t inadvertently Test and Enable a mailbox row in a non-production instance linked to an Exchange mailbox, it is a best practice to set the synchronization method for non-production instances to None.
+
+**Set the synchronization method to "None" for non-production organizations**
+
+1.	In the Power Platform admin center, select an environment.
+2.	Select Settings > Email > Mailboxes.
+3.	Choose the mailbox record to open it.
+4.	Under Synchronization Method, select **None** in the Incoming Email, Outgoing Email, and Appointments, Contacts, and Tasks lists. 
   
 ### See also
 
