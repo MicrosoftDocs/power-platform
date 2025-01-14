@@ -1079,7 +1079,7 @@
                       href: set-up-dynamics-365-online-to-use-sharepoint-online.md
                     - name: Configure server-based authentication with SharePoint on-premises
                       href: configure-server-based-authentication-sharepoint-on-premises.md
-                    - name: Configure Azure App for SharePoint Access
+                    - name: Configure Azure App for SharePoint access
                       href: configure-azure-app-with-sharepoint-access.md
                 - name: Configure
                   items:
