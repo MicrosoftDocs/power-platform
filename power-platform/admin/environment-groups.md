@@ -23,9 +23,6 @@ Similar to folders, _environment groups_ are designed to help administrators org
 
 Admins can apply various rules to groups to govern many environments in bulk, reducing manual effort and ensuring consistency. For example, admins might apply rules to security, licensing, compliance, or other facets. Specifically, the following rules are available within each environment group, with many more to be introduced over time.
 
-> [!Note]
-> This feature is in the process of rolling out and might not be available in your region yet.
-
 | # | Rules (in alphabetical order) |
 |----|----------|
 | 1 | [AI prompts](/ai-builder/administer#enable-or-disable-ai-prompts-in-power-platform-and-copilot-studio) |
@@ -44,7 +41,8 @@ Admins can apply various rules to groups to govern many environments in bulk, re
 | 14 | [Usage insights](managed-environment-usage-insights.md) |
 
 > [!NOTE]
-> The rules that have “(preview)” in their name are in Public Preview, while rules without it are considered Generally Available.
+> This feature is in the process of rolling out and might not be available in your region yet.
+> The rules that have “(preview)” in their name are in public preview, while rules without it are considered generally available.
 
 When these rules are applied, they lock the settings at the environment level, preventing any system administrator of those individual environments from editing the settings. This empowers IT teams to delegate administration and governance to other teams as Power Platform adoption grows, without relinquishing control over key environment settings. By doing so, it unlocks scalability and maintains a high standard of operational efficiency and security.
 
