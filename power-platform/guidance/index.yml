@@ -60,19 +60,31 @@ productDirectory:
       imageSrc: ./media/secure.svg
       links:
         - url: /power-platform/guidance/adoption/methodology
-          text: Prevent Data Loss
+          text: Security Posture Management
         - url: /power-platform/guidance/adoption/strategy-best-practices
-          text: Enable cross-tenant isolation
+          text: Threat protection
         - url: /power-platform/guidance/adoption/admin-best-practices
-          text: Secure the default environment
+          text: Data protection and privacy
+        - url: /power-platform/guidance/adoption/admin-best-practices
+          text: Identity and access management
+        - url: /power-platform/guidance/adoption/admin-best-practices
+          text: Compliance
     - title: Govern
       # imageSrc should be square in ratio with no white space
       imageSrc: ./media/govern.svg
       links:
+        - url: /power-platform/guidance/adoption/strategy-best-practices
+          text: Management at scale
         - url: /power-platform/guidance/adoption/methodology
           text: Establish an environment strategy
         - url: /power-platform/guidance/adoption/strategy-best-practices
           text: Manage the default environment
+        - url: /power-platform/guidance/adoption/strategy-best-practices
+          text: Reactive governance
+        - url: /power-platform/guidance/adoption/strategy-best-practices
+          text: Full visbility
+        - url: /power-platform/guidance/adoption/strategy-best-practices
+          text: Capacity and cost management
     - title: Operate
       # imageSrc should be square in ratio with no white space
       imageSrc: ./media/operate.svg
@@ -80,9 +92,11 @@ productDirectory:
         - url: /power-platform/guidance/adoption/methodology
           text: Establish a support strategy
         - url: /power-platform/guidance/adoption/strategy-best-practices
-          text: Monitor usage
+          text: Observability
         - url: /power-platform/guidance/adoption/admin-best-practices
-          text: Track resource usage
+          text: Data Resilience
+        - url: /power-platform/guidance/adoption/admin-best-practices
+          text: Application Lifecycle Management 
     - title: Ready
       # imageSrc should be square in ratio with no white space
       imageSrc: ./media/innovate.svg

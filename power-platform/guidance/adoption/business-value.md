@@ -13,7 +13,7 @@ ms.contributors:
 - jean-romero
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/04/2023
+ms.date: 02/28/2025
 ms.subservice: guidance
 ms.reviewer: sericks
 search.audienceType: 
@@ -171,15 +171,14 @@ Aligning the business value of Power Platform solutions to the organization's KP
 
 By aligning Power Platform solutions to KPIs and OKRs, organizations ensure that they're addressing the most critical business needs and driving the most significant impact. This can help ensure that Power Platform solutions are seen as valuable investments by senior leaders and decision makers who are often responsible for approving resource allocation. Various tools and calculators are available to help.
 
-### CoE Starter Kit - Innovation Backlog
+### Business value toolkit
 
-The Innovation Backlog is a feature of the Center of Excellence Starter Kit that's designed to help organizations prioritize and manage innovative ideas for Power Platform solutions. It's a repository of ideas submitted by employees and stakeholders that can help improve business processes, increase efficiency, or generate new innovations. It provides a great starting point for assessing the actual business value of solutions and ensuring that innovative ideas aren't overlooked.
+The [Business value toolkit](../coe/business-value-toolkit.md) is a feature of the [Center of Excellence Starter Kit](../coe/overview.md) that provides a comprehensive framework to capture and communicate the value of Power Platform solutions effectively. By guiding app owners through a structured storytelling process, enhanced by AI to both refine the narrative and analyze its impact on organizational strategic objectives, the toolkit helps transform raw insights into compelling success stories that highlight the true impact of their solutions.
 
 Learn more:
 
-- [Uncovering apps and value using the innovation backlog - Power CAT Live](https://youtu.be/1CMYTxvKhXk)
-- [Set up the Innovation Backlog components](/power-platform/guidance/coe/setup-innovationbacklog)
-- [Use the Innovation Backlog app](/power-platform/guidance/coe/use-innovationbacklog)
+- [Set up the Business value toolkit](../coe/setup-business-value-toolkit.md)
+- [Use the Business value toolkit](../coe/business-value-toolkit.md)
 
 ## Summary
 
@@ -194,9 +193,4 @@ Learn more about measuring business value:
 - [How Microsoft measures business value](https://youtu.be/cOkJI_e0Ni0)
 - [Defining the value of a business problem](/power-apps/guidance/planning/defining-business-value)
 - [Total Economic Impact of Power Platform Premium Capabilities (Forrester)](https://info.microsoft.com/ww-landing-forrester-tei-of-power-platform-premium-capabilities.html?LCID=EN-US)
-
-Learn more about customers realizing the value of Power Platform solutions:
-
-- [Do more with less blog](https://powerapps.microsoft.com/blog/category/do-more-with-less/)
-
-[!INCLUDE [footer-include](../../includes/footer-banner.md)]
+- [Real-world Examples of measuring and communicating value](https://www.youtube.com/watch?v=L_jRljdk1T0)
