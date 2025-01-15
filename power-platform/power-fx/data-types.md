@@ -42,11 +42,11 @@ This article provides details for the data types that Power Fx supports. When Po
 | **Table**            | A table of records. All of the records must have the same names for their fields with the same data types, and omitted fields are treated as _blank_. This compound data type contains instances of other data types that are listed in this topic. More information: [Working with tables](/power-apps/maker/canvas-apps/working-with-tables). This data type is supported by the **Type** function if an instance of a **Table** is used.    | **Table( { FirstName: "Sidney",<br>LastName: "Higa" }, <br>{ FirstName: "Nancy",<br>LastName: "Anderson" } )**                |
 | **Text**             | A Unicode text string.                                                                                                                                                                                                                                                                                                                          | **"Hello, World"**                                                                                                            |
 | **Time**             | A time without a date, in the time zone of the app's user.                                                                                                                                                                                                                                                                                      | **Time( 11, 23, 45 )**                                                                                                        |
-| **Untyped** | An object of an undeclared type. The underlying object could be any existing type, and can be converted into compatible types using functions such as [Boolean()](reference/function-boolean.md), [Value()](reference/function-value.md), [Table()](reference/function-table.md) etc. For more information see [Untyped object](untyped-object.md) and [Working with JSON](working-with-json.md). | **ParseJSON("{ ""Field"" : 1234 }").Field** |
+| **Untyped** | An object of an undeclared type. The underlying object could be any existing type, and can be converted into compatible types using functions such as [Boolean()](reference/function-boolean.md), [Value()](reference/function-value.md), [Table()](reference/function-table.md) etc. For more information, see [Untyped object](untyped-object.md) and [Working with JSON](working-with-json.md). | **ParseJSON("{ ""Field"" : 1234 }").Field** |
 | **Void** | Used only by behavior user defined functions, it indicates that a function does not have a return type. This data type is not supported by the **Type** function.  | **Hi(): Void = { Notify( "Hello!"  ) }**
 | **Yes/No**       | A choice from a set of two options, backed by a boolean value. This data type combines a localizable text label with a boolean value. The label appears in the app, and the boolean value is stored and used for comparisons. This data type is supported by the **Type** function if an instance of a **Yes/No** field is used by name.                                                                                                                   | **ThisItem.Taxable**                                                                                                          |
 
-Many of these data types are similar and have the same underlying representation, such as a **Hyperlink** field being treated as **Text**. The additional data types provide better default experiences in forms and other controls.
+Many of these data types are similar and have the same underlying representation, such as a **Hyperlink** field being treated as **Text**. The extra data types provide better default experiences in forms and other controls.
 
 ## Blank
 
@@ -78,7 +78,7 @@ Single quotation marks are used for [identifier names](operators.md#identifier-n
 
 ### String interpolation
 
-Use string interpolation to embed formulas within a text string. This is often easier to work with and visualize the output than using the [**Concatenate**](reference/function-concatenate.md) function or [**&**](operators.md) operator.
+Use string interpolation to embed formulas within a text string. This approach is often easier to work with and visualize the output than using the [**Concatenate**](reference/function-concatenate.md) function or [**&**](operators.md) operator.
 
 Prefix the text string with a dollar sign **$** and enclose the formula to be embedded with curly braces **{ }**. To include a curly brace in the text string, use repeated curly braces: **{{** or **}}**. String interpolation can be used anywhere a standard text string can be used.
 
@@ -90,7 +90,7 @@ $"We have {Apples} apples, {Bananas} bananas, yielding {Apples+Bananas} fruit to
 
 This formula returns the text string **We have 3 apples, 4 bananas, yielding 7 fruit total.** The variables **Apples** and **Bananas** are inserted in the text replacing the curly braces, along with the result of the mathematical formula **Apples+Bananas**. Spaces and other characters around the curly braces are preserved as they are.
 
-Embedded formulas can include any functions or operators. All that is requires is that the result of the formula can be coerced to a text string. For example, this formula will insert **NickName** if it's supplied, or the **FirstName** if not, in a greeting:
+Embedded formulas can include any functions or operators. All that is requires is that the result of the formula can be coerced to a text string. For example, this formula inserts **NickName** if it's supplied, or the **FirstName** if not, in a greeting:
 
 ```power-fx
 $"Welcome {Coalesce( NickName, FirstName )}, it's great to meet you!" )
@@ -104,7 +104,7 @@ String interpolation can include standard text strings in the embedded formula. 
 $"Welcome {Coalesce( NickName, FirstName, "Friend" )}!"
 ```
 
-String interpolations can even be nested. Consider this example where **First**, **Middle**, and **Last** names are combined into a greeting. Even if one or two of these values are _blank_, the correct number of spaces will be between the name parts. If none of the parts are provided, the inner string interpolation will collapse to an empty string, and be replaced by the [**Coalesce**](reference/function-isblank-isempty.md) function by "Friend".
+String interpolations can even be nested. Consider this example where **First**, **Middle**, and **Last** names are combined into a greeting. Even if one or two of these values are _blank_, the correct number of spaces are maintained between the name parts. If none of the parts are provided, the inner string interpolation will collapse to an empty string, and be replaced by the [**Coalesce**](reference/function-isblank-isempty.md) function by "Friend".
 
 ```power-fx
 $"Welcome {Coalesce( Trim( $"{First} {Middle} {Last}"}), "Friend" )}!"
@@ -127,7 +127,7 @@ Line 2
 Line 3"
 ```
 
-The above formula results in three lines shown in the label control:
+This formula results in three lines shown in the label control:
 
 :::image type="content" source="media/data-types/text-string-literal-newlines.png" alt-text="Embedded text string and label control showing three lines with Line 1, Line 2, and Line 3.":::
 
@@ -173,7 +173,7 @@ That URI displays a scaled-up version of two purple diamonds:
 
 You can show the most recent image captured in a [**Camera**](/power-apps/maker/canvas-apps/controls/control-camera) control if you set the **Image** property of an image control to the **Photo** property of the camera control. The app holds the image in memory, and the **Photo** property of the camera control returns a URI reference to the image. For example, you might take a picture, and the camera's **Photo** property could return **"appres://blobmanager/7b12ffa2ea4547e5b3812cb1c7b0a2a0/1"**.
 
-You use a URI to reference an image or another media file stored in a database. That way, the app doesn't retrieve the actual data until it's actually needed. For example, an attachment in a Microsoft Dataverse table might return **"appres://datasources/Contacts/table/..."** As in the camera example, you can display this image by setting the **Image** property of an image control to this reference, which retrieves the binary data.
+You use a URI to reference an image or another media file stored in a database. That way, the app doesn't retrieve the actual data until it's needed. For example, an attachment in a Microsoft Dataverse table might return **"appres://datasources/Contacts/table/..."** As in the camera example, you can display this image by setting the **Image** property of an image control to this reference, which retrieves the binary data.
 
 When you save a media data type, such as an image, to a database, the app sends the actual image or media data, not the URI reference.
 
@@ -196,13 +196,13 @@ Power Fx supports two kinds of numbers: **Decimal** and **Float** (with synonyms
 
 **Decimal** is best for most business calculations. It can accurately represent numbers in base 10 meaning that `0.1` can be exactly represented and will not be prone to rounding errors during calculations. It has a large enough range for any business need, up to 10<sup>28</sup> with up to 28 digits of precision.  **Decimal** is the default numeric data type for most Power Fx hosts, used if one simply writes `2*2`.
 
-**Float** is best for scientific calculations. It can represent numbers in a much larger range, up to 10<sup>308</sup>. Precision is limited to 15 decimal places and math is based on base 2 so it cannot represent some common decimal values precisely. **Float** also has higher performance and is favored if that is a factor and precision is not critical.
+**Float** is best for scientific calculations. It can represent numbers in a larger range, up to 10<sup>308</sup>. Precision is limited to 15 decimal places and math is based on base 2 so it cannot represent some common decimal values precisely. **Float** also has higher performance and is favored if that is a factor and precision is not critical.
 
 ### Decimal numbers
 
 The **Decimal** data type most often uses the [.NET decimal data type](xref:System.Decimal). Some hosts, such as Dataverse formula columns that are run in SQL Serer, use the SQL Server decimal data type. 
 
-**Decimal** does math the way you learned in school, using base 10 digits.  That is very important to avoid rounding errors from very small differences that can accumulate when using base 2 math (as used by **Float**).
+**Decimal** does math the way you learned in school, using base 10 digits, important to avoid rounding errors from very small differences that can accumulate when using base 2 math (as used by **Float**).
 
 The range is from positive 79,228,162,514,264,337,593,543,950,335 to negative 79,228,162,514,264,337,593,543,950,335. The decimal separator can be placed anywhere within these numbers, providing up to 28 digits of precision, and still be precisely represented. For example, 79,228,162,514,264.337593543950335 can be exactly represented, as can 7.9228162514264337593543950335.
 
@@ -221,11 +221,11 @@ Database systems often store currencies and perform calculations by using decima
 > [!NOTE]
 > Power Apps only supports **Float** today and it is the type of all numbers.  **Decimal** support will be added soon.
 
-Most Power Fx hosts use **Decimal** by default.  This impacts:
+Most Power Fx hosts use **Decimal** by default.  Having this default means:
 - Literal numbers in formulas.  The number `1.234` will be interpreted as a **Decimal** value.  For example, the formula `1.234 * 2` will interpret the `1.234` and `2` as **Decimal** and return a **Decimal** result.
-- Value function.  `Value( "1.234" )` will return a **Decimal** value.  For example, the formula `Value( "1.234" ) * 2` the **Value** function will interpret the contents of the text string `"1.234"` as a **Decimal**.
+- Value function.  `Value( "1.234" )` returns a **Decimal** value.  For example, the formula `Value( "1.234" ) * 2` the **Value** function will interpret the contents of the text string `"1.234"` as a **Decimal**.
 
-To work with **Float** values, the **Float** function is used.  Extending the example above, `Float( 1.234 )` will convert the **Decimal** `1.234` to **Float**.  **Float** can also be used as a replacement for **Value** to convert a string containing a floating point number such as `Float( "1.234" )` to a **Float** value, which is required if the number can't be represented as a **Decimal**.
+To work with **Float** values, the **Float** function is used.  Extending the example above, `Float( 1.234 )` converts the **Decimal** `1.234` to **Float**.  **Float** can also be used as a replacement for **Value** to convert a string containing a floating point number such as `Float( "1.234" )` to a **Float** value, which is required if the number can't be represented as a **Decimal**.
 
 In summary:
 
