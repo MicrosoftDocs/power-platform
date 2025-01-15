@@ -127,7 +127,7 @@ If data isn't sent to App Insights, contact your Power Platform administrator an
 
 Use named formulas, in the **Formulas** property, to define a formula that can be reused throughout your app.  
 
-In Power Apps, control properties are driven by formulas.  For example, to set the background color consistently across an app, you might set the **Fill** property for each to a common formula:
+In Power Apps, formulas determine the value of control properties.  For example, to set the background color consistently across an app, you might set the **Fill** property for each to a common formula:
 
 ```power-fx
 Label1.Fill: ColorValue( Param( "BackgroundColor" ) )
@@ -159,11 +159,11 @@ The advantages of using named formulas include:
 
 - **The formula's value is always available.**  There's no timing dependency, no **OnStart** that must run first before the value is set, no time in which the formula's value is incorrect.  Named formulas can refer to each other in any order, so long as they don't create a circular reference.  They can be calculated in parallel. 
 - **The formula's value is always up to date.**  The formula can perform a calculation that is dependent on control properties or database records, and as they change, the formula's value automatically updates.  You don't need to manually update the value as you do with a variable.  And formulas only recalculate when needed.
-- **The formula's definition is immutable.**  The definition in **Formulas** is the single source of truth and the value can't be changed somewhere else in the app.  With variables, it's possible that some code unexpectedly changes a value, but this isn't possible with named formulas.
+- **The formula's definition is immutable.**  The definition in **Formulas** is the single source of truth and the value can't be changed somewhere else in the app.  With variables, it's possible that some code unexpectedly changes a value, but this difficult to debug situation isn't possible with named formulas.
 - **The formula's calculation can be deferred.**  Because its value is immutable, it can always be calculated when needed, which means it need not be calculated until it's needed.  Formula values that aren't used until **screen2** of an app is displayed need not be calculated until **screen2** is visible.  Deferring this work can improve app load time.  Named formulas are declarative and provide opportunities for the system to optimize how and when they're computed.
-- **Named formulas is an Excel concept.** Power Fx uses Excel concepts where possible since so many people know Excel well.  Named formulas are the equivalent of named cells and named formulas in Excel, managed with the Name Manager.  They recalculate automatically like a spreadsheet, just like control properties do.
+- **Named formulas is an Excel concept.** Power Fx uses Excel concepts where possible since so many people know Excel well.  Named formulas are the equivalent of named cells and named formulas in Excel, managed with the Name Manager.  They recalculate automatically like cells of a spreadsheet and control properties do.
 
-Named formulas are defined, one after another in the **Formulas** property, each ending with a semi-colon.  The type of the formula is inferred from the types of the expression, which is based on the types of the elements within the expression and how they're used together.  For example, these named formulas retrieve useful information about the current user from Dataverse:
+Named formulas are defined, one after another in the **Formulas** property, each ending with a semi-colon.  The type of the formula is inferred from the types of the elements within the formula and how they're used together.  For example, these named formulas retrieve useful information about the current user from Dataverse:
 
 ```power-fx
 UserEmail = User().Email;
@@ -183,10 +183,10 @@ Some limitations of named formulas:
 ### User defined functions
 
 > [!IMPORTANT]
-> - This is an experimental feature.
-> - Experimental features aren't meant for production use and may have restricted functionality. These features are available before an official release so that you can get early access and provide feedback. More information: [**Understand experimental, preview, and retired features in canvas apps**](/power-apps/maker/canvas-apps/working-with-experimental-preview)
+> - User defined functions is experimental.
+> - Experimental features aren't meant for production use and may not be complete. These features are available before an official release so that you can get early access and provide feedback. More information: [**Understand experimental, preview, and retired features in canvas apps**](/power-apps/maker/canvas-apps/working-with-experimental-preview)
 > - The behavior that this article describes is available only when the **User-defined functions** experimental feature in [**Settings &gt; Upcoming features &gt; Experimental**](/power-apps/maker/canvas-apps/working-with-experimental-preview#controlling-which-features-are-enabled) is turned on (it's off by default).
-> - Your feedback is very valuable to us. Please let us know what you think in the [**Power Apps experimental features community forum**](https://community.powerplatform.com/forums/thread/details/?threadid=c8824a08-8198-ef11-8a69-7c1e52494f33).
+> - Your feedback is valuable to us. Let us know what you think in the [**Power Apps experimental features community forum**](https://community.powerplatform.com/forums/thread/details/?threadid=c8824a08-8198-ef11-8a69-7c1e52494f33).
 
 Power Fx includes a long list of built in functions, such as **If**, **Text**, and **Set**. User defined functions enable you to write your own functions that take parameters and return a value, just as the built in functions do. You can think of user defined functions as an extension to named formulas that adds parameters and supports behavior formulas.
 
@@ -207,7 +207,7 @@ LibraryType := Type( [ { Title: Text, Author: Text, Genre: Text } ] );
 LibraryGenre( SelectedGenre: Text ): LibraryType = Filter( Library, Genre = SelectedGenre );
 ```
 
-Now we can call `LibraryGenre( "Fiction" )` as well as `LibraryGenre( "Reference" )` or other genres with a single user defined function.
+Now we can call `LibraryGenre( "Fiction" )`, `LibraryGenre( "Reference" )`, or filter on other genres with a single user defined function.
 
 The syntax is:
 
@@ -247,7 +247,7 @@ Spend( Amount: Number ) : Void = {
 }
 ```
 
-Now we can call `Spend( 12 )` to check if we have 12 in our Savings, and if so, to debit it by 12 and add 12 to the Spent variable. Note that our user defined function returns `Void`, indicating that it does not have a return value. 
+Now we can call `Spend( 12 )` to check if we have 12 in our Savings, and if so, to debit it by 12 and add 12 to the Spent variable. The return type of this function is `Void` as it does not return a value.
 
 The syntax of a behavior user defined function is:
 
@@ -264,18 +264,18 @@ As with all Power Fx formulas, execution does not end when an error is encounter
 ### User defined types
 
 > [!IMPORTANT]
-> - This is an experimental feature.
-> - Experimental features aren't meant for production use and may have restricted functionality. These features are available before an official release so that you can get early access and provide feedback. More information: [**Understand experimental, preview, and retired features in canvas apps**](/power-apps/maker/canvas-apps/working-with-experimental-preview)
+> - User defined types is an experimental feature.
+> - Experimental features aren't meant for production use and may not be complete. These features are available before an official release so that you can get early access and provide feedback. More information: [**Understand experimental, preview, and retired features in canvas apps**](/power-apps/maker/canvas-apps/working-with-experimental-preview)
 > - The behavior that this article describes is available only when the **User-defined types** experimental feature in [**Settings &gt; Upcoming features &gt; Experimental**](/power-apps/maker/canvas-apps/working-with-experimental-preview#controlling-which-features-are-enabled) is turned on (it's off by default).
-> - Your feedback is very valuable to us. Please let us know what you think in the [**Power Apps experimental features community forum**](https://community.powerplatform.com/forums/thread/details/?threadid=c8824a08-8198-ef11-8a69-7c1e52494f33).
+> - Your feedback is valuable to us. Let us know what you think in the [**Power Apps experimental features community forum**](https://community.powerplatform.com/forums/thread/details/?threadid=c8824a08-8198-ef11-8a69-7c1e52494f33).
 
 Named formulas can be used with the [**Type**](function-type.md) function to create user defined types. Use `:=` instead of `=` to define a user defined type, for example `Book := Type( { Title: Text, Author: Text } )`. See the [**Type** function](function-type.md) for more information and examples.
 
 ## OnError property
 
-Use **OnError** to take action after an error has been detected.  It provides a global opportunity to intercept an error banner before it's displayed to the end user.  It can also be used to log an error with the [**Trace** function](function-trace.md) or write to a database or web service.
+Use **OnError** to take action when an error happens anywhere in the app.  It provides a global opportunity to intercept an error banner before being displayed to the end user.  It can also be used to log an error with the [**Trace** function](function-trace.md) or write to a database or web service.
 
-The result of every formula evaluation is checked for an error.  If it's an error, **OnError** will be evaluated with the same **FirstError** and **AllErrors** scope variables that would have been present if the entire formula was wrapped in an [**IfError** function](function-iferror.md).  
+The result of every formula evaluation is checked for an error.  If it's an error, **OnError** is evaluated with the same **FirstError** and **AllErrors** scope variables that would have been present if the entire formula was wrapped in an [**IfError** function](function-iferror.md).  
 
 If **OnError** is empty, a default error banner is shown with the **FirstError.Message** of the error.  Defining an **OnError** formula overrides this behavior enabling the maker to handle the error reporting as they see fit.  The default behavior can be requested in the **OnError** by rethrowing the error with the [**Error** function](function-iferror.md).  This is useful if some errors are to be filtered out or handled in a different manner, while others are to be passed through.
 
