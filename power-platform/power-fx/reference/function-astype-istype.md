@@ -28,7 +28,7 @@ Checks a record reference for a specific table type (**IsType**) and treats the 
 
 ## Description
 
-The **AsType** and **IsType** functions can be used to convert record references (for example polymorphic lookups in Dataverse) and untyped objects to strongly typed objects.
+The **AsType** and **IsType** functions can be used to convert record references (for example polymorphic lookups in Dataverse) and untyped objects to typed objects that can be used directly.
 
 ### Record References
 
@@ -44,7 +44,7 @@ Microsoft Dataverse also supports polymorphic lookup fields, which can refer to 
 | **Customer**  | **Accounts** or **Contacts**                             |
 | **Regarding** | **Accounts**, **Contacts**, **Knowledge Articles**, etc. |
 
-In canvas-app formulas, use record references to work with polymorphic lookups. Because a record reference can refer to different tables, you don't know which fields will be available when you write a formula. The _Record.Field_ notation isn't available. Those formulas must adapt to the records that the app encounters when it runs.
+In canvas-app formulas, use record references to work with polymorphic lookups. Because a record reference can refer to different tables, you don't know which fields are available at runtime when you write a formula. The _Record.Field_ notation isn't available. Those formulas must adapt to the records that the app encounters when it runs.
 
 The **IsType** function tests whether a record reference refers to a specific table type. The function returns a Boolean TRUE or FALSE.
 
@@ -82,21 +82,21 @@ If( IsType( ThisItem.'Company Name', Accounts ),
 
 For both functions, you specify the type through the name of the data source that's connected to the table. For the formula to work, you must also add a data source to the app for any types that you want to test or cast. For example, you must add the **Users** table as a data source if you want to use **IsType** and **AsType** with an **Owner** lookup and records from that table. You can add only the data sources that you actually use in your app; you don't need to add all the tables that a lookup could reference.
 
-If the record reference is _blank_, **IsType** returns FALSE, and **AsType** returns _blank_. All fields of a _blank_ record will be _blank_.
+If the record reference is _blank_, **IsType** returns FALSE, and **AsType** returns _blank_. All fields of a _blank_ record are _blank_.
 
 ### Untyped Objects
 
 > [!IMPORTANT]
 > - Using **AsType** and **IsType** with untyped objects is an experimental feature.
-> - Experimental features aren't meant for production use and may have restricted functionality. These features are available before an official release so that you can get early access and provide feedback. More information: [**Understand experimental, preview, and retired features in canvas apps**](/power-apps/maker/canvas-apps/working-with-experimental-preview)
+> - Experimental features aren't meant for production use and may not be complete. These features are available before an official release so that you can get early access and provide feedback. More information: [**Understand experimental, preview, and retired features in canvas apps**](/power-apps/maker/canvas-apps/working-with-experimental-preview)
 > - The behavior that this article describes is available only when the **User-defined types** experimental feature in [**Settings &gt; Upcoming features &gt; Experimental**](/power-apps/maker/canvas-apps/working-with-experimental-preview#controlling-which-features-are-enabled) is turned on (it's off by default).
 > - Your feedback is very valuable to us. Please let us know what you think in the [**Power Apps experimental features community forum**](https://community.powerplatform.com/forums/thread/details/?threadid=c8824a08-8198-ef11-8a69-7c1e52494f33).
 
-An untyped object coming from a web API or the [**ParseJSON** function] needs to be converted to a strongly typed object before it can be used in Power Fx. There are multiple ways to do this:
-1. Implicitly type the field at the point it is used. For example, an object is converted to a number if it is used with the `+` operator, if it can be converted to a number. This it he most prone to performing a conversion that is unexpected.
-1. Explicitly type each field individually with the **Decimal**, **Text**, **DateTime**, **GUID** and other type constructor functions. This is the most invasive in your formulas as each field must be done separately.
-1. Explicitly type JSON with the second argument to the **ParseJSON** function. This is an easy way to do it which avoids having an untyped object in Power Fx at all.
-1. Explicitly type an untyped object using the **AsType** function.  You can also test type before attempting the conversion with the **IsType** function.
+An untyped object coming from a web API or the [**ParseJSON** function] needs to be converted to a typed object before it can be used in Power Fx. Options to do this include:
+1. Implicitly type the field at the point it is used. For example, an object is converted to a number if it is used with the `+` operator, if it can be converted to a number. This option can have unexpected conversions and can't convert records and tables as a whole.
+1. Explicitly type each field individually with the **Decimal**, **Text**, **DateTime**, **GUID** and other type constructor functions. This is the most invasive to your formulas as each field must be done separately.
+1. Explicitly type JSON with the second argument to the **ParseJSON** function. This is an easy option that avoids needing the untyped object.
+1. Explicitly type an untyped object using the **AsType** function. You can also test type before attempting the conversion with the **IsType** function.
 
 ## Syntax
 
@@ -175,41 +175,41 @@ An untyped object coming from a web API or the [**ParseJSON** function] needs to
    - "Account: " and then the **Account Name** field from the **Accounts** table if the **Company Name** field refers to an account.
    - "Contact: " and then the **Full Name** field from the **Contacts** table if the **Company Name** field refers to a contact.
 
-   Your results might differ from those in this topic because it uses sample data that was modified to show additional types of results.
+   Your results might differ because the sample data may have been modified to show more types of results.
 
 ### Untyped Objects
 
-The following examples show a very simple JSON record interpreted in various ways by **ParseJSON**, **AsType**, and **IsType** in the [Pac CLI Power Fx REPL](../../developer/cli/reference/power-fx.md).
+The following examples show a simple JSON record interpreted in various ways by **ParseJSON**, **AsType**, and **IsType** in the [Pac CLI Power Fx REPL](../../developer/cli/reference/power-fx.md).
 
-In this first example, no type information is provided to ParseJSON, so it returns an untyped object.
+In this first example, no type information is provided to **ParseJSON**, so it returns an untyped object.
 
 ```powerapps-dot
 >> Set( rec, ParseJSON( "{""a"":1}" ) )
 rec: <Untyped: Use Value, Text, Boolean, or other functions to establish the type>
 ```
 
-We can use the value in this record in a numerical context, in which case the value is implicitly converted to a number.
+The field is implicitly converted to a number when used in a numerical context.
 
 ```powerapps-dot
 >> 1 + rec.a
 2
 ```
 
-We could have explicitly converted the record to a strongly typed Power Fx record with the second argument to **ParseJSON**.
+As an alternative, this example explicitly converts the record to a typed Power Fx record with the second argument to **ParseJSON**.
 
 ```powerapps-dot
 >> ParseJSON( "{""a"":1}", Type( {a: Number} ) )
 {a:1}
 ```
 
-We could have also explicitly converted the record to a strongly typed Power Fx record with the second argument to **AsType**.
+And another alternative, this example explicitly converts the record to a typed Power Fx record using **AsType**.
 
 ```powerapps-dot
 >> AsType( ParseJSON( "{""a"":1}" ), Type( {a: Number} ) )
 {a:1}
 ```
 
-Finally, if we weren't sure, we could have tested the type before converting it with **IsType**.
+Finally, if we weren't sure, this example tests the type before converting it with the **IsType** function.
 
 ```powerapps-dot
 >> IsType( ParseJSON( "{""a"":1}" ), Type( {a: Number} ) )
