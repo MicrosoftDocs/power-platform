@@ -20,7 +20,7 @@ Using the SharePoint Documents table in a Dynamics 365 environment outside of th
 
 Starting in March 2025, the current access is removed to enhance system protection. To ensure continued access, follow these steps to create an Azure application with the necessary SharePoint permissions, set up managed identities in Dataverse, and configure federated credentials.
 
-## Create an Azure Application with SharePoint permissions
+## Create an Azure application with SharePoint permissions
 
 Create an App registration with API permission to SharePoint. Learn more about registering an app and SharePoint access in [Azure Quickstart Register App](/entra/identity-platform/quickstart-register-app?tabs=certificate) and [SharePoint access via Azure AD App-Only](/sharepoint/dev/solution-guidance/security-apponly-azuread).
 
@@ -59,7 +59,7 @@ Create an App registration with API permission to SharePoint. Learn more about r
 
    1. Select **Grant admin consent for `<tenant name>`**.
 
-## Setup managed identities in Dataverse
+## Create managed identities in Dataverse
 
 Create managed identity records in Dataverse. Learn more about managed identities in [Setup Dataverse Managed Identities](/power-platform/admin/set-up-managed-identity).
 
@@ -91,7 +91,7 @@ An example using POST:
   }
   ```
 
-### Add record in Share Point Managed Identities table
+### Add record in SharePoint Managed Identities table
 
 Insert a row into the `sharepointmanagedidentity` table using values from the following table.
 
@@ -117,7 +117,7 @@ An example using POST:
   }
   ```
 
-## Setup federated credential
+## Create federated credential
 
 Create a federated credential for the app registration. Learn more about federated identity credentials in [Configure an application for federated identity credential](/entra/workload-id/workload-identity-federation-config-app-trust-managed-identity?tabs=microsoft-entra-admin-center).
 
