@@ -110,7 +110,7 @@ An example using POST:
 
   ```json
   {
-  "sharepointmanagedidentityid": "<<newGuid>>",
+  "sharepointmanagedidentityid": "<newGuid>",
   "uniquename": "msft_ppmiforsharepointauth",
   "name": "Managed Identity For SharePoint Auth",
   "ManagedIdentity@odata.bind": "/managedidentities(<managedIdentityId>)"
