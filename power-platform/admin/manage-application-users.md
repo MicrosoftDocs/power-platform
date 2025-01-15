@@ -20,7 +20,7 @@ We're in the process of moving application user management from the legacy web c
 > [!NOTE]
 > [Deleting an inactive, application user](#delete-an-inactive-application-user) is now supported.
 > [!TIP]
-> Check out the video: [Administer application users, security roles, teams, and users in the Power Platform admin center](https://www.microsoft.com/videoplayer/embed/RWJBr8).
+> Check out the video: [Administer application users, security roles, teams, and users in the Power Platform admin center](https://learn-video.azurefd.net/vod/player?id=5799c67e-f283-4cbd-aafa-bc38a3f53276).
 
 ## View application users in an environment
 

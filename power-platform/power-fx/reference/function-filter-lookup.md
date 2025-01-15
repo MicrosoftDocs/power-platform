@@ -24,7 +24,7 @@ Finds one or more [records](/power-apps/maker/canvas-apps/working-with-tables#re
 
 Watch this video to learn how to use **Filter**, **Search, and **LookUp** functions:
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWLj3m]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=55b2c144-b5ac-4d66-b398-fea03eb21f17]
 
 > [!NOTE]
 > [PAC CLI pac power-fx commands](/power-platform/developer/cli/reference/power-fx) do not support the **Search** function.
