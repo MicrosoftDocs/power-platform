@@ -50,3 +50,5 @@ It’s important admins review changes in the solution and the sharing request. 
 ## Related articles
 
 [Overview of pipelines in Power Platform](pipelines.md)
+
+[View solutions on the deployment page for makers](/power-apps/maker/data-platform/maker-deployment-area)
