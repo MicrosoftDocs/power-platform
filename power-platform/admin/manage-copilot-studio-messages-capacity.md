@@ -14,7 +14,7 @@ search.audienceType:
 
 # Manage Copilot Studio messages and capacity 
 
-The Microsoft Copilot Studio capacity management experience in the Power Platform admin center allows administrators to manage Copilot Studio message capacity, while monitoring overall capacity consumption. This experience provides an overview of the licensing models in use. This experince allows administrators to efficiently manage their available session capacity.
+The Microsoft Copilot Studio capacity management experience in the Power Platform admin center allows administrators to manage Copilot Studio message capacity, while monitoring overall capacity consumption. This experience provides an overview of the licensing models in use. This experience allows administrators to efficiently manage their available session capacity.
 
 ## Use the Summary tab
 
