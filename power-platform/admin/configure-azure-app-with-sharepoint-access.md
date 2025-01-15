@@ -16,7 +16,9 @@ ms.custom:
 ---
 # Configure Azure app for SharePoint access
 
-To access the SharePoint Documents table in a Dynamics 365 environment through integration, you need to set up an Azure application. Starting in March 2025, the current access is removed to enhance system protection. Follow these steps to create an Azure application with the necessary SharePoint permissions, set up managed identities in Dataverse, and configure federated credentials.
+Using the SharePoint Documents table in a Dynamics 365 environment outside of the documents grid in a model driven app requires an Azure application to grant access. Examples of this access include use within Power Automate or with Dataverse API calls. The setup uses the Power Platform Managed Identities with Azure to grant access.
+
+Starting in March 2025, the current access is removed to enhance system protection. To ensure continued access, follow these steps to create an Azure application with the necessary SharePoint permissions, set up managed identities in Dataverse, and configure federated credentials.
 
 ## Create an Azure Application with SharePoint permissions
 
@@ -147,3 +149,5 @@ Create a federated credential for the app registration. Learn more about federat
     - Replace `<sharepointmanagedidentityid>` with the GUID created earlier with the sharepointmanagedidentities record.
 
 1. Select **Add** to create the credential.
+
+By following these steps, you configure an Azure application with the necessary SharePoint permissions, set up managed identities in Dataverse, and configure federated credentials. This setup ensures secure and seamless integration between Dynamics 365 and SharePoint.
