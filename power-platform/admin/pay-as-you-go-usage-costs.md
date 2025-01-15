@@ -16,15 +16,15 @@ search.audienceType:
 ---
 # View usage and billing information
 
-Aggregated billing information is available in the Azure portal, and detailed usage drill-downs are available in the Power Platform admin center. Reporting is available for Power Platform (Power Apps per-app, Copilot Studio meter, and Dataverse capacity add-on meters) as well as Microsoft 365 (Copilot Chat via Copilot Studio meter) consumptive services. 
+Aggregated billing information is available in the Azure portal, and detailed usage drill-downs are available in the Power Platform admin center. Reporting is available for Power Platform (Power Apps per-app, Copilot Studio meter, and Dataverse capacity add-on meters) and Microsoft 365 (Copilot Chat via Copilot Studio meter) consumptive services. 
 
-In March 2022, we released a preview of the Power Platform requests meter. During this preview we will report on usage of Power Platform requests in the Power Platform admin center downloadable report. However, we will not bill for this usage until we reach general availability (GA) for this meter; usage will not appear in the Azure portal until then. 
+In March 2022, we released a preview of the Power Platform requests meter. During this preview, we'll report on usage of Power Platform requests in the Power Platform admin center downloadable report. However, we won't bill for this usage until we reach general availability (GA) for this meter; usage won't appear in the Azure portal until then. 
 
 ### View billing information in the Azure portal
 
 All Power Platform and Microsoft 365 Copilot meters are billed to Azure subscriptions. You can view the amounts that have been billed for each meter in the Azure portal using Azure Cost Management. Billed amounts are updated daily (and sometimes more frequently), but it can take up to 24 hours after usage of a service to show up in Azure Cost Management.
 
-Within Azure Cost Management, you can filter and view billing details by meter and/or by Azure resource. Note that each billing plan corresponds to a Power Platform account resource. So to view charges for a specific billing plan, simply filter for the Power Platform account resource of the same name.
+Within Azure Cost Management, you can filter and view billing details by meter and/or by Azure resource. Each billing plan corresponds to a Power Platform account resource. So to view charges for a specific billing plan, simply filter for the Power Platform account resource of the same name.
 
 :::image type="content" source="media/pay-as-you-go-billing-info-azure-portal.png" alt-text="Billing information in the Azure portal":::
 
@@ -56,7 +56,7 @@ The downloadable report contains the following fields:
 | Overage Quantity | Calculated by reducing Consumed Quantity by Entitled Quantity | 
 | Billed Quantity | Calculated by the unit of measure and reporting frequency |
 | Unit of measure | The measure that billing occurs to Azure for the submeter |
-| Status | Indicates if it is getting billed to Azure or if it is in Preview and not billed |
+| Status | Indicates if it's getting billed to Azure or if it's in Preview and not billed |
 
 
 ### Determining billed quantity
@@ -73,11 +73,11 @@ For the Power Apps per-app meter, you'll see the number of unique users in the r
 
 For Dataverse capacity add-on meters, units are in gigabytes per month, with three usage reports sent to Azure every 24 hours. In your report, you'll see capacity distribution across database, files, and logs based on your consumption. 
 
-For agent meters, units are in messages consumed, which is a numeric quanity like 32. This means that a total of 32 messages units have been consumed. 
+For agent meters, units are in messages consumed, which is a numeric quantity like 32. This means that a total of 32 messages units have been consumed. 
 
 ## How to manage costs
 
-You can leverage Azure Cost Management and alerting to effectively manage spending within your organization. When budget amounts are approached or reached, you can configure alerts to be sent automatically or trigger actions to take place. For more details, go to [Tutorial: Create and manage Azure budgets](/azure/cost-management-billing/costs/tutorial-acm-create-budgets) and [Create and manage action groups in the Azure portal](/azure/azure-monitor/alerts/action-groups).  
+You can use Azure Cost Management and alerting to effectively manage spending within your organization. When budget amounts are approached or reached, you can configure alerts to be sent automatically or trigger actions to take place. For more details, go to [Tutorial: Create and manage Azure budgets](/azure/cost-management-billing/costs/tutorial-acm-create-budgets) and [Create and manage action groups in the Azure portal](/azure/azure-monitor/alerts/action-groups).  
 
 Azure Cost Management provides options to set budgets for Azure resources and specific meters. You can use these capabilities to set budgets at a billing policy level by setting a budget for its corresponding Power Platform account resource. You can also set budgets for individual Power Platform meters.
 
