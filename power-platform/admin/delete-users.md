@@ -18,7 +18,7 @@ This article covers the various levels and methods of user deletion in Microsoft
 
 Watch this video for a detailed walkthrough of how to delete users from your environment:
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE5ddyh]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=0245704a-ef23-4279-b73f-5273a36b5124]
 
 > [!NOTE]
 > Before deleting a user from an environment, you must delete the user from Microsoft 365 admin center or Microsoft Entra ID.
@@ -262,7 +262,7 @@ Once permanently deleted, the name of the deleted user no longer shows in the **
 
 Users with a disabled status can be deleted, in bulk, using the [Remove a large amount of specific, targeted data with bulk deletion](delete-bulk-records.md) article. You can create bulk delete jobs to [soft delete](#soft-delete-users-in-power-platform) and to [permanently delete users](#permanently-delete-users-in-power-platform).
 
- > [!VIDEO https://www.microsoft.com/videoplayer/embed/RW1305f]
+ > [!VIDEO https://learn-video.azurefd.net/vod/player?id=2b0d0063-e683-48eb-a89f-c70faae44f60]
 
 > [!Note]
 > In the video, it shows you how to use bulk delete through the bulk deletion process. This is replaced by a **bulk delete** action on the **Settings > Users + permissions > Users** page. 
