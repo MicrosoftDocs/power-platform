@@ -37,7 +37,7 @@ To restore deleted Dataverse records, turn on the recycle bin in your environmen
 
 ### Turn on the recycle bin
 
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 admin or Microsoft Power Platform admin).
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 admin or Microsoft Power Platform admin).
 1. Select **Environments** and open the environment you want.
 1. Select **Settings** > **Product** > **Features**.
 1. Scroll down to view the **Recycle Bin** settings.
@@ -57,7 +57,7 @@ Viewing and acting on the deleted records in the Power Apps user experience is o
 
 #### Power Platform Admin Center
 
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a user with the system administrator security role. 
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a user with the system administrator security role. 
 1. Select **Environments** and open the environment you want to view and restore deleted records.
 1. Go to **Settings** > **Data management** > **View Deleted Records**.
 1. You can view all the deleted records from all tables in a new tab. 
@@ -66,7 +66,7 @@ Viewing and acting on the deleted records in the Power Apps user experience is o
 
 #### Power Platform Environment Settings App.
 
-1. Sign in to the Power Platform environment, as a user with the system administrator security role. 
+1. Sign in to the Power Platform environment, as a user with the system administrator security role. 
 1. Select **Power Platform Environment Settings** app, or click **Settings** > **Advanced Settings**.
 1. Go to **Settings** > **Data management** > **View Deleted Records**.
 1. You can view all the deleted records from all tables in a new tab. 
@@ -81,7 +81,7 @@ System Admins can disable the recycle bin for a table.
 1. Select **Properties** on the command bar, expand **Advanced options**, and then unselect **Enable recycle bin**. (if the check box is disabled, the table cannot be enabled for recycle bin, or the feature is not turned on for the environment.
 1. **Config Interval** represents number of days data will be persisted in Recycle Bin for the table. Setting this to **-1** uses environment default value for this table.
 
-![image](https://github.com/user-attachments/assets/d427c065-d84e-42d8-b38a-f4f7fe14687f)
+:::image type="content" source="media/disable-recyclebin-for-table.png" alt-text="Disable Recycle Bin for a table.":::
 
 ## Limitations
 
