@@ -231,6 +231,10 @@ IsGenre( Book: BookType, SelectedGenre: Text ): Boolean = (Book.Genre = Selected
 
 Record matching for function parameters is tighter than it is in other parts of Power Fx. The fields of a record value must be a proper subset of the type definition and can't include additional fields.  For example, `IsGenre( { Title: "My Book", Published: 2001 }, "Fiction" )` will result in an error.
 
+Note, recursion is not yet supported by user defined functions.
+
+### Behavior user defined functions
+
 Named formulas and most user defined functions do not support behavior functions with side effects, such as **Set** or **Notify**. In general, it is best to avoid updating state if you can, instead relying on functional programming patterns and allowing Power Fx to recalculate formulas as needed automatically. But, there are cases where it is unavoidable. To include behavior logic in a user defined function, wrap the body in curly braces:
 
 ```powerapps-dot
@@ -243,7 +247,7 @@ Spend( Amount: Number ) : Void = {
 }
 ```
 
-Now we can call `Spend( 12 )` to check if we have 12 in our Savings, and if so, to debit it by 12 and add 12 to the Spent variable. Note that our user defined function returns `Void`, indicating that it does not have a return value. Even though it returns Void, we can still return an Error if there is a problem, but the Error function will not stop execution and the changes to Savings and Spent if the **If** function did not prevent them from running.
+Now we can call `Spend( 12 )` to check if we have 12 in our Savings, and if so, to debit it by 12 and add 12 to the Spent variable. Note that our user defined function returns `Void`, indicating that it does not have a return value. 
 
 The syntax of a behavior user defined function is:
 
@@ -255,8 +259,7 @@ The syntax of a behavior user defined function is:
 - *ReturnType* – Required. The type of the return value from the function.  Use **Void** if the function does not return a value.
 - *Formula(s)* – Required. The formula that calculates the value of the function based on the parameters.
 
-> [!NOTE]
-> Recursion is not yet supported by user defined functions. 
+As with all Power Fx formulas, execution does not end when an error is encountered. Even though it returns Void, we can still return an Error if there is a problem, but the Error function will not stop execution and the changes to Savings and Spent if the **If** function did not prevent them from running. The [**IfError** function](function-iferror.md) can also be used to prevent further execution after an error.
 
 ### User defined types
 

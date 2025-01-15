@@ -24,22 +24,22 @@ contributors:
 Constructs a user defined type for use with user defined functions and untyped values.
 
 > [!IMPORTANT]
-> - This is an experimental feature.
-> - Experimental features aren't meant for production use and may have restricted functionality. These features are available before an official release so that you can get early access and provide feedback. More information: [**Understand experimental, preview, and retired features in canvas apps**](/power-apps/maker/canvas-apps/working-with-experimental-preview)
+> - These functions are experimental.
+> - Experimental features aren't meant for production use and may not be complete. These features are available before an official release so that you can get early access and provide feedback. More information: [**Understand experimental, preview, and retired features in canvas apps**](/power-apps/maker/canvas-apps/working-with-experimental-preview)
 > - The behavior that this article describes is available only when the **User-defined types** experimental feature in [**Settings &gt; Upcoming features &gt; Experimental**](/power-apps/maker/canvas-apps/working-with-experimental-preview#controlling-which-features-are-enabled) is turned on (it's off by default).
-> - Your feedback is very valuable to us. Please let us know what you think in the [**Power Apps experimental features community forum**](https://community.powerplatform.com/forums/thread/details/?threadid=c8824a08-8198-ef11-8a69-7c1e52494f33).
+> - Your feedback is valuable to us. Let us know what you think in the [**Power Apps experimental features community forum**](https://community.powerplatform.com/forums/thread/details/?threadid=c8824a08-8198-ef11-8a69-7c1e52494f33).
 
 ## Description
 
-Every function in Power Fx defines the types of values that can be passed in as parameters and the type of the output. These types are checked when you write a formula and an error is produced if they don't agree with what is expected. This helps the editor suggest good options for what to pass into the function and helps detect errors as early as possible. 
+Every function in Power Fx defines the types of values that can be passed in as parameters and the type of the output. Types are checked when you write a formula and errors shown if they don't agree with what is expected. Types are also used by the editor to suggest good options for what to pass into the function and detect errors as early as possible. 
 
-When creating your own user defined functions, you will need to specify the input and output types. For simple types like [**Decimal**](../data-types.md) or [**Text**](../data-types.md), this is easy as these basic types are predefined. For more complex types, such as records or tables, you will use the **Type** function to create the type.
+When creating your own user defined functions, you need to specify the input and output types. For simple types like [**Decimal**](../data-types.md) or [**Text**](../data-types.md), this is easy as these basic types are predefined. For more complex types, such as records or tables, use the **Type** function to create the type.
 
-The **Type** function also makes untyped objects easier to work with. In conjunction with [**ParseJSON**](function-parsejson.md), [**IsType**](function-astype-istype.md), and [**AsType**](function-astype-istype.md) functions, an untyped object can be converted to a typed object in which columns no longer need to be individually typed at the point of usage.
+The **Type** function also makes untyped objects easier to work with. With [**ParseJSON**](function-parsejson.md), [**IsType**](function-astype-istype.md), and [**AsType**](function-astype-istype.md) functions, an untyped object can be converted to a typed object in which columns no longer need to be individually typed at the point of usage.
 
 The **Type** function takes a *TypeSpecification* as its only argument. The simples type specification is to reference an existing type, for example `Type( Text )`. A type specification for a record or table is similar to defining a record or table with literal values, where the values are replaced by type names. For example, `{Name: "Jane"}` would be typed with `Type( {Name: Text} )`. Tables are specified with square brackets and not the [**Table**](function-table.md) function and only one record can be provided. For example, `[1,2,3]` would be typed with `Type( [Number] )`.
 
-Use the **RecordOf** function to extract the record type of a table type. For example, `Type( RecordOf( Library ) )` would return the type of a single book from the library. To make a table type from a record type, wrap the record type in square brackets, for example `Type( [ Book ] )` would define a library.  **RecordOf** can only be used within the **Type** function.
+Use the **RecordOf** function to extract the record type of a table type. For example, `Type( RecordOf( Library ) )` would return the type of a single book from the library. To make a table type from a record type, wrap the record type in square brackets, for example `Type( [ Book ] )` would define a library. **RecordOf** can only be used within the **Type** function.
 
 The **Type** function, and the type value it returns, can only be used in specific places in Power Fx such as the second argument to **ParseJSON**. In Canvas apps, the **Type** function can be used with a named formula in [**App.Formulas**](object-app.md#formulas-property).
 
@@ -70,7 +70,7 @@ BookType := Type( { Title: Text, Author: Text, Published: Number } );
 LibraryType := Type( [ BookType ] );
 ```
 
-Notice how the actual title text `"A Study in Scarlet"` has been replaced with the type name `Text` in the type specification, a placeholder for any text value.  A parameter or variable of type `BookType` can hold one of the books in `Library`, while `LibraryType` can hold the entire table.  With these types in place, we can define these user defined functions:
+Notice how the actual title text `"A Study in Scarlet"` has been replaced with the type name `Text` in the type specification, a placeholder for any text value. A parameter or variable of type `BookType` can hold one of the books in `Library`, while `LibraryType` can hold the entire table. With these types in place, we can define these user defined functions:
 
 ```powerapps-dot
 SortedBooks( books: LibraryType ): LibraryType = 
@@ -88,6 +88,6 @@ ParseJSON( "{""Title"":""Gulliver's Travels"", ""Author"": ""Jonathan Swift"", "
 )
 ```
 
-Using `BookType` as the second argument to **ParseJSON** ensures that the fields have the right names and data types, and also returns a strongly typed value for easier use. For example, if the field `Title` is renamed to `BookTitle` then an error will be produced. Likewise, if the Boolean value `true` is passed for the field `Published` then an error will be produced as it needs to be a number.
+Using `BookType` as the second argument to **ParseJSON** results in a typed record that can be used like any other Power Fx record.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
