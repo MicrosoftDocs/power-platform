@@ -150,4 +150,4 @@ Create a federated credential for the app registration. Learn more about federat
 
 1. Select **Add** to create the credential.
 
-By following these steps, you configure an Azure application with the necessary SharePoint permissions, set up managed identities in Dataverse, and configure federated credentials. This setup ensures secure and seamless integration between Dynamics 365 and SharePoint.
+By following these steps, you configure an Azure application with the necessary SharePoint permissions, set up managed identities in Dataverse, and configure federated credentials.
