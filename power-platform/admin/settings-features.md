@@ -79,7 +79,7 @@ To update these settings, make sure you have the System Administrator or System 
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-| Allow users to get AI suggestions when creating formula columns. | If **On**, app makers are able to describe what the formula should do and get AI generated results to help create or edit a Microsoft Dataverse formula column. Formula suggestions in formula columns accept natural language input to interpret and suggest a Power Fx formula using GPT-based AI model. Learn more in [Get formula suggestions](/power-apps/maker/data-platform/formula-columns#get-formula-suggestions-preview-1).  | Off |
+| Allow users to get AI suggestions when creating formula columns. | If **On**, app makers are able to describe what the formula should do and get AI generated results to help create or edit a Microsoft Dataverse formula column. Formula suggestions in formula columns accept natural language input to interpret and suggest a Power Fx formula using a GPT-based AI model. Learn more in [Get formula suggestions](/power-apps/maker/data-platform/formula-columns#get-formula-suggestions-preview-1).  | Off |
 
 ## Natural language grid and view search (preview)
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
