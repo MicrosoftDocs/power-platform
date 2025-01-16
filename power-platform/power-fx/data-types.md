@@ -42,7 +42,7 @@ This article provides details for the data types that Power Fx supports. When Po
 | **Table**            | A table of records. All of the records must have the same names for their fields with the same data types, and omitted fields are treated as _blank_. This compound data type contains instances of other data types that are listed in this topic. More information: [Working with tables](/power-apps/maker/canvas-apps/working-with-tables). This data type is supported by the **Type** function if an instance of a **Table** is used.    | **Table( { FirstName: "Sidney",<br>LastName: "Higa" }, <br>{ FirstName: "Nancy",<br>LastName: "Anderson" } )**                |
 | **Text**             | A Unicode text string.                                                                                                                                                                                                                                                                                                                          | **"Hello, World"**                                                                                                            |
 | **Time**             | A time without a date, in the time zone of the app's user.                                                                                                                                                                                                                                                                                      | **Time( 11, 23, 45 )**                                                                                                        |
-| **Untyped** | An object of an undeclared type. The underlying object could be any existing type, and can be converted into compatible types using functions such as [Boolean()](reference/function-boolean.md), [Value()](reference/function-value.md), [Table()](reference/function-table.md) etc. For more information, see [Untyped object](untyped-object.md) and [Working with JSON](working-with-json.md). | **ParseJSON("{ ""Field"" : 1234 }").Field** |
+| **Untyped** | An object of an undeclared type. The underlying object could be any existing type, and can be converted into compatible types using functions such as [Boolean()](reference/function-boolean.md), [Value()](reference/function-value.md), [Table()](reference/function-table.md), etc. For more information, see [Untyped object](untyped-object.md) and [Working with JSON](working-with-json.md). | **ParseJSON("{ ""Field"" : 1234 }").Field** |
 | **Void** | Used only by behavior user defined functions, it indicates that a function does not have a return type. This data type is not supported by the **Type** function. Even though a function does not have a return type or value, it can always return an error. | **Hi(): Void = { Notify( "Hello!"  ) }**
 | **Yes/No**       | A choice from a set of two options, backed by a boolean value. This data type combines a localizable text label with a boolean value. The label appears in the app, and the boolean value is stored and used for comparisons. This data type is supported by the **Type** function if an instance of a **Yes/No** field is used by name.                                                                                                                   | **ThisItem.Taxable**                                                                                                          |
 
@@ -93,7 +93,7 @@ This formula returns the text string **We have 3 apples, 4 bananas, yielding 7 f
 Embedded formulas can include any functions or operators. All that is requires is that the result of the formula can be coerced to a text string. For example, this formula inserts **NickName** if it's supplied, or the **FirstName** if not, in a greeting:
 
 ```power-fx
-$"Welcome {Coalesce( NickName, FirstName )}, it's great to meet you!" )
+$"Welcome {Coalesce( NickName, FirstName )}, it's great to meet you!"
 ```
 
 If **NickName** is set to "Joe", then this formula produces the text string **Welcome Joe, it's great to meet you!**. But if **NickName** is _blank_ and **FirstName** is "Joseph", then this formula produces **Dear Joseph, great to meet you!** instead.
@@ -131,7 +131,7 @@ This formula results in three lines shown in the label control:
 
 :::image type="content" source="media/data-types/text-string-literal-newlines.png" alt-text="Embedded text string and label control showing three lines with Line 1, Line 2, and Line 3.":::
 
-Newlines are also supported with string interpolation, as shown below:
+Newlines are also supported with string interpolation:
 
 ```power-fx
 $"Line {1}
@@ -139,13 +139,13 @@ Line {1+1}
 Line {1+1+1}"
 ```
 
-The above formula results in the same output:
+Which results in the same output:
 
 :::image type="content" source="media/data-types/string-interpolation-newlines.png" alt-text="String interpolation formula and label control showing three lines with Line 1, Line 2, and Line 3.":::
 
 ### Image and Media resources
 
-Through the **File** menu, you can add image, video, and audio files as app resources. The name of the imported file becomes the resource name in the app. In this graphic, the Northwind Traders logo, which is named **nwindlogo**, has been added to an app:
+Through the **File** menu, you can add image, video, and audio files as app resources. The name of the imported file becomes the resource name in the app. In this graphic, the Northwind Traders logo, which is named **nwindlogo**, has been added to the app:
 
 ![Northwind resource.](media/data-types/nwind-resource.png "Northwind resource")
 
@@ -181,20 +181,20 @@ When you save a media data type, such as an image, to a database, the app sends 
 
 As text strings and URIs, these data types have no preset limit on their length.
 
-The binary data that these data types reference also has no preset limit on size. For example, an image captured through the camera control that's now referenced as **"appres://..."** can be as large and high resolution as the device's camera can muster. The resolution, frame rate, and other attributes of media files aren't limited by the data type, but specific controls for playing and capturing media may have their own limitations.
+The binary data that these data types reference also has no preset limit on size. For example, an image captured through the camera control that's referenced as **"appres://..."** can be as large and high resolution as the device's camera can muster. The resolution, frame rate, and other attributes of media files aren't limited by the data type, but specific controls for playing and capturing media may have their own limitations.
 
-However, all data sizes are subject to the amount of available memory in the app. Browsers running on a desktop computer typically support more than 100 megabytes of data. However, the amount of available memory on a device such as a phone might be far lower, typically in the range 30-70 megabytes. To determine whether your app will run within these limits, test common scenarios on all devices on which it should run.
+However, all data sizes are subject to the amount of available memory in the app. Browsers running on a desktop computer typically support more than 100 megabytes of data. However, the amount of available memory on a device such as a phone might be far lower, typically in the range 30-70 megabytes. To determine whether your app runs within these limits, test common scenarios on all devices on which it should run.
 
 As a best practice, hold data in memory only as long as necessary. Upload images to a database as soon as you can; download images only when the app's user requests them.
 
 ## Numbers
 
 > [!NOTE]
-> Power Apps only supports **Float** today and it is the type of all numbers.  **Decimal** support will be added soon.
+> Power Apps only supports **Float** today and it is the type of all numbers. **Decimal** support will be added soon.
 
 Power Fx supports two kinds of numbers: **Decimal** and **Float** (with synonyms **Number** and **Currency**).
 
-**Decimal** is best for most business calculations. It can accurately represent numbers in base 10 meaning that `0.1` can be exactly represented and will not be prone to rounding errors during calculations. It has a large enough range for any business need, up to 10<sup>28</sup> with up to 28 digits of precision.  **Decimal** is the default numeric data type for most Power Fx hosts, used if one simply writes `2*2`.
+**Decimal** is best for most business calculations. It can accurately represent numbers in base 10 meaning that `0.1` can be exactly represented and will avoid rounding errors during calculations. It has a large enough range for any business need, up to 10<sup>28</sup> with up to 28 digits of precision. **Decimal** is the default numeric data type for most Power Fx hosts, used if one simply writes `2*2`.
 
 **Float** is best for scientific calculations. It can represent numbers in a larger range, up to 10<sup>308</sup>. Precision is limited to 15 decimal places and math is based on base 2 so it cannot represent some common decimal values precisely. **Float** also has higher performance and is favored if that is a factor and precision is not critical.
 
@@ -210,22 +210,22 @@ The range is from positive 79,228,162,514,264,337,593,543,950,335 to negative 79
 
 The **Float** data type, also known as **Number** or **Currency**, uses the [IEEE 754 double-precision floating-point standard](https://en.wikipedia.org/wiki/IEEE_754). This standard provides a very large range of numbers in which to work, from –1.79769 x 10<sup>308</sup> to 1.79769 x 10<sup>308</sup>. The smallest value that can be represented is 5 x 10<sup>–324</sup>.
 
-**Float** can exactly represent whole numbers (or integers) between –9,007,199,254,740,991 (–(2<sup>53</sup> – 1)) and 9,007,199,254,740,991 (2<sup>53</sup> – 1), inclusive. This range is larger than the 32-bit (or 4-byte) integer data types that databases commonly use. However, canvas apps can't represent 64-bit (or 8-byte) integer data types. You might want to store the number in a text field or use a calculated column to make a copy of the number in a text field, so that it's mapped into a **Text** data type in the canvas app. In this manner, you can hold, display, and enter these values, as well as comparing them to determine whether they're equal; however, you can't perform numerical calculations on them in this form.
+**Float** can exactly represent whole numbers (or integers) between –9,007,199,254,740,991 (–(2<sup>53</sup> – 1)) and 9,007,199,254,740,991 (2<sup>53</sup> – 1), inclusive. This range is larger than the 32-bit (or 4-byte) integer data types that databases commonly use. However, canvas apps can't represent 64-bit (or 8-byte) integer data types. You might want to store the number in a text field or use a calculated column to make a copy of the number in a text field, so that it maps into a **Text** data type in the canvas app. In this manner, you can hold, display, and enter these values, and comparing them to determine whether they're equal; however, you can't perform numerical calculations on them in this form.
 
 Floating-point arithmetic is approximate, so it can sometimes give unexpected results with many documented examples. You might expect the formula **55 / 100 \* 100** to return exactly 55 and **(55 / 100 \* 100) - 55** to return exactly zero. However, the latter formula returns 7.1054 x 10<sup>–15</sup>, which is very small but not zero. That tiny difference doesn't normally cause a problem, and the app rounds it away when showing the result. However, small differences can compound in subsequent calculations and appear to give the wrong answer.
 
-Database systems often store currencies and perform calculations by using decimal math, which offers a smaller range but greater control over the precision. By default, canvas apps map currencies in and out of floating-point values; therefore, the result might differ from calculations that are done in a native decimal data type. If this type of discrepancy will cause problems, you might want to work with these values as **Text**, just as you might with large integers described earlier in this section.
+Database systems often store currencies and perform calculations by using decimal math, which offers a smaller range but greater control over the precision. By default, canvas apps map currencies in and out of floating-point values; therefore, the result might differ from calculations that are done in a native decimal data type. Depending on the precision needs of your app, you might want to work with these values as **Text**, just as described for large integers earlier.
 
 ### Defaults and conversions
 
 > [!NOTE]
-> Power Apps only supports **Float** today and it is the type of all numbers.  **Decimal** support will be added soon.
+> Power Apps only supports **Float** today and it is the type of all numbers. **Decimal** support will be added soon.
 
-Most Power Fx hosts use **Decimal** by default.  Having this default means:
-- Literal numbers in formulas.  The number `1.234` will be interpreted as a **Decimal** value.  For example, the formula `1.234 * 2` will interpret the `1.234` and `2` as **Decimal** and return a **Decimal** result.
-- Value function.  `Value( "1.234" )` returns a **Decimal** value.  For example, the formula `Value( "1.234" ) * 2` the **Value** function will interpret the contents of the text string `"1.234"` as a **Decimal**.
+Most Power Fx hosts use **Decimal** by default. Having this default means:
+- Literal numbers in formulas. The number `1.234` is interpreted as a **Decimal** value. For example, the formula `1.234 * 2` interprets the `1.234` and `2` as **Decimal** and return a **Decimal** result.
+- Value function. `Value( "1.234" )` returns a **Decimal** value. For example, in the formula `Value( "1.234" ) * 2`, the **Value** function interprets the contents of the text string `"1.234"` as a **Decimal**.
 
-To work with **Float** values, the **Float** function is used.  Extending the example above, `Float( 1.234 )` converts the **Decimal** `1.234` to **Float**.  **Float** can also be used as a replacement for **Value** to convert a string containing a floating point number such as `Float( "1.234" )` to a **Float** value, which is required if the number can't be represented as a **Decimal**.
+To work with **Float** values, the **Float** function is used. Extending our example, `Float( 1.234 )` converts the **Decimal** `1.234` to **Float**. **Float** can also be used as a replacement for **Value** to convert a string containing a floating point number such as `Float( "1.234" )` to a **Float** value, which is required if the number can't be represented as a **Decimal**.
 
 In summary:
 
@@ -238,16 +238,16 @@ In summary:
  
 ### Mixing numeric types
 
-**Float** and **Decimal** values can be freely mixed.  When mixed, **Decimal** values are converted to **Float** values due to the larger range.  Since this can result in a loss of precision, it is important to not mix the two needlessly.  Since **Decimal** is the default literal data type and most numeric functions will preserve the type, it is relatively easy to avoid moving to **Float** without desiring it.
+**Float** and **Decimal** values can be freely mixed. When mixed, **Decimal** values are converted to **Float** values due to the larger range. As this conversion can result in a loss of precision, it is important to not mix the two needlessly. Since **Decimal** is the default literal data type and most numeric functions preserve the type, it is relatively easy to avoid moving to **Float** without desiring it.
 
-For example, consider the following calculation using `pac power-fx repl` after installing the [Power Platform CLI](../developer/cli/introduction.md).  Since both numbers are **Decimal**, the calculation is done in **Decimal**, and the result retains full precision:
+For example, consider the following calculation using `pac power-fx repl` after installing the [Power Platform CLI](../developer/cli/introduction.md). Since both numbers are **Decimal**, the calculation is done in **Decimal**, and the result retains full precision:
 
 ```power-fx
 >> 1.0000000000000000000000000001 * 2
 2.0000000000000000000000000002
 ```
 
-If instead, the second operand was changed to **Float** then the entire calculation would be done in **Float** and the tiny fractional part would be lost:
+If instead, the second operand was changed to **Float** then the entire calculation would be done in **Float**, and the tiny fractional part would be lost:
 
 ```power-fx
 >> 1.0000000000000000000000000001 * Float(2)
@@ -284,7 +284,7 @@ You can observe this behavior more closely by using the [**Value**](reference/fu
 
 Because every date/time value is held in UTC, the formula **Value( Date( 1970, 1, 1 ) )** won't return zero in most parts of the world because the **Date** function returns a date in UTC. For example, the formula would return 28,800,000 in a time zone that's offset from UTC by eight hours. That number reflects the number of milliseconds in eight hours.
 
-Returning to our example from above:
+Returning to our example:
 
 | Date/time type            | Value stored in the database                   | Value displayed and entered 7 hours west of UTC  | **Value** function returns                                                  |
 | ------------------------- | ---------------------------------------------- | ------------------------------------------------ | --------------------------------------------------------------------------- |
