@@ -17,11 +17,16 @@ contributors:
 
 In today's rapidly evolving digital landscape, organizations face the constant challenge of modernizing their legacy applications to keep pace with changing business needs. Application modernization is crucial for improving operational efficiency, enhancing customer experiences, and staying ahead of the competition. Microsoft Power Platform offers a comprehensive suite of tools and technologies that empower businesses to transform and modernize their applications quickly and effectively.
 
+This whitepaper explores the benefits, strategies, and best practices of modernizing applications with Microsoft Power Platform. It provides insights and guidance on how the Microsoft low-code platform can help you ensure the success of your application modernization efforts as part of your organization's digital transformation.
+
+> [!NOTE]
+> You can save or print this white paper by selecting **Print** from your browser, and then selecting **Save as PDF**.
+
+## Introduction
+
 Legacy applications present many challenges for organizations. These applications are often built on outdated technology stacks and frameworks, making them difficult to integrate with modern systems and tools. They often have scalability and performance limitations that hinder an organization's ability to handle increasing workloads and customer demands. Legacy applications lack flexibility and agility, limiting their ability to adapt quickly to changing business needs and market dynamics. Security vulnerabilities, high maintenance costs, limited integration capabilities, and the risk of vendor dependency further compound the challenges of legacy applications. To overcome them, organizations need to modernize their application infrastructure to take advantage of new technologies.
 
 The low-code development capabilities of Microsoft Power Platform make it possible to build and deploy modern applications faster and more cost-effectively than ever before. Easily integrate your existing systems and data sources for seamless data exchange and collaboration. Add artificial intelligence to enhance user experiences, automate processes, and gain valuable insights from your data. Whether you're a citizen developer tinkering around the edges or a pro developer working on a complex customization, you can drive digital transformation intuitively, quickly, and at lower cost than with traditional approaches.
-
-This whitepaper explores the benefits, strategies, and best practices of modernizing applications with Microsoft Power Platform. It provides insights and guidance on how the Microsoft low-code platform can help you ensure the success of your application modernization efforts as part of your organization's digital transformation.
 
 ## Why Power Platform?
 
