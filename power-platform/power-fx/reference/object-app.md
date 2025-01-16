@@ -235,7 +235,7 @@ Note, recursion is not yet supported by user defined functions.
 
 ### Behavior user defined functions
 
-Named formulas and most user defined functions do not support behavior functions with side effects, such as **Set** or **Notify**. In general, it is best to avoid updating state if you can, instead relying on functional programming patterns and allowing Power Fx to recalculate formulas as needed automatically. But, there are cases where it is unavoidable. To include behavior logic in a user defined function, wrap the body in curly braces:
+Named formulas and most user defined functions do not support behavior functions with side effects, such as [**Set**](funciton-set.md) or [**Notify**](function-showerror.md). In general, it is best to avoid updating state if you can, instead relying on functional programming patterns and allowing Power Fx to recalculate formulas as needed automatically. But, there are cases where it is unavoidable. To include behavior logic in a user defined function, wrap the body in curly braces:
 
 ```powerapps-dot
 Spend( Amount: Number ) : Void = {
@@ -247,7 +247,7 @@ Spend( Amount: Number ) : Void = {
 }
 ```
 
-Now we can call `Spend( 12 )` to check if we have 12 in our Savings, and if so, to debit it by 12 and add 12 to the Spent variable. The return type of this function is `Void` as it does not return a value.
+Now we can call `Spend( 12 )` to check if we have 12 in our Savings, and if so, to debit it by 12 and add 12 to the Spent variable. The return type of this function is **Void** as it does not return a value.
 
 The syntax of a behavior user defined function is:
 
@@ -255,11 +255,11 @@ The syntax of a behavior user defined function is:
 
 - *FunctionName* – Required. The name of the user defined function.
 - *ParameterName(s)* – Optional. The name of a function parameter.
-- *ParameterType(s)* – Optional. The name of a type, either a built in [data type name](../data-types.md), a data source name, or a type defined with the **Type** function.
+- *ParameterType(s)* – Optional. The name of a type, either a built in [data type name](../data-types.md), a data source name, or a type defined with the [**Type** function](function-type.md).
 - *ReturnType* – Required. The type of the return value from the function. Use **Void** if the function does not return a value.
 - *Formula(s)* – Required. The formula that calculates the value of the function based on the parameters.
 
-As with all Power Fx formulas, execution does not end when an error is encountered. After the [**Error** function](function-error.md) has been called, the **If** prevents the changes to **Savings** and **Spent** from happening. The [**IfError** function](function-iferror.md) can also be used to prevent further execution after an error. Even though it returns **Void**, the formula can still return an error if there is a problem. 
+As with all Power Fx formulas, execution does not end when an error is encountered. After the [**Error** function](function-iferror.md) has been called, the [**If** function](function-if.md) prevents the changes to **Savings** and **Spent** from happening. The [**IfError** function](function-iferror.md) can also be used to prevent further execution after an error. Even though it returns **Void**, the formula can still return an error if there is a problem. 
 
 ### User defined types
 

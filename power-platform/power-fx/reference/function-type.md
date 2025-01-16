@@ -55,6 +55,8 @@ The **Type** function, and the type value it returns, can only be used in specif
 
 ## Examples
 
+### Type function
+
 Consider the following definitions in **App.Formulas**:
 
 ```powerapps-dot
@@ -89,5 +91,17 @@ ParseJSON( "{""Title"":""Gulliver's Travels"", ""Author"": ""Jonathan Swift"", "
 ```
 
 Using `BookType` as the second argument to **ParseJSON** results in a typed record that can be used like any other Power Fx record.
+
+### RecordOf function
+
+In the **Type** function example, we started with `BookType` and built `LibraryType` by wrapping a table around it.  We could have defined these types in reverse with:
+
+```powerapps-dot
+// Type definition for a table of books
+RecordOfLibraryType := Type( [ { Title: Text, Author: Text, Published: Number } ] );
+
+// Type definition for a single book
+RecordOfBookType := Type( RecordOf( RecordOfLibraryType ) );
+```
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
