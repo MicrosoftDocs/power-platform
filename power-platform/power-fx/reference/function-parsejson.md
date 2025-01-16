@@ -28,14 +28,14 @@ Interprets a JSON string and returns an [untyped object](../untyped-object.md) o
 > - Your feedback is very valuable to us. Please let us know what you think in the [**Power Apps experimental features community forum**](https://community.powerplatform.com/forums/thread/details/?threadid=c8824a08-8198-ef11-8a69-7c1e52494f33).
 
 ## Description
-The ParseJSON function will parse a valid JSON string and return an [untyped object](../untyped-object.md) representing the JSON structure. 
+The ParseJSON function parses a valid JSON string and returns an [untyped object](../untyped-object.md) representing the JSON structure. 
 
 Optionally, use the second argument to convert the JSON to a typed object that can be directly used in Power Fx formulas. This makes the result easier to consume as conversions and coercions at the point of use are no longer required. The untyped JSON is mapped to the type with these rules:
 - Columns in the type which are not present in the JSON are filled in with *blank*.
 - Columns in the JSON which are not present in the type are ignored.
 - Columns that are both in the type and JSON, the JSON value must be coercible to the type.
 
-The ParseJSON function may return errors if the text isn't valid JSON according to the JavaScript Object Notation (JSON) format described in [ECMA-404](https://www.ecma-international.org/publications-and-standards/standards/ecma-404) and [IETF RFC 8259](https://tools.ietf.org/html/rfc8259).
+The ParseJSON function can return errors if the text isn't valid JSON according to the JavaScript Object Notation (JSON) format described in [ECMA-404](https://www.ecma-international.org/publications-and-standards/standards/ecma-404) and [IETF RFC 8259](https://tools.ietf.org/html/rfc8259).
 
 ## Syntax
 **ParseJSON**( *JSONString* [ , *Type* ] )
@@ -166,6 +166,5 @@ Given the following JSON string in a variable named `JsonString`
     
     Text( Index(untypedTable, 1).Value.name )
    ```
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -5,7 +5,7 @@ author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 1/14/2025
+ms.date: 1/16/2025
 ms.author: gregli
 search.audienceType: 
   - maker
@@ -49,7 +49,7 @@ Nobody wants to lose unsaved changes. Use the **ConfirmExit** and **ConfirmExitM
 
 > [!NOTE]
 > - **ConfirmExit** doesn't work in apps that are embedded in, for example, Power BI and SharePoint.
-> - At present, these properties can reference controls on only the first screen if the **Delayed load** preview feature is enabled (which it is by default for new apps). If references are made, Power Apps Studio doesn't show an error, but the resulting published app doesn't open in Power Apps Mobile or a browser. We're actively working to lift this limitation. In the meantime, you can turn off **Delayed load** in **Settings** > **Upcoming features** (under **Preview**).
+> - Now, these properties can reference controls on only the first screen if the **Delayed load** preview feature is enabled (which it is by default for new apps). If references are made, Power Apps Studio doesn't show an error, but the resulting published app doesn't open in Power Apps Mobile or a browser. We're actively working to lift this limitation. In the meantime, you can turn off **Delayed load** in **Settings** > **Upcoming features** (under **Preview**).
 
 ### ConfirmExit
 
@@ -113,7 +113,7 @@ In a browser, the confirmation dialog box might appear with a generic message fr
     > [!div class="mx-imgBorder"]
     > ![Form-specific confirmation dialog box.](media/object-app/confirm-native-custom.png)
 
-## Setup Instrumentation Key for Application Insights
+## Set up Instrumentation Key for Application Insights
 
 To export system-generated application logs to [Application Insights](/power-apps/maker/canvas-apps/application-insights), you need to set up the **Instrumentation Key** for your canvas app. 
 
@@ -188,7 +188,7 @@ Some limitations of named formulas:
 > - The behavior that this article describes is available only when the **User-defined functions** experimental feature in [**Settings &gt; Upcoming features &gt; Experimental**](/power-apps/maker/canvas-apps/working-with-experimental-preview#controlling-which-features-are-enabled) is turned on (it's off by default).
 > - Your feedback is valuable to us. Let us know what you think in the [**Power Apps experimental features community forum**](https://community.powerplatform.com/forums/thread/details/?threadid=c8824a08-8198-ef11-8a69-7c1e52494f33).
 
-Power Fx includes a long list of built in functions, such as **If**, **Text**, and **Set**. User defined functions enable you to write your own functions that take parameters and return a value, just as the built in functions do. You can think of user defined functions as an extension to named formulas that adds parameters and supports behavior formulas.
+Power Fx includes a long list of built-in functions, such as **If**, **Text**, and **Set**. User defined functions enable you to write your own functions that take parameters and return a value, just as the built-in functions do. You can think of user defined functions as an extension to named formulas that adds parameters and supports behavior formulas.
 
 For example, you might define a named formula that returns fiction books from a library:
 
@@ -215,7 +215,7 @@ The syntax is:
 
 - *FunctionName* – Required. The name of the user defined function.
 - *ParameterName(s)* – Optional. The name of a function parameter.
-- *ParameterType(s)* – Optional. The name of a type, either a built in [data type name](../data-types.md), a data source name, or a type defined with the **Type** function.
+- *ParameterType(s)* – Optional. The name of a type, either a built-in [data type name](../data-types.md), a data source name, or a type defined with the **Type** function.
 - *ReturnType* – Required. The type of the return value from the function.
 - *Formula* – Required. The formula that calculates the value of the function based on the parameters.
 
@@ -231,11 +231,11 @@ IsGenre( Book: BookType, SelectedGenre: Text ): Boolean = (Book.Genre = Selected
 
 Record matching for function parameters is tighter than it is in other parts of Power Fx. The fields of a record value must be a proper subset of the type definition and can't include additional fields. For example, `IsGenre( { Title: "My Book", Published: 2001 }, "Fiction" )` will result in an error.
 
-Note, recursion is not yet supported by user defined functions.
+Note, recursion isn't yet supported by user defined functions.
 
 ### Behavior user defined functions
 
-Named formulas and most user defined functions do not support behavior functions with side effects, such as [**Set**](function-set.md) or [**Notify**](function-showerror.md). In general, it is best to avoid updating state if you can, instead relying on functional programming patterns and allowing Power Fx to recalculate formulas as needed automatically. But, there are cases where it is unavoidable. To include behavior logic in a user defined function, wrap the body in curly braces:
+Named formulas and most user defined functions don't support behavior functions with side effects, such as [**Set**](function-set.md) or [**Notify**](function-showerror.md). In general, it's best to avoid updating state if you can, instead relying on functional programming patterns and allowing Power Fx to recalculate formulas as needed automatically. But, there are cases where it's unavoidable. To include behavior logic in a user defined function, wrap the body in curly braces:
 
 ```powerapps-dot
 Spend( Amount: Number ) : Void = {
@@ -247,7 +247,7 @@ Spend( Amount: Number ) : Void = {
 }
 ```
 
-Now we can call `Spend( 12 )` to check if we have 12 in our Savings, and if so, to debit it by 12 and add 12 to the Spent variable. The return type of this function is **Void** as it does not return a value.
+Now we can call `Spend( 12 )` to check if we have 12 in our Savings, and if so, to debit it by 12 and add 12 to the Spent variable. The return type of this function is **Void** as it doesn't return a value.
 
 The syntax of a behavior user defined function is:
 
@@ -255,11 +255,11 @@ The syntax of a behavior user defined function is:
 
 - *FunctionName* – Required. The name of the user defined function.
 - *ParameterName(s)* – Optional. The name of a function parameter.
-- *ParameterType(s)* – Optional. The name of a type, either a built in [data type name](../data-types.md), a data source name, or a type defined with the [**Type** function](function-type.md).
-- *ReturnType* – Required. The type of the return value from the function. Use **Void** if the function does not return a value.
+- *ParameterType(s)* – Optional. The name of a type, either a built-in [data type name](../data-types.md), a data source name, or a type defined with the [**Type** function](function-type.md).
+- *ReturnType* – Required. The type of the return value from the function. Use **Void** if the function doesn't return a value.
 - *Formula(s)* – Required. The formula that calculates the value of the function based on the parameters.
 
-As with all Power Fx formulas, execution does not end when an error is encountered. After the [**Error** function](function-iferror.md) has been called, the [**If** function](function-if.md) prevents the changes to **Savings** and **Spent** from happening. The [**IfError** function](function-iferror.md) can also be used to prevent further execution after an error. Even though it returns **Void**, the formula can still return an error if there is a problem. 
+As with all Power Fx formulas, execution doesn't end when an error is encountered. After the [**Error** function](function-iferror.md) has been called, the [**If** function](function-if.md) prevents the changes to **Savings** and **Spent** from happening. The [**IfError** function](function-iferror.md) can also be used to prevent further execution after an error. Even though it returns **Void**, the formula can still return an error if there's a problem. 
 
 ### User defined types
 
