@@ -1,9 +1,9 @@
 ---
-title: "Teams in Dataverse   | MicrosoftDocs"
+title: Teams in Dataverse 
 description: Understand the different types of teams and how to view and manage settings.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/12/2024
+ms.date: 01/06/2025
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
@@ -147,7 +147,7 @@ You can add and delete members from a team.
 
 4. Select **Delete** twice to confirm. Note that this action can't be undone.
 
-### Convert owner teams to access teams (preview)
+### Convert owner teams to access teams
 
 You can convert _owner_ teams to become _access_ teams. 
 
@@ -166,7 +166,7 @@ You can convert _owner_ teams to become _access_ teams.
 1. Select **Convert Owner team to Access Team** from the command bar. 
 1. Select **OK** to complete the action.
 
-### Reassign team's records (preview)
+### Reassign team's records
 
 You can reassign the owner team's records to another user or team.  
 

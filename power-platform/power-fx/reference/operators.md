@@ -61,7 +61,7 @@ Some of these operators are dependent on the language of the author. For more in
 | **ThisRecord**                                                                | [ThisRecord operator](#thisrecord-operator)                 | **ThisRecord.FirstName**                                                                         | Access to the complete record and individual fields of the record within **ForAll**, **Sum**, **With**, and other record scope functions. Can be overridden with the **As** operator.                                                                                                                    |
 
 > [!NOTE]
-> The **@** operator can also be used to validate the type of the record object against a data source. For example, `Collect(coll,Account@{'Account Number: 1111')`
+> The **@** operator can also be used to validate the type of the record object against a data source. For example, `Collect(coll,Account@{'Account Number': 1111})`
 
 ## in and exactin operators
 
