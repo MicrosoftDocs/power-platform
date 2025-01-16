@@ -38,6 +38,8 @@ Each product in the Power Platform family has a unique focus area. Organizations
 
 The following table offers a high-level overview of each Power Platform product.
 
+| **Product** | **Description** |
+|---|---|
 | **Power Apps** | Create custom applications in an intuitive, drag-and-drop canvas. With more than a thousand connectors, internal and external data sources and services are just a few clicks away. Your apps can run in a browser, on the desktop, or on mobile devices. |
 | **Power Automate** | Build workflows to automate even complex processes. Incorporate internal and external data sources and services using built-in and custom connectors. Use digital process automation (DPA) when applications have an application programming interface (API). Use robotic process automation (RPA) to automate repetitive tasks performed in a browser or desktop app. Trigger workflows to run when events occur in other systems and services or schedule them to run at a specific time. |
 | **Copilot Studio** | Creation of conversational agents using a no-code graphical interface. You can deploy agents to multiple channels, including websites, mobile apps, and messaging platforms like Microsoft Teams. AI-assisted authoring can speed up the creation of topics. Generative answers can find and present information from multiple sources without requiring creation of topics.
@@ -46,6 +48,8 @@ The following table offers a high-level overview of each Power Platform product.
 
 The Power Platform product family relies on a few supporting capabilities and concepts. The following table describes the most important ones to understand.
 
+| **Concept** | **Description** |
+|---|---|
 | **Power Fx** | Power Fx is an [open-sourced](https://github.com/microsoft/Power-Fx) low-code language inspired by Excel formulas. Strongly typed, declarative, and functional, with imperative logic and state management, all expressed in human-friendly text, Power Fx makes common programming tasks easy for citizen developers and pro developers alike. It supports the full spectrum of development, from no-code for those who have never programmed before to "pro-code" for the seasoned professional, empowering diverse teams to collaborate and save time and expense. |
 | **Connectors**  | Connectors are vital for allowing low-code and traditional coding to work together to deliver modern apps. Connectors are a wrapper around an API that allows Power Apps and Power Automate to use internal and external data sources and services. More than a thousand prebuilt connectors are available, and you can create your own for any RESTful API. The connector definition includes the necessary metadata to make the API easy for low-code apps to consume. |
 | **Dataverse** | Dataverse is a cloud-scale hybrid data store built on Azure data management services—but it's more than a database. It's the underlying data platform for both Dynamics 365 and Power Platform, with server-side logic in the form of workflows and plug-ins, business rules and process flows, a highly sophisticated security model, and an extensible development platform with built-in support for multi-language and multi-currency apps. Applications can be quickly constructed from the data model, making it one of the fastest ways to deploy a form-over-data solution. |
