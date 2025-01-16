@@ -4,7 +4,7 @@ description: Learn how to manage feature settings to adjust how features appear 
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/11/2024
+ms.date: 01/16/2025
 ms.subservice: admin
 ms.author: sericks
 ms.reviewer: sericks
@@ -58,7 +58,7 @@ To update these settings, make sure you have the System Administrator or System 
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-| Enable the usage of AI Builder model types that are in preview.  | If **Off**, the environment won't have access to AI Builder. Not all environments have this setting. Learn more about environments that are eligible for this feature and related details in [Administer AI Builder](/ai-builder/administer).  | On |
+| Enable the usage of AI Builder model types that are in preview.  | If **Off**, the environment doesn't have access to AI Builder. Not all environments have this setting. Learn more about environments that are eligible for this feature and related details in [Administer AI Builder](/ai-builder/administer).  | On |
 
 ## AI prompts
 
@@ -71,7 +71,7 @@ To update these settings, make sure you have the System Administrator or System 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
 |Enable this feature for:  | Allow AI to generate suggestions for fields in model-driven apps. Learn more in [Copilot assistance for form fill in model-driven apps](/power-apps/user/form-filling-assistance). | Users as the feature becomes available (default) |
-| Enable smart paste (preview) | Smart paste (preview) is a capability that uses the text copied to your clipboard to suggest text that could be used to fill specific fields, and provides suggestions inline in the form. | Off |
+| Enable smart paste (preview) | Smart paste (preview) uses the text copied to your clipboard to suggest text for specific fields and provides inline suggestions in the form. | Off |
 
 ## AI suggestions for formula columns (preview)
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
@@ -87,7 +87,7 @@ To update these settings, make sure you have the System Administrator or System 
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-| Enable this feature for:  | When searching for data in a grid, you can ask questions with natural language. For example, requesting “cases with high priority with overdue follow-up by date” filters your view to display only those relevant cases.<br><br>To allow natural language search in an environment, it's required that users in that environment have a Dynamics 365 license. If the environment only has users with Power Apps licensing, additional Copilot licenses are required to use this feature in production.   | Users as the feature becomes available (default)<br><br>**Note**: Starting with the December monthly channel, users with Dynamics 365 licenses will start seeing the feature in their apps.  We expect this rollout to be gradual.  While quality of the feature will be maintained for all users, it's possible that different users may see some UI variations in their experience.|
+| Enable this feature for:  | When searching for data in a grid, you can ask questions with natural language. For example, requesting “cases with high priority with overdue follow-up by date” filters your view to display only those relevant cases.<br><br>To allow natural language search in an environment, users in that environment must have a Dynamics 365 license. If the environment only has users with Power Apps licensing, other Copilot licenses are required to use this feature in production.   | Users as the feature becomes available (default)<br><br>**Note**: Starting with the December monthly channel, users with Dynamics 365 licenses start seeing the feature in their apps.  We expect this rollout to be gradual.  While quality of the feature is maintained for all users, it's possible that different users might see some UI variations in their experience.|
 
 ## Embedded content
 
@@ -95,7 +95,7 @@ To update these settings, make sure you have the System Administrator or System 
 |---------|-------------|---------------|
 |Power BI visualization embedding| Learn more in [Add or edit Power BI visualizations on your dashboard](/powerapps/user/add-powerbi-dashboards).| Off |
 |Bing Maps| If **On**, Customer Engagement (on-premises) users need to enter a Bing Maps key. Users don't need to enter a key. | Off | 
-|Prevent social data in Dynamics | If you don't want to receive social data in customer engagement apps (such as Dynamics 365 Sales and Customer Service), select **Off**. If you disable social engagement, your organization won't be able to receive social data in customer engagement apps (such as Dynamics 365 Sales and Customer Service). Users can continue to work with existing social data, however.| Off  |
+|Prevent social data in Dynamics | If you don't want to receive social data in customer engagement apps (such as Dynamics 365 Sales and Customer Service), select **Off**. If you disable social engagement, your organization can't receive social data in customer engagement apps (such as Dynamics 365 Sales and Customer Service). Users can continue to work with existing social data, however.| Off  |
 
 ## Communications
 
@@ -110,14 +110,14 @@ To update these settings, make sure you have the System Administrator or System 
 | Enable hosted machine groups.| If **On**, users can run unattended automation at scale with [hosted machine group](/power-automate/desktop-flows/hosted-machine-groups).  | On |
 | Enable work or school accounts for hosted machine groups.| If **On**, your hosted machine group has access to your resources that are part of [your work or school account](/power-automate/desktop-flows/hosted-machine-groups#use-your-work-or-school-account). | On |
 | Enable hosted machines.| If **On**, users can build, test, and run attended and unattended desktop flows without providing or setting up any physical machine with [hosted machines](/power-automate/desktop-flows/hosted-machines). | On |
-| Enable cross-geo support for hosted machines| If **On**, this allows users to provision hosted machines in a geography different from that of the configured tenant country. Learn more in [Azure tenant country/region and supported geographies in the public cloud](/power-automate/desktop-flows/hosted-machines#azure-tenant-countryregion-and-supported-geographies-in-the-public-cloud). | On |
+| Enable cross-geo support for hosted machines| If **On**, this option allows users to provision hosted machines in a geography different from the configured tenant country. Learn more in [Azure tenant country/region and supported geographies in the public cloud](/power-automate/desktop-flows/hosted-machines#azure-tenant-countryregion-and-supported-geographies-in-the-public-cloud). | On |
 
 ## Enhanced desktop flows schema
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
 | Enable storage of desktop flow files into v2 schema.| If **On**, Dataverse database consumption for paid license users is reduced. Also, it offloads components of your desktop flows into your Dataverse for Apps File Capacity. Learn more in [Enable the v2 schema](/power-automate/desktop-flows/schema#enable-the-v2-schema). | On |
-| Opt-out of desktop flow schema v2 enabled by default.| In 2024, v2 schema is turned **On** for all environments without the option to turn off the feature. We recommend that you turn on the feature, in advance, so users can benefit from the product enhancements that come with it. Learn more in [Schema v2 enabled by default](/power-automate/desktop-flows/schema#schema-v2-enabled-by-default).  | Off |
+| Opt-out of desktop flow schema v2 enabled by default.| In 2024, v2 schema is turned **On** for all environments without the option to turn off the feature. We recommend turning on the feature in advance so users can benefit from the product enhancements. Learn more in [Schema v2 enabled by default](/power-automate/desktop-flows/schema#schema-v2-enabled-by-default).  | Off |
 
 ## Desktop flow run action logs configuration
 
@@ -141,7 +141,7 @@ To update these settings, make sure you have the System Administrator or System 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
 |Modern advanced find in model-driven apps| If **On**, legacy advanced find is replaced with a modern experience that enhanced view management capabilities like searching on views and the ability to share, hide, and delete personal views. Learn more in [Advanced find in model-driven apps](/powerapps/user/advanced-find). This setting only appears if you turned on 2022 Release Wave 1. |  On|
-|Allow users to hide system views| If **On**, users can hide system views in the view selector to manage their view list in model-driven apps. Learn more in [Hide views on a grid page](/powerapps/user/grid-filters-advanced#hide-views). This setting only appears if you turend on 2022 Release Wave 1.| Off |
+|Allow users to hide system views| If **On**, users can hide system views in the view selector to manage their view list in model-driven apps. Learn more in [Hide views on a grid page](/powerapps/user/grid-filters-advanced#hide-views). This setting only appears if you turned on 2022 Release Wave 1.| Off |
 
 ## Activities
 
@@ -176,7 +176,7 @@ To update these settings, make sure you have the System Administrator or System 
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-| Dataverse will block unmanaged customizations in the environment.  |  Prevents the creation of unmanaged customizations in Dataverse environments, which facilitates healthy application lifecycle management. Learn more in [Block unmanaged customizations (preview)](../alm/block-unmanaged-customizations.md). | Off |
+| Dataverse blocks unmanaged customizations in the environment.  |  Prevents the creation of unmanaged customizations in Dataverse environments, which facilitates healthy application lifecycle management. Learn more in [Block unmanaged customizations (preview)](../alm/block-unmanaged-customizations.md). | Off |
 
 ## Data validation
 
@@ -195,14 +195,14 @@ To update these settings, make sure you have the System Administrator or System 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
 | Enable admins to link Dataverse tables with a Microsoft Fabric workspace and get real-time insights. |  <Description> | <Value> |
-| Enable users to define Dataverse virtual tables using data from Microsoft Fabric and buld apps (preview). | <Description> | Value> |
+| Enable users to define Dataverse virtual tables using data from Microsoft Fabric and build apps (preview). | <Description> | Value> |
 
 ## Power Automate capacity
 
 | Setting | Description | Default value |
 |---------|-------------|---------------| 
 | Allow process capacity overage  |  When **On**, enables machines and cloud flows to go into process capacity overage. New process capacity overage is only possible in an environment with at least one process / hosted process / unattended capacity assigned. Learn more in [Process capacity overage](/power-automate/desktop-flows/capacity-utilization-process#capacity-overage). | On |
-| Allow auto-claim of process capacity |  When **On**, enables auto-assignation of process capacity to the environment (if any is available in the admin center) when required by an assignation of process capacity to a cloud flow, or to a machine while there's no available capacity in the environment. Learn more in [Process capacity](/power-automate/desktop-flows/capacity-process). | On |
+| Allow auto-claim of process capacity |  When **On**, enables automatic assignment of process capacity to the environment (if any is available in the admin center) when required by an assignation of process capacity to a cloud flow, or to a machine while there's no available capacity in the environment. Learn more in [Process capacity](/power-automate/desktop-flows/capacity-process). | On |
 
 ## Search
 
@@ -212,8 +212,8 @@ To update these settings, make sure you have the System Administrator or System 
 |Single table search option| If **On**, users get another option to search on a single table on view pages of search-enabled tables in all model-driven apps.|Off|
 |Prevent slow keyword filter for quick find terms on view pages |  If **On**, users are prevented from searching with keywords that begin with an asterisk (\*) in grid search in all model-driven apps, and a message displays in the application. If **Off**, users can search with keywords that begin with an asterisk (\*) in grid search in all model-driven apps, but an information tooltip displays indicating the search might be slow. Learn more in [Grid search](/power-apps/user/grid-filters#grid-search). | Off|
 |Quick Find record limits| If **On**, if more than 10,000 records are found, a message displays that suggests a more selective search. Learn more in [Configure Dataverse search for the organization](configure-relevance-search-organization.md).| On |
-| Use quick find view of an entity for searching on grids and sub-grids|  Select **Yes** to show the traditional Quick Find search in an entity grid. The traditional Quick Find search applies the [Quick Find View](/powerapps/maker/model-driven-apps/create-edit-views#system-views) filters and displays the Quick Find columns after searching.  |Off|
-| Search for records in Microsoft 365 apps | You can quickly enable your users to access the records they most recently used in their application.  The records are available in the Outlook Web client using a simple /mention gesture.  | On |
+| Use quick find view of an entity for searching on grids and subgrids|  Select **Yes** to show the traditional Quick Find search in an entity grid. The traditional Quick Find search applies the [Quick Find View](/powerapps/maker/model-driven-apps/create-edit-views#system-views) filters and displays the Quick Find columns after searching.  |Off|
+| Search for records in Microsoft 365 apps | You can quickly enable your users to access the records they most recently used in their application. The records are available in the Outlook Web client using a simple /mention gesture.  | On |
 
 ## Map and address services
 
@@ -235,26 +235,26 @@ To update these settings, make sure you have the System Administrator or System 
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-|Allow publishing of canvas apps with code components| Enables Power Apps component framework feature that allows the execution of code that might not be generated by Microsoft when a maker adds code components to an app. Make sure that the code component solution is from a trusted source. Learn more in [Code components for canvas apps](/powerapps/developer/component-framework/component-framework-for-canvas-apps). | Off |
+|Allow publishing of canvas apps with code components| Enables the Power Apps component framework feature that lets you run code not generated by Microsoft when you add code components to an app. Make sure that the code component solution is from a trusted source. Learn more in [Code components for canvas apps](/powerapps/developer/component-framework/component-framework-for-canvas-apps). | Off |
 
 ## Delete disabled users
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-|Enable delete disabled users| Delete disabled users permanently from the environment. Learn more in [Permanently delete users](delete-users.md#permanently-delete-users-in-power-platform). |Off |
+|Enable delete disabled users| Lets you delete disabled users permanently from the environment. Learn more in [Permanently delete users](delete-users.md#permanently-delete-users-in-power-platform). |Off |
 
 ## TDS endpoint
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-|Enable TDS endpoint |  Enables [Tabular Data Stream](/openspecs/windows_protocols/ms-tds/893fcc7e-8a39-4b3c-815a-773b7b982c50) (TDS) endpoint (a SQL data connection) for Microsoft Dataverse in an environment. Learn more in [Use SQL to query data](/powerapps/developer/common-data-service/cds-sql-query). and [View entity data in Power BI Desktop](/powerapps/maker/common-data-service/view-entity-data-power-bi)|On |
+|Enable TDS endpoint |  Enables [Tabular Data Stream](/openspecs/windows_protocols/ms-tds/893fcc7e-8a39-4b3c-815a-773b7b982c50) (TDS) endpoint (a SQL data connection) for Microsoft Dataverse in an environment. Learn more in [Use SQL to query data](/powerapps/developer/common-data-service/cds-sql-query) and [View entity data in Power BI Desktop](/powerapps/maker/common-data-service/view-entity-data-power-bi)|On |
 |Enable user level access control for TDS endpoint | When off, all environment users have access to the TDS endpoint. If on, users only have access when members of a security role that has the **Allow user to access TDS endpoint** privilege. Learn more in [Control access of the TDS endpoint](control-tds-settings.md). | Off |
 
 ## Record ownership across business units
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-| Record ownership across business units   |  Set to **On** to enable the Matrix data access structure. Not recommended for production environments.  Learn more in [Matrix data access structure (Modernize Business Units - Preview)](wp-security-cds.md#matrix-data-access-structure-modernized-business-units). |Off|
+| Record ownership across business units   |  Set to **On** to enable the Matrix data access structure. Not recommended for production environments. Learn more in [Matrix data access structure (Modernize Business Units - Preview)](wp-security-cds.md#matrix-data-access-structure-modernized-business-units). |Off|
 
 ## Disable empty address record creation
 
@@ -281,7 +281,7 @@ To update these settings, make sure you have the System Administrator or System 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
  |Allow creation of Power BI components  |  If **Off**, the environment doesn't have access to Power BI. Environments with a Dataverse database have this setting. Creating a Power BI component generates a dedicated Power BI workspace for that environment. All the Power BI artifacts corresponding to the Power BI components created in an environment are generated in that dedicated Power BI environment workspace. Learn more in [Permission sync between Power Apps environment and Power BI workspace](/power-apps/maker/model-driven-apps/customize-manage-powerbi-components#permission-sync-between-power-apps-environment-and-power-bi-workspace). |On |
-|Automatically assign permission to Power BI workspaces | If **On**, synchronization takes place between predefined role privileges and the permissions of the dedicated Power BI environment workspace. The following roles are assigned with permissions:<br/><br/>System administrator:Power BI workspace admin > Power BI workspace admin permission.<br/><br/> System Customizer:Power BI workspace contributor > Power BI workspace contributor permission.<br/><br/> Power BI workspace viewer > Power BI workspace viewer permission.<br/><br/> [Learn more about Power BI workspace permission](/power-bi/collaborate-share/service-roles-new-workspaces#workspace-roles). | On|
+|Automatically assign permission to Power BI workspaces | If **On**, synchronization takes place between predefined role privileges and the permissions of the dedicated Power BI environment workspace. The following roles are assigned with permissions:<br/><br/>System administrator: Power BI workspace admin > Power BI workspace admin permission.<br/><br/> System Customizer: Power BI workspace contributor > Power BI workspace contributor permission.<br/><br/> Power BI workspace viewer > Power BI workspace viewer permission.<br/><br/> [Learn more about Power BI workspace permission](/power-bi/collaborate-share/service-roles-new-workspaces#workspace-roles). | On|
  |Allow information sharing between this environment and Power BI workspaces in other geographic regions | When this setting is **On** and the Power BI tenant setting **[Power Platform interregional access](/power-bi/admin/service-admin-portal-integration#power-platform-interregional-access)** is also **On**, cross-geo operations can take place. Learn more in [Cross-geo operations](/power-bi/collaborate-share/service-power-bi-powerapps-integration-considerations#cross-geo-operations). |On|
 
 ## Recycle Bin (preview)
@@ -290,6 +290,5 @@ To update these settings, make sure you have the System Administrator or System 
 
 |Setting  |Description  |Default value  |
 |---------|---------|---------|
-| Enable recycle bin for Dataverse tables  | When **On**, you can use recycle bin for Dataverse tables to restore deleted records.       |    **Off**     |
-|Configure recovery time interval     | Recover table record data for up to *30* days after the record was deleted. Learn more in [Restore deleted Microsoft Dataverse table records](restore-deleted-table-records.md).       |   **30**      |
-
+| Enable recycle bin for Dataverse tables  | When **On**, you can use recycle bin for Dataverse tables to restore deleted records. |    **Off**     |
+|Configure recovery time interval     | Recover table record data for up to *30* days after the record was deleted. Learn more in [Restore deleted Microsoft Dataverse table records](restore-deleted-table-records.md).     |   **30**      |
