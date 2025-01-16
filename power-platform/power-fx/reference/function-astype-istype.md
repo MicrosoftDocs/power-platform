@@ -21,10 +21,10 @@ contributors:
 
 **Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Pages :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
 
-Checks a record reference for a specific table type (**IsType**) and treats the reference as a specific type (**AsType**).
+Checks if a record reference is a specific table type (**IsType**) and treats the reference as that type (**AsType**).
 
 > [!NOTE]
-> [PAC CLI pac power-fx commands](/power-platform/developer/cli/reference/power-fx) do not support **IsType**.
+> [PAC CLI pac power-fx commands](/power-platform/developer/cli/reference/power-fx) don't support **IsType**.
 
 ## Description
 
@@ -34,7 +34,7 @@ The **AsType** and **IsType** functions can be used to convert record references
 
 Read [Understand record references and polymorphic lookups](/power-apps/maker/canvas-apps/working-with-references) for a broader introduction and more details.
 
-A lookup field usually refers to records in a particular table. Because the table type is well established, you can access the fields of the lookup by using a simple dot notation. For example, **First( Accounts ).'Primary Contact'.'Full Name'** walks from the **Accounts** table to the **Primary Contact** record in the **Contacts** table and extracts the **Full Name** field.
+A lookup field usually refers to records in a particular table. Because the table type is well established, access the fields of the lookup using simple dot notation. For example, **First( Accounts ).'Primary Contact'.'Full Name'** walks from the **Accounts** table to the **Primary Contact** record in the **Contacts** table and extracts the **Full Name** field.
 
 Microsoft Dataverse also supports polymorphic lookup fields, which can refer to records from a set of tables, as in these examples.
 
@@ -44,11 +44,11 @@ Microsoft Dataverse also supports polymorphic lookup fields, which can refer to 
 | **Customer**  | **Accounts** or **Contacts**                             |
 | **Regarding** | **Accounts**, **Contacts**, **Knowledge Articles**, etc. |
 
-In canvas-app formulas, use record references to work with polymorphic lookups. Because a record reference can refer to different tables, you don't know which fields are available at runtime when you write a formula. The _Record.Field_ notation isn't available. Those formulas must adapt to the records that the app encounters when it runs.
+In canvas-app formulas, use record references to work with polymorphic lookups. Because a record reference can refer to different tables, it's unclear which fields are available at runtime when writing a formula. The _Record.Field_ notation isn't available. Those formulas must adapt to the records that the app encounters when it runs.
 
-The **IsType** function tests whether a record reference refers to a specific table type. The function returns a Boolean TRUE or FALSE.
+The **IsType** function tests if a record reference refers to a specific table type. The function returns a Boolean TRUE or FALSE.
 
-The **AsType** function treats a record reference as a specific table type, sometimes referred to as _casting_. You can use the result as if it were a record of the table and again use the _Record.Field_ notation to access all of the fields of that record. An error occurs if the reference isn't of the specific type.
+The **AsType** function treats a record reference as a specific table type, also known as _casting_. You can use the result as if it were a record of the table and again use the _Record.Field_ notation to access all of the fields of that record. An error occurs if the reference isn't of the specific type.
 
 Use these functions together to first test the table type of a record and then treat it as a record of that type so that the fields are available:
 
@@ -59,7 +59,7 @@ If( IsType( First( Accounts ).Owner, Users ),
 )
 ```
 
-You need these functions only if you're accessing the fields of a record reference. For example, you can use record references in the [**Filter**](function-filter-lookup.md) function without **IsType** or **AsType**:
+These functions are needed only if accessing the fields of a record reference. For example, you can use record references in the [**Filter**](function-filter-lookup.md) function without **IsType** or **AsType**:
 
 ```power-fx
 Filter( Accounts, Owner = First( Users ) )
@@ -71,7 +71,7 @@ Similarly, you can use record references with the [**Patch**](function-patch.md)
 Patch( Accounts, First( Accounts ), { Owner: First( Teams ) } )
 ```
 
-If used in a record context, such as within a [**Gallery**](/power-apps/maker/canvas-apps/controls/control-gallery) or [**Edit form**](/power-apps/maker/canvas-apps/controls/control-form-detail) control, you might need to use the [global disambiguation operator](operators.md#disambiguation-operator) to reference the table type. For example, this formula would be effective for a gallery that's displaying a list of contacts where **Company Name** is a **Customer** lookup:
+When used in a record context, such as within a [**Gallery**](/power-apps/maker/canvas-apps/controls/control-gallery) or [**Edit form**](/power-apps/maker/canvas-apps/controls/control-form-detail) control, the [global disambiguation operator](operators.md#disambiguation-operator) might be needed to reference the table type. For example, this formula would be effective for a gallery that's displaying a list of contacts where **Company Name** is a **Customer** lookup:
 
 ```power-fx
 If( IsType( ThisItem.'Company Name', Accounts ),
@@ -80,9 +80,9 @@ If( IsType( ThisItem.'Company Name', Accounts ),
 )
 ```
 
-For both functions, you specify the type through the name of the data source that's connected to the table. For the formula to work, you must also add a data source to the app for any types that you want to test or cast. For example, you must add the **Users** table as a data source if you want to use **IsType** and **AsType** with an **Owner** lookup and records from that table. You can add only the data sources that you actually use in your app; you don't need to add all the tables that a lookup could reference.
+For both functions, specify the type through the name of the data source connected to the table. For the formula to work, you must also add a data source to the app for any types that you want to test or cast. For example, you must add the **Users** table as a data source if you want to use **IsType** and **AsType** with an **Owner** lookup and records from that table. You can add only the data sources that you actually use in your app; you don't need to add all the tables that a lookup could reference.
 
-If the record reference is _blank_, **IsType** returns FALSE, and **AsType** returns _blank_. All fields of a _blank_ record are _blank_.
+If the record reference is _blank_, **IsType** returns FALSE, and **AsType** returns _blank_. All fields of a _blank_ record are also _blank_.
 
 ### Untyped Objects
 
@@ -90,11 +90,11 @@ If the record reference is _blank_, **IsType** returns FALSE, and **AsType** ret
 > - Using **AsType** and **IsType** with untyped objects is an experimental feature.
 > - Experimental features aren't meant for production use and may not be complete. These features are available before an official release so that you can get early access and provide feedback. More information: [**Understand experimental, preview, and retired features in canvas apps**](/power-apps/maker/canvas-apps/working-with-experimental-preview)
 > - The behavior that this article describes is available only when the **User-defined types** experimental feature in [**Settings &gt; Upcoming features &gt; Experimental**](/power-apps/maker/canvas-apps/working-with-experimental-preview#controlling-which-features-are-enabled) is turned on (it's off by default).
-> - Your feedback is very valuable to us. Please let us know what you think in the [**Power Apps experimental features community forum**](https://community.powerplatform.com/forums/thread/details/?threadid=c8824a08-8198-ef11-8a69-7c1e52494f33).
+> - Your feedback is valuable to us. Let us know what you think in the [**Power Apps experimental features community forum**](https://community.powerplatform.com/forums/thread/details/?threadid=c8824a08-8198-ef11-8a69-7c1e52494f33).
 
-An untyped object coming from a web API or the [**ParseJSON** function] needs to be converted to a typed object before it can be used in Power Fx. Options to do this include:
-1. Implicitly type the field at the point it is used. For example, an object is converted to a number if it is used with the `+` operator, if it can be converted to a number. This option can have unexpected conversions and can't convert records and tables as a whole.
-1. Explicitly type each field individually with the **Decimal**, **Text**, **DateTime**, **GUID** and other type constructor functions. This is the most invasive to your formulas as each field must be done separately.
+An untyped object from a web API or the [**ParseJSON** function] needs to be converted to a typed object before it can be used in Power Fx. Options to do this include:
+1. Implicitly type the field at the point it's used. For example, an object is converted to a number if it's used with the `+` operator, if it can be converted to a number. This option can have unexpected conversions and can't convert records and tables as a whole.
+1. Explicitly type each field individually with the **Decimal**, **Text**, **DateTime**, **GUID**, and other type constructor functions. This is the most invasive to your formulas as each field must be done separately.
 1. Explicitly type JSON with the second argument to the **ParseJSON** function. This is an easy option that avoids needing the untyped object.
 1. Explicitly type an untyped object using the **AsType** function. You can also test type before attempting the conversion with the **IsType** function.
 
@@ -175,7 +175,7 @@ An untyped object coming from a web API or the [**ParseJSON** function] needs to
    - "Account: " and then the **Account Name** field from the **Accounts** table if the **Company Name** field refers to an account.
    - "Contact: " and then the **Full Name** field from the **Contacts** table if the **Company Name** field refers to a contact.
 
-   Your results might differ because the sample data may have been modified to show more types of results.
+   Your results might differ because the sample data might have been modified to show more types of results.
 
 ### Untyped Objects
 
