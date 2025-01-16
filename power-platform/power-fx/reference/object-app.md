@@ -235,7 +235,7 @@ Note, recursion is not yet supported by user defined functions.
 
 ### Behavior user defined functions
 
-Named formulas and most user defined functions do not support behavior functions with side effects, such as [**Set**](funciton-set.md) or [**Notify**](function-showerror.md). In general, it is best to avoid updating state if you can, instead relying on functional programming patterns and allowing Power Fx to recalculate formulas as needed automatically. But, there are cases where it is unavoidable. To include behavior logic in a user defined function, wrap the body in curly braces:
+Named formulas and most user defined functions do not support behavior functions with side effects, such as [**Set**](function-set.md) or [**Notify**](function-showerror.md). In general, it is best to avoid updating state if you can, instead relying on functional programming patterns and allowing Power Fx to recalculate formulas as needed automatically. But, there are cases where it is unavoidable. To include behavior logic in a user defined function, wrap the body in curly braces:
 
 ```powerapps-dot
 Spend( Amount: Number ) : Void = {
