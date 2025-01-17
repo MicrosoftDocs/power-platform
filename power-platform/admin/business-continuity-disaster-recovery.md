@@ -10,7 +10,7 @@ ms.author: ImadYanni
 search.audienceType: 
  - admin
 contributors:
-- ImadYanni
+- jasunil
 ---
 
 # Business continuity and disaster recovery
