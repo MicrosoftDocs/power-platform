@@ -79,7 +79,7 @@ landingContent:
           - text: Check online service health
             url: check-online-service-health.md
           - text: View troubleshooting content
-            url: https://learn.microsoft.com/en-us/troubleshoot/power-platform/      
+            url: /troubleshoot/power-platform/      
 
 
   # Card
