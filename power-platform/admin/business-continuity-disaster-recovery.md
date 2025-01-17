@@ -53,8 +53,10 @@ If an unanticipated region-wide outage occurs, such as a natural disaster that a
 | If an outage occurs, Microsoft determines that there's DATA LOSS, then failing over the environment isn't initiated without customer consent/approval. | Once the customer is aware of the ongoing outage, and sees IMPACT, then it's the customer's responsibility: <br> - To reach out to Microsoft via support and find out the level of data loss that would occur if a failover is initiated. <br> - If the data loss is at an acceptable level to their organization standards, then customers should provide their **consent** via support, for Microsoft to initiate a failover. |
 | When Microsoft determines that the primary region is back online and is fully operational, a **FAILBACK** is performed on the production instances. There's no data loss during the planned failback process but users could experience brief interruptions or disconnects during this window. | None |
 
-
 ## Self-service disaster recovery (preview)
+
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
 Disaster Recovery is a power platform premium infrastructure capability that enables customers to initiate environment failover between regions in a self-serve manner. Access to this capability is in power platform admin center, at this time, this is only available for all Production type environments with the exception for Finance and Operations environments.
 
