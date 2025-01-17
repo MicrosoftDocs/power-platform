@@ -7,6 +7,7 @@ ms.topic: conceptual
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: sericks
+ms.date: 02/28/2025
 ---
 
 # Develop a vision for adopting Microsoft Power Platform
