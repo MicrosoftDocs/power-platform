@@ -516,7 +516,7 @@
               href: security/connect-data-sources.md
             - name: Security and governance considerations
               href: governance-considerations.md
-            - name: Configure security for Dataverse
+            - name: Security for Dataverse
               items:
                 - name: Dataverse security
                   href: wp-security.md
@@ -524,8 +524,10 @@
                   href: wp-security-cds.md
                 - name: System and application users
                   href: system-application-users.md
-                - name: Configure user security
+                - name: User security
                   href: database-security.md
+                - name: Configure user security in an environment
+                  href: database-security-configure.md
                 - name: How access to records is determined
                   href: how-record-access-determined.md
                 - name: Email exfiltration controls for connectors
@@ -534,13 +536,13 @@
                   href: continuous-access-evaluation.md
                 - name: Control access of TDS endpoint
                   href: control-tds-settings.md
-                - name: Configure environment security
+                - name: Environment security
                   items:
                     - name: Control user access to environments
                       href: control-user-access.md
                     - name: Restrict cross-tenant access
                       href: cross-tenant-restrictions.md
-                    - name: Content security policy
+                    - name: Configure content security policy
                       href: content-security-policy.md
                 - name: Data policies
                   items:
@@ -592,7 +594,7 @@
                       href: add-teams-users-field-security-profile.md
                     - name: Create and manage masking rules (preview)
                       href: create-manage-masking-rules.md
-                - name: Configure teams and team templates
+                - name: Teams and team templates
                   items:
                     - name: Manage teams
                       href: manage-teams.md
