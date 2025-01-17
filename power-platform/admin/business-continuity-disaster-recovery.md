@@ -58,7 +58,7 @@ If an unanticipated region-wide outage occurs, such as a natural disaster that a
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
-Disaster Recovery is a power platform premium infrastructure capability that enables customers to initiate environment failover between regions in a self-serve manner. Access to this capability is in power platform admin center, at this time, this is only available for all Production type environments with the exception for Finance and Operations environments.
+Disaster recovery is a Power Platform premium infrastructure capability that allows customers to initiate environment failover between regions in a self-serve manner. Access to this capability is in the Power Platform admin center, at this time. This capability is only available for all production environments, with the exception for finance and operations environments.
 
 ### Enabling Production envionments for Self-service disaster recovery
 
