@@ -81,7 +81,7 @@ Only the privileges are copied, not any assigned members and teams.
 
 If your app uses a custom entity, its privileges must be explicitly granted in a security role before your app can be used. You can either add these privileges in an existing security role or create a custom security role.
 
-Every security role must include a [minimum set of privileges](#minimum-privileges-to-run-an-app). [Learn more about security roles and privileges](security-roles-privileges.md).
+Every security role must include a [minimum set of privileges](create-edit-security-role.md#minimum-privileges-for-common-tasks). [Learn more about security roles and privileges](security-roles-privileges.md).
 
 > [!TIP]
 > The environment might maintain records used by multiple apps. You might need multiple security roles that grant different privileges. For example:
@@ -113,7 +113,7 @@ Every security role must include a [minimum set of privileges](#minimum-privileg
 1. Select the privileges **Read**, **Write**, **Append**.
 1. Select **Save and Close**.
 
-## Assign security roles to users in an environment that have no Dataverse database
+## Assign security roles to users in an environment that has no Dataverse database
 
 For environments with no Dataverse database, a user who has the Environment Admin role in the environment can assign security roles to individual users or groups from Microsoft Entra ID.
 
@@ -125,7 +125,7 @@ For environments with no Dataverse database, a user who has the Environment Admi
 1. Select **Add people**, and then specify the name or email address of one or more users or groups from Microsoft Entra ID.
 1. Select **Add**.
 
-## Assign security roles to users in an environment that have a Dataverse database
+## Assign security roles to users in an environment that has a Dataverse database
 
 Security roles can be assigned to individual users, [owner teams](manage-teams.md#types-of-teams), and [Microsoft Entra group teams](manage-group-teams.md). Before you assign a role to a user, [verify the user's account is added to and enabled in the environment](troubleshooting-user-needs-read-write-access-organization.md).
 
