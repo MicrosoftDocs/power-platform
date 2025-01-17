@@ -5,11 +5,13 @@ author: paulliew
 ms.author: paulliew
 ms.reviewer: sericks, matp, ratrtile
 ms.topic: how-to
-ms.date: 09/03/2024
+ms.date: 11/12/2024
 ms.custom: template-how-to
 contributors:
-- kavehkazms
-- lauravasiliums
+  - samathur
+  - v-aangie
+  - kavehkazms
+  - lauravasiliums
 
 ---
 # Manage your customer-managed encryption key
@@ -19,7 +21,7 @@ Customers have data privacy and compliance requirements to secure their data by 
 All customer data stored in Power Platform is encrypted at-rest with strong Microsoft-managed encryption keys by default. Microsoft stores and manages the database encryption key for all your data so you don't have to. However, Power Platform provides this customer-managed encryption key (CMK) for your added data protection control where you can self-manage the database encryption key that is associated with your Microsoft Dataverse environment. This allows you to rotate or swap the encryption key on demand, and also allows you to prevent Microsoft's access to your customer data when you revoke the key access to our services at any time.
 
 To learn more about customer managed key in Power Platform, watch the customer-managed key video.<p/>
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW14O4G]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=6b5742f5-2ff6-4a26-9ab6-ce983b092c42]
 
 These encryption key operations are available with customer-managed key (CMK):
 
@@ -37,8 +39,7 @@ Currently, all your customer data stored *only* in the following apps and servic
 
 - Dataverse (Custom solutions and Microsoft services)
 - Dataverse [Copilot for model-driven apps](/power-apps/maker/model-driven-apps/add-ai-copilot)  
-- [Power Automate](/power-automate/customer-managed-keys) <sup>1</sup>
-- Power Apps
+- [Power Automate](/power-automate/customer-managed-keys)
 - Chat for Dynamics 365
 - [Dynamics 365 Sales](/dynamics365/sales/sales-gdpr-faqs#can-the-dynamics-365-sales-data-be-encrypted-using-customer-managed-encryption-key-cmk)
 - Dynamics 365 Customer Service
@@ -51,9 +52,7 @@ Currently, all your customer data stored *only* in the following apps and servic
 - Dynamics 365 Supply Chain Management (Finance and operations)
 - Dynamics 365 Fraud Protection (Finance and operations)
 
-<sup>1</sup> When you apply the customer managed key to an environment that has existing Power Automate flows, the flows data continues to be encrypted with Microsoft-managed key. More information: [Power Automate customer manged key](/power-automate/customer-managed-keys).
-
-> [!Note]
+> [!NOTE]
 > Nuance Conversational IVR and [Maker Welcome Content](welcome-content.md) are excluded from customer-managed key encryption.
 
 [Microsoft Copilot Studio](/power-virtual-agents/fundamentals-what-is-power-virtual-agents) stores its data in their own storage and in [Microsoft Dataverse](/power-apps/maker/data-platform/data-platform-intro). When you apply the customer-managed key to these environments, only the data stores in **Microsoft Dataverse** are encrypted with your key. The non-Microsoft Dataverse data continues to be encrypted with the Microsoft-managed key.

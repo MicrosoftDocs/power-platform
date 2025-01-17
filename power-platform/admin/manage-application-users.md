@@ -7,9 +7,11 @@ ms.author: paulliew
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/06/2024
+ms.date: 12/04/2024
 search.audienceType: 
   - admin
+contributors:
+  - abhijananddv
 ---
 # Manage application users in the Power Platform admin center
 
@@ -18,7 +20,7 @@ We're in the process of moving application user management from the legacy web c
 > [!NOTE]
 > [Deleting an inactive, application user](#delete-an-inactive-application-user) is now supported.
 > [!TIP]
-> Check out the video: [Administer application users, security roles, teams, and users in the Power Platform admin center](https://www.microsoft.com/videoplayer/embed/RWJBr8).
+> Check out the video: [Administer application users, security roles, teams, and users in the Power Platform admin center](https://learn-video.azurefd.net/vod/player?id=5799c67e-f283-4cbd-aafa-bc38a3f53276).
 
 ## View application users in an environment
 
@@ -103,6 +105,9 @@ When an application user is first created, the username is the same as the name 
 In addition to using the entry point on the **Details** page to manage roles, you can select **Edit security Roles** on the menu bar on the **Application users** page. If the application user has roles assigned already, those roles appear as selected on the page.
 
 You can select or deselect roles, and then select **Save**. All selected roles become the current assigned roles for the application user. Any unselected roles aren't assigned.
+
+> [!NOTE]
+> All your application users can run in any environments that are secured with a [security group](control-user-access.md) without being a member of the security group.
 
 ## Activate or deactivate an application user
 

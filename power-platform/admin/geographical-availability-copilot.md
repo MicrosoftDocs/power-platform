@@ -1,12 +1,12 @@
 ---
 title: Turn on copilots and generative AI features
 description: Learn how to turn on copilots and generative AI features.
-author: caitlinshaw1
+author: amchern
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/11/2024
+ms.date: 01/10/2025
 ms.subservice: admin
-ms.author: caitlinshaw
+ms.author: amchern
 ms.reviewer: sericks
 search.audienceType:
   - admin
@@ -44,13 +44,17 @@ The following table lists the regions where your Power Platform or Dynamics 365 
 
 | Region where your Power Platform or Dynamics 365 environment is hosted | Region where Azure OpenAI Service is hosted | Region where data is stored and processed for Bing Search | 
 |-------------------------|-------------------------|-------------------------|
-| Australia<br>India<br>United Kingdom<br>United States | Within the geographical region of your Power Platform or Dynamics 365 environment | United States| 
-| Europe\*  | Spain, Sweden, or Switzerland| United States |
+| United States | In region* | United States| 
+| Europe\**  | Spain, Sweden, or Switzerland| United States |
 | France<br>Germany<br>Norway<br>Switzerland | Spain, Sweden, or Switzerland | United States|
 | Asia<br>Brazil<br>Canada<br>Japan<br>Korea<br>Singapore<br>South Africa<br>United Arab Emirates | United States | United States| 
-| Government cloud (GCC, GCC High) | Within the geographical region of your Power Platform or Dynamics 365 environment | United States |
+| Australia<br>India | In region* or United States | United States |
+| United Kingdom | In region*, Spain, Sweden or Switzerland | United States |
+| Government cloud (GCC, GCC High) | In region* | United States |
 
-\*If your Power Platform and Dynamics 365 environments are hosted in the EU Data Boundary, we use an Azure OpenAI endpoint in the same boundary.
+\*In region means within the geographical region of your Power Platform or Dynamics 365 environment.
+
+\**If your Power Platform and Dynamics 365 environments are hosted in the EU Data Boundary, we use an Azure OpenAI endpoint in the same boundary.
 
 ## Turn on copilots and generative AI features
 

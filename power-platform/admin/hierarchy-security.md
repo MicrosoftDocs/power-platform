@@ -150,7 +150,7 @@ The manager hierarchy is easily created by using the manager relationship on the
 
 ## Include or exclude records owned by direct report with the disabled user status
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/embed/RW1jVin]
+> [!VIDEO 3d49a8e0-9ab5-43be-bc86-4ee1b59ff855]
 
 Managers can see their disabled status direct report's records for environments where hierarchy security is enabled after January 31, 2024. For other environments, disabled status direct report's records aren't included in the manager's view. 
 

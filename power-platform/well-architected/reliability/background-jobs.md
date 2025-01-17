@@ -60,7 +60,7 @@ An action triggers an event-driven invocation that starts the background task. E
 
 - The UI or a different job makes a request to an endpoint, such as an HTTPS URI or an API that's exposed as a web service. As part of the request, the UI or job transfers the data that the background task requires. The endpoint or web service invokes the background task, which uses the data as its input.
 
-Other examples of event-driven triggers include a form being submitted in an application, a new row being added to the data store, a trigger phrase in copilot starting a topic that calls a flow, the value of a field changing in the data store, an email with a specific subject or from a specific sender arriving in the inbox, and a file being uploaded to a file storage location.
+Other examples of event-driven triggers include a form being submitted in an application, a new row being added to the data store, a trigger phrase in an agent starting a topic that calls a flow, the value of a field changing in the data store, an email with a specific subject or from a specific sender arriving in the inbox, and a file being uploaded to a file storage location.
 
 Use trigger conditions to streamline your workflows and reduce the number of unnecessary runs. Trigger conditions set up multiple conditions that must be met before a workflow is triggered.
 
@@ -136,7 +136,7 @@ Reduce the risk by [planning for error handling](/power-automate/guidance/planni
 Here are some examples of where you can use Power Automate flows to run background jobs:
 
 - [Canvas apps](/power-apps/maker/canvas-apps/working-with-flows)
-- [Copilots](/microsoft-copilot-studio/advanced-flow)
+- [Agents](/microsoft-copilot-studio/advanced-flow)
 - [Custom pages](/power-apps/maker/model-driven-apps/commanding-designer-use-custom-pages-as-dialogs)
 - [Command bar actions](/power-apps/maker/model-driven-apps/command-designer-overview#key-differences-between-classic-and-modern-commands)
 

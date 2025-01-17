@@ -14,8 +14,8 @@ contributors:
 - scottwoodallmsft
 - Wrighttyler
 ms.reviewer: ellenwehrle
-ms.topic: overview
-ms.date: 10/26/2023
+ms.topic: get-started
+ms.date: 12/18/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -36,6 +36,10 @@ More information:
 - [Power Platform adoption best practices](/power-platform/guidance/adoption/methodology)
 - [Administer Microsoft Power Platform](/power-platform/admin/admin-documentation)
 - [Working with enterprise systems](/power-apps/guidance/planning/enterprise-systems)
+
+## Use SAP Setup Assistant
+
+To help you get started with Power Platform integration with SAP, check out the [SAP Setup Assistant](sap-setup-assistant/overview.md). It walks you through all the necessary considerations and steps to ensure successful deployment of the SAP Procurement template.
 
 ## Integrate SAP with Power Platform
 
@@ -72,7 +76,14 @@ Work with your SAP functional analyst, business subject matter experts, and Powe
 | [Extend model-driven app and Dataverse tables](extend-model-apps-dataverse.md) | Create tables, columns, and security roles to help drive and persist newly digitized data that's currently not mastered and extend the administrator experience. |
 | [Extend cloud flows](extend-cloud-flows.md) | Map new SAP fields and connect them to more processes and workflows. |
 
-### Next steps
+## Use agents to translate goals into tasks
+
+The [Integration assistant for SAP solutions](/power-platform/sap/templates/integration-assistant/overview.md) and the [Account assistant for SAP solutions](/power-platform/sap/templates/account-assistant/overview.md) are advanced, LLM-based agents that translate business-oriented goals into actionable SAP NetWeaver tasks. These assistive agents, set up in a developer environment, help you discover the SAP BAPIs, RFCs, and table reads you need to achieve your business goals and empower you to build what you need to retrieve that information and execute operations seamlessly.
+
+> [!WARNING]
+> *Integration assistant for SAP solutions* and *Account assistant for SAP solutions* are only intended to assist makers in a development environment. The agents have wide latitude when interacting with SAP systems and are **not for production use**.
+
+### Next step
 
 [Requirements to integrate SAP with Power Platform](requirements.md)
 

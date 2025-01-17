@@ -88,7 +88,7 @@ Continuously optimizing databases involves identifying and implementing optimiza
 
 **Monitoring performance optimization**: Integrate your Power Platform workloads with [Application Insights](/power-platform/admin/overview-integration-application-insights?source=recommendations) to gain insights and recommendations for optimizing performance.
 
-**Analyze copilot performance and usage in Copilot Studio**: Copilot [Analytics](/microsoft-copilot-studio/analytics-summary) provides a comprehensive overview of your copilot's performance. It uses artificial intelligence (AI) technology to identify which topics are having the greatest impact on escalation rate, abandon rate, and resolution rate. Tracking [conversation engagement](/microsoft-copilot-studio/guidance/measuring-engagement) rates and [outcomes](/microsoft-copilot-studio/guidance/measuring-outcomes) is essential for measuring copilot performance metrics and discovering areas for improvement.
+**Analyze agent performance and usage in Copilot Studio**: Copilot [Analytics](/microsoft-copilot-studio/analytics-summary) provides a comprehensive overview of your agent's performance. It uses artificial intelligence (AI) technology to identify which topics are having the greatest impact on escalation rate, abandon rate, and resolution rate. Tracking [conversation engagement](/microsoft-copilot-studio/guidance/measuring-engagement) rates and [outcomes](/microsoft-copilot-studio/guidance/measuring-outcomes) is essential for measuring agent performance metrics and discovering areas for improvement.
 
 ## Performance Efficiency checklist
 
