@@ -524,8 +524,10 @@
                   href: wp-security-cds.md
                 - name: System and application users
                   href: system-application-users.md
-                - name: Configure user security
+                - name: User security
                   href: database-security.md
+                - name: Configure user security in an environment
+                  href: database-security-configure.md
                 - name: How access to records is determined
                   href: how-record-access-determined.md
                 - name: Email exfiltration controls for connectors
