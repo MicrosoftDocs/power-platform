@@ -58,11 +58,23 @@ If an unanticipated region-wide outage occurs, such as a natural disaster that a
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
-Disaster recovery is a Power Platform premium infrastructure capability that allows customers to initiate environment failover between regions in a self-serve manner. Access to this capability is in the Power Platform admin center, at this time. This capability is only available for all production environments, with the exception for finance and operations environments.
+Disaster recovery is a Power Platform premium infrastructure capability that allows customers to initiate environment failover between regions in a self-serve manner.
+Customers typically have multiple environments of different types created in their tenant, this capability is available specifically for production type environments, and can be enabled on an environment by environment basis. At this time this capability is not available for finance and operations production environments.
 
 ### Enabling Production envionments for Self-service disaster recovery
 
-You need to enable DR for an environment before you can use the capability; enabling is a one-time action that provisions resources and starts the process of replicating data between the primary location and secondary location. This may take up to 48 hours to complete. Admins will receive a notification when feature enablement is complete. 
+You need to enable self-service disaster recovery for an environment before you can use the capability; enabling is a one-time action that provisions resources and starts the process of replicating data between the primary location and secondary location. This may take up to 48 hours to complete. Admins will receive a notification when feature enablement is complete. 
+
+Enabling disaster recovery on an environment has no impact on the environment or the data within it.
+To enable disaster recovery:
+1. Navigate to the list of Environments within your Power Platform admin center
+2. Select the production type environment that you want enabled
+3. Click on "Disaster Recovery" operation located on top of the page; this will open Disaster Recovery dialog
+4. Click on the toggle to change "Disabled" to "Enabled"
+5. Click on "Save" button at the bottom of the dialog
+6. The environmet will be placed in "Edit Details" page briefly
+7. Environment details page will appear indicating that enablement has started
+8. in Disaster recovery dialog "Enabled" toggle will be greyed-out until enablement is complete, which could take hours
 
 There are two reasons that may require you to use this feature after an environment has been enabled: Disaster recovery drill or Emergency response in the event of a major regional outage.
 
@@ -82,7 +94,7 @@ After you have completed your drill or after an outage has been mitigated it is 
 
 ### Environment Disaster recovery status
 
-Admins can determine current DR state and location of an environment in the environment details page or can click Disaster recovery operation to open DR panel.
+Admins can determine current DR state and location of an environment in the environment details page or can click Disaster recovery operation to open DR panel. To check data replication latency at any time, you can click on Disaster recovery, Select emergeny response 
 
 ### Documenting your business continuity plan
 
