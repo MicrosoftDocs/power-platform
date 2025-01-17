@@ -60,13 +60,14 @@ Disaster Recovery is a power platform premium infrastructure capability that ena
 
 ## Enabling Production envionments for Self-service disaster recovery
 
-You need to enable DR an environment before you can use the capability; enabling is a one-time action provisions resources and start the process of replicating data between the primary location and secondary location. This may take up to 48 hours to complete. Admins will receive a notification when feature enablement is complete. 
+You need to enable DR for an environment before you can use the capability; enabling is a one-time action that provisions resources and starts the process of replicating data between the primary location and secondary location. This may take up to 48 hours to complete. Admins will receive a notification when feature enablement is complete. 
 
 There are two reasons that may require you to use this feature after an environment has been enabled: Disaster recovery drill or Emergency response in the event of a major regional outage.
 
 ## Disaster recovery drills
 
 Your company may have DR drills documented as a requirement in your internal business continuity plans. There are also industries and companies that may be required by government regulations to perform audits on their BCDR capabilities. In these cases you may run a DR drill on an environment. DR drill allows you to perform self-service DR without losing any data. The duration of the failover action may be slightly higher while all remaining data is being replicated to secondary region.
+It is recommended that drills are performed on a copy of a production environment, since this incures downtime that can last for minutes, for example you may want to copy a production environment to a sandbox type environment then change the type from sandbox to production.
 
 ## Emergency response failover
 
