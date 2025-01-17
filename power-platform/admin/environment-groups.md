@@ -95,7 +95,7 @@ You can also configure the _sharing limit_ rules for canvas apps, solution-aware
 
 #### For solution-aware cloud flows
 1. Select the **Sharing controls for Solution-aware cloud flows** rule to open its configuration panel.
-2. Unmark the **Let people share solution-aware cloud flows** option. This will turn off all sharing for solution-aware cloud flows in this environment group.
+2. Unmark the **Let people share solution-aware cloud flows** option. This turns off all sharing for solution-aware cloud flows in this environment group.
 3. Select **Save**
 
 #### For agents (preview)
@@ -145,7 +145,7 @@ You can manually add environments to the **Personal Productivity** group if you 
 > [!NOTE]
 >
 > - An environment can only belong to one environment group.
-> - Any environment type, for example production, developer, or sandbox, can be created into an environment group as long as they are a managed environment. 
+> - Any environment type, for example production, developer, or sandbox, can be created into an environment group as long as they're a managed environment. 
 
 ## Manually create environments in the group
 
