@@ -4,7 +4,7 @@ description: Guidance for getting buy-in from an executive leader for your Power
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/31/2023
+ms.date: 02/28/2025
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: sericks
@@ -48,6 +48,14 @@ There are multiple ways to identify an executive sponsor:
 - **Bottom-up:** An executive sponsor could emerge through the success they've experienced with Power Platform. For example, a department such as Marketing has accomplished great business value with the use of Power Platform. A leader in that department may then grow into the executive sponsor role by sharing successes with other departments across the organization.
 
     The challenge with this approach is that the sponsor doesn't have formal influence over other business units, and may experience challenges that are beyond their level of influence. Although initial successes can be achieved with a bottom-up approach, the recommendation is to seek a C-level sponsor.
+
+## Considerations
+
+- **Identify an executive sponsor with broad authority**: Select an executive sponsor in a position of influence and authority across organizational boundaries who understands the value and impact of Power Platform. It is important that the executive sponsor has an interest in the success of low-code and Power Platform in the organization.
+- **Involve your executive sponsor**: Ensure your executive sponsor is consistently engaged in all strategic-level governance decisions related to Power Platform. 
+- **Establish responsibilities and expectation**: Document the responsibilities and expectations for the executive sponsor role to eliminate any uncertainty about their duties and time commitments.
+- **Identify a backup for the sponsor**: Appoint a backup executive sponsor who can attend meetings in the primary sponsor's absence and make time-sensitive decisions when necessary.
+- **Identify business advocates**: Locate advocates within each business unit. Determine how their cooperation and involvement can help achieve your objectives. Consider involving advocates from various levels within the organizational hierarchy.
 
 ## Maturity levels
 

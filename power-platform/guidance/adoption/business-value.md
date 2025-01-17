@@ -25,6 +25,14 @@ ms.custom: bap-template
 
 Measuring business value in Power Platform is a critical aspect of ensuring success and return on investment. Power Platform provides a low-code/no-code platform for building applications, automating tasks, streamlining business processes, and infusing AI into your solutions. These capabilities can bring significant benefits and it's important to track and measure the value to the business that the platform is delivering.
 
+## Why measure value?
+
+Why does value measurement matter? It’s the driving force behind your technology investments. 
+
+- **Driving shared purpose**: Value measurement provides purpose - measuring business value answers the fundamental question of "why are we doing this?". It gives meaning to your technology investments.  It ensures projects have a defined and meaningful goal. Move from uncertainity about what success looks like to a clear objective that guides actions, feature prioritisation and keeps everyone aligned
+- **Strategic alignment**: Value measurement ensures Power Platform initiatives align with business strategic goals. Move from technology initiatives not aligned with the bigger picture to Power Platform directly supports what the business has agreed is important.
+- **Informed decision-making**: Business value measurement equips you with the information needed to make informed decisions about technology investments.​ Business value is not just a metric; it’s a strategic compass. It aligns us with our organizational goals, optimizes resource allocation and empowers data-driven decisions. It’s the driving force behind successful Power Platform solutions. Move from decisions based on intuition or subjective opinion to concrete data on performance, satisfaction and cost effectiveness. 
+
 The business value of the platform is often seen through two lenses: IT benefits and the value of the applications that run on it. From an IT perspective, core benefits include reducing development and maintenance costs, reducing third-party license spend, and reducing technical debt.
 
 The applications typically help improve one or more business value drivers, such as:
@@ -33,6 +41,199 @@ The applications typically help improve one or more business value drivers, such
 - **Direct or indirect cost savings**: Applications that help organizations reduce their operational costs by automating manual processes, reducing errors, and improving resource utilization. They can also help organizations save money indirectly by improving the quality of products or services, such as by reducing paper, fuel, or other resources.
 - **Risk mitigation**: Applications that help organizations mitigate risks by improving data security, ensuring compliance with regulator requirements, and reducing the risk of errors, such as reducing the risk of a process outage and data breach.
 - **Business transformation**: Applications that help organizations transform their operations and business models. This might include enabling businesses to adapt to changing market conditions, introduce new products or services, or replace aging legacy systems.
+
+## Tangible and intangible value
+
+Understanding tangible and intangible value is important to fully appreciate the benefits of the investments. Tangible value refers to measurable outcomes such as cost savings, increased productivity, and faster time-to-market for solutions. These are often quantified through metrics and financial reports, providing clear evidence of the platform's impact. Intangible value encompasses benefits that are not easily measured but are equally important, such as improved employee satisfaction, enhanced collaboration, and a culture of innovation. 
+
+Recognizing both types of value allows organizations to make informed decisions, justify investments, and foster a holistic approach to digital transformation. 
+
+Here are some examples of tangible and intangible value:
+
+| Tangible value | Intangible value |
+| --- | --- |
+| Revenue growth ($) | Risk mitigation and compliance |
+| Reduced maintenance cost ($) | Fewer disruptions |
+| Reduced paperwork and admin ($) | Improved employee experience |
+| Resource optimization (%) | Improved data security |
+
+Think about how you can measure and report on both tangible and intangible value, for example
+
+| Value type | Value | Measurement |
+| --- | --- | --- |
+| Tangible | Cost Reduction | "By automating our manual data entry processes with the Power Platform solution, we saved $50,000 annually in labor costs."
+| Tangible | Increased productivity | "After implementing our Power App, our teams experienced a 30% boost in productivity, resulting in annual savings of 1,000 hours."
+| Intangible | Enhanced reputation | "The agility of our Power Platform solutions allowed us to respond quickly to customer needs, enhancing our reputation as an innovative and customer-centric organisation."
+| Intangible | Improved employee morale | "By automating repetitive tasks, our employees experienced reduced frustration and improved morale, contributing to a more positive workplace atmosphere."
+
+## How can we measure business value?
+
+### Methods and tools
+
+Measuring the business value of Power Platform solutions involves a combination of qualitative and quantitative methods to ensure a comprehensive evaluation. 
+
+Key methodologies include: 
+
+- **Stakeholder interviews**: Interviews are invaluable for qualitative insights. Engage with individuals involved in or impacted by the solution. Ask about their experiences, challenges, and perceived improvements. Consider using structured interview guides to ensure consistency and depth in responses.
+- **Surveys and feedback forms**: Surveys are excellent for quantitative data. They allow collecting structured feedback from a larger audience, including end-users and team members. Use a mix of closed and open-ended questions to capture both measurable data and detailed feedback.
+- **Key performance indicators (KPIs)**: KPIs provide quantifiable data about the solution’s performance. Metrics like response times, resolution times, error rates, user adoption rates, and cost savings can be monitored. Ensure KPIs are aligned with business objectives.
+- **User Analytics**: User analytics tools help understand user behavior and interaction with the solution. Track adoption rates, feature usage, and user engagement. Tools like Power BI can visualize this data for better insights.
+- **Return on investment (ROI) calculators**: Calculating ROI involves comparing implementation costs against the benefits obtained. Both tangible and intangible benefits, such as efficiency gains, user satisfaction, and reduced operational costs, should be considered. Use standardized ROI calculation methods to ensure accuracy.
+- **360-degree feedback**: Gather feedback from all angles – from end-users and customers to support agents and IT teams. This holistic approach ensures a comprehensive view of the solution’s impact. Use tools like Microsoft Forms or third-party survey platforms to facilitate this process.
+- **Data integration and automation**: Automating data collection and integration with Power Platform tools ensures accurate and real-time data for measurement, reducing manual entry. Utilize connectors and APIs to streamline data flow between systems.
+- **Periodic reviews**: Periodic reviews and assessments help track progress over time and make informed adjustments based on evolving needs. Schedule regular review meetings and use dashboards to present key metrics and insights.
+- **Benchmarking**: Compare the performance of your Power Platform solutions against industry standards or similar implementations within your organization. This helps identify areas for improvement and set realistic performance targets.
+
+### Choose the best method and tool 
+
+Choosing the best value measurement method and tool involves considering several key factors. Here are some steps to guide you:
+
+- **Define your objectives**: Clearly outline what you aim to achieve with the measurement. This could include improving efficiency, tracking progress, or demonstrating value to stakeholders.
+- **Identify key metrics**: Determine the specific metrics that will help you measure value. These could be financial metrics, performance indicators, or customer satisfaction scores.
+- **Evaluate automation capabilities**: Look for tools that offer robust automation features. Automation can save significant time by reducing manual data entry and ensuring consistent data collection. 
+- **Assess reporting features**: Choose tools that provide comprehensive reporting capabilities. This includes customizable reports, real-time data visualization, and the ability to export data in various formats.
+- **Consider integration**: Ensure the tool can integrate with your existing systems. This will streamline data flow and reduce the need for duplicate data entry. For example, consider integrating a feedback mechanism directly within the app to streamline the process for users. This approach eliminates the need for users to leave the app and navigate to an external form or system. By embedding feedback options within the app interface, you can capture real-time insights and improve user engagement. 
+- **Scalability**: Stakeholder interviews and 360-degree feedback are valuable but can be time-intensive for participants. To maximize their effectiveness, employ these methods purposefully for high-impact scenarios. Focus on situations where comprehensive insights are important.
+
+### Value measurement at scale
+
+| Use case | Characteristics | Identification | Methodology | 
+| --- | --- | --- | --- | 
+| Everbody | Large number of users, smallest number of solutions | Metadata and telemetry | [Business value toolkit](../coe/business-value-toolkit.md) |
+| Broad use | Used by team, project or department<br>May be critical to business operations<br>May use premium features | Metadata and telemetry (for example, between 10-100 users) | [Business value toolkit](../coe/business-value-toolkit.md)<br>Automation / adpative cards / surveys |
+| Personal use | Smallest number of users, largest number of solutions | Metadata and telemetry (for example, less than 5 users) | Automation / adpative cards / surveys
+
+### Who do we communicate value to?
+
+### Audience analysis
+
+Different audiences will have different perspectives on business value, for example
+
+- IT Department: Cyber security, Scalability, technology adoption
+- Finance department: Cost savings, financial roi, investment justification
+- Marketing department: customer engagement, brand reputation
+- Operations department: process efficiencey, productivity, reduced downtime
+
+Communicating value is important, but tailoring the message to the audience is even more so.​
+
+The impact of analyzing your audience, by understanding who the key stakeholders are, their roles and responsibilities and how they prefer to receive information is key to ensuring stakeholders remain engaged. It ensures that communications are effective and create a strong connection with your audience.
+
+Key considerations: 
+
+- Audience: Who are the stakeholders involved?
+- Roles and responsibilities: What information is relevant to their role?
+- Communication preference: Which communication channels will reach them?
+- Interest and concerns: How can the message be aligned to their interests to encourage buy-in?
+- Knowledge level: What's the right level of technical detail?
+
+Taking this into consideration will help with improved engagement, increased credibility, stronger connection, buy-in and support
+
+## What framework can we use for measuring value?
+
+Let’s look at the methodology for building your business value measurement framework. 
+
+:::image type="content" source="media/business-value-framework.png" alt-text="Illustration of the value measurement framework.":::
+
+This is a structured approach ensuring that your measurement efforts are aligned with your organizations objectives and goals. Here are the key steps:​
+
+- **Centralise objectives and goals**: Begin by outlining the objectives and goals for your organization, the departments, business units or functions. What are they trying to achieve?​
+
+- **Identify relevant metrics**: Select metrics that directly align with the objectives you’ve collected. These metrics serve as the yardstick for measuring progress. Consider metrics like time, rate, scale, number or percentage, for example: ‘Reduce health and safety incidents by 50% over the next twelve months’.​
+
+- **Data collection and analysis**: Data is the heart of measurement. Collect relevant data to measure the selected metrics accurately. Then, dive into data analysis to derive insights that inform decision-making, prove ROI and accurately measure the value of Power Platform solutions.​
+
+- **Reporting and presentation**: Effectively communicate your findings. Develop clear and concise reports that highlight key insights and the impact of Power Platform solutions. Ensure that the report aligns with the audience’s need.​
+
+Over the next few slides, we will discuss and demonstrate reference tooling, designed to get customers up and running with value assessment​
+
+
+## What about the bigger picture - introducing value plays
+
+So far, we’ve been focused on the app/ solution level.
+
+Taking a step back and thinking about your adoption journey – running specific initiatives is a useful way to boost adoption by demonstrating how Power Platform can generate business value quickly. But how do you measure and communicate the value of these initiatives? Value Plays are one approach that we want to share with you.
+
+Plus at a high-level you’ll have the key Platform value measures or key results to monitor to demonstrate ROI at the Platform level. We go into a lot of detail in this in Vision, Metrics & Goals.
+
+Each Value Play is designed to be -
+Strategic - Start with the Value Plays that are best aligned with your business objectives
+Repeatable - Value measurement shouldn't just be a once-off activity, so each Value Play looks at how Power Platform can enhance existing business processes & programs
+Actionable - The Value Play philosophy is 'don't try to measure everything the same way and make sure you do something with the things you do measure'
+
+Like all examples, these Value Plays are not intended as an exhaustive list. They create a simple, repeatable approach to start getting traction through purposeful, strategic value measures. Your Plays can get more sophisticated as your Platform grows & matures.
+
+### The innovation accerator
+
+:::row:::
+   :::column span="":::
+      Source of value
+   :::column-end:::
+   :::column span="2":::
+      Inject Power Platform as a rapid ideation tool in the Innovation Function’s Accelerator Program
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+     Headline
+   :::column-end:::
+   :::column span="2":::
+      Power Platform lets you co-design, test, deploy and iterate faster than any other development method
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+     The Play (Key Activities)
+   :::column-end:::
+   :::column span="2":::
+      Find a use case with multiple stakeholders that would benefit from co-design​<br>Outline riskiest technical & usability assumptions​<br>Prototype in Power Platform to demonstrate speed of development & iteration​<br>Gauge tangible (eg. development cost savings) and intangible (eg. better stakeholder alignment on requirements) value achieved​<br>Write up the success story
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+     Objectives (what to focus on)
+   :::column-end:::
+   :::column span="2":::
+      Co-design with a team​<Br>Demonstrate rapid deployment & iteration​<br>Prove technical feasibility fast
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+     Audience and call to action
+   :::column-end:::
+   :::column span="2":::
+      Innovation leads and Accelerator teams should agree to x number of Power Platform prototypes per quarter through the Accelerator program
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+     Strategic alignment
+   :::column-end:::
+   :::column span="2":::
+     Speed of innovation​<br>Engaging employees in improving how they work​<br>Leverage existing IT investments
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+     Tangibles & intangibles
+   :::column-end:::
+   :::column span="2":::
+    Development time saved vs custom solution​<br>Reduced IT development backlog / bottleneck
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+    Tips for new players
+   :::column-end:::
+   :::column span="2":::
+    Choose a coalition of the willing​<Br>Select a use case that would take significant custom development time
+   :::column-end:::
+:::row-end:::
+
+### The success story
+
+| Audience and call to action | Employees (potential makers) should explore their own app ideas and be part of the Power Platform community. Featured makers / developers should contribute and support newer makers in the Power Platform community | 
+
+Learn more: [success story framework](nurture-best-practices.md)
 
 ## Talking to business users
 
@@ -194,3 +395,5 @@ Learn more about measuring business value:
 - [Defining the value of a business problem](/power-apps/guidance/planning/defining-business-value)
 - [Total Economic Impact of Power Platform Premium Capabilities (Forrester)](https://info.microsoft.com/ww-landing-forrester-tei-of-power-platform-premium-capabilities.html?LCID=EN-US)
 - [Real-world Examples of measuring and communicating value](https://www.youtube.com/watch?v=L_jRljdk1T0)
+
+[!INCLUDE [footer-include](../../includes/footer-banner.md)]
