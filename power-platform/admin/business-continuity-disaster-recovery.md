@@ -82,7 +82,7 @@ After you have completed your drill or after an outage has been mitigated it is 
 
 Admins can determine current DR state and location of an environment in the environment details page or can click Disaster recovery operation to open DR panel.
 
-## Documenting you business continuity plan
+## Documenting your business continuity plan
 
 It is recommended that you perform DR drills, or emergency response if you choose to, before a real disaster has struck so you can document all  additional steps required for any additional integration points that are external to power platform. In this case your company will be more prepared for recovery in case of a real disaster.
 
