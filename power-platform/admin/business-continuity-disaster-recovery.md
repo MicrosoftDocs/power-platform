@@ -54,39 +54,39 @@ If an unanticipated region-wide outage occurs, such as a natural disaster that a
 | When Microsoft determines that the primary region is back online and is fully operational, a **FAILBACK** is performed on the production instances. There's no data loss during the planned failback process but users could experience brief interruptions or disconnects during this window. | None |
 
 
-# Self-service disaster recovery (preview)
+## Self-service disaster recovery (preview)
 
 Disaster Recovery is a power platform premium infrastructure capability that enables customers to initiate environment failover between regions in a self-serve manner. Access to this capability is in power platform admin center, at this time, this is only available for all Production type environments with the exception for Finance and Operations environments.
 
-## Enabling Production envionments for Self-service disaster recovery
+### Enabling Production envionments for Self-service disaster recovery
 
 You need to enable DR for an environment before you can use the capability; enabling is a one-time action that provisions resources and starts the process of replicating data between the primary location and secondary location. This may take up to 48 hours to complete. Admins will receive a notification when feature enablement is complete. 
 
 There are two reasons that may require you to use this feature after an environment has been enabled: Disaster recovery drill or Emergency response in the event of a major regional outage.
 
-## Disaster recovery drills
+### Disaster recovery drills
 
 Your company may have DR drills documented as a requirement in your internal business continuity plans. There are also industries and companies that may be required by government regulations to perform audits on their BCDR capabilities. In these cases you may run a DR drill on an environment. DR drill allows you to perform self-service DR without losing any data. The duration of the failover action may be slightly higher while all remaining data is being replicated to secondary region.
 It is recommended that drills are performed on a copy of a production environment, since this incures downtime that can last for minutes, for example you may want to copy a production environment to a sandbox type environment then change the type from sandbox to production.
 
-## Emergency response failover
+### Emergency response failover
 
 This option is expected to be chosen during an emergency, i.e. when the primary region has sustained an outage and access to environments or data is not possible. If you choose this option the environment will be failed over without copying any additional data other than the data that has been replicated before the outage occurred. 
 When you perform an emergency response you will see the amount of data loss represented in time, which you can compare to your RPO (Recovery Point Objective), if you determine that it is acceptable and you choose to continue the environment will be in operation run state until DR is complete and the environment is back to normal operation from the secondary region.
 
-## Switching back to primary region
+### Switching back to primary region
 
 After you have completed your drill or after an outage has been mitigated it is recommended that you switch back the environment to its primary region. An environrment maybe operating with limited resources in the paired region. There is no loss of data during this operation 
 
-## Environment Disaster recovery status
+### Environment Disaster recovery status
 
 Admins can determine current DR state and location of an environment in the environment details page or can click Disaster recovery operation to open DR panel.
 
-## Documenting your business continuity plan
+### Documenting your business continuity plan
 
 It is recommended that you perform DR drills, or emergency response if you choose to, before a real disaster has struck so you can document all  additional steps required for any additional integration points that are external to power platform. In this case your company will be more prepared for recovery in case of a real disaster.
 
-## Note about preview
+### Note about preview
 
 During the preview there will not be a charge for this feature, and it cannot be disabled by the customer. When the feature reaches general availability preview customers will have the opportunity to keep the functionality or allow it to be disabled by Microsoft. There will be no impact on your primary environment location or capabilities if you choose not to upgrade during GA.
 
