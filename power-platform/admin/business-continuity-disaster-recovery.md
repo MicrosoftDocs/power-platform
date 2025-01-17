@@ -94,7 +94,8 @@ After you have completed your drill or after an outage has been mitigated it is 
 
 ### Environment Disaster recovery status
 
-Admins can determine current DR state and location of an environment in the environment details page or can click Disaster recovery operation to open DR panel. To check data replication latency at any time, you can click on Disaster recovery, Select emergeny response 
+Admins can determine current DR state and location of an environment in the environment details page or can click on Disaster recovery operation to open DR panel. 
+To check data replication latency at any time, you can click on Disaster recovery, select emergency response as the disaster recovery reason; this will open a confirmation dialog that includes the last replication time between regions for that environment. You may click Cancel if your only purpose was to check the potential loss of data in case of a failover operation. Keep in mind that last sync time will always be different at different times since data is being replicated continuously. 
 
 ### Documenting your business continuity plan
 
