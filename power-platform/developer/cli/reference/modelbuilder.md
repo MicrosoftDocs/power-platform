@@ -3,9 +3,9 @@ title: Microsoft Power Platform CLI modelbuilder command group| Microsoft Docs
 description: "Describes commands and parameters for the Microsoft Power Platform CLI modelbuilder command group."
 keywords: "pac cli"
 ms.subservice: developer
-author: devkeydet
-ms.author: marcsc
-ms.date: 7/8/2024
+author: laneswenka
+ms.author: laswenka
+ms.date: 1/16/2025
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 

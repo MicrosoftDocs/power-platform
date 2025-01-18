@@ -4,7 +4,7 @@ description: Use the Help + support experience to contact a Microsoft support re
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/12/2024
+ms.date: 11/25/2024
 ms.subservice: admin
 ms.author: sericks 
 search.audienceType: 
@@ -97,13 +97,7 @@ An example of solutions provided for Dynamics 365 App for Outlook issues:
    > [!NOTE]
    > If you have one of the plans listed in [Prerequisites](#prerequisites), you can set the severity to a higher level than **Minimal**.
 
-   > [!div class="mx-imgBorder"] 
-   > ![Create a new support request.](media/support-request-page2.png "Create a new support request")
-
 5. If you have a **Unified or Premier** support plan that is not listed, select **Add new contract** and fill in the fields. If you don't know your access or contract ID, please contact your service admin or Incident Manager or Customer Success Account Manager (CSAM).
-
-   > [!div class="mx-imgBorder"] 
-   > ![Premier support info.](media/premier-support.png "Premier support info")
 
 > [!NOTE]
 > - For **Contract ID/Password**, please enter your Unified or Premier contract ID. 
@@ -115,6 +109,9 @@ Once you submit your request it will appear in the list of support requests.
 > ![List of support requests.](media/support-ticket-list.png "List of support requests")
 
 You can check the status and edit your request on this page.
+
+> [!NOTE]
+> Depending on availability, you might be able to use live chat option to converse with support engineers from Microsoft after creating a support request. More information: [Use live chat with persistence for support requests](live-chat-support.md)
 
 ## Advisory services and premium support plan
 

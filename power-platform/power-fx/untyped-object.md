@@ -6,7 +6,7 @@ author: gregli
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 3/22/2024
+ms.date: 1/14/2025
 ms.subservice: power-fx
 ms.author: jorisde
 search.audienceType: 
@@ -27,10 +27,10 @@ The value of a variable of type **untyped object** can't be used directly. You a
 
 The following examples convert the value of an **untyped object** variable named `UOValue`.
 
-```power-fx
+```powerapps-dot
 Text(UOValue)
 ```
-```power-fx
+```powerapps-dot
 Value(UOValue)
 ```
 
@@ -58,18 +58,33 @@ Each field on the record is also of type **untyped object**, and needs to be pro
 
 The following examples use fields from an **untyped object** variable named `UORecord`.
 
-```power-fx
+```powerapps-dot
 Text(UORecord.StringField)
 ```
-```power-fx
+```powerapps-dot
 Value(UORecord.Field.ChildField)
 ```
 
 In case a field name consists of an invalid identifier name, for example when the field names starts with a number or contains invalid characters such as a hyphen, you can put the field names in single quotes:
 
-```power-fx
+```powerapps-dot
 untyped.'01'
 untyped.'my-field'
+```
+
+### Dynamic column access
+
+Sometimes the names of columns in a record will be dynamic. Use the [**ColumnNames** function](reference/function-columnnames-column.md) to determine which column names are available in a record, and then use the [**Column** function](reference/function-columnnames-column.md) to retrieve the value of a named column.
+
+For example, 
+```powerapps-dot
+LettersUsed = ParseJSON( "{ ""d"": 2, ""p"": 3 }" );
+
+Concat( ColumnNames( LettersUsed ) As Names, Names.Value, ", " )
+// returns "d, p"
+
+Sum( ForAll( ColumnNames( LettersUsed ) As Names, Column( LettersUsed, Names.Value ) ), Value )
+// returns 5
 ```
 
 ## Arrays
@@ -78,13 +93,13 @@ An **untyped object** variable can contain an array. Even though the array could
 
 For example, to get the second number in an array of **untyped object** containing number values ( `[1, 2, 3]` ), the following formula can be used to retrieve the second row in the table and convert column to a number:
 
-```power-fx
+```powerapps-dot
 Value( Index( UOArray, 2 ) )
 ```
 
 If the **untyped object** was converted to a **Table()** first, the second row in the result single-column table is a `Value` column containing the **untyped object**:
 
-```power-fx
+```powerapps-dot
 Value( Index( Table( UOArray ), 2 ).Value )
 ```
 
@@ -92,27 +107,40 @@ For an array of records that have a text column called `Field`, the same logic a
 
 The `Field` column can be access directly from the **untyped object** returned by the **Index()** function.
 
-```power-fx
+```powerapps-dot
 Text( Index( UORecordArray, 2 ).Field )
 ```
 
 When using the **Table()** function, first retrieve the single-column `Value` column to get the **untyped object**, then access the `Field` column:
 
-```power-fx
+```powerapps-dot
 Text( Index( Table( UORecordArray ), 2 ).Value.Field )
 ```
 
 To convert an array of records to a typed table, you can use the [ForAll()](./reference/function-forall.md) function and convert each individual field.
 
-```power-fx
+```powerapps-dot
 ForAll( UORecordArray, { FirstField: Value(ThisRecord.FirstField), SecondField: Text(ThisRecord.SecondField) } )
 ```
 
 If the **untyped object** is first converted to a table, again, the resulting single-column table of **untyped object** will require you to use the `Value` column to get the fields.
 
-```power-fx
+```powerapps-dot
 ForAll( Table(UORecordArray), { FirstField: Value(ThisRecord.Value.FirstField), SecondField: Text(ThisRecord.Value.SecondField) } )
 ```
 
+## Converting to typed records and tables
+
+Instead of converting each simple value individually, the **ParseJSON**, [**IsType**](reference/function-astype-istype.md), and [**AsType**](reference/function-astype-istype.md) functions can be used to convert an **untyped** object to a typed object in bulk. Use the [**Type**](reference/function-type.md) function to create a type that will map the untyped structure to a typed structure.
+
+For example, here we are interpreting the JSON strings as date time values, without needing to call the [**DateTimeValue** function](reference/function-datevalue-timevalue.md):
+
+```powerapps-dot
+Eclipse = ParseJSON( "{ ""Start"": ""2026-08-12T18:26:00.000Z"", ""End"": ""2026-08-12T18:33:00.000Z"" }",
+                     Type( { Start: DateTime, End: DateTime } ) );
+
+DateDiff( Eclipse.Start, Eclipse.End, TimeUnit.Minutes )
+// 7
+```
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

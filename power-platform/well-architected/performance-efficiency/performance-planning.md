@@ -4,7 +4,7 @@ description: Learn how to conduct performance and capacity planning in your Powe
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.date: 05/16/2024
+ms.date: 09/11/2024
 ms.subservice: well-architected
 ms.topic: conceptual
 ---
@@ -39,6 +39,8 @@ Design your workload with performance in mind to minimize refactoring after your
 
 - _Integration strategy_: Can you do real-time integrations without slowing down the system? Can you do batch integrations within a certain time? Where is your data? Do you need an on-premises data gateway strategy?
 
+- _Conversation volumes_: When building an agent, it's important to understand the target volume of messages or conversations and their expected growth. Do your expectations validate the target architecture? What about scale?
+
 - _Data modeling_: Do you need to simplify your data structure for faster queries?
 
 - _Security modeling_: Will your security rules work well with a lot of users and data? Are there any bottlenecks?
@@ -65,7 +67,7 @@ When migrating data from a prior system, plan the migration carefully. Here are 
 
 - Consider when and how often your integrations run. Avoid running resource-intensive processes when users are interacting with the system. Schedule heavy processes for off-peak hours or use asynchronous processing.
 
-- Be aware of platform limitations and best practices when you design your integrations. For example, use the Data Management Framework for high-volume integrations in finance and operations apps, and respect the [throttling limits](/power-apps/developer/data-platform/api-limits?tabs=sdk) in customer engagement apps.
+- Be aware of platform limitations and best practices when you design your integrations. 
 
 ### Gather performance data
 
@@ -170,12 +172,13 @@ There are scaling limits within your configuration and services that you should 
 - [Power Platform request limits and allocations](/power-platform/admin/api-request-limits-allocations)
 - [Service protection API limits](/power-apps/developer/data-platform/api-limits?tabs=sdk)
 - [Limits of automated, scheduled, and instant Power Automate flows](/power-automate/limits-and-config)
+- [Quotas and limits for Copilot Studio](/microsoft-copilot-studio/requirements-quotas)
 
 **Using data calls from canvas apps**: Data call flows from canvas apps send data to tabular data sources by using connectors over the OData protocol. OData requests flow to back-end layers to reach out to the target data source and retrieve data for the client, or commit data to the data source. Action-based connectors that enable APIs work in the same way.
 
 Understanding how OData and API requests travel in canvas apps can help you to optimize your canvas app performance and your back-end data sources. To learn more, see [Data call flow in canvas apps](/power-apps/maker/canvas-apps/execution-phases-data-flow#data-call-flow-in-canvas-apps).
 
-## See also
+## Related information
 
 - [Azure Monitor](/azure/azure-monitor/overview)
 - [Application Insights](/azure/azure-monitor/app/app-insights-overview)

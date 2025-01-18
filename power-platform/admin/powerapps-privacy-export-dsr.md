@@ -1,11 +1,11 @@
 ---
-title: Responding to Data Subject Rights (DSR) requests to export Power Apps customer data | Microsoft Docs
+title: Responding to Data Subject Rights (DSR) requests to export Power Apps customer data 
 description: Walkthrough of how to respond to Data Subject Rights (DSR) requests to export Power Apps customer data.
 author: sericks007
 ms.reviewer: paulliew
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/07/2024
+ms.date: 12/09/2024
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
@@ -52,7 +52,7 @@ To perform the administration operations outlined in this document using the Pow
 
 * A paid Power Apps plan or a Power Apps trial. You can sign-up for a 30-day trial at [https://make.powerapps.com/trial](https://make.powerapps.com/trial). Trial licenses can be renewed if they've expired.
 
-* [Microsoft 365 Global admin](/microsoft-365/admin/add-users/about-admin-roles) or [Microsoft Entra Global Administrator](/entra/identity/role-based-access-control/permissions-reference) permissions if you need to search through another user's resources. (Note that Environment Admins only have access to those environments and environment resources for which they have permissions.)
+* [Microsoft Entra Power Platform Administrator](/entra/identity/role-based-access-control/permissions-reference#power-platform-administrator) or [Microsoft Entra Dynamics 365 Administrator](/entra/identity/role-based-access-control/permissions-reference#dynamics-365-administrator) role if you need to search through another user's resources. (Note that environment administrators only have access to those environments and environment resources for which they have permissions.)
 
 ## Step 1: Export personal data contained within environments created by the user
 
@@ -76,7 +76,7 @@ Administrators can export all of the environments that have been created by a us
 
 ```powershell
 Add-PowerAppsAccount
-$userId = "7557f390-5f70-4c93-8bc4-8c2faabd2ca0"
+$userId = "00aa00aa-bb11-cc22-dd33-44ee44ee44ee"
 Get-AdminPowerAppEnvironment -CreatedBy $userId | ConvertTo-Json | Out-File -FilePath "UserDetails.json"
 ```
  
@@ -89,7 +89,7 @@ Users can be assigned permissions (such as Environment Admin, Environment Maker,
 #### Power platform admin center
 Administrators can export a user's environment permissions from the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) by following these steps:
 
-1. From the Power Platform admin center, select each environment in your organization. You must be a [Microsoft 365 Global admin](/microsoft-365/admin/add-users/about-admin-roles) or a [Microsoft Entra Global Administrator](/entra/identity/role-based-access-control/permissions-reference) to be able to review all environments created within your organization.
+1. From the Power Platform admin center, select each environment in your organization. You must be a [Microsoft Entra Power Platform Administrator](/entra/identity/role-based-access-control/permissions-reference#power-platform-administrator) or [Microsoft Entra Dynamics 365 Administrator](/entra/identity/role-based-access-control/permissions-reference#dynamics-365-administrator) to review all environments created within your organization.
 
 2. Select both **Environment Admin** and **Environment Maker** separately, and then using the search bar, search for the user's name.
 
@@ -103,7 +103,7 @@ Administrators can export all environment role assignments for a user across all
 
 ```powershell
 Add-PowerAppsAccount
-$userId = "0ecb1fcc-6782-4e46-a4c4-738c1d3accea"
+$userId = "11bb11bb-cc22-dd33-ee44-55ff55ff55ff"
 Get-AdminPowerAppEnvironmentRoleAssignment -UserId $userId | ConvertTo-Json | Out-File -FilePath "UserDetails.json"
 ```
 
@@ -121,7 +121,7 @@ A user can export an app from the [Power Apps portal](https://make.powerapps.com
 ### Power Platform admin center
 An administrator can export apps created by a user starting from the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) by following these steps:
 
-1. From the Power Platform admin center, select each environment in your organization. You must be a [Microsoft 365 Global admin](/microsoft-365/admin/add-users/about-admin-roles) or a [Microsoft Entra Global Administrator](/entra/identity/role-based-access-control/permissions-reference) to be able to review all environments created within your organization.
+1. From the Power Platform admin center, select each environment in your organization. You must be a [Microsoft Entra Power Platform Administrator](/entra/identity/role-based-access-control/permissions-reference#power-platform-administrator) or [Microsoft Entra Dynamics 365 Administrator](/entra/identity/role-based-access-control/permissions-reference#dynamics-365-administrator) to be able to review all environments created within your organization.
 
 2. Select **Resources**, and then select **Power Apps**.
 
@@ -148,7 +148,7 @@ Get-PowerAppRoleAssignment | ConvertTo-Json | Out-File -FilePath "UserDetails.js
 ### Power Platform admin center 
 Administrators can export app roles assignments for a user from the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) by following these steps:
 
-1. From the Power Platform admin center, select each environment in your organization. You must be a [Microsoft 365 Global admin](/microsoft-365/admin/add-users/about-admin-roles) or a [Microsoft Entra Global Administrator](/entra/identity/role-based-access-control/permissions-reference) to be able to review all environments created within your organization.
+1. From the Power Platform admin center, select each environment in your organization. You must be a [Microsoft Entra Power Platform Administrator](/entra/identity/role-based-access-control/permissions-reference#power-platform-administrator) or [Microsoft Entra Dynamics 365 Administrator](/entra/identity/role-based-access-control/permissions-reference#dynamics-365-administrator) to be able to review all environments created within your organization.
 
 2. For each environment, select **Resources**, and then select **Power Apps**.
 
@@ -164,7 +164,7 @@ Administrators can export all app role assignments for a user across all apps in
 
 ```powershell
 Add-PowerAppsAccount
-$userId = "0ecb1fcc-6782-4e46-a4c4-738c1d3accea"
+$userId = "11bb11bb-cc22-dd33-ee44-55ff55ff55ff"
 Get-AdminPowerAppRoleAssignment -UserId $userId | ConvertTo-Json | Out-File -FilePath "UserDetails.json"
 ```
 
@@ -184,7 +184,7 @@ Administrators can export all connections created by the user using the  **Get-A
 
 ```powershell
 Add-PowerAppsAccount
-$userId = "0ecb1fcc-6782-4e46-a4c4-738c1d3accea"
+$userId = "11bb11bb-cc22-dd33-ee44-55ff55ff55ff"
 Get-AdminPowerAppConnection -CreatedBy $userId | ConvertTo-Json | Out-File -FilePath "UserDetails.json"
 ```
  
@@ -203,7 +203,7 @@ Administrators can export all connection role assignments for a user using the  
 
 ```powershell
 Add-PowerAppsAccount
-$userId = "0ecb1fcc-6782-4e46-a4c4-738c1d3accea"
+$userId = "11bb11bb-cc22-dd33-ee44-55ff55ff55ff"
 Get-AdminPowerAppConnectionRoleAssignment -PrincipalObjectId $userId | ConvertTo-Json | Out-File -FilePath "UserDetails.json"
 ```
 
@@ -223,7 +223,7 @@ Administrators can export all custom connectors created by a user using the  **G
 
 ```powershell
 Add-PowerAppsAccount
-$userId = "0ecb1fcc-6782-4e46-a4c4-738c1d3accea"
+$userId = "11bb11bb-cc22-dd33-ee44-55ff55ff55ff"
 Get-AdminPowerAppConnector -CreatedBy $userId | ConvertTo-Json | Out-File -FilePath "UserDetails.json"
 ```
 
@@ -242,7 +242,7 @@ Administrators can export all custom connector role assignments for a user using
 
 ```powershell
 Add-PowerAppsAccount
-$userId = "0ecb1fcc-6782-4e46-a4c4-738c1d3accea"
+$userId = "11bb11bb-cc22-dd33-ee44-55ff55ff55ff"
 Get-AdminPowerAppConnectorRoleAssignment -PrincipalObjectId $userId | ConvertTo-Json | Out-File -FilePath "UserDetails.json"
 ```
  
@@ -264,7 +264,7 @@ Administrators can export the Power Apps notifications, user settings, and user-
 
 ```powershell
 Add-PowerAppsAccount
-$userId = "0ecb1fcc-6782-4e46-a4c4-738c1d3accea"
+$userId = "11bb11bb-cc22-dd33-ee44-55ff55ff55ff"
 Get-AdminPowerAppsUserDetails -OutputFilePath "UserDetails.json" -UserPrincipalName name@microsoft.com
 ```
 
@@ -304,7 +304,7 @@ Power Apps capabilities build upon Microsoft Copilot Studio.  Microsoft Copilot 
 >  We recommend that administrators complete this step for Power Apps users.
 
 ## Step 13: Find personal data for the user in the Microsoft 365 admin center
-Some feedback mechanisms in Power Apps are integrated with the Microsoft 365 admin center. For guidance on how to export feedback data stored by the Microsoft 365 admin center, see [How can I see my user's feedback?](/microsoft-365/admin/misc/feedback-user-control#how-can-i-see-my-users-feedback). A [Microsoft Entra global administrator](/entra/identity/role-based-access-control/permissions-reference) is able to manage this data within the Microsoft 365 admin center without the need for Microsoft 365 or Office licenses.
+Some feedback mechanisms in Power Apps are integrated with the Microsoft 365 admin center. For guidance on how to export feedback data stored by the Microsoft 365 admin center, see [How can I see my user's feedback?](/microsoft-365/admin/misc/feedback-user-control#how-can-i-see-my-users-feedback). A [Microsoft Entra Power Platform Administrator](/entra/identity/role-based-access-control/permissions-reference#power-platform-administrator) or [Microsoft Entra Dynamics 365 Administrator](/entra/identity/role-based-access-control/permissions-reference#dynamics-365-administrator) is able to manage this data within the Microsoft 365 admin center without the need for Microsoft 365 or Office licenses.
 
 > [!IMPORTANT]
 >  We recommend that administrators complete this step for Power Apps users.

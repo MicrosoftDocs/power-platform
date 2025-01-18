@@ -3,9 +3,9 @@ title: Microsoft Power Platform CLI canvas command group| Microsoft Docs
 description: "Describes commands and parameters for the Microsoft Power Platform CLI canvas command group."
 keywords: "pac cli"
 ms.subservice: developer
-author: devkeydet
-ms.author: marcsc
-ms.date: 7/8/2024
+author: laneswenka
+ms.author: laswenka
+ms.date: 1/16/2025
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -31,6 +31,7 @@ Operating with Power Apps .msapp files
 |[pac canvas list](#pac-canvas-list)|List canvas apps|
 |[pac canvas pack](#pac-canvas-pack)|(Preview) Pack sources into an msapp file|
 |[pac canvas unpack](#pac-canvas-unpack)|(Preview) Extract an msapp file into sources|
+|[pac canvas validate](#pac-canvas-validate)|(Preview) Validate the .pa.yaml source for an unzipped msapp file|
 
 
 ## pac canvas create
@@ -154,6 +155,21 @@ Path to .msapp file
 Directory to sources to be unpacked
 
 [!INCLUDE [canvas-unpack-remarks](includes/canvas-unpack-remarks.md)]
+
+## pac canvas validate
+
+(Preview) Validate the .pa.yaml source for an unzipped msapp file
+
+[!INCLUDE [canvas-validate-intro](includes/canvas-validate-intro.md)]
+
+
+### Required Parameters for canvas validate
+
+#### `--directory` `-d`
+
+Path to the extracted msapp directory containing .pa.yaml files to validate
+
+[!INCLUDE [canvas-validate-remarks](includes/canvas-validate-remarks.md)]
 
 [!INCLUDE [canvas-remarks](includes/canvas-remarks.md)]
 

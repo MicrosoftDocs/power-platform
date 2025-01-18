@@ -31,9 +31,6 @@ To log DLP activities, follow these steps:
 
 3. Under **Search** > **Activities**, enter **dlp**. A list of activities appears.
 
-   > [!div class="mx-imgBorder"] 
-   > ![Screenshot showing audit log search DLP policies.](media/audit-log-search-dlp.png "Audit log search DLP policies")
-
 4. Select an activity, select outside the search window to close it, and then select **Search**.
 
 On the **Audit log search** screen, you can search audit logs across many popular services including eDiscovery, Exchange, Power BI, Microsoft Entra ID, Microsoft Teams, customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), and Microsoft Power Platform. 
@@ -82,7 +79,7 @@ The following is an example of the **Additional Info** JSON for a create or dele
 
 ```json
 { 
-  "policyId": "eb1e0480-0fe9-434e-9ad8-df4047a666ec", 
+  "policyId": "1aaaaaa1-2bb2-3cc3-4dd4-5eeeeeeeeee5", 
   "policyType": "SingleEnvironment", 
   "defaultConnectorClassification": "General", 
   "environmentName": "8a11a4a6-d8a4-4c47-96d7-3c2a60efe2f5" 
@@ -100,7 +97,7 @@ The following is an example of the **Additional Info** JSON for an update operat
 
 ```json
 { 
-  "policyId": "eb1e0480-0fe9-434e-9ad8-df4047a666ec", 
+  "policyId": "1aaaaaa1-2bb2-3cc3-4dd4-5eeeeeeeeee5", 
   "policyType": "ExceptEnvironments", 
   "defaultConnectorClassification": "Confidential", 
   "changeSet": { 

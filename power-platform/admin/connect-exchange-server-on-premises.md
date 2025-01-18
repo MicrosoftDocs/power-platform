@@ -70,15 +70,11 @@ For more information about authentication, go to:
 6. For **Authentication Type**, choose one of the following:
 
     - **Credential specified in email server profile**: The credentials specified in the email server profile are used for sending or receiving email for the mailboxes of all users and queues associated with this profile. The credentials must have impersonation or delegation permissions on the mailboxes associated with the profile. This option requires some configuration on the email server, for example configuring impersonation rights on Exchange for the mailboxes associated with the profile.
+
       > [!NOTE]
       > To ensure the credentials are secured, SQL encryption is used to encrypt the credentials stored in the email server profile.
     
-      > [!div class="mx-imgBorder"] 
-      > ![Screenshot of credentials specified in the email server profile.](media/server-profile-onprem-cred-server.png "Credential specified in email server profile")
-
-    - **Exchange Hybrid Modern Auth (HMA)**: To get the information for this option, follow the steps in [Hybrid Modern Authentication (HMA) for Exchange on-premises](connect-exchange-server-onprem-hma.md)
-        > [!div class="mx-imgBorder"] 
-        > ![Screenshot of Exchange Hybrid Modern Auth (HMA).](media/hma-auth.png "Exchange Hybrid Modern Auth (HMA)")
+    - **Exchange Hybrid Modern Auth (HMA)**: To get the information for this option, follow the steps in [Hybrid Modern Authentication (HMA) for Exchange on-premises](connect-exchange-server-onprem-hma.md).
 
 7. Expand **Locations and ports**, and follow these steps:
 
@@ -136,8 +132,6 @@ For more information about authentication, go to:
 ### Troubleshooting the Exchange Server (Hybrid) profile connection
 
  If you've run the **Test Connection** command and have issues with the Exchange Server (Hybrid) profile connection, use the information in the **Test Connection** dialog to diagnose and fix the connection.
-
- ![Screenshot of the Test Connection dialog with an issue with "Auto discovering server location" and details about the error in the Failure Details box.](../admin/media/server-side-sync-exchange-hybrid-troubleshoot.png "Review the error messages")  
 
  In this example, there was a problem with the auto-discover server location feature. Review the username and password used for **Authentication Using Impersonation** for the Exchange Server (Hybrid) profile.  
 

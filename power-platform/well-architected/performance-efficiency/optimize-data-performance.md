@@ -182,7 +182,7 @@ Azure Cosmos DB has a [default indexing policy](/azure/cosmos-db/index-policy) t
 
 **Optimize storage load**: Many Azure database services support read replicas. The availability and configuration of read replicas vary depending on the Azure database service. Refer to the official documentation for each service to understand the details and options.
 
-## See also
+## Related information
 
 - [Overview of creating performant Power Apps](/power-apps/maker/canvas-apps/create-performant-apps-overview)
 - [Select an Azure data store for your application](/azure/architecture/guide/technology-choices/data-store-decision-tree)

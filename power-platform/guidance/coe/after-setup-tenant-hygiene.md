@@ -60,7 +60,7 @@ Every tenant in Power Platform has a [default environment](/power-platform/admin
 One of the first steps in managing the default environment is identifying the business value, the risk of existing apps and flows, and unused apps and flows. The app and flow insights help you decide if solutions should be moved to production environments or have higher levels of support.
 
 > [!TIP]
-> onsider quarantining apps that aren't compliant and creating a process to clean up orphaned resources, such as apps and flows without an owner.
+> Consider quarantining apps that aren't compliant and creating a process to clean up orphaned resources, such as apps and flows without an owner.
 
 The **Default environment** page in the CoE Starter Kit's **Compliance and adoption dashboard** gives you valuable insights on the adoption in your default environment. For example, you can identify top connectors, the top most launched apps, and top makers.
 
@@ -143,8 +143,6 @@ These visualizations help you understand how your organization is using the Powe
 ##### CoE Starter Kit - inactivity notifications
 
 The inactivity notification process in the CoE Starter Kit automatically detects inactive apps, including their inactive duration. The kit sends notifications to the app owner, asking them to confirm if the app is still needed or can be safely deleted. This process helps organizations manage their Power Platform apps more efficiently by identifying and removing unused or redundant apps. The CoE team can configure the inactivity threshold.
-
-:::image type="content" source="media/coe58.png" alt-text="Screenshot of the inactivity notification mail sent to an app owner." lightbox="media/coe58.png":::
 
 For more information, see:
 

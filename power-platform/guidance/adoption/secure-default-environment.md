@@ -3,11 +3,13 @@ title: Secure the default environment
 description: Learn how to secure the default environment in Microsoft Power Platform.
 author: rranjit83
 ms.author: rranjit
-ms.reviewer: matp
+ms.reviewer: sericks
 ms.topic: how-to
-ms.date: 05/17/2024
+ms.date: 11/15/2024
 ms.custom: bap-template
 ms.subservice: guidance
+contributors: 
+- arjunmayur
 ---
 
 # Secure the default environment
@@ -51,7 +53,7 @@ The **Share with Everyone** feature is disabled by default in Power Platform. We
 
 If you would like to share with all internal employees or a large group of people, consider sharing with an existing security group of those members or creating a security group and sharing your app with that security group.
 
-When **Share with Everyone** is disabled, only a small group of administrators can share an application with everyone in the environment. If you're an administrator, you can run the following PowerShell command if you need to enable sharing with **Everyone**.
+When **Share with Everyone** is turned off, only Dynamics 365 administrators, Power Platform administrators, and global administrators can share an application with everyone in the environment. If you're an administrator, you can run the following PowerShell command if you need to allow sharing with **Everyone**.
 
 1. First, open PowerShell as an administrator and log into your Power Apps account by running this command.
 
@@ -170,6 +172,8 @@ Here are some potential exceptions to the Exchange rules to block email to add f
 - Exempt specific apps and flows: Add an exemption list to the rules suggested earlier so that approved apps or flows can send email to external recipients.
 
 - Organization-level allowlist: In this scenario, it makes sense to move the solution into a dedicated environment. If several flows in the environment have to send outbound emails, you can create a blanket exception rule to allow outbound emails from that environment. The maker and admin permission on that environment must be tightly controlled and limited.
+
+For more information about how to set up the appropriate exfiltration rules for Power Platform related email traffic, go to [Email exfiltration controls for connectors](../../admin/block-forwarded-email-from-power-automate.md).
 
 ## Apply cross-tenant isolation
 

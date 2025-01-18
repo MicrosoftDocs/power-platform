@@ -4,11 +4,14 @@ description: Configure Dataverse search to improve search results and performanc
 author: mspilde
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/06/2024
+ms.date: 09/19/2024
 ms.subservice: admin
 ms.author: mspilde
+ms.reviewer: sericks
 search.audienceType: 
   - admin
+contributors:
+- wobushixinxin67
 
 ---
 # Configure Dataverse search for your environment
@@ -234,6 +237,8 @@ To edit the searchable fields of a table:
 > [!NOTE]
 >
 > - Changes made to the Dataverse search configuration or to the searchable data may take up to 15 minutes to appear in the search service. It may take up to an hour or more to complete a full sync for average size organizations, and a couple of days for very large size organizations.
+>
+> - The maximum search term size is 1024 characters.
 >
 > - Although you can have related table fields as a **View column** or a **Find column** or a **Filter column** in a table's Quick Find View, related table fields are not supported by Dataverse search and hence ignored.
 >

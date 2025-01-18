@@ -4,7 +4,7 @@ description: Learn how to use Power Platform Advisor to optimize your tenant.
 author: sidhartg
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/24/2024
+ms.date: 11/15/2024
 ms.subservice: admin
 ms.author: sidhartg
 ms.reviewer: sericks
@@ -62,11 +62,11 @@ Power Platform tenant admins can view the top recommendations on the **Advisor**
 
 ### Inline actions
 
-You can take action for each recommendation in the recommendation pane. An admin can take relevant actions for a specific resource or take a bulk action by selecting up to 10 resources from the recommendation list. For certain recommendations that require action by a nonadmin user, detailed instructions are displayed. To learn more, see [recommendations](#recommendations).
+You can take action for each recommendation in the recommendation pane. An admin can take relevant actions for a specific resource or take a bulk action by selecting up to 10 resources from the recommendation list. For certain recommendations that require action by a nonadmin user, detailed instructions are displayed. To learn more, go to [recommendations](#recommendations).
 
 ### Automated actions
 
-Power Platform Advisor supports automated actions in the [Power Platform for Admin V2](/connectors/powerplatformadminv2/) connector, which are useful to build a process for remediations. For example, instead of deleting an unused app, an admin can first send an email or message to the owner of the app. The message informs the owner about an impending action. If the admin doesn't receive a reply from the owner, the app can be deleted.
+Power Platform Advisor supports automated actions in the [Power Platform for Admin V2](/connectors/powerplatformadminv2/) connector, which are useful for building remediation processes. For example, instead of deleting an unused app, an admin can first send an email or message to the owner of the app. The message informs the owner about an impending action. If the admin doesn't receive a reply from the owner, the app can be deleted.
 
 While building cloud flows using the connector, you can get Power Platform Advisor recommendations and actions:
 
@@ -76,7 +76,7 @@ While building cloud flows using the connector, you can get Power Platform Advis
 
 ### Export recommendations
 
-The recommendation data shown in the Power Platform Advisor can be exported using the **Get Recommendation Resources** action in the [Power Platform for Admin V2](/connectors/powerplatformadminv2/) connector. You can create a cloud flow (or a scheduled cloud flow) to get the recommendation resources for each of the below mentioned recommendations and export them to an Excel file or to an email using the Excel Online or Office 365 Outlook connectors.
+The recommendation data displayed in the Power Platform Advisor can be exported using the **Get Recommendation Resources** action in the [Power Platform for Admin V2](/connectors/powerplatformadminv2/) connector. You can create a cloud flow (or a scheduled cloud flow) to retrieve the resources for each recommendation and then export them to an Excel file or send them by email using Excel Online or Office 365 Outlook connectors.
 
 ### Share recommendations
 
@@ -84,9 +84,9 @@ All recommendations in Power Platform Advisor can be shared in Microsoft Teams w
 
 :::image type="content" source="media/power-platform-advisor/share-in-teams.png" alt-text="Screenshot showing the Share in Teams option to select." lightbox="media/power-platform-advisor/share-in-teams.png":::
 
-An admin can share the entire recommendation or share specific rows within the recommendation to another user by entering their name in the **Share to** textbox in the **Share this recommendation** pane.
+An admin can share the entire recommendation or share specific rows within the recommendation with another user by entering their name in the **Share to** textbox located in the **Share this recommendation** pane.
 
-When an entire recommendation or multiple rows in the recommendation is shared, the sharing card provides a link to that recommendation for the admin.
+When an entire recommendation or multiple rows in the recommendation are shared, the sharing card provides a link to that recommendation for the admin.
 
 :::image type="content" source="media/power-platform-advisor/share-to.png" alt-text="Screenshot that shows where to enter a name in the Share to textbox.":::
 
@@ -110,7 +110,7 @@ At this time, the recommendations focus on security and operational efficienc
 
 ### Apps without valid owners
 
-This type of recommendation lists apps in all the Managed Environments within your Power Platform tenant that don't have a valid owner. Currently this list contains apps active in the last 90 days.
+This type of recommendation lists apps in all the Managed Environments within your Power Platform tenant that don't have a valid owner. Currently, this list contains apps active in the last 90 days.
 
 > [!IMPORTANT]
 > Resources with valid owners can make necessary changes or support users when an issue arises. If an app doesn't have a valid owner, it might be a business continuity risk.
@@ -198,7 +198,7 @@ This recommendation lists the number of pending license requests in your tenant.
 
 ### High-value apps in default environment
 
-This recommendation lists the apps that are potentially high value (used by over 100 users each month) and is currently hosted in the default environment. Apps that don't follow a proper application lifecycle management are prone to business continuity risks. By moving these high-value apps out of the default environment to a Managed Environment, you can also take advantage of various premium security and governance capabilities, such as [Customer Managed Keys](customer-managed-key.md) and [Solution Checker enforcement](managed-environment-solution-checker.md), to protect these apps. Alternatively, you can set the default environment as a [Managed Environment](managed-environment-overview.md) to leverage premium security and governance capabilities for all resources.
+This recommendation lists apps that are potentially high-value (used by over 100 users each month) and are currently hosted in the default environment. Apps that don't follow a proper application lifecycle management are prone to business continuity risks. By moving these high-value apps out of the default environment to a Managed Environment, you can also take advantage of various premium security and governance capabilities, such as [Customer Managed Keys](customer-managed-key.md) and [Solution Checker enforcement](managed-environment-solution-checker.md), to protect these apps. Alternatively, you can set the default environment as a [Managed Environment](managed-environment-overview.md) to leverage premium security and governance capabilities for all resources.
 
 > [!IMPORTANT]
 >
@@ -214,25 +214,26 @@ This recommendation lists trial websites that are expiring in the next seven day
 
 ### Websites didn't receive any traffic in the last 30 days
 
-This recommendation lists websites that didn't receive any traffic in the last 30 days. This means there are some websites
-in your tenant that didn't have any visitors in the past month. These websites might be outdated, irrelevant, or redundant.
+This recommendation lists websites that received no traffic in the last 30 days. This means some websites
+in your tenant had no visitors in the past month. These websites might be outdated, irrelevant, or redundant.
 
-To review these websites, select the recommendation to see a list of the websites, their URLs, environment names, and environment types. You can also visit the Power Pages admin center, select **Resources**, > **Power Pages sites**> **Analytics** to get more insights into the traffic.
+To review these websites, select the recommendation to see a list of the websites, their URLs, environment names, and environment types. You can also visit the Power Pages admin center to get more insights into the traffic.
+
+1. Select **Resources** > **Power Pages sites** > **Analytics**.
 
 If a website isn't currently needed, you can shut it down. When a website is shut down, it's unavailable to users. You can always restart the websites later if you need them.
 
-To shut down a website:
+#### Supported actions for websites without traffic in the last 30 days
 
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. Under **Resources**, select **Power Pages sites**, and select the site.
-1. Select **Site Actions** > **Shut down this site** > **Stop**.
+##### Shut down
 
-    :::image type="content" source="media/power-platform-advisor/shut-down-site.svg" alt-text="Screenshot showing the action to shut down a site.":::
+To shut down a site:
+
+1. Select one or more sites from the list and select **Shut down**.
+1. After you confirm the shutdown operation, the selected sites are shut down.
 
 > [!NOTE]
 > Once an action is taken, it takes up to one day for the sites to be removed from the list.
-
-If you want to start the site again later, select **Site Actions** > **Start this site** > **Start**.
 
 ### Websites don't have Content Delivery Network (CDN) enabled
 
@@ -244,6 +245,36 @@ This recommendation lists production websites that don't have Content Delivery N
 ### Websites don't have Web Application Firewall (WAF) enabled
 
 This recommendation lists production websites that have Web Application Firewall (WAF) disabled. Review the websites and [enable Web Application Firewall](/power-pages/security/configure-web-application-firewall) where needed.
+
+> [!NOTE]
+> Once an action is taken, it takes up to one day for the sites to be removed from the list.
+
+#### Supported actions for websites without Web Application Firewall (WAF)
+
+##### Enable
+
+To enable WAF:
+
+1. Select one or more sites from the list and select **Enable WAF**.
+1. Confirm the operation to enable WAF for the selected sites.
+
+### Websites have SSL certificates that have expired or are about to expire within 90 days
+
+This recommendation lists production websites with SSL certificates that are expired or will expire within 90 days. Review the websites and [renew the SSL certificates](/power-pages/admin/add-custom-domain) as needed.
+
+> [!NOTE]
+> Once an action is taken, it takes up to one day for the sites to be removed from the list.
+
+### Websites are still on Bootstrap version 3
+
+This recommendation lists production websites that aren't migrated to Bootstrap version 5. Review the websites and [migrate them to Bootstrap version 5 using the Power Pages bootstrap migration tool](/power-pages/configure/migrate-bootstrap) as needed.
+
+> [!NOTE]
+> Once an action is taken, it takes up to one day for the sites to be removed from the list.
+
+### Websites are still on standard data model
+
+This recommendation lists production websites that aren't migrated to the enhanced data model. Review the websites and [migrate them to the enhanced data model using the Power Pages site migration tool](/power-pages/admin/migrate-enhanced-data-model?branch=main&branchFallbackFrom=pr-en-us-648) where possible.
 
 > [!NOTE]
 > Once an action is taken, it takes up to one day for the sites to be removed from the list.

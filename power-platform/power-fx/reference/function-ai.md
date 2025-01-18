@@ -42,7 +42,10 @@ Dataverse provides a variety of ready-to-use AI functions that are preconfigured
 
 Learn more about how to use AI functions in the following video.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RW1iGPI]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=f8308ee0-9bf6-45a4-a940-e0b49a41354f]
+
+## Prerequisites
+For more information on prerequisites, see [Requirements and licensing for prebuilt prompts](/ai-builder/prebuilt-prompts#prerequisites).
 
 ## Use in canvas apps
 

@@ -9,7 +9,7 @@ ms.custom: "admin-security"
 ms.component: pa-admin
 contributors: srpoduri
 ms.topic: conceptual
-ms.date: 08/07/2024
+ms.date: 08/27/2024
 search.audienceType: admin
 
 ---
@@ -42,13 +42,15 @@ These admins can't perform activities that require direct access to Dataverse da
 
 ## Known limitations
 
-- When using the API, you'll notice that if the caller is a system administrator, the self-elevate call returns a success rather than notifying the caller that the system administrator already exists.
+- When using the API, you notice that if the caller is a system administrator, the self-elevate call returns a success rather than notifying the caller that the system administrator already exists.
 
 - The user making the call must have the tenant admin role assigned. For a full list of users who meet the tenant admin criteria, see [Changes to feature support](#changes-to-feature-support)
 
 - If you're a Dynamics 365 administrator and the environment is protected by a security group, you must be a member of the security group. This rule doesn't apply to users with the global administrator or Power Platform administrator roles.
 
 - The elevation API can only be invoked by the user who needs to elevate their status. It doesn't support making API calls on behalf of another user for elevation purposes.
+
+- The system administrator role assigned through self-elevation is **not** removed when the role assignment expires in Privileged Identity Management. You must manually remove the user from the system administrator role. See [clean-up activity](#step-3-clean-up-activity)
 
 - A workaround is available for customers using the Microsoft Power Platform CoE Starter Kit. See [PIM Issue and Workaround #8119](https://github.com/microsoft/coe-starter-kit/issues/8119) for more information and details.
 
@@ -84,8 +86,6 @@ In this PowerShell script, you:
 ##### Add your environment ID
 
 1. Get your **Environment ID** from the **Environments** tab of the [Power Platform Admin Center](https://admin.powerplatform.microsoft.com/).
-
-   :::image type="content" source="media/manage-high-privileged-admin-roles/get-env-id.png" alt-text="Screenshot that shows where you can get your environment ID.":::
 
 1. Add your unique `<environment id>` to the script.
 
@@ -155,7 +155,7 @@ Upon success, you see an output similar to the following output. Look for `"Code
   "information": [
     {
       "Subject": "Result",
-      "Description": "[\"SyncMode: Default\",\"Instance df12c345-7b56-ee10-8bc5-6045bd005555 exists\",\"Instance df85c664-7b78-ee11-8bc5-6045bd005555 in enabled state\",\"Instance Url found https://orgc1234567.crm.dynamics.com\",\"User found in AD tenant\",\"User in enabled state in AD tenant\",\"SystemUser with Id:11fa11ab-4f75-ee11-9999-6045bd12345a, objectId:d111c55c-aab2-8888-86d4-ece1234f11e6 exists in instance\"]",
+      "Description": "[\"SyncMode: Default\",\"Instance df12c345-7b56-ee10-8bc5-6045bd005555 exists\",\"Instance df85c664-7b78-ee11-8bc5-6045bd005555 in enabled state\",\"Instance Url found https://orgc1234567.crm.dynamics.com\",\"User found in AD tenant\",\"User in enabled state in AD tenant\",\"SystemUser with Id:11fa11ab-4f75-ee11-9999-6045bd12345a, objectId:aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb exists in instance\"]",
       "Code": "UserExists"
     },
     { ... }
@@ -170,7 +170,7 @@ You might see an error message if you don't have the right permissions.
 "Unable to assign System Administrator security role as the user is not either a Global admin, Power Platform admin, or Dynamics 365 admin. Please review your role assignments in Entra ID and try again later. For help, please reach out to your administrator."
 ```
 
-#### Step 3: Clean up activity
+#### Step 3: Clean-up activity
 
 Run [Remove-RoleAssignmentFromUsers](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/UserManagement/Microsoft.PowerPlatform.Administration.UserManagement#remove-role-assignments-from-given-list-of-users) to remove users from the System Administrator security role after the assignment expires in PIM.
 

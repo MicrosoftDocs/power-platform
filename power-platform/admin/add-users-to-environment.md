@@ -36,7 +36,7 @@ When an environment is created with a Dataverse database or a Dataverse database
 - Because it can take a long time to automatically add users to an environment, you can use the following procedure to add specific users to the environment sooner.
 
 > [!TIP]
-> Check out the following video: [Adding users to Dataverse](https://www.microsoft.com/videoplayer/embed/RWJBra).
+> Check out the following video: [Adding users to Dataverse](https://learn-video.azurefd.net/vod/player?id=373c7bec-b315-4958-8bb7-1d5d6fb03a81).
 
 **To add users to an environment that has a Dataverse database**
 
@@ -52,9 +52,6 @@ When an environment is created with a Dataverse database or a Dataverse database
    > ![Add user.](media/add-user.png "Add user")
 
 4. In the **Add user** pane, enter the user's name or email address, select it, and add them to the environment. Note the requirements for successfully adding a user, and see [enable a user in an environment](create-users.md#enable-or-disable-user-accounts) for details about how to ensure the requirements are met. 
-
-   > [!div class="mx-imgBorder"] 
-   > ![Enter name.](media/add-user-enter-name.png "Enter name")
 
 5. Select **Refresh** to see the added user in the list.
 

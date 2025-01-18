@@ -4,7 +4,7 @@ description: "Learn how to work over time with multiple unified development envi
 author: pathaku
 ms.date: 06/11/2024
 ms.topic: how-to
-ms.reviewer: phecke
+ms.reviewer: pehecke
 ms.author: pathaku
 ms.subservice: developer
 ---
@@ -114,7 +114,7 @@ Learn more about observability: [Monitoring and telemetry using Application Insi
 
 The correlation ID, client machine name, and timestamp are required for Microsoft to investigate. The correlation ID is in the Visual Studio output pane.
 
-The logs are also written to Microsoft.PowerPlatformVSExtension*.log files in C:\Users\<user>\AppData\Local\Microsoft\Dynamics365\Logs. Additionally, a log file named VisualStudioD365Extension*.log is generated at a path similar to C:\Users\AppData\Roaming\Microsoft Corporation\Microsoft® Visual Studio®\<version>\VisualStudioD365Extension-*.log.
+The logs are also written to Microsoft.PowerPlatformVSExtension*.log files in C:\Users\<user>\AppData\Local\Microsoft\Dynamics365\Logs. Additionally, a log file named VisualStudioD365Extension*.log is generated at a path similar to C:\Users\AppData\Roaming\Microsoft Corporation\Microsoft&reg; Visual Studio&reg;\<version>\VisualStudioD365Extension-*.log.
 
 ### See also
 

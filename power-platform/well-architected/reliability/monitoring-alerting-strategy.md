@@ -4,7 +4,7 @@ description: Learn how to design a monitoring and alerting strategy that support
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.date: 05/16/2024
+ms.date: 09/11/2024
 ms.subservice: well-architected
 ms.topic: conceptual
 ---
@@ -76,17 +76,17 @@ Implement backup and recovery monitoring to capture:
 - Successful and failed backups and recoveries.  
 - The recovery duration to inform your [disaster recovery planning](disaster-recovery.md).
 
-### Monitor applications
+### Monitor applications and agents
 
-Log data while the application runs in the production environment. You need sufficient information to diagnose the cause of issues in the production state.
+Log data while the application or agent runs in the production environment. You need sufficient information to diagnose the cause of issues in the production state.
 
 Log events at service boundaries. Include a correlation ID that flows across service boundaries. If a transaction flows through multiple services and one of them fails, the correlation ID helps you track requests across your application and pinpoint why the transaction failed.
 
-Separate application logging from auditing. Audit records are commonly maintained for compliance or regulatory requirements and must be complete. To avoid dropped transactions, maintain audit logs separate from diagnostic logs.
+Separate application and agent logging from auditing. Audit records are commonly maintained for compliance or regulatory requirements and must be complete. To avoid dropped transactions, maintain audit logs separate from diagnostic logs.
 
-Use white box monitoring to instrument the application with semantic logs and metrics. Collect application-level metrics and logs, such as memory consumption or request latency, from the application to inform a health model and to detect and predict issues.
+Use white box monitoring to instrument the application or agent with semantic logs and metrics. Collect application- and agent-level metrics and logs, such as memory consumption or request latency, from the application or agent to inform a health model and to detect and predict issues.
 
-Use black box monitoring to measure platform services and the resulting customer experience. Black box monitoring tests externally visible application behavior without knowledge of the internals of the system. This approach is common for measuring customer-centric service-level indicators (SLIs), service-level objectives (SLOs), and service-level agreements (SLAs).
+Use black box monitoring to measure platform services and the resulting customer experience. Black box monitoring tests externally visible application or agent behavior without knowledge of the internals of the system. This approach is common for measuring customer-centric service-level indicators (SLIs), service-level objectives (SLOs), and service-level agreements (SLAs).
 
 ### Monitor data and storage
 
@@ -110,10 +110,13 @@ Power Platform integrates with [Application Insights](/azure/azure-monitor/app/a
 
 - Configure [Power Automate telemetry](/power-platform/admin/app-insights-cloud-flow) to flow into Application Insights. You can use this telemetry to monitor cloud flow executions and create alerts for cloud flow run failures.
 
+- Capture telemetry data from your [Microsoft Copilot Studio agent](/microsoft-copilot-studio/advanced-bot-framework-composer-capture-telemetry) for use in Azure Application Insights. You can use this telemetry to monitor logged messages and events sent to and from your agent, topics to be triggered during user conversations, and custom telemetry events that can be sent from your topics.
+
 Power Platform resources log activities in the [Microsoft Purview compliance portal](/purview/purview). Most events are available within 24 hours of the activity. Don't use this information for real-time monitoring. For more information about logging activities in Power Platform, see:
 
 - [Power Apps](/power-platform/admin/logging-powerapps)
 - [Power Automate](/power-platform/admin/logging-power-automate)
+- [Copilot Studio](/microsoft-copilot-studio/admin-logging-copilot-studio)
 - [Power Pages](/power-platform/admin/logging-power-pages)
 - [Power Platform connectors](/power-platform/admin/connector-events-power-platform)
 - [Data loss prevention](/power-platform/admin/dlp-activity-logging)
@@ -124,7 +127,7 @@ Your Power Platform workload may include Azure resources. To learn more about mo
 
 The [Power Platform CoE Starter Kit](/power-platform/guidance/coe/starter-kit) is a reference implementation containing a collection of components and tools designed to help you get started with developing a strategy for adopting and supporting Power Platform. The kit provides automation and tooling to help teams build monitoring and automation necessary to support a CoE.
 
-## See also
+## Related information
 
 [How do I check my online service health?](/power-platform/admin/check-online-service-health)
 

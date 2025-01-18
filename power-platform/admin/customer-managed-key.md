@@ -5,11 +5,13 @@ author: paulliew
 ms.author: paulliew
 ms.reviewer: sericks, matp, ratrtile
 ms.topic: how-to
-ms.date: 08/08/2024
+ms.date: 11/12/2024
 ms.custom: template-how-to
 contributors:
-- kavehkazms
-- lauravasiliums
+  - samathur
+  - v-aangie
+  - kavehkazms
+  - lauravasiliums
 
 ---
 # Manage your customer-managed encryption key
@@ -19,7 +21,7 @@ Customers have data privacy and compliance requirements to secure their data by 
 All customer data stored in Power Platform is encrypted at-rest with strong Microsoft-managed encryption keys by default. Microsoft stores and manages the database encryption key for all your data so you don't have to. However, Power Platform provides this customer-managed encryption key (CMK) for your added data protection control where you can self-manage the database encryption key that is associated with your Microsoft Dataverse environment. This allows you to rotate or swap the encryption key on demand, and also allows you to prevent Microsoft's access to your customer data when you revoke the key access to our services at any time.
 
 To learn more about customer managed key in Power Platform, watch the customer-managed key video.<p/>
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW14O4G]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=6b5742f5-2ff6-4a26-9ab6-ce983b092c42]
 
 These encryption key operations are available with customer-managed key (CMK):
 
@@ -37,8 +39,7 @@ Currently, all your customer data stored *only* in the following apps and servic
 
 - Dataverse (Custom solutions and Microsoft services)
 - Dataverse [Copilot for model-driven apps](/power-apps/maker/model-driven-apps/add-ai-copilot)  
-- [Power Automate](/power-automate/customer-managed-keys) <sup>1</sup>
-- Power Apps
+- [Power Automate](/power-automate/customer-managed-keys)
 - Chat for Dynamics 365
 - [Dynamics 365 Sales](/dynamics365/sales/sales-gdpr-faqs#can-the-dynamics-365-sales-data-be-encrypted-using-customer-managed-encryption-key-cmk)
 - Dynamics 365 Customer Service
@@ -51,9 +52,7 @@ Currently, all your customer data stored *only* in the following apps and servic
 - Dynamics 365 Supply Chain Management (Finance and operations)
 - Dynamics 365 Fraud Protection (Finance and operations)
 
-<sup>1</sup> When you apply the customer managed key to an environment that has existing Power Automate flows, the flows data continues to be encrypted with Microsoft-managed key. More information: [Power Automate customer manged key](/power-automate/customer-managed-keys).
-
-> [!Note]
+> [!NOTE]
 > Nuance Conversational IVR and [Maker Welcome Content](welcome-content.md) are excluded from customer-managed key encryption.
 
 [Microsoft Copilot Studio](/power-virtual-agents/fundamentals-what-is-power-virtual-agents) stores its data in their own storage and in [Microsoft Dataverse](/power-apps/maker/data-platform/data-platform-intro). When you apply the customer-managed key to these environments, only the data stores in **Microsoft Dataverse** are encrypted with your key. The non-Microsoft Dataverse data continues to be encrypted with the Microsoft-managed key.
@@ -67,7 +66,7 @@ Currently, all your customer data stored *only* in the following apps and servic
 > Power Apps display names, descriptions, and connection metadata continues to be encrypted with a Microsoft-managed key.
 
 > [!NOTE]
-> Data analyzed by solution checker enforcement during a solution check continues to be encrypted with a Microsoft-managed key.
+> The download results link and other data produced by solution checker enforcement during a solution check continues to be encrypted with a Microsoft-managed key.
 
 Environments with finance and operations apps where [Power Platform integration is enabled](/dynamics365/fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration) can also be encrypted. Finance and operations environments without Power Platform integration will continue to use the default Microsoft managed key to encrypt data. More information: [Encryption in finance and operations apps](/dynamics365/fin-ops-core/dev-itpro/sysadmin/customer-managed-keys)
 
@@ -188,7 +187,6 @@ In Azure, perform the following steps:
    1. Under **Purge protection**, set or verify that **Enable purge protection (enforce a mandatory retention period for deleted vaults and vault objects)** is enabled.
    1. If you made changes, select **Save**.
 
-   :::image type="content" source="media/cmk-key-vault-purge-protect.png" alt-text="Enable purge protection on the key vault":::
 ##### Create RSA keys
 1. Create or import a key that has these properties:
    1. On the **Key Vault** properties pages, select **Keys**.
@@ -458,7 +456,7 @@ Follow these steps if you want to return to a Microsoft managed encryption key.
     > [!Note]
     > The environment's encryption status can be:
     > - **Encrypted** - the Enterprise policy encryption key is active and the environment is encrypted with your key.
-    > - **Failed** - the Enterprise policy encryption key is not used and the environment continues to be encrypted with the Microsoft-managed key.
+    > - **Failed** - the Enterprise policy encryption key is not used by all Dataverse storage services. They require more time to process and you can re-run the **Add environment** operation. Contact Support if the re-run fails.
     > - **Warning** - the Enterprise policy encryption key is active and one of the service's data continues to be encrypted with the Microsoft-managed key. Learn more: [Power Automate CMK application warning messages](/power-automate/customer-managed-keys#power-automate-cmk-application-warning-messages)
     >
     > You can re-run the **Add environment** option for the environment that has a **Failed** encryption status. 
@@ -528,7 +526,7 @@ To rotate the encryption key by creating a new key version, use the following st
 1. On the **Enterprise policies** page, select the **Environments with policies** tab. The list of environments that were added to enterprise policies are displayed.
 
 > [!NOTE]
-> There might be situations where the **Environment status** or the **Encryption status** show a **Failed** status. When this occurs, submit a Microsoft Support request for help.
+> There might be situations where the **Environment status** or the **Encryption status** show a **Failed** status. When this occurs, you can try re-running the **Add environment** operation or submit a Microsoft Support request for help.
 
 ## Environment database operations
 

@@ -4,7 +4,7 @@ description: Learn how to optimize your code and logic to support the performanc
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.date: 05/16/2024
+ms.date: 09/11/2024
 ms.subservice: well-architected
 ms.topic: conceptual
 ---
@@ -110,13 +110,15 @@ Many applications require background tasks that run independently of the user in
 
 **Instrumenting code**: When building canvas apps, performant patterns should be used to enhance app efficiency, while anti-patterns should be avoided. For more information, see [Overview of creating performant Power Apps](/power-apps/maker/canvas-apps/create-performant-apps-overview). Use [Monitor](/power-apps/maker/monitor-overview) in Power Apps to diagnose and troubleshoot performance issues during development.
 
+**Measure engagement and outcomes**: When building agents, tracking [conversation engagement](/microsoft-copilot-studio/guidance/measuring-engagement) and [outcomes](/microsoft-copilot-studio/guidance/measuring-outcomes) is essential for measuring agent performance metrics and discovering areas for improvement.
+
 **Optimizing code logic**: With the [solution checker](/power-apps/maker/data-platform/use-powerapps-checker) feature, you can perform a rich static analysis check on your solutions against a set of best-practice rules and quickly identify problematic patterns. With [Flow Checker](/power-automate/error-checker), you can get insights into which areas of your flow's implementation pose a performance risk?
 
 **Using concurrency and parallelism**: Power Automate cloud flows support concurrency in loops and triggers. Note that [concurrency, looping, and debatching limits](/power-automate/limits-and-config#concurrency-looping-and-debatching-limits) apply and are based on your performance profile. Power Apps support concurrency using the [Concurrent](/power-platform/power-fx/reference/function-concurrent) function.
 
 **Optimizing Dataverse performance**: Microsoft Dataverse provides an extensible framework that allows developers to build highly customized and tailored experiences. When you're customizing, extending, or integrating with Dataverse, be aware of the established guidance and best practices. See [Best practices and guidance when using Microsoft Dataverse](/power-apps/developer/data-platform/best-practices/).
 
-## See also
+## Related information
 
 - [Concurrency, looping, and debatching limits in Power Automate](/power-automate/limits-and-config#concurrency-looping-and-debatching-limits)
 - [Product-specific guidance for optimizing Dynamics 365 performance](/dynamics365/guidance/implementation-guide/performing-solution-product-specific-guidance)

@@ -5,7 +5,7 @@ author: laneswenka
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 06/06/2024
+ms.date: 09/20/2024
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
@@ -42,6 +42,9 @@ For example, a customer reads that a new service update is available and wants t
 
     > [!NOTE]
     > The dropdown list includes only versions that are later than your currently installed version. If no versions are listed, the current version of your environment is the latest version.
+    
+    > [!IMPORTANT]
+    > If the application version dropdown list shows no options, the environment is already up to date. In this situation, please refrain from submitting an update request.
 
 1. Agree to the terms and conditions, and then select **Install** to start the update.
 

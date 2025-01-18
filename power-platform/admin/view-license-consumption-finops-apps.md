@@ -2,7 +2,7 @@
 title: View license consumption for finance and operations apps 
 description: Learn how to view your organization's Power Apps license consumption for finance and operations apps. 
 author: amiyapatr-zz
-ms.date: 01/03/2024
+ms.date: 09/25/2024
 ms.reviewer: sericks
 ms.topic: conceptual
 ms.subservice:
@@ -22,7 +22,7 @@ You can use the **Licenses** page in the [Power Platform admin center](https://a
 - What types of finance and operations licenses do you have available for your tenant?
 - How many licenses have been assigned to users?
 - How many roles have been assigned to users in different finance and operations environments, and what licenses are needed based on their role assignment?
-- Are additional licenses needed based on role assignments in your tenant?
+- Are extra licenses needed based on role assignments in your tenant?
 
 
 ## Summary tab
@@ -38,6 +38,9 @@ To see a summary of license usage:
 
 The **User license level summary** section provides a summary count of user licenses available, assigned, and required for the tenant for finance and operations environments.
 
+> [!IMPORTANT]
+> Device license aren't included in the count of licenses available, assigned, or required for the tenant for finance and operations environments.
+
 | Information | Description |
 | ------- | ----------- |
 | User license level | Type of finance and operations license available, or required by the tenant. |
@@ -50,7 +53,7 @@ You can view the individual licenses mapped to a license level, and the number o
 
 ### Drill-down view
 
-Select the specific **User license level** to see a list, and additional details of users who are required to have the selected license.
+Select the specific **User license level** to see a list, and more details of users who are required to have the selected license.
 
 | Information | Description |
 | ------- | ----------- |
@@ -63,14 +66,15 @@ Select the specific **User license level** to see a list, and additional details
 
 The following is a screenshot of the **Licenses** page displaying **User license level**.
 
-:::image type="content" source="media/user-license-level.png" alt-text="Screenshot of the Licenses page, including User license level.":::
-
 You can filter the view using **Environment, Security role, Role license** and **Assigned license** filters.
 
 Select an **Email/User ID** to view the details of all roles assigned to the selected user across all finance and operations environments in the tenant. This view also provides recommendations on what licenses should be assigned to the user based on the user's assigned roles. This can be seen in the following image.
 
-:::image type="content" source="media/user-license-level-details.png" alt-text="Screenshot of the details of all roles assigned to a selected user across all finance and operations environments in a tenant.":::
+   :::image type="content" source="media/view-license-consumption-finops-apps.png" alt-text="View User license level summary" lightbox="media/view-license-consumption-finops-apps.png":::
 
 ## Download
 
-To download the license usage information, select **Download** in the **summary** tab to initiate a download. After a CSV file is generated, you can download the same file again within five days without having to start a new download.
+To download the license usage information, select **Export to CSV** in the **Summary** tab to start download process. After a .csv file is generated, you can download the same file again within five days without having to start a new download.
+
+   :::image type="content" source="media/view-license-consumption-finops-apps-download.png" alt-text="Download license summary" lightbox="media/view-license-consumption-finops-apps-download.png":::
+

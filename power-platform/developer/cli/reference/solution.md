@@ -3,9 +3,9 @@ title: Microsoft Power Platform CLI solution command group| Microsoft Docs
 description: "Describes commands and parameters for the Microsoft Power Platform CLI solution command group."
 keywords: "pac cli"
 ms.subservice: developer
-author: devkeydet
-ms.author: marcsc
-ms.date: 7/8/2024
+author: laneswenka
+ms.author: laswenka
+ms.date: 1/16/2025
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -124,6 +124,12 @@ Upload a Dataverse solution project to run against the Power Apps Checker servic
 
 
 ### Optional Parameters for solution check
+
+#### `--clearCache` `-cc`
+
+Clears the solution checker enforcement cache, for your tenant, of all records that pertain to past results for your solutions.
+
+This parameter requires no value. It's a switch.
 
 #### `--customEndpoint` `-ce`
 

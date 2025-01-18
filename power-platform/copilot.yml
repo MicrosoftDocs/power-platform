@@ -8,9 +8,11 @@ metadata:
   description: Get an overview of where to find documentation and training for copilots and generative AI in Power Platform.
   author: jhaskett-msft
   ms.author: jhaskett
-  ms.date: 05/29/2024
+  ms.date: 11/20/2024
   ms.topic: landing-page # DON'T CHANGE
-  ms.custom: bap-template #Required; don't change.
+  ms.custom: 
+    - bap-template #Required; don't change
+    - copilot-learning-hub
   ms.collection: bap-ai-copilot
 
 # linkListType: concept | deploy | download | get-started | how-to-guide | overview | reference | sample | video | whats-new
@@ -51,7 +53,7 @@ landingContent:
       links:
       - text: Use Copilot to generate deployment notes in pipelines
         url: alm/copilot-deployment-notes-pipelines.md
-      - text: Microsoft Copilot for Microsoft 365 extensibility
+      - text: Extend Microsoft 365 Copilot
         url: /microsoft-365-copilot/extensibility/
     - linkListType: reference
       links:
@@ -59,16 +61,20 @@ landingContent:
         url: developer/cli/reference/copilot.md
 
 # Card
-#  - title: Copilot for industries
-#    linkLists:
-#      - linkListType: overview
-#        links:
-#          - text: Copilot for Finance
-#            url: /copilot/finance/index
-#          - text: Copilot for Sales
-#            url: /microsoft-copilot-sales/
-#          - text: Copilot for Service
-#            url:  /microsoft-copilot-service/
+  - title: Power Platform Well-Architected
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is Power Platform Well-Architected?
+            url: well-architected/what-is-power-well-architected.md
+      - linkListType: concept
+        links:
+          - text: Intelligent application workload
+            url: well-architected/intelligent-application/index.yml
+      - linkListType: reference
+        links:
+          - text: Power Platform Well-Architected assessment
+            url: /assessments/689fd8d9-1000-4cbb-8096-a6c8f3294fc7/
 
 # Card
   - title: Responsible AI

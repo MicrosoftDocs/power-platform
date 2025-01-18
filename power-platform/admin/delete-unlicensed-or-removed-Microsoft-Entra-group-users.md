@@ -7,13 +7,12 @@ ms.author: paulliew
 ms.reviewer: sericks
 ms.custom: "admin-security"
 ms.topic: conceptual
-ms.date: 08/06/2024
+ms.date: 08/27/2024
 search.audienceType: 
   - admin
 ---
 
 # Delete unlicensed or removed Microsoft Entra group members 
-[This article is prerelease documentation and is subject to change.]
 
 There are different scenarios where a user’s status might be set to _disabled_, including the following scenarios:
 

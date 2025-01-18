@@ -1,32 +1,33 @@
 ---
-title: "Special system users and application users"
-description: "Learn about the special system and application users created when the system is provisioned, including assigned security role, user name, and purpose." 
+title: Special system users and application users
+description: Learn about the special system and application users created when the system is provisioned, including assigned security role, user name, and purpose.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/13/2024
+ms.date: 12/11/2024
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
 ms.reviewer: sericks
-ms.custom: "admin-security"
+ms.custom: admin-security
 search.audienceType: 
   - admin
 ms.contributors:
+- sanjeevgoyalmsft 
 - gattimassimo
 - saponcer
 ---
 
 # System and application users
 
-There is a list of special system and application users that is created when the system is provisioned.  Special system users are created for integration and support scenarios. Application users are created during system provisioning for setup and configuration management.  [Application users](create-users.md#create-an-application-user) can also be used for performing back-end services and their data access is managed by the special security role that is assigned. These security roles are managed by the system and might not be modifiable. See other system [predefined security roles](database-security.md#predefined-security-roles).  
+There's a list of special system and application users that is created when the system is provisioned.  Special system users are created for integration and support scenarios. Application users are created during system provisioning for setup and configuration management.  [Application users](create-users.md#create-an-application-user) can also be used for performing back-end services and their data access is managed by the special security role that is assigned. These security roles are managed by the system and might not be modifiable. See other system [predefined security roles](database-security.md#predefined-security-roles).  
 
-Most of these users are hidden from user views but they can be found by using the Advanced Find on the Users table.  Do not delete or modify these users including changing or reassigning security role.
+Most of these users are hidden from user views but they can be found by using the Advanced Find on the Users table.  Don't delete or modify these users including changing or reassigning security role.
 
 ## System users
 
 |Full name  |User name  |Purpose  | Security role assigned |
 |-----------|-----------|---------|------------------------|
-| Support user |crmoln@microsoft.com |To allow Microsoft support staff to have restricted/limited access to any customer environment for customer support. |Support user (does not have privilege to customer data) |
+| Support user |crmoln@microsoft.com |To allow Microsoft support staff to have restricted/limited access to any customer environment for customer support. |Support user (doesn't have privilege to customer data) |
 | Delegated admin |crmoln2@microsoft.com |See [For partners: the Delegated admin](for-partners-delegated-administrator.md). |System admin |
 
 ## Application users
@@ -37,6 +38,7 @@ Most of these users are hidden from user views but they can be found by using th
 | App Management User | capam@microsoft.com | To allow App Management Services to query tenant details such as Tenant country | System admin |
 | CAP Package Deployer Service DVClient | CAPPackageDeployerServiceDVClient@onmicrosoft.com | To import solutions into customer environments for customer-driven installations from Power Platform admin center. | System admin |
 | Dataverse Dataverse search | RelevanceSearch@onmicrosoft.com | To fetch table data and metadata for Dataverse search feature | System admin |
+| # D365WorkAssignment<br> # D365WorkAssignment2<br> # D365WorkAssignment3 | D365WorkAssignment@onmicrosoft.com<br> D365WorkAssignment2@onmicrosoft.com<br> D365WorkAssignment3@onmicrosoft.com | Service application to perform data integration between Dataverse and the Work assignemnt feature in Dynamics 365 Sales. | Sales Work Assignment API Access and Sales Work Assignment API Extended Access |
 | Dynamics 365 Office Data Service | diofficedata@microsoft.com |Service Application to perform data integration between Microsoft Dataverse and Microsoft 365. | DataLakeWorkspaceAppAccess |
 | Dynamics 365 Athena-CDStoAzuredatalake | Dynamics365Athena-<br />CDStoAzuredatalake<br />@onmicrosoft.com |Service application to perform data integration between Microsoft Dataverse to Azure Data Lake. |DataLakeWorkspaceAppAccess |
 | Dynamics 365 Athena2-CDStoAzuredatalake | Dynamics365Athena2-<br />CDStoAzuredatalake<br />@onmicrosoft.com |Service application to perform data integration between Dataverse to Azure Data Lake. |DataLakeWorkspaceAppAccess |
@@ -53,6 +55,9 @@ Most of these users are hidden from user views but they can be found by using th
 | JobServiceProd| JobServiceProd@onmicrosoft.com| Enable satellite services to schedule and dispatch messages to independently built workloads with guaranteed delivery of messages based on service-defined policies. | System admin |
 | # CCADataAnalyticsML | CCADAAdmins@onmicrosoft.com | To allow AI insights in customer care apps like Customer Service, Field Service, etc. | System Customizer and System admin |
 | # CDSReportService | CDSReportService@onmicrosoft.com | To allow user to run reports. |N/A |
+| # CTQHotPath  | CTQHotpath@onmicrosoft.com         | To perform data integration between Omnichannel for Customer Service and Dataverse. | ServiceReader, ServiceWriter                                                           |
+| # CTQWarmPath  | CTQWarmpath@onmicrosoft.com        | To perform data integration between Omnichannel for Customer Service and Dataverse. | Omnichannel supervisor, Omnichannel agent, Omnichannel administrator, ServiceReader, ServiceWriter, ServiceDelete |
+| # CTQDiagnostics | CTQDiagnostics@onmicrosoft.com     | To generate insights for Unified Routing.                                   | ServiceReader, ServiceWriter  |                                                  
 | Power Platform Dataflows | ppdfcdsclient@onmicrosoft.com | Power Platform Dataflows service application to perform data preparation and loading into Dataverse and Azure Data Lake. | System Administrator
 | AIBuilderProd | aibuilderfpapp@onmicrosoft.com | To perform authentication for AI Builder. | System admin |
 | PowerAutomate-ProcessMining | PowerAutomate-ProcessMining<br />@onmicrosoft.com | To allow Process Advisor service to interact with Dataverse. | Environment Maker, Process Advisor Application |
@@ -77,12 +82,13 @@ Most of these users are hidden from user views but they can be found by using th
 | # InsightsAppsPlatform | InsightsAppsPlatform@onmicrosoft.com | For insights generation and ingestion of data into Dataverse | Insights Apps Platform Role  |
 | # SSSAdminProd | SSSAdminProd@onmicrosoft.com | To allow Server Side Sync to integrate with Dataverse | System admin    |
 | Apollo | capaeinfra@microsoft.com | For performing organization lifecycle operations for Dataverse | Service Writer Role |
+| Dataverse Information Protection | dvinfoprotection@microsoft.com | Allows Microsoft Purview to integrate with Dataverse. | Service Reader Role, PurviewLabelRole |
 
 ## The purpose of the system account?
 
 - The System user is a built-in user account that is used to allow customers to perform system updates via plug-ins.
 - The primary usage of this user account is to meet special business requirements that require elevation of privileges; for example, running background processes to integrate with other applications.
-- It can also be used to handle rollup scenarios where individual users do not have the required privilege. For example, the priority of a Case is automatically set to the highest priority of an individual user’s tasks and individual users can only update their own task priority but not the Case priority.
+- It can also be used to handle rollup scenarios where individual users don't have the required privilege. For example, the priority of a Case is automatically set to the highest priority of an individual user’s tasks and individual users can only update their own task priority but not the Case priority.
 
 ## Technical details on permissions?
 
@@ -102,6 +108,6 @@ Most of these users are hidden from user views but they can be found by using th
 
 - The application user is a built-in user account that is used to perform integration and system back-end service to support a particular feature.  
 - Since these are built-in user accounts, they shouldn't be updated. The security roles that are assigned to these accounts shouldn't be updated either. This is to prevent any service outages.  
-- These users do not consume any service licenses.
+- These users don't consume any service licenses.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

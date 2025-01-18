@@ -79,7 +79,7 @@ During the design phase of a workload, you need to consider how decisions based 
 
 - Sometimes a component can't be scaled in reaction to demand, and that demand isn't fully predictable. Using large instances to cover the worst case leads to over-provisioning waste in situations that are outside that use case.
 
-## See also
+## Related information
 
 - [Operational Excellence tradeoffs](../operational-excellence/tradeoffs.md)
 - [Experience Optimization tradeoffs](../experience-optimization/tradeoffs.md)

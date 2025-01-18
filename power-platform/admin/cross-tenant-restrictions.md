@@ -1,7 +1,7 @@
 ---
 title: Restrict cross-tenant inbound and outbound access
-description: "Use tenant restrictions to control access to SaaS cloud applications based on the Microsoft Entra tenant. You can also enforce tenant isolation for Power Platform connections."  
-ms.date: 07/26/2024
+description: Use tenant restrictions to control access to SaaS cloud applications based on the Microsoft Entra tenant. You can also enforce tenant isolation for Power Platform connections. 
+ms.date: 01/02/2025
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: conceptual
@@ -15,6 +15,8 @@ ms.reviewer: sericks
 ms.custom: "admin-security"
 search.audienceType: 
   - admin
+contributors:
+  - akadrno
 ---
 
 # Cross-tenant inbound and outbound restrictions
@@ -24,7 +26,7 @@ Microsoft Power Platform has a rich ecosystem of connectors based on Microsoft E
 Note that Power Platform tenant isolation is different from Microsoft Entra ID-wide tenant restriction. It *doesn't* impact Microsoft Entra ID-based access outside of Power Platform. Power Platform tenant isolation only works for connectors using Microsoft Entra ID-based authentication such as Office 365 Outlook or SharePoint. 
 
 > [!WARNING]
-> There is a [known issue](#known-issues) with [Azure DevOps connector](/connectors/visualstudioteamservices/) that results in tenant isolation policy to not be enforced for connections established using this connector. If an insider attack vector is a concern, it is recommended to limit using the connector or its actions using data policies.
+> There's a [known issue](#known-issues) with [Azure DevOps connector](/connectors/visualstudioteamservices/) that results in tenant isolation policy to not be enforced for connections established using this connector. If an insider attack vector is a concern, it's recommended to limit using the connector or its actions using data policies.
 
 The default configuration in Power Platform with tenant isolation **Off** is to allow cross-tenant connections to be established seamlessly, if the user from tenant A establishing the connection to tenant B presents appropriate Microsoft Entra credentials. If admins want to allow only a select set of tenants to establish connections to or from their tenant, they can turn tenant isolation **On**. 
 
@@ -65,7 +67,7 @@ Similarly, users signed in to Power Platform in the Fabrikam tenant can’t esta
 ![Restrict outbound and inbound cross-tenant access.](media/restrict-outbound-inbound-cross-tenant.png "Restrict outbound and inbound cross-tenant access")
 
 > [!NOTE]
-> A connection attempt initiated by a guest user from their host tenant targeting data sources within the same host tenant is not evaluated by the tenant isolation rules.
+> A connection attempt initiated by a guest user from their host tenant targeting data sources within the same host tenant isn't evaluated by the tenant isolation rules.
 
 ## Tenant isolation with allowlists
 
@@ -108,11 +110,7 @@ In the Power Platform admin center, tenant isolation is set with **Policies** > 
 > [!NOTE]
 > You must have a Power Platform administrator role to see and set the tenant isolation policy.
 
-:::image type="content" source="media/enable-tenant-isolation.png" alt-text="Enable tenant isolation.":::
-
 The tenant isolation allowlist can be configured by using **New tenant rule** on the **Tenant Isolation** page. If tenant isolation is **Off**, you can add or edit the rules in the list. However, these rules won't be enforced until you turn tenant isolation **On**. 
-
-:::image type="content" source="media/new-tenant-rule.png" alt-text="New tenant rule to add rule to the allow list.":::
 
 From the **New tenant rule Direction** dropdown list, choose the direction of the allowlist entry.
 
@@ -120,19 +118,14 @@ From the **New tenant rule Direction** dropdown list, choose the direction of th
 
 You can also enter the value of the allowed tenant as either tenant domain or tenant ID. Once saved, the entry gets added to the rule list along with other allowed tenants. If you use the tenant domain to add the allowlist entry, the Power Platform admin center automatically calculates the tenant ID. 
 
-:::image type="content" source="media/new-tenant-rule-select-tenant-domain-id.png" alt-text="Select tenant domain or tenant ID for the new tenant rule.":::
-
 Once the entry appears in the list, **Tenant ID** and **Microsoft Entra tenant name** fields are displayed. Note that in Microsoft Entra ID, tenant name is different from the tenant domain. The tenant name is unique for the tenant, but a tenant may have more than one domain name. 
-
-:::image type="content" source="media/new-tenant-rule-in-allow-list.png" alt-text="New tenant rule appears in allowlist.":::
 
 You can use "\*" as a special character to signify all tenants are allowed in the designated direction when tenant isolation is turned **On**. 
 
-:::image type="content" source="media/new-tenant-rule-all-tenants.png" alt-text="All tenants are allowed in the designated direction when tenant isolation is turned on.":::
-
 You can edit the direction of the tenant allowlist entry based on business requirements. Note that the **Tenant Domain or ID** field can't be edited in the **Edit tenant rule** page. 
 
-:::image type="content" source="media/edit-tenant-rule.png" alt-text="Edit a tenant rule.":::
+> [!NOTE]
+> To ensure that tenant isolation doesn't block any calls when used, turn tenant isolation **On**, add a new tenant rule, set **Tenant ID** as "\*", and set allowed direction to **inbound** and **outbound**.
 
 You can perform all the allowlist operations like add, edit, and delete while tenant isolation is turned **On** or **Off**. Allowlist entries do have an effect on the connection behavior when tenant isolation is turned **Off** since all cross-tenant connections are allowed. 
 
@@ -163,7 +156,7 @@ Selecting the failed run will show details of the failed flow run.
 
 ## Known issues
 
-[Azure DevOps connector](/connectors/visualstudioteamservices) uses Microsoft Entra authentication as the identity provider, but uses its own OAuth flow and STS for authorizing and issuing a token. Since the token returned from the ADO flow based on that Connector’s configuration is not from Microsoft Entra ID, the tenant isolation policy is not enforced. As a mitigation, we recommend using other types of [data policies](wp-data-loss-prevention.md) to limit the use of the connector or its actions.
+[Azure DevOps connector](/connectors/visualstudioteamservices) uses Microsoft Entra authentication as the identity provider, but uses its own OAuth flow and STS for authorizing and issuing a token. Since the token returned from the ADO flow based on that Connector’s configuration isn't from Microsoft Entra ID, the tenant isolation policy isn't enforced. As a mitigation, we recommend using other types of [data policies](wp-data-loss-prevention.md) to limit the use of the connector or its actions.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

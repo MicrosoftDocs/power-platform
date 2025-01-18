@@ -4,7 +4,7 @@ description: Learn how to test performance and establish best practices for perf
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.date: 05/16/2024
+ms.date: 09/11/2024
 ms.subservice: well-architected
 ms.topic: conceptual
 ---
@@ -231,11 +231,13 @@ If your workload includes Azure resources, you can use [Azure Chaos Studio](http
 
 During development, developers can also use [Power Apps Monitor](/power-apps/maker/monitor-overview) to diagnose and troubleshoot problems faster and build more reliable apps. It provides a deep view of your app by logging all the key activities that occur in the app as it runs. Power Apps Monitor also provides a better understanding of how the events and formulas contained in your app work, so you can improve performance and identify any errors or problems.
 
+If your workload includes a Microsoft Copilot Studio agent, you can use the [Power CAT Copilot Studio Kit](https://github.com/microsoft/Power-CAT-Copilot-Studio-Kit) to configure agents and tests. By running individual tests against the Copilot Studio APIs (Direct Line), the agent responses are evaluated against expected results.
+
 **Analyze the results**: [Azure Monitor](/azure/azure-monitor/overview) is a comprehensive monitoring solution for collecting, analyzing, and responding to telemetry from your cloud and on-premises environments. [Application Insights](/azure/azure-monitor/app/app-insights-overview) is an extension of Azure Monitor that provides APM features. You can use Application Insights to monitor applications during development and testing and also in production.
 
 > :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff**: Testing takes time and skill to perform and can affect operational efficiency.
 
-## See also
+## Related information
 
 - [Recommendations for security testing](../security/testing.md)
 - [Recommendations for designing a reliability testing strategy](../reliability/testing-strategy.md)
