@@ -7,7 +7,7 @@ contributors:
   - microsoft-george
 ms.reviewer: ellenwehrle
 ms.topic: overview
-ms.date: 11/06/2023
+ms.date: 01/21/2025
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
