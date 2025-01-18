@@ -9,7 +9,7 @@ ms.date: 01/21/2025
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
-customer intent: As a Microsoft Power Platform admin, I want to learn how to install, set up, and deploy the Meeting Room Services template so that my organization can effectively manage resources for meeting rooms.
+#customer intent: As a Microsoft Power Platform admin, I want to learn how to install, set up, and deploy the Meeting Room Services template so that my organization can effectively manage resources for meeting rooms.
 ---
 
 # Install the Meeting Room Services template
