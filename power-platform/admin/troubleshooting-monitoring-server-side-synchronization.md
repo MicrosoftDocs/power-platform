@@ -3,7 +3,7 @@ title: Troubleshooting and monitoring server-side synchronization
 description: Troubleshooting and monitoring server-side synchronization
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/14/2025
+ms.date: 01/16/2025
 author: rahulmital 
 ms.subservice: admin
 ms.author: rahulmital 
@@ -32,7 +32,7 @@ Selecting the link directs you to a **Learn** article for the error, if one exis
 
 The data for the dashboard is stored in the ExchangeSyncIdMapping table and is retained by the system for up to three days after the failure occued. This value can be modified by changing the ExchangeSyncIdMappingPersistenceTimeInDays OrgDbOrgSetting.
 
-## Known Issues
+### Known issues
 
 This dashboard does not currently work when viewed using the Unified Client interface. You will see the following error: 
 
@@ -64,6 +64,12 @@ Follow the steps in this [KB article](https://support.microsoft.com/help/4468755
 > ![Click on the mailboxes listed for more info.](../admin/media/server-side-sync-performance-dashboard-mailbox.png "Click on the mailboxes listed for more info.")  
   
  Click on the grid icon in each chart to view the records that are used to generate the chart.  
+
+## Known issues
+
+### Mailbox grid missing test run status
+
+The updated user interface for mailbox views doesn't show the **Test Run Status** column on the **My Active Mailboxes** view. This column is available in a future update.
 
 ## Common alerts and recommended resolutions  
   

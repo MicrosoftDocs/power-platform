@@ -13,6 +13,7 @@ search.audienceType:
 ---
 
 # Manage Power Apps
+
 If you're an environment admin or a Microsoft Power Platform admin, you can manage the apps created in your organization.
 
 Admins can do the following from the Power Platform admin center:
@@ -24,7 +25,6 @@ Admins can do the following from the Power Platform admin center:
 
 - Either a Power Apps plan or Power Automate plan. Alternatively, you can sign up for a [free Power Apps trial](/powerapps/maker/signup-for-powerapps).
 - Power Apps environment admin or Power Platform admin permissions. For more information, see [Environments administration in Power Apps](environments-overview.md).
-
 
 ## Manage Power Apps
 
@@ -75,7 +75,7 @@ Do the following to limit maker privileges to only be able to create and edit Sh
 
 2.	Have an admin install the [SharePoint custom form maker solution from AppSource](https://appsource.microsoft.com/product/dynamics-365/mscrm.sharepointcustomformmaker) to your environment designated for SharePoint custom forms.
 
-3.	In the Power Platform admin center, select the environment you designated for SharePoint custom forms in step one and assign the SharePoint custom form maker security role to users expected to create SharePoint custom forms. See [Assign security roles to users in an environment that has a Dataverse database](database-security.md#assign-security-roles-to-users-in-an-environment-that-has-a-dataverse-database). 
+3.	In the Power Platform admin center, select the environment you designated for SharePoint custom forms in step one and assign the SharePoint custom form maker security role to users expected to create SharePoint custom forms. See [Assign security roles to users in an environment that has a Dataverse database](database-security-configure.md#assign-security-roles-to-users-in-an-environment-that-has-a-dataverse-database). 
 
 ### Frequently asked questions
 

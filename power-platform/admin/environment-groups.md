@@ -3,7 +3,7 @@ title: Environment groups
 description: Learn how to organize your Managed Environments into groups and govern them in bulk with rules.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/14/2025
+ms.date: 01/17/2025
 author: mikferland-msft
 ms.author: miferlan
 ms.reviewer: sericks
@@ -12,7 +12,8 @@ ms.custom: "admin-security"
 search.audienceType: 
   - admin
 contributors:
-- arjunmayur
+  - JesseParsons
+  - arjunmayur
 ---
 
 # Environment groups
@@ -29,7 +30,7 @@ Admins can apply various rules to groups to govern many environments in bulk, re
 | 2 | [AI-generated descriptions (preview)](/power-apps/maker/canvas-apps/save-publish-app#create-an-app-description-with-copilot-preview) |
 | 3 | [AI-powered Copilot features](/power-apps/maker/canvas-apps/ai-overview?WT.mc_id=ppac_inproduct_settings) |
 | 4 | [Back-up retention](backup-restore-environments.md) |
-| 5 | [Generative AI settings (preview)](geographical-availability-copilot.md) |
+| 5 | [Generative AI settings](geographical-availability-copilot.md) |
 | 6 | [Maker welcome content](welcome-content.md) |
 | 7 | [Power Apps component framework for canvas apps](/power-apps/developer/component-framework/component-framework-for-canvas-apps) |
 | 8 | [Release channel](https://go.microsoft.com/fwlink/?linkid=2237290) |
@@ -94,7 +95,7 @@ You can also configure the _sharing limit_ rules for canvas apps, solution-aware
 
 #### For solution-aware cloud flows
 1. Select the **Sharing controls for Solution-aware cloud flows** rule to open its configuration panel.
-2. Unmark the **Let people share solution-aware cloud flows** option. This will turn off all sharing for solution-aware cloud flows in this environment group.
+2. Unmark the **Let people share solution-aware cloud flows** option. This turns off all sharing for solution-aware cloud flows in this environment group.
 3. Select **Save**
 
 #### For agents (preview)
@@ -144,7 +145,7 @@ You can manually add environments to the **Personal Productivity** group if you 
 > [!NOTE]
 >
 > - An environment can only belong to one environment group.
-> - Any environment type, for example production, developer, or sandbox, can be created into an environment group as long as they are a managed environment. 
+> - Any environment type, for example production, developer, or sandbox, can be created into an environment group as long as they're a managed environment. 
 
 ## Manually create environments in the group
 
