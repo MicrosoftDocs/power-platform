@@ -17,6 +17,7 @@ Power Platform delivers fundamental technology benefits that can help your organ
 - Improve business agility
 - Reduce costs
 - Accelerate time to market
+- Enhance productivity
 
 To take advantage of this great potential, start by documenting your Power Platform adoption vision in a way that addresses both business and technical stakeholders.
 
