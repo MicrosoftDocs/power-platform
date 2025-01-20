@@ -101,14 +101,14 @@ After you have completed your drill or after an outage has been mitigated, we re
 
 Admins can determine the current, disaster recovery state and location of an environment in the **Environment details** page. Admins can also select **Disaster Recovery** in the command bar to open the **Disaster Recovery** pane. 
 
-To check data replication latency at any time, you can select **Disaster recovery**, select emergency response as the disaster recovery reason; this will open a confirmation dialog that includes the last replication time between regions for that environment. You may click Cancel if your only purpose was to check the potential loss of data in case of a failover operation. Keep in mind that last sync time will always be different at different times since data is being replicated continuously. 
+To check data replication latency at any time, you can select **Disaster Recovery** and select **Emergency response** as the disaster recovery reason. This opens a confirmation dialog that includes the last replication time between regions for that environment. You may select **Cancel** if your only purpose was to check the potential loss of data in case of a failover operation. Keep in mind, that last sync time is always different at different times, since data is being replicated continuously. 
 
 ### Documenting your business continuity plan
 
-It is recommended that you perform DR drills, or emergency response if you choose to, before a real disaster has struck so you can document all  additional steps required for any additional integration points that are external to power platform. In this case your company will be more prepared for recovery in case of a real disaster.
+We recommended that you perform disaster recovery drills or an emergency response, if you choose to, before a real disaster strikes so you can document all steps required for any integration points that are external to Power Platform. In this case, your company is more prepared for recovery in case of a real disaster.
 
 ### Note about preview
 
-During the preview there will not be a charge for this feature, and it cannot be disabled by the customer. When the feature reaches general availability preview customers will have the opportunity to keep the functionality or allow it to be disabled by Microsoft. There will be no impact on your primary environment location or capabilities if you choose not to upgrade during GA.
+During the preview, there isn't a charge for this feature, and it can't be turned off by the customer. When the feature reaches general availability, preview customers have the opportunity to keep the functionality or allow it to be turned off by Microsoft. There will be no impact on your primary environment location or capabilities, if you choose not to upgrade during general availability.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
