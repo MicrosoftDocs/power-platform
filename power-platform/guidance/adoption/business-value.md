@@ -39,7 +39,7 @@ Power Platform solutions typically help improve one or more business value drive
 
 - **Performance improvement**: Solutions that help businesses improve their operational efficiency and effectiveness, improve outcomes, and increase employee and customer satisfaction. We see measurable impact in key performance indicators (KPIs) such as sales growth, time-to-market, and improved customer satisfaction.
 - **Direct or indirect cost savings**: Solutions that help organizations reduce their operational costs by automating manual processes, reducing errors, and improving resource utilization. They can also help organizations save money indirectly by improving the quality of products or services, such as by reducing paper, fuel, or other resources.
-- **Risk mitigation**: Solutions that help organizations mitigate risks by improving data security, ensuring compliance with regulator requirements, and reducing the risk of errors, such as reducing the risk of a process outage and data breach.
+- **Risk mitigation**: Solutions that help organizations mitigate risks by improving data security, ensuring compliance with regulatory requirements, and reducing the risk of errors, such as reducing the risk of a process outage and data breach.
 - **Business transformation**: Solutions that help organizations transform their operations and business models. This might include enabling businesses to adapt to changing market conditions, introduce new products or services, or replace aging legacy systems.
 
 ### Tangible and intangible value
@@ -282,7 +282,12 @@ This article focuses on the app/solution level. Taking a step back and consideri
 **Value Plays** are strategic initiatives designed to maximize the value delivered by Power Platform. They help you identify high-impact opportunities and execute them effectively to achieve significant outcomes.
 
 > [!div class="nextstepaction"]
-> [Measure and communicate business value](business-value.md)
+> [Utilize value plays](business-value.md)
+
+Getting an executive sponsor and executive leadership buy-in is one of the most important aspects of successful Power Platform adoption, especially in large organizations. Learn how to get an executive leader to sponsor your project, consider the role and activities of an executive sponsor, and understand how to identify an executive sponsor.
+
+> [!div class="nextstepaction"]
+> [Get executive sponsorship](executive-sponsorship.md)
 
 ## Useful resources
 

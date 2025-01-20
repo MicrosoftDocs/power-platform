@@ -17,7 +17,7 @@
           items:
             - name: Assess Power Platform adoption strategy
               href: adoption/take-assessment.md
-            - name: Establish vision, metrics and goals
+            - name: Define vision, metrics and goals
               href: adoption/vision.md
             - name: Common goals
               items: 
