@@ -166,13 +166,18 @@ The following table describes each option, the ALM stage when it's most appropri
     **Drivers**
     :::column-end:::
     :::column:::
-    No longer neededReduce expenses
+    No longer needed
+
+    Reduce expenses
     :::column-end:::
     :::column:::
-    Reduce capital expensesTake advantage of newer technologies
+    Reduce capital expenses
+    Take advantage of newer technologies
     :::column-end:::
     :::column:::
-    Reduce capital expensesRecover data storageQuick cloud ROI
+    Reduce capital expenses
+    Recover data storage 
+    Quick cloud ROI
     :::column-end:::
     :::column:::
     Faster, shorter updatesMore portable codeGreater cloud efficiencies in resources, speed, costImprove performanceReduce technical debt
@@ -527,7 +532,7 @@ As solutions move to the cloud, connectivity back to on-premises resources can b
 
 Regardless of which approaches you use for integration connectivity, you should evaluate your connectivity to ensure it has low enough latency and enough bandwidth to support both your integrations and the modernized application.
 
-### Business Logic
+### Business logic
 
 When building modern applications, you can choose what to implement business logic with and where to implement it in your application architecture. Without guidance, most organizations would end up with business logic chaos. Having reusable logic that ensures consistency in implementation can help speed up modernization efforts.
 
