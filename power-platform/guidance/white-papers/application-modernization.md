@@ -6,7 +6,7 @@ ms.component: pa-admin
 ms.topic: overview
 ms.date: 01/31/2025
 ms.author: rstand
-ms.reviewer: sericks
+ms.reviewer: jhaskett-msft
 ms.custom: bap-template
 ms.subservice: guidance
 contributors:
@@ -19,7 +19,7 @@ In today's rapidly evolving digital landscape, organizations face the constant c
 
 This whitepaper explores the benefits, strategies, and best practices of modernizing applications with Microsoft Power Platform. It provides insights and guidance on how the Microsoft low-code platform can help you ensure the success of your application modernization efforts as part of your organization's digital transformation.
 
-> [!NOTE]
+> [!TIP]
 > You can save or print this white paper by selecting **Print** from your browser, and then selecting **Save as PDF**.
 
 ## Introduction
@@ -83,7 +83,7 @@ The benefits of modernizing applications using the Microsoft Power Platform exte
 
 Frontline workers need modern applications they can use on any device, anywhere they're working. They need access to insights in real time to make better decisions faster. They need to collaborate with coworkers and management to keep everything working smoothly. When American Airlines decided to modernize aspects of its operations, they got all that and more.
 
-In partnership with Microsoft, American Airlines created [ConnectMe](https://news.microsoft.com/2022/05/18/american-airlines-and-microsoft-partnership-takes-flight-to-create-a-smoother-travel-experience-for-customers-and-better-technology-tools-for-team-members/), a Microsoft Teams app built on Power Apps and Azure. Using the app on any mobile device, frontline teams have key arrival, boarding, baggage, and gate information at their fingertips in real time, streamlining ground operations, accelerating aircraft turn times, and making travel a more pleasant experience for customers. [Learn more about the airline’s transformation.](https://news.aa.com/news/news-details/2022/American-Airlines-and-Microsoft-Partnership-Takes-Flight-to-Create-a-Smoother-Travel-Experience-for-Customers-and-Better-Technology-Tools-for-Team-Members-MKG-OTH-05/default.aspx)
+In partnership with Microsoft, American Airlines created [ConnectMe](https://news.microsoft.com/2022/05/18/american-airlines-and-microsoft-partnership-takes-flight-to-create-a-smoother-travel-experience-for-customers-and-better-technology-tools-for-team-members/), a Microsoft Teams app built on Power Apps and Azure. Using the app on any mobile device, frontline teams have key arrival, boarding, baggage, and gate information at their fingertips in real time, streamlining ground operations, accelerating aircraft turn times, and making travel a more pleasant experience for customers. [Learn more about the airline's transformation.](https://news.aa.com/news/news-details/2022/American-Airlines-and-Microsoft-Partnership-Takes-Flight-to-Create-a-Smoother-Travel-Experience-for-Customers-and-Better-Technology-Tools-for-Team-Members-MKG-OTH-05/default.aspx)
 
 ### AI empowerment for knowledge workers
 
@@ -166,9 +166,9 @@ The following table describes each option, the ALM stage when it's most appropri
     **Drivers**
     :::column-end:::
     :::column:::
-    - No longer needed
+    No longer needed
 
-    - Reduce expenses
+    Reduce expenses
     :::column-end:::
     :::column:::
     Reduce capital expenses
@@ -276,9 +276,9 @@ To evaluate an application, we recommend that you first determine whether it's s
 
 For example, if you determine an application isn't a good fit because Power Apps is missing a required control, you can use the [Power Apps component framework](/power-apps/developer/component-framework/reference/) (PCF) and traditional code to build a custom control. Another example is an app that has complex logic. You could centralize the logic in an API that Power Apps can access using a custom connector. In both these examples, Power Platform extensibility allowed most of the app to be built with low-code components, bridging the gaps with traditionally developed code.
 
-NSure.com, a proprietary online insurance shopping platform, offers a real-world example. The company's initial launch relied on traditionally developed Angular, Xamarin, and Azure services. By adding Power Platform and Dynamics 365, NSure.com created a next-generation solution using both low-code and traditional coding techniques, as the following diagram illustrates. [Learn more about the company’s journey.](https://customers.microsoft.com/en-us/story/1432427877109295124-nsure-power-apps)
+NSure.com, a proprietary online insurance shopping platform, offers a real-world example. The company's initial launch relied on traditionally developed Angular, Xamarin, and Azure services. By adding Power Platform and Dynamics 365, NSure.com created a next-generation solution using both low-code and traditional coding techniques, as the following diagram illustrates. [Learn more about the company's journey.](https://www.microsoft.com/en/customers/story/1728829430186194098-nsure-power-platform-insurance-usa)
 
-![Diagram illustrating the insurance quotation process incorporating both traditional code and low-code components.](media/app-mod/image2.png)
+:::image type="content" source="media/app-mod/image2.png" alt-text="Diagram illustrating the insurance quotation process incorporating both traditional code and low-code components.":::
 
 As important as identifying low-code opportunities are recognizing when a low-code approach isn't the right one. The following tables describe use cases that are commonly not a good fit for low-code solutions. Organizations face different challenges on the front end and the back end, so let's consider them separately.
 
@@ -391,13 +391,13 @@ The Power Apps runtime engine is built on the React framework. Applications are 
 
 Connectors use Azure API Management to manage credentials and connections from each user.
 
-![A diagram showing Power Apps, API Management, Connects, and Data Sources connected together](media/app-mod/image3.png)
+:::image type="content" source="media/app-mod/image3.png" alt-text="A diagram showing Power Apps, API Management, Connects, and Data Sources connected together.":::
 
 The same architecture is used for all connectors, including custom connectors that you create for your own APIs. The use of Azure API Management ensures a consistent interface for Power Platform products like Power Apps and Power Automate with all connectors.
 
 An exception is the Dataverse connector. It appears in the list of connectors for apps and flows, but it's implemented differently. When an app or a flow uses Dataverse data or actions, the interaction is direct though Dataverse's OData API.
 
-![A diagram showing that Power Apps connects to Dataverse via an OData API. Power Apps sends an OData request and Dataverse returns data.](media/app-mod/image4.png)
+:::image type="content" source="media/app-mod/image4.png" alt-text="A diagram showing that Power Apps connects to Dataverse via an OData API. Power Apps sends an OData request and Dataverse returns data.":::
 
 ## Power Platform extensibility options
 
@@ -433,11 +433,11 @@ The following table describes the two types of apps you can build with Power App
 
 The following diagram illustrates a basic architecture for a canvas app or a model-driven app, in which the app connects directly to data sources.
 
-![Diagram of the architecture of a simple canvas app or model-driven app, with direct connections to data sources.](media/app-mod/image5.png)
+:::image type="content" source="media/app-mod/image5.png" alt-text="Diagram of the architecture of a simple canvas app or model-driven app, with direct connections to data sources.":::
 
 To minimize direct connections to a data source, you can have the app use a custom connector to the API, which does any necessary work in the data source. This approach allows you to control what operations are exposed to low-code components and can abstract the complexity of the underlying logic. The following diagram illustrates this API-first approach.
 
-![Diagram of the architecture of an app that uses a custom connector and an API to connect to data sources.](media/app-mod/image6.png)
+:::image type="content" source="media/app-mod/image6.png" alt-text="Diagram of the architecture of an app that uses a custom connector and an API to connect to data sources.":::
 
 Power Apps can also directly run Power Automate cloud flows that can return results to the application or run asynchronously.
 
@@ -451,7 +451,7 @@ You can configure pages for anonymous access or for authenticated access using M
 
 A common application of a Power Pages site is providing external users with self-service access to an organizational business process. Internal users can use a Power Apps application. The following diagram illustrates such an architecture.
 
-![Diagram showing external users accessing Dataverse data through an external-facing Power Pages site ad internal users through a Power Apps app.](media/app-mod/image7.png)
+:::image type="content" source="media/app-mod/image7.png" alt-text="Diagram showing external users accessing Dataverse data through an external-facing Power Pages site ad internal users through a Power Apps app.":::
 
 ### Data management
 
@@ -487,7 +487,7 @@ Virtual tables are implemented using a data provider architecture. Dataverse inc
 
 The following diagram illustrates the use of the virtual connector.
 
-![Diagram showing how virtual connectors work. Data sources have send/return relationships with Connection + Data Provider, which has a send/return relationship with Connection Reference, which has a send/return relationship with Dataverse](media/app-mod/image8.png)
+:::image type="content" source="media/app-mod/image8.png" alt-text="Diagram showing how virtual connectors work. Data sources have send/return relationships with Connection + Data Provider, which has a send/return relationship with Connection Reference, which has a send/return relationship with Dataverse.":::
 
 Developers can also create custom providers for other external data sources. However, they must understand and implement all Dataverse mappings and operation support.
 
@@ -541,13 +541,13 @@ Using Dataverse as the primary data repository for the modernized application pr
 
 The following diagram illustrates an example of inbound and outbound events in a Dataverse environment.
 
-![Diagram showing inbound and outbound events in a Dataverse environment.](media/app-mod/image9.png)
+:::image type="content" source="media/app-mod/image9.png" alt-text="Diagram showing inbound and outbound events in a Dataverse environment.":::
 
 Organizations should also consider prebuilt integration options available from third parties on Microsoft AppSource. For example, Microsoft has a prebuilt solution for organizations that need to integrate SAP with Power Platform. This prebuilt solution incorporates apps and flows and adds new functionalities that facilitate communication between your organization's SAP system and Power Platform.
 
 For example, Ernst & Young used the prebuilt SAP integration to rapidly develop a solution to optimize a high-frequency global finance process. The following diagram of the [company's PowerPost solution](https://customers.microsoft.com/en-SG/story/1517917618455612643-eyzilla-professionalservices) shows how finance users post documents to its General Ledger SAP ERP system using Power Platform.
 
-![Diagram of the Ernst & Young integrated SAP solution.](media/app-mod/image10.png)
+:::image type="content" source="media/app-mod/image10.png" alt-text="Diagram of the Ernst & Young integrated SAP solution.":::
 
 ##### Integration connectivity options
 
@@ -555,9 +555,9 @@ As solutions move to the cloud, connectivity back to on-premises resources can b
 
 - **Data gateways** allow low-code components from Power Apps, Power Automate, and Power BI to reach back to on-premises resources to support hybrid integration scenarios. Gateways provide a quick way for modernized low-code applications to access data sources that are still on-premises. With a gateway, you can connect to on-premises data from sources like a local file system, DB2, Oracle, SAP ERP, SQL Server, and SharePoint. One gateway can support multiple users and access to multiple sources. You can also configure data gateways as clusters to provide high availability.
 
-    Gateway support is integrated into the connection process for connectors, allowing indication when a gateway is required and selection of the configured gateway. After the connection is configured, apps and flows can use the connector just like one without a gateway. 
+    Gateway support is integrated into the connection process for connectors, allowing indication when a gateway is required and selection of the configured gateway. After the connection is configured, apps and flows can use the connector just like one without a gateway.
 
-    ![Diagram of a data gateway.](media/app-mod/image11.png)
+    :::image type="content" source="media/app-mod/image11.png" alt-text="Diagram of a data gateway.":::
 
 - **Virtual network data gateways** allow Power BI and Power Platform dataflows to connect to data services in an Azure virtual network without the need of an on-premises data gateway on a virtual machine inside the virtual network.
 
@@ -640,11 +640,11 @@ Power Platform connectors are also important to the Copilot experience. Connecto
 
 As users become more accustomed to having copilot AI assistance in their apps, they expect it in all applications. You are able to make your modern applications more engaging by including copilots that you create with Copilot stack, an AI development framework.
 
-![Illustration of the copilot stack, an AI development framework that helps developers build their own copilot. Tools available on Azure help with everything from foundation model selection to AI orchestration. Access to plugins extend copilot capabilities.](media/app-mod/image13.png)
+:::image type="content" source="media/app-mod/image13.png" alt-text="Illustration of the copilot stack, an AI development framework that helps developers build their own copilot.":::
 
 You can use the prebuilt Copilot control in Power Apps to add copilots to your canvas apps and model-driven apps. By configuring a view of a data source and some basic prompt information, you can quickly provide an in-app copilot experience of your own.
 
-![A screenshot of Power Apps showing a Copilot added to a Canvas app.](media/app-mod/image14.png)
+:::image type="content" source="media/app-mod/image14.png" alt-text="Screenshot of Power Apps showing a Copilot added to a Canvas app.":::
 
 ## Application lifecycle management
 
@@ -658,7 +658,7 @@ Organizations can also use the CI/CD tooling of their choice. Power Platform CLI
 
 The following diagram illustrates an example of a team building an Inspection app. In their inner loop, they work in a dev environment and store their work in a Git repository. The outer loop consists of a test environment and a production environment. A build pipeline takes the version-controlled solution, performs any necessary checks, and produces an Inspection solution artifact. A release pipeline then deploys the solution to test, where testers can verify it's ready for production. Once approved, the release pipeline deploys the solution to production.
 
-![Diagram showing how an app solution moves from dev to test to production through pipelines.](media/app-mod/image15.png)
+:::image type="content" source="media/app-mod/image15.png" alt-text="Diagram showing how an app solution moves from dev to test to production through pipelines.":::
 
 When you export a solution from Dataverse, it's exported as a single compressed file. To store the low-code resources in version control, you could use the build tooling to unpack the solution file into individual component files. During build automation, the build tools combine individual files from version control into a single compressed file.
 
