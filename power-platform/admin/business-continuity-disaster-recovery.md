@@ -49,7 +49,7 @@ If an unanticipated region-wide outage occurs, such as a natural disaster that a
 | Microsoft's responsibility  | Customers responsibilities  |
 | --- | --- |
 | If Microsoft detects an outage and sees customers being impacted, then Microsoft's communication team sends out the necessary communications and keep the Service Health Dashboard up to date with the necessary information. | None |
-| If an outage occurs, Microsoft performs an automatic failover of the **production instances** to the secondary region if there is NO DATA LOSS to the customer. | None |
+| If an outage occurs, Microsoft performs an automatic failover of the **production instances** to the secondary region if there's NO DATA LOSS to the customer. | None |
 | If an outage occurs, Microsoft determines that there's DATA LOSS, then failing over the environment isn't initiated without customer consent/approval. | Once the customer is aware of the ongoing outage, and sees IMPACT, then it's the customer's responsibility: <br> - To reach out to Microsoft via support and find out the level of data loss that would occur if a failover is initiated. <br> - If the data loss is at an acceptable level to their organization standards, then customers should provide their **consent** via support, for Microsoft to initiate a failover. |
 | When Microsoft determines that the primary region is back online and is fully operational, a **FAILBACK** is performed on the production instances. There's no data loss during the planned failback process but users could experience brief interruptions or disconnects during this window. | None |
 
