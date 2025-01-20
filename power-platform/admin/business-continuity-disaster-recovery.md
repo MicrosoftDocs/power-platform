@@ -2,7 +2,7 @@
 title: Business continuity and disaster recovery for Dynamics 365 SaaS apps
 description: Microsoft provides business continuity and disaster recovery for production environments of Dynamics 365 SaaS applications if there's an Azure region-wide outage. 
 author: ImadYanni 
-ms.date: 01/17/2025
+ms.date: 01/20/2025
 ms.reviewer: sericks
 ms.topic: conceptual
 ms.subservice: admin
@@ -59,7 +59,7 @@ If an unanticipated region-wide outage occurs, such as a natural disaster that a
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
 Disaster recovery is a Power Platform premium infrastructure capability that allows customers to initiate environment failover between regions in a self-serve manner.
-Customers typically have multiple environments of different types created in their tenant, this capability is available specifically for production type environments, and can be enabled on an environment by environment basis. At this time this capability is not available for finance and operations production environments.
+Customers typically have multiple environments of different types created in their tenant. This capability is available specifically for production type environments, and can be turned on for each environment. At this time this capability isn't available for finance and operations production environments.
 
 ### Enabling Production envionments for Self-service disaster recovery
 
