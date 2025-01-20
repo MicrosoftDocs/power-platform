@@ -15,13 +15,15 @@
               href: adoption/maturity-model-details.md
         - name: Strategy
           items:
+            - name: Overview
+              href: adoption/strategy-overview.md
             - name: Assess Power Platform adoption strategy
               href: adoption/take-assessment.md
             - name: Define vision, metrics and goals
               href: adoption/vision.md
             - name: Common goals
               items: 
-                - name: Overview
+                - name: Overview of common goals
                   href: adoption/common-vision/vision-overview.md
                 - name: Establish a Center of Excellence with governance patterns and practices
                   href: adoption/common-vision/establish-coe.md
