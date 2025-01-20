@@ -53,7 +53,7 @@ Another key licensing concept to be aware of is the request limits and allocatio
 
 ## Storage capacity
 
-Microsoft Dataverse capacity (database, file, log, and add-ons) is pooled across the tenant and shared among all environments and workloads. The first subscriptions of Power Apps or Power Automate provides a one-time default capacity entitlement for the tenant. For example, a Power Apps per-user plan would set the tenant capacity initially as 10 GB of Dataverse database, 20 GB of Dataverse file, and 2 GB of Dataverse log capacity. Each additional licensed user provides an additional per-user capacity grant that increases the overall tenant available capacity. There are also capacity add-ons available to purchase additional database, file, and log capacity.
+Microsoft Dataverse capacity (database, file, log, and add-ons) is pooled across the tenant and shared among all environments and workloads. The first subscription of Power Apps or Power Automate provides a one-time default capacity entitlement for the tenant. For example, a Power Apps per-user plan would set the tenant capacity initially as 10 GB of Dataverse database, 20 GB of Dataverse file, and 2 GB of Dataverse log capacity. Each additional licensed user provides an additional per-user capacity grant that increases the overall tenant available capacity. There are also capacity add-ons available to purchase additional database, file, and log capacity.
 
 Every environment can have zero or one Dataverse database, which provides storage for your apps. To create a database, there must be at least 1 GB of Dataverse database capacity remaining. Capacity is also consumed by normal Dataverse storage consumption by storing data, files, and logs.
 
