@@ -172,21 +172,40 @@ The following table describes each option, the ALM stage when it's most appropri
     :::column-end:::
     :::column:::
     Reduce capital expenses
+
     Take advantage of newer technologies
     :::column-end:::
     :::column:::
     Reduce capital expenses
+
     Recover data storage 
+
     Quick cloud ROI
     :::column-end:::
     :::column:::
-    Faster, shorter updatesMore portable codeGreater cloud efficiencies in resources, speed, costImprove performanceReduce technical debt
+    Faster, shorter updates
+
+    More portable code
+
+    Greater cloud efficiencies in resources, speed, cost
+
+    Improve performance
+
+    Reduce technical debt
     :::column-end:::
     :::column:::
-    Improve scalability, reliability, and maintainabilityEase adoption of new cloud capabilitiesMix technology stacks
+    Improve scalability, reliability, and maintainability
+
+    Ease adoption of new cloud capabilities
+
+    Mix technology stacks
     :::column-end:::
     :::column:::
-    Accelerate innovationAccelerate developmentReduce operating expenses
+    Accelerate innovation
+
+    Accelerate development
+
+    Reduce operating expenses
     :::column-end:::
 :::row-end:::
 :::row:::
