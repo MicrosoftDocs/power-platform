@@ -89,7 +89,7 @@ We recommended that drills are performed on a copy of a production environment, 
 
 ### Emergency response failover
 
-This option is expected to be chosen during an emergency, that is when the primary region has sustained an outage and access to environments or data isn't possible. If you choose this option, the environment fails without copying any more data, other than the data that has been replicated before the outage occurred. 
+This option is expected to be chosen during an emergency&mdash;that is when the primary region has sustained an outage and access to environments or data isn't possible. If you choose this option, the environment fails without copying any more data, other than the data that has been replicated before the outage occurred. 
 
 When you perform an emergency response, you see the amount of data loss represented in time, which you can compare to your Recovery Point Objective (RPO), if you determine that it's acceptable and you choose to continue. The environment operates in the run state until disaster recovery is complete and the environment is back to normal operation from the secondary region.
 
