@@ -74,7 +74,7 @@ To turn on disaster recovery, complete the following steps.
 1. Select **Disaster Recovery** in the command bar, at the top of the page. The **Disaster Recovery** pane appears.
 1. Select the toggle to change it to **Enabled**.
 1. Select **Save**.
-1. The environmet is placed in the **Edit details** page briefly.
+1. The environment is placed in the **Edit details** page briefly.
 1. The **Environment details** page appears, indicating that the feature has been turned on.
 
 There are two reasons that may require you to use this feature: 
@@ -85,27 +85,27 @@ There are two reasons that may require you to use this feature:
 
 Your company may have disaster recovery drills documented as a requirement in your internal, business continuity plans. There are also industries and companies that may be required by government regulations to perform audits on their BCDR capabilities. In these cases, you may run a disaster recovery drill on an environment. A disaster recovery drill allows you to perform self-service disaster recovery without losing any data. The duration of the failover action may be slightly higher while all remaining data is being replicated to the secondary region.
 
-We recommended that drills are performed on a copy of a production environment, since this incures downtime that can last for minutes. For example, you may want to copy a production environment to a sandbox type environment, and then change the type from sandbox to production.
+We recommended that drills are performed on a copy of a production environment, since this involves downtime that can last for minutes. For example, you may want to copy a production environment to a sandbox type environment, and then change the type from sandbox to production.
 
 ### Emergency response failover
 
-This option is expected to be chosen during an emergency, that is when the primary region has sustained an outage and access to environments or data isn't possible. If you choose this option, the environment fails without copying any additional data, other than the data that has been replicated before the outage occurred. 
+This option is expected to be chosen during an emergency, that is when the primary region has sustained an outage and access to environments or data isn't possible. If you choose this option, the environment fails without copying any more data, other than the data that has been replicated before the outage occurred. 
 
 When you perform an emergency response, you see the amount of data loss represented in time, which you can compare to your Recovery Point Objective (RPO), if you determine that it's acceptable and you choose to continue. The environment operates in the run state until disaster recovery is complete and the environment is back to normal operation from the secondary region.
 
 ### Switching back to primary region
 
-After you have completed your drill or after an outage has been mitigated, we recommended that you switch back the environment to its primary region. An environment maybe operating with limited resources in the paired region. There is no loss of data during this operation.
+After you have completed your drill or after an outage has been mitigated, we recommended that you switch back the environment to its primary region. An environment maybe operating with limited resources in the paired region. There's no loss of data during this operation.
 
 ### Environment disaster recovery status
 
 Admins can determine the current, disaster recovery state and location of an environment in the **Environment details** page. Admins can also select **Disaster Recovery** in the command bar to open the **Disaster Recovery** pane. 
 
-To check data replication latency at any time, you can select **Disaster Recovery** and select **Emergency response** as the disaster recovery reason. This opens a confirmation dialog that includes the last replication time between regions for that environment. You may select **Cancel** if your only purpose was to check the potential loss of data in case of a failover operation. Keep in mind, that last sync time is always different at different times, since data is being replicated continuously. 
+To check data replication latency at any time, you can select **Disaster Recovery** and select **Emergency response** as the disaster recovery reason. This opens a confirmation dialog that includes the last replication time between regions for that environment. You may select **Cancel** if your only purpose was to check the potential loss of data if there was a failover operation. Keep in mind, that last sync time is always different at different times, since data is being replicated continuously. 
 
 ### Documenting your business continuity plan
 
-We recommended that you perform disaster recovery drills or an emergency response, if you choose to, before a real disaster strikes so you can document all steps required for any integration points that are external to Power Platform. In this case, your company is more prepared for recovery in case of a real disaster.
+We recommended that you perform disaster recovery drills or an emergency response, if you choose to, before a real disaster strikes so you can document all steps required for any integration points that are external to Power Platform. In this case, your company is more prepared for recovery if there's a real disaster.
 
 ### Note about preview
 
