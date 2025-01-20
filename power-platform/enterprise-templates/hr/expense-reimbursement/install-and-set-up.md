@@ -9,7 +9,7 @@ contributors:
 ms.author: thoverh
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 07/02/2024
+ms.date: 01/21/2025
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -49,9 +49,7 @@ Make sure that your organization has the necessary licensing to use enterprise t
 
 It's important to have a cohesive environment and data policy and to ensure the required resources are in place.
 
-- **Administrators**
-
-  Make sure that admins with the necessary privileges are available to assign licenses and create environments:
+- **Administrators** - Make sure that admins with the necessary privileges are available to assign licenses and create environments:
 
   - Microsoft Entra ID Global or tenant User Administrator to assign Power Apps or Power BI licenses.
   - Power Platform Administrator to create environments.
@@ -65,9 +63,7 @@ It's important to have a cohesive environment and data policy and to ensure the 
 
   [Learn more about Power Platform environments.](/power-platform/admin/environments-overview)
 
-- **Data loss prevention policies**
-
-  Make sure that the environment has access to the connectors used by the Expense Reimbursement template:
+- **Data loss prevention policies** - Make sure that the environment has access to the connectors used by the Expense Reimbursement template:
 
   - [Microsoft Dataverse connector](/connectors/commondataserviceforapps/)
   - [Office 365 Outlook connector](/connectors/office365/)
@@ -78,7 +74,7 @@ It's important to have a cohesive environment and data policy and to ensure the 
 
 Cloud flows need specific connection references to work correctly. Connection references are included in the solution, but connectors often need to be set up manually. You need to set up three new connections for the Expense Reimbursement app.
 
-It's best to create the connections before you import the solution. If you create the connections during import, you have to jump back and forth between browser windows.
+It's best to create the connections before you import the solution. If you create the connections during import, you have to jump between browser windows.
 
 1. Sign in to [Power Apps.](https://make.preview.powerapps.com/)
 1. Go to **Connections** and select **+ New Connection** to create new connections with each of these connectors:
@@ -127,7 +123,7 @@ You have two options for installing the Expense Reimbursement template:
 
 > [!TIP]
 >
-> Go to the [Templates-for-Power-Platform](https://aka.ms/PowerPlatformTemplateSupport) GitHub project site to log your questions or issues and get support for the Expense Reimbursement template.
+> Go to the [Templates-for-Power-Platform](https://aka.ms/PowerPlatformTemplateSupport) GitHub project site to log your questions or issues and get support for the Expense Reimbursement template. You can also check for updates to the [deployment packages](https://github.com/microsoft/Templates-for-Power-Platform/tree/main/DeploymentPackages) on this site.
 
 ### Install from AppSource
 
@@ -142,9 +138,9 @@ AppSource is a Microsoft digital storefront. Take these steps to go through the 
 1. Select **Install**. Two [solutions](/power-platform/alm/solution-concepts-alm) are installed in your environment:
 
     - **Employee Experience Base**
-    - **Expense Reimbursement**.
+    - **Expense Reimbursement**
 
-    Go to the [Expense Reimbursement overview article](./overview.md) to learn more about the two solutions.
+  Go to the [Expense Reimbursement overview article](./overview.md) to learn more about the two solutions.
 
 > [!IMPORTANT]
 > Two solutions are always installed in your environment:
