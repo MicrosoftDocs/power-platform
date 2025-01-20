@@ -75,7 +75,7 @@ To turn on disaster recovery, complete the following steps.
 1. Select the toggle to change it to **Enabled**.
 1. Select **Save**.
 1. The environmet is placed in the **Edit details** page briefly.
-1. The **Environment details** page appears indicating that the feature has been turned on.
+1. The **Environment details** page appears, indicating that the feature has been turned on.
 
 There are two reasons that may require you to use this feature: 
 - Disaster recovery drill.
