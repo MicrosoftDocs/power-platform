@@ -166,9 +166,9 @@ The following table describes each option, the ALM stage when it's most appropri
     **Drivers**
     :::column-end:::
     :::column:::
-    No longer needed
+    - No longer needed
 
-    Reduce expenses
+    - Reduce expenses
     :::column-end:::
     :::column:::
     Reduce capital expenses
@@ -216,19 +216,35 @@ The following table describes each option, the ALM stage when it's most appropri
     
     :::column-end:::
     :::column:::
-    Power AppsDynamics 365
+    Power Apps
+
+    Dynamics 365
     :::column-end:::
     :::column:::
-    Azure IaaSAzure VMWare
+    Azure IaaS
+
+    Azure VMWare
     :::column-end:::
     :::column:::
-    Power PlatformContainersAzure PaaS
+    Power Platform
+
+    Containers
+
+    Azure PaaS
     :::column-end:::
     :::column:::
-    Power PlatformAzure PaaSServerless microservices
+    Power Platform
+
+    Azure PaaS
+
+    Serverless microservices
     :::column-end:::
     :::column:::
-    Power PlatformAzure PaaSServerless microservices
+    Power Platform
+
+    Azure PaaS
+
+    Serverless microservices
     :::column-end:::
 :::row-end:::
 
