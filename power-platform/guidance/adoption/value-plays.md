@@ -54,6 +54,11 @@ These Value Plays are not intended to be an exhaustive list but rather a startin
 
 Power Platform lets you co-design, test, deploy and iterate faster than any other development method.
 
+| | | |
+|-------|-------|-------|
+| Value A | Value B | Value C |
+| Value D | Value E | Value F |
+
 :::row:::
    :::column span="":::
       **Source of value**
