@@ -12,9 +12,9 @@ ms.date: 02/28/2025
 
 # Develop a vision for adopting Microsoft Power Platform
 
-"Why are we adopting Microsoft Power Platform?" is a common question for both businesses and technical stakeholders. If the answer is, "Our board (or C-level executives) told us to use low code," it might be more difficult for those businesses to achieve their expected outcomes. Similarly, organizations that start their adoption journey with a viewpoint focused on governance and control often take longer to reach success than organizations that start their journey with commitment and a shared purpose for why low code is important to the organization. 
+"Why are we adopting Microsoft Power Platform?" is a common question for both businesses and technical stakeholders. If the answer is, "Our board (or C-level executives) told us to use low code," it might be more difficult for those businesses to achieve their expected outcomes. Similarly, organizations that start their adoption journey with a viewpoint focused on governance and control often take longer to reach success than organizations that start their journey with commitment and a shared purpose for why low code is important to the organization.
 
-Digital transformation is largely nontechnical, focusing on cultural, organizational, and process changes, and this guidance covers those important aspects to ensure a successful transformation. This article helps you craft an initial vision, focus areas, and key success measures for Power Platform adoption in your organization. Understanding the vision and objectives helps you achieve positive business outcomes and alignment with your organizational strategy. 
+Digital transformation is largely nontechnical, focusing on cultural, organizational, and process changes, and this guidance covers those important aspects to ensure a successful transformation. This article helps you craft an initial vision, focus areas, and key success measures for Power Platform adoption in your organization. Understanding the vision and objectives helps you achieve positive business outcomes and alignment with your organizational strategy.
 
 ## A structured approach to creating your Power Platform adoption vision
 
@@ -173,3 +173,10 @@ Engage and enable stakeholders by onboarding key individuals and building a coal
 ## Monitor and refine
 
 Continuously monitor the progress of your Power Platform adoption strategy against the defined success measures. Gather feedback from stakeholders and make necessary adjustments to the strategy to ensure it remains aligned with the organizational direction.
+
+## Next steps
+
+Measuring business value in Power Platform is an important aspect of ensuring success and return on investment. Learn methods and tools to measure business value, how to measure value at scale and how to communicate business value to your stakeholders.
+
+> [!div class="nextstepaction"]
+> [Measure and communicate business value](business-value.md)

@@ -15,10 +15,10 @@
               href: adoption/maturity-model-details.md
         - name: Strategy
           items:
-            - name: Vision, Metrics and Goals
-              href: adoption/vision.md
             - name: Assess Power Platform adoption strategy
               href: adoption/take-assessment.md
+            - name: Establish vision, metrics and goals
+              href: adoption/vision.md
             - name: Common goals
               items: 
                 - name: Overview
@@ -37,9 +37,11 @@
                   href: adoption/common-vision/enhance-opex.md
                 - name: Improve employee experience
                   href: adoption/common-vision/improve-employee-ex.md
-            - name: Business value
+            - name: Measure and communicate business value
               href: adoption/business-value.md
-            - name: Executive sponsorship
+            - name: Utilize business value plays
+              href: adoption/value-plays.md
+            - name: Get executive sponsorship
               href: adoption/executive-sponsorship.md
         - name: Plan
           items:
