@@ -99,7 +99,7 @@ After you have completed your drill or after an outage has been mitigated, we re
 
 ### Environment disaster recovery status
 
-Admins can determine the current, disaster recovery state and location of an environment in the **Environment details** page. Admins can also select **Disaster Recovery** in the command bar to open the **Disaster Recovery** pane. 
+Admins can determine the current disaster recovery state and location of an environment in the **Environment details** page. Admins can also select **Disaster Recovery** in the command bar to open the **Disaster Recovery** pane. 
 
 To check data replication latency at any time, you can select **Disaster Recovery** and select **Emergency response** as the disaster recovery reason. This opens a confirmation dialog that includes the last replication time between regions for that environment. You may select **Cancel** if your only purpose was to check the potential loss of data if there was a failover operation. Keep in mind, that last sync time is always different at different times, since data is being replicated continuously. 
 
