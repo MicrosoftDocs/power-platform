@@ -2,7 +2,7 @@
 title: Business continuity and disaster recovery for Dynamics 365 SaaS apps
 description: Microsoft provides business continuity and disaster recovery for production environments of Dynamics 365 SaaS applications if there's an Azure region-wide outage. 
 author: ImadYanni 
-ms.date: 01/20/2025
+ms.date: 01/21/2025
 ms.reviewer: sericks
 ms.topic: conceptual
 ms.subservice: admin
@@ -75,7 +75,7 @@ To turn on disaster recovery, complete the following steps.
 1. Select the toggle to change it to **Enabled**.
 1. Select **Save**.
 1. The environment is placed in the **Edit details** page briefly.
-1. The **Environment details** page appears, indicating that the feature has been turned on.
+1. The **Environment details** page appears, indicating that the process of turning on the feature has started.
 
 There are two reasons that may require you to use this feature: 
 - Disaster recovery drill.
