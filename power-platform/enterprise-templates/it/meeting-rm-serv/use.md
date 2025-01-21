@@ -1,16 +1,17 @@
 ---
 title: Use the Meeting Room Services app
-description: Learn how to use the Meeting Room Services app to streamline and automate the meeting room services process.
+description: Learn how to use the Meeting Room Services app to streamline and automate the meeting room services request process.
 author: ananthar-msft
 ms.author: ananthar
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 10/10/2024
+ms.date: 01/21/2025
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
 #customer intent: As a user of the Meeting Room Services app, I want to create and manage meeting room service requests so that my meetings have the necessary resources to run well.
 ---
+
 # Get started using the Meeting Room Services app
 
 As a user of the Meeting Room Services app, you can:
