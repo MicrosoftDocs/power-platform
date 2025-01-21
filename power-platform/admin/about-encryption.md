@@ -12,7 +12,7 @@ ms.custom: "admin-security"
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 07/17/2023
+ms.date: 01/21/2025
 search.audienceType: 
   - admin
 ---
@@ -32,7 +32,7 @@ Dynamics 365 uses heterogeneous storage (Dataverse) to store the data. The data 
 - Azure Cosmos DB for audit data
 - Azure Data Lake for analytics
 
-By default, Microsoft stores and manages the database encryption key for your environments using a Microsoft-managed key. However, Power Platform provides a [customer-managed encryption key (CMK)](https://learn.microsoft.com/power-platform/admin/customer-managed-key) for added data protection control, where you can self-manage the database encryption key. The encryption key resides in your own Azure key vault, which allows you to rotate or swap the encryption key on demand. It also allows you to prevent Microsoft's access to your customer data when you revoke the key access to our services at any time.
+By default, Microsoft stores and manages the database encryption key for your environments using a Microsoft-managed key. However, Power Platform provides a [customer-managed encryption key (CMK)](customer-managed-key.md) for added data protection control, where you can self-manage the database encryption key. The encryption key resides in your own Azure key vault, which allows you to rotate or swap the encryption key on demand. It also allows you to prevent Microsoft's access to your customer data when you revoke the key access to our services at any time.
 
 :::image type="content" source="media/encryption-data-at-rest.png" alt-text="Encryption of data at rest":::
 
@@ -40,13 +40,13 @@ Administrators can provide their own encryption key using their own key generato
 
 - 2048-bit or 4096-bit RSA key 
 - [HSM BYOK](/azure/key-vault/keys/hsm-protected-keys)
-- Azure Key vault [Managed HSM](https://learn.microsoft.com/azure/key-vault/managed-hsm/quick-create-cli#create-a-managed-hsm)
+- Azure Key vault [Managed HSM](/azure/key-vault/managed-hsm/quick-create-cli#create-a-managed-hsm)
 
 Administrators also can revert the encryption key back to a Microsoft managed key at any time.
 
 ## In-transit data protection
 
-Azure protects data in transit to or from outside components, as well as data in transit internally, such as between two virtual networks. Azure uses industry standard transport protocols such as [TLS](https://learn.microsoft.com/power-platform/admin/server-cipher-tls-requirements) between user devices and Microsoft data centers, and within data centers themselves. To protect your data even more, internal communication between Microsoft services is using Microsoft backbone network and therefore is not exposed to the public internet.
+Azure protects data in transit to or from outside components, as well as data in transit internally, such as between two virtual networks. Azure uses industry standard transport protocols such as [TLS](server-cipher-tls-requirements.md) between user devices and Microsoft data centers, and within data centers themselves. To protect your data even more, internal communication between Microsoft services is using Microsoft backbone network and therefore is not exposed to the public internet.
 
 Microsoft uses multiple encryption methods, protocols, and algorithms across its products and services to help provide a secure path for data to travel through the infrastructure, and to help protect the confidentiality of data that is stored within the infrastructure. Microsoft uses some of the strongest, most secure encryption protocols in the industry to provide a barrier against unauthorized access to your data. Proper key management is an essential element in encryption best practices, and Microsoft helps ensure that encryption keys are properly secured.
 
