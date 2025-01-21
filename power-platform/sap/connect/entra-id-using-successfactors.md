@@ -17,10 +17,9 @@ contributors:
   - MartinPankraz
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 12/09/2024
-ms.custom: bap-template
+ms.date: 12/02/2024
 ms.service: power-platform
-ms.subservice: solution-templates
+ms.subservice: sap
 # Customer intent: As an administrator, I want to learn how to set up Microsoft Entra ID using SuccessFactors, so that users can use single sign-on (SSO).
 ---
 

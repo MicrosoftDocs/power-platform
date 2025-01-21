@@ -12,9 +12,10 @@ contributors:
   - ryanb58
   - scottwoodallmsft
   - Wrighttyler
+  - shanep
 ms.reviewer: ellenwehrle
 ms.topic: overview
-ms.date: 12/02/2024
+ms.date: 1/8/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -76,8 +77,8 @@ You can access the SAP Procurement template in two ways:
 - [Microsoft AppSource](<https://aka.ms/AccessSAPProcurementTemplate>)
 - [Template for Power Platform on GitHub](<https://aka.ms/TemplatesforPowerPlatform>)
 
- > [!IMPORTANT]
->Before accessing and installing the SAP Procurement template solution files, you must [integrate SAP with Power Platform](administer/get-started.md#integrate-sap-with-power-platform).
+> [!IMPORTANT]
+> Before accessing and installing the SAP Procurement template solution files, you must [integrate SAP with Power Platform](administer/get-started.md#integrate-sap-with-power-platform).
 
 ## Get started with SAP Setup Assistant
 
