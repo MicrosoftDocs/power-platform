@@ -109,6 +109,6 @@ We recommended that you perform disaster recovery drills or an emergency respons
 
 ### Note about preview
 
-During the preview, there isn't a charge for this feature, and it can't be turned off by the customer. When the feature reaches general availability, preview customers have the opportunity to keep the functionality or allow it to be turned off by Microsoft. There will be no impact on your primary environment location or capabilities, if you choose not to upgrade during general availability.
+During the preview, there is no charge for this feature, and it can't be turned off by the customer. When the feature reaches general availability, preview customers have the opportunity to keep the functionality or allow it to be turned off by Microsoft. There will be no impact on your primary environment location or capabilities, if you choose not to upgrade during general availability.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
