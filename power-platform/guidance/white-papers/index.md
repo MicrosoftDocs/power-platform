@@ -20,6 +20,6 @@ White papers provide in-depth information, solutions, and recommendations to hel
 | [Activating Managed Environments](managed-environment-activation.md) |This white paper explores the features of Managed Environments in Power Platform. | September 2023 |
 | [Migrating apps and flows from the default environment](migrating-from-default-environment.md) |This technical white paper outlines considerations and best practices for migrating apps and flows from the default environment. | August 2023 |
 
-### See also
+## See also
 
 [Power Pages white papers](/power-pages/guidance/white-papers)
