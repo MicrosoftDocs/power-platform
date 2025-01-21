@@ -234,5 +234,8 @@ Use Azure API Management policies to convert a Microsoft Entra ID issued token t
 - [SAP OData connector now supports OAuth2 and SAP Principal Propagation](https://community.powerplatform.com/blogs/post/?postid=c6a609ab-3556-ef11-a317-6045bda95bf0) | Power Automate community blog
 - [Azure API Management policy for SAP SuccessFactors](https://github.com/Azure/api-management-policy-snippets/blob/master/examples/Request%20OAuth2%20access%20token%20from%20SuccessFactors%20using%20AAD%20JWT%20token.xml) | GitHub
 - [SAP OData connector for SAP SuccessFactors](https://community.sap.com/t5/technology-blogs-by-members/perform-sap-principal-propagation-with-microsoft-entra-id-for-sap/ba-p/13860532) | SAP community blog
+
+You need an SAP account to access related content in SAP Business Accelerator Hub:
+
 - [SAP Integration Suite policy for SAP SuccessFactors](https://api.sap.com/policytemplate/SuccessFactors_Principal_Propagation_via_Entra_Id) | SAP Business Accelerator Hub
 - [SAP Integration Suite policy for SAP NetWeaver](https://api.sap.com/policytemplate/Principal_Propagation_via_Entra_Id) | SAP Business Accelerator Hub
