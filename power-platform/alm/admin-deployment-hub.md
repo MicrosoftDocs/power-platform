@@ -11,7 +11,7 @@ ms.date: 1/14/2025
 ---
 # Admin deployment page (preview)
 
-[!INCLUDE [production-ready-preview-powerplatform](~/../shared-content/shared/preview-includes/production-ready-preview-powerplatform.md)]
+[This article is pre-release documentation and is subject to change.]
 
 The **Deployment** page in the Power Platform admin center provides a streamlined experience to help administrators navigate the complexities of managing Power Platform application lifecycle management (ALM) workloads, including managing pipelines deployments at enterprise scale. Admins have visibility to all the deployments in their tenant and can approve deployment requests and troubleshoot issues.
 
@@ -19,8 +19,7 @@ The **Deployment** page in the Power Platform admin center provides a streamline
 
 > [!IMPORTANT]
 >
-> - This is a preview feature.
-> - [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
+> - [!INCLUDE [production-ready-preview-powerplatform](~/../shared-content/shared/preview-includes/production-ready-preview-powerplatform.md)]
 > - Currently the deployment page doesn't have all the capabilities available within the [Deployment Pipelines Configuration app](custom-host-pipelines.md).
 
 ## Use the deployment page
