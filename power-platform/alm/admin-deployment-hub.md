@@ -17,10 +17,10 @@ The **Deployment** page in the Power Platform admin center provides a streamline
 
 :::image type="content" source="media/deployment-page-ppac.png" alt-text="Deployment page in the Power Platform admin center" lightbox="media/deployment-page-ppac.png":::
 
-> [!IMPORTANT]
->
-> - [!INCLUDE [production-ready-preview-powerplatform](~/../shared-content/shared/preview-includes/production-ready-preview-powerplatform.md)]
-> - Currently the deployment page doesn't have all the capabilities available within the [Deployment Pipelines Configuration app](custom-host-pipelines.md).
+[!INCLUDE [production-ready-preview-powerplatform](~/../shared-content/shared/preview-includes/production-ready-preview-powerplatform.md)]
+
+> [!NOTE]
+> Currently the deployment page doesn't have all the capabilities available within the [Deployment Pipelines Configuration app](custom-host-pipelines.md).
 
 ## Use the deployment page
 
