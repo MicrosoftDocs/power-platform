@@ -46,7 +46,7 @@ If you want to create a security role that is similar to another security role, 
 
 Users with a copied system customizer security role can view, create, or edit metadata or data for a table *when granted by a user with system administrator privileges for that specific table*. More information: [Edit a security role](create-edit-security-role.md#edit-a-security-role)
 
-Some features in Power Apps (make.powerapps.com), like [data workspace](power-pages/getting-started/use-data-workspace) and [start with Copilot](/power-apps/maker/data-platform/create-edit-entities-portal?tabs=excel#start-with-copilot), require a specific out-of-box role due to their dependency on data access.
+Some features in Power Apps (make.powerapps.com), like [data workspace](/power-pages/getting-started/use-data-workspace) and [start with Copilot](/power-apps/maker/data-platform/create-edit-entities-portal?tabs=excel#start-with-copilot), require a specific out-of-box role due to their dependency on data access.
 
 ### See also
 
