@@ -12,6 +12,7 @@ search.audienceType:
   - admin
 ms.contributors:
  - heortaol
+ - nyarbrough
 ---
 
 # Power Apps US Government
