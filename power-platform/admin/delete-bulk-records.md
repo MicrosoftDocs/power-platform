@@ -47,19 +47,23 @@ Make sure you have the System Administrator permission to update the setting.
   
 For information about how to implement bulk delete in code, see [Delete data in bulk](/powerapps/developer/common-data-service/delete-data-bulk). 
 
-To restore data after a bulk deletion, see [Restore backup environments](backup-restore-environments.md).
-
 ## Restore the deleted records in Power Apps
-   Acting on the deleted records in the Power Apps user experience is only available for System Administrators in the preview phase.
 
-### Power Platform admin center
+   Restoring the deleted records in the Power Apps user experience is only available for System Administrators.
+
+   To restore deleted records using recycle bin, [turn on recycle bin](/restore-deleted-table-records).
+   
+   If Recycle bin is not available, see [Restore backup environments](backup-restore-environments.md).
+
+### Restore all records deleted by a bulk delete job.
+
 To restore deleted records from the admin center:
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a user with the system administrator security role.
 1. Select **Environments** and open the environment you want to view and restore deleted records.
 1. Go to **Settings** > **Data management** > **Bulk Record Deletion**.
-1. You can view all the deleted records from all tables.
-1. Select one or more records you wish to restore, and then select **Restore** on the command bar.
+1. You can view all the bulk record deletion jobs.
+1. Select one or more bulk delete jobs you wish to restore, and then select **Restore** on the command bar.
 1. Select **OK** to confirm the action to restore.
    
 ![image](https://github.com/user-attachments/assets/f4209ad0-532f-421d-bf64-c2100882b83c)
@@ -69,8 +73,8 @@ To restore deleted record from admin center
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a user with the system administrator security role.
 2. Select **Environments** and open the environment you want to view and restore deleted records.
 3. Go to **Settings** > **Data management** > **Bulk Record Deletion**.
-4. You can view all the deleted records from all tables.
-5. Click on the record you wish to restore from the deleted records.
+4. You can view all the bulk record deletion jobs.
+5. Click on the bulk deletion job you wish to restore the record from.
 6. The record view form will open. At the end of the form, you will find a link. Click on **Restore individual records using System Job.**
 7. The above link will navigate you to the deleted records tab of the job. Select one or more records you wish to restore, and then select **Restore** on the command bar.
 8. Select **OK** to confirm the action to restore.
