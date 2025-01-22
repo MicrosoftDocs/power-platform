@@ -4,7 +4,7 @@ description: Explore the benefits, strategies, and best practices of modernizing
 author: robstand
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 01/31/2025
+ms.date: 01/22/2025
 ms.author: rstand
 ms.reviewer: jhaskett-msft
 ms.custom: bap-template
@@ -38,7 +38,7 @@ Each product in the Power Platform family has a unique focus area. Organizations
 
 The following table offers a high-level overview of each Power Platform product.
 
-| **Product** | **Description** |
+| Product | Description |
 |---|---|
 | **Power Apps** | Create custom applications in an intuitive, drag-and-drop canvas. With more than a thousand connectors, internal and external data sources and services are just a few clicks away. Your apps can run in a browser, on the desktop, or on mobile devices. |
 | **Power Automate** | Build workflows to automate even complex processes. Incorporate internal and external data sources and services using built-in and custom connectors. Use digital process automation (DPA) when applications have an application programming interface (API). Use robotic process automation (RPA) to automate repetitive tasks performed in a browser or desktop app. Trigger workflows to run when events occur in other systems and services or schedule them to run at a specific time. |
@@ -48,7 +48,7 @@ The following table offers a high-level overview of each Power Platform product.
 
 The Power Platform product family relies on a few supporting capabilities and concepts. The following table describes the most important ones to understand.
 
-| **Concept** | **Description** |
+| Concept | Description |
 |---|---|
 | **Power Fx** | Power Fx is an [open-sourced](https://github.com/microsoft/Power-Fx) low-code language inspired by Excel formulas. Strongly typed, declarative, and functional, with imperative logic and state management, all expressed in human-friendly text, Power Fx makes common programming tasks easy for citizen developers and pro developers alike. It supports the full spectrum of development, from no-code for those who have never programmed before to "pro-code" for the seasoned professional, empowering diverse teams to collaborate and save time and expense. |
 | **Connectors**  | Connectors are vital for allowing low-code and traditional coding to work together to deliver modern apps. Connectors are a wrapper around an API that allows Power Apps and Power Automate to use internal and external data sources and services. More than a thousand prebuilt connectors are available, and you can create your own for any RESTful API. The connector definition includes the necessary metadata to make the API easy for low-code apps to consume. |
@@ -250,7 +250,7 @@ The following table describes each option, the ALM stage when it's most appropri
 
 The following table suggests ways that a low-code approach can apply to each of the app modernization options.
 
-| **Option** | **Description** |
+| Option | Description |
 |---|---|
 | **Rehost** | Rehosting moves an app as-is from an older environment to a newer one. A low-code approach doesn't apply directly, but rehosting can be the first step before applying other strategies that would include low-code solutions. |
 | **Refactor or rearchitect** | Refactoring tweaks the code so that apps can get the most benefit from a cloud-first environment. Rearchitecting significantly modifies the code. It could include encapsulating existing logic by moving it to an API that can be exposed to low-code solutions through a connector. |
@@ -284,7 +284,7 @@ As important as identifying low-code opportunities is recognizing when a low-cod
 
 #### Front-end scenarios that don't fit a low-code approach
 
-| **Scenario** | **Challenge** |
+| Scenario | Challenge |
 |---|---|
 | **User device isn't compatible** | Power Platform recognizes mobile devices and specialized devices like barcode scanners. Devices that depend on specific APIs or drivers might not be supported and would require a more traditional approach. |
 | **Heavy volume of client-side data** | The user experience in some applications requires large quantities of data, a challenge for any technology, not just low-code. Downloading and processing that much data can stress back-end systems and degrade the performance of both the app and the device it runs on. Users aren't as productive when they're forced to navigate a sea of data. Before turning to traditional coding methods to handle the load, explore whether proper filtering and navigation can provide a better user experience. |
@@ -292,7 +292,7 @@ As important as identifying low-code opportunities is recognizing when a low-cod
 
 #### Back-end scenarios that don't fit a low-code approach
 
-| **Scenario** | **Challenge** |
+| Scenario | Challenge |
 |---|---|
 | **High-velocity data** | Importing millions of rows of data as part of migrations and similar events is commonly supported. However, workloads that involve processing millions of rows of data hourly or daily should be subject to more evaluation. For example, collecting high volumes of Internet of Things (IoT) telemetry into Dataverse wouldn't make sense. Instead, Azure cloud services could be used to collect and analyze the data and relevant signals added to Dataverse to trigger actions in the application. Applications that involve a high volume of updates to Dataverse data regularly might require the assistance of traditional code to scale the updates. |
 | **Background workloads with complex logic** | Background workloads that involve complex logic or a high volume of API calls might not be right for a low-code solution. Instead, the logic can be centralized in an API that a low-code solution can call. |
@@ -405,7 +405,7 @@ Extensibility is a key feature that differentiates Microsoft Power Platform from
 
 The following table provides a high-level overview of some of the common extensibility options. We refer to some of them again later, when we discuss how to approach modernization and patterns that you can apply.
 
-| **Option** | **Description** |
+| Option | Description |
 |---|---|
 | **APIs and custom connectors** | Custom connectors for your REST APIs centralize app logic and allow it to be exposed to low-code components in a secure and governed way. You can use this approach in an API-first strategy for application modernization. The custom connector uses an OpenAPI document to define how a low-code component can interact with the REST API. For example, you could create an API using Azure Functions and publish it to Azure API Management. Azure API Management can export an OpenAPI definition to automatically create the custom connector for use in a low-code solution. This approach decouples client applications from the APIs, allowing them to evolve independently. The APIs are centrally managed, adding a layer of security by not exposing the API directly and using authentication techniques like subscription keys, tokens, client certificates, and custom headers. |
 | **Power Apps Component framework** | The Power Apps Component framework is an extensibility framework for creating custom visuals for Power Apps and Power Pages. The code components are created using HTML, JavaScript, or TypeScript. Think of code components as UI building blocks that can be reused to build one or more apps. The components include a manifest that defines how a low-code component can interact with the code component. The component interface allows the hosting runtime engine to communicate the hosting container's lifecycle events. This allows the code component to render its visuals using context information provided by the hosting container. For ideas, browse the community gallery at <https://pcf.gallery>. |
@@ -426,7 +426,7 @@ Workloads should be designed so that users can complete much of their work witho
 
 The following table describes the two types of apps you can build with Power Apps, canvas apps and model-driven apps.
 
-| **Type of app** | **Description** |
+| Type of ap | Description |
 |---|---|
 | **Canvas apps** | Canvas apps are highly customizable. They consist of one or more screens that users interact with. You control the layout of each screen and the navigation across screens. Canvas apps work with data using connectors. A single app can work with multiple connectors, making it good for integrating across multiple data sources as a composite app. |
 | **Model-driven apps** | Model-driven apps use Dataverse as the primary data source. They consist of one or more pages, which can be Dataverse tables or custom pages. A Dataverse table page can be drilled down to a detail page for viewing and editing. Custom pages can incorporate a canvas app screen and data from connectors. Model-driven apps have a customizable built-in navigation structure. It's consistent across all model-driven apps, which helps with user adoption. |
@@ -461,7 +461,7 @@ You have the following options for the data architecture of the modernized appli
 
 - **Leave the data in place:** Use connectors or APIs with custom connectors to access the data where it resides. When the data is on-premises, the data gateway can facilitate secure connectivity. Use virtual tables to integrate compatible external data as a Dataverse table.
 
-- **Migrate to Dataverse:** Dataverse is a good option for transactional data and for consolidating multiple sources into a single system of record. Data can be mapped and migrated from many sources using Power Query and automated flows. Dataverse also supports elastic tables, currently in preview, designed for ingesting high-volume data that's stored in unstructured or semi-structured formats.
+- **Migrate to Dataverse:** Dataverse is a good option for transactional data and for consolidating multiple sources into a single system of record. Data can be mapped and migrated from many sources using Power Query and automated flows. Dataverse also supports elastic tables, designed for ingesting high-volume data that's stored in unstructured or semi-structured formats.
 
 - **Migrate to data lake:** For historical, analytical, or telemetry data, use a data lake. The data in the lake can be used to generate Power BI analytics or processed to generate AI-powered insights.
 
