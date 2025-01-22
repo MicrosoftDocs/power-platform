@@ -87,6 +87,10 @@ When message shown is AADSTS530003, the access is related to a device. First use
    1. Select the link under **Filter for devices**.
    1. Review the filtered devices.
 
+### SharePoint Document Grid warning AADSTS500011
+
+When message shown is AADSTS530003, the integration to the on premise SharePoint is not configured correctly. The configuration steps in [Configure server-based authentication with SharePoint on-premises](https://learn.microsoft.com/en-us/power-platform/admin/configure-server-based-authentication-sharepoint-on-premises) need to be reviewed carefully to maintain access. 
+
 ## Authentication isn't enabled correctly
 
 When the Document Associated grid shows a warning message "Authentication isn't enabled correctly", contact support to confirm that authentication is turned on for the environment.
