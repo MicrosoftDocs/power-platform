@@ -89,7 +89,7 @@ When message shown is AADSTS530003, the access is related to a device. First use
 
 ### SharePoint Document Grid warning AADSTS500011
 
-When message shown is AADSTS500011, the integration to the on premise SharePoint is not configured correctly. The configuration steps in [Configure server-based authentication with SharePoint on-premises](configure-server-based-authentication-sharepoint-on-premises.md) need to be reviewed carefully to maintain access. 
+When message shown is AADSTS500011, the integration to the SharePoint on-premise is not configured correctly. The configuration steps in [Configure server-based authentication with SharePoint on-premises](configure-server-based-authentication-sharepoint-on-premises.md) need to be reviewed carefully to maintain access. 
 
 > [!NOTE] First check configurations steps for [SharePoint Server SPN in Microsoft Entra Domain Services](configure-server-based-authentication-sharepoint-on-premises.md#update-the-sharepoint-server-spn-in-microsoft-entra-domain-services) steps 3, 4, and 5.
 
