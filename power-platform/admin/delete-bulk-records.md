@@ -45,7 +45,9 @@ Make sure you have the System Administrator permission to update the setting.
   
 2. Select **New** to run the **Bulk Deletion Wizard** to create a bulk deletion job with the records you want to delete.  
   
-For information about how to implement bulk delete in code, see [Delete data in bulk](/powerapps/developer/common-data-service/delete-data-bulk). 
+For information about how to implement bulk delete in code, see [Delete data in bulk](/powerapps/developer/common-data-service/delete-data-bulk).
+
+To restore data after a bulk deletion, see [Restore backup environments](backup-restore-environments.md).
 
 ## Restore bulk delete records
   To restore bulk deleted records, turn on the recycle bin in your environment.
