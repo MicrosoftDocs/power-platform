@@ -26,7 +26,7 @@ Be aware of the following notes before you get started with a tenant-to-tenant m
 -	**Not supported environment types:** Default, developer, trial, and teams environment types and Government Community Cloud (GCC) to public clouds or vice versa.
 -	A Dataverse organization linked to a finance and operations organization cannot be migrated to a different tenant.
 -	You might need to reconfigure some applications and settings after tenant-to-tenant migration, such as Microsoft Dynamics 365 for Outlook, server-side sync, SharePoint or others.
--	Components not fully supported include canvas apps, custom pages, Power Automate, Power Apps, Microsoft Copilot Studio, Dynamics 365 Customer voice, Omnichannel for Customer Service, component library.
+-	Components not fully supported include canvas apps, custom pages, Power Automate, Power Apps, Microsoft Copilot Studio, Dynamics 365 Customer voice, Omnichannel for Customer Service, component library, Customer Insights.
 -	**There are additional steps required for Power Apps, Power Automate, Pages & Copilot studio** called out later in Premigration and post migrations steps.
 -	Once users are created and configured, you must [create a mapping file](#create-user-mapping-file), which is described later in this article.
 -	If the mapped user has a mailbox in the destination tenant, then the mailbox is automatically configured during the migration. For all other users, you need to reconfigure the mailbox.
@@ -40,7 +40,7 @@ Be sure that you complete the following prerequisites before you start the migra
 -	Create users in the target tenant. You must:
   -	Create users in Microsoft 365 and Microsoft Entra ID.
   -	Assign licenses.
-- you must have Power platform admin or dynamics admin privileges to perform migration.
+- you must have Power platform admin or dynamics 365 admin privileges to perform migration.
 -	The PowerShell for Power Platform Administrators module is the recommended PowerShell module for interacting with admin capabilities. Learn more at [Get started with PowerShell for Power Platform Administrators](powershell-getting-started.md).
 
 ## Preparation process
@@ -139,7 +139,7 @@ For administrative access users:
   Save the CSV file that has both full access users and administrative access users mapped.
 
 ## Migration
-Before processing with migration make sure you have reviewed and completed the preparetion process. Now you can process to complete the following sections to migrate.
+Before proceeding with migration make sure you have reviewed and completed the preparetion process. Now you can proceed to complete the following sections to migrate.
 
 ### Install PowerShell for Power Platform administrators (Both Source and Target Admins) 
 The PowerShell for Power Platform Administrators module is the recommended PowerShell module for interacting with admin capabilities. For information that helps you get started with the PowerShell for Power Platform Administrators module, go to [Get started with PowerShell for Power Platform Administrators](powershell-getting-started.md) and [Installing PowerShell for Power Platform Administrators](powershell-installation.md).
@@ -176,16 +176,23 @@ You must have Power Platform administrator or Dynamics 365 administrator credent
 ```PowerShell
 TenantToTenant-SubmitMigrationRequest –EnvironmentName {EnvironmentId} -TargetTenantID {TenantID}
 ```
+You can view the status and RequestID using the below command.
+
+```PowerShell
+TenantToTenant-ViewMigrationRequest
+```
+> [!Note]
+> Please note down the MigrationId for the which will be used in the further migration commands.
+
 ### View and approve migration request (Target Admin)
 The admin of the destination tenant should run the following command to see all the migration requests and status. The admin can review all the migration requests and options to approve or reject. 
 
 ```PowerShell
 Add-PowerAppsAccount -Endpoint prod
 
-TenantToTenant-ViewMigrationRequest - TenantID{Target admin should provide targetTenantID (self) to view list of requests pending for approval}
+TenantToTenant-ViewApprovalRequest
 
 TenantToTenant-ManageMigrationRequest -RequestId {RequestID from above command to approve or deny}
-Enter approval status for RequestId {RequestId} (0 for Reject, 1 for Approve)
 ```
 Once a request is approved, the admin of the destination tenant can notify the admin of the source tenant to proceed with the next step of the migration.
 
@@ -237,7 +244,7 @@ The following step involves conducting comprehensive validations to ensure that 
 
 ```PowerShell
 TenantToTenant-PrepareMigration 
--EnvironmentName {EnvironmentId} 
+-MigrationId {MigrationId} 
 -TargetTenantId {TargetTenantId} 
 -ReadOnlyUserMappingFileContainerUri {SasUri}
 ```
@@ -256,7 +263,7 @@ This step's duration varies depending on the number of users in the user mapping
 
 ### Check status
 ```PowerShell
-TenantToTenant-GetStatus -EnvironmentName {EnvironmentId}
+TenantToTenant-GetMigrationStatus -MigrationId {MigrationId}
 ```
 #### Sample output
 •	Validate Tenant To Tenant Migration: Running 
@@ -301,13 +308,13 @@ After successfully completing Prepare the environment migration setps now you ma
 
 ```PowerShell
 TenantToTenant-MigratePowerAppEnvironment
--EnvironmentName {EnvironmentId}
+-MigrationId {MigrationId}
 -TargetTenantId {TargetTenantId}
 ```
 ### Get status 
 
 ```PowerShell
-TenantToTenant-GetStatus -EnvironmentName {EnvironmentId}
+TenantToTenant-GetMigrationStatus -EnvironmentName {EnvironmentId}
 ```
 
 #### Sample output
