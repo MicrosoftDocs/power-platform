@@ -182,17 +182,6 @@ additionalContent:
             - text: More...
               url: /power-automate/guidance
         # Card
-        - title: Power BI guidance
-          links:
-            - text: Migrate to Power BI
-              url: /power-bi/guidance/powerbi-migration-overview
-            - text: Power BI adoption roadmap
-              url: /power-bi/guidance/powerbi-adoption-roadmap-overview
-            - text: Power BI implementation planning
-              url: /power-bi/guidance/powerbi-implementation-planning-introduction
-            - text: More...
-              url: /power-bi/guidance
-        # Card
         - title: Power Pages guidance
           links:
             - text: Architecture white paper
