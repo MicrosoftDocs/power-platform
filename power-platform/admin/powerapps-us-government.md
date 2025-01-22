@@ -153,6 +153,7 @@ For those customers that implement network restrictions, ensure access to the fo
 *.azure-apihub.us  
 *.azure.net  
 *.azure.us  
+*.azurefd.net
 *.azureedge.net  
 *.azureedge.us  
 *.usgovcloudapi.net  
@@ -176,6 +177,7 @@ Also, refer to the [Required IP Ranges](https://www.microsoft.com/download/confi
 *.azure.us  
 *.azureedge.net  
 *.azureedge.us  
+*.azurefd.net
 *.usgovcloudapi.net  
 *.microsoftonline.us  
 *.microsoftdynamics.us (GCC High)  
@@ -203,7 +205,7 @@ Azure is distributed among multiple clouds. By default, tenants are allowed to o
 -	US DoD East
 -	US DoD Central
 
-Refer to the Azure IP Ranges and [Service Tags – US Government Cloud document](https://www.microsoft.com/download/confirmation.aspx?id=57063), focusing attention on AzureCloud.usgovtexas, AzureCloud.usgovvirginia, and/or US DoD East, and US DoD Central as noted above. Also note that these are the IP ranges required in order for your end users to have access to the service URLs.
+Refer to the Azure IP Ranges and [Service Tags – US Government Cloud document](https://www.microsoft.com/en-us/download/details.aspx?id=57063), focusing attention on AzureCloud.usgovtexas, AzureCloud.usgovvirginia, and/or US DoD East, and US DoD Central as noted above. Also note that these are the IP ranges required in order for your end users to have access to the service URLs.
 
 ## Configure mobile clients
 
