@@ -157,9 +157,9 @@ For those customers that implement network restrictions, ensure access to the fo
 *.azure.net  
 *.azure.us  
 *.azureedge.net  
-*.azureedge.us
-*.azurefd.net
-*.usgovcloudapi.net  
+*.azureedge.us  
+*.azurefd.net 
+*.usgovcloudapi.net   
 *.microsoftonline.com  
 *.microsoft.com  
 *.windows.net  
@@ -179,8 +179,8 @@ Also, refer to the [Required IP Ranges](https://www.microsoft.com/download/detai
 *.azure.net  
 *.azure.us  
 *.azureedge.net  
-*.azureedge.us
-*.azurefd.net
+*.azureedge.us  
+*.azurefd.net 
 *.usgovcloudapi.net  
 *.microsoftonline.us  
 *.microsoftdynamics.us (GCC High)  
