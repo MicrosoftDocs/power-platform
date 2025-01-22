@@ -66,7 +66,7 @@ To restore deleted records from the admin center:
 1. Select one or more bulk delete jobs you wish to restore, and then select **Restore** on the command bar.
 1. Select **OK** to confirm the action to restore.
    
-![image](https://github.com/user-attachments/assets/f4209ad0-532f-421d-bf64-c2100882b83c)
+:::image type="content" source="media/restorerecords.png" alt-text="Screenshot of the Disable Recycle Bin option for a table.":::
 
 ## Restore individual record
 To restore deleted record from admin center
@@ -79,7 +79,7 @@ To restore deleted record from admin center
 7. The above link will navigate you to the deleted records tab of the job. Select one or more records you wish to restore, and then select **Restore** on the command bar.
 8. Select **OK** to confirm the action to restore.
 
-![image](https://github.com/user-attachments/assets/37ba5585-ec14-4622-838f-5a5e058e4f2c)
+:::image type="content" source="media/restoreindividual.png" alt-text="Screenshot of the Disable Recycle Bin option for a table.":::
 
 ### See also  
  [Manage your data](add-remove-sample-data.md)   
