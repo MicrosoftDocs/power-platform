@@ -1,13 +1,12 @@
 ---
-title: "Delete bulk records  | MicrosoftDocs"
-description: Delete bulk records 
-author: sericks007
-
+title: Delete bulk records 
+description: Delete bulk records.
+author: bhgoswam 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/05/2024
+ms.date: 01/22/2025
 ms.subservice: admin
-ms.author: sericks
+ms.author: bhgoswam
 search.audienceType: 
   - admin
 ---
