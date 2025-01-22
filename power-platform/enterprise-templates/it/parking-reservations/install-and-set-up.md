@@ -1,11 +1,11 @@
 ---
 title: Install and set up the Parking Reservation template for Power Platform
 description: Learn how to install, set up, and deploy the Parking Reservation template for Microsoft Power Platform.
-author: anthar-msft
-ms.author: anthar
+author: ananthar-msft
+ms.author: ananthar
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 01/14/2025
+ms.date: 01/21/2025
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
