@@ -4,12 +4,14 @@ description: Provides information about Power Apps US Government service descrip
 author: carrema
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/25/2023
+ms.date: 01/22/2025
 ms.subservice: admin
 ms.author: macarrer
 ms.reviewer: sericks
 search.audienceType: 
   - admin
+ms.contributors:
+ - heortaol
 ---
 
 # Power Apps US Government
@@ -154,7 +156,8 @@ For those customers that implement network restrictions, ensure access to the fo
 *.azure.net  
 *.azure.us  
 *.azureedge.net  
-*.azureedge.us  
+*.azureedge.us
+*.azurefd.net
 *.usgovcloudapi.net  
 *.microsoftonline.com  
 *.microsoft.com  
@@ -162,7 +165,7 @@ For those customers that implement network restrictions, ensure access to the fo
 *.crm9.dynamics.com  
 *.dynamics365portals.us
 
-Also, refer to the [Required IP Ranges](https://www.microsoft.com/download/confirmation.aspx?id=57063) to enable access to environments that users and administrators may create within your tenants well as other Azure services leveraged by the platform:
+Also, refer to the [Required IP Ranges](https://www.microsoft.com/download/details.aspx?id=57063) to enable access to environments that users and administrators may create within your tenants well as other Azure services leveraged by the platform:
 
 - GCC and GCC High: (Focus on AzureCloud.usgovtexas and AzureCloud.usgovvirginia)
 - DoD:  Focus on USDoD East and USDoD Central 
@@ -175,7 +178,8 @@ Also, refer to the [Required IP Ranges](https://www.microsoft.com/download/confi
 *.azure.net  
 *.azure.us  
 *.azureedge.net  
-*.azureedge.us  
+*.azureedge.us
+*.azurefd.net
 *.usgovcloudapi.net  
 *.microsoftonline.us  
 *.microsoftdynamics.us (GCC High)  
@@ -185,7 +189,7 @@ Also, refer to the [Required IP Ranges](https://www.microsoft.com/download/confi
 *.crm.appsplatform.us (DoD)  
 *.appsplatformportals.us (DoD) 
 
-Also, refer to the [Required IP Ranges](https://www.microsoft.com/download/confirmation.aspx?id=57063) to enable access to environments that users and administrators may create within your tenant as well as other Azure services leveraged by the platform:
+Also, refer to the [Required IP Ranges](https://www.microsoft.com/download/details.aspx?id=57063) to enable access to environments that users and administrators may create within your tenant as well as other Azure services leveraged by the platform:
 
 - GCC and GCC High: (Focus on AzureCloud.usgovtexas and AzureCloud.usgovvirginia)
 - DoD:  Focus on USDoD East and USDoD Central 
@@ -203,7 +207,7 @@ Azure is distributed among multiple clouds. By default, tenants are allowed to o
 -	US DoD East
 -	US DoD Central
 
-Refer to the Azure IP Ranges and [Service Tags – US Government Cloud document](https://www.microsoft.com/download/confirmation.aspx?id=57063), focusing attention on AzureCloud.usgovtexas, AzureCloud.usgovvirginia, and/or US DoD East, and US DoD Central as noted above. Also note that these are the IP ranges required in order for your end users to have access to the service URLs.
+Refer to the Azure IP Ranges and [Service Tags – US Government Cloud document](https://www.microsoft.com/download/details.aspx?id=57063), focusing attention on AzureCloud.usgovtexas, AzureCloud.usgovvirginia, and/or US DoD East, and US DoD Central as noted above. Also note that these are the IP ranges required in order for your end users to have access to the service URLs.
 
 ## Configure mobile clients
 
