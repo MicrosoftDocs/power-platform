@@ -74,7 +74,7 @@ Most of these users are hidden from user views but they can be found by using th
 | Dynamics365 SalesForecasting | Dynamics365SalesForecasting<br />@onmicrosoft.com | To fetch table data and metadata for forecasting feature | ForecastAppUser    |
 | # Omnichannel | Ominichannel@onmicrosoft.com | To perform data integration between Omnichannel for Customer Service and Dataverse | System admin    |
 | # PowerAppsDataPlaneBackend | PowerAppsDataPlaneBackend@onmicrosoft.com | To allow Power Apps to integrate with Dataverse | PowerAppsRPRole |
-| # PowerAppsCustomerManagementPlaneBackend | PowerAppsRPRole@onmicrosoft.com | To allow Power Apps to integrate with Dataverse | PowerAppsRPRole |
+| # PowerAppsCustomerManagementPlaneBackend | PowerAppsCustomerManagementPlaneBackend@onmicrosoft.com | To allow Power Apps to integrate with Dataverse | PowerAppsRPRole |
 | # Flow-RP | Flow-RP@onmicrosoft.com | To allow Power Automate to integrate with Dataverse | Flow-RP Role |
 | # DataSyncService-\<REGION\> | DataSyncService-\<REGION\><br />@onmicrosoft.com | To read data for Azure Data Lake sync | Data Sync Service  |
 | # DataSyncFramework-\<REGION\> | DataSyncFramework-\<REGION\>@onmicrosoft.com | To read data for Azure Data Lake sync | Data Sync Framework  |
