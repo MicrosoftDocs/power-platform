@@ -50,7 +50,7 @@ For information about how to implement bulk delete in code, see [Delete data in 
 
 Restoring the deleted records in the Power Apps user experience is only available for system administrators.
 
-Learn more about how to restore deleted records using the recycle bin in [Turn on recycle bin](/restore-deleted-table-records).
+Learn more about how to restore deleted records using the recycle bin in [Turn on recycle bin](restore-deleted-table-records.md).
    
 If the recycle bin is not available, learn more in [Back up and restore environments](backup-restore-environments.md).
 
@@ -64,8 +64,6 @@ To restore deleted records, complete the following steps
 1. You can view all the bulk record deletion jobs.
 1. Select one or more bulk delete jobs you want to restore, and then select **Restore** on the command bar.
 1. Select **OK** to confirm the action to restore.
-   
-:::image type="content" source="media/restorerecords.png" alt-text="Screenshot for restore records":::
 
 ## Restore individual records
 To restore deleted records, complete the following steps.
@@ -79,11 +77,9 @@ To restore deleted records, complete the following steps.
 7. The above link will navigate you to the deleted records tab of the job. Select one or more records you want to restore, and then select **Restore** on the command bar.
 8. Select **OK** to confirm the action to restore.
 
-:::image type="content" source="media/restoreindividual.png" alt-text="Screenshot for restore individual record":::
-
-### See also  
- [Manage your data](add-remove-sample-data.md)   
- [Data Encryption](data-encryption.md)
+### Related content
+- [Manage your data](add-remove-sample-data.md)   
+- [Data Encryption](data-encryption.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
