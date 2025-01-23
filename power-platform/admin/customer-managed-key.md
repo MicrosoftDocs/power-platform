@@ -63,7 +63,7 @@ Currently, all your customer data stored *only* in the following apps and servic
 > Contact a representative for services not listed above for information about customer-managed key support.
 
 > [!NOTE]
-> Power Apps display names, descriptions, and connection metadata continues to be encrypted with a Microsoft-managed key.
+> Power Apps display names, descriptions, and connection metadata continue to be encrypted with a Microsoft-managed key.
 
 > [!NOTE]
 > The download results link and other data produced by solution checker enforcement during a solution check continues to be encrypted with a Microsoft-managed key.
@@ -113,8 +113,8 @@ The malicious key vault administrator creates a key and an enterprise policy on 
 
 > [!NOTE]
 >
-> - Azure Key Vault has built-in safeguards that assist in restoring the key, which require the **Soft Delete** and **Purge protection** key vault settings enabled.
-> - Another safeguard to be considered is to make sure that there is separation of tasks where the Azure Key Vault administrator isn't granted access to the Power Platform admin center.
+> - Azure Key Vault has built-in safeguards that help restoring the key, which require the **Soft Delete** and **Purge protection** key vault settings enabled.
+> - Another safeguard to be considered is to make sure that there's separation of tasks where the Azure Key Vault administrator isn't granted access to the Power Platform admin center.
 
 ### Separation of duty to mitigate the risk
 
@@ -367,14 +367,14 @@ Once the enterprise policy is created, the key vault administrator grants the en
    > - The key isn't deleted.
    > - The above key permissions aren't revoked.
    >   
-   > The environments which are using this key will be disabled when the encryption key is not accessible.   
+   > The environments which are using this key are disabled when the encryption key isn't accessible.   
    
 ### Grant the Power Platform admin privilege to read enterprise policy
 
 Administrators who have Dynamics 365 or Power Platform administration roles can access the Power Platform admin center to assign environments to the enterprise policy. To access the enterprise policies, the admin with Azure key vault access is required to grant the **Reader** role to the Power Platform admin. Once the **Reader** role is granted, the Power Platform administrator is able to view the enterprise policies on the Power Platform admin center.  
 
 > [!NOTE]
-> Only Power Platform and Dynamics 365 administrators who are granted the reader role to the enterprise policy can add an environment to the policy. Other Power Platform or Dynamics 365 administrators might be able to view the enterprise policy but they'll get an error when they try to **Add environment** to the policy.
+> Only Power Platform and Dynamics 365 administrators who are granted the reader role to the enterprise policy can add an environment to the policy. Other Power Platform or Dynamics 365 administrators might be able to view the enterprise policy but they get an error when they try to **Add environment** to the policy.
 
 ### Grant reader role to a Power Platform administrator
 
@@ -412,7 +412,7 @@ The key vault admin notifies the Power Platform admin that an encryption key and
 ### Add an environment to the enterprise policy to encrypt data
 
 > [!IMPORTANT]
-> The environment will be disabled when it is added to the enterprise policy for data encryption.
+> The environment is disabled when it's added to the enterprise policy for data encryption.
 
 1. Sign into the [Power Platform admin center](https://admin.powerplatform.microsoft.com), and go to **Policies** > **Enterprise policies**.
 1. Select a policy, and then on the command bar select **Edit**.
@@ -423,7 +423,7 @@ The key vault admin notifies the Power Platform admin that an encryption key and
 > [!IMPORTANT]
 > - Only environments that are in the same region as the enterprise policy are displayed in the **Add environments** list.
 > - The encryption can take up to four days to complete, but the environment might be enabled before the **Add environments** operation completes.
-> - The operation might not complete and if it fails, your data continues to be encrypted with Microsoft managed key. You can re-run the **Add environments** operation again.
+> - The operation might not complete and if it fails, your data continues to be encrypted with Microsoft managed key. You can rerun the **Add environments** operation again.
 
 > [!NOTE]
 > You can only add environments that are enabled as Managed Environments. Trial and Teams environment types can't be added to the enterprise policy.
@@ -433,7 +433,7 @@ The key vault admin notifies the Power Platform admin that an encryption key and
 Follow these steps if you want to return to a Microsoft managed encryption key.
 
 > [!IMPORTANT]
-> The environment will be disabled when it is removed from the enterprise policy to return data encryption using the Microsoft managed key.
+> The environment is disabled when it's removed from the enterprise policy to return data encryption using the Microsoft managed key.
 
 1. Sign into the [Power Platform admin center](https://admin.powerplatform.microsoft.com), and go to **Policies** > **Enterprise policies**.
 1. Select the **Environment with policies** tab, and then find the environment you want to remove from customer-managed key.
@@ -443,7 +443,7 @@ Follow these steps if you want to return to a Microsoft managed encryption key.
 1. Select **Save**.
    
   > [!IMPORTANT]
-  > The environment will be disabled when it is removed from the enterprise policy to revert the data encryption to the Microsoft-managed key. **Do not delete or disable the key, delete or disable the key vault, or remove the enterprise policy's permissions to the key vault.** The key and key vault's access is necessary to support database restoration. You may delete and remove the enterprise policy's permissions after 30 days.
+  > The environment is disabled when it's removed from the enterprise policy to revert the data encryption to the Microsoft-managed key. **Do not delete or disable the key, delete or disable the key vault, or remove the enterprise policy's permissions to the key vault.** The key and key vault's access is necessary to support database restoration. You may delete and remove the enterprise policy's permissions after 30 days.
 
 ### Review the environment's encryption status
 
@@ -473,9 +473,9 @@ You can see the [environment history](environments-overview.md#environment-histo
 1. Locate the history for **Update Customer Managed Key**.
 
     > [!Note]
-    > The **Status** shows **Running** when the encryption is in progress. It shows **Succeeded** when the encryption is complete. The status shows **Failed** when there is some problem with one of the services not able to apply the encryption key.
+    > The **Status** shows **Running** when the encryption is in progress. It shows **Succeeded** when the encryption is complete. The status shows **Failed** when there's some problem with one of the services not able to apply the encryption key.
     >  
-    > A **Failed** state can be a **warning** and you don't need to re-run the **Add environment** option. You can confirm if it is a [warning](customer-managed-key.md#review-the-encryption-status-from-enterprise-policies).
+    > A **Failed** state can be a **warning** and you don't need to re-run the **Add environment** option. You can confirm if it's a [warning](customer-managed-key.md#review-the-encryption-status-from-enterprise-policies).
 
 ### Change the environment's encryption key with a new enterprise policy and key
 
@@ -494,14 +494,14 @@ To change your encryption key, create a new key and a new enterprise policy. You
 1. Repeat steps 2-6 until all environments in the enterprise policy have been removed.
 
   > [!IMPORTANT]
-  > The environment will be disabled when it is removed from the enterprise policy to revert the data encryption to the Microsoft-managed key. **Do not delete or disable the key, delete or disable the key vault, or remove the enterprise policy's permissions to the key vault**. The key and key vault's access is necessary to support database restoration. You may delete and remove the enterprise policy's permissions after 30 days.
+  > The environment is disabled when it's removed from the enterprise policy to revert the data encryption to the Microsoft-managed key. **Do not delete or disable the key, delete or disable the key vault, or remove the enterprise policy's permissions to the key vault**. The key and key vault's access is necessary to support database restoration. You may delete and remove the enterprise policy's permissions after 30 days.
 
 1. Once all the environments are removed, from the Power Platform admin center go to **Enterprise policies**.
 1. Select the new enterprise policy, and then select **Edit policy**.
 1. Select **Add environment**, select the environments that you want to add, and then select **Continue**.
 
 > [!IMPORTANT]
-> The environment will be disabled when it's added to the new enterprise policy. 
+> The environment is disabled when it's added to the new enterprise policy. 
 
 ### Rotate the environment's encryption key with a new key version
 You can change the environment’s encryption key by creating a new key version. When you create a new key version, the new key version is automatically enabled. All the storage resources detect the new key version and start applying it to encrypt your data. 
@@ -521,7 +521,7 @@ To rotate the encryption key by creating a new key version, use the following st
 > To comply with your key rotation policy, you can rotate the encryption key using the [Rotation policy](/azure/key-vault/keys/how-to-configure-key-rotation#key-rotation-policy). You can either configure a rotation policy or rotate, on demand, by invoking [Rotate now](/azure/key-vault/keys/how-to-configure-key-rotation#rotation-on-demand).
 
 > [!IMPORTANT]
-> The new key version is automatically rotated in the background and there is no action required by the Power Platform admin. It is important that the previous key version must not be disabled or deleted for, at least, 28 days to support database restoration. Disabling or deleting the previous key version too early can take your environment offline.
+> The new key version is automatically rotated in the background and there's no action required by the Power Platform admin. It's important that the previous key version must not be disabled or deleted for, at least, 28 days to support database restoration. Disabling or deleting the previous key version too early can take your environment offline.
 
 ### View the list of encrypted environments
 
@@ -529,7 +529,7 @@ To rotate the encryption key by creating a new key version, use the following st
 1. On the **Enterprise policies** page, select the **Environments with policies** tab. The list of environments that were added to enterprise policies are displayed.
 
 > [!NOTE]
-> There might be situations where the **Environment status** or the **Encryption status** show a **Failed** status. When this occurs, you can try re-running the **Add environment** operation or submit a Microsoft Support request for help.
+> There might be situations where the **Environment status** or the **Encryption status** show a **Failed** status. When this occurs, you can try rerunning the **Add environment** operation or submit a Microsoft Support request for help.
 
 ## Environment database operations
 
