@@ -40,7 +40,7 @@ The availability of monitoring health metrics, logs, and recommendations in Powe
 | No | No  | No| No| No|
 
 ## Architecture
-Power Platform monitoring experiences require runtime activity to produce health metrics and generate recommendations. Unused resources don't appear in monitoring experiences. Admin experiences are available to Power Platform service and Dynamics 365 admins, who can see monitoring data across the tenant. Makers can only see data for resources for which they have edit privileges to in the runtime environment.  
+Power Platform monitoring experiences require runtime activity to produce health metrics and generate recommendations. Unused resources don't appear in monitoring experiences. Admin experiences are available to Power Platform service and Dynamics 365 admins, who can see monitoring data across the tenant. Makers can only see data for resources for which they have edit privileges to in the runtime environment. Power Automate doesn't have a specific maker experience for Monitor, but users can use Automation Center for a similar experience. To learn more, please follow this link: https://learn.microsoft.com/en-us/power-automate/automation-center-overview
 
 :::image type="content" source="../media/monitoring-architecture.png" alt-text="Upload the deployment profile.":::
 
@@ -55,20 +55,20 @@ The products view allows you to compare health metrics across a pool of common r
 1. Select a product, for example **Power Apps**.
 1. Select a specific resource.
 1. See the details pane with time-series charts for each metric available.  
-1. **Optional**: If a recommendation is available, select **View logs**. 
+1. **Optional**: If a recommendation is available, select the contextual button in the recommendation and/or share the recommendation with a user.
 
 For resources available in the monitoring experience, you can learn more about resource-specific metrics in the maker documentation. The following table indicates which resources are available at this time.
 
-| Product | Resource | Availability |
-|---------|------------|------------|
-| Power Apps | Canvas app | Preview|
-| Power Apps | Model-driven apps | Not available yet|
-| Power Automate | Cloud flows | Preview|
-| Power Automate | Desktop flows | Preview|
-| Power Automate | Work Queue | Not available yet|
-| Dataverse | Dataverse | Not available yet|
-| Copilot Studio | Copilot Studio agents | Not available yet|
-| Dynamics 365 |Apps | Not available yet|
+| Product | Resource | Availability in Power Platform Admin Center | Availability in Maker Experience |
+|---------|------------|------------|------------|
+| Power Apps | Canvas app | Preview| Preview|
+| Power Apps | Model-driven apps | Not available yet| Not available yet|
+| Power Automate | Cloud flows | Preview| Not available, please go to Automation Center for similar experience https://learn.microsoft.com/en-us/power-automate/automation-center-overview|
+| Power Automate | Desktop flows | Preview| Not available, please go to Automation Center for similar experience https://learn.microsoft.com/en-us/power-automate/automation-center-overview|
+| Power Automate | Work Queue | Not available yet| Not available, please go to Automation Center for similar experience https://learn.microsoft.com/en-us/power-automate/automation-center-overview|
+| Dataverse | Dataverse | Not available yet| Not available yet|
+| Copilot Studio | Copilot Studio agents | Not available yet| Not available yet|
+| Dynamics 365 |Apps | Not available yet| Not available yet|
    
 ## Monitoring experiences for makers
 When tenant-wide analytics is turned on, metrics and logs are available to makers. Makers can only see metrics and logs for which they have edit privileges. Environment-level settings exist to control what analytics information is available to makers. One setting controls whether makers see any analytics data in monitoring experiences including metrics and logs. The second setting controls whether makers see End User Pseudonymous Identifiers (EUPI), like session IDs and user object IDs in event logs.
