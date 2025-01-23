@@ -51,7 +51,7 @@
           items:
             - name: Define roles and responsibilities
               href: adoption/roles.md
-            - name: Delivery models
+            - name: Evaluate delivery models
               href: adoption/delivery-models.md
             - name: License assignment strategies
               href: adoption/license-assignment-strategies.md
