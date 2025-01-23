@@ -5,7 +5,7 @@ author: paulliew
 ms.author: paulliew
 ms.reviewer: sericks, matp, ratrtile
 ms.topic: how-to
-ms.date: 11/12/2024
+ms.date: 01/23/2025
 ms.custom: template-how-to
 contributors:
   - samathur
@@ -195,7 +195,7 @@ In Azure, perform the following steps:
       - **Options**: **Generate**
       - **Name**: Provide a name for the key
       - **Key type**: **RSA**
-      - **RSA key size**: **2048**  (or **4096**)
+      - **RSA key size**: **2048** or **4096**
         
    > [!Important]
    > If you set an **expiration date** in your key and the key expired, all the environments that're encrypted with this key will be down. Set [an alert to monitor expiry certificates](/azure/key-vault/general/alert#example-log-query-alert-for-near-expiry-certificates) with email notifications for your local Power Platform admin and Azure key vault admin as a reminder to renew the expiration date. This is important to prevent any unplanned system outages.  
@@ -455,10 +455,10 @@ Follow these steps if you want to return to a Microsoft managed encryption key.
 
     > [!Note]
     > The environment's encryption status can be:
-    > - **Encrypted** - the Enterprise policy encryption key is active and the environment is encrypted with your key.
-    > - **Failed** - the Enterprise policy encryption key is not used by **all** Dataverse storage services. They require more time to process and you can re-run the **Add environment** operation. Contact Support if the re-run fails.
-    > - A **Failed** encryption status does not impact your environment data and its operations. This means that some of the Dataverse storage services are encrypting your data with your key and some continues to use the Microsoft managed key. A revert is not recommended as when you re-run the **Add environment** operation, the service resumes from where it left off. 
-    > - **Warning** - the Enterprise policy encryption key is active and one of the service's data continues to be encrypted with the Microsoft-managed key. Learn more: [Power Automate CMK application warning messages](/power-automate/customer-managed-keys#power-automate-cmk-application-warning-messages)
+    > - **Encrypted** - The Enterprise policy encryption key is active and the environment is encrypted with your key.
+    > - **Failed** - The Enterprise policy encryption key is not used by **all** Dataverse storage services. They require more time to process and you can re-run the **Add environment** operation. Contact Support if the re-run fails.
+    >    A **Failed** encryption status doesn't impact your environment data and its operations. This means that some of the Dataverse storage services are encrypting your data with your key and some continue to use the Microsoft-managed key. A revert isn't recommended as when you re-run the **Add environment** operation, the service resumes from where it left off. 
+    > - **Warning** - The Enterprise policy encryption key is active and one of the service's data continues to be encrypted with the Microsoft-managed key. Learn more: [Power Automate CMK application warning messages](/power-automate/customer-managed-keys#power-automate-cmk-application-warning-messages)
     >
 
 #### Review the encryption status from the Environment History page
