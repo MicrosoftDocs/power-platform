@@ -56,9 +56,8 @@ To allow your app to have access to Exchange Online, you need to grant **Office 
    > ![Screenshot of Request API permissions.](media/type-of-permission.png "Select a permission type")
 
    > [!NOTE]
-   > If it doesn't align with your business requirements to have an app with full access on all mailboxes, the Exchange Online admin can scope the mailboxes that the app can access by using Application Access Policy or configuring the Application Impersonation role on Exchange. More information:
+   > If it doesn't align with your business requirements to have an app with full access on all mailboxes, the Exchange Online admin can scope the mailboxes that the app can access by using an Application Access Policy. More information:
    > - [Scoping application permissions to specific Exchange Online mailboxes](/graph/auth-limit-mailbox-access)
-   > - [Configure impersonation](/exchange/client-developer/exchange-web-services/how-to-configure-impersonation)
 
 4. On the **Configured permissions** screen, select **Grant admin consent for *tenant name***.
 
