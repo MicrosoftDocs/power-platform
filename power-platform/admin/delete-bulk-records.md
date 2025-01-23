@@ -4,7 +4,7 @@ description: Delete bulk records.
 author: bhgoswam 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/22/2025
+ms.date: 01/23/2025
 ms.subservice: admin
 ms.author: bhgoswam
 search.audienceType: 
@@ -52,7 +52,7 @@ Restoring the deleted records in the Power Apps user experience is only availabl
 
 Learn more about how to restore deleted records using the recycle bin in [Turn on recycle bin](/restore-deleted-table-records).
    
-If the recycle bin is not available, learn more in [Restore backup environments](backup-restore-environments.md).
+If the recycle bin is not available, learn more in [Back up and restore environments](backup-restore-environments.md).
 
 ### Restore all records deleted by a bulk delete job
 
