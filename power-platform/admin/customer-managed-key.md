@@ -455,9 +455,12 @@ Follow these steps if you want to return to a Microsoft managed encryption key.
 
     > [!Note]
     > The environment's encryption status can be:
+    > 
     > - **Encrypted** - The Enterprise policy encryption key is active and the environment is encrypted with your key.
     > - **Failed** - The Enterprise policy encryption key is not used by **all** Dataverse storage services. They require more time to process and you can re-run the **Add environment** operation. Contact Support if the re-run fails.
-    >    A **Failed** encryption status doesn't impact your environment data and its operations. This means that some of the Dataverse storage services are encrypting your data with your key and some continue to use the Microsoft-managed key. A revert isn't recommended as when you re-run the **Add environment** operation, the service resumes from where it left off. 
+    > 
+    >      A **Failed** encryption status doesn't impact your environment data and its operations. This means that some of the Dataverse storage services are encrypting your data with your key and some continue to use the Microsoft-managed key. A revert isn't recommended as when you re-run the **Add environment** operation, the service resumes from where it left off.
+    >
     > - **Warning** - The Enterprise policy encryption key is active and one of the service's data continues to be encrypted with the Microsoft-managed key. Learn more: [Power Automate CMK application warning messages](/power-automate/customer-managed-keys#power-automate-cmk-application-warning-messages)
     >
 
