@@ -1,9 +1,9 @@
 ---
-title: "Exchange Online cross-tenant authentication | MicrosoftDocs"
+title: Exchange Online cross-tenant authentication 
 description: Exchange Online cross tenant authentication
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/13/2022
+ms.date: 01/23/2025
 author: gattimassimo 
 ms.author: magatti
 ms.reviewer: sericks
@@ -56,8 +56,7 @@ To allow your app to have access to Exchange Online, you need to grant **Office 
    > ![Screenshot of Request API permissions.](media/type-of-permission.png "Select a permission type")
 
    > [!NOTE]
-   > If it doesn't align with your business requirements to have an app with full access on all mailboxes, the Exchange Online admin can scope the mailboxes that the app can access by using an Application Access Policy. More information:
-   > - [Scoping application permissions to specific Exchange Online mailboxes](/graph/auth-limit-mailbox-access)
+   > If it doesn't align with your business requirements to have an app with full access on all mailboxes, the Exchange Online admin can scope the mailboxes that the app can access by using an Application Access Policy. Learn more in [Scoping application permissions to specific Exchange Online mailboxes](/graph/auth-limit-mailbox-access).
 
 4. On the **Configured permissions** screen, select **Grant admin consent for *tenant name***.
 
