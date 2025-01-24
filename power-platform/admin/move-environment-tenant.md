@@ -165,7 +165,7 @@ Install-Module -Name Az -Repository PSGallery -Force
 
 Sign into Microsoft Power Platform. This step allows administrators to authenticate and access the Power Platform environment.
 ```PowerShell
-Add-PowerAppsAccount -Endpoint prod
+Add-PowerAppsAccount
 ```
 
 ### Submit migration request (Source Admin)
@@ -188,7 +188,7 @@ TenantToTenant-ViewMigrationRequest
 The admin of the destination tenant should run the following command to see all the migration requests and status. The admin can review all the migration requests and options to approve or reject. 
 
 ```PowerShell
-Add-PowerAppsAccount -Endpoint prod
+Add-PowerAppsAccount
 
 TenantToTenant-ViewApprovalRequest
 
