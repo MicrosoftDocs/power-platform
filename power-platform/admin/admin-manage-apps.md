@@ -49,18 +49,18 @@ Admins can do the following from the Power Platform admin center:
 
 ## Manage who can share canvas apps
 
-Power Apps respects the Canvas App ‘Share’ privilege in Dataverse. A user won't be able to share canvas apps in an environment if they don't have a security role with the Canvas App Share privilege set to a value other than ‘None selected’. This Dataverse Canvas App Share privilege is also respected in the default environment. This article outlines how to edit privileges in a security role: [Edit a security role](create-edit-security-role.md#edit-a-security-role).
+Power Apps respects the canvas app **Share** privilege in Dataverse. A user won't be able to share canvas apps in an environment if they don't have a security role with the Canvas App Share privilege set to a value other than **None selected**. This Dataverse Canvas App Share privilege is also respected in the default environment. This article outlines how to edit privileges in a security role: [Edit a security role](create-edit-security-role.md#edit-a-security-role).
 
    > [!div class="mx-imgBorder"] 
    > ![Dataverse Canvas App privileges.](media/admin-manage-apps/dataverse_canvas_app_entity_share_privilege.png "Dataverse Canvas App entity privileges")
 
 > [!NOTE]
-> The ability to granularly control the Canvas App Share privilege in a security role requires Dataverse in the environment where the privilege is to be changed. Power Apps does not discretely recognize the other Dataverse Canvas app entity privileges set for the environment. 
+> The ability to granularly control the Canvas App Share privilege in a security role requires Dataverse in the environment where the privilege is to be changed. Power Apps doesn't discretely recognize the other Dataverse Canvas app entity privileges set for the environment. 
 >
 > System updates may remove customizations to [predefined security roles](database-security.md#predefined-security-roles), including Environment Maker. This means the removal of the canvas app share privilege may be reintroduced during a system update. Until the customization to the canvas app share privilege is preserved during system updates, the share privilege customization may need to be reapplied. 
 
 ### Surface your organization’s governance error content 
-If you specify governance error message content to appear in error messages, it will be included in the error message displayed when users observe they don’t have permission to share apps in an environment. See: [PowerShell governance error message content commands](powerapps-powershell.md#governance-error-message-content-commands).
+If you specify governance error message content to appear in error messages, it's included in the error message displayed when users observe they don’t have permission to share apps in an environment. Learn more in [PowerShell governance error message content commands](powerapps-powershell.md#governance-error-message-content-commands).
 
 ## Distinguish Microsoft SharePoint custom form makers from general Environment Makers
 
@@ -107,7 +107,7 @@ The following table outlines how the quarantine state impacts experiences for ad
 |----------|----------------------------------------------------------------------------------------------------------------------------------------------|
 | Admin    | Regardless of an app’s quarantine state, an app is visible to admins in the Power Platform Admin Center and PowerShell cmdlets.                  |
 | Maker    | Regardless of an app’s quarantine state, an app is visible in https://make.powerapps.com and can be opened for editing in Power Apps Studio. |
-| End User | A quarantined app will present end users that launch the app a message indicating they’re unable to access the app.                          |
+| End User | A quarantined app presents end users that launch the app a message indicating they’re unable to access the app.                          |
 
 End users will see the following message when they launch an app that has been quarantined. 
 
@@ -137,10 +137,10 @@ Get-AppQuarantineState -EnvironmentName <EnvironmentName> -AppName <AppName>
 ```
 
 ## Managed Environments: Conditional access on individual apps
-In addition to respecting conditional access policies applied to the Power Apps service, in Managed Environments it's possible to apply Microsoft Entra conditional access policies to individual apps created using Power Apps. For example, an admin can apply a conditional access policy requiring multi-factor authentication only on apps containing sensitive data. Power Apps uses [conditional access authentication context](/entra/identity/conditional-access/concept-conditional-access-cloud-apps#authentication-context) as the mechanism to target conditional access policies on granular apps. Admins are the persona allowed to add and remove authentication contexts on an app. Makers cannot edit authentication contexts on an app.   
+In addition to respecting conditional access policies applied to the Power Apps service, in Managed Environments it's possible to apply Microsoft Entra conditional access policies to individual apps created using Power Apps. For example, an admin can apply a conditional access policy requiring multi-factor authentication only on apps containing sensitive data. Power Apps uses [conditional access authentication context](/entra/identity/conditional-access/concept-conditional-access-cloud-apps#authentication-context) as the mechanism to target conditional access policies on granular apps. Admins are the persona allowed to add and remove authentication contexts on an app. Makers can't edit authentication contexts on an app.   
 
 > [!NOTE]
-> 1. Authentication contexts set on an app are not moved with apps in solutions and moved across environments. This allows different authentication contexts to be applied to apps in different environments. Also, as an app moves across environments via solutions the authentication context set in an environment is preserved. For example, if an authentication context is set on an app in a UAT environment, that authentication context is preserved. 
+> 1. Authentication contexts set on an app aren't moved with apps in solutions and moved across environments. This allows different authentication contexts to be applied to apps in different environments. Also, as an app moves across environments via solutions the authentication context set in an environment is preserved. For example, if an authentication context is set on an app in a UAT environment, that authentication context is preserved. 
 > 2. Multiple authentication contexts might be set on an app. An end user must pass the union of conditional access policies applied by multiple authentication contexts.
 > 3. Conditional access on individual apps is a Managed Environments feature.
 
@@ -150,7 +150,7 @@ The following table outlines how conditional access enforcement on a specific ap
 |----------|--------------|
 | Admin    | Regardless of conditional access policies associated with an app, an app is visible to admins in Power Platform Admin Center and PowerShell cmdlets.  |
 | Maker    | Regardless of conditional access policies associated with an app, an app is visible in https://make.powerapps.com and can be opened for editing in Power Apps Studio.|
-| End User | Conditional access policies applied to an app are enforced when end users launch the app. A user that does not pass the conditional access checks is presented a dialog in the authentication experience indicating they’re not allowed to access the resource. |
+| End User | Conditional access policies applied to an app are enforced when end users launch the app. A user that doesn't pass the conditional access checks is presented a dialog in the authentication experience indicating they’re not allowed to access the resource. |
 
 After admins associate authentication contexts to conditional access policies in https://portal.azure.com they may set the authentication context ID on an app. The following image illustrates where to get the authentication context ID. 
 
