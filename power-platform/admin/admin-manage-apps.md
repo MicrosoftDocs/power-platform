@@ -136,52 +136,52 @@ Set-AppAsUnquarantined -EnvironmentName <EnvironmentName> -AppName <AppName>
 Get-AppQuarantineState -EnvironmentName <EnvironmentName> -AppName <AppName>
 ```
 
-## Managed Environments: Conditional Access on individual apps
-In addition to respecting Conditional Access policies applied to the Power Apps service, in Managed Environments it's possible to apply Microsoft Entra Conditional Access policies to individual apps created using Power Apps. For example, an admin can apply a Conditional Access policy requiring Multi-factor authentication only on apps containing sensitive data. Power Apps uses [Conditional Access authentication context](/entra/identity/conditional-access/concept-conditional-access-cloud-apps#authentication-context) as the mechanism to target Conditional Access policies on granular apps. Admins are the persona allowed to add and remove authentication contexts on an app. Makers cannot edit authentication contexts on an app.   
+## Managed Environments: Conditional access on individual apps
+In addition to respecting conditional access policies applied to the Power Apps service, in Managed Environments it's possible to apply Microsoft Entra conditional access policies to individual apps created using Power Apps. For example, an admin can apply a conditional access policy requiring multi-factor authentication only on apps containing sensitive data. Power Apps uses [conditional access authentication context](/entra/identity/conditional-access/concept-conditional-access-cloud-apps#authentication-context) as the mechanism to target conditional access policies on granular apps. Admins are the persona allowed to add and remove authentication contexts on an app. Makers cannot edit authentication contexts on an app.   
 
 > [!NOTE]
 > 1. Authentication contexts set on an app are not moved with apps in solutions and moved across environments. This allows different authentication contexts to be applied to apps in different environments. Also, as an app moves across environments via solutions the authentication context set in an environment is preserved. For example, if an authentication context is set on an app in a UAT environment, that authentication context is preserved. 
-> 2. Multiple authentication contexts might be set on an app. An end user must pass the union of Conditional Access policies applied by multiple authentication contexts.
-> 3. Conditional Access on individual apps is a Managed Environments feature.
+> 2. Multiple authentication contexts might be set on an app. An end user must pass the union of conditional access policies applied by multiple authentication contexts.
+> 3. Conditional access on individual apps is a Managed Environments feature.
 
-The following table outlines how Conditional Access enforcement on a specific app impacts the experiences for admins, makers, and end users.  
+The following table outlines how conditional access enforcement on a specific app impacts the experiences for admins, makers, and end users.  
 
 | Persona  | Experience     |
 |----------|--------------|
-| Admin    | Regardless of Conditional Access policies associated with an app, an app is visible to admins in Power Platform Admin Center and PowerShell cmdlets.  |
-| Maker    | Regardless of Conditional Access policies associated with an app, an app is visible in https://make.powerapps.com and can be opened for editing in Power Apps Studio.|
-| End User | Conditional Access policies applied to an app are enforced when end users launch the app. A user that does not pass the Conditional Access checks is presented a dialog in the authentication experience indicating they’re not allowed to access the resource. |
+| Admin    | Regardless of conditional access policies associated with an app, an app is visible to admins in Power Platform Admin Center and PowerShell cmdlets.  |
+| Maker    | Regardless of conditional access policies associated with an app, an app is visible in https://make.powerapps.com and can be opened for editing in Power Apps Studio.|
+| End User | Conditional access policies applied to an app are enforced when end users launch the app. A user that does not pass the conditional access checks is presented a dialog in the authentication experience indicating they’re not allowed to access the resource. |
 
-After admins associate authentication contexts to Conditional Access policies in https://portal.azure.com they may set the authentication context ID on an app. The following image illustrates where to get the authentication context ID. 
+After admins associate authentication contexts to conditional access policies in https://portal.azure.com they may set the authentication context ID on an app. The following image illustrates where to get the authentication context ID. 
 
 > [!div class="mx-imgBorder"] 
 > ![Azure Portal Authentication Context ID](media/admin-manage-apps/power_apps_authentication_context_id.png "Azure Portal Authentication Context id.")
 
-End users that don't meet Conditional Access policy requirements receive an error message that indicates they don't have access.
+End users that don't meet the conditional access policy requirements receive an error message that indicates they don't have access.
 
 The following table reflects conditional access on granular apps support:
 
-| Power Apps type  | Conditional Access on individual apps support |
+| Power Apps type  | Conditional access on individual apps support |
 |------------------|---------------------------------------------|
 | Canvas app       | Preview availability                        |
 | Model-driven app | Not supported                               |
 
-### Add Conditional Access authentication context IDs to an app
+### Add conditional access authentication context IDs to an app
 ```PowerShell
 Set-AdminPowerAppConditionalAccessAuthenticationContextIds –EnvironmentName <EnvironmentName> -AppName <AppName> -AuthenticationContextIds <id1, id2, etc...>
 ```
 
-### Get Conditional Access authentication context IDs set on an app
+### Get conditional access authentication context IDs set on an app
 ```PowerShell
 Get-AdminPowerAppConditionalAccessAuthenticationContextIds –EnvironmentName <EnvironmentName> -AppName <AppName>
 ```
 
-### Remove Conditional Access authentication context IDs on an app
+### Remove conditional access authentication context IDs on an app
 ```PowerShell
 Remove-AdminPowerAppConditionalAccessAuthenticationContextIds –EnvironmentName <EnvironmentName> -AppName <AppName>
 ```
 
-### See also
+### Related content
 [Power Apps admin PowerShell support](powerapps-powershell.md#power-apps-commands)
 
 
