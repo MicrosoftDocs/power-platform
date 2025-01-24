@@ -9,7 +9,7 @@ contributors:
   - EllenWehrle
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 07/02/2024
+ms.date: 01/21/2025
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -55,32 +55,28 @@ Confirm your organization has the necessary licensing to use enterprise template
 > A free Developer Plan combined with a free Power BI in Microsoft Fabric free account is a great way to install the template for evaluation purposes.
 >
 > [Learn more about Power Apps Developer Plan](https://powerapps.microsoft.com/developerplan/)
-
+>
 > [Learn more about Microsoft Power Platform Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130)
 
 ### Set up environments and data policies
 
 It's important to have a cohesive environment and data policy and to ensure the required resources are in place.
 
-- **Administrators**
-
-  Make sure that admins with the necessary privileges are available to assign licenses and create environments:
+- **Administrators** - Make sure that admins with the necessary privileges are available to assign licenses and create environments:
 
   - Microsoft Entra ID Global or tenant User Administrator to assign Power Apps or Power BI licensing.
   - Power Platform Administrator to create environments.
 
   [Learn more about Microsoft Power Platform administration](/power-platform/admin/)
 
-- **Environments**: Follow [application lifecycle management (ALM)](/power-platform/alm/) best practices in [creating and managing environments](/power-platform/admin/create-environment). Create and prepare a Power Platform developer environment specifically for the Hardware Request and Management solution files. Also consider:
+- **Environments** - Follow [application lifecycle management (ALM)](/power-platform/alm/) best practices in [creating and managing environments](/power-platform/admin/create-environment).
 
-  - The Power Platform environment is set up with a Dataverse database.
-  - Environment maker security role privileges, at a minimum, are assigned to the user who installs the solutions in that environment.
+  - Make sure that a Power Platform environment is set up with a Dataverse database.
+  - Make sure that environment maker security role privileges, at a minimum, are assigned to the user who installs the solutions in that environment.
 
   [Learn more about Power Platform environments](/power-platform/admin/environments-overview)
 
-- **Data loss prevention policies**
-
-Make sure that the environment has access to connectors used by the template:
+- **Data loss prevention policies** - Make sure that the environment has access to connectors used by the template:
 
 - [Microsoft Dataverse](/connectors/commondataserviceforapps/)
 - [Office 365 Outlook](/connectors/office365/)
@@ -153,7 +149,7 @@ You have two options for installing the Hardware Request and Management solution
 
 > [!TIP]
 >
-> Go to the [Templates-for-Power-Platform](https://aka.ms/PowerPlatformTemplateSupport) GitHub project site to log your questions or issues and get support for the Hardware Request and Management template.
+> Go to the [Templates-for-Power-Platform](https://aka.ms/PowerPlatformTemplateSupport) GitHub project site to log your questions or issues and get support for the Hardware Request and Management template. You can also check for updates to the [deployment packages](https://github.com/microsoft/Templates-for-Power-Platform/tree/main/DeploymentPackages) on this site.
 
 ### Install from AppSource
 

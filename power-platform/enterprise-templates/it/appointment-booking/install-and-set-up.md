@@ -5,7 +5,7 @@ author: tverhasselt
 ms.author: thoverh
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 07/02/2024
+ms.date: 01/21/2025
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -80,7 +80,7 @@ More information: [Data loss prevention policies](/power-platform/admin/wp-data-
 
 Cloud flows need specific connection references to work correctly. Connection references are included in the solution, but connectors often need to be manually set up.
 
-The installation requires you to set up four new connections for the Appointment Booking app. It's best to create the connections before importing the solution to make the import smoother. If you create the connections during import, you have to jump back and forth between browser windows.
+You need to set up connections for the Appointment Booking app. It's best to create the connections before importing the solution to make the import smoother. If you create the connections during import, you have to jump between browser windows.
 
 To create the connections in advance, take these steps:
 
@@ -95,33 +95,11 @@ To create the connections in advance, take these steps:
 
 ## Step 3: Install solution files
 
-You have two options for installing the Appointment Booking solution:
-
-- [Select **Get it now** on the template's AppSource page](#install-from-appsource) and an installation window opens automatically in the Power Platform admin center.
-- [Download a managed or unmanaged version of the solution files and manually import them into your environment](#download-and-manually-install-solution-files).
-
-> [!TIP]
->
-> Go to the [Templates-for-Power-Platform](https://aka.ms/PowerPlatformTemplateSupport) GitHub project site to log your questions or issues and get support for the Appointment Booking template.
-
-### Install from AppSource
-
-AppSource is a Microsoft digital storefront. Take these steps to go through the AppSource install process:
-
-1. Go to the [Appointment Booking template](<https://aka.ms/AccessAppointmentBookingTemplate>) in AppSource and select **Get it now**.
-1. In the *Install Appointment Booking Template* window in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), select the developer environment that you prepared in the [review prerequisites step](#step-1-review-prerequisites).
-1. Agree to the *Terms and Privacy Statements* when prompted.
-1. Select **Install**.
-
-[Learn more about AppSource](https://appsource.microsoft.com/en-US/)
-
-Two solutions are installed in your environment, **IT Base** and **Appointment Booking**. [Learn more about the Appointment Booking template solutions](./overview.md).
-
 ### Download and manually install solution files
 
 Managed and unmanaged solution files are available for you to download and manually install. Take these steps to download and import the solutions directly into the development environment that you prepared for it in the [review prerequisites step](#step-1-review-prerequisites).
 
-1. Download the following Managed *or* Unmanaged solution files:
+1. Determine whether you need to download Managed *or* Unmanaged solution files and then download the two associated files.
 
     - Managed
       - [mpa_ITBase_managed.zip](https://aka.ms/ITBaseManagedSolution)
@@ -130,7 +108,7 @@ Managed and unmanaged solution files are available for you to download and manua
       - [mpa_ITBase_unmanaged.zip](https://aka.ms/ITBaseUnManagedSolution)
       - [mpa_AppointmentBooking_unmanaged.zip](https://aka.ms/AppointmentBookingUnManagedSolution)
 
-1. Sign in to [Power Apps](https://make.preview.powerapps.com/) and select the environment you prepared in the [review prerequisites step](#step-1-review-prerequisites).
+1. Sign in to [Power Apps](https://make.preview.powerapps.com/) and select the environment you prepared for it in the [review prerequisites step](#step-1-review-prerequisites).
 1. Select **Solutions**.
 1. Select **Import solution**,and then find and select the **managed** or **unmanaged version** of the `mpa_ITBase` file downloaded.
 1. Select **Next**, and then select **Import**.
@@ -140,6 +118,10 @@ Managed and unmanaged solution files are available for you to download and manua
 1. Select **Next**.
 1. Skip the environment variable setup for now. The required URL values only become available after the apps are imported into the environment.
 1. Select **Import** to start importing the *Appointment Booking* solution. The import process takes a few minutes and once it's complete you're notified with a *Success* message.
+
+> [!TIP]
+>
+> Go to the [Templates-for-Power-Platform](https://aka.ms/PowerPlatformTemplateSupport) GitHub project site to log your questions or issues and get support for the Appointment Booking template. You can also check for updates to the [deployment packages](https://github.com/microsoft/Templates-for-Power-Platform/tree/main/DeploymentPackages) on this site.
 
 [Learn more about solutions](/power-platform/alm/solution-concepts-alm)
 
@@ -218,6 +200,8 @@ Verify that the cloud flows are turned on in the newly installed Appointment Boo
 1. Select *each cloud flow* to verify that it is turned on.
 1. Select **Turn on** on the command bar if the flow is not already set to *on*.
 
+[Learn how to support service principal owned flows.](/power-automate/service-principal-support)
+
 ## Step 8: Share the apps
 
 Take the following steps to share the apps with your users:
@@ -239,7 +223,7 @@ Take the following steps to share the apps with your users:
 > [!NOTE]
 >If Appointment Booking apps aren't shared with you and you cannot access them directly from Power Apps, please contact your admin.
 
-More information: [Share a canvas app with your organization](/power-apps/maker/canvas-apps/share-app)
+[Learn how to share a canvas app with your organization.](/power-apps/maker/canvas-apps/share-app)
 
 ## Step 9: Enable Copilot (optional)
 
