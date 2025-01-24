@@ -34,6 +34,20 @@ Be aware of the following notes before you get started with a tenant-to-tenant m
   -	If you're using the default onmicrosoft domain, `test@sourcecompanyname.onmicrosoft.com`, the post migration domain name is changed 
  to `test@targetcompanyname.onmicrosoft.com`. Customers need to reconfigure the mailbox. To configure the mailbox, see [Connect to Exchange Online](connect-exchange-online.md).
 
+### Supported applications and platforms
+
+| Supported | Not fully supported<sup>*</sup> |
+|-------------------------|-------------------------|
+| <ul><li>Dataverse</li><li>Dynamics 365 apps</li></ul> | <ul><li>Canvas app</li><li>[Component library](/power-apps/maker/canvas-apps/component-library)</li><li>[Custom pages](/power-apps/maker/model-driven-apps/model-app-page-overview)</li><li>Power Automate</li><li>Microsoft Copilot Studio</li><li>[Dynamics 365 Customer Voice](/dynamics365/customer-voice/cv-faq#i-migrated-my-microsoft-dataverse-environment-from-one-tenant-to-another-but-i-dont-see-my-existing-projects-when-i-login-to-dynamics-365-customer-voice-in-the-new-tenant)</li><li>Omnichannel for Customer Service</li><li>Customer Insights Journey</li><li>Customer Insights Data</li><li>[Dynamics 365 Contact Center](https://www.microsoft.com/dynamics-365/products/contact-center?msockid=01d9fe88c1d36d8b0d96eba0c0696ccb)</li> </ul> |
+
+<sup>*</sup>There may be potential data loss during migration and more steps required. [Confirm if any of the solutions below are installed in the environments to be migrated, as these may require additional steps either from you or Support.](#confirm-if-any-of-the-solutions-below-are-installed-in-the-environments-to-be-migrated-as-these-may-require-more-steps-either-from-you-or-support)
+
+### Supported environment types
+
+| Supported | Not supported |
+|-------------------------|-------------------------|
+| <ul><li>Migrating production environment</li><li>Migrating sandbox environment</li><li>One or multiple environments</li></ul> | <ul><li>Migrating default environment</li><li>Migrating teams environment</li><li>Migrating trial environment</li><li>Migrating demo environment</li><li>Migrating  developer environment</li><li>Migrating tenants from GCC to GCC</li><li>Migrating tenants from GCC to another geo or from another geo to GCC</li><li>Migrating a Dataverse organization linked to a finance and operations organization</li></ul> |
+
 ## Prerequisites
 Be sure that you complete the following prerequisites before you start the migration process.
 
@@ -90,9 +104,6 @@ The following steps must be done for each website in an environment.
 1.	Sign in to the environment.
 2.	Open the [admin center](/power-pages/admin/admin-overview#open-power-apps-portals-admin-center).
 3.	[Delete](/power-pages/admin/delete-website) the website.
-
-### Prepare Dynamics 365 Marketing
-If the Dynamics 365 Marketing app is deployed in the tenant, be sure that the necessary licenses are present in the destination tenant in order to reprovision the application once the migration is complete. Learn more in [Tenant-to-tenant migration for Dynamics 365 Marketing](/dynamics365/customer-insights/journeys/tenant-to-tenant).
 
 ### Create user mapping file
 Create a user mapping file for the source environment to be transferred to the target environment. It's essential to note that each environment requires an individual mapping file. Be sure that users are present and authorized in both the originating and destination tenants, as this is required for a successful migration. The users' domains may vary between source and target, provided they're active.
@@ -242,6 +253,8 @@ Set-AzStorageBlobContent -File $fileToUpload -Container $container -Context $sto
 ### Prepare the environment migration (Source Admin)
 The following step involves conducting comprehensive validations to ensure that every user listed in the user mapping file is verified and currently active within the target tenant. 
 
+MigrationId can be view using "TenantToTenant-ViewMigrationRequest" command in source tenant.
+
 ```PowerShell
 TenantToTenant-PrepareMigration 
 -MigrationId {MigrationId} 
@@ -280,7 +293,7 @@ TenantToTenant-GetMigrationStatus -MigrationId {MigrationId}
   After fixing user mapping errors you need to reupload the usermapping file using same SAS URI.
   
 ### Download the error report
-If there are any errors in the user mapping, there's an option to download the error report. This can be done by using the following commands that use the SAS URI from the previous step and the desired location to download the error report.
+If there are any errors in the user mapping, there's an option to download the error report. This can be done by directly copying and pasting the SasUrl provided in the Tenant-To-Tenant-GetMigrationStatus command or using the following commands that use the SAS URI from the previous step and the desired location to download the error report.
 
 Complete the following steps with Windows PowerShell ISE.
 
@@ -305,7 +318,7 @@ Re-upload the file using the same or new SAS URL.
 After successfully completing Prepare the environment migration setps now you may proceed with next step to migrate environment.Next step you can perform within next 7 days and after that you may have to start with "Prepare the environment migration"
 
 ## Migrate the environment
-
+MigrationId can be view using "TenantToTenant-ViewMigrationRequest" command in source tenant.
 ```PowerShell
 TenantToTenant-MigratePowerAppEnvironment
 -MigrationId {MigrationId}
