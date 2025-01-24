@@ -27,6 +27,8 @@ Strategic planning and alignment with organizational goals keep the CoE focused 
 
 By staying connected to the broader strategy, the CoE can drive high-impact initiatives, respond swiftly to change, and engage stakeholders at every level, all of which propel the organization toward lasting success.
 
+Learn more: [Vision, objectives, measurable key results and key iniatives for establishing a Center of Excellence with governance patterns and practices](common-vision/establish-coe.md)
+
 ## Form a core team
 
 Typically, the following people or departments are key drivers or stakeholders when establishing a Center of Excellence:
@@ -50,6 +52,13 @@ Governance is a cornerstone of a successful Power Platform Center of Excellence 
 - **Solution development**: Defining best practices for solution development is essential to maintain consistency, quality, and efficiency. The CoE should establish comprehensive guidelines that cover various aspects of development. This includes setting coding standards and naming conventions to ensure readability and maintainability (learn more: [link to Power Automate and Power Apps naming convention docs]), establishing rigorous testing protocols to ensure solutions are robust and reliable, and defining processes for deploying solutions to different environments, such as development, testing, and production.
 - **User access and permissions**: Managing user access and permissions is critical to maintaining security and preventing unauthorized changes. The CoE should implement Role-Based Access Control (RBAC) to assign permissions based on users’ roles and responsibilities, ensuring that users have the minimum level of access necessary to perform their tasks according to the Least Privilege Principle. Regular reviews of user access and permissions should be conducted to identify and address any discrepancies. Additionally, maintaining audit trails is essential to track who accessed or modified solutions and data.
 - **Monitoring and reporting**: Continuous monitoring and reporting are vital to track the usage, performance, and compliance of the Power Platform. The CoE should monitor platform usage through usage analytics to identify trends, optimize resource allocation, and ensure efficient use. Tracking performance metrics is essential to identify and address any issues that may impact the user experience. Regular compliance monitoring should be conducted to ensure adherence to established standards and policies. Additionally, generating reports is crucial to provide insights into platform usage, performance, and compliance to stakeholders.
+
+Learn more: 
+
+<!-- TODO link to overview pages of each section -->
+- [Secure](coe.md)
+- [Govern](coe.md)
+- [Operate](coe.md)
 
 ## Provide training and support
 

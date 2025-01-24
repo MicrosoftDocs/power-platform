@@ -49,14 +49,20 @@
               href: adoption/coe.md
         - name: Plan
           items:
+            - name: Overview
+              href: adoption/plan-overview.md
             - name: Define roles and responsibilities
               href: adoption/roles.md
             - name: Evaluate delivery models
               href: adoption/delivery-models.md
-            - name: License assignment strategies
+            - name: Establish license assignment strategies
               href: adoption/license-assignment-strategies.md
+            - name: Modernize applications with Power Platform
+              href: white-papers/application-modernization.md
         - name: Secure
           items:
+            - name: Overview
+              href: adoption/secure-overview.md
             - name: Establish DLP policies
               href: adoption/dlp-strategy.md
             - name: Set up Microsoft Entra Conditional Access
