@@ -2,7 +2,7 @@
 title: Power Apps licensing FAQs
 description: Learn about common questions and answers for licensing and plan options.
 author: amchern
-ms.date: 03/12/2024
+ms.date: 01/24/2025
 ms.reviewer: sericks
 ms.topic: conceptual
 ms.subservice: 
@@ -34,7 +34,7 @@ After removing premium connectors from the app, you must publish the app for the
 It is expected that the app continues to show as premium designation. End-users can still play the apps with an Office-seeded license. 
 
 ### Why are my users, who have a Dynamics license, getting prompted to sign up for a trial license when they open the app in a web browser?
-Different Dynamics licenses have different use rights in Power Apps, so we recommend that you review the Power Platform licensing guide to find your Dynamics license first. All Dynamics licenses with Power Apps usage rights allow users to play apps that don't use premium capabilities in both embedded and standalone mode. However, if your Dynamics license is listed as having _limited use rights_ for Power Apps, you can only play canvas apps with premium capabilities when embedded inside model-driven apps using the supported method as [documented](https://go.microsoft.com/fwlink/?linkid=2301259). This means that you can't play these canvas apps in standalone mode in a web browser or the mobile player. If the embedding is done using other methods, such as using an iframe, the limited use rights will not apply.
+Different Dynamics licenses have different use rights in Power Apps, so we recommend that you review the Power Platform licensing guide to find your Dynamics license first. All Dynamics licenses with Power Apps usage rights allow users to play apps that don't use premium capabilities in both embedded and standalone mode. However, if your Dynamics license is listed as having _limited use rights_ for Power Apps, you can only play canvas apps with premium capabilities when embedded inside model-driven apps using the supported method which is documented in [Add a custom page to your model-driven app](https://go.microsoft.com/fwlink/?linkid=2301259). This means that you can't play these canvas apps in standalone mode in a web browser or the mobile player. If the embedding is done using other methods, such as using an iframe, the limited use rights doesn't apply.
 
 ### If my app requires premium licensing, what are my licensing options for end-users? 
 End-users need an entitlement to access a premium app. [Learn more](powerapps-flow-licensing-faq.md#how-is-microsoft-power-apps-licensed) for different entitlement options.
