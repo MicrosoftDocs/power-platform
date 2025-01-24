@@ -134,12 +134,13 @@ Set-AppAsUnquarantined -EnvironmentName <EnvironmentName> -AppName <AppName>
 Get-AppQuarantineState -EnvironmentName <EnvironmentName> -AppName <AppName>
 ```
 
-## Conditional Access on individual apps (preview)
-In addition to respecting Conditional Access policies applied to the Power Apps service, it's possible to apply Microsoft Entra Conditional Access policies to individual apps created using Power Apps. For example, an admin can apply a Conditional Access policy requiring Multi-factor authentication only on apps containing sensitive data. Power Apps uses [Conditional Access authentication context](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps#authentication-context-preview) as the mechanism to target Conditional Access policies on granular apps. Admins are the persona allowed to add and remove authentication contexts on an app. Makers cannot edit authentication contexts on an app.   
+## Managed Environments: Conditional Access on individual apps
+In addition to respecting Conditional Access policies applied to the Power Apps service, in Managed Environments it's possible to apply Microsoft Entra Conditional Access policies to individual apps created using Power Apps. For example, an admin can apply a Conditional Access policy requiring Multi-factor authentication only on apps containing sensitive data. Power Apps uses [Conditional Access authentication context](/entra/identity/conditional-access/concept-conditional-access-cloud-apps#authentication-context) as the mechanism to target Conditional Access policies on granular apps. Admins are the persona allowed to add and remove authentication contexts on an app. Makers cannot edit authentication contexts on an app.   
 
 > [!NOTE]
 > 1. Authentication contexts set on an app are not moved with apps in solutions and moved across environments. This allows different authentication contexts to be applied to apps in different environments. Also, as an app moves across environments via solutions the authentication context set in an environment is preserved. For example, if an authentication context is set on an app in a UAT environment, that authentication context is preserved. 
-> 2. Multiple authentication contexts might be set on an app. An end user must pass the union of Conditional Access policies applied by multiple authentication contexts. 
+> 2. Multiple authentication contexts might be set on an app. An end user must pass the union of Conditional Access policies applied by multiple authentication contexts.
+> 3. Conditional Access on individual apps is a Managed Environments feature.
 
 The following table outlines how Conditional Access enforcement on a specific app impacts the experiences for admins, makers, and end users.  
 
