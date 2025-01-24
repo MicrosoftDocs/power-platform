@@ -1,5 +1,5 @@
 ---
-title: Manage Power Apps | Microsoft Docs
+title: Manage Power Apps
 description: How to manage apps created using Power Apps in your organization.
 author: alaug
 ms.component: pa-admin
