@@ -41,12 +41,12 @@ To update these settings, make sure you have the System Administrator or System 
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
 > [!NOTE]
-> Turning off Copilot in Power Apps for your tenant turns off [Copilot for makers](/power-apps/maker/canvas-apps/ai-conversations-create-app). It doesn't turn off [Copilot control for canvas apps](/power-apps/maker/canvas-apps/add-ai-copilot), [Copilot for model-driven apps](/power-apps/maker/canvas-apps/add-ai-copilot), or [Copilot in Dynamics 365 Sales apps](/dynamics365/sales/enable-setup-copilot). 
+> Turning off Copilot in Power Apps for your tenant turns off [Copilot for makers](/power-apps/maker/canvas-apps/ai-conversations-create-app). It doesn't turn off [Copilot control for canvas apps](/power-apps/maker/canvas-apps/add-ai-copilot), [Copilot for model-driven apps](/power-apps/maker/canvas-apps/add-ai-copilot), or [Copilot in Dynamics 365 Sales apps](/dynamics365/sales/enable-setup-copilot).
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
 | Enable new AI-powered Copilot features for people who make apps. | When **On**, lets preview Copilot features that help create apps, tables apps, tables, edit apps, generate formulas, answering how-to questions and AI Builder GPT experiences. Learn more in [AI Copilot overview ](/power-apps/maker/canvas-apps/ai-overview). <br><br>**Note**: [Generally available](general-availability-deployment.md) Copilot features are turned on by default and can't be turned off. To turn them off, a tenant admin must [contact support](get-help-support.md).| On |
-| Allow users to analyze data using an AI-powered chat experience in canvas and model-driven apps. <br><br>**Note**: For model-driven apps, this environment needs to be set to the monthly release channel.| When **On**, lets Copilot in canvas apps, model-driven apps, and Dynamics 365 Sales apps for users to ask questions and have a natural language conversation about data in the app. Learn more in [Add Copilot control to a canvas app ](/power-apps/maker/canvas-apps/add-ai-copilot), [Add Copilot to model-driven apps](/power-apps/maker/model-driven-apps/add-ai-copilot) and [Enable and configure Copilot in Dynamics 365 Sales](/dynamics365/sales/enable-setup-copilot).<br><br>When set to **Default**, only [Copilot in Dynamics 365 Sales apps](/dynamics365/sales/enable-setup-copilot) is turned on. | Default |
+| Allow users to analyze data using an AI-powered chat experience in canvas and model-driven apps. <br><br>**Note**: For model-driven apps, this environment needs to be set to the monthly release channel.| When **On**, lets Copilot in canvas apps, model-driven apps, and Dynamics 365 Sales apps for users to ask questions and have a natural language conversation about data in the app. Learn more in [Add Copilot control to a canvas app ](/power-apps/maker/canvas-apps/add-ai-copilot), [Add Copilot to model-driven apps](/power-apps/maker/model-driven-apps/add-ai-copilot), and [Enable and configure Copilot in Dynamics 365 Sales](/dynamics365/sales/enable-setup-copilot).<br><br>When set to **Default**, only [Copilot in Dynamics 365 Sales apps](/dynamics365/sales/enable-setup-copilot) is turned on. | Default |
 | Allow canvas editors to insert the Copilot answer component, which allows users to receive an AI-powered answer to a predefined data query.| When **On**, lets makers add a Copilot answer control that allows users to receive an AI-powered answer to a predefined question set by a maker. Learn more in [Use Copilot answer control for canvas apps (preview)](/power-apps/maker/canvas-apps/copilot-answer-control-overview).| Off |
 
 ## Microsoft 365 Copilot
@@ -70,7 +70,7 @@ To update these settings, make sure you have the System Administrator or System 
 ## AI form fill assistance
 
 > [!NOTE]
-> Users may need to clear the cache and refresh the browser twice for the setting change to take effect.
+> Users might need to clear the cache and refresh the browser twice for the setting change to take effect.
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
@@ -78,13 +78,13 @@ To update these settings, make sure you have the System Administrator or System 
 | Enable smart paste (preview) | Smart paste (preview) uses the text copied to your clipboard to suggest text for specific fields and provides inline suggestions in the form. | Off |
 
 ## AI suggestions for formula columns (preview)
+
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-
-| Allow users to get AI suggestions when creating formula columns. | If **On**, app makers are able to describe what the formula should do and get AI generated results to help create or edit a Microsoft Dataverse formula column. Formula suggestions in formula columns accept natural language input to interpret and suggest a Power Fx formula using a GPT-based AI model. Learn more in [Get formula suggestions](/power-apps/maker/data-platform/formula-columns#get-formula-suggestions-preview-1).  | Off |
+| Allow users to get AI suggestions when creating formula columns. | If **On**, app makers are able to describe what the formula should do and get AI generated results to help create or edit a Microsoft Dataverse formula column. Formula suggestions in formula columns accept natural language input to interpret and suggest a Power Fx formula using a GPT-based AI model. Learn more in [Get formula suggestions](/power-apps/maker/data-platform/formula-columns#get-formula-suggestions-preview-1). | Off |
 
 ## Natural language grid and view search (preview)
 
@@ -93,17 +93,8 @@ To update these settings, make sure you have the System Administrator or System 
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-| Enable this feature for:  | When searching for data in a grid, you can ask questions with natural language. For example, requesting “cases with high priority with overdue follow-up by date” filters your view to display only those relevant cases. Learn more in [Smart grid (preview)](/power-apps/user/grid-filters#smart-grid-preview).<br><br>To allow natural language search in an environment, it's required that users in that environment have a Dynamics 365 license. If the environment only has users with Power Apps licensing, additional Copilot licenses are required to use this feature in production.   | Users as the feature becomes available (default)<br><br>**Note**: Starting with the December monthly channel, users with Dynamics 365 licenses will start seeing the feature in their apps.  We expect this rollout to be gradual.  While quality of the feature will be maintained for all users, it's possible that different users may see some UI variations in their experience.|
+| Enable this feature for:  | When searching for data in a grid, you can ask questions with natural language. For example, requesting “cases with high priority with overdue follow-up by date” filters your view to display only those relevant cases. Learn more in [Smart grid (preview)](/power-apps/user/grid-filters#smart-grid-preview).<br><br>To allow natural language search in an environment, users in that environment must have a Dynamics 365 license. If the environment only has users with Power Apps licensing, other Copilot licenses are required to use this feature in production.   | Users as the feature becomes available (default)<br><br>**Note**: Starting with the December monthly channel, users with Dynamics 365 licenses start seeing the feature in their apps. We expect this rollout to be gradual. While quality of the feature is maintained for all users, it's possible that different users might see some UI variations in their experience.|
 | Allow AI to generate charts to visualize the data in a view (Preview) | When **On**, users can select the **Visualize** button on the view pages of model-driven apps to see an AI-generated chart that aggregates the records in the view to show trends and distributions. Learn more in [Visualize data in a view with Copilot](https://go.microsoft.com/fwlink/?linkid=2300297). | Auto<br><br>This feature is turned on by default for all users who have **Natural language grid and view search (preview)** turned on.|
-
-## Natural language grid and view search (preview)
-
-[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
-[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
-
-| Setting | Description | Default value |
-|---------|-------------|---------------|
-| Enable this feature for:  | When searching for data in a grid, you can ask questions with natural language. For example, requesting “cases with high priority with overdue follow-up by date” filters your view to display only those relevant cases.Learn more in [Smart grid (preview)](/power-apps/user/grid-filters#smart-grid-preview).<br><br>To allow natural language search in an environment, users in that environment must have a Dynamics 365 license. If the environment only has users with Power Apps licensing, other Copilot licenses are required to use this feature in production.   | Users as the feature becomes available (default)<br><br>**Note**: Starting with the December monthly channel, users with Dynamics 365 licenses start seeing the feature in their apps.  We expect this rollout to be gradual.  While quality of the feature is maintained for all users, it's possible that different users might see some UI variations in their experience.|
 
 ## AI insight cards (preview)
 
@@ -178,6 +169,7 @@ To update these settings, make sure you have the System Administrator or System 
 | Allow records to be merged asynchronously | If **On**, records merged through the Unified Client interface are merged asynchronously in the background. |Off |
 
 ## Create new canvas apps and cloud flows in a Dataverse solution (preview)
+
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
@@ -187,12 +179,13 @@ To update these settings, make sure you have the System Administrator or System 
 | Cloud flows | Learn more in [Add canvas apps and cloud flows to solution by default (preview)](/power-apps/maker/canvas-apps/add-app-solution-default). | Off |
 
 ## Cloud flow run history in Dataverse (preview)
+
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-| FlowRun entity time to live | <Description> | Enabled - 28 days retention (default) |
+| FlowRun entity time to live | Time in seconds of when this run record is automatically deleted. | Enabled - 28 days retention (default) |
 
 ## Block unmanaged customizations
 
@@ -210,14 +203,14 @@ To update these settings, make sure you have the System Administrator or System 
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-| Enable security on Attachment entity |  <Description> | <Value> |
+| Enable security on Attachment entity |  Earlier versions of the Power Platform lacked a security model to restrict access to attachments. This setting was introduced to allow customers to revert in case any issues arose with the implementation of attachment security enforcement. It's recommended that this setting remains enabled. | On |
 
 ## Microsoft Fabric
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-| Enable admins to link Dataverse tables with a Microsoft Fabric workspace and get real-time insights. |  <Description> | <Value> |
-| Enable users to define Dataverse virtual tables using data from Microsoft Fabric and build apps (preview). | <Description> | Value> |
+| Enable admins to link Dataverse tables with a Microsoft Fabric workspace and get real-time insights. |  Enables a system admin to disable the “Link to Fabric: feature in the selected environment. The [Link to Fabric](/power-apps/maker/data-platform/azure-synapse-link-view-in-fabric#link-to-microsoft-fabric) feature is used to get insights on Dataverse and Finance and operations data. Admins can reduce data exposure by disabling this feature in specific environments such as sandbox and dev environments. | On |
+| Enable users to define Dataverse virtual tables using data from Microsoft Fabric and build apps (preview). | Enables a system admin to disable the feature where makers can [create virtual tables using Fabric OneLake data](/power-apps/maker/data-platform/azure-synapse-link-build-apps-with-fabric). While this feature is useful for building apps and driving insights from Fabric One Lake data, admins can disable this feature in specific sandbox and developer environments as needed. | On |
 
 ## Power Automate capacity
 
@@ -307,6 +300,7 @@ To update these settings, make sure you have the System Administrator or System 
  |Allow information sharing between this environment and Power BI workspaces in other geographic regions | When this setting is **On** and the Power BI tenant setting **[Power Platform interregional access](/power-bi/admin/service-admin-portal-integration#power-platform-interregional-access)** is also **On**, cross-geo operations can take place. Learn more in [Cross-geo operations](/power-bi/collaborate-share/service-power-bi-powerapps-integration-considerations#cross-geo-operations). |On|
 
 ## Recycle Bin (preview)
+
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
