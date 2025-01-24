@@ -4,12 +4,14 @@ description: How to manage apps created using Power Apps in your organization.
 author: alaug
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/12/2024
+ms.date: 01/24/2025
 ms.subservice: admin
 ms.author: alaug
 ms.reviewer: sericks
 search.audienceType: 
   - admin
+contributors:
+  - akadrno 
 ---
 
 # Manage Power Apps
