@@ -29,7 +29,7 @@ Case studies are detailed accounts of real-world applications and implementation
 
 | Case study | Description |
 | --- | --- |
-| [A1 Inteligencia](boost-efficiency-experience-case-study.md) | This case study covers how A1 Inteligencia em Viagens boosts team efficiency and customer experience with Power Automate and Copilot Studio. |
+| [A1 Inteligência em Viagens boosts efficiency and customer experience](boost-efficiency-experience-case-study.md) | This case study covers how A1 Inteligência em Viagens boosts team efficiency and customer experience with Power Automate and Copilot Studio. |
 | [Epiq streamlines employee onboarding](streamline-employee-onboarding.md) | This case study covers how Epiq streamlines employee onboarding with Power Automate, Microsoft Dataverse, and AI Builder. |
 | [Degress of Change automates nonprofit operations](nonprofit.md) | This case study covers how Degrees of Change automates nonprofit operations with Power Pages, Power Apps, and AI Builder. |
 | [Cineplex automates business processes](automate-business-processes.md) | This case study covers how Cineplex automates business processes with generative AI and Power Automate. |
