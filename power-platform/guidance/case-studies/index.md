@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.date: 01/24/2025
 ---
 
-# Overview
+# Real-world case studies
 
 The case studies in this section show how real customers have harnessed Power Platform technologies to create innovative solutions.
 
