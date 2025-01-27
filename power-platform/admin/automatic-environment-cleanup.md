@@ -3,7 +3,7 @@ title: Automatic deletion of Power Platform environments
 description: Learn about the automatic processes that identify and disable Power Platform environments and how you can prevent them from being deleted.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 01/13/2025
+ms.date: 01/27/2025
 ms.subservice: admin
 author: matapg007
 ms.author: matgupta 
