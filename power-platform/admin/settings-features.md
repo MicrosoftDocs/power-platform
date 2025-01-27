@@ -4,7 +4,7 @@ description: Learn how to manage feature settings to adjust how features appear 
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/24/2025
+ms.date: 01/27/2025
 ms.subservice: admin
 ms.author: sericks
 ms.reviewer: sericks
@@ -93,8 +93,8 @@ To update these settings, make sure you have the System Administrator or System 
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-| Enable this feature for:  | When searching for data in a grid, you can ask questions with natural language. For example, requesting “cases with high priority with overdue follow-up by date” filters your view to display only those relevant cases. Learn more in [Smart grid (preview)](/power-apps/user/grid-filters#smart-grid-preview).<br><br>To allow natural language search in an environment, users in that environment must have a Dynamics 365 license. If the environment only has users with Power Apps licensing, other Copilot licenses are required to use this feature in production.   | Users as the feature becomes available (default)<br><br>**Note**: Starting with the December monthly channel, users with Dynamics 365 licenses start seeing the feature in their apps. We expect this rollout to be gradual. While quality of the feature is maintained for all users, it's possible that different users might see some UI variations in their experience.|
-| Allow AI to generate charts to visualize the data in a view (Preview) | When **On**, users can select the **Visualize** button on the view pages of model-driven apps to see an AI-generated chart that aggregates the records in the view to show trends and distributions. Learn more in [Visualize data in a view with Copilot](https://go.microsoft.com/fwlink/?linkid=2300297). | Auto<br><br>This feature is turned on by default for all users who have **Natural language grid and view search (preview)** turned on.|
+| Enable this feature for:  | When searching for data in a grid, you can ask questions with natural language. For example, requesting “cases with high priority with overdue follow-up by date” filters your view to display only those relevant cases. Learn more in [Smart grid (preview)](/power-apps/user/grid-filters#smart-grid-preview).<br><br>To allow natural language search in an environment, users in that environment must have a Dynamics 365 license. If the environment only has users with Power Apps licensing, other Copilot licenses are required to use this feature in production.   | Users as the feature becomes available (default)<br><br>**Note**: Starting with the December monthly channel, users with Dynamics 365 licenses start seeing the feature in their apps.  We expect this rollout to be gradual. While quality of the feature is maintained for all users, it's possible that different users might see some UI variations in their experience.|
+| Allow AI to generate charts to visualize the data in a view (Preview) | When **On**, users can select the **Visualize** button on the view pages of model-driven apps to see an AI-generated chart that aggregates the records in the view to show trends and distributions. Learn more in [Visualize data in a view with Copilot](/power-apps/user/visualize-data-in-copilot). | Auto<br><br>This feature is turned on by default for all users who have **Natural language grid and view search (preview)** turned on.|
 
 ## AI insight cards (preview)
 
