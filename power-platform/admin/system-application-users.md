@@ -3,7 +3,7 @@ title: Special system users and application users
 description: Learn about the special system and application users created when the system is provisioned, including assigned security role, user name, and purpose.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/23/2025
+ms.date: 01/27/2025
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
@@ -34,11 +34,11 @@ Most of these users are hidden from user views but they can be found by using th
 
 |Full name  |User name  |Purpose  | Security role assigned |
 |-----------|-----------|---------|------------------------|
-| Business Application Platform Service account |bap_sa@microsoft.com |To setup Power Apps system and configurations. |System admin |
+| Business Application Platform Service account |bap_sa@microsoft.com |To set up Power Apps system and configurations. |System admin |
 | App Management User | capam@microsoft.com | To allow App Management Services to query tenant details such as Tenant country | System admin |
 | CAP Package Deployer Service DVClient | CAPPackageDeployerServiceDVClient@onmicrosoft.com | To import solutions into customer environments for customer-driven installations from Power Platform admin center. | System admin |
 | Dataverse Dataverse search | RelevanceSearch@onmicrosoft.com | To fetch table data and metadata for Dataverse search feature | System admin |
-| # D365WorkAssignment<br> # D365WorkAssignment2<br> # D365WorkAssignment3 | D365WorkAssignment@onmicrosoft.com<br> D365WorkAssignment2@onmicrosoft.com<br> D365WorkAssignment3@onmicrosoft.com | Service application to perform data integration between Dataverse and the Work assignemnt feature in Dynamics 365 Sales. | Sales Work Assignment API Access and Sales Work Assignment API Extended Access |
+| # D365WorkAssignment<br> # D365WorkAssignment2<br> # D365WorkAssignment3 | D365WorkAssignment@onmicrosoft.com<br> D365WorkAssignment2@onmicrosoft.com<br> D365WorkAssignment3@onmicrosoft.com | Service application to perform data integration between Dataverse and the Work assignment feature in Dynamics 365 Sales. | Sales Work Assignment API Access and Sales Work Assignment API Extended Access |
 | Dynamics 365 Office Data Service | diofficedata@microsoft.com |Service Application to perform data integration between Microsoft Dataverse and Microsoft 365. | DataLakeWorkspaceAppAccess |
 | Dynamics 365 Athena-CDStoAzuredatalake | Dynamics365Athena-<br />CDStoAzuredatalake<br />@onmicrosoft.com |Service application to perform data integration between Microsoft Dataverse to Azure Data Lake. |DataLakeWorkspaceAppAccess |
 | Dynamics 365 Athena2-CDStoAzuredatalake | Dynamics365Athena2-<br />CDStoAzuredatalake<br />@onmicrosoft.com |Service application to perform data integration between Dataverse to Azure Data Lake. |DataLakeWorkspaceAppAccess |
