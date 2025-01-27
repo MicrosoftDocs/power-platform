@@ -401,7 +401,7 @@
         },
         "errorCode": {
           "format": "int32",
-          "description": "Error code from CDS.",
+          "description": "Error code from Dataverse.",
           "type": "integer"
         },
         "message": {
