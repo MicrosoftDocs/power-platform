@@ -59,6 +59,6 @@ In Power Apps, populate the service with your organization’s data, including u
 
  [Plan for deployment and administration](../admin/plan-for-deployment-and-administration.md)
  [Import data (all record types)](../admin/import-data-all-record-types.md)
- [Video: Administer application users, security roles, teams, and users in the Power Platform admin center](https://www.microsoft.com/videoplayer/embed/RWJBr8)
+ [Video: Administer application users, security roles, teams, and users in the Power Platform admin center](https://learn-video.azurefd.net/vod/player?id=5799c67e-f283-4cbd-aafa-bc38a3f53276)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

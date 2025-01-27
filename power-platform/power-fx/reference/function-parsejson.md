@@ -6,9 +6,9 @@ author: gregli
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 6/10/2024
+ms.date: 1/14/2025
 ms.subservice: power-fx
-ms.author: jorisde
+ms.author: gregli
 search.audienceType: 
   - maker
 contributors:
@@ -19,20 +19,32 @@ contributors:
 
 **Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Pages :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
 
-Interprets a JSON string and returns an [untyped object](../untyped-object.md).
+Interprets a JSON string and returns an [untyped object](../untyped-object.md) or typed object.
+
+> [!IMPORTANT]
+> - Using the second argument to **ParseJSON** to convert to a typed object is an experimental feature.
+> - Experimental features aren't meant for production use and may have restricted functionality. These features are available before an official release so that you can get early access and provide feedback. More information: [**Understand experimental, preview, and retired features in canvas apps**](/power-apps/maker/canvas-apps/working-with-experimental-preview)
+> - The behavior that this article describes is available only when the **User-defined types** experimental feature in [**Settings &gt; Upcoming features &gt; Experimental**](/power-apps/maker/canvas-apps/working-with-experimental-preview#controlling-which-features-are-enabled) is turned on (it's off by default).
+> - Your feedback is very valuable to us. Please let us know what you think in the [**Power Apps experimental features community forum**](https://community.powerplatform.com/forums/thread/details/?threadid=c8824a08-8198-ef11-8a69-7c1e52494f33).
 
 ## Description
-The ParseJSON function will parse a valid JSON string and return an [untyped object](../untyped-object.md) representing the JSON structure. 
+The ParseJSON function parses a valid JSON string and returns an [untyped object](../untyped-object.md) representing the JSON structure. 
 
-The ParseJSON function may return errors if the text isn't valid JSON according to the JavaScript Object Notation (JSON) format described in [ECMA-404](https://www.ecma-international.org/publications-and-standards/standards/ecma-404) and [IETF RFC 8259](https://tools.ietf.org/html/rfc8259).
+Optionally, use the second argument to convert the JSON to a typed object that can be directly used in Power Fx formulas. This makes the result easier to consume as conversions and coercions at the point of use are no longer required. The untyped JSON is mapped to the type with these rules:
+- Columns in the type which are not present in the JSON are filled in with *blank*.
+- Columns in the JSON which are not present in the type are ignored.
+- Columns that are both in the type and JSON, the JSON value must be coercible to the type.
+
+The ParseJSON function can return errors if the text isn't valid JSON according to the JavaScript Object Notation (JSON) format described in [ECMA-404](https://www.ecma-international.org/publications-and-standards/standards/ecma-404) and [IETF RFC 8259](https://tools.ietf.org/html/rfc8259).
 
 ## Syntax
-**ParseJSON**( *JSONString* )
+**ParseJSON**( *JSONString* [ , *Type* ] )
 
-* *JSONString* – Required. The JSON structure represented as text.
+- *JSONString* – Required. The JSON structure represented as text.
+- *Type* - Optional. The Power Fx type definition for the JSON structure. Without this argument, **ParseJSON** returns an untyped object; with it and the function returns a strongly typed object.
 
 ## Converting Untyped object data type
-ParseJSON returns an [untyped object](../untyped-object.md) which requires explicit conversion of field values in supported data types. The following table lists the [data types](../data-types.md) in Power Apps and a corresponding JSON data type and how to convert it.
+Without the second argument, ParseJSON returns an [untyped object](../untyped-object.md) which requires explicit conversion of field values in supported data types. The following table lists the [data types](../data-types.md) in Power Apps and a corresponding JSON data type and how to convert it.
 
 | Data type | JSON examples | Description  | Example conversion |
 | --- | --- | --- | --- |
@@ -134,7 +146,7 @@ Given the following JSON string in a variable named `JsonString`
 **Table()** returns a single-column table of **untyped objects** with a single-column Value for number in the array...
 
    ```power-fx
-    Set(untypedTable, Table( ParseJSON( JsonString ).array );
+    Set(untypedTable, Table( ParseJSON( JsonString ).array ));
     
     Value( Index(untypedTable, 1).Value.Value )
     ```
@@ -150,10 +162,9 @@ Given the following JSON string in a variable named `JsonString`
 **Table()** returns a single-column table of **untyped objects** that represents each json object in the array.
 
   ```power-fx
-    Set(untypedTable, Table( ParseJSON( JsonString ).array );
+    Set(untypedTable, Table( ParseJSON( JsonString ).array ) );
     
     Text( Index(untypedTable, 1).Value.name )
    ```
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

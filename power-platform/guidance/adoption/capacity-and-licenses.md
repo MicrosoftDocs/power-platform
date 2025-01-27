@@ -1,24 +1,21 @@
 ---
-title: "Plan and manage license and capacity allocations - Microsoft Power Platform | MicrosoftDocs"
+title: Plan and manage license and capacity allocations
 description: "Find answers to questions around how to plan licensing and capacity for your organization's or team's applications or processes."
 author: manuelap-msft
-
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/09/2020
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: sericks
+ms.reviewer: jhaskett-msft
 search.audienceType: 
   - admin
 ---
 
 # Plan and manage license and capacity allocations
 
-Do you have questions about how to plan licensing and capacity for your organization's or team's applications or processes? Watch the following session to learn about the current and incoming capabilities of the platform and how you can take advantage and choose the right plans for your organization.
->
-> [!VIDEO https://medius.studios.ms/video/asset/HIGHMP4/IG19-BRK2223]
->
+Do you have questions about how to plan licensing and capacity for your organization's or team's applications or processes? Read on to learn about the options available to ensure you make informed decisions.
+
 Full Power Apps and Power Automate capabilities are licensed on a standalone basis. Additionally, limited Power Apps and Power Automate capabilities are included within various Office 365 and Dynamics 365 licenses—that means users with those licenses already have access to Power Apps and Power Automate. The [Microsoft Power Apps and Power Automate Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=2085130) provides more details.
 
 As an administrator, you aren't required to have a standalone Power Apps or Power Automate license to manage environments.
@@ -52,7 +49,7 @@ More details can be found in the [self-service purchasing FAQ](/microsoft-365/co
 
 ## API capacity
 
-Another key licensing concept to be aware of is the request limits and allocation. On a daily per user basis, API usage is tracked across Power Apps and Power Automate workflows, in addition to direct developer API usage. The usage is expected to stay below the API request allocation that is provided based on the type of usage. The allocation and usage are tracked at the user level and not at the tenant level. The allocations have been designed so that most users will never exceed the limits. You can monitor basic usage metrics in the admin portal and more detailed usage will be provided in the future. Administrators should work with app makers to help them design their solutions to stay within the limits. If usage for a user continuously exceeds the limit, consider an add-on to increase the individual user's limit. For more details about request limits and allocations, see [Microsoft Power Platform limits](../../admin/api-request-limits-allocations.md).
+Another key licensing concept to be aware of is the request limits and allocation. On a daily per user basis, API usage is tracked across Power Apps and Power Automate workflows, in addition to direct developer API usage. The usage is expected to stay below the API request allocation that is provided based on the type of usage. The allocation and usage are tracked at the user level and not at the tenant level. The allocations have been designed so that most users will never exceed the limits. You can monitor basic usage metrics in the admin portal and more detailed usage will be provided in the future. Administrators should work with app makers to help them design their solutions to stay within the limits. If usage for a user continuously exceeds the limit, consider an add-on to increase the individual user's limit. Learn more about request limits and allocations in [Microsoft Power Platform limits](../../admin/api-request-limits-allocations.md).
 
 ## Storage capacity
 
