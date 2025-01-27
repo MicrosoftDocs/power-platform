@@ -2,7 +2,7 @@
   "swagger": "2.0",
   "info": {
     "title": "Microsoft Power Platform REST API",
-    "description": "Unified API for all administrative capabilities in Microsoft Power Platform",
+    "description": "Unified API for all administrative capabilities in Microsoft Power Platform.",
     "version": "2022-03-01-preview"
   },
   "host": "api.powerplatform.com",
@@ -24,7 +24,7 @@
           {
             "in": "path",
             "name": "groupId",
-            "description": "The group Id.",
+            "description": "The group ID.",
             "required": true,
             "type": "string"
           },
@@ -79,7 +79,7 @@
           {
             "in": "query",
             "name": "api-version",
-            "description": "The API version",
+            "description": "The API version.",
             "required": true,
             "type": "string",
             "default": "2022-03-01-preview"
@@ -132,7 +132,7 @@
           {
             "in": "query",
             "name": "api-version",
-            "description": "The API version",
+            "description": "The API version.",
             "required": true,
             "type": "string",
             "default": "2022-03-01-preview"
@@ -168,7 +168,7 @@
           {
             "in": "query",
             "name": "api-version",
-            "description": "The API version",
+            "description": "The API version.",
             "required": true,
             "type": "string",
             "default": "2022-03-01-preview"
@@ -208,7 +208,7 @@
           {
             "in": "query",
             "name": "api-version",
-            "description": "The API version",
+            "description": "The API version.",
             "required": true,
             "type": "string",
             "default": "2022-03-01-preview"
@@ -256,7 +256,7 @@
           {
             "in": "path",
             "name": "groupId",
-            "description": "The group Id.",
+            "description": "The group ID.",
             "required": true,
             "type": "string",
             "format": "uuid"
@@ -264,14 +264,14 @@
           {
             "in": "path",
             "name": "environmentId",
-            "description": "The environment Id.",
+            "description": "The environment ID.",
             "required": true,
             "type": "string"
           },
           {
             "in": "query",
             "name": "api-version",
-            "description": "The API version",
+            "description": "The API version.",
             "required": true,
             "type": "string",
             "default": "2022-03-01-preview"
@@ -307,7 +307,7 @@
           {
             "in": "path",
             "name": "groupId",
-            "description": "The group Id.",
+            "description": "The group ID.",
             "required": true,
             "type": "string",
             "format": "uuid"
@@ -315,14 +315,14 @@
           {
             "in": "path",
             "name": "environmentId",
-            "description": "The environment Id.",
+            "description": "The environment ID.",
             "required": true,
             "type": "string"
           },
           {
             "in": "query",
             "name": "api-version",
-            "description": "The API version",
+            "description": "The API version.",
             "required": true,
             "type": "string",
             "default": "2022-03-01-preview"
@@ -349,7 +349,7 @@
         "tags": [
           "EnvironmentGroups"
         ],
-        "summary": "Get Operation Status.",
+        "summary": "Get operation status.",
         "operationId": "GetEnvironmentGroupOperation",
         "produces": [
           "application/json"
@@ -358,7 +358,7 @@
           {
             "in": "path",
             "name": "operationId",
-            "description": "The operation id.",
+            "description": "The operation ID.",
             "required": true,
             "type": "string",
             "format": "uuid"
@@ -366,7 +366,7 @@
           {
             "in": "query",
             "name": "api-version",
-            "description": "The API version",
+            "description": "The API version.",
             "required": true,
             "type": "string",
             "default": "2022-03-01-preview"
@@ -393,7 +393,7 @@
         "tags": [
           "EnvironmentManagementSettings"
         ],
-        "summary": "Create Environment Management Settings",
+        "summary": "Create environment management settings.",
         "operationId": "CreateEnvironmentManagementSettings",
         "consumes": [
           "application/json;odata.metadata=minimal;odata.streaming=true",
@@ -436,14 +436,14 @@
           {
             "in": "path",
             "name": "environmentId",
-            "description": "The environment Id",
+            "description": "The environment ID.",
             "required": true,
             "type": "string"
           },
           {
             "in": "query",
             "name": "api-version",
-            "description": "The API version",
+            "description": "The API version.",
             "required": true,
             "type": "string",
             "default": "2022-03-01-preview"
@@ -451,7 +451,7 @@
           {
             "in": "body",
             "name": "body",
-            "description": "Payload for the Environment Management Setting",
+            "description": "Payload for the environment management setting",
             "schema": {
               "type": "object",
               "additionalProperties": {
@@ -485,7 +485,7 @@
         "tags": [
           "EnvironmentManagementSettings"
         ],
-        "summary": "Gets Environment Management Setting by Id.  Only columns provided in the $select queryOption will be returned.\r\nA list of selectable properties is defined in the Microsoft.Dynamics.Artemis.Infrastructure.Models.EnvironmentManagementSetting type.",
+        "summary": "Gets environment management setting by ID.  Only columns provided in the $select query option will be returned.\r\nA list of selectable properties is defined in the Microsoft.Dynamics.Artemis.Infrastructure.Models.EnvironmentManagementSetting type.",
         "operationId": "ListEnvironmentManagementSettings",
         "produces": [
           "application/json;odata.metadata=minimal;odata.streaming=true",
@@ -509,7 +509,7 @@
           {
             "in": "path",
             "name": "environmentId",
-            "description": "Id for the EnvironmentManagementSetting",
+            "description": "ID for the environment management setting.",
             "required": true,
             "type": "string"
           },
@@ -528,7 +528,7 @@
           {
             "in": "query",
             "name": "api-version",
-            "description": "The API version",
+            "description": "The API version.",
             "required": true,
             "type": "string",
             "default": "2022-03-01-preview"
@@ -565,7 +565,7 @@
         "tags": [
           "EnvironmentManagementSettings"
         ],
-        "summary": "Updates fields on a EnvironmentManagementSetting. This API currently doesn't return any entity data in the response body.",
+        "summary": "Updates fields on a environment management setting. This API currently doesn't return any entity data in the response body.",
         "operationId": "UpdateEnvironmentManagementSettings",
         "consumes": [
           "application/json;odata.metadata=minimal;odata.streaming=true",
@@ -608,14 +608,14 @@
           {
             "in": "path",
             "name": "environmentId",
-            "description": "The Id for the EnvironmentManagementSetting being updated",
+            "description": "The ID for the environment management setting being updated.",
             "required": true,
             "type": "string"
           },
           {
             "in": "query",
             "name": "api-version",
-            "description": "The API version",
+            "description": "The API version.",
             "required": true,
             "type": "string",
             "default": "2022-03-01-preview"
@@ -623,7 +623,7 @@
           {
             "in": "body",
             "name": "body",
-            "description": "Details on the EnvironmentManagementSetting to be updated",
+            "description": "Details on the environment management setting to be updated.",
             "schema": {
               "type": "object",
               "additionalProperties": {
@@ -739,7 +739,7 @@
         },
         "extensions": {
           "type": "object",
-          "additionalProperties": { },
+          "additionalProperties": {},
           "readOnly": true
         }
       },
@@ -774,7 +774,7 @@
       "type": "object",
       "properties": {
         "objectResult": {
-          "description": "Gets or sets the Id of the entity being created in the response",
+          "description": "Gets or sets the ID of the entity being created in the response.",
           "type": "string"
         },
         "errors": {
@@ -782,7 +782,7 @@
         },
         "nextLink": {
           "format": "uri",
-          "description": "Gets or sets the nextLink if there are more records to be returned",
+          "description": "Gets or sets the next link if there are more records to be returned.",
           "type": "string"
         },
         "responseMessage": {
@@ -863,7 +863,7 @@
       "type": "object",
       "properties": {
         "objectResult": {
-          "description": "Gets or sets the fields for the entities being queried",
+          "description": "Gets or sets the fields for the entities being queried.",
           "type": "array",
           "items": {
             "$ref": "#/definitions/EnvironmentManagementSetting"
@@ -874,7 +874,7 @@
         },
         "nextLink": {
           "format": "uri",
-          "description": "Gets or sets the nextLink if there are more records to be returned",
+          "description": "Gets or sets the next link if there are more records to be returned.",
           "type": "string"
         },
         "responseMessage": {
@@ -889,18 +889,18 @@
       "type": "object",
       "properties": {
         "objectResult": {
-          "description": "Gets or sets the response's object"
+          "description": "Gets or sets the response's object."
         },
         "errors": {
           "$ref": "#/definitions/ErrorResponse"
         },
         "nextLink": {
           "format": "uri",
-          "description": "Gets or sets the nextLink if there are more records to be returned",
+          "description": "Gets or sets the next link if there are more records to be returned.",
           "type": "string"
         },
         "debugErrors": {
-          "description": "Gets or sets DebugErrors, only shown for private/local testing",
+          "description": "Gets or sets debug errors, only shown for private/local testing.",
           "type": "string"
         },
         "responseMessage": {
@@ -919,7 +919,7 @@
       "scopes": {
         ".default": ".default"
       },
-      "description": "Microsoft Entra ID OAuth2"
+      "description": "Microsoft Entra ID OAuth2."
     }
   },
   "security": [

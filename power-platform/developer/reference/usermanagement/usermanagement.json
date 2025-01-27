@@ -2,7 +2,7 @@
   "swagger": "2.0",
   "info": {
     "title": "Microsoft Power Platform REST API",
-    "description": "Unified API for all administrative capabilities in Microsoft Power Platform",
+    "description": "Unified API for all administrative capabilities in Microsoft Power Platform.",
     "version": "2022-03-01-preview"
   },
   "host": "api.powerplatform.com",
@@ -15,7 +15,7 @@
         "tags": [
           "Users"
         ],
-        "summary": "Grants requesting tenant admin user the system admin role within Dataverse in the environment.",
+        "summary": "Grants a requesting tenant administrator the system administrator role within Dataverse in the environment.",
         "operationId": "ApplyAdminRole",
         "parameters": [
           {
@@ -27,7 +27,7 @@
           {
             "in": "query",
             "name": "api-version",
-            "description": "The API version",
+            "description": "The API version.",
             "required": true,
             "type": "string",
             "default": "2022-03-01-preview"
@@ -49,7 +49,7 @@
       "scopes": {
         ".default": ".default"
       },
-      "description": "Microsoft Entra ID OAuth2"
+      "description": "Microsoft Entra ID OAuth2."
     }
   },
   "security": [
