@@ -4,13 +4,13 @@ description: Move your environment in a single tenant from one region to another
 author: matapg007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/29/2024
+ms.date: 12/01/2024
 ms.subservice: admin
 ms.author: matgupta 
 ms.reviewer: sericks
 contributors: 
+    - amiyapatr-zz
     - brsova
-    - ProfessorKendrick
     - LaurentPepin
     - bfok123
 search.audienceType: 
@@ -27,7 +27,7 @@ The Geo Migration feature allows customers to move their environments in a singl
 > - Support for geo migration is limited and generally not available.
 > - To request a regional migration, please contact your account manager or see [Technical Support](get-help-support.md).
 > - After making a request, expect at least 10 days for the migration to be completed.  
-> - Geo migrations are not supported into or out of US GCC, US GCC High, or China.
+> - Geo migrations aren't supported into or out of US GCC, US GCC High, or China.
 > - Geo migrations are restricted into or out of OCE or IND.
 > - There are important and critical preparation steps mentioned in the [Geo-to-geo migration steps](#geo-to-geo-migration-steps) section that need to be performed for Power Apps or Power Automate prior to the geo migration. If these steps are missed, it is difficult to recover Power Apps or Power Automate solutions.
 
@@ -66,8 +66,8 @@ The Geo Migration feature allows customers to move their environments in a singl
 - Relink enterprise policies to the environment as necessary. For example, [virtual network](./vnet-support-setup-configure.md#configure-your-power-platform-environment), [customer-managed keys](./customer-managed-key.md#manage-environments-encryption)
 - Work with Microsoft Support to recreate Lockbox requests for the environment as necessary.
 - [Reapply DLP policies](./prevent-data-loss.md) to the environment as necessary.
-- [Readd the environment to an environment group](./environment-groups.md#add-environments-to-your-environment-group) as necessary.
-- [Reapply Pay-as-you-go billing policies](./pay-as-you-go-set-up.md#second-link-an-azure-subscription-to-an-environment) to the environment as necessary.
+- [Read the environment to an environment group](./environment-groups.md#add-environments-to-your-environment-group) as necessary.
+- [Reapply pay-as-you-go plan](./pay-as-you-go-set-up.md#link-an-azure-subscription-to-an-environment) to the environment as necessary.
 - [Repeat currency allocations](./capacity-add-on.md) for the environment as necessary.
 
 ### For components that are in solutions
@@ -89,13 +89,13 @@ The Geo Migration feature allows customers to move their environments in a singl
 2. Delete all canvas apps, custom pages, and component libraries in the solutions you exported in step 1.
 
 > [!IMPORTANT]
-> Solution-aware canvas apps, custom pages, and component libraries that you don't delete from the environment before geo-to-geo migration are left in an inoperable state after the migration completes. You can't play, edit, or export them. You must delete them to unblock any further solution updates. They are restored upon solution import after geo-to-geo migration.
+> Solution-aware canvas apps, custom pages, and component libraries that you don't delete from the environment before geo-to-geo migration are left in an inoperable state after the migration completes. You can't play, edit, or export them. You must delete them to unblock any further solution updates. They're restored upon solution import after geo-to-geo migration.
 
 #### After geo-to-geo migration
 
 Complete these steps in order:
 
-1. Chatbots must be deleted. They are recreated upon solution import in the next step.
+1. Chatbots must be deleted. They're recreated upon solution import in the next step.
 1. All solutions that were exported before geo-to-geo migration must [be imported](/power-apps/maker/data-platform/import-update-export-solutions).
      - When prompted about **Connections**, make sure to **Review and adjust all connections** and recreate connections, as necessary.
      - When prompted about **Environment variables**, make sure environment variables are configured correctly.
@@ -103,7 +103,7 @@ Complete these steps in order:
 1. For dataflows, depending on your connection, you may need to edit the dataflow and [reconfigure the connection](/power-query/dataflows/data-sources?tabs=power-bi-service#connect-to-a-data-source).
 1. Cloud flows must be [reenabled](/power-automate/disable-flow#turn-on-a-flow) to restore functionality.
 
-### For components that are not in solutions
+### For components that aren't in solutions
 In general, it's recommended to create and add all components to solutions, and many components are added to a solution, by default. However, if you still have components that aren't in a solution, many of these components can be migrated with the following steps.
 
 > [!NOTE]
@@ -179,7 +179,7 @@ You should follow the above steps before and after geo-to-geo migration. The fol
 
 |   |    Before the move   |  During the move | After the move |
 |-----|------|---|----|
-| **What Microsoft does** | Notification <br /><br /> Your support representative or Account Manager works with you to request a move and scheduling. | Cut-over <br /><br /> Cut-over times for each service depend on the number of users and the amount of data. This step can take 1 to 6 hours for smaller organizations, but may take up to 48 hours for large organizations. The cut-over is done during the evening or over a weekend. | Notification and support <br /><br /> You will be alerted by email or telephone when your environment is migrated to the new datacenter.<br /><br /> After your environment has migrated, you can perform the post migration steps. |
+| **What Microsoft does** | Notification <br /><br /> Your support representative or Account Manager works with you to request a move and scheduling. | Cut-over <br /><br /> Cut-over times for each service depend on the number of users and the amount of data. This step can take 1 to 6 hours for smaller organizations, but may take up to 48 hours for large organizations. The cut-over is done during the evening or over a weekend. | Notification and support <br /><br /> You'll be alerted by email or telephone when your environment is migrated to the new datacenter.<br /><br /> After your environment has migrated, you can perform the post migration steps. |
 
 We adhere to the terms of the [Microsoft Online Services Service Level Agreement](https://go.microsoft.com/fwlink/p/?LinkID=523897) for all moves.  
 

@@ -1,7 +1,7 @@
 ---
-title: "Important changes (deprecations) coming in Power Platform"
+title: Important changes (deprecations) coming in Power Platform
 description: Important changes (deprecations) coming in Power Platform 
-ms.date: 08/02/2024
+ms.date: 01/08/2025
 ms.topic: conceptual
 ms.subservice: admin
 searchScope:
@@ -22,9 +22,50 @@ For deprecation information of other products, see [Other deprecation articles](
 > [!IMPORTANT]
 > "Deprecated" means we intend to remove the feature or capability from a future release. The feature or capability is fully supported until it's officially removed. This deprecation notification can span a few months or years. After removal, the feature or capability will no longer work. This notice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
 
+## Deprecation of bring-your-own-key (BYOK) Dataverse service
+Starting January 6, 2026, we will discontinue support for the bring-your-own-key (BYOK) feature. Customers are encouraged to transition to [customer-managed keys (CMK)](admin/customer-managed-key.md), an enhanced solution that offers improved functionality, broader support for data sources, and better performance.
+
+### What happens if migration isn't completed? 
+Effective June 1, 2025, customers will be unable to apply BYOK to production environments. 
+
+If your migration to CMK is not completed by January 6, 2026, your environment will automatically revert to Microsoft-managed keys. While this ensures continuity of encryption, it limits the control and flexibility you currently enjoy with BYOK. To avoid disruption and take full advantage of the enhanced features and security offered by CMK, we strongly recommend beginning your migration process as soon as possible. 
+
+We recommend starting your transition to CMK (customer-managed keys) at your earliest convenience, please review [Manage your customer-managed encryption key](admin/customer-managed-key.md) and [Migrate bring-your-own-key (BYOK) environments to customer-managed key](admin/cmk-migrate-from-byok.md).
+
+## Deprecation of Organization Insights Dashboard
+
+The Organization Insights dashboard has been deprecated from the Microsoft Power Apps Default Solution dashbards. Similar organization insights are available in [Microsoft Dataverse analytics](admin/analytics-common-data-service.md).
+
+As part of a service update to enhance security in Power Apps, we're removing Highcharts version 4.2.3.
+
+## Deprecating support for multitenant apps without a service principal in the Microsoft Entra ID tenant 
+
+To boost security and system performance, we are updating authentication protocols for multitenant apps in the Dataverse platform. Starting October 2024, app-only tokens for apps without a service principal in the target tenant aren't supported. This change is essential for mitigating vulnerabilities and safeguarding your data from potential threats. 
+
+### Why is this needed?
+
+[Multitenant apps](/entra/identity-platform/single-and-multi-tenant-apps/) that don't have a client service principal have been recognized as vulnerable. They pose a significant risk of acquiring cross-tenant, open authorization (OAuth) app-only tokens for multitenant services across arbitrary tenants. To address this security vulnerability, apps without a service principal in the tenant are no longer authenticated. Dataverse APIs fail from these apps in deprecated environments.
+
+### Impact
+
+Token generation for multitenant apps fail if the service principal for that app isn't present in the target tenant.
+
+### Action required by you
+
+To ensure the security and integrity of your system and data, we encourage customers to provision the multitenant apps in their Microsoft Entra ID tenant. Learn more in [Create an enterprise application from a multitenant application](/entra/identity/enterprise-apps/create-service-principal-cross-tenant?pivots=msgraph-powershell). 
+
+> [!Note]
+> If application onboarding isn't expected, remove that app or replace it with a compliant app that has a client service principal in the tenant.
+>
+> Make sure that the access token being acquired is from your tenant endpoint (`https://login.microsoftonline.com/{yourtenant}`), not your organization endpoint (`https://login.microsoftonline.com/organizations`).
+
+### When is this change coming into effect? 
+
+Support for app-only tokens by multitenant apps that don't have a service principal ID in the Target Tenant will be removed by October 2024.
+
 ## Hierarchy control in model-driven apps is deprecated
 
-Effective October 2024, the hierarchy control, which is used to define and query hierarchically related data in model-driven apps, is deprecated. The control will continue to work in existing apps until April 2025, at which time it will be removed from the product.
+Effective October 2024, the hierarchy control, which is used to define and query hierarchically related data in model-driven apps, is deprecated. The control will continue to work in existing apps until October 2025, at which time it will be removed from the product.
 
 The hierarchy control allows users to visualize relationships between records for a table. This is applicable for any table that has a self-referential relationship.
 
@@ -38,7 +79,9 @@ After its removal, end users will not be able to view the visual representation 
 
 ### Action required by you
 
-You can enable the control until its removed in the product by editing the app settings. Go to Power Apps (make.powerapps.com) and open the app you want for editing. Then go to **Settings** > **Features** tab and enable the **Enable the "View hierarchy" capability** setting.  
+You can temporarily enable the control until its removed in the product by editing the app settings. Go to Power Apps (make.powerapps.com) and open the app you want for editing. Then go to **Settings** > **Features** tab and enable the **Enable the "View hierarchy" capability** setting.
+
+This feature will be fully removed October 2025.
 
 If the hierarchy view is essential to your app, a custom PCF control that handles the hierarchy view must be created and deployed. For information about how to create a code component, go to [Create and build a code component](/power-apps/developer/component-framework/create-custom-controls-using-pcf).
 
@@ -58,7 +101,14 @@ Thanks to our ISV partners for trying out ISV Studio during the preview. After c
 
 To continue accessing analytics related to your AppSource solutions, use the reporting features in Partner Center. Although this alternative might not offer the same data from ISV Studio, Partner Center serves as a valuable resource for insights and tools to empower your business growth and success.
 
-For the connector certification wizard, learn more about [directly accessing the connector certification portal](/connectors/custom-connectors/submit-certification).
+## Connector Certification Portal Deprecation
+
+The Connector Certification Portal was a preview portal that allowed partners to submit and certify connectors created using the Power Query SDK. Once certified, these connectors would ship in products such as Power BI Desktop, On-Premises Data Gateway and Power Query Online in general.
+
+After careful consideration, and thanks to the feedback from partners, a decision was made to decommission the portal starting 15th Jan 2025.
+
+While the portal will be decommissioned, the program will continue. For the latest information on the status of the program and how to certify your connector, learn more about the [Data Factory Connector Certification](/fabric/data-factory/connector-certification).
+
 
 ## DLP resource exemption feature
 
@@ -90,15 +140,21 @@ Effective April 2024, Dynamics 365 for phones and tablets (iOS and Android) are 
 
 As part of our ongoing efforts to enhance the security and performance of Dataverse platform, we're announcing deprecation of support to unregistered MSA and externals Microsoft Entra users in Dataverse due to its relative obscurity and complexity associated with this feature in authorization scenario.
 
-### What is changing?
+### What's changing?
 
-If a [Microsoft Accounts (MSA)](/azure/active-directory/external-identities/microsoft-account) or [Microsoft Entra accounts](/azure/active-directory/external-identities/default-account) that aren't registered in your Microsoft Entra tenant, you won't be able to access Dataverse on the common endpoint. You'll see an error message like "Microsoft EntraSTS50020: user account '<contoso@contoso.com>; from identity provider '<https://sts.windows.net/{tenant> ID}/' doesn't exist in tenant '{tenant name}' and can't access the application '{application ID}'(Dataverse org name) in that tenant. The account needs to be added as an external user in the tenant first. Sign out and sign in again with different Microsoft Entra user account.". Previously, Dataverse would deny access to these accounts, but now they are blocked at the Microsoft Entra tenant level. This change doesn't affect [GDAP](/partner-center/gdap-introduction) or CSP users.
+If [Microsoft Accounts (MSA)](/azure/active-directory/external-identities/microsoft-account) or [Microsoft Entra accounts](/azure/active-directory/external-identities/default-account) aren't registered in your Microsoft Entra tenant, you can't access Dataverse on the common endpoint. 
+
+You may see an error message similar to this one:
+
+*Microsoft EntraSTS50020: user account `<contoso@contoso.com>`; from identity provider `https://sts.windows.net/{tenant ID}/` doesn't exist in tenant '{tenant name}' and can't access the application '{application ID}'(Dataverse org name) in that tenant.* 
+
+The account must be added as an external user in the tenant. Sign out and sign in again with a different Microsoft Entra user account. Previously, Dataverse denied access to these accounts, but now they're blocked at the Microsoft Entra tenant level. This change doesn't affect [GDAP](/partner-center/gdap-introduction) or CSP users.
 
 ### What do you need to do?
 
-If a user who isn't part of your Microsoft Entra ID needs access to Dataverse organization, the User needs to be added to the Tenant as an external User or Guest User. For detailed steps, see [Add B2B collaboration users in the Microsoft Entra admin center](/azure/active-directory/external-identities/add-users-administrator). Additionally, you can restrict access to the Dataverse organization by reviewing the access granted to external users by following the steps below.
+If a user who isn't part of your Microsoft Entra ID needs access to a Dataverse organization, the user needs to be added to the tenant as an external user or guest user. Learn more in [Add B2B collaboration users in the Microsoft Entra admin center](/azure/active-directory/external-identities/add-users-administrator). Additionally, you can restrict access to the Dataverse organization by reviewing the access granted to external users by following the steps below.
 
-**Disable sharing apps with everyone:** You can assess if sharing applications with everyone (including guests) is a requirement for cross-team collaboration.  If it isn't, then you can disable share with everyone using the following PowerShell script:
+**Disable sharing apps with everyone:** You can assess if sharing applications with everyone (including guests) is a requirement for cross-team collaboration.  If it isn't, then you can disable sharing with everyone using the following PowerShell script:
 
 ```powershell
 $tenantSettings = Get-TenantSettings
@@ -106,7 +162,7 @@ $tenantSettings.powerPlatform.powerApps.disableShareWithEveryone = $true
 Set-TenantSettings $tenantSettings
 ```
 
-**Disable guests from making apps:** You can review if guests making apps in your organization are required. You can disable if guests aren't expected to be makers (such as, customizing SharePoint forms). Note that this option already defaults to `$false`.
+**Disable guests from making apps:** You can review if guests making apps in your organization are required. You can disable it if guests aren't expected to be makers (such as, customizing SharePoint forms). Note that this option already defaults to `$false`.
 
 ```powershell
 $tenantSettings = Get-TenantSettings

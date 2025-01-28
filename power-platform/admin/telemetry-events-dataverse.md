@@ -132,7 +132,7 @@ If a user reports an error, you can use the user ID (Microsoft Entra ID ID) to u
 
 ```kusto
 exceptions
-| where user_Id == '12345678-68cd-4e73-908f-126342b36315'
+| where user_Id == '00aa00aa-bb11-cc22-dd33-44ee44ee44ee'
 ```
 
 The entity ID and entity name are available in **customDimensions** in the **dependency** table.

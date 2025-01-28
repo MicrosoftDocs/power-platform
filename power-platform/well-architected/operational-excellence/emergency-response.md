@@ -116,7 +116,7 @@ Power Platform integrates with [Application Insights](/azure/azure-monitor/app/a
 
 - Configure [Power Automate telemetry](/power-platform/admin/app-insights-cloud-flow) to flow into Application Insights; for example, to monitor cloud flow executions and create alerts for cloud flow run failures.
 
-- Capture telemetry data from your [Microsoft Copilot Studio copilot](/microsoft-copilot-studio/advanced-bot-framework-composer-capture-telemetry) for use in Azure Application Insights. You can use this telemetry to monitor logged messages and events sent to and from your copilot, topics to be triggered during user conversations, and custom telemetry events that can be sent from your topics.
+- Capture telemetry data from your [Microsoft Copilot Studio agent](/microsoft-copilot-studio/advanced-bot-framework-composer-capture-telemetry) for use in Azure Application Insights. You can use this telemetry to monitor logged messages and events sent to and from your agent, topics to be triggered during user conversations, and custom telemetry events that can be sent from your topics.
 
 Application Insights is a comprehensive solution for collecting, analyzing, and responding to monitoring data from cloud and on-premises environments. It includes a robust alerting platform that you can configure for [automatic notifications and other actions](/azure/azure-monitor/alerts/action-groups).
 

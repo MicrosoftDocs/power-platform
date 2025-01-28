@@ -1,10 +1,10 @@
 ---
-title: "Securely access customer data using Customer Lockbox in Power Platform and Dynamics 365 | MicrosoftDocs"
+title: Securely access customer data using Customer Lockbox in Power Platform and Dynamics 365 
 description: This article covers information on how customers can review and approve (or reject) data access requests in the rare occasion when data access to customer data is needed.
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/26/2024
+ms.date: 11/19/2024
 author: mihaelablendea
 ms.author: mihaelab
 ms.reviewer: sericks
@@ -36,7 +36,7 @@ All updates to a lockbox request are recorded and made available to your organiz
 Power Platform and Dynamics 365 applications and services store customer data in several Azure storage technologies. When you turn on Customer Lockbox for an environment, customer data associated with the respective environment is protected by the lockbox policy, irrespective of the storage type.  
 
 > [!NOTE]
-> - Currently, the applications and services where lockbox policy is going to be enforced once enabled are Power Apps (excluding Cards for Power Apps), AI Builder, Power Pages, Power Automate, Microsoft Copilot Studio (excluding GPT AI features), Dataverse, Customer Insights, Customer Service, Communities, Guides, Connected Spaces, Finance (except Lifecycle Services), Project Operations (except Lifecycle Services), Supply Chain Management (except Lifecycle Services), and the real-time marketing feature area of the Marketing app.
+> - Currently, the applications and services where lockbox policy is going to be enforced once enabled are Power Apps (excluding Cards for Power Apps), AI Builder, Power Pages, Power Automate, Microsoft Copilot Studio (excluding GPT AI features and Agent Builder), Dataverse, Customer Insights, Customer Service, Communities, Guides, Connected Spaces, Finance (except Lifecycle Services), Project Operations (except Lifecycle Services), Supply Chain Management (except Lifecycle Services), and the real-time marketing feature area of the Marketing app.
 > - Features powered by Azure OpenAI Service are excluded from Lockbox policy enforcement unless product documentation for a given feature states that Lockbox applies.
 > - Nuance Conversational IVR is excluded from Lockbox policy enforcement unless product documentation for a given feature states that Lockbox applies. 
 > - [Maker Welcome Content](welcome-content.md) is excluded from Lockbox policy enforcement.

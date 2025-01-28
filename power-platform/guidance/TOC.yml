@@ -140,10 +140,14 @@
               href: coe/setup-quarantine-components.md
             - name: Collect audit log data
               items:
-                  - name: Using an HTTP call (recommended)
+                  - name: Using Microsoft Graph API (recommended)
+                    href: coe/setup-auditlog-http-graphapi.md  
+                  - name: Using Office 365 Management API
                     href: coe/setup-auditlog-http.md
-                  - name: Using a custom connector (deprecated)
-                    href: coe/setup-auditlog.md
+                  - name: Collect historic audit log events
+                    href: coe/setup-auditlog-http-old-data.md
+                  - name: Troubleshooting
+                    href: coe/setup-auditlog-troubleshooting.md
             - name: Set up Power BI reports
               href: coe/setup-powerbi.md
             - name: Set up nurture components
@@ -455,10 +459,16 @@
           href: architecture/real-world-examples/pcf-canvas-components.md
     - name: Real-world case studies
       items:
+        - name: Overview
+          href: case-studies/index.md
         - name: A1 Inteligencia em Viagens boosts team efficiency
           href: case-studies/boost-efficiency-experience-case-study.md
         - name: Epiq streamlines employee onboarding
           href: case-studies/streamline-employee-onboarding.md
+        - name: Degrees of Change automates nonprofit operations
+          href: case-studies/nonprofit.md
+        - name: Cineplex automates business processes
+          href: case-studies/automate-business-processes.md
     - name: White papers
       items:
         - name: Power Platform white papers

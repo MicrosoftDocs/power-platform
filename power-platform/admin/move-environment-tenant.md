@@ -1,10 +1,11 @@
 ---
 title: Tenant-to-tenant migrations 
 description: Learn about the impact of migrating an environment from one tenant to another. 
-ms.date: 09/19/2024
+ms.date: 01/28/2025
 ms.topic: conceptual
 author: matapg007
 contributors:
+  - val-bc 
   - brsova
   - ImadYanni
   - bevans 
@@ -14,6 +15,7 @@ ms.author: matgupta
 ms.reviewer: sericks
 search.audienceType: 
   - admin
+
 ---
 
 # Tenant-to-tenant migrations
@@ -118,6 +120,7 @@ Create a user mapping file for the source environment to be transferred to the t
     |Source|	Destination|
     |------|-------------|
     |SourceUser@sourcetenant.com	|DestinationUser@targettenant.com|
+
 
 For full access users:
 

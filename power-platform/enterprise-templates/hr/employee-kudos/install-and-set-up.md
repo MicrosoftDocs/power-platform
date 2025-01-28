@@ -5,7 +5,7 @@ author: tshanep
 ms.author: shanep
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 05/31/2024
+ms.date: 01/21/2025
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -60,10 +60,10 @@ It's important to have a cohesive environment and data policy strategy for enter
 
   More information: [Microsoft Power Platform admin](/power-platform/admin/)
 
-- **Environments** - Follow [application lifecycle management (ALM)](/power-platform/alm/) best practices in [creating and managing environments](/power-platform/admin/create-environment). Also consider:
+- **Environments** - Follow [application lifecycle management (ALM)](/power-platform/alm/) best practices in [creating and managing environments](/power-platform/admin/create-environment). Create and prepare a Power Platform developer environment specifically for the Employee Kudos solution files. Also consider:
 
-  - A Power Platform environment is set up with a Dataverse database.
-  - Environment maker security role privileges, at a minimum, are assigned to the user who installs the solutions in that environment.
+  - The Power Platform environment is set up with a Dataverse database
+  - Environment maker security role privileges, at a minimum, are assigned to the user who installs the solutions in that environment
 
   More information: [Environments overview](/power-platform/admin/environments-overview)
 
@@ -101,7 +101,7 @@ There are two solution installation options available for you to consider:
 
 > [!TIP]
 >
-> Go to the [Templates-for-Power-Platform](https://aka.ms/PowerPlatformTemplateSupport) GitHub project site to log your questions or issues and get support for the Employee Kudos template.
+> Go to the [Templates-for-Power-Platform](https://aka.ms/PowerPlatformTemplateSupport) GitHub project site to log your questions or issues and get support for the Employee Kudos template. You can also check for updates to the [deployment packages](https://github.com/microsoft/Templates-for-Power-Platform/tree/main/DeploymentPackages) on this site.
 
 ### Install from AppSource
 
@@ -121,7 +121,7 @@ You can easily access and install the Employee Kudos template from AppSource, a 
 
 ### Download and manually install solution files
 
-You also have the option to download *managed* or *unmanaged* solution files to manually install into your prepared environment according to your organization's requirements:
+Managed and unmanaged solution files are available for you download and manually install. Take these steps to download and import the solutions directly into the development environment that you prepared for it in the [review prerequisites step](#step-1-review-prerequisites).
 
 1. Download the following managed or unmanaged solution files:
 

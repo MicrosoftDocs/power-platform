@@ -1,5 +1,5 @@
 ---
-title: "Create a team template to control access rights for automatically created teams | MicrosoftDocs"
+title: Create a team template to control access rights for automatically created teams 
 description: Create a team template and add to an entity form
 author: paulliew
 ms.subservice: admin
@@ -9,7 +9,7 @@ ms.custom: "admin-security"
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/23/2024
+ms.date: 10/25/2024
 search.audienceType: 
   - admin
 ---
@@ -27,7 +27,7 @@ After you create a team template, you have to customize the entity main form to 
 
 To learn more about creating, using, and adding access teams to a solution, watch the following video.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RW18Hte] 
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=16ecba96-02be-4d54-aaa2-5359c18983cd] 
 
     
 ## Enable an entity for access teams  
@@ -65,7 +65,7 @@ Check your security role:
 1. Select **Save**.  
 
 > [!NOTE]
-> You can create two access team templates per entity.
+> You can create four access team templates per entity. Learn more in [Auto-created (system-managed) access team](/power-apps/developer/data-platform/use-access-teams-owner-teams-collaborate-share-information#auto-created-system-managed-access-team) if you need to create more.
 
 ## Add a team template to the entity form   
   

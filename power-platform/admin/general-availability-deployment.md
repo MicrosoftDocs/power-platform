@@ -1,16 +1,17 @@
 ---
-title: "General availability deployment  | MicrosoftDocs"
-description: About general availability deployment
+title: General availability deployment 
+description: Learn about general availability deployment.
 author: samathur
 ms.subservice: admin
 ms.author: samathur 
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/25/2024
+ms.date: 12/04/2024
 search.audienceType: 
   - admin
 ms.contributors:
+- lekha27
 - leicke
 - matleon
 - swatim
@@ -50,31 +51,31 @@ You receive release wave updates as part of your Dataverse weekly updates. This 
 
 For each region listed, deployment begins as early as the Friday dark hours before the listed date.
 
-|Region  | Deployment schedule for 2024 wave 2 general availability |
+|Region  | Deployment schedule for 2025 wave 1 general availability |
 |---------|---------|
-| First release                | September 23, 2024 |
-| Canada                       | September 30, 2024  |
-| South America                | September 30, 2024  |
-| India                        | September 30, 2024  |
-| France                       | September 30, 2024  |
-| South Africa                 | September 30, 2024  |
-| Germany                      | September 30, 2024  |
-| Switzerland                  | September 30, 2024  |
-| Norway                       | September 30, 2024  |
-| Korea                        | September 30, 2024  |
-| Singapore                    | September 30, 2024  |
-| Sweden                       | September 30, 2024  |
-| United Arab Emirates         | October 7, 2024  |
-| Japan                        | October 7, 2024  |
-| Asia Pacific                 | October 7, 2024  |
-| Great Britain                | October 7, 2024  |
-| Australia                    | October 7, 2024  |
-| GCC High\*                   | October 7, 2024  |
-| Europe                       | October 14, 2024 |
-| North America                | October 21, 2024 |
-| GCC\*                        | October 28, 2024 |
-| DoD\*                        | October 28, 2024 |
-| China\**                      | October 28, 2024 |
+| First release                | March 24, 2025 |
+| Canada                       | March 31, 2025  |
+| South America                | March 31, 2025  |
+| India                        | March 31, 2025  |
+| France                       | March 31, 2025  |
+| South Africa                 | March 31, 2025  |
+| Germany                      | March 31, 2025  |
+| Switzerland                  | March 31, 2025  |
+| Norway                       | March 31, 2025  |
+| Korea                        | March 31, 2025  |
+| Singapore                    | March 31, 2025  |
+| Sweden                       | March 31, 2025  |
+| United Arab Emirates         | April 7, 2025  |
+| Japan                        | April 7, 2025  |
+| Asia Pacific                 | April 7, 2025  |
+| Great Britain                | April 7, 2025  |
+| Australia                    | April 7, 2025  |
+| GCC High\*                   | April 7, 2025  |
+| Europe                       | April 14, 2025 |
+| North America                | April 21, 2025 |
+| GCC\*                        | April 28, 2025 |
+| DoD\*                        | April 28, 2025 |
+| China\**                      | April 28, 2025 |
 
 \*For more information about GCC, GCC High, and DoD, see [Dynamics 365 US Government](microsoft-dynamics-365-government.md).
 \**For more information about environments in China, see [Power Platform and Dynamics 365 apps operated by 21Vianet in China](about-microsoft-cloud-china.md).
