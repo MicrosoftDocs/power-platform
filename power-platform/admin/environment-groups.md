@@ -30,6 +30,7 @@ Admins can apply various rules to groups to govern many environments in bulk, re
 | 2 | [AI-generated descriptions (preview)](/power-apps/maker/canvas-apps/save-publish-app#create-an-app-description-with-copilot-preview) |
 | 3 | [AI-powered Copilot features](/power-apps/maker/canvas-apps/ai-overview?WT.mc_id=ppac_inproduct_settings) |
 | 4 | [Back-up retention](backup-restore-environments.md) |
+| 5 | [Default deployment pipeline (preview)](..alm/default-deployment-pipeline-rule-for-environment-groups.md)
 | 5 | [Generative AI settings](geographical-availability-copilot.md) |
 | 6 | [Maker welcome content](welcome-content.md) |
 | 7 | [Power Apps component framework for canvas apps](/power-apps/developer/component-framework/component-framework-for-canvas-apps) |
