@@ -544,6 +544,10 @@
                       href: cross-tenant-restrictions.md
                     - name: Configure content security policy
                       href: content-security-policy.md
+                - name: Advanced connector policies (preview)
+                  items: 
+                    - name: Overview
+                      href: advanced-connector-policies.md
                 - name: Data policies
                   items:
                     - name: Overview
