@@ -7,7 +7,7 @@ ms.reviewer: sericks
 ms.topic: conceptual
 ms.subservice: admin
 ms.author: ampatra
-ms.custom: bap-template
+ms.custom: bap-template, NewPPAC
 search.audienceType: 
  - admin
 ---
