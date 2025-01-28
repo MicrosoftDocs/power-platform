@@ -5,7 +5,7 @@ author: tverhasselt
 ms.author: thoverh
 ms.reviewer: ellenwehrle
 ms.topic: overview
-ms.date: 04/15/2024
+ms.date: 01/21/2025
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -23,13 +23,13 @@ The Appointment Booking app allows:
 - Requestors to book the availabilities
 - Automated email notifications to keep everyone in sync
 
-The Appointment Booking template is available in [Microsoft AppSource](<https://aka.ms/AccessAppointmentBookingTemplate>). The package consists of two solutions:
+Unmanaged and managed Appointment Booking template packages are available in [Templates for Power Platform GitHub site](https://github.com/microsoft/Templates-for-Power-Platform/tree/main/Solution%20Packages%20For%20Manual%20Install/IT/Appointment%20Booking). Each package consists of two solutions:
 
 - **IT Base** contains components that enable localization capabilities. By sharing the components across solutions, common strings can be localized once in the base solution and all dependent solutions get the benefit.
 
 - **Appointment Booking** contains all the components to enable users to manage appointment slots and bookings.
 
-## IT Base solution components
+## IT Base solution
 
 The **IT Base** solution contains various components that allow an admin to set up and manage the language preferences.
 
@@ -39,7 +39,7 @@ The **IT Base** solution contains various components that allow an admin to set 
 
   - **IT Localization** records the app string replacements for every localized version of the app
   - **IT Error** records all errors from app and flows
-- One choice: **ISO Language Code** stores the abbreviation for available language codes
+- One choice: **ISO Language Code** stores the abbreviation for available language codes.
 
 ## Appointment Booking solution components
 

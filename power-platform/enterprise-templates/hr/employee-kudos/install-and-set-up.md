@@ -5,7 +5,7 @@ author: tshanep
 ms.author: shanep
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 07/02/2024
+ms.date: 01/21/2025
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -101,7 +101,7 @@ There are two solution installation options available for you to consider:
 
 > [!TIP]
 >
-> Go to the [Templates-for-Power-Platform](https://aka.ms/PowerPlatformTemplateSupport) GitHub project site to log your questions or issues and get support for the Employee Kudos template.
+> Go to the [Templates-for-Power-Platform](https://aka.ms/PowerPlatformTemplateSupport) GitHub project site to log your questions or issues and get support for the Employee Kudos template. You can also check for updates to the [deployment packages](https://github.com/microsoft/Templates-for-Power-Platform/tree/main/DeploymentPackages) on this site.
 
 ### Install from AppSource
 

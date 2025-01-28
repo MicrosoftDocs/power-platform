@@ -5,7 +5,7 @@ author: ananthar-msft
 ms.author: ananthar
 ms.reviewer: ellenwehrle
 ms.topic: overview
-ms.date: 12/02/2024
+ms.date: 01/21/2025
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -56,13 +56,16 @@ Be sure to check back often for new templates that become available.
    :::column span="":::
       ![Hardware Request and Management](media/overview/hrm-sq-icon.png "Hardware Request and Management") <br> **Hardware Request and Management template**<br> Manage hardware requests and assets <br> [Documentation](https://aka.ms/LearnHardwareRequestAndManagementTemplate) <br> [AppSource](https://aka.ms/AccessHardwareRequestandManagementTemplate)
    :::column-end:::
+:::row-end:::
+:::row:::
    :::column span="":::
-      ![Appointment Booking](media/overview/ab-as-icon.png "Appointment Booking") <br> **Appointment Booking template** <br> Organize the appointment booking process <br> [Documentation](https://aka.ms/LearnAppointmentBookingTemplate) <br> [AppSource](https://aka.ms/AccessAppointmentBookingTemplate)
+      ![Appointment Booking](media/overview/ab-as-icon.png "Appointment Booking") <br> **Appointment Booking template** <br> Organize the appointment booking process <br> [Documentation](https://aka.ms/LearnAppointmentBookingTemplate) <br> 
    :::column-end:::
    :::column span="":::
       ![Meeting Room Services](media/overview/mrs-sq-logo.png "Meeting Room Services") <br> **Meeting Room Services template** <br> Simplify meeting room management <br> [Documentation](https://aka.ms/LearnMeetingRoomSvcsReqTemplate) <br> [AppSource](https://aka.ms/AccessMeetingRoomSvcsReqTemplate)
    :::column-end:::
-   :::column span="":::  
+   :::column span="":::
+      ![Checklist](media/overview/checklist-sq-logo.png "Checklist") <br> **Checklist template** <br> Create checklists to manage tasks and projects <br> [Documentation](https://aka.ms/LearnChecklistReqTemplate) <br> [AppSource](<https://aka.ms/AccessChecklistTemplate>)
    :::column-end:::
 :::row-end:::
 
@@ -109,6 +112,7 @@ Learn how to install and set up Enterprise templates for Power Platform. More in
 - [Install and set up the Appointment Booking template](it/appointment-booking/install-and-set-up.md)
 - [Install and set up the Expense Reimbursement template](hr/expense-reimbursement/install-and-set-up.md)
 - [Install and set up the Meeting Room Services template](it/meeting-rm-serv/install-and-set-up.md)
+- [Install and set up the Checklist template](it/checklist/install-and-set-up.md)
 
 ## Support
 
