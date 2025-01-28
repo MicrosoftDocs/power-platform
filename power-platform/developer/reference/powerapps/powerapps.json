@@ -12,6 +12,9 @@
   "paths": {
     "/powerapps/environment/{environmentId}/apps": {
       "get": {
+        "tags": [
+          "Apps"
+        ],
         "summary": "Get apps as administrator.",
         "description": "Returns a list of apps.",
         "operationId": "Get-AdminApps",
@@ -70,6 +73,9 @@
     },
     "/powerapps/environments/{environmentId}/apps/{app}": {
       "get": {
+        "tags": [
+          "Apps"
+        ],
         "summary": "Get app as administrator.",
         "description": "Returns a PowerApp.",
         "operationId": "Get-AdminApp",
