@@ -9,7 +9,7 @@ contributors:
 ms.author: thoverh
 ms.reviewer: ellenwehrle
 ms.topic: overview
-ms.date: 06/13/2024
+ms.date: 01/21/2025
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -31,7 +31,7 @@ You can further extend the capabilities of the Expense Reimbursement template by
 
 Watch the demo to see how an employee uses the Expense Reimbursement canvas app.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RW1kAs0]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=f1e40677-8e60-4950-9530-ba798e1d7cb7]
 
 ## Expense Reimbursement package
 
@@ -55,7 +55,7 @@ The **Employee Experience Base** solution contains components that manage app la
 
 ### Expense Reimbursement
 
-The Expense Reimbursement solution contains components that manage the user experience.
+The Expense Reimbursement solution contains components that enable the user and admin experiences.
 
 - Two apps:
   - **Expense Reimbursement** is the canvas app that allows users to view and submit expense reimbursements.

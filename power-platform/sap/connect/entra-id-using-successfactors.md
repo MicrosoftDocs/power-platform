@@ -14,21 +14,26 @@ contributors:
   - scottwoodallmsft
   - Wrighttyler
   - EllenWehrle
+  - MartinPankraz
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 11/21/2024
-ms.custom: bap-template
+ms.date: 12/02/2024
 ms.service: power-platform
-ms.subservice: solution-templates
+ms.subservice: sap
 # Customer intent: As an administrator, I want to learn how to set up Microsoft Entra ID using SuccessFactors, so that users can use single sign-on (SSO).
 ---
 
 # Microsoft Entra ID using SuccessFactors (Preview)
 
+[This article is prerelease documentation and is subject to change.]
+
 This guide walks you through setting up the **Microsoft Entra ID using SuccessFactors** authentication method in the SAP OData connector for Power Platform. The goal is to accumulate all necessary parameters to enable Single Sign-On (SSO) between Microsoft Entra ID and SuccessFactors.
 
 > [!IMPORTANT]
 > The parameters collected in this guide are essential for setting up SSO. Ensure your values match your specific SuccessFactors and Microsoft Entra ID configuration.
+
+> [!TIP]
+> Consider using an API Management solution to govern and secure your SAP APIs. For more information, see [this docs article](entra-id-apim-oauth.md) and [this community post](https://community.sap.com/t5/technology-blogs-by-members/perform-sap-principal-propagation-with-microsoft-entra-id-for-sap/ba-p/13860532).
 
 ## Prerequisites
 
@@ -124,5 +129,13 @@ Later in the process, you'll import a certificate from your Microsoft Entra ID E
 
 > [!NOTE]
 >
-> - If the test fails, verify your connection parameters and ensure all previous configuration steps are completed correctly. 
+> - If the test fails, verify your connection parameters and ensure all previous configuration steps are completed correctly.
 > - If the **Entity** dropdown does not populate, recheck your connection parameters, the OAuth 2.0 app configuration in SuccessFactors, and the Enterprise App configuration.
+
+## Related content
+
+- [SAP OData connector](/connectors/sapodata/)
+- [SAP OData connector now supports OAuth2 and SAP Principal Propagation](https://community.powerplatform.com/blogs/post/?postid=c6a609ab-3556-ef11-a317-6045bda95bf0) | Power Automate community blog
+- [Azure API Management policy for SAP SuccessFactors](https://github.com/Azure/api-management-policy-snippets/blob/master/examples/Request%20OAuth2%20access%20token%20from%20SuccessFactors%20using%20AAD%20JWT%20token.xml) | GitHub
+- [SAP OData connector for SAP SuccessFactors](https://community.sap.com/t5/technology-blogs-by-members/perform-sap-principal-propagation-with-microsoft-entra-id-for-sap/ba-p/13860532) | SAP community blog
+- The SAP Business Accelerator Hub also offers content related to the SAP integration suite policy for SuccessFactors and NetWeaver. You must have an SAP account to access this content.

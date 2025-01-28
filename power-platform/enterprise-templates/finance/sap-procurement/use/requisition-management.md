@@ -10,9 +10,10 @@ contributors:
   - tverhasselt
   - ryanb58
   - Wrighttyler
+  - shanep
 ms.reviewer: ellenwehrle
 ms.topic: conceptual
-ms.date: 04/23/2024
+ms.date: 1/8/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -20,13 +21,7 @@ ms.subservice: solution-templates
 
 # Get started using the SAP Requisition Management app
 
-The SAP Requisition Management app is part of the SAP Procurement solution for Microsoft Power Platform. It allows you to do several functions in SAP quicker and easier than using SAP GUI. You can view and update an existing requisition, create a new requisition, and convert a requisition to a purchase order.
-
-## Watch the demo
-
-Watch the demo to see how you can manage your SAP requisition data using the SAP Requisition Management app.
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RW18CAe]
+The SAP Requisition Management app is part of the SAP Procurement solution for Microsoft Power Platform. It allows you to do several functions in SAP quicker and easier than using SAP GUI. You can search, view, and update an existing requisition, create a new requisition, and convert a requisition to a purchase order.
 
 ## View requisition data
 
@@ -40,17 +35,17 @@ You have three options for viewing a requisition:
 
 ### Enter a requisition number
 
-If you know the requisition number of the document you want to view, you can type it in the *Search requisition number* field.
+If you know the requisition number of the document you want to view, you can type it in the _Search Purchase Requisitions_ field and select **Search**.
 
 ### Select a recent requisition
 
-You can select a recently viewed requisition from the *Select recent requisition* drop-down list. Choose a requisition from the list to load onto your screen.
+You can select a recently viewed requisition from the *Recently Searched Requisitions* list. Select a requisition from the list to load onto your screen.
 
 ### Search for requisition
 
 If you haven't interacted with the requisition, and you don't know the exact number, you can search for a requisition.
 
-1. Select the **funnel icon** to open the *Requisition search* screen. On the screen, you can search by any individual field or a combination of *Requisition Number*, *Vendor*, and *Date Range*.
+1. Select **Search Purchase Requisitions** to open the *Requisition search* screen. On the screen, you can search by any individual field or a combination of *Requisition Number*, *Vendor*, and *Date Range*.
 
    :::image type="content" source="media/requisition-management/req-search.png" alt-text="Image shows requisition search screen.":::
 
@@ -62,43 +57,39 @@ If you haven't interacted with the requisition, and you don't know the exact num
 
 You can create a new requisition:
 
-1. Select **Create**.
+1. Select **New Purchase Requisition**.
 
-1. Enter a vendor number.
-
-1. Select the **right-pointing arrow** next to the vendor number to see the vendor name.
+1. Enter a vendor number and select **Search** to see the vendor name.
 
 1. Select the appropriate *Purchasing Organization* from the dropdown list.
 
 1. Select the appropriate *Purchasing Group* from the dropdown list.
 
-## Add a line item to a requisition
+1. Select the appropriate *Location* from the dropdown list.
 
-1. Select **+ Add** at the *Items* level.
+1. Select the appropriate *Currency* from the dropdown list.
 
-1. View the *New Requisition Item Details* page.
+1. Select **Next**.
 
-1. Select your *location (plant)*.
+## Add line items to a requisition
 
-1. If you know your material number, enter it, or you can search by selecting the filter symbol.
+1. Select the appropriate *Location* from the dropdown list.
 
-1. If you select the **Search** filter, the material search page opens.
+1. If you know your material number, enter it and select **Search** to find it, or you can find it by selecting **Go to advanced search**. Once a material is selected, the *Description* and *Unit* fields will be pre-populated. 
 
-1. Search by *material number*, *description*, *material type* or *location* (*plant*). Select the **material number**. As an example, pick *PRODUCT2* and it populates that data into the new requisition item detail screen.
-
-1. Enter the quantity and the unit price. The *Unit* field is prepopulated when the material is selected from the *Material Search*.
+1. Enter the quantity and the unit price.
 
 1. View the total automatically calculated based on the quantity multiplied by the unit price.
 
-1. Select **Done** to add this line item to the requisition.
+1. Select **Add Line Item** to add this line item to the requisition.
 
-### Add, cancel, or save the requisition
+1. Repeat the steps above until all line items have been added.
 
-1. Select **+ Add** to add more line items.
+## Submit the requisition
 
-1. Select **Cancel** if you don't want to keep the requisition and everything will be removed.
+1. After all line items have been added, select **Next*.
 
-1. Select **Save** when you're finished. When you select **Save**, the requisition data is saved to SAP, and the SAP document number will appear in the upper left corner.
+1. On the *Review Purchase Requisition* page, review to make sure the information is correct, then select **Submit**.
 
 ## Additional functionalities
 
@@ -108,7 +99,7 @@ You can edit, sort, and filter requisition data.
 
 When you load an existing requisition, you have the ability to edit it. You can also convert it to a purchase order.
 
-Select the **Edit** link at the right side of the line under *Details* to edit a requisition. If you select **Edit**, you're able to change values, add more line items, or delete unwanted line items. To delete, select the **check box** to the left of the line item, and select **Delete** at the top. You can also copy an existing line by selecting it and then selecting **Copy**.
+Select **Edit Requisition** to edit a requisition which enables you to change values, add more line items, or delete unwanted line items. You can also copy an existing line by selecting it and then selecting **Copy**.
 
 ### Sort requisition column headings
 
@@ -117,10 +108,6 @@ You can sort column headings by ascending or descending order. To sort, select *
 > [!NOTE]
 >
 > The sort is done as a character string, so numbers may not be in numeric order.
-
-### Filter requisitions
-
-You can filter items in the *Items* list. The filter box is located on the right side of the *Items* list.
 
 ## Field mappings
 

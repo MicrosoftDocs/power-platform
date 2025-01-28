@@ -5,7 +5,7 @@ author: ananthar-msft
 ms.author: ananthar
 ms.reviewer: ellenwehrle
 ms.topic: overview
-ms.date: 10/10/2024
+ms.date: 01/21/2025
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -42,7 +42,7 @@ Be sure to check back often for new templates that become available.
    :::column span="":::
       ![Employee Kudos](media/overview/kudos-icon-sq.png "Employee Kudos") <br> **Employee Kudos template** <br> Enable an employee recognition program <br> [Documentation](https://aka.ms/LearnEmployeeKudosTemplate) <br> [AppSource](https://aka.ms/AccessEmployeeKudosTemplate)
    :::column-end:::
-   :::column span="":::
+      :::column span="":::
       ![Awards and Recognition](media/overview/awards-req-icon-sq.png "Awards and Recognition") <br> **Awards and Recognition template** <br> Facilitate an employee awards program <br> [Documentation](https://aka.ms/LearnAwardsAndRecognitionTemplate) <br> [AppSource](https://aka.ms/AccessAwardsandRecognitionTemplate)
    :::column-end:::
 :::row-end:::
@@ -59,14 +59,22 @@ Be sure to check back often for new templates that become available.
 :::row-end:::
 :::row:::
    :::column span="":::
-      ![Appointment Booking](media/overview/ab-as-icon.png "Appointment Booking") <br> **Appointment Booking template** <br> Organize the appointment booking process <br> [Documentation](https://aka.ms/LearnAppointmentBookingTemplate) <br> [AppSource](https://aka.ms/AccessAppointmentBookingTemplate)
+      ![Appointment Booking](media/overview/ab-as-icon.png "Appointment Booking") <br> **Appointment Booking template** <br> Organize the appointment booking process <br> [Documentation](https://aka.ms/LearnAppointmentBookingTemplate) <br> 
    :::column-end:::
    :::column span="":::
       ![Meeting Room Services](media/overview/mrs-sq-logo.png "Meeting Room Services") <br> **Meeting Room Services template** <br> Simplify meeting room management <br> [Documentation](https://aka.ms/LearnMeetingRoomSvcsReqTemplate) <br> [AppSource](https://aka.ms/AccessMeetingRoomSvcsReqTemplate)
    :::column-end:::
-   :::column span="":::  
+   :::column span="":::
+      ![Checklist](media/overview/checklist-sq-logo.png "Checklist") <br> **Checklist template** <br> Create checklists to manage tasks and projects <br> [Documentation](https://aka.ms/LearnChecklistReqTemplate) <br> [AppSource](<https://aka.ms/AccessChecklistTemplate>)
    :::column-end:::
 :::row-end:::
+
+## SAP Procurement-related templates
+
+There are also two templates that support the SAP Procurement template:
+
+- [**SAP Setup Assistant**](finance/sap-procurement/administer/sap-setup-assistant/overview.md): Helps you integrate Power Platform with SAP and set up the the SAP Procurement template.
+- [**SAP Supplier Self Service**](finance/sap-supplier-self-service/overview.md): Allows you to create a customizable Power Pages site to complement the SAP Procurement template.
 
 ## Benefits of using enterprise templates
 
@@ -104,6 +112,7 @@ Learn how to install and set up Enterprise templates for Power Platform. More in
 - [Install and set up the Appointment Booking template](it/appointment-booking/install-and-set-up.md)
 - [Install and set up the Expense Reimbursement template](hr/expense-reimbursement/install-and-set-up.md)
 - [Install and set up the Meeting Room Services template](it/meeting-rm-serv/install-and-set-up.md)
+- [Install and set up the Checklist template](it/checklist/install-and-set-up.md)
 
 ## Support
 
