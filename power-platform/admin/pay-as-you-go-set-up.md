@@ -6,6 +6,7 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 01/27/2025
 ms.subservice: admin
+ms.custom: NewPPAC
 ms.author: ampatra 
 ms.reviewer: sericks
 contributors:
