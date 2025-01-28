@@ -5,6 +5,7 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 01/27/2025
 author: akadrno
+ms.custom: NewPPAC
 ms.author: kauguillard 
 ms.reviewer: sericks
 ms.subservice: admin
