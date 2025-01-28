@@ -26,23 +26,11 @@ The Parking Reservation template allows you to:
 
 You can extend the capabilities of the Parking Reservation template by customizing the apps to meet your organization's unique processing needs.
 
-The Parking Reservation template package is available on Microsoft AppSource. The package consists of two solutions:
+The Parking Reservation template package is available in [Microsoft AppSource](https://aka.ms/AccessParkingReservationTemplate).
 
-- **IT Base** contains components that enable localization capabilities. By sharing this across solutions, common strings can be localized once in the base solution and all dependent solutions get the benefit.
-- **Parking Reservation** contains all the components to enable users to create and manage parking spots and allow creation of parking reservations.
+## Parking Reservation template components
 
-## IT Base solution
-
-**IT Template Administration** is the model-driven app that allows admins to create, view, and edit localized string values. It's supported by two tables, one security role, and one choice.
-
-- **IT Localization** is the table that records the app string replacements for every language into which the app is localized.
-- **IT Error** is the table that records all errors from app and flows.
-- **IT Template Administrator** is the security role that provides create, read, update, and delete access to the table.
-- **ISO Language Code** is the one choice that stores the abbreviation for available language codes.
-
-## Parking Reservation solution
-
-The Parking Reservation solution is comprised of many components that can easily be customized to meet your needs.
+The Parking Reservation template is comprised of many components that can easily be customized to meet your needs.
 
 Two apps:
 
@@ -72,7 +60,7 @@ Two choices:
 - **Parking Days Choices** stores the available parking-day choices.
 - **Spot Type Choices** stores the available spot-type choices:
 
-  - Care
+  - Car
   - Motorcycle
   - Bicycle
   - E-Vehicle

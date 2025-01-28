@@ -142,11 +142,86 @@ AppSource is a Microsoft digital storefront. Take these steps to go through the 
 
 [Learn more about solutions](/power-platform/alm/solution-concepts-alm).
 
-Step 4: Assign security roles
+## Step 4: Assign security roles
 
 Set up security roles in your solutions so admins can manage access, language support, and experiences in the app.
 
-The Parking Reservation solution contains three security roles.
+The Parking Reservation solution contains three security roles:
 
-- **IT Base - IT Base User** - Assign this role to an admin who needs to perform specific admin tasks such as localizing strings and monitoring for errors.
-- 
+- **Parking Reservation App – Admin** acts as the administrator of the Parking Reservation App. This security role grants access to the canvas app and model-driven app where an admin can:
+
+  - Create and manage countries, cities, buildings, (building) floors, and parking spots.
+  - Create and manage advance booking policy and cancellation policy for each facility (building).
+  - View and manage reservations.
+  - View and manage users.
+
+- **Parking Reservation App – Admin Read-Only** acts as the administrator of the Parking Reservation App. This security role grants access to the canvas app and model-driven app where an admin can:
+
+  - View and inspect parking spot setup such as countries, city, building, (building) floors, spot types.
+  - View and inspect parking reservations.
+
+- **Parking Reservation App – User** can access the canvas application to make parking reservations in the application.
+
+All licensed users, whether they're members of a security group, must have a security role assigned. If users don't have a security role, they get a *data access denied* error when they try to run the app. Users can't access environments until they're assigned at least one security role for that environment. Take these steps to set up security roles in the Power Platform admin center.
+
+1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. Select **Environments** on the left-side menu and select the environment where the solution is installed.  
+1. Select **Users** > **See all**.
+1. Select the user(s).
+1. Select **Manage security roles** and select the appropriate roles for each user.
+1. Select **Save**.
+
+> [!NOTE]
+> All licensed users, whether or not they are members of the security groups, must be assigned security roles to access data in the environments. You can also assign the security roles in the web application. If users don't have a security role, they'll get a *data access denied* error when trying to run an app. Users can't access environments until they're assigned at least one security role for that environment.
+
+More information:
+
+- [Learn how to manage application users in the Power Platform admin center](/power-platform/admin/manage-application-users)
+- [Learn how to control user access to environments: security groups and licenses](/power-platform/admin/control-user-access)
+
+## Step 5: Share the apps
+
+Share the Parking Reservations app with the users in your organization.
+
+> [!TIP]
+>
+> Share the app with the Parking Reservations program managers first so that they can configure the app to meet your organization's needs. After that configuration is complete, share the app to the wider organization.
+
+1. Go to [Power Apps](https://make.powerapps.com/) and select the environment that contains the solution.
+
+1. Select **Solutions** on the left pane.
+
+1. Select **Meeting Room Services** from the list.
+
+1. Select **Apps** on the left pane.
+
+1. Select the **Parking Reservations canvas app** in the list and select **More actions** (**&hellip;**).
+
+1. Select **Share**.
+
+1. Search for and add the users who you want to share the app with.
+
+    - For users who should have access to edit the app, check the **Co-owner** box.
+    - For regular users of the app, leave that checkbox empty.
+    - If everyone in the organization should be able to use the app, select **Everyone** in the *Enter a name* box.
+1. In the *Data permission* area, you can select roles from a drop-down list. It's next to the Microsoft Dataverse tables that the Meeting Room Services app uses.
+1. Add an optional email message.
+1. Select **Share**.
+
+[Learn how to share a canvas app with your organization.](/power-apps/maker/canvas-apps/share-app)
+
+> [!NOTE]
+> If the Parking Reservations app isn't shared with you and you can't access it directly in Power Apps, contact your administrator.
+
+## Step 7: Turn on auditing (optional)
+
+Auditing isn't required, but we recommend turning it on so that it's easy to see who creates and updates records in the future.
+
+1. Go to Power Platform admin center
+1. Select **Environment** and then select the environment where the solution is installed.
+1. Select **Audit settings**.
+1. Select **Start auditing**.
+
+## Next step
+
+[Manage the Parking Reservations app](manage.md)
