@@ -3,7 +3,7 @@ title: "Associate a pipeline with development environments in a group (preview)"
 description: "Use the default deployment pipeline rule to associate a pipeline with all development environments in an environment group."
 Keywords: pipelines, ALM, environment groups
 author: asheehi1
-ms.author: asheehi1
+ms.author: asheehi
 ms.reviewer: matp
 ms.topic: how-to
 ms.date: 02/06/2025
@@ -11,11 +11,11 @@ ms.custom: template-how-to
 ---
 # Associate a pipeline with development environments in a group (preview)
 
-The [default deployment pipeline rule](../admin/environment-groups) for environment groups is designed to mitigate steps required to implement standardized Application Lifecycle Management (ALM) processes at scale. It ensures consistent application of pipeline settings and configurations across an entire group, simplifying governance and compliance for your organization.
+The [default deployment pipeline rule](../admin/environment-groups.md) for environment groups is designed to mitigate steps required to implement standardized Application Lifecycle Management (ALM) processes at scale. It ensures consistent application of pipeline settings and configurations across an entire group, simplifying governance and compliance for your organization.
 
 ## Prerequisites to configure the default deployment pipeline rule
 
-- You must be a **Tenant Administrator** to access [environment groups](../admin/environment-groups) in the Power Platform Admin Center.
+- You must be a **Tenant Administrator** to access [environment groups](../admin/environment-groups.md) in the Power Platform Admin Center.
 - The **Power Platform Pipelines**** package must be installed in at least one environment (i.e. you must have a [pipelines host](set-up-pipelines.md)).
 - At least one pipeline must be configured in the desired pipelines host.
   > [!IMPORTANT]
@@ -26,7 +26,7 @@ The [default deployment pipeline rule](../admin/environment-groups) for environm
 
 ## Configuring the default deployment pipeline rule for a group
 
-1. Within an [environment group](../admin/environment-groups) in the Power Platform Admin Center, select **Rules**.
+1. Within an [environment group](../admin/environment-groups.md) in the Power Platform Admin Center, select **Rules**.
 1. Select **Default deployment pipeline** from the list of rules.
 1. In the first dropdown, select a **Pipeline Host**.
 1. Once a host is selected, select a **Pipeline** to associate with all development environments in the group and be shared with all users on the default team of the pipelines host environment (see prerequisite).
@@ -39,7 +39,7 @@ The [default deployment pipeline rule](../admin/environment-groups) for environm
 The default deployment pipeline rule is now configured for development and sandbox environments in the group. Please wait up to 10 minutes for the rule to apply.
 
 ## Related content
-- [Environment Groups](../admin/environment-groups)
+- [Environment Groups](../admin/environment-groups.md)
 - [Managed Environments](../admin/managed-environment-overview.md)
 - [Set up pipelines in Power Platform](set-up-pipelines.md)
 - [Extend pipelines in Power Platform](extend-pipelines.md)
