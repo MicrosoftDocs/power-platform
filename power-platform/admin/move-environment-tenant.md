@@ -28,7 +28,7 @@ Be aware of the following notes before you get started with a tenant-to-tenant m
 -	**Not supported environment types:** Default, developer, trial, and teams environment types and Government Community Cloud (GCC) to public clouds or vice versa.
 -	Components not supported include **Dynamics 365 Customer voice, Omnichannel for Customer Service, component library, Dynamics 365 Customer Insights Journey, Dynamics 365 Customer Insights Data**
 -	**There are additional steps required for Power Apps, Power Automate, Pages & Microsoft Copilot studio** called out later in Premigration and post migrations steps.
--	A Dataverse organization linked to a finance and operations organization cannot be migrated to a different tenant.
+-	A Dataverse organization linked to a finance and operations organization can't be migrated to a different tenant.
 -	You might need to reconfigure some applications and settings after tenant-to-tenant migration, such as Microsoft Dynamics 365 for Outlook, server-side sync, SharePoint or others.
 -	Once users are created and configured, you must [create a mapping file](#create-user-mapping-file), which is described later in this article.
 -	If the mapped user has a mailbox in the destination tenant, then the mailbox is automatically configured during the migration. For all other users, you need to reconfigure the mailbox.
@@ -43,7 +43,7 @@ Be sure that you complete the following prerequisites before you start the migra
 -	Create users in the target tenant. You must:
   -	Create users in Microsoft 365 and Microsoft Entra ID.
   -	Assign licenses.
-- you must have Power platform admin or dynamics 365 admin privileges to perform migration.
+- you must have Power platform admin or Dynamics 365 admin privileges to perform migration.
 -	The PowerShell for Power Platform Administrators module is the recommended PowerShell module for interacting with admin capabilities. Learn more at [Get started with PowerShell for Power Platform Administrators](powershell-getting-started.md).
 
 ## Preparation process
@@ -75,7 +75,7 @@ Any Power Apps must be manually exported. We don't support the migration of cust
   	  The resulting file contains the app package that was selected.
   	
 1.	Repeat these steps until all apps have been exported.
-1.	Delete these non-solution aware apps from the environment
+1.	Delete these nonsolution aware apps from the environment
 
 An admin can also view/delete Canvas Apps from the list on the admin portal:
 1.	Go to https://admin.powerplatform.microsoft.com, and then select the environment.
@@ -100,9 +100,9 @@ Create a user mapping file for the source environment to be transferred to the t
 1. Create a user mapping file named **usermapping.csv**.
 
    > [!Note]
-   > The file name is case sensative. Make sure records are comma seperated not semicolon.
+   > The file name is case sensative. Make sure records are comma separated not semicolon.
   
-1. Accurately record the details of users, including their source and destination email IDs.Also make sure there are no extra space before and after header. Your mapping file should look to the following example:
+1. Accurately record the details of users, including their source and destination email IDs. Also make sure there are no extra space before and after header. Your mapping file should look to the following example:
 
     |Source|	Destination|
     |------|-------------|
@@ -112,7 +112,7 @@ Create a user mapping file for the source environment to be transferred to the t
 For full access users:
 
 1. Access the source environment.
-2. Use Advanced Find (Screen shot of Advanced Find button.) and look for users.
+2. Use Advanced Find and look for users.
 3. Select Use Saved View > Full Access Users, and then select Edit Columns.
 4. Remove all columns except Full Name.
 5. Select Add Columns > Windows Live ID.
@@ -132,7 +132,7 @@ Example:
 For administrative access users:
 
 1. Access the source environment.
-2. Use Advanced Find (Screen shot of Advanced Find button.) and look for users.
+2. Use Advanced Find and look for users.
 3. Select Use Saved View > Administrative Access Users, and then select Results to see the list of administrative access users.
 4. If you decide not to include any of these users, skip the following steps. Otherwise, to include these users in mapping:
   Find the corresponding users in the destination tenant.
@@ -140,7 +140,7 @@ For administrative access users:
   Save the CSV file that has both full access users and administrative access users mapped.
 
 ## Migration
-Before proceeding with migration make sure you have reviewed and completed the preparetion process. Now you can proceed to complete the following sections to migrate.
+Before proceeding with migration, make sure you have reviewed and completed the preparation process. Now you can proceed to complete the following sections to migrate.
 
 ### Install PowerShell for Power Platform administrators (Both Source and Target Admins) 
 The PowerShell for Power Platform Administrators module is the recommended PowerShell module for interacting with admin capabilities. For information that helps you get started with the PowerShell for Power Platform Administrators module, go to [Get started with PowerShell for Power Platform Administrators](powershell-getting-started.md) and [Installing PowerShell for Power Platform Administrators](powershell-installation.md).
@@ -183,7 +183,7 @@ You can view the status and RequestID using the below command.
 TenantToTenant-ViewMigrationRequest
 ```
 > [!Note]
-> Please note down the MigrationId for the which will be used in the further migration commands.
+> Record the MigrationId, which is used in further migration commands.
 
 ### View and approve migration request (Target Admin)
 The admin of the destination tenant should run the following command to see all the migration requests and status. The admin can review all the migration requests and options to approve or reject. 
@@ -230,7 +230,7 @@ $container = $uri.LocalPath.Substring(1)
 $sasToken = $uri.Query
  
 # File to upload
-# Please note file name should be usermapping.csv (case sensitive) with comma seperated values.
+# Note that the file name should be usermapping.csv (case sensitive) with comma separated values.
 $fileToUpload = 'C:\filelocation\usermapping.csv'
  
 # Create a storage context
@@ -274,13 +274,13 @@ TenantToTenant-GetMigrationStatus -MigrationId {MigrationId}
 •	Validation Failed, Errors are updated on the blob here: SASURI
 
 ### Error and how to resolve them 
-- **The User mapping file provided for Tenant To Tenant migration is invalid**. Please check if the usermapping file name is correct and usermapping file is comma seperated.
+- **The User mapping file provided for Tenant To Tenant migration is invalid**. Please check if the user mapping file name is correct and user mapping file is comma separated.
 - Line '{line numbers}' have the same '{emailID}'--- Please make sure we do not have any duplicate entries.
 - Invalid Email Format '{emailid}' -- Make sure email format is correct testuser@tenantdomain.com
 - Target on line '{linenumber}' is same as source emailId. -- Make sure Destination Email is different from Source Email
-- Each line must have exactly two columns: '{line numbers}' -- Make sure each row has only 2 columns source and destination remove extra comma if any
+- Each line must have exactly two columns: '{line numbers}' -- Make sure each row has only two columns source and destination remove extra comma if any
 
-  After fixing user mapping errors you need to reupload the usermapping file using same SAS URI.
+  After fixing user mapping errors, you need to reupload the user mapping file using same SAS URI.
   
 ### Download the error report (Source Admin)
 If there are any errors in the user mapping, there's an option to download the error report. This can be done by directly copying and pasting the SasUrl provided in the Tenant-To-Tenant-GetMigrationStatus command or using the following commands that use the SAS URI from the previous step and the desired location to download the error report.
@@ -303,9 +303,9 @@ $storageContext = New-AzStorageContext -StorageAccountName $storageAccountName -
 Get-AzStorageBlobContent -Blob "usermapping.csv" -Container $containerName -Destination $destinationPath -Context $storageContext 
 ```
 Fix the issues in the user mapping file.
-Re-upload the file using the same or new SAS URL.
+Reupload the file using the same or new SAS URL.
 
-After successfully completing Prepare the environment migration setps now you may proceed with next step to migrate environment.Next step you can perform within next 7 days and after that you may have to start with "Prepare the environment migration"
+After successfully completing Prepare the environment migration steps now, you may proceed with next step to migrate environment. Next step you can perform within next seven days and after that you may have to start with "Prepare the environment migration"
 
 ## Migrate the environment (Source Admin)
 MigrationId can be view using "TenantToTenant-ViewMigrationRequest" command in source tenant.
@@ -331,7 +331,7 @@ TenantToTenant-GetMigrationStatus -EnvironmentName {EnvironmentId}
 After moving environments to another tenant:
 
 -	The environment URL, organization ID (OrgID), and the name don't change.
--	The source environment will not have Dataverse.
+-	The source environment doesn't have Dataverse.
 -	Users not included in the mapping file won't be migrated and mapped post-migration.
 
 Complete the following procedures for Power Automate, Power Apps, Copilot Studio, Power Pages, and Dynamics 365 Marketing after the migration.
@@ -370,7 +370,7 @@ The following steps must be completed for each website in the environment.
 1. Open the [admin center](/power-pages/admin/admin-overview#open-power-apps-portals-admin-center).
 1. Provision the website with the same portal type and language.
 
-After completing all above steps and migration you may validate the environment in target tenant and later you can delete the source environent in Power platform admin center.
+After completing all the above steps and migration, you may validate the environment in target tenant and later you can delete the source environment in Power platform admin center.
 
 ### Frequently asked questions
 **Are background operations enabled during tenant-to-tenant migration?**
