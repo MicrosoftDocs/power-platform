@@ -27,7 +27,7 @@ As a user of the Parking Reservation app, you can:
 You can set up your preferred building and vehicle in the Parking Reservation app. Take these steps to update your preferences:
 
 1. On the *My Reservation* screen, select the **Preferences** tab.
-        :::image type="content" source="media/use/par-res-pref.png" alt-text="Screenshot of the Parking Reservation app's Reserve a spot screen where users can reserve parking spots.":::
+        :::image type="content" source="media/use/par-res-pref.png" alt-text="Screenshot of the Parking Reservation app's Preferences screen where users can set their building and vehicle preferences.":::
 1. On the *Preferences* screen, choose your preferred building from a list of buildings in the *Select a preferred building* dropdown. This sets your preferred building as the default every time you go to the *Reserve a spot* screen.
 1. Select your vehicle from a list of available vehicles in the *Select a preferred vehicle* dropdown to set it as your default. If your vehicle is not in the dropdown list, you can take steps to add it.
     1. Go to *My vehicles* to add your vehicle to the vehicle preferences dropdown list.
