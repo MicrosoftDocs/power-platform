@@ -107,7 +107,7 @@ try
 }
 ```
 
-Power Platform API reference: [Get Cross Tenant Connection Report](/rest/api/power-platform/governance/cross-tenant-connection-reports/get-cross-tenant-connection-report)
+Power Platform API reference: [List Cross Tenant Connection Reports](/rest/api/power-platform/governance/cross-tenant-connection-reports/list-cross-tenant-connection-reports)
 
 ## Step 4. Fetch a single report
 
@@ -137,7 +137,7 @@ try
 }
 ```
 
-Power Platform API reference: [List Cross Tenant Connection Reports](/rest/api/power-platform/governance/cross-tenant-connection-reports/list-cross-tenant-connection-reports)
+Power Platform API reference: [Get Cross Tenant Connection Report](/rest/api/power-platform/governance/cross-tenant-connection-reports/get-cross-tenant-connection-report)
 
 ### See also
 
