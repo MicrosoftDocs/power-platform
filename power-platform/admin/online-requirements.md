@@ -54,6 +54,7 @@ Add the following URLs to the allow list to use Dynamics 365 apps such as Dynami
 | https://*.windows.net  |    |
 | http://*.passport.net  |    |
 | https://*.crm#.dynamics.com and http://*.crm#.dynamics.com | Required for environments access. Includes integration and static Content Delivery Network (CDN) content endpoints. <br /><br />Replace # in http://*.crm#.dynamics.com and https://*.crm#.dynamics.com with your region's number: <ul><li>Asia/Pacific: 5</li><li>Canada: 3 </li><li>Europe, Africa, and Middle East: 15 and 4</li><li>France: 12</li><li>Germany: 16</li><li>India: 8</li><li>Japan: 7</li><li>Korea: 21</li><li>North America: no number</li><li>Norway: 19</li><li>Oceania: 6</li><li>Singapore: 20</li><li>South Africa: 14</li><li>South America: 2</li><li>Switzerland: 17</li><li>UAE: 15</li><li>United Kingdom: 11</li><li>Dynamics 365 US Government: 9</li>   |
+| https://*.azureedge.net  |    |
 | https://*.azurefd.net  |    |
 | https://*.microsoftonline.com  | Required for authentication and Microsoft 365 services such as the Microsoft 365 admin center.   |
 | https://go.microsoft.com  | Required for product documentation and context-sensitive help pages.    |
