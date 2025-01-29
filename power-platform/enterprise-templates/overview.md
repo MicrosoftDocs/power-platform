@@ -68,11 +68,11 @@ Be sure to check back often for new templates that become available.
       ![Checklist](media/overview/checklist-sq-logo.png "Checklist") <br> **Checklist template** <br> Create checklists to manage tasks and projects <br> [Documentation](https://aka.ms/LearnChecklistReqTemplate) <br> [AppSource](<https://aka.ms/AccessChecklistTemplate>)
    :::column-end:::
 :::row-end:::
-::row::::
+:::row::::
    :::column span="":::
       ![Parking Reservation](media/overview/park-res-sq-logo.png "Parking Reservations") <br> **Parking Reservation template** <br> Manage your parking reservations <br> [Documentation](https://aka.ms/LearnParkingReservationTemplate) <br> [AppSource](<https://aka.ms/AccessParkingReservationTemplate>)<br>
    :::column-end:::
-:::row-end::::
+:::row-end:::
 
 ## SAP Procurement-related templates
 
