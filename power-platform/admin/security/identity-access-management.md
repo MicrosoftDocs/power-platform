@@ -59,10 +59,10 @@ Restricting guest access is a pivotal way to improve your tenant’s security po
 The time it takes to effectively block guest access varies based on the volume of environments and resources within those environments. For the most extreme cases, the latency for full enforcement is 24 hours.  
 
 ### Known limitations 
-Guest access is a preview feature with more enhancements to come. The following are some known limitations with work in progress to remediate. 
+Guest access is a preview feature with more enhancements to come. The following are some known limitations.
 
-- While blocking guest access will prevent any guest from saving and using resources, it may not prevent a guest from accessing a Power Platform maker portal.  
-- Items made in Copilot Studio may use Graph connectors as knowledge sources from outside of Power Platform, and the information in them may be accessible to guests for now even if guest access is blocked. 
+- Blocking guest access prevents any guest from saving and using resources. It may not prevent a guest from accessing the Power Apps maker portal.  
+- Items made in Copilot Studio may use graph connectors as knowledge sources from outside of Power Platform. The information in them may be accessible to guests, for now, even if guest access is blocked. 
 
 ## Administrator privileges (preview)
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
