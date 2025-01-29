@@ -77,7 +77,7 @@ Any Power Apps must be manually exported. We don't support the migration of cust
 
 An admin can also view or delete canvas apps from the list in the admin portal by completing the following steps.
 
-1.	Go to [Power Platform admin center](https://admin.powerplatform.microsoft.com) and then select the environment.
+1.	Go to [Power Platform admin center](https://admin.powerplatform.microsoft.com) and then select the environment from manage.
 2.	Under the **Resources** action, select **Power Apps** to view and delete them.
 
 ### Prepare Copilot Studio
@@ -135,7 +135,7 @@ Create a user mapping file for the source environment to be transferred to the t
 1. Select **Use Saved View > Administrative Access Users**, and then select **Results** to see the list of administrative access users.
 1. If you decide not to include any of these users, skip the following steps. Otherwise, to include these users in the mapping file, do the following:
     1. Find the corresponding users in the destination tenant.
-    1. Make sure a valid Dynamics 365 license is assigned to the destination user in the destination tenant.
+    1. Make sure a valid license is assigned to the destination user in the destination tenant.
        > [!Note]
        >  If the destination user isn't assigned any license, the migration fails.
     1. Save the CSV file that has both full access users and administrative access users mapped.
@@ -286,7 +286,7 @@ TenantToTenant-GetMigrationStatus -MigrationId {MigrationId}
 After fixing user mapping errors, you need to reupload the user mapping file using same SAS URI.
   
 ### Download the error report (source admin)
-If there are any errors in the user mapping file, there's an option to download an error report. This can be done by directly copying and pasting the **SasUrl** provided in the **Tenant-To-Tenant-GetMigrationStatus** command or by using the following commands that use the SAS URI from the previous step and the desired location to download the error report.
+If there are any errors in the user mapping file, there's an option to download an error report. This can be done by directly copying and pasting the **SasUrl** provided in the **Tenant-To-Tenant-GetMigrationStatus** command or by using the following commands that use the SAS URI from the previous step check status and the desired location to download the error report.
 
 Complete the following steps with Windows PowerShell ISE.
 
@@ -339,7 +339,7 @@ After moving environments to another tenant:
 -	The source environment doesn't have Dataverse.
 -	Users not included in the mapping file won't be migrated and mapped post-migration.
 
-Complete the following procedures for Power Automate, Power Apps, Copilot Studio, Power Pages, and Dynamics 365 Marketing after the migration.
+Complete the following procedures for Power Automate, Power Apps, Copilot Studio, Power Pages.
 
 ### Post-migration process for Power Automate
 After the migration has completed, step through the **Review components** section as a checklist to get flows and other components adjusted and activated. The key steps are:
