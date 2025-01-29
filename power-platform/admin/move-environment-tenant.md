@@ -255,8 +255,8 @@ TenantToTenant-PrepareMigration
 ```
 
 > [!Note]
-> While passing the **SASUri** value, you must provide the parameter as below:
-> `**https://dynamics.blob.core.windows.net/20240604t000000z73e18df430fe40059290dsddc25d783**`
+> While passing the **SASUri** value, you must provide the parameter like this:
+> `https://dynamics.blob.core.windows.net/20240604t000000z73e18df430fe40059290dsddc25d783`
 
 #### Sample output
 
