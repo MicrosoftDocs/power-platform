@@ -26,7 +26,7 @@ In this tutorial, learn how to:
 1. [Fetch a single report](#step-4-fetch-a-single-report)
 
 > [!IMPORTANT]
-> - For more details about tenant isolation, see [Cross-tenant inbound and outbound restrictions](cross-tenant-restrictions.md).
+> For more details about tenant isolation, see [Cross-tenant inbound and outbound restrictions](cross-tenant-restrictions.md).
 
 ## Step 1. Authenticate using Power Platform API
 
