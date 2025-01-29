@@ -44,7 +44,7 @@ Minimizing the risk of over-sharing is crucial in ensuring data security and com
 ### Configure guest access
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a system administrator.
 1. In the navigation pane, select **Security**.
-1. In the **Security** section, select **Identity and access **.
+1. In the **Security** section, select **Identity and access**.
 1. In the **Identity and access** section, select **Guest access**.
 1. The **Guest access** pane appears. Select the environment for which you want to turn off guest access.
 1. Select **Configure guest access**.
