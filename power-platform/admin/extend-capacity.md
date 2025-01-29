@@ -35,7 +35,7 @@ If your tenant is running low on available storage capacity, and you need immedi
 
 ## Prerequisites
 
-Review your [current capacity storage usage](capacity-storage.md#verifying-your-microsoft-dataverse-capacity-based-storage-model) to make sure you're aware of how much more storage capacity is needed to be extended. Nonadmins can also [view self-service storage capacity](view-self-service-capacity.md).
+Review your [current capacity storage usage](capacity-storage.md#verifying-your-microsoft-dataverse-capacity-based-storage-model) to make sure you're aware of how much more storage capacity is needed to be extended. Non-Admins can also [view self-service storage capacity](view-self-service-capacity.md).
 
 ## Extend Dataverse capacity 
 
