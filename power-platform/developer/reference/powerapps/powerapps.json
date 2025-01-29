@@ -1,0 +1,590 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Microsoft Power Platform REST API",
+    "description": "Unified API for all administrative capabilities in Microsoft Power Platform.",
+    "version": "2022-03-01-preview"
+  },
+  "host": "api.powerplatform.com",
+  "schemes": [
+    "https"
+  ],
+  "paths": {
+    "/powerapps/environment/{environmentId}/apps": {
+      "get": {
+        "tags": [
+          "Apps"
+        ],
+        "summary": "Get apps as administrator.",
+        "description": "Returns a list of apps.",
+        "operationId": "Get-AdminApps",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "Name field of the environment.",
+            "required": true,
+            "type": "string",
+            "x-ms-summary": "Environment name"
+          },
+          {
+            "in": "query",
+            "name": "$top",
+            "description": "Number of apps in the response.",
+            "type": "integer",
+            "default": 250,
+            "x-ms-summary": "Page size",
+            "x-ms-visibility": "advanced"
+          },
+          {
+            "in": "query",
+            "name": "$skiptoken",
+            "description": "Get next page of responses.",
+            "type": "string",
+            "x-ms-summary": "Skip token"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/ResourceArrayPowerApp"
+            }
+          },
+          "default": {
+            "description": "Operation Failed"
+          }
+        },
+        "x-ms-pageable": {
+          "nextLinkName": "nextLink"
+        }
+      }
+    },
+    "/powerapps/environments/{environmentId}/apps/{app}": {
+      "get": {
+        "tags": [
+          "Apps"
+        ],
+        "summary": "Get app as administrator.",
+        "description": "Returns a PowerApp.",
+        "operationId": "Get-AdminApp",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "Name field of the environment.",
+            "required": true,
+            "type": "string",
+            "x-ms-summary": "Environment name"
+          },
+          {
+            "in": "path",
+            "name": "app",
+            "description": "Name field of the PowerApp.",
+            "required": true,
+            "type": "string",
+            "x-ms-summary": "PowerApp name"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "200",
+            "schema": {
+              "$ref": "#/definitions/PowerApp"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "ResourceArrayPowerApp": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/PowerApp"
+          }
+        },
+        "nextLink": {
+          "title": "Next Link",
+          "description": "The URL to get the next page of the apps list. Contains the skip token.",
+          "type": "string"
+        }
+      }
+    },
+    "PowerApp": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "PowerApp ID field.",
+          "type": "string"
+        },
+        "name": {
+          "description": "PowerApp name field.",
+          "type": "string"
+        },
+        "properties": {
+          "description": "PowerApp properties object.",
+          "type": "object",
+          "properties": {
+            "appVersion": {
+              "format": "date-time",
+              "description": "PowerApp property appVersion.",
+              "type": "string"
+            },
+            "createdByClientVersion": {
+              "description": "PowerApp property createdByClientVersion object.",
+              "type": "object",
+              "properties": {
+                "major": {
+                  "format": "int32",
+                  "description": "PowerApp property createdByClientVersion major.",
+                  "type": "integer"
+                },
+                "minor": {
+                  "format": "int32",
+                  "description": "PowerApp property createdByClientVersion minor.",
+                  "type": "integer"
+                },
+                "build": {
+                  "format": "int32",
+                  "description": "PowerApp property createdByClientVersion build.",
+                  "type": "integer"
+                },
+                "revision": {
+                  "format": "int32",
+                  "description": "PowerApp property createdByClientVersion revision.",
+                  "type": "integer"
+                },
+                "majorRevision": {
+                  "format": "int32",
+                  "description": "PowerApp property createdByClientVersion majorRevision.",
+                  "type": "integer"
+                },
+                "minorRevision": {
+                  "format": "int32",
+                  "description": "PowerApp property createdByClientVersion minorRevision.",
+                  "type": "integer"
+                }
+              }
+            },
+            "minClientVersion": {
+              "description": "PowerApp property minClientVersion object.",
+              "type": "object",
+              "properties": {
+                "major": {
+                  "format": "int32",
+                  "description": "PowerApp property minClientVersion major.",
+                  "type": "integer"
+                },
+                "minor": {
+                  "format": "int32",
+                  "description": "PowerApp property minClientVersion minor.",
+                  "type": "integer"
+                },
+                "build": {
+                  "format": "int32",
+                  "description": "PowerApp property minClientVersion build.",
+                  "type": "integer"
+                },
+                "revision": {
+                  "format": "int32",
+                  "description": "PowerApp property minClientVersion revision.",
+                  "type": "integer"
+                },
+                "majorRevision": {
+                  "format": "int32",
+                  "description": "PowerApp property minClientVersion majorRevision.",
+                  "type": "integer"
+                },
+                "minorRevision": {
+                  "format": "int32",
+                  "description": "PowerApp property minClientVersion minorRevision.",
+                  "type": "integer"
+                }
+              }
+            },
+            "owner": {
+              "description": "PowerApp owner principal object.",
+              "type": "object",
+              "properties": {
+                "id": {
+                  "description": "PowerApp owner principal user ID.",
+                  "type": "string"
+                },
+                "displayName": {
+                  "description": "PowerApp owner principal displayName.",
+                  "type": "string"
+                },
+                "email": {
+                  "description": "PowerApp owner principal email.",
+                  "type": "string"
+                },
+                "type": {
+                  "description": "PowerApp owner principal type.",
+                  "type": "string"
+                },
+                "tenantId": {
+                  "description": "PowerApp owner principal tenant ID.",
+                  "type": "string"
+                },
+                "userPrincipalName": {
+                  "description": "PowerApp owner user principal name.",
+                  "type": "string"
+                }
+              }
+            },
+            "createdBy": {
+              "description": "PowerApp created by principal object.",
+              "type": "object",
+              "properties": {
+                "id": {
+                  "description": "PowerApp creator principal object ID.",
+                  "type": "string"
+                },
+                "displayName": {
+                  "description": "PowerApp creator principal display name.",
+                  "type": "string"
+                },
+                "email": {
+                  "description": "PowerApp creator principal email.",
+                  "type": "string"
+                },
+                "type": {
+                  "description": "PowerApp creator principal type.",
+                  "type": "string"
+                },
+                "tenantId": {
+                  "description": "PowerApp creator principal tenant ID.",
+                  "type": "string"
+                },
+                "userPrincipalName": {
+                  "description": "PowerApp creator user principal name.",
+                  "type": "string"
+                }
+              }
+            },
+            "lastModifiedBy": {
+              "description": "PowerApp last modified by object.",
+              "type": "object",
+              "properties": {
+                "id": {
+                  "description": "PowerApp last modified by principal object ID.",
+                  "type": "string"
+                },
+                "displayName": {
+                  "description": "PowerApp last modified by principal display name.",
+                  "type": "string"
+                },
+                "email": {
+                  "description": "PowerApp last modified by principal email.",
+                  "type": "string"
+                },
+                "type": {
+                  "description": "PowerApp last modified by principal type.",
+                  "type": "string"
+                },
+                "tenantId": {
+                  "description": "PowerApp last modified by principal tenant ID.",
+                  "type": "string"
+                },
+                "userPrincipalName": {
+                  "description": "PowerApp last modified by user principal name.",
+                  "type": "string"
+                }
+              }
+            },
+            "backgroundColor": {
+              "description": "PowerApp background color.",
+              "type": "string"
+            },
+            "backgroundImageUri": {
+              "description": "PowerApp background image URI.",
+              "type": "string"
+            },
+            "displayName": {
+              "description": "PowerApp display name.",
+              "type": "string"
+            },
+            "description": {
+              "description": "PowerApp description.",
+              "type": "string"
+            },
+            "appUris": {
+              "description": "PowerApp appUri object.",
+              "type": "object",
+              "properties": {
+                "documentUri": {
+                  "description": "PowerApp appUri document URI object.",
+                  "type": "object",
+                  "properties": {
+                    "value": {
+                      "description": "PowerApp appUri document URI value.",
+                      "type": "string"
+                    },
+                    "readonlyValue": {
+                      "description": "PowerApp appUri document URI read-only value.",
+                      "type": "string"
+                    }
+                  }
+                },
+                "imageUris": {
+                  "description": "PowerApp appUri image URI array.",
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            },
+            "createdTime": {
+              "format": "date-time",
+              "description": "PowerApp property createdTime.",
+              "type": "string"
+            },
+            "lastModifiedTime": {
+              "format": "date-time",
+              "description": "PowerApp property lastModifiedTime.",
+              "type": "string"
+            },
+            "sharedGroupsCount": {
+              "format": "int32",
+              "description": "PowerApp property sharedGroupsCount.",
+              "type": "integer"
+            },
+            "sharedUsersCount": {
+              "format": "int32",
+              "description": "PowerApp property sharedUsersCount.",
+              "type": "integer"
+            },
+            "appOpenProtocolUri": {
+              "description": "PowerApp property appOpenProtocolUri.",
+              "type": "string"
+            },
+            "appOpenUri": {
+              "description": "PowerApp property appOpenUri.",
+              "type": "string"
+            },
+            "userAppMetadata": {
+              "description": "PowerApp property userAppMetadata object.",
+              "type": "object",
+              "properties": {
+                "favorite": {
+                  "description": "PowerApp property userAppMetadata favorite.",
+                  "type": "string"
+                },
+                "includeInAppsList": {
+                  "description": "PowerApp property userAppMetadata includeInAppsList.",
+                  "type": "boolean"
+                }
+              }
+            },
+            "isFeaturedApp": {
+              "description": "PowerApp property isFeaturedApp.",
+              "type": "boolean"
+            },
+            "bypassConsent": {
+              "description": "PowerApp property bypassConsent.",
+              "type": "boolean"
+            },
+            "isHeroApp": {
+              "description": "PowerApp property isHeroApp.",
+              "type": "boolean"
+            },
+            "environment": {
+              "description": "PowerApp environment property object.",
+              "type": "object",
+              "properties": {
+                "id": {
+                  "description": "PowerApp environment ID.",
+                  "type": "string"
+                },
+                "name": {
+                  "description": "PowerApp environment name.",
+                  "type": "string"
+                }
+              }
+            },
+            "connectionReferences": {
+              "$ref": "#/definitions/ConnectionReferences"
+            }
+          }
+        },
+        "tags": {
+          "description": "PowerApp tags.",
+          "type": "object",
+          "properties": {
+            "primaryDeviceWidth": {
+              "description": "PowerApp tag primaryDeviceWidth.",
+              "type": "string"
+            },
+            "primaryDeviceHeight": {
+              "description": "PowerApp tag primaryDeviceHeight.",
+              "type": "string"
+            },
+            "sienaVersion": {
+              "description": "PowerApp tag sienaVersion.",
+              "type": "string"
+            },
+            "deviceCapabilities": {
+              "description": "PowerApp tag deviceCapabilities.",
+              "type": "string"
+            },
+            "supportsPortrait": {
+              "description": "PowerApp tag supportsPortrait.",
+              "type": "string"
+            },
+            "supportsLandscape": {
+              "description": "PowerApp tag supportsLandscape.",
+              "type": "string"
+            },
+            "primaryFormFactor": {
+              "description": "PowerApp tag primaryFormFactor.",
+              "type": "string"
+            },
+            "publisherVersion": {
+              "description": "PowerApp tag publisherVersion.",
+              "type": "string"
+            },
+            "minimumRequiredApiVersion": {
+              "format": "date-time",
+              "description": "PowerApp tag minimumRequiredApiVersion.",
+              "type": "string"
+            }
+          }
+        },
+        "type": {
+          "description": "PowerApp type field.",
+          "type": "string"
+        }
+      }
+    },
+    "ConnectionReferences": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ConnectionReference"
+      }
+    },
+    "ConnectionReference": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "x-ms-summary": "Connector ID",
+          "x-ms-visibility": "important"
+        },
+        "displayName": {
+          "type": "string",
+          "x-ms-summary": "Connector display name",
+          "x-ms-visibility": "important"
+        },
+        "iconUri": {
+          "type": "string",
+          "x-ms-summary": "Icon URI",
+          "x-ms-visibility": "important"
+        },
+        "dataSources": {
+          "description": "List of data sources for the connection.",
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "x-ms-summary": "Data sources"
+        },
+        "dependencies": {
+          "description": "List of dependencies for the connection.",
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "x-ms-summary": "Dependencies"
+        },
+        "dependents": {
+          "description": "List of dependant connectors for the connector.",
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "x-ms-summary": "Dependents"
+        },
+        "isOnPremiseConnection": {
+          "description": "Flag indicates an on-premise data gateway.",
+          "type": "boolean",
+          "x-ms-summary": "Is on-premise connection"
+        },
+        "bypassConsent": {
+          "description": "Flag indicates bypassed API consent.",
+          "type": "boolean",
+          "x-ms-summary": "Bypass consent"
+        },
+        "apiTier": {
+          "description": "API tier is standard or premium.",
+          "type": "string",
+          "x-ms-summary": "API tier"
+        },
+        "isCustomApiConnection": {
+          "description": "Flag indicates a custom connector.",
+          "type": "boolean",
+          "x-ms-summary": "Custom API flag"
+        },
+        "runtimePolicyName": {
+          "description": "String indicating the name of the run-time policy.",
+          "type": "string",
+          "x-ms-summary": "Runtime policy name"
+        },
+        "executionRestrictions": {
+          "description": "Execution restrictions for the run-time policy.",
+          "type": "object",
+          "x-ms-summary": "Execution restrictions"
+        },
+        "sharedConnectionId": {
+          "description": "String indicating the ID of the shared connection.",
+          "type": "string",
+          "x-ms-summary": "Shared Connection ID"
+        }
+      }
+    }
+  },
+  "securityDefinitions": {
+    "oauth2": {
+      "type": "oauth2",
+      "flow": "implicit",
+      "authorizationUrl": "https://login.microsoftonline.com/common/oauth2/authorize?resource=https://api.powerplatform.com",
+      "scopes": {
+        ".default": ".default"
+      },
+      "description": "Microsoft Entra ID OAuth2."
+    }
+  },
+  "security": [
+    {
+      "oauth2": [
+        ".default"
+      ]
+    }
+  ]
+}
