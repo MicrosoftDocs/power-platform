@@ -104,7 +104,7 @@ Create a user mapping file for the source environment to be transferred to the t
 
     |Source|	Destination|
     |------|-------------|
-    |SourceUser@sourcetenant.com	|DestinationUser@targettenant.com|
+    |`SourceUser@sourcetenant.com`	|`DestinationUser@targettenant.com`|
 
 #### For full access users:
 
@@ -143,7 +143,7 @@ Create a user mapping file for the source environment to be transferred to the t
 ## Migration
 Before proceeding with the migration, make sure you have reviewed and completed the preparation process. After you've completed the preparation process, complete the following sections to migrate.
 
-### Install PowerShell for Power Platform administrators (Both Source and Target Admins) 
+### Install PowerShell for Power Platform administrators (both source and target admins) 
 The PowerShell for Power Platform Administrators module is the recommended PowerShell module for interacting with admin capabilities. For information that helps you get started with the PowerShell for Power Platform Administrators module, go to [Get started with PowerShell for Power Platform Administrators](powershell-getting-started.md) and [Installing PowerShell for Power Platform Administrators](powershell-installation.md).
 
 Install or update the necessary module by using one of the following commands:
@@ -153,7 +153,7 @@ Install-Module -Name Microsoft.PowerApps.Administration.PowerShell
 Update-Module -Name Microsoft.PowerApps.Administration.PowerShell
 ```
 
-### Install Azure PowerShell on Windows (Both Source and Target Admins)
+### Install Azure PowerShell on Windows (both source and target admins)
 
 The Azure PowerShell module is a rollup module. Installing the Azure PowerShell module downloads the generally available modules and makes their cmdlets available for use. Learn more in [Install Azure PowerShell on Windows](/powershell/azure/install-azps-windows?view=azps-11.6.0&tabs=powershell&pivots=windows-psgallery&preserve-view=true).
 
@@ -163,14 +163,15 @@ Use the Install-Module cmdlet to install the Azure PowerShell module:
 Install-Module -Name Az -Repository PSGallery -Force
 ```
 
-### Sign into Microsoft Power Platform (Both Source and Target Admins)
+### Sign into Microsoft Power Platform (both source and target admins)
 
 Sign into Microsoft Power Platform. This step allows administrators to authenticate and access the Power Platform environment.
+
 ```PowerShell
 Add-PowerAppsAccount
 ```
 
-### Submit migration request (Source Admin)
+### Submit migration request (source admin)
 To initiate a tenant-to-tenant migration, the source tenant's Dynamics 365 or Power Platform administrator must submit a request to the target tenant using the following command and provide the environment name ID and tenant ID.
 
 You must have Power Platform administrator or Dynamics 365 administrator credentials to complete this step. 
@@ -184,9 +185,9 @@ You can view the status and RequestID using the below command.
 TenantToTenant-ViewMigrationRequest
 ```
 > [!Note]
-> Record the MigrationId, which is used in further migration commands.
+> Record the MigrationID, which is used in further migration commands.
 
-### View and approve migration request (Target Admin)
+### View and approve migration request (target admin)
 The admin of the destination tenant should run the following command to see all the migration requests and status. The admin can review all the migration requests and options to approve or reject. 
 
 ```PowerShell
@@ -198,8 +199,8 @@ TenantToTenant-ManageMigrationRequest -RequestId {RequestID from above command t
 ```
 Once a request is approved, the admin of the destination tenant can notify the admin of the source tenant to proceed with the next step of the migration.
 
-### Generate a shared access signature (SAS) URL (Source Admin)
-This step involves creating the SAS URL, which is utilized later for uploading the user mapping file. Execute the following PowerShell command, substituting **EnvironmentId** with the actual environment ID:
+### Generate a shared access signature (SAS) URL (source admin)
+This step involves creating the SAS URL, which is utilized later for uploading the user mapping file. Execute the following PowerShell command, substituting **EnvironmentId** with the actual environment ID.
 
 ```PowerShell
 GenerateResourceStorage-PowerAppEnvironment –EnvironmentName {EnvironmentId}
@@ -216,11 +217,11 @@ Errors      :
 Internal    : @{sharedAccessSignature=https://dynamics.blob.core.windows.net/20240604t000000z73e18df430fe40059290dsddc25d783?sv=2018-03-28&sr=c&si=SASpolicyXXRRRX}
 ```
 
-### Upload the user mapping file (Source Admin)
+### Upload the user mapping file (source admin)
 The next step involves transferring the user mapping file to the previously established SAS URL. To accomplish this, execute the following commands in Windows PowerShell ISE, ensuring that the parameters **SASUri** and **FileToUpload** contain the appropriate information about your environment. This step is crucial for uploading mapping of the users accurately in the system.
 
 > [!Note]
-> The installation of the Az module is required to run the script mentioned. Complete the following steps with Windows PowerShell ISE.
+> The installation of the Azure module is required to run the script mentioned. Complete the following steps with Windows PowerShell ISE.
 
 ```Windows PowerShell ISE
 $SASUri ="Update the SAS Uri from previous step”
@@ -241,10 +242,10 @@ $storageContext = New-AzStorageContext -StorageAccountName $storageAccountName -
 Set-AzStorageBlobContent -File $fileToUpload -Container $container -Context $storageContext -Force
 ```
 
-### Prepare the environment migration (Source Admin)
+### Prepare the environment migration (source admin)
 The following step involves conducting comprehensive validations to ensure that every user listed in the user mapping file is verified and currently active within the target tenant. 
 
-MigrationId can be view using "TenantToTenant-ViewMigrationRequest" command in source tenant.
+MigrationId can be viewed using the "TenantToTenant-ViewMigrationRequest" command in the source tenant.
 
 ```PowerShell
 TenantToTenant-PrepareMigration 
@@ -265,26 +266,27 @@ Description : Accepted
 ```
 This step's duration varies depending on the number of users in the user mapping file. You can monitor the progress of this step by using the **TenantToTenant-GetStatus** command, provided below.
 
-### Check status (Source Admin)
+### Check status (source admin)
+
 ```PowerShell
 TenantToTenant-GetMigrationStatus -MigrationId {MigrationId}
 ```
 #### Sample output
-•	Validate Tenant To Tenant Migration: Running 
-•	Validate Tenant To Tenant Migration: Succeeded
-•	Validation Failed, Errors are updated on the blob here: SASURI
+-	Validate Tenant To Tenant Migration: Running 
+-	Validate Tenant To Tenant Migration: Succeeded
+-	Validation Failed, Errors are updated on the blob here: SASURI
 
-### Error and how to resolve them 
-- **The User mapping file provided for Tenant To Tenant migration is invalid**. Please check if the user mapping file name is correct and user mapping file is comma separated.
-- Line '{line numbers}' have the same '{emailID}'--- Please make sure we do not have any duplicate entries.
-- Invalid Email Format '{emailid}' -- Make sure email format is correct testuser@tenantdomain.com
-- Target on line '{linenumber}' is same as source emailId. -- Make sure Destination Email is different from Source Email
-- Each line must have exactly two columns: '{line numbers}' -- Make sure each row has only two columns source and destination remove extra comma if any
+### Errors and how to resolve them 
+- If you receive an error that says, **The User mapping file provided for Tenant To Tenant migration is invalid**, check if the user mapping file name is correct and that the user mapping file has a comma to separate values.
+- **Line '{line numbers}' have the same '{emailID}'**: Make sure there aren't any duplicate entries.
+- **Invalid Email Format '{emailid}'**: Make sure the email format is correct for `testuser@tenantdomain.com`.
+- **Target on line '{linenumber}' is same as source emailId**: Make sure the **Destination Email** is different from the **Source Email**.
+- **Each line must have exactly two columns: '{line numbers}'**: Make sure each row has only two columns: the source and destination columns. Remove any extra commas, if any.
 
-  After fixing user mapping errors, you need to reupload the user mapping file using same SAS URI.
+After fixing user mapping errors, you need to reupload the user mapping file using same SAS URI.
   
-### Download the error report (Source Admin)
-If there are any errors in the user mapping, there's an option to download the error report. This can be done by directly copying and pasting the SasUrl provided in the Tenant-To-Tenant-GetMigrationStatus command or using the following commands that use the SAS URI from the previous step and the desired location to download the error report.
+### Download the error report (source admin)
+If there are any errors in the user mapping file, there's an option to download an error report. This can be done by directly copying and pasting the **SasUrl** provided in the **Tenant-To-Tenant-GetMigrationStatus** command or by using the following commands that use the SAS URI from the previous step and the desired location to download the error report.
 
 Complete the following steps with Windows PowerShell ISE.
 
