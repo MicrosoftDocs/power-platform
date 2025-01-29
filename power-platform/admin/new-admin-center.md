@@ -45,7 +45,7 @@ Most of the pages from the classic admin center are available in the new one, ei
 | 3           | Environment groups   | Manage > Environment groups |
 | 4           | Advisor              | Action center > Recommendations |
 | 5           | Security             | Security         |
-| 6           | Analytics            | Not applicable<br><br>**Note:** Experiences from Analytics pages won't be migrated in the current form. |
+| 6           | Analytics            | Work in progress<br><br>**Note:**  Analytics Experiences from the Classic PPAC are currently in the process of being migrated to the new PPAC. Please check back in late February/early March for an update on these experiences.
 | 7           | Billing > Licenses   | Licensing > Products > Power Apps |
 | 8           | Billing > Plans      | Licensing > Pay-as-you-go plans |
 | 9           | Settings             | Manage > Tenant settings |
