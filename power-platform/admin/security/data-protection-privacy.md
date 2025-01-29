@@ -6,6 +6,7 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 01/29/2025
 author: matapg007
+ms.custom: NewPPAC
 ms.author: matgupta
 ms.reviewer: sericks
 search.audienceType: 
