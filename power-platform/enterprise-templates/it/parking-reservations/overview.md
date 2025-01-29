@@ -5,7 +5,7 @@ author: ananthar-msft
 ms.author: ananthar
 ms.reviewer: ellenwehrle
 ms.topic: overview
-ms.date: 01/28/2025
+ms.date: 01/29/2025
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates

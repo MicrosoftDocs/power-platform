@@ -5,7 +5,7 @@ author: ananthar-msft
 ms.author: ananthar
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 01/28/2025
+ms.date: 01/29/2025
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -14,11 +14,13 @@ ms.subservice: solution-templates
 
 # Manage the Parking Reservation program
 
-Before parking reservations can be made, you, as the parking reservation program manager, need to complete certain configuration steps that create records for countries, cities, buildings, floors, and parking spots in the Administrator model-driven app.
+Before people in your organization can start using the Parking Reservation app, a Parking Reservation program manager needs to take steps to ensure it is set up with relevant data. In this role, you need to complete certain configuration steps that create records for countries, cities, buildings, floors, and parking spots in the Administrator model-driven app.
 
 :::image type="content" source="media/manage/par-res-admin.png" alt-text="Screenshot of active reservations in the Parking Reservation model-driven app for administrators.":::
 
 ## Create countries
+
+You need to create records for all the countries that can be selected in your organization's Parking Reservation app.
 
 1. Start the Parking Reservation Administrator model-driven app and select Countries under Parking Details.
 1. Select **+ New** on the top toolbar and fill out the Country Name for the new country record.
@@ -27,6 +29,8 @@ Before parking reservations can be made, you, as the parking reservation program
 
 ## Create cities
 
+You need to create records for all the cities that can be selected in your organization's Parking Reservation app.
+
 1. Start the Parking Reservation Administrator model-driven app and select **Cities** under *Parking Details*.
 1. Select **+ New** on the top toolbar and fill out the *City Name* for the new city record.
 1. Select the *Country* field value from existing countries by either typing in a few letters of the country name or selecting the **magnifying glass** icon and choosing one of the results, this is a required field.
@@ -34,6 +38,8 @@ Before parking reservations can be made, you, as the parking reservation program
 1. Repeat the steps every time you need to create a new city.
 
 ## Create buildings
+
+You need to create records for all the buildings that can be selected in your organization's Parking Reservation app.
 
 1. Start the Parking Reservation Administrator model-driven app and select Buildings under Parking Details.
 1. Select **+ New** and type in a Name for the new building record.
@@ -44,6 +50,8 @@ Before parking reservations can be made, you, as the parking reservation program
 
 ## Create floors
 
+You need to create records for all the floors within each building that can be selected in your organization's Parking Reservation app.
+
 1. Start the Parking Reservation Administrator model-driven app and select **Floors** under *Parking Details*.
 1. Select **+ New** and type in the Name for the new floor record.
 1. Select the Building Id field value from existing buildings by either typing in a few letters of the building name or selecting the magnifying glass icon and choosing from the results, this is a required field.
@@ -52,6 +60,8 @@ Before parking reservations can be made, you, as the parking reservation program
 1. Repeat the steps every time you need to create a new floor.
 
 ## Create parking spots
+
+You need to create records for all the parking spots that can be selected on each floor within each building in your organization's Parking Reservation app.
 
 1. Start the Parking Reservation Administrator model-driven app and select **Parking Spots** under *Parking Details*.
 1. Select + New on the top toolbar and fill out the Name for the new parking spot record.
