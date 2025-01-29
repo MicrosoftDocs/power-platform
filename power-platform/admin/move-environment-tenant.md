@@ -136,7 +136,7 @@ Create a user mapping file for the source environment to be transferred to the t
 1. If you decide not to include any of these users, skip the following steps. Otherwise, to include these users in the mapping file, do the following:
     1. Find the corresponding users in the destination tenant.
     1. Make sure a valid Dynamics 365 license is assigned to the destination user in the destination tenant.
-       > [!Note}
+       > [!Note]
        >  If the destination user isn't assigned any license, the migration fails.
     1. Save the CSV file that has both full access users and administrative access users mapped.
 
