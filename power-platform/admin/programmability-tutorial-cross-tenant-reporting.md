@@ -16,8 +16,6 @@ contributors:
 
 # Tutorial: Create cross tenant isolation reports
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
-
 This tutorial demonstrates how to use the Power Platform API to create cross tenant isolation reports.
 
 In this tutorial, learn how to:
