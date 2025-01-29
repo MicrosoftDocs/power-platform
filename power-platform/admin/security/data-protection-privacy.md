@@ -4,7 +4,7 @@ description: Learn how to manage data prorection and privacy in the Power Platfo
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 12/11/2024
+ms.date: 01/29/2025
 author: matapg007
 ms.author: matgupta
 ms.reviewer: sericks
@@ -25,4 +25,4 @@ Setting up data policies at the environment or tenant-level acts as guardrails t
 > The recommendation for data policies is triggered when there is no tenant-level policy defined. At this time, any environment-scoped data policies are not considered when performing the security assessment for the tenant.
 
 ## Azure Virtual Network policies
-This feature applies only to Managed Environments. Virtual Network (VNet) support in Power Platform enables organizations to isolate their network traffic and enforce stringent security policies. Virtual Network integration allows Power Platform environments to securely connect to on-premises networks and other Azure services, ensuring that data remains within trusted network boundaries. This feature is beneficial for scenarios requiring high levels of data protection and compliance, as it provides granular control over egress network traffic from Power Platform and helps mitigates data exfiltration risk. Learn more in [Virtual Network support overview](../vnet-support-overview.md).
+This feature applies only to Managed Environments. Virtual Network support in Power Platform allows organizations to isolate their network traffic and enforce stringent security policies. Virtual Network integration allows Power Platform environments to securely connect to on-premises networks and other Azure services, ensuring that data remains within trusted network boundaries. This feature is beneficial for scenarios requiring high levels of data protection and compliance, as it provides granular control over egress network traffic from Power Platform and helps mitigates data exfiltration risk. Learn more in [Virtual Network support overview](../vnet-support-overview.md).
