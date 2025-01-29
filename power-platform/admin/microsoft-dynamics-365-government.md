@@ -37,7 +37,7 @@ In response to the unique and evolving requirements of the United States public 
 Microsoft strives to maintain functional parity between our commercially available services and those enabled though our U.S. Government clouds, specifically:
 
 - US Government Community Cloud (GCC)
-- US GC High
+- US GCC High
 - US Department of Defense (US DoD)
 
 There are exceptions to the principle of maintaining product functional parity within the U.S. Government clouds. These exceptions are highlighted through the [Product and Feature Availability](https://aka.ms/bapfunctionalparity) document, and intended to help customers understand and plan for successful implementations of their business application solutions. Microsoft continues to evaluate these services and capabilities for inclusion and updates in future releases.  Check back on a monthly basis for important updates and revisions. Refer to the [Global Geographic Availability](https://dynamics.microsoft.com/geographic-availability/) tool to see where the Dynamics 365 Apps and Offers are available throughout the world, including approximate availability timelines. 
