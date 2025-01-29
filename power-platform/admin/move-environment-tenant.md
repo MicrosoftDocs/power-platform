@@ -25,7 +25,7 @@ The tenant-to-tenant migration feature allows you to transfer an environment fro
 Be aware of the following notes before you get started with a tenant-to-tenant migration.
 
 -	**Supported environment types:** Production and sandbox only.
--	**Not supported environment types:** Default, developer, trial, and Teams environment types are not supported. Government Community Cloud (GCC) to public clouds and vice versa are not supported.
+-	**Not supported environment types:** Default, developer, trial, and Teams environment types aren't supported. Government Community Cloud (GCC) to public clouds and vice versa aren't supported.
 -	Components not supported include Dynamics 365 Customer Voice, Omnichannel for Customer Service, component library, Dynamics 365 Customer Insights - Journeys, and Dynamics 365 Customer Insights - Data.
 -	There are specific steps required for Power Apps, Power Automate, Power Pages, and Microsoft Copilot studio called out in the premigration and post-migration steps.
 -	A Dataverse organization linked to a finance and operations organization can't be migrated to a different tenant.
