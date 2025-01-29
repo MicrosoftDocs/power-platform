@@ -39,8 +39,8 @@ Be aware of the following notes before you get started with a tenant-to-tenant m
 Be sure that you complete the following prerequisites before you start the migration process.
 
 -	Create users in the target tenant, including:
-  -	Create users in Microsoft 365 and Microsoft Entra ID.
-  -	Assign licenses.
+    -	Create users in Microsoft 365 and Microsoft Entra ID.
+    -	Assign licenses.
 - You must have Power platform admin or Dynamics 365 admin privileges to perform the migration.
 -	The PowerShell for Power Platform Administrators module is the recommended PowerShell module for interacting with admin capabilities. Learn more in [Get started with PowerShell for Power Platform Administrators](powershell-getting-started.md).
 
