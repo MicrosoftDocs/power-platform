@@ -1,21 +1,17 @@
 
 {
-    "redirections": [
-        {
-           "source_path": "power-platform/admin/security/access-control.md",
-           "redirect_url": "power-platform/admin/security/identity-access-management",
-           "redirect_document_id": "false"
-        },
-        {
-           "source_path": "power-platform/admin/security/network-security.md",
-           "redirect_url": "power-platform/admin/security/data-protection-privacy",
-           "redirect_document_id": "false"
-        },
-    ]
-}
-{
   "redirections": [
    {
+      "source_path": "power-platform/admin/security/access-control.md",
+      "redirect_url": "power-platform/admin/security/identity-access-management",
+      "redirect_document_id": "false"
+   },
+    {
+      "source_path": "power-platform/admin/security/network-security.md",
+      "redirect_url": "power-platform/admin/security/data-protection-privacy",
+      "redirect_document_id": "false"
+   },
+    {
 
       "source_path": "power-platform/admin/security/security-posture-overview.md",
       "redirect_url": "power-platform/admin/security/security-overview",
