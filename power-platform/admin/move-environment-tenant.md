@@ -122,9 +122,9 @@ Create a user mapping file for the source environment to be transferred to the t
 1. Enter the destination Windows Live ID (UPNs) in the same Notepad document to the right of the corresponding Source UPN, separating Source and Destination UPNs by a comma (,).
 
     Example:
-      - user001@source.com, user001@destination.com
-      - user002@source.com, user002@destination.com
-      - user003@source.com, user003@destination.com
+      - `user001@source.com`, `user001@destination.com`
+      - `user002@source.com`, `user002@destination.com`
+      - `user003@source.com`, `user003@destination.com`
 
 1. Save the file as a CSV.
 
