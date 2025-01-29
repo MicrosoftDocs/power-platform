@@ -5,7 +5,7 @@ ms.subservice: admin
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 01/29/2025
-ms.custom: ignite-2024
+ms.custom: NewPPAC
 author: matapg007
 ms.author: matgupta
 ms.reviewer: sericks
