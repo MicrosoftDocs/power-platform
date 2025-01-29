@@ -308,16 +308,17 @@ Get-AzStorageBlobContent -Blob "usermapping.csv" -Container $containerName -Dest
 Fix the issues in the user mapping file.
 Reupload the file using the same or new SAS URL.
 
-After successfully completing Prepare the environment migration steps now, you may proceed with next step to migrate environment. Next step you can perform within next seven days and after that you may have to start with "Prepare the environment migration"
+After successfully completing the Prepare the environment migration steps now, you may proceed with the next step to migrate the environment. The next step you can perform within next seven days and after that you may have to start with "Prepare the environment migration"
 
-## Migrate the environment (Source Admin)
-MigrationId can be view using "TenantToTenant-ViewMigrationRequest" command in source tenant.
+## Migrate the environment (source admin)
+The **MigrationId** can be viewed using the **TenantToTenant-ViewMigrationRequest** command in the source tenant.
+
 ```PowerShell
 TenantToTenant-MigratePowerAppEnvironment
 -MigrationId {MigrationId}
 -TargetTenantId {TargetTenantId}
 ```
-### Get status (Source Admin)
+### Get status (source admin)
 
 ```PowerShell
 TenantToTenant-GetMigrationStatus -EnvironmentName {EnvironmentId}
@@ -341,10 +342,11 @@ After moving environments to another tenant:
 Complete the following procedures for Power Automate, Power Apps, Copilot Studio, Power Pages, and Dynamics 365 Marketing after the migration.
 
 ### Post-migration process for Power Automate
-After the migration has completed, step through the **Review components** section as a checklist to get flows and other components adjusted and activated. Key steps:
-    1. Create connections for all connection references.
-    1. Start all flows, including starting child flows before parent flows.
-    1. For any HTTP triggered flows, retrieve the new URL and place it in any calling apps or flows to refresh those references.
+After the migration has completed, step through the **Review components** section as a checklist to get flows and other components adjusted and activated. The key steps are:
+
+1. Create connections for all connection references.
+1. Start all flows, including starting child flows before parent flows.
+1. For any HTTP triggered flows, retrieve the new URL and place it in any calling apps or flows to refresh those references.
 
 ### Post-migration process for Power Apps
 
