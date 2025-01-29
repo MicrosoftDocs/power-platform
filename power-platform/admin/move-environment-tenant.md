@@ -53,7 +53,7 @@ Complete the following procedures for Power Automate, Power Apps, Copilot Studio
 
 If your flows are already defined in Dataverse, then no extra work is required. 
 
-Any Power Automate flows that should be migrated need to have their definitions added into Dataverse solutions in the source environment. Learn more about this in [Add an existing cloud flow into a solution](/power-automate/create-flow-solution#add-an-existing-cloud-flow-into-a-solution). This can be done in bulk by running the [Add-AdminFlowsToSolution](/powershell/module/microsoft.powerapps.administration.powershell/add-adminflowstosolution?view=pa-ps-latest) cmdlet.
+Any Power Automate flows that should be migrated need to have their definitions added into Dataverse solutions in the source environment. Learn more about this in [Add an existing cloud flow into a solution](/power-automate/create-flow-solution#add-an-existing-cloud-flow-into-a-solution). This can be done in bulk by running the [Add-AdminFlowsToSolution](/powershell/module/microsoft.powerapps.administration.powershell/add-adminflowstosolution?view=pa-ps-latest&preserve-view=true) cmdlet.
       
 ### Prepare Power Apps
 Any Power Apps must be manually exported. We don't support the migration of customer connectors, connections, or gateways. If you have any of these components set up, they must be manually reconfigured after the migration.
@@ -154,9 +154,9 @@ Update-Module -Name Microsoft.PowerApps.Administration.PowerShell
 
 ### Install Azure PowerShell on Windows (Both Source and Target Admins)
 
-The Az PowerShell module is a rollup module. Installing the Az PowerShell module downloads the generally available modules and makes their cmdlets available for use. Learn more at [Install Azure PowerShell on Windows](/powershell/azure/install-azps-windows?view=azps-11.6.0&tabs=powershell&pivots=windows-psgallery).
+The Azure PowerShell module is a rollup module. Installing the Azure PowerShell module downloads the generally available modules and makes their cmdlets available for use. Learn more in [Install Azure PowerShell on Windows](/powershell/azure/install-azps-windows?view=azps-11.6.0&tabs=powershell&pivots=windows-psgallery&preserve-view=true).
 
-Use the Install-Module cmdlet to install the Az PowerShell module:
+Use the Install-Module cmdlet to install the Azure PowerShell module:
 
 ```PowerShell
 Install-Module -Name Az -Repository PSGallery -Force
@@ -322,10 +322,11 @@ TenantToTenant-GetMigrationStatus -EnvironmentName {EnvironmentId}
 
 #### Sample output
 
-•	Migrate Environment: Running
-•	Migrate Environment: Succeeded
+-	Migrate Environment: Running
+-	Migrate Environment: Succeeded
 
-> [!Note] If you encounter any issues running above commands [submit a support request](get-help-support.md) to get help.
+> [!Note]
+> If you encounter any issues running the above commands, [submit a support request](get-help-support.md) to get help.
 
 ## Post-migration process
 After moving environments to another tenant:
