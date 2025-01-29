@@ -1,7 +1,7 @@
 ---
 title: Tenant-to-tenant migrations 
 description: Learn about the impact of migrating an environment from one tenant to another. 
-ms.date: 01/28/2025
+ms.date: 01/29/2025
 ms.topic: conceptual
 author: matapg007
 contributors:
@@ -25,29 +25,27 @@ The tenant-to-tenant migration feature allows you to transfer an environment fro
 Be aware of the following notes before you get started with a tenant-to-tenant migration.
 
 -	**Supported environment types:** Production and sandbox only.
--	**Not supported environment types:** Default, developer, trial, and teams environment types and Government Community Cloud (GCC) to public clouds or vice versa.
--	Components not supported include **Dynamics 365 Customer voice, Omnichannel for Customer Service, component library, Dynamics 365 Customer Insights Journey, Dynamics 365 Customer Insights Data**
--	**There are additional steps required for Power Apps, Power Automate, Pages & Microsoft Copilot studio** called out later in Premigration and post migrations steps.
+-	**Not supported environment types:** Default, developer, trial, and Teams environment types are not supported. Government Community Cloud (GCC) to public clouds and vice versa are not supported.
+-	Components not supported include Dynamics 365 Customer Voice, Omnichannel for Customer Service, component library, Dynamics 365 Customer Insights - Journeys, and Dynamics 365 Customer Insights - Data.
+-	There are specific steps required for Power Apps, Power Automate, Power Pages, and Microsoft Copilot studio called out in the premigration and post-migration steps.
 -	A Dataverse organization linked to a finance and operations organization can't be migrated to a different tenant.
--	You might need to reconfigure some applications and settings after tenant-to-tenant migration, such as Microsoft Dynamics 365 for Outlook, server-side sync, SharePoint or others.
+-	You might need to reconfigure some applications and settings after tenant-to-tenant migration, such as Microsoft Dynamics 365 for Outlook, server-side sync, SharePoint, and others.
 -	Once users are created and configured, you must [create a mapping file](#create-user-mapping-file), which is described later in this article.
 -	If the mapped user has a mailbox in the destination tenant, then the mailbox is automatically configured during the migration. For all other users, you need to reconfigure the mailbox.
   -	If the same mailbox is used in the target tenant, `test@microsoft.com`, then the mailbox is used by default. Before the tenant-to-tenant migration, customers need to migrate and configure their mailboxes on the target tenant.
-  -	If you're using the default onmicrosoft domain, `test@sourcecompanyname.onmicrosoft.com`, the post migration domain name is changed 
- to `test@targetcompanyname.onmicrosoft.com`. Customers need to reconfigure the mailbox. To configure the mailbox, see [Connect to Exchange Online](connect-exchange-online.md).
-
+  -	If you're using the default onmicrosoft domain, `test@sourcecompanyname.onmicrosoft.com`, the post-migration domain name is changed to `test@targetcompanyname.onmicrosoft.com`. Customers need to reconfigure the mailbox. Learn more about configuring the mailbox in [Connect to Exchange Online](connect-exchange-online.md).
 
 ## Prerequisites
 Be sure that you complete the following prerequisites before you start the migration process.
 
--	Create users in the target tenant. You must:
+-	Create users in the target tenant, including:
   -	Create users in Microsoft 365 and Microsoft Entra ID.
   -	Assign licenses.
-- you must have Power platform admin or Dynamics 365 admin privileges to perform migration.
--	The PowerShell for Power Platform Administrators module is the recommended PowerShell module for interacting with admin capabilities. Learn more at [Get started with PowerShell for Power Platform Administrators](powershell-getting-started.md).
+- You must have Power platform admin or Dynamics 365 admin privileges to perform the migration.
+-	The PowerShell for Power Platform Administrators module is the recommended PowerShell module for interacting with admin capabilities. Learn more in [Get started with PowerShell for Power Platform Administrators](powershell-getting-started.md).
 
 ## Preparation process
-Complete the following procedures for Power Automate, Power Apps, Copilot Studio, Power Pages before the migration. You also must create a user mapping file.
+Complete the following procedures for Power Automate, Power Apps, Copilot Studio, and Power Pages before the migration. You also must create a user mapping file.
 
 ### Prepare Power Automate
 
@@ -61,26 +59,26 @@ Any Power Apps must be manually exported. We don't support the migration of cust
 #### For solution-aware apps:
 1. For apps that are solution aware, go to [Power Apps](https://make.powerapps.com), navigate to the **Solutions** page, and export all apps and solutions. You can export them individually or group them together in a single solution, if they're not already.
 1. Delete these solution-aware apps in the environment after exporting them.
-2. Apps belonging to managed solutions can only be deleted by deleting the solution.
-3. Apps that are in unmanaged solution, can be deleted by “Delete from this environment”	 
+1. Apps belonging to managed solutions can only be deleted by deleting the solution.
+1. Apps that are in an unmanaged solution can be deleted by using the **Delete from this environment** option.	 
 
     > [!Important]
-    > Solution-aware canvas apps, custom pages, or component libraries that you don't delete from an environment before migration won't work after the migration completes.
+    > Solution-aware canvas apps, custom pages, or component libraries that you don't delete from an environment before migration, won't work after the migration completes.
 
 #### For apps that aren't solution-aware:
 1.	Go to [Power Apps](https://make.powerapps.com), and then select **Apps**.
-1.	For each app that you want to move, select **More Commands** (…), and then select **Export package (preview)**.
+1.	For each app that you want to move, select **More Commands** and then select **Export package (preview)**.
 1.	Enter the details required to perform the export of the app, and then select **Export**. Once the export completes, a download begins.
 
   	  The resulting file contains the app package that was selected.
   	
 1.	Repeat these steps until all apps have been exported.
-1.	Delete these nonsolution aware apps from the environment
+1.	Delete these nonsolution-aware apps from the environment
 
-An admin can also view/delete Canvas Apps from the list on the admin portal:
-1.	Go to https://admin.powerplatform.microsoft.com, and then select the environment.
-2.	Under the resources action, click ‘Power Apps’ to view and delete them.
+An admin can also view or delete canvas apps from the list in the admin portal by completing the following steps.
 
+1.	Go to [Power Platform admin center](https://admin.powerplatform.microsoft.com) and then select the environment.
+2.	Under the **Resources** action, select **Power Apps** to view and delete them.
 
 ### Prepare Copilot Studio
 Any Copilot Studio chatbots must be manually exported. Some dependent components of chatbots must be manually reconfigured during or after the migration. For example, connections, environment variables, and custom connectors must be manually reconfigured during or after the migration.
@@ -94,53 +92,56 @@ The following steps must be done for each website in an environment.
 2.	Open the [admin center](/power-pages/admin/admin-overview#open-power-apps-portals-admin-center).
 3.	[Delete](/power-pages/admin/delete-website) the website.
 
-### Create user mapping file
+### Create a user mapping file
 Create a user mapping file for the source environment to be transferred to the target environment. It's essential to note that each environment requires an individual mapping file. Be sure that users are present and authorized in both the originating and destination tenants, as this is required for a successful migration. The users' domains may vary between source and target, provided they're active.
 
 1. Create a user mapping file named **usermapping.csv**.
 
    > [!Note]
-   > The file name is case sensative. Make sure records are comma separated not semicolon.
+   > The file name is case sensative. Make sure records are separated by a comma, not semicolon.
   
-1. Accurately record the details of users, including their source and destination email IDs. Also make sure there are no extra space before and after header. Your mapping file should look to the following example:
+1. Accurately record the details of users, including their source and destination email IDs. Make sure there are no extra space before and after the header. Your mapping file should look to the following example:
 
     |Source|	Destination|
     |------|-------------|
     |SourceUser@sourcetenant.com	|DestinationUser@targettenant.com|
 
-
-For full access users:
-
-1. Access the source environment.
-2. Use Advanced Find and look for users.
-3. Select Use Saved View > Full Access Users, and then select Edit Columns.
-4. Remove all columns except Full Name.
-5. Select Add Columns > Windows Live ID.
-6. Select OK > Results to see the list of full access users.
-7. Select all the records, select Export Users in the ribbon, and then choose Static Worksheet.
-8. Follow steps 1-7 above for the destination tenant, if possible. You should now have two separate Excel sheets—one for source and one for target tenant.
-9. Open the files for editing.
-10. Starting with the source Excel sheet, copy the records under the Windows Live ID column into Notepad. Don't copy the header.
-11. Save the Notepad file.
-12. Next, enter the destination Windows Live ID (UPNs) in the same Notepad document to the right of the corresponding Source UPN, separating Source and Destination UPNs by a comma (,).
-Example:
-  user001@source.com, user001@destination.com
-  user002@source.com, user002@destination.com
-  user003@source.com, user003@destination.com
-13. Save the file as a CSV.
-
-For administrative access users:
+#### For full access users:
 
 1. Access the source environment.
-2. Use Advanced Find and look for users.
-3. Select Use Saved View > Administrative Access Users, and then select Results to see the list of administrative access users.
-4. If you decide not to include any of these users, skip the following steps. Otherwise, to include these users in mapping:
-  Find the corresponding users in the destination tenant.
-  Make sure a valid Dynamics 365 license is assigned to the destination user in the destination tenant. Note: If the destination user isn't assigned any license, the migration fails.
-  Save the CSV file that has both full access users and administrative access users mapped.
+1. Use **Advanced Find** to look for users.
+1. Select **Use Saved View > Full Access Users**, and then select **Edit Columns**.
+1. Remove all columns except the **Full Name** column.
+1. Select **Add Columns > Windows Live ID**.
+1. Select **OK > Results** to see the list of full access users.
+1. Select all the records, select **Export Users** in the ribbon, and then choose **Static Worksheet**.
+1. Follow steps 1-7 above for the destination tenant, if possible. You should now have two separate Excel sheets: one for the source and one for the target tenant.
+1. Open the Excel files for editing.
+1. Starting with the source Excel sheet, copy the records under the **Windows Live ID** column into Notepad. Don't copy the header.
+1. Save the Notepad file.
+1. Enter the destination Windows Live ID (UPNs) in the same Notepad document to the right of the corresponding Source UPN, separating Source and Destination UPNs by a comma (,).
+
+    Example:
+      - user001@source.com, user001@destination.com
+      - user002@source.com, user002@destination.com
+      - user003@source.com, user003@destination.com
+
+1. Save the file as a CSV.
+
+#### For administrative access users:
+
+1. Access the source environment.
+1. Use **Advanced Find** to look for users.
+1. Select **Use Saved View > Administrative Access Users**, and then select **Results** to see the list of administrative access users.
+1. If you decide not to include any of these users, skip the following steps. Otherwise, to include these users in the mapping file, do the following:
+    1. Find the corresponding users in the destination tenant.
+    1. Make sure a valid Dynamics 365 license is assigned to the destination user in the destination tenant.
+       > [!Note}
+       >  If the destination user isn't assigned any license, the migration fails.
+    1. Save the CSV file that has both full access users and administrative access users mapped.
 
 ## Migration
-Before proceeding with migration, make sure you have reviewed and completed the preparation process. Now you can proceed to complete the following sections to migrate.
+Before proceeding with the migration, make sure you have reviewed and completed the preparation process. After you've completed the preparation process, complete the following sections to migrate.
 
 ### Install PowerShell for Power Platform administrators (Both Source and Target Admins) 
 The PowerShell for Power Platform Administrators module is the recommended PowerShell module for interacting with admin capabilities. For information that helps you get started with the PowerShell for Power Platform Administrators module, go to [Get started with PowerShell for Power Platform Administrators](powershell-getting-started.md) and [Installing PowerShell for Power Platform Administrators](powershell-installation.md).
