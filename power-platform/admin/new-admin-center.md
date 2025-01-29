@@ -4,7 +4,7 @@ description: Learn how to use the updated Power Platform admin center's new UI a
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/13/2024
+ms.date: 01/29/2025
 ms.custom: 
   - ignite-2024
   - ai-gen-diyeditor
@@ -45,7 +45,7 @@ Most of the pages from the classic admin center are available in the new one, ei
 | 3           | Environment groups   | Manage > Environment groups |
 | 4           | Advisor              | Action center > Recommendations |
 | 5           | Security             | Security         |
-| 6           | Analytics            | Not applicable<br><br>**Note:** Experiences from Analytics pages won't be migrated in the current form. |
+| 6           | Analytics            | Work in progress<br><br>**Note:**  Analytics experiences from the classic amin center are currently in the process of being migrated to the new admin center. Updates will be provided in the future about these experiences.
 | 7           | Billing > Licenses   | Licensing > Products > Power Apps |
 | 8           | Billing > Plans      | Licensing > Pay-as-you-go plans |
 | 9           | Settings             | Manage > Tenant settings |
