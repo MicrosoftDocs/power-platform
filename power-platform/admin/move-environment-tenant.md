@@ -77,7 +77,7 @@ Any Power Apps must be manually exported. We don't support the migration of cust
 
 An admin can also view or delete canvas apps from the list in the admin portal by completing the following steps.
 
-1.	Go to [Power Platform admin center](https://admin.powerplatform.microsoft.com) and then select the environment from manage.
+1.	Go to [Power Platform admin center](https://admin.powerplatform.microsoft.com) and then select the environment from **Manage**.
 2.	Under the **Resources** action, select **Power Apps** to view and delete them.
 
 ### Prepare Copilot Studio
@@ -288,27 +288,27 @@ After fixing user mapping errors, you need to reupload the user mapping file usi
 ### Download the error report (source admin)
 If there are any errors in the user mapping file, there's an option to download an error report. This can be done by directly copying and pasting the **SasUrl** provided in the **Tenant-To-Tenant-GetMigrationStatus** command or by using the following commands that use the SAS URI from the previous step check status and the desired location to download the error report.
 
-Complete the following steps with Windows PowerShell ISE.
+Complete the following steps.
 
-Import the required module
+1. Run the following command with Windows PowerShell ISE.
 
-```Windows PowerShell ISE
-Import-Module Az.Storage 
-# Define the SAS URI of the blob
-$sasUri = " Update the SAS Uri from previous step "
-# Define the path where the blob will be downloaded
-$destinationPath = "C:\Downloads\Failed\"
-# Split the SAS URI on the '?' character to separate the URL and the SAS token
-$url, $sasToken = $sasUri -split '\?', 2
-$containerName = $url.Split('/')[3]
-$storageAccountName = $url.Split('/')[2].Split('.')[0]
-$storageContext = New-AzStorageContext -StorageAccountName $storageAccountName -SasToken $sasToken
-Get-AzStorageBlobContent -Blob "usermapping.csv" -Container $containerName -Destination $destinationPath -Context $storageContext 
-```
-Fix the issues in the user mapping file.
-Reupload the file using the same or new SAS URL.
+    ```Windows PowerShell ISE
+    Import-Module Az.Storage 
+    # Define the SAS URI of the blob
+    $sasUri = " Update the SAS Uri from previous step "
+    # Define the path where the blob will be downloaded
+    $destinationPath = "C:\Downloads\Failed\"
+    # Split the SAS URI on the '?' character to separate the URL and the SAS token
+    $url, $sasToken = $sasUri -split '\?', 2
+    $containerName = $url.Split('/')[3]
+    $storageAccountName = $url.Split('/')[2].Split('.')[0]
+    $storageContext = New-AzStorageContext -StorageAccountName $storageAccountName -SasToken $sasToken
+    Get-AzStorageBlobContent -Blob "usermapping.csv" -Container $containerName -Destination $destinationPath -Context $storageContext 
+    ```
+1. Fix the issues in the user mapping file.
+1. Reupload the file using the steps in [Upload the user mapping file (source admin)](#upload-the-user-mapping-file-(source-admin).
 
-After successfully completing the Prepare the environment migration steps now, you may proceed with the next step to migrate the environment. The next step you can perform within next seven days and after that you may have to start with "Prepare the environment migration"
+After successfully completing the [Prepare the environment migration (source admin)](#prepare-the-environment-migration-(source-admin)), you may proceed with the [Migrate the environment (source admin)](#migrate-the-environment-(source-admin)) prcedure to migrate the environment. Perform the migration within the next seven days. If you don't complete the migration in the next seven days, you must start with [Prepare the environment migration (source admin)](#prepare-the-environment-migration-(source-admin)) procedure, again.
 
 ## Migrate the environment (source admin)
 The **MigrationId** can be viewed using the **TenantToTenant-ViewMigrationRequest** command in the source tenant.
