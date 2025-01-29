@@ -208,6 +208,8 @@ Share the Parking Reservations app with the users in your organization.
 1. Add an optional email message.
 1. Select **Share**.
 
+:::image type="content" source="media/install/share-app.png" alt-text="Screenshot of sharing the Parking Reservation app with users.":::
+
 [Learn how to share a canvas app with your organization.](/power-apps/maker/canvas-apps/share-app)
 
 > [!NOTE]
@@ -221,6 +223,17 @@ Auditing isn't required, but we recommend turning it on so that it's easy to see
 1. Select **Environment** and then select the environment where the solution is installed.
 1. Select **Audit settings**.
 1. Select **Start auditing**.
+
+## Support
+
+Enterprise templates for Power Platform are published _as is_. However, we do provide template support to help you be successful.
+
+Support can be accessed at [Templates for Power Platform](https://github.com/microsoft/Templates-for-Power-Platform) on GitHub. It's a dedicated support space for you to:
+
+- log questions
+- access template assets
+- access template release updates
+- access template support resources
 
 ## Next step
 

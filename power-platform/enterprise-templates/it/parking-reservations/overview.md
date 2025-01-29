@@ -28,6 +28,8 @@ You can extend the capabilities of the Parking Reservation template by customizi
 
 The Parking Reservation template package is available in [Microsoft AppSource](https://aka.ms/AccessParkingReservationTemplate).
 
+:::image type="content" source="media/overview/my-reservations.png" alt-text="Screenshot of the My reservations screen that shows a calendar with marked reservations and space that highlights each reservation.":::
+
 ## Parking Reservation template components
 
 The Parking Reservation template is comprised of many components that can easily be customized to meet your needs.

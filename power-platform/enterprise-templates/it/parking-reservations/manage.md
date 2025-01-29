@@ -16,6 +16,8 @@ ms.subservice: solution-templates
 
 Before parking reservations can be made, you, as the parking reservation program manager, need to complete certain configuration steps that create records for countries, cities, buildings, floors, and parking spots in the Administrator model-driven app.
 
+:::image type="content" source="media/manage/par-res-admin.png" alt-text="Screenshot of active reservations in the Parking Reservation model-driven app for administrators.":::
+
 ## Create countries
 
 1. Start the Parking Reservation Administrator model-driven app and select Countries under Parking Details.
