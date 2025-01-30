@@ -4,7 +4,7 @@ description: Learn how to manage identity and access management in the Power Pla
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/29/2025
+ms.date: 01/30/2025
 ms.custom: NewPPAC
 author: matapg007
 ms.author: matgupta
@@ -19,11 +19,11 @@ Make sure authorized users are the only people who can access sensitive data in 
 ## IP firewall 
 This security control applies to only Managed Environments with Dataverse. The IP firewall feature in Power Platform provides a critical layer of security by controlling inbound  traffic to  Power Platform environments. This feature allows administrators to define and enforce IP-based access controls, ensuring that only authorized IP addresses can access the Power Platform environment. By using IP firewall, organizations can mitigate risks associated with unauthorized access and data breaches, which enhances the overall security of their Power Platform deployments. Learn more in [IP firewall in Power Platform environments](../ip-firewall.md).
   
-## IP address-based cookie binding
-This feature applies to only Managed Environments with Dataverse. It prevents session hijacking exploits in Dataverse with IP address-based cookie binding. Learn more in [Safeguarding Dataverse sessions with IP cookie binding](../block-cookie-replay-attack.md).
-
 ## Tenant isolation 
 Tenant isolation lets Power Platform administrators govern the movement of tenant data from Microsoft Entra-authorized data sources to and from their tenant. Learn more in [Cross-tenant inbound and outbound restrictions](../cross-tenant-restrictions.md).
+
+## IP address-based cookie binding
+This feature applies to only Managed Environments with Dataverse. It prevents session hijacking exploits in Dataverse with IP address-based cookie binding. Learn more in [Safeguarding Dataverse sessions with IP cookie binding](../block-cookie-replay-attack.md).
 
 ## Environment security groups 
 Setting up security groups helps control which licensed users can access environments. Learn more in [Control user access to environments: security groups and licenses](../control-user-access.md).
