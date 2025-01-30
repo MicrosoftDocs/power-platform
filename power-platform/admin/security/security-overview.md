@@ -30,16 +30,19 @@ To see your security score, you must turn on tenant-wide analytics. For instruct
 > It might take up to 24 hours to populate the **Security** page with data after you turn on tenant-wide analytics. Until then, most sections on the page display “Calculating security score”.
 
 ## Access the Security page 
-To access the **Security** page, you must have Microsoft Entra ID roles such as Power Platform administrator or Dynamics 365 administrator.  Learn more about these roles at [Use service admin roles to manage your tenant](../use-service-admin-role-manage-tenant.md).
+To access the **Security** page, you must have Microsoft Entra ID roles such as Power Platform administrator or Dynamics 365 administrator.Environment admins will be able to manage security and compliance features for owned environments by navigating to the manage security settings page following below steps.
+Learn more about these roles at [Use service admin roles to manage your tenant](../use-service-admin-role-manage-tenant.md).
 
 1.	Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 2.	From the navigation pane, select **Security**.
 3.	Select the page you want to view in the **Security** section. You can view pages for [network security](network-security.md), [access controls](access-control.md), [threat detection](threat-detection.md), and [compliance](compliance.md).
 
-    > [!Note]
-    > On each security page, the features that apply to Managed Environments are noted with this icon:
-    > 
-    > :::image type="content" source="media/managed-environments-icon.png" alt-text="Icon noting that a Managed Environment is required.":::
+> [!Note]
+> Only tenant administrators can access the scorecard and recommendations in security overview page.
+> Only tenant adminstarors can convert environemnt to managed type.
+> On each security page, the features that apply to Managed Environments are noted with this icon:
+>
+> > :::image type="content" source="media/managed-environments-icon.png" alt-text="Icon noting that a Managed Environment is required.":::
    
 ## Key capabilities
 
@@ -100,10 +103,9 @@ There are several security features that help secure your tenant. Some of these 
 
 Use the following links to view and manage proactive policies for governance and security.
 
-- [Network security](network-security.md): Protect applications and cloud workloads from network-based cyberattacks with features like IP firewall, IP address-based cookie binding, and Azure Virtual Network.
-- [Access controls](access-control.md): Ensure only authorized users can access specific resources with features like tenant isolation, data policies, environment security groups, and sharing controls.
-- [Threat detection](threat-detection.md): Protect your organization’s assets and resources with a unified detection with features like auditing.
-- [Compliance](compliance.md): Implement robust compliance measures to safeguard organizational data and ensure adherence to industry regulations with features like [Customer Lockbox](../about-lockbox.md) and [customer-managed key](../customer-managed-key.md).
+- Data protection and privacy: Make sure personal information is handled, stored, and protected securely; prevent unauthorized access to data; and protect apps and cloud workloads from network-based cyberattacks with features like [customer-managed key](../customer-managed-key.md),data policies & Azure Virtual Network.
+- Identity and access management:Make sure authorized users are the only people who can access sensitive data in items across this tenant with feature like P firewall, IP address-based cookie binding,tenant isolation, environment security groups, sharing controls and guest access.
+- Compliance : Implement robust compliance measures to safeguard organizational data and ensure adherence to industry regulations with features like [Customer Lockbox](../about-lockbox.md) and auditing.
 
 ## Provide feedback
 You can find a **Feedback** button in the lower-right corner of all security pages. Select the **Feedback** button to open a Microsoft Form, where you can submit feedback and suggestions regarding the Security page and its related features.
