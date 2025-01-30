@@ -4,7 +4,7 @@ description: Learn how to manage security in the Power Platform admin center wit
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/13/2024
+ms.date: 01/30/2025
 ms.custom: ignite-2024
 author: matapg007
 ms.author: matgupta
