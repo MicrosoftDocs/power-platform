@@ -12,7 +12,11 @@
       "redirect_document_id": "false"
    },
     {
-
+      "source_path": "power-platform/admin/security/threat-detection.md",
+      "redirect_url": "power-platform/admin/security/compliance",
+      "redirect_document_id": "false"
+   },
+    {
       "source_path": "power-platform/admin/security/security-posture-overview.md",
       "redirect_url": "power-platform/admin/security/security-overview",
       "redirect_document_id": "false"
