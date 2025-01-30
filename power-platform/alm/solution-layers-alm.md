@@ -18,7 +18,7 @@ search.audienceType:
 Solution layering is implemented at a component level. Managed and unmanaged solutions exist at different layers within a Microsoft Dataverse environment. In Dataverse, there are two distinct layers:
 
 - **Unmanaged layer** All imported unmanaged solutions and ad-hoc customizations exist at this layer. All unmanaged solutions share a single unmanaged layer.
-- **Managed layers** All imported, managed solutions and the system solution exist at this level. When multiple managed solutions are installed, the last one installed is above the managed solution installed previously. This means that the second solution installed can customize the one installed before it. When two managed solutions have conflicting definitions, the runtime behavior is either "Last one wins" or a merge logic is implemented. If you uninstall a managed solution, the managed solution below it takes effect. If     you uninstall all managed solutions, the default behavior defined within the system solution is applied. At the base of the managed layers level is the system layer. The system layer contains the tables and components that are required for the platform to function.
+- **Managed layers** All imported, managed solutions, and the system solution exist at this level. When multiple managed solutions are installed, the last one installed is above the managed solution installed previously. This means that the second solution installed can customize the one installed before it. When two managed solutions have conflicting definitions, the runtime behavior is either "Last one wins" or a merge logic is implemented. If you uninstall a managed solution, the managed solution below it takes effect. If     you uninstall all managed solutions, the default behavior defined within the system solution is applied. At the base of the managed layers level is the system layer. The system layer contains the tables and components that are required for the platform to function.
 
 ![Example solution layering for a component, such as a form or view.](media/solution-layers-alm.png "Example solution layering for a component, such as a form or view")
 
@@ -50,7 +50,7 @@ Makers who work with solutions should understand the merge behavior when a solut
 
 ### "Top wins" behavior
 
-With the exception of the model-driven app, form, and site map components, other solution components use a "top wins" behavior where the layer that resides at the top determines how the component works at app runtime. A top layer can be introduced by a staged (pending) upgrade.
+Except for the model-driven app, form, and site map components, other solution components use a "top wins" behavior where the layer that resides at the top determines how the component works at app runtime. A top layer can be introduced by a staged (pending) upgrade.
 
 #### Top layer introduced by a pending upgrade
 

@@ -41,7 +41,7 @@ For more information about these prerequisites, go to [Set up pipelines](set-up-
 > [!NOTE]
 >
 > - Pipelines aren't visible within the default solution, managed solutions, or target environments.
-> - You must complete the deployment stages in order. For example, you can't deploy version 1.0.0.1 to production before it has been deployed to test. After deploying to test, the same solution that was deployed will then be deployed to production, even if afterward you made changes to the solution without incrementing the version.
+> - You must complete the deployment stages in order. For example, you can't deploy version 1.0.0.1 to production before it has been deployed to test. After you deploy to test, the same solution that was deployed will then be deployed to production, even if afterward you made changes to the solution without incrementing the version.
 > - A message stating your request to deploy here is pending, which means your admin attached [background processes or approvals](extend-pipelines.md) that run before your deployment can proceed.
 
 ## Cancel a scheduled deployment
@@ -56,11 +56,11 @@ If you have a scheduled deployment, you can cancel it through three different me
 
 ## Change the time of a scheduled deployment as a pipeline admin
 
-In the Deployment Pipeline Configuration app perform the following steps:
+In the Deployment Pipeline Configuration app, perform the following steps:
 
 1. Navigate to **Run history** under *Deployments*.
 1. Select the record for the scheduled deployment that you want to change.
-1. Change the **Scheduled Time** (shown in UTC, which may differ from your time zone) as desired.
+1. Change the **Scheduled Time** (shown in UTC, which might differ from your time zone) as desired.
 
 ## Monitor pipeline deployments
 
