@@ -308,7 +308,7 @@ Complete the following steps.
 1. Fix the issues in the user mapping file.
 1. Reupload the file using the steps in [Upload the user mapping file (source admin)](#upload-the-user-mapping-file-(source-admin).
 
-After successfully completing the [Prepare the environment migration (source admin)](#prepare-the-environment-migration-(source-admin)), you may proceed with the [Migrate the environment (source admin)](#migrate-the-environment-(source-admin)) prcedure to migrate the environment. Perform the migration within the next seven days. If you don't complete the migration in the next seven days, you must start with [Prepare the environment migration (source admin)](#prepare-the-environment-migration-(source-admin)) procedure, again.
+After successfully completing the [Prepare the environment migration (source admin)](#prepare-the-environment-migration-source-admin), you may proceed with the [Migrate the environment (source admin)](#migrate-the-environment-source-admin) prcedure to migrate the environment. Perform the migration within the next seven days. If you don't complete the migration in the next seven days, you must start with [Prepare the environment migration (source admin)](#prepare-the-environment-migration-source-admin) procedure, again.
 
 ## Migrate the environment (source admin)
 The **MigrationId** can be viewed using the **TenantToTenant-ViewMigrationRequest** command in the source tenant.
