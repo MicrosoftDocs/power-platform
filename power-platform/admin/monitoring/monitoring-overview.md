@@ -4,7 +4,7 @@ description: Learn about how to monitor and improve operational health.
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/18/2024
+ms.date: 01/08/2025
 ms.custom: ignite-2024
 author: alaug
 ms.author: alaug
@@ -58,6 +58,7 @@ The products view allows you to compare health metrics across a pool of common r
 1. **Optional**: If a recommendation is available, select the contextual button in the recommendation and/or share the recommendation with a user.
 
 For resources available in the monitoring experience, you can learn more about resource-specific metrics in the maker documentation. The following table indicates which resources are available at this time.
+
 
 | Product | Resource | Availability in Power Platform Admin Center | Availability in Maker Experience |
 |---------|------------|------------|------------|
