@@ -62,7 +62,6 @@ The products view allows you to compare health metrics across a pool of common r
 
 For resources available in the monitoring experience, you can learn more about resource-specific metrics in the maker documentation. The following table indicates which resources are available at this time.
 
-
 | Product | Resource | Availability in the Power Platform admin center | Availability in the maker experience |
 |---------|------------|------------|------------|
 | Power Apps | Canvas app | Preview| Preview|
