@@ -30,7 +30,8 @@ To see your security score, you must turn on tenant-wide analytics. For instruct
 > It might take up to 24 hours to populate the **Security** page with data after you turn on tenant-wide analytics. Until then, most sections on the page display “Calculating security score”.
 
 ## Access the Security page 
-To access the **Security** page, you must have Microsoft Entra ID roles such as Power Platform administrator or Dynamics 365 administrator.Environment admins will be able to manage security and compliance features for owned environments by navigating to the manage security settings page following below steps.
+To access the **Security** page, you must have Microsoft Entra ID roles such as Power Platform administrator or Dynamics 365 administrator. Environment admins can manage security and compliance features for owned environments by navigating to the **Security** page using the below steps.
+
 Learn more about these roles at [Use service admin roles to manage your tenant](../use-service-admin-role-manage-tenant.md).
 
 1.	Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
@@ -38,9 +39,9 @@ Learn more about these roles at [Use service admin roles to manage your tenant](
 3.	Select the page you want to view in the **Security** section. You can view pages for [data protection and privacy](data-protection-privacy.md), [identity and access management](identity-access-management.md), and [compliance](compliance.md).
 
 > [!Note]
-> Only tenant administrators can access the scorecard and recommendations in security overview page.
-> Only tenant adminstarors can convert environemnt to managed type.
-> On each security page, the features that apply to Managed Environments are noted with this icon:
+> - Only tenant administrators can access the scorecard and recommendations in the **Security > Overview** page.
+> - Only tenant adminstarors can convert an environemnt to a managed type.
+> - On each security page, the features that apply to Managed Environments are noted with this icon:
 >
 > > :::image type="content" source="media/managed-environments-icon.png" alt-text="Icon noting that a Managed Environment is required.":::
    
@@ -124,5 +125,5 @@ No. The recommendations are system-generated and are based on Microsoft's best p
 ### When is the security score be updated after taking recommended actions?
 Once you have taken action to turn on the feature, it might take up to 24 hours to reflect the overall security score. The security score isn't updated in real-time.
 
-### Why Administrator privileges not working for Environment admins (System administrator role) ?
-This is known limitation and only tenant admins can manage the Administrator privileges.
+### Why are administrator privileges not working for environment admins, such as the System Administrator role?
+This is a known limitation. Only tenant admins can manage the administrator privileges.
