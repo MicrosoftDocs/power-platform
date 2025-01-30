@@ -826,7 +826,7 @@
                   href: programmability-tutorial-install-application-environment.md
                 - name: "Tutorial: Allocate add-ons to environments (preview)"
                   href: programmability-tutorial-allocate-capacity-addons.md
-                - name: "Tutorial: Create cross tenant isolation reports (preview)"
+                - name: "Tutorial: Create cross tenant isolation reports"
                   href: programmability-tutorial-cross-tenant-reporting.md
                 - name: "Tutorial: Create, update, and list Environment Management Settings (preview)"
                   href: programmability-tutorial-environmentmanagement-settings.md
