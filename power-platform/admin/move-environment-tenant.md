@@ -1,7 +1,7 @@
 ---
 title: Tenant-to-tenant migrations 
 description: Learn about the impact of migrating an environment from one tenant to another. 
-ms.date: 01/29/2025
+ms.date: 01/30/2025
 ms.topic: conceptual
 author: matapg007
 contributors:
@@ -380,7 +380,7 @@ After completing all the above steps and migration, you may validate the environ
 
 ### Frequently asked questions
 **Are background operations enabled during tenant-to-tenant migration?**
-Administration mode is enabled during tenant-to-tenant migration, therefore background operations don't run. Go to: Administration mode - Power Platform
+Administration mode is enabled during tenant-to-tenant migration, therefore background operations don't run. Learn more in [Administration mode](admin-mode.md).
 
 **Can we migrate all users of the Dataverse organization?**
 We can migrate all users of the Dataverse organization only if users exist in the destination tenant. For example:
