@@ -123,3 +123,6 @@ No. The recommendations are system-generated and are based on Microsoft's best p
 
 ### When is the security score be updated after taking recommended actions?
 Once you have taken action to turn on the feature, it might take up to 24 hours to reflect the overall security score. The security score isn't updated in real-time.
+
+### Why Administrator privileges not working for Environment admins (System administrator role) ?
+This is known limitation and only tenant admins can manage the Administrator privileges.
