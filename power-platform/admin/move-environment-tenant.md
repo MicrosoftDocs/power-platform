@@ -179,7 +179,7 @@ You must have Power Platform administrator or Dynamics 365 administrator credent
 ```PowerShell
 TenantToTenant-SubmitMigrationRequest –EnvironmentName {EnvironmentId} -TargetTenantID {TenantID}
 ```
-You can view the status and RequestID using the following command.
+You can view the status and MigrationID using the following command.
 
 ```PowerShell
 TenantToTenant-ViewMigrationRequest
@@ -195,7 +195,7 @@ Add-PowerAppsAccount
 
 TenantToTenant-ViewApprovalRequest
 
-TenantToTenant-ManageMigrationRequest -RequestId {RequestID from above command to approve or deny}
+TenantToTenant-ManageMigrationRequest -MigrationId {MigrationId from above command to approve or deny}
 ```
 Once a request is approved, the admin of the destination tenant can notify the admin of the source tenant to proceed with the next step of the migration.
 
