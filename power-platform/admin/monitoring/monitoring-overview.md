@@ -4,13 +4,15 @@ description: Learn about how to monitor and improve operational health.
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/08/2025
+ms.date: 01/30/2025
 ms.custom: ignite-2024
 author: alaug
 ms.author: alaug
 ms.reviewer: sericks
 search.audienceType: 
   - admin
+contributors:
+  - arjunmayur 
 ---
 
 # Monitor page (preview)
