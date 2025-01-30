@@ -35,7 +35,7 @@ Learn more about these roles at [Use service admin roles to manage your tenant](
 
 1.	Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 2.	From the navigation pane, select **Security**.
-3.	Select the page you want to view in the **Security** section. You can view pages for [network security](network-security.md), [access controls](access-control.md), [threat detection](threat-detection.md), and [compliance](compliance.md).
+3.	Select the page you want to view in the **Security** section. You can view pages for [data protection and privacy](data-protection-privacy.md), [identity and access management](identity-access-management.md), and [compliance](compliance.md).
 
 > [!Note]
 > Only tenant administrators can access the scorecard and recommendations in security overview page.
