@@ -385,5 +385,5 @@ Administration mode is enabled during tenant-to-tenant migration, therefore back
 **Can we migrate all users of the Dataverse organization?**
 We can migrate all users of the Dataverse organization only if users exist in the destination tenant. For example:
 
-user001@source.com, user001@destination.com
-user002@source.com, user002@destination.com
+`user001@source.com`, `user001@destination.com`
+`user002@source.com`, `user002@destination.com`
