@@ -119,7 +119,7 @@ Create a user mapping file for the source environment to be transferred to the t
 1. Open the Excel files for editing.
 1. Starting with the source Excel sheet, copy the records under the **Windows Live ID** column into Notepad. Don't copy the header.
 1. Save the Notepad file.
-1. Enter the destination Windows Live ID (UPNs) in the same Notepad document to the right of the corresponding Source UPN, separating Source and Destination UPNs by a comma (,).
+1. Enter the destination Windows Live ID (UPNs) in the same Notepad document to the right of the corresponding source UPN. Be sure to separate source and destination UPNs with a comma (,).
 
     Example:
       - `user001@source.com`, `user001@destination.com`
