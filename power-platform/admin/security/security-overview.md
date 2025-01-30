@@ -99,13 +99,13 @@ Below is a table outlining the conditions that trigger specific feature recommen
 | Tenant isolation | Tenant | Tenant isolation setting is turned off.|
 
 ## Manage proactive policies for governance and security
-There are several security features that help secure your tenant. Some of these features require being set as managed type as a prerequisite. If you decide to enable such a feature, you're prompted to first change the environment to managed type before being allowed to configure the feature.
+There are several security features that help secure your tenant. Some of these features require being set as a managed type, which is a prerequisite. If you decide to allow such a feature, you're prompted to first change the environment to managed type before being allowed to configure the feature.
 
 Use the following links to view and manage proactive policies for governance and security.
 
-- Data protection and privacy: Make sure personal information is handled, stored, and protected securely; prevent unauthorized access to data; and protect apps and cloud workloads from network-based cyberattacks with features like [customer-managed key](../customer-managed-key.md),data policies & Azure Virtual Network.
-- Identity and access management:Make sure authorized users are the only people who can access sensitive data in items across this tenant with feature like P firewall, IP address-based cookie binding,tenant isolation, environment security groups, sharing controls and guest access.
-- Compliance : Implement robust compliance measures to safeguard organizational data and ensure adherence to industry regulations with features like [Customer Lockbox](../about-lockbox.md) and auditing.
+- [Data protection and privacy](data-protection-privacy.md): Make sure personal information is handled, stored, and protected securely; prevent unauthorized access to data; and protect apps and cloud workloads from network-based cyberattacks with features like [customer-managed key](../customer-managed-key.md), data policies, and Azure Virtual Network.
+- [Identity and access management](identity-access-management.md): Make sure authorized users are the only people who can access sensitive data in items across this tenant with feature like IP firewall, IP address-based cookie binding, tenant isolation, environment security groups, sharing controls, and guest access.
+- [Compliance](compliance.md): Implement robust compliance measures to safeguard organizational data and ensure adherence to industry regulations with features like [Customer Lockbox](../about-lockbox.md) and auditing.
 
 ## Provide feedback
 You can find a **Feedback** button in the lower-right corner of all security pages. Select the **Feedback** button to open a Microsoft Form, where you can submit feedback and suggestions regarding the Security page and its related features.
