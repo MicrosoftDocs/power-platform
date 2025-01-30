@@ -186,6 +186,7 @@ TenantToTenant-ViewMigrationRequest
 ```
 > [!Note]
 > Record the MigrationID, which is used in further migration commands.
+> Source Tenant MigrationID is different from Destination Tenant MigrationID
 
 ### View and approve migration request (target admin)
 The admin of the destination tenant should run the following command to see all the migration requests and status. The admin can review all the migration requests and options to approve or reject. 
