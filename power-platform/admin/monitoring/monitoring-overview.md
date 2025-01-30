@@ -29,8 +29,8 @@ The event logs used to calculate metrics are available for review and download i
 
 ## Prerequisites
 - [Tenant-level analytics](../tenant-level-analytics.md) must be turned on for data to be available for monitoring experiences.
-- You must have [system administrator role of the environment](../manage-high-privileged-admin-roles.md#self-elevate-to-the-system-administrator-role) to see the name of the resources belonging to the environment 
-- **Optional**: [Managed Environments](../managed-environment-overview.md) is required to view monitoring recommendations.
+- You must be assigned to the [system administrator role of the environment](../manage-high-privileged-admin-roles.md#self-elevate-to-the-system-administrator-role) to see the name of the resources belonging to the environment.
+- **Optional**: A [Managed Environment](../managed-environment-overview.md) is required to view monitoring recommendations.
 
 The availability of monitoring health metrics, logs, and recommendations in Power Platform admin center is based on tenant and environment settings.  
 
@@ -42,7 +42,7 @@ The availability of monitoring health metrics, logs, and recommendations in Powe
 | No | No  | No| No| No|
 
 ## Architecture
-Power Platform monitoring experiences require runtime activity to produce health metrics and generate recommendations. Unused resources don't appear in monitoring experiences. Admin experiences are available to Power Platform service and Dynamics 365 admins, who can see monitoring data across the tenant. Makers can only see data for resources for which they have edit privileges to in the runtime environment. Power Automate doesn't have a specific maker experience for Monitor, but users can use Automation Center for a similar experience. To learn more, please follow this link: https://learn.microsoft.com/en-us/power-automate/automation-center-overview
+Power Platform monitoring experiences require runtime activity to produce health metrics and generate recommendations. Unused resources don't appear in monitoring experiences. Admin experiences are available to Power Platform service and Dynamics 365 admins, who can see monitoring data across the tenant. Makers can only see data for resources for which they have edit privileges to in the runtime environment. Power Automate doesn't have a **Monitor** page in the maker portal, but users can use the [Automation center](/power-automate/automation-center-overview) for a similar experience.
 
 :::image type="content" source="../media/monitoring-architecture.png" alt-text="Upload the deployment profile.":::
 
@@ -57,18 +57,18 @@ The products view allows you to compare health metrics across a pool of common r
 1. Select a product, for example **Power Apps**.
 1. Select a specific resource.
 1. See the details pane with time-series charts for each metric available.  
-1. **Optional**: If a recommendation is available, select the contextual button in the recommendation and/or share the recommendation with a user.
+1. **Optional**: If a recommendation is available, select the contextual button in the recommendation. You can also share the recommendation with a user.
 
 For resources available in the monitoring experience, you can learn more about resource-specific metrics in the maker documentation. The following table indicates which resources are available at this time.
 
 
-| Product | Resource | Availability in Power Platform Admin Center | Availability in Maker Experience |
+| Product | Resource | Availability in the Power Platform admin center | Availability in the maker experience |
 |---------|------------|------------|------------|
 | Power Apps | Canvas app | Preview| Preview|
 | Power Apps | Model-driven apps | Not available yet| Not available yet|
-| Power Automate | Cloud flows | Preview| Not available, please go to Automation Center for similar experience https://learn.microsoft.com/en-us/power-automate/automation-center-overview|
-| Power Automate | Desktop flows | Preview| Not available, please go to Automation Center for similar experience https://learn.microsoft.com/en-us/power-automate/automation-center-overview|
-| Power Automate | Work Queue | Not available yet| Not available, please go to Automation Center for similar experience https://learn.microsoft.com/en-us/power-automate/automation-center-overview|
+| Power Automate | Cloud flows | Preview| Not available. Go to the [Automation center](/power-automate/automation-center-overview) for a similar experience.|
+| Power Automate | Desktop flows | Preview| Not available. Go to the [Automation center](/power-automate/automation-center-overview) for a similar experience.|
+| Power Automate | Work queue | Not available yet| Not available. Go to the [Automation center](/power-automate/automation-center-overview) for a similar experience.|
 | Dataverse | Dataverse | Not available yet| Not available yet|
 | Copilot Studio | Copilot Studio agents | Not available yet| Not available yet|
 | Dynamics 365 |Apps | Not available yet| Not available yet|
