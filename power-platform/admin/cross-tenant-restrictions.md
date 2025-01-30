@@ -1,7 +1,7 @@
 ---
 title: Restrict cross-tenant inbound and outbound access
 description: Use tenant restrictions to control access to SaaS cloud applications based on the Microsoft Entra tenant. You can also enforce tenant isolation for Power Platform connections. 
-ms.date: 01/02/2025
+ms.date: 01/30/2025
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: conceptual
@@ -16,6 +16,7 @@ ms.custom: "admin-security"
 search.audienceType: 
   - admin
 contributors:
+  - jahnavisunil
   - akadrno
 ---
 
@@ -32,7 +33,7 @@ The default configuration in Power Platform with tenant isolation **Off** is to 
 
 With tenant isolation **On**, **all** tenants are restricted. Inbound (connections to the tenant from external tenants) and outbound (connections from the tenant to external tenants) cross-tenant connections are blocked by Power Platform even if the user presents valid credentials to the Microsoft Entra-secured data source. You can use rules to add exceptions.  
 
-Admins can specify an explicit allowlist of tenants that they want to enable **inbound**, **outbound**, or both, which will bypass tenant isolation controls when configured. Admins can use a special pattern “\*”  to allow *all* tenants in a specific direction when tenant isolation is turned on. All other cross-tenant connections except the ones in the allowlist are rejected by Power Platform. 
+Admins can specify an explicit allow list of tenants that they want to enable **inbound**, **outbound**, or both, which will bypass tenant isolation controls when configured. Admins can use a special pattern “\*”  to allow *all* tenants in a specific direction when tenant isolation is turned on. All other cross-tenant connections except the ones in the allow list are rejected by Power Platform. 
 
 Tenant isolation can be configured in the Power Platform admin center. It affects Power Platform canvas apps and Power Automate flows. To set up tenant isolation, you need to be a tenant admin. 
 
@@ -51,7 +52,7 @@ Before you begin configuring the tenant isolation restrictions, review the follo
 
 Two-way tenant isolation will block connection establishment attempts to your tenant from other tenants. Additionally, two-way tenant isolation will also block connection establishment attempts from your tenant to other tenants.
 
-In this scenario, the tenant admin has enabled two-way tenant isolation on the Contoso tenant while the external Fabrikam tenant hasn't been added to the allowlist.  
+In this scenario, the tenant admin has enabled two-way tenant isolation on the Contoso tenant while the external Fabrikam tenant hasn't been added to the allow list.  
 
 Users signed in to Power Platform in the Contoso tenant can’t establish outbound Microsoft Entra ID-based connections to data sources in the Fabrikam tenant despite presenting appropriate Microsoft Entra credentials to establish the connection. This is outbound tenant isolation for the Contoso tenant.  
 
@@ -69,89 +70,102 @@ Similarly, users signed in to Power Platform in the Fabrikam tenant can’t esta
 > [!NOTE]
 > A connection attempt initiated by a guest user from their host tenant targeting data sources within the same host tenant isn't evaluated by the tenant isolation rules.
 
-## Tenant isolation with allowlists
+## Tenant isolation with allow lists
 
 One-way tenant isolation or inbound isolation will block connection establishment attempts to your tenant from other tenants. 
 
-### Scenario: Outbound allowlist – Fabrikam is added to the outbound allowlist of the Contoso tenant
+### Scenario: Outbound allow list – Fabrikam is added to the outbound allow list of the Contoso tenant
 
-In this scenario, the admin adds the Fabrikam tenant in the outbound allowlist while tenant isolation is **On**.   
+In this scenario, the admin adds the Fabrikam tenant in the outbound allow list while tenant isolation is **On**.   
 
-Users signed in to Power Platform in the Contoso tenant can establish outbound Microsoft Entra ID-based connections to data sources in the Fabrikam tenant if they present appropriate Microsoft Entra credentials to establish the connection. Outbound connection establishment to the Fabrikam tenant is permitted by virtue of the configured allowlist entry. 
+Users signed in to Power Platform in the Contoso tenant can establish outbound Microsoft Entra ID-based connections to data sources in the Fabrikam tenant if they present appropriate Microsoft Entra credentials to establish the connection. Outbound connection establishment to the Fabrikam tenant is permitted by virtue of the configured allowl ist entry. 
 
-However, users signed in to Power Platform in the Fabrikam tenant still can't establish inbound Microsoft Entra ID-based connections to data sources in the Contoso tenant despite presenting appropriate Microsoft Entra credentials to establish the connection. Inbound connection establishment from the Fabrikam tenant is still disallowed even as the allowlist entry is configured and permits outbound connections. 
+However, users signed in to Power Platform in the Fabrikam tenant still can't establish inbound Microsoft Entra ID-based connections to data sources in the Contoso tenant despite presenting appropriate Microsoft Entra credentials to establish the connection. Inbound connection establishment from the Fabrikam tenant is still disallowed even as the allow list entry is configured and permits outbound connections. 
 
 |Connection creator tenant   |Connection sign-in tenant | Access allowed?   |
 |---------|---------|---------|
 |Contoso     | Contoso        | Yes         |
-|Contoso (tenant isolation **On**) <br /> Fabrikam added to outbound allowlist    | Fabrikam        | Yes         |
-|Fabrikam     | Contoso (tenant isolation **On**) <br /> Fabrikam added to outbound allowlist        | No (inbound)        |
+|Contoso (tenant isolation **On**) <br /> Fabrikam added to outbound allow list    | Fabrikam        | Yes         |
+|Fabrikam     | Contoso (tenant isolation **On**) <br /> Fabrikam added to outbound allow list        | No (inbound)        |
 |Fabrikam     | Fabrikam        | Yes        |
 
 :::image type="content" source="media/restrict-inbound-cross-tenant.png" alt-text="Restrict inbound connection.":::
 
-### Scenario: Bidirectional allowlist – Fabrikam is added to the inbound and outbound allowlists of the Contoso tenant 
+### Scenario: Bidirectional allow list – Fabrikam is added to the inbound and outbound allow lists of the Contoso tenant 
 
-In this scenario, the admin adds the Fabrikam tenant to both the inbound and outbound allowlists while tenant isolation is **On**.   
+In this scenario, the admin adds the Fabrikam tenant to both the inbound and outbound allow lists while tenant isolation is **On**.   
 
 |Connection creator tenant   |Connection sign-in tenant   |Access allowed?   |
 |---------|---------|---------|
 |Contoso     | Contoso        | Yes         |
-|Contoso (tenant isolation **On**) <br /> Fabrikam added to both allowlists    | Fabrikam        | Yes         |
-|Fabrikam     | Contoso (tenant isolation **On**) <br /> Fabrikam added to both allowlists        | Yes       |
+|Contoso (tenant isolation **On**) <br /> Fabrikam added to both allow lists    | Fabrikam        | Yes         |
+|Fabrikam     | Contoso (tenant isolation **On**) <br /> Fabrikam added to both allow lists        | Yes       |
 |Fabrikam     | Fabrikam        | Yes        |
 
 :::image type="content" source="media/allow-list-both-tenants.png" alt-text="Bidirectional allow lists.":::
 
-## Enable tenant isolation and configure allowlist
+## Allow tenant isolation and configure allowl ist
 
-New admin center::::
-1.Go to the Power Platform admin center.
-2.In the navigation pane, select Security 
-3.On the security page, select Identity and Access.
-4.On the Identity and Access page, select Tenant Isolation
-5.The tenant isolation exception list (allow list) can be configured by using 'Add Exception' on the Tenant Isolation page. 
-6.If tenant isolation is Off, you can add or edit the exception list. However, these the exception lists won't be enforced until you turn tenant isolation On. 
-7.From the 'Allowed direction' drop list under exceptions, choose the direction of the allowlist entry.
-8.You can also enter the value of the allowed tenant as either tenant domain or tenant ID. Once saved, the entry gets added to the allowed list along with other allowed tenants. If you use the tenant domain to add the allowlist entry, the Power Platform admin center automatically calculates the tenant ID.
-9.You can use "*" as a special character to signify all tenants are allowed in the designated direction when tenant isolation is turned On.
+# [New admin center](#tab/new)
+
+1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. In the navigation pane, select **Security**. 
+1. In the **Security** pane, select **Identity and access**.
+1. In the **Identity and access management** page, select **Tenant isolation**.
+1. In the **Tenant isolation** pane, select **Add exceptions**.
+   
+    If tenant isolation is **Off**, you can add or edit the exception list. However, these the exception lists won't be enforced until you turn tenant isolation **On**.
+   
+1. From the **Allowed direction** dropdown list, select the direction of the allow list entry.
+1. Enter the value of the allowed tenant as either the tenant domain or tenant ID in the **Tenant ID** field. Once saved, the entry gets added to the allowed list along with other allowed tenants. If you use the tenant domain to add the allow list entry, the Power Platform admin center automatically calculates the tenant ID.
+   
+    You can use "*" as a special character to signify all tenants are allowed in the designated direction when tenant isolation is turned on.
+   
+1. Select **Save**.
  
- 
-Classic admin center :::::
-1.Go to the Power Platform admin center.
-2.In the navigation pane, select Policies > Tenant isolation.
-3.The tenant isolation allow list can be configured by using New tenant rule on the Tenant Isolation page. 
-4.If tenant isolation is Off, you can add or edit the rules in the list. However, these rules won't be enforced until you turn tenant isolation On. 
-5.From the New tenant rule Direction dropdown list, choose the direction of the allowlist entry.
-6.You can also enter the value of the allowed tenant as either tenant domain or tenant ID. Once saved, the entry gets added to the rule list along with other allowed tenants. If you use the tenant domain to add the allowlist entry, the Power Platform admin center automatically calculates the tenant ID.
-7.Once the entry appears in the list, Tenant ID and Microsoft Entra tenant name fields are displayed. Note that in Microsoft Entra ID, tenant name is different from the tenant domain. The tenant name is unique for the tenant, but a tenant may have more than one domain name. 
-8.You can use "*" as a special character to signify all tenants are allowed in the designated direction when tenant isolation is turned On.
-9.You can edit the direction of the tenant allowlist entry based on business requirements. Note that the Tenant Domain or ID field can't be edited in the Edit tenant rule page.
-10.You can perform all the allowlist operations like add, edit, and delete while tenant isolation is turned On or Off. Allowlist entries do have an effect on the connection behavior when tenant isolation is turned Off since all cross-tenant connections are allowed.
+# [Classic admin center](#tab/classic)
+1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. In the navigation pane, select **Policies > Tenant isolation**.
+
+    If tenant isolation is **Off**, you can add or edit the rules in the allow list. However, these rules won't be enforced until you turn tenant isolation **On**.
+1. Select **New tenant rule** to configure the tenant isolation allow list.
+1. From the **New tenant rule** pane, select the **Direction** dropdown list. Select the direction of the allow list entry.
+1. Enter the value of the allowed tenant as either the tenant domain or tenant ID in the **Tenant Domain or ID** field. Once saved, the entry gets added to the rule list along with other allowed tenants.
+
+    If you use the tenant domain to add the allow list entry, the Power Platform admin center automatically calculates the tenant ID.
+
+    Once the entry appears in the list, the tenant ID and Microsoft Entra tenant name are displayed. Note that in Microsoft Entra ID, tenant name is different from the tenant domain. The tenant name is unique for the tenant, but a tenant may have more than one domain name. 
+
+    You can use "*" as a special character to signify all tenants are allowed in the designated direction when tenant isolation is turned on.
+   
+1. You can edit the direction of the tenant allow list entry based on business requirements. Note that the **Tenant Domain or ID** field can't be edited in the **Edit tenant rule** page.
+1. You can perform all the allow list operations like add, edit, and delete while tenant isolation is turned **On** or **Off**. Allow list entries do have an effect on the connection behavior when tenant isolation is turned **Off** since all cross-tenant connections are allowed.
+1. Select **Save**.
+---
 
 In the Power Platform admin center, tenant isolation is set with **Policies** > **Tenant isolation**.  
 
 > [!NOTE]
 > You must have a Power Platform administrator role to see and set the tenant isolation policy.
 
-The tenant isolation allowlist can be configured by using **New tenant rule** on the **Tenant Isolation** page. If tenant isolation is **Off**, you can add or edit the rules in the list. However, these rules won't be enforced until you turn tenant isolation **On**. 
+The tenant isolation allow list can be configured by using **New tenant rule** on the **Tenant Isolation** page. If tenant isolation is **Off**, you can add or edit the rules in the list. However, these rules won't be enforced until you turn tenant isolation **On**. 
 
-From the **New tenant rule Direction** dropdown list, choose the direction of the allowlist entry.
+From the **New tenant rule Direction** dropdown list, choose the direction of the allow list entry.
 
 :::image type="content" source="media/new-tenant-rule-select-direction.png" alt-text="Select the direction for the new tenant rule.":::
 
-You can also enter the value of the allowed tenant as either tenant domain or tenant ID. Once saved, the entry gets added to the rule list along with other allowed tenants. If you use the tenant domain to add the allowlist entry, the Power Platform admin center automatically calculates the tenant ID. 
+You can also enter the value of the allowed tenant as either tenant domain or tenant ID. Once saved, the entry gets added to the rule list along with other allowed tenants. If you use the tenant domain to add the allow list entry, the Power Platform admin center automatically calculates the tenant ID. 
 
 Once the entry appears in the list, **Tenant ID** and **Microsoft Entra tenant name** fields are displayed. Note that in Microsoft Entra ID, tenant name is different from the tenant domain. The tenant name is unique for the tenant, but a tenant may have more than one domain name. 
 
 You can use "\*" as a special character to signify all tenants are allowed in the designated direction when tenant isolation is turned **On**. 
 
-You can edit the direction of the tenant allowlist entry based on business requirements. Note that the **Tenant Domain or ID** field can't be edited in the **Edit tenant rule** page. 
+You can edit the direction of the tenant allow list entry based on business requirements. Note that the **Tenant Domain or ID** field can't be edited in the **Edit tenant rule** page. 
 
 > [!NOTE]
 > To ensure that tenant isolation doesn't block any calls when used, turn tenant isolation **On**, add a new tenant rule, set **Tenant ID** as "\*", and set allowed direction to **inbound** and **outbound**.
 
-You can perform all the allowlist operations like add, edit, and delete while tenant isolation is turned **On** or **Off**. Allowlist entries do have an effect on the connection behavior when tenant isolation is turned **Off** since all cross-tenant connections are allowed. 
+You can perform all the allow list operations like add, edit, and delete while tenant isolation is turned **On** or **Off**. Allow list entries do have an effect on the connection behavior when tenant isolation is turned **Off** since all cross-tenant connections are allowed. 
 
 ## Design time impact on apps and flows
 
