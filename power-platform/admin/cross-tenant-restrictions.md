@@ -142,24 +142,14 @@ In this scenario, the admin adds the Fabrikam tenant to both the inbound and out
 1. Select **Save**.
 ---
 
-In the Power Platform admin center, tenant isolation is set with **Policies** > **Tenant isolation**.  
+
 
 > [!NOTE]
 > You must have a Power Platform administrator role to see and set the tenant isolation policy.
 
-The tenant isolation allow list can be configured by using **New tenant rule** on the **Tenant Isolation** page. If tenant isolation is **Off**, you can add or edit the rules in the list. However, these rules aren't enforced until you turn tenant isolation **On**. 
 
-From the **New tenant rule Direction** dropdown list, choose the direction of the allow list entry.
 
-:::image type="content" source="media/new-tenant-rule-select-direction.png" alt-text="Select the direction for the new tenant rule.":::
 
-You can also enter the value of the allowed tenant as either tenant domain or tenant ID. Once saved, the entry gets added to the rule list along with other allowed tenants. If you use the tenant domain to add the allow list entry, the Power Platform admin center automatically calculates the tenant ID. 
-
-Once the entry appears in the list, **Tenant ID** and **Microsoft Entra tenant name** fields are displayed. In Microsoft Entra ID, tenant name is different from the tenant domain. The tenant name is unique for the tenant, but a tenant may have more than one domain name. 
-
-You can use "\*" as a special character to signify all tenants are allowed in the designated direction when tenant isolation is turned **On**. 
-
-You can edit the direction of the tenant allow list entry based on business requirements. The **Tenant Domain or ID** field can't be edited in the **Edit tenant rule** page. 
 
 > [!NOTE]
 > To ensure that tenant isolation doesn't block any calls when used, turn tenant isolation **On**, add a new tenant rule, set **Tenant ID** as "\*", and set allowed direction to **inbound** and **outbound**.
