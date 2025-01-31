@@ -53,7 +53,7 @@ Governance is a cornerstone of a successful Power Platform Center of Excellence 
 - **User access and permissions**: Managing user access and permissions is critical to maintaining security and preventing unauthorized changes. The CoE should implement Role-Based Access Control (RBAC) to assign permissions based on users’ roles and responsibilities, ensuring that users have the minimum level of access necessary to perform their tasks according to the Least Privilege Principle. Regular reviews of user access and permissions should be conducted to identify and address any discrepancies. Additionally, maintaining audit trails is essential to track who accessed or modified solutions and data.
 - **Monitoring and reporting**: Continuous monitoring and reporting are vital to track the usage, performance, and compliance of the Power Platform. The CoE should monitor platform usage through usage analytics to identify trends, optimize resource allocation, and ensure efficient use. Tracking performance metrics is essential to identify and address any issues that may impact the user experience. Regular compliance monitoring should be conducted to ensure adherence to established standards and policies. Additionally, generating reports is crucial to provide insights into platform usage, performance, and compliance to stakeholders.
 
-Learn more: 
+Learn more:
 
 <!-- TODO link to overview pages of each section -->
 - [Secure](coe.md)
