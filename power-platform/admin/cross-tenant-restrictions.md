@@ -104,7 +104,7 @@ In this scenario, the admin adds the Fabrikam tenant to both the inbound and out
 
 :::image type="content" source="media/allow-list-both-tenants.png" alt-text="Bidirectional allow lists.":::
 
-## Allow tenant isolation and configure the allow ist
+## Allow tenant isolation and configure the allow list
 
 # [New admin center](#tab/new)
 
