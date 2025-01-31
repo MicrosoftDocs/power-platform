@@ -21,7 +21,7 @@ Existing links for Advanced Settings from various locations in Power Platform ar
 ![PPSEApp](https://github.com/user-attachments/assets/3f933339-c61b-479e-862b-bf3a67357a10)
 
 
-## Disable the Power Platform Environment Settings app for an environment
+### Disable the Power Platform Environment Settings app for an environment
 
 Power Platform Environment Settings app is enabled by default.  To disable it, 
 1.	Sign in to the Power Platform admin center.
