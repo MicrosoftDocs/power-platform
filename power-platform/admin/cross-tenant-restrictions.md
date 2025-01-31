@@ -52,7 +52,7 @@ Before you begin configuring the tenant isolation restrictions, review the follo
 
 Two-way tenant isolation blocks connection establishment attempts to your tenant from other tenants. Additionally, two-way tenant isolation also blocks connection establishment attempts from your tenant to other tenants.
 
-In this scenario, the tenant admin has enabled two-way tenant isolation on the Contoso tenant while the external Fabrikam tenant hasn't been added to the allow list.  
+In this scenario, the tenant admin allows two-way tenant isolation on the Contoso tenant while the external Fabrikam tenant hasn't been added to the allow list.  
 
 Users signed in to Power Platform in the Contoso tenant can’t establish outbound Microsoft Entra ID-based connections to data sources in the Fabrikam tenant despite presenting appropriate Microsoft Entra credentials to establish the connection. This is outbound tenant isolation for the Contoso tenant.  
 
@@ -68,7 +68,7 @@ Similarly, users signed in to Power Platform in the Fabrikam tenant can’t esta
 ![Restrict outbound and inbound cross-tenant access.](media/restrict-outbound-inbound-cross-tenant.png "Restrict outbound and inbound cross-tenant access")
 
 > [!NOTE]
-> A connection attempt initiated by a guest user from their host tenant targeting data sources within the same host tenant isn't evaluated by the tenant isolation rules.
+> A connection attempt initiated by a guest user, from their host tenant that targets data sources within the same host tenant, isn't evaluated by the tenant isolation rules.
 
 ## Tenant isolation with allow lists
 
@@ -129,7 +129,7 @@ In this scenario, the admin adds the Fabrikam tenant to both the inbound and out
 1. In the navigation pane, select **Policies > Tenant isolation**. The **Tenant Isolation** page appears.
 1. To allow tenant isolation, turn the toggle **On**.
 
-    If tenant isolation is **Off**, you can add or edit the rules in the allow list. However, these rules won't be enforced until you turn tenant isolation **On**.
+    If tenant isolation is **Off**, you can add or edit the rules in the allow list. However, these rules aren't enforced until you turn tenant isolation **On**.
    
 1. To allow cross-tenant communications, select **New tenant rule** to configure the tenant isolation allow list.
 1. From the **New tenant rule** pane, select the **Direction** dropdown list. Select the direction of the allow list entry.
@@ -151,7 +151,7 @@ In the Power Platform admin center, tenant isolation is set with **Policies** > 
 > [!NOTE]
 > You must have a Power Platform administrator role to see and set the tenant isolation policy.
 
-The tenant isolation allow list can be configured by using **New tenant rule** on the **Tenant Isolation** page. If tenant isolation is **Off**, you can add or edit the rules in the list. However, these rules won't be enforced until you turn tenant isolation **On**. 
+The tenant isolation allow list can be configured by using **New tenant rule** on the **Tenant Isolation** page. If tenant isolation is **Off**, you can add or edit the rules in the list. However, these rules aren't enforced until you turn tenant isolation **On**. 
 
 From the **New tenant rule Direction** dropdown list, choose the direction of the allow list entry.
 
@@ -188,7 +188,7 @@ For existing flows that don’t run successfully because of the latest tenant is
 
 :::image type="content" source="media/flow-run-history.png" alt-text="Flow run history list.":::
 
-Selecting the failed run will show details of the failed flow run.
+Selecting the failed run shows details of the failed flow run.
 
 :::image type="content" source="media/flow-run-failure-details.png" alt-text="Flow run failure details.":::
 
