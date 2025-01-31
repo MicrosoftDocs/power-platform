@@ -1,7 +1,7 @@
 ---
 title: Restrict cross-tenant inbound and outbound access
 description: Use tenant restrictions to control access to SaaS cloud applications based on the Microsoft Entra tenant. You can also enforce tenant isolation for Power Platform connections. 
-ms.date: 01/30/2025
+ms.date: 01/31/2025
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: conceptual
@@ -104,7 +104,7 @@ In this scenario, the admin adds the Fabrikam tenant to both the inbound and out
 
 :::image type="content" source="media/allow-list-both-tenants.png" alt-text="Bidirectional allow lists.":::
 
-## Allow tenant isolation and configure allowl ist
+## Allow tenant isolation and configure the allow ist
 
 # [New admin center](#tab/new)
 
@@ -112,13 +112,13 @@ In this scenario, the admin adds the Fabrikam tenant to both the inbound and out
 1. In the navigation pane, select **Security**. 
 1. In the **Security** pane, select **Identity and access**.
 1. In the **Identity and access management** page, select **Tenant isolation**.
-1. In order to enable the Tenant isolation, turn on the toggle **Restrict cross-tenant connections** .
-1. In order to allow cross tenant communication, select **Add exceptions** in the **Tenant isolation** pane.
+1. To allow tenant isolation, turn on the **Restrict cross-tenant connections** option.
+1. To allow cross tenant communication, select **Add exceptions** in the **Tenant isolation** pane.
    
-    If tenant isolation is **Off**, you can still add or edit the exception list. However, these the exception lists won't be enforced until you turn tenant isolation **On**.
+    If tenant isolation is **Off**, you can still add or edit the exception list. However, these the exception lists won't be enforced until you turn tenant isolation on.
    
 1. From the **Allowed direction** dropdown list, select the direction of the allow list entry.
-1. Enter the value of the allowed tenant as either the tenant domain or tenant ID in the **Tenant ID** field. Once saved, the entry gets added to the allowed list along with other allowed tenants. If you use the tenant domain to add the allow list entry, the Power Platform admin center automatically calculates the tenant ID.
+1. Enter the value of the allowed tenant as either the tenant domain or tenant ID in the **Tenant ID** field. Once saved, the entry gets added to the allow list along with other allowed tenants. If you use the tenant domain to add the allow list entry, the Power Platform admin center automatically calculates the tenant ID.
    
     You can use "*" as a special character to signify all tenants are allowed in the designated direction when tenant isolation is turned on.
    
@@ -126,11 +126,12 @@ In this scenario, the admin adds the Fabrikam tenant to both the inbound and out
  
 # [Classic admin center](#tab/classic)
 1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-1. In the navigation pane, select **Policies > Tenant isolation**.
-1. In order to enable the Tenant isolation, turn the toggle **On**
+1. In the navigation pane, select **Policies > Tenant isolation**. The **Tenant Isolation** page appears.
+1. To allow tenant isolation, turn the toggle **On**.
 
     If tenant isolation is **Off**, you can add or edit the rules in the allow list. However, these rules won't be enforced until you turn tenant isolation **On**.
-1. In order to allow cross tenant communications,Select **New tenant rule** to configure the tenant isolation allow list.
+   
+1. To allow cross-tenant communications, select **New tenant rule** to configure the tenant isolation allow list.
 1. From the **New tenant rule** pane, select the **Direction** dropdown list. Select the direction of the allow list entry.
 1. Enter the value of the allowed tenant as either the tenant domain or tenant ID in the **Tenant Domain or ID** field. Once saved, the entry gets added to the rule list along with other allowed tenants.
 
