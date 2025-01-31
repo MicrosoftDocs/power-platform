@@ -4,10 +4,11 @@ description: Provides information about URLs and IP addresses to be added to the
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/20/2024
+ms.date: 01/31/2025
 ms.subservice: admin
 ms.author: sericks
 contributors:
+  - v-jlandrum 
   - shazichuanshuo 
   - garrettm-msft
   - nanivijay
