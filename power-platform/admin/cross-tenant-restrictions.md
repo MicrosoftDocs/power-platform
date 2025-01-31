@@ -12,7 +12,7 @@ author: mihaelablendea
 ms.subservice: admin
 ms.author: mihaelab
 ms.reviewer: sericks
-ms.custom: "admin-security"
+ms.custom: "admin-security", NewPPAC
 search.audienceType: 
   - admin
 contributors:
