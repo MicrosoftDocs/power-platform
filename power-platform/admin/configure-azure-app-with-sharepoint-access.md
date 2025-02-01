@@ -162,7 +162,9 @@ By following these steps, you configure an Azure application with the necessary 
 This script generates the Subject Identifier value based based on values provided in JavaScript.
 
 1. Open the Dynamics 365 application in the browser
+
 1. Open the browser tools to the console
+
 1. Copy the following JavaScript and set the value for the variable `sharePointManagedIdentityId`
       
     ```JavaScript
@@ -310,4 +312,5 @@ This script generates the Subject Identifier value based based on values provide
     ```
 
 1. Paste into the console to execute
+
 1. Copy the **Subject Identifier** and paste into the **Value** field of the **Add credential**
