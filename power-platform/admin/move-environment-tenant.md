@@ -207,6 +207,9 @@ This step involves creating the SAS URL, which is utilized later for uploading t
 GenerateResourceStorage-PowerAppEnvironment –EnvironmentName {EnvironmentId}
 ```
 
+    > [!Important]
+    > Make sure that the environment is NOT in "Admin Mode" and user has "Basic User" Role assigned in the environment.
+
 #### Sample output
 
 ```PowerShell
