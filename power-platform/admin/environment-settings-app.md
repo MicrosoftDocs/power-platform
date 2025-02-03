@@ -20,9 +20,9 @@ Existing Advanced Settings links in the Power Platform are redirected to the Pow
 
 :::image type="content" source="media/environment-settings-app/environment-settings-app.png" alt-text="Screenshot of the Power Platform Environment Settings app.":::
 
-## Turn off the Power Platform environment settings app
+## Turn off the Power Platform Environment Settings app
 
-To turn off the Power Platform environment settings app for an environment, follow these steps:
+To turn off the Power Platform Environment Settings app for an environment, follow these steps:
 
 # [New admin center](#tab/new)
 
