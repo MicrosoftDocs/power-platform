@@ -152,21 +152,21 @@ Create a federated credential for the app registration. Learn more about federat
     - Replace `<sharepointmanagedidentityid>` with the GUID created earlier with the sharepointmanagedidentities record.
 
    > [NOTE!]
-   > Use the script in [Generate the Subject Identifer](#generate-the-subject-identifer) to generate the subject identifier value with the base64 encoded values.
+   > Use the script in [Generate the subject identifer](#generate-the-subject-identifer) to generate the subject identifier value with the base64 encoded values.
 
 1. Select **Add** to create the credential.
 
 By following these steps, you configure an Azure application with the necessary SharePoint permissions, set up managed identities in Dataverse, and configure federated credentials.
 
-## Generate the Subject Identifer
+## Generate the subject identifer
 
-This script generates the Subject Identifier value based based on values provided in JavaScript.
+This script generates the subject identifier value based based on values provided in JavaScript.
 
-1. Open the Dynamics 365 application in the browser
+1. Open the Dynamics 365 application in a browser.
 
-1. Open the browser tools to the console
+1. Open the browser tools to the console.
 
-1. Copy the following JavaScript and set the value for the variable `sharePointManagedIdentityId`
+1. Copy the following JavaScript and set the value for the variable **sharePointManagedIdentityId**.
       
     ```JavaScript
     // Replace with the id for SharePoint Managed Identity that was created attribute name: sharepointmanagedidentityid.
@@ -312,6 +312,6 @@ This script generates the Subject Identifier value based based on values provide
     })();
     ```
 
-1. Paste into the console to execute
+1. Paste into the console to execute.
 
-1. Copy the **Subject Identifier** and paste into the **Value** field of the **Add credential**
+1. Copy the **subject identifier** and paste into the **Value** field of the **Add credential**.
