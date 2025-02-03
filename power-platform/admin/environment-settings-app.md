@@ -18,7 +18,7 @@ Any existing extensions created by system administrators to extend the Advanced 
 
 Existing Advanced Settings links in the Power Platform are redirected to the Power Platform Environment Settings app.
 
-:::image type="content" source="media/admin-settings-app/admin-settings-app.png" alt-text="Screenshot of the Power Platform Environment Settings app.":::
+:::image type="content" source="media/environment-settings-app/environment-settings-app.png" alt-text="Screenshot of the Power Platform Environment Settings app.":::
 
 ## Turn off the Power Platform environment settings app
 
