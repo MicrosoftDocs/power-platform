@@ -1,12 +1,13 @@
 ---
-title: Configure Azure App with SharePoint access
-description: Learn how to configure an Azure App for SharePoint access to enable API integration with Dynamics 365. Follow our step-by-step guide.
+title: Configure Azure app for SharePoint access
+description: Learn how to configure an Azure app for SharePoint access to allow API integration with Dynamics 365. Follow our step-by-step guide.
 author: adrianorth
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/14/2025
+ms.date: 02/03/2025
 ms.subservice: admin
 ms.author: aorth
+ms.reviewer: sericks
 search.audienceType:
   - admin
 ms.custom:
@@ -145,13 +146,13 @@ Create a federated credential for the app registration. Learn more about federat
 1. In the **Value** field, enter the Subject Identifier:
 
     - Value format: `/eid1/c/pub/t/<base64-encoded-tenantId>/a/<base64-encoded-appid>/Env/<orgid>/sharepointmanagedidentity/<sharepointmanagedidentityid>`
-    - Replace `<base64-encoded-tenantId>` with the based64 encoded tenant id.
-    - Replace `<base64-encoded-appid>` with the base64 encoded app client id.
+    - Replace `<base64-encoded-tenantId>` with the based64 encoded tenant ID.
+    - Replace `<base64-encoded-appid>` with the base64 encoded app client ID.
     - Replace `<orgid>` with the organization ID.
     - Replace `<sharepointmanagedidentityid>` with the GUID created earlier with the sharepointmanagedidentities record.
 
    > [NOTE!]
-   > Use the script in [Generate the Subject Identifer](#generate-the-subject-identifer)to generate the Subject Identifier value with the base64 encoded values.
+   > Use the script in [Generate the Subject Identifer](#generate-the-subject-identifer) to generate the subject identifier value with the base64 encoded values.
 
 1. Select **Add** to create the credential.
 
