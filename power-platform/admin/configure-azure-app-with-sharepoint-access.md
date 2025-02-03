@@ -160,7 +160,7 @@ By following these steps, you configure an Azure application with the necessary 
 
 ## Generate the subject identifer
 
-This script generates the subject identifier value based based on values provided in JavaScript.
+This script generates the subject identifier value based on values provided in JavaScript.
 
 1. Open the Dynamics 365 application in a browser.
 
