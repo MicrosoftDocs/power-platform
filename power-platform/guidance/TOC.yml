@@ -459,6 +459,8 @@
           href: architecture/real-world-examples/pcf-canvas-components.md
     - name: Real-world case studies
       items:
+        - name: Overview
+          href: case-studies/index.md
         - name: A1 Inteligencia em Viagens boosts team efficiency
           href: case-studies/boost-efficiency-experience-case-study.md
         - name: Epiq streamlines employee onboarding

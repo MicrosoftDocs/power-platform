@@ -4,7 +4,7 @@ description: Learn how to troubleshoot issues related to conditional access auth
 author: adrianorth
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/07/2024
+ms.date: 01/22/2025
 reviewer: sericks
 ms.subservice: admin
 ms.author: aorth
@@ -86,6 +86,13 @@ When message shown is AADSTS530003, the access is related to a device. First use
    1. Select the link under **Conditions**.
    1. Select the link under **Filter for devices**.
    1. Review the filtered devices.
+
+### SharePoint Document Grid warning AADSTS500011
+
+When message shown is AADSTS500011, the SharePoint on-premises integration isn't configured correctly. The configuration steps in [Configure server-based authentication with SharePoint on-premises](configure-server-based-authentication-sharepoint-on-premises.md) need to be reviewed carefully to maintain access. 
+
+> [!NOTE]
+> First check configurations steps for [SharePoint Server SPN in Microsoft Entra Domain Services](configure-server-based-authentication-sharepoint-on-premises.md#update-the-sharepoint-server-spn-in-microsoft-entra-domain-services) steps 3, 4, and 5.
 
 ## Authentication isn't enabled correctly
 

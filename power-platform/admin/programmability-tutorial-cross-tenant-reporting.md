@@ -1,11 +1,11 @@
 ---
-title: "Tutorial: Create cross tenant isolation reports (preview) | Microsoft Docs"
-description: Learn how to use the Power Platform API (preview) to create cross tenant isolation reports (preview).
+title: "Tutorial: Create cross tenant isolation reports | Microsoft Docs"
+description: Learn how to use the Power Platform API to create cross tenant isolation reports.
 author: laneswenka
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 07/23/2024
+ms.date: 01/29/2025
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
@@ -14,11 +14,9 @@ contributors:
 - mihaelablendea 
 ---
 
-# Tutorial: Create cross tenant isolation reports (preview)
+# Tutorial: Create cross tenant isolation reports
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
-
-This tutorial demonstrates how to use the Power Platform API (preview) to create cross tenant isolation reports.
+This tutorial demonstrates how to use the Power Platform API to create cross tenant isolation reports.
 
 In this tutorial, learn how to:
 
@@ -28,10 +26,7 @@ In this tutorial, learn how to:
 1. [Fetch a single report](#step-4-fetch-a-single-report)
 
 > [!IMPORTANT]
-> - This is a preview feature.
-> - Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
-> - The host name and the data contracts might change during this feature preview period.
-> - For more details about tenant isolation, see [Cross-tenant inbound and outbound restrictions](cross-tenant-restrictions.md).
+> For more details about tenant isolation, see [Cross-tenant inbound and outbound restrictions](cross-tenant-restrictions.md).
 
 ## Step 1. Authenticate using Power Platform API
 
@@ -42,7 +37,7 @@ Use the following PowerShell script to authenticate using Power Platform API.
 
 ```PowerShell
 Import-Module "MSAL.PS"
-$AuthResult = Get-MsalToken -ClientId '00001111-aaaa-2222-bbbb-3333cccc4444' -Scope 'https://api.powerplatform.com/.default'
+$AuthResult = Get-MsalToken -ClientId '49676daf-ff23-4aac-adcc-55472d4e2ce0' -Scope 'https://api.powerplatform.com/.default'
 $Headers = @{Authorization = "Bearer $($AuthResult.AccessToken)"}
 ```
 

@@ -174,7 +174,7 @@
                   items:
                     - name: Self-managed key (BYOK)
                       href: manage-encryption-key.md
-                    - name: Customer managed key
+                    - name: Customer-managed key
                       href: customer-managed-key.md
                     - name: Lock and unlock environments
                       href: cmk-lock-unlock.md
@@ -308,10 +308,8 @@
                       href: recover-database-space-deleting-audit-logs.md
                     - name: Audit settings
                       href: system-settings-dialog-box-auditing-tab.md
-                    - name: Audit summary view
-                      href: manage-dataverse-auditing.md#use-the-audit-summary-view
-                    - name: Entity and field audit settings
-                      href: manage-dataverse-auditing.md#turn-on-or-off-auditing-for-entities-and-fields
+                    - name: Manage Dataverse auditing
+                      href: manage-dataverse-auditing.md
                     - name: Audit security roles
                       href: audit-security-roles.md
                     - name: Access audit data using Azure Synapse Link for Dataverse
@@ -400,7 +398,7 @@
                       href: add-remove-sample-data.md
                 - name: Encryption
                   items:
-                    - name: Encryption
+                    - name: Encrypt your column-level data
                       href: data-encryption.md
                 - name: Resources
                   items:
@@ -486,12 +484,18 @@
               items:
               - name: Overview
                 href: security/security-overview.md
-              - name: Network security 
-                href: security/network-security.md
-              - name: Access control 
-                href: security/access-control.md
-              - name: Threat detection 
-                href: security/threat-detection.md
+              - name: Data protection and privacy
+                href: security/data-protection-privacy.md
+              - name: Identity and access
+                items:
+                - name: Identity and access management
+                  href: security/identity-access-management.md
+                - name: App access control
+                  items: 
+                  - name: Control which apps are allowed in your environment (preview)
+                    href: control-app-access-environment.md
+                  - name: Commonly used Microsoft first-party services and portal apps (preview)
+                    href: apps-to-allow.md
               - name: Compliance 
                 href: security/compliance.md
             - name: Manage Copilot
@@ -512,7 +516,7 @@
               href: security/connect-data-sources.md
             - name: Security and governance considerations
               href: governance-considerations.md
-            - name: Configure security for Dataverse
+            - name: Security for Dataverse
               items:
                 - name: Dataverse security
                   href: wp-security.md
@@ -520,8 +524,10 @@
                   href: wp-security-cds.md
                 - name: System and application users
                   href: system-application-users.md
-                - name: Configure user security
+                - name: User security
                   href: database-security.md
+                - name: Configure user security in an environment
+                  href: database-security-configure.md
                 - name: How access to records is determined
                   href: how-record-access-determined.md
                 - name: Email exfiltration controls for connectors
@@ -530,13 +536,13 @@
                   href: continuous-access-evaluation.md
                 - name: Control access of TDS endpoint
                   href: control-tds-settings.md
-                - name: Configure environment security
+                - name: Environment security
                   items:
                     - name: Control user access to environments
                       href: control-user-access.md
                     - name: Restrict cross-tenant access
                       href: cross-tenant-restrictions.md
-                    - name: Content security policy
+                    - name: Configure content security policy
                       href: content-security-policy.md
                 - name: Data policies
                   items:
@@ -588,7 +594,7 @@
                       href: add-teams-users-field-security-profile.md
                     - name: Create and manage masking rules (preview)
                       href: create-manage-masking-rules.md
-                - name: Configure teams and team templates
+                - name: Teams and team templates
                   items:
                     - name: Manage teams
                       href: manage-teams.md
@@ -602,10 +608,8 @@
                   items:
                     - name: About encryption
                       href: about-encryption.md
-                    - name: Encrypt your data
+                    - name: Encrypt your column-level data
                       href: data-encryption.md
-                    - name: Manage encryption key
-                      href: manage-encryption-key.md
             - name: Manage users
               items:
                 - name: Overview of user security
@@ -822,7 +826,7 @@
                   href: programmability-tutorial-install-application-environment.md
                 - name: "Tutorial: Allocate add-ons to environments (preview)"
                   href: programmability-tutorial-allocate-capacity-addons.md
-                - name: "Tutorial: Create cross tenant isolation reports (preview)"
+                - name: "Tutorial: Create cross tenant isolation reports"
                   href: programmability-tutorial-cross-tenant-reporting.md
                 - name: "Tutorial: Create, update, and list Environment Management Settings (preview)"
                   href: programmability-tutorial-environmentmanagement-settings.md
@@ -1075,6 +1079,8 @@
                       href: set-up-dynamics-365-online-to-use-sharepoint-online.md
                     - name: Configure server-based authentication with SharePoint on-premises
                       href: configure-server-based-authentication-sharepoint-on-premises.md
+                    - name: Configure Azure app for SharePoint access
+                      href: configure-azure-app-with-sharepoint-access.md
                 - name: Configure
                   items:
                     - name: Enable SharePoint document management for specific entities
