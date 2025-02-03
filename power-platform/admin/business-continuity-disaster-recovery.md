@@ -1,16 +1,16 @@
 ---
 title: Business continuity and disaster recovery for Dynamics 365 SaaS apps
 description: Microsoft provides business continuity and disaster recovery for production environments of Dynamics 365 SaaS applications if there's an Azure region-wide outage. 
-author: sericks007
-ms.date: 11/01/2024
+author: ImadYanni 
+ms.date: 01/21/2025
 ms.reviewer: sericks
 ms.topic: conceptual
 ms.subservice: admin
-ms.author: jasunil
+ms.author: iyanni
 search.audienceType: 
  - admin
 contributors:
-- ImadYanni
+- jasunil
 ---
 
 # Business continuity and disaster recovery
@@ -49,8 +49,66 @@ If an unanticipated region-wide outage occurs, such as a natural disaster that a
 | Microsoft's responsibility  | Customers responsibilities  |
 | --- | --- |
 | If Microsoft detects an outage and sees customers being impacted, then Microsoft's communication team sends out the necessary communications and keep the Service Health Dashboard up to date with the necessary information. | None |
-| If an outage occurs, Microsoft performs an automatic failover of the **production instances** to the secondary region if there is NO DATA LOSS to the customer. | None |
+| If an outage occurs, Microsoft performs an automatic failover of the **production instances** to the secondary region if there's NO DATA LOSS to the customer. | None |
 | If an outage occurs, Microsoft determines that there's DATA LOSS, then failing over the environment isn't initiated without customer consent/approval. | Once the customer is aware of the ongoing outage, and sees IMPACT, then it's the customer's responsibility: <br> - To reach out to Microsoft via support and find out the level of data loss that would occur if a failover is initiated. <br> - If the data loss is at an acceptable level to their organization standards, then customers should provide their **consent** via support, for Microsoft to initiate a failover. |
 | When Microsoft determines that the primary region is back online and is fully operational, a **FAILBACK** is performed on the production instances. There's no data loss during the planned failback process but users could experience brief interruptions or disconnects during this window. | None |
+
+## Self-service disaster recovery (preview)
+
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
+
+Disaster recovery is a Power Platform premium infrastructure capability that allows customers to initiate environment failover between regions in a self-serve manner.
+Customers typically have multiple environments of different types created in their tenant. This capability is available specifically for production type environments, and can be turned on for each environment. At this time this capability isn't available for finance and operations production environments.
+
+### Turn on self-service disaster recovery
+
+You need to turn on self-service disaster recovery for an environment before you can use the capability. This is a one-time action that provisions resources and starts the process of replicating data between the primary location and secondary location. This may take up to 48 hours to complete. Admins receive a notification when the process is complete. 
+
+Turning on disaster recovery in an environment has no impact on the environment or the data within it.
+
+To turn on disaster recovery, complete the following steps.
+
+1. Navigate to the list of environments within the Power Platform admin center.
+1. Select the production type environment where you want to turn on self-service disaster recovery.
+1. Select **Disaster Recovery** in the command bar, at the top of the page. The **Disaster Recovery** pane appears.
+1. Select the toggle to change it to **Enabled**.
+1. Select **Save**.
+1. The environment is placed in the **Edit details** page briefly.
+1. The **Environment details** page appears, indicating that the process of turning on the feature has started.
+
+There are two reasons that may require you to use this feature: 
+- Disaster recovery drill.
+- Emergency response in the event of a major regional outage.
+
+### Disaster recovery drills
+
+Your company may have disaster recovery drills documented as a requirement in your internal, business continuity plans. There are also industries and companies that may be required by government regulations to perform audits on their BCDR capabilities. In these cases, you may run a disaster recovery drill on an environment. A disaster recovery drill allows you to perform self-service disaster recovery without losing any data. The duration of the failover action may be slightly higher while all remaining data is being replicated to the secondary region.
+
+We recommended that drills are performed on a copy of a production environment, since this involves downtime that can last for minutes. For example, you may want to copy a production environment to a sandbox type environment, and then change the type from sandbox to production.
+
+### Emergency response failover
+
+This option is expected to be chosen during an emergency&mdash;that is when the primary region has sustained an outage and access to environments or data isn't possible. If you choose this option, the environment fails without copying any more data, other than the data that has been replicated before the outage occurred. 
+
+When you perform an emergency response, you see the amount of data loss represented in time, which you can compare to your Recovery Point Objective (RPO), if you determine that it's acceptable and you choose to continue. The environment operates in the run state until disaster recovery is complete and the environment is back to normal operation from the secondary region.
+
+### Switching back to primary region
+
+After you have completed your drill or after an outage has been mitigated, we recommended that you switch back the environment to its primary region. An environment maybe operating with limited resources in the paired region. There's no loss of data during this operation.
+
+### Environment disaster recovery status
+
+Admins can determine the current disaster recovery state and location of an environment in the **Environment details** page. Admins can also select **Disaster Recovery** in the command bar to open the **Disaster Recovery** pane. 
+
+To check data replication latency at any time, you can select **Disaster Recovery** and select **Emergency response** as the disaster recovery reason. This opens a confirmation dialog that includes the last replication time between regions for that environment. You may select **Cancel** if your only purpose was to check the potential loss of data if there was a failover operation. Keep in mind, that last sync time is always different at different times, since data is being replicated continuously. 
+
+### Documenting your business continuity plan
+
+We recommended that you perform disaster recovery drills or an emergency response, if you choose to, before a real disaster strikes so you can document all steps required for any integration points that are external to Power Platform. In this case, your company is more prepared for recovery if there's a real disaster.
+
+### Note about preview
+
+During the preview, there is no charge for this feature, and it can't be turned off by the customer. When the feature reaches general availability, preview customers have the opportunity to keep the functionality or allow it to be turned off by Microsoft. There will be no impact on your primary environment location or capabilities, if you choose not to upgrade during general availability.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

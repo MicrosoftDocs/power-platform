@@ -4,19 +4,22 @@ description: Learn about how to monitor and improve operational health.
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/18/2024
+ms.date: 01/30/2025
 ms.custom: ignite-2024
 author: alaug
 ms.author: alaug
 ms.reviewer: sericks
 search.audienceType: 
   - admin
+contributors:
+  - arjunmayur
+  - trdehove
 ---
 
 # Monitor page (preview)
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-The **Monitor** page allows your organization to measure and improve operational health metrics of resources built or deployed in Power Platform, such as apps. It's available to both makers and admins in their respective experiences, such as [make.powerapps.com](https://make.preview.powerapps.com/) and [admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com/). Makers use this data to improve their resources and admins use this data to understand aggregate operational health in the tenant or select environments. Metrics are calculated by aggregating event logs from runtime activity. Recommendations are calculated from: 
+The **Monitor** page allows your organization to measure and improve operational health metrics of resources built or deployed in Power Platform, such as apps. It's available to both makers and admins in their respective experiences, such as [make.powerapps.com](https://make.preview.powerapps.com/) and [admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com/). Makers use this data to improve their resources and admins use this data to understand aggregate operational health in the tenant or select environments. Metrics are calculated by aggregating daily event logs from runtime activity. Recommendations are calculated from: 
 
 - Aggregating runtime event logs to highlight a measurable opportunity to improve a health metric
 - Static analysis of resource properties that can be altered to improve a health metric
@@ -26,8 +29,9 @@ The event logs used to calculate metrics are available for review and download i
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
 ## Prerequisites
-- [Tenant-level analytics](../tenant-level-analytics.md) must be turned on for data to be available for monitoring experiences. 
-- **Optional**: [Managed Environments](../managed-environment-overview.md) is required to view monitoring recommendations.
+- [Tenant-level analytics](../tenant-level-analytics.md) must be turned on for data to be available for monitoring experiences.
+- You must be assigned to the [system administrator role of the environment](../manage-high-privileged-admin-roles.md#self-elevate-to-the-system-administrator-role) to see the name of the resources belonging to the environment.
+- **Optional**: A [Managed Environment](../managed-environment-overview.md) is required to view monitoring recommendations.
 
 The availability of monitoring health metrics, logs, and recommendations in Power Platform admin center is based on tenant and environment settings.  
 
@@ -39,7 +43,7 @@ The availability of monitoring health metrics, logs, and recommendations in Powe
 | No | No  | No| No| No|
 
 ## Architecture
-Power Platform monitoring experiences require runtime activity to produce health metrics and generate recommendations. Unused resources don't appear in monitoring experiences. Admin experiences are available to Power Platform service and Dynamics 365 admins, who can see monitoring data across the tenant. Makers can only see data for resources for which they have edit privileges to in the runtime environment.  
+Power Platform monitoring experiences require runtime activity to produce health metrics and generate recommendations. Unused resources don't appear in monitoring experiences. Admin experiences are available to Power Platform service and Dynamics 365 admins, who can see monitoring data across the tenant. Makers can only see data for resources for which they have edit privileges to in the runtime environment. Power Automate doesn't have a **Monitor** page in the maker portal, but users can use the [Automation center](/power-automate/automation-center-overview) for a similar experience.
 
 :::image type="content" source="../media/monitoring-architecture.png" alt-text="Upload the deployment profile.":::
 
@@ -54,22 +58,24 @@ The products view allows you to compare health metrics across a pool of common r
 1. Select a product, for example **Power Apps**.
 1. Select a specific resource.
 1. See the details pane with time-series charts for each metric available.  
-1. **Optional**: If a recommendation is available, select **View logs**. 
+1. **Optional**: If a recommendation is available, select the contextual button in the recommendation. You can also share the recommendation with a user.
 
 For resources available in the monitoring experience, you can learn more about resource-specific metrics in the maker documentation. The following table indicates which resources are available at this time.
 
-| Product | Resource | Availability |
-|---------|------------|------------|
-| Power Apps | Canvas app | Preview|
-| Power Apps | Model-driven apps | Not available yet|
-| Power Automate | Cloud flows | Not available yet|
-| Power Automate | Desktop flows | Not available yet|
-| Dataverse | Dataverse | Not available yet|
-| Copilot Studio | Copilot Studio agents | Not available yet|
-| Dynamics 365 |Apps | Not available yet|
+| Product | Resource | Availability in the Power Platform admin center | Availability in the maker experience |
+|---------|------------|------------|------------|
+| Power Apps | Canvas app | Preview| Preview|
+| Power Apps | Model-driven apps | Not available yet| Not available yet|
+| Power Automate | Cloud flows | Preview| Not available. Go to the [Automation center](/power-automate/automation-center-overview) for a similar experience.|
+| Power Automate | Desktop flows | Preview| Not available. Go to the [Automation center](/power-automate/automation-center-overview) for a similar experience.|
+| Power Automate | Work queue | Not available yet| Not available. Go to the [Automation center](/power-automate/automation-center-overview) for a similar experience.|
+| Dataverse | Dataverse | Not available yet| Not available yet|
+| Copilot Studio | Copilot Studio agents | Not available yet| Not available yet|
+| Dynamics 365 |Apps | Not available yet| Not available yet|
    
 ## Monitoring experiences for makers
 When tenant-wide analytics is turned on, metrics and logs are available to makers. Makers can only see metrics and logs for which they have edit privileges. Environment-level settings exist to control what analytics information is available to makers. One setting controls whether makers see any analytics data in monitoring experiences including metrics and logs. The second setting controls whether makers see End User Pseudonymous Identifiers (EUPI), like session IDs and user object IDs in event logs.
+
 
 ### Turn on the monitoring experiences for makers
 The following [Power Platform Administrator](https://www.powershellgallery.com/packages/Microsoft.PowerApps.Administration.PowerShell/2.0.200) PowerShell cmdlets may be used to control what monitoring data is available to makers. 

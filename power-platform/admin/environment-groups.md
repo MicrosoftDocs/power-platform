@@ -3,7 +3,7 @@ title: Environment groups
 description: Learn how to organize your Managed Environments into groups and govern them in bulk with rules.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 12/11/2024
+ms.date: 01/17/2025
 author: mikferland-msft
 ms.author: miferlan
 ms.reviewer: sericks
@@ -12,7 +12,8 @@ ms.custom: "admin-security"
 search.audienceType: 
   - admin
 contributors:
-- arjunmayur
+  - JesseParsons
+  - arjunmayur
 ---
 
 # Environment groups
@@ -21,17 +22,35 @@ The task of managing Power Platform on a large scale across numerous environment
 
 Similar to folders, _environment groups_ are designed to help administrators organize their flat list of environments into structured groups based on different criteria, such as business unit, project, and location.
 
-Admins can apply various rules to groups to govern many environments in bulk, reducing manual effort and ensuring consistency. For example, admins might apply rules to security, licensing, compliance, or other facets. Specifically, the following rules are available within each environment group:
+Admins can apply various rules to groups to govern many environments in bulk, reducing manual effort and ensuring consistency. For example, admins might apply rules to security, licensing, compliance, or other facets. Specifically, the following rules are available within each environment group, with many more to be introduced over time.
 
-- [Canvas app sharing rules](managed-environment-sharing-limits.md#canvas-app-sharing-rules)
-- [Solution-aware cloud flow sharing rules](managed-environment-sharing-limits.md#solution-aware-cloud-flow-sharing-rules)
-- [Agent sharing rules](managed-environment-sharing-limits.md#agent-sharing-rules-preview)
-- [AI-generated descriptions](/power-apps/maker/canvas-apps/save-publish-app#create-an-app-description-with-copilot-preview)
-- [Generative AI settings](geographical-availability-copilot.md)
-- [Maker welcome content](welcome-content.md)
-- [Solution checker enforcement](managed-environment-solution-checker.md)
-- [Usage insights](managed-environment-usage-insights.md)
-- [Extended backup retention](backup-restore-environments.md)
+| # | Rules (in alphabetical order) |
+|----|----------|
+| 1 | [AI prompts](/ai-builder/administer#enable-or-disable-ai-prompts-in-power-platform-and-copilot-studio) |
+| 2 | [AI-generated descriptions (preview)](/power-apps/maker/canvas-apps/save-publish-app#create-an-app-description-with-copilot-preview) |
+| 3 | [AI-powered Copilot features](/power-apps/maker/canvas-apps/ai-overview?WT.mc_id=ppac_inproduct_settings) |
+| 4 | [Back-up retention](backup-restore-environments.md) |
+| 5 | [Generative AI settings](geographical-availability-copilot.md) |
+| 6 | [Maker welcome content](welcome-content.md) |
+| 7 | [Power Apps component framework for canvas apps](/power-apps/developer/component-framework/component-framework-for-canvas-apps) |
+| 8 | [Release channel](https://go.microsoft.com/fwlink/?linkid=2237290) |
+| 9 | [Sharing agents with Editor permissions (preview)](managed-environment-sharing-limits.md) |
+| 10 | [Sharing agents with Viewer permissions (preview)](managed-environment-sharing-limits.md) |
+| 11 | [Sharing controls for canvas apps](managed-environment-sharing-limits.md) |
+| 12 | [Sharing controls for solution-aware cloud flows](managed-environment-sharing-limits.md) |
+| 13 | [Solution checker enforcement](managed-environment-solution-checker.md) |
+| 14 | [Usage insights](managed-environment-usage-insights.md) |
+
+> [!NOTE]
+> - Some of these rules are still in the process of rolling out and might not be available in your region yet.
+> - The rules that have “(preview)” in their name are in public preview, while rules without it are considered generally available.
+
+When these rules are applied, they lock the settings at the _environment_-level, preventing any system administrator of those individual environments from editing the settings. To change the setting, admins must modify the corresponding rule in the _environment group_ that includes the environment. This empowers IT teams to delegate administration and governance to other teams as Power Platform adoption grows, without relinquishing control over key environment settings. By doing so, it unlocks scalability and maintains a high standard of operational efficiency and security.
+
+:::image type="content" source="media/change-at-environment-group.png" alt-text="Admins must modify the corresponding rule in the _environment group_ that includes the environment..":::
+
+> [!IMPORTANT]
+> Environment groups can only contain Managed Environments.
 
 ## Strategies for using environment groups
 
@@ -42,9 +61,6 @@ There are many ways to manage pockets of environments within your tenant using e
 This article covers how to augment your _default environment strategy_ by combining _environment groups_ with [_default environment routing_](default-environment-routing.md). Default environment routing gives makers their own personal developer environment. This environment is a secure space to build with Microsoft Dataverse and is similar to [OneDrive](https://www.microsoft.com/microsoft-365/onedrive/online-cloud-storage) for personal productivity.
 
 Enabling _default environment routing_ might give you more environments to manage, but automatically creating them into a single environment group ensures they're preconfigured with important baseline controls your organization requires.
-
-## Known limitations
-When creating an environment in the Power Platform admin center, the Developer and Trial subscription-based environment types may become unavailable when first selecting the environment group and the region. This is a known issue that we plan to fix soon. In the meantime, the alternative is to create the environment via API or PowerShell.
 
 ## Create an environment group
 
@@ -79,7 +95,7 @@ You can also configure the _sharing limit_ rules for canvas apps, solution-aware
 
 #### For solution-aware cloud flows
 1. Select the **Sharing controls for Solution-aware cloud flows** rule to open its configuration panel.
-2. Unmark the **Let people share solution-aware cloud flows** option. This will turn off all sharing for solution-aware cloud flows in this environment group.
+2. Unmark the **Let people share solution-aware cloud flows** option. This turns off all sharing for solution-aware cloud flows in this environment group.
 3. Select **Save**
 
 #### For agents (preview)
@@ -129,8 +145,7 @@ You can manually add environments to the **Personal Productivity** group if you 
 > [!NOTE]
 >
 > - An environment can only belong to one environment group.
-> - Only Managed Environments can be created into an environment group.
-> - Any environment type, for example production, developer, or sandbox, can be created into an environment group as long as they are a managed environment. 
+> - Any environment type, for example production, developer, or sandbox, can be created into an environment group as long as they're a managed environment. 
 
 ## Manually create environments in the group
 

@@ -1,11 +1,11 @@
 ---
-title: Use access control features
-description: Learn how to manage access controls in the Power Platform admin center.
+title: Identity and access management
+description: Learn how to manage identity and access management in the Power Platform admin center with security features available.
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 12/16/2024
-ms.custom: ignite-2024
+ms.date: 01/30/2025
+ms.custom: NewPPAC
 author: matapg007
 ms.author: matgupta
 ms.reviewer: sericks
@@ -13,24 +13,23 @@ search.audienceType:
   - admin
 ---
 
-# Use access control features
-                                                  
-Access controls are a fundamental aspect of securing modern IT environments, particularly within cloud-based platforms such as Azure Virtual Networks and Power Platform. These controls are designed to ensure that only authorized users can access specific resources by protecting sensitive data and maintaining the integrity of organizational systems.
+# Identity and access management
+Make sure authorized users are the only people who can access sensitive data in items across this tenant.
 
+## IP firewall 
+This security control applies to only Managed Environments with Dataverse. The IP firewall feature in Power Platform provides a critical layer of security by controlling inbound  traffic to  Power Platform environments. This feature allows administrators to define and enforce IP-based access controls, ensuring that only authorized IP addresses can access the Power Platform environment. By using IP firewall, organizations can mitigate risks associated with unauthorized access and data breaches, which enhances the overall security of their Power Platform deployments. Learn more in [IP firewall in Power Platform environments](../ip-firewall.md).
+  
 ## Tenant isolation 
 Tenant isolation lets Power Platform administrators govern the movement of tenant data from Microsoft Entra-authorized data sources to and from their tenant. Learn more in [Cross-tenant inbound and outbound restrictions](../cross-tenant-restrictions.md).
 
-## Data policies 
-Setting up data policies at the environment or tenant-level acts as guardrails to help reduce the risk of users from unintentionally exposing organizational data. Learn more in [Data policies](../wp-data-loss-prevention.md).
-
-> [!Note]
-> The recommendation for data policies is triggered when there is no tenant-level policy defined. At this time, any environment-scoped data policies are not considered when performing the security assessment for the tenant.
+## IP address-based cookie binding
+This feature applies to only Managed Environments with Dataverse. It prevents session hijacking exploits in Dataverse with IP address-based cookie binding. Learn more in [Safeguarding Dataverse sessions with IP cookie binding](../block-cookie-replay-attack.md).
 
 ## Environment security groups 
 Setting up security groups helps control which licensed users can access environments. Learn more in [Control user access to environments: security groups and licenses](../control-user-access.md).
 
 ## Manage sharing 
-This feature applies to Managed Environments only. Sharing gives administrators the ability to control who and what their makers can share&mdash;like canvas apps, cloud flows, and copilots&mdash;with other individual users and security groups, which ensures that sensitive information is available only to authorized users, reducing the risk of data breaches and misuse. Learn more in [Limit sharing](../managed-environment-sharing-limits.md).
+This feature applies to Managed Environments only. Sharing gives administrators the ability to control who and what their makers can share&mdash;like canvas apps, cloud flows, and agents&mdash;with other individual users and security groups, which ensures that sensitive information is available only to authorized users, reducing the risk of data breaches and misuse. Learn more in [Limit sharing](../managed-environment-sharing-limits.md).
 
 ## App access control (preview)
 This feature applies to Managed Environments only. Prevent data exfiltration by controlling which apps are allowed and blocked in each environment. Learn more in [Control which apps are allowed in your environment](/power-platform/admin/control-app-access-environment).
@@ -45,8 +44,8 @@ Minimizing the risk of over-sharing is crucial in ensuring data security and com
 ### Configure guest access
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a system administrator.
 1. In the navigation pane, select **Security**.
-1. In the **Secruity** section, select **Access controls**.
-1. In the **Access controls** section, select **Guest access**.
+1. In the **Security** section, select **Identity and access**.
+1. In the **Identity and access** section, select **Guest access**.
 1. The **Guest access** pane appears. Select the environment for which you want to turn off guest access.
 1. Select **Configure guest access**.
 1. Turn on the **Turn off guest access** option.
@@ -60,10 +59,10 @@ Restricting guest access is a pivotal way to improve your tenant’s security po
 The time it takes to effectively block guest access varies based on the volume of environments and resources within those environments. For the most extreme cases, the latency for full enforcement is 24 hours.  
 
 ### Known limitations 
-Guest access is a preview feature with more enhancements to come. The following are some known limitations with work in progress to remediate. 
+Guest access is a preview feature with more enhancements to come. The following are some known limitations.
 
-- While blocking guest access will prevent any guest from saving and using resources, it may not prevent a guest from accessing a Power Platform maker portal.  
-- Items made in Copilot Studio may use Graph connectors as knowledge sources from outside of Power Platform, and the information in them may be accessible to guests for now even if guest access is blocked. 
+- Blocking guest access prevents any guest from saving and using resources. It may not prevent a guest from accessing the Power Apps maker portal.  
+- Items made in Copilot Studio may use graph connectors as knowledge sources from outside of Power Platform. The information in them may be accessible to guests, for now, even if guest access is blocked. 
 
 ## Administrator privileges (preview)
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
@@ -83,3 +82,4 @@ Be aware of the following known issues with the feature:
 
 - The security role **Membership** page displays only the security roles in the default business unit. Turn off the **Display only parent security roles** option to list all security roles across all business units.
 - After you remove a user from the system administrator role, it takes around 24 hours for the updated admin count to display on the page.
+
