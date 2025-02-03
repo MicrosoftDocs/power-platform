@@ -1,10 +1,11 @@
 ---
 title: Tenant-to-tenant migrations 
 description: Learn about the impact of migrating an environment from one tenant to another. 
-ms.date: 01/30/2025
+ms.date: 01/03/2025
 ms.topic: conceptual
 author: matapg007
 contributors:
+  - SatishKumarkannanMs
   - val-bc 
   - brsova
   - ImadYanni
@@ -207,8 +208,8 @@ This step involves creating the SAS URL, which is utilized later for uploading t
 GenerateResourceStorage-PowerAppEnvironment –EnvironmentName {EnvironmentId}
 ```
 
-    > [!Important]
-    > Make sure that the environment is NOT in "Admin Mode" and user has "Basic User" Role assigned in the environment.
+> [!Important]
+> Make sure that the environment is **not** in **Admin Mode** and the user has the **Basic User** role assigned in the environment.
 
 #### Sample output
 
