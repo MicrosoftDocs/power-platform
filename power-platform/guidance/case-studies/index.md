@@ -5,7 +5,7 @@ author: robstand
 ms.author: rstand
 ms.reviewer: jhaskett-msft
 ms.subservice: guidance
-ms.topic: conceptual
+ms.topic: overview
 ms.date: 02/03/2025
 ---
 
@@ -34,3 +34,4 @@ Case studies are detailed accounts of real-world applications and implementation
 | [Degress of Change automates nonprofit operations](nonprofit.md) | This case study covers how Degrees of Change automates nonprofit operations with Power Pages, Power Apps, and AI Builder. |
 | [Cineplex automates business processes](automate-business-processes.md) | This case study covers how Cineplex automates business processes with generative AI and Power Automate. |
 | [EY automates payment processing](global-finance.md) | This case study covers how the Global Finance team at Ernst & Young used Power Automate, AI Builder, and Dataverse to automate customer payment processing. |
+| [John Cockerill streamlines enterprise business processes](engineering-time-tracking.md) | This case study covers how international engineering company John Cockerill uses Power Platform to develop enterprise apps. |
