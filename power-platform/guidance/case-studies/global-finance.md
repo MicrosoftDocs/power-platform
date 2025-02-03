@@ -5,7 +5,7 @@ author: robstand
 ms.author: sashi
 ms.topic: overview
 ms.subservice: guidance
-ms.date: 11/15/2024
+ms.date: 02/03/2025
 
 ---
 
@@ -50,7 +50,7 @@ The following table describes the process flow.
 | ![Office icon](media/global-finance/office-icon.png) | Matching data is extracted from payment information by an AI model and moved to Dataverse. | Use attributes from the extraction model in a 14-step algorithm that tries to find the matching invoices based on predefined business rules using an Office Script. |
 | ![Power Automate icon](media/global-finance/power-automate-icon.png) | Payment data matched in Dataverse is sent to SAP for clearing. | Use Power Automate and the prebuilt SAP connector. |
 | ![Power Apps icon](media/global-finance/power-apps-icon.png) | Payments without a match are manually cleared in the app by the Accounts Receivable team. | Use a Power Apps canvas app to display payment data for manual review and processing. |
-| ![Power Automate icon](media/global-finance/power-automate-icon.png) | Data is synced with internal systems for engagement and collections teams. | Use Power Automate and custom APIs or Power Automate RPA to connect to internal systems. |
+| ![Power Automate icon](media/global-finance/power-automate-icon.png) | Data is synced with internal systems for engagement and collections teams. | Use Power Automate and custom APIs or Power Automate RPA (robotic process automation) to connect to internal systems. |
 
 ## Streamlined payment processing
 
@@ -60,7 +60,7 @@ For payments that don't automatically match and clear in SAP, PowerMatch uses cu
 
 Payments that have a lower matching certainty&mdash;for example, when multiple possible matches are found or partial payments don't match the invoices&mdash;are presented in PowerMatch along with the relevant information the app collected. Every payment that isn't automatically matched and cleared goes through the same four-step process:
 
-1. The Accounts Receivable team confirms the matching result; for example, the app's research on the payment and the proposal for how it should be matched.
+1. The Accounts Receivable (AR) team confirms the matching result; for example, the app's research on the payment and the proposal for how it should be matched.
 
 1. The team selects clearing options.
 
