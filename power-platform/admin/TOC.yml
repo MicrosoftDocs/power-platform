@@ -236,6 +236,8 @@
                   href: power-platform-settings.md
                 - name: Microsoft Dataverse settings
                   href: admin-settings.md
+                - name: Environment Settings app
+                  href: environment-settings-app.md
                 - name: Environment database settings
                   href: environment-database-settings.md
                 - name: Environment routing
