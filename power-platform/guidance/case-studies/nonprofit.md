@@ -3,7 +3,7 @@ title: Degrees of Change automates nonprofit operations with Power Apps, Power P
 description: Learn from nonprofit Degrees of Change how to automate nonprofit operations with Power Apps, Power Pages, and AI Builder.
 author: shellyhaverkamp
 ms.author: sashi
-ms.topic: how-to
+ms.topic: overview
 ms.subservice: guidance
 ms.date: 08/28/2024
 ---
