@@ -19,8 +19,6 @@ This topic describes how to install and uninstall the Power Platform Tools exten
 :::image type="content" source="media/tools/devtools-main-views.png" alt-text="Power Platform Tools." lightbox="media/tools/devtools-main-views.png":::
 
 > [!IMPORTANT]
-> There are two different tool extensions currently available for download from the [Marketplace](https://marketplace.visualstudio.com/). The extension named "Power Platform Tools" is for Visual Studio 2019. The extension named "Power Platform Tools for VS 2022" is for Visual Studio 2022.
->
 > While Power Platform Tools for Visual Studio is similar in appearance and function to the Developer Toolkit for Microsoft Dynamics CRM 2013, Power Platform Tools is a new product and completely independent of the Developer Toolkit. Power Platform Tools is not directly compatible with any templates or projects from the Developer Toolkit and vice versa.
 
 ## Prerequisites
@@ -46,6 +44,8 @@ To install Power Platform Tools, follow these steps:
 1. Expand the left navigation panel node **Online** > **Visual Studio Marketplace**. Search for "Power Platform Tools", then download and install the extension.
 
 > [!IMPORTANT]
+> There are two different tool extensions currently available for download from the [Marketplace](https://marketplace.visualstudio.com/). The extension named "Power Platform Tools" is for Visual Studio 2019. The extension named "Power Platform Tools for VS 2022" is for Visual Studio 2022.
+>
 > After installing Power Platform Tools, you will not find any Power Platform Tools related menu items or views in the Visual Studio user interface until you create or load a Visual Studio solution that contains at least one project created from a Power Platform Tools template.
 
 ### Uninstall Power Platform Tools extension
