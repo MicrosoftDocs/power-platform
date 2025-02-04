@@ -26,7 +26,7 @@ The Power Platform admin center provides the following capabilities.
 | Advisor | Power Platform Advisor is your guide to personalized recommendations to optimize your Power Platform tenant. Advisor analyzes all Managed Environments and the apps in these environments within your Power Platform tenant. Advisor offers solutions to enhance security, reliability, and overall health. | [Use Power Platform Advisor](power-platform-advisor.md) |
 |Security | Run your organizational workloads in the safest way possible with a wide set of security features available. | [Security overview](security/security-overview.md) |
 |Analytics     | Get a detailed view of key metrics for Microsoft Power Platform apps. |[Microsoft Dataverse analytics](./analytics-common-data-service.md)    |
-|Billing  |  View a summary of environments in your tenant requiring licensing attention and license consumption for your environments. |<br/>- [Business subscription and billing documentation](/microsoft-365/commerce)<br/>- [View license consumption](view-license-consumption-issues.md) |
+|Billing  |  View a summary of environments in your tenant requiring licensing attention and license consumption for your environments. |[Business subscription and billing documentation](/microsoft-365/commerce) and [View license consumption](view-license-consumption-issues.md) |
 |Settings  |  Manage settings for all environments in your tenant.|[Tenant settings](tenant-settings.md) |
 | Copilot | Access educational resources, track usage, and access governance controls about Copilot features. | [Manage Copilot](copilot/copilot-hub.md) |
 |Resources  |  View and manage resources in your tenant and environments. |[View and manage resources](view-manage-resources.md)  |
