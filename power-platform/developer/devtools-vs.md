@@ -2,7 +2,7 @@
 title: "What is Power Platform Tools for Visual Studio | Microsoft Docs"
 description: "Learn about the Power Platform Tools extension for Visual Studio and how to install and uninstall it."
 ms.custom: ""
-ms.date: 01/27/2023
+ms.date: 02/04/2025
 ms.reviewer: "pehecke"
 ms.topic: "article"
 author: "phecke" # GitHub ID
@@ -14,11 +14,13 @@ ms.author: "pehecke" # MSFT alias of Microsoft employees only
 
 Power Platform Tools for Visual Studio supports the rapid creation, debugging, and deployment of plug-ins. Other capabilities include development of custom workflow activities, web resources, integration technologies like Azure Service endpoints and webhooks, and more.
 
-This topic describes how to install and uninstall the tools in Visual Studio.
+This topic describes how to install and uninstall the Power Platform Tools extension in Visual Studio.
 
 :::image type="content" source="media/tools/devtools-main-views.png" alt-text="Power Platform Tools." lightbox="media/tools/devtools-main-views.png":::
 
 > [!IMPORTANT]
+> There are two different tool extensions currently available for download from the [Marketplace](https://marketplace.visualstudio.com/). The extension named "Power Platform Tools" is for Visual Studio 2019. The extension named "Power Platform Tools for VS 2022" is for Visual Studio 2022.
+>
 > While Power Platform Tools for Visual Studio is similar in appearance and function to the Developer Toolkit for Microsoft Dynamics CRM 2013, Power Platform Tools is a new product and completely independent of the Developer Toolkit. Power Platform Tools is not directly compatible with any templates or projects from the Developer Toolkit and vice versa.
 
 ## Prerequisites
@@ -27,7 +29,7 @@ Before installing Power Platform Tools into Visual Studio you must have the foll
 
 - Microsoft Visual Studio 2019 or 2022.
 
-- .NET Framework 4.6.2 (required only for plug-in and workflow activity development)
+- .NET Framework 4.6.2 (required only for plug-in and workflow activity development), or later
 
 - C# programming language
 
