@@ -31,7 +31,7 @@ and get key Microsoft Power Platform metrics through Microsoft Dataverse analyti
 
 More information:
 
-- [Power Platform admin center features](../admin/admin-documentation.md##manage-your-environments-and-settings)
+- [Power Platform admin center features](../admin/admin-documentation.md#manage-your-environments-and-settings)
 - [Administer Power Apps](../admin/admin-guide.md)
 - White paper: [Administering a low-code development platform](https://aka.ms/powerappsadminwhitepaper)
 
