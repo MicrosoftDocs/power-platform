@@ -17,7 +17,7 @@ The Power Platform admin center is also used by administrators of some Dynamics 
 
 ## Manage your environments and settings
 
-Currently, the admin center provides the following capabilities.
+The Power Platform admin center provides the following capabilities.
 
 |Feature  |Description  | Learn more |
 |---------|---------|----------------|
