@@ -4,7 +4,7 @@
       items:
         - name: Admin documentation
           href: index.yml
-        - name: Overview
+        - name: Overview of the admin center
           href: admin-documentation.md
         - name: Work with various admin portals
           href: wp-work-with-admin-portals.md
