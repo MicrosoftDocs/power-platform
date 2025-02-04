@@ -31,7 +31,7 @@ Currently, the admin center provides the following capabilities.
 | Copilot | Access educational resources, track usage, and access governance controls about Copilot features. | [Manage Copilot](copilot/copilot-hub.md) |
 |Resources  |  View and manage resources in your tenant and environments. |[View and manage resources](view-manage-resources.md)  |
 |Help + support     | Get a list of self-help solutions or create a support ticket for technical support.| [Get Help + Support](./get-help-support.md).<br/><br/>**Note**: Although, you administer Power BI using the Power BI admin portal, you request support for Power BI through Help + support in the Power Platform admin center.  |
-|Data integration| Description goes here. | [Integrate data into Dataverse](data-integrator.md)|
+|Data integration| The Data Integrator (for Admins) is a point-to-point integration service used to integrate data into Dataverse. | [Integrate data into Dataverse](data-integrator.md)|
 |Data| Manage your cloud and data gateway connections.| [Set up data transfer between on-premises data and cloud services](onpremises-data-gateway-management.md) |
 |Policies     | View and manage various policies for your tenant and environments. | <br/>- [Manage data policies](prevent-data-loss.md)<br/>- [Tenant isolation policy](cross-tenant-restrictions.md)<br/>- [Customer Lockbox policy](about-lockbox.md)<br/>- [Enterprise policies](customer-managed-key.md)<br/>- [Billing policies](pay-as-you-go-overview.md)|
 
