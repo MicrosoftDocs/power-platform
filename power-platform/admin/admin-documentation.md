@@ -30,14 +30,14 @@ Currently, the admin center provides the following capabilities.
 |Settings  |  Manage settings for all environments in your tenant.|[Tenant settings](tenant-settings.md) |
 | Copilot | Access educational resources, track usage, and access governance controls about Copilot features. | [Manage Copilot](copilot/copilot-hub.md) |
 |Resources  |  View and manage resources in your tenant and environments. |[View and manage resources](view-manage-resources.md)  |
-|Help + support     | Get a list of self-help solutions or create a support ticket for technical support.| [Get Help + Support](./get-help-support.md).<br/><br/>**Note**: Although, you administer Power BI using the Power BI admin portal, you request support for Power BI through Help + support in the Power Platform admin center.  |
+|Help + support     | Get a list of self-help solutions or create a support ticket for technical support.<br/><br/>**Note**: Although, you administer Power BI using the Power BI admin portal, you request support for Power BI through Help + support in the Power Platform admin center.| [Get Help + Support](./get-help-support.md).  |
 |Data integration| The Data Integrator (for Admins) is a point-to-point integration service used to integrate data into Dataverse. | [Integrate data into Dataverse](data-integrator.md)|
 |Data| Manage your cloud and data gateway connections.| [Set up data transfer between on-premises data and cloud services](onpremises-data-gateway-management.md) |
 |Policies     | View and manage various policies for your tenant and environments. | <br/>- [Manage data policies](prevent-data-loss.md)<br/>- [Tenant isolation policy](cross-tenant-restrictions.md)<br/>- [Customer Lockbox policy](about-lockbox.md)<br/>- [Enterprise policies](customer-managed-key.md)<br/>- [Billing policies](pay-as-you-go-overview.md)|
 
-## Dashboard overview for home page
+## Personalize your Home page
 
-You can personalize your home page by selecting a theme, setting your language, and timezone from the **Settings** gear.
+You can personalize your **Home** page by selecting a theme, setting your language, and timezone from the **Settings** gear.
 
 To personalize your dashboard, select **+ Add cards** on top of the homepage and drag any card onto the dashboard to the location you want.
 
