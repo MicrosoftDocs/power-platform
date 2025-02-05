@@ -52,6 +52,9 @@ You can use connector action control to allow or block individual actions or tri
 
 ## Known limitations
 
+### Triggers are only supported in PowerShell
+Support for allowing and blocking individual Triggers is currently available only via PowerShell.  It is planned for the Power Platform Admin Center in the future.  For an example of how to allow Triggers that are already in use by Power Automate flows, see [Identify blocked Power Automate flows](identify-blocked-flows-data-policies.md).
+
 ### Admins need to have maker access to Power Apps
 
 The list of connector actions is retrieved using calls to Power Apps on behalf of the admin. The admin must sign in to [Power Apps](https://make.powerapps.com) and have access to complete the user consent process. If the admin doesn't have access to [Power Apps](https://make.powerapps.com), then the list of connector actions won't be retrieved.
