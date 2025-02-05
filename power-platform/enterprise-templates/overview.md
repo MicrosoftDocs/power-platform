@@ -122,7 +122,7 @@ Learn how to install and set up Enterprise templates for Power Platform. More in
 - [Install and set up the Expense Reimbursement template](hr/expense-reimbursement/install-and-set-up.md)
 - [Install and set up the Meeting Room Services template](it/meeting-rm-serv/install-and-set-up.md)
 - [Install and set up the Checklist template](it/checklist/install-and-set-up.md)
-- [Install and set up the Parking Reservation template](it/parking-reservations/install-and-set-up.md)
+- [Install and set up the Parking Reservation template](it/parking-reservation/install-and-set-up.md)
 
 ## Support
 
