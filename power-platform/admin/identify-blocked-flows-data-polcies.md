@@ -1,9 +1,9 @@
 ---
-title: "Identify blocked Power Automate flows from Data Policies | MicrosoftDocs"
-description: Quickly identify flows which are impacted by Data Policies using PowerShell.
+title: Identify blocked Power Automate flows from data policies
+description: Quickly identify flows which are impacted by data policies using PowerShell.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/04/2025
+ms.date: 02/05/2025
 ms.subservice: admin
 author: laneswenka
 ms.author: laswenka
@@ -18,11 +18,11 @@ search.app:
   - Flow
 ---
 
-# Identify blocked Power Automate flows from Data Policies
-As new capabilities become available such as the inclusion of Triggers as part of [Connector action control](./connector-action-control.md), it can become urgent to quickly identify flows which are in violation of existing Data Policies.  The below scripts help you identify and provide an inventory of these flows for review, and can also be used to update your policies if you wish for those flows to not fail at runtime.
+# Identify blocked Power Automate flows from data policies
+As new capabilities become available, such as the inclusion of triggers as part of [connector action control](./connector-action-control.md), it can become critical to quickly identify flows which are in violation of existing data policies.  The following scripts help you identify and provide an inventory of these flows for review, and can help you update your policies if you wish for the flows to not fail at runtime.
 
 ## Inventory flows with blocked triggers
-The PowerShell script below can be used to create an Impacted Flows CSV file.  It will query all Data Policies in your tenant, and find the applicable environments that are in scope.  Thereafter, it will recurse every environment and find Power Automate flows which are in violation of applicable policy due to using Triggers which are currently blocked.  
+The following PowerShell script can be used to create an **Impacted Flows** CSV file.  It queries all data policies in your tenant and finds the applicable environments that are in scope. It will recurse every environment and find Power Automate flows which are in violation of applicable policy due&mdash;to the use of triggers&mdash;which are currently blocked.  
 
 ```powershell
 # Prompt user to capture TenantId
@@ -217,7 +217,7 @@ Write-Host "You may need to adjust the PPAC Admin URL for GCC, GCCH, Mooncake, D
 ```
 
 ## Update policies to include triggers in connector action control
-The following PowerShell script can be used to update your Data Policies to include triggers which are at risk of being blocked.  This uses the output Impacted Flows CSV file from the prior script as an input.  If you don't want to enable all triggers identified in the earlier section, you can remove them from the CSV file prior to running this script.
+The following PowerShell script can be used to update your data policies to include triggers which are at risk of being blocked. This uses the output **Impacted Flows** CSV file, from the prior script as an input.  If you don't want to use all triggers identified in the earlier section, you can remove them from the CSV file prior to running this script.
 
 ```powershell
 # Prompt user to capture TenantId
