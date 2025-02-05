@@ -22,7 +22,7 @@ search.app:
 As new capabilities become available, such as the inclusion of triggers as part of [connector action control](./connector-action-control.md), it can become critical to quickly identify flows which are in violation of existing data policies.  The following scripts help you identify and provide an inventory of these flows for review, and can help you update your policies if you wish for the flows to not fail at runtime.
 
 ## Inventory flows with blocked triggers
-The following PowerShell script can be used to create an **Impacted Flows** CSV file.  It queries all data policies in your tenant and finds the applicable environments that are in scope. It will recurse every environment and find Power Automate flows which are in violation of applicable policy due&mdash;to the use of triggers&mdash;which are currently blocked.  
+The following PowerShell script can be used to create an **Impacted Flows** CSV file.  It queries all data policies in your tenant and finds the applicable environments that are in scope. It will recurse every environment and find Power Automate flows which are in violation of applicable policy&mdash;due to the use of triggers&mdash;which are currently blocked.  
 
 ```powershell
 # Prompt user to capture TenantId
