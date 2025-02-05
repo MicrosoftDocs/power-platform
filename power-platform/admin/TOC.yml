@@ -579,7 +579,11 @@
                       - name: Connector classification
                         href: dlp-custom-connector-parity.md
                     - name: DLP for Power Automate
-                      href: prevent-data-loss.md
+                      items:
+                        - name: Overview
+                          href: prevent-data-loss.md
+                        - name: Identifying blocked flows
+                          href: identify-blocked-flows-data-policies.md
                     - name: DLP for desktop flows
                       href: /power-automate/prevent-data-loss
                     - name: DLP for Copilot Studio
