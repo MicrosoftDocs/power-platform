@@ -23,6 +23,8 @@ As new capabilities become available, such as the inclusion of triggers as part 
 
 ## Inventory flows with blocked triggers
 The following PowerShell script can be used to create an **Impacted Flows** CSV file.  It queries all data policies in your tenant and finds the applicable environments that are in scope. It recurses every environment and find Power Automate flows which are in violation of applicable policy&mdash;due to the use of triggers&mdash;which are currently blocked.  
+>[!IMPORTANT]
+>The below script should be run as a Power Platform Administrator to ensure you are able to access all policies, environments, and flows in your tenant.
 
 ```powershell
 # Prompt user to capture TenantId
