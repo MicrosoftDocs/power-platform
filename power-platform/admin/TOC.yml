@@ -728,7 +728,7 @@
                   href: telemetry-events-model-driven-apps.md
                 - name: Telemetry events for Dataverse
                   href: telemetry-events-dataverse.md
-                - name: Telemetry events for mobile app synchronization and actions (preview)
+                - name: Telemetry events for mobile app synchronization and actions
                   href: telemetry-events-mobile.md
                 - name: Export data to Application Insights
                   href: set-up-export-application-insights.md
