@@ -4,7 +4,7 @@ description: Learn how to turn on data movement across regions for copilots and 
 author: amchern
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/10/2025
+ms.date: 02/05/2025
 ms.subservice: admin
 ms.author: amchern
 ms.reviewer: sericks
