@@ -26,7 +26,7 @@ search.app:
 You can use connector action control to allow or block individual actions or triggers within a given connector.
 
 > [!IMPORTANT]
-> In February 2025, support for triggers is added to the connector action control. This can be administered through PowerShell. Support for triggers is planned for the Power Platform admin center, as well.
+> In February 2025, support for triggers is added to the connector action control. This can be administered through PowerShell. Support for triggers is planned for the Power Platform admin center in the future, as well.
 >
 > Making changes to policies through the Power Platform admin center doesn't remove triggers that were added via PowerShell.
 
