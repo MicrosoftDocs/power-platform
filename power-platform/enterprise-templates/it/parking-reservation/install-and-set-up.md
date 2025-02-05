@@ -5,11 +5,12 @@ author: ananthar-msft
 ms.author: ananthar
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 01/29/2025
+ms.date: 02/05/2025
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
 ms.collection: bap-ai-copilot
+#customer intent: As a Microsoft Power Platform admin, I want to learn how to install, set up, and deploy the Parking Reservation template so that my organization can effectively manage parking spaces at our buildings.
 ---
 
 # Install and set up the Parking Reservation template for Power Platform

@@ -5,11 +5,12 @@ author: ananthar-msft
 ms.author: ananthar
 ms.reviewer: ellenwehrle
 ms.topic: overview
-ms.date: 01/29/2025
+ms.date: 02/05/2025
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
 ms.collection: bap-ai-copilot
+#customer intent: As a user, I want to understand the purpose of the Parking Reservation template so that I can effectively manage parking spaces at my organization's buildings.
 ---
 
 # What is the Parking Reservation template for Microsoft Power Platform?

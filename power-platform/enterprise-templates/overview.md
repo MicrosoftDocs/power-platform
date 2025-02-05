@@ -70,7 +70,7 @@ Be sure to check back often for new templates that become available.
 :::row-end:::
 :::row::::
    :::column span="":::
-      ![Parking Reservation](media/overview/park-res-sq-logo.png "Parking Reservations") <br> **Parking Reservation template** <br> Manage your parking reservations <br> [Documentation](https://aka.ms/LearnParkingReservationTemplate) <br> [AppSource](<https://aka.ms/AccessParkingReservationTemplate>)<br>
+      ![Parking Reservation](media/overview/par-res-sq-log3.png "Parking Reservations") <br> **Parking Reservation template** <br> Manage your parking reservations <br> [Documentation](https://aka.ms/LearnParkingReservationTemplate) <br> [AppSource](<https://aka.ms/AccessParkingReservationTemplate>)<br>
    :::column-end:::
 :::row-end:::
 

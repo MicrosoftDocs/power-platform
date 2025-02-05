@@ -5,11 +5,11 @@ author: ananthar-msft
 ms.author: ananthar
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 01/29/2025
+ms.date: 02/05/2025
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
-#customer intent: As a user of the Parking Reservations app, I want to reserve a parking space in advance so it is available when I arrive at my destination.
+#customer intent: As a user of the Parking Reservations app, I want to know how to reserve a parking space in advance so it is available when I arrive at my destination.
 ---
 
 # Use the Parking Reservation app
