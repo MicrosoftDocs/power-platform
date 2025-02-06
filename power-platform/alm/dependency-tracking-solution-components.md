@@ -59,43 +59,43 @@ These are the solution components displayed in the application and the component
 
 :::row:::
    :::column span="":::
-      [Application ribbons](#application-ribbons-ribboncustomization)
-      [Entity](#entity-entity)
-      [Report](#report-report)
+      [Application ribbons](#application-ribbons-ribboncustomization)  
+      [Entity](#entity-entity)   
+      [Report](#report-report)   
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="":::
-      [Article template](#article-template-kbarticletemplate)
-      [Column security profile](#column-security-profile-fieldsecurityprofile)
-      [SDK message processing step](#sdk-message-processing-step-sdkmessageprocessingstep)
+      [Article template](#article-template-kbarticletemplate)   
+      [Column security profile](#column-security-profile-fieldsecurityprofile)   
+      [SDK message processing step](#sdk-message-processing-step-sdkmessageprocessingstep)   
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="":::
-      [Connection role](#connection-role-connectionrole)
-      [Mail merge template](#mail-merge-template-mailmergetemplate)
-      [Security role](#security-role-role)
+      [Connection role](#connection-role-connectionrole)   
+      [Mail merge template](#mail-merge-template-mailmergetemplate)   
+      [Security role](#security-role-role)   
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="":::
-      [Contract template](#contract-template-contracttemplate)
-      [Option set](#option-set-optionset)
-      [Service endpoint](#service-endpoint-serviceendpoint)
+      [Contract template](#contract-template-contracttemplate)   
+      [Option set](#option-set-optionset)   
+      [Service endpoint](#service-endpoint-serviceendpoint)   
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="":::
-      [Dashboard or entity form](#dashboard-or-entity-form-systemform)
-      [Plug-in assembly](#plug-in-assembly-pluginassembly)
-      [Site map](#site-map-sitemap)
+      [Dashboard or entity form](#dashboard-or-entity-form-systemform)  
+      [Plug-in assembly](#plug-in-assembly-pluginassembly)   
+      [Site map](#site-map-sitemap)   
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="":::
-      [Email template](#email-template-emailtemplate)
-      [Process](#process-workflow)
+      [Email template](#email-template-emailtemplate)  
+      [Process](#process-workflow)   
       [Web resource](#web-resource-webresource)
    :::column-end:::
 :::row-end:::

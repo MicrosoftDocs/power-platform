@@ -4,7 +4,7 @@ description: "Learn how to implement application lifecycle management for Power 
 keywords: 
 author: caburk
 ms.subservice: alm
-ms.author: caburke
+ms.author: caburk
 ms.custom: ""
 ms.date: 02/06/2025
 ms.reviewer: "matp"
