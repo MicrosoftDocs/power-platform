@@ -1,20 +1,19 @@
 ---
-title: "Implement ALM for a new project with Microsoft Power Platform | Microsoft Docs"
-description: "Learn how to implement ALM for a new project with Power Apps"
+title: "Implement ALM for a new project with Microsoft Power Platform"
+description: "Learn how to implement ALM for a new project with Power Platform"
 keywords: 
 author: Mattp123
 ms.subservice: alm
 ms.author: matp
 ms.custom: ""
-ms.date: 05/05/2020
+ms.date: 02/06/2025
 ms.reviewer: ""
-
 ms.topic: "article"
 search.audienceType: 
   - maker
 ---
-
 # Scenario 0: ALM for a new project
+
 If you're new to Power Apps and creating your first app, follow the
 tasks described in this article to successfully deploy a functioning application to your production environment using a healthy application lifecycle management (ALM) strategy.
 
@@ -30,6 +29,7 @@ tasks described in this article to successfully deploy a functioning application
 | 8. Grant access to the app.     | Assign licensing and assign security roles to share applications with users.      | [Licensing](basics-alm.md#licensing)<br /><br /> [Share a model-driven app](/powerapps/maker/model-driven-apps/share-model-driven-app)<br /><br /> [Share a canvas app](/powerapps/maker/canvas-apps/share-app)    |
 
 ### See also
+
 [Scenario 1: Citizen development (app and flow makers)](citizen-dev-alm.md)
 
 

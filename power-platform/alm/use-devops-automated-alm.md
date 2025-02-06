@@ -1,14 +1,13 @@
 ---
-title: "Using DevOps to move from manual to automated ALM with Power Apps | Microsoft Docs"
-description: "Learn how to use Power Apps DevOps to move from manual to automated ALM"
+title: "Using DevOps to move from manual to automated ALM with Power Platform"
+description: "Learn how to use Power Apps DevOps to move from manual to automated ALM in Power Platform"
 keywords: 
 author: Mattp123
 ms.subservice: alm
 ms.author: matp
 ms.custom: ""
-ms.date: 05/05/2020
+ms.date: 02/06/2025
 ms.reviewer: ""
-
 ms.topic: "article"
 search.audienceType: 
   - maker
@@ -23,7 +22,7 @@ For this scenario, you should:
 
 2. Export a solution from your development environment containing your apps and customizations, unpack your solution, and store the components in your source control system. Use Azure Pipelines to manage your components, and then deploy them to the target environment for testing. Finally, deploy to the production environment for user consumption.
 
-### See also
+## See also
 
 [Microsoft Power Platform Build Tools for Azure DevOps](devops-build-tools.md)
 
