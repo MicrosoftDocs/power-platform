@@ -3,7 +3,7 @@ title: Epiq streamlines employee onboarding with Power Automate, Microsoft Datav
 description: Learn from legal and business services firm Epiq how to streamline onboarding with Power Automate, Dataverse, and AI Builder.
 author: shellyhaverkamp
 ms.author: sashi
-ms.topic: how-to
+ms.topic: overview
 ms.subservice: guidance
 ms.date: 08/05/2024
 ---
