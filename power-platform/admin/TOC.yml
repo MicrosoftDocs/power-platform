@@ -4,7 +4,7 @@
       items:
         - name: Admin documentation
           href: index.yml
-        - name: Overview
+        - name: Overview of the admin center
           href: admin-documentation.md
         - name: Work with various admin portals
           href: wp-work-with-admin-portals.md
@@ -236,6 +236,8 @@
                   href: power-platform-settings.md
                 - name: Microsoft Dataverse settings
                   href: admin-settings.md
+                - name: Environment Settings app
+                  href: environment-settings-app.md
                 - name: Environment database settings
                   href: environment-database-settings.md
                 - name: Environment routing
@@ -484,18 +486,18 @@
               items:
               - name: Overview
                 href: security/security-overview.md
-              - name: Network security 
-                href: security/network-security.md
-              - name: Access control 
-                href: security/access-control.md
-              - name: App access control
-                items: 
-                    - name: Control which apps are allowed in your environment (preview)
-                      href: control-app-access-environment.md
-                    - name: Commonly used Microsoft first-party services and portal apps (preview)
-                      href: apps-to-allow.md
-              - name: Threat detection 
-                href: security/threat-detection.md
+              - name: Data protection and privacy
+                href: security/data-protection-privacy.md
+              - name: Identity and access
+                items:
+                - name: Identity and access management
+                  href: security/identity-access-management.md
+                - name: App access control
+                  items: 
+                  - name: Control which apps are allowed in your environment (preview)
+                    href: control-app-access-environment.md
+                  - name: Commonly used Microsoft first-party services and portal apps (preview)
+                    href: apps-to-allow.md
               - name: Compliance 
                 href: security/compliance.md
             - name: Manage Copilot
@@ -577,7 +579,11 @@
                       - name: Connector classification
                         href: dlp-custom-connector-parity.md
                     - name: DLP for Power Automate
-                      href: prevent-data-loss.md
+                      items:
+                        - name: Overview
+                          href: prevent-data-loss.md
+                        - name: Identifying blocked flows
+                          href: identify-blocked-flows-data-policies.md
                     - name: DLP for desktop flows
                       href: /power-automate/prevent-data-loss
                     - name: DLP for Copilot Studio
@@ -726,7 +732,7 @@
                   href: telemetry-events-model-driven-apps.md
                 - name: Telemetry events for Dataverse
                   href: telemetry-events-dataverse.md
-                - name: Telemetry events for mobile app synchronization and actions (preview)
+                - name: Telemetry events for mobile app synchronization and actions
                   href: telemetry-events-mobile.md
                 - name: Export data to Application Insights
                   href: set-up-export-application-insights.md
