@@ -2,12 +2,15 @@ name: Validate PowerFx references
 run-name: ${{ github.actor }} validating PowerFx references
 on:
   pull_request:
-    branches: [ main ]
+    branches:
+      - main
     paths:
-      - .\power-platform\power-fx\funcjson\**
+      - ./power-platform/power-fx/funcjson/**
+
 jobs:
   run-powershell:
     runs-on: windows-latest
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
@@ -19,16 +22,17 @@ jobs:
         id: validation_run
         run: |
           .\power-platform\power-fx\validate.ps1
-        shell: pwsh
+
   comment:  
-    runs-on: ubuntu-latest
+    needs: run-powershell
+    runs-on: ubuntu-latest    
     steps:
       - name: Add PR comment
       - uses: actions/github-script@v3
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
-          errorTextOutput: ${{ steps.validation_run.outputs.reportedErrorsOutput}}
           script: |
+            const errorTextOutput = `{{ steps.validation_run.outputs.reportedErrorsOutput }}`;
             github.issues.createComment({
               issue_number: context.issue.number,
               owner: context.repo.owner,
