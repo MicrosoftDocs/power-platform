@@ -2,7 +2,7 @@
 title: "Citizen developer ALM implementation in Power Platform"
 description: "Learn how to implement application lifecycle management for Power Platform citizen development. Move legacy canvas apps and flows to a healthy ALM model."
 keywords: 
-author: caburke
+author: caburk
 ms.subservice: alm
 ms.author: caburke
 ms.custom: ""
