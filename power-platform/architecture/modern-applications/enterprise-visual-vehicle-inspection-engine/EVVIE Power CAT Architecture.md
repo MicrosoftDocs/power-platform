@@ -52,11 +52,11 @@ EVVIE helps organizations with large vehicle fleets manage regular inspections a
 
 ## Components
 
-- **Dataverse** : All data collected as part of vehicle inspections (captured photos of damage, severity level ranking, descriptions, etc.) is stored in Dataverse.
-- **Power Apps** : The applications presented to both the staff in the field inspecting the vehicles and the administrative staff _reviewing_ these inspections are built in Power Apps, Microsoft's no-code/low-code app development framework.
-- **Custom connector** : A custom connector lets the EVVIE mobile vehicle inspection app (used by staff inspecting vehicles in the field) call a back-end service that uses advanced AI to assess the provided photos.
-- **Azure function** : An Azure Function, Microsoft's event-driven serverless compute platform, serves as a web API that the EVVIE Power App can call via an HTTP call through the custom connector. The Azure Function receives the images via API call and interfaces with an advanced AI model to assess damage, returning this assessment to the requestor (the Power App).
-- **Azure openAI service** : EVVIE uses a multimodal AI model to assess the damage in provided images and classify this damage into three fields: severity level (1-5), area of vehicle (i.e. doors, windshield, front bumper), and description of damage. While any future multimodal large language model can be used (i.e. "o1" or "o3" once they're available), GPT-4o is used as of the time of this writing.
+- **Dataverse:** All data collected as part of vehicle inspections (captured photos of damage, severity level ranking, descriptions, etc.) is stored in Dataverse.
+- **Power Apps:** The applications presented to both the staff in the field inspecting the vehicles and the administrative staff _reviewing_ these inspections are built in Power Apps, Microsoft's no-code/low-code app development framework.
+- **Custom connector:** A custom connector lets the EVVIE mobile vehicle inspection app (used by staff inspecting vehicles in the field) call a back-end service that uses advanced AI to assess the provided photos.
+- **Azure function:** An Azure Function, Microsoft's event-driven serverless compute platform, serves as a web API that the EVVIE Power App can call via an HTTP call through the custom connector. The Azure Function receives the images via API call and interfaces with an advanced AI model to assess damage, returning this assessment to the requestor (the Power App).
+- **Azure openAI service:** EVVIE uses a multimodal AI model to assess the damage in provided images and classify this damage into three fields: severity level (1-5), area of vehicle (i.e. doors, windshield, front bumper), and description of damage. While any future multimodal large language model can be used (i.e. "o1" or "o3" once they're available), GPT-4o is used as of the time of this writing.
 
 ## Considerations
 
@@ -88,9 +88,9 @@ These modifications ensure that EVVIE operates optimally and aligns with the org
 
 Two potential bottlenecks can significantly impact EVVIE's scalability:
 
-- **Azure Function-based API**: As EVVIE’s front-door to the AI service for vehicle damage assessment, it's crucial to ensure the Azure Function is configured for massive scale. Depending on the organization’s consumption, deploying to a dedicated plan may be advisable to ensure scalability.
+- **Azure Function-based API:** As EVVIE’s front-door to the AI service for vehicle damage assessment, it's crucial to ensure the Azure Function is configured for massive scale. Depending on the organization’s consumption, deploying to a dedicated plan may be advisable to ensure scalability.
 
-- **Azure OpenAI Service**: The Azure OpenAI model, called by the Azure Function, is essential for assessing and logging damage. It's critical to ensure that the Azure OpenAI deployment, which the back-end API relies on, is always operational. Since Azure OpenAI uses a token-based system, it's important to guarantee that the model used in EVVIE has a sufficiently high token quota for the given period of usage.
+- **Azure OpenAI Service:** The Azure OpenAI model, called by the Azure Function, is essential for assessing and logging damage. It's critical to ensure that the Azure OpenAI deployment, which the back-end API relies on, is always operational. Since Azure OpenAI uses a token-based system, it's important to guarantee that the model used in EVVIE has a sufficiently high token quota for the given period of usage.
 
 
 ### Experience optimization
@@ -104,9 +104,9 @@ Likewise, the interface presented to administrative staff for reviewing these in
 
 ### Responsible AI
 
-1. **Non-Sensitive Use Case**: The EVVIE application operates within a nonsensitive domain, significantly reducing the risk of bias negatively impacting vehicle inspections. Given the nature of vehicle damage assessment, there's minimal room for bias to influence outcomes.
+1. **Non-Sensitive Use Case:** The EVVIE application operates within a nonsensitive domain, significantly reducing the risk of bias negatively impacting vehicle inspections. Given the nature of vehicle damage assessment, there's minimal room for bias to influence outcomes.
 
-1. **Controlled Generative AI**: The generative AI models employed by EVVIE use features that constrain their assessments into predefined templates. This design ensures that the AI provides specific, factual responses as guided by the developer, limiting creativity and focusing solely on accurate, consistent assessments.
+1. **Controlled Generative AI:** The generative AI models employed by EVVIE use features that constrain their assessments into predefined templates. This design ensures that the AI provides specific, factual responses as guided by the developer, limiting creativity and focusing solely on accurate, consistent assessments.
 
 
 ## Related resources

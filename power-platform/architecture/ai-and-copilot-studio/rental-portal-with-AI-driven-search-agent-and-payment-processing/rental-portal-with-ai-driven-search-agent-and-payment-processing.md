@@ -147,31 +147,31 @@ The Contoso Rental Property system provides an integrated platform for managing 
 
 ## Components
 
-1. **Dataverse** - A cloud-based storage space that lets you securely store and manage data used by business applications. It stores listing and reservation data, including property details, user information, and reservation statuses.  
+1. **Dataverse:** A cloud-based storage space that lets you securely store and manage data used by business applications. It stores listing and reservation data, including property details, user information, and reservation statuses.  
   **Learn more**: [Dataverse](https://www.microsoft.com/en-us/power-platform/dataverse)
 
-2. **Power Apps** - Power Apps is a suite of apps, services, connectors, and a data platform that provides a rapid application development environment to build custom apps for your business needs. It's used to create custom applications for managing rental property listings and tracking tenant interactions efficiently.  
+2. **Power Apps:** Power Apps is a suite of apps, services, connectors, and a data platform that provides a rapid application development environment to build custom apps for your business needs. It's used to create custom applications for managing rental property listings and tracking tenant interactions efficiently.  
     Learn more: [Power Apps](https://www.microsoft.com/en-us/power-platform/products/power-apps)
 
-3. **Power Pages** - A platform for building secure, low-code websites.  
+3. **Power Pages:** A platform for building secure, low-code websites.  
     It lets users browse listings, make reservations, and view personalized property recommendations. Users authenticate via Power Pages, ensuring secure access to their data.  
     Learn more: [Power Pages](https://www.microsoft.com/en-us/power-platform/products/power-pages)
 
-4. **AI builder prompts in Copilot Studio** - AI Builder models that analyze user interactions and provide personalized property recommendations. They enhance user experience by offering tailored property suggestions based on user behavior and preferences.  
+4. **AI builder prompts in Copilot Studio:** AI Builder models that analyze user interactions and provide personalized property recommendations. They enhance user experience by offering tailored property suggestions based on user behavior and preferences.  
     Learn more: [AI & Low code](https://www.microsoft.com/en-us/power-platform/ai)
 
-5. **Azure Functions, Azure Key Vault, Azure SQL, Application Insights** - Azure Functions are an event-driven serverless compute platform that runs on demand and at scale in the cloud.  
+5. **Azure Functions, Azure Key Vault, Azure SQL, Application Insights:** Azure Functions are an event-driven serverless compute platform that runs on demand and at scale in the cloud.  
     They handle payment processing securely, integrating with payment gateways like Stripe. Azure Functions use managed identities to securely access the payment database. Azure Key Vault stores sensitive secrets such as the Stripe authentication key.  
     Learn more: [Azure Functions](https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview?pivots=programming-language-csharp)
 
-6. **Power Automate** - A service that helps automate workflows between apps and services.  It ensures seamless integration between the portal, Azure Functions, and Dataverse. It automates tasks such as calling the Payment API using a custom connector, sending confirmation emails, and updating reservation statuses.  
+6. **Power Automate:** A service that helps automate workflows between apps and services.  It ensures seamless integration between the portal, Azure Functions, and Dataverse. It automates tasks such as calling the Payment API using a custom connector, sending confirmation emails, and updating reservation statuses.  
     Learn more: [Power Automate](https://www.microsoft.com/en-us/power-platform/products/power-automate)
 
-7. **Power BI** - A business analytics service that provides interactive visualizations and business intelligence capabilities.  
+7. **Power BI:** A business analytics service that provides interactive visualizations and business intelligence capabilities.  
     It provides insights into listing performance, user interactions, and reservation trends. Property managers use dashboards to make data-driven decisions. Data held in Application Insights and Azure SQL is joined with Dataverse reservation and property data.  
     Learn more: [Power BI](https://www.microsoft.com/en-us/power-platform/products/power-bi)
 
-8. **GitHub Actions** - GitHub Actions are used for CI/CD, automating workflows to ensure consistent and efficient testing, validation, and deployment of changes. Automated builds and tests are triggered on code pushes, successful builds are deployed to staging and production environments, and unit tests are integrated into the pipelines to maintain code quality and catch issues early.
+8. **GitHub Actions:** GitHub Actions are used for CI/CD, automating workflows to ensure consistent and efficient testing, validation, and deployment of changes. Automated builds and tests are triggered on code pushes, successful builds are deployed to staging and production environments, and unit tests are integrated into the pipelines to maintain code quality and catch issues early.
 
 ## Considerations
 
@@ -181,39 +181,39 @@ Here is an Azure example of considerations for inspiration: [Student attrition p
 
 ### Reliability
 
-- **Redundancy and failover**: Redundancy for critical functions provided by Dataverse and Azure Functions.
+- **Redundancy and failover:** Redundancy for critical functions provided by Dataverse and Azure Functions.
 
-- **Monitoring and alerts**: Application Insights monitors the health of the portal and APIs. Alerts are set up for critical issues to ensure timely responses and minimize downtime.
+- **Monitoring and alerts:** Application Insights monitors the health of the portal and APIs. Alerts are set up for critical issues to ensure timely responses and minimize downtime.
 
-- **Automated backups**: Power Platform's built-in capabilities for automated backups of Dataverse data are utilized. Azure SQL Database automatically performs full, differential, and transaction log backups to protect your data.
+- **Automated backups:** Power Platform's built-in capabilities for automated backups of Dataverse data are utilized. Azure SQL Database automatically performs full, differential, and transaction log backups to protect your data.
 
 - **High availability**: High availability is ensured by Power Platform's built-in redundancy. Power Automate retries are implemented to allow for transient connection outages.
 
 ### Security
 
-- **Authentication**: Power Pages supports various authentication methods, including Azure Active Directory (AAD), Microsoft accounts, and external identity providers. This ensures that only authenticated users can access the portal.
+- **Authentication:** Power Pages supports various authentication methods, including Azure Active Directory (AAD), Microsoft accounts, and external identity providers. This ensures that only authenticated users can access the portal.
 
-- **Role-Based Access Control (RBAC)**: Implement RBAC to restrict access to specific pages, data, and functionalities based on user roles. This ensures that users only have access to the information and actions relevant to their roles.
+- **Role-Based Access Control (RBAC):** Implement RBAC to restrict access to specific pages, data, and functionalities based on user roles. This ensures that users only have access to the information and actions relevant to their roles.
 
-- **Web Application Firewall (WAF)**: Azure Front Door protects the portal from common web vulnerabilities and attacks, such as SQL injection and cross-site scripting (XSS).
+- **Web Application Firewall (WAF):** Azure Front Door protects the portal from common web vulnerabilities and attacks, such as SQL injection and cross-site scripting (XSS).
 
-- **Data protection**: Azure Key Vault stores and manages sensitive information such as API keys and connection strings. This ensures that sensitive data is encrypted and securely accessed.
+- **Data protection:** Azure Key Vault stores and manages sensitive information such as API keys and connection strings. This ensures that sensitive data is encrypted and securely accessed.
 
-- **Access control**: Role-based access control (RBAC) restricts access to sensitive data and operations. Only authorized users can perform critical actions.
+- **Access control:** Role-based access control (RBAC) restricts access to sensitive data and operations. Only authorized users can perform critical actions.
 
-- **Compliance**: The architecture complies with relevant data protection regulations, such as GDPR. Security policies are regularly reviewed and updated to maintain compliance.
+- **Compliance:** The architecture complies with relevant data protection regulations, such as GDPR. Security policies are regularly reviewed and updated to maintain compliance.
 
-- **Data Loss Prevention (DLP)**: Power Platform's built-in DLP policies were configured to prevent unauthorized sharing of sensitive information. These policies protected data across all Power Platform services.
+- **Data Loss Prevention (DLP):** Power Platform's built-in DLP policies were configured to prevent unauthorized sharing of sensitive information. These policies protected data across all Power Platform services.
 
-- **Microsoft Purview**: Microsoft Purview was used for data governance and compliance management. This helped in maintaining data integrity and ensuring that data handling practices met regulatory requirements.
+- **Microsoft Purview:** Microsoft Purview was used for data governance and compliance management. This helped in maintaining data integrity and ensuring that data handling practices met regulatory requirements.
 
 ### Operational excellence
 
-- **Automation**: Power Automate is used to streamline routine tasks such as notifications and approvals. This reduces manual effort and minimizes the risk of human error.
+- **Automation:** Power Automate is used to streamline routine tasks such as notifications and approvals. This reduces manual effort and minimizes the risk of human error.
 
-- **Documentation**: Comprehensive documentation for all components and processes is maintained. This helps in troubleshooting issues and onboarding new team members.
+- **Documentation:** Comprehensive documentation for all components and processes is maintained. This helps in troubleshooting issues and onboarding new team members.
 
-- **Training**: Regular training sessions are provided for users and administrators to ensure they are familiar with the system and can use it effectively.
+- **Training:** Regular training sessions are provided for users and administrators to ensure they are familiar with the system and can use it effectively.
 
 - **CI/CD Pipelines:** Automated CI/CD pipelines are implemented using Azure DevOps or GitHub Actions. This ensures that changes to the portal and applications are tested, validated, and deployed consistently and efficiently.
 
@@ -221,23 +221,23 @@ Here is an Azure example of considerations for inspiration: [Student attrition p
 
 ### Performance efficiency
 
-- **Scalability**: Power Platform and Azure's scalable infrastructure is leveraged to handle varying workloads. Auto-scaling features adjust resources based on demand, ensuring optimal performance. Power Pages CDN improves page load times.
+- **Scalability:** Power Platform and Azure's scalable infrastructure is leveraged to handle varying workloads. Auto-scaling features adjust resources based on demand, ensuring optimal performance. Power Pages CDN improves page load times.
 
-- **Optimization**: Queries and workflows are regularly reviewed using Application Insights and optimized to improve performance and address bottlenecks.
+- **Optimization:** Queries and workflows are regularly reviewed using Application Insights and optimized to improve performance and address bottlenecks.
 
 ### Experience optimization
 
-- **Ease of use and streamlined processes**: Ease of use is prioritized by minimizing user effort and maximizing task efficiency. Complex processes, such as payment processing, are streamlined to minimize user input.
+- **Ease of use and streamlined processes:** Ease of use is prioritized by minimizing user effort and maximizing task efficiency. Complex processes, such as payment processing, are streamlined to minimize user input.
 
-- **Consistent design and information architecture**: Common design patterns and consistent terminology are used across the interface. A consistent information architecture with clear navigation structures and visual indicators is maintained.
+- **Consistent design and information architecture:** Common design patterns and consistent terminology are used across the interface. A consistent information architecture with clear navigation structures and visual indicators is maintained.
 
-- **User feedback and notifications**: Meaningful guidance and feedback on user actions are provided through notifications and messages. Users are informed about what happened and what they need to do next.
+- **User feedback and notifications:** Meaningful guidance and feedback on user actions are provided through notifications and messages. Users are informed about what happened and what they need to do next.
 
-- **Adaptive and responsive design**: Layouts are optimized for different devices and screen sizes. Adaptive techniques are used to dynamically render content, ensuring a consistent experience across contexts.
+- **Adaptive and responsive design:** Layouts are optimized for different devices and screen sizes. Adaptive techniques are used to dynamically render content, ensuring a consistent experience across contexts.
 
-- **Visual appeal and engagement**: The design focuses on creating visually appealing and engaging experiences. Modern UI elements and interactive features like chatbots are used to enhance user perception and engagement.
+- **Visual appeal and engagement:** The design focuses on creating visually appealing and engaging experiences. Modern UI elements and interactive features like chatbots are used to enhance user perception and engagement.
 
-- **AI interaction design**: Natural, intuitive interactions with AI are designed. Fallback mechanisms are included to handle misunderstandings and provide alternative suggestions or support.
+- **AI interaction design:** Natural, intuitive interactions with AI are designed. Fallback mechanisms are included to handle misunderstandings and provide alternative suggestions or support.
 
 ## Reference implementation
 

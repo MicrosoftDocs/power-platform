@@ -33,12 +33,12 @@ The Healthcare patient support agent architecture is designed to streamline pati
 ### Data Sources
 Data sources include Microsoft Dataverse, Azure Data Lake, and Azure Synapse Analytics.
 
-- **Microsoft Dataverse** : Microsoft Dataverse serves as the central repository for healthcare data, including patients, appointments, and provider information. It's chosen for its seamless integration with Power Platform and support for relational and nonrelational data models.
+- **Microsoft Dataverse:** Microsoft Dataverse serves as the central repository for healthcare data, including patients, appointments, and provider information. It's chosen for its seamless integration with Power Platform and support for relational and nonrelational data models.
 
-- **Azure Data Lake Store Gen2** : Azure Data Lake Store Gen2 stores large datasets, enabling advanced analytics on patient data.
+- **Azure Data Lake Store Gen2:** Azure Data Lake Store Gen2 stores large datasets, enabling advanced analytics on patient data.
 It's selected for its scalability and ability to handle structured and unstructured data.
 
-- **Azure Synapse Analytics** : Azure Synapse Analytics provides analytics capabilities for patient and operational data. It's chosen for its ability to unify big data and data warehousing in a single platform.
+- **Azure Synapse Analytics:** Azure Synapse Analytics provides analytics capabilities for patient and operational data. It's chosen for its ability to unify big data and data warehousing in a single platform.
 
 ## Processing
 
@@ -127,18 +127,18 @@ The Healthcare Patient Support Agent architecture aims to improve the delivery o
 
 ## Related resources
 
--   [Power Platform Well-Architected Framework](https://learn.microsoft.com/power-platform/well-architected)
+-   [Power Platform Well-Architected Framework](/power-platform/well-architected)
 
--   [Azure Synapse Analytics Overview](https://learn.microsoft.com/azure/synapse-analytics/)
+-   [Azure Synapse Analytics Overview](/azure/synapse-analytics/)
 
--   [AI Builder Documentation](https://learn.microsoft.com/ai-builder/)
+-   [AI Builder Documentation](/ai-builder/)
 
--   [Power Automate Documentation](https://learn.microsoft.com/power-automate/)
+-   [Power Automate Documentation](/power-automate/)
 
--   [Microsoft Responsible AI Principles](https://learn.microsoft.com/responsible-ai/)
+-   [Microsoft Responsible AI Principles](/responsible-ai/)
 
--   [Set up and configure patient access portal - Microsoft Cloud for Healthcare \| Microsoft Learn](https://learn.microsoft.com/en-us/dynamics365/industry/healthcare/configure-portals?toc=%2Findustry%2Fhealthcare%2Ftoc.json&bc=%2Findustry%2Fbreadcrumb%2Ftoc.json)
+-   [Set up and configure patient access portal](/dynamics365/industry/healthcare/configure-portals?toc=%2Findustry%2Fhealthcare%2Ftoc.json&bc=%2Findustry%2Fbreadcrumb%2Ftoc.json)
 
--   [Use patient access - Microsoft Cloud for Healthcare \| Microsoft Learn](https://learn.microsoft.com/en-us/dynamics365/industry/healthcare/use-patient-access#patient-portal)
+-   [Use patient access - Microsoft Cloud for Healthcare](/dynamics365/industry/healthcare/use-patient-access#patient-portal)
 
--  [Use patient access - API overview | Microsoft Learn](https://learn.microsoft.com/en-us/dynamics365/industry/healthcare/dataverse-healthcare-apis-overview?toc=%2Findustry%2Fhealthcare%2Ftoc.json&bc=%2Findustry%2Fbreadcrumb%2Ftoc.json#dataverse-healthcare-apis)
+-  [Use patient access - API overview](/dynamics365/industry/healthcare/dataverse-healthcare-apis-overview?toc=%2Findustry%2Fhealthcare%2Ftoc.json&bc=%2Findustry%2Fbreadcrumb%2Ftoc.json#dataverse-healthcare-apis)
