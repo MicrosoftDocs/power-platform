@@ -5,7 +5,7 @@ author: manuelap-msft
 ms.subservice: guidance
 ms.topic: conceptual
 ms.date: 02/06/2025
-ms.author: manuelap
+ms.author: manuelap-msft
 ms.reviewer: pankajsharma2087
 contributors: 
   - manuelap-msft
@@ -135,7 +135,7 @@ The Healthcare Patient Support Agent architecture aims to improve the delivery o
 
 -   [Power Automate Documentation](/power-automate/)
 
--   [Microsoft Responsible AI Principles](/responsible-ai/)
+-   [Microsoft Responsible AI Principles](/ai/responsible-ai/)
 
 -   [Set up and configure patient access portal](/dynamics365/industry/healthcare/configure-portals?toc=%2Findustry%2Fhealthcare%2Ftoc.json&bc=%2Findustry%2Fbreadcrumb%2Ftoc.json)
 

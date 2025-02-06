@@ -5,7 +5,7 @@ author: manuelap-msft
 ms.subservice: guidance
 ms.topic: conceptual
 ms.date: 02/06/2025
-ms.author: manuelap
+ms.author: manuelap-msft
 ms.reviewer: pankajsharma2087
 contributors: 
   - manuelap-msft
