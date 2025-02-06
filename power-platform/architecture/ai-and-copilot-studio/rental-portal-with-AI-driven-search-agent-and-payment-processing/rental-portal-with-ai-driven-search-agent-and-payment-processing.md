@@ -162,7 +162,7 @@ The Contoso Rental Property system provides an integrated platform for managing 
 
 5. **Azure Functions, Azure Key Vault, Azure SQL, Application Insights:** Azure Functions are an event-driven serverless compute platform that runs on demand and at scale in the cloud.  
     They handle payment processing securely, integrating with payment gateways like Stripe. Azure Functions use managed identities to securely access the payment database. Azure Key Vault stores sensitive secrets such as the Stripe authentication key.  
-    Learn more: [Azure Functions](https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview?pivots=programming-language-csharp)
+    Learn more: [Azure Functions](/azure/azure-functions/functions-overview?pivots=programming-language-csharp)
 
 6. **Power Automate:** A service that helps automate workflows between apps and services.  It ensures seamless integration between the portal, Azure Functions, and Dataverse. It automates tasks such as calling the Payment API using a custom connector, sending confirmation emails, and updating reservation statuses.  
     Learn more: [Power Automate](https://www.microsoft.com/en-us/power-platform/products/power-automate)
@@ -177,7 +177,7 @@ The Contoso Rental Property system provides an integrated platform for managing 
 
 These considerations implement the pillars of Power Platform Well-Architected, a set of guiding tenets that can improve the quality of a workload. For more information, see [Microsoft Power Platform Well-Architected](https://aka.ms/powa).
 
-Here is an Azure example of considerations for inspiration: [Student attrition prediction](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/ai/student-attrition-prediction#considerations).
+Here is an Azure example of considerations for inspiration: [Student attrition prediction](/azure/architecture/example-scenario/ai/student-attrition-prediction#considerations).
 
 ### Reliability
 

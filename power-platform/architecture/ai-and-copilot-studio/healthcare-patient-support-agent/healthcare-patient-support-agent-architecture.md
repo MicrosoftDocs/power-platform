@@ -102,7 +102,7 @@ The Healthcare Patient Support Agent architecture aims to improve the delivery o
 
 -   Dataverse auditing to track changes and ensure accountability.
 
--   Centralized error logging and monitoring for quick issue resolution. <https://learn.microsoft.com/en-us/power-platform/well-architected/security/monitor-threats>
+-   Centralized error logging and monitoring for quick issue resolution. </power-platform/well-architected/security/monitor-threats>
 
 ### Performance efficiency
 
@@ -122,7 +122,7 @@ The Healthcare Patient Support Agent architecture aims to improve the delivery o
 
 ### Responsible AI
 
--   Privacy and security: Protected patient data using encryption and ensured compliance with HIPAA standards. <https://learn.microsoft.com/en-us/compliance/regulatory/offering-hipaa-hitech>
+-   Privacy and security: Protected patient data using encryption and ensured compliance with HIPAA standards. </compliance/regulatory/offering-hipaa-hitech>
 
 
 ## Related resources
