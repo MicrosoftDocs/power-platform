@@ -19,7 +19,7 @@ search.audienceType:
 
 ## Architecture diagram
 
-:::image type="content" source="../../media/image4.png" alt-text="" border="true":::
+:::image type="content" source="../../media/image4.png" alt-text="architecture diagram" border="true":::
 
 ## Workflow
 
