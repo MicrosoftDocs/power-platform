@@ -57,48 +57,24 @@ When you perform actions programmatically with solutions, you can use messages r
 
 These are the solution components displayed in the application and the components that you work with directly when adding or removing solution components using the solution page. Each of the other types of solution components depend on one or more of these solution components to exist.
 
-:::row:::
-   :::column span="":::
-      [Application ribbons](#application-ribbons-ribboncustomization)  
-      [Entity](#entity-entity)   
-      [Report](#report-report)   
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      [Article template](#article-template-kbarticletemplate)   
-      [Column security profile](#column-security-profile-fieldsecurityprofile)   
-      [SDK message processing step](#sdk-message-processing-step-sdkmessageprocessingstep)   
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      [Connection role](#connection-role-connectionrole)   
-      [Mail merge template](#mail-merge-template-mailmergetemplate)   
-      [Security role](#security-role-role)   
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      [Contract template](#contract-template-contracttemplate)   
-      [Option set](#option-set-optionset)   
-      [Service endpoint](#service-endpoint-serviceendpoint)   
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      [Dashboard or entity form](#dashboard-or-entity-form-systemform)  
-      [Plug-in assembly](#plug-in-assembly-pluginassembly)   
-      [Site map](#site-map-sitemap)   
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      [Email template](#email-template-emailtemplate)  
-      [Process](#process-workflow)   
-      [Web resource](#web-resource-webresource)
-   :::column-end:::
-:::row-end:::
+- [Application ribbons](#application-ribbons-ribboncustomization)  
+- [Entity](#entity-entity)
+- [Report](#report-report)
+- [Article template](#article-template-kbarticletemplate)
+- [Column security profile](#column-security-profile-fieldsecurityprofile)
+- [SDK message processing step](#sdk-message-processing-step-sdkmessageprocessingstep)
+- [Connection role](#connection-role-connectionrole)
+- [Mail merge template](#mail-merge-template-mailmergetemplate)
+- [Security role](#security-role-role)
+- [Contract template](#contract-template-contracttemplate)
+- [Option set](#option-set-optionset)
+- [Service endpoint](#service-endpoint-serviceendpoint)
+- [Dashboard or entity form](#dashboard-or-entity-form-systemform)  
+- [Plug-in assembly](#plug-in-assembly-pluginassembly)
+- [Site map](#site-map-sitemap)
+- [Email template](#email-template-emailtemplate)  
+- [Process](#process-workflow)
+- [Web resource](#web-resource-webresource)
 
 ### Application ribbons (RibbonCustomization)  
 
