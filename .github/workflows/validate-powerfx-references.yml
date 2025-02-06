@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - ./power-platform/power-fx/funcjson/**
+      - power-platform/power-fx/funcjson/**
 
 jobs:
   run-powershell:
