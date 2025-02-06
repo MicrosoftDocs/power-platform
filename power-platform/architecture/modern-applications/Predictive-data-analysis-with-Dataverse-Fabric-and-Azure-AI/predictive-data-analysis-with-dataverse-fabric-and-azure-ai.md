@@ -17,6 +17,11 @@ search.audienceType:
 
 # Predictive data analysis with Dataverse, Fabric, and Azure AI
 
+> [!TIP]
+> This article describes a solution idea. Your cloud architect can use this guidance to help visualize the major components for a typical implementation of this architecture. Use this article as a starting point to design a well-architected solution that aligns with your workload's specific requirements.
+
+In today's data-driven world, leveraging predictive analytics can significantly enhance decision-making processes and operational efficiency. This guide provides a comprehensive overview of how to perform predictive data analysis using Dataverse, Microsoft Fabric, and Azure AI. It covers best practices for data ingestion, model training, and visualization, enabling you to build robust predictive models and actionable insights. Whether you are an administrator or a flow maker, this article will help you design a well-architected solution tailored to your specific workload requirements.
+
 ## Architecture diagram
 
 :::image type="content" source="../../media/image4.png" alt-text="architecture diagram" border="true":::

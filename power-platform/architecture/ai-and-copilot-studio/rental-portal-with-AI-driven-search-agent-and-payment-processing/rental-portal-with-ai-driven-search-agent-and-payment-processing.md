@@ -17,6 +17,12 @@ search.audienceType:
 
 # Rental portal with AI-driven search agent and payment processing
 
+> [!TIP]
+> This article describes a solution idea. Your cloud architect can use this guidance to help visualize the major components for a typical implementation of this architecture. Use this article as a starting point to design a well-architected solution that aligns with your workload's specific requirements.
+
+
+In this article, you'll learn how to build a comprehensive rental portal that leverages AI-driven search capabilities and seamless payment processing. Utilizing the Power Platform and Azure, this solution integrates various components to provide a robust and user-friendly experience for both users and administrators. From browsing and reserving listings to managing payments and generating insightful reports, this architecture ensures a well-rounded and efficient rental management system. Follow along to understand the key components, workflow, and best practices for implementing this solution.
+
 ## Architecture diagram
 
 :::image type="content" source="../../media/image6.png" alt-text="Architecture diagram" border="true":::

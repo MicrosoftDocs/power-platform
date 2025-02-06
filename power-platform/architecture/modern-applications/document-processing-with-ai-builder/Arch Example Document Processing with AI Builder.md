@@ -1,6 +1,6 @@
 ---
-title: Legacy data integration solution
-description: Integrate legacy data systems with modern applications using Power Automate and AI Builder. Learn best practices, view architecture diagrams, and follow workflows.
+title: Document Processing with AI Builder
+description: Streamline document processing with AI Builder and Power Automate. Learn how to automate data extraction and enhance workflow efficiency
 author: manuelap-msft
 ms.subservice: guidance
 ms.topic: conceptual
@@ -14,7 +14,12 @@ search.audienceType:
   - flowmaker
 ---
 
-# Legacy data integration solution
+# Document processing with AI builder
+
+> [!TIP]
+> This article describes a solution idea. Your cloud architect can use this guidance to help visualize the major components for a typical implementation of this architecture. Use this article as a starting point to design a well-architected solution that aligns with your workload's specific requirements.
+
+Integrating legacy data systems with modern applications can be challenging. However, with Power Automate and AI builder, you can streamline document processing and automate data extraction from various documents such as forms, invoices, and purchase orders. This guide provides best practices, architecture diagrams, and workflows to help you design a well-architected solution tailored to your specific requirements. By leveraging AI builder, you can reduce manual data entry, minimize errors, and enhance your workflow efficiency.
 
 ## Architecture diagram
 

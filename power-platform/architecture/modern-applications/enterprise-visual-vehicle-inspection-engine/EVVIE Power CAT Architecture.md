@@ -15,6 +15,12 @@ search.audienceType:
 ---
 # EVVIE - Enterprise Visual Vehicle Inspection Engine
 
+> [!TIP]
+> This article describes a solution idea. Your cloud architect can use this guidance to help visualize the major components for a typical implementation of this architecture. Use this article as a starting point to design a well-architected solution that aligns with your workload's specific requirements.
+
+The Enterprise Visual Vehicle Inspection Engine (EVVIE) leverages the power of AI and Microsoft Power Platform to revolutionize the vehicle inspection process. By automating inspections, EVVIE saves time and enhances accuracy, making it an invaluable tool for organizations managing large vehicle fleets. This guide provides an overview of EVVIE's architecture, workflow, and key components, offering insights into how this innovative solution can streamline vehicle inspections and maintenance.
+
+
  Inspect vehicles and assess damage using generative AI and Power Platform. For a demo and more information, visit [aka.ms/EVVIE](https://microsoft-my.sharepoint.com/personal/timh_microsoft_com/Documents/Stretch%20Projects/AI%20POC%20Teasers%20(CHASE%20IRIS)/EVVIE/Power%20CAT%20Template/aka.ms/EVVIE)
 
 ## Architecture diagram
