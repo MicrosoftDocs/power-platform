@@ -58,39 +58,39 @@ When you perform actions programmatically with solutions, you can use messages r
 These are the solution components displayed in the application and the components that you work with directly when adding or removing solution components using the solution page. Each of the other types of solution components depend on one or more of these solution components to exist.
 
 :::row:::
-   :::column span="3":::
-      [Application ribbons (RibbonCustomization)](#application-ribbons-ribboncustomization)
-      [Entity (Entity)](#entity-entity)
-      [Report (Report)](#report-report)
+   :::column span="":::
+      [Application ribbons](#application-ribbons-ribboncustomization)
+      [Entity](#entity-entity)
+      [Report](#report-report)
    :::column-end:::
-   :::column span="3":::
-      [Article template (KBArticleTemplate)](#article-template-kbarticletemplate)
-      [Column security profile (FieldSecurityProfile)](#column-security-profile-fieldsecurityprofile)
-      [SDK message processing step (SDKMessageProcessingStep)](#sdk-message-processing-step-sdkmessageprocessingstep)
+   :::column span="":::
+      [Article template](#article-template-kbarticletemplate)
+      [Column security profile](#column-security-profile-fieldsecurityprofile)
+      [SDK message processing step](#sdk-message-processing-step-sdkmessageprocessingstep)
    :::column-end:::
-   :::column span="3":::
-      [Connection role (ConnectionRole)](#connection-role-connectionrole)
+   :::column span="":::
+      [Connection role](#connection-role-connectionrole)
    :::column-end:::
-   :::column span="3":::
-      [Mail merge template (MailMergeTemplate)](#mail-merge-template-mailmergetemplate)
-      [Security role (Role)](#security-role-role)
-      [Contract template (ContractTemplate)](#contract-template-contracttemplate)
+   :::column span="":::
+      [Mail merge template](#mail-merge-template-mailmergetemplate)
+      [Security role](#security-role-role)
+      [Contract template](#contract-template-contracttemplate)
    :::column-end:::
-   :::column span="3":::
-      [Option set (OptionSet)](#option-set-optionset)
-      [Service endpoint (ServiceEndpoint)](#service-endpoint-serviceendpoint)
-      [Dashboard or entity form (SystemForm)](#dashboard-or-entity-form-systemform)
+   :::column span="":::
+      [Option set](#option-set-optionset)
+      [Service endpoint](#service-endpoint-serviceendpoint)
+      [Dashboard or entity form](#dashboard-or-entity-form-systemform)
    :::column-end:::
-   :::column span="3":::
-      [Plug-in assembly (PluginAssembly)](#plug-in-assembly-pluginassembly)
+   :::column span="":::
+      [Plug-in assembly](#plug-in-assembly-pluginassembly)
    :::column-end:::
-   :::column span="3":::
-      [Site map (SiteMap)](#site-map-sitemap)
-      [Email template (EmailTemplate)](#email-template-emailtemplate)
-      [Process (Workflow)](#process-workflow)
+   :::column span="":::
+      [Site map](#site-map-sitemap)
+      [Email template](#email-template-emailtemplate)
+      [Process](#process-workflow)
    :::column-end:::
-   :::column span="3":::
-      [Web resource (WebResource)](#web-resource-webresource)
+   :::column span="":::
+      [Web resource](#web-resource-webresource)
    :::column-end:::
 :::row-end:::
 
