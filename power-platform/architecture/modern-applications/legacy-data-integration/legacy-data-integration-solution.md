@@ -81,7 +81,7 @@ These considerations implement the pillars of Power Platform well-architected, w
 
 ### Performance efficiency
 
-Consider which design strategies and recommendations of the [Performance Efficiency pillar](https://learn.microsoft.com/power-platform/well-architected/performance-efficiency/checklist) are applicable to this workload, and document how they were achieved for this architecture.
+Consider which design strategies and recommendations of the [Performance Efficiency pillar](/power-platform/well-architected/performance-efficiency/checklist) are applicable to this workload, and document how they were achieved for this architecture.
 
 ### Experience optimization
 
