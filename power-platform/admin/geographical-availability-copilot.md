@@ -1,10 +1,10 @@
 ---
-title: Turn on data movement across regions for copilots and generative AI features 
-description: Learn how to turn on data movement across regions for copilots and generative AI features.
+title: Move data across regions for Copilots and generative AI features
+description: Learn how to turn on data movement across regions for Copilots and generative AI features.
 author: amchern
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/05/2025
+ms.date: 02/07/2025
 ms.subservice: admin
 ms.author: amchern
 ms.reviewer: sericks
@@ -27,19 +27,19 @@ ms.collection:
     - bap-ai-copilot
 ---
 
-# Turn on data movement across regions for copilots and generative AI features
-
+# Move data across regions for Copilots and generative AI features
 Copilots and generative AI features in [Microsoft Power Platform](/power-platform/) and [Microsoft Dynamics 365](/dynamics365/) help you build apps, flows, and chatbots, analyze your data, summarize information, reply to messages, and generate ideas.
 
-However, copilots and generative AI features aren't available in all regions and languages and in some cases, even where there is in region capacity, data must still move outside of the region for availability reasons. Depending on this and where your environment is hosted, you might need to allow data movement across regions to use them. This article explains how to do that.
+However, Copilots and generative AI features aren't available in all regions and languages. In some cases, even where there is in region capacity, data must still move outside of the region for availability reasons. For this reason and depending on where your environment is hosted, you might need to allow data movement across regions to use them. This article explains how to do that.
 
 > [!NOTE]
-> 1. Copilots and generative AI features that are generally available are turned on by default. However, you might need to allow data movement across regions to use all copilot and generative AI features.
-> 2. Disabling data movement across regions will not turn off all copilots and generative AI features. Copilots and generative AI features will be enabled as capacity is made available in the region.
+> Keep the following points in mind:
+> - Copilots and generative AI features that are generally available are turned on by default. However, you might need to allow data movement across regions to use all Copilot and generative AI features.
+> - If you don't allow data movement across regions, that doesn't turn off all Copilots and generative AI features. Copilots and generative AI features are allowed as capacity is made available in the region.
 
 ## Regions where data is processed for copilots and generative AI features
 
-When you use copilots and generative AI features, **your inputs (prompts) and outputs (results) might move outside of your region to the location where the generative AI feature is hosted**. We don't use your data to train, retrain, or improve Azure OpenAI Service foundation models. Learn more about product-specific Copilot availability, in the [Copilot international availability report](https://releaseplans.microsoft.com/en-US/availability-reports/?report=copilotproductreport).
+When you use Copilots and generative AI features, **your inputs (prompts) and outputs (results) might move outside of your region to the location where the generative AI feature is hosted**. We don't use your data to train, retrain, or improve Azure OpenAI Service foundation models. Learn more about product-specific Copilot availability, in the [Copilot international availability report](https://releaseplans.microsoft.com/en-US/availability-reports/?report=copilotproductreport).
 
 The following table lists the regions where your Power Platform or Dynamics 365 environment is hosted and the corresponding regions where Azure OpenAI service and Bing search service are hosted:
 
@@ -57,13 +57,16 @@ The following table lists the regions where your Power Platform or Dynamics 365 
 
 \**If your Power Platform and Dynamics 365 environments are hosted in the EU Data Boundary, we use an Azure OpenAI endpoint in the same boundary.
 
-## Turn on data movement for copilots and generative AI features
+## Turn on data movement and Bing search for Copilots and generative AI features
 
 To turn on data movement across regions for copilots and generative AI features, you must consent to the terms of use in the Power Platform admin center. To grant consent, you must be a Power Platform administrator or Dynamics 365 administrator.
 
+# [New admin center](#tab/new)
+
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-1. In the left side panel, select **Environments**.
-1. Select your environment.
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. Select the name of your environment.
 1. On the **Generative AI features** card, select **Edit**. 
 
     > [!NOTE]
@@ -84,6 +87,34 @@ To turn on data movement across regions for copilots and generative AI features,
     > You can select the **Bing Search** checkbox only if the **Move data across regions** checkbox is already selected.
 
 1. Select **Save**.
+
+# [Classic admin center](#tab/classic)
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. In the navigation pane, select **Environments**.
+1. Select the name of your environment.
+1. On the **Generative AI features** card, select **Edit**. 
+
+    > [!NOTE]
+    > The **Generative AI features** card isn't displayed for regions listed in [Regions involved with copilots and generative AI features](#regions-involved-with-copilots-and-generative-ai-features) where the Azure OpenAI Service is hosted in the same region.
+
+1. Review the terms of use and select the **Move data across regions** checkbox.
+
+    When you use copilots and generative AI features, your inputs (prompts) and outputs (results) might move outside of your region to the location where the generative AI feature is hosted, as described in the preceding table. Learn more: [Regions involved with copilots and generative AI features](#regions-involved-with-copilots-and-generative-ai-features)
+
+    > [!NOTE]
+    > Data movement that occurred while your environment was allowed to move data across regions can't be reversed by clearing the **Move data across regions** checkbox.
+
+1. Review the terms of use and select the **Bing Search** checkbox.
+
+    When the **Bing Search** feature is turned on, your copilot in Microsoft Copilot Studio can use the data sources you provided, but it can use Bing's APIs to index the results better and find the best answer from within your data sources. Learn more: [Generative answers](/microsoft-copilot-studio/nlu-boost-conversations)
+
+    > [!NOTE]
+    > You can select the **Bing Search** checkbox only if the **Move data across regions** checkbox is already selected.
+
+1. Select **Save**.
+
+---
 
 ## Copilots and generative AI features that are available when you enable data movement across regions
 
