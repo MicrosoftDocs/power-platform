@@ -33,7 +33,7 @@ When you choose to use pay-as-you-go, usage of Power Platform services is billed
 For detailed pricing information, see [Power Apps and Power Automate pricing.](https://powerapps.microsoft.com/pricing/)
 
 > [!NOTE]
-> In June 2022, we released a preview of the Power Platform requests meter. During this preview we will report on usage of Power Platform requests, however, we will not bill for this usage until we reach general availability (GA) for this meter. If you link an environment to an Azure subscription, users and flows in the environment can consume more than their entitled usage without being throttled or paying for overages.
+> In June 2022, we released a preview of the Power Platform requests meter. During this preview we report on usage of Power Platform requests, however, we'll not bill for this usage until we reach general availability (GA) for this meter. If you link an environment to an Azure subscription, users and flows in the environment can consume more than their entitled usage without being throttled or paying for overages.
 
 ### Power Apps per-app meter 
 
