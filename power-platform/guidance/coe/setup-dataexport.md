@@ -4,7 +4,7 @@ description: "Instructions for how to set up the inventory components solution o
 author: jenefer-monroe
 ms.topic: conceptual
 ms.date: 09/05/2023
-ms.subservice: guidance
+ms.subservice: guidance-toolkit
 ms.author: mapichle
 ms.reviewer: sericks
 ---
