@@ -9,7 +9,7 @@ ms.custom:
   - "admin-security"
   - bap-template
 ms.topic: conceptual
-ms.date: 08/08/2024
+ms.date: 02/07/2025
 contributors:
 - shahzorkhan123
 
@@ -40,8 +40,6 @@ After you've [created a security role](create-edit-security-role.md#create-a-sec
 - **Team privileges only**: A user is granted these privileges as a member of a team. Team members who don't have user privileges of their own can create records with the team as the owner. They can access records that the team owns if they're given the **User** access level for Create and Read privileges.
 
 - **Direct User (Basic) access level and Team privileges**: A user is granted these privileges directly when the security role is assigned. Users can create records with themselves as the owner. They can access records that they created or owned when the **User** access level for Create and Read privileges was given to them. This setting is the default for new security roles.
-
-  :::image type="content" source="media/members-privilege-inheritance.png" alt-text="Screenshot of the Member's privilege inheritance option in the security role editor.":::
 
 Then, configure the privileges associated with the security role.
 
