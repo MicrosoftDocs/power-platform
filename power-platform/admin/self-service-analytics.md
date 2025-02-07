@@ -1,12 +1,12 @@
----
-title: "Microsoft Power Platform self-service analytics export  inventory and usage data (preview)"
+--
+title: Microsoft Power Platform self-service analytics export  inventory and usage data (preview)
 description: Learn how to enable Power Platform self-service analytics to export inventory and usage data to use with your organization's line-of-business.
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 11/15/2023
 ms.subservice: admin
 author: sericks007
-ms.author: sericks
+ms.author: mesaelee
 ms.reviewer: sericks
 contributors:
 - Zeffin
