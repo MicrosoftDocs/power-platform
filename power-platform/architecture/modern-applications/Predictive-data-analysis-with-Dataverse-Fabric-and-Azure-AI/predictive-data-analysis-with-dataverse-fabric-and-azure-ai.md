@@ -20,7 +20,7 @@ search.audienceType:
 > [!TIP]
 > This article describes a solution idea. Your cloud architect can use this guidance to help visualize the major components for a typical implementation of this architecture. Use this article as a starting point to design a well-architected solution that aligns with your workload's specific requirements.
 
-In today's data-driven world, leveraging predictive analytics can significantly enhance decision-making processes and operational efficiency. This guide provides a comprehensive overview of how to perform predictive data analysis using Dataverse, Microsoft Fabric, and Azure AI. It covers best practices for data ingestion, model training, and visualization, enabling you to build robust predictive models and actionable insights. Whether you are an administrator or a flow maker, this article will help you design a well-architected solution tailored to your specific workload requirements.
+In today's data-driven world, applying predictive analytics can significantly enhance decision-making processes and operational efficiency. This guide provides a comprehensive overview of how to perform predictive data analysis using Dataverse, Microsoft Fabric, and Azure AI. It covers best practices for data ingestion, model training, and visualization, enabling you to build robust predictive models and actionable insights. Whether you're an administrator or a flow maker, this article helps you design a well-architected solution tailored to your specific workload requirements.
 
 ## Architecture diagram
 
@@ -46,9 +46,9 @@ Learn how to use machine learning models to predict which customers are likely t
 
 - **Data collection:** Use Dataflows to aggregate customer data (transactions, complaints, engagement scores) into Dataverse.
 
-- **Model development:** Sync Dataverse data with Fabric. Train a churn prediction model using historical data in Fabric's Spark pool. Use Azure ML to train and deploy predictive models.
+- **Model development:** Sync Dataverse data with Fabric. Train a churn prediction model using historical data in Fabric's Spark pool. Use Azure Machine Learning to train and deploy predictive models.
 
-- **Prediction deployment:** Save predictions (e.g., churn probability) into Dataverse.
+- **Prediction deployment:** Save predictions (for example, churn probability) into Dataverse.
 
 - **Visualization:** Build Power BI dashboards showing churn risk distribution by region or product category.
 
@@ -58,7 +58,7 @@ Learn how to use machine learning models to predict which customers are likely t
 
 ### Performance 
 
-- **Dataflows for efficient data ingestion:** Optimize Power Platform dataflows for ETL processes by leveraging incremental refresh where applicable to minimize data processing times.
+- **Dataflows for efficient data ingestion:** Optimize Power Platform dataflows for ETL processes by applying incremental refresh where applicable to minimize data processing times.
 
 - **Link to Microsoft Fabric for compute:** Use Azure Synapse Link for Dataverse to offload heavy data computation and analytics tasks to Microsoft Fabric to ensure minimal performance impact on operational Dataverse environments
 
@@ -68,7 +68,7 @@ Use OneLake in Microsoft Fabric to manage large datasets with efficient query ca
 
 ### Security
 
--  **Data source security integration:** Secure access to semi-structured, relational, and non-relational data (e.g., SharePoint, Amazon Redshift, Snowflake) by using Azure Entra ID for authentication and role-based access controls.
+-  **Data source security integration:** Secure access to semi-structured, relational, and nonrelational data (for example, SharePoint, Amazon Redshift, Snowflake) by using Microsoft Entra ID for authentication and role-based access controls.
 
 - **Governance of data in Fabric and Dataverse:** Enforce data classification, encryption at rest, and data loss prevention policies.
 
@@ -77,7 +77,7 @@ Use OneLake in Microsoft Fabric to manage large datasets with efficient query ca
 Implement row-level security in Power BI for role-specific insights while maintaining secure data access.
 
 ### Operational excellence
-Achieve high performance and efficiency by optimizing processes and leveraging best practices.
+Achieve high performance and efficiency by optimizing processes and using best practices.
 
 - **CI/CD for power platform solutions:** Use Azure DevOps or GitHub Actions to manage the lifecycle of Dataverse, Power BI, and AI Builder solutions.
 
@@ -85,7 +85,7 @@ Achieve high performance and efficiency by optimizing processes and leveraging b
 
 #### Operational excellence recommendation
 
-Leverage Purview for comprehensive data lineage and metadata management to ensure model explainability and traceability.
+Apply Purview for comprehensive data lineage and metadata management to ensure model explainability and traceability.
 
 ## Related resources
 
