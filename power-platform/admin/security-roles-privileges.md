@@ -5,13 +5,12 @@ ms.subservice: admin
 author: paulliew
 ms.author: paulliew
 ms.reviewer: sericks
-ms.custom:
-  - "admin-security"
-  - bap-template
+ms.custom: bap-template, NEWPPAC
 ms.topic: conceptual
 ms.date: 02/07/2025
 contributors:
-- shahzorkhan123
+  - srpoduri 
+  - shahzorkhan123
 
 ---
 
