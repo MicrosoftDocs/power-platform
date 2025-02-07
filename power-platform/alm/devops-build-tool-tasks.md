@@ -4,7 +4,7 @@ description: "Learn about what build tool tasks are available plus some examples
 author: marcelbf
 ms.author: marcelbf
 ms.subservice: alm
-ms.date: 03/29/2024
+ms.date: 12/03/2024
 ms.reviewer: pehecke
 ms.topic: article
 search.audienceType: 
@@ -34,13 +34,13 @@ to the versions of the tools that are required for the pipeline to run properly.
 
 ```yml
 # Installs default Power Platform Build Tools
-- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.tool-installer.PowerPlatformToolInstaller@0
+- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.tool-installer.PowerPlatformToolInstaller@2
   displayName: 'Power Platform Tool Installer'
 ```
 
 ```yml
 # Installs specific versions of the Power Platform Build Tools
-- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.tool-installer.PowerPlatformToolInstaller@0
+- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.tool-installer.PowerPlatformToolInstaller@2
   displayName: 'Power Platform Tool Installer'
   inputs:
     DefaultVersion: false
@@ -62,7 +62,7 @@ Verifies a Power Platform environment service connection by connecting and makin
 
 ```yml
 # Verifies an environment service connection
-- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.whoami.PowerPlatformWhoAmi@0
+- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.whoami.PowerPlatformWhoAmi@2
   displayName: 'Power Platform WhoAmI'
 
   inputs: 
@@ -73,7 +73,7 @@ Verifies a Power Platform environment service connection by connecting and makin
 
 ```yml
 # Verifies an environment service connection
-- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.whoami.PowerPlatformWhoAmi@0
+- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.whoami.PowerPlatformWhoAmi@2
   displayName: 'Power Platform WhoAmI'
 
   inputs:
@@ -103,7 +103,7 @@ you might inadvertently introduced when building your solution.
 
 ```yml
 # Static analysis check of your solution
-- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.checker.PowerPlatformChecker@0
+- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.checker.PowerPlatformChecker@2
   displayName: 'Power Platform Checker '
   inputs:
     PowerPlatformSPN: 'Dataverse service connection'
@@ -112,7 +112,7 @@ you might inadvertently introduced when building your solution.
 
 ```yml
 # Static analysis check of your solution
-- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.checker.PowerPlatformChecker@0
+- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.checker.PowerPlatformChecker@2
   displayName: 'Power Platform Checker '
   inputs:
     PowerPlatformSPN: 'Dataverse service connection'
@@ -156,7 +156,7 @@ Imports a solution into a target environment.
 
 ```yml
 steps:
-- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.import-solution.PowerPlatformImportSolution@0
+- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.import-solution.PowerPlatformImportSolution@2
   displayName: 'Power Platform Import Solution '
   inputs:
     PowerPlatformEnvironment: 'My service connection'
@@ -169,7 +169,7 @@ steps:
 
 ```yml
 steps:
-- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.import-solution.PowerPlatformImportSolution@0
+- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.import-solution.PowerPlatformImportSolution@2
   displayName: 'Power Platform Import Solution '
   inputs:
     authenticationType: PowerPlatformSPN
@@ -235,7 +235,7 @@ Upgrades a solution that has been imported as a holding solution.
 
 ```yml
 steps:
-- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.apply-solution-upgrade.PowerPlatformApplySolutionUpgrade@0
+- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.apply-solution-upgrade.PowerPlatformApplySolutionUpgrade@2
   displayName: 'Power Platform Apply Solution Upgrade '
   inputs:
     PowerPlatformEnvironment: 'My service connection'
@@ -245,7 +245,7 @@ steps:
 
 ```yml
 steps:
-- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.apply-solution-upgrade.PowerPlatformApplySolutionUpgrade@0
+- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.apply-solution-upgrade.PowerPlatformApplySolutionUpgrade@2
   displayName: 'Power Platform Apply Solution Upgrade '
   inputs:
     authenticationType: PowerPlatformSPN
@@ -278,7 +278,7 @@ Exports a solution from a source environment.
 
 ```yml
 steps:
-- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.export-solution.PowerPlatformExportSolution@0
+- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.export-solution.PowerPlatformExportSolution@2
   displayName: 'Power Platform Export Solution '
   inputs:
     PowerPlatformEnvironment: 'My service connection'
@@ -290,7 +290,7 @@ steps:
 
 ```yml
 steps:
-- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.export-solution.PowerPlatformExportSolution@0
+- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.export-solution.PowerPlatformExportSolution@2
   displayName: 'Power Platform Export Solution '
   inputs:
     authenticationType: PowerPlatformSPN
@@ -342,7 +342,7 @@ Takes a compressed solution file and decomposes it into multiple XML files so th
 
 ```yml
 steps:
-- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.unpack-solution.PowerPlatformUnpackSolution@0
+- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.unpack-solution.PowerPlatformUnpackSolution@2
   displayName: 'Power Platform Unpack Solution '
   inputs:
     SolutionInputFile: 'C:\Public\Contoso_sample_1_0_0_1_managed.zip'
@@ -366,7 +366,7 @@ Packs a solution represented in source control into a solution.zip file that can
 
 ```yml
 steps:
-- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.pack-solution.PowerPlatformPackSolution@0
+- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.pack-solution.PowerPlatformPackSolution@2
   displayName: 'Power Platform Pack Solution '
   inputs:
     SolutionSourceFolder: 'C:\Public'
@@ -390,7 +390,7 @@ Deletes a solution in the target environment.
 
 ```yml
 steps:
-- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.delete-solution.PowerPlatformDeleteSolution@0
+- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.delete-solution.PowerPlatformDeleteSolution@2
   displayName: 'Power Platform Delete Solution '
   inputs:
     authenticationType: PowerPlatformSPN
@@ -415,7 +415,7 @@ Publishes all customizations in an environment.
 
 ```yml
 steps:
-- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.publish-customizations.PowerPlatformPublishCustomizations@0
+- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.publish-customizations.PowerPlatformPublishCustomizations@2
   displayName: 'Power Platform Publish Customizations '
   inputs:
     authenticationType: PowerPlatformSPN
@@ -438,7 +438,7 @@ Updates the version of a solution.
 
 ```yml
 steps:
-- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.set-solution-version.PowerPlatformSetSolutionVersion@0
+- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.set-solution-version.PowerPlatformSetSolutionVersion@2
   displayName: 'Power Platform Set Solution Version '
   inputs:
     authenticationType: PowerPlatformSPN
@@ -504,7 +504,7 @@ Deploys a package to an environment. Deploying a [package](/powerapps/developer/
 
 ```yml
 steps:
-- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.deploy-package.PowerPlatformDeployPackage@0
+- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.deploy-package.PowerPlatformDeployPackage@2
   displayName: 'Power Platform Deploy Package '
   inputs:
     authenticationType: PowerPlatformSPN
@@ -540,7 +540,7 @@ Creates a new environment. Creating a new environment also automatically creates
 
 ```yml
 steps:
-- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.create-environment.PowerPlatformCreateEnvironment@0
+- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.create-environment.PowerPlatformCreateEnvironment@2
   displayName: 'Power Platform Create Environment '
   inputs:
     PowerPlatformEnvironment: 'My service connection'
@@ -550,7 +550,7 @@ steps:
 
 ```yml
 steps:
-- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.create-environment.PowerPlatformCreateEnvironment@0
+- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.create-environment.PowerPlatformCreateEnvironment@2
   displayName: 'Power Platform Create Environment '
   inputs:
     authenticationType: PowerPlatformSPN
@@ -587,7 +587,7 @@ Deletes an environment.
 
 ```yml
 steps:
-- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.delete-environment.PowerPlatformDeleteEnvironment@0
+- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.delete-environment.PowerPlatformDeleteEnvironment@2
   displayName: 'Power Platform Delete Environment '
   inputs:
     PowerPlatformEnvironment: 'My service connection'
@@ -663,7 +663,7 @@ Backs up an environment.
 
 ```yml
 steps:
-- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.backup-environment.PowerPlatformBackupEnvironment@0
+- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.backup-environment.PowerPlatformBackupEnvironment@2
   displayName: 'Power Platform Backup Environment '
   inputs:
     PowerPlatformEnvironment: 'My service connection'
@@ -688,7 +688,7 @@ metadata and not the actual data.
 
 ```yml
 steps:
-- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.copy-environment.PowerPlatformCopyEnvironment@0
+- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.copy-environment.PowerPlatformCopyEnvironment@2
   displayName: 'Power Platform Copy Environment '
   inputs:
     PowerPlatformEnvironment: 'My service connection'
@@ -697,7 +697,7 @@ steps:
 
 ```yml
 steps:
-- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.copy-environment.PowerPlatformCopyEnvironment@0
+- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.copy-environment.PowerPlatformCopyEnvironment@2
   displayName: 'Power Platform Copy Environment '
   inputs:
     authenticationType: PowerPlatformSPN
@@ -706,7 +706,7 @@ steps:
     CopyType: MinimalCopy
     OverrideFriendlyName: true
     FriendlyName: 'Contoso Test'
-    DisableAdminMode: false
+    SkipAuditData: true
 ```
 
 #### Parameters (Copy-env)
@@ -720,7 +720,7 @@ steps:
 | `CopyType`<br/>Copy type | The type of copy to perform: FullCopy or MinimalCopy |
 | `OverrideFriendlyName`<br/>Override friendly name | Change the target environment's friendly name to another name (true\|false). |
 | `FriendlyName`<br/>Friendly name | The friendly name of the target environment. |
-| `DisableAdminMode`<br/>Disable admin mode | Whether to disable administration mode (true\|false). |
+| `SkipAuditData`<br/>SkipAuditData | Whether to skip audit data during copy operation. (true\|false). |
 
 ### Power Platform Restore Environment
 

@@ -1,14 +1,15 @@
 ---
-title: "Column-level security  | MicrosoftDocs"
+title: Column-level security 
 description: Overview of column-level security using an example.
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 08/12/2024
+ms.date: 11/04/2024
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
 ms.reviewer: sericks
 contributors:
+  - fafuxa-ms
   - srpoduri
 ms.custom: "admin-security"
 search.audienceType: 
@@ -166,9 +167,12 @@ Although most attributes can be secured, there are system attributes, such as ID
 You can view the table metadata for your organization including which columns can be enabled for column security, by installing the Metadata Browser solution described in [Browse the Metadata for Your Organization](/powerapps/developer/common-data-service/browse-your-metadata). 
     
 ## Best practices when you use column security  
- When you use calculated column that include a column that is secured, data may be displayed in the calculated column to users that don't have permission to the secured column. In this situation, both the original column and the calculated column should be secured.  
+When you use calculated column that include a column that is secured, data may be displayed in the calculated column to users that don't have permission to the secured column. In this situation, both the original column and the calculated column should be secured.  
   
- Some data, such as addresses, are made up of multiple columns. Therefore, to completely secure data that includes multiple columns, such as addresses, you must secure and configure the appropriate column security profiles on multiple columns for the table. For example, to completely secure addresses for a table, secure all relevant address columns, such as address_line1, address_line2, address_line3, address1_city, address1_composite, and so on.  
+Some data, such as addresses, are made up of multiple columns. Therefore, to completely secure data that includes multiple columns, such as addresses, you must secure and configure the appropriate column security profiles on multiple columns for the table. For example, to completely secure addresses for a table, secure all relevant address columns, such as address_line1, address_line2, address_line3, address1_city, address1_composite, and so on.  
+
+> [!Note]
+> Changes to column security require a browser refresh from the end user on the client (like a model-driven app) for the changes to take effect. This should be considered when dynamically adjusting access rules. 
   
 ### Related information
 [Set up security permissions for a column](set-up-security-permissions-field.md) <br />

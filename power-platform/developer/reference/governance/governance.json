@@ -2,7 +2,7 @@
   "swagger": "2.0",
   "info": {
     "title": "Microsoft Power Platform REST API",
-    "description": "Unified API for all administrative capabilities in Microsoft Power Platform",
+    "description": "Unified API for all administrative capabilities in Microsoft Power Platform.",
     "version": "2022-03-01-preview"
   },
   "host": "api.powerplatform.com",
@@ -24,7 +24,7 @@
           {
             "in": "query",
             "name": "api-version",
-            "description": "The API version",
+            "description": "The API version.",
             "required": true,
             "type": "string",
             "default": "2022-03-01-preview"
@@ -52,7 +52,7 @@
         "tags": [
           "CrossTenantConnectionReports"
         ],
-        "summary": "Create a request to generate cross-tenant connection report for a tenant or return an existing report.",
+        "summary": "Create a request to generate a cross-tenant connection report for a tenant, or return an existing report.",
         "operationId": "CreateCrossTenantConnectionReport",
         "produces": [
           "application/json"
@@ -61,7 +61,7 @@
           {
             "in": "query",
             "name": "api-version",
-            "description": "The API version",
+            "description": "The API version.",
             "required": true,
             "type": "string",
             "default": "2022-03-01-preview"
@@ -116,7 +116,7 @@
           {
             "in": "query",
             "name": "api-version",
-            "description": "The API version",
+            "description": "The API version.",
             "required": true,
             "type": "string",
             "default": "2022-03-01-preview"
@@ -243,60 +243,6 @@
         }
       },
       "additionalProperties": false
-    },
-    "SharedConnector": {
-      "type": "object",
-      "properties": {
-        "id": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        },
-        "type": {
-          "type": "string"
-        },
-        "displayName": {
-          "type": "string"
-        },
-        "isCustomApi": {
-          "type": "boolean"
-        },
-        "iconUri": {
-          "type": "string"
-        },
-        "tier": {
-          "type": "string"
-        },
-        "tags": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
-        },
-        "externalDocumentUri": {
-          "type": "string"
-        },
-        "externalDocumentDescription": {
-          "type": "boolean"
-        }
-      },
-      "additionalProperties": false
-    },
-    "SharedConnectorsResponseWithOdataContinuation": {
-      "type": "object",
-      "properties": {
-        "value": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/SharedConnector"
-          }
-        },
-        "@odata.nextLink": {
-          "type": "string"
-        }
-      },
-      "additionalProperties": false
     }
   },
   "securityDefinitions": {
@@ -307,7 +253,7 @@
       "scopes": {
         ".default": ".default"
       },
-      "description": "Microsoft Entra ID OAuth2"
+      "description": "Microsoft Entra ID OAuth2."
     }
   },
   "security": [

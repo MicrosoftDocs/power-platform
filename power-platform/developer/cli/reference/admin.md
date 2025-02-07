@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: laneswenka
 ms.author: laswenka
-ms.date: 8/22/2024
+ms.date: 1/16/2025
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -26,6 +26,7 @@ Work with your Power Platform Admin Account
 
 |Command|Description|
 |---------|---------|
+|[pac admin add-group](#pac-admin-add-group)|Add environment to a group.|
 |[pac admin application list](#pac-admin-application-list)|List Microsoft Entra ID applications registered under your tenant.|
 |[pac admin application register](#pac-admin-application-register)|Register Microsoft Entra ID application with your tenant.|
 |[pac admin application unregister](#pac-admin-application-unregister)|Unregister Microsoft Entra ID application from your tenant.|
@@ -39,6 +40,7 @@ Work with your Power Platform Admin Account
 |[pac admin list](#pac-admin-list)|List all environments from your tenant.|
 |[pac admin list-app-templates](#pac-admin-list-app-templates)|Lists all supported Dataverse templates of model-driven apps in Dynamics 365.|
 |[pac admin list-backups](#pac-admin-list-backups)|Lists all backups of your environment.|
+|[pac admin list-groups](#pac-admin-list-groups)|List environment groups from your tenant.|
 |[pac admin list-service-principal](#pac-admin-list-service-principal)|List Microsoft Entra ID applications which have access to Dataverse.|
 |[pac admin list-tenant-settings](#pac-admin-list-tenant-settings)|List tenant settings.|
 |[pac admin reset](#pac-admin-reset)|Reset the environment from your tenant.|
@@ -49,6 +51,28 @@ Work with your Power Platform Admin Account
 |[pac admin status](#pac-admin-status)|This command lists the status of all the operations in progress.|
 |[pac admin update-tenant-settings](#pac-admin-update-tenant-settings)|Update tenant settings.|
 
+
+## pac admin add-group
+
+Add environment to a group.
+
+[!INCLUDE [admin-add-group-intro](includes/admin-add-group-intro.md)]
+
+
+### Required Parameters for admin add-group
+
+#### `--environment-group` `-eg`
+
+Environment group.
+
+
+### Optional Parameters for admin add-group
+
+#### `--environment` `-env`
+
+Environment (ID, org ID, url, unique name, or partial name).
+
+[!INCLUDE [admin-add-group-remarks](includes/admin-add-group-remarks.md)]
 
 ## pac admin application list
 
@@ -440,6 +464,12 @@ Lists all backups of your environment.
 List all environments that contain a given string in their Environment ID or URL.
 
 [!INCLUDE [admin-list-backups-remarks](includes/admin-list-backups-remarks.md)]
+
+## pac admin list-groups
+
+List environment groups from your tenant.
+
+[!INCLUDE [admin-list-groups-remarks](includes/admin-list-groups-remarks.md)]
 
 ## pac admin list-service-principal
 
