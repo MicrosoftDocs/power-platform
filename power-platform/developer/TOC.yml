@@ -33,8 +33,22 @@
           href: appsource\appendix-app-certification-checklist.md
         - name: "Appendix: Add licensing information to your solution"
           href: appsource\appendix-add-license-information-to-your-solution.md
-    - name: Use Power Platform CLI with the catalog (preview)
-      href: submit-catalog-items.md
+    - name: Use the catalog in Power Platform
+      items: 
+        - name: Overview
+          href: catalog/overview.md
+        - name: Retrieve catalog data
+          href: catalog/retrieve-data.md
+        - name: Submit catalog items
+          href: catalog/submit-items.md
+        - name: Install catalog items
+          href: catalog/install-items.md
+        - name: Item submission reference
+          href: catalog/submission-reference.md
+        - name: Event reference
+          href: catalog/events.md
+        - name: Catalog table reference
+          href: catalog/tables/toc.yml
     - name: Unified developer experience for finance and operations apps
       items:
         - name: Overview
@@ -77,50 +91,50 @@
             - name: Power Platform CLI reference
               href: cli\reference\index.md
               items:
-                - name: pac admin
-                  href: cli\reference\admin.md
-                - name: pac application
-                  href: cli\reference\application.md
-                - name: pac auth
-                  href: cli\reference\auth.md
-                - name: pac canvas
-                  href: cli\reference\canvas.md
-                - name: pac catalog
-                  href: cli\reference\catalog.md
-                - name: pac connection
-                  href: cli\reference\connection.md
-                - name: pac connector
-                  href: cli\reference\connector.md
-                - name: pac copilot
-                  href: cli\reference\copilot.md
-                - name: pac data
-                  href: cli\reference\data.md
-                - name: pac env
-                  href: cli\reference\env.md
-                - name: pac help
-                  href: cli\reference\help.md
-                - name: pac modelbuilder
-                  href: cli\reference\modelbuilder.md
-                - name: pac package
-                  href: cli\reference\package.md
-                - name: pac pages
-                  href: cli\reference\pages.md
-                - name: pac pcf
-                  href: cli\reference\pcf.md
-                - name: pac pipeline
-                  href: cli\reference\pipeline.md
-                - name: pac plugin
-                  href: cli\reference\plugin.md
-                - name: pac power-fx
-                  href: cli\reference\power-fx.md
-                - name: pac solution
-                  href: cli\reference\solution.md
-                - name: pac telemetry
-                  href: cli\reference\telemetry.md
-                - name: pac test
-                  href: cli\reference\test.md
-                - name: pac tool
-                  href: cli\reference\tool.md
+              - name: pac admin
+                href: cli\reference\admin.md
+              - name: pac application
+                href: cli\reference\application.md
+              - name: pac auth
+                href: cli\reference\auth.md
+              - name: pac canvas
+                href: cli\reference\canvas.md
+              - name: pac catalog
+                href: cli\reference\catalog.md
+              - name: pac connection
+                href: cli\reference\connection.md
+              - name: pac connector
+                href: cli\reference\connector.md
+              - name: pac copilot
+                href: cli\reference\copilot.md
+              - name: pac data
+                href: cli\reference\data.md
+              - name: pac env
+                href: cli\reference\env.md
+              - name: pac help
+                href: cli\reference\help.md
+              - name: pac modelbuilder
+                href: cli\reference\modelbuilder.md
+              - name: pac package
+                href: cli\reference\package.md
+              - name: pac pages
+                href: cli\reference\pages.md
+              - name: pac pcf
+                href: cli\reference\pcf.md
+              - name: pac pipeline
+                href: cli\reference\pipeline.md
+              - name: pac plugin
+                href: cli\reference\plugin.md
+              - name: pac power-fx
+                href: cli\reference\power-fx.md
+              - name: pac solution
+                href: cli\reference\solution.md
+              - name: pac telemetry
+                href: cli\reference\telemetry.md
+              - name: pac test
+                href: cli\reference\test.md
+              - name: pac tool
+                href: cli\reference\tool.md
         - name: Power Platform Tools for Visual Studio
           items:
             - name: What is Power Platform Tools for Visual Studio

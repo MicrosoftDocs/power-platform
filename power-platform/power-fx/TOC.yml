@@ -337,7 +337,9 @@
           - name: ReadNFC
             href: reference/function-readnfc.md
           - name: RecordInfo
-            href: reference/function-recordinfo.md    
+            href: reference/function-recordinfo.md   
+          - name: RecordOf
+            href: reference/function-type.md             
           - name: Refresh
             href: reference/function-refresh.md
           - name: Relate
@@ -444,6 +446,8 @@
             href: reference/function-trim.md
           - name: Trunc
             href: reference/function-round.md 
+          - name: Type
+            href: reference/function-type.md
           - name: Ungroup
             href: reference/function-groupby.md
           - name: UniChar

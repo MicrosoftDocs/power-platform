@@ -5,7 +5,7 @@ author: caburk
 ms.subservice: alm
 ms.author: matp
 ms.custom: ""
-ms.date: 06/05/2024
+ms.date: 01/30/2025
 ms.reviewer: "matp"
 ms.topic: "overview"
 contributors:
@@ -152,7 +152,7 @@ Yes. You can configure bulk delete jobs in the Dataverse pipelines host to delet
 
 ### Can I specify advanced solution import behaviors such as update versus upgrade?
 
-Not currently. Pipelines default import behavior is _Upgrade_ with _Overwrite customizations_.
+Not currently. Pipelines default import behavior is _Upgrade_ without _Overwrite customizations_.
 
 ### Can an environment be associated with multiple hosts?
 
@@ -219,3 +219,8 @@ We encourage customers to use pipelines for core deployment functionality, and w
 [Extend pipelines](extend-pipelines.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+
+
+## Related information
+
+[Deploy solutions using Pipeline in Power Apps (video)](https://youtu.be/iziCkYl8Shc?feature=shared)

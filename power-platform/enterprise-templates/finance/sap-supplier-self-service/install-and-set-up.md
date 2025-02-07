@@ -134,6 +134,3 @@ Take these steps to update the *Manage Profile* page:
 ## Next step
 
 [Manage the SAP Supplier Self Service solution](manage.md)
-
-
-

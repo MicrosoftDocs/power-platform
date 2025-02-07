@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: laneswenka
 ms.author: laswenka
-ms.date: 8/22/2024
+ms.date: 1/16/2025
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -82,7 +82,7 @@ Download only the entities specified for this argument using comma separated ent
 
 #### `--modelVersion` `-mv`
 
-Power Pages website data model version to download.
+Power Pages website data model version to download. When not specified, 'Standard' will be used. [Enhanced or Standard]
 
 #### `--overwrite` `-o`
 
