@@ -63,12 +63,20 @@
           items:
             - name: Overview
               href: adoption/secure-overview.md
-            - name: Establish DLP policies
+            - name: Assess your security posture
+              href: adoption/assess-security-posture.md
+            - name: Manage your security posture
+              href: adoption/security-posture-management.md
+            - name: Detect threats
+              href: adoption/threat-detection.md
+            - name: Establish data protection and privacy controls
+              href: adoption/data-protection.md
+            - name: Establishing a DLP strategy
               href: adoption/dlp-strategy.md
-            - name: Set up Microsoft Entra Conditional Access
+            - name: Configure identity and access management
               href: adoption/conditional-access.md
-            - name: Enable cross-tenant isolation
-              href: /power-platform/admin/cross-tenant-restrictions
+            - name: Compliance
+              href: adoption/compliance.md
             - name: Secure the default environment
               href: adoption/secure-default-environment.md
         - name: Govern

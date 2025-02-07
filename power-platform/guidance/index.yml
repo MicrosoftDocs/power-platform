@@ -38,35 +38,43 @@ productDirectory:
       imageSrc: ./media/strategy.svg
       links:
         - url: /power-platform/guidance/adoption/vision
-          text: Vision, metrics and goals
-        - url: /power-platform/guidance/adoption/strategy-best-practices
-          text: Adoption Strategy assessment
-        - url: /power-platform/guidance/adoption/admin-best-practices
-          text: Business Value
-        - url: /power-platform/guidance/adoption/nurture-best-practices
-          text: Executive Sponsorship
+          text: Define vision, metrics and goals
+        - url: /power-platform/guidance/adoption/take-assessment
+          text: Assess Power Platform adoption strategy
+        - url: /power-platform/guidance/adoption/business-value
+          text: Measure and communicate business value
+        - url: /power-platform/guidance/adoption/value-plays
+          text: Utilize value plays
+        - url: /power-platform/guidance/adoption/executive-sponsorship
+          text: Get executive sponsorship
+        - url: /power-platform/guidance/adoption/coe.md
+          text: Establish a Center of Excellence
     - title: Plan
       # imageSrc should be square in ratio with no white space
       imageSrc: ./media/plan.svg
       links:
-        - url: /power-platform/guidance/adoption/methodology
-          text: Roles and responsibilities
-        - url: /power-platform/guidance/adoption/strategy-best-practices
-          text: Delivery models
-        - url: /power-platform/guidance/adoption/admin-best-practices
-          text: License assignment strategies
+        - url: /power-platform/guidance/adoption/roles
+          text: Define roles and responsibilities
+        - url: /power-platform/guidance/adoption/delivery-models
+          text: Evaluate delivery models
+        - url: /power-platform/guidance/adoption/license-assignment-strategies
+          text: Establish license assignment strategies
+        - url: /power-platform/guidance/white-papers/application-modernization.md
+          text: Modernize applications with Power Platform
     - title: Secure
       # imageSrc should be square in ratio with no white space
       imageSrc: ./media/secure.svg
       links:
-        - url: /power-platform/guidance/adoption/methodology
-          text: Security Posture Management
-        - url: /power-platform/guidance/adoption/strategy-best-practices
-          text: Threat protection
+        - url: /power-platform/guidance/adoption/assess-security-posture
+          text: Assess your security posture
+        - url: /power-platform/guidance/adoption/security-posture-management
+          text: Manage your security posture 
+        - url: /power-platform/guidance/adoption/threat-detection
+          text: Detect threats
         - url: /power-platform/guidance/adoption/admin-best-practices
-          text: Data protection and privacy
+          text: Establish data protection and privacy controls
         - url: /power-platform/guidance/adoption/admin-best-practices
-          text: Identity and access management
+          text: Configure identity and access management
         - url: /power-platform/guidance/adoption/admin-best-practices
           text: Compliance
     - title: Govern

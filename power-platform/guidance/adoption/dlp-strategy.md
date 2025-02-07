@@ -2,10 +2,9 @@
 title: "Establishing a DLP strategy - Microsoft Power Platform | MicrosoftDocs"
 description: "As an administrator taking over an environment or starting to support use of Power Apps and Power Automate, DLP policies should be one of the first things you set up."
 author: manuelap-msft
-
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/13/2024
+ms.date: 02/28/2025
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: sericks
@@ -30,7 +29,7 @@ Establishing your DLP policies goes hand in hand with your [environment strategy
 -	PowerShell and admin connectors can manage policies.
 -	Users of resources in environments can view policies that apply.
 
-## Connector classification
+### Connector classification
 
 Business and non-business classifications draw boundaries around what connectors can be used together in a given app or flow. Connectors can be classified across the following groups using DLP policies:
 
@@ -40,16 +39,37 @@ Business and non-business classifications draw boundaries around what connectors
 
 The names "business" and "non-business" don't have any special meaning&mdash;they're simply labels. The grouping of the connectors themselves is of significance, not the name of the group they're placed in.
 
-More information: [Administer Microsoft Power Platform: Connector classification](../../admin/dlp-connector-classification.md)
+Learn more: [Connector classification](/power-platform/admin/dlp-connector-classification)
+
+### Granular control
+
+You can achieve more granular control by [configuring connector action control](/power-platform/admin/connector-action-control). Through action control, you can choose which actions on a connector are allowed or not allowed. This option is for blockable connectors that you have added to a DLP policy's non-business or business data group. Using it, you might allow makers use the "read" actions but not the "modify" actions on the connector. Connectors can get new actions when they’re updated. You can set whether to allow or block new actions.
+
+Another way to get more granular control is by [configuring connector endpoint filtering](/power-platform/admin/connector-endpoint-filtering). Endpoint filtering allows admins to govern which specific endpoints makers can connect to when building apps, flows, or chatbots. Connector endpoint filtering applies to six connectors (HTTP, HTTP with Microsoft Entra ID, HTTP Webhook, SQL Server, Azure Blob Storage, and SMTP). The rules only apply when a maker uses a static value to specify an endpoint.
+
+Power Platform allows makers to create and share [custom connectors](/connectors/custom-connectors/). You can manage [custom connectors for tenant and environment level data loss prevention (DLP) policies](/power-platform/admin/dlp-custom-connector-parity). 
+
+Specifically:
+
+1. Environment admins can use the Power Platform admin center to classify individual, custom connectors by name for environment-level data policies.
+1. Tenant admins can use the Power Platform admin center and PowerShell to classify custom connector by their Host URL endpoints using a pattern matching construct for tenant-level data policies.
+
+### DLP for Copilot Studio
+
+Data loss prevention (DLP) policies let you govern how agents connect and interact with data and services, within and outside your organization. Learn more: [Configure data loss prevention policies for agents](/microsoft-copilot-studio/admin-data-loss-prevention)
+
+### DLP for desktop flows
+
+Power Automate allows you to create and enforce DLP policies that classify desktop flow modules and individual module actions as Business, Non-business, or Blocked. This categorization prevents makers from combining modules and actions from different categories into a desktop flow or between a cloud flow and the desktop flows it uses. Learn more: [Configure data loss prevention policies for desktop flows](/power-automate/prevent-data-loss)
 
 ## Strategies for creating DLP policies
 
-As an administrator taking over an environment or starting to support use of Power Apps and Power Automate, DLP policies should be one of the first things you set up. Once a base set of policies is in place, you can then focus on handling exceptions and creating targeted DLP policies that implement these exceptions once approved.
+As an administrator taking over an environment or starting to support use of Power Platform, DLP policies should be one of the first things you set up. Once a base set of policies is in place, you can then focus on handling exceptions and creating targeted DLP policies that implement these exceptions once approved.
 
 We recommend the following starting point for DLP policies for **shared user and team productivity environments**:
 
-- Create a policy spanning all environments except selected ones (for example, your production environments), keep the available connectors in this policy limited to Office 365 and other standard microservices, and block access to everything else. This policy applies to the default environment, and to training environments you have for running internal training events. Additionally, this policy also applies to any new environments that are created.
-- Create appropriate and more permissive DLP policies for your [shared user and team productivity environments](../white-papers/environment-strategy.md). These policies could allow makers to use connectors like Azure services in addition to the Office 365 services. The connectors available in these environments depend on your organization, and where your organization stores business data.
+- Create a policy spanning all environments except selected ones (for example, your production environments), keep the available connectors in this policy limited to Microsoft 365 and other standard microservices, and block access to everything else. This policy applies to the default environment, and to training environments you have for running internal training events. Additionally, this policy also applies to any new environments that are created.
+- Create appropriate and more permissive DLP policies for your [shared user and team productivity environments](../white-papers/environment-strategy.md). These policies could allow makers to use connectors like Azure services in addition to the Microsoft 365 services. The connectors available in these environments depend on your organization, and where your organization stores business data.
 
 We recommend the following starting point for DLP policies for **production (business unit and project) environments**:
 
@@ -59,7 +79,7 @@ We recommend the following starting point for DLP policies for **production (bus
 
 We also recommend:
 
-- Creating a minimal number of policies per environment. There's no strict hierarchy between tenant and environment policies, and at design and runtime, all policies that are applicable to the environment in which the app or flow resides are evaluated together to decide whether the resource is in compliance or violation of DLP policies.  [Multiple DLP policies](../../admin/dlp-combined-effect-multiple-policies.md) applied to one environment will fragment your connector space in complicated ways, and might make it difficult to understand issues your makers are facing.  
+- Creating a minimal number of policies per environment. There's no strict hierarchy between tenant and environment policies, and at design and runtime, all policies that are applicable to the environment in which the app or flow resides are evaluated together to decide whether the resource is in compliance or violation of DLP policies.  [Multiple DLP policies](/power-platform/admin/dlp-combined-effect-multiple-policies) applied to one environment will fragment your connector space in complicated ways, and might make it difficult to understand issues your makers are facing.  
 - Centrally managing DLP Policies using tenant level policies, and using environment policies only to categorize custom connectors or in exception cases.  
 
 With a base strategy in place, plan how to handle exceptions. You can: 
@@ -76,9 +96,9 @@ Contoso admins want to support user and team productivity scenarios and business
 
 The environment and DLP strategy Contoso admins applied here consists of:
 
-1. A tenant-wide restrictive DLP policy that applies to all environments in the tenant except some specific environments that they excluded from the policy scope. Admins intend to keep the available connectors in this policy limited to Office 365 and other standard micro-services by blocking access to everything else. This policy also applies to the default environment.
+1. A tenant-wide restrictive DLP policy that applies to all environments in the tenant except some specific environments that they excluded from the policy scope. Admins intend to keep the available connectors in this policy limited to Microsoft 365 and other standard micro-services by blocking access to everything else. This policy also applies to the default environment.
 
-1. Contoso admins created another shared environment for users to create apps for user and team productivity use cases. This environment has an associated tenant-level DLP policy that isn't as risk-averse as a default policy and allows makers to use connectors like Azure services in addition to the Office 365 services. Because this environment is a non-default environment, admins can actively control the environment maker list for it. This is a tiered approach to shared user and team productivity environment and associated DLP settings.
+1. Contoso admins created another shared environment for users to create apps for user and team productivity use cases. This environment has an associated tenant-level DLP policy that isn't as risk-averse as a default policy and allows makers to use connectors like Azure services in addition to the Microsoft 365 services. Because this environment is a non-default environment, admins can actively control the environment maker list for it. This is a tiered approach to shared user and team productivity environment and associated DLP settings.
 
 1. In addition, for the business units to create line-of-business applications, they created development, test, and production environments for their tax and audit subsidiaries across various countries/regions. The environment maker access to these environments is carefully managed, and appropriate first- and third-party connectors are made available using tenant-level DLP policies in consultation with the business unit stakeholders.
 
