@@ -162,23 +162,66 @@ The following table describes the permission setting groups that you can assign.
 
 1. Select **Save**.
 
-## Add users to a Security role
-You can also add users to a Security role via the modern UI. Follow these steps to add a user to a security role.
+### Add users to a security role
+You can add users to a security role through the modern UI. Follow these steps to add users to a security role.
 
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select **Environments** in the navigation pane, and then select an environment.
+# [New admin center](#tab/new)
 
-2. Select **Settings** > **Users + Permissions** > **Security roles**.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. Select **Manage** in the navigation pane.
+1. In the **Manage** pane, select **Environments**. Then select an environment.
+1. Select **Settings** in the command bar. The **Settings** page for that environment is dispalyed.
+1. Select **Users + Permissions** > **Security roles**.
+1. Select a security role and then select the **More actions** (**...**) icon.
+1. Select **Members** in the menu that appears.
+1. In the **Members** page, select the **+ Add people** option at the top of the page.
+1. In the **Add people** pane, enter a name, email address, or team name to search for the users you want to add to the security role.
+1. Select **Add** to add those users to the security role.
 
-3. Select a security role and click on the ellipsis (...)
+# [Classic admin center](#tab/classic)
 
-4. From the context menu, choose Members 
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. Select **Environments** in the navigation pane, and then select an environment.
+1. Select **Settings** in the command bar. The **Settings** page for that environment is dispalyed.
+1. Select **Users + Permissions** > **Security roles**.
+1. Select a security role and then select the **More actions** (**...**) icon.
+1. Select **Members** in the menu that appears.
+1. In the **Members** page, select the **+ Add people** option at the top of the page.
+1. In the **Add people** pane, enter a name, email address, or team name to search for the users you want to add to the security role.
+1. Select **Add** to add those users to the security role.
 
-5. From the Members page, click +Add People from the top navigation menu
+---
 
-6. Another option is to select a security role and select "Members" from the top navigation menu
+### Remove users from a security role
+You can remove users from a security role through the modern UI. Follow these steps to remove users from a security role.
 
-7. From the Members page, click +Add People from the top navigation menu
-   
+# [New admin center](#tab/new)
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. Select **Manage** in the navigation pane.
+1. In the **Manage** pane, select **Environments**. Then select an environment.
+1. Select **Settings** in the command bar. The **Settings** page for that environment is dispalyed.
+1. Select **Users + Permissions** > **Security roles**.
+1. Select a security role and then select the **More actions** (**...**) icon.
+1. Select **Members** in the menu that appears.
+1. In the **Members** page, select the users you want to remove from the security role.
+1. Select **Remove** at the top of the page.
+1. The **Remove from role?** window appears, asking you to confirm that you want privileges associated with that role removed for the selected user. Select **Remove**.
+
+# [Classic admin center](#tab/classic)
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. Select **Environments** in the navigation pane, and then select an environment.
+1. Select **Settings** in the command bar. The **Settings** page for that environment is dispalyed.
+1. Select **Users + Permissions** > **Security roles**.
+1. Select a security role and then select the **More actions** (**...**) icon.
+1. Select **Members** in the menu that appears.
+1. In the **Members** page, select the users you want to remove from the security role.
+1. Select **Remove** at the top of the page.
+1. The **Remove from role?** window appears, asking you to confirm that you want privileges associated with that role removed for the selected user. Select **Remove**.
+
+---
+
 ## Security roles and the legacy UI
 
 Security roles define how different users access different types of records. To control access to data and resources, you can create or modify security roles and change the security roles that are assigned to your users.
