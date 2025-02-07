@@ -162,6 +162,23 @@ The following table describes the permission setting groups that you can assign.
 
 1. Select **Save**.
 
+## Add users to a Security role
+You can also add users to a Security role via the modern UI. Follow these steps to add a user to a security role.
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select **Environments** in the navigation pane, and then select an environment.
+
+2. Select **Settings** > **Users + Permissions** > **Security roles**.
+
+3. Select a security role and click on the ellipsis (...)
+
+4. From the context menu, choose Members 
+
+5. From the Members page, click +Add People from the top navigation menu
+
+6. Another option is to select a security role and select "Members" from the top navigation menu
+
+7. From the Members page, click +Add People from the top navigation menu
+   
 ## Security roles and the legacy UI
 
 Security roles define how different users access different types of records. To control access to data and resources, you can create or modify security roles and change the security roles that are assigned to your users.
