@@ -19,7 +19,7 @@ search.audienceType:
 > [!TIP]
 > This article describes a solution idea. Your cloud architect can use this guidance to help visualize the major components for a typical implementation of this architecture. Use this article as a starting point to design a well-architected solution that aligns with your workload's specific requirements.
 
-Integrating legacy data systems with modern applications can be challenging. However, with Power Automate and AI builder, you can streamline document processing and automate data extraction from various documents such as forms, invoices, and purchase orders. This guide provides best practices, architecture diagrams, and workflows to help you design a well-architected solution tailored to your specific requirements. By leveraging AI builder, you can reduce manual data entry, minimize errors, and enhance your workflow efficiency.
+Integrating legacy data systems with modern applications can be challenging. However, with Power Automate and AI builder, you can streamline document processing and automate data extraction from various documents such as forms, invoices, and purchase orders. This guide provides best practices, architecture diagrams, and workflows to help you design a well-architected solution tailored to your specific requirements. By using AI builder, you can reduce manual data entry, minimize errors, and enhance your workflow efficiency.
 
 ## Architecture diagram
 
@@ -36,7 +36,7 @@ Integrating legacy data systems with modern applications can be challenging. How
 
 ## Use case details
 
-This architecture streamlines and automates document-intensive business processes. By leveraging AI Builder, organizations reduce manual data entry, minimize errors, and accelerate decision-making workflows. Use cases include:
+This architecture streamlines and automates document-intensive business processes. By using AI Builder, organizations reduce manual data entry, minimize errors, and accelerate decision-making workflows. Use cases include:
 
 - Automating invoice processing.
 
@@ -83,7 +83,7 @@ These considerations implement the pillars of Power Platform Well-Architected, a
 
 ### Performance efficiency
 
-**Use pre-built models:** Consider using pre-built models when they match your document scenario. For example, for invoice processing use the pre-built [invoice processing model](/ai-builder/prebuilt-invoice-processing). This saves you time by not having to gather data to train and test your own model.
+**Use pre-built models:** Consider using prebuilt models when they match your document scenario. For example, for invoice processing use the prebuilt [invoice processing model](/ai-builder/prebuilt-invoice-processing). This saves you time by not having to gather data to train and test your own model.
 
 ### Experience optimization
 

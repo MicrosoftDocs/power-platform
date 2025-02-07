@@ -19,7 +19,7 @@ search.audienceType:
 > [!TIP]
 > This article describes a solution idea. Your cloud architect can use this guidance to help visualize the major components for a typical implementation of this architecture. Use this article as a starting point to design a well-architected solution that aligns with your workload's specific requirements.
 
-Integrating legacy data with modern platforms can be a complex and challenging task. This guide provides a comprehensive solution using Power Automate, SharePoint, Dataverse, Power BI, and Microsoft Teams to streamline the process. By leveraging these tools, you can automate data retrieval, centralize storage, and enhance analytics, ultimately improving business agility and decision-making. This article outlines the architecture, workflow, components, and key considerations to help you design a robust and efficient legacy data integration solution.
+Integrating legacy data with modern platforms can be a complex and challenging task. This guide provides a comprehensive solution using Power Automate, SharePoint, Dataverse, Power BI, and Microsoft Teams to streamline the process. By using these tools, you can automate data retrieval, centralize storage, and enhance analytics, ultimately improving business agility and decision-making. This article outlines the architecture, workflow, components, and key considerations to help you design a robust and efficient legacy data integration solution.
 
 
 ## Architecture diagram
@@ -65,11 +65,11 @@ These considerations implement the pillars of Power Platform well-architected, w
 
 - **Redundancy:** SharePoint and Dataverse ensures high availability, while Power Automate provides failover options for workflows.
 
-- **Monitoring and alerts:** Application Insights are configured to monitor workflow health and alert on failures.
+- **Monitoring and alerts:** Application Insights is configured to monitor workflow health and alert on failures.
 
 ### Security
 
-- **Data access control:** Role-based access ensures only authorized users can access SharePoint libraries, Dataverse tables and Power BI dashboards.
+- **Data access control:** Role-based access ensures only authorized users can access SharePoint libraries, Dataverse tables, and Power BI dashboards.
 
 - **Encryption:** Data in transit (via Power Automate) and at rest (in SharePoint, Dataverse and Power BI) is encrypted.
 

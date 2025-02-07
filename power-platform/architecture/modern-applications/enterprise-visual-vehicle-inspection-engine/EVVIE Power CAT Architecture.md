@@ -18,7 +18,7 @@ search.audienceType:
 > [!TIP]
 > This article describes a solution idea. Your cloud architect can use this guidance to help visualize the major components for a typical implementation of this architecture. Use this article as a starting point to design a well-architected solution that aligns with your workload's specific requirements.
 
-The Enterprise Visual Vehicle Inspection Engine (EVVIE) leverages the power of AI and Microsoft Power Platform to revolutionize the vehicle inspection process. By automating inspections, EVVIE saves time and enhances accuracy, making it an invaluable tool for organizations managing large vehicle fleets. This guide provides an overview of EVVIE's architecture, workflow, and key components, offering insights into how this innovative solution can streamline vehicle inspections and maintenance.
+The Enterprise Visual Vehicle Inspection Engine (EVVIE) applies the power of AI and Microsoft Power Platform to revolutionize the vehicle inspection process. By automating inspections, EVVIE saves time and enhances accuracy, making it an invaluable tool for organizations managing large vehicle fleets. This guide provides an overview of EVVIE's architecture, workflow, and key components, offering insights into how this innovative solution can streamline vehicle inspections and maintenance.
 
 
  Inspect vehicles and assess damage using generative AI and Power Platform. For a demo and more information, visit [aka.ms/EVVIE](https://microsoft-my.sharepoint.com/personal/timh_microsoft_com/Documents/Stretch%20Projects/AI%20POC%20Teasers%20(CHASE%20IRIS)/EVVIE/Power%20CAT%20Template/aka.ms/EVVIE)
@@ -56,7 +56,7 @@ EVVIE helps organizations with large vehicle fleets manage regular inspections a
 - **Power Apps:** The applications presented to both the staff in the field inspecting the vehicles and the administrative staff _reviewing_ these inspections are built in Power Apps, Microsoft's no-code/low-code app development framework.
 - **Custom connector:** A custom connector lets the EVVIE mobile vehicle inspection app (used by staff inspecting vehicles in the field) call a back-end service that uses advanced AI to assess the provided photos.
 - **Azure function:** An Azure Function, Microsoft's event-driven serverless compute platform, serves as a web API that the EVVIE Power App can call via an HTTP call through the custom connector. The Azure Function receives the images via API call and interfaces with an advanced AI model to assess damage, returning this assessment to the requestor (the Power App).
-- **Azure openAI service:** EVVIE uses a multimodal AI model to assess the damage in provided images and classify this damage into three fields: severity level (1-5), area of vehicle (i.e. doors, windshield, front bumper), and description of damage. While any future multimodal large language model can be used (i.e. "o1" or "o3" once they're available), GPT-4o is used as of the time of this writing.
+- **Azure openAI service:** EVVIE uses a multimodal AI model to assess the damage in provided images and classify this damage into three fields: severity level (1-5), area of vehicle (that is, doors, windshield, front bumper), and description of damage. While any future multimodal large language model can be used (that is "o1" or "o3" once they're available), GPT-4o is used as of the time of this writing.
 
 ## Considerations
 
@@ -97,7 +97,7 @@ Two potential bottlenecks can significantly impact EVVIE's scalability:
 
 The team that developed EVVIE dedicated significant time and effort to optimizing the user interface and user experience, ensuring it's intuitive and easy to use for staff inspecting vehicles and those reviewing the inspections.
 
-EVVIE’s inspection app is a canvas app that can be easily modified through a simple click-and-drag interface, similar to PowerPoint, to better meet the organization’s needs. 
+EVVIE’s inspection app is a canvas app that can be easily modified through a simple select-and-drag interface, similar to PowerPoint, to better meet the organization’s needs. 
 
 Likewise, the interface presented to administrative staff for reviewing these inspections is a model-driven app with a custom page, which is equally easy to modify according to specific requirements.
 
