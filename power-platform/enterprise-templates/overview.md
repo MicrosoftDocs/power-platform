@@ -5,7 +5,7 @@ author: ananthar-msft
 ms.author: ananthar
 ms.reviewer: ellenwehrle
 ms.topic: overview
-ms.date: 01/21/2025
+ms.date: 01/29/2025
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -68,6 +68,11 @@ Be sure to check back often for new templates that become available.
       ![Checklist](media/overview/checklist-sq-logo.png "Checklist") <br> **Checklist template** <br> Create checklists to manage tasks and projects <br> [Documentation](https://aka.ms/LearnChecklistReqTemplate) <br> [AppSource](<https://aka.ms/AccessChecklistTemplate>)
    :::column-end:::
 :::row-end:::
+:::row::::
+   :::column span="":::
+      ![Parking Reservation](media/overview/par-res-sq-log3.png "Parking Reservations") <br> **Parking Reservation template** <br> Manage your parking reservations <br> [Documentation](https://aka.ms/LearnParkingReservationTemplate) <br> [AppSource](<https://aka.ms/AccessParkingReservationTemplate>)<br>
+   :::column-end:::
+:::row-end:::
 
 ## SAP Procurement-related templates
 
@@ -82,11 +87,6 @@ Implementing enterprise software use cases is often time-consuming and expensive
 
 Templates for Power Platform offer the following benefits:
 
-- **Time to value**
-  - Remove many of the upfront investments needed in traditional enterprise software development.
-  - Reduce sets of resources and skills needed to deploy.
-  - Gain new business insights through digitized and connected processes.
-
 - **Maximize existing IT investments**
   - Continue to drive value out of existing major IT investments like ERP, CRM, IT, and HR systems.
   - Protect and maintain systems of record and data sources of truth.
@@ -95,6 +95,15 @@ Templates for Power Platform offer the following benefits:
   - Reduce inefficiencies in manual processes.
   - Connect data across multiple systems of record to complete a workflow.
   - Meet users where they are, whether in Teams or in other collaborative experiences.
+
+- **Time to value**
+  - Remove many of the upfront investments needed in traditional enterprise software development.
+  - Reduce sets of resources and skills needed to deploy.
+  - Gain new business insights through digitized and connected processes.
+
+> [!TIP]
+> You can add template components to your organization's [**component library**](/power-apps/maker/canvas-apps/component-library) so you can easily reuse them when building your own custom applications.
+  
 
 > [!NOTE]
 > Enterprise templates for Power Platform require Power Platform premium licensing.
@@ -113,6 +122,7 @@ Learn how to install and set up Enterprise templates for Power Platform. More in
 - [Install and set up the Expense Reimbursement template](hr/expense-reimbursement/install-and-set-up.md)
 - [Install and set up the Meeting Room Services template](it/meeting-rm-serv/install-and-set-up.md)
 - [Install and set up the Checklist template](it/checklist/install-and-set-up.md)
+- [Install and set up the Parking Reservation template](it/parking-reservation/install-and-set-up.md)
 
 ## Support
 
@@ -124,3 +134,7 @@ Support can be accessed at [Templates for Power Platform](https://github.com/mic
 - access template assets
 - access template release updates
 - access template support resources
+
+## Work with catalogs
+
+Organizations where developers and makers build and share customized and reusable components and templates get more value from Power Platform. To get started, learn how to [work with catalogs](/power-apps/maker/data-platform/catalog-overview).
