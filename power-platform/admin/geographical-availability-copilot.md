@@ -144,7 +144,7 @@ More Copilots and generative AI features will be available in the future.
 
 Learn more about the languages that are supported in the [Copilot international availability report](https://aka.ms/bapcopilot-intl-report-external).
 
-## Fequently asked questions (FAQ)
+## Frequently asked questions (FAQ)
 
 ### Is it possible to modify the "Move data across regions" checkbox at scale across all my environments?
 Yes, you can use the **Generative AI settings** environment rule to control this at scale. Learn more in [Rules](/power-platform/admin/environment-groups#rules).
