@@ -75,7 +75,7 @@ To turn on data movement across regions and Bing search for copilots and generat
 
 1. Review the terms of use and select the **Move data across regions** checkbox.
 
-    When you use Copilots and generative AI features, your inputs (prompts) and outputs (results) might move outside of your region to the location where the generative AI feature is hosted, as described in the preceding table. Learn more in [Regions involved with copilots and generative AI features](#regions-involved-with-copilots-and-generative-ai-features).
+    When you use Copilots and generative AI features, your inputs (prompts) and outputs (results) might move outside of your region to the location where the generative AI feature is hosted, as described in the preceding table. Learn more in [Regions where data is processed for Copilots and generative AI features](#regions-where-data-is-processed-for-copilots-and-generative-ai-features).
 
     > [!NOTE]
     > Data movement that occurred while your environment was allowed to move data across regions can't be reversed by clearing the **Move data across regions** checkbox.
