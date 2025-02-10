@@ -303,7 +303,7 @@ Using a cell type of `image` or `clickableimage`, you can configure inline image
 
 The image content can be defined by prefixing with:
 
-- `https:`  A link to an external image. for example, https://via.placeholder.com/100x70
+- `https:`  A link to an external image. for example, `https://via.placeholder.com/100x70`
 - `icon:` Using one of the [Fluent UI icons](https://developer.microsoft.com/en-us/fluentui#/styles/web/icons) for example, `icon:SkypeCircleCheck`
 - `data:` Using inline svg image data: for example, `data:image/svg+xml;utf8, %3Csvg%20%20viewBox%3D%270%200%2020...`
 
