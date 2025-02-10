@@ -71,21 +71,21 @@ To turn on data movement across regions and Bing search for copilots and generat
 1. In the **Generative AI features** card, select **Edit**. 
 
     > [!NOTE]
-    > The **Generative AI features** card isn't displayed for regions listed in [Regions involved with copilots and generative AI features](#regions-involved-with-copilots-and-generative-ai-features) where the Azure OpenAI Service is hosted in the same region.
+    > The **Generative AI features** card isn't displayed for regions listed in [Regions where data is processed for Copilots and generative AI features](#regions-where-data-is-processed-for-copilots-and-generative-ai-features) where the Azure OpenAI Service is hosted in the same region.
 
 1. Review the terms of use and select the **Move data across regions** checkbox.
 
-    When you use copilots and generative AI features, your inputs (prompts) and outputs (results) might move outside of your region to the location where the generative AI feature is hosted, as described in the preceding table. Learn more: [Regions involved with copilots and generative AI features](#regions-involved-with-copilots-and-generative-ai-features)
+    When you use Copilots and generative AI features, your inputs (prompts) and outputs (results) might move outside of your region to the location where the generative AI feature is hosted, as described in the preceding table. Learn more in [Regions involved with copilots and generative AI features](#regions-involved-with-copilots-and-generative-ai-features).
 
     > [!NOTE]
     > Data movement that occurred while your environment was allowed to move data across regions can't be reversed by clearing the **Move data across regions** checkbox.
 
-1. Review the terms of use and select the **Bing Search** checkbox.
+1. Review the terms of use and select the **Bing search** checkbox.
 
-    When the **Bing Search** feature is turned on, your copilot in Microsoft Copilot Studio can use the data sources you provided, but it can use Bing's APIs to index the results better and find the best answer from within your data sources. Learn more: [Generative answers](/microsoft-copilot-studio/nlu-boost-conversations)
+    When the **Bing search** feature is turned on, your agent in Microsoft Copilot Studio can use the data sources you provided, but it can use Bing's APIs to index the results better and find the best answer from within your data sources. Learn more in [Generative answers](/microsoft-copilot-studio/nlu-boost-conversations).
 
     > [!NOTE]
-    > You can select the **Bing Search** checkbox only if the **Move data across regions** checkbox is already selected.
+    > You can select the **Bing search** checkbox only if the **Move data across regions** checkbox is already selected.
 
 1. Select **Save**.
 
