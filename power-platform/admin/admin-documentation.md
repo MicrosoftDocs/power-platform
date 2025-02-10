@@ -6,7 +6,8 @@ ms.topic: overview
 ms.date: 02/10/2025
 ms.author: sericks
 ---
-# Administer Microsoft Power Platform
+
+# Overview of the Power Platform admin center
 
 The Power Platform admin center (<https://admin.powerplatform.microsoft.com>) provides a unified portal for administrators to manage environments and settings for Power Apps, Power Automate, Power Pages, and Microsoft Copilot Studio.
 
