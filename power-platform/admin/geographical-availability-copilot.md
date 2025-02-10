@@ -66,9 +66,9 @@ To turn on data movement across regions and Bing search for copilots and generat
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. In the navigation pane, select **Manage**.
-1. In the **Manage** pane, select **Environments**.
-1. Select the name of your environment.
-1. On the **Generative AI features** card, select **Edit**. 
+1. In the **Manage** pane, select **Environments**. The **Environments** page is displayed.
+1. Select the name of your environment. Details about your environment are displayed.
+1. In the **Generative AI features** card, select **Edit**. 
 
     > [!NOTE]
     > The **Generative AI features** card isn't displayed for regions listed in [Regions involved with copilots and generative AI features](#regions-involved-with-copilots-and-generative-ai-features) where the Azure OpenAI Service is hosted in the same region.
