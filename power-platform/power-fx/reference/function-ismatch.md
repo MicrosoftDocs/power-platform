@@ -145,7 +145,7 @@ Using **MatchAll** is equivalent to using the standard "g" modifier for regular 
 **IsMatch**( _Text_, _Pattern_ [, *Options* ] )
 
 - _Text_ – Required. The text string to test.
-- _Pattern_ – Required. The pattern to test as a text string. Concatenate predefined patterns that the **Match** enum defines, or provide a regular expression. _Pattern_ must be a constant formula without any variables, data sources, or other dynamic references that change as the app runs.
+- _Pattern_ – Required. The pattern to test as a text string. Concatenate predefined patterns that the **Match** enum defines, or provide a regular expression. _Pattern_ must be a constant formula without any variables, data sources, or other dynamic references that change as the app runs. Note the formula must be expressed as "Match.PredefinedPattern" e.g. Match.Email
 - _Options_ – Optional. A text-string combination of **MatchOptions** enum values. By default, **MatchOptions.Complete** is used.
 
 **Match**( _Text_, _Pattern_ [, *Options* ] )
@@ -179,10 +179,10 @@ The user types **Hello world** into **TextInput1**.
 
 | Formula                                                                                                             | Description                                                                                                                                        | Result    |
 | ------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- | --------- |
-| `IsMatch( "123-45-7890", Digit & Digit & Digit & Hyphen & Digit & Digit & Hyphen & Digit & Digit & Digit & Digit )` | Matches a United States Social Security Number                                                                                                     | **true**  |
-| `IsMatch( "joan@contoso.com", Email )`                                                                              | Matches an email address                                                                                                                           | **true**  |
-| `IsMatch( "123.456", MultipleDigits & Period & OptionalDigits )`                                                    | Matches a sequence of digits, a period, and then zero or more digits.                                                                              | **true**  |
-| `IsMatch( "123", MultipleDigits & Period & OptionalDigits )`                                                        | Matches a sequence of digits, a period, and then zero or more digits. A period doesn't appear in the text to match, so this pattern isn't matched. | **false** |
+| `IsMatch( "123-45-7890", Match.Digit & Match.Digit & Match.Digit & Match.Digit & Match.Digit & Match.Digit & Match.Digit & Match.Digit & Match.Digit & Match.Digit & Match.Digit )` | Matches a United States Social Security Number                                                                                                     | **true**  |
+| `IsMatch( "joan@contoso.com", Match.Email )`                                                                              | Matches an email address                                                                                                                           | **true**  |
+| `IsMatch( "123.456", Match.MultipleDigits & Match.Period & Match.OptionalDigits )`                                                    | Matches a sequence of digits, a period, and then zero or more digits.                                                                              | **true**  |
+| `IsMatch( "123", Match.MultipleDigits & Match.Period & Match.OptionalDigits )`                                                        | Matches a sequence of digits, a period, and then zero or more digits. A period doesn't appear in the text to match, so this pattern isn't matched. | **false** |
 
 ### Regular expressions
 
