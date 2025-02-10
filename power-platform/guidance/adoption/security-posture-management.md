@@ -62,11 +62,20 @@ Learn more: [Recommendations for securing a development lifecycle](/power-platfo
 
 Security training for makers and developers is essential to ensure that applications built on Power Platform are secure and resilient against threats. This training should cover best practices for secure coding, data protection, and compliance with regulatory standards. By educating makers and developers on potential security risks and how to mitigate them, you can foster a culture of security awareness and responsibility. Training should include practical exercises, real-world scenarios, and regular updates to keep pace with evolving threats.
 
-Additionally, having a central source, such as a SharePoint site or wiki, where makers can easily access this training content is important. This centralized repository ensures that all team members have consistent and up-to-date information, making it easier to discover and reference security guidelines and resources. Empowering makers and developers with the knowledge and tools they need helps safeguard the your organizations data and applications.
+- **Enhance**: Enhance existing Power Platform trainings by adding information on how to build secure solutions
+- **Educate**: Educate users on your Environment and Data Loss Prevention policy strategy and any other configurations that may impact their solutions, and provide guidance on how to request changes
+- **Include**: Include information on the Security Development Lifecycle (SDL) phases and what users should be aware of to keep their solutions secure
+- **Communicate**: Communicate to users about how you will work together to progress through each phase
+
+Having a central source, such as a SharePoint site or wiki, where makers can easily access this training content is important. This centralized repository ensures that all team members have consistent and up-to-date information, making it easier to discover and reference security guidelines and resources. Empowering makers and developers with the knowledge and tools they need helps safeguard the your organizations data and applications.
 
 ## Incident preparation and response
 
 Establish a comprehensive incident response plan that outlines the procedures for identifying, managing, and mitigating security incidents. This plan should include clear roles and responsibilities, communication protocols, and steps for containment, eradication, and recovery. Regular training and simulations can help ensure that all team members are familiar with the plan and can respond effectively in the event of an incident. Additionally, maintaining detailed logs and audit trails to investigate incidents and understand their impact. By being well-prepared and having a robust incident response strategy in place, you can minimize the damage caused by security breaches and quickly restore normal operations.
+
+Integrate Power Platform into your SecOps practices to enhancing the security and compliance of your low-code/no-code solutions.
+
+:::image type="content" source="media/secops.png" alt-text="Incorporate Power Platform into your SecOps practices.":::
 
 Learn more: [Recommendations for security incident response](/power-platform/well-architected/security/incident-response)
 
@@ -75,6 +84,8 @@ Learn more: [Recommendations for security incident response](/power-platform/wel
 The journey toward a modern, robust security posture doesn't end with the initial implementation. To keep up with new threats, you need to continuously review and refine your security practices while maintaining strict adherence to standards. Continuous improvement  is essential for maintaining a robust security posture because cyber threats continuously evolve and become more sophisticated. To protect against these ever-changing risks, ensure ongoing enhancements.
 
 ## Next steps
+
+You can only mitigate potential security incidents before they escalate into significant breaches with effective threat detection in place. By implementing robust monitoring and alerting systems, you can quickly detect suspicious activities and respond promptly to protect their data and applications.
 
 > [!div class="nextstepaction"]
 > [Detect threats to your organization](threat-protection.md)

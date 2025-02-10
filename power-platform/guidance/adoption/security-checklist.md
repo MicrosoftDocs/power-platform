@@ -1,0 +1,70 @@
+---
+title: Manage your security posture
+description: Guidance for managing your Power Platform security posture
+author: manuelap-msft
+ms.component: pa-admin
+ms.topic: conceptual
+ms.subservice: guidance
+ms.author: mapichle
+ms.reviewer: sericks
+ms.date: 02/28/2025
+---
+
+# Checklist / Action Plan
+
+## Security Posture Management
+
+| Done? | Task |
+| :-----: | ---- |
+| &check; | Understand the responsibilities of the service provider as a data processor and the customer responsibilities as the owner and data controller. Make sure both sides comply with the relevant laws and regulations. Familiarize yourself with Power Platform's architecture, including environments, connectors, Dataverse, Power Apps, Power Automate, and Copilot Studio. |
+| &check; | Understand your security requirements and assess your existing security measures, tools, and practices to identify gaps and areas for improvement. Create a security baseline aligned with compliance requirements and industry standards. |
+| &check; | Review the Security page in the Power Platform Admin Center and assess recommended actions to improve the security score. |
+| &check; | Educate makers and developers on security, compliance and privacy best practices.Ensure training materials are easily accessible through a central source like a SharePoint site or wiki. |
+| &check; | Define and test incident response plans. Ensure clear roles and responsibilities for handling security incidents. |
+| &check; | Regularly review and update security policies to adapt to changing threats and business needs. |
+
+## Threat protection
+
+| Done? | Task |
+| :-----: | ---- |
+| &check; | Utilize the Power Platform Admin Center and Microsoft Sentinel to track user activities. Conduct regular audits to detect anomalies and ensure compliance. |
+| &check; | Configure Microsoft Sentinel and set up alerts for suspicious activities and policy violations. |
+| &check; | Monitor identity-related risk events on potentially compromised identities and remediate those risks |
+| &check; | Investigate security incidents thoroughly to understand the root cause and impact. Use the findings to improve threat detection and response strategies. |
+|  &check; | Define and test incident response plans. Ensure clear roles and responsibilities for handling security incidents. |
+
+## Data protection and privacy
+
+| Done? | Task |
+| :-----: | ---- |
+| &check; | Create DLP policies to control data flow between connectors and environments.Regularly review and update DLP policies to align with security requirements. |
+| &check; | Consider using customer-managed keys for additional control over encryption. |
+| &check; | Incorporate privacy considerations into the design and development of applications. Ensure privacy is a fundamental aspect of your development process.|
+| &check; | Configure tenant isolation to control and restrict data access between different tenants. |
+| &check; | Evaluate and configure network security features like IP firewall, Virtual Network. |
+| &check; | Set up Microsoft Purview to discover, classify, and manage sensitive data across your Power Platform environment. |
+| &check; | Use Dataverse's built-in RBAC security model to manage user permissions and access to data effectively. Implement field-level security, hierarchical security, and team-based security to enhance data protection. |
+
+## Identity and access management
+
+| Done? | Task |
+| :-----: | ---- |
+| &check; | Create an identity management strategy that covers user access, service accounts, application users, federation requirements for single sign-on, and conditional access policies. |
+| &check; | Create administrative access policies for different admin roles on the platform, such as service admin and Microsoft 365 admin. |
+| &check; | Have the necessary controls to manage access to specific environments. |
+| &check; | Assign roles and permissions based on the principle of least privilege. Use security roles to manage access efficiently. | 
+
+## Compliance
+
+| Done? | Task |
+| :-----: | ---- |
+| &check; | Determine which regulatory standards apply to your organization (e.g., GDPR, HIPAA, CCPA, PCI DSS). Understand the specific requirements and obligations of each regulation. |
+| &check; | Utilize the Power Platform Admin Center and Microsoft Sentinel to track user activities. Conduct regular audits to detect anomalies and ensure compliance with regulatory standards. |
+| &check; | Educate makers and developers on regulatory requirements and compliance best practices. |
+| &check; | Maintain detailed records of compliance efforts, including policies, procedures, and audit logs. Ensure documentation is up to date and readily available for regulatory audits.|
+
+## Workload security
+
+| Done? | Task |
+| :-----: | ---- |
+| &check; | Apply security guidance to your architecture to guard confidentiality, integrity, and availability of your data and systems. Review [security recommendations](/power-platform/well-architected/security/) of the Power Platform Well-Architected guidance to ensure your workload is resilient to attacks and incorporates the interrelated security principles of confidentiality, integrity, and availability (also known as the CIA triad) in addition to meeting business goals. |

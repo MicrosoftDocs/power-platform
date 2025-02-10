@@ -29,7 +29,7 @@ The [Microsoft Sentinel](azure/sentinel/business-applications/solution-overview)
 - Investigate threats detected in Microsoft Power Platform and Power Apps and contextualize them with additional user activities across the organization.
 - Respond to Microsoft Power Platform-related and Power Apps-related threats and incidents in a simple and canned manner manually, automatically, or via a predefined workflow.
 
-The Microsoft Sentinel solution includes built-in threat coverage for the following scenarios that commonly encountered in business applications:
+The Microsoft Sentinel solution includes [built-in threat coverage](/azure/sentinel/business-applications/power-platform-solution-security-content#built-in-analytics-rules) for the following scenarios that commonly encountered in business applications:
 
 - Power Apps activity from an unauthorized geographic location
 - Access to malicious links through Power Apps
@@ -41,14 +41,15 @@ The Microsoft Sentinel solution includes built-in threat coverage for the follow
 
 The SecOps team can use the Microsoft Sentinel tools to investigate and respond to these incidents. The following screenshot shows an example of such an incident, a Power Automate flow that was created by a fired employee:
 
-:::image type="content" source="media/sentinel-example.png" alt-text="Microsoft Sentinel incident of a Power Automate cloud flow created by a fired employee.":::
+After setting up Microsoft Sentinel to collect Power Platform data, you can use [threat detection rules](/azure/sentinel/threat-detection) to run regularly query the collected data and analyze it to discover threats. Start by using the [built-in analytics rules](/azure/sentinel/business-applications/power-platform-solution-security-content#built-in-analytics-rules) to create these rules. These rules generate alerts when they find what they're looking for - alerts are then aggregated into incidents that you can assign and investigate. You can also build predetermined, automated responses into the rules' own configuration.
 
-The goal of Microsoft Sentinel solutions for business applications is to provide robust capabilities to detect, investigate, and disrupt threats. These solutions monitor for signals such as data exfiltration, unusual changes, unauthorized data access, insider threats, fraud, and anomalous activities. When such signals are detected, they trigger investigations that help SecOps teams better understand the threats through guided steps, context-enriched information, master data integration, threat hunting, cross-correlation, and data integrity impact analysis. Based on the findings, SecOps teams can take actions like blocking sensitive activities, restricting user or endpoint access, modifying permissions, alerting managers, running scanning tools, or performing data restores.
+:::image type="content" source="media/sentinel-example.png" alt-text="Microsoft Sentinel incident of a Power Automate cloud flow created by a fired employee.":::
 
 Learn more:
 
 - [Connect Microsoft Power Platform to Microsoft Sentinel](/azure/sentinel/business-applications/deploy-power-platform-solution)
-- [Security content reference for Microsoft Power Platform](/azure/sentinel/business-applications/power-platform-solution-security-content)
+- [Review the security content reference for Microsoft Power Platform](/azure/sentinel/business-applications/power-platform-solution-security-content)
+- [Configure threat detection rules](/azure/sentinel/threat-detection)
 
 ## Identity
 
@@ -60,17 +61,21 @@ Use Identity Protection risk detection API members to get programmatic access to
 
 Microsoft Entra ID uses adaptive machine learning algorithms, heuristics, and known compromised credentials (user name and password pairs) to detect suspicious actions that are related to your user accounts. These user name and password pairs are surfaced by monitoring the public and dark web and by working with security researchers, law enforcement, security teams at Microsoft, and others.
 
+## Activity logging
+
+[Power Apps](/power-platform/admin/logging-powerapps), [Power Automate](/power-platform/admin/logging-power-automate), [Copilot Studio](/microsoft-copilot-studio/admin-logging-copilot-studio), [Connectors](/power-platform/admin/connector-events-power-platform), [Power Pages](/power-platform/admin/logging-power-pages), [Data Loss Prevention](/power-platform/admin/dlp-activity-logging) and [Power Platform administrative](/power-platform/admin/admin-activity-logging) activity logging are tracked and viewed from the Microsoft Purview compliance portal. For more information, see [Learn about Microsoft Purview](/purview/purview).
+
+[Dataverse auditing](/power-platform/admin/manage-dataverse-auditing) logs changes that are made to customer records in an environment with a Dataverse database. Dataverse auditing also logs user access through an app or through the SDK in an environment. This auditing is enabled at the environment level, and additional configuration is required for individual tables and columns.
+
+From there, Microsoft Power Platform admins can use available applications such Microsoft Defender or Sentinel to monitor certain types of security threats or build audit reports using the available APIs.
+
+Having continuous, more holistic threat detection and the ability to apply preventative guardrails is essential to enable frictionless productivity while minimizing cyber risk.
+
 ## Threat analysis
 
 A comprehensive analysis to identify threats, attacks, vulnerabilities, and counter measures is crucial during the design phase of a workload. Threat modeling is an engineering exercise that includes defining security requirements, identifying, and mitigating threats, and validating those mitigations. You can use this technique at any stage of application development or production, but it's most effective during the design stages of new functionality.
 
 Learn more: [Recommendations for threat analysis](/power-platform/well-architected/security/threat-model#power-platform-facilitation)
-
-## Incident preparation and response
-
-Establish a comprehensive incident response plan that outlines the procedures for identifying, managing, and mitigating security incidents. This plan should include clear roles and responsibilities, communication protocols, and steps for containment, eradication, and recovery. Regular training and simulations can help ensure that all team members are familiar with the plan and can respond effectively in the event of an incident. Additionally, maintaining detailed logs and audit trails to investigate incidents and understand their impact. By being well-prepared and having a robust incident response strategy in place, you can minimize the damage caused by security breaches and quickly restore normal operations.
-
-Learn more: [Recommendations for security incident response](/power-platform/well-architected/security/incident-response)
 
 ## Resources
 

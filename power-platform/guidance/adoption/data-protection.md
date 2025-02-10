@@ -71,7 +71,11 @@ Power Platform service architecture lets you build end-to-end business app solut
 
 ### Network service tags
 
-Service tags represent groups of IP address prefixes from a service. You can use Power Platform service tags to control network access on network security groups, Azure Firewall, and user-defined routes. Service tags simplify the management of address changes and updates to network security rules. Refer to the [full list of available service tags](/azure/virtual-network/service-tags-overview#available-service-tags) to configure your network security rules.
+Microsoft Power Platform is a cloud-based service requiring connectivity to the internet. Microsoft published a set of Ips, host names, and service tags representing Power Platform services for you to allow access to. To limit the susceptibility of attacks, these values must be configured in the Firewalls or added to browser proxy settings to access the respective endpoints.
+
+A service tag represents a group of IP address prefixes from a given Azure service. Microsoft manages the address prefixes encompassed by the service tag and automatically updates the service tag as addresses change, minimizing the complexity of frequent updates to network security rules.
+
+Refer to the [full list of available service tags](/azure/virtual-network/service-tags-overview#available-service-tags) to configure your network security rules.
 
 Connectors require access to the outbound IP addresses in your datacenter region. If your environment or firewall blocks these addresses, the connectors will not function. While most connectors use HTTPS port 443, some may use other protocols. Check the specific requirements of the connectors you use. IP addresses and service tags vary based on the region and the environment where the app or flow is located. Refer to the [full list of Power Platform IP addresses and service tags](/connectors/common/outbound-ip-addresses#power-platform) to correctly set up your allow list.
 
@@ -127,6 +131,10 @@ Lockbox has these core capabilities:
 
 Once access is granted to Microsoft, any action taking place in the lockbox-protected database during the temporary access period is recorded and made available to your organization as SQL audit logs. You can export these logs to an Azure data lake for further analysis.
 
+## Control which apps are allowed in your environment
+
+Protect against data exfiltration by controlling which apps can run in your Dataverse environment. These safeguards prevent unauthorized removal of sensitive information, helping your business maintain continuity and comply with regulations. [Learn more about app access control](/power-platform/admin/control-app-access-environment).
+
 ## Protect sensitive information using data masking
 
 For scenarios that leverage PII such as credit card numbers or social security numbers, you can create [data masking rules](/power-platform/admin/create-manage-masking-rules) to ensure that your organization’s and customer’s sensitive data is protected. With data masking, also referred to as de-identification or obfuscation, sensitive data is replaced with masked strings, ensuring that the original values remain hidden. Only authorized users can access unmasked data, only one record at a time, ensuring that data is treated with utmost sensitivity. Safeguard your data by leveraging an existing, pre-defined rule, or creating your own as a solution.
@@ -165,8 +173,10 @@ In conclusion, ensuring robust security within Power Platform is a critical resp
 
 ## Next steps
 
+Configuring and setting up the identity and access management (IAM) policies in line with your organizations security posture ensures the security and integrity of your data and applications. Proper IAM policies help control who can access your Power Platform environment, what actions they can perform, and under what conditions. Well-defined IAM policies support compliance with regulatory requirements and help maintain a secure and efficient operational environment, safeguarding your organization's assets and sensitive information.
+
 > [!div class="nextstepaction"]
-> [Identity and Access management](dlp-strategy.md)
+> [Configure identity and access management](conditional-access.md.md)
 
 ## Resources
 
