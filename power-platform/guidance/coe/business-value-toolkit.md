@@ -4,7 +4,7 @@ description: The CoE Starter Kit now contains useful components for measuring an
 author: stjeffer
 ms.topic: conceptual
 ms.date: 08/07/2024
-ms.subservice: guidance
+ms.subservice: guidance-toolkit
 ms.author: stjeffer
 ms.reviewer: sericks
 search.audienceType: 
