@@ -30,18 +30,18 @@ ms.collection:
 # Move data across regions for Copilots and generative AI features
 Copilots and generative AI features in [Microsoft Power Platform](/power-platform/) and [Microsoft Dynamics 365](/dynamics365/) help you build apps, flows, and chatbots, analyze your data, summarize information, reply to messages, and generate ideas.
 
-However, Copilots and generative AI features aren't available in all regions and languages. In some cases, even where there is in region capacity, data must still move outside of the region for availability reasons. For this reason and depending on where your environment is hosted, you might need to allow data movement across regions to use them. This article explains how to do that.
+However, Copilots and generative AI features aren't available in all regions and languages. In some cases, even where there is in region capacity, data must still move outside of the region for availability reasons. For this reason and depending on where your environment is hosted, you might need to allow data movement across regions to use Copilots and generative AI features. This article explains how to do that.
 
 > [!NOTE]
 > Keep the following points in mind:
 > - Copilots and generative AI features that are generally available are turned on by default. However, you might need to allow data movement across regions to use all Copilot and generative AI features.
 > - If you don't allow data movement across regions, that doesn't turn off all Copilots and generative AI features. Copilots and generative AI features are allowed as capacity is made available in the region.
 
-## Regions where data is processed for copilots and generative AI features
+## Regions where data is processed for Copilots and generative AI features
 
-When you use Copilots and generative AI features, **your inputs (prompts) and outputs (results) might move outside of your region to the location where the generative AI feature is hosted**. We don't use your data to train, retrain, or improve Azure OpenAI Service foundation models. Learn more about product-specific Copilot availability, in the [Copilot international availability report](https://releaseplans.microsoft.com/en-US/availability-reports/?report=copilotproductreport).
+When you use Copilots and generative AI features, **your inputs (prompts) and outputs (results) might move outside of your region to the location where the generative AI feature is hosted**. We don't use your data to train, retrain, or improve Azure OpenAI Service foundation models. Learn more about product-specific Copilot availability in the [Copilot international availability report](https://releaseplans.microsoft.com/en-US/availability-reports/?report=copilotproductreport).
 
-The following table lists the regions where your Power Platform or Dynamics 365 environment is hosted and the corresponding regions where Azure OpenAI service and Bing search service are hosted:
+The following table lists the regions where your Power Platform or Dynamics 365 environment is hosted and the corresponding regions where Azure OpenAI service and Bing search service are hosted.
 
 | Region where your Power Platform or Dynamics 365 environment is hosted | Region where Azure OpenAI Service is hosted | Region where data is stored and processed for Bing Search | 
 |-------------------------|-------------------------|-------------------------|
@@ -59,7 +59,7 @@ The following table lists the regions where your Power Platform or Dynamics 365 
 
 ## Turn on data movement and Bing search for Copilots and generative AI features
 
-To turn on data movement across regions for copilots and generative AI features, you must consent to the terms of use in the Power Platform admin center. To grant consent, you must be a Power Platform administrator or Dynamics 365 administrator.
+To turn on data movement across regions and Bing search for copilots and generative AI features, you must consent to the terms of use in the Power Platform admin center. To grant consent, you must be a Power Platform administrator or Dynamics 365 administrator.
 
 # [New admin center](#tab/new)
 
