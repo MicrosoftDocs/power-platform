@@ -4,7 +4,7 @@ description: "Extend and modify the components of the Power Platform Center of E
 author: conorto
 ms.topic: conceptual
 ms.date: 08/02/2023
-ms.subservice: guidance
+ms.subservice: guidance-toolkit
 ms.author: conorto
 ms.reviewer: sericks 
 

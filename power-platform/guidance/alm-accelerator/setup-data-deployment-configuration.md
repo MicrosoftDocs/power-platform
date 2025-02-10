@@ -3,7 +3,7 @@ title: Deployment configuration guide
 description: Learn how to create the configuration files that automate the deployment of solutions to downstream environments with the ALM Accelerator for Power Platform.
 ms.topic: how-to
 ms.date: 04/10/2023
-ms.subservice: guidance
+ms.subservice: guidance-toolkit
 author: jenschristianschroder
 ms.author: jeschro
 ms.reviewer: sericks
