@@ -6,7 +6,7 @@ author: manuelap-msft
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/26/2024
-ms.subservice: guidance
+ms.subservice: guidance-toolkit
 ms.author: mapichle
 ms.reviewer: sericks
 search.audienceType: 

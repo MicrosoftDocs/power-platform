@@ -4,7 +4,7 @@ description: "The CoE Starter Kit is updated each month. Learn best practices fo
 author: stjeffer
 ms.topic: conceptual
 ms.date: 04/13/2023
-ms.subservice: guidance
+ms.subservice: guidance-toolkit
 ms.author: stjeffer
 ms.reviewer: sericks
 

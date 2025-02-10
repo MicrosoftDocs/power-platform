@@ -3,7 +3,7 @@ title: Configure deployment profiles
 description: Learn how to use deployment profiles to direct the ALM Accelerator for Power Platform how to connect to your Azure DevOps organization and to provide a default branching strategy for your solutions.
 ms.topic: how-to
 ms.date: 04/10/2023
-ms.subservice: guidance
+ms.subservice: guidance-toolkit
 author: jenschristianschroder
 ms.author: jeschro
 ms.reviewer: sericks

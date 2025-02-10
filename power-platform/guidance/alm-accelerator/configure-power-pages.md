@@ -3,7 +3,7 @@ title: Use the ALM Accelerator with Power Pages sites
 description: Learn how to use the ALM Accelerator for Power Platform to apply source-control strategies and automate builds and deployment for your Power Pages sites. 
 ms.topic: how-to
 ms.date: 04/10/2023
-ms.subservice: guidance
+ms.subservice: guidance-toolkit
 author: rajeevpentyala
 ms.author: rajeevpe
 ms.reviewer: sericks
