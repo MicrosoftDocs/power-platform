@@ -22,9 +22,8 @@ The Power Platform admin center provides the following capabilities.
 
 # [New admin center](#tab/new)
 
-|Feature  |Description  | Learn more |
+|Feature area  |Description  | Learn more |
 |---------|---------|----------------|
-| Home|     |    |
 |Actions | View recommendations about your Power Platform implementation. The recommendations enhance security, reliability, and overall health of your implementation.  |[Use Power Platform Advisor](power-platform-advisor.md)|
 | Manage |  Manage your environments, environment groups, and tenant settings.| - [Power Platform environments overview](environments-overview.md)<br>- [Environment groups](environment-groups.md)<br>- [Tenant settings](tenant-settings.md)<br>  |
 | Monitor | Measure and improve operational health metrics of resources built or deployed in Power Platform, such as apps. | [Monitor page (preview)](monitoring/monitoring-overview.md) |
@@ -36,7 +35,7 @@ The Power Platform admin center provides the following capabilities.
 
 # [Classic admin center](#tab/classic)
 
-|Feature  |Description  | Learn more |
+|Feature area  |Description  | Learn more |
 |---------|---------|----------------|
 |Environments | View, create, and manage your environments. Select an environment to see details and manage its setting. |[Manage environment settings](./admin-settings.md)|
 | Environment groups |  Similar to folders, _environment groups_ are designed to help administrators organize their flat list of environments into structured groups based on different criteria, such as business unit, project, and location | [Environment groups](environment-groups.md) |
