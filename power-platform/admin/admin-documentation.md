@@ -24,6 +24,7 @@ The Power Platform admin center provides the following capabilities.
 
 |Feature  |Description  | Learn more |
 |---------|---------|----------------|
+| Home|     |    |
 |Actions | View recommendations about your Power Platform implementation. The recommendatoins enhance security, reliability, and overall health of your implementation.  |[Use Power Platform Advisor](power-platform-advisor.md)|
 | Manage |  Manage your environments, environment groups, and tenant settings.| - [Power Platform environments overview](environments-overview.md)<br>- [Environment groups](environment-groups.md)<br>- [Tenant settings](tenant-settings.md)<br>  |
 | Monitor | Measure and improve operational health metrics of resources built or deployed in Power Platform, such as apps. | [Monitor page (preview)](monitoring/monitoring-overview.md) ]
