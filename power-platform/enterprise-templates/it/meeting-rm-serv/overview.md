@@ -5,7 +5,7 @@ author: ananthar-msft
 ms.author: ananthar
 ms.reviewer: ellenwehrle
 ms.topic: overview
-ms.date: 10/10/2024
+ms.date: 01/28/2025
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -24,7 +24,7 @@ The Meeting Room Services apps offer the following capabilities:
 
 You can further extend the capabilities of the Meeting Room Services template by customizing the apps to meet your organization's unique processing needs.
 
-The Meeting Room Services template is available in [Microsoft AppSource](<https://aka.ms/MeetingRoomServicesTemplate>).
+The Meeting Room Services template is available in [Microsoft AppSource](https://aka.ms/AccessMeetingRoomSvcsReqTemplate).
 
 ## Meeting Room Services components
 

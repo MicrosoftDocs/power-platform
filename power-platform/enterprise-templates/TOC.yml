@@ -152,7 +152,17 @@
     - name: Manage
       href: it/checklist/manage.md
     - name: Use
-      href: it/checklist/use.md   
+      href: it/checklist/use.md
+  - name: Parking Reservation
+    items:
+    - name: Overview
+      href: it/parking-reservation/overview.md
+    - name: Install and set up
+      href: it/parking-reservation/install-and-set-up.md
+    - name: Manage
+      href: it/parking-reservation/manage.md
+    - name: Use
+      href: it/parking-reservation/use.md   
 - name: Related content
   items:
   - name: Power Apps documentation

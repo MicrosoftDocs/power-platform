@@ -4,7 +4,7 @@ description: If you're using a pay-as-you-go plan, 3 meters determine how much y
 author: amiyapatr-zz
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 12/01/2024
+ms.date: 02/07/2025
 ms.subservice: admin
 ms.author: ampatra
 ms.reviewer: sericks 
@@ -33,7 +33,7 @@ When you choose to use pay-as-you-go, usage of Power Platform services is billed
 For detailed pricing information, see [Power Apps and Power Automate pricing.](https://powerapps.microsoft.com/pricing/)
 
 > [!NOTE]
-> In June 2022, we released a preview of the Power Platform requests meter. During this preview we will report on usage of Power Platform requests, however, we will not bill for this usage until we reach general availability (GA) for this meter. If you link an environment to an Azure subscription, users and flows in the environment can consume more than their entitled usage without being throttled or paying for overages.
+> In June 2022, we released a preview of the Power Platform requests meter. During this preview we report on usage of Power Platform requests, however, we'll not bill for this usage until we reach general availability (GA) for this meter. If you link an environment to an Azure subscription, users and flows in the environment can consume more than their entitled usage without being throttled or paying for overages.
 
 ### Power Apps per-app meter 
 
@@ -226,7 +226,7 @@ Dataverse pay-as-you-go meters let you pay for your usage of all three categorie
 
 When an environment is enabled for pay-as-you-go and linked to an Azure subscription, any storage consumption exceeding the allocated capacity is billed to Azure. If no capacity is allocated to the environment, all storage consumption is billed directly to Azure. For pay-as-you-go environments, the first 1 GB of Dataverse database storage and 1 GB of file storage are included at no charge. However, any log storage consumption is billed immediately. Log storage is utilized only if auditing is enabled for the environment.
 
-The measurement of usage for each category of Dataverse storage happens three times per day (90 measurements per month) at 08:00 UTC, 16:00 UTC, and 00:00 UTC. The usage snapshot in each 8-hour period is then multiplied by 1/90<sup>th</sup> to get the fractional usage of storage during the measurement period. This fractional usage is multiplied by the monthly per GB rate and shown in Azure Cost Management. The total amount is summed and billed based on the customer's Azure billing cycle.
+The measurement of usage for each category of Dataverse storage happens once per day (30 measurements per month) . The usage snapshot in each snapshot is then multiplied by 1/30<sup>th</sup> to get the fractional usage of storage during the measurement period. This fractional usage is multiplied by the monthly per GB rate and shown in Azure Cost Management. The total amount is summed and billed based on the customer's Azure billing cycle.
 
 > [!NOTE]
 > The prices shown in this example are illustrative only. Your organization's pricing may vary based on your contract with Microsoft.
