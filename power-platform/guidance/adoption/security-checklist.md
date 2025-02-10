@@ -1,6 +1,6 @@
 ---
-title: Manage your security posture
-description: Guidance for managing your Power Platform security posture
+title: Security checklist for key activities to secure your Power Platform environment
+description: Guidance for key activities to secure your Power Platform environment
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: conceptual
@@ -10,7 +10,9 @@ ms.reviewer: sericks
 ms.date: 02/28/2025
 ---
 
-# Checklist / Action Plan
+# Security checklist for key activities to secure your Power Platform environment
+
+This article provides a security checklist for key activities essential to maintaining a secure Power Platform environment. It summarizes the articles into this section into an action plan and covers activities such as data protection, threat detection, identity and access management, and compliance with regulatory standards. By following this checklist, administrators and security professionals can ensure that their Power Platform deployments are robust, resilient, and aligned with best practices. Whether you are setting up new environments or enhancing existing ones, this guide will help you implement effective security measures to protect your organization's data and applications.
 
 ## Security Posture Management
 

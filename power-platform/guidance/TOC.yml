@@ -75,10 +75,12 @@
               href: adoption/dlp-strategy.md
             - name: Configure identity and access management
               href: adoption/conditional-access.md
-            - name: Compliance
+            - name: Meet compliance requirements
               href: adoption/compliance.md
             - name: Secure the default environment
               href: adoption/secure-default-environment.md
+            - name: Review the security checklist
+              href: adoption/security-checklist.md
         - name: Govern
           items:
             - name: Designate a Power Platform admin
