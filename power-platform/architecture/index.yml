@@ -20,7 +20,7 @@ highlightedContent:
     # Card
     - title: Browse Power Platform architectures
       itemType: architecture
-      url: /azure/architecture/browse/?products=power-platform
+      url: ./reference-architecture-overview.md
     # Card
     - title: See what's new
       url: ./whats-new.md
@@ -29,26 +29,40 @@ highlightedContent:
     - title: Power Platform Well-Architected
       url: /power-platform/well-architected/
       itemType: how-to-guide
-    # Card
-    - title: Power Platform adoption guidance
-      url: /power-platform/guidance
-      itemType: how-to-guide
 # productDirectory section (optional)
 productDirectory:
   title: Architecting workloads on Power Platform
   items:
     # Card
-    - title: Reference and real-world architecture examples
+    - title: Fundamentals
       imageSrc: /media/common/i_best-practices.svg
       links:
-        - url: reference-architectures/ai-and-copilot-studio/architecture1.md
-          text: Architecture Example 1
-        - url: reference-architectures/ai-and-copilot-studio/architecture1.md
-          text: Architecture Example 2
-        - text: Architecture 3
-          url: reference-architectures/modern-applications/architecture3.md
-        - text: Architecture 4
-          url: reference-architectures/modern-applications/architecture4.md
+        - url: fundamentals/powerapps
+          text: Build Fluent UI with Power Apps
+        - url: fundamentals/powerapps
+          text: Distributed tracing
+        - text: End-to-end testing
+          url: fundamentals/powerapps
+    # Card
+    - title: Modern application architectures
+      imageSrc: /media/common/i_best-practices.svg
+      links:
+      - text: Document processing with AI Builder
+        url: modern-applications/document-processing-with-ai-builder/arch-example-document-processing-with-ai-builder.md
+      - text: Legacy data integration
+        url: modern-applications/legacy-data-integration/legacy-data-integration-solution.md
+      - text: Predictive data analsyis with Dataverse Fabric and Azure AI
+        url: modern-applications/Predictive-data-analysis-with-Dataverse-Fabric-and-Azure-AI/predictive-data-analysis-with-dataverse-fabric-and-azure-ai.md
+      - text: Enterprise Visual Vehicle Inspection Engine
+        url: modern-applications/enterprise-visual-vehicle-inspection-engine/evvie-power-cat-architecture.md
+    # Card
+    - title: AI + Copilot studio architectures
+      imageSrc: /media/common/i_best-practices.svg
+      links:
+      - text: Healthcare patient support agent
+        url: ai-and-copilot-studio/healthcare-patient-support-agent/healthcare-patient-support-agent-architecture.md
+      - text: Rental portal with AI Driven search agent
+        url: ai-and-copilot-studio/rental-portal-with-AI-driven-search-agent-and-payment-processing/rental-portal-with-ai-driven-search-agent-and-payment-processing.md
     # Card
     - title: Optimize your workload
       imageSrc: /media/common/i_architecture.svg
@@ -135,3 +149,11 @@ additionalContent:
           url: /training/paths/become-solution-architect/
         - title: Design Microsoft Power Platform solutions
           url: /training/paths/solution-architect-data/
+    - title: Build a strong Power Platform adoption strategy and consistent approach to workload design
+      items:
+      - title: Power Platform adoption guidance
+        url: power-platform/adoption/
+      - title: Power Platform Well-Architected
+        url: /power-platform/well-architected/
+      - title: Power Platform Well-Architected assessment
+        url: /training/paths/solution-architect-data/
