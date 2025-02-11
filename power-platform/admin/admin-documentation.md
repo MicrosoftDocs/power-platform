@@ -33,16 +33,16 @@ Legend:
 3. [Admin center links](#admin-center-links)
 4. [Power Platform page](#power-platform-page)
 
-## 1. Navigation pane
+### 1. Navigation pane
 Find what you need with the left navigation pane. You can easily navigate to Power Platform pages that help you deploy, manage, and secure you Power Platform implementation.
 
-## 2. Settings icon
+### 2. Settings icon
 Select the gear icon to perform tasks such as managing tenant settings, view your session details, and change the theme of the user interface.
 
-## 3. Admin center links
+### 3. Admin center links
 Easily navigate to related admin centers, such as the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home#/homepage), [Microsoft Entra admin center](https://entra.microsoft.com/#home), and [Power BI admin portal](https://dxt.powerbi.com/admin-portal/capacities?experience=power-bi). 
 
-## 4. Power Platform page
+### 4. Power Platform page
 Complete administrative functions on each Power Platform page.
 
 # [Classic admin center](#tab/classic)
