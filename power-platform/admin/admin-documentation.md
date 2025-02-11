@@ -3,7 +3,7 @@ title: Overview of the Power Platform admin center
 description: The Power Platform admin center is a unified portal for administrators to manage environments and settings.
 author: sericks007
 ms.topic: overview
-ms.date: 02/10/2025
+ms.date: 02/11/2025
 ms.author: sericks
 ---
 
@@ -15,6 +15,21 @@ The Power Platform admin center is also used by administrators of some Dynamics 
 
 > [!Note]
 > Power BI administrators use the Power BI admin portal (<https://app.powerbi.com>) to manage a Power BI tenant including the configuration of governance policies, usage monitoring, and provisioning of licenses, capacities, and organizational resources. Learn more about Power BI admin portal at [What is Power BI administration?](/power-bi/service-admin-administering-power-bi-in-your-organization).
+
+## Understand the user interface (UI)
+[The new and improved Power Platform admin center](new-admin-center.md) is designed with an outcome-driven approach, where all functionality is intuitively organized in pages based on administrative tasks. The new admin center isn't just task-oriented, it also helps you achieve specific outcomes and goals. The design focuses on providing an optimal user experience, catering to a wide range of stakeholders with varying needs.
+
+The classic Power Platform admin center is avaiable, and pages are organized according to functions.
+
+# [New admin center](#tab/new)
+
+:::image type="content" source="media/new-ppac-callouts.png" alt-text="The new and improved Power Platform admin center.":::
+
+# [Classic admin center](#tab/classic)
+
+:::image type="content" source="media/classic-ppac-callouts.png" alt-text="The classic Power Platform admin center.":::
+
+---
 
 ## Manage your environments and settings
 
