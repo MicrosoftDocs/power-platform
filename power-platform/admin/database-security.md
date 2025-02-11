@@ -119,8 +119,9 @@ The following table describes which resources each security role can author.
 
 ### Related content
 
-- [Grant users access](grant-users-access.md)  
-- [Control user access to environments: security groups and licenses](control-user-access.md)  
+- [Assign a security role to a user](assign-security-roles.md)  
+- [Security roles and privileges](security-roles-privileges.md)  
 - [How access to a record is determined](how-record-access-determined.md)
+- [Configure user security in an environment](database-security-configure.md)
 
 [!INCLUDE [footer-include](../includes/footer-banner.md)]
