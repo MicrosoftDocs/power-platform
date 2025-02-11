@@ -36,8 +36,6 @@ Select **Health** > **Service health** > **Dynamics 365** to see if there are is
 ### View service health history  
 Select **View history** in the upper-right corner to view the past 7 or the past 30 days of service. 
 
-On the [Power Platform admin center](https://admin.powerplatform.microsoft.com) home page dashboard, admins can add [Service health](admin-documentation.md#monitor-service-health) and [Message center](admin-documentation.md#message-center) cards for a quicker view of incidents and upcoming changes.
-
 ## Microsoft 365 service health
 You can see a snapshot of service health of your Microsoft services. Go to the [Microsoft 365 admin center](https://admin.microsoft.com/) and sign in using one of the Microsoft 365 admin roles that include service health monitoring. Learn more in [About admin roles](/microsoft-365/admin/add-users/about-admin-roles).  
 
