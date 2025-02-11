@@ -1,7 +1,7 @@
 ---
 title: Tenant-to-tenant migrations 
 description: Learn about the impact of migrating an environment from one tenant to another. 
-ms.date: 01/03/2025
+ms.date: 02/11/2025
 ms.topic: conceptual
 author: matapg007
 contributors:
@@ -24,6 +24,9 @@ The tenant-to-tenant migration feature allows you to transfer an environment fro
 
 ## Before you get started
 Be aware of the following notes before you get started with a tenant-to-tenant migration.
+
+> [!Note]
+> Tenant-to-tenant migrations will be supported on Managed Environments in the future.
 
 -	**Supported environment types:** Production and sandbox only.
 -	**Not supported environment types:** Default, developer, trial, and Teams environment types aren't supported. Government Community Cloud (GCC) to public clouds and vice versa aren't supported.
