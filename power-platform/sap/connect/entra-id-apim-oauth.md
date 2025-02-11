@@ -25,7 +25,7 @@ ms.date: 12/09/2024
 
 # Set up Microsoft Entra ID, Azure API Management, and SAP for SSO from SAP OData connector
 
-You can set up the Power Platform SAP OData connector to use Microsoft Entra ID credentials for single sign-on (SSO) to SAP. This allows your users to access SAP data in Power Platform solutions without having to sign in multiple times to multiple services while honoring their authorizations and assigned roles in SAP.
+You can set up the SAP OData connector for Power Platform to use Microsoft Entra ID credentials for single sign-on (SSO) to SAP. This allows your users to access SAP data in Power Platform solutions without having to sign in multiple times to multiple services while honoring their authorizations and assigned roles in SAP.
 
 This article walks you through the process, including setting up a trust between SAP and Microsoft Entra ID and configuring Azure API Management to convert the Microsoft Entra ID OAuth token to a SAML token that's used to make OData calls to SAP.
 
