@@ -26,10 +26,10 @@ The classic Power Platform admin center is avaiable and pages are organized acco
 :::image type="content" source="media/new-ppac-callouts.png" alt-text="The new and improved Power Platform admin center.":::
 
 Legend:
-1. Navigation pane
-2. Settings icon
-3. Admin center links
-4. Power Platform page
+1. [Navigation pane](#navigation-pane)
+2. [Settings icon](#settings-icon)
+3. [Admin center links](#admin-center-links)
+4. [Power Platform page](#power-platform-page)
 
 ## 1. Navigation pane
 Find what you need with the left navigation pane. You can easily navigate to Power Platform pages that help you deploy, manage, and secure you Power Platform implementation.
@@ -48,9 +48,9 @@ Complete administrative functions on each Power Platform page.
 :::image type="content" source="media/classic-ppac-callouts.png" alt-text="The classic Power Platform admin center.":::
 
 Legend:
-1. Navigation pane
-2. Settings icon
-3. Power Platform page
+1. [Navigation pane](#navigation-pane)
+2. [Settings icon](#settings-icon)
+3. [Power Platform page](#power-platform-page)
 
 ## 1. Navigation pane
 Find what you need with the left navigation pane. You can easily navigate to Power Platform pages that help you deploy, manage, and secure you Power Platform implementation.
