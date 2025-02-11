@@ -5,7 +5,7 @@ author: denise-msft
 ms.component: pa-maker
 ms.topic: conceptual
 ms.date: 08/24/2022
-ms.subservice: guidance
+ms.subservice: guidance-toolkit
 ms.author: demora
 ms.reviewer: tapanm
 search.audienceType: 

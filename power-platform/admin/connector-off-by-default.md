@@ -98,7 +98,7 @@ Get-PowerAppDlpConnectorBlockingPolicies
 
 Example: 
 ```powershell
-Get-PowerAppDlpConnectorBlockingPolicies -TenantId “8dfd3b6e-2fd1-42aC-a874-b1edc2db1531”
+Get-PowerAppDlpConnectorBlockingPolicies -TenantId “aaaabbbb-0000-cccc-1111-dddd2222eeee”
 ```
 
 The above cmdlet outputs the connectors that are blocked/allowed for the evaluation and the policyId. 
@@ -106,7 +106,7 @@ The above cmdlet outputs the connectors that are blocked/allowed for the evaluat
 **Create a new connector blocking policy for the tenant**
 
 ```powershell
-New-PowerAppDlpConnectorBlockingPolicy –TenantId “8dfd3b6e-2fd1-42ac-a874-b1edc2db1531” -ConnectorBlockingDefinition $connectorBlockingDefinition
+New-PowerAppDlpConnectorBlockingPolicy –TenantId “aaaabbbb-0000-cccc-1111-dddd2222eeee” -ConnectorBlockingDefinition $connectorBlockingDefinition
   Where $connectorBlockingDefinition = [pscustomobject] @{
     ConnectorSettings= @
       [pscustomobject] @{
@@ -126,13 +126,13 @@ New-PowerAppDlpConnectorBlockingPolicy –TenantId “8dfd3b6e-2fd1-42ac-a874-b1
 **Update the connector blocking policy for the tenant**
 
 ```powershell
-Set-PowerAppDlpConnectorBlockingPolicy -TenantId “8dfd3b6e-2fd1-42aC-a874-b1edc2db1531” -PolicyId “235d9cd9-edb1-4fe4-9a5a-e6eb2ba4ed80” -ConnectorBlockingDefinition $connectorBlockingDefinition
+Set-PowerAppDlpConnectorBlockingPolicy -TenantId “aaaabbbb-0000-cccc-1111-dddd2222eeee” -PolicyId “1aaaaaa1-2bb2-3cc3-4dd4-5eeeeeeeeee5” -ConnectorBlockingDefinition $connectorBlockingDefinition
 ```
 
 **Fetch the connector blocking policy using the policyId**
 
 ```powershell
-Get-PowerAppDlpConnectorBlockingPolicy -TenantId “8dfd3b6e-2fd1-42aC-a874-b1edc2db1531” -PolicyId “235d9cd9-edb1-4fe4-9a5a-e6eb2ba4ed80”
+Get-PowerAppDlpConnectorBlockingPolicy -TenantId “aaaabbbb-0000-cccc-1111-dddd2222eeee” -PolicyId “1aaaaaa1-2bb2-3cc3-4dd4-5eeeeeeeeee5”
 ```
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

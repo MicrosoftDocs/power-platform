@@ -5,13 +5,12 @@ ms.subservice: admin
 author: paulliew
 ms.author: paulliew
 ms.reviewer: sericks
-ms.custom:
-  - "admin-security"
-  - bap-template
+ms.custom: bap-template, NEWPPAC
 ms.topic: conceptual
-ms.date: 08/08/2024
+ms.date: 02/07/2025
 contributors:
-- shahzorkhan123
+  - srpoduri 
+  - shahzorkhan123
 
 ---
 
@@ -40,8 +39,6 @@ After you've [created a security role](create-edit-security-role.md#create-a-sec
 - **Team privileges only**: A user is granted these privileges as a member of a team. Team members who don't have user privileges of their own can create records with the team as the owner. They can access records that the team owns if they're given the **User** access level for Create and Read privileges.
 
 - **Direct User (Basic) access level and Team privileges**: A user is granted these privileges directly when the security role is assigned. Users can create records with themselves as the owner. They can access records that they created or owned when the **User** access level for Create and Read privileges was given to them. This setting is the default for new security roles.
-
-  :::image type="content" source="media/members-privilege-inheritance.png" alt-text="Screenshot of the Member's privilege inheritance option in the security role editor.":::
 
 Then, configure the privileges associated with the security role.
 
@@ -162,6 +159,66 @@ The following table describes the permission setting groups that you can assign.
 
 1. Select **Save**.
 
+### Add users to a security role
+You can add users to a security role through the modern UI. Follow these steps to add users to a security role.
+
+# [New admin center](#tab/new)
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. Select **Manage** in the navigation pane.
+1. In the **Manage** pane, select **Environments**. Then select an environment.
+1. Select **Settings** in the command bar. The **Settings** page for that environment is dispalyed.
+1. Select **Users + Permissions** > **Security roles**.
+1. Select a security role and then select the **More actions** (**...**) icon.
+1. Select **Members** in the menu that appears.
+1. In the **Members** page, select the **+ Add people** option at the top of the page.
+1. In the **Add people** pane, enter a name, email address, or team name to search for the users you want to add to the security role.
+1. Select **Add** to add those users to the security role.
+
+# [Classic admin center](#tab/classic)
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. Select **Environments** in the navigation pane, and then select an environment.
+1. Select **Settings** in the command bar. The **Settings** page for that environment is dispalyed.
+1. Select **Users + Permissions** > **Security roles**.
+1. Select a security role and then select the **More actions** (**...**) icon.
+1. Select **Members** in the menu that appears.
+1. In the **Members** page, select the **+ Add people** option at the top of the page.
+1. In the **Add people** pane, enter a name, email address, or team name to search for the users you want to add to the security role.
+1. Select **Add** to add those users to the security role.
+
+---
+
+### Remove users from a security role
+You can remove users from a security role through the modern UI. Follow these steps to remove users from a security role.
+
+# [New admin center](#tab/new)
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. Select **Manage** in the navigation pane.
+1. In the **Manage** pane, select **Environments**. Then select an environment.
+1. Select **Settings** in the command bar. The **Settings** page for that environment is dispalyed.
+1. Select **Users + Permissions** > **Security roles**.
+1. Select a security role and then select the **More actions** (**...**) icon.
+1. Select **Members** in the menu that appears.
+1. In the **Members** page, select the users you want to remove from the security role.
+1. Select **Remove** at the top of the page.
+1. The **Remove from role?** window appears, asking you to confirm that you want privileges associated with that role removed for the selected user. Select **Remove**.
+
+# [Classic admin center](#tab/classic)
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. Select **Environments** in the navigation pane, and then select an environment.
+1. Select **Settings** in the command bar. The **Settings** page for that environment is dispalyed.
+1. Select **Users + Permissions** > **Security roles**.
+1. Select a security role and then select the **More actions** (**...**) icon.
+1. Select **Members** in the menu that appears.
+1. In the **Members** page, select the users you want to remove from the security role.
+1. Select **Remove** at the top of the page.
+1. The **Remove from role?** window appears, asking you to confirm that you want privileges associated with that role removed for the selected user. Select **Remove**.
+
+---
+
 ## Security roles and the legacy UI
 
 Security roles define how different users access different types of records. To control access to data and resources, you can create or modify security roles and change the security roles that are assigned to your users.
@@ -253,7 +310,7 @@ You can only select Basic-level privileges in the member's privilege inheritance
 > Since July 2024, the **Team member's privilege inheritance** attribute of a role is no longer a [managed property](../alm/use-managed-properties.md). When you import a solution that has security roles, this attribute isn't included. 
 
 ### Related information
-- [Video: Administer application users, security roles, teams, and users in the Power Platform admin center](https://www.microsoft.com/en-us/videoplayer/embed/RWJBr8)  
+- [Video: Administer application users, security roles, teams, and users in the Power Platform admin center](https://learn-video.azurefd.net/vod/player?id=5799c67e-f283-4cbd-aafa-bc38a3f53276)  
 - [Video: Check Access feature](https://youtu.be/rigZ1FvrgSY)  
 - [Predefined security roles](database-security.md#predefined-security-roles)
 

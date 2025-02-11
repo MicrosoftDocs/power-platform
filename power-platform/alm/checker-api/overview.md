@@ -174,7 +174,7 @@ AuthenticationResult tokenResult =
      await authBuilder.AcquireTokenInteractive(scopes).ExecuteAsync();
 ```
 
-For the full working code, see the Web API [QuickStart sample](https://github.com/microsoft/PowerApps-Samples/tree/master/dataverse/webapi/C%23-NETx/QuickStart).
+For the full working code, see the Web API [QuickStart sample](https://github.com/microsoft/PowerApps-Samples/tree/master/dataverse/webapi/CSharp-NETx/QuickStart).
 
 Once you have acquired the token, it's advised that you provide the same token to subsequent calls in the request lifecycle. However, more requests may warrant a new token be acquired for security reasons.
 

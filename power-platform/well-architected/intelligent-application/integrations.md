@@ -11,7 +11,7 @@ ms.topic: conceptual
 
 # Integration options for intelligent application workloads
 
-Integration options for Microsoft Copilot Studio include Power Automate cloud flows, HTTP requests and connectors, and Bot Framework skills. These integrations enable Copilot to automate workflows, interact with external services, and enhance conversational capabilities. By using these options, you can streamline processes, improve efficiency, and provide a seamless user experience. Integrations ensure that Copilot can perform complex tasks, access necessary data, and respond intelligently to user inputs.
+Integration options for Microsoft Copilot Studio include Power Automate cloud flows, HTTP requests and connectors, and Bot Framework skills. These integrations enable agents to automate workflows, interact with external services, and enhance conversational capabilities. By using these options, you can streamline processes, improve efficiency, and provide a seamless user experience. Integrations ensure that the agent can perform complex tasks, access necessary data, and respond intelligently to user inputs.
 
 ## Key considerations
 
@@ -19,7 +19,7 @@ As you develop your workload and evaluate integration options, consider:
 
 - **Balancing configuration and custom development**: Determine when to use out-of-the-box configurations versus custom development to meet specific organizational needs.
 - **Monitoring and auditing**: Understand how to monitor and audit integrations to ensure compliance and performance.
-- **Understanding integration options**: Explore the available integration options using connectors and plugin actions in Copilot Studio.
+- **Understanding integration options**: Explore the available integration options using connectors and actions in Copilot Studio.
 
 ## Integration patterns
 
@@ -48,7 +48,7 @@ Endpoint performance is a critical factor that directly impacts the user experie
 
 Ensure that responses are timely and efficient when you're designing logic for your intelligent application workload, especially when integrating with Power Automate. Consider implementing strategies such as:
 
-- **Response time requirement**: Requiring Power Automate to respond to Copilot within 100 milliseconds, which necessitates highly optimized and efficient logic.
+- **Response time requirement**: Requiring Power Automate to respond to the agent within 100 milliseconds, which necessitates highly optimized and efficient logic.
 
 - **Evaluating execution speed**: If the logic can't be executed quickly enough within Power Automate or Copilot Studio, or if it involves complex operations better suited to code, consider offloading the logic to other services:
 
@@ -83,6 +83,6 @@ Integration patterns aren't exclusive and can be combined. Evaluate the integrat
 
 Power Automate offers extensive integration capabilities with over 1,000 native connectors and options to create custom connectors to your APIs. For a positive user experience, ensure that [cloud flows triggered from Copilot Studio](/microsoft-copilot-studio/advanced-use-flow) execute quickly, as they must return a response within 100 seconds to avoid timing out. 
 
-To optimize performance, consider [making HTTP requests](/microsoft-copilot-studio/authoring-http-node) or [using connectors directly](/microsoft-copilot-studio/advanced-connectors) from Copilot Studio, bypassing cloud flows when possible. Optimize your cloud flows and HTTP/connector requests by filtering results to return only essential data. Additionally, handle cloud flow timeouts by implementing parallel branches that return results within the 100-second limit, ensuring the copilot handles timeouts gracefully.
+To optimize performance, consider [making HTTP requests](/microsoft-copilot-studio/authoring-http-node) or [using connectors directly](/microsoft-copilot-studio/advanced-connectors) from Copilot Studio, bypassing cloud flows when possible. Optimize your cloud flows and HTTP/connector requests by filtering results to return only essential data. Additionally, handle cloud flow timeouts by implementing parallel branches that return results within the 100-second limit, ensuring the agent handles timeouts gracefully.
 
 These strategies help maintain efficient and responsive interactions in your intelligent application workload.

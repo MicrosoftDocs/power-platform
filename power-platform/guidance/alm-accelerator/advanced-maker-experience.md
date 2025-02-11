@@ -3,7 +3,7 @@ title: ALM Accelerator for Power Platform advanced maker experience
 description: Learn how advanced makers can use the ALM Accelerator for Power Platform.
 ms.topic: how-to
 ms.date: 04/12/2023
-ms.subservice: guidance
+ms.subservice: guidance-toolkit
 author: alvarezskinner
 manager: devkeydet
 ms.author: mapichle

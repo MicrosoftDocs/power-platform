@@ -42,8 +42,6 @@ This capability may be subject to usage limits or capacity throttling.
 
 The following are requirements to access the feature: 
 
-- Your pipeline environments must be in the United States region.
-
 - This feature is supported in the following languages: English, Chinese (Simplified), Czech, Danish, Dutch, Finnish, French, German, Greek, Italian, Japanese, Korean, Norwegian (Bokmål), Polish, Portuguese (Brazil), Russian, Spanish, Swedish, Thai, and Turkish. Copilot uses the language selected in **Settings > Power Apps settings > Language** in make.powerapps.com.
 
 - AI deployment notes must be enabled for your pipeline to use the Copilot leveraging AI models. To enable the feature:

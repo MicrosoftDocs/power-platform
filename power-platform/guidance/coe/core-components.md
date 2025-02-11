@@ -4,7 +4,7 @@ description: "The CoE Starter Kit core components provide the core to get starte
 author: manuelap-msft
 ms.topic: conceptual
 ms.date: 09/26/2024
-ms.subservice: guidance
+ms.subservice: guidance-toolkit
 ms.author: mapichle
 ms.reviewer: sericks
 search.audienceType: 
