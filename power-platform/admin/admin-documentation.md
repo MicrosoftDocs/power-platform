@@ -50,9 +50,9 @@ Complete administrative functions on each Power Platform page.
 :::image type="content" source="media/classic-ppac-callouts.png" alt-text="The classic Power Platform admin center.":::
 
 Legend:
-1. [Navigation pane](#1-navigation-pane)
-2. [Settings icon](#2-settings-icon)
-3. [Power Platform page](#3-power-platform-page)
+1. [Navigation pane](#1-navigation-pane-1)
+2. [Settings icon](#2-settings-icon-2)
+3. [Power Platform page](#3-power-platform-page-3)
 
 ## 1. Navigation pane
 Find what you need with the left navigation pane. You can easily navigate to Power Platform pages that help you deploy, manage, and secure you Power Platform implementation.
