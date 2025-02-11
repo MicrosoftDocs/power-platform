@@ -4,7 +4,7 @@ description: Administer customer engagement apps
 author: sericks007
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 09/03/2020
+ms.date: 02/11/2025
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
@@ -25,9 +25,6 @@ For example, many of these admin settings in the legacy web client...
 ![Environment settings.](media/environment-settings-mini.png)
 
 Use links on this page to manage organization-wide settings. App-specific settings will remain in the respective apps, and will be accessed through the respective app settings. More information about managing environment settings in the Power Platform admin center: [Manage environment settings](admin-settings.md) 
-
-### See also
-[Working with the admin portals](wp-work-with-admin-portals.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
