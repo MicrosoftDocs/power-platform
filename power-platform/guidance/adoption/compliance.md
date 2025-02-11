@@ -12,7 +12,7 @@ ms.date: 02/28/2025
 
 # Meet compliance requirements
 
-Every organization must comply with the legal and regulatory standards of the industry and region they operate in. They may also have more contractual requirements and corporate policies.
+Every organization must comply with the legal and regulatory standards of the industry and region they operate in. They might also have more contractual requirements and corporate policies.
 
 Regional, industry-wide, and organization-specific regulations are top of mind as the race towards AI adoption continues. With Power Platform, you can feel confident that your organization’s business applications and copilots are meeting [all compliance requirements](/power-platform/admin/wp-compliance-data-privacy) including assured visibility, granular traceability, and comprehensive audits.  
 
@@ -28,9 +28,9 @@ Learn more: [Manage compliance in the cloud at Microsoft Trust Center](https://w
 
 ## Personal data
 
-The European Union (EU) General Data Protection Regulation (GDPR) gives significant rights to individuals regarding their data. Refer to the Microsoft Learn General Data Protection Regulation Summary for an overview of GDPR, including terminology, an action plan, and readiness checklists to help you meet your obligations under GDPR when using Microsoft products and services.
+The European Union (EU) General Data Protection Regulation (GDPR) gives significant rights to individuals regarding their data. Refer to the [Microsoft Learn General Data Protection Regulation Summary](/compliance/regulatory/gdpr) for an overview of GDPR, including terminology, an action plan, and readiness checklists to help you meet your obligations under GDPR when using Microsoft products and services.
 
-You can learn more about GDPR and how Microsoft helps support it and our customers who are affected by it.
+You can learn more about GDPR and how Microsoft helps support it and our customers:
 
 - The [Microsoft Trust Center](/dynamics365/guidance/implementation-guide/security) provides general information, compliance best practices, and documentation helpful to GDPR accountability, such as Data Protection Impact Assessments, Data Subject Requests, and data breach notification.
 - The [Service Trust portal](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted) provides information about how Microsoft services help support compliance with GDPR.
@@ -50,22 +50,24 @@ Power Platform copilots and generative AI features follow a set of core security
 
 ## Dataverse auditing
 
-With Dataverse audit capabilities in the Power Platform admin center, you can dive deeper with comprehensive logging capabilities, including admin, maker, and user activity logs, all critical for identifying potential security threats. By monitoring unusual activity, such as a sudden surge in login attempts or changes to security settings, you can easily detect and respond to attacks before they escalate. 
+With Dataverse audit capabilities in the Power Platform admin center, you can dive deeper with comprehensive logging capabilities, including admin, maker, and user activity logs, all critical for identifying potential security threats. By monitoring unusual activity, such as a sudden surge in sign in attempts or changes to security settings, you can easily detect and respond to attacks before they escalate.
 
 [Microsoft Purview](/purview/register-scan-dataverse?) supports detailed auditing across Power Platform, including Copilot Studio events, to meet compliance requirements. It allows customized audit logs and provides detailed reports for AI-driven scenarios, enhancing security and compliance.
 
-Moreover, to meet your enterprise’s compliance requirements with greater granularity, Dataverse offers robust data logging capabilities within [managed security](/power-platform/admin/security/managed-security). This feature is essential for investigating security incidents and is designed to meet the external and internal auditing, compliance, security, and governance policies that are common to many enterprises. You can easily customize your Dataverse audit for a variety of entities and fields to ensure that you have comprehensive visibility into your data interactions, helping to maintain a secure and compliant environment.
+Moreover, to meet your enterprise’s compliance requirements with greater granularity, Dataverse offers robust data logging capabilities within [managed security](/power-platform/admin/security/managed-security). This feature is essential for investigating security incidents and is designed to meet the external and internal auditing, compliance, security, and governance policies that are common to many enterprises. You can easily customize your Dataverse audit for various entities and fields to ensure that you have comprehensive visibility into your data interactions, helping to maintain a secure and compliant environment.
 
 :::image type="content" source="media/sec-envauditing.png" alt-text="Environment auditing":::
 
-## Understand security requirements
+## Understand security and compliance requirements
 
 As Microsoft's customer, you must identify which controls apply to your business and understand how to implement and configure them to manage security and compliance with the legal and regulatory requirements of your nation, region, and industry. Understand the key requirements for the Power Platform workloads you're implementing. Ask yourself the following questions to help identify the security measures to address.
 
-- What data residency requirements apply to the data used in the intelligent application workload? Do you know where your data will reside and if the location aligns with your legal or regulatory obligations?
+- What data residency requirements apply to the data used in the intelligent application workload? Do you know where your data resides and if the location aligns with your legal or regulatory obligations?
 - What regulatory and compliance requirements must be met for the intelligent application workload?
-- How will ethical considerations and responsible AI practices be incorporated into the intelligent application workload?
+- How are ethical considerations and responsible AI practices incorporated into the intelligent application workload?
 - How do you ensure secure and seamless user authentication?
+- Are you properly handling personal and sensitive information with encryption and role-based access?
+- What is the nature and sensitivity of the data used in this solution?
 
 Learn more: [Regulatory compliance standards and Microsoft products](https://www.microsoft.com/trust-center/compliance/compliance-overview?rtc=1).
 
@@ -83,5 +85,5 @@ Train employees on data protection best practices and the importance of adhering
 
 - [Compliance and data privacy](/power-platform/admin/wp-compliance-data-privacy)
 - [Microsoft Trust Center](https://www.microsoft.com/trustcenter)
-- [Responding to Data Subject Requests requests](/power-platform/admin/about-privacy)
+- [Data Subject Requests](/power-platform/admin/about-privacy)
 - [Copilot Studio GDPR compliance](/microsoft-copilot-studio/personal-data-summary)

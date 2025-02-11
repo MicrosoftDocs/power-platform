@@ -71,7 +71,7 @@
               href: adoption/threat-detection.md
             - name: Establish data protection and privacy controls
               href: adoption/data-protection.md
-            - name: Establishing a DLP strategy
+            - name: Implement a DLP strategy
               href: adoption/dlp-strategy.md
             - name: Configure identity and access management
               href: adoption/conditional-access.md
