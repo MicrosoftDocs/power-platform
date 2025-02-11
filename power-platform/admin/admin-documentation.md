@@ -19,7 +19,7 @@ The Power Platform admin center is also used by administrators of some Dynamics 
 ## Understand the user interface (UI)
 [The new and improved Power Platform admin center](new-admin-center.md) is designed with an outcome-driven approach, where all functionality is intuitively organized in pages based on administrative tasks. The new admin center isn't just task-oriented, it also helps you achieve specific outcomes and goals. The design focuses on providing an optimal user experience, catering to a wide range of stakeholders with varying needs.
 
-The classic Power Platform admin center is avaiable, and pages are organized according to functions.
+The classic Power Platform admin center is avaiable and pages are organized according to functions.
 
 # [New admin center](#tab/new)
 
