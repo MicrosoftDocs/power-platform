@@ -1,24 +1,50 @@
 - name: Microsoft Power Platform Architecture Center
   href: ./index.yml
   items:
-    - name: Browse Power Platform Architectures
-      href: /azure/architecture/browse/?products=power-platform
+    - name: Overview
+      href: overview.md
     - name: What's new
       href: whats-new.md
+    - name: Architecture fundamentals
+      items:
+      - name: Introduction
+        href: fundamentals-introduction.md
+      - name: Testing 
+        href: testing.md
+      - name: Building Fluent UI Power Apps
+        href: fluent.md
     - name: Reference architectures
       items:
       - name: AI + Copilot studio
         items:
-          - name: Architecture 1
-            href: reference-architectures/ai-and-copilot-studio/architecture1.md
-          - name: Architecture 2
-            href: reference-architectures/ai-and-copilot-studio/architecture2.md
+          - name: Overview
+            href: ai-and-copilot-studio/overview.md
+          - name: Architectures
+            items: 
+            - name: Security architecture pattern
+              href: ai-and-copilot-studio/architecture1.md
+          - name: Solution ideas
+            items:
+            - name: Healthcare patient support agent
+              href: ai-and-copilot-studio/healthcare-patient-support-agent/healthcare-patient-support-agent-architecture.md
+            - name: Rental portal with AI Driven search agent
+              href: ai-and-copilot-studio/rental-portal-with-AI-driven-search-agent-and-payment-processing/rental-portal-with-ai-driven-search-agent-and-payment-processing.md
       - name: Modern applications
         items:
-          - name: Architecture 3
-            href: reference-architectures/modern-applications/architecture3.md
-          - name: Architecture 4
-            href: reference-architectures/modern-applications/architecture4.md
+          - name: Overview
+            href: modern-applications//overview.md
+          - name: Architectures
+            items: 
+            - name: Document processing with AI Builder
+              href: modern-applications/document-processing-with-ai-builder/arch-example-document-processing-with-ai-builder.md
+            - name: Legacy data integration
+              href: modern-applications/legacy-data-integration/legacy-data-integration-solution.md
+            - name: Predictive data analsyis with Dataverse Fabric and Azure AI
+              href: modern-applications/Predictive-data-analysis-with-Dataverse-Fabric-and-Azure-AI/predictive-data-analysis-with-dataverse-fabric-and-azure-ai.md
+          - name: Solution ideas
+            items:
+            - name: Enterprise Visual Vehicle Inspection Engine
+              href: modern-applications/enterprise-visual-vehicle-inspection-engine/evvie-power-cat-architecture.md
     - name: Power Platform icons
       href: /power-platform/guidance/icons?toc=/power-platform/architecture/toc.json&bc=/power-platform/architecture/breadcrumb/toc.json
     - name: Microsoft Power Platform Well-Architected
