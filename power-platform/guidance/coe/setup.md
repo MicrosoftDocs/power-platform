@@ -5,7 +5,7 @@ author: Grant-Archibald-MS
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 10/02/2024
-ms.subservice: guidance
+ms.subservice: guidance-toolkit
 ms.author: grarchib
 ms.reviewer: sericks
 search.audienceType: 
