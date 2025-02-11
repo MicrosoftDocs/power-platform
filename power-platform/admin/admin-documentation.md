@@ -5,6 +5,8 @@ author: sericks007
 ms.topic: overview
 ms.date: 02/11/2025
 ms.author: sericks
+ms.custom: NewPPAC
+
 ---
 
 # Overview of the Power Platform admin center
@@ -100,31 +102,7 @@ The Power Platform admin center provides the following capabilities.
 
 ---
 
-## Personalize your Home page
-
-You can personalize your **Home** page by selecting a theme, setting your language, and timezone from the **Settings** gear.
-
-To personalize your dashboard, select **+ Add cards** on top of the homepage and drag any card onto the dashboard to the location you want.
-
-:::image type="content" source="media/home-page.png" alt-text="Power Platform admin center Home page":::
-
-The following are the cards you can add to the dashboard.
-
-### Monitor service health
-
-This card shows whether your Microsoft services are healthy, or if they're experiencing an active advisory or incident. For more info about an advisory or incident, select it to open the **Service health** page of the Microsoft 365 admin center.
-
-### Message center
-
-This card helps you manage upcoming changes to our Microsoft services. Select a post to open it in the details panel. To view the full list of messages across all Microsoft services, select **Show all**. [More info about the message center](/office365/admin/manage/message-center).
-
-### Resources for documentation and training
-
-This card provides links to related documentation and information sources.
-
 ### Related content
-
-[Working with various admin portals](wp-work-with-admin-portals.md) <br />
 [Training: Microsoft Power Platform Fundamentals](/training/paths/power-plat-fundamentals)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
