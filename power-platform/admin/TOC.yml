@@ -4,10 +4,8 @@
       items:
         - name: Admin documentation
           href: index.yml
-        - name: Overview of the admin center
+        - name: Overview of the Power Platform admin center
           href: admin-documentation.md
-        - name: Work with various admin portals
-          href: wp-work-with-admin-portals.md
         - name: Get started
           items:
             - name: Role of a Power Platform administrator
