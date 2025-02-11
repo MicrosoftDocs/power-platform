@@ -524,7 +524,7 @@
                   href: wp-security-cds.md
                 - name: System and application users
                   href: system-application-users.md
-                - name: User security
+                - name: Role-based security roles
                   href: database-security.md
                 - name: Configure user security in an environment
                   href: database-security-configure.md
