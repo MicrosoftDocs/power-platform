@@ -24,10 +24,14 @@ The following are a few goals and the stakeholders you will need to have a conve
 - **Operations Management**: Improve operational efficiency and reduce costs by automating routine tasks and optimising business processes.
 - **IT Leadership**: Ensure the successful implementation and governance of the Power Platform, providing a secure and scalable environment for all users.
 
-## Next steps
+## Common goals
 
-Explore common goals, the reasons behind them, and the methods to achieve them.
+Take a moment to review common goals and find inspiration for which goal best aligns with your vision.
 
-> [!div class="nextstepaction"]
-> [Establish a Center of Excellence with governance patterns and practices](establish-coe.md)
-
+- [Empower innovation and AI culture](empower-innovation.md)
+- [Nurture a maker and champion community](enable-maker-community.md)
+- [Enhance operational efficiency](enhance-opex.md)
+- [Establish a Center of Excellence with governance patterns and practices](establish-coe.md)
+- [Get leadership buy-in and organization alignment](get-leadership-buyin.md)
+- [Improve employee experience](improve-employee-ex.md)
+- [Measure value and realize return of investment](realize-value.md)

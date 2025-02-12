@@ -179,6 +179,8 @@ Choosing the best value measurement method and tool involves considering several
 
 ### Value measurement at scale
 
+Here are the recommended methods for measuring business value at scale depending on the use case:
+
 | Use case | Characteristics | Identification | Methodology |
 | --- | --- | --- | --- |
 | Everbody | Large number of users, smallest number of solutions | Metadata and telemetry | [Business value toolkit](#business-value-toolkit) |
@@ -236,14 +238,14 @@ Learn more:
 
 ### Audience analysis
 
-Different audiences have varying perspectives on business value, making it crucial to tailor your communication to each group. For example:
+Different audiences have varying perspectives on business value, making it important to tailor your communication to each group. For example:
 
 - **IT Department**: Focus on cybersecurity, scalability, and technology adoption.
 - **Finance Department**: Highlight cost savings, financial ROI, and investment justification.
 - **Marketing Department**: Emphasize customer engagement and brand reputation.
 - **Operations Department**: Stress process efficiency, productivity, and reduced downtime.
 
-While communicating value is important, tailoring the message to the audience is even more critical. Analyzing your audience involves understanding who the key stakeholders are, their roles and responsibilities, and their preferred methods of receiving information. This ensures that your communications are effective and create a strong connection with your audience.
+While communicating value is important, tailoring the message to the audience is even more important. Analyzing your audience involves understanding who the key stakeholders are, their roles and responsibilities, and their preferred methods of receiving information. This ensures that your communications are effective and create a strong connection with your audience.
 
 #### Key considerations
 

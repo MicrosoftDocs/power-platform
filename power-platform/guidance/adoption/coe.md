@@ -56,7 +56,7 @@ Governance is a cornerstone of a successful Power Platform Center of Excellence 
 Learn more:
 
 <!-- TODO link to overview pages of each section -->
-- [Secure](coe.md)
+- [Secure](secure-overview.md.md)
 - [Govern](coe.md)
 - [Operate](coe.md)
 
@@ -68,6 +68,7 @@ To maximize the impact of Power Platform, the CoE should offer comprehensive tra
 - **Documentation and resources**: Creating a comprehensive library of documentation and resources is crucial for ongoing user support. This includes detailed guides, step-by-step tutorials, FAQs, and troubleshooting tips. Well-organized and easily accessible documentation helps users find answers to their questions quickly and efficiently. Additionally, providing templates, sample applications, and code snippets can accelerate the development process and inspire users to create their own solutions.
 - **Community of Practice**: Establishing a community of practice fosters collaboration and knowledge sharing among users. This can be achieved by setting up forums, user groups, and online communities where employees can ask questions, share their experiences, and collaborate on projects. Regularly scheduled meetups, webinars, and hackathons can further encourage engagement and innovation. By creating a supportive community, the CoE can help users stay motivated, learn from each other, and continuously improve their skills.
 
+<!-- TODO update when the nurture and ready sections are updated -->
 Learn more: [Nurture best practices](nurture-best-practices.md)
 
 ## Foster innovation and continuous improvement

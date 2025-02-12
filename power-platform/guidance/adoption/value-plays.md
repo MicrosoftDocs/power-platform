@@ -19,7 +19,7 @@ ms.date: 02/28/2025
 1. **Identify high-impact use cases**: Look for scenarios where Power Platform can address critical business challenges or opportunities. These use cases should have the potential to deliver substantial benefits, such as improving efficiency, enhancing customer satisfaction, or driving innovation.
 1. **Define clear objectives and metrics**: Establish specific goals for each Value Play and identify the metrics that will be used to measure success. This could include tangible metrics like cost savings and time efficiency, as well as intangible metrics like stakeholder alignment and user satisfaction.
 1. **Execute and iterate**: Implement the Value Play by developing and deploying solutions using Power Platform. Continuously gather feedback and iterate on the solution to ensure it meets the defined objectives and delivers the expected value.
-1. **Measure and communicate Results**: Collect data to measure the impact of the Value Play. Use tools like Power BI to analyze and visualize the results. Communicate the outcomes to stakeholders through clear and concise reports, highlighting both the tangible and intangible benefits achieved.
+1. **Measure and communicate results**: Collect data to measure the impact of the Value Play. Use tools like Power BI to analyze and visualize the results. Communicate the outcomes to stakeholders through clear and concise reports, highlighting both the tangible and intangible benefits achieved.
 
 At a high level, you’ll also need to monitor key value measures or key results to demonstrate ROI at the Power Platform level. This involves tracking metrics that reflect the overall impact of Power Platform on your organization, such as:
 
@@ -53,11 +53,6 @@ These Value Plays are not intended to be an exhaustive list but rather a startin
 ## The Innovation Accelerator
 
 Power Platform lets you co-design, test, deploy and iterate faster than any other development method.
-
-| | | |
-|-------|-------|-------|
-| Value A | Value B | Value C |
-| Value D | Value E | Value F |
 
 :::row:::
    :::column span="":::
@@ -174,7 +169,7 @@ Share insightful solution case studies & maker success stories that bring to lif
      **Tangibles & intangibles**
    :::column-end:::
    :::column span="2":::
-    # article readers / comments
+    number of article readers / comments
     Increased Platform adoption
     Increased training or Platform Community participation
    :::column-end:::
