@@ -4,7 +4,7 @@ description: This article provides information about Microsoft Power Platform an
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/25/2023
+ms.date: 02/12/2025
 ms.subservice: admin
 ms.author: sericks
 ms.contributors:
@@ -58,7 +58,7 @@ As customer tenants are selected for transition, notifications will be distribut
 
 Existing workloads aren't expected to require customer reconfiguration or updates. However, we understand that some of our customers apply firewall filters that are sensitive to recognizable IPs. In this case, the configurations must be reviewed to ensure that the IP ranges in the following downloadable JSON file are configured as trusted Azure operated by 21Vianet IP ranges:
 
-[Download Azure IP Ranges and Service Tags – China Cloud from Official Microsoft Download Center](https://www.microsoft.com/download/confirmation.aspx?id=57062)
+[Download Azure IP Ranges and Service Tags – China Cloud from Official Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=57062)
 
 In this JSON file, the Business Applications engineering team recommends a focused review of defined IP filtering that's related to the following tags:
 
