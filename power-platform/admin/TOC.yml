@@ -4,10 +4,8 @@
       items:
         - name: Admin documentation
           href: index.yml
-        - name: Overview of the admin center
+        - name: Overview of the Power Platform admin center
           href: admin-documentation.md
-        - name: Work with various admin portals
-          href: wp-work-with-admin-portals.md
         - name: Get started
           items:
             - name: Role of a Power Platform administrator
@@ -526,7 +524,7 @@
                   href: wp-security-cds.md
                 - name: System and application users
                   href: system-application-users.md
-                - name: User security
+                - name: Role-based security roles
                   href: database-security.md
                 - name: Configure user security in an environment
                   href: database-security-configure.md
