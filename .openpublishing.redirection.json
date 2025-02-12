@@ -1159,8 +1159,8 @@
       "redirect_url": "/troubleshoot/power-platform/dataverse/email-exchange-synchronization/troubleshooting-monitoring-server-side-synchronization"
     },
     {
-      "source_path": "power-platform/guidance/coe/setup-auditlog-troubleshooting.md",
-      "redirect_url": "/troubleshoot/power-platform/dataverse/auditing/setup-auditlog-troubleshooting"
+      "source_path": "power-platform/admin/data-integrator-error-management.md",
+      "redirect_url": "/troubleshoot/power-platform/dataverse/data-integration/data-integrator-error-management"
     }    
   ]
 }
