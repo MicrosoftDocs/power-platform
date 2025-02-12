@@ -4,7 +4,7 @@ description: Learn how to turn on data movement across regions for Copilots and 
 author: amchern
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/07/2025
+ms.date: 02/12/2025
 ms.subservice: admin
 ms.author: amchern
 ms.reviewer: sericks
@@ -42,7 +42,7 @@ However, Copilots and generative AI features aren't available in all regions and
 
 When you allow data movement across regions, **your inputs (prompts) and outputs (results) might move outside of your region to the location where the generative AI feature is hosted**. We don't use your data to train, retrain, or improve Azure OpenAI Service foundation models. Learn more about product-specific Copilot availability in the [Copilot international availability report](https://releaseplans.microsoft.com/en-US/availability-reports/?report=copilotproductreport).
 
-Based on in region capacity and whether the allow data movement across regions has been toggled to true, the following table lists the regions where your Power Platform or Dynamics 365 environment is hosted and the corresponding regions where Azure OpenAI service and Bing search service are hosted. 
+The following table lists the regions where your Power Platform or Dynamics 365 environment is hosted and the corresponding regions where the Azure OpenAI service and Bing search service are hosted. 
 
 | Region where your Power Platform or Dynamics 365 environment is hosted | Region where Azure OpenAI Service is hosted | Region where data is stored and processed for Bing Search | 
 |-------------------------|-------------------------|-------------------------|
