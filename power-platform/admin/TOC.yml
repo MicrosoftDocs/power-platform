@@ -160,8 +160,6 @@
                   href: copy-environment.md
                 - name: Back up and restore environment
                   href: backup-restore-environments.md
-                - name: Troubleshoot missing environments
-                  href: troubleshoot-missing-environments.md
                 - name: Business continuity and disaster recovery
                   href: business-continuity-disaster-recovery.md
                 - name: Edit environment properties
@@ -668,8 +666,6 @@
                   href: /powerapps/user/view-your-user-profile
                 - name: Create an administrative user
                   href: prevent-elevation-security-role-privilege.md
-                - name: Troubleshoot user access issues
-                  href: troubleshooting-user-needs-read-write-access-organization.md
                 - name: Manage user account synchronization
                   href: manage-user-account-synchronization.md
                 - name: Hierarchy security to control access
@@ -884,8 +880,6 @@
           items:
             - name: Integrate data into Dataverse
               href: data-integrator.md
-            - name: Data Integrator Error management and troubleshooting
-              href: data-integrator-error-management.md
         - name: Data sources and gateway clusters
           items:
             - name: "About on-premises gateway"
@@ -956,8 +950,6 @@
               href: analyze-your-data-with-excel-templates.md
             - name: Word templates
               href: using-word-templates-dynamics-365.md
-            - name: Troubleshooting Word templates
-              href: troubleshoot-word-templates-dynamics-365.md
         - name: Integrate (synchronize) your email system
           items:
             - name: Overview
@@ -1054,10 +1046,6 @@
                           href: forward-mailbox-vs-individual-mailboxes.md
                         - name: Send email on behalf of another user
                           href: send-email-on-behalf.md
-                - name: Troubleshoot server-side synchronization
-                  items:
-                    - name: Troubleshoot server-side synchronization
-                      href: troubleshooting-monitoring-server-side-synchronization.md
                     - name: Monitor email processing errors
                       items:
                         - name: Monitor email processing errors
@@ -1097,16 +1085,6 @@
                       href: permissions-required-document-management-tasks.md
                 - name: Troubleshoot
                   items:
-                    - name: Troubleshooting server-based authentication
-                      href: troubleshooting-server-based-authentication.md
-                    - name: Troubleshooting conditional access authentication
-                      href: troubleshooting-conditional-access-authentication.md
-                    - name: Troubleshoot set up with SharePoint online
-                      href: troubleshoot-set-up-sharepoint-online.md
-                    - name: Troubleshooting document management issues
-                      href: troubleshoot-doc-management-issues.md
-                    - name: Known issues with document management
-                      href: doc-management-known-issues.md
                     - name: Switch from the list component
                       href: switching-list-component-changing-deployment.md
             - name: Manage Bing Maps
