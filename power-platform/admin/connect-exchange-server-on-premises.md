@@ -135,7 +135,7 @@ For more information about authentication, go to:
 
  In this example, there was a problem with the auto-discover server location feature. Review the username and password used for **Authentication Using Impersonation** for the Exchange Server (Hybrid) profile.  
 
- You can find information about recurring issues and other troubleshooting information in [Blog: Test and Enable Mailboxes in Microsoft Dynamics CRM 2015](https://cloudblogs.microsoft.com/dynamics365/no-audience/2015/08/31/test-and-enable-mailboxes-in-microsoft-dynamics-crm-2015/) and [Troubleshooting and monitoring server-side synchronization](troubleshooting-monitoring-server-side-synchronization.md).  
+ You can find information about recurring issues and other troubleshooting information in [Blog: Test and Enable Mailboxes in Microsoft Dynamics CRM 2015](https://cloudblogs.microsoft.com/dynamics365/no-audience/2015/08/31/test-and-enable-mailboxes-in-microsoft-dynamics-crm-2015/) and [Troubleshooting and monitoring server-side synchronization](/troubleshoot/power-platform/dataverse/email-exchange-synchronization/troubleshooting-monitoring-server-side-synchronization).  
 
 ## Configure default email processing and synchronization
 
@@ -245,7 +245,7 @@ You need to approve each user mailbox or queue before that mailbox can process e
 
 ### See also
 
- [Troubleshooting and monitoring server-side synchronization](troubleshooting-monitoring-server-side-synchronization.md)   
+ [Troubleshooting and monitoring server-side synchronization](/troubleshoot/power-platform/dataverse/email-exchange-synchronization/troubleshooting-monitoring-server-side-synchronization)   
  [Test mail flow with the Remote Connectivity Analyzer](https://technet.microsoft.com/library/dn305950\(v=exchg.150\).aspx)   
  [Server-side synchronization](server-side-synchronization.md)   
  [Autodiscover service](https://technet.microsoft.com/library/bb124251\(v=exchg.150\).aspx)   

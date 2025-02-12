@@ -253,7 +253,7 @@ Follow these steps:
   
 1. Click **Next**.  
   
-1. The validate sites section appears. If all sites are determined valid, click **Enable**. If one or more sites are determined invalid, see [Troubleshooting server-based authentication](../admin/troubleshooting-server-based-authentication.md).  
+1. The validate sites section appears. If all sites are determined valid, click **Enable**. If one or more sites are determined invalid, see [Troubleshooting server-based authentication](/troubleshoot/power-platform/power-apps/integrate-products/troubleshooting-server-based-authentication).  
   
 ### Select the entities that you want to include in document management  
 
@@ -291,7 +291,7 @@ $wellKnownApp.Update()
 >  To enable the Work email property, [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises must have a User Profile Service Application configured and started. To enable a User Profile Service Application in [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)], see [Create, edit, or delete User Profile service applications in SharePoint Server 2013](/SharePoint/install/create-a-user-profile-service-application). To make changes to a user property, such as Work email, see [Edit a user profile property](/SharePoint/administration/add-edit-or-delete-custom-properties-for-a-user-profile). For more information about the User Profile Service Application, see [Overview of the User Profile service application in SharePoint Server 2013](/SharePoint/install/user-profile-service-overview).  
   
 ### See also  
- [Troubleshooting server-based authentication](../admin/troubleshooting-server-based-authentication.md)   
+ [Troubleshooting server-based authentication](/troubleshoot/power-platform/power-apps/integrate-products/troubleshooting-server-based-authentication)   
  [Set up SharePoint integration with customer engagement apps](../admin/set-up-sharepoint-integration.md)
 
 

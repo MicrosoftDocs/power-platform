@@ -358,7 +358,7 @@ To see alerts for an individual mailbox, open the mailbox, and then under **Comm
   
 The result of the email configuration test is displayed in the **Incoming Email Status**, **Outgoing Email Status**, and **Appointments, Contacts, and Tasks Status** columns of a mailbox record. An alert is also generated when the configuration is successfully completed for a mailbox. This alert is shown to the mailbox owner.  
   
-You can find information about recurring issues and other troubleshooting information in [Blog: Test and Enable Mailboxes in Microsoft Dynamics CRM 2015](https://cloudblogs.microsoft.com/dynamics365/no-audience/2015/08/31/test-and-enable-mailboxes-in-microsoft-dynamics-crm-2015/) and [Troubleshooting and monitoring server-side synchronization](../admin/troubleshooting-monitoring-server-side-synchronization.md).  
+You can find information about recurring issues and other troubleshooting information in [Blog: Test and Enable Mailboxes in Microsoft Dynamics CRM 2015](https://cloudblogs.microsoft.com/dynamics365/no-audience/2015/08/31/test-and-enable-mailboxes-in-microsoft-dynamics-crm-2015/) and [Troubleshooting and monitoring server-side synchronization](/troubleshoot/power-platform/dataverse/email-exchange-synchronization/troubleshooting-monitoring-server-side-synchronization).  
   
 Make sure you've got a good connection to [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)] by running the [Microsoft Remote Connectivity Analyzer](https://testconnectivity.microsoft.com/). For information about what tests to run, see [Test mail flow with the Remote Connectivity Analyzer](https://technet.microsoft.com/library/dn305950\(v=exchg.150\).aspx).
   
@@ -407,7 +407,7 @@ Set-CrmRecord -conn $conn -CrmRecord $emailserverprofile
 
 ### See also
 
-[Troubleshooting and monitoring server-side synchronization](../admin/troubleshooting-monitoring-server-side-synchronization.md)   
+[Troubleshooting and monitoring server-side synchronization](/troubleshoot/power-platform/dataverse/email-exchange-synchronization/troubleshooting-monitoring-server-side-synchronization)   
 [Test mail flow by validating your connectors](/exchange/mail-flow-best-practices/test-mail-flow)   
 
 

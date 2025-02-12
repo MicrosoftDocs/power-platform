@@ -97,7 +97,7 @@ To set the synchronization method to none for nonproduction environments:
 ### See also
 
 [Server-side synchronization](../admin/server-side-synchronization.md)  
-[Troubleshooting server-side synchronization](../admin/troubleshooting-monitoring-server-side-synchronization.md)   
+[Troubleshooting server-side synchronization](/troubleshoot/power-platform/dataverse/email-exchange-synchronization/troubleshooting-monitoring-server-side-synchronization)   
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
