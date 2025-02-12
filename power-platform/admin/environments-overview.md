@@ -27,7 +27,7 @@ Each environment is created under a Microsoft Entra tenant, and its resources ca
 
 Every environment can have zero or one Microsoft Dataverse database, which provides storage for your apps and chatbots. Whether you can create a database for your environment depends on the license you purchase for Power Apps and your permissions within that environment. More information: [Pricing info](pricing-billing-skus.md)
 
-When you create an app in an environment, that app is only permitted to connect to the data sources that are also deployed in that same environment, including connections, gateways, flows, and Dataverse databases. For example, consider a scenario where you've created two environments named Test and Dev, and created a Dataverse database in each of the environments. If you create an app in the Test environment, it will only be permitted to connect to the Test database; it won't be able to connect to the 'Dev' database.
+When you create an app in an environment, that app is only permitted to connect to the data sources that are also deployed in that same environment, including connections, gateways, flows, and Dataverse databases. For example, consider a scenario where you've created two environments named Test and Dev, and created a Dataverse database in each of the environments. If you create an app in the Test environment, it only is permitted to connect to the Test database; it isn't able to connect to the 'Dev' database.
 
 You can also move resources between environments. More information: [Migrate resources](/powerapps/maker/data-platform/export-solutions)
 
@@ -186,9 +186,9 @@ To see the environment history:
 
 > [!NOTE]
 >
-> - Some actions such as Edit will show the edit as an action but not details of the action.
+> - Some actions such as Edit shows the edit as an action but not details of the action.
 > - Once an environment is completely deleted, environment history is also deleted. So, it might not be possible to know who deleted an environment after it's been hard deleted.
 
-### See also
+### Related content
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
