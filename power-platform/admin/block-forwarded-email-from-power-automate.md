@@ -63,7 +63,7 @@ azure-logic-apps/1.0 (workflow afa0fb167803450aa650267e95d43287; version
 **x-ms-mail-operation-type: Forward**
 ```
 
-As an admin, if you want to exempt flows (or apps) from the exfiltration due to a legitimate business scenario, use the workflow ID as part of the user-agent header. All other exception conditions offered by Exchange rules, such as sender address, remain available to exempt the legitimate business use cases from the blocking enforcement. For example:
+As an admin, if you want to exempt flows (or apps) from the exfiltration due to a legitimate business scenario, use the workflow ID or the x-ms-workflow-name as part of the user-agent header. All other exception conditions offered by Exchange rules, such as sender address, remain available to exempt the legitimate business use cases from the blocking enforcement. For example:
 
 :::image type="content" source="media/block-outbound-forwards-exception85.png" alt-text="Block outbound forwards exceptions.":::
 
