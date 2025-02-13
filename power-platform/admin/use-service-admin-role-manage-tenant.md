@@ -23,7 +23,7 @@ To help you administer environments and settings for the Microsoft Power Platfor
 There are two Power Platform related service admin roles you can assign to provide a high level of admin management.
 
 > [!NOTE]
-> These ([and other](database-security.md#predefined-security-roles)) admin roles only apply to [what you can do in the Power Platform admin center](admin-documentation.md#power-platform-admin-center-features). For example, Dynamics 365 Finance and Dynamics 365 Supply Chain Management are currently not managed in the Power Platform admin center.
+> These ([and other](database-security.md#predefined-security-roles)) admin roles only apply to [what you can do in the Power Platform admin center](admin-documentation.md). For example, Dynamics 365 Finance and Dynamics 365 Supply Chain Management are currently not managed in the Power Platform admin center.
 
 ## Dynamics 365 administrator
 

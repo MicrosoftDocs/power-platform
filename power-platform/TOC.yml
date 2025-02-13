@@ -25,7 +25,7 @@
           items:
             - name: Copilots and generative AI in Power Platform
               href: copilot.yml
-            - name: Turn on copilots and generative AI features
+            - name: Move data across regions for Copilots and generative AI features
               href: admin/geographical-availability-copilot.md
             - name: Responsible AI
               items:

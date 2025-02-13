@@ -4,10 +4,8 @@
       items:
         - name: Admin documentation
           href: index.yml
-        - name: Overview
+        - name: Overview of the Power Platform admin center
           href: admin-documentation.md
-        - name: Work with various admin portals
-          href: wp-work-with-admin-portals.md
         - name: Get started
           items:
             - name: Role of a Power Platform administrator
@@ -526,7 +524,7 @@
                   href: wp-security-cds.md
                 - name: System and application users
                   href: system-application-users.md
-                - name: User security
+                - name: Role-based security roles
                   href: database-security.md
                 - name: Configure user security in an environment
                   href: database-security-configure.md
@@ -579,7 +577,11 @@
                       - name: Connector classification
                         href: dlp-custom-connector-parity.md
                     - name: DLP for Power Automate
-                      href: prevent-data-loss.md
+                      items:
+                        - name: Overview
+                          href: prevent-data-loss.md
+                        - name: Identifying blocked flows
+                          href: identify-blocked-flows-data-policies.md
                     - name: DLP for desktop flows
                       href: /power-automate/prevent-data-loss
                     - name: DLP for Copilot Studio
@@ -728,7 +730,7 @@
                   href: telemetry-events-model-driven-apps.md
                 - name: Telemetry events for Dataverse
                   href: telemetry-events-dataverse.md
-                - name: Telemetry events for mobile app synchronization and actions (preview)
+                - name: Telemetry events for mobile app synchronization and actions
                   href: telemetry-events-mobile.md
                 - name: Export data to Application Insights
                   href: set-up-export-application-insights.md

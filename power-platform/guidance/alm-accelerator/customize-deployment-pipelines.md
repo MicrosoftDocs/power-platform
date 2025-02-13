@@ -4,7 +4,7 @@ description: Learn how to use your own templates in ALM Accelerator to customize
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 04/10/2023
-ms.subservice: guidance
+ms.subservice: guidance-toolkit
 author: RobStand
 ms.author: rstand
 ms.reviewer: sericks
