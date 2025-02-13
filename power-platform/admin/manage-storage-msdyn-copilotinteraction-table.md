@@ -48,7 +48,7 @@ By using the [bulk delete job](/microsoft-copilot-studio/analytics-sessions-tran
 
 Admins can also set the data retention policy to purge the `msdyn_copilotinteraction` table through [Dataverse long term data retention](/power-apps/maker/data-platform/data-retention-overview).
 
-## Related information
+## Related content
 
 - [Opt out from using Copilot features](/dynamics365/customer-service/administer/configure-copilot-features#opt-out-from-using-copilot-features)
 - [FAQ for Copilot in Customer Service](/dynamics365/customer-service/administer/faq-copilot-features)
