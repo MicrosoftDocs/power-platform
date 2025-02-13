@@ -23,7 +23,6 @@ This article includes answers to commonly asked questions about Git integration 
 >
 > - This is a preview feature.
 > - [!INCLUDE [cc-preview-features-definition](../../includes/cc-preview-features-definition.md)]
-> - This feature is currently only available to environments that have been created for early release cycles. Go to [Early release cycle environments](/power-platform/admin/early-release#create-early-release-cycle-environments).
 
 ## What is Git integration with Dataverse?
 
