@@ -4,7 +4,7 @@ description: Learn how to create and manage environments in the Power Platform a
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/26/2024
+ms.date: 02/12/2025
 ms.subservice: admin
 ms.author: mbajwa
 ms.reviewer: sericks
@@ -99,7 +99,7 @@ Once you create an environment, if you don't select **Enable Dynamics 365 apps**
 #### Dynamics 365 apps and trial type environments
 
 > [!IMPORTANT]
-> Currently, Dynamics 365 apps can't be enabled for environments that are trial type environments. For more information about Power Platform environment types, go to [Power Platform environment types](environments-overview.md#power-platform-environment-types).
+> Currently, Dynamics 365 apps can't be enabled for environments that are trial type environments. For more information about Power Platform environment types, go to [Environment types](environments-overview.md#environment-types).
 
 When you create or use an environment URL, it can't be the same URL as a [deleted](delete-environment.md) or [changed](edit-properties-environment.md) environment. Wait for at least 24 hours to pass, after the environment deletion or change, to use the URL.
 
