@@ -62,6 +62,9 @@ The admin doesn't need to be a licensed user. Environment admins gain access to 
 
     :::image type="content" source="media/analytics-overview-tab-feature-enabled.png" alt-text="Tenant-level analytics has been enabled.":::
 
+   > [!Note]
+   > Enabling tenant-level analytics is free and comes with no additional cost.
+
 ## How do I disable tenant-level analytics?
 
 Administrators with the following roles and a [license](pricing-billing-skus.md) can disable tenant-level analytics:
