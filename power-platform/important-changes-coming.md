@@ -1,7 +1,7 @@
 ---
 title: Important changes (deprecations) coming in Power Platform
 description: Important changes (deprecations) coming in Power Platform 
-ms.date: 01/08/2025
+ms.date: 02/13/2025
 ms.topic: conceptual
 ms.subservice: admin
 searchScope:
@@ -21,6 +21,11 @@ For deprecation information of other products, see [Other deprecation articles](
 
 > [!IMPORTANT]
 > "Deprecated" means we intend to remove the feature or capability from a future release. The feature or capability is fully supported until it's officially removed. This deprecation notification can span a few months or years. After removal, the feature or capability will no longer work. This notice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
+
+
+## Deprecation of Ask a virtual agent
+
+Effective March 11, 2025, the **Ask a virtual agent** feature in Power Apps is deprecated and no longer supported. We recommend using [Copilot in Power Apps](/power-apps/maker/canvas-apps/ai-overview) for assistance when creating an app. For general help in Power Apps, select **Help** (question mark icon in the upper right) > **Support** > **Problem**.
 
 ## Deprecation of bring-your-own-key (BYOK) Dataverse service
 Starting January 6, 2026, we will discontinue support for the bring-your-own-key (BYOK) feature. Customers are encouraged to transition to [customer-managed keys (CMK)](admin/customer-managed-key.md), an enhanced solution that offers improved functionality, broader support for data sources, and better performance.

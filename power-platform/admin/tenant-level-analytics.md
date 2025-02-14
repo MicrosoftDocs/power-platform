@@ -3,7 +3,7 @@ title: Tenant-level analytics
 description: View tenant-level analytics in various reports.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/06/2024
+ms.date: 02/13/2025
 author: sericks007
 ms.subservice: admin
 ms.author: sericks
@@ -11,8 +11,9 @@ ms.reviewer: sericks
 search.audienceType: 
   - admin
 contributors:
-- Zeffin
-- johnev
+  - jahnavisunil 
+  - Zeffin
+  - johnev
 ---
 
 # Tenant-level analytics
@@ -61,6 +62,9 @@ The admin doesn't need to be a licensed user. Environment admins gain access to 
 1. The **Overview** tab displays a message indicating that tenant-level analytics has been enabled. Typically, these reports are displayed within 24-48 hours of enabling the feature. 
 
     :::image type="content" source="media/analytics-overview-tab-feature-enabled.png" alt-text="Tenant-level analytics has been enabled.":::
+
+    > [!Note]
+    > Using tenant-level analytics is free and comes with no additional cost.
 
 ## How do I disable tenant-level analytics?
 
