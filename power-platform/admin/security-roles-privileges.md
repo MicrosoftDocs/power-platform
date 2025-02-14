@@ -77,7 +77,7 @@ Tables are grouped into the following categories:
 
 To quickly find a specific table or privilege, enter its name in the search box at the upper-right corner of the page, and then select the magnifying glass icon or press **Enter**. To clear your search, select the **X** icon.
 
-You can only edit one table at a time, but you can copy settings from one table to multiple tables in a single action.
+You can only edit one table at a time, but you can copy settings from one table to mulle tables in a single action.
 
 When you configure a security role, you need to determine the privileges it should grant for each table that's related to the application.
 
@@ -114,7 +114,7 @@ For each table, select the appropriate type for each privilege. Select **Save** 
 
 Setting the privileges for each table in your app can be time-consuming and tedious. To make it easier, you can copy the permissions from one table to one or more others.
 > [!TIP] 
-> Create your new security roles by copying the [predefined template security roles](./database-security) in an environment.
+> Create your new security roles by copying the [predefined template security roles](database-security.md) in an environment.
 > - Use **App Opener** role which has the minimum privleges to run an app.
 > - Use **Basic Use** role for the minimum privleges and including privileges to the core business tables.
 
