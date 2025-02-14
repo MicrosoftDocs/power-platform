@@ -24,7 +24,7 @@ For deprecation information of other products, see [Other deprecation articles](
 
 ## Deprecation of Train with examples to transform examples to Power Fx formulas
 
-Effective February 19, 2025, the **Train with examples** feature to transform examples to Power Fx formulas is deprecated and no longer supported. We recommend using [Copilot to create and edit Power Fx formulas](/power-apps/maker/canvas-apps/ai-formulas-formulabar).
+Effective February 19, 2025, the **Train with examples** feature to transform examples to Power Fx formulas is deprecated and no longer supported. We recommend using [Transform natural language to Power Fx formulas](/power-apps/maker/canvas-apps/power-apps-ideas-transform).
 
 ## Deprecation of Ask a virtual agent
 
