@@ -23,6 +23,18 @@ For deprecation information of other products, see [Other deprecation articles](
 > "Deprecated" means we intend to remove the feature or capability from a future release. The feature or capability is fully supported until it's officially removed. This deprecation notification can span a few months or years. After removal, the feature or capability will no longer work. This notice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
 
 
+## Deprecation of Snowflake connector [Deprecated]
+The [Snowflake (Deprecated)](/[power-apps/maker/canvas-apps/ai-overview](https://learn.microsoft.com/en-us/connectors/snowflakepa/)) connector will be discontinued on May 26, 2025. A new and improved version with additional features is now available. For more details, visit the new [Snowflake (Preview)]([/power-apps/maker/canvas-apps/ai-overview](https://learn.microsoft.com/en-us/connectors/snowflakev2/)) connector reference article. We strongly encourage you to switch soon to take advantage of the upgrades.  
+
+## What action do I need to take? 
+Please make sure you replace your existing connections of the deprecated Snowflake connector with the new [Snowflake (Preview)]([/power-apps/maker/canvas-apps/ai-overview](https://learn.microsoft.com/en-us/connectors/snowflakev2/)) connector in all of the applications utilizing this connector. If you need assistance in replacing your connections in Power Automate Flows or Power Apps, please refer to the below following documentation: 
+
+- [Manage connections in Power Automate - Power Automate | Microsoft Learn ](https://learn.microsoft.com/en-us/power-automate/add-manage-connections)
+- [Manage connections in canvas apps - Power Apps | Microsoft Learn ](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/add-manage-connections)
+
+### Impact 
+If action is not taken by May 26, 2025, the application(s) utilizing [Snowflake (Deprecated)](/[power-apps/maker/canvas-apps/ai-overview](https://learn.microsoft.com/en-us/connectors/snowflakepa/)) connector will no longer function as expected. 
+
 ## Deprecation of Ask a virtual agent
 
 Effective March 11, 2025, the **Ask a virtual agent** feature in Power Apps is deprecated and no longer supported. We recommend using [Copilot in Power Apps](/power-apps/maker/canvas-apps/ai-overview) for assistance when creating an app. For general help in Power Apps, select **Help** (question mark icon in the upper right) > **Support** > **Problem**.
