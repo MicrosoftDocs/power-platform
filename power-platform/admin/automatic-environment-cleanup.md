@@ -54,7 +54,7 @@ Only developer and [Dataverse for Teams environments](inactive-teams-environment
 
 ### Timeline for unused environments
 
-The time between the first warning that the environment will be disabled to the final deletion of the environment is 37 days. Production enviroments are not subject to this timeline.
+The time between the first warning that the environment will be disabled to the final deletion of the environment is 37 days. Production environments are not subject to this timeline.
 
 The environment's administrators and the user who created the environment are notified by email according to the schedule described in the following table.
 
@@ -105,7 +105,7 @@ By default, administrators have 30 days to re-enable an environment. If the envi
 2. Select **Environments**, and then select **Recover deleted environments**.
 3. Select an environment to recover, and then select **Recover**.
 
-[Learn more about recovering environment](recover-environment.md).
+[Learn more about recovering environments](recover-environment.md).
 
 > [!NOTE]
 > Recovering a Teams environment that was deleted due to inactivity requires a tenant-level administrative role.
