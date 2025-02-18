@@ -31,7 +31,7 @@ The activities view and timeline wall are common places where the activity point
 :::image type="content" source="media/manage-storage-activitypointerbase-activity-timeline.png" alt-text="Activity timeline example for the ActivityPointerBase table." lightbox="media/manage-storage-activitypointerbase-activity-timeline.png" :::
 
 ## Causes of growth
-The main cause of growth of the **ActivityPointerBase** table is the regular usage of activities in the system. The **ActivityPointerBase** table concentrates all types of activities, so it's expected that the table storage associated with the **ActivityPointerBase** table increases in size when activities in the use of the system grow in frequency. For example when more emails, appointments, and custom activities occur, the table increases in size.
+The main cause of growth of the **ActivityPointerBase** table is the regular usage of activities in the system. The **ActivityPointerBase** table concentrates all types of activities, so the table storage associated with the **ActivityPointerBase** table increases in size when activities in the use of the system grow in frequency. For example when more emails, appointments, and custom activities occur, the table increases in size.
 
 ## Table clean-up
 
