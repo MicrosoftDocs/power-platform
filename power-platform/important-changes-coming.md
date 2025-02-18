@@ -22,6 +22,9 @@ For deprecation information of other products, see [Other deprecation articles](
 > [!IMPORTANT]
 > "Deprecated" means we intend to remove the feature or capability from a future release. The feature or capability is fully supported until it's officially removed. This deprecation notification can span a few months or years. After removal, the feature or capability will no longer work. This notice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
 
+## Deprecation of Train with examples to transform examples to Power Fx formulas
+
+Effective February 19, 2025, the **Train with examples** feature to transform examples to Power Fx formulas is deprecated and no longer supported. We recommend using [Transform natural language to Power Fx formulas](/power-apps/maker/canvas-apps/power-apps-ideas-transform).
 
 ## Deprecation of Ask a virtual agent
 
