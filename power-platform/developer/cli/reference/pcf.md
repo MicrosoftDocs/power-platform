@@ -7,7 +7,7 @@ author: laneswenka
 ms.author: laswenka
 ms.date: 1/16/2025
 ms.reviewer: jdaly
-ms.topic: reference
+ms.topic: generated-reference
 contributors: 
  - JimDaly
 ---
