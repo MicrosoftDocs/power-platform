@@ -18,7 +18,7 @@ search.audienceType:
 # ActivityPointerBase table
 The **ActivityPointerBase** table is used to store information about activities in Microsoft Dynamics 365 customer engagement apps and Power Apps. It stores the following information:
 
-- **Activity details**: The table includes all default, activity columns such as subject, description, owner, regarding, status, and more. For a full list of the columns in this table, go to [activitypointer EntityType](/power-apps/developer/data-platform/webapi/reference/activitypointer).
+- **Activity details**: The table includes all default, activity columns such as subject, description, owner, regarding, and status. For a full list of the columns in this table, go to [activitypointer EntityType](/power-apps/developer/data-platform/webapi/reference/activitypointer).
 
 - **Description**: The description column contains the description for each activity in the system. It's the same column used to store the email body for an email activity. Because an email body can include a large amount of text, large emails can contribute to the growth in data capacity consumed by this table. The storage of this column is moving to blob storage. Learn more in [Transition period](/power-apps/developer/data-platform/email-activity-entities#transition-period).
 
