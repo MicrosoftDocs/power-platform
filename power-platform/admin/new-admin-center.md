@@ -6,6 +6,7 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 01/29/2025
 ms.custom: 
+  - NewPPAC
   - ignite-2024
   - ai-gen-diyeditor
 ai-usage: ai-assisted
