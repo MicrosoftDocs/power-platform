@@ -1,6 +1,6 @@
 ---
 title: Formula reference - Dataverse plug-ins
-description: Reference information for functions, signals, and enumerations available with plug-ins in Microsoft Dataverse.
+description: Reference information for functions, signals, and enumerations available with low-code plug-ins in Microsoft Dataverse.
 author: gregli-msft
 ms.topic: reference
 ms.reviewer: matp
@@ -15,9 +15,9 @@ contributors:
   - gregli
 ---
 
-# Formula reference - Dataverse plug-ins
+# Formula reference - Dataverse functions and low-code plug-ins
 
-In this article, learn about all the functions available with [plug-ins in Microsoft Dataverse](/power-apps/maker/data-platform/low-code-plug-ins?tabs=instant).
+In this article, learn about all the formulas available with [functions](/power-apps/maker/data-platform/functions-overview) and [low-code plug-ins](/power-apps/maker/data-platform/low-code-plug-ins?tabs=instant) in Microsoft Dataverse.
 
 ## A
 
