@@ -7,7 +7,7 @@ ms.author: paulliew
 ms.reviewer: sericks
 ms.custom: bap-template, NEWPPAC
 ms.topic: conceptual
-ms.date: 02/07/2025
+ms.date: 02/19/2025
 contributors:
   - srpoduri 
   - shahzorkhan123
@@ -77,7 +77,7 @@ Tables are grouped into the following categories:
 
 To quickly find a specific table or privilege, enter its name in the search box at the upper-right corner of the page, and then select the magnifying glass icon or press **Enter**. To clear your search, select the **X** icon.
 
-You can only edit one table at a time, but you can copy settings from one table to mulle tables in a single action.
+You can only edit one table at a time, but you can copy settings from one table to multiple tables in a single action.
 
 When you configure a security role, you need to determine the privileges it should grant for each table that's related to the application.
 
