@@ -136,14 +136,9 @@ To add an application to the list:
     The form shows the list of applications that are loaded in your environment.
 
 1. Select **+ New**.
-
-   :::image type="content" source="media/control-client-app-access-to-environment/new-application.png" alt-text="Screenshot that shows the location of the New button at the URL destination.":::
-
 1. On the new screen, enter an **ApplicationId**.
 1. Enter a **Name**.
 1. Select **Save**.
-
-   :::image type="content" source="media/control-client-app-access-to-environment/new-application-form.png" alt-text="Screenshot showing the location of the ApplicationId and Name fields. The image also shows where the Save button is located.":::
 
 To remove an application from the list:
 
@@ -224,8 +219,8 @@ Using this *audit log* list, you can determine which apps you want to allow or b
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. In the navigation pane, select **Security**.
-1. In the **Security** section, select **Access controls**.
-1. in the **Access controls** section, select **App access control**
+1. In the **Security** pane, select **Identity and access**.
+1. in the **Identity and access management** page, select **App access control**
 1. Select the environment where you want to turn on the app access control feature.
 1. Select the **Set up app access control** button.
 1. Select the **AuditMode** option in the **Access control** dropdown list.
