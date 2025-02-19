@@ -115,8 +115,8 @@ For each table, select the appropriate type for each privilege. Select **Save** 
 Setting the privileges for each table in your app can be time-consuming and tedious. To make it easier, you can copy the permissions from one table to one or more others.
 > [!TIP] 
 > Create your new security roles by copying the [predefined template security roles](database-security.md) in an environment.
-> - Use **App Opener** role which has the minimum privleges to run an app.
-> - Use **Basic Use** role for the minimum privleges and including privileges to the core business tables.
+> - Use **App Opener** role which has the minimum privileges to run an app.
+> - Use **Basic Use** role for the minimum privileges and including privileges to the core business tables.
 
 1. Select a table, and then select **Copy table permissions**
 
