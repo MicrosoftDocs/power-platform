@@ -4,7 +4,7 @@ description: Manage ALM in the admin center.
 author: caburk
 ms.subservice: alm
 ms.author: matp
-ms.custom: ""
+ms.custom: NewPPAC
 ms.reviewer: matp
 ms.topic: overview
 ms.date: 1/14/2025
