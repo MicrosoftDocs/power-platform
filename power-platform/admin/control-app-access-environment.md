@@ -5,6 +5,7 @@ author: paulliew
 ms.author: paulliew
 ms.reviewer: sericks
 ms.component: pa-admin
+ms.custom: NewPPAC
 ms.subservice: admin
 ms.topic: how-to
 ms.date: 02/20/2025
@@ -88,12 +89,26 @@ Your environment must be a Managed Environment. Learn more in [Managed Environme
 
 ### Turn on auditing in the environment
 
+# [New admin center](#tab/new)
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a system administrator.
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**. Then select your specific environment.
+1. Select **Settings** in the command bar.
+1. Select **Audit and logs** > **Audit settings**.
+1. In the **Auditing** section, select the **Start auditing**, **Log access**, and **Read logs** options.
+1. Select **Save**.
+
+# [Classic admin center](#tab/classic)
+
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a system administrator.
 1. In the navigation pane, select **Environments**. Then select your specific environment.
 1. Select **Settings** in the command bar.
 1. Select **Audit and logs** > **Audit settings**.
 1. In the **Auditing** section, select the **Start auditing**, **Log access**, and **Read logs** options.
 1. Select **Save**.
+
+---
 
 ### Review the application list in the environment
 
