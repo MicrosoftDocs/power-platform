@@ -17,7 +17,7 @@ contributors:
 
 # Formula reference - Dataverse functions and low-code plug-ins
 
-In this article, learn about all the formulas available with [functions](/power-apps/maker/data-platform/functions-overview) and [plug-ins](/power-apps/maker/data-platform/low-code-plug-ins?tabs=instant) in Microsoft Dataverse.
+In this article, learn about all the formulas available with [functions](/power-apps/maker/data-platform/functions-overview) and [low-code plug-ins](/power-apps/maker/data-platform/low-code-plug-ins?tabs=instant) in Microsoft Dataverse.
 
 ## A
 
