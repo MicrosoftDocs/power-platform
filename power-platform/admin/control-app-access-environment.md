@@ -122,9 +122,11 @@ There’s a set of applications that are preregistered to run in a Dataverse env
 - All legacy apps that can dynamically acquire On-Behalf-Of tokens.
 - All apps with the **prvActOnBehalfOfAnotherUser** privilege and those using headers to impersonate users. Learn more in [Impersonate another user](/dynamics365/customerengagement/on-premises/developer/org-service/impersonate-another-user).
 
-#### Add or remove applications from the list
+#### Add applications to the list
 
-To add an application to the list:
+To add an application to the list by completing the following steps.
+
+# [New admin center](#tab/new)
 
 1. From the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment and copy the **Environment URL** such as `contoso.crm.dynamics.com`.
 1. Open a new tab in the same browser (to stay signed in) and add the following URL to the address bar. Replace `<EnvironmentURL>` with your environment URL and then press **Enter**.
@@ -140,13 +142,38 @@ To add an application to the list:
 1. Enter a **Name**.
 1. Select **Save**.
 
+| Column 1 | Column 2 |
+|----------|----------|
+| Pattern  | \d(?=\d{2}&#124;\d{2}&#124;\d{4}&#124;\d&#124;\d{2}&#124;\d{4}&#124;-&#124;\d{2}&#124;\d{4}&#124;\d&#124;\d{4}&#124;-&#124;\d{4}) |
+
+
+# [Classic admin center](#tab/classic)
+
+1. From the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment and copy the **Environment URL** such as `contoso.crm.dynamics.com`.
+1. Open a new tab in the same browser (to stay signed in) and add the following URL to the address bar. Replace `<EnvironmentURL>` with your environment URL and then press **Enter**.
+
+   ```http  
+   https:/<EnvironmentURL>/main.aspx?forceUCI=1&pagetype=entitylist&etn=application&viewid=76302387-6f41-48e5-8eaf-4e74c1971020&viewType=1039
+   ```
+
+    The form shows the list of applications that are loaded in your environment.
+
+1. Select **+ New**.
+1. On the new screen, enter an **ApplicationId**.
+1. Enter a **Name**.
+1. Select **Save**.
+
+---
+
+#### Remove applications from the list
 To remove an application from the list:
 
 1. Select an app.
 1. Select **Delete**.
+1. Repeat this procedure for each app you want to remove.
 
-> [!NOTE]
-> If you removed a system app that was preloaded in the environment, the app can automatically be restored by the system. You might want to delete only the apps that you have added.
+    > [!NOTE]
+    > If you removed a system app that was preloaded in the environment, the app can automatically be restored by the system. You might want to delete only the apps that you have added.
 
 #### Allow or block apps
 
