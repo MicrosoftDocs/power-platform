@@ -102,7 +102,7 @@ Create a user mapping file for the source environment to be transferred to the t
 1. Create a user mapping file named **usermapping.csv**.
 
    > [!Note]
-   > The file name is case sensative. Make sure records are separated by a comma, not a semicolon.
+   > The file name is case sensitive. Make sure records are separated by a comma, not a semicolon.
   
 1. Accurately record the details of users, including their source and destination email IDs. Make sure there are no extra space before and after the header. Your mapping file should look to the following example:
 
