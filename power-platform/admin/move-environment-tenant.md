@@ -23,29 +23,29 @@ search.audienceType:
 The tenant-to-tenant migration feature allows you to transfer an environment from one tenant to another. This feature supports scenarios such as merging multiple tenants into one and facilitating company acquisitions. The environment doesn't actually _move_, but rather is _linked_ to another tenant. The environment still exists but isn't part of the source tenant anymore. It's accessible and managed under the destination tenant. There are no user interface changes or version changes as part of this move.
 
 ## Before you get started
-Be aware of the following notes before you get started with a tenant-to-tenant migration.
+Be aware of the following before starting a tenant-to-tenant migration.
 
 > [!Note]
 > Tenant-to-tenant migrations will be supported on Managed Environments in the future.
 
--	**Supported environment types:** Production and sandbox only.
--	**Not supported environment types:** Default, developer, trial, and Teams environment types aren't supported. Government Community Cloud (GCC) to public clouds and vice versa aren't supported.
+-	**Supported environment types**: Production and sandbox only.
+-	**Not supported environment types**: Default, developer, trial, and Teams environment types aren't supported. Government Community Cloud (GCC) to public clouds and vice versa aren't supported.
 -	Components not supported include Dynamics 365 Customer Voice, Omnichannel for Customer Service, component library, Dynamics 365 Customer Insights - Journeys, and Dynamics 365 Customer Insights - Data.
--	There are specific steps required for Power Apps, Power Automate, Power Pages, and Microsoft Copilot studio called out in the premigration and post-migration steps.
+-	Specific steps required for Power Apps, Power Automate, Power Pages, and Microsoft Copilot Studio are called out in the premigration and post-migration steps.
 -	A Dataverse organization linked to a finance and operations organization can't be migrated to a different tenant.
--	You might need to reconfigure some applications and settings after tenant-to-tenant migration, such as Microsoft Dynamics 365 for Outlook, server-side sync, SharePoint, and others.
+-	You might need to reconfigure some applications and settings after tenant-to-tenant migration, such as Dynamics 365 for Outlook, server-side sync, SharePoint, and others.
 -	Once users are created and configured, you must [create a user mapping file](#create-a-user-mapping-file), which is described later in this article.
 -	If the mapped user has a mailbox in the destination tenant, then the mailbox is automatically configured during the migration. For all other users, you need to reconfigure the mailbox.
   -	If the same mailbox is used in the target tenant, `test@microsoft.com`, then the mailbox is used by default. Before the tenant-to-tenant migration, customers need to migrate and configure their mailboxes on the target tenant.
   -	If you're using the default onmicrosoft domain, `test@sourcecompanyname.onmicrosoft.com`, the post-migration domain name is changed to `test@targetcompanyname.onmicrosoft.com`. Customers need to reconfigure the mailbox. Learn more about configuring the mailbox in [Connect to Exchange Online](connect-exchange-online.md).
 
 ## Prerequisites
-Be sure that you complete the following prerequisites before you start the migration process.
+Be sure to complete the following prerequisites before you start the migration process:
 
 -	Create users in the target tenant, including:
-    -	Create users in Microsoft 365 and Microsoft Entra ID.
-    -	Assign licenses.
-- You must have Power platform admin or Dynamics 365 admin privileges to perform the migration.
+  -	Create users in Microsoft 365 and Microsoft Entra ID.
+  -	Assign licenses.
+- You must have admin privileges with Power Platform or Dynamics 365 to perform the migration.
 -	The PowerShell for Power Platform Administrators module is the recommended PowerShell module for interacting with admin capabilities. Learn more in [Get started with PowerShell for Power Platform Administrators](powershell-getting-started.md).
 
 ## Preparation process
