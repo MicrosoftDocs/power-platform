@@ -8,6 +8,7 @@ ms.topic: conceptual
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
+ms.date: 02/28/2025
 ---
 
 # What goals are you driving with Power Platform adoption

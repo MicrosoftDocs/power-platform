@@ -57,7 +57,7 @@ Governance is a cornerstone of a successful Power Platform Center of Excellence 
 Learn more:
 
 <!-- TODO link to overview pages of each section -->
-- [Secure](secure-overview.md.md)
+- [Secure](secure-overview.md)
 - [Govern](coe.md)
 - [Operate](coe.md)
 
