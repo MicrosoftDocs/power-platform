@@ -67,7 +67,7 @@ Any Power Apps must be manually exported. We don't support the migration of cust
 1. Apps that are in an unmanaged solution can be deleted by using the **Delete from this environment** option.	 
 
     > [!Important]
-    > Solution-aware canvas apps, custom pages, or component libraries that you don't delete from an environment before migration, won't work after the migration completes.
+    > Solution-aware canvas apps, custom pages, or component libraries that you don't delete from an environment before migration won't work after the migration completes.
 
 #### For apps that aren't solution-aware:
 1.	Go to [Power Apps](https://make.powerapps.com), and then select **Apps**.
@@ -77,9 +77,9 @@ Any Power Apps must be manually exported. We don't support the migration of cust
   	  The resulting file contains the app package that was selected.
   	
 1.	Repeat these steps until all apps have been exported.
-1.	Delete these nonsolution-aware apps from the environment
+1.	Delete these nonsolution-aware apps from the environment.
 
-An admin can also view or delete canvas apps from the list in the admin portal by completing the following steps.
+An admin can also view or delete canvas apps from the list in the admin portal by completing the following steps:
 
 1.	Go to [Power Platform admin center](https://admin.powerplatform.microsoft.com) and then select the environment from **Manage**.
 2.	Under the **Resources** action, select **Power Apps** to view and delete them.
@@ -87,10 +87,10 @@ An admin can also view or delete canvas apps from the list in the admin portal b
 ### Prepare Copilot Studio
 Any Copilot Studio chatbots must be manually exported. Some dependent components of chatbots must be manually reconfigured during or after the migration. For example, connections, environment variables, and custom connectors must be manually reconfigured during or after the migration.
 
-Chatbots are solution-aware. Go to [Power Apps](https://make.powerapps.com), navigate to the **Solutions** page, and export all chatbot solutions, either individually or group them together in a single solution. Learn more in [Export and import bots using solutions](/microsoft-copilot-studio/authoring-export-import-bots?tabs=webApp).
+Chatbots are solution-aware. Go to [Power Apps](https://make.powerapps.com), navigate to the **Solutions** page, and export all chatbot solutions, either individually or grouped together in a single solution. Learn more in [Export and import bots using solutions](/microsoft-copilot-studio/authoring-export-import-bots?tabs=webApp).
 
 ### Prepare Power Pages 
-The following steps must be done for each website in an environment.
+The following steps must be done for each website in an environment:
 
 1.	Sign in to the environment.
 2.	Open the [admin center](/power-pages/admin/admin-overview#open-power-apps-portals-admin-center).
@@ -104,7 +104,7 @@ Create a user mapping file for the source environment to be transferred to the t
    > [!Note]
    > The file name is case sensitive. Make sure records are separated by a comma, not a semicolon.
   
-1. Accurately record the details of users, including their source and destination email IDs. Make sure there are no extra space before and after the header. Your mapping file should look to the following example:
+1. Accurately record the details of users, including their source and destination email IDs. Make sure there are no extra spaces before and after the header. Your mapping file should look like the following example:
 
     |Source|	Destination|
     |------|-------------|
