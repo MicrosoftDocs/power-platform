@@ -20,7 +20,7 @@ Microsoft regularly communicates work done to maintain and update Microsoft Powe
 For each of these scenarios, communication is provided through the Microsoft 365 admin center in the [Message Center](/microsoft-365/admin/manage/message-center), and the [Service health dashboard](/microsoft-365/enterprise/view-service-health). The Microsoft 365 admin center also has the ability to send email for a weekly digest of all messages, emails for major updates only, and emails for data privacy messages. You can opt in to this communication stream by following the instructions in [Preferences](/microsoft-365/admin/manage/message-center#preferences).
 
 > [!NOTE]
-> Microsoft may also send direct email to users assigned to the Dynamics 365 administrator or Power Platform administrator role in an impacted tenant. If you’re not sure who your admin is, learn more in [Find your administrator or support person](/powerapps/user/find-admin). To assign a service admin role to a user, follow the instructions in [Assign a service admin role to a user](use-service-admin-role-manage-tenant.md#assign-a-service-admin-role-to-a-user).
+> Microsoft may also send direct email to users assigned to the Power Platform administrator or Dynamics 365 administrator role in an impacted tenant. If you’re not sure who your admin is, learn more in [Find your administrator or support person](/powerapps/user/find-admin). To assign a service admin role to a user, follow the instructions in [Assign a service admin role to a user](use-service-admin-role-manage-tenant.md#assign-a-service-admin-role-to-a-user).
   
 ## Scheduled system updates and maintenance
 
