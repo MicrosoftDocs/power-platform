@@ -128,7 +128,11 @@ To add an application to the list by completing the following steps.
 
 # [New admin center](#tab/new)
 
-1. From the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment and copy the **Environment URL** such as `contoso.crm.dynamics.com`.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. In the **Environments** page, select the name of an environment.
+1. Copy the **Environment URL** such as `contoso.crm.dynamics.com`.
 1. Open a new tab in the same browser (to stay signed in) and add the following URL to the address bar. Replace `<EnvironmentURL>` with your environment URL and then press **Enter**.
 
    ```http  
@@ -142,14 +146,13 @@ To add an application to the list by completing the following steps.
 1. Enter a **Name**.
 1. Select **Save**.
 
-| Column 1 | Column 2 |
-|----------|----------|
-| Pattern  | \d(?=\d{2}&#124;\d{2}&#124;\d{4}&#124;\d&#124;\d{2}&#124;\d{4}&#124;-&#124;\d{2}&#124;\d{4}&#124;\d&#124;\d{4}&#124;-&#124;\d{4}) |
-
 
 # [Classic admin center](#tab/classic)
 
-1. From the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment and copy the **Environment URL** such as `contoso.crm.dynamics.com`.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. In the navigation pane, selet **Environments**.
+1. In the **Environments** page, select the name of an environment
+1. Copy the **Environment URL** such as `contoso.crm.dynamics.com`.
 1. Open a new tab in the same browser (to stay signed in) and add the following URL to the address bar. Replace `<EnvironmentURL>` with your environment URL and then press **Enter**.
 
    ```http  
