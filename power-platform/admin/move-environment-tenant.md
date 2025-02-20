@@ -329,7 +329,7 @@ TenantToTenant-MigratePowerAppEnvironment
 ### Get status (source admin)
 
 ```PowerShell
-TenantToTenant-GetMigrationStatus -EnvironmentName {EnvironmentId}
+TenantToTenant-GetMigrationStatus -MirationId {MigrationId}
 ```
 
 #### Sample output
