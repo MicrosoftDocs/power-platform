@@ -36,6 +36,7 @@ Be aware of the following before starting a tenant-to-tenant migration.
 -	You might need to reconfigure some applications and settings after tenant-to-tenant migration, such as Dynamics 365 for Outlook, server-side sync, SharePoint, and others.
 -	Once users are created and configured, you must [create a user mapping file](#create-a-user-mapping-file), which is described later in this article.
 -	If the mapped user has a mailbox in the destination tenant, then the mailbox is automatically configured during the migration. For all other users, you need to reconfigure the mailbox.
+
    - If the same mailbox is used in the target tenant, `test@microsoft.com`, then the mailbox is used by default. Before the tenant-to-tenant migration, customers need to migrate and configure their mailboxes on the target tenant.
    - If you're using the default onmicrosoft domain, `test@sourcecompanyname.onmicrosoft.com`, the post-migration domain name is changed to `test@targetcompanyname.onmicrosoft.com`. Customers need to reconfigure the mailbox. Learn more about configuring the mailbox in [Connect to Exchange Online](connect-exchange-online.md).
 
