@@ -36,7 +36,6 @@ Be aware of the following before starting a tenant-to-tenant migration.
 -	You might need to reconfigure some applications and settings after tenant-to-tenant migration, such as Dynamics 365 for Outlook, server-side sync, SharePoint, and others.
 -	Once users are created and configured, you must [create a user mapping file](#create-a-user-mapping-file), which is described later in this article.
 -	If the mapped user has a mailbox in the destination tenant, then the mailbox is automatically configured during the migration. For all other users, you need to reconfigure the mailbox.
-
    - If the same mailbox is used in the target tenant, `test@microsoft.com`, then the mailbox is used by default. Before the tenant-to-tenant migration, customers need to migrate and configure their mailboxes on the target tenant.
    - If you're using the default onmicrosoft domain, `test@sourcecompanyname.onmicrosoft.com`, the post-migration domain name is changed to `test@targetcompanyname.onmicrosoft.com`. Customers need to reconfigure the mailbox. Learn more about configuring the mailbox in [Connect to Exchange Online](connect-exchange-online.md).
 
@@ -282,10 +281,6 @@ This step's duration varies depending on the number of users in the user mapping
 TenantToTenant-GetMigrationStatus -MigrationId {MigrationId}
 ```
 
-
-
-
-
 #### Sample output
 -	Validate Tenant To Tenant Migration: Running 
 -	Validate Tenant To Tenant Migration: Succeeded
@@ -296,14 +291,14 @@ TenantToTenant-GetMigrationStatus -MigrationId {MigrationId}
 - **Line '{line numbers}' have the same '{emailID}'**: Make sure there aren't any duplicate entries.
 - **Invalid Email Format '{emailid}'**: Make sure the email format is correct for `testuser@tenantdomain.com`.
 - **Target on line '{linenumber}' is same as source emailId**: Make sure the **Destination Email** is different from the **Source Email**.
-- **Each line must have exactly two columns: '{line numbers}'**: Make sure each row has only two columns: the source and destination columns. Remove any extra commas, if any.
+- **Each line must have exactly two columns: '{line numbers}'**: Make sure each row has only two columns: the source and destination columns. Remove any extra commas.
 
-After fixing user mapping errors, you need to reupload the user mapping file using same SAS URI.
+After fixing user mapping errors, you need to reupload the user mapping file using the same SAS URI.
   
 ### Download the error report (source admin)
-If there are any errors in the user mapping file, there's an option to download an error report. This can be done by directly copying and pasting the **SasUrl** provided in the **Tenant-To-Tenant-GetMigrationStatus** command or by using the following commands that use the SAS URI from the previous step check status and the desired location to download the error report.
+If any errors are in the user mapping file, there's an option to download an error report. This can be done by directly copying and pasting the **SasUrl** provided in the **Tenant-To-Tenant-GetMigrationStatus** command or by using the following commands that use the SAS URI from the previous step to check status and the desired location to download the error report.
 
-Complete the following steps.
+Complete the following steps:
 
 1. Run the following command with Windows PowerShell ISE.
 
@@ -323,7 +318,7 @@ Complete the following steps.
 1. Fix the issues in the user mapping file.
 1. Reupload the file using the steps in [Upload the user mapping file (source admin)](#upload-the-user-mapping-file-(source-admin).
 
-After successfully completing the [Prepare the environment migration (source admin)](#prepare-the-environment-migration-source-admin), you may proceed with the [Migrate the environment (source admin)](#migrate-the-environment-source-admin) procedure to migrate the environment. Perform the migration within the next seven days. If you don't complete the migration in the next seven days, you must start with [Prepare the environment migration (source admin)](#prepare-the-environment-migration-source-admin) procedure, again.
+After successfully completing the [Prepare the environment migration (source admin)](#prepare-the-environment-migration-source-admin), you may proceed with the [Migrate the environment (source admin)](#migrate-the-environment-source-admin) procedure to migrate the environment. Perform the migration within the next seven days. If you don't complete the migration in the next seven days, you must start the [Prepare the environment migration (source admin)](#prepare-the-environment-migration-source-admin) procedure again.
 
 ## Migrate the environment (source admin)
 The **MigrationId** can be viewed using the **TenantToTenant-ViewMigrationRequest** command in the source tenant.
@@ -354,7 +349,7 @@ After moving environments to another tenant:
 -	The source environment doesn't have Dataverse.
 -	Users not included in the mapping file won't be migrated and mapped post-migration.
 
-Complete the following procedures for Power Automate, Power Apps, Copilot Studio, Power Pages.
+Complete the following procedures for Power Automate, Power Apps, Copilot Studio, and Power Pages.
 
 ### Post-migration process for Power Automate
 After the migration has completed, step through the **Review components** section as a checklist to get flows and other components adjusted and activated. The key steps are:
@@ -365,12 +360,12 @@ After the migration has completed, step through the **Review components** sectio
 
 ### Post-migration process for Power Apps
 
-#### For solution aware apps:
+#### For solution-aware apps
 1. Select the new environment from [Power Apps](https://make.powerapps.com) and navigate to the **Solutions** page.
 1. Select **Import** and use the file selector to select the packages exported from the above step.
 1. Confirm that the import was successfully completed by checking the solution contents of the migrated environment.
 
-#### For apps that aren't solution-aware:
+#### For apps that aren't solution aware
 1. Go to [Power Apps](https://make.powerapps.com).
 1. Select the new environment from the environment dropdown list.
 1. Select **Apps**.
@@ -391,7 +386,7 @@ The following steps must be completed for each website in the environment.
 1. Open the [admin center](/power-pages/admin/admin-overview#open-power-apps-portals-admin-center).
 1. Provision the website with the same portal type and language.
 
-After completing all the above steps and migration, you may validate the environment in target tenant and later you can delete the source environment in Power platform admin center.
+After completing all of the above steps and the migration, you may validate the environment in the target tenant. Later, you can delete the source environment in the Power Platform admin center.
 
 ### Frequently asked questions
 **Are background operations enabled during tenant-to-tenant migration?**
