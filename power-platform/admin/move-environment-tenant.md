@@ -60,7 +60,7 @@ Any Power Automate flows that should be migrated need to have their definitions 
 ### Prepare Power Apps
 Any Power Apps must be manually exported. We don't support the migration of customer connectors, connections, or gateways. If you have any of these components set up, they must be manually reconfigured after the migration.
 
-#### For solution-aware apps:
+#### For solution-aware apps
 1. For apps that are solution aware, go to [Power Apps](https://make.powerapps.com), navigate to the **Solutions** page, and export all apps and solutions. You can export them individually or group them together in a single solution, if they're not already.
 1. Delete these solution-aware apps in the environment after exporting them.
 1. Apps belonging to managed solutions can only be deleted by deleting the solution.
@@ -69,7 +69,7 @@ Any Power Apps must be manually exported. We don't support the migration of cust
     > [!Important]
     > Solution-aware canvas apps, custom pages, or component libraries that you don't delete from an environment before migration won't work after the migration completes.
 
-#### For apps that aren't solution-aware:
+#### For apps that aren't solution aware
 1.	Go to [Power Apps](https://make.powerapps.com), and then select **Apps**.
 1.	For each app that you want to move, select **More Commands** and then select **Export package (preview)**.
 1.	Enter the details required to perform the export of the app, and then select **Export**. Once the export completes, a download begins.
@@ -81,13 +81,13 @@ Any Power Apps must be manually exported. We don't support the migration of cust
 
 An admin can also view or delete canvas apps from the list in the admin portal by completing the following steps:
 
-1.	Go to [Power Platform admin center](https://admin.powerplatform.microsoft.com) and then select the environment from **Manage**.
+1.	Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) and then select the environment from **Manage**.
 2.	Under the **Resources** action, select **Power Apps** to view and delete them.
 
 ### Prepare Copilot Studio
 Any Copilot Studio chatbots must be manually exported. Some dependent components of chatbots must be manually reconfigured during or after the migration. For example, connections, environment variables, and custom connectors must be manually reconfigured during or after the migration.
 
-Chatbots are solution-aware. Go to [Power Apps](https://make.powerapps.com), navigate to the **Solutions** page, and export all chatbot solutions, either individually or grouped together in a single solution. Learn more in [Export and import bots using solutions](/microsoft-copilot-studio/authoring-export-import-bots?tabs=webApp).
+Chatbots are solution aware. Go to [Power Apps](https://make.powerapps.com), navigate to the **Solutions** page, and export all chatbot solutions, either individually or grouped together in a single solution. Learn more in [Export and import bots using solutions](/microsoft-copilot-studio/authoring-export-import-bots?tabs=webApp).
 
 ### Prepare Power Pages 
 The following steps must be done for each website in an environment:
@@ -159,6 +159,13 @@ Update-Module -Name Microsoft.PowerApps.Administration.PowerShell
 ```
 
 ### Install Azure PowerShell on Windows (both source and target admins)
+
+
+
+
+
+
+
 
 The Azure PowerShell module is a rollup module. Installing the Azure PowerShell module downloads the generally available modules and makes their cmdlets available for use. Learn more in [Install Azure PowerShell on Windows](/powershell/azure/install-azps-windows?view=azps-11.6.0&tabs=powershell&pivots=windows-psgallery&preserve-view=true).
 
