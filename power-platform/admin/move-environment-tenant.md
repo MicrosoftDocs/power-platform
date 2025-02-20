@@ -193,10 +193,6 @@ TenantToTenant-ViewMigrationRequest
 > Record the MigrationID, which is used in further migration commands.
 > Source Tenant MigrationID is different from Destination Tenant MigrationID.
 
-
-
-
-
 ### View and approve migration request (target admin)
 The admin of the destination tenant should run the following command to see all the migration requests and status. The admin can review all the migration requests and options to approve or reject. 
 
@@ -210,7 +206,7 @@ TenantToTenant-ManageMigrationRequest -MigrationId {MigrationId from above comma
 Once a request is approved, the admin of the destination tenant can notify the admin of the source tenant to proceed with the next step of the migration.
 
 ### Generate a shared access signature (SAS) URL (source admin)
-This step involves creating the SAS URL, which is utilized later for uploading the user mapping file. Execute the following PowerShell command, substituting **EnvironmentId** with the actual environment ID.
+This step involves creating the SAS URL, which is used later for uploading the user mapping file. Run the following PowerShell command, substituting **EnvironmentId** with the actual environment ID.
 
 ```PowerShell
 GenerateResourceStorage-PowerAppEnvironment –EnvironmentName {EnvironmentId}
@@ -231,7 +227,7 @@ Internal    : @{sharedAccessSignature=https://dynamics.blob.core.windows.net/202
 ```
 
 ### Upload the user mapping file (source admin)
-The next step involves transferring the user mapping file to the previously established SAS URL. To accomplish this, execute the following commands in Windows PowerShell ISE, ensuring that the parameters **SASUri** and **FileToUpload** contain the appropriate information about your environment. This step is crucial for uploading mapping of the users accurately in the system.
+The next step involves transferring the user mapping file to the previously established SAS URL. To accomplish this, run the following commands in Windows PowerShell ISE, ensuring that the parameters **SASUri** and **FileToUpload** contain the appropriate information about your environment. This step is crucial for accurately uploading mapping of the users in the system.
 
 > [!Note]
 > The installation of the Azure module is required to run the script mentioned. Complete the following steps with Windows PowerShell ISE.
@@ -284,6 +280,11 @@ This step's duration varies depending on the number of users in the user mapping
 ```PowerShell
 TenantToTenant-GetMigrationStatus -MigrationId {MigrationId}
 ```
+
+
+
+
+
 #### Sample output
 -	Validate Tenant To Tenant Migration: Running 
 -	Validate Tenant To Tenant Migration: Succeeded
