@@ -36,8 +36,8 @@ Be aware of the following before starting a tenant-to-tenant migration.
 -	You might need to reconfigure some applications and settings after tenant-to-tenant migration, such as Dynamics 365 for Outlook, server-side sync, SharePoint, and others.
 -	Once users are created and configured, you must [create a user mapping file](#create-a-user-mapping-file), which is described later in this article.
 -	If the mapped user has a mailbox in the destination tenant, then the mailbox is automatically configured during the migration. For all other users, you need to reconfigure the mailbox.
-  -	If the same mailbox is used in the target tenant, `test@microsoft.com`, then the mailbox is used by default. Before the tenant-to-tenant migration, customers need to migrate and configure their mailboxes on the target tenant.
-  -	If you're using the default onmicrosoft domain, `test@sourcecompanyname.onmicrosoft.com`, the post-migration domain name is changed to `test@targetcompanyname.onmicrosoft.com`. Customers need to reconfigure the mailbox. Learn more about configuring the mailbox in [Connect to Exchange Online](connect-exchange-online.md).
+   - If the same mailbox is used in the target tenant, `test@microsoft.com`, then the mailbox is used by default. Before the tenant-to-tenant migration, customers need to migrate and configure their mailboxes on the target tenant.
+   - If you're using the default onmicrosoft domain, `test@sourcecompanyname.onmicrosoft.com`, the post-migration domain name is changed to `test@targetcompanyname.onmicrosoft.com`. Customers need to reconfigure the mailbox. Learn more about configuring the mailbox in [Connect to Exchange Online](connect-exchange-online.md).
 
 ## Prerequisites
 Be sure to complete the following prerequisites before you start the migration process:
@@ -110,14 +110,14 @@ Create a user mapping file for the source environment to be transferred to the t
     |------|-------------|
     |`SourceUser@sourcetenant.com`	|`DestinationUser@targettenant.com`|
 
-#### For full access users:
+#### For full access users
 
 1. Access the source environment.
 1. Use **Advanced Find** to look for users.
-1. Select **Use Saved View > Full Access Users**, and then select **Edit Columns**.
+1. Select **Use Saved View** > **Full Access Users**, and then select **Edit Columns**.
 1. Remove all columns except the **Full Name** column.
-1. Select **Add Columns > Windows Live ID**.
-1. Select **OK > Results** to see the list of full access users.
+1. Select **Add Columns** > **Windows Live ID**.
+1. Select **OK** > **Results** to see the list of full access users.
 1. Select all the records, select **Export Users** in the ribbon, and then choose **Static Worksheet**.
 1. Follow steps 1-7 above for the destination tenant, if possible. You should now have two separate Excel sheets: one for the source and one for the target tenant.
 1. Open the Excel files for editing.
@@ -130,24 +130,25 @@ Create a user mapping file for the source environment to be transferred to the t
       - `user002@source.com`, `user002@destination.com`
       - `user003@source.com`, `user003@destination.com`
 
-1. Save the file as a CSV.
+1. Save as a CSV file.
 
-#### For administrative access users:
+#### For administrative access users
 
 1. Access the source environment.
 1. Use **Advanced Find** to look for users.
-1. Select **Use Saved View > Administrative Access Users**, and then select **Results** to see the list of administrative access users.
+1. Select **Use Saved View** > **Administrative Access Users**, and then select **Results** to see the list of administrative access users.
 1. If you decide not to include any of these users, skip the following steps. Otherwise, to include these users in the mapping file, do the following:
     1. Find the corresponding users in the destination tenant.
     1. Make sure a valid license is assigned to the destination user in the destination tenant.
        > [!Note]
        >  If the destination user isn't assigned any license, the migration fails.
+    
     1. Save the CSV file that has both full access users and administrative access users mapped.
 
 ## Migration
-Before proceeding with the migration, make sure you have reviewed and completed the preparation process. After you've completed the preparation process, complete the following sections to migrate.
+Before proceeding with the migration, make sure you review and complete the preparation process. After you've completed the preparation process, complete the following sections to migrate.
 
-### Install PowerShell for Power Platform administrators (both source and target admins) 
+### Install PowerShell for Power Platform Administrators (both source and target admins) 
 The PowerShell for Power Platform Administrators module is the recommended PowerShell module for interacting with admin capabilities. For information that helps you get started with the PowerShell for Power Platform Administrators module, go to [Get started with PowerShell for Power Platform Administrators](powershell-getting-started.md) and [Installing PowerShell for Power Platform Administrators](powershell-installation.md).
 
 Install or update the necessary module by using one of the following commands:
@@ -167,9 +168,9 @@ Use the Install-Module cmdlet to install the Azure PowerShell module:
 Install-Module -Name Az -Repository PSGallery -Force
 ```
 
-### Sign into Microsoft Power Platform (both source and target admins)
+### Sign in to Microsoft Power Platform (both source and target admins)
 
-Sign into Microsoft Power Platform. This step allows administrators to authenticate and access the Power Platform environment.
+Sign in to Microsoft Power Platform. This step allows administrators to authenticate and access the Power Platform environment.
 
 ```PowerShell
 Add-PowerAppsAccount
@@ -183,14 +184,18 @@ You must have Power Platform administrator or Dynamics 365 administrator credent
 ```PowerShell
 TenantToTenant-SubmitMigrationRequest –EnvironmentName {EnvironmentId} -TargetTenantID {TenantID}
 ```
-You can view the status and MigrationID using the following command.
+You can view the status and MigrationID using the following command:
 
 ```PowerShell
 TenantToTenant-ViewMigrationRequest
 ```
 > [!Note]
 > Record the MigrationID, which is used in further migration commands.
-> Source Tenant MigrationID is different from Destination Tenant MigrationID
+> Source Tenant MigrationID is different from Destination Tenant MigrationID.
+
+
+
+
 
 ### View and approve migration request (target admin)
 The admin of the destination tenant should run the following command to see all the migration requests and status. The admin can review all the migration requests and options to approve or reject. 
