@@ -1,30 +1,31 @@
 ---
 title: Get leadership buy-in and organization alignment
-description: Guidance for achieving leadership buy-in and organization alignment
+description: Achieve leadership buy-in and organizational alignment for Power Platform adoption with clear objectives and actionable initiatives.
+#customer intent: As a business leader, I want to secure leadership buy-in and organizational alignment for Power Platform adoption so that the initiative has the necessary support and resources to succeed.
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/28/2025
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: sericks
+ms.reviewer: pankajsharma2087
 ---
 
 # Get leadership buy-in and organization alignment
 
-This article describes a common vision for Power Platform - getting leadership buy-in and organization alignment. It follows a [structured framework](../vision.md) that includes defining clear objectives, measurable key results, and actionable initiatives. This article aims to guide you in creating your own vision for Power Platform adoption.
+This article describes a common vision for Power Platform—getting leadership buy-in and organization alignment. It follows a [structured framework](../vision.md) that includes defining clear objectives, measurable key results, and actionable initiatives. This article aims to guide you in creating your own vision for Power Platform adoption.
 
 ## Vision
 
-Getting leadership buy-in and organization alignment is a common vision for Power Platform adoption because it ensures that the initiative has the necessary support and resources to succeed. Leadership buy-in helps secure funding, allocate resources, and prioritize the adoption efforts within the organization. When leaders are on board, they can champion the initiative, drive cultural change, and set the tone for its importance.
+Getting leadership buy-in and organizational alignment is a common vision for Power Platform adoption because it ensures that the initiative has the necessary support and resources to succeed. Leadership buy-in helps secure funding, allocate resources, and prioritize the adoption efforts within the organization. When leaders are on board, they can champion the initiative, drive cultural change, and set the tone for its importance.
 
-Organizational alignment ensures that all departments and teams are working towards the same goals and understand the benefits of Power Platform. It fosters collaboration, reduces resistance to change, and ensures that the platform is used effectively across the organization. With leadership support and organizational alignment, the adoption process becomes smoother, more efficient, and more likely to deliver the desired outcomes, such as increased productivity, innovation, and return of investment (ROI).
+Organizational alignment ensures that all departments and teams are working towards the same goals and understand the benefits of Power Platform. It fosters collaboration, reduces resistance to change, and ensures that the platform is used effectively across the organization. With leadership support and organizational alignment, the adoption process becomes smoother, more efficient, and more likely to deliver the desired outcomes, such as increased productivity, innovation, and return on investment (ROI).
 
 ## Objectives
 
-Objectives are the key themes or focus areas that the strategy aims to achieve. They're broad, overarching goals that align with the organizational vision and priorities. Objectives provide direction and set the stage for the initiatives and key results. Objectives help ensure that everyone in the organization understands what the strategy is aiming to accomplish and why it's important. 
+Objectives are the key themes or focus areas that the strategy aims to achieve. They're broad, overarching goals that align with the organizational vision and priorities. Objectives provide direction and set the stage for the initiatives and key results. Objectives help ensure that everyone in the organization understands what the strategy aims to accomplish and why it's important.
 
-Typical objectives for getting leadership buy-in and organization alignment are:
+Typical objectives for getting leadership buy-in and organization alignment include:
 
 - **Drive organizational improvement**: Secure leadership support and align organizational efforts to enhance overall performance and drive continuous improvement.
 - **Communicate the value of Power Platform effectively and elevate key stakeholder perception**: Increase awareness and understanding of Power Platform’s value among key stakeholders through targeted internal marketing campaigns.
@@ -36,9 +37,9 @@ Typical objectives for getting leadership buy-in and organization alignment are:
 
 ## Measurable key results
 
-Key results are specific, quantifiable outcomes that indicate progress towards achieving the strategic objectives. They provide clear benchmarks for success and help in tracking performance. Defining key results is necessary because they offer a way to measure the effectiveness of the initiatives and ensure that the objectives are being met. Key results should be realistic, time-bound, and directly linked to the objectives. 
+Key results are specific, quantifiable outcomes that indicate progress towards achieving the strategic objectives. They provide clear benchmarks for success and help in tracking performance. Defining key results is necessary because they offer a way to measure the effectiveness of the initiatives and ensure that the objectives are met. Key results should be realistic, time-bound, and directly linked to the objectives. 
 
-Typical key results, aligned with some of the [objectives](#objectives), for getting leadership buy-in and organization alignment are:
+Typical key results, aligned with some of the [objectives](#objectives), for getting leadership buy-in and organizational alignment include:
 
 - Ensure that key strategic use cases are built on top of Power Platform, with a target of ___ use cases implemented by the end of the quarter. 
 - Increase the number of Power Platform projects serviced by central IT to ___ projects per quarter. 
@@ -50,7 +51,7 @@ Typical key results, aligned with some of the [objectives](#objectives), for get
 
 Initiatives are the specific actions or projects that need to be implemented to achieve the objectives. They outline what needs to be done in the immediate term, in the next year and in the next three years. Initiatives provide a roadmap for action and ensure that there's a clear plan in place to reach the objectives. Initiatives should be actionable, prioritized, and aligned with the key results. 
 
-Typical initiatives, aligned with some of the [objectives](#objectives), for getting leadership buy-in and organization alignment are:
+Typical initiatives, aligned with some of the [objectives](#objectives), for getting leadership buy-in and organization alignment include:
 
 - **Drive organizational improvement**:
     - Engage senior leaders through presentations and discussions that highlight the strategic benefits of Power Platform adoption.

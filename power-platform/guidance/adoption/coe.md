@@ -1,6 +1,7 @@
 ---
-title: "Establishing a Center of Excellence - Microsoft Power Platform | MicrosoftDocs"
+title: "Establishing a Microsoft Power Platform Center of Excellence"
 description: "Establishing a Microsoft Power Platform Center of Excellence (CoE) means investing in and nurturing organic growth while maintaining governance and control."
+#customer intent: As an IT admin, I want to establish a Microsoft Power Platform Center of Excellence so that I can maximize the platform’s potential and ensure its sustainable, scalable, and secure use across the enterprise.
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: conceptual
@@ -19,7 +20,7 @@ This article outlines the key steps and best practices for setting up a successf
 
 ## Get started
 
-Establishing a CoE is key to driving operational excellence. A CoE offers governance, best practices, and support to help your organization adopt Power Platform ore effectively. A key principle is to clarify why you're setting up a CoE, what you aim to accomplish, and the key business outcomes you hope to achieve. Then get started and learn and evolve along the way. Defining clear [vision, metrics, and goals](vision.md) helps you achieve positive business outcomes and alignment with your organizational strategy.
+Establishing a CoE is key to driving operational excellence. A CoE offers governance, best practices, and support to help your organization adopt Power Platform more effectively. A key principle is to clarify why you're setting up a CoE, what you aim to accomplish, and the key business outcomes you hope to achieve. Then get started and learn and evolve along the way. Defining clear [vision, metrics, and goals](vision.md) helps you achieve positive business outcomes and alignment with your organizational strategy.
 
 A CoE is designed to drive innovation and improvement. By centralizing expertise and resources, a CoE accelerates adoption, ensures compliance, and builds a culture of continuous improvement, empowering your organization to maximize the full potential of Power Platform. As a central function it can break down geographic and organizational silos to bring together like-minded people with similar business goals to share knowledge and success, while at the same time providing standards, consistency, and governance to the organization. In summary, a CoE can be a powerful way for an organization to align around business goals rather than individual department metrics.
 
@@ -27,20 +28,20 @@ Strategic planning and alignment with organizational goals keep the CoE focused 
 
 By staying connected to the broader strategy, the CoE can drive high-impact initiatives, respond swiftly to change, and engage stakeholders at every level, all of which propel the organization toward lasting success.
 
-Learn more: [Vision, objectives, measurable key results and key iniatives for establishing a Center of Excellence with governance patterns and practices](common-vision/establish-coe.md)
+Learn more: [Vision, objectives, measurable key results and key initiatives for establishing a Center of Excellence with governance patterns and practices](common-vision/establish-coe.md)
 
 ## Form a core team
 
 Typically, the following people or departments are key drivers or stakeholders when establishing a Center of Excellence:
 
-- **Executive sponsors**: Senior leaders who provide strategic direction and secure necessary resources. Assist the CoE team in identifying and prioritizing business needs, communicate the vision to leaders, actively use Power Platform to drive adoption, and promote the process with visible executive sponsor engagement.
+- **Executive sponsors**: Senior leaders who provide strategic direction and secure necessary resources. They assist the CoE team in identifying and prioritizing business needs, communicate the vision to leaders, actively use Power Platform to drive adoption, and promote the process with visible executive sponsor engagement.
 - **CoE lead**: A dedicated leader responsible for overseeing the CoE’s operations and initiatives.
-- **Subject Matter Experts (SMEs)**: Individuals with deep knowledge of Power Platform and specific business domains.
-- **Developers and IT Professionals**: Technical experts who can build and maintain solutions.
+- **Subject matter experts (SMEs)**: Individuals with deep knowledge of Power Platform and specific business domains.
+- **Developers and IT professionals**: Technical experts who can build and maintain solutions.
 - **Change management specialists**: Professionals who can drive user adoption and manage organizational change.
 - **Technology admins**: Enable adoption by ensuring platform security, compliance, and efficiency. Support effective use through environment strategies, governance policies, user and capacity management, and data availability via connectors, integration, or migration.
 
-Clearly defined roles and responsibilities are essential for the sustained success of your Power Platform Center of Excellence. To ensure clarity in goals, roles, and tasks, learn more: [Define roles and responsibilities](roles.md).
+Clearly defined roles and responsibilities are essential for the sustained success of your Power Platform Center of Excellence. To ensure clarity in goals, roles, and tasks, learn more at [Define roles and responsibilities](roles.md).
 
 Evolution of roles within a Center of Excellence (CoE) is a natural part of its growth. Initially, it’s more important to focus on engaging stakeholders across the organization rather than having every role perfectly defined from the start. As the CoE matures and adoption increases, roles can be refined and expanded based on the needs and feedback from the team.
 
@@ -64,9 +65,9 @@ Learn more:
 
 To maximize the impact of Power Platform, the CoE should offer comprehensive training and support to users. This includes:
 
-- **Training programs**: Providing structured training programs is essential to equip users with the knowledge and skills they need to effectively utilize Power Platform tools. These programs can include a variety of formats such as in-person workshops, online courses, webinars, and hands-on labs. The training should cover fundamental concepts, advanced techniques, and best practices for using Power Platform tools like Power BI, Power Apps, Power Automate, and Power Virtual Agents. Tailoring the training content to different user roles and skill levels ensures that everyone, from beginners to advanced users, can benefit.
+- **Training programs**: Providing structured training programs is essential to equip users with the knowledge and skills they need to effectively use Power Platform tools. These programs can include a variety of formats such as in-person workshops, online courses, webinars, and hands-on labs. The training should cover fundamental concepts, advanced techniques, and best practices for using Power Platform tools like Power BI, Power Apps, Power Automate, and Power Virtual Agents. Tailoring the training content to different user roles and skill levels ensures that everyone, from beginners to advanced users, can benefit.
 - **Documentation and resources**: Creating a comprehensive library of documentation and resources is crucial for ongoing user support. This includes detailed guides, step-by-step tutorials, FAQs, and troubleshooting tips. Well-organized and easily accessible documentation helps users find answers to their questions quickly and efficiently. Additionally, providing templates, sample applications, and code snippets can accelerate the development process and inspire users to create their own solutions.
-- **Community of Practice**: Establishing a community of practice fosters collaboration and knowledge sharing among users. This can be achieved by setting up forums, user groups, and online communities where employees can ask questions, share their experiences, and collaborate on projects. Regularly scheduled meetups, webinars, and hackathons can further encourage engagement and innovation. By creating a supportive community, the CoE can help users stay motivated, learn from each other, and continuously improve their skills.
+- **Community of practice**: Establishing a community of practice fosters collaboration and knowledge sharing among users. This can be achieved by setting up forums, user groups, and online communities where employees can ask questions, share their experiences, and collaborate on projects. Regularly scheduled meetups, webinars, and hackathons can further encourage engagement and innovation. By creating a supportive community, the CoE can help users stay motivated, learn from each other, and continuously improve their skills.
 
 <!-- TODO update when the nurture and ready sections are updated -->
 Learn more: [Nurture best practices](nurture-best-practices.md)
@@ -75,10 +76,10 @@ Learn more: [Nurture best practices](nurture-best-practices.md)
 
 The CoE should promote a culture of innovation and continuous improvement by:
 
-- **Encouraging experimentation**: Creating an environment where employees feel empowered to explore and experiment with the Power Platform is crucial. This can be achieved by providing sandbox environments where users can test new ideas without impacting production systems. Encouraging a mindset of experimentation helps uncover innovative solutions and allows employees to learn from both successes and failures. Providing resources such as tutorials, templates, and access to advanced features can further stimulate creativity and exploration.
-- **Recognizing and rewarding success**: Celebrating achievements and recognizing contributors is vital for maintaining motivation and fostering a positive culture. The CoE should highlight successful projects through internal newsletters, company-wide meetings, or dedicated recognition events. Implementing a rewards program that acknowledges outstanding contributions can also incentivize employees to strive for excellence. By showcasing success stories, the CoE can inspire others and demonstrate the tangible benefits of leveraging the Power Platform.
-- **Collecting feedback**: Regularly gathering feedback from users is essential for continuous improvement. The CoE should implement mechanisms such as surveys, feedback forms, and focus groups to collect insights from users about their experiences and challenges. Analyzing this feedback helps identify areas for improvement and informs the development of new features or enhancements. Additionally, creating open channels for feedback encourages a culture of transparency and collaboration.
-- **Staying updated**: Keeping abreast of the latest Power Platform features and industry trends is crucial for maintaining a competitive edge. The CoE should regularly review updates from Microsoft, attend industry conferences, and participate in relevant webinars and training sessions. Sharing this knowledge with the broader organization through newsletters, workshops, or internal training sessions ensures that everyone stays informed about new capabilities and best practices. Staying updated also enables the CoE to proactively adopt new features and integrate them into existing processes.
+- **Encouraging experimentation**: Create an environment where employees feel empowered to explore and experiment with the Power Platform. Provide sandbox environments where users can test new ideas without impacting production systems. Encourage a mindset of experimentation to uncover innovative solutions and allow employees to learn from both successes and failures. Provide resources such as tutorials, templates, and access to advanced features to further stimulate creativity and exploration.
+- **Recognizing and rewarding success**: Celebrate achievements and recognize contributors to maintain motivation and foster a positive culture. Highlight successful projects through internal newsletters, company-wide meetings, or dedicated recognition events. Implement a rewards program that acknowledges outstanding contributions to incentivize employees to strive for excellence. By showcasing success stories, the CoE can inspire others and demonstrate the tangible benefits of leveraging the Power Platform.
+- **Collecting feedback**: Regularly gather feedback from users for continuous improvement. Implement mechanisms such as surveys, feedback forms, and focus groups to collect insights from users about their experiences and challenges. Analyze this feedback to identify areas for improvement and inform the development of new features or enhancements. Additionally, create open channels for feedback to encourage a culture of transparency and collaboration.
+- **Staying updated**: Keep abreast of the latest Power Platform features and industry trends to maintain a competitive edge. Regularly review updates from Microsoft, attend industry conferences, and participate in relevant webinars and training sessions. Share this knowledge with the broader organization through newsletters, workshops, or internal training sessions to ensure everyone stays informed about new capabilities and best practices. Staying updated also enables the CoE to proactively adopt new features and integrate them into existing processes.
 
 ## Measure and communicate success
 
@@ -86,7 +87,7 @@ To track the progress and success of Power Platform adoption and your CoE, it’
 
 This structured approach enhances effectiveness, showcases value, and fuels innovation. Choose the framework that best suits your needs. Here are a few tools to help define success criteria and metrics:
 
-- **Defining Key Performance Indicators (KPIs)**: Establishing metrics to track the CoE’s performance. Learn more: [Define vision, metrics and goals](vision.md)
+- **Defining key performance indicators (KPIs)**: Establishing metrics to track the CoE’s performance. Learn more: [Define vision, metrics and goals](vision.md)
 - **Measure the business value of Power Platform solutions**: Measuring business value in Power Platform is an important aspect of ensuring success and return on investment. Learn more: [Business value measurement](business-value.md)
 - **Regular reporting**: Providing updates to executive sponsors and other stakeholders.
 - **Showcasing success stories**: Sharing case studies and testimonials to demonstrate the value of the CoE. Learn more: [Share success stories](nurture-best-practices.md)

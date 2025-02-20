@@ -1,18 +1,19 @@
 ---
-title: Measure value and realize return of investment
-description: Guidance for measuring value and realizing return of investment
+title: Measure value and realize return on investment
+description: Learn how to measure value and realize ROI with Power Platform. Follow a structured framework to align initiatives with strategic goals and deliver tangible benefits.
+#customer intent: Learn how to measure value and realize ROI with Power Platform. Follow a structured framework to align initiatives with strategic goals and deliver tangible benefits.
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/28/2025
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: sericks
+ms.reviewer: pankajsharma2087
 ---
 
-# Measure value and realize return of investment
+# Measure value and realize return on investment
 
-This article describes a common vision for Power Platform - measuring value and realizing return of investment. It follows a [structured framework](../vision.md) that includes defining clear objectives, measurable key results, and actionable initiatives. This article aims to guide you in creating your own vision for Power Platform adoption.
+This article describes a common vision for Power Platform—measuring value and realizing return on investment. It follows a [structured framework](../vision.md) that includes defining clear objectives, measurable key results, and actionable initiatives. This article aims to guide you in creating your own vision for Power Platform adoption.
 
 ## Vision
 
@@ -24,9 +25,9 @@ By focusing on ROI, organizations can prioritize projects that provide the most 
 
 Objectives are the key themes or focus areas that the strategy aims to achieve. They're broad, overarching goals that align with the organizational vision and priorities. Objectives provide direction and set the stage for the initiatives and key results. Objectives help ensure that everyone in the organization understands what the strategy is aiming to accomplish and why it's important. 
 
-Typical objectives for measuring value and realizing return of investment are:
+Typical objectives for measuring value and realizing return of investment include:
 
-- **Cultivate an value mindset**: Foster a culture that prioritizes return on investment (ROI) in all Power Platform initiatives. Encourage stakeholders to think critically about the financial and strategic benefits of their projects.
+- **Cultivate a value mindset**: Foster a culture that prioritizes return on investment (ROI) in all Power Platform initiatives. Encourage stakeholders to think critically about the financial and strategic benefits of their projects.
 - **Prioritize value/impact-first delivery**: Emphasize the importance of delivering projects that provide significant value and impact. Prioritize initiatives that align with business goals and demonstrate clear benefits.
 - **Understand ROI and its significance**: Ensure all team members have a solid understanding of ROI and its importance. Provide training and resources to help them grasp how their work contributes to the overall financial health of the organization.
 - **Establish processes for predictable cost and ROI management**: Implement processes to manage costs and ROI predictably. Use tools and methodologies that allow for accurate forecasting and tracking of expenses and returns.
@@ -41,9 +42,9 @@ Typical objectives for measuring value and realizing return of investment are:
 
 ## Measurable key results
 
-Key results are specific, quantifiable outcomes that indicate progress towards achieving the strategic objectives. They provide clear benchmarks for success and help in tracking performance. Defining key results is necessary because they offer a way to measure the effectiveness of the initiatives and ensure that the objectives are being met. Key results should be realistic, time-bound, and directly linked to the objectives. 
+Key results are specific, quantifiable outcomes that indicate progress towards achieving the strategic objectives. They provide clear benchmarks for success and help in tracking performance. Defining key results is necessary because they offer a way to measure the effectiveness of the initiatives and ensure that the objectives are met. Key results should be realistic, time-bound, and directly linked to the objectives. 
 
-Typical key results, aligned with some of the [objectives](#objectives), for measuring value and realizing return of investment are:
+Typical key results, aligned with some of the [objectives](#objectives), for measuring value and realizing return on investment include:
 
 - Establish a process for determining platform ROI, ensuring a clear method for measuring potential and achieved value for apps and enablement work, with a ___% accuracy rate. 
 - Develop a polished process for value quantification and ROI, evaluate developed solutions to validate results, and publish headlines to sponsors, achieving a ___% success rate. 
@@ -59,9 +60,9 @@ Save costs and innovate more without compromising quality, achieving a cost redu
 
 ## Key initiatives
 
-Initiatives are the specific actions or projects that need to be implemented to achieve the objectives. They outline what needs to be done in the immediate term, in the next year and in the next three years. Initiatives provide a roadmap for action and ensure that there's a clear plan in place to reach the objectives. Initiatives should be actionable, prioritized, and aligned with the key results. 
+Initiatives are the specific actions or projects that need to be implemented to achieve the objectives. They outline what needs to be done in the immediate term, in the next year and in the next three years. Initiatives provide a roadmap for action and ensure that there's a clear plan to reach the objectives. Initiatives should be actionable, prioritized, and aligned with the key results. 
 
-Typical initiatives, aligned with some of the [objectives](#objectives), for measuring value and realizing return of investment are:
+Typical initiatives, aligned with some of the [objectives](#objectives), for measuring value and realizing return on investment include:
 
 - **Establish and monitor impactful KPIs**
   - Identify key metrics that reflect the financial and strategic benefits of Power Platform projects.

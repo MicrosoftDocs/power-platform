@@ -1,18 +1,19 @@
 ---
 title: Improve employee experience
-description: Guidance for improving employee experience with Power Platform adoption
+description: Improve employee experience with Power Platform adoption. Learn how to enhance productivity, engagement, and job satisfaction through intuitive, low-code tools.
+#customer intent: As an IT admin, I want to implement Power Platform adoption so that employees can solve their own problems and streamline workflows.
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/28/2025
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: sericks
+ms.reviewer: pankajsharma2087
 ---
 
 # Improve employee experience
 
-This article describes a common vision for Power Platform - improving employee experience. It follows a [structured framework](../vision.md) that includes defining clear objectives, measurable key results, and actionable initiatives. This article aims to guide you in creating your own vision for Power Platform adoption.
+This article describes a common vision for Power Platform—improving employee experience. It follows a [structured framework](../vision.md) that includes defining clear objectives, measurable key results, and actionable initiatives. This article aims to guide you in creating your own vision for Power Platform adoption.
 
 ## Vision
 
@@ -20,9 +21,9 @@ Improving employee experience is a common vision for Power Platform adoption bec
 
 ## Objectives
 
-Objectives are the key themes or focus areas that the strategy aims to achieve. They're broad, overarching goals that align with the organizational vision and priorities. Objectives provide direction and set the stage for the initiatives and key results. Objectives help ensure that everyone in the organization understands what the strategy is aiming to accomplish and why it's important. 
+Objectives are the key themes or focus areas that the strategy aims to achieve. They're broad, overarching goals that align with the organizational vision and priorities. Objectives provide direction and set the stage for the initiatives and key results. Objectives help ensure that everyone in the organization understands what the strategy aims to accomplish and why it's important.
 
-Typical objectives for improving employee experience are:
+Typical objectives for improving employee experience include:
 
 - **Foster a collaborative culture**: Create an environment that encourages teamwork and knowledge sharing across the organization.
 - **Enhance employee satisfaction**: Improve overall employee satisfaction by providing tools and resources that make their work easier and more fulfilling.
@@ -33,9 +34,9 @@ Typical objectives for improving employee experience are:
 
 ## Measurable key results
 
-Key results are specific, quantifiable outcomes that indicate progress towards achieving the strategic objectives. They provide clear benchmarks for success and help in tracking performance. Defining key results is necessary because they offer a way to measure the effectiveness of the initiatives and ensure that the objectives are being met. Key results should be realistic, time-bound, and directly linked to the objectives. 
+Key results are specific, quantifiable outcomes that indicate progress towards achieving the strategic objectives. They provide clear benchmarks for success and help in tracking performance. Defining key results is necessary because they offer a way to measure the effectiveness of the initiatives and ensure that the objectives are met. Key results should be realistic, time-bound, and directly linked to the objectives. 
 
-Typical key results, aligned with some of the [objectives](#objectives), for improving employee experience are:
+Typical key results, aligned with some of the [objectives](#objectives), for improving employee experience include:
 
 - **Drive tangible outcomes**: 
     - Improve employee experience by ensuring that employees are more productive and work on tasks with higher value, aiming for a ___% increase in productivity. 
@@ -47,15 +48,15 @@ Typical key results, aligned with some of the [objectives](#objectives), for imp
 
 ## Key initiatives
 
-Initiatives are the specific actions or projects that need to be implemented to achieve the objectives. They outline what needs to be done in the immediate term, in the next year and in the next three years. Initiatives provide a roadmap for action and ensure that there's a clear plan in place to reach the objectives. Initiatives should be actionable, prioritized, and aligned with the key results. 
+Initiatives are the specific actions or projects that need to be implemented to achieve the objectives. They outline what needs to be done in the immediate term, in the next year, and in the next three years. Initiatives provide a roadmap for action and ensure that there's a clear plan in place to reach the objectives. Initiatives should be actionable, prioritized, and aligned with the key results. 
 
-Typical initiatives, aligned with some of the [objectives](#objectives), for improving employee experience are:
+Typical initiatives, aligned with some of the [objectives](#objectives), for improving employee experience include:
 
 - **Foster a collaborative culture**: 
     - Implement collaboration tools and platforms to facilitate communication between Power Platform makers. 
     - Organize regular cross-functional workshops and activities that help teams collaborate with each other, such as hackathons.
     - Recognize and reward collaborative efforts and successful team projects.
-    - Create and sustain an online Community of Practice for Power Platform practitioners 
+    - Create and sustain an online community of practice for Power Platform practitioners
     - Establish and communicate a way for makers to easily collaborate with IT 
 - **Enhance employee satisfaction**: 
     - Conduct regular surveys to gather feedback on employee needs and preferences.
