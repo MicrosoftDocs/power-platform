@@ -95,6 +95,10 @@
               href: adoption/manage-default-environment.md
         - name: Operate
           items:
+            - name: Overview
+              href: adoption/operate-overview.md
+            - name: Establish effective Application Lifecycle Management practices
+              href: adoption/alm.md
             - name: Report on resource usage
               href: adoption/resource-usage.md
             - name: Track user access
