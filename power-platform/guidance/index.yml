@@ -71,11 +71,11 @@ productDirectory:
           text: Manage your security posture 
         - url: /power-platform/guidance/adoption/threat-detection
           text: Detect threats
-        - url: /power-platform/guidance/adoption/admin-best-practices
+        - url: /power-platform/guidance/adoption/data-protection
           text: Establish data protection and privacy controls
-        - url: /power-platform/guidance/adoption/admin-best-practices
+        - url: /power-platform/guidance/adoption/conditional-access
           text: Configure identity and access management
-        - url: /power-platform/guidance/adoption/admin-best-practices
+        - url: /power-platform/guidance/adoption/compliance
           text: Compliance
     - title: Govern
       # imageSrc should be square in ratio with no white space
@@ -97,14 +97,16 @@ productDirectory:
       # imageSrc should be square in ratio with no white space
       imageSrc: ./media/operate.svg
       links:
-        - url: /power-platform/guidance/adoption/methodology
+        - url: /power-platform/guidance/adoption/support-strategy
           text: Establish a support strategy
-        - url: /power-platform/guidance/adoption/strategy-best-practices
+        - url: /power-platform/guidance/adoption/observability
           text: Observability
-        - url: /power-platform/guidance/adoption/admin-best-practices
+        - url: /power-platform/guidance/adoption/data-resilience
           text: Data Resilience
-        - url: /power-platform/guidance/adoption/admin-best-practices
-          text: Application Lifecycle Management 
+        - url: /power-platform/guidance/adoption/alm
+          text: Establish effective Application Lifecycle Management practices
+        - url: /power-platform/guidance/adoption/manage-resistence
+          text: Manage resistance and avoid anti-patterns
     - title: Ready
       # imageSrc should be square in ratio with no white space
       imageSrc: ./media/innovate.svg

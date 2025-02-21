@@ -20,5 +20,3 @@ Use the following articles to document your Power Platform plan:
 1. [Evaluate delivery models](delivery-models.md.md). Consider ways to structure your team and decide what is the best fit for your situation and organization.
 1. [Establishing a license assignment strategy](license-assignment-strategies.md). Ensure retorn on investment, user adoption, and optimizing costs.
 1. [Modernize applications with Power Platform](../white-papers/application-modernization.md). Explore the benefits, strategies, and best practices of modernizing applications with Power Platform.
-
-<!-- we should have an article here about what to move to power platform and how to assess that. wondering if to move the common visions here? -->
