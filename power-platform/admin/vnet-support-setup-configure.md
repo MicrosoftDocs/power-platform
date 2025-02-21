@@ -46,25 +46,11 @@ The following diagram shows virtual network support in a Power Platform environm
 
 The following four steps help you set up your virtual network.
 
-1. [Register Microsoft.PowerPlatform as a resource provider](#register-microsoftpowerplatform-as-a-resource-provider) for the subscription that contains your virtual network.
-
 1. [Set up the virtual network and subnets](#set-up-the-virtual-network-and-subnets).
 
 1. [Create the enterprise policy](#create-the-enterprise-policy).
 
 1. [Configure your Power Platform environment](#configure-your-power-platform-environment).
-
-### Register Microsoft.PowerPlatform as a resource provider
-
-1. Sign in to the [Azure portal](https://portal.azure.com/) and navigate to your subscription.
-
-1. Select **Resource providers**.
-
-1. Search for and select **Microsoft.PowerPlatform**.
-
-1. Select **Register**.
-
-More information: [Register resource provider](/azure/azure-resource-manager/management/resource-providers-and-types#register-resource-provider-1)
 
 ### Set up the virtual network and subnets
 
@@ -75,14 +61,17 @@ When you set up your virtual network, you need to delegate both a primary and a 
 
 1. [Set up the virtual network and subnets](/azure/virtual-network/manage-subnet-delegation?tabs=manage-subnet-delegation-portal).
 
-1. You need to delegate subnets that don't have any resources connected to them. Delegate the subnet to the Power Platform enterprise policies by running a [subnet injection script](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/enterprisePolicies#1-setup-virtual-network-for-subnet-injection) for both your primary and failover subnets.
-
    > [!IMPORTANT]
    > Be sure that the subnet you create has at least a /24 Classless Inter-Domain Routing (CIDR) address block, which equates to 251 IP addresses, including 5 reserved IP addresses. If you plan to use the same delegated subnet for multiple Power Platform environments, you may need a larger IP address block than /24.
 
    To allow internet access within Power Platform containers, create an [Azure NAT gateway](/azure/nat-gateway/nat-overview) for the delegated subnets.
 
-1. Review the number of IP addresses that are allocated to each subnet and consider the load of the environment. Both primary and failover subnets must have the same number of available IP addresses.
+1. Ensure that you have setup your subscription for the [Microsoft.PowerPlatform resource provider](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/enterprisePolicies#how-to-run-setup-scripts)
+
+
+1. You need to delegate subnets that don't have any resources connected to them. Delegate the subnet to the Power Platform enterprise policies by running a [subnet injection script](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/enterprisePolicies#1-setup-virtual-network-for-subnet-injection) for both your primary and failover subnets.
+
+1. Review the number of IP addresses that are allocated to each subnet and consider the load of the environment. Both subnets must have the same number of available IP addresses.
 
 ### Create the enterprise policy
 
