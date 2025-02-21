@@ -81,7 +81,7 @@ If your organization already has an existing process for license assignment, adm
 
 Administrators can review the list of users to whom licenses were assigned through the auto-claim policy in the Microsoft 365 admin center. Then, they can make changes, as needed, such as unassigning auto-claim-assigned licenses and moving users to designated groups to use Microsoft Entra group-based licensing. For more information about group based licensing, go to [Group-based licensing additional scenarios](/entra/identity/users/licensing-group-advanced).
 
-Here are some commands that can assist in unassigning licenses and adding users to the required Microsoft Entra group.
+Here are some commands that can help unassigning licenses and adding users to the required Microsoft Entra group.
 
 ```PowerShell
 ##
