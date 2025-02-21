@@ -1,12 +1,12 @@
 ---
 title: Virtual Network support white paper
 description: Learn about Microsoft Azure Virtual Network support within Power Platform.
-author: ritesp
+author: faix
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/06/2025
+ms.date: 02/21/2025
 ms.subservice: admin
-ms.author: ritesp
+ms.author: osfaixat
 ms.reviewer: sericks
 search.audienceType: 
   - admin
