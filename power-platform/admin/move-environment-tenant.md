@@ -160,13 +160,6 @@ Update-Module -Name Microsoft.PowerApps.Administration.PowerShell
 
 ### Install Azure PowerShell on Windows (both source and target admins)
 
-
-
-
-
-
-
-
 The Azure PowerShell module is a rollup module. Installing the Azure PowerShell module downloads the generally available modules and makes their cmdlets available for use. Learn more in [Install Azure PowerShell on Windows](/powershell/azure/install-azps-windows?view=azps-11.6.0&tabs=powershell&pivots=windows-psgallery&preserve-view=true).
 
 Use the Install-Module cmdlet to install the Azure PowerShell module:
@@ -323,7 +316,7 @@ Complete the following steps:
     Get-AzStorageBlobContent -Blob "usermapping.csv" -Container $containerName -Destination $destinationPath -Context $storageContext 
     ```
 1. Fix the issues in the user mapping file.
-1. Reupload the file using the steps in [Upload the user mapping file (source admin)](#upload-the-user-mapping-file-(source-admin).
+1. Reupload the file using the steps in [Upload the user mapping file (source admin)](#upload-the-user-mapping-file-(source-admin)).
 
 After successfully completing the [Prepare the environment migration (source admin)](#prepare-the-environment-migration-source-admin), you may proceed with the [Migrate the environment (source admin)](#migrate-the-environment-source-admin) procedure to migrate the environment. Perform the migration within the next seven days. If you don't complete the migration in the next seven days, you must start the [Prepare the environment migration (source admin)](#prepare-the-environment-migration-source-admin) procedure again.
 
@@ -397,10 +390,13 @@ After completing all of the above steps and the migration, you may validate the 
 
 ### Frequently asked questions
 **Are background operations enabled during tenant-to-tenant migration?**
+
 Administration mode is enabled during tenant-to-tenant migration, therefore background operations don't run. Learn more in [Administration mode](admin-mode.md).
 
 **Can we migrate all users of the Dataverse organization?**
+
 We can migrate all users of the Dataverse organization only if users exist in the destination tenant. For example:
 
 `user001@source.com`, `user001@destination.com`
+
 `user002@source.com`, `user002@destination.com`
