@@ -80,7 +80,9 @@ Power Platform lets you co-design, test, deploy and iterate faster than any othe
      **Objectives (what to focus on)**
    :::column-end:::
    :::column span="2":::
-      Co-design with a team​<Br>Demonstrate rapid deployment & iteration​<br>Prove technical feasibility fast
+   - Co-design with a team​
+   - Demonstrate rapid deployment & iteration​
+   - Prove technical feasibility fast
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -96,7 +98,9 @@ Power Platform lets you co-design, test, deploy and iterate faster than any othe
      **Strategic alignment**
    :::column-end:::
    :::column span="2":::
-     Speed of innovation​<br>Engaging employees in improving how they work​<br>Leverage existing IT investments
+   - Speed of innovation​
+   - Engaging employees in improving how they work​
+   - Leverage existing IT investments
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -104,7 +108,8 @@ Power Platform lets you co-design, test, deploy and iterate faster than any othe
      **Tangibles & intangibles**
    :::column-end:::
    :::column span="2":::
-    Development time saved vs custom solution​<br>Reduced IT development backlog / bottleneck
+   - Development time saved vs custom solution​
+   - Reduced IT development backlog or bottleneck
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -112,7 +117,8 @@ Power Platform lets you co-design, test, deploy and iterate faster than any othe
     **Tips for new players**
    :::column-end:::
    :::column span="2":::
-    Choose a coalition of the willing​<Br>Select a use case that would take significant custom development time
+   - Choose a coalition of the willing​
+   - Select a use case that would take significant custom development time
    :::column-end:::
 :::row-end:::
 
