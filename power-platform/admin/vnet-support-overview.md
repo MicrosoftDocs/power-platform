@@ -1,12 +1,12 @@
 ---
 title: Virtual Network support overview
 description: Learn about Microsoft Azure Virtual Network support for Power Platform and Dynamics 365 apps.
-author: ritesp
+author: faix
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/20/2024
+ms.date: 02/21/2025
 ms.subservice: admin
-ms.author: ritesp
+ms.author: osfaixat
 ms.reviewer: sericks
 search.audienceType: 
   - admin
@@ -118,15 +118,15 @@ Virtual Network support for Power Platform is the only supported option for all 
 
 ### Does Virtual Network support Power Platform failover?
 
-Yes, you need to delegate the virtual networks for both azure regions that are associated to your Power Platform region. For example, if your Power Platform environment is in **canada**, you need to create, delegate and configure virtual networks in **canadacentral** and **canadaeast**.
+Yes, you need to delegate the Virtual Networks for both Azure regions that are associated to your Power Platform region. For example, if your Power Platform environment is in **Canada**, you need to create, delegate, and configure Virtual Networks in **CanadaCentral** and **CanadaEast**.
 
 ### How can a Power Platform environment in one region connect to resources hosted in another region?
 
-A Virtual Network linked to a Power Platform environment must reside in the [Power Platform environment's region](/power-platform/admin/regions-overview#what-regions-are-available). If the Virtual Network is in a different region, create a Virtual Network in the Power Platform environment's region and use [Virtual Network peering](/azure/virtual-network/virtual-network-peering-overview) on both azure regions subnet delegated virtual networks to bridge the gap with the virtual network in the separate region.
+A Virtual Network linked to a Power Platform environment must reside in the [Power Platform environment's region](/power-platform/admin/regions-overview#what-regions-are-available). If the Virtual Network is in a different region, create a Virtual Network in the Power Platform environment's region and use [Virtual Network peering](/azure/virtual-network/virtual-network-peering-overview) on both Azure regions subnet delegated Virtual Networks to bridge the gap with the Virtual Network in the separate region.
 
 ### Can I monitor outbound traffic from delegated subnets?
 
-Yes. You can use Network Security Group and firewalls to monitor outbound traffic from delegated subnets. For more information, see [Monitor Azure Virtual Network](/azure/virtual-network/monitor-virtual-network).
+Yes. You can use Network Security Group and firewalls to monitor outbound traffic from delegated subnets. Learn more in [Monitor Azure Virtual Network](/azure/virtual-network/monitor-virtual-network).
 
 ### How many IP addresses does Power Platform need to be delegated in the subnet?
 
@@ -138,11 +138,11 @@ Yes. You can make internet-bound calls from plug-ins or connectors, but the subn
 
 ### Can I update the subnet IP address range after it's delegated to "Microsoft.PowerPlatform/enterprisePolicies"?
 
-No, not while the feature is enabled in your environment. You can't change the IP address range of the subnet after it's delegated to "Microsoft.PowerPlatform/enterprisePolicies." If you do this, the delegation configuration will be broken and the environment will stop working. To change the IP address range, you must remove the delegation feature from your environment, make the necessary changes and then re-enable the feature on your environment.
+No, not while the feature is used in your environment. You can't change the IP address range of the subnet after it's delegated to "Microsoft.PowerPlatform/enterprisePolicies." If you do this, the delegation configuration is broken and the environment stops working. To change the IP address range, you must remove the delegation feature from your environment, make the necessary changes, and then turn on the feature for your environment.
 
 ### Can I update the DNS address of my virtual network after it's delegated to "Microsoft.PowerPlatform/enterprisePolicies"?
 
-No, not while the feature is enabled in your environment. You can't change the DNS address of the virtual network after it's delegated to "Microsoft.PowerPlatform/enterprisePolicies." If you do this, the change will not be picked up in our configuration and your environment may stop working. To change the DNS address, you must remove the delegation feature from your environment, make the necessary changes and then re-enable the feature on your environment.
+No, not while the feature is used in your environment. You can't change the DNS address of the virtual network after it's delegated to "Microsoft.PowerPlatform/enterprisePolicies." If you do this, the change isn't picked up in our configuration and your environment may stop working. To change the DNS address, you must remove the delegation feature from your environment, make the necessary changes, and then turn on the feature for your environment.
 
 ### My Virtual Network has a custom DNS configured. Does Power Platform use my custom DNS?
 
