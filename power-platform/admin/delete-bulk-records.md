@@ -34,7 +34,7 @@ These settings can be found in the Microsoft Power Platform admin center by goin
 
 Make sure you have the System Administrator permission to update the setting.
 
-- Follow the steps in [View your user profile](/powerapps/user/view-your-user-profile).
+- Follow the steps in [View your user information](/powerapps/user/view-your-user-profile).
 - Don’t have the correct permissions? Contact your system administrator.
 
   
@@ -78,8 +78,8 @@ To restore deleted records, complete the following steps:
 8. Select **OK** to confirm the action to restore.
 
 ### Related content
-- [Manage your data](add-remove-sample-data.md)   
-- [Data Encryption](data-encryption.md)
+- [Add or remove sample data](add-remove-sample-data.md)   
+- [Enhance security by encrypting your column-level sensitive data](data-encryption.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
