@@ -49,7 +49,7 @@ To create a new policy, complete the following steps.
 2.	Click the [**Auto-claim policy**](https://admin.microsoft.com/adminportal/home?#/licenses/autoclaimpolicies) tab.
 3.	Click **Add a policy**.
 4.	On the **Name this auto-claim policy** page, enter a name for the policy and click **Next**.
-5.	On the **Set an auto-claim app and product** page, select **Power Apps Per User Plan** in the dropdown list. You can assign the product license on a _per user_ basis or select the **Add user to a security group** option and choose the appropriate group.
+5.	On the **Set an auto-claim app and product** page, select **Power Apps Per User Plan** in the dropdown list. You can assign the product license on a per user basis or select the **Add user to a security group** option and choose the appropriate group.
 6.	On the **Select apps** page, select or clear the checkboxes for the apps to include or exclude with the license.	Click **Next**.
 8.	On the **Review and finish** page, verify the new policy information, make any necessary changes, and click **Create policy**.
 
