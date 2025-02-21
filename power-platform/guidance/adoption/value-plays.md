@@ -49,7 +49,7 @@ They key components of a value play are:
   - **Tangibles and intangibles**: Identify both the tangible and intangible benefits that will be measured. Tangible benefits might include cost savings and time efficiency, while intangible benefits could involve improved stakeholder alignment and user satisfaction.
 - **Tips for new players**: Provide guidance on key aspects to get right when implementing Value Plays. This could include selecting the right use cases, engaging stakeholders early, and iterating based on feedback.
 
-These Value Plays are not intended to be an exhaustive list but rather a starting point for creating a simple, repeatable approach to measuring and demonstrating business value. As your use of Power Platform grows and matures, your Value Plays can become more sophisticated, allowing you to capture and communicate even greater value.
+These value plays are not intended to be an exhaustive list but rather a starting point for creating a simple, repeatable approach to measuring and demonstrating business value. As your use of Power Platform grows and matures, your Value Plays can become more sophisticated, allowing you to capture and communicate even greater value.
 
 ## The innovation accelerator
 
@@ -65,7 +65,7 @@ Power Platform lets you co-design, test, deploy and iterate faster than any othe
 :::row-end:::
 :::row:::
    :::column span="":::
-     **The Play (key activities)**
+     **The play (key activities)**
    :::column-end:::
    :::column span="2":::
       Find a use case with multiple stakeholders that would benefit from co-design​<br>Outline riskiest technical & usability assumptions​<br>Prototype in Power Platform to demonstrate speed of development & iteration​<br>Gauge tangible (eg. development cost savings) and intangible (eg. better stakeholder alignment on requirements) value achieved​<br>Write up the success story
@@ -244,8 +244,8 @@ Help Graduate (or Vacation) Program participants to jump-start their career thro
      **Tangibles & intangibles**
    :::column-end:::
    :::column span="2":::
-    # article readers / comments
-    # Platform projects / solutions per Graduate cohort
+     article readers / comments
+     Platform projects / solutions per Graduate cohort
     Graduate participant engagement / project effectiveness
    :::column-end:::
 :::row-end:::
@@ -692,9 +692,7 @@ Ring-fence the ideation period & emergent design (don’t try to build out the f
 
 ### The reuse, buy, build
 
-(Reverse value play)
-
-Challenge the ‘avoid custom development’ mindset by proving the sustained value & supportability of Power Platform solutions.
+Challenge the *avoid custom development* mindset by proving the sustained value & supportability of Power Platform solutions.
 
 :::row:::
    :::column span="":::
