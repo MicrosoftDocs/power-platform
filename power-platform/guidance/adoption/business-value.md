@@ -1,6 +1,7 @@
 ---
 title: Measuring the business value of Power Platform solutions
-description: Guidance for measuring the business value of Power Platform solutions.
+description: Learn how to measure the business value of Power Platform solutions to ensure success and return on investment.
+#customer intent: As a Power Platform user, I want to measure the business value of Power Platform solutions so that I can ensure success and return on investment.
 author: stjeffer
 contributors: 
 - manuelap-msft
@@ -15,7 +16,7 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/28/2025
 ms.subservice: guidance
-ms.reviewer: sericks
+ms.reviewer: pankajsharma2087
 search.audienceType: 
   - admin
 ms.custom: bap-template
@@ -23,17 +24,17 @@ ms.custom: bap-template
 
 # Measuring the business value of Power Platform solutions
 
-Measuring business value in Power Platform is an important aspect of ensuring success and return on investment. Power Platform provides a low-code/no-code platform for building applications, automating tasks, streamlining business processes, and infusing AI into your solutions. These capabilities can bring significant benefits and it's important to track and measure the value to the business that the platform is delivering.
+Measuring business value in Power Platform is an important aspect of ensuring success and return on investment. Power Platform provides a low-code or no-code platform for building applications, automating tasks, streamlining business processes, and infusing AI into your solutions. These capabilities can bring significant benefits and it's important to track and measure the value to the business that the platform is delivering.
 
-## Why measure value?
+## Why measure value
 
 Why does value measurement matter? It’s the driving force behind your technology investments, ensuring that every initiative is purposeful, aligned with strategic goals, and informed by data.
 
-- **Driving shared purpose**: Value measurement provides a clear purpose by answering the fundamental question, “Why are we doing this?” It gives meaning to your technology investments, ensuring that projects have defined and meaningful goals. This clarity transforms uncertainty about what success looks like into a clear objective that guides actions, prioritizes features, and keeps everyone aligned.
+- **Driving shared purpose**: Value measurement provides a clear purpose by answering the fundamental question, *Why are we doing this?* It gives meaning to your technology investments, ensuring that projects have defined and meaningful goals. This clarity transforms uncertainty about what success looks like into a clear objective that guides actions, prioritizes features, and keeps everyone aligned.
 - **Strategic alignment**: Value measurement ensures that Power Platform initiatives are aligned with the broader strategic goals of the business. This alignment moves technology initiatives from being isolated efforts to directly supporting what the business has identified as important, ensuring that every project contributes to the overall mission.
 - **Informed decision-making**: Measuring business value equips you with the necessary information to make informed decisions about technology investments. Business value is not just a metric; it’s a strategic compass that aligns with organizational goals, optimizes resource allocation, and empowers data-driven decisions. This shift moves decision-making from being based on intuition or subjective opinions to relying on concrete data regarding performance, satisfaction, and cost-effectiveness.
 
-The business value of the platform is often seen through two lenses: IT benefits and the value of the applications that run on it. From an IT perspective, core benefits include reducing development and maintenance costs, reducing third-party license spend, and reducing technical debt.
+The business value of the platform is often seen through two lenses: IT benefits and the value of the applications that run on it. From an IT perspective, core benefits include reducing development and maintenance costs, reducing non-Microsoft license spend, and reducing technical debt.
 
 Power Platform solutions typically help improve one or more business value drivers, such as:
 
@@ -148,7 +149,7 @@ Aligning the business value of Power Platform solutions to the organization's KP
 
 By aligning Power Platform solutions to KPIs and OKRs, organizations ensure that they're addressing the most critical business needs and driving the most significant impact. This can help ensure that Power Platform solutions are seen as valuable investments by senior leaders and decision makers who are often responsible for approving resource allocation. Various tools and calculators are available to help.
 
-## How can we measure business value?
+## How can we measure business value
 
 ### Methods and tools
 
@@ -159,7 +160,7 @@ Key methodologies include:
 - **Stakeholder interviews**: Interviews are invaluable for qualitative insights. Engage with individuals involved in or impacted by the solution. Ask about their experiences, challenges, and perceived improvements. Consider using structured interview guides to ensure consistency and depth in responses. 
 - **Surveys and feedback forms**: Surveys are excellent for quantitative data. They allow collecting structured feedback from a larger audience, including end-users and team members. Use a mix of closed and open-ended questions to capture both measurable data and detailed feedback.
 - **Key performance indicators (KPIs)**: KPIs provide quantifiable data about the solution’s performance. Metrics like response times, resolution times, error rates, user adoption rates, and cost savings can be monitored. Ensure KPIs are aligned with business objectives.
-- **User Analytics**: User analytics tools help understand user behavior and interaction with the solution. Track adoption rates, feature usage, and user engagement. Tools like Power BI can visualize this data for better insights.
+- **User analytics**: User analytics tools help understand user behavior and interaction with the solution. Track adoption rates, feature usage, and user engagement. Tools like Power BI can visualize this data for better insights.
 - **Return on investment (ROI) calculators**: Calculating ROI involves comparing implementation costs against the benefits obtained. Both tangible and intangible benefits, such as efficiency gains, user satisfaction, and reduced operational costs, should be considered. Use standardized ROI calculation methods to ensure accuracy.
 - **360-degree feedback**: Gather feedback from all angles – from end-users and customers to support agents and IT teams. This holistic approach ensures a comprehensive view of the solution’s impact. Use tools like Microsoft Forms or third-party survey platforms to facilitate this process.
 - **Data integration and automation**: Automating data collection and integration with Power Platform tools ensures accurate and real-time data for measurement, reducing manual entry. Utilize connectors and APIs to streamline data flow between systems.
@@ -234,18 +235,18 @@ Learn more:
 - [Set up the Business value toolkit](../coe/setup-business-value-toolkit.md)
 - [Use the Business value toolkit](../coe/business-value-toolkit.md)
 
-## Who do we communicate value to?
+## Who we communicate value to
 
 ### Audience analysis
 
 Different audiences have varying perspectives on business value, making it important to tailor your communication to each group. For example:
 
-- **IT Department**: Focus on cybersecurity, scalability, and technology adoption.
-- **Finance Department**: Highlight cost savings, financial ROI, and investment justification.
-- **Marketing Department**: Emphasize customer engagement and brand reputation.
-- **Operations Department**: Stress process efficiency, productivity, and reduced downtime.
+- **IT department**: Focus on cybersecurity, scalability, and technology adoption.
+- **Finance department**: Highlight cost savings, financial ROI, and investment justification.
+- **Marketing department**: Emphasize customer engagement and brand reputation.
+- **Operations department**: Stress process efficiency, productivity, and reduced downtime.
 
-While communicating value is important, tailoring the message to the audience is even more important. Analyzing your audience involves understanding who the key stakeholders are, their roles and responsibilities, and their preferred methods of receiving information. This ensures that your communications are effective and create a strong connection with your audience.
+While communicating value is important, tailoring the message to the audience is even more important. Analyze your audience by understanding who the key stakeholders are, their roles and responsibilities, and their preferred methods of receiving information. This ensures that your communications are effective and create a strong connection with your audience.
 
 #### Key considerations
 
@@ -255,9 +256,9 @@ While communicating value is important, tailoring the message to the audience is
 - **Interests and concerns**: Align the message with their interests to encourage buy-in.
 - **Knowledge level**: Adjust the level of technical detail to match their understanding.
 
-By taking these factors into account, you can achieve improved engagement, increased credibility, stronger connections, and greater buy-in and support from your stakeholders.
+By considering these factors, you achieve improved engagement, increased credibility, stronger connections, and greater buy-in and support from your stakeholders.
 
-## What framework can we use for measuring value?
+## What framework can we use for measuring value
 
 To build a robust business value measurement framework for Power Platform, follow this structured approach to ensure alignment with your organization’s objectives and goals. Here are the key steps:
 
@@ -273,15 +274,15 @@ To build a robust business value measurement framework for Power Platform, follo
 
 ## Summary
 
-Measuring the business value of Power Platform solutions is important because it provides insights into how these solutions are contributing to the overall success of the organization. By measuring the business value, organizations determine how their investment in Power Platform is yielding the expected results, contributing to the success of the organization's digital transformation strategy, and identify opportunities to improve processes, automate tasks, and optimize resources.
+Measuring the business value of Power Platform solutions is important because it provides insights into how these solutions contribute to the overall success of the organization. By measuring the business value, organizations determine how their investment in Power Platform yields the expected results, contributes to the success of the organization's digital transformation strategy, and identifies opportunities to improve processes, automate tasks, and optimize resources.
 
-This guidance is designed to help you better understand the various measures that can be used to define the value of a Power Platform solution. Asking questions of process owners, focus groups, user groups, and app makers helps you to understand user needs, identify common use cases, evaluate existing solutions, and demonstrate the return on investment to stakeholders.
+This guidance helps you better understand the various measures that can be used to define the value of a Power Platform solution. Asking questions of process owners, focus groups, user groups, and app makers helps you understand user needs, identify common use cases, evaluate existing solutions, and demonstrate the return on investment to stakeholders.
 
 ## Next steps
 
-This article focuses on the app/solution level. Taking a step back and considering the bigger picture of your adoption journey, running specific initiatives can significantly boost adoption by demonstrating how Power Platform can generate business value quickly. But how do you measure and communicate the value of these initiatives? This is where **Value Plays** come into play.
+This article focuses on the app/solution level. Taking a step back and considering the bigger picture of your adoption journey, running specific initiatives can significantly boost adoption by demonstrating how Power Platform can generate business value quickly. But how do you measure and communicate the value of these initiatives? This is where **value plays** come into play.
 
-**Value Plays** are strategic initiatives designed to maximize the value delivered by Power Platform. They help you identify high-impact opportunities and execute them effectively to achieve significant outcomes.
+**Value plays** are strategic initiatives designed to maximize the value delivered by Power Platform. They help you identify high-impact opportunities and execute them effectively to achieve significant outcomes.
 
 > [!div class="nextstepaction"]
 > [Utilize value plays](business-value.md)
@@ -297,7 +298,7 @@ Learn more about measuring business value:
 
 - [How Microsoft measures business value](https://youtu.be/cOkJI_e0Ni0)
 - [Defining the value of a business problem](/power-apps/guidance/planning/defining-business-value)
-- [Total Economic Impact of Power Platform Premium Capabilities (Forrester)](https://info.microsoft.com/ww-landing-forrester-tei-of-power-platform-premium-capabilities.html?LCID=EN-US)
-- [Real-world Examples of measuring and communicating value](https://www.youtube.com/watch?v=L_jRljdk1T0)
+- [Total economic impact of Power Platform Premium capabilities (forrester)](https://info.microsoft.com/ww-landing-forrester-tei-of-power-platform-premium-capabilities.html?LCID=EN-US)
+- [Real-world examples of measuring and communicating value](https://www.youtube.com/watch?v=L_jRljdk1T0)
 
 [!INCLUDE [footer-include](../../includes/footer-banner.md)]
