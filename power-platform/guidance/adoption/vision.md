@@ -1,7 +1,7 @@
 ---
 title: Develop a vision for adopting Microsoft Power Platform
 description: Guidance for developing a vision with goals, reasons, and methods for adopting Microsoft Power Platform
-#customer intent: As a business decision maker, I want to develop a vision for adopting Microsoft Power Platform so that I can align it with our organizational strategy.
+#customer intent: As a Power Platform user, I want to develop a vision for adopting Microsoft Power Platform so that I can align it with our organizational strategy.
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: conceptual
@@ -17,7 +17,7 @@ ms.date: 02/28/2025
 
 Digital transformation is largely nontechnical, focusing on cultural, organizational, and process changes. This guidance covers important aspects in crafting a vision to ensure a successful transformation. Defining a vision and having clear objectives helps you achieve positive business outcomes and alignment with your organizational strategy.
 
-## A structured framework for creating your Power Platform adoption vision
+## A structured framework for creating your Power Platform Adoption vision
 
 Adopting Power Platform can transform businesses in many ways. A vision statement gives clear direction, aligns efforts, and motivates stakeholders. Creating a vision for low-code and AI adoption is a collaborative effort that involves input from various team members over several days to ensure it resonates with the entire organization.
 
@@ -78,7 +78,7 @@ Here are some key steps to guide you through the process of defining a meaningfu
 1. **Reflect organizational values**: Ensure that the vision statement aligns with the core values of your organization. It should reflect what the organization stands for and its commitment to its stakeholders.
 1. **Test and refine**: Once you draft the vision statement, test it with a small group of stakeholders to gather feedback. Refine it based on the feedback to ensure it resonates well and accurately reflects the organization's aspirations.
 
-For instance, a vision statement might be "Transform our business by fostering collaboration and leveraging digital tools to enhance efficiency and customer engagement." This statement clearly outlines the goal, the reason behind it, and the method to achieve it.
+For instance, a vision statement might be - *Transform our business by fostering collaboration and leveraging digital tools to enhance efficiency and customer engagement.* This statement clearly outlines the goal, the reason behind it, and the method to achieve it.
 
 ### Example vision statements
 
@@ -91,35 +91,35 @@ The purpose of these examples is to generate ideas about relevant goals, reasons
 - **Goal:** Empower our workforce to innovate and create impactful solutions
 - **Why:** To drive business value and foster a culture of innovation
 - **Method:** By providing the necessary tools and support
-- **Vision statement:** "Empower our workforce to innovate and create impactful solutions by providing the necessary tools and support to drive business value and foster a culture of innovation."
+- **Vision statement:** *Empower our workforce to innovate and create impactful solutions by providing the necessary tools and support to drive business value and foster a culture of innovation.*
 
 ##### Digital transformation
 
 - **Goal:** Transform our business
 - **Why:** To enhance productivity and improve processes
 - **Method:** By adopting digital tools and processes
-- **Vision statement:** "Transform our business by adopting digital tools and processes that enhance productivity and improve processes."
+- **Vision statement:** *Transform our business by adopting digital tools and processes that enhance productivity and improve processes.*
 
 #### Continuous improvement
 
 - **Goal:** Foster a culture of continuous improvement and learning
 - **Why:** To achieve strategic goals and improve processes
 - **Method:** By implementing robust governance
-- **Vision statement:** "Foster a culture of continuous improvement and learning to achieve strategic goals and improve processes by implementing robust governance."
+- **Vision statement:** *Foster a culture of continuous improvement and learning to achieve strategic goals and improve processes by implementing robust governance.*
 
 #### Automation and efficiency
 
 - **Goal:** Streamline our processes and increase efficiency
 - **Why:** To enhance productivity and drive business value
 - **Method:** By using AI and automation
-- **Vision statement:** "Streamline our processes and increase efficiency by leveraging AI and automation to enhance productivity and drive business value."
+- **Vision statement:** *Streamline our processes and increase efficiency by leveraging AI and automation to enhance productivity and drive business value.*
 
 #### Increased productivity and accelerated value
 
 - **Goal:** Boost productivity and accelerate value delivery
 - **Why:** To drive business value and achieve strategic goals
 - **Method:** By ensuring data cleanliness and security
-- **Vision statement:** "Boost productivity and accelerate value delivery by ensuring data cleanliness and security to drive business value and achieve strategic goals."
+- **Vision statement:** *Boost productivity and accelerate value delivery by ensuring data cleanliness and security to drive business value and achieve strategic goals.*
 
 ## Identify key results
 

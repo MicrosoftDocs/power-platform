@@ -1,7 +1,7 @@
 ---
 title: Executive sponsorship
 description: Guidance for getting buy-in from an executive leader for your Power Platform adoption journey, understanding their role and activities, and learning how to identify an executive sponsor.
-#customer intent: As an admin, I want to understand how to get buy-in from an executive leader for Power Platform adoption so that I can ensure successful implementation.
+#customer intent: As a Power Platform user, I want to understand how to get buy-in from an executive leader for Power Platform adoption so that I can ensure successful implementation.
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: conceptual
