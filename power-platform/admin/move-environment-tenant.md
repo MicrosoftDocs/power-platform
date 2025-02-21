@@ -42,11 +42,11 @@ Be aware of the following before starting a tenant-to-tenant migration.
 ## Prerequisites
 Be sure to complete the following prerequisites before you start the migration process:
 
--	Create users in the target tenant, including:
-  -	Create users in Microsoft 365 and Microsoft Entra ID.
-  -	Assign licenses.
-- You must have admin privileges with Power Platform or Dynamics 365 to perform the migration.
--	The PowerShell for Power Platform Administrators module is the recommended PowerShell module for interacting with admin capabilities. Learn more in [Get started with PowerShell for Power Platform Administrators](powershell-getting-started.md).
+* Create users in the target tenant, including:
+  * Create users in Microsoft 365 and Microsoft Entra ID.
+  * Assign licenses.
+* You must have admin privileges with Power Platform or Dynamics 365 to perform the migration.
+* The PowerShell for Power Platform Administrators module is the recommended PowerShell module for interacting with admin capabilities. Learn more in [Get started with PowerShell for Power Platform Administrators](powershell-getting-started.md).
 
 ## Preparation process
 Complete the following procedures for Power Automate, Power Apps, Copilot Studio, and Power Pages before the migration. You also must create a user mapping file.
