@@ -23,14 +23,14 @@ Power Platform managed identity relies on the [workload identities](/entra/workl
 > [!IMPORTANT]
 >
 > - This is a preview feature.
-> - Preview features aren’t meant for production use and may have restricted functionality. These features are subject to supplemental terms of use, and are available before an official release so that customers can get early access and provide feedback.
+> - Preview features aren’t meant for production use and might have restricted functionality. These features are subject to supplemental terms of use, and are available before an official release so that customers can get early access and provide feedback.
 
 ## Key benefits
-Power Platform managed identity provides the following, key benefits:
+Power Platform managed identity provides the following key benefits:
 
 - Simplifies authentication and reduces the need for credentials management. 
 - Improves security by reducing the attack surface. 
-- Enables seamless authentication to other Azure services.
+- Allows seamless authentication to other Azure services.
 
 ## Supported scenarios
 Enterprises can securely connect to Azure resources that support managed identity from their IP/ISV [Dataverse plug-ins](/power-apps/developer/data-platform/plug-ins). For example, enterprises can use managed identity to connect to their Azure Key Vault from Dataverse plug-ins to retrieve sensitive information, like keys and secrets, without needing to manage credentials.
