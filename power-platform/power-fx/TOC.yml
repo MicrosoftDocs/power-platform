@@ -32,7 +32,7 @@
             href: formula-reference-cards.md  
           - name: Dataverse formula columns formula reference
             href: formula-reference-formula-columns.md
-          - name: Dataverse plug-ins formula reference
+          - name: Dataverse functions formula reference
             href: formula-reference-plug-ins.md  
           - name: Desktop flows formula reference
             href: formula-reference-desktop-flows.md

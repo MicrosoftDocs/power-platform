@@ -14,6 +14,9 @@ search.audienceType:
 
 The Power Platform Environment Settings app provides a modern, performant, accessible, secure, and extensible management experience. This app is generally available to the public, replacing the legacy advanced settings experience to provide a unified experience for system administrators to create and manage their environment-wide settings.
 
+> [!IMPORTANT]
+> By default, the Power Platform Environment Settings app requires a system administrator or system customizer role to access. A system administrator can grant additional user roles to access this app. Learn more about sharing an app in [Share a model-driven app](/power-apps/maker/model-driven-apps/share-model-driven-app).
+
 Any existing extensions created by system administrators to extend the Advanced settings site map are preserved and shown in the Power Platform Environment Settings app.
 
 Existing Advanced Settings links in the Power Platform are redirected to the Power Platform Environment Settings app.
