@@ -2,7 +2,7 @@
 title: Auto-claim policies for Power Apps licenses
 description: Learn how to assign Power Apps licenses through auto-claim policies.
 author: amiyapatr-zz
-ms.date: 12/12/2023
+ms.date: 02/21/2025
 ms.reviewer: sericks
 ms.topic: conceptual
 ms.subservice: admin
@@ -49,7 +49,7 @@ To create a new policy, complete the following steps.
 2.	Click the [**Auto-claim policy**](https://admin.microsoft.com/adminportal/home?#/licenses/autoclaimpolicies) tab.
 3.	Click **Add a policy**.
 4.	On the **Name this auto-claim policy** page, enter a name for the policy and click **Next**.
-5.	On the **Set an auto-claim app and product** page, select **Power Apps Per User Plan** in the dropdown list. In this step. You can either assign the product license on a "Per user" basis or select "Add user to a security group" and choose the appropriate group.
+5.	On the **Set an auto-claim app and product** page, select **Power Apps Per User Plan** in the dropdown list. You can assign the product license on a _per user_ basis or select the **Add user to a security group** option and choose the appropriate group.
 6.	On the **Select apps** page, select or clear the checkboxes for the apps to include or exclude with the license.	Click **Next**.
 8.	On the **Review and finish** page, verify the new policy information, make any necessary changes, and click **Create policy**.
 
@@ -70,13 +70,14 @@ In the Power Platform admin center, administrators can decide whether the policy
 
 ### Support for group-based license assignment
 
-Instead of assigning licenses directly to individual users when they launch Power Apps , administrators can configure policies to add users to predefined groups for license assignment.
-When creating an auto-claim policy, during the "Set an auto-claim app and product" step, admins have the option to either assign a product license on a "Per user" basis or choose "Add user to a security group," then select the appropriate group. 
+Instead of assigning licenses directly to individual users when they launch Power Apps, administrators can configure policies to add users to predefined groups for license assignment. 
 
-This option is currently enabled for Power Apps and Power Automate . Note - Assigning licenses by security group can take up to 24 hours for license to be assigned. 
+When creating an auto-claim policy, during the **Set an auto-claim app and product** step&mdash;in [Create an auto-claim policy for Power Apps](#create-an-auto-claim-policy-for-power-apps)&mdash;admins have the option to either assign a product license on a per user basis or choose the **Add user to a security group** option and select the appropriate group. This option is currently used for Power Apps and Power Automate. 
 
+> [!Note]
+> Assigning licenses by security group can take up to 24 hours for licenses to be assigned. 
 
-In addition to the above option , If your organization already has an existing process for license assignment, administrators can still make use of the auto-claim policy while maintaining their current workflow. 
+If your organization already has an existing process for license assignment, administrators can still make use of the auto-claim policy while maintaining their current workflow. 
 
 Administrators can review the list of users to whom licenses were assigned through the auto-claim policy in the Microsoft 365 admin center. Then, they can make changes, as needed, such as unassigning auto-claim-assigned licenses and moving users to designated groups to use Microsoft Entra group-based licensing. For more information about group based licensing, go to [Group-based licensing additional scenarios](/entra/identity/users/licensing-group-advanced).
 
