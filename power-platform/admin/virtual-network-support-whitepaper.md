@@ -178,9 +178,9 @@ To use the Virtual Network support for Power Platform, consider the following gu
 
 #### Regional
 
-Virtual Network support requires that delegated subnets azure region must match the Power Platform environments location. If you have a Power Platform environment in the United States, then each of two Virtual Networks and subnets must be in the East US and West US Azure regions. For supported regions and location mappings, see [Supported regions](vnet-support-overview.md#supported-regions).
+Virtual Network support requires that delegated subnets in Azure regions must match the Power Platform environments location. If you have a Power Platform environment in the United States, then each of two Virtual Networks and subnets must be in the East US and West US Azure regions. For supported regions and location mappings, go to [Supported regions](vnet-support-overview.md#supported-regions).
 
-If your Azure resources are in different azure regions, use a global, Virtual Network peering or a similar connectivity option with high speed and low latency. With the [Microsoft global network](azure/networking/microsoft-global-network), establish the connectivity between the Power Platform Virtual Network and your enterprises Virtual Network.
+If your Azure resources are in different Azure regions, use global, Virtual Network peering or a similar connectivity option with high speed and low latency. With the [Microsoft global network](azure/networking/microsoft-global-network), establish the connectivity between the Power Platform Virtual Network and your enterprises Virtual Network.
 
 #### Subnet size
 
@@ -199,8 +199,7 @@ The size of the delegated subnet within a Virtual Network is a critical concern,
 **Low execution load**: This is ideal for environments with a lower volume of requests. If the usage is expected to be light, you can allocate 20-50 environments per subnet with a /24 subnet size.
 
 > [!NOTE]
-> We are working on providing better guidance on how to correctly size the subnet for your environment.
-> We are also working on providing a way to monitor the usage of the subnet and provide alerts when the usage is high.
+> We are working to provide better guidance on how to correctly size the subnet for your environment. We are also working to provide a way to monitor the usage of the subnet and provide alerts when the usage is high.
 
 It's important to consider future growth and the onboarding of new services when categorizing the Power Plaform environments. Ensuring that your subnets have enough IP addresses to accommodate the expected load helps prevent throttling and maintains performance. If you find that the /24 subnet size isn't sufficient in the future, you should plan for larger subnet size.
 
@@ -247,7 +246,7 @@ By following these best practices, you can secure outbound connections from Powe
 **Assumptions:**
 
 - The enterprise's Power Platform environment is located in the United States.
-- The azure region for Virtual Network is set to West US ad East US.
+- The Azure region for Virtual Network is set to West US ad East US.
 - The enterprise's resources are in a Virtual Network (VNET1) in Azure West US region.
 
 **Minimum configuration needed to configure Virtual Network:**
