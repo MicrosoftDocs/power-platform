@@ -1,6 +1,6 @@
 ---
 title: Business continuity and disaster recovery for Dynamics 365 SaaS apps
-description: Microsoft provides business continuity and disaster recovery for production environments of Dynamics 365 SaaS applications if there's an Azure region-wide outage. 
+description: Microsoft provides business continuity and disaster recovery for production environments of Dynamics 365 SaaS applications if there's a regionwide Azure outage. 
 author: ImadYanni 
 ms.date: 01/21/2025
 ms.reviewer: sericks
@@ -15,7 +15,7 @@ contributors:
 
 # Business continuity and disaster recovery
 
-Microsoft's Business Application Platform (BAP) provides Business Continuity and Disaster Recovery (BCDR) capabilities to all [production type](/power-platform/admin/environments-overview) environments in Dynamics 365 and Power Platform SAAS applications. This article describes details and practices Microsoft takes to ensure your production data is resilient during regional outage.
+Microsoft provides Business Continuity and Disaster Recovery (BCDR) capabilities to all [production type](/power-platform/admin/environments-overview) environments in Dynamics 365 and Power Platform software as a service (SAAS) applications. This article describes details and practices Microsoft takes to ensure your production data is resilient during a regional outage.
 
 ## Backup of production environments
 
