@@ -304,8 +304,8 @@ Start blocking apps that are blocked and allow only approved apps. You can selec
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. In the navigation pane, select **Security**.
-1. Select **Access controls** in the **Security** section.
-1. Select **App access control** in the **Access controls** section.
+1. In the **Security** pane, select **Identity and access**.
+1. In the **Identity and access management** page, select **App access control**.
 1. Select the environment where you want to turn on the app access control feature.
 1. Select the **Set up app access control** button.
 1. Select **Enabled** in the **Access control** dropdown list.
@@ -324,8 +324,8 @@ Start blocking apps that are blocked and allow only approved apps. For apps that
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. In the navigation pane, select **Security**.
-1. Select **Access controls** in the **Security** section.
-1. Select **App access control** in the **Access controls** section.
+1. In the **Security** pane, select **Identity and access**.
+1. In the **Identity and access management** page, select **App access control**.
 1. Select the environment where you want to turn on the app access control feature.
 1. Select the **Set up app access control** button.
 1. Select **Enabled for roles** in the **Access control** dropdown list.
@@ -345,8 +345,8 @@ Turn off the app access control feature to remove restrictions on apps running i
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. In the navigation pane, select **Security**.
-1. Select **Access controls** in the **Security** section.
-1. Select **App access control** in the **Access controls** section.
+1. In the **Security** pane, select **Identity and access**.
+1. In the **Identity and access management** page, select **App access control**.
 1. Select the environment where you want to turn on the app access control feature.
 1. Select the **Set up app access control** button.
 1. Select **Disabled** in the **Access control** dropdown list.
@@ -389,6 +389,7 @@ The following apps are Microsoft first-party services. This list of apps can be 
 | a59cef1e-2e32-4703-8dab-810d9807efeb | ccibots |
 | 96ff4394-9197-43aa-b393-6a41652e21f8 | ccibotsprod |
 
-## Related information
+## Related content
 
-[Application IDs of commonly used Microsoft applications](/troubleshoot/azure/entra-id/governance/verify-first-party-apps-sign-in#application-ids-of-commonly-used-microsoft-applications)
+- [Commonly used Microsoft first-party services and portal apps](apps-to-allow.md)
+- [Application IDs of commonly used Microsoft applications](/troubleshoot/azure/entra-id/governance/verify-first-party-apps-sign-in#application-ids-of-commonly-used-microsoft-applications)
