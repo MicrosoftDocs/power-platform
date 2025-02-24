@@ -3,7 +3,7 @@ title: Enterprise Visual Vehicle Inspection Engine
 description: Learn how EVVIE uses AI and Power Platform to automate vehicle inspections, saving time and improving accuracy.
 author: manuelap-msft
 ms.subservice: guidance
-ms.topic: conceptual
+ms.topic: solution-idea
 ms.date: 02/04/2025
 ms.author: mapichle
 ms.reviewer: pankajsharma2087

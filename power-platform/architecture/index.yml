@@ -8,7 +8,7 @@ metadata:
   description: Guidance for architecting solutions with Power Platform using established patterns and practices.
   ms.service: power-platform
   ms.topic: hub-page
-  ms.subservice: power-platform-architecture
+  ms.subservice: architecture-center
   author: manuelap-msft
   ms.author: mapichle
   ms.reviewer: jhaskett-msft

@@ -3,7 +3,7 @@ title: Legacy data integration solution
 description: Learn how to integrate legacy data with modern platforms using Power Automate, SharePoint, Dataverse, Power BI, and Microsoft Teams
 author: manuelap-msft
 ms.subservice: guidance
-ms.topic: conceptual
+ms.topic: example-scenario
 ms.date: 02/04/2025
 ms.author: mapichle
 ms.reviewer: pankajsharma2087

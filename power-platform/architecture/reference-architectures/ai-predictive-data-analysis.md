@@ -3,7 +3,7 @@ title: Predictive Data Analysis with Dataverse and Azure AI
 description: Learn how to perform predictive data analysis using Dataverse, Fabric, and Azure AI. Discover best practices for data ingestion, model training, and visualization.
 author: manuelap-msft
 ms.subservice: guidance
-ms.topic: conceptual
+ms.topic: example-scenario
 ms.date: 02/04/2025
 ms.author: mapichle
 ms.reviewer: pankajsharma2087

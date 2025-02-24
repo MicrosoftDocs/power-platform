@@ -3,7 +3,7 @@ title: Document Processing with AI Builder
 description: Streamline document processing with AI Builder and Power Automate. Learn how to automate data extraction and enhance workflow efficiency
 author: manuelap-msft
 ms.subservice: guidance
-ms.topic: conceptual
+ms.topic: example-scenario
 ms.date: 02/05/2025
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
