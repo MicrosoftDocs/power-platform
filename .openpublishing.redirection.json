@@ -1,8 +1,27 @@
 
 {
   "redirections": [
-   {
-
+  {
+      "source_path": "power-platform/admin/wp-work-with-admin-portals.md",
+      "redirect_url": "power-platform/admin/admin-documentation",
+      "redirect_document_id": "false"
+   },
+    {
+      "source_path": "power-platform/admin/security/access-control.md",
+      "redirect_url": "power-platform/admin/security/identity-access-management",
+      "redirect_document_id": "false"
+   },
+    {
+      "source_path": "power-platform/admin/security/network-security.md",
+      "redirect_url": "power-platform/admin/security/data-protection-privacy",
+      "redirect_document_id": "false"
+   },
+    {
+      "source_path": "power-platform/admin/security/threat-detection.md",
+      "redirect_url": "power-platform/admin/security/compliance",
+      "redirect_document_id": "false"
+   },
+    {
       "source_path": "power-platform/admin/security/security-posture-overview.md",
       "redirect_url": "power-platform/admin/security/security-overview",
       "redirect_document_id": "false"
@@ -1098,6 +1117,50 @@
       "source_path": "power-platform/power-fx/formula-reference.md",
       "redirect_url": "/power-platform/power-fx/formula-reference-canvas-apps",
       "redirect_document_id": "false"
-    }
+    },
+    {
+      "source_path": "power-platform/admin/troubleshooting-user-needs-read-write-access-organization.md",
+      "redirect_url": "/troubleshoot/power-platform/dataverse/environment-app-access/troubleshooting-user-needs-read-write-access-organization"
+    },
+    {
+      "source_path": "power-platform/admin/troubleshoot-missing-environments.md",
+      "redirect_url": "/troubleshoot/power-platform/dataverse/environment-app-access/troubleshoot-missing-environments"
+    },
+    {
+      "source_path": "power-platform/admin/troubleshoot-word-templates-dynamics-365.md",
+      "redirect_url": "/troubleshoot/power-platform/power-apps/integrate-products/troubleshoot-word-templates-dynamics-365"
+    },
+    {
+      "source_path": "power-platform/guidance/coe/setup-auditlog-troubleshooting.md",
+      "redirect_url": "/troubleshoot/power-platform/dataverse/auditing/setup-auditlog-troubleshooting"
+    },
+    {
+      "source_path": "power-platform/admin/troubleshooting-server-based-authentication.md",
+      "redirect_url": "/troubleshoot/power-platform/power-apps/integrate-products/troubleshooting-server-based-authentication"
+    },
+    {
+      "source_path": "power-platform/admin/troubleshooting-conditional-access-authentication.md",
+      "redirect_url": "/troubleshoot/power-platform/power-apps/integrate-products/troubleshooting-conditional-access-authentication"
+    },
+    {
+      "source_path": "power-platform/admin/troubleshoot-set-up-sharepoint-online.md",
+      "redirect_url": "/troubleshoot/power-platform/power-apps/integrate-products/troubleshoot-set-up-sharepoint-online"
+    },
+    {
+      "source_path": "power-platform/admin/troubleshoot-doc-management-issues.md",
+      "redirect_url": "/troubleshoot/power-platform/power-apps/integrate-products/troubleshoot-doc-management-issues"
+    },
+    {
+      "source_path": "power-platform/admin/doc-management-known-issues.md",
+      "redirect_url": "/troubleshoot/power-platform/power-apps/integrate-products/doc-management-known-issues"
+    },
+    {
+      "source_path": "power-platform/admin/troubleshooting-monitoring-server-side-synchronization.md",
+      "redirect_url": "/troubleshoot/power-platform/dataverse/email-exchange-synchronization/troubleshooting-monitoring-server-side-synchronization"
+    },
+    {
+      "source_path": "power-platform/admin/data-integrator-error-management.md",
+      "redirect_url": "/troubleshoot/power-platform/dataverse/data-integration/data-integrator-error-management"
+    } 
   ]
 }

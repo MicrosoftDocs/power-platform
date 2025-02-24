@@ -4,7 +4,7 @@ description: Learn how to utilize managed operations capabilities in Power Platf
 ms.date: 11/19/2024
 ms.service: power-platform
 ms.topic: overview
-ms.custom: ignite-2024
+ms.custom: NewPPAC
 ms.collection: get-started
 author: alaug 
 ms.subservice: admin

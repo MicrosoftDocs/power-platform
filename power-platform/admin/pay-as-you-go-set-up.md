@@ -4,8 +4,9 @@ description: Follow these steps to set up pay-as-you-go plans with an Azure subs
 author: amiyapatr-zz
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/15/2025
+ms.date: 01/27/2025
 ms.subservice: admin
+ms.custom: NewPPAC
 ms.author: ampatra 
 ms.reviewer: sericks
 contributors:
@@ -38,11 +39,12 @@ Pay-as-you-go can be set up via the [Power Platform admin center](https://admin.
 
 ## Create a billing plan
 
-To create a [billing plan](pay-as-you-go-overview.md), link [environments](environments-overview.md) to it, and add Azure subscription details for billing complete the following steps depending on whether you're using the classic admin center or the new admin center.
+To create a [billing plan](pay-as-you-go-overview.md), link [environments](environments-overview.md) to it, and add Azure subscription details for billing complete the following steps depending on whether you're using the new admin center or the classic admin center.
 
-# [Classic admin center](#tab/classic)
+# [New admin center](#tab/new)
 
-1. In the navigation pane, select **Billing > Billing plans**. The **Billing plans** page is displayed.
+1. In the navigation pane, select **Licensing**.
+1. In the **Licensing** pane, select **Pay-as-you-go plans**. The **Billing plans** page is displayed.
 
 1. Select **New billing plan**. The **New billing plan** pane is displayed.
 
@@ -64,10 +66,9 @@ To create a [billing plan](pay-as-you-go-overview.md), link [environments](envir
 
 1. Select **Save**. 
 
-# [New admin center](#tab/new)
+# [Classic admin center](#tab/classic)
 
-1. In the navigation pane, select **Licensing**.
-1. In the **Licensing** pane, select **Pay-as-you-go plans**. The **Billing plans** page is displayed.
+1. In the navigation pane, select **Billing > Billing plans**. The **Billing plans** page is displayed.
 
 1. Select **New billing plan**. The **New billing plan** pane is displayed.
 
@@ -93,9 +94,11 @@ To create a [billing plan](pay-as-you-go-overview.md), link [environments](envir
 ## Create billing plan for Microsoft 365 Copilot Chat
 Microsoft 365 users without a paid Copilot license can now access and use Copilot agents by using a pay-as-you-go meter. Setting up a billing plan for Microsoft Copilot Agents differs slightly from the standard billing plan setup process.
 
-# [Classic admin center](#tab/classic)
+# [New admin center](#tab/new)
 
-1. In the navigation pane, select **Billing > Billing plans**. The **Billing plans** page is displayed.
+1. In the navigation pane, select **Licensing**.
+
+1. In the **Licensing** pane, select **Pay-as-you-go plans**. The **Billing plans** page is displayed.
 
 1. Select **New billing plan**. The **New billing plan** pane is displayed.
 
@@ -115,11 +118,9 @@ Microsoft 365 users without a paid Copilot license can now access and use Copilo
 
 When a billing plan is created, a new environment named **Microsoft 365 Copilot Chat** is automatically provisioned and linked to the newly created billing plan. Copilot consumption reporting is accessible through this environment. If a new billing plan is created for **Microsoft 365 Copilot Chat** and an environment already exists, it's automatically linked to the new billing plan.
 
-# [New admin center](#tab/new)
+# [Classic admin center](#tab/classic)
 
-1. In the navigation pane, select **Licensing**.
-
-1. In the **Licensing** pane, select **Pay-as-you-go plans**. The **Billing plans** page is displayed.
+1. In the navigation pane, select **Billing > Billing plans**. The **Billing plans** page is displayed.
 
 1. Select **New billing plan**. The **New billing plan** pane is displayed.
 
