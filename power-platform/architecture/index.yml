@@ -20,10 +20,10 @@ highlightedContent:
     # Card
     - title: Browse Power Platform architectures
       itemType: architecture
-      url: ./reference-architecture-overview.md
+      url: reference-architectures/overview.md
     # Card
     - title: See what's new
-      url: ./whats-new.md
+      url: whats-new.md
       itemType: whats-new
     # Card
     - title: Power Platform Well-Architected
@@ -49,8 +49,6 @@ productDirectory:
     - title: Reference architectures
       imageSrc: /office/media/icons/blocks.png
       links:
-        - text: Overview
-          url: reference-architectures/overview.md
         - text: Document processing with AI Builder
           url: reference-architectures/ai-document-processing.md
         - text: Predictive data analsyis with Dataverse Fabric and Azure AI
@@ -63,8 +61,6 @@ productDirectory:
     - title: Solution ideas
       imageSrc: /office/media/icons/lightbulb-idea-capture.png
       links:
-        - text: Overview
-          url: solution-ideas/overview.md
         - text: Healthcare patient support agent
           url: solution-ideas/agent-healthcare-patient-support.md
         - text: Rental portal with AI Driven search agent
