@@ -87,6 +87,14 @@ Achieve high performance and efficiency by optimizing processes and using best p
 
 Apply Purview for comprehensive data lineage and metadata management to ensure model explainability and traceability.
 
+## Contributors
+
+_Microsoft maintains this article. The following contributors wrote this article._
+
+Principal authors:
+
+- **[Pujarini Mohapatra](https://www.linkedin.com/in/biswapm/)**, Principal Engineering Manager
+
 ## Related resources
 
 - [Encryption strategy recommendation for Power Platform workloads](/power-platform/well-architected/security/encryption#encryption-scenarios)

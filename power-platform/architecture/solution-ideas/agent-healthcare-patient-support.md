@@ -125,6 +125,13 @@ The Healthcare Patient Support Agent architecture aims to improve the delivery o
 
 -   Privacy and security: Protected patient data using encryption and ensured compliance with HIPAA standards. </compliance/regulatory/offering-hipaa-hitech>
 
+## Contributors
+
+_Microsoft maintains this article. The following contributors wrote this article._
+
+Principal authors:
+
+- **[Pujarini Mohapatra](https://www.linkedin.com/in/biswapm/)**, Principal Engineering Manager
 
 ## Related resources
 

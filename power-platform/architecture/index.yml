@@ -37,14 +37,18 @@ productDirectory:
     - title: Fundamentals
       imageSrc: /media/common/i_best-practices.svg
       links:
-        - url: fundamentals/powerapps
-          text: Build Fluent UI with Power Apps
-        - url: fundamentals/powerapps
-          text: Distributed tracing
-        - text: End-to-end testing
-          url: fundamentals/powerapps
+        - text: Overview
+          url: fundamentals/fundamentals-overview.md
+        - text: Automated Testing 
+          url: fundamentals/testing.md
+        - text: Distributed Tracing
+          url: fundamentals/open-telemetry.md
+        - text: Building Fluent UI Power Apps
+          url: fundamentals/fluent.md
+        - text: ALM pipelines with automated quality gates
+          url: fundamentals/alm-quality-gates.md
     # Card
-    - title: Modern application architectures
+    - title: Architecture fundamentals
       imageSrc: /media/common/i_best-practices.svg
       links:
       - text: Document processing with AI Builder
@@ -56,13 +60,31 @@ productDirectory:
       - text: Enterprise Visual Vehicle Inspection Engine
         url: modern-applications/enterprise-visual-vehicle-inspection-engine/evvie-power-cat-architecture.md
     # Card
-    - title: AI + Copilot studio architectures
+    - title: Reference architectures
       imageSrc: /media/common/i_best-practices.svg
       links:
-      - text: Healthcare patient support agent
-        url: ai-and-copilot-studio/healthcare-patient-support-agent/healthcare-patient-support-agent-architecture.md
-      - text: Rental portal with AI Driven search agent
-        url: ai-and-copilot-studio/rental-portal-with-AI-driven-search-agent-and-payment-processing/rental-portal-with-ai-driven-search-agent-and-payment-processing.md
+        - text: Overview
+          url: reference-architectures/overview.md
+        - text: Document processing with AI Builder
+          url: reference-architectures/ai-document-processing.md
+        - text: Predictive data analsyis with Dataverse Fabric and Azure AI
+          url: reference-architectures/ai-predictive-data-analysis.md
+        - text: Legacy data integration
+          url: reference-architectures/app-legacy-data-integration.md
+        - text: Developing a background
+          url: reference-architectures/app-legacy-data-integration.md
+    # Card
+    - title: Solution ideas
+      imageSrc: /media/common/i_best-practices.svg
+      links:
+        - text: Overview
+          url: solution-ideas/overview.md
+        - text: Healthcare patient support agent
+          url: solution-ideas/agent-healthcare-patient-support.md
+        - text: Rental portal with AI Driven search agent
+          url: solution-ideas/agent-rental-portal.md
+        - text: Enterprise Visual Vehicle Inspection Engine
+          url: solution-ideas/app-evvie.md
     # Card
     - title: Optimize your workload
       imageSrc: /media/common/i_architecture.svg
@@ -97,7 +119,7 @@ conceptualContent:
       - text: Entities and slot filling best practices
         url: /microsoft-copilot-studio/guidance/slot-filling-best-practices
         itemType: how-to-guide
-    - title: Modern applications
+    - title: Power Apps
       links:
         - text: Coding standards guidelines
           itemType: how-to-guide
@@ -117,7 +139,7 @@ conceptualContent:
         - text: Fast calculations
           itemType: how-to-guide
           url: /power-apps/maker/canvas-apps/efficient-calculations
-    - title: Hyperautomation
+    - title: Power Automate
       links:
         - url: /power-automate/guidance/business-approvals-templates/introduction
           itemType: reference

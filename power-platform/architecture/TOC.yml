@@ -8,19 +8,19 @@
     - name: Architecture fundamentals
       items:
       - name: Overview
-        href: fundamentals-overview.md
+        href: fundamentals/fundamentals-overview.md
       - name: Automated Testing 
-        href: testing.md
+        href: fundamentals/testing.md
       - name: Distributed Tracing
-        href: open-telemetry.md
+        href: fundamentals/open-telemetry.md
       - name: Building Fluent UI Power Apps
-        href: fluent.md
+        href: fundamentals/building-fluent-apps.md
       - name: ALM pipelines with automated quality gates
-        href: fluent.md
+        href: fundamentals/alm-with-quality-gates.md.md
     - name: Reference architectures
       items:
       - name: Overview
-        hef: modern-applications/overview.md
+        href: reference-architectures/overview.md
       - name: Document processing with AI Builder
         href: reference-architectures/ai-document-processing.md
       - name: Predictive data analsyis with Dataverse Fabric and Azure AI
@@ -31,12 +31,14 @@
         href: reference-architectures/app-legacy-data-integration.md
     - name: Solution ideas
       items:
+        - name: Overview
+          href: solution-ideas/overview.md
         - name: Healthcare patient support agent
-          href: solution-idea/agent-healthcare-patient-support.md
+          href: solution-ideas/agent-healthcare-patient-support.md
         - name: Rental portal with AI Driven search agent
-          href: solution-idea/agent-rental-portal.md
+          href: solution-ideas/agent-rental-portal.md
         - name: Enterprise Visual Vehicle Inspection Engine
-          href: solution-idea/app-evvie.md
+          href: solution-ideas/app-evvie.md
     - name: Power Platform icons
       href: /power-platform/guidance/icons?toc=/power-platform/architecture/toc.json&bc=/power-platform/architecture/breadcrumb/toc.json
     - name: Microsoft Power Platform Well-Architected

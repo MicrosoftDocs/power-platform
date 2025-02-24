@@ -239,6 +239,14 @@ Here is an Azure example of considerations for inspiration: [Student attrition p
 
 - **AI interaction design:** Natural, intuitive interactions with AI are designed. Fallback mechanisms are included to handle misunderstandings and provide alternative suggestions or support.
 
+## Contributors
+
+_Microsoft maintains this article. The following contributors wrote this article._
+
+Principal authors:
+
+- **[Scott Durow](https://www.linkedin.com/in/scottdurow/)**, Cloud Developer Advocate
+
 ## Reference implementation
 
 A sample architecture implementation is available for reference – <https://aka.ms/pp/contoso-real-estate>
