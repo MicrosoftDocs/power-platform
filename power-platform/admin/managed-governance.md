@@ -19,43 +19,43 @@ In the age of AI, governing the Power Platform is crucial to ensure that the pow
 
 ## What can Managed governance do?
 
-Managed Governance in the Power Platform provides a structured framework to ensure that environments are used in compliance with organizational policies and regulatory requirements. It helps organizations maintain control over their data, optimize resource usage, and ensure that all activities within the platform are transparent and accountable. By implementing Managed Governance, organizations can effectively manage their environments at scale, develop strategic approaches to environment usage, respond proactively to governance issues, gain full visibility into their operations, and manage capacity and costs efficiently. 
+Managed governance in the Power Platform provides a structured framework to ensure that environments are used in compliance with organizational policies and regulatory requirements. It helps organizations maintain control over their data, optimize resource usage, and ensure that all activities within the platform are transparent and accountable. By implementing Managed governance, organizations can effectively manage their environments at scale, develop strategic approaches to environment usage, respond proactively to governance issues, gain full visibility into their operations, and manage capacity and costs efficiently. 
 
 ## Features of Managed governance
 
 ### Manage at scale
 
-- **Environment Groups**: Allows administrators to organize environments into logical groups, making it easier to apply policies and manage settings across multiple environments simultaneously. It simplifies the administration process and ensures consistency in governance practices. 
+- **Environment groups**: Allows administrators to organize environments into logical groups, making it easier to apply policies and manage settings across multiple environments simultaneously. It simplifies the administration process and ensures consistency in governance practices. 
 
-- **Rules and Governed Settings**: Administrators can define and enforce specific rules and settings that must be adhered to within each environment. This ensures that all environments comply with organizational standards and regulatory requirements, reducing the risk of non-compliance. 
+- **Rules and governed settings**: Administrators can define and enforce specific rules and settings that must be adhered to within each environment. This ensures that all environments comply with organizational standards and regulatory requirements, reducing the risk of non-compliance. 
 
-- **Delegated Admin**: Enables the assignment of administrative responsibilities to specific users without granting them full admin rights. It allows for more granular control over who can manage environments, enhancing security and reducing the risk of unauthorized changes. 
+- **Delegated admin**: Enables the assignment of administrative responsibilities to specific users without granting them full admin rights. It allows for more granular control over who can manage environments, enhancing security and reducing the risk of unauthorized changes. 
 
 ### Environment strategy
 
-- **Environment Routing**: Directs makers to their personal developer environments when they visit make.powerapps.com or copilotstudio.microsoft.com. It provides a secure, personal space for makers to build with Microsoft Dataverse, ensuring their apps and data remain private. When enabled in the Power Platform Admin Center, makers are seamlessly routed to their own environments, like how OneDrive works for personal productivity. 
+- **Environment routing**: Directs makers to their personal developer environments when they visit make.powerapps.com or copilotstudio.microsoft.com. It provides a secure, personal space for makers to build with Microsoft Dataverse, ensuring their apps and data remain private. When enabled in the Power Platform Admin Center, makers are seamlessly routed to their own environments, like how OneDrive works for personal productivity. 
 
-- **Maker Welcome**: Provides a personalized onboarding experience for new makers, guiding them through the initial setup and familiarizing them with the Power Platform. It includes helpful tips, tutorials, and resources to ensure makers can quickly start building apps and solutions with confidence. The Maker Welcome feature aims to enhance user engagement and accelerate productivity from the very beginning.
+- **Maker welcome**: Provides a personalized onboarding experience for new makers, guiding them through the initial setup and familiarizing them with the Power Platform. It includes helpful tips, tutorials, and resources to ensure makers can quickly start building apps and solutions with confidence. The Maker Welcome feature aims to enhance user engagement and accelerate productivity from the very beginning.
 
 ### Reactive governance
 
-- **Action Center**: The Action Center serves as a centralized hub for managing governance actions and alerts. It provides administrators with a single location to monitor and respond to governance issues, ensuring timely and effective resolution. 
+- **Action center**: The Action Center serves as a centralized hub for managing governance actions and alerts. It provides administrators with a single location to monitor and respond to governance issues, ensuring timely and effective resolution. 
 
-- **Governance Recommendations**: Offers suggestions to improve governance practices based on the current state of the environments. It helps administrators identify potential issues and implement best practices to enhance compliance and security.
+- **Governance recommendations**: Offers suggestions to improve governance practices based on the current state of the environments. It helps administrators identify potential issues and implement best practices to enhance compliance and security.
 
 ### Full visibility
 
-- **Inventory Explorer**: Provides a comprehensive view of all resources within the environments. It allows administrators to track and manage assets, ensuring that all resources are accounted for and used efficiently. 
+- **Inventory explorer**: Provides a comprehensive view of all resources within the environments. It allows administrators to track and manage assets, ensuring that all resources are accounted for and used efficiently. 
 
-- **Environment Explorer**: Offers detailed insights into each environment's usage and status. It helps administrators monitor performance, identify potential issues, and make informed decisions about resource allocation and management. 
+- **Environment explorer**: Offers detailed insights into each environment's usage and status. It helps administrators monitor performance, identify potential issues, and make informed decisions about resource allocation and management. 
 
-- **Weekly Digest**: Provides summarized reports on environment activities and health. It keeps administrators informed about the overall state of the environments, highlighting key metrics and trends to support proactive management.
+- **Weekly digest**: Provides summarized reports on environment activities and health. It keeps administrators informed about the overall state of the environments, highlighting key metrics and trends to support proactive management.
 
 ### Capacity and cost management
 
-- **Licensing Agent**: Helps manage and optimize licensing across environments. It ensures that licenses are used efficiently, reducing costs and preventing over- or under-licensing. 
+- **Licensing agent**: Helps manage and optimize licensing across environments. It ensures that licenses are used efficiently, reducing costs and preventing over- or under-licensing. 
 
-- **Capacity Management**: Monitors and allocates resources to ensure efficient usage. It helps administrators manage capacity effectively, preventing resource shortages and optimizing performance.
+- **Capacity management**: Monitors and allocates resources to ensure efficient usage. It helps administrators manage capacity effectively, preventing resource shortages and optimizing performance.
 
 ## Learn more
 By leveraging these features, organizations can establish a robust governance framework that supports their strategic goals and operational needs.
