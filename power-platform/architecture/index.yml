@@ -72,7 +72,7 @@ conceptualContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
   title: Technology areas # < 60 chars (optional)
   summary: Explore architectures and guides for different areas within Power Platform. # < 160 chars (optional)
-  items:    
+  sections:    
     - title: Well-architected guidance
       links:
         - url: /power-platform/well-architected/
