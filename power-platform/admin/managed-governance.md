@@ -29,17 +29,17 @@ Managed governance in the Power Platform provides a structured framework to ensu
 
 - **Rules and governed settings**: Administrators can define and enforce specific rules and settings that must be adhered to within each environment. This ensures that all environments comply with organizational standards and regulatory requirements, reducing the risk of non-compliance. 
 
-- **Delegated admin**: Enables the assignment of administrative responsibilities to specific users without granting them full admin rights. It allows for more granular control over who can manage environments, enhancing security and reducing the risk of unauthorized changes. 
+- **Delegated admin**: Allows the assignment of administrative responsibilities to specific users without granting them full admin rights. It allows for more granular control over who can manage environments, enhancing security and reducing the risk of unauthorized changes. 
 
 ### Environment strategy
 
-- **Environment routing**: Directs makers to their personal developer environments when they visit make.powerapps.com or copilotstudio.microsoft.com. It provides a secure, personal space for makers to build with Microsoft Dataverse, ensuring their apps and data remain private. When enabled in the Power Platform Admin Center, makers are seamlessly routed to their own environments, like how OneDrive works for personal productivity. 
+- **Environment routing**: Directs makers to their personal developer environments when they visit [make.powerapps.com](https://make.powerapps.com) or [copilotstudio.microsoft.com](https://copilotstudio.microsoft.com). Environment routing provides a secure, personal space for makers to build with Microsoft Dataverse, ensuring their apps and data remain private. When allowed in the Power Platform admin center, makers are seamlessly routed to their own environments, like how OneDrive works for personal productivity. 
 
-- **Maker welcome**: Provides a personalized onboarding experience for new makers, guiding them through the initial setup and familiarizing them with the Power Platform. It includes helpful tips, tutorials, and resources to ensure makers can quickly start building apps and solutions with confidence. The Maker Welcome feature aims to enhance user engagement and accelerate productivity from the very beginning.
+- **Maker welcome**: Provides a personalized onboarding experience for new makers, guiding them through the initial setup and familiarizing them with the Power Platform. It includes helpful tips, tutorials, and resources to ensure makers can quickly start building apps and solutions with confidence. The [maker welcome content](welcome-content.md) aims to enhance user engagement and accelerate productivity from the very beginning.
 
 ### Reactive governance
 
-- **Action center**: The Action Center serves as a centralized hub for managing governance actions and alerts. It provides administrators with a single location to monitor and respond to governance issues, ensuring timely and effective resolution. 
+- **Action center**: The Actions center serves as a centralized area for managing governance actions and alerts. It provides administrators with a single location to monitor and respond to governance issues, ensuring timely and effective resolution. 
 
 - **Governance recommendations**: Offers suggestions to improve governance practices based on the current state of the environments. It helps administrators identify potential issues and implement best practices to enhance compliance and security.
 
