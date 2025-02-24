@@ -25,7 +25,7 @@ In this article, you'll learn how to build a comprehensive rental portal that le
 
 ## Architecture diagram
 
-:::image type="content" source="../../media/image6.png" alt-text="Architecture diagram" border="true":::
+:::image type="content" source="../media/image6.png" alt-text="Architecture diagram" border="true":::
 
 ## Workflow
 

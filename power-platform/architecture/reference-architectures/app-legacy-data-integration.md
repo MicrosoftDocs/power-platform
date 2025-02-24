@@ -24,7 +24,7 @@ Integrating legacy data with modern platforms can be a complex and challenging t
 
 ## Architecture diagram
 
-:::image type="content" source="../../media/image3.png" alt-text="Architecture diagram" border="true":::
+:::image type="content" source="../media/image3.png" alt-text="Architecture diagram" border="true":::
 
 ## Workflow
 

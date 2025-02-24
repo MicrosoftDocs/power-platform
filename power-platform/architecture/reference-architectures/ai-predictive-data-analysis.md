@@ -24,7 +24,7 @@ In today's data-driven world, applying predictive analytics can significantly en
 
 ## Architecture diagram
 
-:::image type="content" source="../../media/image4.png" alt-text="architecture diagram" border="true":::
+:::image type="content" source="../media/image4.png" alt-text="architecture diagram" border="true":::
 
 ## Workflow
 

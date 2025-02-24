@@ -23,7 +23,7 @@ Integrating legacy data systems with modern applications can be challenging. How
 
 ## Architecture diagram
 
-:::image type="content" source="../../media/image1.png" alt-text="Architecture diagram" border="true" lightbox="../../media/image1.png":::
+:::image type="content" source="../media/image1.png" alt-text="Architecture diagram" border="true" lightbox="../media/image1.png":::
 
 ## Workflow
 

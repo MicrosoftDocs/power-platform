@@ -13,6 +13,7 @@ search.audienceType:
   - admin
   - flowmaker
 ---
+
 # EVVIE - Enterprise Visual Vehicle Inspection Engine
 
 > [!TIP]
@@ -20,14 +21,14 @@ search.audienceType:
 
 The Enterprise Visual Vehicle Inspection Engine (EVVIE) applies the power of AI and Microsoft Power Platform to revolutionize the vehicle inspection process. By automating inspections, EVVIE saves time and enhances accuracy, making it an invaluable tool for organizations managing large vehicle fleets. This guide provides an overview of EVVIE's architecture, workflow, and key components, offering insights into how this innovative solution can streamline vehicle inspections and maintenance.
 
-
- Inspect vehicles and assess damage using generative AI and Power Platform. For a demo and more information, visit [aka.ms/EVVIE](https://microsoft-my.sharepoint.com/personal/timh_microsoft_com/Documents/Stretch%20Projects/AI%20POC%20Teasers%20(CHASE%20IRIS)/EVVIE/Power%20CAT%20Template/aka.ms/EVVIE)
+Inspect vehicles and assess damage using generative AI and Power Platform. For a demo and more information, visit [aka.ms/EVVIE](https://aka.ms/EVVIE)
 
 ## Architecture diagram
 
-:::image type="content" source="../../media/image2.png" alt-text="architecture diagram" border="true":::
+:::image type="content" source="../media/image2.png" alt-text="architecture diagram" border="true":::
 
 ## Workflow
+
 EVVIE uses a unique blend of Microsoft Power Platform and Microsoft Azure resources to automate the vehicle inspection process using advanced AI models. EVVIE's internal process is described below at a high level:
 
 - A Power Apps (canvas) app used by the user serves as the interface to collect photos of vehicle damage as part of a vehicle inspection.
@@ -92,7 +93,6 @@ Two potential bottlenecks can significantly impact EVVIE's scalability:
 
 - **Azure OpenAI Service:** The Azure OpenAI model, called by the Azure Function, is essential for assessing and logging damage. It's critical to ensure that the Azure OpenAI deployment, which the back-end API relies on, is always operational. Since Azure OpenAI uses a token-based system, it's important to guarantee that the model used in EVVIE has a sufficiently high token quota for the given period of usage.
 
-
 ### Experience optimization
 
 The team that developed EVVIE dedicated significant time and effort to optimizing the user interface and user experience, ensuring it's intuitive and easy to use for staff inspecting vehicles and those reviewing the inspections.
@@ -101,19 +101,21 @@ EVVIE’s inspection app is a canvas app that can be easily modified through a s
 
 Likewise, the interface presented to administrative staff for reviewing these inspections is a model-driven app with a custom page, which is equally easy to modify according to specific requirements.
 
-
 ### Responsible AI
 
 1. **Non-Sensitive Use Case:** The EVVIE application operates within a nonsensitive domain, significantly reducing the risk of bias negatively impacting vehicle inspections. Given the nature of vehicle damage assessment, there's minimal room for bias to influence outcomes.
 
 1. **Controlled Generative AI:** The generative AI models employed by EVVIE use features that constrain their assessments into predefined templates. This design ensures that the AI provides specific, factual responses as guided by the developer, limiting creativity and focusing solely on accurate, consistent assessments.
 
+## Contributors
+
+_Microsoft maintains this article. The following contributors wrote this article._
+
+Principal authors:
+
+- **[Tim Hanewich](https://www.linkedin.com/in/timhanewich/)**, Power Platform Technical Specialist
+- **[Kelly Cason](https://www.linkedin.com/in/kellycason/)**, Business Applications Technical Specialist
 
 ## Related resources
 
 For a demo video, further explanation of functionality, architecture, source code, and more, visit EVVIE on GitHub: [aka.ms/EVVIE](https://github.com/microsoft/SLG-Business-Applications/tree/main/demos/EVVIE).
-
-The team that made EVVIE:
-- **Tim Hanewich**, Power Platform Technical Specialist – core EVVIE systems and AI functionality.
-
-- **Kelly Cason**, Business Applications Technical Specialist – EVVIE UI & UX.
