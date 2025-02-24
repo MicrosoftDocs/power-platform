@@ -8,7 +8,7 @@ ms.component: pa-admin
 ms.custom: NewPPAC
 ms.subservice: admin
 ms.topic: how-to
-ms.date: 02/20/2025
+ms.date: 02/24/2025
 search.audienceType: 
   - admin
 ---
@@ -267,8 +267,10 @@ The audit settings for an environment must be allowed, including the **Log acces
 
 #### Retrieve your audit log list
 
+# [New admin center](#tab/new)
 1. Sign in to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com/home) as a system administrator.
-1. Select **Environments**, and then select an environment where you turned on auditing.
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**. Then select an environment where you turned on auditing.
 1. Select **Settings**.  
 1. Select **Audit and logs** > **Audit summary view**.
 1. Select **Enable/Disable Filters** to review a list of heading dropdown capabilities.
@@ -279,6 +281,22 @@ The audit settings for an environment must be allowed, including the **Log acces
 1. Select **OK**.
 
    Your filtered audits appear.
+
+# [Classic admin center](#tab/classic)
+1. Sign in to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com/home) as a system administrator.
+1. In the navigation pane, select **Environments**. Then select an environment where you turned on auditing.
+1. Select **Settings**.  
+1. Select **Audit and logs** > **Audit summary view**.
+1. Select **Enable/Disable Filters** to review a list of heading dropdown capabilities.
+1. Select the dropdown arrow near the **Event** heading, then find and select **ApplicationBasedAccessDenied** and **ApplicationBasedAccessAllowed**.
+
+   :::image type="content" source="media/control-client-app-access-to-environment/enable-disable-filters.png" alt-text="Screenshot that shows where the Enable/Disable Filters button and ApplicationBasedAccessDenied and ApplicationBasedAccessAllowed checkboxes are located on the Audit summary view page." lightbox="media/control-client-app-access-to-environment/enable-disable-filters.png":::
+
+1. Select **OK**.
+
+   Your filtered audits appear.
+
+---
 
 ### Turn on enabled mode
 
