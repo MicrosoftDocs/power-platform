@@ -70,9 +70,10 @@ productDirectory:
 # conceptualContent section (optional)
 conceptualContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+  sections:  
   title: Technology areas # < 60 chars (optional)
   summary: Explore architectures and guides for different areas within Power Platform. # < 160 chars (optional)
-  sections:    
+  items:
     - title: Well-architected guidance
       links:
         - url: /power-platform/well-architected/
