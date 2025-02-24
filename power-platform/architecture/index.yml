@@ -143,6 +143,7 @@ additionalContent:
   # Supports up to 3 sections
   sections:
     - title: Build your skills with Microsoft Learn training
+      summary: Build your skills with Microsoft Learn training
       items:
         - title: Microsoft Power Platform Solution Architect course
           url: /training/courses/pl-600t00
@@ -150,7 +151,8 @@ additionalContent:
           url: /training/paths/become-solution-architect/
         - title: Design Microsoft Power Platform solutions
           url: /training/paths/solution-architect-data/
-    - title: Build a strong Power Platform adoption strategy and consistent approach to workload design
+    - title: Power Platform adoption and workload design
+      summary: Build a strong Power Platform adoption strategy and consistent approach to workload design.
       items:
       - title: Power Platform adoption guidance
         url: power-platform/adoption/
