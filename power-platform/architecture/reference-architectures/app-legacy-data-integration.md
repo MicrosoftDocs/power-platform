@@ -16,8 +16,8 @@ search.audienceType:
 
 # Legacy data integration solution
 
-> [!TIP]
-> This article describes a solution idea. Your cloud architect can use this guidance to help visualize the major components for a typical implementation of this architecture. Use this article as a starting point to design a well-architected solution that aligns with your workload's specific requirements.
+[!TIP]
+> The article provides an example scenario and visual representation of how to integrate Power Platform solutions with legacy data. This solution is a generalized example scenario architecture, which can be used for many different scenarios and industries.
 
 Integrating legacy data with modern platforms can be a complex and challenging task. This guide provides a comprehensive solution using Power Automate, SharePoint, Dataverse, Power BI, and Microsoft Teams to streamline the process. By using these tools, you can automate data retrieval, centralize storage, and enhance analytics, ultimately improving business agility and decision-making. This article outlines the architecture, workflow, components, and key considerations to help you design a robust and efficient legacy data integration solution.
 

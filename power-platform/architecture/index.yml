@@ -67,9 +67,14 @@ productDirectory:
           url: solution-ideas/agent-rental-portal.md
         - text: Enterprise Visual Vehicle Inspection Engine
           url: solution-ideas/app-evvie.md
-    # Card
-    - title: Optimize your workload
-      imageSrc: /office/media/icons/health.png
+
+# conceptualContent section (optional)
+conceptualContent:
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+  title: Technology areas # < 60 chars (optional)
+  summary: Explore architectures and guides for different areas within Power Platform. # < 160 chars (optional)
+  items:    
+    - title: Well-architected guidance
       links:
         - url: /power-platform/well-architected/
           text: Guiding tenets for your architecture
@@ -83,13 +88,6 @@ productDirectory:
           text: Secure your workload
         - url: /power-platform/well-architected/experience-optimization/principles
           text: Create meaningful and useful experiences
-
-# conceptualContent section (optional)
-conceptualContent:
-# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
-  title: Technology areas # < 60 chars (optional)
-  summary: Explore architectures and guides for different areas within Power Platform. # < 160 chars (optional)
-  items:    
     - title: AI & Copilot Studio
       links:
       - text: Topic authoring best practices in Copilot Studio
