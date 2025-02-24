@@ -37,15 +37,14 @@ productDirectory:
     - title: Architecture fundamentals
       imageSrc: /office/media/icons/walkthrough-map.png
       links:
-      - text: Document processing with AI Builder
-        url: modern-applications/document-processing-with-ai-builder/arch-example-document-processing-with-ai-builder.md
-      - text: Legacy data integration
-        url: modern-applications/legacy-data-integration/legacy-data-integration-solution.md
-      - text: Predictive data analsyis with Dataverse Fabric and Azure AI
-        url: modern-applications/Predictive-data-analysis-with-Dataverse-Fabric-and-Azure-AI/predictive-data-analysis-with-dataverse-fabric-and-azure-ai.md
-      - text: Enterprise Visual Vehicle Inspection Engine
-        url: modern-applications/enterprise-visual-vehicle-inspection-engine/evvie-power-cat-architecture.md
-    # Card
+      - text: Automated Testing 
+        url: fundamentals/testing.md
+      - text: Distributed Tracing
+        url: fundamentals/open-telemetry.md
+      - text: Building Fluent UI Power Apps
+        url: fundamentals/building-fluent-apps.md
+      - text: ALM pipelines with automated quality gates
+        url: fundamentals/alm-with-quality-gates.md.md    # Card
     - title: Reference architectures
       imageSrc: /office/media/icons/blocks.png
       links:
