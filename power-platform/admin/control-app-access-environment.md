@@ -150,7 +150,7 @@ To add an application to the list by completing the following steps.
 # [Classic admin center](#tab/classic)
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-1. In the navigation pane, selet **Environments**.
+1. In the navigation pane, select **Environments**.
 1. In the **Environments** page, select the name of an environment
 1. Copy the **Environment URL** such as `contoso.crm.dynamics.com`.
 1. Open a new tab in the same browser (to stay signed in) and add the following URL to the address bar. Replace `<EnvironmentURL>` with your environment URL and then press **Enter**.
