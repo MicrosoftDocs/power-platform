@@ -40,13 +40,13 @@
       - name: AI + Copilot studio
         items:
           - name: Healthcare patient support agent
-            href: ai-and-copilot-studio/healthcare-patient-support-agent/healthcare-patient-support-agent-architecture.md
+            href: solution-idea/agent-healthcare-patient-support.md
           - name: Rental portal with AI Driven search agent
-            href: ai-and-copilot-studio/rental-portal-with-AI-driven-search-agent-and-payment-processing/rental-portal-with-ai-driven-search-agent-and-payment-processing.md
+            href: solution-idea/agent-rental-portal.md
       - name: Modern applications
         items:
           - name: Enterprise Visual Vehicle Inspection Engine
-            href: modern-applications/enterprise-visual-vehicle-inspection-engine/evvie-power-cat-architecture.md
+            href: solution-idea/app-evvie.md
     - name: Power Platform icons
       href: /power-platform/guidance/icons?toc=/power-platform/architecture/toc.json&bc=/power-platform/architecture/breadcrumb/toc.json
     - name: Microsoft Power Platform Well-Architected
