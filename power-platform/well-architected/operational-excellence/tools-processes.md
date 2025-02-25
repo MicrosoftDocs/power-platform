@@ -76,6 +76,11 @@ The style guide should cover:
 - Error handling standards
 - Common patterns or libraries
 
+Learn more about [Power Automate coding guidelines](/power-automate/guidance/coding-guidelines/) and [Power Apps coding guidelines](/power-apps/guidance/coding-guidelines/overview).
+
+> [!TIP]
+> Use the [Power CAT Toolkit](https://appsource.microsoft.com/product/dynamics-365/microsoftpowercatarch.powercattools?tab=Overview) to perform code reviews. The toolkit incorporates many of the documented coding guidelines, ensuring that your solutions are efficient and maintainable. The toolkit automatically flags any patterns that don't adhere to these best practices, allowing you to address potential issues early in the development process. This proactive approach not only enhances the quality of your code but also helps streamline the review process, making it easier to maintain high standards across your projects. Integrating the Power CAT Toolkit into your development workflow ensures that your solutions are built on a solid foundation and leads to more reliable and scalable solutions.
+
 Keep track of architecture decisions to help teams maintain a fresh understanding of the workload and allow new team members to learn about the design decisions made during the workload's life cycle. Include in your architecture decision document the tools and technologies that were considered, the reason for a decision, and functional and nonfunctional requirements that were factored into decisions. Record decisions to avoid repeating explanations or revisiting discussions with new members or stakeholders.
 
 ### Implement standards and guidelines for addressing technical debt
@@ -116,7 +121,7 @@ Require your workload team to understand the security practices related to devel
 
 [Automate tests with Azure Pipelines](/power-apps/maker/canvas-apps/test-studio-classic-pipeline-editor).
 
-[Power CAT Code Review Tool](https://github.com/microsoft/powerapps-tools/tree/master/Tools/Apps/Microsoft.PowerApps.CodeReview) allows you to perform code reviews.
+[Power CAT Code Review Tool](https://appsource.microsoft.com/en-us/product/dynamics-365/microsoftpowercatarch.powercattools?tab=Overview) allows you to perform code reviews.
 
 [Power CAT Copilot Studio Kit](https://github.com/microsoft/Power-CAT-Copilot-Studio-Kit) allows you to configure agents and tests. By running individual tests against the Copilot Studio APIs (Direct Line), the agent responses are evaluated against expected results.
 

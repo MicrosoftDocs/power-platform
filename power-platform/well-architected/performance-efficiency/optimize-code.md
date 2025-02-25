@@ -83,6 +83,12 @@ To optimize logic, consider the following strategies:
 
 Review the performance recommendations specific to the Power Platform product you're working with. Evaluate your logic against these recommendations to identify areas for improvement.
 
+Learn more about [Power Automate coding guidelines](/power-automate/guidance/coding-guidelines/) and [Power Apps coding guidelines](/power-apps/guidance/coding-guidelines/overview) that can help you optimize logic.
+
+> [!TIP]
+> Use the [Power CAT Toolkit](https://appsource.microsoft.com/product/dynamics-365/microsoftpowercatarch.powercattools?tab=Overview) to perform code reviews. The toolkit incorporates many of the documented coding guidelines, ensuring that your solutions are efficient and maintainable. The toolkit automatically flags any patterns that don't adhere to these best practices, allowing you to address potential issues early in the development process. This proactive approach not only enhances the quality of your code but also helps streamline the review process, making it easier to maintain high standards across your projects. Integrating the Power CAT Toolkit into your development workflow ensures that your solutions are built on a solid foundation and leads to more reliable and scalable solutions.
+
+
 > :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff**: Optimizing logic and hot paths requires expertise. Identifying logic inefficiencies is subjective and might require highly skilled individuals, whom you may need to pull from other tasks.
 
 ### Use concurrency and parallelism
