@@ -2,7 +2,7 @@
 title: Create and manage masking rules (preview)
 description: Learn how to create and manage masking rules in Microsoft Power Apps.
 ms.component: pa-admin
-ms.date: 01/03/2025
+ms.date: 02/20/2025
 ms.topic: overview
 ms.custom: "admin-security"
 author: paulliew
@@ -56,7 +56,7 @@ You get a predefined set of masking rules, to start, or you can create your own.
 
 1. Enter a **Regular Expression**, chosen from the [Regular Expression Language](/dotnet/standard/base-types/regular-expression-language-quick-reference).  
 
-   For example, to mask the first five digits of a social security number, use: `\d(?=\d{2}-\d{2}-\d{4}\|\d-\d{2}-\d{4}\|-\d{2}-\d{4}\|\d-\d{4}\|-\d{4})`
+   For example, to mask the first five digits of a social security number, use: `\d(?=\d{2}-\d{2}-\d{4}|\d-\d{2}-\d{4}|-\d{2}-\d{4}|\d-\d{4}|-\d{4})`
 
    > [!NOTE]
    > Your regular expression can have multiple masking rules separated by a pipe `|`.
@@ -86,10 +86,10 @@ You get a predefined set of masking rules, to start, or you can create your own.
 
     |Regular expression | Original values         | Masked values         |
     |---------|-----------------------------------|-----------------------|
-    | `\d(?=\d{2}-\d{2}-\d{4}\|\d-\d{2}-\d{4}\|-\d{2}-\d{4}\|\d-\d{4}\|-\d{4})` | **SSN** `123-45-6789` | **SSN** `###-##-6789` |
-    |`[STFGM]\d{4}` | **AccountNbr** `A1234567z` | **AccountNbr** `#567z` |
-    | `(?:4[0-9]{12}(?:[0-9]{3})?\|[25][1-7][0-9]{14}\|6(?:011\|5[0-9][0-9])[0-9]{12}\|3[47][0-9]{13}\|3(?:0[0-5]\|[68][0-9])[0-9]{11}\|(?:2131\|1800\|35\d{3})\d{11})` | **MasterCard** `5678912345678912` | **MasterCard** `#` |
-    | `(?:4[0-9]{12}(?:[0-9]{3})?\|[25][1-7][0-9]{14}\|6(?:011\|5[0-9][0-9])[0-9]{12}\|3[47][0-9]{13}\|3(?:0[0-5]\|[68][0-9])[0-9]{11}\|(?:2131\|1800\|35\d{3})\d{11})` | **Visa** `4567891234567891` | **Visa** `#` |
+    | `\d(?=\d{2}-\d{2}-\d{4}|\d-\d{2}-\d{4}|-\d{2}-\d{4}|\d-\d{4}|-\d{4})`| **SSN** `123-45-6789` | **SSN** `###-##-6789` |
+    |`[STFGM]\d{4}` | **AccountNbr** `S1234567z` | **AccountNbr** `#567z` |
+    | `(?:4[0-9]{12}(?:[0-9]{3})?|[25][1-7][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})` | **MasterCard** `5678912345678912` | **MasterCard** `#` |
+    | `(?:4[0-9]{12}(?:[0-9]{3})?|[25][1-7][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})` | **Visa** `4567891234567891` | **Visa** `#` |
     | `\S+@\S+\.\S+` | **Email** `name@sample.com` | **Email** `#` |
 
      When a customer sends you an email with sensitive data and the email has this masking rule, you see the masked values only in the body of an email:
