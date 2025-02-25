@@ -18,7 +18,7 @@ Power Platform Adoption plans convert the goals of a Power Platform Adoption str
 Use the following articles to document your Power Platform plan:
 
 1. [Define roles and responsibilities](roles.md). Foster collaboration, align initiatives with strategic goals, and ensure compliance and security.
-1. [Evaluate delivery models](delivery-models.md.md). Consider ways to structure your team and decide what is the best fit for your situation and organization.
+1. [Evaluate delivery models](delivery-models.md). Consider ways to structure your team and decide what is the best fit for your situation and organization.
 1. [Establishing a license assignment strategy](license-assignment-strategies.md). Ensure return on investment, user adoption, and optimizing costs.
 1. [Modernize applications with Power Platform](../white-papers/application-modernization.md). Explore the benefits, strategies, and best practices of modernizing applications with Power Platform.
 

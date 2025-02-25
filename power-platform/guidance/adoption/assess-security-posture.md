@@ -52,7 +52,7 @@ Power Platform is built on a strong foundation of security. It uses the same sec
 
 The Power Platform service is governed by the [Microsoft Online Services Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31) and the [Microsoft Enterprise Privacy Statement](https://www.microsoft.com/privacystatement/OnlineServices/Default.aspx). For the location of data processing, refer to the Microsoft Online Services Terms and the [Data Protection Addendum](https://www.microsoft.com/download/details.aspx?id=101581).
 
-The [Microsoft Trust Center](https://www.microsoft.com/trustcenter) is the primary resource for Power Platform compliance information. For more information, see [Microsoft Compliance Offerings](https://learn.microsoft.com/en-us/compliance/regulatory/offering-home).
+The [Microsoft Trust Center](https://www.microsoft.com/trustcenter) is the primary resource for Power Platform compliance information. For more information, see [Microsoft Compliance Offerings](/compliance/regulatory/offering-home).
 
 The Power Platform service follows the Security Development Lifecycle (SDL). The SDL is a set of strict practices that support security assurance and compliance requirements. For more information, see [Microsoft Security Development Lifecycle Practices](https://www.microsoft.com/securityengineering/sdl/practices).
 
