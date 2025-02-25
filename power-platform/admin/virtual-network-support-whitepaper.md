@@ -90,7 +90,6 @@ By default, internet access is turned off from containers. If the enterprise's c
 | IP address management | Customers can dictate the IP address space for the delegated subnet, ensuring it uses private IP address ranges, for example **10.0.0.0/8**, **192.168.0.0/16**, **172.16.0.0/12**. | Customer |
 | DNS configuration | Customers can configure custom DNS settings for the delegated subnet, including Azure DNS entries. | Customer |
 | Container | Containers execute requests from Virtual Network-supported services and acquire IPs from the delegated subnet. | Microsoft |
-| Multitenant support  | All customer requests are executed in their own delegated subnet. | Microsoft |
 
 ## Technical architecture
 
@@ -180,35 +179,23 @@ To use the Virtual Network support for Power Platform, consider the following gu
 
 Virtual Network support requires that delegated subnets azure region must match the Power Platform environments location. If you have a Power Platform environment in the United States, then each of two Virtual Networks and subnets must be in the East US and West US Azure regions. For supported regions and location mappings, see [Supported regions](vnet-support-overview.md#supported-regions).
 
-If your Azure resources are in different azure regions, use a global, Virtual Network peering or a similar connectivity option with high speed and low latency. With the [Microsoft global network](azure/networking/microsoft-global-network), establish the connectivity between the Power Platform Virtual Network and your enterprises Virtual Network.
+If your Azure resources are in different azure regions, use a global, Virtual Network peering or a similar connectivity option with high speed and low latency. With the [Microsoft global network](/azure/networking/microsoft-global-network), establish the connectivity between the Power Platform Virtual Network and your enterprises Virtual Network.
 
 #### Subnet size
 
-The size of the delegated subnet within a Virtual Network is a critical concern, considering future growth in usage and the onboarding of new services. The following table provides guidance on the number of environments that can be attached to the same enterprise policy based on available IPs. Size ensures that requests aren't throttled.
+The size of the delegated subnet within a Virtual Network is a critical concern, considering future growth in usage and the onboarding of new services. Sizing your subnet appropriately ensures that requests don't get throttled.
 
-  | Minimum number of environments | Maximum number of environments | Virtual Network execution load  | Subnet size |
-  |----------|------------|--------------|-------------|
-  | 3 | 5 | High to high | `/24` <br>251 usable IP addresses |
-  | 10 | 20 | High to medium | `/24` <br>251 usable IP addresses |
-  | 20 | 50 | Medium to low | `/24` <br>251 usable IP addresses |
-  
-**High execution load**: This is typically characterized by a high volume of requests in an environment. For instance, if you anticipate many plug-ins, flows, or apps executing within a single environment on a Virtual Network, you should plan for a high execution load. In this case, you might allocate 3-5 environments per subnet with a /24 subnet size, which provides 251 usable IP addresses.
-
-**Medium execution load**: This category is suitable for scenarios where the volume of requests is moderate. If you expect a balanced load that isn't as intense as the high execution load, but still requires substantial resources, you can plan for 10-20 environments per subnet with the same /24 subnet size.
-
-**Low execution load**: This is ideal for environments with a lower volume of requests. If the usage is expected to be light, you can allocate 20-50 environments per subnet with a /24 subnet size.
+The subnet that you create should have at least a /24 Classless Inter-Domain Routing (CIDR) address block, which equates to 251 IP addresses, including 5 reserved IP addresses. If you plan to use the same delegated subnet for multiple Power Platform environments, you may need a larger IP address block than /24. Additionally, its important to consider future growth and the onboarding of new services when planning the subnet size. Ensuring that your subnets have enough IP addresses to accommodate the current load and future growth will help prevent throttling and maintain performance.
 
 > [!NOTE]
-> We are working on providing better guidance on how to correctly size the subnet for your environment.
-> We are also working on providing a way to monitor the usage of the subnet and provide alerts when the usage is high.
-
-It's important to consider future growth and the onboarding of new services when categorizing the Power Plaform environments. Ensuring that your subnets have enough IP addresses to accommodate the expected load helps prevent throttling and maintains performance. If you find that the /24 subnet size isn't sufficient in the future, you should plan for larger subnet size.
+> We are working on providing better guidance on how to more accurately size the subnet for your environments.
+> Additionally, we are working on providing new ways to monitor the usage of the subnet and provide alerts when the usage is high.
 
 #### NAT Gateway
 
 Azure Network Address Translation (NAT) Gateway allows containers, within a delegated subnet, to securely connect to internet resources. NAT Gateway ensures secure communication by translating the private IP addresses of container instances to a static, public IP address. Static IPs allow for consistent and secure outbound connections.
 
-Enterprises need to configure NAT Gateway to prevent disruptions in existing integrations when onboarding a production environment to Virtual Network without migrating all data sources to the private network. This configuration allows enterprises to transition their integrations to Virtual Network without affecting current workloads.
+Enterprises that onboard an environment to Virtual Network without migrating all data sources to the private network **must** configure NAT Gateway. This configuration is required in order to prevent disruptions to existing integrations that require access to internet resources. It allows enterprises to transition their integrations to Virtual Network without affecting current workloads.
 
 #### Network monitoring
 
