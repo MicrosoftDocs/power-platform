@@ -1,20 +1,21 @@
 ---
-title: "Roles and responsibilities - Microsoft Power Platform | MicrosoftDocs"
+title: Roles and responsibilities
 description: "Guidance for achieving role and task clarity when adopting Microsoft Power Platform"
+#customer intent: As a Power Platform user, I want to understand the roles and responsibilities for adopting Power Platform so that I can ensure clarity and accountability within my organization.
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/28/2025
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: sericks
+ms.reviewer: pankajsharma2087
 search.audienceType: 
   - admin
 ---
 
 # Roles and responsibilities
 
-Clearly defining roles and responsibilities is important for the successful adoption of Power Platform, as it ensures clarity, accountability, and efficient implementation. This approach fosters collaboration, aligns initiatives with strategic goals, and ensures compliance and security.
+Clearly defining roles and responsibilities is important for the successful adoption of Power Platform because it ensures clarity, accountability, and efficient implementation. This approach fosters collaboration, aligns initiatives with strategic goals, and ensures compliance and security.
 
 As part of planning your [Power Platform Center of Excellence](coe.md), it’s essential to assign well-defined roles and responsibilities to the growing group of stakeholders. As engagements evolve, the stakeholder groups expand, requiring more granular roles and actions to be tracked against responsible individuals. A well-constructed RACI (Responsible, Accountable, Consulted, Informed) matrix brings clarity to roles and responsibilities, ensuring smoother management.
 
@@ -28,7 +29,7 @@ It's important to define clear roles and responsibilities to support:
 - **Empowerment**: When team members have a clear understanding of their roles and tasks, they feel more empowered and confident in their work.
 - **Clarity**: Clear roles and responsibilities help citizen makers know whom to reach out to for approvals, ensuring that activities are authorized efficiently and correctly.
 
-To successfully adopt Power Platform, it’s important to balance opportunity realization with risk mitigation. Achieving this balance hinges on three key tenets: goal clarity, role clarity, and task clarity. In this article, you learn how to identify the roles and responsibilities involved in Power Platform adoption, outline the tasks and initiatives they'll undertake, and establish a RACI matrix to bring clarity to these roles and responsibilities.
+To successfully adopt Power Platform, it’s important to balance opportunity realization with risk mitigation. Achieving this balance hinges on three key tenets: goal clarity, role clarity, and task clarity. In this article, you learn how to identify the roles and responsibilities involved in Power Platform adoption, outline the tasks and initiatives they undertake, and establish a RACI matrix to bring clarity to these roles and responsibilities.
 
 ## Goal clarity
 
@@ -38,7 +39,7 @@ Imagine in a year’s time, Power Platform is well adopted and well governed wit
 
 However, without proper governance, there are significant risks. Poor governance can lead to security vulnerabilities, data breaches, and noncompliance with industry regulations. It can also result in inefficient use of resources, with duplicated efforts and misaligned projects. Equally, without an enablement plan for makers, they might miss out on discovering the benefits of Power Platform, struggle to find appropriate resources internally, or lack awareness of its capabilities, leading to a poor return on investment. Ensuring goal clarity is a critical step in mitigating these risks and achieving successful Power Platform adoption.
 
-**Call to action**: Conduct a workshop with key stakeholders to define and document clear goals for Power Platform adoption. This workshop should focus on aligning these goals with the organization's strategic aims, identifying potential risks, and establishing governance practices to mitigate those risks. Ensure that all participants understand the importance of goal clarity and how it will drive successful adoption and governance of the platform.
+**Call to action**: Conduct a workshop with key stakeholders to define and document clear goals for Power Platform adoption. This workshop should focus on aligning these goals with the organization's strategic aims, identifying potential risks, and establishing governance practices to mitigate those risks. Ensure that all participants understand the importance of goal clarity and how it drives successful adoption and governance of the platform.
 
 Learn more: [Develop a vision for adopting Power Platform](vision.md)
 
@@ -48,7 +49,7 @@ When adopting Power Platform, it's important to achieve role clarity and define 
 
 It's important to consider not only the roles responsible for performing actions but also roles that need to be consulted and informed. This ensures that all stakeholders are engaged and that the adoption process is inclusive and comprehensive.
 
-As your adoption matures, the roles within your organization mmight change. Initially, one person might fulfill multiple roles, but as the organization grows and the adoption process becomes more complex, these roles can be refined and expanded based on the needs and feedback from the team.
+As your adoption matures, the roles within your organization might change. Initially, one person might fulfill multiple roles, but as the organization grows and the adoption process becomes more complex, these roles can be refined and expanded based on the needs and feedback from the team.
 
 Roles might vary based on the organization’s size and the maturity of its roles and capabilities. However, the following are typically involved in Power Platform adoption:
 
@@ -62,35 +63,35 @@ Roles might vary based on the organization’s size and the maturity of its role
 
 ### Support and enablement
 
-- **Community and Enablement lead**: Provide training and support to users of Power Platform, ensuring they understand and can effectively use the tools. This role ensures adopters get the best out of the platform through training, guidance, and peer support. This role often establishes a champion community by identifying and training enthusiastic users, fostering collaboration, and recognizing contributions to sustain engagement and knowledge sharing.
-- **IT Operations (Support)**: Provide frontline support for apps and solutions built on the platform, addressing user issues and ensuring smooth operation.
+- **Community and enablement lead**: Provide training and support to users of Power Platform, ensuring they understand and can effectively use the tools. This role ensures adopters get the best out of the platform through training, guidance, and peer support. This role often establishes a champion community by identifying and training enthusiastic users, fostering collaboration, and recognizing contributions to sustain engagement and knowledge sharing.
+- **IT operations (support)**: Provide frontline support for apps and solutions built on the platform, addressing user issues and ensuring smooth operation.
 - **Azure service administrator**: Oversee the administration of Azure services at a tenant level, ensuring appropriate configuration and security. They support Power Platform admins with configuring Azure features, for example setting up an Azure Application Insight instance or an Azure storage account to support monitoring.
 - **Microsoft 365 admin**: Support the Power Platform Team with admin functions in Microsoft 365, for example license assignment and user configuration.
-- **Other Service Admins**: Service specific admin roles that administer specific services such as Copilot, Power BI, and Microsoft Teams, ensuring proper configuration and support. They support Power Platform admins with service specific admin functions.
+- **Other service admins**: Service specific admin roles that administer specific services such as Copilot, Power BI, and Microsoft Teams, ensuring proper configuration and support. They support Power Platform admins with service specific admin functions.
 
 ### Development and architecture
 
 - **Makers (citizen to pro-devs)**: Utilize the platform to its fullest ability to solve business problems in a supported way with clarity around guardrails.
 - **DevOps engineer**: Bridge development and operations, implementing and automating processes to enhance the software development lifecycle. They ensure continuous integration and delivery, improving efficiency and reliability.
-- **Enterprise Architects**: Design and oversee the architecture of Power Platform to align with organizational technology strategies. They ensure integration with line-of-business (LOB) systems and determine criteria for when to use Power Platform versus other systems.
-- **Solution Architects**: Develop and derive solutions architecture, ensuring they meet business needs and technical requirements using Power Platform, Microsoft 365, and Azure services.
+- **Enterprise architects**: Design and oversee the architecture of Power Platform to align with organizational technology strategies. They ensure integration with line-of-business (LOB) systems and determine criteria for when to use Power Platform versus other systems.
+- **Solution architects**: Develop and derive solutions architecture, ensuring they meet business needs and technical requirements using Power Platform, Microsoft 365, and Azure services.
 
 ### Strategic and executive roles
 
-- **Leadership / Executives**: Guide the strategic direction and ensure alignment of Power Platform initiatives with business objectives. They promote user adoption and ensure adequate resourcing.
-- **Change Management**: Manage the transition and adoption of Power Platform, ensuring smooth implementation and user acceptance.
-- **Business Analysts**: Identify business needs and develop solutions using Power Platform to meet those needs, ensuring alignment with organizational goals.
-- **Project Management Office**: Ensure that low-code projects are managed in accordance with organizational project standards and controls, providing oversight and governance to ensure successful project delivery.
+- **Leadership / executives**: Guide the strategic direction and ensure alignment of Power Platform initiatives with business objectives. They promote user adoption and ensure adequate resourcing.
+- **Change management**: Manage the transition and adoption of Power Platform, ensuring smooth implementation and user acceptance.
+- **Business analysts**: Identify business needs and develop solutions using Power Platform to meet those needs, ensuring alignment with organizational goals.
+- **Project management office**: Ensure that low-code projects are managed in accordance with organizational project standards and controls, providing oversight and governance to ensure successful project delivery.
 
 ### Data and AI
 
-- **Data Stewarts**: Maintain data quality, security, and compliance. They establish data governance policies and manage access permissions.
-- **AI Strategist**: Align AI strategy with business objectives, ensuring that AI initiatives support and enhance organizational goals.
-- **Ethics Officer**: Monitor AI ethical standards and compliance, conducting AI ethics review processes and risk assessment reports. They ensure responsible AI standards are followed and incorporated into projects involving AI features.
+- **Data stewarts**: Maintain data quality, security, and compliance. They establish data governance policies and manage access permissions.
+- **AI strategist**: Align AI strategy with business objectives, ensuring that AI initiatives support and enhance organizational goals.
+- **Ethics officer**: Monitor AI ethical standards and compliance, conducting AI ethics review processes and risk assessment reports. They ensure responsible AI standards are followed and incorporated into projects involving AI features.
 
 ### End users
 
-- **End Users**: Use Power Platform for daily tasks, benefiting from its capabilities to improve productivity and efficiency.
+- **End users**: Use Power Platform for daily tasks, benefiting from its capabilities to improve productivity and efficiency.
 
 ## Task clarity
 
@@ -116,15 +117,15 @@ As you identify and define tasks, consider how your organization’s current pro
 
 Prioritize the identified tasks into horizons:
 
-**Horizon Mapping** is a technique used to visualize and prioritize tasks across different time horizons. By mapping tasks into immediate, near-term, and long-term horizons, organizations can ensure that they're addressing urgent needs while also planning for future objectives. This approach helps in balancing short-term demands with long-term strategic goals, ensuring sustained progress and alignment with overall business objectives.
+**Horizon mapping** is a technique used to visualize and prioritize tasks across different time horizons. By mapping tasks into immediate, near-term, and long-term horizons, organizations can ensure that they're addressing urgent needs while also planning for future objectives. This approach helps in balancing short-term demands with long-term strategic goals, ensuring sustained progress and alignment with overall business objectives.
 
 - **Horizon 1 (immediate)**: Tasks that need to be completed in the short term, typically within days or weeks. These tasks are urgent and critical for immediate goals.
 - **Horizon 2 (near-term)**: Tasks that are important but not urgent, planned for the next few months. These tasks support medium-term objectives.
 - **Horizon 3 (long-term)**: Tasks that are part of long-term planning, often spanning several months to years. These tasks align with strategic goals and future growth.
 
-As you map tasks into horizons, consider dependencies between the initiatives, budget, current projects happening or planned, people movements when road mapping.
+As you map tasks into horizons, consider dependencies between the initiatives, budget, current projects happening or planned, and people movements when road mapping.
 
-Tasks vary based on the organization’s size and the maturity of Power Platform adoption. However, the following tasks are typically involved in establishing Power Platform governance and nurture processes. This list of tasks is not exhaustive but serves as a foundational guide to help you begin planning your Power Platform adoption strategy.
+Tasks vary based on the organization’s size and the maturity of Power Platform adoption. However, the following tasks are typically involved in establishing Power Platform governance and nurture processes. This list of tasks isn't exhaustive but serves as a foundational guide to help you begin planning your Power Platform adoption strategy.
 
 | Strategy & Plan | Manage | Secure | Monitor | Nurture & Support |
 | --- | --- | --- | --- | --- |
@@ -143,13 +144,13 @@ Tasks vary based on the organization’s size and the maturity of Power Platform
 
 After identifying the roles and tasks, organize them into a RACI matrix. The purpose of a RACI matrix is to clarify roles and responsibilities by defining who is Responsible, Accountable, Consulted, and Informed for each task.
 
-- Start by listing all the tasks and roles involved in your project. Begin by listing all the tasks involved in your project in the left-hand column. Then, list all the roles across the top row of the matrix.
+- Start by listing all the tasks and roles involved in your project. List all the tasks in the left-hand column and all the roles across the top row of the matrix.
 - Assign the appropriate RACI value to each role.
   - Responsible (R): The person who performs the task.
   - Accountable (A): The person ultimately answerable for the task’s completion.
   - Consulted (C): People who provide input and feedback.
   - Informed (I): People who need to be kept informed of progress and outcomes.
-- Ensure that each task has one Accountable person and that responsibilities are clearly distributed.
+- Ensure each task has one accountable person and that responsibilities are clearly distributed.
 - Share the RACI matrix with the team to ensure everyone understands their roles and responsibilities.
 
 Here’s a simple example to illustrate how to create a RACI matrix:

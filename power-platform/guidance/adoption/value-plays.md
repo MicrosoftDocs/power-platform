@@ -131,7 +131,7 @@ Share insightful solution case studies & maker success stories that bring to lif
       **Source of value**
    :::column-end:::
    :::column span="2":::
-      Showcase Power Platform solution & maker successes via established communications channels & forums
+      Showcase Power Platform solution and maker successes via established communications channels and forums
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -139,11 +139,11 @@ Share insightful solution case studies & maker success stories that bring to lif
      **The play (key activities)**
    :::column-end:::
    :::column span="2":::
-      Scout the go-to comms channels in your organisation for sharing ideas & successes (eg. intranet news, Viva Engage groups, monthly IT showcases)
-      Identify top makers & apps using CoE insights
-      Interview selected makers on their challenges, triumphs & top tips for other makers
-      Write up the success story using the Application-Driven Story Framework & publish
-      Turn it into a Success Series!
+      Scout the go-to comms channels in your organisation for sharing ideas & successes (for ex- intranet news, Viva Engage groups, monthly IT showcases).
+      Identify top makers and apps using CoE insights.
+      Interview selected makers on their challenges, triumphs and top tips for other makers.
+      Write up the success story using the application-driven story framework and publish.
+      Turn it into a Success Series.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -151,9 +151,9 @@ Share insightful solution case studies & maker success stories that bring to lif
      **Objectives (what to focus on)**
    :::column-end:::
    :::column span="2":::
-      Demonstrate value each has achieved
-      Reinforce available ‘Getting Started’ resources, training & guidelines
-      Promote the Platform Community
+      Demonstrate value each has achieved.
+      Reinforce available *Getting Started* resources, training and guidelines.
+      Promote the Platform community.
    :::column-end:::
 :::row-end:::
 :::row:::

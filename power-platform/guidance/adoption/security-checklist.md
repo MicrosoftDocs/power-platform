@@ -1,18 +1,19 @@
 ---
 title: Security checklist for key activities to secure your Power Platform environment
 description: Guidance for key activities to secure your Power Platform environment
+#customer intent: As a Power Platform user, I want to understand the key activities to secure my Power Platform environment so that I can protect my organization's data and applications.
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: conceptual
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: sericks
+ms.reviewer: pankajsharma2087
 ms.date: 02/28/2025
 ---
 
 # Security checklist for key activities to secure your Power Platform environment
 
-This article provides a security checklist for key activities essential to maintaining a secure Power Platform environment. It summarizes the articles into this section into an action plan and covers activities such as data protection, threat detection, identity and access management, and compliance with regulatory standards. By following this checklist, administrators and security professionals can ensure that their Power Platform deployments are robust, resilient, and aligned with best practices. Whether you are setting up new environments or enhancing existing ones, this guide will help you implement effective security measures to protect your organization's data and applications.
+This article provides a security checklist for key activities essential to maintaining a secure Power Platform environment. It summarizes the articles in this section into an action plan and covers activities such as data protection, threat detection, identity and access management, and compliance with regulatory standards. By following this checklist, admins and security professionals can ensure that their Power Platform deployments are robust, resilient, and aligned with best practices. Whether you're setting up new environments or enhancing existing ones, this guide helps you implement effective security measures to protect your organization's data and applications.
 
 ## Security Posture Management
 
@@ -21,7 +22,7 @@ This article provides a security checklist for key activities essential to maint
 | &check; | Understand the responsibilities of the service provider as a data processor and the customer responsibilities as the owner and data controller. Make sure both sides comply with the relevant laws and regulations. Familiarize yourself with Power Platform's architecture, including environments, connectors, Dataverse, Power Apps, Power Automate, and Copilot Studio. |
 | &check; | Understand your security requirements and assess your existing security measures, tools, and practices to identify gaps and areas for improvement. Create a security baseline aligned with compliance requirements and industry standards. |
 | &check; | Review the Security page in the Power Platform Admin Center and assess recommended actions to improve the security score. |
-| &check; | Educate makers and developers on security, compliance and privacy best practices.Ensure training materials are easily accessible through a central source like a SharePoint site or wiki. |
+| &check; | Educate makers and developers on security, compliance, and privacy best practices. Ensure training materials are easily accessible through a central source like a SharePoint site or wiki. |
 | &check; | Define and test incident response plans. Ensure clear roles and responsibilities for handling security incidents. |
 | &check; | Regularly review and update security policies to adapt to changing threats and business needs. |
 
@@ -39,7 +40,7 @@ This article provides a security checklist for key activities essential to maint
 
 | Done? | Task |
 | :-----: | ---- |
-| &check; | Create DLP policies to control data flow between connectors and environments.Regularly review and update DLP policies to align with security requirements. |
+| &check; | Create DLP policies to control data flow between connectors and environments. Regularly review and update DLP policies to align with security requirements. |
 | &check; | Consider using customer-managed keys for additional control over encryption. |
 | &check; | Incorporate privacy considerations into the design and development of applications. Ensure privacy is a fundamental aspect of your development process.|
 | &check; | Configure tenant isolation to control and restrict data access between different tenants. |
@@ -60,8 +61,8 @@ This article provides a security checklist for key activities essential to maint
 
 | Done? | Task |
 | :-----: | ---- |
-| &check; | Determine which regulatory standards apply to your organization (e.g., GDPR, HIPAA, CCPA, PCI DSS). Understand the specific requirements and obligations of each regulation. |
-| &check; | Utilize the Power Platform Admin Center and Microsoft Sentinel to track user activities. Conduct regular audits to detect anomalies and ensure compliance with regulatory standards. |
+| &check; | Determine which regulatory standards apply to your organization (for example, GDPR, HIPAA, CCPA, PCI DSS). Understand the specific requirements and obligations of each regulation. |
+| &check; | Utilize the Power Platform admin center and Microsoft Sentinel to track user activities. Conduct regular audits to detect anomalies and ensure compliance with regulatory standards. |
 | &check; | Educate makers and developers on regulatory requirements and compliance best practices. |
 | &check; | Maintain detailed records of compliance efforts, including policies, procedures, and audit logs. Ensure documentation is up to date and readily available for regulatory audits.|
 

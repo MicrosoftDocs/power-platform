@@ -1,13 +1,14 @@
 ---
-title: Configure identity and access management for Microsoft Power Platform
+title: Configure identity and access management
 description: Guidance on configuring identity and access management for Microsoft Power Platform
+#customer intent: As a Power Platform user, I want to configure identity and access management for Microsoft Power Platform so that I can ensure secure access to resources.
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/28/2025
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: sericks
+ms.reviewer: pankajsharma2087
 search.audienceType: 
   - admin
 contributors:
@@ -82,7 +83,7 @@ Review these [identity management best practices](https://learn.microsoft.com/en
 
 ## Environment access
 
-A [Power Platform environment](/power-platform/admin/environments-overview) is a logical container and unit of governance management that represents the security boundary in Power Platform. Many features such virtual network, Lockbox, and security groups all operate at an environment-level of granularity from a management perspective. This allows different security requirements to be implemented in different environments depending on your business needs. Users get access to an environment based on a security role that they're assigned. Simply having a license and an identity at tenant level isn't enough to grant access to an environment unless it's the [default environment](/power-platform/admin/environments-overview#default-environment).
+A [Power Platform environment](/power-platform/admin/environments-overview) is a logical container and unit of governance management that represents the security boundary in Power Platform. Many features such as virtual network, Lockbox, and security groups all operate at an environment-level of granularity from a management perspective. This allows different security requirements to be implemented in different environments depending on your business needs. Users get access to an environment based on a security role that they're assigned. Simply having a license and an identity at tenant level isn't enough to grant access to an environment unless it's the [default environment](/power-platform/admin/environments-overview#default-environment).
 
 Environments that have Dataverse support more advanced security models specific to controlling access to data and services with a Dataverse database.
 
@@ -100,11 +101,11 @@ To further enhance security and reduce the risk of incidental over-sharing, you 
 
 ### Route makers to their own development environment
 
-[Environment routing](/power-platform/admin/default-environment-routing) allows Power Platform admins to automatically direct new or existing makers into their own personal developer environments when they visit make.powerapps.com or copilotstudio.microsoft.com. We recommend you configure environment routing offers makers a personal, safe space to build with Microsoft Dataverse without the fear of others accessing their apps or data.
+[Environment routing](/power-platform/admin/default-environment-routing) allows Power Platform admins to automatically direct new or existing makers into their own personal developer environments when they visit make.powerapps.com or copilotstudio.microsoft.com. We recommend you configure environment routing to offer makers a personal, safe space to build with Microsoft Dataverse without the fear of others accessing their apps or data.
 
 ## Resource access
 
-The ability to create and run specific applications and flows is controlled by security roles in the context of environments. For example, you can share a canvas apps directly with a user or with a Microsoft Entra ID group, while still being subject to Dataverse security roles. On the other hand, sharing of model-driven apps is done via Dataverse security roles only.
+The ability to create and run specific applications and flows is controlled by security roles in the context of environments. For example, you can share canvas apps directly with a user or with a Microsoft Entra ID group, while still being subject to Dataverse security roles. On the other hand, sharing model-driven apps is done via Dataverse security roles only.
 
 ### Provide role-based authorization
 
@@ -132,11 +133,11 @@ Ask questions like these:
 - Does the role need permanent access to these permissions?
 - What happens if the user changes jobs?
 
-**Limiting the level of access that users have reduces the potential attack surface**. If you grant only the minimum permissions that are required to perform specific tasks, the risk of a successful attack or unauthorized access is reduced. For example, developers only need maker access to the Development environment but not the Production environment; they only need access to create resources but not change environment properties; and they may only need access to read/write data from Dataverse but not change the data model or attributes of the Dataverse table.
+**Limiting the level of access that users have reduces the potential attack surface**. If you grant only the minimum permissions that are required to perform specific tasks, the risk of a successful attack or unauthorized access is reduced. For example, developers only need maker access to the development environment but not the production environment; they only need access to create resources but not change environment properties; and they may only need access to read/write data from Dataverse but not change the data model or attributes of the Dataverse table.
 
-**Avoid permissions that target individual users**. Granular and custom permissions create complexity and confusion and can become difficult to maintain as users change roles and move across the business, or as new users with similar authentication requirements join the team. This situation can create a complex legacy configuration that's difficult to maintain and negatively impact both security and reliability.
+**Avoid permissions that target individual users**. Granular and custom permissions create complexity and confusion and can become difficult to maintain as users change roles and move across the business, or as new users with similar authentication requirements join the team. This situation can create a complex legacy configuration that's difficult to maintain and negatively impacts both security and reliability.
 
-**Grant roles that start with least privilege** and add more based your operational or data access needs. Your technical teams must have clear guidance to implement permissions.
+**Grant roles that start with least privilege** and add more based on your operational or data access needs. Your technical teams must have clear guidance to implement permissions.
 
 ### Establish processes to manage the identity lifecycle
 
@@ -176,11 +177,11 @@ As a customer, you're responsible for:
 
 Understand the key requirements for the Power Platform workload you're implementing. Ask yourself the following questions to help identify the identity and access management features to configure.
 
-- How will you implement access control and authentication mechanisms to ensure only authorized users can access the workload?
+- How do you implement access control and authentication mechanisms to ensure only authorized users can access the workload?
 - How do you ensure secure and seamless user authentication?
 - How do you control which apps can interact with the generative AI (agent) and what measures ensure these restrictions are effective?
-- How will the workload securely integrate with other internal and external systems?
-- Where will users access this solution from - are they using a mobile device or web browser?
+- How does the workload securely integrate with other internal and external systems?
+- Where do users access this solution from - are they using a mobile device or web browser?
 - Are your users internal, external, or both?
 
 ## Recommendations
