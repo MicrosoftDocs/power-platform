@@ -278,3 +278,12 @@ This recommendation lists production websites that aren't migrated to the enhanc
 
 > [!NOTE]
 > Once an action is taken, it takes up to one day for the sites to be removed from the list.
+
+### Users using apps with premium connectors under extended use rights
+
+This recommendation lists users that are actively using Power Apps applications with Microsoft 365 under extended use rights and will be restricted starting April 1, 2025. 
+
+Learn more about [Microsoft Power Apps and Power Automate use rights for Microsoft 365 applications](/power-platform/admin/powerapps-flow-licensing-faq#what-are-microsoft-power-apps-and-power-automate-use-rights-for-microsoft-365-applications) with additional information about the April 1,2025 enforcement in the [Power Platform licensing FAQs](power-platform/admin/powerapps-flow-licensing-faq).
+
+> [!NOTE]
+> Please note that this recommendation provides a list of users that have used these apps without a premium license in the past 14 days.
