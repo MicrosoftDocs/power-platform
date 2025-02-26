@@ -240,13 +240,13 @@ By following these best practices, you can secure outbound connections from Powe
 3. Establish a peering connection between VNET1 and VNET2.
 4. Configure Power Platform Virtual Network integration for the desired environments using the subnet(s) created in steps 1 and 2.
 
-:::image type="content" source="media/vnet-sample-scenario-1.png" alt-text="A diagram showing VNet configuration When the Enterprise's Azure resources are in one of the paired azure regions and Power Platform Environment is in United States." lightbox="media/vnet-sample-scenario-1.png":::
+:::image type="content" source="media/vnet-sample-scenario-1.png" alt-text="A diagram showing VNet configuration When the Enterprise's Azure resources are in one of the paired Azure regions and Power Platform Environment is in United States." lightbox="media/vnet-sample-scenario-1.png":::
 
 ### When an enterprise's Azure resources are in Central US Azure region and Power Platform is in United States
 
 **Assumptions:**
 
-- The enterprises's Power Platform environment is located in United States.
+- The enterprise's Power Platform environment is located in United States.
 - The primary and failover Azure region for Virtual Network is set to West US ad East US respectively.
 - The customer's resources are in a Virtual Network (VNET1) in Central US Azure region.
 
