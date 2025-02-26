@@ -1,7 +1,7 @@
 ---
-title: "Track user access"
-description: "Power Apps and Power Automate activities can be tracked and viewed from the Office 365 Security and Compliance Center. This allows tracking when apps or flows are created, edited, or deleted along with other key activities."
-#customer intent: As an admin, I want to track Power Apps and Power Automate activities so that I can monitor user access and actions.
+title: Track user access
+description: Power Apps and Power Automate activities can be tracked and viewed from the Office 365 Security and Compliance Center. This allows tracking when apps or flows are created, edited, or deleted along with other key activities.
+#customer intent: As a Power Platform user, I want to track Power Apps and Power Automate activities so that I can monitor user access and actions.
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: conceptual
@@ -60,7 +60,7 @@ Enable-OrganizationCustomization
 Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $true
 ```
 
-A Microsoft Power Platform or Dynamics 365 service admin can be granted permission to view audit log entries.
+A Microsoft Power Platform or Dynamics 365 Service Admin can be granted permission to view audit log entries.
 
 ```powershell
 Add-RoleGroupMember "Compliance Management" -Member user1
@@ -75,7 +75,7 @@ You might also find Microsoft Purview Compliance Manager helpful to manage your 
 
 As an administrator, you should:
 
-- Carefully think about audit data via Office 365 security & compliance center in addition to other mechanisms for monitoring. You can create new alert policies to help ensure the overall health of your citizen app development platform.
+- Carefully think about audit data via Office 365 Security & Compliance Center in addition to other mechanisms for monitoring. You can create new alert policies to help ensure the overall health of your citizen app development platform.
 - Further explore Power Automate capabilities that can help you automate additional steps for ensuring Microsoft Power Platform service health.
 
 

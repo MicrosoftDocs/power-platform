@@ -1,5 +1,5 @@
 ---
-title: Delivery models
+title: Implement delivery models
 description: Depending on the size of your organization, you might want to formalize your Microsoft Power Platform adoption approach by implementing a structured organization model.
 #customer intent: As a Power Platform user, I want to understand different Power Platform delivery models so that I can choose the best approach for my organization.
 author: manuelap-msft
@@ -12,7 +12,7 @@ ms.reviewer: pankajsharma2087
 search.audienceType: 
   - admin
 ---
-# Delivery models
+# Implement delivery models
 
 Defining a structured delivery and organization model is essential for driving successful Power Platform adoption within your organization. A well-defined model establishes [clear roles and responsibilities](roles.md), which help foster collaboration and innovation. By outlining how different teams and individuals interact with Power Platform, organizations can ensure that resources are effectively utilized, and projects are aligned with strategic objectives. This structured approach not only enhances efficiency and accountability but also supports compliance with regulatory requirements and promotes a culture of continuous improvement.
 
@@ -24,7 +24,8 @@ Alternatively, if your organization uses a decentralized or federated model, Pow
 
 As your organization evolves, you might find that a hybrid approach, blending elements of different delivery models, best suits your needs. This flexibility allows you to adapt to changing requirements and scale your Power Platform adoption effectively.
 
-![Delivery models.](media/delivery-models.png "Delivery models")
+
+:::image type="content" source="media/delivery-models.png" alt-text="Screenshot showing the delivery model.":::
 
 ## Centralized  
 

@@ -19,7 +19,7 @@ Security is the protection of IT systems and networks from theft, damage, or dis
 
 This diagram illustrates how security responsibilities are distributed between you and Microsoft:
 
-:::image type="content" source="media/shared-responsibility.png" alt-text="Shared responsibility model.":::
+:::image type="content" source="media/shared-responsibility.png" alt-text="screenshot of shared responsibility model.":::
 
 This article explains the security principles and practices that apply to Power Platform. It also prompts you to assess what you are doing today to secure Power Platform solutions and provides next steps to design your action plan.
 
@@ -124,7 +124,7 @@ By understanding and addressing these top 10 security risks, you can significant
 
 Finding the right balance in security measures is crucial for maintaining both productivity and safety within an organization. Users need sufficient security guidance to protect their assets, but overly restrictive measures can hinder their work efficiency. When security protocols are too cumbersome or not well understood, users might become frustrated and attempt to bypass them, leading to risky "Shadow IT" practices. This not only undermines security efforts but also increases the overall risk to the organization. Therefore, it's essential to implement security measures that are robust yet user-friendly, ensuring that users can work efficiently while keeping their assets secure.
 
-:::image type="content" source="media/find-balance.png" alt-text="Find the right balance between security and productivity":::
+:::image type="content" source="media/find-balance.png" alt-text="Screenshot of find the right balance between security and productivity":::
 
 Security naturally creates friction that might slow down processes. It's important to identify which elements are healthy in your IT processes and which aren't:
 

@@ -1,5 +1,5 @@
 ---
-title: Establishing a DLP strategy
+title: Establish a DLP strategy
 description: As an administrator taking over an environment or starting to support use of Power Apps and Power Automate, DLP policies should be one of the first things you set up.
 #customer intent:As a Power Platform user, I want to establish DLP policies so that I can prevent users from unintentionally exposing organizational data.
 author: manuelap-msft
@@ -12,7 +12,7 @@ ms.reviewer: pankajsharma2087
 search.audienceType: 
   - admin
 ---
-# Establishing a DLP strategy
+# Establish a DLP strategy
 
 Data Loss Prevention (DLP) policies act as guardrails to help prevent users from unintentionally exposing organizational data and to protect information security in the tenant. DLP policies enforce rules for which connectors are enabled for each environment, and which connectors can be used together. Connectors are classified as either **business data only**, **no business data allowed**, or **blocked**. A connector in the business data only group can only be used with other connectors from that group in the same app or flow. More information: [Administer Microsoft Power Platform: Data Loss Prevention Policies](../../admin/wp-data-loss-prevention.md)
 
@@ -111,7 +111,8 @@ As expected, any new environments that are created in Contoso map to the origina
 
 This setup of tenant-centric DLP policies doesn't prevent environment admins from coming up with their own environment-level DLP policies, if they want to introduce more restrictions or to classify custom connectors.
 
-![How Contoso set up their DLP policy.](media/dlp-strategy_.png "How Contoso set up their DLP policy")
+
+:::image type="content" source="media/dlp-strategy_.png" alt-text="Screenshot of showing the dlp strategy.":::
 
 ## Set up data policies
 

@@ -1,5 +1,5 @@
 ---
-title: License assignment strategies
+title: Establish license assignment strategies
 description: Learn how to establish a license assignment strategy for Power Platform to optimize costs, ensure governance, and improve user adoption.
 #customer intent: As a Power Platform user, I want to establish a license assignment strategy for Power Platform so that I can optimize costs, ensure governance, and improve user adoption.
 author: stjeffer
@@ -10,7 +10,7 @@ ms.author: stjeffer
 ms.reviewer: pankajsharma2087
 ---
 
-# License assignment strategies
+# Establish license assignment strategies
 
 Premium licensing provides advanced features, greater flexibility, scalability, and enhanced security and compliance for organizations.
 

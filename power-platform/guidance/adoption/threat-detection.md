@@ -44,7 +44,7 @@ The SecOps team can use the Microsoft Sentinel tools to investigate and respond 
 
 After setting up Microsoft Sentinel to collect Power Platform data, you can use [threat detection rules](/azure/sentinel/threat-detection) to run regularly query the collected data and analyze it to discover threats. Start by using the [built-in analytics rules](/azure/sentinel/business-applications/power-platform-solution-security-content#built-in-analytics-rules) to create these rules. These rules generate alerts when they find what they're looking for; alerts are then aggregated into incidents that you can assign and investigate. You can also build predetermined, automated responses into the rules' configuration.
 
-:::image type="content" source="media/sentinel-example.png" alt-text="Microsoft Sentinel incident of a Power Automate cloud flow created by a fired employee.":::
+:::image type="content" source="media/sentinel-example.png" alt-text="Screenshot of Microsoft Sentinel incident of a Power Automate cloud flow created by a fired employee.":::
 
 Learn more:
 
@@ -78,6 +78,6 @@ A comprehensive analysis to identify threats, attacks, vulnerabilities, and coun
 
 Learn more: [Recommendations for threat analysis](/power-platform/well-architected/security/threat-model#power-platform-facilitation)
 
-## Resources
+
 
 <!-- TODO -->

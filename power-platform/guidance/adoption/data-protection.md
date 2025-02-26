@@ -1,5 +1,5 @@
 ---
-title: Data protection
+title: Secure Data protection
 description: Learn key strategies and best practices for data protection and privacy within Power Platform to ensure security and compliance.
 #customer intent: As a Power Platform user, I want to understand data protection strategies in Power Platform so that I can ensure security and compliance.
 author: manuelap-msft
@@ -11,19 +11,20 @@ ms.reviewer: pankajsharma2087
 ms.date: 02/28/2025
 ---
 
-# Data protection
+# Secure Data protection
 
 In today's digital landscape, data protection and privacy are paramount concerns for organizations using Power Platform to build and deploy business applications. Ensuring the security and confidentiality of sensitive data isn't only a regulatory requirement but also a critical factor in maintaining customer trust and safeguarding organizational assets.
 
 This article covers key strategies and best practices for data protection and privacy within Power Platform.
 
+## Data protection
 Data protection involves implementing measures to secure data from unauthorized access, breaches, and other threats. Privacy focuses on ensuring that personal and sensitive information is handled in compliance with legal and regulatory requirements, and that individuals' rights to privacy are respected.
 
 ## Data residency
 
 A Microsoft Entra tenant houses information that's relevant to an organization and its security. When a Microsoft Entra tenant signs up for Power Platform services, the tenant's selected country or region is mapped to the most suitable Azure geography where a Power Platform deployment exists. Power Platform stores customer data in the tenant's assigned Azure geography, or home geo, except where organizations deploy services in multiple regions. Learn more about [data storage and governance in Power Platform](/power-platform/admin/security/data-storage).
 
-For multinational companies with employees and customers distributed around the world, you can create and manage environments specific to your global regions. You can [create an environment in a different region](/power-platform/admin/regions-overview) than where your tenant resides. Local environments can provide quicker data access for users in that region. Be sure to read [a multi-environment deployment](/power-platform/admin/multiple-online-environments-tenants#a-multi-environment-deployment) to understand the features of multiple environments.
+For multinational companies with employees and customers distributed around the world, you can create and manage environments specific to your global regions. You can [create an environment in a different region](/power-platform/admin/regions-overview) than where your tenant resides. Local environments can provide quicker data access for users in that region. Learn more about the features of multiple environments in [A multi-environment deployment](/power-platform/admin/multiple-online-environments-tenants#a-multi-environment-deployment) to understand the features of multiple environments.
 
 ## Data segregation
 
@@ -55,8 +56,8 @@ Power Platform Data Loss Prevention (DLP) policies are rules and guidelines desi
 
 Establishing a Power Platform Data Loss Prevention (DLP) policy strategy is crucial to protect sensitive information, ensure regulatory compliance, and mitigate the risk of data breaches and unauthorized data sharing:
 
-> [!div class="nextstepaction"]
-> [Establishing a DLP strategy](dlp-strategy.md)
+Learn more:
+- [Establishing a DLP strategy](/powerplatform/guidance/adoption/dlp-strategy.md)
 
 ## Cross-tenant inbound and outbound restrictions
 
@@ -176,9 +177,9 @@ In conclusion, ensuring robust security within Power Platform is a critical resp
 
 Configuring and setting up the identity and access management (IAM) policies in line with your organization's security posture ensures the security and integrity of your data and applications. Proper IAM policies help control who can access your Power Platform environment, what actions they can perform, and under what conditions. Well-defined IAM policies support compliance with regulatory requirements and help maintain a secure and efficient operational environment, safeguarding your organization's assets and sensitive information.
 
-> [!div class="nextstepaction"]
-> [Configure identity and access management](conditional-access.md)
+Learn more:
+- [Configure identity and access management](/power-platform/guidance/adoption/conditional-access.md)
 
-## Resources
+
 
 <!-- TODO -->

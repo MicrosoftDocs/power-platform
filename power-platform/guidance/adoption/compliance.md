@@ -1,6 +1,6 @@
 ---
 title: Meet compliance requirements
-description: As an IT admin, I want to configure identity and access management for Microsoft Power Platform so that I can ensure secure access to resources.
+description: Configure identity and access management for Microsoft Power Platform to ensure secure access to resources.
 #customer intent: As a Power Platform user, I want to configure identity and access management for Microsoft Power Platform so that I can ensure secure access to resources.
 author: manuelap-msft
 ms.component: pa-admin
@@ -57,7 +57,7 @@ With Dataverse audit capabilities in the Power Platform admin center, you can di
 
 Moreover, to meet your enterprise’s compliance requirements with greater granularity, Dataverse offers robust data logging capabilities within [managed security](/power-platform/admin/security/managed-security). This feature is essential for investigating security incidents and is designed to meet the external and internal auditing, compliance, security, and governance policies that are common to many enterprises. You can easily customize your Dataverse audit for various entities and fields to ensure that you have comprehensive visibility into your data interactions, helping to maintain a secure and compliant environment.
 
-:::image type="content" source="media/sec-envauditing.png" alt-text="Environment auditing":::
+:::image type="content" source="media/sec-envauditing.png" alt-text="Screenshot of environment auditing":::
 
 ## Understand security and compliance requirements
 

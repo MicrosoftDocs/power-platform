@@ -1,6 +1,6 @@
 ---
 title: Configure identity and access management
-description: Guidance on configuring identity and access management for Microsoft Power Platform
+description: Configure identity and access management for Microsoft Power Platform to ensure secure access to resources. Learn how to manage users and their interactions effectively.
 #customer intent: As a Power Platform user, I want to configure identity and access management for Microsoft Power Platform so that I can ensure secure access to resources.
 author: manuelap-msft
 ms.component: pa-admin
@@ -151,7 +151,7 @@ As the race to adopt AI is prioritized across industries, admins are looking to 
 
 For Copilot Studio agent scenarios, admins are equipped with fine-grained controls over editor versus viewer permissions on a per environment or environment group basis and can limit viewers to security groups, individuals, or a finite number of viewers.
 
-:::image type="content" source="media/limit-sharing.png" alt-text="Limit sharing":::
+:::image type="content" source="media/limit-sharing.png" alt-text="Screenshot of Limit sharing":::
 
 ### Connect to Azure resources that support managed identity
 
@@ -208,9 +208,9 @@ Effectively governing makers, users, and guests are essential for maintaining se
 
 Every organization must comply with the legal and regulatory standards of the industry and region they operate in. They may also have more contractual requirements and corporate policies.
 
-> [!div class="nextstepaction"]
-> [Meet compliance requirements](compliance.md)
+Learn more:
+- [Meet compliance requirements](/power-platform/guidance/adoption/compliance.md)
 
-## Resources
+
 
 <!-- TODO -- >

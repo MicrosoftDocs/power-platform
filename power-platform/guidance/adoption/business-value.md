@@ -26,7 +26,7 @@ ms.custom: bap-template
 
 Measuring business value in Power Platform is an important aspect of ensuring success and return on investment. Power Platform provides a low-code or no-code platform for building applications, automating tasks, streamlining business processes, and infusing AI into your solutions. These capabilities can bring significant benefits and it's important to track and measure the value to the business that the platform is delivering.
 
-## Why measure value
+## Why measure value?
 
 Why does value measurement matter? It’s the driving force behind your technology investments, ensuring that every initiative is purposeful, aligned with strategic goals, and informed by data.
 
@@ -149,7 +149,7 @@ Aligning the business value of Power Platform solutions to the organization's KP
 
 By aligning Power Platform solutions to KPIs and OKRs, organizations ensure that they're addressing the most critical business needs and driving the most significant impact. This can help ensure that Power Platform solutions are seen as valuable investments by senior leaders and decision makers who are often responsible for approving resource allocation. Various tools and calculators are available to help.
 
-## How can we measure business value
+## How can we measure business value?
 
 ### Methods and tools
 
@@ -235,7 +235,7 @@ Learn more:
 - [Set up the Business value toolkit](../coe/setup-business-value-toolkit.md)
 - [Use the Business value toolkit](../coe/business-value-toolkit.md)
 
-## Who we communicate value to
+## Who we communicate value to?
 
 ### Audience analysis
 
@@ -258,7 +258,7 @@ While communicating value is important, tailoring the message to the audience is
 
 By considering these factors, you achieve improved engagement, increased credibility, stronger connections, and greater buy-in and support from your stakeholders.
 
-## What framework can we use for measuring value
+## What framework can we use for measuring value?
 
 To build a robust business value measurement framework for Power Platform, follow this structured approach to ensure alignment with your organization’s objectives and goals. Here are the key steps:
 
