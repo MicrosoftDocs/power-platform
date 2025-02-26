@@ -77,7 +77,7 @@ Since the container operates within the boundaries of the delegated subnet and u
 
 Power Platform doesn't manage the configuration of the delegated subnet. The only requirement is that the delegated subnet must not be associated with any other service. Once a subnet is delegated, the IPs within that subnet are reserved only for Power Platform. The subnet can't be used for any other resources or delegated to other services.
 
-By default, internet access is turned off from containers. If the enterprise's code running within these containers has a requirement for internet access, they can configure [NAT Gateway](/azure/nat-gateway/nat-overview) on the delegated subnet to allow the containers to connect to resources on the internet.
+By default, internet access is turned off from containers. If the enterprise's code running within these containers has a requirement for internet access, they must configure [NAT Gateway](/azure/nat-gateway/nat-overview) on the delegated subnet to allow the containers to connect to resources on the internet.
 
 #### Delegated subnet ownership for Microsoft and customers
 
@@ -185,10 +185,7 @@ If your Azure resources are in different Azure regions, you must still deploy yo
 
 The size of the delegated subnet within a Virtual Network is a critical concern, considering future growth in usage and the onboarding of new services. Sizing your subnet appropriately ensures that requests don't get throttled.
 
-The subnet that you create should have at least a /24 Classless Inter-Domain Routing (CIDR) address block, which equates to 251 IP addresses, including 5 reserved IP addresses. If you plan to use the same delegated subnet for multiple Power Platform environments, you may need a larger IP address block than /24. Additionally, its important to consider future growth and the onboarding of new services when planning the subnet size. Ensuring that your subnets have enough IP addresses to accommodate the current load and future growth will help prevent throttling and maintain performance.
-
-> [!NOTE]
-> We are working on providing better guidance on how to more accurately size the subnet for your environments. Additionally, we are working on providing new ways to monitor the usage of the subnet and provide alerts when the usage is high.
+The subnet that you create should have at least a /24 Classless Inter-Domain Routing (CIDR) address block, which equates to 251 IP addresses, including 5 reserved IP addresses. If you plan to use the same delegated subnet for multiple Power Platform environments, you may need a larger IP address block than /24.
 
 #### NAT Gateway
 
