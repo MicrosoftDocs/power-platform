@@ -1,6 +1,6 @@
 ### YamlMime:Hub
-title: Power Platform Architecture Center
-summary: Provides guidance for architecting solutions with Power Platform using established patterns and practices.
+title: Microsoft Power Platform and Copilot Studio Architecture Center
+summary: Provides guidance for architecting solutions with Microsoft Power Platform and Copilot Studio using established patterns and practices.
 # brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-apps | power-automate | power-bi | power-platform | power-virtual-agents | sql | sql-server | vs | visual-studio | windows | xamarin
 brand: dynamics
 metadata:
