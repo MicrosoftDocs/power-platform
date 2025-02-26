@@ -1,5 +1,5 @@
 ---
-title: Programmability and Extensibility - Authentication | Microsoft Docs
+title: Programmability and Extensibility - Authentication (Legacy) | Microsoft Docs
 description: Overview of authentication for Power Platform programmability tools
 author: laneswenka
 ms.reviewer: sericks
@@ -13,8 +13,8 @@ search.audienceType:
   - admin
 ---
 
-# Authentication
-This article provides an overview of the authentication setup for the various programmability tools.
+# Authentication (Legacy)
+This article provides an overview of the authentication setup for various legacy API endpoints used by Power Platform.
 
 ## Register a client application in Microsoft Entra ID
 For an overview of general Microsoft Entra client application creation, visit [Quickstart: Register an application with the Microsoft identity platform](/azure/active-directory/develop/quickstart-register-app).  However, for Microsoft Power Platform, there are some specifics worth mentioning in the sections below. 

@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Create a daily capacity report (preview) | Microsoft Docs"
+title: "Tutorial: Create a daily capacity report | Microsoft Docs"
 description: This tutorial demonstrates how to use the Power Platform API (preview) to create a daily capacity report.
 author: laneswenka
 ms.reviewer: sericks
@@ -12,9 +12,8 @@ search.audienceType:
   - admin
 ---
 
-# Tutorial: Create a daily capacity report (preview)
+# Tutorial: Create a daily capacity report
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 The Power Platform API can be used to extract various details and metadata from your Microsoft Power Platform environments  with or without a Microsoft Dataverse database. The API is used internally by various clients available today such as PowerShell.
 
