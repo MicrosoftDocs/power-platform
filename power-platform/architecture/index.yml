@@ -4,8 +4,8 @@ summary: Provides guidance for architecting solutions with Power Platform using 
 # brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-apps | power-automate | power-bi | power-platform | power-virtual-agents | sql | sql-server | vs | visual-studio | windows | xamarin
 brand: dynamics
 metadata:
-  title: Power Platform Architecture Center
-  description: Guidance for architecting solutions with Power Platform using established patterns and practices.
+  title: Microsoft Power Platform and Copilot Studio Architecture Center
+  description: Guidance for architecting solutions with Power Platform and Copilot Studio using established patterns and practices.
   ms.service: power-platform
   ms.topic: hub-page
   ms.subservice: architecture-center
@@ -18,7 +18,7 @@ highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
   items:
     # Card
-    - title: Browse Power Platform architectures
+    - title: Browse architectures
       itemType: architecture
       url: reference-architectures/overview.md
     # Card
@@ -31,7 +31,7 @@ highlightedContent:
       itemType: how-to-guide
 # productDirectory section (optional)
 productDirectory:
-  title: Architecting workloads on Power Platform
+  title: Architecting workloads on Power Platform and Copilot Studio
   items:
     # Card
     - title: Architecture fundamentals
