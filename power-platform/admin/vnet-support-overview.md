@@ -122,7 +122,7 @@ Yes, you need to delegate the Virtual Networks for both Azure regions that are a
 
 ### How can a Power Platform environment in one region connect to resources hosted in another region?
 
-A Virtual Network linked to a Power Platform environment must reside in the [Power Platform environment's region](/power-platform/admin/regions-overview#what-regions-are-available). If the Virtual Network is in a different region, create a Virtual Network in the Power Platform environment's region and use [Virtual Network peering](/azure/virtual-network/virtual-network-peering-overview) on both Azure regions subnet delegated Virtual Networks to bridge the gap with the Virtual Network in the separate region.
+A Virtual Network linked to a Power Platform environment must reside in the [Power Platform environment's region](/power-platform/admin/regions-overview#what-regions-are-available). If the Virtual Network is in a different region, create a Virtual Network in the Power Platform environment's region and use [Virtual Network peering](/azure/virtual-network/virtual-network-peering-overview) on both Azure region's subnet delegated Virtual Networks to bridge the gap with the Virtual Network in the separate region.
 
 ### Can I monitor outbound traffic from delegated subnets?
 
@@ -130,7 +130,7 @@ Yes. You can use Network Security Group and firewalls to monitor outbound traffi
 
 ### How many IP addresses does Power Platform need to be delegated in the subnet?
 
-The subnet that you create should have at least a /24 Classless Inter-Domain Routing (CIDR) address block, which equates to 251 IP addresses, including 5 reserved IP addresses. If you plan to use the same delegated subnet for multiple Power Platform environments, you may need a larger IP address block than /24.
+The subnet that you create should have at least a /24 Classless Inter-Domain Routing (CIDR) address block, which equates to 251 IP addresses, including five reserved IP addresses. If you plan to use the same delegated subnet for multiple Power Platform environments, you may need a larger IP address block than /24.
 
 ### Can I make internet-bound calls from plug-ins or connectors after my environment is subnet-delegated?
 
@@ -140,9 +140,9 @@ Yes. You can make internet-bound calls from plug-ins or connectors, but the subn
 
 No, not while the feature is used in your environment. You can't change the IP address range of the subnet after it's delegated to "Microsoft.PowerPlatform/enterprisePolicies." If you do this, the delegation configuration is broken and the environment stops working. To change the IP address range, you must remove the delegation feature from your environment, make the necessary changes, and then turn on the feature for your environment.
 
-### Can I update the DNS address of my virtual network after it's delegated to "Microsoft.PowerPlatform/enterprisePolicies"?
+### Can I update the DNS address of my Virtual Network after it's delegated to "Microsoft.PowerPlatform/enterprisePolicies"?
 
-No, not while the feature is used in your environment. You can't change the DNS address of the virtual network after it's delegated to "Microsoft.PowerPlatform/enterprisePolicies." If you do this, the change isn't picked up in our configuration and your environment may stop working. To change the DNS address, you must remove the delegation feature from your environment, make the necessary changes, and then turn on the feature for your environment.
+No, not while the feature is used in your environment. You can't change the DNS address of the Virtual Network after it's delegated to "Microsoft.PowerPlatform/enterprisePolicies." If you do this, the change isn't picked up in our configuration and your environment may stop working. To change the DNS address, you must remove the delegation feature from your environment, make the necessary changes, and then turn on the feature for your environment.
 
 ### My Virtual Network has a custom DNS configured. Does Power Platform use my custom DNS?
 
