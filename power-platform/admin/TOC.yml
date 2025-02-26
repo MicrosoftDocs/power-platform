@@ -810,6 +810,8 @@
               href: programmability-extensibility-overview.md
             - name: Versioning and support
               href: programmability-versioning-support.md
+            - name: What's new or changed
+              href: programmability-whats-new-changed.md
             - name: Authentication
               items:
                 - name: Authentication - legacy

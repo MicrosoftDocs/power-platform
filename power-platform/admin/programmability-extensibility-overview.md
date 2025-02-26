@@ -46,6 +46,7 @@ PowerShell is a common automation tool at organizations worldwide.  For more inf
 ## Next steps
 Regardless of which tool you choose, you'll want to review the following articles to get started:
 
+- [What's new or changed](./programmability-whats-new-changed.md)
 - [Versioning and support](programmability-versioning-support.md)
 - [Authentication](programmability-authentication-v2.md)
 
