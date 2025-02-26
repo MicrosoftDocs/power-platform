@@ -1,12 +1,12 @@
 ---
 title: Virtual Network support overview
 description: Learn about Microsoft Azure Virtual Network support for Power Platform and Dynamics 365 apps.
-author: ritesp
+author: faix
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/20/2024
+ms.date: 02/26/2025
 ms.subservice: admin
-ms.author: ritesp
+ms.author: osfaixat
 ms.reviewer: sericks
 search.audienceType: 
   - admin
@@ -116,21 +116,21 @@ Virtual Network support for Power Platform is the only supported option for all 
 
 - Delegation allows you to designate a specific subnet for any Azure platform as a service (PaaS) that needs to be injected into your virtual network.
 
-### Does Virtual Network support for Power Platform support failover?
+### Does Virtual Network support Power Platform failover?
 
-Yes, you need to delegate a primary and failover virtual network and subnets during setup.
+Yes, you need to delegate the Virtual Networks for both Azure regions that are associated to your Power Platform region. For example, if your Power Platform environment is in **Canada**, you need to create, delegate, and configure Virtual Networks in **CanadaCentral** and **CanadaEast**.
 
 ### How can a Power Platform environment in one region connect to resources hosted in another region?
 
-A Virtual Network linked to a Power Platform environment must reside in the [Power Platform environment's region](/power-platform/admin/regions-overview#what-regions-are-available). If the Virtual Network is in a different region, create a Virtual Network in the Power Platform environment's region and use [Virtual Network peering](/azure/virtual-network/virtual-network-peering-overview) to bridge the two regions.
+A Virtual Network linked to a Power Platform environment must reside in the [Power Platform environment's region](/power-platform/admin/regions-overview#what-regions-are-available). If the Virtual Network is in a different region, create a Virtual Network in the Power Platform environment's region and use [Virtual Network peering](/azure/virtual-network/virtual-network-peering-overview) on both Azure region's subnet delegated Virtual Networks to bridge the gap with the Virtual Network in the separate region.
 
 ### Can I monitor outbound traffic from delegated subnets?
 
-Yes. You can use Network Security Group and firewalls to monitor outbound traffic from delegated subnets.
+Yes. You can use Network Security Group and firewalls to monitor outbound traffic from delegated subnets. Learn more in [Monitor Azure Virtual Network](/azure/virtual-network/monitor-virtual-network).
 
 ### How many IP addresses does Power Platform need to be delegated in the subnet?
 
-You need to delegate at least 24 Classless Inter-Domain Routing (CIDR), or 255 IP addresses, in the subnet. If you want to delegate the same subnet to multiple environments, you might need more IP addresses in that subnet.
+The subnet that you create should have at least a /24 Classless Inter-Domain Routing (CIDR) address block, which equates to 251 IP addresses, including five reserved IP addresses. If you plan to use the same delegated subnet for multiple Power Platform environments, you may need a larger IP address block than /24.
 
 ### Can I make internet-bound calls from plug-ins or connectors after my environment is subnet-delegated?
 
@@ -138,7 +138,11 @@ Yes. You can make internet-bound calls from plug-ins or connectors, but the subn
 
 ### Can I update the subnet IP address range after it's delegated to "Microsoft.PowerPlatform/enterprisePolicies"?
 
-No. You can't change the IP address range of the subnet after it's delegated to "Microsoft.PowerPlatform/enterprisePolicies."
+No, not while the feature is used in your environment. You can't change the IP address range of the subnet after it's delegated to "Microsoft.PowerPlatform/enterprisePolicies." If you do this, the delegation configuration is broken and the environment stops working. To change the IP address range, you must remove the delegation feature from your environment, make the necessary changes, and then turn on the feature for your environment.
+
+### Can I update the DNS address of my Virtual Network after it's delegated to "Microsoft.PowerPlatform/enterprisePolicies"?
+
+No, not while the feature is used in your environment. You can't change the DNS address of the Virtual Network after it's delegated to "Microsoft.PowerPlatform/enterprisePolicies." If you do this, the change isn't picked up in our configuration and your environment may stop working. To change the DNS address, you must remove the delegation feature from your environment, make the necessary changes, and then turn on the feature for your environment.
 
 ### My Virtual Network has a custom DNS configured. Does Power Platform use my custom DNS?
 
@@ -154,7 +158,7 @@ No. We must ensure the endpoint presents a TLS certificate with the complete cha
 
 ### What's the recommended setup of a Virtual Network within a customer tenant?
 
-We don't recommend any specific topology. However, our customers widely use the hub and spoke topology network model.
+We don't recommend any specific topology. However, our customers widely use the [Hub-spoke network topology in Azure](/azure/architecture/networking/architecture/hub-spoke).
 
 ### Is linking an Azure subscription to my Power Platform tenant necessary to activate Virtual Network?
 
@@ -166,11 +170,7 @@ When a Power Platform environment has a delegated Azure subnet assigned, it uses
 
 ### Can I use an existing Virtual Network for Power Platform?
 
-Yes, you can use an existing Virtual Network for Power Platform, provided that a single, new subnet within the Virtual Network is delegated specifically to Power Platform. It's important to note that this delegated subnet should not host any other services.
-
-### Can I use US East 2 as the failover if my Power Platform environment is in Canada?
-
-To ensure proper failover, the primary and failover subnets must be provisioned in **canadacentral** and **canadaeast**, respectively. For effective failover, create the primary and failover subnets in the **canadacentral** and **canadaeast** regions, respectively. Additionally, if you want to support connectivity with resources in the **useast2** region, establish Virtual Network peering between the primary and failover Virtual Networks, including the Virtual Network in the **useast2** region.
+Yes, you can use an existing Virtual Network for Power Platform, provided that a single, new subnet within the Virtual Network is delegated specifically to Power Platform. The delegated subnet has to be dedicated for subnet delegation and can't be used for other purposes.
 
 ### What is a Dataverse plug-in?
 
