@@ -179,19 +179,19 @@ To use the Virtual Network support for Power Platform, consider the following gu
 
 Virtual Network support requires that delegated subnets in Azure regions must match the Power Platform environments location. If you have a Power Platform environment in the United States, then each of two Virtual Networks and subnets must be in the East US and West US Azure regions. For supported regions and location mappings, go to [Supported regions](vnet-support-overview.md#supported-regions).
 
-If your Azure resources are in different Azure regions, you must still deploy your virtual networks for Power Platform environments in the appropriate azure location for your environment. You should then use Virtual Network peering or a similar connectivity option with high speed and low latency to connect the resources with your virtual networks. With the [Microsoft global network](/azure/networking/microsoft-global-network), there are multiple options to establish the connectivity between the Power Platform Virtual Network and your enterprises Virtual Network.
+If your Azure resources are in different Azure regions, you must still deploy your Virtual Networks for Power Platform environments in the appropriate Azure location for your environment. You should then use Virtual Network peering or a similar connectivity option with high speed and low latency to connect the resources with your Virtual Networks. With the [Microsoft global network](/azure/networking/microsoft-global-network), there are multiple options to establish the connectivity between the Power Platform Virtual Network and your enterprises Virtual Network.
 
 #### Subnet size
 
 The size of the delegated subnet within a Virtual Network is a critical concern, considering future growth in usage and the onboarding of new services. Sizing your subnet appropriately ensures that requests don't get throttled.
 
-The subnet that you create should have at least a /24 Classless Inter-Domain Routing (CIDR) address block, which equates to 251 IP addresses, including 5 reserved IP addresses. If you plan to use the same delegated subnet for multiple Power Platform environments, you may need a larger IP address block than /24.
+The subnet that you create should have at least a /24 Classless Inter-Domain Routing (CIDR) address block, which equates to 251 IP addresses, including five reserved IP addresses. If you plan to use the same delegated subnet for multiple Power Platform environments, you may need a larger IP address block than /24.
 
 #### NAT Gateway
 
 Azure Network Address Translation (NAT) Gateway allows containers, within a delegated subnet, to securely connect to internet resources. NAT Gateway ensures secure communication by translating the private IP addresses of container instances to a static, public IP address. Static IPs allow for consistent and secure outbound connections.
 
-Enterprises that onboard an environment to Virtual Network without migrating all data sources to the private network **must** configure NAT Gateway. This configuration is required in order to prevent disruptions to existing integrations that require access to internet resources. It allows enterprises to transition their integrations to Virtual Network without affecting current workloads.
+Enterprises that onboard an environment to Virtual Network without migrating all data sources to the private network **must** configure NAT Gateway. This configuration is required to prevent disruptions to existing integrations that require access to internet resources. It allows enterprises to transition their integrations to Virtual Network without affecting current workloads.
 
 #### Network monitoring
 
