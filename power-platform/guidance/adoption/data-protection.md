@@ -46,7 +46,7 @@ For organizations requiring greater control over their data security and complia
 Learn more:
 
 - [Manage your customer-managed encryption key](/power-platform/admin/customer-managed-key)
-- [Lock environments by revoking key vault and/or key permission access](/power-platform/admin/cmk-lock-unlock)]
+- [Lock environments by revoking key vault and/or key permission access](/power-platform/admin/cmk-lock-unlock)
 
 ## Data Loss Prevention (DLP) policies
 

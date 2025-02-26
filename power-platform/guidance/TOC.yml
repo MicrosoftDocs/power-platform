@@ -109,6 +109,8 @@
               href: adoption/new-connectors.md
             - name: Set up sharing alerts and mitigations
               href: adoption/sharing-alerts.md
+            - name: Ensure data resilience
+              href: adoption/data-resilience.md
             - name: Support
               items:
                 - name: Support strategy - Overview

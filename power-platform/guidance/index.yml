@@ -102,7 +102,7 @@ productDirectory:
         - url: /power-platform/guidance/adoption/observability
           text: Observability
         - url: /power-platform/guidance/adoption/data-resilience
-          text: Data Resilience
+          text: Ensure data resilience
         - url: /power-platform/guidance/adoption/alm
           text: Establish effective Application Lifecycle Management practices
         - url: /power-platform/guidance/adoption/manage-resistence
