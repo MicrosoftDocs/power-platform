@@ -35,7 +35,7 @@ In this technical case study, you learn how:
 
 ## The scenario
 
-Daniel's team at A1 Inteligência em Viagens coordinates travel bookings with the company's corporate clients. These clients often travel to international destinations that have diverse visa, documentation, and vaccination requirements, and that might change their travel risk status. This information must be communicated to clients before their departure, to ensure that the trip goes smoothly.
+Daniel's team at A1 Inteligência em Viagens coordinates travel bookings with the company's corporate clients. These clients often travel to international destinations that have diverse visa, documentation, and vaccination requirements. In addition, the travel risk status of those destinations might change. All this information must be communicated to clients before their departure, to ensure that the trip goes smoothly.
 
 Daniel recognized the potential of Power Automate to help travel agents on his team identify and collate travel requirements from various national authorities in real time. For example, the following travel confirmation is automated:
 
@@ -192,7 +192,7 @@ This feature brings together Power Automate and Copilot Studio to create a Word 
 Here is how the travel policy feature works:
 
 1. A custom topic is triggered in Copilot Studio when a client makes a relevant request, such as, "I want to create a Travel Policy."
-1. Fifi prompts the client to answer a series of predefined questions that are used to populate the policy template. The information that the client is asked for includes their name, their company, the amount of notice that employees must give for domestic or international travel, and any reimbursements that the company pays to employees. At each step, the chat is configured to provide recommendations to support data input.
+1. Fifi prompts the client to answer a series of predefined questions that are used to populate the policy template. For example, the client is asked for their name, their company, the amount of notice that employees must give for domestic or international travel, and any reimbursements that the company pays to employees. At each step, the chat is configured to provide recommendations to support data input.
 1. Copilot Studio triggers Power Automate to populate placeholders in the Word document template with data that is provided in the client's chat responses.
 1. Power Automate saves the new travel policy document and emails the file to the client.
 1. Fifi completes the chat interaction with the client.
@@ -210,7 +210,7 @@ The process of building the travel policy template automation has three interrel
 > [!TIP]
 > - Turn on the developer features in Word. In this way, you can set up [content controls](/office/client-developer/word/content-controls-in-word) as the placeholder fields that will be populated with input from the custom agent's chat with a user.
 > - Give each content control a logical name, to make it easier to identify when you set up the automation.
-> - Save your template in a SharePoint Online library that can be used by the automation.
+> - Save your template in a SharePoint Online library that the automation can use.
 
 The following screenshot shows an example of a travel policy template that is being created for this automation. The heading at the top of the first page includes a Plain Text content control that serves as a placeholder for the company name.
 
@@ -245,7 +245,7 @@ You can build a custom agent to set up the Copilot component of the automation f
 
 1. [Create a new custom agent in Copilot Studio](/microsoft-copilot-studio/fundamentals-get-started?tabs=web).
 1. Create a new [topic](/microsoft-copilot-studio/authoring-create-edit-topics?tabs=webApp). In your description of what the topic does, include keywords that the custom agent can use to detect and trigger the next steps.
-1. Add a series of questions. The custom agent will ask the user these questions to gather the inputs that are required to populate the content control placeholders in the Word template. (There should be one question per placeholder.)
+1. Add a series of questions that. The custom agent will ask the user these questions to gather the inputs that are required to populate the content control placeholders in the Word template. (There should be one question per placeholder.)
 1. Select **Call an Action** to trigger the Power Automate automation that you created to generate, save, and email the new document.
 1. Add a message at the end of the conversation, so that the custom agent can close the interaction with the user. For example, the agent's last message can notify the user that the document was emailed to them.
 
