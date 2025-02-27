@@ -24,7 +24,7 @@ landingContent:
     linkLists:
     - linkListType: get-started
       links:
-      - text: Turn on copilots and generative AI features
+      - text: Move data across regions for Copilots and generative AI features
         url: admin/geographical-availability-copilot.md
       - text: Copilot in Power Apps
         url: /power-apps/maker/canvas-apps/ai-overview
@@ -55,6 +55,8 @@ landingContent:
         url: alm/copilot-deployment-notes-pipelines.md
       - text: Extend Microsoft 365 Copilot
         url: /microsoft-365-copilot/extensibility/
+      - text: Generative language models
+        url: language-models-list.md
     - linkListType: reference
       links:
       - text: Power Platform CLI pac copilot command
