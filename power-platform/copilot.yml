@@ -55,7 +55,7 @@ landingContent:
         url: alm/copilot-deployment-notes-pipelines.md
       - text: Extend Microsoft 365 Copilot
         url: /microsoft-365-copilot/extensibility/
-      - text: Generative language models
+      - text: Generative language models used in Dynamics 365 and Power Platform
         url: language-models-list.md
     - linkListType: reference
       links:
