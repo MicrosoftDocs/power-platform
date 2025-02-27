@@ -12,17 +12,73 @@ ms.date: 02/28/2025
 
 # Gain insights into Power Platform adoption
 
-Being able to effectively monitor your Power Platform adoption and gain insights into the health, performance, and security of your Power Platform solutions is key to successful adoption. Having full visibility into how your organization is using the platform will help you govern and secure the platform, identify patterns, and nurture your makers to accelerate adoption.
+One of the key principles of administering Microsoft Power Platform is having full visibility into how your organization is using the platform. Insights into your adoption will help you govern and secure the platform, identify patterns, and nurture your makers to accelerate adoption. Only with the right insights can you make informed decisions on how to optimize the platforms usage. As your organization's adoption of Power Platform grows, it becomes even more critical to not only have full visibility but also to gain actionable insights. These insights enable you to focus your resources on what matters most, ensuring that your Power Platform environment remains efficient, secure, and aligned with your business goals.
 
-1. **Governance and security**: By understanding how your organization is utilizing the platform, you can implement governance policies to ensure data security and compliance. This helps in identifying potential risks and mitigating them proactively.
+Why insights matter:
 
-2. **Performance insights**: Monitoring usage patterns and performance metrics enables you to identify bottlenecks and optimize the performance of your solutions. This ensures a smooth and efficient user experience.
+- **Proactive issue resolution:** With comprehensive visibility, administrators can detect and address issues before they escalate, minimizing downtime and disruptions.
+- **Resource optimization:** Understanding how resources are being utilized helps in optimizing their allocation, ensuring that critical areas receive the attention they need.
+- **User adoption and engagement:** Monitoring user activity and adoption rates provides valuable insights into how the platform is being used, allowing for targeted training and support initiatives.
+- **Security and compliance:** Visibility into data access and usage patterns is essential for maintaining security and compliance with industry regulations.
 
-3. **Adoption patterns**: Gaining insights into adoption trends helps you recognize which solutions are being widely used and which ones need more attention. This information is vital for making informed decisions about resource allocation and support.
+As your Power Platform adoption grows, actionable insights become more and more important. These insights help you prioritize actions and allocate resources effectively. Some key insights that an admin might focus on include:
 
-4. **Nurturing makers**: By analyzing usage data, you can identify and support your makers—those who are actively creating and using Power Platform solutions. Providing them with the necessary resources and training can accelerate adoption and innovation within your organization.
+- **Usage trends:** Identifying which apps and features are most frequently used can guide development and support efforts.
+- **Performance metrics:** Monitoring app performance and identifying bottlenecks ensures a smooth user experience.
+- **Security alerts:** Keeping track of security incidents and potential vulnerabilities helps in maintaining a secure environment.
+- **Governance:** Ensuring that all activities comply with established governance policies is crucial for maintaining control and accountability.
+- **Capacity management:** Understanding storage and license usage helps in planning for future growth and avoiding performance issues.
 
-By monitoring key metrics and events at both the tenant and solution levels, you can proactively identify and address issues, optimize performance, and ensure compliance with governance policies. This article provides guidance on what to monitor at each level to achieve comprehensive observability.
+This article delves into the key aspects of monitoring usage and adoption, governance and security, platform health, and capacity, providing actionable recommendations for each area.
+
+## Monitoring usage and adoption
+
+Understanding how users interact with the Power Platform is important for driving adoption and optimizing usage.
+
+- Track the number of active users: Track the number of users who are actively using the platform on a daily, weekly, and monthly basis. Identify trends in user activity to understand peak usage times and periods of inactivity.
+- Monitor usage patterns and frequency: Analyze how users and makers are interacting with the platform, including which features and tools are most frequently used. Identify any underutilized features that may require additional training or promotion.
+- Identify and address any barriers to adoption: Collect feedback from users through surveys, focus groups, and direct communication. Use this feedback to identify pain points, areas for improvement, and opportunities for new features.
+
+Learn more about [tracking resource usage](resource-usage.md)
+
+## Governance, security and compliance
+
+Effective governance ensures that the Power Platform is used responsibly and aligns with organizational policies.
+
+- Ensure adherence to organizational policies and governance frameworks. stablish clear policies for the use of the Power Platform, including data handling, user access, and acceptable use. Regularly review and update policies to reflect changes in technology and business needs.
+- Monitor access controls and permissions. Define roles and permissions to ensure users have appropriate access based on their responsibilities. Implement least privilege access to minimize security risks. Regularly review high-impact accounts and remove priviliges if they are no longer needed.
+- Track security incidents. Implement security monitoring tools to detect and respond to threats
+- Ensure the platform complies with relevant regulations such as GDPR, HIPAA, and CCPA. Conduct regular audits to verify compliance and address any gaps.
+
+## Platform and solution health
+
+Monitoring and maintaining the health of solutionsis vital for uninterrupted service and user satisfaction.
+
+- Check the [Service health dashboard](/power-platform/admin/check-online-service-health) to view the status of the Power Platform service, details about existing service incidents, and up to 30 days’ worth of history.
+- Monitor experiences using the [Monitor page](/power-platform/admin/monitoring/monitoring-overview) in the Power Platform admin center. This capability includes admin and maker experiences that provide out-of-the-box metrics and recommendations. The metrics and recommendations help admin and makers understand production health, detect degradations, and improve production health. The Monitor page exists to bring attention to resources with degraded operational health and highlight which resources have opportunities for improvement.
+- View event logs and error logs. All metrics that are part of the monitoring experience are aggregated from runtime event logs and error logs associated to a metric and can be accessed in the [Logs page](/power-platform/admin/monitoring/logs) in the Power Platform admin center. Logs are available to aid operational health analysis and they may be downloaded for offline review.
+- Implement Azure Application Insights integration. This capability delivers detailed, granular logs and custom metrics for deep analysis, which facilitates a comprehensive understanding of application performance. Learn more: [Integration with Application Insights](https://learn.microsoft.com/en-us/power-platform/admin/overview-integration-application-insights).
+- Establish a robust incident management process to handle outages and disruptions efficiently. Learn more: [Recommendations for designing a reliable monitoring and alerting strategy](/power-platform/well-architected/reliability/monitoring-alerting-strategy)
+
+## Performance
+
+Ensuring optimal performance of apps and workflows is critical for user experience and productivity.
+
+- Follow [recommendations for Performance Efficiency](/power-platform/well-architected/performance-efficiency/checklist) from Power Platform Well-Architected to design workloads so they can grow and meet your workload usage demands.
+- Monitor experiences using the [Monitor page](/power-platform/admin/monitoring/monitoring-overview) in the Power Platform admin center. This capability includes admin and maker experiences that provide out-of-the-box metrics and recommendations. The metrics and recommendations help admin and makers understand production health, detect degradations, and improve production health. The Monitor page exists to bring attention to resources with degraded operational health and highlight which resources have opportunities for improvement.
+- Implement Azure Application Insights integration. This capability delivers detailed, granular logs and custom metrics for deep analysis, which facilitates a comprehensive understanding of application performance. Learn more: [Integration with Application Insights](https://learn.microsoft.com/en-us/power-platform/admin/overview-integration-application-insights).
+
+## Capacity and licenses
+
+Monitoring capacity and license usage ensures optimal resource allocation, prevent unexpected costs, and maintain compliance with licensing agreements, ultimately supporting efficient and sustainable Power Platform adoption.
+
+- [License utilization](/power-platform/admin/view-license-consumption-issues). Track the number of licenses issued versus the number of active users. Monitor the types of licenses in use and ensure they align with user roles and needs. Reiew [intelligent recommendations about licensing](/power-platform/admin/get-recommendations-licensing) which provides you with recommendations about who in your organization would benefit from having a Power Apps premium license.
+- [Capacity usage](/power-platform/admin/capacity-storage#capacity-page-details). Monitor storage capacity for databases, files, and logs.
+Track API request limits and usage to avoid hitting thresholds.
+- [Environment capacity](/power-platform/admin/whats-new-storage#what-happens-when-my-organization-exceeds-storage-entitlements). Keep an eye on the number of environments created and their usage. Ensure environments are being used efficiently and decommission any that are no longer needed.
+- Cost optimization. Regularly review and optimize costs by identifying and eliminating unnecessary expenses. Consider using cost management tools to track and manage expenses more effectively.
+
+
 
 ## Tenant-Level monitoring
 
