@@ -3,6 +3,7 @@ title: PowerShell support for Power Apps and Power Automate
 description: Learn about the PowerShell cmdlets and get a tutorial of how to install and run them.
 author: laneswenka
 contributors:
+  - taiki-yoshida 
   - ChrisGarty
   - v-aangie
 ms.reviewer: angieandrews
@@ -715,7 +716,7 @@ Get-AllowedConsentPlans
 
 The allowed consent plans cmdlets can be used to add or remove access to a particular type of consent plan from a tenant. "Internal" consent plans are either trial licenses or developer plans that users can sign themselves up for via Power Apps/Power Automate portals/Power Automate for desktop. "Ad-hoc subscription" or "Viral" consent plans are trial licenses that users can sign themselves up for at `https://signup.microsoft.com`. Admins can assign users through Microsoft Entra ID or the Microsoft 365 admin portal.
 
-By default all types of consent plans are allowed in a tenant. However, a Power Platform admin might want to block users from assigning themselves trial licenses but retain the ability to assign trial licenses on behalf of users. This rule can be accomplished by using the `Remove-AllowedConsentPlans -Types "Internal"` command and disabling the setting **AllowAdHocSubscriptions** in Microsoft Entra ID.
+By default, all types of consent plans are allowed in a tenant. However, a Power Platform admin might want to block users from assigning themselves trial licenses, but retain the ability to assign trial licenses on behalf of users. This rule can be accomplished by using the `Remove-AllowedConsentPlans -Types "Internal"` command and by not allowing the setting **Update-MgPolicyAuthorizationPolicy -AllowedToSignUpEmailBasedSubscriptions** in Microsoft Entra ID.
 
 > [!IMPORTANT]
 > When using `Remove-AllowedConsentPlans`, all existing plans of the specified type are removed from all users in the tenant and aren't recoverable. This command blocks all future assignments of that type. If the Power Platform admin wishes to re-enable plans of that type, they can use `Add-AllowedConsentPlans`. If they want to view the current state of allowed consent plans, they can use `Get-AllowedConsentPlans`.
