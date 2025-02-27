@@ -17,10 +17,10 @@ search.audienceType:
 
 # Healthcare patient support agent architecture
 
+The Healthcare patient support agent architecture is designed to streamline patient interactions and reduce administrative burdens for healthcare providers. This architecture applies various Microsoft technologies to create an efficient, integrated system that enhances patient satisfaction and operational efficiency. By utilizing components such as Microsoft Dataverse, Azure Data Lake, Azure Synapse Analytics, and AI-driven tools, this solution provides a comprehensive approach to managing patient data, automating workflows, and delivering personalized healthcare support. This document outlines the key components and workflows of the architecture, offering a blueprint for implementing a robust patient support system in healthcare environments.
+
 > [!TIP]
 > This article describes a solution idea. Your cloud architect can use this guidance to help visualize the major components for a typical implementation of this architecture. Use this article as a starting point to design a well-architected solution that aligns with your workload's specific requirements.
-
-The Healthcare patient support agent architecture is designed to streamline patient interactions and reduce administrative burdens for healthcare providers. This architecture applies various Microsoft technologies to create an efficient, integrated system that enhances patient satisfaction and operational efficiency. By utilizing components such as Microsoft Dataverse, Azure Data Lake, Azure Synapse Analytics, and AI-driven tools, this solution provides a comprehensive approach to managing patient data, automating workflows, and delivering personalized healthcare support. This document outlines the key components and workflows of the architecture, offering a blueprint for implementing a robust patient support system in healthcare environments.
 
 ## Architecture diagram
 
@@ -32,10 +32,10 @@ The Healthcare patient support agent architecture is designed to streamline pati
 
 Data sources include Microsoft Dataverse, Azure Data Lake, and Azure Synapse Analytics.
 
-- **Microsoft Dataverse:** Microsoft Dataverse serves as the central repository for healthcare data, including patients, appointments, and provider information. It's chosen for its seamless integration with Power Platform and support for relational and nonrelational data models.
-- **Azure Data Lake Store Gen2:** Azure Data Lake Store Gen2 stores large datasets, enabling advanced analytics on patient data.
+- ****[Microsoft Dataverse](/power-apps/maker/data-platform/):** Microsoft Dataverse serves as the central repository for healthcare data, including patients, appointments, and provider information. It's chosen for its seamless integration with Power Platform and support for relational and nonrelational data models.
+- **[Azure Data Lake Store Gen2](/azure/storage/blobs/data-lake-storage-introduction):** Azure Data Lake Store Gen2 stores large datasets, enabling advanced analytics on patient data.
 It's selected for its scalability and ability to handle structured and unstructured data.
-- **Azure Synapse Analytics:** Azure Synapse Analytics provides analytics capabilities for patient and operational data. It's chosen for its ability to unify big data and data warehousing in a single platform.
+- **[Azure Synapse Analytics](/azure/synapse-analytics/overview-what-is):** Azure Synapse Analytics provides analytics capabilities for patient and operational data. It's chosen for its ability to unify big data and data warehousing in a single platform.
 
 ## Processing
 
@@ -44,7 +44,7 @@ It's selected for its scalability and ability to handle structured and unstructu
 - Patient feedback sentiment model: Analyzes patient feedback to measure satisfaction
 - Symptom analysis model: Identifies and processes patient-reported symptoms for better diagnosis and query resolution
 
-AI Builder is chosen for its low-code AI capabilities, enabling business users to build and integrate AI models without coding expertise.
+[AI Builder](/ai-builder/overview) is chosen for its low-code AI capabilities, enabling business users to build and integrate AI models without coding expertise.
 
 ### Power Automate cloud flows
 

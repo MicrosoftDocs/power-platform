@@ -16,10 +16,10 @@ search.audienceType:
 
 # Document processing with AI builder
 
+Processing documents is often be a manual, time-consuming task. However, with Power Automate and AI builder, you can streamline document processing and automate data extraction from various documents such as forms, invoices, and purchase orders. This guide provides best practices, architecture diagrams, and workflows to help you design a well-architected solution tailored to your specific requirements. By using AI builder, you can reduce manual data entry, minimize errors, and enhance your workflow efficiency.
+
 > [!TIP]
 > The article provides an example scenario and visual representation of how to process documents with AI Builder. This solution is a generalized example scenario architecture, which can be used for many different scenarios and industries.
-
-Processing documents is often be a manual, time-consuming task. However, with Power Automate and AI builder, you can streamline document processing and automate data extraction from various documents such as forms, invoices, and purchase orders. This guide provides best practices, architecture diagrams, and workflows to help you design a well-architected solution tailored to your specific requirements. By using AI builder, you can reduce manual data entry, minimize errors, and enhance your workflow efficiency.
 
 ## Architecture diagram
 
@@ -34,21 +34,21 @@ Processing documents is often be a manual, time-consuming task. However, with Po
 1. **Feedback to sender:** After the review process, an automated email is sent to the sender with the approval or rejection status of the document.
 1. **Reporting and analytics:** Power BI dashboards provide insights into the document processing workflow, including metrics such as processing time, the number of documents reviewed, and approval rates.
 
-## Use case details
+## Components
+
+- **[AI Builder](/ai-builder/overview):** Used for extracting key data from documents using prebuilt or custom models.
+- **[Power Automate](/power-automate/):** Orchestrates workflows for document processing and integrates AI Builder to process the documents.
+- **[Microsoft Dataverse](/power-apps/maker/data-platform/):** Serves as the central data store for extracted document data and tracks document progress as the business process is applied.
+- **[Power Apps](/power-apps/):** Facilitates human review and data corrections.
+- **[Power BI](/power-bi/):** Delivers analytics and insights into the document processing workflow.
+
+## Scenario details
 
 This architecture streamlines and automates document-intensive business processes. By using AI Builder, organizations reduce manual data entry, minimize errors, and accelerate decision-making workflows. Use cases include:
 
 - Automating invoice processing.
 - Streamlining purchase order approvals.
 - Simplifying rebate form processing.
-
-## Components
-
-- **AI Builder:** Used for extracting key data from documents using prebuilt or custom models.
-- **Power Automate:** Orchestrates workflows for document processing and integrates AI Builder to process the documents.
-- **Microsoft Dataverse:** Serves as the central data store for extracted document data and tracks document progress as the business process is applied.
-- **Power Apps:** Facilitates human review and data corrections.
-- **Power BI:** Delivers analytics and insights into the document processing workflow.
 
 ## Considerations
 
@@ -58,15 +58,15 @@ These considerations implement the pillars of Power Platform Well-Architected, a
 
 - **Retry policies:** Configured in Power Automate to handle temporary failures in document processing with AI Builder or SharePoint and Dataverse connections.
 
-- **Monitoring and alerts:** Application Insights is configured to monitor workflow health and alert on failures.
+- **Monitoring and alerts:** [Application Insights](/power-platform/admin/app-insights-cloud-flow) is configured to monitor workflow health and alert on failures.
 
 - **Document resilience:** Users can send any document. The workflow that runs the data extract must handle exceptions from the document extraction due to invalid or unexpected documents.
 
 ### Security
 
-- **Data access control:** Role-based access ensures only authorized users can access the extracted data in Dataverse.
+- **Data access control:** [Role-based access](/power-platform/admin/database-security) ensures only authorized users can access the extracted data in Dataverse.
 
-- **Encryption:** Data in transit (via Power Automate) and at rest in  Dataverse is encrypted.
+- **[Encryption](/power-platform/admin/about-encryption):** Data in transit (via Power Automate) and at rest in  Dataverse is encrypted.
 
 - **Principle of least privilege:** Permissions are restricted to minimize exposure. Power Automate flows access systems using the least privileged accounts or a service principal where possible. Application users should only have access to the data tables that support the application
 

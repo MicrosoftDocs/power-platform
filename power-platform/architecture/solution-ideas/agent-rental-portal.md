@@ -1,6 +1,6 @@
 ﻿---
-title: Rental Portal with AI-Driven Search Agent and Payment Processing
-description: Discover how to build a rental portal with AI-driven search and payment processing using Power Platform and Azure.
+title: Property rental portal with AI-Driven Search Agent and Payment Processing
+description: Discover how to build a property rental portal with AI-driven search and payment processing using Power Platform and Azure.
 author: manuelap-msft
 ms.subservice: guidance
 ms.topic: solution-idea
@@ -15,12 +15,12 @@ search.audienceType:
 ---
 
 
-# Rental portal with AI-driven search agent and payment processing
+# Property rental portal with AI-driven search agent and payment processing
+
+In this article, you'll learn how to build a comprehensive rental portal that leverages AI-driven search capabilities and seamless payment processing. Utilizing the Power Platform and Azure, this solution integrates various components to provide a robust and user-friendly experience for both users and administrators. From browsing and reserving listings to managing payments and generating insightful reports, this architecture ensures a well-rounded and efficient rental management system. Follow along to understand the key components, workflow, and best practices for implementing this solution.
 
 > [!TIP]
 > This article describes a solution idea. Your cloud architect can use this guidance to help visualize the major components for a typical implementation of this architecture. Use this article as a starting point to design a well-architected solution that aligns with your workload's specific requirements.
-
-In this article, you'll learn how to build a comprehensive rental portal that leverages AI-driven search capabilities and seamless payment processing. Utilizing the Power Platform and Azure, this solution integrates various components to provide a robust and user-friendly experience for both users and administrators. From browsing and reserving listings to managing payments and generating insightful reports, this architecture ensures a well-rounded and efficient rental management system. Follow along to understand the key components, workflow, and best practices for implementing this solution.
 
 ## Architecture diagram
 
@@ -104,37 +104,28 @@ In this article, you'll learn how to build a comprehensive rental portal that le
 1. **Power BI reporting**
     - Reports use Fabric to aggregate telemetry data from the portal and APIs, and listing and reservation data from Dataverse.
 
+## Components
+
+1. **[Microsoft Dataverse](/power-apps/maker/data-platform/):** A cloud-based storage space that lets you securely store and manage data used by business applications. It stores listing and reservation data, including property details, user information, and reservation statuses.
+
+1. **[Power Apps](/power-apps/):** Power Apps is a suite of apps, services, connectors, and a data platform that provides a rapid application development environment to build custom apps for your business needs. It's used to create custom applications for managing rental property listings and tracking tenant interactions efficiently.  
+
+1. **[Power Pages](/power-pages/):** A platform for building secure, low-code websites. It lets users browse listings, make reservations, and view personalized property recommendations. Users authenticate via Power Pages, ensuring secure access to their data.  
+
+1. **[AI builder prompts in Copilot Studio](/ai-builder/use-a-custom-prompt-in-mcs):** AI Builder models that analyze user interactions and provide personalized property recommendations. They enhance user experience by offering tailored property suggestions based on user behavior and preferences.  
+
+1. **[Azure Functions](/azure/azure-functions/functions-overview?pivots=programming-language-csharp), [Azure Key Vault](/azure/key-vault/), [Azure SQL](/azure/azure-sql/), [Application Insights](/azure/azure-monitor/app/app-insights-overview):** Azure Functions are an event-driven serverless compute platform that runs on demand and at scale in the cloud.  
+    They handle payment processing securely, integrating with payment gateways like Stripe. Azure Functions use managed identities to securely access the payment database. Azure Key Vault stores sensitive secrets such as the Stripe authentication key.  
+
+1. **[Power Automate](/power-automate/):** A service that helps automate workflows between apps and services.  It ensures seamless integration between the portal, Azure Functions, and Dataverse. It automates tasks such as calling the Payment API using a custom connector, sending confirmation emails, and updating reservation statuses.  
+
+1. **[Power BI](/power-bi/):** A business analytics service that provides interactive visualizations and business intelligence capabilities. It provides insights into listing performance, user interactions, and reservation trends. Property managers use dashboards to make data-driven decisions. Data held in Application Insights and Azure SQL is joined with Dataverse reservation and property data.
+
+1. **[GitHub Actions](/power-platform/alm/devops-github-actions):** GitHub Actions are used for CI/CD, automating workflows to ensure consistent and efficient testing, validation, and deployment of changes. Automated builds and tests are triggered on code pushes, successful builds are deployed to staging and production environments, and unit tests are integrated into the pipelines to maintain code quality and catch issues early.
+
 ## Use case details
 
 The Contoso Rental Property system provides an integrated platform for managing rental property listings, reservations, and payments. Users interact with the Power Pages portal to browse listings and make reservations. AI Builder models in Copilot Studio analyze user interactions and provide personalized property recommendations. Azure Functions handle payment processing, and Dataverse manages listing and reservation data. Automated workflows in Power Automate ensure seamless integration between the portal and backend services, while Power BI dashboards provide real-time insights into listing performance and reservation trends.
-
-## Components
-
-1. **Dataverse:** A cloud-based storage space that lets you securely store and manage data used by business applications. It stores listing and reservation data, including property details, user information, and reservation statuses.  
-  **Learn more**: [Dataverse](https://www.microsoft.com/en-us/power-platform/dataverse)
-
-1. **Power Apps:** Power Apps is a suite of apps, services, connectors, and a data platform that provides a rapid application development environment to build custom apps for your business needs. It's used to create custom applications for managing rental property listings and tracking tenant interactions efficiently.  
-    Learn more: [Power Apps](https://www.microsoft.com/en-us/power-platform/products/power-apps)
-
-1. **Power Pages:** A platform for building secure, low-code websites.  
-    It lets users browse listings, make reservations, and view personalized property recommendations. Users authenticate via Power Pages, ensuring secure access to their data.  
-    Learn more: [Power Pages](https://www.microsoft.com/en-us/power-platform/products/power-pages)
-
-1. **AI builder prompts in Copilot Studio:** AI Builder models that analyze user interactions and provide personalized property recommendations. They enhance user experience by offering tailored property suggestions based on user behavior and preferences.  
-    Learn more: [AI & Low code](https://www.microsoft.com/en-us/power-platform/ai)
-
-1. **Azure Functions, Azure Key Vault, Azure SQL, Application Insights:** Azure Functions are an event-driven serverless compute platform that runs on demand and at scale in the cloud.  
-    They handle payment processing securely, integrating with payment gateways like Stripe. Azure Functions use managed identities to securely access the payment database. Azure Key Vault stores sensitive secrets such as the Stripe authentication key.  
-    Learn more: [Azure Functions](/azure/azure-functions/functions-overview?pivots=programming-language-csharp)
-
-1. **Power Automate:** A service that helps automate workflows between apps and services.  It ensures seamless integration between the portal, Azure Functions, and Dataverse. It automates tasks such as calling the Payment API using a custom connector, sending confirmation emails, and updating reservation statuses.  
-    Learn more: [Power Automate](https://www.microsoft.com/en-us/power-platform/products/power-automate)
-
-1. **Power BI:** A business analytics service that provides interactive visualizations and business intelligence capabilities.  
-    It provides insights into listing performance, user interactions, and reservation trends. Property managers use dashboards to make data-driven decisions. Data held in Application Insights and Azure SQL is joined with Dataverse reservation and property data.  
-    Learn more: [Power BI](https://www.microsoft.com/en-us/power-platform/products/power-bi)
-
-1. **GitHub Actions:** GitHub Actions are used for CI/CD, automating workflows to ensure consistent and efficient testing, validation, and deployment of changes. Automated builds and tests are triggered on code pushes, successful builds are deployed to staging and production environments, and unit tests are integrated into the pipelines to maintain code quality and catch issues early.
 
 ## Considerations
 
