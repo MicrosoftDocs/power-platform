@@ -4,7 +4,7 @@ description: Learn about how to...
 services: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/28/2025
+ms.date: 03/03/2025
 author: sericks007
 ms.subservice: admin
 ms.author: sericks
@@ -31,8 +31,10 @@ You can then use the conversation lifecycle events data from Dynamics 365 Custom
 > [!NOTE]
 > Export of Power Automate and Dynamics 365 Customer Service data is not available in sovereign clouds, such as Government Community Cloud (GCC), Government Community Cloud - High (GCC High), and Department of Defense (DoD), at this time.
 
-> [!IMPORTANT]
-> When this feature transitions to General Availability (GA), the feature will be available for Managed Environments only.  Users will need a Power Apps, Power Automate, or Dynamics 365 license with premium use rights. For this public preview only, the premium use rights requirement and the Managed Environments restriction are relaxed.
+## Prerequisites
+
+- The environment should be a managed environment.
+- Power Apps, Power Automate, or Dynamics 365 license with premium use rights
 
 ## Pricing
 
@@ -58,54 +60,14 @@ Before you perform a data export, create a connection between your Dynamics 365 
 
 1. Review the setup configuration, and then select **Create.** The data export from Dynamics 365 Customer Service to Application Insights is created and displayed on the **Data export** page.
    
-## Access and use the conversation information in Application Insights
-
-After you've configured the data export setup, conversation lifecycle information for live chat, digital messaging, voice, and custom channel conversations is available in the Application Insights **Traces** table.
-
-### Conversation diagnostics scenarios
+## Conversation diagnostics scenarios
 
 Learn about conversation diagnostics scenarios and subscenarios in [Understand conversation diagnotics](/dynamics365/customer-service/administer/conversation-diagnostics-subscenarios).
-
-## Access conversation logs from Application Insights
-
-To view the logs for a conversation, complete the following steps.
-
-1.  Log in to [Azure portal](https://portal.azure.com/#home) and access your Application Insights instance. Ensure this is the same instance that you've used to setup the data export.
-
-2.  Select **Logs** in **Monitoring**.
-
-3.  Run a query on the **Traces** table, filtering by the conversation ID of your conversation. A sample query is as follows:
-
-    ``` SQL
-    *let lwiId = "269079bb-f39d-4281-bf87-d13bae6d0ed2";*
-    
-    *let operationIds = (traces*
-    
-    *\| where operation\_ParentId == lwiId // LWI to be checked*
-    
-    *\| distinct operation\_Id);*
-    
-    *traces*
-    
-    *\| where operation\_Id in (operationIds) or operation\_ParentId == lwiId*
-    
-    *\| project timestamp, message, customDimensions, operation\_Name, operation\_Id, operation\_ParentId, session\_Id, user\_Id, severityLevel, itemType*
-    
-    *\| sort by timestamp asc*
-    ```
-
-    Where **lwid** is the conversation ID you've retrieved from your Dynamics 365 Customer Service application.
-
-4.  The application displays the trace for the conversation.
-
-## Conversation lifecycle scenario: Success
-
-A customer initializes a chat conversation on your portal. The application identifies the customer and routes the chat request to a queue. A chat notification appears, and the agent picks up the request from the Agent Dashboard. The agent chats with the customer, and the customer ends the conversation.
-
-When you run a query for the specific conversation ID, here's the trace log that's displayed:
-
-![Example trace log that's displayed when you run a query for a specific conversation ID.](media/conversation-lifecyle-scenario.png)
 
 ## Export conversation data
 
 You can use the **Export** option to export the logs and combine this data with data sets from other tables to create your own custom monitoring dashboards. More information: [Create custom KPI dashboards using Application Insights](/azure/azure-monitor/app/tutorial-app-dashboards).
+
+### Related information
+
+[Configure conversation diagnostics](/dynamics365/customer-service/administer/configure-conversation-diagnostics)  
