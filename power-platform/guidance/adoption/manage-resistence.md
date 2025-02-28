@@ -36,7 +36,7 @@ The following table highlights common resistance themes faced by IT and leadersh
 | Common resistance themes | Mitigation with communication​ |
 | --- | --- | 
 | Resistance from IT, Information Security/Information Risk Management who fear data loss when everyone can be a developer | Ensure Central IT understand the security and governance foundation underpinning the Power Platform. Learn more: [Security and governance in Power Platform](/power-platform/admin/security). |
-| Microsoft Power Platform perceived as not a development tool (only for proof of concepts and demos) | Show customer examples of customers who are using the Power Platform for production and mission critical solutions. Learn more: [Power Platform customer stories](/power-platform/blog/power-apps/power-platform-stories/) |
+| Microsoft Power Platform perceived as not a development tool (only for proof of concepts and demos) | Show customer examples of customers who are using the Power Platform for production and mission critical solutions. Learn more: [Power Platform customer stories](https://www.microsoft.com/power-platform/blog/power-apps/power-platform-stories/) |
 | Lack of leader buy-in, senior managers potentially instructing people ​not to use new options | Supervisor and manager coaching is a key component to manage resistance and change management. Understand what the blockers are for managers to adopt the new ways of working and help them understand ‘what is in it for me’ and why the change is important and what role they play in making it a success. |
 | No progress in the adoption | [Get a leader](executive-sponsorship.md) to support the program. |
 | Code-first developers are worried about their job security if other people become developers | Share how developers can add value to low code development by creating APIs and PCF components. Learn more: [Fusion Development Approach](/power-apps/guidance/fusion-dev-ebook/) |
@@ -47,7 +47,7 @@ Navigating resistance to change can be challenging, but effective communication 
 
 | Common resistance themes​ | Mitigation with communication​
 | --- | --- | 
-| People don’t have time​ | Show how Microsoft Power Platform adds value and helps them save time. Create an organization wide program that encourages employees to participate. Learn more: [Find out how other organizations nurtured their citizen makers​](power-platform/blog/power-apps/power-platform-stories#maker-persona). |
+| People don’t have time​ | Show how Microsoft Power Platform adds value and helps them save time. Create an organization wide program that encourages employees to participate. Learn more: [Find out how other organizations nurtured their citizen makers​](https://www.microsoft.com/power-platform/blog/power-apps/power-platform-stories#maker-persona). |
 | People don’t know what to build​ | Do show and tell sessions. Organize a [hackathon](hackathons.md) to discover needs and problems. Show ideas of apps that have been built to generate ideas.  |
 | People are not passionate, not warming up to the idea, or don’t see the value​ |Reward and recognize for their hard work. Present plenty of opportunities and varied opportunities, lots of selections and ways to get involved. Showcase the value and art of the possible on specific use cases.​|
 | Power Platform perceived as only for developers​ | Show how anyone can quickly and easily create an app or a flow.  |
