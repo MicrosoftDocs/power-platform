@@ -1,36 +1,37 @@
 ---
-title: Manage your security posture
-description: Guidance for managing your Power Platform security posture
+title: Implement Security Posture Management
+description: Manage your Power Platform security posture with our comprehensive guide. Learn how to assess security scores, adopt Zero Trust, and implement proactive policies.
+#customer intent: As a Power Platform user, I want to manage my Power Platform security posture so that I can ensure the security of my organization's data and applications.
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: conceptual
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: sericks
+ms.reviewer: pankajsharma2087
 ms.date: 02/28/2025
 ---
 
-# Security Posture Management
+# Implement Security Posture Management
 
-Security is a complex and challenging discipline that you need to consider in nearly all aspects of your cloud and technology environments. Here are some key points to consider:
+Security is a complex and challenging discipline that you need to consider in nearly all aspects of your cloud and technology environments. Consider these key points:
 
 - **Everything is a potential target or attack vector**: In today's landscape, attackers can exploit vulnerabilities in an organization's people, processes, and technologies to achieve their malicious objectives.
 - **Business applications have unique security challenges**: Business applications encounter [unique security challenges](assess-security-posture.md#typical-security-challenges-in-business-applications) that span across all industries.
-- **Security requires teamwork**: Defending against attacks necessitates a coordinated effort across business, technology, and security teams. Each team must actively contribute to security initiatives and collaborate effectively.
+- **Security requires teamwork**: Defending against attacks requires a coordinated effort across business, technology, and security teams. Each team must actively contribute to security initiatives and collaborate effectively.
 
 This Power Platform Adoption security guidance is one component of a larger set of Microsoft security guidance designed to help various teams understand and perform their security responsibilities:
 
 - The Power Platform Adoption security guidance provides security guidance for teams that manage Power Platform environments.
 - The [Power Platform Well-Architected](/power-platform/well-architected/security/) security guidance provides guidance for individual workload owners about how to apply security best practices to workload development and DevOps and DevSecOps processes.
 - The [Azure Cloud Adoption Framework Secure methodology](/azure/cloud-adoption-framework/secure/overview) provides security guidance for teams that manage the technology infrastructure that supports all the workload development and operations hosted on Azure.
-- [Microsoft Cloud Security Benchmark](/security/benchmark/azure/) provides best practice guidance for stakeholders to ensure robust cloud security.
+- [Microsoft Cloud Security benchmark](/security/benchmark/azure/) provides best practice guidance for stakeholders to ensure robust cloud security.
 - The [Power Platform security and governance documentation](/power-platform/admin/security) provides you with information on how set up and maintain security and governance features for Power Platform.
 
 Throughout your Power Platform adoption journey, look for opportunities to enhance your overall security posture through modernization. 
 
 ## Assess security score and act on recommendations
 
-The [Security page](/power-platform/admin/security/security-overview) in the Power Platform admin center makes it easy to discover and navigate the range of capabilities which managed security provides. With actionable insights and opinionated guidance, this single pane of glass empowers administrators to effortlessly view and manage security tasks, assess their tenant’s security posture, and implement proactive policies across network security, access control, compliance, and threat detection. Get a comprehensive understanding of your organization’s security posture with the security score, illustrated on a qualitative scale (Low, Medium, High). Then, act on tailored recommendations to improve your tenant’s security score configuring both proactive and reactive security guardrails, prioritized by level of risk.
+The [Security page](/power-platform/admin/security/security-overview) in the Power Platform admin center makes it easy to discover and navigate the range of capabilities which managed security provides. With actionable insights and opinionated guidance, this single pane of glass empowers administrators to effortlessly view and manage security tasks, assess their tenant’s security posture, and implement proactive policies across network security, access control, compliance, and threat detection. Get a comprehensive understanding of your organization’s security posture with the security score, illustrated on a qualitative scale (low, medium, high). Then, act on tailored recommendations to improve your tenant’s security score configuring both proactive and reactive security guardrails, prioritized by level of risk.
 
 The Security page provides a centralized location to view and manage security recommendations, assess your security score, and implement proactive policies to safeguard your organization.
 
@@ -40,7 +41,7 @@ Administrators can:
 - **Act on recommendations**: Identify and implement impactful recommendations generated by the system based on best practices to improve your tenant's security score.
 - **Manage proactive policies**: Manage proactive policies for governance and security.
 
-:::image type="content" source="media/build-securely.png" alt-text="Security page in the Power Platform admin center.":::
+:::image type="content" source="media/build-securely.png" alt-text="Screenshot of security page in the Power Platform admin center.":::
 
 ## Adopt Zero Trust as a strategy
 
@@ -54,7 +55,7 @@ Microsoft provides a [Zero Trust-based security modernization blueprint](/securi
 
 ## Security development lifecycle
 
-Establishing a Security Development Lifecycle (SDL) for Power Platform development is essential to ensure that security is integrated into every phase of the development process. SDL involves a series of practices and procedures designed to identify and mitigate security risks from the initial design stages through to deployment and maintenance. By incorporating security considerations early and throughout the development lifecycle, organizations can proactively address potential vulnerabilities, reduce the risk of security breaches, and ensure compliance with regulatory requirements. This approach not only enhances the overall security posture of the workloads built on Power Platform but also fosters a culture of security awareness among developers and makers. An effective SDL helps protect sensitive data, maintain user trust, and safeguard the organization's assets against evolving threats.
+Establishing a security development lifecycle (SDL) for Power Platform development is essential to ensure that security is integrated into every phase of the development process. SDL involves a series of practices and procedures designed to identify and mitigate security risks from the initial design stages through to deployment and maintenance. By incorporating security considerations early and throughout the development lifecycle, organizations can proactively address potential vulnerabilities, reduce the risk of security breaches, and ensure compliance with regulatory requirements. This approach not only enhances the overall security posture of the workloads built on Power Platform but also fosters a culture of security awareness among developers and makers. An effective SDL helps protect sensitive data, maintain user trust, and safeguard the organization's assets against evolving threats.
 
 Learn more: [Recommendations for securing a development lifecycle](/power-platform/well-architected/security/secure-development-lifecycle)
 
@@ -65,27 +66,27 @@ Security training for makers and developers is essential to ensure that applicat
 - **Enhance**: Enhance existing Power Platform trainings by adding information on how to build secure solutions
 - **Educate**: Educate users on your Environment and Data Loss Prevention policy strategy and any other configurations that may impact their solutions, and provide guidance on how to request changes
 - **Include**: Include information on the Security Development Lifecycle (SDL) phases and what users should be aware of to keep their solutions secure
-- **Communicate**: Communicate to users about how you will work together to progress through each phase
+- **Communicate**: Communicate to users about how you'll work together to progress through each phase
 
-Having a central source, such as a SharePoint site or wiki, where makers can easily access this training content is important. This centralized repository ensures that all team members have consistent and up-to-date information, making it easier to discover and reference security guidelines and resources. Empowering makers and developers with the knowledge and tools they need helps safeguard the your organizations data and applications.
+Having a central source, such as a SharePoint site or wiki, where makers can easily access this training content is important. This centralized repository ensures that all team members have consistent and up-to-date information, making it easier to discover and reference security guidelines and resources. Empowering makers and developers with the knowledge and tools they need helps safeguard your organization's data and applications.
 
 ## Incident preparation and response
 
-Establish a comprehensive incident response plan that outlines the procedures for identifying, managing, and mitigating security incidents. This plan should include clear roles and responsibilities, communication protocols, and steps for containment, eradication, and recovery. Regular training and simulations can help ensure that all team members are familiar with the plan and can respond effectively in the event of an incident. Additionally, maintaining detailed logs and audit trails to investigate incidents and understand their impact. By being well-prepared and having a robust incident response strategy in place, you can minimize the damage caused by security breaches and quickly restore normal operations.
+Establish a comprehensive incident response plan that outlines the procedures for identifying, managing, and mitigating security incidents. This plan should include clear roles and responsibilities, communication protocols, and steps for containment, eradication, and recovery. Regular training and simulations can help ensure that all team members are familiar with the plan and can respond effectively in the event of an incident. Additionally, maintain detailed logs and audit trails to investigate incidents and understand their impact. By being well-prepared and having a robust incident response strategy in place, you can minimize the damage caused by security breaches and quickly restore normal operations.
 
-Integrate Power Platform into your SecOps practices to enhancing the security and compliance of your low-code/no-code solutions.
+Integrate Power Platform into your SecOps practices to enhance the security and compliance of your low-code/no-code solutions.
 
-:::image type="content" source="media/secops.png" alt-text="Incorporate Power Platform into your SecOps practices.":::
+:::image type="content" source="media/secops.png" alt-text="Screenshot of incorporate Power Platform into your SecOps practices.":::
 
 Learn more: [Recommendations for security incident response](/power-platform/well-architected/security/incident-response)
 
 ## Continuous improvement
 
-The journey toward a modern, robust security posture doesn't end with the initial implementation. To keep up with new threats, you need to continuously review and refine your security practices while maintaining strict adherence to standards. Continuous improvement  is essential for maintaining a robust security posture because cyber threats continuously evolve and become more sophisticated. To protect against these ever-changing risks, ensure ongoing enhancements.
+The journey toward a modern, robust security posture doesn't end with the initial implementation. To keep up with new threats, continuously review and refine your security practices while maintaining strict adherence to standards. Continuous improvement  is essential for maintaining a robust security posture because cyber threats continuously evolve and become more sophisticated. To protect against these ever-changing risks, ensure ongoing enhancements.
 
 ## Next steps
 
-You can only mitigate potential security incidents before they escalate into significant breaches with effective threat detection in place. By implementing robust monitoring and alerting systems, you can quickly detect suspicious activities and respond promptly to protect their data and applications.
+Mitigate potential security incidents before they escalate into significant breaches with effective threat detection. By implementing robust monitoring and alerting systems, you can quickly detect suspicious activities and respond promptly to protect your data and applications.
 
-> [!div class="nextstepaction"]
-> [Detect threats to your organization](threat-protection.md)
+Learn more:
+- [Detect threats to your organization](/power-platform/guidance/adoption/threat-protection.md)

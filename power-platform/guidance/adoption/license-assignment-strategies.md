@@ -1,23 +1,24 @@
 ---
-title: "License assignment strategies | MicrosoftDocs"
-description: "Guidance for license assignment."
+title: Establish license assignment strategies
+description: Learn how to establish a license assignment strategy for Power Platform to optimize costs, ensure governance, and improve user adoption.
+#customer intent: As a Power Platform user, I want to establish a license assignment strategy for Power Platform so that I can optimize costs, ensure governance, and improve user adoption.
 author: stjeffer
 ms.topic: conceptual
 ms.date: 06/20/2023
 ms.subservice: guidance
 ms.author: stjeffer
-ms.reviewer: sericks
+ms.reviewer: pankajsharma2087
 ---
 
-# License assignment strategies
+# Establish license assignment strategies
 
-Premium licensing provides advanced features, greater flexibility, scalability, and enhanced security and compliance features for organizations.
+Premium licensing provides advanced features, greater flexibility, scalability, and enhanced security and compliance for organizations.
 
 Establishing a license assignment strategy is important for:
 
 - **Return on investment**: Assigning any licenses that your organization has purchased ensures that users have access to the advanced features of Power Platform.
 - **User adoption**: By assigning the right licenses to the right users, organizations can ensure that users have access to the tools they need to do their jobs effectively.
-- **Governance**: Helps to ensure that Power Platform is being used in accordance with governance policies.
+- **Governance**: Helps to ensure that Power Platform is used in accordance with governance policies.
 - **Optimizing costs**: One of the main reasons to develop a license assignment strategy is to optimize costs.
 
 > [!IMPORTANT]
@@ -26,7 +27,7 @@ Establishing a license assignment strategy is important for:
 > - **Power Apps per user license**
 > - **Power Automate per user license**
 >
-> The guidance does not apply to:
+> The guidance doesn't apply to:
 >
 > - Power Apps per app licenses
 > - Pay-as-you-go
@@ -38,13 +39,13 @@ Establishing a license assignment strategy is important for:
 
 The following are the most common license assignment strategies.
 
-| Approach | Description | Pro | Con | License |
+| Approach | Description | Pros | Cons | License |
 |----------|-------------|-----|-----|---------|
-| Assigning licenses manually | This approach is the most straightforward method, but it's labor intensive. | This approach works well in smaller organizations with limited number of users. | This approach can be time consuming. There's a higher risk of human error, and it can overwhelm administrators. License assignment also needs to keep pace with new apps and sharing to ensure all users have access. | Power Apps per user & Power Automate per user |
+| Assigning licenses manually | This approach is the most straightforward method, but it's labor intensive. | This approach works well in smaller organizations with a limited number of users. | This approach can be time consuming. There's a higher risk of human error, and it can overwhelm administrators. License assignment also needs to keep pace with new apps and sharing to ensure all users have access. | Power Apps per user & Power Automate per user |
 | Bulk license assignment | For larger organizations, it may be more efficient to assign in bulk. | This method allows administrators to quickly assign licenses to multiple users at once, which can save time and reduce the risk of error. | Depending on the approach taken, this can require expertise and can be difficult to customize or maintain for more complex licensing scenarios.  | Power Apps per user & Power Automate per user |
 | Group-based licensing | With group-based licensing, administrators can assign licenses to groups of users based on their roles or responsibilities within the organization. | This method allows for more granular control over license assignment, and can simplify the process of adding or removing licenses as users' roles change. | This approach requires careful planning to ensure that licenses are assigned appropriately. There's also more limited control over assignment when compared with manual assignment. | Power Apps per user & Power Automate per user |
 | By request (and approval) | With this approach, licenses are assigned to individuals or groups only upon request. Usually some form of business justification is required and must be approved by line managers or licensing authority within an organization. | This approach can help with more efficient use of licenses without the need for reassigning. | This approach can be time-consuming and may require additional resources. | Power Apps per user & Power Automate per user |
-| On-demand | On-demand licensing is a model that allows organizations to assign licenses to users as needed, rather that assigning licenses to specific users in advance. | This approach is cost effective and flexible. It helps organizations to optimize their license usage and reduce unnecessary costs. | On-demand licensing can limit the organization's control over license assignment. | Power Apps per user & Power Automate per user |
+| On-demand | On-demand licensing is a model that allows organizations to assign licenses to users as needed, rather than assigning licenses to specific users in advance. | This approach is cost effective and flexible. It helps organizations to optimize their license usage and reduce unnecessary costs. | On-demand licensing can limit the organization's control over license assignment. | Power Apps per user & Power Automate per user |
 
 ### Assigning licenses manually
 
@@ -111,9 +112,9 @@ Learn more about access packages:
 
 #### Licensing auto-claim for Power Apps
 
-The license auto-claim feature for Power Apps simplifies license assignment for administrators. The feature enables their Power Apps users to automatically claim Power Apps per user licenses when they're needed, instead of requiring an administrator to identify users who need licenses in advance. For example, when a user without a standalone license opens an app that requires a premium license, the user will automatically be assigned a Power Apps per-user license.
+The license auto-claim feature for Power Apps simplifies license assignment for administrators. The feature enables their Power Apps users to automatically claim Power Apps per user licenses when they're needed, instead of requiring an administrator to identify users who need licenses in advance. For example, when a user without a standalone license opens an app that requires a premium license, the user is assigned a Power Apps per-user license.
 
-Administrators can create an _auto-claim policy_ for Power Apps per-user licenses in the Microsoft 365 admin center, just like they can for other Microsoft licenses.
+Administrators can create an _auto-claim policy_ for Power Apps per-user licenses in the Microsoft 365 admin center just like they can for other Microsoft licenses.
 
 Learn more about on-demand license assignment:
 

@@ -1,20 +1,21 @@
 ---
 title: Meet compliance requirements
-description: Guidance for meeting your compliance requirements
+description: Configure identity and access management for Microsoft Power Platform to ensure secure access to resources.
+#customer intent: As a Power Platform user, I want to configure identity and access management for Microsoft Power Platform so that I can ensure secure access to resources.
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: conceptual
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: sericks
+ms.reviewer: pankajsharma2087
 ms.date: 02/28/2025
 ---
 
 # Meet compliance requirements
 
-Every organization must comply with the legal and regulatory standards of the industry and region they operate in. They might also have more contractual requirements and corporate policies.
+Every organization must comply with the legal and regulatory standards of the industry and region they operate in. They might also have additional contractual requirements and corporate policies.
 
-Regional, industry-wide, and organization-specific regulations are top of mind as the race towards AI adoption continues. With Power Platform, you can feel confident that your organization’s business applications and copilots are meeting [all compliance requirements](/power-platform/admin/wp-compliance-data-privacy) including assured visibility, granular traceability, and comprehensive audits.  
+Regional, industry-wide, and organization-specific regulations are top of mind as the race towards AI adoption continues. With Power Platform, you can feel confident that your organization’s business applications and copilots meet [all compliance requirements](/power-platform/admin/wp-compliance-data-privacy) including assured visibility, granular traceability, and comprehensive audits.
 
 Microsoft is responsible for the platform, including the services it offers. We provide a cloud service that can meet or exceed your security, privacy, and compliance needs. Microsoft complies with data protection and privacy laws for cloud services, and our compliance with world-class industry standards is verified. Detailed information about compliance for our cloud services and solutions that help you meet regulatory requirements for data security is available in our [Microsoft Trust Center](https://www.microsoft.com/trust-center).
 
@@ -30,10 +31,10 @@ Learn more: [Manage compliance in the cloud at Microsoft Trust Center](https://w
 
 The European Union (EU) General Data Protection Regulation (GDPR) gives significant rights to individuals regarding their data. Refer to the [Microsoft Learn General Data Protection Regulation Summary](/compliance/regulatory/gdpr) for an overview of GDPR, including terminology, an action plan, and readiness checklists to help you meet your obligations under GDPR when using Microsoft products and services.
 
-You can learn more about GDPR and how Microsoft helps support it and our customers:
+Learn more about GDPR and how Microsoft helps support it and our customers:
 
-- The [Microsoft Trust Center](/dynamics365/guidance/implementation-guide/security) provides general information, compliance best practices, and documentation helpful to GDPR accountability, such as Data Protection Impact Assessments, Data Subject Requests, and data breach notification.
-- The [Service Trust portal](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted) provides information about how Microsoft services help support compliance with GDPR.
+- The [Microsoft Trust Center](/dynamics365/guidance/implementation-guide/security) provides general information, compliance best practices, and documentation helpful to GDPR accountability, such as data protection impact assessments, data subject requests, and data breach notification.
+- The [Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted) provides information about how Microsoft services help support compliance with GDPR.
 Use the links in the following table to help you respond to requests for personal data.
 
 Learn more: [Resources to manage GDPR compliance](/power-platform/admin/wp-compliance-data-privacy#resources-to-manage-gdpr-compliance)
@@ -44,7 +45,7 @@ Power Platform workloads that use AI must adhere to responsible AI principles to
 
 Design the AI system to treat all users fairly, hold developers and users accountable for its performance, ensure transparency in AI operations, and adhere to ethical standards.
 
-At Microsoft, we're committed to the advancement of AI driven by principles that put people first. Generative models have significant potential benefits, but without careful design and thoughtful mitigations, such models have the potential to generate incorrect or even harmful content. Microsoft has made significant investments to help guard against abuse and unintended harm, which includes incorporating Microsoft's [principles for responsible AI use](https://www.microsoft.com/ai/responsible-ai?activetab=pivot1:primaryr6), adopting a [Code of Conduct](/legal/cognitive-services/openai/code-of-conduct?context=/azure/ai-services/openai/context/context), building content filters to support customers, and providing responsible AI [information and guidance](/legal/cognitive-services/openai/transparency-note?context=%2Fazure%2Fai-services%2Fopenai%2Fcontext%2Fcontext&tabs=image) that customers should consider when using generative AI.
+At Microsoft, we're committed to the advancement of AI driven by principles that put people first. Generative models have significant potential benefits, but without careful design and thoughtful mitigations, such models can generate incorrect or even harmful content. Microsoft has made significant investments to help guard against abuse and unintended harm, which includes incorporating Microsoft's [principles for responsible AI use](https://www.microsoft.com/ai/responsible-ai?activetab=pivot1:primaryr6), adopting a [Code of Conduct](/legal/cognitive-services/openai/code-of-conduct?context=/azure/ai-services/openai/context/context), building content filters to support customers, and providing responsible AI [information and guidance](/legal/cognitive-services/openai/transparency-note?context=%2Fazure%2Fai-services%2Fopenai%2Fcontext%2Fcontext&tabs=image) that customers should consider when using generative AI.
 
 Power Platform copilots and generative AI features follow a set of core security and privacy practices and the [Microsoft Responsible AI Standard](https://www.microsoft.com/ai/principles-and-approach). Power Platform data is protected by comprehensive, industry-leading compliance, security, and privacy controls.
 
@@ -56,7 +57,7 @@ With Dataverse audit capabilities in the Power Platform admin center, you can di
 
 Moreover, to meet your enterprise’s compliance requirements with greater granularity, Dataverse offers robust data logging capabilities within [managed security](/power-platform/admin/security/managed-security). This feature is essential for investigating security incidents and is designed to meet the external and internal auditing, compliance, security, and governance policies that are common to many enterprises. You can easily customize your Dataverse audit for various entities and fields to ensure that you have comprehensive visibility into your data interactions, helping to maintain a secure and compliant environment.
 
-:::image type="content" source="media/sec-envauditing.png" alt-text="Environment auditing":::
+:::image type="content" source="media/sec-envauditing.png" alt-text="Screenshot of environment auditing":::
 
 ## Understand security and compliance requirements
 
@@ -73,9 +74,9 @@ Learn more: [Regulatory compliance standards and Microsoft products](https://www
 
 ## Understand how regulatory requirements affect your project
 
-Identify and adhere to regulatory requirements and norms applicable to your industry, such as GDPR (General Data Protection Regulation), HIPAA (Health Insurance Portability and Accountability Act), or CCPA (California Consumer Privacy Act). Implement necessary controls to ensure compliance. Schedule regular compliance audits to verify adherence to regulatory standards and address any gaps. Assess if there are specific requirements for data location, such as a requirement for data to be stored in a particular country or region. Ensure that your data storage strategy meets these requirements.
+Identify and adhere to regulatory requirements and norms applicable to your industry, such as GDPR (General Data Protection Regulation), HIPAA (Health Insurance Portability and Accountability Act), or CCPA (California Consumer Privacy Act). Implement necessary controls to ensure compliance. Schedule regular compliance audits to verify adherence to regulatory standards and address any gaps. Assess if there are specific requirements for data location, such as a requirement for data to be stored in a particular country or region. Ensure your data storage strategy meets these requirements.
 
-Ensure that data is protected and managed in compliance with regulatory requirements. Protecting the data handled by the intelligent application workload is critical to maintaining trust and adherence to legal and regulatory standards.
+Ensure data is protected and managed in compliance with regulatory requirements. Protecting the data handled by the intelligent application workload is critical to maintaining trust and adherence to legal and regulatory standards.
 
 ## Provide employee training
 

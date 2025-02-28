@@ -1,13 +1,14 @@
 ---
-title: Configure identity and access management for Microsoft Power Platform
-description: Guidance on configuring identity and access management for Microsoft Power Platform
+title: Configure identity and access management
+description: Configure identity and access management for Microsoft Power Platform to ensure secure access to resources. Learn how to manage users and their interactions effectively.
+#customer intent: As a Power Platform user, I want to configure identity and access management for Microsoft Power Platform so that I can ensure secure access to resources.
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/28/2025
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: sericks
+ms.reviewer: pankajsharma2087
 search.audienceType: 
   - admin
 contributors:
@@ -74,15 +75,15 @@ Learn more:
 
 ### Continuous access evaluation
 
-[Continuous access evaluation](power-platform/admin/continuous-access-evaluation) is a feature of Microsoft Entra ID that monitors certain events and changes to decide if a user should keep or lose access to a resource. OAuth 2.0 authentication traditionally relies on access token expiration to revoke a user's access to modern cloud services. Users whose access rights have been terminated still have access to resources until the access token expires—for Power Platform, as long as an hour, by default. With continuous access evaluation, however, Power Platform services such as Dataverse continuously evaluate a user's [critical events](/azure/active-directory/conditional-access/concept-continuous-access-evaluation#critical-event-evaluation) and network location changes. They proactively terminate active user sessions, or require reauthentication, and enforce tenant policy changes in near real time instead of waiting for an access token to expire.
+[Continuous access evaluation](/power-platform/admin/continuous-access-evaluation) is a feature of Microsoft Entra ID that monitors certain events and changes to decide if a user should keep or lose access to a resource. OAuth 2.0 authentication traditionally relies on access token expiration to revoke a user's access to modern cloud services. Users whose access rights have been terminated still have access to resources until the access token expires—for Power Platform, as long as an hour, by default. With continuous access evaluation, however, Power Platform services such as Dataverse continuously evaluate a user's [critical events](/azure/active-directory/conditional-access/concept-continuous-access-evaluation#critical-event-evaluation) and network location changes. They proactively terminate active user sessions, or require reauthentication, and enforce tenant policy changes in near real time instead of waiting for an access token to expire.
 
 As organizations continue to adopt hybrid work models and cloud applications, Microsoft Entra ID is a key primary security perimeter that protects users and resources. Conditional access extends that perimeter beyond a network boundary to include user and device identity. Continuous access ensures that access is reevaluated as events or user locations change. By using Microsoft Entra ID with Power Platform products, you can apply consistent security governance across your application portfolio.
 
-Review these [identity management best practices](https://learn.microsoft.com/en-us/azure/security/fundamentals/identity-management-best-practices) for more tips on how to use Microsoft Entra ID with Power Platform.
+Review these [identity management best practices](/azure/security/fundamentals/identity-management-best-practices) for more tips on how to use Microsoft Entra ID with Power Platform.
 
 ## Environment access
 
-A [Power Platform environment](/power-platform/admin/environments-overview) is a logical container and unit of governance management that represents the security boundary in Power Platform. Many features such virtual network, Lockbox, and security groups all operate at an environment-level of granularity from a management perspective. This allows different security requirements to be implemented in different environments depending on your business needs. Users get access to an environment based on a security role that they're assigned. Simply having a license and an identity at tenant level isn't enough to grant access to an environment unless it's the [default environment](/power-platform/admin/environments-overview#default-environment).
+A [Power Platform environment](/power-platform/admin/environments-overview) is a logical container and unit of governance management that represents the security boundary in Power Platform. Many features such as virtual network, Lockbox, and security groups all operate at an environment-level of granularity from a management perspective. This allows different security requirements to be implemented in different environments depending on your business needs. Users get access to an environment based on a security role that they're assigned. Simply having a license and an identity at tenant level isn't enough to grant access to an environment unless it's the [default environment](/power-platform/admin/environments-overview#default-environment).
 
 Environments that have Dataverse support more advanced security models specific to controlling access to data and services with a Dataverse database.
 
@@ -100,11 +101,11 @@ To further enhance security and reduce the risk of incidental over-sharing, you 
 
 ### Route makers to their own development environment
 
-[Environment routing](/power-platform/admin/default-environment-routing) allows Power Platform admins to automatically direct new or existing makers into their own personal developer environments when they visit make.powerapps.com or copilotstudio.microsoft.com. We recommend you configure environment routing offers makers a personal, safe space to build with Microsoft Dataverse without the fear of others accessing their apps or data.
+[Environment routing](/power-platform/admin/default-environment-routing) allows Power Platform admins to automatically direct new or existing makers into their own personal developer environments when they visit make.powerapps.com or copilotstudio.microsoft.com. We recommend you configure environment routing to offer makers a personal, safe space to build with Microsoft Dataverse without the fear of others accessing their apps or data.
 
 ## Resource access
 
-The ability to create and run specific applications and flows is controlled by security roles in the context of environments. For example, you can share a canvas apps directly with a user or with a Microsoft Entra ID group, while still being subject to Dataverse security roles. On the other hand, sharing of model-driven apps is done via Dataverse security roles only.
+The ability to create and run specific applications and flows is controlled by security roles in the context of environments. For example, you can share canvas apps directly with a user or with a Microsoft Entra ID group, while still being subject to Dataverse security roles. On the other hand, sharing model-driven apps is done via Dataverse security roles only.
 
 ### Provide role-based authorization
 
@@ -132,11 +133,11 @@ Ask questions like these:
 - Does the role need permanent access to these permissions?
 - What happens if the user changes jobs?
 
-**Limiting the level of access that users have reduces the potential attack surface**. If you grant only the minimum permissions that are required to perform specific tasks, the risk of a successful attack or unauthorized access is reduced. For example, developers only need maker access to the Development environment but not the Production environment; they only need access to create resources but not change environment properties; and they may only need access to read/write data from Dataverse but not change the data model or attributes of the Dataverse table.
+**Limiting the level of access that users have reduces the potential attack surface**. If you grant only the minimum permissions that are required to perform specific tasks, the risk of a successful attack or unauthorized access is reduced. For example, developers only need maker access to the development environment but not the production environment; they only need access to create resources but not change environment properties; and they may only need access to read/write data from Dataverse but not change the data model or attributes of the Dataverse table.
 
-**Avoid permissions that target individual users**. Granular and custom permissions create complexity and confusion and can become difficult to maintain as users change roles and move across the business, or as new users with similar authentication requirements join the team. This situation can create a complex legacy configuration that's difficult to maintain and negatively impact both security and reliability.
+**Avoid permissions that target individual users**. Granular and custom permissions create complexity and confusion and can become difficult to maintain as users change roles and move across the business, or as new users with similar authentication requirements join the team. This situation can create a complex legacy configuration that's difficult to maintain and negatively impacts both security and reliability.
 
-**Grant roles that start with least privilege** and add more based your operational or data access needs. Your technical teams must have clear guidance to implement permissions.
+**Grant roles that start with least privilege** and add more based on your operational or data access needs. Your technical teams must have clear guidance to implement permissions.
 
 ### Establish processes to manage the identity lifecycle
 
@@ -150,7 +151,7 @@ As the race to adopt AI is prioritized across industries, admins are looking to 
 
 For Copilot Studio agent scenarios, admins are equipped with fine-grained controls over editor versus viewer permissions on a per environment or environment group basis and can limit viewers to security groups, individuals, or a finite number of viewers.
 
-:::image type="content" source="media/limit-sharing.png" alt-text="Limit sharing":::
+:::image type="content" source="media/limit-sharing.png" alt-text="Screenshot of Limit sharing":::
 
 ### Connect to Azure resources that support managed identity
 
@@ -176,11 +177,11 @@ As a customer, you're responsible for:
 
 Understand the key requirements for the Power Platform workload you're implementing. Ask yourself the following questions to help identify the identity and access management features to configure.
 
-- How will you implement access control and authentication mechanisms to ensure only authorized users can access the workload?
+- How do you implement access control and authentication mechanisms to ensure only authorized users can access the workload?
 - How do you ensure secure and seamless user authentication?
 - How do you control which apps can interact with the generative AI (agent) and what measures ensure these restrictions are effective?
-- How will the workload securely integrate with other internal and external systems?
-- Where will users access this solution from - are they using a mobile device or web browser?
+- How does the workload securely integrate with other internal and external systems?
+- Where do users access this solution from - are they using a mobile device or web browser?
 - Are your users internal, external, or both?
 
 ## Recommendations
@@ -207,9 +208,9 @@ Effectively governing makers, users, and guests are essential for maintaining se
 
 Every organization must comply with the legal and regulatory standards of the industry and region they operate in. They may also have more contractual requirements and corporate policies.
 
-> [!div class="nextstepaction"]
-> [Meet compliance requirements](compliance.md)
+Learn more:
+- [Meet compliance requirements](/power-platform/guidance/adoption/compliance.md)
 
-## Resources
+
 
 <!-- TODO -- >

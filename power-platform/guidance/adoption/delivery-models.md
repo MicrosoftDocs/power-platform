@@ -1,29 +1,31 @@
 ---
-title: "Delivery models - Microsoft Power Platform | MicrosoftDocs"
-description: "Depending on the size of your organization, you might want to formalize your Microsoft Power Platform adoption approach by implementing a structured organization model."
+title: Implement delivery models
+description: Depending on the size of your organization, you might want to formalize your Microsoft Power Platform adoption approach by implementing a structured organization model.
+#customer intent: As a Power Platform user, I want to understand different Power Platform delivery models so that I can choose the best approach for my organization.
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/28/2025
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: sericks
+ms.reviewer: pankajsharma2087
 search.audienceType: 
   - admin
 ---
-# Delivery models
+# Implement delivery models
 
-Defining a structured delivery and organization model is essential for driving successful Power Platform adoption within your organization. A well-defined model establishes [clear roles and responsibilities](roles.md), which will help foster collaboration and innovation. By outlining how different teams and individuals will interact with Power Platform, organizations can ensure that resources are effectively utilized, and projects are aligned with strategic objectives. This structured approach not only enhances efficiency and accountability but also supports compliance with regulatory requirements and promotes a culture of continuous improvement.
+Defining a structured delivery and organization model is essential for driving successful Power Platform adoption within your organization. A well-defined model establishes [clear roles and responsibilities](roles.md), which help foster collaboration and innovation. By outlining how different teams and individuals interact with Power Platform, organizations can ensure that resources are effectively utilized, and projects are aligned with strategic objectives. This structured approach not only enhances efficiency and accountability but also supports compliance with regulatory requirements and promotes a culture of continuous improvement.
 
-We have observed four primary delivery models across various customers. However, it's important to note that these models are conceptual frameworks, and in practice, organizations often implement a blend of these approaches. For instance, even if an organization adopts a centralized model where a central delivery team handles all requirements, there will still be citizen developers within the organization who explore the platform and create solutions for their specific teams. This means that elements of other models, such as matrix or BizDevOps, will naturally emerge. Therefore, while these delivery models provide a useful starting point, each organization will typically develop a unique combination that best fits its needs and context.
+We observe four primary delivery models across various customers. However, it's important to note that these models are conceptual frameworks, and in practice, organizations often implement a blend of these approaches. For instance, even if an organization adopts a centralized model where a central delivery team handles all requirements, there are citizen developers within the organization who explore the platform and create solutions for their specific teams. This means that elements of other models, such as matrix or BizDevOps, naturally emerge. Therefore, while these delivery models provide a useful starting point, each organization typically develop a unique combination that best fits its needs and context.
 
 Reflect on your current software delivery model and how Power Platform can integrate with or transform it. These models serve as a framework to understand how Power Platform's rapid development capabilities can be used within your existing processes. For instance, if your organization currently follows a centralized delivery model, integrating Power Platform might involve establishing a central team to manage and govern the platform while enabling citizen developers to create solutions within their departments. This approach can enhance agility and innovation without compromising control and oversight.
 
-Alternatively, if your organization uses a decentralized or federated model, Power Platform can empower individual teams to develop and deploy solutions quickly, fostering a culture of innovation and responsiveness. In this scenario, the role of a central governance team will involve setting standards, providing support, and ensuring compliance across the organization.
+Alternatively, if your organization uses a decentralized or federated model, Power Platform can empower individual teams to develop and deploy solutions quickly, fostering a culture of innovation and responsiveness. In this scenario, the role of a central governance team involve setting standards, providing support, and ensuring compliance across the organization.
 
 As your organization evolves, you might find that a hybrid approach, blending elements of different delivery models, best suits your needs. This flexibility allows you to adapt to changing requirements and scale your Power Platform adoption effectively.
 
-![Delivery models.](media/delivery-models.png "Delivery models")
+
+:::image type="content" source="media/delivery-models.png" alt-text="Screenshot showing the delivery model.":::
 
 ## Centralized  
 
@@ -60,17 +62,17 @@ Despite the autonomy of these teams, centralized governance remains essential to
 
 The decentralized model is an excellent self-service option, empowering teams to innovate and address their unique challenges while maintaining overall organizational standards and compliance. This approach fosters a culture of agility and responsiveness, driving successful Power Platform adoption across the enterprise.
 
-Some key benefits of a decentralized delivery model are:
+Key benefits of a decentralized delivery model are:
 
 - **Increased agility**: Teams can quickly respond to their specific needs and challenges, leading to faster development and deployment of solutions.
 - **Enhanced innovation**: By empowering individual teams, the model fosters a culture of creativity and experimentation, driving innovation across the organization.
 - **Scalability**: Teams can grow and adapt in a cellular fashion, allowing the organization to scale its Power Platform adoption efficiently.
 - **Autonomy**: Teams operate independently, making decisions and managing their projects without waiting for central approval, which can streamline processes and reduce bottlenecks.
 - **Closer alignment with business needs**: Teams that are closely aligned with day-to-day operations can develop solutions that are more tailored to the specific needs of their departments.
-- **Resource optimization**: Decentralized teams can leverage their unique expertise and resources, optimizing the use of organizational assets.
+- **Resource optimization**: Decentralized teams can apply their unique expertise and resources, optimizing the use of organizational assets.
 - **Employee empowerment**: Giving teams the autonomy to manage their projects can increase job satisfaction and engagement, as employees feel more empowered and responsible for their work.
 
-While a decentralized delivery model offers many benefits, it also presents several challenges:
+Challenges of a decentralized delivery model include:
 
 - **Consistency**: Ensuring that all teams adhere to organizational standards and guidelines can be difficult, leading to potential inconsistencies in app quality and compliance.
 - **Governance**: Maintaining effective governance across multiple autonomous teams requires robust oversight mechanisms to ensure data security, compliance, and proper use of resources.
@@ -79,7 +81,7 @@ While a decentralized delivery model offers many benefits, it also presents seve
 - **Change management**: Managing changes across a decentralized structure can be more complicated, requiring clear communication and coordination to ensure smooth transitions.
 - **Scalability**: While decentralization can facilitate growth, it can also lead to scalability issues if not managed properly, as the organization must ensure that all teams have the necessary resources and support.
 
-Here is a typical RACI matrix of Power Platform governance tasks. Note that this only takes into consideration governance tasks and does not currently include change management and nurture tasks.
+Here's a typical RACI matrix of Power Platform governance tasks. Note that this only takes into consideration governance tasks and doesn't currently include change management and nurture tasks.
 
 ## Hybrid
 
@@ -101,7 +103,7 @@ Some key benefits of a hybrid delivery model are:
 - **Scalability**: Hybrid models can support large-scale adoption, enabling thousands of individuals to participate while maintaining oversight and governance.
 - **Flexibility**: These models allow for adaptability, enabling teams to respond quickly to changing needs and priorities while still adhering to organizational standards.
 - **Enhanced collaboration**: By connecting local teams with centralized experts, hybrid models ensure seamless communication and alignment, reducing the risk of miscommunication and ensuring that solutions meet business needs.
-- **Resource optimization**: Hybrid models optimize the use of resources by leveraging the expertise of centralized teams and the agility of decentralized teams.
+- **Resource optimization**: Hybrid models optimize the use of resources by using the expertise of centralized teams and the agility of decentralized teams.
 - **Improved governance**: Centralized governance structures, such as a Center of Excellence, provide standardized guidelines and oversight, ensuring compliance and data security.
 - **Innovation and responsiveness**: Local teams are empowered to innovate and address their unique challenges, fostering a culture of creativity and responsiveness.
 - **Effective change management**: Hybrid models facilitate effective change management by combining centralized planning with decentralized execution, ensuring smooth transitions and continuous improvement.
@@ -110,7 +112,7 @@ While a hybrid delivery model offers many benefits, it also presents some challe
 
 - **Complex Coordination**: Balancing centralized and decentralized elements requires effective coordination and communication, which can be complex and time-consuming.
 - **Resource management**: Ensuring that both central and local teams have the necessary resources and support can be challenging, especially as the organization scales.
-- **Potential for silos**: There is a risk of creating silos if local teams become too autonomous and disconnected from the central governance structure.
+- **Potential for silos**: There's a risk of creating silos if local teams become too autonomous and disconnected from the central governance structure.
 - **Training and support**: Providing consistent training and support to both central and local teams can be demanding, requiring ongoing investment in skills development.
 - **Alignment with strategic goals**: Ensuring that all teams, both central and local, are aligned with the organization's strategic goals and priorities can be challenging.
 - **Balancing innovation and control**: Striking the right balance between allowing local teams to innovate and maintaining central control and oversight can be difficult.
@@ -125,14 +127,14 @@ Equinors Center for Enablement development team took a blended approach to centr
 
 Zurich developed a decentralized operational model to manage its large global tenant, which was essential for growth due to the numerous makers and projects across various languages and regulatory environments. The central Center for Enablement team handles central governance, while local Center for Enablement teams manage production and local governance. This approach, with nearly 20 teams organized by business unit or country, balances governance and empowerment, leading to simplification and innovation for Zurich's business and internal customers. [Learn more about Zurichs' operational model.](https://www.microsoft.com/en/customers/story/1792347226516734147-zurich-insurance-group-power-apps-insurance-en-switzerland).
 
-Schlumberger has embraced Power Platform to drive digital transformation across its global operations, achieving rapid adoption. This success is supported by a robust Center of Excellence (CoE) that ensures governance, monitoring, and security practices are in place. The CoE fosters innovation by providing a structured environment where both citizen developers and professional developers can collaborate effectively. This decentralized approach, combined with central oversight, allows Schlumberger to scale its solutions while maintaining control and compliance. Here is a digital briefing from Schlumberger describing their operational model through both decentralized and matrixed models. [Learn more about how Schlumberger is adopting Microsoft Power Platform](https://www.microsoft.com/en-us/power-platform/blog/power-apps/schlumberger).
+Schlumberger has embraced Power Platform to drive digital transformation across its global operations, achieving rapid adoption. This success is supported by a robust Center of Excellence (CoE) that ensures governance, monitoring, and security practices are in place. The CoE fosters innovation by providing a structured environment where both citizen developers and professional developers can collaborate effectively. This decentralized approach, combined with central oversight, allows Schlumberger to scale its solutions while maintaining control and compliance. Here's a digital briefing from Schlumberger describing their operational model through both decentralized and matrixed models. [Learn more about how Schlumberger is adopting Microsoft Power Platform](https://www.microsoft.com/en-us/power-platform/blog/power-apps/schlumberger).
 
 | Type of application delivery | Delivery model type | Build time of the application | Lifetime of the application | Examples | IT engagement |
 |---|----|----|---|----|----|
 | Self-service | Any | 1-2 weeks | 6-12 months | Small, departmental or LOB solutions. | Decentralized IT |
 | Small teams | Matrixed/Centralized | 3-6 months | 6-24 months | Small teams working to deliver medium solutions or multiple-department solutions. | Decentralized IT |
 | Multiple-department or large line-of-business solutions | Matrixed/Centralized | 3-6 months | 6-24 months | Large matrixed teams working to deliver medium and large solutions or intra-department solutions. | Centralized IT |
-| Large-scale product delivery | Centralized | 1-2 years | 5-7 years | Large product deliveries across an enterprise leveraging a mixture of low-code and code-first Power Apps solutions along with vendor and first-party solutions. | Centralized IT |
+| Large-scale product delivery | Centralized | 1-2 years | 5-7 years | Large product deliveries across an enterprise using a mixture of low-code and code-first Power Apps solutions along with vendor and first-party solutions. | Centralized IT |
 | Large enterprise vendor delivery | Centralized | 7 years | 10-15 years | Surround strategy for a third-party system of record and support framework. For example, SAP implementation and surrounding it with a mixture of low-code and code-first solutions in Power Apps and other Microsoft and third-party integrations. | Centralized IT |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

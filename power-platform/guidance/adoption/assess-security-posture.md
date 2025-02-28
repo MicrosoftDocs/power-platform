@@ -1,12 +1,13 @@
 ---
 title: Assess your security posture
-description: Guidance for assessing your Power Platform security posture
+description: Assess your Power Platform security posture with our comprehensive guide. Learn how to protect your data and ensure compliance with best practices.
+#customer intent: As a Power Platform user, I want to assess my Power Platform security posture so that I can protect my data and ensure compliance with best practices.
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: conceptual
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: sericks
+ms.reviewer: pankajsharma2087
 ms.date: 02/28/2025
 ---
 
@@ -18,7 +19,7 @@ Security is the protection of IT systems and networks from theft, damage, or dis
 
 This diagram illustrates how security responsibilities are distributed between you and Microsoft:
 
-:::image type="content" source="media/shared-responsibility.png" alt-text="Shared responsibility model.":::
+:::image type="content" source="media/shared-responsibility.png" alt-text="screenshot of shared responsibility model.":::
 
 This article explains the security principles and practices that apply to Power Platform. It also prompts you to assess what you are doing today to secure Power Platform solutions and provides next steps to design your action plan.
 
@@ -34,7 +35,7 @@ Microsoft works toward this goal by focusing on tools and capabilities that supp
 - Simplify the complex. Prioritize the right risks with management tools that make the best use of the human expertise in your company. Show the security management of Power Platform business applications in your management tools so that it doesn’t add more complexity.
 - Catch what others miss. Use leading AI, automation, and expertise to find and stop cyberthreats fast and fortify your security position.
 
-These security goals drive the innovation in the following Microsoft integrated security products.
+These security goals drive the innovation in the following Microsoft integrated security products:
 
 - [Microsoft Defender](/defender-cloud-apps/what-is-defender-for-cloud-apps): Stop cyberattacks on your devices, identities, apps, email, and clouds with industry-leading extended detection and response (XDR) products.
 - [Microsoft Sentinel](/azure/sentinel/overview): Stay ahead of cyberthreats with AI-powered security information and event management (SIEM) that aggregates data from your entire enterprise to give you unmatched visibility.
@@ -51,7 +52,7 @@ Power Platform is built on a strong foundation of security. It uses the same sec
 
 The Power Platform service is governed by the [Microsoft Online Services Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31) and the [Microsoft Enterprise Privacy Statement](https://www.microsoft.com/privacystatement/OnlineServices/Default.aspx). For the location of data processing, refer to the Microsoft Online Services Terms and the [Data Protection Addendum](https://www.microsoft.com/download/details.aspx?id=101581).
 
-The [Microsoft Trust Center](https://www.microsoft.com/trustcenter) is the primary resource for Power Platform compliance information. For more information, see [Microsoft Compliance Offerings](https://learn.microsoft.com/en-us/compliance/regulatory/offering-home).
+The [Microsoft Trust Center](https://www.microsoft.com/trustcenter) is the primary resource for Power Platform compliance information. For more information, see [Microsoft Compliance Offerings](/compliance/regulatory/offering-home).
 
 The Power Platform service follows the Security Development Lifecycle (SDL). The SDL is a set of strict practices that support security assurance and compliance requirements. For more information, see [Microsoft Security Development Lifecycle Practices](https://www.microsoft.com/securityengineering/sdl/practices).
 
@@ -64,7 +65,7 @@ Learn more about individual security features and find answers to frequent secur
 
 ## Evaluate your current security posture
 
-Evaluating your current security posture is an important step in ensuring that your Power Platform environments and workloads are secure and compliant with organizational and regulatory requirements. This process involves a thorough assessment of your existing security measures, tools, and practices to identify gaps and areas for improvement. Here's a more detailed look at what this evaluation entails:
+Evaluating your current security posture is important to ensure that your Power Platform environments and workloads are secure and compliant with organizational and regulatory requirements. This process involves thoroughly assessing your existing security measures, tools, and practices to identify gaps and areas for improvement. Here's a more detailed look at what this evaluation entails:
 
 1. **Security tools and technologies**: Examine the security tools and technologies you're currently using to protect your Power Platform environment. This includes:
    - **Data Loss Prevention (DLP) Policies**: Are you using DLP policies to prevent unauthorized data sharing?
@@ -94,7 +95,7 @@ Understanding your security maturity level is essential for developing a robust 
 
 ## Typical security challenges in business applications
 
-In the age of AI, the data protection landscape is rapidly evolving. As attacks become more sophisticated and enterprises increasingly use data in AI-driven scenarios, the demand for data access grows. Simultaneously, regulations and requirements are adapting to meet these new needs. Business applications face unique security challenges that span across all industries.
+In the age of AI, the data protection landscape is rapidly evolving. As attacks become more sophisticated and enterprises increasingly use data in AI-driven scenarios, the demand for data access grows. Simultaneously, regulations and requirements adapt to meet these new needs. Business applications face unique security challenges that span across all industries.
 
 Here are some of the typical challenges and how Power Platform can help address them:
 
@@ -105,17 +106,17 @@ Here are some of the typical challenges and how Power Platform can help address 
 Power Platform offers a range of security controls and tools designed to tackle these challenges effectively:
 
 1. **Comprehensive monitoring and integration**: Relying solely on monitoring the activities within your business applications isn't enough to spot problems. You need to integrate these applications with other data sources to identify and respond to suspicious activities that might otherwise go unnoticed. For example, seeing that a cloud flow is getting customer information from Dataverse and sending an email might not be suspicious on its own. However, when combined with other signals such as frequency of the cloud flow runs, unusual geo-locations or off-hours activity, you can detect more complex insider threats. Power Platform's integration with [Microsoft Sentinel](/azure/sentinel/overview) allows for advanced threat detection and response. By correlating data from various sources, Microsoft Sentinel can identify patterns and anomalies that indicate potential security threats, enabling proactive measures to mitigate risks.
-1. **Data Protection**: Implementing [DLP policies](/power-platform/admin/wp-data-loss-prevention) within Power Platform helps prevent unauthorized data sharing and ensures that sensitive information is protected. These policies can be tailored to meet specific organizational needs and compliance requirements. The [IP firewall](/power-platform/admin/ip-firewall) feature in Power Platform allows administrators to define and enforce IP-based access controls, ensuring that only authorized IP addresses can access the Power Platform environment. By using IP firewall, organizations can mitigate risks associated with unauthorized access and data breaches, which enhance the overall security of their Power Platform deployments. Learn more in IP firewall in Power Platform environments. [Virtual Network support](/power-platform/admin/vnet-support-overview) in Power Platform allows organizations to isolate their network traffic and enforce stringent security policies. Virtual Network integration allows Power Platform environments to securely connect to on-premises networks and other Azure services, ensuring that data remains within trusted network boundaries.
+1. **Data protection**: Implementing [DLP policies](/power-platform/admin/wp-data-loss-prevention) within Power Platform helps prevent unauthorized data sharing and ensures that sensitive information is protected. These policies can be tailored to meet specific organizational needs and compliance requirements. The [IP firewall](/power-platform/admin/ip-firewall) feature in Power Platform allows administrators to define and enforce IP-based access controls, ensuring that only authorized IP addresses can access the Power Platform environment. By using IP firewall, organizations can mitigate risks associated with unauthorized access and data breaches, which enhance the overall security of their Power Platform deployments. Learn more in IP firewall in Power Platform environments. [Virtual Network support](/power-platform/admin/vnet-support-overview) in Power Platform allows organizations to isolate their network traffic and enforce stringent security policies. Virtual Network integration allows Power Platform environments to securely connect to on-premises networks and other Azure services, ensuring that data remains within trusted network boundaries.
 1. **Identity and Access Management (IAM)**: Utilize [Microsoft Entra ID](/entra/identity/) for robust identity and access management. Features like conditional access and multifactor authentication enhance security by ensuring that only authorized users can access critical resources.
 1. **Secure development practices**: Establishing [secure coding practices](/power-platform/well-architected/security/secure-development-lifecycle) for workload development is essential. Ensure that these guidelines are easily accessible to your makers and provide training to new makers on these practices. This helps in building secure applications from the ground up.
 
-## Consider your security challenges and the OWASP Top 10
+## Consider your security challenges and the OWASP top 10
 
 The Open Worldwide Application Security Project® ([OWASP](https://owasp.org/about/)) is a nonprofit foundation dedicated to improving software security. OWASP identified the [top 10 security risks](https://aka.ms/OWASPLowCodeSecurityRisks) associated with low-code/no-code platforms, which are essential for users of these solutions to understand. This list is regularly updated based on feedback from the security community, ensuring it remains relevant and comprehensive.
 
 These risks are common across all low-code/no-code platforms, and addressing them requires a combination of platform-specific security features and organizational security processes. While using a low-code/no-code platform can mitigate some security risks, it doesn't eliminate all of them. 
 
-While OWASP's guidance is generic and applies to any product and organization, Microsoft publishes specific guidance on mitigating the top 10 low-code/no-code security risks tailored for Power Platform. This guidance provides detailed strategies and best practices to help you secure your Power Platform environment effectively. Learn more: [Microsoft's Guidance on Low Code/No Code Security Risks for Power Platform](https://aka.ms/MSFTLowCodeSecurityRisks)
+While OWASP's guidance is generic and applies to any product and organization, Microsoft publishes specific guidance on mitigating the top 10 low-code/no-code security risks tailored for Power Platform. This guidance provides detailed strategies and best practices to help you secure your Power Platform environment effectively. Learn more: [Microsoft's guidance on low code/no code security risks for Power Platform](https://aka.ms/MSFTLowCodeSecurityRisks)
 
 By understanding and addressing these top 10 security risks, you can significantly enhance the security of your low-code/no-code solutions. Consider your current security challenges and how they align with these risks. Implementing the recommended security measures helps protect your organization's data and applications, ensuring a secure and resilient Power Platform environment.
 
@@ -123,20 +124,20 @@ By understanding and addressing these top 10 security risks, you can significant
 
 Finding the right balance in security measures is crucial for maintaining both productivity and safety within an organization. Users need sufficient security guidance to protect their assets, but overly restrictive measures can hinder their work efficiency. When security protocols are too cumbersome or not well understood, users might become frustrated and attempt to bypass them, leading to risky "Shadow IT" practices. This not only undermines security efforts but also increases the overall risk to the organization. Therefore, it's essential to implement security measures that are robust yet user-friendly, ensuring that users can work efficiently while keeping their assets secure.
 
-:::image type="content" source="media/find-balance.png" alt-text="Find the right balance between security and productivity":::
+:::image type="content" source="media/find-balance.png" alt-text="Screenshot of find the right balance between security and productivity":::
 
-Security naturally creates friction that might slow down processes, it's important to identify which elements are healthy in your IT processes and which aren't:
+Security naturally creates friction that might slow down processes. It's important to identify which elements are healthy in your IT processes and which aren't:
 
 - **Healthy friction**: Much like the resistance in exercise makes a muscle stronger, integrating the right level of security friction strengthens the system or application by forcing critical thinking at the right time. This typically takes the form of considering how and why an attacker might try to compromise an application or system during design (known as threat modeling), and reviewing, identifying, and ideally fixing potential vulnerabilities an attacker can exploit in software code, configurations, or operational practices.
-- **Unhealthy friction**: Impedes more value than it protects. This often happens when security bugs generated by tools have a high false positive rate (such as false alarms) or when the effort to discover or fix security issues far exceeds the potential affect of an attack.
+- **Unhealthy friction**: Impedes more value than it protects. This often happens when security bugs generated by tools have a high false positive rate (such as false alarms) or when the effort to discover or fix security issues far exceeds the potential effect of an attack.
 
 ## Make security a priority
 
-Security should be your first concern when you start your Power Platform adoption, not an afterthought. Ignoring security requirements can lead to serious legal, financial, and business risks and delays in your project. It can also affect the overall scalability and performance of the solution. Make security a priority from day one and consider some of the security impacts on scalability, performance, compliance, rollout plans, reporting, and operational aspects, along with specific examples from each product that build on the concepts we discussed.
+Security should be your first concern when you start your Power Platform adoption, not an afterthought. Ignoring security requirements can lead to serious legal, financial, and business risks, and delays in your project. It can also affect the overall scalability and performance of the solution. Make security a priority from day one and consider some of the security impacts on scalability, performance, compliance, rollout plans, reporting, and operational aspects, along with specific examples from each product that build on the concepts we discussed.
 
 ## Next steps
 
-A comprehensive security strategy for Power Platform adoption creates a framework which at its core ensures protection of sensitive data, compliance with regulatory standards, and supports enterprise scalability. To develop your security strategy, start with
+A comprehensive security strategy for Power Platform adoption creates a framework that ensures protection of sensitive data, compliance with regulatory standards, and supports enterprise scalability. To develop your security strategy, start with
 
 > [!div class="nextstepaction"]
 > [Manage your security posture](security-posture-management.md)

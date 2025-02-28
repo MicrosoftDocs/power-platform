@@ -1,13 +1,14 @@
 ---
 title: Establish a Center of Excellence with governance patterns and practices
 description: Guidance for establishing a Center of Excellence with governance patterns and practices
+#customer intent: As an IT admin, I want to establish a Center of Excellence with governance patterns and practices so that I can manage and scale the Power Platform effectively.
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/28/2025
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: sericks
+ms.reviewer: pankajsharma2087
 ---
 
 # Establish a Center of Excellence with governance patterns and practices
@@ -37,7 +38,7 @@ Typical objectives for establishing a Center of Excellence with governance patte
 - **Develop a comprehensive data governance framework**: Ensure data quality, security, and compliance with relevant regulations by establishing a robust data governance framework. Define data ownership, access controls, and data lifecycle management.
 - **Govern data connectivity and usage**: Implement policies and controls to govern data connectivity and usage and ensure that data is accessed and used appropriately, maintaining data integrity and security.
 - **Safeguard data and facilitate informed decision making**: Establish privacy policies to protect sensitive data and ensure compliance with data protection regulations. Provide tools and resources to help users make informed decisions about data usage.
-- **Define data domains and stewards**: Ensures accountability and effective data management by identify and define data domains within the organization and assign data stewards to oversee and manage these domains. 
+- **Define data domains and stewards**: Ensure accountability and effective data management by identifying and defining data domains within the organization and assigning data stewards to oversee and manage these domains.
 - **Define metrics and data-driven improvements**: Establish metrics to measure the effectiveness of governance practices and drive continuous improvement. Use data-driven insights to refine and enhance governance policies.
 - **Drive reusability and standardization**: Increase visibility into applications and best practices to promote reusability and standardization. This helps in boosting compliance and ensuring consistent quality across the organization.
 - **Develop a decision matrix for platform and license selection**: Develop a decision matrix to guide the selection of appropriate platforms and licenses based on specific use cases and requirements. A decision matrix can help with optimal resource allocation and cost management.
@@ -45,7 +46,7 @@ Typical objectives for establishing a Center of Excellence with governance patte
 
 ## Measurable key results
 
-Key results are specific, quantifiable outcomes that indicate progress towards achieving the strategic objectives. They provide clear benchmarks for success and help in tracking performance. Defining key results is necessary because they offer a way to measure the effectiveness of the initiatives and ensure that the objectives are being met. Key results should be realistic, time-bound, and directly linked to the objectives. 
+Key results are specific, quantifiable outcomes that indicate progress towards achieving the strategic objectives. They provide clear benchmarks for success and help in tracking performance. Defining key results is necessary because they offer a way to measure the effectiveness of the initiatives and ensure that the objectives are met. Key results should be realistic, time-bound, and directly linked to the objectives. 
 
 Typical key results, aligned with some of the [objectives](#objectives), for establishing a Center of Excellence with governance patterns and practices are:
 
@@ -80,7 +81,7 @@ Typical key results, aligned with some of the [objectives](#objectives), for est
 
 ## Key initiatives
 
-Initiatives are the specific actions or projects that need to be implemented to achieve the objectives. They outline what needs to be done in the immediate term, in the next year and in the next three years. Initiatives provide a roadmap for action and ensure that there's a clear plan in place to reach the objectives. Initiatives should be actionable, prioritized, and aligned with the key results. 
+Initiatives are the specific actions or projects that need to be implemented to achieve the objectives. They outline what needs to be done in the immediate term, in the next year, and in the next three years. Initiatives provide a roadmap for action and ensure that there's a clear plan in place to reach the objectives. Initiatives should be actionable, prioritized, and aligned with the key results. 
 
 Typical initiatives, aligned with some of the [objectives](#objectives), for establishing a Center of Excellence with governance patterns and practices are:
 

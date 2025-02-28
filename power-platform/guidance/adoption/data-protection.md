@@ -1,28 +1,30 @@
 ---
-title: Assess your security posture
-description: Guidance for assessing your Power Platform security posture
+title: Secure Data protection
+description: Learn key strategies and best practices for data protection and privacy within Power Platform to ensure security and compliance.
+#customer intent: As a Power Platform user, I want to understand data protection strategies in Power Platform so that I can ensure security and compliance.
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: conceptual
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: sericks
+ms.reviewer: pankajsharma2087
 ms.date: 02/28/2025
 ---
 
-# Data protection
+# Secure Data protection
 
-In today's digital landscape, data protection and privacy are paramount concerns for organizations leveraging Power Platform to build and deploy business applications. Ensuring the security and confidentiality of sensitive data is not only a regulatory requirement but also a critical factor in maintaining customer trust and safeguarding organizational assets.
+In today's digital landscape, data protection and privacy are paramount concerns for organizations using Power Platform to build and deploy business applications. Ensuring the security and confidentiality of sensitive data isn't only a regulatory requirement but also a critical factor in maintaining customer trust and safeguarding organizational assets.
 
-This article explores key strategies and best practices for data protection and privacy within Power Platform.
+This article covers key strategies and best practices for data protection and privacy within Power Platform.
 
-Data protection involves implementing measures to secure data from unauthorized access, breaches, and other threats. Privacy, on the other hand, focuses on ensuring that personal and sensitive information is handled in compliance with legal and regulatory requirements, and that individuals' rights to privacy are respected.
+## Data protection
+Data protection involves implementing measures to secure data from unauthorized access, breaches, and other threats. Privacy focuses on ensuring that personal and sensitive information is handled in compliance with legal and regulatory requirements, and that individuals' rights to privacy are respected.
 
 ## Data residency
 
-A Microsoft Entra tenant houses information that's relevant to an organization and its security. When a Microsoft Entra tenant signs up for Power Platform services, the tenant's selected country or region is mapped to the most suitable Azure geography where a Power Platform deployment exists. Power Platform stores customer data in the tenant's assigned Azure geography, or home geo, except where organizations deploy services in multiple regions. Learn more about [data storage and governance in Power Platform](/power-platform/admin/security/data-storage)
+A Microsoft Entra tenant houses information that's relevant to an organization and its security. When a Microsoft Entra tenant signs up for Power Platform services, the tenant's selected country or region is mapped to the most suitable Azure geography where a Power Platform deployment exists. Power Platform stores customer data in the tenant's assigned Azure geography, or home geo, except where organizations deploy services in multiple regions. Learn more about [data storage and governance in Power Platform](/power-platform/admin/security/data-storage).
 
-For multinational companies with employees and customers distributed around the world, you can create and manage environments specific to your global regions. You can [create an environment in a different region](/power-platform/admin/regions-overview) than where your tenant resides. Local environments can provide quicker data access for users in that region. Be sure to read [A multi-environment deployment](/power-platform/admin/multiple-online-environments-tenants#a-multi-environment-deployment) to understand the features of multiple environments.
+For multinational companies with employees and customers distributed around the world, you can create and manage environments specific to your global regions. You can [create an environment in a different region](/power-platform/admin/regions-overview) than where your tenant resides. Local environments can provide quicker data access for users in that region. Learn more about the features of multiple environments in [A multi-environment deployment](/power-platform/admin/multiple-online-environments-tenants#a-multi-environment-deployment) to understand the features of multiple environments.
 
 ## Data segregation
 
@@ -32,7 +34,7 @@ Learn more: [Azure customer data protection](/azure/security/fundamentals/protec
 
 ## Data encryption
 
-Data is an organization’s most valuable and irreplaceable asset, and encryption serves as the last and strongest line of defence in a multi-layered data security strategy. Microsoft business cloud services and products use encryption to safeguard customer data and help you maintain control over it.
+Data is an organization’s most valuable and irreplaceable asset, and encryption serves as the last and strongest line of defense in a multi-layered data security strategy. Microsoft business cloud services and products use encryption to safeguard customer data and help you maintain control over it.
 
 Power Platform encrypts data both at rest and in transit with a strong Microsoft-managed key by default.
 
@@ -41,7 +43,7 @@ Learn more:
 - [About data encryption](/power-platform/admin/about-encryption)
 - [Data protection](/power-platform/admin/wp-compliance-data-privacy#data-protection)
 
-For organizations requiring greater control over their data security and compliance, customer managed keys (CMK) ensure that data is not only protected both in transit and at rest, but also give organizations control over their encryption keys for enhancing data security. All customer data stored in Power Platform is encrypted at-rest with strong Microsoft-managed encryption keys by default. Microsoft stores and manages the database encryption key for all your data so you don't have to. However, Power Platform provides this customer-managed encryption key (CMK) for your added data protection control where you can self-manage the database encryption key that is associated with your Microsoft Dataverse environment. This allows you to rotate or swap the encryption key on demand, and also allows you to prevent Microsoft's access to your customer data when you revoke the key access to our services at any time.
+For organizations requiring greater control over their data security and compliance, customer managed keys (CMK) ensure that data isn't only protected both in transit and at rest, but also give organizations control over their encryption keys for enhancing data security. All customer data stored in Power Platform is encrypted at-rest with strong Microsoft-managed encryption keys by default. Microsoft stores and manages the database encryption key for all your data so you don't have to. However, Power Platform provides this customer-managed encryption key (CMK) for your added data protection control where you can self-manage the database encryption key that is associated with your Microsoft Dataverse environment. This allows you to rotate or swap the encryption key on demand, and also allows you to prevent Microsoft's access to your customer data when you revoke the key access to our services at any time.
 
 Learn more:
 
@@ -54,48 +56,48 @@ Power Platform Data Loss Prevention (DLP) policies are rules and guidelines desi
 
 Establishing a Power Platform Data Loss Prevention (DLP) policy strategy is crucial to protect sensitive information, ensure regulatory compliance, and mitigate the risk of data breaches and unauthorized data sharing:
 
-> [!div class="nextstepaction"]
-> [Establishing a DLP strategy](dlp-strategy.md)
+Learn more:
+- [Establishing a DLP strategy](/powerplatform/guidance/adoption/dlp-strategy.md)
 
 ## Cross-tenant inbound and outbound restrictions
 
-[Tenant isolation](/power-platform/admin/cross-tenant-restriction) is a security feature that helps you control and restrict how connectors that use Microsoft Entra ID authentication can access data from other tenants. This feature is particularly useful for organizations that need to maintain strict data boundaries between various subsidiaries or external partners.
+[Tenant isolation](/power-platform/admin/cross-tenant-restriction) is a security feature that helps you control and restrict how connectors that use Microsoft Entra ID authentication can access data from other tenants. This feature is useful for organizations that need to maintain strict data boundaries between various subsidiaries or external partners.
 
-By default, tenant isolation is off and connectors can access data across tenants unless you have other data policies in place. Tenant isolation applies to all connectors that use Microsoft Entra ID authentication.
+By default, tenant isolation is off, and connectors can access data across tenants unless you have other data policies in place. Tenant isolation applies to all connectors that use Microsoft Entra ID authentication.
 
-When configuring tenant isolation, it's important to consider the specific data access requirements and collaboration needs of each tenant. Ensure that the isolation settings align with your organization's security policies and compliance requirements. Additionally, regularly review and update the isolation configurations to adapt to changing business needs and security threats. Properly configuring tenant isolation helps prevent unauthorized data access, reduces the risk of data breaches, and ensures that sensitive information remains within the intended boundaries.
+When configuring tenant isolation, consider the specific data access requirements and collaboration needs of each tenant. Ensure that the isolation settings align with your organization's security policies and compliance requirements. Additionally, regularly review and update the isolation configurations to adapt to changing business needs and security threats. Properly configuring tenant isolation helps prevent unauthorized data access, reduces the risk of data breaches, and ensures that sensitive information remains within the intended boundaries.
 
 ## Network security
 
-Power Platform service architecture lets you build end-to-end business app solutions that can use data from both internal and external services with connectors. Many solutions can also connect to your organization’s on-premises and cloud resources. In this section of the paper, we’ll explore the network security features of Power Platform and help you learn how to fit Power Platform services and solutions into your network security design.
+Power Platform service architecture lets you build end-to-end business app solutions that use data from both internal and external services with connectors. Many solutions also connect to your organization’s on-premises and cloud resources. In this section, we explore the network security features of Power Platform and help you learn how to fit Power Platform services and solutions into your network security design.
 
 ### Network service tags
 
-Microsoft Power Platform is a cloud-based service requiring connectivity to the internet. Microsoft published a set of Ips, host names, and service tags representing Power Platform services for you to allow access to. To limit the susceptibility of attacks, these values must be configured in the Firewalls or added to browser proxy settings to access the respective endpoints.
+Microsoft Power Platform is a cloud-based service requiring connectivity to the internet. Microsoft publishes a set of IPs, host names, and service tags representing Power Platform services for you to allow access to. To limit the susceptibility of attacks, configure these values in the firewalls or add them to browser proxy settings to access the respective endpoints.
 
 A service tag represents a group of IP address prefixes from a given Azure service. Microsoft manages the address prefixes encompassed by the service tag and automatically updates the service tag as addresses change, minimizing the complexity of frequent updates to network security rules.
 
 Refer to the [full list of available service tags](/azure/virtual-network/service-tags-overview#available-service-tags) to configure your network security rules.
 
-Connectors require access to the outbound IP addresses in your datacenter region. If your environment or firewall blocks these addresses, the connectors will not function. While most connectors use HTTPS port 443, some may use other protocols. Check the specific requirements of the connectors you use. IP addresses and service tags vary based on the region and the environment where the app or flow is located. Refer to the [full list of Power Platform IP addresses and service tags](/connectors/common/outbound-ip-addresses#power-platform) to correctly set up your allow list.
+Connectors require access to the outbound IP addresses in your datacenter region. If your environment or firewall blocks these addresses, the connectors doesn't function. While most connectors use HTTPS port 443, some might use other protocols. Check the specific requirements of the connectors you use. IP addresses and service tags vary based on the region and the environment where the app or flow is located. Refer to the [full list of Power Platform IP addresses and service tags](/connectors/common/outbound-ip-addresses#power-platform) to correctly set up your allowlist.
 
 ### Connecting to data sources
 
-Power Platform connects and authenticates to data sources using a variety of connectors that facilitate seamless integration with external systems and services.
+Power Platform connects and authenticates to data sources using various connectors that facilitate seamless integration with external systems and services.
 
 Learn more: [Connecting and authenticating to data sources](/power-platform/admin/security/connect-data-sources)
 
 ### Virtual Network support
 
-With [Azure Virtual Network](/azure/virtual-network/virtual-networks-overview) support for Power Platform, you can integrate Power Platform with resources inside your virtual network without exposing them over the public internet. Virtual Network support uses [Azure subnet delegation](/azure/virtual-network/subnet-delegation-overview) to manage outbound traffic from Power Platform at runtime. Using Azure Subnet delegation avoids the need for protected resources to be available over the internet to integrate with Power Platform. With virtual network support, Power Platform components can call resources owned by your enterprise inside your network, whether they're hosted in Azure or on-premises, and use plug-ins and connectors to make outbound calls.
+With [Azure Virtual Network](/azure/virtual-network/virtual-networks-overview) support for Power Platform, you can integrate Power Platform with resources inside your virtual network without exposing them over the public internet. Virtual Network support uses [Azure subnet delegation](/azure/virtual-network/subnet-delegation-overview) to manage outbound traffic from Power Platform at runtime. Using Azure subnet delegation avoids the need for protected resources to be available over the internet to integrate with Power Platform. With virtual network support, Power Platform components can call resources owned by your enterprise inside your network, whether they're hosted in Azure or on-premises, and use plug-ins and connectors to make outbound calls.
 
-To mitigate the risk of data exfiltration through plug-ins and connectors, you can leverage network security to protect both inbound and outbound traffic. Power Platform supports Virtual Network (vNet) integration for both [connectors and Dataverse plug-ins including Microsoft Copilot Studio integrations](/power-platform/admin/vnet-support-overview#supported-services), providing private, outbound connectivity from the Power Platform to resources within your vNet. By limiting the resources in your Power Platform environment to only access an Azure Virtual Network, you can ensure that your Power Platform resources are protected without overexposure to the internet or unauthorized access, enhancing security when extending your business processes.
+To mitigate the risk of data exfiltration through plug-ins and connectors, you can use network security to protect both inbound and outbound traffic. Power Platform supports Virtual Network (vNet) integration for both [connectors and Dataverse plug-ins including Microsoft Copilot Studio integrations](/power-platform/admin/vnet-support-overview#supported-services), providing private, outbound connectivity from the Power Platform to resources within your vNet. By limiting the resources in your Power Platform environment to only access an Azure Virtual Network, you can ensure that your Power Platform resources are protected without overexposure to the internet or unauthorized access, enhancing security when extending your business processes.
 
 ### IP firewall for Power Platform environments
 
 The [IP firewall](/power-platform/admin/ip-firewall) feature in Power Platform provides an additional layer of security by controlling inbound traffic to your Power Platform environments. This feature allows administrators to define and enforce IP-based access controls, ensuring that only authorized IP addresses can access the environment. When enabled, the IP firewall evaluates the IP address of each request in real time and allows or denies access based on the configured IP ranges.
 
-For example, if you enable the IP firewall and restrict access to Dataverse to only your office network IP addresses, users won't be able to access Dataverse from other locations. The IP firewall also prevents token replay attacks, ensuring that access tokens cannot be used from unauthorized network locations. Any such request will fail. Since the IP firewall operates at the network layer, it impacts both apps and APIs that use Dataverse. You can configure the IP firewall for each environment, allowing you to determine which environments require stricter protection. For example, you might permit unrestricted access to your development environments while limiting access to your test and production environments.
+For example, if you enable the IP firewall and restrict access to Dataverse to only your office network IP addresses, users can't access Dataverse from other locations. The IP firewall also prevents token replay attacks, ensuring that access tokens can't be used from unauthorized network locations. Any such request fails. Since the IP firewall operates at the network layer, it impacts both apps and APIs that use Dataverse. You can configure the IP firewall for each environment, allowing you to determine which environments require stricter protection. For example, you might permit unrestricted access to your development environments while limiting access to your test and production environments.
 
 ### Prevent session hijacking exploits in Dataverse
 
@@ -118,7 +120,7 @@ For connections that you create for Power Apps and Power Automate, you can limit
 
 With virtual network data gateways, Power BI and Power Platform dataflows can connect to data services in an Azure Virtual Network without needing an on-premises data gateway on a virtual machine inside the virtual network. Find [supported data services for Power BI datasets](/data-integration/vnet/use-data-gateways-sources-power-bi#supported-azure-data-services) and [supported data sources for Power Platform dataflows](/data-integration/vnet/data-gateway-power-platform-dataflows#supported-data-sources).
 
-[Azure ExpressRoute](/power-platform/guidance/expressroute/overview) offers an advanced way to connect your on-premises network to Microsoft cloud services using private connectivity. You can use one ExpressRoute connection to access multiple online services, such as Power Platform, Dynamics 365, Microsoft 365, and Azure, without traversing the public Internet. ExpressRoute requires significant planning and configuration and costs more for the ExpressRoute service and the connectivity provider.
+[Azure ExpressRoute](/power-platform/guidance/expressroute/overview) offers an advanced way to connect your on-premises network to Microsoft cloud services using private connectivity. You can use one ExpressRoute connection to access multiple online services, such as Power Platform, Dynamics 365, Microsoft 365, and Azure, without traversing the public internet. ExpressRoute requires significant planning and configuration and costs more for the ExpressRoute service and the connectivity provider.
 
 ## Manage Microsoft access to customer data with Customer Lockbox
 
@@ -133,17 +135,17 @@ Once access is granted to Microsoft, any action taking place in the lockbox-prot
 
 ## Control which apps are allowed in your environment
 
-Protect against data exfiltration by controlling which apps can run in your Dataverse environment. These safeguards prevent unauthorized removal of sensitive information, helping your business maintain continuity and comply with regulations. [Learn more about app access control](/power-platform/admin/control-app-access-environment).
+Protect against data exfiltration by controlling which apps can run in your Dataverse environment. These safeguards prevent unauthorized removal of sensitive information, helping your business maintain continuity and comply with regulations. [Learn more about app access control](/power-platform/admin/control-app-access-environment)
 
-## Protect sensitive information using data masking
+## Protect sensitive information with data masking
 
-For scenarios that leverage PII such as credit card numbers or social security numbers, you can create [data masking rules](/power-platform/admin/create-manage-masking-rules) to ensure that your organization’s and customer’s sensitive data is protected. With data masking, also referred to as de-identification or obfuscation, sensitive data is replaced with masked strings, ensuring that the original values remain hidden. Only authorized users can access unmasked data, only one record at a time, ensuring that data is treated with utmost sensitivity. Safeguard your data by leveraging an existing, pre-defined rule, or creating your own as a solution.
+For scenarios that use PII such as credit card numbers or social security numbers, create [data masking rules](/power-platform/admin/create-manage-masking-rules) to ensure that your organization’s and customer’s sensitive data is protected. With data masking, also referred to as de-identification or obfuscation, sensitive data is replaced with masked strings, ensuring that the original values remain hidden. Only authorized users can access unmasked data, one record at a time, ensuring that data is treated with utmost sensitivity. Safeguard your data by using an existing, predefined rule, or creating your own as a solution.
 
 ## Use Microsoft Purview for data discovery and classification
 
 The integration of [Microsoft Purview with Microsoft Dataverse](/purview/register-scan-dataverse) enables powerful security capabilities. With the Microsoft Purview Data Map, you can benefit from automated data discovery and sensitive data classification, gain a deeper understanding of your business applications data estate, safeguard your data, and enhance your risk and compliance posture.
 
-With Microsoft Purview, you can create an up-to-date view of all your data sources, including the data in your Power Platform Dataverse environments. Microsoft Purview can sort your data assets by built-in or custom categories to help you understand what data your makers have in their Dataverse environments. For example, Microsoft Purview could tell you if a maker has added sensitive data like government IDs or credit card numbers. Then you can either tell the maker how to change the data to follow your policies or use safeguards to secure it.
+With Microsoft Purview, create an up-to-date view of all your data sources, including the data in your Power Platform Dataverse environments. Microsoft Purview sorts your data assets by built-in or custom categories to help you understand what data your makers have in their Dataverse environments. For example, Microsoft Purview tells you if a maker has added sensitive data like government IDs or credit card numbers. Then you can either tell the maker how to change the data to follow your policies or use safeguards to secure it.
 
 ## Dataverse security
 
@@ -173,11 +175,11 @@ In conclusion, ensuring robust security within Power Platform is a critical resp
 
 ## Next steps
 
-Configuring and setting up the identity and access management (IAM) policies in line with your organizations security posture ensures the security and integrity of your data and applications. Proper IAM policies help control who can access your Power Platform environment, what actions they can perform, and under what conditions. Well-defined IAM policies support compliance with regulatory requirements and help maintain a secure and efficient operational environment, safeguarding your organization's assets and sensitive information.
+Configuring and setting up the identity and access management (IAM) policies in line with your organization's security posture ensures the security and integrity of your data and applications. Proper IAM policies help control who can access your Power Platform environment, what actions they can perform, and under what conditions. Well-defined IAM policies support compliance with regulatory requirements and help maintain a secure and efficient operational environment, safeguarding your organization's assets and sensitive information.
 
-> [!div class="nextstepaction"]
-> [Configure identity and access management](conditional-access.md.md)
+Learn more:
+- [Configure identity and access management](/power-platform/guidance/adoption/conditional-access.md)
 
-## Resources
+
 
 <!-- TODO -->

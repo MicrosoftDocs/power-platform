@@ -1,33 +1,33 @@
 ---
-title: "Track user access - Microsoft Power Platform | MicrosoftDocs"
-description: "Power Apps and Power Automate activities can be tracked and viewed from the Office 365 Security and Compliance Center. This allows tracking when apps or flows are created, edited, or deleted along with other key activities."
+title: Track user access
+description: Power Apps and Power Automate activities can be tracked and viewed from the Office 365 Security and Compliance Center. This allows tracking when apps or flows are created, edited, or deleted along with other key activities.
+#customer intent: As a Power Platform user, I want to track Power Apps and Power Automate activities so that I can monitor user access and actions.
 author: manuelap-msft
-
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/09/2020
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: sericks
+ms.reviewer: pankajsharma2087
 search.audienceType: 
   - admin
 ---
 # Track user access
 
-Power Apps and Power Automate activities can be tracked and viewed from the [Office 365 Security & Compliance Center](https://protection.office.com). This allows tracking when apps or flows are created, edited, or deleted along with other key activities. These logs can be used manually for discovery and review and can also be accessed via API to automate more complex scenarios.  
+You can view and track Power Apps and Power Automate activities from the [Office 365 Security & Compliance Center](https://protection.office.com). This lets you track when apps or flows are created, edited, or deleted along with other key activities. These logs can be used manually for discovery and review and can also be accessed via API to automate more complex scenarios.
 
 The following are the Power Automate and Power Apps activities that are logged:
 
 :::row:::
-   :::column span="":::
+:::column span="6":::
       **Power Automate**
    :::column-end:::
-   :::column span="":::
+:::column span="6":::
       **Power Apps**
    :::column-end:::
 :::row-end:::
 :::row:::
-    :::column span="":::
+:::column span="6":::
         - Created flow
         - Edited flow
         - Deleted flow
@@ -36,7 +36,7 @@ The following are the Power Automate and Power Apps activities that are logged:
         - Started a paid trial
         - Renewed a paid trial
    :::column-end:::
-   :::column span="":::
+:::column span="6":::
         - Created app
         - Edited/saved app
         - Published app
@@ -53,14 +53,14 @@ The following are the Power Automate and Power Apps activities that are logged:
 > [!IMPORTANT]
 > In order to take advantage of the activity logging, you must turn on audit logging in the tenant before data is available for viewing.
 
-This is completed via the following PowerShell commands. More information: [Turn Audit Log Search On or Off](/microsoft-365/compliance/turn-audit-log-search-on-or-off). It might take several hours after you turn on audit log search before you can return results when you search the audit log.
+Complete this via the following PowerShell commands. More information: [Turn Audit Log Search On or Off](/microsoft-365/compliance/turn-audit-log-search-on-or-off). It might take several hours after you turn on audit log search before you can return results when you search the audit log.
 
 ```powershell
 Enable-OrganizationCustomization
 Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $true
 ```
 
-A Microsoft Power Platform or Dynamics 365 Service admin can be granted permission to view audit log entries.
+A Microsoft Power Platform or Dynamics 365 Service Admin can be granted permission to view audit log entries.
 
 ```powershell
 Add-RoleGroupMember "Compliance Management" -Member user1

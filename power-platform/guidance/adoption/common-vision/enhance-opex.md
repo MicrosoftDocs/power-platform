@@ -1,18 +1,19 @@
 ---
 title: Enhance operational efficiency
-description: Guidance for enhancing operational efficiency
+description: Enhance operational efficiency with Power Platform by streamlining processes, automating tasks, and optimizing resources.
+#customer intent: As a business leader, I want to enhance operational efficiency with Power Platform so that I can streamline processes, automate tasks, and optimize resources.
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/28/2025
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: sericks
+ms.reviewer: pankajsharma2087
 ---
 
 # Enhance operational efficiency
 
-This article describes a common vision for Power Platform - enhancing operational efficiency. It follows a [structured framework](../vision.md) that includes defining clear objectives, measurable key results, and actionable initiatives. This article aims to guide you in creating your own vision for Power Platform adoption.
+This article describes a common vision for Power Platform—enhancing operational efficiency. It follows a [structured framework](../vision.md) that includes defining clear objectives, measurable key results, and actionable initiatives. This article aims to guide you in creating your own vision for Power Platform adoption.
 
 ## Vision
 
@@ -20,9 +21,9 @@ Enhancing operational efficiency is a common vision for Power Platform adoption 
 
 ## Objectives
 
-Objectives are the key themes or focus areas that the strategy aims to achieve. They're broad, overarching goals that align with the organizational vision and priorities. Objectives provide direction and set the stage for the initiatives and key results. Objectives help ensure that everyone in the organization understands what the strategy is aiming to accomplish and why it's important. 
+Objectives are the key themes or focus areas that the strategy aims to achieve. They're broad, overarching goals that align with the organizational vision and priorities. Objectives provide direction and set the stage for the initiatives and key results. Objectives help ensure that everyone in the organization understands what the strategy aims to accomplish and why it's important.
 
-Typical objectives for enhancing operational efficiency are:
+Typical objectives for enhancing operational efficiency include:
 
 - **Optimize business processes and align effective resourcing**: Streamline business processes and ensure resources are allocated effectively to maximize efficiency and productivity.
 - **Digitize manual processes and shift to value creation tasks**: Automate manual processes to free up time for employees to focus on higher-value tasks.
@@ -34,7 +35,7 @@ Typical objectives for enhancing operational efficiency are:
 
 ## Measurable key results
 
-Key results are specific, quantifiable outcomes that indicate progress towards achieving the strategic objectives. They provide clear benchmarks for success and help in tracking performance. Defining key results is necessary because they offer a way to measure the effectiveness of the initiatives and ensure that the objectives are being met. Key results should be realistic, time-bound, and directly linked to the objectives. 
+Key results are specific, quantifiable outcomes that indicate progress towards achieving the strategic objectives. They provide clear benchmarks for success and help in tracking performance. Defining key results is necessary because they offer a way to measure the effectiveness of the initiatives and ensure that the objectives are met. Key results should be realistic, time-bound, and directly linked to the objectives. 
 
 Typical key results, aligned with some of the [objectives](#objectives), for enhancing operational efficiency are:
 
@@ -57,7 +58,7 @@ Typical key results, aligned with some of the [objectives](#objectives), for enh
 
 ## Key initiatives
 
-Initiatives are the specific actions or projects that need to be implemented to achieve the objectives. They outline what needs to be done in the immediate term, in the next year and in the next three years. Initiatives provide a roadmap for action and ensure that there's a clear plan in place to reach the objectives. Initiatives should be actionable, prioritized, and aligned with the key results. 
+Initiatives are the specific actions or projects that need to be implemented to achieve the objectives. They outline what needs to be done in the immediate term, in the next year, and in the next three years. Initiatives provide a roadmap for action and ensure that there's a clear plan in place to reach the objectives. Initiatives should be actionable, prioritized, and aligned with the key results. 
 
 Typical initiatives, aligned with some of the [objectives](#objectives), for enhancing operational efficiency are:
 

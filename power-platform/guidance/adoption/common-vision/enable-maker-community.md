@@ -1,38 +1,39 @@
 ---
 title: Nurture a maker and champion community
-description: Guidance for nurturing a maker and champion community
+description: Learn how to nurture a maker and champion community with Power Platform. Discover strategies to foster innovation and collaboration.
+#customer intent: As a Power Platform admin, I want to build a thriving low-code community so that I can foster innovation and collaboration.
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/28/2025
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: sericks
+ms.reviewer: pankajsharma2087
 ---
 
 # Nurture a maker and champion community
 
-This article describes a common vision for Power Platform - nurturing a maker and champion community. It follows a [structured framework](../vision.md) that includes defining clear objectives, measurable key results, and actionable initiatives. This article aims to guide you in creating your own vision for Power Platform adoption.
+This article describes a common vision for Power Platform—nurturing a maker and champion community. It follows a [structured framework](../vision.md) that includes defining clear objectives, measurable key results, and actionable initiatives. This article aims to guide you in creating your own vision for Power Platform adoption.
 
 ## Vision
 
-Nurturing a maker and champion community is a common vision for Power Platform adoption because it fosters a culture of innovation, collaboration, and continuous improvement. A network of enthusiastic and knowledgeable users, organizations can drive widespread adoption and maximize the platform's potential. Champions and makers serve as advocates, mentors, and problem-solvers, helping to spread best practices and support their peers.
+Nurturing a maker and champion community is a common vision for Power Platform adoption because it fosters a culture of innovation, collaboration, and continuous improvement. With a network of enthusiastic and knowledgeable users, organizations can drive widespread adoption and maximize the platform's potential. Champions and makers serve as advocates, mentors, and problem-solvers, helping to spread best practices and support their peers.
 
 This community-driven approach empowers employees to take ownership of their projects, reduces reliance on IT, and accelerates the development of solutions. It also encourages cross-team collaboration, leading to more innovative and impactful outcomes. By recognizing and rewarding contributions, organizations can motivate and retain talent, ensuring sustained engagement and growth.
 
-A thriving maker and champion community helps create a supportive environment where employees feel empowered to experiment, learn, and innovate. This community can ultimately drive the organization's digital transformation and achieving strategic goals.
+A thriving maker and champion community helps create a supportive environment where employees feel empowered to experiment, learn, and innovate. This community can ultimately drive the organization's digital transformation and achieve strategic goals.
 
 ## Objectives
 
-Objectives are the key themes or focus areas that the strategy aims to achieve. They're broad, overarching goals that align with the organizational vision and priorities. Objectives provide direction and set the stage for the initiatives and key results. Objectives help ensure that everyone in the organization understands what the strategy is aiming to accomplish and why it's important. 
+Objectives are the key themes or focus areas that the strategy aims to achieve. They're broad, overarching goals that align with the organizational vision and priorities. Objectives provide direction and set the stage for the initiatives and key results. Objectives ensure that everyone in the organization understands what the strategy aims to accomplish and why it's important.
 
-Typical objectives for nurturing a maker and champion community are:
+Typical objectives for nurturing a maker and champion community include:
 
 - **Build a thriving low-code community**: Foster a vibrant and engaged low-code community that encourages incremental innovation and widespread participation.
 - **Identify and recruit potential champions**: Build a network of enthusiastic and knowledgeable users who can advocate for the Power Platform and support their peers.
 - **Increase awareness**:  Increase awareness and understanding of the Power Platform through targeted evangelism and comprehensive training programs.
 - **Create a maker onboarding program**: Streamline the onboarding process for new makers, ensuring they have the tools and knowledge to succeed.
-- **Empower developer and maker community with process and resource clarity**: Provide clear guidance and resources to enable developers and makers to create impactful solutions. 
+- **Empower developer and maker community with process and resource clarity**: Provide clear guidance and resources to enable developers and makers to create effective solutions.
 - **Provide specialized training and resources**: Implement comprehensive upskilling programs to ensure users are proficient in using Power Platform.
 - **Showcase success stories and best practices**: Inspire and guide the community by highlighting successful projects and effective strategies.
 - **Develop a centralized communication platform**: Provide a single source of truth for all Power Platform-related information. Ensure seamless communication and collaboration within the maker and champion community.
@@ -48,14 +49,14 @@ Typical objectives for nurturing a maker and champion community are:
 
 ## Measurable key results
 
-Key results are specific, quantifiable outcomes that indicate progress towards achieving the strategic objectives. They provide clear benchmarks for success and help in tracking performance. Defining key results is necessary because they offer a way to measure the effectiveness of the initiatives and ensure that the objectives are being met. Key results should be realistic, time-bound, and directly linked to the objectives. 
+Key results are specific, quantifiable outcomes that indicate progress towards achieving the strategic objectives. They provide clear benchmarks for success and help in tracking performance. Defining key results is necessary because they offer a way to measure the effectiveness of the initiatives and ensure that the objectives are met. Key results should be realistic, time-bound, and directly linked to the objectives. 
 
-Typical key results, aligned with some of the [objectives](#objectives), for nurturing a maker and champion community are:
+Typical key results, aligned with some of the [objectives](#objectives), for nurturing a maker and champion community include:
 
 - **Build a thriving low-code community**:
     - Build a thriving low-code community where a culture of incremental innovation is fostered, with ___% of employees participating in low-code initiatives. 
     - Host quarterly training workshops on Power Platform features with a goal of 80% of registered members attending. 
-- **Create a Maker onboarding program**:
+- **Create a maker onboarding program**:
     - Enable citizen developers through a standard onboarding process and training, increasing IT capacity by ___% and decreasing time to value by ___%. 
 - **Provide specialized training and resources**:
     - Encourage makers to obtain certifications, like Microsoft Certified: Power Platform fundamentals, with a target of __ new certifications per quarter. 
@@ -72,9 +73,9 @@ Typical key results, aligned with some of the [objectives](#objectives), for nur
 
 ## Key initiatives
 
-Initiatives are the specific actions or projects that need to be implemented to achieve the objectives. They outline what needs to be done in the immediate term, in the next year and in the next three years. Initiatives provide a roadmap for action and ensure that there's a clear plan in place to reach the objectives. Initiatives should be actionable, prioritized, and aligned with the key results. 
+Initiatives are the specific actions or projects that need to be implemented to achieve the objectives. They outline what needs to be done in the immediate term, in the next year and in the next three years. Initiatives provide a roadmap for action and ensure that there's a clear plan to reach the objectives. Initiatives should be actionable, prioritized, and aligned with the key results. 
 
-Typical initiatives, aligned with some of the [objectives](#objectives), for nurturing a maker and champion community are:
+Typical initiatives, aligned with some of the [objectives](#objectives), for nurturing a maker and champion community include:
 
 - **Build a thriving low-code community**:
     - Select potential champions from various departments based on their expertise and enthusiasm.
