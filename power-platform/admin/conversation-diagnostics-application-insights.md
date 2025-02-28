@@ -33,8 +33,8 @@ You can then use the conversation lifecycle events data from Dynamics 365 Custom
 
 ## Prerequisites
 
-- The environment should be a managed environment.
-- Power Apps, Power Automate, or Dynamics 365 license with premium use rights
+- Managed environment only.
+- Power Apps, Power Automate, or Dynamics 365 license with premium use rights.
 
 ## Pricing
 
