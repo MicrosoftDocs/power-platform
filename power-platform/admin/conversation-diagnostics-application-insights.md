@@ -4,7 +4,7 @@ description: Learn about how to...
 services: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/08/2023
+ms.date: 02/28/2025
 author: sericks007
 ms.subservice: admin
 ms.author: sericks
@@ -62,78 +62,9 @@ Before you perform a data export, create a connection between your Dynamics 365 
 
 After you've configured the data export setup, conversation lifecycle information for live chat, digital messaging, voice, and custom channel conversations is available in the Application Insights **Traces** table.
 
-### Conversation scenarios
-The **Traces** table contains data about the following conversation scenarios.
+### Conversation diagnostics scenarios
 
-- **Category**: Conversation initiation 
-  - **Scenario**: Conversation is initialized 
-  - **Scenario**: Customer identified
-
-- **Category**: Virtual agent interaction
-  - **Scenario**: Virtual agent assigned
-  - **Scenario**: Conversation ended by virtual assistant
-  - **Scenario**: Virtual assistant escalation to human agent from virtual agent
-
-- **Category**:  Routing
-  - **Scenario**: Demand Classification
-  - **Scenario**: Queue assignment
-
-- **Category**:  Human agent interaction
-  - **Scenario**: Agent accepted
-  - **Scenario**: Agent rejected
-  - **Scenario**: Acceptance request timed out
-  - **Scenario**: Agent rejoined
-  - **Scenario**: Agent self-assignment
-
-- **Category**: Conversation completion
-  - **Scenario**: Conversation ended by customer
-  - **Scenario**: Conversation ended by agent
-  - **Scenario**: Agent session closed
-  - **Scenario**: Conversation abandoned by customer/customer disconnect
-  - **Scenario**: Conversation force close by supervisor
-  - **Scenario**: Conversation closed
- 
-### Conversation scenarios metadata
-The conversation scenarios in the **Traces** table contains has the following metadata.
-
--	Org ID
-- LiveWorkItem ID
--	Channel Type
--	Scenario Status (Started/Failed/Completed)
--	Timestamp
--	Duration (for completed scenarios)
--	Participant Type (human agent or virtual agent)
--	Active Directory User ID (where applicable)
-
-## Understand conversation logs metadata
-
-A description of the attributes displayed in Application Insights is as follows:
-
-- **Timestamp \[UTC\]**: The date and time at which the event is logged. 
-- **Message**: Indicates the scenario status the conversation lifecycle event. This can be Started, Failed, or Completed.
-    -   **Started**: Indicates that the conversation scenario started.
-    -   **Completed**: Indicates that the conversation scenario was successfully completed.
-    -   **Failed**: Indicates that the conversation scenario failed.
-- **customDimensions**: Contains the following metadata required for detailed debugging:
-    - **organizationId**: The unique identifier of the organization.
-    - **LiveWorkItemID**: The unique identifier of the conversation to which the message must be sent to.
-    - **Channel Type**: Indicates the channel through which the customer is sending messages.
-    - **Duration**: The time taken for the scenario to complete.
-    - **Participant Type**: Indicates if the conversation is assigned to a human agent or a bot.
-- **Operation\_name**: Indicates the conversation lifecycle event.
-- **Operation\_id**: The unique identifier of the root operation. This is the transaction ID of the conversation from Dynamics 365 Customer Service.
-- **Operation\_parentid**: The conversation ID of the conversation.
-- **Session\_id**: The instance of the user's interaction with the app.
-- **User\_id**: Represents the user of the application. This field is populated with the Active Directory user ID whenever the scenario includes human agents or bots. For all other scenarios, 0 is displayed.
-- **Severitylevel**: The trace severity level. This is set to 0.
-- **itemType**: The table that the record was retrieved from. This is always set to Trace.
-
-For example, in a scenario where a live chat conversation is assigned to a queue, the Traces table displays the following metadata:
-
--   The **ScenarioStarted** message, with the **Operation\_name**, QueueAssignment, and the timestamp at which the scenario started.
--   The **ScenarioCompleted** message, with the duration the application took for the scenario to be successfully completed as the scenario is a success, and the conversation is assigned to a queue.  
-      
-    ![The metadata when a live chat conversation is assigned to a queue.](media/live-chat-assigned-to-queue.png)
+Learn about conversation diagnostics scenarios and subscenarios in [Understand conversation diagnotics](/dynamics365/customer-service/administer/conversation-diagnostics-subscenarios).
 
 ## Access conversation logs from Application Insights
 
