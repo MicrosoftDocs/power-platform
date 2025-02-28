@@ -99,16 +99,12 @@
               href: adoption/operate-overview.md
             - name: Establish effective Application Lifecycle Management practices
               href: adoption/alm.md
+            - name: Gain insights into Power Platform adoption
+              href: adoption/observability.md
             - name: Report on resource usage
               href: adoption/resource-usage.md
-            - name: Track user access
-              href: adoption/access-usage.md
-            - name: Monitor Microsoft Dataverse usage
+            - name: Monitor license and capacity consumption
               href: adoption/cds-usage.md
-            - name: Monitor new connectors
-              href: adoption/new-connectors.md
-            - name: Set up sharing alerts and mitigations
-              href: adoption/sharing-alerts.md
             - name: Ensure data resilience
               href: adoption/data-resilience.md
             - name: Support
@@ -121,6 +117,8 @@
                   href: adoption/support-strategy-makers.md
                 - name: Support strategy - Maturity Levels
                   href: adoption/support-strategy-maturity.md
+            - name: Manage resistance and avoid organizational anti-patterns
+              href: adoption/manage-resistance.md
         - name: Ready
           items: 
             - name: Training and upskilling strategy

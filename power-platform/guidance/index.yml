@@ -97,16 +97,18 @@ productDirectory:
       # imageSrc should be square in ratio with no white space
       imageSrc: ./media/operate.svg
       links:
-        - url: /power-platform/guidance/adoption/support-strategy
-          text: Establish a support strategy
-        - url: /power-platform/guidance/adoption/observability
-          text: Observability
-        - url: /power-platform/guidance/adoption/data-resilience
-          text: Ensure data resilience
-        - url: /power-platform/guidance/adoption/alm
-          text: Establish effective Application Lifecycle Management practices
-        - url: /power-platform/guidance/adoption/manage-resistence
-          text: Manage resistance and avoid anti-patterns
+        - text: Establish effective Application Lifecycle Management practices
+          url: adoption/alm.md
+        - text: Gain insights into Power Platform adoption
+          url: adoption/observability.md
+        - text: Monitor license and capacity consumption
+          url: adoption/cds-usage.md
+        - text: Ensure data resilience
+          url: adoption/data-resilience.md
+        - text: Establish a support strategy
+          url: adoption/support-strategy.md
+        - text: Manage resistance and avoid organizational anti-patterns
+          url: adoption/manage-resistance.md
     - title: Ready
       # imageSrc should be square in ratio with no white space
       imageSrc: ./media/innovate.svg

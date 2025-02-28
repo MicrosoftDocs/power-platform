@@ -1,5 +1,5 @@
 ---
-title: Manage resistance and avoid IT silos
+title: Manage resistance and avoid organizational anti-patterns
 description: Guidance for managing resistance and avoiding IT silos
 author: manuelap-msft
 ms.component: pa-admin
@@ -10,7 +10,7 @@ ms.reviewer: sericks
 ms.date: 02/28/2025
 ---
 
-# Manage resistance and avoid IT silos
+# Manage resistance and avoid organizational anti-patterns
 
 Achieving success in significant changes to business practices, culture, or technology operations necessitates a growth mindset. Central to this mindset is the ability to embrace change and offer leadership even amidst uncertainty.
 
