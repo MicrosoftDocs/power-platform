@@ -89,4 +89,4 @@ The journey toward a modern, robust security posture doesn't end with the initia
 Mitigate potential security incidents before they escalate into significant breaches with effective threat detection. By implementing robust monitoring and alerting systems, you can quickly detect suspicious activities and respond promptly to protect your data and applications.
 
 > [!div class="nextstepaction"]
-> [Detect threats to your organization](threat-protection.md)
+> [Detect threats to your organization](threat-detection.md)
