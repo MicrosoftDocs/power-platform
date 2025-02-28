@@ -1,6 +1,6 @@
 ---
 title: Conversation diagnostics in Azure Application Insights (preview)
-description: Learn about how to...
+description: Learn about how to proactively monitor the system and allow developers to easily identify, diagnose, and fix problematic conversations, or seek swift support.
 services: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
@@ -12,6 +12,7 @@ ms.reviewer: sericks
 search.audienceType: 
   - admin
 ms.contributors:
+- nenellim
 - avkatiyar
 - Zeffin
 ---
@@ -22,7 +23,7 @@ ms.contributors:
 
 Conversation diagnostics logs each of the conversation lifecycle events, giving you a greater visibility into conversations-based operational telemetry of your organization.  This helps your support team to proactively monitor the system and allows developers to easily identify, diagnose, and fix problematic conversations, or seek swift support.
 
-Connect your Dynamics 365 Customer Service environment to an Azure Application Insights instance to collect and store conversation logs. For more information about Application Insights features and how they can be used to monitor your telemetry and diagnose failures, see [Application Insights Overview dashboard](/azure/azure-monitor/app/overview-dashboard) and [Diagnose failures using the Azure portal](/azure/azure-monitor/app/asp-net-exceptions#diagnose-failures-using-the-azure-portal).
+Connect your Dynamics 365 Customer Service environment to an Azure Application Insights instance to collect and store conversation logs. For more information about Application Insights features and how they can be used to monitor your telemetry and diagnose failures, go to [Application Insights Overview dashboard](/azure/azure-monitor/app/overview-dashboard) and [Diagnose failures using the Azure portal](/azure/azure-monitor/app/asp-net-exceptions#diagnose-failures-using-the-azure-portal).
 
 You can then use the conversation lifecycle events data from Dynamics 365 Customer Service in Application Insights to monitor system health, export, and combine it with additional data sets to build custom dashboards per your business needs.
 
@@ -33,8 +34,8 @@ You can then use the conversation lifecycle events data from Dynamics 365 Custom
 
 ## Prerequisites
 
-- Managed environment only.
-- Power Apps, Power Automate, or Dynamics 365 license with premium use rights.
+- Your environment must be a Managed Environment.
+- You must have a Power Apps, Power Automate, or a Dynamics 365 license with premium use rights.
 
 ## Pricing
 
@@ -68,6 +69,6 @@ Learn about conversation diagnostics scenarios and subscenarios in [Understand c
 
 You can use the **Export** option to export the logs and combine this data with data sets from other tables to create your own custom monitoring dashboards. More information: [Create custom KPI dashboards using Application Insights](/azure/azure-monitor/app/tutorial-app-dashboards).
 
-### Related information
+### Related content
 
 [Configure conversation diagnostics](/dynamics365/customer-service/administer/configure-conversation-diagnostics)  
