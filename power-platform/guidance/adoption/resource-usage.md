@@ -24,38 +24,46 @@ In this section, you'll learn how to:
 
 Out-of-the-box tooling around monitoring, alerts, and actions falls into the following categories:
 
-- The **[Power Platform admin center](https://aka.ms/ppac)** offers an interactive experience for performing administrative tasks. This is typically considered the primary path for completing administrative activities. From a monitoring point of view, this channel is used mostly for ad hoc interactive discovery. Additionally, some admin tasks would need access to [Microsoft 365 (formerly Office 365) admin center](https://admin.microsoft.com/), in addition to the [Office 365 Security and Compliance Center](https://protection.office.com/).
+## What tools are available to monitor resource usage?
 
-- **[PowerShell cmdlets](../../admin/powerapps-powershell.md#power-apps-cmdlets-for-app-creators)** offer a way to automate both management and monitoring tasks using PowerShell. These cmdlets can be used in a sequence to automate multiple-step administrative actions. Note that Microsoft typically provides capabilities as cmdlets first and then the same capabilities might be offered in the admin center UI or Management and Admin connectors in later releases.  
+### Power Platform admin center
 
-- **Management and Admin connectors** offer the ability to use the platform’s own tools to manage and monitor itself. Part of the available 300-plus out-of-the-box connectors and approval process capabilities are five admin-specific connectors:
+The [Power Platform admin center](/power-platform/admin/new-admin-center) is designed with an outcome-driven approach, where all functionality is intuitively organized in pages based on administrative tasks. This is typically considered the primary path for completing administrative activities. From a monitoring point of view, this channel is used mostly for ad-hoc interactive discovery.
 
-  - [Power Automate Management](/connectors/flowmanagement/) is specifically designed to help with administrative management and monitoring.
-  - [Power Automate for Admins](/connectors/microsoftflowforadmins/) allows you to perform typical admin actions, such as disabling or deleting a flow.
-  - [Power Apps for Admins](/connectors/powerappsforadmins/) to set permissions on Power Apps or set permissions to a certain connector being used by this app.
-  - [Power Apps for Makers](/connectors/powerappsforappmakers/), which can be used by the makers themselves, although some actions overlay administrative tasks, such as settings permissions to a Power Apps app as mentioned previously.
-  - [Power Platform for Admins](/connectors/powerplatformforadmins) to perform tasks against platform components, such as creating an environment or provisioning a Microsoft Dataverse database or creating a data loss prevention (DLP) policy for a specific environment.
+- Use [tenant-level analytics](/power-platform/admin/tenant-level-analytics) to extract key service metrics based on user adoption across your environments.
+- Use the [Monitor page](/power-platform/admin/monitoring/monitoring-overview) in the Power Platform admin center to understand solution health and detect degradations.
+- Use the [Security page](/power-platform/admin/security/security-overview) to assess and monitor your security score and understand how to improve your security policies.
+- Use the [Copilot page](/power-platform/admin/copilot/copilot-hub) to track usage, and access governance controls for Power Platform Copilots.
+- Use [Power Platform Advisor](/power-platform/admin/power-platform-advisor) to monitor recommendations to optimize your tenant.
+- Check the [Service health dashboard](/power-platform/admin/check-online-service-health) to view the status of the Power Platform service, details about existing service incidents, and up to 30 days’ worth of history.
 
-The [Center of Excellence Starter Kit](../coe/starter-kit.md) offers a template implementation using the management and admin connectors and comes with a Power BI dashboard that can be used to gain tenant-wide insights.
+### Microsoft Sentinel
 
-## Monitoring storage capacity add-ons
+[Detect threats to your organization](threat-detection.md) using [Microsoft Sentinel](/azure/sentinel/business-applications/solution-overview). Microsoft Sentinel equips admins with a comprehensive security and monitoring solution that intelligently detects and responds to suspicious activities such as mass data deletion or app execution from unauthorized geographies. You can also use threat detection rules to run regularly query the collected data and analyze it to discover threats.
 
-The capacity section of analytics allows you to monitor storage capacity use and availability in your tenant. From the all-up view across all the environments, you can drill down into the individual environments for details such as top entity using storage on a timeline view. Sign in to the [Power Platform admin center](https://aka.ms/ppac) and select **Analytics** > **Capacity** in the left-side navigation pane.
+### Custom tooling and extensibility
 
-![Microsoft Power Platform Capacity Analytics.](media/resource-usage1.png "Microsoft Power Platform Capacity Analytics")
+Power Platform administrators often have a need to orchestrate and automate routine activities for their tenants. These activities are often depend on the operational and governance requirements of the organization. The programmability and extensibility capabilities of the Power Platform empower administrators to create bespoke tools and solutions using a variety of resources.
 
-If your organization has purchased capacity add-ons, an Add-ons tile appears on the Capacity screen in the Power Platform admin center. Sign in to the admin center and select **Analytics** > **Capacity** in the left-side navigation pane. The Add-ons tile shows summary information about the capacity add-ons that your organization has.
+- Create custom dashboards by using [Power Platform inventory and usage data](/power-platform/admin/build-custom-reports)
+- Use [programmability and extensibility](/power-platform/admin/programmability-extensibility-overview) features - such as APIs, PowerShell cmdlets, the Power Platform CLI, and connectors - to manage and automate tasks. The Power Platform API provides a unified interface for managing tenant-level resources, while the Dataverse API allows for detailed data interactions within environments.
+- Evaluate features of the [Center of Excellence Starter Kit](../coe/starter-kit.md), which offers a template implementation using the management and admin connectors and comes with a Power BI dashboard that can be used to gain tenant-wide insights.
 
-![Microsoft Power Platform add-on capacity.](media/resource-usage6.png "Microsoft Power Platform add-on capacity")
+This flexibility ensures that administrators can tailor their automation and orchestration efforts to the unique needs of their organization, enhancing efficiency and control over their Power Platform adoption.
 
-As an administrator, you should:
+## What should I monitor?
 
-- Regularly check the capacity available to ensure new environments can be created by users in your tenant.
-- Review the top storage used by environments to ensure you are aware of your top consuming environments.
-- Look for any unexpected spikes in usage using the database, file, and log charts for individual environments.
-- Review capacity add-ons such as Power Apps app passes, flow per business processes, portal page views, portal sign-ins, or AI Builder credits, and assign that capacity to specific environments.
+## Default environment
 
-More information: [Monitoring new and legacy capacity storage](../../admin/whats-new-storage.md)
+Every employee in an organization that uses the Power Platform has access to the default environment. As a Power Platform admin, you should consider, and when necessary, implement ways to control the default environment.
+
+When monitoring the Default environment in Power Platform, it's crucial to keep an eye on several key aspects to ensure optimal governance and security:
+
+- Track connector usage and identify which connectors are used. This can help inform your [Data Loss Prevention policy strategy](dlp-strategy.md).
+- Discover apps and flows that have become widely adopted or business-critical. This can help inform which solutions may require more support or need to be moved to a dedicated environment.
+- Discover unused and owner-less apps and flows. These may consume capacity and create clutter in the Default environment.
+
+Learn more about [managing the Default environment](manage-default-environment.md).
 
 ## Power Automate usage
 
@@ -65,7 +73,7 @@ As an administrator, you should:
 - Watch for errors by error type to look for common problems that might exist.
 - Spot data usage that isn't expected by drilling in to connector usage and adjust your data loss prevention policies for that environment to ensure the overall health of the platform.
 
-More information: [Admin Analytics for Power Automate](../../admin/analytics-flow.md)
+Learn more: [Admin Analytics for Power Automate](../../admin/analytics-flow.md)
 
 ## Power Apps usage
 
@@ -75,7 +83,16 @@ As an administrator, you should:
 - Check out app launches in terms of being used in a browser or via a mobile player version and on which platforms. Following your device strategy, you could ensure users are using the latest player edition.
 - Regularly monitor overall service performance to ensure user run-time experience when interacting with the platform services.
 
-More information: [Admin Analytics for Power Apps](../../admin/analytics-powerapps.md)
+Learn more: [Admin Analytics for Power Apps](../../admin/analytics-powerapps.md)
 
+## Copilot Studio usage
+
+As an administrator, you should:
+
+- Watch overall adoption by monitoring insights into which Copilot features are used.
+- Review govermance settings and adjust which environments have Copilot features turned on based on your requirements.
+- Create training material to help your makers use AI responsibly.
+
+Learn more: [Copilot page in Power Platform admin center](/power-platform/admin/copilot/copilot-hub)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

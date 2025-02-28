@@ -5,96 +5,48 @@ author: manuelap-msft
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/09/2020
+ms.date: 02/28/2025
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
-# Monitor Microsoft Dataverse usage
+# Monitor licenses and capacity
 
+Effective capacity and license monitoring in Power Platform helps you maintain optimal performance, ensure compliance, and manage costs. This article outlines the key aspects to monitor and provides recommendations to help you stay on top of your Power Platform environment.
 
+## Monitor license consumption
 
-The Dataverse analytics in the Power Platform admin center will provide details on Dataverse usage in the selected environment. You can change environments by selecting **Change filters** and then selecting your environment. You can also adjust the date range. Only the past 28 days of data are available.
+Use the [Billing page](/power-platform/admin/view-license-consumption-issues) in the Power Platform admin center to monitor the consumption of your organization's Power Platform licenses and easily spot environments that might have licensing issues. Get answers to questions like these:
 
-![Dataverse analytics.](media/resource-usage3.png "Dataverse analytics")
+- How many Power Apps licenses are purchased?
+- How many of those Power Apps licenses are assigned to users?
+- What types of licenses are being used to launch apps?
+- What licenses are being used to execute flows?
+- How many users are actively consuming Power Apps or Power Automate licenses in a specific environment?
+- Who are the users actively consuming Power Apps or Power Automate licenses?
+- Are there users in my environment who need standalone Power Apps or Power Automate licenses?
+- Which flows are out of compliance?
 
-Dataverse analytics helps you monitor the following:
+As an administrator, you should
 
-:::row:::
-   :::column span="":::
-      **Adoption**
-   :::column-end:::
-   :::column span="":::
-      **Usage**
-   :::column-end:::
-   :::column span="":::
-      **Health**
-   :::column-end:::
-:::row-end:::
-:::row:::
-    :::column span="":::
-        - Number of active users
-        - Active user trends
-        - Top active users
-        - Mode of access (by operating system, by device type, by browser)
-   :::column-end:::
-   :::column span="":::
-        - Most-used out-of-the-box entities
-        - Most-used custom entities
-        - Activities performed (CRUD)
-        - System jobs, plug-ins, and API call usage
-   :::column-end:::
-   :::column span="":::
-        - System jobs analysis (pass rate, throughput, top failures, backlog)
-        - Plug-in analysis (pass rate, execution time, top failures)
-        - API calls analysis (pass rate, most-used APIs, top failures)
-   :::column-end:::
-:::row-end:::
+- Monitor the allocation of licenses to users and applications. Ensure that you have the correct number of licenses and that they are assigned appropriately. This helps in avoiding any compliance issues and managing costs effectively.
+- Regularly review the list of flows requiring licensing attention.
+- Regularly review the [Intelligent recommendations page](/power-platform/admin/get-recommendations-licensing), which provides you with recommendations about who in your organization would benefit from having a Power Apps premium license.
+
+## Monitor storage capacity add-ons
+
+Capacity monitoring involves tracking the usage of various resources within your Power Platform environment, such as storage, API calls, and database capacity.
+
+- [Dataverse capacity](/power-platform/admin/capacity-storage): Keep an eye on the storage consumption across your environments. Monitor the usage of Dataverse database, file, and log storage. This helps in identifying any potential overuse and planning for additional capacity if needed. Regularly check the capacity of your Dataverse databases. Ensure that your databases are not nearing their limits, which could impact the performance of your applications.
+- [API Calls](/power-platform/admin/analytics-common-data-service#api-call-statistics): Track the number of API calls made by your solutions and users. Monitoring API usage helps in identifying any unusual spikes or patterns that could indicate performance issues or potential abuse.
 
 As an administrator, you should:
 
-- Monitor activities performed on the Dataverse database.
-- Ensure overall health of the platform by regularly checking on system jobs operating, plug-ins being used by app makers, and API calls performed against Dataverse.
-
-## Dataverse audit logging
-
-You also have audit logging available for actions in Dataverse. This includes create, update, and delete operations on records in addition to changes to Dataverse metadata. More information: [Dataverse auditing overview](/powerapps/developer/common-data-service/auditing-overview)
-
-For auditing to be captured, it must be enabled in the following three places:
-
-- In the admin portal environment settings via [aka.ms/ppac](https://aka.ms/ppac), select **Environment** > **Audit and logs** > **Audit settings**.
-
-  ![Enable auditing in the Power Platform admin center.](media/cdslog2.png "Enable auditing in the Power Platform admin center")
-
-  Then [enable auditing data and user activity](../../admin/audit-data-user-activity.md) for security and compliance.
-  
-  ![Manage logging for Dataverse data.](media/cdslog4.png "Manage logging for Dataverse data")
-
-- Enable the entity property for auditing. Select **Environment** > **Audit and logs** > **Entity and field audit settings**.
-
-  ![Entity and field audit settings.](media/cdslog3.png "Entity and field audit settings")
-
-  Then select the entity you want to audit and enable **Auditing**.
-  
-  ![Entity auditing.](media/cds-audit2.png "Entity auditing")
-
-- Enable the field on the entity for auditing. Select **Environment** > **Audit and logs** > **Entity and field audit settings** > **Your Entity** > **Fields**.
-
-  ![Field auditing.](media/cdslog5.png "Field auditing")
-  
-  Select the field you want to audit and select **Edit** to enable auditing.
-  
-  ![Enable field auditing.](media/cds-audit3.png "Enable field auditing")
-
-You will need to coordinate with the app makers to ensure the entities and fields are properly configured to support auditing of the data. It is also helpful in some scenarios to turn off auditing on some fields that change frequently and aren’t significant to track because it can reduce the volume of audit data that is captured.
-
-As an administrator, you should:
-
-- Know that audit logging can be helpful in tracking down complex business logic problems that are a result of too many updates or conflicting updates occurring.
-- Frequently review the logging data, because it can provide help in troubleshooting logic problems. So, having some level of audit logging enabled ahead of the need is helpful to expedite problem solving.
-- Regularly review your audit log size, and delete audit records.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+- Review what happens when you [exceed storage capacity entitlements](/power-platform/admin/capacity-storage#changes-for-exceeding-storage-capacity-entitlements).
+- Use the [environment capacity management and alerting](/power-platform/guidance/coe/capacity-alerting) feature of the [CoE Starter Kit](/power-platform/guidance/coe/starter-kit) to monitor capacity consumption in the tenant, configure approved limits, and receive alerts when an environment is close to or over their approved capacity.
+- Regularly check the capacity available to ensure new environments can be created by users in your tenant.
+- Review the top storage used by environments to ensure you are aware of your top consuming environments.
+- Look for any unexpected spikes in usage using the database, file, and log charts for individual environments.
+- Review capacity add-ons such as Power Apps app passes, flow per business processes, portal page views, portal sign-ins, or AI Builder credits, and assign that capacity to specific environments.

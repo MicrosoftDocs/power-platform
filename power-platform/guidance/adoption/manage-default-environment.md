@@ -24,25 +24,27 @@ Some connectors that drive core Power Platform functionality [can't be blocked](
 
 The CoE Starter Kit contains schema and flows to report the details of all connectors used by each app or flow in all environments. The data reported in the CoE dashboard is refreshed every 24 hours. You can also search for related flows and apps directly from the Dataverse environment where the CoE Starter Kit is installed. [Learn more about tracking connectors with the CoE Power BI dashboard](/power-platform/guidance/coe/power-bi-monitor).
 
-## Discover unused and orphaned apps and flows
+## Discover unused and owner-less resources
 
-As Power Platform adoption in your organization grows, you're likely to have orphaned and unused apps and flows in your default environment. When a maker leaves an organization, the maker's apps and flows are in effect orphaned. Apps and flows that are used for a while and then are no longer needed can clutter the default environment.
+As Power Platform adoption in your organization grows, you're likely to have owner-less and unused resources in your default environment. When a maker leaves an organization, the maker's apps and flows are in effect owner-less. Apps and flows that are used for a while and then are no longer needed can clutter the default environment.
 
 To maintain environment hygiene, establish processes and procedures to clean up orphaned and unused flows and apps. This is especially important for the default environment, where all users are potential makers.
 
-Start with the following processes in the CoE Starter Kit:
+Use [Power Platform Advisor](/power-platform/admin/power-platform-advisor) to view recommendations for apps without valid owners and ones that haven't been used in the last 60 days. You can take action for each recommendation in the recommendation pane, or you can use the [Power Platform for Admin V2 connector](/connectors/powerplatformadminv2/) to automate tasks.
 
-- [Set up clean-up of orphaned objects](/power-platform/guidance/coe/setup-orphan-components)
-
-- [Set up inactivity processes](/power-platform/guidance/coe/setup-archive-components)
-
-You can use them as-is or modify them to suit the needs of your organization.
+Our recommendation is to use [Power Platform Advisor](/power-platform/admin/power-platform-advisor). For more custom processes, you can evaluate the [CoE Starter Kit](/power-platform/guidance/coe/) to [set up clean-up of orphaned objects](/power-platform/guidance/coe/setup-orphan-components) and [set up inactivity processes](/power-platform/guidance/coe/setup-archive-components). You can use these processes as-is or modify them to suit the needs of your organization.
 
 ## Discover highly used apps and flows
 
 While the default environment is intended for personal productivity, makers might create apps and flows that become widely adopted or business-critical. This is a good outcome, but it should be managed.
 
-Use the Power BI dashboard in the CoE Starter Kit to [identify widely shared apps and flows](/power-platform/guidance/coe/power-bi-govern#identify-widely-shared-apps).
+Apps that don't follow a proper application lifecycle management are prone to business continuity risks. By moving these high-value apps out of the default environment to a Managed Environment, you can also take advantage of various premium security and governance capabilities.
+
+Use [Power Platform Advisor](/power-platform/admin/power-platform-advisor) to view recommendations [high-value apps](/power-platform/admin/power-platform-advisor#high-value-apps-in-default-environment) in the default environment. Contact makers and come up with a plan of migrating these apps out of the default enviornment into their own managed environment.
+
+Our recommendation is to use [Power Platform Advisor](/power-platform/admin/power-platform-advisor). For more custom processes, you can use the Power BI dashboard in the CoE Starter Kit to [identify widely shared apps and flows](/power-platform/guidance/coe/power-bi-govern#identify-widely-shared-apps).
+
+## Discover highly shared apps
 
 When 10 or more employees are using a personal productivity app or flow, the Power Platform CoE can also help you to evaluate whether it should be moved to its own or a shared environment. The following table describes the parameters to consider. [Learn more about establishing an environment strategy](/power-platform/guidance/white-papers/environment-strategy).
 
@@ -94,7 +96,9 @@ When 10 or more employees are using a personal productivity app or flow, the Pow
     </tr>
 </table>
 
-Use the compliance process in the CoE Starter Kit to track app sharing and usage. Use it as-is or modify it to suit the needs of your organization. [Learn more about the app auditing process](/power-platform/guidance/coe/example-processes).
+[Proactively limit](/power-platform/admin/managed-environment-sharing-limits) how broadly users can share canvas apps, flows, and agents to avoid over-sharing of resources.
+
+For a reactive approach, use the compliance process in the CoE Starter Kit to track app sharing and usage. Use it as-is or modify it to suit the needs of your organization. [Learn more about the app auditing process](/power-platform/guidance/coe/example-processes). Note that this process only happens after the sharing has already happened.
 
 ## Move applications from the default environment
 

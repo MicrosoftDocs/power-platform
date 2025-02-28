@@ -78,58 +78,37 @@ Track API request limits and usage to avoid hitting thresholds.
 - [Environment capacity](/power-platform/admin/whats-new-storage#what-happens-when-my-organization-exceeds-storage-entitlements). Keep an eye on the number of environments created and their usage. Ensure environments are being used efficiently and decommission any that are no longer needed.
 - Cost optimization. Regularly review and optimize costs by identifying and eliminating unnecessary expenses. Consider using cost management tools to track and manage expenses more effectively.
 
-
-
-## Tenant-Level monitoring
+## Tenant-level monitoring
 
 At the tenant level, monitoring focuses on the overall health and usage of the platform. Key areas to monitor include:
 
-1. **Resource usage and maker activity**: Monitor user logins, app usage, and API calls to understand how users are interacting with the platform. This helps identify trends, detect unusual activity, and ensure that resources are being used effectively.
-    1. monitor page for health
-    1. secure page for security things
-    1. purview / sentinel?
-    1. advisor for recommendations
+1. **Resource usage and maker activity**: Monitor user logins, app usage, and API calls to understand how users are interacting with the platform. This helps identify trends, detect unusual activity, and ensure that resources are being used effectively. Learn more about [tracking resource usage](resource-usage.md).
+1. **Resource health and performance**: Monitor resource health and performance to maintain the reliability and efficiency of your solutions. Understand the production health and detect any degradations early. Proactively monitoring health metrics minimizes downtime and enables you to identify areas for improvement. Learn about [tracking resource health and performance](#platform-and-solution-health).
+1. **Security and compliance**: Keep an eye on security-related events, such as failed login attempts, changes to security roles, and data access patterns. This helps maintain compliance with organizational policies and regulatory requirements. Learn more about [detecting threats to your organization](threat-detection.md).
+1. **Licensing and capacity**: Monitor license usage and capacity limits to ensure that the organization is not exceeding its allocated resources and to plan for future needs. Learn more about [monitoring license and capacity usage](cds-usage.md).
 
-1. **Resource health and performance**: Monitor resource health and performance to maintain the reliability and efficiency of your solutions. Understand the production health and detect any degradations early. Proactively monitoring health metrics minimizes downtime and enables you to identify areas for improvement.
-
-1. **Security and compliance**: Keep an eye on security-related events, such as failed login attempts, changes to security roles, and data access patterns. This helps maintain compliance with organizational policies and regulatory requirements.
-
-1. **Licensing and capacity**: Monitor license usage and capacity limits to ensure that the organization is not exceeding its allocated resources and to plan for future needs.
-
-## Solution-Level Monitoring
+## Solution-lvel monitoring
 
 At the solution level, monitoring focuses on the performance and reliability of individual applications and components. Key areas to monitor include:
 
-1. **Application performance**: Track key performance indicators (KPIs) such as response times, load times, and error rates. This helps identify performance bottlenecks and optimize the user experience.
-
-1. **Error logs and diagnostics**: Monitor error logs and diagnostic data to quickly identify and resolve issues within applications. This includes tracking exceptions, failed operations, and other error conditions.
-
-1. **Usage patterns**: Analyze how users are interacting with specific applications, including feature usage, session durations, and user feedback. This helps prioritize enhancements and identify areas for improvement.
-
-1. **Integration points**: Monitor the performance and reliability of integrations with other systems and services. This includes tracking API calls, data transfers, and the status of connected services.
-
+1. **Solution performance**: Track key performance indicators (KPIs) such as response times, load times, and error rates. This helps identify performance bottlenecks and optimize the user experience. Use the [Monitor page](/power-platform/admin/monitoring/monitoring-overview) in the Power Platform admin center to understand production health and detect degradations. Follow [recommendations for Performance Efficiency](/power-platform/well-architected/performance-efficiency/checklist) from Power Platform Well-Architected to design workloads so they can grow and meet your workload usage demands.
+1. **Error logs and diagnostics**: Monitor error logs and diagnostic data to quickly identify and resolve issues within applications. This includes tracking exceptions, failed operations, and other error conditions. Use the [Logs page](/power-platform/admin/monitoring/logs) in the Power Platform admin center to aid operational health analysis.
+1. **Usage patterns**: Analyze how users are interacting with specific applications, including feature usage, session durations, and user feedback. This helps prioritize enhancements and identify areas for improvement. Use the [integratation with Application Insights](https://learn.microsoft.com/en-us/power-platform/admin/overview-integration-application-insights) to get granular logs and custom metrics for deep analysis. For agents, use [analytics in Copilot Studio](/microsoft-copilot-studio/analytics-overview) to understand how well your agent is performing and to identify areas for improvement.
+1. **Integration points**: Monitor the performance and reliability of integrations with other systems and services. This includes tracking API calls, data transfers, and the status of connected services. Use the [integratation with Application Insights](https://learn.microsoft.com/en-us/power-platform/admin/overview-integration-application-insights) to get granular logs and custom metrics for deep analysis
 1. **Security and access controls**: Monitor access controls and permissions within applications to ensure users have the appropriate level of access to the functionality and data.
 
 Learn more about [recommendations for designing and creating a monitoring system](/power-platform/well-architected/operational-excellence/observability)
 
-## Tools and Best Practices
+## Tools
 
 To achieve effective observability and insights, you should leverage the following tools:
 
-1. **Power Platform Admin Center**: Use the Power Platform Admin Center to monitor tenant and environment level metrics, also mention security page, monitor page, and power advisor.
+1. **Power Platform admin center**: Use the Power Platform Admin Center to monitor tenant- and environment-level [analytics](power-platform/admin/tenant-level-analytics). Use the [Monitor page](/power-platform/admin/monitoring/monitoring-overview) in the Power Platform admin center to understand solution health and detect degradations. Use the [Security page](/power-platform/admin/security/security-overview) to assess and monitor your security score and understand how to improve your security policies. Use [Power Platform Advisor](/power-platform/admin/power-platform-advisor) to monitor recommendations to optimize your tenant.
 
-1. **Application Insights**: Integrate Application Insights with Power Platform solutions to track detailed, granular logs and custom metrics for deep analysis, which facilitates a comprehensive understanding of application performance. [Learn more in Integration with Application Insights](/power-platform/admin/overview-integration-application-insights).
+1. **Application Insights**: Integrate Application Insights with Power Platform solutions to track detailed, granular logs and custom metrics for deep analysis, which facilitates a comprehensive understanding of application performance. [Learn more about Integration with Application Insights](/power-platform/admin/overview-integration-application-insights).
 
-1. **Custom Dashboards**: Create custom dashboards to visualize key metrics and trends, providing a centralized view of the adoption and usage patterns of your Power Platform environments. start with the coe starter kit.
+1. **Custom dashboards**: Create custom dashboards to visualize key metrics and trends, providing a centralized view of the adoption and usage patterns of your Power Platform environments. Use the [CoE Starter Kit](/power-platform/guidance/coe/starter-kit) as a starting point.
 
-1. **Automated alerts**: Set up automated alerts to notify administrators of critical events, such as performance degradation, security breaches, or capacity issues.
+1. **Automated alerts**: Set up automated alerts to notify administrators of critical events, such as performance degradation, security breaches, or capacity issues. Use the [integration with Application insights](/power-platform/admin/overview-integration-application-insights), [configure threat detection rules](/azure/sentinel/threat-detection), and [evaluate CoE Starter Kit features](/power-platform/guidance/coe/starter-kit).
 
 1. **Regular reviews**: Conduct regular reviews of monitoring data to identify trends, assess the effectiveness of governance policies, and make data-driven decisions for continuous improvement.
-
-Empower teams to quickly detect, triage, and respond to issues while minimizing impact on end user experiences or your business processes.
-
-Monitor experiences: This capability includes admin and maker experiences that provide out-of-the-box metrics and recommendations. The metrics and recommendations help admin and makers understand production health, detect degradations, and improve production health.
-
-## Resources
-
-- [Monitor page in the Power Platform Admin Center](/power-platform/admin/monitoring/monitoring-overview)

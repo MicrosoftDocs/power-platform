@@ -1,5 +1,5 @@
 ---
-title: EEnsure data resilience
+title: Ensure data resilience
 description: Guidance for protecting and recovering data seamlessly with a range of flexible backup and retention capabilities
 author: manuelap-msft
 ms.component: pa-admin
@@ -78,7 +78,6 @@ Bear in mind that often those developing the applications aren't fully aware of 
 Your training should include education on tenant-wide guardrails and configurations that might impact the workloads that are being built. They also require training on configurations the makers need to make for their workloads, such as security roles and how to connect to data. Determine the process for collaborating with them on any requests they might have.
 
 Having a central source, such as a [SharePoint site or wiki](wiki-community.md), where makers can easily access this training content is important. This centralized repository ensures that all team members have consistent and up-to-date information, making it easier to discover and reference security guidelines and resources. Empowering makers and developers with the knowledge and tools they need helps safeguard the your organizations data and applications.
-
 
 ## Create a disaster recovery plan
 
