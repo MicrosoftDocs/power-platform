@@ -23,7 +23,7 @@ In this tutorial, learn how to:
 3. [List all management setting values for the environment](#step-3-list-all-management-settings-for-the-environment).
 4. [Update a setting value](#step-4-update-a-setting-value).
 
-As an example of this scenario, a customer may want to turn on [Storage Shared Access Signature (SAS) IP restrictions](security/data-storage.md#storage-shared-access-signature-sas-ip-restriction) and logging of SAS calls.
+As an example of this scenario, a customer might want to turn on [Storage Shared Access Signature (SAS) IP restrictions](security/data-storage.md#storage-shared-access-signature-sas-ip-restriction) and logging of SAS calls.
 
 ## Step 1. Authenticate using Power Platform API
 
@@ -37,7 +37,7 @@ $Headers = @{Authorization = "Bearer $($AuthResult.AccessToken)"}
 
 ## Step 2. Create a new setting value
 
-Use the following PowerShell script to create a new setting value for Storage Shared Access Signature (SAS) IP restrictions, and, the related audit logging capability. These two settings are off, however, we'll later update them to turn them on.
+Use the following PowerShell script to create a new setting value for Storage Shared Access Signature (SAS) IP restrictions, and the related audit logging capability. These two settings are off, but we'll update them later to turn them on.
 
 ```PowerShell
 #Set your environment ID

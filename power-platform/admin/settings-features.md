@@ -4,11 +4,12 @@ description: Learn how to manage feature settings to adjust how features appear 
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/27/2025
+ms.date: 02/28/2025
 ms.subservice: admin
 ms.author: sericks
 ms.reviewer: sericks
 contributors:
+    - jekom1
     - sriharibs-msft 
     - V-Camille
     - jasongr
@@ -59,7 +60,7 @@ To update these settings, make sure you have the System Administrator or System 
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-| Enable the usage of AI Builder model types that are in preview.  | If **Off**, the environment doesn't have access to AI Builder. Not all environments have this setting. Learn more about environments that are eligible for this feature and related details in [Administer AI Builder](/ai-builder/administer).  | On |
+| Enable the usage of AI Builder model types that are in preview.  | If **Off**, the environment doesn't have access to AI Builder model types that are in preview. Not all environments have this setting. Learn more about environments that are eligible for this feature and related details in [Administer AI Builder](/ai-builder/administer).  | On |
 
 ## AI prompts
 
