@@ -59,7 +59,7 @@ To update these settings, make sure you have the System Administrator or System 
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-| Enable the usage of AI Builder model types that are in preview.  | If **Off**, the environment doesn't have access to AI Builder. Not all environments have this setting. Learn more about environments that are eligible for this feature and related details in [Administer AI Builder](/ai-builder/administer).  | On |
+| Enable the usage of AI Builder model types that are in preview.  | If **Off**, the environment doesn't have access to AI Builder model types that are in preview. Not all environments have this setting. Learn more about environments that are eligible for this feature and related details in [Administer AI Builder](/ai-builder/administer).  | On |
 
 ## AI prompts
 
