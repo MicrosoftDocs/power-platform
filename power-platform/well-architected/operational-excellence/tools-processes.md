@@ -78,8 +78,7 @@ The style guide should cover:
 
 Learn more about [Power Automate coding guidelines](/power-automate/guidance/coding-guidelines/) and [Power Apps coding guidelines](/power-apps/guidance/coding-guidelines/overview).
 
-> [!TIP]
-> Use the [Power CAT Toolkit](https://appsource.microsoft.com/product/dynamics-365/microsoftpowercatarch.powercattools?tab=Overview) to perform code reviews. The toolkit incorporates many of the documented coding guidelines, ensuring that your solutions are efficient and maintainable. The toolkit automatically flags any patterns that don't adhere to these best practices, allowing you to address potential issues early in the development process. This proactive approach not only enhances the quality of your code but also helps streamline the review process, making it easier to maintain high standards across your projects. Integrating the Power CAT Toolkit into your development workflow ensures that your solutions are built on a solid foundation and leads to more reliable and scalable solutions.
+[!INCLUDE [pp-tip-powercat-toolkit](~/../shared-content/shared/guidance-includes/pp-tip-powercat-toolkit.md)]
 
 Keep track of architecture decisions to help teams maintain a fresh understanding of the workload and allow new team members to learn about the design decisions made during the workload's life cycle. Include in your architecture decision document the tools and technologies that were considered, the reason for a decision, and functional and nonfunctional requirements that were factored into decisions. Record decisions to avoid repeating explanations or revisiting discussions with new members or stakeholders.
 
