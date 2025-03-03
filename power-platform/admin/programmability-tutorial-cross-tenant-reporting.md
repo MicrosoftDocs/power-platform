@@ -29,7 +29,7 @@ In this tutorial, learn how to:
 > For more details about tenant isolation, see [Cross-tenant inbound and outbound restrictions](cross-tenant-restrictions.md).
 
 ## Create a report
-Below find various ways in which you can create a new report. 
+Use the information, below, to find various ways in which you can create a new report. 
 
 > [!NOTE]
 > You can only create one report per tenant per calendar day.
