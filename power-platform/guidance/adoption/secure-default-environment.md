@@ -18,7 +18,9 @@ Every employee in your organization has access to the default Power Platform env
 
 ## Assign administrator roles judiciously
 
-Consider whether your admin users need to have the Power Platform administrator role. Would the environment admin or system administrator role be more appropriate? In any case, limit the more powerful Power Platform admin role to just a few users. [Learn more about administering Power Platform environments](/power-platform/admin/environments-administration).
+Consider whether your administrators need to have the Power Platform administrator role. Would the environment admin or system administrator role be more appropriate? In any case, limit the more powerful Power Platform admin role to just a few users. [Learn more about administering Power Platform environments](/power-platform/admin/environments-administration).
+
+Avoid permanent or standing access by using the JIT features of your IdP. For break glass situations, follow an emergency access process. [Use Privileged Identity Management (PIM)](/power-platform/admin/manage-high-privileged-admin-roles), a feature of Microsoft Entra ID, to manage, control, and monitor the use of these high-privilege roles.
 
 ## Communicate intent
 
@@ -40,11 +42,17 @@ The [Microsoft Power Platform hub](/power-platform/guidance/adoption/wiki-commun
 
 Add links to any other internal resources your makers might find helpful.
 
+## Enable managed environments
+
+Maintain robust security and governance by making use of managed environment features in the default environment. Managed environment features provide advanced capabilities, such as monitoring, compliance, and security controls that are important for protecting your data. By enabling this feature, you can configure [sharing limits](/power-platform/admin/managed-environment-sharing-limits), gain more [usage insights](/power-platform/admin/managed-environment-usage-insights), [limiting user access to Microsoft Dataverse](/power-platform/admin/ip-firewall) from only allowed IP locations, use [Power Platform advisor](/power-platform/admin/power-platform-advisor) to get personalized recommendations to optimize the environment. Evaluate the current managed environments features and stay up to date with the product roadmap to maintain a secure, compliant, and well-governed default environment.
+
 ## Prevent oversharing
+
+## Configure sharing limits
 
 To enhance security and prevent oversharing within the Power Platform's default environment, limit how broadly users can share canvas apps, flows, and agents. Consider configuring [sharing limits](/power-platform/admin/managed-environment-sharing-limits) to maintain tighter control over access, reducing the risk of unauthorized usage or of solutions getting overshared and overused without the necessary governance controls in place. Implementing sharing limits helps safeguard critical information while promoting a more secure and manageable sharing framework within the Power Platform.
 
-## Limit sharing with everyone
+### Limit sharing with everyone
 
 Makers can [share their apps](/power-apps/maker/canvas-apps/share-app) with other individual users and security groups. By default, sharing with your entire organization, or **Everyone**, is disabled. Consider using a gated process around widely used apps to enforce policies and requirements like these:
 
