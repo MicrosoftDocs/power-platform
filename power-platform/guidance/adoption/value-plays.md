@@ -1,130 +1,130 @@
 ---
-title: Utilize value plays to measure and communicate value of Power Platform adoption
-description: Guidance for utliziing value plays to measure and communicate value of Power Platform adoption
-#customer intent: As a Power Platform user, I want to understand how to utilize value plays to measure and communicate the value of Power Platform adoption so that I can demonstrate ROI effectively.
+title: Use value plays to measure and communicate business value
+description: Discover strategic initiatives to maximize the value delivered by Power Platform and achieve significant business outcomes.
+#customer intent: As a business leader, I want to create effective value plays so that I can maximize the value delivered by Power Platform.
 author: manuelap-msft
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
-ms.date: 02/28/2025
+ms.date: 03/03/2025
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-description
+  - ai-seo-date:03/03/2025
 ---
 
-# Utilizing value plays to measure and communicate business value
+# Use value plays to measure and communicate business value
 
-[Measuring and communicating business value](business-value.md) focuses on the app/solution level. Taking a step back and considering the bigger picture of your adoption journey, running specific initiatives can significantly boost adoption by demonstrating how Power Platform can generate business value quickly. But how do you measure and communicate the value of these initiatives? This is where **value plays** come into play.
+[Measuring and communicating business value](business-value.md) focuses on the app or solution level. Consider the bigger picture of your adoption journey. Running specific initiatives can significantly boost adoption by demonstrating how Power Platform generates business value. But how do you measure and communicate the value of these initiatives? This is where value plays come in.
 
-**Value plays** are strategic initiatives designed to maximize the value delivered by Power Platform. They help you identify high-impact opportunities and execute them effectively to achieve significant outcomes. Here’s how you can apply value plays:
+## What are value plays?
+
+*Value plays* are strategic initiatives designed to maximize the value delivered by Power Platform. They help you identify high-impact opportunities and execute them effectively to achieve significant outcomes. 
+
+Here's how to apply value plays:
 
 1. **Identify high-impact use cases**: Look for scenarios where Power Platform can address critical business challenges or opportunities. These use cases should have the potential to deliver substantial benefits, such as improving efficiency, enhancing customer satisfaction, or driving innovation.
-1. **Define clear objectives and metrics**: Establish specific goals for each value plays and identify the metrics that will be used to measure success. This could include tangible metrics like cost savings and time efficiency, as well as intangible metrics like stakeholder alignment and user satisfaction.
+
+1. **Define clear objectives and metrics**: Establish specific goals for each value play and identify the metrics that will be used to measure success. This could include tangible metrics like cost savings and time efficiency, as well as intangible metrics like stakeholder alignment and user satisfaction.
+
 1. **Execute and iterate**: Implement the value plays by developing and deploying solutions using Power Platform. Continuously gather feedback and iterate on the solution to ensure it meets the defined objectives and delivers the expected value.
+
 1. **Measure and communicate results**: Collect data to measure the impact of the value plays. Use tools like Power BI to analyze and visualize the results. Communicate the outcomes to stakeholders through clear and concise reports, highlighting both the tangible and intangible benefits achieved.
 
-At a high level, you’ll also need to monitor key value measures or key results to demonstrate ROI at the Power Platform level. This involves tracking metrics that reflect the overall impact of Power Platform on your organization, such as:
+### Monitor and measure value
+
+At a high level, you also need to monitor key value measures or key results to demonstrate ROI at the Power Platform level. This process involves tracking metrics that reflect the overall impact of Power Platform on your organization, such as:
 
 - **Adoption rates**: Measure how widely Power Platform is being used across the organization.
 - **Efficiency gains**: Track improvements in process efficiency and productivity.
 - **Cost savings**: Calculate the financial benefits of using Power Platform compared to traditional development methods.
 - **Innovation impact**: Assess how Power Platform is enabling new innovations and business opportunities.
 
-By focusing on these high-level measures, you can provide a comprehensive view of the value generated by Power Platform, supporting your strategic goals and demonstrating ROI effectively. Learn more: [Vision, Metrics & Goals](vision.md)
+By focusing on these high-level measures, you can provide a comprehensive view of the value generated by Power Platform, support your strategic goals, and demonstrate ROI effectively. Learn more in [Vision, Metrics & Goals](vision.md).
 
-Each value plays is designed to be:
+## Tips for creating effective value plays
 
-- **Strategic**: Begin with value plays that are closely aligned with your business objectives. This ensures that the initiatives you undertake are directly contributing to your strategic goals and delivering meaningful outcomes.
-- **Repeatable**: Value measurement should be an ongoing process, not a one-time activity. Each value plays should focus on how Power Platform can continuously enhance existing business processes and programs, creating a sustainable approach to value generation.
-- **Actionable**: The philosophy behind value plays is to avoid trying to measure everything in the same way. Instead, focus on measuring what matters and ensure that the insights gained are used to drive actionable improvements.
+Each value play is designed to be:
 
-They key components of a value plays are:
+- **Strategic**: Begin with value plays that are closely aligned with your business objectives. This approach will ensure that the initiatives you undertake directly contribute to your strategic goals and deliver meaningful outcomes.
 
-- **Source of value**: Identify where Power Platform can provide unique value. The source of value could be through its low-code capabilities, integration features, or ability to rapidly prototype and deploy solutions.
-- **The play (key activities)**: Outline the specific activities that will be undertaken as part of the value plays. Your key activities include identifying use cases, developing prototypes, and gathering feedback.
-- **Objectives**: Define what you aim to achieve with the value plays. Your objectives could include improving efficiency, enhancing customer satisfaction, or driving innovation.
-- **Audience**: Determine who needs to be informed about the value plays. Your audience could include stakeholders such as business leaders, IT teams, and end-users.
-- **Call to action**: Specify what actions should be taken based on the insights gained from the value plays. The call to action could involve scaling successful prototypes, making process improvements, or reallocating resources.
+- **Repeatable**: Value measurement is an ongoing process, not a one-time activity. Each value play should focus on how Power Platform continuously enhances existing business processes and programs, creating a sustainable approach to value generation.
+
+- **Actionable**: The philosophy behind value plays is to avoid measuring everything the same way. Instead, focus on measuring what matters and use the insights to drive actionable improvements.
+
+### Key components
+
+A value play consists of the following key components:
+
+- **Source of value**: Identify where Power Platform can provide unique value. For example, through its low-code capabilities, integration features, or ability to rapidly prototype and deploy solutions.
+
+- **The play (key activities)**: Outline the specific activities to undertake as part of the value plays. Your key activities include identifying use cases, developing prototypes, and gathering feedback.
+
+- **Objectives**: Define what you aim to achieve with the value plays. Your objectives might include improving efficiency, enhancing customer satisfaction, or driving innovation.
+
+- **Audience**: Determine who needs to be informed about the value plays. Your audience might include stakeholders such as business leaders, IT teams, and end-users.
+
+- **Call to action**: Specify what actions should be taken based on the insights gained from the value plays. The call to action might involve scaling successful prototypes, making process improvements, or reallocating resources.
+
 - **Value proposition**:
-  - **Strategic alignment**: Explain how the value plays supports the broader business goals. This ensures that the initiative is seen as a strategic priority.
-  - **Tangibles and intangibles**: Identify both the tangible and intangible benefits that will be measured. Tangible benefits might include cost savings and time efficiency, while intangible benefits could involve improved stakeholder alignment and user satisfaction.
-- **Tips for new players**: Provide guidance on key aspects to get right when implementing value plays. This could include selecting the right use cases, engaging stakeholders early, and iterating based on feedback.
+  - **Strategic alignment**: Explain how the value plays supports the broader business goals to ensure the initiative is recognized as a strategic priority.
+  - **Tangibles and intangibles**: Identify both the tangible and intangible benefits to measure. Tangible benefits might include cost savings and time efficiency, while intangible benefits involve improved stakeholder alignment and user satisfaction.
+  
+- **Tips for new players**: Provide guidance on key aspects to get right when implementing value plays. This guidance might involve selecting the right use cases, engaging stakeholders early, and iterating based on feedback.
 
-These value plays are not intended to be an exhaustive list but rather a starting point for creating a simple, repeatable approach to measuring and demonstrating business value. As your use of Power Platform grows and matures, your value plays can become more sophisticated, allowing you to capture and communicate even greater value.
+## Example value plays
 
-## The innovation accelerator
+These example value plays are not intended as an exhaustive list but rather a starting point for creating a simple, repeatable approach to measuring and demonstrating business value. As your use of Power Platform grows and matures, your value plays will become more sophisticated, allowing you to capture and communicate even greater value.
 
-Power Platform lets you co-design, test, deploy and iterate faster than any other development method.
+### The innovation accelerator
 
-:::row:::
-   :::column span="":::
-      **Source of value**
-   :::column-end:::
-   :::column span="2":::
-      Inject Power Platform as a rapid ideation tool in the innovation function’s accelerator program
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-     **The play (key activities)**
-   :::column-end:::
-   :::column span="2":::
-   - Find a use case with multiple stakeholders that would benefit from co-design
-   - Outline riskiest technical and usability assumptions
-   - Prototype in Power Platform to demonstrate speed of development and iteration
-   - Gauge tangible (for example, development cost savings) and intangible (for example, better stakeholder alignment on requirements) value achieved
-   - Write up the success story
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-     **Objectives (what to focus on)**
-   :::column-end:::
-   :::column span="2":::
-   - Co-design with a team​
-   - Demonstrate rapid deployment & iteration​
-   - Prove technical feasibility fast
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-     **Audience and call to action**
-   :::column-end:::
-   :::column span="2":::
-      Innovation leads and Accelerator teams should agree to x number of Power Platform prototypes per quarter through the Accelerator program
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-     **Strategic alignment**
-   :::column-end:::
-   :::column span="2":::
-   - Speed of innovation​
-   - Engaging employees in improving how they work​
-   - Leverage existing IT investments
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-     **Tangibles & intangibles**
-   :::column-end:::
-   :::column span="2":::
-   - Development time saved vs custom solution​
-   - Reduced IT development backlog or bottleneck
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-    **Tips for new players**
-   :::column-end:::
-   :::column span="2":::
-   - Choose a coalition of the willing​
-   - Select a use case that would take significant custom development time
-   :::column-end:::
-:::row-end:::
+The Power Platform Innovation Accelerator focuses on Power Platform's ability to co-design, test, deploy, and iterate faster than other development methods.
+
+#### Source of value
+
+Inject Power Platform as a rapid ideation tool in the Innovation Function's Accelerator program.
+
+#### The play (key activities)
+
+- Find a use case with multiple stakeholders that would benefit from co-design.
+- Outline the riskiest technical and usability assumptions.
+- Prototype in Power Platform to demonstrate speed of development and iteration.
+- Gauge tangible (for example, development cost savings) and intangible (for example, better stakeholder alignment on requirements) value achieved.
+- Write up the success story.
+
+#### Objectives (what to focus on)
+
+1. Co-design with a team.
+1. Demonstrate rapid deployment and iteration.
+1. Prove technical feasibility fast.
+
+#### Audience and call to action
+
+Innovation leads and Accelerator teams should agree on the number of Power Platform prototypes to develop per quarter.
+
+#### Value proposition
+
+Strategic alignment:
+
+- Speed of innovation.
+- Engaging employees in improving how they work.
+- Leveraging existing IT investments.
+
+Tangibles and intangibles:
+
+- Development time saved versus custom solution.
+- Reduced IT development backlog or bottleneck.
+ 
+#### Tips for new players
+
+- Choose a "coalition of the willing," or a driven group of team members.
+- Select a use case that would take significant custom development time.
 
 ### The success story
 
-Share insightful solution case studies & maker success stories that bring to life the day-to-day value of Power Platform and inspire increasing adoption
+Share insightful solution case studies and maker success stories that bring to life the day-to-day value of Power Platform and inspire increasing adoption.
 
 :::row:::
    :::column span="":::
