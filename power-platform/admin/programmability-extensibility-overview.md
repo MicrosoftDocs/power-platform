@@ -1,11 +1,11 @@
 ---
-title: "Programmability and extensibility | Microsoft Docs"
+title: Programmability and extensibility
 description: Overview of available programmable tools for Microsoft Power Platform administrators
 author: laneswenka
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 03/19/2021
+ms.date: 03/03/2025
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
@@ -35,7 +35,7 @@ Several programmability tools are available for administrators.  These gradually
 The API reference for the customer management plane capabilities of Power Platform admin center.  For more information, see [Get started with Power Platform API](/rest/api/power-platform).
 
 ### Power Platform for Admins V2 connector
-The new [Power Platform for Admins V2 connector](./connectors/powerplatformadminv2) is generally available for use in both Power Automate, and Logic Apps.  It is a strongly-typed representation of the Microsoft Power Platform API.
+The new [Power Platform for Admins V2 connector](/connectors/powerplatformadminv2) is generally available for use in both Power Automate and Logic Apps.  It is a strongly-typed representation of the Microsoft Power Platform API.
 
 ### Power Platform CLI
 [Microsoft Power Platform CLI](/powerapps/developer/data-platform/powerapps-cli) is a simple, one-stop developer CLI that empowers developers and ISVs to perform various operations in Microsoft Power Platform related to environment lifecycle, authentication, and work with environments, solution packages, portals, code components, and so on.
