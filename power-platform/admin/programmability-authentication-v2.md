@@ -108,6 +108,6 @@ The above example contains placeholders that you can retrieve from your client a
 
 Use the **access_token** value in subsequent calls to the Power Platform API with the **Authorization** HTTP header.  As noted above, the Service Principal flow doesn't use application permissions and is instead, for now, treated as a Power Platform Administrator for all calls that they make.
 
-### See also
+### Related content
 [Creating a service principal application via API (preview)](powerplatform-api-create-service-principal.md)<br/>
 [PowerShell - Create service principal](powershell-create-service-principal.md)
