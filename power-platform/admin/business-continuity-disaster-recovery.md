@@ -82,13 +82,13 @@ These two events may require you to use this feature:
 - Disaster recovery drill.
 - Emergency response in the event of a major regional outage.
 
-### Disaster recovery drills
+#### Disaster recovery drills
 
 Your company may have disaster recovery drills documented as a requirement in your internal business continuity plans. Some industries and companies may be required by government regulations to perform audits on their BCDR capabilities. In these cases, you may run a disaster recovery drill on an environment. A disaster recovery drill allows you to perform self-service disaster recovery without losing any data. The duration of the failover action may be slightly longer while all remaining data is being replicated to the secondary region.
 
 We recommend performing drills on a copy of a production environment, since this involves downtime that can last for minutes. For example, you may want to copy a production environment to a sandbox-type environment and then change the type from sandbox to production.
 
-### Emergency response failover
+#### Emergency response failover
 
 You would choose this option during an emergency&mdash;that is, when the primary region has sustained an outage and access to environments or data isn't possible. If you choose this option, the environment fails without copying any more data other than the data that has been replicated before the outage occurred. 
 
