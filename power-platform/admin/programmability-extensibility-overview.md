@@ -32,7 +32,7 @@ Ultimately, customers will have two primary APIs: one for the management plane a
 Several programmability tools are available for administrators.  These gradually increase in complexity and also capability.  Over time, more libraries will become available in various programming languages.  To keep up with the latest updates, review the [release plans](/dynamics365/release-plans/#microsoft-power-platform).
 
 ### Power Platform API
-The API reference for the customer management plane capabilities of Power Platform admin center.  For more information, see [Get started with Power Platform API](/rest/api/power-platform).
+The API reference for the customer management plane capabilities of Power Platform admin center.  Learn more in [Get started with Power Platform API](/rest/api/power-platform).
 
 ### Power Platform for Admins V2 connector
 The new [Power Platform for Admins V2 connector](/connectors/powerplatformadminv2) is generally available for use in both Power Automate and Logic Apps.  It is a strongly-typed representation of the Microsoft Power Platform API.
