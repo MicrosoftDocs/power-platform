@@ -1,6 +1,6 @@
 ---
 title: "Use Microsoft Dataverse usage reports | MicrosoftDocs"
-description: "The Microsoft Dataverse analytics in the Power Platform admin center will provide details about Dataverse usage in the selected environment."
+description: "The Microsoft Dataverse analytics in the Power Platform admin center provides details about Dataverse usage in the selected environment."
 author: manuelap-msft
 
 ms.component: pa-admin
@@ -31,7 +31,7 @@ Use the [Billing page](/power-platform/admin/view-license-consumption-issues) in
 
 As an administrator, you should
 
-- Monitor the allocation of licenses to users and applications. Ensure that you have the correct number of licenses and that they are assigned appropriately. This helps in avoiding any compliance issues and managing costs effectively.
+- Monitor the allocation of licenses to users and applications. Ensure that you have the correct number of licenses and that they're assigned appropriately. This helps in avoiding any compliance issues and managing costs effectively.
 - Regularly review the list of flows requiring licensing attention.
 - Regularly review the [Intelligent recommendations page](/power-platform/admin/get-recommendations-licensing), which provides you with recommendations about who in your organization would benefit from having a Power Apps premium license.
 
@@ -39,14 +39,14 @@ As an administrator, you should
 
 Capacity monitoring involves tracking the usage of various resources within your Power Platform environment, such as storage, API calls, and database capacity.
 
-- [Dataverse capacity](/power-platform/admin/capacity-storage): Keep an eye on the storage consumption across your environments. Monitor the usage of Dataverse database, file, and log storage. This helps in identifying any potential overuse and planning for additional capacity if needed. Regularly check the capacity of your Dataverse databases. Ensure that your databases are not nearing their limits, which could impact the performance of your applications.
+- [Dataverse capacity](/power-platform/admin/capacity-storage): Keep an eye on the storage consumption across your environments. Monitor the usage of Dataverse database, file, and log storage. This helps in identifying any potential overuse and planning for more capacity if needed. Regularly check the capacity of your Dataverse databases. Ensure that your databases aren't nearing their limits, which could affect the performance of your applications.
 - [API Calls](/power-platform/admin/analytics-common-data-service#api-call-statistics): Track the number of API calls made by your solutions and users. Monitoring API usage helps in identifying any unusual spikes or patterns that could indicate performance issues or potential abuse.
 
 As an administrator, you should:
 
 - Review what happens when you [exceed storage capacity entitlements](/power-platform/admin/capacity-storage#changes-for-exceeding-storage-capacity-entitlements).
 - Use the [environment capacity management and alerting](/power-platform/guidance/coe/capacity-alerting) feature of the [CoE Starter Kit](/power-platform/guidance/coe/starter-kit) to monitor capacity consumption in the tenant, configure approved limits, and receive alerts when an environment is close to or over their approved capacity.
-- Regularly check the capacity available to ensure new environments can be created by users in your tenant.
-- Review the top storage used by environments to ensure you are aware of your top consuming environments.
+- Regularly check the capacity available to ensure users can create new environments.
+- Review the top storage used by environments to ensure you're aware of your top consuming environments.
 - Look for any unexpected spikes in usage using the database, file, and log charts for individual environments.
 - Review capacity add-ons such as Power Apps app passes, flow per business processes, portal page views, portal sign-ins, or AI Builder credits, and assign that capacity to specific environments.

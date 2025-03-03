@@ -1,5 +1,5 @@
 ---
-title: "Leverage resource usage reports - Microsoft Power Platform | MicrosoftDocs"
+title: "Use resource usage reports - Microsoft Power Platform | MicrosoftDocs"
 description: "Learn how to review out-of-the-box monitoring capabilities, check service and environment health, set alerts on security permissions or compliance regulations, and perform typical actions to ensure a secure, healthy, and safe citizen developer environment."
 author: manuelap-msft
 ms.component: pa-admin
@@ -11,11 +11,12 @@ ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
+
 # Report on resource usage
 
-One of the key principles of administering Microsoft Power Platform is having full visibility into how your organization is using Power Apps and Power Automate. Insights into your adoption will help you govern and secure the platform, identify patterns, and nurture your makers to accelerate adoption.
+One of the key principles of administering Microsoft Power Platform is having full visibility into how your organization is using Power Apps and Power Automate. Insights into your adoption help you govern and secure the platform, identify patterns, and nurture your makers to accelerate adoption.
 
-In this section, you'll learn how to:
+In this section, you learn how to:
 
 - Review out-of-the-box monitoring capabilities.
 - Check service and environment health.
@@ -43,11 +44,10 @@ The [Power Platform admin center](/power-platform/admin/new-admin-center) is des
 
 ### Custom tooling and extensibility
 
-Power Platform administrators often have a need to orchestrate and automate routine activities for their tenants. These activities are often depend on the operational and governance requirements of the organization. The programmability and extensibility capabilities of the Power Platform empower administrators to create bespoke tools and solutions using a variety of resources.
+Power Platform administrators often have a need to orchestrate and automate routine activities for their tenants. These activities depend on the operational and governance requirements of the organization. The programmability and extensibility capabilities of the Power Platform empower administrators to create bespoke tools and solutions using various resources.
 
-- Create custom dashboards by using [Power Platform inventory and usage data](/power-platform/admin/build-custom-reports)
-- Use [programmability and extensibility](/power-platform/admin/programmability-extensibility-overview) features - such as APIs, PowerShell cmdlets, the Power Platform CLI, and connectors - to manage and automate tasks. The Power Platform API provides a unified interface for managing tenant-level resources, while the Dataverse API allows for detailed data interactions within environments.
 - Evaluate features of the [Center of Excellence Starter Kit](../coe/starter-kit.md), which offers a template implementation using the management and admin connectors and comes with a Power BI dashboard that can be used to gain tenant-wide insights.
+- Use [programmability and extensibility](/power-platform/admin/programmability-extensibility-overview) features - such as APIs, PowerShell cmdlets, the Power Platform CLI, and connectors - to manage and automate tasks. The Power Platform API provides a unified interface for managing tenant-level resources, while the Dataverse API allows for detailed data interactions within environments.
 
 This flexibility ensures that administrators can tailor their automation and orchestration efforts to the unique needs of their organization, enhancing efficiency and control over their Power Platform adoption.
 
@@ -60,7 +60,7 @@ Every employee in an organization that uses the Power Platform has access to the
 When monitoring the Default environment in Power Platform, it's crucial to keep an eye on several key aspects to ensure optimal governance and security:
 
 - Track connector usage and identify which connectors are used. This can help inform your [Data Loss Prevention policy strategy](dlp-strategy.md).
-- Discover apps and flows that have become widely adopted or business-critical. This can help inform which solutions may require more support or need to be moved to a dedicated environment.
+- Discover apps and flows that have become widely adopted or business-critical. This can help inform which solutions might require more support or need to be moved to a dedicated environment.
 - Discover unused and owner-less apps and flows. These may consume capacity and create clutter in the Default environment.
 
 Learn more about [managing the Default environment](manage-default-environment.md).
@@ -90,7 +90,7 @@ Learn more: [Admin Analytics for Power Apps](../../admin/analytics-powerapps.md)
 As an administrator, you should:
 
 - Watch overall adoption by monitoring insights into which Copilot features are used.
-- Review govermance settings and adjust which environments have Copilot features turned on based on your requirements.
+- Review governance settings and adjust which environments have Copilot features turned on based on your requirements.
 - Create training material to help your makers use AI responsibly.
 
 Learn more: [Copilot page in Power Platform admin center](/power-platform/admin/copilot/copilot-hub)

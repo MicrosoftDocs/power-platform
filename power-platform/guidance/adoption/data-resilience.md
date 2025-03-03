@@ -23,7 +23,7 @@ Here are some recommendations for enhancing data resilience in Power Platform:
 
 ## Regular backups
 
-Ensure that your environments are backed up regularly. Review and manage these backups to confirm they are up-to-date and accessible when needed. Power Platform automatically creates backups of your environments, typically on a daily basis. These backups include all the data, configurations, and customizations within the environment. In addition to automatic backups, administrators can also create manual backups at any time. This is useful before making significant changes or updates to the environment.
+Ensure that your environments are backed up regularly. Review and manage these backups to confirm they're up-to-date and accessible when needed. Power Platform automatically creates backups of your environments, typically on a daily basis. These backups include all the data, configurations, and customizations within the environment. In addition to automatic backups, administrators can also create manual backups at any time. Manual backups are useful before making significant changes or updates to the environment.
 
 You can now extend their backup retention from seven to 28 days. Learn more: [Back up and restore environments](/power-platform/admin/backup-restore-environments)
 
@@ -31,7 +31,7 @@ You can now extend their backup retention from seven to 28 days. Learn more: [Ba
 
 Define and enforce DLP policies to prevent unauthorized data access and ensure compliance with organizational standards. Learn more: [Establish a DLP strategy](dlp-strategy.md)
 
-## Use Role-Based Access Control (RBAC)
+## Use role-based access control (RBAC)
 
 Implement RBAC to restrict access to sensitive data, ensuring that only authorized users can access and modify data. Learn more: [Security in Microsoft Dataverse](/power-platform/admin/wp-security)
 
@@ -44,7 +44,7 @@ Learn more:
 - [About data encryption](/power-platform/admin/about-encryption)
 - [Data protection](/power-platform/admin/wp-compliance-data-privacy#data-protection)
 
-For organizations requiring greater control over their data security and compliance, customer managed keys (CMK) ensure that data is not only protected both in transit and at rest, but also give organizations control over their encryption keys for enhancing data security.
+For organizations requiring greater control over their data security and compliance, customer managed keys (CMK) ensure that data isn't only protected both in transit and at rest, but also give organizations control over their encryption keys for enhancing data security.
 
 Learn more:
 
@@ -73,14 +73,14 @@ Perform regular audits of your data resilience strategies to identify potential 
 
 Provide training and resources to your team to ensure they understand the importance of data resilience and are equipped to implement best practices effectively.
 
-Bear in mind that often those developing the applications aren't fully aware of data resilience risks. If your organization does any training on how to build workloads with Power Platform, incorporate your recommendations for how to build reliable and resilient solutions into those efforts.
+Bear in mind that often makers developing the applications aren't fully aware of data resilience risks. If your organization does any training on how to build workloads with Power Platform, incorporate your recommendations for how to build reliable and resilient solutions into those training efforts.
 
-Your training should include education on tenant-wide guardrails and configurations that might impact the workloads that are being built. They also require training on configurations the makers need to make for their workloads, such as security roles and how to connect to data. Determine the process for collaborating with them on any requests they might have.
+Your training should include education on tenant-wide guardrails and configurations that might affect the workloads that are being built. They also require training on configurations the makers need to make for their workloads, such as security roles and how to connect to data. Determine the process for collaborating with them on any requests they might have.
 
-Having a central source, such as a [SharePoint site or wiki](wiki-community.md), where makers can easily access this training content is important. This centralized repository ensures that all team members have consistent and up-to-date information, making it easier to discover and reference security guidelines and resources. Empowering makers and developers with the knowledge and tools they need helps safeguard the your organizations data and applications.
+Having a central source, such as a [SharePoint site or wiki](wiki-community.md), where makers can easily access this training content is important. This centralized repository ensures that all team members have consistent and up-to-date information, making it easier to discover and reference security guidelines and resources. Empowering makers and developers with the knowledge and tools they need helps safeguard your organizations data and applications.
 
 ## Create a disaster recovery plan
 
 Microsoft Business Applications provide business continuity and disaster recovery (BCDR) capabilities to all production environments in Dynamics 365 and Power Platform software as a service (SAAS) applications. Learn how [Microsoft ensures your production data is resilient during regional outages](/power-platform/admin/business-continuity-disaster-recovery).
 
-Develop a comprehensive disaster recovery plan that outlines the steps to take in case of data loss or system failure. Regularly test and update this plan. Learn more about [designing a disaster recovery strategy](/power-platform/well-architected/reliability/disaster-recovery).
+Develop a comprehensive disaster recovery plan that outlines the steps to take if there's data loss or system failure. Regularly test and update this plan. Learn more about [designing a disaster recovery strategy](/power-platform/well-architected/reliability/disaster-recovery).
