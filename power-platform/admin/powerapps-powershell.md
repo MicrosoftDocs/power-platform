@@ -489,6 +489,20 @@ Parameter variations can be used to migrate only specific flows, add into a spec
 
 For technical details, see [Add-AdminFlowsToSolution](/powershell/module/microsoft.powerapps.administration.powershell/add-adminflowstosolution).
 
+### List HTTP Action Flows
+
+```powershell
+Get-AdminFlowWithHttpAction -EnvironmentName <String>
+```
+
+Lists flows with HTTP Action(s). 
+
+|DisplayName  |FlowName  |EnvironmentName  |
+|---------|---------|---------|
+|Get Invoice HTTP     | flow-1   | environment-1    |
+|Pay Invoice from App     | flow-2  | environment-2    |
+|Reconcile Account   | flow-3    | environment-3    |
+
 ## API connection commands
 
 View and manage API connections in your tenant.
