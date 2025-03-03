@@ -16,7 +16,7 @@ search.audienceType:
 
 Learn about the latest changes and new capabilities for Power Platform API and administrator SDKs in the Power Platform.
 
-# December 2024
+## December 2024
 | Item | Type | Description |
 |------|------|-------------|
 | Power Platform for Admins V2 Connector is GA | SDK | The new [Power Platform for Admins V2](/connectors/powerplatformadminv2/) connector is now generally availabile in all regions. |
