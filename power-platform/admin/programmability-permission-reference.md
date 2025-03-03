@@ -1,12 +1,12 @@
 ---
-title: Programmability and Extensibility - Permission reference | Microsoft Docs
+title: Programmability and Extensibility - Permission reference
 description: Overview of granular permissions available in Power Platform programmability tools
 author: laneswenka
 ms.reviewer: sericks
 
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 03/09/2022
+ms.date: 03/03/2025
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
@@ -14,7 +14,7 @@ search.audienceType:
 ---
 
 # Permission reference
-This article provides an overview of the Power Platform API granular permissions.  These permissions will be initially available for registering client applications in Microsoft Entra and may become available in security role form in the future.
+This article provides an overview of the Power Platform API granular permissions. These permissions are initially available for registering client applications in Microsoft Entra and may become available in security roles in the future.
 
 ## Naming convention
 
