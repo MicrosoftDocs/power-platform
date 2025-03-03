@@ -68,48 +68,48 @@ You need to turn on self-service disaster recovery for an environment before you
 
 Turning on disaster recovery in an environment has no impact on the environment or the data within it.
 
-To turn on disaster recovery, complete the following steps.
+To turn on disaster recovery, complete the following steps:
 
 1. Navigate to the list of environments within the Power Platform admin center.
 1. Select the production type environment where you want to turn on self-service disaster recovery.
-1. Select **Disaster Recovery** in the command bar, at the top of the page. The **Disaster Recovery** pane appears.
+1. Select **Disaster Recovery** in the command bar at the top of the page. The **Disaster Recovery** pane appears.
 1. Select the toggle to change it to **Enabled**.
 1. Select **Save**.
 1. The environment is placed in the **Edit details** page briefly.
 1. The **Environment details** page appears, indicating that the process of turning on the feature has started.
 
-There are two reasons that may require you to use this feature: 
+These two events may require you to use this feature: 
 - Disaster recovery drill.
 - Emergency response in the event of a major regional outage.
 
 ### Disaster recovery drills
 
-Your company may have disaster recovery drills documented as a requirement in your internal, business continuity plans. There are also industries and companies that may be required by government regulations to perform audits on their BCDR capabilities. In these cases, you may run a disaster recovery drill on an environment. A disaster recovery drill allows you to perform self-service disaster recovery without losing any data. The duration of the failover action may be slightly higher while all remaining data is being replicated to the secondary region.
+Your company may have disaster recovery drills documented as a requirement in your internal business continuity plans. Some industries and companies may be required by government regulations to perform audits on their BCDR capabilities. In these cases, you may run a disaster recovery drill on an environment. A disaster recovery drill allows you to perform self-service disaster recovery without losing any data. The duration of the failover action may be slightly longer while all remaining data is being replicated to the secondary region.
 
-We recommended that drills are performed on a copy of a production environment, since this involves downtime that can last for minutes. For example, you may want to copy a production environment to a sandbox type environment, and then change the type from sandbox to production.
+We recommend performing drills on a copy of a production environment, since this involves downtime that can last for minutes. For example, you may want to copy a production environment to a sandbox-type environment and then change the type from sandbox to production.
 
 ### Emergency response failover
 
-This option is expected to be chosen during an emergency&mdash;that is when the primary region has sustained an outage and access to environments or data isn't possible. If you choose this option, the environment fails without copying any more data, other than the data that has been replicated before the outage occurred. 
+You would choose this option during an emergency&mdash;that is, when the primary region has sustained an outage and access to environments or data isn't possible. If you choose this option, the environment fails without copying any more data other than the data that has been replicated before the outage occurred. 
 
-When you perform an emergency response, you see the amount of data loss represented in time, which you can compare to your Recovery Point Objective (RPO), if you determine that it's acceptable and you choose to continue. The environment operates in the run state until disaster recovery is complete and the environment is back to normal operation from the secondary region.
+When you perform an emergency response, you see the amount of data loss represented in time, which you can compare to your recovery point objective (RPO) if you determine that it's acceptable and you choose to continue. The environment operates in the run state until disaster recovery is complete and the environment is back to normal operation from the secondary region.
 
 ### Switching back to primary region
 
-After you have completed your drill or after an outage has been mitigated, we recommended that you switch back the environment to its primary region. An environment maybe operating with limited resources in the paired region. There's no loss of data during this operation.
+After you complete your drill or after an outage has been mitigated, we recommend that you switch back the environment to its primary region. An environment may be operating with limited resources in the paired region. There's no loss of data during this operation.
 
 ### Environment disaster recovery status
 
 Admins can determine the current disaster recovery state and location of an environment in the **Environment details** page. Admins can also select **Disaster Recovery** in the command bar to open the **Disaster Recovery** pane. 
 
-To check data replication latency at any time, you can select **Disaster Recovery** and select **Emergency response** as the disaster recovery reason. This opens a confirmation dialog that includes the last replication time between regions for that environment. You may select **Cancel** if your only purpose was to check the potential loss of data if there was a failover operation. Keep in mind, that last sync time is always different at different times, since data is being replicated continuously. 
+To check data replication latency at any time, you can select **Disaster Recovery** and then select **Emergency response** as the disaster recovery reason. This opens a confirmation dialog that includes the last replication time between regions for that environment. You may select **Cancel** if your only purpose was to check the potential loss of data if there was a failover operation. Keep in mind that the last sync time is always different at different times, since data is being replicated continuously. 
 
-### Documenting your business continuity plan
+### Document your business continuity plan
 
-We recommended that you perform disaster recovery drills or an emergency response, if you choose to, before a real disaster strikes so you can document all steps required for any integration points that are external to Power Platform. In this case, your company is more prepared for recovery if there's a real disaster.
+We recommend that you perform disaster recovery drills or an emergency response before a real disaster strikes so you can document all steps required for any integration points that are external to Power Platform. Your company is then more prepared for recovery if there's a real disaster.
 
 ### Note about preview
 
-During the preview, there is no charge for this feature, and it can't be turned off by the customer. When the feature reaches general availability, preview customers have the opportunity to keep the functionality or allow it to be turned off by Microsoft. There will be no impact on your primary environment location or capabilities, if you choose not to upgrade during general availability.
+During the preview, there is no charge for this feature and you can't turn it off. When the feature reaches general availability, preview customers have the opportunity to keep the functionality or allow it to be turned off by Microsoft. There will be no impact on your primary environment location or capabilities if you choose not to upgrade during general availability.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
