@@ -17,12 +17,12 @@ search.audienceType:
 Microsoft Power Platform administrators often have the need to orchestrate and automate routine activities for their tenant.  This can be accomplished in a variety of ways using the tools outlined below.  
 
 > [!NOTE]
-> Programmability tools are currently developed API-first, meaning new properties and functionality will first be exposed in the latest API versions made available.  They will later be uptaken into updates to our Power Platform CLI, PowerShell cmdlets and connectors.  In the future, this will become synchronized across all available tools automatically.  
+> Programmability tools are currently developed API-first, meaning new properties and functionality is first exposed in the latest API versions made available.  They're later taken into updates to our Power Platform CLI, PowerShell cmdlets, and connectors.  In the future, this will become synchronized across all available tools automatically.  
 
 ## Customer management plane vs customer data plane
 Historically, Power Platform administrators have had disparate APIs from which to manage their tenant and its resources within the platform.  This included an API for managing environments, another API for managing Power Apps, and yet another for managing Power Automate flows.  With Power Platform API, Microsoft is collecting, harmonizing, and ultimately providing a single API surface from which customers can manage these resources.
 
-The customer management plane is where tenant level resources and environments are surfaced.  This includes operations like creating environments (with or without Dataverse), managing Billing policies for [Pay-as-you-go](/power-platform/admin/pay-as-you-go-overview), querying and reporting on capacity consumption, and so on.  These capabilities will all be surfaced under Power Platform API and more features will be added regularly.  
+The customer management plane is where tenant-level resources and environments are surfaced. This includes operations like creating environments (with or without Dataverse), managing billing policies for [Pay-as-you-go](/power-platform/admin/pay-as-you-go-overview), querying and reporting on capacity consumption, and so on.  These capabilities will all be surfaced under Power Platform API and more features will be added regularly.  
 
 The customer data plane is for interacting with data and records stored inside of an environment database.  This database is most commonly referred to as Microsoft Dataverse of which includes its own [rich OData-based API](/powerapps/developer/data-platform/webapi/overview).  Operations using Dataverse APIs include retrieving data from a table, using functions and actions, and executing batch operations.
 
