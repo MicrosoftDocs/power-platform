@@ -1,5 +1,5 @@
 ---
-title: Tutorial: Create cross tenant isolation reports
+title: "Tutorial: Create cross tenant isolation reports | Microsoft Docs"
 description: Learn how to use the Power Platform API to create cross tenant isolation reports.
 author: laneswenka
 ms.reviewer: sericks
