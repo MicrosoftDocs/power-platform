@@ -40,6 +40,10 @@ The [Microsoft Power Platform hub](/power-platform/guidance/adoption/wiki-commun
 
 Add links to any other internal resources your makers might find helpful.
 
+## Prevent oversharing
+
+To enhance security and prevent oversharing within the Power Platform's default environment, limit how broadly users can share canvas apps, flows, and agents. Consider configuring [sharing limits](/power-platform/admin/managed-environment-sharing-limits) to maintain tighter control over access, reducing the risk of unauthorized usage or of solutions getting overshared and overused without the necessary governance controls in place. Implementing sharing limits helps safeguard critical information while promoting a more secure and manageable sharing framework within the Power Platform.
+
 ## Limit sharing with everyone
 
 Makers can [share their apps](/power-apps/maker/canvas-apps/share-app) with other individual users and security groups. By default, sharing with your entire organization, or **Everyone**, is disabled. Consider using a gated process around widely used apps to enforce policies and requirements like these:
@@ -49,7 +53,7 @@ Makers can [share their apps](/power-apps/maker/canvas-apps/share-app) with othe
 - Application Lifecycle Management (ALM) requirements
 - User experience and branding requirements
 
-The **Share with Everyone** feature is disabled by default in Power Platform. We recommend you keep this setting disabled to limit the overexposure of canvas apps with unintended users. The **Everyone** group for your organization contains all users who have ever logged into your tenant, which includes guests and internal members. It's not just all internal employees within your tenant. Additionally, the membership of the **Everyone** group can't be edited nor viewed. To learn more about the **Everyone** group, go to /windows-server/identity/ad-ds/manage/understand-special-identities-groups#everyone.
+The **Share with Everyone** feature is disabled by default in Power Platform. We recommend you keep this setting disabled to limit the overexposure of canvas apps with unintended users. The **Everyone** group for your organization contains all users who have ever logged into your tenant, which includes guests and internal members. It's not just all internal employees within your tenant. Additionally, the membership of the **Everyone** group can't be edited nor viewed. Learn more about [special identity groups](/windows-server/identity/ad-ds/manage/understand-special-identities-groups#everyone).
 
 If you would like to share with all internal employees or a large group of people, consider sharing with an existing security group of those members or creating a security group and sharing your app with that security group.
 
@@ -60,7 +64,7 @@ When **Share with Everyone** is turned off, only Dynamics 365 administrators, Po
    ```powershell
    Add-PowerAppsAccount
    ```
-   
+
 1. Run the [Get-TenantSettings cmdlet](/powershell/module/microsoft.powerapps.administration.powershell/get-tenantsettings?view=pa-ps-latest&preserve-view=true) to get the list of your organization's tenant settings as an object.
 
    The `powerPlatform.PowerApps` object includes three flags:
