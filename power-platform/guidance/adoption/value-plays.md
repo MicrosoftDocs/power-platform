@@ -1,6 +1,6 @@
 ---
 title: Use value plays to measure and communicate business value
-description: Discover strategic initiatives to maximize the value delivered by Power Platform and achieve significant business outcomes.
+description: Boost business value by measuring and communicating the impact of Power Platform initiatives through strategic value plays.
 #customer intent: As a business leader, I want to create effective value plays so that I can maximize the value delivered by Power Platform.
 author: manuelap-msft
 ms.component: pa-admin
@@ -13,9 +13,10 @@ ms.custom:
   - ai-gen-docs-bap
   - ai-gen-description
   - ai-seo-date:03/03/2025
+  - ai-gen-desc
 ---
 
-# Use value plays to measure and communicate business value
+# Use business value plays
 
 [Measuring and communicating business value](business-value.md) focuses on the app or solution level. Consider the bigger picture of your adoption journey. Running specific initiatives can significantly boost adoption by demonstrating how Power Platform generates business value. But how do you measure and communicate the value of these initiatives? This is where value plays come in.
 
