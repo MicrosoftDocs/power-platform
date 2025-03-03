@@ -25,7 +25,7 @@ Microsoft is dedicated to ensuring the highest [service availability](https://se
 
 The above illustration shows that when primary Region A gets impacted during an outage, production type environments from Region A failover to secondary Region B, which is healthy. No action is taken on other types of [environments](/power-platform/admin/environments-overview) such as default, Trial, sandbox, Teams, or developer.
 
-To learn more about data protection in nonproduction environments, see [Back up and restore environments](/power-platform/admin/backup-restore-environments).
+To learn more about data protection in nonproduction environments, go to [Back up and restore environments](/power-platform/admin/backup-restore-environments).
 
 ## How will you be notified of an Outage?
 
