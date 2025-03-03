@@ -34,7 +34,7 @@ Below find various ways in which you can create a new report.
 > [!NOTE]
 > You can only create one report per tenant per calendar day.
 
-# [Power Automate / Logic Apps](#tab/Automate)
+# [Power Automate/Logic Apps](#tab/PowerAutomate)
 Add a new action to the canvas, searching for "Create a request to generate a cross-tenant connection report for a tenant, or return an existing report".  There are no parameters required.
 
 :::image type="content" source="media/tutorial-tenantisolation-flow1.png" alt-text="Cross tenant connection report create screenshot.":::
