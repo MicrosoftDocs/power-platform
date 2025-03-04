@@ -99,7 +99,7 @@ Insert a row into the `sharepointmanagedidentity` table using values from the fo
 | Table field | Value |
 | --- | --- |
 | `sharepointmanagedidentityid` | Create new GUID |
-| `uniquename` | "msft_ppmiforsharepointauth" |
+| `uniquename` | "new_ppmiforsharepointauth" |
 | `name` | "Managed Identity For SharePoint Auth" |
 | `ManagedIdentity@odata.bind` | `/managedidentities(<managedidentityid>)` replacing `<managedidentityid>` with the value from the previous section  |
 
@@ -112,7 +112,7 @@ An example using POST:
   ```json
   {
   "sharepointmanagedidentityid": "<newGuid>",
-  "uniquename": "msft_ppmiforsharepointauth",
+  "uniquename": "new_ppmiforsharepointauth",
   "name": "Managed Identity For SharePoint Auth",
   "ManagedIdentity@odata.bind": "/managedidentities(<managedIdentityId>)"
   }
