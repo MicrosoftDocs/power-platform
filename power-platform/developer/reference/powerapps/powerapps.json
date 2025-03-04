@@ -1,7 +1,7 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "Microsoft Power Platform REST API - powerapps",
+    "title": "Microsoft Power Platform REST API - PowerApps",
     "description": "Unified API for all administrative capabilities in Microsoft Power Platform.",
     "version": "2022-03-01-preview"
   },
@@ -80,7 +80,7 @@
           {
             "in": "path",
             "name": "environmentId",
-            "description": "Name field of the Environment.",
+            "description": "Name field of the environment.",
             "required": true,
             "type": "string",
             "x-ms-summary": "Environment name"
@@ -125,7 +125,7 @@
         },
         "nextLink": {
           "title": "Next Link",
-          "description": "The URL to get the next page of the Apps list. Contains the skiptoken.",
+          "description": "The URL to get the next page of the apps list. Contains the skip token.",
           "type": "string"
         }
       }
@@ -243,11 +243,11 @@
                   "type": "string"
                 },
                 "tenantId": {
-                  "description": "PowerApp owner principal tenantId.",
+                  "description": "PowerApp owner principal tenant ID.",
                   "type": "string"
                 },
                 "userPrincipalName": {
-                  "description": "PowerApp owner principal userPrincipalName.",
+                  "description": "PowerApp owner principal user principal name.",
                   "type": "string"
                 }
               }
@@ -261,7 +261,7 @@
                   "type": "string"
                 },
                 "displayName": {
-                  "description": "PowerApp creator principal displayName.",
+                  "description": "PowerApp creator principal display name.",
                   "type": "string"
                 },
                 "email": {
@@ -273,11 +273,11 @@
                   "type": "string"
                 },
                 "tenantId": {
-                  "description": "PowerApp creator principal tenantId.",
+                  "description": "PowerApp creator principal tenant ID.",
                   "type": "string"
                 },
                 "userPrincipalName": {
-                  "description": "PowerApp creator principal userPrincipalName.",
+                  "description": "PowerApp creator user principal name.",
                   "type": "string"
                 }
               }
@@ -291,7 +291,7 @@
                   "type": "string"
                 },
                 "displayName": {
-                  "description": "PowerApp last modified by principal displayName.",
+                  "description": "PowerApp last modified by principal display name.",
                   "type": "string"
                 },
                 "email": {
@@ -307,21 +307,21 @@
                   "type": "string"
                 },
                 "userPrincipalName": {
-                  "description": "PowerApp last modified by principal userPrincipalName.",
+                  "description": "PowerApp last modified by user principal name.",
                   "type": "string"
                 }
               }
             },
             "backgroundColor": {
-              "description": "PowerApp backgroundColor.",
+              "description": "PowerApp background color.",
               "type": "string"
             },
             "backgroundImageUri": {
-              "description": "PowerApp backgroundImageUri.",
+              "description": "PowerApp background image URI.",
               "type": "string"
             },
             "displayName": {
-              "description": "PowerApp displayName.",
+              "description": "PowerApp display name.",
               "type": "string"
             },
             "description": {
@@ -333,21 +333,21 @@
               "type": "object",
               "properties": {
                 "documentUri": {
-                  "description": "PowerApp appUri documentUri object.",
+                  "description": "PowerApp appUri document URI object.",
                   "type": "object",
                   "properties": {
                     "value": {
-                      "description": "PowerApp appUri documentUri value.",
+                      "description": "PowerApp appUri document URI value.",
                       "type": "string"
                     },
                     "readonlyValue": {
-                      "description": "PowerApp appUri documentUri readonlyValue.",
+                      "description": "PowerApp appUri documentUri readonly value.",
                       "type": "string"
                     }
                   }
                 },
                 "imageUris": {
-                  "description": "PowerApp appUri imageUris array.",
+                  "description": "PowerApp appUri image URI array.",
                   "type": "array",
                   "items": {
                     "type": "string"
@@ -531,12 +531,12 @@
           "x-ms-summary": "Is on premise connection"
         },
         "bypassConsent": {
-          "description": "Flag indicates bypassed api consent",
+          "description": "Flag indicates bypassed API consent",
           "type": "boolean",
           "x-ms-summary": "Bypass consent"
         },
         "apiTier": {
-          "description": "Api tier is standard or premium",
+          "description": "API tier is standard or premium",
           "type": "string",
           "x-ms-summary": "API tier"
         },
@@ -556,7 +556,7 @@
           "x-ms-summary": "Execution Restrictions"
         },
         "sharedConnectionId": {
-          "description": "String indicating the id of the shared connection",
+          "description": "String indicating the ID of the shared connection",
           "type": "string",
           "x-ms-summary": "Shared Connection Id"
         }

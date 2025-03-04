@@ -977,7 +977,7 @@
       "additionalProperties": false
     },
     "ExternalCurrencyType": {
-      "description": "Available currency type which can be allocated to environment",
+      "description": "Available currency type that can be allocated to environment",
       "enum": [
         "AppPass",
         "AI",
@@ -1049,7 +1049,7 @@
       "properties": {
         "subscriptionId": {
           "format": "uuid",
-          "description": "The tenant subscription Id.",
+          "description": "The tenant subscription ID.",
           "type": "string",
           "example": {
             "subscriptionId": "00000000-0000-0000-0000-000000000000"
@@ -1242,7 +1242,7 @@
           "$ref": "#/definitions/BillingPolicyStatus"
         },
         "geo": {
-          "description": "Specify the desired resource location for creation of an Azure Power Platform account for billing. Once set, this property cannot be updated. Power Platform environments using this ISV Contract for pay-as-you-go billing must be in the same location.",
+          "description": "Specify the desired resource location for creation of an Azure Power Platform account for billing. Once set, this property cannot be updated. Power Platform environments using this ISV contract for pay-as-you-go billing must be in the same location.",
           "type": "string",
           "items": {
             "example": [

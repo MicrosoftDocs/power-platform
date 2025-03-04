@@ -1,7 +1,7 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "Microsoft Power Platform REST API - powerpages",
+    "title": "Microsoft Power Platform REST API - Power Pages",
     "description": "Unified API for all administrative capabilities in Microsoft Power Platform.",
     "version": "2022-03-01-preview"
   },
@@ -140,7 +140,7 @@
           "Websites"
         ],
         "summary": "Get the Power Pages website details by specifying its unique identifier (ID).",
-        "description": "Get website details from Website ID.",
+        "description": "Get website details using a specified website ID.",
         "operationId": "GetWebsiteById",
         "produces": [
           "application/json"
@@ -210,7 +210,7 @@
           {
             "in": "header",
             "name": "Operation-Location",
-            "description": "Operation Location.",
+            "description": "Operation location.",
             "required": true,
             "type": "string"
           },
@@ -273,8 +273,8 @@
         "tags": [
           "Websites"
         ],
-        "summary": "Enable Web Application Firewall on a Power Pages website.",
-        "description": "Enable Web Application Firewall on the given website.",
+        "summary": "Enable web application firewall on a Power Pages website.",
+        "description": "Enable web application firewall on the given website.",
         "operationId": "EnableWAF",
         "produces": [
           "application/json"
@@ -345,8 +345,8 @@
         "tags": [
           "Websites"
         ],
-        "summary": "Get the Web Application Firewall status.",
-        "description": "Get the status of Web Application Firewall associated with the given website.",
+        "summary": "Get the web application firewall status.",
+        "description": "Get the status of web application firewall associated with the given website.",
         "operationId": "GetWAFStatus",
         "produces": [
           "application/json"
@@ -468,8 +468,8 @@
         "tags": [
           "Websites"
         ],
-        "summary": "Stamp Bootstrap version 5 status as enabled for website.",
-        "description": "Stamp Bootstrap version 5 status as enabled for website.",
+        "summary": "Stamp bootstrap version five (v5) status as enabled for website.",
+        "description": "Stamp bootstrap version five (v5) status as enabled for website.",
         "operationId": "SetPortalBootstrapV5Enabled",
         "produces": [
           "application/json"
@@ -1068,7 +1068,7 @@
           "type": "boolean"
         },
         "applicationUserAadAppId": {
-          "description": "Azure Active Directory (AAD) object unique identifier (ID)",
+          "description": "Entra ID (formerly Azure Active Directory) object unique identifier (ID)",
           "type": "string"
         },
         "ownerId": {
@@ -1108,7 +1108,7 @@
       }
     },
     "WebApplicationFirewallStatus": {
-      "description": "Web Application Firewall status",
+      "description": "Web application firewall status",
       "enum": [
         "None",
         "Creating",
