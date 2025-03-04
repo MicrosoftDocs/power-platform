@@ -1,7 +1,7 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "Microsoft Power Platform REST API - environmentmanagement",
+    "title": "Microsoft Power Platform REST API - environment management",
     "description": "Unified API for all administrative capabilities in Microsoft Power Platform.",
     "version": "2022-03-01-preview"
   },
@@ -107,7 +107,7 @@
         "tags": [
           "EnvironmentManagementSettings"
         ],
-        "summary": "Gets Environment Management Setting by ID. Only columns provided in the $select queryOption will be returned.\r\nA list of selectable properties is defined in the Microsoft.Dynamics.Artemis.Infrastructure.Models.EnvironmentManagementSetting type.",
+        "summary": "Gets environment management setting by ID. Only columns provided in the $select queryOption will be returned.\r\nA list of selectable properties is defined in the Microsoft.Dynamics.Artemis.Infrastructure.Models.EnvironmentManagementSetting type.",
         "operationId": "ListEnvironmentManagementSettings",
         "produces": [
           "application/json;odata.metadata=minimal;odata.streaming=true",
@@ -138,7 +138,7 @@
           {
             "in": "query",
             "name": "$top",
-            "description": "Number of records to retrieve. If not set, 500 records are returned.",
+            "description": "Number of records to retrieve. If not set, five humdred records are returned.",
             "type": "integer"
           },
           {
@@ -187,7 +187,7 @@
         "tags": [
           "EnvironmentManagementSettings"
         ],
-        "summary": "Updates fields on a EnvironmentManagementSetting. This API currently doesn't return any entity data in the response body.",
+        "summary": "Updates fields on the EnvironmentManagementSetting. This API currently doesn't return any entity data in the response body.",
         "operationId": "UpdateEnvironmentManagementSettings",
         "consumes": [
           "application/json;odata.metadata=minimal;odata.streaming=true",
@@ -665,7 +665,7 @@
         "tags": [
           "Environments"
         ],
-        "summary": "Retrieves a list of environments.",
+        "summary": "Retrieve a list of environments.",
         "description": "Returns a list of environments available for the authenticated user.",
         "operationId": "ListEnvironmentsForUser",
         "produces": [
@@ -696,7 +696,7 @@
         "tags": [
           "Environments"
         ],
-        "summary": "Retrieves a single environment by ID.",
+        "summary": "Retrieve a single environment by ID.",
         "operationId": "GetEnvironmentByIdForUser",
         "produces": [
           "application/json"
@@ -735,7 +735,7 @@
       "type": "object",
       "properties": {
         "objectResult": {
-          "description": "Gets or sets the Id of the entity being created in the response",
+          "description": "Gets or sets the ID of the entity being created in the response",
           "type": "string"
         },
         "errors": {
@@ -861,7 +861,7 @@
           "type": "string"
         },
         "debugErrors": {
-          "description": "Gets or sets debug errors, only shown for private/local testing",
+          "description": "Gets or sets debug errors, that are only shown for private/local testing",
           "type": "string"
         },
         "responseMessage": {
@@ -875,7 +875,7 @@
       "type": "object",
       "properties": {
         "id": {
-          "description": "The value of id property on the environment object.",
+          "description": "The value of ID property on the environment object.",
           "type": "string"
         },
         "displayName": {
@@ -1013,7 +1013,7 @@
         },
         "extensions": {
           "type": "object",
-          "additionalProperties": { },
+          "additionalProperties": {},
           "readOnly": true
         }
       },
