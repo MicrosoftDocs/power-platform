@@ -14,7 +14,7 @@ search.audienceType:
   - admin
 ---
 
-# Managed operations in Power Platform
+# Managed operations
 
 With tens of millions monthly users, Microsoft Power Platform transforms how organizations deliver modern AI-powered customer experiences, improved employee satisfaction, and business results. Customers increasingly rely on the Power Platform to run global-scale, mission critical workloads, where the risk and business impact of failure are high. These workloads demand operational excellence: highly controlled change management to avoid unexpected disruptions to stability and quality, deep insights into ongoing operations to detect and resolve issues, and resiliency to recover from failures.
 
