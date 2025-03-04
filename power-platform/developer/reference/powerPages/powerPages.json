@@ -1068,7 +1068,7 @@
           "type": "boolean"
         },
         "applicationUserAadAppId": {
-          "description": "Azure Active Directory (AAD) object unique identifier (ID)",
+          "description": "Entra ID (formerly Azure Active Directory) object unique identifier (ID)",
           "type": "string"
         },
         "ownerId": {
@@ -1108,7 +1108,7 @@
       }
     },
     "WebApplicationFirewallStatus": {
-      "description": "Web Application Firewall status",
+      "description": "Web application firewall status",
       "enum": [
         "None",
         "Creating",
