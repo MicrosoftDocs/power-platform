@@ -16,5 +16,5 @@ Adopting Power Platform can revolutionize the way your organization operates, dr
 
 1. [Establish a training and upskilling strategy](training-strategy.md). Learn how to create a comprehensive plan for training and upskilling employees to effectively use Power Platform.
 1. [Provide internal training events](in-a-day.md). Organize and conduct internal training events to enhance Power Platform skills within your organization.
-1. [Set up a community hub](wiki-community.md). Explore tools to use and build a community hub that fosters collaboration, knowledge sharing, and support among Power Platform users.
+1. [Set up tools to support your community](wiki-community.md). Explore tools to use and build a community hub that fosters collaboration, knowledge sharing, and support among Power Platform users.
 1. [Envision solutions](solution-envisioning.md). Identify and envision high-value use cases to maximize the impact of Power Platform adoption.
