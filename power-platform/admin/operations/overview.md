@@ -1,7 +1,7 @@
 ---
 title: Managed operations
 description: Learn how to utilize managed operations capabilities in Power Platform to effectively build, deploy, and operate your workloads.
-ms.date: 11/19/2024
+ms.date: 03/04/2025
 ms.service: power-platform
 ms.topic: overview
 ms.custom: NewPPAC
