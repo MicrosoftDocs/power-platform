@@ -1123,7 +1123,7 @@
                   href: connect-onedrive-business.md
                 - name: Connect to Yammer
                   href: connect-yammer.md
-        - name: Unified admin experience for finance and operations apps (preview)
+        - name: Unified admin experience for finance and operations apps
           items:
             - name: Overview of unified admin experience for finance and operations apps
               href: unified-experience/finance-operations-apps-overview.md
