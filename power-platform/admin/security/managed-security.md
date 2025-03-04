@@ -4,7 +4,7 @@ description: Learn about managed security environments in Power Platform admin c
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/18/2024
+ms.date: 03/04/2025
 ms.custom: NewPPAC
 author: matapg007
 ms.author: matgupta
@@ -17,7 +17,7 @@ search.audienceType:
 
 In today's AI-driven world, safeguarding your enterprise data and business processes is more critical than ever. Managed security provides comprehensive solutions to protect your data from threats, control access, prevent data exfiltration, and gain visibility into your security posture. It also helps assess risks and ensures compliance with various regulations, making it a robust tool for today's cybersecurity challenges. 
 
-## What can you do with Managed security? 
+## What can you do with managed security? 
 
 Managed security is a suite of premium capabilities designed to offer advanced protection and empower security administrators to manage and secure access to customer data and resources effectively. It brings together our most advanced threat protection, data protection and privacy, identity and access management, and compliance capabilities to empower customers to meet today’s cyber security challenges.  
 
@@ -36,4 +36,4 @@ Managed security encompasses, but isn't limited to, the following capabilities:
 ## Learn more
 Learn more about each individual feature within managed security for more details on how to turn on the respective capabilities.
   
-The **Security page** serves as the primary avenue to access Managed security capabilities in the Power Platform admin center. It provides deep insights into your security posture, offers tailored recommendations, and facilitates comprehensive posture management. This allows security administrators to navigate the complexities of modern cybersecurity with confidence and precision. Learn more in [Security page overview](security-overview.md).
+The **Security page** serves as the primary avenue to access managed security capabilities in the Power Platform admin center. It provides deep insights into your security posture, offers tailored recommendations, and facilitates comprehensive posture management. This allows security administrators to navigate the complexities of modern cybersecurity with confidence and precision. Learn more in [Security page overview](security-overview.md).
