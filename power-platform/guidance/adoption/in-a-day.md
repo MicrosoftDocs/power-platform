@@ -1,11 +1,11 @@
 ---
-title: "Internal training events - Microsoft Power Platform | MicrosoftDocs"
+title: "Provide internal training events"
 description: "Microsoft has created a variety of hands-on lab content, ranging from App in an Hour, App in a Day, to Admin in a Day."
 author: manuelap-msft
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/09/2020
+ms.date: 02/28/2025
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: sericks

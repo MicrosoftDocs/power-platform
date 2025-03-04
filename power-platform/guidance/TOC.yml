@@ -107,7 +107,7 @@
               href: adoption/cds-usage.md
             - name: Ensure data resilience
               href: adoption/data-resilience.md
-            - name: Support
+            - name: Define your support process
               items:
                 - name: Support strategy - Overview
                   href: adoption/support-strategy.md
@@ -121,11 +121,15 @@
               href: adoption/manage-resistance.md
         - name: Ready
           items: 
-            - name: Training and upskilling strategy
+            - name: Overview 
+              href: adoption/ready-overview.md
+            - name: Establish a training and upskilling strategy
               href: adoption/training-strategy.md
-            - name: Internal training events
+            - name: Set up a community hub
+              href: adoption/wiki-community.md          
+            - name: Host internal training events
               href: adoption/in-a-day.md
-            - name: Solution envisioning workshops
+            - name: Envision solutions
               href: adoption/solution-envisioning.md
         - name: Nurture
           items: 
@@ -137,8 +141,7 @@
                   href: adoption/champions.md
                 - name: Onboard new makers
                   href: adoption/onboard-makers.md
-                - name: Create an internal wiki and community
-                  href: adoption/wiki-community.md
+             
                 - name: Share your own templates and re-usable components
                   href: adoption/reusable.md
             - name: Evangelism

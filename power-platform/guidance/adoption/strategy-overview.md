@@ -24,7 +24,6 @@ By using Power Platform, you can:
 
 To take advantage of this potential, start by documenting your Power Platform adoption vision in a way that addresses both business and technical stakeholders.
 
-##  Key Adoption strategies
 This approach helps you drive adoption efforts that capture targeted business value. The following steps help you document your adoption strategy efficiently:
 
 1. [Assess your Adoption strategy](take-assessment.md). Take the Power Platform adoption assessment and use the results from the assessment to continue building your Power Platform Adoption strategy.

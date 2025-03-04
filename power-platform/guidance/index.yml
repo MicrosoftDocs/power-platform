@@ -113,12 +113,14 @@ productDirectory:
       # imageSrc should be square in ratio with no white space
       imageSrc: ./media/innovate.svg
       links:
-        - url: /power-platform/guidance/adoption/methodology
-          text: Establish a training and upskilling strategy
-        - url: /power-platform/guidance/adoption/strategy-best-practices
-          text: Host internal training events
-        - url: /power-platform/guidance/adoption/admin-best-practices
-          text: Envision solutions
+        - text: Establish a training and upskilling strategy
+          url: adoption/training-strategy.md
+        - text: Set up a community hub
+          url: adoption/wiki-community.md          
+        - text: Host internal training events
+          url: adoption/in-a-day.md
+        - text: Envision solutions
+          url: adoption/solution-envisioning.md
     - title: Nurture
       # imageSrc should be square in ratio with no white space
       imageSrc: ./media/nurture.svg
