@@ -169,7 +169,7 @@
           "Recommendations"
         ],
         "summary": "Get action schema.",
-        "description": "Gets schema for an action.",
+        "description": "Gets the schema for an action.",
         "operationId": "GetActionSchema",
         "produces": [
           "application/json"
@@ -634,7 +634,7 @@
         },
         "resourceUsage": {
           "format": "double",
-          "description": "Number of unique users who used the resource in last 30 days",
+          "description": "Number of unique users who used the resource in last thirty days",
           "type": "number",
           "x-ms-summary": "Resource usage"
         },
