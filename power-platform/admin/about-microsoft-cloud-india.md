@@ -13,6 +13,8 @@ search.audienceType:
 ---
 # About the Microsoft Cloud India datacenter
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 <a name="BKMK_NewCloud"></a>   
 ## New Microsoft Cloud Services in India  
   

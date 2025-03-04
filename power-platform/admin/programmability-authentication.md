@@ -14,6 +14,8 @@ search.audienceType:
 ---
 
 # Authentication
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 This article provides an overview of the authentication setup for the various programmability tools.
 
 ## Register a client application in Microsoft Entra ID

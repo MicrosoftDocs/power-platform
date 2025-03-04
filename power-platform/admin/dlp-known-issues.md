@@ -18,6 +18,8 @@ search.audienceType:
 ---
 
 # Known limitations
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 Below are known limitations to know about when using our suite of data loss prevention (DLP) capabilities:
 
 ## General

@@ -14,6 +14,8 @@ search.audienceType:
 ---
 
 # Permission reference (preview)
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 This article provides an overview of the Power Platform API (preview) granular permissions.  These permissions will be initially available for registering client applications in Microsoft Entra and may become available in security role form in the future.
 
 > [!IMPORTANT]

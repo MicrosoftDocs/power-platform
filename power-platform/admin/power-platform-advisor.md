@@ -16,6 +16,8 @@ search.audienceType:
 
 # Use Power Platform Advisor
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 Power Platform Advisor is your guide to personalized recommendations to optimize your Power Platform tenant. Advisor analyzes all Managed Environments and the apps in these environments within your Power Platform tenant. Advisor offers solutions to enhance security, reliability, and overall health.
 
 With Advisor, administrators can:

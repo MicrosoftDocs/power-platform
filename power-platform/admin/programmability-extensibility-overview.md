@@ -14,6 +14,8 @@ search.audienceType:
 
 # Programmability and extensibility overview (preview)
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 Microsoft Power Platform administrators often have the need to orchestrate and automate routine activities for their tenant.  This can be accomplished in a variety of ways using the tools outlined below.  

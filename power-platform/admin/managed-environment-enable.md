@@ -14,6 +14,8 @@ search.audienceType:
 ---
 # Enable Managed Environments
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 <!-- https://go.microsoft.com/fwlink/?linkid=2194805 and 2211456 -->
 
 Admins can enable, disable, and edit Managed Environments in the Power Platform admin center. Admins can also use PowerShell to disable Managed Environments.

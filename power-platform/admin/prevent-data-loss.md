@@ -21,6 +21,8 @@ ms.contributors:
 
 # Manage data policies
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 An organization's data is critical to its success. Its data needs to be readily available for decision making, but the data needs to be protected so that it isn't shared with audiences who shouldn't have access to it. To protect this data, you can use Power Apps to create and enforce data policies that define the consumer connectors that specific business data can be shared with. For example, an organization that uses Power Apps might not want the business data that's stored in SharePoint to be automatically published to its Twitter feed.
 
 To create, edit, or delete data policies, you must have either Environment Admin or Power Platform admin permissions. 
