@@ -120,7 +120,7 @@
           "Applications"
         ],
         "summary": "Trigger the installation of an application package, based on the package unique name, into a target environment.",
-        "description": "Trigger the installation of an application package, based on the package unique name, to be installed into a target environment. the client can also include a custom payload when requesting installation of an application package.",
+        "description": "Trigger the installation of an application package, based on the package unique name, to be installed into a target environment. The client can also include a custom payload when requesting installation of an application package.",
         "operationId": "InstallApplicationPackage",
         "consumes": [
           "application/json"
@@ -257,7 +257,7 @@
       "properties": {
         "id": {
           "format": "uuid",
-          "description": "Available package ID or instance package ID, where both map to the ApplicationPackage ID",
+          "description": "Available package ID or instance package ID, where both map to the application package ID",
           "type": "string"
         },
         "uniqueName": {
@@ -321,7 +321,7 @@
         },
         "instancePackageId": {
           "format": "uuid",
-          "description": "Instance package ID that is used only for a retry of package installation (for example: Reinstall).",
+          "description": "Instance package ID that is used only for a retry of package installation (for example, a reinstall).",
           "type": "string"
         },
         "state": {

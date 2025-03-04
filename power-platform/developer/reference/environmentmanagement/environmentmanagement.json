@@ -138,7 +138,7 @@
           {
             "in": "query",
             "name": "$top",
-            "description": "Number of records to retrieve. If not set, five humdred records are returned.",
+            "description": "Number of records to retrieve. If not set, five humdred (500) records are returned.",
             "type": "integer"
           },
           {
