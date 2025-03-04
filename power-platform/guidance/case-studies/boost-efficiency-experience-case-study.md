@@ -5,7 +5,7 @@ author: robstand
 ms.author: sashi
 ms.topic: overview
 ms.subservice: guidance
-ms.date: 08/06/2024
+ms.date: 03/04/2025
 
 ---
 
@@ -149,13 +149,13 @@ By naming the custom agent Fifi, Daniel helped it become an integral and accepte
 >
 > — *Daniel Schaurich de Oliveira, CEO*
 
-Fifi uses [custom topics](/microsoft-copilot-studio/authoring-create-edit-topics) to generate human-like responses to frequently asked questions. Each topic is based on defined [knowledge sources](/microsoft-copilot-studio/knowledge-copilot-studio) that are used for [generative answers](/microsoft-copilot-studio/nlu-boost-conversations). Fifi uses [Bing Custom Search](/microsoft-copilot-studio/guidance/optimize-prompts-bing-custom-search) to gather results from external websites.
+Fifi uses [custom topics](/microsoft-copilot-studio/authoring-create-edit-topics) to generate human-like responses to frequently asked questions. Each topic is based on defined [knowledge sources](/microsoft-copilot-studio/knowledge-copilot-studio) that are used for generative answers. Fifi uses [Bing Custom Search](/microsoft-copilot-studio/guidance/optimize-prompts-bing-custom-search) to gather results from external websites.
 
 Previously, Daniel collated frequently asked questions from the team to create internal SharePoint Online content that Fifi could consume. Now, the team schedules and records training sessions to make ongoing content development faster. Fifi uses the meeting transcript to create a tutorial. This tutorial is then uploaded to SharePoint Online for consumption through Copilot Studio.
 
 ## Boost your custom agent's conversation with knowledge sources and Bing Custom Search
 
-Fifi uses the [generative answers](/microsoft-copilot-studio/nlu-boost-conversations) capability in Copilot Studio to find information across multiple internal and external [knowledge sources](/microsoft-copilot-studio/knowledge-copilot-studio). Therefore, Fifi can provide immediate answers to diverse and, often, unpredictable customer questions.
+Fifi uses the [generative answers](/microsoft-copilot-studio/nlu-boost-conversations) capability in Copilot Studio to find information across multiple internal and external knowledge sources. Therefore, Fifi can provide immediate answers to diverse and, often, unpredictable customer questions.
 
 Daniel configured Fifi to use [Bing Custom Search](/microsoft-copilot-studio/guidance/optimize-prompts-bing-custom-search) to generate responses based on information from selected partner airline and hotel websites. This approach ensures that the retrieved information is authoritative and reliable.
 
@@ -269,5 +269,4 @@ Daniel created a Copilot Studio topic and an associated Power Automate automatio
 - [How to use Copilot to help build your automation](/power-automate/get-started-with-copilot)
 - [Automate a business process using Power Automate training](/training/paths/automate-process-power-automate/)
 - [Building your own copilot with Copilot Studio](https://www.microsoft.com/microsoft-copilot/blog/copilot-studio/building-your-own-copilot-with-copilot-studio/)
-- [Quickstart guide for building copilots with generative AI](/microsoft-copilot-studio/nlu-gpt-quickstart)
 - [Introduction to Generative AI - Exploring the basics](/training/modules/intro-generative-ai-explore-basics/)
