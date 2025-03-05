@@ -6,6 +6,7 @@ ms.topic: conceptual
 author: marianaraujo 
 ms.subservice: admin
 ms.author: maaraujo
+ms.custom: NewPPAC
 ms.reviewer: sericks
 search.audienceType: 
   - admin
@@ -215,19 +216,18 @@ Storage consumed by Dataverse search is already reported at the environment-leve
 - **Dataverse search – Structured index** for database storage indexing  
 -	**Dataverse search – Unstructured index** for files storage indexing. 
  
-Respectively, Dataverse search is reported as part of database and files storage consumption in the Summary tab. Dataverse search can also be viewed at the Environment report in Power Platform admin center or Capacity report:
+Respectively, Dataverse search is reported as part of database and files storage consumption in the **Summary** tab. Dataverse search can also be viewed in the **Environment** report in Power Platform admin center or **Capacity** report:
 
-•	Legacy PPAC: Resources > Capacity > Dataverse tab 
-•	New PPAC: Licensing > Capacity add-ons > Dataverse tab (Select Chart icon) 
-•	Legacy PPAC: Billing > Licenses > Dataverse > Environment tab 
-•	New PPAC: Licensing > Dataverse > Environments tab (Table view in main page) 
- 
+-	New admin center: **Licensing > Capacity add-ons > Dataverse** tab (Select **Chart** icon)
+-	Classic admin center: **Resources > Capacity > Dataverse** tab 
+-	New admin center: **Licensing > Dataverse > Environments** tab (Table view in main page) 
+-	Classic admin center: **Billing > Licenses > Dataverse > Environment** tab 
+
 ## Dataverse search entitlements
 
 Dataverse search consumes against the Dataverse entitlements available within your tenant. 
-•	Dataverse search structured index consumption counts towards Dataverse database capacity (DBs) 
-•	Dataverse search unstructured index consumption counts towards Dataverse file capacity (Files) 
-
+- Dataverse search structured index consumption counts towards Dataverse database capacity (DBs)
+- Dataverse search unstructured index consumption counts towards Dataverse file capacity (Files) 
 
 #### Allocate capacity for an environment 
 
