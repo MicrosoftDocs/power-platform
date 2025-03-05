@@ -6,7 +6,7 @@ ms.reviewer: sericks
 
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 03/03/2025
+ms.date: 03/04/2025
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
@@ -85,5 +85,5 @@ Use the **access_token** value in subsequent calls to the Power Platform API usi
 
 
 
-### See also
+### Related content
 [Preview: Creating a service principal application via API](powerplatform-api-create-service-principal.md)
