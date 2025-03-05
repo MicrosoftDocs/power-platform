@@ -1,7 +1,7 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "Microsoft Power Platform REST API",
+    "title": "Microsoft Power Platform REST API - licensing",
     "description": "Unified API for all administrative capabilities in Microsoft Power Platform.",
     "version": "2022-03-01-preview"
   },
@@ -24,7 +24,7 @@
           {
             "in": "query",
             "name": "$top",
-            "description": "Top limit of results.",
+            "description": "The ISV contract ID.",
             "type": "string"
           },
           {
@@ -117,7 +117,7 @@
           {
             "in": "path",
             "name": "billingPolicyId",
-            "description": "The billing policy ID,",
+            "description": "The billing policy ID.",
             "required": true,
             "type": "string"
           },
@@ -182,7 +182,7 @@
           {
             "in": "body",
             "name": "body",
-            "description": "The billing policy.",
+            "description": "The billing policy",
             "schema": {
               "$ref": "#/definitions/BillingPolicyPutRequestModel"
             }
@@ -356,162 +356,6 @@
         }
       }
     },
-    "/licensing/environments/{environmentId}/allocations": {
-      "get": {
-        "tags": [
-          "CurrencyAllocation"
-        ],
-        "summary": "Get currency allocations for the environment.",
-        "operationId": "GetCurrencyAllocationByEnvironment",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "in": "path",
-            "name": "environmentId",
-            "description": "The environment ID.",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "in": "query",
-            "name": "api-version",
-            "description": "The API version.",
-            "required": true,
-            "type": "string",
-            "default": "2022-03-01-preview"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Success",
-            "schema": {
-              "$ref": "#/definitions/AllocationsByEnvironmentResponseModelV1"
-            }
-          },
-          "400": {
-            "description": "Bad Request"
-          },
-          "401": {
-            "description": "Unauthorized"
-          },
-          "403": {
-            "description": "Forbidden"
-          },
-          "404": {
-            "description": "Not Found"
-          }
-        }
-      },
-      "patch": {
-        "tags": [
-          "CurrencyAllocation"
-        ],
-        "summary": "Allocate and deallocate the currencies for the environment.",
-        "operationId": "PatchCurrencyAllocationByEnvironment",
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "in": "path",
-            "name": "environmentId",
-            "description": "The environment ID.",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "in": "query",
-            "name": "api-version",
-            "description": "The API version.",
-            "required": true,
-            "type": "string",
-            "default": "2022-03-01-preview"
-          },
-          {
-            "in": "body",
-            "name": "body",
-            "description": "Environment currency allocation.",
-            "schema": {
-              "$ref": "#/definitions/AllocationsByEnvironmentPatchRequestModelV1"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Success",
-            "schema": {
-              "$ref": "#/definitions/AllocationsByEnvironmentResponseModelV1"
-            }
-          },
-          "400": {
-            "description": "Bad Request"
-          },
-          "401": {
-            "description": "Unauthorized"
-          },
-          "403": {
-            "description": "Forbidden"
-          },
-          "404": {
-            "description": "Not Found"
-          }
-        }
-      }
-    },
-    "/licensing/billingPolicies/{billingPolicyId}/refreshProvisioningStatus": {
-      "post": {
-        "tags": [
-          "BillingPolicy"
-        ],
-        "summary": "Refresh the billing policy provisioning status.",
-        "operationId": "RefreshProvisioningStatus",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "in": "path",
-            "name": "billingPolicyId",
-            "description": "The billing policy ID.",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "in": "query",
-            "name": "api-version",
-            "description": "The API version.",
-            "required": true,
-            "type": "string",
-            "default": "2022-03-01-preview"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Success",
-            "schema": {
-              "$ref": "#/definitions/BillingPolicyResponseModel"
-            }
-          },
-          "400": {
-            "description": "Bad Request"
-          },
-          "401": {
-            "description": "Unauthorized"
-          },
-          "403": {
-            "description": "Forbidden"
-          },
-          "404": {
-            "description": "Not Found"
-          }
-        }
-      }
-    },
     "/licensing/billingPolicies/{billingPolicyId}/environments/add": {
       "post": {
         "tags": [
@@ -604,6 +448,162 @@
         "responses": {
           "200": {
             "description": "Success"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/licensing/billingPolicies/{billingPolicyId}/refreshProvisioningStatus": {
+      "post": {
+        "tags": [
+          "BillingPolicy"
+        ],
+        "summary": "Refresh the billing policy provisioning status.",
+        "operationId": "RefreshProvisioningStatus",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "billingPolicyId",
+            "description": "The billing policy ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/BillingPolicyResponseModel"
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/licensing/environments/{environmentId}/allocations": {
+      "get": {
+        "tags": [
+          "CurrencyAllocation"
+        ],
+        "summary": "Get currency allocations for the environment.",
+        "operationId": "GetCurrencyAllocationByEnvironment",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The environment ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/AllocationsByEnvironmentResponseModelV1"
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      },
+      "patch": {
+        "tags": [
+          "CurrencyAllocation"
+        ],
+        "summary": "Allocate and deallocate the currencies for the environment.",
+        "operationId": "PatchCurrencyAllocationByEnvironment",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The environment ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "description": "Environment currency allocation.",
+            "schema": {
+              "$ref": "#/definitions/AllocationsByEnvironmentPatchRequestModelV1"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/AllocationsByEnvironmentResponseModelV1"
+            }
           },
           "400": {
             "description": "Bad Request"
@@ -736,7 +736,7 @@
           {
             "in": "body",
             "name": "body",
-            "description": "The ISV contract.",
+            "description": "The ISV contract",
             "schema": {
               "$ref": "#/definitions/IsvContractPostRequestModel"
             }
@@ -842,7 +842,7 @@
           {
             "in": "body",
             "name": "body",
-            "description": "The ISV contract.",
+            "description": "The ISV contract",
             "schema": {
               "$ref": "#/definitions/IsvContractPutRequestModel"
             }
@@ -954,7 +954,7 @@
         },
         "allocated": {
           "format": "int32",
-          "description": "Specify the currency count.",
+          "description": "Specify the currency count",
           "type": "integer",
           "example": 10
         }
@@ -969,7 +969,7 @@
         },
         "allocated": {
           "format": "int32",
-          "description": "The allocated count of currency type.",
+          "description": "The allocated count of currency type",
           "type": "integer",
           "example": 10
         }
@@ -977,7 +977,7 @@
       "additionalProperties": false
     },
     "ExternalCurrencyType": {
-      "description": "Available currency type which can be allocated to environment.",
+      "description": "Available currency type that can be allocated to environment",
       "enum": [
         "AppPass",
         "AI",
@@ -1242,7 +1242,7 @@
           "$ref": "#/definitions/BillingPolicyStatus"
         },
         "geo": {
-          "description": "Specify the desired resource location for creation of an Azure Power Platform account for billing. Once set, this property cannot be updated. Power Platform environments, using this ISV contract for pay-as-you-go billing, must be in the same location.",
+          "description": "Specify the desired resource location for creation of an Azure Power Platform account for billing. Once set, this property cannot be updated. Power Platform environments using this ISV contract for pay-as-you-go billing must be in the same location.",
           "type": "string",
           "items": {
             "example": [
@@ -1441,7 +1441,7 @@
       "scopes": {
         ".default": ".default"
       },
-      "description": "Microsoft Entra ID OAuth2."
+      "description": "Microsoft Entra ID OAuth2"
     }
   },
   "security": [
