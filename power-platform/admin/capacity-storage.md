@@ -208,6 +208,32 @@ In the **Usage per storage type** tile, you can view the consumption of your Dat
 ##### Consumption per table 
 In the **Consumption per table** section, you can view the amount of storage consumed by each Dataverse table. To see table consumption for a specific storage type, select **Database**, **File**, or **Log** in the **Usage per storage type tile**. Select the  table name for the consumption trend, with the option to track daily usage trends for up to the past three months. 
 
+## Dataverse search consumption
+
+Storage consumed by Dataverse search is already reported at the Environment level as a table called “RelevanceSearch”.   
+Moving forward, this table will be available for both Database and File storage consumption and renamed to match accordingly:
+
+•	“Dataverse search – Structured index” for Database storage indexing and  
+•	“Dataverse search – Unstructured index” for Files storage indexing. 
+
+![image](https://github.com/user-attachments/assets/1c629fb9-a9da-4458-bc1b-7558565574f5)
+
+ 
+Respectively, Dataverse search will be reported all up as part of Database and Files storage consumption in the summary tab. 
+Dataverse search can also be viewed at the Environment report in Power Platform Admin Center or Capacity report:
+
+•	Legacy PPAC: Resources > Capacity > Dataverse tab 
+•	New PPAC: Licensing > Capacity add-ons > Dataverse tab (Select Chart icon) 
+•	Legacy PPAC: Billing > Licenses > Dataverse > Environment tab 
+•	New PPAC: Licensing > Dataverse > Environments tab (Table view in main page) 
+ 
+## Dataverse search entitlements
+
+Dataverse search consumes against the Dataverse entitlements available within your tenant. 
+•	Dataverse search structured index consumption counts towards Dataverse database capacity (DBs) 
+•	Dataverse search unstructured index consumption counts towards Dataverse file capacity (Files) 
+
+
 #### Allocate capacity for an environment 
 
 In the **Dataverse** tab, you can allocate capacity to a specific environment. Once capacity is allocated, you can view the status of your environments to determine whether they are within capacity or in an overage state.
@@ -314,7 +340,7 @@ As part of moving file-type data such as “Annotation” and “Attachment” o
 
 ### Do indexes affect database storage usage?
 
-Possibly. Database storage includes both the database rows and index files used to improve search performance. Indexes are created and optimized for peak performance and are updated frequently by the system by analyzing data use patterns. No user action is needed to optimize the indexes, as all Dataverse stores have tuning enabled by default. A fluctuation in database storage can be represented by an increased or decreased number of indexes on the database. Dataverse is continually being tuned to increase efficiency and incorporate new technologies that improve user experience and optimize storage capacity.  Common causes for an increase in index size are:
+Database storage includes both the database rows and index files used to improve search performance. Indexes, such as Dataverse search, are created and optimized for peak performance and are updated frequently by the system by analyzing data use patterns. No user action is needed to optimize the indexes, as all Dataverse stores have tuning enabled by default. A fluctuation in database storage can be represented by an increased or decreased number of indexes on the database. Dataverse is continually being tuned to increase efficiency and incorporate new technologies that improve user experience and optimize storage capacity.  Common causes for an increase in index size are:
 
 - An organization making use of new functionality (this can be custom, out-of-the-box, or part of an update or solution installation).
 - Data volume or complexity changes.
@@ -330,6 +356,17 @@ Because custom Quick Find lookups are created by an admin in the org, these can 
 
 - Removing unneeded columns and/or tables
 - Eliminating multiline text columns from inclusion
+
+### What actions can Admins take?
+To ensure optimal operations for the organization, Admins with the proper permissions can either: increase capacity storage or reduce Dataverse search by performing all the below
+1.	Go to the Power Platform Admin Center and turn off Copilot experiences in model-driven apps 
+2.	Disable Copilot experiences in Microsoft Copilot Studio
+3.	Removing knowledge in Microsoft Copilot Studio
+4.	Disable Copilot in Dynamics 365 applications
+5.	Disable AI Prompts
+6.	Go to the Power Platform Admin Center and turn Dataverse search “Off”: FAQ for Dataverse search - Power Apps | Microsoft Learn. It is strongly recommended to NOT perform this as this would directly impact all dependent generative AI experiences in your different applications, and all users using them.
+ 
+It is strongly recommended to NOT perform the above as this would directly impact all dependent generative AI experiences in your different applications, and all users using them. 
 
 ### What is the DataverseSearch table and how can I reduce it?
 
