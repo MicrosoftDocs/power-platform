@@ -210,10 +210,10 @@ You can turn off pay-as-you-go for an environment at any time by doing either of
 
 - Delete the environment's billing policy.
 
-   As soon as you take either action above, the environment ceases to be pay-as-you-go and goes back to functioning as a regular environment. Any usage that was already incurred up to this point is billed to your Azure subscription, but no further usage is charged.
+As soon as you take either action above, the environment ceases to be pay-as-you-go and goes back to functioning as a regular environment. Any usage that was already incurred up to this point is billed to your Azure subscription, but no further usage is charged.
 
-   > [!NOTE]
-   > Deleting the billing policy in the Power Platform admin center doesn't automatically delete its corresponding Power Platform account resource. You can delete this resource in the Azure portal.
+> [!NOTE]
+> Deleting the billing policy in the Power Platform admin center doesn't automatically delete its corresponding Power Platform account resource. You can delete this resource in the Azure portal.
 
 ## Next step
 
