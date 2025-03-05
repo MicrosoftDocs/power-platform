@@ -352,16 +352,17 @@ Because custom Quick Find lookups are created by an admin in the org, these can 
 - Removing unneeded columns and/or tables
 - Eliminating multiline text columns from inclusion
 
-### What actions can Admins take?
-To ensure optimal operations for the organization, Admins with the proper permissions can either: increase capacity storage or reduce Dataverse search by performing all the below
-1.	Go to the Power Platform Admin Center and turn off Copilot experiences in model-driven apps 
+### What actions can admins take?
+To ensure optimal operations for the organization, admins with the proper permissions can either: increase capacity storage or reduce Dataverse search by performing all the steps below.
+
+1.	Go to the Power Platform admin center and turn off Copilot experiences in model-driven apps 
 2.	Disable Copilot experiences in Microsoft Copilot Studio
 3.	Removing knowledge in Microsoft Copilot Studio
 4.	Disable Copilot in Dynamics 365 applications
 5.	Disable AI Prompts
 6.	Go to the Power Platform Admin Center and turn Dataverse search “Off”: FAQ for Dataverse search - Power Apps | Microsoft Learn. It is strongly recommended to NOT perform this as this would directly impact all dependent generative AI experiences in your different applications, and all users using them.
  
-It is strongly recommended to NOT perform the above as this would directly impact all dependent generative AI experiences in your different applications, and all users using them. 
+We strongly recommended to NOT perform the above as this would directly impact all dependent generative AI experiences in your different applications, and all users using them. 
 
 ### What is the DataverseSearch table and how can I reduce it?
 
