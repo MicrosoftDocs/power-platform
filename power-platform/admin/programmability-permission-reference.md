@@ -3,10 +3,9 @@ title: Programmability and Extensibility - Permission reference
 description: Overview of granular permissions available in Power Platform programmability tools
 author: laneswenka
 ms.reviewer: sericks
-
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 03/03/2025
+ms.date: 03/05/2025
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
