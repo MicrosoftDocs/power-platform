@@ -362,7 +362,7 @@ To ensure optimal operations for the organization, admins with the proper permis
 5.	Disable AI Prompts
 6.	Go to the Power Platform Admin Center and turn Dataverse search “Off”: FAQ for Dataverse search - Power Apps | Microsoft Learn. It is strongly recommended to NOT perform this as this would directly impact all dependent generative AI experiences in your different applications, and all users using them.
  
-    > [!Warning]
+    > [!Important]
     > We strongly recommended to NOT perform step 6 (above) as this would directly impact all dependent generative AI experiences in your different applications, and all users using them. 
 
 ### What is the DataverseSearch table and how can I reduce it?
