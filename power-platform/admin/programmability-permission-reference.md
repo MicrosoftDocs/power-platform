@@ -35,26 +35,26 @@ Permissions in Power Platform API are  named in the following manner: `{namespac
 
 The following table is a list of the currently defined permissions in Power Platform API:
 
-Name | Display Name | Description | 
+Name | Display name | Description | 
 ---- | ------------ | ----------- |
-`AiFlows.Ai.Execute` | Execute AI related operations (like Generate) on AI flow | Allows to execute AI related operations (like Generate) on AI flows
-`AiFlows.Ai.Read` | AI related read operations on AI flow | Allows to do AI related read operations on AI flows
-`AiFlows.Ai.Write` | AI related write operations on AI flow | Allows to do AI related write operations on AI flows
-`AiFlows.Connections.Read` | Read AI Flow Connection | Allows reading AI flow connections
-`AiFlows.Runs.Execute` | Perform actions on AI flow run | Allows performing actions on AI flow runs
-`AiFlows.Runs.Read` | Read Copilot Flow Run | Allows reading AI flow runs
-`AiFlows.Runs.Write` | Write AI Flow Run | Allows writing AI flow runs
-`AiFlows.Workflows.Execute` | Perform actions (like activate) AI flow | Allows to perform actions (like activate) AI flows
-`AiFlows.Workflows.Read` | Read AI flow | Allows reading AI flows
-`AiFlows.Workflows.Write` | Write AI flow | Allows writing AI flows
-`AiTools.Prompt.Invoke` | Invoke AI Prompts | Allows invoking of AI Prompts
-`AiTools.Prompt.Read` | Read AI Prompts | Allows reading of AI Prompts
-`AiTools.Prompt.Write` | Read and Write AI Prompts | Allows reading and writing of AI Prompts
-`Analytics.AdvisorActions.Execute` | Analytics.AdvisorActions.Execute | Allows user to execute advisor actions
-`Analytics.AdvisorRecommendations.Read` | Analytics.AdvisorRecommendations.Read | Allows uses to read advisor reccomendations
-`AppManagement.ApplicationPackages.Install` | Install Application Packages | Allows installing application packages
-`AppManagement.ApplicationPackages.Read` | Read Application Packages | Allows reading application packages
-`CopilotFlows.CloudFlows.ChatAssistant` | Cloud Flows chat assistant | Allows cloud flows chat assistant
+`AiFlows.Ai.Execute` | Execute AI-related operations (like Generate) on AI flow | Allows you to execute AI-related operations (like Generate) on AI flows.
+`AiFlows.Ai.Read` | AI-related read operations on AI flow | Allows you to do AI-related read operations on AI flows.
+`AiFlows.Ai.Write` | AI-related write operations on AI flow | Allows you to do AI-related write operations on AI flows.
+`AiFlows.Connections.Read` | Read AI Flow Connection | Allows reading of AI flow connections.
+`AiFlows.Runs.Execute` | Perform actions on AI flow run | Allows you to perform actions on AI flow runs.
+`AiFlows.Runs.Read` | Read Copilot flow run | Allows reading AI flow runs.
+`AiFlows.Runs.Write` | Write AI flow run | Allows writing AI flow runs.
+`AiFlows.Workflows.Execute` | Perform actions (like activate) AI flow | Allows you to perform actions (like activate) on AI flows.
+`AiFlows.Workflows.Read` | Read AI flow | Allows reading AI flows.
+`AiFlows.Workflows.Write` | Write AI flow | Allows writing AI flows.
+`AiTools.Prompt.Invoke` | Invoke AI prompts | Allows invoking of AI prompts.
+`AiTools.Prompt.Read` | Read AI prompts | Allows reading of AI prompts.
+`AiTools.Prompt.Write` | Read and write AI prompts | Allows reading and writing of AI prompts.
+`Analytics.AdvisorActions.Execute` | Analytics.AdvisorActions.Execute | Allows user to execute advisor actions.
+`Analytics.AdvisorRecommendations.Read` | Analytics.AdvisorRecommendations.Read | Allows uses to read advisor reccomendations.
+`AppManagement.ApplicationPackages.Install` | Install application packages | Allows installing application packages.
+`AppManagement.ApplicationPackages.Read` | Read application packages | Allows reading application packages.
+`CopilotFlows.CloudFlows.ChatAssistant` | Cloud flows chat assistant | Allows cloud flows chat assistant
 `CopilotFlows.Connections.Read` | Read Copilot Flow Connection | Allows reading copilot flow connections
 `CopilotFlows.Runs.Cancel` | Cancel Copilot Flow Run | Allows cancelling copilot flow runs
 `CopilotFlows.Runs.Create` | Create Copilot Flow Run | Allows creating copilot flow runs
