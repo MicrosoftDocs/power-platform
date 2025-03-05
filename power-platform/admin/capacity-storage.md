@@ -1,11 +1,11 @@
 ---
 title: Dataverse capacity-based storage details  
 description: Learn about the Microsoft Dataverse capacity-based storage model.
-ms.date: 12/01/2024
+ms.date: 03/05/2025
 ms.topic: conceptual
-author: MicroSri
+author: marianaraujo 
 ms.subservice: admin
-ms.author: sriknair
+ms.author: maaraujo
 ms.reviewer: sericks
 search.audienceType: 
   - admin
@@ -210,17 +210,12 @@ In the **Consumption per table** section, you can view the amount of storage con
 
 ## Dataverse search consumption
 
-Storage consumed by Dataverse search is already reported at the Environment level as a table called “RelevanceSearch”.   
-Moving forward, this table will be available for both Database and File storage consumption and renamed to match accordingly:
+Storage consumed by Dataverse search is already reported at the environment-level as a table called **RelevanceSearch**. Moving forward, this table is available for both database and file storage consumption and renamed to match accordingly:
 
-•	“Dataverse search – Structured index” for Database storage indexing and  
-•	“Dataverse search – Unstructured index” for Files storage indexing. 
-
-![image](https://github.com/user-attachments/assets/1c629fb9-a9da-4458-bc1b-7558565574f5)
-
+- **Dataverse search – Structured index** for database storage indexing  
+-	**Dataverse search – Unstructured index** for files storage indexing. 
  
-Respectively, Dataverse search will be reported all up as part of Database and Files storage consumption in the summary tab. 
-Dataverse search can also be viewed at the Environment report in Power Platform Admin Center or Capacity report:
+Respectively, Dataverse search is reported as part of database and files storage consumption in the Summary tab. Dataverse search can also be viewed at the Environment report in Power Platform admin center or Capacity report:
 
 •	Legacy PPAC: Resources > Capacity > Dataverse tab 
 •	New PPAC: Licensing > Capacity add-ons > Dataverse tab (Select Chart icon) 
