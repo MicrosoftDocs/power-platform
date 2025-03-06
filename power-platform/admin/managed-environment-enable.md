@@ -47,6 +47,7 @@ Use the following settings to increase visibility and control for the selected e
 | Don't set limits | Select to not limit sharing of canvas apps. |
 | Exclude sharing with security groups | Select if makers aren't allowed to share canvas apps with any security groups. Admins may share with a limit on who an app can be shared with. |
 | Limit total individuals who can be shared to | If **Exclude sharing with security groups** is selected, select to limit the number of people that makers can share canvas apps with. |
+| Enable AI-generated app descriptions (preview) | Let Power Apps do the work for you. If descriptions of apps are blank, AI will be used to generate them. This will happen when an app is published and can help people understand what the purpose of an app is. |
 | **[Usage insights](managed-environment-usage-insights.md)** | Select to include insights for this environment in the weekly email digest. |
 | **[Data policies](managed-environment-data-policies.md)** | Help safeguard your organizational data by limiting the connectors available.|
 | See active data policies for this environment | View the policies that define the consumer connectors that specific data can be shared with. |
