@@ -109,13 +109,21 @@ Microsoft offers a comprehensive suite of training resources designed to empower
 
 ### Power Up
 
-[Power Up](https://powerup.microsoft.com/) is an initiative aimed at helping users get started with Microsoft Power Platform. On successful completion of the program, you help uncover business problems where technology can benefit the daily operations for any organization. During the Power Up training, you will:
+The [Power Up program](https://powerup.microsoft.com/?referral=learn) is an initiative aimed at helping everyone get started with Microsoft Power Platform. On successful completion of the program, you help uncover business problems where technology can benefit the daily operations for any organization. During the training, you will:
+Build solutions: Use Microsoft Power Platform to create solutions, automate processes, and analyze data.
 
-- **Build solutions**: Use Microsoft Power Platform to create solutions, automate processes, and analyze data.
-- **Guided curriculum**: Learn new skills through interactive learning paths, hands-on exercises, and instructor-led sessions.
-- **Certification voucher**: Earn a voucher for a Microsoft Power Platform certification exam upon program completion.
-- **Recognition**: Receive a badge for completing learning paths, which can be shared on your resume or social media.
-- **Community support**: Get support from instructors, peers, and local events throughout the program.
+- **Be guided**: Learn new skills through practical curriculum with hands-on exercises, and expert-led sessions on demand.
+- **Earn voucher**: Earn a voucher for a Microsoft Power Platform certification exam upon successful program requirements completion.
+- **Receive recognition**: Receive a badge for completing the program successfully, which can be shared on your resume or social media.
+- **Get support**: If you get stuck, you can ask for help from hundreds of volunteers, peers, and local events throughout the program.  You are never alone in your learning journey.
+
+The Power Up Program offers a free, innovative way to stay ahead in the digital world with our hands-on Learn/Ask/Experiment approach. Gain new skills for AI transformation, focusing on Power Platform and Copilot Studio.
+
+Join Power Up:
+
+- As an individual: Begin your learning journey by visiting [aka.ms/PowerUp](https://aka.ms/PowerUp).
+- As a group: Register your team by visiting [aka.ms/PowerUp](https://aka.ms/PowerUp).
+- As an enterprise: Upskill your workforce. Contact [PowerUpProgramInfo@microsoft.com](mailto:PowerUpProgramInfo@microsoft.com) for details on how to get started.
 
 ### Microsoft Learn for Power Platform
 
