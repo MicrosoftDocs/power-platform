@@ -1,7 +1,7 @@
 ---
 title: Dataverse capacity-based storage details  
 description: Learn about the Microsoft Dataverse capacity-based storage model.
-ms.date: 03/05/2025
+ms.date: 03/06/2025
 ms.topic: conceptual
 author: marianaraujo 
 ms.subservice: admin
@@ -355,15 +355,15 @@ Because custom Quick Find lookups are created by an admin in the org, these can 
 ### What actions can admins take?
 To ensure optimal operations for the organization, admins with the proper permissions can either: increase capacity storage or reduce Dataverse search by performing all the steps below.
 
-1.	Go to the Power Platform admin center and turn off Copilot experiences in model-driven apps 
-2.	Disable Copilot experiences in Microsoft Copilot Studio
-3.	Removing knowledge in Microsoft Copilot Studio
-4.	Disable Copilot in Dynamics 365 applications
-5.	Disable AI Prompts
-6.	Go to the Power Platform Admin Center and turn Dataverse search “Off”: FAQ for Dataverse search - Power Apps | Microsoft Learn. It is strongly recommended to NOT perform this as this would directly impact all dependent generative AI experiences in your different applications, and all users using them.
+1. Go to the Power Platform admin center and turn off Copilot experiences in model-driven apps. Learn more in [Enable Copilot for model-driven apps in your environment](https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/add-ai-copilot#enable-copilot-for-model-driven-apps-in-your-environment).
+1. Turn off Copilot experiences in Microsoft Copilot Studio. Learn more in [Create and delete agents](https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-first-bot?tabs=web).
+1. Delete knowledge in Microsoft Copilot Studio. Learn more in [Edit, view, or delete knowledge sources](https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-edit-source).
+1. Turn off Copilot in Dynamics 365 applications. Learn more in [Uninstall a Copilot for Finance add-in by using Microsoft 365 admin center](/copilot/finance/get-started/disable-finance-addin#uninstall-a-copilot-for-finance-add-in-by-using-microsoft-365-admin-center), [Uninstall the Microsoft 365 Copilot for Sales app](/microsoft-sales-copilot/disable-viva-sales), and [Turn on AI features in Copilot for Service](/microsoft-copilot-service/copilot-admin-teams).
+1. Turn off AI prompts. Learn more in [Administer AI Builder](/ai-builder/administer).
+1. Go to the Power Platform Admin Center and turn Dataverse search **Off**. Learn more in [Enable Dataverse search](configure-relevance-search-organization.md#enable-dataverse-search).
  
-    > [!Important]
-    > We strongly recommended to NOT perform step 6 (above) as this would directly impact all dependent generative AI experiences in your different applications, and all users using them. 
+    > [!Note]
+    > We strongly recommended that you do NOT perform this step as it directly impacts all dependent generative AI experiences in your different applications, and all users using them. 
 
 ### What is the DataverseSearch table and how can I reduce it?
 
