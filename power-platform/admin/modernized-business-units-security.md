@@ -14,7 +14,7 @@ search.audienceType:
 
 # Modernized business units security
 
-In today's dynamic business environment, the ability to seamlessly manage and interact with multiple business units is crucial for operational efficiency and strategic growth. The [modernized business units](/power-platform/admin/wp-security-cds.md#matrix-data-access-structure-modernized-business-units) feature in Dataverse offers a robust solution to this need, enabling users to navigate and collaborate across various business units securely and with ease.  
+In today's dynamic business environment, the ability to seamlessly manage and interact with multiple business units is crucial for operational efficiency and strategic growth. The [modernized business units](wp-security-cds.md#matrix-data-access-structure-modernized-business-units) feature in Dataverse offers a robust solution to this need, enabling users to navigate and collaborate across various business units securely and with ease.  
 
 In a traditional business units security hierarchy, users are restricted to their respective business units and can't access other units. However, in a matrix organization, users work across multiple business units and projects, requiring access to data in those units. The modernized business units feature enables administrators to assign access to data for these cross-functional users across different business units securely and easily.
 
@@ -47,7 +47,7 @@ For example, when a line manager creates an account record, they need to select 
 
 ### User level access in the matrix data access structure
 
-The [matrix data access structure](/power-platform/admin/wp-security-cds.md#matrix-data-access-structure-modernized-business-units) allows for granular control over user access levels. Users can have read/write access to records in one business unit while ensuring that records in another business unit remain private and inaccessible to unauthorized users. This setup is useful for maintaining data privacy and security across different business units. For example sales, service, or marketing users are only assigned security roles from their respective business units. These users don't have access to other business units’ records.  
+The [matrix data access structure](wp-security-cds.md#matrix-data-access-structure-modernized-business-units) allows for granular control over user access levels. Users can have read/write access to records in one business unit while ensuring that records in another business unit remain private and inaccessible to unauthorized users. This setup is useful for maintaining data privacy and security across different business units. For example sales, service, or marketing users are only assigned security roles from their respective business units. These users don't have access to other business units’ records.  
 
 ### Securing access to business unit emails
 
@@ -57,7 +57,7 @@ With the business units security feature, the service line manager is granted on
 
 ## How do I enable it?
 
-To enable the business units security feature, see [Security concepts in Microsoft Dataverse](/power-platform/admin/wp-security-cds.md#enable-the-matrix-data-access-structure).  
+To enable the business units security feature, see [Security concepts in Microsoft Dataverse](wp-security-cds.md#enable-the-matrix-data-access-structure).  
 
 The feature takes a few minutes to be enabled, as it needs time to set the *Owning business unit* column, then enable the column, so it can be pulled into a form. For existing environments with multiple business units (with the upgrade to modernized business units), we recommended you perform:
 
