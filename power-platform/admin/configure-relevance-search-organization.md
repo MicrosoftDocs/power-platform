@@ -16,7 +16,7 @@ contributors:
 ---
 # Configure Dataverse search for your environment
 
-The search experience enabled by Dataverse search delivers fast and comprehensive search results in a single list, sorted by [relevance](/azure/search/index-similarity-and-scoring). As an administrator or customizer, you can turn on and configure Dataverse search as described in this article. Quick Find views are used for configuring Dataverse search, so you can manage global search, quick find, and lookup search behavior in one single place.
+The search experience provided by Dataverse search delivers fast and comprehensive search results in a single list, sorted by [relevance](/azure/search/index-similarity-and-scoring). As an administrator or customizer, you can turn on and configure Dataverse search as described in this article. Quick Find views are used for configuring Dataverse search, so you can manage global search, quick find, and lookup search behavior in one single place.
 
 With Dataverse search enabled, a search box is always available at the top of every page in all the model-driven apps in the **environment**. Once Dataverse search is enabled, it applies to all apps and can't be disabled per app: only at the environment level, by an administrator with environment setting permissions. Users can start a new search and quickly find the information they're looking for, from the searchable tables included in the app. Dataverse search also becomes the default and only global search experience in all model-driven apps in the environment. Users won't be able to switch to [quick find search](/powerapps/user/quick-find) formerly known as categorized search.  
 
@@ -25,10 +25,11 @@ With Dataverse search enabled, a search box is always available at the top of ev
 ## What is Dataverse search?
 
 ### Dataverse search now
-Dataverse search is currently a regular opt-in search experience (except for the Default environments where it is on by default) that is mostly associated to a search bar in model-driven applications, where Makers can identify a table or specific column(s) as “Searchable”. For more information on this, see FAQ for Dataverse search - Power Apps | Microsoft Learn. 
-In addition to helping users of model-driven apps quickly finding what they are looking for, Dataverse search is how Microsoft enables rich search and AI-powered experiences across different products that use Dataverse as one of the data sources. 
+Dataverse search is currently a regular opt-in search experience. The exception is Default environments, where it's on, by default. Dataverse search is mostly associated to a search bar in model-driven applications, where makers can identify a table or specific column(s) as “Searchable”. For more information on this, go to [Frequently asked questions about Dataverse search](/power-apps/user/relevance-faq).
 
-In addition, Dataverse search delivers the following benefits:
+In addition to helping users of model-driven apps quickly finding what they are looking for, Dataverse search is how Microsoft allows rich search and AI-powered experiences across different products that use Dataverse as one of the data sources. 
+
+Dataverse search delivers the following benefits:
 
 - **Fast and accurate search**: Provides a precise and quick search experience for model-driven apps, and performance that's superior to [categorized search](quick-find.md#multiple-table-quick-find-categorized-search). 
 
@@ -48,7 +49,7 @@ In addition, Dataverse search delivers the following benefits:
   
 - **Search across documents in Microsoft Dataverse**: Includes search results for text in documents that are stored in Dataverse such as PDF, Microsoft Office documents, HTML, XML, ZIP, EML, plain text, and JSON file formats. It also searches text in notes and attachments.
 
-- **Enables gen. AI experiences:** Provides a superior knowledge experience for search and agents for data in Dataverse tables and Files uploaded in Microsoft Copilot Studio.
+- **Enables generative AI experiences:** Provides a superior knowledge experience for search and agents for data in Dataverse tables and files uploaded in Microsoft Copilot Studio.
 
     > [!Note]
     > Searching across images isn't supported.
@@ -57,13 +58,14 @@ For more information about Dataverse search, see [Search for tables and rows by
 
 ### Dataverse search moving forward
 As part of its search capabilities, its indexed data is also leveraged across generative AI experiences, such as Copilot experiences, to fetch records and use them as answers. 
-Moving forward, Dataverse search will have its indexing process improved to improve its efficiency and quality search experience and, as such, will be the requirement for all gen AI-powered experiences such as Copilot. 
-Starting April 7th 2025, the billing of the existing Dataverse search will be adjusted to reflect the improved semantic Copilot indexing, where gen. AI features like Copilot will become dependent on, to promote consistency across the Dataverse search enhanced experiences.
+
+Moving forward, Dataverse search will have its indexing process improved to improve its efficiency and quality search experience and, as such, will be the requirement for all generative AI-powered experiences, such as Copilot. Starting April 7, 2025, the billing of the existing Dataverse search will be adjusted to reflect the improved semantic Copilot indexing, where generative AI features, like Copilot, will become dependent on, to promote consistency across the Dataverse search enhanced experiences.
 
 ### What makes Dataverse search?
 Dataverse search consists of two separate indexes that power different experiences.
-- _Dataverse search structured index:_ This is the index powering experiences across structured or tabular data stored in Dataverse. Examples of this index include search indexes over tables Dataverse like Accounts, Contact, custom tables, Dataverse relevance search , etc.
-- _Dataverse search unstructured index:_ This is the index powering experiences across unstructured data stored in Dataverse. Examples of this index include search indexes over files uploaded in Microsoft Copilot Studio custom agents, customer service agents, etc.
+
+- _Dataverse search structured index:_ This is the index powering experiences across structured or tabular data stored in Dataverse. Examples of this index include search indexes over tables Dataverse like Accounts, Contact, custom tables, Dataverse relevance search, and others.
+- _Dataverse search unstructured index:_ This is the index powering experiences across unstructured data stored in Dataverse. Examples of this index include search indexes over files uploaded in Microsoft Copilot Studio custom agents, customer service agents, and others.
 
 ### Availability and language support
 
