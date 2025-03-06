@@ -524,6 +524,8 @@
                   href: system-application-users.md
                 - name: Role-based security roles
                   href: database-security.md
+                - name: Modernized business units security
+                  href: modernized-business-units-security.md
                 - name: Configure user security in an environment
                   href: database-security-configure.md
                 - name: How access to records is determined
