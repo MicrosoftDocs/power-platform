@@ -1,12 +1,12 @@
 ---
-title: "Configure Dataverse search to improve search results and performance   | MicrosoftDocs"
+title: Configure Dataverse search to improve search results and performance  
 description: Configure Dataverse search to improve search results and performance. 
-author: mspilde
+author: marianaraujo 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/19/2024
+ms.date: 03/06/2025
 ms.subservice: admin
-ms.author: mspilde
+ms.author: maaraujo
 ms.reviewer: sericks
 search.audienceType: 
   - admin
@@ -22,9 +22,9 @@ With Dataverse search enabled, a search box is always available at the top of ev
 
 [Dataverse search can be extended to additional Microsoft Search canvases](/microsoftsearch/manage-dynamics365), including SharePoint Online, Bing, and Office. Users can search and find information from these canvases similar to searching in the app when the connector is enabled, for example quickly look up a contact’s phone number or email without opening the app. 
 
-# What is Dataverse search?
+## What is Dataverse search?
 
-## Dataverse search now
+### Dataverse search now
 Dataverse search is currently a regular opt-in search experience (except for the Default environments where it is on by default) that is mostly associated to a search bar in model-driven applications, where Makers can identify a table or specific column(s) as “Searchable”. For more information on this, see FAQ for Dataverse search - Power Apps | Microsoft Learn. 
 In addition to helping users of model-driven apps quickly finding what they are looking for, Dataverse search is how Microsoft enables rich search and AI-powered experiences across different products that use Dataverse as one of the data sources. 
 
@@ -55,12 +55,12 @@ In addition, Dataverse search delivers the following benefits:
 
 For more information about Dataverse search, see [Search for tables and rows by using Dataverse search](/powerapps/user/relevance-search).
 
-## Dataverse search moving forward
+### Dataverse search moving forward
 As part of its search capabilities, its indexed data is also leveraged across generative AI experiences, such as Copilot experiences, to fetch records and use them as answers. 
 Moving forward, Dataverse search will have its indexing process improved to improve its efficiency and quality search experience and, as such, will be the requirement for all gen AI-powered experiences such as Copilot. 
 Starting April 7th 2025, the billing of the existing Dataverse search will be adjusted to reflect the improved semantic Copilot indexing, where gen. AI features like Copilot will become dependent on, to promote consistency across the Dataverse search enhanced experiences.
 
-## What makes Dataverse search?
+### What makes Dataverse search?
 Dataverse search consists of two separate indexes that power different experiences.
 - _Dataverse search structured index:_ This is the index powering experiences across structured or tabular data stored in Dataverse. Examples of this index include search indexes over tables Dataverse like Accounts, Contact, custom tables, Dataverse relevance search , etc.
 - _Dataverse search unstructured index:_ This is the index powering experiences across unstructured data stored in Dataverse. Examples of this index include search indexes over files uploaded in Microsoft Copilot Studio custom agents, customer service agents, etc.
@@ -120,7 +120,7 @@ If the Dataverse search index needs to be provisioned, you see an indication tha
 > [!IMPORTANT]
 > Disabling Dataverse search will deprovision and remove the index within a period of 12 hours. If you enable Dataverse search after about 12 hours of disabling it, a fresh index is provisioned, followed by a full sync that may take up to an hour or more for average size organizations, and a couple of days for large organizations. Consider this when you're disabling Dataverse search temporarily.
 
-### Help improve Dataverse search
+## Help improve Dataverse search
 
 To help Microsoft improve Dataverse search, you can share your environment's Dataverse search queries in Dynamics 365 and Power Platform applications with Microsoft. This data helps Microsoft build, improve, and validate the Microsoft machine learning model for the Dynamics 365 Natural Language search query technology.
 
@@ -369,7 +369,7 @@ Dataverse search can be viewed at the Environment report in Power Platform Admin
 
 ### What entitlements are consumed by Dataverse search?
 
-Dataverse search consumes against the [Dataverse entitlements available within your tenant]([url](https://learn.microsoft.com/en-us/power-platform/admin/whats-new-storage)).
+Dataverse search consumes against the [Dataverse entitlements available within your tenant](whats-new-storage.md)).
 •	Dataverse search structured index consumption counts towards Dataverse database capacity (DBs)
 •	Dataverse search unstructured index consumption counts towards Dataverse file capacity (Files)
 
