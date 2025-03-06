@@ -9,7 +9,7 @@ ms.subservice: admin
 ms.custom:
 audience: Application User, IT Pro, Developer
 ms.search.region: Global
-ms.author: radhij
+ms.author: sericks
 ms.contributors:
  - sericks
 
