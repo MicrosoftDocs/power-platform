@@ -16,7 +16,7 @@ search.audienceType:
 
 Equipping your team with the right skills is important to harness to full potential of Power Platform. To maximize the potential of Power Platform, organizations should consider hosting internal training events. This article explores the benefits of various training opportunities, including "In a Day" workshops, and provides best practices for organizing these events.
 
-## Power Up for an enterprise
+## Power Up
 
 The [Power Up program](https://powerup.microsoft.com/?referral=learn) is an initiative aimed at helping everyone get started with Microsoft Power Platform. On successful completion of the program, you help uncover business problems where technology can benefit the daily operations for any organization. During the training, you will:
 Build solutions: Use Microsoft Power Platform to create solutions, automate processes, and analyze data.
