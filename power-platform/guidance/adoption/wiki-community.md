@@ -14,38 +14,56 @@ search.audienceType:
 ---
 # Set up tools to support your community
 
-At the heart of growth is a community, a place for people to collaborate, share ideas, and discover new ways to apply technology to achieve more. A community is a safe place to ask questions to share tacit knowledge and expand skill sets. Organizations that have succeeded at creating a growing community of makers provide tools such as Yammer or Microsoft Teams groups, regular events and speaking opportunities, and foster an environment of ongoing learning.
+At the heart of growth is a community, a place for people to collaborate, share ideas, and discover new ways to apply technology to achieve more. Creating a thriving Power Platform community requires not only enthusiastic members but also robust infrastructure and the right set of tools to facilitate communication, collaboration, feedback collection, and information dissemination. Here’s how you can use various tools to build an effective support system for your Power Platform community.
 
-They make sure that every person in the organization can come together at regular intervals to socialize, share their knowledge, and explore new possibilities. Leaders who want to create a digital culture will put a framework in place for the community inside their organization to break down geographic and organizational silos.
+## Viva Engage
 
-## Create a Power Platform Hub
+[Viva Engage](/viva/engage/overview) is an excellent tool designed to foster open communication within your community. It allows members to engage in meaningful conversations through posts and comments which can help in building a sense of belonging among members.
 
-Set up your own SharePoint Hub or Teams site to share success stories, upcoming events, rules of engagement and guidelines with your maker community - or get started with the [Power Platform Hub template](#get-started-with-the-power-platform-communication-site-template). This site should be a one-stop shop for makers to find out everything they need about getting started with Microsoft Power Platform.
+Use Viva Engage to create discussion threads where members can share ideas or ask questions about different aspects of the Power Platform.
 
-Here are a few tips on what the wiki should include:
+Plan events such as webinars or workshops by creating dedicated event pages where details can be shared and RSVPs managed.
 
+## Microsoft Forms
+
+Collecting feedback is important for understanding the needs of your community and improving future initiatives.
+
+After hosting an event like a training session or webinar on Power Platform topics such as Copilot Studio or Power Automate, use [Microsoft Forms](https://support.microsoft.com/office/what-is-microsoft-forms-6b391205-523c-45d2-b53a-fc10b22017c8) to gather participants' feedback on what went well and what could be improved.
+
+Regularly survey your community members using Forms to understand their challenges with using the platform or any new features they would like introduced.
+
+## SharePoint communication site
+
+A [SharePoint communication site](https://support.microsoft.com/office/plan-your-sharepoint-communication-site-35d9adfe-d5cc-462f-a63a-bae7f2529182) serves as a central repository where important information can be stored securely while being easily accessible by all community members. Set up your own SharePoint Hub or Teams site to share success stories, upcoming events, rules of engagement and guidelines with your maker community - or get started with the [Power Platform Hub template](#get-started-with-the-power-platform-communication-site-template). This site should be a one-stop shop for makers to find out everything they need about getting started with Microsoft Power Platform.
+
+Here are a few tips on what the SharePoint communication site should include:
+
+- **Announcements**: Post important updates about new features in Power Platform or upcoming events directly on SharePoint so that all members are informed promptly.
+- **Success stories**: Highlight success stories from within your community showcasing how different users have leveraged Power Platform effectively in their projects.
+- **Guidelines:**Share best practices, guidelines, and policies related to the use of Power Platform to ensure that all members are aligned and informed.
+  - **[Environment strategy](../white-papers/environment-strategy.md)**: Share what environments are available and how to request access to existing environments or request new environments; additionally, ensure makers know the boundaries of an environments licensing, security, and connectors.
+  - **[Data loss prevention (DLP) policy strategy](dlp-strategy.md)**: Share which connectors are available in which environments and how to request more connectors or a new environment for a specific project.
 - **Training and reusable resources**: Share internal and external training resources, reusable components and templates, and any brand guidelines or naming conventions you want your makers to follow.
-
 - **Community**: Share how to engage with the internal community, how to become a champion, how to find a mentor, and what the benefits of the community are.
-
-- **[Environment strategy](../white-papers/environment-strategy.md)**: Share what environments are available and how to request access to existing environments or request new environments; additionally, ensure makers know the boundaries of an environments licensing, security, and connectors.
-
-- **[Data loss prevention (DLP) policy strategy](dlp-strategy.md)**: Share which connectors are available in which environments and how to request more connectors or a new environment for a specific project.
-
 - **Responsibilities of a maker**: Share what a maker is responsible for—for example:
-
-1. Keeping the tenant tidy by deleting unused resources
-1. Ensuring apps are only shared with required end users
-1. Supporting their apps in the default environment, or engaging with the Center of Excellence team before implementing a business-important or mission-critical app to plan appropriate support.
-1. Ensure makers are educated about the processes you have in place for business-important or mission-critical apps, such as engaging formal support.
-
+  - Keeping the tenant tidy by deleting unused resources
+  - Ensuring apps are only shared with required end users
+  - Supporting their apps in the default environment, or engaging with the Center of Excellence team before implementing a business-important or mission-critical app to plan appropriate support.
+  - Ensure makers are educated about the processes you have in place for business-important or mission-critical apps, such as engaging formal support.
 - **Support process**: Share how makers and solutions can be supported.
-
 - **License management**: Share what licenses are available and what’s included in those licenses, how to request premium licenses, and who will pay for those premium licenses if cross-charging from IT to business units or teams is in place.
-
 - **UI/UX**: Discussion area on corporate standards/styles and overall best practices around UX.
 
 ![Sample Microsoft Power Platform wiki page.](media/wiki.png "Sample Microsoft Power Platform wiki page")
+
+## Microsoft Teams
+
+Microsoft Teams is a versatile tool that can be used for various administrative and collaborative purposes within your community.
+
+- Administration: Use Teams to manage community administration tasks, such as coordinating with organizers and tracking progress on community initiatives.
+- Meetings: Host virtual meetings and workshops on Teams to facilitate real-time collaboration and learning. This is especially useful for remote or geographically dispersed community members.
+
+Building the right infrastructure and using the appropriate tools are essential for supporting a Power Platform community. By leveraging tools like Viva Engage, Forms, SharePoint, and Teams, you can create a robust support system that facilitates communication, collaboration, feedback collection, and information dissemination. Each tool serves a specific purpose, from fostering conversations and planning events to collecting feedback and managing documentation. By integrating these tools effectively, you can ensure that your Power Platform community thrives and continues to grow.
 
 ## Get started with the Power Platform communication site template
 
@@ -71,8 +89,9 @@ The scripts to deploy the Power Platform communication site template has a depen
 
 1. [Download and install](/power-platform/admin/powerapps-powershell#installation) Microsoft.PowerApps.Administration.PowerShell
 1. [Download and install](https://pnp.github.io/powershell/articles/installation.html) PnP PowerShell
+1. [Register an Entra ID application to use with PnP PowerShell](https://pnp.github.io/powershell/articles/registerapplication.html)
 
-The PowerShell commands in the Microsoft.PowerApps.Administration.PowerShell module requires Windows PowerShell version 5.x.
+The PowerShell commands in the PnP PowerShell module require Windows PowerShell version 7 or above.
 
 Check the version of PowerShell running on your machine:
 
@@ -138,6 +157,10 @@ When the scripts have finished executing, you should see a notification message:
 ### Troubleshooting
 
 The PowerShell scripts have been written to catch any failures. However, if you do see errors, you should check:
+
+#### Can't run PnP PowerShell scripts
+
+If you can't run PnP PowerShell scripts, make sure your PowerShell version is 7 or above and make sure you have [registered an Entra ID application to use with PnP PowerShell](https://pnp.github.io/powershell/articles/registerapplication.html).
 
 #### Can't connect to SharePoint Online
 
