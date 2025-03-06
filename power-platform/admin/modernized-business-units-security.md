@@ -59,7 +59,7 @@ With the business units security feature, the service line manager is granted on
 
 To enable the business units security feature, see [Security concepts in Microsoft Dataverse](wp-security-cds.md#enable-the-matrix-data-access-structure).  
 
-The feature takes a few minutes to be enabled, as it needs time to set the *Owning business unit* column, then enable the column, so it can be pulled into a form. For existing environments with multiple business units (with the upgrade to modernized business units), we recommended you perform:
+The feature takes a few minutes to be enabled, as it needs time to set the *Owning business unit* column. Once the *Owning business unit* column is set, it can be pulled into a form or into a view. For existing environments with multiple business units (with the upgrade to modernized business units), we recommended you perform:
 
 1. Impact analysis on all the business units.
 1. Prepare a user RACI (responsible, accountable, consulted, and informed) chart at the business unit record level. This chart helps define the appropriate security roles.
