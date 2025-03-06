@@ -17,7 +17,7 @@ ms.contributors:
 
 # International availability of Microsoft Power Platform
 
-We are excited to share the downloadable [Infrastructure and availability PDF](https://aka.ms/dynamics_365_international_availability_deck) with you.
+We're excited to share the downloadable [Infrastructure and availability PDF](https://aka.ms/dynamics_365_international_availability_deck) with you.
 
 The purpose of this document is to provide comprehensive information about product availability and customer data locations for the Microsoft Power Platform family of applications. This document has information about the following:
 
@@ -26,7 +26,7 @@ The purpose of this document is to provide comprehensive information about produ
 - Language
 - Localization
 
-The information will be updated periodically. Microsoft provides no license, express or implied, in this document.
+The information is updated periodically. Microsoft provides no license, express or implied, in this document.
 
 Review and respect the full disclaimer included in all printed and electronically distributed versions of this document.
 
