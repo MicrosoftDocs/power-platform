@@ -27,51 +27,49 @@ Depending on your organization's size and team structure, these roles may not be
 
 Let's look at specific examples to understand the scope and expectations for each role:
 
-:::row:::
-   :::column span="":::
-      Community lead
-   :::column-end:::
-   :::column span="":::
-      Content lead
-   :::column-end:::
-   :::column span="":::
-      Event lead
-   :::column-end:::
-   :::column span="":::
-      Community advocate
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      Organisational engagement
-   :::column-end:::
-   :::column span="":::
-      Content curation
-   :::column-end:::
-   :::column span="":::
-      Event planning 
-   :::column-end:::
-   :::column span="":::
-      Member engagement
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="4":::
-      Networking and advocacy
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      Buy-in/ sponsorship
-   :::column-end:::
-   :::column span="2":::
-      Tech and platform support
-   :::column-end:::
-   :::column span="":::
-       
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="4":::
-     Promotion and marketing
-   :::column-end:::
+### Community lead
+
+Responsibilities:
+
+Certainly! Here is a refined list that clearly differentiates the responsibilities and expectations for each role:
+
+### Community Lead
+
+Responsibilities:
+
+- **Organizational engagement**: Align community activities with organizational goals and secure support from leadership.
+- **Moderation**: Ensure a positive and respectful environment by overseeing community interactions.
+- **Networking and advocacy**: Build relationships within and outside the community to advocate for its needs and interests.
+- **Buy-in/sponsorship**: Secure buy-in and sponsorship from key stakeholders to support community initiatives.
+- **Promotion and marketing**: Develop and implement strategies to promote the community and its activities.
+
+### Content Lead
+
+Responsibilities:
+
+- **Content Curation**: Develop and curate relevant content, including news, training resources, and program collateral, to keep the community informed and engaged.
+- **Reporting and analytics**: Track and analyze content performance to understand what resonates with the community and make data-driven decisions.
+- **Networking and advocacy**: Collaborate with other content creators and external partners to enhance the community's content offerings.
+- **Tech and platform support**: Ensure that the technical aspects of content delivery run smoothly, including platform setup and troubleshooting.
+- **Promotion and marketing**: Promote content through various channels to maximize reach and engagement.
+
+### Event Lead
+
+Responsibilities:
+
+- **Event planning**: Organize and manage community events such as webinars, workshops, and hackathons to foster engagement and collaboration.
+- **Reporting and analytics**: Track and analyze event performance to understand attendance, engagement, and overall impact. Use this data to inform future event planning and improve outcomes.
+- **Networking and advocacy**: Build relationships with community members, speakers, and partners to enhance event quality and relevance. Advocate for the community's needs and interests through these connections.
+- **Tech and platform support**: Ensure that the technical aspects of events run smoothly, including platform setup and troubleshooting.
+- **Promotion and marketing**: Develop and execute marketing strategies to promote events and drive participation.
+
+### Community Advocate
+
+Responsibilities:
+
+- **Member engagement**: Act as a liaison between the community and the core team, representing members' interests and ensuring their voices are heard.
+- **Networking and advocacy**: Build relationships within the community to understand members' needs and advocate for them.
+- **Reporting and analytics**: Gather feedback and insights from members to inform community strategies and improvements.
+- **Promotion and marketing**: Encourage member participation and promote community initiatives to enhance engagement.
+
+By clearly defining these roles and responsibilities, you can ensure that each team member understands their specific duties and how they contribute to the overall success of the community.

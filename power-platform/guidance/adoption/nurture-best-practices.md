@@ -25,7 +25,7 @@ By exploring these questions, you embark on a journey to connect the dots and cr
 
 1. [Define community purpose & goals](community-goals.md): Establish a clear vision and objectives for your community.
 1. [Define community core team responsibilities](community-core-team.md): Assign roles and responsibilities to ensure smooth operation.
-1. Establish a New Member Onboarding Process: Create a welcoming and informative onboarding experience for new members.
+1. [Onboard new makers](onboard-makers.md): Create a welcoming and informative onboarding experience for new community members and Power Platform makers.
 1. Plan Engaging Content & Events: Develop activities and content that keep the community engaged and motivated.
 1. Promote the Community & Establish Partnerships: Increase visibility and build relationships with other communities and stakeholders.
 1. Celebrate Successes: Recognize and reward the achievements of community members to foster a positive and supportive environment.
