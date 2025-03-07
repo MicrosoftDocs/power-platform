@@ -19,7 +19,7 @@ Microsoft Dynamics 365 and Microsoft Power Platform online services are being ho
   
 - For existing organizations, [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] will soon accommodate migrations to datacenters in the new region when requested by the customer as long as the organization meets certain business requirements.  
   
-For information about datacenter regions for Dynamics 365 and Power Platform, see [Product Availability by Geography](https://dynamics.microsoft.com/availability-reports/georeport/). Also, see [Where your data is located](https://www.microsoft.com/trust-center/privacy/data-location).  
+For information about datacenter regions for Dynamics 365 and Power Platform, see [Product Availability by Geography](https://releaseplans.microsoft.com/availability-reports/?report=productgeoreport). Also, see [Where your data is located](https://www.microsoft.com/trust-center/privacy/data-location).  
   
 The following is a list of regions and their URL for Dynamics 365 (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, and Dynamics 365 Marketing).
 
