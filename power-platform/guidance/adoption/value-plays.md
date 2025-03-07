@@ -18,7 +18,7 @@ ms.custom:
 
 # Use business value plays
 
-[Measuring and communicating business value](business-value.md), including [choosing the best methods and tools for success](business-value-methods.md) focus on the app or solution level. You also need to consider the bigger picture of your adoption journey. Running specific initiatives can significantly boost adoption by demonstrating how Power Platform generates business value. But how do you measure and communicate the overall value of these initiatives? This is where value plays come in.
+[Measuring and communicating business value](business-value.md), including [choosing the best methods and tools for success](business-value-methods.md), focus on the app or solution level. You also need to consider the bigger picture of your adoption journey. Running specific initiatives can significantly boost adoption by demonstrating how Power Platform generates business value. But how do you measure and communicate the overall value of these initiatives? This is where value plays come in.
 
 ## What are value plays?
 
