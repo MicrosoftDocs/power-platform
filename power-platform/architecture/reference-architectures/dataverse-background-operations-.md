@@ -17,8 +17,11 @@ search.audienceType:
 
 # Dataverse background operations
 
-<img src="media/dataverse-background-operations-/image1.tmp"
-style="width:6.26806in;height:3.85903in" />
+In Microsoft Dataverse, executing requests as background operations can significantly enhance the efficiency of asynchronous processing. By leveraging Custom APIs, you can define custom messages and implement business logic through plug-ins, allowing for background processing that eliminates the need for a persistent connection during execution. This guide will walk you through the workflow, use cases, and considerations for implementing background operations in Dataverse, ensuring scalable and reliable performance for long-running tasks.
+
+:::image type="content" source="media/dataverse-background-operations-/Background-job.png" alt-text="Screenshot of background job." lightbox="media/dataverse-background-operations-/Background-job.png":::
+
+
 
 ## Workflow
 
@@ -77,21 +80,21 @@ resource-intensive processes without impacting user experience.
 
 **Bulk Data Processing**:
 
-> *Scenario* - A marketing firm needs to process large datasets to
-> analyze customer behaviour and segment audiences.
->
-> Implement background operations to handle data aggregation and
-> analysis tasks, allowing marketers to access insights without waiting
-> for processing to complete.
+ *Scenario*: A marketing firm needs to process large datasets to
+ analyze customer behaviour and segment audiences.
+
+ Implement background operations to handle data aggregation and
+ analysis tasks, allowing marketers to access insights without waiting
+ for processing to complete.
 
 **Scheduled Data Cleanup:**
 
-> Scenario: An organization wants to maintain data hygiene by regularly
-> archiving or deleting outdated records from Dataverse.
->
-> Implement background operations to identify and manage obsolete data,
-> ensuring the system remains efficient and storage costs are
-> controlled.
+ *Scenario*: An organization wants to maintain data hygiene by regularly
+ archiving or deleting outdated records from Dataverse.
+
+ Implement background operations to identify and manage obsolete data,
+ ensuring the system remains efficient and storage costs are
+ controlled.
 
 ## Considerations
 
@@ -108,6 +111,6 @@ exponential backoff to manage transient faults effectively.
 
 ## Related Resources
 
-> <https://learn.microsoft.com/en-us/power-platform/well-architected/reliability/background-jobs>
->
-> <https://learn.microsoft.com/en-us/power-apps/developer/data-platform/background-operations?tabs=sdk>
+- [Power Platform- well architechted](/power-platform/well-architected/reliability/background-jobs)
+
+- [Power Apps data platform](/power-apps/developer/data-platform/background-operations?tabs=sdk)

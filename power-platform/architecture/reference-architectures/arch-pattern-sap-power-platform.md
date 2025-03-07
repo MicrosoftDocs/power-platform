@@ -20,8 +20,7 @@ search.audienceType:
 
 ## Architecture diagram
 
-<img src="media/arch-pattern---sap-&-power-platform/image1.png" style="width:6.26806in;height:4.26944in"
-alt="Diagram that shows an architecture of a Microsoft Power Platform integration with a typical SAP landing zone." />
+:::image type="content" source="media/arch-pattern-sap-power-platform/architecture.png" alt-text="Screenshot of architecture." lightbox="media/arch-pattern-sap-power-platform/architecture.png":::
 
 ## Workflow
 
@@ -199,8 +198,10 @@ Platform does not bypass authorizations in SAP. Leveraging Entra ID,
 Tenant access, App access and SAP authentication, there are many levels
 to ensure data is kept safe.
 
-<img src="media/arch-pattern---sap-&-power-platform/image2.png" style="width:6.26806in;height:3.06875in"
-alt="A diagram of a software application AI-generated content may be incorrect." />
+:::image type="content" source="media/arch-pattern-sap-power-platform/security.png" alt-text="Screenshot of security." lightbox="media/arch-pattern-sap-power-platform/security.png":::
+
+
+
 
 ### Operational Excellence
 
@@ -212,80 +213,51 @@ and GitHub Actions.
 
 ## Related resources
 
-What is Microsoft Power Platform integration with SAP? - [Explore Power
-Platform and SAP integration - Power Platform \| Microsoft
-Learn](https://learn.microsoft.com/en-us/power-platform/sap/explore/power-platform-and-sap-integration)
+- What is Microsoft Power Platform integration with SAP? - [Explore Power Platform and SAP integration - Power Platform](/power-platform/sap/explore/power-platform-and-sap-integration)
 
-Microsoft Power Platform security and governance documentation -
-[Microsoft Power Platform security and governance documentation - Power
-Platform \| Microsoft
-Learn](https://learn.microsoft.com/en-us/power-platform/admin/security)
+- Microsoft Power Platform security and governance documentation -
+[Microsoft Power Platform security and governance documentation - Power Platform](/power-platform/admin/security)
 
-SAP + Power Platform white paper [SAP + Power Platform white paper -
-Power Platform \| Microsoft
-Learn](https://learn.microsoft.com/en-us/power-platform/sap/explore/white-paper)
+- SAP + Power Platform white paper [SAP + Power Platform white paper - Power Platform](/power-platform/sap/explore/white-paper)
 
-SAP and Microsoft Power Platform architecture workflow - [SAP and Power
-Platform Architecture Workflow - Cloud Adoption Framework \| Microsoft
-Learn](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/sap/sap-power-platform-architecture-workflow)
+- SAP and Microsoft Power Platform architecture workflow - [SAP and Power Platform Architecture Workflow - Cloud Adoption Framework](/azure/cloud-adoption-framework/scenarios/sap/sap-power-platform-architecture-workflow)
 
 Data Access
 
-> SAP ERP Connector - [SAP ERP - Connectors \| Microsoft
-> Learn](https://learn.microsoft.com/en-us/connectors/saperp/)
->
-> SAP OData - [SAP OData - Connectors \| Microsoft
-> Learn](https://learn.microsoft.com/en-us/connectors/sapodata/)
->
-> Desktop Flows - [Introduction to desktop flows - Power Automate \|
-> Microsoft
-> Learn](https://learn.microsoft.com/en-us/power-automate/desktop-flows/introduction)
->
-> SAP Hana - [What is SAP
-> HANA?](https://www.sap.com/products/technology-platform/hana/what-is-sap-hana.html)
->
-> On-premises data gateway
->
-> On-premises data gateway - [What is an on-premises data gateway? \|
-> Microsoft
-> Learn](https://learn.microsoft.com/en-us/data-integration/gateway/service-gateway-onprem)
->
-> Set up on-premises data gateway for SAP integration with Power
-> Platform - [Set up on-premises data gateway for SAP - Power Platform
-> \| Microsoft
-> Learn](https://learn.microsoft.com/en-us/power-platform/enterprise-templates/finance/sap-procurement/administer/set-up-gateway#gateway-cluster-configuration)
+ - SAP ERP Connector - [SAP ERP - Connectors \| Microsoft Learn](/connectors/saperp/)
+
+ - SAP OData - [SAP OData - Connectors \| Microsoft Learn](/connectors/sapodata/)
+
+ - Desktop Flows - [Introduction to desktop flows - Power Automate]( power-automate/desktop-flows/introduction)
+
+ - SAP Hana - [What is SAP
+ HANA?](https://www.sap.com/products/technology-platform/hana/what-is-sap-hana.html)
+
+ On-premises data gateway
+
+ - On-premises data gateway - [What is an on-premises data gateway?](/data-integration/gateway/service-gateway-onprem)
+
+ - Set up on-premises data gateway for SAP integration with Power
+ Platform - [Set up on-premises data gateway for SAP - Power Platform](/power-platform/enterprise-templates/finance/sap-procurement/administer/set-up-gateway#gateway-cluster-configuration)
 
 VNet
 
-> [What is a virtual network (VNet) data gateway \| Microsoft
-> Learn](https://learn.microsoft.com/en-us/data-integration/vnet/overview)
->
-> [Virtual Network support overview - Power Platform \| Microsoft
-> Learn](https://learn.microsoft.com/en-us/power-platform/admin/vnet-support-overview)
+ - [What is a virtual network (VNet) data gateway](/data-integration/vnet/overview)
+
+ - [Virtual Network support overview - Power Platform](/power-platform/admin/vnet-support-overview)
 
 Virtual Tables
 
-> [Microsoft Dataverse - Virtual tables \| Microsoft
-> Learn](https://learn.microsoft.com/en-us/power-platform-release-plan/2022wave2/data-platform/virtual-tables)
->
-> [Create virtual tables using the virtual connector
-> provider](aka.ms/VirtualTableProviders)
->
-> [Create and edit virtual tables with Microsoft Dataverse - Power Apps
-> \| Microsoft
-> Learn](https://learn.microsoft.com/en-us/power-apps/maker/data-platform/create-edit-virtual-entities)
+ - [Microsoft Dataverse - Virtual tables](/power-platform-release-plan/2022wave2/data-platform/virtual-tables)
+
+ - [Create virtual tables using the virtual connector provider](aka.ms/VirtualTableProviders)
+
+ - [Create and edit virtual tables with Microsoft Dataverse - Power Apps](/power-apps/maker/data-platform/create-edit-virtual-entities)
 
 ALM
 
-> Pipelines - [Overview of tools and apps used for ALM in Power
-> Platform - Power Platform \| Microsoft
-> Learn](https://learn.microsoft.com/en-us/power-platform/alm/tools-apps-used-alm#pipelines)
->
-> Microsoft Power Platform Build Tools for Azure DevOps - [Microsoft
-> Power Platform Build Tools for Azure DevOps - Power Platform \|
-> Microsoft
-> Learn](https://learn.microsoft.com/en-us/power-platform/alm/devops-build-tools)
+ - Pipelines - [Overview of tools and apps used for ALM in Power Platform - Power Platform](/power-platform/alm/tools-apps-used-alm#pipelines)
 
-GitHub Actions for Microsoft Power Platform - [GitHub Actions for
-Microsoft Power Platform - Power Platform \| Microsoft
-Learn](https://learn.microsoft.com/en-us/power-platform/alm/devops-github-actions)
+ - Microsoft Power Platform Build Tools for Azure DevOps - [Microsoft Power Platform Build Tools for Azure DevOps - Power Platform](/power-platform/alm/devops-build-tools)
+
+- GitHub Actions for Microsoft Power Platform - [GitHub Actions for Microsoft Power Platform - Power Platform](/power-platform/alm/devops-github-actions)

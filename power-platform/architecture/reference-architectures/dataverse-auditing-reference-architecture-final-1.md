@@ -24,12 +24,9 @@ respect to data auditing as well as business event auditing.
 
 ## Architecture diagram
 
-<img src="media/dataverse-auditing-reference-architecture-final-1/image1.png" style="width:6.5in;height:1.94653in"
-alt="A diagram of a company AI-generated content may be incorrect." />
+:::image type="content" source="media/dataverse-auditing-reference-architecture-final-1/dataverse-architecture.png" alt-text="Screenshot of dataverse architecture." lightbox="media/dataverse-auditing-reference-architecture-final-1/dataverse-architecture.png":::
 
 
-
-## 
 
 ## Dataverse data auditing
 
@@ -133,7 +130,7 @@ This section highlights the auditing needs of different user personas for this u
       patterns (for example, if certain fields are updated outside of business
       hours).
 
-# Business event auditing
+## Business event auditing
 
 In addition to Dataverse field level auditing, Business Event Auditing
 involves capturing and monitoring significant business events to provide
@@ -166,10 +163,13 @@ requirements.
 
 In the financial institution, in the loan approval process, it's
 In a financial institution's loan approval process, it's important to track different business events such as who reviewed and approved the loan, changes to loan terms, and any escalations to senior management.
+
 ## Business event auditing workflow 
 
-<img src="media/dataverse-auditing-reference-architecture-final-1/image2.png" style="width:6.5in;height:4.93333in"
-alt="A diagram of a loan status AI-generated content may be incorrect." />
+:::image type="content" source="media/dataverse-auditing-reference-architecture-final-1/business-event.png" alt-text="Screenshot of dataverse architecture." lightbox="media/dataverse-auditing-reference-architecture-final-1/business-event.png":::
+
+
+
 
 ## Process-based audit consumption
 
