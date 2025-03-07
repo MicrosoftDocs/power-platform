@@ -119,6 +119,6 @@ Learn more:
 Next, take a step back and consider the bigger picture of your adoption journey with strategic initiatives or *value plays,* strategies designed to help you identify high-impact opportunities and execute them effectively.
 
 > [!div class="nextstepaction"]
-> [Use business value plays](business-value.md)
+> [Use business value plays](value-plays.md)
 
 [!INCLUDE [footer-include](../../includes/footer-banner.md)]
