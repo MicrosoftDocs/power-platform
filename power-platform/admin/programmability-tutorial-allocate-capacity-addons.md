@@ -56,7 +56,7 @@ Not all add-ons are available in the Power Platform admin center UI. As new add-
 
 ### Allocate an add-on using Power Automate flows or Logic Apps
 
-Add a new action to the canvas, searching for "Allocate and deallocate the currencies for the environment".  Set the parameters as you require.
+Add a new action to the canvas, searching for "Allocate and deallocate the currencies for the environment".  Set the parameters to higher numeric values to perform assignment.
 
 :::image type="content" source="media/tutorial-allocate-addons-flow1.png" alt-text="Allocate and deallocate the currencies screenshot.":::
 
@@ -114,7 +114,7 @@ You can unassign an add-on. This is also commonly done by admins who wish to rec
 
 ### Unassign an add-on using Power Automate flows or Logic Apps
 
-Add a new action to the canvas, searching for "Allocate and deallocate the currencies for the environment".  Set the parameters as you require.
+Add a new action to the canvas, searching for "Allocate and deallocate the currencies for the environment".  Set the parameters to lower numeric values to perform unassignment.
 
 :::image type="content" source="media/tutorial-allocate-addons-flow1.png" alt-text="Allocate and deallocate the currencies screenshot.":::
 
