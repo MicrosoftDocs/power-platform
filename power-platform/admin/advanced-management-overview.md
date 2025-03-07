@@ -6,7 +6,7 @@ ms.topic: conceptual
 ms.date: 03/07/2025
 author: akadrno
 ms.custom: NewPPAC
-ms.author: kauguillard 
+ms.author: pmantha 
 ms.reviewer: sericks
 ms.subservice: admin
 search.audienceType: 
