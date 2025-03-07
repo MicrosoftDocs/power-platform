@@ -1,6 +1,6 @@
 ---
 title: Choose the best methods and tools to measure business value
-description: Discover methods and tools to evaluate the success of Power Platform solutions and optimize resources.
+description: Explore key methodologies for measuring the business value of Power Platform solutions to ensure success.
 #customer intent: As a business leader, I want to learn how to measure the business value of Power Platform solutions so that I can ensure success and optimize resources.
 author: stjeffer
 contributors:
