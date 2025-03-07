@@ -1,5 +1,5 @@
 ---
-title: Programmability and Extensibility - Versioning and support | Microsoft Docs
+title: Programmability and Extensibility - Versioning and support
 description: Overview of versioning and support for Microsoft Power Platform programmability tools.
 author: laneswenka
 ms.reviewer: sericks
@@ -16,7 +16,7 @@ search.audienceType:
 This article provides an overview of the versioning and breaking change policies for the various programmability tools.
 
 ## Support and deprecation information
-As a new version of the REST API is released, earlier versions are retired. Microsoft will declare a version deprecated at least 12 months before it retires an API endpoint. When a version is deprecated, it's still supported as-is. If you face an issue with that version, we'll request that you move to the currently stable version. When a version is retired, it's not supported and will soon be shut off.
+As a new version of the REST API is released, earlier versions are retired. Microsoft declares a version deprecated at least 12 months before it retires an API endpoint. When a version is deprecated, it's supported as-is. If you face an issue with that version, we request that you move to the currently stable version. When a version is retired, it's not supported and will soon be shut off.
 
 By incrementing the version number of the API (for example, from 2021-10-01 to 2022-04-01), Microsoft announces that the prior generally available version (in this example, 2021-10-01) is immediately deprecated and will be retired 12 months after the announcement. The same treatment is had for public preview versions. Microsoft might make exceptions to this policy for service health and security issues.  
 
