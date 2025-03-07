@@ -16,7 +16,7 @@
         - name: Strategy
           items:
             - name: Overview
-              href: adoption/strategy-overview.md
+              href: adoption/strategy-best-practices.md
             - name: Assess Power Platform adoption strategy
               href: adoption/take-assessment.md
             - name: Define vision, metrics and goals
@@ -83,6 +83,8 @@
               href: adoption/security-checklist.md
         - name: Govern
           items:
+            - name: Overview
+              href: adoption/admin-best-practices.md
             - name: Designate a Power Platform admin
               href: adoption/pp-admin.md
             - name: Plan and manage licenses and capacity
@@ -125,31 +127,30 @@
               href: adoption/ready-overview.md
             - name: Establish a training and upskilling strategy
               href: adoption/training-strategy.md
-            - name: Set up a community hub
-              href: adoption/wiki-community.md          
             - name: Host internal training events
               href: adoption/in-a-day.md
-            - name: Envision solutions
+            - name: Set up tools to support your community
+              href: adoption/wiki-community.md          
+            - name: Share templates and reusable components
+              href: adoption/reusable.md
+            - name: Envision and uncover high-value use cases
               href: adoption/solution-envisioning.md
         - name: Nurture
           items: 
-            - name: Best practices checklist
+            - name: Overview 
               href: adoption/nurture-best-practices.md
-            - name: Community
-              items:
-                - name: Identify champions
-                  href: adoption/champions.md
-                - name: Onboard new makers
-                  href: adoption/onboard-makers.md
-             
-                - name: Share your own templates and re-usable components
-                  href: adoption/reusable.md
-            - name: Evangelism
-              items:
-                - name: Share success stories
-                  href: adoption/show-and-tell.md
-                - name: Organize hackathons
-                  href: adoption/hackathons.md
+            - name: Define community purpose & goals
+              href: adoption/community-goals.md
+            - name: Define community core team responsibilities
+              href: adoption/community-core-team.md
+            - name: Identify champions
+              href: adoption/champions.md
+            - name: Onboard new makers
+              href: adoption/onboard-makers.md
+            - name: Share success stories
+              href: adoption/show-and-tell.md
+            - name: Organize hackathons
+              href: adoption/hackathons.md
     - name: Power Platform toolkits
       href: toolkits/index.yml
     - name: Real-world case studies

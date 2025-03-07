@@ -1,59 +1,36 @@
 ---
-title: "Microsoft Power Platform nurture best practices | MicrosoftDocs"
-description: "Microsoft Power Platform adoption practices provide admin and governance, nurture and strategy and vision best practices."
+title: Nurture overview
+description: Nurture overview
 author: manuelap-msft
-
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/10/2020
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: sericks
-search.audienceType: 
-  - admin
+ms.reviewer: pankajsharma2087
+ms.date: 02/28/2025
 ---
-# Nurture best practices
 
-When your organization adopts Microsoft Power Platform, you’ll want to consider how you'll nurture your community of makers to ensure they're using the tools you've invested in to further the goals of your organization.
+# Nurture your Power Platform community
 
-Nurture activities include understanding what's important to those within the organization, what they are trying to achieve, and how they're trying to grow. It's with this information that an organization can connect business needs with the needs of individuals to become effective in implementing their vision.
+When your organization adopts Microsoft Power Platform, it's important to nurture your community of makers to ensure they are effectively using the tools to further your organization's goals. Nurturing makers involves understanding the needs and aspirations of individuals within the organization and aligning them with business objectives to create a cohesive and productive environment.
 
-Nurture means answering the following questions. Perhaps you won't have good answers for these questions yet, but like many things it's a journey and we recommend getting started.
+Nurturing your community means addressing key questions such as:
 
 - Who are our makers?
 - How can we help them succeed?
 - How can we recognize their efforts and successes?
 - How can we grow the community?
 
-In the end, nurture means connecting the dots and creating a whole that is better than the sum of its parts.
+By exploring these questions, you embark on a journey to connect the dots and create a community that is greater than the sum of its parts. This series of articles will guide you through the essential steps to nurture your Power Platform community:
 
-:::row:::
-   :::column span="":::
-      <img src="media/i_share.svg" alt="Decorative Share icon" width="80"/><br><br>**Community** <br /> 
+1. [Define community purpose & goals](community-goals.md): Establish a clear vision and objectives for your community.
+1. [Define community core team responsibilities](community-core-team.md): Assign roles and responsibilities to ensure smooth operation.
+1. Establish a New Member Onboarding Process: Create a welcoming and informative onboarding experience for new members.
+1. Plan Engaging Content & Events: Develop activities and content that keep the community engaged and motivated.
+1. Promote the Community & Establish Partnerships: Increase visibility and build relationships with other communities and stakeholders.
+1. Celebrate Successes: Recognize and reward the achievements of community members to foster a positive and supportive environment.
 
-> [!div class="checklist"]
-> * [Find and support champions in your organization](champions.md)
-> * [On-boarding new makers](onboard-makers.md)
-> * [Create an internal wiki and community](wiki-community.md)
-> * [Share your own templates and reusable components](reusable.md)
-
-   :::column-end:::
-   :::column span="":::
-      <img src="media/i_best-practices.svg" alt="Decorative Evangelize icon" width="80"/><br><br>**Evangelism**
-> [!div class="checklist"]
-> * [Share success stories](show-and-tell.md)
-> * [Organize hackathons](hackathons.md)
-   :::column-end:::
-   :::column span="":::
-      <img src="media/i_advanced.svg" alt="Decorative Training icon" width="80"/><br><br>**Training** <br />  
-
-> [!div class="checklist"]
-> * [Set training and upskilling strategy for makers](training-strategy.md)
-> * [Provide internal training events](in-a-day.md)
-> * [Offer solution envisioning workshops](solution-envisioning.md)
-
-   :::column-end:::
-:::row-end:::
+Through these steps, you'll be able to build a thriving Power Platform community that not only meets individual needs but also drives organizational success. 
 
 > [!TIP]
 > In addition to the material found in the section of the documentation, the [Microsoft Power Platform Adoption Workbook](https://aka.ms/powerplatformadoptionworkbook) contains practical step-by-step guidance for nurturing your Power Platform community. You'll find this workbook and other resources on [the Microsoft Power Platform Adoption website](https://adoption.microsoft.com/powerplatform).

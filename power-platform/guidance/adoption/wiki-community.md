@@ -40,7 +40,7 @@ Here are a few tips on what the SharePoint communication site should include:
 
 - **Announcements**: Post important updates about new features in Power Platform or upcoming events directly on SharePoint so that all members are informed promptly.
 - **Success stories**: Highlight success stories from within your community showcasing how different users have leveraged Power Platform effectively in their projects.
-- **Guidelines:**Share best practices, guidelines, and policies related to the use of Power Platform to ensure that all members are aligned and informed.
+- **Policies and guidelines:** Share best practices, guidelines, and policies related to the use of Power Platform to ensure that all members are aligned and informed.
   - **[Environment strategy](../white-papers/environment-strategy.md)**: Share what environments are available and how to request access to existing environments or request new environments; additionally, ensure makers know the boundaries of an environments licensing, security, and connectors.
   - **[Data loss prevention (DLP) policy strategy](dlp-strategy.md)**: Share which connectors are available in which environments and how to request more connectors or a new environment for a specific project.
 - **Training and reusable resources**: Share internal and external training resources, reusable components and templates, and any brand guidelines or naming conventions you want your makers to follow.
@@ -64,6 +64,14 @@ Microsoft Teams is a versatile tool that can be used for various administrative 
 - Meetings: Host virtual meetings and workshops on Teams to facilitate real-time collaboration and learning. This is especially useful for remote or geographically dispersed community members.
 
 Building the right infrastructure and using the appropriate tools are essential for supporting a Power Platform community. By leveraging tools like Viva Engage, Forms, SharePoint, and Teams, you can create a robust support system that facilitates communication, collaboration, feedback collection, and information dissemination. Each tool serves a specific purpose, from fostering conversations and planning events to collecting feedback and managing documentation. By integrating these tools effectively, you can ensure that your Power Platform community thrives and continues to grow.
+
+## Catalog in Power Platform
+
+Organizations where developers and makers build and share customized and reusable components and templates get more value from Power Platform. Successful organizations adopt a fusion teams model where pro-developers, makers, and admins all work together to deliver the best solutions for their users, and derive the highest value possible from Power Platform. Learn more about using [sharing reusable templates and components](reusable.md).
+
+## Nurture components in the CoE Starter Kit
+
+The Center of Excellence (CoE) Starter Kit includes [nurture components](/power-platform/guidance/coe/nurture-components) designed to support and develop the Power Platform community within an organization. These components provide essential resources such as the **Video Hub**, which centralizes video content for training and best practices, and the **Training in a day** solution helps manage internal training events and registrations. The **Maker Assessment** and **Pulse Survey** components help gauge the skills and engagement levels of community members. By exploring these nurture components, organizations can effectively onboard new makers, share best practices, and foster a culture of continuous learning and innovation.
 
 ## Get started with the Power Platform communication site template
 

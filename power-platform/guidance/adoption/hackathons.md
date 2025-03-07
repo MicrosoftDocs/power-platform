@@ -5,7 +5,7 @@ author: manuelap-msft
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/09/2020
+ms.date: 02/28/2025
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: sericks
@@ -14,7 +14,7 @@ search.audienceType:
 ---
 # Organize hackathons
 
-A hackathon is a fun way to engage lots of people within your organization around a digital culture of change. The key objective is to develop sample apps and cultivate ideas to drive digital transformation. Teams come together, at the line of business or at the global scale, from different roles and departments to compete and create apps that address an organizational need. 
+A hackathon is a fun way to engage lots of people within your organization around a digital culture of change. The key objective is to develop sample apps and cultivate ideas to drive digital transformation. Teams come together, at the line of business or at the global scale, from different roles and departments to compete and create apps that address an organizational need.
 
 The more variety of skills and roles represented, the better. One or more facilitators should be involved in organizing the hackathon and defining the teams and the rules. Also, it might be worth starting the day with a review and demo of Power Apps, Power Automate, Power BI, Microsoft Copilot Studio, AI Builder, Microsoft Power Platform, and Microsoft Dataverse.
 
@@ -37,9 +37,9 @@ Preparation is key for a successful hackathon, so make sure to consider the foll
 
 ## Readiness
 
--	Provide training sessions for participants—the more they know ahead of the event, the better the apps they’ll submit. Suggest they attend an [App in a Day](https://aka.ms/aiadevent) event, or complete the Learn module [Get started with Power Apps canvas apps](/training/modules/get-started-with-powerapps/).
+-	Provide training sessions for participants—the more they know ahead of the event, the better the apps they’ll submit. Suggest they sign up to the [Power Up program](https://powerup.microsoft.com/?referral=learn), register for a [Power Platform in a Day workshops](https://www.microsoft.com/power-platform/training-workshops), or complete a [Power Platform learning path](/training/powerplatform/).
 -	Set up a call before the hackathon where teams and individuals can bring their ideas and questions to discuss feasibility and unblock knowledge gaps.
--	Find out what data sources teams want to connect to and make sure test data is available, and that teams have the right access. An alternative is providing dummy data as an Excel spreadsheet the teams could use to mock up their solutions.
+-	Find out what data sources teams want to connect to and make sure test data is available, and that teams have the right access. An alternative is providing sample data as an Excel spreadsheet the teams could use to mock up their solutions.
 -	Building confidence is the key; it maximizes the productivity of the hackathon.
 
 ## Finding your ideas and use cases
@@ -63,7 +63,7 @@ Either ask attendees to build their own teams, or pick teams yourself. Make sure
 
 ## On the day
 
-Ensure the day is fun—provide snacks and ample coffee. Designing a hackathon logo and getting T-shirts, stickers or button made for the day can be an effective way to motivate attendees. Line up some Microsoft Power Platform champions to help attendees with technical questions, and some facilitators who can help with logistics ("Are there more post-its?" "We need a purple marker!" "We don't have access to *xyz*." "How do I share my whiteboard with other members on the team?").
+Ensure the day is fun—provide snacks and ample coffee. Designing a hackathon logo and getting T-shirts, stickers or buttons made for the day can be an effective way to motivate attendees. Line up some Microsoft Power Platform champions to help attendees with technical questions, and some facilitators who can help with logistics ("Are there more post-its?" "We need a purple marker!" "We don't have access to *xyz*." "How do I share my whiteboard with other members on the team?").
 
 Your hackathon can be one day or more, but we recommend planning your agenda upfront and communicating it clearly to attendees, so they know how much time to set aside.
 
@@ -72,11 +72,11 @@ Here’s a sample agenda:
 | &nbsp; |  &nbsp;|
 |----|----|
 | 15 mins	| **Introduction and Welcome** |
-| 30 mins	| **Microsoft Power Platform Introduction**<br>Consider playing videos from Microsoft conferences, such as [Unleashing your organization’s creativity and innovation with a deep dive into Microsoft Power Platform](https://www.youtube.com/watch?v=2QJMP_Scvy8) or [Empower everyone in your organization to drive digital transformation with Microsoft Power Platform](https://www.youtube.com/watch?v=0P7wlxpDFII). You could also highlight some [customer stories](https://powerapps.microsoft.com/customer-stories/) for additional inspiration, especially if there is a public case study of a customer in the same or similar industry as your organization. |
-| 30 mins	| **Microsoft Power Platform Demonstration**<br>Get hands on with Microsoft Power Platform in front of your attendees, using elements from the [App in an hour](https://powerapps.microsoft.com/blog/hands-on-lab-building-a-conference-app-in-60-min/) material can work well here. |
-| 30 mins | **Rules of Engagement**, How to work, Questions
-x hours | **Hackathon**<br>This should be the main portion of your day and can either consist of 4-5 hours on Day 1  or span over multiple days. |
-| 30-60 mins | **Team Presentations**, Discussions and Judging
+| 30 mins	| **Microsoft Power Platform introduction**<br>Consider playing videos from recent Microsoft conferences. You could also highlight some [customer stories](https://www.microsoft.com/power-platform/blog/power-apps/power-platform-stories) for additional inspiration, especially if there is a public case study of a customer in the same or similar industry as your organization. |
+| 30 mins	| **Microsoft Power Platform demonstration**<br>Get hands on with Microsoft Power Platform in front of your attendees, using [Plan designer](/power-apps/maker/plan-designer/plan-designer) to create a comprehensive solution by describing your business problem in natural language can be a great way of introducing attendees to the power of the platform. |
+| 30 mins | **Rules of Engagement**, How to work, Questions |
+| x hours | **Hackathon**<br>This should be the main portion of your day and can either consist of 4-5 hours on Day 1  or span over multiple days. |
+| 30-60 mins | **Team Presentations**, Discussions and Judging |
 
 ## Team presentations and judging
 
