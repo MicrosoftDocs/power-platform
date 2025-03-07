@@ -34,12 +34,12 @@ This article provides guidance on how to measure the business value of Power Pla
 
 ## Methodologies
 
-Measuring the business value of Power Platform solutions involves a combination of qualitative and quantitative methods to ensure a comprehensive evaluation. Here are some key methodologies to consider:
+Measuring the business value of Power Platform solutions involves qualitative and quantitative methods to ensure a comprehensive evaluation. Here are some key methodologies to consider:
 
-- **Stakeholder interviews**: Interviews are invaluable for qualitative insights. Engage with individuals involved in or impacted by the solution. Ask about their experiences, challenges, and perceived improvements. Consider using structured interview guides to ensure consistency and depth in responses. 
-- **Surveys and feedback forms**: Surveys are excellent for quantitative data. They allow collecting structured feedback from a larger audience, including end-users and team members. Use a mix of closed and open-ended questions to capture both measurable data and detailed feedback.
-- **Key performance indicators (KPIs)**: KPIs provide quantifiable data about the solution's performance. Monitor metrics like response times, resolution times, error rates, user adoption rates, and cost savings. Ensure KPIs are aligned with business objectives.
-- **User analytics**: User analytics tools help understand user behavior and interaction with the solution. Track adoption rates, feature usage, and user engagement. Tools like Power BI can visualize this data for better insights.
+- **Stakeholder interviews**: Interviews are invaluable for qualitative insights. Engage with individuals involved in or impacted by the solution. Ask about their experiences, challenges, and perceived improvements. Consider using structured interview guides to ensure consistency and depth in responses.
+- **Surveys and feedback forms**: Surveys are excellent for quantitative data. They let you collect structured feedback from a larger audience, including end-users and team members. Use a mix of closed and open-ended questions to capture both measurable data and detailed feedback.
+- **Key performance indicators (KPIs)**: KPIs provide quantifiable data about the solution’s performance. Monitor metrics like response times, resolution times, error rates, user adoption rates, and cost savings. Ensure KPIs align with business objectives.
+- **User analytics**: User analytics tools help understand user behavior and interaction with the solution. Track adoption rates, feature usage, and user engagement. Tools like Power BI visualize this data for better insights.
 - **Return on investment (ROI) calculators**: Calculating ROI involves comparing implementation costs against the benefits obtained. Consider both tangible and intangible benefits, such as efficiency gains, user satisfaction, and reduced operational costs. Use standardized ROI calculation methods to ensure accuracy.
 - **360-degree feedback**: Gather feedback from all angles, from end-users and customers to support agents and IT teams. This holistic approach ensures a comprehensive view of the solution's impact. Use tools like Microsoft Forms or third-party survey platforms to facilitate this process.
 - **Data integration and automation**: Automating data collection and integration with Power Platform tools ensures accurate and real-time data for measurement, reducing manual entry. Use connectors and APIs to streamline data flow between systems.
@@ -55,7 +55,7 @@ Choosing the best value measurement method and tool involves considering several
 - **Evaluate automation capabilities**: Look for tools that offer robust automation features. Automation can save significant time by reducing manual data entry and ensuring consistent data collection.
 - **Assess reporting features**: Choose tools that provide comprehensive reporting capabilities like customizable reports, real-time data visualization, and the ability to export data in various formats.
 - **Consider integration**: Ensure the tool can integrate with your existing systems so that you can streamline data flow and reduce the need for duplicate data entry. For example, consider integrating a feedback mechanism directly within the app to streamline the process for users. This approach eliminates the need for users to leave the app and navigate to an external form or system. By embedding feedback options within the app interface, you capture real-time insights and improve user engagement.
-- **Scalability**: Stakeholder interviews and 360-degree feedback are valuable but can be time-intensive for participants. To maximize their effectiveness, employ these methods purposefully for high-impact scenarios. Focus on situations where comprehensive insights are important.
+- **Scalability**: Stakeholder interviews and 360-degree feedback are valuable but can be time-intensive for participants. To maximize their effectiveness, use these methods purposefully for high-impact scenarios. Focus on situations where comprehensive insights are important.
 
 ## Value measurement at scale
 
@@ -94,7 +94,7 @@ Forms are stored in filing cabinets at each depot, which means there's no centra
 
 ### Business value assessment outcome
 
-By talking to subject matter experts and looking at the current process, you've been able to establish the value of digitizing the process using the following measures:
+By talking to subject matter experts and looking at the current process, you've established the value of digitizing the process through the following measures:
 
 | Measure | Business value | Value type | Value level |
 |---------|----------------|------------|-------------|
@@ -107,7 +107,7 @@ By talking to subject matter experts and looking at the current process, you've 
 
 ## Business value toolkit
 
-The [Business value toolkit](../coe/business-value-toolkit.md) is a feature of the [Center of Excellence Starter Kit](../coe/overview.md) that provides a comprehensive framework to capture and communicate the value of Power Platform solutions effectively. By guiding app owners through a structured storytelling process, enhanced by AI to both refine the narrative and analyze its impact on organizational strategic objectives, the toolkit helps transform raw insights into compelling success stories that highlight the true impact of their solutions.
+The [Business value toolkit](../coe/business-value-toolkit.md) is a feature of the [Center of Excellence Starter Kit](../coe/overview.md) that provides a comprehensive framework to capture and communicate the value of Power Platform solutions. By guiding app owners through a structured storytelling process, enhanced by AI to both refine the narrative and analyze its impact on organizational strategic objectives, the toolkit helps transform raw insights into compelling success stories that highlight the true impact of their solutions.
 
 Learn more:
 
