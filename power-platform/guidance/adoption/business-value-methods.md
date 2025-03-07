@@ -46,7 +46,7 @@ Measuring the business value of Power Platform solutions involves a combination 
 - **Periodic reviews**: Periodic reviews and assessments help you track progress over time and make informed adjustments based on evolving needs. Schedule regular review meetings and use dashboards to present key metrics and insights.
 - **Benchmarking**: Compare the performance of your Power Platform solutions against industry standards or similar implementations within your organization. Benchmarking helps identify areas for improvement and set realistic performance targets.
 
-## Choose the best method and tool
+## Choose the best value measurement method and tool
 
 Choosing the best value measurement method and tool involves considering several key factors. Here are some steps to guide you:
 
