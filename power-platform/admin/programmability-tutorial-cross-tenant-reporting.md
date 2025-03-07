@@ -1,11 +1,11 @@
 ---
-title: "Tutorial: Create cross tenant isolation reports | Microsoft Docs"
+title: "Tutorial: Create cross-tenant isolation reports | Microsoft Docs"
 description: Learn how to use the Power Platform API to create cross tenant isolation reports.
 author: laneswenka
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 03/03/2025
+ms.date: 03/07/2025
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
@@ -14,9 +14,9 @@ contributors:
 - mihaelablendea 
 ---
 
-# Tutorial: Create cross tenant isolation reports
+# Tutorial: Create cross-tenant isolation reports
 
-This tutorial demonstrates how to use the programmability tools to create cross tenant isolation reports.
+This tutorial demonstrates how to use the programmability tools to create cross-tenant isolation reports.
 
 In this tutorial, learn how to:
 
@@ -29,7 +29,7 @@ In this tutorial, learn how to:
 > For more details about tenant isolation, see [Cross-tenant inbound and outbound restrictions](cross-tenant-restrictions.md).
 
 ## Create a report
-Use the information, below, to find various ways in which you can create a new report. 
+Use the following information to find various ways in which you can create a new report. 
 
 > [!NOTE]
 > You can only create one report per tenant per calendar day.
@@ -37,7 +37,7 @@ Use the information, below, to find various ways in which you can create a new r
 # [Power Automate / Logic Apps](#tab/Automate)
 Add a new action to the canvas, searching for "Create a request to generate a cross-tenant connection report for a tenant, or return an existing report".  There are no parameters required.
 
-:::image type="content" source="media/tutorial-tenantisolation-flow1.png" alt-text="Cross tenant connection report create screenshot.":::
+:::image type="content" source="media/tutorial-tenantisolation-flow1.png" alt-text="Cross-tenant connection report create screenshot.":::
 
 # [PowerShell](#tab/PowerShell)
 Use the following PowerShell script to create the report.
@@ -71,7 +71,7 @@ try
 }
 ```
 
-Power Platform API reference: [Create Cross Tenant Connection Report](/rest/api/power-platform/governance/cross-tenant-connection-reports/create-cross-tenant-connection-report)
+Power Platform API reference: [Create Cross-Tenant Connection Report](/rest/api/power-platform/governance/cross-tenant-connection-reports/create-cross-tenant-connection-report)
 
 ---
 
@@ -112,7 +112,7 @@ try
 }
 ```
 
-Power Platform API reference: [Get Cross Tenant Connection Report](/rest/api/power-platform/governance/cross-tenant-connection-reports/get-cross-tenant-connection-report)
+Power Platform API reference: [Get Cross-Tenant Connection Report](/rest/api/power-platform/governance/cross-tenant-connection-reports/get-cross-tenant-connection-report)
 
 ---
 
@@ -154,10 +154,10 @@ try
 }
 ```
 
-Power Platform API reference: [List Cross Tenant Connection Reports](/rest/api/power-platform/governance/cross-tenant-connection-reports/list-cross-tenant-connection-reports)
+Power Platform API reference: [List Cross-Tenant Connection Reports](/rest/api/power-platform/governance/cross-tenant-connection-reports/list-cross-tenant-connection-reports)
 
 ---
 
-### See also
+### Related content
 
-[Power Platform API reference - Cross Tenant Connection Reports](/rest/api/power-platform/governance/cross-tenant-connection-reports)
+[Power Platform API reference - Cross-Tenant Connection Reports](/rest/api/power-platform/governance/cross-tenant-connection-reports)
