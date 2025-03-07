@@ -3,7 +3,7 @@ title: Managed governance
 description: Learn how to govern Power Platform to ensure that its capabilities are harnessed responsibly and effectively.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/24/2025
+ms.date: 03/07/2025
 author: akadrno
 ms.custom: NewPPAC
 ms.author: kauguillard 
@@ -17,11 +17,11 @@ search.audienceType:
 
 In the age of AI, governing the Power Platform is crucial to ensure that the powerful capabilities it offers are harnessed responsibly and effectively. As organizations increasingly rely on AI-driven solutions to enhance productivity and drive innovation, the need for robust governance becomes paramount. Effective governance ensures that data is managed securely, compliance with regulatory standards is maintained, and resources are utilized efficiently. It also helps in mitigating risks associated with data privacy and security, providing a structured approach to managing environments at scale. By implementing comprehensive governance strategies, organizations can maximize the benefits of the Power Platform while safeguarding their operations and maintaining trust with stakeholders. 
 
-## What can Managed governance do?
+## What can managed governance do?
 
-Managed governance in the Power Platform provides a structured framework to ensure that environments are used in compliance with organizational policies and regulatory requirements. It helps organizations maintain control over their data, optimize resource usage, and ensure that all activities within the platform are transparent and accountable. By implementing Managed governance, organizations can effectively manage their environments at scale, develop strategic approaches to environment usage, respond proactively to governance issues, gain full visibility into their operations, and manage capacity and costs efficiently. 
+Managed governance in the Power Platform provides a structured framework to ensure that environments are used in compliance with organizational policies and regulatory requirements. It helps organizations maintain control over their data, optimize resource usage, and ensure that all activities within the platform are transparent and accountable. By implementing managed governance, organizations can effectively manage their environments at scale, develop strategic approaches to environment usage, respond proactively to governance issues, gain full visibility into their operations, and manage capacity and costs efficiently. 
 
-## Features of Managed governance
+## Features of managed governance
 
 ### Manage at scale
 
