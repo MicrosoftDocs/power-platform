@@ -228,7 +228,7 @@ Data Access
 
  - SAP OData - [SAP OData - Connectors \| Microsoft Learn](/connectors/sapodata/)
 
- - Desktop Flows - [Introduction to desktop flows - Power Automate]( power-automate/desktop-flows/introduction)
+ - Desktop Flows - [Introduction to desktop flows - Power Automate](/power-automate/desktop-flows/introduction)
 
  - SAP Hana - [What is SAP
  HANA?](https://www.sap.com/products/technology-platform/hana/what-is-sap-hana.html)
@@ -250,7 +250,7 @@ Virtual Tables
 
  - [Microsoft Dataverse - Virtual tables](/power-platform-release-plan/2022wave2/data-platform/virtual-tables)
 
- - [Create virtual tables using the virtual connector provider](aka.ms/VirtualTableProviders)
+ - [Create virtual tables using the virtual connector provider](/aka.ms/VirtualTableProviders)
 
  - [Create and edit virtual tables with Microsoft Dataverse - Power Apps](/power-apps/maker/data-platform/create-edit-virtual-entities)
 

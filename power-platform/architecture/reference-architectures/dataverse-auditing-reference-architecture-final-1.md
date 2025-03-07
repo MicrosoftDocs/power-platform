@@ -24,7 +24,7 @@ respect to data auditing as well as business event auditing.
 
 ## Architecture diagram
 
-:::image type="content" source="media/dataverse-auditing-reference-architecture-final-1/dataverse-architecture.png" alt-text="Screenshot of dataverse architecture." lightbox="media/dataverse-auditing-reference-architecture-final-1/dataverse-architecture.png":::
+:::image type="content" source="media/dataverse-auditing-reference-architecture-final-1/dataverse-architecture.png" alt-text="Screenshot of auditing reference." lightbox="media/dataverse-auditing-reference-architecture-final-1/dataverse-architecture.png":::
 
 
 
@@ -166,7 +166,7 @@ In a financial institution's loan approval process, it's important to track diff
 
 ## Business event auditing workflow 
 
-:::image type="content" source="media/dataverse-auditing-reference-architecture-final-1/business-event.png" alt-text="Screenshot of dataverse architecture." lightbox="media/dataverse-auditing-reference-architecture-final-1/business-event.png":::
+:::image type="content" source="media/dataverse-auditing-reference-architecture-final-1/business-event.png" alt-text="Screenshot of loan approval process." lightbox="media/dataverse-auditing-reference-architecture-final-1/business-event.png":::
 
 
 
