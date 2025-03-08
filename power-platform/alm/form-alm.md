@@ -19,6 +19,20 @@ This article provides you with information about the various scenarios on how to
 
 The following sections describe how form merge works and how to maintain customizations. The basic development scenarios with recommendations for maintaining successful ALM for a model-driven app form are covered in detail within each section that follows. Every scenario includes steps to follow that can help you implement a proper ALM process when updating your solution or model-driven app.
 
+## Full and differential form XML
+
+Every exported solution package includes a customizations.xml file. Whenever a form is included in a solution, the related form definition exists within the FormXml sections of the customizations.xml file. FormXml can either be *full* or *differential (diff)*.
+
+### Full FormXml
+
+The FormXml you get on exporting a solution for a form in an unmanaged state is called a *full* FormXml. Full means it contains the entire form definition. When you create a new form and export it, the form will always be a full FormXml because the form in the environment you are exporting from is in an unmanaged state and also is in a create state. If you export any further solutions from this same environment, those will also include a full FormXml. Because the `solutionaction` attribute indicates a diff FormXml, the full FormXml in the customization.xml file in the solution you export will not contain any `solutionaction` attributes.
+
+### Differential (diff) FormXml
+
+The FormXml you get when exporting a solution for a form in a managed state is called a differential or *diff* FormXml. Diff means the FormXml contains only the changes done in the active customizations in that environment and not the entire form definition. When you customize an existing managed form and export it, the form will always be a diff FormXml because it will only contain the active changes done to it. The diff FormXml in the customization.xml file in the solution you export will contain `solutionaction` attributes defining what the changes are, like **Added**, **Removed**, **Modified**.
+
+Diff FormXml ensures that your solution will only express the changes your app needs and will be impacted less by changes from other layers. Diff FormXml also makes the solution less bulky and helps it import faster.
+
 ## Creating a new form and maintaining it using multiple managed solutions
 
 Follow these steps to implement healthy form ALM for this scenario.
@@ -41,7 +55,7 @@ As seen in the below diagram, it is not a healthy ALM practice to create multipl
 
 Follow these steps to implement healthy form ALM for this scenario.
 
-1. Create a new for named *FormA* in your development environment and perform customizations on the form.
+1. Create a new form named *FormA* in your development environment and perform customizations on the form.
 1. Create a solution (*Solution A* in the below diagram), which will be an unmanaged solution and add your new form. Export the solution as managed. This step exports a [full FormXml](#full-formxml) for the form.
 1. In your test environment, import the managed solution from step 2, thus creating the form in the test environment. In the below diagram *FormA* gets created in the test environment and the UI for the form shows *Field1* and *Field2* that *Solution A* added to the form.
 1. When you further customize the form you created in Step 1 using patches, use the same environment where *Solution A* is in an unmanaged state and create a patch for the solution and customize the form. Next, export the patch as a managed solution. This step exports a [full formXml](#full-formxml) for the form.
@@ -124,20 +138,6 @@ Follow these steps to implement healthy form ALM for this scenario.
 <!-- ![Scenario 6 form application lifecycle management diagram.](media/scenario6-form-alm-diagram.png) -->
 
 :::image type="content" source="media/scenario6-form-alm-diagram.png" alt-text="Scenario 6 form application lifecycle management diagram." lightbox="media/scenario6-form-alm-diagram.png":::
-
-## Full and differential form XML
-
-Every exported solution package includes a customizations.xml file. Whenever a form is included in a solution, the related form definition exists within the FormXml sections of the customizations.xml file. FormXml can either be *full* or *differential (diff)*.
-
-### Full FormXml
-
-The FormXml you get on exporting a solution for a form in an unmanaged state is called a *full* FormXml. Full means it contains the entire form definition. When you create a new form and export it, the form will always be a full FormXml because the form in the environment you are exporting from is in an unmanaged state and also is in a create state. If you export any further solutions from this same environment, those will also include a full FormXml. Because the `solutionaction` attribute indicates a diff FormXml, the full FormXml in the customization.xml file in the solution you export will not contain any `solutionaction` attributes.
-
-### Differential (diff) FormXml
-
-The FormXml you get when exporting a solution for a form in a managed state is called a differential or *diff* FormXml. Diff means the FormXml contains only the changes done in the active customizations in that environment and not the entire form definition. When you customize an existing managed form and export it, the form will always be a diff FormXml because it will only contain the active changes done to it. The diff FormXml in the customization.xml file in the solution you export will contain `solutionaction` attributes defining what the changes are, like **Added**, **Removed**, **Modified**.
-
-Diff FormXml ensures that your solution will only express the changes your app needs and will be impacted less by changes from other layers. Diff FormXml also makes the solution less bulky and helps it import faster.
 
 ### See also
 [Recommendations for healthy form ALM](form-alm-recommendations.md)
