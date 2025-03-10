@@ -14,6 +14,8 @@ search.audienceType:
 ---
 
 # Compliance
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
                                                   
 Compliance is essential in safeguarding organizational data and ensuring adherence to industry regulations. Implementing robust compliance measures helps mitigate risks and maintain trust with stakeholders.
 

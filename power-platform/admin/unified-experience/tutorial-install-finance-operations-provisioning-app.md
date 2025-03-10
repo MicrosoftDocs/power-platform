@@ -14,6 +14,8 @@ search.audienceType:
 
 # Tutorial: Install the Finance and Operations Provisioning app 
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 Finance and operations apps are reimagined as an application hosted by Microsoft Dataverse. Customers don't need to provision their enterprise resource planning (ERP) system separately from their low-code and other Dynamics 365 platform applications. Most administrative actions in Power Platform are available through the admin center and an API-based experience.
 
 In this tutorial, learn how to:

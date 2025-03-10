@@ -14,6 +14,8 @@ search.audienceType:
 
 # Virtual Network support white paper
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 This white paper provides an in-depth analysis of the integration of Azure Virtual Network support within Power Platform. Learn about significant benefits of this integration such as enhanced security, improved connectivity, and streamlined network management. With Virtual Network support, organizations ensure their Power Platform services operate within a secure and controlled network environment, reducing the risk of data breaches and unauthorized access.
 
 This paper outlines the implementation process, technical architecture, and real-world use cases. Virtual Network support optimizes architecture and scalability of Power Platform applications. This paper provides practical insights from successful case studies, making it valuable resource for IT professionals and decision-makers looking to enhance their network security and operational efficiency benefit.

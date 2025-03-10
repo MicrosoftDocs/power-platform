@@ -15,6 +15,8 @@ contributors:
 ---
 # Replicate data to Azure SQL Database using Data Export Service
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 > [!NOTE]
 > Effective November 2021, Data Export Service was deprecated. Data Export Service will continue to work and will be fully supported until it reaches end-of-support and end-of-life in November 2022. More information: https://aka.ms/DESDeprecationBlog
 

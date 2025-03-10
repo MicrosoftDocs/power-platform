@@ -15,6 +15,8 @@ contributors:
 
 # Business continuity and disaster recovery
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 Microsoft provides business continuity and disaster recovery (BCDR) capabilities to all [production type](/power-platform/admin/environments-overview) environments in Dynamics 365 and Power Platform software as a service (SAAS) applications. This article describes details and practices Microsoft takes to ensure your production data is resilient during a regional outage.
 
 ## Backup of production environments

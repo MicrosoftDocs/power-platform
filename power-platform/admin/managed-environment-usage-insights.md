@@ -13,6 +13,8 @@ ms.custom:
 
 # Usage insights
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 <!-- https://go.microsoft.com/fwlink/?linkid=2194598 and 2211177 -->
 
 Stay informed about what’s happening in your managed environments with Power Platform’s weekly admin digest. Analytics about your top apps, your most impactful makers, and inactive resources you can safely clean up are distilled and delivered to your mailbox once a week.

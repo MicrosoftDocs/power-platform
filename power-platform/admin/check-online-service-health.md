@@ -15,6 +15,8 @@ ms.contributors:
 ---
 # How do I check my online service health?
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 You can quickly get the real-time status of your Microsoft Power Platform, Microsoft Dynamics 365, and Microsoft 365 services.
 
 ## View service health information in the Power Platform admin center

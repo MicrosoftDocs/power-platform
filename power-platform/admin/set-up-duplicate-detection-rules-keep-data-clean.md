@@ -10,6 +10,8 @@ ms.author: gned
 ---
 # Set up duplicate detection rules to keep your data clean
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 To maintain the integrity of your data, it's a good idea to have rules in place to reduce duplicate records in the system. The model-driven apps and the customer engagement apps (such as Dynamics 365 Sales and Dynamics 365 Customer Service) include default duplicate detection rules for accounts and contacts, but not for other types of records. If you want the system to detect duplicates for other record types, you'll need to create a new duplicate detection rule.  
   
  After you've created duplicate detection rules, you need to turn on the rules.  
