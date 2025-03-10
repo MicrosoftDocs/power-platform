@@ -4,7 +4,7 @@ description: Learn how to execute requests as background operations in Microsoft
 author: manuelap-msft
 ms.subservice: architecture-center
 ms.topic: example-scenario
-ms.date: 03/07/2025
+ms.date: 03/10/2025
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
 contributors: 
@@ -17,7 +17,7 @@ search.audienceType:
 
 # Dataverse background operations
 
-In Microsoft Dataverse, executing requests as background operations can significantly enhance the efficiency of asynchronous processing. By leveraging Custom APIs, you can define custom messages and implement business logic through plug-ins, allowing for background processing that eliminates the need for a persistent connection during execution. This guide will walk you through the workflow, use cases, and considerations for implementing background operations in Dataverse, ensuring scalable and reliable performance for long-running tasks.
+In Microsoft Dataverse, executing requests as background operations significantly enhance the efficiency of asynchronous processing. By using custom APIs, you define custom messages and implement business logic through plug-ins, allowing for background processing that eliminates the need for a persistent connection during execution. This guide explains the workflow, use cases, and considerations for implementing background operations in Dataverse, ensuring scalable and reliable performance for long-running tasks.
 
 :::image type="content" source="media/dataverse-background-operations-/Background-job.png" alt-text="Screenshot of background job." lightbox="media/dataverse-background-operations-/Background-job.png":::
 
@@ -28,49 +28,40 @@ In Microsoft Dataverse, executing requests as background operations can signific
 To execute a request as a background operation in Microsoft Dataverse,
 the operation must be defined as a Custom API.
 
-Custom APIs allow to define custom messages and implement business logic
-through plug-ins. By configuring operation as a Custom API, you can
-leverage background processing to handle requests asynchronously,
-eliminating the need to maintain a **persistent connection** during
-execution.
+Custom APIs allow to define the custom messages and implement business logic
+through plug-ins. By configuring the operation as a Custom API, you use background processing to handle requests asynchronously, and
+eliminating the need to maintain a persistent connection during execution.
 
 - Asynchronous Processing: Background operations enable Dataverse to
-  process requests without requiring the client to wait for completion,
-  enhancing efficiency for long-running tasks.
-
-<!-- -->
+process requests without making the client wait for completion, and enhancing efficiency for long-running tasks.
 
 - Notification Methods: Upon completion of a background operation, you
-  can receive notifications by
+  can receive notifications by:
+  - Including a callback URL with your request.
+  - Subscribing to the OnBackgroundOperationComplete event.
 
-<!-- -->
-
-- Including a callback URL with your request.
-
-- Subscribing to the OnBackgroundOperationComplete event.
-
-In the event of an error during the execution of a background operation,
-Dataverse employs a retry mechanism. Specifically, the system will
-attempt to retry the failed request up to three times, utilizing an
+If an error occurs during the execution of a background operation,
+Dataverse employs a retry mechanism. Specifically, the system
+attempts to retry the failed request up to three times, utilizing an
 [exponential backoff
 strategy](https://en.wikipedia.org/wiki/Exponential_backoff).
 
-**Makers:**
+### Makers:
 
 - A background operation is triggered using Microsoft Dataverse in Power
   Automate.
 
 - The operation can be scheduled via Recurrence triggers.
 
-- The Perform a Background Operation action (Premium) is used in
+- The Perform a background operation action (Premium) is used in
   Dataverse to handle the operation asynchronously.
 
-- OnBackgroundOperationComplete event action can be either called from
+- OnBackgroundOperationComplete event action can be called from
   Power Automate to receive the completion or from API.
 
-When utilizing Dataverse Background Operations to execute requests
+When utilizing Dataverse background operations to execute requests
 asynchronously, it's important to note that the two-minute execution
-timeout still applies to any plug-ins invoked during the process.
+time-out still applies to any plug-ins invoked during the process.
 
 ## Use Cases
 
@@ -78,27 +69,27 @@ Dataverse's background operations enable asynchronous processing of
 tasks, allowing for efficient handling of long-running or
 resource-intensive processes without impacting user experience.
 
-**Bulk Data Processing**:
+### Bulk data processing:
 
  *Scenario*: A marketing firm needs to process large datasets to
- analyze customer behaviour and segment audiences.
+ analyze customer behavior and segment audiences.
 
- Implement background operations to handle data aggregation and
+- Implement background operations to handle data aggregation and
  analysis tasks, allowing marketers to access insights without waiting
  for processing to complete.
 
-**Scheduled Data Cleanup:**
+### Scheduled data cleanup:
 
  *Scenario*: An organization wants to maintain data hygiene by regularly
  archiving or deleting outdated records from Dataverse.
 
- Implement background operations to identify and manage obsolete data,
+- Implement background operations to identify and manage obsolete data,
  ensuring the system remains efficient and storage costs are
  controlled.
 
 ## Considerations
 
-### Scalability and Performance
+### Scalability and performance
 
 Background jobs can scale with increasing workloads without compromising
 performance or reliability.
@@ -111,6 +102,6 @@ exponential backoff to manage transient faults effectively.
 
 ## Related Resources
 
-- [Power Platform- well architechted](/power-platform/well-architected/reliability/background-jobs)
+- [Power Platform- well architected](/power-platform/well-architected/reliability/background-jobs)
 
 - [Power Apps data platform](/power-apps/developer/data-platform/background-operations?tabs=sdk)

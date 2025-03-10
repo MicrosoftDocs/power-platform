@@ -4,7 +4,7 @@ description: Discover how to integrate Microsoft Power Platform with SAP for sea
 author: manuelap-msft
 ms.subservice: architecture-center
 ms.topic: example-scenario
-ms.date: 03/07/2025
+ms.date: 03/10/2025
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
 contributors: 
@@ -18,7 +18,13 @@ search.audienceType:
 
 # SAP and Power Platform solution
 
+Integrating Microsoft Power Platform with SAP can significantly enhance data management and automation capabilities within your organization. This document provides a comprehensive guide on how to seamlessly connect these two powerful platforms. You learn about the architecture, workflows, and various connectivity methods available to ensure a smooth integration process. Additionally, alternative connectivity options and use cases are discussed to help you choose the best approach for your specific needs. By using the Power Platform, you can streamline operations, improve efficiency, and maintain robust security and governance standards while working with SAP systems.
+
+This introduction sets the stage for the detailed content that follows, highlighting the key aspects and benefits of integrating Microsoft Power Platform with SAP.
+
 ## Architecture diagram
+
+
 
 :::image type="content" source="media/arch-pattern-sap-power-platform/architecture.png" alt-text="Screenshot of architecture." lightbox="media/arch-pattern-sap-power-platform/architecture.png":::
 
@@ -27,29 +33,28 @@ search.audienceType:
 While the image above shows a full solution, the flow between the Power
 Platform and SAP is straightforward:
 
-**Power Platform Power App / Power Automate flow** – A Power App
-leverages Power Automate flow to call through the SAP ERP Connector.
+**Power Platform Power Apps / Power Automate flow**: A Power App
+uses Power Automate flow to call through the SAP ERP Connector.
 
-**SAP ERP Connector** – The SAP ERP Connector calls the on-premises
+**SAP ERP connector**: The SAP ERP connector calls the on-premises
 gateway (OPDG). These calls use RFC/BAPI calls.
 
-**On-premises Data Gateway (OPDG)** – Calls SAP and uses SAP. Power
-Platform does not bypass authorizations in SAP.
+**On-Premises Data Gateway (OPDG)**: Calls SAP and uses SAP. Power
+Platform doesn't bypass authorizations in SAP.
 
-**SAP (and infrastructure)** -OPDG then calls to SAP through the SAP
-.Net connector.
+**SAP (and infrastructure)**: OPDG then calls SAP through the SAP .Net connector.
 
-**SAP OData connector** – The OData connector can be used to perform
-operations like create, read, update, and delete of entities, as well as
+**SAP OData connector**: The OData connector can be used to perform
+operations like create, read, update, and delete of entities, and
 invoking functions on the service.
 
 ## Alternative connectivity methods
 
 ### Virtual Network (VNet)
 
-This document has noted the use the OPDG. There is another option for
-connectivity when which is the virtual network data gateway (VNet). This
-option only works with the <u>OData SAP connector</u> as it transmits
+This document has noted the use of the OPDG. There's another option for
+connectivity, when which is the virtual network data gateway (VNet). This
+option only works with the OData SAP connector as it transmits
 data through the HTTP(s) protocol (The SAP ERP connector uses RPC/BAPI
 calls.)
 
@@ -59,42 +64,40 @@ data source, execute queries, and transmit results back to the service.
 This method ensures a secure and streamlined connection, enabling
 efficient data handling and processing.
 
-As noted above, the OData connector is used to perform operations around
-SAP but not design for BAPI call.
+As noted above, the OData connector is used to perform operations with
+SAP but not design for BAPI calls.
 
-### Virtual Tables
+### Virtual tables
 
-Another option is to work with SAP through Virtual Tables. The goal here
-allows for Makers to be able to access SAP as if they were access a
-Dataverse Table.
+Another option is to work with SAP through virtual tables. The goal here's to access SAP as if they were accessing a Dataverse Table.
 
 **Pros**
 
-- On the Dataverse side you can have a security role that is on the
-  table, and then that can be used to grant table level permission.
+- On the Dataverse side, you can have a security role that is on the
+  table, and then that can be used to grant table-level permission.
 
 **Cons**
 
-- Row level permissions are not possible at this time.
+- Row level permissions aren't possible at this time.
 
-- User level validation in the source is not possible.
+- User level validation in the source isn't possible.
 
 ## Alternative flows
 
-**Desktop flows** in Power Automate will allow you to automate
+Desktop flows in Power Automate allows you to automate
 repetitive desktop processes using robotic process automation (RPA)
 capabilities. The process is created through a drag-and-drop interface
 or by recording user actions. This makes the creation in a
 straightforward way to automate tasks such as data entry, file
-organization, and web scraping. Desktop flows can interact with both
+organization, and web scraping. Desktop flows interact with both
 modern and legacy applications, allowing users to streamline their
 workflows and improve efficiency.
 
-For the rare and special times that the connectors do not meet your
-requirements or for a one-off screen scraping need, Desktop flows can be
-leveraged.
+For the rare and special times that the connectors don't meet your
+requirements or for a one-off screen scraping need, desktop flows can be
+used.
 
-There are a few areas to point out for Desktop flow:
+There are a few areas to point out for desktop flow:
 
 **Power Automate RPA recorder**
 
@@ -126,17 +129,17 @@ to optimize unattended automation in production.
 
 ## Use case details
 
-The use-case for connecting to SAP from the Power Platform are many. The
+The use-cases for connecting to SAP from the Power Platform are many. The
 two primary reasons are:
 
-1)  Task based straightforward user experience – The SAP UI is powerful
-    but can be very complicated. This use-case allows the user to focus
+1)  Task-based straightforward user experience: The SAP UI is powerful
+    but can be complicated. This use-case allows the user to focus
     on one to few key tasks in a modern Canvas app experience.
 
-2)  “Keep the core clean” principle – By using the Power Platform you an
-    access SAP and keep external flows and rules that are not embedded
-    or able to be embedded cleanly in in SAP already safely where they
-    belong and do not break SAP core upgrades.
+2)  Keep the core clean principle: By using the Power Platform you an
+    access SAP and keep external flows and rules that aren't embedded
+    or able to be embedded cleanly in SAP already safely where they
+    belong and don't break SAP core upgrades.
 
 ## Components
 
@@ -165,7 +168,7 @@ methods such as SAP Basic, Windows (Kerberos), and Azure Active
 Directory, making it easier for organizations to develop modern apps and
 automate business processes using their existing SAP data.
 
-The **on-premises data gateway** (OPDG) is a locally installed Windows
+The **On-Premises Data Gateway** (OPDG) is a locally installed Windows
 client application that acts as a bridge between your local on-premises
 data sources and services in the Microsoft cloud. It provides quick and
 secure data transfer without requiring any inbound ports to your
@@ -176,26 +179,25 @@ Logic Apps, allowing organizations to keep their databases and other
 data sources on-premises while securely using that data in cloud
 services.
 
-**Desktop flows** in support the creation of Automation to help remove
+**Desktop flows** support the creation of automation to help remove
 repetitive desktop tasks. Desktop flows can interact with both modern
 and legacy applications, allowing users to streamline their workflows
-and improve efficiency1.
+and improve efficiency.
 
-As noted earlier, for the rare and special instances where connectors do
-not meet requirements, Desktop flows can be used.
+As noted earlier, for the rare and special instances where connectors don't meet requirements, Desktop flows can be used.
 
 ## Considerations
 
-There are multiple ways to work with SAP, above it was discussed
-accessing SAP directly, but you can also consider using Virtual Tables
-which would make work for low-code Makers easier.
+There are multiple ways to work with SAP. Above
+accessing SAP directly was discussed, but you can also consider using virtual tables,
+which would make work for low-code makers easier.
 
 ### Security
 
 Stringent security & governance for developers and end-users is vital
 when building SAP-connected solutions with Power Platform. Power
-Platform does not bypass authorizations in SAP. Leveraging Entra ID,
-Tenant access, App access and SAP authentication, there are many levels
+Platform doesn't bypass authorizations in SAP. Using Entra ID,
+tenant access, app access and SAP authentication, there are many levels
 to ensure data is kept safe.
 
 :::image type="content" source="media/arch-pattern-sap-power-platform/security.png" alt-text="Screenshot of security." lightbox="media/arch-pattern-sap-power-platform/security.png":::
@@ -203,11 +205,11 @@ to ensure data is kept safe.
 
 
 
-### Operational Excellence
+### Operational excellence
 
 You have flexibility in how you incorporate Power Platform solutions
 into your specific software delivery tools and processes. The Power
-Platform offers in-product tools (Pipelines) but also fits into your
+Platform offers in-product tools (pipelines) but also fits into your
 broader DevOps strategy by connecting with tools such as Azure DevOps
 and GitHub Actions.
 
@@ -246,7 +248,7 @@ VNet
 
  - [Virtual Network support overview - Power Platform](/power-platform/admin/vnet-support-overview)
 
-Virtual Tables
+Virtual tables
 
  - [Microsoft Dataverse - Virtual tables](/power-platform-release-plan/2022wave2/data-platform/virtual-tables)
 
