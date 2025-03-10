@@ -60,7 +60,7 @@ Confirm that your Power Platform environment and enterprise policy are in suppor
 | Power Platform region | Azure region |
 |-----------------------|--------------|
 | United States | eastus, westus |
-| South Africa  | eouthafricanorth, southafricawest |
+| South Africa  | southafricanorth, southafricawest |
 | Uk | uksouth, ukwest |
 | Japan | japaneast, japanwest |
 | India | centralindia, southindia |
@@ -69,14 +69,15 @@ Confirm that your Power Platform environment and enterprise policy are in suppor
 | Germany | germanynorth, germanywestcentral |
 | Switzerland | switzerlandnorth, switzerlandwest |
 | Canada | canadacentral, canadaeast |
-| Brazil | brazilsouth, southcentralus |
+| Brazil | brazilsouth |
 | Australia | australiasoutheast, australiaeast |
 | Asia | eastasia, southeastasia |
-| UAE | uaecentral, uaenorth |
+| UAE | uaenorth |
 | Korea | koreasouth, koreacentral |
 | Norway | norwaywest, norwayeast |
 | Singapore | southeastasia |
 | Sweden | swedencentral |
+| Italy | italynorth |
 
 ## Supported services
 
