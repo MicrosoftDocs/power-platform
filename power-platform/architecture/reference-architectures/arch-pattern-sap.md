@@ -23,7 +23,7 @@ Learn about the architecture, workflows, and connectivity methods available to e
 
 ## Architecture diagram
 
-:::image type="content" source="media/arch-pattern-sap/architecture.png" alt-text="Diagram that shows an architecture of a Microsoft Power Platform integration with a typical SAP landing zone." lightbox="media/arch-pattern-sap-power-platform/architecture.png":::
+:::image type="content" source="media/arch-pattern-sap/architecture.png" alt-text="Diagram that shows an architecture of a Microsoft Power Platform integration with a typical SAP landing zone." lightbox="media/arch-pattern-sap/architecture.png":::
 
 ## Workflow
 
@@ -107,7 +107,7 @@ There are multiple ways to work with SAP. You can access SAP directly, as discus
 
 Stringent security and governance for developers and end users are vital when building SAP-connected solutions with Power Platform. Power Platform bypasses authorizations in SAP. There are many levels to ensure safety, such as using Microsoft Entra ID, tenant-access, app access, and SAP authentication. 
 
-:::image type="complex" source="media/arch-pattern-sap/security.png" alt-text="Diagram of Microsoft Entra ID structure for an example tenant, showing environments, apps, flows, connectors, and access levels." lightbox="media/arch-pattern-sap-power-platform/security.png":::
+:::image type="complex" source="media/arch-pattern-sap/security.png" alt-text="Diagram of Microsoft Entra ID structure for an example tenant, showing environments, apps, flows, connectors, and access levels." lightbox="media/arch-pattern-sap/security.png":::
      Diagram illustrating the structure and access levels within a Microsoft Entra ID environment, which includes Development, Quality, and Production environments for both Contoso USA and Contoso Australia. Each environment includes Apps, Flows, Connectors, Pages, and Copilots with integrations to services like Salesforce, SAP, Workday, SQL Server, etc. Key elements are labeled with numbers indicating different access levels: 1) Tenant access and isolation; 2) Environment access; 3) Resource permissions; 4) Connector access and DLP (Data Loss Prevention); 5) Role-based data access; 6) On-premises data gateway. Dataverse is highlighted as a central component in both environments.
 :::image-end:::
 
