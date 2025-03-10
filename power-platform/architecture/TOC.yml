@@ -39,6 +39,16 @@
           href: solution-ideas/agent-rental-portal.md
         - name: Enterprise Visual Vehicle Inspection Engine
           href: solution-ideas/app-evvie.md
+    - name: Power Platform products
+      items:
+        - name: Power Apps
+          href: products/power-apps.md
+        - name: Power Automate
+          href: products/power-automate.md
+        - name: Copilot Studio
+          href: products/copilot-studio.md
+        - name: Power Pages
+          href: products/power-pages.md
     - name: Power Platform icons
       href: /power-platform/guidance/icons?toc=/power-platform/architecture/toc.json&bc=/power-platform/architecture/breadcrumb/toc.json
     - name: Microsoft Power Platform Well-Architected
