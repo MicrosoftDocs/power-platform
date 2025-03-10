@@ -12,6 +12,8 @@ search.audienceType:
 ---
 # Install, update, or remove a preferred solution
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 You can manage your solutions in the Microsoft Power Platform admin center. See [Environment-level view of apps](manage-apps.md#environment-level-view-of-apps).
 
 

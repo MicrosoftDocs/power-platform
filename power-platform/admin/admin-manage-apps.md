@@ -16,6 +16,8 @@ contributors:
 
 # Manage Power Apps
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 If you're an environment admin or a Microsoft Power Platform admin, you can manage the apps created in your organization.
 
 Admins can do the following from the Power Platform admin center:

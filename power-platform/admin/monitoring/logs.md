@@ -14,6 +14,8 @@ search.audienceType:
 ---
 
 # View event logs and error logs (preview)
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 All metrics that are part of the monitoring experience are aggregated from runtime event logs and error logs associated to a metric and can be accessed in the **Logs** page. Logs are available to aid operational health analysis and they may be downloaded for offline review. 
