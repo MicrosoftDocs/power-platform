@@ -33,6 +33,9 @@ Learn from our community members on [what motivates them to contribute to the Po
 
 Establishing a Power Platform community within your organization can enhance organizational performance and drive success. By fostering a vibrant and engaged community, organizations can leverage the collective intelligence and creativity of their members, leading to improved outcomes and a stronger, more resilient organization.
 
+>[!TIP]
+> Learn more about [defining vision, metrics and goals for nurturing a maker and champion community](common-vision/enable-maker-community.md).
+
 ### Tangible values
 
 1. **Enhanced productivity & efficiency**: Engaged communities foster collaboration and knowledge sharing, leading to increased productivity. Members can quickly find solutions and best practices, reducing the time spent on problem-solving.
