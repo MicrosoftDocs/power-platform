@@ -2,12 +2,13 @@
 title: Back up and restore environments
 description: Learn how to back up and restore Power Platform environments.
 ms.topic: conceptual
-ms.date: 01/09/2025
+ms.date: 03/10/2025
 ms.subservice: admin
 author: matapg007 
 ms.author: matgupta
 ms.reviewer: sericks
 contributors:
+- tapas1447 
 - ttreen
 - Funken1766
 - Daniel2327 
