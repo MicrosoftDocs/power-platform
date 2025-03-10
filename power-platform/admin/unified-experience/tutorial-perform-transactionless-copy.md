@@ -70,12 +70,12 @@ Write-Host "Creating a session against the Power Platform API"
 
 Add-PowerAppsAccount -Endpoint prod -TenantID $TenantId -ApplicationId $SPNId -ClientSecret $ClientSecret
 
-    $copyToRequest = \[pscustomobject\]@{
+    $copyToRequest = [pscustomobject]@{
         SourceEnvironmentId = $SourceEnvironmentID
         TargetEnvironmentName = "Copied from source"
         CopyType = "FullCopy"
-        SkipAuditData: true
-        ExecuteAdvancedCopyForFinanceAndOperations: true
+        SkipAuditData = $true
+        ExecuteAdvancedCopyForFinanceAndOperations = $true
     }
 
 Copy-PowerAppEnvironment -EnvironmentName $TargetEnvironmentID -CopyToRequestDefinition $copyToRequest
