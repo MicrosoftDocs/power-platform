@@ -35,7 +35,7 @@ Managed governance in the Power Platform provides a structured framework to ensu
 
 - [**Environment routing**](default-environment-routing.md): Directs makers to their personal developer environments when they visit [make.powerapps.com](https://make.powerapps.com) or [copilotstudio.microsoft.com](https://copilotstudio.microsoft.com). Environment routing provides a secure, personal space for makers to build with Microsoft Dataverse, ensuring their apps and data remain private. When allowed in the Power Platform admin center, makers are seamlessly routed to their own environments, like how OneDrive works for personal productivity. 
 
-- [**Maker welcome**]((welcome-content.md)): Provides a personalized onboarding experience for new makers, guiding them through the initial setup and familiarizing them with the Power Platform. It includes helpful tips, tutorials, and resources to ensure makers can quickly start building apps and solutions with confidence. The maker welcome aims to enhance user engagement and accelerate productivity from the very beginning.
+- [**Maker welcome**](welcome-content.md): Provides a personalized onboarding experience for new makers, guiding them through the initial setup and familiarizing them with the Power Platform. It includes helpful tips, tutorials, and resources to ensure makers can quickly start building apps and solutions with confidence. The maker welcome aims to enhance user engagement and accelerate productivity from the very beginning.
 
 ### Reactive governance
 
