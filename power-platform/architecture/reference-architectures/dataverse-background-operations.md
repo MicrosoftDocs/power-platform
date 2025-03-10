@@ -1,6 +1,7 @@
 ---
 title: Dataverse background operations
-description: Learn how to execute requests as background operations in Microsoft Dataverse using Custom APIs for efficient asynchronous processing.
+description: Learn how to execute requests as background operations in Microsoft Dataverse using custom APIs for efficient asynchronous processing.
+#customer intent: As a flowmaker, I want to define custom messages and implement business logic through plug-ins so that I can use background processing in Dataverse.
 author: manuelap-msft
 ms.subservice: architecture-center
 ms.topic: example-scenario
@@ -20,10 +21,9 @@ In Microsoft Dataverse, executing requests as background operations enhances asy
 
 This article explains the workflow, use cases, and considerations for implementing background operations in Dataverse to ensure scalable and reliable performance for long-running tasks.
 
-
 ## Architecture diagram
 
-:::image type="content" source="media/dataverse-background-operations-/Background-job.png" alt-text="Diagram illustrating the workflow for executing background operations in Microsoft Dataverse." lightbox="media/dataverse-background-operations-/Background-job.png":::
+:::image type="content" source="media/dataverse-background-operations/Background-job.png" alt-text="Diagram illustrating the workflow for executing background operations in Microsoft Dataverse." lightbox="media/dataverse-background-operations/Background-job.png":::
 
 ## Workflow
 
