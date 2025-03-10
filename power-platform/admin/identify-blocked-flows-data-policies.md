@@ -73,7 +73,7 @@ Write-Host "Fetching all DLP policies in the tenant..." -ForegroundColor Cyan
 
 try {
     # Fetch all DLP policies
-    #$dlpPolicies = Get-AdminDlpPolicy
+    $dlpPolicies = Get-AdminDlpPolicy
     $totalPolicies = $dlpPolicies.Count
 
     Write-Host "Done. Fetching all Environments in the tenant..." -ForegroundColor Cyan
