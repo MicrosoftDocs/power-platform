@@ -25,7 +25,7 @@ The advanced management offering includes the following components:
 
 ## Managed security
 
-[Mnanaged security](security/managed-security.md) provides advanced protection for an AI-driven world. Managed security includes:
+[Mananaged security](security/managed-security.md) provides advanced protection for an AI-driven world. Managed security includes:
 - Secuirty posture management
 - Data protection and privacy
 - Identity and access management
