@@ -23,21 +23,27 @@ Advanced management provides enhanced security, governance, and operations capab
 
 The advanced management offering includes the following components:
 
-[**Mnanaged security**](security/managed-security.md): Provides advanced protection for an AI-driven world. Managed security includes:
+## Managed security
+
+[**Mnanaged security**](security/managed-security.md) provides advanced protection for an AI-driven world. Managed security includes:
 - Secuirty posture management
 - Data protection and privacy
 - Identity and access management
 - Threat protection
 - Compliance
 
-[**Managed governance**](managed-governance.md): Provides more visibiity, more control, and less effort by including:
+## Managed governance
+
+[Managed governance](managed-governance.md) provides more visibiity, more control, and less effort in your day-to-day responsibilities. Managed governance includes:
 - Management at scale
 - Environment strategy
 - Reactive governance
 - Full visibility
 - Capacity and cost management
 
-[**Managed operations**](operations/overview.md): Provides excellence for misting critical applications. It includes:
+## Managed operations
+
+[Managed operations](operations/overview.md) provides excellence for misting critical applications. Managed operations includes:
 - Application lifecycle management
 - Observability
 - Data resilience
