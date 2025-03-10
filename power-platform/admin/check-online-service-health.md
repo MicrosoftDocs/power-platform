@@ -15,7 +15,7 @@ ms.contributors:
 ---
 # How do I check my online service health?
 
-You can quickly get the real-time status of your Microsoft Power Platform, Microsoft Dynamics 365, and Microsoft 365 services by using the Power Platform admin center and the Microsoft 365 admin center.
+You can quickly get the real-time status of your Microsoft Power Platform, Microsoft Dynamics 365, and Microsoft 365 services.
 
 ## View service health information in the Power Platform admin center
 
@@ -31,7 +31,9 @@ The dashboard in the Microsoft 365 admin center provides a comprehensive view of
 
 ### View a snapshot of service health
 
-To get a quick snapshot of the service health of some of your Microsoft 365 services, sign in to the [Microsoft 365 admin center](https://admin.microsoft.com/) by using one of the Microsoft 365 admin roles that include service health monitoring. Learn more in [About admin roles in the Microsoft 365 admin center](/microsoft-365/admin/add-users/about-admin-roles).
+Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com/) by using one of the Microsoft 365 admin roles that include service health monitoring. Learn more in [About admin roles in the Microsoft 365 admin center](/microsoft-365/admin/add-users/about-admin-roles).
+
+The dashboard provides a quick snapshot of the service health of some of your Microsoft 365 services.
 
 To view information about all your services, select **Service health** on the dashboard (or select **Health** \> **Service health** on the menu).
 
@@ -49,7 +51,7 @@ To view the past seven days or the past 30 days of service, select **View histor
 
 ### View planned maintenance
 
-To view the history of incidents and advisories that have been resolved in the past seven to 30 days, select the **Issue history** tab.
+To view the history of incidents and advisories that were resolved in the past seven to 30 days, select the **Issue history** tab.
 
 ### View and track service changes
 
