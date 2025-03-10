@@ -66,17 +66,19 @@ In emerging micro-regions where multi-region setups may not be available, availa
 
 Disaster recovery is a Power Platform premium infrastructure capability that allows customers to initiate environment failover between regions in a self-serve manner.
 
-Customers typically have multiple environments of different types created in their tenant. This capability is available specifically for managed (need Learn link to managed) production-type environments, and can be turned on for each environment. At this time this capability isn't available for finance and operations production environments.
+Customers typically have multiple environments of different types created in their tenant. This capability is available specifically for production-type, [Managed Environments](managed-environment-overview.md) and can be turned on for each environment. At this time, this capability isn't available for finance and operations production environments.
 
 ### Premium disaster recovery cost
 
-Environments that activate premium disaster recovery will replicate all environment data between two regions and will have the ability to individually failover between the regions. Replicated data of different storage types. Database, Log and File will be added to Dataverse capacity consumed (need Learn link to capacity onsumption) and billed at the same rate as the primary storage.
+Environments that activate premium disaster recovery, replicate all environment data between two regions and can failover between the regions. Replicated data of different storage types, such as Database, Log, and File are added to Dataverse capacity consumed (need Learn link to capacity onsumption) and billed at the same rate as the primary storage.
 
 ### Premium disaster recovery billing method
 
-The environment must be linked to a Pay-as-you-go billing plan (need link to PAYG).
-If your environment already has Pay-as-you-go enabled then no further action is needed and replicated capacity will be billed to your Azure subscription.
-If your environment also draws capacity from tenant licensed capacity entitlement then entitled capacity will be consumed first, but Pay-as-you-go plan billing plan is still required so you can avoid capacity overages. Learn how to allocate capacity and manage capacity overages via Pay-as-you-go billing plan (need Learn link). 
+The environment must be linked to a [pay-as-you-go billing plan](pay-as-you-go-overview.md).
+
+If your environment already uses a pay-as-you-go billing plan, then no further action is needed and replicated capacity is billed to your Azure subscription.
+
+If your environment also draws capacity from tenant-licensed capacity entitlement, then entitled capacity is consumed first, but your pay-as-you-go billing plan is still required so you can avoid capacity overages. Learn how to allocate capacity and manage capacity overages through [pay-as-you-go billing plans](pay-as-you-go-set-up.md). 
 
 ### Turn on self-service disaster recovery
 
