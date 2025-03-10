@@ -27,12 +27,6 @@ Depending on your organization's size and team structure, these roles may not be
 
 Let's look at specific examples to understand the scope and expectations for each role:
 
-### Community lead
-
-Responsibilities:
-
-Certainly! Here is a refined list that clearly differentiates the responsibilities and expectations for each role:
-
 ### Community Lead
 
 Responsibilities:
