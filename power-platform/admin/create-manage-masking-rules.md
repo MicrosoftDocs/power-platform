@@ -19,7 +19,7 @@ contributors:
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-Data masking helps protect sensitive information during customer interactions and prevents data leaks. Data masking, also known as de-identification or obfuscation, replaces sensitive data with masked strings. The masked strings ensure that the original, unmasked values remain hidden. Only authorized users can read the unmasked values—one record at a time. In the context of customer interactions, frontline support users are prevented from exposing sensitive information like credit card numbers, social security numbers, or any personal data (PII).
+Data masking helps protect sensitive information during customer interactions and prevents data leaks. Data masking, also known as de-identification or obfuscation, replaces sensitive data with masked strings. The masked strings ensure that the original, unmasked values remain hidden. Only authorized users can read the unmasked values—one record at a time. In the context of customer interactions, frontline support users are prevented from exposing sensitive information like credit card numbers, social security numbers, or any personal data.
 
 > [!IMPORTANT]
 >
@@ -28,7 +28,7 @@ Data masking helps protect sensitive information during customer interactions an
 
 ## How does masking work?
 
-- You can create *masking rules* to set how sensitive information should be masked.
+- You create *masking rules* to set how sensitive information should be masked.
 
 - These rules use *regular expressions* to identify specific patterns, for example a credit card number, social security number, and email address.
 
@@ -36,7 +36,7 @@ Data masking helps protect sensitive information during customer interactions an
 
 ## Create masking rules
 
-You get a predefined set of masking rules, to start, or you can create your own.
+Get a predefined set of masking rules, to start, or you can create your own.
 
 1. Create a solution: [Create a solution in Power Apps](/power-apps/maker/data-platform/create-solution).
 
@@ -44,7 +44,7 @@ You get a predefined set of masking rules, to start, or you can create your own.
 
 1. Select the **Security** menu option and choose **Secured masking rule**.  
 
-   :::image type="content" source="media/create-and-manage-masking-rules/security-masking-rule-menu.png " alt-text="Screenshot that shows the location of the Secured masking rule button in Power Apps.":::
+   :::image type="content" source="media/create-and-manage-masking-rules/security-masking-rule-menu.png " alt-text="Screenshot showing the location of the Secured masking rule button in Power Apps.":::
 
    The **New Masking Rule** form appears.
 
@@ -65,9 +65,9 @@ You get a predefined set of masking rules, to start, or you can create your own.
 
 1. Enter a **Masked Character**, for example `#`.
 
-1. Enter an original value in the **Enter Plain Text Test Data** field, for example a social security number, email address, etc.
+1. Enter an original value in the **Enter Plain Text Test Data** field, such as a social security number, or email address.
 
-1. Enter an original value in the **Enter Rich Text Test Data** field, for example a social security number, email address, etc. (for testing Text Data type with Rich text format columns).
+1. Enter an original value in the **Enter Rich Text Test Data** field, such as a social security number, or email address (for testing Text Data type with Rich text format columns).
 
     > [!NOTE]
     > For **Rich text** field, the raw value of the field needs to be taken into account when defining the **Regular Expression**. You can view the raw value using a Web API to query the table/column with rich text. For example, 
@@ -80,7 +80,7 @@ You get a predefined set of masking rules, to start, or you can create your own.
 
 1. Select **Save**.
 
-   Now you see **Masked Plain Text test data**, and **Masked Rich Text test data**.
+   **Masked Plain Text test data**, and **Masked Rich Text test data** display on the screen.
 
    Your masked values might be masked like this:
 
@@ -92,7 +92,7 @@ You get a predefined set of masking rules, to start, or you can create your own.
     | `(?:4[0-9]{12}(?:[0-9]{3})?|[25][1-7][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})` | **Visa** `4567891234567891` | **Visa** `#` |
     | `\S+@\S+\.\S+` | **Email** `name@sample.com` | **Email** `#` |
 
-     When a customer sends you an email with sensitive data and the email has this masking rule, you see the masked values only in the body of an email:
+     When a customer sends you an email with sensitive data and the email has this masking rule, only the masked values display in the body of the email:
 
      :::image type="content" source="media/create-and-manage-masking-rules/masking-rule-applied.png" alt-text="Screensot showing the result of applying the masking rule in the body of the email.":::
 
@@ -102,7 +102,7 @@ You get a predefined set of masking rules, to start, or you can create your own.
 
 1. Go to the [Power Apps portal](https://make.powerapps.com).
 
-1. Select the environment where you want to see the list of masking rules.
+1. Select the environment where you want to display the list of masking rules.
 
 1. Select **Tables** and choose the **All** filter.
 
@@ -124,7 +124,7 @@ You get a predefined set of masking rules, to start, or you can create your own.
 
    :::image type="content" source="media/create-and-manage-masking-rules/select-columns-schema.png" alt-text="Screenshot that shows the location of the Columns option under the Schema section." lightbox="media/create-and-manage-masking-rules/select-columns-schema.png":::
 
-1. Select a column to open and edit it. You see the **Edit column** pane.
+1. Select a column to open and edit it. The **Edit column** pane displays.
 
 1. Expand **Advanced options**.
 
@@ -139,7 +139,7 @@ You get a predefined set of masking rules, to start, or you can create your own.
 1. Select **Save**.
 
 > [!NOTE]
-> Data types that masking rule can be set:
+> Data types for masking rules: 
 > 1. Text (single-line and multi-line).
 > 1. Number.
 
@@ -153,26 +153,26 @@ Users or Teams groups can be granted access through column security:
 
 - **Read**
 
-  **Allowed** - Read secured column is allowed. Masked values are shown if masking rule is applied to the column.
+  **Allowed**: Read secured column is allowed. Masked values are shown if masking rule is applied to the column.
 
 - **Read unmasked**
 
-  **Not Allowed** - When **Read** is allowed and **Read unmasked** isn't allowed, masked values are shown.
+  **Not Allowed**: When **Read** is allowed and **Read unmasked** isn't allowed, masked values are shown.
 
-  **One Record** – Users are allowed to read unmasked values. Unmasked values are only returned when you request one record at a time. These values should be allowed for users who manage and maintain secured columns.
+  **One Record**: Users are allowed to read unmasked values. Unmasked values are only returned when you request one record at a time. These values should be allowed for users who manage and maintain secured columns.
 
-  **All records** – Users are allowed to retrieve and read multiple records with unmasked values. This setting is highly privileged. **Read unmasked** should only be allowed for backend services that require unmasked values for backend processing.
+  **All records**: Users are allowed to retrieve and read multiple records with unmasked values. This setting is highly privileged. **Read unmasked** should only be allowed for backend services that require unmasked values for backend processing.
 
 - **Update**
   
-  **Allowed** - Users are allowed to update records.
+  **Allowed**: Users are allowed to update records.
 
 - **Create**
 
-  **Allowed** - Users are allowed to create records.
+  **Allowed**: Users are allowed to create records.
   
 > [!NOTE]
-> System and application users with **Read** and **Read unmasked** permissions will get masked values by default. To read unmasked values, see [options for viewing masked fields](#options-for-viewing-masked-fields).
+> System and application users with **Read** and **Read unmasked** permissions get masked values by default. To read unmasked values, go to [options for viewing masked fields](#options-for-viewing-masked-fields).
 
 ### View all columns that have a masking rule
 
@@ -235,4 +235,4 @@ In these examples, replace `<url>`, `<table collection name>`, and `<recordid>` 
 
 - **Audit log**
 
-  Unmasked values are displayed in the audit log. In future releases, these will be masked with option to read unmasked for users who have **Read unmasked** permission.
+  Unmasked values are displayed in the audit log. In future releases, these are masked with option to read unmasked for users who have **Read unmasked** permission.
