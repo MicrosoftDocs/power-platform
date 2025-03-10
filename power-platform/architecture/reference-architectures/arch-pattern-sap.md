@@ -120,7 +120,7 @@ You have flexibility in how you incorporate Power Platform solutions into your s
 - [What is Microsoft Power Platform integration with SAP?](/power-platform/sap/explore/power-platform-and-sap-integration)
 - [Microsoft Power Platform security and governance documentation](/power-platform/admin/security)
 - [SAP + Power Platform white paper](/power-platform/sap/explore/white-paper)
-- [SAP and Microsoft Power Platform architecture workflow](//cloud-adoption-framework/scenarios/sap/sap-power-platform-architecture-workflow)
+- [SAP and Microsoft Power Platform architecture workflow](/cloud-adoption-framework/scenarios/sap/sap-power-platform-architecture-workflow)
 
 Data access:
 
@@ -131,8 +131,8 @@ Data access:
 
 On-premises data gateway:
 
-- [What is an on-prem data gateway?](/data-integration/gateway/service-gateway-on)
-- [Set up on-premises data gateway for SAP](/power-platform/enterprise-/finance/sap-prourement/administer/set-up-gateway#gateway-cluster-configuration)
+- [What is an on-prem data gateway?](/data-integration/gateway/service-gateway-onprem)
+- [Set up on-premises data gateway for SAP](/power-platform/enterprise-templates/finance/sap-procurement/administer/set-up-gateway#gateway-cluster-configuration)
 
 VNet:
 
