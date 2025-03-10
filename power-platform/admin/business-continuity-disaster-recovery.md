@@ -53,6 +53,12 @@ If an unanticipated regionwide outage occurs, such as a natural disaster that af
 | If an outage occurs and Microsoft determines that there's *data loss*, then failing over the environment isn't initiated without customer consent/approval. | Once the customer is aware of the ongoing outage and sees *impact*, then it's the customer's responsibility: <br> - To reach out to Microsoft via support and find out the level of data loss that would occur if a failover is initiated. <br> - If the data loss is at an acceptable level to their organization standards, then customers should provide their **consent** via support for Microsoft to initiate a failover. |
 | When Microsoft determines that the primary region is back online and is fully operational, a **failback** is performed on the production instances. There's no data loss during the planned failback process but users could experience brief interruptions or disconnects during this window. | None |
 
+## Built-in disaster recovery
+
+To ensure seamless disaster recovery, Availability Zones (AZs), provide built-in resilience for production environments without requiring manual intervention.  Availability Zones <hyperlink to azure AZ learn article) are distinct physical locations within an Azure region, each with independent power, cooling, and networking. Customer data is synchronously replicated across at least three AZs, guaranteeing near zero replication lag and rapid recovery <mention something on the lines of RTO here>. If one zone experiences a failure, traffic is automatically rerouted to the remaining zones without service disruption. 
+In emerging micro-regions where multi-region setups may not be available, AZs play a crucial role in maintaining resiliency. However, resilience is a shared responsibility. While Power Platform ensures failover, customers must also configure their Azure resources for zone redundancy to achieve end-to-end resilience.
+
+
 ## Self-service disaster recovery (preview)
 
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
