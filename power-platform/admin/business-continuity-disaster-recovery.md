@@ -2,7 +2,7 @@
 title: Business continuity and disaster recovery for Dynamics 365 SaaS apps
 description: Microsoft provides business continuity and disaster recovery for production environments of Dynamics 365 SaaS applications if there's a regionwide Azure outage. 
 author: ImadYanni 
-ms.date: 01/21/2025
+ms.date: 03/10/2025
 ms.reviewer: sericks
 ms.topic: conceptual
 ms.subservice: admin
@@ -55,9 +55,9 @@ If an unanticipated regionwide outage occurs, such as a natural disaster that af
 
 ## Built-in disaster recovery
 
-To ensure seamless disaster recovery, Availability Zones (AZs), provide built-in resilience for production environments without requiring manual intervention.  Availability Zones <hyperlink to azure AZ learn article) are distinct physical locations within an Azure region, each with independent power, cooling, and networking. Customer data is synchronously replicated across at least three AZs, guaranteeing near zero replication lag and rapid recovery <mention something on the lines of RTO here>. If one zone experiences a failure, traffic is automatically rerouted to the remaining zones without service disruption. 
-In emerging micro-regions where multi-region setups may not be available, AZs play a crucial role in maintaining resiliency. However, resilience is a shared responsibility. While Power Platform ensures failover, customers must also configure their Azure resources for zone redundancy to achieve end-to-end resilience.
+To ensure seamless disaster recovery, [Azure availability zones](/azure/reliability/availability-zones-overview?tabs=azure-cli) provide built-in resilience for production environments without requiring manual intervention. Availability zones are distinct physical locations within an Azure region, each with independent power, cooling, and networking. Customer data is synchronously replicated across at least three availability zones, guaranteeing near zero replication lag and rapid recovery <mention something on the lines of RTO here>. If one zone experiences a failure, traffic is automatically rerouted to the remaining zones without service disruption.
 
+In emerging micro-regions where multi-region setups may not be available, availability zones play a crucial role in maintaining resiliency. However, resilience is a shared responsibility. While Power Platform ensures failover, customers must also configure their Azure resources for zone redundancy to achieve end-to-end resilience.
 
 ## Self-service disaster recovery (preview)
 
