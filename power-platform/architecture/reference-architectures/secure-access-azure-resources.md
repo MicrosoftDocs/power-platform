@@ -47,11 +47,11 @@ Use Microsoft Azure Virtual Network support for Power Platform to integrate Powe
 
 Organizations with high security needs must ensure safe communication between internal systems and cloud services. They use available security controls and integrate virtual networks between Power Platform and Azure resources as part of their solution architecture.
 
-With Azure Virtual Network support, you can build solutions with Power Platform and Azure components without the complexity of a typical multi-network solution. Implementing other network security controls between application components often presents challenges, especially when they are at different levels of technology abstraction. This architecture, using virtual network subnet delegation, lets Power Platform and Azure resources work together to implement solutions that use the strengths of both products without sacrificing complexity and security needs.
+With Azure Virtual Network support, you can build solutions with Power Platform and Azure components without the complexity of a typical multi-network solution. Implementing other network security controls between application components often presents challenges, especially when they are at different levels of technology abstraction. This architecture, using Virtual Network subnet delegation, lets Power Platform and Azure resources work together to implement solutions that use the strengths of both products without sacrificing complexity and security needs.
 
 ## Components
 
-- **Power Platform environment**: Contains the Power Platform resources like Power Apps that implement the Case management user experience. Configuration is managed at the environment level to connect to a specific Azure Virtual Network. Enable configuration as required on different Power Platform environments and their related Virtual Networks that are part of an application's lifecycle management.For example, the development environment might not have Virtual Network integration enabled, but test and production do.
+- **Power Platform environment**: Contains the Power Platform resources like Power Apps that implement the Case management user experience. Configuration is managed at the environment level to connect to a specific Azure Virtual Network. Enable configuration as required on different Power Platform environments and their related Virtual Networks that are part of an application's lifecycle management. For example, the development environment might not have Virtual Network integration enabled, but test and production do.
 
 - **Power Apps**: Used to implement the user experience of the solution. Users sign in to the application using Microsoft Entra ID.
 
@@ -87,7 +87,7 @@ The following image illustrates the use of multiple virtual networks to provide 
 
 **Data access control**: The APIs, data store, and other Azure resources for the solution are isolated and only accessible from applications running in the Power Platform environment connected to the Virtual Network.
 
-**Intentional segmentation and perimeters**: Virtual Network integration lets Power Platform and Azure resources communicate securely, isolated from other cloud network interference. This setup prevents lower-level environments, like dev environments, from accidentally connecting to test or production Azure resources, helping maintain a secure development lifecycle. With the Virtual Network configured on a Power Platform environment, you control outbound traffic from Power Platform. Review [securing outbound connections](/power-platform/admin/virtual-network-support-whitepaper#best-practices-for-securing-outbound-connections-from-power-platform-services) for specific best practices.
+**Intentional segmentation and perimeters**: Azure Virtual Network integration lets Power Platform and Azure resources communicate securely, isolated from other cloud network interference. This setup prevents lower-level environments, like dev environments, from accidentally connecting to test or production Azure resources, helping maintain a secure development lifecycle. With the Virtual Network configured on a Power Platform environment, you control outbound traffic from Power Platform. Review [best practices for securing outbound connections from Power Platform services](/power-platform/admin/virtual-network-support-whitepaper#best-practices-for-securing-outbound-connections-from-power-platform-services).
 
 **Encryption**: Data moving from Power Platform to Azure services in the Virtual Network doesn't traverse the public internet.
 
@@ -97,7 +97,7 @@ The following image illustrates the use of multiple virtual networks to provide 
 
 ### Performance efficiency
 
-**Collect performance data**: Azure Virtual Networks provide an efficient way to integrate Power Platform and Azure resources. To learn about monitoring performance and collecting data, review the [Azure Virtual Network monitoring data reference](/azure/virtual-network/monitor-virtual-network-reference).
+**Collect performance data**: Azure Virtual Networks provide an efficient way to integrate Power Platform and Azure resources. Learn about monitoring performance and collecting data in the [Azure Virtual Network monitoring data reference](/azure/virtual-network/monitor-virtual-network-reference).
 
 ## Next steps
 
@@ -109,18 +109,21 @@ After you set up your virtual network, use these high-level steps to build an en
 
 1. Create Power Platform environment variables to hold the client ID and secret from Azure Key Vault. Learn more in [Use environment variables for Azure Key Vault secrets](/power-apps/maker/data-platform/environmentvariables-azure-key-vault-secrets).
 
-1. [Create a custom connector](/connectors/custom-connectors/learn-with-a-tutorial) for your API:
+1. Create a [custom connector](/connectors/custom-connectors/learn-with-a-tutorial) for your API:
 
-1. Define the custom connector to use OAuth 2.0 with Azure Active Directory (Microsoft Entra ID) and enable Service Principal support.
-    :::image type="content" source="media/secure-access-azure-resources/oauth2.0.png" alt-text="Screenshot of Security authentication dialog showing OAuth 2.0.":::
+    1. Define the custom connector to use OAuth 2.0 with Azure Active Directory (Microsoft Entra ID) and enable Service Principal support.
+    
+        :::image type="content" source="media/secure-access-azure-resources/oauth2.0.png" alt-text="Screenshot of Security authentication dialog showing OAuth 2.0.":::
+
     1. Configure the client ID and client secret to use the values from the environment variables created in step 2.
-    :::image type="content" source="media/secure-access-azure-resources/clientid.png" alt-text="Screenshot showing the Client ID field set to an environment variable.":::
+    
+        :::image type="content" source="media/secure-access-azure-resources/clientid.png" alt-text="Screenshot showing the Client ID field set to an environment variable.":::
 
 1. Create a Power Apps canvas app to build the search interface for the back office.
 
 ## Related resources
 
 - [Virtual Network support white paper](/power-platform/admin/virtual-network-support-whitepaper)
-- [Power Platform security best practices](/power-platform/well-architected/security)
+- [Power Platform Well-Architected Security recommendations](/power-platform/well-architected/security)
 - [Use environment variables for Azure Key Vault secrets](/power-apps/maker/data-platform/environmentvariables-azure-key-vault-secrets)
 - [Use environment variables in solution custom connectors](/connectors/custom-connectors/environment-variables)
