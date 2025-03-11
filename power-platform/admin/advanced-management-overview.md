@@ -25,7 +25,10 @@ The advanced management offering includes the following components:
 
 ## Managed security
 
-[Mananaged security](security/managed-security.md) provides advanced protection for an AI-driven world. Managed security includes:
+In today's AI-driven world, safeguarding your enterprise data and business processes is more critical than ever. [Mananaged security](security/managed-security.md) provides comprehensive solutions to protect your data from threats, control access, prevent data exfiltration, and gain visibility into your security posture. It also helps assess risks and ensures compliance with various regulations, making it a robust tool for today's cybersecurity challenges.
+
+Managed security includes:
+
 - Secuirty posture management
 - Data protection and privacy
 - Identity and access management
@@ -34,7 +37,10 @@ The advanced management offering includes the following components:
 
 ## Managed governance
 
-[Managed governance](managed-governance.md) provides more visibiity, more control, and less effort in your day-to-day responsibilities. Managed governance includes:
+[Managed governance](managed-governance.md) in the Power Platform provides a structured framework to ensure that environments are used in compliance with organizational policies and regulatory requirements. It helps organizations maintain control over their data, optimize resource usage, and ensure that all activities within the platform are transparent and accountable. By implementing managed governance, organizations can effectively manage their environments at scale, develop strategic approaches to environment usage, respond proactively to governance issues, gain full visibility into their operations, and manage capacity and costs efficiently.
+
+Managed governance includes:
+
 - Management at scale
 - Environment strategy
 - Reactive governance
@@ -43,7 +49,10 @@ The advanced management offering includes the following components:
 
 ## Managed operations
 
-[Managed operations](operations/overview.md) provides excellence for misting critical applications. Managed operations includes:
+[Managed operations](operations/overview.md) is a suite of capabilities to empower organizations of all sizes to build, deploy, and operate their most critical workloads. Built with both existing and emerging AI-driven solutions in mind, these capabilities ensure stability and minimize disruption while maximizing the productivity of operations teams.
+
+Managed operations includes:
+
 - Application lifecycle management
 - Observability
 - Data resilience
