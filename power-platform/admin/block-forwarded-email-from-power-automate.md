@@ -14,6 +14,8 @@ search.audienceType:
 ---
 # Email exfiltration controls for connectors
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
  Microsoft Exchange enables admins to disable email autoforwards and autoreplies to remote domains for external recipients. Exchange does this by using message-type headers, such as Auto Forward received from Outlook and Outlook on web clients.  
 
 Microsoft Power Platform has the capability to insert specific SMTP headers in email messages sent through Power Automate and Power Apps. It does this using Microsoft 365 Exchange/Outlook connectors. You can use these SMTP headers to set up appropriate exfiltration rules. These rules are for the unauthorized transfer of data from one device to another in Exchange for outbound emails.  
@@ -63,7 +65,7 @@ azure-logic-apps/1.0 (workflow afa0fb167803450aa650267e95d43287; version
 **x-ms-mail-operation-type: Forward**
 ```
 
-As an admin, if you want to exempt flows (or apps) from the exfiltration due to a legitimate business scenario, use the workflow ID as part of the user-agent header. All other exception conditions offered by Exchange rules, such as sender address, remain available to exempt the legitimate business use cases from the blocking enforcement. For example:
+As an admin, if you want to exempt flows (or apps) from the exfiltration due to a legitimate business scenario, use the workflow ID or the x-ms-workflow-name as part of the user-agent header. All other exception conditions offered by Exchange rules, such as sender address, remain available to exempt the legitimate business use cases from the blocking enforcement. For example:
 
 :::image type="content" source="media/block-outbound-forwards-exception85.png" alt-text="Block outbound forwards exceptions.":::
 

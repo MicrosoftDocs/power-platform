@@ -13,6 +13,8 @@ search.audienceType:
 
 # Power Pages activity logging (preview)
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 Power Pages activities are tracked from the [Microsoft Purview compliance portal](/purview/purview).

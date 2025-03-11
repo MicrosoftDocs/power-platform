@@ -14,6 +14,8 @@ search.audienceType:
 
 # Commonly used Microsoft first-party services and portal apps (preview)
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 The following apps are Microsoft first-party services. This list might vary based on your environment and installed solutions. Most of these apps can be allowed or blocked using the [client app access control feature](control-app-access-environment.md).

@@ -14,6 +14,8 @@ search.audienceType:
 ---
 # Telemetry events for Microsoft Dataverse
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 The data stream currently provides performance data related to Dataverse API incoming calls, Dataverse plug-in execution calls, and Dataverse SDK calls. It also provides data for failures in plug-in and Dataverse SDK operations.
 
 ## Dataverse API incoming calls

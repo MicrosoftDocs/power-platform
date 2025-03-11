@@ -29,6 +29,8 @@ ms.collection:
 ---
 
 # Move data across regions for Copilots and generative AI features
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 Copilots and generative AI features in [Microsoft Power Platform](/power-platform/) and [Microsoft Dynamics 365](/dynamics365/) help you build apps, flows, and chatbots, analyze your data, summarize information, reply to messages, and generate ideas.
 
 However, Copilots and generative AI features aren't available in all regions and languages. In some cases, even where there is in region capacity, data must still move outside of the region for availability reasons. For this reason and depending on where your environment is hosted, you might need to allow data movement across regions to use Copilots and generative AI features. This article explains how to do that.

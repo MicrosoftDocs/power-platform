@@ -16,6 +16,8 @@ search.audienceType:
 
 # View Intelligent recommendations about licensing
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 The **Intelligent recommendations** page provides you with recommendations about who in your organization would benefit from having a Power Apps premium license.
 
 This feature allows Power Platform admins to assign licenses both directly and through security groups.

@@ -1,10 +1,10 @@
 ---
-title: "Power Platform URLs and IP address ranges  | MicrosoftDocs"
+title: Power Platform URLs and IP address ranges 
 description: Provides information about URLs and IP addresses to be added to the allow list to use Power Platform services.
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/31/2025
+ms.date: 02/27/2025
 ms.subservice: admin
 ms.author: sericks
 contributors:
@@ -20,6 +20,8 @@ search.audienceType:
   - admin
 ---
 # Power Platform URLs and IP address ranges
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 Microsoft Power Platform requires connectivity to the internet. The endpoints listed in this article should be reachable for customers using the Power Platform services.
 
@@ -62,7 +64,7 @@ Add the following URLs to the allow list to use Dynamics 365 apps such as Dynami
 | `https://urs.microsoft.com`  |  Required for Microsoft defender SmartScreen filtering.    |
 | https://crl.microsoft.com/pki/crl/products/microsoftrootcert.crl  | Required for Certification Revocation List checks.    |
 | https://dynamics.microsoft.com |    |
-| https://*.api.powerplatform.com, https://\*.powerplatform.com, and https://\*.api.powerplatformusercontent.com | Required for Power Platform API connectivity and used internally by Microsoft products and admin automation scenarios as described in [Programmability and extensibility overview](programmability-extensibility-overview.md). |
+| https://*.api.powerplatform.com, https://\*.powerplatform.com, https://\*.api.powerplatformusercontent.com, and https://\*.powerplatformusercontent.com  | Required for Power Platform API connectivity and used internally by Microsoft products and admin automation scenarios as described in [Programmability and extensibility overview](programmability-extensibility-overview.md). |
 | https://mem.gfx.ms  | Me Control is a Microsoft feature that provides a consistent way for users to do core authentication functions like signing in, switching between accounts and more.    |
 | https://www.d365ccafpi.com |  d365ccafpi service exposes a controller endpoint for token change to achieve client side first party integration with external service from PCF control  |
 | https://api.admin.powerplatform.microsoft.com | Required to call Power Platform admin center service in public cloud.|
@@ -83,7 +85,15 @@ All IP addresses for various services for public and government clouds are avail
 
 The IP address values in these JSON files are grouped by service tags that define the service they're applicable for. 
 
-For Power Platform and Dynamics 365 services, you must add the IP address values specified under the `AzureCloud` service tag. The service tags also have a regional scope to define the IP addresses required per Azure datacenter region. For example, to find out the required IP address values for accessing services in the *Australia* region, use the [Azure IP Ranges and Service Tags – Public Cloud](https://www.microsoft.com/download/details.aspx?id=56519) file, and search for `AzureCloud.Australia`. For real-time collaboration features, you must add the IP address values specified under the `MicrosoftAzureFluidRelay` service tag.
+Please add the IP address values for the following service tags.
+
+|  Service tag | Purpose  |
+|---|---|
+| `AzureCloud` | Needed for all Power Platform and Dynamics 365 services. |
+| `MicrosoftAzureFluidRelay` | Needed for real-time collaboration features. |
+| `OneDsCollector` | Needed for gathering telemetry. |
+
+The service tags also have a regional scope to define the IP addresses required per Azure datacenter region. For example, to find out the required IP address values for accessing services in the **Australia** region, use the [Azure IP Ranges and Service Tags – Public Cloud](https://www.microsoft.com/download/details.aspx?id=56519) file, and search for `AzureCloud.Australia`. 
 
 If you are using *Power Platform connectors*, see the complete list of required IP addresses in [Connectors docs](/connectors/common/outbound-ip-addresses#power-platform).
 
