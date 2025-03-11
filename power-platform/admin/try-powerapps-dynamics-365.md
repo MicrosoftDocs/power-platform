@@ -9,6 +9,8 @@ ms.author: sericks
 ---
 # Try Power Platform apps for free
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 You can explore all Power Platform apps for free by signing up for trial licenses.
 
 |App  |Description  |

@@ -16,6 +16,8 @@ ms.contributors:
 
 # Tenant settings
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 Use the Tenant settings page to review and manage tenant-level settings.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).

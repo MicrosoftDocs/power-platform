@@ -13,8 +13,11 @@ search.audienceType:
   - admin
 ---
 
-# Authentication (legacy)
-This article provides an overview of the authentication setup for various legacy API endpoints used by Power Platform.
+# Authentication
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
+This article provides an overview of the authentication setup for the various programmability tools.
 
 ## Register a client application in Microsoft Entra ID
 For an overview of general Microsoft Entra client application creation, visit [Quickstart: Register an application with the Microsoft identity platform](/azure/active-directory/develop/quickstart-register-app). However, for Microsoft Power Platform, there are some specifics worth mentioning in the sections below. 

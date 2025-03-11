@@ -11,6 +11,8 @@ ms.custom: NewPPAC
 
 # Overview of the Power Platform admin center
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 The [Power Platform admin center](https://admin.powerplatform.microsoft.com) provides a unified portal for administrators to manage environments and settings for Power Apps, Power Automate, Power Pages, and Microsoft Copilot Studio.
 
 The Power Platform admin center is also used by administrators of some Dynamics 365 apps, such as Dynamics 365 Sales, Dynamics 365 Customer Service, and Dynamics 365 Marketing, to manage environments and settings.

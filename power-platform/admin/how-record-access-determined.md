@@ -15,6 +15,8 @@ search.audienceType:
 
 # How access to a record is determined
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 There are different ways to obtain access to a particular record in Dataverse. To be able to do a certain action with a table (Create, Read, Write, Delete, Append, Append to, Assign, Share), two major checks are done: privilege and access checks. 
  
 ## Privilege check
