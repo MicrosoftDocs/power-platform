@@ -17,25 +17,25 @@ contributors:
 
 [!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
-Businesses expect their applications and customer data to be protected and resilient during unavoidable outages and disruptions. It is important to have a documented business continuity plan that aims to minimize the effects of outages including stakeholders, processes and specific steps to be taken to recover and resume operations.
+Businesses expect their applications and customer data to be protected and resilient during unavoidable outages and disruptions. It's important to have a documented business continuity plan that aims to minimize the effects of outages including stakeholders, processes, and specific steps to be taken to recover and resume operations.
 
-Microsoft provides business continuity and disaster recovery (BCDR) capabilities to all [production type environments](henvironments-overview.md) in Dynamics 365 and Power Platform software as a service (SAAS) applications. This article describes details and practices Microsoft takes to ensure your production data is resilient during outages.
+Microsoft provides business continuity and disaster recovery (BCDR) capabilities to all [production type environments](environments-overview.md) in Dynamics 365 and Power Platform software as a service (SAAS) applications. This article describes details and practices Microsoft takes to ensure your production data is resilient during outages.
 
 The diagram below shows a typical architecture of a geography that serves a single or multiple countries. Although the geography location is all your Power Platform administrators need to be concerned with, within the geography, Microsoft deploys additional infrastructure to provide scale and added protection for your data.
 
 :::image type="content" source="media/bcdr_architecture.png" alt-text="The diagram below shows a typical architecture of a geography that serves a single or multiple countries.":::
 
-A geography includes at least one Azure region that is typically made up of 3 availability zones (AZs) and no less than 2. 
+A geography includes at least one Azure region that is typically made up of three [availability zones](/azure/reliability/availability-zones-overview?tabs=azure-cli), but no less than two availability zones. 
 
 ## Built-in disaster recovery in-region with Azure availability zones
 
-Microsoft recognizes that infrastructure components such as network, power, or cooling can fail unexpectedly, for example, due to a lightning strike. This could affect one or more datacenters. To ensure resilience, we architected and deployed availability zones (AZs), where your environments are replicated across at least two distinct zones.
+Microsoft recognizes that infrastructure components such as network, power, or cooling can fail unexpectedly, for example, due to a lightning strike. This could affect one or more datacenters. To ensure resilience, we architected and deployed availability zones, where your environments are replicated across at least two distinct zones.
 
-Microsoft automatically detects AZ-level failures and switches to other AZs in the region almost instantly. This protects you from any data loss, and usually, the downtime is near zero. This in-region capability is available for production-type environments which are expected to host business-critical application processes and data. Please ensure that you protect yourself against disruption by making sure your production processes and data are not deployed in non-production types such as sandbox, developer, or trial environment types.
+Microsoft automatically detects availability zone-level failures and switches to other availability zones in the region almost instantly. This protects you from any data loss, and usually, the downtime is near zero. This in-region capability is available for production-type environments which are expected to host business-critical application processes and data. Please ensure that you protect yourself against disruption by making sure your production processes and data are not deployed in non-production types such as sandbox, developer, or trial environment types.
 
-To ensure seamless disaster recovery, AZs provide built-in resilience without requiring manual intervention. Customer data is synchronously replicated across at least two three availability zones, resulting in zero data loss (Recovery Point Objective = 0) and rapid recovery (Recovery Time Objective < 5 minutes). If one zone experiences a failure, traffic is automatically rerouted to the remaining zones with minimal service disruption.
+To ensure seamless disaster recovery, availability zones provide built-in resilience without requiring manual intervention. Customer data is synchronously replicated across at least two or three availability zones, resulting in zero data loss. The recovery point objective is zero and the rapid recovery, or recovery time objective, is less than five minutes. If one zone experiences a failure, traffic is automatically rerouted to the remaining zones with minimal service disruption.
 
-## Backup of Production Environments
+## Backup of production environments
 
 The transition to availability zones represents a significant improvement over the earlier backup and failover process for D365 and Power Platform workloads, which typically required contacting customer support for manual intervention. Your data and services remain highly available within the primary region, with built-in real-time redundancy across multiple zones.
 
