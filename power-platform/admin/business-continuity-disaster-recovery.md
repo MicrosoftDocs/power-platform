@@ -33,13 +33,13 @@ Microsoft recognizes that infrastructure components such as network, power, or c
 
 Microsoft automatically detects availability zone-level failures and switches to other availability zones in the region almost instantly. This protects you from any data loss, and usually, the downtime is near zero. This in-region capability is available for production-type environments which are expected to host business-critical application processes and data. Please ensure that you protect yourself against disruption by making sure your production processes and data are not deployed in non-production types such as sandbox, developer, or trial environment types.
 
-To ensure seamless disaster recovery, availability zones provide built-in resilience without requiring manual intervention. Customer data is synchronously replicated across at least two or three availability zones, resulting in zero data loss. The recovery point objective is zero and the rapid recovery, or recovery time objective, is less than five minutes. If one zone experiences a failure, traffic is automatically rerouted to the remaining zones with minimal service disruption.
+To ensure seamless disaster recovery, availability zones provide built-in resilience without requiring manual intervention. Customer data is synchronously replicated across at least two availability zones, resulting in zero data loss. The recovery point objective is zero and the rapid recovery, or recovery time objective, is less than five minutes. If one zone experiences a failure, traffic is automatically rerouted to the remaining zones with minimal service disruption.
 
 ## Backup of production environments
 
-The transition to availability zones represents a significant improvement over the earlier backup and failover process for D365 and Power Platform workloads, which typically required contacting customer support for manual intervention. Your data and services remain highly available within the primary region, with built-in real-time redundancy across multiple zones.
+The transition to availability zones represents a significant improvement over the earlier backup and failover process for Dynamics 365 and Power Platform workloads. Those workloads typically required contacting customer support for manual intervention. Your data and services remain highly available within the primary region, with built-in, real-time redundancy across multiple zones.
 
-Key improvements:
+Key improvements include:
 
 - **Always-on resilience**: Your environments are now automatically replicated across multiple availability zones, eliminating the need for separate geo-secondary backups.
 - **Faster recovery**: With synchronous replication across zones, failover within a region is almost instantaneous, minimizing disruptions and minimal data loss.
@@ -48,32 +48,30 @@ Key improvements:
 
 A limited number of customers in certain regions are in the process of transitioning to the improved architecture. Whether the region has transitioned or is in the process, the service always keeps a backup of environment data in more than one data center.
 
-Availability zones are far enough apart to reduce the likelihood of an outage affecting more than one zone but close enough to have low-latency connections to other AZs. The distance between AZs is usually 60 miles (100 Kilometers). 
+Availability zones are far enough apart to reduce the likelihood of an outage affecting more than one zone, but close enough to have low-latency connections to other availability zones. The distance between availability zones is usually 60 miles, or 100 kilometers. 
 
-Customers that require greater distance within a geography can choose to enable self-service disaster recovery to maintain a copy in a secondary region. With this feature customers can control failover operation and perform disaster recovery drills as described in the next section.
+Customers that require greater distance within a geography can choose to use self-service disaster recovery to maintain a copy in a secondary region. With this feature, customers can control failover operations and perform disaster recovery drills as described in the following section.
 
-##,Cross-region self-service disaster recovery (preview)
+## Cross-region self-service disaster recovery (preview)
 
-[This section is pre-release documentation and is subject to change.]
-** Important**
-•	This is a preview feature.
-•	Preview features aren’t meant for production use and might have restricted functionality. These features are subject to supplemental terms of use, and are available before an official release so that customers can get early access and provide feedback.
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
 Most geographies are typically made up of region pairs with a minimum distance of 300 miles whenever possible, to protect your data in case of large-scope disasters. 
 
 Disaster recovery is a Power Platform infrastructure capability that allows customers to replicate their environment across far distances and initiate environment failover between regions in a self-serve manner.
 
-Customers typically have multiple environments of different types created in their tenant. This capability is available specifically for production-type, Managed Environments and can be turned on for each environment. Currently, this capability is not available for finance and operations production environments.
+Customers typically have multiple environments of different types created in their tenant. This capability is available specifically for production-type, [Managed Environments](managed-environment-overview.md) and can be turned on for each environment. Currently, this capability is not available for finance and operations production environments.
 
 ## Self-service disaster recovery cost and billing
 
 Environments that activate disaster recovery replicate all environment data between two regions and can failover between the regions. Replicated data of different storage types, such as Database, Log, and File are added to Dataverse capacity consumed and billed at the same rate as the primary storage.
 
-To enable self-serve disaster recovery for an environment, the environment must first be linked to a pay-as-you-go billing plan.
+To use self-serve disaster recovery for an environment, the environment must first be linked to a [pay-as-you-go billing plan](pay-as-you-go-overview.md).
 
 If your environment already uses a pay-as-you-go billing plan, then no further action is needed and replicated capacity is billed to your Azure subscription.
 
-If your environment is configured to draw capacity from your tenant’s Dataverse capacity entitlement, then entitled capacity will be consumed first, A pay-as-you-go billing plan is still required so you can avoid capacity overages. Learn how to allocate capacity and manage capacity overages through pay-as-you-go billing plans.
+If your environment is configured to draw capacity from your tenant’s Dataverse capacity entitlement, then entitled capacity is consumed first, A pay-as-you-go billing plan is still required so you can avoid capacity overages. Learn how to allocate capacity and manage capacity overages through pay-as-you-go billing plans. Learn more in [View usage and billing information](/power-platform/admin/pay-as-you-go-usage-costs).
 
 ## Turn on self-service disaster recovery
 
