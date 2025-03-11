@@ -15,6 +15,8 @@ contributors:
 ---
 # Content security policy
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 [Content Security Policy](https://developer.mozilla.org/docs/Web/HTTP/CSP) (CSP) is currently supported in model-driven and canvas Power Apps. Admins can control whether the CSP header is sent and, to an extent, what it contains. **The settings are at the environment level, which means it would be applied to all apps in the environment once turned on.**
 
 > [!Note]

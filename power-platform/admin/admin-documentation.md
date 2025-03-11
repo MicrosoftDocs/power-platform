@@ -11,12 +11,14 @@ ms.custom: NewPPAC
 
 # Overview of the Power Platform admin center
 
-The Power Platform admin center (<https://admin.powerplatform.microsoft.com>) provides a unified portal for administrators to manage environments and settings for Power Apps, Power Automate, Power Pages, and Microsoft Copilot Studio.
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
+The [Power Platform admin center](https://admin.powerplatform.microsoft.com) provides a unified portal for administrators to manage environments and settings for Power Apps, Power Automate, Power Pages, and Microsoft Copilot Studio.
 
 The Power Platform admin center is also used by administrators of some Dynamics 365 apps, such as Dynamics 365 Sales, Dynamics 365 Customer Service, and Dynamics 365 Marketing, to manage environments and settings.
 
 > [!Note]
-> Power BI administrators use the Power BI admin portal (<https://app.powerbi.com>) to manage a Power BI tenant including the configuration of governance policies, usage monitoring, and provisioning of licenses, capacities, and organizational resources. Learn more about Power BI admin portal at [What is Power BI administration?](/power-bi/service-admin-administering-power-bi-in-your-organization).
+> Power BI administrators use the [Power BI admin portal](https://app.powerbi.com) to manage a Power BI tenant including the configuration of governance policies, usage monitoring, and provisioning of licenses, capacities, and organizational resources. Learn more about Power BI admin portal in [What is Power BI administration?](/power-bi/service-admin-administering-power-bi-in-your-organization).
 
 ## Understand the user interface (UI)
 [The new and improved Power Platform admin center](new-admin-center.md) is designed with an outcome-driven approach, where all functionality is intuitively organized in pages based on administrative tasks. The new admin center isn't just task-oriented, it also helps you achieve specific outcomes and goals. The design focuses on providing an optimal user experience, catering to a wide range of stakeholders with varying needs.
@@ -25,7 +27,7 @@ The classic Power Platform admin center is available and pages are organized acc
 
 # [New admin center](#tab/new)
 
-:::image type="content" source="media/new-ppac-callouts.png" alt-text="The new and improved Power Platform admin center.":::
+:::image type="content" source="media/new-ppac-callouts.png" alt-text="Screenshot of the new and improved Power Platform admin center.":::
 
 Legend:
 1. [Navigation pane](#1-navigation-pane)
@@ -47,7 +49,7 @@ Complete administrative functions on each Power Platform page.
 
 # [Classic admin center](#tab/classic)
 
-:::image type="content" source="media/classic-ppac-callouts.png" alt-text="The classic Power Platform admin center.":::
+:::image type="content" source="media/classic-ppac-callouts.png" alt-text="Screenshot of the classic Power Platform admin center.":::
 
 Legend:
 1. [Navigation pane](#1-navigation-pane-1)
@@ -80,7 +82,7 @@ The Power Platform admin center provides the following capabilities.
 |Deployment     | The Deployment page in the Power Platform admin center provides a streamlined experience to help administrators navigate the complexities of managing Power Platform application lifecycle management (ALM) workloads, including managing pipelines deployments at enterprise scale. Admins have visibility to all the deployments in their tenant and can approve deployment requests and troubleshoot issues.| [Admin deployment page (preview)](../alm/admin-deployment-hub.md) |
 |Licensing  |  View a summary of environments in your tenant requiring licensing attention and license consumption for your environments. |[View license consumption](view-license-consumption-issues.md) |
 | Copilot | Access educational resources, track usage, and access governance controls about Copilot features. | [Manage Copilot](copilot/copilot-hub.md) |
-|Support     | Get a list of self-help solutions or create a support ticket for technical support.<br/><br/>**Note**: Although you administer Power BI using the Power BI admin portal, you request support for Power BI through support in the Power Platform admin center.| [Get Help + Support](./get-help-support.md).  |
+|Support     | Get a list of self-help solutions or create a support ticket for technical support.<br/><br/>**Note**: Although you administer Power BI using the Power BI admin portal, you request support for Power BI through support in the Power Platform admin center.| [Get Help + Support](./get-help-support.md)  |
 
 # [Classic admin center](#tab/classic)
 
@@ -95,7 +97,7 @@ The Power Platform admin center provides the following capabilities.
 |Settings  |  Manage settings for all environments in your tenant.|[Tenant settings](tenant-settings.md) |
 | Copilot | Access educational resources, track usage, and access governance controls about Copilot features. | [Manage Copilot](copilot/copilot-hub.md) |
 |Resources  |  View and manage resources in your tenant and environments. |[View and manage resources](view-manage-resources.md)  |
-|Help + support     | Get a list of self-help solutions or create a support ticket for technical support.<br/><br/>**Note**: Although you administer Power BI using the Power BI admin portal, you request support for Power BI through Help + support in the Power Platform admin center.| [Get Help + Support](./get-help-support.md).  |
+|Help + support     | Get a list of self-help solutions or create a support ticket for technical support.<br/><br/>**Note**: Although you administer Power BI using the Power BI admin portal, you request support for Power BI through Help + support in the Power Platform admin center.| [Get Help + Support](./get-help-support.md)  |
 |Data integration| The Data Integrator (for Admins) is a point-to-point integration service used to integrate data into Dataverse. | [Integrate data into Dataverse](data-integrator.md)|
 |Data| Manage your cloud and data gateway connections.| [Set up data transfer between on-premises data and cloud services](onpremises-data-gateway-management.md) |
 |Policies     | View and manage various policies for your tenant and environments. | <br/>- [Manage data policies](prevent-data-loss.md)<br/>- [Tenant isolation policy](cross-tenant-restrictions.md)<br/>- [Customer Lockbox policy](about-lockbox.md)<br/>- [Enterprise policies](customer-managed-key.md)<br/>- [Billing policies](pay-as-you-go-overview.md)|

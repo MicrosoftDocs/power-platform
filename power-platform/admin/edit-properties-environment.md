@@ -16,6 +16,8 @@ contributors:
 
 # Edit properties of an environment 
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 Administrators can edit properties of an environment, such as the friendly name, URL, and the purpose. However, environments that are being provisioned cannot be edited, and disabled environments must be enabled before they can be edited.  
   
 ## Edit an environment  

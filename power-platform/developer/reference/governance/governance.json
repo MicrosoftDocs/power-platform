@@ -1,7 +1,7 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "Microsoft Power Platform REST API",
+    "title": "Microsoft Power Platform REST API - governance",
     "description": "Unified API for all administrative capabilities in Microsoft Power Platform.",
     "version": "2022-03-01-preview"
   },
@@ -52,7 +52,7 @@
         "tags": [
           "CrossTenantConnectionReports"
         ],
-        "summary": "Create a request to generate a cross-tenant connection report for a tenant, or return an existing report.",
+        "summary": "Create a request to generate a cross-tenant connection report for a tenant or return an existing report.",
         "operationId": "CreateCrossTenantConnectionReport",
         "produces": [
           "application/json"
@@ -173,7 +173,7 @@
         "tenantId",
         "reportId",
         "requestDate",
-        "reportStatus",
+        "status",
         "startDate",
         "endDate"
       ],
@@ -204,7 +204,7 @@
           "description": "The end of the report date window.",
           "type": "string"
         },
-        "reportStatus": {
+        "status": {
           "enum": [
             "Received",
             "InProgress",
@@ -253,7 +253,7 @@
       "scopes": {
         ".default": ".default"
       },
-      "description": "Microsoft Entra ID OAuth2."
+      "description": "Microsoft Entra ID OAuth2"
     }
   },
   "security": [
