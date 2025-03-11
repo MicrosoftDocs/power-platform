@@ -18,6 +18,8 @@ In today's dynamic business environment, the ability to seamlessly manage and in
 
 In a traditional business units security hierarchy, users are restricted to their respective business units and can't access other units. However, in a matrix organization, users work across multiple business units and projects, requiring access to data in those units. The modernized business units feature enables administrators to assign access to data for these cross-functional users across different business units securely and easily.
 
+> [!VIDEO d2a0954d-ee76-483d-81d3-67cbb2c23762]
+
 ## How does it work?
 
 To secure record access, the owning business unit column determines which business unit owns the record. To grant data access, a security role with privileges to the owning business unit provides user access to the records. In this model, the user’s business unit is no longer relevant in determining the user’s access to records. The owner of the record remains with the user who owns it regardless of their business unit.
