@@ -37,7 +37,7 @@ The architecture image shows a full solution, but the flow between the Power Pla
 
 ## Alternative connectivity methods
 
-In addition to an on-premises data gateway (OPDG), there are other ways to connect to SAP from Power Platform. For example, using a virtual network (VNet) or virtual tables.
+In addition to an on-premises data gateway (OPDG), there are other ways to connect to SAP from Power Platform. For example, using a Azure Virtual Network or virtual tables.
 
 ### Virtual network
 
@@ -118,6 +118,7 @@ You have flexibility in how you incorporate Power Platform solutions into your s
 ## Related resources
 
 - [What is Microsoft Power Platform integration with SAP?](/power-platform/sap/explore/power-platform-and-sap-integration)
+- [What are the Microsoft Power Platform and SAP connection options?](/power-platform/sap/connect/connect-power-platform-and-sap)
 - [Microsoft Power Platform security and governance documentation](/power-platform/admin/security)
 - [SAP + Power Platform white paper](/power-platform/sap/explore/white-paper)
 - [SAP and Microsoft Power Platform architecture workflow](/azure/cloud-adoption-framework/scenarios/sap/sap-power-platform-architecture-workflow)
@@ -134,7 +135,7 @@ On-premises data gateway:
 - [What is an on-prem data gateway?](/data-integration/gateway/service-gateway-onprem)
 - [Set up on-premises data gateway for SAP](/power-platform/enterprise-templates/finance/sap-procurement/administer/set-up-gateway#gateway-cluster-configuration)
 
-VNet:
+Azure Virtual Network:
 
 - [What is a virtual network (VNet) data gateway?](/data-integration/vnet/overview)
 - [Virtual Network support overview](/power-platform/admin/vnet-support-overview)
