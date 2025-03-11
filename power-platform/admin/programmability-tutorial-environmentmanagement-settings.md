@@ -1,6 +1,6 @@
 ---
-title: Create, update, and list Environment Management Settings (preview) 
-description: Learn how to use the Power Platform API to create, update, and list Environment Management Settings.
+title: Create, update, and list Environment Management Settings
+description: Learn how to use programmability tools to create, update, and list Environment Management Settings.
 author: laneswenka
 ms.reviewer: sericks
 ms.component: pa-admin
@@ -12,9 +12,9 @@ search.audienceType:
   - admin
 ---
 
-# Tutorial: Create, update, and list Environment Management Settings (preview)
+# Tutorial: Create, update, and list Environment Management Settings 
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 This tutorial demonstrates how to use the Power Platform API (preview) to create, update, and list Environment Management Settings.
 
@@ -26,10 +26,6 @@ In this tutorial, learn how to:
 4. [Update a setting value](#step-4-update-a-setting-value).
 
 As an example of this scenario, a customer might want to turn on [Storage Shared Access Signature (SAS) IP restrictions](security/data-storage.md#storage-shared-access-signature-sas-ip-restriction) and logging of SAS calls.
-
-> [!IMPORTANT]
-> - This is a preview feature.
-> - Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 
 ## Step 1. Authenticate using Power Platform API
 

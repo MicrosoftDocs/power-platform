@@ -812,25 +812,27 @@
               href: programmability-extensibility-overview.md
             - name: Versioning and support
               href: programmability-versioning-support.md
+            - name: What's new or changed
+              href: programmability-whats-new-changed.md
             - name: Authentication
               items:
                 - name: Authentication - legacy
                   href: programmability-authentication.md
-                - name: Authentication (preview)
+                - name: Authentication
                   href: programmability-authentication-v2.md
-            - name: Permission reference (preview)
+            - name: Permission reference
               href: programmability-permission-reference.md
             - name: Tutorials
               items:
-                - name: "Create a daily capacity report (preview)"
+                - name: "Create a daily capacity report"
                   href: programmability-tutorial-create-daily-capacity-report.md
-                - name: "Install an application to a target environment (preview)"
+                - name: "Install an application to a target environment"
                   href: programmability-tutorial-install-application-environment.md
-                - name: "Tutorial: Allocate add-ons to environments (preview)"
+                - name: "Tutorial: Allocate add-ons to environments"
                   href: programmability-tutorial-allocate-capacity-addons.md
                 - name: "Tutorial: Create cross tenant isolation reports"
                   href: programmability-tutorial-cross-tenant-reporting.md
-                - name: "Tutorial: Create, update, and list Environment Management Settings (preview)"
+                - name: "Tutorial: Create, update, and list Environment Management Settings"
                   href: programmability-tutorial-environmentmanagement-settings.md
             - name: PowerShell
               items:
@@ -848,15 +850,11 @@
                       href: powerapps-powershell.md
                     - name: Automation of tasks with PowerShell
                       href: wp-task-automation-powershell.md
-                    - name: Data loss prevention SDK
-                      href: data-loss-prevention-sdk.md
             - name: Connectors
               items:
-                - name: Getting started
-                  href: connectors-getting-started.md
                 - name: Connector reference
-                  href: /connectors/powerplatformforadmins/
-            - name: Power Platform API (preview)
+                  href: /connectors/powerplatformadminv2/
+            - name: Power Platform API
               items:
                 - name: Getting started
                   href: powerplatform-api-getting-started.md
@@ -864,6 +862,8 @@
                   href: powerplatform-api-create-service-principal.md
                 - name: Reference
                   items:
+                    - name: "2024-10-01"
+                      href: /rest/api/power-platform
                     - name: "2022-03-01-preview"
                       href: /rest/api/power-platform
                     - name: "2020-10-01"
@@ -876,7 +876,7 @@
                               href: create-dataverseapplicationuser.md
                         - name: Tenant Settings
                           items:
-                            - name: List tenant settings (preview)
+                            - name: List tenant settings
                               href: list-tenantsettings.md
         - name: Data integration
           items:

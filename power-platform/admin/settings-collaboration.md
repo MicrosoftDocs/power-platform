@@ -22,6 +22,8 @@ ms.contributors:
 
 # Manage collaboration settings
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 Use collaboration settings to adjust how collaboration features work in Power Platform. Adjust the settings in the Power Platform admin center, **Environments** > *select an environment* > **Settings** > **Product** > **Collaboration**.
 
 Make sure you have the System Administrator security role or equivalent permissions to update the collaboration settings. To check your security role, see [View your user profile](/powerapps/user/view-your-user-profile). If you don’t have the correct permissions, contact your system administrator.

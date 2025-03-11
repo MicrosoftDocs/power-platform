@@ -13,6 +13,8 @@ search.audienceType:
 ---
 # Manage transactions with multiple currencies
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 Currencies determine the prices for products in the product catalog and the cost of transactions, such as sales orders. If your customers are spread across geographies, add their currencies to manage your transactions. Add the currencies that are most appropriate for your current and future business needs.  
 
 ## Add a currency 

@@ -4,15 +4,19 @@ description: Learn about Microsoft Azure Virtual Network support for Power Platf
 author: faix
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/26/2025
+ms.date: 03/11/2025
 ms.subservice: admin
 ms.author: osfaixat
 ms.reviewer: sericks
 search.audienceType: 
   - admin
+contributors:
+  - matapg007
 ---
 
 # Virtual Network support overview
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 With [Azure Virtual Network](/azure/virtual-network/virtual-networks-overview) support for Power Platform, you can integrate Power Platform with resources inside your virtual network without exposing them over the public internet. Virtual Network support uses [Azure subnet delegation](/azure/virtual-network/subnet-delegation-overview) to manage outbound traffic from Power Platform at runtime. Using Azure Subnet delegation avoids the need for protected resources to be available over the internet to integrate with Power Platform. With virtual network support, Power Platform components can call resources owned by your enterprise inside your network, whether they're hosted in Azure or on-premises, and use plug-ins and connectors to make outbound calls.
 
@@ -58,7 +62,7 @@ Confirm that your Power Platform environment and enterprise policy are in suppor
 | Power Platform region | Azure region |
 |-----------------------|--------------|
 | United States | eastus, westus |
-| South Africa  | eouthafricanorth, southafricawest |
+| South Africa  | southafricanorth, southafricawest |
 | Uk | uksouth, ukwest |
 | Japan | japaneast, japanwest |
 | India | centralindia, southindia |
@@ -67,14 +71,15 @@ Confirm that your Power Platform environment and enterprise policy are in suppor
 | Germany | germanynorth, germanywestcentral |
 | Switzerland | switzerlandnorth, switzerlandwest |
 | Canada | canadacentral, canadaeast |
-| Brazil | brazilsouth, southcentralus |
+| Brazil | brazilsouth |
 | Australia | australiasoutheast, australiaeast |
 | Asia | eastasia, southeastasia |
-| UAE | uaecentral, uaenorth |
+| UAE | uaenorth |
 | Korea | koreasouth, koreacentral |
 | Norway | norwaywest, norwayeast |
 | Singapore | southeastasia |
 | Sweden | swedencentral |
+| Italy | italynorth |
 
 ## Supported services
 
