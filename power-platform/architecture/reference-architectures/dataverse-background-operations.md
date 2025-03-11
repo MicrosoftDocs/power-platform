@@ -21,9 +21,12 @@ In Microsoft Dataverse, executing requests as background operations enhances asy
 
 This article explains the workflow, use cases, and considerations for implementing background operations in Dataverse to ensure scalable and reliable performance for long-running tasks.
 
+> [!TIP]
+> The article provides an example scenario and visual representation of how to implement background operations in Dataverse. This solution is a generalized example scenario architecture, which can be used for many different scenarios and industries.
+
 ## Architecture diagram
 
-:::image type="content" source="media/dataverse-background-operations/Background-job.png" alt-text="Diagram illustrating the workflow for executing background operations in Microsoft Dataverse." lightbox="media/dataverse-background-operations/Background-job.png":::
+:::image type="content" source="media/dataverse-background-operations/Background-job.png" alt-text="Architecture diagram illustrating the workflow for executing background operations in Microsoft Dataverse." lightbox="media/dataverse-background-operations/Background-job.png":::
 
 ## Workflow
 

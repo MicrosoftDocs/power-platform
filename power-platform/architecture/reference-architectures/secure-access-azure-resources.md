@@ -25,6 +25,9 @@ Use Microsoft Azure Virtual Network support for Power Platform to integrate Powe
 
 <!-- Note that we are dissuaded from using the acronyms "vNet," "Vnet", or "VNET" unless describing a specific use case. See the guidance in our style guide: https://learn.microsoft.com/en-us/product-style-guide-msft-internal/a_z_names_terms/v/virtual-network. -->
 
+> [!TIP]
+> The article provides an example scenario and visual representation of how to secure Power Platform access to Azure resources with Azure Virtual Network. This solution is a generalized example scenario architecture, which can be used for many different scenarios and industries.
+
 ## Architecture diagram
 
 :::image type="content" source="media/secure-access-azure-resources/secure-architecture.png" alt-text="Diagram showing secure Power Platform access to Azure resources.":::

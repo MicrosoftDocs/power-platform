@@ -3,7 +3,7 @@ title: Dataverse auditing
 description: Learn how to integrate legacy data with modern platforms using Power Automate, SharePoint, Dataverse, Power BI, and Microsoft Teams.
 #customer intent: As an admin, I want to understand how to enable Dataverse auditing so that I can track and record changes to data.
 author: manuelap-msft
-ms.subservice: guidance
+ms.subservice: architecture-center
 ms.topic: example-scenario
 ms.date: 03/10/2025
 ms.author: mapichle
