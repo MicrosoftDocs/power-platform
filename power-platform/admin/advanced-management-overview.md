@@ -55,9 +55,9 @@ Managed operations includes:
 
 - Application lifecycle management
 - Observability
-- Data resilience
+- Data recovery and mobility
 - Quality checker
-- Test automation
+- Continuous deployment
 
   
 
