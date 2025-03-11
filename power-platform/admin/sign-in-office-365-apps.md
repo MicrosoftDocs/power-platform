@@ -14,6 +14,8 @@ search.audienceType:
 ---
 # Sign in to Dynamics 365 and Office apps
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 There are multiple ways to sign in and access your Dynamics 365 and Office apps.  
   
 > [!TIP]

@@ -12,6 +12,8 @@ search.audienceType:
 ---
 # Enable the hybrid experience
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 <!-- legacy procedure -->
 
 Most of the core functionalities of sales and customer service have moved to the [Unified Interface](about-unified-interface.md) experience. Some of the features that are not yet on Unified Interface can be accessed in the Unified Interface client. 

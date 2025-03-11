@@ -15,6 +15,8 @@ search.audienceType:
 
 # Telemetry events for mobile app synchronization and actions
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 Power Apps mobile application data related to offline synchronization events is available for model-driven and canvas apps. This data can be used to evaluate the health and performance of offline sync events for your organization. 
 
 This data goes into the **Power Apps** > **Mobile app synchronization and actions** table in Application Insights. An entry is logged when a user accesses a Power Apps mobile app, which is configured for offline mode. More data, related to failure events in model-driven apps, is available through the **Power Apps** > **UCI**.

@@ -14,6 +14,8 @@ search.audienceType:
 ---
 # Set up security permissions for a column 
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 There are two steps to set up security permissions for a column.
 
 1. Allow column security on one or more columns for a given table.  

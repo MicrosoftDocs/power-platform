@@ -15,6 +15,8 @@ contributors:
 ---
 # Dataverse capacity-based storage overview
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 Key enhancements have been made to the admin experience for the Microsoft Power Platform admin center. These enhancements include:
 
 - Dataverse storage reporting is based on customer licenses and capacity add-ons.

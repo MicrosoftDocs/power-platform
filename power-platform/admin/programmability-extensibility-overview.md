@@ -14,7 +14,20 @@ search.audienceType:
 
 # Programmability and extensibility overview
 
+<<<<<<< HEAD
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+
+Microsoft Power Platform administrators often have the need to orchestrate and automate routine activities for their tenant.  This can be accomplished in a variety of ways using the tools outlined below.  
+
+> [!IMPORTANT]
+> - This is a preview feature.
+> - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
+> - This feature is being gradually rolled out across regions and might not be available yet in your region.
+=======
 Microsoft Power Platform administrators often have the need to orchestrate and automate routine activities for their tenant. This can be accomplished in various ways using the tools outlined below.  
+>>>>>>> main
 
 > [!NOTE]
 > Programmability tools are currently developed API-first, meaning new properties and functionality is first exposed in the latest API versions made available. They're later taken into updates to our Power Platform CLI, PowerShell cmdlets, and connectors. In the future, this becomes synchronized across all available tools automatically.  

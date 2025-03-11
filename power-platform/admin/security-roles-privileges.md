@@ -16,6 +16,8 @@ contributors:
 
 # Security roles and privileges
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 To control who can access restricted or sensitive data and resources and what they can do with them, assign users to security roles. This article provides an overview of security roles and their associated privileges.
 
 You can assign security roles using the [new, modern UI](#security-roles-and-the-new-modern-ui) or the [legacy UI](#security-roles-and-the-legacy-ui).
