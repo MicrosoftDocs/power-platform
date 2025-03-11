@@ -1,10 +1,11 @@
 ---
 title: Secure Power Platform access to Azure resources 
 description: Secure Power Platform access to Azure resources using Azure Virtual Network. Learn how to integrate Power Platform with Azure resources without exposing them to the public internet.
+#customer intent: As a Power-Platform user, I want to secure Power Platform access to Azure resources so that I can ensure safe communication without exposing them to the public internet.
 author: manuelap-msft
 ms.subservice: architecture-center
 ms.topic: example-scenario
-ms.date: 03/07/2025
+ms.date: 03/11/2025
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
 contributors: 
@@ -17,7 +18,7 @@ search.audienceType:
 
 # Secure Power Platform access to Azure resources 
 
-Use Azure Virtual Network support for Power Platform to integrate Power Platform with resources inside your virtual network without exposing them to the public internet. Virtual Network support uses Azure subnet delegation to manage outbound traffic from Power Platform at runtime.
+Use Azure Virtual Network support for Power Platform to integrate Power Platform with resources inside your virtual network without exposing them to the public internet. Virtual network support uses Azure subnet delegation to manage outbound traffic from Power Platform at runtime.
 
 ## Architecture diagram
 
@@ -48,7 +49,7 @@ style="width:6.50662in;height:2.79451in" />
 
 ## Use case details
 
-Organizations with high security needs want to ensure safe communication between internal systems and cloud services. They use available security controls. They also want to use virtual network integration between Power Platform and Azure resources as part of their solution architecture.
+Organizations with high security needs want to ensure safe communication between internal systems and cloud services. They use available security controls and want to use virtual network integration between Power Platform and Azure resources as part of their solution architecture.
 
 Using the vNet capability, solutions that utilize Power Platform and
 Azure components can be built without the complexity of a typical
@@ -77,7 +78,7 @@ and security needs.​ 
  **Power Platform custom connectors**: Define the operations available
  to the Power Platform applications from the service they describe.
  Using Power Platform custom connectors the application uses services
- of the backend APIs that implement the organizations business logic.
+ of the backend APIs that implement the organization's business logic.
 
  **Azure Virtual Network (vNet)**: An isolated, secure environment
  that allows Azure resources to communicate. Features to support hybrid
@@ -87,7 +88,7 @@ and security needs.​ 
  allows Power Platform and Azure resources to interact over a private
  network without sending the traffic over public networks.
 
- **Azure key vault**: Used to store the credentials required to
+ **Azure Key Vault**: Used to store the credentials required to
  connect to the backend APIs using OAuth. Similar to the backend APIs, the Power Platform resources
  access the Azure key vault by  using
  the vNet.
@@ -156,12 +157,12 @@ Review [Azure virtual Network
 monitoring](https://learn.microsoft.com/en-us/azure/virtual-network/monitor-virtual-network-reference)
 for more details.
 
-## Next Steps
+## Next steps
 
 [Setup a virtual network for Power
 Platform](https://learn.microsoft.com/en-us/power-platform/admin/vnet-support-setup-configure)
 
-With your virtual network setup, you can use the following high-level
+With virtual network setup, use the following high-level
 steps to build an end to end solution that uses the vNet.
 
 1.  Azure hosted API: Create an Azure hosted REST API using your
@@ -170,47 +171,40 @@ steps to build an end to end solution that uses the vNet.
     Functions app to use Entra
     ID](https://learn.microsoft.com/en-us/azure/app-service/configure-authentication-provider-aad?tabs=workforce-configuration).
 
-2.  Power Platform Environment Variables: Create environment variables
+2.  Power Platform environment variables: Create environment variables
     that hold the client ID and secret from the Azure Key Vault.
     Reference: [Use environment variables for Azure Key Vault secrets -
     Power Apps \| Microsoft
     Learn](https://learn.microsoft.com/en-us/power-apps/maker/data-platform/environmentvariables-azure-key-vault-secrets) 
 
-<!-- -->
-
-3.  Custom Connector [:  Create a custom
+3.  Custom connector [:  Create a custom
     connector](https://learn.microsoft.com/en-us/connectors/custom-connectors/learn-with-a-tutorial)
     for your API.
 
-<!-- -->
+    a. Define the custom connector to use OAuth2.0 with Azure Active
+        Directory (Entra ID) and enable service principal support 
 
-a. Define the custom connector to use oAuth2.0 with Azure Active
-    Directory (Entra ID) and enable Service Principal Support 
+    <img src="media/secure-power-platform-access-to-azure-resources/image3.png" style="width:3.38194in;height:1.08333in"
+    alt="A screenshot of a computer AI-generated content may be incorrect." /> 
 
-<img src="media/secure-power-platform-access-to-azure-resources/image3.png" style="width:3.38194in;height:1.08333in"
-alt="A screenshot of a computer AI-generated content may be incorrect." /> 
+    b. The client ID and client secret can be parameterized to gather the
+        values from the environment variables created in step 2 like the
+        example below: 
 
-b. The clientid and client secret can be parameterized to gather the
-    values from the environment variables created in \#2 like the
-    example below: 
+    <img src="media/secure-power-platform-access-to-azure-resources/image4.png"
+    style="width:4.11111in;height:0.49306in" />
 
-<img src="media/secure-power-platform-access-to-azure-resources/image4.png"
-style="width:4.11111in;height:0.49306in" /> 
-
-4.  Power Apps canvas app – This forms the search interface for the
+4.  Power Apps canvas app: This forms the search interface for the
     back-office
 
 ## Related resources
 
-[Virtual Network support white
-paper](https://learn.microsoft.com/en-us/power-platform/admin/virtual-network-support-whitepaper)
+- [Virtual Network support white
+paper](/power-platform/admin/virtual-network-support-whitepaper)
 
-<u>​</u>[Power Platform security best
-practices](https://learn.microsoft.com/en-us/power-platform/well-architected/security/)​ 
+- [Power Platform security best
+practices](/power-platform/well-architected/security)​ 
 
-[Use environment variables for Azure Key Vault secrets - Power Apps \|
-Microsoft
-Learn](https://learn.microsoft.com/en-us/power-apps/maker/data-platform/environmentvariables-azure-key-vault-secrets)
+- [Use environment variables for Azure Key Vault secrets - Power Apps](/power-apps/maker/data-platform/environmentvariables-azure-key-vault-secrets)
 
-[Use environment variables in solution custom connectors \| Microsoft
-Learn](https://learn.microsoft.com/en-us/connectors/custom-connectors/environment-variables)
+- [Use environment variables in solution custom connectors](/connectors/custom-connectors/environment-variables)
