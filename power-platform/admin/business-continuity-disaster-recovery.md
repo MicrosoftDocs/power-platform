@@ -59,7 +59,7 @@ Customers that require greater distance within a geography can choose to use sel
 
 Most geographies are typically made up of region pairs with a minimum distance of 300 miles whenever possible, to protect your data in large-scope disasters. 
 
-Disaster recovery is a Power Platform infrastructure capability that allows customers to replicate their environment across far distances and initiate environment failover between regions in a self-serve manner.
+Self-service disaster recovery is a Power Platform infrastructure capability that allows customers to replicate their environment across far distances and initiate environment failover between regions in a self-serve manner.
 
 Customers typically have multiple environments of different types created in their tenant. This capability is available specifically for production-type, [Managed Environments](managed-environment-overview.md) and can be turned on for each environment. Currently, this capability isn't available for finance and operations production environments.
 
