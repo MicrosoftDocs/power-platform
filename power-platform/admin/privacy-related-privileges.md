@@ -15,6 +15,8 @@ ms.custom: bap-template
 
 # Privacy-related privileges
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 You can assign privileges to a security role that are related specifically to privacy. Use either the [new](security-roles-privileges.md#define-the-privileges-and-properties-of-a-security-role) or [legacy](security-roles-privileges.md#security-roles-and-the-legacy-ui) experience to assign privileges to a security role.
 
 ## New experience

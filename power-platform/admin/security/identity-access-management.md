@@ -14,6 +14,8 @@ search.audienceType:
 ---
 
 # Identity and access management
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 Make sure authorized users are the only people who can access sensitive data in items across this tenant.
 
 ## IP firewall 

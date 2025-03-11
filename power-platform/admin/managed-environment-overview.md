@@ -19,6 +19,8 @@ search.audienceType:
 ---
 # Managed Environments overview 
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 <!-- https://go.microsoft.com/fwlink/?linkid=2206011 and 2211534 -->
 
 Managed Environments is a suite of premium capabilities that allows admins to manage Power Platform at scale with more control, less effort, and more insights. Admins can use Managed Environments with any type of environment. Certain features can be configured upon enabling a Managed Environment. Once an environment is managed, it unlocks more features across the Power Platform. 
