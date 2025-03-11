@@ -4,7 +4,7 @@ description: Learn how to configure an Azure app for SharePoint access to allow 
 author: adrianorth
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/03/2025
+ms.date: 03/11/2025
 ms.subservice: admin
 ms.author: aorth
 ms.reviewer: sericks
@@ -125,7 +125,7 @@ An example using POST:
 Create a federated credential for the app registration. Learn more about federated identity credentials in [Configure an application for federated identity credential](/entra/workload-id/workload-identity-federation-config-app-trust-managed-identity?tabs=microsoft-entra-admin-center).
 
 > [!NOTE]
-> Federated Identity Credentials through Power Platform Managed Identiy is GA and fully supported for the SharePoint Document integration. The Power Platform Managed Identify is use for a number of scenarios and not all are currently GA. However this case is fully supported.
+> Federated identity credentials through Power Platform managed identity is generally available and fully supported for the SharePoint document integration. The Power Platform managed identity is used for a number of scenarios, but not all are currently generally available. However, this case is fully supported.
 
 1. Open the [Azure portal](https://portal.azure.com/).
 
