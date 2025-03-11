@@ -23,7 +23,7 @@ Microsoft provides business continuity and disaster recovery (BCDR) capabilities
 
 The diagram below shows a typical architecture of a geography that serves a single or multiple countries. Although the geography location is all your Power Platform administrators need to be concerned with, within the geography, Microsoft deploys additional infrastructure to provide scale and added protection for your data.
 
-:::image type="content" source="media/bcdr_architecture.png" alt-text="The diagram below shows a typical architecture of a geography that serves a single or multiple countries.":::
+:::image type="content" source="media/bcdr_architecture.png" alt-text="The diagram below shows a typical architecture of a geography that serves a single or multiple countries. lightbox="media/bcdr_architecture.png"":::
 
 A geography includes at least one Azure region that is typically made up of three [availability zones](/azure/reliability/availability-zones-overview?tabs=azure-cli), but no less than two availability zones. 
 
