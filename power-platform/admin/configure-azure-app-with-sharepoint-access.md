@@ -124,6 +124,9 @@ An example using POST:
 
 Create a federated credential for the app registration. Learn more about federated identity credentials in [Configure an application for federated identity credential](/entra/workload-id/workload-identity-federation-config-app-trust-managed-identity?tabs=microsoft-entra-admin-center).
 
+> [!NOTE]
+> Federated Identity Credentials through Power Platform Managed Identiy is GA and fully supported for the SharePoint Document integration. The Power Platform Managed Identify is use for a number of scenarios and not all are currently GA. However this case is fully supported.
+
 1. Open the [Azure portal](https://portal.azure.com/).
 
 1. Select **Microsoft Entra ID**.
