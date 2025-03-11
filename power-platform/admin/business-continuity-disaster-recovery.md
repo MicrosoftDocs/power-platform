@@ -42,7 +42,7 @@ The transition to availability zones represents a significant improvement over t
 Key improvements:
 
 - **Always-on resilience**: Your environments are now automatically replicated across multiple availability zones, eliminating the need for separate geo-secondary backups.
-- **Faster recovery**: Thanks to With synchronous replication across zones, failover within a region is almost instantaneous, minimizing disruptions and minimal data loss.
+- **Faster recovery**: With synchronous replication across zones, failover within a region is almost instantaneous, minimizing disruptions and minimal data loss.
 - **Seamless experience**: Unlike traditional backups, which require restoration, availability zones keep your environment continuously active.
 - **Reduced support dependency**: Automated failover within the primary region eliminates the need to contact Microsoft support for most disaster recovery scenarios.
 
@@ -85,11 +85,11 @@ To turn on disaster recovery, complete the following steps:
 
 1.	Navigate to the list of environments within the Power Platform admin center.
 1.	Select the production type environment where you want to turn on self-service disaster recovery.
-1.	Select Disaster Recovery in the command bar at the top of the page. The Disaster Recovery pane appears.
-1.	Select the toggle to change it to Enabled.
-1.	Select Save.
-1.	The environment is placed in the Edit details page briefly.
-1.	The Environment details page appears, indicating that the process of turning on the feature has started.
+1.	Select Disaster Recovery in the command bar at the top of the page. The **Disaster Recovery** pane appears.
+1.	Select the toggle to change it to **Enabled**.
+1.	Select **Save**.
+1.	The environment is placed in the **Edit details** page briefly.
+1.	The **Environment details** page appears, indicating that the process of turning on the feature has started.
 
 These two events may require you to use this feature:
 
