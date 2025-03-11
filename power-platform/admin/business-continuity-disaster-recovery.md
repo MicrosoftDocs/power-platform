@@ -81,13 +81,30 @@ Turning on disaster recovery in an environment has no impact on the environment 
 
 To turn on disaster recovery, complete the following steps.
 
-1.	Navigate to the list of environments within the Power Platform admin center.
-1.	Select the production-type environment where you want to turn on self-service disaster recovery.
-1.	Select Disaster Recovery in the command bar at the top of the page. The **Disaster Recovery** pane appears.
+# [New admin center](#tab/new)
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a system administrator.
+1. In the navigation pane, select **Manage**.
+1. In the Manage pane, select **Environments**. The Environments page is displayed.
+1. Select the production-type environment where you want to turn on self-service disaster recovery.
+1. Select **Disaster Recovery** in the command bar at the top of the page. The **Disaster Recovery** pane appears.
 1.	Select the toggle to change it to **Enabled**.
 1.	Select **Save**.
 1.	The environment is placed in the **Edit details** page briefly.
 1.	The **Environment details** page appears, indicating that the process of turning on the feature has started.
+
+# [Classic admin center](#tab/classic)
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a system administrator.
+1. In the navigation pane, select **Environments**.
+1. Select the production-type environment where you want to turn on self-service disaster recovery.
+1. Select **Disaster Recovery** in the command bar at the top of the page. The **Disaster Recovery** pane appears.
+1.	Select the toggle to change it to **Enabled**.
+1.	Select **Save**.
+1.	The environment is placed in the **Edit details** page briefly.
+1.	The **Environment details** page appears, indicating that the process of turning on the feature has started.
+
+---
 
 These two events may require you to use this feature:
 
@@ -114,7 +131,7 @@ After you complete your drill or after an outage has been mitigated, we recommen
 
 Admins can determine the current disaster recovery state and location of an environment in the **Environment details** page. Admins can also select **Disaster Recovery** in the command bar to open the **Disaster Recovery** pane.
 
-To check data replication latency at any time, you can select **Disaster Recovery** and then select **Emergency response** as the disaster recovery reason. This opens a confirmation dialog that includes the last replication time between regions for that environment. You may select Cancel if your only purpose was to check the potential loss of data if there was a failover operation. Keep in mind that the last sync time is always different at different times, since data is being replicated continuously.
+To check data replication latency at any time, you can select **Disaster Recovery** and then select **Emergency response** as the disaster recovery reason. This opens a confirmation dialog that includes the last replication time between regions for that environment. You may select **Cancel** if your only purpose was to check the potential loss of data if there was a failover operation. Keep in mind that the last sync time is always different at different times, since data is being replicated continuously.
 
 ## Document your business continuity plan
 
