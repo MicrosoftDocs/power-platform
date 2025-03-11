@@ -1,30 +1,33 @@
 ﻿---
-title: Property rental portal with AI-Driven Search Agent and Payment Processing
-description: Discover how to build a property rental portal with AI-driven search and payment processing using Power Platform and Azure.
+title: Property rental portal with AI-driven search and payment processing
+description: Discover how to build a property rental portal with AI-driven search and payment processing using Power Platform and Microsoft Azure.
+#customer intent: As a cloud architect, I want to visualize the major components of the rental portal so that I can design a well-architected solution.
 author: manuelap-msft
-ms.subservice: guidance
+ms.subservice: architecture-center
 ms.topic: solution-idea
-ms.date: 02/06/2025
+ms.date: 03/11/2025
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
-contributors: 
+contributors:
   - manuelap-msft
-search.audienceType: 
+search.audienceType:
   - admin
   - flowmaker
 ---
 
 
-# Property rental portal with AI-driven search agent and payment processing
+# Property rental portal with AI-driven search and payment processing
 
-In this article, you'll learn how to build a comprehensive rental portal that leverages AI-driven search capabilities and seamless payment processing. Utilizing the Power Platform and Azure, this solution integrates various components to provide a robust and user-friendly experience for both users and administrators. From browsing and reserving listings to managing payments and generating insightful reports, this architecture ensures a well-rounded and efficient rental management system. Follow along to understand the key components, workflow, and best practices for implementing this solution.
+In this article, you learn how to build a comprehensive rental portal that leverages AI-driven search capabilities and seamless payment processing. Using Power Platform and Microsoft Azure, this solution integrates various components to provide a robust and user-friendly experience for both users and administrators. From browsing and reserving listings to managing payments and generating insightful reports, this architecture ensures a well-rounded and efficient rental management system. 
+
+This article outlines the key components, workflow, and best practices for implementing this solution.
 
 > [!TIP]
 > This article describes a solution idea. Your cloud architect can use this guidance to help visualize the major components for a typical implementation of this architecture. Use this article as a starting point to design a well-architected solution that aligns with your workload's specific requirements.
 
 ## Architecture diagram
 
-:::image type="content" source="../media/image6.png" alt-text="Rental portal with AI-driven search agent and payment processing architecture diagram" border="true":::
+:::image type="content" source="../media/image6.png" alt-text="Architecture diagram of a property rental portal with an AI-driven search and payment processing." border="true"  lightbox="../media/image6.png":::
 
 ## Workflow
 
@@ -61,7 +64,7 @@ In this article, you'll learn how to build a comprehensive rental portal that le
 
 1. **User interacts with Portal AI agent**
     - The user engages with the portal agent for assistance.
-    - The bot uses Copilot Studio, which is configured to search the portal content to understand and respond to user queries.
+    - The bot uses Microsoft Copilot Studio, which is configured to search the portal content to understand and respond to user queries.
 
 1. **Searches listings**
     - The agent extracts search terms from the user's query using an AI Builder prompt.
@@ -74,12 +77,12 @@ In this article, you'll learn how to build a comprehensive rental portal that le
 ### Managing listings and payments
 
 1. **Admin manages listings**
-    - An admin uses the Model Driven App to manage real estate listings.
+    - An admin uses the model-driven app to manage real estate listings.
     - The admin can add, update, or delete listings in the Dataverse database, and upload photographs using a custom page.
 
 1. **Virtual table for payments**
     - The Payments API exposes payment data as a virtual table in Dataverse.
-    - This allows the admin to view payment details directly within the Model Driven App.
+    - The admin can view payment details directly within the model-driven app.
 
 1. **Custom connector for payments**
     - The custom connector facilitates communication between Power Platform and the Azure Payments API.
@@ -91,11 +94,11 @@ In this article, you'll learn how to build a comprehensive rental portal that le
 1. **User activity on portal**
     - Users interact with the Power Pages portal, browsing and reserving listings.
     - Each user action generates telemetry data.
-    - Application Insights captures telemetry data from the portal and Copilot studio agent. This includes page views, user queries, agent responses, errors logs and performance metrics.
+    - Application Insights captures telemetry data from the portal and the Copilot Studio agent, including page views, user queries, agent responses, errors logs, and performance metrics.
 
 1. **API activity logging**
     - The Payments API and other backend services log activity to Application Insights.
-    - This includes API calls, payment transactions, and error logs.
+    - Includes API calls, payment transactions, and error logs.
 
 1. **Data aggregation in Fabric**
     - Application Insights aggregates telemetry data from the portal and APIs.
@@ -106,22 +109,21 @@ In this article, you'll learn how to build a comprehensive rental portal that le
 
 ## Components
 
-1. **[Microsoft Dataverse](/power-apps/maker/data-platform/):** A cloud-based storage space that lets you securely store and manage data used by business applications. It stores listing and reservation data, including property details, user information, and reservation statuses.
+1. [Microsoft Dataverse](/power-apps/maker/data-platform/): A cloud-based storage space that lets you securely store and manage data used by business applications. Stores listing and reservation data, including property details, user information, and reservation statuses.
 
-1. **[Power Apps](/power-apps/):** Power Apps is a suite of apps, services, connectors, and a data platform that provides a rapid application development environment to build custom apps for your business needs. It's used to create custom applications for managing rental property listings and tracking tenant interactions efficiently.  
+1. [Power Apps](/power-apps/): Power Apps is a suite of apps, services, connectors, and a data platform that provides a rapid application development environment to build custom apps for your business needs. Used to create custom applications for managing rental property listings and tracking tenant interactions efficiently.  
 
-1. **[Power Pages](/power-pages/):** A platform for building secure, low-code websites. It lets users browse listings, make reservations, and view personalized property recommendations. Users authenticate via Power Pages, ensuring secure access to their data.  
+1. [Power Pages](/power-pages/): A platform for building secure, low-code websites. Lets users browse listings, make reservations, and view personalized property recommendations. Users authenticate via Power Pages, ensuring secure access to their data.  
 
-1. **[AI builder prompts in Copilot Studio](/ai-builder/use-a-custom-prompt-in-mcs):** AI Builder models that analyze user interactions and provide personalized property recommendations. They enhance user experience by offering tailored property suggestions based on user behavior and preferences.  
+1. [AI Builder prompts in Copilot Studio](/ai-builder/use-a-custom-prompt-in-mcs): AI Builder models that analyze user interactions and provide personalized property recommendations. Enhance the user experience by offering tailored property suggestions based on user behavior and preferences.  
 
-1. **[Azure Functions](/azure/azure-functions/functions-overview?pivots=programming-language-csharp), [Azure Key Vault](/azure/key-vault/), [Azure SQL](/azure/azure-sql/), [Application Insights](/azure/azure-monitor/app/app-insights-overview):** Azure Functions are an event-driven serverless compute platform that runs on demand and at scale in the cloud.  
-    They handle payment processing securely, integrating with payment gateways like Stripe. Azure Functions use managed identities to securely access the payment database. Azure Key Vault stores sensitive secrets such as the Stripe authentication key.  
+1. [Azure Functions](/azure/azure-functions/functions-overview?pivots=programming-language-csharp), [Azure Key Vault](/azure/key-vault/), [Azure SQL](/azure/azure-sql/), [Application Insights](/azure/azure-monitor/app/app-insights-overview): Azure Functions is an event-driven serverless compute platform that runs on demand and at scale in the cloud. It handles payment processing securely, integrating with payment gateways like Stripe. Azure Functions uses managed identities to securely access the payment database. Azure Key Vault stores sensitive secrets such as the Stripe authentication key.  
 
-1. **[Power Automate](/power-automate/):** A service that helps automate workflows between apps and services.  It ensures seamless integration between the portal, Azure Functions, and Dataverse. It automates tasks such as calling the Payment API using a custom connector, sending confirmation emails, and updating reservation statuses.  
+1. [Power Automate](/power-automate/): A service that helps automate workflows between apps and services. Ensures seamless integration between the portal, Azure Functions, and Dataverse. Automates tasks such as calling the Payment API using a custom connector, sending confirmation emails, and updating reservation statuses.  
 
-1. **[Power BI](/power-bi/):** A business analytics service that provides interactive visualizations and business intelligence capabilities. It provides insights into listing performance, user interactions, and reservation trends. Property managers use dashboards to make data-driven decisions. Data held in Application Insights and Azure SQL is joined with Dataverse reservation and property data.
+1. [Power BI](/power-bi/): A business analytics service that provides interactive visualizations and business intelligence capabilities. Provides insights into listing performance, user interactions, and reservation trends. Property managers use dashboards to make data-driven decisions. Data held in Application Insights and Azure SQL is joined with Dataverse reservation and property data.
 
-1. **[GitHub Actions](/power-platform/alm/devops-github-actions):** GitHub Actions are used for CI/CD, automating workflows to ensure consistent and efficient testing, validation, and deployment of changes. Automated builds and tests are triggered on code pushes, successful builds are deployed to staging and production environments, and unit tests are integrated into the pipelines to maintain code quality and catch issues early.
+1. [GitHub Actions](/power-platform/alm/devops-github-actions): GitHub Actions are used for continuous integration and continuous delivery (CI/CD), automating workflows to ensure consistent and efficient testing, validation, and deployment of changes. Automated builds and tests are triggered on code pushes, successful builds are deployed to staging and production environments, and unit tests are integrated into the pipelines to maintain code quality and catch issues early.
 
 ## Use case details
 
@@ -129,37 +131,37 @@ The Contoso Rental Property system provides an integrated platform for managing 
 
 ## Considerations
 
-These considerations implement the pillars of Power Platform Well-Architected, a set of guiding tenets that can improve the quality of a workload. For more information, see [Microsoft Power Platform Well-Architected](https://aka.ms/powa).
+These considerations implement the pillars of Power Platform Well-Architected, a set of guiding tenets that can improve the quality of a workload. Learn more in [Microsoft Power Platform Well-Architected](https://aka.ms/powa).
 
 ### Reliability
 
 - **Redundancy and failover:** Redundancy for critical functions provided by Dataverse and Azure Functions.
 - **Monitoring and alerts:** Application Insights monitors the health of the portal and APIs. Alerts are set up for critical issues to ensure timely responses and minimize downtime.
-- **Automated backups:** Power Platform's built-in capabilities for automated backups of Dataverse data are utilized. Azure SQL Database automatically performs full, differential, and transaction log backups to protect your data.
+- **Automated backups:** Leverages Power Platform's built-in capabilities for automated backups of Dataverse data. Azure SQL Database automatically performs full, differential, and transaction log backups to protect your data.
 - **High availability**: High availability is ensured by Power Platform's built-in redundancy. Power Automate retries are implemented to allow for transient connection outages.
 
 ### Security
 
-- **Authentication:** Power Pages supports various authentication methods, including Azure Active Directory (AAD), Microsoft accounts, and external identity providers. This ensures that only authenticated users can access the portal.
-- **Role-Based Access Control (RBAC):** Implement RBAC to restrict access to specific pages, data, and functionalities based on user roles. This ensures that users only have access to the information and actions relevant to their roles.
+- **Authentication:** Power Pages supports various authentication methods, including Microsoft Entra ID, Microsoft accounts, and external identity providers. Only authenticated users can access the portal.
+- **Role-based access control (RBAC):** Implement RBAC to restrict access to specific pages, data, and functionalities based on user roles. This security measures ensures that users only have access to the information and actions relevant to their roles.
 - **Web Application Firewall (WAF):** Azure Front Door protects the portal from common web vulnerabilities and attacks, such as SQL injection and cross-site scripting (XSS).
-- **Data protection:** Azure Key Vault stores and manages sensitive information such as API keys and connection strings. This ensures that sensitive data is encrypted and securely accessed.
+- **Data protection:** Azure Key Vault stores and manages sensitive information such as API keys and connection strings. Sensitive data is encrypted and securely accessed.
 - **Access control:** Role-based access control (RBAC) restricts access to sensitive data and operations. Only authorized users can perform critical actions.
-- **Compliance:** The architecture complies with relevant data protection regulations, such as GDPR. Security policies are regularly reviewed and updated to maintain compliance.
-- **Data Loss Prevention (DLP):** Power Platform's built-in DLP policies were configured to prevent unauthorized sharing of sensitive information. These policies protected data across all Power Platform services.
-- **Microsoft Purview:** Microsoft Purview was used for data governance and compliance management. This helped in maintaining data integrity and ensuring that data handling practices met regulatory requirements.
+- **Compliance:** The architecture complies with relevant data protection regulations, such as the General Data Protection Regulation (GDPR). Security policies are regularly reviewed and updated to maintain compliance.
+- **Data Loss Prevention (DLP):** Power Platform's built-in DLP policies prevent unauthorized sharing of sensitive information. These policies protect data across all Power Platform services.
+- **Microsoft Purview:** Microsoft Purview, used for data governance and compliance management, maintains data integrity and ensures that data handling practices meet regulatory requirements.
 
 ### Operational excellence
 
-- **Automation:** Power Automate is used to streamline routine tasks such as notifications and approvals. This reduces manual effort and minimizes the risk of human error.
-- **Documentation:** Comprehensive documentation for all components and processes is maintained. This helps in troubleshooting issues and onboarding new team members.
-- **Training:** Regular training sessions are provided for users and administrators to ensure they are familiar with the system and can use it effectively.
-- **CI/CD Pipelines:** Automated CI/CD pipelines are implemented using Azure DevOps or GitHub Actions. This ensures that changes to the portal and applications are tested, validated, and deployed consistently and efficiently.
+- **Automation:** Power Automate streamlines routine tasks such as notifications and approvals, reducing manual effort and minimizing the risk of human error.
+- **Documentation:** Comprehensive documentation for all components and processes is maintained to aid troubleshooting and onboarding of new team members.
+- **Training:** Regular training sessions are provided for users and administrators to ensure they're familiar with the system and can use it effectively.
+- **CI/CD pipelines:** Automated CI/CD pipelines are implemented using Azure DevOps or GitHub Actions, to ensure that changes to the portal and applications are tested, validated, and deployed consistently and efficiently.
 - **Unit testing:** Unit tests are created for critical components to ensure that they function correctly. Automated testing is integrated into the CI/CD pipelines to catch issues early in the development process.
 
 ### Performance efficiency
 
-- **Scalability:** Power Platform and Azure's scalable infrastructure is leveraged to handle varying workloads. Auto-scaling features adjust resources based on demand, ensuring optimal performance. Power Pages CDN improves page load times.
+- **Scalability:** Power Platform and Azure's scalable infrastructure can handle varying workloads. Auto-scaling features adjust resources based on demand, ensuring optimal performance. Power Pages CDN improves page load times.
 - **Optimization:** Queries and workflows are regularly reviewed using Application Insights and optimized to improve performance and address bottlenecks.
 
 ### Experience optimization
@@ -181,4 +183,4 @@ Principal authors:
 
 ## Reference implementation
 
-A sample architecture implementation is available for reference – <https://aka.ms/pp/contoso-real-estate>
+A sample architecture implementation is available for reference in [GitHub] [https://aka.ms/pp/contoso-real-estate].

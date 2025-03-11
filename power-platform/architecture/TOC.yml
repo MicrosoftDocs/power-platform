@@ -9,14 +9,14 @@
       items:
       - name: Overview
         href: fundamentals/fundamentals-overview.md
-      - name: Automated Testing 
+      - name: Automated testing 
         href: fundamentals/testing.md
-      - name: Distributed Tracing
+      - name: Distributed tracing
         href: fundamentals/open-telemetry.md
       - name: Building Fluent UI Power Apps
         href: fundamentals/building-fluent-apps.md
       - name: ALM pipelines with automated quality gates
-        href: fundamentals/alm-with-quality-gates.md.md
+        href: fundamentals/alm-with-quality-gates.md
     - name: Reference architectures
       items:
       - name: Overview
@@ -39,9 +39,9 @@
       items:
         - name: Overview
           href: solution-ideas/overview.md
-        - name: Healthcare patient support agent
+        - name: Healthcare Patient Support Agent
           href: solution-ideas/agent-healthcare-patient-support.md
-        - name: Rental portal with AI Driven search agent
+        - name: Property rental reservation portal
           href: solution-ideas/agent-rental-portal.md
         - name: Enterprise Visual Vehicle Inspection Engine
           href: solution-ideas/app-evvie.md
