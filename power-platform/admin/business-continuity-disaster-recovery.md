@@ -82,7 +82,7 @@ Turning on disaster recovery in an environment has no impact on the environment 
 To turn on disaster recovery, complete the following steps:
 
 1.	Navigate to the list of environments within the Power Platform admin center.
-1.	Select the production type environment where you want to turn on self-service disaster recovery.
+1.	Select the production-type environment where you want to turn on self-service disaster recovery.
 1.	Select Disaster Recovery in the command bar at the top of the page. The **Disaster Recovery** pane appears.
 1.	Select the toggle to change it to **Enabled**.
 1.	Select **Save**.
