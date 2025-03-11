@@ -12,7 +12,7 @@ search.audienceType:
   - admin
 ---
 
-# Tutorial: Install an application to a target environment (preview)
+# Tutorial: Install an application to a target environment
 
 [!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
