@@ -22,8 +22,7 @@ Use Azure Virtual Network support for Power Platform to integrate Power Platform
 
 ## Architecture diagram
 
-<img src="media/secure-power-platform-access-to-azure-resources/image1.png"
-style="width:6.50662in;height:2.79451in" />
+:::image type="content" source="media/secure-power-platform-access-to-azure-resources/secure-architecture.png" alt-text="Screenshot of secure architecture." lightbox="media/secure-power-platform-access-to-azure-resources/secure-architecture.png":::
 
 ## Workflow
 
@@ -100,24 +99,22 @@ Well-Architected, a set of guiding tenets that
 improve the quality of a workload. For more information, see [Microsoft
 Power Platform Well-Architected](https://aka.ms/powa).
 
-Here's an Azure example of considerations for inspiration: [Model loan
-credit risk and default
-probability](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/ai/loan-credit-risk-analyzer-default-modeling#considerations).
+Here's an Azure example of considerations for inspiration: [Model loan credit risk and default
+probability](/azure/architecture/example-scenario/ai/loan-credit-risk-analyzer-default-modeling#considerations).
 
 ### Reliability
 
 **​Redundancy**: Power Platform infrastructure implements a primary and
 a failover region without explicit action required by the
-customer. To achieve the best resilience, we recommend setting up the vNet Support in [both paired Azure
-regions](https://learn.microsoft.com/en-us/power-platform/admin/business-continuity-disaster-recovery).
+customer. To achieve the best resilience, we recommend setting up the vNet Support in [both paired Azure regions](/power-platform/admin/business-continuity-disaster-recovery).
 For example, a Power Platform environment in West US would have a
-failover to East US. This requires setting up an Azure vNet in West US and another vNet in East US. You also need to establish a peering connection between them. This way ensures that if Power Platform fails over, the Azure resources are still accessible. Review [Sample scenarios for Virtual Network
-setup](https://learn.microsoft.com/en-us/power-platform/admin/virtual-network-support-whitepaper#sample-scenarios-for-virtual-network-set-up-and-configuration)
+failover to East US. This requires setting up an Azure vNet in West US and another vNet in East US. You also need to establish a peering connection between them. This way ensures that if Power Platform fails over, the Azure resources are still accessible. Review [Sample scenarios for Virtual Network setup](/power-platform/admin/virtual-network-support-whitepaper#sample-scenarios-for-virtual-network-set-up-and-configuration)
 for more details. The following image illustrates the use of multiple
 virtual networks to provide redundancy.
 
-<img src="media/secure-power-platform-access-to-azure-resources/image2.png" style="width:6.26806in;height:3.1943in"
-alt="A diagram of a server system AI-generated content may be incorrect." />
+
+:::image type="content" source="media/secure-power-platform-access-to-azure-resources/multiplevnet.png" alt-text="Screenshot of multiple vnet." lightbox="media/secure-power-platform-access-to-azure-resources/multiplevnet.png":::
+
 
 ### Security
 
@@ -133,8 +130,7 @@ also prevents a lower level environment for example- dev environment from
 accidentally connecting to test or production Azure resources which are
 important to help maintain a secure development lifecycle. With the
 vNet configured on a Power Platform environment, you have control over
-the outbound traffic from Power Platform. Review [securing outbound
-connections](https://learn.microsoft.com/en-us/power-platform/admin/virtual-network-support-whitepaper#best-practices-for-securing-outbound-connections-from-power-platform-services)
+the outbound traffic from Power Platform. Review [securing outbound connections](/power-platform/admin/virtual-network-support-whitepaper#best-practices-for-securing-outbound-connections-from-power-platform-services)
 for specific best practices.
 
 **​Encryption**: Data transiting from Power Platform to Azure
@@ -153,57 +149,46 @@ specific lifecycle stages in an organizations ALM processes.​ 
 **Collect performance data**: Azure virtual networks provide an
 efficient way to integrate Power Platform and Azure resources. To help
 monitor performance, vNets you can collect monitoring data from the vNet.
-Review [Azure virtual Network
-monitoring](https://learn.microsoft.com/en-us/azure/virtual-network/monitor-virtual-network-reference)
+Review [Azure virtual Network monitoring](/azure/virtual-network/monitor-virtual-network-reference)
 for more details.
 
 ## Next steps
 
-[Setup a virtual network for Power
-Platform](https://learn.microsoft.com/en-us/power-platform/admin/vnet-support-setup-configure)
+[Setup a virtual network for Power Platform](/power-platform/admin/vnet-support-setup-configure)
 
 With virtual network setup, use the following high-level
 steps to build an end to end solution that uses the vNet.
 
 1.  Azure hosted API: Create an Azure hosted REST API using your
     favorite technique for hosting a REST API in Azure. Protect this API
-    using Entra ID. For example, see [Configure your App Service or Azure
-    Functions app to use Entra
-    ID](https://learn.microsoft.com/en-us/azure/app-service/configure-authentication-provider-aad?tabs=workforce-configuration).
+    using Entra ID. For example, see [Configure your App Service or Azure Functions app to use Entra ID](/azure/app-service/configure-authentication-provider-aad?tabs=workforce-configuration).
 
 2.  Power Platform environment variables: Create environment variables
     that hold the client ID and secret from the Azure Key Vault.
-    Reference: [Use environment variables for Azure Key Vault secrets -
-    Power Apps \| Microsoft
-    Learn](https://learn.microsoft.com/en-us/power-apps/maker/data-platform/environmentvariables-azure-key-vault-secrets) 
+    Reference: [Use environment variables for Azure Key Vault secrets - Power Apps](/power-apps/maker/data-platform/environmentvariables-azure-key-vault-secrets) 
 
-3.  Custom connector [:  Create a custom
-    connector](https://learn.microsoft.com/en-us/connectors/custom-connectors/learn-with-a-tutorial)
-    for your API.
+3.  Custom connector [:  Create a custom connector](/connectors/custom-connectors/learn-with-a-tutorial) for your API.
 
     a. Define the custom connector to use OAuth2.0 with Azure Active
         Directory (Entra ID) and enable service principal support 
 
-    <img src="media/secure-power-platform-access-to-azure-resources/image3.png" style="width:3.38194in;height:1.08333in"
-    alt="A screenshot of a computer AI-generated content may be incorrect." /> 
+    :::image type="content" source="media/secure-power-platform-access-to-azure-resources/oauth2.0.png" alt-text="Screenshot of OAuth 2.0." lightbox="media/secure-power-platform-access-to-azure-resources/oauth2.0.png":::
 
-    b. The client ID and client secret can be parameterized to gather the
-        values from the environment variables created in step 2 like the
-        example below: 
 
-    <img src="media/secure-power-platform-access-to-azure-resources/image4.png"
-    style="width:4.11111in;height:0.49306in" />
+    b. The client ID and client secret can be parameterized to gather the values from the environment variables created in step 2 like the example below: 
+    
+    :::image type="content" source="media/secure-power-platform-access-to-azure-resources/clientid.png" alt-text="Screenshot of client ID" lightbox="media/secure-power-platform-access-to-azure-resources/clientid.png":::
+
+
 
 4.  Power Apps canvas app: This forms the search interface for the
     back-office
 
 ## Related resources
 
-- [Virtual Network support white
-paper](/power-platform/admin/virtual-network-support-whitepaper)
+- [Virtual Network support white paper](/power-platform/admin/virtual-network-support-whitepaper)
 
-- [Power Platform security best
-practices](/power-platform/well-architected/security)​ 
+- [Power Platform security best practices](/power-platform/well-architected/security)​ 
 
 - [Use environment variables for Azure Key Vault secrets - Power Apps](/power-apps/maker/data-platform/environmentvariables-azure-key-vault-secrets)
 
