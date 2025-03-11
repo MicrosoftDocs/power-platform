@@ -64,7 +64,7 @@ Self-service disaster recovery is a Power Platform infrastructure capability tha
 Customers typically have multiple environments of different types created in their tenant. This capability is available specifically for production-type, [Managed Environments](managed-environment-overview.md) and can be turned on for each environment. Currently, this capability isn't available for finance and operations production environments.
 
 > [!Note]
-> During the preview, there's no charge for this feature, and you can't turn it off. When the feature reaches general availability, preview customers can keep the functionality by following the cost and billing details listed above in this article or allow it to be turned off by Microsoft. There will be no impact on your primary environment location or capabilities if you choose not to upgrade during general availability.
+> During the preview, there's no charge for this feature, and you can't turn it off. When the feature reaches general availability, preview customers can keep the functionality by following the cost and billing details listed below in this article or allow it to be turned off by Microsoft. There will be no impact on your primary environment location or capabilities if you choose not to upgrade during general availability.
 
 ## Self-service disaster recovery cost and billing
 
