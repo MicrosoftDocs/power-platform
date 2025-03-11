@@ -17,13 +17,13 @@ contributors:
 
 [!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
-Businesses expect their applications and customer data to be protected and resilient during unavoidable outages and disruptions. It's important to have a documented business continuity plan that aims to minimize the effects of outages including stakeholders, processes, and specific steps to be taken to recover and resume operations.
+Businesses expect their applications and customer data to be protected and resilient during unavoidable outages and disruptions. It's important to have a documented business continuity plan that aims to minimize the effects of outages. Be sure the plan includes stakeholders, processes, and specific steps to be taken to recover and resume operations.
 
 Microsoft provides business continuity and disaster recovery (BCDR) capabilities to all [production type environments](environments-overview.md) in Dynamics 365 and Power Platform software as a service (SAAS) applications. This article describes details and practices Microsoft takes to ensure your production data is resilient during outages.
 
-The diagram below shows a typical architecture of a geography that serves a single or multiple countries. Although the geography location is all your Power Platform administrators need to be concerned with, within the geography, Microsoft deploys additional infrastructure to provide scale and added protection for your data.
+The following diagram shows a typical architecture of a geography that serves a single or multiple countries. Although the geography location is all your Power Platform administrators need to be concerned with, within the geography, Microsoft deploys more infrastructure to provide scale and added protection for your data.
 
-:::image type="content" source="media/bcdr_architecture.png" alt-text="The diagram below shows a typical architecture of a geography that serves a single or multiple countries." lightbox="media/bcdr_architecture.png":::
+:::image type="content" source="media/bcdr_architecture.png" alt-text="The diagram shows a typical architecture of a geography that serves a single or multiple countries." lightbox="media/bcdr_architecture.png":::
 
 A geography includes at least one Azure region that is typically made up of three [availability zones](/azure/reliability/availability-zones-overview?tabs=azure-cli), but no less than two availability zones. 
 
@@ -31,7 +31,7 @@ A geography includes at least one Azure region that is typically made up of thre
 
 Microsoft recognizes that infrastructure components such as network, power, or cooling can fail unexpectedly, for example, due to a lightning strike. This could affect one or more datacenters. To ensure resilience, we architected and deployed availability zones, where your environments are replicated across at least two distinct zones.
 
-Microsoft automatically detects availability zone-level failures and switches to other availability zones in the region almost instantly. This protects you from any data loss, and usually, the downtime is near zero. This in-region capability is available for production-type environments which are expected to host business-critical application processes and data. Please ensure that you protect yourself against disruption by making sure your production processes and data are not deployed in non-production types such as sandbox, developer, or trial environment types.
+Microsoft automatically detects availability zone-level failures and switches to other availability zones in the region almost instantly. This protects you from any data loss, and usually, the downtime is near zero. This in-region capability is available for production-type environments which are expected to host business-critical application processes and data. Ensure that you protect yourself against disruption by making sure your production processes and data aren't deployed in non-production types such as sandbox, developer, or trial environment types.
 
 To ensure seamless disaster recovery, availability zones provide built-in resilience without requiring manual intervention. Customer data is synchronously replicated across at least two availability zones, resulting in zero data loss. The recovery point objective is zero and the rapid recovery, or recovery time objective, is less than five minutes. If one zone experiences a failure, traffic is automatically rerouted to the remaining zones with minimal service disruption.
 
@@ -57,15 +57,15 @@ Customers that require greater distance within a geography can choose to use sel
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
-Most geographies are typically made up of region pairs with a minimum distance of 300 miles whenever possible, to protect your data in case of large-scope disasters. 
+Most geographies are typically made up of region pairs with a minimum distance of 300 miles whenever possible, to protect your data in large-scope disasters. 
 
 Disaster recovery is a Power Platform infrastructure capability that allows customers to replicate their environment across far distances and initiate environment failover between regions in a self-serve manner.
 
-Customers typically have multiple environments of different types created in their tenant. This capability is available specifically for production-type, [Managed Environments](managed-environment-overview.md) and can be turned on for each environment. Currently, this capability is not available for finance and operations production environments.
+Customers typically have multiple environments of different types created in their tenant. This capability is available specifically for production-type, [Managed Environments](managed-environment-overview.md) and can be turned on for each environment. Currently, this capability isn't available for finance and operations production environments.
 
 ## Self-service disaster recovery cost and billing
 
-Environments that activate disaster recovery replicate all environment data between two regions and can failover between the regions. Replicated data of different storage types, such as Database, Log, and File are added to Dataverse capacity consumed and billed at the same rate as the primary storage.
+Environments that activate disaster recovery replicate all environment data between two regions and can fail over between the regions. Replicated data of different storage types, such as Database, Log, and File are added to Dataverse capacity consumed and billed at the same rate as the primary storage.
 
 To use self-serve disaster recovery for an environment, the environment must first be linked to a [pay-as-you-go billing plan](pay-as-you-go-overview.md).
 
@@ -138,7 +138,7 @@ To check data replication latency at any time, you can select **Disaster Recover
 We recommend that you perform disaster recovery drills or an emergency response before a real disaster strikes, so you can document all steps required for any integration points that are external to Power Platform. Your company is then more prepared for recovery if there's a real disaster.
 
 ## Note about preview
-During the preview, there is no charge for this feature, and you can't turn it off. When the feature reaches general availability, preview customers can keep the functionality by following the cost and billing details listed above in this article or allow it to be turned off by Microsoft. There will be no impact on your primary environment location or capabilities if you choose not to upgrade during general availability.
+During the preview, there's no charge for this feature, and you can't turn it off. When the feature reaches general availability, preview customers can keep the functionality by following the cost and billing details listed above in this article or allow it to be turned off by Microsoft. There will be no impact on your primary environment location or capabilities if you choose not to upgrade during general availability.
 
 
 
