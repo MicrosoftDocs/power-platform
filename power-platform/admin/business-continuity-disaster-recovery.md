@@ -79,7 +79,7 @@ After you set up billing as outlined above, you can turn on self-service disaste
 
 Turning on disaster recovery in an environment has no impact on the environment or the data within it.
 
-To turn on disaster recovery, complete the following steps:
+To turn on disaster recovery, complete the following steps.
 
 1.	Navigate to the list of environments within the Power Platform admin center.
 1.	Select the production-type environment where you want to turn on self-service disaster recovery.
