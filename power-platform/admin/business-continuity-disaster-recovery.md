@@ -63,6 +63,9 @@ Self-service disaster recovery is a Power Platform infrastructure capability tha
 
 Customers typically have multiple environments of different types created in their tenant. This capability is available specifically for production-type, [Managed Environments](managed-environment-overview.md) and can be turned on for each environment. Currently, this capability isn't available for finance and operations production environments.
 
+> [!Note]
+> During the preview, there's no charge for this feature, and you can't turn it off. When the feature reaches general availability, preview customers can keep the functionality by following the cost and billing details listed above in this article or allow it to be turned off by Microsoft. There will be no impact on your primary environment location or capabilities if you choose not to upgrade during general availability.
+
 ## Self-service disaster recovery cost and billing
 
 Environments that activate disaster recovery replicate all environment data between two regions and can fail over between the regions. Replicated data of different storage types, such as Database, Log, and File are added to Dataverse capacity consumed and billed at the same rate as the primary storage.
@@ -137,8 +140,6 @@ To check data replication latency at any time, you can select **Disaster Recover
 
 We recommend that you perform disaster recovery drills or an emergency response before a real disaster strikes, so you can document all steps required for any integration points that are external to Power Platform. Your company is then more prepared for recovery if there's a real disaster.
 
-## Note about preview
-During the preview, there's no charge for this feature, and you can't turn it off. When the feature reaches general availability, preview customers can keep the functionality by following the cost and billing details listed above in this article or allow it to be turned off by Microsoft. There will be no impact on your primary environment location or capabilities if you choose not to upgrade during general availability.
 
 
 
