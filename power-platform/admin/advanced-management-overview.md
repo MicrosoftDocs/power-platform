@@ -3,7 +3,7 @@ title: Advanced management overview
 description: Learn how the advanced management capabilities in Power Platform.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/11/2025
+ms.date: 03/12/2025
 author: praveenmantha
 ms.custom: NewPPAC
 ms.author: pmantha 
@@ -14,6 +14,7 @@ search.audienceType:
 ---
 
 # Advanced management overview
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 The [Managed Environments](managed-environment-overview.md) concept has been reimagind in the [new and improved Power Platform admin center](new-admin-center.md). Advanced management, an offering of premium capabilities that allow admins to manage Power Platform at scale with more control, less effort, and more insights is now available.
 
