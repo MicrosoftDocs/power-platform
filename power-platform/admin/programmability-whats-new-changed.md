@@ -5,7 +5,7 @@ author: laneswenka
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 03/07/2025
+ms.date: 03/12/2025
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
@@ -15,6 +15,14 @@ search.audienceType:
 # Programmability and extensibility - What's new or changed 
 
 Learn about the latest changes and new capabilities for Power Platform API and administrator SDKs in the Power Platform.
+
+## January 2025
+
+| Item | Type | Description |
+|------|------|-------------|
+| List Environments For User | API | New endpoint [List Environments For User](/rest/api/power-platform/environmentmanagement/environments/list-environments-for-user) |
+| Get Environment By Id For User | API | New endpoint [Get Environment By Id For User](/rest/api/power-platform/environmentmanagement/environments/get-environment-by-id-for-user) |
+| Create Cross Tenant Connection Report | Bug fixes | Various bug fixes for [Create Cross Tenant Connection Report](/rest/api/power-platform/governance/cross-tenant-connection-reports/create-cross-tenant-connection-report) |
 
 ## December 2024
 
