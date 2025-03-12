@@ -28,7 +28,7 @@ Managed governance in the Power Platform provides a structured framework to ensu
 
 - [**Environment groups**](environment-groups.md): Allows administrators to organize environments into logical groups, making it easier to apply policies and manage settings across multiple environments simultaneously. It simplifies the administration process and ensures consistency in governance practices. 
 
-- **Rules and governed settings**: Administrators can define and enforce specific rules and settings that must be adhered to within each environment. This ensures that all environments comply with organizational standards and regulatory requirements, reducing the risk of non-compliance. 
+- **Rules and governed settings**: Administrators can define and enforce specific rules and settings that must be adhered to within each environment. This ensures that all environments comply with organizational standards and regulatory requirements, reducing the risk of noncompliance. 
 
 - **Delegated admin**: Allows the assignment of administrative responsibilities to specific users without granting them full admin rights. It allows for more granular control over who can manage environments, enhancing security and reducing the risk of unauthorized changes. 
 
@@ -59,7 +59,7 @@ Managed governance in the Power Platform provides a structured framework to ensu
 - **Capacity management**: Monitors and allocates resources to ensure efficient usage. It helps administrators manage capacity effectively, preventing resource shortages and optimizing performance.
 
 ## Learn more
-By leveraging these features, organizations can establish a robust governance framework that supports their strategic goals and operational needs.
+By using these features, organizations can establish a robust governance framework that supports their strategic goals and operational needs.
 
 
 
