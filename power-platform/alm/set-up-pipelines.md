@@ -72,6 +72,10 @@ The pipelines package is always being updated to give you the latest and greates
 
 For **platform hosts**, the pipelines package is updated automatically, and might not be available as soon as the manual package update is made available for custom hosts.
 
+### How can I recover unmanaged solutions from Power Platform Pipelines past deployment history?
+
+The [Import Solutions from a Pipelines Host](import-from-pipelines-host.md) feature in Power Platform allows users to recover unmanaged and managed solutions from past deployments. This capability is particularly useful in scenarios where a solution is accidentally lost or needs to be restored to a development environment. Alternatively, Pipelines admins can also use the pipeline configuration management app to download the unmanaged solution from the deployment history record easily.
+
 ## Next steps
 
 - [Extend pipelines in Power Platform](extend-pipelines.md)
