@@ -94,10 +94,8 @@ When you set up your virtual network, you need to delegate a subnet to the assoc
 
     :::image type="content" source="media/vnet-support/vnet-success-linked.png" alt-text="Screenshot showing your virtual network is linked to your environment." lightbox="media/vnet-support/vnet-success-linked.png":::
 
-### See also
+### Related content
 
 - Deploy enterprise policies with the [Microsoft.PowerPlatform/enterprisePolicies ARM template](/azure/templates/microsoft.powerplatform/enterprisepolicies?pivots=deployment-language-arm-template)
-
 - [Quickstart: Use the Azure portal to create a virtual network](/azure/virtual-network/quick-create-portal)
-
 - [Use plug-ins to extend business processes](/power-apps/developer/data-platform/plug-ins)
