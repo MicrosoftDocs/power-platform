@@ -56,7 +56,7 @@ The following four steps help you set up your virtual network.
 
 ### Set up the virtual network and subnets
 
-When you set up your virtual network, you need to delegate both a primary and a failover subnet. The failover subnet must be in a different region from the primary. For example, if your primary subnet is in WEST US, then the failover must be in EAST US.
+When you set up your virtual network, you need to delegate a subnet to the associated azure regions of your Power Platform environment. For example, if your Power Platform environment region is United States, your subnets should be created in the eastus and westus azure regions. For a list of supported regions, see [Supported regions](./vnet-support-overview.md#supported-regions).
 
 > [!NOTE]
 > Power Platform doesn't support the CENTRAL US region. [Find your virtual network location](https://github.com/microsoft/PowerApps-Samples/blob/master/powershell/enterprisePolicies/SubnetInjection/ValidateVnetLocationForEnterprisePolicy.ps1).
