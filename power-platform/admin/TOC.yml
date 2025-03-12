@@ -10,14 +10,6 @@
           items:
             - name: Advanced management overview
               href: advanced-management-overview.md
-                - name: Advanced management components
-                  items:
-                    - name: Managed security
-                      href: security/managed-security.md
-                    - name: Managed governance
-                      href: managed-governance.md
-                    - name: Managed operations
-                      href: operations/overview.md
         - name: Get started
           items:
             - name: Role of a Power Platform administrator
