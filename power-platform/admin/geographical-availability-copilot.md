@@ -4,7 +4,7 @@ description: Learn how to turn on data movement across regions for Copilots and 
 author: amchern
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/12/2025
+ms.date: 03/12/2025
 ms.subservice: admin
 ms.author: amchern
 ms.reviewer: sericks
@@ -60,9 +60,9 @@ The following table lists the regions where your Power Platform or Dynamics 365 
 
 \**If your Power Platform and Dynamics 365 environments are hosted in the EU Data Boundary, we use an Azure OpenAI endpoint in the same boundary.
 
-## Turn on data movement and Bing search for Copilots and generative AI features
+## Turn on data movement, Bing search, and M365 for Copilots and generative AI features
 
-To turn on data movement across regions and Bing search for copilots and generative AI features, you must consent to the terms of use in the Power Platform admin center. To grant consent, you must be a Power Platform administrator or Dynamics 365 administrator.
+To turn on data movement across regions, Bing search, and M365 for Copilots and generative AI features, you must consent to the terms of use in the Power Platform admin center. To grant consent, you must be a Power Platform administrator or Dynamics 365 administrator.
 
 # [New admin center](#tab/new)
 
@@ -88,6 +88,13 @@ To turn on data movement across regions and Bing search for copilots and generat
 
     > [!NOTE]
     > You can select the **Bing search** checkbox only if the **Move data across regions** checkbox is already selected.
+
+1. Review the terms of use and select the **M365 services** checkbox.
+
+    When the **M365 services** feature is turned on, users can use features powered by Microsoft 365 services.
+
+    > [!NOTE]
+    > You can select the **M365 services** checkbox only if the **Move data across regions** checkbox is already selected.
 
 1. Select **Save**.
 
@@ -115,6 +122,13 @@ To turn on data movement across regions and Bing search for copilots and generat
     > [!NOTE]
     > You can select the **Bing search** checkbox only if the **Move data across regions** checkbox is already selected.
 
+1. Review the terms of use and select the **M365 services** checkbox.
+
+    When the **M365 services** feature is turned on, users can use features powered by Microsoft 365 services.
+
+    > [!NOTE]
+    > You can select the **M365 services** checkbox only if the **Move data across regions** checkbox is already selected.
+
 1. Select **Save**.
 
 ---
@@ -134,7 +148,7 @@ More Copilots and generative AI features will be available in the future.
 | Power Apps | Build apps through conversation | No | [Build apps through conversation](/power-apps/maker/canvas-apps/ai-conversations-create-app) |
 | Power Apps | Describe a new table | No | [Describe the new table](/power-apps/maker/data-platform/create-edit-entities-portal#describe-the-new-table) |
 | Power Apps | Draft with Copilot | No | [Draft with Copilot](/power-apps/user/well-written-input-text-copilot) |
-| Power Automate | Power Automate designer copilot | No | [Get started with Copilot in cloud flows (preview)](/power-automate/get-started-with-copilot) |
+| Power Automate | Power Automate designer Copilot | No | [Get started with Copilot in cloud flows (preview)](/power-automate/get-started-with-copilot) |
 | Power Pages | Copilot | No | [Overview of AI-powered and Copilot features in Power Pages (preview)](/power-pages/configure/ai-copilot-overview) |
 | AI Builder | AI Prompts | Yes | [Overview of Prompts](/ai-builder/prompts-overview) |
 
