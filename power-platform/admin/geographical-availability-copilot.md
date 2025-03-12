@@ -93,6 +93,8 @@ To turn on data movement across regions, Bing search, and M365 for Copilots and 
 
     When the **M365 services** feature is turned on, users can use features powered by Microsoft 365 services.
 
+    To learn more about how the **M365 services** feature impacts Copilot Studio, go to [Manage activity data powered by Microsoft 365 services](/microsoft-copilot-studio/manage-activity-data-m365) and [Review agent activity](/microsoft-copilot-studio/authoring-review-activity).
+
     > [!NOTE]
     > You can select the **M365 services** checkbox only if the **Move data across regions** checkbox is already selected.
 
@@ -125,6 +127,8 @@ To turn on data movement across regions, Bing search, and M365 for Copilots and 
 1. Review the terms of use and select the **M365 services** checkbox.
 
     When the **M365 services** feature is turned on, users can use features powered by Microsoft 365 services.
+
+    To learn more about how the **M365 services** feature impacts Copilot Studio, go to [Manage activity data powered by Microsoft 365 services](/microsoft-copilot-studio/manage-activity-data-m365) and [Review agent activity](/microsoft-copilot-studio/authoring-review-activity).
 
     > [!NOTE]
     > You can select the **M365 services** checkbox only if the **Move data across regions** checkbox is already selected.
