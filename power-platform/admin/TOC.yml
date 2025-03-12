@@ -10,7 +10,7 @@
           items:
             - name: Advanced management overview
               href: advanced-management-overview.md
-                - name: Advanced management componnents
+                - name: Advanced management components
                   items:
                     - name: Managed security
                       href: security/managed-security.md
