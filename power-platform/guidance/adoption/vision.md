@@ -1,23 +1,23 @@
 ---
 title: Develop a vision for adopting Microsoft Power Platform
 description: Guidance for developing a vision with goals, reasons, and methods for adopting Microsoft Power Platform
-#customer intent: As a Power Platform user, I want to develop a vision for adopting Microsoft Power Platform so that I can align it with our organizational strategy.
+#customer intent: As a business leader, I want to develop a vision for adopting Microsoft Power Platform so that I can align it with our organizational strategy.
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: conceptual
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
-ms.date: 02/28/2025
+ms.date: 03/07/2025
 ---
 
 # Develop a vision for adopting Microsoft Power Platform
 
-"Why are we adopting Microsoft Power Platform?" is a common question for both businesses and technical stakeholders. If the answer is, "Our board (or C-level executives) told us to use low code," it might be more difficult for those businesses to achieve their expected outcomes. Similarly, organizations that start their adoption journey with a viewpoint focused on governance and control often take longer to reach success than organizations that start their journey with commitment and a shared purpose for why low code is important to the organization.
+"Why are we adopting Microsoft Power Platform?" is a common question for both businesses and technical stakeholders. If the answer is, "Our board [or C-level executives] told us to use low code," it might be more difficult for those businesses to achieve their expected outcomes. Similarly, organizations that start their adoption journey with a viewpoint focused on governance and control often take longer to reach success than organizations that start their journey with commitment and a shared purpose for why low code is important to the organization.
 
 Digital transformation is largely nontechnical, focusing on cultural, organizational, and process changes. This guidance covers important aspects in crafting a vision to ensure a successful transformation. Defining a vision and having clear objectives helps you achieve positive business outcomes and alignment with your organizational strategy.
 
-## A structured framework for creating your Power Platform Adoption vision
+## Adopt a structured framework for your vision
 
 Adopting Power Platform can transform businesses in many ways. A vision statement gives clear direction, aligns efforts, and motivates stakeholders. Creating a vision for low-code and AI adoption is a collaborative effort that involves input from various team members over several days to ensure it resonates with the entire organization.
 
@@ -137,7 +137,7 @@ Here are some examples of measurable key results:
 
 Review [common goals when adopting Power Platform](common-vision/vision-overview.md) to get more inspiration for measurable key results based on why you're adopting Power Platform.
 
-### Aligning to organization direction
+### Align to organization direction
 
 Aligning Power Platform adoption with the organizational direction involves a strategic approach to ensure that the platform's capabilities are fully used to support the company's overall goals and objectives.
 
@@ -181,10 +181,8 @@ Continuously monitor the progress of your Power Platform adoption strategy again
 
 Understanding the objectives and goals behind your organization's Power Platform adoption can help you achieve more successful business outcomes. Review common objectives, goals, and initiatives to help drive alignment with your stakeholders and create positive business outcomes.
 
-> [!div class="nextstepaction"]
-> [Review common objectives and goals](common-vision/vision-overview.md)
+Learn more: [Review common objectives and goals](common-vision/vision-overview.md)
 
 Measuring business value in Power Platform is an important aspect of ensuring success and return on investment. Learn methods and tools to measure business value, how to measure value at scale, and how to communicate business value to your stakeholders.
 
-> [!div class="nextstepaction"]
-> [Measure and communicate business value](business-value.md)
+Learn more: [Measure and communicate business value](business-value.md)

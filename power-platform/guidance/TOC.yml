@@ -19,7 +19,7 @@
               href: adoption/strategy-best-practices.md
             - name: Assess Power Platform adoption strategy
               href: adoption/take-assessment.md
-            - name: Define vision, metrics and goals
+            - name: Define vision, metrics, and goals
               href: adoption/vision.md
             - name: Common goals
               items: 
@@ -27,7 +27,7 @@
                   href: adoption/common-vision/vision-overview.md
                 - name: Establish a Center of Excellence with governance patterns and practices
                   href: adoption/common-vision/establish-coe.md
-                - name: Measure value and realize return of investment
+                - name: Measure value and realize return on investment
                   href: adoption/common-vision/realize-value.md
                 - name: Get leadership buy-in and organization alignment
                   href: adoption/common-vision/get-leadership-buyin.md
@@ -39,12 +39,16 @@
                   href: adoption/common-vision/enhance-opex.md
                 - name: Improve employee experience
                   href: adoption/common-vision/improve-employee-ex.md
-            - name: Measure and communicate business value
-              href: adoption/business-value.md
-            - name: Utilize business value plays
-              href: adoption/value-plays.md
-            - name: Get executive sponsorship
-              href: adoption/executive-sponsorship.md
+            - name: Measure business value
+              items:
+              - name: Measure and communicate business value
+                href: adoption/business-value.md
+              - name: Choose methods and tools
+                href: adoption/business-value-methods.md
+              - name: Use business value plays
+                href: adoption/value-plays.md
+              - name: Get executive sponsorship
+                href: adoption/executive-sponsorship.md
             - name: Establish a Center of Excellence
               href: adoption/coe.md
         - name: Plan
