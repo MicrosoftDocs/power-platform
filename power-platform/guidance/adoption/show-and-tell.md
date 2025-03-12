@@ -16,11 +16,11 @@ search.audienceType:
 
 When your organization adopts Microsoft Power Platform, sharing success stories internally becomes a powerful tool to foster engagement, inspire innovation, and drive adoption. Success stories highlight the tangible benefits of the platform, showcase the achievements of your makers, and create a culture of recognition and continuous improvement.
 
-1. **Inspiration and motivation**: Success stories serve as a source of inspiration for other team members. They demonstrate what is possible with Power Platform and motivate others to explore and leverage its capabilities.
+1. **Inspiration and motivation**: Success stories serve as a source of inspiration for other team members. They demonstrate what is possible with Power Platform and motivate others to explore and use its capabilities.
 1. **Knowledge sharing**: By sharing detailed accounts of successful projects, you facilitate knowledge transfer within the organization. This helps others learn from the experiences and best practices of their peers.
 1. **Recognition and morale boost**: Celebrating the achievements of individuals and teams boosts morale and fosters a sense of pride and accomplishment. Recognized employees are more likely to stay engaged and committed to their work.
 1. **Building a community**: Success stories help build a sense of community among makers. They create connections and encourage collaboration, leading to a more cohesive and supportive environment.
-1. **Driving adoption**: Highlighting successful use cases of Power Platform can accelerate the adoption across the organization. When employees see the positive impact on their peers' work, they are more likely to embrace the platform themselves.
+1. **Driving adoption**: Highlighting successful use cases of Power Platform can accelerate the adoption across the organization. When employees see the positive affect on their peers' work, they're more likely to embrace the platform themselves.
 
 ## How to identify valuable success stories
 
@@ -28,7 +28,7 @@ To ensure the success stories you share are impactful, consider the following cr
 
 1. **Relevance**: Choose stories that are relevant to the organization's goals and the interests of your audience. Focus on projects that address key business challenges or opportunities.
 1. **Impact**: Highlight stories that demonstrate significant positive outcomes, such as increased efficiency, cost savings, improved customer satisfaction, or innovative solutions.
-1. **Diversity**: Share a variety of stories that showcase different aspects of Power Platform, and different use cases. Highlight contributions from makers with diverse backgrounds, such as those from business and pro-dev environments. This helps illustrate the platform's versatility and its ability to cater to a wide range of skills and perspectives.
+1. **Diversity**: Share various stories that showcase different aspects of Power Platform, and different use cases. Highlight contributions from makers with diverse backgrounds, such as those from business and pro-dev environments. This helps illustrate the platform's versatility and its ability to cater to a wide range of skills and perspectives.
 1. **Engagement**: Select stories that involve active collaboration and engagement from multiple stakeholders. These stories emphasize the collaborative nature of the platform and its ability to bring teams together.
 1. **Scalability**: Highlight projects that have the potential to be scaled or replicated across the organization. This encourages others to adopt similar approaches and solutions.
 
@@ -40,7 +40,7 @@ There are several effective ways to share success stories within your organizati
 
 Organize town hall meetings or webinars where makers can present their projects and share their success stories. This provides a platform for live interaction and Q&A sessions.
 
-If you want to create more excitement in your organization and inspire more people to join your Power Platform community, a solution showcase is a great way to do so. Teams meet to demo what they've built, share problems they've solved, and show the impact they've created with the apps they've made.
+If you want to create more excitement in your organization and inspire more people to join your Power Platform community, a solution showcase is a great way to do so. Teams meet to demo what they built, share problems they solved, and show the impact they created with the apps they made.
 
 It's an opportunity for other teams and makers to see the impact of digital culture, and the business value they could add by joining the Power Platform community.
 
@@ -48,7 +48,7 @@ Here are a few lessons for organizing successful and impactful show-and-tell ses
 
 - Make them part of existing company events, such as townhall meetings or more general tech showcases. This would ensure a wide variety of people attend and see your apps.
 
-- Encourage a variety of different makers and problems to be showcased; don't show five "form over paper" apps, but focus on different use cases—an app, a flow, a dashboard, an agent.
+- Encourage various different makers and problems to be showcased; don't show five "form over paper" apps, but focus on different use cases—an app, a flow, a dashboard, an agent.
 
 - Ensure makers with different backgrounds attend to emphasize that Microsoft Power Platform is for everyone.
 
@@ -74,7 +74,7 @@ Here are some tips for writing and sharing success stories:
 
 - Provide quotes from the leadership team and users; this is a great way to highlight the impact of your work.
 
-- Use a format that makes sense for your story, but here is an example format that we use for our public case studies:
+- Use a format that makes sense for your story, but here's an example format that we use for our public case studies:
 
   - **Overview**: Summary of what was accomplished at a high level.
   

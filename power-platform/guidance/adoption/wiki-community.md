@@ -39,7 +39,7 @@ A [SharePoint communication site](https://support.microsoft.com/office/plan-your
 Here are a few tips on what the SharePoint communication site should include:
 
 - **Announcements**: Post important updates about new features in Power Platform or upcoming events directly on SharePoint so that all members are informed promptly.
-- **Success stories**: Highlight success stories from within your community showcasing how different users have leveraged Power Platform effectively in their projects.
+- **Success stories**: Highlight success stories from within your community showcasing how different users have used Power Platform effectively in their projects.
 - **Policies and guidelines:** Share best practices, guidelines, and policies related to the use of Power Platform to ensure that all members are aligned and informed.
   - **[Environment strategy](../white-papers/environment-strategy.md)**: Share what environments are available and how to request access to existing environments or request new environments; additionally, ensure makers know the boundaries of an environments licensing, security, and connectors.
   - **[Data loss prevention (DLP) policy strategy](dlp-strategy.md)**: Share which connectors are available in which environments and how to request more connectors or a new environment for a specific project.
@@ -63,15 +63,13 @@ Microsoft Teams is a versatile tool that can be used for various administrative 
 - Administration: Use Teams to manage community administration tasks, such as coordinating with organizers and tracking progress on community initiatives.
 - Meetings: Host virtual meetings and workshops on Teams to facilitate real-time collaboration and learning. This is especially useful for remote or geographically dispersed community members.
 
-Building the right infrastructure and using the appropriate tools are essential for supporting a Power Platform community. By leveraging tools like Viva Engage, Forms, SharePoint, and Teams, you can create a robust support system that facilitates communication, collaboration, feedback collection, and information dissemination. Each tool serves a specific purpose, from fostering conversations and planning events to collecting feedback and managing documentation. By integrating these tools effectively, you can ensure that your Power Platform community thrives and continues to grow.
-
 ## Catalog in Power Platform
 
 Organizations where developers and makers build and share customized and reusable components and templates get more value from Power Platform. Successful organizations adopt a fusion teams model where pro-developers, makers, and admins all work together to deliver the best solutions for their users, and derive the highest value possible from Power Platform. Learn more about using [sharing reusable templates and components](reusable.md).
 
 ## Nurture components in the CoE Starter Kit
 
-The Center of Excellence (CoE) Starter Kit includes [nurture components](/power-platform/guidance/coe/nurture-components) designed to support and develop the Power Platform community within an organization. These components provide essential resources such as the **Video Hub**, which centralizes video content for training and best practices, and the **Training in a day** solution helps manage internal training events and registrations. The **Maker Assessment** and **Pulse Survey** components help gauge the skills and engagement levels of community members. By exploring these nurture components, organizations can effectively onboard new makers, share best practices, and foster a culture of continuous learning and innovation.
+The Center of Excellence (CoE) Starter Kit includes [nurture components](/power-platform/guidance/coe/nurture-components) designed to support and develop the Power Platform community within an organization. These components provide essential resources such as the **Video Hub**, which centralizes video content for training and best practices, and the **Training in a day** solution helps manage internal training events and registrations. The **Maker Assessment** and **Pulse Survey** components help gauge the skills and engagement levels of community members. By exploring these components, organizations can effectively onboard new makers, share best practices, and foster a culture of continuous learning and innovation.
 
 ## Get started with the Power Platform communication site template
 
@@ -83,13 +81,13 @@ The Power Platform communication site template is a SharePoint Online template t
 The steps in this section take you through the process of preparing and running the PowerShell scripts.
 
 > [!NOTE]
-> Your organization may restrict your ability to run PowerShell scripts, or you may need to work with your SharePoint Online administration team to run the PowerShell script.
+> Your organization might restrict your ability to run PowerShell scripts, or you might need to work with your SharePoint Online administration team to run the PowerShell script.
 
 #### Download the assets
 
 1. [Download](https://aka.ms/pphub-download) the Power Platform communication site template from GitHub.
 1. Extract the contents of the PowerPlatformHub.zip folder to a location on your PC.
-1. Copy the path to the folder you extracted the files to. You'll need this path when you run the PowerShell scripts to deploy the template.
+1. Copy the path to the folder you extracted the files to. You need this path when you run the PowerShell scripts to deploy the template.
 
 #### Prerequisites to deploy the Power Platform communication site template
 
@@ -97,7 +95,7 @@ The scripts to deploy the Power Platform communication site template has a depen
 
 1. [Download and install](/power-platform/admin/powerapps-powershell#installation) Microsoft.PowerApps.Administration.PowerShell
 1. [Download and install](https://pnp.github.io/powershell/articles/installation.html) PnP PowerShell
-1. [Register an Entra ID application to use with PnP PowerShell](https://pnp.github.io/powershell/articles/registerapplication.html)
+1. [Register a Microsoft Entra ID application to use with PnP PowerShell](https://pnp.github.io/powershell/articles/registerapplication.html)
 
 The PowerShell commands in the PnP PowerShell module require Windows PowerShell version 7 or above.
 
@@ -126,8 +124,8 @@ $timeZone = 2
 ```
 
 1. **$adminTenantName** - the name of your SharePoint [root site](/sharepoint/modern-root-site#whats-the-root-site), if your root site is *contoso*.sharepoint.com enter *contoso*.
-1. **$companyName** - your organization name, this name will be used in the templates page navigation, page title and sample pages.
-1. **$lcid** - enter a [locale](/openspecs/office_standards/ms-oe376/6c085406-a698-4e12-9d4d-c3b0ee3dbc4a) to defines the language for the SharePoint Online site, enter *1033* for English (United States).
+1. **$companyName** - your organization name, this name is used in the templates page navigation, page title, and sample pages.
+1. **$lcid** - enter a [locale](/openspecs/office_standards/ms-oe376/6c085406-a698-4e12-9d4d-c3b0ee3dbc4a) to define the language for the SharePoint Online site, enter *1033* for English (United States).
 1. **$newSiteURL** - replace  */powerplatformhub* with your chosen Power Platform communication site URL.
 1. **$ownerEmail** - update with admin email address.
 1. **$siteTitle** - replace with your chosen Power Platform communication site title.
@@ -143,7 +141,7 @@ $tenantId = '00000000-0000-0000-0000-000000000000'
 
 1. **$newSiteURL** - the URL of the Data Loss Prevention policies page on the SharePoint site.
 2. **$supportEmail** - the email address of the support department.
-3. **$tenantId** - the GUID of your tenant. Learn how to find your tenant id [here](/onedrive/find-your-office-365-tenant-id).
+3. **$tenantId** - the GUID of your tenant. Learn how to find your tenant ID [here](/onedrive/find-your-office-365-tenant-id).
 
 ### Run the PowerShell scripts
 
@@ -168,27 +166,27 @@ The PowerShell scripts have been written to catch any failures. However, if you 
 
 #### Can't run PnP PowerShell scripts
 
-If you can't run PnP PowerShell scripts, make sure your PowerShell version is 7 or above and make sure you have [registered an Entra ID application to use with PnP PowerShell](https://pnp.github.io/powershell/articles/registerapplication.html).
+If you can't run PnP PowerShell scripts, make sure your PowerShell version is 7 or higher and make sure you have [registered a Microsoft Entra ID application to use with PnP PowerShell](https://pnp.github.io/powershell/articles/registerapplication.html).
 
 #### Can't connect to SharePoint Online
 
-If you can't connect to SharePoint Online, this could be caused by PnP PowerShell not being registered.  You will need to register by following the steps [in this document](https://pnp.github.io/powershell/articles/authentication.html).
+If you can't connect to SharePoint Online, this could be caused by PnP PowerShell not being registered. You'll need to register by following the steps [in this document](https://pnp.github.io/powershell/articles/authentication.html).
 
 #### Can't run the script
 
-If you get an error message telling you the PowerShell script can't be loaded as it is not signed, you have to [update the execution policy](/powershell/module/microsoft.powershell.security/set-executionpolicy) to [remove the execution policy from the current user](/powershell/module/microsoft.powershell.security/set-executionpolicy#example-5-remove-the-execution-policy-for-the-current-user).
+If you get an error message telling you the PowerShell script can't be loaded as it isn't signed, you have to [update the execution policy](/powershell/module/microsoft.powershell.security/set-executionpolicy) to [remove the execution policy from the current user](/powershell/module/microsoft.powershell.security/set-executionpolicy#example-5-remove-the-execution-policy-for-the-current-user).
 
 #### My tenant uses SharePoint Vanity URLs
 
-There are few companies around the world that use vanity URLs. If you are one of these companies, make sure to hard code the URLs in the `$adminURL` & `$newSiteURL` variables in the scripts. This will make sure the script will connect to the right tenant and site.
+There are few companies around the world that use vanity URLs. If you're one of these companies, make sure to hard code the URLs in the `$adminURL` & `$newSiteURL` variables in the scripts. This makes sure the script connects to the right tenant and site.
 
 #### Still seeing issues?
 
-If you continue to face issues with the setup, have questions or would like to raise feature requests please report your issues here: [aka.ms/pphub-issues](https://aka.ms/pphub-issues).
+If you continue to face issues with the setup, have questions or would like to raise feature requests report your issues here: [aka.ms/pphub-issues](https://aka.ms/pphub-issues).
 
 ### Configuration
 
-The Power Platform communication site contains placeholder text and ideas for your own content. Update this content with your own processes, links and images before the site is ready for use.
+The Power Platform communication site contains placeholder text and ideas for your own content. Update this content with your own processes, links, and images before the site is ready for use.
 
 After deployment, navigate to **Settings (Gear icon) > Site contents > Site Pages** to get started, and modify:
 
@@ -196,7 +194,7 @@ After deployment, navigate to **Settings (Gear icon) > Site contents > Site Page
 - **Consultation-and-Development.aspx**: If you have an internal Power Platform development team, provide their contact details, and ways to engage here. If not, delete this page!
 - **Data-Loss-Prevention-(DLP)-Policies.aspx**: Share which connectors are available in which environments and how to request more connectors or a new environment for a specific project. We have added content of a typical DLP policy strategy here for you to get started with. Scan the document for placeholders for *Company specific instructions that you need to update with your own processes and guidelines.
     ![Look out for placeholders to update the communication site with your own content](media/wiki-change.png "Look out for placeholders to update the communication site with your own content")
-- **Environments.aspx**: Share what environments are available and how to request access to existing environments or request new environments; additionally, ensure makers know the boundaries of environments with regard to licensing, security for environments, and connectors. We have added content of a typical environment strategy here for you to get started with. Scan the document for placeholders for *Company specific instructions that you need to update with your own processes and guidelines.
+- **Environments.aspx**: Share what environments are available and how to request access to existing environments or request new environments; additionally, ensure makers know the boundaries of environments regarding licensing, security for environments, and connectors. We have added content of a typical environment strategy here for you to get started with. Scan the document for placeholders for *Company specific instructions that you need to update with your own processes and guidelines.
 - **Guided-Learning.aspx**: This page provides a summary of Power Platform learning paths available on Microsoft Learn. If you're running internal training events, add them here.
 - **Internal-Communities.aspx**: Update this page to add links to your Power Platform communities - we recommend including a Yammer web part here.
 - **Power-Platform-at-{companyName}.aspx**: Share what a maker is responsible for—for example

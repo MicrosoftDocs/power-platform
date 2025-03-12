@@ -1,6 +1,6 @@
 ---
 title: "Onboard new community members and makers"
-description: "A great way of embracing new users and making sure they get off to a good start is sending them a **welcome email** that includes validated resources, company-specific resources and links to upcoming internal events available to help them with their learning journey."
+description: "A great way of embracing new users and making sure they get off to a good start is sending them a **welcome email** that includes validated resources, company-specific resources, and links to upcoming internal events available to help them with their learning journey."
 author: manuelap-msft
 
 ms.component: pa-admin
@@ -21,17 +21,17 @@ Effective onboarding is essential to integrate new Power Platform makers into yo
 1. **Build momentum**: Quickly integrating new members into the community is essential for maintaining their initial enthusiasm. Providing immediate access to resources, introductory sessions, and quick wins can help new makers feel valued and motivated to engage further.
 1. **Reduce turnover**: A streamlined onboarding process reduces the likelihood of new members feeling overwhelmed or disconnected. By offering clear guidance and support, you can ensure that new makers feel confident and capable, decreasing the chances of early dropout.
 1. **Cultivate culture**: Instilling the community's values and practices from the start helps new members align with the community's ethos. This cultural integration fosters a sense of belonging and encourages adherence to community norms and standards.
-1. **Clarify communication channels**: Clear communication is vital for new members to understand where, when,, and how to get help. Providing a roadmap of communication channels and resources ensures that new makers can easily navigate the community and access support when needed.
+1. **Clarify communication channels**: Clear communication is vital for new members to understand where, when, and how to get help. Providing a roadmap of communication channels and resources ensures that new makers can easily navigate the community and access support when needed.
 
 ## The maker journey
 
-The goal is to guide community members from being passive participants to becoming engaged and happy contributors. Some members may progress to influencing community initiatives or joining the community team, while others might remain less active. The key is to ensure that the onboarding process equips all members with the tools and support they need to achieve their desired level of involvement and satisfaction within the community.
+The goal is to guide community members from being passive participants to becoming engaged and happy contributors. Some members might progress to influencing community initiatives or joining the community team, while others might remain less active. The key is to ensure that the onboarding process equips all members with the tools and support they need to achieve their desired level of involvement and satisfaction within the community.
 
 1. **Novice navigator**: At this stage, new members are exploring the community and familiarizing themselves with the basics of Power Platform. Providing introductory resources and mentorship can help them gain confidence and knowledge.
 1. **Engaged explorer**: As members become more comfortable, they start to engage more actively, seeking out learning opportunities and participating in discussions. Encouraging this engagement through interactive content and community events is key.
 1. **Active contributor**: Members at this stage begin to contribute their knowledge and skills to the community. Recognizing and celebrating their contributions can motivate them to continue sharing and collaborating.
 1. **Community builder**: These members take on more significant roles, such as organizing events or leading projects. Providing leadership opportunities and support can help them grow and inspire others.
-1. **Influential leader**: At the highest level, members influence community initiatives and may become part of the community team. Empowering these leaders to drive change and mentor others ensures the community's ongoing growth and success.
+1. **Influential leader**: At the highest level, members influence community initiatives and might become part of the community team. Empowering these leaders to drive change and mentor others ensures the community's ongoing growth and success.
 
 By laying the foundations for a streamlined onboarding journey, you can guide new Power Platform makers through these stages, helping them become happy, engaged, and influential members of your community.
 
@@ -75,11 +75,11 @@ In the fourth week of the onboarding process, the focus is on encouraging new me
 
 ### Week 5: Feedback and support
 
-In the fifth week of the onboarding process, the focus is on gathering feedback from new members and providing additional support to ensure their continued engagement. 
+In the fifth week of the onboarding process, the focus is on gathering feedback from new members and providing more support to ensure their continued engagement. 
 
-**Start of week: Personalized check-in**: At the beginning of the week, send personalized messages to each new member asking for feedback on their experience so far. This check-in helps identify any challenges they may be facing and provides an opportunity to address their needs and concerns.
+**Start of week: Personalized check-in**: At the beginning of the week, send personalized messages to each new member asking for feedback on their experience so far. This check-in helps identify any challenges they might be facing and provides an opportunity to address their needs and concerns.
 
-**Mid-week: Feature member stories**: Mid-week, share stories or testimonials from members about what they’ve gained from the community. Highlighting these experiences can inspire new members and demonstrate the value of active participation. It also fosters a sense of community by showcasing the diverse benefits that members have experienced.
+**Mid-week: Feature member stories**: Mid-week, share stories, or testimonials from members about what they’ve gained from the community. Highlighting these experiences can inspire new members and demonstrate the value of active participation. It also fosters a sense of community by showcasing the diverse benefits that members have experienced.
 
 ### Week 6: Integration and ongoing engagement
 
@@ -93,7 +93,7 @@ By incorporating these activities, new Power Platform makers can feel fully inte
 
 ## Drive continuous engagement
 
-Community engagement isn’t just a one-time effort. For new Power Platform makers, continuous engagement is important to ensure they remain active and productive members of the community. This article outlines activities that attracht new members and keeping them engaged:
+Community engagement isn’t just a one-time effort. For new Power Platform makers, continuous engagement is important to ensure they remain active and productive members of the community. This article outlines activities that attract new members and keeping them engaged:
 
 ### Grow your community
 
@@ -124,7 +124,7 @@ Keep your community members engaged through a strategic content plan
 | Frequency  | Content type | Description |
 |---|---|---|
 | Weekly     | Discussion threads  | Initiate weekly themed discussion threads on rotating topics relevant to the community's focus |
-| Bi-weekly  | Member spotlight    | Feature a community member's achievements, contributions or success story   |
+| Bi-weekly  | Member spotlight    | Feature a community member's achievements, contributions, or success story   |
 | Monthly    | Community call      | Monthly sessions with an expert or guest speaker on key topics of interest  |
 | Quarterly  | Network meetups     | Virtual or in-person meetups for members to connect and network             |
 | Annually   | Community awards    | Recognize and celebrate outstanding contributions and achievements within the community |
