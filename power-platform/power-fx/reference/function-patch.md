@@ -41,6 +41,8 @@ Use **Patch** with the **[Defaults](function-defaults.md)** function to create r
 
 `Patch( Customers, Defaults( Customers ), { Name: "Contoso" } )`
 
+> When you patch a collection using a record from a data source with default values, the patch operation updates the collection with both the specified patch values and the default values from the data source.
+
 Even if you're not working with a data source, you can use **Patch** to merge two or more records. For example, this formula merges two records into one that identifies both the phone number and the location for Contoso:
 
 `Patch( { Name: "Contoso", Phone: "1-212-555-1234" }, { Name: "Contoso", Location: "Midtown" } )`
