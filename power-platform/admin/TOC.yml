@@ -792,7 +792,7 @@
               href: logging-powerapps.md
             - name: Power Automate activity logging
               href: logging-power-automate.md
-            - name: Power Pages activity logging (preview)
+            - name: Power Pages activity logging
               href: logging-power-pages.md
             - name: Power Platform connector activity logging
               href: connector-events-power-platform.md
