@@ -7,6 +7,7 @@ ms.reviewer: sericks
 ms.topic: conceptual
 ms.subservice: admin
 ms.author: iyanni
+ms.custom: NewPPAC
 search.audienceType: 
  - admin
 contributors:
