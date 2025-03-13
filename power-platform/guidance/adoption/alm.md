@@ -69,7 +69,7 @@ Take advantage of [gated deployments](/power-platform/alm/delegated-deployments-
 
 ## Monitor and optimize performance
 
-Continuous monitoring of application performance helps identify bottlenecks and areas for improvement. Track performance metrics, user activity, and error logs by using tools like Power Platform Analytics and Application Insights. Regularly review these insights to optimize application performance and enhance user experience.
+Continuous monitoring of application performance helps identify bottlenecks and areas for improvement. Track performance metrics, user activity, and error logs by using tools like Power Platform Analytics, [Power Platform Monitor](/power-platform/admin/monitoring/monitoring-overview), and Application Insights. Regularly review these insights to optimize application performance and enhance user experience.
 
 The [Deployment page](/power-platform/alm/admin-deployment-hub) in the Power Platform admin center provides a streamlined experience to help administrators navigate the complexities of managing Power Platform application lifecycle management (ALM) workloads, including managing pipelines deployments at enterprise scale. Admins have visibility to all the deployments in their tenant and can approve deployment requests and troubleshoot issues.
 
