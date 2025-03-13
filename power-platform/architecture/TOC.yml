@@ -2,7 +2,7 @@
   href: ./index.yml
   items:
     - name: Overview
-      href: overview.md
+      href: architecture-center-overview.md.md
     - name: What's new
       href: whats-new.md
     - name: Architecture fundamentals
@@ -20,7 +20,7 @@
     - name: Reference architectures
       items:
       - name: Overview
-        href: reference-architectures/overview.md
+        href: reference-architectures/reference-architecture-overview.md
       - name: Document processing with AI Builder
         href: reference-architectures/ai-document-processing.md
       - name: Predictive data analysis
@@ -38,7 +38,7 @@
     - name: Solution ideas
       items:
         - name: Overview
-          href: solution-ideas/overview.md
+          href: solution-ideas/solution-idea-overview.md
         - name: Healthcare Patient Support Agent
           href: solution-ideas/agent-healthcare-patient-support.md
         - name: Property rental reservation portal

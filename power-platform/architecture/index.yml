@@ -20,7 +20,7 @@ highlightedContent:
     # Card
     - title: Browse architectures
       itemType: architecture
-      url: reference-architectures/overview.md
+      url: reference-architectures/reference-architecture-overview.md
     # Card
     - title: See what's new
       url: whats-new.md
@@ -55,7 +55,7 @@ productDirectory:
         - text: Secure Power Platform access to Azure resources
           url: reference-architectures/secure-access-azure-resources.md
         - text: More...
-          url: reference-architectures/overview.md
+          url: reference-architectures/reference-architecture-overview.md
     # Card
     - title: Solution ideas
       imageSrc: /office/media/icons/lightbulb-idea-capture.png
@@ -67,7 +67,7 @@ productDirectory:
         - text: Enterprise Visual Vehicle Inspection Engine
           url: solution-ideas/app-evvie.md
         - text: More...
-          url: solution-ideas/overview.md
+          url: solution-ideas/solution-idea-overview.md
 
 # conceptualContent section (optional)
 conceptualContent:
