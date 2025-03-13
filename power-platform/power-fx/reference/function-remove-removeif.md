@@ -19,7 +19,23 @@ contributors:
 
 # Remove and RemoveIf functions
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
+[!INCLUDE[function-remove-removeif-applies-to](includes/function-remove-removeif-applies-to.md)]
+
+[!INCLUDE[function-remove-removeif-applies-to](includes/function-remove-removeif-applies-to.md)]
+
+[!INCLUDE[function-remove-removeif-applies-to](includes/function-remove-removeif-applies-to.md)]
+
+[!INCLUDE[function-remove-removeif-applies-to](includes/function-remove-removeif-applies-to.md)]
+
+[!INCLUDE[function-remove-removeif-applies-to](includes/function-remove-removeif-applies-to.md)]
+
+[!INCLUDE[function-remove-removeif-applies-to](includes/function-remove-removeif-applies-to.md)]
+
+[!INCLUDE[function-remove-removeif-applies-to](includes/function-remove-removeif-applies-to.md)]
+
+[!INCLUDE[function-remove-removeif-applies-to](includes/function-remove-removeif-applies-to.md)]
+
+
 
 Removes [records](/power-apps/maker/canvas-apps/working-with-tables#records) from a [data source](/power-apps/maker/canvas-apps/working-with-data-sources).
 
@@ -272,3 +288,11 @@ Sample collection is created that you can use in the following example.
 1. Close the app preview.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+

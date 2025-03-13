@@ -1,6 +1,6 @@
 Set-StrictMode -Version 2.0
 
-$powerFxPath = "./power-platform/power-fx"
+$powerFxPath = "$pwd/power-platform/power-fx"
 
 $appliesToHosts = @{ 
     "canvas apps"               = "canvas-apps"
@@ -58,6 +58,23 @@ function error {
 }
 
 foreach ( $jsonFile in Get-ChildItem "$powerFxPath/funcjson" -Filter *.json ) {
+    $errataMinus = @()
+    $errataPlus = @()
+    $errataFile = $jsonFile.FullName + ".errata"
+    if ( Test-Path $errataFile )
+    {
+        $errataContent = [System.IO.File]::ReadAllText( $errataFile, $enc )
+        ForEach ($errata in $($errataContent -split "`n"))
+        {
+            if ($errata -match '^\-\s(\w+)') {
+                $errataMinus += $matches[1]           
+            }
+            if ($errata -match '^\+\s*(\w+)') {
+                $errataPlus += $matches[1]                
+            }            
+        }
+    }
+
     $errorFile = $jsonFile.Name
 
     $jsonFile.Name -match '^(.+)\.json' | out-null
@@ -68,9 +85,18 @@ foreach ( $jsonFile in Get-ChildItem "$powerFxPath/funcjson" -Filter *.json ) {
 
     $jsonContent = [System.IO.File]::ReadAllText( $jsonFile.FullName, $enc )
     $json = ConvertFrom-Json $jsonContent -AsHashtable
+    $jsonFunctionNames = $json.FunctionNames    
+    foreach ($errata in $errataPlus) {
+        if ($json.FunctionNames -notcontains $errata) {
+            $jsonFunctionNames += $errata;
+        }
+    }
 
     $jsonFuncs[$appliesToName] = @()
-    foreach ( $functionName in $json.FunctionNames ) {
+    foreach ( $functionName in $jsonFunctionNames ) {
+        if ($errataMinus -contains $functionName) {
+            continue;
+        }
         if ( $functionName -match '(\w+)\.' ) {
             if ( -not ($jsonFuncs[$appliesToName] -contains $matches[1])) {
                 $jsonFuncs[$appliesToName] += $matches[1]
@@ -167,7 +193,9 @@ foreach ( $refFile in Get-ChildItem "$powerFxPath/reference" -Filter *.md ) {
     $refIncludesPattern = '(?m)^\[!INCLUDE\[.*\]\(includes/(.*-applies-to\.md)\)\]'
     if ($refContent -match $refIncludesPattern) {
         $includeFileName = $matches[1]
-        $includeContent = [System.IO.File]::ReadAllText( "$powerFxPath/reference/includes/$includeFileName", $enc )    
+        $file = "$powerFxPath/reference/includes/$includeFileName"
+
+        $includeContent = [System.IO.File]::ReadAllText( $file, $enc )    
 
         $refAppliesTo = Select-String ':::image[^:]*source="../media/yes-icon.svg"[^:]*:::\s*([^|:\n\r]+)' -input $includeContent -AllMatches
         $appliesToList = @()

@@ -19,7 +19,23 @@ contributors:
 
 # Color enumeration and ColorFade, ColorValue, and RGBA functions
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Pages :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
+[!INCLUDE[function-colors-applies-to](includes/function-colors-applies-to.md)]
+
+[!INCLUDE[function-colors-applies-to](includes/function-colors-applies-to.md)]
+
+[!INCLUDE[function-colors-applies-to](includes/function-colors-applies-to.md)]
+
+[!INCLUDE[function-colors-applies-to](includes/function-colors-applies-to.md)]
+
+[!INCLUDE[function-colors-applies-to](includes/function-colors-applies-to.md)]
+
+[!INCLUDE[function-colors-applies-to](includes/function-colors-applies-to.md)]
+
+[!INCLUDE[function-colors-applies-to](includes/function-colors-applies-to.md)]
+
+[!INCLUDE[function-colors-applies-to](includes/function-colors-applies-to.md)]
+
+
 
 Use built-in color values, define custom colors, and use the alpha channel.
 
@@ -232,3 +248,11 @@ If you specify a **Color** enumeration value or you build a **ColorValue** formu
 | **Color.YellowGreen**          | **ColorValue( "#9acd32"&nbsp;)**<br>**ColorValue( "YELLOWGREEN"&nbsp;)**          | **RGBA(&nbsp;154,&nbsp;205,&nbsp;50,&nbsp;1&nbsp;)**  | ![yellowgreen.](./media/function-colors/color-yellowgreen.png)                   |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+

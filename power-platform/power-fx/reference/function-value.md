@@ -16,7 +16,23 @@ contributors:
 
 # Decimal, Float, and Value functions
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Dataverse formula columns :::image type="icon" source="media/yes-icon.svg" border="false"::: Desktop flows :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Pages :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
+[!INCLUDE[function-value-applies-to](includes/function-value-applies-to.md)]
+
+[!INCLUDE[function-value-applies-to](includes/function-value-applies-to.md)]
+
+[!INCLUDE[function-value-applies-to](includes/function-value-applies-to.md)]
+
+[!INCLUDE[function-value-applies-to](includes/function-value-applies-to.md)]
+
+[!INCLUDE[function-value-applies-to](includes/function-value-applies-to.md)]
+
+[!INCLUDE[function-value-applies-to](includes/function-value-applies-to.md)]
+
+[!INCLUDE[function-value-applies-to](includes/function-value-applies-to.md)]
+
+[!INCLUDE[function-value-applies-to](includes/function-value-applies-to.md)]
+
+
 
 Converts a string of text or other types to a number.
 
@@ -91,3 +107,11 @@ Where things diverge is if larger or smaller numbers are used.
 | **Decimal(&nbsp;"10000000000.0000000001"&nbsp;)** |  The number in the text string is within both the range and precision of a **Decimal** numbers. | 10000000000.0000000001 (**Decimal**) |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+

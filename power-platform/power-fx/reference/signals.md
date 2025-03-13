@@ -19,7 +19,23 @@ contributors:
 
 # Acceleration, App, Compass, Connection, and Location signals in Power Apps
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps   
+[!INCLUDE[signals-applies-to](includes/signals-applies-to.md)]
+
+[!INCLUDE[signals-applies-to](includes/signals-applies-to.md)]
+
+[!INCLUDE[signals-applies-to](includes/signals-applies-to.md)]
+
+[!INCLUDE[signals-applies-to](includes/signals-applies-to.md)]
+
+[!INCLUDE[signals-applies-to](includes/signals-applies-to.md)]
+
+[!INCLUDE[signals-applies-to](includes/signals-applies-to.md)]
+
+[!INCLUDE[signals-applies-to](includes/signals-applies-to.md)]
+
+[!INCLUDE[signals-applies-to](includes/signals-applies-to.md)]
+
+
 
 Returns information about the app's environment, such as where the user is located in the world and which screen is displayed.
 
@@ -122,3 +138,11 @@ In a baseball field, a pitcher throws a phone from the pitcher's mound to a catc
 | **App.ActiveScreen.Fill**       | Returns the background color for the displayed screen.                                                                                                                                                                                                                                                                                                                                         | **Color.Green**                                                                                                                     |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+

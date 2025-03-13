@@ -19,7 +19,23 @@ contributors:
 
 # Calendar and Clock functions
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Pages
+[!INCLUDE[function-clock-calendar-applies-to](includes/function-clock-calendar-applies-to.md)]
+
+[!INCLUDE[function-clock-calendar-applies-to](includes/function-clock-calendar-applies-to.md)]
+
+[!INCLUDE[function-clock-calendar-applies-to](includes/function-clock-calendar-applies-to.md)]
+
+[!INCLUDE[function-clock-calendar-applies-to](includes/function-clock-calendar-applies-to.md)]
+
+[!INCLUDE[function-clock-calendar-applies-to](includes/function-clock-calendar-applies-to.md)]
+
+[!INCLUDE[function-clock-calendar-applies-to](includes/function-clock-calendar-applies-to.md)]
+
+[!INCLUDE[function-clock-calendar-applies-to](includes/function-clock-calendar-applies-to.md)]
+
+[!INCLUDE[function-clock-calendar-applies-to](includes/function-clock-calendar-applies-to.md)]
+
+
 
 Retrieves calendar and clock information about the current locale.
 
@@ -79,3 +95,11 @@ In the United States, with **[Language](function-language.md)** returning "en-US
 | **Clock.IsClock24()**        | This language uses a 12-hour clock.                                                                                       | **false**                                                                                                                    |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+

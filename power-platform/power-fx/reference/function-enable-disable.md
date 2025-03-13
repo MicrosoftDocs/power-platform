@@ -19,7 +19,23 @@ contributors:
 
 # Enable and Disable functions
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps
+[!INCLUDE[function-enable-disable-applies-to](includes/function-enable-disable-applies-to.md)]
+
+[!INCLUDE[function-enable-disable-applies-to](includes/function-enable-disable-applies-to.md)]
+
+[!INCLUDE[function-enable-disable-applies-to](includes/function-enable-disable-applies-to.md)]
+
+[!INCLUDE[function-enable-disable-applies-to](includes/function-enable-disable-applies-to.md)]
+
+[!INCLUDE[function-enable-disable-applies-to](includes/function-enable-disable-applies-to.md)]
+
+[!INCLUDE[function-enable-disable-applies-to](includes/function-enable-disable-applies-to.md)]
+
+[!INCLUDE[function-enable-disable-applies-to](includes/function-enable-disable-applies-to.md)]
+
+[!INCLUDE[function-enable-disable-applies-to](includes/function-enable-disable-applies-to.md)]
+
+
 
 Turns a [signal](signals.md) on or off.
 
@@ -44,3 +60,11 @@ These functions have no return value. You can use them only in [behavior formula
 - _Signal_ - Required. The signal to turn on or off.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+

@@ -19,7 +19,23 @@ contributors:
 
 # RequestHide function
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps
+[!INCLUDE[function-requesthide-applies-to](includes/function-requesthide-applies-to.md)]
+
+[!INCLUDE[function-requesthide-applies-to](includes/function-requesthide-applies-to.md)]
+
+[!INCLUDE[function-requesthide-applies-to](includes/function-requesthide-applies-to.md)]
+
+[!INCLUDE[function-requesthide-applies-to](includes/function-requesthide-applies-to.md)]
+
+[!INCLUDE[function-requesthide-applies-to](includes/function-requesthide-applies-to.md)]
+
+[!INCLUDE[function-requesthide-applies-to](includes/function-requesthide-applies-to.md)]
+
+[!INCLUDE[function-requesthide-applies-to](includes/function-requesthide-applies-to.md)]
+
+[!INCLUDE[function-requesthide-applies-to](includes/function-requesthide-applies-to.md)]
+
+
 
 Hides the [SharePoint form](/power-apps/maker/canvas-apps/sharepoint-form-integration#understand-the-sharepointintegration-control).
 
@@ -47,3 +63,11 @@ This function is not required for the **SharePointIntegration** control's **OnCa
 | **RequestHide()** | Hides the form. |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+

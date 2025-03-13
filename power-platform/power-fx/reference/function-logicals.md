@@ -19,7 +19,23 @@ contributors:
 
 # And, Or, and Not functions
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Dataverse formula columns :::image type="icon" source="media/yes-icon.svg" border="false"::: Desktop flows :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Pages :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
+[!INCLUDE[function-logicals-applies-to](includes/function-logicals-applies-to.md)]
+
+[!INCLUDE[function-logicals-applies-to](includes/function-logicals-applies-to.md)]
+
+[!INCLUDE[function-logicals-applies-to](includes/function-logicals-applies-to.md)]
+
+[!INCLUDE[function-logicals-applies-to](includes/function-logicals-applies-to.md)]
+
+[!INCLUDE[function-logicals-applies-to](includes/function-logicals-applies-to.md)]
+
+[!INCLUDE[function-logicals-applies-to](includes/function-logicals-applies-to.md)]
+
+[!INCLUDE[function-logicals-applies-to](includes/function-logicals-applies-to.md)]
+
+[!INCLUDE[function-logicals-applies-to](includes/function-logicals-applies-to.md)]
+
+
 
 Boolean logic functions, commonly used to manipulate the results of comparisons and tests.
 
@@ -83,3 +99,11 @@ Select the button (by clicking it while you hold down the Alt key), and then set
 | **Not IsBlank(&nbsp;s&nbsp;)**                                                              | Tests whether **s** is _blank_, which returns _false_. **Not** returns the opposite of this result, which is _true_.                                                                                                                | _true_  |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+

@@ -18,7 +18,23 @@ contributors:
 
 # Launch and Param functions
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps
+[!INCLUDE[function-param-applies-to](includes/function-param-applies-to.md)]
+
+[!INCLUDE[function-param-applies-to](includes/function-param-applies-to.md)]
+
+[!INCLUDE[function-param-applies-to](includes/function-param-applies-to.md)]
+
+[!INCLUDE[function-param-applies-to](includes/function-param-applies-to.md)]
+
+[!INCLUDE[function-param-applies-to](includes/function-param-applies-to.md)]
+
+[!INCLUDE[function-param-applies-to](includes/function-param-applies-to.md)]
+
+[!INCLUDE[function-param-applies-to](includes/function-param-applies-to.md)]
+
+[!INCLUDE[function-param-applies-to](includes/function-param-applies-to.md)]
+
+
 
 Launches a webpage or a canvas app and provides access to launch parameters.
 
@@ -315,3 +331,11 @@ The **Product Showcase** tablet layout template was used for the following examp
 [Canvas app formula reference](/power-apps/maker/canvas-apps/formula-reference)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+

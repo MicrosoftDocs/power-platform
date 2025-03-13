@@ -19,7 +19,23 @@ contributors:
 
 # IsMatch, Match, and MatchAll functions
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Pages :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
+[!INCLUDE[function-ismatch-applies-to](includes/function-ismatch-applies-to.md)]
+
+[!INCLUDE[function-ismatch-applies-to](includes/function-ismatch-applies-to.md)]
+
+[!INCLUDE[function-ismatch-applies-to](includes/function-ismatch-applies-to.md)]
+
+[!INCLUDE[function-ismatch-applies-to](includes/function-ismatch-applies-to.md)]
+
+[!INCLUDE[function-ismatch-applies-to](includes/function-ismatch-applies-to.md)]
+
+[!INCLUDE[function-ismatch-applies-to](includes/function-ismatch-applies-to.md)]
+
+[!INCLUDE[function-ismatch-applies-to](includes/function-ismatch-applies-to.md)]
+
+[!INCLUDE[function-ismatch-applies-to](includes/function-ismatch-applies-to.md)]
+
+
 
 Tests for a match or extracts portions of a text string based on a pattern.
 
@@ -246,3 +262,11 @@ To see the results of **MatchAll** in a gallery:
    ![Text property.](media/function-ismatch/pangram-gallery2.png)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+

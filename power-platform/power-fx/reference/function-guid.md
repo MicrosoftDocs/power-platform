@@ -19,7 +19,23 @@ contributors:
 
 # GUID function
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Desktop flows :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
+[!INCLUDE[function-guid-applies-to](includes/function-guid-applies-to.md)]
+
+[!INCLUDE[function-guid-applies-to](includes/function-guid-applies-to.md)]
+
+[!INCLUDE[function-guid-applies-to](includes/function-guid-applies-to.md)]
+
+[!INCLUDE[function-guid-applies-to](includes/function-guid-applies-to.md)]
+
+[!INCLUDE[function-guid-applies-to](includes/function-guid-applies-to.md)]
+
+[!INCLUDE[function-guid-applies-to](includes/function-guid-applies-to.md)]
+
+[!INCLUDE[function-guid-applies-to](includes/function-guid-applies-to.md)]
+
+[!INCLUDE[function-guid-applies-to](includes/function-guid-applies-to.md)]
+
+
 
 Converts a GUID ([Globally Unique Identifier](https://en.wikipedia.org/wiki/Universally_unique_identifier)) string to a GUID value or creates a new GUID value.
 
@@ -121,3 +137,11 @@ Set( NewGUID, GUID() )
 ```
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+

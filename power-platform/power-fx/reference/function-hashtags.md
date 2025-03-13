@@ -19,7 +19,23 @@ contributors:
 
 # HashTags function
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Pages
+[!INCLUDE[function-hashtags-applies-to](includes/function-hashtags-applies-to.md)]
+
+[!INCLUDE[function-hashtags-applies-to](includes/function-hashtags-applies-to.md)]
+
+[!INCLUDE[function-hashtags-applies-to](includes/function-hashtags-applies-to.md)]
+
+[!INCLUDE[function-hashtags-applies-to](includes/function-hashtags-applies-to.md)]
+
+[!INCLUDE[function-hashtags-applies-to](includes/function-hashtags-applies-to.md)]
+
+[!INCLUDE[function-hashtags-applies-to](includes/function-hashtags-applies-to.md)]
+
+[!INCLUDE[function-hashtags-applies-to](includes/function-hashtags-applies-to.md)]
+
+[!INCLUDE[function-hashtags-applies-to](includes/function-hashtags-applies-to.md)]
+
+
 
 Extracts the hashtags (#strings) from a string of text.
 
@@ -63,3 +79,11 @@ The **HashTags** function scans a string for hashtags. Hashtags start with a pou
    - **\#1**
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+

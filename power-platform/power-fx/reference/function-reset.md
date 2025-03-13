@@ -19,7 +19,23 @@ contributors:
 
 # Reset function
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps 
+[!INCLUDE[function-reset-applies-to](includes/function-reset-applies-to.md)]
+
+[!INCLUDE[function-reset-applies-to](includes/function-reset-applies-to.md)]
+
+[!INCLUDE[function-reset-applies-to](includes/function-reset-applies-to.md)]
+
+[!INCLUDE[function-reset-applies-to](includes/function-reset-applies-to.md)]
+
+[!INCLUDE[function-reset-applies-to](includes/function-reset-applies-to.md)]
+
+[!INCLUDE[function-reset-applies-to](includes/function-reset-applies-to.md)]
+
+[!INCLUDE[function-reset-applies-to](includes/function-reset-applies-to.md)]
+
+[!INCLUDE[function-reset-applies-to](includes/function-reset-applies-to.md)]
+
+
 
 Resets a control to its default value, discarding any user changes.
 
@@ -51,3 +67,11 @@ Input controls are also reset when their **Default** property changes.
 6. The contents of the text box will return to the value of the **Default** property.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+

@@ -13,7 +13,23 @@ search.audienceType:
 ---
 # Copy function
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps 
+[!INCLUDE[function-copy-applies-to](includes/function-copy-applies-to.md)]
+
+[!INCLUDE[function-copy-applies-to](includes/function-copy-applies-to.md)]
+
+[!INCLUDE[function-copy-applies-to](includes/function-copy-applies-to.md)]
+
+[!INCLUDE[function-copy-applies-to](includes/function-copy-applies-to.md)]
+
+[!INCLUDE[function-copy-applies-to](includes/function-copy-applies-to.md)]
+
+[!INCLUDE[function-copy-applies-to](includes/function-copy-applies-to.md)]
+
+[!INCLUDE[function-copy-applies-to](includes/function-copy-applies-to.md)]
+
+[!INCLUDE[function-copy-applies-to](includes/function-copy-applies-to.md)]
+
+
 
 Copies text to the clipboard on the device where the app is running.
 
@@ -50,3 +66,11 @@ Copy( $"{employeeRecord.Name} {employeeRecord.LastName} ({employeeRecord.Title})
 ```
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+

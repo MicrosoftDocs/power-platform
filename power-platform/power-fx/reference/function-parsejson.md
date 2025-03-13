@@ -17,7 +17,23 @@ contributors:
 ---
 # ParseJSON function
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Pages :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
+[!INCLUDE[function-parsejson-applies-to](includes/function-parsejson-applies-to.md)]
+
+[!INCLUDE[function-parsejson-applies-to](includes/function-parsejson-applies-to.md)]
+
+[!INCLUDE[function-parsejson-applies-to](includes/function-parsejson-applies-to.md)]
+
+[!INCLUDE[function-parsejson-applies-to](includes/function-parsejson-applies-to.md)]
+
+[!INCLUDE[function-parsejson-applies-to](includes/function-parsejson-applies-to.md)]
+
+[!INCLUDE[function-parsejson-applies-to](includes/function-parsejson-applies-to.md)]
+
+[!INCLUDE[function-parsejson-applies-to](includes/function-parsejson-applies-to.md)]
+
+[!INCLUDE[function-parsejson-applies-to](includes/function-parsejson-applies-to.md)]
+
+
 
 Interprets a JSON string and returns an [untyped object](../untyped-object.md) or typed object.
 
@@ -168,3 +184,11 @@ Given the following JSON string in a variable named `JsonString`
    ```
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+

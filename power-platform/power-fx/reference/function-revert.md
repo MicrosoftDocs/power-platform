@@ -19,7 +19,23 @@ contributors:
 
 # Revert function
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps
+[!INCLUDE[function-revert-applies-to](includes/function-revert-applies-to.md)]
+
+[!INCLUDE[function-revert-applies-to](includes/function-revert-applies-to.md)]
+
+[!INCLUDE[function-revert-applies-to](includes/function-revert-applies-to.md)]
+
+[!INCLUDE[function-revert-applies-to](includes/function-revert-applies-to.md)]
+
+[!INCLUDE[function-revert-applies-to](includes/function-revert-applies-to.md)]
+
+[!INCLUDE[function-revert-applies-to](includes/function-revert-applies-to.md)]
+
+[!INCLUDE[function-revert-applies-to](includes/function-revert-applies-to.md)]
+
+[!INCLUDE[function-revert-applies-to](includes/function-revert-applies-to.md)]
+
+
 
 Refreshes and clears errors for the [records](/power-apps/maker/canvas-apps/working-with-tables#records) of a [data source](/power-apps/maker/canvas-apps/working-with-data-sources).
 
@@ -69,3 +85,11 @@ You reapply your change on top of the previous change, and your change succeed b
 ![Reapplied changes with resolved conflict.](media/function-revert/icecream-success.png)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+

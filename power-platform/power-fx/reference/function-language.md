@@ -19,7 +19,23 @@ contributors:
 
 # Language function
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Desktop flows :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Pages :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
+[!INCLUDE[function-language-applies-to](includes/function-language-applies-to.md)]
+
+[!INCLUDE[function-language-applies-to](includes/function-language-applies-to.md)]
+
+[!INCLUDE[function-language-applies-to](includes/function-language-applies-to.md)]
+
+[!INCLUDE[function-language-applies-to](includes/function-language-applies-to.md)]
+
+[!INCLUDE[function-language-applies-to](includes/function-language-applies-to.md)]
+
+[!INCLUDE[function-language-applies-to](includes/function-language-applies-to.md)]
+
+[!INCLUDE[function-language-applies-to](includes/function-language-applies-to.md)]
+
+[!INCLUDE[function-language-applies-to](includes/function-language-applies-to.md)]
+
+
 
 Returns the language tag of the current user.
 
@@ -110,3 +126,11 @@ This approach comes with some drawbacks when compared to the previous example wh
 - The translation will be mechanical and may not be what you anticipate or be the best choice for the situation within your app.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+

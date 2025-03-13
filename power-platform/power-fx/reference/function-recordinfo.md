@@ -19,7 +19,23 @@ contributors:
 
 # RecordInfo function
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps 
+[!INCLUDE[function-recordinfo-applies-to](includes/function-recordinfo-applies-to.md)]
+
+[!INCLUDE[function-recordinfo-applies-to](includes/function-recordinfo-applies-to.md)]
+
+[!INCLUDE[function-recordinfo-applies-to](includes/function-recordinfo-applies-to.md)]
+
+[!INCLUDE[function-recordinfo-applies-to](includes/function-recordinfo-applies-to.md)]
+
+[!INCLUDE[function-recordinfo-applies-to](includes/function-recordinfo-applies-to.md)]
+
+[!INCLUDE[function-recordinfo-applies-to](includes/function-recordinfo-applies-to.md)]
+
+[!INCLUDE[function-recordinfo-applies-to](includes/function-recordinfo-applies-to.md)]
+
+[!INCLUDE[function-recordinfo-applies-to](includes/function-recordinfo-applies-to.md)]
+
+
 
 Provides information about a [record](/power-apps/maker/canvas-apps/working-with-tables#elements-of-a-table) of a [data source](/power-apps/maker/canvas-apps/working-with-data-sources).
 
@@ -81,3 +97,11 @@ RecordInfo( First(MyCollection), RecordInfo.DeletePermission )
 Creates the `MyCollection` collection and tests the first record to determine if it can be removed. Since the record's origin is a collection and not a data source, **RecordInfo** will return an error.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+

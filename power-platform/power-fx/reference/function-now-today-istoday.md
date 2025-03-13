@@ -19,7 +19,23 @@ contributors:
 
 # Now, Today, IsToday, UTCNow, UTCToday, IsUTCToday functions
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Desktop flows :::image type="icon" source="media/yes-icon.svg" border="false"::: Dataverse formula columns :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Pages :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
+[!INCLUDE[function-now-today-istoday-applies-to](includes/function-now-today-istoday-applies-to.md)]
+
+[!INCLUDE[function-now-today-istoday-applies-to](includes/function-now-today-istoday-applies-to.md)]
+
+[!INCLUDE[function-now-today-istoday-applies-to](includes/function-now-today-istoday-applies-to.md)]
+
+[!INCLUDE[function-now-today-istoday-applies-to](includes/function-now-today-istoday-applies-to.md)]
+
+[!INCLUDE[function-now-today-istoday-applies-to](includes/function-now-today-istoday-applies-to.md)]
+
+[!INCLUDE[function-now-today-istoday-applies-to](includes/function-now-today-istoday-applies-to.md)]
+
+[!INCLUDE[function-now-today-istoday-applies-to](includes/function-now-today-istoday-applies-to.md)]
+
+[!INCLUDE[function-now-today-istoday-applies-to](includes/function-now-today-istoday-applies-to.md)]
+
+
 
 Returns the current date and time, and tests whether a date/time value is today.
 
@@ -138,3 +154,11 @@ For the examples in this section, the current time is **8:58 PM** on **July 11, 
    The label appears as soon as the app starts (before the timer runs for a full second).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+

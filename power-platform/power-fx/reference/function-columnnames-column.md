@@ -15,7 +15,23 @@ contributors:
 ---
 # ColumnNames and Column functions
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
+[!INCLUDE[function-columnnames-column-applies-to](includes/function-columnnames-column-applies-to.md)]
+
+[!INCLUDE[function-columnnames-column-applies-to](includes/function-columnnames-column-applies-to.md)]
+
+[!INCLUDE[function-columnnames-column-applies-to](includes/function-columnnames-column-applies-to.md)]
+
+[!INCLUDE[function-columnnames-column-applies-to](includes/function-columnnames-column-applies-to.md)]
+
+[!INCLUDE[function-columnnames-column-applies-to](includes/function-columnnames-column-applies-to.md)]
+
+[!INCLUDE[function-columnnames-column-applies-to](includes/function-columnnames-column-applies-to.md)]
+
+[!INCLUDE[function-columnnames-column-applies-to](includes/function-columnnames-column-applies-to.md)]
+
+[!INCLUDE[function-columnnames-column-applies-to](includes/function-columnnames-column-applies-to.md)]
+
+
 
 Retrieves column names and values from an [untyped object](../untyped-object.md).
 
@@ -91,3 +107,11 @@ Calling the Column or ColumnNames functions with untyped objects that don't repr
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+

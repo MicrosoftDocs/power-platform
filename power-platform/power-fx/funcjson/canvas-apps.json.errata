@@ -1,0 +1,27 @@
+### errata for canvas apps
+
+? SendAppNotification (preview) X functions?
+
+# not available in canvas yet
+- Confirm
+- Decimal
+- Float
+
+# deprecated functions
+- ScanBarcode
+
+# known but unsupported, possibly test?
+- TraceValue
+
+# old data caching functions
+- Pending
+- State
+
+# functions available by adding Environment.*
++ AIClassify
++ AIExtract
++ AIReply
++ AISentiment
++ AISummarize
++ AITranslate
+

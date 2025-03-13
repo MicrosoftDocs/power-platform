@@ -18,7 +18,23 @@ ms.contributors:
 ---
 # App object in Power Apps
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps
+[!INCLUDE[object-app-applies-to](includes/object-app-applies-to.md)]
+
+[!INCLUDE[object-app-applies-to](includes/object-app-applies-to.md)]
+
+[!INCLUDE[object-app-applies-to](includes/object-app-applies-to.md)]
+
+[!INCLUDE[object-app-applies-to](includes/object-app-applies-to.md)]
+
+[!INCLUDE[object-app-applies-to](includes/object-app-applies-to.md)]
+
+[!INCLUDE[object-app-applies-to](includes/object-app-applies-to.md)]
+
+[!INCLUDE[object-app-applies-to](includes/object-app-applies-to.md)]
+
+[!INCLUDE[object-app-applies-to](includes/object-app-applies-to.md)]
+
+
 
 Provides information about the currently running app and control over the app's behavior.
 
@@ -405,3 +421,11 @@ Use the **StudioVersion** property to display or log the version of Power Apps S
 **StudioVersion** is returned as text. The format of the text may change over time and should be treated as a whole; avoid extracting individual portions.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+

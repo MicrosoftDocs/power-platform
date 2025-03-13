@@ -18,7 +18,23 @@ contributors:
 
 # Help function
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
+[!INCLUDE[function-help-applies-to](includes/function-help-applies-to.md)]
+
+[!INCLUDE[function-help-applies-to](includes/function-help-applies-to.md)]
+
+[!INCLUDE[function-help-applies-to](includes/function-help-applies-to.md)]
+
+[!INCLUDE[function-help-applies-to](includes/function-help-applies-to.md)]
+
+[!INCLUDE[function-help-applies-to](includes/function-help-applies-to.md)]
+
+[!INCLUDE[function-help-applies-to](includes/function-help-applies-to.md)]
+
+[!INCLUDE[function-help-applies-to](includes/function-help-applies-to.md)]
+
+[!INCLUDE[function-help-applies-to](includes/function-help-applies-to.md)]
+
+
 
 Displays help information for command line Power Fx hosts.
 
@@ -63,3 +79,11 @@ true
 ```
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+

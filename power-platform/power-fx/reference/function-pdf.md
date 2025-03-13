@@ -17,7 +17,23 @@ contributors:
 
 # PDF function(experimental)
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps 
+[!INCLUDE[function-pdf-applies-to](includes/function-pdf-applies-to.md)]
+
+[!INCLUDE[function-pdf-applies-to](includes/function-pdf-applies-to.md)]
+
+[!INCLUDE[function-pdf-applies-to](includes/function-pdf-applies-to.md)]
+
+[!INCLUDE[function-pdf-applies-to](includes/function-pdf-applies-to.md)]
+
+[!INCLUDE[function-pdf-applies-to](includes/function-pdf-applies-to.md)]
+
+[!INCLUDE[function-pdf-applies-to](includes/function-pdf-applies-to.md)]
+
+[!INCLUDE[function-pdf-applies-to](includes/function-pdf-applies-to.md)]
+
+[!INCLUDE[function-pdf-applies-to](includes/function-pdf-applies-to.md)]
+
+
 
 [This article is prerelease documentation and is subject to change.]
 
@@ -76,3 +92,11 @@ Different configuration options enable different outcomes for the resulting gene
 - Non-Latin script types and font weights and styles such as bold and italic may not appear in the generated PDF for some fonts.
 
 - Creation of fillable PDFs isn't supported.
+
+
+
+
+
+
+
+

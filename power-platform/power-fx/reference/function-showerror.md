@@ -19,7 +19,23 @@ contributors:
 
 # Notify function
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
+[!INCLUDE[function-showerror-applies-to](includes/function-showerror-applies-to.md)]
+
+[!INCLUDE[function-showerror-applies-to](includes/function-showerror-applies-to.md)]
+
+[!INCLUDE[function-showerror-applies-to](includes/function-showerror-applies-to.md)]
+
+[!INCLUDE[function-showerror-applies-to](includes/function-showerror-applies-to.md)]
+
+[!INCLUDE[function-showerror-applies-to](includes/function-showerror-applies-to.md)]
+
+[!INCLUDE[function-showerror-applies-to](includes/function-showerror-applies-to.md)]
+
+[!INCLUDE[function-showerror-applies-to](includes/function-showerror-applies-to.md)]
+
+[!INCLUDE[function-showerror-applies-to](includes/function-showerror-applies-to.md)]
+
+
 
 Displays a banner message to the user.
 
@@ -118,3 +134,11 @@ Note: This function was previously named **ShowError** when it could only displa
    ![In the authoring environment, showing Button.OnSelect calling Notify and displaying the resulting Hello, World message as a green banner message for the user.](media/function-showerror/hello-world-success.png)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+

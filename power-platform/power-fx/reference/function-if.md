@@ -19,7 +19,23 @@ contributors:
 
 # If and Switch functions
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Dataverse formula columns :::image type="icon" source="media/yes-icon.svg" border="false"::: Desktop flows :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Pages :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
+[!INCLUDE[function-if-applies-to](includes/function-if-applies-to.md)]
+
+[!INCLUDE[function-if-applies-to](includes/function-if-applies-to.md)]
+
+[!INCLUDE[function-if-applies-to](includes/function-if-applies-to.md)]
+
+[!INCLUDE[function-if-applies-to](includes/function-if-applies-to.md)]
+
+[!INCLUDE[function-if-applies-to](includes/function-if-applies-to.md)]
+
+[!INCLUDE[function-if-applies-to](includes/function-if-applies-to.md)]
+
+[!INCLUDE[function-if-applies-to](includes/function-if-applies-to.md)]
+
+[!INCLUDE[function-if-applies-to](includes/function-if-applies-to.md)]
+
+
 
 Determines whether any condition in a set is true (**If**) or the result of a formula matches any value in a set (**Switch**) and then returns a result or executes an action.
 
@@ -101,3 +117,11 @@ In these examples, a **[Text input](/power-apps/maker/canvas-apps/controls/contr
    The **Label** control shows the value that you typed because it's more than 40.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+

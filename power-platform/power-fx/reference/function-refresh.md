@@ -19,7 +19,23 @@ contributors:
 
 # Refresh function
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
+[!INCLUDE[function-refresh-applies-to](includes/function-refresh-applies-to.md)]
+
+[!INCLUDE[function-refresh-applies-to](includes/function-refresh-applies-to.md)]
+
+[!INCLUDE[function-refresh-applies-to](includes/function-refresh-applies-to.md)]
+
+[!INCLUDE[function-refresh-applies-to](includes/function-refresh-applies-to.md)]
+
+[!INCLUDE[function-refresh-applies-to](includes/function-refresh-applies-to.md)]
+
+[!INCLUDE[function-refresh-applies-to](includes/function-refresh-applies-to.md)]
+
+[!INCLUDE[function-refresh-applies-to](includes/function-refresh-applies-to.md)]
+
+[!INCLUDE[function-refresh-applies-to](includes/function-refresh-applies-to.md)]
+
+
 
 Refreshes the [records](/power-apps/maker/canvas-apps/working-with-tables#records) of a [data source](/power-apps/maker/canvas-apps/working-with-data-sources).
 
@@ -50,3 +66,11 @@ After that formula executes, galleries that are bound to the **IceCream** data s
 ![IceCream after refresh.](media/function-refresh/icecream-after.png)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+

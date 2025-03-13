@@ -15,7 +15,23 @@ search.app:
 ---
 # Dec2Hex and Hex2Dec functions
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Dataverse low-code plug-ins :::image type="icon" source="media/yes-icon.svg" border="false"::: Desktop flows :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Pages :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
+[!INCLUDE[function-hexdec-applies-to](includes/function-hexdec-applies-to.md)]
+
+[!INCLUDE[function-hexdec-applies-to](includes/function-hexdec-applies-to.md)]
+
+[!INCLUDE[function-hexdec-applies-to](includes/function-hexdec-applies-to.md)]
+
+[!INCLUDE[function-hexdec-applies-to](includes/function-hexdec-applies-to.md)]
+
+[!INCLUDE[function-hexdec-applies-to](includes/function-hexdec-applies-to.md)]
+
+[!INCLUDE[function-hexdec-applies-to](includes/function-hexdec-applies-to.md)]
+
+[!INCLUDE[function-hexdec-applies-to](includes/function-hexdec-applies-to.md)]
+
+[!INCLUDE[function-hexdec-applies-to](includes/function-hexdec-applies-to.md)]
+
+
 
 Convert between hexadecimal text strings and numbers.
 
@@ -98,3 +114,11 @@ If the input value is out of range or includes invalid hexadecimal characters, a
 | `Dec2Hex( 255, [0, 1, 2, 3] )`   | `[ error (not enough space), error (not enough space), "FF", "0FF" ]` |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+

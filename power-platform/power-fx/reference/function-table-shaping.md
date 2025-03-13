@@ -19,7 +19,23 @@ contributors:
 
 # AddColumns, DropColumns, RenameColumns, and ShowColumns functions
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Desktop flows :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
+[!INCLUDE[function-table-shaping-applies-to](includes/function-table-shaping-applies-to.md)]
+
+[!INCLUDE[function-table-shaping-applies-to](includes/function-table-shaping-applies-to.md)]
+
+[!INCLUDE[function-table-shaping-applies-to](includes/function-table-shaping-applies-to.md)]
+
+[!INCLUDE[function-table-shaping-applies-to](includes/function-table-shaping-applies-to.md)]
+
+[!INCLUDE[function-table-shaping-applies-to](includes/function-table-shaping-applies-to.md)]
+
+[!INCLUDE[function-table-shaping-applies-to](includes/function-table-shaping-applies-to.md)]
+
+[!INCLUDE[function-table-shaping-applies-to](includes/function-table-shaping-applies-to.md)]
+
+[!INCLUDE[function-table-shaping-applies-to](includes/function-table-shaping-applies-to.md)]
+
+
 
 Shapes a [table](/power-apps/maker/canvas-apps/working-with-tables) by adding, dropping, renaming, and selecting its [columns](/power-apps/maker/canvas-apps/working-with-tables#columns).
 
@@ -155,3 +171,11 @@ Let's try some of the examples from earlier in this article.
 See [Map columns](/power-apps/maker/canvas-apps/map-component-input-fields#map-columns).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+

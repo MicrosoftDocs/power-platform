@@ -18,7 +18,23 @@ contributors:
 
 # First, FirstN, Index, Last, and LastN functions
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Desktop flows :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Pages :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
+[!INCLUDE[function-first-last-applies-to](includes/function-first-last-applies-to.md)]
+
+[!INCLUDE[function-first-last-applies-to](includes/function-first-last-applies-to.md)]
+
+[!INCLUDE[function-first-last-applies-to](includes/function-first-last-applies-to.md)]
+
+[!INCLUDE[function-first-last-applies-to](includes/function-first-last-applies-to.md)]
+
+[!INCLUDE[function-first-last-applies-to](includes/function-first-last-applies-to.md)]
+
+[!INCLUDE[function-first-last-applies-to](includes/function-first-last-applies-to.md)]
+
+[!INCLUDE[function-first-last-applies-to](includes/function-first-last-applies-to.md)]
+
+[!INCLUDE[function-first-last-applies-to](includes/function-first-last-applies-to.md)]
+
+
 
 Returns the first, last, or a specific [record](/power-apps/maker/canvas-apps/working-with-tables#records), or a set of first or last records, from a table.
 
@@ -85,3 +101,11 @@ Collect( IceCream, Table( { Flavor: "Chocolate", Quantity: 100 },
 | **Index(&nbsp;IceCream,&nbsp;10&nbsp;)**         | Returns an error since the record requested is beyond the bounds of the table. | _Error_                                                                                                        |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+

@@ -19,7 +19,23 @@ contributors:
 
 # Sequence function
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Desktop flows :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
+[!INCLUDE[function-sequence-applies-to](includes/function-sequence-applies-to.md)]
+
+[!INCLUDE[function-sequence-applies-to](includes/function-sequence-applies-to.md)]
+
+[!INCLUDE[function-sequence-applies-to](includes/function-sequence-applies-to.md)]
+
+[!INCLUDE[function-sequence-applies-to](includes/function-sequence-applies-to.md)]
+
+[!INCLUDE[function-sequence-applies-to](includes/function-sequence-applies-to.md)]
+
+[!INCLUDE[function-sequence-applies-to](includes/function-sequence-applies-to.md)]
+
+[!INCLUDE[function-sequence-applies-to](includes/function-sequence-applies-to.md)]
+
+[!INCLUDE[function-sequence-applies-to](includes/function-sequence-applies-to.md)]
+
+
 
 Generate a table of sequential numbers.
 
@@ -75,3 +91,11 @@ See the [**Char**](function-char.md#display-a-character-map) function reference 
 See the [**As**](operators.md#as-operator) operator reference for two **Sequence** functions working together to create a chessboard in a text string and in two nested galleries.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+

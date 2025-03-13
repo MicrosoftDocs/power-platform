@@ -19,7 +19,23 @@ contributors:
 
 # Date, DateTime, and Time functions
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Desktop flows :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Pages :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
+[!INCLUDE[function-date-time-applies-to](includes/function-date-time-applies-to.md)]
+
+[!INCLUDE[function-date-time-applies-to](includes/function-date-time-applies-to.md)]
+
+[!INCLUDE[function-date-time-applies-to](includes/function-date-time-applies-to.md)]
+
+[!INCLUDE[function-date-time-applies-to](includes/function-date-time-applies-to.md)]
+
+[!INCLUDE[function-date-time-applies-to](includes/function-date-time-applies-to.md)]
+
+[!INCLUDE[function-date-time-applies-to](includes/function-date-time-applies-to.md)]
+
+[!INCLUDE[function-date-time-applies-to](includes/function-date-time-applies-to.md)]
+
+[!INCLUDE[function-date-time-applies-to](includes/function-date-time-applies-to.md)]
+
+
 
 Converts date and time components to a date/time value.
 
@@ -119,3 +135,11 @@ Text(
 ```
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+

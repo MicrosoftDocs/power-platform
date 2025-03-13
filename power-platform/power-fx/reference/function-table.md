@@ -19,7 +19,23 @@ contributors:
 
 # Table function
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Desktop flows :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
+[!INCLUDE[function-table-applies-to](includes/function-table-applies-to.md)]
+
+[!INCLUDE[function-table-applies-to](includes/function-table-applies-to.md)]
+
+[!INCLUDE[function-table-applies-to](includes/function-table-applies-to.md)]
+
+[!INCLUDE[function-table-applies-to](includes/function-table-applies-to.md)]
+
+[!INCLUDE[function-table-applies-to](includes/function-table-applies-to.md)]
+
+[!INCLUDE[function-table-applies-to](includes/function-table-applies-to.md)]
+
+[!INCLUDE[function-table-applies-to](includes/function-table-applies-to.md)]
+
+[!INCLUDE[function-table-applies-to](includes/function-table-applies-to.md)]
+
+
 
 Creates a temporary [table](/power-apps/maker/canvas-apps/working-with-tables).
 
@@ -65,3 +81,11 @@ You can also create a single-column table with the **[ value1, value2, ... ]** s
   ```
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+

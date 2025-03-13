@@ -20,7 +20,23 @@ contributors:
 
 # Concurrent function
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps   
+[!INCLUDE[function-concurrent-applies-to](includes/function-concurrent-applies-to.md)]
+
+[!INCLUDE[function-concurrent-applies-to](includes/function-concurrent-applies-to.md)]
+
+[!INCLUDE[function-concurrent-applies-to](includes/function-concurrent-applies-to.md)]
+
+[!INCLUDE[function-concurrent-applies-to](includes/function-concurrent-applies-to.md)]
+
+[!INCLUDE[function-concurrent-applies-to](includes/function-concurrent-applies-to.md)]
+
+[!INCLUDE[function-concurrent-applies-to](includes/function-concurrent-applies-to.md)]
+
+[!INCLUDE[function-concurrent-applies-to](includes/function-concurrent-applies-to.md)]
+
+[!INCLUDE[function-concurrent-applies-to](includes/function-concurrent-applies-to.md)]
+
+
 
 Evaluates multiple formulas concurrently with one another.
 
@@ -155,3 +171,11 @@ You can use **Concurrent** only in [behavior formulas](/power-apps/maker/canvas-
    A [race condition](https://en.wikipedia.org/wiki/Race_condition) would occur if the app depended on one translation ending first. Fortunately, Power Apps flags most timing dependencies that it can detect.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+

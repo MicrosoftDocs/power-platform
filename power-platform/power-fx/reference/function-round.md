@@ -19,7 +19,23 @@ contributors:
 
 # Int, Round, RoundDown, RoundUp, and Trunc functions
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Dataverse formula columns :::image type="icon" source="media/yes-icon.svg" border="false"::: Desktop flows :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Pages :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
+[!INCLUDE[function-round-applies-to](includes/function-round-applies-to.md)]
+
+[!INCLUDE[function-round-applies-to](includes/function-round-applies-to.md)]
+
+[!INCLUDE[function-round-applies-to](includes/function-round-applies-to.md)]
+
+[!INCLUDE[function-round-applies-to](includes/function-round-applies-to.md)]
+
+[!INCLUDE[function-round-applies-to](includes/function-round-applies-to.md)]
+
+[!INCLUDE[function-round-applies-to](includes/function-round-applies-to.md)]
+
+[!INCLUDE[function-round-applies-to](includes/function-round-applies-to.md)]
+
+[!INCLUDE[function-round-applies-to](includes/function-round-applies-to.md)]
+
+
 
 Rounds a number.
 
@@ -105,3 +121,11 @@ Rounding a single-column table of values.
 | [ 123.456, <br>987.593, <br>542.639 ] | [ 123, <br>987, <br>542 ] | [ 123.46, <br>987.59, <br>542.64 ] | [ 123, <br>987.5, <br>542.63 ] | [ 123.46, <br>988, <br>543 ] |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+

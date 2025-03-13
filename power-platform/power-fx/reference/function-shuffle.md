@@ -19,7 +19,23 @@ contributors:
 
 # Shuffle function
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Desktop flows :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
+[!INCLUDE[function-shuffle-applies-to](includes/function-shuffle-applies-to.md)]
+
+[!INCLUDE[function-shuffle-applies-to](includes/function-shuffle-applies-to.md)]
+
+[!INCLUDE[function-shuffle-applies-to](includes/function-shuffle-applies-to.md)]
+
+[!INCLUDE[function-shuffle-applies-to](includes/function-shuffle-applies-to.md)]
+
+[!INCLUDE[function-shuffle-applies-to](includes/function-shuffle-applies-to.md)]
+
+[!INCLUDE[function-shuffle-applies-to](includes/function-shuffle-applies-to.md)]
+
+[!INCLUDE[function-shuffle-applies-to](includes/function-shuffle-applies-to.md)]
+
+[!INCLUDE[function-shuffle-applies-to](includes/function-shuffle-applies-to.md)]
+
+
 
 Randomly reorders the [records](/power-apps/maker/canvas-apps/working-with-tables#records) of a [table](/power-apps/maker/canvas-apps/working-with-tables).
 
@@ -42,3 +58,11 @@ If you stored details about playing cards in a [collection](/power-apps/maker/ca
 **Shuffle(Deck)**
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+

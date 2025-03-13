@@ -15,7 +15,23 @@ contributors:
 
 # XSendAppNotification and related action functions (preview)
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps 
+[!INCLUDE[function-send-app-notification-applies-to](includes/function-send-app-notification-applies-to.md)]
+
+[!INCLUDE[function-send-app-notification-applies-to](includes/function-send-app-notification-applies-to.md)]
+
+[!INCLUDE[function-send-app-notification-applies-to](includes/function-send-app-notification-applies-to.md)]
+
+[!INCLUDE[function-send-app-notification-applies-to](includes/function-send-app-notification-applies-to.md)]
+
+[!INCLUDE[function-send-app-notification-applies-to](includes/function-send-app-notification-applies-to.md)]
+
+[!INCLUDE[function-send-app-notification-applies-to](includes/function-send-app-notification-applies-to.md)]
+
+[!INCLUDE[function-send-app-notification-applies-to](includes/function-send-app-notification-applies-to.md)]
+
+[!INCLUDE[function-send-app-notification-applies-to](includes/function-send-app-notification-applies-to.md)]
+
+
 
 [This article is pre-release documentation and is subject to change.]
 
@@ -161,3 +177,10 @@ XSendAppNotification(
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+

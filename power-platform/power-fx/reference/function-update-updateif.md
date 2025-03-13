@@ -19,7 +19,23 @@ contributors:
 
 # Update and UpdateIf functions
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps   
+[!INCLUDE[function-update-updateif-applies-to](includes/function-update-updateif-applies-to.md)]
+
+[!INCLUDE[function-update-updateif-applies-to](includes/function-update-updateif-applies-to.md)]
+
+[!INCLUDE[function-update-updateif-applies-to](includes/function-update-updateif-applies-to.md)]
+
+[!INCLUDE[function-update-updateif-applies-to](includes/function-update-updateif-applies-to.md)]
+
+[!INCLUDE[function-update-updateif-applies-to](includes/function-update-updateif-applies-to.md)]
+
+[!INCLUDE[function-update-updateif-applies-to](includes/function-update-updateif-applies-to.md)]
+
+[!INCLUDE[function-update-updateif-applies-to](includes/function-update-updateif-applies-to.md)]
+
+[!INCLUDE[function-update-updateif-applies-to](includes/function-update-updateif-applies-to.md)]
+
+
 
 Updates [records](/power-apps/maker/canvas-apps/working-with-tables#records) in a [data source](/power-apps/maker/canvas-apps/working-with-data-sources).
 
@@ -90,3 +106,11 @@ In these examples, you'll replace or modify records in a data source that's name
    The number of units in stock for the product you specified decreases by the amount that you specified.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+

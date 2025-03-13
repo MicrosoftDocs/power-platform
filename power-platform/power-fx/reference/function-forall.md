@@ -19,7 +19,23 @@ contributors:
 
 # ForAll function
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Desktop flows :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Pages :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
+[!INCLUDE[function-forall-applies-to](includes/function-forall-applies-to.md)]
+
+[!INCLUDE[function-forall-applies-to](includes/function-forall-applies-to.md)]
+
+[!INCLUDE[function-forall-applies-to](includes/function-forall-applies-to.md)]
+
+[!INCLUDE[function-forall-applies-to](includes/function-forall-applies-to.md)]
+
+[!INCLUDE[function-forall-applies-to](includes/function-forall-applies-to.md)]
+
+[!INCLUDE[function-forall-applies-to](includes/function-forall-applies-to.md)]
+
+[!INCLUDE[function-forall-applies-to](includes/function-forall-applies-to.md)]
+
+[!INCLUDE[function-forall-applies-to](includes/function-forall-applies-to.md)]
+
+
 
 Calculates values and performs actions for all the [records](/power-apps/maker/canvas-apps/working-with-tables#records) in a [table](/power-apps/maker/canvas-apps/working-with-tables).
 
@@ -237,3 +253,11 @@ Note that we are not capturing the result of the **ForAll**. The **Collect** fun
 See [Map tables](/power-apps/maker/canvas-apps/map-component-input-fields#map-tables).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+

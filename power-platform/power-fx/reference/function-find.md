@@ -19,7 +19,23 @@ contributors:
 
 # Find function
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Desktop flows :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Pages :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
+[!INCLUDE[function-find-applies-to](includes/function-find-applies-to.md)]
+
+[!INCLUDE[function-find-applies-to](includes/function-find-applies-to.md)]
+
+[!INCLUDE[function-find-applies-to](includes/function-find-applies-to.md)]
+
+[!INCLUDE[function-find-applies-to](includes/function-find-applies-to.md)]
+
+[!INCLUDE[function-find-applies-to](includes/function-find-applies-to.md)]
+
+[!INCLUDE[function-find-applies-to](includes/function-find-applies-to.md)]
+
+[!INCLUDE[function-find-applies-to](includes/function-find-applies-to.md)]
+
+[!INCLUDE[function-find-applies-to](includes/function-find-applies-to.md)]
+
+
 
 Finds a string of text, if it exists, within another string.
 
@@ -47,3 +63,11 @@ The **Find** function looks for a string within another string and is case sensi
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+

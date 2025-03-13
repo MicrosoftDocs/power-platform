@@ -19,7 +19,23 @@ contributors:
 
 # Sort and SortByColumns functions
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Desktop flows :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Pages :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
+[!INCLUDE[function-sort-applies-to](includes/function-sort-applies-to.md)]
+
+[!INCLUDE[function-sort-applies-to](includes/function-sort-applies-to.md)]
+
+[!INCLUDE[function-sort-applies-to](includes/function-sort-applies-to.md)]
+
+[!INCLUDE[function-sort-applies-to](includes/function-sort-applies-to.md)]
+
+[!INCLUDE[function-sort-applies-to](includes/function-sort-applies-to.md)]
+
+[!INCLUDE[function-sort-applies-to](includes/function-sort-applies-to.md)]
+
+[!INCLUDE[function-sort-applies-to](includes/function-sort-applies-to.md)]
+
+[!INCLUDE[function-sort-applies-to](includes/function-sort-applies-to.md)]
+
+
 
 Sorts a [table](/power-apps/maker/canvas-apps/working-with-tables).
 
@@ -120,3 +136,11 @@ To run these examples yourself, create the **IceCream** data source as a [collec
 4. Repeat the last three steps, but change the name of the collection that you want to create, and replace the **SortByColumns** formula with a different formula from the table of examples earlier in this section that uses **SortByColumns**.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+

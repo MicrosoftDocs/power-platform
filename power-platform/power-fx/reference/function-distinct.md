@@ -19,7 +19,23 @@ contributors:
 
 # Distinct function
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Desktop flows :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Pages :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
+[!INCLUDE[function-distinct-applies-to](includes/function-distinct-applies-to.md)]
+
+[!INCLUDE[function-distinct-applies-to](includes/function-distinct-applies-to.md)]
+
+[!INCLUDE[function-distinct-applies-to](includes/function-distinct-applies-to.md)]
+
+[!INCLUDE[function-distinct-applies-to](includes/function-distinct-applies-to.md)]
+
+[!INCLUDE[function-distinct-applies-to](includes/function-distinct-applies-to.md)]
+
+[!INCLUDE[function-distinct-applies-to](includes/function-distinct-applies-to.md)]
+
+[!INCLUDE[function-distinct-applies-to](includes/function-distinct-applies-to.md)]
+
+[!INCLUDE[function-distinct-applies-to](includes/function-distinct-applies-to.md)]
+
+
 
 Summarizes [records](/power-apps/maker/canvas-apps/working-with-tables#records) of a [table](/power-apps/maker/canvas-apps/working-with-tables), removing duplicates.
 
@@ -88,3 +104,11 @@ The **Distinct** function evaluates a formula across each record of a table and 
     > ![Output from Distinct function showing the first country/region by name.](media/function-distinct/citypopulations-first.png)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+

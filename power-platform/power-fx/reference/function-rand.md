@@ -18,7 +18,23 @@ contributors:
 
 # Rand and RandBetween functions
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Desktop flows :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Pages :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
+[!INCLUDE[function-rand-applies-to](includes/function-rand-applies-to.md)]
+
+[!INCLUDE[function-rand-applies-to](includes/function-rand-applies-to.md)]
+
+[!INCLUDE[function-rand-applies-to](includes/function-rand-applies-to.md)]
+
+[!INCLUDE[function-rand-applies-to](includes/function-rand-applies-to.md)]
+
+[!INCLUDE[function-rand-applies-to](includes/function-rand-applies-to.md)]
+
+[!INCLUDE[function-rand-applies-to](includes/function-rand-applies-to.md)]
+
+[!INCLUDE[function-rand-applies-to](includes/function-rand-applies-to.md)]
+
+[!INCLUDE[function-rand-applies-to](includes/function-rand-applies-to.md)]
+
+
 
 Returns a pseudo-random number.
 
@@ -104,3 +120,11 @@ When used in a [behavior formula](/power-apps/maker/canvas-apps/working-with-for
 To generate a single random number instead of a table, use **Set( RandomNumber, Rand() )** or **Set( RandNumber, RandBetween( 1, 20 ) )**.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+

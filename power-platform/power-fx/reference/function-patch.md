@@ -19,7 +19,23 @@ contributors:
 
 # Patch function
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI :::image type="icon" source="media/yes-icon.svg" border="false"::: Desktop flows
+[!INCLUDE[function-patch-applies-to](includes/function-patch-applies-to.md)]
+
+[!INCLUDE[function-patch-applies-to](includes/function-patch-applies-to.md)]
+
+[!INCLUDE[function-patch-applies-to](includes/function-patch-applies-to.md)]
+
+[!INCLUDE[function-patch-applies-to](includes/function-patch-applies-to.md)]
+
+[!INCLUDE[function-patch-applies-to](includes/function-patch-applies-to.md)]
+
+[!INCLUDE[function-patch-applies-to](includes/function-patch-applies-to.md)]
+
+[!INCLUDE[function-patch-applies-to](includes/function-patch-applies-to.md)]
+
+[!INCLUDE[function-patch-applies-to](includes/function-patch-applies-to.md)]
+
+
 
 Modifies or creates one or more [records](/power-apps/maker/canvas-apps/working-with-tables#records) in a [data source](/power-apps/maker/canvas-apps/working-with-data-sources), or merges records outside of a data source.
 
@@ -263,3 +279,11 @@ To learn more about the usage of **As** operator and **ThisRecord** see **[Opera
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+

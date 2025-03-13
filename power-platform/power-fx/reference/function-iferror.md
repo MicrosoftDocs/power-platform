@@ -18,7 +18,23 @@ contributors:
 
 # Error, IfError, IsError, IsBlankOrError functions
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Dataverse formula columns :::image type="icon" source="media/yes-icon.svg" border="false"::: Desktop flows :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Pages :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
+[!INCLUDE[function-iferror-applies-to](includes/function-iferror-applies-to.md)]
+
+[!INCLUDE[function-iferror-applies-to](includes/function-iferror-applies-to.md)]
+
+[!INCLUDE[function-iferror-applies-to](includes/function-iferror-applies-to.md)]
+
+[!INCLUDE[function-iferror-applies-to](includes/function-iferror-applies-to.md)]
+
+[!INCLUDE[function-iferror-applies-to](includes/function-iferror-applies-to.md)]
+
+[!INCLUDE[function-iferror-applies-to](includes/function-iferror-applies-to.md)]
+
+[!INCLUDE[function-iferror-applies-to](includes/function-iferror-applies-to.md)]
+
+[!INCLUDE[function-iferror-applies-to](includes/function-iferror-applies-to.md)]
+
+
 
 Detects errors and provides an alternative value or takes action. Create a custom error or pass through an error.
 
@@ -262,3 +278,11 @@ Error( Filter( AllErrors, Kind <> ErrorKind.Div0 ) )
 [Formula reference for Power Apps](/power-apps/maker/canvas-apps/formula-reference)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+

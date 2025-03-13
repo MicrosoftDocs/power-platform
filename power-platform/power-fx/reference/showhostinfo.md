@@ -14,7 +14,23 @@ contributors:
 ---
 # ShowHostInfo function
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps 
+[!INCLUDE[showhostinfo-applies-to](includes/showhostinfo-applies-to.md)]
+
+[!INCLUDE[showhostinfo-applies-to](includes/showhostinfo-applies-to.md)]
+
+[!INCLUDE[showhostinfo-applies-to](includes/showhostinfo-applies-to.md)]
+
+[!INCLUDE[showhostinfo-applies-to](includes/showhostinfo-applies-to.md)]
+
+[!INCLUDE[showhostinfo-applies-to](includes/showhostinfo-applies-to.md)]
+
+[!INCLUDE[showhostinfo-applies-to](includes/showhostinfo-applies-to.md)]
+
+[!INCLUDE[showhostinfo-applies-to](includes/showhostinfo-applies-to.md)]
+
+[!INCLUDE[showhostinfo-applies-to](includes/showhostinfo-applies-to.md)]
+
+
 
 Show [Host object](object-host.md) information to a user.
 
@@ -39,4 +55,12 @@ When the users selects the Sync icon on their mobile device, a pop-up with the o
 ## Known issue
 - The table column in the available table section shows the table name instead of the display name.
 - The popup on Windows is loaded in full screen.
+
+
+
+
+
+
+
+
 

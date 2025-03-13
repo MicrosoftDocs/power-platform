@@ -19,7 +19,23 @@ contributors:
 
 # DataSourceInfo function
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps 
+[!INCLUDE[function-datasourceinfo-applies-to](includes/function-datasourceinfo-applies-to.md)]
+
+[!INCLUDE[function-datasourceinfo-applies-to](includes/function-datasourceinfo-applies-to.md)]
+
+[!INCLUDE[function-datasourceinfo-applies-to](includes/function-datasourceinfo-applies-to.md)]
+
+[!INCLUDE[function-datasourceinfo-applies-to](includes/function-datasourceinfo-applies-to.md)]
+
+[!INCLUDE[function-datasourceinfo-applies-to](includes/function-datasourceinfo-applies-to.md)]
+
+[!INCLUDE[function-datasourceinfo-applies-to](includes/function-datasourceinfo-applies-to.md)]
+
+[!INCLUDE[function-datasourceinfo-applies-to](includes/function-datasourceinfo-applies-to.md)]
+
+[!INCLUDE[function-datasourceinfo-applies-to](includes/function-datasourceinfo-applies-to.md)]
+
+
 
 Provides information about a [data source](/power-apps/maker/canvas-apps/working-with-data-sources).
 
@@ -107,3 +123,11 @@ The data source has also provided this information:
 | **DataSourceInfo(&nbsp;IceCream, DataSourceInfo.DeletePermission)**                   | Can the current user delete records in the **IceCream** data source?                                | **false**          |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+

@@ -19,7 +19,23 @@ contributors:
 
 # Validate function
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps   
+[!INCLUDE[function-validate-applies-to](includes/function-validate-applies-to.md)]
+
+[!INCLUDE[function-validate-applies-to](includes/function-validate-applies-to.md)]
+
+[!INCLUDE[function-validate-applies-to](includes/function-validate-applies-to.md)]
+
+[!INCLUDE[function-validate-applies-to](includes/function-validate-applies-to.md)]
+
+[!INCLUDE[function-validate-applies-to](includes/function-validate-applies-to.md)]
+
+[!INCLUDE[function-validate-applies-to](includes/function-validate-applies-to.md)]
+
+[!INCLUDE[function-validate-applies-to](includes/function-validate-applies-to.md)]
+
+[!INCLUDE[function-validate-applies-to](includes/function-validate-applies-to.md)]
+
+
 
 The **Validate** function checks whether the value of a single [column](/power-apps/maker/canvas-apps/working-with-tables#columns) or a complete [record](/power-apps/maker/canvas-apps/working-with-tables#records) is valid for a [data source](/power-apps/maker/canvas-apps/working-with-data-sources).
 
@@ -73,3 +89,11 @@ For these examples, values in the **Percentage** column of the **Scores** data s
 | **Validate( Scores, EditRecord, Gallery.Updates )** | Checks whether values in all columns are valid for the **Scores** data source. In this example, the value in the **Percentage** column is **120**. | "Values must be between 0 and 100." |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+

@@ -19,7 +19,23 @@ contributors:
 
 # AsType and IsType functions
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Pages :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
+[!INCLUDE[function-astype-istype-applies-to](includes/function-astype-istype-applies-to.md)]
+
+[!INCLUDE[function-astype-istype-applies-to](includes/function-astype-istype-applies-to.md)]
+
+[!INCLUDE[function-astype-istype-applies-to](includes/function-astype-istype-applies-to.md)]
+
+[!INCLUDE[function-astype-istype-applies-to](includes/function-astype-istype-applies-to.md)]
+
+[!INCLUDE[function-astype-istype-applies-to](includes/function-astype-istype-applies-to.md)]
+
+[!INCLUDE[function-astype-istype-applies-to](includes/function-astype-istype-applies-to.md)]
+
+[!INCLUDE[function-astype-istype-applies-to](includes/function-astype-istype-applies-to.md)]
+
+[!INCLUDE[function-astype-istype-applies-to](includes/function-astype-istype-applies-to.md)]
+
+
 
 Checks if a record reference is a specific table type (**IsType**) and treats the reference as that type (**AsType**).
 
@@ -217,3 +233,11 @@ true
 ```
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
