@@ -1,7 +1,7 @@
 ---
-title: Modernized business units security | MicrosoftDocs
+title: Modernized business units security
 description: Learn more about modernized business units security in Microsoft Dataverse.
-ms.date: 3/5/2025
+ms.date: 03/13/2025
 ms.topic: conceptual
 author: paulliew
 ms.subservice: admin
@@ -16,7 +16,7 @@ search.audienceType:
 
 In today's dynamic business environment, the ability to seamlessly manage and interact with multiple business units is crucial for operational efficiency and strategic growth. The [modernized business units](wp-security-cds.md#matrix-data-access-structure-modernized-business-units) feature in Dataverse offers a robust solution to this need, enabling users to navigate and collaborate across various business units securely and with ease.  
 
-In a traditional business units security hierarchy, users are restricted to their respective business units and can't access other units. However, in a matrix organization, users work across multiple business units and projects, requiring access to data in those units. The modernized business units feature enables administrators to assign access to data for these cross-functional users across different business units securely and easily.
+In a traditional business units security hierarchy, users are restricted to their respective business units and can't access other units. However, in a matrix organization, users work across multiple business units and projects, requiring access to data in those units. The modernized business units feature allows administrators to assign access to data for these cross-functional users across different business units securely and easily.
 
 > [!VIDEO d2a0954d-ee76-483d-81d3-67cbb2c23762]
 
@@ -57,11 +57,11 @@ The business units security feature addresses common issues around granting emai
 
 With the business units security feature, the service line manager is granted only a *sales* business unit’s security role with basic read permissions for account and email. The service line manager isn't given access to *service* or *marketing* accounts, therefore they're able to read emails of the *sales* account only.
 
-## How do I enable it?
+## How do I turn on the feature?
 
-To enable the business units security feature, see [Security concepts in Microsoft Dataverse](wp-security-cds.md#enable-the-matrix-data-access-structure).  
+To turn on the business units security feature, see [Security concepts in Microsoft Dataverse](wp-security-cds.md#enable-the-matrix-data-access-structure).  
 
-The feature takes a few minutes to be enabled, as it needs time to set the *Owning business unit* column. Once the *Owning business unit* column is set, it can be pulled into a form or into a view. For existing environments with multiple business units (with the upgrade to modernized business units), we recommended you perform:
+The feature takes a few minutes to turn on, as it needs time to set the *Owning business unit* column. Once the *Owning business unit* column is set, it can be pulled into a form or into a view. For existing environments with multiple business units (with the upgrade to modernized business units), we recommended you perform:
 
 1. Impact analysis on all the business units.
 1. Prepare a user RACI (responsible, accountable, consulted, and informed) chart at the business unit record level. This chart helps define the appropriate security roles.
