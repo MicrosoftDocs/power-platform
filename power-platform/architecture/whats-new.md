@@ -16,3 +16,5 @@ Get the latest info about what's new and what's changed in Power Platform Archit
 ## April 2025
 
 Welcome to the initial launch of the Power Platform and Microsoft Copilot Studio Architecture Center.
+
+
