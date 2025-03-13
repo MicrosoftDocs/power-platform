@@ -33,12 +33,13 @@ ms.collection:
 [!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 Copilots and generative AI features in [Microsoft Power Platform](/power-platform/) and [Microsoft Dynamics 365](/dynamics365/) help you build apps, flows, and chatbots, analyze your data, summarize information, reply to messages, and generate ideas.
 
-However, Copilots and generative AI features aren't available in all regions and languages. In some cases, even where there is in region capacity, data must still move outside of the region for availability reasons. For this reason and depending on where your environment is hosted, you might need to allow data movement across regions to use Copilots and generative AI features. This article explains how to do that.
+However, Copilots and generative AI features aren't available in all regions and languages. In some cases, even where there is in region capacity, data must still move outside of the region for availability reasons or because certain features depend on other Microsoft services. For this reason and depending on where your environment is hosted and what features you use, you might need to allow data movement across regions to use Copilots and generative AI features. This article explains how to do that.
 
 > [!NOTE]
 > Keep the following points in mind:
 > - Copilots and generative AI features that are generally available are turned on by default. However, you might need to allow data movement across regions to use all Copilot and generative AI features.
 > - If you don't allow data movement across regions, that doesn't turn off all Copilots and generative AI features. Copilots and generative AI features are allowed as capacity is made available in the region.
+> - Certain generative AI features are powered by Microsoft 365 services and store data according to Microsoft 365 terms and data residency commitments. 
 
 ## Regions where data is processed for Copilots and generative AI features
 
