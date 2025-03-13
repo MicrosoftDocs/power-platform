@@ -1,30 +1,31 @@
 ﻿---
 title: Healthcare Patient Support Agent Architecture
 description: Discover how the Healthcare Patient Support Agent architecture streamlines patient interactions and reduces administrative burdens for healthcare providers.
+#customer intent: As a cloud architect, I want to visualize the major components of the Healthcare Patient Support Agent architecture so that I can design a well-architected solution.
 author: manuelap-msft
-ms.subservice: guidance
+ms.subservice: architecture-center
 ms.topic: solution-idea
-ms.date: 02/06/2025
+ms.date: 03/11/2025
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
-contributors: 
+contributors:
   - manuelap-msft
-search.audienceType: 
+search.audienceType:
   - admin
   - flowmaker
 ---
 
 
-# Healthcare patient support agent architecture
+# Healthcare Patient Support Agent architecture
 
-The Healthcare patient support agent architecture is designed to streamline patient interactions and reduce administrative burdens for healthcare providers. This architecture applies various Microsoft technologies to create an efficient, integrated system that enhances patient satisfaction and operational efficiency. By utilizing components such as Microsoft Dataverse, Azure Data Lake, Azure Synapse Analytics, and AI-driven tools, this solution provides a comprehensive approach to managing patient data, automating workflows, and delivering personalized healthcare support. This document outlines the key components and workflows of the architecture, offering a blueprint for implementing a robust patient support system in healthcare environments.
+The Healthcare Patient Support Agent architecture is designed to streamline patient interactions and reduce administrative burdens for healthcare providers. This architecture applies various Microsoft technologies to create an efficient, integrated system that enhances patient satisfaction and operational efficiency. By incorporating components such as Microsoft Dataverse, Azure Data Lake, Azure Synapse Analytics, and AI-driven tools, this solution provides a comprehensive approach to managing patient data, automating workflows, and delivering personalized healthcare support. This article outlines the key components and workflows of the architecture, offering a blueprint for implementing a robust patient support system in healthcare environments.
 
 > [!TIP]
 > This article describes a solution idea. Your cloud architect can use this guidance to help visualize the major components for a typical implementation of this architecture. Use this article as a starting point to design a well-architected solution that aligns with your workload's specific requirements.
 
 ## Architecture diagram
 
-:::image type="content" source="../media/image5.png" alt-text="Healthcare patient support agent architecture diagram" border="true":::
+:::image type="content" source="../media/image5.png" alt-text="Architecture diagram illustrating Healthcare Patient Support Agent." border="true" lightbox="../media/image5.png":::
 
 ## Workflow
 
@@ -32,19 +33,18 @@ The Healthcare patient support agent architecture is designed to streamline pati
 
 Data sources include Microsoft Dataverse, Azure Data Lake, and Azure Synapse Analytics.
 
-- ****[Microsoft Dataverse](/power-apps/maker/data-platform/):** Microsoft Dataverse serves as the central repository for healthcare data, including patients, appointments, and provider information. It's chosen for its seamless integration with Power Platform and support for relational and nonrelational data models.
-- **[Azure Data Lake Store Gen2](/azure/storage/blobs/data-lake-storage-introduction):** Azure Data Lake Store Gen2 stores large datasets, enabling advanced analytics on patient data.
-It's selected for its scalability and ability to handle structured and unstructured data.
-- **[Azure Synapse Analytics](/azure/synapse-analytics/overview-what-is):** Azure Synapse Analytics provides analytics capabilities for patient and operational data. It's chosen for its ability to unify big data and data warehousing in a single platform.
+- [Microsoft Dataverse](/power-apps/maker/data-platform/): Microsoft Dataverse serves as the central repository for healthcare data, including patients, appointments, and provider information. Chosen for its seamless integration with Power Platform and support for relational and nonrelational data models.
+- [Azure Data Lake Store Gen2](/azure/storage/blobs/data-lake-storage-introduction): Azure Data Lake Store Gen2 stores large datasets, enabling advanced analytics on patient data. Selected for its scalability and ability to handle structured and unstructured data.
+- [Azure Synapse Analytics](/azure/synapse-analytics/overview-what-is): Azure Synapse Analytics provides analytics capabilities for patient and operational data. Chosen for its ability to unify big data and data warehousing in a single platform.
 
 ## Processing
 
-### AI builder models
+### AI Builder models
 
 - Patient feedback sentiment model: Analyzes patient feedback to measure satisfaction
 - Symptom analysis model: Identifies and processes patient-reported symptoms for better diagnosis and query resolution
 
-[AI Builder](/ai-builder/overview) is chosen for its low-code AI capabilities, enabling business users to build and integrate AI models without coding expertise.
+[AI Builder](/ai-builder/overview) is chosen for its low-code AI capabilities, which enable business users to build and integrate AI models without coding expertise.
 
 ### Power Automate cloud flows
 
@@ -58,15 +58,15 @@ Provides a user-friendly interface for patients to manage their healthcare inter
 
 ### Patient interactions agent
 
-Uses AI-driven agents to assist with patient queries and appointment scheduling. Chosen for its ability to provide real-time responses and reduce human intervention. Built on Copilot studio for its rapid development, knowledge retrieval (RAG) capabilities, and seamless integration with other Power Platform components.
+Uses AI-driven agents to assist with patient queries and appointment scheduling. Chosen for its ability to provide real-time responses and reduce human intervention. Built on Microsoft Copilot Studio for rapid development, knowledge retrieval (RAG) capabilities, and seamless integration with other Power Platform components.
 
 ### Power BI dashboards
 
 Visualizes operational and patient-centric data to provide actionable insights. Chosen for its integration with Dataverse and ability to create interactive, real-time dashboards.
 
-## Platform Governance and Compliance
+## Platform governance and compliance
 
-### Power platform admin center
+### Power Platform admin center
 
 Manages and monitors all Power Platform components for operational efficiency. Chosen for its ability to enforce governance and maintain compliance across solutions.
 
@@ -91,7 +91,7 @@ The Healthcare Patient Support Agent architecture aims to improve the delivery o
 
 ## Considerations
 
-These considerations implement the pillars of Power Platform Well-Architected, a set of guiding tenets that can improve the quality of a workload. For more information, see [Microsoft Power Platform Well-Architected](https://aka.ms/powa).
+These considerations implement the pillars of Power Platform Well-Architected, a set of guiding tenets that can improve the quality of a workload. Learn more in [Microsoft Power Platform Well-Architected](https://aka.ms/powa).
 
 ### Security
 
@@ -113,7 +113,7 @@ These considerations implement the pillars of Power Platform Well-Architected, a
 
 ### Responsible AI
 
-- Privacy and security: Protected patient data using encryption and ensured compliance with [HIPAA standards](/compliance/regulatory/offering-hipaa-hitech).
+- Privacy and security: Protected patient data using encryption and ensured compliance with [Health Insurance Portability and Accountability Act (HIPAA)](/compliance/regulatory/offering-hipaa-hitech).
 
 ## Contributors
 
@@ -125,9 +125,9 @@ Principal authors:
 
 ## Related resources
 
-- [Power Platform Well-Architected Framework](/power-platform/well-architected)
-- [Azure Synapse Analytics Overview](/azure/synapse-analytics/)
-- [Microsoft Responsible AI Principles](https://www.microsoft.com/en-in/ai/responsible-ai)
-- [Set up and configure patient access portal](/dynamics365/industry/healthcare/configure-portals?toc=%2Findustry%2Fhealthcare%2Ftoc.json&bc=%2Findustry%2Fbreadcrumb%2Ftoc.json)
+- [Power Platform Well-Architected](/power-platform/well-architected)
+- [Azure Synapse Analytics overview](/azure/synapse-analytics/)
+- [Microsoft Responsible AI](https://www.microsoft.com/en-in/ai/responsible-ai)
+- [Set up and configure a patient access portal](/dynamics365/industry/healthcare/configure-portals?toc=%2Findustry%2Fhealthcare%2Ftoc.json&bc=%2Findustry%2Fbreadcrumb%2Ftoc.json)
 - [Use patient access - Microsoft Cloud for Healthcare](/dynamics365/industry/healthcare/use-patient-access#patient-portal)
-- [Use patient access - API overview](/dynamics365/industry/healthcare/dataverse-healthcare-apis-overview?toc=%2Findustry%2Fhealthcare%2Ftoc.json&bc=%2Findustry%2Fbreadcrumb%2Ftoc.json#dataverse-healthcare-apis)
+- [Use patient access - Dataverse healthcare APIs](/dynamics365/industry/healthcare/dataverse-healthcare-apis-overview?toc=%2Findustry%2Fhealthcare%2Ftoc.json&bc=%2Findustry%2Fbreadcrumb%2Ftoc.json#dataverse-healthcare-apis)

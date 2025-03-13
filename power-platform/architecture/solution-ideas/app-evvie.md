@@ -1,22 +1,25 @@
 ---
 title: Enterprise Visual Vehicle Inspection Engine
 description: Learn how EVVIE uses AI and Power Platform to automate vehicle inspections, saving time and improving accuracy.
+#customer intent: As a cloud architect, I want to understand the workflow of EVVIE so that I can design a similar solution.
 author: manuelap-msft
-ms.subservice: guidance
+ms.subservice: architecture-center
 ms.topic: solution-idea
-ms.date: 02/04/2025
+ms.date: 03/11/2025
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
-contributors: 
+contributors:
   - manuelap-msft
-search.audienceType: 
+search.audienceType:
   - admin
   - flowmaker
 ---
 
-# EVVIE - Enterprise Visual Vehicle Inspection Engine
+# Enterprise Visual Vehicle Inspection Engine
 
-The Enterprise Visual Vehicle Inspection Engine (EVVIE) applies the power of AI and Microsoft Power Platform to revolutionize the vehicle inspection process. By automating inspections, EVVIE saves time and enhances accuracy, making it an invaluable tool for organizations managing large vehicle fleets. This guide provides an overview of EVVIE's architecture, workflow, and key components, offering insights into how this innovative solution can streamline vehicle inspections and maintenance.
+The Enterprise Visual Vehicle Inspection Engine (EVVIE) applies the power of AI and Microsoft Power Platform to revolutionize the vehicle inspection process. By automating inspections, EVVIE saves time and enhances accuracy, making it an invaluable tool for organizations managing large vehicle fleets.
+
+This article provides an overview of EVVIE's architecture, workflow, and key components, offering insights into how this innovative solution can streamline vehicle inspections and maintenance.
 
 Inspect vehicles and assess damage using generative AI and Power Platform. For a demo and more information, visit [aka.ms/EVVIE](https://aka.ms/EVVIE)
 
@@ -25,11 +28,11 @@ Inspect vehicles and assess damage using generative AI and Power Platform. For a
 
 ## Architecture diagram
 
-:::image type="content" source="../media/image2.png" alt-text="Enterprise Visual Vehicle Inspection Engine architecture diagram" border="true":::
+:::image type="content" source="../media/image2.png" alt-text="Enterprise Visual Vehicle Inspection Engine architecture diagram" border="true"  lightbox="../media/image2.png":::
 
 ## Workflow
 
-EVVIE uses a unique blend of Microsoft Power Platform and Microsoft Azure resources to automate the vehicle inspection process using advanced AI models. EVVIE's internal process is described below at a high level:
+EVVIE uses a unique blend of Power Platform and Microsoft Azure resources to automate the vehicle inspection process using advanced AI models. EVVIE's internal process is described below at a high level:
 
 - A Power Apps (canvas) app used by the user serves as the interface to collect photos of vehicle damage as part of a vehicle inspection.
 
@@ -43,11 +46,11 @@ EVVIE uses a unique blend of Microsoft Power Platform and Microsoft Azure resour
 
 ## Components
 
-- **[Microsoft Dataverse](/power-apps/maker/data-platform/):** All data collected as part of vehicle inspections (captured photos of damage, severity level ranking, descriptions, etc.) is stored in Dataverse.
-- **[Power Apps](/power-apps/):** The applications presented to both the staff in the field inspecting the vehicles and the administrative staff _reviewing_ these inspections are built in Power Apps, Microsoft's no-code/low-code app development framework.
-- **[Custom connector](/connectors/custom-connectors/):** A custom connector lets the EVVIE mobile vehicle inspection app (used by staff inspecting vehicles in the field) call a back-end service that uses advanced AI to assess the provided photos.
-- **[Azure Functions](/azure/azure-functions/):** Azure Functions, Microsoft's event-driven serverless compute platform, serve as a web API that the EVVIE Power App can call via an HTTP call through the custom connector. The Azure Function receives the images via API call and interfaces with an advanced AI model to assess damage, returning this assessment to the requestor (the Power App).
-- **[Azure openAI service](/azure/ai-services/openai/overview):** EVVIE uses a multimodal AI model to assess the damage in provided images and classify this damage into three fields: severity level (1-5), area of vehicle (that is, doors, windshield, front bumper), and description of damage. While any future multimodal large language model can be used (that is "o1" or "o3" once they're available), GPT-4o is used as of the time of this writing.
+- [Microsoft Dataverse](/power-apps/maker/data-platform/): All data collected as part of vehicle inspections (captured photos of damage, severity level ranking, descriptions, etc.) is stored in Dataverse.
+- [Power Apps](/power-apps/): The applications presented to both the staff in the field inspecting the vehicles and the administrative staff _reviewing_ these inspections are built in Power Apps, Microsoft's no-code/low-code app development framework.
+- [Custom connector](/connectors/custom-connectors/): A custom connector lets the EVVIE mobile vehicle inspection app (used by staff inspecting vehicles in the field) call a back-end service that uses advanced AI to assess the provided photos.
+- [Azure Functions](/azure/azure-functions/): Azure Functions, Microsoft's event-driven serverless compute platform, serve as a web API that the EVVIE Power App can call via an HTTP call through the custom connector. The Azure Function receives the images via API call and interfaces with an advanced AI model to assess damage, returning this assessment to the requestor (the Power App).
+- [Azure OpenAI Service](/azure/ai-services/openai/overview): EVVIE uses a multimodal AI model to assess the damage in provided images and classify this damage into three fields: severity level (1-5), area of vehicle (that is, doors, windshield, front bumper), and description of damage. While any future multimodal large language model can be used (that is "o1" or "o3" once they're available), GPT-4o is used as of the time of this writing.
 
 ## Use case details
 
@@ -61,16 +64,17 @@ EVVIE helps organizations with large vehicle fleets manage regular inspections a
 
 ## Considerations
 
-These considerations implement the pillars of Power Platform well-architected, which is a set of guiding tenets that can be used to improve the quality of a workload. For more information, see [Microsoft Power Platform Well-Architected](https://aka.ms/powa).
+These considerations implement the pillars of Power Platform well-architected, which is a set of guiding tenets that can be used to improve the quality of a workload. Learn more in [Microsoft Power Platform Well-Architected](https://aka.ms/powa).
 
 ### Reliability
 
-Each Microsoft cloud-based component within EVVIE’s architecture is designed for exceptional reliability, ensuring it consistently meets critical uptime and recovery targets. This reliability is achieved through scalable redundancy, providing robust performance and resilience.
+Each Microsoft cloud-based component within EVVIE's architecture is designed for exceptional reliability, ensuring it consistently meets critical uptime and recovery targets. This reliability is achieved through scalable redundancy, providing robust performance and resilience.
 
 ### Security
 
-For EVVIE’s proof of concept build, the Azure Function-based web API that interfaces with the Power App doesn't include any security protocols. So, anyone aware of the unique API endpoints (URLs) can potentially access EVVIE’s back-end service.
-In a production deployment, it's essential for the systems integrator to implement a standard authentication layer, such as key-based authentication through Azure API Management. This ensures that the back-end API service can only be accessed as intended by the EVVIE front-end Power App.
+For EVVIE's proof of concept build, the Azure Function-based web API that interfaces with the Power App doesn't include any security protocols. So, anyone aware of the unique API endpoints (URLs) can potentially access EVVIE's back-end service.
+
+In a production deployment, it's essential for the systems integrator to implement a standard authentication layer, such as key-based authentication through Azure API Management. This security measure ensures that the back-end API service can only be accessed as intended by the EVVIE front-end Power App.
 
 ### Operational excellence
 
@@ -82,13 +86,13 @@ For instance, a systems integrator can:
 - Refine the system prompt used to instruct the model.
 - Implement a minimum number of photo requirements.
 
-These modifications ensure that EVVIE operates optimally and aligns with the organization’s specific needs.
+These modifications ensure that EVVIE operates optimally and aligns with the organization's specific needs.
 
 ### Performance efficiency
 
 Two potential bottlenecks can significantly impact EVVIE's scalability:
 
-- **Azure Function-based API:** As EVVIE’s front-door to the AI service for vehicle damage assessment, it's crucial to ensure the Azure Function is configured for massive scale. Depending on the organization’s consumption, deploying to a dedicated plan may be advisable to ensure scalability.
+- **Azure Function-based API:** As EVVIE's front-door to the AI service for vehicle damage assessment, it's crucial to ensure the Azure Function is configured for massive scale. Depending on the organization's consumption, deploying to a dedicated plan may be advisable to ensure scalability.
 
 - **Azure OpenAI Service:** The Azure OpenAI model, called by the Azure Function, is essential for assessing and logging damage. It's critical to ensure that the Azure OpenAI deployment, which the back-end API relies on, is always operational. Since Azure OpenAI uses a token-based system, it's important to guarantee that the model used in EVVIE has a sufficiently high token quota for the given period of usage.
 
@@ -96,15 +100,15 @@ Two potential bottlenecks can significantly impact EVVIE's scalability:
 
 The team that developed EVVIE dedicated significant time and effort to optimizing the user interface and user experience, ensuring it's intuitive and easy to use for staff inspecting vehicles and those reviewing the inspections.
 
-EVVIE’s inspection app is a canvas app that can be easily modified through a simple select-and-drag interface, similar to PowerPoint, to better meet the organization’s needs.
+EVVIE's inspection app is a canvas app that can be easily modified through a simple select-and-drag interface, similar to PowerPoint, to better meet the organization's needs.
 
 Likewise, the interface presented to administrative staff for reviewing these inspections is a model-driven app with a custom page, which is equally easy to modify according to specific requirements.
 
 ### Responsible AI
 
-1. **Non-Sensitive Use Case:** The EVVIE application operates within a nonsensitive domain, significantly reducing the risk of bias negatively impacting vehicle inspections. Given the nature of vehicle damage assessment, there's minimal room for bias to influence outcomes.
+1. **Non-sensitive use case:** The EVVIE application operates within a nonsensitive domain, significantly reducing the risk of bias negatively impacting vehicle inspections. Given the nature of vehicle damage assessment, there's minimal room for bias to influence outcomes.
 
-1. **Controlled Generative AI:** The generative AI models employed by EVVIE use features that constrain their assessments into predefined templates. This design ensures that the AI provides specific, factual responses as guided by the developer, limiting creativity and focusing solely on accurate, consistent assessments.
+1. **Controlled generative AI:** The generative AI models employed by EVVIE use features that constrain their assessments into predefined templates. This design ensures that the AI provides specific, factual responses as guided by the developer, limiting creativity and focusing solely on accurate, consistent assessments.
 
 ## Contributors
 
