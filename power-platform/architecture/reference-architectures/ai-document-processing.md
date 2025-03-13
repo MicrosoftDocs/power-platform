@@ -5,7 +5,7 @@ description: Streamline document processing with AI Builder and Power Automate. 
 author: manuelap-msft
 ms.subservice: architecture-center
 ms.topic: example-scenario
-ms.date: 03/11/2025
+ms.date: 04/22/2025
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
 contributors:
@@ -26,7 +26,7 @@ This article provides best practices, architecture diagrams, and workflows to he
 
 ## Architecture diagram
 
-:::image type="content" source="../media/image1.png" alt-text="Architecture diagram illustrating document processing with AI Builder, Power Automate, Dataverse, Power Apps, and Power BI." border="true":::
+:::image type="content" source="media/ai-doc-processing/ai-doc-processing.png" alt-text="Architecture diagram illustrating document processing with AI Builder, Power Automate, Dataverse, Power Apps, and Power BI." border="true":::
 
 ## Workflow
 
@@ -55,7 +55,7 @@ This architecture streamlines and automates document-intensive business processe
 
 ## Considerations
 
-These considerations implement the pillars of Power Platform Well-Architected, a set of guiding tenets that improve the quality of a workload. Learn more in [Microsoft Power Platform Well-Architected](https://aka.ms/powa).
+These considerations implement the pillars of Power Platform Well-Architected, a set of guiding tenets that improve the quality of a workload. Learn more in [Microsoft Power Platform Well-Architected](/power-platform/well-architected/).
 
 ### Reliability
 

@@ -5,7 +5,7 @@ description: Discover how to build a property rental portal with AI-driven searc
 author: manuelap-msft
 ms.subservice: architecture-center
 ms.topic: solution-idea
-ms.date: 03/11/2025
+ms.date: 04/22/2025
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
 contributors:
@@ -18,7 +18,7 @@ search.audienceType:
 
 # Property rental portal with AI-driven search and payment processing
 
-In this article, you learn how to build a comprehensive rental portal that leverages AI-driven search capabilities and seamless payment processing. Using Power Platform and Microsoft Azure, this solution integrates various components to provide a robust and user-friendly experience for both users and administrators. From browsing and reserving listings to managing payments and generating insightful reports, this architecture ensures a well-rounded and efficient rental management system. 
+In this article, you learn how to build a comprehensive rental portal that uses AI-driven search capabilities and seamless payment processing. Using Power Platform and Microsoft Azure, this solution integrates various components to provide a robust and user-friendly experience for both users and administrators. From browsing and reserving listings to managing payments and generating insightful reports, this architecture ensures a well-rounded and efficient rental management system. 
 
 This article outlines the key components, workflow, and best practices for implementing this solution.
 

@@ -4,7 +4,7 @@ description: Learn how to integrate legacy data with modern platforms using Powe
 author: manuelap-msft
 ms.subservice: architecture-center
 ms.topic: example-scenario
-ms.date: 03/11/2025
+ms.date: 04/22/2025
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
 contributors: 
@@ -25,7 +25,7 @@ This article outlines the architecture, workflow, components, and key considerat
 
 ## Architecture diagram
 
-:::image type="content" source="../media/image3.png" alt-text="Architecture diagram illustrating a legacy data integration solution." border="true":::
+:::image type="content" source="media/app-legacy-data/app-legacy-data.png" alt-text="Architecture diagram illustrating a legacy data integration solution." border="true":::
 
 ## Workflow
 
@@ -35,7 +35,6 @@ This article outlines the architecture, workflow, components, and key considerat
 1. **Data transformation and processing:** Power Automate processes and organizes the data to ensure it aligns with reporting requirements or downstream systems.
 1. **Visualization in Power BI:** Power BI consolidates and visualizes the data stored in SharePoint. Dashboards and reports are created for enhanced insights.
 1. **Access via Microsoft Teams:** Reports and dashboards are integrated into Microsoft Teams, providing real-time access for decision-makers within their collaboration environment.
-
 
 ## Use case details
 
@@ -51,7 +50,7 @@ Legacy systems often present challenges, such as lack of integration with modern
 
 ## Considerations
 
-These considerations implement the pillars of Power Platform well-architected, which is a set of guiding tenets that can be used to improve the quality of a workload. For more information, see [Microsoft Power Platform Well-Architected](https://aka.ms/powa).
+These considerations implement the pillars of Power Platform Well-Architected, a set of guiding tenets that improve the quality of a workload. Learn more in [Microsoft Power Platform Well-Architected](/power-platform/well-architected/).
 
 ### Reliability
 

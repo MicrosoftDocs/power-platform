@@ -5,11 +5,13 @@ description: Learn how to integrate legacy data with modern platforms using Powe
 author: manuelap-msft
 ms.subservice: architecture-center
 ms.topic: example-scenario
-ms.date: 03/10/2025
+ms.date: 04/22/2025
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
 contributors:
   - manuelap-msft
+ms.contributors:
+  - rachaudh
 search.audienceType:
   - admin
   - flowmaker
@@ -138,3 +140,15 @@ The workflow for business event auditing in our example loan approval process in
 
 - **Trigger**: Compliance officers or auditors request a report on loan approvals and modifications.
 - **Audit action**: All audit logs related to the loan application are retrieved for review.
+
+## Considerations 
+
+These considerations implement the pillars of Power Platform Well-Architected, a set of guiding tenets that improve the quality of a workload. Learn more in [Microsoft Power Platform Well-Architected](/power-platform/well-architected/).
+
+## Contributors
+
+_Microsoft maintains this article. The following contributors wrote this article._
+
+Principal authors:
+
+- **[Rasika Chaudhary](https://www.linkedin.com/in/rasika-chaudhary-a2348b28/)**, Principal Program Manager

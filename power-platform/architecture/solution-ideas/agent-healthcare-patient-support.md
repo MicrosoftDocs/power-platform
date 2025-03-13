@@ -5,11 +5,13 @@ description: Discover how the Healthcare Patient Support Agent architecture stre
 author: manuelap-msft
 ms.subservice: architecture-center
 ms.topic: solution-idea
-ms.date: 03/11/2025
+ms.date: 04/22/2025
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
 contributors:
   - manuelap-msft
+ms.contributors:
+  - pmohapatra
 search.audienceType:
   - admin
   - flowmaker

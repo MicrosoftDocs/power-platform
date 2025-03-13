@@ -5,11 +5,14 @@ description: Learn to secure Power Platform access to Azure resources using Azur
 author: manuelap-msft
 ms.subservice: architecture-center
 ms.topic: example-scenario
-ms.date: 03/11/2025
+ms.date: 04/22/2025
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
 contributors:
   - manuelap-msft
+ms.contributors:
+  - rranjit
+  - henryluo
 search.audienceType:
   - admin
   - flowmaker
@@ -66,18 +69,8 @@ With Azure Virtual Network support, you can build solutions with Power Platform 
 
 ## Considerations
 
-These considerations implement the pillars of Power Platform Well-Architected, a set of guiding tenets that improve workload quality. 
+These considerations implement the pillars of Power Platform Well-Architected, a set of guiding tenets that improve the quality of a workload. Learn more in [Microsoft Power Platform Well-Architected](/power-platform/well-architected/).
 
-Learn more:
-
-- [Microsoft Power Platform Well-Architected](https://aka.ms/powa)
-- [AI architecture design](https://aka.ms/aiarchitectures)
-
-
-<!--
-Here's an Azure example of considerations for inspiration: 
-[Model loan credit risk and default probability](/azure/architecture/example-scenario/ai/loan-credit-risk-analyzer-default-modeling#considerations) seems to be redirecting to above link. Is it the correct link?
--->
 ### Reliability
 
 **Redundancy**: Power Platform infrastructure implements a primary and a failover region without explicit action required by the customer. To achieve the best resilience, set up Virtual Network support in [both paired Azure regions](/power-platform/admin/business-continuity-disaster-recovery). For example, a Power Platform environment in West US with fail over to East US. This setup requires a Virtual Network (VNet) in West US and another VNet in East US. Establish a peering connection between them so that if Power Platform fails over, the Azure resources are still accessible. Learn more in [Sample scenarios for Virtual Network setup](/power-platform/admin/virtual-network-support-whitepaper#sample-scenarios-for-virtual-network-set-up-and-configuration).
@@ -123,6 +116,15 @@ After you set up your virtual network, use these high-level steps to build an en
         :::image type="content" source="media/secure-access-azure-resources/clientid.png" alt-text="Screenshot showing the Client ID field set to an environment variable.":::
 
 1. Create a Power Apps canvas app to build the search interface for the back office.
+
+## Contributors
+
+_Microsoft maintains this article. The following contributors wrote this article._
+
+Principal authors:
+
+- **[Rahul Kannathusseril](https://www.linkedin.com/in/lowcodeprodev/)**, Principal Program Manager
+- **[Henry Luo](https://www.linkedin.com/in/henryluopp/)**, Senior Program Manager
 
 ## Related resources
 

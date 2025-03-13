@@ -48,14 +48,14 @@ productDirectory:
     - title: Reference architectures
       imageSrc: /office/media/icons/blocks.png
       links:
-        - text: Document processing with AI Builder
-          url: reference-architectures/ai-document-processing.md
+        - text: ​Integrate Microsoft Fabric Lakehouse data using Microsoft Dataverse virtual tables
+          url: reference-architectures/app-integrate-lakehouse.md
         - text: Predictive data analsyis with Dataverse Fabric and Azure AI
           url: reference-architectures/ai-predictive-data-analysis.md
-        - text: Legacy data integration
-          url: reference-architectures/app-legacy-data-integration.md
-        - text: Developing a background job
-          url: reference-architectures/app-legacy-data-integration.md
+        - text: Secure Power Platform access to Azure resources
+          url: reference-architectures/secure-access-azure-resources.md
+        - text: More...
+          url: reference-architectures/overview.md
     # Card
     - title: Solution ideas
       imageSrc: /office/media/icons/lightbulb-idea-capture.png
@@ -66,6 +66,8 @@ productDirectory:
           url: solution-ideas/agent-rental-portal.md
         - text: Enterprise Visual Vehicle Inspection Engine
           url: solution-ideas/app-evvie.md
+        - text: More...
+          url: solution-ideas/overview.md
 
 # conceptualContent section (optional)
 conceptualContent:

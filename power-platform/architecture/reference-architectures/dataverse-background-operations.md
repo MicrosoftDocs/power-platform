@@ -5,11 +5,13 @@ description: Learn how to execute requests as background operations in Microsoft
 author: manuelap-msft
 ms.subservice: architecture-center
 ms.topic: example-scenario
-ms.date: 03/10/2025
+ms.date: 04/22/2025
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
 contributors:
   - manuelap-msft
+ms.contributors:
+  - pmohapatra
 search.audienceType:
   - admin
   - flowmaker
@@ -71,7 +73,7 @@ Dataverse's background operations enable asynchronous processing of tasks, allow
 
 ## Considerations
 
-These considerations help you implement background operations in Dataverse effectively.
+These considerations implement the pillars of Power Platform Well-Architected, a set of guiding tenets that improve the quality of a workload. Learn more in [Microsoft Power Platform Well-Architected](/power-platform/well-architected/).
 
 ### Scalability and performance
 
@@ -80,6 +82,14 @@ Background jobs can scale with increasing workloads without compromising perform
 ### Reliability
 
 Anticipate potential failures by incorporating comprehensive error-handling mechanisms. Implement retry policies with exponential backoff to manage transient faults effectively.
+
+## Contributors
+
+_Microsoft maintains this article. The following contributors wrote this article._
+
+Principal authors:
+
+- **[Pujarini Mohapatra](https://www.linkedin.com/in/biswapm/)**, Principal Engineering Manager
 
 ## Related resources
 

@@ -1,21 +1,23 @@
 ---
-title: SAP and Power Platform solution
+title: Integrating Microsoft Power Platform with SAP
 description: Discover how to integrate Microsoft Power Platform with SAP for seamless data management and automation.
 #customer intent: As an admin, I want to integrate Microsoft Power Platform with SAP so that I can enhance data management and automation capabilities.
 author: manuelap-msft
 ms.subservice: architecture-center
 ms.topic: example-scenario
-ms.date: 03/10/2025
+ms.date: 04/22/2025
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
 contributors:
   - manuelap-msft
+ms.contributors:
+  - lezucket
 search.audienceType:
   - admin
   - flowmaker
 ---
 
-# SAP and Power Platform solution
+# Integrating Microsoft Power Platform with SAP
 
 Integrating Microsoft Power Platform with SAP enhances data management and automation capabilities within your organization. This document provides a guide on how to connect these two platforms seamlessly. 
 
@@ -101,6 +103,8 @@ As noted earlier, for the rare and special instances where connectors don't meet
 
 ## Considerations
 
+These considerations implement the pillars of Power Platform Well-Architected, a set of guiding tenets that improve the quality of a workload. Learn more in [Microsoft Power Platform Well-Architected](/power-platform/well-architected/).
+
 There are multiple ways to work with SAP. You can access SAP directly, as discussed, or use virtual tables, which simplify tasks for low-code makers.
 
 ### Security
@@ -114,6 +118,14 @@ Stringent security and governance for developers and end users are vital when bu
 ### Operational excellence
 
 You have flexibility in how you incorporate Power Platform solutions into your specific software delivery tools and processes. Power Platform offers in-product tools (pipelines) but can also fit into your broader DevOps strategy by connecting with tools such as Azure DevOps and GitHub Actions.
+
+## Contributors
+
+_Microsoft maintains this article. The following contributors wrote this article._
+
+Principal authors:
+
+- **[Lee Zuckett](https://www.linkedin.com/in/leezuckett/)**, Senior Program Manager
 
 ## Related resources
 
