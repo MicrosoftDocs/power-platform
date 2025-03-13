@@ -63,10 +63,8 @@ For more information about Dataverse search, see [Search for tables and rows by
 
 ## Enable Dataverse search
 
-Dataverse search is an opt-out feature, set to **On** by default with [2021 release wave 2](/power-platform-release-plan/2021wave2/power-apps/modern-search-all-end-users-model-driven-power-apps), on all production environments, except those using their own encryption key. We recommend enabling Dataverse search so users have a superior search experience in model-driven apps with the benefits listed above. All model-driven Power Apps have the global search experience with the search bar in the header in the environment. Individual users aren't able to switch to [quick find search, formerly known as categorized search](/powerapps/user/quick-find). Tables must be included in the application you're using with Dataverse search. Be sure that any table you want users to search on are included in your application.
+Dataverse search is an opt-out feature, set to **On** by default on all production environments, except those using their own encryption key. We recommend enabling Dataverse search so users have a superior search experience in model-driven apps with the benefits listed above. All model-driven Power Apps have the global search experience with the search bar in the header in the environment. Individual users aren't able to switch to [quick find search, formerly known as categorized search](/powerapps/user/quick-find). Tables must be included in the application you're using with Dataverse search. Be sure that any table you want users to search on are included in your application.
 
-> [!IMPORTANT]
-> If you opt in to [early access of 2021 release wave 2](opt-in-early-access-updates.md) on a production environment, Dataverse search is enabled automatically. If you are using your own encryption key, you can disable Dataverse search after enabling early access of 2021 release wave 2 in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/). 
 
 :::image type="content" source="media/model-app1.png" alt-text="First sample model-driven app.":::
 
