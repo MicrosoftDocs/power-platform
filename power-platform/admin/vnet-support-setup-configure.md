@@ -38,7 +38,7 @@ Azure Virtual Network support for Power Platform allows you to integrate Power P
 
   - In the Azure portal, assign users the Azure Network Administrator role.
 
-  - In the Power Platform admin center, assign users the Power Platform Administrator role.
+  - In the Azure Portal, assign users the Power Platform Administrator role.
 
 The following diagram shows virtual network support in a Power Platform environment.
 
