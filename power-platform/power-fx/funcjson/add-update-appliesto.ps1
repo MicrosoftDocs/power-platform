@@ -139,7 +139,7 @@ function apply_appliesto() {
         }
         # If funcs differ in applies-to, create an include file with applies-to table
         elseif ($appliesToGroup.Count -gt 1) {
-            $tableText = "**Applies to:** `n"
+            $tableText = "**Applies to:** `n`n"
             $tableText += "| Functions | Applies to |`n"
             $tableText += "|-----------|------------|`n"			
             foreach ($key in $appliesToGroup.Keys) {
