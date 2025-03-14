@@ -81,7 +81,10 @@ To maintain the integrity of your data, it's a good idea to have rules in place 
 >
 > - We recommend that you set the duplicate detection criteria on a field that has unique values, for example, **Email**.  
 > - You can have more than one duplicate detection rule for each record type.  
-  
+
+## Current Limitations
+  1. [Multiline Text columns](/power-apps/maker/data-platform/types-of-fields#text-columns) are not supported in duplicate detection rules.
+     
 ### See also  
 
  [Turn duplicate detection rules on or off for the whole organization](../admin/turn-duplicate-detection-rules-off-whole-organization.md)<br />
