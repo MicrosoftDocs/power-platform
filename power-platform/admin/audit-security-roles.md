@@ -17,6 +17,8 @@ ms.custom:
 
 # Audit security roles
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 Audit your organization's security roles to better understand changes made to them in your Power Platform environment.
 
 ## Prerequisites

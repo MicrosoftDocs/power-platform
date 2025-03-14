@@ -15,6 +15,8 @@ contributors:
 
 # User settings
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 Manage user settings in the Power Platform admin center.
 
 1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment.

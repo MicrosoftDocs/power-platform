@@ -2,8 +2,8 @@
 title: Power Platform environments overview
 description: Learn about Power Platform environments and how to use them.
 author: sericks007
-ms.topic: overview
-ms.date: 06/24/2024
+ms.topic: conceptual
+ms.date: 02/12/2025
 ms.reviewer: sericks
 ms.subservice: admin
 ms.author: sericks
@@ -14,6 +14,8 @@ ms.contributors:
 ---
 # Power Platform environments overview
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 A *Power Platform environment* is a space to store, manage, and share your organization's business data, apps, chatbots, and flows. It also serves as a container to separate apps that might have different roles, security requirements, or target audiences. How you choose to use environments depends on your organization and the apps you're trying to build. For example:
 
 - You can choose to only build your apps or chatbots in a single environment.
@@ -21,19 +23,19 @@ A *Power Platform environment* is a space to store, manage, and share your organ
 - You might create separate environments that correspond to specific teams or departments in your company, each containing the relevant data and apps for each audience.
 - You might also create separate environments for different global branches of your company.  
 
-## Scope of Power Platform environments
+## Scope of environments
 
 Each environment is created under a Microsoft Entra tenant, and its resources can only be accessed by users within that tenant. An environment is also bound to a geographic location, like the United States. When you create an app in an environment, that app is routed only to datacenters in that geographic location. Any items that you create in that environment (including chatbots, connections, gateways, flows using Microsoft Power Automate, and more) are also bound to their environment's location.
 
 Every environment can have zero or one Microsoft Dataverse database, which provides storage for your apps and chatbots. Whether you can create a database for your environment depends on the license you purchase for Power Apps and your permissions within that environment. More information: [Pricing info](pricing-billing-skus.md)
 
-When you create an app in an environment, that app is only permitted to connect to the data sources that are also deployed in that same environment, including connections, gateways, flows, and Dataverse databases. For example, consider a scenario where you've created two environments named Test and Dev, and created a Dataverse database in each of the environments. If you create an app in the Test environment, it will only be permitted to connect to the Test database; it won't be able to connect to the 'Dev' database.
+When you create an app in an environment, that app is only permitted to connect to the data sources that are also deployed in that same environment, including connections, gateways, flows, and Dataverse databases. For example, consider a scenario where you've created two environments named Test and Dev, and created a Dataverse database in each of the environments. If you create an app in the Test environment, it only is permitted to connect to the Test database; it isn't able to connect to the 'Dev' database.
 
 You can also move resources between environments. More information: [Migrate resources](/powerapps/maker/data-platform/export-solutions)
 
 ![The Contoso Corporation tenant encompasses three environments, each of which has its own apps, flows, and Dataverse database.](./media/environments-overview/Environments.png "The Contoso Corporation tenant encompasses three environments, each of which has its own apps, flows, and Dataverse database")
 
-## Power Platform environment roles
+## Environment roles
 
 Environments have two built-in roles that provide access to permissions within an environment:
 
@@ -57,7 +59,7 @@ You can create environments in a subset of regions that get features early, that
 
 The ability to validate your scenarios before business-critical environments are updated is a great way to discover new capabilities and catch any updates that may impact your scenarios. See [Create and manage environments in the Power Platform admin center](create-environment.md) to learn how to create early release environments.
 
-## Power Platform environment types
+## Environment types
 
 There are multiple types of environments. The type indicates the purpose of the environment and determines its characteristics. The following table summarizes the current types of environments that you might encounter.
 
@@ -186,9 +188,9 @@ To see the environment history:
 
 > [!NOTE]
 >
-> - Some actions such as Edit will show the edit as an action but not details of the action.
+> - Some actions such as Edit shows the edit as an action but not details of the action.
 > - Once an environment is completely deleted, environment history is also deleted. So, it might not be possible to know who deleted an environment after it's been hard deleted.
 
-### See also
+### Related content
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

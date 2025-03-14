@@ -4,8 +4,8 @@ description: Learn how to manage security in the Power Platform admin center wit
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/13/2024
-ms.custom: ignite-2024
+ms.date: 01/30/2025
+ms.custom: NewPPAC
 author: matapg007
 ms.author: matgupta
 ms.reviewer: sericks
@@ -14,6 +14,8 @@ search.audienceType:
 ---
 
 # Security page overview
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 The **Security** page in the Power Platform admin center is designed to enhance your organization's security and streamline management. The **Security** page provides a centralized location to view and manage security recommendations, assess your security score, and implement proactive policies to safeguard your organization.
 
@@ -30,16 +32,20 @@ To see your security score, you must turn on tenant-wide analytics. For instruct
 > It might take up to 24 hours to populate the **Security** page with data after you turn on tenant-wide analytics. Until then, most sections on the page display “Calculating security score”.
 
 ## Access the Security page 
-To access the **Security** page, you must have Microsoft Entra ID roles such as Power Platform administrator or Dynamics 365 administrator.  Learn more about these roles at [Use service admin roles to manage your tenant](../use-service-admin-role-manage-tenant.md).
+To access the **Security** page, you must have Microsoft Entra ID roles such as Power Platform administrator or Dynamics 365 administrator. Environment admins can manage security and compliance features for owned environments by navigating to the **Security** page using the below steps.
+
+Learn more about these roles at [Use service admin roles to manage your tenant](../use-service-admin-role-manage-tenant.md).
 
 1.	Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 2.	From the navigation pane, select **Security**.
-3.	Select the page you want to view in the **Security** section. You can view pages for [network security](network-security.md), [access controls](access-control.md), [threat detection](threat-detection.md), and [compliance](compliance.md).
+3.	Select the page you want to view in the **Security** pane. You can view pages for [data protection and privacy](data-protection-privacy.md), [identity and access management](identity-access-management.md), and [compliance](compliance.md).
 
-    > [!Note]
-    > On each security page, the features that apply to Managed Environments are noted with this icon:
-    > 
-    > :::image type="content" source="media/managed-environments-icon.png" alt-text="Icon noting that a Managed Environment is required.":::
+> [!Note]
+> - Only tenant administrators can access the scorecard and recommendations in the **Security > Overview** page.
+> - Only tenant adminstarors can convert an environemnt to a managed type.
+> - On each security page, the features that apply to Managed Environments are noted with this icon:
+>
+>     :::image type="content" source="media/managed-environments-icon.png" alt-text="Icon noting that a Managed Environment is required.":::
    
 ## Key capabilities
 
@@ -96,14 +102,13 @@ Below is a table outlining the conditions that trigger specific feature recommen
 | Tenant isolation | Tenant | Tenant isolation setting is turned off.|
 
 ## Manage proactive policies for governance and security
-There are several security features that help secure your tenant. Some of these features require being set as managed type as a prerequisite. If you decide to enable such a feature, you're prompted to first change the environment to managed type before being allowed to configure the feature.
+There are several security features that help secure your tenant. Some of these features require being set as a managed type, which is a prerequisite. If you decide to allow such a feature, you're prompted to first change the environment to managed type before being allowed to configure the feature.
 
 Use the following links to view and manage proactive policies for governance and security.
 
-- [Network security](network-security.md): Protect applications and cloud workloads from network-based cyberattacks with features like IP firewall, IP address-based cookie binding, and Azure Virtual Network.
-- [Access controls](access-control.md): Ensure only authorized users can access specific resources with features like tenant isolation, data policies, environment security groups, and sharing controls.
-- [Threat detection](threat-detection.md): Protect your organization’s assets and resources with a unified detection with features like auditing.
-- [Compliance](compliance.md): Implement robust compliance measures to safeguard organizational data and ensure adherence to industry regulations with features like [Customer Lockbox](../about-lockbox.md) and [customer-managed key](../customer-managed-key.md).
+- [Data protection and privacy](data-protection-privacy.md): Make sure personal information is handled, stored, and protected securely; prevent unauthorized access to data; and protect apps and cloud workloads from network-based cyberattacks with features like [customer-managed key](../customer-managed-key.md), data policies, and Azure Virtual Network.
+- [Identity and access management](identity-access-management.md): Make sure authorized users are the only people who can access sensitive data in items across this tenant with feature like IP firewall, IP address-based cookie binding, tenant isolation, environment security groups, sharing controls, and guest access.
+- [Compliance](compliance.md): Implement robust compliance measures to safeguard organizational data and ensure adherence to industry regulations with features like [Customer Lockbox](../about-lockbox.md) and auditing.
 
 ## Provide feedback
 You can find a **Feedback** button in the lower-right corner of all security pages. Select the **Feedback** button to open a Microsoft Form, where you can submit feedback and suggestions regarding the Security page and its related features.
@@ -121,3 +126,6 @@ No. The recommendations are system-generated and are based on Microsoft's best p
 
 ### When is the security score be updated after taking recommended actions?
 Once you have taken action to turn on the feature, it might take up to 24 hours to reflect the overall security score. The security score isn't updated in real-time.
+
+### Why are administrator privileges not working for environment admins, such as the System Administrator role?
+This is a known limitation. Only tenant admins can manage the administrator privileges.

@@ -1,18 +1,20 @@
 ---
 title: Virtual Network support white paper
 description: Learn about Microsoft Azure Virtual Network support within Power Platform.
-author: ritesp
+author: faix
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/06/2025
+ms.date: 02/26/2025
 ms.subservice: admin
-ms.author: ritesp
+ms.author: osfaixat
 ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
 
 # Virtual Network support white paper
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 This white paper provides an in-depth analysis of the integration of Azure Virtual Network support within Power Platform. Learn about significant benefits of this integration such as enhanced security, improved connectivity, and streamlined network management. With Virtual Network support, organizations ensure their Power Platform services operate within a secure and controlled network environment, reducing the risk of data breaches and unauthorized access.
 
@@ -34,7 +36,12 @@ This paper outlines the implementation process, technical architecture, and real
 
 [Microsoft Power Platform](/power-platform/) is a leading low-code/no-code platform that empowers users worldwide to build applications, automate workflows, and analyze data with minimal coding effort. Power Platform encompasses various Microsoft services, including Dataverse, Power Apps, Power Automate, Power BI, Copilot Studio, and Power Pages. You can create custom solutions tailored to specific business needs that foster innovation and enhance productivity.
 
-[Dataverse](/power-apps/maker/data-platform/data-platform-intro) serves as the underlying data platform, providing a secure and scalable environment for storing and managing data. [Power Apps](/power-apps/powerapps-overview) allows users to build custom applications with a user-friendly interface, while [Power Automate](/power-automate/) allows the automation of repetitive tasks and workflows. [Power BI](/power-bi/) offers robust data visualization and analytics capabilities, and [Copilot Studio](/microsoft-copilot-studio/fundamentals-what-is-copilot-studio) allows the creation of intelligent bots and agents. [Power Pages](/power-pages/introduction) facilitates the creation of professional-grade websites with ease.
+- [Dataverse](/power-apps/maker/data-platform/data-platform-intro) serves as the underlying data platform, providing a secure and scalable environment for storing and managing data. 
+- [Power Apps](/power-apps/powerapps-overview) allows users to build custom applications with a user-friendly interface.
+- [Power Automate](/power-automate/) allows the automation of repetitive tasks and workflows. 
+- [Power BI](/power-bi/) offers robust data visualization and analytics capabilities.
+- [Copilot Studio](/microsoft-copilot-studio/fundamentals-what-is-copilot-studio) allows the creation of intelligent bots and agents. 
+- [Power Pages](/power-pages/introduction) facilitates the creation of professional-grade websites with ease.
 
 The integration of these components with Azure resources using virtual networks, enhances the overall functionality and security of the Power Platform. Virtual networks provide a secure and isolated network environment, allowing organizations to control and manage network traffic effectively. With Virtual Network support, Power Platform services can operate within a secure network, ensuring data protection and compliance with regulatory requirements.
 
@@ -66,13 +73,13 @@ The containerized workload allows Power Platform to support network-level isolat
 
 ### Azure subnet delegation
 
-Virtual Network support for Power Platform relies on [Azure subnet delegation](/azure/virtual-network/subnet-delegation-overview). Enterprises delegate a subnet to Power Platform, used by Power Platform services such as Dataverse plugins and connectors such as [custom connectors](/connectors/custom-connectors/), SQL, and Azure file storage to process requests at runtime. Windows containers use the IP address from the delegated subnet to handle these requests.
+Virtual Network support for Power Platform relies on [Azure subnet delegation](/azure/virtual-network/subnet-delegation-overview). Enterprises delegate a subnet to Power Platform, used by Power Platform services such as Dataverse plugins and connectors such as [custom connectors](/connectors/custom-connectors/), SQL, and Azure file storage to process requests at runtime. Containers use the IP address from the delegated subnet to handle these requests.
 
-Since the container operates within the boundaries of the delegated subnet and uses its IP address, any outbound call from this container remains within the enterprise's network boundaries. For example, the call stays within the Virtual Network that's part of this subnet. This setup allows enterprises to have full control over the policies, rules, and network packets that exit for these Windows containers. Enterprises can apply the same controls to the delegated subnet as they do with their own network.
+Since the container operates within the boundaries of the delegated subnet and uses its IP address, any outbound call from this container remains within the enterprise's network boundaries. For example, the call stays within the Virtual Network that's part of this subnet. This setup allows enterprises to have full control over the policies, rules, and network packets that exit for these containers. Enterprises can apply the same controls to the delegated subnet as they do with their own network.
 
 Power Platform doesn't manage the configuration of the delegated subnet. The only requirement is that the delegated subnet must not be associated with any other service. Once a subnet is delegated, the IPs within that subnet are reserved only for Power Platform. The subnet can't be used for any other resources or delegated to other services.
 
-By default, internet access is turned off from Windows containers. If the enterprise's code running within these containers has a requirement for internet access, they can configure [NAT Gateway](/azure/nat-gateway/nat-overview) on the delegated subnet to allow the Windows containers to connect to resources on the internet.
+By default, internet access is turned off from containers. If the enterprise's code running within these containers has a requirement for internet access, they must configure [NAT Gateway](/azure/nat-gateway/nat-overview) on the delegated subnet to allow the containers to connect to resources on the internet.
 
 #### Delegated subnet ownership for Microsoft and customers
 
@@ -84,8 +91,7 @@ By default, internet access is turned off from Windows containers. If the enterp
 | Network monitoring | Network monitoring helps in maintaining compliance with security policies by enforcing traffic to travel through the enterprise's virtual private network. | Customer|
 | IP address management | Customers can dictate the IP address space for the delegated subnet, ensuring it uses private IP address ranges, for example **10.0.0.0/8**, **192.168.0.0/16**, **172.16.0.0/12**. | Customer |
 | DNS configuration | Customers can configure custom DNS settings for the delegated subnet, including Azure DNS entries. | Customer |
-| Windows container | Windows containers execute requests from Virtual Network-supported services and acquire IPs from the delegated subnet. | Microsoft |
-| Multitenant support  | All customer requests are executed in their own delegated subnet. | Microsoft |
+| Container | Containers execute requests from Virtual Network-supported services and acquire IPs from the delegated subnet. | Microsoft |
 
 ## Technical architecture
 
@@ -173,33 +179,21 @@ To use the Virtual Network support for Power Platform, consider the following gu
 
 #### Regional
 
-Virtual Network support requires that a Power Platform environment location must match the delegated, subnets Azure regions. If you have a Power Platform environment in the United States, then each of two Virtual Networks and subnets must be in the East US and West US Azure regions.
+Virtual Network support requires that delegated subnets in Azure regions must match the Power Platform environments location. If you have a Power Platform environment in the United States, then each of two Virtual Networks and subnets must be in the East US and West US Azure regions. For supported regions and location mappings, go to [Supported regions](vnet-support-overview.md#supported-regions).
 
-If your Azure resources are in different regions, use a global, Virtual Network peering or a similar connectivity option with high speed and low latency. With Microsoft Backbone, establish the connectivity between the Power Platform Virtual Network and enterprises Virtual Network.
+If your Azure resources are in different Azure regions, you must still deploy your Virtual Networks for Power Platform environments in the appropriate Azure location for your environment. You should then use Virtual Network peering or a similar connectivity option with high speed and low latency to connect the resources with your Virtual Networks. With the [Microsoft global network](/azure/networking/microsoft-global-network), there are multiple options to establish the connectivity between the Power Platform Virtual Network and your enterprises Virtual Network.
 
 #### Subnet size
 
-The size of the delegated subnet within a Virtual Network is a critical concern, considering future growth in usage and the onboarding of new services. The following table provides guidance on the number of environments that can be attached to the same enterprise policy based on available IPs. Size ensures that requests aren't throttled.
+The size of the delegated subnet within a Virtual Network is a critical concern, considering future growth in usage and the onboarding of new services. Sizing your subnet appropriately ensures that requests don't get throttled.
 
-  | Minimum number of environments | Maximum number of environments | Virtual Network execution load  | Subnet size |
-  |----------|------------|--------------|-------------|
-  | 3 | 5 | High to high | `/24` <br>251 usable IP addresses |
-  | 10 | 20 | High to medium | `/24` <br>251 usable IP addresses |
-  | 20 | 50 | Medium to low | `/24` <br>251 usable IP addresses |
-  
-**High execution load**: This is typically characterized by a high volume of requests in an environment. For instance, if you anticipate many plug-ins, flows, or apps executing within a single environment on a Virtual Network, you should plan for a high execution load. In this case, you might allocate 3-5 environments per subnet with a /24 subnet size, which provides 251 usable IP addresses.
-
-**Medium execution load**: This category is suitable for scenarios where the volume of requests is moderate. If you expect a balanced load that isn't as intense as the high execution load, but still requires substantial resources, you can plan for 10-20 environments per subnet with the same /24 subnet size.
-
-**Low execution load**: This is ideal for environments with a lower volume of requests. If the usage is expected to be light, you can allocate 20-50 environments per subnet with a /24 subnet size.
-
-It's important to consider future growth and the onboarding of new services when categorizing the Power Plaform environments. Ensuring that your subnets have enough IP addresses to accommodate the expected load helps prevent throttling and maintains performance. If you find that the /24 subnet size isn't sufficient in the future, you should plan for large subnet size.
+The subnet that you create should have at least a /24 Classless Inter-Domain Routing (CIDR) address block, which equates to 251 IP addresses, including five reserved IP addresses. If you plan to use the same delegated subnet for multiple Power Platform environments, you may need a larger IP address block than /24.
 
 #### NAT Gateway
 
-Azure Network Address Translation (NAT) Gateway allows Windows containers, within a delegated subnet, to securely connect to internet resources. NAT Gateway ensures secure communication by translating the private IP addresses of container instances to a static, public IP address. Static IPs allow for consistent and secure outbound connections.
+Azure Network Address Translation (NAT) Gateway allows containers, within a delegated subnet, to securely connect to internet resources. NAT Gateway ensures secure communication by translating the private IP addresses of container instances to a static, public IP address. Static IPs allow for consistent and secure outbound connections.
 
-Enterprises need to configure NAT Gateway to prevent disruptions in existing integrations when onboarding a production environment to Virtual Network without migrating all data sources to the private network. This configuration allows enterprises to transition their integrations to Virtual Network without affecting current workloads.
+Enterprises that onboard an environment to Virtual Network without migrating all data sources to the private network **must** configure NAT Gateway. This configuration is required to prevent disruptions to existing integrations that require access to internet resources. It allows enterprises to transition their integrations to Virtual Network without affecting current workloads.
 
 #### Network monitoring
 
@@ -238,7 +232,7 @@ By following these best practices, you can secure outbound connections from Powe
 **Assumptions:**
 
 - The enterprise's Power Platform environment is located in the United States.
-- The primary and failover Azure region for Virtual Network is set to West US ad East US respectively.
+- The Azure region for Virtual Network is set to West US ad East US.
 - The enterprise's resources are in a Virtual Network (VNET1) in Azure West US region.
 
 **Minimum configuration needed to configure Virtual Network:**
@@ -248,13 +242,13 @@ By following these best practices, you can secure outbound connections from Powe
 3. Establish a peering connection between VNET1 and VNET2.
 4. Configure Power Platform Virtual Network integration for the desired environments using the subnet(s) created in steps 1 and 2.
 
-:::image type="content" source="media/vnet-sample-scenario-1.png" alt-text="A diagram showing VNet configuration When the Enterprise's Azure resources are in one of the paired azure regions and Power Platform Environment is in United States." lightbox="media/vnet-sample-scenario-1.png":::
+:::image type="content" source="media/vnet-sample-scenario-1.png" alt-text="A diagram showing VNet configuration When the Enterprise's Azure resources are in one of the paired Azure regions and Power Platform Environment is in United States." lightbox="media/vnet-sample-scenario-1.png":::
 
 ### When an enterprise's Azure resources are in Central US Azure region and Power Platform is in United States
 
 **Assumptions:**
 
-- The enterprises's Power Platform environment is located in United States.
+- The enterprise's Power Platform environment is located in United States.
 - The primary and failover Azure region for Virtual Network is set to West US ad East US respectively.
 - The customer's resources are in a Virtual Network (VNET1) in Central US Azure region.
 

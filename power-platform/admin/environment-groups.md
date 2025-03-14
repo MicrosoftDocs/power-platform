@@ -3,7 +3,7 @@ title: Environment groups
 description: Learn how to organize your Managed Environments into groups and govern them in bulk with rules.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/17/2025
+ms.date: 02/05/2025
 author: mikferland-msft
 ms.author: miferlan
 ms.reviewer: sericks
@@ -18,10 +18,13 @@ contributors:
 
 # Environment groups
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 The task of managing Power Platform on a large scale across numerous environments ranging from hundreds to tens of thousands poses a significant challenge for both startup and enterprise IT teams.
 
 Similar to folders, _environment groups_ are designed to help administrators organize their flat list of environments into structured groups based on different criteria, such as business unit, project, and location.
 
+## Rules
 Admins can apply various rules to groups to govern many environments in bulk, reducing manual effort and ensuring consistency. For example, admins might apply rules to security, licensing, compliance, or other facets. Specifically, the following rules are available within each environment group, with many more to be introduced over time.
 
 | # | Rules (in alphabetical order) |

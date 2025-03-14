@@ -13,6 +13,8 @@ search.audienceType:
 ---
 # Rich text experience for appointment activities
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 When you enable the rich text experience, server-side synchronization and appointment activities support rich text. With the rich text editor, appointment descriptions can contain rich text. 
 
 ![Rich text appointment editor.](media/appointment-rich-text.png)

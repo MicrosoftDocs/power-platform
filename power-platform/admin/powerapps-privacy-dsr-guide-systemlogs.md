@@ -14,6 +14,8 @@ search.audienceType:
 
 # Responding to DSR requests for system-generated logs in Power Apps, Power Automate, and Microsoft Dataverse
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 Microsoft gives you the ability to access, export, and delete system-generated logs that may be deemed personal under the privacy standard definition of *personal data*. Examples of system-generated logs that may be deemed personal under privacy standards include:
 * Product and service usage data, such as user activity logs
 * User search requests and query data

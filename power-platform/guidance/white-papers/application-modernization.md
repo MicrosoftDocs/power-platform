@@ -17,7 +17,7 @@ contributors:
 
 In today's rapidly evolving digital landscape, organizations face the constant challenge of modernizing their legacy applications to keep pace with changing business needs. Application modernization is crucial for improving operational efficiency, enhancing customer experiences, and staying ahead of the competition. Microsoft Power Platform offers a comprehensive suite of tools and technologies that empower businesses to transform and modernize their applications quickly and effectively.
 
-This whitepaper explores the benefits, strategies, and best practices of modernizing applications with Microsoft Power Platform. It provides insights and guidance on how the Microsoft low-code platform can help you ensure the success of your application modernization efforts as part of your organization's digital transformation.
+This white paper explores the benefits, strategies, and best practices of modernizing applications with Microsoft Power Platform. It provides insights and guidance on how the Microsoft low-code platform can help you ensure the success of your application modernization efforts as part of your organization's digital transformation.
 
 > [!TIP]
 > You can save or print this white paper by selecting **Print** from your browser, and then selecting **Save as PDF**.
@@ -678,13 +678,13 @@ Using Application Insights across your applications can make it easier to correl
 
 ## Conclusion
 
-In this whitepaper, we explored the benefits, strategies, and best practices of modernizing your legacy applications with Microsoft Power Platform. You gained insights and guidance on employing Power Platform's low-code capabilities to ensure the success of your modernization efforts as part of your organization's digital transformation.
+In this white paper, we explored the benefits, strategies, and best practices of modernizing your legacy applications with Microsoft Power Platform. You gained insights and guidance on employing Power Platform's low-code capabilities to ensure the success of your modernization efforts as part of your organization's digital transformation.
 
-Legacy applications present many challenges for organizations. To overcome them, organizations must embark on application modernization initiatives to revitalize their infrastructure and take advantage of modern technologies. In this whitepaper, you saw how to take a low-code approach to your modernization efforts—specifically, how the low-code development capabilities of Microsoft Power Platform allow you to quickly build and deploy modern applications. 
+Legacy applications present many challenges for organizations. To overcome them, organizations must embark on application modernization initiatives to revitalize their infrastructure and take advantage of modern technologies. In this white paper, you saw how to take a low-code approach to your modernization efforts—specifically, how the low-code development capabilities of Microsoft Power Platform allow you to quickly build and deploy modern applications. 
 
 Low-code opens the door to a broader set of people than traditional coders. A key factor of organizations that succeed with a low-code approach is making sure the people involved in modernizing applications have training in low-code development, whether they're pro developers or business users. Business users are closer to the business problem being solved and can contribute time-saving expertise. Traditional code developers can apply the techniques and skilling they already have to build extensions to fill any low-code gaps. Organizations can be most effective by blending business and technical resources on what we like to call "fusion teams."
 
-This whitepaper establishes the foundation for you. The next steps are yours. Here are some suggestions:
+This white paper establishes the foundation for you. The next steps are yours. Here are some suggestions:
 
 - Take a few minutes to find out what your organization is already doing with low-code. It might surprise you! 
 - Evaluate your application modernization opportunities.

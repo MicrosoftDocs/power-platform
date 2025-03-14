@@ -14,6 +14,8 @@ search.audienceType:
 ---
 # Power Platform data loss prevention (DLP) SDK 
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 This topic introduces the capabilities of the DLP SDK and shows you how DLP can help you manage your tenant and environment policy with experiences ranging from creating, reading, updating, to removing DLP policies. More information : [Data loss prevention policies](wp-data-loss-prevention.md)
 
 ## How to run this sample
