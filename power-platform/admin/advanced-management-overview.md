@@ -1,6 +1,6 @@
 ---
 title: Advanced management overview
-description: Learn how the advanced management capabilities in Power Platform.
+description: Learn how advanced management provides enhanced security, governance, and operations capabilities for environments that have opted in for the capabilities.
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/12/2025
