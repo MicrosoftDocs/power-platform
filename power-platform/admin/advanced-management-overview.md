@@ -18,7 +18,7 @@ search.audienceType:
 
 The [Managed Environments](managed-environment-overview.md) concept has been reimagined in the [new and improved Power Platform admin center](new-admin-center.md). Advanced management, an offering of premium capabilities that allow admins to manage Power Platform at scale with more control, less effort, and more insights is now available.
 
-Advanced management provides enhanced security, governance, and operations capabilities for environments that have opted in for the capabilities. Advanced management delivers advanced protection, greater visibility, and operational excellence, making it easier for administrators to manage their environments at scale while providing them with peace of mind and granular control across every environment covered by this feature set.
+Advanced management provides enhanced security, governance, and operations capabilities for environments that have opted in for the capabilities. Advanced management delivers advanced protection, greater visibility, and operational excellence. This makes it easier for administrators to manage their environments at scale while providing them with peace of mind and granular control across every environment covered by this feature set.
 
 :::image type="content" source="media/advanced-management.png" alt-text="Image highlighting the features of advanced management.":::
 
