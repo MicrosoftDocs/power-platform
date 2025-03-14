@@ -63,7 +63,7 @@ The **Environment routing** setting is turned off by default and must be turned 
 1. In the **Apply routing to** section, select **Everyone** or select a specific security group:
     - Selecting **Everyone** routes all makers into existing or new personal developer environments.
     - Admins can select a security group to limit routing only to the member makers of the configured security group. Learn more in [Configure security groups](../enterprise-templates/finance/sap-procurement/administer/configure-security-groups.md).
-1. (**Optional**) Select an environment group to which the newly created developer environments are automatically assigned. This environment group inherits all the defined environment group rules. Learn more in [Environments groups](environment-groups.md).
+1. (**Optional**) Select an environment group to which the newly created developer environments are automatically assigned. This environment group inherits all the defined environment group rules. Learn more in [Environment groups](environment-groups.md).
 1. Select **Save**.
 
 #### [Classic admin center](#tab/classic)
@@ -75,7 +75,7 @@ The **Environment routing** setting is turned off by default and must be turned 
 1. In the **Apply routing to** section, select **Everyone** or select a specific security group:
     - Selecting **Everyone** routes all makers into existing or new personal developer environments. 
     - Admins can select a security group to limit routing only to the member makers of the configured security group. Learn more in [Configure security groups](../enterprise-templates/finance/sap-procurement/administer/configure-security-groups.md).
-1. (**Optional**) Select an environment group to which the newly created developer environments are automatically assigned. This environment group inherits all the defined environment group rules. Learn more in [Environments groups](environment-groups.md).
+1. (**Optional**) Select an environment group to which the newly created developer environments are automatically assigned. This environment group inherits all the defined environment group rules. Learn more in [Environment groups](environment-groups.md).
 1. Select **Save**.
 
 #### [PowerShell](#tab/powershell)
