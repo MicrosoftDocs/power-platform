@@ -30,6 +30,8 @@
             href: formula-reference-canvas-apps.md
           - name: Cards formula reference
             href: formula-reference-cards.md  
+          - name: Copilot Studio reference
+            href: formula-reference-copilot-studio.md              
           - name: Dataverse formula columns formula reference
             href: formula-reference-formula-columns.md
           - name: Dataverse functions formula reference
