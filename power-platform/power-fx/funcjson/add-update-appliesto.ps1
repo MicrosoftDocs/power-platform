@@ -125,11 +125,9 @@ function apply_appliesto() {
             continue
         }
 
-#        write-host ":::" $refName $appliesToGroup.Keys $appliesToGroup.Count
-
         #If all funcs have same applies-to create an include file with applies-to text        
         if ($appliesToGroup.Count -eq 1) {
-            $appliesToText = "**Applies to:** "
+            $appliesToText = "`n**Applies to:** "
             foreach ($appTo in $appliesToGroup.Keys[0].Split(",")) {
                 $appToText = $hostToProduct[$appTo]
                 $appliesToText += $imageType + $appToText
@@ -139,8 +137,13 @@ function apply_appliesto() {
         }
         # If funcs differ in applies-to, create an include file with applies-to table
         elseif ($appliesToGroup.Count -gt 1) {
-            $tableText = "**Applies to:** `n`n"
-            $tableText += "| Functions | Applies to |`n"
+            $plural = 0
+            foreach ($key in $appliesToGroup.Keys) {
+                if ($appliesToGroup[$key].count -gt 1) {
+                    $plural = 1
+                }
+            }
+            $tableText = "`n| Function" + ($plural ? "s" : "") + " | Applies to |`n"
             $tableText += "|-----------|------------|`n"			
             foreach ($key in $appliesToGroup.Keys) {
                 $appliesToText = ""

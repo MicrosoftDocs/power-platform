@@ -217,3 +217,11 @@ You can use **Concurrent** only in [behavior formulas](/power-apps/maker/canvas-
 
 
 
+
+
+
+
+
+
+
+

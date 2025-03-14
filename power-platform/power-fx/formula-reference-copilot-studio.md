@@ -135,6 +135,8 @@ Use these functions, operators, and enumerations to work with formulas in Micros
 
 ## G
 
+**[Global](/microsoft-copilot-studio/advanced-power-fx#use-variables-in-a-formula)** - Variables scoped to the bot.
+
 **[GUID](reference/function-guid.md)** – Converts a GUID string to a GUID value or creates a new GUID value.
 
 ## H
@@ -294,6 +296,8 @@ Use these functions, operators, and enumerations to work with formulas in Micros
 
 **[Switch](reference/function-if.md)** – Matches with a set of values and then evaluates a corresponding formula.
 
+**[System](/microsoft-copilot-studio/advanced-power-fx#use-variables-in-a-formula)** - Variables available everywhere in Copilot studio.
+
 ## T
 
 **[Table](reference/function-table.md)** – Creates a temporary table.
@@ -309,6 +313,8 @@ Use these functions, operators, and enumerations to work with formulas in Micros
 **[TimeZoneOffset](reference/function-dateadd-datediff.md)** – Returns the difference between UTC and the user's local time in minutes.
 
 **[Today](reference/function-now-today-istoday.md)** – Returns the current date-only value.
+
+**[Topic](/microsoft-copilot-studio/advanced-power-fx#use-variables-in-a-formula)** - Variables scoped to the topic.
 
 **[Trace](reference/function-trace.md)** – Provide additional information in your test results.
 

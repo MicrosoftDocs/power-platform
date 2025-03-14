@@ -103,3 +103,10 @@ If you stored details about playing cards in a [collection](/power-apps/maker/ca
 
 
 
+
+
+
+
+
+
+

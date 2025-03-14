@@ -1,4 +1,3 @@
-**Applies to:** 
 
 | Functions | Applies to |
 |-----------|------------|
