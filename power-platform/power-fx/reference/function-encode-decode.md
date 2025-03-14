@@ -19,21 +19,6 @@ contributors:
 ---
 
 # EncodeHTML, EncodeUrl, and PlainText functions
-
-[!INCLUDE[function-encode-decode-applies-to](includes/function-encode-decode-applies-to.md)]
-
-[!INCLUDE[function-encode-decode-applies-to](includes/function-encode-decode-applies-to.md)]
-
-[!INCLUDE[function-encode-decode-applies-to](includes/function-encode-decode-applies-to.md)]
-
-[!INCLUDE[function-encode-decode-applies-to](includes/function-encode-decode-applies-to.md)]
-
-[!INCLUDE[function-encode-decode-applies-to](includes/function-encode-decode-applies-to.md)]
-
-[!INCLUDE[function-encode-decode-applies-to](includes/function-encode-decode-applies-to.md)]
-
-[!INCLUDE[function-encode-decode-applies-to](includes/function-encode-decode-applies-to.md)]
-
 [!INCLUDE[function-encode-decode-applies-to](includes/function-encode-decode-applies-to.md)]
 
 
@@ -96,6 +81,55 @@ With the formula **EncodeHTML(ThisItem.description)**, the HTML tags are encoded
 If instead of a label you have an [HTML text control](/power-apps/maker/canvas-apps/controls/control-html-text) in the gallery, and you set the **[HtmlText](/power-apps/maker/canvas-apps/controls/control-html-text)** property of that control to **ThisItem.description** you also see the decoded text, because the HTML text control is interpreting the tags as HTML.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

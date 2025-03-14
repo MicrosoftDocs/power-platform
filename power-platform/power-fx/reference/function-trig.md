@@ -18,21 +18,6 @@ contributors:
 ---
 
 # Acos, Acot, Asin, Atan, Atan2, Cos, Cot, Degrees, Pi, Radians, Sin, and Tan functions
-
-[!INCLUDE[function-trig-applies-to](includes/function-trig-applies-to.md)]
-
-[!INCLUDE[function-trig-applies-to](includes/function-trig-applies-to.md)]
-
-[!INCLUDE[function-trig-applies-to](includes/function-trig-applies-to.md)]
-
-[!INCLUDE[function-trig-applies-to](includes/function-trig-applies-to.md)]
-
-[!INCLUDE[function-trig-applies-to](includes/function-trig-applies-to.md)]
-
-[!INCLUDE[function-trig-applies-to](includes/function-trig-applies-to.md)]
-
-[!INCLUDE[function-trig-applies-to](includes/function-trig-applies-to.md)]
-
 [!INCLUDE[function-trig-applies-to](includes/function-trig-applies-to.md)]
 
 
@@ -160,6 +145,55 @@ The examples in this section use a [data source](/power-apps/maker/canvas-apps/w
 | **Radians(&nbsp;ValueTable&nbsp;)** | Returns the equivalent number of radians for each number in the table, assumed to be angles in degrees. | A single-column table with a `Value` column containing the following values: 0.008726..., -0.034906..., 0.027415... |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

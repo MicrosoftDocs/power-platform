@@ -1,23 +1,6 @@
 Set-StrictMode -Version 2.0
 
-$powerFxPath = "$pwd/power-platform/power-fx"
-
-$appliesToHosts = @{ 
-    "canvas apps"               = "canvas-apps"
-    "power platform cli"        = "pac-cli"
-    "model-driven apps"         = "model-driven-apps"
-    "power pages"               = "power-pages"
-    "desktop flows"             = "desktop-flows"
-    "dataverse formula columns" = "formula-columns"
-}
-
-$skipJson = @(
-    "dv-lowcode-plugin"
-    "fno"
-    "pva"
-)
-
-$enc = [system.Text.Encoding]::UTF8
+. "$(Split-Path $MyInvocation.MyCommand.Path)\hostmap.ps1"
 
 $jsonFuncs = @{}
 $funcsJson = @{}
@@ -85,9 +68,15 @@ foreach ( $jsonFile in Get-ChildItem "$powerFxPath/funcjson" -Filter *.json ) {
 
     $jsonContent = [System.IO.File]::ReadAllText( $jsonFile.FullName, $enc )
     $json = ConvertFrom-Json $jsonContent -AsHashtable
-    $jsonFunctionNames = $json.FunctionNames    
+    if ($json) {
+        $jsonFunctionNames = $json.FunctionNames  
+    }
+    else {
+        $jsonFunctionNames = @()
+    }  
+
     foreach ($errata in $errataPlus) {
-        if ($json.FunctionNames -notcontains $errata) {
+        if ($jsonFunctionNames -notcontains $errata) {
             $jsonFunctionNames += $errata;
         }
     }
@@ -115,9 +104,11 @@ foreach ( $jsonFile in Get-ChildItem "$powerFxPath/funcjson" -Filter *.json ) {
         }
     }
 
-    if ($json.ContainsKey( "HostObjects" ) ) {
-        foreach ( $hostObject in $json.HostObjects ) {
-            $jsonFuncs[$appliesToName] += $hostObject
+    if ($json) {
+        if ($json.ContainsKey( "HostObjects" )) {
+            foreach ( $hostObject in $json.HostObjects ) {
+                $jsonFuncs[$appliesToName] += $hostObject
+            }
         }
     }
 }
@@ -154,7 +145,7 @@ foreach ( $refFile in Get-ChildItem $powerFxPath -Filter formula-reference-*.md 
             $banner = $false
             foreach ( $jsonFunc in $jsonFuncs[$appliesToName] ) {
                 if ( -not ($jsonFuncsSeen -contains $jsonFunc) ) {
-                    error "Functions not found in Reference markdown file: $refName" $jsonFunc
+                    error "Functions not found in Reference markdown file" $jsonFunc
                 }
             }
         }
@@ -179,7 +170,7 @@ foreach ( $refFile in Get-ChildItem "$powerFxPath/reference" -Filter *.md ) {
             if ($refFuncName -eq "in") {
                 break;
             }
-            elseif (-not ($refFuncName -match '(?i)^(functions?|objects?|signals?|and)$')) {
+            elseif (-not ($refFuncName -match '(?i)^(enumerations?|functions?|objects?|signals?|experimental|preview|action|related|and)$')) {
                 $funcNames += $refFuncName
             }
         }
@@ -190,40 +181,71 @@ foreach ( $refFile in Get-ChildItem "$powerFxPath/reference" -Filter *.md ) {
     }
 
     # Get the include file content which has applies-to text for the current reference file
-    $refIncludesPattern = '(?m)^\[!INCLUDE\[.*\]\(includes/(.*-applies-to\.md)\)\]'
+    $refIncludesPattern = '[\n\r]\[!INCLUDE\[.+\]\(includes/(.+-applies-to\.md)\)\]'
     if ($refContent -match $refIncludesPattern) {
         $includeFileName = $matches[1]
         $file = "$powerFxPath/reference/includes/$includeFileName"
 
-        $includeContent = [System.IO.File]::ReadAllText( $file, $enc )    
-
-        $refAppliesTo = Select-String ':::image[^:]*source="../media/yes-icon.svg"[^:]*:::\s*([^|:\n\r]+)' -input $includeContent -AllMatches
-        $appliesToList = @()
-        if ($refAppliesTo -and $refAppliesTo.matches.Count -gt 0) {
-            foreach ( $appliesToMatch in $refAppliesTo.matches ) {
-                $appliesToHost = $appliesToMatch.Groups[1].Value.trim().ToLower().Trim('</br>')
-                $appTo = $appliesToHosts[ $appliesToHost ]
-                if ($appliesToHosts.ContainsKey( $appliesToHost ) -and (-not ($appliesToList -contains $appTo))) {
-                    $appliesToList += $appTo
-                }
-                else {
-                    error "Host $appTo not found in script appliesToHosts list"
+        $includeContent = [System.IO.File]::ReadAllText( $file, $enc )   
+        $funcIncludeLine = @{}; 
+        ForEach ($includeLine in $($includeContent -split "`n"))
+        {
+            if ($includeLine -match '^\s*\|\s*([\w<>/]+)\s*\|')
+            {
+                $funcInlineNames = $matches[1]
+                $fs = $funcInlineNames -split '</br>'
+                foreach($f in $fs)
+                {
+                    $funcIncludeLine[$f] = $includeLine
                 }
             }
-
-            foreach ( $appliesTo in $appliesToList ) {
-                foreach ( $funcName in $funcNames ) {
-                    if ( -not ($jsonFuncs[$appliesTo] -contains $funcName) ) {
-                        error "JSON entry for AppliesTo not found" "$appliesTo, $funcName"
-                    }
+            elseif ($includeLine -imatch '^\s*\*\*applies to:')
+            {
+                foreach( $f in $funcNames)
+                {
+                    $funcIncludeLine[$f] = $includeLine
                 }
             }
+        }
 
-            foreach ( $funcName in $funcNames ) {
-                foreach ( $hostName in $funcsJson[$funcName] ) {
-                    if (-not ($appliesToList -contains $hostName)) {
-                        error "AppliesTo entry not found for JSON entry" "$hostName, $funcName"
+        foreach ($f in $funcNames)
+        {
+            if (-not $funcIncludeLine[$f])
+            {
+                error "include line missing for $f"
+            }
+            else
+            {
+                $refAppliesTo = Select-String ':::image[^:]*source="[^:]*media/yes-icon.svg"[^:]*:::([^|:\<\n\r]+)' -input $funcIncludeLine[$f] -AllMatches
+                if ($refAppliesTo -and $refAppliesTo.matches.Count -gt 0) {
+                    foreach ( $appliesToMatch in $refAppliesTo.matches ) {
+                        $appliesToHost = $appliesToMatch.Groups[1].Value.trim().ToLower().Trim('</br>')
+                        $appTo = $lowerProductToHost[$appliesToHost]
+
+                        if (-not $appTo) {
+                            error "Host $appTo not found in product list for $f"
+                        }
+                        else
+                        {
+                            if (-not $jsonFuncs[$appTo] -contains $f) {
+                                error "JSON entry for AppliesTo not found" "$appliesTo, $f"
+                            }
+                            
+                            $jsonFuncs[$appTo] = $jsonFuncs[$appTo] -replace $f, ""
+                        }
                     }
+                }
+                else
+                {
+                    error "can't parse include line for $f" $funcIncludeLine[$f]
+                }   
+            }
+
+            foreach ($j in $jsonFuncs.Keys)
+            {
+                if ($jsonFuncs[$j] -contains $f)
+                {
+                    error "AppliesTo entry not found for JSON entry" "$j, $f"
                 }
             }
         }

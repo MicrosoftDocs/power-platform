@@ -15,22 +15,7 @@ contributors:
   - mduelae
 ---
 
-# PDF function(experimental)
-
-[!INCLUDE[function-pdf-applies-to](includes/function-pdf-applies-to.md)]
-
-[!INCLUDE[function-pdf-applies-to](includes/function-pdf-applies-to.md)]
-
-[!INCLUDE[function-pdf-applies-to](includes/function-pdf-applies-to.md)]
-
-[!INCLUDE[function-pdf-applies-to](includes/function-pdf-applies-to.md)]
-
-[!INCLUDE[function-pdf-applies-to](includes/function-pdf-applies-to.md)]
-
-[!INCLUDE[function-pdf-applies-to](includes/function-pdf-applies-to.md)]
-
-[!INCLUDE[function-pdf-applies-to](includes/function-pdf-applies-to.md)]
-
+# PDF function (experimental)
 [!INCLUDE[function-pdf-applies-to](includes/function-pdf-applies-to.md)]
 
 
@@ -92,6 +77,55 @@ Different configuration options enable different outcomes for the resulting gene
 - Non-Latin script types and font weights and styles such as bold and italic may not appear in the generated PDF for some fonts.
 
 - Creation of fillable PDFs isn't supported.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

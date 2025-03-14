@@ -18,21 +18,6 @@ contributors:
 ---
 
 # Sequence function
-
-[!INCLUDE[function-sequence-applies-to](includes/function-sequence-applies-to.md)]
-
-[!INCLUDE[function-sequence-applies-to](includes/function-sequence-applies-to.md)]
-
-[!INCLUDE[function-sequence-applies-to](includes/function-sequence-applies-to.md)]
-
-[!INCLUDE[function-sequence-applies-to](includes/function-sequence-applies-to.md)]
-
-[!INCLUDE[function-sequence-applies-to](includes/function-sequence-applies-to.md)]
-
-[!INCLUDE[function-sequence-applies-to](includes/function-sequence-applies-to.md)]
-
-[!INCLUDE[function-sequence-applies-to](includes/function-sequence-applies-to.md)]
-
 [!INCLUDE[function-sequence-applies-to](includes/function-sequence-applies-to.md)]
 
 
@@ -91,6 +76,55 @@ See the [**Char**](function-char.md#display-a-character-map) function reference 
 See the [**As**](operators.md#as-operator) operator reference for two **Sequence** functions working together to create a chessboard in a text string and in two nested galleries.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

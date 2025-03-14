@@ -18,21 +18,6 @@ contributors:
 ---
 
 # Assert function
-
-[!INCLUDE[function-assert-applies-to](includes/function-assert-applies-to.md)]
-
-[!INCLUDE[function-assert-applies-to](includes/function-assert-applies-to.md)]
-
-[!INCLUDE[function-assert-applies-to](includes/function-assert-applies-to.md)]
-
-[!INCLUDE[function-assert-applies-to](includes/function-assert-applies-to.md)]
-
-[!INCLUDE[function-assert-applies-to](includes/function-assert-applies-to.md)]
-
-[!INCLUDE[function-assert-applies-to](includes/function-assert-applies-to.md)]
-
-[!INCLUDE[function-assert-applies-to](includes/function-assert-applies-to.md)]
-
 [!INCLUDE[function-assert-applies-to](includes/function-assert-applies-to.md)]
 
 
@@ -63,6 +48,56 @@ _Assert(expression, message)_
 [Working with Test Studio](/power-apps/maker/canvas-apps/working-with-test-studio)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

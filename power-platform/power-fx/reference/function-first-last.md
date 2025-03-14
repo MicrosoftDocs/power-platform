@@ -17,21 +17,6 @@ contributors:
 ---
 
 # First, FirstN, Index, Last, and LastN functions
-
-[!INCLUDE[function-first-last-applies-to](includes/function-first-last-applies-to.md)]
-
-[!INCLUDE[function-first-last-applies-to](includes/function-first-last-applies-to.md)]
-
-[!INCLUDE[function-first-last-applies-to](includes/function-first-last-applies-to.md)]
-
-[!INCLUDE[function-first-last-applies-to](includes/function-first-last-applies-to.md)]
-
-[!INCLUDE[function-first-last-applies-to](includes/function-first-last-applies-to.md)]
-
-[!INCLUDE[function-first-last-applies-to](includes/function-first-last-applies-to.md)]
-
-[!INCLUDE[function-first-last-applies-to](includes/function-first-last-applies-to.md)]
-
 [!INCLUDE[function-first-last-applies-to](includes/function-first-last-applies-to.md)]
 
 
@@ -101,6 +86,55 @@ Collect( IceCream, Table( { Flavor: "Chocolate", Quantity: 100 },
 | **Index(&nbsp;IceCream,&nbsp;10&nbsp;)**         | Returns an error since the record requested is beyond the bounds of the table. | _Error_                                                                                                        |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

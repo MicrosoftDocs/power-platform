@@ -18,21 +18,6 @@ contributors:
 ---
 
 # Mod function
-
-[!INCLUDE[function-mod-applies-to](includes/function-mod-applies-to.md)]
-
-[!INCLUDE[function-mod-applies-to](includes/function-mod-applies-to.md)]
-
-[!INCLUDE[function-mod-applies-to](includes/function-mod-applies-to.md)]
-
-[!INCLUDE[function-mod-applies-to](includes/function-mod-applies-to.md)]
-
-[!INCLUDE[function-mod-applies-to](includes/function-mod-applies-to.md)]
-
-[!INCLUDE[function-mod-applies-to](includes/function-mod-applies-to.md)]
-
-[!INCLUDE[function-mod-applies-to](includes/function-mod-applies-to.md)]
-
 [!INCLUDE[function-mod-applies-to](includes/function-mod-applies-to.md)]
 
 
@@ -53,6 +38,55 @@ The result has the same sign as the divisor.
 - _Divisor_ - Required. Number to divide by.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

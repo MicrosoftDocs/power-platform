@@ -18,21 +18,6 @@ contributors:
 ---
 
 # Back and Navigate functions
-
-[!INCLUDE[function-navigate-applies-to](includes/function-navigate-applies-to.md)]
-
-[!INCLUDE[function-navigate-applies-to](includes/function-navigate-applies-to.md)]
-
-[!INCLUDE[function-navigate-applies-to](includes/function-navigate-applies-to.md)]
-
-[!INCLUDE[function-navigate-applies-to](includes/function-navigate-applies-to.md)]
-
-[!INCLUDE[function-navigate-applies-to](includes/function-navigate-applies-to.md)]
-
-[!INCLUDE[function-navigate-applies-to](includes/function-navigate-applies-to.md)]
-
-[!INCLUDE[function-navigate-applies-to](includes/function-navigate-applies-to.md)]
-
 [!INCLUDE[function-navigate-applies-to](includes/function-navigate-applies-to.md)]
 
 Changes which screen is displayed.
@@ -146,6 +131,55 @@ When the **Back** function runs, the inverse transition is used by default. For 
 [Using context variables](/power-apps/maker/canvas-apps/working-with-variables#use-a-context-variable)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

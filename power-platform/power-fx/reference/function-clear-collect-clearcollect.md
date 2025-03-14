@@ -18,21 +18,6 @@ contributors:
 ---
 
 # Collect, Clear, and ClearCollect functions
-
-[!INCLUDE[function-clear-collect-clearcollect-applies-to](includes/function-clear-collect-clearcollect-applies-to.md)]
-
-[!INCLUDE[function-clear-collect-clearcollect-applies-to](includes/function-clear-collect-clearcollect-applies-to.md)]
-
-[!INCLUDE[function-clear-collect-clearcollect-applies-to](includes/function-clear-collect-clearcollect-applies-to.md)]
-
-[!INCLUDE[function-clear-collect-clearcollect-applies-to](includes/function-clear-collect-clearcollect-applies-to.md)]
-
-[!INCLUDE[function-clear-collect-clearcollect-applies-to](includes/function-clear-collect-clearcollect-applies-to.md)]
-
-[!INCLUDE[function-clear-collect-clearcollect-applies-to](includes/function-clear-collect-clearcollect-applies-to.md)]
-
-[!INCLUDE[function-clear-collect-clearcollect-applies-to](includes/function-clear-collect-clearcollect-applies-to.md)]
-
 [!INCLUDE[function-clear-collect-clearcollect-applies-to](includes/function-clear-collect-clearcollect-applies-to.md)]
 
 Creates and clears [collections](/power-apps/maker/canvas-apps/working-with-data-sources#collections) and adds [records](/power-apps/maker/canvas-apps/working-with-tables#records) to any [data source](/power-apps/maker/canvas-apps/working-with-data-sources).
@@ -124,6 +109,56 @@ These examples examine how record and table arguments to **Collect** and **Clear
 | **ClearCollect( IceCream,<br>{&nbsp;MyFavorites: Table( {&nbsp;Flavor:&nbsp;"Chocolate",&nbsp;Quantity:&nbsp;100&nbsp;}, {&nbsp;Flavor:&nbsp;"Vanilla",&nbsp;Quantity:&nbsp;200&nbsp;} ) } )** | Same as the previous example except that the table is wrapped in a record. The records of the table aren't extracted and instead the entire table is added as a cell of the record.                                               | ![Chocolate and Vanilla records added to collection modified with table wrapped in a record.](media/function-clear-collect-clearcollect/icecream-myfavorites.png)<br><br>The **IceCream** collection has also been modified. |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

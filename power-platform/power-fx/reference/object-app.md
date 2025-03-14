@@ -17,21 +17,6 @@ ms.contributors:
 - anuitz
 ---
 # App object in Power Apps
-
-[!INCLUDE[object-app-applies-to](includes/object-app-applies-to.md)]
-
-[!INCLUDE[object-app-applies-to](includes/object-app-applies-to.md)]
-
-[!INCLUDE[object-app-applies-to](includes/object-app-applies-to.md)]
-
-[!INCLUDE[object-app-applies-to](includes/object-app-applies-to.md)]
-
-[!INCLUDE[object-app-applies-to](includes/object-app-applies-to.md)]
-
-[!INCLUDE[object-app-applies-to](includes/object-app-applies-to.md)]
-
-[!INCLUDE[object-app-applies-to](includes/object-app-applies-to.md)]
-
 [!INCLUDE[object-app-applies-to](includes/object-app-applies-to.md)]
 
 
@@ -421,6 +406,55 @@ Use the **StudioVersion** property to display or log the version of Power Apps S
 **StudioVersion** is returned as text. The format of the text may change over time and should be treated as a whole; avoid extracting individual portions.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

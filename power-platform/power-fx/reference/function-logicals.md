@@ -18,21 +18,6 @@ contributors:
 ---
 
 # And, Or, and Not functions
-
-[!INCLUDE[function-logicals-applies-to](includes/function-logicals-applies-to.md)]
-
-[!INCLUDE[function-logicals-applies-to](includes/function-logicals-applies-to.md)]
-
-[!INCLUDE[function-logicals-applies-to](includes/function-logicals-applies-to.md)]
-
-[!INCLUDE[function-logicals-applies-to](includes/function-logicals-applies-to.md)]
-
-[!INCLUDE[function-logicals-applies-to](includes/function-logicals-applies-to.md)]
-
-[!INCLUDE[function-logicals-applies-to](includes/function-logicals-applies-to.md)]
-
-[!INCLUDE[function-logicals-applies-to](includes/function-logicals-applies-to.md)]
-
 [!INCLUDE[function-logicals-applies-to](includes/function-logicals-applies-to.md)]
 
 
@@ -99,6 +84,55 @@ Select the button (by clicking it while you hold down the Alt key), and then set
 | **Not IsBlank(&nbsp;s&nbsp;)**                                                              | Tests whether **s** is _blank_, which returns _false_. **Not** returns the opposite of this result, which is _true_.                                                                                                                | _true_  |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

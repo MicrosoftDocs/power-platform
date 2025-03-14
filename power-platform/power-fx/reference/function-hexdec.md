@@ -14,21 +14,6 @@ search.app:
   - PowerApps
 ---
 # Dec2Hex and Hex2Dec functions
-
-[!INCLUDE[function-hexdec-applies-to](includes/function-hexdec-applies-to.md)]
-
-[!INCLUDE[function-hexdec-applies-to](includes/function-hexdec-applies-to.md)]
-
-[!INCLUDE[function-hexdec-applies-to](includes/function-hexdec-applies-to.md)]
-
-[!INCLUDE[function-hexdec-applies-to](includes/function-hexdec-applies-to.md)]
-
-[!INCLUDE[function-hexdec-applies-to](includes/function-hexdec-applies-to.md)]
-
-[!INCLUDE[function-hexdec-applies-to](includes/function-hexdec-applies-to.md)]
-
-[!INCLUDE[function-hexdec-applies-to](includes/function-hexdec-applies-to.md)]
-
 [!INCLUDE[function-hexdec-applies-to](includes/function-hexdec-applies-to.md)]
 
 
@@ -114,6 +99,55 @@ If the input value is out of range or includes invalid hexadecimal characters, a
 | `Dec2Hex( 255, [0, 1, 2, 3] )`   | `[ error (not enough space), error (not enough space), "FF", "0FF" ]` |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

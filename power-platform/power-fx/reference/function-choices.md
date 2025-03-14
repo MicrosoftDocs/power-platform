@@ -18,21 +18,6 @@ contributors:
 ---
 
 # Choices function
-
-[!INCLUDE[function-choices-applies-to](includes/function-choices-applies-to.md)]
-
-[!INCLUDE[function-choices-applies-to](includes/function-choices-applies-to.md)]
-
-[!INCLUDE[function-choices-applies-to](includes/function-choices-applies-to.md)]
-
-[!INCLUDE[function-choices-applies-to](includes/function-choices-applies-to.md)]
-
-[!INCLUDE[function-choices-applies-to](includes/function-choices-applies-to.md)]
-
-[!INCLUDE[function-choices-applies-to](includes/function-choices-applies-to.md)]
-
-[!INCLUDE[function-choices-applies-to](includes/function-choices-applies-to.md)]
-
 [!INCLUDE[function-choices-applies-to](includes/function-choices-applies-to.md)]
 
 
@@ -124,6 +109,56 @@ At this time, you can use lookup columns only with SharePoint and Microsoft Data
    ![A canvas screen with a data table control. The Items property is set to the formula Choices( Accounts.'Primary Contact' ), and the table shows the firstname and lastname columns for the first set of records from the Contacts table.](media/function-choices/full-accounts-pc.png)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

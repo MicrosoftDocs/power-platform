@@ -18,21 +18,6 @@ contributors:
 ---
 
 # DateValue, TimeValue, and DateTimeValue functions
-
-[!INCLUDE[function-datevalue-timevalue-applies-to](includes/function-datevalue-timevalue-applies-to.md)]
-
-[!INCLUDE[function-datevalue-timevalue-applies-to](includes/function-datevalue-timevalue-applies-to.md)]
-
-[!INCLUDE[function-datevalue-timevalue-applies-to](includes/function-datevalue-timevalue-applies-to.md)]
-
-[!INCLUDE[function-datevalue-timevalue-applies-to](includes/function-datevalue-timevalue-applies-to.md)]
-
-[!INCLUDE[function-datevalue-timevalue-applies-to](includes/function-datevalue-timevalue-applies-to.md)]
-
-[!INCLUDE[function-datevalue-timevalue-applies-to](includes/function-datevalue-timevalue-applies-to.md)]
-
-[!INCLUDE[function-datevalue-timevalue-applies-to](includes/function-datevalue-timevalue-applies-to.md)]
-
 [!INCLUDE[function-datevalue-timevalue-applies-to](includes/function-datevalue-timevalue-applies-to.md)]
 
 
@@ -168,6 +153,55 @@ If( TimeValue( FinishedAt.Text ) < TimeValue( "5:00:00.000 PM" ),
 - If you type **5:00:00.000 PM** in the **FinishedAt** control, the label shows "_Too late!_"
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

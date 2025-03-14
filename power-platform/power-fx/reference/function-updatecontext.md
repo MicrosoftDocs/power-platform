@@ -18,21 +18,6 @@ contributors:
 ---
 
 # UpdateContext function
-
-[!INCLUDE[function-updatecontext-applies-to](includes/function-updatecontext-applies-to.md)]
-
-[!INCLUDE[function-updatecontext-applies-to](includes/function-updatecontext-applies-to.md)]
-
-[!INCLUDE[function-updatecontext-applies-to](includes/function-updatecontext-applies-to.md)]
-
-[!INCLUDE[function-updatecontext-applies-to](includes/function-updatecontext-applies-to.md)]
-
-[!INCLUDE[function-updatecontext-applies-to](includes/function-updatecontext-applies-to.md)]
-
-[!INCLUDE[function-updatecontext-applies-to](includes/function-updatecontext-applies-to.md)]
-
-[!INCLUDE[function-updatecontext-applies-to](includes/function-updatecontext-applies-to.md)]
-
 [!INCLUDE[function-updatecontext-applies-to](includes/function-updatecontext-applies-to.md)]
 
 
@@ -123,6 +108,55 @@ Every context variable is scoped to a screen. If you want to define a context va
 1. Add a button, and set its **[OnSelect](/power-apps/maker/canvas-apps/controls/properties-core)** property to this formula: <br> **UpdateContext( { Name: "Lily", Score: 10 } )**
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

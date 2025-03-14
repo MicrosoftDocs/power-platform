@@ -17,21 +17,6 @@ contributors:
 ---
 
 # Launch and Param functions
-
-[!INCLUDE[function-param-applies-to](includes/function-param-applies-to.md)]
-
-[!INCLUDE[function-param-applies-to](includes/function-param-applies-to.md)]
-
-[!INCLUDE[function-param-applies-to](includes/function-param-applies-to.md)]
-
-[!INCLUDE[function-param-applies-to](includes/function-param-applies-to.md)]
-
-[!INCLUDE[function-param-applies-to](includes/function-param-applies-to.md)]
-
-[!INCLUDE[function-param-applies-to](includes/function-param-applies-to.md)]
-
-[!INCLUDE[function-param-applies-to](includes/function-param-applies-to.md)]
-
 [!INCLUDE[function-param-applies-to](includes/function-param-applies-to.md)]
 
 
@@ -331,6 +316,55 @@ The **Product Showcase** tablet layout template was used for the following examp
 [Canvas app formula reference](/power-apps/maker/canvas-apps/formula-reference)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

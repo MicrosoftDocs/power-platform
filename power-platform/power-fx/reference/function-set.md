@@ -18,21 +18,6 @@ contributors:
 ---
 
 # Set function
-
-[!INCLUDE[function-set-applies-to](includes/function-set-applies-to.md)]
-
-[!INCLUDE[function-set-applies-to](includes/function-set-applies-to.md)]
-
-[!INCLUDE[function-set-applies-to](includes/function-set-applies-to.md)]
-
-[!INCLUDE[function-set-applies-to](includes/function-set-applies-to.md)]
-
-[!INCLUDE[function-set-applies-to](includes/function-set-applies-to.md)]
-
-[!INCLUDE[function-set-applies-to](includes/function-set-applies-to.md)]
-
-[!INCLUDE[function-set-applies-to](includes/function-set-applies-to.md)]
-
 [!INCLUDE[function-set-applies-to](includes/function-set-applies-to.md)]
 
 
@@ -86,6 +71,55 @@ Global variables cannot use the same name as an existing collection or control. 
 | **Set(&nbsp;Person, Patch(&nbsp;Person,&nbsp;{Address:&nbsp;"2&nbsp;Main&nbsp;St"&nbsp;}&nbsp;)&nbsp;)** | Works with the **[Patch](function-patch.md)** function to update the **Person** global variable by setting the value of the **Address** column to **2 Main St**.                                                                                              | **Person** now has the value of record **{&nbsp;Name:&nbsp;"Milton", Address:&nbsp;"2&nbsp;Main&nbsp;St"&nbsp;}**.                                                                                                                                                            |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

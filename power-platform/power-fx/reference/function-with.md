@@ -18,21 +18,6 @@ contributors:
 ---
 
 # With function
-
-[!INCLUDE[function-with-applies-to](includes/function-with-applies-to.md)]
-
-[!INCLUDE[function-with-applies-to](includes/function-with-applies-to.md)]
-
-[!INCLUDE[function-with-applies-to](includes/function-with-applies-to.md)]
-
-[!INCLUDE[function-with-applies-to](includes/function-with-applies-to.md)]
-
-[!INCLUDE[function-with-applies-to](includes/function-with-applies-to.md)]
-
-[!INCLUDE[function-with-applies-to](includes/function-with-applies-to.md)]
-
-[!INCLUDE[function-with-applies-to](includes/function-with-applies-to.md)]
-
 [!INCLUDE[function-with-applies-to](includes/function-with-applies-to.md)]
 
 
@@ -145,6 +130,55 @@ Note that although the sub-matches contain numbers they are still in a text stri
 See [Map record](/power-apps/maker/canvas-apps/map-component-input-fields#map-records).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

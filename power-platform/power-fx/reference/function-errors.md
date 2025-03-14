@@ -18,21 +18,6 @@ contributors:
 ---
 
 # Errors function
-
-[!INCLUDE[function-errors-applies-to](includes/function-errors-applies-to.md)]
-
-[!INCLUDE[function-errors-applies-to](includes/function-errors-applies-to.md)]
-
-[!INCLUDE[function-errors-applies-to](includes/function-errors-applies-to.md)]
-
-[!INCLUDE[function-errors-applies-to](includes/function-errors-applies-to.md)]
-
-[!INCLUDE[function-errors-applies-to](includes/function-errors-applies-to.md)]
-
-[!INCLUDE[function-errors-applies-to](includes/function-errors-applies-to.md)]
-
-[!INCLUDE[function-errors-applies-to](includes/function-errors-applies-to.md)]
-
 [!INCLUDE[function-errors-applies-to](includes/function-errors-applies-to.md)]
 
 
@@ -128,6 +113,55 @@ You can also add a **Reload** button on the form, so that the user can efficient
   **ReloadButton.OnSelect = Revert( IceCream, EditRecord )**
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -18,21 +18,6 @@ contributors:
 ---
 
 # GUID function
-
-[!INCLUDE[function-guid-applies-to](includes/function-guid-applies-to.md)]
-
-[!INCLUDE[function-guid-applies-to](includes/function-guid-applies-to.md)]
-
-[!INCLUDE[function-guid-applies-to](includes/function-guid-applies-to.md)]
-
-[!INCLUDE[function-guid-applies-to](includes/function-guid-applies-to.md)]
-
-[!INCLUDE[function-guid-applies-to](includes/function-guid-applies-to.md)]
-
-[!INCLUDE[function-guid-applies-to](includes/function-guid-applies-to.md)]
-
-[!INCLUDE[function-guid-applies-to](includes/function-guid-applies-to.md)]
-
 [!INCLUDE[function-guid-applies-to](includes/function-guid-applies-to.md)]
 
 
@@ -137,6 +122,55 @@ Set( NewGUID, GUID() )
 ```
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

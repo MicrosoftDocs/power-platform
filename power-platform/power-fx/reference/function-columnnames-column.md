@@ -14,21 +14,6 @@ contributors:
   - carlosff
 ---
 # ColumnNames and Column functions
-
-[!INCLUDE[function-columnnames-column-applies-to](includes/function-columnnames-column-applies-to.md)]
-
-[!INCLUDE[function-columnnames-column-applies-to](includes/function-columnnames-column-applies-to.md)]
-
-[!INCLUDE[function-columnnames-column-applies-to](includes/function-columnnames-column-applies-to.md)]
-
-[!INCLUDE[function-columnnames-column-applies-to](includes/function-columnnames-column-applies-to.md)]
-
-[!INCLUDE[function-columnnames-column-applies-to](includes/function-columnnames-column-applies-to.md)]
-
-[!INCLUDE[function-columnnames-column-applies-to](includes/function-columnnames-column-applies-to.md)]
-
-[!INCLUDE[function-columnnames-column-applies-to](includes/function-columnnames-column-applies-to.md)]
-
 [!INCLUDE[function-columnnames-column-applies-to](includes/function-columnnames-column-applies-to.md)]
 
 
@@ -107,6 +92,56 @@ Calling the Column or ColumnNames functions with untyped objects that don't repr
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

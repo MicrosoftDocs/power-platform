@@ -18,21 +18,6 @@ contributors:
 ---
 
 # Download function
-
-[!INCLUDE[function-download-applies-to](includes/function-download-applies-to.md)]
-
-[!INCLUDE[function-download-applies-to](includes/function-download-applies-to.md)]
-
-[!INCLUDE[function-download-applies-to](includes/function-download-applies-to.md)]
-
-[!INCLUDE[function-download-applies-to](includes/function-download-applies-to.md)]
-
-[!INCLUDE[function-download-applies-to](includes/function-download-applies-to.md)]
-
-[!INCLUDE[function-download-applies-to](includes/function-download-applies-to.md)]
-
-[!INCLUDE[function-download-applies-to](includes/function-download-applies-to.md)]
-
 [!INCLUDE[function-download-applies-to](includes/function-download-applies-to.md)]
 
 
@@ -105,6 +90,55 @@ The **Product Showcase** tablet layout template was used for the following examp
 [Canvas app formula reference](/power-apps/maker/canvas-apps/formula-reference)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

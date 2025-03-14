@@ -18,21 +18,6 @@ contributors:
 ---
 
 # Count, CountA, CountIf, and CountRows functions
-
-[!INCLUDE[function-table-counts-applies-to](includes/function-table-counts-applies-to.md)]
-
-[!INCLUDE[function-table-counts-applies-to](includes/function-table-counts-applies-to.md)]
-
-[!INCLUDE[function-table-counts-applies-to](includes/function-table-counts-applies-to.md)]
-
-[!INCLUDE[function-table-counts-applies-to](includes/function-table-counts-applies-to.md)]
-
-[!INCLUDE[function-table-counts-applies-to](includes/function-table-counts-applies-to.md)]
-
-[!INCLUDE[function-table-counts-applies-to](includes/function-table-counts-applies-to.md)]
-
-[!INCLUDE[function-table-counts-applies-to](includes/function-table-counts-applies-to.md)]
-
 [!INCLUDE[function-table-counts-applies-to](includes/function-table-counts-applies-to.md)]
 
 
@@ -105,6 +90,55 @@ You need to enable the **Enhanced delegation for Microsoft Dataverse** option in
    The label shows **5** because the collection contains five rows.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

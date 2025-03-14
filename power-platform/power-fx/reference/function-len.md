@@ -18,21 +18,6 @@ contributors:
 ---
 
 # Len function
-
-[!INCLUDE[function-len-applies-to](includes/function-len-applies-to.md)]
-
-[!INCLUDE[function-len-applies-to](includes/function-len-applies-to.md)]
-
-[!INCLUDE[function-len-applies-to](includes/function-len-applies-to.md)]
-
-[!INCLUDE[function-len-applies-to](includes/function-len-applies-to.md)]
-
-[!INCLUDE[function-len-applies-to](includes/function-len-applies-to.md)]
-
-[!INCLUDE[function-len-applies-to](includes/function-len-applies-to.md)]
-
-[!INCLUDE[function-len-applies-to](includes/function-len-applies-to.md)]
-
 [!INCLUDE[function-len-applies-to](includes/function-len-applies-to.md)]
 
 
@@ -81,6 +66,55 @@ For the first example in this section, the data source is named **People** and c
 | **Len( [ "Hello", "to the", "World", "" ] )** | In the **[Value](function-value.md)** column of the inline table:<br><ul><li>Measures the length of each string.</li><li>Returns a single-column table that contains the length of each string.</li> | A single-column table with a `Value` column containing the following values: 5, 6, 5, 0 |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

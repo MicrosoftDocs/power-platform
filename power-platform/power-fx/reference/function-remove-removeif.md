@@ -18,21 +18,6 @@ contributors:
 ---
 
 # Remove and RemoveIf functions
-
-[!INCLUDE[function-remove-removeif-applies-to](includes/function-remove-removeif-applies-to.md)]
-
-[!INCLUDE[function-remove-removeif-applies-to](includes/function-remove-removeif-applies-to.md)]
-
-[!INCLUDE[function-remove-removeif-applies-to](includes/function-remove-removeif-applies-to.md)]
-
-[!INCLUDE[function-remove-removeif-applies-to](includes/function-remove-removeif-applies-to.md)]
-
-[!INCLUDE[function-remove-removeif-applies-to](includes/function-remove-removeif-applies-to.md)]
-
-[!INCLUDE[function-remove-removeif-applies-to](includes/function-remove-removeif-applies-to.md)]
-
-[!INCLUDE[function-remove-removeif-applies-to](includes/function-remove-removeif-applies-to.md)]
-
 [!INCLUDE[function-remove-removeif-applies-to](includes/function-remove-removeif-applies-to.md)]
 
 
@@ -288,6 +273,55 @@ Sample collection is created that you can use in the following example.
 1. Close the app preview.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -18,21 +18,6 @@ contributors:
 ---
 
 # Trim and TrimEnds functions
-
-[!INCLUDE[function-trim-applies-to](includes/function-trim-applies-to.md)]
-
-[!INCLUDE[function-trim-applies-to](includes/function-trim-applies-to.md)]
-
-[!INCLUDE[function-trim-applies-to](includes/function-trim-applies-to.md)]
-
-[!INCLUDE[function-trim-applies-to](includes/function-trim-applies-to.md)]
-
-[!INCLUDE[function-trim-applies-to](includes/function-trim-applies-to.md)]
-
-[!INCLUDE[function-trim-applies-to](includes/function-trim-applies-to.md)]
-
-[!INCLUDE[function-trim-applies-to](includes/function-trim-applies-to.md)]
-
 [!INCLUDE[function-trim-applies-to](includes/function-trim-applies-to.md)]
 
 
@@ -88,6 +73,55 @@ To create this collection, set the **OnSelect** property of a **[Button](/power-
 > Extra spaces don't appear if you display a collection by clicking or tapping **Collections** on the **File** menu. To verify string length, use the **[Len](function-len.md)** function.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

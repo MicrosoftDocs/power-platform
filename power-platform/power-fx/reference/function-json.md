@@ -18,21 +18,6 @@ contributors:
 ---
 
 # JSON function
-
-[!INCLUDE[function-json-applies-to](includes/function-json-applies-to.md)]
-
-[!INCLUDE[function-json-applies-to](includes/function-json-applies-to.md)]
-
-[!INCLUDE[function-json-applies-to](includes/function-json-applies-to.md)]
-
-[!INCLUDE[function-json-applies-to](includes/function-json-applies-to.md)]
-
-[!INCLUDE[function-json-applies-to](includes/function-json-applies-to.md)]
-
-[!INCLUDE[function-json-applies-to](includes/function-json-applies-to.md)]
-
-[!INCLUDE[function-json-applies-to](includes/function-json-applies-to.md)]
-
 [!INCLUDE[function-json-applies-to](includes/function-json-applies-to.md)]
 
 
@@ -257,6 +242,55 @@ produces the text string **[1,2,3]**.
 Note that the FlattenValueTables option has no impact when using JSON with the **CityPopulations** or **CitiesByCountry** collections as these tables are not Value tables. A Value table has a single column and it must be named "Value".
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

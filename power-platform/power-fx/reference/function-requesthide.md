@@ -18,21 +18,6 @@ contributors:
 ---
 
 # RequestHide function
-
-[!INCLUDE[function-requesthide-applies-to](includes/function-requesthide-applies-to.md)]
-
-[!INCLUDE[function-requesthide-applies-to](includes/function-requesthide-applies-to.md)]
-
-[!INCLUDE[function-requesthide-applies-to](includes/function-requesthide-applies-to.md)]
-
-[!INCLUDE[function-requesthide-applies-to](includes/function-requesthide-applies-to.md)]
-
-[!INCLUDE[function-requesthide-applies-to](includes/function-requesthide-applies-to.md)]
-
-[!INCLUDE[function-requesthide-applies-to](includes/function-requesthide-applies-to.md)]
-
-[!INCLUDE[function-requesthide-applies-to](includes/function-requesthide-applies-to.md)]
-
 [!INCLUDE[function-requesthide-applies-to](includes/function-requesthide-applies-to.md)]
 
 
@@ -63,6 +48,55 @@ This function is not required for the **SharePointIntegration** control's **OnCa
 | **RequestHide()** | Hides the form. |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

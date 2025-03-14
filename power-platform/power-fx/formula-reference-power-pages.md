@@ -107,6 +107,8 @@ In this article, learn about all the functions available in Power Pages.
 
 **[EOMonth](reference/function-edate-eomonth.md)** – Adds or subtracts months to a date, returning the last day of that month.
 
+**[Error](reference/function-iferror.md)** – Create a custom error or pass through an error.
+
 **[exactin](reference/operators.md#in-and-exactin-operators)** – Checks if a text string is contained within another text string or table, case dependent. Also used to check if a record is in a table.
 
 **[Exp](reference/function-numericals.md)** – Returns _e_ raised to a power.
@@ -303,6 +305,8 @@ In this article, learn about all the functions available in Power Pages.
 
 ## U
 
+**[UniChar](reference/function-char.md)** – Translates a Unicode code into a string.
+
 **[Upper](reference/function-lower-upper-proper.md)** – Converts letters in a string of text to all uppercase.
 
 **[User](reference/function-user.md)** – Returns information about the current user.
@@ -316,7 +320,6 @@ In this article, learn about all the functions available in Power Pages.
 **[Value](reference/function-value.md)** – Converts a string to a number.
 
 **[VarP](reference/function-aggregates.md)** – Returns the variance of its arguments.
-
 
 ## W
 

@@ -18,21 +18,6 @@ contributors:
 ---
 
 # Concat and Concatenate functions
-
-[!INCLUDE[function-concatenate-applies-to](includes/function-concatenate-applies-to.md)]
-
-[!INCLUDE[function-concatenate-applies-to](includes/function-concatenate-applies-to.md)]
-
-[!INCLUDE[function-concatenate-applies-to](includes/function-concatenate-applies-to.md)]
-
-[!INCLUDE[function-concatenate-applies-to](includes/function-concatenate-applies-to.md)]
-
-[!INCLUDE[function-concatenate-applies-to](includes/function-concatenate-applies-to.md)]
-
-[!INCLUDE[function-concatenate-applies-to](includes/function-concatenate-applies-to.md)]
-
-[!INCLUDE[function-concatenate-applies-to](includes/function-concatenate-applies-to.md)]
-
 [!INCLUDE[function-concatenate-applies-to](includes/function-concatenate-applies-to.md)]
 
 
@@ -125,6 +110,56 @@ For these examples, add a blank, vertical gallery, set its **Items** property to
 | **Split( Concat(&nbsp;Products,&nbsp;Name,&nbsp;",&nbsp;"&nbsp;), ", " )** | Splits the text string with the separator **", "**. | A single-column table with a `Value` column containing the following values: "Violin", "Cello", "Trumpet" |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

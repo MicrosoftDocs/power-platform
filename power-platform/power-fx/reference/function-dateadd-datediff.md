@@ -19,21 +19,6 @@ contributors:
 ---
 
 # DateAdd, DateDiff, and TimeZoneOffset functions
-
-[!INCLUDE[function-dateadd-datediff-applies-to](includes/function-dateadd-datediff-applies-to.md)]
-
-[!INCLUDE[function-dateadd-datediff-applies-to](includes/function-dateadd-datediff-applies-to.md)]
-
-[!INCLUDE[function-dateadd-datediff-applies-to](includes/function-dateadd-datediff-applies-to.md)]
-
-[!INCLUDE[function-dateadd-datediff-applies-to](includes/function-dateadd-datediff-applies-to.md)]
-
-[!INCLUDE[function-dateadd-datediff-applies-to](includes/function-dateadd-datediff-applies-to.md)]
-
-[!INCLUDE[function-dateadd-datediff-applies-to](includes/function-dateadd-datediff-applies-to.md)]
-
-[!INCLUDE[function-dateadd-datediff-applies-to](includes/function-dateadd-datediff-applies-to.md)]
-
 [!INCLUDE[function-dateadd-datediff-applies-to](includes/function-dateadd-datediff-applies-to.md)]
 
 | Function | Applies to |
@@ -133,6 +118,55 @@ Note the negative sign before **TimeZoneOffset** to subtract the offset rather t
 To see the result, use the **Text** function with the format _dd-mm-yyyy hh:mm_, which will result in **15-07-2013 13:02** if you're in Pacific Daylight Time.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

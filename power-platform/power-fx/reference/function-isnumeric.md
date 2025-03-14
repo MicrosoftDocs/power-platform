@@ -18,21 +18,6 @@ contributors:
 ---
 
 # IsNumeric function
-
-[!INCLUDE[function-isnumeric-applies-to](includes/function-isnumeric-applies-to.md)]
-
-[!INCLUDE[function-isnumeric-applies-to](includes/function-isnumeric-applies-to.md)]
-
-[!INCLUDE[function-isnumeric-applies-to](includes/function-isnumeric-applies-to.md)]
-
-[!INCLUDE[function-isnumeric-applies-to](includes/function-isnumeric-applies-to.md)]
-
-[!INCLUDE[function-isnumeric-applies-to](includes/function-isnumeric-applies-to.md)]
-
-[!INCLUDE[function-isnumeric-applies-to](includes/function-isnumeric-applies-to.md)]
-
-[!INCLUDE[function-isnumeric-applies-to](includes/function-isnumeric-applies-to.md)]
-
 [!INCLUDE[function-isnumeric-applies-to](includes/function-isnumeric-applies-to.md)]
 
 
@@ -52,6 +37,55 @@ The return value is a Boolean **true** or **false**.
 - _Value_ – Required. Value to test.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

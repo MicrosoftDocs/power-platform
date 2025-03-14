@@ -18,21 +18,6 @@ contributors:
 ---
 
 # Reset function
-
-[!INCLUDE[function-reset-applies-to](includes/function-reset-applies-to.md)]
-
-[!INCLUDE[function-reset-applies-to](includes/function-reset-applies-to.md)]
-
-[!INCLUDE[function-reset-applies-to](includes/function-reset-applies-to.md)]
-
-[!INCLUDE[function-reset-applies-to](includes/function-reset-applies-to.md)]
-
-[!INCLUDE[function-reset-applies-to](includes/function-reset-applies-to.md)]
-
-[!INCLUDE[function-reset-applies-to](includes/function-reset-applies-to.md)]
-
-[!INCLUDE[function-reset-applies-to](includes/function-reset-applies-to.md)]
-
 [!INCLUDE[function-reset-applies-to](includes/function-reset-applies-to.md)]
 
 
@@ -67,6 +52,55 @@ Input controls are also reset when their **Default** property changes.
 6. The contents of the text box will return to the value of the **Default** property.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

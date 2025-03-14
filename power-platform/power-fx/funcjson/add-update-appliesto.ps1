@@ -1,42 +1,6 @@
 Set-StrictMode -Version 2.0
 
-$powerFxPath = "./power-platform/power-fx"
-
-$appliesToHosts = @{ 
-    "canvas apps"               = "canvas-apps"
-    "power platform cli"        = "pac-cli"
-    "model-driven apps"         = "model-driven-apps"
-    "power pages"               = "power-pages"
-    "desktop flows"             = "desktop-flows"
-    "dataverse formula columns" = "formula-columns"
-}
-
-$skipJson = @(
-    "dv-lowcode-plugin"
-    "fno"
-    "pva"
-)
-
-function GetAppliesToText($key) {
-    switch ($key) {
-        'canvas-apps' { return 'Canvas apps' }
-        'formula-columns' { return 'Dataverse formula columns' }
-        'desktop-flows' { return 'Desktop flows' }
-        'model-driven-apps' { return 'Model-driven apps' }
-        'pac-cli' { return 'Power Platform CLI' }        
-        'power-pages' { return 'Power Pages' }
-        # 'cards' { return 'Cards' }
-        # 'dv-lowcode-plugin' { return 'Dataverse low-code plug-ins' }
-        # 'pva' { return 'Microsoft CoPilot studio' }
-        # 'test-engine' { return 'Test Engine' }
-        Default {
-            Write-Host "Unknown Applies-to: $key"
-            return "NotFound"
-        }
-    }
-}
-
-$enc = [system.Text.Encoding]::UTF8
+. "$(Split-Path $MyInvocation.MyCommand.Path)\hostmap.ps1"
 
 $funcsAppliesToMap = @{}
 
@@ -48,11 +12,45 @@ function get_func_appliesto_map {
         # if ( $skipJson -contains $appliesToName ) {
         #     continue
         # }
-    
+
+        $errataMinus = @()
+        $errataPlus = @()
+        $errataFile = $jsonFile.FullName + ".errata"
+        if ( Test-Path $errataFile )
+        {
+            $errataContent = [System.IO.File]::ReadAllText( $errataFile, $enc )
+            ForEach ($errata in $($errataContent -split "`n"))
+            {
+                if ($errata -match '^\-\s(\w+)') {
+                    $errataMinus += $matches[1]           
+                }
+                if ($errata -match '^\+\s*(\w+)') {
+                    $errataPlus += $matches[1]                
+                }            
+            }
+        }  
+
+        $jsonFunctionNames = @()
+
         $jsonContent = [System.IO.File]::ReadAllText( $jsonFile.FullName, $enc )
         $json = ConvertFrom-Json $jsonContent -AsHashtable
 
-        foreach ( $functionName in $json.FunctionNames ) {  
+        if ($json -and $json.ContainsKey( "FunctionNames" )) {
+            foreach ($jsonFunc in $json.FunctionNames) {
+                    $jsonFunctionNames += $jsonFunc;
+            }   
+        }
+
+        foreach ($errata in $errataPlus) {
+            if ($jsonFunctionNames -notcontains $errata) {
+                $jsonFunctionNames += $errata;
+            }
+        }                        
+
+        foreach ( $functionName in $jsonFunctionNames ) {  
+            if ($errataMinus -contains $functionName) {
+                continue;
+            }            
             $funcName = ""
             if ( $functionName -match '(\w+)\.' ) {
                 $funcName = $matches[1]
@@ -66,7 +64,7 @@ function get_func_appliesto_map {
             $funcsAppliesToMap[$funcName] += $appliesToName
         }
     
-        if ($json.ContainsKey( "HostObjects" ) ) {
+        if ($json -and $json.ContainsKey( "HostObjects" ) ) {
             foreach ( $hostObject in $json.HostObjects ) {
                 if (-not $funcsAppliesToMap.ContainsKey($hostObject)) {
                     $funcsAppliesToMap[$hostObject] = @()
@@ -76,17 +74,16 @@ function get_func_appliesto_map {
         }
     }
 }
-function apply_appliesto() {
 
+function apply_appliesto() {
     $appliesToText = "**Applies to:** "
     $imageType = ":::image type=`"icon`" source=`"../media/yes-icon.svg`" border=`"false`"::: "
     foreach ( $refFile in Get-ChildItem "$powerFxPath/reference" -Filter *.md ) {
-    
+        $refFileFullName = $refFile.FullName
         $refName = $refFile.Name
-    
-        $refContent = [System.IO.File]::ReadAllText( $refFile.FullName, $enc )
+        $refContent = [System.IO.File]::ReadAllText( $refFileFullName, $enc )
 
-        $includeRoot = $powerFxPath + "\reference\includes\"
+        $includeRoot = "$powerFxPath\reference\includes\"
         $includeFileName = $refName.Replace('.md', '') + "-applies-to.md"
 
         if (!(test-path $includeRoot)) {
@@ -97,11 +94,11 @@ function apply_appliesto() {
 	   
         # Refresh the include file
         if (!([System.IO.File]::Exists($includeFilePath))) {
-            New-Item -path $includeRoot -type file -name $includeFileName
+            New-Item -path $includeRoot -type file -name $includeFileName | out-null
         }
         else {
             Remove-Item $includeFilePath
-            New-Item -path $includeRoot -type file -name $includeFileName
+            New-Item -path $includeRoot -type file -name $includeFileName | out-null
         }
 
         # create a group of same applies-to and add all applicable functions to it
@@ -113,7 +110,7 @@ function apply_appliesto() {
                 if ($refFuncName -eq "in") {
                     break;
                 }
-                elseif (-not ($refFuncName -match '(?i)^(functions?|objects?|signals?|and)$')) {
+                elseif (-not ($refFuncName -match '(?i)^(enumerations?|functions?|objects?|signals?|experimental|preview|action|related|and)$')) {
                     $appliesTo = $funcsAppliesToMap[$refFuncName] | Sort-Object
                     $appToKey = $appliesTo -join ","   
                     if (-not $appliesToGroup.ContainsKey($appToKey)) { 
@@ -128,16 +125,13 @@ function apply_appliesto() {
             continue
         }
 
-        #If all funcs have same applies-to create an include file with applies-to text
+#        write-host ":::" $refName $appliesToGroup.Keys $appliesToGroup.Count
+
+        #If all funcs have same applies-to create an include file with applies-to text        
         if ($appliesToGroup.Count -eq 1) {
             $appliesToText = "**Applies to:** "
             foreach ($appTo in $appliesToGroup.Keys[0].Split(",")) {
-                #Write-Host "$key :"
-                $appToText = GetAppliesToText($appTo)
-                if($appToText -eq "NotFound") {
-                    continue
-                }
-
+                $appToText = $hostToProduct[$appTo]
                 $appliesToText += $imageType + $appToText
             }
        
@@ -153,9 +147,9 @@ function apply_appliesto() {
                 $funcText = ""
                 $itemCount = 0
                 foreach ($appTo in $key.Split(",")) {
-                    $appToText = GetAppliesToText($appTo)
-                    if($appToText -eq "NotFound") {
-                        continue
+                    $appToText = $hostToProduct[$appTo]
+                    if (-not $appToText) {
+                        write-host "$key, $appTo map not found in $refName"
                     }
                     $itemCount += 1
                     if ($itemCount -eq 1) {
@@ -194,16 +188,26 @@ function apply_appliesto() {
 
         # Remove existing applies-to text if exists from the reference file
         $refAppliesTo = Select-String ':::image[^:]*source="media/yes-icon.svg"[^:]*:::\s*([^|:\n\r]+)' -input $refContent -AllMatches        
-        foreach ( $appliesToMatch in $refAppliesTo.matches ) {
-            $refContent = $refContent.Replace($appliesToMatch.Value, "")
+        if ($refAppliesTo) {
+            foreach ( $appliesToMatch in $refAppliesTo.matches ) {
+                $refContent = $refContent.Replace($appliesToMatch.Value, "")
+            }
         }
     
+        # Remove existing applies-to include if exists from the reference file
+        $refAppliesTo = Select-String '\n*\[!INCLUDE\[[\w\-]+-applies-to\]\(includes[/\\][\w\-]+-applies-to.md\)\]' -input $refContent -AllMatches        
+        if ($refAppliesTo) {
+            foreach ( $appliesToMatch in $refAppliesTo.matches ) {
+                $refContent = $refContent.Replace($appliesToMatch.Value, "")
+            }
+        }        
+
         # Add new applies-to include to the reference file after heading 1
-        if ($refContent -match '(?m)^# .+') {
+        if ($refContent -match '[\n\r]+# .+') {
             $includeText = $includeFileName.Replace(".md", "")
-            $refContent = $refContent -replace '(?m)^# .+', "`$&`n`n[!INCLUDE[$includeText](includes/$includeFileName)]"
+            $refContent = $refContent -replace '[\n\r]+# .+', "`$&`n[!INCLUDE[$includeText](includes/$includeFileName)]"
         }
-        Set-Content $refFile.FullName $refContent
+        Set-Content $refFileFullName $refContent
     }
 }
 

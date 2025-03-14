@@ -1,6 +1,1 @@
-**Applies to:** 
-| Functions | Applies to |
-|-----------|------------|
-| XSendAppNotification |  |
-| related |  |
-
+**Applies to:** :::image type="icon" source="../media/yes-icon.svg" border="false"::: 

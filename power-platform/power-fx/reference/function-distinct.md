@@ -18,21 +18,6 @@ contributors:
 ---
 
 # Distinct function
-
-[!INCLUDE[function-distinct-applies-to](includes/function-distinct-applies-to.md)]
-
-[!INCLUDE[function-distinct-applies-to](includes/function-distinct-applies-to.md)]
-
-[!INCLUDE[function-distinct-applies-to](includes/function-distinct-applies-to.md)]
-
-[!INCLUDE[function-distinct-applies-to](includes/function-distinct-applies-to.md)]
-
-[!INCLUDE[function-distinct-applies-to](includes/function-distinct-applies-to.md)]
-
-[!INCLUDE[function-distinct-applies-to](includes/function-distinct-applies-to.md)]
-
-[!INCLUDE[function-distinct-applies-to](includes/function-distinct-applies-to.md)]
-
 [!INCLUDE[function-distinct-applies-to](includes/function-distinct-applies-to.md)]
 
 
@@ -104,6 +89,55 @@ The **Distinct** function evaluates a formula across each record of a table and 
     > ![Output from Distinct function showing the first country/region by name.](media/function-distinct/citypopulations-first.png)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

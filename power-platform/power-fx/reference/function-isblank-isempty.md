@@ -19,21 +19,6 @@ contributors:
 ---
 
 # Blank, Coalesce, IsBlank, and IsEmpty functions
-
-[!INCLUDE[function-isblank-isempty-applies-to](includes/function-isblank-isempty-applies-to.md)]
-
-[!INCLUDE[function-isblank-isempty-applies-to](includes/function-isblank-isempty-applies-to.md)]
-
-[!INCLUDE[function-isblank-isempty-applies-to](includes/function-isblank-isempty-applies-to.md)]
-
-[!INCLUDE[function-isblank-isempty-applies-to](includes/function-isblank-isempty-applies-to.md)]
-
-[!INCLUDE[function-isblank-isempty-applies-to](includes/function-isblank-isempty-applies-to.md)]
-
-[!INCLUDE[function-isblank-isempty-applies-to](includes/function-isblank-isempty-applies-to.md)]
-
-[!INCLUDE[function-isblank-isempty-applies-to](includes/function-isblank-isempty-applies-to.md)]
-
 [!INCLUDE[function-isblank-isempty-applies-to](includes/function-isblank-isempty-applies-to.md)]
 
 
@@ -221,6 +206,55 @@ You can also use **IsEmpty** to test whether a calculated table is empty, as the
 | **IsEmpty( Filter( [&nbsp;1,&nbsp;2,&nbsp;3&nbsp;], Value > 5 ) )** | The single-column table contains no values that are greater than 5. The result from the filter doesn't contain any records and is empty. | **true**  |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

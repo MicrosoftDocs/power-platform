@@ -17,21 +17,6 @@ contributors:
 ---
 
 # Operators and Identifiers in Power Apps
-
-[!INCLUDE[operators-applies-to](includes/operators-applies-to.md)]
-
-[!INCLUDE[operators-applies-to](includes/operators-applies-to.md)]
-
-[!INCLUDE[operators-applies-to](includes/operators-applies-to.md)]
-
-[!INCLUDE[operators-applies-to](includes/operators-applies-to.md)]
-
-[!INCLUDE[operators-applies-to](includes/operators-applies-to.md)]
-
-[!INCLUDE[operators-applies-to](includes/operators-applies-to.md)]
-
-[!INCLUDE[operators-applies-to](includes/operators-applies-to.md)]
-
 [!INCLUDE[operators-applies-to](includes/operators-applies-to.md)]
 
 
@@ -340,6 +325,55 @@ Some functions create [record scopes](/power-apps/maker/canvas-apps/working-with
 For more information and examples, see [record scopes](/power-apps/maker/canvas-apps/working-with-tables#record-scope).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -16,21 +16,6 @@ contributors:
 ---
 
 # AIClassify, AIExtract, AIReply, AISentiment, AISummarize, and AITranslate
-
-[!INCLUDE[function-ai-applies-to](includes/function-ai-applies-to.md)]
-
-[!INCLUDE[function-ai-applies-to](includes/function-ai-applies-to.md)]
-
-[!INCLUDE[function-ai-applies-to](includes/function-ai-applies-to.md)]
-
-[!INCLUDE[function-ai-applies-to](includes/function-ai-applies-to.md)]
-
-[!INCLUDE[function-ai-applies-to](includes/function-ai-applies-to.md)]
-
-[!INCLUDE[function-ai-applies-to](includes/function-ai-applies-to.md)]
-
-[!INCLUDE[function-ai-applies-to](includes/function-ai-applies-to.md)]
-
 [!INCLUDE[function-ai-applies-to](includes/function-ai-applies-to.md)]
 
 
@@ -241,6 +226,56 @@ To setup the following examples:
    le crabe et les palourdes. L’État possède un long littoral et de nombreuses rivières et lacs 
    qui fournissent des fruits de mer abondants et de haute qualité.
    ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

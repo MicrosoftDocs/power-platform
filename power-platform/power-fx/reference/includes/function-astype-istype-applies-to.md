@@ -1,6 +1,6 @@
 **Applies to:** 
 | Functions | Applies to |
 |-----------|------------|
-| AsType | :::image type="icon" source="../media/yes-icon.svg" border="false"::: Canvas apps</br>:::image type="icon" source="../media/yes-icon.svg" border="false"::: Power Platform CLI</br>:::image type="icon" source="../media/yes-icon.svg" border="false"::: Power Pages |
-| IsType | :::image type="icon" source="../media/yes-icon.svg" border="false"::: Canvas apps</br>:::image type="icon" source="../media/yes-icon.svg" border="false"::: Power Pages |
+| IsType | :::image type="icon" source="../media/yes-icon.svg" border="false"::: Canvas apps</br>:::image type="icon" source="../media/yes-icon.svg" border="false"::: Copilot Studio</br>:::image type="icon" source="../media/yes-icon.svg" border="false"::: Model-driven apps</br>:::image type="icon" source="../media/yes-icon.svg" border="false"::: Dataverse functions</br>:::image type="icon" source="../media/yes-icon.svg" border="false"::: Power Pages |
+| AsType | :::image type="icon" source="../media/yes-icon.svg" border="false"::: Canvas apps</br>:::image type="icon" source="../media/yes-icon.svg" border="false"::: Cards</br>:::image type="icon" source="../media/yes-icon.svg" border="false"::: Copilot Studio</br>:::image type="icon" source="../media/yes-icon.svg" border="false"::: Model-driven apps</br>:::image type="icon" source="../media/yes-icon.svg" border="false"::: Power Platform CLI</br>:::image type="icon" source="../media/yes-icon.svg" border="false"::: Dataverse functions</br>:::image type="icon" source="../media/yes-icon.svg" border="false"::: Power Pages |
 

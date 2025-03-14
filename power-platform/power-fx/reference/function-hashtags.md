@@ -18,21 +18,6 @@ contributors:
 ---
 
 # HashTags function
-
-[!INCLUDE[function-hashtags-applies-to](includes/function-hashtags-applies-to.md)]
-
-[!INCLUDE[function-hashtags-applies-to](includes/function-hashtags-applies-to.md)]
-
-[!INCLUDE[function-hashtags-applies-to](includes/function-hashtags-applies-to.md)]
-
-[!INCLUDE[function-hashtags-applies-to](includes/function-hashtags-applies-to.md)]
-
-[!INCLUDE[function-hashtags-applies-to](includes/function-hashtags-applies-to.md)]
-
-[!INCLUDE[function-hashtags-applies-to](includes/function-hashtags-applies-to.md)]
-
-[!INCLUDE[function-hashtags-applies-to](includes/function-hashtags-applies-to.md)]
-
 [!INCLUDE[function-hashtags-applies-to](includes/function-hashtags-applies-to.md)]
 
 
@@ -79,6 +64,55 @@ The **HashTags** function scans a string for hashtags. Hashtags start with a pou
    - **\#1**
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

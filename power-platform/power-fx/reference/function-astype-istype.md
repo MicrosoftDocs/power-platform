@@ -18,21 +18,6 @@ contributors:
 ---
 
 # AsType and IsType functions
-
-[!INCLUDE[function-astype-istype-applies-to](includes/function-astype-istype-applies-to.md)]
-
-[!INCLUDE[function-astype-istype-applies-to](includes/function-astype-istype-applies-to.md)]
-
-[!INCLUDE[function-astype-istype-applies-to](includes/function-astype-istype-applies-to.md)]
-
-[!INCLUDE[function-astype-istype-applies-to](includes/function-astype-istype-applies-to.md)]
-
-[!INCLUDE[function-astype-istype-applies-to](includes/function-astype-istype-applies-to.md)]
-
-[!INCLUDE[function-astype-istype-applies-to](includes/function-astype-istype-applies-to.md)]
-
-[!INCLUDE[function-astype-istype-applies-to](includes/function-astype-istype-applies-to.md)]
-
 [!INCLUDE[function-astype-istype-applies-to](includes/function-astype-istype-applies-to.md)]
 
 
@@ -233,6 +218,56 @@ true
 ```
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

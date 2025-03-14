@@ -17,21 +17,6 @@ contributors:
 ---
 
 # EDate and EOMonth functions
-
-[!INCLUDE[function-edate-eomonth-applies-to](includes/function-edate-eomonth-applies-to.md)]
-
-[!INCLUDE[function-edate-eomonth-applies-to](includes/function-edate-eomonth-applies-to.md)]
-
-[!INCLUDE[function-edate-eomonth-applies-to](includes/function-edate-eomonth-applies-to.md)]
-
-[!INCLUDE[function-edate-eomonth-applies-to](includes/function-edate-eomonth-applies-to.md)]
-
-[!INCLUDE[function-edate-eomonth-applies-to](includes/function-edate-eomonth-applies-to.md)]
-
-[!INCLUDE[function-edate-eomonth-applies-to](includes/function-edate-eomonth-applies-to.md)]
-
-[!INCLUDE[function-edate-eomonth-applies-to](includes/function-edate-eomonth-applies-to.md)]
-
 [!INCLUDE[function-edate-eomonth-applies-to](includes/function-edate-eomonth-applies-to.md)]
 
 
@@ -84,6 +69,55 @@ See [working with dates and times](/power-apps/maker/canvas-apps/show-text-dates
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -18,21 +18,6 @@ contributors:
 ---
 
 # Lower, Upper, and Proper functions
-
-[!INCLUDE[function-lower-upper-proper-applies-to](includes/function-lower-upper-proper-applies-to.md)]
-
-[!INCLUDE[function-lower-upper-proper-applies-to](includes/function-lower-upper-proper-applies-to.md)]
-
-[!INCLUDE[function-lower-upper-proper-applies-to](includes/function-lower-upper-proper-applies-to.md)]
-
-[!INCLUDE[function-lower-upper-proper-applies-to](includes/function-lower-upper-proper-applies-to.md)]
-
-[!INCLUDE[function-lower-upper-proper-applies-to](includes/function-lower-upper-proper-applies-to.md)]
-
-[!INCLUDE[function-lower-upper-proper-applies-to](includes/function-lower-upper-proper-applies-to.md)]
-
-[!INCLUDE[function-lower-upper-proper-applies-to](includes/function-lower-upper-proper-applies-to.md)]
-
 [!INCLUDE[function-lower-upper-proper-applies-to](includes/function-lower-upper-proper-applies-to.md)]
 
 
@@ -97,6 +82,55 @@ Each formula returns a single-column table that contains the converted strings.
 3. Press F5, and then type **WE ARE THE BEST!** into the **Source** box.<br>The label shows **We Are The Best!**
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

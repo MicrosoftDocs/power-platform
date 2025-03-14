@@ -18,21 +18,6 @@ contributors:
 ---
 
 # Language function
-
-[!INCLUDE[function-language-applies-to](includes/function-language-applies-to.md)]
-
-[!INCLUDE[function-language-applies-to](includes/function-language-applies-to.md)]
-
-[!INCLUDE[function-language-applies-to](includes/function-language-applies-to.md)]
-
-[!INCLUDE[function-language-applies-to](includes/function-language-applies-to.md)]
-
-[!INCLUDE[function-language-applies-to](includes/function-language-applies-to.md)]
-
-[!INCLUDE[function-language-applies-to](includes/function-language-applies-to.md)]
-
-[!INCLUDE[function-language-applies-to](includes/function-language-applies-to.md)]
-
 [!INCLUDE[function-language-applies-to](includes/function-language-applies-to.md)]
 
 
@@ -126,6 +111,55 @@ This approach comes with some drawbacks when compared to the previous example wh
 - The translation will be mechanical and may not be what you anticipate or be the best choice for the situation within your app.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

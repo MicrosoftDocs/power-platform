@@ -12,21 +12,6 @@ search.audienceType:
   - maker
 ---
 # Copy function
-
-[!INCLUDE[function-copy-applies-to](includes/function-copy-applies-to.md)]
-
-[!INCLUDE[function-copy-applies-to](includes/function-copy-applies-to.md)]
-
-[!INCLUDE[function-copy-applies-to](includes/function-copy-applies-to.md)]
-
-[!INCLUDE[function-copy-applies-to](includes/function-copy-applies-to.md)]
-
-[!INCLUDE[function-copy-applies-to](includes/function-copy-applies-to.md)]
-
-[!INCLUDE[function-copy-applies-to](includes/function-copy-applies-to.md)]
-
-[!INCLUDE[function-copy-applies-to](includes/function-copy-applies-to.md)]
-
 [!INCLUDE[function-copy-applies-to](includes/function-copy-applies-to.md)]
 
 
@@ -66,6 +51,55 @@ Copy( $"{employeeRecord.Name} {employeeRecord.LastName} ({employeeRecord.Title})
 ```
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

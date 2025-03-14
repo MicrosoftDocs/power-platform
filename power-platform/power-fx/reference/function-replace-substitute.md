@@ -18,21 +18,6 @@ contributors:
 ---
 
 # Replace and Substitute functions
-
-[!INCLUDE[function-replace-substitute-applies-to](includes/function-replace-substitute-applies-to.md)]
-
-[!INCLUDE[function-replace-substitute-applies-to](includes/function-replace-substitute-applies-to.md)]
-
-[!INCLUDE[function-replace-substitute-applies-to](includes/function-replace-substitute-applies-to.md)]
-
-[!INCLUDE[function-replace-substitute-applies-to](includes/function-replace-substitute-applies-to.md)]
-
-[!INCLUDE[function-replace-substitute-applies-to](includes/function-replace-substitute-applies-to.md)]
-
-[!INCLUDE[function-replace-substitute-applies-to](includes/function-replace-substitute-applies-to.md)]
-
-[!INCLUDE[function-replace-substitute-applies-to](includes/function-replace-substitute-applies-to.md)]
-
 [!INCLUDE[function-replace-substitute-applies-to](includes/function-replace-substitute-applies-to.md)]
 
 
@@ -93,6 +78,55 @@ If you pass a single string, the return value is the modified string. If you pas
 | **Substitute( <br>[&nbsp;"Qtr&nbsp;1,&nbsp;2018",<br>"Quarter&nbsp;1,&nbsp;2011",<br>"Q1,&nbsp;2019"&nbsp;],<br>"1", "3" )** | Because the fourth argument (_InstanceNumber_) isn't provided, substitutes all instances of "1" in each record of the single-column table with "3". | A single-column table with a `Value` column containing the following values: [&nbsp;"Qtr&nbsp;3,&nbsp;2038",<br>"Quarter&nbsp;3,&nbsp;2033",<br>"Q3,&nbsp;2039"&nbsp;] |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -17,21 +17,6 @@ contributors:
 ---
 
 # Help function
-
-[!INCLUDE[function-help-applies-to](includes/function-help-applies-to.md)]
-
-[!INCLUDE[function-help-applies-to](includes/function-help-applies-to.md)]
-
-[!INCLUDE[function-help-applies-to](includes/function-help-applies-to.md)]
-
-[!INCLUDE[function-help-applies-to](includes/function-help-applies-to.md)]
-
-[!INCLUDE[function-help-applies-to](includes/function-help-applies-to.md)]
-
-[!INCLUDE[function-help-applies-to](includes/function-help-applies-to.md)]
-
-[!INCLUDE[function-help-applies-to](includes/function-help-applies-to.md)]
-
 [!INCLUDE[function-help-applies-to](includes/function-help-applies-to.md)]
 
 
@@ -79,6 +64,55 @@ true
 ```
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

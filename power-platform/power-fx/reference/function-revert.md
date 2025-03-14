@@ -18,21 +18,6 @@ contributors:
 ---
 
 # Revert function
-
-[!INCLUDE[function-revert-applies-to](includes/function-revert-applies-to.md)]
-
-[!INCLUDE[function-revert-applies-to](includes/function-revert-applies-to.md)]
-
-[!INCLUDE[function-revert-applies-to](includes/function-revert-applies-to.md)]
-
-[!INCLUDE[function-revert-applies-to](includes/function-revert-applies-to.md)]
-
-[!INCLUDE[function-revert-applies-to](includes/function-revert-applies-to.md)]
-
-[!INCLUDE[function-revert-applies-to](includes/function-revert-applies-to.md)]
-
-[!INCLUDE[function-revert-applies-to](includes/function-revert-applies-to.md)]
-
 [!INCLUDE[function-revert-applies-to](includes/function-revert-applies-to.md)]
 
 
@@ -85,6 +70,55 @@ You reapply your change on top of the previous change, and your change succeed b
 ![Reapplied changes with resolved conflict.](media/function-revert/icecream-success.png)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

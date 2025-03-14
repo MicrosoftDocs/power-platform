@@ -18,21 +18,6 @@ contributors:
 ---
 
 # SetFocus function
-
-[!INCLUDE[function-setfocus-applies-to](includes/function-setfocus-applies-to.md)]
-
-[!INCLUDE[function-setfocus-applies-to](includes/function-setfocus-applies-to.md)]
-
-[!INCLUDE[function-setfocus-applies-to](includes/function-setfocus-applies-to.md)]
-
-[!INCLUDE[function-setfocus-applies-to](includes/function-setfocus-applies-to.md)]
-
-[!INCLUDE[function-setfocus-applies-to](includes/function-setfocus-applies-to.md)]
-
-[!INCLUDE[function-setfocus-applies-to](includes/function-setfocus-applies-to.md)]
-
-[!INCLUDE[function-setfocus-applies-to](includes/function-setfocus-applies-to.md)]
-
 [!INCLUDE[function-setfocus-applies-to](includes/function-setfocus-applies-to.md)]
 
 
@@ -182,6 +167,55 @@ To create this example:
 1. Preview the app from this screen. Press the button. The **OnVisible** formula will be evaluated and the **Name** field will automatically be in focus.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -352,6 +352,8 @@ Other elements include:
 
 **[RecordInfo](reference/function-recordinfo.md)** – Provides information about a record of a data source.
 
+**[RecordOf](reference/function-type.md)** - Extracts the type of a record from a table.
+
 **[Refresh](reference/function-refresh.md)** – Refreshes the records of a data source.
 
 **[Relate](reference/function-relate-unrelate.md)** – Relates records of two tables through a one-to-many or many-to-many relationship.
@@ -457,6 +459,8 @@ Other elements include:
 **[TrimEnds](reference/function-trim.md)** – Removes extra spaces from the ends of a string of text only.
 
 **[Trunc](reference/function-round.md)** – Truncates the number to only the integer portion by removing any decimal portion.
+
+**[Type](reference/function-type.md)** - Defines a user defined type.
 
 ## U
 

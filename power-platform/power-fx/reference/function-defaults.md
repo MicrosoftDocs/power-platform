@@ -18,21 +18,6 @@ contributors:
 ---
 
 # Defaults function
-
-[!INCLUDE[function-defaults-applies-to](includes/function-defaults-applies-to.md)]
-
-[!INCLUDE[function-defaults-applies-to](includes/function-defaults-applies-to.md)]
-
-[!INCLUDE[function-defaults-applies-to](includes/function-defaults-applies-to.md)]
-
-[!INCLUDE[function-defaults-applies-to](includes/function-defaults-applies-to.md)]
-
-[!INCLUDE[function-defaults-applies-to](includes/function-defaults-applies-to.md)]
-
-[!INCLUDE[function-defaults-applies-to](includes/function-defaults-applies-to.md)]
-
-[!INCLUDE[function-defaults-applies-to](includes/function-defaults-applies-to.md)]
-
 [!INCLUDE[function-defaults-applies-to](includes/function-defaults-applies-to.md)]
 
 
@@ -62,6 +47,55 @@ You can combine the **Defaults** function with the **[Patch](function-patch.md)*
 | **Defaults(&nbsp;Scores&nbsp;)** | Returns the default values for the **Scores** data source. | **{ Score: 0 }** |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

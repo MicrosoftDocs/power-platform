@@ -18,21 +18,6 @@ contributors:
 ---
 
 # Sort and SortByColumns functions
-
-[!INCLUDE[function-sort-applies-to](includes/function-sort-applies-to.md)]
-
-[!INCLUDE[function-sort-applies-to](includes/function-sort-applies-to.md)]
-
-[!INCLUDE[function-sort-applies-to](includes/function-sort-applies-to.md)]
-
-[!INCLUDE[function-sort-applies-to](includes/function-sort-applies-to.md)]
-
-[!INCLUDE[function-sort-applies-to](includes/function-sort-applies-to.md)]
-
-[!INCLUDE[function-sort-applies-to](includes/function-sort-applies-to.md)]
-
-[!INCLUDE[function-sort-applies-to](includes/function-sort-applies-to.md)]
-
 [!INCLUDE[function-sort-applies-to](includes/function-sort-applies-to.md)]
 
 
@@ -136,6 +121,55 @@ To run these examples yourself, create the **IceCream** data source as a [collec
 4. Repeat the last three steps, but change the name of the collection that you want to create, and replace the **SortByColumns** formula with a different formula from the table of examples earlier in this section that uses **SortByColumns**.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

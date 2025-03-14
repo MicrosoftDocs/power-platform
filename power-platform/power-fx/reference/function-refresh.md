@@ -18,21 +18,6 @@ contributors:
 ---
 
 # Refresh function
-
-[!INCLUDE[function-refresh-applies-to](includes/function-refresh-applies-to.md)]
-
-[!INCLUDE[function-refresh-applies-to](includes/function-refresh-applies-to.md)]
-
-[!INCLUDE[function-refresh-applies-to](includes/function-refresh-applies-to.md)]
-
-[!INCLUDE[function-refresh-applies-to](includes/function-refresh-applies-to.md)]
-
-[!INCLUDE[function-refresh-applies-to](includes/function-refresh-applies-to.md)]
-
-[!INCLUDE[function-refresh-applies-to](includes/function-refresh-applies-to.md)]
-
-[!INCLUDE[function-refresh-applies-to](includes/function-refresh-applies-to.md)]
-
 [!INCLUDE[function-refresh-applies-to](includes/function-refresh-applies-to.md)]
 
 
@@ -66,6 +51,55 @@ After that formula executes, galleries that are bound to the **IceCream** data s
 ![IceCream after refresh.](media/function-refresh/icecream-after.png)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

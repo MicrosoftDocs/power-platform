@@ -17,21 +17,6 @@ contributors:
 ---
 
 # Rand and RandBetween functions
-
-[!INCLUDE[function-rand-applies-to](includes/function-rand-applies-to.md)]
-
-[!INCLUDE[function-rand-applies-to](includes/function-rand-applies-to.md)]
-
-[!INCLUDE[function-rand-applies-to](includes/function-rand-applies-to.md)]
-
-[!INCLUDE[function-rand-applies-to](includes/function-rand-applies-to.md)]
-
-[!INCLUDE[function-rand-applies-to](includes/function-rand-applies-to.md)]
-
-[!INCLUDE[function-rand-applies-to](includes/function-rand-applies-to.md)]
-
-[!INCLUDE[function-rand-applies-to](includes/function-rand-applies-to.md)]
-
 [!INCLUDE[function-rand-applies-to](includes/function-rand-applies-to.md)]
 
 
@@ -120,6 +105,55 @@ When used in a [behavior formula](/power-apps/maker/canvas-apps/working-with-for
 To generate a single random number instead of a table, use **Set( RandomNumber, Rand() )** or **Set( RandNumber, RandBetween( 1, 20 ) )**.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

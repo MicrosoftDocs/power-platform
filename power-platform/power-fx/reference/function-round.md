@@ -18,21 +18,6 @@ contributors:
 ---
 
 # Int, Round, RoundDown, RoundUp, and Trunc functions
-
-[!INCLUDE[function-round-applies-to](includes/function-round-applies-to.md)]
-
-[!INCLUDE[function-round-applies-to](includes/function-round-applies-to.md)]
-
-[!INCLUDE[function-round-applies-to](includes/function-round-applies-to.md)]
-
-[!INCLUDE[function-round-applies-to](includes/function-round-applies-to.md)]
-
-[!INCLUDE[function-round-applies-to](includes/function-round-applies-to.md)]
-
-[!INCLUDE[function-round-applies-to](includes/function-round-applies-to.md)]
-
-[!INCLUDE[function-round-applies-to](includes/function-round-applies-to.md)]
-
 [!INCLUDE[function-round-applies-to](includes/function-round-applies-to.md)]
 
 
@@ -121,6 +106,55 @@ Rounding a single-column table of values.
 | [ 123.456, <br>987.593, <br>542.639 ] | [ 123, <br>987, <br>542 ] | [ 123.46, <br>987.59, <br>542.64 ] | [ 123, <br>987.5, <br>542.63 ] | [ 123.46, <br>988, <br>543 ] |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

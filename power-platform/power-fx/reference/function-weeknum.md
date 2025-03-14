@@ -16,21 +16,6 @@ contributors:
   - gregli
 ---
 # WeekNum and ISOWeekNum functions
-
-[!INCLUDE[function-weeknum-applies-to](includes/function-weeknum-applies-to.md)]
-
-[!INCLUDE[function-weeknum-applies-to](includes/function-weeknum-applies-to.md)]
-
-[!INCLUDE[function-weeknum-applies-to](includes/function-weeknum-applies-to.md)]
-
-[!INCLUDE[function-weeknum-applies-to](includes/function-weeknum-applies-to.md)]
-
-[!INCLUDE[function-weeknum-applies-to](includes/function-weeknum-applies-to.md)]
-
-[!INCLUDE[function-weeknum-applies-to](includes/function-weeknum-applies-to.md)]
-
-[!INCLUDE[function-weeknum-applies-to](includes/function-weeknum-applies-to.md)]
-
 [!INCLUDE[function-weeknum-applies-to](includes/function-weeknum-applies-to.md)]
 
 
@@ -96,6 +81,55 @@ First and last calendar weeks of 2021
 | Friday,&nbsp;December&nbsp;31,&nbsp;2021 | 53 | 52 | 53 |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

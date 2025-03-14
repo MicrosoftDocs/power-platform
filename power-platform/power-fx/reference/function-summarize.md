@@ -16,21 +16,6 @@ contributors:
   - gregli
 ---
 # Summarize function
-
-[!INCLUDE[function-summarize-applies-to](includes/function-summarize-applies-to.md)]
-
-[!INCLUDE[function-summarize-applies-to](includes/function-summarize-applies-to.md)]
-
-[!INCLUDE[function-summarize-applies-to](includes/function-summarize-applies-to.md)]
-
-[!INCLUDE[function-summarize-applies-to](includes/function-summarize-applies-to.md)]
-
-[!INCLUDE[function-summarize-applies-to](includes/function-summarize-applies-to.md)]
-
-[!INCLUDE[function-summarize-applies-to](includes/function-summarize-applies-to.md)]
-
-[!INCLUDE[function-summarize-applies-to](includes/function-summarize-applies-to.md)]
-
 [!INCLUDE[function-summarize-applies-to](includes/function-summarize-applies-to.md)]
 
 
@@ -136,6 +121,55 @@ Summarize( Inventory, Supplier, Fruit, Average( ThisGroup, Price ) As 'Average P
 | Bananas | Contoso   | 12            |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

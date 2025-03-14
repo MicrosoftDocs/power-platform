@@ -18,21 +18,6 @@ contributors:
 ---
 
 # ForAll function
-
-[!INCLUDE[function-forall-applies-to](includes/function-forall-applies-to.md)]
-
-[!INCLUDE[function-forall-applies-to](includes/function-forall-applies-to.md)]
-
-[!INCLUDE[function-forall-applies-to](includes/function-forall-applies-to.md)]
-
-[!INCLUDE[function-forall-applies-to](includes/function-forall-applies-to.md)]
-
-[!INCLUDE[function-forall-applies-to](includes/function-forall-applies-to.md)]
-
-[!INCLUDE[function-forall-applies-to](includes/function-forall-applies-to.md)]
-
-[!INCLUDE[function-forall-applies-to](includes/function-forall-applies-to.md)]
-
 [!INCLUDE[function-forall-applies-to](includes/function-forall-applies-to.md)]
 
 
@@ -253,6 +238,55 @@ Note that we are not capturing the result of the **ForAll**. The **Collect** fun
 See [Map tables](/power-apps/maker/canvas-apps/map-component-input-fields#map-tables).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -18,21 +18,6 @@ contributors:
 ---
 
 # Calendar and Clock functions
-
-[!INCLUDE[function-clock-calendar-applies-to](includes/function-clock-calendar-applies-to.md)]
-
-[!INCLUDE[function-clock-calendar-applies-to](includes/function-clock-calendar-applies-to.md)]
-
-[!INCLUDE[function-clock-calendar-applies-to](includes/function-clock-calendar-applies-to.md)]
-
-[!INCLUDE[function-clock-calendar-applies-to](includes/function-clock-calendar-applies-to.md)]
-
-[!INCLUDE[function-clock-calendar-applies-to](includes/function-clock-calendar-applies-to.md)]
-
-[!INCLUDE[function-clock-calendar-applies-to](includes/function-clock-calendar-applies-to.md)]
-
-[!INCLUDE[function-clock-calendar-applies-to](includes/function-clock-calendar-applies-to.md)]
-
 [!INCLUDE[function-clock-calendar-applies-to](includes/function-clock-calendar-applies-to.md)]
 
 
@@ -95,6 +80,56 @@ In the United States, with **[Language](function-language.md)** returning "en-US
 | **Clock.IsClock24()**        | This language uses a 12-hour clock.                                                                                       | **false**                                                                                                                    |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

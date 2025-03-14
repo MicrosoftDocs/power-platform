@@ -14,21 +14,6 @@ contributors:
 ---
 
 # XSendAppNotification and related action functions (preview)
-
-[!INCLUDE[function-send-app-notification-applies-to](includes/function-send-app-notification-applies-to.md)]
-
-[!INCLUDE[function-send-app-notification-applies-to](includes/function-send-app-notification-applies-to.md)]
-
-[!INCLUDE[function-send-app-notification-applies-to](includes/function-send-app-notification-applies-to.md)]
-
-[!INCLUDE[function-send-app-notification-applies-to](includes/function-send-app-notification-applies-to.md)]
-
-[!INCLUDE[function-send-app-notification-applies-to](includes/function-send-app-notification-applies-to.md)]
-
-[!INCLUDE[function-send-app-notification-applies-to](includes/function-send-app-notification-applies-to.md)]
-
-[!INCLUDE[function-send-app-notification-applies-to](includes/function-send-app-notification-applies-to.md)]
-
 [!INCLUDE[function-send-app-notification-applies-to](includes/function-send-app-notification-applies-to.md)]
 
 
@@ -177,6 +162,55 @@ XSendAppNotification(
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

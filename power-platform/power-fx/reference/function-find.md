@@ -18,21 +18,6 @@ contributors:
 ---
 
 # Find function
-
-[!INCLUDE[function-find-applies-to](includes/function-find-applies-to.md)]
-
-[!INCLUDE[function-find-applies-to](includes/function-find-applies-to.md)]
-
-[!INCLUDE[function-find-applies-to](includes/function-find-applies-to.md)]
-
-[!INCLUDE[function-find-applies-to](includes/function-find-applies-to.md)]
-
-[!INCLUDE[function-find-applies-to](includes/function-find-applies-to.md)]
-
-[!INCLUDE[function-find-applies-to](includes/function-find-applies-to.md)]
-
-[!INCLUDE[function-find-applies-to](includes/function-find-applies-to.md)]
-
 [!INCLUDE[function-find-applies-to](includes/function-find-applies-to.md)]
 
 
@@ -63,6 +48,55 @@ The **Find** function looks for a string within another string and is case sensi
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

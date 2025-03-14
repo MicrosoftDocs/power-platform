@@ -18,21 +18,6 @@ contributors:
 ---
 
 # Update and UpdateIf functions
-
-[!INCLUDE[function-update-updateif-applies-to](includes/function-update-updateif-applies-to.md)]
-
-[!INCLUDE[function-update-updateif-applies-to](includes/function-update-updateif-applies-to.md)]
-
-[!INCLUDE[function-update-updateif-applies-to](includes/function-update-updateif-applies-to.md)]
-
-[!INCLUDE[function-update-updateif-applies-to](includes/function-update-updateif-applies-to.md)]
-
-[!INCLUDE[function-update-updateif-applies-to](includes/function-update-updateif-applies-to.md)]
-
-[!INCLUDE[function-update-updateif-applies-to](includes/function-update-updateif-applies-to.md)]
-
-[!INCLUDE[function-update-updateif-applies-to](includes/function-update-updateif-applies-to.md)]
-
 [!INCLUDE[function-update-updateif-applies-to](includes/function-update-updateif-applies-to.md)]
 
 
@@ -106,6 +91,55 @@ In these examples, you'll replace or modify records in a data source that's name
    The number of units in stock for the product you specified decreases by the amount that you specified.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

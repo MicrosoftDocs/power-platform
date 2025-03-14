@@ -18,21 +18,6 @@ contributors:
 ---
 
 # If and Switch functions
-
-[!INCLUDE[function-if-applies-to](includes/function-if-applies-to.md)]
-
-[!INCLUDE[function-if-applies-to](includes/function-if-applies-to.md)]
-
-[!INCLUDE[function-if-applies-to](includes/function-if-applies-to.md)]
-
-[!INCLUDE[function-if-applies-to](includes/function-if-applies-to.md)]
-
-[!INCLUDE[function-if-applies-to](includes/function-if-applies-to.md)]
-
-[!INCLUDE[function-if-applies-to](includes/function-if-applies-to.md)]
-
-[!INCLUDE[function-if-applies-to](includes/function-if-applies-to.md)]
-
 [!INCLUDE[function-if-applies-to](includes/function-if-applies-to.md)]
 
 
@@ -117,6 +102,55 @@ In these examples, a **[Text input](/power-apps/maker/canvas-apps/controls/contr
    The **Label** control shows the value that you typed because it's more than 40.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

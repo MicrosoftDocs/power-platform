@@ -18,21 +18,6 @@ contributors:
 ---
 
 # IsMatch, Match, and MatchAll functions
-
-[!INCLUDE[function-ismatch-applies-to](includes/function-ismatch-applies-to.md)]
-
-[!INCLUDE[function-ismatch-applies-to](includes/function-ismatch-applies-to.md)]
-
-[!INCLUDE[function-ismatch-applies-to](includes/function-ismatch-applies-to.md)]
-
-[!INCLUDE[function-ismatch-applies-to](includes/function-ismatch-applies-to.md)]
-
-[!INCLUDE[function-ismatch-applies-to](includes/function-ismatch-applies-to.md)]
-
-[!INCLUDE[function-ismatch-applies-to](includes/function-ismatch-applies-to.md)]
-
-[!INCLUDE[function-ismatch-applies-to](includes/function-ismatch-applies-to.md)]
-
 [!INCLUDE[function-ismatch-applies-to](includes/function-ismatch-applies-to.md)]
 
 
@@ -262,6 +247,55 @@ To see the results of **MatchAll** in a gallery:
    ![Text property.](media/function-ismatch/pangram-gallery2.png)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

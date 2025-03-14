@@ -13,21 +13,6 @@ contributors:
   - gregli
 ---
 # ShowHostInfo function
-
-[!INCLUDE[showhostinfo-applies-to](includes/showhostinfo-applies-to.md)]
-
-[!INCLUDE[showhostinfo-applies-to](includes/showhostinfo-applies-to.md)]
-
-[!INCLUDE[showhostinfo-applies-to](includes/showhostinfo-applies-to.md)]
-
-[!INCLUDE[showhostinfo-applies-to](includes/showhostinfo-applies-to.md)]
-
-[!INCLUDE[showhostinfo-applies-to](includes/showhostinfo-applies-to.md)]
-
-[!INCLUDE[showhostinfo-applies-to](includes/showhostinfo-applies-to.md)]
-
-[!INCLUDE[showhostinfo-applies-to](includes/showhostinfo-applies-to.md)]
-
 [!INCLUDE[showhostinfo-applies-to](includes/showhostinfo-applies-to.md)]
 
 
@@ -55,6 +40,55 @@ When the users selects the Sync icon on their mobile device, a pop-up with the o
 ## Known issue
 - The table column in the available table section shows the table name instead of the display name.
 - The popup on Windows is loaded in full screen.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

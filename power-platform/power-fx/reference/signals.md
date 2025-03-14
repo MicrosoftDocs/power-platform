@@ -18,21 +18,6 @@ contributors:
 ---
 
 # Acceleration, App, Compass, Connection, and Location signals in Power Apps
-
-[!INCLUDE[signals-applies-to](includes/signals-applies-to.md)]
-
-[!INCLUDE[signals-applies-to](includes/signals-applies-to.md)]
-
-[!INCLUDE[signals-applies-to](includes/signals-applies-to.md)]
-
-[!INCLUDE[signals-applies-to](includes/signals-applies-to.md)]
-
-[!INCLUDE[signals-applies-to](includes/signals-applies-to.md)]
-
-[!INCLUDE[signals-applies-to](includes/signals-applies-to.md)]
-
-[!INCLUDE[signals-applies-to](includes/signals-applies-to.md)]
-
 [!INCLUDE[signals-applies-to](includes/signals-applies-to.md)]
 
 
@@ -138,6 +123,55 @@ In a baseball field, a pitcher throws a phone from the pitcher's mound to a catc
 | **App.ActiveScreen.Fill**       | Returns the background color for the displayed screen.                                                                                                                                                                                                                                                                                                                                         | **Color.Green**                                                                                                                     |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

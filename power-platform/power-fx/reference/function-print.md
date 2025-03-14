@@ -17,21 +17,6 @@ contributors:
 ---
 
 # Print function
-
-[!INCLUDE[function-print-applies-to](includes/function-print-applies-to.md)]
-
-[!INCLUDE[function-print-applies-to](includes/function-print-applies-to.md)]
-
-[!INCLUDE[function-print-applies-to](includes/function-print-applies-to.md)]
-
-[!INCLUDE[function-print-applies-to](includes/function-print-applies-to.md)]
-
-[!INCLUDE[function-print-applies-to](includes/function-print-applies-to.md)]
-
-[!INCLUDE[function-print-applies-to](includes/function-print-applies-to.md)]
-
-[!INCLUDE[function-print-applies-to](includes/function-print-applies-to.md)]
-
 [!INCLUDE[function-print-applies-to](includes/function-print-applies-to.md)]
 
 
@@ -109,6 +94,55 @@ To build out a print for a specific size, you can build a [responsive app](/powe
 ### See also
 
 [Canvas app formula reference](/power-apps/maker/canvas-apps/formula-reference)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

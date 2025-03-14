@@ -18,21 +18,6 @@ contributors:
 ---
 
 # RecordOf and Type functions
-
-[!INCLUDE[function-type-applies-to](includes/function-type-applies-to.md)]
-
-[!INCLUDE[function-type-applies-to](includes/function-type-applies-to.md)]
-
-[!INCLUDE[function-type-applies-to](includes/function-type-applies-to.md)]
-
-[!INCLUDE[function-type-applies-to](includes/function-type-applies-to.md)]
-
-[!INCLUDE[function-type-applies-to](includes/function-type-applies-to.md)]
-
-[!INCLUDE[function-type-applies-to](includes/function-type-applies-to.md)]
-
-[!INCLUDE[function-type-applies-to](includes/function-type-applies-to.md)]
-
 [!INCLUDE[function-type-applies-to](includes/function-type-applies-to.md)]
 
 
@@ -121,6 +106,55 @@ RecordOfBookType := Type( RecordOf( RecordOfLibraryType ) );
 ```
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

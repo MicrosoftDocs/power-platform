@@ -18,21 +18,6 @@ contributors:
 ---
 
 # User function
-
-[!INCLUDE[function-user-applies-to](includes/function-user-applies-to.md)]
-
-[!INCLUDE[function-user-applies-to](includes/function-user-applies-to.md)]
-
-[!INCLUDE[function-user-applies-to](includes/function-user-applies-to.md)]
-
-[!INCLUDE[function-user-applies-to](includes/function-user-applies-to.md)]
-
-[!INCLUDE[function-user-applies-to](includes/function-user-applies-to.md)]
-
-[!INCLUDE[function-user-applies-to](includes/function-user-applies-to.md)]
-
-[!INCLUDE[function-user-applies-to](includes/function-user-applies-to.md)]
-
 [!INCLUDE[function-user-applies-to](includes/function-user-applies-to.md)]
 
 
@@ -78,6 +63,55 @@ The current Power Apps user has the following information:
 | **User().Image**    | The image URL for the current Power Apps user. Set the **Image** property of the **Image** control to this value to display the image in the app. | "blob:1234...5678"<br><br>With **ImageControl.Image**:<br>![Image icon 1.](media/function-user/john-doe-picture.png "Image icon 1") |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

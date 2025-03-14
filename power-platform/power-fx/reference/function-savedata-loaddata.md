@@ -19,21 +19,6 @@ contributors:
 ---
 
 # SaveData, LoadData, and ClearData functions
-
-[!INCLUDE[function-savedata-loaddata-applies-to](includes/function-savedata-loaddata-applies-to.md)]
-
-[!INCLUDE[function-savedata-loaddata-applies-to](includes/function-savedata-loaddata-applies-to.md)]
-
-[!INCLUDE[function-savedata-loaddata-applies-to](includes/function-savedata-loaddata-applies-to.md)]
-
-[!INCLUDE[function-savedata-loaddata-applies-to](includes/function-savedata-loaddata-applies-to.md)]
-
-[!INCLUDE[function-savedata-loaddata-applies-to](includes/function-savedata-loaddata-applies-to.md)]
-
-[!INCLUDE[function-savedata-loaddata-applies-to](includes/function-savedata-loaddata-applies-to.md)]
-
-[!INCLUDE[function-savedata-loaddata-applies-to](includes/function-savedata-loaddata-applies-to.md)]
-
 [!INCLUDE[function-savedata-loaddata-applies-to](includes/function-savedata-loaddata-applies-to.md)]
 
 
@@ -227,6 +212,55 @@ Following simple example captures and stores the names and pictures of everyday 
 For a detailed example, see the article on [simple offline capabilities](/power-apps/maker/canvas-apps/offline-apps).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

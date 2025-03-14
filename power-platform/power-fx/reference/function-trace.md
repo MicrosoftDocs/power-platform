@@ -18,21 +18,6 @@ contributors:
 ---
 
 # Trace function
-
-[!INCLUDE[function-trace-applies-to](includes/function-trace-applies-to.md)]
-
-[!INCLUDE[function-trace-applies-to](includes/function-trace-applies-to.md)]
-
-[!INCLUDE[function-trace-applies-to](includes/function-trace-applies-to.md)]
-
-[!INCLUDE[function-trace-applies-to](includes/function-trace-applies-to.md)]
-
-[!INCLUDE[function-trace-applies-to](includes/function-trace-applies-to.md)]
-
-[!INCLUDE[function-trace-applies-to](includes/function-trace-applies-to.md)]
-
-[!INCLUDE[function-trace-applies-to](includes/function-trace-applies-to.md)]
-
 [!INCLUDE[function-trace-applies-to](includes/function-trace-applies-to.md)]
 
 
@@ -74,6 +59,55 @@ When used with [Test Studio](/power-apps/maker/canvas-apps/test-studio), **Trace
 [Working with Test Studio](/power-apps/maker/canvas-apps/working-with-test-studio)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

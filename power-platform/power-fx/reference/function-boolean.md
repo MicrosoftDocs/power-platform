@@ -14,21 +14,6 @@ contributors:
   - gregli
 ---
 # Boolean function
-
-[!INCLUDE[function-boolean-applies-to](includes/function-boolean-applies-to.md)]
-
-[!INCLUDE[function-boolean-applies-to](includes/function-boolean-applies-to.md)]
-
-[!INCLUDE[function-boolean-applies-to](includes/function-boolean-applies-to.md)]
-
-[!INCLUDE[function-boolean-applies-to](includes/function-boolean-applies-to.md)]
-
-[!INCLUDE[function-boolean-applies-to](includes/function-boolean-applies-to.md)]
-
-[!INCLUDE[function-boolean-applies-to](includes/function-boolean-applies-to.md)]
-
-[!INCLUDE[function-boolean-applies-to](includes/function-boolean-applies-to.md)]
-
 [!INCLUDE[function-boolean-applies-to](includes/function-boolean-applies-to.md)]
 
 
@@ -91,6 +76,56 @@ In most cases, type coercion happens automatically and the **Boolean** function 
 | **Boolean( [&nbsp;1,&nbsp;2,&nbsp;0 &nbsp;] )** | Converts the single column table of numbers to a single column table of boolean value. | [ *true*, *true*, *false* ] |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

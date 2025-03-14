@@ -1,6 +1,7 @@
 ### errata for canvas apps
 
-? SendAppNotification (preview) X functions?
+# moving forward?
+? XSendAppNotification
 
 # not available in canvas yet
 - Confirm
@@ -24,4 +25,8 @@
 + AISentiment
 + AISummarize
 + AITranslate
+
+# user defined type functions aren't real functions and won't show up in the json file
++ Type
++ RecordOf
 

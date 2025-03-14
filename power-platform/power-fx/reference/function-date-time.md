@@ -18,21 +18,6 @@ contributors:
 ---
 
 # Date, DateTime, and Time functions
-
-[!INCLUDE[function-date-time-applies-to](includes/function-date-time-applies-to.md)]
-
-[!INCLUDE[function-date-time-applies-to](includes/function-date-time-applies-to.md)]
-
-[!INCLUDE[function-date-time-applies-to](includes/function-date-time-applies-to.md)]
-
-[!INCLUDE[function-date-time-applies-to](includes/function-date-time-applies-to.md)]
-
-[!INCLUDE[function-date-time-applies-to](includes/function-date-time-applies-to.md)]
-
-[!INCLUDE[function-date-time-applies-to](includes/function-date-time-applies-to.md)]
-
-[!INCLUDE[function-date-time-applies-to](includes/function-date-time-applies-to.md)]
-
 [!INCLUDE[function-date-time-applies-to](includes/function-date-time-applies-to.md)]
 
 
@@ -135,6 +120,55 @@ Text(
 ```
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

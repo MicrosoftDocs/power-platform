@@ -17,21 +17,6 @@ contributors:
 ---
 
 # Error, IfError, IsError, IsBlankOrError functions
-
-[!INCLUDE[function-iferror-applies-to](includes/function-iferror-applies-to.md)]
-
-[!INCLUDE[function-iferror-applies-to](includes/function-iferror-applies-to.md)]
-
-[!INCLUDE[function-iferror-applies-to](includes/function-iferror-applies-to.md)]
-
-[!INCLUDE[function-iferror-applies-to](includes/function-iferror-applies-to.md)]
-
-[!INCLUDE[function-iferror-applies-to](includes/function-iferror-applies-to.md)]
-
-[!INCLUDE[function-iferror-applies-to](includes/function-iferror-applies-to.md)]
-
-[!INCLUDE[function-iferror-applies-to](includes/function-iferror-applies-to.md)]
-
 [!INCLUDE[function-iferror-applies-to](includes/function-iferror-applies-to.md)]
 
 
@@ -278,6 +263,55 @@ Error( Filter( AllErrors, Kind <> ErrorKind.Div0 ) )
 [Formula reference for Power Apps](/power-apps/maker/canvas-apps/formula-reference)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

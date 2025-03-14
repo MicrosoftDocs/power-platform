@@ -18,21 +18,6 @@ contributors:
 ---
 
 # SetProperty function
-
-[!INCLUDE[function-setproperty-applies-to](includes/function-setproperty-applies-to.md)]
-
-[!INCLUDE[function-setproperty-applies-to](includes/function-setproperty-applies-to.md)]
-
-[!INCLUDE[function-setproperty-applies-to](includes/function-setproperty-applies-to.md)]
-
-[!INCLUDE[function-setproperty-applies-to](includes/function-setproperty-applies-to.md)]
-
-[!INCLUDE[function-setproperty-applies-to](includes/function-setproperty-applies-to.md)]
-
-[!INCLUDE[function-setproperty-applies-to](includes/function-setproperty-applies-to.md)]
-
-[!INCLUDE[function-setproperty-applies-to](includes/function-setproperty-applies-to.md)]
-
 [!INCLUDE[function-setproperty-applies-to](includes/function-setproperty-applies-to.md)]
 
 
@@ -75,6 +60,55 @@ _SetProperty(Control Property, value)_
 [Working with Test Studio](/power-apps/maker/canvas-apps/working-with-test-studio)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

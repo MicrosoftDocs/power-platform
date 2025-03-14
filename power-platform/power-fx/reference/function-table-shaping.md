@@ -18,21 +18,6 @@ contributors:
 ---
 
 # AddColumns, DropColumns, RenameColumns, and ShowColumns functions
-
-[!INCLUDE[function-table-shaping-applies-to](includes/function-table-shaping-applies-to.md)]
-
-[!INCLUDE[function-table-shaping-applies-to](includes/function-table-shaping-applies-to.md)]
-
-[!INCLUDE[function-table-shaping-applies-to](includes/function-table-shaping-applies-to.md)]
-
-[!INCLUDE[function-table-shaping-applies-to](includes/function-table-shaping-applies-to.md)]
-
-[!INCLUDE[function-table-shaping-applies-to](includes/function-table-shaping-applies-to.md)]
-
-[!INCLUDE[function-table-shaping-applies-to](includes/function-table-shaping-applies-to.md)]
-
-[!INCLUDE[function-table-shaping-applies-to](includes/function-table-shaping-applies-to.md)]
-
 [!INCLUDE[function-table-shaping-applies-to](includes/function-table-shaping-applies-to.md)]
 
 
@@ -171,6 +156,55 @@ Let's try some of the examples from earlier in this article.
 See [Map columns](/power-apps/maker/canvas-apps/map-component-input-fields#map-columns).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

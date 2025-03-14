@@ -18,21 +18,6 @@ contributors:
 ---
 
 # Day, Month, Year, Hour, Minute, Second, and Weekday functions
-
-[!INCLUDE[function-datetime-parts-applies-to](includes/function-datetime-parts-applies-to.md)]
-
-[!INCLUDE[function-datetime-parts-applies-to](includes/function-datetime-parts-applies-to.md)]
-
-[!INCLUDE[function-datetime-parts-applies-to](includes/function-datetime-parts-applies-to.md)]
-
-[!INCLUDE[function-datetime-parts-applies-to](includes/function-datetime-parts-applies-to.md)]
-
-[!INCLUDE[function-datetime-parts-applies-to](includes/function-datetime-parts-applies-to.md)]
-
-[!INCLUDE[function-datetime-parts-applies-to](includes/function-datetime-parts-applies-to.md)]
-
-[!INCLUDE[function-datetime-parts-applies-to](includes/function-datetime-parts-applies-to.md)]
-
 [!INCLUDE[function-datetime-parts-applies-to](includes/function-datetime-parts-applies-to.md)]
 
 
@@ -98,6 +83,55 @@ For the following example, the current time is **3:59:37 PM** on **Thursday, Apr
 | **Weekday(&nbsp;Now(),&nbsp;StartOfWeek.Wednesday&nbsp;)** | Returns the weekday component of the current time and date, using a **StartOfWeek** enumeration to specify the start of the week as Wednesday. | 2      |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

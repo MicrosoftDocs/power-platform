@@ -18,21 +18,6 @@ contributors:
 ---
 
 # Relate and Unrelate functions
-
-[!INCLUDE[function-relate-unrelate-applies-to](includes/function-relate-unrelate-applies-to.md)]
-
-[!INCLUDE[function-relate-unrelate-applies-to](includes/function-relate-unrelate-applies-to.md)]
-
-[!INCLUDE[function-relate-unrelate-applies-to](includes/function-relate-unrelate-applies-to.md)]
-
-[!INCLUDE[function-relate-unrelate-applies-to](includes/function-relate-unrelate-applies-to.md)]
-
-[!INCLUDE[function-relate-unrelate-applies-to](includes/function-relate-unrelate-applies-to.md)]
-
-[!INCLUDE[function-relate-unrelate-applies-to](includes/function-relate-unrelate-applies-to.md)]
-
-[!INCLUDE[function-relate-unrelate-applies-to](includes/function-relate-unrelate-applies-to.md)]
-
 [!INCLUDE[function-relate-unrelate-applies-to](includes/function-relate-unrelate-applies-to.md)]
 
 
@@ -346,6 +331,55 @@ With this new screen, users can add a contact to a product and then flip to a vi
 ![Demonstrate many-to-many relationship from either side.](media/function-relate-unrelate/contacts-reverse.gif)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

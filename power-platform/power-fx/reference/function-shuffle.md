@@ -18,21 +18,6 @@ contributors:
 ---
 
 # Shuffle function
-
-[!INCLUDE[function-shuffle-applies-to](includes/function-shuffle-applies-to.md)]
-
-[!INCLUDE[function-shuffle-applies-to](includes/function-shuffle-applies-to.md)]
-
-[!INCLUDE[function-shuffle-applies-to](includes/function-shuffle-applies-to.md)]
-
-[!INCLUDE[function-shuffle-applies-to](includes/function-shuffle-applies-to.md)]
-
-[!INCLUDE[function-shuffle-applies-to](includes/function-shuffle-applies-to.md)]
-
-[!INCLUDE[function-shuffle-applies-to](includes/function-shuffle-applies-to.md)]
-
-[!INCLUDE[function-shuffle-applies-to](includes/function-shuffle-applies-to.md)]
-
 [!INCLUDE[function-shuffle-applies-to](includes/function-shuffle-applies-to.md)]
 
 
@@ -58,6 +43,55 @@ If you stored details about playing cards in a [collection](/power-apps/maker/ca
 **Shuffle(Deck)**
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

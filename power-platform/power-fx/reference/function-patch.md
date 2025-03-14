@@ -18,21 +18,6 @@ contributors:
 ---
 
 # Patch function
-
-[!INCLUDE[function-patch-applies-to](includes/function-patch-applies-to.md)]
-
-[!INCLUDE[function-patch-applies-to](includes/function-patch-applies-to.md)]
-
-[!INCLUDE[function-patch-applies-to](includes/function-patch-applies-to.md)]
-
-[!INCLUDE[function-patch-applies-to](includes/function-patch-applies-to.md)]
-
-[!INCLUDE[function-patch-applies-to](includes/function-patch-applies-to.md)]
-
-[!INCLUDE[function-patch-applies-to](includes/function-patch-applies-to.md)]
-
-[!INCLUDE[function-patch-applies-to](includes/function-patch-applies-to.md)]
-
 [!INCLUDE[function-patch-applies-to](includes/function-patch-applies-to.md)]
 
 
@@ -279,6 +264,55 @@ To learn more about the usage of **As** operator and **ThisRecord** see **[Opera
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

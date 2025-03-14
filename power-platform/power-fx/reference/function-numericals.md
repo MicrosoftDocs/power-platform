@@ -18,21 +18,6 @@ contributors:
 ---
 
 # Abs, Exp, Ln, Power, Log, and Sqrt functions
-
-[!INCLUDE[function-numericals-applies-to](includes/function-numericals-applies-to.md)]
-
-[!INCLUDE[function-numericals-applies-to](includes/function-numericals-applies-to.md)]
-
-[!INCLUDE[function-numericals-applies-to](includes/function-numericals-applies-to.md)]
-
-[!INCLUDE[function-numericals-applies-to](includes/function-numericals-applies-to.md)]
-
-[!INCLUDE[function-numericals-applies-to](includes/function-numericals-applies-to.md)]
-
-[!INCLUDE[function-numericals-applies-to](includes/function-numericals-applies-to.md)]
-
-[!INCLUDE[function-numericals-applies-to](includes/function-numericals-applies-to.md)]
-
 [!INCLUDE[function-numericals-applies-to](includes/function-numericals-applies-to.md)]
 
 
@@ -117,6 +102,55 @@ The examples in this section use a [data source](/power-apps/maker/canvas-apps/w
 3. Type a number into **Source**, and confirm that the **Label** control shows the square root of the number that you typed.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

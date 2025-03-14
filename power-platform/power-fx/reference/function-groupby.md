@@ -18,21 +18,6 @@ contributors:
 ---
 
 # GroupBy and Ungroup functions
-
-[!INCLUDE[function-groupby-applies-to](includes/function-groupby-applies-to.md)]
-
-[!INCLUDE[function-groupby-applies-to](includes/function-groupby-applies-to.md)]
-
-[!INCLUDE[function-groupby-applies-to](includes/function-groupby-applies-to.md)]
-
-[!INCLUDE[function-groupby-applies-to](includes/function-groupby-applies-to.md)]
-
-[!INCLUDE[function-groupby-applies-to](includes/function-groupby-applies-to.md)]
-
-[!INCLUDE[function-groupby-applies-to](includes/function-groupby-applies-to.md)]
-
-[!INCLUDE[function-groupby-applies-to](includes/function-groupby-applies-to.md)]
-
 [!INCLUDE[function-groupby-applies-to](includes/function-groupby-applies-to.md)]
 
 
@@ -180,6 +165,55 @@ Another operation we can perform on a grouped table is to compile the results. I
    Note that we didn't need to ungroup this table.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

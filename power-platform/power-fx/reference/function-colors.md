@@ -18,21 +18,6 @@ contributors:
 ---
 
 # Color enumeration and ColorFade, ColorValue, and RGBA functions
-
-[!INCLUDE[function-colors-applies-to](includes/function-colors-applies-to.md)]
-
-[!INCLUDE[function-colors-applies-to](includes/function-colors-applies-to.md)]
-
-[!INCLUDE[function-colors-applies-to](includes/function-colors-applies-to.md)]
-
-[!INCLUDE[function-colors-applies-to](includes/function-colors-applies-to.md)]
-
-[!INCLUDE[function-colors-applies-to](includes/function-colors-applies-to.md)]
-
-[!INCLUDE[function-colors-applies-to](includes/function-colors-applies-to.md)]
-
-[!INCLUDE[function-colors-applies-to](includes/function-colors-applies-to.md)]
-
 [!INCLUDE[function-colors-applies-to](includes/function-colors-applies-to.md)]
 
 
@@ -248,6 +233,56 @@ If you specify a **Color** enumeration value or you build a **ColorValue** formu
 | **Color.YellowGreen**          | **ColorValue( "#9acd32"&nbsp;)**<br>**ColorValue( "YELLOWGREEN"&nbsp;)**          | **RGBA(&nbsp;154,&nbsp;205,&nbsp;50,&nbsp;1&nbsp;)**  | ![yellowgreen.](./media/function-colors/color-yellowgreen.png)                   |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
