@@ -2,7 +2,7 @@
 title: Business continuity and disaster recovery for Dynamics 365 SaaS apps
 description: Microsoft provides business continuity and disaster recovery for production environments of Dynamics 365 SaaS applications if there's a regionwide Azure outage. 
 author: ImadYanni 
-ms.date: 03/11/2025
+ms.date: 03/13/2025
 ms.reviewer: sericks
 ms.topic: conceptual
 ms.subservice: admin
@@ -34,7 +34,7 @@ Microsoft recognizes that infrastructure components such as network, power, or c
 
 Microsoft automatically detects availability zone-level failures and switches to other availability zones in the region almost instantly. This protects you from data loss, and usually, the downtime is near zero. This in-region capability is available for production-type environments which are expected to host business-critical application processes and data. Ensure that you protect yourself against disruption by making sure your production processes and data aren't deployed in non-production types such as sandbox, developer, or trial environment types.
 
-To ensure seamless disaster recovery, availability zones provide built-in resilience without requiring manual intervention. Zone-redundant data services replicate the data across multiple zones so that a failure in one zone does not affect the availability of the data. The recovery point objective is near zero and the rapid recovery, or recovery time objective, is less than five minutes. If one zone experiences a failure, traffic is automatically rerouted to the remaining zones with minimal service disruption.
+To ensure seamless disaster recovery, availability zones provide built-in resilience without requiring manual intervention. Zone-redundant data services replicate the data across multiple zones so that a failure in one zone doesn't affect the availability of the data. The recovery point objective is near zero and the rapid recovery, or recovery time objective, is less than five minutes. If one zone experiences a failure, traffic is automatically rerouted to the remaining zones with minimal service disruption.
 
 ## Backup of production environments
 
