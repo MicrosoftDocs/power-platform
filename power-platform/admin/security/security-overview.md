@@ -22,7 +22,7 @@ The **Security** page in the Power Platform admin center is designed to enhance 
 Administrators can complete these tasks:
 
 - **Assess your security score**: Use the security score to understand and improve your organization's security policies. The security score is shown on a qualitative scale (**Low**, **Medium**, or **High**). It helps you measure your organizational security position for Microsoft Power Platform and Dynamics 365 workloads.
-- **Act on recommendations**: Identify and implement impactful recommendations that the systems generates. These recommendations are based on best practices for improving a tenant's security score.
+- **Act on recommendations**: Identify and implement impactful recommendations that the system generates. These recommendations are based on best practices for improving a tenant's security score.
 - **Manage proactive policies**: Manage proactive policies for governance and security.
 
 ## Prerequisite
