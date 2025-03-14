@@ -190,11 +190,12 @@ foreach ( $refFile in Get-ChildItem "$powerFxPath/reference" -Filter *.md ) {
         $funcIncludeLine = @{}; 
         ForEach ($includeLine in $($includeContent -split "`n"))
         {
-            if ($includeLine -match '^\s*\|\s*([\w<>/]+)\s*\|')
+            if ($includeLine -match '^\s*\|\s*([\w\*<>/]+)\s*\|')
             {
                 $funcInlineNames = $matches[1]
-                $fs = $funcInlineNames -split '</br>'
-                foreach($f in $fs)
+                $funcInlineNames = $funcInlineNames -replace '\*', ''
+                $funcInlineNames = $funcInlineNames -split '</br>'
+                foreach($f in $funcInlineNames)
                 {
                     $funcIncludeLine[$f] = $includeLine
                 }

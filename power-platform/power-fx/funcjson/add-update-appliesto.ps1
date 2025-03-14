@@ -156,7 +156,7 @@ function apply_appliesto() {
                         $appliesToText += $imageType + $appToText
                     }
                     else {
-                        $appliesToText += '</br>' + $imageType + $appToText
+                        $appliesToText += ' ' + $imageType + $appToText
                     }
                     
                 }
@@ -165,10 +165,10 @@ function apply_appliesto() {
                 foreach ($func in $appliesToGroup[$key]) {
                     $itemCount += 1
                     if ($itemCount -eq 1) {
-                        $funcText += $func
+                        $funcText += "**" + $func + "**"
                     }
                     else {
-                        $funcText += '</br>' + $func
+                        $funcText += '</br>' + "**" + $func + "**"
                     }
                 }
 
