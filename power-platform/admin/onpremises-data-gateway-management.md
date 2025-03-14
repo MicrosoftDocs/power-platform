@@ -25,7 +25,7 @@ On the **Data** page of the [Power Platform admin center](https://admin.powerpla
 
 Users who are part of the Microsoft Entra Global administrator role (which includes Global admins), Power BI service administrators, and Gateway administrators will have access to data gateway management on the Power Platform admin center. However, there might be differences in the features available and the operations that can be performed by each of these roles.
 
-The Microsoft Entra Global administrator role (which includes Global admins) and Power BI service administrators can use the **Tenant administration** setting to control the list of gateways exposed. Only these admins will see the **Tenant administration** toggle.
+The Microsoft Entra Global administrator role (which includes Global admins), Power Platform Administrator, and Power BI service administrators can use the **Tenant administration** setting to control the list of gateways exposed. Only these admins will see the **Tenant administration** toggle.
 
 - Turn on **Tenant administration** to see and manage all gateways installed in your enterprise.
 - Turn off **Tenant administration** to see and manage all gateways for which you are an administrator.
