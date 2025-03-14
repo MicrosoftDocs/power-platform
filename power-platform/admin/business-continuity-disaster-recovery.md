@@ -32,9 +32,9 @@ A geography includes at least one Azure region that is typically made up of thre
 
 Microsoft recognizes that infrastructure components such as network, power, or cooling can fail unexpectedly, for example, due to a lightning strike. This could affect one or more datacenters. To ensure resilience, we architected and deployed availability zones, where your environments are replicated across at least two distinct zones.
 
-Microsoft automatically detects availability zone-level failures and switches to other availability zones in the region almost instantly. This protects you from any data loss, and usually, the downtime is near zero. This in-region capability is available for production-type environments which are expected to host business-critical application processes and data. Ensure that you protect yourself against disruption by making sure your production processes and data aren't deployed in non-production types such as sandbox, developer, or trial environment types.
+Microsoft automatically detects availability zone-level failures and switches to other availability zones in the region almost instantly. This protects you from data loss, and usually, the downtime is near zero. This in-region capability is available for production-type environments which are expected to host business-critical application processes and data. Ensure that you protect yourself against disruption by making sure your production processes and data aren't deployed in non-production types such as sandbox, developer, or trial environment types.
 
-To ensure seamless disaster recovery, availability zones provide built-in resilience without requiring manual intervention. Customer data is synchronously replicated across at least two availability zones, resulting in zero data loss. The recovery point objective is zero and the rapid recovery, or recovery time objective, is less than five minutes. If one zone experiences a failure, traffic is automatically rerouted to the remaining zones with minimal service disruption.
+To ensure seamless disaster recovery, availability zones provide built-in resilience without requiring manual intervention. Zone-redundant data services replicate the data across multiple zones so that a failure in one zone does not affect the availability of the data. The recovery point objective is near zero and the rapid recovery, or recovery time objective, is less than five minutes. If one zone experiences a failure, traffic is automatically rerouted to the remaining zones with minimal service disruption.
 
 ## Backup of production environments
 
@@ -49,7 +49,7 @@ Key improvements include:
 
 A limited number of customers in certain regions are in the process of transitioning to the improved architecture. Whether the region has transitioned or is in the process, the service always keeps a backup of environment data in more than one data center.
 
-Availability zones are far enough apart to reduce the likelihood of an outage affecting more than one zone, but close enough to have low-latency connections to other availability zones. The distance between availability zones is usually 60 miles, or 100 kilometers. 
+Availability zones are far enough apart to reduce the likelihood of an outage affecting more than one zone, but close enough to have low-latency connections to other availability zones. Availability zones are typically separated by several kilometers, and usually are within 100 kilometers. 
 
 Customers that require greater distance within a geography can choose to use self-service disaster recovery to maintain a copy in a secondary region. With this feature, customers can control failover operations and perform disaster recovery drills as described in the following section.
 
