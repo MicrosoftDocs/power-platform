@@ -382,3 +382,5 @@ For more information and examples, see [record scopes](/power-apps/maker/canvas-
 
 
 
+
+

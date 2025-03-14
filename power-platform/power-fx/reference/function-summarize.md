@@ -178,3 +178,5 @@ Summarize( Inventory, Supplier, Fruit, Average( ThisGroup, Price ) As 'Average P
 
 
 
+
+
