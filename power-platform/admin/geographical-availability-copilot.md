@@ -4,7 +4,7 @@ description: Learn how to turn on data movement across regions for Copilots and 
 author: amchern
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/13/2025
+ms.date: 03/14/2025
 ms.subservice: admin
 ms.author: amchern
 ms.reviewer: sericks
@@ -71,12 +71,11 @@ To turn on data movement across regions, Bing search, and M365 for Copilots and 
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**. The **Environments** page is displayed.
 1. Select the name of your environment. Details about your environment are displayed.
-1. In the **Generative AI features** card, select **Edit**. 
-
-    > [!NOTE]
-    > The **Generative AI features** card isn't displayed for regions listed in [Regions where data is processed for Copilots and generative AI features](#regions-where-data-is-processed-for-copilots-and-generative-ai-features) where the Azure OpenAI Service is hosted in the same region.
-
+1. In the **Generative AI features** card, select **Edit**. The **Generative AI features** pane is displayed.
 1. Review the terms of use and select the **Move data across regions** checkbox.
+
+    > [!Note]
+    > The **Move data across regions** checkbox isn't displayed for regions listed in [Regions where data is processed for Copilots and generative AI features](#regions-where-data-is-processed-for-copilots-and-generative-ai-features) where the Azure OpenAI Service is hosted in the same region.
 
     When you use Copilots and generative AI features, your inputs (prompts) and outputs (results) might move outside of your region to the location where the generative AI feature is hosted, as described in the preceding table. Learn more in [Regions where data is processed for Copilots and generative AI features](#regions-where-data-is-processed-for-copilots-and-generative-ai-features).
 
@@ -88,7 +87,7 @@ To turn on data movement across regions, Bing search, and M365 for Copilots and 
     When the **Bing search** feature is turned on, your agent in Microsoft Copilot Studio can use the data sources you provided, but it can use Bing's APIs to index the results better and find the best answer from within your data sources. Learn more in [Generative answers](/microsoft-copilot-studio/nlu-boost-conversations).
 
     > [!NOTE]
-    > You can select the **Bing search** checkbox only if the **Move data across regions** checkbox is already selected.
+    > If the **Move data across regions** checkbox is displayed in the **Generative AI features** pane, you must have it already selected in order to select the **Bing search** checkbox.
 
 1. Review the terms of use and select the **M365 services** checkbox.
 
@@ -97,7 +96,7 @@ To turn on data movement across regions, Bing search, and M365 for Copilots and 
     To learn more about how the **M365 services** feature impacts Copilot Studio, go to [Manage activity data powered by Microsoft 365 services](/microsoft-copilot-studio/manage-activity-data-m365) and [Review agent activity](/microsoft-copilot-studio/authoring-review-activity). For information about data locations, go to [Data locations in Copilot Studio](/microsoft-copilot-studio/data-location).
 
     > [!NOTE]
-    > You can select the **M365 services** checkbox only if the **Move data across regions** checkbox is already selected.
+    > If the **Move data across regions** checkbox is displayed in the **Generative AI features** pane, you must have it already selected in order to select the **M365 services** checkbox.
 
 1. Select **Save**.
 
@@ -106,12 +105,11 @@ To turn on data movement across regions, Bing search, and M365 for Copilots and 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. In the navigation pane, select **Environments**. The **Environments** page is displayed.
 1. Select the name of your environment. Details about your environment are displayed.
-1. In the **Generative AI features** card, select **Edit**. 
-
-    > [!NOTE]
-    > The **Generative AI features** card isn't displayed for regions listed in [Regions where data is processed for Copilots and generative AI features](#regions-where-data-is-processed-for-copilots-and-generative-ai-features) where the Azure OpenAI Service is hosted in the same region.
-
+1. In the **Generative AI features** card, select **Edit**. The **Generative AI features** pane is displayed.
 1. Review the terms of use and select the **Move data across regions** checkbox.
+
+    > [!Note]
+    > The **Move data across regions** checkbox isn't displayed for regions listed in [Regions where data is processed for Copilots and generative AI features](#regions-where-data-is-processed-for-copilots-and-generative-ai-features) where the Azure OpenAI Service is hosted in the same region.
 
     When you use Copilots and generative AI features, your inputs (prompts) and outputs (results) might move outside of your region to the location where the generative AI feature is hosted, as described in the preceding table. Learn more in [Regions where data is processed for Copilots and generative AI features](#regions-where-data-is-processed-for-copilots-and-generative-ai-features).
 
@@ -123,7 +121,7 @@ To turn on data movement across regions, Bing search, and M365 for Copilots and 
     When the **Bing search** feature is turned on, your agent in Microsoft Copilot Studio can use the data sources you provided, but it can use Bing's APIs to index the results better and find the best answer from within your data sources. Learn more in [Generative answers](/microsoft-copilot-studio/nlu-boost-conversations).
 
     > [!NOTE]
-    > You can select the **Bing search** checkbox only if the **Move data across regions** checkbox is already selected.
+    > If the **Move data across regions** checkbox is displayed in the **Generative AI features** pane, you must have it already selected in order to select the **Bing search** checkbox.
 
 1. Review the terms of use and select the **M365 services** checkbox.
 
@@ -132,7 +130,7 @@ To turn on data movement across regions, Bing search, and M365 for Copilots and 
     To learn more about how the **M365 services** feature impacts Copilot Studio, go to [Manage activity data powered by Microsoft 365 services](/microsoft-copilot-studio/manage-activity-data-m365) and [Review agent activity](/microsoft-copilot-studio/authoring-review-activity). For information about data locations, go to [Data locations in Copilot Studio](/microsoft-copilot-studio/data-location).
 
     > [!NOTE]
-    > You can select the **M365 services** checkbox only if the **Move data across regions** checkbox is already selected.
+    > If the **Move data across regions** checkbox is displayed in the **Generative AI features** pane, you must have it already selected in order to select the **M365 services** checkbox.
 
 1. Select **Save**.
 
