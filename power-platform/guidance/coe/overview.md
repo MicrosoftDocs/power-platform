@@ -4,7 +4,7 @@ description: Overview of the CoE Starter Kit
 author: manuelap-msft
 ms.topic: conceptual
 ms.date: 02/08/2023
-ms.subservice: guidance
+ms.subservice: guidance-toolkit
 ms.author: mapichle
 ms.reviewer: sericks
 ---

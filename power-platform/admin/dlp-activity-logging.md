@@ -15,6 +15,8 @@ search.audienceType:
 
 # Data loss prevention activity logging
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 > [!Warning]
 > The schema documented in this article is deprecated and won't be available starting in July 2024. You can use the new schema available at [Activity category: Data policy events](admin-activity-logging.md#activity-category-data-policy-events).
 

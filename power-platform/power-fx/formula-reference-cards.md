@@ -3,21 +3,26 @@ title: Formula reference - Cards
 description: Reference information for functions, signals, and enumerations in Cards pac power-fx commands.
 ms.author: marcsc
 author: devkeydet
-ms.reviewer: jdaly
 ms.topic: reference
-ms.date: 3/22/2024
+ms.custom: canvas
+ms.reviewer: mkaur-msft
+ms.date: 3/3/2025
 ms.subservice: power-fx
 search.audienceType:
   - developer
 contributors:
-  - JimDaly
   - gregli-msft
   - gregli
 ---
 
 # Formula reference - Cards
 
-Use these formula elements to interact with Cards. 
+> [!IMPORTANT] 
+> Effective August 29, 2025, [Cards for Power Apps](/power-apps/cards/overview) will be deprecated and no longer supported. As a result, any Cards for Power Apps that have been built and shared in Microsoft Teams will not function. Users will not be able to create new cards or execute existing ones.
+> 
+> We recommend migrating any functionality you rely on from Cards for Power Apps before the deprecation date. Consider transitioning to either [Adaptive Cards in Copilot Studio](/microsoft-copilot-studio/guidance/adaptive-cards-overview) or [adaptive cards for Microsoft Teams](/power-automate/overview-adaptive-cards) for similar functionality. More information: [Deprecation of Cards for Power Apps](../important-changes-coming.md#deprecation-of-cards-for-power-apps)
+
+In this article, learn about all the functions available in [Cards](/power-apps/cards/overview).
 
 ## A
 

@@ -4,7 +4,7 @@ description: "The CoE Starter Kit contains many useful components to help you es
 author: stjeffer
 ms.topic: conceptual
 ms.date: 06/13/2024
-ms.subservice: guidance
+ms.subservice: guidance-toolkit
 ms.author: stjeffer
 ms.reviewer: sericks
 search.audienceType: 

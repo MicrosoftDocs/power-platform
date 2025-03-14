@@ -18,6 +18,8 @@ search.audienceType:
 
 # Control user access to environments with security groups and licenses
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 If your company has multiple environments, you can use security groups to control which licensed users can be members of a particular environment.  
 
 > [!NOTE]

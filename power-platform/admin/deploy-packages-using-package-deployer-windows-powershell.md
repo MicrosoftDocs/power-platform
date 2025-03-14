@@ -15,6 +15,8 @@ search.audienceType:
 ---
 # Deploy packages using Package Deployer and Windows PowerShell
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 [!INCLUDE[pn_package_deployer_long](../includes/pn-package-deployer-long.md)] enables administrators to deploy packages to an environment. 
 
 > [!NOTE]

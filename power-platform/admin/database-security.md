@@ -1,6 +1,6 @@
 ---
-title: User security in an environment
-description: Learn about users' access to resources in a Microsoft Dataverse environment.
+title: Role-based security roles
+description: Learn about how roles are used to control a user's access to a database and resrouces in an environment.
 ms.subservice: admin
 ms.author: paulliew
 author: paulliew
@@ -13,18 +13,18 @@ ms.custom:
   - bap-template
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 1/15/2025
+ms.date: 02/11/2025
 search.audienceType: 
   - admin
 ---
 
-# User security in an environment
+# Role-based security roles
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 Microsoft Dataverse uses a role-based security model to control access to a database and its resources in an environment. Use security roles to configure access to all resources in an environment or to specific apps and data in the environment. A combination of access levels and permissions in a security role determines which apps and data users can view and how they can interact with those apps and data.
 
 An environment can have no or one Dataverse database. You assign security roles differently for [environments that have no Dataverse database](database-security-configure.md#assign-security-roles-to-users-in-an-environment-that-has-no-dataverse-database) and [environments that have a Dataverse database](database-security-configure.md#assign-security-roles-to-users-in-an-environment-that-has-a-dataverse-database).
-
-[Learn more about environments in Power Platform](./environments-overview.md).
 
 ## Predefined security roles
 
@@ -80,7 +80,7 @@ In addition to the predefined security roles described for Dataverse, other secu
 
 ### Dataverse for Teams environments
 
-[Learn more about predefined security roles in Dataverse for Teams environments](about-teams-environment.md#user-access-to-dataverse-for-teams-environments).
+Learn more about [predefined security roles in Dataverse for Teams environments](about-teams-environment.md#user-access-to-dataverse-for-teams-environments).
 
 ## App-specific security roles
 
@@ -119,10 +119,11 @@ The following table describes which resources each security role can author.
 
 \**Dataverse for Teams users don't get access to desktop flows by default. You need to upgrade your environment to full Dataverse capabilities and acquire [desktop flow license plans](https://powerautomate.microsoft.com/pricing/) to use desktop flows.
 
-### Related information
+### Related content
 
-- [Grant users access](grant-users-access.md)  
-- [Control user access to environments: security groups and licenses](control-user-access.md)  
+- [Assign a security role to a user](assign-security-roles.md)  
+- [Security roles and privileges](security-roles-privileges.md)  
 - [How access to a record is determined](how-record-access-determined.md)
+- [Configure user security in an environment](database-security-configure.md)
 
 [!INCLUDE [footer-include](../includes/footer-banner.md)]

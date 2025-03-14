@@ -14,6 +14,8 @@ search.audienceType:
 
 # Manage Power Apps licenses in your organization 
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 This topic describes how users in your organization can get access to use Power Apps, and how you can control access to the Power Apps service. Visit the [Power Automate administration FAQs](/power-automate/organization-q-and-a) to learn about admin controls.
 
 ## Power Apps sign up
