@@ -140,6 +140,10 @@ You need a Power Apps Developer plan to get a developer environment. This Develo
 - To verify if the respective policy is already allowed, admin can use the [Get-AllowedConsentPlans (Microsoft.PowerApps.Administration.PowerShell)](/powershell/module/microsoft.powerapps.administration.powershell/get-allowedconsentplans) PowerShell cmdlet.
 - To modify the policy, admin can use the [Add-AllowedConsentPlans (Microsoft.PowerApps.Administration.PowerShell)](/powershell/module/microsoft.powerapps.administration.powershell/add-allowedconsentplans) PowerShell cmdlet.
 
+> Examples of utilizing this command for developer environment:
+- Get-AllowedConsentPlans
+- Add-AllowedConsentPlans -Type Viral
+- Remove-AllowedConsentPlans -Type Viral
 
 ### Can I reset or delete my developer environment?
 
