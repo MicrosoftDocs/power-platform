@@ -6,6 +6,8 @@ This leverage is dependent on consistency. The same functions and operators work
 
 But to make this work, the docs need to reflect the reality in the products. Each product can choose which set of functions and signals are included and can contribute their own. The files and scripts in this directory help us do this.
 
+*It is up to the product team to update the docs.* That includes the .json file, the formula-reference-*.md for their product, and any articles that are unique to their product.
+
 ## Contents
 
 ### validate.ps1
@@ -36,6 +38,10 @@ It also contains common setup code and functions for the other scripts.
 This is the manifest of the functions and other formula elements that are offered by each of the products. This is a copy from the product's source repo, updated here when the product team is ready to update the docs.
 
 See below for sample code to test that the .json file is being kept in sync.
+
+*It is up to the product team to update the docs.* That includes the .json file, the formula-reference-*.md for their product, and any articles that are unique to their product.
+
+The Power Fx team will monitor changes in the product's version of the .json file and compare against the docs. Your team contacts may receive pings if these files fall too far out of sync. 
 
 ### *.errata files
 
