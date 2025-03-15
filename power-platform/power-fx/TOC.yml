@@ -88,6 +88,8 @@
             href: reference/function-navigate.md
           - name: Blank
             href: reference/function-isblank-isempty.md
+          - name: ColorValue
+            href: reference/function-colors.md            
           - name: Boolean
             href: reference/function-boolean.md
           - name: Calendar
@@ -111,8 +113,6 @@
           - name: Color
             href: reference/function-colors.md
           - name: ColorFade
-            href: reference/function-colors.md
-          - name: ColorValue
             href: reference/function-colors.md
           - name: Column
             href: reference/function-columnnames-column.md

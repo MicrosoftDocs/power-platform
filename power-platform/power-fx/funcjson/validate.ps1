@@ -286,7 +286,7 @@ foreach ($toc in $tocLines ) {
         if ($toc -match "^$refPrefix - name: (.*)$") {
             $n = $matches[1]
             if ($name) {
-                if (($n -lt $name) -and ($n -imatch 'formula reference') -and $name -ne 'Overview') {
+                if (($n -lt $name) -and (-not ($name -imatch 'formula reference')) -and $name -ne 'Overview') {
                     error "TOC contents are out of order '$n' > '$name'"
                 }
             }
