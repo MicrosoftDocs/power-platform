@@ -50,10 +50,10 @@
             href: reference/signals.md
           - name: Acos
             href: reference/function-trig.md
+          - name: AddColumns
+            href: reference/function-table-shaping.md            
           - name: Acot
             href: reference/function-trig.md
-          - name: AddColumns
-            href: reference/function-table-shaping.md
           - name: AIClassify
             href: reference/function-ai.md
           - name: AIExtract
