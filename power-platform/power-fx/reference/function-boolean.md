@@ -182,3 +182,34 @@ In most cases, type coercion happens automatically and the **Boolean** function 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

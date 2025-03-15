@@ -1,4 +1,4 @@
-
+﻿
 | Functions | Applies to |
 |-----------|------------|
 | **ThisItem**</br>**Self**</br>**Parent** | :::image type="icon" source="../media/yes-icon.svg" border="false"::: Canvas apps |

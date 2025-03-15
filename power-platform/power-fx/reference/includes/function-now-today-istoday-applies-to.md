@@ -1,4 +1,4 @@
-
+﻿
 | Functions | Applies to |
 |-----------|------------|
 | **UTCNow**</br>**UTCToday** | :::image type="icon" source="../media/yes-icon.svg" border="false"::: Dataverse formula columns :::image type="icon" source="../media/yes-icon.svg" border="false"::: Power Pages |

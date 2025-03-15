@@ -311,3 +311,34 @@ You can also use **IsEmpty** to test whether a calculated table is empty, as the
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

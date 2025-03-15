@@ -194,3 +194,34 @@ The **Distinct** function evaluates a formula across each record of a table and 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

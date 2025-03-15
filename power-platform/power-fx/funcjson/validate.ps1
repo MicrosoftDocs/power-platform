@@ -32,7 +32,7 @@ function error {
 
     if ($Global:lastErrorCategory -ne $category) {
         $Global:lastErrorCategory = $category
-        $Global:errorData[$Global:lastErrorFile].Errors += "`n Category: $category"
+        $Global:errorData[$Global:lastErrorFile].Errors += "`nCategory: $category"
     }
 
     if ($details -ne $null) {
@@ -113,6 +113,7 @@ foreach ( $jsonFile in Get-ChildItem "$powerFxPath/funcjson" -Filter *.json ) {
     }
 }
 
+$refLinks = @{}
 foreach ( $refFile in Get-ChildItem $powerFxPath -Filter formula-reference-*.md ) {
     $errorFile = $refFile.Name
     $refName = $refFile.Name
@@ -128,8 +129,9 @@ foreach ( $refFile in Get-ChildItem $powerFxPath -Filter formula-reference-*.md 
             $refLines = $refContent -split '[\n\r]+'
             $banner = $false
             foreach ( $refLine in $refLines ) {
-                if ( $refLine -match '^\*\*\[(\w+)' ) {
+                if ( $refLine -match '^\*\*\[(\w+)\]\(\s*([^\)\s]+)\s*\)' ) {
                     $refFunc = $matches[1]
+                    $refLink = $matches[2]
                     if ( $jsonFuncs[$appliesToName] -contains $refFunc ) {
                         $jsonFuncsSeen += $refFunc
                     }
@@ -138,6 +140,16 @@ foreach ( $refFile in Get-ChildItem $powerFxPath -Filter formula-reference-*.md 
                     }
                     else {
                         error "Functions not found in JSON file funcjson/$appliesToName.json" $refFunc
+                    }
+
+                    if ($refLinks[$refFunc]) {
+                        if (-not ($refLinks[$refFunc] -eq $refLink)) {
+                            $v =  $refLInks[$refFunc]
+                            error "Inconsistent reference link for $refFunc"
+                        }
+                    }
+                    else {
+                        $refLinks[$refFunc] = $refLink
                     }
                 }
             }
@@ -253,6 +265,75 @@ foreach ( $refFile in Get-ChildItem "$powerFxPath/reference" -Filter *.md ) {
     }
     else {
         error "AppliesTo includes entry not found for reference file: $refName"
+    }
+}
+
+foreach ($func in $jsonFuncsSeen) {
+    if (-not $refLinks[$func]) {
+        error "no reference link for $func"
+    }
+}
+
+$errorFile = "TOC.yml"
+$tocContent = Get-Content "$powerFxPath/TOC.yml"
+$tocLines = $tocContent -split '[\n\r]+'
+$refPrefix = ""
+$name = ""
+$tocFuncsSeen = @()
+foreach ($toc in $tocLines ) {
+    $toc = $toc -replace "`t", "  "
+    if ($refPrefix) {
+        if ($toc -match "^$refPrefix - name: (.*)$") {
+            $n = $matches[1]
+            if ($name) {
+                if (($n -lt $name) -and ($n -imatch 'formula reference') -and $name -ne 'Overview') {
+                    error "TOC contents are out of order '$n' > '$name'"
+                }
+            }
+            $name = $n
+            if (-not ($name -imatch 'formula reference') -and $name -ne 'Overview') {
+                $tocFuncsSeen += $name
+            }
+        }
+        elseif ($toc -match "^$refPrefix   href: (\S+)") {
+            $href = $matches[1]
+            if ($href -match "^formula-reference-([\w-]+).md$") {
+                $n = $hostToProduct[$matches[1]] + " formula reference"
+                if ($name -ne 'Overview') {                
+                    if ($name -ne $n) {
+                        error "link to formula reference incorrect" $href
+                    }
+                }
+            }
+            else {
+                if ($name -ne 'Overview') {
+                    if (-not ($href -eq $refLinks[$name])) {
+                        error "link to function reference article incorrect" $href
+                    }
+                }
+            }
+        }
+        elseif ($toc -match "^$refPrefix items:") {
+            # nothing to do
+        }
+        else {
+            break
+        }
+    }
+    elseif ($toc -match "^(.*) - Name: Formula reference") {
+        $refPrefix = $matches[1] + "  "
+    }
+}
+
+foreach ($func in $jsonFuncsSeen) {
+    if (-not ($tocFuncsSeen -contains $func)) {
+        error "no TOC function entry" $func
+    }
+}
+
+foreach ($func in $tocFuncsSeen) {
+    if (-not $refLinks[$func]) {
+        error "no JSON function entry" $func
     }
 }
 
