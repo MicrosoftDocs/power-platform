@@ -50,10 +50,10 @@
             href: reference/signals.md
           - name: Acos
             href: reference/function-trig.md
-          - name: AddColumns
-            href: reference/function-table-shaping.md            
           - name: Acot
             href: reference/function-trig.md
+          - name: AddColumns
+            href: reference/function-table-shaping.md
           - name: AIClassify
             href: reference/function-ai.md
           - name: AIExtract
@@ -88,8 +88,6 @@
             href: reference/function-navigate.md
           - name: Blank
             href: reference/function-isblank-isempty.md
-          - name: ColorValue
-            href: reference/function-colors.md            
           - name: Boolean
             href: reference/function-boolean.md
           - name: Calendar
@@ -113,6 +111,8 @@
           - name: Color
             href: reference/function-colors.md
           - name: ColorFade
+            href: reference/function-colors.md
+          - name: ColorValue
             href: reference/function-colors.md
           - name: Column
             href: reference/function-columnnames-column.md

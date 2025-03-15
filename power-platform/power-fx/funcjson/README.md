@@ -8,7 +8,7 @@ But to make this work, the docs need to reflect the reality in the products. Eac
 
 ## Contents
 
-### Validate.ps1
+### validate.ps1
 
 This script runs as part of the doc build process for each PR that touches a file in the Power Fx directory. It must pass or the PR cannot be merged. This script does not modify any files, it is purely read only.
 
@@ -39,13 +39,35 @@ See below for sample code to test that the .json file is being kept in sync.
 
 ### *.errata files
 
-For each .json and .md file, there can be also be an .errata file with overrides. For example, perhaps the product still offers a function but has been deprecated and the product team no longer wants it to be advertised in the docs, yet it can't be yanked from the product quite yet. It can be turned off here.
+For each .json and .md file, there can be also be an .errata file with overrides. For example, perhaps the product still offers a function but it has been deprecated and the product team no longer wants it to be advertised in the docs, yet it can't be yanked from the product quite yet. It can be turned off in the docs here.
 
 For .json files, use a line starting with `+` to add a function name, and use a line starting with `-` to remove a function name.
 
-In addition for .md files, use `> AllProducts` to add a function name for all products. This will be rare, see Operators.md.errata for an example.
+In addition for .md files, use `> AllProducts` to add a formula element for all products that isn't in the title of the article. This will be rare, see Operators.md.errata for an example.
 
 Please include a comment, a line starting with `#`, for each entry to so we can understand why the override was put in place and what should happen next with it.
+
+### formula-reference-*.md files
+
+This is the per product TOC with explanations that are product specific. It provides short one line descriptions. This is one of the most used articles in the Power Apps docs.
+
+### reference/*.md files
+
+These are the articles for each formula element offered by Power Fx. Groups of functions that are similar or work together are included in the same article, for example Left, Right, and Mid are together, as are Group and UnGroup.
+
+### reference/includes/*-applies-to.md files
+
+These contain the "Applies to" block for each article in the reference directory. This is broken out for two reasons:
+- It is more common for "Applies to" than the article itself, for example when a product starts using or updates their Power Fx version. This helps us to more easily see when the article itself has been changed.
+- Avoids the doc build system worrying about the structure and readability of these files.
+
+In a given article, if all the formula elements are covered by the same set of products, then only one "Applies to:" section will be added. If the some products offer some of the elements, but not others, a small applies to table will be used to split them out.
+
+### TOC.yml
+
+This is the master table of contents that appears in the left hand navigation pane when reading the docs. 
+
+It is a superset of *all* the Power Fx products; no one product will use them all and that's OK. The "Applies to:" at the top of each article clarifies which elements are used where. The per product formula-reference-*.md files, with short descriptions, provides a per product manifest.
 
 ## Step 1: Product 
 
@@ -85,7 +107,7 @@ public class PowerFxDocumentationTests
 
             MinVersion = RecalcEngine.AssemblyVersion,
 
-            // This is where we can describe any additional objects that Prompt Builder may inject into
+            // This is where we can describe any additional objects that your project may inject into
             // expressions global scope. Like PowerApps "Host"  or MCS's "Env". 
             HostObjects = new string[]
             {                    
