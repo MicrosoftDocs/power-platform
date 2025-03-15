@@ -65,6 +65,8 @@ If you want to create a new environment where finance and operations apps are pr
 
 # [PowerShell](#tab/PowerShell)
 
+PowerShell in this article requires Windows PowerShell version 5.x as per the [Power Apps requirements documentation](https://learn.microsoft.com/en-us/power-platform/admin/powerapps-powershell#prerequisites)
+
 ### Create an environment
 
 Open your PowerShell console application, and run the following commands to generate the environment. Note the variables, so that you can change the input values as required. If you want to use a service principal, follow the instructions in [Creating a service principal application using PowerShell](../powershell-create-service-principal.md).
