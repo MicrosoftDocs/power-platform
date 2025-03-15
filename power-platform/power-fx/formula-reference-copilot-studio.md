@@ -113,6 +113,8 @@ Use these functions, operators, and enumerations to work with formulas in Micros
 
 **[EndsWith](reference/function-startswith.md)** – Checks whether a text string ends with another text string.
 
+**[Env](/microsoft-copilot-studio/authoring-variables-about#environment-variables)** - Access to Power Platform environment variables.
+
 **[EOMonth](reference/function-edate-eomonth.md)** – Adds or subtracts months to a date, returning the last day of that month.
 
 **[Error](reference/function-iferror.md)** – Create a custom error or pass through an error.
@@ -135,7 +137,7 @@ Use these functions, operators, and enumerations to work with formulas in Micros
 
 ## G
 
-**[Global](/microsoft-copilot-studio/advanced-power-fx#use-variables-in-a-formula)** - Variables scoped to the bot.
+**[Global](/microsoft-copilot-studio/authoring-variables-bot)** - Access to variables that can be used across topics.
 
 **[GUID](reference/function-guid.md)** – Converts a GUID string to a GUID value or creates a new GUID value.
 
@@ -296,7 +298,7 @@ Use these functions, operators, and enumerations to work with formulas in Micros
 
 **[Switch](reference/function-if.md)** – Matches with a set of values and then evaluates a corresponding formula.
 
-**[System](/microsoft-copilot-studio/advanced-power-fx#use-variables-in-a-formula)** - Variables available everywhere in Copilot studio.
+**[System](/microsoft-copilot-studio/authoring-variables-about#system-variables)** - Variables available everywhere in Copilot studio.
 
 ## T
 
@@ -314,7 +316,7 @@ Use these functions, operators, and enumerations to work with formulas in Micros
 
 **[Today](reference/function-now-today-istoday.md)** – Returns the current date-only value.
 
-**[Topic](/microsoft-copilot-studio/advanced-power-fx#use-variables-in-a-formula)** - Variables scoped to the topic.
+**[Topic](/microsoft-copilot-studio/authoring-variables-about)** - Variables scoped to the topic.
 
 **[Trace](reference/function-trace.md)** – Provide additional information in your test results.
 

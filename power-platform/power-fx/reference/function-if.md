@@ -170,3 +170,40 @@ In these examples, a **[Text input](/power-apps/maker/canvas-apps/controls/contr
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

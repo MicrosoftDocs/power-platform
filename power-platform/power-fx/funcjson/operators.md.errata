@@ -1,0 +1,8 @@
+# All products get operators
+> AllProducts Operators
+> AllProducts Identifiers
+
+# operators that need to be called out as canvas specific
++ ThisItem
++ Self
++ Parent

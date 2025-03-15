@@ -28,7 +28,6 @@
 + Concat
 + Concatenate
 + Concurrent
-+ Connection
 + Count
 + Cos
 + Cot
@@ -103,7 +102,6 @@
 + Notify
 + Now
 + Or
-+ Parent
 + ParseJSON
 + Patch
 + Pi
@@ -128,7 +126,6 @@
 + RoundUp
 + Search
 + Second
-+ Self
 + Sequence
 + SetFocus
 + SetProperty
@@ -147,7 +144,6 @@
 + Table
 + Tan
 + Text
-+ ThisItem
 + ThisRecord
 + Time
 + TimeValue

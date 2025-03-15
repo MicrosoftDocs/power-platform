@@ -2,7 +2,7 @@
 
 $productToHost = @{ 
     "Canvas apps"               = "canvas-apps"
-    "Cards"                     = "Cards"
+    "Cards"                     = "cards"
     "Power Platform CLI"        = "pac-cli"
     "Model-driven apps"         = "model-driven-apps"
     "Power Pages"               = "power-pages"
@@ -14,10 +14,12 @@ $productToHost = @{
 
 $hostToProduct = @{}
 $lowerProductToHost = @{}
+$allProductList = @()
 foreach($p in $productToHost.Keys)
 {
     $hostToProduct[$productToHost[$p]] = $p;
     $lowerProductToHost[$p.ToLower().Trim()] = $productToHost[$p]
+    $allProductList += $productToHost[$p]
 }
 
 $skipJson = @{}

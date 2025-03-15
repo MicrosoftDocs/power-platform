@@ -279,3 +279,40 @@ For a detailed example, see the article on [simple offline capabilities](/power-
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

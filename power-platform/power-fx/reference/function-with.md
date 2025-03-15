@@ -197,3 +197,39 @@ See [Map record](/power-apps/maker/canvas-apps/map-component-input-fields#map-re
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

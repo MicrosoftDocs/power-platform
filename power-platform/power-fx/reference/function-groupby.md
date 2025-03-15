@@ -233,3 +233,40 @@ Another operation we can perform on a grouped table is to compile the results. I
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

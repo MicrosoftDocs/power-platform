@@ -473,3 +473,39 @@ Use the **StudioVersion** property to display or log the version of Power Apps S
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

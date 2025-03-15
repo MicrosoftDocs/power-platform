@@ -149,3 +149,40 @@ If instead of a label you have an [HTML text control](/power-apps/maker/canvas-a
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

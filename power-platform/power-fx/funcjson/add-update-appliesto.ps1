@@ -83,6 +83,27 @@ function apply_appliesto() {
         $refName = $refFile.Name
         $refContent = [System.IO.File]::ReadAllText( $refFileFullName, $enc )
 
+        $errataMinus = @()
+        $errataPlus = @()
+        $errataAllProducts = @()
+        $errataFile = "$powerFxPath/funcjson/" + $refFile.Name + ".errata"
+        if ( Test-Path $errataFile )
+        {
+            $errataContent = [System.IO.File]::ReadAllText( $errataFile, $enc )
+            ForEach ($errata in $($errataContent -split "`n"))
+            {
+                if ($errata -match '^\-\s(\w+)') {
+                    $errataMinus += $matches[1]           
+                }
+                if ($errata -match '^\+\s*(\w+)') {
+                    $errataPlus += $matches[1]                
+                }
+                if ($errata -match '^>\s*AllProducts\s+(\w+)') {
+                    $errataAllProducts += $matches[1]           
+                }   
+            }
+        }  
+
         $includeRoot = "$powerFxPath\reference\includes\"
         $includeFileName = $refName.Replace('.md', '') + "-applies-to.md"
 
@@ -104,19 +125,27 @@ function apply_appliesto() {
         # create a group of same applies-to and add all applicable functions to it
         $appliesToGroup = @{}
         if ($refContent -match '(?m)[\r\n]title:([^\r\n]+)[\r\n]') {
-            $refFuncNames = Select-String '(\w+)' -input $matches[1] -AllMatches
+            $titleMatch = ($errataPlus -join " ") + " " + $matches[1]
+            $refFuncNames = Select-String '(\w+)' -input $titleMatch -AllMatches
             foreach ( $refFuncMatchWhole in $refFuncNames.matches ) {
                 $refFuncName = $refFuncMatchWhole.Groups[1].Value
                 if ($refFuncName -eq "in") {
                     break;
                 }
                 elseif (-not ($refFuncName -match '(?i)^(enumerations?|functions?|objects?|signals?|experimental|preview|action|related|and)$')) {
-                    $appliesTo = $funcsAppliesToMap[$refFuncName] | Sort-Object
-                    $appToKey = $appliesTo -join ","   
-                    if (-not $appliesToGroup.ContainsKey($appToKey)) { 
-                        $appliesToGroup[$appToKey] = @()
-                    }                
-                    $appliesToGroup[$appToKey] += $refFuncName 
+                    if (-not ($errataMinus -contains $refFuncName)) {              
+                        if ($errataAllProducts -contains $refFuncName) {
+                            $appliesTo = $allProductList | Sort-Object
+                        } 
+                        else {
+                            $appliesTo = $funcsAppliesToMap[$refFuncName] | Sort-Object
+                        }
+                        $appToKey = $appliesTo -join ","   
+                        if (-not $appliesToGroup.ContainsKey($appToKey)) { 
+                            $appliesToGroup[$appToKey] = @()
+                        }
+                        $appliesToGroup[$appToKey] += $refFuncName 
+                    }
                 }
             }
         }

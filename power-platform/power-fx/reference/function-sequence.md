@@ -143,3 +143,40 @@ See the [**As**](operators.md#as-operator) operator reference for two **Sequence
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

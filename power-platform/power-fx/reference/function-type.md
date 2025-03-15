@@ -173,3 +173,39 @@ RecordOfBookType := Type( RecordOf( RecordOfLibraryType ) );
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

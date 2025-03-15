@@ -30,3 +30,8 @@
 + Type
 + RecordOf
 
+# special operators that are Canvas specific
++ ThisItem
++ Self
++ Parent
+

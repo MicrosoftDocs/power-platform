@@ -81,8 +81,6 @@ In this article, learn about all the functions available with [commanding in Pow
 
 **[Concurrent](reference/function-concurrent.md)** – Evaluates multiple formulas concurrently with one another.
 
-**[Connection](reference/signals.md)** – Returns information about your network connection.
-
 **[Count](reference/function-table-counts.md)** – Counts table records that contain numbers.
 
 **[Cos](reference/function-trig.md)** – Returns the cosine of an angle specified in radians.
