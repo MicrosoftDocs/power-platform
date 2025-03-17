@@ -55,7 +55,7 @@ Only default, developer, and [Dataverse for Teams environments](inactive-teams-e
 Power Platform is implementing a cleanup process for default environments that meet the following criteria:
 
 - Environments with no flows and no [premium licenses](pricing-billing-skus.md) are included in the cleanup.
-- Admins receive two warning notifications prior to the default environment being deleted due to inactivity.
+- Admins receive two warning notifications before the default environment are deleted due to inactivity.
 - Any activity within 30 days of the notification resets the inactivity period.
 - Inactive environments are deleted after 30 days of inactivity notification. 
 
