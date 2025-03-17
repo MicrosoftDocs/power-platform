@@ -11,6 +11,8 @@ ms.reviewer: sericks
 ---
 # Copy an environment
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 You can use the **Copy** option in the Microsoft Power Platform admin center to copy data between environments. You can select two levels of copy: **Everything** or **Customizations and schemas only**.  
 
 > [!NOTE]

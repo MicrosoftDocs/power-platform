@@ -1,20 +1,20 @@
 ---
-title: "Tutorial: Install an application to a target environment (preview) | Microsoft Docs"
-description: This tutorial demonstrates how to use the Power Platform API (preview) to install an application in an environment context.
+title: "Tutorial: Install an application to a target environment | Microsoft Docs"
+description: This tutorial demonstrates how to use the Power Platform API to install an application in an environment context.
 author: laneswenka
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 08/20/2024
+ms.date: 03/07/2025
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
   - admin
 ---
 
-# Tutorial: Install an application to a target environment (preview)
+# Tutorial: Install an application to a target environment
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 This tutorial is aimed at enabling Power Platform admins so they can take advantage of the Power Platform API to install Applications of which their tenant already has entitlement. These applications should be visible in the Power Platform admin center under **Environments** > ***[environment-name]*** > **Resources** > **Dynamics 365 apps**. 
 
@@ -27,9 +27,6 @@ In this tutorial, you learn how to:
 5.	Notify by email once install is complete
 
 In this example scenario, a Customer is looking to install Office Groups to a specific environment of their choosing. 
-
-> [!IMPORTANT]
-> The Power Platform API is in preview. The host name and data contracts are subject to change by the time the endpoints become generally available.  At that time, this article will be updated with the final endpoint details.
 
 ## Choose a tool that can authenticate with Power Platform API
 The following information provides details on getting connected to the Power Platform programmatically.  This tutorial includes using Azure Logic Apps as a common client for admins working in the Azure space, and a native Power Platform CLI example.
@@ -52,7 +49,7 @@ For the remainder of this tutorial, you need an environment ID and an applicatio
 - **Environment Id**: The ID of the environment to which you would install the package. This ID isn't the organization ID.
 - **Application name**: The name of the application you're trying to install.
 
-Next we authenticate with Microsoft Entra and retrieve a token for calling the Power Platform API.  If you haven’t completed your Microsoft Entra setup, see [Authentication (preview)](programmability-authentication-v2.md).
+Next we authenticate with Microsoft Entra and retrieve a token for calling the Power Platform API.  If you haven’t completed your Microsoft Entra setup, see [Authentication](programmability-authentication-v2.md).
 
 In this tutorial, we're using a user credential with password to obtain a token. 
 

@@ -15,6 +15,8 @@ search.audienceType:
 
 # Control which apps are allowed in your environment (preview)
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 Protect against data exfiltration by controlling which apps can run in your Dataverse environment. These safeguards prevent unauthorized removal of sensitive information, helping your business maintain continuity and comply with regulations.

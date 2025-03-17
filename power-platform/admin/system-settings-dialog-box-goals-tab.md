@@ -13,6 +13,8 @@ search.audienceType:
 ---
 # System Settings Goals tab
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 Set the duration and frequency of the automatic rollup of goals. These settings only affect the automatic handling of all goals set in customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation). You can always perform a manual rollup for any goal at any time.  
 
 <!-- legacy procedure -->

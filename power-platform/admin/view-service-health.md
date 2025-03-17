@@ -15,6 +15,8 @@ ms.contributors:
 
 # View service health
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 You can view service health information for Dynamics 365 and Power Platform products in the Power Platform admin center.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a Dynamics 365 admin or Power Platform admin.

@@ -17,6 +17,8 @@ search.audienceType:
 ---
 # Pay-as-you-go meters
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 When you choose to use pay-as-you-go, usage of Power Platform services is billed to your Azure subscription using Azure meters. The following table describes each meter and how it measures usage. When you link an environment to an Azure subscription, all of these meters are automatically enabled for the environment, so any usage of Power Platform services in that environment is billed according to the details shown in this article.
 
 ## How do meters work?

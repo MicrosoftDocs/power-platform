@@ -16,7 +16,11 @@ contributors:
 ---
 # Configure Dataverse search for your environment
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 The search experience provided by Dataverse search delivers fast and comprehensive search results in a single list, sorted by [relevance](/azure/search/index-similarity-and-scoring). As an administrator or customizer, you can turn on and configure Dataverse search as described in this article. Quick find views are used for configuring Dataverse search, so you can manage global search, quick find, and lookup search behavior in one single place.
+
+Dataverse search delivers fast and comprehensive search results in a single list, sorted by [relevance](/azure/search/index-similarity-and-scoring). As an administrator or customizer, you can turn on and configure Dataverse search as described in this article. Quick Find views are used for configuring Dataverse search, so you can manage global search, quick find, and lookup search behavior in one single place.
 
 With Dataverse search turned on, a search box is always available at the top of every page in all the model-driven apps in the _environment_. When Dataverse search is turned on, it applies to all apps and can't be turned off per app: only at the environment level, by an administrator with environment setting permissions. Users can start a new search and quickly find the information they're looking for, from the searchable tables included in the app. Dataverse search also becomes the default, and only, global search experience in all model-driven apps in the environment. Users can't switch to [quick find search](/powerapps/user/quick-find), formerly known as categorized search.  
 

@@ -19,6 +19,8 @@ search.audienceType:
 
 # Power Automate licensing FAQ
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 Here are some frequently asked questions about Power Automate standalone licenses.
 
 ## How do Power Automate license plans work for flow runs?

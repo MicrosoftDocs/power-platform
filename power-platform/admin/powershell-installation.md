@@ -14,6 +14,8 @@ search.audienceType:
 ---
 
 # Installing PowerShell for Power Platform Administrators
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 PowerShell in this article requires PowerShell version 5.x.  This will be updated to use a newer version in the future. To check the version of PowerShell running on your machine, run the following command:
 
 > ```powershell

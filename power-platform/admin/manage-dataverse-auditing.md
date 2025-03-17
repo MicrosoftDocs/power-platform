@@ -14,6 +14,8 @@ search.audienceType:
 
 # Manage Dataverse auditing
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 The Dataverse auditing feature is designed to meet the external and internal auditing, compliance, security, and governance policies that are common to many enterprises. Dataverse auditing logs changes that are made to customer records in an environment with a Dataverse database. Dataverse auditing also logs user access through an app or through the SDK in an environment.
 
 Dataverse auditing is supported on all custom and most customizable tables and columns. Audit logs are stored in Dataverse and consume log storage capacity. Audit logs can be viewed in the **Audit History** tab for a single record and in the **Audit Summary** view for all audited operations in a single environment. Audit logs can also be retrieved using the web API or the SDK for .NET. Audit logs are created when there are changes to the record on a table where auditing is turned on. Audit logs for updates are created when a new value is different from the old value of a column. 

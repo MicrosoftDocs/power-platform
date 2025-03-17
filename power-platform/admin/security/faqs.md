@@ -16,6 +16,8 @@ search.audienceType:
 ---
 # Power Platform security FAQs
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 Commonly asked questions about Power Platform security fall into two categories:
 
 - How Power Platform has been designed to help mitigate the top 10 Open Web Application Security Project® (OWASP) risks
