@@ -25,7 +25,7 @@ search.audienceType:
 
 We're happy to announce the public preview of the new and improved Power Platform admin center! The new Power Platform admin center is designed with an outcome-driven approach, where all functionality is intuitively organized in pages based on administrative tasks. The new admin center isn't just task-oriented, it also helps you achieve specific outcomes and goals. The design focuses on providing an optimal user experience, catering to a wide range of stakeholders with varying needs.
 
- > [!VIDEO <1d442a39-f7ce-438f-a53e-b7c23ce33e25>]
+ > [!VIDEO 1d442a39-f7ce-438f-a53e-b7c23ce33e25]
 
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
