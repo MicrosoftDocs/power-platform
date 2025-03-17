@@ -1,6 +1,6 @@
 ﻿---
-title: Healthcare Patient Support Agent Architecture
-description: Discover how the Healthcare Patient Support Agent architecture streamlines patient interactions and reduces administrative burdens for healthcare providers.
+title: Healthcare Patient Support Agent 
+description: Discover how the Healthcare Patient Support Agent streamlines patient interactions and reduces administrative burdens for healthcare providers.
 #customer intent: As a cloud architect, I want to visualize the major components of the Healthcare Patient Support Agent architecture so that I can design a well-architected solution.
 author: manuelap-msft
 ms.subservice: architecture-center
@@ -18,7 +18,7 @@ search.audienceType:
 ---
 
 
-# Healthcare Patient Support Agent architecture
+# Healthcare Patient Support Agent
 
 The Healthcare Patient Support Agent architecture is designed to streamline patient interactions and reduce administrative burdens for healthcare providers. This architecture applies various Microsoft technologies to create an efficient, integrated system that enhances patient satisfaction and operational efficiency. By incorporating components such as Microsoft Dataverse, Azure Data Lake, Azure Synapse Analytics, and AI-driven tools, this solution provides a comprehensive approach to managing patient data, automating workflows, and delivering personalized healthcare support. This article outlines the key components and workflows of the architecture, offering a blueprint for implementing a robust patient support system in healthcare environments.
 
