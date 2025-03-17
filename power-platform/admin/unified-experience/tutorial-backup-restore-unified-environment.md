@@ -18,15 +18,13 @@ search.audienceType:
 
 Finance and operations apps have been reimagined as an application hosted by Microsoft Dataverse. A common function for administrators of finance and operations apps is to take backup and restore those backup to unified environments. Historically, this operation has been done in Microsoft Dynamics Lifecycle Services for finance and operations environments, but now for unified environments, everything can be managed in the Power Platform admin center.
 
-In this tutorial, learn how to copy a Lifecycle Services environment to a unified environment.
-
-As an example of this scenario, a customer who operates their finance and operations apps environments through the Lifecycle Services site today would like to copy their production environment data into their new, unified, developer environment in the Power Platform admin center.
+In this tutorial, learn how to take backup of an environment and restore to a unified environment.
 
 ## Before you begin
 
 The target environment in this tutorial is always a unified environment that contains finance and operations apps hosted by Microsoft Dataverse. To learn how to deploy one of these environments, see [Tutorial: Provision a new environment with an ERP-based template ](./tutorial-deploy-new-environment-with-ERP-template.md).
 
-The source environment in this tutorial is always a finance and operations apps environment in Lifecycle Services that was set up through the [Power Platform integration](/dynamics365/fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration).
+The source environment in this tutorial can either be a similar unified environment that contains finance and operations apps hosted by Microsoft Dataverse or a finance and operations apps environment in Lifecycle Services that was set up through the [Power Platform integration](/dynamics365/fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration).
 
 Ensure that both the source and target environments are provisioned in the same region. For general information on copying environments, refer to [Copy an environment](../copy-environment.md).
 
