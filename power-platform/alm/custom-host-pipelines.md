@@ -34,7 +34,7 @@ Before you begin, you need to identify which environments participate in pipelin
    > Deleting the host environment deletes all pipelines and run data. Use caution and understand the impact of data and configuration loss as well as maker access to pipelines hosted in the environment.
    >
 - **Development environment**. This environment is where you develop solutions. A pipeline can be run from within any development environment linked to it.
-- **Target environment**. The destination environment a pipeline deploys to. For example, integration testing, user assistance testing (UAT), production, and so on.
+- **Target environment**. The destination environment a pipeline deploys to. For example, integration testing, user acceptance testing (UAT), production, and so on.
 
 > [!TIP]
 > Use environment names that indicate their purpose. For example, *Contoso Host*, *Contoso Development*, *Contoso QA*, and so forth.

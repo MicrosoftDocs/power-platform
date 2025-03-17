@@ -14,6 +14,8 @@ search.audienceType:
 ---
 
 # Data protection and privacy
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 Make sure personal information is handled, stored, and protected securely; prevent unauthorized access to data; and protect apps and cloud workloads from network-based cyberattacks.
 
 ## Customer-managed encryption key

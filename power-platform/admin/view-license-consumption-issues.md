@@ -14,6 +14,8 @@ search.audienceType:
 
 # View license consumption for Power Apps and Power Automate (preview)
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 <!-- fwlink: https://go.microsoft.com/fwlink/?linkid=2206011 -->
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]

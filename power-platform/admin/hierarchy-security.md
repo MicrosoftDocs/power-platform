@@ -17,6 +17,8 @@ ms.contributors:
 
 # Hierarchy security to control access
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 The hierarchy security model is an extension to the existing security models that use business units, security roles, sharing, and teams. It can be used with all other existing security models. Hierarchy security offers a more granular access to records for an organization and helps to bring the maintenance costs down.
 
 For example, in complex scenarios, you can start with creating several business units and then add the hierarchy security. This added security provides more granular access to data with far fewer maintenance costs that a large number of business units might require.  

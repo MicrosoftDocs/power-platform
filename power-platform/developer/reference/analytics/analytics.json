@@ -1,7 +1,7 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "Microsoft Power Platform REST API",
+    "title": "Microsoft Power Platform REST API - analytics",
     "description": "Unified API for all administrative capabilities in Microsoft Power Platform.",
     "version": "2022-03-01-preview"
   },
@@ -10,12 +10,109 @@
     "https"
   ],
   "paths": {
+    "/analytics/actions/{actionName}": {
+      "post": {
+        "tags": [
+          "Recommendations"
+        ],
+        "summary": "Execute recommendation action.",
+        "description": "Execute a recommended action on a set of recommendation resource(s).",
+        "operationId": "ExecuteRecommendationAction",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "actionName",
+            "description": "The name of the action to execute.",
+            "required": true,
+            "type": "string",
+            "x-ms-summary": "Action Name",
+            "x-ms-dynamic-values": {
+              "operationId": "GetScenarioActions",
+              "value-path": "actionType",
+              "value-title": "actionName",
+              "parameters": {
+                "tenantId": {
+                  "parameter": "tenantId"
+                },
+                "scenario": {
+                  "parameter": "scenario"
+                },
+                "x-ms-api-version": {
+                  "parameter": "api-version"
+                }
+              }
+            },
+            "x-ms-dynamic-list": {
+              "operationId": "GetScenarioActions",
+              "itemValuePath": "actionType",
+              "itemTitlePath": "actionName",
+              "parameters": {
+                "tenantId": {
+                  "parameterReference": "tenantId"
+                },
+                "scenario": {
+                  "parameterReference": "body/scenario"
+                },
+                "x-ms-api-version": {
+                  "parameterReference": "api-version"
+                }
+              }
+            }
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "description": "Request body for the action to execute",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/AdvisorActionRequest"
+            },
+            "x-ms-adminsdk-frontloadasparameter": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/AdvisorActionResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Too Many Requests"
+          }
+        },
+        "x-ms-summary": "Execute recommendation action."
+      }
+    },
     "/analytics/advisorRecommendations": {
       "get": {
         "tags": [
           "Recommendations"
         ],
-        "summary": "Get recommendations",
+        "summary": "Get recommendations.",
         "description": "Gets the list of recommendations for the tenant.",
         "operationId": "GetRecommendations",
         "produces": [
@@ -59,290 +156,11 @@
             "description": "Not Found"
           }
         },
-        "x-ms-summary": "Get recommendations",
+        "x-ms-summary": "Get recommendations.",
         "x-ms-pageable": {
           "nextLinkName": "nextLink",
           "operationName": "GetRecommendations"
         }
-      }
-    },
-    "/analytics/advisorRecommendations/{scenario}/resources": {
-      "get": {
-        "tags": [
-          "Recommendations"
-        ],
-        "summary": "Get recommendation resources",
-        "description": "Gets the list of resources for a recommendation for the tenant.",
-        "operationId": "GetRecommendationResources",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "in": "path",
-            "name": "scenario",
-            "description": "The recommendation name.",
-            "required": true,
-            "type": "string",
-            "x-ms-summary": "Recommendation Name",
-            "x-ms-dynamic-values": {
-              "operationId": "GetRecommendationScenarios",
-              "value-path": "scenario",
-              "value-title": "scenarioName",
-              "parameters": {
-                "x-ms-api-version": {
-                  "parameter": "api-version"
-                }
-              }
-            },
-            "x-ms-dynamic-list": {
-              "operationId": "GetRecommendationScenarios",
-              "itemValuePath": "scenario",
-              "itemTitlePath": "scenarioName",
-              "parameters": {
-                "x-ms-api-version": {
-                  "parameterReference": "api-version"
-                }
-              }
-            }
-          },
-          {
-            "in": "query",
-            "name": "$skipToken",
-            "description": "Skip token for the next page of resources.",
-            "type": "string",
-            "x-ms-visibility": "internal",
-            "x-ms-summary": "Skip Token"
-          },
-          {
-            "in": "query",
-            "name": "api-version",
-            "description": "The API version.",
-            "required": true,
-            "type": "string",
-            "default": "2022-03-01-preview"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Success",
-            "schema": {
-              "$ref": "#/definitions/AdvisorRecommendationResourceIEnumerableResponseWithContinuation"
-            }
-          },
-          "400": {
-            "description": "Bad Request"
-          },
-          "401": {
-            "description": "Unauthorized"
-          },
-          "403": {
-            "description": "Forbidden"
-          },
-          "404": {
-            "description": "Not Found"
-          },
-          "429": {
-            "description": "Too Many Requests"
-          }
-        },
-        "x-ms-summary": "Get recommendation resources",
-        "x-ms-pageable": {
-          "nextLinkName": "nextLink",
-          "operationName": "GetRecommendationResources"
-        }
-      }
-    },
-    "/analytics/actions/{actionName}": {
-      "post": {
-        "tags": [
-          "Recommendations"
-        ],
-        "summary": "Execute recommendation action",
-        "description": "Execute a recommended action on a set of recommendation resource(s).",
-        "operationId": "ExecuteRecommendationAction",
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "in": "path",
-            "name": "actionName",
-            "description": "The name of the action to execute.",
-            "required": true,
-            "type": "string",
-            "x-ms-summary": "Action Name",
-            "x-ms-dynamic-values": {
-              "operationId": "GetScenarioActions",
-              "value-path": "actionType",
-              "value-title": "actionName",
-              "parameters": {
-                "scenario": {
-                  "parameter": "scenario"
-                },
-                "x-ms-api-version": {
-                  "parameter": "api-version"
-                }
-              }
-            },
-            "x-ms-dynamic-list": {
-              "operationId": "GetScenarioActions",
-              "itemValuePath": "actionType",
-              "itemTitlePath": "actionName",
-              "parameters": {
-                "scenario": {
-                  "parameterReference": "body/scenario"
-                },
-                "x-ms-api-version": {
-                  "parameterReference": "api-version"
-                }
-              }
-            }
-          },
-          {
-            "in": "query",
-            "name": "api-version",
-            "description": "The API version.",
-            "required": true,
-            "type": "string",
-            "default": "2022-03-01-preview"
-          },
-          {
-            "in": "body",
-            "name": "body",
-            "description": "Request body for the action to execute.",
-            "required": true,
-            "schema": {
-              "$ref": "#/definitions/AdvisorActionRequest"
-            },
-            "x-ms-adminsdk-frontloadasparameter": true
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Success",
-            "schema": {
-              "$ref": "#/definitions/AdvisorActionResponse"
-            }
-          },
-          "400": {
-            "description": "Bad Request"
-          },
-          "401": {
-            "description": "Unauthorized"
-          },
-          "403": {
-            "description": "Forbidden"
-          },
-          "404": {
-            "description": "Too Many Requests"
-          }
-        },
-        "x-ms-summary": "Execute recommendation action"
-      }
-    },
-    "/analytics/advisorRecommendations/scenarios": {
-      "get": {
-        "tags": [
-          "Recommendations"
-        ],
-        "summary": "Get recommendation names",
-        "description": "Gets the list of recommendation scenario names for the tenant.",
-        "operationId": "GetRecommendationScenarios",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "in": "query",
-            "name": "api-version",
-            "description": "The API version.",
-            "required": true,
-            "type": "string",
-            "default": "2022-03-01-preview"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Success",
-            "schema": {
-              "$ref": "#/definitions/IEnumerableAdvisorScenario"
-            }
-          },
-          "400": {
-            "description": "Bad Request"
-          },
-          "401": {
-            "description": "Unauthorized"
-          },
-          "403": {
-            "description": "Forbidden"
-          },
-          "404": {
-            "description": "Not Found"
-          }
-        },
-        "x-ms-summary": "Get recommendation names",
-        "x-ms-visibility": "internal"
-      }
-    },
-    "/analytics/advisorRecommendations/{scenario}/actions": {
-      "get": {
-        "tags": [
-          "Recommendations"
-        ],
-        "summary": "Get recommendation actions",
-        "description": "Gets allowed actions for a recommendation.",
-        "operationId": "GetScenarioActions",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "in": "path",
-            "name": "scenario",
-            "description": "The recommendation name.",
-            "required": true,
-            "type": "string",
-            "x-ms-summary": "Recommendation Name"
-          },
-          {
-            "in": "query",
-            "name": "api-version",
-            "description": "The API version.",
-            "required": true,
-            "type": "string",
-            "default": "2022-03-01-preview"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Success",
-            "schema": {
-              "$ref": "#/definitions/IEnumerableAdvisorAction"
-            }
-          },
-          "400": {
-            "description": "Bad Request"
-          },
-          "401": {
-            "description": "Unauthorized"
-          },
-          "403": {
-            "description": "Forbidden"
-          },
-          "404": {
-            "description": "Not Found"
-          },
-          "429": {
-            "description": "Too Many Requests"
-          }
-        },
-        "x-ms-summary": "Get recommendation actions",
-        "x-ms-visibility": "internal"
       }
     },
     "/analytics/advisorRecommendations/{scenario}/actionmetadata/{actionName}": {
@@ -350,7 +168,7 @@
         "tags": [
           "Recommendations"
         ],
-        "summary": "Get action schema",
+        "summary": "Get action schema.",
         "description": "Gets the schema for an action.",
         "operationId": "GetActionSchema",
         "produces": [
@@ -405,14 +223,208 @@
             "description": "Too Many Requests"
           }
         },
-        "x-ms-summary": "Get schema for an action",
+        "x-ms-summary": "Get schema for an action.",
+        "x-ms-visibility": "internal"
+      }
+    },
+    "/analytics/advisorRecommendations/{scenario}/actions": {
+      "get": {
+        "tags": [
+          "Recommendations"
+        ],
+        "summary": "Get recommendation actions.",
+        "description": "Gets allowed actions for a recommendation.",
+        "operationId": "GetScenarioActions",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "scenario",
+            "description": "The recommendation name.",
+            "required": true,
+            "type": "string",
+            "x-ms-summary": "Recommendation Name"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/IEnumerableAdvisorAction"
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "429": {
+            "description": "Too Many Requests"
+          }
+        },
+        "x-ms-summary": "Get recommendation actions.",
+        "x-ms-visibility": "internal"
+      }
+    },
+    "/analytics/advisorRecommendations/{scenario}/resources": {
+      "get": {
+        "tags": [
+          "Recommendations"
+        ],
+        "summary": "Get recommendation resources.",
+        "description": "Gets the list of resources for a recommendation for the tenant.",
+        "operationId": "GetRecommendationResources",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "scenario",
+            "description": "The recommendation name.",
+            "required": true,
+            "type": "string",
+            "x-ms-summary": "Recommendation Name",
+            "x-ms-dynamic-values": {
+              "operationId": "GetRecommendationScenarios",
+              "value-path": "scenario",
+              "value-title": "scenarioName",
+              "parameters": {
+                "tenantId": {
+                  "parameter": "tenantId"
+                },
+                "x-ms-api-version": {
+                  "parameter": "api-version"
+                }
+              }
+            },
+            "x-ms-dynamic-list": {
+              "operationId": "GetRecommendationScenarios",
+              "itemValuePath": "scenario",
+              "itemTitlePath": "scenarioName",
+              "parameters": {
+                "tenantId": {
+                  "parameterReference": "tenantId"
+                },
+                "x-ms-api-version": {
+                  "parameterReference": "api-version"
+                }
+              }
+            }
+          },
+          {
+            "in": "query",
+            "name": "$skipToken",
+            "description": "Skip token for the next page of resources.",
+            "type": "string",
+            "x-ms-visibility": "internal",
+            "x-ms-summary": "Skip Token"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/AdvisorRecommendationResourceIEnumerableResponseWithContinuation"
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "429": {
+            "description": "Too Many Requests"
+          }
+        },
+        "x-ms-summary": "Get recommendation resources.",
+        "x-ms-pageable": {
+          "nextLinkName": "nextLink",
+          "operationName": "GetRecommendationResources"
+        }
+      }
+    },
+    "/analytics/advisorRecommendations/scenarios": {
+      "get": {
+        "tags": [
+          "Recommendations"
+        ],
+        "summary": "Get recommendation names.",
+        "description": "Gets the list of recommendation scenario names for the tenant.",
+        "operationId": "GetRecommendationScenarios",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/IEnumerableAdvisorScenario"
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "x-ms-summary": "Get recommendation names.",
         "x-ms-visibility": "internal"
       }
     }
   },
   "definitions": {
     "AdvisorActionRequest": {
-      "description": "The request with details to carry out an action on resource(s).",
+      "description": "The request with details to carry out an action on resource(s)",
       "required": [
         "scenario",
         "actionParameters"
@@ -420,7 +432,7 @@
       "type": "object",
       "properties": {
         "scenario": {
-          "description": "The name of the recommendation for which the action is triggered.",
+          "description": "The name of the recommendation for which the action is triggered",
           "type": "string",
           "x-ms-summary": "Recommendation Name",
           "x-ms-dynamic-values": {
@@ -428,9 +440,6 @@
             "value-path": "scenario",
             "value-title": "scenarioName",
             "parameters": {
-              "tenantId": {
-                "parameter": "tenantId"
-              },
               "x-ms-api-version": {
                 "parameter": "api-version"
               }
@@ -441,9 +450,6 @@
             "itemValuePath": "scenario",
             "itemTitlePath": "scenarioName",
             "parameters": {
-              "tenantId": {
-                "parameterReference": "tenantId"
-              },
               "x-ms-api-version": {
                 "parameterReference": "api-version"
               }
@@ -451,16 +457,13 @@
           }
         },
         "actionParameters": {
-          "description": "The collection of parameters to carry out the action for a resource.",
+          "description": "The collection of parameters to carry out the action for a resource",
           "type": "object",
           "x-ms-summary": "Parameters",
           "x-ms-dynamic-schema": {
             "operationId": "GetActionSchema",
             "value-path": "properties",
             "parameters": {
-              "tenantId": {
-                "parameter": "tenantId"
-              },
               "scenario": {
                 "parameter": "scenario"
               },
@@ -475,9 +478,6 @@
           "x-ms-dynamic-properties": {
             "operationId": "GetActionSchema",
             "parameters": {
-              "tenantId": {
-                "parameterReference": "tenantId"
-              },
               "scenario": {
                 "parameterReference": "body/scenario"
               },
@@ -493,7 +493,7 @@
       }
     },
     "AdvisorActionResponse": {
-      "description": "The response for an action performed on resources.",
+      "description": "The response for action performed on resources",
       "type": "object",
       "properties": {
         "results": {
@@ -505,39 +505,39 @@
       }
     },
     "AdvisorActionResult": {
-      "description": "The result of an action performed on a resource.",
+      "description": "The result of an action performed on a resource",
       "type": "object",
       "properties": {
         "resourceId": {
-          "description": "The unique ID of the resource for which the action was performed.",
+          "description": "The unique ID of the resource for which the action was performed",
           "type": "string",
           "x-ms-summary": "Resource ID"
         },
         "statusCode": {
           "format": "int32",
-          "description": "The status code of the action request for the given resource.",
+          "description": "The status code of the action request for the given resource",
           "type": "integer",
           "x-ms-summary": "Status Code"
         },
         "actionFinalResult": {
-          "description": "Final status of the action request.",
+          "description": "Final status of the action request",
           "type": "string",
           "x-ms-summary": "Action Result"
         },
         "errorCode": {
-          "description": "The error code associated with any error encountered during the action execution.",
+          "description": "The error code associated with any error encountered during the action execution",
           "type": "string",
           "x-ms-summary": "Error Code"
         },
         "error": {
-          "description": "The error message associated with any error encountered during the action execution.",
+          "description": "The error message associated with any error encountered during the action execution",
           "type": "string",
           "x-ms-summary": "Error Message"
         }
       }
     },
     "AdvisorRecommendation": {
-      "description": "Information for a recommendation.",
+      "description": "Information for a recommendation",
       "type": "object",
       "properties": {
         "scenario": {
@@ -552,175 +552,175 @@
       }
     },
     "AdvisorRecommendationDetails": {
-      "description": "Details for a recommendation.",
+      "description": "Details for a recommendation",
       "type": "object",
       "properties": {
         "resourceCount": {
           "format": "int32",
-          "description": "The number of resources.",
+          "description": "The number of resources",
           "type": "integer",
           "x-ms-summary": "Resource count"
         },
         "lastRefreshedTimestamp": {
           "format": "date-time",
-          "description": "Time when the recommendation was refreshed.",
+          "description": "Time when the recommendation was refreshed",
           "type": "string",
           "x-ms-summary": "Last refresh timestamp"
         },
         "expectedNextRefreshTimestamp": {
           "format": "date-time",
-          "description": "Time when the recommendation will be refreshed again.",
+          "description": "Time when the recommendation will be refreshed again",
           "type": "string",
           "x-ms-summary": "Expected next refresh timestamp"
         }
       }
     },
     "AdvisorRecommendationIEnumerableResponseWithContinuation": {
-      "description": "Paged list of recommendations.",
+      "description": "Paged list of recommendations",
       "type": "object",
       "properties": {
         "value": {
-          "description": "List of recommendations.",
+          "description": "List of recommendations",
           "type": "array",
           "items": {
             "$ref": "#/definitions/AdvisorRecommendation"
           }
         },
         "nextLink": {
-          "description": "Link to get the next page of recommendations.",
+          "description": "Link to get the next page of recommendations",
           "type": "string",
           "x-ms-summary": "Next link"
         }
       }
     },
     "AdvisorRecommendationResource": {
-      "description": "Details of a resource included in a recommendation.",
+      "description": "Details of a resource included in a recommendation",
       "type": "object",
       "properties": {
         "resourceName": {
-          "description": "The resource display name.",
+          "description": "The resource display name",
           "type": "string",
           "x-ms-summary": "Resource display name"
         },
         "resourceId": {
-          "description": "The resource unique ID.",
+          "description": "The resource unique ID",
           "type": "string",
           "x-ms-summary": "Resource ID"
         },
         "resourceOwnerId": {
-          "description": "The resource owner object ID.",
+          "description": "The resource owner object ID",
           "type": "string",
           "x-ms-summary": "Owner ID"
         },
         "resourceOwner": {
-          "description": "The resource owner display name.",
+          "description": "The resource owner display name",
           "type": "string",
           "x-ms-summary": "Owner name"
         },
         "resourceType": {
-          "description": "The type of resource.",
+          "description": "The type of resource",
           "type": "string",
           "x-ms-summary": "Resource type"
         },
         "resourceSubType": {
-          "description": "The sub-type of the resource.",
+          "description": "The sub type of the resource",
           "type": "string",
           "x-ms-summary": "Resource sub type"
         },
         "resourceDescription": {
-          "description": "The resource description.",
+          "description": "The resource description",
           "type": "string",
           "x-ms-summary": "Resource description"
         },
         "resourceUsage": {
           "format": "double",
-          "description": "Number of unique users who used the resource in last 30 days.",
+          "description": "Number of unique users who used the resource in the last thirty (30) days",
           "type": "number",
           "x-ms-summary": "Resource usage"
         },
         "environmentName": {
-          "description": "The environment display name.",
+          "description": "The environment display name",
           "type": "string",
           "x-ms-summary": "Environment name"
         },
         "environmentId": {
-          "description": "The environment unique ID.",
+          "description": "The environment unique ID",
           "type": "string",
           "x-ms-summary": "Environment ID"
         },
         "lastModifiedDate": {
           "format": "date-time",
-          "description": "Time when the resource was last modified.",
+          "description": "Time when the resource was last modified",
           "type": "string",
           "x-ms-summary": "Last modfified date"
         },
         "lastAccessedDate": {
           "format": "date-time",
-          "description": "Time when the resource was last used.",
+          "description": "Time when the resource was last used",
           "type": "string",
           "x-ms-summary": "Last used date"
         },
         "resourceActionStatus": {
-          "description": "Current status of any action taken since the last refresh time.",
+          "description": "Current status of any action taken since the last refresh time",
           "type": "string",
           "x-ms-summary": "Action Status"
         }
       }
     },
     "AdvisorRecommendationResourceIEnumerableResponseWithContinuation": {
-      "description": "Paged list of recommendation resources.",
+      "description": "Paged list of recommendation resources",
       "type": "object",
       "properties": {
         "value": {
-          "description": "List of recommendation resources.",
+          "description": "List of recommendation resources",
           "type": "array",
           "items": {
             "$ref": "#/definitions/AdvisorRecommendationResource"
           }
         },
         "nextLink": {
-          "description": "Link to get the next page of resources.",
+          "description": "Link to get the next page of resources",
           "type": "string",
           "x-ms-summary": "Next link"
         }
       }
     },
     "IEnumerableAdvisorScenario": {
-      "description": "List of recommendation scenarios.",
+      "description": "List of recommendation scenarios",
       "type": "array",
       "items": {
         "$ref": "#/definitions/AdvisorScenario"
       }
     },
     "AdvisorScenario": {
-      "description": "The recommendation scenario.",
+      "description": "The recommendation scenario",
       "type": "object",
       "properties": {
         "scenario": {
-          "description": "The scenario identifier.",
+          "description": "The scenario identifier",
           "type": "string",
           "x-ms-summary": "Scenario"
         },
         "scenarioName": {
-          "description": "Scenario display name.",
+          "description": "Scenario display name",
           "type": "string",
           "x-ms-summary": "Scenario name"
         }
       }
     },
     "IEnumerableAdvisorAction": {
-      "description": "List of scenario actions.",
+      "description": "List of scenario actions",
       "type": "array",
       "items": {
         "$ref": "#/definitions/AdvisorAction"
       }
     },
     "AdvisorAction": {
-      "description": "The allowed action.",
+      "description": "The allowed action",
       "type": "object",
       "properties": {
         "actionType": {
-          "description": "The action identifier.",
+          "description": "The action identifier",
           "type": "string",
           "x-ms-summary": "Action"
         },

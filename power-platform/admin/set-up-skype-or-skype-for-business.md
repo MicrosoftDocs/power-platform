@@ -13,6 +13,8 @@ search.audienceType:
 ---
 # Set up customer engagement apps to use Skype or Skype for Business
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 > [!Note]
 > This feature was retired on July 31, 2021. More information: [Skype integration with customer engagement apps is deprecated](../important-changes-coming.md#skype-integration-with-customer-engagement-apps-is-deprecated)
 
