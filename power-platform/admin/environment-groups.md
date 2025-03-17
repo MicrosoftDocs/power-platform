@@ -3,7 +3,7 @@ title: Environment groups
 description: Learn how to organize your Managed Environments into groups and govern them in bulk with rules.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/05/2025
+ms.date: 03/17/2025
 author: mikferland-msft
 ms.author: miferlan
 ms.reviewer: sericks
@@ -42,7 +42,7 @@ Admins can apply various rules to groups to govern many environments in bulk, re
 | 11 | [Sharing controls for canvas apps](managed-environment-sharing-limits.md) |
 | 12 | [Sharing controls for solution-aware cloud flows](managed-environment-sharing-limits.md) |
 | 13 | [Solution checker enforcement](managed-environment-solution-checker.md) |
-| 14 | [Unmanaged customizations](https://learn.microsoft.com/en-us/power-platform/alm/block-unmanaged-customizations) |
+| 14 | [Unmanaged customizations](../alm/block-unmanaged-customizations.md) |
 | 15 | [Usage insights](managed-environment-usage-insights.md) |
 
 > [!NOTE]
