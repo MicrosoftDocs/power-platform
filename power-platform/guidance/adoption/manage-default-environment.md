@@ -40,7 +40,7 @@ While the default environment is intended for personal productivity, makers migh
 
 Apps that don't follow a proper application lifecycle management are prone to business continuity risks. By moving these high-value apps out of the default environment to a Managed Environment, you can also take advantage of various premium security and governance capabilities.
 
-Use [Power Platform Advisor](/power-platform/admin/power-platform-advisor) to view recommendations [high-value apps](/power-platform/admin/power-platform-advisor#high-value-apps-in-default-environment) in the default environment. Contact makers and come up with a plan of migrating these apps out of the default enviornment into their own managed environment.
+Use [Power Platform Advisor](/power-platform/admin/power-platform-advisor) to view recommendations [high-value apps](/power-platform/admin/power-platform-advisor#high-value-apps-in-default-environment) in the default environment. Contact makers and come up with a plan of migrating these apps out of the default environment into their own managed environment.
 
 Our recommendation is to use [Power Platform Advisor](/power-platform/admin/power-platform-advisor). For more custom processes, you can use the Power BI dashboard in the CoE Starter Kit to [identify widely shared apps and flows](/power-platform/guidance/coe/power-bi-govern#identify-widely-shared-apps).
 
@@ -98,7 +98,7 @@ When 10 or more employees are using a personal productivity app or flow, the Pow
 
 [Proactively limit](/power-platform/admin/managed-environment-sharing-limits) how broadly users can share canvas apps, flows, and agents to avoid over-sharing of resources.
 
-For a reactive approach, use the compliance process in the CoE Starter Kit to track app sharing and usage. Use it as-is or modify it to suit the needs of your organization. [Learn more about the app auditing process](/power-platform/guidance/coe/example-processes). Note that this process only happens after the sharing has already happened.
+For a reactive approach, use the compliance process in the CoE Starter Kit to track app sharing and usage. Use it as-is or modify it to suit the needs of your organization. [Learn more about the app auditing process](/power-platform/guidance/coe/example-processes). This process only happens after the sharing has already happened.
 
 ## Move applications from the default environment
 

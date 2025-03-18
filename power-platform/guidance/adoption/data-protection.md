@@ -1,5 +1,5 @@
 ---
-title: Secure Data protection
+title: Establish data protection and privacy controls
 description: Learn key strategies and best practices for data protection and privacy within Power Platform to ensure security and compliance.
 #customer intent: As a Power Platform user, I want to understand data protection strategies in Power Platform so that I can ensure security and compliance.
 author: manuelap-msft
@@ -11,13 +11,14 @@ ms.reviewer: pankajsharma2087
 ms.date: 02/28/2025
 ---
 
-# Secure Data protection
+# Establish data protection and privacy controls
 
 In today's digital landscape, data protection and privacy are paramount concerns for organizations using Power Platform to build and deploy business applications. Ensuring the security and confidentiality of sensitive data isn't only a regulatory requirement but also a critical factor in maintaining customer trust and safeguarding organizational assets.
 
 This article covers key strategies and best practices for data protection and privacy within Power Platform.
 
 ## Data protection
+
 Data protection involves implementing measures to secure data from unauthorized access, breaches, and other threats. Privacy focuses on ensuring that personal and sensitive information is handled in compliance with legal and regulatory requirements, and that individuals' rights to privacy are respected.
 
 ## Data residency
