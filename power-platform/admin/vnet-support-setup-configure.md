@@ -3,7 +3,7 @@ title: Set up Virtual Network support for Power Platform
 description: Learn how to set up Azure Virtual Network support for Power Platform.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/26/2025
+ms.date: 03/12/2025
 author: faix 
 ms.author: osfaixat 
 ms.reviewer: sericks
@@ -56,7 +56,7 @@ The following four steps help you set up your virtual network.
 
 ### Set up the virtual network and subnets
 
-When you set up your virtual network, you need to delegate both a primary and a failover subnet. The failover subnet must be in a different region from the primary. For example, if your primary subnet is in WEST US, then the failover must be in EAST US.
+When you set up your virtual network, you need to delegate a subnet to the associated Azure regions of your Power Platform environment. For example, if your Power Platform environment region is United States, your subnets should be created in the **eastus** and **westus** Azure regions. For a list of supported regions, see [Supported regions](./vnet-support-overview.md#supported-regions).
 
 > [!NOTE]
 > Power Platform doesn't support the CENTRAL US region. [Find your virtual network location](https://github.com/microsoft/PowerApps-Samples/blob/master/powershell/enterprisePolicies/SubnetInjection/ValidateVnetLocationForEnterprisePolicy.ps1).
@@ -94,10 +94,8 @@ When you set up your virtual network, you need to delegate both a primary and a 
 
     :::image type="content" source="media/vnet-support/vnet-success-linked.png" alt-text="Screenshot showing your virtual network is linked to your environment." lightbox="media/vnet-support/vnet-success-linked.png":::
 
-### See also
+### Related content
 
 - Deploy enterprise policies with the [Microsoft.PowerPlatform/enterprisePolicies ARM template](/azure/templates/microsoft.powerplatform/enterprisepolicies?pivots=deployment-language-arm-template)
-
 - [Quickstart: Use the Azure portal to create a virtual network](/azure/virtual-network/quick-create-portal)
-
 - [Use plug-ins to extend business processes](/power-apps/developer/data-platform/plug-ins)

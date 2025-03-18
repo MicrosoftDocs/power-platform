@@ -524,6 +524,8 @@
                   href: system-application-users.md
                 - name: Role-based security roles
                   href: database-security.md
+                - name: Modernized business units security
+                  href: modernized-business-units-security.md
                 - name: Configure user security in an environment
                   href: database-security-configure.md
                 - name: How access to records is determined
@@ -792,7 +794,7 @@
               href: logging-powerapps.md
             - name: Power Automate activity logging
               href: logging-power-automate.md
-            - name: Power Pages activity logging (preview)
+            - name: Power Pages activity logging
               href: logging-power-pages.md
             - name: Power Platform connector activity logging
               href: connector-events-power-platform.md
