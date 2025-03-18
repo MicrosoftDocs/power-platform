@@ -50,7 +50,7 @@ The following table lists the regions where your Power Platform or Dynamics 365 
 |-------------------------|-------------------------|-------------------------|
 | United States | In region* | United States| 
 | Europe\**  | Spain, Sweden, or Switzerland| United States |
-| France<br>Germany<br>Norway<br>Switzerland | Spain, Sweden, or Switzerland | United States|
+| France<br>Germany<br>Norway<br>Sweden<br>Switzerland | Spain, Sweden, or Switzerland | United States|
 | Asia<br>Brazil<br>Canada<br>Japan<br>Korea<br>Singapore<br>South Africa<br>United Arab Emirates | United States | United States| 
 | Australia<br>India | In region* or United States | United States |
 | United Kingdom | In region*, Spain, Sweden, or Switzerland | United States |
