@@ -163,13 +163,25 @@ By using either method, a Dataverse plug-in can be configured to incorporate App
 
 ### Dataverse integration
 
+Lets explore how this pattern can implemented making use of the Generally Available features of dataverse.
+
+To apply distributed tracing to calls to the [Dataverse WebApi](/power-apps/developer/data-platform/webapi/overview) two approachs will be combined Dataverse Messages to extend the message pipeline and a Custom API using Datavesrse Plugins that make use of the Application Insights SDK to add the required parent child relationships.
+
+#### Invoke from other Power Platform Services
+
+When looking at other components in the Power Platform you could also consider making use of [Invoke a function from app, flow, code, or another function](/power-apps/maker/data-platform/functions-invoke) to invoke the Dataverse Custom APIs discussed in this section.
+
+This approach allows serviecs like Microsoft Copilot Studio, Power Apps or Power Automate Cloud Flows to be included in the overall distributed tracing solution. 
+
 #### Dataverse messages for entities or custom APIs
 
-[Dataverse messages](/power-apps/developer/data-platform/custom-actions) are a powerful feature that allow you to interact with entities or custom APIs within the Dataverse environment. These messages enable you to perform operations such as create, update, delete, and retrieve data. By using Dataverse messages, you can streamline your data management processes and ensure seamless integration with your observability needs.
+Custom [Dataverse messages](/power-apps/developer/data-platform/custom-actions) can be defined that allow you to interact with entities or custom APIs within the Dataverse environment. These messages enable you to perform operations such as create, update, delete, and retrieve data. By using Dataverse messages, you can streamline your data management processes and ensure seamless integration with your observability needs.
 
 #### Adding steps to a plug-in
 
-[Dataverse plug-ins](/power-apps/developer/data-platform/plug-ins) can be configured to be executed at different stages of the data processing pipeline. These stages include pre-validation, pre-operation, and post-operation steps. By adding steps to a plugin, you can control the flow of data and ensure that specific actions are taken at the right time.
+Now that a dataverse message type is created or using any of the predefined entity types of an environment you can take advantage of [Dataverse plug-ins](/power-apps/developer/data-platform/plug-ins) so that they can be configured to be executed at different stages of the data processing pipeline and execute distributed tracing.
+
+These stages can include pre-validation, pre-operation, and post-operation steps. By adding steps to a plugin, you can control the flow of data and ensure that specific actions are taken at the right time.
 
 - **Pre-validation**: This step occurs before the main operation is executed. It is used to validate the data and ensure that it meets the required criteria.
 - **Pre-operation**: This step occurs after the pre-validation step but before the main operation is executed. It is used to perform any necessary preparations or modifications to the data.
@@ -177,9 +189,11 @@ By using either method, a Dataverse plug-in can be configured to incorporate App
 
 Plugins can be configured to execute these steps either synchronously or asynchronously, depending on the requirements of your application.
 
-#### Unsecure and secure configuration values
+#### Plugin Configuration - Unsecure and secure configuration values
 
-When [registering plug-ins](/power-apps/developer/data-platform/register-plug-in), you can have both unsecure and secure [configuration values](/power-apps/developer/data-platform/register-plug-in#set-configuration-data). These values are used to control various aspects of the plugin's behavior.
+Specifically looking at scenarios for distributed tracing you can can use the unsecure configuration to manage if tracing should be enabled and the level of loggring that is applied. You could use the secure configuration value to store connection string information required by the plugin.
+
+The process is managed when [registering plug-ins](/power-apps/developer/data-platform/register-plug-in), you can have both unsecure and secure [configuration values](/power-apps/developer/data-platform/register-plug-in#set-configuration-data). These values are used to control various aspects of the plugin's behavior.
 
 - **Unsecure Configuration**: Unsecure settings are visible to all users and can include settings such as log level, enable/disable tracing, and other non-sensitive information.
 - **Secure Configuration**: Secure settings are only visible to users with the appropriate permissions and can include sensitive information such as connection strings, API keys, and other confidential data.
@@ -192,10 +206,13 @@ By using secure configuration values, you can ensure that sensitive information 
 
 Dataverse allows you to define [custom APIs](/power-apps/developer/data-platform/custom-api) with specific request and response parameters. This feature enables you to create tailored APIs that meet the unique needs of your application.
 
-- **Request parameters**: These parameters define the input data required by the custom API. They can include various data types such as strings, integers, and complex objects.
-- **Response parameters**: These parameters define the output data returned by the custom API. They can include various data types and structures, allowing you to provide detailed and meaningful responses to API consumers.
+- [**Input parameters**](/power-apps/developer/data-platform/understand-the-data-context#inputparameters): These parameters define the input data required by the custom API. They can include various data types such as strings, integers, and complex objects.
+- [**Output parameters**](/power-apps/developer/data-platform/understand-the-data-context#outputparameters): These parameters define the output data returned by the custom API. They can include various data types and structures, allowing you to provide detailed and meaningful responses to API consumers.
 
 :::image type="content" source="media/distributed-tracing/custom-api.png" alt-text="Screenshot of registering a custom API" :::
+
+> [!TIP]
+> In the case of distributed tracing you could tag query string value for [Passing a Shared Variable from the API](/power-apps/developer/data-platform/understand-the-data-context#passing-a-shared-variable-from-the-api)
 
 #### Custom processing steps (sync and async)
 
