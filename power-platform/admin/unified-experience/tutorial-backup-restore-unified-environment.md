@@ -26,13 +26,15 @@ The target environment in this tutorial is always a unified environment that con
 
 The source environment in this tutorial can either be a similar unified environment that contains finance and operations apps hosted by Microsoft Dataverse or a finance and operations apps environment in Lifecycle Services that was set up through the [Power Platform integration](/dynamics365/fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration).
 
-Ensure that both the source and target environments are provisioned in the same region. For general information on copying environments, refer to [Copy an environment](../copy-environment.md).
+Ensure that both the source and target environments are provisioned in the same region. For general information on backup and restore environments in power platform admin center, refer to [Back up and restore environments](../backup-restore-environments.md).
 
 # [Power Platform admin center](#tab/PPAC)
 
 ## Begin the copy operation
 
-In the Power Platform admin center, go to the source environment you want to copy. From there, select the **Copy** button in the top action pane.  In the slider window that appears, choose to copy **Everything**, which incorporates both the Dataverse and X++ source code, and the data from the source. Select the **Target** environment to be the unified, developer environment.
+In the Power Platform admin center, go to the source environment you want to take the back up or restore. From there, select the **Backup + Restore** button in the top action pane.  
+To understand the system and manual backups and how to take manual backup please refer to [Back up and restore environments](../backup-restore-environments.md). 
+To restore the environment, please select **Restore or manage** option and then choose the appropriate system or manual backup. Then press continue and select the **Target** environment to be the unified environment.
 
 # [PowerShell](#tab/PowerShell)
 
