@@ -41,7 +41,7 @@ Use **Patch** with the **[Defaults](function-defaults.md)** function to create r
 
 `Patch( Customers, Defaults( Customers ), { Name: "Contoso" } )`
 
-> When you patch a collection using a record from a data source with default values, the patch operation updates the collection with both the specified patch values and the default values from the data source.
+> **Note:**  When you patch a collection using a record from a data source with default values, the patch operation updates the collection with both the specified patch values and the default values from the data source. The DataSource of the patch statement and the DataSource of the Defaults function must match in order to create a new record.
 
 Even if you're not working with a data source, you can use **Patch** to merge two or more records. For example, this formula merges two records into one that identifies both the phone number and the location for Contoso:
 
@@ -91,7 +91,7 @@ Specify two or more records that you want to merge. Records are processed in the
 **Patch**( _DataSource_, _BaseRecord_, _ChangeRecord1_ [, *ChangeRecord2*, … ])
 
 - _DataSource_ – Required. The data source that contains the record that you want to modify or will contain the record that you want to create.
-- _BaseRecord_ – Required. The record to modify or create. If the record came from a data source, the record is found and modified. If the result of **[Defaults](function-defaults.md)** is used, a record is created.
+- _BaseRecord_ – Required. The record to modify or create. If the record came from a data source, the record is found and modified. If the result of **[Defaults](function-defaults.md)** is used, a record is created. Note that the DataSource of the patch statement and the DataSource of the Defaults function must match in order to create a new record. 
 - _ChangeRecord(s)_ – Required. One or more records that contain properties to modify in the _BaseRecord_. Change records are processed in order from the beginning of the argument list to the end, with later property values overriding earlier ones.
 
 #### Modify or create a set of records in a data source
@@ -99,7 +99,7 @@ Specify two or more records that you want to merge. Records are processed in the
 **Patch**( _DataSource_, _BaseRecordsTable_, _ChangeRecordTable1_ [, *ChangeRecordTable2*, … ] )
 
 - _DataSource_ – Required. The data source that contains the records that you want to modify or will contain the records that you want to create.
-- _BaseRecordTable_ – Required. A table of records to modify or create. If the record came from a data source, the record is found and modified. If the result of **[Defaults](function-defaults.md)** is used, a record is created.
+- _BaseRecordTable_ – Required. A table of records to modify or create. If the record came from a data source, the record is found and modified. If the result of **[Defaults](function-defaults.md)** is used, a record is created. Note that the DataSource of the patch statement and the DataSource of the Defaults function must match in order to create a new record. 
 - _ChangeRecordTable(s)_ – Required. One or more tables of records that contain properties to modify for each record of the _BaseRecordTable_. Change records are processed in order from the beginning of the argument list to the end, with later property values overriding earlier ones.
 
 #### Merge records
