@@ -422,9 +422,9 @@ Starting April 7th, 2025, Dataverse search starts drawing from Dataverse storage
 
 ## What happens if Dataverse search is turned off?
 
-If this feature is turned off, all indexed Dataverse data will be deleted, and the experiences that depend on it are limited or unusable for all users of those experiences, which includes search and AI conversational capabilities. See full list here.
+If this feature is turned off, all indexed Dataverse data will be deleted, and the experiences that depend on it are limited or unusable for all users of those experiences, which includes search and AI conversational capabilities. 
 
-Environment admins have 12 hours to turn the feature back on with no implications.
+Environment admins have 12 hours to turn the feature back on with no implications:
 
 ### During 12 hours:
 -	All Dataverse indexed data is stored.
