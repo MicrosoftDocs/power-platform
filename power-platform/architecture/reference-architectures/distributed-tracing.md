@@ -131,7 +131,7 @@ Ensure that the implemented solution fit into your [monitoring and alerting stra
 
 ### Operational excellence
 
-To effectively monitor your workload for security, performance, and reliability, you need a comprehensive system with its own stack that provides the foundation for all monitoring, detection, and alerting functions. Learn more: [Recommendations for designing and creating a monitoring system](https://learn.microsoft.com/en-us/power-platform/well-architected/operational-excellence/observability)
+To effectively monitor your workload for security, performance, and reliability, you need a comprehensive system with its own stack that provides the foundation for all monitoring, detection, and alerting functions. Learn more: [Recommendations for designing and creating a monitoring system](/power-platform/well-architected/operational-excellence/observability)
 
 #### Performance efficiency
 
