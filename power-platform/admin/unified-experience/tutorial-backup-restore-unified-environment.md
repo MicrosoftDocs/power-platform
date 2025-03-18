@@ -30,7 +30,7 @@ Ensure that both the source and target environments are provisioned in the same 
 
 # [Power Platform admin center](#tab/PPAC)
 
-## Begin the copy operation
+## Begin the restore operation
 
 In the Power Platform admin center, go to the source environment you want to take the back up or restore. From there, select the **Backup + Restore** button in the top action pane.  
 To understand the system and manual backups and how to take manual backup please refer to [Back up and restore environments](../backup-restore-environments.md). 
@@ -38,9 +38,9 @@ To restore the environment, please select **Restore or manage** option and then 
 
 # [PowerShell](#tab/PowerShell)
 
-## Copy via PowerShell
+## Restore via PowerShell
 
-Load the PowerShell console and execute the following commands to copy the environment. For more information on how to install and use the PowerShell module, see [Get started with PowerShell for Power Platform Administrators](../powershell-getting-started.md).
+Load the PowerShell console and execute the following commands to restore the environment. For more information on how to install and use the PowerShell module, see [Get started with PowerShell for Power Platform Administrators](../powershell-getting-started.md).
 
 ```PowerShell
 #Install the module
@@ -57,13 +57,13 @@ Write-Host "Creating a session against the Power Platform API"
 
 Add-PowerAppsAccount -Endpoint prod -TenantID $TenantId -ApplicationId $SPNId -ClientSecret $ClientSecret
 
-    $copyToRequest = \[pscustomobject\]@{
+    $restoreRequest = \[pscustomobject\]@{
         SourceEnvironmentId = $SourceEnvironmentID
-        TargetEnvironmentName = "Copied from source"
-        CopyType = "FullCopy"
+        TargetEnvironmentName = "Restored Environment"
+        RestorePointDateTime = $datetime.ToString("yyyy-MM-dd HH:mm:ss")
         SkipAuditData: true
     }
 
-Copy-PowerAppEnvironment -EnvironmentName $TargetEnvironmentID -CopyToRequestDefinition $copyToRequest
+Restore-PowerAppEnvironment -EnvironmentName $TargetEnvironmentID -RestoreToRequestDefinition $restoreRequest
 ```
 ---
