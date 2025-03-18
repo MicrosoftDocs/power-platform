@@ -18,18 +18,9 @@ metadata:
 # highlightedContent section (optional)
 # Maximum of 8 items
 
-highlightedContent:
-# itemType: architecture | concept | deploy | download | get-started | how-to-guide | training | overview | quickstart | reference | sample | tutorial | video | whats-new
-  items:
-    # Card
-    - title: Take the Power Platform Adoption assessment
-      itemType: get-started
-      url: adoption/take-assessment.md
-
-
 # productDirectory section (optional)
 productDirectory:
-  title: Power Platform Adoption guidance # < 60 chars (optional)
+  title: Power Platform guidance # < 60 chars (optional)
   summary: Find guidance for each phase of your Power Platform adoption journey. # < 160 chars (optional)
   items:
     # Card
@@ -37,18 +28,14 @@ productDirectory:
       # imageSrc should be square in ratio with no white space
       imageSrc: ./media/strategy.svg
       links:
-        - url: /power-platform/guidance/adoption/vision
-          text: Define vision, metrics and goals
         - url: /power-platform/guidance/adoption/take-assessment
           text: Assess Power Platform adoption strategy
+        - url: /power-platform/guidance/adoption/vision
+          text: Define vision, metrics and goals 
         - url: /power-platform/guidance/adoption/business-value
           text: Measure and communicate business value
-        - url: /power-platform/guidance/adoption/value-plays
-          text: Utilize value plays
-        - url: /power-platform/guidance/adoption/executive-sponsorship
-          text: Get executive sponsorship
-        - url: /power-platform/guidance/adoption/coe.md
-          text: Establish a Center of Excellence
+        - url: /power-platform/guidance/adoption/strategy-best-practices
+          text: More...
     - title: Plan
       # imageSrc should be square in ratio with no white space
       imageSrc: ./media/plan.svg
@@ -59,24 +46,20 @@ productDirectory:
           text: Evaluate delivery models
         - url: /power-platform/guidance/adoption/license-assignment-strategies
           text: Establish license assignment strategies
-        - url: /power-platform/guidance/white-papers/application-modernization.md
-          text: Modernize applications with Power Platform
+        - url: /power-platform/guidance/adoption/plan-overview
+          text: More...
     - title: Secure
       # imageSrc should be square in ratio with no white space
       imageSrc: ./media/secure.svg
       links:
-        - url: /power-platform/guidance/adoption/assess-security-posture
-          text: Assess your security posture
         - url: /power-platform/guidance/adoption/security-posture-management
           text: Manage your security posture 
-        - url: /power-platform/guidance/adoption/threat-detection
-          text: Detect threats
         - url: /power-platform/guidance/adoption/data-protection
           text: Establish data protection and privacy controls
         - url: /power-platform/guidance/adoption/conditional-access
           text: Configure identity and access management
-        - url: /power-platform/guidance/adoption/compliance
-          text: Compliance
+        - url: /power-platform/guidance/adoption/secure-overview
+          text: More...
     - title: Govern
       # imageSrc should be square in ratio with no white space
       imageSrc: ./media/govern.svg
@@ -85,14 +68,10 @@ productDirectory:
           text: Management at scale
         - url: /power-platform/guidance/adoption/methodology
           text: Establish an environment strategy
-        - url: /power-platform/guidance/adoption/strategy-best-practices
-          text: Manage the default environment
-        - url: /power-platform/guidance/adoption/strategy-best-practices
+        - url: /power-platform/guidance/adoption/reactive-governance
           text: Reactive governance
-        - url: /power-platform/guidance/adoption/strategy-best-practices
-          text: Full visbility
-        - url: /power-platform/guidance/adoption/strategy-best-practices
-          text: Capacity and cost management
+        - url: /power-platform/guidance/adoption/admin-best-practices
+          text: More...
     - title: Operate
       # imageSrc should be square in ratio with no white space
       imageSrc: ./media/operate.svg
@@ -103,36 +82,32 @@ productDirectory:
           url: adoption/observability.md
         - text: Monitor license and capacity consumption
           url: adoption/cds-usage.md
-        - text: Ensure data resilience
-          url: adoption/data-resilience.md
-        - text: Establish a support strategy
-          url: adoption/support-strategy.md
-        - text: Manage resistance and avoid organizational anti-patterns
-          url: adoption/manage-resistance.md
+        - text: More...
+          url: adoption/operate-overview.md
     - title: Ready
       # imageSrc should be square in ratio with no white space
       imageSrc: ./media/innovate.svg
       links:
         - text: Establish a training and upskilling strategy
           url: adoption/training-strategy.md
-        - text: Set up a community hub
+        - text: Set up tools to support your community
           url: adoption/wiki-community.md          
         - text: Host internal training events
           url: adoption/in-a-day.md
-        - text: Envision solutions
-          url: adoption/solution-envisioning.md
+        - text: More...
+          url: adoption/ready-overview.md
     - title: Nurture
       # imageSrc should be square in ratio with no white space
       imageSrc: ./media/nurture.svg
       links:
-        - url: /power-platform/guidance/adoption/methodology
-          text: Identify champions
-        - url: /power-platform/guidance/adoption/strategy-best-practices
-          text: Create a Maker portal
-        - url: /power-platform/guidance/adoption/admin-best-practices
+        - url: /power-platform/guidance/adoption/community-goals
+          text: Define community purpose and goals
+        - url: /power-platform/guidance/adoption/onboard-makers
+          text: Onboard new makers
+        - url: /power-platform/guidance/adoption/show-and-tell
           text: Share success stories
         - url: /power-platform/guidance/adoption/nurture-best-practices
-          text: Organize hackathons
+          text: More...
 
 
 # additionalContent section (optional)

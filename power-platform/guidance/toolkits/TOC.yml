@@ -309,3 +309,9 @@
               href: ../creator-kit/theme.md
             - name: Set focus
               href: ../creator-kit/setfocus.md
+    - href: /power-apps/maker/data-platform/dataverse-accelerator/dataverse-accelerator
+      name: Dataverse Accelerator overview
+    - href: /power-automate/guidance/automation-kit/overview/introduction
+      name: Automation Kit overview
+    - href: /power-automate/guidance/business-approvals-templates/introduction
+      name: Business Approvals templates overview

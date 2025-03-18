@@ -47,8 +47,8 @@
                 href: adoption/business-value-methods.md
               - name: Use business value plays
                 href: adoption/value-plays.md
-              - name: Get executive sponsorship
-                href: adoption/executive-sponsorship.md
+            - name: Get executive sponsorship
+              href: adoption/executive-sponsorship.md
             - name: Establish a Center of Excellence
               href: adoption/coe.md
         - name: Plan
@@ -89,16 +89,22 @@
           items:
             - name: Overview
               href: adoption/admin-best-practices.md
-            - name: Designate a Power Platform admin
-              href: adoption/pp-admin.md
-            - name: Plan and manage licenses and capacity
-              href: adoption/capacity-and-licenses.md
+            - name: Manage at scale 
+              href: adoption/govern-at-scale.md
             - name: Establish an environment strategy
               href: white-papers/environment-strategy.md
+            - name: Reactive governance
+              href: adoption/reactive-governance.md
+            - name: Full visibility
+              href: adoption/access-usage.md
+            - name: Plan and manage licenses and capacity
+              href: adoption/capacity-and-licenses.md            
             - name: Manage Dataverse for Teams environments
               href: adoption/teams-environment-strategy.md
             - name: Manage the default environment
-              href: adoption/manage-default-environment.md
+              href: adoption/manage-default-environment.md            
+            - name: Designate a Power Platform admin
+              href: adoption/pp-admin.md
         - name: Operate
           items:
             - name: Overview
