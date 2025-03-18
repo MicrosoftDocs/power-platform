@@ -211,10 +211,9 @@ In the **Consumption per table** section, you can view the amount of storage con
 
 ## Dataverse search consumption
 
-Storage consumed by Dataverse search is already reported at the environment-level as a table called **RelevanceSearch**. Moving forward, this table is available for both database and file storage consumption and renamed to match accordingly:
-
-- **Dataverse search – Structured index** for database storage indexing  
--	**Dataverse search – Unstructured index** for files storage indexing. 
+Storage consumed by Dataverse search was already reported at the Environment level as a table called “RelevanceSearch”. Now, this table is be available for both Database and File storage consumption and renamed to match accordingly:
+- **DataverseSearch-StructuredIndex** for Database storage indexing 
+-	**DataverseSearch-UnstructuredIndex** for Files storage indexing.
  
 Respectively, Dataverse search is reported as part of database and files storage consumption in the **Summary** tab. Dataverse search can also be viewed in the **Environment** report in Power Platform admin center or **Capacity** report:
 
@@ -225,9 +224,9 @@ Respectively, Dataverse search is reported as part of database and files storage
 
 ## Dataverse search entitlements
 
-Dataverse search consumes against the Dataverse entitlements available within your tenant. 
-- Dataverse search structured index consumption counts towards Dataverse database capacity (DBs)
-- Dataverse search unstructured index consumption counts towards Dataverse file capacity (Files) 
+Dataverse search consumes against the [Dataverse entitlements available within your tenant](whats-new-storage.md)).
+- Dataverse search structured index consumption counts towards Dataverse database capacity
+-	Dataverse search unstructured index consumption counts towards Dataverse file capacity
 
 #### Allocate capacity for an environment 
 
