@@ -2,7 +2,7 @@
   href: ./index.yml
   items:
     - name: Overview
-      href: architecture-center-overview.md.md
+      href: architecture-center-overview.md
     - name: What's new
       href: whats-new.md
     - name:  key concepts
@@ -12,21 +12,23 @@
       - name: ExpressRoute and Power Platform
         items:
           - name: Overview
-            href: expressroute/overview.md
+            href: fundamentals/expressroute/overview.md
           - name: Benefits of using ExpressRoute
-            href: expressroute/benefits.md
+            href: fundamentals/expressroute/benefits.md
           - name: How ExpressRoute works
-            href: expressroute/how-expressroute-works.md
+            href: fundamentals/expressroute/how-expressroute-works.md
           - name: Before you use ExpressRoute
-            href: expressroute/things-to-consider.md
+            href: fundamentals/expressroute/things-to-consider.md
           - name: Understand Microsoft Power Platform architecture
-            href: expressroute/understanding-architecture.md
+            href: fundamentals/expressroute/understanding-architecture.md
           - name: Plan an ExpressRoute deployment
-            href: expressroute/planning-expressroute.md
+            href: fundamentals/expressroute/planning-expressroute.md
           - name: Set up ExpressRoute for Microsoft Power Platform
-            href: expressroute/setup.md
+            href: fundamentals/expressroute/setup.md
           - name: ExpressRoute readiness checklist
-            href: expressroute/checklist.md
+            href: fundamentals/expressroute/checklist.md
+      - name: Dataverse auditing
+        href: fundamentals/dataverse-auditing.md
       - name: Automated testing 
         href: fundamentals/testing.md
     - name: Reference architectures
@@ -43,8 +45,6 @@
         href: reference-architectures/app-legacy-data-integration.md
       - name: Dataverse background operations
         href: reference-architectures/dataverse-background-operations.md
-      - name: Dataverse auditing
-        href: reference-architectures/dataverse-auditing.md
       - name: Secure Power Platform access to Azure resources
         href: reference-architectures/secure-access-azure-resources.md
       - name: SAP and Power Platform solution

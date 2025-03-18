@@ -179,7 +179,7 @@ services&mdash;use the ExpressRoute connection. In particular, not all Microsoft
 365 services are designed to work with ExpressRoute. Currently, Microsoft Power Platform
 services don't have a designated BGP community like [some Microsoft 365 services do](/azure/expressroute/expressroute-routing#service-to-bgp-community-value).
 Instead, you should use [regional BPG communities](/azure/expressroute/expressroute-routing#bgp)
-to match with the region where the [Microsoft Power Platform environment](../../admin/environments-overview.md)
+to match with the region where the [Microsoft Power Platform environment](/power-platform/admin/environments-overview)
 was created.
 
 For more information about routing Microsoft 365, go to the documentation on
