@@ -100,17 +100,11 @@ You must have System Administrator or System Customizer role or equivalent permi
 
 Auditing can be configured manually through the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) and the [Power Apps portal](https://make.powerapps.com/). Auditing can also be configured programmatically. Learn more at [Auditing overview](/power-apps/developer/data-platform/auditing/overview).
 
-### Turn on auditing through Security page (Preview)
-[This section is prerelease documentation and is subject to change.]
+### Turn on auditing through Security page
 
 You must be assigned to the Power Platform or Dynamics 365 admin role to turn on or off auditing through the [Security page](security/security-overview.md).
 
 To meet your external and internal auditing, compliance, security, and governance policies that are common to many enterprises, auditing for the following tables are turned on automatically when you turn on auditing through the Security page. You can audit other tables, where applicable, but note that there are some core tables that audit is turned on by default. 
-
-> [!IMPORTANT]
->
-> - This is a preview feature.
-> - Preview features aren't meant for production use and might have restricted functionality. These features are subject to [supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2189520), and are available before an official release so that customers can get early access and provide feedback.
 
 |Category  |Table  |
 |-----------|-----------|
