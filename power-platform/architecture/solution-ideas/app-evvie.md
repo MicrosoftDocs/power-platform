@@ -28,7 +28,7 @@ Inspect vehicles and assess damage using generative AI and Power Platform. For a
 
 ## Architecture diagram
 
-:::image type="content" source="../media/image2.png" alt-text="Enterprise Visual Vehicle Inspection Engine architecture diagram" border="true"  lightbox="../media/image2.png":::
+:::image type="content" source="media/app-evvie/evvie.png" alt-text="Enterprise Visual Vehicle Inspection Engine architecture diagram" border="true"  lightbox="media/app-evvie/evvie.png":::
 
 ## Workflow
 

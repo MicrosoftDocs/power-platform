@@ -27,7 +27,7 @@ The Healthcare Patient Support Agent architecture is designed to streamline pati
 
 ## Architecture diagram
 
-:::image type="content" source="../media/image5.png" alt-text="Architecture diagram illustrating Healthcare Patient Support Agent." border="true" lightbox="../media/image5.png":::
+:::image type="content" source="media/agent-healthcare/healthcare-patient.png" alt-text="Architecture diagram illustrating Healthcare Patient Support Agent." border="true" lightbox="media/agent-healthcare/healthcare-patient.png":::
 
 ## Workflow
 
@@ -35,56 +35,35 @@ The Healthcare Patient Support Agent architecture is designed to streamline pati
 
 Data sources include Microsoft Dataverse, Azure Data Lake, and Azure Synapse Analytics.
 
-- [Microsoft Dataverse](/power-apps/maker/data-platform/): Microsoft Dataverse serves as the central repository for healthcare data, including patients, appointments, and provider information. Chosen for its seamless integration with Power Platform and support for relational and nonrelational data models.
-- [Azure Data Lake Store Gen2](/azure/storage/blobs/data-lake-storage-introduction): Azure Data Lake Store Gen2 stores large datasets, enabling advanced analytics on patient data. Selected for its scalability and ability to handle structured and unstructured data.
-- [Azure Synapse Analytics](/azure/synapse-analytics/overview-what-is): Azure Synapse Analytics provides analytics capabilities for patient and operational data. Chosen for its ability to unify big data and data warehousing in a single platform.
+- **[Microsoft Dataverse](/power-apps/maker/data-platform/)** serves as the central repository for healthcare data, including patients, appointments, and provider information. Chosen for its seamless integration with Power Platform and support for relational and nonrelational data models.
+- **[Azure Data Lake Store Gen2](/azure/storage/blobs/data-lake-storage-introduction)** stores large datasets, enabling advanced analytics on patient data. Selected for its scalability and ability to handle structured and unstructured data.
+- **[Azure Synapse Analytics](/azure/synapse-analytics/overview-what-is)** provides analytics capabilities for patient and operational data. Chosen for its ability to unify big data and data warehousing in a single platform.
 
-## Processing
+### Processing
 
-### AI Builder models
+- **[AI Builder models](/ai-builder/)** is chosen for its low-code AI capabilities, which enable business users to build and integrate AI models without coding expertise.
+  - Patient feedback sentiment model: Analyzes patient feedback to measure satisfaction
+  - Symptom analysis model: Identifies and processes patient-reported symptoms for better diagnosis and query resolution
 
-- Patient feedback sentiment model: Analyzes patient feedback to measure satisfaction
-- Symptom analysis model: Identifies and processes patient-reported symptoms for better diagnosis and query resolution
+- **[Power Automate cloud flows](/power-automate/overview-cloud)**: Automates workflows like appointment confirmation, reminders, and query escalation. Chosen for its integration with Dataverse and ability to create automated workflows without extensive development.
 
-[AI Builder](/ai-builder/overview) is chosen for its low-code AI capabilities, which enable business users to build and integrate AI models without coding expertise.
+### User Interface
 
-### Power Automate cloud flows
+- **[Patient access portal](/power-pages/)**: Provides a user-friendly interface for patients to manage their healthcare interactions. Built on Power Pages for its rapid development capabilities and seamless integration with other Power Platform components.
+- **[Patient interactions agent](/copilot-studio/)**: Uses AI-driven agents to assist with patient queries and appointment scheduling. Chosen for its ability to provide real-time responses and reduce human intervention. Built on Microsoft Copilot Studio for rapid development, knowledge retrieval (RAG) capabilities, and seamless integration with other Power Platform components.
+- **[Power BI dashboards](/power-bi/)**: Visualizes operational and patient-centric data to provide actionable insights. Chosen for its integration with Dataverse and ability to create interactive, real-time dashboards.
 
-Automates workflows like appointment confirmation, reminders, and query escalation. Chosen for its integration with Dataverse and ability to create automated workflows without extensive development.
+### Platform governance, compliance, and fundamentals
 
-## User Interface
+- **[Power Platform admin center](/power-platform/admin/new-admin-center)**: Manages and monitors all Power Platform components for operational efficiency. Chosen for its ability to enforce governance and maintain compliance across solutions. 
+- **[Microsoft Purview](/purview/purview)**: Ensures data compliance and governance by monitoring and classifying data. Chosen to meet regulatory requirements in the healthcare industry. 
+- **[Power Fx](/power-platform/power-fx/overview)**: Enables custom logic for advanced functionality in apps and workflows. Selected for its simplicity and integration with other Power Platform components. 
+- **[Microsoft Entra ID](/entra/fundamentals/whatis): Enables checking of access to data for certain individuals. 
+- **[Application Insights](/microsoft-copilot-studio/advanced-bot-framework-composer-capture-telemetry)**: Azure Application Insights is used for monitoring the performance and health of the workload.
 
-### Patient access portal
+## Use case details
 
-Provides a user-friendly interface for patients to manage their healthcare interactions. Built on Power Pages for its rapid development capabilities and seamless integration with other Power Platform components.
-
-### Patient interactions agent
-
-Uses AI-driven agents to assist with patient queries and appointment scheduling. Chosen for its ability to provide real-time responses and reduce human intervention. Built on Microsoft Copilot Studio for rapid development, knowledge retrieval (RAG) capabilities, and seamless integration with other Power Platform components.
-
-### Power BI dashboards
-
-Visualizes operational and patient-centric data to provide actionable insights. Chosen for its integration with Dataverse and ability to create interactive, real-time dashboards.
-
-## Platform governance and compliance
-
-### Power Platform admin center
-
-Manages and monitors all Power Platform components for operational efficiency. Chosen for its ability to enforce governance and maintain compliance across solutions.
-
-### Purview
-
-Ensures data compliance and governance by monitoring and classifying data. Chosen to meet regulatory requirements in the healthcare industry.
-
-### Power Fx
-
-Enables custom logic for advanced functionality in apps and workflows. Selected for its simplicity and integration with other Power Platform components.
-
-## Application insights
-
-### Use case details
-
-The Healthcare Patient Support Agent architecture aims to improve the delivery of efficient and personalized healthcare support to patients, while also reducing the administrative burden on healthcare providers.
+The Healthcare Patient Support agent aims to improve the delivery of efficient and personalized healthcare support to patients, while also reducing the administrative burden on healthcare providers.
 
 **Business problem**:
 
@@ -103,7 +82,7 @@ These considerations implement the pillars of Power Platform Well-Architected, a
 
 ### Performance efficiency
 
-- Power Automate flows with scalable parallelization to handle peak patient interactions efficiently.
+- Power Automate flows with scalable parallelization to handle peak patient interactions efficiently. Learn more: [Use an asynchronous flow pattern](/power-automate/guidance/coding-guidelines/asychronous-flow-pattern)
 - Azure Data Lake Store Gen2 archives large datasets, ensuring cost-effective long-term storage and enabling advanced analytics. Its scalability and support for diverse data types make it ideal for healthcare workloads.
 - Azure Synapse Analytics facilitates big data processing and data warehousing, unifies patient records for advanced analytical insights and reporting.
 
@@ -112,6 +91,11 @@ These considerations implement the pillars of Power Platform Well-Architected, a
 - Designed the Patient Access Portal with a responsive UI for seamless use across devices.
 - Integrated natural language processing and knowledge source retrieval in the Patient Interactions Agent to improve query resolution accuracy.
 - Personalized patient interactions using AI Builder models to enhance satisfaction.
+
+Learn more:
+
+- [Recommendations for designing conversational user experiences](/power-platform/well-architected/experience-optimization/conversation-design)
+- [Introduction to conversational experiences](/microsoft-copilot-studio/guidance/cux-overview)
 
 ### Responsible AI
 

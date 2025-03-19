@@ -37,6 +37,8 @@ In this article, we will look at:
 | --- | --- |
 | **[Healthcare Patient Support Agent architecture](../solution-ideas/agent-healthcare-patient-support.md)** | Streamline patient interactions and reduce administrative burdens for healthcare providers |
 | **[Property rental portal with AI-driven search and payment processing](../solution-ideas/agent-rental-portal.md)** | Build a comprehensive rental portal that uses AI-driven search capabilities and seamless payment processing. |
+| **[Custom Contact Center solution with Copilot Studio agent](../solution-ideas/agent-custom-contact-center.md)** | Enhance customer service efficiency through integrated platforms and technologies. |
+| **[Travel concierge using generative AI with Copilot Studio](../solution-ideas/agent-travel-customer.md)** | Employ an AI-driven solution to enhance customer interactions and streamline information access. |
 
 ## Resources
 

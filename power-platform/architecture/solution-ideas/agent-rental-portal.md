@@ -27,7 +27,7 @@ This article outlines the key components, workflow, and best practices for imple
 
 ## Architecture diagram
 
-:::image type="content" source="../media/image6.png" alt-text="Architecture diagram of a property rental portal with an AI-driven search and payment processing." border="true"  lightbox="../media/image6.png":::
+:::image type="content" source="media/agent-rental-portal/agent-property-rental.png" alt-text="Architecture diagram of a property rental portal with an AI-driven search and payment processing." border="true"  lightbox="media/agent-rental-portal/agent-property-rental.png":::
 
 ## Workflow
 
@@ -183,4 +183,4 @@ Principal authors:
 
 ## Reference implementation
 
-A sample architecture implementation is available for reference in [GitHub] [https://aka.ms/pp/contoso-real-estate].
+A sample architecture implementation is available for reference in [GitHub](https://aka.ms/pp/contoso-real-estate).
