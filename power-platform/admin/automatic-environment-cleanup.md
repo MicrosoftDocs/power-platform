@@ -3,7 +3,7 @@ title: Automatic deletion of Power Platform environments
 description: Learn about the automatic processes that identify and disable Power Platform environments and how you can prevent them from being deleted.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 03/17/2025
+ms.date: 03/18/2025
 ms.subservice: admin
 author: matapg007
 ms.author: matgupta 
@@ -54,8 +54,10 @@ Only default, developer, and [Dataverse for Teams environments](inactive-teams-e
 ## Default environment 
 Power Platform is implementing a cleanup process for default environments that meet the following criteria:
 
-- Environments with no flows and no [premium licenses](pricing-billing-skus.md) are included in the cleanup.
-- Admins receive two warning notifications before the default environment are deleted due to inactivity.
+- Environments with [premium licenses](pricing-billing-skus.md) aren't included in the cleanup.
+- Environments with Microsoft 365 agents or planner activity aren't included in the cleanup.
+- Environments with flows aren't cleaned up until they have a year of inactivity, to allow for annual and seasonal activity.
+- Admins receive two warning notifications before the default environment is deleted due to inactivity.
 - Any activity within 30 days of the notification resets the inactivity period.
 - Inactive environments are deleted after 30 days of inactivity notification. 
 
