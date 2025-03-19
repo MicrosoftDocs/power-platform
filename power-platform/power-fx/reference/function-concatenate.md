@@ -93,7 +93,7 @@ For these examples, set the **Text** property of a label to a formula from the f
 
 | Formula | Description | Result |
 | --- | --- | --- |
-| **Concat( Products, Name, ", " )** | Evaluates the expression **Name** for each record of **Products** and concatenates the results together into a single text string separated by **", "**. | "'Violin',&nbsp;'Cello',&nbsp;'Trumpet'" |
+| **Concat( Products, Name, ", " )** | Evaluates the expression **Name** for each record of **Products** and concatenates the results together into a single text string separated by **", "**. | "Violin,&nbsp;Cello,&nbsp;Trumpet" |
 | **Concat( Products, "'" & Name & "'", ", " )** | Evaluates the expression **"'" & Name & "'"** for each record of **Products** and concatenates the results together into a single text string separated by **", "**. | "'Violin',&nbsp;'Cello',&nbsp;'Trumpet'" |
 | **Concat( Filter(&nbsp;Products,&nbsp;Type&nbsp;=&nbsp;"String"&nbsp;), Name, ", " )** | Evaluates the formula **Name** for each record of **Products** that satisfies the filter **Type = "String"**, and concatenates the results into a single text string separated by **", "**. | "Violin,&nbsp;Cello" |
 
