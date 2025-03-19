@@ -94,6 +94,18 @@ An example using POST:
   }
   ```
 
+An example using the Client WebAPI:
+
+```JavaScript
+Xrm.WebApi.createRecord("managedidentities", {
+  "applicationid": "<appId>",
+  "managedidentityid": "<newGuid>",
+  "credentialsource": 2,
+  "subjectscope": 1,
+  "tenantid": "<tenantId>"
+})
+```
+
 ### Add record in SharePoint Managed Identities table
 
 Insert a row into the `sharepointmanagedidentity` table using values from the following table.
@@ -119,6 +131,18 @@ An example using POST:
   "ManagedIdentityId@odata.bind": "/managedidentities(<managedIdentityId>)"
   }
   ```
+
+An example using the Client WebAPI:
+
+```JavaScript
+Xrm.WebApi.createRecord("sharepointmanagedidentities", {
+  "sharepointmanagedidentityid": "<newGuid>",
+  "uniquename": "msft_ppmiforsharepointauth",
+  "name": "Managed Identity For SharePoint Auth",
+  "ManagedIdentityId@odata.bind": "/managedidentities(<managedIdentityId>)"
+})
+```
+
 
 ## Create federated credential
 
