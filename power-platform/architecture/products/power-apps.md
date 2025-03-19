@@ -1,7 +1,7 @@
 ---
 title: Microsoft Power Apps architectures and solution ideas
 description: Learn about Microsoft Power Apps architectures and solution ideas
-author: mapichle
+author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: architecture-center
