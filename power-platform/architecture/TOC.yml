@@ -8,27 +8,27 @@
     - name: Architecture key concepts
       items:
       - name: Overview
-        href: fundamentals/fundamentals-overview.md
+        href: key concepts/fundamentals-overview.md
       - name: ExpressRoute and Power Platform
         items:
           - name: Overview
-            href: fundamentals/expressroute/overview.md
+            href: key concepts/expressroute/overview.md
           - name: Benefits of using ExpressRoute
-            href: fundamentals/expressroute/benefits.md
+            href: key concepts/expressroute/benefits.md
           - name: How ExpressRoute works
-            href: fundamentals/expressroute/how-expressroute-works.md
+            href: key concepts/expressroute/how-expressroute-works.md
           - name: Before you use ExpressRoute
-            href: fundamentals/expressroute/things-to-consider.md
+            href: key concepts/expressroute/things-to-consider.md
           - name: Understand Microsoft Power Platform architecture
-            href: fundamentals/expressroute/understanding-architecture.md
+            href: key concepts/expressroute/understanding-architecture.md
           - name: Plan an ExpressRoute deployment
-            href: fundamentals/expressroute/planning-expressroute.md
+            href: key concepts/expressroute/planning-expressroute.md
           - name: Set up ExpressRoute for Microsoft Power Platform
-            href: fundamentals/expressroute/setup.md
+            href: key concepts/expressroute/setup.md
           - name: ExpressRoute readiness checklist
-            href: fundamentals/expressroute/checklist.md
+            href: key concepts/expressroute/checklist.md
       - name: Dataverse auditing
-        href: fundamentals/dataverse-auditing.md
+        href: key concepts/dataverse-auditing.md
     - name: Reference architectures
       items:
       - name: Overview
