@@ -72,6 +72,63 @@ productDirectory:
 additionalContent:
   # Supports up to 3 sections
   sections:
+    - title: Related guidance centers
+      summary: Guidance information focused on individual Power Platform components # < 160 chars (optional)
+      items:
+        # Cards with links style
+        # Card
+        - title: Power Apps guidance
+          links:
+            - text: Power Apps patterns
+              url: /power-apps/guidance/patterns/overview
+            - text: Planning a Power Apps project
+              url: /power-apps/guidance/planning/introduction
+            - text: Collaborating and co-developing apps
+              url: /power-apps/guidance/co-develop/overview
+            - text: More...
+              url: /power-apps/guidance
+        # Card
+        - title: Power Automate guidance
+          links:
+            - text: Planning a Power Automate project
+              url: /power-automate/guidance/planning/introduction
+            - text: RPA with SAP
+              url: /power-automate/guidance/rpa-sap-playbook/introduction
+            - text: Automation Kit
+              url: /power-automate/guidance/automation-kit/overview/introduction
+            - text: More...
+              url: /power-automate/guidance
+        # Card
+        - title: Power BI guidance
+          links:
+            - text: Migrate to Power BI
+              url: /power-bi/guidance/powerbi-migration-overview
+            - text: Power BI adoption roadmap
+              url: /power-bi/guidance/powerbi-adoption-roadmap-overview
+            - text: Power BI implementation planning
+              url: /power-bi/guidance/powerbi-implementation-planning-introduction
+            - text: More...
+              url: /power-bi/guidance
+        # Card
+        - title: Power Pages guidance
+          links:
+            - text: Architecture white paper
+              url: /power-pages/guidance/white-papers/architecture
+            - text: Security white paper
+              url: /power-pages/guidance/white-papers/security
+            - text: More...
+              url: /power-pages/guidance
+        # Card
+        - title: Microsoft Copilot Studio guidance
+          links:
+            - text: Topics best practices
+              url: /power-virtual-agents/guidance/topics-overview
+            - text: Trigger phrases best practices
+              url: /power-virtual-agents/guidance/trigger-phrases-best-practices
+            - text: Measuring chatbot engagement
+              url: /power-virtual-agents/guidance/measuring-engagement
+            - text: More...
+              url: /power-virtual-agents/guidance
     - title: Build your skills with Microsoft Learn training
       summary: Build your skills with Microsoft Learn training
       items:

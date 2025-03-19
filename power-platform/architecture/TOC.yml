@@ -69,7 +69,10 @@
           href: products/power-pages.md
     - name: Power Platform icons
       href: /power-platform/guidance/icons?toc=/power-platform/architecture/toc.json&bc=/power-platform/architecture/breadcrumb/toc.json
-    - name: Microsoft Power Platform Well-Architected
+    - name: Power Platform Well-Architected
       href: /power-platform/well-architected
-    - name: Microsoft Power Platform adoption guidance
-      href: /power-platform/guidance
+    - name: Power Platform for developers
+      href: /power-platform/developer/get-started
+    - name: Application lifecycle management with Microsoft Power Platform
+      href: /power-platform/alm/
+
