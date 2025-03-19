@@ -34,17 +34,15 @@ productDirectory:
   title: Architecting workloads on Power Platform and Copilot Studio
   items:
     # Card
-    - title: Architecture fundamentals
+    - title: Architecture key concepts
       imageSrc: /office/media/icons/walkthrough-map.png
       links:
-      - text: Automated Testing 
-        url: fundamentals/testing.md
-      - text: Distributed Tracing
-        url: fundamentals/open-telemetry.md
-      - text: Building Fluent UI Power Apps
-        url: fundamentals/building-fluent-apps.md
-      - text: ALM pipelines with automated quality gates
-        url: fundamentals/alm-with-quality-gates.md.md    # Card
+      - text: Auditing in Dataverse
+        url: fundamentals/dataverse-auditing.md.md
+      - text: ExpressRoute and Power Platform
+        url: fundamentals/expressroute/overview.md
+      - text: More...
+        url: fundamentals/fundamentals-overview.md    # Card
     - title: Reference architectures
       imageSrc: /office/media/icons/blocks.png
       links:
@@ -68,83 +66,6 @@ productDirectory:
           url: solution-ideas/app-evvie.md
         - text: More...
           url: solution-ideas/solution-idea-overview.md
-
-# conceptualContent section (optional)
-conceptualContent:
-# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
-  sections:  
-  - title: Technology areas # < 60 chars (optional)
-    summary: Explore architectures and guides for different areas within Power Platform. # < 160 chars (optional)
-    items:
-      - title: Well-architected guidance
-        links:
-          - url: /power-platform/well-architected/
-            text: Guiding tenets for your architecture
-            itemType: how-to-guide
-          - url: /assessments/689fd8d9-1000-4cbb-8096-a6c8f3294fc7/
-            text: Examine your workload
-            itemType: how-to-guide
-          - url: /power-platform/well-architected/reliability/principles
-            text: Increase reliability
-            itemType: how-to-guide
-          - url: /power-platform/well-architected/performance-efficiency/principles
-            text: Improve performance
-            itemType: how-to-guide
-          - url: /power-platform/well-architected/security/principles
-            text: Secure your workload
-            itemType: how-to-guide
-          - url: /power-platform/well-architected/experience-optimization/principles
-            text: Create meaningful and useful experiences
-            itemType: how-to-guide
-      - title: AI & Copilot Studio
-        links:
-        - text: Topic authoring best practices in Copilot Studio
-          url: /microsoft-copilot-studio/guidance/topic-authoring-best-practices
-          itemType: how-to-guide
-        - text: Optimizing trigger phrases and natural language understanding
-          url: /microsoft-copilot-studio/guidance/trigger-phrases-best-practices
-          itemType: how-to-guide
-        - text: Entities and slot filling best practices
-          url: /microsoft-copilot-studio/guidance/slot-filling-best-practices
-          itemType: how-to-guide
-      - title: Power Apps
-        links:
-          - text: Coding standards guidelines
-            itemType: how-to-guide
-            url: /power-apps/guidance/coding-guidelines/overview
-          - text: Build large and complex canvas apps
-            itemType: how-to-guide
-            url: /power-apps/maker/canvas-apps/working-with-large-apps
-          - text: Optimize app or page load for peak performance
-            itemType: how-to-guide
-            url: /power-apps/maker/canvas-apps/fast-app-page-load
-          - text: Optimized query data patterns
-            itemType: how-to-guide
-            url: /power-apps/maker/canvas-apps/optimized-query-data-patterns
-          - text: Small data payloads
-            itemType: how-to-guide
-            url: /power-apps/maker/canvas-apps/small-data-payloads
-          - text: Fast calculations
-            itemType: how-to-guide
-            url: /power-apps/maker/canvas-apps/efficient-calculations
-      - title: Power Automate
-        links:
-          - url: /power-automate/guidance/business-approvals-templates/introduction
-            itemType: reference
-            text: Business approvals templates
-      - title: SAP
-        links:
-          - text: Robotic Process Automation with SAP
-            url: /power-automate/guidance/rpa-sap-playbook/introduction
-            itemType: reference
-      - title: SQL
-        links:
-          - text: Use Microsoft SQL Server securely with Power Apps
-            itemType: how-to-guide
-            url: /power-apps/maker/canvas-apps/connections/sql-server-security
-          - text: Connect to SQL Server from Power Apps
-            itemType: how-to-guide
-            url: /power-apps/maker/canvas-apps/connections/connection-azure-sqldatabase
 
 # additionalContent section (optional)
 # Card with summary style

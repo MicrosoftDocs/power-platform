@@ -5,7 +5,7 @@
       href: architecture-center-overview.md
     - name: What's new
       href: whats-new.md
-    - name:  key concepts
+    - name: Architecture key concepts
       items:
       - name: Overview
         href: fundamentals/fundamentals-overview.md
@@ -29,8 +29,6 @@
             href: fundamentals/expressroute/checklist.md
       - name: Dataverse auditing
         href: fundamentals/dataverse-auditing.md
-      - name: Automated testing 
-        href: fundamentals/testing.md
     - name: Reference architectures
       items:
       - name: Overview
@@ -47,7 +45,7 @@
         href: reference-architectures/dataverse-background-operations.md
       - name: Secure Power Platform access to Azure resources
         href: reference-architectures/secure-access-azure-resources.md
-      - name: SAP and Power Platform solution
+      - name: Integrate Power Platform with SAP
         href: reference-architectures/arch-pattern-sap.md
     - name: Solution ideas
       items:

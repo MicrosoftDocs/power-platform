@@ -1,12 +1,12 @@
 ---
 title: Microsoft Power Apps architectures and solution ideas
-description: Find out what's new in Power Platform Architecture Center.
+description: Learn about Microsoft Power Apps architectures and solution ideas
 author: mapichle
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: power-platform-architecture
 ms.topic: conceptual
-ms.date: 02/28/2025
+ms.date: 04/22/2025
 ---
 
 # Power Apps reference architectures and solution ideas
@@ -16,42 +16,45 @@ By understanding reference architectures and exploring solution ideas, you can u
 
 In this article, we will look at:
 
-- **Reference architectures**: Explore foundational reference architectures that support building well-architected solutions with Power Apps, including best practices for scalability, security, and performance.
+- **Key concepts:** Learn about architecture key concepts that will help you build robust, efficient, and maintenable solutions with Power Apps.
+- **Reference architectures**: Explore foundational reference architectures that support building well-architected solutions with Power Apps.
 - **Solution Ideas**: Discover a range of solution ideas that demonstrate the versatility and power of Power Apps.
+
+## Key concepts
+
+| Title | Description |
+| --- | --- |
+| **[Coding guidelines](/power-apps/guidance/coding-guidelines/overview)** | Learn about standards for naming objects, collections, and variables, and guidelines for developing consistent, performant, and easily maintainable apps. |
+| **[Build large and complex canvas apps](/power-apps/maker/canvas-apps/working-with-large-apps)** | | 
+| **[Optimize app or page load for peak performance](/power-apps/maker/canvas-apps/fast-app-page-load)** | | 
+| **[Optimized query data patterns](/power-apps/maker/canvas-apps/optimized-query-data-patterns)** | | 
+| **[Small data payloads](/power-apps/maker/canvas-apps/small-data-payloads)** | | 
+| **[Fast calculations](/power-apps/maker/canvas-apps/efficient-calculations)** | | 
+| **[Troubleshoot Power Apps canvas app performance issues](/troubleshoot/power-platform/power-apps/canvas-app-performance/troubleshoot-perf-table)** | Identify common performance issues you might encounter while using a canvas app, along with likely causes and recommendations. |
+| **[Understand canvas app execution phases, data call flow, and performance monitoring](/power-apps/maker/canvas-apps/execution-phases-data-flow)** | 
+| **[Use Microsoft SQL Server securely with Power Apps](/power-apps/maker/canvas-apps/connections/sql-server-security)** | 
+| **[Connect to SQL Server from Power Apps](/power-apps/maker/canvas-apps/connections/connection-azure-sqldatabase)** | 
 
 ## Reference architectures
 
-:::row:::
-   :::column span="":::
-     **[Predictive data analysis with Dataverse, Fabric, and Azure AI](../reference-architectures/ai-predictive-data-analysis.md)**
-    :::image type="content" source="../media/image4.png" alt-text="Predictive data analysis with Dataverse, Fabric, and Azure AI architecture diagram":::
-   :::column-end:::
-   :::column span="":::
-     **[Document processing with AI builder](../reference-architectures/ai-document-processing.md)**
-    :::image type="content" source="../media/image1.png" alt-text="Document processing with AI builder architecture diagram":::
-   :::column-end:::
-:::row-end:::
+| Title | Description |
+| --- | --- |
+| **[Distributed tracing across multiple services](../reference-architectures/distributed-tracing.md)** | Learn how to achieve comprehensive observability across multiple services, including those within Power Platform, Azure, and Dynamics 365. |
+| **[Document processing with AI Builder](../reference-architectures/ai-document-processing.md)** | Streamline document processing and automate data extraction from various documents such as forms, invoices, and purchase orders |
+| **[Legacy data integration](../reference-architectures/app-legacy-data-integration.md)** | Streamline the process of integrating legacy data with modern platforms. |
+| **[​Integrate Microsoft Fabric Lakehouse data using Microsoft Dataverse virtual tables](../reference-architectures/app-integrate-lakehouse.md)** | Gather data from multiple internal systems into a Microsoft Fabric Lakehouse, and consume the data in Power Platform apps and automations using Dataverse virtual tables. |
+| **[Integrating Microsoft Power Platform with SAP](../reference-architectures/arch-pattern-sap.md)** | Learn about the architecture, workflows, and connectivity methods available to integrate Power Platform with SAP to ensure a smooth integration process. |
+| **[Dataverse background operations](../reference-architectures/dataverse-background-operations.md)** | Use custom APIs to define custom messages and implement business logic through plug-ins, allowing for background processing that eliminates the need for a persistent connection during execution. |
+| **[Integrating Microsoft Power Platform with SAP](../reference-architectures/arch-pattern-sap.md)** | Connect Microsoft Power Platform with SAP to enhance data management and automation capabilities within your organization. |
 
 ## Solution ideas
 
-:::row:::
-   :::column span="":::
-     **[Healthcare patient support agent](../solution-ideas/agent-healthcare-patient-support.md)**
-    :::image type="content" source="../media/image5.png" alt-text="Healthcare patient support agent architecture diagram":::
-   :::column-end:::
-   :::column span="":::
-     **[Property rental portal with AI-driven search agent and payment processing](../solution-ideas/agent-rental-portal.md)**
-    :::image type="content" source="../media/image6.png" alt-text="Document processing with AI builder architecture diagram":::
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-     **[Enterprise Visual Vehicle Inspection Engine](../solution-ideas/app-evvie.md)**
-    :::image type="content" source="../media/image2.png" alt-text="Enterprise Visual Vehicle Inspection Engine architecture diagram":::
-   :::column-end:::
-   :::column span="":::
-   :::column-end:::
-:::row-end:::
+| Title | Description |
+| --- | --- |
+| **[Healthcare Patient Support Agent architecture](../solution-ideas/agent-healthcare-patient-support.md)** | Streamline patient interactions and reduce administrative burdens for healthcare providers |
+| **[Property rental portal with AI-driven search and payment processing](../solution-ideas/agent-rental-portal.md)** | Build a comprehensive rental portal that uses AI-driven search capabilities and seamless payment processing. |
 
 ## Resources
 
+- [Power Apps documentation](/power-apps/)
+- [Power Apps guidance](/power-apps/guidance/)

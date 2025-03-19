@@ -22,5 +22,3 @@ Architecture fundamentals are the foundational principles and recommendations th
 | --- | --- |
 | **[Dataverse auditing](dataverse-auditing.md)** | Track and record changes to data, user activities, and system events using Dataverse auditing.|
 | **[ExpressRoute and Power Platform](expressroute/overview.md)** | Learn how to use Microsoft Azure ExpressRoute to to connect your on-premises network to Microsoft cloud services by using private connectivity. |
-| **Solution design considerations for Power Pages** | |
-| **Automated Testing** | |

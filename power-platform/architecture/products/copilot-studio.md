@@ -1,12 +1,12 @@
 ---
 title: Microsoft Copilot Studio architectures and solution ideas
-description: Find out what's new in Power Platform Architecture Center.
+description: Learn about Microsoft Copilot Studio architectures and solution ideas
 author: mapichle
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: power-platform-architecture
 ms.topic: conceptual
-ms.date: 02/28/2025
+ms.date: 04/22/2025
 ---
 
 # Microsoft Copilot Studio reference architectures and solution ideas
@@ -15,8 +15,21 @@ Microsoft Copilot Studio is a graphical, low-code tool for both creating an agen
 
 In this article, we will look at:
 
+- **Key concepts:** Learn about architecture key concepts that will help you build robust, efficient, and maintenable solutions with Copilot Studio.
 - **Reference architectures**: Explore foundational reference architectures that support building well-architected solutions with Copilot Studio, including best practices for scalability, security, and performance.
 - **Solution Ideas**: Discover a range of solution ideas that demonstrate the versatility and power of Copilot Studio.
+
+## Key concepts
+
+| Title | Description |
+| --- | --- |
+| [Topic authoring best practices in Copilot Studio](/microsoft-copilot-studio/guidance/topic-authoring-best-practices) | Learn how to reate and organize topics in a way that's manageable and maintainable for your context |
+| [Using Adaptive Cards in Copilot Studio](/microsoft-copilot-studio/guidance/adaptive-cards-overview) | Learn how to use adaptive cards in Copilot Studio to validate information from the customer, to ask questions, or simply to enhance the conversation experience.  |
+| [Pass context variables from webpage to an agent](/microsoft-copilot-studio/guidance/pass-context-variables-from-webpage-to-copilot) | Learn how to pass context variables from your webpage to the agent. |
+| [Generative AI strategies for math and data queries](/microsoft-copilot-studio/guidance/generative-ai-math-data-queries) | Identify strategies and set expectations when building agents in Copilot Studio that handle math and data queries. |
+| [Generative answers based on public websites](/microsoft-copilot-studio/guidance/generative-ai-public-websites) | Learn more about architecture when public websites or Bing Custom Search are used as a knowledge source in Copilot Studio. |
+| [Guidance for using instructions in generative mode](/microsoft-copilot-studio/guidance/generative-mode-guidance) | Learn how to write the best instructions for your agent when your agent is using generative orchestration. |
+| [Conversational experiences](/microsoft-copilot-studio/guidance/cux-overview)| Design ideal conversational user experiences. |
 
 ## Reference architectures
 
@@ -28,16 +41,10 @@ In this article, we will look at:
 
 ## Solution ideas
 
-:::row:::
-   :::column span="":::
-     **[Healthcare patient support agent](../solution-ideas/agent-healthcare-patient-support.md)**
-    :::image type="content" source="../media/image5.png" alt-text="Healthcare patient support agent architecture diagram":::
-   :::column-end:::
-   :::column span="":::
-     **[Property rental portal with AI-driven search agent and payment processing](../solution-ideas/agent-rental-portal.md)**
-    :::image type="content" source="../media/image6.png" alt-text="Property rental portal with AI-driven search agent and payment processing architecture diagram":::
-   :::column-end:::
-:::row-end:::
+| Title | Description |
+| --- | --- |
+| **[Healthcare Patient Support Agent architecture](../solution-ideas/agent-healthcare-patient-support.md)** | Streamline patient interactions and reduce administrative burdens for healthcare providers |
+| **[Property rental portal with AI-driven search and payment processing](../solution-ideas/agent-rental-portal.md)** | Build a comprehensive rental portal that uses AI-driven search capabilities and seamless payment processing. |
 
 ## Resources
 
