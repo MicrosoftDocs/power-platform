@@ -59,3 +59,5 @@ In this article, we will look at:
 
 - [Power Apps documentation](/power-apps/)
 - [Power Apps guidance](/power-apps/guidance/)
+- [Power Platform for developers](/power-platform/developer/get-started)
+- [Application lifecycle management with Microsoft Power Platform](/power-platform/alm/)

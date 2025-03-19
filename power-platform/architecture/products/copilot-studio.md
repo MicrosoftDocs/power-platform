@@ -44,3 +44,5 @@ In this article, we will look at:
 - [Copilot Studio guidance](/microsoft-copilot-studio/guidance/)
 - [Copilot Studio implemnentation guide](https://aka.ms/CopilotStudioImplementationGuide)
 - [Copilot Studio resources](https://aka.ms/CopilotStudio/resources)
+- [Power Platform for developers](/power-platform/developer/get-started)
+- [Application lifecycle management with Microsoft Power Platform](/power-platform/alm/)

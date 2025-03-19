@@ -51,3 +51,5 @@ In this article, we will look at:
 
 - [Power Automate documentation](/power-automate/)
 - [Power Automate guidance](/power-automate/guidance/)
+- [Power Platform for developers](/power-platform/developer/get-started)
+- [Application lifecycle management with Microsoft Power Platform](/power-platform/alm/)

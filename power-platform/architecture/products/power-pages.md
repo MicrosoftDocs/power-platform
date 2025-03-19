@@ -47,3 +47,5 @@ In this article, we will look at:
 
 - [Power Pages documentation](/power-pages/)
 - [Power Pages guidance](/power-pages/guidance/)
+- [Power Platform for developers](/power-platform/developer/get-started)
+- [Application lifecycle management with Microsoft Power Platform](/power-platform/alm/)
