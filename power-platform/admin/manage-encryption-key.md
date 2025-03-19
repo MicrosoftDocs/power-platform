@@ -15,6 +15,10 @@ contributors:
 - paulliew
 - MSFTSimranKaur 
 ---
+
+<!-- In line 44, should Cosmos instead be Azure Cosmos DB? Here's a style guide entry: https://learn.microsoft.com/en-us/product-style-guide-msft-internal/a_z_names_terms/a/azure-cosmos-db -->
+
+
 # Manage the encryption key 
 
 [!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
@@ -36,21 +40,25 @@ Encryption key management is only applicable to Azure SQL environment databases.
  
 > [!NOTE] 
 > - The self-managed database encryption key feature must be turned on by Microsoft for your tenant before you can use the feature.  
-> - To use the data encryption management features for an environment, the environment must be created *after* the self-manage the database encryption key feature is turned on by Microsoft.
-> - After the feature is turned on in your tenant, all new environments are created with Azure SQL storage only. These environments, regardless of whether they're encrypted with bring-your-own-key (BYOK) or a Microsoft-managed key, have restrictions with file upload size, can't use Cosmos and Datalake services, and Dataverse Search indexes are encrypted with a Microsoft-managed key. To use these services, you must [migrate to customer-managed key](cmk-migrate-from-byok.md).
-> - [Files](/powerapps/developer/data-platform/file-attributes) and [Images](/powerapps/developer/data-platform/image-attributes) with sizes less than 128 MB can be used if your environment is version 9.2.21052.00103 or higher.
-> - Most existing environments have file and log stored in non-Azure SQL databases. These environments can't be opted in to the self-managed encryption key. Only new environments (once you signed up for this program) can be enabled with self-managed encryption key.
+> - To use the data encryption management features for an environment, the environment must be created *after* the self-managed database encryption key feature is turned on by Microsoft.
+> - After the feature is turned on in your tenant, all new environments are created with Azure SQL storage only. These environments, regardless of whether they're encrypted with bring-your-own-key (BYOK) or a Microsoft-managed key, have restrictions with file upload size, can't use Cosmos and data lake services, and Dataverse search indexes are encrypted with a Microsoft-managed key. To use these services, you must [migrate to a customer-managed key](cmk-migrate-from-byok.md).
+> - [Files](/powerapps/developer/data-platform/file-attributes) and [Images](/powerapps/developer/data-platform/image-attributes) with sizes of less than 128 MB can be used if your environment is version 9.2.21052.00103 or higher.
+> - Most existing environments have file and log stored in non-Azure SQL databases. These environments can't be opted in to the self-managed encryption key. Only new environments (once you sign up for this program) can be enabled with a self-managed encryption key.
 
 
 <a name="KM_tasks"></a>   
 ## Introduction to key management  
- With key management, administrators can provide their own encryption key or have an encryption key generated for them, which is used to protect the database for an environment.  
+With key management, administrators can provide their own encryption key or have an encryption key generated for them, which is used to protect the database for an environment.  
+
+
+
+
   
- The key management feature supports both PFX and BYOK encryption key files, such as those stored in a hardware security module (HSM). To use the upload encryption key option, you need both the public and private encryption key.  
+The key management feature supports both PFX and BYOK encryption key files, such as those stored in a hardware security module (HSM). To use the upload encryption key option, you need both the public and private encryption key.  
   
- The key management feature takes the complexity out of encryption key management by using [!INCLUDE[pn_azure_key_vault](../includes/pn-azure-key-vault.md)] to securely store encryption keys. [!INCLUDE[pn_azure_key_vault](../includes/pn-azure-key-vault.md)] helps safeguard cryptographic keys and secrets used by cloud applications and services. The key management feature doesn't require that you have an [!INCLUDE[pn_azure_key_vault](../includes/pn-azure-key-vault.md)] subscription and for most situations there's no need to access encryption keys used for Dataverse within the vault.  
+The key management feature takes the complexity out of encryption key management by using [!INCLUDE[pn_azure_key_vault](../includes/pn-azure-key-vault.md)] to securely store encryption keys. [!INCLUDE[pn_azure_key_vault](../includes/pn-azure-key-vault.md)] helps safeguard cryptographic keys and secrets used by cloud applications and services. The key management feature doesn't require that you have an [!INCLUDE[pn_azure_key_vault](../includes/pn-azure-key-vault.md)] subscription and for most situations there's no need to access encryption keys used for Dataverse within the vault.  
   
- The managed keys feature lets you perform the following tasks.  
+The managed keys feature lets you perform the following tasks.  
   
 - Enable the ability to self-manage database encryption keys that are associated with environments.  
   
