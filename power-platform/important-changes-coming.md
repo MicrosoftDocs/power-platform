@@ -122,7 +122,7 @@ To ensure the security and integrity of your system and data, we encourage custo
 
 Support for app-only tokens by multitenant apps that don't have a service principal ID in the Target Tenant will be removed by October 2024.
 
-## Hierarchy control in model-driven apps is deprecated
+## Deprecation of hierarchy control in model-driven apps
 
 Effective October 2024, the hierarchy control, which is used to define and query hierarchically related data in model-driven apps, is deprecated. The control will continue to work in existing apps until October 2025, at which time it will be removed from the product.
 
@@ -144,11 +144,11 @@ This feature will be fully removed October 2025.
 
 If the hierarchy view is essential to your app, a custom PCF control that handles the hierarchy view must be created and deployed. For information about how to create a code component, go to [Create and build a code component](/power-apps/developer/component-framework/create-custom-controls-using-pcf).
 
-## Schema for DLP activity logging
+## Deprecation of schema for DLP activity logging
 
 The schema DLP activity logging is deprecated and won't be available starting in July 2024. You can use the new schema available at [Activity category: Data policy events](admin/admin-activity-logging.md#activity-category-data-policy-events).
 
-## Schema for Lockbox audit events
+## Deprecation of schema for Lockbox audit events
 
 The schema for Lockbox audit events is deprecated and won't be available starting in July 2024. You can audit Customer Lockbox events using the new schema available at [Activity category: Lockbox operations](admin/admin-activity-logging.md#activity-category-lockbox-operations).
 
