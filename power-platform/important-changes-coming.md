@@ -97,7 +97,7 @@ The Organization Insights dashboard has been deprecated from the Microsoft Power
 
 As part of a service update to enhance security in Power Apps, we're removing Highcharts version 4.2.3.
 
-## Deprecating support for multitenant apps without a service principal in the Microsoft Entra ID tenant 
+## Deprecation of support for multitenant apps without a service principal in the Microsoft Entra ID tenant 
 
 To boost security and system performance, we are updating authentication protocols for multitenant apps in the Dataverse platform. Starting October 2024, app-only tokens for apps without a service principal in the target tenant aren't supported. This change is essential for mitigating vulnerabilities and safeguarding your data from potential threats. 
 
@@ -195,7 +195,7 @@ Admins can turn the **Switch to classic** option back on in the Power Platform a
 
 Effective April 2024, Dynamics 365 for phones and tablets (iOS and Android) are deprecated for online users. Online users must [migrate to the Power Apps mobile app](/dynamics365/mobile-app/migration). The Power Apps mobile app provides updated capabilities, a modern user experience, and fast load times.
 
-## Deprecating support of unregistered MSA and External Microsoft Entra users in Dataverse
+## Deprecation of support of unregistered MSA and External Microsoft Entra users in Dataverse
 
 As part of our ongoing efforts to enhance the security and performance of Dataverse platform, we're announcing deprecation of support to unregistered MSA and externals Microsoft Entra users in Dataverse due to its relative obscurity and complexity associated with this feature in authorization scenario.
 
