@@ -36,4 +36,13 @@ The result has the same sign as the divisor.
 - _Number_ - Required. Number to divide.
 - _Divisor_ - Required. Number to divide by.
 
+## Examples
+
+| Formula | Description | Result |
+| --- | --- | --- |
+| **Mod(25, 4)** | The number that remains after dividing 25 by 4 | 1 |
+| **Mod(25, -4)** | The number that remains after dividing 25 by -4 | -3 |
+| **Mod(-25, -4)** | The number that remains after dividing -25 by -4 | -1 |
+| **Mod(-25, 4)** | The number that remains after dividing -25 by 4 | 3 |
+
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
