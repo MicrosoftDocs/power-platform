@@ -17,6 +17,8 @@ search.audienceType:
 ---
 # Column-level security to control access 
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 Record-level permissions are granted at the table level, but you might have certain columns associated with a table that contain data that is more sensitive than the other columns. For these situations, you use _column-level security_ to control access to specific columns.  
   
  The scope of column-level security is organization-wide and applies to all data access requests, including the following requests and calls:  

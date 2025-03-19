@@ -13,6 +13,8 @@ ms.custom: bap-template
 
 # Manage privacy and security settings
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 Use these settings to customize the privacy and security of the Dataverse environments that are associated with Dynamics 365 Sales, Customer Service, Field Service, Marketing, and Project Service Automation.
 
 You need to have the System Administrator or System Customizer security role or equivalent permissions to change an environment's privacy and security settings.

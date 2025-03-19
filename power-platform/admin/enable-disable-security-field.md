@@ -14,6 +14,8 @@ search.audienceType:
 ---
 # Enable or disable security for a column to control access
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 Column-level security lets you set which columns users can see or edit. For example, if want to prevent users from accidentally changing an account name, you can restrict them from editing that column. You can set column-level security for custom columns and some default columns. More information: [Column-level security](field-level-security.md)  
   
  To set which users and teams have read or write access to column, see [Set up security permissions for a column](set-up-security-permissions-field.md).  

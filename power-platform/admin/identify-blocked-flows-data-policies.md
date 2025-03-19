@@ -3,7 +3,7 @@ title: Identify blocked Power Automate flows from data policies
 description: Quickly identify flows impacted by data policies.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/05/2025
+ms.date: 03/12/2025
 ms.subservice: admin
 author: laneswenka
 ms.author: laswenka
@@ -19,6 +19,8 @@ search.app:
 ---
 
 # Identify blocked Power Automate flows from data policies
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 As new capabilities become available, such as the inclusion of triggers as part of [connector action control](./connector-action-control.md), it can become critical to quickly identify flows which are in violation of existing data policies.  The following scripts help you identify and provide an inventory of these flows for review, and can help you update your policies if you wish for the flows to not fail at runtime.
 
 ## Inventory flows with blocked triggers
@@ -71,8 +73,12 @@ Write-Host "Fetching all DLP policies in the tenant..." -ForegroundColor Cyan
 
 try {
     # Fetch all DLP policies
-    #$dlpPolicies = Get-AdminDlpPolicy
+    $dlpPolicies = Get-AdminDlpPolicy
     $totalPolicies = $dlpPolicies.Count
+    if($totalPolicies -eq $null)
+    {
+        $totalPolicies = 1
+    }
 
     Write-Host "Done. Fetching all Environments in the tenant..." -ForegroundColor Cyan
     $allEnvironments = Get-AdminPowerAppEnvironment
@@ -132,9 +138,13 @@ Write-Progress -Activity "Processing Policies" -Status "Processing $policyIndex 
 
         $environmentIndex = 0
         $environmentCount = $environments.Count
+        if($environmentCount -eq $null)
+        {
+            $environmentCount = 1
+        }
         foreach ($environment in $environments) {
             $environmentIndex++
-            Write-Progress -Activity "Processing Environments" -Status "Environment $environmentIndex of $environmentCount" -PercentComplete (($environmentIndex / $environments.Count) * 100)
+            Write-Progress -Activity "Processing Environments" -Status "Environment $environmentIndex of $environmentCount" -PercentComplete (($environmentIndex / $environmentCount) * 100)
 
             $environmentId = if ($environment -is [string]) { $environment } else { $environment.EnvironmentName }
 
@@ -157,9 +167,13 @@ Write-Progress -Activity "Processing Policies" -Status "Processing $policyIndex 
             $flows = $flowsOutput
             $flowIndex = 0
             $flowsCount = $flows.value.Count
+            if($flowsCount -eq $null)
+            {
+                $flowsCount = 1
+            }
             foreach ($flow in $flows.value) {
                 $flowIndex++
-                Write-Progress -Activity "Processing Flows" -Status "Flow $flowIndex of $flowsCount " -PercentComplete (($flowIndex / $flows.value.Count) * 100)
+                Write-Progress -Activity "Processing Flows" -Status "Flow $flowIndex of $flowsCount " -PercentComplete (($flowIndex / $flowsCount) * 100)
 
                 # Check if flow's trigger uses the restricted connector
                 Write-Host "Flow display name: " $flow.properties.displayName 
@@ -204,13 +218,20 @@ Write-Progress -Activity "Processing Policies" -Status "Processing $policyIndex 
 Write-Host "`nResults Summary:" -ForegroundColor Cyan
 $output | Format-Table -AutoSize
 
-# Prompt user to save output as CSV
-$saveCsv = Read-Host "Do you want to save the results to ImpactedFlows.csv? (Y/N)"
-if ($saveCsv -eq 'Y') {
-    $output | Export-Csv -Path "$(Get-Location)\ImpactedFlows.csv" -NoTypeInformation -Force
-    Write-Host "Results saved to ImpactedFlows.csv" -ForegroundColor Green
-} else {
-    Write-Host "Results not saved." -ForegroundColor Yellow
+if($output.Count -gt 0)
+{
+    # Prompt user to save output as CSV
+    $saveCsv = Read-Host "Do you want to save the results to ImpactedFlows.csv? (Y/N)"
+    if ($saveCsv -eq 'Y') {
+        $output | Export-Csv -Path "$(Get-Location)\ImpactedFlows.csv" -NoTypeInformation -Force
+        Write-Host "Results saved to ImpactedFlows.csv" -ForegroundColor Green
+    } else {
+        Write-Host "Results not saved." -ForegroundColor Yellow
+    }
+}
+else
+{
+    Write-Host "No triggers were found in violation of your DLP policies.  Please let Microsoft know via Support Ticket that you would like to be removed from runtime enforcement exclusion for DLP policies."
 }
 
 # Instructions for deep linking
