@@ -4,7 +4,7 @@ description: Learn about Microsoft Power Apps architectures and solution ideas
 author: mapichle
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.subservice: power-platform-architecture
+ms.subservice: architecture-center
 ms.topic: conceptual
 ms.date: 04/22/2025
 ---
@@ -41,11 +41,11 @@ In this article, we will look at:
 | --- | --- |
 | **[Distributed tracing across multiple services](../reference-architectures/distributed-tracing.md)** | Learn how to achieve comprehensive observability across multiple services, including those within Power Platform, Azure, and Dynamics 365. |
 | **[Document processing with AI Builder](../reference-architectures/ai-document-processing.md)** | Streamline document processing and automate data extraction from various documents such as forms, invoices, and purchase orders |
-| **[Legacy data integration](../reference-architectures/app-legacy-data-integration.md)** | Streamline the process of integrating legacy data with modern platforms. |
+| **[Predictive data analysis with Dataverse, Fabric, and Azure AI](../reference-architectures/ai-predictive-data-analysis.md)** | Perform predictive data analysis using Dataverse, Microsoft Fabric, and Azure AI and learn best practices for data ingestion, model training, and visualization, enabling you to build robust predictive models and actionable insights. |
 | **[​Integrate Microsoft Fabric Lakehouse data using Microsoft Dataverse virtual tables](../reference-architectures/app-integrate-lakehouse.md)** | Gather data from multiple internal systems into a Microsoft Fabric Lakehouse, and consume the data in Power Platform apps and automations using Dataverse virtual tables. |
 | **[Integrating Microsoft Power Platform with SAP](../reference-architectures/arch-pattern-sap.md)** | Learn about the architecture, workflows, and connectivity methods available to integrate Power Platform with SAP to ensure a smooth integration process. |
-| **[Dataverse background operations](../reference-architectures/dataverse-background-operations.md)** | Use custom APIs to define custom messages and implement business logic through plug-ins, allowing for background processing that eliminates the need for a persistent connection during execution. |
-| **[Integrating Microsoft Power Platform with SAP](../reference-architectures/arch-pattern-sap.md)** | Connect Microsoft Power Platform with SAP to enhance data management and automation capabilities within your organization. |
+| **[Dataverse background operations](../reference-architectures/dataverse-background-operations.md)** | Us custom APIs to define custom messages and implement business logic through plug-ins, allowing for background processing that eliminates the need for a persistent connection during execution. |
+| **[Secure Power Platform access to Azure resources](../reference-architectures/secure-access-azure-resources.md)** | Use Microsoft Azure Virtual Network support for Power Platform to integrate Power Platform with resources inside your virtual network without exposing them to the public internet. |
 
 ## Solution ideas
 
@@ -53,6 +53,7 @@ In this article, we will look at:
 | --- | --- |
 | **[Healthcare Patient Support Agent architecture](../solution-ideas/agent-healthcare-patient-support.md)** | Streamline patient interactions and reduce administrative burdens for healthcare providers |
 | **[Property rental portal with AI-driven search and payment processing](../solution-ideas/agent-rental-portal.md)** | Build a comprehensive rental portal that uses AI-driven search capabilities and seamless payment processing. |
+| **[Enterprise Visual Vehicle Inspection Engine](../solution-ideas/app-evvie.md)** | Inspect vehicles and assess damage using generative AI and Power Platform. |
 
 ## Resources
 

@@ -4,7 +4,7 @@ description: Learn about Microsoft Power Pages architectures and solution ideas
 author: mapichle
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.subservice: power-platform-architecture
+ms.subservice: architecture-center
 ms.topic: conceptual
 ms.date: 04/22/2025
 ---
@@ -35,13 +35,13 @@ In this article, we will look at:
 
 | Title | Description |
 | --- | --- |
-| **[Distributed tracing across multiple services](distributed-tracing.md)** | Learn how to achieve comprehensive observability across multiple services, including those within Power Platform, Azure, and Dynamics 365. |
+| **[Distributed tracing across multiple services](../reference-architectures/distributed-tracing.md)** | Learn how to achieve comprehensive observability across multiple services, including those within Power Platform, Azure, and Dynamics 365. |
 
 ## Solution ideas
 
 | Title | Description |
 | --- | --- |
-| **[Property rental portal with AI-driven search and payment processing](agent-rental-portal.md)** | Build a comprehensive rental portal that uses AI-driven search capabilities and seamless payment processing. |
+| **[Property rental portal with AI-driven search and payment processing](../solution-ideas/agent-rental-portal.md)** | Build a comprehensive rental portal that uses AI-driven search capabilities and seamless payment processing. |
 
 ## Resources
 

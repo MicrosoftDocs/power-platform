@@ -4,7 +4,7 @@ description: Learn about Microsoft Power Automate architectures and solution ide
 author: mapichle
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.subservice: power-platform-architecture
+ms.subservice: architecture-center
 ms.topic: conceptual
 ms.date: 04/22/2025
 ---

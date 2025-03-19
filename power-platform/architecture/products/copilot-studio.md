@@ -4,7 +4,7 @@ description: Learn about Microsoft Copilot Studio architectures and solution ide
 author: mapichle
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.subservice: power-platform-architecture
+ms.subservice: architecture-center
 ms.topic: conceptual
 ms.date: 04/22/2025
 ---
@@ -30,14 +30,6 @@ In this article, we will look at:
 | [Generative answers based on public websites](/microsoft-copilot-studio/guidance/generative-ai-public-websites) | Learn more about architecture when public websites or Bing Custom Search are used as a knowledge source in Copilot Studio. |
 | [Guidance for using instructions in generative mode](/microsoft-copilot-studio/guidance/generative-mode-guidance) | Learn how to write the best instructions for your agent when your agent is using generative orchestration. |
 | [Conversational experiences](/microsoft-copilot-studio/guidance/cux-overview)| Design ideal conversational user experiences. |
-
-## Reference architectures
-
-| Title | Description |
-| --- | --- |
-| Custom RAG with VNET | .... |
-| IP Firewall | ... |
-| Multi-agent | ... |
 
 ## Solution ideas
 
