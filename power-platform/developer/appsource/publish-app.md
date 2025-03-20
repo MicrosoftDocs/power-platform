@@ -28,7 +28,7 @@ Use the following steps to prepare for submitting your app to be listed on Micro
 
 ## Submit your app on Partner Center
 
-Once your app is ready for submission, you use the [Partner Center](https://partner.microsoft.com/dashboard/commercial-marketplace/overview) to submit your app to be listed on Microsoft AppSource. Access to the Partner Center and related documentation is available only to Microsoft Partner Network members.
+Once your app is ready for submission, use the [Partner Center](https://partner.microsoft.com/dashboard/commercial-marketplace/overview) to submit your app to be listed on Microsoft AppSource. Access to the Partner Center and related documentation is available only to Microsoft Partner Network members.
   
 ## Checklists
 
