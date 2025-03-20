@@ -38,6 +38,32 @@ To restore the environment, please select **Restore or manage** option and then 
 
 # [PowerShell](#tab/PowerShell)
 
+## Backup via PowerShell
+
+Load the PowerShell console and execute the following commands to restore the environment. For more information on how to install and use the PowerShell module, see [Get started with PowerShell for Power Platform Administrators](../powershell-getting-started.md).
+
+```PowerShell
+#Install the module
+Install-Module -Name Microsoft.PowerApps.Administration.PowerShell
+
+# Set variables for your session
+$TenantId = "YOUR_TENANT_GUID_FROM_Microsoft Entra ID"
+$SPNId = "YOUR_AZURE_APPLICATION_REGISTRATION_CLIENT_ID"
+$ClientSecret = "YOUR_AZURE_APPLICATION_CLIENT_SECRET"
+$EnvironmentID = "YOUR_ENVIRONMENT_ID_HERE"
+
+Write-Host "Creating a session against the Power Platform API"
+
+Add-PowerAppsAccount -Endpoint prod -TenantID $TenantId -ApplicationId $SPNId -ClientSecret $ClientSecret
+
+    $backupRequest = \[pscustomobject\]@{
+        Label = "this is a label"
+        Notes = "this is a note"
+    }
+
+Backup-PowerAppEnvironment -EnvironmentName $EnvironmentID -BackupRequestDefinition $backupRequest
+```
+
 ## Restore via PowerShell
 
 Load the PowerShell console and execute the following commands to restore the environment. For more information on how to install and use the PowerShell module, see [Get started with PowerShell for Power Platform Administrators](../powershell-getting-started.md).
