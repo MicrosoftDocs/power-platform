@@ -2,7 +2,7 @@
 title: "Tutorial: Backup and restore unified environment  | Microsoft Docs"
 description: This tutorial demonstrates how to perform environment backup and restore with respect to unified environments.
 author: tapa
-ms.reviewer: manjai
+ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: reference
 ms.date: 03/21/2024
