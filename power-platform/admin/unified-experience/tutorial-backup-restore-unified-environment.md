@@ -1,11 +1,11 @@
 ---
 title: "Tutorial: Backup and restore unified environment  | Microsoft Docs"
-description: This tutorial demonstrates how to perform backup and restore unified environments.
+description: This tutorial demonstrates how to perform environment backup and restore with respect to unified environments.
 author: tapa
-ms.reviewer: sericks
+ms.reviewer: manjai
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 03/18/2024
+ms.date: 03/21/2024
 ms.subservice: admin
 ms.author: tapa
 search.audienceType: 
@@ -16,7 +16,7 @@ search.audienceType:
 
 [!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
-Finance and operations apps have been reimagined as an application hosted by Microsoft Dataverse. A common function for administrators of finance and operations apps is to take backup and restore those backup to unified environments. Historically, this operation has been done in Microsoft Dynamics Lifecycle Services for finance and operations environments, but now for unified environments, everything can be managed in the Power Platform admin center.
+Finance and operations apps have been reimagined as an application hosted by Microsoft Dataverse. A common function for administrators of finance and operations apps is to take backup and restore those backups to unified environments. Historically, this kind of operation has been done in Microsoft Dynamics Lifecycle Services for finance and operations environments, but now for unified environments, everything can be managed in the Power Platform admin center.
 
 In this tutorial, learn how to take backup of an environment and restore to a unified environment.
 
@@ -40,7 +40,7 @@ To restore the environment, please select **Restore or manage** option and then 
 
 ## Backup via PowerShell
 
-Load the PowerShell console and execute the following commands to restore the environment. For more information on how to install and use the PowerShell module, see [Get started with PowerShell for Power Platform Administrators](../powershell-getting-started.md).
+Load the PowerShell console and execute the following commands to backup the environment. For more information on how to install and use the PowerShell module, see [Get started with PowerShell for Power Platform Administrators](../powershell-getting-started.md).
 
 ```PowerShell
 #Install the module
