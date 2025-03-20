@@ -4,7 +4,7 @@ description: Learn how to use Power Platform Advisor to optimize your tenant.
 author: sidhartg
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/25/2025
+ms.date: 03/11/2025
 ms.subservice: admin
 ms.author: sidhartg
 ms.reviewer: sericks
@@ -15,6 +15,8 @@ search.audienceType:
 ---
 
 # Use Power Platform Advisor
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 Power Platform Advisor is your guide to personalized recommendations to optimize your Power Platform tenant. Advisor analyzes all Managed Environments and the apps in these environments within your Power Platform tenant. Advisor offers solutions to enhance security, reliability, and overall health.
 
@@ -204,6 +206,10 @@ This recommendation lists apps that are potentially high-value (used by over 100
 >
 > - Apps should follow application lifecycle management (ALM) best practices. Not following proper ALM could cause a single change to break the app for several users with no easy way to recover.
 > - The new _pipelines_ feature helps citizen developers, without prior ALM experience, to safely deploy their apps and dependent assets to a production environment.
+
+### Power Pages - Review & assign capacity to avoid degraded performance
+
+This recommendation identifies environments where capacity consumption is nearing or exceeding the assigned limits. To prevent performance degradation, review the affected environments and allocate more capacity as needed. Select an environment to [manage and adjust capacity assignments](/power-pages/admin/capacity-management) accordingly.
 
 ### Websites are expiring in the next 7 days
 

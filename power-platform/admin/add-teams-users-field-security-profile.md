@@ -14,6 +14,8 @@ search.audienceType:
 ---
 # Add teams or users to a column security profile to control access
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 Role-based security controls access to a specific table type, row-based security controls access to individual rows, and column-level security controls access to specific columns. You can use a column security profile to manage the permission of users and teams to read, create, or write in secured columns. For example, the System Administrator column security profile gives full access to all secured columns.  
 
 > [!NOTE]

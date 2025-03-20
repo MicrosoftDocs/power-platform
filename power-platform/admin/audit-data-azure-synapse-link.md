@@ -13,6 +13,8 @@ search.audienceType:
 ---
 # Access audit data using Azure Synapse Link for Dataverse and Power BI
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 Customers who use Azure Synapse Link for Dataverse can export audit logs easily to meet the external and internal auditing, compliance, security, and governance policies that are common to many enterprises.
 
 Microsoft Dataverse auditing is supported on all custom and most customizable tables and columns. Audit logs are stored in Dataverse and consume log storage capacity. If you have Azure resources in the same region as the Dataverse environment, you can export audit logs to an Azure storage account using Azure Synapse Link for Dataverse and query the audit logs using Azure Synapse Analytics and Power BI Desktop.

@@ -14,6 +14,8 @@ contributors:
 ---
 # Reset environment 
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 Reset a sandbox environment to delete and reprovision it. Consider a reset when you want to:  
   
 - Create a new project  

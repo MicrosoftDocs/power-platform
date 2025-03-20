@@ -12,6 +12,8 @@ search.audienceType:
 ---
 # Manage Microsoft Dataverse settings
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 You can view and manage the settings for your environments by signing in to the Microsoft [Power Platform admin center](https://admin.powerplatform.microsoft.com), going to the **Environments** page, selecting an environment, and then selecting **Settings**.
 
 Settings for the selected environment can be managed here.
