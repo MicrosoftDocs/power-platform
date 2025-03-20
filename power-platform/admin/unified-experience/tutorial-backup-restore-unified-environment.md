@@ -16,7 +16,7 @@ search.audienceType:
 
 [!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
-Finance and operations apps have been reimagined as an application hosted by Microsoft Dataverse. A common function for administrators of finance and operations apps is to take backup and restore those backups to unified environments. Historically, this kind of operation has been done in Microsoft Dynamics Lifecycle Services for finance and operations environments, but now for unified environments, everything can be managed in the Power Platform admin center.
+Finance and operations apps are reimagined as an application hosted by Microsoft Dataverse. A common function for administrators of finance and operations apps is to take backup and restore those backups to unified environments. Historically, this kind of operation is performed in Microsoft Dynamics Lifecycle Services for finance and operations environments, but now for unified environments, everything can be managed in the Power Platform admin center.
 
 In this tutorial, learn how to take backup of an environment and restore to a unified environment.
 
@@ -33,8 +33,8 @@ Ensure that both the source and target environments are provisioned in the same 
 ## Begin the restore operation
 
 In the Power Platform admin center, go to the source environment you want to take the back up or restore. From there, select the **Backup + Restore** button in the top action pane.  
-To understand the system and manual backups and how to take manual backup please refer to [Back up and restore environments](../backup-restore-environments.md). 
-To restore the environment, please select **Restore or manage** option and then choose the appropriate system or manual backup. Then press continue and select the **Target** environment to be the unified environment.
+To understand the system and manual backups and how to take manual backup, refer to [Back up and restore environments](../backup-restore-environments.md). 
+To restore the environment, select **Restore or manage** option, and then choose the appropriate system or manual backup. Then select the **Target** environment to be the unified environment.
 
 # [PowerShell](#tab/PowerShell)
 
