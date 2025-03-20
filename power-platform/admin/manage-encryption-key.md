@@ -126,15 +126,15 @@ Use this procedure to set the managed key feature the first time for an environm
 6. Select **Next**. 
 
 #### Generate a new key (.pfx)   
-1. Enter a password, and then reenter the password to confirm.
-2. Select **Create**, and then select the created file notification on your browser.
-3. The encryption key .PFX file is downloaded to your web browser's default download folder. Save the file in a secure location (we recommend that this key is backed up along with its password). 
+1. Enter a password and then reenter the password to confirm.
+2. Select **Create** and then select the created file notification on your browser.
+3. The encryption key .pfx file is downloaded to your web browser's default download folder. Save the file in a secure location (we recommend that this key is backed up along with its password). 
 
 #### Upload a key (.pfx or .byok)
-1.    Select **Upload the Key**, select the .pfx or .byok<sup>1</sup> file, and then select **Open**. 
-2.    Enter the password for the key, and then select **Create**.
+1. Select **Upload the Key**, select the .pfx or .byok<sup>1</sup> file, and then select **Open**. 
+2. Enter the password for the key and then select **Create**.
 
-<sup>1</sup> For .byok encryption key files, make sure you use the subscription ID as shown on the screen when you export the encryption key from your local HSM. More information: [How to generate and transfer HSM-protected keys for Azure Key Vault](/azure/key-vault/key-vault-hsm-protected-keys). 
+<sup>1</sup> For .byok encryption key files, make sure you use the subscription ID as shown on the screen when you export the encryption key from your local HSM. More information: [How to generate and transfer HSM-protected keys for Azure Key Vault](/azure/key-vault/key-vault-hsm-protected-keys) 
 
 > [!NOTE]
 > To reduce the number of steps for the administrator to manage the key process, the key is automatically activated when it's uploaded the first time. All subsequent key uploads require an extra step to activate the key.
@@ -142,14 +142,14 @@ Use this procedure to set the managed key feature the first time for an environm
 ### Activate an encryption key for a tenant
 Once an encryption key is generated or uploaded for the tenant, it can be activated. 
 
-1.    Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/environments), as an admin (Dynamics 365 admin or Microsoft Power Platform admin).
-2.    Select the **Environments** tab, and then select **Manage encryption keys** on the toolbar.
-1.  Select **Confirm** to acknowledge the managed key risk.
-2.  Select a key that has an **Available** state and then select **Activate key** on the toolbar.
-3.  Select **Confirm** to acknowledge the key change.
-  
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/environments) as an admin (Dynamics 365 admin or Microsoft Power Platform admin).
+2. Select the **Environments** tab and then select **Manage encryption keys** on the toolbar.
+1. Select **Confirm** to acknowledge the managed key risk.
+2. Select a key that has an **Available** state and then select **Activate key** on the toolbar.
+3. Select **Confirm** to acknowledge the key change.
 
 When you activate a key for the tenant, it takes a while for the key management service to activate the key. The status of the **Key state** displays the key as **Installing** when the new or uploaded key is activated. 
+
 Once the key is activated, the following occurs: 
 - All encrypted environments automatically get encrypted with the active key (there's no downtime with this action).
 - When activated, the encryption key is applied to all environments that are changed from Microsoft-provided to self-managed encryption key.
@@ -159,6 +159,11 @@ Once the key is activated, the following occurs:
 
 > [!NOTE]
 > After an encryption key is activated, you can't activate another key for 24 hours.
+
+
+
+
+
 
 ### Manage encryption for an environment
 By default, each environment is encrypted with the Microsoft-provided encryption key. Once an encryption key is activated for the tenant, administrators can elect to change the default encryption to use the activated encryption key. To use the activated key, follow these steps.
