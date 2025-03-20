@@ -243,30 +243,29 @@ To unlock environments, you must first [upload](#upload-a-key-pfx-or-byok) and t
 5. Select **Confirm** to confirm that you want to unlock the environment. 
 6. Repeat the previous steps to unlock other environments. 
 
-
-
-
 ## Environment database operations 
 A customer tenant can have environments that are encrypted using the Microsoft managed key and environments that are encrypted with the customer managed key. To maintain data integrity and data protection, the following controls are available when managing environment database operations.
 
 1. [Restore](backup-restore-environments.md) 
-   The environment to overwrite (the restored to environment) is restricted to the same environment that the backup was taken from or to another environment that is encrypted with the same customer managed key. 
+
+   The environment to overwrite (the restored to environment) is restricted to the same environment that the backup was taken from or to another environment that is encrypted with the same customer-managed key. 
 
    > [!div class="mx-imgBorder"] 
    > ![Restore backup.](media/cmk-restore-backup.png "Restore backup")
 
-2. [Copy](copy-environment.md)
-   The environment to overwrite (the copied to environment) is restricted to another environment that is encrypted with the same customer managed key. 
+3. [Copy](copy-environment.md)
+
+   The environment to overwrite (the copied to environment) is restricted to another environment that is encrypted with the same customer-managed key. 
 
    > [!div class="mx-imgBorder"] 
    > ![Copy environment.](media/cmk-copy-environment.png "Copy environment")
 
    > [!NOTE]
-   > If a Support Investigation environment was created to resolve support issue in a customer managed environment, the encryption key for the Support Investigation environment must be changed to customer managed key before the Copy environment operation can be performed. 
+   > If a Support Investigation environment was created to resolve a support issue in a customer-managed environment, the encryption key for the Support Investigation environment must be changed to customer-managed key before the Copy environment operation can be performed. 
 
-3. [Reset](sandbox-environments.md#reset-a-sandbox-environment)
-   The environment's encrypted data is deleted, including backups. After the environment is reset, the environment encryption will revert back to the Microsoft managed key. 
+5. [Reset](sandbox-environments.md#reset-a-sandbox-environment)
 
+   The environment's encrypted data is deleted, including backups. After the environment is reset, the environment encryption will revert back to the Microsoft-managed key. 
 
 ### Related content
 
