@@ -45,7 +45,6 @@ Encryption key management is only applicable to Azure SQL environment databases.
 > - [Files](/powerapps/developer/data-platform/file-attributes) and [Images](/powerapps/developer/data-platform/image-attributes) with sizes of less than 128 MB can be used if your environment is version 9.2.21052.00103 or higher.
 > - Most existing environments have file and log stored in non-Azure SQL databases. These environments can't be opted in to the self-managed encryption key. Only new environments (once you sign up for this program) can be enabled with a self-managed encryption key.
 
-
 <a name="KM_tasks"></a>   
 ## Introduction to key management  
 With key management, administrators can provide their own encryption key or have an encryption key generated for them, which is used to protect the database for an environment.  
@@ -205,11 +204,6 @@ Since there's only one active key per tenant, locking the encryption for the ten
 3. Select the **Active** key and then select **Lock active environments**. 
 4. On the right pane select **Upload active key**, browse to and select the key, enter the password, and then select **Lock**. 
 5. When prompted, enter the text that is displayed on your screen to confirm that you want to lock all environments in the region, and then select **Confirm**.
-
-
-
-
-
   
 #### Unlock locked environments
 To unlock environments, you must first [upload](#upload-a-key-pfx-or-byok) and then [activate](#activate-an-encryption-key-for-a-tenant) the tenant encryption key with the same key that was used to [lock the tenant](#lock-the-tenant). Note that locked environments don't get unlocked automatically once the key has been activated. Each locked environment has to be unlocked individually. 
@@ -220,32 +214,37 @@ To unlock environments, you must first [upload](#upload-a-key-pfx-or-byok) and t
 > - You can't generate a new or upload an existing key until all locked environments are unlocked. 
 
 ##### Unlock encryption key
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com), as an admin (Dynamics 365 admin or Microsoft Power Platform admin).
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 admin or Microsoft Power Platform admin).
 2. Select the **Environments** tab and then select **Manage encryption keys**.  
 3. Select the key that has a **Locked** state, and then on the command bar select **Unlock key**. 
 4. Select **Upload locked key**, browse to and select the key that was used to lock the tenant, enter the password, and then select **Unlock**. 
+
    The key goes into an **Installing** state. You must wait until the key is in an **Active** state before you can unlock locked environments. 
-5. To unlock an environment, see the next section. 
+6. To unlock an environment, see the next section. 
 
 ##### Unlock environments
 1. Select the **Environments** tab, and then select the locked environment name. 
-    > [!TIP]
-    > Don't select the row. Select the environment name. 
-    ![Open environment to view settings.](media/open-environment-settings.png)
+   > [!TIP]
+   > Don't select the row. Select the environment name. 
+   >
+   ![Open environment to view settings.](media/open-environment-settings.png)
 
 2. In the **Details** section, select **See all** to display the **Details** pane on the right. 
-3. In the **Environment** encryption section on the **Details** pane select **Manage**. 
+3. In the **Environment** encryption section on the **Details** pane, select **Manage**. 
 
-     > [!div class="mx-imgBorder"] 
-     > ![Environment-details-pane.](media/details-pane.png "Environment details pane")
+   > [!div class="mx-imgBorder"] 
+   > ![Environment details pane.](media/details-pane.png "Environment details pane")
 
-4. On the **Environment encryption** page select **Unlock**. 
+4. On the **Environment encryption** page, select **Unlock**. 
 
-     > [!div class="mx-imgBorder"] 
-     > ![Unlock environment.](media/unlock-environment.png "Unlock environment")
+   > [!div class="mx-imgBorder"] 
+   > ![Unlock environment.](media/unlock-environment.png "Unlock environment")
 
 5. Select **Confirm** to confirm that you want to unlock the environment. 
 6. Repeat the previous steps to unlock other environments. 
+
+
+
 
 ## Environment database operations 
 A customer tenant can have environments that are encrypted using the Microsoft managed key and environments that are encrypted with the customer managed key. To maintain data integrity and data protection, the following controls are available when managing environment database operations.
