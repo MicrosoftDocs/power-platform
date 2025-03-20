@@ -13,6 +13,8 @@ ms.author: sericks
 ms.reviewer: sericks
 ---
 
+<!-- check line 811 -->
+
 # Important changes (deprecations) coming in Power Platform
 
 The announcements and deprecations described in this article apply to Power Apps and Power Automate. Admins and IT professionals can use this information to prepare for future releases. This article was first published on June 27, 2017.
@@ -61,7 +63,7 @@ We recommend starting your transition to CMK (customer-managed keys) at your ear
 
 ## Deprecation of Organization Insights Dashboard
 
-The Organization Insights dashboard has been deprecated from the Microsoft Power Apps Default Solution dashbards. Similar organization insights are available in [Microsoft Dataverse analytics](admin/analytics-common-data-service.md).
+The Organization Insights dashboard has been deprecated from the Microsoft Power Apps Default Solution dashboards. Similar organization insights are available in [Microsoft Dataverse analytics](admin/analytics-common-data-service.md).
 
 As part of a service update to enhance security in Power Apps, we're removing Highcharts version 4.2.3.
 
@@ -636,7 +638,7 @@ When you access your Dataverse environment for the first time or every time afte
 
 The old URL redirector service, cloudredirector.crm.dynamics.com, was replaced in September 2019 with the new one, bn1--namcrlivesg614.crm.dynamics.com (just an example; the URL will differ based on your environment region). The old URL redirector service is deprecated, and will be removed on **March 31, 2020**.
 
-This change will impact you if you have created a bookmark of the sign-in page before September 2019 that contained the link to the old URL redirector service. The users impacted by this change will see a notification staring February 17, 2020 with instructions to resolve the issue. For detailed information about this issue and how to resolve it, see <https://support.microsoft.com/help/4541747>.
+This change will impact you if you have created a bookmark of the sign-in page before September 2019 that contained the link to the old URL redirector service. The users impacted by this change will see a notification starting February 17, 2020, with instructions to resolve the issue. For detailed information about this issue and how to resolve it, see <https://support.microsoft.com/help/4541747>.
 
 ## Deprecation of Office365 authentication type and OrganizationServiceProxy class for connecting to Dataverse
 
