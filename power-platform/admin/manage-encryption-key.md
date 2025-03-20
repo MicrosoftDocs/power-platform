@@ -49,29 +49,25 @@ Encryption key management is only applicable to Azure SQL environment databases.
 <a name="KM_tasks"></a>   
 ## Introduction to key management  
 With key management, administrators can provide their own encryption key or have an encryption key generated for them, which is used to protect the database for an environment.  
-
-
-
-
   
 The key management feature supports both PFX and BYOK encryption key files, such as those stored in a hardware security module (HSM). To use the upload encryption key option, you need both the public and private encryption key.  
   
 The key management feature takes the complexity out of encryption key management by using [!INCLUDE[pn_azure_key_vault](../includes/pn-azure-key-vault.md)] to securely store encryption keys. [!INCLUDE[pn_azure_key_vault](../includes/pn-azure-key-vault.md)] helps safeguard cryptographic keys and secrets used by cloud applications and services. The key management feature doesn't require that you have an [!INCLUDE[pn_azure_key_vault](../includes/pn-azure-key-vault.md)] subscription and for most situations there's no need to access encryption keys used for Dataverse within the vault.  
   
-The managed keys feature lets you perform the following tasks.  
+The managed keys feature lets you perform the following tasks:  
   
 - Enable the ability to self-manage database encryption keys that are associated with environments.  
   
-- Generate new encryption keys or upload existing .PFX or .BYOK encryption key files.  
+- Generate new encryption keys or upload existing PFX or BYOK encryption key files.  
   
 - Lock and unlock tenant environments.   
     > [!WARNING]
-    > While a tenant is locked, all environments within the tenant can't be accessed by anyone. More information: [Lock the tenant](#lock-the-tenant).    
+    > While a tenant is locked, no one can access any environments within the tenant. More information: [Lock the tenant](#lock-the-tenant)    
   
 <a name="KM_risk"></a>  
  
 ## Understand the potential risk when you manage your keys
- As with any business critical application, personnel within your organization who have administrative-level access must be trusted. Before you use the key management feature, you should understand the risk when you manage your database encryption keys. It's conceivable that a malicious administrator (a person who is granted or has gained administrator-level access with intent to harm an organization's security or business processes) working within your organization might use the managed keys feature to create a key and use it to lock all environments in the tenant. 
+As with any business-critical application, personnel within your organization who have administrative-level access must be trusted. Before you use the key management feature, you should understand the risk when you manage your database encryption keys. It's conceivable that a malicious administrator (a person who is granted or has gained administrator-level access with intent to harm an organization's security or business processes) working within your organization might use the managed keys feature to create a key and use it to lock all environments in the tenant. 
 
 Consider the following sequence of events.  
   
@@ -86,23 +82,22 @@ These actions result in disabling all the environments within the tenant from on
 
 ### Encryption key requirements
 
-If you provide your own encryption key, your key must meet  these  requirements that are accepted by [!INCLUDE[pn_azure_key_vault](../includes/pn-azure-key-vault.md)].  
+If you provide your own encryption key, your key must meet these requirements that are accepted by [!INCLUDE[pn_azure_key_vault](../includes/pn-azure-key-vault.md)].  
   
 - The encryption key file format must be PFX or BYOK.  
 - 2048-bit RSA.
 - RSA-HSM key type (requires a Microsoft Support request).
 - PFX encryption key files must be password protected.  
   
-For more information about generating and transferring an HSM-protected key over the Internet, see [How to generate and transfer HSM-protected keys for Azure Key Vault](/azure/key-vault/key-vault-hsm-protected-keys).  Only [nCipher Vendor HSM key](/azure/key-vault/keys/hsm-protected-keys#supported-hsms) is supported. Before generating your HSM key, go to the Power Platform admin center **Manage encryption keys**/**Create New key** window to obtain the subscription ID for your environment region. You need to copy and paste this subscription ID into your HSM to create the key. This ensures that only our Azure Key Vault can open your file.
+For more information about generating and transferring an HSM-protected key over the internet, see [How to generate and transfer HSM-protected keys for Azure Key Vault](/azure/key-vault/key-vault-hsm-protected-keys). Only [nCipher Vendor HSM key](/azure/key-vault/keys/hsm-protected-keys#supported-hsms) is supported. Before generating your HSM key, go to the Power Platform admin center **Manage encryption keys** > **Create New key** window to obtain the subscription ID for your environment region. You need to copy and paste this subscription ID into your HSM to create the key. This ensures that only our Azure Key Vault can open your file.
   
 <a name="keymgt_tasks"></a>   
 
 ## Key management tasks  
- To simplify the key management tasks, the tasks are broken down into three areas:
-1.    [Generate or upload the encryption key for a tenant](#generate-or-upload-the-encryption-key-for-a-tenant)
-2.  [Activate an encryption key for a tenant](#activate-an-encryption-key-for-a-tenant) 
-3.    [Manage encryption for an environment](#manage-encryption-for-an-environment) 
-
+To simplify the key management tasks, the tasks are broken down into three areas:
+- [Generate or upload the encryption key for a tenant](#generate-or-upload-the-encryption-key-for-a-tenant)
+- [Activate an encryption key for a tenant](#activate-an-encryption-key-for-a-tenant) 
+- [Manage encryption for an environment](#manage-encryption-for-an-environment) 
 
 Administrators can use the [Power Platform admin center](https://admin.powerplatform.microsoft.com/environments) or the [Power Platform administration module](/powershell/module/microsoft.powerapps.administration.powershell) cmdlets to perform the tenant protection key management tasks described here.
   
@@ -112,8 +107,8 @@ All encryption keys are stored in the Azure Key Vault, and there can only be one
 Use this procedure to set the managed key feature the first time for an environment or to change (or roll over) an encryption key for an already self-managed tenant.  
 
 > [!WARNING]
-> When you perform the steps described here for the first time, you're opting in to self-managing your encryption keys. More information: [Understand the potential risk when you manage your keys](#understand-the-potential-risk-when-you-manage-your-keys).  
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/environments), as an admin (Dynamics 365 admin or Microsoft Power Platform admin).
+> When you perform the steps described here for the first time, you're opting in to self-managing your encryption keys. More information: [Understand the potential risk when you manage your keys](#understand-the-potential-risk-when-you-manage-your-keys)  
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/environments) as an admin (Dynamics 365 admin or Microsoft Power Platform admin).
   
 2. Select the **Environments** tab, and then select **Manage encryption keys** on the toolbar. 
 
@@ -125,16 +120,15 @@ Use this procedure to set the managed key feature the first time for an environm
      - Select a **Region**. This option is only shown if your tenant has multiple regions.
      - Enter a **Key name**.  
      - Choose from the following options: 
-         - To create a new key, select **Generate new (.pfx)**. More information: [Generate a new key (.pfx)](#generate-a-new-key-pfx).
-         - To use your own generated key, select **Upload (.pfx or .byok)**. More information: [Upload a key (.pfx or .byok)](#upload-a-key-pfx-or-byok).
+         - To create a new key, select **Generate new (.pfx)**. More information: [Generate a new key (.pfx)](#generate-a-new-key-pfx)
+         - To use your own generated key, select **Upload (.pfx or .byok)**. More information: [Upload a key (.pfx or .byok)](#upload-a-key-pfx-or-byok)
 
 6. Select **Next**. 
 
-
 #### Generate a new key (.pfx)   
-1.    Enter a password, and then reenter the password to confirm.
-2.    Select **Create**, and then select the created file notification on your browser.
-3.    The encryption key .PFX file is downloaded to your web browser's default download folder. Save the file in a secure location (we recommend that this key is backed up along with its password). 
+1. Enter a password, and then reenter the password to confirm.
+2. Select **Create**, and then select the created file notification on your browser.
+3. The encryption key .PFX file is downloaded to your web browser's default download folder. Save the file in a secure location (we recommend that this key is backed up along with its password). 
 
 #### Upload a key (.pfx or .byok)
 1.    Select **Upload the Key**, select the .pfx or .byok<sup>1</sup> file, and then select **Open**. 
