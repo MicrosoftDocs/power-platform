@@ -160,55 +160,56 @@ Once the key is activated, the following occurs:
 > [!NOTE]
 > After an encryption key is activated, you can't activate another key for 24 hours.
 
-
-
-
-
-
 ### Manage encryption for an environment
 By default, each environment is encrypted with the Microsoft-provided encryption key. Once an encryption key is activated for the tenant, administrators can elect to change the default encryption to use the activated encryption key. To use the activated key, follow these steps.
 
 #### Apply encryption key to an environment
-1.  Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/environments), using Environment Admin or System Administrator role credentials.
-2.    Select the **Environments** tab.
-1.  Open a **Microsoft-provided** encrypted environment. 
-2.  Select **See all**. 
-3.  In the **Environment Encryption** section, select **Manage**. 
-6.    Select **Confirm** to acknowledge the managed key risk.
-1.  Select **Apply this key** to accept changing the encryption to use the activated key. 
-2.  Select **Confirm** to acknowledge that you're managing the key directly and that there's downtime for this action.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/environments), using Environment Admin or System Administrator role credentials.
+2. Select the **Environments** tab.
+1. Open a **Microsoft-provided** encrypted environment. 
+2. Select **See all**. 
+3. In the **Environment Encryption** section, select **Manage**. 
+6. Select **Confirm** to acknowledge the managed key risk.
+1. Select **Apply this key** to accept changing the encryption to use the activated key. 
+2. Select **Confirm** to acknowledge that you're managing the key directly and that there's downtime for this action.
 
 #### Return a managed encryption key back to Microsoft-provided encryption key
- Returning to the Microsoft-provided encryption key configures the environment back to the default behavior where [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] manages the encryption key for you.  
+Returning to the Microsoft-provided encryption key configures the environment back to the default behavior where [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] manages the encryption key for you.  
   
-1.    Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/environments), using Environment Admin or System Administrator role credentials.
-2.    Select the **Environments** tab, and then select an environment that is encrypted with a self-managed key.
-3.    Select **See all**.
-1.  In the **Environment Encryption** section, select **Manage**, and then select **Confirm**. 
-5.    Under **Return to standard encryption management**, select **Return** .
-1.  For production environments, confirm the environment by entering the environment's name.
-2.  Select **Confirm** to return to standard encryption key management.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/environments), using Environment Admin or System Administrator role credentials.
+2. Select the **Environments** tab, and then select an environment that is encrypted with a self-managed key.
+3. Select **See all**.
+1. In the **Environment Encryption** section, select **Manage** and then select **Confirm**. 
+5. Under **Return to standard encryption management**, select **Return**.
+1. For production environments, confirm the environment by entering the environment's name.
+2. Select **Confirm** to return to standard encryption key management.
   
 #### Lock the tenant
 Since there's only one active key per tenant, locking the encryption for the tenant *disables all the environments* that are in the tenant. All locked environments remain inaccessible to everyone, including [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)], until a Power Platform admin in your organization unlocks it by using the key that was used to lock it.  
   
 > [!CAUTION]
->  You should never lock the tenant environments as part of your normal business process. When you lock a Dataverse tenant, all the environments are taken offline and they can't be accessed by anyone, including Microsoft. Additionally, services such as synchronization and maintenance are all stopped. If you decide to leave the service, locking the tenant can ensure that your online data is never accessed again by anyone.  
+> You should never lock the tenant environments as part of your normal business process. When you lock a Dataverse tenant, all the environments are taken offline and they can't be accessed by anyone, including Microsoft. Additionally, services such as synchronization and maintenance are all stopped. If you decide to leave the service, locking the tenant can ensure that your online data is never accessed again by anyone.  
+>
 > Note the following about tenant environments locking: 
 > - Locked environments can't be restored from backup.  
 > - Locked environments are deleted if not unlocked after 28 days.
-> -    You can't lock environments for 72 hours after an encryption key change. 
+> - You can't lock environments for 72 hours after an encryption key change. 
 > - Locking a tenant *locks all active environments* within the tenant. 
 
 > [!IMPORTANT]
 > - You must wait at least one hour after you lock active environments before you can unlock them. 
 > - Once the lock process begins, all encryption keys with either an Active or Available state are deleted. The lock process can take up to an hour and during this time unlocking locked environments isn't allowed. 
 
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com), as an admin (Dynamics 365 admin or Microsoft Power Platform admin).
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 admin or Microsoft Power Platform admin).
 2. Select the **Environments** tab and then on the command bar select **Manage encryption keys**. 
 3. Select the **Active** key and then select **Lock active environments**. 
 4. On the right pane select **Upload active key**, browse to and select the key, enter the password, and then select **Lock**. 
 5. When prompted, enter the text that is displayed on your screen to confirm that you want to lock all environments in the region, and then select **Confirm**.
+
+
+
+
+
   
 #### Unlock locked environments
 To unlock environments, you must first [upload](#upload-a-key-pfx-or-byok) and then [activate](#activate-an-encryption-key-for-a-tenant) the tenant encryption key with the same key that was used to [lock the tenant](#lock-the-tenant). Note that locked environments don't get unlocked automatically once the key has been activated. Each locked environment has to be unlocked individually. 
