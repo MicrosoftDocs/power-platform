@@ -3,7 +3,7 @@ title: Manage Dataverse auditing
 description: Configure Dataverse auditing to log changes to customer records, user access, operations on records, and security roles. This feature meets external and internal auditing, compliance, security, and governance policies.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/10/2025
+ms.date: 03/21/2025
 author: paulliew 
 ms.subservice: admin
 ms.author: paulliew 
@@ -100,11 +100,11 @@ You must have System Administrator or System Customizer role or equivalent permi
 
 Auditing can be configured manually through the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) and the [Power Apps portal](https://make.powerapps.com/). Auditing can also be configured programmatically. Learn more at [Auditing overview](/power-apps/developer/data-platform/auditing/overview).
 
-### Turn on auditing through Security page
+### Turn on auditing
 
-You must be assigned to the Power Platform or Dynamics 365 admin role to turn on or off auditing through the [Security page](security/security-overview.md).
+You must be assigned to the Power Platform or Dynamics 365 admin role to turn on or off auditing through the [Compliance page](security/compliance.md).
 
-To meet your external and internal auditing, compliance, security, and governance policies that are common to many enterprises, auditing for the following tables are turned on automatically when you turn on auditing through the Security page. You can audit other tables, where applicable, but note that there are some core tables that audit is turned on by default. 
+To meet your external and internal auditing, compliance, security, and governance policies that are common to many enterprises, auditing for the following tables are turned on automatically when you turn on auditing through the Compliance page. You can audit other tables, where applicable, but note that there are some core tables that audit is turned on by default. 
 
 |Category  |Table  |
 |-----------|-----------|
@@ -158,12 +158,13 @@ To meet your external and internal auditing, compliance, security, and governanc
 1. Review and update the **Event log retention** by selecting the dropdown.
 1. Select the period that meets your data retention policy.
 
-    >[!NOTE]
+      > [!NOTE]
       > When the audit retention period is set to **Forever**, logs aren't deleted. When the audit retention period is set to any other value, logs are deleted continuously starting at the time an audit record exceeds the time defined in the retention policy.
       >
-      > For example, assume the retention policy is set to 30 days. Audit records that were created 30 days, and one second ago, start to be deleted in the background.
+      > For example, assume the retention policy is set to 30 days. Audit records that were created 30 days and one second ago, start to be deleted in the background.
       >
       > Each audit log is stamped with the currently active retention period. **Changing the retention period here doesn't change the retention period for already existing records.** The new retention period is applied to all new records created after the retention policy was changed. For example, assume the retention period is changed from 30 days to 90 days. Audit records that were created prior to the change are deleted in the background after 30 days. Audit records that were created after the change are deleted in the background after 90 days.
+   
 ## Start/stop auditing for an environment and set retention policy
 
 This task requires the System Administrator or System Customizer role or equivalent permissions.
