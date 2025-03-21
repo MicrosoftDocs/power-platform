@@ -85,7 +85,7 @@ Keep in mind the following for desktop flows:
 There are many use cases for connecting to SAP from the Power Platform. The two primary reasons are:
 
 1. **Task-based straightforward user experience:** The SAP UI is powerful but can be complicated. This use case lets the user focus on one to a few key tasks in a modern canvas app experience.
-1. **Keep the core clean principle:** Using Power Platform, you can access SAP and keep external flows and rules that can't be embedded cleanly in SAP. This ensures they are safely where they belong and don't break SAP core upgrades.
+1. **Keep the core clean principle:** Using Power Platform, you can access SAP and keep external flows and rules that can't be embedded cleanly in SAP. This ensures they're safely where they belong and don't break SAP core upgrades.
 
 ## Components
 
@@ -111,7 +111,7 @@ There are multiple ways to work with SAP. You can access SAP directly, as discus
 
 Stringent security and governance for developers and end users are vital when building SAP-connected solutions with Power Platform. Power Platform bypasses authorizations in SAP. There are many levels to ensure safety, such as using Microsoft Entra ID, tenant-access, app access, and SAP authentication. 
 
-:::image type="complex" source="media/arch-pattern-sap/security.png" alt-text="Diagram of Microsoft Entra ID structure for an example tenant, showing environments, apps, flows, connectors, and access levels." lightbox="media/arch-pattern-sap/security.png":::
+:::image type="content" source="media/arch-pattern-sap/security.png" alt-text="Diagram of Microsoft Entra ID structure for an example tenant, showing environments, apps, flows, connectors, and access levels." lightbox="media/arch-pattern-sap/security.png":::
 :::image-end:::
      
 Diagram illustrating the structure and access levels within a Microsoft Entra ID environment, which includes Development, Quality, and Production environments for both Contoso USA and Contoso Australia. Each environment includes Apps, Flows, Connectors, Pages, and Copilots with integrations to services like Salesforce, SAP, Workday, SQL Server, etc. 
@@ -156,7 +156,7 @@ Data access:
 
 On-premises data gateway:
 
-- [What is an on-prem data gateway?](/data-integration/gateway/service-gateway-onprem)
+- [What is an on-premises data gateway?](/data-integration/gateway/service-gateway-onprem)
 - [Set up on-premises data gateway for SAP](/power-platform/enterprise-templates/finance/sap-procurement/administer/set-up-gateway#gateway-cluster-configuration)
 
 Azure Virtual Network:
