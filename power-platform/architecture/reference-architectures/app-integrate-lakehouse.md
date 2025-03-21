@@ -1,7 +1,7 @@
 ---
 title: ​​Integrate Microsoft Fabric Lakehouse data using Microsoft Dataverse virtual tables
-description: Gather data from multiple internal systems into a Fabric Lakehouse to allow Power Platform apps and flows to consume the data. Learn how to integrate Microsoft Fabric Lakehouse data using Microsoft Dataverse virtual tables
-#customer intent: As a data analyst, I want to integrate Microsoft Fabric Lakehouse data using Microsoft Dataverse virtual tables so that I can gather data from multiple internal systems for use in Power Apps or Power Automate.
+description: Integrate Microsoft Fabric Lakehouse data using Dataverse virtual tables to gather data from multiple internal systems for Power Platform apps and flows.
+#customer intent: As a Power Platform user, I want to integrate Microsoft Fabric Lakehouse data using Microsoft Dataverse virtual tables so that I can gather data from multiple internal systems for use in Power Apps or Power Automate.
 author: manuelap-msft
 ms.subservice: architecture-center
 ms.topic: example-scenario
@@ -17,10 +17,12 @@ search.audienceType:
 
 # ​​Integrate Microsoft Fabric Lakehouse data using Microsoft Dataverse virtual tables
 
-Using the Dataverse Virtual Tables feature, organizations can integrate data from Microsoft Fabric. This enables gathering of data from multiple internal systems into a Fabric Lakehouse. Once in Fabric, Dataverse virtual tables can be created to allow Power Platform apps and automations to use the data. For example, customer interaction data from multiple internal systems could be centralized in Fabric and then using Power Apps a customer 360 application could allow users to have a complete view of all their organizations interactions with the customer.
-
 > [!TIP]
 > The article provides an example scenario and visual representation of how to integrate Microsoft Fabric Lakehouse data using Microsoft Dataverse virtual tables. This solution is a generalized example scenario architecture, which can be used for many different scenarios and industries.
+
+Using the Dataverse Virtual Tables feature, organizations can integrate data from Microsoft Fabric. This enables gathering of data from multiple internal systems into a Fabric Lakehouse. Once in Fabric, Dataverse virtual tables can be created to allow Power Platform apps and automations to use the data. For example, customer interaction data from multiple internal systems could be centralized in Fabric and then using Power Apps a customer 360 application could allow users to have a complete view of all their organizations interactions with the customer.
+
+
 
 ## Architecture diagram
 
@@ -30,8 +32,8 @@ Using the Dataverse Virtual Tables feature, organizations can integrate data fro
 
 1. **Source preparation**: After identifying available data sources from across the organizations different systems the data is pushed into a Fabric Lakehouse using dataflows. As part of the dataflows ETL can be applied to extract and transform the data.  
 1. **Virtual tables**: From the Power Apps maker portal virtual tables are created using the Fabric virtual table connector. This connector allows virtual tables to be created for tables in the Fabric Lakehouse.  
-1. **Account Executive 360 view**: Account executives can quickly see all the interactions with their accounts using a Power Apps application. This application is able to surface the Fabric Lakehouse data by accessing the virtual table just like any standard Dataverse table. Makers are able to build applications without the complexity of having to work with multiple systems across the organization.
-1. **Account Executive monthly interaction summary**: Monthly a scheduled Power Automate flow runs and generates for each account executive a summary of their customer interactions. This allows the executives to stay up to date. The Power Automate flows access the data from the different systems using the same virtual tables used by the Power Apps application.
+1. **Account executive 360 view**: Account executives can quickly see all the interactions with their accounts using a Power Apps application. This application is able to surface the Fabric Lakehouse data by accessing the virtual table just like any standard Dataverse table. Makers are able to build applications without the complexity of having to work with multiple systems across the organization.
+1. **Account executive monthly interaction summary**: Monthly a scheduled Power Automate flow runs and generates for each account executive a summary of their customer interactions. This allows the executives to stay up to date. The Power Automate flows access the data from the different systems using the same virtual tables used by the Power Apps application.
 
 ## Components
 

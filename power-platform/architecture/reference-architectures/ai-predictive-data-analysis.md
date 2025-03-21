@@ -1,7 +1,7 @@
 ﻿---
-title: Predictive data analysis with Dataverse, Fabric, and Azure AI
+title: Predictive data analysis using Dataverse, Fabric, and Azure AI
 description: Learn how to perform predictive data analysis using Dataverse, Fabric, and Azure AI to enhance decision-making processes and operational efficiency.
-#customer intent: As a data analyst, I want to learn how to perform predictive data analysis using Dataverse, Fabric, and Azure AI so that I can enhance decision-making processes.
+#customer intent: As a Power Platform user, I want to learn how to perform predictive data analysis using Dataverse, Fabric, and Azure AI so that I can enhance decision-making processes.
 author: manuelap-msft
 ms.subservice: architecture-center
 ms.topic: example-scenario
@@ -21,32 +21,36 @@ ms.custom:
   - ai-seo-date:03/11/2025
 ---
 
-# Predictive data analysis with Dataverse, Fabric, and Azure AI
-
-In today's data-driven world, applying predictive analytics can enhance the decision-making processes and operational efficiency. This article provides an overview of how to perform predictive data analysis using Dataverse, Microsoft Fabric, and Azure AI to design a well-architected solution. It covers best practices for data ingestion, model training, and visualization, enabling you to build robust predictive models and actionable insights.
+# Predictive data analysis using Dataverse, Fabric, and Azure AI
 
 > [!TIP]
 > The article provides an example scenario and visual representation of how to perform predictive data analysis with Dataverse, Fabric, and Azure AI. This solution is a generalized example scenario architecture, which can be used for many different scenarios and industries.
 
+
+
+In today's data-driven world, applying predictive analytics enhances decision-making processes and operational efficiency. This article provides an overview of how to perform predictive data analysis using Dataverse, Microsoft Fabric, and Azure AI to design a well-architected solution. It covers best practices for data ingestion, model training, and visualization, enabling you to build robust predictive models and actionable insights.
+
+
+
 ## Architecture diagram
 
-:::image type="content" source="media/ai-predictive-data/ai-predictive-data.png" alt-text="Predictive data analysis with Dataverse, Fabric, and Azure AI architecture diagram." border="true" lightbox="../media/image4.png":::
+:::image type="content" source="media/ai-predictive-data/ai-predictive-data.png" alt-text="Predictive data analysis with Dataverse, Fabric, and Azure AI architecture diagram." border="true" lightbox="../media/image4.png" lightbox="media/ai-predictive-data/ai-predictive-data.png":::
 
 ## Workflow
 
 1. **Data ingestion:** Use dataflows to collect and transform raw data from multiple sources. Store cleaned and prepared data in Dataverse.
-2. **Data engineering and model training:** Sync data from Dataverse to Microsoft Fabric using the Fabric shortcut. Use Fabric's OneLake and Synapse environment to train machine learning models.
-3. **Prediction storage:** Save model predictions back into Dataverse or Delta Lake in Fabric.
-4. **Visualization:** Build real-time dashboards in Power BI to visualize predictions and insights.
-5. **Actionable insights:** Develop a Power Apps app to provide frontline teams with predictive insights.
+1. **Data engineering and model training:** Sync data from Dataverse to Microsoft Fabric using the Fabric shortcut. Use Fabric's OneLake and Synapse environment to train machine learning models.
+1. **Prediction storage:** Save model predictions back into Dataverse or Delta Lake in Fabric.
+1. **Visualization:** Build real-time dashboards in Power BI to visualize predictions and insights.
+1. **Actionable insights:** Develop a Power Apps app to provide frontline teams with predictive insights.
 
 ## Components
 
 - **[AI Builder](/ai-builder/overview):** Extracts key data from documents using prebuilt or custom models.
 - **[Microsoft Dataverse](/power-apps/maker/data-platform/):** Serves as the central data store for extracted document data and tracks document progress as the business process is applied.
-- **[Power Platform dataflows](/power-query/dataflows/create-use)**: Collects and transforms raw data from multiple sources.
-- **[Link Dataverse to Microsoft Fabric](/power-apps/maker/data-platform/azure-synapse-link-view-in-fabric)**: Syncs data from Dataverse to Microsoft Fabric using the Fabric shortcut.
-- **[Azure Machine Learning](/azure/machine-learning/)**: Trains machine learning models.
+- **[Power Platform dataflows](/power-query/dataflows/create-use):** Collects and transforms raw data from multiple sources.
+- **[Link Dataverse to Microsoft Fabric](/power-apps/maker/data-platform/azure-synapse-link-view-in-fabric):** Syncs data from Dataverse to Microsoft Fabric using the Fabric shortcut.
+- **[Azure Machine Learning](/azure/machine-learning/):** Trains machine learning models.
 - **[Power Apps](/power-apps/):** Facilitates human review and data corrections.
 - **[Power BI](/power-bi/):** Delivers analytics and insights into the document processing workflow.
 
@@ -56,11 +60,11 @@ In today's data-driven world, applying predictive analytics can enhance the deci
 
 ## Scenario details
 
-### Potential use case: Predicting customer churn
+### Potential use case: predicting customer churn
 
 Learn how to use machine learning models to predict which customers are likely to stop using your service.
 
-- **Data collection:** Use dataflows to aggregate customer data (transactions, complaints, engagement scores) into Dataverse.
+- **Data collection:** Use dataflows to aggregate customer data (transactions, complaints, and engagement scores) into Dataverse.
 - **Model development:** Sync Dataverse data with Fabric. Train a churn prediction model using historical data in Fabric's Spark pool. Use Azure Machine Learning to train and deploy predictive models.
 - **Prediction deployment:** Save predictions (for example, churn probability) into Dataverse.
 - **Visualization:** Build Power BI dashboards showing churn risk distribution by region or product category.
@@ -68,7 +72,7 @@ Learn how to use machine learning models to predict which customers are likely t
 
 ## Considerations
 
-These considerations implement the pillars of Power Platform Well-Architected, a set of guiding tenets that improve the quality of a workload. Learn more in [Microsoft Power Platform Well-Architected](/power-platform/well-architected/).
+These considerations implement the pillars of Power Platform well-architected, a set of guiding tenets that improve the quality of a workload. Learn more in [Microsoft Power Platform Well-Architected](/power-platform/well-architected/).
 
 ### Performance
 

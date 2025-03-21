@@ -1,6 +1,6 @@
 ---
-title: Document processing with AI Builder
-description: Streamline document processing with AI Builder and Power Automate. Learn how to automate data extraction and enhance workflow efficiency.
+title: Streamline document processing with AI Builder
+description: Streamline document processing with AI Builder and Power Automate to automate data extraction and enhance workflow efficiency.
 #customer intent: As a flowmaker, I want to integrate AI Builder with Power Automate so that I can process documents automatically.
 author: manuelap-msft
 ms.subservice: architecture-center
@@ -15,18 +15,22 @@ search.audienceType:
   - flowmaker
 ---
 
-# Document processing with AI Builder
-
-Processing documents is often a manual, time-consuming task. With Power Automate and AI Builder, you can streamline document processing and automate data extraction from various documents such as forms, invoices, and purchase orders. 
-
-This article provides best practices, architecture diagrams, and workflows to help you design a well-architected solution tailored to your specific requirements. By using AI Builder, you can reduce manual data entry, minimize errors, and enhance your workflow efficiency.
+# Streamline document processing with AI Builder
 
 > [!TIP]
 > The article provides an example scenario and visual representation of how to process documents with AI Builder. This solution is a generalized example scenario architecture, which can be used for many different scenarios and industries.
 
+
+
+Processing documents is often a manual, time-consuming task. With Power Automate and AI Builder, you can streamline document processing and automate data extraction from various documents, such as forms, invoices, and purchase orders. 
+
+This article provides best practices, architecture diagrams, and workflows to help you design a well-architected solution tailored to your specific requirements. Using AI Builder, you can reduce manual data entry, minimize errors, and enhance your workflow efficiency.
+
+
+
 ## Architecture diagram
 
-:::image type="content" source="media/ai-doc-processing/ai-doc-processing.png" alt-text="Architecture diagram illustrating document processing with AI Builder, Power Automate, Dataverse, Power Apps, and Power BI." border="true":::
+:::image type="content" source="media/ai-doc-processing/ai-doc-processing.png" alt-text="Architecture diagram illustrating document processing with AI Builder, Power Automate, Dataverse, Power Apps, and Power BI." border="true" lightbox="media/ai-doc-processing/ai-doc-processing.png":::
 
 ## Workflow
 
@@ -47,7 +51,7 @@ This article provides best practices, architecture diagrams, and workflows to he
 
 ## Scenario details
 
-This architecture streamlines and automates document-intensive business processes. By using AI Builder, organizations reduce manual data entry, minimize errors, and accelerate decision-making workflows. Use cases include:
+This architecture streamlines and automates document-intensive business processes. By using AI Builder, organizations reduce manual data entry, minimize errors, and accelerate decision-making workflows. Use cases include the following:
 
 - Automating invoice processing.
 - Streamlining purchase order approvals.
