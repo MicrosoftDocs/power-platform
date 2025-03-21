@@ -64,7 +64,7 @@ Most of the pages from the classic admin center are available in the new one, ei
 | 17          | Resources > Power Pages sites | Manage > Products > Power Pages sites<br><br>**Note:** The security data of pages will be moved to Security > Products > Power Pages. |
 | 18          | Help + Support       | Support         |
 | 19          | Data integration     | Manage > Data > Data integration  |
-| 20          | Data (Preview)       | Manage > > Data > Data (Preview) |
+| 20          | Data (Preview)       | Manage > Data > Data (Preview) |
 | 21          | Policies > Data policies | Security > Settings > Data and privacy > Data policies |
 | 22          | Policies > Tenant isolation | Security > Settings > Identity and access > Tenant isolation |
 | 23          | Policies > Customer Lockbox | Security > Settings > Compliance > Customer Lockbox |
