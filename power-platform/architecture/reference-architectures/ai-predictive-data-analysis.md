@@ -5,7 +5,7 @@ description: Learn how to perform predictive data analysis using Dataverse, Fabr
 author: manuelap-msft
 ms.subservice: architecture-center
 ms.topic: example-scenario
-ms.date: 04/22/2025
+ms.date: 03/21/2025
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
 contributors:
@@ -34,7 +34,7 @@ In today's data-driven world, applying predictive analytics enhances decision-ma
 
 ## Architecture diagram
 
-:::image type="content" source="media/ai-predictive-data/ai-predictive-data.png" alt-text="Predictive data analysis with Dataverse, Fabric, and Azure AI architecture diagram." border="true" lightbox="../media/image4.png" lightbox="media/ai-predictive-data/ai-predictive-data.png":::
+:::image type="content" source="media/ai-predictive-data/ai-predictive-data.png" alt-text="Predictive data analysis with Dataverse, Fabric, and Azure AI architecture diagram." border="true" lightbox="media/ai-predictive-data/ai-predictive-data.png":::
 
 ## Workflow
 

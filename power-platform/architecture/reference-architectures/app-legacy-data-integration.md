@@ -1,6 +1,7 @@
 ﻿---
-title: Legacy data integration solution
+title: Legacy data integration with Power Automate and SharePoint.
 description: Learn how to integrate legacy data with modern platforms using Power Automate, SharePoint, Dataverse, Power BI, and Microsoft Teams.
+#customer intent: As a Power Platform user, I want to integrate legacy data with modern platforms so that I can streamline data retrieval and enhance analytics.
 author: manuelap-msft
 ms.subservice: architecture-center
 ms.topic: example-scenario
@@ -14,24 +15,29 @@ search.audienceType:
   - flowmaker
 ---
 
-# Legacy data integration solution
-
-Integrating legacy data with modern platforms can be complex and challenging. This article provides a comprehensive solution using Power Automate, SharePoint, Dataverse, Power BI, and Microsoft Teams to streamline the process. With these tools, you can automate data retrieval, centralize storage, and enhance analytics, ultimately improving business agility and decision-making.
-
-This article outlines the architecture, workflow, components, and key considerations to help you design a robust and efficient legacy data integration solution.
+# Legacy data integration with Power Automate and SharePoint
 
 > [!TIP]
 > This article provides an example scenario and visual representation of how to integrate Power Platform solutions with legacy data. This solution is a generalized example scenario architecture, which can be used for many different scenarios and industries.
 
+
+
+
+Integrating legacy data with modern platforms can be complex and challenging. This article provides a comprehensive solution using Power Automate, SharePoint, Dataverse, Power BI, and Microsoft Teams to streamline the process. With these tools, you can automate data retrieval, centralize storage, and enhance analytics, ultimately improving business agility and decision-making.
+
+This article outlines the architecture, workflow, components, and key considerations to help you design a robust, and efficient legacy data integration solution.
+
+
+
 ## Architecture diagram
 
-:::image type="content" source="media/app-legacy-data/app-legacy-data.png" alt-text="Architecture diagram illustrating a legacy data integration solution." border="true":::
+:::image type="content" source="media/app-legacy-data/app-legacy-data.png" alt-text="Architecture diagram illustrating a legacy data integration solution." border="true" lightbox="media/app-legacy-data/app-legacy-data.png":::
 
 ## Workflow
 
-1. **Trigger RPA automation:** A Power Automate unattended desktop robotics process automation (RPA) flow is triggered to access the legacy system and extract data and reports when API isn't available.
+1. **Trigger RPA automation:** A Power Automate unattended desktop robotics process automation (RPA) flow is triggered to access the legacy system and extract data and reports when the API isn't available.
 1. **Data extraction from legacy system:** The RPA process logs into the legacy application, navigates through menus, and extracts the required reports or data sets.
-1. **Data transfer to SharePoint or Dataverse:** Extracted data is securely transferred and stored in a designated SharePoint document library or list for centralized accessibility or Dataverse tables.
+1. **Data transfer to SharePoint or Dataverse:** Extracted data is securely transferred and stored in a designated SharePoint document library or list for centralized accessibility, or Dataverse tables.
 1. **Data transformation and processing:** Power Automate processes and organizes the data to ensure it aligns with reporting requirements or downstream systems.
 1. **Visualization in Power BI:** Power BI consolidates and visualizes the data stored in SharePoint. Dashboards and reports are created for enhanced insights.
 1. **Access via Microsoft Teams:** Reports and dashboards are integrated into Microsoft Teams, providing real-time access for decision-makers within their collaboration environment.
