@@ -12,9 +12,6 @@ author: sericks007
 ms.author: sericks
 ms.reviewer: sericks
 ---
-
-<!-- check line 811 -->
-
 # Important changes (deprecations) coming in Power Platform
 
 The announcements and deprecations described in this article apply to Power Apps and Power Automate. Admins and IT professionals can use this information to prepare for future releases. This article was first published on June 27, 2017.
