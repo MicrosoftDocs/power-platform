@@ -803,22 +803,15 @@ If you're currently using the Dynamics 365 for Blackberry App together with Mobi
 
 ## Usage of Parature knowledgebase as the knowledge management solution is deprecated
 
-Usage of Parature knowledgebase as the knowledge
-management solution is deprecated. This feature is replaced by Knowledge
-Management features in Dynamics 365 Customer Service.
+Usage of Parature knowledgebase as the knowledge management solution is deprecated. This feature is replaced by Knowledge Management features in Dynamics 365 Customer Service.
 
-The **Knowledge Solution** setting in the **Knowledge Base Management Settings**
-dialog box, which provides a connection to Pasture will be removed in a future major release.
+The **Knowledge Solution** setting in the **Knowledge Base Management Settings** dialog box, which provides a connection to Parature, will be removed in a future major release.
 
-![Knowledge Base Management Settings dialog .](media/deprecated-knowledge-management-settings.png "Knowledge Base Management Settings dialog")
+![Knowledge Base Management Settings dialog.](media/deprecated-knowledge-management-settings.png "Knowledge Base Management Settings dialog")
 
 ## Project Service Finder app is deprecated
 
-The Project Service Finder App, available for use with Dynamics 365 Project Service Automation, is deprecated. The legacy application will be supported for
-associated legacy Project Service Automation releases in accordance with
-Microsoft's [Modern Lifecycle
-Policy](https://support.microsoft.com/help/30881). The functionality
-available through this app will be available in a future release of Dynamics 365 Project Service Automation application.
+The Project Service Finder App, available for use with Dynamics 365 Project Service Automation, is deprecated. The legacy application will be supported for associated legacy Project Service Automation releases in accordance with Microsoft's [Modern Lifecycle Policy](https://support.microsoft.com/help/30881). The functionality available through this app will be available in a future release of Dynamics 365 Project Service Automation application.
 
 ## Relationship Roles are deprecated
 
@@ -834,8 +827,7 @@ generation using Word and Excel templates. You can use these templates to
 provide standardized documents or customized data analysis for your
 organization.
 
-Mail merge from previous versions is deprecated. This includes the mail-merge
-Word add-in and mail-merge templates (**Settings \> Templates \> Mail Merge
+Mail merge from previous versions is deprecated. This includes the mail-merge Word add-in and mail-merge templates (**Settings \> Templates \> Mail Merge
 Templates**).
 
 More information: [Create Word and Excel templates](/previous-versions/dynamicscrm-2016/admins-customizers-dynamics-365/mt826692(v=crm.8))
