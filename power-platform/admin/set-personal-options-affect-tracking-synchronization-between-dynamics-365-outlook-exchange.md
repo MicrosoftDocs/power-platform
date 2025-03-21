@@ -4,12 +4,14 @@ description: Set personal options that affect tracking and synchronization betwe
 author: DanaMartens
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/09/2020
+ms.date: 03/21/2025
 ms.subservice: admin
 ms.author: dmartens
 ms.reviewer: sericks
 search.audienceType: 
   - admin
+contriubutors:
+  - DerekBraunMSFT 
 ---
 # Set personal options that affect tracking and synchronization between customer engagement apps and Outlook or Exchange
 
