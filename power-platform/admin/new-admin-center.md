@@ -50,7 +50,7 @@ Most of the pages from the classic admin center are available in the new one, ei
 | 3           | Environment groups   | Manage > Environment groups |
 | 4           | Advisor              | Action > Recommendations |
 | 5           | Security             | Security         |
-| 6           | Analytics > Dataverse       | 
+| 6           | Analytics > Dataverse       | Manage > Dataverse |
 | 7          | Analytics > Power Automate | Manage > Power Automate |
 | 8           | Analytics > Power Apps| Manage > Power Apps |
 | 9          | Analytics > Data export | Manage  > Data export |
