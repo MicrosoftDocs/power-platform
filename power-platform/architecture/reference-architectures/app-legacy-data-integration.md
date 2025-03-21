@@ -5,7 +5,7 @@ description: Learn how to integrate legacy data with modern platforms using Powe
 author: manuelap-msft
 ms.subservice: architecture-center
 ms.topic: example-scenario
-ms.date: 04/22/2025
+ms.date: 03/21/2025
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
 contributors: 

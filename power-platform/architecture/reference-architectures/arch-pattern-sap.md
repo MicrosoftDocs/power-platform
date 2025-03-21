@@ -1,11 +1,11 @@
 ---
-title: Integrating Microsoft Power Platform with SAP
-description: Discover how to integrate Microsoft Power Platform with SAP for seamless data management and automation.
-#customer intent: As an admin, I want to integrate Microsoft Power Platform with SAP so that I can enhance data management and automation capabilities.
+title: Integrate Microsoft Power Platform with SAP for data management.
+description: Integrate Microsoft Power Platform with SAP for seamless data management and automation. Enhance your organization's efficiency and maintain robust security standards.
+#customer intent: As a Power Platform user, I want to integrate Microsoft Power Platform with SAP so that I can enhance data management and automation capabilities.
 author: manuelap-msft
 ms.subservice: architecture-center
 ms.topic: example-scenario
-ms.date: 04/22/2025
+ms.date: 03/21/2025
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
 contributors:
@@ -17,11 +17,11 @@ search.audienceType:
   - flowmaker
 ---
 
-# Integrating Microsoft Power Platform with SAP
+# Integrate Microsoft Power Platform with SAP for data management
 
-Integrating Microsoft Power Platform with SAP enhances data management and automation capabilities within your organization. This document provides a guide on how to connect these two platforms seamlessly. 
+Integrating Microsoft Power Platform with SAP enhances data management and automation capabilities within your organization. This article explains how to connect these two platforms seamlessly. 
 
-Learn about the architecture, workflows, and connectivity methods available to ensure a smooth integration process. Additionally, alternative connectivity options and use cases are discussed to help you choose the best approach for your needs. Using the Power Platform streamlines operations, improves efficiency, and maintains robust security and governance standards while working with SAP systems.
+Learn about the architecture, workflows, and connectivity methods available to ensure a smooth integration process. Additionally, alternative connectivity options and use cases are discussed to help you choose the best approach for your needs. Using Power Platform streamlines operations, improves efficiency, and maintains robust security and governance standards while working with SAP systems.
 
 ## Architecture diagram
 
@@ -32,14 +32,14 @@ Learn about the architecture, workflows, and connectivity methods available to e
 The architecture image shows a full solution, but the flow between the Power Platform and SAP is straightforward:
 
 1. **Power Platform Power Apps / Power Automate flow**: A Power App uses a Power Automate flow to call the SAP ERP connector.
-1. **SAP ERP connector**: The SAP ERP connector calls the on-premises data gateway (OPDG). These calls use RFC/BAPI calls.
+1. **SAP ERP connector**: The SAP ERP connector calls the on-premises data gateway (OPDG). These calls use RFC/BAPI.
 1. **On-premises data gateway (OPDG)**: Calls SAP and uses SAP. Power Platform doesn't bypass authorizations in SAP.
 1. **SAP (and infrastructure)**: OPDG then calls SAP through the SAP .NET connector.
 1. **SAP OData connector**: The OData connector can be used to perform operations like create, read, update, and delete entities, and invoke functions on the service.
 
 ## Alternative connectivity methods
 
-In addition to an on-premises data gateway (OPDG), there are other ways to connect to SAP from Power Platform. For example, using a Azure Virtual Network or virtual tables.
+In addition to an on-premises data gateway (OPDG), there are other ways to connect to SAP from Power Platform. For example, using an Azure virtual network or virtual tables.
 
 ### Virtual network
 
@@ -95,7 +95,7 @@ There are many use cases for connecting to SAP from the Power Platform. The two 
 
 The **SAP ERP connector** for Power Platform enables seamless integration of SAP systems with Microsoft Power Automate and Power Apps. It lets users connect their flows and apps to any SAP ERP system, including SAP ECC and SAP S/4HANA, by invoking RFC and BAPI functions through an on-premises data gateway. This connector supports secure authentication methods such as SAP Basic, Windows (Kerberos), and Microsoft Entra ID, making it easier for organizations to develop modern apps and automate business processes using their existing SAP data.
 
-The **On-Premises Data Gateway** (OPDG) is a locally installed Windows client application that acts as a bridge between your local on-premises data sources and services in the Microsoft cloud. It provides quick and secure data transfer without requiring any inbound ports to your network, only outbound ports to reach the Azure web service to which the gateway connects. This gateway supports multiple services, including Power BI, Power Apps, Power Automate, Azure Analysis Services, and Azure Logic Apps, enabling organizations to keep their databases and other data sources on-premises while securely using that data in cloud services.
+The **On-premises data gateway** (OPDG) is a locally installed Windows client application that acts as a bridge between your local on-premises data sources and services in the Microsoft cloud. It provides quick and secure data transfer without requiring any inbound ports to your network, only outbound ports to reach the Azure web service to which the gateway connects. This gateway supports multiple services, including Power BI, Power Apps, Power Automate, Azure Analysis Services, and Azure Logic Apps, enabling organizations to keep their databases and other data sources on-premises while securely using that data in cloud services.
 
 **Desktop flows** support the creation of automation to help remove repetitive desktop tasks. Desktop flows can interact with both modern and legacy applications, allowing users to streamline their workflows and improve efficiency.
 
@@ -112,8 +112,20 @@ There are multiple ways to work with SAP. You can access SAP directly, as discus
 Stringent security and governance for developers and end users are vital when building SAP-connected solutions with Power Platform. Power Platform bypasses authorizations in SAP. There are many levels to ensure safety, such as using Microsoft Entra ID, tenant-access, app access, and SAP authentication. 
 
 :::image type="complex" source="media/arch-pattern-sap/security.png" alt-text="Diagram of Microsoft Entra ID structure for an example tenant, showing environments, apps, flows, connectors, and access levels." lightbox="media/arch-pattern-sap/security.png":::
-     Diagram illustrating the structure and access levels within a Microsoft Entra ID environment, which includes Development, Quality, and Production environments for both Contoso USA and Contoso Australia. Each environment includes Apps, Flows, Connectors, Pages, and Copilots with integrations to services like Salesforce, SAP, Workday, SQL Server, etc. Key elements are labeled with numbers indicating different access levels: 1) Tenant access and isolation; 2) Environment access; 3) Resource permissions; 4) Connector access and DLP (Data Loss Prevention); 5) Role-based data access; 6) On-premises data gateway. Dataverse is highlighted as a central component in both environments.
 :::image-end:::
+     
+Diagram illustrating the structure and access levels within a Microsoft Entra ID environment, which includes Development, Quality, and Production environments for both Contoso USA and Contoso Australia. Each environment includes Apps, Flows, Connectors, Pages, and Copilots with integrations to services like Salesforce, SAP, Workday, SQL Server, etc. 
+
+Key elements are labeled with numbers indicating different access levels:
+1. Tenant access and isolation.
+1. Environment access.
+1. Resource permissions. 
+1. Connector access and DLP (Data Loss Prevention).
+1. Role-based data access.
+1. On-premises data gateway. 
+
+Dataverse is highlighted as a central component in both environments.
+
 
 ### Operational excellence
 
