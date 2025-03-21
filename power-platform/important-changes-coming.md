@@ -59,7 +59,7 @@ Effective June 1, 2025, customers will be unable to apply BYOK to production env
 
 If your migration to CMK is not completed by January 6, 2026, your environment will automatically revert to Microsoft-managed keys. While this ensures continuity of encryption, it limits the control and flexibility you currently enjoy with BYOK. To avoid disruption and take full advantage of the enhanced features and security offered by CMK, we strongly recommend beginning your migration process as soon as possible. 
 
-We recommend starting your transition to CMK (customer-managed keys) at your earliest convenience, please review [Manage your customer-managed encryption key](admin/customer-managed-key.md) and [Migrate bring-your-own-key (BYOK) environments to customer-managed key](admin/cmk-migrate-from-byok.md).
+We recommend starting your transition to CMK (customer-managed keys) at your earliest convenience. For more information, go to [Manage your customer-managed encryption key](admin/customer-managed-key.md) and [Migrate bring-your-own-key (BYOK) environments to customer-managed key](admin/cmk-migrate-from-byok.md).
 
 ## Deprecation of Organization Insights Dashboard
 
