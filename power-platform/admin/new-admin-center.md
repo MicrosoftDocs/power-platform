@@ -51,9 +51,9 @@ Most of the pages from the classic admin center are available in the new one, ei
 | 4           | Advisor              | Action > Recommendations |
 | 5           | Security             | Security         |
 | 6           | Analytics > Dataverse       | 
-|  7          | Analytics > Power Automate | Manage > Power Automate |
-|  8           | Analytics > Power Apps| Manage > Power Apps |
-|  9          | Analytics > Data export | Manage  > Data export |
+| 7          | Analytics > Power Automate | Manage > Power Automate |
+| 8           | Analytics > Power Apps| Manage > Power Apps |
+| 9          | Analytics > Data export | Manage  > Data export |
 | 10          | Billing > Licenses   | Licensing > Products > Power Apps |
 | 11          | Billing > Billing plans      | Licensing > Billing plans |
 | 12         | Settings             | Manage > Tenant settings |
