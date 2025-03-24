@@ -1,7 +1,7 @@
 ---
 title: Important changes (deprecations) coming in Power Platform
 description: Important changes (deprecations) coming in Power Platform 
-ms.date: 03/3/2025
+ms.date: 03/24/2025
 ms.topic: conceptual
 ms.subservice: admin
 searchScope:
@@ -22,12 +22,15 @@ For deprecation information of other products, see [Other deprecation articles](
 > [!IMPORTANT]
 > "Deprecated" means we intend to remove the feature or capability from a future release. The feature or capability is fully supported until it's officially removed. This deprecation notification can span a few months or years. After removal, the feature or capability will no longer work. This notice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
 
+## Deprecation of rich text editor classic experience
+
+Starting April 18, 2025, the classic rich text editor experience will be deprecated and no longer supported in Customer Service apps. The new, modernized rich text editor is the default experience, and customers who are using the classic experience will be upgraded automatically. Learn more in [Modern text editor enhancements](/power-apps/maker/model-driven-apps/rich-text-editor-control.md#modern-text-editor-enhancements).
+
 ## Deprecation of Cards for Power Apps
 
 Effective August 29, 2025, [Cards for Power Apps](/power-apps/cards/overview) will be deprecated and no longer supported. As a result, any Cards for Power Apps that have been built and shared in Microsoft Teams will not function. Users will not be able to create new cards or execute existing ones.
 
 We recommend migrating any functionality you rely on from Cards for Power Apps before the deprecation date. Consider transitioning to either [Adaptive Cards in Copilot Studio](/microsoft-copilot-studio/guidance/adaptive-cards-overview) or [adaptive cards for Microsoft Teams](/power-automate/overview-adaptive-cards) for similar functionality.
-
 
 ## Deprecation of Train with examples to transform examples to Power Fx formulas
 
@@ -36,18 +39,18 @@ Effective February 19, 2025, the **Train with examples** feature to transform ex
 ## Deprecation of Snowflake connector [Deprecated]
 The [Snowflake (Deprecated)](/connectors/snowflakepa/) connector will be discontinued on May 26, 2025. A new and improved version with additional features is now available. For more details, visit the new [Snowflake (Preview)](/connectors/snowflakev2/) connector reference article. We strongly encourage you to switch soon to take advantage of the upgrades.  
 
-## What action do I need to take? 
-Please make sure you replace your existing connections of the deprecated Snowflake connector with the new [Snowflake (Preview)](/connectors/snowflakev2/) connector in all of the applications utilizing this connector. If you need assistance in replacing your connections in Power Automate Flows or Power Apps, please refer to the below following documentation: 
+### What action do I need to take? 
+Make sure you replace your existing connections of the deprecated Snowflake connector with the new [Snowflake (Preview)](/connectors/snowflakev2/) connector in all of the applications utilizing this connector. If you need help replacing your connections in Power Automate Flows or Power Apps, refer to the following documentation: 
 
 - [Manage connections in Power Automate - Power Automate | Microsoft Learn](/power-automate/add-manage-connections)
 - [Manage connections in canvas apps - Power Apps | Microsoft Learn](/power-apps/maker/canvas-apps/add-manage-connections)
 
 ### Impact 
-If action is not taken by May 26, 2025, the application(s) utilizing [Snowflake (Deprecated)](/connectors/snowflakepa/) connector will no longer function as expected. 
+If you don't take action by May 26, 2025, the application(s) that use the [Snowflake (Deprecated)](/connectors/snowflakepa/) connector will no longer function as expected. 
 
 ## Deprecation of Ask a virtual agent
 
-Effective March 11, 2025, the **Ask a virtual agent** feature in Power Apps is deprecated and no longer supported. We recommend using [Copilot in Power Apps](/power-apps/maker/canvas-apps/ai-overview) for assistance when creating an app. For general help in Power Apps, select **Help** (question mark icon in the upper right) > **Support** > **Problem**.
+Effective March 11, 2025, the **Ask a virtual agent** feature in Power Apps is deprecated and no longer supported. We recommend that you use [Copilot in Power Apps](/power-apps/maker/canvas-apps/ai-overview) for assistance when creating an app. For general help in Power Apps, select **Help** (question mark icon in the upper right) > **Support** > **Problem**.
 
 ## Deprecation of bring-your-own-key (BYOK) Dataverse service
 Starting January 6, 2026, we will discontinue support for the bring-your-own-key (BYOK) feature. Customers are encouraged to transition to [customer-managed keys (CMK)](admin/customer-managed-key.md), an enhanced solution that offers improved functionality, broader support for data sources, and better performance.
@@ -55,7 +58,7 @@ Starting January 6, 2026, we will discontinue support for the bring-your-own-key
 ### What happens if migration isn't completed? 
 Effective June 1, 2025, customers will be unable to apply BYOK to production environments. 
 
-If your migration to CMK is not completed by January 6, 2026, your environment will automatically revert to Microsoft-managed keys. While this ensures continuity of encryption, it limits the control and flexibility you currently enjoy with BYOK. To avoid disruption and take full advantage of the enhanced features and security offered by CMK, we strongly recommend beginning your migration process as soon as possible. 
+If your migration to CMK isn't completed by January 6, 2026, your environment will automatically revert to Microsoft-managed keys. While this ensures continuity of encryption, it limits the control and flexibility you currently enjoy with BYOK. To avoid disruption and take full advantage of the enhanced features and security offered by CMK, we strongly recommend that you begin your migration process now. 
 
 We recommend starting your transition to CMK (customer-managed keys) at your earliest convenience, please review [Manage your customer-managed encryption key](admin/customer-managed-key.md) and [Migrate bring-your-own-key (BYOK) environments to customer-managed key](admin/cmk-migrate-from-byok.md).
 
@@ -67,9 +70,9 @@ As part of a service update to enhance security in Power Apps, we're removing Hi
 
 ## Deprecating support for multitenant apps without a service principal in the Microsoft Entra ID tenant 
 
-To boost security and system performance, we are updating authentication protocols for multitenant apps in the Dataverse platform. Starting October 2024, app-only tokens for apps without a service principal in the target tenant aren't supported. This change is essential for mitigating vulnerabilities and safeguarding your data from potential threats. 
+To boost security and system performance, we've updated authentication protocols for multitenant apps in the Dataverse platform. As of October 2024, app-only tokens for apps without a service principal in the target tenant aren't supported. This change is essential for mitigating vulnerabilities and safeguarding your data from potential threats. 
 
-### Why is this needed?
+### Why is this change happening?
 
 [Multitenant apps](/entra/identity-platform/single-and-multi-tenant-apps/) that don't have a client service principal have been recognized as vulnerable. They pose a significant risk of acquiring cross-tenant, open authorization (OAuth) app-only tokens for multitenant services across arbitrary tenants. To address this security vulnerability, apps without a service principal in the tenant are no longer authenticated. Dataverse APIs fail from these apps in deprecated environments.
 
@@ -86,9 +89,9 @@ To ensure the security and integrity of your system and data, we encourage custo
 >
 > Make sure that the access token being acquired is from your tenant endpoint (`https://login.microsoftonline.com/{yourtenant}`), not your organization endpoint (`https://login.microsoftonline.com/organizations`).
 
-### When is this change coming into effect? 
+### When did this change happen? 
 
-Support for app-only tokens by multitenant apps that don't have a service principal ID in the Target Tenant will be removed by October 2024.
+Support for app-only tokens by multitenant apps that don't have a service principal ID in the target tenant began in October 2024.
 
 ## Hierarchy control in model-driven apps is deprecated
 
@@ -118,7 +121,7 @@ The schema DLP activity logging is deprecated and won't be available starting in
 
 ## Schema for Lockbox audit events
 
-The schema for Lockbox audit events is deprecated and won't be available starting in July 2024. You can audit Customer Lockbox events using the new schema available at [Activity category: Lockbox operations](admin/admin-activity-logging.md#activity-category-lockbox-operations).
+The schema for Lockbox audit events is deprecated and isn't available as of July 2024. You can audit Customer Lockbox events using the new schema available at [Activity category: Lockbox operations](admin/admin-activity-logging.md#activity-category-lockbox-operations).
 
 ## ISV Studio removed
 
@@ -132,14 +135,13 @@ To continue accessing analytics related to your AppSource solutions, use the rep
 
 The Connector Certification Portal was a preview portal that allowed partners to submit and certify connectors created using the Power Query SDK. Once certified, these connectors would ship in products such as Power BI Desktop, On-Premises Data Gateway and Power Query Online in general.
 
-After careful consideration, and thanks to the feedback from partners, a decision was made to decommission the portal starting 15th Jan 2025.
+After careful consideration, and thanks to the feedback from partners, a decision was made to decommission the portal as of January 15, 2025.
 
-While the portal will be decommissioned, the program will continue. For the latest information on the status of the program and how to certify your connector, learn more about the [Data Factory Connector Certification](/fabric/data-factory/connector-certification).
-
+While the portal is decommissioned, the program will continue. For the latest information on the status of the program and how to certify your connector, learn more about the [Data Factory Connector Certification](/fabric/data-factory/connector-certification).
 
 ## DLP resource exemption feature
 
-Effective March 2024, the data loss prevention (DLP) [resource exemption feature](/admin/dlp-resource-exemption.md) is deprecated for tenants that never used it. By October 2024, the resource exemption feature will be deprecated for all customers.
+Effective March 2024, the data loss prevention (DLP) [resource exemption feature](/admin/dlp-resource-exemption.md) is deprecated for tenants that never used it. Effective October 2024, the resource exemption feature is deprecated for all customers.
 
 ## Activity Editor was removed in model-driven apps
 
@@ -149,15 +151,15 @@ Learn more about [adding the rich text editor control to a model-driven app](/po
 
 ## Classic app, form, and view designers are deprecated
 
-Starting in October 2023, the classic app, form, and view designers are deprecated, by default. This means that, by default, all model-driven apps, forms, and views only open via the modern designers. By default, the **Switch to classic** option to revert back to the classic designers from the modern designers is no longer available.
+As of October 2023, the classic app, form, and view designers are deprecated, by default. This means that, by default, all model-driven apps, forms, and views only open via the modern designers. By default, the **Switch to classic** option to revert back to the classic designers from the modern designers is no longer available.
 
 ### Impact
 
-Depending on your geographic location and rollout cadence, this change impacts you in mid-October 2023. Makers have to reach out to their admin to access the classic designers.
+Makers have to reach out to their admin to access the classic designers.
 
 ### Re-enabling the classic designers
 
-Admins can turn the **Switch to classic** option back on in the Power Platform admin center for specific environments. The modern app, form, and view designers are at core feature parity with the deprecated classic designers. As such, makers are expected to fully transition to use only the modern designers to build model-driven apps and components. More information: [Manage behavior settings](admin/settings-behavior.md)
+Admins can turn the **Switch to classic** option back on in the Power Platform admin center for specific environments. The modern app, form, and view designers are at core feature parity with the deprecated classic designers. As such, makers are expected to fully transition to use only the modern designers to build model-driven apps and components. Learn more in [Manage behavior settings](admin/settings-behavior.md).
 
 ## Dynamics 365 for phones and tablets will be deprecated for online users and replaced by Power Apps
 
@@ -175,11 +177,11 @@ You may see an error message similar to this one:
 
 *Microsoft EntraSTS50020: user account `<contoso@contoso.com>`; from identity provider `https://sts.windows.net/{tenant ID}/` doesn't exist in tenant '{tenant name}' and can't access the application '{application ID}'(Dataverse org name) in that tenant.* 
 
-The account must be added as an external user in the tenant. Sign out and sign in again with a different Microsoft Entra user account. Previously, Dataverse denied access to these accounts, but now they're blocked at the Microsoft Entra tenant level. This change doesn't affect [GDAP](/partner-center/gdap-introduction) or CSP users.
+The account must be added as an external user in the tenant. Sign out, and then sign in again with a different Microsoft Entra user account. Previously, Dataverse denied access to these accounts, but now they're blocked at the Microsoft Entra tenant level. This change doesn't affect [GDAP](/partner-center/gdap-introduction) or CSP users.
 
 ### What do you need to do?
 
-If a user who isn't part of your Microsoft Entra ID needs access to a Dataverse organization, the user needs to be added to the tenant as an external user or guest user. Learn more in [Add B2B collaboration users in the Microsoft Entra admin center](/azure/active-directory/external-identities/add-users-administrator). Additionally, you can restrict access to the Dataverse organization by reviewing the access granted to external users by following the steps below.
+If a user who isn't part of your Microsoft Entra ID needs access to a Dataverse organization, the user must be added to the tenant as an external user or guest user. Learn more in [Add B2B collaboration users in the Microsoft Entra admin center](/azure/active-directory/external-identities/add-users-administrator). Additionally, you can restrict access to the Dataverse organization by reviewing the access granted to external users by following the steps below.
 
 **Disable sharing apps with everyone:** You can assess if sharing applications with everyone (including guests) is a requirement for cross-team collaboration.  If it isn't, then you can disable sharing with everyone using the following PowerShell script:
 
@@ -197,7 +199,7 @@ $tenantSettings.powerPlatform.powerApps.enableGuestsToMake = $false
 Set-TenantSettings $tenantSettings
 ```
   
-### When is this change coming into effect?
+### When did this change happen?
 
 We removed support of unregistered MSA and external Microsoft Entra users in the Dataverse in **October 2023**.
 
@@ -220,24 +222,26 @@ If your code isn't already in a source code repository, you should export your s
 
 If your web resources had a dependency on this library, you should replace the reference with a newer version of JQuery.
 
-Note, there might be breaking changes between versions. For information about upgrading, see [jQuery Core Upgrade Guides](https://jquery.com/upgrade-guide/).
+There might be breaking changes between versions. Learn more about upgrading in [jQuery Core Upgrade Guides](https://jquery.com/upgrade-guide/).
 
 Choose one of these options:
 
-- Create a new JavaScript web resource with the minified version of jQuery. The library is available here: [jQuery Core – All Versions](https://releases.jquery.com/jquery/). More information: [Create or edit model-driven app web resources to extend an app](/power-apps/maker/model-driven-apps/create-edit-web-resources).
+- Create a new JavaScript web resource with the minified version of jQuery. The library is available here: [jQuery Core – All Versions](https://releases.jquery.com/jquery/). Learn more in [Create or edit model-driven app web resources to extend an app](/power-apps/maker/model-driven-apps/create-edit-web-resources).
 - Locate the URL of a CDN for a newer version of jQuery. For example: [jQuery-libraries-cdnjs](https://cdnjs.com/libraries/jquery).
 
 Replace the reference to `/_static/_common/scripts/jquery-2.1.1.min.js` with the name of the web resource you created or the URL to the CDN resource with a newer version of jQuery.
 
 ## AI Builder image classification model by Lobe is deprecated
 
-Effective January 2023, the image classification model by Lobe (preview) was deprecated.
+Effective January 2023, the image classification model by Lobe (preview) is deprecated.
 
-The model allowed you to quickly create and train models to classify images into different categories. This was useful for classifying objects in images, such as animals, plants, and vehicles. The deprecation of this capability was needed because the model wasn't aligned with other models in AI Builder, which offer an in-browser training and model usage experience. These other models don't require a download and install.
+The model allowed you to quickly create and train models to classify images into different categories. This was useful for classifying objects in images, such as animals, plants, and vehicles. The deprecation of this capability happened because the model wasn't aligned with other models in AI Builder, which offer an in-browser training and model usage experience. These other models don't require download and installation.
 
-The impact of the deprecation of this capability is that you'll no longer be able to use the model to classify images and you won't be able to download the Lobe application. Models built with Lobe might continue to work and serve their purpose, but they won't be supported by the AI Builder team. Your Lobe installation might also continue to function, but won't be supported.
+### What is the impact?
 
- If you're impacted by the deprecation of this feature, you can use other methods to classify images, such as [Azure Cognitive Services for Custom Vision](/azure/cognitive-services/Custom-Vision-Service/overview). Custom Vision is a cloud-based image classification service that enables you to quickly and easily create custom image classifiers. With Custom Vision, you can upload your own images and label them with the categories you want the model to recognize. The service then uses machine learning to train a custom model that can accurately identify the categories in new images. The service also provides a range of tools to evaluate and improve your models, such as testing accuracy and providing feedback on how to improve the model. You can also create custom image classifiers that can be used for a variety of applications, such as object recognition, facial recognition, and more.
+You're no longer able to download the Lobe app or use the model to classify images. Models built with Lobe might continue to work, but they aren't supported by the AI Builder team. Your Lobe installation might also continue to function, but it isn't supported.
+
+If you're impacted by the deprecation of this feature, you can use other methods to classify images, such as [Azure Cognitive Services for Custom Vision](/azure/cognitive-services/Custom-Vision-Service/overview). Custom Vision is a cloud-based image classification service that enables you to quickly and easily create custom image classifiers. With Custom Vision, you can upload your own images and label them with the categories you want the model to recognize. The service then uses machine learning to train a custom model that can accurately identify the categories in new images. The service also provides a range of tools to evaluate and improve your models, such as testing accuracy and providing feedback on how to improve the model. You can also create custom image classifiers that can be used for a variety of applications, such as object recognition, facial recognition, and so forth.
 
 ## Model-driven app controls deprecation
 
@@ -249,8 +253,8 @@ We'll be introducing new Fluent UI controls that have better usability, accessib
 
 ### Impact
 
-- Starting April 2023, these controls can no longer be added to forms.
-- No additional support or fixes will be provided on these controls after April 2024.
+- Effective April 2023, these controls can no longer be added to forms.
+- No additional support or fixes will be provided on these controls.
 
 ### Action required by you
 
