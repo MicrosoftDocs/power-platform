@@ -103,7 +103,7 @@ As noted earlier, for the rare and special instances where connectors don't meet
 
 ## Considerations
 
-These considerations implement the pillars of Power Platform Well-Architected, a set of guiding tenets that improve the quality of a workload. Learn more in [Microsoft Power Platform Well-Architected](/power-platform/well-architected/).
+[!INCLUDE [pp-arch-ppwa-link](../../includes/pp-arch-ppwa-link.md)]
 
 There are multiple ways to work with SAP. You can access SAP directly, as discussed, or use virtual tables, which simplify tasks for low-code makers.
 
