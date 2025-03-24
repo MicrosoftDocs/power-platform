@@ -24,7 +24,7 @@ For deprecation information of other products, see [Other deprecation articles](
 
 ## Deprecation of rich text editor classic experience
 
-Starting April 18, 2025, the classic rich text editor experience will be deprecated and no longer supported in Customer Service apps. The new, modernized rich text editor is the default experience, and customers who are using the classic experience will be upgraded automatically. Learn more in [Modern text editor enhancements](/power-apps/maker/model-driven-apps/rich-text-editor-control.md#modern-text-editor-enhancements).
+Starting April 18, 2025, the classic rich text editor experience will be deprecated and no longer supported in Dynamics 365 apps. The new, modernized rich text editor is the default experience, and customers who are using the classic experience will be upgraded automatically. Learn more in [Modern text editor enhancements](/power-apps/maker/model-driven-apps/rich-text-editor-control.md#modern-text-editor-enhancements).
 
 ## Deprecation of Cards for Power Apps
 
