@@ -1,12 +1,13 @@
 ---
-title: Microsoft Power Apps architectures and solution ideas
-description: Learn about Microsoft Power Apps architectures and solution ideas
+title: Power Apps reference architectures and solution ideas
+description: Discover Power Apps reference architectures and solution ideas to build custom business apps quickly and efficiently.
+#customer intent: As a Power-Platform user, I want to understand Power Apps reference architectures so that I can build efficient custom business apps.
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: architecture-center
 ms.topic: conceptual
-ms.date: 04/22/2025
+ms.date: 03/24/2025
 ---
 
 # Power Apps reference architectures and solution ideas
@@ -14,11 +15,11 @@ ms.date: 04/22/2025
 Power Apps is a suite of apps, services, and connectors, as well as a data platform, that provides a rapid development environment to build custom apps for your business needs. Using Power Apps, you can quickly build custom business apps that connect to your data stored either in the underlying data platform ([Microsoft Dataverse](/powerapps/maker/data-platform/data-platform-intro)) or in many online and on-premises data sources (such as SharePoint, Microsoft 365, Dynamics 365, SQL Server, and so on).
 By understanding reference architectures and exploring solution ideas, you can unlock new opportunities for automation, optimization, and innovation within your organization.
 
-In this article, we will look at:
+In this article, we look at:
 
-- **Key concepts:** Learn about architecture key concepts that will help you build robust, efficient, and maintenable solutions with Power Apps.
+- **Key concepts:** Learn about architecture key concepts that help you build robust, efficient, and maintainable solutions with Power Apps.
 - **Reference architectures**: Explore foundational reference architectures that support building well-architected solutions with Power Apps.
-- **Solution Ideas**: Discover a range of solution ideas that demonstrate the versatility and power of Power Apps.
+- **Solution ideas**: Discover a range of solution ideas that demonstrate the versatility and power of Power Apps.
 
 ## Key concepts
 
@@ -44,16 +45,16 @@ In this article, we will look at:
 | **[Predictive data analysis with Dataverse, Fabric, and Azure AI](../reference-architectures/ai-predictive-data-analysis.md)** | Perform predictive data analysis using Dataverse, Microsoft Fabric, and Azure AI and learn best practices for data ingestion, model training, and visualization, enabling you to build robust predictive models and actionable insights. |
 | **[​Integrate Microsoft Fabric Lakehouse data using Microsoft Dataverse virtual tables](../reference-architectures/app-integrate-lakehouse.md)** | Gather data from multiple internal systems into a Microsoft Fabric Lakehouse, and consume the data in Power Platform apps and automations using Dataverse virtual tables. |
 | **[Integrating Microsoft Power Platform with SAP](../reference-architectures/arch-pattern-sap.md)** | Learn about the architecture, workflows, and connectivity methods available to integrate Power Platform with SAP to ensure a smooth integration process. |
-| **[Dataverse background operations](../reference-architectures/dataverse-background-operations.md)** | Us custom APIs to define custom messages and implement business logic through plug-ins, allowing for background processing that eliminates the need for a persistent connection during execution. |
+| **[Dataverse background operations](../reference-architectures/dataverse-background-operations.md)** | Use custom APIs to define custom messages and implement business logic through plug-ins, allowing for background processing that eliminates the need for a persistent connection during execution. |
 | **[Secure Power Platform access to Azure resources](../reference-architectures/secure-access-azure-resources.md)** | Use Microsoft Azure Virtual Network support for Power Platform to integrate Power Platform with resources inside your virtual network without exposing them to the public internet. |
 
 ## Solution ideas
 
 | Title | Description |
 | --- | --- |
-| **[Healthcare Patient Support Agent architecture](../solution-ideas/agent-healthcare-patient-support.md)** | Streamline patient interactions and reduce administrative burdens for healthcare providers |
+| **[Healthcare patient support agent architecture](../solution-ideas/agent-healthcare-patient-support.md)** | Streamline patient interactions and reduce administrative burdens for healthcare providers |
 | **[Property rental portal with AI-driven search and payment processing](../solution-ideas/agent-rental-portal.md)** | Build a comprehensive rental portal that uses AI-driven search capabilities and seamless payment processing. |
-| **[Enterprise Visual Vehicle Inspection Engine](../solution-ideas/app-evvie.md)** | Inspect vehicles and assess damage using generative AI and Power Platform. |
+| **[Enterprise visual vehicle inspection engine](../solution-ideas/app-evvie.md)** | Inspect vehicles and assess damage using generative AI and Power Platform. |
 
 ## Resources
 

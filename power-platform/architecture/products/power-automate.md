@@ -1,12 +1,13 @@
 ---
-title: Microsoft Power Automate architectures and solution ideas
-description: Learn about Microsoft Power Automate architectures and solution ideas
+title: Power Automate reference architectures and solution ideas
+description: Discover how Power Automate can streamline your business processes and automate tasks with ease.
+#customer intent: As a Power-Platform user, I want to understand how Power Automate can streamline my business processes so that I can improve efficiency.
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: architecture-center
 ms.topic: conceptual
-ms.date: 04/22/2025
+ms.date: 03/24/2025
 ---
 
 # Power Automate reference architectures and solution ideas
@@ -15,18 +16,18 @@ With its automation capabilities, Power Automate helps you streamline your busin
 
 By understanding reference architectures and exploring solution ideas, you can unlock new opportunities for automation, optimization, and innovation within your organization.
 
-In this article, we will look at:
+In this article, we look at:
 
-- **Key concepts:** Learn about architecture key concepts that will help you build robust, efficient, and maintenable solutions with Power Automate.
+- **Key concepts**: Learn about architecture key concepts that help you build robust, efficient, and maintainable solutions with Power Automate.
 - **Reference architectures**: Explore foundational reference architectures that support building well-architected solutions with Power Automate.
-- **Solution Ideas**: Discover a range of solution ideas that demonstrate the versatility and power of Power Automate.
+- **Solution ideas**: Discover a range of solution ideas that demonstrate the versatility and power of Power Automate.
 
 ## Key concepts
 
 | Title | Description |
 | --- | --- |
 | **[Coding guidelines](/power-automate/guidance/coding-guidelines/)** | Learn about standards for naming objects, collections, and variables, and guidelines for developing consistent, performant, and easily maintainable flows. |
-| **[Robotic Process Automation with SAP](/power-automate/guidance/rpa-sap-playbook/introduction)** | Prototype the automation of an example SAP scenario with RPA. |
+| **[Robotic process automation with SAP](/power-automate/guidance/rpa-sap-playbook/introduction)** | Prototype the automation of an example SAP scenario with RPA. |
 
 ## Reference architectures
 
@@ -44,7 +45,7 @@ In this article, we will look at:
 
 | Title | Description |
 | --- | --- |
-| **[Healthcare Patient Support Agent architecture](../solution-ideas/agent-healthcare-patient-support.md)** | Streamline patient interactions and reduce administrative burdens for healthcare providers |
+| **[Healthcare patient support agent architecture](../solution-ideas/agent-healthcare-patient-support.md)** | Streamline patient interactions and reduce administrative burdens for healthcare providers |
 | **[Property rental portal with AI-driven search and payment processing](../solution-ideas/agent-rental-portal.md)** | Build a comprehensive rental portal that uses AI-driven search capabilities and seamless payment processing. |
 | **[Travel concierge using generative AI with Copilot Studio](../solution-ideas/agent-travel-customer.md)** | Employ an AI-driven solution to enhance customer interactions and streamline information access. |
 
