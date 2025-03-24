@@ -4,7 +4,7 @@ description: Learn how to manage feature settings to adjust how features appear 
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/28/2025
+ms.date: 03/18/2025
 ms.subservice: admin
 ms.author: sericks
 ms.reviewer: sericks
@@ -127,6 +127,12 @@ To update these settings, make sure you have the System Administrator or System 
 | Enable work or school accounts for hosted machine groups.| If **On**, your hosted machine group has access to your resources that are part of [your work or school account](/power-automate/desktop-flows/hosted-machine-groups#use-your-work-or-school-account). | On |
 | Enable hosted machines.| If **On**, users can build, test, and run attended and unattended desktop flows without providing or setting up any physical machine with [hosted machines](/power-automate/desktop-flows/hosted-machines). | On |
 | Enable cross-geo support for hosted machines| If **On**, this option allows users to provision hosted machines in a geography different from the configured tenant country. Learn more in [Azure tenant country/region and supported geographies in the public cloud](/power-automate/desktop-flows/hosted-machines#azure-tenant-countryregion-and-supported-geographies-in-the-public-cloud). | On |
+
+## Power Automate automation center
+
+| Setting | Description | Default value |
+|---------|-------------|---------------|
+| Enable Power Automate automation center preview features|If **On**, preview features are available in the automation center alongside the generally available features. | On |
 
 ## Enhanced desktop flows schema
 

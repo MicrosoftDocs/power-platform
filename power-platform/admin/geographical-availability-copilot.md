@@ -4,13 +4,14 @@ description: Learn how to turn on data movement across regions for Copilots and 
 author: amchern
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/14/2025
+ms.date: 03/20/2025
 ms.subservice: admin
 ms.author: amchern
 ms.reviewer: sericks
 search.audienceType:
   - admin
 contributors:
+  - CedrickBellarosa 
   - antoinecellerier 
   - JesseParsons
   - tapanm-msft
@@ -36,7 +37,6 @@ Copilots and generative AI features in [Microsoft Power Platform](/power-platfor
 However, Copilots and generative AI features aren't available in all regions and languages. In some cases, even where there is in region capacity, data must still move outside of the region for availability reasons or because certain features depend on other Microsoft services. For this reason and depending on where your environment is hosted and what features you use, you might need to allow data movement across regions to use Copilots and generative AI features. This article explains how to do that.
 
 > [!NOTE]
-> Keep the following points in mind:
 > - Copilots and generative AI features that are generally available are turned on by default. However, you might need to allow data movement across regions to use all Copilot and generative AI features.
 > - If you don't allow data movement across regions, that doesn't turn off all Copilots and generative AI features. Copilots and generative AI features are allowed as capacity is made available in the region.
 > - Certain generative AI features are powered by Microsoft 365 services and store data according to Microsoft 365 terms and data residency commitments. 
@@ -50,11 +50,11 @@ The following table lists the regions where your Power Platform or Dynamics 365 
 | Region where your Power Platform or Dynamics 365 environment is hosted | Region where Azure OpenAI Service is hosted | Region where data is stored and processed for Bing Search | 
 |-------------------------|-------------------------|-------------------------|
 | United States | In region* | United States| 
-| Europe\**  | Spain, Sweden, or Switzerland| United States |
-| France<br>Germany<br>Norway<br>Switzerland | Spain, Sweden, or Switzerland | United States|
+| Europe\**  | Norway, Spain, Sweden, or Switzerland| United States |
+| France<br>Germany<br>Norway<br>Sweden<br>Switzerland | Norway, Spain, Sweden, or Switzerland | United States|
 | Asia<br>Brazil<br>Canada<br>Japan<br>Korea<br>Singapore<br>South Africa<br>United Arab Emirates | United States | United States| 
 | Australia<br>India | In region* or United States | United States |
-| United Kingdom | In region*, Spain, Sweden, or Switzerland | United States |
+| United Kingdom | In region*, Norway, Spain, Sweden, or Switzerland | United States |
 | Government cloud (GCC, GCC High) | In region* | United States |
 
 \*In region means within the geographical region of your Power Platform or Dynamics 365 environment.
