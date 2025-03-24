@@ -516,6 +516,8 @@
               href: governance-considerations.md
             - name: Security for Dataverse
               items:
+                - name: New Article
+                  href: samesite-cookie-mgmt.md
                 - name: Dataverse security
                   href: wp-security.md
                 - name: Security concepts in Dataverse
