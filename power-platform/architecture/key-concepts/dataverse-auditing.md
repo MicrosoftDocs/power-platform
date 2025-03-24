@@ -1,11 +1,11 @@
 ---
-title: How to set up Dataverse auditing
-description: Learn how to set up Dataverse auditing to track data changes, user activities, and system events for compliance and security.
-#customer intent: As a Power Platform user, I want to set up Dataverse auditing so that I can track data changes, user activities, and system events for compliance and security.
+title: Dataverse auditing
+description: Empower your organization with Dataverse auditing to ensure accountability, detect risks, and align with regulatory standards.
+#customer intent: As a Power Platform admin, I want to set up Dataverse auditing so that I can track data changes, user activities, and system and business events for compliance and security.
 author: manuelap-msft
 ms.subservice: architecture-center
 ms.topic: example-scenario
-ms.date: 03/20/2025
+ms.date: 03/24/2025
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
 contributors:
@@ -15,16 +15,18 @@ ms.contributors:
 search.audienceType:
   - admin
   - flowmaker
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-description
+  - ai-seo-date:03/24/2025
 ---
 
-# How to set up Dataverse auditing
+# Dataverse auditing
+
+Dataverse auditing enables organizations to track data changes, user activities, and system and business events to ensure compliance and security.
 
 > [!TIP]
 > The article provides an example scenario and visual representation of how to establish Dataverse auditing. This solution is a generalized example scenario architecture, which can be used for many different scenarios and industries.
-
-Setting up Dataverse auditing is crucial for organizations that need to track data changes, user activities, and system events to ensure compliance and security. This article provides a comprehensive overview of how to enable and configure auditing in Microsoft Dataverse. It covers both data auditing and business event auditing, offering detailed use cases, architecture diagrams, and step-by-step instructions. By following this article, you learn how to maintain data integrity, monitor system usage, detect unauthorized access, and meet regulatory requirements such as GDPR and HIPAA.
-
-
 
 ## Architecture diagram
 
@@ -42,13 +44,13 @@ A financial institution needs to track data modifications and security incidents
 
 The components involved in this scenario interact as follows:
 
-- **Dataverse**: It's used to store and track compliance records, incidents, and approvals. Dataverse auditing needs to be enabled to track CRUD (create, read, update, and delete) actions and serves as the central data source for security tracking. Additionally, role-based security can be used to control access to sensitive compliance data.
+- **Dataverse**: Stores and tracks compliance records, incidents, and approvals. Dataverse auditing needs to be enabled to track CRUD (create, read, update, and delete) actions and serves as the central data source for security tracking. Additionally, role-based security can be used to control access to sensitive compliance data.
 
 - **Power Apps (model-driven and canvas)**: Security teams use model-driven apps to manage policies and regulations and provide structured compliance reviews for admin dashboards and reports. Canvas apps allow end users to self-monitor their data access and report any compliance violations or incidents via a user-friendly interface for submitting incidents.
 
-- **Power Automate**: It sends alerts to notify admins and security teams about suspicious activities.
+- **Power Automate**: Sends alerts to notify admins and security teams about suspicious activities.
 
-- **Power BI dashboard**: It helps admins and security teams analyze trends in security incidents.
+- **Power BI dashboard**: Helps admins and security teams analyze trends in security incidents.
 
 ### Persona-based audit consumption
 
@@ -145,7 +147,7 @@ The workflow for business event auditing in the example loan approval process in
 
 ## Considerations 
 
-These considerations implement the pillars of Power Platform Well-Architected, a set of guiding tenets that improve the quality of a workload. Learn more in [Microsoft Power Platform Well-Architected](/power-platform/well-architected/).
+[!INCLUDE [pp-arch-ppwa-link](../../includes/pp-arch-ppwa-link.md)]
 
 ## Contributors
 
