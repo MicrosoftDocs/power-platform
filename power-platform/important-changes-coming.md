@@ -12,7 +12,6 @@ author: sericks007
 ms.author: sericks
 ms.reviewer: sericks
 ---
-
 # Important changes (deprecations) coming in Power Platform
 
 The announcements and deprecations described in this article apply to Power Apps and Power Automate. Admins and IT professionals can use this information to prepare for future releases. This article was first published on June 27, 2017.
@@ -89,11 +88,11 @@ Effective June 1, 2025, customers will be unable to apply BYOK to production env
 
 If your migration to CMK isn't completed by January 6, 2026, your environment will automatically revert to Microsoft-managed keys. While this ensures continuity of encryption, it limits the control and flexibility you currently enjoy with BYOK. To avoid disruption and take full advantage of the enhanced features and security offered by CMK, we strongly recommend beginning your migration process as soon as possible. 
 
-We recommend starting your transition to CMK (customer-managed keys) at your earliest convenience, review [Manage your customer-managed encryption key](admin/customer-managed-key.md) and [Migrate bring-your-own-key (BYOK) environments to customer-managed key](admin/cmk-migrate-from-byok.md).
+We recommend starting your transition to CMK (customer-managed keys) at your earliest convenience. For more information, go to [Manage your customer-managed encryption key](admin/customer-managed-key.md) and [Migrate bring-your-own-key (BYOK) environments to customer-managed key](admin/cmk-migrate-from-byok.md).
 
 ## Deprecation of Organization Insights Dashboard
 
-The Organization Insights dashboard has been deprecated from the Microsoft Power Apps Default Solution dashbards. Similar organization insights are available in [Microsoft Dataverse analytics](admin/analytics-common-data-service.md).
+The Organization Insights dashboard has been deprecated from the Microsoft Power Apps Default Solution dashboards. Similar organization insights are available in [Microsoft Dataverse analytics](admin/analytics-common-data-service.md).
 
 As part of a service update to enhance security in Power Apps, we're removing Highcharts version 4.2.3.
 
@@ -668,7 +667,7 @@ When you access your Dataverse environment for the first time or every time afte
 
 The old URL redirector service, cloudredirector.crm.dynamics.com, was replaced in September 2019 with the new one, bn1--namcrlivesg614.crm.dynamics.com (just an example; the URL will differ based on your environment region). The old URL redirector service is deprecated, and will be removed on **March 31, 2020**.
 
-This change will impact you if you have created a bookmark of the sign-in page before September 2019 that contained the link to the old URL redirector service. The users impacted by this change will see a notification staring February 17, 2020 with instructions to resolve the issue. For detailed information about this issue and how to resolve it, see <https://support.microsoft.com/help/4541747>.
+This change will impact you if you have created a bookmark of the sign-in page before September 2019 that contained the link to the old URL redirector service. The users impacted by this change will see a notification starting February 17, 2020, with instructions to resolve the issue. For detailed information about this issue and how to resolve it, see <https://support.microsoft.com/help/4541747>.
 
 ## Deprecation of Office365 authentication type and OrganizationServiceProxy class for connecting to Dataverse
 
@@ -833,22 +832,15 @@ If you're currently using the Dynamics 365 for Blackberry App together with Mobi
 
 ## Usage of Parature knowledgebase as the knowledge management solution is deprecated
 
-Usage of Parature knowledgebase as the knowledge
-management solution is deprecated. This feature is replaced by Knowledge
-Management features in Dynamics 365 Customer Service.
+Usage of Parature knowledgebase as the knowledge management solution is deprecated. This feature is replaced by Knowledge Management features in Dynamics 365 Customer Service.
 
-The **Knowledge Solution** setting in the **Knowledge Base Management Settings**
-dialog box, which provides a connection to Pasture will be removed in a future major release.
+The **Knowledge Solution** setting in the **Knowledge Base Management Settings** dialog box, which provides a connection to Parature, will be removed in a future major release.
 
-![Knowledge Base Management Settings dialog .](media/deprecated-knowledge-management-settings.png "Knowledge Base Management Settings dialog")
+![Knowledge Base Management Settings dialog.](media/deprecated-knowledge-management-settings.png "Knowledge Base Management Settings dialog")
 
 ## Project Service Finder app is deprecated
 
-The Project Service Finder App, available for use with Dynamics 365 Project Service Automation, is deprecated. The legacy application will be supported for
-associated legacy Project Service Automation releases in accordance with
-Microsoft's [Modern Lifecycle
-Policy](https://support.microsoft.com/help/30881). The functionality
-available through this app will be available in a future release of Dynamics 365 Project Service Automation application.
+The Project Service Finder App, available for use with Dynamics 365 Project Service Automation, is deprecated. The legacy application will be supported for associated legacy Project Service Automation releases in accordance with Microsoft's [Modern Lifecycle Policy](https://support.microsoft.com/help/30881). The functionality available through this app will be available in a future release of Dynamics 365 Project Service Automation application.
 
 ## Relationship Roles are deprecated
 
@@ -864,8 +856,7 @@ generation using Word and Excel templates. You can use these templates to
 provide standardized documents or customized data analysis for your
 organization.
 
-Mail merge from previous versions is deprecated. This includes the mail-merge
-Word add-in and mail-merge templates (**Settings \> Templates \> Mail Merge
+Mail merge from previous versions is deprecated. This includes the mail-merge Word add-in and mail-merge templates (**Settings \> Templates \> Mail Merge
 Templates**).
 
 More information: [Create Word and Excel templates](/previous-versions/dynamicscrm-2016/admins-customizers-dynamics-365/mt826692(v=crm.8))
