@@ -24,37 +24,38 @@ When you turn on Dataverse search, it applies to all the model-driven apps withi
 
 [Dataverse search can be extended to additional Microsoft Search canvases](/microsoftsearch/manage-dynamics365), including SharePoint Online, Bing, and Office. When an additional Microsoft Search canvas' connector is turned on, users can search for and find information from the selected canvas just as they would if searching in the app. For example, you could quickly look up a contact's phone number or email address without opening the app.
 
-## Learn about the benefits of Dataverse search
+## Benefits of Dataverse search
 
 Dataverse search helps you quickly find what you are looking for in model-driven apps. As part of its search capabilities, indexed data is leveraged across generative AI experiences&mdash; such as Copilot experiences&mdash; to fetch records and use them as answers. Dataverse search is how Microsoft allows rich search and AI-powered experiences across different products that use Dataverse as one of the data sources, subject to Copilot feature availability.
 
-Dataverse search delivers many benefits:
+Dataverse search has these benefits:
 
-- **Fast and accurate search**: Provides a precise and quick search experience for model-driven apps, and performance that's superior to [categorized search](quick-find.md#multiple-table-quick-find-categorized-search).
+- **Fast and accurate search**. Provides a precise and quick search experience for model-driven apps, and performance that's superior to [categorized search](/power-apps/user/quick-find#multiple-table-quick-find-categorized-search).
 
-- **Enables generative AI experiences:** Provides a superior knowledge experience for search and agents for data in Dataverse tables and files uploaded in Microsoft Copilot Studio.
-    > [!Note]
-    > Searching across images isn't supported.
+- **Generative AI experiences**. Provides generative AI-powered search and work experiences using Copilot when Dataverse tables and files are uploaded in Microsoft Copilot Studio,
 
-- **Suggested results as you type**: Finds what you're looking for and shows you the top results, as you type.
+> [!NOTE]
+> Searching across images isn't supported.
 
-- **Better matching**: Finds matches to any word in the search term for columns in a table. Provides a better user experience compared to [quick find](quick-find.md) search, where all words in the search term must be found in one column.
+- **Suggested results as you type**. Finds what you're looking for and shows you the top results, as you type.
 
-- **Smart**: Finds matches that include inflectional words such as **stream**, **streaming**, or **streamed**.
+- **Better matching**. Finds matches to any word in the search term for columns in a table. Provides a better user experience compared to [quick find](/power-apps/user/quick-find) search, where all words in the search term must be found in one column.
 
-- **Search activities**: Search includes notes and attachments in activities.
+- **Smart**. Finds matches that include inflectional words such as **stream**, **streaming**, or **streamed**.
 
-- **Understanding of underlying data**: Understands data types like **Choice** and **Lookup**, so it can effectively interpret a search query that includes multiple search terms.
+- **Search activities**. Search includes notes and attachments in activities.
 
-- **Operators for advanced search**: Lets you use simple Boolean operators in your search term and craft the query to get the results you want.
+- **Understanding of underlying data**. Understands data types like **Choice** and **Lookup**, so it can effectively interpret a search query that includes multiple search terms.
 
-- **Intelligence**: Applies AI technology to interpret natural language such as misspellings, common abbreviations, and synonyms to delivers quality results.
+- **Operators for advanced search**. Lets you use simple Boolean operators in your search term and craft the query to get the results you want.
+
+- **Intelligence**. Applies AI technology to interpret natural language such as misspellings, common abbreviations, and synonyms to delivers quality results.
   
-- **Search across documents in Microsoft Dataverse**: Includes search results for text in documents that are stored in Dataverse such as PDF, Microsoft Office documents, HTML, XML, ZIP, EML, plain text, and JSON file formats. It also searches text in notes and attachments.
+- **Search across documents in Microsoft Dataverse**. Includes search results for text in documents that are stored in Dataverse such as PDF, Microsoft Office documents, HTML, XML, ZIP, EML, plain text, and JSON file formats. It also searches text in notes and attachments.
   
 For more information about Dataverse search, see [Search for tables and rows by using Dataverse search](/powerapps/user/relevance-search).
 
-### What makes Dataverse search?
+### Dataverse search composition
 
 Dataverse search consists of two separate indexes that power different experiences:
 
@@ -73,9 +74,9 @@ Dataverse search consists of two separate indexes that power different experienc
 
 - All searchable fields in Dataverse search are processed in the language most closely matching the organization's base language, except Kazakh where all fields are processed using a basic, language-agnostic text processor.
 
-## Turn on Dataverse search
+## Dataverse search
 
-Dataverse search is an opt-out feature, set to **On** for all new production environments or **Default** for all new other environment types by default. We recommend turning on Dataverse search so users have a superior search experience in model-driven apps, as well as to allow generative AI-powered experiences like Copilot, with the benefits listed above.
+Dataverse search is an opt-out feature, set to **On** for all new production environments or **Default** for all new other environment types by default. We recommend turning on Dataverse search so users have a superior search experience in model-driven apps, as well as to allow generative AI-powered experiences like Copilot.
 
 - When **On**, all model-driven Power Apps have the global search experience with the search bar in the header of the environment. Users can enjoy the benefits of searching and working with AI.
 - When **Default**, no model-driven Power Apps have the global search experience with the search bar in the header of the environment. Users can enjoy the benefits of working with AI, once these experience are enabled.
@@ -145,7 +146,7 @@ The **Share anonymized search analytics with Microsoft** option is **Off**, by 
 
 ## Set up Dataverse search
 
-Setting up Dataverse search after turning it on in the Power Platform admin center involves three steps:
+Setting up Dataverse search after turning it on in the Power Platform admin center involves four steps:
 
 1. Select the searchable tables for Dataverse search.
 
@@ -153,7 +154,7 @@ Setting up Dataverse search after turning it on in the Power Platform admin cent
 
 3. Ensure the tables allowed for Dataverse search are included in the model-driven app. Use the app designer to verify that the table is included in an app's components. For more information, go to [Add or edit model-driven app components](/powerapps/maker/model-driven-apps/add-edit-app-components#add-a-component).
 
-4. Make sure your table is customizable and that the settings to **Track changes** and **Appear in search results** in the **Advanced options** are both set to **On**. For more information, go to [Create and edit tables using Power Apps](/power-apps/maker/data-platform/create-edit-entities-portal?tabs=excel).
+4. Make sure your table is customizable and that the settings to **Track changes** and **Appear in search results** in the **Advanced options** area are both set to **On**. For more information, go to [Create and edit tables using Power Apps](/power-apps/maker/data-platform/create-edit-entities-portal?tabs=excel).
 
 ### Select tables for Dataverse search
 
@@ -272,21 +273,21 @@ To edit the searchable fields of a table:
 >
 > - If the length of text in a table column is changed and the column is set to **Simple Search view**, the import may not be successful and you may see this error:
 >
->_Length is not valid because this is an indexed attribute and hence cannot have size greater than 1700_.
+> - _Length is not valid because this is an indexed attribute and hence cannot have size greater than 1700_.
 >
-> The indexed attribute can't extend beyond 1700 bytes. If the corresponding column is registered in the **Quick Find view**, remove the corresponding column from the **Quick Find view** and try to re-export after a time interval.  If you change or delete a **Quick Find view** setting, it may take up to 24 hours to be reflected in the index, as it is a once-a-day maintenance job for the on-premises product.  For more information, go to [Maximum capacity specifications for SQL Server](/sql/sql-server/maximum-capacity-specifications-for-sql-server?view=sql-server-ver16&preserve-view=true).
+> - The indexed attribute can't extend beyond 1700 bytes. If the corresponding column is registered in the **Quick Find view**, remove the corresponding column from the **Quick Find view** and try to re-export after a time interval.  If you change or delete a **Quick Find view** setting, it may take up to 24 hours to be reflected in the index, as it is a once-a-day maintenance job for the on-premises product.  For more information, go to [Maximum capacity specifications for SQL Server](/sql/sql-server/maximum-capacity-specifications-for-sql-server?view=sql-server-ver16&preserve-view=true).
 >
 > - Updates to calculated fields and lookups are not automatically synced in Dataverse search. Data is refreshed whenever a field that is configured for Dataverse search is updated in a record.
 >
 > - There are some common fields, that are part of every table in Dataverse, so you'll see these fields in the Dataverse search index by default. Some common field examples are:
 >
->   - ownerid (Name of lookup)
->   - owningbusinessunit (Name of lookup)
->   - statecode (Label of optionset)
->   - statuscode (Label of optionset)
->   - name (Primary name field of any table. This may or may not be the same as the logical name for example, _fullname_ or _subject_ of the table.)
+>   - **ownerid** (Name of lookup)
+>   - **owningbusinessunit** (Name of lookup)
+>   - **statecode** (Label of optionset)
+>   - **statuscode** (Label of optionset)
+>   - **name** (Primary name field of any table that may or may not be the same as the logical name, such as _fullname_ or _subject_, of the table.)
 >
-> If a common field is added to any table for Dataverse search, search is performed for that common field across all entities. However, once you choose a specific table through the Record Type facet, Dataverse search follows the settings you have defined for that specific table through Quick Find view.
+> - If a common field is added to any table for Dataverse search, search is performed for that common field across all entities. However, once you choose a specific table through the Record Type facet, Dataverse search follows the settings you have defined for that specific table through Quick Find view.
 
 ### Configure quick actions that appear with Dataverse search in model-driven apps
 
@@ -331,9 +332,9 @@ These three new enable rules give you the flexibility to optimize quick actions:
 
 ## Set managed properties for Dataverse search
 
-If you want to include a table for Dataverse search, the **Can enable sync to external search index** managed property must be set to **True** for the table. By default, the property is set to **True** for some of the out-of-the-box tables and all custom tables. Some of the system tables can't be enabled for Dataverse search.
+If you include a table for Dataverse search, the **Can enable sync to external search index** managed property must be set to **True** for the table. By default, the property is set to **True** for some of the out-of-the-box tables and all custom tables. Some of the system tables can't be enabled for Dataverse search.
 
-To set the managed property, do the following:
+To set the managed property, take these steps:
 
 1. Go to **Advanced Settings** > **Customizations**.
 
@@ -347,14 +348,20 @@ To set the managed property, do the following:
 
 5. Select **Publish** for your changes to take effect.
 
-If you want to change the **Can enable sync to external search index** property to **False**, you must first deselect the table from Dataverse search. If the table is included in Dataverse search, you'll see the following message: "This entity is currently syncing to an external search index. You must remove the entity from the external search index before you can set the **Can enable sync to external search index** property to **False**."
+If you want to change the **Can enable sync to external search index** property to **False**, you must first deselect the table from Dataverse search. This message appears if the table is included in the Dataverse search:
 
-If **Can enable sync to external search index** is set to **False**, you'll see the following message when you try to include a table in Dataverse search: _Entity can't be enabled for Dataverse search because of the configuration of its managed properties_. For custom tables with sensitive data, consider setting the **Can enable sync to external search index** property to **False**.
+_This entity is currently syncing to an external search index. You must remove the entity from the external search index before you can set the **Can enable sync to external search index** property to **False**._
+
+If **Can enable sync to external search index** is set to **False** and you try to include a table in Dataverse search, this message appears:
+
+_Entity can't be enabled for Dataverse search because of the configuration of its managed properties_. For custom tables with sensitive data, consider setting the **Can enable sync to external search index** property to **False**._
 
 > [!IMPORTANT]
-> Keep in mind that once you install the managed solution on the target system, you aren't able to change the value of the property because it's a managed property.
+> Once you install the managed solution on the target system it becomes a managed property and you aren't able to change the value of the property.
 
-## Dataverse search reporting
+## Dataverse search reporting FAQs
+
+This section provides answers to frequently asked questions about Dataverse search reporting.
 
 ### How can I find out how much storage is consumed by Dataverse search?
 
@@ -379,9 +386,9 @@ Dataverse search consumes against the [Dataverse entitlements available within y
 
 ## Managing Dataverse search
 
-Storage used by Dataverse search was already reported and charged at the environment level as a table called "RelevanceSearch" and charged by its GB capacity.
+Dataverse search storage is already reported and charged at the environment level as a table called _RelevanceSearch_ and charged by its GB capacity.
 
-There are 3 states associated with this setting:
+There are three states associated with this setting:
 
 ### On
 
