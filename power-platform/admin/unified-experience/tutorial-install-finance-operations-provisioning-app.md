@@ -1,11 +1,11 @@
 ---
-title: "Tutorial: Install the Finance and Operations Provisioning app  | Microsoft Docs"
+title: "Tutorial: Install the Finance and Operations Provisioning app"
 description: Learn how to install the Finance and Operations Provisioning app onto an existing Power Platform environment.
 author: laneswenka
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 09/20/2024
+ms.date: 03/24/2025
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
@@ -40,11 +40,11 @@ For example, a customer who already purchased other Dynamics 365 apps wants to a
 
 - Your license administrator must assign the license to your user account in Microsoft Entra. You can review the licenses currently assigned to you from the [Subscriptions](https://portal.office.com/account/?ref=MeControl#subscriptions) page.
 - Have at least 1 GB of available Operations and Dataverse database capacities. For more information, see [Manage storage and capacity](../finance-operations-storage-capacity.md).
-- You must use an environment of type **Sandbox** or **Trial (subscription-based)** where the **Enable Dynamics 365 apps** option was turned on when the environment is created. This option is a prerequisite for all Dynamics 365 apps, including Sales, Customer Service, Field Service, and all finance and operations apps.
+- You must use an environment of type **Sandbox** or **Trial (subscription-based)** where the **Enable Dynamics 365 apps** option was turned on when the environment was created. This option is a prerequisite for all Dynamics 365 apps, including Sales, Customer Service, Field Service, and all finance and operations apps.
 
     > [!IMPORTANT]
     > If you try to install without turning on the **Enable Dynamics 365 apps** option, you receive an error message that says, _Dynamics 365 Finance and Operations Provisioning App isn't supported on SchemaType: Standard_. The schema isn't a visible property in the Power Platform admin center and can't be changed after the environment is created. You can try to install finance and operations apps in another environment, or you can [create an environment by using an ERP template](./tutorial-deploy-new-environment-with-ERP-template.md).
-    > Support for envionments of type **Production** is not available. However, it will be supported in future.
+    > Support for envionments of type **Production** isn't available. However, support is planned for the future.
     
 
 - You must install the platform tools app before you install the provisioning app. Detailed steps are given in the [Install on an environment](#install-on-an-environment) section.
