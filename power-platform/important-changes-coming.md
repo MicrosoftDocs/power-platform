@@ -1,7 +1,7 @@
 ---
 title: Important changes (deprecations) coming in Power Platform
 description: Important changes (deprecations) coming in Power Platform 
-ms.date: 03/19/2025
+ms.date: 03/24/2025
 ms.topic: conceptual
 ms.subservice: admin
 searchScope:
@@ -20,6 +20,10 @@ For deprecation information of other products, see [Other deprecation articles](
 
 > [!IMPORTANT]
 > "Deprecated" means we intend to remove the feature or capability from a future release. The feature or capability is fully supported until it's officially removed. This deprecation notification can span a few months or years. After removal, the feature or capability will no longer work. This notice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
+
+## Deprecation of rich text editor classic experience
+
+Starting April 18, 2025, the classic rich text editor experience will be deprecated and no longer supported in Dynamics 365 apps. The new, modernized rich text editor is the default experience, and customers who use the classic experience will be upgraded automatically. Learn more in [Modern text editor enhancements](/power-apps/maker/model-driven-apps/rich-text-editor-control.md#modern-text-editor-enhancements).
 
 ## Deprecation of support for personal Microsoft service accounts in Power Automate
 
