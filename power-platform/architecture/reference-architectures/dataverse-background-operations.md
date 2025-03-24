@@ -1,11 +1,11 @@
 ---
 title: Dataverse background operations
 description: Learn how to execute requests as background operations in Microsoft Dataverse using custom APIs for efficient asynchronous processing.
-#customer intent: As a flowmaker, I want to define custom messages and implement business logic through plug-ins so that I can use background processing in Dataverse.
+#customer intent: As a Power-Platform user, I want to define custom messages and implement business logic through plug-ins so that I can use background processing in Dataverse.
 author: manuelap-msft
 ms.subservice: architecture-center
 ms.topic: example-scenario
-ms.date: 04/22/2025
+ms.date: 03/24/2025
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
 contributors:
@@ -19,12 +19,14 @@ search.audienceType:
 
 # Dataverse background operations
 
+> [!TIP]
+> The article provides an example scenario and visual representation of how to implement background operations in Dataverse. This solution is a generalized example scenario architecture, which can be used for many different scenarios and industries.
+
 In Microsoft Dataverse, executing requests as background operations enhances asynchronous processing efficiency. Using custom APIs, you define custom messages and implement business logic through plug-ins, allowing for background processing that eliminates the need for a persistent connection during execution.
 
 This article explains the workflow, use cases, and considerations for implementing background operations in Dataverse to ensure scalable and reliable performance for long-running tasks.
 
-> [!TIP]
-> The article provides an example scenario and visual representation of how to implement background operations in Dataverse. This solution is a generalized example scenario architecture, which can be used for many different scenarios and industries.
+
 
 ## Architecture diagram
 
@@ -32,7 +34,7 @@ This article explains the workflow, use cases, and considerations for implementi
 
 ## Workflow
 
-To execute a request as a background operation in Microsoft Dataverse, define the operation as a custom API. Custom APIs allow you to define the custom messages and implement business logic through plug-ins. By configuring the operation as a custom API, you use background processing to handle requests asynchronously and eliminate the need to maintain a persistent connection during execution.
+To run a request as a background operation in Microsoft Dataverse, define the operation as a custom API. Custom APIs allow you to define custom messages and implement business logic through plug-ins. By configuring the operation as a custom API, you use background processing to handle requests asynchronously and eliminate the need to maintain a persistent connection during execution.
 
 Background operations in Dataverse employ:
 
@@ -49,7 +51,7 @@ Background operations in Dataverse employ:
 To implement background operations in Dataverse, follow these steps:
 
 1. Trigger a background operation using Microsoft Dataverse in Power Automate.
-1. Schedule the operation via Recurrence triggers.
+1. Schedule the operation via recurrence triggers.
 1. Use the Perform a Background Operation action (Premium) in Dataverse to handle the operation asynchronously.
 1. Call the `OnBackgroundOperationComplete` event action from Power Automate or the API to receive the completion.
 
