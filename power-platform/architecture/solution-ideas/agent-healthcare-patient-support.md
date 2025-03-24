@@ -52,7 +52,7 @@ Data sources include Microsoft Dataverse, Azure Data Lake, and Azure Synapse Ana
 ### User interface
 
 - **[Patient access portal](/power-pages/)**: Provides a user-friendly interface for patients to manage their healthcare interactions. It's built on Power Pages for its rapid development capabilities and seamless integration with other Power Platform components.
-- **[Patient interactions agent](/copilot-studio/)**: Uses AI-driven agents to assist with patient queries and appointment scheduling. It's chosen for its ability to provide real-time responses and reduce human intervention. It's built on Microsoft Copilot Studio for rapid development, knowledge retrieval (RAG) capabilities, and seamless integration with other Power Platform components.
+- **[Patient interactions agent](/microsoft-copilot-studio/)**: Uses AI-driven agents to assist with patient queries and appointment scheduling. It's chosen for its ability to provide real-time responses and reduce human intervention. It's built on Microsoft Copilot Studio for rapid development, knowledge retrieval (RAG) capabilities, and seamless integration with other Power Platform components.
 - **[Power BI dashboards](/power-bi/)**: Visualizes operational and patient-centric data to provide actionable insights. It's chosen for its integration with Dataverse and ability to create interactive, real-time dashboards.
 
 ### Platform governance, compliance, and fundamentals
@@ -79,7 +79,7 @@ These considerations implement the pillars of Power Platform Well-Architected, a
 ### Security
 
 - Enforced [record-level security](/power-platform/admin/wp-security-cds#record-level-security-in-dataverse) in Dataverse to protect sensitive patient data.
-- [Dataverse auditing](../reference-architectures/dataverse-auditing.md) to track changes and ensure accountability.
+- [Dataverse auditing](../key-concepts/dataverse-auditing.md) to track changes and ensure accountability.
 - [Centralized error logging and monitoring](/power-platform/well-architected/security/monitor-threats) for quick issue resolution.
 
 ### Performance efficiency

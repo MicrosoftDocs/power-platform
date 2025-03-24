@@ -106,7 +106,7 @@ For agents, the principle of "garbage in, garbage out" highlights the importance
 
 Implementing row-level security in Dataverse allows precise control over access to sensitive customer data, ensuring that only authorized individuals can view or update specific records. Combined with the security features of Power Platform, this approach not only safeguards customer information but also simplifies compliance and audits,  enhancing trust in your digital services.
 
-- [Security and compliance considerations for intelligent application workloads](/well-architected/intelligent-application/security)
+- [Security and compliance considerations for intelligent application workloads](/power-platform/well-architected/intelligent-application/security)
 - [Security concepts in Microsoft Dataverse](/power-platform/admin/wp-security-cds)
 - [Managed security](/power-platform/admin/security/managed-security)
 
