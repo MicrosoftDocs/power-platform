@@ -5,8 +5,8 @@ ms.subservice: admin
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/24/2025
-author: sericks007
-ms.author: sericks
+author: abhijananddv
+ms.author: abhijanand
 ms.reviewer: sericks
 search.audienceType: 
   - admin
