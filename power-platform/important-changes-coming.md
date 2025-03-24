@@ -21,6 +21,17 @@ For deprecation information of other products, see [Other deprecation articles](
 > [!IMPORTANT]
 > "Deprecated" means we intend to remove the feature or capability from a future release. The feature or capability is fully supported until it's officially removed. This deprecation notification can span a few months or years. After removal, the feature or capability will no longer work. This notice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
 
+## Deprecation of SQL server connector's V1 actions
+The [SQL server connector’s V1 actions]([/power-platform/developer/create-developer-environment](https://learn.microsoft.com/en-us/connectors/sql/#migrate-v1-operations-to-v2-equivalent)) are being retired and starting 30 June 2025 these actions will no longer be supported and will be disabled.
+
+We have V2 actions already available in the SQL server connector which can be used as an alternative. You can find more details about the new V2 actions here: [SQL server actions]([/power-platform/developer/create-developer-environment](https://learn.microsoft.com/en-us/connectors/sql/#migrate-v1-operations-to-v2-equivalent)). We strongly encourage you to migrate to the new V2 actions as soon as possible to take full advantage of these improvements.
+
+### How does this affect me? 
+If action isn’t taken, beginning 30 June 2025, the application(s) using the V1 actions of SQL server will be impacted and may no longer function as expected.
+
+### Required action
+Please make sure you replace the V1 actions with the new V2 actions of the SQL server connector in all of the applications utilizing it. If you need assistance in Migrating V1 operations to V2 equivalent. Please check here: [SQL server actions]([/power-platform/developer/create-developer-environment](https://learn.microsoft.com/en-us/connectors/sql/#migrate-v1-operations-to-v2-equivalent))
+
 ## Deprecation of support for personal Microsoft service accounts in Power Automate
 
 Starting on June 30, 2025, support for personal Microsoft service accounts will be deprecated in Power Automate. Users signing in with personal email accounts, such as Gmail.com or Outlook.com, will lose access to all features within the Power Automate portal and mobile app. Power Automate Desktop won't be affected and will continue to work with personal email accounts.
