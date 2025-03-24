@@ -16,9 +16,6 @@ contributors:
 - MSFTSimranKaur 
 ---
 
-<!-- In line 44, should Cosmos instead be Azure Cosmos DB? Here's a style guide entry: https://learn.microsoft.com/en-us/product-style-guide-msft-internal/a_z_names_terms/a/azure-cosmos-db -->
-
-
 # Manage the encryption key 
 
 [!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
@@ -41,7 +38,7 @@ Encryption key management is only applicable to Azure SQL environment databases.
 > [!NOTE] 
 > - The self-managed database encryption key feature must be turned on by Microsoft for your tenant before you can use the feature.  
 > - To use the data encryption management features for an environment, the environment must be created *after* the self-managed database encryption key feature is turned on by Microsoft.
-> - After the feature is turned on in your tenant, all new environments are created with Azure SQL storage only. These environments, regardless of whether they're encrypted with bring-your-own-key (BYOK) or a Microsoft-managed key, have restrictions with file upload size, can't use Cosmos and data lake services, and Dataverse search indexes are encrypted with a Microsoft-managed key. To use these services, you must [migrate to a customer-managed key](cmk-migrate-from-byok.md).
+> - After the feature is turned on in your tenant, all new environments are created with Azure SQL storage only. These environments, regardless of whether they're encrypted with bring-your-own-key (BYOK) or a Microsoft-managed key, have restrictions with file upload size, can't use Azure Cosmos DB and data lake services, and Dataverse search indexes are encrypted with a Microsoft-managed key. To use these services, you must [migrate to a customer-managed key](cmk-migrate-from-byok.md).
 > - [Files](/powerapps/developer/data-platform/file-attributes) and [Images](/powerapps/developer/data-platform/image-attributes) with sizes of less than 128 MB can be used if your environment is version 9.2.21052.00103 or higher.
 > - Most existing environments have file and log stored in non-Azure SQL databases. These environments can't be opted in to the self-managed encryption key. Only new environments (once you sign up for this program) can be enabled with a self-managed encryption key.
 
