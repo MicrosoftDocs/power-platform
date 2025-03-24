@@ -43,7 +43,8 @@ For example, a customer who already purchased other Dynamics 365 apps wants to a
 - You must use an environment of type **Sandbox** or **Trial (subscription-based)** where the **Enable Dynamics 365 apps** option was turned on when the environment is created. This option is a prerequisite for all Dynamics 365 apps, including Sales, Customer Service, Field Service, and all finance and operations apps.
 
     > [!IMPORTANT]
-    > If you try to install without turning on the **Enable Dynamics 365 apps** option, you receive an error message that says, _Dynamics 365 Finance and Operations Provisioning App isn't supported on SchemaType: Standard_. The schema isn't a visible property in the Power Platform admin center and can't be changed after the environment is created. You can try to install finance and operations apps in another environment, or you can [create an environment by using an ERP template](./tutorial-deploy-new-environment-with-ERP-template.md).  
+    > If you try to install without turning on the **Enable Dynamics 365 apps** option, you receive an error message that says, _Dynamics 365 Finance and Operations Provisioning App isn't supported on SchemaType: Standard_. The schema isn't a visible property in the Power Platform admin center and can't be changed after the environment is created. You can try to install finance and operations apps in another environment, or you can [create an environment by using an ERP template](./tutorial-deploy-new-environment-with-ERP-template.md).
+    > Support for envionments of type **Production** is not available. However, it will be supported in future.
     
 
 - You must install the platform tools app before you install the provisioning app. Detailed steps are given in the [Install on an environment](#install-on-an-environment) section.
