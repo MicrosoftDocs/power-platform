@@ -16,6 +16,8 @@ search.audienceType:
 ---
 # Column-level security example
 
+This scenario describes how to use Dataverse [column-level security](field-level-security.md).
+
 Imagine your company's policy is that sales members should have different levels of access to contact mobile phone numbers, as described here.  
   
 |User or Team|Access|  
