@@ -31,7 +31,7 @@ You can use column level security to prevent certain users from:
 > 
 > Column-level security doesn't apply for users who have the system administrator role. Data is never hidden from system administrators. To verify the configured results, you must use an an account that doesn't have the system administrator security role assigned.
 
-Column-level security is available [for most columns](#which-columns-can-be-secured). This is the process:
+Column-level security is available [for most columns](#which-columns-can-be-secured) using this process:
   
 1. [Enable column-level security](#enable-column-security) on one or more columns for a given table.
 1. Optionally, select a [masking rule](create-manage-masking-rules.md).  
@@ -39,6 +39,8 @@ Column-level security is available [for most columns](#which-columns-can-be-secu
  
   
 ## Enable column security
+
+Use the following steps to secure a column:
 
 1. Sign in to [Power Apps](https://make.powerapps.com/).
 1. Select **Solutions**.
@@ -59,22 +61,27 @@ Column-level security is available [for most columns](#which-columns-can-be-secu
 
 A column security profile determines:
 
-- Permissions to the secure columns.  
 - Users and teams assigned access.
+- Permissions to the secure columns.  
 
-You can configure a security profile to grant user or team members the following permissions at the column level:  
+Use a column security profile to grant user or team members the following permissions:
 
-- **Read**: Read-only access to the column's data.
-- **Read unmasked**: The Read column's data [unmasked values](create-manage-masking-rules.md).
-- **Create**: Users or teams in this profile can add data to this column when creating a row.  
-- **Update**: Users or teams in this profile can update the column's data after it's created.  
+|Permission|Options|Result|
+|---------|---------|---------|
+|**Read**|**Allowed**<br />**Not Allowed**|Whether people can view the data for the column.<br />Masked values are shown if masking rule is applied to the column.|
+|**Read unmasked**|**All Records**<br />**One record**<br />**Not Allowed**| When a secured column has a masking rule, a developer can write code to request unmasked data be returned.<br />This setting controls whether or not that request succeed.<br />The default setting is **Not Allowed**.<br />[Learn more about granting permissions to a secured column with a masking rule](create-manage-masking-rules.md#grant-permissions-to-a-secured-column-with-a-masking-rule) |
+|**Update**|**Allowed**<br />**Not Allowed**|Whether people can update the data in the column.|
+|**Create**|**Allowed** <br />**Not Allowed**|Whether people can set the data in the column when creating a record.|
 
 Configure a combination of these four permissions to determine the user privileges for a specific data column.  
 
 > [!IMPORTANT]
 > Unless one or more security profiles are assigned to a column with security, only users with the system administrator security role can access the column. 
+> Any users not defined in the column security profiles won't have access to the column on forms or views. The column value displays ![Lock icon.](../admin/media/admin-field-level-security-lock.png "Lock icon") ********, indicating that the column is secured.
 
 <!-- fwlink  https://go.microsoft.com/fwlink/?linkid=2193903 -->
+
+### Add a column and set permissions for a column security profile
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) using an account that is assigned the System Administrator security role.
 1. Select the environment to configure security profiles for. 
@@ -82,18 +89,7 @@ Configure a combination of these four permissions to determine the user privileg
 1. Select an existing profile, or select **New Profile**, enter a name, enter a description, and then select **Save**.  
 1. Select the **Teams** or **Users** tab, select **+ Add Teams** or **+ Add Users**, select the teams or users that you want to control access, and then select **Add**.
 1. Select the **Column Permission** tab, in the **Name** column select one or more columns, and then select **Edit**. Configure the four properties for the desired access.  These permissions control whether people in this security profile can read or set column values.
-
-   |Permission|Options|Result|
-   |---------|---------|---------|
-   |**Read**|**Allowed**<br />**Not Allowed**|Whether people can view the data for the column. Masked values are shown if masking rule is applied to the column.|
-   |**Read unmasked**|**All Records**<br />**One record**<br />**Not Allowed**| When a secured column has a masking rule, a developer can write code to request unmasked data be returned. This setting controls whether or not that request will be allowed. The default setting is **Not Allowed**. [Learn more about granting permissions to a secured column with a masking rule](create-manage-masking-rules.md#grant-permissions-to-a-secured-column-with-a-masking-rule) |
-   |**Update**|**Allowed**<br />**Not Allowed**|Whether people can update the data in the column.|
-   |**Create**|**Allowed** <br />**Not Allowed**|Whether people can set the data in the column when creating a record.|
-
 1. Select **Save**.
-
-Any users not defined in the column security profiles won't have access to the column on forms or views. The column value displays ![Lock icon.](../admin/media/admin-field-level-security-lock.png "Lock icon") ********, indicating that the column is secured.
-
 
 ## Which columns can be secured?  
 
