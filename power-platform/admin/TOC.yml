@@ -598,6 +598,8 @@
                       href: add-teams-users-field-security-profile.md
                     - name: Create and manage masking rules (preview)
                       href: create-manage-masking-rules.md
+                    - name: Example
+                      href: column-level-security-example.md
                 - name: Teams and team templates
                   items:
                     - name: Manage teams
