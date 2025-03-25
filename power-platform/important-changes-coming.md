@@ -35,6 +35,10 @@ If action isn't taken, beginning 30 June 2025, the application(s) using the V1 a
 
 Please make sure you replace the V1 actions with the new V2 actions of the SQL server connector in all of the applications utilizing it. If you need assistance in Migrating V1 operations to V2 equivalent. Please check here: [SQL server actions](/connectors/sql/#migrate-v1-operations-to-v2-equivalent)
 
+## Deprecation of rich text editor classic experience
+
+Starting April 18, 2025, the classic rich text editor experience will be deprecated and no longer supported in Dynamics 365 apps. The new, modernized rich text editor is the default experience, and customers who use the classic experience will be upgraded automatically. Learn more in [Modern text editor enhancements](/power-apps/maker/model-driven-apps/rich-text-editor-control#modern-text-editor-enhancements).
+
 ## Deprecation of support for personal Microsoft service accounts in Power Automate
 
 Starting on June 30, 2025, support for personal Microsoft service accounts will be deprecated in Power Automate. Users signing in with personal email accounts, such as Gmail.com or Outlook.com, will lose access to all features within the Power Automate portal and mobile app. Power Automate Desktop won't be affected and will continue to work with personal email accounts.
