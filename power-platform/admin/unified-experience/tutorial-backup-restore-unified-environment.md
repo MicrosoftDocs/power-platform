@@ -4,8 +4,8 @@ description: This tutorial demonstrates how to backup and restore unified enviro
 author: tapa
 ms.reviewer: sericks
 ms.component: pa-admin
-ms.topic: reference
-ms.date: 03/24/2025
+ms.topic: how-to
+ms.date: 03/25/2025
 ms.subservice: admin
 ms.author: tapa
 search.audienceType: 
