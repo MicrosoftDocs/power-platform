@@ -47,6 +47,7 @@ This article outlines a solution idea for a travel company's customer service, e
 
 Knowledge refers to the information and data sources that agents use to provide relevant and accurate responses.
 
+- **Rescheduling documents**: Documents that contain information about each how to go about rescheduling vacations. 
 - **Travel documents**: Documents that contain information about recommendations for destinations, identification customers might need, visa’s etc. 
 - **Insurance policy documents**: Documents that contain information about insurance policies. 
 - **Customer service website**: Linking to the location on the website to the Customer Service information. 
@@ -136,4 +137,4 @@ Learn more: [Responsible AI considerations for intelligent application workloads
 - [Power Platform Well-Architected](/power-platform/well-architected/)
 - [Copilot Studio documentation](/microsoft-copilot-studio/)
 - [Copilot Studio guidance](/microsoft-copilot-studio/guidance/)
-- [Copilot Studio implemnentation guide](https://aka.ms/CopilotStudioImplementationGuide)
+- [Copilot Studio implementation guide](https://aka.ms/CopilotStudioImplementationGuide)
