@@ -51,13 +51,13 @@ Use the following steps to secure this column.
 
 ## Configure security profiles
   
-1. From the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select the environment to configure security profiles for. 
-1. Select **Settings** > **Users + permissions** > **Column security profiles**. 
-1.  Select **New Profile**, enter a name, such as *Sales Manager*, enter a description, and then select **Save**.  
+1. From the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select the environment to configure security profiles for.
+1. Select **Settings** > **Users + permissions** > **Column security profiles**.
+1. Select **New Profile**, enter a name, such as *Sales Manager*, enter a description, and then select **Save**.  
 
    :::image type="content" source="media/field-security-new-profile.png" alt-text="Screenshot showing how to create a new column security profile.":::
 
-1. Select **Sales Manager**, select the **Users** tab, select **+ Add Users**, select the users that you want to grant access to the mobile phone number on the contact form, and then select **Add**.   
+1. Select **Sales Manager**, select the **Users** tab, select **+ Add Users**, select the users that you want to grant access to the mobile phone number on the contact form, and then select **Add**.
 
    > [!TIP]
    > Instead of adding each user, create one or more teams that include all users that you want to grant access.  
