@@ -81,9 +81,7 @@ Users not defined in the previously created column security profiles lack access
 
 ### Related information
 
-[Set up security permissions for a column](set-up-security-permissions-field.md)   
-[Enable or disable security for a column to control access](enable-disable-security-field.md)   
-[Add teams or users to a column security profile to control access](add-teams-users-field-security-profile.md)   
+[Column-level security to control access](field-level-security.md)   
 [Hierarchy security](hierarchy-security.md)
 
 

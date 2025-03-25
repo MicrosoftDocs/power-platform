@@ -588,14 +588,8 @@
                       href: /microsoft-copilot-studio/admin-data-loss-prevention
                 - name: Configure column-level security
                   items:
-                    - name: Overview
+                    - name: Column-level security
                       href: field-level-security.md
-                    - name: Set permissions for a column
-                      href: set-up-security-permissions-field.md
-                    - name: Enable or disable column security
-                      href: enable-disable-security-field.md
-                    - name: Add teams or users to column security profile
-                      href: add-teams-users-field-security-profile.md
                     - name: Create and manage masking rules (preview)
                       href: create-manage-masking-rules.md
                     - name: Column-level security example

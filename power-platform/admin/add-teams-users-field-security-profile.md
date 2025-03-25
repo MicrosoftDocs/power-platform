@@ -34,10 +34,9 @@ Role-based security controls access to a specific table type, row-based security
 6. When finished adding teams or users, select **Add**. 
 
   
-### See also  
-[Column-level security to control access](field-level-security.md) <br />
-[Set up security permissions for a column](set-up-security-permissions-field.md)   <br />
-[Enable or disable security for a column to control access](enable-disable-security-field.md)  
+### See also
+
+[Column-level security to control access](field-level-security.md)
  
 
 
