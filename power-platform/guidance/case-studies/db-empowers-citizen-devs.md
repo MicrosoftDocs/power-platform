@@ -42,7 +42,7 @@ DB's approach to building a citizen-developer program operates with a Center of 
 
 This approach ensures governance is implemented all the way through to the local level. It also enables the citizen-developer program to scale without overwhelming Tchagbele and his team. "I don't have to review every question from every citizen developer," he explained, "only the ones that can't be solved by the local experts."
 
-DB's Power Platform governance model is demonstrated in the diagram below.
+DB's Power Platform governance model is demonstrated in the following diagram.
 
 :::image type="content" source="media/db-case-study/db-model.png" alt-text="Diagram illustrating Deutsche Bahn's Power Platform governance model, showcasing roles, processes, and environments.":::
 
@@ -51,7 +51,7 @@ The primary two roles in governance are:
 - Platform users who create and maintain the Power Platform applications.
 - Platform producers who prepare and deploy Power Platform to the users.
 
-The Platform users are citizen developers, who build the apps, and the local expert teams, who evaluate the apps and provide feedback and improvements. The local expert team coach and the citizen developers and approve the apps when they're ready for release.
+The Platform users are citizen developers, who build the apps, and the local expert teams, who evaluate the apps and provide feedback and improvements. The local expert teams coach the citizen developers and approve the apps when ready for release.
 
 The citizen developers build these apps in the Managed Environments, which includes generating ideas in the development-test environments, staging their apps during evaluation and refinement, and then deploying their apps in the production environment. These environments are prepared and delivered by the Platform producers, who define the services and ensure scalability in a Center of Excellence (CoE).
 
@@ -108,7 +108,7 @@ The app reduces errors due to poor handwriting from 20% to 2% and saves the shif
 
 Christoph Schmitz at DB InfraGO built an app to streamline processes related to track maintenance. This is a complex process, including the gathering and analysis of photographic evidence and measurement data. DB achieved this in the past by sending out workers equipped with cameras and paper notebooks. Images and data were then moved manually into folders and Excel files.
 
-As demonstrated in the image, the employee simply fills out a form with information about the track maintenance.
+As demonstrated in the image, the employee now simply fills out a form with information about the track maintenance.
 
 :::image type="content" source="media/db-case-study/track-maintenance.png" alt-text="Diagram illustrating the DB rail maintenance app, including a detailed explanation of the form to record track maintenance.":::
 
@@ -118,7 +118,9 @@ Schmitz’s app drastically reduces errors and saves enormous amounts of time. "
 
 ## Takeaways
 
-The case study of DB's citizen developer community demonstrates the potential of using Power Apps, Power Automate, Dataverse, and Power BI to set up a system that enables a large organization to empower their employees at scale. Here are some key takeaways for IT professionals who are looking to implement a similar solution in their own organizations:
+The case study of DB's citizen developer community demonstrates the potential of using Power Apps, Power Automate, Dataverse, and Power BI to set up a system that enables a large organization to empower their employees at scale. 
+
+Here are some key takeaways for IT professionals who are looking to implement a similar solution in their own organizations:
 
 - **Identify the use case** that helps impact business productivity and customer success.
 
