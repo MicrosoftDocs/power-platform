@@ -23,21 +23,41 @@ Manage access to records at the table level using [privileges associated with se
 
 You can use column level security to prevent certain users from:
 
-- Changing a column value in a record.
-- Viewing the data in a sensitive column, such as a government ID or credit card number. You can choose to mask this value to show a portion of it, or not return any data at all.
-
-To configure column-level security, you need the system administrator role.
+- Setting the value of a column in a record.
+- Viewing the data in a column. You can choose to mask this value to show a portion of it, or not return any data at all.
 
 > [!NOTE]
-> Column-level security doesn't apply for users who have the system administrator role. To verify the configured results, you must use an an account that doesn't have the system administrator security role assigned.
+> To configure column-level security, you need the system administrator role.
+> 
+> Column-level security doesn't apply for users who have the system administrator role. Data is never hidden from system administrators. To verify the configured results, you must use an an account that doesn't have the system administrator security role assigned.
 
 Column-level security is available [for most columns](#which-columns-can-be-secured). This is the process:
   
-1. Enable column-level security on one or more columns for a given table.
+1. [Enable column-level security](#enable-column-security) on one or more columns for a given table.
 1. Optionally, select a [masking rule](create-manage-masking-rules.md).  
-1. Associate one more existing security profiles, or create one or more new security profiles to grant the appropriate access to specific users or teams.
+1. [Associate one more existing security profiles](#add-teams-or-users-to-a-column-security-profile-to-control-access), or create one or more new security profiles to grant the appropriate access to specific users or teams.
+ 
   
-A security profile determines:
+## Enable column security
+
+1. Sign in to [Power Apps](https://make.powerapps.com/).
+1. Select **Solutions**.
+1. Select the unmanaged solution that contains the table that has the column, or create a new solution to hold your changes and add the table to it.
+1. Within the solution, in **Objects**, within **Tables**, select the table.
+1. Under **Schema**, select **Columns**.
+
+   :::image type="content" source="media/field-security-schema-columns.png" alt-text="Screenshot showing where to select Columns.":::
+
+1. In the **Columns** list, select a column.
+1. Expand **Advanced options**, and then under **General**, select **Enable column security**.
+
+   :::image type="content" source="media/field-security-advanced-options-enable.png" alt-text="Screenshot showing how to expand Advanced options and turn on column security.":::
+
+1. Select **Save**.
+
+## Add teams or users to a column security profile to control access
+
+A column security profile determines:
 
 - Permissions to the secure columns.  
 - Users and teams assigned access.
@@ -52,60 +72,32 @@ You can configure a security profile to grant user or team members the following
 Configure a combination of these four permissions to determine the user privileges for a specific data column.  
 
 > [!IMPORTANT]
-> Unless one or more security profiles are assigned to a column with security, only users with the system administrator security role can access the column.  
-  
-
-## Enable column security
-
-1. Sign in to [Power Apps](https://make.powerapps.com/).
-1. Select **Solutions**.
-1. Select the unmanaged solution that contains the table, or create a new solution to hold your changes.
-1. In **Objects**, within **Tables**, select the table.
-1. Under **Schema**, select **Columns**.
-
-   :::image type="content" source="media/field-security-schema-columns.png" alt-text="Screenshot showing where to select Columns.":::
-
-1. In the **Columns** list, select a column.
-1. Expand **Advanced options**, and then under **General**, select **Enable column security**.
-
-   :::image type="content" source="media/field-security-advanced-options-enable.png" alt-text="Screenshot showing how to expand Advanced options and turn on column security.":::
-
-1. Select **Save**.
-
-## Add teams or users to a column security profile to control access
+> Unless one or more security profiles are assigned to a column with security, only users with the system administrator security role can access the column. 
 
 <!-- fwlink  https://go.microsoft.com/fwlink/?linkid=2193903 -->
 
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) with System Administrator security role or equivalent permissions.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) using an account that is assigned the System Administrator security role.
 1. Select the environment to configure security profiles for. 
 1. Select **Settings** > **Users + permissions** > **Column security profiles**. 
 1. Select an existing profile, or select **New Profile**, enter a name, enter a description, and then select **Save**.  
-1. Select the **Teams** or **Users** tab, select **+ Add Teams** or **+ Add Users**, select the teams or that you want to control access, and then select **Add**. 
+1. Select the **Teams** or **Users** tab, select **+ Add Teams** or **+ Add Users**, select the teams or users that you want to control access, and then select **Add**.
+1. Select the **Column Permission** tab, in the **Name** column select one or more columns, and then select **Edit**. Configure the four properties for the desired access.  These permissions control whether people in this security profile can read or set column values.
 
-    > [!TIP]
-    > Instead of adding each user, create one or more teams that include all users that you want to control access.
-
-1. Select the **Column Permission** tab, in the **Name** column select one or more columns, and then select **Edit**. Configure the four properties for the desired access.  
-
-   :::image type="content" source="media/field-security-edit-field-permission.png" alt-text="Screenshot showing the Edit column security permissions.":::
-
-
-   |Permission|Options|
-   |---------|---------|
-   |**Read**|**Allowed**<br />**Not Allowed**|
-   |**Read unmasked**|**All Records**<br />**One record**<br />**Not Allowed**|
-   |**Update**|**Allowed**<br />**Not Allowed**|
-   |**Create**|**Allowed** <br />**Not Allowed**|
-
+   |Permission|Options|Result|
+   |---------|---------|---------|
+   |**Read**|**Allowed**<br />**Not Allowed**|Whether people can view the data for the column. Masked values are shown if masking rule is applied to the column.|
+   |**Read unmasked**|**All Records**<br />**One record**<br />**Not Allowed**| When a secured column has a masking rule, a developer can write code to request unmasked data be returned. This setting controls whether or not that request will be allowed. The default setting is **Not Allowed**. [Learn more about granting permissions to a secured column with a masking rule](create-manage-masking-rules.md#grant-permissions-to-a-secured-column-with-a-masking-rule) |
+   |**Update**|**Allowed**<br />**Not Allowed**|Whether people can update the data in the column.|
+   |**Create**|**Allowed** <br />**Not Allowed**|Whether people can set the data in the column when creating a record.|
 
 1. Select **Save**.
 
-Any users not defined in the previously created column security profiles won't have access to the column on forms or views. The column value displays ![Lock icon.](../admin/media/admin-field-level-security-lock.png "Lock icon") ********, indicating that the column is secured.
+Any users not defined in the column security profiles won't have access to the column on forms or views. The column value displays ![Lock icon.](../admin/media/admin-field-level-security-lock.png "Lock icon") ********, indicating that the column is secured.
 
 
 ## Which columns can be secured?  
 
-When a column is eligible for column level security, the **Enable column security** checkbox is enabled in the **Advanced options** area of the column definition in [Power Apps](https://make.powerapps.com/).
+When a column is eligible for column-level security, the **Enable column security** checkbox is enabled in the **Advanced options** area of the column definition in [Power Apps](https://make.powerapps.com/).
 
 :::image type="content" source="media/field-security-enable-column-security.png" alt-text="Screenshot showing how to enable column security.":::
 
