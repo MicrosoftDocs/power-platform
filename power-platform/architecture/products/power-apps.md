@@ -25,15 +25,15 @@ In this article, we will look at:
 | Title | Description |
 | --- | --- |
 | **[Coding guidelines](/power-apps/guidance/coding-guidelines/overview)** | Learn about standards for naming objects, collections, and variables, and guidelines for developing consistent, performant, and easily maintainable apps. |
-| **[Build large and complex canvas apps](/power-apps/maker/canvas-apps/working-with-large-apps)** | | 
-| **[Optimize app or page load for peak performance](/power-apps/maker/canvas-apps/fast-app-page-load)** | | 
-| **[Optimized query data patterns](/power-apps/maker/canvas-apps/optimized-query-data-patterns)** | | 
-| **[Small data payloads](/power-apps/maker/canvas-apps/small-data-payloads)** | | 
-| **[Fast calculations](/power-apps/maker/canvas-apps/efficient-calculations)** | | 
+| **[Build large and complex canvas apps](/power-apps/maker/canvas-apps/working-with-large-apps)** | Use the recommendations in this article to better work with large and complex apps in Power Apps Studio and improve your apps' runtime performance. | 
+| **[Optimize app or page load for peak performance](/power-apps/maker/canvas-apps/fast-app-page-load)** | One of the key factors that shape a user's perception of an app is how quickly it opens and becomes functional. Follow the guidelines in this article to achieve fast data loading apps. | 
+| **[Optimized query data patterns](/power-apps/maker/canvas-apps/optimized-query-data-patterns)** | Learn about ways to optimize how to query the data quickly. | 
+| **[Small data payloads](/power-apps/maker/canvas-apps/small-data-payloads)** | Learn how to limit the size of the data you fetch into Power Apps. | 
+| **[Fast calculations](/power-apps/maker/canvas-apps/efficient-calculations)** | Power Fx expressions are powerful and do many background calculations for you automatically. While Power Fx automates many things for you, it's possible to fine-tune your calculations so they are as fast as possible. | 
 | **[Troubleshoot Power Apps canvas app performance issues](/troubleshoot/power-platform/power-apps/canvas-app-performance/troubleshoot-perf-table)** | Identify common performance issues you might encounter while using a canvas app, along with likely causes and recommendations. |
-| **[Understand canvas app execution phases, data call flow, and performance monitoring](/power-apps/maker/canvas-apps/execution-phases-data-flow)** | 
-| **[Use Microsoft SQL Server securely with Power Apps](/power-apps/maker/canvas-apps/connections/sql-server-security)** | 
-| **[Connect to SQL Server from Power Apps](/power-apps/maker/canvas-apps/connections/connection-azure-sqldatabase)** | 
+| **[Understand canvas app execution phases, data call flow, and performance monitoring](/power-apps/maker/canvas-apps/execution-phases-data-flow)** | When a user opens a canvas app, the app goes through several phases of execution before showing any user interface. While the app loads, it connects to different data sources—such. Learn about these different phases of execution and how an app connects to data sources and about tools you can use to monitor performance. |  
+| **[Use Microsoft SQL Server securely with Power Apps](/power-apps/maker/canvas-apps/connections/sql-server-security)** | There are different ways to connect and authenticate to SQL Server with Power Apps. This article outlines concepts that can be helpful in making a choice about how to connect to SQL Server with a security approach that matches requirements for your app. |
+| **[Connect to SQL Server from Power Apps](/power-apps/maker/canvas-apps/connections/connection-azure-sqldatabase)** | There are different ways to connect to data in SQL Server in your app, using Power Fx formulas. You can access data directly or use a view or stored procedures to create, update, or delete data in your app. |
 
 ## Reference architectures
 
