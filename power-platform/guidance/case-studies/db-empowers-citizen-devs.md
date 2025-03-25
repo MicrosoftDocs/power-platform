@@ -24,7 +24,7 @@ For example, a mobile app targets 8,440 track repairs, saving three minutes per 
 
 > Each of our coworkers has a Power Platform license to create, to solve problems for his or her team, or even for the whole company. It's very easy to make your own app, and very fast.
 >
->— Thomas Czierpke, Head of Adoption and Change Management
+>— *Thomas Czierpke, Head of Adoption and Change Management*
 
 ## Case study
 
