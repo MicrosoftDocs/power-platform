@@ -1,7 +1,7 @@
 ---
 title: Important changes (deprecations) coming in Power Platform
 description: Important changes (deprecations) coming in Power Platform 
-ms.date: 03/19/2025
+ms.date: 03/25/2025
 ms.topic: conceptual
 ms.subservice: admin
 searchScope:
@@ -22,15 +22,18 @@ For deprecation information of other products, see [Other deprecation articles](
 > "Deprecated" means we intend to remove the feature or capability from a future release. The feature or capability is fully supported until it's officially removed. This deprecation notification can span a few months or years. After removal, the feature or capability will no longer work. This notice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
 
 ## Deprecation of SQL server connector's V1 actions
-The [SQL server connector’s V1 actions]([/power-platform/developer/create-developer-environment](https://learn.microsoft.com/en-us/connectors/sql/#migrate-v1-operations-to-v2-equivalent)) are being retired and starting 30 June 2025 these actions will no longer be supported and will be disabled.
 
-We have V2 actions already available in the SQL server connector which can be used as an alternative. You can find more details about the new V2 actions here: [SQL server actions]([/power-platform/developer/create-developer-environment](https://learn.microsoft.com/en-us/connectors/sql/#migrate-v1-operations-to-v2-equivalent)). We strongly encourage you to migrate to the new V2 actions as soon as possible to take full advantage of these improvements.
+The [SQL server connector's V1 actions](/connectors/sql/#migrate-v1-operations-to-v2-equivalent) are being retired and starting 30 June 2025 these actions will no longer be supported and will be disabled.
 
-### How does this affect me? 
-If action isn’t taken, beginning 30 June 2025, the application(s) using the V1 actions of SQL server will be impacted and may no longer function as expected.
+We have V2 actions already available in the SQL server connector which can be used as an alternative. You can find more details about the new V2 actions here: [SQL server actions](/connectors/sql/#migrate-v1-operations-to-v2-equivalent). We strongly encourage you to migrate to the new V2 actions as soon as possible to take full advantage of these improvements.
+
+### How does this affect me?
+
+If action isn't taken, beginning 30 June 2025, the application(s) using the V1 actions of SQL server will be impacted and may no longer function as expected.
 
 ### Required action
-Please make sure you replace the V1 actions with the new V2 actions of the SQL server connector in all of the applications utilizing it. If you need assistance in Migrating V1 operations to V2 equivalent. Please check here: [SQL server actions]([/power-platform/developer/create-developer-environment](https://learn.microsoft.com/en-us/connectors/sql/#migrate-v1-operations-to-v2-equivalent))
+
+Please make sure you replace the V1 actions with the new V2 actions of the SQL server connector in all of the applications utilizing it. If you need assistance in Migrating V1 operations to V2 equivalent. Please check here: [SQL server actions](/connectors/sql/#migrate-v1-operations-to-v2-equivalent)
 
 ## Deprecation of support for personal Microsoft service accounts in Power Automate
 
@@ -54,7 +57,7 @@ Power Automate Desktop users aren't affected by this change, as Power Automate D
 
 If you wish to continue using Power Automate, transitioning to the **Power Apps Developer Plan** is strongly recommended. This transition provides access to modern features and allows for seamless management of your workflows.
 
-Complete the following steps.
+Complete the following steps:
 
 1. **No work or school email?** Create a sandbox tenant to set up an eligible account. Follow the steps outlined in [Create a developer environment with the Power Apps Developer Plan](/power-platform/developer/create-developer-environment).
 
@@ -70,34 +73,37 @@ Effective August 29, 2025, [Cards for Power Apps](/power-apps/cards/overview) wi
 
 We recommend migrating any functionality you rely on from Cards for Power Apps before the deprecation date. Consider transitioning to either [Adaptive Cards in Copilot Studio](/microsoft-copilot-studio/guidance/adaptive-cards-overview) or [adaptive cards for Microsoft Teams](/power-automate/overview-adaptive-cards) for similar functionality.
 
-
 ## Deprecation of Train with examples to transform examples to Power Fx formulas
 
 Effective February 19, 2025, the **Train with examples** feature to transform examples to Power Fx formulas is deprecated and no longer supported. We recommend using [Transform natural language to Power Fx formulas](/power-apps/maker/canvas-apps/power-apps-ideas-transform).
 
 ## Deprecation of Snowflake connector [Deprecated]
+
 The [Snowflake (Deprecated)](/connectors/snowflakepa/) connector will be discontinued on May 26, 2025. A new and improved version with more features is now available. For more details, visit the new [Snowflake (Preview)](/connectors/snowflakev2/) connector reference article. We strongly encourage you to switch soon to take advantage of the upgrades.  
 
-## What action do I need to take? 
-Make sure you replace your existing connections of the deprecated Snowflake connector with the new [Snowflake (Preview)](/connectors/snowflakev2/) connector in all of the applications utilizing this connector. If you need assistance in replacing your connections in Power Automate Flows or Power Apps, please refer to the below following documentation: 
+## What action do I need to take?
+
+Make sure you replace your existing connections of the deprecated Snowflake connector with the new [Snowflake (Preview)](/connectors/snowflakev2/) connector in all of the applications utilizing this connector. If you need assistance in replacing your connections in Power Automate Flows or Power Apps, please refer to the below following documentation:
 
 - [Manage connections in Power Automate - Power Automate | Microsoft Learn](/power-automate/add-manage-connections)
 - [Manage connections in canvas apps - Power Apps | Microsoft Learn](/power-apps/maker/canvas-apps/add-manage-connections)
 
 ### Impact 
-If action isn't taken by May 26, 2025, the application(s) utilizing [Snowflake (Deprecated)](/connectors/snowflakepa/) connector will no longer function as expected. 
+If action isn't taken by May 26, 2025, the application(s) utilizing [Snowflake (Deprecated)](/connectors/snowflakepa/) connector will no longer function as expected.
 
 ## Deprecation of Ask a virtual agent
 
 Effective March 11, 2025, the **Ask a virtual agent** feature in Power Apps is deprecated and no longer supported. We recommend using [Copilot in Power Apps](/power-apps/maker/canvas-apps/ai-overview) for assistance when creating an app. For general help in Power Apps, select **Help** (question mark icon in the upper right) > **Support** > **Problem**.
 
 ## Deprecation of bring-your-own-key (BYOK) Dataverse service
+
 Starting January 6, 2026, we will discontinue support for the bring-your-own-key (BYOK) feature. Customers are encouraged to transition to [customer-managed keys (CMK)](admin/customer-managed-key.md), an enhanced solution that offers improved functionality, broader support for data sources, and better performance.
 
-### What happens if migration isn't completed? 
-Effective June 1, 2025, customers will be unable to apply BYOK to production environments. 
+### What happens if migration isn't completed?
 
-If your migration to CMK isn't completed by January 6, 2026, your environment will automatically revert to Microsoft-managed keys. While this ensures continuity of encryption, it limits the control and flexibility you currently enjoy with BYOK. To avoid disruption and take full advantage of the enhanced features and security offered by CMK, we strongly recommend beginning your migration process as soon as possible. 
+Effective June 1, 2025, customers will be unable to apply BYOK to production environments.
+
+If your migration to CMK isn't completed by January 6, 2026, your environment will automatically revert to Microsoft-managed keys. While this ensures continuity of encryption, it limits the control and flexibility you currently enjoy with BYOK. To avoid disruption and take full advantage of the enhanced features and security offered by CMK, we strongly recommend beginning your migration process as soon as possible.
 
 We recommend starting your transition to CMK (customer-managed keys) at your earliest convenience. For more information, go to [Manage your customer-managed encryption key](admin/customer-managed-key.md) and [Migrate bring-your-own-key (BYOK) environments to customer-managed key](admin/cmk-migrate-from-byok.md).
 
@@ -107,9 +113,9 @@ The Organization Insights dashboard has been deprecated from the Microsoft Power
 
 As part of a service update to enhance security in Power Apps, we're removing Highcharts version 4.2.3.
 
-## Deprecation of support for multitenant apps without a service principal in the Microsoft Entra ID tenant 
+## Deprecation of support for multitenant apps without a service principal in the Microsoft Entra ID tenant
 
-To boost security and system performance, we are updating authentication protocols for multitenant apps in the Dataverse platform. Starting October 2024, app-only tokens for apps without a service principal in the target tenant aren't supported. This change is essential for mitigating vulnerabilities and safeguarding your data from potential threats. 
+To boost security and system performance, we are updating authentication protocols for multitenant apps in the Dataverse platform. Starting October 2024, app-only tokens for apps without a service principal in the target tenant aren't supported. This change is essential for mitigating vulnerabilities and safeguarding your data from potential threats.
 
 ### Why is this needed?
 
@@ -123,12 +129,12 @@ Token generation for multitenant apps fail if the service principal for that app
 
 To ensure the security and integrity of your system and data, we encourage customers to provision the multitenant apps in their Microsoft Entra ID tenant. Learn more in [Create an enterprise application from a multitenant application](/entra/identity/enterprise-apps/create-service-principal-cross-tenant?pivots=msgraph-powershell). 
 
-> [!Note]
+> [!NOTE]
 > If application onboarding isn't expected, remove that app or replace it with a compliant app that has a client service principal in the tenant.
 >
 > Make sure that the access token being acquired is from your tenant endpoint (`https://login.microsoftonline.com/{yourtenant}`), not your organization endpoint (`https://login.microsoftonline.com/organizations`).
 
-### When is this change coming into effect? 
+### When is this change coming into effect?
 
 Support for app-only tokens by multitenant apps that don't have a service principal ID in the Target Tenant will be removed by October 2024.
 
