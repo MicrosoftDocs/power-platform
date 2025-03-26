@@ -1,5 +1,5 @@
 ---
-title: Environment management overview
+title: Environment management capabilities
 description: Learn how environment management provides enhanced security, governance, and operations capabilities for environments that have opted in for the capabilities.
 ms.component: pa-admin
 ms.topic: conceptual
