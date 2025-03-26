@@ -1161,6 +1161,192 @@
     {
       "source_path": "power-platform/admin/data-integrator-error-management.md",
       "redirect_url": "/troubleshoot/power-platform/dataverse/data-integration/data-integrator-error-management"
-    } 
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/overview.md",
+      "redirect_url": "https://appsource.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/hr/employee-kudos/overview.md",
+      "redirect_url": "https://appsource.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/hr/employee-kudos/install-and-set-up.md",
+      "redirect_url": "https://appsource.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/hr/employee-kudos/manage.md",
+      "redirect_url": "https://appsource.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/hr/awards-and-recognition/overview.md",
+      "redirect_url": "https://appsource.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/hr/awards-and-recognition/install-and-set-up.md",
+      "redirect_url": "https://appsource.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/hr/awards-and-recognition/manage.md",
+      "redirect_url": "https://appsource.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/hr/awards-and-recognition/use.md",
+      "redirect_url": "https://appsource.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/hr/onboarding-buddy/overview.md",
+      "redirect_url": "https://appsource.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/hr/onboarding-buddy/install-and-set-up.md",
+      "redirect_url": "https://appsource.microsoft.com/",
+      "redirect_document_id": false
+
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/hr/onboarding-buddy/customize.md",
+      "redirect_url": "https://appsource.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/hr/onboarding-buddy/manage.md",
+      "redirect_url": "https://appsource.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/hr/onboarding-buddy/use.md",
+      "redirect_url": "https://appsource.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/hr/expense-reimbursement/overview.md",
+      "redirect_url": "https://appsource.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/hr/expense-reimbursement/install-and-set-up.md",
+      "redirect_url": "https://appsource.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/hr/expense-reimbursement/manage.md",
+      "redirect_url": "https://appsource.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/hr/expense-reimbursement/use.md",
+      "redirect_url": "https://appsource.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/it/hardware-request-and-management/overview.md",
+      "redirect_url": "https://appsource.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/it/hardware-request-and-management/install-and-set-up.md",
+      "redirect_url": "https://appsource.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/it/hardware-request-and-management/manage.md",
+      "redirect_url": "https://appsource.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/it/hardware-request-and-management/use.md",
+      "redirect_url": "https://appsource.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/it/appointment-booking/overview.md",
+      "redirect_url": "https://appsource.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/it/appointment-booking/install-and-set-up.md",
+      "redirect_url": "https://appsource.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/it/appointment-booking/manage.md",
+      "redirect_url": "https://appsource.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/it/appointment-booking/use.md",
+      "redirect_url": "https://appsource.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/it/meeting-rm-serv/overview.md",
+      "redirect_url": "https://appsource.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/it/meeting-rm-serv/install-and-set-up.md",
+      "redirect_url": "https://appsource.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/it/meeting-rm-serv/manage.md",
+      "redirect_url": "https://appsource.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/it/meeting-rm-serv/use.md",
+      "redirect_url": "https://appsource.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/it/checklist/overview.md",
+      "redirect_url": "https://appsource.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/it/checklist/install-and-set-up.md",
+      "redirect_url": "https://appsource.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/it/checklist/manage.md",
+      "redirect_url": "https://appsource.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/it/checklist/use.md",
+      "redirect_url": "https://appsource.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/it/parking-reservation/overview.md",
+      "redirect_url": "https://appsource.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/it/parking-reservation/install-and-set-up.md",
+      "redirect_url": "https://appsource.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/it/parking-reservation/manage.md",
+      "redirect_url": "https://appsource.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/it/parking-reservation/use.md",
+      "redirect_url": "https://appsource.microsoft.com/",
+      "redirect_document_id": false
+    }
   ]
 }
