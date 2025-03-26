@@ -52,6 +52,12 @@ Here are a few lessons for organizing successful and impactful show-and-tell ses
 
 - Ensure makers with different backgrounds attend to emphasize that Microsoft Power Platform is for everyone.
 
+- Provide a PowerPoint template for makers to use during show & tell sessions. The template should include slides for: 
+    - Architecture: Outline the different components of the platform. 
+    - Problem: Describe the issue being addressed. 
+    - Current solution: Detail the existing solution. 
+    - Business value: Highlight cost savings and impact. 
+
 - Provide just a brief overview of the app, and allow time for questions.
 
 - Record the app showcase and make it available as a webinar—for example, on Microsoft Stream—to further the reach in your organization.

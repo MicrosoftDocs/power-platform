@@ -33,7 +33,7 @@ Preparation is key for a successful hackathon, so make sure to consider the foll
 - For an in-person event, find a venue or room that provides plenty of seating, whiteboards, power sockets, reliable Wi-Fi, and projectors for presenting the solution. For a virtual event, set up Teams with private channels for each participating team to collaborate and a bridge for them to dial in to.
 - Source some prizes as incentives for people to participate.
 - Set up a registration mechanism—Microsoft Forms, a SharePoint site, or build your own app.
-- Determine your communication strategy—newsletter, intranet, Yammer/Teams.
+- Determine your communication strategy—newsletter, intranet, Viva Engage/Teams.
 
 ## Readiness
 
@@ -71,7 +71,7 @@ Here’s a sample agenda:
 
 | &nbsp; |  &nbsp;|
 |----|----|
-| 15 mins	| **Introduction and Welcome** |
+| 15 mins	| **Introduction and Welcome**<br>To kick off the hackathon, have an executive sponsor open the day by sharing the organization's vision. This introdcution helps participants understand how to build solutions that align with the organization's vision, which is a key judging criteria. |
 | 30 mins	| **Microsoft Power Platform introduction**<br>Consider playing videos from recent Microsoft conferences. You could also highlight some [customer stories](https://www.microsoft.com/power-platform/blog/power-apps/power-platform-stories) for additional inspiration, especially if there is a public case study of a customer in the same or similar industry as your organization. |
 | 30 mins	| **Microsoft Power Platform demonstration**<br>Get hands on with Microsoft Power Platform in front of your attendees, using [Plan designer](/power-apps/maker/plan-designer/plan-designer) to create a comprehensive solution by describing your business problem in natural language can be a great way of introducing attendees to the power of the platform. |
 | 30 mins | **Rules of Engagement**, How to work, Questions |
@@ -91,6 +91,8 @@ Don’t stop at the hackathon—put together short- and long-term plans:
 -	What’s the pipeline of apps that are going to be built? 
 -	Will any of the apps built during the hackathon make it into production, and how can your makers be supported on that journey? 
 -	Create enthusiasm for Microsoft Power Platform after the event by sharing some stories in internal newsletters or on your intranet; get creative and ask attendees for quotes or even interview them.
+
+Consider [sharing success stories](show-and-tell.md)  to foster engagement, inspire innovation, and drive adoption.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
