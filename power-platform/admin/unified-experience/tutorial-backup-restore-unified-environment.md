@@ -38,13 +38,15 @@ To understand the system and manual backups&mdash;and how to take a manual backu
 
 To restore the environment, select the **Restore or manage** option, and then choose the appropriate system or manual backup. Then select the **Target** environment to be the unified environment.
 
-# [PowerShell](#tab/PowerShell)
+:::image type="content" source="media/restore-option-for-unified-environments.png" alt-text="Diagram of the restore option.":::
 
-## Backup via PowerShell
+# [PowerShell](#tab/PowerShell)
 
 Load the PowerShell console and execute the following commands to backup the environment. For more information on how to install and use the PowerShell module, go to [Get started with PowerShell for Power Platform Administrators](../powershell-getting-started.md).
 
-In the example below, SPN with a client secret is used for the Add-PowerAppsAccount command. It's important to note that this is optional, and the customer can log in with their current user credentials, omitting these parameters.
+In the examples below, SPN with a client secret is used for the Add-PowerAppsAccount command. It's important to note that this is optional, and the customer can log in with their current user credentials, omitting these parameters.
+
+## Backup via PowerShell
 
 ```PowerShell
 #Install the module
@@ -69,10 +71,6 @@ Backup-PowerAppEnvironment -EnvironmentName $EnvironmentID -BackupRequestDefinit
 ```
 
 ## Restore through PowerShell
-
-Load the PowerShell console and execute the following commands to restore the environment. For more information on how to install and use the PowerShell module, go to [Get started with PowerShell for Power Platform Administrators](../powershell-getting-started.md).
-
-In the example below, SPN with a client secret is used for the Add-PowerAppsAccount command. It's important to note that this is optional, and the customer can log in with their current user credentials, omitting these parameters.
 
 ```PowerShell
 #Install the module
