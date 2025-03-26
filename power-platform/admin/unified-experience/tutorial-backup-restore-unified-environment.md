@@ -46,7 +46,7 @@ To restore the environment, select the **Restore or manage** option, and then ch
 
 Load the PowerShell console and execute the following commands to take backup of the environment or restore to a unified environment. For more information on how to install and use the PowerShell module, go to [Get started with PowerShell for Power Platform Administrators](../powershell-getting-started.md).
 
-In the examples below, SPN with a client secret is used for the Add-PowerAppsAccount command. It's important to note that this is optional, and the customer can log in with their current user credentials, omitting these parameters.
+In the examples below, an SPN with a client secret is used for the Add-PowerAppsAccount command. It's important to note that these parameters are optional, and the customer can log in with their current user credentials, omitting these parameters.
 
 ## Backup via PowerShell
 
