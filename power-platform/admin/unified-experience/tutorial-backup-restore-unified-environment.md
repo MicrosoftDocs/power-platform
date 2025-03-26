@@ -1,6 +1,6 @@
 ---
 title: "Tutorial: Backup and restore unified environments"
-description: This tutorial demonstrates how to backup and restore unified environments.
+description: This tutorial demonstrates how to take backup and restore to unified environments.
 author: tapa
 ms.reviewer: sericks
 ms.component: pa-admin
@@ -26,7 +26,7 @@ The target environment in this tutorial is always a unified environment that con
 
 The source environment in this tutorial can either be a similar unified environment that contains finance and operations apps hosted by Microsoft Dataverse or a finance and operations apps environment in Lifecycle Services that was set up through the [Power Platform integration](/dynamics365/fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration).
 
-Ensure that both the source and target environments are provisioned in the same region. For general information about how to backup and restore environments in the Power Platform admin center, go to [Back up and restore environments](../backup-restore-environments.md).
+Ensure that both the source and target environments are provisioned in the same region. For general information about how to take backup and restore environments in the Power Platform admin center, go to [Back up and restore environments](../backup-restore-environments.md).
 
 # [Power Platform admin center](#tab/PPAC)
 
@@ -36,13 +36,15 @@ In the Power Platform admin center, go to the source environment for which you w
 
 To understand the system and manual backups&mdash;and how to take a manual backup&mdash;refer to [Back up and restore environments](../backup-restore-environments.md). 
 
-To restore the environment, select the **Restore or manage** option, and then choose the appropriate system or manual backup. Then select the **Target** environment to be the unified environment.
+To restore the environment, select the **Restore or manage** option, and then choose the appropriate system or manual backup. Then select the **Target** environment to be the unified environment, as shown in the below diagrams.
 
 :::image type="content" source="media/restore-option-for-unified-environments.png" alt-text="Diagram of the restore option.":::
 
+:::image type="content" source="media/restore-backup-to-unified-environments.png" alt-text="Diagram of the restoring backup.":::
+
 # [PowerShell](#tab/PowerShell)
 
-Load the PowerShell console and execute the following commands to backup the environment. For more information on how to install and use the PowerShell module, go to [Get started with PowerShell for Power Platform Administrators](../powershell-getting-started.md).
+Load the PowerShell console and execute the following commands to take backup of the environment or restore to a unified environment. For more information on how to install and use the PowerShell module, go to [Get started with PowerShell for Power Platform Administrators](../powershell-getting-started.md).
 
 In the examples below, SPN with a client secret is used for the Add-PowerAppsAccount command. It's important to note that this is optional, and the customer can log in with their current user credentials, omitting these parameters.
 
