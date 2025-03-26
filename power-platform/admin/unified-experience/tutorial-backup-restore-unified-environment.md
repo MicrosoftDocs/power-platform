@@ -16,7 +16,7 @@ search.audienceType:
 
 [!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
-Finance and operations apps are reimagined as an application hosted by Microsoft Dataverse. A common function for administrators of finance and operations apps is to take backups, and restore those backups to unified environments. Historically, this kind of operation is performed in Microsoft Dynamics Lifecycle Services for finance and operations environments, but now for unified environments, everything can be managed in the Power Platform admin center.
+Finance and operations apps are reimagined as an application hosted by Microsoft Dataverse. A typical task for administrators of these apps is to take backups, and restore those backups to unified environments. Traditionally, this operation is carried out in Microsoft Dynamics Lifecycle Services for finance and operations environments. However, with unified environments, everything can now be managed in the Power Platform admin center.
 
 In this tutorial, learn how to take a backup of an environment and restore to a unified environment.
 
