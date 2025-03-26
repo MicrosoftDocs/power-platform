@@ -6,18 +6,16 @@
           href: index.yml
         - name: Overview of the Power Platform admin center
           href: admin-documentation.md
-        - name: Advanced management
+        - name: Environment management
           items:
-            - name: Advanced management overview
+            - name: Environment managemtn capabilities
               href: advanced-management-overview.md
-            - name: Advanced management capabilities
-              items:
-                - name: Managed security
-                  href: security/managed-security.md
-                - name: Managed governance
-                  href: managed-governance.md
-                - name: Managed operations
-                  href: operations/overview.md
+            - name: Managed security
+              href: security/managed-security.md
+            - name: Managed governance
+              href: managed-governance.md
+            - name: Managed operations
+              href: operations/overview.md
         - name: Get started
           items:
             - name: Role of a Power Platform administrator
