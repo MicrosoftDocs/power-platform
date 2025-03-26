@@ -39,7 +39,6 @@ Ensure high-quality releases through a comprehensive, integrated set of Azure De
 - **Solution checker**: A powerful tool that performs a comprehensive, static analysis of your solution objects against a set of best practice rules. It provides actionable insights for predeployment quality checks, reducing errors and improving the success rate of changes. Learn more in [Solution checker enforcement](../managed-environment-solution-checker.md).
 - **Pipelines**: Customers can easily configure automated deployment pipelines in minutes rather than days or weeks. This feature allows admins to set up the appropriate safeguards to govern and facilitate solution development, testing, and delivery across the organization. Learn more in [Pipelines in Power Platform](../../alm/pipelines.md).
 - **Approval-based deployments**: Take advantage of gated deployments that require approvals, which add a layer of security and compliance to production changes. Learn more in [Approvals with delegated deployments](../../alm/delegated-deployments-setup.md).
-
 - **Test engine:** This feature is used for testing standalone, canvas apps in Power Apps. This can be used for running test automation as a stage in a deployment. Learn more in [Test Engine](/power-apps/developer/test-engine/overview).
 
 ### Observability and insights
