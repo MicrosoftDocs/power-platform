@@ -9,7 +9,7 @@
         - name: Environment management
           items:
             - name: Environment managemtn capabilities
-              href: advanced-management-overview.md
+              href: environment-management-overview.md
             - name: Managed security
               href: security/managed-security.md
             - name: Managed governance
