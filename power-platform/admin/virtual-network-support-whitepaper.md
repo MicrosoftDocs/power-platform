@@ -12,6 +12,9 @@ search.audienceType:
   - admin
 ---
 
+<!-- In line 81, a sentence says "This setup allows enterprises to have full control over the policies, rules, and network packets that exit for these containers." Should "exit" change to "exist"? -->
+
+
 # Virtual Network support white paper
 
 [!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
@@ -51,17 +54,15 @@ Network security is a critical aspect of any digital infrastructure. Protecting 
 
 By implementing Virtual Network support, organizations can enforce strict security policies, monitor network traffic, and detect any anomalies in real time. This level of control is crucial for maintaining the integrity and confidentiality of sensitive data. Virtual Network integration allows for seamless connectivity between Power Platform services and other Azure resources, simplifying overall network architecture and improving the reliability.
 
-
-
 ## Overview of Virtual Network support in Power Platform
 
 Virtual Network support for Power Platform is a significant enhancement that brings robust security and improved connectivity to the platform. Virtual networks are a fundamental component of Azure's networking capabilities, providing a secure and isolated environment for resources. With Virtual Network support for Power Platform, organizations can ensure their applications and services operate within a controlled network environment, safeguarding sensitive data and enhancing overall performance.
 
-Virtual Network support for Power Platform allows organizations to connect their Power Platform services, such as Dataverse, Power Apps, Power Automate, Copilot Studio to resources within enterprise private networks. This integration enables secure communication between Power Platform services, other Azure resources, and networks such as on-premises services, databases, storage accounts, and a key vault. Organizations can enforce network security policies, control access to resources, and monitor network traffic effectively.
+Virtual Network support for Power Platform allows organizations to connect their Power Platform services, such as Dataverse, Power Apps, Power Automate, and Copilot Studio to resources within enterprise private networks. This integration enables secure communication between Power Platform services, other Azure resources, and networks such as on-premises services, databases, storage accounts, and a key vault. Organizations can enforce network security policies, control access to resources, and monitor network traffic effectively.
 
 ### How Virtual Network support enhances Power Platform security and connectivity
 
-The integration of Virtual Network support significantly enhances the security and connectivity of Power Platform. By routing all outbound traffic from Power Platform services through a virtual network. Organizations can ensure that data is transmitted securely and remains protected from unauthorized access. This level of control is crucial for maintaining the integrity and confidentiality of sensitive information.
+The integration of Virtual Network support significantly enhances the security and connectivity of Power Platform. By routing all outbound traffic from Power Platform services through a virtual network, organizations can ensure that data is transmitted securely and remains protected from unauthorized access. This level of control is crucial for maintaining the integrity and confidentiality of sensitive information.
 
 Virtual Network support improves connectivity by providing a reliable and consistent network environment. Organizations can establish secure connections between Power Platform services and other Azure resources, ensuring seamless data flow. This enhanced connectivity leads to improved security and a more efficient use of network resources.
 
@@ -69,13 +70,13 @@ Overall, Virtual Network support for Power Platform offers a comprehensive solut
 
 ## Implement Virtual Network support
 
-Power Platform infrastructure consists of a serverless container orchestration layer that executes different workloads with a strict security boundary and guarantees individual, workload-level availability and scalability requirements. This container orchestration layer is used for all workloads needing isolation, including internal, Microsoft workload-like connectors and customer workloads, like plugins.
+Power Platform infrastructure consists of a serverless container orchestration layer that executes different workloads with a strict security boundary and guarantees individual, workload-level availability and scalability requirements. This container orchestration layer is used for all workloads needing isolation, including internal, Microsoft workload-like connectors and customer workloads, like plug-ins.
 
-The containerized workload allows Power Platform to support network-level isolation, using a combination of Azure Subnet Delegation and Virtual Network injection features. The Virtual Network *injection* feature allows a container to get injected into a customer’s Virtual Network by attaching a network interface card (NIC). Any workload, running on that configured container, is executed within the customer’s network and can use private IP addresses within the network. For a plugin workload, the plugin code can access user services, resources, or Azure resources with a private link exposed to the same Virtual Network. Similarly, a connector workload can access the target resource or endpoint inside the same Virtual Network.
+The containerized workload allows Power Platform to support network-level isolation, using a combination of Azure subnet delegation and Virtual Network injection features. The Virtual Network *injection* feature allows a container to get injected into a customer’s Virtual Network by attaching a network interface card (NIC). Any workload, running on that configured container, is executed within the customer’s network and can use private IP addresses within the network. For a plug-in workload, the plug-in code can access user services, resources, or Azure resources with a private link exposed to the same Virtual Network. Similarly, a connector workload can access the target resource or endpoint inside the same Virtual Network.
 
 ### Azure subnet delegation
 
-Virtual Network support for Power Platform relies on [Azure subnet delegation](/azure/virtual-network/subnet-delegation-overview). Enterprises delegate a subnet to Power Platform, used by Power Platform services such as Dataverse plugins and connectors such as [custom connectors](/connectors/custom-connectors/), SQL, and Azure file storage to process requests at runtime. Containers use the IP address from the delegated subnet to handle these requests.
+Virtual Network support for Power Platform relies on [Azure subnet delegation](/azure/virtual-network/subnet-delegation-overview). Enterprises delegate a subnet to Power Platform, used by Power Platform services such as Dataverse plug-ins and connectors such as [custom connectors](/connectors/custom-connectors/), SQL, and Azure file storage to process requests at runtime. Containers use the IP address from the delegated subnet to handle these requests.
 
 Since the container operates within the boundaries of the delegated subnet and uses its IP address, any outbound call from this container remains within the enterprise's network boundaries. For example, the call stays within the Virtual Network that's part of this subnet. This setup allows enterprises to have full control over the policies, rules, and network packets that exit for these containers. Enterprises can apply the same controls to the delegated subnet as they do with their own network.
 
@@ -84,6 +85,10 @@ Power Platform doesn't manage the configuration of the delegated subnet. The onl
 By default, internet access is turned off from containers. If the enterprise's code running within these containers has a requirement for internet access, they must configure [NAT Gateway](/azure/nat-gateway/nat-overview) on the delegated subnet to allow the containers to connect to resources on the internet.
 
 #### Delegated subnet ownership for Microsoft and customers
+
+
+
+
 
 | Controls | Description | Ownership lies with |
 |----------|-------------|---------------------|
