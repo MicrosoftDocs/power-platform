@@ -18,7 +18,7 @@ search.audienceType:
 
 This white paper provides an in-depth analysis of the integration of Azure Virtual Network support within Power Platform. Learn about significant benefits of this integration such as enhanced security, improved connectivity, and streamlined network management. With Virtual Network support, organizations ensure their Power Platform services operate within a secure and controlled network environment, reducing the risk of data breaches and unauthorized access.
 
-This paper outlines the implementation process, technical architecture, and real-world use cases. Virtual Network support optimizes architecture and scalability of Power Platform applications. This paper provides practical insights from successful case studies, making it valuable resource for IT professionals and decision-makers looking to enhance their network security and operational efficiency benefit.
+This paper outlines the implementation process, technical architecture, and real-world use cases. Virtual Network support optimizes architecture and scalability of Power Platform applications. This paper provides practical insights from successful case studies, making it a valuable resource for IT professionals and decision-makers looking to enhance their network security and operational efficiency benefit.
 
 ## Key benefits
 
@@ -43,13 +43,15 @@ This paper outlines the implementation process, technical architecture, and real
 - [Copilot Studio](/microsoft-copilot-studio/fundamentals-what-is-copilot-studio) allows the creation of intelligent bots and agents. 
 - [Power Pages](/power-pages/introduction) facilitates the creation of professional-grade websites with ease.
 
-The integration of these components with Azure resources using virtual networks, enhances the overall functionality and security of the Power Platform. Virtual networks provide a secure and isolated network environment, allowing organizations to control and manage network traffic effectively. With Virtual Network support, Power Platform services can operate within a secure network, ensuring data protection and compliance with regulatory requirements.
+The integration of these components with Azure resources using virtual networks enhances the overall functionality and security of Power Platform. Virtual networks provide a secure and isolated network environment, allowing organizations to control and manage network traffic effectively. With Virtual Network support, Power Platform services can operate within a secure network, ensuring data protection and compliance with regulatory requirements.
 
 ### Network security and Virtual Network integration
 
 Network security is a critical aspect of any digital infrastructure. Protecting outbound traffic from Power Platform services is essential to prevent unauthorized access, data breaches, and other security threats. Virtual Network integration plays a vital role by providing a secure pathway for data transmission. The integration ensures that all outbound traffic from Power Platform services is routed through a controlled and monitored network environment, reducing the risk of exposure to potential threats.
 
-By implementing Virtual Network support, organizations can enforce strict security policies, monitor network traffic, and detect any anomalies in real-time. This level of control is crucial for maintaining the integrity and confidentiality of sensitive data. Virtual Network integration allows for seamless connectivity between Power Platform services and other Azure resources, simplifying overall network architecture and improving the reliability.
+By implementing Virtual Network support, organizations can enforce strict security policies, monitor network traffic, and detect any anomalies in real time. This level of control is crucial for maintaining the integrity and confidentiality of sensitive data. Virtual Network integration allows for seamless connectivity between Power Platform services and other Azure resources, simplifying overall network architecture and improving the reliability.
+
+
 
 ## Overview of Virtual Network support in Power Platform
 
