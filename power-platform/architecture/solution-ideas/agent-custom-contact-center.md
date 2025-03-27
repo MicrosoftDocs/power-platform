@@ -18,7 +18,7 @@ search.audienceType:
 
 <!-- comment from Manuela: This solution explains how to integrate with a non-Microsoft/third party contact center solution. Based on acrolinx guidance I've replaced third-party with non-Microsoft and sometimes with "other database" but let me know if there is a different way of phrasing this -->
 
-# Custom Contact Center solutions with Copilot Studio agent
+# Custom Contact Center solution with Copilot Studio agent
 
 This article outlines the architecture and services of a national banking company aiming to enhance customer service efficiency through integrated platforms and technologies.
 
@@ -56,7 +56,7 @@ Knowledge refers to the information and data sources that agents use to provide 
 
 ### Generative AI services 
 
-- **[Azure AI Foundry](/azure/ai-foundry/)**: <!-- TBD, this was missed by the writer and I'm just following up on details -->
+- **[Azure AI Studio](/azure/ai-foundry/)**: Azure AI Studio lets you build, modify, and launch generative AI apps using Azure’s models and tools such as using other LLM’s.
 - **[Azure AI Search](/azure/search/search-what-is-azure-search)**: Azure AI Search is used for vectorized indexes for knowledge sources held outside of the knowledge section of Microsoft Copilot Studio. 
 
 ### Data sources 

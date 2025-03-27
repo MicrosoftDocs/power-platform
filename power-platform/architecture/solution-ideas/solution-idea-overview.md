@@ -27,3 +27,4 @@ By exploring these solution ideas, you can gain valuable insights and practical 
 | **[Enterprise Visual Vehicle Inspection Engine](app-evvie.md)** | Inspect vehicles and assess damage using generative AI and Power Platform. |
 | **[Custom Contact Center solution with Copilot Studio agent](agent-custom-contact-center.md)** | Enhance customer service efficiency through integrated platforms and technologies. |
 | **[Travel concierge using generative AI with Copilot Studio](agent-travel-customer.md)** | Employ an AI-driven solution to enhance customer interactions and streamline information access. |
+| **[Ticket management with Copilot Studio](agent-ticket-and-refund.md)** | Improve ticket refund and management processes by deploying both a user-based and autonomous agent to integrate with legacy systems. |

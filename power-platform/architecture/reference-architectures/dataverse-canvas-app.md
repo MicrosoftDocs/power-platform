@@ -1,42 +1,80 @@
 ---
-title: "Using Microsoft Dataverse with a canvas app in Power Apps  | Microsoft Docs"
-description: Information about using Dataverse with a canvas app in Power Apps
+title: ​​Use the Dataverse connector with canvas apps​ 
+description: Learn how to use the Dataverse connector with canvas apps​ 
 author: slaouist
-
-ms.subservice: guidance
-ms.topic: conceptual
-ms.date: 08/10/2021
+ms.subservice: architecture-center
+ms.topic: example-scenario
+ms.date: 04/22/2025
 ms.author: mehdis
-ms.reviewer: sericks 
-  
+ms.reviewer: pankajsharma2087
+contributors: 
+  - manuelap-msft
+search.audienceType: 
+  - admin
+  - flowmaker
 ---
-# Using Microsoft Dataverse with a canvas app 
 
-Microsoft Dataverse is a great choice when dealing with complex object models that include several related tables. As an app maker using the [Dataverse connector](/connectors/commondataserviceforapps/), you get access to a hierarchical object model where tables and their relationships are readily available without the need to build complex lookups and joins to retrieve related tables. This simplifies the development process and results in highly performing applications because data requests are optimized accordingly.
+# ​​Use the Dataverse connector with canvas apps​ 
 
-![Diagram showing a Session table and associated Venue field with room and address information.](./media/ConferenceAppObjectModel.png)
+Microsoft Dataverse is a good choice for line of business applications to use as a data source because it provides support for more complex data and security models. Creating a Power Apps application that uses Dataverse as a data source can enable building a more custom user experience. These applications can also use other Power Platform connectors to integrate multiple data sources into a single application.  Using Dataverse is a common upgrade/migration path for applications built with SharePoint Lists, Microsoft Access or data from other business applications.
 
-When retrieving the Session table, the Dataverse connector will automatically expand the Venue field into a record, making all the information about the Venue available, such as Room and Address. Within a gallery control, the formula bound to a label would be this:
+> [!TIP]
+> The article provides an example scenario and visual representation of how to use the Dataverse connector with canvas apps. This solution is a generalized example scenario architecture, which can be used for many different scenarios and industries.
 
-```powerappsfl
-ThisItem.Venue.Room
-```
+## Architecture diagram
 
-Contrast this to other data sources:
+:::image type="content" source="media/dataverse-canvas/dataverse-canvas.png" alt-text="Architecture diagram illustrating the workflow for using the Dataverse connector with a canvas apps" lightbox="media/dataverse-canvas/dataverse-canvas.png":::
 
-```powerappsfl
-LookUp(Venues, VenueID = ThisItem.VenueID).Room
-```
+## Workflow
 
-This simplicity in dealing with relationships makes Dataverse more approachable for citizens developers and can improve productivity as well. In addition, the process of creating tables and relationships within Power Apps ([make.powerapps.com](https://make.powerapps.com)) makes Dataverse the data source of choice. 
+1. **Canvas app**: The Power Apps application uses the Dataverse connector to access data in the Dataverse environment. The authenticates to the application using Entra ID and access to the data is limited to data the user has access to. 
+1. **Dataverse connector**: The application uses the Dataverse connector which allows access to a hierarchical data model where tables and their relationships are readily available without the need to build complex lookups and joins to retrieve related tables. The connector also bypasses the traditional connector infrastructure and calls directly into the Dataverse back end, leading to better performance.
+1.	**Dataverse tables**: The Dataverse tables contain the data about the conference sessions being hosted at a venue. The tables are related together using one-to-many and many-to-many relationships. Dataverse security roles are created to align with the roles of the application users. Logic can be implemented at the Dataverse level to calculate and rollup values, enforce domain values as well as automate data operations.
 
-Further, the Dataverse connector bypasses the traditional connector infrastructure and calls directly into the Dataverse back end, leading to better performance. More information: [Blog: Considerations for optimized performance in Power Apps](https://powerapps.microsoft.com/blog/considerations-for-optimized-performance-in-power-apps/)
+## Components
 
-:::image type="complex" source="./media/PA_DataverseArch.png" alt-text="Diagram showing an app sending an OData request to, and receiving data directly from, Dataverse.":::
-   The elapsed time of the request is the sum of client and server side overhead which the time it takes to send, process and transmit the data back to Power Apps.
-:::image-end:::
+- **[Power Platform environment](/power-platform/admin/environments-overview)**: Contains the Power Platform resources such as the Power Apps that implement the Conference user experience. These resources are moved from one environment to another (E.g. Dev to Test) using Dataverse solutions.
+- **[Power Apps](/power-apps/)**: Power Apps is used to implement the user experience of the solution. Makers are able to build the application using the Dataverse data by adding the Dataverse table as an application data source.  
 
+## Use cases
 
-As a real-world example, consider Belron, the worldwide leader in vehicle glass repair and replacement. Belron uses more than 40 apps, all developed in-house by just one employee with no programming skills.
+Power Apps allows organizations to create a custom user experience for data stored in Microsoft Dataverse. Model-driven Power Apps should be considered for application scenarios that are primarily forms over data. Canvas Power Apps are best for scenarios where more flexibility on visual layout customization is needed. This approach should also be considered when you need to provide users access to data from Dataverse as well as other data sources at the same time. In those scenarios, the Power Apps application acts as the integrator providing a single view to the user of data from multiple sources.
 
-![Screenshot showing a form for capturing information in an Autoglass helpdesk app.](./media/autoglass.jpg)
+## Considerations
+
+These considerations implement the pillars of Power Platform Well-Architected, a set of guiding tenets that improve the quality of a workload. Learn more in [Microsoft Power Platform Well-Architected](/power-platform/well-architected/).
+
+### Reliability
+
+**Design your workload to avoid unnecessary complexity** – Using Dataverse from a Power Apps application avoids unnecessary complexity a traditional database solution might require due to the abstractions and built-in logic capabilities Dataverse offers. The Dataverse connector supports the relationships and security model of the underlying Dataverse environment and free the application maker from the complexity of building that support custom for each application. 
+
+### Security
+
+**Create intentional segmentation and perimeters** – Ensuring the application uses separate Power Platform environments for supporting your application lifecycle stages and ensuring only the right users have access to each stage can support your segmentation policies. 
+
+### Operational Excellence
+
+**Adopt safe deployment practices** - Standardize deployment of any changes to the Power Apps application by using automated deployment processes, such as pipelines. Promote the application to production only after testing changes. 
+
+### Performance Efficiency
+
+**Design to meet performance requirements** – Evaluate your solution performance and volume of data requirements to ensure your Dataverse table design is appropriate.  Evaluation should include how data is accessed and evaluation of how Power Apps using the Dataverse connector delegate operations the Dataverse infrastructure. Be aware of some limitations [when searching and filtering data](/power-apps/maker/canvas-apps/connections/connection-common-data-service#power-apps-delegable-functions-and-operations-for-dataverse), due to the delegation support offered by the Dataverse connector. These limitations are documented in the [Understand delegation in a canvas app](/powerapps/maker/canvas-apps/delegation-overview) topic, and should be taken into account when choosing the right data source or back end for your app.
+
+**Optimize logic** – By default canvas applications using Dataverse implement logic using Power Fx and this may cause multiple interactions with Dataverse or logic to be repeated in multiple applications. Each of these operations are independent and they are not handled as an atomic transaction. For example, if the application created a Venue row, but couldn’t create a session, the Venue row would remain. Dataverse supports [implementing logic](/power-apps/developer/data-platform/write-plug-in?tabs=pluginbase) that can be invoked on a Dataverse table event like on create of a row and it also supports the concept of invoking logic on demand using the [Dataverse custom API](/power-apps/developer/data-platform/custom-api) or [Functions in Dataverse](/power-apps/maker/data-platform/functions-overview) capabilities. With both these approaches the work performed by the logic is in a transaction and all work done with Dataverse data either commits or rolls back. In our previous example, the Venue row would not have been left after the error occurred. Integrating these approaches can optimize some scenarios logic by ensuring its successful completion as a combined unit of work and also can act as a centralization of reusable logic.
+
+### Experience Optimization
+
+**Design for efficiency** – Applications that allow users to access  other data sources in addition to Dataverse tables from a single Power Apps application without requiring them to interact with multiple individual applications is making the user more efficient and is a good use of a more custom visual experience. Avoid just building an application to build an application, the application should provide some efficiency to the user or other architecture benefit over using a model-driven Power Apps experience.
+
+## Contributors
+
+_Microsoft maintains this article. The following contributors wrote this article._
+
+Principal authors:
+
+- **[Mehdi Slaoui Andaloussi](https://www.linkedin.com/in/mehdi-slaoui-andaloussi-7450772/)**, Principal Engineering Manager
+
+## Related resources
+
+- [Microsoft Dataverse connector](/connectors/commondataserviceforapps/)
+- [Understanding delegation](/power-apps/maker/canvas-apps/delegation-overview)

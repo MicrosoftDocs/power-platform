@@ -39,6 +39,7 @@ In this article, we will look at:
 | **[Property rental portal with AI-driven search and payment processing](../solution-ideas/agent-rental-portal.md)** | Build a comprehensive rental portal that uses AI-driven search capabilities and seamless payment processing. |
 | **[Custom Contact Center solution with Copilot Studio agent](../solution-ideas/agent-custom-contact-center.md)** | Enhance customer service efficiency through integrated platforms and technologies. |
 | **[Travel concierge using generative AI with Copilot Studio](../solution-ideas/agent-travel-customer.md)** | Employ an AI-driven solution to enhance customer interactions and streamline information access. |
+| **[Ticket management with Copilot Studio](../solution-ideas/agent-ticket-and-refund.md)** | Improve ticket refund and management processes by deploying both a user-based and autonomous agent to integrate with legacy systems. |
 
 ## Resources
 

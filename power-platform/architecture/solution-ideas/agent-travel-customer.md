@@ -72,7 +72,7 @@ Knowledge refers to the information and data sources that agents use to provide 
 
 - **[Power Platform admin center](/power-platform/admin/new-admin-center)**: Manages and monitors all Power Platform components for operational efficiency. Chosen for its ability to enforce governance and maintain compliance across solutions. 
 - **[Power Fx](/power-platform/power-fx/overview)**: Enables custom logic for advanced functionality in apps and workflows. Selected for its simplicity and integration with other Power Platform components. 
-- **[Microsoft Entra ID](/entra/fundamentals/whatis): Enables checking of access to data for certain individuals. 
+- **[Microsoft Entra ID](/entra/fundamentals/whatis)**: Enables checking of access to data for certain individuals. 
 - **[Application Insights](/microsoft-copilot-studio/advanced-bot-framework-composer-capture-telemetry)**: Used with Copilot Studio to deliver real-time telemetry and proactive diagnostics to allow for continuously optimizing performance and user experience. 
 
 ### Reporting 

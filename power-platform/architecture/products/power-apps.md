@@ -46,6 +46,8 @@ In this article, we will look at:
 | **[Integrating Microsoft Power Platform with SAP](../reference-architectures/arch-pattern-sap.md)** | Learn about the architecture, workflows, and connectivity methods available to integrate Power Platform with SAP to ensure a smooth integration process. |
 | **[Dataverse background operations](../reference-architectures/dataverse-background-operations.md)** | Us custom APIs to define custom messages and implement business logic through plug-ins, allowing for background processing that eliminates the need for a persistent connection during execution. |
 | **[Secure Power Platform access to Azure resources](../reference-architectures/secure-access-azure-resources.md)** | Use Microsoft Azure Virtual Network support for Power Platform to integrate Power Platform with resources inside your virtual network without exposing them to the public internet. |
+| **[Use REST APIs to extend the functionality of canvas apps](../reference-architectures/custom-connector-canvas.md)** | When dealing with complex algorithms or with many data sources shifting the logic from the canvas app to a RESTful API can be a good choice to help keep your formulas within your  Power Apps canvas application simple while moving more complex functionality server-side. |
+| **[​Use the Dataverse connector with canvas apps​](../reference-architectures/dataverse-canvas-app.md)** | Creating a Power Apps application that uses Dataverse as a data source can enable building a more custom user experience. |
 
 ## Solution ideas
 
