@@ -100,7 +100,7 @@
             - name: Manage
               href: templates/sap-supplier-self-service/manage.md
         - name: Copilot for Finance SAP Collections template
-          href: /copilot/finance/get-started/sap/administer/get-started.md
+          href: copilot/finance/get-started/sap/administer/get-started.md
         - name: Integration assistant for SAP
           items:
             - name: Overview

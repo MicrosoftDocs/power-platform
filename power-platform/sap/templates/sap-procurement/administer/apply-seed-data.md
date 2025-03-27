@@ -59,7 +59,7 @@ To help you set up application menus, a list of the fields with examples and des
 | Menu Group | "Purchasing" | A logical grouping of menu items. Typically, this is a process domain area. |
 | Order | _1_, _2_, _3_, _4_ | The order in which the menu items should be displayed. |
 | Capability | "Vendors", "Requisitions", "Purchase Orders" | The capability or app that corresponds to each menu item. |
-| Launch URL | "<https://apps.powerapps.com/play/e/2359c141-01e4-ec77-8e6f-7efd2f5c7308/a/7d0062b0-922b-454e-8154-295ef726d54d?tenantId=aaaabbbb-0000-cccc-1111-dddd2222eeee>" | The URL of the corresponding app to launch when the menu item is selected. You obtain it by copying the Web link value from the respective app details page. Note, this URL is unique for a given app per environment. |
+| Launch URL | _apps.powerapps.com/play_ | The URL of the corresponding app to launch when the menu item is selected. You obtain it by copying the Web link value from the respective app details page. Note, this URL example is incomplete. Your unique URL will have additional identifying information.|
 | Menu Icon | Purchase Orders Menu Icon | The icon to be displayed with the menu item in the app. You can select your own or the one that is contained in the SAP Procurement solution located underneath _web resources_. |
 
 ## Apply SAP's list of values
