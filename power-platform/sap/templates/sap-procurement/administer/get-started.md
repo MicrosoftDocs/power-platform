@@ -78,7 +78,7 @@ Work with your SAP functional analyst, business subject matter experts, and Powe
 
 ## Use agents to translate goals into tasks
 
-The [Integration assistant for SAP solutions](power-platform/sap/templates/integration-assistant/overview) and the [Account assistant for SAP solutions](/power-platform/sap/templates/account-assistant/overview) are advanced, LLM-based agents that translate business-oriented goals into actionable SAP NetWeaver tasks. These assistive agents, set up in a developer environment, help you discover the SAP BAPIs, RFCs, and table reads you need to achieve your business goals and empower you to build what you need to retrieve that information and execute operations seamlessly.
+The [Integration assistant for SAP solutions](/power-platform/sap/templates/integration-assistant/overview) and the [Account assistant for SAP solutions](/power-platform/sap/templates/account-assistant/overview) are advanced, LLM-based agents that translate business-oriented goals into actionable SAP NetWeaver tasks. These assistive agents, set up in a developer environment, help you discover the SAP BAPIs, RFCs, and table reads you need to achieve your business goals and empower you to build what you need to retrieve that information and execute operations seamlessly.
 
 > [!WARNING]
 > *Integration assistant for SAP solutions* and *Account assistant for SAP solutions* are only intended to assist makers in a development environment. The agents have wide latitude when interacting with SAP systems and are **not for production use**.
