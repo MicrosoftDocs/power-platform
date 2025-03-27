@@ -106,7 +106,7 @@ Implementing row-level security in Dataverse ensures that only authorized users 
 
 Learn more:
 
-- [Security and compliance considerations for intelligent application workloads](/well-architected/intelligent-application/security)
+- [Security and compliance considerations for intelligent application workloads](/power-platform/well-architected/intelligent-application/security)
 - [Security concepts in Microsoft Dataverse](/power-platform/admin/wp-security-cds)
 
 ### Performance Efficiency 

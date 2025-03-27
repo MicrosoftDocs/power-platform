@@ -1114,11 +1114,6 @@
       "redirect_document_id": "false"
     },
     {
-      "source_path": "power-platform/guidance/architecture/real-world-examples/azure-function-canvas.md",
-      "redirect_url": "/power-platform/architecture/reference-architectures/azure-function-canvas.md",
-      "redirect_document_id": "false"
-    },
-    {
       "source_path": "power-platform/guidance/architecture/real-world-examples/custom-connectors-canvas.md",
       "redirect_url": "/power-platform/architecture/reference-architectures/custom-connectors-canvas.md",
       "redirect_document_id": "false"

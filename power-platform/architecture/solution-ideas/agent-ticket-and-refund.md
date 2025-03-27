@@ -113,7 +113,7 @@ To maintain efficiency and performance, Azure Virtual Machines can be scaled dyn
 
 Learn more:
 
-- [Security and compliance considerations for intelligent application workloads](/well-architected/intelligent-application/security)
+- [Security and compliance considerations for intelligent application workloads](/power-platform/well-architected/intelligent-application/security)
 - [Security concepts in Microsoft Dataverse](/power-platform/admin/wp-security-cds)
 
 ### Performance Efficiency 
