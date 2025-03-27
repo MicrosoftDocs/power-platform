@@ -1,5 +1,5 @@
 - name: Power Platform and SAP
-  href: index.md
+  href: ./index.yml
   items:
     - name: Explore
       items:
@@ -7,7 +7,7 @@
           href: explore/power-platform-and-SAP-integration.md
         - name: SAP + Power Platform white paper
           href: explore/white-paper.md
-        - name: Power Platform and SAP integration FAQs
+        - name: FAQs
           href: explore/faqs.md
     - name: Get started with Power Platform
       items:

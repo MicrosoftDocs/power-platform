@@ -13,7 +13,7 @@ contributors:
   - Wrighttyler
 ms.reviewer: ellenwehrle
 ms.topic: conceptual
-ms.date: 10/26/2023
+ms.date: 03/27/2025
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -119,4 +119,4 @@ Be sure admin centers are set up and ready to support an enterprise-level deploy
 
 ### See also
 
-[Frequently asked questions about integrating SAP with Power Platform](../faqs.md)
+[Frequently asked questions about integrating SAP with Power Platform](/power-platform/sap/explore/faqs)

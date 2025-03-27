@@ -15,7 +15,7 @@ contributors:
   - shanep
 ms.reviewer: ellenwehrle
 ms.topic: overview
-ms.date: 1/8/2024
+ms.date: 03/27/2025
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -98,7 +98,7 @@ Support can be accessed at [Templates for Power Platform](https://github.com/mic
 ### Related content
 
 - [Get started with SAP Procurement template](administer/get-started.md)
-- [Frequently asked questions about SAP integration with Power Platform](faqs.md)
+- [Frequently asked questions about SAP integration with Power Platform](/power-platform/sap/explore/faqs)
 - [SAP Vendor Management app](use/vendor-management.md)
 - [SAP Requisition Management app](use/requisition-management.md)
 - [SAP Purchase Order Management app](use/purchase-order-management.md)
