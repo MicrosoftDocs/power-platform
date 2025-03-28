@@ -92,29 +92,28 @@
             - name: Manage at scale 
               href: adoption/govern-at-scale.md
             - name: Establish an environment strategy
-              href: white-papers/environment-strategy.md
-            - name: Reactive governance
+              href: adoption/environment-strategy.md
+            - name: Implement reactive governance
               href: adoption/reactive-governance.md
-            - name: Full visibility
-              href: adoption/access-usage.md
             - name: Plan and manage licenses and capacity
               href: adoption/capacity-and-licenses.md            
+            - name: Designate a Power Platform admin
+              href: adoption/pp-admin.md
+            - name: Gain insights into Power Platform adoption
+              href: adoption/observability.md
+            - name: Report on resource usage
+              href: adoption/resource-usage.md
+
             - name: Manage Dataverse for Teams environments
               href: adoption/teams-environment-strategy.md
             - name: Manage the default environment
-              href: adoption/manage-default-environment.md            
-            - name: Designate a Power Platform admin
-              href: adoption/pp-admin.md
+              href: adoption/manage-default-environment.md 
         - name: Operate
           items:
             - name: Overview
               href: adoption/operate-overview.md
             - name: Establish effective Application Lifecycle Management practices
               href: adoption/alm.md
-            - name: Gain insights into Power Platform adoption
-              href: adoption/observability.md
-            - name: Report on resource usage
-              href: adoption/resource-usage.md
             - name: Monitor license and capacity consumption
               href: adoption/cds-usage.md
             - name: Ensure data resilience

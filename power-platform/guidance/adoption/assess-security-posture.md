@@ -153,7 +153,6 @@ A comprehensive security strategy for Power Platform adoption creates a framewor
 > [Manage your security posture](security-posture-management.md)
 
 ## Resources
-<!-- TODO UPDATE WITH MORE LINKS AND SECTIONS -->
 
 - [Low-code security and governance](https://www.microsoft.com/en-us/power-platform/trusted-cloud?msockid=32e5014d245262fc0dd6128a2508631d)
 - [Microsoft compliance](/compliance/)

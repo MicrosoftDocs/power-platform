@@ -1,5 +1,5 @@
 ---
-title: Ensure data resilience
+title: Ensure data retention and mobility
 description: Guidance for protecting and recovering data seamlessly with a range of flexible backup and retention capabilities
 author: manuelap-msft
 ms.component: pa-admin
@@ -10,7 +10,7 @@ ms.reviewer: sericks
 ms.date: 02/28/2025
 ---
 
-# Ensure data resilience
+# Ensure data retention and mobility
 
 In today’s data-driven world, ensuring that your data remains available, secure, and recoverable in the face of disruptions is essential for businesses operating at a global scale. Microsoft Power Platform enables you to protect and recover their data seamlessly with a range of flexible backup and retention capabilities.
 
@@ -65,6 +65,12 @@ Set up monitoring and alerting systems using tools like Azure Application Insigh
 
 Learn more about [recommendations for designing a reliable monitoring and alerting strategy](/power-platform/well-architected/reliability/monitoring-alerting-strategy).
 
+## Managed operations
+
+[Managed operations](/power-platform/admin/operations/overview) is a suite of capabilities that empower organizations of all sizes to build, deploy, and operate their most critical workloads. These capabilities are built with both existing and emerging AI-driven solutions in mind. They ensure stability and minimize disruption at the same time that they maximize the productivity of operations teams.
+
+Learn more about [what you can do with managed operations](/power-platform/admin/operations/overview).
+
 ## Conduct regular audits
 
 Perform regular audits of your data resilience strategies to identify potential vulnerabilities and areas for improvement.
@@ -84,3 +90,8 @@ Having a central source, such as a [SharePoint site or wiki](wiki-community.md),
 Microsoft Business Applications provide business continuity and disaster recovery (BCDR) capabilities to all production environments in Dynamics 365 and Power Platform software as a service (SAAS) applications. Learn how [Microsoft ensures your production data is resilient during regional outages](/power-platform/admin/business-continuity-disaster-recovery).
 
 Develop a comprehensive disaster recovery plan that outlines the steps to take if there's data loss or system failure. Regularly test and update this plan. Learn more about [designing a disaster recovery strategy](/power-platform/well-architected/reliability/disaster-recovery).
+
+## Related resources
+
+- [Managed operations](/power-platform/admin/operations/overview)
+- [Power Platform Well-Architected - Reliability recommendations](/power-platform/well-architected/reliability/checklist)
