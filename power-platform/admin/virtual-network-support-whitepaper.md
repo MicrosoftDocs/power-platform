@@ -25,15 +25,15 @@ This paper outlines the implementation process, technical architecture, and real
 
 ## Key benefits
 
-- **Enhanced security**: Host Power Platform services within a secure network, protecting sensitive data from unauthorized access and potential breaches.
+- **Enhanced security**: Host Power Platform services within a secure network, protecting sensitive data from unauthorized access and potential breaches.
 
-- **Improved connectivity**: Establish secure and reliable connections between Power Platform services and other Azure resources, enhancing overall connectivity.
+- **Improved connectivity**: Establish secure and reliable connections between Power Platform services and other Azure resources, enhancing overall connectivity.
 
-- **Streamlined network management**: Simplify network management by providing a centralized and consistent approach to configuring and managing network settings for Power Platform services.
+- **Streamlined network management**: Simplify network management by providing a centralized and consistent approach to configuring and managing network settings for Power Platform services.
 
-- **Scalability**: Scale Power Platform services efficiently, ensuring network resources can grow in line with business needs.
+- **Scalability**: Scale Power Platform services efficiently, ensuring network resources can grow in line with business needs.
 
-- **Compliance**: Meet regulatory and compliance requirements for network security and data protection.
+- **Compliance**: Meet regulatory and compliance requirements for network security and data protection.
 
 ## Background
 
