@@ -31,12 +31,12 @@ Microsoft Power Platform enables you to extend the functionality of your Power A
 1. **Canvas app**: The Power Apps canvas app uses the custom connector to access operations exposed by the Azure Function. The user authenticates to the application using Microsoft Entra ID, and access to the data is limited to data the user can access.
 1. **Custom connector**: The custom connector describes which operations the application can use from the REST API, which in the example is implemented by an Azure Function. By using a custom connector, the Power Apps canvas application can use the logic like any other data source.
 1. **Microsoft Entra ID apps**: The Azure Function is secured using a Microsoft Entra ID app. A second Microsoft Entra ID app is registered and configured on the custom connector to allow the Power Apps canvas app to access the Azure Function operations.
-1. **Azure Function**: The Azure Function implements the RESTful API, offering one or more operations that are exposed to the Power Apps canvas application by either exporting a custom connector from the Azure portal or by manual configuration. The Azure Function is secured by a Microsoft Entra ID app registration to ensure only authorized callers.
+1. **Azure Function**: The Azure Function implements the RESTful API, offering one, or more operations that are exposed to the Power Apps canvas application by either exporting a custom connector from the Azure portal or by manual configuration. The Azure Function is secured by a Microsoft Entra ID app registration to ensure only authorized callers.
 1. **Azure Cosmos DB**: The Azure Function can use Azure Cosmos DB, Azure SQL, or any other cloud data store it requires to manage the data. In fact, the function could be working with data in Microsoft Dataverse using the function approach due to the complexity of the logic.
 
 ## Components
 
-- **[Power Platform environment](/power-platform/admin/environments-overview)**: Contains the Power Platform resources such as the Power Apps that implement the In Store app user experience. These resources are moved from one environment to another (e.g., Dev to Test) using Dataverse solutions.
+- **[Power Platform environment](/power-platform/admin/environments-overview)**: Contains the Power Platform resources such as the Power Apps that implement the In Store app user experience. These resources are moved from one environment to another (for example, Dev to Test) using Dataverse solutions.
 
 - **[Power Apps](/power-apps/)**: Power Apps is used to implement the user experience of the solution. Makers can build the application using the custom connector created by the developer of the Azure Function as an application data source.
 
@@ -78,7 +78,7 @@ Ensure the application uses separate Power Platform environments to support your
 
 - **Optimize logic**: As logic becomes more complex in a canvas app, Azure Functions or similar backend RESTful API implementations can offload that logic to a centralized reusable service. Using the custom connector capability to describe those RESTful APIs allows canvas apps to use their configured operations like any other data source.
 
-- **Test performance**: Along with testing for functionality and failures, it is important to test and develop a baseline for performance and evaluate it as part of your release cycle if the API is sensitive to changes in work completion times.
+- **Test performance**: Along with testing for functionality and failures, it's important to test and develop a baseline for performance and evaluate it as part of your release cycle if the API is sensitive to changes in work completion times.
 
 ### Experience optimization
 
