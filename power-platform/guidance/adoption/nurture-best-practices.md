@@ -30,10 +30,10 @@ By exploring these questions, you embark on a journey to connect the dots and cr
 1. [Define community purpose and goals](community-goals.md): Establish a clear vision and objectives for your community.
 1. [Define community core team responsibilities](community-core-team.md): Assign roles and responsibilities to ensure smooth operation.
 1. [Onboard new makers](onboard-makers.md): Create a welcoming and informative onboarding experience for new community members and Power Platform makers.
-1. [Promote the community and establish partnerships](communmity-promote.md): Increase visibility and build relationships with other communities and stakeholders.
+1. [Promote the community and establish partnerships](community-promote.md): Increase visibility and build relationships with other communities and stakeholders.
 1. [Identify and support champions](champions.md). Recognize and empower individuals who demonstrate exceptional skills and commitment to the Power Platform community. Provide them with resources and opportunities to lead and mentor others.
 1. [Celebrate successes](show-and-tell.md): Recognize and reward the achievements of community members to foster a positive and supportive environment.
-1. [Organize hackathons](hackathons.md.md). Plan and execute hackathons to foster creativity, collaboration, and innovation within the Power Platform community.
+1. [Organize hackathons](hackathons.md). Plan and execute hackathons to foster creativity, collaboration, and innovation within the Power Platform community.
 
 Through these steps, you'll be able to build a thriving Power Platform community that not only meets individual needs but also drives organizational success.
 

@@ -70,11 +70,11 @@ Check the [tenant-level analytics](/power-platform/admin/tenant-level-analytics)
 
 The [dashboard](/power-platform/guidance/coe/power-bi-nurture#makers) in the CoE Starter Kit can give you a tenant-wide overview of makers in your environment, what connectors they're using to create apps and flows. You can see your top app and flow makers, what departments they are from, and identify trends over time.
 
-:::image type="content" source="../coe/media/pb-6.png" alt-text="CoE Starter Kit maker dashboard" lightbox="media/observability/image1.png" border="false":::
+:::image type="content" source="../coe/media/pb-6.png" alt-text="CoE Starter Kit maker dashboard" lightbox="../coe/media/pb-6.png" border="false":::
 
 You can see how many different connectors your makers are using and learn who is exploring different connectors. A great way to identify mature makers is looking at those who try out different connectors.
 
-:::image type="content" source="../coe/media/pb-20.png" alt-text="CoE Starter Kit connector insights" border="false":::
+:::image type="content" source="../coe/media/pb-20.png" alt-text="CoE Starter Kit connector insights" lightbox="../coe/media/pb-20.png" border="false":::
 
  > [!TIP]
  > Even if your organization hasn't adopted Power Platform yet, it’s likely you already have a good idea of who your champions will be. They are your Excel, Access, and SharePoint whizzes; or maybe they’re the troublemakers pushing the boundaries; or the ones who are first in line when there’s something new to learn. They question, they query, they encourage. Train those people. Make them Power Platform champions and help them train others—champions aren't only passionate about what they do, but are also excited to evangelize and help their peers to learn more effective ways of working.
