@@ -2,9 +2,8 @@
 title: "Organize show-and-tell sessions | MicrosoftDocs"
 description: "If you want to create more excitement in your organization and inspire more people to join your Power Apps community, an app showcase is a great way to do so."
 author: manuelap-msft
-
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 09/11/2020
 ms.subservice: guidance
 ms.author: mapichle
@@ -12,6 +11,7 @@ ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
+
 # Share success stories
 
 When your organization adopts Microsoft Power Platform, sharing success stories internally becomes a powerful tool to foster engagement, inspire innovation, and drive adoption. Success stories highlight the tangible benefits of the platform, showcase the achievements of your makers, and create a culture of recognition and continuous improvement.
@@ -80,7 +80,7 @@ Here are some tips for writing and sharing success stories:
 
 - Provide quotes from the leadership team and users; this is a great way to highlight the impact of your work.
 
-- Use a format that makes sense for your story, but here's an example format that we use for our public case studies:
+- Use a format that makes sense for your story. Here's an example format that we use for our public case studies:
 
   - **Overview**: Summary of what was accomplished at a high level.
   

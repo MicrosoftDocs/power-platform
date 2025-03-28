@@ -1,17 +1,21 @@
 ---
-title: "Find and support champions in your organization - Microsoft Power Platform | MicrosoftDocs"
-description: "Find your Microsoft Power Platform champions with the right tools, and learn how they can support you."
+title: Find and support champions in your organization
+description: Discover how to identify and support Microsoft Power Platform champions to drive adoption, innovation, and community building in your organization.
 author: manuelap-msft
-
 ms.component: pa-admin
-ms.topic: conceptual
-ms.date: 02/28/2025
+ms.topic: concept-article
+ms.date: 03/28/2025
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: sericks
-search.audienceType: 
+search.audienceType:
   - admin
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-description
+  - ai-seo-date:03/28/2025
 ---
+
 # Support Microsoft Power Platform champions in your organization
 
 Champions are essential to driving awareness, adoption, and education in your organization. Peers recognize _champions_ as the _go-to_ Power Apps, Power Automate, or Microsoft Copilot Studio experts. A champion continually builds and shares their knowledge even if it's not an official part of their job role. Power Platform champions influence and help their colleagues in many ways, including solution development, skills improvement, and troubleshooting.
@@ -93,7 +97,7 @@ Considerations and key actions you can take to initiate, grow, and sustain your 
 - Decide how you will communicate with the champions network (for example, in a Teams channel, via Viva Engage, and/or an email distribution list).
 - Determine how the champions network will communicate and collaborate with each other directly (across organizational boundaries), to share updates and successes, and to connect with each other.
 - Hold regular meetings: Promote enthusiasm and cohesiveness of your community by holding regular monthly meetings. These can be a combination of in person and virtual meetings, but their consistency is key to having a thriving champions community.
-- Create a Champions team: Your champions should use the team you have setup for them for all program communications, feedback, and to find resources. In doing this they will become increasingly familiar with the product and its benefits. Get started with the [Adopt Office 365](/microsoftteams/general-teams-templates-in-the-admin-console) teams template, which will create relevant channels and apps for your champions program.
+- Create a Champions team: Your champions should use the team you have setup for them for all program communications, feedback, and to find resources. In doing this they will become increasingly familiar with the product and its benefits. Get started with the [Adopt Office 365](/microsoftteams/general-teams-templates-in-the-admin-console) teams template. It creates relevant channels and apps for your champions program.
 
 ### Focus on the people
 
@@ -110,7 +114,7 @@ Find enthusiastic champions who can commit time and effort. How can you help the
   - Direct access to CoE members.
   - Influence on environment and connector strategies being implemented (for example, requirements for a dataset certification policy).
   - Influence on the creation of best practices and guidance (for example, providing recommendations for which connectors should be available via [Data Loss Prevention (DLP)](../../admin/wp-data-loss-prevention.md) policies).
-- Actively involve certain champions as satellite members of the CoE. They can provide valuable input in what works and doesn't work when it comes to admin and governance policies, communication and training.
+- Actively involve certain champions as satellite members of the CoE. They can provide valuable input in what works and doesn't work when it comes to admin and governance policies, communication, and training.
 - Create a feedback loop so champions can easily provide information or submit suggestions to the CoE.
 
 ## How to support and reward champions

@@ -1,15 +1,19 @@
 ---
-title: "Use resource usage reports - Microsoft Power Platform | MicrosoftDocs"
-description: "Learn how to review out-of-the-box monitoring capabilities, check service and environment health, set alerts on security permissions or compliance regulations, and perform typical actions to ensure a secure, healthy, and safe citizen developer environment."
+title: Report on resource usage
+description: Discover tools and strategies to monitor Power Apps, Power Automate, and Copilot Studio adoption and performance.
 author: manuelap-msft
 ms.component: pa-admin
-ms.topic: conceptual
-ms.date: 02/28/2025
+ms.topic: concept-article
+ms.date: 03/28/2025
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: sericks
-search.audienceType: 
+search.audienceType:
   - admin
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-description
+  - ai-seo-date:03/28/2025
 ---
 
 # Report on resource usage
@@ -23,9 +27,9 @@ In this section, you learn how to:
 - Set alerts for security permissions or compliance regulations.
 - Perform typical actions to ensure the security, health, and safety of the citizen developer environment.
 
-Out-of-the-box tooling around monitoring, alerts, and actions falls into the following categories:
-
 ## What tools are available to monitor resource usage?
+
+Several tools are available to monitor resource usage in Power Platform.
 
 ### Power Platform admin center
 
@@ -52,6 +56,8 @@ Power Platform administrators often have a need to orchestrate and automate rout
 This flexibility ensures that administrators can tailor their automation and orchestration efforts to the unique needs of their organization, enhancing efficiency and control over their Power Platform adoption.
 
 ## What should I monitor?
+
+Monitor the default environment and its usage, as well as the usage of Power Apps, Power Automate, and Copilot Studio.
 
 ## Default environment
 

@@ -1,17 +1,21 @@
 ---
-title: "Envision and uncover high-value Power Platform use cases"
-description: "Help makers plan and execute their Power Apps projects. "
+title: Envision and uncover high-value Power Platform use cases
+description: Discover how to identify high-value Power Platform use cases to enhance efficiency, reduce costs, and improve decision-making through solution envisioning workshops.
 author: manuelap-msft
-
 ms.component: pa-admin
-ms.topic: conceptual
-ms.date: 02/28/2025
+ms.topic: concept-article
+ms.date: 03/28/2025
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: sericks
-search.audienceType: 
+search.audienceType:
   - admin
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-description
+  - ai-seo-date:03/28/2025
 ---
+
 # Envision and uncover high-value Power Platform use cases
 
 Investing in the Power Platform involves both time and resources. By identifying areas where the platform can enhance efficiency, reduce costs, and improve decision-making, organizations can ensure they are leveraging the technology to its fullest potential. High-value use cases often involve automating repetitive tasks, providing real-time data insights, and streamlining processes, which collectively boost employee productivity and job satisfaction.

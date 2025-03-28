@@ -1,16 +1,19 @@
 ---
-title: "Establish a training and upskilling strategy for makers"
-description: "It's important to think about your upskilling strategy for makers - what will be available for new, intermediate, and advanced makers to ensure they're able to learn constantly and can get powered up"
+title: Establish a training and upskilling strategy for makers
+description: Discover how persona-based training for Explorers, Innovators, and Champions can drive productivity and foster innovation in your organization.
 author: manuelap-msft
-
 ms.component: pa-admin
-ms.topic: conceptual
-ms.date: 02/28/2025
+ms.topic: concept-article
+ms.date: 03/28/2025
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: sericks
-search.audienceType: 
+search.audienceType:
   - admin
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-description
+  - ai-seo-date:03/28/2025
 ---
 
 # Establish a training and upskilling strategy for makers
@@ -66,8 +69,6 @@ Key questions for **Champions** include:
 - How can I share my know-how?
 
 To support **Champions**, offer activities and resources such as:
-
-Certainly! Here's an elaboration on each item in the list related to Power Platform training and content:
 
 - **Champions program**: A champions program is designed to identify and empower individuals within an organization who are passionate about Power Platform and can lead by example. These champions act as advocates, sharing their knowledge and expertise with their peers, and driving adoption and innovation. The program typically includes exclusive training sessions, recognition, and opportunities for champions to contribute to the development of best practices and community initiatives. By fostering a network of champions, organizations can accelerate the spread of skills and enthusiasm for the Power Platform. Learn more about [define champions community purpose & goals​](champions.md).
 _ **Early access to feature releases**: Feature releases are updates that introduce new functionalities and improvements to the Power Platform. Early access to feature releases can be a great benefit for Power Platform champions, providing them with the opportunity to explore new functionalities before they're widely available. This early access allows champions to stay ahead of the curve, gaining a deeper understanding of the latest tools and enhancements.
