@@ -26,7 +26,9 @@ Using the Hosted RPA (Robotic Process Automation) feature, organizations can dec
 
 ## Architecture diagram
 
-:::image type="content" source="media/rpa-scale-operations/Picture5.svg" alt-text="Diagram showing ​​how to scale RPA Operations using Hosted RPA in Microsoft Power Automate for desktop." lightbox="media/rpa-scale-operations/Picture5.svg":::
+:::image type="content" source="media/rpa-scale-operations/rpa-scale-operations.png" alt-text="Diagram showing ​​how to scale RPA Operations using Hosted RPA in Microsoft Power Automate for desktop." lightbox="media/rpa-scale-operations/rpa-scale-operations.png":::
+
+<!-- awaiting larger image to be provided -->
 
 ## Workflow
 
