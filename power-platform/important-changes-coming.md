@@ -594,7 +594,7 @@ Canvas apps can no longer use the Power Apps player in Windows. All Canvas apps 
 #### Power Automate
 
 - Dynamics 365 connector can't be added to new or existing flows.
-- Existing flows will continue to run until the final deprecation date, which will be announced in 2024.
+- Existing flows will continue to run until the final deprecation date.
 
 #### Logic Apps
 
