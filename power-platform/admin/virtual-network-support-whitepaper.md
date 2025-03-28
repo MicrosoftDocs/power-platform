@@ -86,29 +86,25 @@ By default, internet access is turned off from containers. If the enterprise's c
 
 #### Delegated subnet ownership for Microsoft and customers
 
-
-
-
-
-| Controls | Description | Ownership lies with |
+| Controls | Description | Ownership |
 |----------|-------------|---------------------|
 | NAT Gateway | When a NAT Gateway is attached to a subnet, it becomes the next hop for all internet-destined traffic from that subnet. Any outbound traffic from the subnet to the internet is routed through the NAT Gateway. All instances within the subnet remain private with secure and scalable outbound connectivity. | Customer |
 | Network Security Groups (NSGs) | Customers can associate NSGs with the delegated subnet. Define and enforce security rules to control inbound and outbound traffic to and from the subnet. | Customer |
 | Route tables | Customers can associate route tables with the delegated subnet. Define custom routing policies to control the flow of traffic within the Virtual Network and to external networks. | Customer |
 | Network monitoring | Network monitoring helps in maintaining compliance with security policies by enforcing traffic to travel through the enterprise's virtual private network. | Customer|
-| IP address management | Customers can dictate the IP address space for the delegated subnet, ensuring it uses private IP address ranges, for example **10.0.0.0/8**, **192.168.0.0/16**, **172.16.0.0/12**. | Customer |
+| IP address management | Customers can dictate the IP address space for the delegated subnet, ensuring it uses private IP address ranges—for example **10.0.0.0/8**, **192.168.0.0/16**, **172.16.0.0/12**. | Customer |
 | DNS configuration | Customers can configure custom DNS settings for the delegated subnet, including Azure DNS entries. | Customer |
 | Container | Containers execute requests from Virtual Network-supported services and acquire IPs from the delegated subnet. | Microsoft |
 
 ## Technical architecture
 
-The layout and communication flow of components demonstrates *using* versus *not using* the Virtual Network feature for plugin and connector workloads:
+The layout and communication flow of components demonstrates *using* versus *not using* the Virtual Network feature for plug-in and connector workloads:
 
 :::image type="content" source="media/technical-architecture.png" alt-text="Virtual network technical architecture" lightbox="media/technical-architecture.png":::
 
-In a Virtual Network configuration, the container running the plugin or connector is part of a customer’s Virtual Network. Communications to endpoints within the Virtual Network remain within the Virtual Network boundary. Customers can extend the boundary to other virtual or on-premises networks by using Virtual Network peering and ExpressRoute or VPN Gateways.
+In a Virtual Network configuration, the container running the plug-in or connector is part of a customer’s Virtual Network. Communications to endpoints within the Virtual Network remain within the Virtual Network boundary. Customers can extend the boundary to other virtual or on-premises networks by using Virtual Network peering and ExpressRoute or VPN Gateways.
 
-Power Platform components in a containerized workload of a customer’s Virtual Network must have some communication with the components in the workload. For example, Power Platform can trigger a plugin in the workload or invoke the connector when needed.
+Power Platform components in a containerized workload of a customer’s Virtual Network must have some communication with the components in the workload. For example, Power Platform can trigger a plug-in in the workload or invoke the connector when needed.
 
 Since the container isn't attached to the infrastructure network, a special channel is established with the container from the orchestration layer. This channel allows specific signals to be sent to the workload. A local IP within the container (APIPA address) is used for this purpose. Only specific inbound messages to the workload from the platform are allowed to maintain the isolation of the container and the workload.
 
@@ -165,14 +161,14 @@ Organizations across different industries can enhance their security posture, im
 
 ## Integration patterns
 
-The type of workloads that enterprises want to run within an environment determines the integration pattern for the Power Platform. You can use Virtual Network support for Power Platform as an integration pattern in your environment with some exceptions.
+The type of workloads that enterprises want to run within an environment determines the integration pattern for Power Platform. You can use Virtual Network support for Power Platform as an integration pattern in your environment with some exceptions.
 
 ### API workloads
 
-If enterprises plan to run API workloads like plugins, connectors, or service endpoints, [Virtual Network support for Power Platform](vnet-support-overview.md) is the only supported way to integrate securely with your data sources within your network.
+If enterprises plan to run API workloads like plug-ins, connectors, or service endpoints, [Virtual Network support for Power Platform](vnet-support-overview.md) is the only supported way to integrate securely with your data sources within your network.
 
 > [!NOTE]
-> A subset of connectors with third-party, driver requirement or Windows authentication aren't supported on Virtual Networks at this point. These connectors have less than 1% of total usage and continue to use on-premises data gateway (OPDG) today.
+> A subset of connectors with third-party driver requirements or Windows authentication isn't supported on Virtual Networks at this point. These connectors have less than 1% of total usage and continue to use on-premises data gateway (OPDG) today.
 
 ### ETL workloads
 
@@ -180,7 +176,7 @@ If enterprises plan to run API workloads like plugins, connectors, or service en
 
 :::image type="content" source="media/VNet-support.png" alt-text="Virtual Network support for Power Platform." lightbox="media/VNet-support.png":::
 
-### Set-up and configuration considerations
+### Setup and configuration considerations
 
 To use the Virtual Network support for Power Platform, consider the following guidelines when you set up and configure it.
 
@@ -188,7 +184,7 @@ To use the Virtual Network support for Power Platform, consider the following gu
 
 Virtual Network support requires that delegated subnets in Azure regions must match the Power Platform environments location. If you have a Power Platform environment in the United States, then each of two Virtual Networks and subnets must be in the East US and West US Azure regions. For supported regions and location mappings, go to [Supported regions](vnet-support-overview.md#supported-regions).
 
-If your Azure resources are in different Azure regions, you must still deploy your Virtual Networks for Power Platform environments in the appropriate Azure location for your environment. You should then use Virtual Network peering or a similar connectivity option with high speed and low latency to connect the resources with your Virtual Networks. With the [Microsoft global network](/azure/networking/microsoft-global-network), there are multiple options to establish the connectivity between the Power Platform Virtual Network and your enterprises Virtual Network.
+If your Azure resources are in different Azure regions, you must still deploy your Virtual Networks for Power Platform environments in the appropriate Azure location for your environment. You should then use Virtual Network peering or a similar connectivity option with high speed and low latency to connect the resources with your Virtual Networks. With the [Microsoft global network](/azure/networking/microsoft-global-network), there are multiple options to establish the connectivity between the Power Platform Virtual Network and your enterprises' Virtual Network.
 
 #### Subnet size
 
@@ -211,6 +207,10 @@ Network monitoring helps in tracking and analyzing the traffic flow within the d
 NSGs allow you to define security rules that control inbound and outbound traffic to and from your Azure resources. When delegating a subnet, you can configure NSGs to ensure that only authorized traffic is allowed. NSGs help in maintaining the security and integrity of the network by preventing unauthorized access and potential threats.
 
 NSGs can be applied to both subnets and individual network interfaces, providing flexibility in managing traffic at different levels.
+
+
+
+
 
 ## Security considerations
 
