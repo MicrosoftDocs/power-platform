@@ -1,7 +1,7 @@
 ---
 title: Important changes (deprecations) coming in Power Platform
 description: Important changes (deprecations) coming in Power Platform 
-ms.date: 03/25/2025
+ms.date: 03/28/2025
 ms.topic: conceptual
 ms.subservice: admin
 searchScope:
@@ -29,7 +29,7 @@ We have V2 actions already available in the SQL server connector which can be us
 
 ### How does this affect me?
 
-If action isn't taken, beginning 30 June 2025, the application(s) using the V1 actions of SQL server will be impacted and may no longer function as expected.
+If action isn't taken, beginning 30 June 2025, the application(s) using the V1 actions of SQL server will be impacted and might no longer function as expected.
 
 ### Required action
 
@@ -119,7 +119,7 @@ As part of a service update to enhance security in Power Apps, we're removing Hi
 
 ## Deprecation of support for multitenant apps without a service principal in the Microsoft Entra ID tenant
 
-To boost security and system performance, we are updating authentication protocols for multitenant apps in the Dataverse platform. Starting October 2024, app-only tokens for apps without a service principal in the target tenant aren't supported. This change is essential for mitigating vulnerabilities and safeguarding your data from potential threats.
+To boost security and system performance, we're updating authentication protocols for multitenant apps in the Dataverse platform. Starting October 2024, app-only tokens for apps without a service principal in the target tenant aren't supported. This change is essential for mitigating vulnerabilities and safeguarding your data from potential threats.
 
 ### Why is this needed?
 
@@ -223,7 +223,7 @@ As part of our ongoing efforts to enhance the security and performance of Datave
 
 If [Microsoft Accounts (MSA)](/azure/active-directory/external-identities/microsoft-account) or [Microsoft Entra accounts](/azure/active-directory/external-identities/default-account) aren't registered in your Microsoft Entra tenant, you can't access Dataverse on the common endpoint. 
 
-You may see an error message similar to this one:
+You might see an error message similar to this one:
 
 *Microsoft EntraSTS50020: user account `<contoso@contoso.com>`; from identity provider `https://sts.windows.net/{tenant ID}/` doesn't exist in tenant '{tenant name}' and can't access the application '{application ID}'(Dataverse org name) in that tenant.* 
 
@@ -233,7 +233,7 @@ The account must be added as an external user in the tenant. Sign out and sign i
 
 If a user who isn't part of your Microsoft Entra ID needs access to a Dataverse organization, the user needs to be added to the tenant as an external user or guest user. Learn more in [Add B2B collaboration users in the Microsoft Entra admin center](/azure/active-directory/external-identities/add-users-administrator). Additionally, you can restrict access to the Dataverse organization by reviewing the access granted to external users by following the steps below.
 
-**Disable sharing apps with everyone:** You can assess if sharing applications with everyone (including guests) is a requirement for cross-team collaboration.  If it isn't, then you can disable sharing with everyone using the following PowerShell script:
+**Disable sharing apps with everyone:** You can assess if sharing applications with everyone (including guests) is a requirement for cross-team collaboration. If it isn't, then you can disable sharing with everyone using the following PowerShell script:
 
 ```powershell
 $tenantSettings = Get-TenantSettings
@@ -310,7 +310,7 @@ Evaluate existing forms that include a deprecated control and replace them with 
 
 ## Microsoft Dataverse (legacy) connector for Power Automate flows is deprecated
 
-Effective October 2022, the [Microsoft Dataverse (legacy)](/connectors/commondataservice/) connector (previously referred to as the CDS 2.0 connector) is deprecated. The connector will continue to work in existing flows until a final date is announced in 2024. You'll have one year from the date of announcement to move to the [Microsoft Dataverse](/connectors/commondataserviceforapps/) connector.
+Effective October 2022, the [Microsoft Dataverse (legacy)](/connectors/commondataservice/) connector (previously referred to as the CDS 2.0 connector) is deprecated. The connector will continue to work in existing flows until a final date is announced. You'll have one year from the date of announcement to move to the [Microsoft Dataverse](/connectors/commondataserviceforapps/) connector.
 
 ### Why is this needed?
 
@@ -322,9 +322,9 @@ Cloud flows that use the [Microsoft Dataverse (legacy)](/connectors/commondatase
 
 ### Action required by you
 
-Review the cloud flows you own that use the [Microsoft Dataverse (legacy)](/connectors/commondataservice/) connector and identify which are ready to update. As of January 2024, most flows using the legacy connector are recommended for migration with the exception of flows triggering based on changes in other environments. 
+Review the cloud flows you own that use the [Microsoft Dataverse (legacy)](/connectors/commondataservice/) connector and identify which are ready to update. As of January 2024, most flows using the legacy connector are recommended for migration with the exception of flows triggering based on changes in other environments.
 
-A migration assistant is available on the detail page of cloud flows that are able to be automatically updated. The assistant creates a copy of the flow with the legacy connector's triggers, actions, and dynamic content references replaced. 
+A migration assistant is available on the detail page of cloud flows that are able to be automatically updated. The assistant creates a copy of the flow with the legacy connector's triggers, actions, and dynamic content references replaced.
 
 ## Microsoft Dataverse (legacy) connector for Azure Logic Apps will be deprecated and replaced with another connector
 
