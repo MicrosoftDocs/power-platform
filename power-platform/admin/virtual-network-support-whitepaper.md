@@ -208,10 +208,6 @@ NSGs allow you to define security rules that control inbound and outbound traffi
 
 NSGs can be applied to both subnets and individual network interfaces, providing flexibility in managing traffic at different levels.
 
-
-
-
-
 ## Security considerations
 
 Using Azure Virtual Network with Power Platform offers several security benefits that enhance the protection of your data and resources. By integrating Power Platform with Virtual Network, you can ensure your services are hosted within a secure network. This security protects sensitive data from unauthorized access and potential breaches. Virtual Network support allows Power Platform services to connect to your private and protected resources without exposing them to the internet, ensuring data protection and preventing unauthorized access.
@@ -220,77 +216,79 @@ Additionally, Virtual Network support improves connectivity by providing a relia
 
 ### Best practices for securing outbound connections from Power Platform services
 
-Securing outbound connections from Power Platform services is crucial to mitigate data exfiltration risks and ensure compliance with security policies. Consider the following best practices.
+Securing outbound connections from Power Platform services is crucial to mitigate data exfiltration risks and ensure compliance with security policies. Consider the following best practices:
 
 - **Restrict outbound traffic**: Limit the outbound traffic from Power Platform resources to specific endpoints. This limit can be achieved by using Azure Network Security Groups (NSGs) and Azure Firewall to enforce traffic rules and control access.
 
-- **Use private endpoints**: Utilize private endpoints to enable secure communication between Power Platform services and Azure resources. This security ensures that traffic remains within the Azure network and doesn't traverse the public internet.
+- **Use private endpoints**: Use private endpoints to enable secure communication between Power Platform services and Azure resources. This security ensures that traffic remains within the Azure network and doesn't traverse the public internet.
 
-- **Monitor and audit traffic**: Use [Azure Network Watcher](/azure/network-watcher/network-watcher-overview) and [Microsoft Sentinel](/azure/sentinel/overview?tabs=azure-portal) to monitor and audit the outbound traffic from Power Platform services. This monitoring helps identify and respond to potential security threats in real-time.
+- **Monitor and audit traffic**: Use [Azure Network Watcher](/azure/network-watcher/network-watcher-overview) and [Microsoft Sentinel](/azure/sentinel/overview?tabs=azure-portal) to monitor and audit the outbound traffic from Power Platform services. This monitoring helps identify and respond to potential security threats in real time.
 
 - **Apply security policies**: Enforce security policies using Azure Policy and Azure Firewall to ensure all outbound connections comply with your organization's security requirements. To control data flow, choose data loss prevention (DLP) policies and endpoint filtering on connectors.
 
 By following these best practices, you can secure outbound connections from Power Platform services, protect your data from exfiltration, and ensure compliance with security policies.
 
-## Sample scenarios for Virtual Network set up and configuration
+## Sample scenarios for Virtual Network setup and configuration
 
 ### When an enterprise's Azure resources are in one of the paired Azure regions and the Power Platform environment is in United States
 
 **Assumptions:**
 
 - The enterprise's Power Platform environment is located in the United States.
-- The Azure region for Virtual Network is set to West US ad East US.
+- The Azure region for the Virtual Network is set to West US ad East US.
 - The enterprise's resources are in a Virtual Network (VNET1) in Azure West US region.
 
 **Minimum configuration needed to configure Virtual Network:**
 
-1. Create a Virtual Network (VNET1) in West US and set up subnet(s) for delegation.
-2. Create a virtual network (VNET2) in East US and set up subnet(s) for delegation.
+1. Create a Virtual Network (VNET1) in West US and set up subnets for delegation.
+2. Create a virtual network (VNET2) in East US and set up subnets for delegation.
 3. Establish a peering connection between VNET1 and VNET2.
-4. Configure Power Platform Virtual Network integration for the desired environments using the subnet(s) created in steps 1 and 2.
+4. Configure Power Platform Virtual Network integration for the desired environments using the subnets created in steps 1 and 2.
 
-:::image type="content" source="media/vnet-sample-scenario-1.png" alt-text="A diagram showing VNet configuration When the Enterprise's Azure resources are in one of the paired Azure regions and Power Platform Environment is in United States." lightbox="media/vnet-sample-scenario-1.png":::
+:::image type="content" source="media/vnet-sample-scenario-1.png" alt-text="A diagram showing VNet configuration when the enterprise's Azure resources are in one of the paired Azure regions and the Power Platform environment is in the United States." lightbox="media/vnet-sample-scenario-1.png":::
 
 ### When an enterprise's Azure resources are in Central US Azure region and Power Platform is in United States
 
 **Assumptions:**
 
-- The enterprise's Power Platform environment is located in United States.
-- The primary and failover Azure region for Virtual Network is set to West US ad East US respectively.
-- The customer's resources are in a Virtual Network (VNET1) in Central US Azure region.
+- The enterprise's Power Platform environment is located in the United States.
+- The primary and failover Azure region for the Virtual Network is set to West US ad East US respectively.
+- The customer's resources are in a Virtual Network (VNET1) in the Central US Azure region.
 
 **Minimum configuration needed to configure Virtual Network:**
 
-1. Create a Virtual Network (VNET2) in West US and set up subnet(s) for delegation.
-2. Create a Virtual Network (VNET3) in East US and set up subnet(s) for delegation.
+1. Create a Virtual Network (VNET2) in West US and set up subnets for delegation.
+2. Create a Virtual Network (VNET3) in East US and set up subnets for delegation.
 3. Establish a peering connection between VNET1 and VNET2.
 4. Establish a peering connection between VNET1 and VNET3.
-5. Configure Power Platform Virtual Network integration for the desired environments using the subnet(s) created in steps 1 and 2.
+5. Configure Power Platform Virtual Network integration for the desired environments using the subnets created in steps 1 and 2.
 
-:::image type="content" source="media/vnet-sample-scenario-2.png" alt-text="A diagram showing VNet configuration When the Enterprise's Azure resources are in Central US Azure region and Power Platform is in United States." lightbox="media/vnet-sample-scenario-2.png":::
+:::image type="content" source="media/vnet-sample-scenario-2.png" alt-text="A diagram showing VNet configuration when the enterprise's Azure resources are in the Central US Azure region and Power Platform is in the United States." lightbox="media/vnet-sample-scenario-2.png":::
 
 ## Case study
 ### Enhancing business agility with generative AI and secure integration using Azure Virtual Network
 
-To explore practical, business use cases for generative AI, our customer conducted a _hackathon_. This event brought together multiple, citizen developers who, within a month, successfully developed a prototype using Power Platform and Azure AI services. The hackathon not only showcased the potential of generative AI, but also provided valuable hands-on experience to the participants, fostering innovation and collaboration within the organization.
+To explore practical, business use cases for generative AI, our customer conducted a _hackathon_. This event brought together multiple citizen developers who, within a month, successfully developed a prototype using Power Platform and Azure AI services. The hackathon not only showcased the potential of generative AI, but also provided valuable hands-on experience to the participants, fostering innovation and collaboration within the organization.
 
-**Customer challenges**: Despite the hackathon's success, transitioning from prototype to production posed significant challenges. The primary hurdle was establishing a secure, private-network architecture on Power Platform and Azure that complied with the company's stringent internal security policies. Ensuring data privacy and security, while maintaining agility and scalability was crucial for the customer.
+**Customer challenges**: Despite the hackathon's success, transitioning from prototype to production posed significant challenges. The primary hurdle was establishing a secure, private-network architecture on Power Platform and Azure that complied with the company's stringent internal security policies. Ensuring data privacy and security while maintaining agility and scalability was crucial for the customer.
 
-**Solution**: To address these challenges, the customer leveraged Azure Subnet Delegation, that is Virtual Network support, available with a Managed Environment. This allowed the establishment of a private-network architecture between Power Platform and private Azure resources, all protected by a Virtual Network. By utilizing this architecture, the customer could securely connect their Power Platform applications to Azure services without exposing sensitive data to the public internet.
+**Solution**: To address these challenges, the customer leveraged Azure Subnet Delegation, that is Virtual Network support, available with a Managed Environment. This allowed the establishment of a private-network architecture between Power Platform and private Azure resources, all protected by a Virtual Network. By using this architecture, the customer could securely connect their Power Platform applications to Azure services without exposing sensitive data to the public internet.
 
-:::image type="content" source="media/whitepaper-case-study.png" alt-text="A diagram  showing the architecture the customer used to securely connect their Power Platform applications to Azure services without exposing sensitive data to the public internet." lightbox="media/whitepaper-case-study.png":::
+:::image type="content" source="media/whitepaper-case-study.png" alt-text="A diagram showing the architecture the customer used to securely connect their Power Platform applications to Azure services without exposing sensitive data to the public internet." lightbox="media/whitepaper-case-study.png":::
 
 **Benefits**: The implementation of this solution yielded several key benefits:
 
-  - The customer achieved a secure and agile integration foundation between Power Platform and Azure, accelerating the realization of business value. This integration allowed for seamless data flow and enhanced collaboration across different departments.
-  - The new architecture eliminated costs and limitations associated with on-premises data gateways. By avoiding the need for on-premises infrastructure, the customer could reduce operational expenses and simplify maintenance.
-  - The customer is now poised to expand integration with other internal data sources, including private Amazon Web Services and on-premises APIs, through this platform with Azure ExpressRoute. This expansion allows the customer to use a broader range of data and services, driving further innovation and efficiency.
+- The customer achieved a secure and agile integration foundation between Power Platform and Azure, accelerating the realization of business value. This integration allowed for seamless data flow and enhanced collaboration across different departments.
+
+- The new architecture eliminated costs and limitations associated with on-premises data gateways. By avoiding the need for on-premises infrastructure, the customer could reduce operational expenses and simplify maintenance.
+
+- The customer is now poised to expand integration with other internal data sources, including private Amazon Web Services and on-premises APIs, through this platform with Azure ExpressRoute. This expansion allows the customer to use a broader range of data and services, driving further innovation and efficiency.
 
 By overcoming initial challenges and implementing a robust solution, the customer has set the stage for future advancements and continued innovation. The success of this project highlights the potential of generative AI and secure integration in transforming business operations and delivering tangible benefits.
 
 ## Conclusion
 
-In this white paper, we explored the various aspects of integrating Virtual Network support with Power Platform. We discussed the security benefits of using Virtual Network. Benefits such as protecting sensitive data from unauthorized access and ensuring secure communication between Power Platform services and private resources.
+In this white paper, we explored the various aspects of integrating Virtual Network support with Power Platform. We discussed the security benefits of using Virtual Network, such as protecting sensitive data from unauthorized access and ensuring secure communication between Power Platform services and private resources.
 
 We shared best practices for securing outbound connections that include:
 
