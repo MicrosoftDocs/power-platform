@@ -24,7 +24,7 @@ The greater the variety of skills and roles represented, the better. One or more
 A successful hackathon often includes team colors, prizes, food, music, laughter, and competition.
 
 > [!TIP]
-> In addition to the guidance on this page, the [Microsoft Power Platform Hackathon Workbook](https://aka.ms/powerplatformhackathonworkbook) provides practical step-by-step guidance and templates for running a hackathon. You'll find this workbook and other resources on [the Microsoft Power Platform Adoption website](https://adoption.microsoft.com/powerplatform).
+> In addition to this guidance, you'll find practical step-by-step guidance and templates for running a hackathon in the [Microsoft Power Platform Hackathon Workbook](https://aka.ms/powerplatformhackathonworkbook). You'll find this workbook and other resources on [the Microsoft Power Platform Adoption website](https://adoption.microsoft.com/powerplatform).
 
 ## Planning and logistics
 
@@ -32,9 +32,9 @@ Preparation is key for a successful hackathon. Be sure to consider the following
 
 - Securing an executive sponsor is vital to the credibility of the hackathon.
 - Set the dates, and give attendees as much notice as possible.
-- Pick your judges—choose a panel from the business, IT, and executive teams.
-- For an in-person event, find a venue or room with plenty of seating, whiteboards, power sockets, reliable Wi-Fi, and projectors for presenting solutions. For a virtual event, set up Teams with private channels for each participating team to collaborate and a bridge for them to dial in to.
-- Source some prizes as incentives for people to participate.
+- Pick your judges. Choose a panel from the business, IT, and executive teams.
+- For an in-person event, find a venue or room with plenty of seating, whiteboards, power sockets, reliable Wi-Fi, and projectors for presenting solutions. For a virtual event, set up Teams with private channels for each participating team to collaborate with a bridge for them to dial in to.
+- Source prizes as incentives for people to participate.
 - Set up a registration mechanism, such as Microsoft Forms, a SharePoint site, or a custom app.
 - Determine your communication strategy, such as a newsletter, intranet, or Viva Engage/Teams.
 
@@ -43,7 +43,7 @@ Preparation is key for a successful hackathon. Be sure to consider the following
 -	Provide training sessions for participants—the more they know before the event, the better the apps they submit. Suggest they sign up to the [Power Up program](https://powerup.microsoft.com/?referral=learn), register for a [Power Platform in a Day workshop](https://www.microsoft.com/power-platform/training-workshops), or complete a [Power Platform learning path](/training/powerplatform/).
 -	Set up a call before the hackathon where teams and individuals can bring their ideas and questions to discuss feasibility and unblock knowledge gaps.
 -	Find out what data sources teams want to connect to, make sure test data is available, and confirm that teams have the right access. Alternatively, provide sample data as an Excel spreadsheet that teams can use to mock up their solutions.
--	Building confidence is key because it maximizes the productivity of the hackathon.
+-	Build confidence, as it's key to maximizing the productivity of the hackathon.
 
 ## Finding your ideas and use cases
 
@@ -76,14 +76,14 @@ Here's a sample agenda:
 |----|----|
 | 15 mins	| **Introduction and Welcome**<br>Start the hackathon with an executive sponsor sharing the organization's vision. This introduction helps participants understand how to build solutions that align with the organization's vision, which is a key judging criterion. |
 | 30 mins	| **Microsoft Power Platform introduction**<br>Play videos from recent Microsoft conferences or highlight [customer stories](https://www.microsoft.com/power-platform/blog/power-apps/power-platform-stories) for inspiration, especially if a public case study features a customer in a similar industry. |
-| 30 mins	| **Microsoft Power Platform demonstration**<br>Demo Microsoft Power Platform using [Plan designer](/power-apps/maker/plan-designer/plan-designer) to create a comprehensive solution by describing your business problem in natural language. A hand-on presentation is a great way of introduce attendees to the power of the platform. |
-| 30 mins | **Rules of engagement**, how to work, questions |
+| 30 mins	| **Microsoft Power Platform demonstration**<br>Demo Microsoft Power Platform using [Plan designer](/power-apps/maker/plan-designer/plan-designer) to create a comprehensive solution by describing your business problem in natural language. A hands-on presentation is a great way to introduce attendees to the power of the platform. |
+| 30 mins | **Rules of engagement**, how to work, questions. |
 | x hours | **Hackathon**<br>This is the main portion of the day and can last 4-5 hours on Day 1 or span multiple days. |
-| 30-60 mins | **Team presentations**, discussions, and judging |
+| 30-60 mins | **Team presentations**, discussions, and judging. |
 
 ## Team presentations and judging
 
-Prepare a template that teams use for the presentation. The template should include team name, app benefits, technical considerations, and vision, in addition to screenshots or process diagrams.
+Prepare a template that teams can use for the presentation. The template should include team name, app benefits, technical considerations, and vision, in addition to screenshots or process diagrams.
 
 Prepare evaluation criteria for judges to use when judging the solutions. The criteria should range from business to technical to design categories, and take into consideration the innovation level, short- and long-term vision, and completeness. Suggest awarding bonus points for live demos during the presentation.
 
