@@ -39,6 +39,7 @@ In this article, we will look at:
 | **[Integrating Microsoft Power Platform with SAP](../reference-architectures/arch-pattern-sap.md)** | Learn about the architecture, workflows, and connectivity methods available to integrate Power Platform with SAP to ensure a smooth integration process. |
 | **[Dataverse background operations](../reference-architectures/dataverse-background-operations.md)** | Use custom APIs to define custom messages and implement business logic through plug-ins, allowing for background processing that eliminates the need for a persistent connection during execution. |
 | **[Integrating Microsoft Power Platform with SAP](../reference-architectures/arch-pattern-sap.md)** | Connect Microsoft Power Platform with SAP to enhance data management and automation capabilities within your organization. |
+| **[​Scale RPA (Robotic Process Automation) Operations using Hosted RPA in Microsoft Power Automate for desktop​](rpa-scale-operations.md)** | Learn how to use the Hosted RPA feature to decrease the time and effort required for procuring, provisioning, operationalizing, and maintaining infrastructure to support RPA automations. |
 
 ## Solution ideas
 

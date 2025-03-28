@@ -53,6 +53,8 @@
         href: reference-architectures/custom-connector-canvas.md
       - name: ​Use the Dataverse connector with canvas apps​ 
         href: reference-architectures/custom-connector-canvas.md
+      - name: ​Scale RPA Operations using Hosted RPA in Microsoft Power Automate for desktop​ 
+        href: reference-architectures/rpa-scale-operations.md
     - name: Solution ideas
       items:
         - name: Overview
