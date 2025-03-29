@@ -128,8 +128,9 @@ The following restrictions apply to restoration from both system backups and man
 - The source environment can be a production, sandbox, or developer environment. No other types of environments are supported.
 - The target environment can be a sandbox or developer environment. If the target is a developer environment, the source must also be a developer environment.
 - A Managed Environment can be restored only to another Managed Environment. A non-Managed Environment can't be restored to a Managed Environment.
-- If the source environment has a customer-managed encryption key applied, the target environment must also have a customer-managed encryption key applied.
+- If the source environment has a customer-managed encryption key applied, the target environment must also have the same customer-managed encryption key applied.
 - Backup and restore operations work only with source and target environments that have Dataverse.
+- If there are any enterprise policies applied to the source environment, then the target environment should also have the same set of policies applied.
 - Sandbox, Teams, and developer environments support self-restore backups.
 
 | Source type | Target type               |
