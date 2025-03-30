@@ -56,11 +56,11 @@ By using metadata present on the X++ tables, all transaction tables and their re
 
 In the Power Platform admin center, go to the source environment you want to copy. From there, select the **Copy** button in the top action pane. In the slider window that appears, there is an option **Transactionless Copy**, which by default is set to yes, as shown in the below diagram.
 
-:::image type="content" source="media/restore-option-for-unified-environments.png" alt-text="Diagram of the restore option.":::
+:::image type="content" source="media/transactionless-copy-for-unified-environments.png" alt-text="Diagram for transactionless copy option.":::
 
 If you want transactions to be copied over to the target environment, change this option to no, as shown in the below diagram.
 
-:::image type="content" source="media/restore-backup-to-unified-environments.png" alt-text="Diagram of the restoring backup.":::
+:::image type="content" source="media/disable-transactionless-copy-for-unified-environments.png" alt-text="Diagram for disabling transactionless copy.":::
 
 # [PowerShell](#tab/PowerShell)
 
