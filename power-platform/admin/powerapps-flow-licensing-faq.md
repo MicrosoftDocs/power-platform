@@ -778,6 +778,9 @@ The period for extended use rights concludes on October 1, 2024 and users are re
 - Ensure that you have appropriate licenses purchased. Please refer to the [licensing guide](https://go.microsoft.com/fwlink/?linkid=2085130) for the Power Apps and Power Automate licenses with use rights for premium connectors, custom connectors and on-premise data gateways.
 - Ensure users have licenses assigned. For this, we highly recommend that you immediately enable [auto-claim policies for Power Apps licenses](/microsoft-365/commerce/licenses/manage-auto-claim-policies#auto-claim-policies-for-microsoft-power-apps)  and [auto-claim policies for Power Automate licenses](/power-platform/admin/power-automate-licensing/power-automate-auto-claim) to benefit from automatic assignment of licenses to users. 
 
+#### How do I identify users using apps with premium connectors under extended use rights?
+Use [Power Platform Advisor](/power-platform/admin/power-platform-advisor#users-using-apps-with-premium-connectors-under-extended-use-rights) recommendation that lists users actively using Power Apps applications with Microsoft 365 under extended use rights. Learn how to access Power Platform Advisor [here](/power-platform-advisor#access-power-platform-advisor)
+
 #### How do I identify apps and flows that are using specific connectors that were under the extended use rights? 
 
 The following inventory reports are available in the Power Platform admin center to help you identify your apps and flows with the connectors being used -  
