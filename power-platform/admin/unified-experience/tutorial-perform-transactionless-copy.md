@@ -33,7 +33,9 @@ The target environment in this tutorial is always a unified environment that con
 
 The source environment in this tutorial can either be an environment controlled by Lifecycle Services, or it can be another unified environment hosted by Dataverse.  
 
-Be sure that both the source and target environments are provisioned in the same region. For general information on copying environments, see [Copy an environment](../copy-environment.md).
+Be sure that both the source and target environments are provisioned in the same region. 
+For general information on copying environments, see [Copy an environment](../copy-environment.md).
+For general information on copying unified environments, see [Copy a unified environment](../unified-experience/tutorial-copy-lifecycle-services-environment-unified-environment.md).
 
 ### Transactional tables
 To ensure that the resulting environment is still functional after the copy is completed, all of the transactional tables must be cleared together. Due to the highly normalized schema of finance and operations apps, skipping even one table in a joined relationship could result in breaking behavior in the user interface and in business logic after the copy finishes.  
@@ -48,12 +50,21 @@ By using metadata present on the X++ tables, all transaction tables and their re
 - TransactionLine (11)
 - Staging (12)
 
-## Prerequisites
-The source environment must have had a servicing action performed on it after April 3, 2024, such as a DBSync, software deployable package install (through Lifecycle Services, if applicable) or a unified package deployed through Power Platform CLI, if the source environment is managed by Power Platform admin center.
+# [Power Platform admin center](#tab/PPAC)
 
-You also need the details of the source and target environments, including the **Environment ID** for each, in the subsequent step.
+## Begin the transactionless copy operation
 
-## Copy through PowerShell
+In the Power Platform admin center, go to the source environment you want to copy. From there, select the **Copy** button in the top action pane. In the slider window that appears, there is an option **Transactionless Copy**, which by default is set to yes, as shown in the below diagram.
+
+:::image type="content" source="media/restore-option-for-unified-environments.png" alt-text="Diagram of the restore option.":::
+
+If you want transactions to be copied over to the target environment, change this option to no, as shown in the below diagram.
+
+:::image type="content" source="media/restore-backup-to-unified-environments.png" alt-text="Diagram of the restoring backup.":::
+
+# [PowerShell](#tab/PowerShell)
+
+## Transactionless copy through PowerShell
 
 Load the PowerShell console and execute the following commands to copy the environment. For more information on how to install and use the PowerShell module, see [Get started with PowerShell for Power Platform Administrators](../powershell-getting-started.md).
 
