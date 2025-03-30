@@ -780,7 +780,7 @@ The period for extended use rights concludes on October 1, 2024 and users are re
 
 #### How do I identify users using apps with premium connectors under extended use rights?
 
-Use [Power Platform Advisor](/power-platform/admin/power-platform-advisor#users-using-apps-with-premium-connectors-under-extended-use-rights) recommendation that lists users actively using Power Apps applications with Microsoft 365 under extended use rights. Learn more: [How to access Power Platform Advisor](/power-platform-advisor#access-power-platform-advisor)
+Use [Power Platform Advisor](/power-platform/admin/power-platform-advisor#users-using-apps-with-premium-connectors-under-extended-use-rights) recommendation that lists users actively using Power Apps applications with Microsoft 365 under extended use rights. Learn more: [How to access Power Platform Advisor](/power-platform/admin/power-platform-advisor#access-power-platform-advisor)
 
 #### How do I identify apps and flows that are using specific connectors that were under the extended use rights? 
 
