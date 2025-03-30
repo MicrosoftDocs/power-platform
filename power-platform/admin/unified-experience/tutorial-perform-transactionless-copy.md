@@ -16,7 +16,7 @@ search.audienceType:
 
 [!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
-Environment copy for finance and operations apps has traditionally been a full copy, meaning it includes the entire database worth of configuration, master data, and transactions.  While helpful for debugging specific situations, this has a side effect of significantly increasing the storage consumption for both finance and operations apps and Dataverse.  
+Environment copy for finance and operations apps has traditionally been a full copy, meaning it includes the entire database worth of configuration, master data, and transactions.  While helpful for debugging specific situations, this full copy has a side effect of significantly increasing the storage consumption for both finance and operations apps and Dataverse.  
 
 :::image type="content" source="media/transactionless-copy-process.png" alt-text="Diagram of the copy process.":::
 
@@ -25,7 +25,7 @@ In this tutorial, learn how to:
 - Prepare the source environment
 - Copy the environment to the target
 
-As an example of this scenario, assume that a customer would like to reduce their storage consumption on their sandbox and unified developer environments, where there's no need for having 100% of the transactions from production. To achieve this, the customer copies their production environment directly to their unified, developer environment and specifies that transactions are to be skipped.
+As an example of this scenario, assume that a customer would like to reduce their storage consumption on their sandbox and unified developer environments, where there's no need for having 100% of the transactions from production. To achieve this reduction, the customer copies their production environment directly to their unified, developer environment and specifies that transactions are to be skipped.
 
 ## Before you begin
 
@@ -54,11 +54,11 @@ By using metadata present on the X++ tables, all transaction tables and their re
 
 ## Begin the transactionless copy operation
 
-In the Power Platform admin center, go to the source environment you want to copy. From there, select the **Copy** button in the top action pane. In the slider window that appears, there is an option **Transactionless Copy**, which by default is set to yes, as shown in the below diagram.
+In the Power Platform admin center, go to the source environment you want to copy. From there, select the **Copy** button in the top action pane. In the slider window that appears, there is an option **Transactionless Copy**, which by default is set to yes, as shown in the diagram.
 
 :::image type="content" source="media/transactionless-copy-for-unified-environments.png" alt-text="Diagram for transactionless copy option.":::
 
-If you want transactions to be copied over to the target environment, change this option to no, as shown in the below diagram.
+If you want transactions to be copied over to the target environment, change this option to no, as shown in the diagram.
 
 :::image type="content" source="media/disable-transactionless-copy-for-unified-environments.png" alt-text="Diagram for disabling transactionless copy.":::
 
@@ -93,4 +93,4 @@ Add-PowerAppsAccount -Endpoint prod -TenantID $TenantId -ApplicationId $SPNId -C
 
 Copy-PowerAppEnvironment -EnvironmentName $TargetEnvironmentID -CopyToRequestDefinition $copyToRequest
 ```
-The above PowerShell command executes a full copy between the source and the target environment, allowing for the code, software, master, and reference data to be copied.  The transaction tables are then truncated before the environment is made available to the administrator.
+This PowerShell command executes a full copy between the source and the target environment, allowing for the code, software, master, and reference data to be copied.  The transaction tables are then truncated before the environment is made available to the administrator.
