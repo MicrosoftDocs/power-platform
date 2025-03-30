@@ -87,8 +87,8 @@ Add-PowerAppsAccount -Endpoint prod -TenantID $TenantId -ApplicationId $SPNId -C
         SourceEnvironmentId = $SourceEnvironmentID
         TargetEnvironmentName = "Copied from source"
         CopyType = "FullCopy"
-        SkipAuditData: true
-        ExecuteAdvancedCopyForFinanceAndOperations: true
+        SkipAuditData = true
+        ExecuteAdvancedCopyForFinanceAndOperations = true
     }
 
 Copy-PowerAppEnvironment -EnvironmentName $TargetEnvironmentID -CopyToRequestDefinition $copyToRequest
