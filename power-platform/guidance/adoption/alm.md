@@ -1,13 +1,14 @@
 ---
 title: Establish effective Application Lifecycle Management practices
-description: Guidance for assessing your Power Platform security posture
+description: Learn how to establish effective Application Lifecycle Management (ALM) practices in Power Platform to streamline development, deployment, and maintenance processes.
+#customer intent: As a Power Platform user, I want to establish effective ALM practices so that I can streamline development, deployment, and maintenance processes.
 author: manuelap-msft
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: sericks
-ms.date: 02/28/2025
+ms.date: 03/31/2025
 ---
 
 # Establish effective Application Lifecycle Management practices
@@ -31,7 +32,7 @@ Key standards for development planning include prioritization based on business 
 
 ## Standardize tools and processes
 
-The first step to optimize development practices is to standardize tools and processes. Whenever possible, use tools available to the platform instead of developing your own. For all standardized tools and processes, provide training to ensure that your teams can use them efficiently.
+The first step to optimize development practices is to standardize tools and processes. Use tools available to the platform instead of developing your own whenever possible. Provide training for all standardized tools and processes to ensure your teams use them efficiently.
 
 Adopt a source code control system like [Azure DevOps](/azure/devops). Azure DevOps provides developer services for support teams to plan work, collaborate on code development, and build and deploy applications. Source control integration in Power Platform enables large teams to scale collaboration on a single solution, and it allows for tracking changes and maintaining version control directly within the platform. Learn more about [Source control integration](/power-platform/alm/git-integration/overview).
 
@@ -87,5 +88,5 @@ Encourage a culture of continuous improvement by regularly reviewing and refinin
 
 ## Resources
 
-- [Application lifecycle management (ALM) with Microsoft Power Platform](/power-platform/alm/)
+- [Application Lifecycle Management (ALM) with Microsoft Power Platform](/power-platform/alm/)
 - [Power Platform Well-Architected Operational Excellence guidance](/power-platform/well-architected/operational-excellence/)
