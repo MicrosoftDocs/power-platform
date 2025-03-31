@@ -1,10 +1,11 @@
 ---
 title: Report on resource usage
-description: Discover tools and strategies to monitor Power Apps, Power Automate, and Copilot Studio adoption and performance.
+description: Monitor Power Apps, Power Automate, and Copilot Studio adoption and performance with tools and strategies to ensure governance and security.
+#customer intent: As a Power Platform user, I want to monitor resource usage so that I can ensure governance and security.
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 03/28/2025
+ms.date: 03/31/2025
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: sericks
@@ -13,7 +14,7 @@ search.audienceType:
 ms.custom:
   - ai-gen-docs-bap
   - ai-gen-description
-  - ai-seo-date:03/28/2025
+  - ai-seo-date:03/31/2025
 ---
 
 # Report on resource usage
@@ -66,7 +67,7 @@ Every employee in an organization that uses the Power Platform has access to the
 When monitoring the Default environment in Power Platform, it's crucial to keep an eye on several key aspects to ensure optimal governance and security:
 
 - Track connector usage and identify which connectors are used. This can help inform your [Data Loss Prevention policy strategy](dlp-strategy.md).
-- Discover apps and flows that have become widely adopted or business-critical. This can help inform which solutions might require more support or need to be moved to a dedicated environment.
+- Discover apps and flows that have become widely adopted or business-critical. This process can help inform which solutions might require more support or need to be moved to a dedicated environment.
 - Discover unused and owner-less apps and flows. These may consume capacity and create clutter in the Default environment.
 
 Learn more about [managing the Default environment](manage-default-environment.md).
