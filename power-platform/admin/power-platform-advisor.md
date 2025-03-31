@@ -4,7 +4,7 @@ description: Learn how to use Power Platform Advisor to optimize your tenant.
 author: sidhartg
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/11/2025
+ms.date: 03/31/2025
 ms.subservice: admin
 ms.author: sidhartg
 ms.reviewer: sericks
@@ -293,4 +293,5 @@ Learn more about [Microsoft Power Apps and Power Automate use rights for Microso
 
 > [!NOTE]
 > This recommendation provides a list of users that have used these apps without a premium license in the past 14 days.
-> This recommendation only checks for Power Apps Premium plans and thus may show users even from apps that use [Power Apps per app](power-platform/admin/about-powerapps-perapp) or [Pay-as-you-go](power-platform/admin/pay-as-you-go-overview) plans. Please review if your apps are [setup for Per app plan]([ur](power-platform/admin/about-powerapps-perapp#step-3-set-up-apps-to-use-per-app-plans)) or [setup for Pay-as-you-go plan]([url](power-platform/admin/pay-as-you-go-set-up?tabs=new#set-up-pay-as-you-go-for-your-environment-from-your-apps-setting)) 
+> 
+> This recommendation only checks for Power Apps premium plans and may show users from apps that use [Power Apps per app](about-powerapps-perapp.md) or [Pay-as-you-go](pay-as-you-go-overview.md) plans. Please review if your apps use [per app plans](about-powerapps-perapp.md#step-3-set-up-apps-to-use-per-app-plans) or [pay-as-you-go plans](pay-as-you-go-set-up?tabs=new.md#set-up-pay-as-you-go-for-your-environment-from-your-apps-setting).
