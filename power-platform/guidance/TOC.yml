@@ -97,8 +97,8 @@
               href: adoption/environment-strategy.md
             - name: Implement reactive governance
               href: adoption/reactive-governance.md
-            - name: Plan and manage licenses and capacity
-              href: adoption/capacity-and-licenses.md            
+            - name: Monitor license and capacity consumption
+              href: adoption/cds-usage.md         
             - name: Gain insights into Power Platform adoption
               href: adoption/observability.md
             - name: Report on resource usage

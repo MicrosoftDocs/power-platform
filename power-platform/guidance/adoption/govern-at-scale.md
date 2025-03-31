@@ -10,7 +10,7 @@ ms.reviewer: pankajsharma2087
 ms.date: 02/28/2025
 ---
 
-# Govern at scale
+# Manage at scale
 
 Adopting Power Platform at scale requires a robust governance framework to ensure efficient management, security, and compliance. This article explores key strategies for managing and governing Power Platform adoption at scale.
 
