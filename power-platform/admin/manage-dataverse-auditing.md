@@ -3,7 +3,7 @@ title: Manage Dataverse auditing
 description: Configure Dataverse auditing to log changes to customer records, user access, operations on records, and security roles. This feature meets external and internal auditing, compliance, security, and governance policies.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/21/2025
+ms.date: 03/31/2025
 author: paulliew 
 ms.subservice: admin
 ms.author: paulliew 
@@ -102,9 +102,9 @@ Auditing can be configured manually through the [Power Platform admin center](ht
 
 ### Turn on auditing
 
-You must be assigned to the Power Platform or Dynamics 365 admin role to turn on or off auditing through the [Compliance page](security/compliance.md).
+You must be assigned to the Power Platform or Dynamics 365 admin role to turn on or off auditing through the [**Compliance** page](security/compliance.md).
 
-To meet your external and internal auditing, compliance, security, and governance policies that are common to many enterprises, auditing for the following tables are turned on automatically when you turn on auditing through the Compliance page. You can audit other tables, where applicable, but note that there are some core tables that audit is turned on by default. 
+To meet your external and internal auditing, compliance, security, and governance policies that are common to many enterprises, auditing for the following tables are turned on automatically when you turn on auditing through the **Compliance** page. You can audit other tables, where applicable, but note that there are some core tables that audit is turned on by default. 
 
 |Category  |Table  |
 |-----------|-----------|
