@@ -12,9 +12,6 @@ search.audienceType:
   - admin
 ---
 
-<!-- In line 81, a sentence says "This setup allows enterprises to have full control over the policies, rules, and network packets that exit for these containers." Should "exit" change to "exist"? -->
-
-
 # Virtual Network support white paper
 
 [!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
@@ -78,7 +75,7 @@ The containerized workload allows Power Platform to support network-level isolat
 
 Virtual Network support for Power Platform relies on [Azure subnet delegation](/azure/virtual-network/subnet-delegation-overview). Enterprises delegate a subnet to Power Platform, used by Power Platform services such as Dataverse plug-ins and connectors such as [custom connectors](/connectors/custom-connectors/), SQL, and Azure file storage to process requests at runtime. Containers use the IP address from the delegated subnet to handle these requests.
 
-Since the container operates within the boundaries of the delegated subnet and uses its IP address, any outbound call from this container remains within the enterprise's network boundaries. For example, the call stays within the Virtual Network that's part of this subnet. This setup allows enterprises to have full control over the policies, rules, and network packets that exit for these containers. Enterprises can apply the same controls to the delegated subnet as they do with their own network.
+Since the container operates within the boundaries of the delegated subnet and uses its IP address, any outbound call from this container remains within the enterprise's network boundaries. For example, the call stays within the Virtual Network that's part of this subnet. This setup allows enterprises to have full control over the policies, rules, and network packets that exist for these containers. Enterprises can apply the same controls to the delegated subnet as they do with their own network.
 
 Power Platform doesn't manage the configuration of the delegated subnet. The only requirement is that the delegated subnet must not be associated with any other service. Once a subnet is delegated, the IPs within that subnet are reserved only for Power Platform. The subnet can't be used for any other resources or delegated to other services.
 
