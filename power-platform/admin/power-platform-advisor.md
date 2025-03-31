@@ -293,3 +293,4 @@ Learn more about [Microsoft Power Apps and Power Automate use rights for Microso
 
 > [!NOTE]
 > This recommendation provides a list of users that have used these apps without a premium license in the past 14 days.
+> This recommendation only checks for Power Apps Premium plans and thus may show users even from apps that use [Power Apps per app](power-platform/admin/about-powerapps-perapp) or [Pay-as-you-go](power-platform/admin/pay-as-you-go-overview) plans. Please review if your apps are [setup for Per app plan]([ur](power-platform/admin/about-powerapps-perapp#step-3-set-up-apps-to-use-per-app-plans)) or [setup for Pay-as-you-go plan]([url](power-platform/admin/pay-as-you-go-set-up?tabs=new#set-up-pay-as-you-go-for-your-environment-from-your-apps-setting)) 
