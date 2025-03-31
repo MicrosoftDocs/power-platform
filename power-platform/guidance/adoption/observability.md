@@ -1,13 +1,14 @@
 ---
 title: Gain insights into Power Platform adoption
-description: Guidance for gaining insights into Power Platform adoption
+description: Gain actionable insights into Power Platform adoption to optimize usage, enhance security, and drive user engagement with targeted strategies.
+#customer intent: As a Power Platform user, I want to monitor adoption trends so that I can optimize platform usage and drive user engagement.
 author: manuelap-msft
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: sericks
-ms.date: 02/28/2025
+ms.date: 03/31/2025
 ---
 
 # Gain insights into Power Platform adoption
