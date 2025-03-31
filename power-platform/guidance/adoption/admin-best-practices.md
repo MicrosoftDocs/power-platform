@@ -18,6 +18,7 @@ To address these needs, Power Platform has a suite of capabilities to empower or
 
 This series of articles provides comprehensive guidance on achieving operational excellence with Power Platform. It covers key areas such as application lifecycle management, observability strategies, and data resilience.
 
+1. [Designate a Power Platform admin](pp-admin.md). Assign a dedicated administrative role to oversee operations, ensure compliance, and optimize performance.
 1. [Management at scale](govern-at-scale.md). Implement governance practices that support the efficient and secure management of Power Platform environments at scale, ensuring consistency and control across the organization.
 1. [Establish an environment strategy](environment-strategy.md). Develop a comprehensive strategy for creating, managing, and decommissioning environments to support organizational goals.
     1. [Manage the default environment](manage-default-environment.md). Implement best practices for managing the Default environment

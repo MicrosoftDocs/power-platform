@@ -89,6 +89,8 @@
           items:
             - name: Overview
               href: adoption/admin-best-practices.md
+            - name: Designate a Power Platform admin
+              href: adoption/pp-admin.md
             - name: Manage at scale 
               href: adoption/govern-at-scale.md
             - name: Establish an environment strategy
@@ -97,13 +99,10 @@
               href: adoption/reactive-governance.md
             - name: Plan and manage licenses and capacity
               href: adoption/capacity-and-licenses.md            
-            - name: Designate a Power Platform admin
-              href: adoption/pp-admin.md
             - name: Gain insights into Power Platform adoption
               href: adoption/observability.md
             - name: Report on resource usage
               href: adoption/resource-usage.md
-
             - name: Manage Dataverse for Teams environments
               href: adoption/teams-environment-strategy.md
             - name: Manage the default environment

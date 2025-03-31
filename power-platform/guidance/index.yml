@@ -64,9 +64,9 @@ productDirectory:
       # imageSrc should be square in ratio with no white space
       imageSrc: ./media/govern.svg
       links:
-        - url: /power-platform/guidance/adoption/strategy-best-practices
+        - url: /power-platform/guidance/adoption/govern-at-scale
           text: Management at scale
-        - url: /power-platform/guidance/adoption/methodology
+        - url: /power-platform/guidance/adoption/environment-strategy
           text: Establish an environment strategy
         - url: /power-platform/guidance/adoption/reactive-governance
           text: Reactive governance
