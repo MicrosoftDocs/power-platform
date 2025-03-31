@@ -2,7 +2,7 @@
 title: Power Platform licensing FAQs
 description: Learn FAQs for licensing Power Apps, Power Automate, Copilot Studio, Power Pages, Dataverse, Dataverse for Teams, and AI Builder.
 ms.topic: conceptual
-ms.date: 03/30/2025
+ms.date: 03/31/2025
 author: chrisgarty
 contributors:
   - Antoine2F
