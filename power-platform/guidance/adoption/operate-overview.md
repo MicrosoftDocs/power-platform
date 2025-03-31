@@ -1,13 +1,14 @@
 ---
 title: Operate overview
-description: Guidance for developing an operational excellence strategy for Power Platform solutions
+description: Learn how to achieve operational excellence with Power Platform by following best practices for lifecycle management, observability, and data resilience.
+#customer intent: As a Power-Platform user, I want to understand operational best practices for Power Platform so that I can ensure stability and minimize disruptions.
 author: manuelap-msft
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: sericks
-ms.date: 02/28/2025
+ms.date: 03/31/2025
 ---
 
 # Operate overview
@@ -18,7 +19,7 @@ To address these needs, Power Platform has a suite of capabilities to empower or
 
 This series of articles provides comprehensive guidance on achieving operational excellence with Power Platform. It covers key areas such as application lifecycle management, observability strategies, and data resilience.
 
-1. [Establish effective Application lifecycle management practices](alm.md). Discover best practices for managing the entire lifecycle of Power Platform applications, from development to deployment and maintenance.
+1. [Establish effective application lifecycle management practices](alm.md). Discover best practices for managing the entire lifecycle of Power Platform applications, from development to deployment and maintenance.
 1. [Gain insights into Power Platform adoption](observability.md). Explore strategies for monitoring and optimizing the performance and health of Power Platform applications.
 1. [Report on resource usage](resource-usage.md). Track and analyze the usage of resources within your Power Platform environments.
 1. [Monitor license and capacity consumption](cds-usage.md). Keep track of license allocations and capacity usage to ensure efficient resource management and compliance.
