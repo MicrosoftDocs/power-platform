@@ -4,7 +4,7 @@ description: Learn how to best use the latest features of the platform to implem
 author: robstand
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 06/13/2024
+ms.date: 03/31/2025
 ms.author: rstand
 ms.reviewer: sericks
 ms.custom: bap-template
@@ -16,7 +16,7 @@ ms.subservice: guidance
 
 Every organization's journey to adopt Microsoft Power Platform is unique. A tenant environment strategy lays the foundation to help accelerate usage in a manageable and secure fashion.
 
-This white paper shows you how to align your Power Platform tenant environment strategy with the product capabilities and vision. You learn how to best use the latest features of the platform to implement a strategy that can allow your adoption of Power Platform to reach enterprise scale.
+This article shows you how to align your Power Platform tenant environment strategy with the product capabilities and vision. You learn how to best use the latest features of the platform to implement a strategy that can allow your adoption of Power Platform to reach enterprise scale.
 
 > [!NOTE]
 > You can save or print this white paper by selecting **Print** from your browser, and then selecting **Save as PDF**.
@@ -37,7 +37,7 @@ Power Platform administrative, governance, and security features allow organizat
 
 A key element of the transition to enterprise scale is to enhance the shared, central environment strategy for makers by making it easier for them to use personal, development environments. In a shared, central environment strategy, makers build, use, and share apps in the default environment. This strategy can result in lack of isolation and makers encroaching on each other. Imagine if everyone in the company shared a single, OneDrive folder for all their documents. Instead, you can use environment features to guide makers to their own, personal environment where they can safely build their apps protected from makers working on unrelated assets, with simplified governance for admins. Coworkers can be added as more makers to these environments to collaborate on building solutions.
 
-:::image type="content" source="media/environment-strategy/image2.png" alt-text="Illustration of a central, shared environment strategy with four makers using the default environment on the left and an environment routing strategy with four makers routing to separate developer environments on the right.":::
+:::image type="content" source="./media/environment-strategy/image2.png" alt-text="Illustration of a central, shared environment strategy with four makers using the default environment on the left and an environment routing strategy with four makers routing to separate developer environments on the right.":::
 
 *Figure: Illustration of a shared, central environment (left) and an environment routing strategy (right).*
 
@@ -365,6 +365,8 @@ First, use environment routing to direct makers to their own workspace to build 
     - [Create a rule](../../admin/dlp-custom-connector-parity.md) to block all URL patterns used by custom connectors.
 
 Securing the default environment should be a priority. Do it along with tenant-level security as part of the first step in implementing your environment strategy. Without these being implemented, makers have more opportunities to add assets to default. With them in place along with environment routing, makers are encouraged to use their own environment.
+
+Learn more: [Secure the default environment](secure-default-environment.md)
 
 ### Secure other environments
 
