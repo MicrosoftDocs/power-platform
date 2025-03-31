@@ -1,6 +1,6 @@
 ---
 title: Metrics and recommendations for Power Automate (preview)
-description: Learn how to use the Monitor page monitor and improve operational health.
+description: Learn more about the metrics and recommendations for Power Automate.
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: conceptual
