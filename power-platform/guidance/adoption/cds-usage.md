@@ -1,10 +1,11 @@
 ---
-title: Use Microsoft Dataverse usage reports | MicrosoftDocs
-description: Discover how to use Power Platform admin center tools to monitor licenses, storage capacity, and API usage. Stay compliant and manage resources effectively.
+title: Monitor licenses and capacity in Power Platform
+description: Monitor Power Platform licenses and capacity to optimize performance, ensure compliance, and manage costs effectively. Learn key strategies and tools to stay in control.
+#customer intent: As a Power Platform user, I want to monitor Power Platform license consumption so that I can ensure compliance and manage costs effectively.
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 03/28/2025
+ms.date: 03/31/2025
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: sericks
@@ -16,7 +17,7 @@ ms.custom:
   - ai-seo-date:03/28/2025
 ---
 
-# Monitor licenses and capacity
+# Monitor licenses and capacity in Power Platform
 
 Effective capacity and license monitoring in Power Platform helps you maintain optimal performance, ensure compliance, and manage costs. This article outlines the key aspects to monitor and provides recommendations to help you stay on top of your Power Platform environment.
 
