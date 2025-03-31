@@ -3,7 +3,7 @@ title: Environment groups
 description: Learn how to organize your Managed Environments into groups and govern them in bulk with rules.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/17/2025
+ms.date: 03/31/2025
 author: mikferland-msft
 ms.author: miferlan
 ms.reviewer: sericks
