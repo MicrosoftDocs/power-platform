@@ -1,6 +1,6 @@
 ---
 title: Metrics and recommendations for Power Apps (preview)
-description: Learn how to use the Monitor page monitor and improve operational health.
+description: Learn more about the metrics and recommendations for Power Apps.
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: conceptual
