@@ -116,7 +116,7 @@
             - name: Monitor license and capacity consumption
               href: adoption/cds-usage.md
             - name: Ensure data resilience
-              href: adoption/data-resilience.md
+              href: adoption/data-retention.md
             - name: Define your support process
               items:
                 - name: Support strategy - Overview

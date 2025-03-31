@@ -25,9 +25,9 @@ The Power Platform admin manages and governs the platform. Some of the responsib
 1. **Security and compliance**: Implement and monitor security measures, such as data encryption and access controls, to protect sensitive information and ensure compliance with regulatory standards.
 1. **Performance monitoring**: Track usage and performance metrics to optimize resource allocation and enhance the efficiency of Power Platform applications.
 1. **User access management**: Manage user roles and permissions, ensuring that access levels are appropriate and comply with governance policies.
-1. **Integration**: Facilitate the integration of the Power Platform with other enterprise systems to ensure seamless operations and data flow.
-1. **Support and troubleshooting**: Provide support to users and troubleshoot issues to maintain a stable and reliable platform.
-1. **Collaboration**: Work closely with other teams, such as Information Security,  Microsoft 365 and Azure admins to ensure cohesive governance and address cross-functional issues effectively.
+1. **Integration**: Facilitate the integration of Power Platform with other enterprise systems to ensure seamless operations and data flow. Work with other service owners on how their services can be used within Power Platform solutions, for example managing [on-premises gateway](/power-platform/admin/wp-onpremises-gateway) to connect to on-premises resources from Power Apps and Power Automate.
+1. **Support and troubleshooting**: Provide support to users and troubleshoot issues to maintain a stable and reliable platform. Learn more: [Establish a support strategy](support-strategy.md)
+1. **Collaboration**: Work closely with other teams, such as Information Security,  Microsoft 365, and Azure admins to ensure cohesive governance and address cross-functional issues effectively.
 1. **Continuous improvement**: Regularly review and refine governance practices to adapt to changing needs and optimize performance.
 
 Review [roles and responsibilities](roles.md) to get familiar with other key responsibilities and tasks of a Power Platform admin.

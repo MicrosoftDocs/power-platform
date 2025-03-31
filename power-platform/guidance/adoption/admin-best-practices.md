@@ -1,6 +1,6 @@
 ---
-title: Governance overview
-description: Guidance for developing an governance
+title: Govern overview
+description: Guidance for developing a governance strategy for Power Platform
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: conceptual
@@ -10,7 +10,7 @@ ms.reviewer: pankajsharma2087
 ms.date: 02/28/2025
 ---
 
-# Governance overview
+# Govern overview
 
 Microsoft Power Platform is transforming how organizations deliver modern AI-powered customer experiences, improved employee satisfaction, and business results. Customers increasingly rely on Power Platform to run global-scale, mission critical workloads, where the risk and business impact of failure are high. These workloads demand operational excellence: highly controlled change management to avoid unexpected disruptions to stability and quality, deep insights into ongoing operations to detect and resolve issues, and resiliency to recover from failures.
 

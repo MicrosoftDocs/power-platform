@@ -23,13 +23,13 @@ Intelligent recommendations and real time notifications helps admins stay inform
 - **Business continuity risks**
     - **Ownerless resources**: Resources where the owner has left the organization pose a business continuity risk. 
     - **High-value resources in the Default environment**: Resources in the Default environment might not follow application lifecycle management (ALM) best practices, posing a business continuity risk. 
-    - Use [Power Platform Advisor](/power-platform/admin/power-platform-advisor) to identify and take action on resources that pose business cotninuity risks. 
+    - Use [Power Platform Advisor](/power-platform/admin/power-platform-advisor) to identify and take action on resources that pose business continuity risks. 
 - **Tenant hygiene**:
     - **Overshared resources**: Overshared resources can lead to security vulnerabilities and inefficiencies. 
     - **Inactive resources**: Resources not used in a specified amount of time should be reviewed and potentially deleted to free up resources and maintain a clean environment. 
-    - Use [Power Platform Advisor](/power-platform/admin/power-platform-advisor) to identify and take action on resources that pose business cotninuity risks. 
+    - Use [Power Platform Advisor](/power-platform/admin/power-platform-advisor) to identify and take action on resources that pose business continuity risks. 
 - **Licenses**
-    - **Pending license requests**: Managing pending license requests promptly ensures users have the necessary access to perform their tasks efficiently. Use [Power Platform Advisor](/power-platform/admin/power-platform-advisor) to identify and take action on resources that pose business cotninuity risks. 
+    - **Pending license requests**: Manage pending license requests promptly ensures users have the necessary access to perform their tasks efficiently. Use [Power Platform Advisor](/power-platform/admin/power-platform-advisor) to identify and take action on resources that pose business continuity risks. 
     - **Intelligent licensing recommendations**: Review [recommendations](/power-platform/admin/get-recommendations-licensing) about who in your organization would benefit from having a Power Apps premium license.
 - **Change Requests and Approvals**
     - **Requests for new environments**: Implement an approval workflow for new environment requests to ensure they align with organizational needs and governance policies. 
@@ -48,6 +48,6 @@ Organizations can use **[APIs and connectors](/power-platform/admin/programmabil
 
 ## Use Monitoring for effective governance
 
-Effective monitoring is essential for reactive governance. By implementing robust monitoring tools and processes, organizations can track usage, performance, and compliance and identify issues that need to be resolved or actions that need to be taken. 
+Effective monitoring is essential for reactive governance. Monitor paltform usage and compliance and identify issues that need to be resolved or actions that need to be taken. 
 
 Learn more: [Gain insights into Power Platform adoption](observability.md)

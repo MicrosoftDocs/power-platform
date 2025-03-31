@@ -91,7 +91,7 @@ Consider the following tasks:
 - **Power Advisor recommendations**:
      - Purpose: Take action on Power Advisor recommendations. 
     - Considerations: Regularly review recommendations provided by Power Advisor to identify best practices, performance improvements, and security enhancements.
-    - Process: Use the [Power Platform for Adminv V2](/connectors/powerplatformadminv2/) connector to retrieve and take action on recommendations. 
+    - Process: Use the [Power Platform for Admin V2](/connectors/powerplatformadminv2/) connector to retrieve and take action on recommendations. 
 
 Automating common governance tasks reduces manual effort, ensures consistency, and enhances efficiency. Automation helps in maintaining control over the Power Platform, enabling organizations to scale their operations while adhering to governance standards.
 
@@ -115,9 +115,9 @@ Having a central source, such as a [SharePoint site or wiki](wiki-community.md),
 
 **Power Platform Admins**, on the other hand, oversee the broader governance and administration of the entire Power Platform across the organization. Their responsibilities include defining governance policies, monitoring overall platform usage, ensuring compliance with organizational standards, and managing integrations with other systems. They take a strategic view, ensuring that Power Platform aligns with the organization's goals and operates efficiently at scale.
 
-Your training should include an introduction so environment admins can understand their responsibilities. Environment admins will focus on the day-to-day management of specific environments, including user access, data security, and compliance within their environments. Power Platform admins oversee the overall governance framework, define policies, and ensure that all environments adhere to organizational standards. 
+Your training should include an introduction so environment admins can understand their responsibilities. Environment admins focus on the day-to-day management of specific environments, including user access, data security, and compliance within their environments. Power Platform admins oversee the overall governance framework, define policies, and ensure that all environments adhere to organizational standards. 
 
-Power Platform admins define governance policies, which environment admins implement within their environments. Both roles need to work together to ensure data security and compliance. Power Platform admins will [define a DLP (Data Loss Prevention) policy strategy](dlp-strategy.md), and environment admins will assess what connectors and policies they require for their environments and work with the Power Platform admin to assign the most appropriate policy to their environments.
+Power Platform admins define governance policies, which environment admins implement within their environments. Both roles need to work together to ensure data security and compliance. Power Platform admins will [define a DLP (Data Loss Prevention) policy strategy](dlp-strategy.md), and environment admins assess what connectors and policies they require for their environments and work with the Power Platform admin to assign the most appropriate policy to their environments.
 
 Power Platform admins monitor platform-wide usage and performance, while environment admins require more detailed reports on their specific environments.
 
@@ -125,7 +125,7 @@ Environment admins handle immediate issues within their environments, escalating
 
 ## Monitor and review governance practices
 
-Monitoring and reviewing governance practices to maintain the effectiveness and efficiency of Power Platform adoption. Regular audits should be conducted to ensure compliance with established governance policies and to identify areas for improvement. These audits help in detecting any deviations from the policies and provide insights into potential risks and vulnerabilities. Review recommendations for [managing the defautlt environment](manage-default-environment.md) and ensure your default environment is well-governed.
+Monitoring and reviewing governance practices to maintain the effectiveness and efficiency of Power Platform adoption. Regular audits should be conducted to ensure compliance with established governance policies and to identify areas for improvement. These audits help in detecting any deviations from the policies and provide insights into potential risks and vulnerabilities. Review recommendations for [managing the default environment](manage-default-environment.md) and ensure your default environment is well-governed.
 
 Implement feedback mechanisms to gather input from makers and admins on governance practices. These channels allow stakeholders to share their experiences, suggest improvements, and report issues, fostering a culture of continuous improvement. Together, these practices ensure that the governance framework remains robust, adaptable, and aligned with organizational goals. Explore the [pulse survey](/power-platform/guidance/coe/nurture-components#pulse-survey-components) components of the CoE Starter Kit for sending out feedback surveys to your makers.
 
