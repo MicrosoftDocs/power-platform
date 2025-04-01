@@ -1,13 +1,14 @@
 ---
 title: Nurture your Power Platform community
 description: Discover strategies to grow and support your Power Platform community, from onboarding makers to celebrating their achievements.
+#customer intent: As a Power Platform user, I want to understand how to nurture my organization's maker community so that I can align their efforts with business goals.
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: concept-article
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
-ms.date: 03/28/2025
+ms.date: 04/01/2025
 ms.custom:
   - ai-gen-docs-bap
   - ai-gen-description
@@ -16,7 +17,7 @@ ms.custom:
 
 # Nurture your Power Platform community
 
-When your organization adopts Microsoft Power Platform, it's important to nurture your community of makers to ensure they are effectively using the tools to further your organization's goals. Nurturing makers involves understanding the needs and aspirations of individuals within the organization and aligning them with business objectives to create a cohesive and productive environment.
+When your organization adopts Microsoft Power Platform, it's important to nurture your community of makers to ensure they're effectively using the tools to further your organization's goals. Nurturing makers involves understanding the needs and aspirations of individuals within the organization and aligning them with business objectives to create a cohesive and productive environment.
 
 Nurturing your community means addressing key questions such as:
 
@@ -25,7 +26,7 @@ Nurturing your community means addressing key questions such as:
 - How can we recognize their efforts and successes?
 - How can we grow the community?
 
-By exploring these questions, you embark on a journey to connect the dots and create a community that is greater than the sum of its parts. This series of articles will guide you through the essential steps to nurture your Power Platform community:
+By exploring these questions, you embark on a journey to connect the dots and create a community that is greater than the sum of its parts. This series of articles guide you through the essential steps to nurture your Power Platform community:
 
 1. [Define community purpose and goals](community-goals.md): Establish a clear vision and objectives for your community.
 1. [Define community core team responsibilities](community-core-team.md): Assign roles and responsibilities to ensure smooth operation.
@@ -35,7 +36,7 @@ By exploring these questions, you embark on a journey to connect the dots and cr
 1. [Celebrate successes](show-and-tell.md): Recognize and reward the achievements of community members to foster a positive and supportive environment.
 1. [Organize hackathons](hackathons.md). Plan and execute hackathons to foster creativity, collaboration, and innovation within the Power Platform community.
 
-Through these steps, you'll be able to build a thriving Power Platform community that not only meets individual needs but also drives organizational success.
+Through these steps, you are able to build a thriving Power Platform community that not only meets individual needs but also drives organizational success.
 
 > [!TIP]
 > In addition this documentation, the [Microsoft Power Platform Adoption Workbook](https://aka.ms/powerplatformadoptionworkbook) contains practical step-by-step guidance to help nurture your Power Platform community. You can find this workbook and other resources on [the Microsoft Power Platform Adoption website](https://adoption.microsoft.com/powerplatform).
