@@ -38,11 +38,11 @@ productDirectory:
       imageSrc: /office/media/icons/walkthrough-map.png
       links:
       - text: Auditing in Dataverse
-        url: key concepts/dataverse-auditing.md.md
+        url: key-concepts/dataverse-auditing.md
       - text: ExpressRoute and Power Platform
-        url: key concepts/expressroute/overview.md
+        url: key-concepts/expressroute/overview.md
       - text: More...
-        url: key concepts/fundamentals-overview.md    # Card
+        url: key-concepts/fundamentals-overview.md    # Card
     - title: Reference architectures
       imageSrc: /office/media/icons/blocks.png
       links:
