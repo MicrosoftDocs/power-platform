@@ -18,7 +18,7 @@ contributors:
 
 # Back up and restore environments
 
-[!INCLUDE[new-PPAC-banner](%7E/includes/new-PPAC-banner.md)]
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 It's important to protect your data on Microsoft Power Platform and in Dataverse and to provide continuous availability of service through system or manual backups.
 
