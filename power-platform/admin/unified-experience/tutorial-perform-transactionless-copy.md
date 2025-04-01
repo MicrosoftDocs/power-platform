@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Perform a transaction-less copy between environments  | Microsoft Docs"
+title: "Tutorial: Perform a transaction-less copy between environments"
 description: This tutorial demonstrates how to perform a transaction-less copy between unified environments.
 author: laneswenka
 ms.reviewer: sericks
@@ -56,7 +56,7 @@ By using metadata present on the X++ tables, all transaction tables and their re
 
 ## Begin the transactionless copy operation
 
-In the Power Platform admin center, go to the source environment you want to copy. From there, select the **Copy** button in the command bar. In the window that appears, there is an option, **Transactionless Copy**, which by default is set to **Yes**, as shown in the image.
+In the Power Platform admin center, go to the source environment you want to copy. From there, select the **Copy** button in the command bar. In the window that appears, there's an option, **Transactionless Copy**, which by default is set to **Yes**, as shown in the image.
 
 :::image type="content" source="media/transactionless-copy-for-unified-environments.png" alt-text="Diagram for transactionless copy option.":::
 
