@@ -1,10 +1,11 @@
 ---
-title: "Organize show-and-tell sessions | MicrosoftDocs"
-description: "If you want to create more excitement in your organization and inspire more people to join your Power Apps community, an app showcase is a great way to do so."
+title: Share success stories to drive Power Platform engagement
+description: Inspire your organization with Power Platform success stories that drive engagement, innovation, and adoption. Learn how to share impactful stories effectively.
+#customer intent: As a Power Platform user, I want to learn how to share Power Platform success stories so that I can drive engagement and adoption in my organization.
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 09/11/2020
+ms.date: 04/01/2025
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: sericks
@@ -12,7 +13,7 @@ search.audienceType:
   - admin
 ---
 
-# Share success stories
+# Share success stories to drive Power Platform engagement
 
 When your organization adopts Microsoft Power Platform, sharing success stories internally becomes a powerful tool to foster engagement, inspire innovation, and drive adoption. Success stories highlight the tangible benefits of the platform, showcase the achievements of your makers, and create a culture of recognition and continuous improvement.
 
@@ -20,7 +21,7 @@ When your organization adopts Microsoft Power Platform, sharing success stories 
 1. **Knowledge sharing**: By sharing detailed accounts of successful projects, you facilitate knowledge transfer within the organization. This helps others learn from the experiences and best practices of their peers.
 1. **Recognition and morale boost**: Celebrating the achievements of individuals and teams boosts morale and fosters a sense of pride and accomplishment. Recognized employees are more likely to stay engaged and committed to their work.
 1. **Building a community**: Success stories help build a sense of community among makers. They create connections and encourage collaboration, leading to a more cohesive and supportive environment.
-1. **Driving adoption**: Highlighting successful use cases of Power Platform can accelerate the adoption across the organization. When employees see the positive affect on their peers' work, they're more likely to embrace the platform themselves.
+1. **Driving adoption**: Highlighting successful use cases of Power Platform can accelerate the adoption across the organization. When employees see the positive effect on their peers' work, they're more likely to embrace the platform themselves.
 
 ## How to identify valuable success stories
 
@@ -38,7 +39,7 @@ There are several effective ways to share success stories within your organizati
 
 ### Organize show-and-tell sessions
 
-Organize town hall meetings or webinars where makers can present their projects and share their success stories. This provides a platform for live interaction and Q&A sessions.
+Organize town hall meetings or webinars where makers can present their projects and share their success stories. This provides a platform for live interaction and QandA sessions.
 
 If you want to create more excitement in your organization and inspire more people to join your Power Platform community, a solution showcase is a great way to do so. Teams meet to demo what they built, share problems they solved, and show the impact they created with the apps they made.
 
@@ -100,9 +101,9 @@ Here are some tips for writing and sharing success stories:
 
 Share your success stories in a regular Microsoft Power Platform newsletter, highlight them on your intranet, or record an interview with the maker to upload and share with your maker community.
 
-## Use the Business Value toolkit
+## Use the business value toolkit
 
-The Business value toolkit is a sample solution that provides a comprehensive framework to capture and communicate the value of Power Platform solutions effectively. By guiding app owners through a structured storytelling process, enhanced by AI to both refine the narrative and analyze its effect on organizational strategic objectives, the toolkit helps transform raw insights into compelling success stories.
+The business value toolkit is a sample solution that provides a comprehensive framework to capture and communicate the value of Power Platform solutions effectively. By guiding app owners through a structured storytelling process, enhanced by AI to both refine the narrative and analyze its effect on organizational strategic objectives, the toolkit helps transform raw insights into compelling success stories.
 
 Learn more: [Capture and communicate value with the Business value toolkit](/power-platform/guidance/coe/business-value-toolkit)
 
