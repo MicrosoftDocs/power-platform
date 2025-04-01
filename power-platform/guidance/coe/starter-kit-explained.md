@@ -52,7 +52,7 @@ Set up your own SharePoint Hub or Teams site to share success stories, upcoming 
 
 The Power Platform communication site is a SharePoint Online template, designed to provide a starting point of content and page templates as you're setting up your internal Power Platform wiki and community site.
 
-More information: [Get starter with the Power Platform communication site template](../adoption/wiki-community.md#get-started-with-the-power-platform-communication-site-template)
+More information: [Get started with the Power Platform communication site template](../adoption/wiki-community.md#get-started-with-the-power-platform-communication-site-template)
 
 ### Center of Excellence – application lifecycle management components  
 
