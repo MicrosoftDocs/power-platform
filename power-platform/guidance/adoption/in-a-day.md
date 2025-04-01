@@ -1,10 +1,11 @@
 ---
 title: Provide internal training events
 description: Equip your team with Power Platform skills through internal training events, including "In a Day" workshops, Lunch and Learn sessions, and solution-building bootcamps.
+#customer intent: As a Power Platform user, I want to organize internal Power Platform training events so that my team can develop the skills needed to maximize its potential.
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 03/28/2025
+ms.date: 04/01/2025
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: sericks
@@ -13,7 +14,7 @@ search.audienceType:
 ms.custom:
   - ai-gen-docs-bap
   - ai-gen-description
-  - ai-seo-date:03/28/2025
+  - ai-seo-date:04/01/2025
 ---
 
 # Provide internal training events
