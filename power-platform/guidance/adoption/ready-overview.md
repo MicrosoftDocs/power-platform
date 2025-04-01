@@ -1,13 +1,14 @@
 ---
 title: Get ready for Power Platform adoption
-description: Ready overview
+description: Prepare your organization for Power Platform adoption with strategies to boost efficiency, innovation, and productivity.
+#customer intent: As a Power Platform user, I want to prepare my organization for Power Platform adoption so that we can drive efficiency, innovation, and productivity.
 author: manuelap-msft
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
-ms.date: 02/28/2025
+ms.date: 04/01/2025
 ---
 
 # Get ready for Power Platform adoption
