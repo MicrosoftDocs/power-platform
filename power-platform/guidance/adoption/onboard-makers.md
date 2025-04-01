@@ -1,10 +1,11 @@
 ---
 title: Onboard new community members and makers
 description: Learn how to guide new Power Platform makers from passive participants to active contributors with effective onboarding strategies.
+#customer intent: As a Power Platform user, I want to onboard new community members effectively so that they become engaged and active contributors.
 author: manuelap-msft
 ms.component: pa-admin
-ms.topic: conceptual
-ms.date: 03/28/2025
+ms.topic: concept-article
+ms.date: 04/01/2025
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: sericks
@@ -13,7 +14,7 @@ search.audienceType:
 ms.custom:
   - ai-gen-docs-bap
   - ai-gen-description
-  - ai-seo-date:03/28/2025
+  - ai-seo-date:04/01/2025
 ---
 
 # Onboard new community members and makers
@@ -59,7 +60,7 @@ In the second week of the onboarding process, the focus shifts to engaging new m
 
 - **Day one: Bi-Weekly webinar**: New members are invited to join a bi-weekly webinar that walks them through the community’s key features. This session introduces the community team and explains the benefits of being a member. The webinar aims to provide a comprehensive overview and foster a sense of belonging and connection.
 
-- **Day three: Interactive Q&A session**: On the third day, an informal bi-weekly drop-in session is hosted where members can ask questions and receive real-time responses. This interactive Q&A session allows new members to clarify any doubts, seek guidance, and engage directly with the community team and other members.
+- **Day three: Interactive QandA session**: On the third day, an informal bi-weekly drop-in session is hosted where members can ask questions and receive real-time responses. This interactive Q&A session allows new members to clarify any doubts, seek guidance, and engage directly with the community team and other members.
 
 ### Week 3: Deep-dive into community culture
 
@@ -119,7 +120,7 @@ Community engagement isn’t just a one-time effort. For new Power Platform make
 1. **Regular, relevant content**: Provide ongoing content that is relevant to current projects, challenges, or interests of the makers. This can include tutorials, case studies, and updates on new features.
 1. **Interactive events**: Host events such as webinars, workshops, or hackathons that encourage active participation from community members. These events can provide learning opportunities and foster a sense of camaraderie.
 1. **Recognition of contributions**: Continuously recognize and celebrate contributions from existing members to keep them motivated. Highlighting their achievements can inspire others to participate more actively.
-1. **Regular surveys & feedback sessions**: Conduct regular surveys and feedback sessions to understand member needs and improve engagement strategies accordingly. Listening to member feedback can help tailor the community experience to better meet their expectations. Explore the [pulse survey](/power-platform/guidance/coe/nurture-components#pulse-survey-components) components of the CoE Starter Kit for sending out feedback surveys to your makers.
+1. **Regular surveys and feedback sessions**: Conduct regular surveys and feedback sessions to understand member needs and improve engagement strategies accordingly. Listening to member feedback can help tailor the community experience to better meet their expectations. Explore the [pulse survey](/power-platform/guidance/coe/nurture-components#pulse-survey-components) components of the CoE Starter Kit for sending out feedback surveys to your makers.
 
 ### Content plan
 
