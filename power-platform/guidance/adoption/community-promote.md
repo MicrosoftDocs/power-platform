@@ -1,18 +1,19 @@
 ---
-title: Promote the community & establish partnerships
-description: Promote the community & establish partnerships
+title: Promote the community and establish partnerships
+description: Build a strong Power Platform community by designing a unique brand, promoting it effectively, and fostering partnerships to drive engagement and collaboration.
+#customer intent: As a Power Platform user, I want to design a recognizable community brand so that I can attract and engage members effectively.
 author: manuelap-msft
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: sericks
-ms.date: 02/28/2025
+ms.date: 04/01/2025
 ---
 
-# Promote the community & establish partnerships
+# Promote the community and establish partnerships
 
-## Design your community brand
+
 
 Creating a strong and recognizable brand for your Power Platform community helps convey the community's identity, values, and purpose, making it easier to attract and engage members. Here are four key steps to designing your community brand, based on the image provided:
 
@@ -30,18 +31,18 @@ Promoting your Power Platform community effectively helps attract new members, f
 - **Leadership endorsement at existing IT forums**: Secure endorsements from leadership. Having leaders speak positively about the community and its benefits can lend credibility and encourage more members to get involved.
 - **Email newsletters**: Send regular email newsletters to keep members informed about the latest news, events, and opportunities within the community. Newsletters can also feature member spotlights, success stories, and valuable resources.
 - **Viva Engage**: Use Viva Engage to foster connections and collaboration within the community. This platform can help facilitate discussions, share updates, and provide a space for members to interact and support each other.
-- **Other communities & joint events**: Collaborate with other communities and organize joint events. Partnering with related groups can expand your reach, attract new members, and create opportunities for cross-community learning and networking.
-- **Posters & digital signage**: Use posters and digital signage to promote your community within your organization. 
+- **Other communities and joint events**: Collaborate with other communities and organize joint events. Partnering with related groups can expand your reach, attract new members, and create opportunities for cross-community learning and networking.
+- **Posters and digital signage**: Use posters and digital signage to promote your community within your organization. 
 - **Company all-hands**: Take advantage of company all-hands meetings to promote your community. Presenting at these gatherings can help raise awareness and highlight the community's value to a broader audience.
 - **Information booth**: Set up an information booth at company events or in common areas. This booth can provide materials, answer questions, and engage potential members in person.
 - **Word-of-mouth**: Encourage existing members to spread the word about the community. Personal recommendations and word-of-mouth can be powerful tools for attracting new members and building a strong, engaged community.
 - **Member recommendations**: Use member recommendations to promote the community. Encourage members to share their positive experiences and invite colleagues to join. Testimonials and endorsements from current members can be highly persuasive.
 
-## Creatie partnerships
+## Create partnerships
 
 Establishing strategic partnerships is a powerful way to enhance your Power Platform community. By collaborating with other teams and communities within your organization, you can use shared resources, expand your reach, and create more impactful initiatives. 
 
-### Identify Complementary Partners
+### Identify complementary partners
 
 The first step in creating partnerships is to identify teams and communities that complement your Power Platform community. These partners can help you achieve mutual goals through cross-promotion, joint events, and shared resources. Potential partners might include:
 
