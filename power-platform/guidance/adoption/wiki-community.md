@@ -1,10 +1,11 @@
 ---
 title: Set up tools to support your community
 description: Build a thriving Power Platform community with tools like Viva Engage, Microsoft Forms, and SharePoint to foster collaboration, share ideas, and drive innovation.
+#customer intent: As a Power Platform admin, I want to set up tools like Viva Engage, Microsoft Forms, and SharePoint to support my community so that I can foster collaboration and innovation.
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 03/28/2025
+ms.date: 04/01/2025
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: sericks
@@ -48,7 +49,7 @@ Here are a few tips on what the SharePoint communication site should include:
 
 - **Policies and guidelines:** Share best practices, guidelines, and policies related to the use of Power Platform to ensure that all members are aligned and informed.
   - **[Environment strategy](../white-papers/environment-strategy.md)**: Share what environments are available and how to request access to existing environments or request new environments; additionally, ensure makers know the boundaries of an environments licensing, security, and connectors.
-  - **[Data loss prevention (DLP) policy strategy](dlp-strategy.md)**: Share which connectors are available in which environments and how to request more connectors or a new environment for a specific project.
+  - **[Data Loss Prevention (DLP) policy strategy](dlp-strategy.md)**: Share which connectors are available in which environments and how to request more connectors or a new environment for a specific project.
 
 - **Training and reusable resources**: Share internal and external training resources, reusable components and templates, and any brand guidelines or naming conventions you want your makers to follow.
 
