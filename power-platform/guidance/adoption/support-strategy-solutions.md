@@ -1,10 +1,11 @@
 ---
 title: "User support strategy - Ongoing production solution support"
 description: Learn how to establish a support and graduation framework, decision matrix, and a user support process for Microsoft Power Platform solutions.
+#customer intent: As a Power Platform user, I want to understand the different support models available for ongoing solution support so that I can implement the most suitable framework for my organization.
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 03/28/2025
+ms.date: 04/01/2025
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
@@ -60,8 +61,8 @@ When defining support models, consider a graduation path. A solution might start
 
 Maker support refers to the maker supporting their own apps and flows built for themselves, their team, or their colleagues. This includes answering user queries, fixing bugs, and handling change requests. This type of support is informal—users often know the maker and reach out to them directly.
 
->[!IMPORTANT]
->As part of onboarding new makers, ensure makers are aware of support, graduation, and escalation paths. Makers overwhelmed by supporting their critical business-level solutions can't innovate or create new ones. Define how makers graduate their solutions to the next level of support and what that process involves.
+> [!IMPORTANT]
+> As part of onboarding new makers, ensure makers are aware of support, graduation, and escalation paths. Makers overwhelmed by supporting their critical business-level solutions can't innovate or create new ones. Define how makers graduate their solutions to the next level of support and what that process involves.
 
 In addition to proactively communicating processes to makers, ensure you have reactive governance to identify highly shared and used solutions that might be important to your business. Reach out to makers to confirm those solutions have the necessary support guardrails. Use [tenant-level analytics](/admin/tenant-level-analytics) to learn more about your application's usage, [export your telemetry to your data storage account](/admin/self-service-analytics) to create your enhanced reporting, or use the [CoE Starter Kit](../coe/starter-kit.md) as a starting point.
 
@@ -101,8 +102,8 @@ Many customers choose to work with partners on their Power Platform adoption, in
 
 Microsoft support is used to raise platform-related technical issues. Based on your [support plan](/admin/support-overview), different technical support and advisory services are available to you.
 
->[!TIP]
->Before raising a support ticket, also check [Power Apps support](https://powerapps.microsoft.com/support/), [Power Automate support](https://flow.microsoft.com/support/), and [Microsoft Copilot Studio support](https://powervirtualagents.microsoft.com/support/) for high-priority issues that broadly affect all customers.
+> [!TIP]
+> Before raising a support ticket, also check [Power Apps support](https://powerapps.microsoft.com/support/), [Power Automate support](https://flow.microsoft.com/support/), and [Microsoft Copilot Studio support](https://powervirtualagents.microsoft.com/support/) for high-priority issues that broadly affect all customers.
 
 ## Considerations and key actions
 
