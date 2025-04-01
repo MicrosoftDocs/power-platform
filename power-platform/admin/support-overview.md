@@ -56,7 +56,7 @@ Yes, you need a support plan to receive one-on-one technical support. Some subsc
 
 The following table outlines the best way to submit a new support request based on your product or service and customer support plan. Microsoft partners should use the [Partner Center portal](https://partner.microsoft.com/support) or the support option listed in the table, as applicable.
 
-<table style="width:100%">
+<table>
   <tr>
     <th>Product</th>
     <th>Subscription (included)</th>
