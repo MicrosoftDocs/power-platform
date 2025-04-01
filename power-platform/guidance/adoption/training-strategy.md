@@ -135,7 +135,7 @@ Organizations can use Microsoft Learn training to upskill their teams and drive 
 
 ### Microsoft in a Day workshops
 
-Microsoft's [Power Platform in a Day](/power-platform/training-workshops) workshops are immersive, hands-on training sessions designed to help participants quickly gain practical skills in using Microsoft Power Platform. These workshops provide a comprehensive introduction to the platform's capabilities, including Power Apps, Power Automate, and Copilot Studio. Register for a workshop and leave with a solid understanding of how to use Power Platform to solve real-world business problems and enhance your organization's productivity.
+Microsoft's [Power Platform in a Day](/power-platform/guidance/adoption/in-a-day) workshops are immersive, hands-on training sessions designed to help participants quickly gain practical skills in using Microsoft Power Platform. These workshops provide a comprehensive introduction to the platform's capabilities, including Power Apps, Power Automate, and Copilot Studio. Register for a workshop and leave with a solid understanding of how to use Power Platform to solve real-world business problems and enhance your organization's productivity.
 
 ### Microsoft Power Platform Fundamentals (Certification)
 
