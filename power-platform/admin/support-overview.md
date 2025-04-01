@@ -1,13 +1,15 @@
 ---
-title: "Support for Microsoft Power Platform and Dynamics 365 apps | MicrosoftDocs"
-description: "Information on support for Microsoft Power Platform and Dynamics 365 apps including languages in which Microsoft provides support for Power Platform and Dynamics 365, support hours, what support is included with a support plan, how to contact support."
-ms.date: 11/25/2024
-ms.reviewer: "sericks"
+title: Support for Microsoft Power Platform and Dynamics 365 apps
+description: Learn more about support options for Microsoft Power Platform and Dynamics 365 apps.
+ms.date: 04/01/2025
+ms.reviewer: sericks
 ms.topic: overview
-ms.custom: "admin-security"
+ms.custom: admin-security
 ms.collection: get-started
-author: "sericks007"
-ms.author: "sericks"
+author: sericks007
+ms.author: sericks
+ms.contributors:
+  - mmaasjo
 ---
 # Support for Microsoft Power Platform and Dynamics 365 apps
 
