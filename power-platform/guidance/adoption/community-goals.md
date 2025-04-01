@@ -1,16 +1,17 @@
 ---
-title: Define community purpose & goals
-description: Define community purpose & goals
+title: Define community purpose and goals for Power Platform success
+description: Discover how to define your Power Platform community's purpose and goals to foster collaboration, innovation, and organizational success.
+#customer intent: As a Power Platform user, I want to define the purpose and goals of my community so that I can foster collaboration and innovation.
 author: manuelap-msft
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: sericks
 ms.date: 02/28/2025
 ---
 
-# Define community purpose & goals
+# Define community purpose and goals for Power Platform success
 
 Communities play a vital role in fostering collaboration, innovation, and growth. This article delves into three key aspects of community building: understanding why people join communities, exploring the organizational value of community engagement, and emphasizing the importance of defining a clear purpose and goals.
 
@@ -31,45 +32,45 @@ Learn from our community members on [what motivates them to contribute to the Po
 
 ## The organizational value of community engagement
 
-Establishing a Power Platform community within your organization can enhance organizational performance and drive success. By fostering a vibrant and engaged community, organizations can leverage the collective intelligence and creativity of their members, leading to improved outcomes and a stronger, more resilient organization.
+Establishing a Power Platform community within your organization can enhance organizational performance and drive success. By fostering a vibrant and engaged community, organizations can use the collective intelligence and creativity of their members, leading to improved outcomes and a stronger, more resilient organization.
 
->[!TIP]
-> Learn more about [defining vision, metrics and goals for nurturing a maker and champion community](common-vision/enable-maker-community.md).
+> [!TIP]
+> Learn more about [defining vision, metrics, and goals for nurturing a maker and champion community](common-vision/enable-maker-community.md).
 
 ### Tangible values
 
-1. **Enhanced productivity & efficiency**: Engaged communities foster collaboration and knowledge sharing, leading to increased productivity. Members can quickly find solutions and best practices, reducing the time spent on problem-solving.
+1. **Enhanced productivity and efficiency**: Engaged communities foster collaboration and knowledge sharing, leading to increased productivity. Members can quickly find solutions and best practices, reducing the time spent on problem-solving.
 1. **Reduced training costs**: A well-established community can serve as a valuable resource for training and onboarding new members. By using the collective knowledge of the community, organizations can minimize the need for formal training programs, saving time and money.
 1. **Faster problem-solving**: Community engagement enables members to tap into a diverse pool of expertise. This collective intelligence accelerates the problem-solving process, allowing community members to address issues more swiftly and effectively.
-1. **Innovation & continuous improvement**: Active communities encourage the exchange of innovative ideas and continuous improvement. Members can share insights and feedback, driving the development of new solutions and enhancements.
+1. **Innovation and continuous improvement**: Active communities encourage the exchange of innovative ideas and continuous improvement. Members can share insights and feedback, driving the development of new solutions and enhancements.
 
 ### Intangible values
 
-1. **Community support & solidarity**: A strong sense of community support and solidarity can boost morale and foster a positive organizational culture. Members feel connected and supported, which enhances their overall engagement and satisfaction.
+1. **Community support and solidarity**: A strong sense of community support and solidarity can boost morale and foster a positive organizational culture. Members feel connected and supported, which enhances their overall engagement and satisfaction.
 1. **Employee empowerment**: Engaged communities empower members by giving them a platform to share their knowledge and contribute to the organization's success. This empowerment leads to increased confidence and a greater sense of ownership.
 1. **Innovation mindset**: Community engagement cultivates an innovation mindset among members. By encouraging open communication and the sharing of ideas, organizations can create an environment where innovation thrives.
 1. **Knowledge sharing mindset**: A culture of knowledge sharing is essential for organizational growth. Engaged communities promote this mindset, ensuring that valuable information is disseminated and accessible to all members.
 
-Learn more about how [Shell's citizen-development iniative called DIY (Do IT Yourself)](https://www.microsoft.com/customers/story/1699045592642116808-shell-energy-power-platform-uk).
+Learn more about how [Shell's citizen-development initiative called DIY (Do IT Yourself)](https://www.microsoft.com/customers/story/1699045592642116808-shell-energy-power-platform-uk).
 
 ## Key ingredients for community success
 
 When defining the purpose and goals of a Power Platform community, it's important to consider the key ingredients that contribute to a successful community:
 
-1. **Clear vision & leadership buy-in**: Establish a clear vision for the community and secure support from leadership. This ensures that the community's goals align with the organization's objectives and that there is a commitment to its success.
-1. **Training & upskilling**: Help members stay current with the latest Power Platform developments by providing ongoing training and upskilling opportunities to. This investment in education fosters a knowledgeable and capable community.
-1. **Support & resources**: Make sure that the community has access to the necessary support and resources. This includes technical support, tools, and materials that enable members to effectively collaborate and innovate.
-1. **Empowerment**: Empower employees to develop their own solutions and foster a sense of autonomy and creative problem-solving. When members feel empowered, they are more likely to contribute and engage with the community.
-1. **Recognition & celebrating success**: Recognize and celebrate the achievements of community members to boost morale and motivation. Acknowledging contributions and successes fosters a positive and supportive community culture.
-1. **Community champions & advocates**: Identify and nurture [community champions](champions.md) and advocates helps drive engagement and growth. These individuals can inspire and lead others, promoting the community's values and goals.
+1. **Clear vision and leadership buy-in**: Establish a clear vision for the community and secure support from leadership. This ensures that the community's goals align with the organization's objectives and that there's a commitment to its success.
+1. **Training and upskilling**: Help members stay current with the latest Power Platform developments by providing ongoing training and upskilling opportunities to. This investment in education fosters a knowledgeable and capable community.
+1. **Support and resources**: Make sure that the community has access to the necessary support and resources. This includes technical support, tools, and materials that enable members to effectively collaborate and innovate.
+1. **Empowerment**: Empower employees to develop their own solutions and foster a sense of autonomy and creative problem-solving. When members feel empowered, they're more likely to contribute and engage with the community.
+1. **Recognition and celebrating success**: Recognize and celebrate the achievements of community members to boost morale and motivation. Acknowledging contributions and successes fosters a positive and supportive community culture.
+1. **Community champions and advocates**: Identify and nurture [community champions](champions.md) and advocates helps drive engagement and growth. These individuals can inspire and lead others, promoting the community's values and goals.
 
 ## Example community purpose and goals: The Power Innovators Hub
 
-Let's now look at a practical example to illustrate how to define the purpose and goals of a Power Platform community. We'll explore the **Power Innovators Hub**, and examine the purpose statement and specific goals to gain insights into the essential elements that contribute to a thriving and impactful community. This example will serve as a guide to help you establish a clear and compelling vision for your own Power Platform community.
+Let's now look at a practical example to illustrate how to define the purpose and goals of a Power Platform community. We explore the **Power Innovators Hub**, and examine the purpose statement and specific goals to gain insights into the essential elements that contribute to a thriving and impactful community. This example serves as a guide to help you establish a clear and compelling vision for your own Power Platform community.
 
 ### Purpose statement
 
-The purpose of the Power Innovators Hub is to **empower and connect professionals and enthusiasts** who are passionate about leveraging Microsoft Power Platform to innovate, automate, and transform business processes. This purpose statement highlights the community's commitment to fostering innovation and collaboration among its members.
+The purpose of the Power Innovators Hub is to **empower and connect professionals and enthusiasts** who are passionate about using Microsoft Power Platform to innovate, automate, and transform business processes. This purpose statement highlights the community's commitment to fostering innovation and collaboration among its members.
 
 ### Goals
 
@@ -77,12 +78,12 @@ The purpose of the Power Innovators Hub is to **empower and connect professional
    - Organize regular training workshops and events to help members enhance their skills and stay updated with the latest Power Platform developments.
    - Create a comprehensive [library of resources](wiki-community.md) that members can access to learn and share best practices.
 1. **Project collaboration & showcase**
-   - Encourage members to participate in quartlery hackathons that focus on solving practical business challenges using Power Platform.
+   - Encourage members to participate in quarterly hackathons that focus on solving practical business challenges using Power Platform.
    - Provide a platform for members to present their innovative solutions, fostering a culture of recognition and inspiration.
 1. **Membership engagement & growth**
    - Grow community by 25% through outreach. Implement strategies to attract new members and expand the community's reach.
    - Foster high member engagement, with a goal of 40% active participation. Aim for a high level of active participation by creating engaging content and activities that resonate with members.
-1. **Community-driven onnovation**
+1. **Community-driven innovation**
    - Motivate members to contribute their ideas and solutions, driving collective innovation.
    - Collaborate with Microsoft to provide members with exclusive insights and opportunities, enhancing the value of community membership.
 
@@ -94,7 +95,7 @@ Defining the purpose and goals of a community is just the beginning. To ensure t
 
 **Community call attendance**: Track the number of members attending community calls and webinars. High attendance rates indicate strong interest and engagement, while declining numbers may signal a need for more engaging content or better scheduling.
 **Post frequency**: Monitor the frequency of posts and interactions within the community. A high volume of posts suggests active participation, whereas a drop in activity might indicate waning interest or engagement.
-**Membership (growth/decline)**: Keep an eye on membership growth or decline over time.Steady growth or stable membership numbers are positive signs, while a decline may require investigation into potential causes and corrective actions.
+**Membership (growth/decline)**: Keep an eye on membership growth or decline over time. Steady growth or stable membership numbers are positive signs, while a decline may require investigation into potential causes and corrective actions.
 **Surveys and feedback**: Conduct regular surveys and solicit feedback from community members. Surveys provide direct insights into member satisfaction, needs, and areas for improvement. Regular feedback helps you stay attuned to the community's evolving expectations.
 **Open forums**: Host open forums where members can voice their opinions, share ideas, and discuss concerns. Open forums foster transparency and trust, allowing members to feel heard and valued. They also provide valuable insights into the community's needs and challenges.
 **Anonymous feedback**: Offer channels for anonymous feedback to encourage honest and candid input. Anonymous feedback can reveal issues that members might be hesitant to discuss openly. It provides a safe space for members to share their true feelings and concerns.
