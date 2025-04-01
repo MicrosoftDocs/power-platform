@@ -1,16 +1,17 @@
 ---
-title: Ensure data resilience
-description: Guidance for protecting and recovering data seamlessly with a range of flexible backup and retention capabilities
+title: Enhance data resilience in Power Platform with backup and retention
+description: Protect your data with Power Platform's flexible backup and retention capabilities. Learn how to ensure resilience and recoverability for your business-critical data.
+#customer intent: As a Power Platform user, I want to understand how to enhance data resilience so that I can protect and recover business-critical data effectively.
 author: manuelap-msft
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: sericks
-ms.date: 02/28/2025
+ms.date: 04/01/2025
 ---
 
-# Ensure data resilience
+# Enhance data resilience in Power Platform with backup and retention
 
 In today’s data-driven world, ensuring that your data remains available, secure, and recoverable in the face of disruptions is essential for businesses operating at a global scale. Microsoft Power Platform enables you to protect and recover their data seamlessly with a range of flexible backup and retention capabilities.
 
@@ -31,7 +32,7 @@ You can now extend their backup retention from seven to 28 days. Learn more: [Ba
 
 Define and enforce DLP policies to prevent unauthorized data access and ensure compliance with organizational standards. Learn more: [Establish a DLP strategy](dlp-strategy.md)
 
-## Use role-based access control (RBAC)
+## Use Role-Based Access Control (RBAC)
 
 Implement RBAC to restrict access to sensitive data, ensuring that only authorized users can access and modify data. Learn more: [Security in Microsoft Dataverse](/power-platform/admin/wp-security)
 
