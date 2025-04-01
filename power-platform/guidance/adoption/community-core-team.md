@@ -1,13 +1,14 @@
 ---
 title: Define community core team roles and responsibilities
-description: Define community core team responsibilities
+description: Define core team roles and responsibilities for your community to align with its size, scope, and objectives. Learn how to structure your team effectively.
+#customer intent: As a community manager, I want to define core team roles and responsibilities so that the community operates effectively and aligns with its objectives.
 author: manuelap-msft
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: sericks
-ms.date: 02/28/2025
+ms.date: 04/01/2025
 ---
 
 # Define community core team roles and responsibilities
@@ -27,7 +28,7 @@ Depending on your organization's size and team structure, these roles may not be
 
 Let's look at specific examples to understand the scope and expectations for each role:
 
-### Community Lead
+### Community lead
 
 Responsibilities:
 
@@ -37,7 +38,7 @@ Responsibilities:
 - **Buy-in/sponsorship**: Secure buy-in and sponsorship from key stakeholders to support community initiatives.
 - **Promotion and marketing**: Develop and implement strategies to promote the community and its activities.
 
-### Content Lead
+### Content lead
 
 Responsibilities:
 
@@ -47,7 +48,7 @@ Responsibilities:
 - **Tech and platform support**: Ensure that the technical aspects of content delivery run smoothly, including platform setup and troubleshooting.
 - **Promotion and marketing**: Promote content through various channels to maximize reach and engagement.
 
-### Event Lead
+### Event lead
 
 Responsibilities:
 
@@ -57,7 +58,7 @@ Responsibilities:
 - **Tech and platform support**: Ensure that the technical aspects of events run smoothly, including platform setup and troubleshooting.
 - **Promotion and marketing**: Develop and execute marketing strategies to promote events and drive participation.
 
-### Community Advocate
+### Community advocate
 
 Responsibilities:
 
