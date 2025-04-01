@@ -78,7 +78,6 @@ For example, you create an environment on January 1. On that day, the system sta
 The PowerShell module for Power Platform Administrators is the recommended tool for managing administrative capabilities in Power Platform environments. For information that helps you get started with the PowerShell for Power Platform Administrators module, see [Get started with PowerShell for Power Platform Administrators](powershell-getting-started.md).
 
 > [!NOTE]
-
 > You can extend the backup retention period only for production environments where Dynamics 365 applications aren't enabled. For production environments where Dynamics 365 applications are enabled, a retention period of 28 days is used. For all other nonproduction environments, the default backup retention period of seven days is used, regardless of the setting's value.
 
 #### Set the retention period
@@ -112,11 +111,12 @@ You must restore an environment in the same region where it was backed up. The t
 1. Select **Continue**.
 
      The **Restore backup to a target environment** pane shows backup details that are available.
+   
 1. Select a target environment to overwrite, and then select **Restore**.
 
-> [!NOTE]
-> - Only sandbox environments can be restored to. For information about the effects of changing the environment type, see the [Can I restore to a production environment?](#can-i-restore-to-a-production-environment) section.
-> - Under **Edit details**, you can change the environment name.
+     > [!NOTE]
+     > - Only sandbox environments can be restored to. For information about the effects of changing the environment type, see the [Can I restore to a production environment?](#can-i-restore-to-a-production-environment) section.
+     > - Under **Edit details**, you can change the environment name.
 
 
 1. Confirm that you want to overwrite the environment.
@@ -160,7 +160,7 @@ Although automated system backups are great, you should create your own backups 
 
 - The label of the backup file that is created reflects the restore point timestamp. The restore point timestamp is the closest available time to the time when the manual backup was created. The timestamp label can't be edited.
 - There's no limit on the number of manual backups that you can create.
-- Manual backups do not count against your storage capacity limits, but restoring an environment requires at least 1 GB of available capacity.
+- Manual backups don't count against your storage capacity limits, but restoring an environment requires at least 1 GB of available capacity.
 - You must restore an environment in the same region where it was backed up.
 - If you don't see your target environment, refer to the [If you don't see the environment that you want to restore to](#if-you-dont-see-the-environment-that-you-want-to-restore-to) section for possible reasons and troubleshooting steps.
 
@@ -170,14 +170,14 @@ Although automated system backups are great, you should create your own backups 
 1. Go to **Environments**, select an environment, and then select **Backups & Restore** > **Create manual backup**.
 1. Fill in the information, and then select **Create**.
 
-There is no real-time status indicator while the backup is being processed. However, you will receive a confirmation message once the backup is successfully created. When the backup is completed, you receive the following message: "The &lt;*backup name*&gt; backup was successfully created."
+There's no real-time status indicator while the backup is being processed. However, you receive a confirmation message once the backup is successfully created. When the backup is completed, you receive the following message: "The &lt;*backup name*&gt; backup was successfully created."
 
 ## Restore a manual backup
 
 You can restore backups only to sandbox environments. You can't restore them to production environments. If you want to restore a manual backup to a production environment, you must first change the environment type to sandbox. Then, after the restore is completed, you can switch the environment type back to production.
 
 > [!IMPORTANT]
-Changing the environment type to sandbox affects database retention. For more information about the effects of changing the environment type, see the [Can I restore to a production environment?](#can-i-restore-to-a-production-environment) section.
+> Changing the environment type to sandbox affects database retention. For more information about the effects of changing the environment type, see the [Can I restore to a production environment?](#can-i-restore-to-a-production-environment) section.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) by using administrator credentials.
 1. Go to **Environments**, select an environment, and then select **Backups & Restore** > **Restore or manage**.
@@ -234,7 +234,7 @@ Because Azure SQL Database continuously makes backups, there's no need to make o
 
 ### Why can't I see the status of the manual backup?
 
-There is no real-time status indicator while the backup is being processed. However, you will receive a confirmation message once the backup is successfully created. When the backup is completed, you receive the following message: "The \<*backup name*\> backup was successfully created."
+There's no real-time status indicator while the backup is being processed. However, you receive a confirmation message once the backup is successfully created. When the backup is completed, you receive the following message: "The \<*backup name*\> backup was successfully created."
 
 ### Should I open a support ticket to make a full backup?
 
@@ -319,7 +319,7 @@ For more information about the recovery environment, see [Recover environment](r
 
 ### The restore operation failed. What action can I take?
 
-The restore process, especially for environments with large amounts of data, is a complex backend operation. If the restore operation fails, wait 30 minutes and retry the operation again. The other actions you can take are reset, delete, copy or restore. To retry copy or restore, the failed environment must be the target environment for the operation. 
+The restore process, especially for environments with large amounts of data, is a complex backend operation. If the restore operation fails, wait 30 minutes and retry the operation again. The other actions you can take are reset, delete, copy, or restore. To retry copy or restore, the failed environment must be the target environment for the operation. 
 
 ### You don't see the environment that you want to restore to
 
