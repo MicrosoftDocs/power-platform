@@ -105,7 +105,7 @@ We have designed our support plans to meet different business needs:
 
 ### How does Professional Direct support compare to Premier/Unified support? 
 
-<table style="width:100%">
+<table>
   <tr>
     <td>Professional Direct Support </td>
     <td>Provides a cohesive support experience with exceptional tools and resources to accommodate customer needs during all stages of the customer lifecycle. One-hour response times for critical issues, around the clock problem resolution, escalation services, proactive advisory services, and ask-the-experts webinars.  </td>
