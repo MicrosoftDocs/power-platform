@@ -61,6 +61,10 @@ Create an App registration with API permission to SharePoint. Learn more about r
    1. Select **Add permissions** to create the SharePoint permission.
 
    1. Select **Grant admin consent for `<tenant name>`**.
+  
+> [!NOTE]
+> To apply more granular access to individual SharePoint sites, the **Sites.Selected** can be used to apply a scope. Learn more at [Develop applications that user sites selected permissions for SharePoint sites](https://techcommunity.microsoft.com/blog/spblog/develop-applications-that-use-sites-selected-permissions-for-spo-sites-/3790476).
+
 
 ## Create managed identities in Dataverse
 
