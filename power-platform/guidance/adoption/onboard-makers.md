@@ -8,7 +8,7 @@ ms.topic: concept-article
 ms.date: 04/01/2025
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: sericks
+ms.reviewer: pankajsharma2087
 search.audienceType:
   - admin
 ms.custom:
@@ -60,7 +60,7 @@ In the second week of the onboarding process, the focus shifts to engaging new m
 
 - **Day one: Bi-Weekly webinar**: New members are invited to join a bi-weekly webinar that walks them through the community’s key features. This session introduces the community team and explains the benefits of being a member. The webinar aims to provide a comprehensive overview and foster a sense of belonging and connection.
 
-- **Day three: Interactive QandA session**: On the third day, an informal bi-weekly drop-in session is hosted where members can ask questions and receive real-time responses. This interactive Q&A session allows new members to clarify any doubts, seek guidance, and engage directly with the community team and other members.
+- **Day three: Interactive Q&A session**: On the third day, an informal bi-weekly drop-in session is hosted where members can ask questions and receive real-time responses. This interactive Q&A session allows new members to clarify any doubts, seek guidance, and engage directly with the community team and other members.
 
 ### Week 3: Deep-dive into community culture
 

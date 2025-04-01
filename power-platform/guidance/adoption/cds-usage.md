@@ -1,5 +1,5 @@
 ---
-title: Monitor licenses and capacity in Power Platform
+title: Monitor licenses and capacity
 description: Monitor Power Platform licenses and capacity to optimize performance, ensure compliance, and manage costs effectively. Learn key strategies and tools to stay in control.
 #customer intent: As a Power Platform user, I want to monitor Power Platform license consumption so that I can ensure compliance and manage costs effectively.
 author: manuelap-msft
@@ -8,7 +8,7 @@ ms.topic: concept-article
 ms.date: 03/31/2025
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: sericks
+ms.reviewer: pankajsharma2087
 search.audienceType:
   - admin
 ms.custom:
@@ -17,7 +17,7 @@ ms.custom:
   - ai-seo-date:03/28/2025
 ---
 
-# Monitor licenses and capacity in Power Platform
+# Monitor licenses and capacity
 
 Effective capacity and license monitoring in Power Platform helps you maintain optimal performance, ensure compliance, and manage costs. This article outlines the key aspects to monitor and provides recommendations to help you stay on top of your Power Platform environment.
 

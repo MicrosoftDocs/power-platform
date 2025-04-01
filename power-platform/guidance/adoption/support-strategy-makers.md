@@ -1,5 +1,5 @@
 ---
-title: Maker support strategies for Microsoft Power Platform
+title: Maker support strategies
 description: Learn how to establish effective maker support strategies for Microsoft Power Platform, including team-assisted support, internal communities, and help desk solutions.
 #cutomer intent: As a Power Platform user, I want to establish effective maker support strategies so that I can reduce formal support queries and improve user experience.
 author: manuelap-msft
@@ -17,7 +17,7 @@ ms.custom:
   - ai-seo-date:03/28/2025
 ---
 
-# Maker support strategies for Microsoft Power Platform
+# Maker support strategies
 
 This article provides technical guidance and support for makers. Activities like building a community, training your makers, and co-development assistance can significantly decrease the volume of formal support queries and increase user experience overall. In addition to these activities, it's important to establish ongoing [training and learning opportunities](training-strategy.md) for your makers.
 

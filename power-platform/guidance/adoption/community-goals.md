@@ -1,5 +1,5 @@
 ---
-title: Define community purpose and goals for Power Platform success
+title: Define community purpose and goals
 description: Discover how to define your Power Platform community's purpose and goals to foster collaboration, innovation, and organizational success.
 #customer intent: As a Power Platform user, I want to define the purpose and goals of my community so that I can foster collaboration and innovation.
 author: manuelap-msft
@@ -7,11 +7,11 @@ ms.component: pa-admin
 ms.topic: concept-article
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: sericks
-ms.date: 02/28/2025
+ms.reviewer: jhaskett-msft
+ms.date: 04/01/2025
 ---
 
-# Define community purpose and goals for Power Platform success
+# Define community purpose and goals
 
 Communities play a vital role in fostering collaboration, innovation, and growth. This article delves into three key aspects of community building: understanding why people join communities, exploring the organizational value of community engagement, and emphasizing the importance of defining a clear purpose and goals.
 
@@ -57,16 +57,16 @@ Learn more about how [Shell's citizen-development initiative called DIY (Do IT Y
 
 When defining the purpose and goals of a Power Platform community, it's important to consider the key ingredients that contribute to a successful community:
 
-1. **Clear vision and leadership buy-in**: Establish a clear vision for the community and secure support from leadership. This ensures that the community's goals align with the organization's objectives and that there's a commitment to its success.
+1. **Clear vision and leadership buy-in**: Establish a clear vision for the community and secure support from leadership. This commitment ensures that the community's goals align with the organization's objectives and that there's a commitment to its success.
 1. **Training and upskilling**: Help members stay current with the latest Power Platform developments by providing ongoing training and upskilling opportunities to. This investment in education fosters a knowledgeable and capable community.
-1. **Support and resources**: Make sure that the community has access to the necessary support and resources. This includes technical support, tools, and materials that enable members to effectively collaborate and innovate.
+1. **Support and resources**: Ensure the community has access to the support and resources they need, including technical support, tools, and materials that help members collaborate and innovate effectively.
 1. **Empowerment**: Empower employees to develop their own solutions and foster a sense of autonomy and creative problem-solving. When members feel empowered, they're more likely to contribute and engage with the community.
 1. **Recognition and celebrating success**: Recognize and celebrate the achievements of community members to boost morale and motivation. Acknowledging contributions and successes fosters a positive and supportive community culture.
 1. **Community champions and advocates**: Identify and nurture [community champions](champions.md) and advocates helps drive engagement and growth. These individuals can inspire and lead others, promoting the community's values and goals.
 
 ## Example community purpose and goals: The Power Innovators Hub
 
-Let's now look at a practical example to illustrate how to define the purpose and goals of a Power Platform community. We explore the **Power Innovators Hub**, and examine the purpose statement and specific goals to gain insights into the essential elements that contribute to a thriving and impactful community. This example serves as a guide to help you establish a clear and compelling vision for your own Power Platform community.
+Let's look at a practical example to illustrate how to define the purpose and goals of a Power Platform community. We explore the **Power Innovators Hub** and examine the purpose statement and specific goals to gain insights into the essential elements that contribute to a thriving and impactful community. This example serves as a guide to help you establish a clear and compelling vision for your own Power Platform community.
 
 ### Purpose statement
 
@@ -80,7 +80,7 @@ The purpose of the Power Innovators Hub is to **empower and connect professional
 1. **Project collaboration & showcase**
    - Encourage members to participate in quarterly hackathons that focus on solving practical business challenges using Power Platform.
    - Provide a platform for members to present their innovative solutions, fostering a culture of recognition and inspiration.
-1. **Membership engagement & growth**
+1. **Membership engagement and growth**
    - Grow community by 25% through outreach. Implement strategies to attract new members and expand the community's reach.
    - Foster high member engagement, with a goal of 40% active participation. Aim for a high level of active participation by creating engaging content and activities that resonate with members.
 1. **Community-driven innovation**
@@ -93,7 +93,7 @@ By defining a clear purpose and setting specific goals, the Power Platform commu
 
 Defining the purpose and goals of a community is just the beginning. To ensure the long-term success and vitality of your Power Platform community, monitor its health regularly. Let's explore various methods for monitoring community health, ranging from passive to proactive approaches.
 
-**Community call attendance**: Track the number of members attending community calls and webinars. High attendance rates indicate strong interest and engagement, while declining numbers may signal a need for more engaging content or better scheduling.
+**Community call attendance**: Track the number of members attending community calls and webinars. High attendance rates indicate strong interest and engagement, while declining numbers might signal a need for more engaging content or better scheduling.
 **Post frequency**: Monitor the frequency of posts and interactions within the community. A high volume of posts suggests active participation, whereas a drop in activity might indicate waning interest or engagement.
 **Membership (growth/decline)**: Keep an eye on membership growth or decline over time. Steady growth or stable membership numbers are positive signs, while a decline may require investigation into potential causes and corrective actions.
 **Surveys and feedback**: Conduct regular surveys and solicit feedback from community members. Surveys provide direct insights into member satisfaction, needs, and areas for improvement. Regular feedback helps you stay attuned to the community's evolving expectations.

@@ -1,25 +1,31 @@
 ---
 title: Promote the community and establish partnerships
-description: Build a strong Power Platform community by designing a unique brand, promoting it effectively, and fostering partnerships to drive engagement and collaboration.
-#customer intent: As a Power Platform user, I want to design a recognizable community brand so that I can attract and engage members effectively.
+description: Build a strong Power Platform community by creating a unique brand, promoting it effectively, and fostering partnerships to drive engagement and collaboration.
+#customer intent: As a Power Platform user, I want to design a recognizable community brand so that I can attract and engage members effectively.  
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: concept-article
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: sericks
+ms.reviewer: jhaskett-msft
 ms.date: 04/01/2025
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-description
+  - ai-seo-date:04/01/2025
 ---
 
 # Promote the community and establish partnerships
 
+Building a thriving Power Platform community requires more than just technical expertise—it involves creating a strong brand, designing a recognizable community identity, attracting and engaging members, and collaborating with complementary teams to drive innovation and success.
 
+## Design your community brand
 
 Creating a strong and recognizable brand for your Power Platform community helps convey the community's identity, values, and purpose, making it easier to attract and engage members. Here are four key steps to designing your community brand, based on the image provided:
 
 1. **Give your community a name**: The first step in designing your community brand is to choose a name that reflects its purpose and values. A memorable and meaningful name helps establish the community's identity and makes it easier for potential members to understand what the community is about. For example, "Power Innovator Hub" clearly conveys a focus on innovation and collaboration within the Power Platform ecosystem.
 1. **Design an easy-to-recognize community logo**: A distinctive and recognizable logo can visually represent the community's identity and be easily identifiable across various platforms and materials. Consider incorporating elements related to Power Platform, such as icons or symbols, to create a strong visual connection. Ensure the logo is versatile and works well in different sizes and formats.
-1. **Select a community colour scheme**: Choose a consistent color scheme that creates a cohesive and professional look for your community brand. Refer to your business brand guidelines to select colors that align with your organization's overall branding. Use these colors consistently across all community-related content.
+1. **Select a community color scheme**: Choose a consistent color scheme that creates a cohesive and professional look for your community brand. Refer to your business brand guidelines to select colors that align with your organization's overall branding. Use these colors consistently across all community-related content.
 1. **Consider your brand "voice"**: Your community's brand voice is the tone and style of communication used in all interactions and content. It should reflect the community's values and personality. For example, your brand voice could be inspiring, encouraging, collaborative, fun, or welcoming. Consistency in your brand voice helps build trust and familiarity with your audience.
 
 ## Promote your community
@@ -44,7 +50,9 @@ Establishing strategic partnerships is a powerful way to enhance your Power Plat
 
 ### Identify complementary partners
 
-The first step in creating partnerships is to identify teams and communities that complement your Power Platform community. These partners can help you achieve mutual goals through cross-promotion, joint events, and shared resources. Potential partners might include:
+The first step in creating partnerships is to identify teams and communities that complement your Power Platform community. These partners can help you achieve mutual goals through cross-promotion, joint events, and shared resources. 
+
+Potential partners might include:
 
 - **Microsoft 365 community**: Collaborate with the Microsoft 365 community to integrate Power Platform solutions with other Microsoft tools, enhancing productivity and collaboration.
 - **Cyber security team**: Partner with the cyber security team to ensure that your Power Platform solutions adhere to security best practices and protocols.
@@ -53,9 +61,9 @@ The first step in creating partnerships is to identify teams and communities tha
 
 ### Opportunities for collaboration
 
-Once you have identified potential partners, explore various opportunities for collaboration that can benefit both your community and your partners:
+Once you identify potential partners, explore various opportunities for collaboration that can benefit both your community and your partners:
 
 - **Running internal training events**: Organize [joint training sessions](in-a-day.md) to educate members of both communities on the capabilities and benefits of Power Platform. These events can help build skills and foster a culture of continuous learning.
 - **Solution envisioning workshops**: Conduct [workshops](solution-envisioning.md) to brainstorm and develop innovative solutions to common challenges. These sessions can bring together diverse perspectives and expertise, leading to more creative and effective outcomes.
 - **Align efforts with strategic goals**: Ensure that your collaborative initiatives align with the [strategic goals](vision.md) of your organization. This alignment can help secure support from leadership and demonstrate the value of your partnerships.
-- **Joint knowledge sharing and learning initiatives**: Create opportunities for knowledge sharing and learning across communities. This can include joint webinars, hackathons, and best practice exchanges that benefit all participants.
+- **Joint knowledge sharing and learning initiatives**: Create opportunities to share knowledge and learning across communities. Examples include joint webinars, hackathons, and best practice exchanges that benefit all participants.

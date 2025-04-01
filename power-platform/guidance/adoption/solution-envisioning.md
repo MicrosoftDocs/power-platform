@@ -8,7 +8,7 @@ ms.topic: concept-article
 ms.date: 04/01/2025
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: sericks
+ms.reviewer: pankajsharma2087
 search.audienceType:
   - admin
 ms.custom:
@@ -28,11 +28,11 @@ Solution envisioning workshops are an effective way to uncover high-value use ca
 
 ## Organizing solution envisioning workshops
 
-1. **Define objectives and scope**: Clearly define the goals of the workshop. Are you looking to improve a specific process, explore opportunities to use newer technologies, or enhance customer experience? Determine the scope of the workshop. This includes the areas of the business to be addressed and the expected outcomes.
-1. **Identify and invite stakeholders**: Identify key stakeholders based on the workshop's objectives. This includes business leaders, IT professionals, and end-users. Ensuring a diverse group provides a comprehensive view of the organization's needs. Depending on the scope, you can target a specific department or the entire organization to gather a wide range of insights and perspectives.
+1. **Define objectives and scope**: Clearly define the goals of the workshop. Are you looking to improve a specific process, explore opportunities to use newer technologies, or enhance customer experience? Determine the scope of the workshop including the areas of the business to be addressed and the expected outcomes.
+1. **Identify and invite stakeholders**: Identify key stakeholders based on the workshop's objectives. This group includes business leaders, IT professionals, and end-users. Such a diverse group will provide a comprehensive view of the organization's needs. Depending on the scope, you can target a specific department or the entire organization to gather a wide range of insights and perspectives.
 1. **Invitation and communication**: Send out invitations well in advance, clearly stating the purpose, agenda, and expected outcomes of the workshop.
 1. **Prepare workshop materials**: Provide participants with relevant background information, for example existing high-value Power Platform solutions in your organization. Prepare templates for brainstorming, prioritization, and documentation. Tools like whiteboards, sticky notes, and [Microsoft Whiteboard](/microsoft-365/whiteboard/) can facilitate the process.
-1. **Select a facilitator**: Designate someone to lead and manage the workshop. This person is responsible for explaining the rules, setting time limits, guiding participants through each stage, and facilitating discussions.
+1. **Select a facilitator**: Designate someone to lead and manage the workshop. This person will be responsible for explaining the rules, setting time limits, guiding participants through each stage, and facilitating discussions.
 
 ## Identify high-value use cases
 
@@ -40,8 +40,8 @@ First, identify use cases by asking workshop participants to prepare an elevator
 
 Prepare a template that prompts workshop participants to:
 
-1. **Name their idea**: Start by giving your idea a memorable name. This helps capture attention and make your pitch more engaging.
-1. **Identify an important process**: Think about an important process within your organization. Explain what this process is and why it's important. This sets the context for your idea and highlights the significance of the problem you aim to solve.
+1. **Name their idea**: Start by naming your idea. A memorable name captures attention and makes your pitch engaging.
+1. **Identify an important process**: Think about an important process in your organization. Explain the process and why it's important. This exercise sets the context for your idea and emphasizes the significance of the problem you're solving.
 1. **Highlight the challenges**: Consider the challenges associated with this process. Are there steps where human errors frequently occur? Are there inconsistencies that impact efficiency? Clearly outline these difficulties to emphasize the need for an autonomous solution.
 1. **Envision the solution**: Imagine a Power Platform solution that could solve the challenging aspects of the process. Describe what the solution does and how it works. Does it use flows to automate error-prone processes? Does an app facilitate accessing data from anywhere? This section should provide a clear picture of the proposed solution.
 1. **Explain the benefits**: Highlight the benefits of implementing the solution. Consider factors such as time saved, cost reductions, and improved accuracy. Additionally, think about other areas within your organization that might benefit from similar automation.
@@ -73,7 +73,7 @@ Once workshop attendees have identified potential use cases, the next step is to
 
 Next, divide attendees into small groups. Each group evaluates the pitched ideas based on stakeholders, objectives, challenges, and outcomes.
 
-The goal of this activity is to
+The goal of this activity is to:
 
 - Align on the most critical stakeholders and objectives.
 - Identify and mitigate key challenges.
@@ -100,7 +100,7 @@ Groups assign an importance level to each item based on their discussion and doc
 
 The expected outcome of this activity is to gain a clear understanding of the most important stakeholders and objectives for the use case, to get awareness of key challenges and their potential impact, and to start defining concrete success metrics through well-defined outcomes, providing a clear path to measure the success of the proposed solutions.
 
-To help you get started, here’s a list of sample stakeholders, objectives, challenges, and outcomes. Refine this list based on your objectives, and make sure it's available to attendees - you could have it available as printouts on the day.
+To help you get started, here is a list of sample stakeholders, objectives, challenges, and outcomes. Refine this list based on your objectives, and make sure it's available to attendees, such as printouts on the day.
 
 | Objectives | Stakeholders | Challenges | Outcomes |
 | --- | --- | --- | --- |

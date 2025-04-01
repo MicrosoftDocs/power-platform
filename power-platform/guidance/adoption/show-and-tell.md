@@ -1,5 +1,5 @@
 ---
-title: Share success stories to drive Power Platform engagement
+title: Share success stories
 description: Inspire your organization with Power Platform success stories that drive engagement, innovation, and adoption. Learn how to share impactful stories effectively.
 #customer intent: As a Power Platform user, I want to learn how to share Power Platform success stories so that I can drive engagement and adoption in my organization.
 author: manuelap-msft
@@ -8,12 +8,12 @@ ms.topic: concept-article
 ms.date: 04/01/2025
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: sericks
+ms.reviewer: pankajsharma2087
 search.audienceType: 
   - admin
 ---
 
-# Share success stories to drive Power Platform engagement
+# Share success stories
 
 When your organization adopts Microsoft Power Platform, sharing success stories internally becomes a powerful tool to foster engagement, inspire innovation, and drive adoption. Success stories highlight the tangible benefits of the platform, showcase the achievements of your makers, and create a culture of recognition and continuous improvement.
 
@@ -39,7 +39,7 @@ There are several effective ways to share success stories within your organizati
 
 ### Organize show-and-tell sessions
 
-Organize town hall meetings or webinars where makers can present their projects and share their success stories. This provides a platform for live interaction and QandA sessions.
+Organize town hall meetings or webinars where makers can present their projects and share their success stories. This provides a platform for live interaction and Q&A sessions.
 
 If you want to create more excitement in your organization and inspire more people to join your Power Platform community, a solution showcase is a great way to do so. Teams meet to demo what they built, share problems they solved, and show the impact they created with the apps they made.
 
@@ -101,9 +101,9 @@ Here are some tips for writing and sharing success stories:
 
 Share your success stories in a regular Microsoft Power Platform newsletter, highlight them on your intranet, or record an interview with the maker to upload and share with your maker community.
 
-## Use the business value toolkit
+## Use the Business value toolkit
 
-The business value toolkit is a sample solution that provides a comprehensive framework to capture and communicate the value of Power Platform solutions effectively. By guiding app owners through a structured storytelling process, enhanced by AI to both refine the narrative and analyze its effect on organizational strategic objectives, the toolkit helps transform raw insights into compelling success stories.
+The Business value toolkit is a sample solution that provides a comprehensive framework to capture and communicate the value of Power Platform solutions effectively. By guiding app owners through a structured storytelling process, enhanced by AI to both refine the narrative and analyze its effect on organizational strategic objectives, the toolkit helps transform raw insights into compelling success stories.
 
 Learn more: [Capture and communicate value with the Business value toolkit](/power-platform/guidance/coe/business-value-toolkit)
 

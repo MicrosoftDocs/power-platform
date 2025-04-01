@@ -28,7 +28,7 @@ The following articles focus on providing:
 - User support internal to your organization
 - External support resources
 
-As you define your support process, it's important to review how makers and users learn about support options available inside the organization, how you'll support your makers, how your help desk acquires required skills, and how applications graduate through different support options.
+As you define your support process, it's important to review how makers and users learn about support options available inside the organization, how to support your makers, how your help desk will acquire required skills, and how applications graduate through different support options.
 
 The following articles help you get started with establishing a support strategy:
 

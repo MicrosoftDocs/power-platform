@@ -1,5 +1,5 @@
 ---
-title: Organize hackathons to drive innovation and collaboration
+title: Organize hackathons
 description: Discover strategies to organize a successful hackathon, from logistics to team readiness, and inspire digital transformation in your organization.
 #customer intent: As a Power Platform user, I want to organize a hackathon so that I can drive innovation and collaboration within my organization.
 author: manuelap-msft
@@ -16,7 +16,8 @@ ms.custom:
   - ai-gen-description
   - ai-seo-date:03/28/2025
 ---
-# Organize hackathons to drive innovation and collaboration
+
+# Organize hackathons
 
 A hackathon is a fun way to engage people within your organization around a digital culture of change. The key objective is to develop sample apps and cultivate ideas to drive digital transformation. Teams come together at the line of business or global scale from different roles and departments to compete and create apps that address an organizational need.
 
@@ -25,11 +26,11 @@ The greater the variety of skills and roles represented, the better. One or more
 A successful hackathon often includes team colors, prizes, food, music, laughter, and competition.
 
 > [!TIP]
-> In addition to this guidance, you find practical step-by-step guidance and templates for running a hackathon in the [Microsoft Power Platform Hackathon Workbook](https://aka.ms/powerplatformhackathonworkbook). You find this workbook and other resources on [the Microsoft Power Platform Adoption website](https://adoption.microsoft.com/powerplatform).
+> In addition to this guidance, you'll find practical step-by-step guidance and templates for running a hackathon in the [Microsoft Power Platform Hackathon Workbook](https://aka.ms/powerplatformhackathonworkbook). You can find this workbook and other resources on [the Microsoft Power Platform Adoption website](https://adoption.microsoft.com/powerplatform).
 
 ## Planning and logistics
 
-Preparation is key for a successful hackathon. Be sure to consider the following:
+Preparation is key for a successful hackathon. Consider the following:
 
 - Securing an executive sponsor is vital to the credibility of the hackathon.
 - Set the dates, and give attendees as much notice as possible.
@@ -57,7 +58,7 @@ Ask the following questions:
 - What are the pain points of the current process?
 - What data sources are required to solve your problem?
 
-Ask senior stakeholders to vote on the submitted ideas, and during the hackathon, have teams work only on the top-voted ideas. This strategy increases senior leadership buy-in and ensure that important solutions are addressed.
+Ask senior stakeholders to vote on the submitted ideas, and during the hackathon, have teams work only on the top-voted ideas. This strategy will increase senior leadership buy-in and ensure that important solutions are addressed.
 
 If attendees are looking to connect to third-party data sources for their solutions, make sure data is available to them. This might be as simple as preparing test data in an Excel file or populating a Dataverse entity with sample data for attendees to use.
 
