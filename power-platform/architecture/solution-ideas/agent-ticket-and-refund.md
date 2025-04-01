@@ -16,31 +16,38 @@ ms.contributors:
 search.audienceType:  
   - admin  
   - flowmaker  
----  
+--- 
+ 
 # Ticket management system with Microsoft Copilot Studio agents  
-
-> [!TIP]  
-> This article describes a solution idea. Your cloud architect can use this guidance to help visualize the major components for a typical implementation of this architecture. Use this article as a starting point to design a well-architected solution that aligns with your workload's specific requirements.  
 
 This article outlines the architecture and workflow of a ticket management system for a cinema company, focusing on improving customer and employee experiences through automation and integration with Microsoft tools.  
 
 - Microsoft Teams integration: Employees can interact with a Copilot Studio agent in Microsoft Teams for seamless chat support. They can initiate ticket refund processes without accessing legacy systems directly.  
 - Autonomous agent via Microsoft Outlook: Outlook provides access to autonomous agents that handle ticket refund requests based on email workflows, minimizing the need for legacy system navigation.  
-- Cloud and desktop processing: Power Automate cloud and desktop flows gather information, trigger RPA processes, and run legacy applications securely on Azure Virtual Machines, optimizing costs and ensuring data security.  
+- Cloud and desktop processing: Power Automate cloud and desktop flows gather information, trigger robotic process automation (RPA) processes, and run legacy applications securely on Azure Virtual Machines, optimizing costs and ensuring data security.  
 - Governance and compliance: Azure Key Vault secures credentials and sensitive data, ensuring a reliable and secure automation environment.  
 
 > [!NOTE]  
-> This solution idea is inspired by Cineplex, who streamline business processes by using Power Platform to develop innovative automation solutions for finance, guest services, and other departments. Learn more: [Cineplex customer story](https://www.microsoft.com/customers/story/1751257654493783966-cineplex-telecommunications-power-automate-en-canada).  
+> This solution idea is inspired by Cineplex, one of Canada's largest movie theater chains, which streamlined business processes by using Power Platform to develop innovative automation solutions for finance, guest services, and other departments. Learn more in[Cineplex automates business processes with generative AI and Power Automate](../../guidance/case-studies/automate-business-processes.md).  
 
-
+> [!TIP]  
+> This article describes a solution idea. Your cloud architect can use this guidance to help visualize the major components for a typical implementation of this architecture. Use this article as a starting point to design a well-architected solution that aligns with your workload's specific requirements.  
 
 ## Architecture diagram  
 
-:::image type="content" source="media/ticket-refund/ticket-refund-guestservice.png" alt-text="Screenshot of an architecture diagram displaying a Copilot Studio agent used by employees via Teams." border="true" lightbox="media/ticket-refund/ticket-refund-guestservice.png":::  
+<!-- question from manuela: I wasn't sure what the formatting was for annotating images so I added the description in italic below but please let me know if there's a different standard -->
 
-:::image type="content" source="media/ticket-refund/ticket-refund-autonomous.png" alt-text="Screenshot of an architecture diagram displaying an autonomous Copilot Studio agent used with Outlook." border="true" lightbox="media/ticket-refund/ticket-refund-autonomous.png":::  
+:::image type="content" source="media/ticket-refund/ticket-refund-guestservice.png" alt-text="Architecture diagram displaying a Copilot Studio agent used by employees via Teams." border="true" lightbox="media/ticket-refund/ticket-refund-guestservice.png":::  
 
-:::image type="content" source="media/ticket-refund/ticket-refund-overall.png" alt-text="Screenshot of an overall architecture diagram displaying how both a user-based and autonomous Copilot Studio agents use the same Power Automate cloud and desktop flows, Azure services, M365, and Dataverse. This shows reusable assets across the platform for multiple agents." border="true" lightbox="media/agent-contact-center/contact-center-arch.png":::  
+*This architecture diagram displays a Copilot Studio agent used by employees via Teams.*
+
+:::image type="content" source="media/ticket-refund/ticket-refund-autonomous.png" alt-text="Architecture diagram displaying an autonomous Copilot Studio agent used with Outlook." border="true" lightbox="media/ticket-refund/ticket-refund-autonomous.png":::  
+
+*This architecture diagram displays an autonomous Copilot Studio agent used with Outlook.*
+
+:::image type="content" source="media/ticket-refund/ticket-refund-overall.png" alt-text="Architecture diagram displaying how both a user-based and autonomous Copilot Studio agents use the same Power Automate cloud and desktop flows, Azure services, M365, and Dataverse. This shows reusable assets across the platform for multiple agents." border="true" lightbox="media/agent-contact-center/contact-center-arch.png":::  
+
+*This overall architecture diagram displays how both a user based and autonomous Copilot Studio agent use the same Power Automate cloud and desktop flows, Azure services, Microsoft 365 and Dataverse infrastructure. This architecture shows that you can have reuseable assets across the platform for multiple agents.*
 
 ## Workflow  
 
@@ -54,7 +61,7 @@ This article outlines the architecture and workflow of a ticket management syste
 
 ### Cloud processing  
 
-- **[Power Automate cloud flows](/power-automate/overview-cloud)**: Using Power Automate cloud flows, the agents gather and check information from Dataverse, and can trigger Power Automate Desktop RPA flows (desktop processing).  
+- **[Power Automate cloud flows](/power-automate/overview-cloud)**: Using Power Automate cloud flows, the agents gather and check information from Dataverse and can trigger Power Automate Desktop RPA flows (desktop processing).  
 
 ### Desktop processing  
 
@@ -62,11 +69,11 @@ This article outlines the architecture and workflow of a ticket management syste
 
 ### Virtual machines  
 
-- **[Azure virtual machines](/azure/virtual-machines/overview)**: Microsoft Azure provides Windows-based virtual machines (VMs) to run legacy systems, enabling automation with Power Automate desktop flows. These VMs spin up and down as needed, optimizing costs by running only when required while ensuring secure and scalable access to the business-critical applications.  
+- **[Azure virtual machines](/azure/virtual-machines/overview)**: Microsoft Azure provides Windows-based virtual machines (VMs) to run legacy systems, enabling automation with Power Automate desktop flows. These VMs can be spun up and down as needed, optimizing costs by running only when required while ensuring secure and scalable access to the business-critical applications.  
 
 ### Data sources  
 
-- **[Microsoft Dataverse](/power-apps/maker/data-platform/data-platform-intro)**: Microsoft Dataverse is used as the central repository for ticket, seat, refunds, and metric data, including user feedback information. This is a foundational part of the Power Platform and seamlessly integrates with the technology.  
+- **[Microsoft Dataverse](/power-apps/maker/data-platform/data-platform-intro)**: Microsoft Dataverse serves as the central repository for ticket, seat, refund, and metric data, including user feedback. It's a foundational part of the Power Platform and integrates seamlessly with the technology.  
 
 ### Platform governance, compliance, and fundamentals  
 
@@ -77,34 +84,36 @@ This article outlines the architecture and workflow of a ticket management syste
 
 ### Reporting  
 
-- **[Power BI Dashboards](/power-bi/fundamentals/power-bi-overview)**: Visualizes operational and customer-centric data to provide actionable insights. Power BI is used because of its seamless integration with Dataverse while also being able to bring other data storage information into the reports.  
+- **[Power BI Dashboards](/power-bi/fundamentals/power-bi-overview)**: Visualizes operational and customer-centric data to provide actionable insights. Power BI integrates seamlessly with Dataverse and lets you include data from other data storage sources in reports.
 
 ## Use case details  
 
 This use case illustrates how a cinema company enhances customer and employee experiences by streamlining ticket management. Employees can process ticket issues, such as refunds, directly in Microsoft Teams or automatically through an autonomous agent, minimizing the need to interact with or replace legacy applications.  
 
 > [!NOTE]  
-> This solution idea is inspired by Cineplex, who streamline business processes by using Power Platform to develop innovative automation solutions for finance, guest services, and other departments. Learn more: [Cineplex customer story](https://www.microsoft.com/customers/story/1751257654493783966-cineplex-telecommunications-power-automate-en-canada).  
+> This solution idea is inspired by Cineplex, one of Canada's largest movie theater chains, which streamlined business processes by using Power Platform to develop innovative automation solutions for finance, guest services, and other departments. Learn more in[Cineplex automates business processes with generative AI and Power Automate](../../guidance/case-studies/automate-business-processes.md).  
+
+<!-- Important to repeat above this section, we're already said it? Certainly the note doesn't seem worth repeating. -->
 
 ### Business problem  
 
 - Manual processes, such as ticket refunds, consumed excessive time, leading to inefficiencies and increased susceptibility to human errors.  
 - Departments, including guest services, experienced delays, and reduced productivity due to fragmented workflows and lack of integration with legacy systems.  
-- Scaling solutions to meet growing business needs is challenging, hindering the ability to expand and adapt swiftly.  
+- Scaling solutions to meet growing business needs proved challenging, hindering the ability to expand and adapt swiftly.  
 
 ## Considerations  
 
-These considerations implement the pillars of Power Platform well-architected, a set of guiding tenets that can improve the quality of a workload. Learn more in [Microsoft Power Platform Well-Architected](https://aka.ms/powa).  
+These considerations implement the pillars of Power Platform Well-Architected, a set of guiding tenets that can improve the quality of a workload. Learn more in [Microsoft Power Platform Well-Architected](https://aka.ms/powa).  
 
 ### Reliability  
 
-To maintain efficiency and performance, Azure virtual machines can be scaled dynamically, ensuring that legacy systems are available when needed while minimizing costs. Autonomous agents powered by Copilot Studio handle workflows reliably, reducing manual effort, and errors. Power BI tracks agent interactions and system performance, providing insights into automation effectiveness and identifying areas for improvement.  
+To maintain efficiency and performance, Azure virtual machines can be scaled dynamically, ensuring that legacy systems are available when needed while minimizing costs. Autonomous agents powered by Copilot Studio handle workflows reliably, reducing manual effort and errors. Power BI tracks agent interactions and system performance, providing insights into automation effectiveness and identifying areas for improvement.  
 
 ### Security  
 
 - Implementing row-level security in Dataverse ensures that only authorized users can access specific information.  
 - Azure Key Vault stores and manages credentials, API keys, and other secrets, preventing exposure in automation workflows.  
-- Data Loss Prevention (DLP) policies are defined by administrators in the Power Platform admin center to govern agent capabilities, including authentication, knowledge sources, and connector usage.  
+- Data loss prevention (DLP) policies are defined by administrators in the Power Platform admin center to govern agent capabilities, including authentication, knowledge sources, and connector usage.  
 - User authentication for agents can be configured to require user sign-in via Microsoft Entra ID or other OAuth2 identity providers, ensuring that only authenticated users can interact with them.  
 - Admins have full visibility into maker activities through audit logs in Microsoft Purview and can monitor agent activities via Microsoft Sentinel, enhancing oversight and compliance.  
 
@@ -130,7 +139,7 @@ Learn more:
 
 ### Responsible AI  
 
-AI systems should be fair, reliable, and secure, ensuring they treat all users equitably while maintaining consistent performance. Privacy and security are critical, with safeguards in place to protect sensitive information and prevent unauthorized access. Transparency matters, so users understand how AI-driven decisions are made, and automation includes human oversight where necessary. This is key, especially when working with autonomous agents. Accountability is essential, with clear ownership of AI operations to ensure ethical standards are met and continuously improved.  
+AI systems should be fair, reliable, and secure, ensuring they treat all users equitably while maintaining consistent performance. Privacy and security are critical, with safeguards in place to protect sensitive information and prevent unauthorized access. Transparency matters, so users should understand how AI-driven decisions are made, and automation should include human oversight where necessary. This is key, especially when working with autonomous agents. Accountability is essential, with clear ownership of AI operations to ensure ethical standards are met and continuously improved.  
 
 Learn more: [Responsible AI considerations for intelligent application workloads](/power-platform/well-architected/intelligent-application/responsible-ai)  
 

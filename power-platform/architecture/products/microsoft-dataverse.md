@@ -1,13 +1,17 @@
 ---
 title: Microsoft Dataverse reference architectures and solution ideas
-description: Explore Microsoft Dataverse's key concepts, reference architectures, and solution ideas to build scalable, secure, and efficient business solutions.
+description: Learn how Microsoft Dataverse empowers organizations to work with any type of data and app to drive insights and business actions.
 #customer intent: As a Power-Platform user, I want to understand Dataverse's key concepts so that I can build robust and maintainable solutions.
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: architecture-center
-ms.topic: conceptual
-ms.date: 03/28/2025
+ms.topic: concept-article
+ms.date: 04/01/2025
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-description
+  - ai-seo-date:04/01/2025
 ---
 
 # Microsoft Dataverse reference architectures and solution ideas
@@ -45,7 +49,7 @@ In this article, we look at:
 
 | Title | Description |
 | --- | --- |
-| **[Healthcare patient support agent architecture](../solution-ideas/agent-healthcare-patient-support.md)** | Streamline patient interactions and reduce administrative burdens for healthcare providers. |
+| **[Healthcare Patient Support Agent](../solution-ideas/agent-healthcare-patient-support.md)** | Streamline patient interactions and reduce administrative burdens for healthcare providers. |
 | **[Property rental portal with AI-driven search and payment processing](../solution-ideas/agent-rental-portal.md)** | Build a comprehensive rental portal that uses AI-driven search capabilities and seamless payment processing. |
 | **[Enterprise Visual Vehicle Inspection Engine](../solution-ideas/app-evvie.md)** | Inspect vehicles and assess damage using generative AI and Power Platform. |
 | **[Custom contact center solution with Copilot Studio agent](../solution-ideas/agent-custom-contact-center.md)** | Enhance customer service efficiency through integrated platforms and technologies. |
