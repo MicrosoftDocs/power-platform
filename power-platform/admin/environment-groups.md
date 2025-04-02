@@ -51,7 +51,7 @@ Environment groups are very flexible. Whether you need to enforce compliance by 
 
 ### Personal productivity environments
 
-When using default environment routing, each maker can automatically get their own personal developer environment. It's best practice to place these environments into a dedicated group as they are created. For example, you may want a group named _Personal Productivity_. Within this group, apply rules that treat each environment as a safe, individual sandbox. For instance, restrict agent sharing to prevent accidental exposure of in-progress work, and include productivity aids like the [maker welcome content](welcome-content,md). This approach isolates each user's work, similar to each person having their own OneDrive, and helps keep the default environment clean and secure.
+When using default environment routing, each maker can automatically get their own personal developer environment. It's best practice to place these environments into a dedicated group as they are created. For example, you may want a group named _Personal Productivity_. Within this group, apply rules that treat each environment as a safe, individual sandbox. For instance, restrict agent sharing to prevent accidental exposure of in-progress work, and include productivity aids like the [maker welcome content](welcome-content.md). This approach isolates each user's work, similar to each person having their own OneDrive, and helps keep the default environment clean and secure.
 
 ### AI feature management
 
