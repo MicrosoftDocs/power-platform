@@ -42,7 +42,7 @@ productDirectory:
       - text: ExpressRoute and Power Platform
         url: key-concepts/expressroute/overview.md
       - text: More...
-        url: key-concepts/fundamentals-overview.md
+        url: key-concepts/key-concepts-overview.md
     # Card
     - title: Reference architectures
       imageSrc: /office/media/icons/blocks.png
@@ -143,7 +143,7 @@ additionalContent:
       summary: Build a strong Power Platform adoption strategy and consistent approach to workload design.
       items:
       - title: Power Platform adoption guidance
-        url: power-platform/guidance/
+        url: /power-platform/guidance/
       - title: Power Platform Well-Architected
         url: /power-platform/well-architected/
       - title: Power Platform Well-Architected assessment
