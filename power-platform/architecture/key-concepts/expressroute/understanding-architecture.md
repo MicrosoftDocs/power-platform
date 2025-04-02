@@ -23,7 +23,7 @@ This article provides an overview of Power Platform's architecture, its interact
 
 ## Regions and environments
 
-Power Platform runs on Microsoft Azure infrastructure and is deployed across regions worldwide. Each deployment is called an [environment](../../admin/environments-overview.md) and is associated with a specific region.  
+Power Platform runs on Microsoft Azure infrastructure and is deployed across regions worldwide. Each deployment is called an [environment](../../../admin/environments-overview.md)and is associated with a specific region.  
 
 :::image type="complex" source="media/region-and-data-centers.png" alt-text="Diagram illustrating each Microsoft Power Platform region with its corresponding datacenters.":::
    Each Microsoft Power Platform region has a pair of datacenters. The diagram shows four different regions: Oceania, Great Britain, North America, and Europe. Each of these regions has a pair. For example, the North America region has West US and East US datacenters in this example. Scale groups exist within each datacenter. There are several scale groups including canary group, sandbox group, and production scale groups.
@@ -76,7 +76,7 @@ An on-premises data gateway is used when connecting to on-premises systems from 
 Power Platform uses Azure Content Delivery Network (CDN) to optimize performance and user experiences when using static content like images and icons. Static content served by the Content Delivery Network can't be routed via ExpressRoute, so it will be routed directly across the public internet. This content uses common platform capabilities that don't contain customer data, so it doesn't need protection over private networks like ExpressRoute.  
 
 > [!NOTE]  
-> For canvas apps specifically, CDN can be turned off by system administrators using the setting **Load default static content from Content Delivery Network** in the case of firewall restrictions and IP approved list related issues. This setting does not apply to model-driven apps, as they do not use CDN currently. Learn more in [Manage behavior settings](../../admin/settings-behavior.md).
+> For canvas apps specifically, CDN can be turned off by system administrators using the setting **Load default static content from Content Delivery Network** in the case of firewall restrictions and IP approved list related issues. This setting does not apply to model-driven apps, as they do not use CDN currently. Learn more in [Manage behavior settings](../../../admin/settings-behavior.md).
 
 ## Azure Relay
 

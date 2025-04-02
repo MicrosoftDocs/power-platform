@@ -2,7 +2,7 @@
 title: Welcome to the Microsoft Power Platform and Copilot Studio Architecture Center
 description: Discover the Microsoft Power Platform and Copilot Studio Architecture Center—your guide to building scalable, secure, and efficient business solutions.
 #customer intent: As a business user, I want to explore reference architectures and solution ideas in the architecture center so that I can implement effective solutions for my organization.  
-author: mapichle
+author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: architecture-center
