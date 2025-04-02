@@ -66,13 +66,13 @@ These considerations implement the pillars of Power Platform Well-Architected, a
 
 **Create intentional segmentation and perimeters**: Ensure the application uses separate Power Platform environments to support your application lifecycle stages. Make sure only the right users can access each stage to align with segmentation policies. It's also important to register separate Microsoft Entra ID apps for each environment to protect data and avoid mixing across environments.  
 
-### Operational excellence
+### Operational Excellence
 
 - **Adopt safe deployment practices**: Standardize deployment of any changes to the Power Apps application by using automated deployment processes, such as pipelines. Promote the application to production only after testing changes.
 
 - **Implement a deployment failure mitigation strategy**: With the dependency between the application and the REST API, you should ensure you have a tested strategy to mitigate a rollout of either that develops errors after one of the components is updated.
 
-### Performance efficiency
+### Performance Efficiency
 
 - **Design to meet performance requirements**: Evaluate your solution's performance and data volume requirements. Include how data is accessed and whether Power Apps using different data sources directly is too chatty with the data sources. This approach can slow performance because of the latency of individual requests sent to each data store. For example, if your application processes logic across many rows in the data source, consider whether you can shift all network traffic to a backend Azure Function. This approach reduces interactions to a single REST API call, which manages interactions with multiple data sources more effectively.
 
@@ -80,7 +80,7 @@ These considerations implement the pillars of Power Platform Well-Architected, a
 
 - **Test performance**: Along with testing for functionality and failures, it's important to test and develop a baseline for performance and evaluate it as part of your release cycle if the API is sensitive to changes in work completion times.
 
-### Experience optimization
+### Experience Optimization
 
 - **Design for efficiency**: Applications that let users access multiple data sources from a single Power Apps applications without interacting with multiple individual apps improve user efficiency and provide a better custom visual experience.
 
