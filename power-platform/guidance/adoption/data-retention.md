@@ -1,3 +1,4 @@
+---
 title: Ensure data retention and mobility
 description: Protect your data with Power Platform's flexible backup and retention capabilities. Learn how to ensure resilience and recoverability for your business-critical data.
 #customer intent: As a Power Platform user, I want to understand how to enhance data resilience so that I can protect and recover business-critical data effectively.
@@ -8,6 +9,7 @@ ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
 ms.date: 04/01/2025
+---
 
 # Ensure data retention and mobility
 

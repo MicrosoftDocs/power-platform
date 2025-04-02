@@ -53,7 +53,7 @@ Navigating resistance to change can be challenging, but effective communication 
 | People aren't passionate, not warming up to the idea, or don’t see the value​ |Reward and recognize for their hard work. Present plenty of opportunities and varied opportunities, lots of selections and ways to get involved. Showcase the value and art of the possible on specific use cases.​|
 | Power Platform perceived as only for developers​ | Show how anyone can quickly and easily create an app or a flow.  |
 | People are worried there isn't enough support ​| Include details on how the support services operate and provide supporting content​ |
-| People are worried there isn't sufficient training for new ways of working​ | Share details about [training activities](training-strategy.md) and link to supporting content. Work with a partner to offer hands-on training workshops internally. Attend a [virtual "in a day" training](/power-platform/instructor-led-training).​ |
+| People are worried there isn't sufficient training for new ways of working​ | Share details about [training activities](training-strategy.md) and link to supporting content. Work with a partner to offer hands-on training workshops internally. Attend a [virtual "in a day" training](https://www.microsoft.com/power-platform/instructor-led-training).​ |
 | People don’t like change. They don’t want to change. Period.​ | Ensure the business sponsorship through to managers is there and promote the benefits of working in the new way. Provide information about how people can get help (champion support, training) if needed. ​|
 
 ## Avoid IT fiefdoms and IT silos
