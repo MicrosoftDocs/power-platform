@@ -8,7 +8,7 @@ author: mikferland-msft
 ms.author: miferlan
 ms.reviewer: sericks
 ms.subservice: admin
-ms.custom: "admin-security"
+ms.custom: NewPPAC
 search.audienceType: 
   - admin
 contributors:
