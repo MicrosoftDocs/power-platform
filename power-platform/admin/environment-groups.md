@@ -34,9 +34,9 @@ Think of an environment group as a "folder" for your environments. Administrator
 
 A key advantage of environment groups is their ability to enforce governance at scale through _rules_. Environment groups allow tenant administrators to define rules that automatically apply standardized settings or policies across all member environments. These rules span critical areas of environment management, such as security and sharing, AI feature enablement, data retention policies, and application lifecycle management (ALM).
 
-When a rule is published at the environment group level, it is uniformly enforced across every environment within that group. This means the corresponding setting or policy becomes locked (read-only) within individual environments, ensuring that local system administrators can't modify or override these centrally defined rules. Any subsequent changes can only be made by a tenant administrator with appropriate edit rights at the environment group level.
+When a rule is published at the environment group level, it's uniformly enforced across every environment within that group. This means the corresponding setting or policy becomes locked (read-only) within individual environments, ensuring that local system administrators can't modify or override these centrally defined rules. Any subsequent changes can only be made by a tenant administrator with appropriate edit rights at the environment group level.
 
-Leaern more about the rules available in [Rules for environment groups](environment-groups-rules.md).
+Learn more about the rules available in [Rules for environment groups](environment-groups-rules.md).
 
 > [!NOTE]
 > - Per-environment exceptions aren't currently supported.
@@ -51,11 +51,11 @@ Environment groups are very flexible. Whether you need to enforce compliance by 
 
 ### Personal productivity environments
 
-When using default environment routing, each maker can automatically get their own personal developer environment. It's best practice to place these environments into a dedicated group as they are created. For example, you may want a group named _Personal Productivity_. Within this group, apply rules that treat each environment as a safe, individual sandbox. For instance, restrict agent sharing to prevent accidental exposure of in-progress work, and include productivity aids like the [maker welcome content](welcome-content.md). This approach isolates each user's work, similar to each person having their own OneDrive, and helps keep the default environment clean and secure.
+When using default environment routing, each maker can automatically get their own personal developer environment. It's best practice to place these environments into a dedicated group as they're created. For example, you may want a group named _Personal Productivity_. Within this group, apply rules that treat each environment as a safe, individual sandbox. For instance, restrict agent sharing to prevent accidental exposure of in-progress work, and include productivity aids like the [maker welcome content](welcome-content.md). This approach isolates each user's work, similar to each person having their own OneDrive, and helps keep the default environment clean and secure.
 
 ### AI feature management
 
-Organizations exploring AI capabilities can use environment groups to roll out features in a controlled and intentional way. For example, an enterprise might create a _Copilot Pilot_ group with sandbox environments where AI features are turned on for early testing and feedback. At the same time, production or sensitive environments can remain in a separate group with a more gradual rollout timeline. This setup supports safe, phased adoption while giving teams space to experiment and build readiness. As confidence grows, admins can update the rules to expand Copilot access to additional groups or move environments between them. This ensures a clear and manageable path toward broader AI use.
+Organizations exploring AI capabilities can use environment groups to roll out features in a controlled and intentional way. For example, an enterprise might create a _Copilot Pilot_ group with sandbox environments where AI features are turned on for early testing and feedback. At the same time, production or sensitive environments can remain in a separate group with a more gradual rollout timeline. This setup supports safe, phased adoption while giving teams space to experiment and build readiness. As confidence grows, admins can update the rules to expand Copilot access to more groups or move environments between them. This ensures a clear and manageable path toward broader AI use.
 
 ### Global environment strategy
 
@@ -90,19 +90,20 @@ After you create the environment group, Power Platform tenant administrators can
 1. Sign in to [Power Platform Admin center](https://admin.powerplatform.microsoft.com/) as a [Power Platform tenant administrator](use-service-admin-role-manage-tenant.md).
 1. Select **Manage** in the navigation pane.
 1. Select **Environment groups** in the navigation pane.
-1. On the **Environment groups** page, select the group you created (e.g. click on **Personal Productivity** to open it).
-1. Select the **Rules** tab for that group. You will see a list of available rules.
+1. On the **Environment groups** page, select the group you created.
+1. Select the **Rules** tab for that group. You see a list of available rules.
 1. Select a rule to open its configuration panel. Adjust it as needed, then **Save** the rule.
-1. Repeat this for all the rules you want to configure in this group.
+    Repeat this step for all the rules you want to configure in this group.
 1. Select **Publish rules** button in the command bar.
 
-The screenshot below shows an environment-level setting that is locked by an environment group rule.
+The following screenshot shows an environment-level setting that is locked by an environment group rule.
+
 :::image type="content" source="media/change-at-environment-group.png" alt-text="Admins must modify the corresponding rule in the _environment group_ that includes the environment..":::
 
 > [!NOTE]
 > - Configure only the rules relevant to your scenario.
 > - Untouched rules are managed at the environment level.
-> - Updated rules appear in bold with an asterisk (*) until published. Remember to re-publish rules to apply changes across environments.
+> - Updated rules appear in bold with an asterisk (*) until published. Remember to republish rules to apply changes across environments.
 
 ## Route environments to your environment group
 
@@ -114,14 +115,14 @@ One powerful way to use environment groups is in combination with default enviro
 1. Under the **Environment group** section, choose the group you want your new **Developer** environments to be created in.
 1. Select **Save**.
 
-Going forward, whenever a new maker triggers the creation of a personal developer environment (for instance, the first time a user visits Copilot Studio with routing enabled), the platform will automatically create their environment inside the specified group. This means the environment comes preconfigured as a Managed Environment with all the group’s rules already applied from the start. The maker does not need to choose an environment or set anything up; they are routed directly into a governed space that IT has predefined. Admins gain peace of mind knowing that even automatically created environments follow organizational policies, and makers get a ready-to-use environment without needing to worry about configuration.
+Going forward, whenever a new maker triggers the creation of a personal developer environment, the platform automatically creates their environment inside the specified group. The environment comes preconfigured as a Managed Environment with all the group’s rules already applied from the start. The maker doesn't need to choose an environment or set anything up, as they're routed directly into a governed space that IT has predefined. Admins gain peace of mind knowing that even automatically created environments follow organizational policies, and makers get a ready-to-use environment without needing to worry about configuration.
 
 > [!NOTE]
 > If an environment group is selected for routing but later you decide to change it, you can update the Environment routing settings to point new environments to a different group. Existing developer environments remain in whichever group they were originally placed, unless moved manually.
 
 ## Add environments to your environment group
 
-In addition to using routing for new environments, you can manually add existing environments to a group at any time, provided that they're Managed Environments.
+In addition to using routing for new environments, you can manually add existing environments to a group at any time.
 
 1. Select **Manage** in the navigation pane.
 1. Select **Environment groups** in the navigation pane.
@@ -132,7 +133,7 @@ In addition to using routing for new environments, you can manually add existing
 
 > [!NOTE]
 > - Environments without Dataverse can't be selected in the picker.
-> - If you select an environment that has Dataverse, but is not managed, you can upgrade it automatically as part of adding it to the group.
+> - If you select an environment that has Dataverse, but it's not managed, you can upgrade it automatically as part of adding it to the group.
 
 ## Manually create environments in the group
 
@@ -145,7 +146,7 @@ When manually creating a new environment, you can choose to place it into a grou
 1. Enter the other details.
 1. Select **Save**.
 
-By selecting a group here, the environment will be created as a Managed Environment within that group, automatically inheriting the group's rules upon creation. If no group is selected, the environment is created outside of any group. You can always add it to a group later as described above.
+By selecting a group here, the environment is created as a Managed Environment within that group, automatically inheriting the group's rules upon creation. If no group is selected, the environment is created outside of any group. You can always add it to a group later.
 
 ## Remove an environment from your environment group
 
