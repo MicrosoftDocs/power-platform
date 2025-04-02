@@ -2,7 +2,7 @@
 title: Back up and restore environments
 description: Learn how to back up and restore Power Platform environments.
 ms.topic: conceptual
-ms.date: 04/01/2025
+ms.date: 04/02/2025
 ms.subservice: admin
 author: matapg007
 ms.author: matgupta
@@ -24,7 +24,7 @@ It's important to protect your data on Microsoft Power Platform and in Dataverse
 
 System backups are automatically created for environments that have a database. System backups of production environments that have a database and Dynamics 365 applications are retained for up to 28 days. By default, backups of production environments without Dynamics 365 applications and other nonproduction environments are retained for seven days. However, for managed production environments without Dynamics 365 applications, the retention period can be extended up to 28 days using PowerShell. However, for managed production environments that don't have Dynamics 365 applications, you can extend the retention period beyond seven days.
 
-Manual backups are backups that the user initiates. It is recommended to create manual backups before performing major customizations, applying a version update, or making significant changes to the environment. You can create these backups for production and sandbox environments, but not for the default environment. Manual backups of production environments that have Dynamics 365 applications are kept for up to 28 days. Backups of environments that don't have Dynamics 365 applications are kept for seven days.
+Manual backups are backups that the user initiates. It's recommended to create manual backups before performing major customizations, applying a version update, or making significant changes to the environment. You can create these backups for production and sandbox environments, but not for the default environment. Manual backups of production environments that have Dynamics 365 applications are kept for up to 28 days. Backups of environments that don't have Dynamics 365 applications are kept for seven days.
 
 ## Supported retention period
 
@@ -146,7 +146,7 @@ For more information about how to restore to a production environment, go to [Ca
 
 ## Manual backups
 
-Although automated system backups are great, you should create your own backups before you do major customization or apply a version update. Manual backups might take up to 10 minutes to process before they are available for restoration. It is recommended to wait at least 10–15 minutes before attempting to restore from a manual backup. Therefore, wait at least 10 to 15 minutes before you try to restore your data from a manual backup.
+Although automated system backups are great, you should create your own backups before you do major customization or apply a version update. Manual backups might take up to 10 minutes to process before they're available for restoration. It's recommended to wait at least 10–15 minutes before attempting to restore from a manual backup. Therefore, wait at least 10 to 15 minutes before you try to restore your data from a manual backup.
 
 ### About manual backups
 
