@@ -71,7 +71,7 @@ Complete the following steps to create a new environment group in the Power Plat
 
 # [New admin center](#tab/new)
 
-1. Sign in to [Power Platform Admin center](https://admin.powerplatform.microsoft.com/) as a [Power Platform tenant administrator](use-service-admin-role-manage-tenant.md).
+1. Sign in to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com/) as a [Power Platform tenant administrator](use-service-admin-role-manage-tenant.md).
 1. Select **Manage** in the navigation pane.
 1. Select **Environment groups** in the navigation pane.
 1. On the **Environment groups** page, select **New group**.
@@ -82,8 +82,8 @@ Complete the following steps to create a new environment group in the Power Plat
 
 # [Classic admin center](#tab/classic)
 
-1. Sign in to [Power Platform Admin center](https://admin.powerplatform.microsoft.com/) as a [Power Platform tenant administrator](use-service-admin-role-manage-tenant.md).
-1. Select **Manage** in the navigation pane.
+1. Sign in to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com/) as a [Power Platform tenant administrator](use-service-admin-role-manage-tenant.md).
+1. Select **Environments** in the navigation pane.
 1. Select **Environment groups** in the navigation pane.
 1. On the **Environment groups** page, select **New group**.
 1. In the **Create group** pane that appears:
