@@ -61,7 +61,7 @@ productDirectory:
       links:
         - text: Healthcare Patient Support Agent
           url: solution-ideas/agent-healthcare-patient-support.md
-        - text: Property rental portal with AI Driven search and payment processing
+        - text: Property rental portal with AI-driven search and payment processing
           url: solution-ideas/agent-rental-portal.md
         - text: Enterprise Visual Vehicle Inspection Engine
           url: solution-ideas/app-evvie.md
