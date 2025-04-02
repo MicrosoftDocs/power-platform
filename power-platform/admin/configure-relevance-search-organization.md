@@ -4,7 +4,7 @@ description: Configure Dataverse search for your environment to improve search r
 author: marianaraujo 
 ms.component: pa-admin
 ms.topic: get-started
-ms.date: 04/01/2025
+ms.date: 04/02/2025
 ms.subservice: admin
 ms.author: maaraujo
 ms.reviewer: EllenWehrle
@@ -18,11 +18,11 @@ contributors:
 
 [!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
-Dataverse search delivers fast and comprehensive search results across multiple tables in a single list, sorted by [relevance](/azure/search/index-similarity-and-scoring), to give you an easy and well-informed search experience in model-driven apps. Learn how you, as an administrator or customizer, can use Quick Find views to configure Dataverse search so you can manage global, quick find, and lookup search behavior for your organization in the [Power Platform admin center](/power-platform/admin/new-admin-center).
+Dataverse search delivers fast and comprehensive search results across multiple tables in a single list, sorted by [relevance](/azure/search/index-similarity-and-scoring), to give you an easy and well-informed search experience in model-driven apps. As an administrator with environment-level permissions, you can go to the [Power Platform admin center](/power-platform/admin/new-admin-center) to configure Dataverse search for all the model-driven apps within a specific environment using Quick Find views to manage global, quick find, and lookup search behavior.
 
-When you turn on Dataverse search, it applies to all the model-driven apps within the _environment_ and can't be turned off per app. It can only be turned off at the environment level, by an administrator with environment-setting permissions. You'll see a search box is available at the top of every page in all the model-driven apps in the environment that allows you to start a new search and quickly find the information you're looking for, from the searchable tables included in the app. Dataverse search also becomes the default, and only, global search experience in all model-driven apps in the environment. You can't switch to [quick find search](/powerapps/user/quick-find), formerly known as categorized search.  
+With Dataverse search enabled, a search box is always available at the top of every page in all the model-driven apps in the environment. The search box allows you to start a new search and quickly find the information you're looking for from the searchable tables included in the app. With Dataverse search enabled, it's the default, and only, global search experience in all model-driven apps in the environment—you can't disable Dataverse search per app and users can't switch to [quick find search](/powerapps/user/quick-find), formerly known as categorized search.  
 
-[Dataverse search can be extended to additional Microsoft Search canvases](/microsoftsearch/manage-dynamics365), including SharePoint Online, Bing, and Office. When an additional Microsoft Search canvas' connector is turned on, users can search for and find information from the selected canvas just as they would if searching in the app. For example, you could quickly look up a contact's phone number or email address without opening the app.
+[Dataverse search can be extended to additional Microsoft Search canvases](/microsoftsearch/manage-dynamics365), including SharePoint Online, Bing, and Office. With a connector enabled, you can search for and find information from the selected canvas just as if you are searching in the app. For example, you can quickly look up a contact's phone number or email address without opening the app.
 
 ## Learn about the benefits of Dataverse search
 
