@@ -17,6 +17,8 @@ The architecture center is a dedicated place that hosts essential resources for 
 
 The architecture center hosts:
 
+1. **Key concepts:** Learn about architecture key concepts that help you build robust, efficient, and maintainable solutions.
+
 1. **Reference Architectures**:
    - Explore foundational reference architectures that support building well-architected solutions with Power Platform and Copilot Studio.
    - Learn best practices for scalability, security, and performance to ensure your solutions are robust and reliable.
