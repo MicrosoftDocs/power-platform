@@ -47,6 +47,14 @@
         href: reference-architectures/secure-access-azure-resources.md
       - name: Integrate Power Platform with SAP
         href: reference-architectures/arch-pattern-sap.md
+      - name: ​​Integrate Microsoft Fabric Lakehouse data using Microsoft Dataverse virtual tables
+        href: reference-architectures/app-integrate-lakehouse.md
+      - name: Use REST APIs to extend the functionality of canvas apps
+        href: reference-architectures/custom-connector-canvas.md
+      - name: ​Use the Dataverse connector with canvas apps​ 
+        href: reference-architectures/custom-connector-canvas.md
+      - name: ​Scale RPA Operations using Hosted RPA in Microsoft Power Automate for desktop​ 
+        href: reference-architectures/rpa-scale-operations.md
     - name: Solution ideas
       items:
         - name: Overview
@@ -71,6 +79,8 @@
           href: products/copilot-studio.md
         - name: Power Pages
           href: products/power-pages.md
+        - name: Microsoft Dataverse
+          href: products/microsoft-dataverse.md
     - name: Power Platform icons
       href: /power-platform/guidance/icons?toc=/power-platform/architecture/toc.json&bc=/power-platform/architecture/breadcrumb/toc.json
     - name: Power Platform Well-Architected

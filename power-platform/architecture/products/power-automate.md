@@ -40,6 +40,7 @@ In this article, we look at:
 | **[Integrating Microsoft Power Platform with SAP](../reference-architectures/arch-pattern-sap.md)** | Learn about the architecture, workflows, and connectivity methods available to integrate Power Platform with SAP to ensure a smooth integration process. |
 | **[Dataverse background operations](../reference-architectures/dataverse-background-operations.md)** | Use custom APIs to define custom messages and implement business logic through plug-ins, allowing for background processing that eliminates the need for a persistent connection during execution. |
 | **[Integrating Microsoft Power Platform with SAP](../reference-architectures/arch-pattern-sap.md)** | Connect Microsoft Power Platform with SAP to enhance data management and automation capabilities within your organization. |
+| **[​Scale RPA (Robotic Process Automation) Operations using Hosted RPA in Microsoft Power Automate for desktop​](rpa-scale-operations.md)** | Learn how to use the Hosted RPA feature to decrease the time and effort required for procuring, provisioning, operationalizing, and maintaining infrastructure to support RPA automations. |
 
 ## Solution ideas
 
@@ -48,6 +49,7 @@ In this article, we look at:
 | **[Healthcare patient support agent architecture](../solution-ideas/agent-healthcare-patient-support.md)** | Streamline patient interactions and reduce administrative burdens for healthcare providers |
 | **[Property rental portal with AI-driven search and payment processing](../solution-ideas/agent-rental-portal.md)** | Build a comprehensive rental portal that uses AI-driven search capabilities and seamless payment processing. |
 | **[Travel concierge using generative AI with Copilot Studio](../solution-ideas/agent-travel-customer.md)** | Employ an AI-driven solution to enhance customer interactions and streamline information access. |
+| **[Ticket management with Copilot Studio](../solution-ideas/agent-ticket-and-refund.md)** | Improve ticket refund and management processes by deploying both a user-based and autonomous agent to integrate with legacy systems. |
 
 ## Resources
 

@@ -24,6 +24,7 @@ search.audienceType:
 > [!TIP]
 > This article describes a solution idea. Your cloud architect can use this guidance to help visualize the major components for a typical implementation of this architecture. Use this article as a starting point to design a well-architected solution that aligns with your workload's specific requirements.
 
+
 This article outlines the architecture and services of a national banking company aiming to enhance customer service efficiency through integrated platforms and technologies.
 
 - **Contact center as a service (CCaaS)**: The system includes a contact center with various agent types, enabling seamless transitions to company employees and integrating with Azure and other databases.
@@ -59,7 +60,7 @@ Knowledge refers to the information and data sources that agents use to provide 
 
 ### Generative AI services 
 
-- **[Azure AI Foundry](/azure/ai-foundry/)**: <!-- TBD, this was missed by the writer and I'm just following up on details -->
+- **[Azure AI Studio](/azure/ai-foundry/)**: Azure AI Studio lets you build, modify, and launch generative AI apps using Azure’s models and tools such as using other LLM’s.
 - **[Azure AI Search](/azure/search/search-what-is-azure-search)**: Azure AI Search is used for vectorized indexes for knowledge sources held outside of the knowledge section of Microsoft Copilot Studio. 
 
 ### Data sources 

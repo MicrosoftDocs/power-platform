@@ -50,6 +50,7 @@ This article outlines a solution idea for a travel company's customer service, e
 
 Knowledge refers to the information and data sources that agents use to provide relevant and accurate responses.
 
+- **Rescheduling documents**: Documents that contain information about each how to go about rescheduling vacations. 
 - **Travel documents**: Documents that contain information about recommendations for destinations, identification customers might need, visa’s etc. 
 - **Insurance policy documents**: Documents that contain information about insurance policies. 
 - **Customer service website**: Links to the customer service information on the website.
