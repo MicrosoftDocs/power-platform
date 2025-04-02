@@ -78,7 +78,7 @@ For EVVIEs proof of concept build, the Azure Function-based web API that interfa
 
 In a production deployment, it's essential for the systems integrator to implement a standard authentication layer, such as key-based authentication through Azure API Management. This security measure ensures that the back-end API service is only accessed as intended by the EVVIE front-end Power App.
 
-### Operational excellence
+### Operational Excellence
 
 As a proof of concept, EVVIE is built from scratch with fictitious requirements to showcase the technology's capability in assessing vehicle damage. Every aspect—from the inspection process to the criteria EVVIE evaluates (area of damage, severity level, description), and the specific areas of the vehicle where damage can be pinpointed—can and should be customized to meet the unique needs of any organization deploying EVVIE.
 
@@ -90,7 +90,7 @@ For instance, a systems integrator can:
 
 These modifications ensure that EVVIE operates optimally and aligns with the organization's specific needs.
 
-### Performance efficiency
+### Performance Efficiency
 
 Two potential bottlenecks can significantly impact EVVIE's scalability:
 
@@ -98,7 +98,7 @@ Two potential bottlenecks can significantly impact EVVIE's scalability:
 
 - **Azure OpenAI service:** The Azure OpenAI model, called by the Azure Function, is essential for assessing and logging damage. It's critical to ensure that the Azure OpenAI deployment, which the back-end API relies on, is always operational. Since Azure OpenAI uses a token-based system, it's important to guarantee that the model used in EVVIE has a high token quota for the given period of usage.
 
-### Experience optimization
+### Experience Optimization
 
 The team that developed EVVIE dedicated significant time and effort to optimizing the user interface and user experience, ensuring it's intuitive and easy to use for staff inspecting vehicles and those reviewing the inspections.
 

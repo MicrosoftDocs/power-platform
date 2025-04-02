@@ -90,11 +90,11 @@ The following image illustrates the use of multiple virtual networks to provide 
 
 **Encryption**: Data moving from Power Platform to Azure services in the Virtual Network doesn't traverse the public internet.
 
-### Operational excellence
+### Operational Excellence
 
 **Application lifecycle management (ALM)**: Integration is configured at the Power Platform environment level. Corresponding Azure Virtual Networks make up a complete landing zone for the entire solution and can isolate development, test, and production or specific lifecycle stages in an organization's ALM processes.
 
-### Performance efficiency
+### Performance Efficiency
 
 **Collect performance data**: Azure Virtual Networks provide an efficient way to integrate Power Platform and Azure resources. Learn about monitoring performance and collecting data in the [Azure Virtual Network monitoring data reference](/azure/virtual-network/monitor-virtual-network-reference).
 

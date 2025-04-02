@@ -127,7 +127,7 @@ Key elements are labeled with numbers indicating different access levels:
 Dataverse is highlighted as a central component in both environments.
 
 
-### Operational excellence
+### Operational Excellence
 
 You have flexibility in how you incorporate Power Platform solutions into your specific software delivery tools and processes. Power Platform offers in-product tools (pipelines) but can also fit into your broader DevOps strategy by connecting with tools such as Azure DevOps and GitHub Actions.
 

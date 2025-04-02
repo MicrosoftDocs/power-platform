@@ -77,15 +77,15 @@ This architecture streamlines and automates document-intensive business processe
 
 - **Principle of least privilege:** Permissions are restricted to minimize exposure. Power Automate flows access systems using the least privileged accounts or a service principal where possible. Application users should only have access to the data tables that support the application.
 
-### Operational excellence
+### Operational Excellence
 
 **Application lifecycle management (ALM):** Solution assets are stored in source control, and Dataverse solutions are used to promote assets from development, to test, and then to production.
 
-### Performance efficiency
+### Performance Efficiency
 
 **Use pre-built models:** Consider using prebuilt models when they match your document scenario. For example, for invoice processing use the prebuilt [invoice processing AI model](/ai-builder/prebuilt-invoice-processing). Prebuilt models save you time by eliminating the need to gather data to train and test your own model.
 
-### Experience optimization
+### Experience Optimization
 
 **Efficient handling of document review:** The app built with Power Apps should be a single-purpose application that lets users select documents that need review and quickly identify what review is needed. Actions available to the user should be easy to understand and complete without the potential for introducing human error by accidentally selecting the wrong outcome.
 

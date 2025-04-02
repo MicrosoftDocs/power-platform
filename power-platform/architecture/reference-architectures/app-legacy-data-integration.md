@@ -70,15 +70,15 @@ Legacy systems often present challenges, such as lack of integration with modern
 - **Encryption:** Data in transit (via Power Automate) and at rest (in SharePoint, Dataverse, and Power BI) is encrypted.
 - **Principle of least privilege:** Permissions are restricted to minimize exposure. Power Automate flows access systems using least privileged accounts or a service principal where possible.
 
-### Operational excellence
+### Operational Excellence
 
 **Application lifecycle management (ALM):** Solution assets are stored in source control, and Dataverse solutions are used to promote assets from development, to test, and then to production.
 
-### Performance efficiency
+### Performance Efficiency
 
 Consider which design strategies and recommendations of the [Performance Efficiency pillar](/power-platform/well-architected/performance-efficiency/checklist) are applicable to this workload, and document how they were achieved for this architecture.
 
-### Experience optimization
+### Experience Optimization
 
 **Integration with Microsoft Teams:** Users have access to dashboards that show where they spend time in Microsoft Teams to ensure easy discovery and insights.
 

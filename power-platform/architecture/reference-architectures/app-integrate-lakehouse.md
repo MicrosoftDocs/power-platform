@@ -70,11 +70,11 @@ The following are some example use cases:
 - **Design to protect confidentiality**: Virtual tables are organization owned and don't support the row-level or field-level Dataverse security concepts. Evaluate the sensitivity of the data surfaced using the virtual tables capability and consider if you need to implement your own security model for the external data source.
 - **Protect application secrets**: Virtual tables using the Fabric virtual connector provider use connections and connection references to manage and secure credentials used by virtual tables to access the Fabric Lakehouse.
 
-### Performance efficiency
+### Performance Efficiency
 
 - **Optimize data usage**: Building the solution from the Fabric Lakehouse can make it easier to optimize the data for use by the Power Platform components. For example, instead of consuming the detail interactions, as part of the Fabric ETL, the detail data could be transformed into more insightful data for the account executive.
 
-### Experience optimization
+### Experience Optimization
 
 - **Implement a consistent information architecture**: When integrating data from multiple systems, it's often the case that each has its own metadata. For example, when tracking interactions one system might mark an interaction as “Successful” while another system stores it as “Completed”. An application presenting this to a user could expose the user to the differences and provide a poor experience. During the ingestion process, the data flow can be used to unify and harmonize this type of data to present a consistent experience for the user consuming the different interaction data.
 

@@ -79,8 +79,6 @@ Learn how to use machine learning models to predict which customers are likely t
 - **Dataflows for efficient data ingestion:** Optimize Power Platform dataflows for ETL processes by applying incremental refresh where applicable to minimize data processing times.
 - **Link to Microsoft Fabric for compute:** Use Azure Synapse Link for Dataverse to offload heavy data computation and analytics tasks to Microsoft Fabric to ensure minimal performance impact on operational Dataverse environments.
 
-#### Performance recommendation
-
 Use OneLake in Microsoft Fabric to manage large datasets with efficient query capabilities.
 
 ### Security
@@ -89,18 +87,14 @@ Use OneLake in Microsoft Fabric to manage large datasets with efficient query ca
 
 - **Governance of data in Fabric and Dataverse:** Enforce data classification, encryption at rest, and data loss prevention policies.
 
-#### Security recommendation
-
 Implement row-level security in Power BI for role-specific insights while maintaining secure data access.
 
-### Operational excellence
+### Operational Excellence
 
 Achieve high performance and efficiency by optimizing processes and using best practices.
 
 - **Continuous integration and continuous delivery for Power Platform solutions:** Use Azure DevOps or GitHub Actions to manage the lifecycle of Dataverse, Power BI, and AI Builder solutions.
 - **Versioning of data models:** Track and document changes to machine learning models and transformations within Fabric and Dataverse.
-
-#### Operational excellence recommendation
 
 Apply Purview for comprehensive data lineage and metadata management to ensure model explainability and traceability.
 

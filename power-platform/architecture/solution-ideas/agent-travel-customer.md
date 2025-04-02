@@ -110,14 +110,14 @@ Implementing row-level security in Dataverse allows precise control over access 
 - [Security concepts in Microsoft Dataverse](/power-platform/admin/wp-security-cds)
 - [Managed security](/power-platform/admin/security/managed-security)
 
-### Performance efficiency 
+### Performance Efficiency 
 
 - Tracking usage, dropouts, technical difficulties, and Customer Satisfaction Score (CSAT) scores enable adjustments to the agent's approaches, offerings, and structure.  Learn more: [Measuring agent engagement](/microsoft-copilot-studio/guidance/measuring-engagement)
 Certainly! Here's a revised version with the appropriate reference links:
 - Power Automate flows can be used to handle processes asynchronously. Learn more: [Use an asynchronous flow pattern](/power-automate/guidance/coding-guidelines/asychronous-flow-pattern)
 - Bing Custom Search can be utilized to filter and manage allowed and blocked sections of website locations. Learn more: [Search public data or use a Bing Custom Search for generative answers nodes](/microsoft-copilot-studio/nlu-generative-answers-bing)
 
-### Experience optimization 
+### Experience Optimization 
 
 - Consolidate data into one centralized platform, such as Dataverse, to streamline access and management. Consider using [virtual tables](/power-apps/developer/data-platform/virtual-entities/get-started-ve) to integrate external data.
 - Review documents used for the Generative AI Knowledge section and remove any data not required.

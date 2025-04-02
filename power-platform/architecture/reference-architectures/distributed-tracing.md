@@ -71,7 +71,7 @@ Following are the steps for ​Power Platform workflow:
 - ​Demonstrate how external systems can pass distributed tracing context to the Power Platform.
 - ​Demonstrate how Power Platform components can be part of a distributed tracing session.​
 
-### Distributed Tracing
+### Distributed tracing
 
 Distributed tracing is a method used to profile and monitor applications, especially those built using a microservices architecture. It allows you to trace an event in the system from one service to another and retrieve end-to-end diagnostics about performance and latency. The [W3C TraceContext](https://www.w3.org/TR/trace-context/) standard defines how context information is sent and modified between services, enabling distributed tracing scenarios.
 
@@ -132,11 +132,11 @@ By implementing distributed tracing with the W3C TraceContext standard, you can 
 
 Ensure that the implemented solution fits into your [monitoring and alerting strategy](/power-platform/well-architected/performance-efficiency/collect-performance-data).
 
-### Operational excellence
+### Operational Excellence
 
 To effectively monitor your workload for security, performance, and reliability, you need a comprehensive system with its own stack that provides the foundation for all monitoring, detection, and alerting functions. Learn more: [recommendations for designing and creating a monitoring system](/power-platform/well-architected/operational-excellence/observability)
 
-#### Performance efficiency
+#### Performance Efficiency
 
 The suggestions in this example scenario allow you to [collect workload performance data recommendation for Power Platform workloads](/power-platform/well-architected/performance-efficiency/collect-performance-data)
 
