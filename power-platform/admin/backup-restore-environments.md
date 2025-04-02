@@ -2,7 +2,7 @@
 title: Back up and restore environments
 description: Learn how to back up and restore Power Platform environments.
 ms.topic: conceptual
-ms.date: 03/10/2025
+ms.date: 04/01/2025
 ms.subservice: admin
 author: matapg007 
 ms.author: matgupta
@@ -128,8 +128,9 @@ The following restrictions apply to restoration from both system backups and man
 - The source environment can be a production, sandbox, or developer environment. No other types of environments are supported.
 - The target environment can be a sandbox or developer environment. If the target is a developer environment, the source must also be a developer environment.
 - A Managed Environment can be restored only to another Managed Environment. A non-Managed Environment can't be restored to a Managed Environment.
-- If the source environment has a customer-managed encryption key applied, the target environment must also have a customer-managed encryption key applied.
+- If the source environment has a customer-managed encryption key applied, the target environment must also have the same customer-managed encryption key applied.
 - Backup and restore operations work only with source and target environments that have Dataverse.
+- If there are any enterprise policies applied to the source environment, then the target environment should also have the same set of policies applied.
 - Sandbox, Teams, and developer environments support self-restore backups.
 
 | Source type | Target type               |
@@ -322,6 +323,7 @@ For more information about the recovery environment, see [Recover environment](r
 - The target and source environments should be in the same region.
 - A Managed Environment can be restored only to another Managed Environment. For more information, see [Managed Environments overview](managed-environment-overview.md).
 - If the source environment has a customer-managed encryption key applied, the target environment must also have a customer-managed encryption key applied. For more information, see [Manage your customer-managed encryption key](customer-managed-key.md).
+- If an environment is enabled for [Virtual Network support](vnet-support-overview.md), the target environment must be in the same enterprise policy as the source environment.
 - Restoration of an environment requires **1 GB of available capacity**. For more information, see the [Is there a database size restriction for backing up or restoring an organization through the user interface or API?](#is-there-a-database-size-restriction-for-backing-up-or-restoring-an-organization-through-the-user-interface-or-api) section.
 - Backup and restore operations work only with source and target environments that have Dataverse. For more information, see [Add a Microsoft Dataverse database](create-database.md).
 - If you don't have enough storage, see [Add Microsoft Dataverse storage capacity](add-storage.md) to request more storage.
