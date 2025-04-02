@@ -20,7 +20,7 @@ contributors:
 
 [!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
-The following rules can be appied to [environment groups](environment-groups.md). 
+The following [rules](environment-groups.md#rules) can be appied to [environment groups](environment-groups.md). 
 
 | # | Rules (in alphabetical order) |
 |----|----------|
