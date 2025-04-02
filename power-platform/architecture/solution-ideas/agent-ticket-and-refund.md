@@ -122,13 +122,13 @@ Learn more:
 - [Security and compliance considerations for intelligent application workloads](/power-platform/well-architected/intelligent-application/security)  
 - [Security concepts in Microsoft Dataverse](/power-platform/admin/wp-security-cds)  
 
-### Performance efficiency  
+### Performance Efficiency  
 
 - Tracking usage, dropouts, technical difficulties, and Customer Satisfaction Score (CSAT) scores enable adjustments to the agent's approaches, offerings, and structure. Learn more: [Measuring agent engagement](/microsoft-copilot-studio/guidance/measuring-engagement)  
 - Power Automate flows can be used to handle processes asynchronously. Learn more: [Use an asynchronous flow pattern](/power-automate/guidance/coding-guidelines/asychronous-flow-pattern)  
 - Consider using the Microsoft 365 Agents SDK to utilize multiple agents. Learn more: [Microsoft 365 Agents SDK](/microsoft-365/agents-sdk/)  
 
-### Experience optimization  
+### Experience Optimization  
 
 - Consolidate data into one centralized platform, such as Dataverse, to streamline access and management. Consider using [virtual tables](/power-apps/developer/data-platform/virtual-entities/get-started-ve) to integrate external data.  
 
