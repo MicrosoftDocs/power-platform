@@ -55,7 +55,7 @@ These connections are then directed to various data sources. For Microsoft conne
 
 Using an [on-premises data gateway](/data-integration/gateway/service-gateway-onprem) enables you to connect to your on-premises services with Power Platform in a secure way by using Azure behind the scenes. Any data transmitted via the on-premises data gateway is sent via Azure Service Bus, as shown in the following image.
 
-:::image type="complex" source="media/data-gateway-architecture.png" alt-text="Architectural diagram of an on-premises data gateway." lightbox="media/data-gateway-architecture.png":::
+:::image type="complex" source="media/data-gateway-architecture.png" alt-text="Architectural diagram of an on-premises data gateway.":::
     The gateway cloud service encrypts and stores data source credentials and on-premises data gateway details. It routes queries and results between cloud services, the on-premises data gateway, and the data source. Azure Service Bus is used to transmit data between the gateway cloud service and the on-premises data gateway. The on-premises data gateway decrypts data source credentials and connects to a data source. It sends queries to the data source and returns the results to the gateway cloud service.
 :::image-end:::
 
@@ -65,7 +65,7 @@ The on-premises data gateway connects to one datacenter region per gateway. When
 
 Depending on the connector you use with on-premises systems, implementing ExpressRoute doesn't necessarily mean you can remove the on-premises data gateway. The on-premises data gateway includes functionality that converts data. For example, with SQL Server, the on-premises data gateway converts protocol from OData requests to SQL Data Manipulation Language statements.
 
-:::image type="content" source="media/inside-connectors.png" alt-text="Diagram showing how connectors connect to data sources behind the scenes." lightbox="media/inside-connectors.png":::
+:::image type="content" source="media/inside-connectors.png" alt-text="Diagram showing how connectors connect to data sources behind the scenes.":::
 
 Enabling ExpressRoute doesn't completely remove the need to implement an on-premises data gateway. Be sure to check each connector you're using in the [list of connectors](/power-automate/gateway-manage) to determine whether an on-premises gateway will still be required.
 

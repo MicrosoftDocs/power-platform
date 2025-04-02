@@ -32,7 +32,7 @@ Verify the following:
 
 > [!div class="checklist"]
 >
-> * Haw client connectivity will be configured to make sure that appropriate traffic will be routed via the ExpressRoute circuit?
+> * Will client connectivity be configured to make sure that appropriate traffic will be routed via the ExpressRoute circuit?
 > * Are clients able to connect via the internet for non-private resources, for example, Azure Content Delivery Network?
 > * Has the client been configured to use a proxy to route traffic to the ExpressRoute subnet rather than across the internet?
 > * Are the clients connecting from a public IP address or are they hidden behind network address translation (NAT)?
