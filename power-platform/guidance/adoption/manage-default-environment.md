@@ -32,7 +32,7 @@ To maintain environment hygiene, establish processes and procedures to clean up 
 
 Use [Power Platform Advisor](/power-platform/admin/power-platform-advisor) to view recommendations for apps without valid owners and ones that haven't been used in the last 60 days. You can take action for each recommendation in the recommendation pane, or you can use the [Power Platform for Admin V2 connector](/connectors/powerplatformadminv2/) to automate tasks.
 
-Our recommendation is to use [Power Platform Advisor](/power-platform/admin/power-platform-advisor). For more custom processes, you can evaluate the [CoE Starter Kit](/power-platform/guidance/coe/) to [set up clean-up of orphaned objects](/power-platform/guidance/coe/setup-orphan-components) and [set up inactivity processes](/power-platform/guidance/coe/setup-archive-components). You can use these processes as-is or modify them to suit the needs of your organization.
+Our recommendation is to use [Power Platform Advisor](/power-platform/admin/power-platform-advisor). For more custom processes, you can evaluate the [CoE Starter Kit](/power-platform/guidance/coe/overview) to [set up clean-up of orphaned objects](/power-platform/guidance/coe/setup-orphan-components) and [set up inactivity processes](/power-platform/guidance/coe/setup-archive-components). You can use these processes as-is or modify them to suit the needs of your organization.
 
 ## Discover highly used apps and flows
 
