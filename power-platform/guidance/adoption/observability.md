@@ -1,13 +1,14 @@
 ---
 title: Gain insights into Power Platform adoption
-description: Guidance for gaining insights into Power Platform adoption
+description: Gain actionable insights into Power Platform adoption to optimize usage, enhance security, and drive user engagement with targeted strategies.
+#customer intent: As a Power Platform user, I want to monitor adoption trends so that I can optimize platform usage and drive user engagement.
 author: manuelap-msft
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: sericks
-ms.date: 02/28/2025
+ms.date: 03/31/2025
 ---
 
 # Gain insights into Power Platform adoption
@@ -57,7 +58,7 @@ Monitoring and maintaining the health of solutions is vital for uninterrupted se
 - Check the [Service health dashboard](/power-platform/admin/check-online-service-health) to view the status of the Power Platform service, details about existing service incidents, and up to 30 days’ worth of history.
 - Monitor experiences using the [Monitor page](/power-platform/admin/monitoring/monitoring-overview) in the Power Platform admin center. This capability includes admin and maker experiences that provide out-of-the-box metrics and recommendations. The metrics and recommendations help admin and makers understand production health, detect degradations, and improve production health. The Monitor page exists to bring attention to resources with degraded operational health and highlight which resources have opportunities for improvement.
 - View event logs and error logs. All metrics that are part of the monitoring experience are aggregated from runtime event logs and error logs associated to a metric and can be accessed in the [Logs page](/power-platform/admin/monitoring/logs) in the Power Platform admin center. Logs are available to aid operational health analysis and they may be downloaded for offline review.
-- Implement Azure Application Insights integration. This capability delivers detailed, granular logs and custom metrics for deep analysis, which facilitates a comprehensive understanding of application performance. Learn more: [Integration with Application Insights](https://learn.microsoft.com/en-us/power-platform/admin/overview-integration-application-insights).
+- Implement Azure Application Insights integration. This capability delivers detailed, granular logs and custom metrics for deep analysis, which facilitates a comprehensive understanding of application performance. Learn more: [Integration with Application Insights](/power-platform/admin/overview-integration-application-insights).
 - Establish a robust incident management process to handle outages and disruptions efficiently. Learn more: [Recommendations for designing a reliable monitoring and alerting strategy](/power-platform/well-architected/reliability/monitoring-alerting-strategy)
 
 ## Performance
@@ -66,7 +67,7 @@ Ensuring optimal performance of apps and workflows is critical for user experien
 
 - Follow [recommendations for Performance Efficiency](/power-platform/well-architected/performance-efficiency/checklist) from Power Platform Well-Architected to design workloads so they can grow and meet your workload usage demands.
 - Monitor experiences using the [Monitor page](/power-platform/admin/monitoring/monitoring-overview) in the Power Platform admin center. This capability includes admin and maker experiences that provide out-of-the-box metrics and recommendations. The metrics and recommendations help admin and makers understand production health, detect degradations, and improve production health. The Monitor page exists to bring attention to resources with degraded operational health and highlight which resources have opportunities for improvement.
-- Implement Azure Application Insights integration. This capability delivers detailed, granular logs and custom metrics for deep analysis, which facilitates a comprehensive understanding of application performance. Learn more: [Integration with Application Insights](https://learn.microsoft.com/en-us/power-platform/admin/overview-integration-application-insights).
+- Implement Azure Application Insights integration. This capability delivers detailed, granular logs and custom metrics for deep analysis, which facilitates a comprehensive understanding of application performance. Learn more: [Integration with Application Insights](/power-platform/admin/overview-integration-application-insights).
 
 ## Capacity and licenses
 
@@ -93,8 +94,8 @@ At the solution level, monitoring focuses on the performance and reliability of 
 
 1. **Solution performance**: Track key performance indicators (KPIs) such as response times, load times, and error rates. This helps identify performance bottlenecks and optimize the user experience. Use the [Monitor page](/power-platform/admin/monitoring/monitoring-overview) in the Power Platform admin center to understand production health and detect degradations. Follow [recommendations for Performance Efficiency](/power-platform/well-architected/performance-efficiency/checklist) from Power Platform Well-Architected to design workloads so they can grow and meet your workload usage demands.
 1. **Error logs and diagnostics**: Monitor error logs and diagnostic data to quickly identify and resolve issues within applications. Include tracking exceptions, failed operations, and other error conditions. Use the [Logs page](/power-platform/admin/monitoring/logs) in the Power Platform admin center to aid operational health analysis.
-1. **Usage patterns**: Analyze how users are interacting with specific applications, including feature usage, session durations, and user feedback. This helps prioritize enhancements and identify areas for improvement. Use the [integration with Application Insights](https://learn.microsoft.com/en-us/power-platform/admin/overview-integration-application-insights) to get granular logs and custom metrics for deep analysis. For agents, use [analytics in Copilot Studio](/microsoft-copilot-studio/analytics-overview) to understand how well your agent is performing and to identify areas for improvement.
-1. **Integration points**: Monitor the performance and reliability of integrations with other systems and services. Include tracking API calls, data transfers, and the status of connected services. Use the [integration with Application Insights](https://learn.microsoft.com/en-us/power-platform/admin/overview-integration-application-insights) to get granular logs and custom metrics for deep analysis
+1. **Usage patterns**: Analyze how users are interacting with specific applications, including feature usage, session durations, and user feedback. This helps prioritize enhancements and identify areas for improvement. Use the [integration with Application Insights](/power-platform/admin/overview-integration-application-insights) to get granular logs and custom metrics for deep analysis. For agents, use [analytics in Copilot Studio](/microsoft-copilot-studio/analytics-overview) to understand how well your agent is performing and to identify areas for improvement.
+1. **Integration points**: Monitor the performance and reliability of integrations with other systems and services. Include tracking API calls, data transfers, and the status of connected services. Use the [integration with Application Insights](/power-platform/admin/overview-integration-application-insights) to get granular logs and custom metrics for deep analysis
 1. **Security and access controls**: Monitor access controls and permissions within applications to ensure users have the appropriate level of access to the functionality and data.
 
 Learn more about [recommendations for designing and creating a monitoring system](/power-platform/well-architected/operational-excellence/observability)
@@ -103,7 +104,7 @@ Learn more about [recommendations for designing and creating a monitoring system
 
 To achieve effective observability and insights, you should use the following tools:
 
-1. **Power Platform admin center**: Use the Power Platform Admin Center to monitor tenant- and environment-level [analytics](power-platform/admin/tenant-level-analytics). 
+1. **Power Platform admin center**: Use the Power Platform Admin Center to monitor tenant- and environment-level [analytics](/power-platform/admin/tenant-level-analytics). 
     - Use the [Monitor page](/power-platform/admin/monitoring/monitoring-overview) in the Power Platform admin center to understand solution health and detect degradations.
     - Use the [Security page](/power-platform/admin/security/security-overview) to assess and monitor your security score and understand how to improve your security policies.
     - Use [Power Platform Advisor](/power-platform/admin/power-platform-advisor) to monitor recommendations to optimize your tenant.

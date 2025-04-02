@@ -1,24 +1,31 @@
 ---
-title: "Use Microsoft Dataverse usage reports | MicrosoftDocs"
-description: "The Microsoft Dataverse analytics in the Power Platform admin center provides details about Dataverse usage in the selected environment."
+title: Monitor licenses and capacity
+description: Monitor Power Platform licenses and capacity to optimize performance, ensure compliance, and manage costs effectively. Learn key strategies and tools to stay in control.
+#customer intent: As a Power Platform user, I want to monitor Power Platform license consumption so that I can ensure compliance and manage costs effectively.
 author: manuelap-msft
-
 ms.component: pa-admin
-ms.topic: conceptual
-ms.date: 02/28/2025
+ms.topic: concept-article
+ms.date: 03/31/2025
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: sericks
-search.audienceType: 
+ms.reviewer: pankajsharma2087
+search.audienceType:
   - admin
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-description
+  - ai-seo-date:03/28/2025
 ---
+
 # Monitor licenses and capacity
 
 Effective capacity and license monitoring in Power Platform helps you maintain optimal performance, ensure compliance, and manage costs. This article outlines the key aspects to monitor and provides recommendations to help you stay on top of your Power Platform environment.
 
 ## Monitor license consumption
 
-Use the [Billing page](/power-platform/admin/view-license-consumption-issues) in the Power Platform admin center to monitor the consumption of your organization's Power Platform licenses and easily spot environments that might have licensing issues. Get answers to questions like these:
+Use the [Billing page](/power-platform/admin/view-license-consumption-issues) in the Power Platform admin center to monitor the consumption of your organization's Power Platform licenses and easily spot environments that might have licensing issues. 
+
+Get answers to questions like these:
 
 - How many Power Apps licenses are purchased?
 - How many of those Power Apps licenses are assigned to users?
@@ -29,7 +36,7 @@ Use the [Billing page](/power-platform/admin/view-license-consumption-issues) in
 - Are there users in my environment who need standalone Power Apps or Power Automate licenses?
 - Which flows are out of compliance?
 
-As an administrator, you should
+As an administrator, you should:
 
 - Monitor the allocation of licenses to users and applications. Ensure that you have the correct number of licenses and that they're assigned appropriately. This helps in avoiding any compliance issues and managing costs effectively.
 - Regularly review the list of flows requiring licensing attention.

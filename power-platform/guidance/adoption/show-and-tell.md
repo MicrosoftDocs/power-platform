@@ -1,17 +1,18 @@
 ---
-title: "Organize show-and-tell sessions | MicrosoftDocs"
-description: "If you want to create more excitement in your organization and inspire more people to join your Power Apps community, an app showcase is a great way to do so."
+title: Share success stories
+description: Inspire your organization with Power Platform success stories that drive engagement, innovation, and adoption. Learn how to share impactful stories effectively.
+#customer intent: As a Power Platform user, I want to learn how to share Power Platform success stories so that I can drive engagement and adoption in my organization.
 author: manuelap-msft
-
 ms.component: pa-admin
-ms.topic: conceptual
-ms.date: 09/11/2020
+ms.topic: concept-article
+ms.date: 04/01/2025
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: sericks
+ms.reviewer: pankajsharma2087
 search.audienceType: 
   - admin
 ---
+
 # Share success stories
 
 When your organization adopts Microsoft Power Platform, sharing success stories internally becomes a powerful tool to foster engagement, inspire innovation, and drive adoption. Success stories highlight the tangible benefits of the platform, showcase the achievements of your makers, and create a culture of recognition and continuous improvement.
@@ -20,7 +21,7 @@ When your organization adopts Microsoft Power Platform, sharing success stories 
 1. **Knowledge sharing**: By sharing detailed accounts of successful projects, you facilitate knowledge transfer within the organization. This helps others learn from the experiences and best practices of their peers.
 1. **Recognition and morale boost**: Celebrating the achievements of individuals and teams boosts morale and fosters a sense of pride and accomplishment. Recognized employees are more likely to stay engaged and committed to their work.
 1. **Building a community**: Success stories help build a sense of community among makers. They create connections and encourage collaboration, leading to a more cohesive and supportive environment.
-1. **Driving adoption**: Highlighting successful use cases of Power Platform can accelerate the adoption across the organization. When employees see the positive affect on their peers' work, they're more likely to embrace the platform themselves.
+1. **Driving adoption**: Highlighting successful use cases of Power Platform can accelerate the adoption across the organization. When employees see the positive effect on their peers' work, they're more likely to embrace the platform themselves.
 
 ## How to identify valuable success stories
 
@@ -80,7 +81,7 @@ Here are some tips for writing and sharing success stories:
 
 - Provide quotes from the leadership team and users; this is a great way to highlight the impact of your work.
 
-- Use a format that makes sense for your story, but here's an example format that we use for our public case studies:
+- Use a format that makes sense for your story. Here's an example format that we use for our public case studies:
 
   - **Overview**: Summary of what was accomplished at a high level.
   
@@ -100,7 +101,7 @@ Here are some tips for writing and sharing success stories:
 
 Share your success stories in a regular Microsoft Power Platform newsletter, highlight them on your intranet, or record an interview with the maker to upload and share with your maker community.
 
-## Use the Business Value toolkit
+## Use the Business value toolkit
 
 The Business value toolkit is a sample solution that provides a comprehensive framework to capture and communicate the value of Power Platform solutions effectively. By guiding app owners through a structured storytelling process, enhanced by AI to both refine the narrative and analyze its effect on organizational strategic objectives, the toolkit helps transform raw insights into compelling success stories.
 

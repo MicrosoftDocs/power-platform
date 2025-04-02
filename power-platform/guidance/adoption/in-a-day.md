@@ -1,17 +1,22 @@
 ---
-title: "Provide internal training events"
-description: "Microsoft has created various hands-on lab content, ranging from App in an Hour, App in a Day, to Admin in a Day."
+title: Provide internal training events
+description: Equip your team with Power Platform skills through internal training events, including "In a Day" workshops, Lunch and Learn sessions, and solution-building bootcamps.
+#customer intent: As a Power Platform user, I want to organize internal Power Platform training events so that my team can develop the skills needed to maximize its potential.
 author: manuelap-msft
-
 ms.component: pa-admin
-ms.topic: conceptual
-ms.date: 02/28/2025
+ms.topic: concept-article
+ms.date: 04/01/2025
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: sericks
-search.audienceType: 
+search.audienceType:
   - admin
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-description
+  - ai-seo-date:04/01/2025
 ---
+
 # Provide internal training events
 
 Equipping your team with the right skills is important to harness to full potential of Power Platform. To maximize the potential of Power Platform, organizations should consider hosting internal training events. This article explores the benefits of various training opportunities, including "In a Day" workshops, and provides best practices for organizing these events.
@@ -36,7 +41,7 @@ Here are a few tips for running this training internally:
 - Create a dedicated [environment](/power-platform/admin/create-environment) or use [Developer environment](/power-platform/developer/create-developer-environment) for training purposes and make sure this environment is covered by a [Data Loss Prevention policy](/power-platform/admin/wp-data-loss-prevention) that allows required connectors. Ensure attendees have the right license and access to the environment before the event. Ask attendees to sign up for a premium trial, or assign them a premium license in the Microsoft 365 admin portal.
 - Get familiar with the course material, and make sure you have a few facilitators with you on the day who can help attendees 1:1 if they're stuck. Customize the workshop content to align with your organization's specific needs and goals.
 - Prepare a short intro presentation, explaining the purpose of Microsoft Power Platform and the goals for Power Platform usage in your organization. If you already have created successful solutions in your organization, it would be great to show them during the intro so attendees get an idea of what the platform can be used for.
-- Run a trial event for 10 to 12 people who you're familiar with, who will be able to provide feedback and test the logistics with you. This could be your inner circle of champions. They can also be your trial group for other events and activities you're planning.
+- Run a trial event for 10 to 12 people who are able to provide feedback and test the logistics with you. This group could be your inner circle of champions. They can also be your trial group for other events and activities you're planning.
 - Set the right expectations with attendees, make sure they know what they're registering for, what the purpose of attending is, and what they should know or do before the event.
 - Offer extra resources and support after the event to reinforce learning and address any remaining questions.
 

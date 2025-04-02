@@ -1,13 +1,14 @@
 ---
 title: Manage resistance and avoid organizational anti-patterns
-description: Guidance for managing resistance and avoiding IT silos
+description: Learn strategies to manage resistance to change and avoid IT silos while adopting Microsoft Power Platform for organizational success.
+#customer intent: As a Power Platform user, I want to understand strategies to manage resistance to change so that I can ensure successful adoption of Microsoft Power Platform.
 author: manuelap-msft
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: sericks
-ms.date: 02/28/2025
+ms.date: 04/01/2025
 ---
 
 # Manage resistance and avoid organizational anti-patterns

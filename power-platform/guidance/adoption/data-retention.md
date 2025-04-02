@@ -1,14 +1,13 @@
----
 title: Ensure data retention and mobility
-description: Guidance for protecting and recovering data seamlessly with a range of flexible backup and retention capabilities
+description: Protect your data with Power Platform's flexible backup and retention capabilities. Learn how to ensure resilience and recoverability for your business-critical data.
+#customer intent: As a Power Platform user, I want to understand how to enhance data resilience so that I can protect and recover business-critical data effectively.
 author: manuelap-msft
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: sericks
-ms.date: 02/28/2025
----
+ms.reviewer: pankajsharma2087
+ms.date: 04/01/2025
 
 # Ensure data retention and mobility
 
@@ -25,15 +24,16 @@ Here are some recommendations for enhancing data resilience in Power Platform:
 
 Ensure that your environments are backed up regularly. Review and manage these backups to confirm they're up-to-date and accessible when needed. Power Platform automatically creates backups of your environments, typically on a daily basis. These backups include all the data, configurations, and customizations within the environment. In addition to automatic backups, administrators can also create manual backups at any time. Manual backups are useful before making significant changes or updates to the environment.
 
-You can now extend their backup retention from seven to 28 days. Learn more: [Back up and restore environments](/power-platform/admin/backup-restore-environments)
 
-## Implement Data Loss Prevention (DLP) policies
+You can now extend their backup retention from seven to 28 days. Learn more in [Back up and restore environments](/power-platform/admin/backup-restore-environments).
 
-Define and enforce DLP policies to prevent unauthorized data access and ensure compliance with organizational standards. Learn more: [Establish a DLP strategy](dlp-strategy.md)
+## Implement data loss prevention (DLP) policies
+
+Define and enforce data loss prevention policies to prevent unauthorized data access and ensure compliance with organizational standards. Learn more in[Establish a DLP strategy](dlp-strategy.md).
 
 ## Use role-based access control (RBAC)
 
-Implement RBAC to restrict access to sensitive data, ensuring that only authorized users can access and modify data. Learn more: [Security in Microsoft Dataverse](/power-platform/admin/wp-security)
+Implement role-based access control to restrict access to sensitive data, ensuring that only authorized users can access and modify data. Learn more in [Security in Microsoft Dataverse](/power-platform/admin/wp-security).
 
 ## Enable data encryption
 
@@ -53,11 +53,12 @@ Learn more:
 
 ## Long-term retention
 
-Either implement custom data archiving solutions to store historical data securely and efficiently, ensuring easy retrieval when needed or use long-term retention policies on tables to keep parent and associated child data—including activities, emails, and attachments—retained as a set for compliance and auditing purposes. Learn more: [Long-term retention for tables in Dataverse](/power-apps/maker/data-platform/data-retention-set#enable-a-table-for-long-term-retention).
+
+Either implement custom data archiving solutions to store historical data securely and efficiently, ensuring easy retrieval when needed or use long-term retention policies on tables to keep parent and associated child data—including activities, emails, and attachments—retained as a set for compliance and auditing purposes. Learn more in [Long-term retention for tables in Dataverse](/power-apps/maker/data-platform/data-retention-set#enable-a-table-for-long-term-retention).
 
 ## Recycle bin for table records
 
-The recycle bin feature allows users to restore deleted records from tables—across various deletion scenarios—within a configurable time frame. This feature ensures data recovery when needed. Learn more: [Restore deleted Dataverse table records](/power-platform/admin/restore-deleted-table-records).
+The recycle bin feature allows users to restore deleted records from tables—across various deletion scenarios—within a configurable time frame. This feature ensures data recovery when needed. Learn more in [Restore deleted Dataverse table records](/power-platform/admin/restore-deleted-table-records).
 
 ## Monitor and alert
 
@@ -95,3 +96,4 @@ Develop a comprehensive disaster recovery plan that outlines the steps to take i
 
 - [Managed operations](/power-platform/admin/operations/overview)
 - [Power Platform Well-Architected - Reliability recommendations](/power-platform/well-architected/reliability/checklist)
+
