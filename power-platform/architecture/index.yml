@@ -42,13 +42,14 @@ productDirectory:
       - text: ExpressRoute and Power Platform
         url: key-concepts/expressroute/overview.md
       - text: More...
-        url: key-concepts/fundamentals-overview.md    # Card
+        url: key-concepts/fundamentals-overview.md
+    # Card
     - title: Reference architectures
       imageSrc: /office/media/icons/blocks.png
       links:
         - text: ​Integrate Microsoft Fabric Lakehouse data using Microsoft Dataverse virtual tables
           url: reference-architectures/app-integrate-lakehouse.md
-        - text: Predictive data analsyis with Dataverse Fabric and Azure AI
+        - text: Predictive data analysis with Dataverse Fabric and Azure AI
           url: reference-architectures/ai-predictive-data-analysis.md
         - text: Secure Power Platform access to Azure resources
           url: reference-architectures/secure-access-azure-resources.md
@@ -58,9 +59,9 @@ productDirectory:
     - title: Solution ideas
       imageSrc: /office/media/icons/lightbulb-idea-capture.png
       links:
-        - text: Healthcare patient support agent
+        - text: Healthcare Patient Support Agent
           url: solution-ideas/agent-healthcare-patient-support.md
-        - text: Rental portal with AI Driven search agent
+        - text: Property rental portal with AI Driven search and payment processing
           url: solution-ideas/agent-rental-portal.md
         - text: Enterprise Visual Vehicle Inspection Engine
           url: solution-ideas/app-evvie.md
@@ -142,8 +143,8 @@ additionalContent:
       summary: Build a strong Power Platform adoption strategy and consistent approach to workload design.
       items:
       - title: Power Platform adoption guidance
-        url: power-platform/adoption/
+        url: power-platform/guidance/
       - title: Power Platform Well-Architected
         url: /power-platform/well-architected/
       - title: Power Platform Well-Architected assessment
-        url: /training/paths/solution-architect-data/
+        url: https://learn.microsoft.com/en-us/assessments/689fd8d9-1000-4cbb-8096-a6c8f3294fc7/
