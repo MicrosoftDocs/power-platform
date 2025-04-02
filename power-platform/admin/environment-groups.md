@@ -34,7 +34,7 @@ Think of an environment group as a "folder" for your environments. Administrator
 
 A key advantage of environment groups is their ability to enforce governance at scale through _rules_. Environment groups allow tenant administrators to define rules that automatically apply standardized settings or policies across all member environments. These rules span critical areas of environment management, such as security and sharing, AI feature enablement, data retention policies, and application lifecycle management (ALM).
 
-When a rule is published at the environment group level, it's uniformly enforced across every environment within that group. This means the corresponding setting or policy becomes locked (read-only) within individual environments, ensuring that local system administrators can't modify or override these centrally defined rules. Any subsequent changes can only be made by a tenant administrator with appropriate edit rights at the environment group level.
+When a rule is published at the environment group level, it's enforced across every environment within that group. This means the corresponding setting or policy becomes locked (read-only) within individual environments, ensuring that local system administrators can't modify or override these centrally defined rules. Any subsequent changes can only be made by a tenant administrator with appropriate edit rights at the environment group level.
 
 Learn more about the rules available in [Rules for environment groups](environment-groups-rules.md).
 
@@ -47,7 +47,7 @@ Learn more about the rules available in [Rules for environment groups](environme
 
 :::image type="content" source="media/environment-groups-strategy.png" alt-text="Diagram depicting one strategy for using environment groups and aligning it to your existing organizational structure.":::
 
-Environment groups are very flexible. Whether you need to enforce compliance by region, provide personal sandbox spaces for makers, roll out AI features selectively, or standardize development and testing vs. production practices, environment groups can be adapted to fit. Some common use cases and scenarios where environment groups add value include:
+Environment groups are flexible. Whether you need to enforce compliance by region, provide personal sandbox spaces for makers, roll out AI features selectively, or standardize development and testing vs. production practices, environment groups can be adapted to fit. Some common use cases and scenarios where environment groups add value include:
 
 ### Personal productivity environments
 
@@ -115,7 +115,7 @@ One powerful way to use environment groups is in combination with default enviro
 1. Under the **Environment group** section, choose the group you want your new **Developer** environments to be created in.
 1. Select **Save**.
 
-Going forward, whenever a new maker triggers the creation of a personal developer environment, the platform automatically creates their environment inside the specified group. The environment comes preconfigured as a Managed Environment with all the group’s rules already applied from the start. The maker doesn't need to choose an environment or set anything up, as they're routed directly into a governed space that IT has predefined. Admins gain peace of mind knowing that even automatically created environments follow organizational policies, and makers get a ready-to-use environment without needing to worry about configuration.
+Going forward, whenever a new maker triggers the creation of a personal developer environment, the platform automatically creates their environment inside the specified group. The environment comes preconfigured as a Managed Environment with all the group’s rules already applied from the start. The maker doesn't need to choose an environment or set anything up. The maker is routed directly into a governed space that IT has predefined. Admins gain peace of mind knowing that even automatically created environments follow organizational policies, and makers get a ready-to-use environment without needing to worry about configuration.
 
 > [!NOTE]
 > If an environment group is selected for routing but later you decide to change it, you can update the Environment routing settings to point new environments to a different group. Existing developer environments remain in whichever group they were originally placed, unless moved manually.
