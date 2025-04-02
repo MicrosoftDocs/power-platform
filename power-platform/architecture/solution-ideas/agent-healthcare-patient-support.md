@@ -1,4 +1,4 @@
-﻿---
+---
 title: Healthcare patient support agent architecture overview
 description: Discover how the Healthcare Patient Support Agent streamlines patient interactions and reduces administrative burdens for healthcare providers.
 #customer intent: As a Power-Platform user, I want to visualize the major components of the Healthcare Patient Support Agent architecture so that I can design a well-architected solution.
@@ -82,13 +82,13 @@ These considerations implement the pillars of Power Platform Well-Architected, a
 - [Dataverse auditing](../key-concepts/dataverse-auditing.md) to track changes and ensure accountability.
 - [Centralized error logging and monitoring](/power-platform/well-architected/security/monitor-threats) for quick issue resolution.
 
-### Performance efficiency
+### Performance Efficiency
 
 - Power Automate flows with scalable parallelization to handle peak patient interactions efficiently. Learn more: [Use an asynchronous flow pattern](/power-automate/guidance/coding-guidelines/asychronous-flow-pattern)
 - Azure Data Lake Store Gen2 archives large datasets, ensuring cost-effective long-term storage and enabling advanced analytics. Its scalability and support for diverse data types make it ideal for healthcare workloads.
 - Azure Synapse Analytics facilitates big data processing and data warehousing, and unifies patient records for advanced analytical insights and reporting.
 
-### Experience optimization
+### Experience Optimization
 
 - Designed the Patient Access Portal with a responsive UI for seamless use across devices.
 - Integrated natural language processing and knowledge source retrieval in the Patient Interactions Agent to improve query resolution accuracy.
