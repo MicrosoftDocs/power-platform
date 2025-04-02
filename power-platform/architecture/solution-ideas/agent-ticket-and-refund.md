@@ -1,5 +1,5 @@
 ---  
-title: Ticket management system with Microsoft Copilot Studio agents  
+title: Ticket management system with Copilot Studio agents  
 description: Build a ticket management system with Microsoft Copilot Studio agents to streamline customer and employee experiences through automation and integration with Microsoft tools.  
 #customer intent: As a Power-Platform user, I want to design a ticket management system using Microsoft Copilot Studio agents so that I can streamline customer and employee experiences through automation.  
 author: manuelap-msft  
@@ -18,7 +18,7 @@ search.audienceType:
   - flowmaker  
 --- 
  
-# Ticket management system with Microsoft Copilot Studio agents  
+# Ticket management system with Copilot Studio agents  
 
 This article outlines the architecture and workflow of a ticket management system for a cinema company, focusing on improving customer and employee experiences through automation and integration with Microsoft tools.  
 

@@ -19,11 +19,11 @@
             href: key-concepts/expressroute/how-expressroute-works.md
           - name: Before you use ExpressRoute
             href: key-concepts/expressroute/things-to-consider.md
-          - name: Understand Microsoft Power Platform architecture
+          - name: Understand Power Platform architecture
             href: key-concepts/expressroute/understanding-architecture.md
           - name: Plan an ExpressRoute deployment
             href: key-concepts/expressroute/planning-expressroute.md
-          - name: Set up ExpressRoute for Microsoft Power Platform
+          - name: Set up ExpressRoute
             href: key-concepts/expressroute/setup.md
           - name: ExpressRoute readiness checklist
             href: key-concepts/expressroute/checklist.md
@@ -47,13 +47,13 @@
         href: reference-architectures/secure-access-azure-resources.md
       - name: Integrate Power Platform with SAP
         href: reference-architectures/arch-pattern-sap.md
-      - name: ​​Integrate Microsoft Fabric Lakehouse data using Microsoft Dataverse virtual tables
+      - name: ​​Integrate Microsoft Fabric Lakehouse data using Dataverse virtual tables
         href: reference-architectures/app-integrate-lakehouse.md
       - name: Use REST APIs to extend the functionality of canvas apps
         href: reference-architectures/custom-connector-canvas.md
       - name: ​Use the Dataverse connector with canvas apps​ 
-        href: reference-architectures/custom-connector-canvas.md
-      - name: ​Scale RPA Operations using Hosted RPA in Microsoft Power Automate for desktop​ 
+        href: reference-architectures/dataverse-canvas-app.md
+      - name: ​Scale RPA operations using Hosted RPA in Microsoft Power Automate for desktop​ 
         href: reference-architectures/rpa-scale-operations.md
     - name: Solution ideas
       items:
@@ -65,10 +65,12 @@
           href: solution-ideas/agent-rental-portal.md
         - name: Enterprise Visual Vehicle Inspection Engine
           href: solution-ideas/app-evvie.md
-        - name: Custom Contact Center solution with Copilot Studio agent
+        - name: Custom contact center solution with Copilot Studio agent
           href: solution-ideas/agent-custom-contact-center.md
         - name: Travel concierge using generative AI with Copilot Studio
           href: solution-ideas/agent-travel-customer.md
+        - name: Ticket management system with Copilot Studio agents        
+          href: solution-ideas/agent-ticket-and-refund.md
     - name: Power Platform products
       items:
         - name: Power Apps
