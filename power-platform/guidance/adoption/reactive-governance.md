@@ -1,5 +1,5 @@
 ---
-title: Reactive governance- Optimize Power Platform security and performance
+title: Reactive governance - Optimize Power Platform security and performance
 description: Learn how to optimize Power Platform security and performance with reactive governance by addressing issues in real time and improving tenant hygiene.
 #customer intent: As a Power Platform user, I want to address business continuity risks so that I can ensure uninterrupted operations.
 author: manuelap-msft
@@ -47,7 +47,7 @@ The **[CoE Starter Kit](/power-platform/guidance/coe/starter-kit)** is a compreh
 
 Organizations can use **[APIs and connectors](/power-platform/admin/programmability-extensibility-overview)** to create custom reactive governance processes tailored to their specific needs. By integrating these tools, organizations can automate responses to governance issues, streamline workflows, and enhance efficiency.
 
-## Use Monitoring for effective governance
+## Use monitoring for effective governance
 
 Effective monitoring is essential for reactive governance. Monitor platform usage and compliance and identify issues that need to be resolved or actions that need to be taken. 
 
