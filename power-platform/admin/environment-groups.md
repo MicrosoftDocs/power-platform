@@ -116,7 +116,6 @@ After you create the environment group, Power Platform tenant administrators can
 # [Classic admin center](#tab/classic)
 
 1. Sign in to [Power Platform Admin center](https://admin.powerplatform.microsoft.com/) as a [Power Platform tenant administrator](use-service-admin-role-manage-tenant.md).
-1. Select **Manage** in the navigation pane.
 1. Select **Environment groups** in the navigation pane.
 1. On the **Environment groups** page, select the group you created.
 1. Select the **Rules** tab for that group. You see a list of available rules.
@@ -148,7 +147,6 @@ One powerful way to use environment groups is in combination with default enviro
 
 # [Classic admin center](#tab/classic)
 
-1. Select **Manage** in the navigation pane.
 1. Select **Environment groups** in the navigation pane.
 1. Select the **Environment Routing** button in the command bar.
 1. Under the **Environment group** section, choose the group you want your new **Developer** environments to be created in.
@@ -175,7 +173,6 @@ In addition to using routing for new environments, you can manually add existing
 
 # [Classic admin center](#tab/classic)
 
-1. Select **Manage** in the navigation pane.
 1. Select **Environment groups** in the navigation pane.
 1. Select the target group (the group you want to add environments into).
 1. Select the **Add environments** button in the command bar.
@@ -203,7 +200,6 @@ When manually creating a new environment, you can choose to place it into a grou
 
 # [Classic admin center](#tab/classic)
 
-1. Select **Manage** in the navigation pane.
 1. Go to the **Environments** page.
 1. Select **New** in the command bar.
 1. Select a **group** for your created environment.
@@ -228,7 +224,6 @@ You can remove an environment from a group if it needs unique governance or if y
 
 # [Classic admin center](#tab/classic)
 
-1. Select **Manage** in the navigation pane.
 1. Select **Environment groups** in the navigation pane.
 1. Select the group.
 1. Select the environment you wish to remove.
@@ -251,7 +246,6 @@ If an environment group is no longer needed, administrators can delete it to avo
 
 # [Classic admin center](#tab/classic)
 
-1. Select **Manage** in the navigation pane.
 1. Select **Environment groups** in the navigation pane.
 2. Select the environment group that you wish to delete.
 3. Select **Delete group** in the command bar.
