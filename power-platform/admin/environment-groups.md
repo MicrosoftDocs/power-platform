@@ -3,7 +3,7 @@ title: Environment groups
 description: Learn how to organize your Managed Environments into groups and govern them in bulk.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/31/2025
+ms.date: 04/02/2025
 author: mikferland-msft
 ms.author: miferlan
 ms.reviewer: sericks
@@ -26,20 +26,20 @@ Think of an environment group as a "folder" for your environments. Administrator
 
 > [!NOTE]
 > - Environment groups can only contain Managed Environments.
-> - Each environment can belong to only one group, and groups cannot overlap or be nested.
+> - Each environment can belong to only one group, and groups can't overlap or be nested.
 > - Environments in a group can span different regions and types as long as each is managed.
 > - Environments can be transferred between groups by removing them from one and adding them to another.
 
 ## Rules
 
-A key advantage of environment groups is their ability to enforce governance at scale through rules. Environment groups allow tenant administrators to define rules that automatically apply standardized settings or policies across all member environments. These rules span critical areas of environment management, such as security and sharing, AI feature enablement, data retention policies, and Application Lifecycle Management (ALM).
+A key advantage of environment groups is their ability to enforce governance at scale through _rules_. Environment groups allow tenant administrators to define rules that automatically apply standardized settings or policies across all member environments. These rules span critical areas of environment management, such as security and sharing, AI feature enablement, data retention policies, and application lifecycle management (ALM).
 
-When a rule is published at the environment group level, it is uniformly enforced across every environment within that group. This means the corresponding setting or policy becomes locked (read-only) within individual environments, ensuring that local system administrators cannot modify or override these centrally defined rules. Any subsequent changes can only be made by a tenant administrator with appropriate edit rights at the environment group level.
+When a rule is published at the environment group level, it is uniformly enforced across every environment within that group. This means the corresponding setting or policy becomes locked (read-only) within individual environments, ensuring that local system administrators can't modify or override these centrally defined rules. Any subsequent changes can only be made by a tenant administrator with appropriate edit rights at the environment group level.
 
-Click here to see the list of rules available.
+Leaern more about the rules available in [Rules for environment groups](environment-groups-rules.md).
 
 > [!NOTE]
-> - Per-environment exceptions are not currently supported.
+> - Per-environment exceptions aren't currently supported.
 > - When an environment is added to the group, it inherits the group's published rules.
 > - When an environment is removed, it retains the last applied configuration from the group's rules but becomes unlocked, allowing a local admin to modify it going forward.
 
@@ -47,19 +47,19 @@ Click here to see the list of rules available.
 
 :::image type="content" source="media/environment-groups-strategy.png" alt-text="Diagram depicting one strategy for using environment groups and aligning it to your existing organizational structure.":::
 
-Environment groups are very flexible. Whether you need to enforce compliance by region, provide personal sandbox spaces for makers, roll out AI features selectively, or standardize Dev/Test vs. Prod practices, environment groups can be adapted to fit. Below are some common use cases and scenarios where environment groups add value:
+Environment groups are very flexible. Whether you need to enforce compliance by region, provide personal sandbox spaces for makers, roll out AI features selectively, or standardize development and testing vs. production practices, environment groups can be adapted to fit. Some common use cases and scenarios where environment groups add value include:
 
 ### Personal productivity environments
 
-When using default environment routing, each maker can automatically get their own personal developer environment. It's best practice to place these environments into a dedicated group (for example, a group named “Personal Productivity”) as they are created. Within this group, apply rules that treat each environment as a safe, individual sandbox. For instance, restrict agent sharing to prevent accidental exposure of in-progress work, and include productivity aids like the maker welcome content (the introductory learning content shown to new makers). This approach isolates each user's work, similar to each person having their own OneDrive, and helps keep the default environment clean and secure.
+When using default environment routing, each maker can automatically get their own personal developer environment. It's best practice to place these environments into a dedicated group as they are created. For example, you may want a group named _Personal Productivity_. Within this group, apply rules that treat each environment as a safe, individual sandbox. For instance, restrict agent sharing to prevent accidental exposure of in-progress work, and include productivity aids like the [maker welcome content](welcome-content). This approach isolates each user's work, similar to each person having their own OneDrive, and helps keep the default environment clean and secure.
 
 ### AI feature management
 
-Organizations exploring AI capabilities can use environment groups to roll out features in a controlled and intentional way. For example, an enterprise might create a “Copilot Pilot” group with sandbox environments where AI features are enabled for early testing and feedback. At the same time, production or sensitive environments can remain in a separate group with a more gradual rollout timeline. This setup supports safe, phased adoption while giving teams space to experiment and build readiness. As confidence grows, admins can update the rules to expand Copilot access to additional groups or move environments between them. This ensures a clear and manageable path toward broader AI enablement.
+Organizations exploring AI capabilities can use environment groups to roll out features in a controlled and intentional way. For example, an enterprise might create a _Copilot Pilot_ group with sandbox environments where AI features are turned on for early testing and feedback. At the same time, production or sensitive environments can remain in a separate group with a more gradual rollout timeline. This setup supports safe, phased adoption while giving teams space to experiment and build readiness. As confidence grows, admins can update the rules to expand Copilot access to additional groups or move environments between them. This ensures a clear and manageable path toward broader AI use.
 
-### Global Environment Strategy
+### Global environment strategy
 
-Large organizations with many environments can group them by organizational units (e.g. by department, region, or subsidiary). For example, a global enterprise might have separate groups for North America, Europe, and APAC environments to enforce region-specific compliance and data residency rules. Each region’s group can have rules aligning with local regulations or business policies (like enabling certain features only where allowed). This structure brings order to a sprawling environment landscape and makes it easier to apply updates or policy changes en masse.
+Large organizations with many environments can group the environments by organizational units, such as by department, region, or subsidiary. For example, a global enterprise might have separate groups for North America, Europe, and APAC environments to enforce region-specific compliance and data residency rules. Each region’s group can have rules aligning with local regulations or business policies, like turning on certain features only where allowed. This structure brings order to a sprawling environment landscape and makes it easier to apply updates or policy changes en masse.
 
 ### Development vs. production environments
 
