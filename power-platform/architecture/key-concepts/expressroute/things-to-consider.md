@@ -64,7 +64,7 @@ Adding cloud services can introduce extra consumption and load on the corporate 
 
 You can address these issues by getting additional bandwidth or separate connections through the ISP. A separate connection dedicated to priority traffic can help improve both the performance and predictability of the traffic.
 
-Ensure that you set up Quality of Service (QoS) correctly. If you're using Microsoft Teams and Microsoft Stream, refer to the [QoS requirements within ExpressRoute](/azure/expressroute/expressroute-qos). 
+Ensure that you set up Quality of Service (QoS) correctly. If you're using Microsoft Teams and Microsoft Stream, consult the [ExpressRoute QoS requirements](/azure/expressroute/expressroute-qos). 
 
 ## Security control
 
@@ -186,4 +186,4 @@ ExpressRoute itself doesn't separate different types of Microsoft services from 
 ## Next step
 
 > [!div class="nextstepaction"]
-> [Understand Power Platform architecture](/understanding-architecture)
+> [Understand Power Platform architecture](understanding-architecture.md)

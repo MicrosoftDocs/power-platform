@@ -22,16 +22,15 @@ ms.custom:
 The benefits of using ExpressRoute for your organization include:
 
 - **Compliance**: You won't route customer information via the public internet.
-
 - **Predictability**: A dedicated connection avoids conflicts with other internet traffic.
 
-:::image type="complex" source="media/expressroute-network-overview.png" alt-text="Overview network diagram of using ExpressRoute.":::
+:::image type="complex" source="media/expressroute-network-overview.png" alt-text="Overview network diagram of using ExpressRoute." lightbox="media/expressroute-network-overview.png":::
    Overview diagram of the ExpressRoute-enabled network configuration with Microsoft public services and Azure. In the customer's network includes two offices, one in Texas and the other in Seattle. A direct connection to Microsoft public services is made by using public internet traffic from the Texas office. For the Seattle office, the network connection is set up to connect to the network partner edge, which has an ExpressRoute connection set up to the Microsoft edge. Two connections are set up, one primary and one secondary. From the Microsoft edge, Microsoft peering is used to connect to Microsoft public services, and Azure private peering is used to connect from the Microsoft edge to Azure services. 
 :::image-end:::
 
 ## Compliance
 
-Routing the traffic to Power Platform through a private connection avoids routing sensitive data over the public internet. For regulatory purposes, some organizations need to show that data is never passed
+Routing the traffic to Power Platform through a private connection avoids routing sensitive data over the public internet. For regulatory purposes, some organizations need to prove that data is never passed
 through the public internet. In these situations, using standard connections
 via the public internet to cloud services might not be acceptable.
 
@@ -40,7 +39,7 @@ Most regulations don't specify that the internet can't be used. They simply requ
 ### GDPR
 
 One of the regulations that might make ExpressRoute the right choice for your
-organization is GDPR. More information: [General Data Protection Regulation Summary](/compliance/regulatory/gdpr)
+organization is GDPR. Learn more: [General Data Protection Regulation Summary](/compliance/regulatory/gdpr)
 
 One reason to consider ExpressRoute for GDPR compliance is to demonstrate that all network activities occur under a private connection, which streamlines the process of attesting that data is protected and isn't exposed to the public internet. However, ExpressRoute isn't the only way to comply with GDPR. You can comply using the public internet if you establish proper security and protection measures.  
 

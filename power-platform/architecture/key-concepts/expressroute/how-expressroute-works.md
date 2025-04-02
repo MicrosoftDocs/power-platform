@@ -23,7 +23,7 @@ To understand how ExpressRoute integrates with Microsoft Power Platform, start b
 
 An ExpressRoute circuit represents a logical connection between your on-premises infrastructure and Microsoft cloud services through a connectivity provider. You can use multiple ExpressRoute circuits. Each circuit can be in the same or different regions and can be connected to your premises through different connectivity providers.
 
-Connectivity providers are a set of partners who help you set up ExpressRoute so that your on-premises infrastructure and Microsoft cloud are connected. For the complete list of ExpressRoute connectivity partners, go to [ExpressRoute connectivity providers](/azure/expressroute/expressroute-locations#partners). The availability of these providers will depend on the location you choose to connect from.
+Connectivity providers are a set of partners who help you set up ExpressRoute so that your on-premises infrastructure and Microsoft cloud are connected. For the complete list of ExpressRoute connectivity partners, consult [ExpressRoute connectivity providers](/azure/expressroute/expressroute-locations#partners). The availability of these providers will depend on the location you choose to connect from.
 
 An ExpressRoute circuit can offer performance advantages because a dedicated and optimized connection is set up directly through the ExpressRoute connectivity provider's infrastructure to the edge of the Microsoft network. This connection can be optimized without ExpressRoute, but because internet connectivity is typically provided through a series of partnerships and relationships among telecommunications providers, your network traffic might be routed through suboptimal connectivity paths to its destination.
 
@@ -31,7 +31,7 @@ When you agree with a connectivity provider to set up a dedicated and private co
 
 ## Peerings
 
-Each circuit has fixed bandwidth, with the bandwidth limitation dependent on [which plan you choose](https://azure.microsoft.com/pricing/details/expressroute/). This circuit is mapped to a connectivity provider and a peering location. The available bandwidth is shared across the peerings for the circuit. A circuit can have up to two separate peerings. These peerings represent the different routings used, depending on which kind of service is being requested:
+Each circuit has fixed bandwidth, with the bandwidth limitation dependent on [the plan you choose](https://azure.microsoft.com/pricing/details/expressroute/). This circuit is mapped to a connectivity provider and a peering location. The available bandwidth is shared across the peerings for the circuit. A circuit can have up to two separate peerings. These peerings represent the different routings used, depending on which kind of service is being requested:
 
 - **Microsoft peering** routes requests to Microsoft public services such as Microsoft 365, Dynamics 365, or Power Platform services.
 

@@ -32,7 +32,7 @@ Verify the following:
 
 > [!div class="checklist"]
 >
-> * Have you confirmed how client connectivity will be configured to make sure that appropriate traffic will be routed via the ExpressRoute circuit?
+> * Haw client connectivity will be configured to make sure that appropriate traffic will be routed via the ExpressRoute circuit?
 > * Are clients able to connect via the internet for non-private resources, for example, Azure Content Delivery Network?
 > * Has the client been configured to use a proxy to route traffic to the ExpressRoute subnet rather than across the internet?
 > * Are the clients connecting from a public IP address or are they hidden behind network address translation (NAT)?
@@ -82,6 +82,8 @@ Power Platform uses Microsoft peering.
 
 ## On-premises integration
 
-- Are connections from the Microsoft cloud to the on-premises network across ExpressRoute protected (that is, are they validated as if they came from the public internet)?
+> [!div class="checklist"]
+>
+> * Are connections from the Microsoft cloud to the on-premises network across ExpressRoute protected (that is, are they validated as if they came from the public internet)?
 
 :::image type="content" source="media/checklist-onprem-integration.png" alt-text="Diagram of customer network with an on-premises data gateway, with the connection to the on-premises data gateway also routed through ExpressRoute.":::
