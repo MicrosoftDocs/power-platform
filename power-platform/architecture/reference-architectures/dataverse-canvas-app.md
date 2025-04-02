@@ -53,17 +53,17 @@ These considerations implement the pillars of Power Platform Well-Architected, a
 
 **Create intentional segmentation and perimeters**: Use separate Power Platform environments for application lifecycle stages, and ensure only the right users have access to each stage to support segmentation policies.
 
-### Operational excellence  
+### Operational Excellence  
 
 **Adopt safe deployment practices**: Standardize deployment of any changes to the Power Apps application using automated deployment processes such as pipelines. Promote the application to production only after testing changes.  
 
-### Performance efficiency  
+### Performance Efficiency  
 
 **Design to meet performance requirements**: Evaluate your solution performance and volume of data requirements to ensure your Dataverse table design is appropriate. Evaluation should include how data is accessed and evaluation of how Power Apps using the Dataverse connector delegate operations to the Dataverse infrastructure. Be aware of limitations [when searching and filtering data](/power-apps/maker/canvas-apps/connections/connection-common-data-service#power-apps-delegable-functions-and-operations-for-dataverse), due to the delegation support offered by the Dataverse connector. These limitations are documented in  [Understand delegation in a canvas app](/powerapps/maker/canvas-apps/delegation-overview) and should be taken into account when choosing the right data source or backend for your app.  
 
 **Optimize logic**: By default, canvas applications using Dataverse implement logic using Power Fx, which may cause multiple interactions with Dataverse or repeated logic in multiple applications. Each operation is independent and isn't handled as an atomic transaction. For example, if the application created a Venue row but couldn’t create a session, the Venue row would remain. Dataverse supports [implementing logic](/power-apps/developer/data-platform/write-plug-in?tabs=pluginbase) that can be invoked on a Dataverse table event like on create of a row, and it also supports the concept of invoking logic on demand using the [Dataverse custom API](/power-apps/developer/data-platform/custom-api) or [Functions in Dataverse](/power-apps/maker/data-platform/functions-overview) capabilities. With both of these approaches, the work performed by the logic is in a transaction, and all work done with Dataverse data either commits or rolls back. In our previous example, the Venue row wouldn't have remained after the error occurred. Integrating these approaches optimizes logic in some scenarios by ensuring successful completion as a combined unit of work and centralizing reusable logic.  
  
-### Experience optimization  
+### Experience Optimization  
 
 **Design for efficiency**: Applications that let users access other data sources alongside Dataverse tables from a single Power Apps application without requiring interaction with multiple individual applications improve efficiency and provide a better custom visual experience. Avoid just building an application to build an application&mdash;the application should provide some efficiency to the user or other architecture benefit over using a model-driven Power Apps experience. 
 
