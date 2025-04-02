@@ -112,7 +112,7 @@ Learn more:
 - [Security and compliance considerations for intelligent application workloads](/power-platform/well-architected/intelligent-application/security)
 - [Security concepts in Microsoft Dataverse](/power-platform/admin/wp-security-cds)
 
-### Performance efficiency 
+### Performance Efficiency 
 
 - Tracking usage, dropouts, technical difficulties, and customer satisfaction score (CSAT) scores enable adjustments to the agent's approaches, offerings, and structure.  Learn more at: [Measuring agent engagement](/microsoft-copilot-studio/guidance/measuring-engagement)
 Certainly! Here's a revised version with the appropriate reference links:
@@ -121,7 +121,7 @@ Certainly! Here's a revised version with the appropriate reference links:
 - Consider using Microsoft's contact center offerings to integrate everything into the Power Platform environment, facilitating the creation of agents with Microsoft Copilot Studio. Learn more at: [Copilot onboarding guide for digital contact centers](/dynamics365/guidance/resources/cs-contact-center-copilot-onboarding-guide)
 - Consider using the Microsoft 365 Agents SDK to utilize multiple agents. Learn more at: [Microsoft 365 Agents SDK](/microsoft-365/agents-sdk/)
 
-### Experience optimization 
+### Experience Optimization 
 
 - Consolidate data into one centralized platform, such as Dataverse, to streamline access and management. Consider using [virtual tables](/power-apps/developer/data-platform/virtual-entities/get-started-ve) to integrate external data.
 - Review documents used for the Generative AI knowledge section and remove any unnecessary data.
