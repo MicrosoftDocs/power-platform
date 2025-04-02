@@ -24,10 +24,6 @@ ms.custom:
 
 # Secure Power Platform access to Azure resources
 
-> [!TIP]
-> This article provides an example scenario and visual representation of how to secure Power Platform access to Azure resources with Azure Virtual Network. This solution is a generalized example scenario architecture, which can be used for many different scenarios and industries.
-
-
 Use Microsoft Azure Virtual Network support for Power Platform to integrate Power Platform with resources inside your virtual network without exposing them to the public internet. Virtual network support uses Azure subnet delegation to manage outbound traffic from Power Platform at runtime.
 
 > [!TIP]
@@ -35,7 +31,7 @@ Use Microsoft Azure Virtual Network support for Power Platform to integrate Powe
 
 ## Architecture diagram
 
-:::image type="content" source="media/secure-access-azure-resources/secure-architecture.png" alt-text="Diagram showing secure Power Platform access to Azure resources." lightbox="media/rpa-scale-operations/secure-access-azure-resources/secure-architecture.png":::
+:::image type="content" source="media/secure-access-azure-resources/secure-architecture.png" alt-text="Diagram showing secure Power Platform access to Azure resources." lightbox="media/secure-access-azure-resources/secure-architecture.png":::
 
 ## Workflow
 
