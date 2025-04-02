@@ -17,16 +17,10 @@ search.audienceType:
 
 # Streamline document processing with AI Builder
 
-> [!TIP]
-> The article provides an example scenario and visual representation of how to process documents with AI Builder. This solution is a generalized example scenario architecture, which can be used for many different scenarios and industries.
-
-
-
 Processing documents is often a manual, time-consuming task. With Power Automate and AI Builder, you can streamline document processing and automate data extraction from various documents, such as forms, invoices, and purchase orders. 
 
-This article provides best practices, architecture diagrams, and workflows to help you design a well-architected solution tailored to your specific requirements. Using AI Builder, you can reduce manual data entry, minimize errors, and enhance your workflow efficiency.
-
-
+> [!TIP]
+> The article provides an example scenario and visual representation of how to process documents with AI Builder. This solution is a generalized example scenario architecture, which can be used for many different scenarios and industries.
 
 ## Architecture diagram
 

@@ -5,7 +5,7 @@ description: Empower your organization with Dataverse auditing to ensure account
 author: manuelap-msft
 ms.subservice: architecture-center
 ms.topic: example-scenario
-ms.date: 03/24/2025
+ms.date: 04/02/2025
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
 contributors:
@@ -85,7 +85,7 @@ This section highlights the auditing needs of different user personas for this u
 
 1. **Set up data retention policies**: Configure retention periods for audit data based on company policies (for example, using the Power Platform admin center).
 
-1. **Enable access to tooling**: Ensure admins and auditors can access logs, using the Power Platform admin center or PowerShell scripts for advanced querying.
+1. **Enable access to tooling**: Ensure admins and auditors can access logs using the Power Platform admin center or PowerShell scripts for advanced querying.
 
 1. **Set up alerts/reporting**: Set up automated alerts or reports based on specific audit data patterns (for example, if certain fields are updated outside of business hours).
 

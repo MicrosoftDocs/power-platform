@@ -17,16 +17,14 @@ search.audienceType:
 
 # ​​Integrate Microsoft Fabric Lakehouse data using Microsoft Dataverse virtual tables
 
+Using the Dataverse virtual tables feature, organizations can integrate data from Microsoft Fabric. This feature enables gathering data from multiple internal systems into a Fabric Lakehouse. Once in Fabric, Dataverse virtual tables can be created to allow Power Platform apps and automations to use the data. For example, customer interaction data from multiple internal systems can be centralized in Fabric, and then using Power Apps, a customer 360 application can allow users to have a complete view of all their organization's interactions with the customer.
+
 > [!TIP]
 > This article provides an example scenario and visual representation of how to integrate Microsoft Fabric Lakehouse data using Microsoft Dataverse virtual tables. This solution is a generalized example scenario architecture that can be used for many different scenarios and industries.
 
-Using the Dataverse virtual tables feature, organizations can integrate data from Microsoft Fabric. This feature enables gathering data from multiple internal systems into a Fabric Lakehouse. Once in Fabric, Dataverse virtual tables can be created to allow Power Platform apps and automations to use the data. For example, customer interaction data from multiple internal systems can be centralized in Fabric, and then using Power Apps, a customer 360 application can allow users to have a complete view of all their organization's interactions with the customer.
-
-
-
 ## Architecture diagram
 
-:::image type="content" source="media/app-integrate-lakehouse/app-integrate-lakehouse.png" alt-text="Architecture diagram illustrating how to integrate Microsoft Fabric Lakehouse data using Microsoft Dataverse virtual tables." border="true" lightbox="media/app-integrate-lakehouse/app-integrate-lakehouse.png":::
+:::image type="content" source="media/app-integrate-lakehouse/app-integrate-lakehouse.png" alt-text="Architecture diagram illustrating how to integrate Microsoft Fabric Lakehouse data using Microsoft Dataverse virtual tables." border="true":::
 
 ## Workflow
 
@@ -41,7 +39,7 @@ Using the Dataverse virtual tables feature, organizations can integrate data fro
 - **[Microsoft Fabric](/fabric/fundamentals/microsoft-fabric-overview)**: Microsoft Fabric is used to ingest, transform, and store structured and unstructured data from across the organization.  Similar to the Power Platform environment, Fabric uses a concept of workspace to create a container for the related solution resources like the Lakehouse, data flows and other Fabric resources used in the solution.
 - **[Virtual connector provider](/power-apps/maker/data-platform/create-virtual-tables-using-connectors?tabs=fabric)**: Virtual tables enable integrating data from external data sources by representing that data as tables in Microsoft Dataverse, without data replication. For each data source, a data provider must handle the interaction between Dataverse and the data source and define the behavior of the virtual table. When creating a virtual table for Fabric Lakehouse data, the prebuilt Fabric virtual connector provider is used as the data provider. This approach uses a typical Power Platform connection and connection reference to handle the Fabric workspace and Power Platform environment specifics. The following diagram illustrates how these components fit together.
 
-:::image type="content" source="media/app-integrate-lakehouse/app-integrate-lakehouse-vt.png" alt-text="Screenshot of connecting data source to Dataverse" border="true" lightbox="media/app-integrate-lakehouse/app-integrate-lakehouse-vt.png":::
+:::image type="content" source="media/app-integrate-lakehouse/app-integrate-lakehouse-vt.png" alt-text="Screenshot of connecting data source to Dataverse" border="true":::
 
 - **[Power Apps](/power-apps/)**: Power Apps is used to implement the user experience of the solution. Makers can build the application using the virtual tables that represent the Fabric data by adding them as an application data source just like other Dataverse tables.
 - **[Power Automate](/power-automate/)**: Power Automate is used to implement the scheduled run and automation of producing the monthly account executive summary for each of their customers. Power Automate uses the virtual tables that surface Fabric data with the Dataverse connector.

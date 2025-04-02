@@ -5,7 +5,7 @@ description: Discover practical solution ideas for Microsoft Power Platform and 
 author: manuelap-msft
 ms.subservice: architecture-center
 ms.topic: overview
-ms.date: 03/24/2025
+ms.date: 04/02/2025
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
 contributors: 
@@ -23,9 +23,9 @@ Explore these solution ideas to gain valuable insights and practical knowledge t
 
 | Title | Description |
 | --- | --- |
-| **[Healthcare patient support agent architecture](agent-healthcare-patient-support.md)** | Streamline patient interactions and reduce administrative burdens for healthcare providers |
+| **[Healthcare Patient Support Agent architecture](agent-healthcare-patient-support.md)** | Streamline patient interactions and reduce administrative burdens for healthcare providers |
 | **[Property rental portal with AI-driven search and payment processing](agent-rental-portal.md)** | Build a comprehensive rental portal that uses AI-driven search capabilities and seamless payment processing. |
-| **[Enterprise visual vehicle inspection engine](app-evvie.md)** | Inspect vehicles and assess damage using generative AI and Power Platform. |
+| **[Enterprise Visual Vehicle Inspection Engine](app-evvie.md)** | Inspect vehicles and assess damage using generative AI and Power Platform. |
 | **[Custom contact center solution with Copilot Studio agent](agent-custom-contact-center.md)** | Enhance customer service efficiency through integrated platforms and technologies. |
 | **[Travel concierge using generative AI with Copilot Studio](agent-travel-customer.md)** | Employ an AI-driven solution to enhance customer interactions and streamline information access. |
-| **[Ticket management with Copilot Studio](agent-ticket-and-refund.md)** | Improve ticket refund and management processes by deploying both a user-based and autonomous agent to integrate with legacy systems. |
+| **[Ticket management system with Copilot Studio](agent-ticket-and-refund.md)** | Improve ticket refund and management processes by deploying both a user-based and autonomous agent to integrate with legacy systems. |

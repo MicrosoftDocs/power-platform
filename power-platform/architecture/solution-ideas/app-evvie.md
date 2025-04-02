@@ -1,6 +1,6 @@
 ---
 title: Revolutionize vehicle inspections with EVVIE
-description: Discover how EVVIE uses AI and Power Platform to automate vehicle inspections, saving time and improving accuracy.
+description: Discover how the Enterprise Visual Vehicle Inspection Engine uses AI and Power Platform to automate vehicle inspections, saving time and improving accuracy.
 #customer intent: As a Power-Platform user, I want to understand the workflow of EVVIE so that I can design a similar solution.
 author: manuelap-msft
 ms.subservice: architecture-center
@@ -17,20 +17,18 @@ search.audienceType:
 
 # Revolutionize vehicle inspections with EVVIE
 
-> [!TIP]
-> This article describes a solution idea. Your cloud architect can use this guidance to help visualize the major components for a typical implementation of this architecture. Use this article as a starting point to design a well-architected solution that aligns with your workload's specific requirements.
-
-The enterprise visual vehicle inspection engine (EVVIE) uses AI and Microsoft Power Platform to revolutionize the vehicle inspection process. By automating inspections, EVVIE saves time and enhances accuracy, making it an invaluable tool for organizations managing large vehicle fleets.
+The Enterprise Visual Vehicle Inspection Engine (EVVIE) uses AI and Microsoft Power Platform to revolutionize the vehicle inspection process. By automating inspections, EVVIE saves time and enhances accuracy, making it an invaluable tool for organizations managing large vehicle fleets.
 
 This article provides an overview of EVVIE's architecture, workflow, and key components, offering insights into how this innovative solution can streamline vehicle inspections and maintenance.
 
 Inspect vehicles and assess damage using generative AI and Power Platform. For a demo and more information, visit [aka.ms/EVVIE](https://aka.ms/EVVIE)
 
-
+> [!TIP]
+> This article describes a solution idea. Your cloud architect can use this guidance to help visualize the major components for a typical implementation of this architecture. Use this article as a starting point to design a well-architected solution that aligns with your workload's specific requirements.
 
 ## Architecture diagram
 
-:::image type="content" source="media/app-evvie/evvie.png" alt-text="Enterprise Visual Vehicle Inspection Engine architecture diagram" border="true"  lightbox="media/app-evvie/evvie.png":::
+:::image type="content" source="media/app-evvie/evvie.png" alt-text="Architecture diagram of the Enterprise Visual Vehicle Inspection Engine's use of low-code and pro-code to drive AI-assisted vehicle inspection." border="true" lightbox="media/app-evvie/evvie.png":::
 
 ## Workflow
 
@@ -66,7 +64,7 @@ EVVIE helps organizations with large vehicle fleets manage regular inspections a
 
 ## Considerations
 
-These considerations implement the pillars of Power Platform well-architected, which is a set of guiding tenets that can improve the quality of a workload. Learn more in [Microsoft Power Platform Well-Architected](https://aka.ms/powa).
+[!INCLUDE [pp-arch-ppwa-link](../../includes/pp-arch-ppwa-link.md)]
 
 ### Reliability
 
@@ -123,4 +121,4 @@ Principal authors:
 
 ## Related resources
 
-For a demo video, further explanation of functionality, architecture, source code, and more, visit EVVIE on GitHub: [aka.ms/EVVIE](https://github.com/microsoft/SLG-Business-Applications/tree/main/demos/EVVIE).
+For a demo video, further explanation of functionality, architecture, source code, and more, visit EVVIE on GitHub at [aka.ms/EVVIE](https://github.com/microsoft/SLG-Business-Applications/tree/main/demos/EVVIE).

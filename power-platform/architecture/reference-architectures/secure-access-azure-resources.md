@@ -31,7 +31,7 @@ Use Microsoft Azure Virtual Network support for Power Platform to integrate Powe
 
 ## Architecture diagram
 
-:::image type="content" source="media/secure-access-azure-resources/secure-architecture.png" alt-text="Diagram showing secure Power Platform access to Azure resources." lightbox="media/secure-access-azure-resources/secure-architecture.png":::
+:::image type="content" source="media/secure-access-azure-resources/secure-architecture.png" alt-text="Architecture diagram showing secure Power Platform access to Azure resources." lightbox="media/secure-access-azure-resources/secure-architecture.png":::
 
 ## Workflow
 

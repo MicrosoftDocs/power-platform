@@ -19,10 +19,6 @@ search.audienceType:
 
 # Travel concierge using generative AI with Copilot Studio
 
-
-> [!TIP]
-> This article describes a solution idea. Your cloud architect can use this guidance to help visualize the major components for a typical implementation of this architecture. Use this article as a starting point to design a well-architected solution that aligns with your workload's specific requirements.
-
 This article outlines a solution idea for a travel company's customer service, employing AI-driven solutions to enhance customer interactions and streamline information access.
 
 - **AI-driven customer support**: The Microsoft Copilot Studio agent is designed to assist customers with travel-related inquiries, including reservation checks and balance inquiries, reducing the need for call center interactions.
@@ -33,11 +29,12 @@ This article outlines a solution idea for a travel company's customer service, e
 > [!NOTE]
 > This solution idea is inspired by Holland America, who developed an agent using Microsoft Copilot Studio that acts as a digital concierge on their website to support new and existing customers and travel advisors. Learn more: [Holland America customer story](https://www.microsoft.com/customers/story/19787-holland-america-dataverse).
 
-
+> [!TIP]
+> This article describes a solution idea. Your cloud architect can use this guidance to help visualize the major components for a typical implementation of this architecture. Use this article as a starting point to design a well-architected solution that aligns with your workload's specific requirements.
 
 ## Architecture diagram
 
-:::image type="content" source="media/travel-agent/travel-agent-arch.png" alt-text="Architecture diagram of a property rental portal with an AI-driven search and payment processing." border="true"  lightbox="media/travel-agent/travel-agent-arch.png":::
+:::image type="content" source="media/travel-agent/travel-agent-arch.png" alt-text="Architecture diagram of a property rental portal with an AI-driven search and payment processing." border="true" lightbox="media/travel-agent/travel-agent-arch.png":::
 
 ## Workflow
 
@@ -97,7 +94,7 @@ This use case is based on a travel company's approach to improving their custome
 
 ## Considerations
 
-These considerations implement the pillars of Power Platform Well-Architected, a set of guiding tenets that can improve the quality of a workload. Learn more in [Microsoft Power Platform Well-Architected](https://aka.ms/powa).
+[!INCLUDE [pp-arch-ppwa-link](../../includes/pp-arch-ppwa-link.md)]
 
 ### Reliability
 

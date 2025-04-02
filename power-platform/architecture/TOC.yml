@@ -1,7 +1,7 @@
 - name: Power Platform and Copilot Studio Architecture Center
   href: ./index.yml
   items:
-    - name: Overview
+    - name: Welcome
       href: architecture-center-overview.md
     - name: What's new
       href: whats-new.md
@@ -25,7 +25,7 @@
             href: key-concepts/expressroute/planning-expressroute.md
           - name: Set up ExpressRoute
             href: key-concepts/expressroute/setup.md
-          - name: ExpressRoute readiness checklist
+          - name: Checklist for ExpressRoute readiness
             href: key-concepts/expressroute/checklist.md
       - name: Dataverse auditing
         href: key-concepts/dataverse-auditing.md
@@ -49,7 +49,7 @@
         href: reference-architectures/arch-pattern-sap.md
       - name: ​​Integrate Microsoft Fabric Lakehouse data using Dataverse virtual tables
         href: reference-architectures/app-integrate-lakehouse.md
-      - name: Use REST APIs to extend the functionality of canvas apps
+      - name: Use REST APIs to extend canvas functionality of canvas apps
         href: reference-architectures/custom-connector-canvas.md
       - name: ​Use the Dataverse connector with canvas apps​ 
         href: reference-architectures/dataverse-canvas-app.md

@@ -1,17 +1,22 @@
 ---
 title: Microsoft Power Platform and Copilot Studio architecture key concepts overview
-description: Overview of architecture key concepts for Microsoft Power Platform and Copilot Studio
+description: Learn foundational principles to design scalable and efficient solutions with Microsoft Power Platform and Copilot Studio.
+#customer intent: As a Power Platform user, I want to understand architecture key concepts of Microsoft Power Platform and Copilot Studio so that I can design scalable and efficient solutions.  
 author: manuelap-msft
 ms.subservice: architecture-center
 ms.topic: overview
-ms.date: 04/22/2025
+ms.date: 04/02/2025
 ms.author: mapichle
-ms.reviewer: pankajsharma2087
-contributors: 
+ms.reviewer: jhaskett-msft
+contributors:
   - manuelap-msft
-search.audienceType: 
+search.audienceType:
   - admin
   - flowmaker
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-description
+  - ai-seo-date:04/02/2025
 ---
 
 # Architecture key concepts overview
@@ -20,5 +25,5 @@ Architecture key concepts are the foundational principles and recommendations th
 
 | Title | Description |
 | --- | --- |
-| **[Dataverse auditing](dataverse-auditing.md)** | Track and record changes to data, user activities, and system events using Dataverse auditing.|
-| **[ExpressRoute and Power Platform](expressroute/overview.md)** | Learn how to use Microsoft Azure ExpressRoute to to connect your on-premises network to Microsoft cloud services by using private connectivity. |
+| **[ExpressRoute and Power Platform](expressroute/overview.md)** | Learn how to use Microsoft Azure ExpressRoute to connect your on-premises network to Microsoft cloud services by using private connectivity. |
+| **[Dataverse auditing](dataverse-auditing.md)** | Track and record changes to data, user activities, and system events with Dataverse auditing.|

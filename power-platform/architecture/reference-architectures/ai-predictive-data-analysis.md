@@ -23,18 +23,15 @@ ms.custom:
 
 # Predictive data analysis using Dataverse, Fabric, and Azure AI
 
+In today's data-driven world, applying predictive analytics enhances decision-making processes and operational efficiency. This article provides an overview of how to perform predictive data analysis using Dataverse, Microsoft Fabric, and Azure AI to design a well-architected solution. It covers best practices for data ingestion, model training, and visualization, enabling you to build robust predictive models and actionable insights.
+
 > [!TIP]
 > The article provides an example scenario and visual representation of how to perform predictive data analysis with Dataverse, Fabric, and Azure AI. This solution is a generalized example scenario architecture, which can be used for many different scenarios and industries.
 
 
-
-In today's data-driven world, applying predictive analytics enhances decision-making processes and operational efficiency. This article provides an overview of how to perform predictive data analysis using Dataverse, Microsoft Fabric, and Azure AI to design a well-architected solution. It covers best practices for data ingestion, model training, and visualization, enabling you to build robust predictive models and actionable insights.
-
-
-
 ## Architecture diagram
 
-:::image type="content" source="media/ai-predictive-data/ai-predictive-data.png" alt-text="Predictive data analysis with Dataverse, Fabric, and Azure AI architecture diagram." border="true" lightbox="media/ai-predictive-data/ai-predictive-data.png":::
+:::image type="content" source="media/ai-predictive-data/ai-predictive-data.png" alt-text="Architecture diagram illustrating predictive data analysis with Dataverse, Fabric, and Azure AI." border="true" lightbox="media/ai-predictive-data/ai-predictive-data.png":::
 
 ## Workflow
 
@@ -60,7 +57,9 @@ In today's data-driven world, applying predictive analytics enhances decision-ma
 
 ## Scenario details
 
-### Potential use case: predicting customer churn
+This section describes a scenario where a company wants to predict customer churn to prevent user dissatisfaction.
+
+### Potential use case: Predicting customer churn
 
 Learn how to use machine learning models to predict which customers are likely to stop using your service.
 

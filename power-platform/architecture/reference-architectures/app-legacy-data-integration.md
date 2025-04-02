@@ -17,16 +17,11 @@ search.audienceType:
 
 # Legacy data integration with Power Automate and SharePoint
 
-> [!TIP]
-> This article provides an example scenario and visual representation of how to integrate Power Platform solutions with legacy data. This solution is a generalized example scenario architecture, which can be used for many different scenarios and industries.
-
-
-
 
 Integrating legacy data with modern platforms can be complex and challenging. This article provides a comprehensive solution using Power Automate, SharePoint, Dataverse, Power BI, and Microsoft Teams to streamline the process. With these tools, you can automate data retrieval, centralize storage, and enhance analytics, ultimately improving business agility and decision-making.
 
-This article outlines the architecture, workflow, components, and key considerations to help you design a robust, and efficient legacy data integration solution.
-
+> [!TIP]
+> This article provides an example scenario and visual representation of how to integrate Power Platform solutions with legacy data. This solution is a generalized example scenario architecture, which can be used for many different scenarios and industries.
 
 
 ## Architecture diagram

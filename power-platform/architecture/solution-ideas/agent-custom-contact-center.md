@@ -21,9 +21,6 @@ search.audienceType:
 
 # Custom contact center solutions with Copilot Studio agent
 
-> [!TIP]
-> This article describes a solution idea. Your cloud architect can use this guidance to help visualize the major components for a typical implementation of this architecture. Use this article as a starting point to design a well-architected solution that aligns with your workload's specific requirements.
-
 
 This article outlines the architecture and services of a national banking company aiming to enhance customer service efficiency through integrated platforms and technologies.
 
@@ -35,7 +32,8 @@ This article outlines the architecture and services of a national banking compan
 > [!NOTE]
 > This solution idea is inspired by ABN AMRO Bank, who migrated to Microsoft Copilot Studio to support over 3.5 million customer conversations. Learn more: [ABN AMRO Bank customer story](https://www.microsoft.com/customers/story/19754-abn-amro-bank-microsoft-copilot-studio#asset_idabn-amro-bank-customer-experience-architecture).
 
-
+> [!TIP]
+> This article describes a solution idea. Your cloud architect can use this guidance to help visualize the major components for a typical implementation of this architecture. Use this article as a starting point to design a well-architected solution that aligns with your workload's specific requirements.
 
 ## Architecture diagram
 
@@ -98,7 +96,7 @@ This use case illustrates how a national banking company enhances customer exper
 
 ## Considerations
 
-These considerations implement the pillars of Power Platform Well-Architected, a set of guiding tenets that can improve the quality of a workload. Learn more at [Microsoft Power Platform Well-Architected](https://aka.ms/powa).
+[!INCLUDE [pp-arch-ppwa-link](../../includes/pp-arch-ppwa-link.md)]
 
 ### Reliability
 

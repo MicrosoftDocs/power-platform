@@ -19,19 +19,16 @@ search.audienceType:
 
 # ​​Distributed tracing across multiple services​ in Power Platform
 
-> [!TIP]
-> The article provides an example scenario and visual representation of how to trace events across multiple services. This solution is a generalized example scenario architecture, which can be used for many different scenarios and industries.
-
-
-
 This article explains how to achieve comprehensive observability across multiple services, including those within Power Platform, Azure, and Dynamics 365.
-
 
 Monitoring tools and processes are essential for maintaining the health and performance of applications and services. They help in tracking metrics, logs, and traces to identify issues and optimize performance. [Azure Monitor](/azure/azure-monitor/fundamentals/overview) is a comprehensive solution for collecting, analyzing, and acting on telemetry from your cloud and on-premises environments. It uses [Kusto Query Language (KQL)](/kusto/query/) to query and correlate telemetry data across different components. Monitoring tools and processes are a well understood pattern. [Create KQL queries to query and correlate telemetry across different components](/azure/aks/monitor-aks?tabs=cilium) and [Query data in Azure Monitor with Azure Data Explorer](/azure/data-explorer/query-monitor-data) demonstrate how to add and query generated monitoring data. This pattern builds upon existing methods to achieve comprehensive observability across multiple services, including those within Power Platform, Azure, and Dynamics 365.
 
+> [!TIP]
+> The article provides an example scenario and visual representation of how to trace events across multiple services. This solution is a generalized example scenario architecture, which can be used for many different scenarios and industries.
+
 ## Architecture diagram
 
-:::image type="content" source="media/distributed-tracing/distributed-tracing.png" alt-text="Diagram of distributed tracing across multiple Power Platform services. " lightbox="media/distributed-tracing/distributed-tracing.png":::
+:::image type="content" source="media/distributed-tracing/distributed-tracing.png" alt-text="Architecture diagram of distributed tracing across multiple Power Platform services. " lightbox="media/distributed-tracing/distributed-tracing.png":::
 
 ## Workflows
 
@@ -113,8 +110,6 @@ Using the W3C TraceContext standard for distributed tracing offers several pract
 1. Dependency tracking: It enables you to track dependencies between services and understand how they interact.
 
 By implementing distributed tracing with the W3C TraceContext standard, you can gain valuable insights into your application's behavior, improve performance, and enhance the overall user experience.
-
-
 
 ### Potential use cases
 

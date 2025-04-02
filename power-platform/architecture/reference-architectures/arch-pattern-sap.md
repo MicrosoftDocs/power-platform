@@ -21,11 +21,12 @@ search.audienceType:
 
 Integrating Microsoft Power Platform with SAP enhances data management and automation capabilities within your organization. This article explains how to connect these two platforms seamlessly. 
 
-Learn about the architecture, workflows, and connectivity methods available to ensure a smooth integration process. Additionally, alternative connectivity options and use cases are discussed to help you choose the best approach for your needs. Using Power Platform streamlines operations, improves efficiency, and maintains robust security and governance standards while working with SAP systems.
+> [!TIP]
+> This article provides an example scenario and visual representation of how to integrate Power Platform with SAP. This solution is a generalized example scenario architecture, which can be used for many different scenarios and industries.
 
 ## Architecture diagram
 
-:::image type="content" source="media/arch-pattern-sap/architecture.png" alt-text="Diagram that shows an architecture of a Microsoft Power Platform integration with a typical SAP landing zone." lightbox="media/arch-pattern-sap/architecture.png":::
+:::image type="content" source="media/arch-pattern-sap/architecture.png" alt-text="Architecture diagram that shows a Microsoft Power Platform integration with a typical SAP landing zone." lightbox="media/arch-pattern-sap/architecture.png":::
 
 ## Workflow
 
@@ -111,10 +112,9 @@ There are multiple ways to work with SAP. You can access SAP directly, as discus
 
 Stringent security and governance for developers and end users are vital when building SAP-connected solutions with Power Platform. Power Platform bypasses authorizations in SAP. There are many levels to ensure safety, such as using Microsoft Entra ID, tenant-access, app access, and SAP authentication. 
 
-:::image type="content" source="media/arch-pattern-sap/security.png" alt-text="Diagram of Microsoft Entra ID structure for an example tenant, showing environments, apps, flows, connectors, and access levels." lightbox="media/arch-pattern-sap/security.png":::
+:::image type="content" source="media/arch-pattern-sap/security.png" alt-text="Diagram of Microsoft Entra ID structure for an example tenant, showing environments, apps, flows, connectors, and access levels." lightbox="media/arch-pattern-sap/security.png":::     
+    Diagram illustrating the structure and access levels within a Microsoft Entra ID environment, which includes Development, Quality, and Production environments for both Contoso USA and Contoso Australia. Each environment includes Apps, Flows, Connectors, Pages, and Copilots with integrations to services like Salesforce, SAP, Workday, SQL Server, and so on. 
 :::image-end:::
-     
-Diagram illustrating the structure and access levels within a Microsoft Entra ID environment, which includes Development, Quality, and Production environments for both Contoso USA and Contoso Australia. Each environment includes Apps, Flows, Connectors, Pages, and Copilots with integrations to services like Salesforce, SAP, Workday, SQL Server, etc. 
 
 Key elements are labeled with numbers indicating different access levels:
 1. Tenant access and isolation.
@@ -140,6 +140,8 @@ Principal authors:
 - **[Lee Zuckett](https://www.linkedin.com/in/leezuckett/)**, Senior Program Manager
 
 ## Related resources
+
+Power Platform and SAP:
 
 - [What is Microsoft Power Platform integration with SAP?](/power-platform/sap/explore/power-platform-and-sap-integration)
 - [What are the Microsoft Power Platform and SAP connection options?](/power-platform/sap/connect/connect-power-platform-and-sap)
