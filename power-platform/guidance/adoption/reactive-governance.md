@@ -1,5 +1,5 @@
 ---
-title: Reactive governance: Optimize Power Platform security and performance
+title: Reactive governance- Optimize Power Platform security and performance
 description: Learn how to optimize Power Platform security and performance with reactive governance by addressing issues in real time and improving tenant hygiene.
 #customer intent: As a Power Platform user, I want to address business continuity risks so that I can ensure uninterrupted operations.
 author: manuelap-msft
@@ -11,7 +11,7 @@ ms.reviewer: pankajsharma2087
 ms.date: 04/02/2025
 ---
 
-# Reactive governance: Optimize Power Platform security and performance
+# Reactive governance- Optimize Power Platform security and performance
 
 Reactive governance refers to the approach of managing and addressing actions and issues as they arise, based on real-time data and insights. Instead of relying solely on predefined policies and procedures, reactive governance involves continuously monitoring the environment, identifying potential problems, and taking corrective actions promptly.
 
@@ -49,6 +49,6 @@ Organizations can use **[APIs and connectors](/power-platform/admin/programmabil
 
 ## Use Monitoring for effective governance
 
-Effective monitoring is essential for reactive governance. Monitor paltform usage and compliance and identify issues that need to be resolved or actions that need to be taken. 
+Effective monitoring is essential for reactive governance. Monitor platform usage and compliance and identify issues that need to be resolved or actions that need to be taken. 
 
 Learn more: [Gain insights into Power Platform adoption](observability.md)
