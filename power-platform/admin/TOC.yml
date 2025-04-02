@@ -8,7 +8,7 @@
           href: admin-documentation.md
         - name: Environment management
           items:
-            - name: Environment managemtn capabilities
+            - name: Environment management capabilities
               href: environment-management-overview.md
             - name: Managed security
               href: security/managed-security.md
