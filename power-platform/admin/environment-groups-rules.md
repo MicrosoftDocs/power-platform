@@ -3,7 +3,7 @@ title: Rules for environment groups
 description: Learn how to govern your Managed Environments with rules in bulk.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/31/2025
+ms.date: 04/02/2025
 author: mikferland-msft
 ms.author: miferlan
 ms.reviewer: sericks
@@ -19,6 +19,8 @@ contributors:
 # Rules for environment groups
 
 [!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
+The following rules can be appied to environment groups.
 
 | # | Rules (in alphabetical order) |
 |----|----------|
