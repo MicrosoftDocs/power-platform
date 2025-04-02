@@ -1,11 +1,11 @@
 ---
-title: Document processing with AI Builder
-description: Streamline document processing with AI Builder and Power Automate. Learn how to automate data extraction and enhance workflow efficiency.
+title: Streamline document processing with AI Builder
+description: Streamline document processing with AI Builder and Power Automate to automate data extraction and enhance workflow efficiency.
 #customer intent: As a flowmaker, I want to integrate AI Builder with Power Automate so that I can process documents automatically.
 author: manuelap-msft
 ms.subservice: architecture-center
 ms.topic: example-scenario
-ms.date: 04/22/2025
+ms.date: 03/21/2025
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
 contributors:
@@ -15,18 +15,22 @@ search.audienceType:
   - flowmaker
 ---
 
-# Document processing with AI Builder
-
-Processing documents is often a manual, time-consuming task. With Power Automate and AI Builder, you can streamline document processing and automate data extraction from various documents such as forms, invoices, and purchase orders. 
-
-This article provides best practices, architecture diagrams, and workflows to help you design a well-architected solution tailored to your specific requirements. By using AI Builder, you can reduce manual data entry, minimize errors, and enhance your workflow efficiency.
+# Streamline document processing with AI Builder
 
 > [!TIP]
 > The article provides an example scenario and visual representation of how to process documents with AI Builder. This solution is a generalized example scenario architecture, which can be used for many different scenarios and industries.
 
+
+
+Processing documents is often a manual, time-consuming task. With Power Automate and AI Builder, you can streamline document processing and automate data extraction from various documents, such as forms, invoices, and purchase orders. 
+
+This article provides best practices, architecture diagrams, and workflows to help you design a well-architected solution tailored to your specific requirements. Using AI Builder, you can reduce manual data entry, minimize errors, and enhance your workflow efficiency.
+
+
+
 ## Architecture diagram
 
-:::image type="content" source="media/ai-doc-processing/ai-doc-processing.png" alt-text="Architecture diagram illustrating document processing with AI Builder, Power Automate, Dataverse, Power Apps, and Power BI." border="true":::
+:::image type="content" source="media/ai-doc-processing/ai-doc-processing.png" alt-text="Architecture diagram illustrating document processing with AI Builder, Power Automate, Dataverse, Power Apps, and Power BI." border="true" lightbox="media/ai-doc-processing/ai-doc-processing.png":::
 
 ## Workflow
 
@@ -47,7 +51,7 @@ This article provides best practices, architecture diagrams, and workflows to he
 
 ## Scenario details
 
-This architecture streamlines and automates document-intensive business processes. By using AI Builder, organizations reduce manual data entry, minimize errors, and accelerate decision-making workflows. Use cases include:
+This architecture streamlines and automates document-intensive business processes. By using AI Builder, organizations reduce manual data entry, minimize errors, and accelerate decision-making workflows. Use cases include the following:
 
 - Automating invoice processing.
 - Streamlining purchase order approvals.
@@ -55,7 +59,7 @@ This architecture streamlines and automates document-intensive business processe
 
 ## Considerations
 
-These considerations implement the pillars of Power Platform Well-Architected, a set of guiding tenets that improve the quality of a workload. Learn more in [Microsoft Power Platform Well-Architected](/power-platform/well-architected/).
+[!INCLUDE [pp-arch-ppwa-link](../../includes/pp-arch-ppwa-link.md)]
 
 ### Reliability
 
@@ -73,15 +77,15 @@ These considerations implement the pillars of Power Platform Well-Architected, a
 
 - **Principle of least privilege:** Permissions are restricted to minimize exposure. Power Automate flows access systems using the least privileged accounts or a service principal where possible. Application users should only have access to the data tables that support the application.
 
-### Operational excellence
+### Operational Excellence
 
 **Application lifecycle management (ALM):** Solution assets are stored in source control, and Dataverse solutions are used to promote assets from development, to test, and then to production.
 
-### Performance efficiency
+### Performance Efficiency
 
 **Use pre-built models:** Consider using prebuilt models when they match your document scenario. For example, for invoice processing use the prebuilt [invoice processing AI model](/ai-builder/prebuilt-invoice-processing). Prebuilt models save you time by eliminating the need to gather data to train and test your own model.
 
-### Experience optimization
+### Experience Optimization
 
 **Efficient handling of document review:** The app built with Power Apps should be a single-purpose application that lets users select documents that need review and quickly identify what review is needed. Actions available to the user should be easy to understand and complete without the potential for introducing human error by accidentally selecting the wrong outcome.
 

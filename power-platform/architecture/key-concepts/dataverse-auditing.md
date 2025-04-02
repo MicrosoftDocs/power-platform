@@ -1,11 +1,11 @@
 ---
 title: Dataverse auditing
-description: Learn how to integrate legacy data with modern platforms using Power Automate, SharePoint, Dataverse, Power BI, and Microsoft Teams.
-#customer intent: As an admin, I want to understand how to enable Dataverse auditing so that I can track and record changes to data.
+description: Empower your organization with Dataverse auditing to ensure accountability, detect risks, and align with regulatory standards.
+#customer intent: As a Power Platform admin, I want to set up Dataverse auditing so that I can track data changes, user activities, and system and business events for compliance and security.
 author: manuelap-msft
 ms.subservice: architecture-center
 ms.topic: example-scenario
-ms.date: 04/22/2025
+ms.date: 03/24/2025
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
 contributors:
@@ -15,11 +15,15 @@ ms.contributors:
 search.audienceType:
   - admin
   - flowmaker
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-description
+  - ai-seo-date:03/24/2025
 ---
 
 # Dataverse auditing
 
-This article explains auditing in Dataverse, covering both data auditing and business event auditing.
+Dataverse auditing enables organizations to track data changes, user activities, and system and business events to ensure compliance and security.
 
 > [!TIP]
 > The article provides an example scenario and visual representation of how to establish Dataverse auditing. This solution is a generalized example scenario architecture, which can be used for many different scenarios and industries.
@@ -40,13 +44,13 @@ A financial institution needs to track data modifications and security incidents
 
 The components involved in this scenario interact as follows:
 
-- **Dataverse** is used to store and track compliance records, incidents, and approvals. Dataverse auditing needs to be enabled to track CRUD (create, read, update, and delete) actions and serves as the central data source for security tracking. Additionally, role-based security can be used to control access to sensitive compliance data.
+- **Dataverse**: Stores and tracks compliance records, incidents, and approvals. Dataverse auditing needs to be enabled to track CRUD (create, read, update, and delete) actions and serves as the central data source for security tracking. Additionally, role-based security can be used to control access to sensitive compliance data.
 
 - **Power Apps (model-driven and canvas)**: Security teams use model-driven apps to manage policies and regulations and provide structured compliance reviews for admin dashboards and reports. Canvas apps allow end users to self-monitor their data access and report any compliance violations or incidents via a user-friendly interface for submitting incidents.
 
-- **Power Automate** sends alerts to notify admins and security teams of suspicious activities.
+- **Power Automate**: Sends alerts to notify admins and security teams about suspicious activities.
 
-- **Power BI dashboard** helps admins and security teams analyze security incident trends.
+- **Power BI dashboard**: Helps admins and security teams analyze trends in security incidents.
 
 ### Persona-based audit consumption
 
@@ -56,8 +60,8 @@ This section highlights the auditing needs of different user personas for this u
 
 | Role | Employees accessing PowerApps and Dataverse for business needs |
 |----------|----------------------------------------------------------------|
-| **How they use audit logs** | - View who accessed their data and when<br>- Receive notifications if their records are modified<br>- Report unauthorized access via Canvas apps |
-| **Components used** | - Canvas apps to view personal/self-service audit logs within Canvas apps and report issues<br>- Email notifications if their data is accessed by unauthorized users |
+| **How they use audit logs** | - View who accessed their data and when<br>- Receive notifications if their records are modified<br>- Report unauthorized access via canvas apps |
+| **Components used** | - Canvas apps to view personal/self-service audit logs within canvas apps and report issues<br>- Email notifications if their data is accessed by unauthorized users |
 
 #### Security teams (threat detection and incident response)
 
@@ -77,7 +81,7 @@ This section highlights the auditing needs of different user personas for this u
 
 1. **Enable audit logging**: Administrators must enable auditing on the Dataverse environment and select the entities to be logged (for example, Ticket or Case).
 
-1. **Configure permissions**: Ensure the appropriate roles are assigned to users (for example, Support Agents for ticket management, Admins for accessing audit logs).
+1. **Configure permissions**: Ensure the appropriate roles are assigned to users (for example, support agents for ticket management, admins for accessing audit logs).
 
 1. **Set up data retention policies**: Configure retention periods for audit data based on company policies (for example, using the Power Platform admin center).
 
@@ -93,7 +97,7 @@ The key capabilities of business event auditing include:
 
 - **Tracking event lifecycles**: Capture the full lifecycle of a business event, from initiation to resolution, to ensure all actions are traceable.
 - **Detailed change logs**: Maintain detailed logs of who performed each action, when it occurred, and the data affected.
-- **Role-based insights**: Enable relevant stakeholders (for example, business managers, auditors, compliance officers) to view and report on the status and history of key events.
+- **Role-based insights**: Enable relevant stakeholders (for example, business managers, auditors, and compliance officers) to view and report on the status and history of key events.
 - **Anomaly detection**: Identify unusual or out-of-policy events (for example, approvals made outside of business hours or policy changes without proper authorization).
 
 ## Business events use case
@@ -104,7 +108,7 @@ In a financial institution's loan approval process, it's important to track diff
 
 :::image type="content" source="media/dataverse-auditing/business-event.png" alt-text="Diagram illustrating a sample business auditing workflow with Dataverse, Power Automate, and Power BI.":::
 
-The workflow for business event auditing in our example loan approval process includes the following steps:
+The workflow for business event auditing in the example loan approval process includes the following steps:
 
 **Loan creation:**
 
@@ -143,7 +147,7 @@ The workflow for business event auditing in our example loan approval process in
 
 ## Considerations 
 
-These considerations implement the pillars of Power Platform Well-Architected, a set of guiding tenets that improve the quality of a workload. Learn more in [Microsoft Power Platform Well-Architected](/power-platform/well-architected/).
+[!INCLUDE [pp-arch-ppwa-link](../../includes/pp-arch-ppwa-link.md)]
 
 ## Contributors
 

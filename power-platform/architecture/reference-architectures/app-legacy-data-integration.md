@@ -1,10 +1,11 @@
 ﻿---
-title: Legacy data integration solution
+title: Legacy data integration with Power Automate and SharePoint.
 description: Learn how to integrate legacy data with modern platforms using Power Automate, SharePoint, Dataverse, Power BI, and Microsoft Teams.
+#customer intent: As a Power Platform user, I want to integrate legacy data with modern platforms so that I can streamline data retrieval and enhance analytics.
 author: manuelap-msft
 ms.subservice: architecture-center
 ms.topic: example-scenario
-ms.date: 04/22/2025
+ms.date: 03/21/2025
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
 contributors: 
@@ -14,24 +15,29 @@ search.audienceType:
   - flowmaker
 ---
 
-# Legacy data integration solution
-
-Integrating legacy data with modern platforms can be complex and challenging. This article provides a comprehensive solution using Power Automate, SharePoint, Dataverse, Power BI, and Microsoft Teams to streamline the process. With these tools, you can automate data retrieval, centralize storage, and enhance analytics, ultimately improving business agility and decision-making.
-
-This article outlines the architecture, workflow, components, and key considerations to help you design a robust and efficient legacy data integration solution.
+# Legacy data integration with Power Automate and SharePoint
 
 > [!TIP]
 > This article provides an example scenario and visual representation of how to integrate Power Platform solutions with legacy data. This solution is a generalized example scenario architecture, which can be used for many different scenarios and industries.
 
+
+
+
+Integrating legacy data with modern platforms can be complex and challenging. This article provides a comprehensive solution using Power Automate, SharePoint, Dataverse, Power BI, and Microsoft Teams to streamline the process. With these tools, you can automate data retrieval, centralize storage, and enhance analytics, ultimately improving business agility and decision-making.
+
+This article outlines the architecture, workflow, components, and key considerations to help you design a robust, and efficient legacy data integration solution.
+
+
+
 ## Architecture diagram
 
-:::image type="content" source="media/app-legacy-data/app-legacy-data.png" alt-text="Architecture diagram illustrating a legacy data integration solution." border="true":::
+:::image type="content" source="media/app-legacy-data/app-legacy-data.png" alt-text="Architecture diagram illustrating a legacy data integration solution." border="true" lightbox="media/app-legacy-data/app-legacy-data.png":::
 
 ## Workflow
 
-1. **Trigger RPA automation:** A Power Automate unattended desktop robotics process automation (RPA) flow is triggered to access the legacy system and extract data and reports when API isn't available.
+1. **Trigger RPA automation:** A Power Automate unattended desktop robotics process automation (RPA) flow is triggered to access the legacy system and extract data and reports when the API isn't available.
 1. **Data extraction from legacy system:** The RPA process logs into the legacy application, navigates through menus, and extracts the required reports or data sets.
-1. **Data transfer to SharePoint or Dataverse:** Extracted data is securely transferred and stored in a designated SharePoint document library or list for centralized accessibility or Dataverse tables.
+1. **Data transfer to SharePoint or Dataverse:** Extracted data is securely transferred and stored in a designated SharePoint document library or list for centralized accessibility, or Dataverse tables.
 1. **Data transformation and processing:** Power Automate processes and organizes the data to ensure it aligns with reporting requirements or downstream systems.
 1. **Visualization in Power BI:** Power BI consolidates and visualizes the data stored in SharePoint. Dashboards and reports are created for enhanced insights.
 1. **Access via Microsoft Teams:** Reports and dashboards are integrated into Microsoft Teams, providing real-time access for decision-makers within their collaboration environment.
@@ -50,7 +56,7 @@ Legacy systems often present challenges, such as lack of integration with modern
 
 ## Considerations
 
-These considerations implement the pillars of Power Platform Well-Architected, a set of guiding tenets that improve the quality of a workload. Learn more in [Microsoft Power Platform Well-Architected](/power-platform/well-architected/).
+[!INCLUDE [pp-arch-ppwa-link](../../includes/pp-arch-ppwa-link.md)]
 
 ### Reliability
 
@@ -64,15 +70,15 @@ These considerations implement the pillars of Power Platform Well-Architected, a
 - **Encryption:** Data in transit (via Power Automate) and at rest (in SharePoint, Dataverse, and Power BI) is encrypted.
 - **Principle of least privilege:** Permissions are restricted to minimize exposure. Power Automate flows access systems using least privileged accounts or a service principal where possible.
 
-### Operational excellence
+### Operational Excellence
 
 **Application lifecycle management (ALM):** Solution assets are stored in source control, and Dataverse solutions are used to promote assets from development, to test, and then to production.
 
-### Performance efficiency
+### Performance Efficiency
 
 Consider which design strategies and recommendations of the [Performance Efficiency pillar](/power-platform/well-architected/performance-efficiency/checklist) are applicable to this workload, and document how they were achieved for this architecture.
 
-### Experience optimization
+### Experience Optimization
 
 **Integration with Microsoft Teams:** Users have access to dashboards that show where they spend time in Microsoft Teams to ensure easy discovery and insights.
 
