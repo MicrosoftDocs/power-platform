@@ -21,9 +21,7 @@ This series of articles provides comprehensive guidance on achieving operational
 
 1. [Establish effective application lifecycle management practices](alm.md). Discover best practices for managing the entire lifecycle of Power Platform applications, from development to deployment and maintenance.
 1. [Gain insights into Power Platform adoption](observability.md). Explore strategies for monitoring and optimizing the performance and health of Power Platform applications.
-1. [Report on resource usage](resource-usage.md). Track and analyze the usage of resources within your Power Platform environments.
-1. [Monitor license and capacity consumption](cds-usage.md). Keep track of license allocations and capacity usage to ensure efficient resource management and compliance.
-1. [Ensure data resilience](data-resilience.md). Protect and recover your data seamlessly.
+1. [Ensure data retention and mobility](data-resilience.md). Protect and recover your data seamlessly.
 1. [Establish a support strategy](support-strategy.md). Create a robust support strategy to assist users and maintain system reliability.
 1. [Manage resistance and avoid anti-patterns](manage-resistance.md). Manage resistance to change and avoid common pitfalls in Power Platform adoption.
 

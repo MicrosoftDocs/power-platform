@@ -88,7 +88,7 @@ At the tenant level, monitoring focuses on the overall health and usage of the p
 1. **Security and compliance**: Keep an eye on security-related events, such as failed sign in attempts, changes to security roles, and data access patterns. This helps maintain compliance with organizational policies and regulatory requirements. Learn more about [detecting threats to your organization](threat-detection.md).
 1. **Licensing and capacity**: Monitor license usage and capacity limits to ensure that the organization isn't exceeding its allocated resources and to plan for future needs. Learn more about [monitoring license and capacity usage](cds-usage.md).
 
-## Solution-lvel monitoring
+## Solution-level monitoring
 
 At the solution level, monitoring focuses on the performance and reliability of individual applications and components. Key areas to monitor include:
 
