@@ -1,11 +1,11 @@
 ---
 title: ​​Scale robotic process automation operations using Hosted RPA in Microsoft Power Automate for desktop​
 description: Discover how Hosted RPA in Power Automate simplifies scaling RPA operations by eliminating static bot infrastructure challenges.
-#customer intent: As an admin, I want to scale RPA operations using Hosted RPA in Power Automate so that I can reduce infrastructure management efforts.  
+#customer intent: As a Power Platform user, I want to scale RPA operations using Hosted RPA in Power Automate so that I can reduce infrastructure management efforts.  
 author: manuelap-msft
 ms.subservice: architecture-center
 ms.topic: example-scenario
-ms.date: 04/02/2025
+ms.date: 04/03/2025
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
 contributors:
@@ -24,10 +24,12 @@ ms.custom:
 
 # ​​Scale robotic process automation operations using Hosted RPA in Microsoft Power Automate for desktop​ 
 
-Using the Hosted RPA (robotic process automation) feature, organizations can reduce the time and effort needed to procure, set up, operationalize, and maintain infrastructure for RPA automations. Static bot infrastructure can be challenging due to the need to provision, set up, and maintain the machines while ensuring maximum utilization by the RPA operations team. Cloud-based Microsoft Power Automate solves these issues with its Hosted RPA capability, enabling RPA practitioners to build, test, and run large-scale automations efficiently.
-
 > [!TIP]
 > The article provides an example scenario and visual representation of how to ​​scale RPA operations using Hosted RPA in Microsoft Power Automate for desktop​. This solution is a generalized example scenario architecture, which can be used for many different scenarios and industries.
+
+Using the Hosted RPA (robotic process automation) feature, organizations can reduce the time and effort needed to procure, set up, operationalize, and maintain infrastructure for RPA automations. Static bot infrastructure can be challenging due to the need to provision, set up, and maintain the machines while ensuring maximum utilization by the RPA operations team. Cloud-based Microsoft Power Automate solves these issues with its Hosted RPA capability, enabling RPA practitioners to build, test, and run large-scale automations efficiently.
+
+
 
 ## Architecture diagram
 
@@ -49,7 +51,7 @@ Organizations that need to run RPA automations at scale, where workloads run on 
 
 Consider these use cases:
 
-- Processing end-of-quarter financial data, which typically requires multiple machines to handle high transaction volumes.  
+- Processing end-of-quarters financial data, which typically requires multiple machines to handle high transaction volumes.  
 - Processing high-priority daily work items in the work queue quickly to prevent SLA violations.
 - Addressing a significant backlog of shipment orders in SAP during the holiday season by using Power Automate for desktop to automate user interface tasks.
 
@@ -73,17 +75,17 @@ Consider these use cases:
 
 **Use credentials in Power Automate**: Switch from using a simple username and password to credentials in Power Automate to manage connection credentials more efficiently and prevent disruptions caused by unexpected password changes.
 
-### Performance Efficiency
+### Performance efficiency
 
 **Optimize infrastructure usage**: Evaluate the overall automation workload requirements and develop a strategy to maintain machine utilization within a Hosted Machine Group above a specified threshold, ensuring compliance with business SLA agreements.
 
-### Experience Optimization
+### Experience optimization
 
-**Implement a consistent maintenance procedure**: To update the custom VM image used by the Hosted Machine Group, follow a standardized procedure that uses maintenance mode to indicate an ongoing update. Note that when the VM image is updated, all existing hosted bots complete their ongoing desktop flow runs before being re-provisioned with the new VM image.
+**Implement a consistent maintenance procedure**: To update the custom VM image used by the Hosted Machine Group, follow a standardized procedure that uses maintenance mode to indicate an ongoing update. Note that when the VM image is updated, all existing hosted bots complete their ongoing desktop flow runs before being reprovisioned with the new VM image.
 
 ## Next steps
 
-Review [hosted machine groups in Power Automate](/power-automate/desktop-flows/hosted-machine-groups) for details on how to get started with Hosted RPA in Microsoft Power Automate.
+Review [Hosted Machine Groups in Power Automate](/power-automate/desktop-flows/hosted-machine-groups) for details on how to get started with Hosted RPA in Microsoft Power Automate.
 
 The following are the high-level steps to set up a solution architecture that uses Hosted RPA in Microsoft Power Automate:
 
