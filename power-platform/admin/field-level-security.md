@@ -68,10 +68,10 @@ Use a column security profile to grant user or team members the following permis
 
 |Permission|Options|Result|
 |---------|---------|---------|
-|**Read**|**Allowed**<br />**Not Allowed**|Whether people can view the data for the column.<br />Masked values are shown if masking rule is applied to the column.|
-|**Read unmasked**|**All Records**<br />**One record**<br />**Not Allowed**| When a secured column has a masking rule, a developer can write code to request unmasked data be returned.<br />This setting controls whether or not that request succeed.<br />The default setting is **Not Allowed**.<br />[Learn more about granting permissions to a secured column with a masking rule](create-manage-masking-rules.md#grant-permissions-to-a-secured-column-with-a-masking-rule) |
-|**Update**|**Allowed**<br />**Not Allowed**|Whether people can update the data in the column.|
-|**Create**|**Allowed** <br />**Not Allowed**|Whether people can set the data in the column when creating a record.|
+|**Read**|**Allowed**<br />**Not&nbsp;Allowed**|Whether people can view the data for the column.<br />Masked values are shown if masking rule is applied to the column.|
+|**Read unmasked**|**All&nbsp;Records**<br />**One&nbsp;record**<br />**Not&nbsp;Allowed**| When a secured column has a masking rule, a developer can write code to request unmasked data be returned.<br />This setting controls whether or not that request succeed.<br />The default setting is **Not Allowed**.<br />[Learn more about granting permissions to a secured column with a masking rule](create-manage-masking-rules.md#grant-permissions-to-a-secured-column-with-a-masking-rule) |
+|**Update**|**Allowed**<br />**Not&nbsp;Allowed**|Whether people can update the data in the column.|
+|**Create**|**Allowed** <br />**Not&nbsp;Allowed**|Whether people can set the data in the column when creating a record.|
 
 Configure a combination of these four permissions to determine the user privileges for a specific data column.  
 
