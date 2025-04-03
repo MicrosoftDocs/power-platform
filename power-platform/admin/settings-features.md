@@ -4,7 +4,7 @@ description: Learn how to manage feature settings to adjust how features appear 
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/18/2025
+ms.date: 04/01/2025
 ms.subservice: admin
 ms.author: sericks
 ms.reviewer: sericks
@@ -77,8 +77,10 @@ To update these settings, make sure you have the System Administrator or System 
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-|Enable this feature for:  | Allow AI to generate suggestions for fields in model-driven apps. Learn more in [Copilot assistance for form fill in model-driven apps](/power-apps/user/form-filling-assistance). | Users as the feature becomes available <br><br> **Note:** If the **Users as the feature becomes available (default)** option is selected, the feature is turned on for users in Dynamics 365 model-driven apps, and the feature is kept off for users in Power Apps model-driven apps. |
-| Enable smart paste (preview) | Smart paste (preview) uses the text copied to your clipboard to suggest text for specific fields and provides inline suggestions in the form. | Off |
+|Automatic suggestions | Allow AI to generate suggestions for fields in model-driven apps. Learn more in [Use Copilot's form fill assistance feature in model-driven apps](/power-apps/user/form-filling-assistance). | Default<br><br>**Note:** If the **Default** option is selected, the feature is turned on for users of Dynamics 365 model-driven apps, and the feature is kept off for users of Power Apps model-driven apps. |
+| Smart paste (Production Ready Preview) | Smart paste (preview) uses the text or image copied to your clipboard to suggest text for specific fields and provides inline suggestions in the form. Learn more in [Use smart paste](/power-apps/user/form-filling-assistance#use-smart-paste-preview).  | Default<br><br>**Note:** In the monthly channel, if the **Default** option is selected, the feature is turned on for users of Dynamics 365 model-driven apps, and the feature is kept off for users of Power Apps model-driven apps. |
+
+Makers can learn more about form fill assistance in [Manage model-driven app settings in the app designer](/power-apps/maker/model-driven-apps/app-properties#features).
 
 ## AI suggestions for formula columns (preview)
 
