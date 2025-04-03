@@ -44,11 +44,4 @@ You can set a sandbox, production, or trial (subscription-based) environment in 
 
 6. Select **Save**.
 
-## Known issues
-
-- After taking the environment out of admin mode, flows may not trigger as expected until caches have been cleared; this can take up to 24 hours.
-
-
-
-
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
