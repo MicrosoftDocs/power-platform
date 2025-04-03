@@ -40,8 +40,8 @@ We'll continue to add patterns over time in collaboration with the Power Platfor
 
 You can evaluate any Power Platform workload's design and implementation through various lenses. Use [Power Platform Well-Architected](/power-platform/well-architected/) to evaluate and align your decisions with design principles across these five key architectural pillars:
 
-- [Reliability](/power-platform/well-architected//reliability/)
-- [Security](/power-platform/well-architected//security/)
+- [Reliability](/power-platform/well-architected/reliability/)
+- [Security](/power-platform/well-architected/security/)
 - [Operational Excellence](/power-platform/well-architected/operational-excellence/)
 - [Performance Efficiency](/power-platform/well-architected/performance-efficiency/)
 - [Experience Optimization](/power-platform/well-architected/experience-optimization/)
