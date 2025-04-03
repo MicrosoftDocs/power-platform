@@ -39,7 +39,7 @@ productDirectory:
   title: Power Platform products # < 60 chars (Optional; Remove if not applicable.)
   summary: Use Microsoft Power Platform to build AI-driven agents using Copilot Studio, apps using Power Apps, automate tasks using Power Automate, analyze data using Power BI, and create websites using Power Pages. # < 160 chars (Optional; Remove if not applicable.)
   items:
-  - title: Microsoft Copilot Studio
+  - title: Copilot Studio
     imageSrc: "media/hub-page/copilot-studio.svg"
     summary: Learn how to extend or create your own AI-driven copilot experiences.
     links:
