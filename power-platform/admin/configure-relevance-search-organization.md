@@ -26,7 +26,7 @@ With Dataverse search enabled, a search box is always available at the top of ev
 
 ## Learn about the benefits of Dataverse search
 
-Dataverse search helps you quickly find what you are looking for in model-driven apps. As part of its search capabilities, indexed data is used across generative AI experiences&mdash; such as Copilot experiences&mdash; to fetch records and use them as answers. Dataverse search is how Microsoft allows rich search and AI-powered experiences across different products that use Dataverse as one of the data sources, subject to Copilot feature availability.
+Dataverse search helps you quickly find what you are looking for in model-driven apps. As part of its search capabilities, indexed data is used across generative AI experiences&mdash;such as Copilot experiences&mdash;to fetch records and use them as answers. Dataverse search is how Microsoft allows rich search and AI-powered experiences across different products that use Dataverse as one of the data sources, subject to Copilot feature availability.
 
 Dataverse search has these benefits:
 
@@ -49,7 +49,7 @@ Dataverse search has these benefits:
 
 - **Operators for advanced search**. Lets you use simple Boolean operators in your search term and craft the query to get the results you want.
 
-- **Intelligence**. Applies AI technology to interpret natural language such as misspellings, common abbreviations, and synonyms to delivers quality results.
+- **Intelligence**. Applies AI technology to interpret natural language such as misspellings, common abbreviations, and synonyms to deliver quality results.
   
 - **Search across documents in Microsoft Dataverse**. Search for and find information contained in PDF, Microsoft Office document, HTML, XML, ZIP, EML, plain text, and JSON file formats. It also searches text in notes and attachments.
   
@@ -66,11 +66,11 @@ Dataverse search consists of two separate indexes that power different experienc
 
 - Dataverse search is available in customer engagement apps such as Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation.
 
-- Dataverse search isn't available for customer engagement (on-premises) organizations. Quick Find is the only search option for customer engagement apps organizations and Customer Engagement (on-premises) organizations.
+- Dataverse search isn't available for Customer Engagement (on-premises) organizations. Quick Find is a search option for customer engagement apps organizations and Customer Engagement (on-premises) organizations.
 
 - Full-text Quick Find is available for Customer Engagement (on-premises) organizations, starting with Dynamics CRM 2015 Update Rollup 1.
 
-- For more detailed comparison of the searches available in Microsoft Dataverse, go to [Compare search options in Microsoft Dataverse](/powerapps/user/search).
+- For a more detailed comparison of the searches available in Microsoft Dataverse, go to[Compare search options in Microsoft Dataverse](/powerapps/user/search).
 
 - All searchable fields in Dataverse search are processed in the language most closely matching the organization's base language, except Kazakh where all fields are processed using a basic, language-agnostic text processor.
 
@@ -267,15 +267,15 @@ To edit the searchable fields of a table:
 >
 > - Changes made to the Dataverse search configuration or to the searchable data may take up to 15 minutes to appear in the search service. It may take up to an hour or more to complete a full sync for average size organizations, and a couple of days for very large size organizations.
 >
-> - The maximum search-term size is 1024 characters.
+> - The maximum search-term size is 1,024 characters.
 >
 > - Although you can have related table fields as a **View column** or a **Find column** or a **Filter column** in a table's Quick Find view, related table fields are not supported by Dataverse search and hence ignored.
 >
 > - If you change the length of text in a table column and the column is set to **Simple Search view**, the import may not be successful and you may see this error:
 >
-> - _Length is not valid because this is an indexed attribute and hence cannot have size greater than 1700_.
+> - _Length is not valid because this is an indexed attribute and hence cannot have size greater than 1,700_.
 >
-> - The indexed attribute can't extend beyond 1700 bytes. If the corresponding column is registered in the **Quick Find view**, remove the corresponding column from the **Quick Find view** and try to re-export after a time interval.  If you change or delete a **Quick Find view** setting, it may take up to 24 hours to be reflected in the index, as it's a once-a-day maintenance job for the on-premises product. For more information, go to [Maximum capacity specifications for SQL Server](/sql/sql-server/maximum-capacity-specifications-for-sql-server?view=sql-server-ver16&preserve-view=true).
+> - The indexed attribute can't extend beyond 1700 bytes. If the corresponding column is registered in the **Quick Find view**, remove the corresponding column from the **Quick Find view** and try to re-export after a time interval. If you change or delete a **Quick Find view** setting, it may take up to 24 hours to be reflected in the index, as it's a once-a-day maintenance job for the on-premises product. For more information, go to [Maximum capacity specifications for SQL Server](/sql/sql-server/maximum-capacity-specifications-for-sql-server?view=sql-server-ver16&preserve-view=true).
 >
 > - Updates to calculated fields and lookups do not automatically sync in Dataverse search. Data is refreshed whenever a field configured for Dataverse search is updated in a record.
 >
@@ -401,8 +401,8 @@ There are three states associated with this setting:
 - All experiences are allowed except the global search bar in model-driven applications.
 - Respective data is only indexed when triggered:
 
-  - On Power Platform Admin Center Copilot setting being turned on
-  - On adding a Dataverse table or uploading a File into an Microsoft Copilot Studio Agent
+  - On Power Platform admin center Copilot setting being turned on
+  - On adding a Dataverse table or uploading a file into a Microsoft Copilot Studio agent
   - On Microsoft Copilot Studio skill creation
   - On first Copilot query call (submitted prompt)
 
@@ -410,9 +410,11 @@ There are three states associated with this setting:
 
 #### Off
 
-- All turned-on experiences are limited.
-- Once Dataverse search is turned off, all respective indexed data is deleted after 12 hours.
-- There is no Dataverse search storage consumption.
+When you turn off Dataverse search:
+
+- You limit all the turned-on experiences.
+- You allow your respective indexed data to get deleted after 12 hours.
+- You don't have any Dataverse search storage consumption.
 
 > [!NOTE]
 >
@@ -428,7 +430,7 @@ Dataverse search = Database capacity + Files Capacity (Measured in gigabytes)
 
 ### When does Dataverse search start getting consumed against my storage entitlements?
 
-Starting April 7th, 2025, Dataverse search starts drawing from Dataverse storage entitlements as detailed in this article.
+Starting April 7, 2025, Dataverse search starts drawing from Dataverse storage entitlements as detailed in this article.
 
 > [!IMPORTANT]
 > Dataverse search counts towards the different storage entitlements you have in the tenant.
@@ -461,11 +463,11 @@ If you turn off Dataverse search and want to re-enable it, you have two options:
 
 |Feature   |Maker experience  |End-User experience  |
 |----------|------------------|---------------------|
-|Microsoft Copilot Studio agent – add knowledge     |_Cannot upload files_    Cannot select Dataverse tables *    Agent doesn't provide results until Dataverse is enabled for the environment (Warning banner with call to action for environment's admin to enable it)       |*    Agent doesn't provide results until Dataverse is enabled for the environment (default to fallback answer)        |
+|Microsoft Copilot Studio agent – adding knowledge     |_Cannot upload files_    Cannot select Dataverse tables *    Agent doesn't provide results until Dataverse is enabled for the environment (Warning banner with call to action for environment's admin to enable it)       |*    Agent doesn't provide results until Dataverse is enabled for the environment (default to fallback answer)        |
 |Microsoft Copilot Studio agent – using Copilot chat  | *    Agent doesn't provide results until Dataverse is enabled for the environment (Warning banner with call to action to connect with environment's admin to enable it)  |*    Agent doesn't provide results until Dataverse is enabled for the environment (default to fallback answer)  |
 |model-driven applications – Dataverse search  | *    Search bar isn't visible in model-driven applications  |*    Same as maker experience |
 |model-driven applications – Copilot chat  |_Can use model-driven app for record management (add, edit, delete, etc.)_    Agent doesn't provide results until Dataverse is enabled for the environment (Warning banner with call to action to connect with environment's admin to enable it)  |*    Same as maker experience|
-|Prompt actions with AI Builder / Custom AI prompts _Microsoft Copilot Studio_    Power Apps *    Power Automate  |*    If enabled in the settings, prompts aren't grounded with Dataverse knowledge|*    N/A|
+|Prompt actions with AI Builder/Custom AI prompts _Microsoft Copilot Studio_    Power Apps *    Power Automate  |*    If enabled in the settings, prompts aren't grounded with Dataverse knowledge|*    N/A|
 
 ### What actions can admins take?
 
@@ -476,12 +478,13 @@ To ensure optimal operations for the organization, admins with the proper permis
 3. Remove knowledge in Microsoft Copilot Studio
 4. Disable Copilot in Dynamics 365 applications
 5. Disable AI prompts
-6. Go to the Power Platform admin center and turn Dataverse search _Off_. It's strongly recommended to NOT turn off Dataverse search because it directly impacts all dependent generative-AI experiences in your different applications, and all users using them.
+6. Go to the Power Platform admin center and turn Dataverse search _Off_. It's strongly recommended to NOT turn off Dataverse search because it negatively impacts all dependent generative-AI experiences in your different applications, and all users using them.
 
 ### See also  
 
-- [Frequently asked questions about Dataverse search](/power-apps/user/relevance-faq)
 - [Search for tables and rows by using Dataverse search](/powerapps/user/relevance-search)
+- [Configure facets and filters](/power-apps/user/facets-and-filters)
+- [Frequently asked questions about Dataverse search](/power-apps/user/relevance-faq)
 - [Dynamics 365 results in Microsoft Search](/microsoftsearch/manage-dynamics365)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
