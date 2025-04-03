@@ -101,6 +101,7 @@ You can view this area when you [create or edit a column](/power-apps/maker/data
 
 Columns that can't be secured include:
 
+- Columns in virtual tables
 - [Lookup columns](/power-apps/maker/data-platform/types-of-fields#different-types-of-lookups)
 - [Formula columns](/power-apps/maker/data-platform/formula-columns)
 - Primary name columns (The single-line of text column each table has to show the value in a lookup field. Typically with a name ending with `name`.)
