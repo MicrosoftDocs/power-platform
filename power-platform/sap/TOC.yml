@@ -1,102 +1,165 @@
-- name: SAP
-  href: index.yml
+- name: Power Platform and SAP
+  href: ./index.yml
   items:
-    - name: Power Platform and SAP
+    - name: Explore
       items:
-        - name: Explore
+        - name: Power Platform and SAP
+          href: explore/power-platform-and-SAP-integration.md
+        - name: SAP + Power Platform white paper
+          href: explore/white-paper.md
+        - name: FAQs
+          href: explore/faqs.md
+    - name: Get started with Power Platform
+      items:
+        - name: Power Platform guidance
+          href: /power-platform/guidance/
+    - name: Connect to SAP
+      items:
+        - name: Connect Power Platform and SAP
+          href: connect/connect-power-platform-and-SAP.md
+        - name: Get started with the SAP ERP connector
+          href: connect/sap-erp-connector.md
+        - name: Get started with the SAP OData connector
+          href: connect/sap-odata-connector.md
+        - name: Set up Secure Network Communications
+          href: connect/secure-network-communications.md
+        - name: Set up Microsoft Entra ID with Kerberos for SSO
+          href: connect/entra-id-kerberos.md
+        - name: Set up Microsoft Entra ID using certificates
+          href: connect/entra-id-certs.md
+        - name: Set up Microsoft Entra ID with Azure API Management and OAuth
+          href: connect/entra-id-apim-oauth.md
+        - name: Set up Microsoft Entra ID using SuccessFactors
+          href: connect/entra-id-using-successfactors.md
+    - name: Use templates or prebuilt agents
+      href: templates/overview.md
+      items:
+        - name: SAP Procurement template
           items:
-            - name: Power Platform and SAP
-              href: explore/power-platform-and-SAP-integration.md
-            - name: SAP + Power Platform white paper
-              href: explore/white-paper.md
-        - name: Get started with Power Platform
-          items:
-            - name: Power Platform guidance
-              href: /power-platform/guidance/
-        - name: Connect to SAP
-          items:
-            - name: Connect Power Platform and SAP
-              href: connect/connect-power-platform-and-SAP.md
-            - name: Get started with the SAP ERP connector
-              href: connect/sap-erp-connector.md
-            - name: Get started with the SAP OData connector
-              href: connect/sap-odata-connector.md
-            - name: Set up Secure Network Communications
-              href: connect/secure-network-communications.md
-            - name: Set up Microsoft Entra ID with Kerberos for SSO
-              href: connect/entra-id-kerberos.md
-            - name: Set up Microsoft Entra ID using certificates
-              href: connect/entra-id-certs.md
-            - name: Set up Microsoft Entra ID with Azure API Management and OAuth
-              href: connect/entra-id-apim-oauth.md
-            - name: Set up Microsoft Entra ID using SuccessFactors (Preview)
-              href: connect/entra-id-using-successfactors.md
-        - name: Use templates or prebuilt agents
-          href: templates/overview.md
-          items:
-            - name: SAP Procurement
-              href: ../enterprise-templates/finance/sap-procurement/overview.md
-            - name: SAP Supplier Self Service
-              href: ../enterprise-templates/finance/sap-supplier-self-service/overview.md
-            - name: Integration assistant for SAP
+            - name: Overview
+              href: templates/sap-procurement/overview.md
+            - name: Administer
               items:
-                - name: Overview
-                  href: templates/integration-assistant/overview.md
-                - name: Install and set up
-                  href: templates/integration-assistant/install-set-up.md
-                - name: Use
-                  href: templates/integration-assistant/use.md
-            - name: Account assistant for SAP
+                - name: Get started
+                  displayName: Get started with the SAP Procurement template
+                  href: templates/sap-procurement/administer/get-started.md
+                - name : Use SAP Setup Assistant
+                  items:
+                    - name: Overview
+                      href: templates/sap-procurement/administer/sap-setup-assistant/overview.md
+                    - name: Install and set up
+                      href: templates/sap-procurement/administer/sap-setup-assistant/install-and-set-up.md
+                - name: Requirements
+                  href: templates/sap-procurement/administer/requirements.md
+                - name: Set up environments and DLP policies
+                  href: templates/sap-procurement/administer/set-up-environments-data-policies.md
+                - name: Set up on-premises data gateway
+                  href: templates/sap-procurement/administer/set-up-gateway.md
+                - name: Configure authentication
+                  href: templates/sap-procurement/administer/configure-authentication.md
+                - name: Install solution template
+                  href: templates/sap-procurement/administer/install.md
+                - name: Set up connections
+                  href: templates/sap-procurement/administer/set-up-connections.md
+                - name: Configure environment variables
+                  href: templates/sap-procurement/administer/configure-environment-variables.md
+                - name: Configure security groups
+                  href: templates/sap-procurement/administer/configure-security-groups.md
+                - name: Apply seed data
+                  href: templates/sap-procurement/administer/apply-seed-data.md
+                - name: Monitor errors
+                  href: templates/sap-procurement/administer/monitor-errors.md
+                - name: Customize solutions
+                  href: templates/sap-procurement/administer/customize-solutions.md
+                - name: Extend canvas apps
+                  href: templates/sap-procurement/administer/extend-canvas-apps.md
+                - name: Extend model-driven apps and Dataverse
+                  href: templates/sap-procurement/administer/extend-model-apps-dataverse.md
+                - name: Extend cloud flows
+                  href: templates/sap-procurement/administer/extend-cloud-flows.md
+            - name: Use
               items:
-                - name: Overview
-                  href: templates/account-assistant/overview.md
-                - name: Install and set up
-                  href: templates/account-assistant/install-set-up.md
-        - name: Role-based guidance
+                - name: Vendor management
+                  href: templates/sap-procurement/use/vendor-management.md
+                - name: Requisition management
+                  href: templates/sap-procurement/use/requisition-management.md
+                - name: Purchase order management
+                  href: templates/sap-procurement/use/purchase-order-management.md
+                - name: Goods receipt management
+                  href: templates/sap-procurement/use/goods-receipt-management.md
+                - name: Vendor invoice management
+                  href: templates/sap-procurement/use/vendor-invoice-management.md
+                - name: Vendor payment management
+                  href: templates/sap-procurement/use/payment-management.md      
+        - name: SAP Supplier Self Service template
           items:
-            - name: App maker
-              href: roles-guidance/power-platform-app-maker.md
-            - name: SAP consultant
-              href: roles-guidance/sap-consultant.md
-            - name: Compliance and security admin
-              href: roles-guidance/governance-administrator.md
-            - name: SAP Basis admin
-              href: roles-guidance/sap-basis-administrator.md
-        - name: Related content
+            - name: Overview
+              href: templates/sap-supplier-self-service/overview.md
+            - name: Install and set up
+              href: templates/sap-supplier-self-service/install-and-set-up.md
+            - name: Manage
+              href: templates/sap-supplier-self-service/manage.md
+        - name: Copilot for Finance SAP Collections template
+          href: /copilot/finance/get-started/sap/administer/get-started
+        - name: Integration assistant for SAP
           items:
-            - name: SAP Setup Assistant
-              href: ../enterprise-templates/finance/sap-procurement/administer/sap-setup-assistant/overview.md
-            - name: SAP ERP connector
-              href: /connectors/saperp
-            - name: SAP OData connector
-              href: /connectors/sapodata
-            - name: Secure Network Communications (SNC)
-              href: /power-platform/sap/connect/secure-network-communications
-            - name: Microsoft Entra ID using Kerberos for SSO
-              href: /power-platform/sap/connect/entra-id-kerberos
-            - name: Microsoft Entra ID using certificates
-              href: /power-platform/sap/connect/entra-id-certs
-            - name: Microsoft Entra ID using Azure API Management and OAuth
-              href: /power-platform/sap/connect/entra-id-apim-oauth
-            - name: Power Platform security and governance
-              href: /power-platform/admin/security
-            - name: Power Apps and Teams integration
-              href: /power-apps/teams/create-apps-overview
-            - name: Power Platform administration
-              href: /power-platform/admin
-            - name: Power Platform solutions
-              href: /power-platform/alm/solution-concepts-alm
-            - name: Power Platform ALM
-              href: /power-platform/alm
-        - name: Resources
+            - name: Overview
+              href: templates/integration-assistant/overview.md
+            - name: Install and set up
+              href: templates/integration-assistant/install-set-up.md
+            - name: Use
+              href: templates/integration-assistant/use.md
+        - name: Account assistant for SAP
           items:
-          - name: Power Platform Community forums
-            href: https://community.powerplatform.com/globalsearch/?q=SAP
-          - name: Power Platform and SAP YouTube channel
-            href: https://www.youtube.com/@mspowerplatform/search?query=SAP
-          - name: Power Platform and SAP on the SAP on Azure YouTube channel
-            href: https://www.youtube.com/playlist?list=PLvqyDwoCkBXa3K3b8Jc3eckPDnJj6xd11
-          - name: SAP on Azure
-            href: /azure/sap/
-          - name: Release plans
-            href: https://releaseplans.microsoft.com/?app=Power+Apps
+            - name: Overview
+              href: templates/account-assistant/overview.md
+            - name: Install and set up
+              href: templates/account-assistant/install-set-up.md
+    - name: Role-based guidance
+      items:
+        - name: App maker
+          href: roles-guidance/power-platform-app-maker.md
+        - name: SAP consultant
+          href: roles-guidance/sap-consultant.md
+        - name: Compliance and security admin
+          href: roles-guidance/governance-administrator.md
+        - name: SAP Basis admin
+          href: roles-guidance/sap-basis-administrator.md
+    - name: Related content
+      items:
+        - name: SAP Setup Assistant
+          href: templates/sap-procurement/administer/sap-setup-assistant/overview.md
+        - name: SAP ERP connector
+          href: /connectors/saperp
+        - name: SAP OData connector
+          href: /connectors/sapodata
+        - name: Secure Network Communications (SNC)
+          href: /power-platform/sap/connect/secure-network-communications
+        - name: Microsoft Entra ID using Kerberos for SSO
+          href: /power-platform/sap/connect/entra-id-kerberos
+        - name: Microsoft Entra ID using certificates
+          href: /power-platform/sap/connect/entra-id-certs
+        - name: Microsoft Entra ID using Azure API Management and OAuth
+          href: /power-platform/sap/connect/entra-id-apim-oauth
+        - name: Power Platform security and governance
+          href: /power-platform/admin/security
+        - name: Power Apps and Teams integration
+          href: /power-apps/teams/create-apps-overview
+        - name: Power Platform administration
+          href: /power-platform/admin
+        - name: Power Platform solutions
+          href: /power-platform/alm/solution-concepts-alm
+        - name: Power Platform ALM
+          href: /power-platform/alm
+    - name: Resources
+      items:
+      - name: Power Platform Community forums
+        href: https://community.powerplatform.com/globalsearch/?q=SAP
+      - name: Power Platform and SAP YouTube channel
+        href: https://www.youtube.com/@mspowerplatform/search?query=SAP
+      - name: Power Platform and SAP on the SAP on Azure YouTube channel
+        href: https://www.youtube.com/playlist?list=PLvqyDwoCkBXa3K3b8Jc3eckPDnJj6xd11
+      - name: SAP on Azure
+        href: /azure/sap/
+      - name: Release plans
+        href: https://releaseplans.microsoft.com/?app=Power+Apps

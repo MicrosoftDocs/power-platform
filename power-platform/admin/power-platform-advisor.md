@@ -235,3 +235,4 @@ All automation center recommendations are for managed environments only.
 | Error   | Work queue SLA violation                | Desktop flows | Hourly            | Orchestration  |       |       |
 | Warning | Work queue SLA at risk                  | DF            | Hourly            | Orchestration  |       |       |
 | Error   | Power Automate Process capacity overage | DF            | Real time         | Licensing      |       |       |
+

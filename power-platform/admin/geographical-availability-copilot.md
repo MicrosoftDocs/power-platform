@@ -4,13 +4,14 @@ description: Learn how to turn on data movement across regions for Copilots and 
 author: amchern
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/17/2025
+ms.date: 03/20/2025
 ms.subservice: admin
 ms.author: amchern
 ms.reviewer: sericks
 search.audienceType:
   - admin
 contributors:
+  - CedrickBellarosa 
   - antoinecellerier 
   - JesseParsons
   - tapanm-msft
@@ -49,11 +50,11 @@ The following table lists the regions where your Power Platform or Dynamics 365 
 | Region where your Power Platform or Dynamics 365 environment is hosted | Region where Azure OpenAI Service is hosted | Region where data is stored and processed for Bing Search | 
 |-------------------------|-------------------------|-------------------------|
 | United States | In region* | United States| 
-| Europe\**  | Spain, Sweden, or Switzerland| United States |
-| France<br>Germany<br>Norway<br>Switzerland | Spain, Sweden, or Switzerland | United States|
+| Europe\**  | Norway, Spain, Sweden, or Switzerland| United States |
+| France<br>Germany<br>Norway<br>Sweden<br>Switzerland | Norway, Spain, Sweden, or Switzerland | United States|
 | Asia<br>Brazil<br>Canada<br>Japan<br>Korea<br>Singapore<br>South Africa<br>United Arab Emirates | United States | United States| 
 | Australia<br>India | In region* or United States | United States |
-| United Kingdom | In region*, Spain, Sweden, or Switzerland | United States |
+| United Kingdom | In region*, Norway, Spain, Sweden, or Switzerland | United States |
 | Government cloud (GCC, GCC High) | In region* | United States |
 
 \*In region means within the geographical region of your Power Platform or Dynamics 365 environment.
