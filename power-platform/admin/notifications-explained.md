@@ -18,8 +18,18 @@ search.audienceType:
 Microsoft regularly sends communications about service changes, maintenance, retirement, and customer action that is required. These communications primarily take the form of posts to the Microsoft 365 Service health dashboard and the Message center. Occasionally, we also use direct email communications to provide status, updates, or information about the service.
 
 ## Message center
+Admins can use the [Microsoft 365 Message center](/office365/admin/manage/message-center?view=o365-worldwide) to learn about official service announcements and feature changes. Email notifications can be sent for Message center posts.
 
-Admins can use the [Microsoft 365 Message center](/office365/admin/manage/message-center?view=o365-worldwide) to keep track of upcoming changes, including new and changed features, planned maintenance, and other important announcements. Email notifications can be sent for Message center posts.
+### Steps to set up a weekly digest mail of message center changes and notifications
+1. Log in to the Admin Center at [https://admin.powerplatform.microsoft.com.](https://admin.powerplatform.microsoft.com/)
+2. On the left-hand navigation, select **Admin Centers**
+3. Select **Microsoft 365 **.
+4. Expand Health and slect **Message Center**.
+5. On the page that loads, select **Preferences**.
+6. A flyout appears on the right, select the **Email** tab.
+7. Make sure the email notification settings are as expected. You can select Other e-mail addresses if you want the digest to be sent to different users or a shared mailbox.
+8. Select the **Send me a weekly digest about services I select** box, and select the services you wish to receive information about.
+9. Press **Save**.
 
 ## Service health dashboard
 
@@ -33,9 +43,9 @@ Sometimes, Microsoft might have to notify you about issues that are occurring in
 
 In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), admins can view service health issues for the last 30 days from the **Service health** tab of the **Help + support** page. Learn more in [View service health](view-service-health.md).
 
-## Email service notifications
+## Ad-hoc email service notifications
 
-The following table lists the services that the Business & Industry Copilot communications team sends notifications for. The table also shows the email address that is used to send notifications for each service. Be sure to check your spam folder for these messages.
+The following table lists the services that the Business & Industry Copilot communications team sends ad-hoc notifications for. The table lists the email address that is used to send email notifications for each service. Be sure to check your spam folder for these messages.
 
 | Service | Email address that notifications are sent from |
 |---|---|
@@ -44,4 +54,4 @@ The following table lists the services that the Business & Industry Copilot comm
 | Microsoft Power Platform | `mspowerplatform@microsoft.com` |
 
 > [!IMPORTANT]
-> As of December 1, 2024, only users who are assigned to the Dynamics 365 administrator or Power Platform administrator role in the Microsoft 365 admin center or Microsoft Entra admin center receive email notifications. To assign a service admin role to a user, follow the instructions in [Assign a service admin role to a user](use-service-admin-role-manage-tenant.md#assign-a-service-admin-role-to-a-user).
+Only users who are assigned to the Dynamics 365 administrator or Power Platform administrator role in the Microsoft 365 admin center or Microsoft Entra admin center will receive these email notifications. To assign a service admin role to a user, follow the instructions in [Assign a service admin role to a user](use-service-admin-role-manage-tenant.md#assign-a-service-admin-role-to-a-user).
