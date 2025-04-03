@@ -110,7 +110,7 @@ After you create the environment group, Power Platform tenant administrators can
 1. Select the **Rules** tab for that group. You see a list of available rules.
 1. Select a rule to open its configuration panel. Adjust it as needed, then **Save** the rule.
     Repeat this step for all the rules you want to configure in this group.
-1. Select **Publish rules** button in the command bar.
+1. Select the **Publish rules** button in the command bar.
 
 # [Classic admin center](#tab/classic)
 
