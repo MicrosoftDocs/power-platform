@@ -24,7 +24,7 @@ contributors:
 
 Shapes a [table](/power-apps/maker/canvas-apps/working-with-tables) by adding, dropping, renaming, and selecting its [columns](/power-apps/maker/canvas-apps/working-with-tables#columns).
 
-The **[ForAll](function-forall.md) function can also be used to shape a table, by returning a table of new records created from existing columns.
+The [ForAll](function-forall.md) function can also be used to shape a table, by returning a table of new records created from existing columns.
 
 ## Overview
 
