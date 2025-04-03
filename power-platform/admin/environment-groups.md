@@ -73,7 +73,7 @@ Complete the following steps to create a new environment group in the Power Plat
 
 1. Sign in to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com/) as a [Power Platform tenant administrator](use-service-admin-role-manage-tenant.md).
 1. Select **Manage** in the navigation pane.
-1. Select **Environment groups** in the navigation pane.
+1. In the **Manage** pane, select **Environment groups**.
 1. On the **Environment groups** page, select **New group**.
 1. In the **Create group** pane that appears:
    1. Add a name for your group in the **Name** field such as **Personal Productivity**.
@@ -105,7 +105,7 @@ After you create the environment group, Power Platform tenant administrators can
 
 1. Sign in to [Power Platform Admin center](https://admin.powerplatform.microsoft.com/) as a [Power Platform tenant administrator](use-service-admin-role-manage-tenant.md).
 1. Select **Manage** in the navigation pane.
-1. Select **Environment groups** in the navigation pane.
+1. In the **Manage** pane, select **Environment groups**.
 1. On the **Environment groups** page, select the group you created.
 1. Select the **Rules** tab for that group. You see a list of available rules.
 1. Select a rule to open its configuration panel. Adjust it as needed, then **Save** the rule.
@@ -139,16 +139,16 @@ One powerful way to use environment groups is in combination with default enviro
 # [New admin center](#tab/new)
 
 1. Select **Manage** in the navigation pane.
-1. Select **Environment groups** in the navigation pane.
+1. In the **Manage** pane, select **Environment groups**.
 1. Select the **Environment Routing** button in the command bar.
-1. Under the **Environment group** section, choose the group you want your new **Developer** environments to be created in.
+1. Under the **Environment group** section, choose the group you want your new developer environments to be created in.
 1. Select **Save**.
 
 # [Classic admin center](#tab/classic)
 
 1. Select **Environment groups** in the navigation pane.
 1. Select the **Environment Routing** button in the command bar.
-1. Under the **Environment group** section, choose the group you want your new **Developer** environments to be created in.
+1. Under the **Environment group** section, choose the group you want your new developer environments to be created in.
 1. Select **Save**.
 ---
 
@@ -164,7 +164,7 @@ In addition to using routing for new environments, you can manually add existing
 # [New admin center](#tab/new)
 
 1. Select **Manage** in the navigation pane.
-1. Select **Environment groups** in the navigation pane.
+1. In the **Manage** pane, select **Environment groups**.
 1. Select the target group (the group you want to add environments into).
 1. Select the **Add environments** button in the command bar.
 1. Select one or more environments from the list.
@@ -216,7 +216,7 @@ You can remove an environment from a group if it needs unique governance or if y
 # [New admin center](#tab/new)
 
 1. Select **Manage** in the navigation pane.
-1. Select **Environment groups** in the navigation pane.
+1. In the **Manage** pane, select **Environment groups**.
 1. Select the group.
 1. Select the environment you wish to remove.
 1. Select **Remove from group** in the command bar.
@@ -239,7 +239,7 @@ If an environment group is no longer needed, administrators can delete it to avo
 # [New admin center](#tab/new)
 
 1. Select **Manage** in the navigation pane.
-1. Select **Environment groups** in the navigation pane.
+1. In the **Manage** pane, select **Environment groups**.
 2. Select the environment group that you wish to delete.
 3. Select **Delete group** in the command bar.
 
