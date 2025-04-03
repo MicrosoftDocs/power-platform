@@ -1,5 +1,5 @@
 
-# these are going to be deprecated
+# to be deprecated
 - XCreateSidePaneActionForDashboard
 - XCreateSidePaneActionForEntity
 - XCreateSidePaneActionForEntityList
@@ -9,14 +9,5 @@
 - XSendAppNotificationFunctionWithOptionalParams
 - XSendEmailFromTemplate
 
-# do these work in LCPs?
-- AIClassify
-- AIExtract
-- AIReply
-- AISentiment
-- AISummarize
+# needs reference doc
 - AISummarizeRecord
-- AITranslate
-
-# does this log?
-+ Assert

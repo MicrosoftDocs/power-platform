@@ -1,4 +1,10 @@
-# common logic and name maps
+# ==== hostmap.ps1 ====
+
+# This file provides the human host name to file name map, for example 
+# "Power Platform CLI" to "pac-cli". Each new host will need a mapping 
+# pair placed in this file.
+
+# It also contains common setup code and functions for the other scripts.
 
 $productToHost = @{ 
     "Canvas apps"               = "canvas-apps"

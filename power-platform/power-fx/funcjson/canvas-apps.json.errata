@@ -1,18 +1,13 @@
 ### errata for canvas apps
 
-# moving forward?
-? XSendAppNotification
-
 # not available in canvas yet
 - Confirm
 - Decimal
 - Float
+- TraceValue
 
 # deprecated functions
 - ScanBarcode
-
-# known but unsupported, possibly test?
-- TraceValue
 
 # old data caching functions
 - Pending

@@ -29,11 +29,21 @@ In this article, learn about all the formulas available with [functions](/power-
 
 **[AddColumns](reference/function-table-shaping.md)** – Returns a table with [columns](/power-apps/maker/canvas-apps/working-with-tables#columns) added.
 
+**[AIClassify](reference/function-ai.md)** – Classifies text into one or more of categories.
+
+**[AIExtract](reference/function-ai.md)** – Extracts specified entities such as registration numbers, phone numbers, or names of people.
+
+**[AIReply](reference/function-ai.md)** – Drafts a reply to the message that you provide.
+
+**[AISentiment](reference/function-ai.md)** – Detects the sentiment of the text that you provide.
+
+**[AISummarize](reference/function-ai.md)** – Summarizes the text that you provide.
+
+**[AITranslate](reference/function-ai.md)** – Translates text from another language.
+
 **[And](reference/function-logicals.md)** – Boolean logic AND. Returns **true** if all arguments are **true**. You can also use the [**&&** operator](reference/operators.md).
 
 **[Asin](reference/function-trig.md)** – Returns the arcsine of a number, in radians.
-
-**[Assert](reference/function-assert.md)** – Evaluates to true or false in a test.
 
 **[AsType](reference/function-astype-istype.md)** – Treats a record reference as a specific table type.
 

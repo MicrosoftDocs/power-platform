@@ -2,7 +2,7 @@
 > AllProducts Operators
 > AllProducts Identifiers
 
-# operators that need to be called out as canvas specific
+# canvas specific
 + ThisItem
 + Self
 + Parent

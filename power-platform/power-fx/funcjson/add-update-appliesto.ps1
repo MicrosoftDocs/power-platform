@@ -1,3 +1,14 @@
+# ==== add-update-appliesto.ps1 ====
+
+# In your local clone of the doc repo, run this script after updating the 
+# .json or .errata files in this directory. It doesn't verify, it makes things right.
+
+# It will:
+# - Apply updates to the "Applies to:" in each of the reference/include/* files.
+# - Update the TOC.yml to use the same links that are in formula-reference-* files.
+
+# see README.txt for more details
+
 Set-StrictMode -Version 2.0
 
 . "$(Split-Path $MyInvocation.MyCommand.Path)\hostmap.ps1"
@@ -96,9 +107,6 @@ function get_func_appliesto_map {
     
         $jsonFile.Name -match '^(.+)\.json' | out-null
         $appliesToName = $matches[1]
-        # if ( $skipJson -contains $appliesToName ) {
-        #     continue
-        # }
 
         $errataMinus = @()
         $errataPlus = @()

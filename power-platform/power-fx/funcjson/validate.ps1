@@ -1,3 +1,19 @@
+# ==== validate.ps1 ====
+
+# This script runs as part of the doc build process for each PR that touches 
+# a file in the Power Fx directory. It must pass or the PR cannot be merged. 
+# This script does not modify any files, it is purely read only.
+
+# It checks for:
+# - Consistency between the reference/include/* files and the .json and 
+#   .json.errata files in this directory.
+# - Consistency between the formula-reference-* files and the reference/* 
+#   files augmented with .md.errata files.
+# - Consistency between the TOC.yml and formula-reference-* files.
+
+# You can run this script yourself too. Run it from anywhere in your repo 
+# clone. A good idea before starting your PR.
+
 Set-StrictMode -Version 2.0
 
 . "$(Split-Path $MyInvocation.MyCommand.Path)\hostmap.ps1"

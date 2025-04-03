@@ -1,6 +1,6 @@
----
-title: AISummarize, AISentiment, AIReply, AITranslate, AIClassify, and AIExtract functions
-description: Reference information including syntax and examples for the AISummarize, AISentiment, AIReply, AITranslate, AIClassify, and AIExtract functions.
+﻿---
+title: AIClassify, AIExtract, AIReply,AISummarize, AISentiment, and AITranslate functions
+description: Reference information including syntax and examples for the AIClassify, AIExtract, AIReply,AISummarize, AISentiment, and AITranslate functions.
 author: paulliew
 ms.topic: reference
 ms.custom: canvas
@@ -15,7 +15,7 @@ contributors:
   - mduelae
 ---
 
-# AIClassify, AIExtract, AIReply, AISentiment, AISummarize, and AITranslate
+# AIClassify, AIExtract, AIReply, AISentiment, AISummarize, and AITranslate
 [!INCLUDE[function-ai-applies-to](includes/function-ai-applies-to.md)]
 
 
@@ -37,6 +37,7 @@ Dataverse provides a variety of ready-to-use AI functions that are preconfigured
 - **AIReply** drafts a reply to the message that you provide. For example, this function drafts a reply to a customer's review of a product.
 - **AISentiment** detects the sentiment of the text that you provide. For example, this function detects whether the sentiment of a customer review is positive, negative, or neutral.
 - **AISummarize** summarizes the text that you provide. For example, this function summarizes an email message or text from a document.
+- - **AISummarizeRecord** summarizes the information in a record. For example, this function summarizes a customer's information based on a record in the Customers table.
 - **AITranslate** translates text from another language. For example, this function translates a customer email or product review. The source language doesn't need to be specified, and is automatically detected.
 
     For more information about languages supported for the source and target language, see [Translator language support—Translation](/azure/ai-services/translator/language-support) and review the list of supported languages under the **Auto Language Detection** column. 
