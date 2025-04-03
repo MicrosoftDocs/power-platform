@@ -48,7 +48,7 @@ productDirectory:
           text: Establish license assignment strategies
         - url: /power-platform/guidance/adoption/plan-overview
           text: More...
-    - title: Secure
+    - title: Security
       # imageSrc should be square in ratio with no white space
       imageSrc: ./media/secure.svg
       links:
@@ -60,7 +60,7 @@ productDirectory:
           text: Configure identity and access management
         - url: /power-platform/guidance/adoption/secure-overview
           text: More...
-    - title: Govern
+    - title: Governance
       # imageSrc should be square in ratio with no white space
       imageSrc: ./media/govern.svg
       links:
@@ -72,7 +72,7 @@ productDirectory:
           text: Reactive governance
         - url: /power-platform/guidance/adoption/admin-best-practices
           text: More...
-    - title: Operate
+    - title: Operations
       # imageSrc should be square in ratio with no white space
       imageSrc: ./media/operate.svg
       links:
@@ -84,7 +84,19 @@ productDirectory:
           url: adoption/cds-usage.md
         - text: More...
           url: adoption/operate-overview.md
-    - title: Ready
+    - title: Availability
+      # imageSrc should be square in ratio with no white space
+      imageSrc: ./media/operate.svg
+      links:
+        - text: Identify mission critical workloads
+          url: adoption/identify-mission-critical.md
+        - text: Plan and deploy mission critical workloads
+          url: adoption/plan-mission-critical.md
+        - text: Build a disaster recovery plan
+          url: adoption/disaster-recovery.md
+        - text: More...
+          url: adoption/availability-overview.md
+    - title: Readiness
       # imageSrc should be square in ratio with no white space
       imageSrc: ./media/innovate.svg
       links:
@@ -96,7 +108,7 @@ productDirectory:
           url: adoption/in-a-day.md
         - text: More...
           url: adoption/ready-overview.md
-    - title: Nurture
+    - title: Community
       # imageSrc should be square in ratio with no white space
       imageSrc: ./media/nurture.svg
       links:

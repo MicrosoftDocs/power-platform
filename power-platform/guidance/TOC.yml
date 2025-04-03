@@ -63,7 +63,7 @@
               href: adoption/license-assignment-strategies.md
             - name: Modernize applications with Power Platform
               href: white-papers/application-modernization.md
-        - name: Secure
+        - name: Security
           items:
             - name: Overview
               href: adoption/secure-overview.md
@@ -85,7 +85,7 @@
               href: adoption/secure-default-environment.md
             - name: Review the security checklist
               href: adoption/security-checklist.md
-        - name: Govern
+        - name: Governance
           items:
             - name: Overview
               href: adoption/admin-best-practices.md
@@ -107,7 +107,7 @@
               href: adoption/teams-environment-strategy.md
             - name: Manage the default environment
               href: adoption/manage-default-environment.md 
-        - name: Operate
+        - name: Operations
           items:
             - name: Overview
               href: adoption/operate-overview.md
@@ -129,7 +129,17 @@
                   href: adoption/support-strategy-maturity.md
             - name: Manage resistance and avoid organizational anti-patterns
               href: adoption/manage-resistance.md
-        - name: Ready
+        - name: Availability
+          items: 
+            - name: Overview
+              href: adoption/availability-overview.md
+            - name: Identify mission critical workloads
+              href: adoption/identify-mission-critical.md
+            - name: Plan and deploy mission critical workloads
+              href: adoption/plan-mission-critical.md
+            - name: Build a disaster recovery plan
+              href: adoption/disaster-recovery.md
+        - name: Readiness
           items: 
             - name: Overview 
               href: adoption/ready-overview.md
@@ -143,7 +153,7 @@
               href: adoption/reusable.md
             - name: Envision and uncover high-value use cases
               href: adoption/solution-envisioning.md
-        - name: Nurture
+        - name: Community
           items: 
             - name: Overview 
               href: adoption/nurture-best-practices.md
