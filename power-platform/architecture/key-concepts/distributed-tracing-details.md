@@ -21,6 +21,8 @@ search.audienceType:
 
 Distributed tracing is a method used to profile and monitor applications, especially those built using a microservices architecture. It allows you to trace an event in the system from one service to another and retrieve end-to-end diagnostics about performance and latency. The [W3C TraceContext](https://www.w3.org/TR/trace-context/) standard defines how context information is sent and modified between services, enabling distributed tracing scenarios.
 
+In this article, learn more about distributed tracing, practical applications and use cases, and how to implement distributed tracing across multiple services in Power Platform.
+
 ## Trace ID and Span ID
 
 In the W3C TraceContext standard, each trace is assigned a globally unique 16-byte trace-ID, and every activity within the trace is assigned a unique 8-byte span-ID. The trace-ID represents the overall transaction, while the span-ID represents individual operations within that transaction. Each activity records the trace-ID, its own span-ID, and the span-ID of its parent, establishing parent-child relationships between activities.
