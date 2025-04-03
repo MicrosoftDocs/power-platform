@@ -41,6 +41,8 @@ productDirectory:
         url: key-concepts/dataverse-auditing.md
       - text: ExpressRoute and Power Platform
         url: key-concepts/expressroute/overview.md
+      - text: Distributed tracing across multiple services
+        url: key-concepts/distributed-tracing.md
       - text: More...
         url: key-concepts/key-concepts-overview.md
     # Card
