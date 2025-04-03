@@ -1,16 +1,17 @@
 ---
-title: Reactive governance
-description: Configure identity and access management for Microsoft Power Platform to ensure secure access to resources.
+title: Reactive governance - Optimize Power Platform security and performance
+description: Learn how to optimize Power Platform security and performance with reactive governance by addressing issues in real time and improving tenant hygiene.
+#customer intent: As a Power Platform user, I want to address business continuity risks so that I can ensure uninterrupted operations.
 author: manuelap-msft
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
-ms.date: 02/28/2025
+ms.date: 04/02/2025
 ---
 
-# Reactive governance
+# Reactive governance- Optimize Power Platform security and performance
 
 Reactive governance refers to the approach of managing and addressing actions and issues as they arise, based on real-time data and insights. Instead of relying solely on predefined policies and procedures, reactive governance involves continuously monitoring the environment, identifying potential problems, and taking corrective actions promptly.
 
@@ -22,7 +23,7 @@ Intelligent recommendations and real time notifications helps admins stay inform
 
 - **Business continuity risks**
     - **Ownerless resources**: Resources where the owner has left the organization pose a business continuity risk. 
-    - **High-value resources in the Default environment**: Resources in the Default environment might not follow application lifecycle management (ALM) best practices, posing a business continuity risk. 
+    - **High-value resources in the default environment**: Resources in the Default environment might not follow application lifecycle management (ALM) best practices, posing a business continuity risk. 
     - Use [Power Platform Advisor](/power-platform/admin/power-platform-advisor) to identify and take action on resources that pose business continuity risks. 
 - **Tenant hygiene**:
     - **Overshared resources**: Overshared resources can lead to security vulnerabilities and inefficiencies. 
@@ -31,12 +32,12 @@ Intelligent recommendations and real time notifications helps admins stay inform
 - **Licenses**
     - **Pending license requests**: Manage pending license requests promptly ensures users have the necessary access to perform their tasks efficiently. Use [Power Platform Advisor](/power-platform/admin/power-platform-advisor) to identify and take action on resources that pose business continuity risks. 
     - **Intelligent licensing recommendations**: Review [recommendations](/power-platform/admin/get-recommendations-licensing) about who in your organization would benefit from having a Power Apps premium license.
-- **Change Requests and Approvals**
+- **Change requests and approvals**
     - **Requests for new environments**: Implement an approval workflow for new environment requests to ensure they align with organizational needs and governance policies. 
     - **Changes to Data Loss Prevention (DLP) policies**: Data Loss Prevention (DLP) policies protect sensitive data. Any changes to these policies should go through a formal approval process to maintain security and compliance.
     - Review [environment and DLP request components](../coe/env-mgmt.md) in the CoE Starter Kit to automate these processes. 
 - **Changes to user management**: Managing user roles and permissions is vital for security. Implement workflows to approve changes in user management, ensuring they comply with governance standards.
-- **Changes to Governance Settings**: Any changes to governance settings should be reviewed and approved to ensure they align with the overall governance framework and organizational objectives.
+- **Changes to governance settings**: Any changes to governance settings should be reviewed and approved to ensure they align with the overall governance framework and organizational objectives.
 
 ## Tools for reactive governance 
 
@@ -46,8 +47,8 @@ The **[CoE Starter Kit](/power-platform/guidance/coe/starter-kit)** is a compreh
 
 Organizations can use **[APIs and connectors](/power-platform/admin/programmability-extensibility-overview)** to create custom reactive governance processes tailored to their specific needs. By integrating these tools, organizations can automate responses to governance issues, streamline workflows, and enhance efficiency.
 
-## Use Monitoring for effective governance
+## Use monitoring for effective governance
 
-Effective monitoring is essential for reactive governance. Monitor paltform usage and compliance and identify issues that need to be resolved or actions that need to be taken. 
+Effective monitoring is essential for reactive governance. Monitor platform usage and compliance and identify issues that need to be resolved or actions that need to be taken. 
 
 Learn more: [Gain insights into Power Platform adoption](observability.md)
