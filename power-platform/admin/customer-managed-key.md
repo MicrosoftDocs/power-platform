@@ -56,7 +56,7 @@ Currently, all your customer data stored *only* in the following apps and servic
 - [Copilot Studio](/copilot-studio/admin-customer-managed-keys)
 
 > [!NOTE]
->-  Contact a representative for services not listed above for information about customer-managed key support.
+> - Contact a representative for services not listed above for information about customer-managed key support.
 > - Nuance Conversational IVR and [Maker Welcome Content](welcome-content.md) are excluded from customer-managed key encryption.
 > - The connection settings for connectors continue to be encrypted with a Microsoft-managed key.
 > - Power Apps display names, descriptions, and connection metadata continue to be encrypted with a Microsoft-managed key.
