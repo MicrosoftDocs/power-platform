@@ -33,7 +33,7 @@
         items:
           - name: Overview
             href: key-concepts/distributed-tracing.md
-          - name: Implementation Details
+          - name: Implement distributed tracing
             href: key-concepts/distributed-tracing-details.md
     - name: Reference architectures
       items:
