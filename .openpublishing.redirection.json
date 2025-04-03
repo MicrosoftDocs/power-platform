@@ -1,7 +1,22 @@
 
 {
   "redirections": [
-  {
+   {
+      "source_path": "power-platform/admin/add-teams-users-field-security-profile.md",
+      "redirect_url": "field-level-security#add-teams-or-users-to-a-column-security-profile-to-control-access",
+      "redirect_document_id": "false"
+   },
+   {
+      "source_path": "power-platform/admin/enable-disable-security-field.md",
+      "redirect_url": "field-level-security#enable-column-security",
+      "redirect_document_id": "false"
+   },
+   {
+      "source_path": "power-platform/admin/set-up-security-permissions-field.md",
+      "redirect_url": "field-level-security#add-teams-or-users-to-a-column-security-profile-to-control-access",
+      "redirect_document_id": "false"
+   },
+   {
       "source_path": "power-platform/admin/wp-work-with-admin-portals.md",
       "redirect_url": "power-platform/admin/admin-documentation",
       "redirect_document_id": "false"
