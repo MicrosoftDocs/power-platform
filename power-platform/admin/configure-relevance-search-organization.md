@@ -79,7 +79,8 @@ Dataverse search consists of two separate indexes that power different experienc
 Dataverse search is an opt-out feature, set to **On** for all new production environments or **Default** for all other new environment types by default. We recommend turning on Dataverse search so users have a superior search experience in model-driven apps, and to allow generative AI-powered experiences like Copilot.
 
 - When set to **On**, you see the search bar in the header of all model-driven apps in the environment enabling your users to have a global-search experience and enjoy the benefits of searching and working with AI.
-- When set to **Default**, you don't see the search bar in the header of all model-driven Power Apps in the environment. Turning on Dataverse search allows users to experience global-search capabilities and the benefits of working with AI.
+- When set to **Default**, you don't see the search bar in the header of all model-driven apps in the environment. However, generative-AI experiences using Dataverse data remain available.
+- When set to **Off**, you don't see the search bar in the header of all model-driven apps in the environment and generative-AI experiences using Dataverse data are limited.
 
 Note: The enablement of these AI experiences can occur via the following methods:
 
@@ -107,7 +108,7 @@ Take these steps to turn on Dataverse search:
 
 1. Open the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) as a system administrator.
 
-2. In the navigation pane, select **Environment**.
+2. Select **Manage**.
 
 3. Select an environment.
 
