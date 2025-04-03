@@ -6,7 +6,7 @@ author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 10/31/2024
+ms.date: 4/3/2025
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
@@ -45,7 +45,7 @@ Both **Update** and **UpdateIf** return the modified data source as a [table](/p
 
 ### Delegation
 
-These functions aren't delegated to a data source. However, UpdateIf and RemoveIf work locally to simulate delegation to a limit of 500/2000 records. They successively bring down records beyond the nondelegation 500/2000 record limit. Records that meet the If condition are collected. Generally, a maximum of 500/2000 records are collected separately and then changed per execution. However, more records may be updated if the existing local data cache is large as the function may have access to more records for evaluation. Only the first portion of the data source will be retrieved and then the function applied.  This may not represent the complete story.  A warning may appear at authoring time to remind you of this limitation.
+These functions do not delegate to a data source. However, **UpdateIf** and **RemoveIf** work locally to simulate delegation up to a limit of 500/2000 records. They progressively bring down records beyond the non-delegation limit of 500/2000 records. Records that meet the **If** condition are collected. Generally, a maximum of 500/2000 records are collected separately and then modified per execution. However, more records may be updated if the existing local data cache is large, as the function may have access to more records for evaluation. Only the initial portion of the data source will be retrieved, and then the function will be applied. This may not represent the complete picture. A warning may appear during authoring to remind you of this limitation.
 
 ## Syntax
 
