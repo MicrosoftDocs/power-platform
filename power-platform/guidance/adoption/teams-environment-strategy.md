@@ -1,10 +1,11 @@
 ---
 title: Establish governance policies to manage Microsoft Dataverse for Teams environments
-description: Microsoft Dataverse for Teams enables users to build custom apps, bots, and flows in Microsoft Teams. This article walks you through important details about Dataverse for Teams environments, and discusses recommended ways to proactively manage them.
+description: Lear governance policies and best practices for managing Microsoft Dataverse for Teams environments. It covers environment creation, monitoring capacity and usage, implementing data loss prevention (DLP) policies, and utilizing Microsoft Teams admin center controls to ensure effective management and compliance.
+#customer intent: As a Power Platform user, I want to establish governance policies for Dataverse for Teams environments to ensure secure, compliant, and efficient usage within my organization.
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 04/02/2025
+ms.date: 04/03/2025
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: sericks
@@ -41,7 +42,7 @@ We recommend setting up reactive governance workflows and monitoring abilities. 
 
 The [CoE Starter Kit](../coe/starter-kit.md) provides a set of templates that implement our best practices. These templates are designed to help organizations get started with developing a strategy for adopting, maintaining, and supporting Microsoft Power Platform. The kit includes a template implementation of the reactive governance workflows to govern Dataverse for Teams environment creation. Because it's a template implementation, admins can customize the conditions for deletion by creating a copy of the flows.
 
-Dedicated Dataverse for Teams environments will be used for appropriate business use cases. Additionally, admins can choose to set up public Microsoft Teams teams that are already backed by Dataverse for Teams environments, to which they can direct test or trial users. Having a public team will help ensure that tenant capacity limits are applied to appropriate business use cases, while still allowing individual users to test new capabilities.  
+Dedicated Dataverse for Teams environments is used for appropriate business use cases. Additionally, admins can choose to set up public Microsoft Teams teams that are already backed by Dataverse for Teams environments, to which they can direct test or trial users. Having a public team helps ensure that tenant capacity limits apply to appropriate business use cases while still allowing individual users to test new capabilities.
 
 ## Monitor Dataverse for Teams capacity and usage
 
@@ -59,7 +60,7 @@ A dashboard in the CoE Starter Kit further identifies the usage of Dataverse for
 
 Manage the data governance policies for newly created Dataverse for Teams environments by selecting one of these approaches:
 
-- Create a policy spanning all environments except selected ones. Keep the available connectors in this policy limited to those that you want to expose to makers in Dataverse for Teams environments. By setting the scope of the DLP policy to *Exclude certain environments*, this policy will apply to any new environments that are created in your tenant&mdash;including Dataverse for Teams or trial environments. Any other type of new environment, like a production or sandbox environment, can be explicitly removed from this tenant-wide DLP policy and added to appropriate, dedicated DLP policies suited for their use case.
+- Create a policy spanning all environments except selected ones. Keep the available connectors in this policy limited to those that you want to expose to makers in Dataverse for Teams environments. By setting the scope of the DLP policy to *exclude certain environments*, this policy applies to any new environments that are created in your tenant&mdash;including Dataverse for Teams or trial environments. Any other type of new environment, like a production or sandbox environment, can be explicitly removed from this tenant-wide DLP policy and added to appropriate, dedicated DLP policies suited for their use case.
 
 - Create a policy specifically for Dataverse for Teams environments. Keep the available connectors in this policy limited to those you want team members to have access to. Set up a script by using [PowerShell cmdlets](../../admin/powerapps-powershell.md#data-loss-prevention-dlp-policy-commands), or a flow that uses admin connectors, to periodically add newly created Dataverse for Teams environments to this policy and remove them from the default tenant-level policy.
 
@@ -75,7 +76,7 @@ Global or Microsoft Teams admins can use Microsoft Teams app controls through th
 |**Microsoft Copilot Studio**|The ability to create new Microsoft Copilot Studio chatbots by using the Microsoft Teams embedded maker experience. This is tied to the implicit ability to create new Dataverse for Teams environments.<Br>The ability to use Dataverse or Dataverse for Teams Microsoft Copilot Studio components within Microsoft Teams by using the Microsoft Copilot Studio app.|
 |**Shared Power Apps**|The ability to use Dataverse or Dataverse for Teams Power Apps apps within Microsoft Teams by using the *Built by your colleagues* catalog.|
 |**Shared Microsoft Copilot Studio**|The ability to use Dataverse or Dataverse for Teams Microsoft Copilot Studio chatbots within Microsoft Teams by using the *Built by your colleagues* catalog.|
-|**Various Sample Apps**| The ability to create new apps, flows and bots by using sample apps within Microsoft Teams. This is tied to the implicit ability to create new Dataverse for Teams environments.|
+|**Various Sample Apps**| The ability to create new apps, flows, and bots by using sample apps within Microsoft Teams. This is tied to the implicit ability to create new Dataverse for Teams environments.|
 
 Given that these controls block environment creator, maker, and user access, we recommend that admins instead use reactive constructs&mdash;either by building their own or by using the templates in the CoE Starter Kit&mdash;to govern Dataverse for Teams environment creation workflows.
 
