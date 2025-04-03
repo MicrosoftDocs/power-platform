@@ -16,7 +16,7 @@ contributors:
   - MartinPankraz
 ms.reviewer: ellenwehrle
 ms.topic: overview
-ms.date: 12/11/2024
+ms.date: 03/27/2025
 ms.service: power-platform
 ms.subservice: sap
 # Customer intent: As an administrator, I want to learn about templates and prebuilt agents that can help me accelerate my Power Platform and SAP integration and solution development.
@@ -36,7 +36,11 @@ During the design phase, a solution template helps a maker see how:
 - Workflows can be automated by Power Automate cloud flows operating behind the scenes.
 - Solutions can be enhanced and extended to meet an organization's needs.
 
-Get started by learning more about the [SAP Procurement template for Power Platform](/power-platform/enterprise-templates/finance/sap-procurement/overview.md).
+Get started by learning more about:
+
+[SAP Procurement template for Power Platform](/power-platform/sap/templates/sap-procurement/overview)
+[SAP Setup Assistant](/power-platform/sap/templates/sap-procurement/administer/sap-setup-assistant/overview)
+[Microsoft Copilot for Finance SAP Collections template](/copilot/finance/get-started/sap/administer/get-started)
 
 ## Agents for Power Platform and SAP
 
@@ -53,7 +57,7 @@ Get started by learning more about:
 
 Power Platform and SAP integration and solution development are enterprise-grade initiatives that should be carried out by a knowledgeable, [centralized team](/power-platform/guidance/adoption/delivery-models#centralized) that consists of key stakeholders, product owners, business analysts, Power Platform administrators and developers and SAP admins (S-User) and functional analysts (SAP BASIS).
 
-Once established, your team can [get started with its Power Platform and SAP administration journey](/power-platform/enterprise-templates/finance/sap-procurement/administer/get-started.md).
+Once established, your team can [get started with its Power Platform and SAP administration journey](/power-platform/sap/templates/sap-procurement/overview).
 
 ## Support
 
