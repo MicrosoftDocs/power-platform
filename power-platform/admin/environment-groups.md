@@ -3,7 +3,7 @@ title: Environment groups
 description: Learn how to organize your Managed Environments into groups and govern them in bulk.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/02/2025
+ms.date: 04/03/2025
 author: mikferland-msft
 ms.author: miferlan
 ms.reviewer: sericks
@@ -83,7 +83,6 @@ Complete the following steps to create a new environment group in the Power Plat
 # [Classic admin center](#tab/classic)
 
 1. Sign in to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com/) as a [Power Platform tenant administrator](use-service-admin-role-manage-tenant.md).
-1. Select **Environments** in the navigation pane.
 1. Select **Environment groups** in the navigation pane.
 1. On the **Environment groups** page, select **New group**.
 1. In the **Create group** pane that appears:
