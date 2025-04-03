@@ -26,17 +26,12 @@ In this article, we look at:
 
 | Title | Description |
 | --- | --- |
+| **[Distributed tracing across multiple services](../reference-architectures/distributed-tracing.md)** | Learn how to achieve comprehensive observability across multiple services, including those within Power Platform, Azure, and Dynamics 365. |
 | **[Power Pages architecture white paper](/power-pages/guidance/white-papers/architecture)** | This white paper provides a comprehensive view of the capabilities of the Power Pages platform. It describes the architectural elements that enable Power Pages to scale, offer high reliability and availability, and protect business data to offer enterprise grade compliance and security. |
 | **[Add a copilot to your Power Pages site](/power-pages/getting-started/enable-chatbot)** | Integrate a copilot to provide natural-language responses to visitor questions, improve the user experience, and boost satisfaction. |
 | **[Set up Azure Front Door with Power Pages sites](/power-pages/configure/azure-front-door)** | Learn how to set up Azure Front Door with Power Pages to use its edge caching and web application firewall (WAF) capabilities |
 | **[Set up payments integration](/power-pages/admin/set-up-payments-integration)** | Enable your Power Pages site to accept payments by using design studio's Set up workspace. |
 | **[Integrate virtual tables with Power Pages](/power-pages/configure/virtual-tables)** | Enable the integration of external data sources by using virtual tables. |
-
-## Reference architectures
-
-| Title | Description |
-| --- | --- |
-| **[Distributed tracing across multiple services](../reference-architectures/distributed-tracing.md)** | Learn how to achieve comprehensive observability across multiple services, including those within Power Platform, Azure, and Dynamics 365. |
 
 ## Solution ideas
 

@@ -29,12 +29,16 @@
             href: key-concepts/expressroute/checklist.md
       - name: Dataverse auditing
         href: key-concepts/dataverse-auditing.md
+      - name: Distributed tracing across multiple services
+        items:
+          - name: Overview
+            href: key-concepts/distributed-tracing.md
+          - name: Implementation Details
+            href: key-concepts/distributed-tracing-details.md
     - name: Reference architectures
       items:
       - name: Overview
         href: reference-architectures/reference-architecture-overview.md
-      - name: Distributed tracing across multiple services
-        href: reference-architectures/distributed-tracing.md
       - name: Document processing with AI Builder
         href: reference-architectures/ai-document-processing.md
       - name: Predictive data analysis

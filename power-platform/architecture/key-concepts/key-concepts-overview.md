@@ -27,3 +27,4 @@ Architecture key concepts are the foundational principles and recommendations th
 | --- | --- |
 | **[ExpressRoute and Power Platform](expressroute/overview.md)** | Learn how to use Microsoft Azure ExpressRoute to connect your on-premises network to Microsoft cloud services by using private connectivity. |
 | **[Dataverse auditing](dataverse-auditing.md)** | Track and record changes to data, user activities, and system events with Dataverse auditing.|
+| **[Distributed tracing across multiple services](distributed-tracing.md)** | Learn how to achieve comprehensive observability across multiple services, including those within Power Platform, Azure, and Dynamics 365. |

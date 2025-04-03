@@ -28,7 +28,7 @@ Monitoring tools and processes are essential for maintaining the health and perf
 
 ## Architecture diagram
 
-:::image type="content" source="media/distributed-tracing/distributed-tracing.png" alt-text="Architecture diagram of distributed tracing across multiple Power Platform services. " lightbox="media/distributed-tracing/distributed-tracing.png":::
+:::image type="content" source="./media/distributed-tracing/distributed-tracing.png" alt-text="Architecture diagram of distributed tracing across multiple Power Platform services. " lightbox="./media/distributed-tracing/distributed-tracing.png":::
 
 ## Workflows
 
@@ -42,7 +42,7 @@ Following are the steps for Azure to Dataverse web API workflow:
 
 Following are the steps for ​Power Platform workflow: 
 
-1. **​Instrument**: Configure the Power Platform resource with the Application Insights connection string / Key 
+1. **​Instrument**: Configure the Power Platform resource with the Application Insights connection string / key 
 1. **Trace**: Microsoft Copilot Studio, Power Apps, and Power Automate can begin a transaction by calling a custom Dataverse API.​ 
 
 ## Components
@@ -135,6 +135,11 @@ To effectively monitor your workload for security, performance, and reliability,
 
 The suggestions in this example scenario allow you to [collect workload performance data recommendation for Power Platform workloads](/power-platform/well-architected/performance-efficiency/collect-performance-data)
 
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Learn how to implement distributed tracing](distributed-tracing-details.md)
+
 ## Contributors
 
 _Microsoft maintains this article. The following contributors wrote this article._
@@ -142,115 +147,6 @@ _Microsoft maintains this article. The following contributors wrote this article
 Principal authors:
 
 - **[Grant Archibald](https://www.linkedin.com/in/grantarchibald/)**, Senior Program Manager
-
-## Next steps
-
-> [!TIP]
-> The [Dataverse Open Telemetry sample](https://github.com/Grant-Archibald-MS/dataverse-opentelemetry) project contains an example of Dataverse plugin integration with Open Telemetry. OpenTelemetry is a collection of W3C standards, APIs, SDKs, and tools. Use it to instrument, generate, collect, and export telemetry data (metrics, logs, and traces) to help you analyze your software’s performance and behavior.
-
-### Dataverse web API integration
-
-Let's explore how the [Dataverse web API](/power-apps/developer/data-platform/webapi/overview) can be integrated with W3C TraceContext to enable distributed tracing.
-
-The calling service initiates a trace with a unique trace-ID and span-ID. This trace parent value can be passed to the Web API either in the body of an HTTP POST request or as part of an HTTP query string.
-
-- **Option 1: POST body**: `postData(environmentUrl + "api/data/v9.0/" + customApiName, token, ...)`
-- **Option 2: Tag query string**: `postData(environmentUrl + "api/data/v9.0/" + customApiName + "?tag=01-0af...")`
-
-By using either method, a Dataverse plug-in can be configured to incorporate Application Insights tracing, generating new span-IDs and trace messages.
-
-### Dataverse integration
-
-Lets explore how this pattern can be implemented using the generally available features of Dataverse.
-
-To apply distributed tracing to calls to the [Dataverse web API](/power-apps/developer/data-platform/webapi/overview) two approaches will be combined Dataverse messages to extend the message pipeline and a custom API using Dataverse plugins that use the Application Insights SDK to add the required parent child relationships.
-
-#### Invoke from other Power Platform services
-
-When looking at other components in the Power Platform you could also consider making use of [Invoke a function from app, flow, code, or another function](/power-apps/maker/data-platform/functions-invoke) to invoke the Dataverse Custom APIs discussed in this section.
-
-This approach allows services like Microsoft Copilot Studio, Power Apps, or Power Automate cloud flows to be included in the overall distributed tracing solution. 
-
-#### Dataverse messages for entities or custom APIs
-
-Custom [Dataverse messages](/power-apps/developer/data-platform/custom-actions) can be defined that allow you to interact with entities or custom APIs within the Dataverse environment. These messages enable you to perform operations such as create, update, delete, and retrieve data. By using Dataverse messages, you can streamline your data management processes and ensure seamless integration with your observability needs.
-
-#### Adding steps to a plug-in
-
-Now that a Dataverse message type is created or using any of the predefined entity types of an environment you can take advantage of [Dataverse plug-ins](/power-apps/developer/data-platform/plug-ins) so that they can be configured to be executed at different stages of the data processing pipeline and execute distributed tracing.
-
-These stages can include pre-validation, pre-operation, and post-operation steps. By adding steps to a plugin, you can control the flow of data and ensure that specific actions are taken at the right time.
-
-- **Pre-validation**: This step occurs before the main operation is executed. It's used to validate the data and ensure that it meets the required criteria.
-- **Pre-operation**: This step occurs after the pre-validation step but before the main operation is executed. It's used to perform any necessary preparations or modifications to the data.
-- **Post-operation**: This step occurs after the main operation is executed. It's used to perform any necessary cleanup or additional actions based on the results of the main operation.
-
-Plugins can be configured to execute these steps either synchronously or asynchronously, depending on the requirements of your application.
-
-#### Plugin configuration - unsecure and secure configuration values
-
-Specifically looking at scenarios for distributed tracing you can use the unsecure configuration to manage if tracing should be enabled and the level of logging that is applied. You could use the secure configuration value to store connection string information required by the plugin.
-
-The process is managed when [registering plug-ins](/power-apps/developer/data-platform/register-plug-in), you can have both unsecure and secure [configuration values](/power-apps/developer/data-platform/register-plug-in#set-configuration-data). These values are used to control various aspects of the plugin's behavior.
-
-- **Unsecure configuration**: Unsecure settings are visible to all users and can include settings such as log level, enable/disable tracing, and other non-sensitive information.
-- **Secure configuration**: Secure settings are only visible to users with the appropriate permissions and can include sensitive information such as connection strings, API keys, and other confidential data.
-
-:::image type="content" source="media/distributed-tracing/secure-config-values.png" alt-text="Screenshot of registering a plug-in." lightbox="media/distributed-tracing/secure-config-values.png":::
-
-By using secure configuration values, you can ensure that sensitive information is protected and only accessible to authorized users.
-
-#### Custom API with request and response parameters
-
-Dataverse allows you to define [custom APIs](/power-apps/developer/data-platform/custom-api) with specific request and response parameters. This feature enables you to create tailored APIs that meet the unique needs of your application.
-
-- [**Input parameters**](/power-apps/developer/data-platform/understand-the-data-context#inputparameters): These parameters define the input data required by the custom API. They can include various data types such as strings, integers, and complex objects.
-- [**Output parameters**](/power-apps/developer/data-platform/understand-the-data-context#outputparameters): These parameters define the output data returned by the custom API. They can include various data types and structures, allowing you to provide detailed and meaningful responses to API consumers.
-
-:::image type="content" source="media/distributed-tracing/custom-api.png" alt-text="Screenshot of registering a custom API" :::
-
-> [!TIP]
-> In the case of distributed tracing you could tag query string value for [Passing a Shared Variable from the API](/power-apps/developer/data-platform/understand-the-data-context#passing-a-shared-variable-from-the-api)
-
-#### Custom processing steps (sync and async)
-
-When using custom processing steps, you can define whether the steps should be executed synchronously or asynchronously. This flexibility allows you to optimize the performance and responsiveness of your application.
-
-- **Synchronous processing**: In synchronous processing, the steps are executed in a sequential manner, and the next step isn't initiated until the current step is completed. This approach ensures that each step is completed before moving on to the next one.
-- **Asynchronous processing**: In asynchronous processing, the steps are executed independently, and the next step can be initiated before the current step is completed. This approach allows for parallel processing and can improve the overall performance of your application.
-
-By defining custom processing steps, you can add monitoring and other functionalities to existing entities or custom API messages, ensuring that your application operates efficiently and effectively.
-
-### Dataverse C# Plugin
-
-Dataverse has the ability to [write plug-ins](/power-apps/developer/data-platform/write-plug-in). This feature can be used to build and deploy C# plugins that use the Application Insights SDK to create the correct parent child relationship between services.
-
-### Comparison with out-of-the-box ILogger
-
-Dataverse provides an [out-of-the-box ILogger](/power-apps/developer/data-platform/application-insights-ilogger) that can be configured at the environment level. This ILogger is designed to offer a standardized logging mechanism across different environments, ensuring consistency and ease of use. However, it may not provide the same level of granularity and customization as the custom plugin based ILogger.
-
-#### Custom plug-in ILogger
-
-A custom plugin ILogger in Dataverse offers more detailed levels of information, such as Trace, Debug, and Information. This allows developers to capture more specific and relevant data during the execution of plugins. The Plugin ILogger can utilize values from the message request or the Share Variable tag parameter to specify the calling trace parent, enabling better tracking and correlation of logs.
-
-#### Key C# concepts for parsing activity and specifying parent ID
-
-When working with the custom plugin ILogger, it's essential to understand key C# concepts for parsing activity and specifying the parent ID. Here's an example of how to create a new activity for a trace message:
-
-```csharp
-// Create a new activity for the trace message
-var activity = new Activity("CustomActivity");
-activity.SetParentId(traceParent);
-activity.Start();
-// Create a trace telemetry record
-var traceTelemetry = new TraceTelemetry(message, ConvertLogLevel(level))
-{
-    Message = message,
-    Context = { Operation = { ParentId = dependencyTelemetry.Id, Id = activity.Id } }
-};
-// Track the trace telemetry
-telemetryClient.TrackTrace(traceTelemetry);
-```
 
 ## Related resources
 

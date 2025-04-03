@@ -26,6 +26,7 @@ In this article, we look at:
 
 | Title | Description |
 | --- | --- |
+| **[Distributed tracing across multiple services](../reference-architectures/distributed-tracing.md)** | Learn how to achieve comprehensive observability across multiple services, including those within Power Platform, Azure, and Dynamics 365. |
 | **[Coding guidelines](/power-automate/guidance/coding-guidelines/)** | Learn about standards for naming objects, collections, and variables, and guidelines for developing consistent, performant, and easily maintainable flows. |
 | **[Robotic process automation with SAP](/power-automate/guidance/rpa-sap-playbook/introduction)** | Prototype the automation of an example SAP scenario with RPA. |
 
@@ -33,7 +34,6 @@ In this article, we look at:
 
 | Title | Description |
 | --- | --- |
-| **[Distributed tracing across multiple services](../reference-architectures/distributed-tracing.md)** | Learn how to achieve comprehensive observability across multiple services, including those within Power Platform, Azure, and Dynamics 365. |
 | **[Document processing with AI Builder](../reference-architectures/ai-document-processing.md)** | Streamline document processing and automate data extraction from various documents such as forms, invoices, and purchase orders |
 | **[Legacy data integration](../reference-architectures/app-legacy-data-integration.md)** | Streamline the process of integrating legacy data with modern platforms. |
 | **[​Integrate Microsoft Fabric Lakehouse data using Microsoft Dataverse virtual tables](../reference-architectures/app-integrate-lakehouse.md)** | Gather data from multiple internal systems into a Microsoft Fabric Lakehouse, and consume the data in Power Platform apps and automations using Dataverse virtual tables. |

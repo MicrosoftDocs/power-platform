@@ -25,6 +25,7 @@ In this article, we look at:
 
 | Title | Description |
 | --- | --- |
+| **[Distributed tracing across multiple services](../reference-architectures/distributed-tracing.md)** | Learn how to achieve comprehensive observability across multiple services, including those within Power Platform, Azure, and Dynamics 365. |
 | **[Coding guidelines](/power-apps/guidance/coding-guidelines/overview)** | Learn about standards for naming objects, collections, and variables, and guidelines for developing consistent, performant, and easily maintainable apps. |
 | **[Build large and complex canvas apps](/power-apps/maker/canvas-apps/working-with-large-apps)** | Use the recommendations in this article to better work with large and complex apps in Power Apps Studio and improve your apps' runtime performance. | 
 | **[Optimize app or page load for peak performance](/power-apps/maker/canvas-apps/fast-app-page-load)** | One of the key factors that shape a user's perception of an app is how quickly it opens and becomes functional. Follow the guidelines in this article to achieve fast data loading apps. | 
@@ -40,7 +41,6 @@ In this article, we look at:
 
 | Title | Description |
 | --- | --- |
-| **[Distributed tracing across multiple services](../reference-architectures/distributed-tracing.md)** | Learn how to achieve comprehensive observability across multiple services, including those within Power Platform, Azure, and Dynamics 365. |
 | **[Document processing with AI Builder](../reference-architectures/ai-document-processing.md)** | Streamline document processing and automate data extraction from various documents such as forms, invoices, and purchase orders |
 | **[Predictive data analysis with Dataverse, Fabric, and Azure AI](../reference-architectures/ai-predictive-data-analysis.md)** | Perform predictive data analysis using Dataverse, Microsoft Fabric, and Azure AI and learn best practices for data ingestion, model training, and visualization, enabling you to build robust predictive models and actionable insights. |
 | **[​Integrate Microsoft Fabric Lakehouse data using Microsoft Dataverse virtual tables](../reference-architectures/app-integrate-lakehouse.md)** | Gather data from multiple internal systems into a Microsoft Fabric Lakehouse, and consume the data in Power Platform apps and automations using Dataverse virtual tables. |
