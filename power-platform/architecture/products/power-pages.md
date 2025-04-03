@@ -1,13 +1,17 @@
 ---
 title: Power Pages reference architectures and solution ideas
-description: Discover how Microsoft Power Pages can help you create secure, enterprise-grade websites with low-code solutions. Learn about key concepts, reference architectures, and solution ideas.
-#customer intent: As a Power-Platform user, I want to learn about Power Pages reference architectures so that I can build secure and efficient websites.
+description: Discover Microsoft Power Pages reference architectures and solution ideas to build secure, efficient, and scalable websites with low-code tools.
+#customer intent: As a Power Platform user, I want to learn about Power Pages key concepts, reference architectures, and solution ideas so that I can build secure and efficient websites.
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: architecture-center
-ms.topic: conceptual
-ms.date: 03/24/2025
+ms.topic: article
+ms.date: 04/03/2025
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-description
+  - ai-seo-date:04/03/2025
 ---
 
 # Power Pages reference architectures and solution ideas
@@ -24,12 +28,14 @@ In this article, we look at:
 
 ## Key concepts
 
+<!-- Fix first link below when we decide where it lives -->
+
 | Title | Description |
 | --- | --- |
 | **[Distributed tracing across multiple services](../reference-architectures/distributed-tracing.md)** | Learn how to achieve comprehensive observability across multiple services, including those within Power Platform, Azure, and Dynamics 365. |
-| **[Power Pages architecture white paper](/power-pages/guidance/white-papers/architecture)** | This white paper provides a comprehensive view of the capabilities of the Power Pages platform. It describes the architectural elements that enable Power Pages to scale, offer high reliability and availability, and protect business data to offer enterprise grade compliance and security. |
+| **[Power Pages architecture white paper](/power-pages/guidance/white-papers/architecture)** | This white paper provides a comprehensive view of the capabilities of the Power Pages platform. It describes the architectural elements that enable Power Pages to scale, offer high reliability and availability, and protect business data to provide enterprise-grade compliance and security. |
 | **[Add a copilot to your Power Pages site](/power-pages/getting-started/enable-chatbot)** | Integrate a copilot to provide natural-language responses to visitor questions, improve the user experience, and boost satisfaction. |
-| **[Set up Azure Front Door with Power Pages sites](/power-pages/configure/azure-front-door)** | Learn how to set up Azure Front Door with Power Pages to use its edge caching and web application firewall (WAF) capabilities |
+| **[Set up Azure Front Door with Power Pages sites](/power-pages/configure/azure-front-door)** | Learn how to set up Azure Front Door with Power Pages to use its edge caching and web application firewall (WAF) capabilities. |
 | **[Set up payments integration](/power-pages/admin/set-up-payments-integration)** | Enable your Power Pages site to accept payments by using design studio's Set up workspace. |
 | **[Integrate virtual tables with Power Pages](/power-pages/configure/virtual-tables)** | Enable the integration of external data sources by using virtual tables. |
 
@@ -38,7 +44,7 @@ In this article, we look at:
 | Title | Description |
 | --- | --- |
 | **[Property rental portal with AI-driven search and payment processing](../solution-ideas/agent-rental-portal.md)** | Build a comprehensive rental portal that uses AI-driven search capabilities and seamless payment processing. |
-| **[Healthcare patient support agent architecture](../solution-ideas/agent-healthcare-patient-support.md)** | Streamline patient interactions and reduce administrative burdens for healthcare providers. |
+| **[Healthcare Patient Support Agent architecture](../solution-ideas/agent-healthcare-patient-support.md)** | Streamline patient interactions and reduce administrative burdens for healthcare providers. |
 
 ## Resources
 

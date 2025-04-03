@@ -81,12 +81,12 @@
           href: products/power-apps.md
         - name: Power Automate
           href: products/power-automate.md
-        - name: Copilot Studio
-          href: products/copilot-studio.md
         - name: Power Pages
           href: products/power-pages.md
         - name: Microsoft Dataverse
           href: products/microsoft-dataverse.md
+        - name: Copilot Studio
+          href: products/copilot-studio.md
     - name: Power Platform icons
       href: /power-platform/guidance/icons?toc=/power-platform/architecture/toc.json&bc=/power-platform/architecture/breadcrumb/toc.json
     - name: Power Platform Well-Architected
