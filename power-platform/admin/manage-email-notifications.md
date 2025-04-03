@@ -11,7 +11,19 @@ ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
-# Manage email notifications to admins
+# Message Center weekly digest emails
+Admin can receive a weekly digest of all messages for the services they select.
+1. Log in to the Admin Center at [https://admin.powerplatform.microsoft.com.](https://admin.powerplatform.microsoft.com/)
+2. On the left-hand navigation, select **Admin Centers**.
+3. Select **Microsoft 365**.
+4. Expand Health and slect **Message Center**.
+5. On the page that loads, select **Preferences**.
+6. A flyout appears on the right, select the **Email** tab.
+7. Make sure the email notification settings are as expected. You can select Other e-mail addresses if you want the digest to be sent to different users or a shared mailbox.
+8. Select the **Send me a weekly digest about services I select** box, and select the services you wish to receive information about.
+9. Press **Save**.
+
+# Ad-hoc Manage email notifications to admins
 
 [!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
