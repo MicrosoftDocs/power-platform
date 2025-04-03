@@ -56,18 +56,11 @@ Currently, all your customer data stored *only* in the following apps and servic
 - [Copilot Studio](/copilot-studio/admin-customer-managed-keys)
 
 > [!NOTE]
-> Nuance Conversational IVR and [Maker Welcome Content](welcome-content.md) are excluded from customer-managed key encryption.
-
-> [!NOTE]
-> The connection settings for connectors will continue to be encrypted with a Microsoft-managed key.
->
-> Contact a representative for services not listed above for information about customer-managed key support.
-
-> [!NOTE]
-> Power Apps display names, descriptions, and connection metadata continue to be encrypted with a Microsoft-managed key.
-
-> [!NOTE]
-> The download results link and other data produced by solution checker enforcement during a solution check continues to be encrypted with a Microsoft-managed key.
+> - Nuance Conversational IVR and [Maker Welcome Content](welcome-content.md) are excluded from customer-managed key encryption.
+> - The connection settings for connectors will continue to be encrypted with a Microsoft-managed key.
+> - Contact a representative for services not listed above for information about customer-managed key support.
+> - Power Apps display names, descriptions, and connection metadata continue to be encrypted with a Microsoft-managed key.
+> - The download results link and other data produced by solution checker enforcement during a solution check continues to be encrypted with a Microsoft-managed key.
 
 Environments with finance and operations apps where [Power Platform integration is enabled](/dynamics365/fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration) can also be encrypted. Finance and operations environments without Power Platform integration will continue to use the default Microsoft managed key to encrypt data. More information: [Encryption in finance and operations apps](/dynamics365/fin-ops-core/dev-itpro/sysadmin/customer-managed-keys)
 
