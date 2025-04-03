@@ -1,9 +1,9 @@
 ---
-title: "Administration mode  | MicrosoftDocs"
+title: Administration mode  
 description: Administration mode
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/13/2022
+ms.date: 03/03/2025
 ms.subservice: admin
 author: ChrisGarty
 ms.author: cgarty
