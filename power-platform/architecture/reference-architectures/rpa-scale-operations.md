@@ -75,11 +75,11 @@ Consider these use cases:
 
 **Use credentials in Power Automate**: Switch from using a simple username and password to credentials in Power Automate to manage connection credentials more efficiently and prevent disruptions caused by unexpected password changes.
 
-### Performance efficiency
+### Performance Efficiency
 
 **Optimize infrastructure usage**: Evaluate the overall automation workload requirements and develop a strategy to maintain machine utilization within a Hosted Machine Group above a specified threshold, ensuring compliance with business SLA agreements.
 
-### Experience optimization
+### Experience Optimization
 
 **Implement a consistent maintenance procedure**: To update the custom VM image used by the Hosted Machine Group, follow a standardized procedure that uses maintenance mode to indicate an ongoing update. Note that when the VM image is updated, all existing hosted bots complete their ongoing desktop flow runs before being reprovisioned with the new VM image.
 
