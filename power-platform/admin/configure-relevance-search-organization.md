@@ -4,7 +4,7 @@ description: Configure Dataverse search for your environment to improve search r
 author: marianaraujo 
 ms.component: pa-admin
 ms.topic: get-started
-ms.date: 04/02/2025
+ms.date: 04/03/2025
 ms.subservice: admin
 ms.author: maaraujo
 ms.reviewer: EllenWehrle
@@ -66,11 +66,11 @@ Dataverse search consists of two separate indexes that power different experienc
 
 - Dataverse search is available in customer engagement apps such as Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation.
 
-- Dataverse search isn't available for Customer Engagement (on-premises) organizations. Quick Find is a search option for customer engagement apps organizations and Customer Engagement (on-premises) organizations.
+- Dataverse search isn't available for Customer Engagement (on-premises) organizations. Quick Find is the only search option for (on-premises) customer engagement apps organizations and Customer Engagement (on-premises) organizations.
 
 - Full-text Quick Find is available for Customer Engagement (on-premises) organizations, starting with Dynamics CRM 2015 Update Rollup 1.
 
-- For a more detailed comparison of the searches available in Microsoft Dataverse, go to[Compare search options in Microsoft Dataverse](/powerapps/user/search).
+- For a more detailed comparison of the searches available in Microsoft Dataverse, go to [Compare search options in Microsoft Dataverse](/powerapps/user/search).
 
 - All searchable fields in Dataverse search are processed in the language most closely matching the organization's base language, except Kazakh where all fields are processed using a basic, language-agnostic text processor.
 
@@ -117,7 +117,7 @@ Take these steps to turn on Dataverse search:
 
 6. Select **Save**.
 
-   :::image type="content" source="media/ppac-dataverse-search1.png" alt-text="This image shows Dataverse search set to On.":::
+   :::image type="content" source="media/ppac-dataverse-search3.png" alt-text="This image shows Dataverse search set to On.":::
 
 Turning on Dataverse search enables global-search and generative-AI experiences in all of your model-driven apps within that environment. You can't turn it off in specific apps.
 
@@ -463,11 +463,11 @@ If you turn off Dataverse search and want to re-enable it, you have two options:
 
 |Feature   |Maker experience  |End-User experience  |
 |----------|------------------|---------------------|
-|Microsoft Copilot Studio agent – adding knowledge     |_Cannot upload files_    Cannot select Dataverse tables *    Agent doesn't provide results until Dataverse is enabled for the environment (Warning banner with call to action for environment's admin to enable it)       |*    Agent doesn't provide results until Dataverse is enabled for the environment (default to fallback answer)        |
-|Microsoft Copilot Studio agent – using Copilot chat  | *    Agent doesn't provide results until Dataverse is enabled for the environment (Warning banner with call to action to connect with environment's admin to enable it)  |*    Agent doesn't provide results until Dataverse is enabled for the environment (default to fallback answer)  |
-|model-driven applications – Dataverse search  | *    Search bar isn't visible in model-driven applications  |*    Same as maker experience |
-|model-driven applications – Copilot chat  |_Can use model-driven app for record management (add, edit, delete, etc.)_    Agent doesn't provide results until Dataverse is enabled for the environment (Warning banner with call to action to connect with environment's admin to enable it)  |*    Same as maker experience|
-|Prompt actions with AI Builder/Custom AI prompts _Microsoft Copilot Studio_    Power Apps *    Power Automate  |*    If enabled in the settings, prompts aren't grounded with Dataverse knowledge|*    N/A|
+|Microsoft Copilot Studio agent – add knowledge     | <ul><li> Cannot upload files. </li><li>Cannot select Dataverse tables. </li><li>Agent doesn't provide results until Dataverse is enabled for the environment (Warning banner with call to action for environment's admin to enable it).  | <ul><li>Agent doesn't provide results until Dataverse is enabled for the environment (default to fallback answer).   |
+|Microsoft Copilot Studio agent – Copilot chat  | <ul><li>Agent doesn't provide results until Dataverse is enabled for the environment (Warning banner with call to action to connect with environment's admin to enable it).  |<ul><li>Agent doesn't provide results until Dataverse is enabled for the environment (default to fallback answer).  |
+|Model-driven applications – Dataverse search  | <ul><li>Search bar isn't visible in model-driven applications.  | <ul><li>Same as maker experience. |
+|Model-driven applications – Copilot chat  |<ul><li> Can use model-driven app for record management (add, edit, delete, etc.). </li><li> Agent doesn't provide results until Dataverse is enabled for the environment (Warning banner with call to action to connect with environment's admin to enable it).  |<ul><li>Same as maker experience.|
+|Prompt actions with AI Builder/Custom AI prompts in Power Apps, Microsoft Copilot Studio, and Power Automate  | <ul><li>If enabled in the settings, prompts aren't grounded with Dataverse knowledge.|<ul><li> N/A|
 
 ### What actions can admins take?
 
