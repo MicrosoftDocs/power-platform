@@ -1,18 +1,19 @@
 ---
-title: Manage the default environment
-description: Learn how to manage the default environment in Microsoft Power Platform.
+title: Managing and securing the default Power Platform environment
+description: Learn best practices for managing the default Power Platform environment, including tracking connectors, identifying unused resources, and migrating critical apps. Discover how to enforce governance with Power Platform Advisor and the CoE Starter Kit. Ensure security, compliance, and optimal performance across your organization's environments.
+#customer intent: As a Power Platform user, I want to manage the default environment effectively to maintain security and compliance. I need to track connectors, identify unused or high-value apps, and enforce governance policies. This helps optimize resource usage and ensure business continuity.
 author: rranjit83
 ms.author: rranjit
 ms.reviewer: sericks
 ms.topic: how-to
-ms.date: 04/02/2025
+ms.date: 04/03/2025
 ms.custom: bap-template
 ms.subservice: guidance
 contributors:
 - iscohen-microsoft
 ---
 
-# Manage the default environment
+# Managing and securing the default Power Platform environment
 
 Every employee in an organization that uses the Power Platform has access to the default environment. As a Power Platform admin, you should consider, and when necessary, implement ways to control the default environment. Your Center of Excellence (CoE) teams can gather information using the CoE Starter Kit, PowerShell cmdlets, and Power Platform admin connectors to understand what's happening in your organization's environments. This article provides some best practices for using the data you gather from these sources to manage your default environment.
 
