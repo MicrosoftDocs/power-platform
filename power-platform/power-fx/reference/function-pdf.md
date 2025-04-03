@@ -15,7 +15,8 @@ contributors:
   - mduelae
 ---
 
-# PDF function (experimental)
+# PDF function (experimental)
+
 [!INCLUDE[function-pdf-applies-to](includes/function-pdf-applies-to.md)]
 
 
