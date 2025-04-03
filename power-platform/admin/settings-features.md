@@ -235,9 +235,9 @@ Makers can learn more about form fill assistance in [Manage model-driven app set
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-|  |   ||
-|  |   ||
-|  |   ||
+| On |  Dataverse data is indexed to allow search and Copilot. | Not selected|
+| Default |  Dataverse search index is deleted, search bar is hidden, and Copilot experiences can be used if turned on and data is indexed. | Selected|
+| Off  | There is no Dataverse indexed data and all experiences are limited.  | Not selected |
 
 ## Search
 
