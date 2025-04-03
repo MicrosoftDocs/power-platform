@@ -5,6 +5,7 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/03/2025
 ms.subservice: admin
+ms.custom: NewPPAC
 author: ChrisGarty
 ms.author: cgarty
 ms.reviewer: sericks
@@ -31,17 +32,28 @@ You can set a sandbox, production, or trial (subscription-based) environment in 
 |Background operations (optional) | Select to disable all asynchronous operations (see [Asynchronous service](/powerapps/developer/common-data-service/asynchronous-service)) such as workflows and synchronization with Exchange. Emails will not be sent and server-side synchronization for appointments, contacts, and tasks are disabled. **Note:**  Administration mode must be enabled to disable background operations.|  
   
 ## Set administration mode  
-  
+
+# [Classic admin center](#tab/classic)
+
 1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) and sign in using Environment Admin or System Administrator role credentials.
-  
-2. From the left-side menu, select **Environments**, and then select a sandbox, production, or trial (subscription-based) environment.
-  
-3. On the **Details** page, select **Edit**. 
-  
-4. Under **Administration mode**, toggle **Disabled** to **Enabled**.
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. In the **Environments** page, select a sandbox, production, or trial (subscription-based) environment.
+1. On the **Details** page, select **Edit**. 
+1. Under **Administration mode**, toggle **Disabled** to **Enabled**.
+1. Optionally, you can set **Background operations**.
+1. Select **Save**.
 
-5. Optionally, you can set **Background operations**.
+# [Classic admin center](#tab/classic)
 
-6. Select **Save**.
+1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) and sign in using Environment Admin or System Administrator role credentials.
+1. In the navigation page, select **Environments**.
+1. In the **Environments** page, select a sandbox, production, or trial (subscription-based) environment.
+1. On the **Details** page, select **Edit**. 
+1. Under **Administration mode**, toggle **Disabled** to **Enabled**.
+1. Optionally, you can set **Background operations**.
+1. Select **Save**.
+
+---
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
