@@ -196,6 +196,8 @@
                   href: managed-environment-enable.md
                 - name: Environment groups
                   href: environment-groups.md
+                - name: Rules for environment groups
+                  href: environment-groups-rules.md
                 - name: Enable maker welcome content
                   href: welcome-content.md
                 - name: Limit sharing
