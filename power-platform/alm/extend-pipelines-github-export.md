@@ -155,6 +155,8 @@ jobs:
               git push origin ${{ github.event.inputs.source_branch }}
           }
 ```
+> [!NOTE]
+> The Dataverse web API used to download the solution artifact has a maximum file size limit of 16MB.
 
 ## Example Power Automate flow
 
