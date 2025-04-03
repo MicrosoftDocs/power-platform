@@ -5,7 +5,7 @@ author: paulliew
 ms.author: paulliew
 ms.reviewer: sericks, matp, ratrtile
 ms.topic: how-to
-ms.date: 01/23/2025
+ms.date: 04/03/2025
 ms.custom: template-how-to
 contributors:
   - samathur
@@ -56,8 +56,6 @@ Currently, all your customer data stored *only* in the following apps and servic
 
 > [!NOTE]
 > Nuance Conversational IVR and [Maker Welcome Content](welcome-content.md) are excluded from customer-managed key encryption.
-
-[Microsoft Copilot Studio](/power-virtual-agents/fundamentals-what-is-power-virtual-agents) stores its data in their own storage and in [Microsoft Dataverse](/power-apps/maker/data-platform/data-platform-intro). When you apply the customer-managed key to these environments, only the data stores in **Microsoft Dataverse** are encrypted with your key. The non-Microsoft Dataverse data continues to be encrypted with the Microsoft-managed key.
 
 > [!NOTE]
 > The connection settings for connectors will continue to be encrypted with a Microsoft-managed key.
