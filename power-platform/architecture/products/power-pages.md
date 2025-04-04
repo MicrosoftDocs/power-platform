@@ -28,11 +28,9 @@ In this article, we look at:
 
 ## Key concepts
 
-<!-- Fix first link below when we decide where it lives -->
-
 | Title | Description |
 | --- | --- |
-| **[Distributed tracing across multiple services](../reference-architectures/distributed-tracing.md)** | Learn how to achieve comprehensive observability across multiple services, including those within Power Platform, Azure, and Dynamics 365. |
+| **[Distributed tracing across multiple services](../key-concepts/distributed-tracing.md)** | Learn how to achieve comprehensive observability across multiple services, including those within Power Platform, Azure, and Dynamics 365. |
 | **[Power Pages architecture white paper](/power-pages/guidance/white-papers/architecture)** | This white paper provides a comprehensive view of the capabilities of the Power Pages platform. It describes the architectural elements that enable Power Pages to scale, offer high reliability and availability, and protect business data to provide enterprise-grade compliance and security. |
 | **[Add a copilot to your Power Pages site](/power-pages/getting-started/enable-chatbot)** | Integrate a copilot to provide natural-language responses to visitor questions, improve the user experience, and boost satisfaction. |
 | **[Set up Azure Front Door with Power Pages sites](/power-pages/configure/azure-front-door)** | Learn how to set up Azure Front Door with Power Pages to use its edge caching and web application firewall (WAF) capabilities. |

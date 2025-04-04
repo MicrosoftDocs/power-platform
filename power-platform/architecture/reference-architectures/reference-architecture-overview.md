@@ -21,7 +21,7 @@ Reference architectures are essential frameworks that guide the design and imple
 
 | Title | Description |
 | --- | --- |
-| **[Distributed tracing across multiple services](distributed-tracing.md)** | Learn how to achieve comprehensive observability across multiple services, including those within Power Platform, Azure, and Dynamics 365. |
+| **[​​Distributed tracing across multiple services​ in Power Platform](../key-concepts/distributed-tracing.md)** | Learn how to achieve comprehensive observability across multiple services, including those within Power Platform, Azure, and Dynamics 365. |
 | **[Document processing with AI Builder](ai-document-processing.md)** | Streamline document processing and automate data extraction from various documents such as forms, invoices, and purchase orders. |
 | **[Predictive data analysis with Dataverse, Fabric, and Azure AI](ai-predictive-data-analysis.md)** | Perform predictive data analysis using Dataverse, Microsoft Fabric, and Azure AI and learn best practices for data ingestion, model training, and visualization, enabling you to build robust predictive models and actionable insights. |
 | **[Legacy data integration](../reference-architectures/app-legacy-data-integration.md)** | Streamline the process of integrating legacy data with modern platforms. |

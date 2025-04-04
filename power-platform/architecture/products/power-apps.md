@@ -28,11 +28,9 @@ In this article, we look at:
 
 ## Key concepts
 
-<!-- Fix first link below when we decide where it lives -->
-
 | Title | Description |
 | --- | --- |
-| **[Distributed tracing across multiple services](../reference-architectures/distributed-tracing.md)** | Learn how to achieve comprehensive observability across multiple services, including those within Power Platform, Azure, and Dynamics 365. |
+| **[Distributed tracing across multiple services](../key-concepts/distributed-tracing.md)** | Learn how to achieve comprehensive observability across multiple services, including those within Power Platform, Azure, and Dynamics 365. |
 | **[Coding guidelines](/power-apps/guidance/coding-guidelines/overview)** | Learn about standards for naming objects, collections, and variables, and guidelines for developing consistent, performant, and easily maintainable apps. |
 | **[Build large and complex canvas apps](/power-apps/maker/canvas-apps/working-with-large-apps)** | Use the recommendations in this article to better work with large and complex apps in Power Apps Studio and improve your apps' runtime performance. | 
 | **[Optimize app or page load for peak performance](/power-apps/maker/canvas-apps/fast-app-page-load)** | One of the key factors that shape a user's perception of an app is how quickly it opens and becomes functional. Follow the guidelines in this article to achieve fast data loading apps. | 

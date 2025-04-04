@@ -28,12 +28,10 @@ In this article, we look at:
 
 ## Key concepts
 
-<!-- Fix second link below when we decide where it lives -->
-
 | Title | Description |
 | --- | --- |
 | **[Dataverse auditing](../key-concepts/dataverse-auditing.md)** | Learn about both data auditing and business event auditing in Dataverse. |
-| **[Distributed tracing across multiple services](../reference-architectures/distributed-tracing.md)** | Learn how to achieve comprehensive observability across multiple services, including those within Power Platform, Azure, and Dynamics 365. |
+| **[Distributed tracing across multiple services](../key-concepts/distributed-tracing.md)** | Learn how to achieve comprehensive observability across multiple services, including those within Power Platform, Azure, and Dynamics 365. |
 | **[Best practices and guidance for developers using Microsoft Dataverse](/power-apps/developer/data-platform/best-practices/)** | Microsoft Dataverse provides an extensible framework that allows developers to build highly customized and tailored experiences. When you're customizing, extending, or integrating with Dataverse, be aware of the established guidance and best practices. |
 | **[Apply business logic using code](/power-apps/developer/data-platform/apply-business-logic-with-code)** | When a declarative process doesn’t meet a requirement, you can write plug-ins and workflow extensions to apply business logic. |
 | **[Work with data using code in Microsoft Dataverse](/power-apps/developer/data-platform/work-with-data)** | Learn about the various methods to access Dataverse data using code, including the Dataverse SDK for .NET or Web API, Dataverse search, and the Dataverse Tabular Data Stream (TDS) endpoint for SQL queries. |

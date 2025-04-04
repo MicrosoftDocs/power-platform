@@ -24,11 +24,9 @@ In this article, we look at:
 
 ## Key concepts
 
-<!-- Fix first link below when we decide where it lives -->
-
 | Title | Description |
 | --- | --- |
-| **[Distributed tracing across multiple services](../reference-architectures/distributed-tracing.md)** | Learn how to achieve comprehensive observability across multiple services, including those within Power Platform, Azure, and Dynamics 365. |
+| **[Distributed tracing across multiple services](../key-concepts/distributed-tracing.md)** | Learn how to achieve comprehensive observability across multiple services, including those within Power Platform, Azure, and Dynamics 365. |
 | **[Coding guidelines](/power-automate/guidance/coding-guidelines/)** | Learn about standards for naming objects, collections, and variables, and guidelines for developing consistent, performant, and easily maintainable flows. |
 | **[Robotic process automation with SAP](/power-automate/guidance/rpa-sap-playbook/introduction)** | Prototype the automation of an example SAP scenario with RPA. |
 
