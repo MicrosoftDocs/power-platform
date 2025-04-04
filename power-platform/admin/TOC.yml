@@ -16,6 +16,8 @@
               href: managed-governance.md
             - name: Managed operations
               href: operations/overview.md
+            - name: Managed availability
+              href: managed-availability.md
         - name: Get started
           items:
             - name: Role of a Power Platform administrator
