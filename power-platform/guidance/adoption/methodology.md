@@ -28,7 +28,7 @@ Microsoft Power Platform adoption guidance is a collection of documentation, rec
 This guidance aligns to the following pillars and responsibilities of your adoption.
 
 | | |
-|:--:|--|
+|--|--|
 | :::image source="../media/strategy.svg" type="icon"::: [Strategy](strategy-best-practices.md) | Document the objectives, the measurable key results, and the key initiatives behind Power Platform adoption. |
 | :::image source="../media/plan.svg" type="icon"::: [Plan](plan-overview.md) | Define roles, responsibilities and delivery models. | 
 | :::image source="../media/secure.svg" type="icon"::: [Security](secure-overview.md) | Protect your worklaods and data from threats and meet compliance requirements. | 
