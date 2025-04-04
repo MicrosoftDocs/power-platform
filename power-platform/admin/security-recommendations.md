@@ -22,14 +22,15 @@ ms.custom:
 
 Power Platform Advisor helps you enhance the security and reliability of your Power Platform tenant by providing actionable recommendations. These recommendations identify potential risks and offer guidance to mitigate them. You can view security recommendations within [Power Platform Advisor](power-platform-advisor.md) in the Power Platform admin center.
 
-The following security related recommendations are grouped by resource type:
+The following recommendations are grouped by resource type:
 
 ## App
+
+The following recommendations relate to apps:
 
 ## Assign valid owners to apps to mitigate business continuity risks
 
 - **Severity**: High  
-- **Resource Type**: App  
 - **Refresh Frequency**: Weekly  
 - **Managed Environments**: Yes  
 - **Surface**:  
@@ -38,7 +39,6 @@ The following security related recommendations are grouped by resource type:
 ## Secure high-value applications that are shared with ‘Everyone’, including guest users
 
 - **Severity**: High  
-- **Resource Type**: App  
 - **Refresh Frequency**: Weekly  
 - **Managed Environments**: Yes  
 - **Surface**:  
@@ -46,10 +46,11 @@ The following security related recommendations are grouped by resource type:
 
 ## Sites
 
+The following recommendations relate to sites:
+
 ### Enable Web Application Firewall (WAF) to protect websites
 
 - **Severity**: High  
-- **Resource Type**: Site  
 - **Refresh Frequency**: Daily  
 - **Managed Environments**: Yes  
 - **Surface**:  
@@ -58,7 +59,6 @@ The following security related recommendations are grouped by resource type:
 ### Enhance your websiteʼs security by renewing its SSL certificate
 
 - **Severity**: High  
-- **Resource Type**: Site  
 - **Refresh Frequency**: Daily  
 - **Managed Environments**: Yes  
 - **Surface**:  
@@ -66,10 +66,11 @@ The following security related recommendations are grouped by resource type:
 
 ## Tenant Settings
 
+The following recommendations relate to tenant settings:
+
 ### Secure agents by setting up data loss prevention policies for Copilot Studio items
 
 - **Severity**: High  
-- **Resource Type**: Tenant Setting  
 - **Refresh Frequency**: Real time  
 - **Managed Environments**: No  
 - **Surface**:  

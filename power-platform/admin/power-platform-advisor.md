@@ -176,5 +176,5 @@ Power Platform Advisor organizes recommendations into the following categories. 
 
 - [Security](security-recommendations.md)  
 - [Operational efficiency](operational-efficiency-recommendations.md)
-- [Licensing and capacity](licensing-and-capacity-recommendations%20copy.md)
+- [Licensing and capacity](licensing-and-capacity-recommendations.md)
 - [Performance](performance-recommendations.md)

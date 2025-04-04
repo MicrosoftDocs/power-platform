@@ -22,27 +22,26 @@ ms.custom:
 
 Power Platform Advisor helps you enhance the performance of your Power Platform tenant by providing actionable recommendations. These recommendations identify opportunities to improve website performance, optimize resource usage, and ensure efficient operations. You can view performance recommendations within [Power Platform Advisor](power-platform-advisor.md) in the Power Platform admin center.
 
+The following recommendations are grouped by resource type:
+
 ## Sites
 
 The following recommendations are related to websites:
 
 ### Improve performance of websites by migrating them to Bootstrap version 5
 
-- **Severity**: High  
-- **Resource Type**: Site  
-- **Refresh Frequency**: Daily  
-- **Managed Environments**: Yes  
+- **Severity**: High
+- **Refresh Frequency**: Daily
+- **Managed Environments**: Yes
 
 ### Review and move websites from standard data model to enhanced data model
 
-- **Severity**: High  
-- **Resource Type**: Site  
-- **Refresh Frequency**: Daily  
-- **Managed Environments**: Yes  
+- **Severity**: High
+- **Refresh Frequency**: Daily
+- **Managed Environments**: Yes
 
 ### Enable Content Delivery Network (CDN) to improve website performance
 
-- **Severity**: High  
-- **Resource Type**: Site  
-- **Refresh Frequency**: Daily  
+- **Severity**: High
+- **Refresh Frequency**: Daily
 - **Managed Environments**: Yes
