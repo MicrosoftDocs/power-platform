@@ -26,7 +26,7 @@ Data volume continues to grow exponentially, as businesses advance their digital
 We're rolling out this feature now so check back if your user experience varies from the following content.
 
 > [!NOTE]
-> For licensing information, see the [Power Apps and Power Automate licensing guide](https://go.microsoft.com/fwlink/p/?linkid=2085130).
+> For licensing information, go to the [Power Apps and Power Automate licensing guide](https://go.microsoft.com/fwlink/p/?linkid=2085130).
 >
 > If you purchased your Dynamics 365 subscription through a Microsoft partner, contact them to manage storage capacity. The following steps don't apply to partner-based subscriptions.
 
@@ -38,22 +38,22 @@ The following licenses provide capacity by using the new storage model. If you h
 - Dataverse for Apps File Capacity 
 - Dataverse for Apps Log Capacity 
 
-To see whether you have any of these licenses, sign in to the Microsoft 365 admin center, and then go to **Billing** > **Licenses**.
+To check whether you have any of these licenses, sign in to the Microsoft 365 admin center and then go to **Billing** > **Licenses**.
 
 > [!NOTE]
-> If you have a mix of [legacy model licenses](legacy-capacity-storage.md#licenses-for-the-legacy-storage-model) and the abovementioned new model licenses, you'll see the new model report.
+> If you have a mix of [legacy model licenses](legacy-capacity-storage.md#licenses-for-the-legacy-storage-model) and new model licenses, a new model report is displayed.
 > 
-> If you have none of the [legacy model licenses](legacy-capacity-storage.md#licenses-for-the-legacy-storage-model) nor the new model licenses, you'll see the new model report.
+> If you have none of the [legacy model licenses](legacy-capacity-storage.md#licenses-for-the-legacy-storage-model) nor the new model licenses, a new model report is displayed.
 
 ## Verifying your Microsoft Dataverse capacity-based storage model
 
-1. Sign in to the Power Platform admin center, and then select an environment. 
+1. Sign in to the Power Platform admin center and then select an environment. 
 
-2. Select **Resources** > **Capacity** > **Summary** tab.
+1. Select **Resources** > **Capacity** > **Summary** tab.
 
-3. View the data on the **Summary** page.
+1. View the data on the **Summary** page.
 
-   For the **Summary** page to be displayed, the user needs to have one of the following roles: 
+   For the **Summary** page to display, the user needs to have one of the following roles: 
     - Tenant administrator
     - Power Platform administrator
     - Dynamics 365 administrator 
@@ -62,7 +62,7 @@ To see whether you have any of these licenses, sign in to the Microsoft 365 admi
 
     The new licensing storage model looks like the following image. 
 
-    :::image type="content" source="media/capacity-new-license-model.png" alt-text="New licensing storage model":::
+    :::image type="content" source="media/capacity-new-license-model.png" alt-text="Screenshot of the new licensing storage model.":::
 
 ## Capacity page details
 
@@ -72,16 +72,16 @@ This page provides a tenant-level view of where your organization is using stora
 
 To view the **Summary** page, select **Resources** > **Capacity** > **Summary** tab.
 
-:::image type="content" source="media/storage-data-capacity-page-review.png" alt-text="Capacity page Summary tab":::
+:::image type="content" source="media/storage-data-capacity-page-review.png" alt-text="Screenshot of the Capacity page Summary tab.":::
 
 All tables of Dataverse, including system tables, are included in the storage capacity reports.
 
 |Number  |Description |
 |---------|---------|
 |(1)   |**Storage capacity usage**  <ul><li>**File and database**: The following tables store data in file and database storage: <ul><li>Attachment</li><li>AnnotationBase</li><li>Any custom or out-of-the-box table that has columns of datatype file or image (full size)</li><li>Any table that is used by one or more installed Insights applications and [ends in *- Analytics*](#what-are-tables-ending-in---analytics-in-my-capacity-report) </li> </ul></li><ul><li>WebResourceBase</li></ul><ul><li>RibbonClientMetadataBase</li></ul><li>**Log**: The following tables are used: <ul><li>AuditBase</li><li>PlugInTraceLogBase</li><li>Elastic tables</li></ul><li>**Database only**: All other tables are counted for your database including the Dataverse search index</li></ul>  |
-|(2)    |**Storage capacity, by source** <ul><li>**Org (tenant) default**: The default capacity given at the time of sign up </li><li>**User licenses**: More capacity added for every user license purchased</li><li>**Additional storage**: Any extra storage you bought </li><li>**Total**: Total storage available </li><li>**View self-service sources**: See [View self-service license amounts and storage capacity](view-self-service-capacity.md)</li></ul>      |
+|(2)    |**Storage capacity, by source** <ul><li>**Org (tenant) default**: The default capacity given at the time of sign up </li><li>**User licenses**: More capacity added for every user license purchased</li><li>**Additional storage**: Any extra storage you bought </li><li>**Total**: Total storage available </li><li>**View self-service sources**: Learn more at [View self-service license amounts and storage capacity](view-self-service-capacity.md)</li></ul>      |
 |(3)     |**Top storage usage, by environment**: The environments that consume the most capacity        |
-|(4)  |  **Add-ons**:  Your organization's add-on usage details. See [View capacity add-ons in Power Platform admin center](capacity-add-on.md#view-capacity-add-ons-in-power-platform-admin-center) |
+|(4)  |  **Add-ons**:  Your organization's add-on usage details. Learn more at [View capacity add-ons in Power Platform admin center](capacity-add-on.md#view-capacity-add-ons-in-power-platform-admin-center). |
 
 The actual files such as .pdf (or any other file attachment type) are stored in file storage. However, certain attributes needed to access the files are stored in the database as well. 
 
@@ -100,10 +100,10 @@ Note the following features:
 |---------|---------|
 |Download     | Select **Download** above the list of environments to download an Excel .CSV file with high-level storage information for each environment that the signed-in admin has permission to see in the Power Platform admin center.        |
 |Search     | Use **Search** to search by the environment name and the environment type.         |
-|Details  | See the next section for using the **Details** button (![Storage data details button.](media/storage-data-details-button.png "Storage data details button")) to see environment capacity analytics.   |
+|Details  | Go to the next section for using the **Details** button (![Storage data details button.](media/storage-data-details-button.png "Storage data details button")) to view environment capacity analytics.   |
 | Default environment tip | The calculated storage usage in this view only displays what is **above** the default environment’s included capacity. Tool tips indicate how to view actual usage in the **Details** section. |
 
-:::image type="content" source="media/storage-data-per-environment2.png" alt-text="Storage data per environment details button":::
+:::image type="content" source="media/storage-data-per-environment2.png" alt-text="Screenshot of storage data per environment details button.":::
 
 > [!NOTE]
 > - The following environments don't count against capacity and are shown as 0 GB:
@@ -113,7 +113,7 @@ Note the following features:
 >   - Support
 >   - Developer
 > - The default environment has the following included storage capacity: 3 GB Dataverse database capacity, 3 GB Dataverse file capacity, and 1 GB Dataverse log capacity.
-> - You can select an environment that's showing 0 GB, and then go to its environment capacity analytics page to see the actual consumption.
+> - You can select an environment that's showing 0 GB and then go to its environment capacity analytics page to see the actual consumption.
 > - For the default environment, the list view shows the amount of capacity consumed beyond the included quota. Select the **Details** button (![Storage data details button.](media/storage-data-details-button.png "Storage data details button")) to see usage.
 > - The capacity check&mdash;conducted before creating new environments&mdash;excludes the default environment's included storage capacity when calculating whether you have sufficient capacity to create a new environment.
 
@@ -122,7 +122,7 @@ Note the following features:
 
 Select the **Details** button (![Storage data details button.](media/storage-data-details-button.png "Storage data details button")) on the **Summary** tab view to see  an environment-level detailed view of where your organization is using capacity, in addition to the three types of capacity consumption. 
 
-:::image type="content" source="media/storage-data-capacity-details.png" alt-text="Environment capacity analytics":::
+:::image type="content" source="media/storage-data-capacity-details.png" alt-text="Screenshot of an environment's capacity analytics":::
 
 The following details are provided:
 
@@ -149,7 +149,7 @@ To view this page, select **Resources** > **Capacity** > **Microsoft Teams** tab
 
 ### Add-ons tab
 
-Use this page to view your organization's add-on usage details and to assign add-ons to environments. See [View capacity add-ons in Power Platform admin center](capacity-add-on.md#view-capacity-add-ons-in-power-platform-admin-center)
+Use this page to view your organization's add-on usage details and to assign add-ons to environments. Learn more at [View capacity add-ons in Power Platform admin center](capacity-add-on.md#view-capacity-add-ons-in-power-platform-admin-center).
 
 > [!NOTE]
 > This tab only appears if you have add-ons included in your tenant.
@@ -177,7 +177,7 @@ To view this page, select **Resources** > **Capacity** > **Trials** tab.
 You can track and manage Dataverse capacity in the **Licenses** section of Power Platform admin center. 
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-2. In the navigation pane, select **Billing** > **Licenses** > **Dataverse**.
+1. In the navigation pane, select **Billing** > **Licenses** > **Dataverse**.
 
 ##### Usage per storage type
 
@@ -202,7 +202,7 @@ In the **Top environments consuming storage** tile, select **See all environment
 
 #### Track environment usage
 1. In the **Dataverse** page, select **Environment** and choose an environment from the list. 
-2. Alternatively in the **Top environment consuming storage** tile, select **See all environments** and select an environment name.
+1. Alternatively in the **Top environment consuming storage** tile, select **See all environments** and select an environment name.
 
 ##### Usage per storage type
 In the **Usage per storage type** tile, you can view the consumption of your Database, Log, and File storage. This section displays your prepaid allocated capacity, if any, along with the corresponding usage. Additionally, it indicates if any part of your Dataverse usage is billed under a pay-as-you-go plan. 
@@ -236,18 +236,18 @@ Dataverse search consumes against the [Dataverse entitlements available within y
 In the **Dataverse** tab, you can allocate capacity to a specific environment. Once capacity is allocated, you can view the status of your environments to determine whether they are within capacity or in an overage state.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-2. In the navigation pane, select **Billing** > **Licenses**.
-3. On the **Summary** page, select the **Dataverse** tab and select **Manage Capacity**. The **Manage capacity** pane is displayed on the right side of the page.
-4. Select the environment for which you want to allocate capacity.
-6. In the **Manage capacity** pane, view the currently allocated and consumed capacity for the environment.
-7. Allocate capacity by entering the desired value in the **Database**, **File**, and **Log** fields. Ensure the capacity values are positive integers and don't exceed the available capacity displayed at the top of the panel.
-8. Opt in to receive daily email alerts sent to tenant and environment admins when the consumed capacity (Database, Log, or File) reaches a set percentage of the allocated capacity.
-9. Select **Save** to apply the changes.
+1. In the navigation pane, select **Billing** > **Licenses**.
+1. On the **Summary** page, select the **Dataverse** tab and select **Manage Capacity**. The **Manage capacity** pane is displayed on the right side of the page.
+1. Select the environment for which you want to allocate capacity.
+1. In the **Manage capacity** pane, view the currently allocated and consumed capacity for the environment.
+1. Allocate capacity by entering the desired value in the **Database**, **File**, and **Log** fields. Ensure the capacity values are positive integers and don't exceed the available capacity displayed at the top of the panel.
+1. Opt in to receive daily email alerts sent to tenant and environment admins when the consumed capacity (Database, Log, or File) reaches a set percentage of the allocated capacity.
+1. Select **Save** to apply the changes.
 
 #### Managing capacity overage 
 When an environment's capacity consumption exceeds the preallocated capacity, you have two options to manage the overage:   
 1. In the **Manage capacity** pane you can utilize capacity available from the tenant's overall capacity pool.
-2. Alternatively, in the **Manage capacity** pane you can link the environment to a pay-as-you-go billing plan, where any overage is charged to the associated Azure subscription. 
+1. Alternatively, in the **Manage capacity** pane you can link the environment to a pay-as-you-go billing plan, where any overage is charged to the associated Azure subscription. 
 
 ## Changes for exceeding storage capacity entitlements
 
@@ -273,7 +273,7 @@ The [Universal License Terms for Online Services](https://www.microsoft.com/lice
 
 Your organization must have the right licenses for the storage you use: 
 - If you use more than your documented entitlements or usage limits, you must buy more licenses.
-- If your storage consumption exceeds the documented entitlements or usage limits, we may suspend use of the online service. Microsoft provides reasonable notice before suspending your online service.
+- If your storage consumption exceeds the documented entitlements or usage limits, we might suspend use of the online service. Microsoft provides reasonable notice before suspending your online service.
 
 ## Example storage capacity scenarios, overage enforcement
 
@@ -287,7 +287,7 @@ You should be within limits for your entitled capacity for database, log, and fi
 |**Log**     |  10 GB       | 5 GB        |
 |**File**     | 400 GB        | 200 GB        |
 
-This tenant is 10 GB over in database usage. Despite having 200 GB excess file storage, the tenant is considered to be in deficit. This tenant should free up storage or purchase more capacity.
+This tenant is 10 GB over in database usage. Despite having 200-GB excess file storage, the tenant is considered to be in deficit. This tenant should free up storage or purchase more capacity.
 
 ### Scenario 2: Log storage is over capacity, overage enforcement
 
@@ -307,7 +307,7 @@ This tenant is 10 GB over in log usage and has only 5 GB available in database c
 |**Log**     |  10 GB       | 5 GB        |
 |**File**     | 200 GB        | 290 GB        |
 
-This tenant is 90 GB over in file usage. Despite having 85 GB available (80 GB database + 5 GB log) in storage capacity, the tenant is considered to be in deficit. This tenant should free up storage or purchase more capacity.
+This tenant is 90 GB over in file usage. Despite having 85 GB available (80-GB database + 5-GB log) in storage capacity, the tenant is considered to be in deficit. This tenant should free up storage or purchase more capacity.
 
 ## Example storage capacity scenario, no overage
 
@@ -323,7 +323,7 @@ This tenant is 10 GB over in log usage but has 20 GB available in database capac
 
 ## Actions to take for a storage capacity deficit
 
-You can always [free up storage](free-storage-space.md), [delete unwanted environments](delete-environment.md), or buy more capacity to be compliant with storage usage. To learn more about capacity add-ons, see the [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/p/?LinkId=866544) or the ["Add-ons" section of the Power Apps and Power Automate Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130). You can work through your organization's standard procurement process to purchase [capacity add-ons](capacity-add-on.md).
+You can always [free up storage](free-storage-space.md), [delete unwanted environments](delete-environment.md), or buy more capacity to be compliant with storage usage. To learn more about capacity add-ons, go to the [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/p/?LinkId=866544) or the ["Add-ons" section of the Power Apps and Power Automate Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130). You can work through your organization's standard procurement process to purchase [capacity add-ons](capacity-add-on.md).
 
 ## FAQ
 
@@ -343,7 +343,7 @@ Database storage includes both the database rows and index files used to improve
 - Data volume or complexity changes.
 - A change in usage patterns that indicate new indexes are in need of reevaluation.
 
-If Quick Find lookups are configured for data that's frequently used, this also creates more indexes in the database. Admin-configured Quick Find values can increase the size of the indexes based on:
+If Quick Find lookups are configured for data frequently used, this also creates more indexes in the database. Admin-configured Quick Find values can increase the size of the indexes based on:
 
 - The number of columns chosen and the data type of those columns.
 - The volume of rows for the tables and columns.
@@ -351,8 +351,8 @@ If Quick Find lookups are configured for data that's frequently used, this also 
 
 Because custom Quick Find lookups are created by an admin in the org, these can be user-controlled. Admins can reduce some of the storage used by these custom indexes by doing the following: 
 
-- Removing unneeded columns and/or tables
-- Eliminating multiline text columns from inclusion
+- Removing unneeded columns or tables.
+- Eliminating multiline text columns from inclusion.
 
 ### What actions can admins take?
 To ensure optimal operations for the organization, admins with the proper permissions can either: increase capacity storage or reduce Dataverse search by performing all the steps below.
@@ -369,11 +369,11 @@ To ensure optimal operations for the organization, admins with the proper permis
 
 ### What is the DataverseSearch table and how can I reduce it?
 
-The DataverseSearch table is the cumulative storage used by the Dataverse search index. It includes the data from all searchable, retrievable, and filterable fields of the tables you have indexed for your environment. See [Configure Dataverse search to improve search results and performance](configure-relevance-search-organization.md). You can reduce the table size by removing Find Columns, View Columns, and Filter conditions for one or more tables. You can turn off Dataverse search to remove all indexed data. It may take up to 24 hours after reducing the number of indexed columns or turning off Dataverse search.
+The DataverseSearch table is the cumulative storage used by the Dataverse search index. It includes the data from all searchable, retrievable, and filterable fields of the tables you  indexed for your environment. Learn more in [Configure Dataverse search to improve search results and performance](configure-relevance-search-organization.md). You can reduce the table size by removing Find Columns, View Columns, and Filter conditions for one or more tables. You can turn off Dataverse search to remove all indexed data. It might take up to 24 hours after reducing the number of indexed columns or turning off Dataverse search.
 
 ### I just bought the new capacity-based licenses. How do I provision an environment by using this model?
 
-You can provision environments through the Power Platform admin center. More information: [Create and manage environments in the Power Platform admin center](create-environment.md)
+You can provision environments through the Power Platform admin center. Learn more in [Create and manage environments in the Power Platform admin center](create-environment.md).
 
 ### I'm a new customer and I recently purchased the new offers. My usage of database/log/file is showing red. What should I do?
 
@@ -393,7 +393,7 @@ Yes, tenant admins are notified through email on a weekly basis if their organiz
 
 ### Why am I no longer getting storage notifications?
 
-Capacity email notifications are sent weekly to tenant admins based on three different thresholds. If you're no longer getting storage notifications, check to see your admin role. It could also be the case that your organization is over the three predefined capacity thresholds. In that case, you don't receive an email notification.
+Capacity email notifications are sent weekly to tenant admins based on three different thresholds. If you're no longer getting storage notifications, check your admin role. It could also be the case that your organization is over the three predefined capacity thresholds. In that case, you don't receive an email notification.
 
 ### I'm an existing customer. Should I expect my file and log usage to change?
 
@@ -409,7 +409,7 @@ Default, production, and sandbox environments are counted for consumption. Trial
 
 ### What are tables ending in “- analytics" in my capacity report?
 
-Tables ending in “– Analytics” are tables used by one or more Insights applications, for example Sales Insights, Customer Service Hub, or Field Service and resource scheduling and optimization analytics dashboard to generate predictive insights and/or analytics dashboards. The data is synched from Dataverse tables. See **More information** below for documentation covering the installed Insights applications and the tables used to create insights and dashboards.
+Tables ending in “– Analytics” are tables used by one or more Insights applications, for example Sales Insights, Customer Service Hub, or Field Service and resource scheduling and optimization analytics dashboard to generate predictive insights or analytics dashboards. The data is synched from Dataverse tables. Go to the section **More information** for documentation covering the installed Insights applications and the tables used to create insights and dashboards.
 
 ### Why can I no longer see the Summary tab in my capacity report? 
 
