@@ -30,10 +30,10 @@ Here are a few goals and the stakeholders you need to have a conversation with a
 
 Review common goals to find inspiration for the one that best aligns with your vision.
 
-- [Empower innovation and AI culture](empower-innovation.md)
-- [Nurture a maker and champion community](enable-maker-community.md)
-- [Enhance operational efficiency](enhance-opex.md)
 - [Establish a Center of Excellence with governance patterns and practices](establish-coe.md)
-- [Get leadership buy-in and organization alignment](get-leadership-buyin.md)
-- [Improve employee experience](improve-employee-ex.md)
 - [Measure value and realize return of investment](realize-value.md)
+- [Get leadership buy-in and organization alignment](get-leadership-buyin.md)
+- [Nurture a maker and champion community](enable-maker-community.md)
+- [Empower innovation and AI culture](empower-innovation.md)
+- [Enhance operational efficiency](enhance-opex.md)
+- [Improve employee experience](improve-employee-ex.md)

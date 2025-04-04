@@ -48,10 +48,10 @@ Here are some key steps to guide you through the process of defining a meaningfu
     - **Goal**:
         - What you aim to achieve.
         - Examples of common goals:
-            - Empowerment and Innovation
-            - Digital Transformation
-            - Continuous Improvement
-            - Automation and Efficiency
+            - Empowerment and innovation
+            - Digital transformation
+            - Continuous improvement
+            - Automation and efficiency
     - **Reason**:
         - The reason behind your goal.
         - Examples of common reasons:
@@ -138,7 +138,7 @@ Review [common goals when adopting Power Platform](common-vision/vision-overview
 
 Aligning Power Platform adoption with the organizational direction involves a strategic approach to ensure that the platform's capabilities are fully used to support the company's overall goals and objectives.
 
-It's important to understand your organization's vision, mission, and strategic goals. Engage with key stakeholders, including executives and department heads, to gather insights into the long-term objectives and priorities of the organization. By doing so, you can ensure that the Power Platform strategy aligns with the broader organizational direction.
+It's important to understand your organization's vision, mission, and strategic goals. Engage with key stakeholders, including executives and department heads, to gather insights into the long-term objectives and priorities of the organization. By doing so, you can ensure that your Power Platform strategy aligns with the broader organizational direction.
 
 ## Discover objectives
 
@@ -154,17 +154,16 @@ Here are some examples of objectives:
 - Establish an inclusive culture of innovation and experimentation.
 - Create a culture of collaboration that drives employee satisfaction and tangible outcomes.
 
-Review [common themes for adopting Power Platform](common-vision/vision-overview.md) to get more inspiration for objectives based on why you're adopting Power Platform.
+Review [common goals for adopting Power Platform](common-vision/vision-overview.md) to get more inspiration for objectives based on why you're adopting Power Platform.
 
 ## Define initiatives
 
-Next, outline the initiatives that need to be implemented to achieve the identified success measures. Initiatives are the specific actions or projects that need to be implemented to achieve the objectives. They outline what needs to be done in the immediate term, and in the next year and three years. Initiatives are actionable steps that drive progress towards the key results and objectives. Examples of initiatives might include launching a new customer loyalty program or implementing a new IT system.
-
+Next, outline the initiatives that need to be implemented to achieve the identified success measures. Initiatives are the specific actions or projects that need to be implemented to achieve the objectives. They outline what needs to be done in the immediate term, and in the next year and three years. Initiatives are actionable steps that drive progress towards the key results and objectives. 
 Here are some examples of initiatives:
 
 - Develop and publish a catalog of reusable app templates and components to help makers build with a reliable, reusable toolkit.
 - Identify champion candidates and create incentives for makers, champions, and departments to participate in your internal Power Platform Champions program.
-- Create a Maker Portal with onboarding collateral, development guidelines, self-guided learning, and success stories.
+- Create a hub for makers with onboarding collateral, development guidelines, self-guided learning, and success stories.
 
 ## Engage stakeholders
 
