@@ -24,7 +24,7 @@ Here are some recommendations for enhancing data resilience in Power Platform:
 
 ## Regular backups
 
-Ensure that your environments are backed up regularly. Review and manage these backups to confirm they're up-to-date and accessible when needed. Power Platform automatically creates backups of your environments, typically on a daily basis. These backups include all the data, configurations, and customizations within the environment. In addition to automatic backups, administrators can also create manual backups at any time. Manual backups are useful before making significant changes or updates to the environment.
+Environments that have a database are [automatically backed up and can be restored](/power-platform/admin/backup-restore-environments) to any selected system backup in the last seven days. These backups include all the data, configurations, and customizations within the environment. In addition to automatic backups, administrators can also create manual backups at any time. Manual backups are useful before making significant changes or updates to the environment.
 
 You can now extend their backup retention from seven to 28 days by making an environment [managed](/power-platform/admin/managed-environment-overview). Learn more in [Back up and restore environments](/power-platform/admin/backup-restore-environments).
 
