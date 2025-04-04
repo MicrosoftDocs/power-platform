@@ -86,14 +86,12 @@ productDirectory:
           url: adoption/operate-overview.md
     - title: Availability
       # imageSrc should be square in ratio with no white space
-      imageSrc: ./media/operate.svg
+      imageSrc: ./media/availability.svg
       links:
-        - text: Identify mission critical workloads
-          url: adoption/identify-mission-critical.md
-        - text: Plan and deploy mission critical workloads
+        - text: Plan mission critical workloads
           url: adoption/plan-mission-critical.md
         - text: Build a disaster recovery plan
-          url: adoption/disaster-recovery.md
+          url: adoption/plan-disaster-recovery.md
         - text: More...
           url: adoption/availability-overview.md
     - title: Readiness

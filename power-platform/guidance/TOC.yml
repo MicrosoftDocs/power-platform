@@ -133,10 +133,8 @@
           items: 
             - name: Overview
               href: adoption/availability-overview.md
-            - name: Identify mission critical workloads
-              href: adoption/identify-mission-critical.md
-            - name: Plan and deploy mission critical workloads
-              href: adoption/plan-mission-critical.md
+            - name: Plan mission critical workloads
+              href: adoption/plan-mission-critical.md         
             - name: Build a disaster recovery plan
               href: adoption/disaster-recovery.md
         - name: Readiness
