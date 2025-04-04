@@ -222,11 +222,11 @@
                       items:
                         - name: Security
                           href: security-recommendations.md
-                        - name: Operational efficiency recommendations
+                        - name: Operational efficiency
                           href: operational-efficiency-recommendations.md
-                        - name: Licensing and capacity recommendations
+                        - name: Licensing and capacity
                           href: licensing-and-capacity-recommendations.md
-                        - name: Performance recommendations
+                        - name: Performance
                           href: performance-recommendations.md
             - name: Environment updates
               items:
