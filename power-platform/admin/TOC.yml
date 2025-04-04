@@ -7,17 +7,17 @@
         - name: Overview of the Power Platform admin center
           href: admin-documentation.md
         - name: Environment management
-          items:
+          href: environment-management-overview.md
             - name: Environment management capabilities
-              href: environment-management-overview.md
-            - name: Managed security
-              href: security/managed-security.md
-            - name: Managed governance
-              href: managed-governance.md
-            - name: Managed operations
-              href: operations/overview.md
-            - name: Managed availability
-              href: managed-availability.md
+              items:
+                - name: Managed security
+                  href: security/managed-security.md
+                - name: Managed governance
+                  href: managed-governance.md
+                - name: Managed operations
+                  href: operations/overview.md
+                - name: Managed availability
+                  href: managed-availability.md
         - name: Get started
           items:
             - name: Role of a Power Platform administrator
