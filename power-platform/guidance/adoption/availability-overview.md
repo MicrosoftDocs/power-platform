@@ -1,7 +1,6 @@
 ---
 title: Power Platform availability - Overview and strategy
-description: Learn how to achieve identify, plan and deploy mission critical workloads with Power Platform and prepare disaster recovery plans.
-#customer intent: As a Power-Platform user, I want to understand operational best practices for Power Platform so that I can ensure stability and minimize disruptions.
+description: Learn how to identify, plan, and deploy mission critical workloads with Power Platform and prepare disaster recovery plans.
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: concept-article
@@ -21,4 +20,4 @@ This series of articles provides comprehensive guidance on achieving enterprise 
 1. [Build a disaster recovery plan](plan-disaster-recovery.md). Develop a comprehensive strategy to ensure your mission-critical workloads can recover quickly and effectively from unexpected failures or disasters.
 
 > [!TIP]
-> For workload specific recommendations review the [Reliablity checklist](/power-platform/well-architected/reliability/checklist) of the [Power Platform Well-Architected](/power-platform/well-architected/) guidance. The Operational Excellence pillar defines processes to make your workload resilient to malfunction and to ensure that it returns to a fully functioning state after a failure occurs.
+> For workload specific recommendations review the [Reliability checklist](/power-platform/well-architected/reliability/checklist) of the [Power Platform Well-Architected](/power-platform/well-architected/) guidance. The Operational Excellence pillar defines processes to make your workload resilient to malfunction and to ensure that it returns to a fully functioning state after a failure occurs.
