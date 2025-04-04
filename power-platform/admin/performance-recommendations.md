@@ -30,18 +30,33 @@ The following recommendations are related to websites:
 
 ### Improve performance of websites by migrating them to Bootstrap version 5
 
+This recommendation lists production websites that aren't migrated to Bootstrap version 5. Review the websites and [migrate them to Bootstrap version 5 using the Power Pages bootstrap migration tool](/power-pages/configure/migrate-bootstrap) as needed.
+
+> [!NOTE]
+> Once an action is taken, it takes up to one day for the sites to be removed from the list.
+
 - **Severity**: High
-- **Refresh Frequency**: Daily
+- **Refresh frequency**: Daily
 - **Managed Environments**: Yes
 
 ### Review and move websites from standard data model to enhanced data model
 
+This recommendation lists production websites that aren't migrated to the enhanced data model. Review the websites and [migrate them to the enhanced data model using the Power Pages site migration tool](/power-pages/admin/migrate-enhanced-data-model?branch=main&branchFallbackFrom=pr-en-us-648) where possible.
+
+> [!NOTE]
+> Once an action is taken, it takes up to one day for the sites to be removed from the list.
+
 - **Severity**: High
-- **Refresh Frequency**: Daily
-- **Managed Environments**: Yes
+- **Refresh frequency**: Daily
+- **Managed environments**: Yes
 
 ### Enable Content Delivery Network (CDN) to improve website performance
 
+This recommendation lists production websites that don't have Content Delivery Network (CDN) enabled. Review the websites and [enable Content Delivery Network](/power-pages/configure/configure-cdn) where needed.
+
+> [!NOTE]
+> Once an action is taken, it takes up to one day for the sites to be removed from the list.
+
 - **Severity**: High
-- **Refresh Frequency**: Daily
-- **Managed Environments**: Yes
+- **Refresh frequency**: Daily
+- **Managed environments**: Yes
