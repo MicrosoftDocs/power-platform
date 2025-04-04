@@ -69,9 +69,6 @@ Managed availability includes:
 - Increased resiliency with Azure availability zones
 - Automated backups and self-serve disaster recovery
 
-- 
-
-
   
 
 
