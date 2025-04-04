@@ -18,11 +18,11 @@ search.audienceType:
 
 The [Managed Environments](managed-environment-overview.md) concept has been reimagined in the [new and improved Power Platform admin center](new-admin-center.md). _**Environment management**_, an offering of premium capabilities that allow admins to manage Power Platform at scale with more control, less effort, and more insights is now available.
 
-Environment management provides enhanced security, governance, and operations capabilities for environments that have opted in for the capabilities. Environment management delivers advanced protection, greater visibility, and operational excellence. This makes it easier for administrators to manage their environments at scale while providing them with peace of mind and granular control across every environment covered by this feature set.
+Environment management provides enhanced security, governance, and operations features for environments that have opted in for the capabilities. Environment management delivers advanced protection, greater visibility, and operational excellence. This makes it easier for administrators to manage their environments at scale while providing them with peace of mind and granular control across every environment covered by this feature set.
 
 :::image type="content" source="media/environment-management.png" alt-text="Image highlighting the features of environment management.":::
 
-The environment management offering includes the following components:
+The environment management offering includes the following capabilities:
 
 ## Managed security
 
