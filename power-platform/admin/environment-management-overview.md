@@ -62,6 +62,15 @@ Managed operations includes:
 
 ## Managed availability
 
+[Managed availability](managed-availability.md) provides robust capabilities to ensure continuous uptime, seamless failover, and enterprise-grade resilience for mission-critical applications and AI workloads. Built on Microsoft Azure, these features safeguard businesses against failures, outages, and disruptions, ensuring high availability without compromising performance.
+
+Managed availability includes:
+
+- Increased resiliency with Azure availability zones
+- Automated backups and self-serve disaster recovery
+
+- 
+
 
   
 
