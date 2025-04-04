@@ -50,8 +50,9 @@ You can set a sandbox, production, or trial (subscription-based) environment in 
 1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) and sign in using Environment Admin or System Administrator role credentials.
 1. In the navigation page, select **Environments**.
 1. In the **Environments** page, select a sandbox, production, or trial (subscription-based) environment.
-1. On the **Details** page, select **Edit**. 
-1. Under **Administration mode**, toggle **Disabled** to **Enabled**.
+1. In the **Details** web part, select **Edit**.
+1. The **Edit details** pane appears.
+1. Turn the **Administration mode** property to **Enabled**.
 1. Optionally, you can set **Background operations**.
 1. Select **Save**.
 
