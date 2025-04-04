@@ -214,15 +214,27 @@
                   href: block-cookie-replay-attack.md
                 - name: Configure IP firewall
                   href: ip-firewall.md
-                - name: Use Power Platform Advisor
-                  href: power-platform-advisor.md
+                - name: Power Platform Advisor
+                  items:
+                    - name: Overview
+                      href: power-platform-advisor.md
+                    - name: Recommendations
+                      items:
+                        - name: Security
+                          href: security-recommendations.md
+                        - name: Operational efficiency recommendations
+                          href: operational-efficiency-recommendations.md
+                        - name: Licensing and capacity recommendations
+                          href: licensing-and-capacity-recommendations.md
+                        - name: Performance recommendations
+                          href: performance-recommendations.md
             - name: Environment updates
-              items: 
+              items:
                 - name: Opt in to early access updates
                   href: opt-in-early-access-updates.md
                 - name: General availability deployment
                   href: general-availability-deployment.md
-                - name: "Manage maintenance window (preview)"
+                - name: Manage maintenance window (preview)
                   href: manage-maintenance-window.md
             - name: Early release cycle environments
               href: early-release.md
@@ -278,7 +290,7 @@
                       href: add-resources-site.md
                 - name: Users + permissions
                   items:
-                    - name: Create or edit business units 
+                    - name: Create or edit business units
                       href: create-edit-business-units.md
                     - name: Update record owner
                       href: update-record-owner.md
@@ -482,30 +494,30 @@
               href: security/managed-security.md
             - name: Security page
               items:
-              - name: Overview
-                href: security/security-overview.md
-              - name: Data protection and privacy
-                href: security/data-protection-privacy.md
-              - name: Identity and access
-                items:
-                - name: Identity and access management
-                  href: security/identity-access-management.md
-                - name: App access control
-                  items: 
-                  - name: Control which apps are allowed in your environment (preview)
-                    href: control-app-access-environment.md
-                  - name: Commonly used Microsoft first-party services and portal apps (preview)
-                    href: apps-to-allow.md
-              - name: Compliance 
-                href: security/compliance.md
+                - name: Overview
+                  href: security/security-overview.md
+                - name: Data protection and privacy
+                  href: security/data-protection-privacy.md
+                - name: Identity and access
+                  items:
+                    - name: Identity and access management
+                      href: security/identity-access-management.md
+                    - name: App access control
+                      items:
+                        - name: Control which apps are allowed in your environment (preview)
+                          href: control-app-access-environment.md
+                        - name: Commonly used Microsoft first-party services and portal apps (preview)
+                          href: apps-to-allow.md
+                - name: Compliance
+                  href: security/compliance.md
             - name: Manage Copilot
               href: copilot/copilot-hub.md
             - name: Power Platform managed identity
               items:
-              - name: Managed identity overview (preview)
-                href: managed-identity-overview.md
-              - name: Set up managed identity (preview)
-                href: set-up-managed-identity.md
+                - name: Managed identity overview (preview)
+                  href: managed-identity-overview.md
+                - name: Set up managed identity (preview)
+                  href: set-up-managed-identity.md
             - name: Authenticating to Power Platform services
               href: security/authenticate-services.md
             - name: Data storage and governance
@@ -554,30 +566,30 @@
                       href: dlp-known-issues.md
                     - name: Policies
                       items:
-                      - name: Create and manage policies
-                        href: prevent-data-loss.md
-                      - name: Policy scopes
-                        href: dlp-policy-scope.md
-                      - name: Effect of multiple policies
-                        href: dlp-combined-effect-multiple-policies.md
-                      - name: Disable new connectors
-                        href: connector-off-by-default.md
-                      - name: Design-time versus runtime
-                        href: dlp-impact-policies-apps-flows.md
-                      - name: Exempt apps and flows
-                        href: dlp-resource-exemption.md
+                        - name: Create and manage policies
+                          href: prevent-data-loss.md
+                        - name: Policy scopes
+                          href: dlp-policy-scope.md
+                        - name: Effect of multiple policies
+                          href: dlp-combined-effect-multiple-policies.md
+                        - name: Disable new connectors
+                          href: connector-off-by-default.md
+                        - name: Design-time versus runtime
+                          href: dlp-impact-policies-apps-flows.md
+                        - name: Exempt apps and flows
+                          href: dlp-resource-exemption.md
                     - name: Certified connectors
                       items:
-                      - name: Connector classification
-                        href: dlp-connector-classification.md
-                      - name: Connector action control
-                        href: connector-action-control.md
-                      - name: Connector endpoint filtering (preview)
-                        href: connector-endpoint-filtering.md
+                        - name: Connector classification
+                          href: dlp-connector-classification.md
+                        - name: Connector action control
+                          href: connector-action-control.md
+                        - name: Connector endpoint filtering (preview)
+                          href: connector-endpoint-filtering.md
                     - name: Custom connectors
                       items:
-                      - name: Connector classification
-                        href: dlp-custom-connector-parity.md
+                        - name: Connector classification
+                          href: dlp-custom-connector-parity.md
                     - name: DLP for Power Automate
                       items:
                         - name: Overview
@@ -650,12 +662,12 @@
                   href: manage-application-users.md
                 - name: Delete users
                   items:
-                  - name: Delete users from an environment
-                    href: delete-users.md
-                  - name: Delete stub users from an environment
-                    href: delete-stub-users.md
-                  - name: Delete unlicensed or removed Microsoft Entra group members
-                    href: delete-unlicensed-or-removed-microsoft-entra-group-users.md
+                    - name: Delete users from an environment
+                      href: delete-users.md
+                    - name: Delete stub users from an environment
+                      href: delete-stub-users.md
+                    - name: Delete unlicensed or removed Microsoft Entra group members
+                      href: delete-unlicensed-or-removed-microsoft-entra-group-users.md
                 - name: Reset a user's password
                   href: reset-users-password.md
                 - name: Assign service admin role to users
@@ -685,9 +697,9 @@
             - name: Virtual Network support
               items:
                 - name: Virtual Network support overview
-                  href: vnet-support-overview.md                
+                  href: vnet-support-overview.md
                 - name: Virtual Network support white paper
-                  href: virtual-network-support-whitepaper.md   
+                  href: virtual-network-support-whitepaper.md
                 - name: Set up Virtual Network support
                   href: vnet-support-setup-configure.md
             - name: Security FAQs
@@ -714,11 +726,11 @@
                   href: power-automate-analytics-reports.md
             - name: Data export (preview)
               items:
-                - name: "Export Power Apps inventory and usage data"
+                - name: Export Power Apps inventory and usage data
                   href: self-service-analytics.md
-                - name: "Self-service analytics schema definition"
+                - name: Self-service analytics schema definition
                   href: self-service-analytics-schema-definition.md
-                - name: "Create custom dashboards using Power Apps inventory and usage data"
+                - name: Create custom dashboards using Power Apps inventory and usage data
                   href: build-custom-reports.md
             - name: Analyze telemetry with Application Insights
               items:
@@ -744,7 +756,7 @@
               href: add-storage.md
             - name: Dataverse capacity-based storage overview
               href: whats-new-storage.md
-            - name: Dataverse capacity-based storage details 
+            - name: Dataverse capacity-based storage details
               href: capacity-storage.md
             - name: Database Tables
               items:
@@ -826,15 +838,15 @@
               href: programmability-permission-reference.md
             - name: Tutorials
               items:
-                - name: "Create a daily capacity report"
+                - name: Create a daily capacity report
                   href: programmability-tutorial-create-daily-capacity-report.md
-                - name: "Install an application to a target environment"
+                - name: Install an application to a target environment
                   href: programmability-tutorial-install-application-environment.md
-                - name: "Tutorial: Allocate add-ons to environments"
+                - name: 'Tutorial: Allocate add-ons to environments'
                   href: programmability-tutorial-allocate-capacity-addons.md
-                - name: "Tutorial: Create cross tenant isolation reports"
+                - name: 'Tutorial: Create cross tenant isolation reports'
                   href: programmability-tutorial-cross-tenant-reporting.md
-                - name: "Tutorial: Create, update, and list Environment Management Settings"
+                - name: 'Tutorial: Create, update, and list Environment Management Settings'
                   href: programmability-tutorial-environmentmanagement-settings.md
             - name: PowerShell
               items:
@@ -864,17 +876,17 @@
                   href: powerplatform-api-create-service-principal.md
                 - name: Reference
                   items:
-                    - name: "2024-10-01"
+                    - name: '2024-10-01'
                       href: /rest/api/power-platform
-                    - name: "2022-03-01-preview"
+                    - name: 2022-03-01-preview
                       href: /rest/api/power-platform
-                    - name: "2020-10-01"
+                    - name: '2020-10-01'
                       items:
                         - name: Environments
                           items:
-                            - name: "List environments"
+                            - name: List environments
                               href: list-environments.md
-                            - name: "Create a Dataverse application user"
+                            - name: Create a Dataverse application user
                               href: create-dataverseapplicationuser.md
                         - name: Tenant Settings
                           items:
@@ -886,9 +898,9 @@
               href: data-integrator.md
         - name: Data sources and gateway clusters
           items:
-            - name: "About on-premises gateway"
+            - name: About on-premises gateway
               href: wp-onpremises-gateway.md
-            - name: "On-premises data gateway management"
+            - name: On-premises data gateway management
               href: onpremises-data-gateway-management.md
         - name: Manage data
           items:
@@ -1032,7 +1044,7 @@
                           href: control-field-synchronization-outlook.md
                         - name: Field security best practices
                           href: how-field-security-affects-synchronization-between-outlook.md
-                        - name: "Frequently asked questions: record synchronization"
+                        - name: 'Frequently asked questions: record synchronization'
                           href: frequently-asked-questions-synchronizing-records-dynamics-365-and-outlook.yml
                     - name: Configure folder-level tracking
                       items:
@@ -1056,16 +1068,12 @@
                           href: monitor-email-processing-errors.md
                         - name: Email in "Pending Send" status?
                           href: why-email-message-sent-have-pending-send-status.md
-              # Leave this commented out as this topic should not appear in the TOC. For context-sensitive help link.
-              #   - name: When would I want to use this check box?
-              #     href: when-would-want-use-check-box.md
         - name: Extend with integration and solutions
           items:
             - name: SharePoint integration
               items:
                 - name: Manage your documents using SharePoint
                   href: manage-documents-using-sharepoint.md
-                  items:
                 - name: SharePoint document management software requirements
                   href: sharepoint-document-management-software-requirements.md
                 - name: Setup
@@ -1095,7 +1103,7 @@
               href: manage-bing-maps-organization.md
             - name: Enable Power Automate integration
               href: enable-embedded-flow-in-your-organization.md
-            - name: "Live Assist powered by Café X (preview)"
+            - name: Live Assist powered by Café X (preview)
               href: /dynamics365/customer-engagement/live-assist/live-assist-microsoft-dynamics-365-powered-by-cafe-x
             - name: Use Power BI
               href: use-power-bi.md
@@ -1133,19 +1141,19 @@
               href: unified-experience/finance-operations-apps-overview.md
             - name: Administration for partners and systems implementers
               href: unified-experience/partners-systems-implementers.md
-            - name: "Tutorial: Provision a new environment with an ERP-based template"
+            - name: 'Tutorial: Provision a new environment with an ERP-based template'
               href: unified-experience/tutorial-deploy-new-environment-with-erp-template.md
-            - name: "Tutorial: Install the Finance and Operations Provisioning apps"
+            - name: 'Tutorial: Install the Finance and Operations Provisioning apps'
               href: unified-experience/tutorial-install-finance-operations-provisioning-app.md
-            - name: "Tutorial: Update the Finance and Operations Provisioning app"
+            - name: 'Tutorial: Update the Finance and Operations Provisioning app'
               href: unified-experience/tutorial-update-finance-operations-provisioning-app.md
-            - name: "Tutorial: Copy a Lifecycle Services environment to a unified environment"
+            - name: 'Tutorial: Copy a Lifecycle Services environment to a unified environment'
               href: unified-experience/tutorial-copy-lifecycle-services-environment-unified-environment.md
-            - name: "Tutorial: Perform a transaction-less copy between environments"
+            - name: 'Tutorial: Perform a transaction-less copy between environments'
               href: unified-experience/tutorial-perform-transactionless-copy.md
-            - name: "Tutorial: Back up and restore unified environment"
+            - name: 'Tutorial: Back up and restore unified environment'
               href: unified-experience/tutorial-backup-restore-unified-environment.md
-            - name: "Admin trials for finance and operations apps"
+            - name: Admin trials for finance and operations apps
               href: unified-experience/admin-trials.md
         - name: Performance tuning and optimization
           items:
@@ -1210,9 +1218,9 @@
           items:
             - name: Add a Partner of Record
               href: add-partner-record-subscription.md
-            - name: "For partners: get credit when customers subscribe"
+            - name: 'For partners: get credit when customers subscribe'
               href: partners-credit-when-customers-subscribe-dynamics-365.md
-            - name: "For partners: Delegated Administrator"
+            - name: 'For partners: Delegated Administrator'
               href: for-partners-delegated-administrator.md
     - name: Administer customer engagement apps in Dynamics 365
       items:
@@ -1234,4 +1242,3 @@
           href: ../developer/index.yml
         - name: Guidance documentation
           href: ../guidance/index.yml
-          displayName: CoE adoption guidance best practices

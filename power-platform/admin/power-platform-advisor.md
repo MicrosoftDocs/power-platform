@@ -154,13 +154,11 @@ To retrieve resources for each recommendation, create a cloud flow or scheduled 
 
 ## Recommendations
 
-### Recommendation details panel - TBD
+### Recommendation details panel
 
 The recommendation details panel shows a detailed view with inline actionable insights. Here’s a detailed breakdown of the panel's components:
 
 - **Title**: Provides a concise title of the recommendation.
-
-- **Severity**: This value shows how often the recommendation data refreshes.
 
 - **Recommendation timestamp**: Shows the date when the recommendation was last refreshed.
 
@@ -174,65 +172,9 @@ The recommendation details panel shows a detailed view with inline actionable in
 
 ### Recommendation Categories
 
-Power Platform Advisor organizes recommendations into these categories:
+Power Platform Advisor organizes recommendations into the following categories. Select a category to view all the recommendations associated to that category:
 
-- Security  
-- Operational Efficiency  
-- Licensing & Capacity  
-- Performance  
-
-The following tables provide a list of all recommendations by category:
-
-### Security recommendations
-
-| Severity | Recommendation                                                                 | Resource Type | Refresh Frequency | Managed Environments | Surface | Users |
-|----------|---------------------------------------------------------------------------------|---------------|-------------------|-----------------------|---------|-------|
-| High     | Secure agents by setting up data loss prevention policies for Copilot Studio items | Tenant Setting | Real time         | No                    |         |       |
-| High     | Assign valid owners to apps to mitigate business continuity risks              | App           | Weekly            | Yes                   |         |       |
-| High     | Enable Web Application Firewall (WAF) to protect websites                      | Site          | Daily             | Yes                   |         |       |
-| High     | Enhance your websiteʼs security by renewing its SSL certificate                | Site          | Daily             | Yes                   |         |       |
-| High     | Secure high-value applications that are shared with ‘Everyone’, including guest users | App           | Weekly            | Yes                   |         |       |
-
-### Licensing and capacity recommendations
-
-| Severity | Recommendation                                           | Resource Type | Refresh Frequency | Managed Environments |       |       |
-|----------|-----------------------------------------------------------|---------------|-------------------|-----------------------|-------|-------|
-| High     | Review Power Apps license recommendations                 | License       | Weekly            | Yes                   |       |       |
-| High     | Assign licenses to pending Power Apps license requests    | License       | Weekly            | Yes                   |       |       |
-| Medium   | Optimize Dataverse storage for email attachments          | Capacity      | Weekly            | Yes                   |       |       |
-| Medium   | Optimize Dataverse storage for workflows and async plugins| Capacity      | Weekly            | Yes                   |       |       |
-| Medium   | Optimize Dataverse storage for Smart Matching             | Capacity      | Weekly            | Yes                   |       |       |
-| Medium   | Optimize Dataverse storage for plugin logging             | Capacity      | Weekly            | Yes                   |       |       |
-| Medium   | Optimize Dataverse storage for table stale mailbox subscriptions | Capacity | Weekly | Yes | | |
-| Medium   | Optimize Dataverse storage for server-side sync logs      | Capacity      | Weekly            | Yes                   |       |       |
-
-### Operational efficiency recommendations
-
-| Severity | Recommendation                                                                 | Resource Type | Refresh Frequency | Managed Environments |       |       |
-|----------|---------------------------------------------------------------------------------|---------------|-------------------|-----------------------|-------|-------|
-| High     | Protect high-value apps with premium security and governance policies          | App           | Weekly            | No                    |       |       |
-| High     | Review and convert expiring trial websites to production                       | Site          | Daily             | Yes                   |       |       |
-| High     | Review and shut down websites without any traffic                              | Site          | Daily             | Yes                   |       |       |
-| High     | Turn on tenant-wide analytics for better experience across the managed platform | Tenant Setting | Real time         | No                    |       |       |
-| High     | Follow Application Lifecycle Management (ALM) best practices for high value apps | App           | Weekly            | Yes                   |       |       |
-| Medium   | Maintain tenant hygiene by cleaning up quarantined apps                        | App           | Weekly            | Yes                   |       |       |
-| Medium   | Maintain tenant hygiene by cleaning up unused apps                             | App           | Weekly            | Yes                   |       |       |
-
-### Performance recommendations
-
-| Severity | Recommendation                                                   | Resource Type | Refresh Frequency | Managed Environments |       |       |
-|----------|-------------------------------------------------------------------|---------------|-------------------|-----------------------|-------|-------|
-| High     | Improve performance of websites by migrating them to Bootstrap version 5 | Site          | Daily             | Yes                   |       |       |
-| High     | Review and move websites from standard data model to enhanced data model | Site          | Daily             | Yes                   |       |       |
-| High     | Enable Content Delivery Network (CDN) to improve website performance | Site          | Daily             | Yes                   |       |       |
-
-### Recommendations Automation Center
-
-All automation center recommendations are for managed environments only.
-
-| Type    | Recommendation                          | Resource Type | Refresh Frequency | Category       |       |       |
-|---------|------------------------------------------|---------------|-------------------|----------------|-------|-------|
-| Error   | Work queue SLA violation                | Desktop flows | Hourly            | Orchestration  |       |       |
-| Warning | Work queue SLA at risk                  | DF            | Hourly            | Orchestration  |       |       |
-| Error   | Power Automate Process capacity overage | DF            | Real time         | Licensing      |       |       |
-
+- [Security](security-recommendations.md)  
+- [Operational efficiency](operational-efficiency-recommendations.md)
+- [Licensing and capacity](licensing-and-capacity-recommendations%20copy.md)
+- [Performance](performance-recommendations.md)
