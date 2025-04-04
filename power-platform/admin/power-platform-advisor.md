@@ -31,7 +31,7 @@ With Advisor, administrators can:
 
 Contextual recommendations from Power Platform Advisor are also available in:
 
-1. Power Platform Admin Center  
+1. Power Platform admin center  
     1. Action center  
     1. Security page  
     1. Copilot page  
@@ -60,7 +60,7 @@ Power Plaform admins can view the top recommendations on the **Advisor** card. I
 - Select **View recommendations** to view all recommendations on the **Advisor** page.
 
 > [!TIP]  
-> If the home page is customized, you don't see the **Advisor** card, or you removed the card from the home page, you can select **+ Add cards** to add the card to the **Home** page. 
+> If the home page is customized, you don't see the **Advisor** card, or you removed the card from the home page, you can select **+ Add cards** to add the card to the **Home** page.
 
 ### Managed vs non-managed environments
 
@@ -69,7 +69,7 @@ Advisor is part of the advanced management features in the admin center. All the
 Power Platform Advisor shows a summary of recommendations for non-managed environments. These appear as a banner above the affected resources table in the recommendation panel or with a lock icon on the recommendations page. Admins can turn on managed environments from Advisor to view the affected resources and act on them.
 
 > [!NOTE]  
-> When you turn on managed environments, it might take up to 72 hours for Advisor to show full details of the affected resources in that environment. 
+> When you turn on managed environments, it might take up to 72 hours for Advisor to show full details of the affected resources in that environment.
 
 ### Capabilities
 
