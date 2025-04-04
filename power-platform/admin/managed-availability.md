@@ -38,6 +38,8 @@ Self-Serve Disaster Recovery (DR) enables organizations to:
 - Maintain a secondary environment copy in another region for business continuity.
 - Activate emergency response modes for quick recovery during major outages.
 
+:::image type="content" source="media/storage-extend-capacity-banner-30-days.png" alt-text="Tenant capacity extension in admin center." lightbox="media/storage-extend-capacity-banner-30-days.png":::
+
 Self-Serve DR also supports disaster recovery drills and failback capabilities that empower administrators to decide whether and when to switch back to the primary location after an outage.
 
 ## Related content
