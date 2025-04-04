@@ -3,7 +3,7 @@ title: Environment management capabilities
 description: Learn how environment management provides enhanced security, governance, and operations capabilities for environments that have opted in for the capabilities.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/26/2025
+ms.date: 04/04/2025
 author: praveenmantha
 ms.custom: NewPPAC
 ms.author: pmantha 
@@ -20,7 +20,7 @@ The [Managed Environments](managed-environment-overview.md) concept has been rei
 
 Environment management provides enhanced security, governance, and operations capabilities for environments that have opted in for the capabilities. Environment management delivers advanced protection, greater visibility, and operational excellence. This makes it easier for administrators to manage their environments at scale while providing them with peace of mind and granular control across every environment covered by this feature set.
 
-:::image type="content" source="media/advanced-management.png" alt-text="Image highlighting the features of environment management.":::
+:::image type="content" source="media/environment-management.png" alt-text="Image highlighting the features of environment management.":::
 
 The environment management offering includes the following components:
 
