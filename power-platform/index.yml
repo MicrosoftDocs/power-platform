@@ -12,7 +12,7 @@ metadata:
   ms.topic: hub-page # Required
   author: tapanm-MSFT #Required; your GitHub user alias, with correct capitalization.
   ms.author: tapanm #Required; microsoft alias of author; optional team alias.
-  ms.date: 04/03/2025 #Required; mm/dd/yyyy format.
+  ms.date: 04/04/2025 #Required; mm/dd/yyyy format.
   hide_bc: false
 
 highlightedContent:
@@ -46,7 +46,9 @@ productDirectory:
     - url: /microsoft-copilot-studio
       text: Copilot Studio documentation
     - url: /training/browse/?expanded=power-platform&products=microsoft-copilot-studio
-      text: Copilot Studio training 
+      text: Copilot Studio training
+    - url: https://www.youtube.com/@MicrosoftCopilotStudio
+      text: Copilot Studio videos
   - title: Power Apps
     imageSrc: "media/hub-page/power-apps.svg"
     summary: Learn how to quickly build modern low-code apps for business challenges in your organization.
