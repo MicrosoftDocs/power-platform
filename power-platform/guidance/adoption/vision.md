@@ -41,11 +41,9 @@ Creating a vision for low-code adoption involves a structured framework that ens
 
 The vision statement is an aspirational declaration that encapsulates the desired future state of the organization. It serves as a guiding beacon, providing a clear direction for the strategy. The vision statement should be inspiring and actionable, reflecting the organization's goals and aspirations.
 
-The vision statement should describe something you want to achieve over the next 1-2 years. It should articulate the organization’s aspirations, values, and the impact it wants to make. Most vision statements provide direction and purpose to the organization on Power Platform.
-
 Here are some key steps to guide you through the process of defining a meaningful vision statement.
 
-1. **Understand the purpose**: A vision statement should articulate the long-term aspirations of your organization. It should be inspiring and provide a clear picture of what success looks like in the future.
+1. **Understand the purpose**: The vision statement should describe something you want to achieve over the next 1-2 years. It should articulate the organization’s aspirations, values, and the impact it wants to make. Most vision statements provide direction and purpose to the organization on Power Platform.
 1. **Identify key components**: A well-crafted vision statement typically includes the following components:
     - **Goal**:
         - What you aim to achieve.
@@ -54,7 +52,6 @@ Here are some key steps to guide you through the process of defining a meaningfu
             - Digital Transformation
             - Continuous Improvement
             - Automation and Efficiency
-1. **Engage stakeholders**: Involve key stakeholders in the process to ensure that the vision resonates with everyone in the organization. This collaborative approach helps gain buy-in and align the vision with the organizational values and goals.
     - **Reason**:
         - The reason behind your goal.
         - Examples of common reasons:
