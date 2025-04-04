@@ -3,7 +3,7 @@ title: Notifications for Business & Industry Copilot services
 description: Learn about the different ways that you can receive notifications for Business & Industry Copilot services. 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/11/2025
+ms.date: 04/04/2025
 ms.subservice: admin
 ms.author: kacortez
 author: kacortez
@@ -18,7 +18,7 @@ search.audienceType:
 Microsoft regularly sends communications about service changes, maintenance, retirement, and customer action that is required. These communications primarily take the form of posts to the Microsoft 365 Service health dashboard and the Message center. Occasionally, we also use direct email communications to provide status, updates, or information about the service.
 
 ## Message center
-Admins can use the [Microsoft 365 Message center](/office365/admin/manage/message-center?view=o365-worldwide) to learn about official service announcements and feature changes. Email notifications can be sent for Message center posts.
+Admins can use the [Microsoft 365 Message center](/office365/admin/manage/message-center?view=o365-worldwide&preserve-view=true) to learn about official service announcements and feature changes. Email notifications can be sent for Message center posts.
 
 ### Steps to set up a weekly digest mail of message center changes and notifications
 1. Log in to the Admin Center at [https://admin.powerplatform.microsoft.com.](https://admin.powerplatform.microsoft.com/)
@@ -35,9 +35,9 @@ Admins can use the [Microsoft 365 Message center](/office365/admin/manage/messag
 
 The [Service health dashboard](/office365/enterprise/view-service-health) shows the health status of your Microsoft services. Learn how to open the Microsoft 365 Service health dashboard in [How do I check my online service health?](check-online-service-health.md)
 
-Service health communications in the Microsoft 365 admin center are limited to specific admin roles. [Assign admin roles](/microsoft-365/admin/add-users/assign-admin-roles?view=o365-worldwide) that have permission to view service health, and review them regularly to stay current about the latest service health information.
+Service health communications in the Microsoft 365 admin center are limited to specific admin roles. [Assign admin roles](/microsoft-365/admin/add-users/assign-admin-roles?view=o365-worldwide&preserve-view=true) that have permission to view service health, and review them regularly to stay current about the latest service health information.
 
-Sometimes, Microsoft might have to notify you about issues that are occurring in your Managed Environment, when action by an admin or user in your organization is required to fix those issues. These communications appear in the **Issues in your environment that require action** section of the **Service health** page. Learn more about this section in [Learn about Microsoft 365 monitoring](/microsoft-365/enterprise/microsoft-365-monitoring?view=o365-worldwide).
+Sometimes, Microsoft might have to notify you about issues that are occurring in your Managed Environment, when action by an admin or user in your organization is required to fix those issues. These communications appear in the **Issues in your environment that require action** section of the **Service health** page. Learn more about this section in [Learn about Microsoft 365 monitoring](/microsoft-365/enterprise/microsoft-365-monitoring?view=o365-worldwide&preserve-view=true).
 
 ## Service health in the Power Platform admin center
 
