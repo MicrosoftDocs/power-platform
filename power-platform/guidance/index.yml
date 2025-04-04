@@ -20,7 +20,7 @@ metadata:
 
 # productDirectory section (optional)
 productDirectory:
-  title: Power Platform guidance # < 60 chars (optional)
+  title: Power Platform adoption guidance # < 60 chars (optional)
   summary: Find guidance for each phase of your Power Platform adoption journey. # < 160 chars (optional)
   items:
     # Card
