@@ -5,6 +5,8 @@
       items:
         - name: What's new
           href: adoption/whats-new.md
+        - name: Overview
+          href: adoption/methodology.md
         - name: Maturity model
           items:
             - name: Overview
