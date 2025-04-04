@@ -24,7 +24,7 @@ Power Platform Advisor enhances the security and reliability of your Power Platf
 
 The following recommendations are grouped by resource type:
 
-## App
+## Apps
 
 The following recommendations relate to apps:
 
@@ -113,7 +113,7 @@ This recommendation lists production websites with SSL certificates that are exp
 - **Surface**:  
 - **Users**:  
 
-## Tenant Settings
+## Tenant settings
 
 The following recommendations relate to tenant settings:
 
