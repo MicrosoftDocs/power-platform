@@ -20,11 +20,11 @@ Microsoft regularly sends communications about service changes, maintenance, ret
 ## Message center
 Admins can use the [Microsoft 365 Message center](/office365/admin/manage/message-center?view=o365-worldwide&preserve-view=true) to learn about official service announcements and feature changes. Email notifications can be sent for Message center posts.
 
-### Steps to set up a weekly digest mail of message center changes and notifications
-1. Log in to the Admin Center at [https://admin.powerplatform.microsoft.com.](https://admin.powerplatform.microsoft.com/)
-2. On the left-hand navigation, select **Admin Centers**
+### Set up a weekly digest mail of Message center changes and notifications
+1. Log in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+2. In the navigation pane, select **Admin Centers**.
 3. Select **Microsoft 365**.
-4. Expand Health and slect **Message Center**.
+4. Expand Health and select **Message Center**.
 5. On the page that loads, select **Preferences**.
 6. A flyout appears on the right, select the **Email** tab.
 7. Make sure the email notification settings are as expected. You can select Other e-mail addresses if you want the digest to be sent to different users or a shared mailbox.
