@@ -60,6 +60,9 @@ Managed operations includes:
 - Quality checker
 - Continuous deployment
 
+## Managed availability
+
+
   
 
 
