@@ -48,7 +48,7 @@ Learn how to drive architectural excellence reviewing the guidance in [Power Pla
 - [Performance Efficiency](/power-platform/well-architected/performance-efficiency/checklist) recommendations help you recommendations design your workload so it can grow and meet your workload usage demand. Availability is more than simple uptime, but rather a consistent level of application service and performance relative to a known healthy state.
 - [Experience Optimization](/power-platform/well-architected/experience-optimization/checklist) provide meaningful and effective experiences for users of your workload. How a workload informs a user about downtime is key to keeping users informed.
 
-## Power Plaform supports mission-critical workloads
+## Power Platform supports mission-critical workloads
 
 ### Increased resiliency with Azure Availability Zones
 
