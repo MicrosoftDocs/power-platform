@@ -136,7 +136,7 @@
             - name: Plan mission critical workloads
               href: adoption/plan-mission-critical.md         
             - name: Build a disaster recovery plan
-              href: adoption/disaster-recovery.md
+              href: adoption/plan-disaster-recovery.md
         - name: Readiness
           items: 
             - name: Overview 
