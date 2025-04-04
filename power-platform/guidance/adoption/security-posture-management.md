@@ -1,6 +1,6 @@
 ---
-title: Manage your security posture
-description: Manage your Power Platform security posture with our comprehensive guide. Learn how to assess security scores, adopt Zero Trust, and implement proactive policies.
+title: Enhance your security posture
+description: Enhance your Power Platform security posture with our comprehensive guide. Learn how to assess security scores, adopt Zero Trust, and implement proactive policies.
 #customer intent: As a Power Platform admin, I want to manage my Power Platform security posture so that I can ensure the security of my organization's data and applications.
 author: manuelap-msft
 ms.component: pa-admin
@@ -11,7 +11,7 @@ ms.reviewer: pankajsharma2087
 ms.date: 02/28/2025
 ---
 
-# Manage your security posture
+# Enhance your security posture
 
 Security is a complex and challenging discipline that you need to consider in nearly all aspects of your cloud and technology environments. Consider these key points:
 
@@ -52,6 +52,12 @@ Adopting Zero Trust as a strategy helps you start your Power Platform adoption j
 - **Assume breach**. Minimize the blast radius and segment access. Verify end-to-end encryption, and use analytics to get visibility into activities related to your systems, drive threat detection, and improve defenses.
 
 Microsoft provides a [Zero Trust-based security modernization blueprint](/security/zero-trust/adopt/rapidly-modernize-security-posture) that organizations can use as a guide.
+
+## Enable Managed security features
+
+[Managed security](/power-platform/admin/security/managed-security) is a suite of premium capabilities that offers advanced protection and empowers security administrators to effectively manage and secure access to customer data and resources. It brings together Microsoft's most advanced threat protection, data protection and privacy, identity and access management, and compliance capabilities to help customers meet today's cybersecurity challenges.
+
+We recommend you evaluate and enable [managed security](/power-platform/admin/security/managed-security) features to enhance your security posture.
 
 ## Security Development Lifecycle 
 

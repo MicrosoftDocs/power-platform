@@ -50,9 +50,7 @@ These products work together to form a stronger defense. Power Platform builds o
 
 Power Platform is built on a strong foundation of security. It uses the same security stack that positions Azure as a trusted custodian of the world's most sensitive data and integrates with Microsoft 365's advanced information protection and compliance tools. Power Platform delivers end-to-end protection designed around our customers' most challenging concerns.
 
-The Power Platform service is governed by the [Microsoft Online Services Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31) and the [Microsoft Enterprise Privacy Statement](https://www.microsoft.com/privacystatement/OnlineServices/Default.aspx). For the location of data processing, refer to the Microsoft Online Services Terms and the [Data Protection Addendum](https://www.microsoft.com/download/details.aspx?id=101581).
-
-<!-- Please check first link above, it's redirecting to https://www.microsoft.com/licensing/docs -->
+The Power Platform service is governed by the [Microsoft Online Services Terms](https://www.microsoft.com/power-platform/business-applications/legal/) and the [Microsoft Enterprise Privacy Statement](https://www.microsoft.com/privacystatement/OnlineServices/Default.aspx). For the location of data processing, refer to the Microsoft Online Services Terms and the [Data Protection Addendum](https://www.microsoft.com/download/details.aspx?id=101581).
 
 The [Microsoft Trust Center](https://www.microsoft.com/trustcenter) is the primary resource for Power Platform compliance information. Learn more in [Microsoft Compliance Offerings](/compliance/regulatory/offering-home).
 
@@ -72,20 +70,20 @@ Evaluating your current security posture is important to ensure that your Power 
 Here's a detailed look at what this evaluation entails:
 
 1. **Security tools and technologies**: Examine the security tools and technologies you're currently using to protect your Power Platform environment. Consider:
-  - **Data Loss Prevention (DLP) policies**: Are you using DLP policies to prevent unauthorized data sharing?
-  - **Encryption**: Is your data encrypted both at rest and in transit?
-  - **Identity and Access Management (IAM)**: Are you using advanced features of Microsoft Entra ID, such as Conditional Access or Privileged Identity Management (PIM), for authentication and authorization?
+    - **Data Loss Prevention (DLP) policies**: Are you using DLP policies to prevent unauthorized data sharing?
+    - **Encryption**: Is your data encrypted both at rest and in transit?
+       **Identity and Access Management (IAM)**: Are you using advanced features of Microsoft Entra ID, such as Conditional Access or Privileged Identity Management (PIM), for authentication and authorization?
 1. **Security policies and guidelines**: Review any existing security policies or guidelines specific to Power Platform. Consider whether these policies are up-to-date and comprehensive enough to address current threats. Key areas to evaluate include:
-  - **User access controls**: Are there clear policies on who can access what data and resources?
-  - **Development guidelines**: Have you established secure coding practices for app and workflow development? Are these guidelines easily accessible to your makers? Do you have processes in place to train new makers on these guidelines?
+    - **User access controls**: Are there clear policies on who can access what data and resources?
+    - **Development guidelines**: Have you established secure coding practices for app and workflow development? Are these guidelines easily accessible to your makers? Do you have processes in place to train new makers on these guidelines?
 1. **Monitoring and auditing**: Assess how you currently monitor and audit activities within Power Platform. Effective monitoring and auditing are essential for detecting and responding to security incidents. Key questions to ask include:
-  - **Activity logs**: Are you capturing detailed logs of user activities and changes within the platform?
-  - **Alerting mechanisms**: Do you have alerts set up for suspicious activities or policy violations?
+    - **Activity logs**: Are you capturing detailed logs of user activities and changes within the platform?
+    - **Alerting mechanisms**: Do you have alerts set up for suspicious activities or policy violations?
 1. **Regulatory and compliance requirements**: Identify any specific regulatory or compliance requirements that apply to your organization. For example, General Data Protection Regulation (GDPR), Health Insurance Portability and Accountability (HIPAA), or other industry-specific standards. Ensure that your Power Platform security measures align with these requirements. Consider:
-  - **Compliance audits**: Are you regularly conducting audits to ensure compliance?
-  - **Documentation**: Do you have the necessary documentation to demonstrate compliance during audits?
+    - **Compliance audits**: Are you regularly conducting audits to ensure compliance?
+    - **Documentation**: Do you have the necessary documentation to demonstrate compliance during audits?
 
-By thoroughly evaluating these aspects, you can gain a clear understanding of your current security posture. This understanding is crucial for developing a strategic plan to enhance your security measures, ensuring that your Power Platform environment is robust, secure, and compliant.
+Evaluate these aspects and gain a clear understanding of your current security posture. This understanding is crucial for developing a strategic plan to enhance your security measures, ensuring that your Power Platform environment is robust, secure, and compliant.
 
 Understanding your security maturity level is essential for developing a robust security strategy for Power Platform. Assess your current security posture to identify where you stand in terms of security practices and controls. Categorize your organization into a specific maturity level—initial, capable, or efficient—to establish a clear baseline. This baseline helps you pinpoint specific action items needed to advance to the next maturity level. By addressing these action items, you enhance your security measures and ensure better protection for your data, applications, and users.
 
@@ -107,7 +105,7 @@ Here are some of the typical challenges and how Power Platform can help address 
 - Insider threats: Attackers are often insiders who have legitimate permissions to use the systems. These insiders know how to bypass built-in controls and exploit exceptions within the organization. Detecting and mitigating insider threats requires advanced security measures that go beyond standard access controls.
 - Subtle attacks: The most challenging attacks to detect are those that make minor adjustments, benefiting the attacker while causing harm to the organization. These subtle changes can easily go unnoticed without robust monitoring and analysis.
 
-Power Platform offers a range of security controls and tools designed to tackle these challenges effectively.
+Power Platform offers a range of security controls and tools designed to tackle these challenges effectively - here are some examples of how Power Platform features that support your security posture. Review the other articles in this series for a deeper dive into some of these areas, and review our [security and governance documentation](/power-platform/admin/security) to learn how to set up and maintain security and governance for Power Platform.
 
 1. **Comprehensive monitoring and integration**: Relying solely on monitoring the activities within your business applications isn't enough to spot problems. You need to integrate these applications with other data sources to identify and respond to suspicious activities that might otherwise go unnoticed. For example, seeing that a cloud flow is getting customer information from Dataverse and sending an email might not be suspicious on its own. However, when combined with other signals, such as frequency of the cloud flow runs, unusual geo-locations, or off-hours activity, you can detect more complex insider threats. Power Platform's integration with [Microsoft Sentinel](/azure/sentinel/overview) allows for advanced threat detection and response. By correlating data from various sources, Microsoft Sentinel can identify patterns and anomalies that indicate potential security threats, enabling proactive measures to mitigate risks.
 
@@ -117,7 +115,9 @@ Power Platform offers a range of security controls and tools designed to tackle 
 
 1. **Secure development practices**: Establishing [secure coding practices](/power-platform/well-architected/security/secure-development-lifecycle) for workload development is essential. Ensure that these guidelines are easily accessible to your makers and provide training to new makers on these practices. This strategy helps build secure applications from the ground up.
 
-## Consider your security challenges and OWASP Top 10
+1. **Managed security**: [Managed security](/power-platform/admin/security/managed-security) is a suite of premium capabilities that offers advanced protection and empowers security administrators to effectively manage and secure access to customer data and resources. It brings together Microsoft's most advanced threat protection, data protection and privacy, identity and access management, and compliance capabilities to help customers meet today's cybersecurity challenges.
+
+## Consider OWASP Top 10
 
 The Open Worldwide Application Security Project® ([OWASP](https://owasp.org/about/)) is a nonprofit foundation dedicated to improving software security. OWASP identified the [top 10 security risks](https://aka.ms/OWASPLowCodeSecurityRisks) associated with low-code/no-code platforms. This list is essential for users to understand and is regularly updated based on feedback from the security community to ensure it remains relevant and comprehensive.
 

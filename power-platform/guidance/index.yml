@@ -53,7 +53,7 @@ productDirectory:
       imageSrc: ./media/secure.svg
       links:
         - url: /power-platform/guidance/adoption/security-posture-management
-          text: Manage your security posture 
+          text: Enhance your security posture 
         - url: /power-platform/guidance/adoption/data-protection
           text: Establish data protection and privacy controls
         - url: /power-platform/guidance/adoption/conditional-access
