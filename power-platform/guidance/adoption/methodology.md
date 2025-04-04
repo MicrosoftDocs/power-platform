@@ -29,14 +29,14 @@ This guidance aligns to the following pillars and responsibilities of your adopt
 
 | | |
 |:--:|--|
-| :::image type="content" source="../media/strategy.svg" type="icon"::: [Strategy](strategy-best-practices.md) | Document the objectives, the measurable key results, and the key initiatives behind Power Platform adoption. |
-| :::image type="content" source="../media/plan.svg" type="icon"::: [Plan](plan-overview.md) | Define roles, responsibilities and delivery models. | 
-| :::image type="content" source="../media/secure.svg" type="icon"::: [Security](secure-overview.md) | Protect your worklaods and data from threats and meet compliance requirements. | 
-| :::image type="content" source="../media/govern.svg" type="icon"::: [Governance](admin-best-practices.md) | Implement digital guardrails for your makers to create with confidence. | 
-| :::image type="content" source="../media/operate.svg" type="icon"::: [Operations](operate-overview.md) | Establish a strategy for application lifecycle management and ongoing production support. | 
-| :::image type="content" source="../media/availability.svg" type="icon"::: [Availability](availability-overview.md) | Plan for failures and build a disaster recovery plan. | 
-| :::image type="content" source="../media/ready.svg" type="icon"::: [Readiness](ready-overview.md) | Upskill your makers and envision high-value use cases. | 
-| :::image type="content" source="../media/nurture.svg" type="icon"::: [Community](nurture-best-practices.md) | Accelerate your adoption with a thriving internal community.  | 
+| :::image source="../media/strategy.svg" type="icon"::: [Strategy](strategy-best-practices.md) | Document the objectives, the measurable key results, and the key initiatives behind Power Platform adoption. |
+| :::image source="../media/plan.svg" type="icon"::: [Plan](plan-overview.md) | Define roles, responsibilities and delivery models. | 
+| :::image source="../media/secure.svg" type="icon"::: [Security](secure-overview.md) | Protect your worklaods and data from threats and meet compliance requirements. | 
+| :::image source="../media/govern.svg" type="icon"::: [Governance](admin-best-practices.md) | Implement digital guardrails for your makers to create with confidence. | 
+| :::image source="../media/operate.svg" type="icon"::: [Operations](operate-overview.md) | Establish a strategy for application lifecycle management and ongoing production support. | 
+| :::image source="../media/availability.svg" type="icon"::: [Availability](availability-overview.md) | Plan for failures and build a disaster recovery plan. | 
+| :::image source="../media/ready.svg" type="icon"::: [Readiness](ready-overview.md) | Upskill your makers and envision high-value use cases. | 
+| :::image source="../media/nurture.svg" type="icon"::: [Community](nurture-best-practices.md) | Accelerate your adoption with a thriving internal community.  | 
 
 ## Intended audiences
 
