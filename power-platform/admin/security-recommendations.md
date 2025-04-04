@@ -20,7 +20,7 @@ ms.custom:
 
 # View security recommendations
 
-Power Platform Advisor helps you enhance the security and reliability of your Power Platform tenant by providing actionable recommendations. These recommendations identify potential risks and offer guidance to mitigate them. You can view security recommendations within [Power Platform Advisor](power-platform-advisor.md) in the Power Platform admin center.
+Power Platform Advisor enhances the security and reliability of your Power Platform tenant with actionable recommendations. These recommendations identify potential risks and guide you on how to mitigate them. View security recommendations in [Power Platform Advisor](power-platform-advisor.md) in the Power Platform admin center.
 
 The following recommendations are grouped by resource type:
 

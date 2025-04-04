@@ -20,7 +20,7 @@ ms.custom:
 
 # View licensing and capacity recommendations
 
-Power Platform Advisor helps you optimize and manage the licensing and capacity of your Power Platform tenant by providing actionable recommendations. These recommendations identify opportunities to improve resource allocation, governance, and cost efficiency. You can view licensing and capacity recommendations within [Power Platform Advisor](power-platform-advisor.md) in the  in the Power Platform admin center.
+Power Platform Advisor helps you optimize and manage licensing and capacity for your Power Platform tenant with actionable recommendations. These recommendations highlight ways to improve resource allocation, governance, and cost efficiency. You can view licensing and capacity recommendations in [Power Platform Advisor](power-platform-advisor.md) in the Power Platform admin center.
 
 The following recommendations are grouped by type:
 

@@ -18,18 +18,18 @@ search.audienceType:
 
 [!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
-Power Platform Advisor provides personalized recommendations to optimize your Power Platform tenant. Advisor analyzes all managed environments and the apps in these environments within your Power Platform tenant. Advisor recommends solutions to improve security, reliability, and overall health.
+Power Platform Advisor provides personalized recommendations to optimize your Power Platform tenant. It analyzes all managed environments and the apps in these environments within your tenant. It recommends solutions to improve security, reliability, and overall health.
 
 With Advisor, administrators can:
 
 - Provide proactive, best practice recommendations.
 - Improve the overall health of their Power Platform tenant.
-- Take inline actions or automate actions using cloud.
+- Take inline actions or automate actions using the cloud.
 
 > [!NOTE]  
-> You can find Advisor recommendations on the Advisor page in the Power Platform admin center. If you turn on the new Power Platform admin center experience, you find Advisor recommendations in the Action center.
+> Find Advisor recommendations on the Advisor page in the Power Platform admin center. If you turn on the new admin center experience, recommendations are in the Action center.
 
-In addition to the Advisor page and in the Action center, contextual recommendations from Power Platform Advisor are currently available in:
+Contextual recommendations from Power Platform Advisor are also available in:
 
 1. Power Platform Admin Center  
     1. Action center  
@@ -46,15 +46,15 @@ In addition to the Advisor page and in the Action center, contextual recommendat
 
 ### Summary card: Microsoft Teams
 
-Each week, Power Platform Advisor sends a summary card in Teams highlighting the top two recommendations for the admin to focus on. These highlights help admins invest their time on the most important recommendations.
+Each week, Power Platform Advisor sends a summary card in Teams that highlights the top two recommendations for the admin to focus on. These highlights help admins invest their time on the most important recommendations.
 
 To get the summary card, admins should install the **Power Apps** app in Teams.
 
 Once installed, admins can view the summary cards in their Teams chats.
 
-### Summary card: Power Platform Admin Center
+### Summary card: Power Platform admin center
 
-Power Platform tenant admins can view the top recommendations on the **Advisor** card. If the Power Platform admin center home page isn't customized, this card is automatically pinned on the **Home** page. Your tenant is scanned for recommendations weekly.
+Power Plaform admins can view the top recommendations on the **Advisor** card. If the admin center home page isn't customized, this card is automatically pinned on the **Home** page. Your tenant is scanned for recommendations weekly.
 
 - Select **View details** on any recommendation to view its details.  
 - Select **View recommendations** to view all recommendations on the **Advisor** page.
@@ -62,9 +62,9 @@ Power Platform tenant admins can view the top recommendations on the **Advisor**
 > [!TIP]  
 > If the home page is customized, you don't see the **Advisor** card, or you removed the card from the home page, you can select **+ Add cards** to add the card to the **Home** page. 
 
-### Managed vs. Non-Managed Environments
+### Managed vs non-managed environments
 
-Power Platform Advisor is part of the advanced management features in the admin center. All the recommendations, affected resource details, and actions are available for the managed environments in your tenant.
+Advisor is part of the advanced management features in the admin center. All the recommendations, affected resource details, and actions are available for the managed environments in your tenant.
 
 Power Platform Advisor shows a summary of recommendations for non-managed environments. These appear as a banner above the affected resources table in the recommendation panel or with a lock icon on the recommendations page. Admins can turn on managed environments from Advisor to view the affected resources and act on them.
 
@@ -73,21 +73,21 @@ Power Platform Advisor shows a summary of recommendations for non-managed enviro
 
 ### Capabilities
 
-Power Platform Advisor includes these capabilities:
+Advisor includes these capabilities:
 
-- **Snooze Recommendations**: Pause recommendations for up to two months and undo snoozing if needed sooner.
+- **Snooze recommendations**: Pause recommendations for up to two months and undo snoozing if needed sooner.
 
-- **Delegate or Collaborate**: Share recommendations and resources with colleagues to resolve them collaboratively.
+- **Delegate or collaborate**: Share recommendations and resources with colleagues to resolve them collaboratively.
 
-- **Action History**: Track all actions performed via Advisor or using the Admin V2 connector.
+- **Action history**: Track all actions performed via Advisor or using the Admin V2 connector.
 
-- **Trends**: View changes in affected resources over time using trend data.
+- **Trends**: View changes in affected resources over time with trend data.
 
 ## Actions
 
-### Types of Actions
+### Types of actions
 
-Power Platform Advisor lets administrators address recommendations through different action types:
+Power Platform Advisor lets admins address recommendations through different types of actions:
 
 - **Inline actions**: Perform actions directly from the Advisor interface.
 
@@ -97,9 +97,9 @@ Power Platform Advisor lets administrators address recommendations through diffe
 
 - **Redirection to learn docs**: Access documentation with step-by-step remediation guidance.
 
-### Inline Actions
+### Inline actions
 
-1. Go to the "Recommendations" tab in Power Platform Advisor.
+1. Go to the **Recommendations** tab in Power Platform Advisor.
 
 2. Review the list of recommendations along with their severity levels.
 
@@ -113,13 +113,13 @@ Power Platform Advisor lets administrators address recommendations through diffe
 
 ### Automated actions
 
-Power Platform Advisor supports automated actions in the [Power Platform for Admin V2](/connectors/powerplatformadminv2/) connector, which are useful for building remediation processes. For example, instead of deleting an unused app, an admin can first send an email or message to the owner of the app. The message informs the owner about an impending action. If the admin doesn't receive a reply from the owner, the app can be deleted.
+Power Platform Advisor supports automated actions in the [Power Platform for Admin V2](/connectors/powerplatformadminv2/) connector. These actions are useful for building remediation processes. For example, instead of deleting an unused app, an admin can first send an email or message to the owner of the app. The message informs the owner about an impending action. If the admin doesn't receive a reply from the owner, the app can be deleted.
 
 While building cloud flows using the connector, you can get Power Platform Advisor recommendations and actions:
 
-- **Get Recommendations**: Returns all the valid recommendations in the tenant.
-- **Get Recommendation Resources**: Returns all the resources for a specific recommendation.
-- **Execute Recommendation Action**: Executes a specific action for a specific resource listed in a recommendation.
+- **Get recommendations**: Returns all the valid recommendations in the tenant.
+- **Get recommendation resources**: Returns all the resources for a specific recommendation.
+- **Execute recommendation action**: Executes a specific action for a specific resource listed in a recommendation.
 
 ### Action history
 
@@ -127,9 +127,9 @@ Action history provides a consolidated view of all the actions taken manually fr
 
 ### Snooze recommendations
 
-Power Platform admins can snooze non-security recommendations for up to two months to prioritize their work more efficiently. To snooze a recommendation, hover on the recommendation to select the snooze action in the recommendation table and choose the snooze duration.
+Power Platform admins can snooze nonsecurity recommendations for up to two months to prioritize their work efficiently. To snooze a recommendation, hover on the recommendation to select the snooze action in the recommendation table and choose the snooze duration.
 
-When a recommendation is snoozed, it's removed from the active recommendations tab and is moved to the snoozed recommendations tab. Admins can see the person snoozing the recommendation along with the duration and date when it was snoozed. Advisor stops refreshing recommendations in their snoozed state.
+When you snooze a recommendation, it's removed from the active recommendations tab and moved to the snoozed recommendations tab. Admins can see the person snoozing the recommendation along with the duration and date when it was snoozed. Advisor stops refreshing recommendations in their snoozed state.
 
 Snoozed recommendations can be activated again manually by selecting undo snooze from the snoozed recommendation table. They’re automatically activated after the snoozed duration elapses. 
 
@@ -156,11 +156,11 @@ To retrieve resources for each recommendation, create a cloud flow or scheduled 
 
 ### Recommendation details panel
 
-The recommendation details panel shows a detailed view with inline actionable insights. Here’s a detailed breakdown of the panel's components:
+The recommendation details panel shows a detailed view with actionable insights. Here is a breakdown of the panel's components:
 
 - **Title**: Provides a concise title of the recommendation.
 
-- **Recommendation timestamp**: Shows the date when the recommendation was last refreshed.
+- **Recommendation timestamp**: Shows the date the recommendation was last refreshed.
 
 - **Why is this important**: Explains the context and specifics of the recommendation.
 
@@ -170,9 +170,9 @@ The recommendation details panel shows a detailed view with inline actionable in
 
 - **Affected artifact details**: A table or chart listing affected recommendation artifacts such as flows, work queues, machines, etc.
 
-### Recommendation Categories
+### Recommendation categories
 
-Power Platform Advisor organizes recommendations into the following categories. Select a category to view all the recommendations associated to that category:
+Power Platform Advisor organizes recommendations into the following categories. Select a category to view all the recommendations associated with that category:
 
 - [Security](security-recommendations.md)  
 - [Operational efficiency](operational-efficiency-recommendations.md)

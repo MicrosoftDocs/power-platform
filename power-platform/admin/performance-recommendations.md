@@ -20,7 +20,7 @@ ms.custom:
 
 # View performance recommendations
 
-Power Platform Advisor helps you enhance the performance of your Power Platform tenant by providing actionable recommendations. These recommendations identify opportunities to improve website performance, optimize resource usage, and ensure efficient operations. You can view performance recommendations within [Power Platform Advisor](power-platform-advisor.md) in the Power Platform admin center.
+Power Platform Advisor enhances your Power Platform tenant's performance with actionable recommendations. These recommendations improve website performance, optimize resource usage, and ensure efficient operations. You can view performance recommendations within [Power Platform Advisor](power-platform-advisor.md) in the Power Platform admin center.
 
 The following recommendations are grouped by resource type:
 
