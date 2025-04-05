@@ -55,7 +55,7 @@ The trace-ID is used to join all transactions with a parent-child relationship. 
 
 The W3C trace-ID field is mapped in Application Insights to the operation ID. This mapping allows you to easily query a set of related actions that occur as part of the end-to-end trace.
 
-:::image type="content" source="media/distributed-tracing/trace-id-field.png" alt-text="Screenshot of the Operation ID field mapped in Application Insights." "lightbox="media/distributed-tracing/trace-id-field.png":::
+:::image type="content" source="media/distributed-tracing/trace-id-field.png" alt-text="Screenshot of the Operation ID field mapped in Application Insights." lightbox="media/distributed-tracing/trace-id-field.png":::
 
 ## Practical applications and benefits
 
