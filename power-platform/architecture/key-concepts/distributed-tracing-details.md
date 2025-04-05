@@ -27,7 +27,8 @@ Distributed tracing is a method used to profile and monitor applications, especi
 
 This article describes distributed tracing, provides practical applications and use cases, and explains how to implement it across multiple services in Power Platform.
 
-[Distributed tracing across multiple services​ in Power Platform](distributed-tracing.md) provides a general overview of distributed tracing, including an example scenario and architecture.
+> [!TIP]
+> [Distributed tracing across multiple services​ in Power Platform](distributed-tracing.md) provides a general overview of distributed tracing, including an example scenario and architecture.
 
 ## Trace ID and span ID
 
@@ -35,7 +36,7 @@ In the W3C Trace Context standard, each trace is assigned a globally unique 16-b
 
 ## Example scenario
 
-Let's consider an example where a browser starts a transaction, multiple microservices interact, and a call is made to the Dataverse web API:
+Let's consider an example where a browser starts a transaction, multiple microservices interact, and a call is made to the Dataverse Web API:
 
 | Source | Trace ID and span ID |
 | --- | --- |
@@ -45,7 +46,7 @@ Let's consider an example where a browser starts a transaction, multiple microse
 
 1. **Browser initiates transaction**: The browser sends a request to a web server. This request is assigned a trace-ID and a span-ID (let's call it span-ID-1).
 1. **Microservices interaction**: The web server processes the request and makes a call to a microservice. This call is assigned a new span-ID (span-ID-2) but retains the same trace-ID. The microservice, in turn, calls another microservice, creating another span-ID (span-ID-3), and so on.
-1. **Call to Dataverse web API**: One of the microservices makes a call to the Dataverse Web API. This call is assigned a new span-ID (span-ID-4) but retains the same trace-ID.
+1. **Call to Dataverse Web API**: One of the microservices makes a call to the Dataverse Web API. This call is assigned a new span-ID (span-ID-4) but retains the same trace-ID.
 
 ## Trace ID and parent-child relationship
 
@@ -73,12 +74,12 @@ By implementing distributed tracing with the W3C Trace Context standard, you can
 | Example | Description | Notes |
 | --- | --- |--- |
 | Autonomous agent | An autonomous agent is triggered by a data event. The possible long-lived transaction persists the trace parent. This transaction could cross multiple processes and services including possible handoff to a customer service agent. | Power Automate can request distributed tracing from the Dataverse plug-in. Each step of the process adds Application Insights telemetry. You can query the E2E transaction in Application Insights or by using KQL (Kusto Query Language) queries. |
-| End user web, mobile, or agent transaction | A user starts a transaction to update customer data. Trace entries are added to Application Insights from the request and trace messages from Dataverse. | The Kubernetes service starts a distributed transaction. It calls the Dataverse web API to update customer details. |
+| End user web, mobile, or agent transaction | A user starts a transaction to update customer data. Trace entries are added to Application Insights from the request and trace messages from Dataverse. | The Kubernetes service starts a distributed transaction. It calls the Dataverse Web API to update customer details. |
 | Customer support agent | Customer contacts the call center. A call center operator makes use of Copilot and Power App to update the customer details. Each component in the update writes to Application Insights. | The transaction starts with the call center operator. The Power App requests distributed transaction from Dataverse. |
 
-## Dataverse web API integration
+## Dataverse Web API integration
 
-Let's explore how the [Dataverse web API](/power-apps/developer/data-platform/webapi/overview) can be integrated with W3C Trace Context to enable distributed tracing.
+Let's explore how the [Dataverse Web API](/power-apps/developer/data-platform/webapi/overview) can be integrated with W3C Trace Context to enable distributed tracing.
 
 The calling service initiates a trace with a unique trace-ID and span-ID. This trace parent value can be passed to the Web API either in the body of an HTTP POST request or as part of an HTTP query string. For example:
 
@@ -91,7 +92,7 @@ Using either method, you can configure a Dataverse plug-in to incorporate Applic
 
 Now, let's explore how to implement this pattern using the generally available features of Dataverse.  
 
-To apply distributed tracing to calls to the [Dataverse web API](/power-apps/developer/data-platform/webapi/overview):
+To apply distributed tracing to calls to the [Dataverse Web API](/power-apps/developer/data-platform/webapi/overview):
 
 - Use Dataverse messages to extend the message pipeline.
 - Create a custom API with Dataverse plug-ins that use the Application Insights SDK to add the required parent-child relationships.
@@ -104,7 +105,7 @@ Imagine that you want to allow other Power Platform services like Microsoft Copi
 
 Custom [Dataverse messages](/power-apps/developer/data-platform/custom-actions) can be defined that allow you to interact with entities or custom APIs within the Dataverse environment. These messages enable you to perform operations such as create, update, delete, and retrieve data. Dataverse messages enable you to can streamline your data management processes and ensure seamless integration with your observability needs.
 
-Define custom [Dataverse messages](/power-apps/developer/data-platform/custom-actions) to interact with entities or custom APIs in the Dataverse environment. These messages let you create, update, delete, and retrieve data. Dataverse messages streamline data management processes and ensure seamless integration with observability needs.  
+Define custom messages to interact with entities or custom APIs in the Dataverse environment. These messages let you create, update, delete, and retrieve data. Dataverse messages streamline data management processes and ensure seamless integration with observability needs.  
 
 ### Adding steps to a plug-in
 
@@ -135,8 +136,8 @@ By using secure configuration values, you ensure that sensitive information is p
 
 Dataverse allows you to define [custom APIs](/power-apps/developer/data-platform/custom-api) with specific request and response parameters. This feature enables you to create tailored APIs to meet your application's needs.
 
-- [**Input parameters**](/power-apps/developer/data-platform/understand-the-data-context#inputparameters): Define the input data required by the custom API. They can include various data types such as strings, integers, and complex objects.
-- [**Output parameters**](/power-apps/developer/data-platform/understand-the-data-context#outputparameters): Define the output data returned by the custom API. They can include various data types and structures, allowing you to provide detailed and meaningful responses to API consumers.
+- [**InputParameters**](/power-apps/developer/data-platform/understand-the-data-context#inputparameters): Define the input data required by the custom API. They can include various data types such as strings, integers, and complex objects.
+- [**OutputParameters**](/power-apps/developer/data-platform/understand-the-data-context#outputparameters): Define the output data returned by the custom API. They can include various data types and structures, allowing you to provide detailed and meaningful responses to API consumers.
 
 :::image type="content" source="media/distributed-tracing/custom-api.png" alt-text="Screenshot of registering a custom API." :::
 
@@ -197,5 +198,5 @@ Principal authors:
 ## Related resources
 
 - [W3C ​​Trace Context standard defining traceparent and tracestate HTTP headers](https://www.w3.org/TR/trace-context/)
-- [​Event framework (Microsoft Dataverse)](/power-apps/developer/data-platform/event-framework)
-- [​Understand the execution context (Microsoft Dataverse)](/power-apps/developer/data-platform/understand-the-data-context#passing-a-shared-variable-from-the-api)
+- [​Event Framework (Microsoft Dataverse)](/power-apps/developer/data-platform/event-framework)
+- [​Understand the execution context (Microsoft Dataverse)](/power-apps/developer/data-platform/understand-the-data-context)

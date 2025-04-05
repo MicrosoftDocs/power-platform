@@ -104,5 +104,5 @@ Principal authors:
 ## Related resources
 
 - [W3C ​​Trace Context standard defining traceparent and tracestate HTTP headers](https://www.w3.org/TR/trace-context/)
-- [​Event framework (Microsoft Dataverse)](/power-apps/developer/data-platform/event-framework)
-- [​Understand the execution context (Microsoft Dataverse)](/power-apps/developer/data-platform/understand-the-data-context#passing-a-shared-variable-from-the-api)
+- [​Event Framework (Microsoft Dataverse)](/power-apps/developer/data-platform/event-framework)
+- [​Understand the execution context (Microsoft Dataverse)](/power-apps/developer/data-platform/understand-the-data-context)
