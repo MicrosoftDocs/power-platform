@@ -4,7 +4,7 @@ description: Learn how Azure ExpressRoute enables private connectivity to Power 
 #customer intent: As a network administrator, I want to understand how to use Azure ExpressRoute with Microsoft Power Platform so that I can ensure secure and predictable performance for mission-critical applications.  
 author: taiki-yoshida
 ms.topic: overview
-ms.date: 04/02/2025
+ms.date: 04/06/2025
 ms.reviewer: jhaskett-msft
 ms.subservice: architecture-center
 ms.author: tayoshi
@@ -29,18 +29,18 @@ to Microsoft cloud services by using private connectivity.
 Although the name of the service is Azure ExpressRoute, it also supports private connectivity to services built on top of Azure, such as Microsoft 365, Power Platform, and Dynamics 365.
 
 :::image type="complex" source="media/powerplatform-overview.png" alt-text="Diagram of the Microsoft technology ecosystem.":::
-    The foundation layer of the ecoystem consists of identity, security, management, and compliance. Azure spans that foundation. GitHub and Power Platform are built on Azure, and Microsoft 365, LinkedIn, and Microsoft Dynamics 365 are at the top layer.
+    The foundation layer of the ecosystem consists of identity, security, management, and compliance. Azure spans that foundation. GitHub and Power Platform are built on Azure, and Microsoft 365, LinkedIn, and Microsoft Dynamics 365 are at the top layer.
 :::image-end:::
 
 ExpressRoute is a valuable technology, especially when used with Azure infrastructure as a service (IaaS), but its deployment shouldn't be undertaken lightly, particularly for use with Power Platform and Microsoft 365 services. Consider using these services for ExpressRoute only after reviewing your business justification and planning its configuration in your organization.
 
 This section focuses on planning and configuring ExpressRoute for use with Power Platform. Learn more about ExpressRoute in [What is Azure ExpressRoute?](/azure/expressroute/expressroute-introduction)
 
-Typically, an organization will look into ExpressRoute if they have one or more of the following concerns:
+Typically, organizations consider ExpressRoute if they have one or more of the following concerns:
 
-- Making sure their network or internet connection can handle the additional traffic of a rich business application.
-- Managing the predictability of the traffic supporting mission-critical applications—as opposed to other, less critical, internet traffic—to ensure performance for users and the business.
-- Ensuring compliance with a regulatory need for data to never transit across the public internet.
+- Making sure their network or internet connection can handle the added traffic of a rich business application.
+- Managing the predictability of the traffic supporting mission-critical applications—as opposed to other, less critical, internet traffic—is key to ensuring user performance and business success.
+- Ensuring compliance with regulatory requirements that prevent data from transiting across the public internet.  
 
 ExpressRoute can address these concerns, but it's important to understand what ExpressRoute does and doesn't do so that you can accurately judge its value given your situation.
 
