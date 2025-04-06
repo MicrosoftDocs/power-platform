@@ -1,6 +1,6 @@
 ---
 title: Power Pages architecture key concepts and solution ideas
-description: Discover Microsoft Power Pages architectures key concepts and solution ideas to build secure, efficient, and scalable websites with low-code tools.
+description: Discover Microsoft Power Pages architecture key concepts and solution ideas to build secure, efficient, and scalable websites with low-code tools.
 #customer intent: As a Power Platform user, I want to learn about Power Pages key concepts and solution ideas so that I can build secure and efficient websites.
 author: manuelap-msft
 ms.author: mapichle
