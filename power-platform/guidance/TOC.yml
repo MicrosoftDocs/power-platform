@@ -146,8 +146,6 @@
                     href: coe/setup-auditlog-http.md
                   - name: Collect historic audit log events
                     href: coe/setup-auditlog-http-old-data.md
-                  - name: Troubleshooting
-                    href: coe/setup-auditlog-troubleshooting.md
             - name: Set up Power BI reports
               href: coe/setup-powerbi.md
             - name: Set up nurture components

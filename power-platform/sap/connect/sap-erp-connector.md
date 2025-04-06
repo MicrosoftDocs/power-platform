@@ -27,7 +27,7 @@ ms.custom: ignite-2024
 The [SAP ERP connector](/connectors/saperp) for Power Platform helps you seamlessly integrate your SAP systems with Microsoft Power Platform. This article walks you through setting up the connector as a proof of concept.
 
 > [!IMPORTANT]
-> **The settings and recommendations presented in this article are not intended for production use.** Review the [Microsoft Power Platform admin documentation](/power-platform/admin/) and consult your security team, internal policies, and Microsoft Partner for guidance in setting up the SAP ERP connector in a production environment.
+> **The settings and recommendations presented in this article are only intended to help you set up a proof of concept and are not intended for production use.** Review the [Microsoft Power Platform admin documentation](/power-platform/admin/) and consult your security team, internal policies, and Microsoft Partner for guidance in setting up the SAP ERP connector in a production environment.
 
 ## Prerequisites
 
@@ -102,4 +102,5 @@ After you verify that the SAP action is working, learn [best practices](/power-p
 
 ## Next step
 
-[Set up Secure Network Communication](./secure-network-communications.md)
+> [!div class="nextstepaction"]
+> [Set up Secure Network Communication](./secure-network-communications.md)

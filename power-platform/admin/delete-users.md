@@ -14,6 +14,8 @@ search.audienceType:
 
 # Delete users from an environment
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 This article covers the various levels and methods of user deletion in Microsoft Power Platform that involves the following components: Microsoft 365 admin center, Microsoft Entra ID, and Power Platform admin center.
 
 Watch this video for a detailed walkthrough of how to delete users from your environment:

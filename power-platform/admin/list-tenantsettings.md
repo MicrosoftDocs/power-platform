@@ -22,6 +22,8 @@ ms.collection: bap-ai-copilot
 
 # List tenant settings (preview)
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 You can list settings applicable to your tenant.

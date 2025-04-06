@@ -18,6 +18,8 @@ contributors:
 
 # Export data to Application Insights 
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 Learn how to export data to Application Insights from the Power Platform admin center.
 
 ## Prerequisites

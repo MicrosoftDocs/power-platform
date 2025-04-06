@@ -7,7 +7,7 @@ ms.author: paulliew
 ms.reviewer: sericks
 ms.custom: bap-template, NEWPPAC
 ms.topic: conceptual
-ms.date: 02/07/2025
+ms.date: 02/19/2025
 contributors:
   - srpoduri 
   - shahzorkhan123
@@ -15,6 +15,8 @@ contributors:
 ---
 
 # Security roles and privileges
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 To control who can access restricted or sensitive data and resources and what they can do with them, assign users to security roles. This article provides an overview of security roles and their associated privileges.
 
@@ -113,6 +115,10 @@ For each table, select the appropriate type for each privilege. Select **Save** 
 ### Copy table permissions
 
 Setting the privileges for each table in your app can be time-consuming and tedious. To make it easier, you can copy the permissions from one table to one or more others.
+> [!TIP] 
+> Create your new security roles by copying the [predefined template security roles](database-security.md) in an environment.
+> - Use **App Opener** role which has the minimum privileges to run an app.
+> - Use **Basic User** role for the minimum privileges and including privileges to the core business tables.
 
 1. Select a table, and then select **Copy table permissions**
 

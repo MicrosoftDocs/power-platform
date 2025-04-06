@@ -12,6 +12,8 @@ search.audienceType:
 ---
 # Delete environment
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 You can delete an environment to recover storage space and to remove Personally Identifiable Information (PII). 
 
 > [!NOTE]
