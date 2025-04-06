@@ -57,8 +57,8 @@ Knowledge refers to the information and data sources that agents use to provide 
 
 ### Generative AI services 
 
-- **[Azure AI Studio](/azure/ai-foundry/)**: Azure AI Studio lets you build, modify, and launch generative AI apps using Azure's models and tools, including other large language models (LLMs).
-- **[Azure AI Search](/azure/search/search-what-is-azure-search)**: Azure AI Search is used for vectorized indexes for knowledge sources held outside of the knowledge section of Copilot Studio. 
+- **[Azure AI Studio](/azure/ai-foundry/)**: Lets you build, modify, and launch generative AI apps using Azure's models and tools, including other large language models (LLMs).
+- **[Azure AI Search](/azure/search/search-what-is-azure-search)**: Used for vectorized indexes for knowledge sources stored outside the knowledge of Copilot Studio. 
 
 ### Data sources 
 
@@ -99,7 +99,7 @@ This use case illustrates how a national banking company enhances customer exper
 
 ### Reliability
 
-The principle of "garbage in, garbage out" is particularly important for agents and emphasizes the need for high quality data. Ensuring that the information provided to the agent is accurate ensures that the agent can give reliable and correct responses.
+The principle of "garbage in, garbage out" is particularly important for agents and emphasizes the need for high quality data. Providing accurate information to the agent ensures reliable and correct responses.
 
 ### Security 
 
@@ -121,7 +121,7 @@ Learn more:
 ### Experience Optimization 
 
 - Consolidate data into one centralized platform, such as Dataverse, to streamline access and management. Consider using [virtual tables](/power-apps/developer/data-platform/virtual-entities/get-started-ve) to integrate external data.
-- Review documents used for Generative AI knowledge and remove any unnecessary data.
+- Review documents used for generative AI knowledge and remove any unnecessary data.
 - Extend the employee agent to provide more information directly to employees, like human resources information.
 
 Learn more:

@@ -1,5 +1,5 @@
 ---
-title: Use Azure ExpressRoute with Microsoft Power Platform
+title: Use Azure ExpressRoute with Power Platform
 description: Learn how Azure ExpressRoute enables private connectivity to Power Platform, ensuring secure and predictable performance for mission-critical applications.
 #customer intent: As a network administrator, I want to understand how to use Azure ExpressRoute with Microsoft Power Platform so that I can ensure secure and predictable performance for mission-critical applications.  
 author: taiki-yoshida
@@ -17,7 +17,7 @@ ms.custom:
   - ai-seo-date:04/02/2025
 ---
 
-# Use Azure ExpressRoute with Microsoft Power Platform
+# Use Azure ExpressRoute with Power Platform
 
 [Microsoft Azure ExpressRoute](https://azure.microsoft.com/services/expressroute/) provides a way to connect your on-premises network
 to Microsoft cloud services by using private connectivity.
@@ -29,7 +29,7 @@ to Microsoft cloud services by using private connectivity.
 Although the name of the service is Azure ExpressRoute, it also supports private connectivity to services built on top of Azure, such as Microsoft 365, Power Platform, and Dynamics 365.
 
 :::image type="complex" source="media/powerplatform-overview.png" alt-text="Diagram of the Microsoft technology ecosystem.":::
-    The foundation layer of the ecoystem consists of identity, security, management, and compliance. Azure spans that foundation. GitHub and Microsoft Power Platform are built on Azure, and Microsoft 365, LinkedIn, and Microsoft Dynamics 365 are at the top layer.
+    The foundation layer of the ecoystem consists of identity, security, management, and compliance. Azure spans that foundation. GitHub and Power Platform are built on Azure, and Microsoft 365, LinkedIn, and Microsoft Dynamics 365 are at the top layer.
 :::image-end:::
 
 ExpressRoute is a valuable technology, especially when used with Azure infrastructure as a service (IaaS), but its deployment shouldn't be undertaken lightly, particularly for use with Power Platform and Microsoft 365 services. Consider using these services for ExpressRoute only after reviewing your business justification and planning its configuration in your organization.

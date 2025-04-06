@@ -24,7 +24,7 @@ ms.custom:
  
 # Ticket management system with Copilot Studio agents  
 
-This article outlines the architecture and workflow of a ticket management system for a cinema company, focusing on improving customer and employee experiences through automation and integration with Microsoft tools.  
+This article outlines the architecture and workflow of a cinema ticket management system that uses automation and integration with Microsoft tools to improve customer and employee experiences.
 
 - **Microsoft Teams integration**: Employees can interact with a Copilot Studio agent in Microsoft Teams for seamless chat support. They can initiate ticket refund processes without accessing legacy systems directly.  
 - **Autonomous agent via Microsoft Outlook**: Outlook provides access to autonomous agents that handle ticket refund requests based on email workflows, minimizing the need for legacy system navigation.  
@@ -34,8 +34,6 @@ This article outlines the architecture and workflow of a ticket management syste
 [!INCLUDE [pp-arch-solution-idea-tip](../../includes/pp-arch-solution-idea-tip.md)]
 
 ## Architecture diagram  
-
-<!-- question from manuela: I wasn't sure what the formatting was for annotating images so I added the description in italic below but please let me know if there's a different standard -->
 
 This architecture diagram shows a Copilot Studio "guest service" agent used by employees via Teams.
 
@@ -57,11 +55,11 @@ This architecture diagram shows how a user-based and an autonomous Copilot Studi
 
 ### Agent  
 
-- **Microsoft Outlook (autonomous agent)**: Outlook provides seamless access to autonomous agents from Copilot Studio, enabling agents to be triggered directly from the employee's email workflow. This approach, unlike the Microsoft Teams method, autonomously processes ticket refund requests based on emails, eliminating the need for employees to navigate legacy systems. Learn more: [Perform actions in response to an event](/microsoft-copilot-studio/authoring-triggers-about)  
+- **Microsoft Outlook (autonomous agent)**: Outlook provides seamless access to autonomous agents from Copilot Studio, enabling agents to be triggered directly from the employee's email workflow. This approach, unlike the Microsoft Teams method, autonomously processes ticket refund requests based on emails, eliminating the need for employees to navigate legacy systems. Learn more: [Events trigger overview](/microsoft-copilot-studio/authoring-triggers-about)  
 
 ### Cloud processing  
 
-- **[Power Automate cloud flows](/power-automate/overview-cloud)**: Using Power Automate cloud flows, the agents gather and check information from Dataverse and trigger Power Automate Desktop RPA flows (desktop processing).  
+- **[Power Automate cloud flows](/power-automate/overview-cloud)**: Using Power Automate cloud flows, the agents gather and check information from Dataverse and trigger Power Automate Desktop robotic process automation (RPA) flows (desktop processing).  
 
 ### Desktop processing  
 
@@ -73,7 +71,7 @@ This architecture diagram shows how a user-based and an autonomous Copilot Studi
 
 ### Data sources  
 
-- **[Microsoft Dataverse](/power-apps/maker/data-platform/data-platform-intro)**: Microsoft Dataverse serves as the central repository for ticket, seat, refund, and metric data, including user feedback. It's a foundational part of the Power Platform and integrates seamlessly with the technology.  
+- **[Microsoft Dataverse](/power-apps/maker/data-platform/data-platform-intro)**: Microsoft Dataverse serves as the central repository for ticket, seat, refund, and metric data, including user feedback. Dataverse is a core component of Power Platform and integrates seamlessly with its features.  
 
 ### Platform governance, compliance, and fundamentals  
 
@@ -91,7 +89,7 @@ This architecture diagram shows how a user-based and an autonomous Copilot Studi
 This use case illustrates how a cinema company enhances customer and employee experiences by streamlining ticket management. Employees can process ticket issues, such as refunds, directly in Microsoft Teams or automatically through an autonomous agent, minimizing the need to interact with or replace legacy applications.  
 
 > [!NOTE]  
-> This solution idea is inspired by Cineplex, one of Canada's largest movie theater chains, which streamlined business processes by using Power Platform to develop innovative automation solutions for finance, guest services, and other departments. Learn more:[Cineplex automates business processes with generative AI and Power Automate](../../guidance/case-studies/automate-business-processes.md)
+> This solution idea is inspired by Cineplex, one of Canada's largest movie theater chains, which streamlined business processes by using Power Platform to develop innovative automation solutions for finance, guest services, and other departments. Learn more: [Cineplex automates business processes with generative AI and Power Automate](../../guidance/case-studies/automate-business-processes.md)
 
 ### Business problem  
 
@@ -112,7 +110,7 @@ To maintain efficiency and performance, Azure virtual machines can be scaled dyn
 - Implementing row-level security in Dataverse ensures that only authorized users can access specific information.  
 - Azure Key Vault stores and manages credentials, API keys, and other secrets, preventing exposure in automation workflows.  
 - Data loss prevention (DLP) policies are defined by administrators in the Power Platform admin center to govern agent capabilities, including authentication, knowledge sources, and connector usage.  
-- User authentication for agents can be configured to require user login via Microsoft Entra ID or other OAuth2 identity providers, ensuring that only authenticated users can interact with them.  
+- User authentication for agents can be configured to require user sign-in via Microsoft Entra ID or other OAuth2 identity providers, ensuring that only authenticated users can interact with them.  
 - Admins have full visibility into maker activities through audit logs in Microsoft Purview and can monitor agent activities via Microsoft Sentinel, enhancing oversight and compliance.  
 
 Learn more:  

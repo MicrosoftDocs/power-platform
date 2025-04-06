@@ -27,11 +27,11 @@ ms.custom:
 Using the Hosted RPA (robotic process automation) feature, organizations can reduce the time and effort needed to procure, set up, operationalize, and maintain infrastructure for RPA automations. Static bot infrastructure can be challenging due to the need to provision, set up, and maintain the machines while ensuring maximum utilization by the RPA operations team. Cloud-based Microsoft Power Automate solves these issues with its Hosted RPA capability, enabling RPA practitioners to build, test, and run large-scale automations efficiently.
 
 > [!TIP]
-> The article provides an example scenario and visual representation of how to ​​scale RPA operations using Hosted RPA in Microsoft Power Automate for desktop​. This solution is a generalized example scenario architecture, which can be used for many different scenarios and industries.
+> The article provides an example scenario and visual representation of how to ​​scale RPA operations using Hosted RPA in Power Automate for desktop​. This solution is a generalized example scenario architecture, which can be used for many different scenarios and industries.
 
 ## Architecture diagram
 
-:::image type="content" source="media/rpa-scale-operations/rpa-scale-operations.png" alt-text="Architecture diagram showing ​​how to scale RPA operations using Hosted RPA in Microsoft Power Automate for desktop." lightbox="media/rpa-scale-operations/rpa-scale-operations.png":::
+:::image type="content" source="media/rpa-scale-operations/rpa-scale-operations.png" alt-text="Architecture diagram showing ​​how to scale RPA operations using Hosted RPA in Power Automate for desktop." lightbox="media/rpa-scale-operations/rpa-scale-operations.png":::
 
 <!-- awaiting larger image to be provided -->
 
@@ -83,9 +83,9 @@ Consider these use cases:
 
 ## Next steps
 
-Review [Hosted machine groups in Power Automate](/power-automate/desktop-flows/hosted-machine-groups) for details on how to get started with Hosted RPA in Microsoft Power Automate.
+Review [Hosted machine groups in Power Automate](/power-automate/desktop-flows/hosted-machine-groups) for details on how to get started with Hosted RPA in Power Automate.
 
-The following are the high-level steps to set up a solution architecture that uses Hosted RPA in Microsoft Power Automate:
+The following are the high-level steps to set up a solution architecture that uses Hosted RPA in  Power Automate:
 
 1. Create Azure resources: Review [Create an Azure compute gallery in Azure and add an image](/power-automate/desktop-flows/hosted-machine-groups#create-an-azure-compute-gallery-in-azure-and-add-an-image) to create the required Azure resources and assign roles/permissions.
     - Azure Compute Gallery (ACG)

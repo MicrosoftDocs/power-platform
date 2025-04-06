@@ -26,7 +26,7 @@ Integrating Microsoft Power Platform with SAP enhances data management and autom
 
 ## Architecture diagram
 
-:::image type="content" source="media/arch-pattern-sap/architecture.png" alt-text="Architecture diagram that shows a Microsoft Power Platform integration with a typical SAP landing zone." lightbox="media/arch-pattern-sap/architecture.png":::
+:::image type="content" source="media/arch-pattern-sap/architecture.png" alt-text="Architecture diagram that shows a Power Platform integration with a typical SAP landing zone." lightbox="media/arch-pattern-sap/architecture.png":::
 
 ## Workflow
 

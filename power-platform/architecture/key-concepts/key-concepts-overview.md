@@ -1,5 +1,5 @@
 ---
-title: Microsoft Power Platform and Copilot Studio architecture key concepts overview
+title: Power Platform and Copilot Studio architecture key concepts overview
 description: Learn foundational principles to design scalable and efficient solutions with Microsoft Power Platform and Copilot Studio.
 #customer intent: As a Power Platform user, I want to understand architecture key concepts of Microsoft Power Platform and Copilot Studio so that I can design scalable and efficient solutions.  
 author: manuelap-msft

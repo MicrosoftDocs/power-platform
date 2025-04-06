@@ -18,7 +18,7 @@ search.audienceType:
 
 # Property rental portal with AI-driven search and payment processing
 
-In this article, you learn how to build a comprehensive rental portal that uses AI-driven search capabilities and seamless payment processing. Using Power Platform and Microsoft Azure, this solution integrates various components to provide a robust and user-friendly experience for both users and administrators. From browsing and reserving listings to managing payments and generating insightful reports, this architecture ensures a well-rounded and efficient rental management system. 
+In this article, you learn about a rental property portal that implements AI-driven search capabilities and seamless payment processing. Using Power Platform and Microsoft Azure, this solution integrates various components to provide a robust and user-friendly experience for both users and administrators. From browsing and reserving listings to managing payments and generating insightful reports, this architecture ensures a well-rounded and efficient rental management system. 
 
 [!INCLUDE [pp-arch-solution-idea-tip](../../includes/pp-arch-solution-idea-tip.md)]
 
@@ -63,7 +63,7 @@ In this article, you learn how to build a comprehensive rental portal that uses 
     - The user engages with the portal agent for assistance.
     - The bot uses Copilot Studio, which is configured to search the portal content to understand and respond to user queries.
 
-1. **Searches listings**
+1. **AI agent searches listings**
     - The agent extracts search terms from the user's query using an AI Builder prompt.
     - The agent uses the Dataverse connector to search for listings matching the criteria.
 
@@ -108,7 +108,7 @@ In this article, you learn how to build a comprehensive rental portal that uses 
 
 1. **[Microsoft Dataverse](/power-apps/maker/data-platform/)**: A cloud-based storage space that lets you securely store and manage data used by business applications. It stores listing and reservation data, including property details, user information, and reservation statuses.
 
-1. **[Power Apps](/power-apps/)**: Power Apps is a suite of apps, services, connectors, and a data platform that provides a rapid application development environment to build custom apps for your business needs. It's used to create custom applications for managing rental property listings and tracking tenant interactions efficiently.  
+1. **[Power Apps](/power-apps/)**: A suite of apps, services, connectors, and a data platform that provides a rapid application development environment to build custom apps for your business needs. It's used to create custom applications for managing rental property listings and tracking tenant interactions efficiently.  
 
 1. **[Power Pages](/power-pages/)**: A platform for building secure, low-code websites. Lets users browse listings, make reservations, and view personalized property recommendations. Users authenticate via Power Pages, ensuring secure access to their data.  
 
@@ -120,7 +120,7 @@ In this article, you learn how to build a comprehensive rental portal that uses 
 
 1. **[Power BI](/power-bi/)**: A business analytics service that provides interactive visualizations and business intelligence capabilities. It provides insights into listing performance, user interactions, and reservation trends. Property managers use dashboards to make data-driven decisions. Data held in Application Insights and Azure SQL is joined with Dataverse reservation and property data.
 
-1. **[GitHub Actions](/power-platform/alm/devops-github-actions)**: GitHub Actions are used for continuous integration and continuous delivery (CI/CD), automating workflows to ensure consistent and efficient testing, validation, and deployment of changes. Automated builds and tests are triggered on code pushes, successful builds are deployed to staging and production environments, and unit tests are integrated into the pipelines to maintain code quality and catch issues early.
+1. **[GitHub Actions](/power-platform/alm/devops-github-actions)**: Used for continuous integration and continuous delivery (CI/CD), automating workflows to ensure consistent and efficient testing, validation, and deployment of changes. Automated builds and tests are triggered on code pushes, successful builds are deployed to staging and production environments, and unit tests are integrated into the pipelines to maintain code quality and catch issues early.
 
 ## Use case details
 

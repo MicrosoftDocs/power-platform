@@ -99,7 +99,7 @@ To apply distributed tracing to calls to the [Dataverse Web API](/power-apps/dev
 
 ### Invoke from other Power Platform services
 
-Imagine that you want to allow other Power Platform services like Microsoft Copilot Studio, Power Apps, or Power Automate cloud flows to be included in the overall distributed tracing solution. Consider [invoking a function from an app, flow, code, or another function](/power-apps/maker/data-platform/functions-invoke) to call the Dataverse custom APIs, discussed in this section.
+Imagine that you want to allow other Power Platform services like Copilot Studio, Power Apps, or Power Automate cloud flows to be included in the overall distributed tracing solution. Consider [invoking a function from an app, flow, code, or another function](/power-apps/maker/data-platform/functions-invoke) to call the Dataverse custom APIs, discussed in this section.
 
 ### Dataverse messages for entities or custom APIs
 

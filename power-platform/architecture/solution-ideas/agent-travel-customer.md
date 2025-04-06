@@ -23,9 +23,9 @@ ms.custom:
 
 # Travel concierge using generative AI with Copilot Studio
 
-This article outlines a solution idea for a travel company's customer service, employing AI-driven solutions to enhance customer interactions and streamline information access.
+This article outlines a solution idea for a travel company that uses AI-driven solutions to enhance customer interactions and streamline information access.
 
-- **AI-driven customer support**: The Microsoft Copilot Studio agent is designed to assist customers with travel-related inquiries, including reservation checks and balance inquiries, reducing the need for call center interactions.
+- **AI-driven customer support**: The Copilot Studio agent is designed to assist customers with travel-related inquiries, including reservation checks and balance inquiries, reducing the need for call center interactions.
 - **Data management**: The architecture uses Microsoft Dataverse as a central repository for customer and location data, and a SQL database for tracking reservations and transactions.
 - **Platform governance**: The Power Platform admin center is used for managing and monitoring components to maintain operational efficiency, with Microsoft Entra ID ensuring secure access to sensitive customer data.  
 - **Performance optimization**: The architecture emphasizes experience optimization through data unification, sentiment analysis, and user personalization.
@@ -60,7 +60,7 @@ Knowledge refers to the information and data sources that agents use to provide 
 
 ### Processing 
 
-- **[AI Builder models](/ai-builder/)**: For adding custom sentiment models. 
+- **[AI Builder](/ai-builder/)**: For adding custom sentiment models. 
 - **[Power Automate cloud flows](/power-automate/overview-cloud)**: Automation of workflows such as travel itineraries, payment dates, and reservation status. 
 
 ### Data sources 
@@ -84,12 +84,12 @@ Knowledge refers to the information and data sources that agents use to provide 
 This use case is based on a travel company's approach to improving their customer experience with customer service, information, and conversion processes.  
 
 > [!NOTE]
-> This solution idea is inspired by Holland America, who developed a virtual agent using Microsoft Copilot Studio that acts as a digital concierge on their website to support new and existing customers and travel advisors. Learn more: [Holland America customer story](https://www.microsoft.com/customers/story/19787-holland-america-dataverse)
+> This solution idea is inspired by Holland America Line, who developed a virtual agent using Microsoft Copilot Studio that acts as a digital concierge on their website to support new and existing customers and travel advisors. Learn more: [Holland America Line customer story](https://www.microsoft.com/customers/story/19787-holland-america-dataverse)
 
 ### Business problem 
 
-- A significant number of customers call the call center to request information that is readily available on the website.
-- Website information is stored in various locations, often making it difficult for customers to find the information they need.
+- Customers call the call center to request information that is readily available on the website.
+- Website information is stored in various locations, making it difficult for customers to find the information they need.
 - Many customers simply want to check their remaining balance, which leads to numerous customer service interactions and consumes time as employees locate bookings.  
 
 ## Considerations
@@ -98,7 +98,7 @@ This use case is based on a travel company's approach to improving their custome
 
 ### Reliability
 
-The principle of "garbage in, garbage out" is particularly important for agents and emphasizes the need for high quality data. Ensuring that the information provided to the agent is accurate ensures that the agent can give reliable and correct responses.
+The principle of "garbage in, garbage out" is particularly important for agents and emphasizes the need for high quality data. Providing accurate information to the agent ensures reliable and correct responses.
 
 ### Security 
 
@@ -119,7 +119,7 @@ Learn more:
 ### Experience Optimization 
 
 - Consolidate data into one centralized platform, such as Dataverse, to streamline access and management. Consider using [virtual tables](/power-apps/developer/data-platform/virtual-entities/get-started-ve) to integrate external data.
-- Review documents used for Generative AI Knowledge and remove any data not required.
+- Review documents used for generative AI Knowledge and remove any data not required.
 - Request the user's name at the start of the agent experience to build a personalized approach. 
 
 Learn more:

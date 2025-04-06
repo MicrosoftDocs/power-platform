@@ -1,7 +1,7 @@
 ---
-title: Microsoft Copilot Studio architectures and solution ideas
-description: Learn about Microsoft Copilot Studio reference architectures and solution ideas to create intelligent applications and solutions with advanced AI capabilities.
-#customer intent: As a Power Platform user, I want to understand Microsoft Copilot Studio key concepts, reference architectures, and solution ideas so that I can create intelligent applications with advanced AI capabilities.
+title: Copilot Studio architecture key concepts and solution ideas
+description: Learn about Microsoft Copilot Studio architectures concepts and solution ideas to create intelligent applications and solutions with advanced AI capabilities.
+#customer intent: As a Power Platform user, I want to understand Microsoft Copilot Studio key concepts and solution ideas so that I can create intelligent applications with advanced AI capabilities.
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
@@ -10,7 +10,7 @@ ms.topic: article
 ms.date: 04/03/2025
 ---
 
-# Microsoft Copilot Studio reference architectures and solution ideas
+# Microsoft Copilot Studio architecture key concepts and solution ideas
 
 Microsoft Copilot Studio is a graphical, low-code tool for both creating an agent—including building automation with Power Automate—and extending a Microsoft 365 Copilot with your own enterprise data and scenarios. Copilot Studio is a powerful platform that enables the creation of intelligent applications and solutions by integrating advanced AI capabilities. 
 
@@ -19,7 +19,6 @@ By understanding reference architectures and exploring solution ideas, you can u
 In this article, we look at:
 
 - **Key concepts**: Learn about architecture key concepts that help you build robust, efficient, and maintainable solutions with Copilot Studio.
-- **Reference architectures**: Explore foundational reference architectures that support building well-architected solutions with Copilot Studio, including best practices for scalability, security, and performance.
 - **Solution ideas**: Discover a range of solution ideas that demonstrate the versatility and power of Copilot Studio.
 
 ## Key concepts

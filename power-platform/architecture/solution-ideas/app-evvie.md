@@ -21,7 +21,7 @@ The Enterprise Visual Vehicle Inspection Engine (EVVIE) uses AI and Microsoft Po
 
 This article provides an overview of EVVIE's architecture, workflow, and key components, offering insights into how this innovative solution can streamline vehicle inspections and maintenance.
 
-For a demo and more information about how EVVIE, visit [aka.ms/EVVIE](https://aka.ms/EVVIE).
+For a demo and more information about EVVIE, visit [aka.ms/EVVIE](https://aka.ms/EVVIE).
 
 [!INCLUDE [pp-arch-solution-idea-tip](../../includes/pp-arch-solution-idea-tip.md)]
 
@@ -51,11 +51,11 @@ At a high level, EVVIE's internal process is as follows:
 - [Power Apps](/power-apps/): The applications presented, both to the staff in the field inspecting the vehicles and the administrative staff who review the inspections, are built in Power Apps, Microsoft's no-code/low-code app development framework.
 - [Custom connector](/connectors/custom-connectors/): A custom connector lets the EVVIE mobile vehicle inspection app (used by staff inspecting vehicles in the field) call a back-end service that uses advanced AI to assess the provided photos.
 - [Azure Functions](/azure/azure-functions/): Azure Functions, Microsoft's event-driven serverless compute platform, act as a web API that the EVVIE Power App can call using an HTTP request through the custom connector. The Azure Function receives the images through the API call, uses an advanced AI model to assess damage, and returns the assessment to the requestor (the Power App).
-- [Azure OpenAI service](/azure/ai-services/openai/overview): EVVIE uses a multimodal AI model to assess the damage in provided images and classify it into three fields: severity level (1-5), area of vehicle (that is, doors, windshield, front bumper), and description of damage. While any future multimodal large language model can be used (that is, "o1" or "o3" once they're available), GPT-4o is used as of the time of this writing.
+- [Azure OpenAI service](/azure/ai-services/openai/overview): EVVIE uses a multimodal AI model to assess the damage in provided images and classify it into three fields: severity level (1-5), area of vehicle (that is, doors, windshield, front bumper), and description of damage. While any future multimodal large language model can be used (that is, "o1" or "o3" once they're widely available), GPT-4o is used as of the time of this writing.
 
 ## Use case details
 
-EVVIE helps organizations with large vehicle fleets manage regular inspections and maintenance. RRoutine inspections take time and distract staff from more valuable work.  
+EVVIE helps organizations with large vehicle fleets manage regular inspections and maintenance. Routine inspections take time and distract staff from more valuable work.  
 
 - To alleviate this burden and save time, EVVIE uses advanced multimodal generative AI to automatically assess and log vehicle damage. Instead of manually documenting each instance of damage, staff members provide EVVIE with a photo. From this single image, EVVIE assesses the damage, logs its location on the vehicle, determines the severity level, and provides a brief description.
 
@@ -73,9 +73,9 @@ Each Microsoft cloud-based component within EVVIE's architecture is designed for
 
 ### Security
 
-For EVVIE's proof of concept build, the Azure Function-based web API that interfaces with the Power App doesn't include any security protocols. Anyone aware of the unique API endpoints (URLs) can potentially access EVVIE's backend service.
+For EVVIE's proof of concept build, the Azure Function-based web API that interfaces with the Power App doesn't include any security protocols. Anyone aware of the unique API endpoints (URLs) can potentially access EVVIE's back-end service.
 
-In a production deployment, it's essential for the systems integrator to implement a standard authentication layer, such as key-based authentication through Azure API Management. Such security measures ensure that the backend API service is only accessed as intended by the EVVIE front-end Power App.
+In a production deployment, it's essential for the systems integrator to implement a standard authentication layer, such as key-based authentication through Azure API Management. Such security measures ensure that the back-end API service is only accessed as intended by the EVVIE front-end Power App.
 
 ### Operational Excellence
 

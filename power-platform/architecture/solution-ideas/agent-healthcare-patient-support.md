@@ -40,7 +40,7 @@ Data sources include Microsoft Dataverse, Azure Data Lake, and Azure Synapse Ana
 
 ### Processing
 
-- **[AI Builder model](/ai-builder/).** Selected for its low-code AI capabilities, which enable business users to build and integrate AI models without coding expertise.
+- **[AI Builder](/ai-builder/):** Selected for its low-code AI capabilities, which enable business users to build and integrate AI models without coding expertise.
   - Patient feedback sentiment model: Analyzes patient feedback to measure satisfaction.
   - Symptom analysis model: Identifies and processes patient-reported symptoms for better diagnosis and query resolution.
 
@@ -48,8 +48,8 @@ Data sources include Microsoft Dataverse, Azure Data Lake, and Azure Synapse Ana
 
 ### User interface
 
-- **[Patient access portal](/power-pages/)**: Provides a user-friendly interface for patients to manage their healthcare interactions. Built on Power Pages to leverage its rapid development capabilities and seamless integration with other Power Platform components.
-- **[Patient interactions agent](/microsoft-copilot-studio/)**: Uses AI-driven agents to assist with patient queries and appointment scheduling. Chosen for its ability to provide real-time responses and reduce human intervention. Built on Microsoft Copilot Studio for rapid development, knowledge retrieval (RAG) capabilities, and seamless integration with other Power Platform components.
+- **Patient access portal**: Provides a user-friendly interface for patients to manage their healthcare interactions. Built on [Power Pages](/power-pages/) to leverage its rapid development capabilities and seamless integration with other Power Platform components.
+- **Patient interactions agent**: Uses AI-driven agents to assist with patient queries and appointment scheduling. Chosen for its ability to provide real-time responses and reduce human intervention. Built on [Microsoft Copilot Studio](/microsoft-copilot-studio/) for rapid development, knowledge retrieval (Retrieval-Augmented Generation or RAG) capabilities, and seamless integration with other Power Platform components.
 - **[Power BI dashboards](/power-bi/)**: Visualizes operational and patient-centric data to provide actionable insights. Chosen for its integration with Dataverse and ability to create interactive, real-time dashboards.
 
 ### Platform governance, compliance, and fundamentals
@@ -62,9 +62,9 @@ Data sources include Microsoft Dataverse, Azure Data Lake, and Azure Synapse Ana
 
 ## Use case details
 
-The healthcare patient support agent aims to improve the delivery of efficient and personalized healthcare support to patients, while also reducing the administrative burden on healthcare providers.
+The Healthcare Patient Support Agent aims to improve the delivery of efficient and personalized healthcare support to patients, while also reducing the administrative burden on healthcare providers.
 
-The business problems addressed by this architecture include:
+### Business problem
 
 - High administrative burden on healthcare providers due to manual appointment scheduling, reminders, and query resolution, resulting in inefficiencies and increased operational costs. 
 - Disconnected patient communication channels cause delays in responses and negatively impact patient experiences.
@@ -87,7 +87,7 @@ The business problems addressed by this architecture include:
 
 ### Experience Optimization
 
-- Designed the patient access portal with a responsive UI for easy use across devices. 
+- Designed the Patient access portal with a responsive UI for easy use across devices. 
 - Integrated natural language processing and knowledge source retrieval in the Patient interactions agent to improve query resolution accuracy.
 - Personalized patient interactions using AI Builder models to enhance satisfaction.
 

@@ -53,7 +53,7 @@
         href: reference-architectures/arch-pattern-sap.md
       - name: ​​Integrate Microsoft Fabric Lakehouse data using Dataverse virtual tables
         href: reference-architectures/app-integrate-lakehouse.md
-      - name: Use REST APIs to extend canvas functionality of canvas apps
+      - name: Use REST APIs to extend functionality of canvas apps
         href: reference-architectures/custom-connector-canvas.md
       - name: ​Use the Dataverse connector with canvas apps​ 
         href: reference-architectures/dataverse-canvas-app.md

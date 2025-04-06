@@ -16,7 +16,7 @@ ms.custom:
 
 # Microsoft Dataverse reference architectures and solution ideas
 
-Microsoft Dataverse is an easy-to-use, easy-to-manage, compliant, secure, scalable, and globally available SaaS data service. Dataverse empowers organizations to work with any type of data and any type of app, and use the data within it to gain insights and drive business action. As part of Microsoft Power Platform, Dataverse requires no or little code to be written, so it can easily be used by everyone from knowledge workers to professional developers. Knowing that it's built on Azure, organizations choosing Dataverse can be confident that it's globally available, compliant, scalable, and secure.
+Microsoft Dataverse is an easy-to-use, easy-to-manage, compliant, secure, scalable, and globally available SaaS data service. Dataverse empowers organizations to work with any type of data and any type of app, and use the data within it to gain insights and drive business action. As part of Power Platform, Dataverse requires no or little code to be written, so it can easily be used by everyone from knowledge workers to professional developers. Knowing that it's built on Azure, organizations choosing Dataverse can be confident that it's globally available, compliant, scalable, and secure.
 
 By understanding reference architectures and exploring solution ideas, you can unlock new opportunities for automation, optimization, and innovation within your organization.
 

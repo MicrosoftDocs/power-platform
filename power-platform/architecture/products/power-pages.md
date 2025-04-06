@@ -1,7 +1,7 @@
 ---
-title: Power Pages reference architectures and solution ideas
-description: Discover Microsoft Power Pages reference architectures and solution ideas to build secure, efficient, and scalable websites with low-code tools.
-#customer intent: As a Power Platform user, I want to learn about Power Pages key concepts, reference architectures, and solution ideas so that I can build secure and efficient websites.
+title: Power Pages architecture key concepts and solution ideas
+description: Discover Microsoft Power Pages architectures key concepts and solution ideas to build secure, efficient, and scalable websites with low-code tools.
+#customer intent: As a Power Platform user, I want to learn about Power Pages key concepts and solution ideas so that I can build secure and efficient websites.
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
@@ -14,7 +14,7 @@ ms.custom:
   - ai-seo-date:04/03/2025
 ---
 
-# Power Pages reference architectures and solution ideas
+# Power Pages architecture key concepts and solution ideas
 
 Microsoft Power Pages is a secure, enterprise-grade, low-code software as a service (SaaS) platform for creating, hosting, and administering modern external-facing business websites. Whether you're a low-code maker or a professional developer, Power Pages empowers you to rapidly design, configure, and publish websites that work across web browsers and devices.
 
@@ -23,7 +23,6 @@ By understanding reference architectures and exploring solution ideas, you can u
 In this article, we look at:
 
 - **Key concepts:** Learn about architecture key concepts that help you build robust, efficient, and maintainable solutions with Power Apps.
-- **Reference architectures**: Explore foundational reference architectures that support building well-architected solutions with Power Apps.
 - **Solution ideas**: Discover a range of solution ideas that demonstrate the versatility and power of Power Apps.
 
 ## Key concepts
