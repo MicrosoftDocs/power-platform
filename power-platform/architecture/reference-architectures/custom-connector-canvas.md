@@ -1,7 +1,7 @@
 ---
 title: Use REST APIs to extend the functionality of canvas apps
 description: Learn how to extend Power Apps canvas apps using REST APIs to simplify logic, centralize business processes, and integrate multiple data sources efficiently.
-#customer intent: As a Power-Platform user, I want to use REST APIs in my canvas apps so that I can centralize business logic and simplify app formulas.
+#customer intent: As a Power Platform user, I want to use REST APIs in my canvas apps so that I can centralize business logic and simplify app formulas.
 author: slaouist
 ms.subservice: architecture-center
 ms.topic: example-scenario

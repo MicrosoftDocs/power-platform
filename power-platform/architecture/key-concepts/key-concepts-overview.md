@@ -5,7 +5,7 @@ description: Learn foundational principles to design scalable and efficient solu
 author: manuelap-msft
 ms.subservice: architecture-center
 ms.topic: overview
-ms.date: 04/02/2025
+ms.date: 04/06/2025
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
 contributors:
@@ -27,4 +27,4 @@ Architecture key concepts are the foundational principles and recommendations th
 | --- | --- |
 | **[ExpressRoute and Power Platform](expressroute/overview.md)** | Learn how to use Microsoft Azure ExpressRoute to connect your on-premises network to Microsoft cloud services by using private connectivity. |
 | **[Dataverse auditing](dataverse-auditing.md)** | Track and record changes to data, user activities, and system events with Dataverse auditing.|
-| **[Distributed tracing across multiple services](distributed-tracing.md)** | Learn how to achieve comprehensive observability across multiple services, including those within Power Platform, Azure, and Dynamics 365. |
+| **[Distributed tracing across multiple services](distributed-tracing.md)** | Learn how to achieve comprehensive observability across services like Power Platform, Azure, and Dynamics 365. |

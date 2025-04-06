@@ -26,7 +26,7 @@ In this article, we look at:
 
 | Title | Description |
 | --- | --- |
-| **[Distributed tracing across multiple services](../key-concepts/distributed-tracing.md)** | Learn how to achieve comprehensive observability across multiple services, including those within Power Platform, Azure, and Dynamics 365. |
+| **[Distributed tracing across multiple services](../key-concepts/distributed-tracing.md)** | Learn how to achieve observability across services like Power Platform, Azure, and Dynamics 365. |
 | **[Coding guidelines](/power-automate/guidance/coding-guidelines/)** | Learn about standards for naming objects, collections, and variables, and guidelines for developing consistent, performant, and easily maintainable flows. |
 | **[Robotic process automation with SAP](/power-automate/guidance/rpa-sap-playbook/introduction)** | Prototype the automation of an example SAP scenario with RPA. |
 
@@ -35,12 +35,11 @@ In this article, we look at:
 | Title | Description |
 | --- | --- |
 | **[Streamline document processing with AI Builder](../reference-architectures/ai-document-processing.md)** | Streamline document processing and automate data extraction from various documents such as forms, invoices, and purchase orders |
-| **[Legacy data integration](../reference-architectures/app-legacy-data-integration.md)** | Streamline the process of integrating legacy data with modern platforms. |
+| **[Integrate legacy data with Power Automate and SharePoint](../reference-architectures/app-legacy-data-integration.md)** | Streamline the process of integrating legacy data with modern platforms. |
 | **[​Integrate Microsoft Fabric Lakehouse data using Microsoft Dataverse virtual tables](../reference-architectures/app-integrate-lakehouse.md)** | Gather data from multiple internal systems into a Microsoft Fabric Lakehouse, and consume the data in Power Platform apps and automations using Dataverse virtual tables. |
-| **[Integrate Microsoft Power Platform with SAP](../reference-architectures/arch-pattern-sap.md)** | Learn about the architecture, workflows, and connectivity methods available to integrate Power Platform with SAP to ensure a smooth integration process. |
-| **[Dataverse background operations](../reference-architectures/dataverse-background-operations.md)** | Use custom APIs to define custom messages and implement business logic through plug-ins, allowing for background processing that eliminates the need for a persistent connection during execution. |
-| **[Integrating Microsoft Power Platform with SAP](../reference-architectures/arch-pattern-sap.md)** | Connect Microsoft Power Platform with SAP to enhance data management and automation capabilities within your organization. |
-| **[​Scale robotic process automation operations using Hosted RPA in Microsoft Power Automate for desktop​](../reference-architectures/rpa-scale-operations.md)** | Learn how to use the Hosted RPA feature to reduce the time and effort needed to procure, set up, operationalize, and maintain infrastructure for RPA automations.|
+| **[Integrate Power Platform with SAP](../reference-architectures/arch-pattern-sap.md)** | Learn about the architecture, workflows, and connectivity methods available to integrate Power Platform with SAP to ensure a smooth integration process. |
+| **[Leverage Dataverse background operations](../reference-architectures/dataverse-background-operations.md)** | Use custom APIs to define custom messages and implement business logic through plug-ins, allowing for background processing that eliminates the need for a persistent connection during execution. |
+| **[​Scale robotic process automation operations using Hosted RPA in Microsoft Power Automate for desktop​](../reference-architectures/rpa-scale-operations.md)** | Use Hosted RPA to reduce the time and effort needed to procure, set up, operationalize, and maintain infrastructure for RPA automations.|
 
 ## Solution ideas
 

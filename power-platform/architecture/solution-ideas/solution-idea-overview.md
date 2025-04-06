@@ -1,13 +1,13 @@
 ---
 title: Solution ideas for Microsoft Power Platform and Copilot Studio
 description: Discover practical solution ideas for Microsoft Power Platform and Copilot Studio to address various business needs.
-#customer intent: As a Power-Platform user, I want to explore solution ideas for Microsoft Power Platform and Copilot Studio so that I can address various business needs.
+#customer intent: As a Power Platform user, I want to explore solution ideas for Microsoft Power Platform and Copilot Studio so that I can address various business needs.
 author: manuelap-msft
 ms.subservice: architecture-center
 ms.topic: overview
-ms.date: 04/02/2025
+ms.date: 04/06/2025
 ms.author: mapichle
-ms.reviewer: pankajsharma2087
+ms.reviewer: jhaskett-msft
 contributors: 
   - manuelap-msft
 search.audienceType: 
@@ -23,9 +23,9 @@ Explore these solution ideas to gain valuable insights and practical knowledge t
 
 | Title | Description |
 | --- | --- |
-| **[Healthcare Patient Support Agent architecture](agent-healthcare-patient-support.md)** | Streamline patient interactions and reduce administrative burdens for healthcare providers |
-| **[Property rental portal with AI-driven search and payment processing](agent-rental-portal.md)** | Build a comprehensive rental portal that uses AI-driven search capabilities and seamless payment processing. |
-| **[Enterprise Visual Vehicle Inspection Engine](app-evvie.md)** | Inspect vehicles and assess damage using generative AI and Power Platform. |
-| **[Custom contact center solution with Copilot Studio agent](agent-custom-contact-center.md)** | Enhance customer service efficiency through integrated platforms and technologies. |
-| **[Travel concierge using generative AI with Copilot Studio](agent-travel-customer.md)** | Employ an AI-driven solution to enhance customer interactions and streamline information access. |
-| **[Ticket management system with Copilot Studio](agent-ticket-and-refund.md)** | Improve ticket refund and management processes by deploying both a user-based and autonomous agent to integrate with legacy systems. |
+| **[Healthcare Patient Support Agent architecture](agent-healthcare-patient-support.md)** | Streamlines patient interactions and reduces administrative burdens for healthcare providers. |
+| **[Property rental portal with AI-driven search and payment processing](agent-rental-portal.md)** | Integrates various components to provide a robust and user-friendly experience for both users and administrators, from browsing and reserving listings to managing payments and generating reports. |
+| **[Enterprise Visual Vehicle Inspection Engine](app-evvie.md)** | Using generative AI and Power Platform, EVVIE revolutionizes the vehicle inspection process, saving valuable time and enhancing accuracy. |
+| **[Custom contact center solution with Copilot Studio agent](agent-custom-contact-center.md)** | A national banking company enhances customer service efficiency through integrated platforms and technologies. |
+| **[Travel concierge using generative AI with Copilot Studio](agent-travel-customer.md)** | A tavel company's customer service employs AI-driven solutions to enhance customer interactions and streamline information access. |
+| **[Ticket management system with Copilot Studio](agent-ticket-and-refund.md)** | A cinema company improves ticket refund and management processes by deploying both a user-based and autonomous agent to integrate with legacy systems. |

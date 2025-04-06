@@ -1,11 +1,11 @@
 ---
-title: Integrate Microsoft Power Platform with SAP for data management.
-description: Integrate Microsoft Power Platform with SAP for seamless data management and automation. Enhance your organization's efficiency and maintain robust security standards.
+title: Integrate Power Platform with SAP for data management
+description: Integrate Microsoft Power Platform with SAP for seamless data management and automation to enhance your organization's efficiency and security.
 #customer intent: As a Power Platform user, I want to integrate Microsoft Power Platform with SAP so that I can enhance data management and automation capabilities.
 author: manuelap-msft
 ms.subservice: architecture-center
 ms.topic: example-scenario
-ms.date: 03/21/2025
+ms.date: 04/06/2025
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
 contributors:
@@ -17,7 +17,7 @@ search.audienceType:
   - flowmaker
 ---
 
-# Integrate Microsoft Power Platform with SAP for data management
+# Integrate Power Platform with SAP for data management
 
 Integrating Microsoft Power Platform with SAP enhances data management and automation capabilities within your organization. This article explains how to connect these two platforms seamlessly. 
 

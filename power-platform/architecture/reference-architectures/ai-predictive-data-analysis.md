@@ -1,11 +1,11 @@
 ﻿---
-title: Predictive data analysis using Dataverse, Fabric, and Azure AI
+title: Perform predictive data analysis using Dataverse, Fabric, and Azure AI
 description: Learn how to perform predictive data analysis using Dataverse, Fabric, and Azure AI to enhance decision-making processes and operational efficiency.
 #customer intent: As a Power Platform user, I want to learn how to perform predictive data analysis using Dataverse, Fabric, and Azure AI so that I can enhance decision-making processes.
 author: manuelap-msft
 ms.subservice: architecture-center
 ms.topic: example-scenario
-ms.date: 03/21/2025
+ms.date: 04/06/2025
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
 contributors:
@@ -21,7 +21,7 @@ ms.custom:
   - ai-seo-date:03/11/2025
 ---
 
-# Predictive data analysis using Dataverse, Fabric, and Azure AI
+# Perform predictive data analysis using Dataverse, Fabric, and Azure AI
 
 In today's data-driven world, applying predictive analytics enhances decision-making processes and operational efficiency. This article provides an overview of how to perform predictive data analysis using Dataverse, Microsoft Fabric, and Azure AI to design a well-architected solution. It covers best practices for data ingestion, model training, and visualization, enabling you to build robust predictive models and actionable insights.
 
@@ -75,7 +75,7 @@ Learn how to use machine learning models to predict which customers are likely t
 
 ### Performance
 
-- **Dataflows for efficient data ingestion:** Optimize Power Platform dataflows for ETL processes by applying incremental refresh where applicable to minimize data processing times.
+- **Dataflows for efficient data ingestion:** Optimize Power Platform dataflows for ETL (Extract, Transform, Load) processes by applying incremental refresh where applicable to minimize data processing times.
 - **Link to Microsoft Fabric for compute:** Use Azure Synapse Link for Dataverse to offload heavy data computation and analytics tasks to Microsoft Fabric to ensure minimal performance impact on operational Dataverse environments.
 
 Use OneLake in Microsoft Fabric to manage large datasets with efficient query capabilities.
@@ -95,7 +95,7 @@ Achieve high performance and efficiency by optimizing processes and using best p
 - **Continuous integration and continuous delivery for Power Platform solutions:** Use Azure DevOps or GitHub Actions to manage the lifecycle of Dataverse, Power BI, and AI Builder solutions.
 - **Versioning of data models:** Track and document changes to machine learning models and transformations within Fabric and Dataverse.
 
-Apply Purview for comprehensive data lineage and metadata management to ensure model explainability and traceability.
+Use Purview for comprehensive data lineage and metadata management to ensure model explainability and traceability.
 
 ## Contributors
 

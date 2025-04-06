@@ -22,7 +22,7 @@ highlightedContent:
       itemType: architecture
       url: reference-architectures/reference-architecture-overview.md
     # Card
-    - title: See what's new
+    - title: Learn what's new
       url: whats-new.md
       itemType: whats-new
     # Card
@@ -51,7 +51,7 @@ productDirectory:
       links:
         - text: ​Integrate Microsoft Fabric Lakehouse data using Microsoft Dataverse virtual tables
           url: reference-architectures/app-integrate-lakehouse.md
-        - text: Predictive data analysis with Dataverse Fabric and Azure AI
+        - text: Perform predictive data analysis with Dataverse Fabric and Azure AI
           url: reference-architectures/ai-predictive-data-analysis.md
         - text: Secure Power Platform access to Azure resources
           url: reference-architectures/secure-access-azure-resources.md

@@ -1,11 +1,11 @@
 ---
-title: Dataverse background operations
+title: Leverage Dataverse background operations
 description: Learn how to execute requests as background operations in Microsoft Dataverse using custom APIs for efficient asynchronous processing.
-#customer intent: As a Power-Platform user, I want to define custom messages and implement business logic through plug-ins so that I can use background processing in Dataverse.
+#customer intent: As a Power Platform user, I want to define custom messages and implement business logic through plug-ins so that I can use background processing in Dataverse.
 author: manuelap-msft
 ms.subservice: architecture-center
 ms.topic: example-scenario
-ms.date: 03/24/2025
+ms.date: 04/06/2025
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
 contributors:
@@ -17,7 +17,7 @@ search.audienceType:
   - flowmaker
 ---
 
-# Dataverse background operations
+# Leverage Dataverse background operations
 
 In Microsoft Dataverse, executing requests as background operations enhances asynchronous processing efficiency. Using custom APIs, you define custom messages and implement business logic through plug-ins, allowing for background processing that eliminates the need for a persistent connection during execution.
 

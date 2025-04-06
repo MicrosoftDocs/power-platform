@@ -1,13 +1,13 @@
 ---
-title: Custom contact center solution with Microsoft Copilot Studio agents
-description: Discover how to use Copilot Studio to enhance customer service efficiency by integrating Copilot Studio with a non-Microsoft contact center.
-#customer intent: As a cloud architect, I want to integrate Copilot Studio with a non-Microsoft contact center so that I can enhance customer service efficiency.
+title: Custom contact center solution with Copilot Studio agent
+description: Explore a custom contact center solution using Copilot Studio to enhance customer service efficiency and integrate with non-Microsoft platforms.
+#customer intent: As a Power Platform user, I want to explore an example implementation that uses integrated platforms and solutions so that I can gain insights into improving my own organization's customer service.
 author: manuelap-msft
 ms.subservice: architecture-center
 ms.topic: solution-idea
-ms.date: 03/24/2025
+ms.date: 04/06/2025
 ms.author: mapichle
-ms.reviewer: pankajsharma2087
+ms.reviewer: jhaskett-msft
 contributors:
   - manuelap-msft
 ms.contributors:
@@ -15,12 +15,15 @@ ms.contributors:
 search.audienceType:
   - admin
   - flowmaker
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-description
+  - ai-seo-date:04/06/2025
 ---
 
 <!-- comment from Manuela: This solution explains how to integrate with a non-Microsoft/third party contact center solution. Based on acrolinx guidance I've replaced third-party with non-Microsoft and sometimes with "other database" but let me know if there is a different way of phrasing this -->
 
-# Custom contact center solutions with Copilot Studio agent
-
+# Custom contact center solution with Copilot Studio agent
 
 This article outlines the architecture and services of a national banking company aiming to enhance customer service efficiency through integrated platforms and technologies.
 
@@ -29,21 +32,17 @@ This article outlines the architecture and services of a national banking compan
 - **Governance and compliance**: The Power Platform admin center manages all Power Platform components, ensuring operational efficiency and compliance, while Microsoft Entra ID checks data access permissions.  
 - **User experience improvement**: The use case focuses on improving employee access to information to enhance customer service, addressing challenges posed by disparate document types and existing contact center limitations.  
 
-> [!NOTE]
-> This solution idea is inspired by ABN AMRO Bank, who migrated to Microsoft Copilot Studio to support over 3.5 million customer conversations. Learn more: [ABN AMRO Bank customer story](https://www.microsoft.com/customers/story/19754-abn-amro-bank-microsoft-copilot-studio#asset_idabn-amro-bank-customer-experience-architecture).
-
-> [!TIP]
-> This article describes a solution idea. Your cloud architect can use this guidance to help visualize the major components for a typical implementation of this architecture. Use this article as a starting point to design a well-architected solution that aligns with your workload's specific requirements.
+[!INCLUDE [pp-arch-solution-idea-tip](../../includes/pp-arch-solution-idea-tip.md)]
 
 ## Architecture diagram
 
-:::image type="content" source="media/agent-contact-center/contact-center-arch.png" alt-text="Architecture diagram of a property rental portal with an AI-driven search and payment processing." border="true"  lightbox="media/agent-contact-center/contact-center-arch.png":::
+:::image type="content" source="media/agent-contact-center/contact-center-arch.png" alt-text="Architecture diagram of a property rental portal with an AI-driven search and payment processing." border="true" lightbox="media/agent-contact-center/contact-center-arch.png":::
 
 ## Workflow
 
 ### User interface 
 
-- **Contact center as a service (CCaaS)**: A non-Microsoft contact center featuring diverse agent types, including chat and voice, facilitates seamless handoffs to company employees via an escalation path and integrates with Azure and another database.
+- **Contact center as a service (CCaaS)**: A non-Microsoft contact center featuring diverse agent types, including chat and voice, facilitates seamless handoffs to company employees via an escalation path, and integrates with Azure and another database.
 - **Employee portal website**: A portal for employees to perform tasks featuring an employee agent developed with Microsoft Copilot Studio.
 
 ### Knowledge
@@ -58,35 +57,35 @@ Knowledge refers to the information and data sources that agents use to provide 
 
 ### Generative AI services 
 
-- **[Azure AI Studio](/azure/ai-foundry/)**: Azure AI Studio lets you build, modify, and launch generative AI apps using Azure’s models and tools such as using other LLM’s.
-- **[Azure AI Search](/azure/search/search-what-is-azure-search)**: Azure AI Search is used for vectorized indexes for knowledge sources held outside of the knowledge section of Microsoft Copilot Studio. 
+- **[Azure AI Studio](/azure/ai-foundry/)**: Azure AI Studio lets you build, modify, and launch generative AI apps using Azure's models and tools, including other large language models (LLMs).
+- **[Azure AI Search](/azure/search/search-what-is-azure-search)**: Azure AI Search is used for vectorized indexes for knowledge sources held outside of the knowledge section of Copilot Studio. 
 
 ### Data sources 
 
-- **[Microsoft Dataverse](/power-apps/maker/data-platform/data-platform-intro)**: Microsoft Dataverse is used as the central repository for knowledge and metric data, including customer feedback information. Dataverse is a foundational part of the Power Platform and seamlessly integrates with Copilot Studio.
-- **[Azure Data Lake](/azure/storage/blobs/data-lake-storage-introduction)**: Azure Data Lake is used as the storage location for long-term storage of conversation transcripts. 
+- **[Microsoft Dataverse](/power-apps/maker/data-platform/data-platform-intro)**: Used as the central repository for knowledge and metric data, including customer feedback information. Dataverse is a foundational part of Power Platform and seamlessly integrates with Copilot Studio.
+- **[Azure Data Lake](/azure/storage/blobs/data-lake-storage-introduction)**: Used as the storage location for long-term storage of conversation transcripts. 
 
 ### Other sources 
 
-- **Database**: The non-Microsoft database is the primary storage solution, serving as the central repository for all core customer and transaction data. This platform provides the scalability, security, and performance required to support the bank’s operational needs while seamlessly integrating with the agent built with Microsoft Copilot Studio and Power BI dashboards. 
+- **Database**: The non-Microsoft database is the primary storage solution, serving as the central repository for all core customer and transaction data. This platform provides the scalability, security, and performance required to support the bank’s operational needs, while seamlessly integrating with the agent built with Copilot Studio and Power BI dashboards. 
 
 ### Platform governance, compliance, and fundamentals
 
 - **[Power Platform admin center](/power-platform/admin/new-admin-center)**: Manages and monitors all Power Platform components for operational efficiency. Chosen for its ability to enforce governance and maintain compliance across solutions. 
 - **[Power Fx](/power-platform/power-fx/overview)**: Enables custom logic for advanced functionality in apps and workflows. Selected for its simplicity and integration with other Power Platform components. 
 - **[Microsoft Entra ID](/entra/fundamentals/whatis)**: Enables checking of access to data for certain individuals. 
-- **[Application Insights](/microsoft-copilot-studio/advanced-bot-framework-composer-capture-telemetry)**: Used with Copilot Studio to deliver real-time telemetry and proactive diagnostics to allow for continuously optimizing performance and user experience. 
+- **[Application Insights](/microsoft-copilot-studio/advanced-bot-framework-composer-capture-telemetry)**: Used with Copilot Studio to deliver real-time telemetry and proactive diagnostics, optimizing performance and user experience. 
 
 ### Reporting 
 
-- **[Power BI dashboards](/power-bi/fundamentals/power-bi-overview)**: Visualizes operational and customer-centric data to provide actionable insights. Power BI is used because of its seamless integration with Dataverse while also being able to bring other data storage information into the reports.
+- **[Power BI dashboards](/power-bi/fundamentals/power-bi-overview)**: Visualizes operational and customer-centric data to provide actionable insights. Power BI integrates seamlessly with Dataverse and can bring data from other storage sources into reports. 
 
 ## Use case details 
 
 This use case illustrates how a national banking company enhances customer experience by improving customer service, information access, and conversation processes through faster information retrieval for their employees.
 
 > [!NOTE]
-> This solution idea is inspired by ABN AMRO Bank, who migrated to Microsoft Copilot Studio to support over 3.5 million customer conversations. Learn more: [ABN AMRO Bank customer story](https://www.microsoft.com/customers/story/19754-abn-amro-bank-microsoft-copilot-studio#asset_idabn-amro-bank-customer-experience-architecture).
+> This solution idea is inspired by ABN AMRO Bank, who migrated to Microsoft Copilot Studio to support over 3.5 million customer conversations. Learn more: [ABN AMRO Bank customer story](https://www.microsoft.com/customers/story/19754-abn-amro-bank-microsoft-copilot-studio#asset_idabn-amro-bank-customer-experience-architecture)
 
 ### Business problem 
 
@@ -100,7 +99,7 @@ This use case illustrates how a national banking company enhances customer exper
 
 ### Reliability
 
-For agents, the principle of "garbage in, garbage out" highlights the importance of data quality. Ensuring that the information provided to the agent is accurate makes sure the agent is able to provide reliable and correct responses.
+The principle of "garbage in, garbage out" is particularly important for agents and emphasizes the need for high quality data. Ensuring that the information provided to the agent is accurate ensures that the agent can give reliable and correct responses.
 
 ### Security 
 
@@ -113,18 +112,17 @@ Learn more:
 
 ### Performance Efficiency 
 
-- Tracking usage, dropouts, technical difficulties, and customer satisfaction score (CSAT) scores enable adjustments to the agent's approaches, offerings, and structure.  Learn more at: [Measuring agent engagement](/microsoft-copilot-studio/guidance/measuring-engagement)
-Certainly! Here's a revised version with the appropriate reference links:
+- Tracking usage, dropouts, technical difficulties, and customer satisfaction score (CSAT) enable adjustments to the agent's approaches, offerings, and structure. Learn more: [Measuring agent engagement](/microsoft-copilot-studio/guidance/measuring-engagement)
 - Power Automate flows can be used to handle processes asynchronously. Learn more: [Use an asynchronous flow pattern](/power-automate/guidance/coding-guidelines/asychronous-flow-pattern)
-- Bing Custom Search can be utilized to filter and manage allowed and blocked sections of website locations. Learn more: [Search public data or use a Bing Custom Search for generative answers nodes](/microsoft-copilot-studio/nlu-generative-answers-bing)
-- Consider using Microsoft's contact center offerings to integrate everything into the Power Platform environment, facilitating the creation of agents with Microsoft Copilot Studio. Learn more at: [Copilot onboarding guide for digital contact centers](/dynamics365/guidance/resources/cs-contact-center-copilot-onboarding-guide)
-- Consider using the Microsoft 365 Agents SDK to utilize multiple agents. Learn more at: [Microsoft 365 Agents SDK](/microsoft-365/agents-sdk/)
+- Bing Custom Search can filter and manage allowed and blocked sections of website locations. Learn more: [Search public data or use a Bing Custom Search for generative answers nodes](/microsoft-copilot-studio/nlu-generative-answers-bing)
+- Consider using Microsoft's contact center offerings to integrate everything into the Power Platform environment, facilitating the creation of agents with Copilot Studio. Learn more: [Copilot onboarding guide for digital contact centers](/dynamics365/guidance/resources/cs-contact-center-copilot-onboarding-guide)
+- Consider using the Microsoft 365 Agents SDK to utilize multiple agents. Learn more: [Microsoft 365 Agents SDK](/microsoft-365/agents-sdk/)
 
 ### Experience Optimization 
 
 - Consolidate data into one centralized platform, such as Dataverse, to streamline access and management. Consider using [virtual tables](/power-apps/developer/data-platform/virtual-entities/get-started-ve) to integrate external data.
-- Review documents used for the Generative AI knowledge section and remove any unnecessary data.
-- Extend the employees' agent to provide more information directly to the employee, such as HR information.
+- Review documents used for Generative AI knowledge and remove any unnecessary data.
+- Extend the employee agent to provide more information directly to employees, like human resources information.
 
 Learn more:
 

@@ -1,11 +1,11 @@
 ﻿---
 title: Property rental portal with AI-driven search and payment processing
 description: Discover how to build a property rental portal with AI-driven search and payment processing using Power Platform and Microsoft Azure.
-#customer intent: As a Power-Platform user, I want to visualize the major components of the rental portal so that I can design a well-architected solution.
+#customer intent: As a Power Platform user, I want to visualize the major components of the rental portal so that I can design a well-architected solution.
 author: manuelap-msft
 ms.subservice: architecture-center
 ms.topic: solution-idea
-ms.date: 03/24/2025
+ms.date: 04/06/2025
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
 contributors:
@@ -20,12 +20,11 @@ search.audienceType:
 
 In this article, you learn how to build a comprehensive rental portal that uses AI-driven search capabilities and seamless payment processing. Using Power Platform and Microsoft Azure, this solution integrates various components to provide a robust and user-friendly experience for both users and administrators. From browsing and reserving listings to managing payments and generating insightful reports, this architecture ensures a well-rounded and efficient rental management system. 
 
-> [!TIP]
-> This article describes a solution idea. Your cloud architect can use this guidance to help visualize the major components for a typical implementation of this architecture. Use this article as a starting point to design a well-architected solution that aligns with your workload's specific requirements.
+[!INCLUDE [pp-arch-solution-idea-tip](../../includes/pp-arch-solution-idea-tip.md)]
 
 ## Architecture diagram
 
-:::image type="content" source="media/agent-rental-portal/agent-property-rental.png" alt-text="Architecture diagram of a property rental portal with an AI-driven search and payment processing." border="true"  lightbox="media/agent-rental-portal/agent-property-rental.png":::
+:::image type="content" source="media/agent-rental-portal/agent-property-rental.png" alt-text="Architecture diagram of a property rental portal with an AI-driven search and payment processing." border="true" lightbox="media/agent-rental-portal/agent-property-rental.png":::
 
 ## Workflow
 
@@ -62,7 +61,7 @@ In this article, you learn how to build a comprehensive rental portal that uses 
 
 1. **User interacts with Portal AI agent**
     - The user engages with the portal agent for assistance.
-    - The bot uses Microsoft Copilot Studio, which is configured to search the portal content to understand and respond to user queries.
+    - The bot uses Copilot Studio, which is configured to search the portal content to understand and respond to user queries.
 
 1. **Searches listings**
     - The agent extracts search terms from the user's query using an AI Builder prompt.
@@ -133,15 +132,15 @@ The Contoso rental property system provides an integrated platform for managing 
 
 ### Reliability
 
-- **Redundancy and failover:** Redundancy for critical functions provided by Dataverse and Azure Functions.
+- **Redundancy and failover:** Redundancy for critical functions is provided by Dataverse and Azure Functions.
 - **Monitoring and alerts:** Application Insights monitors the health of the portal and APIs. Alerts are set up for critical issues to ensure timely responses and minimize downtime.
-- **Automated backups:** Leverages Power Platform's built-in capabilities for automated backups of Dataverse data. Azure SQL Database automatically performs full, differential, and transaction log backups to protect your data.
+- **Automated backups:** Power Platform's built-in capabilities automate Dataverse data backups. Azure SQL Database automatically performs full, differential, and transaction log backups to protect data.
 - **High availability**: High availability is ensured by Power Platform's built-in redundancy. Power Automate retries are implemented to allow for transient connection outages.
 
 ### Security
 
 - **Authentication:** Power Pages supports various authentication methods, including Microsoft Entra ID, Microsoft accounts, and external identity providers. Only authenticated users can access the portal.
-- **Role-based access control (RBAC):** Implement RBAC to restrict access to specific pages, data, and functionalities based on user roles. This security measure ensures that users only have access to the information and actions relevant to their roles.
+- **Role-based access control (RBAC):** RBAC restricts access to specific pages, data, and functionalities based on user roles. This security measure ensures that users only have access to the information and actions relevant to their roles.
 - **Web application firewall (WAF):** Azure Front Door protects the portal from common web vulnerabilities and attacks, such as SQL injection and cross-site scripting (XSS).
 - **Data protection:** Azure Key Vault stores and manages sensitive information such as API keys and connection strings. Sensitive data is encrypted and accessed securely.
 - **Access control:** Role-based access control (RBAC) restricts access to sensitive data and operations. Only authorized users can perform critical actions.
@@ -155,7 +154,7 @@ The Contoso rental property system provides an integrated platform for managing 
 - **Documentation:** Comprehensive documentation for all components and processes is maintained to aid troubleshooting and onboarding of new team members.
 - **Training:** Regular training sessions are provided for users and administrators to ensure they're familiar with the system and can use it effectively.
 - **CI/CD pipelines:** Automated CI/CD pipelines are implemented using Azure DevOps or GitHub Actions, to ensure that changes to the portal and applications are tested, validated, and deployed consistently and efficiently.
-- **Unit testing:** Unit tests are created for critical components to ensure that they function correctly. Automated testing is integrated into the CI/CD pipelines to catch issues early in the development process.
+- **Unit testing:** Unit tests are created for critical components to ensure they function correctly. Automated testing is integrated into the CI/CD pipelines to catch issues early in the development process.
 
 ### Performance Efficiency
 
@@ -181,4 +180,4 @@ Principal authors:
 
 ## Reference implementation
 
-A sample architecture implementation is available for reference in [GitHub](https://aka.ms/pp/contoso-real-estate).
+A sample architecture implementation is available for reference on [GitHub](https://aka.ms/pp/contoso-real-estate).

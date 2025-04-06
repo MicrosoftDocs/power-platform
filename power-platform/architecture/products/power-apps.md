@@ -30,7 +30,7 @@ In this article, we look at:
 
 | Title | Description |
 | --- | --- |
-| **[Distributed tracing across multiple services](../key-concepts/distributed-tracing.md)** | Learn how to achieve comprehensive observability across multiple services, including those within Power Platform, Azure, and Dynamics 365. |
+| **[Distributed tracing across multiple services](../key-concepts/distributed-tracing.md)** | Learn how to achieve observability across services like Power Platform, Azure, and Dynamics 365. |
 | **[Coding guidelines](/power-apps/guidance/coding-guidelines/overview)** | Learn about standards for naming objects, collections, and variables, and guidelines for developing consistent, performant, and easily maintainable apps. |
 | **[Build large and complex canvas apps](/power-apps/maker/canvas-apps/working-with-large-apps)** | Use the recommendations in this article to better work with large and complex apps in Power Apps Studio and improve your apps' runtime performance. | 
 | **[Optimize app or page load for peak performance](/power-apps/maker/canvas-apps/fast-app-page-load)** | One of the key factors that shape a user's perception of an app is how quickly it opens and becomes functional. Follow the guidelines in this article to achieve fast data loading apps. | 
@@ -47,13 +47,13 @@ In this article, we look at:
 | Title | Description |
 | --- | --- |
 | **[Streamline document processing with AI Builder](../reference-architectures/ai-document-processing.md)** | Streamline document processing and automate data extraction from various documents such as forms, invoices, and purchase orders. |
-| **[Predictive data analysis with Dataverse, Fabric, and Azure AI](../reference-architectures/ai-predictive-data-analysis.md)** | Perform predictive data analysis using Dataverse, Microsoft Fabric, and Azure AI and learn best practices for data ingestion, model training, and visualization, enabling you to build robust predictive models and actionable insights. |
+| **[Perform predictive data analysis with Dataverse, Fabric, and Azure AI](../reference-architectures/ai-predictive-data-analysis.md)** | Learn best practices for data ingestion, model training, and visualization, enabling you to build robust predictive models and actionable insights. |
 | **[​Integrate Microsoft Fabric Lakehouse data using Microsoft Dataverse virtual tables](../reference-architectures/app-integrate-lakehouse.md)** | Gather data from multiple internal systems into a Microsoft Fabric Lakehouse, and consume the data in Power Platform apps and automations using Dataverse virtual tables. |
-| **[Integrate Microsoft Power Platform with SAP](../reference-architectures/arch-pattern-sap.md)** | Learn about the architecture, workflows, and connectivity methods available to integrate Power Platform with SAP to ensure a smooth integration process. |
-| **[Dataverse background operations](../reference-architectures/dataverse-background-operations.md)** | Use custom APIs to define custom messages and implement business logic through plug-ins, allowing for background processing that eliminates the need for a persistent connection during execution. |
+| **[Integrate Power Platform with SAP](../reference-architectures/arch-pattern-sap.md)** | Learn about the architecture, workflows, and connectivity methods available to integrate Power Platform with SAP to ensure a smooth integration process. |
+| **[Leverage Dataverse background operations](../reference-architectures/dataverse-background-operations.md)** | Use custom APIs to define custom messages and implement business logic through plug-ins, allowing for background processing that eliminates the need for a persistent connection during execution. |
 | **[Secure Power Platform access to Azure resources](../reference-architectures/secure-access-azure-resources.md)** | Use Microsoft Azure Virtual Network support for Power Platform to integrate Power Platform with resources inside your virtual network without exposing them to the public internet. |
-| **[Use REST APIs to extend the functionality of canvas apps](../reference-architectures/custom-connector-canvas.md)** | When working with complex algorithms or multiple data sources, shifting the logic from the canvas app to a RESTful API helps keep formulas in your Power Apps canvas application simple and moves more complex functionality to the server.|
-| **[​Use the Dataverse connector with canvas apps​](../reference-architectures/dataverse-canvas-app.md)** | Creating a Power Apps application that uses Dataverse as a data source can enable building a more custom user experience. |
+| **[Use REST APIs to extend the functionality of canvas apps](../reference-architectures/custom-connector-canvas.md)** | When working with complex algorithms or multiple data sources, shift the logic from the canvas app to a RESTful API to keep formulas in your Power Apps canvas application simple and move more complex functionality to the server. |
+| **[​Use the Dataverse connector with canvas apps​](../reference-architectures/dataverse-canvas-app.md)** | Learn how creating a Power Apps application that uses Dataverse as a data source helps build a more custom user experience. |
 
 ## Solution ideas
 

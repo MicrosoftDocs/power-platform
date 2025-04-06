@@ -39,13 +39,13 @@
       items:
       - name: Overview
         href: reference-architectures/reference-architecture-overview.md
-      - name: Document processing with AI Builder
+      - name: Streamline document processing with AI Builder
         href: reference-architectures/ai-document-processing.md
-      - name: Predictive data analysis
+      - name: Perform predictive data analysis
         href: reference-architectures/ai-predictive-data-analysis.md
-      - name: Legacy data integration
+      - name: Integrate legacy data with Power Automate and SharePoint
         href: reference-architectures/app-legacy-data-integration.md
-      - name: Dataverse background operations
+      - name: Leverage Dataverse background operations
         href: reference-architectures/dataverse-background-operations.md
       - name: Secure Power Platform access to Azure resources
         href: reference-architectures/secure-access-azure-resources.md
@@ -57,7 +57,7 @@
         href: reference-architectures/custom-connector-canvas.md
       - name: ​Use the Dataverse connector with canvas apps​ 
         href: reference-architectures/dataverse-canvas-app.md
-      - name: ​Scale RPA operations using Hosted RPA in Microsoft Power Automate for desktop​ 
+      - name: ​Scale RPA operations using Hosted RPA in Power Automate for desktop​ 
         href: reference-architectures/rpa-scale-operations.md
     - name: Solution ideas
       items:
