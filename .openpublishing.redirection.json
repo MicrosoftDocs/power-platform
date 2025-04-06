@@ -1155,42 +1155,42 @@
     },
     {
       "source_path": "power-platform/guidance/expressroute/benefits.md",
-      "redirect_url": "/power-platform/architecture/fundamentals/expressroute/benefits.md",
+      "redirect_url": "/power-platform/architecture/key-concepts/expressroute/benefits.md",
       "redirect_document_id": "false"
     },
     {
       "source_path": "power-platform/guidance/expressroute/checklist.md",
-      "redirect_url": "/power-platform/architecture/fundamentals/expressroute/checklist.md",
+      "redirect_url": "/power-platform/architecture/key-concepts/expressroute/checklist.md",
       "redirect_document_id": "false"
     },
     {
       "source_path": "power-platform/guidance/expressroute/how-expressroute-works.md",
-      "redirect_url": "/power-platform/architecture/fundamentals/expressroute/how-expressroute-works.md",
+      "redirect_url": "/power-platform/architecture/key-concepts/expressroute/how-expressroute-works.md",
       "redirect_document_id": "false"
     },
     {
       "source_path": "power-platform/guidance/expressroute/overview.md",
-      "redirect_url": "/power-platform/architecture/fundamentals/expressroute/overview.md",
+      "redirect_url": "/power-platform/architecture/key-concepts/expressroute/overview.md",
       "redirect_document_id": "false"
     },
     {
       "source_path": "power-platform/guidance/expressroute/planning-expressroute.md",
-      "redirect_url": "/power-platform/architecture/fundamentals/expressroute/planning-expressroute.md",
+      "redirect_url": "/power-platform/architecture/key-concepts/expressroute/planning-expressroute.md",
       "redirect_document_id": "false"
     },
     {
       "source_path": "power-platform/guidance/expressroute/setup.md",
-      "redirect_url": "/power-platform/architecture/fundamentals/expressroute/setup.md",
+      "redirect_url": "/power-platform/architecture/key-concepts/expressroute/setup.md",
       "redirect_document_id": "false"
     },
     {
       "source_path": "power-platform/guidance/expressroute/things-to-consider.md",
-      "redirect_url": "/power-platform/architecture/fundamentals/expressroute/things-to-consider.md",
+      "redirect_url": "/power-platform/architecture/key-concepts/expressroute/things-to-consider.md",
       "redirect_document_id": "false"
     },
     {
       "source_path": "power-platform/guidance/expressroute/understanding-architecture.md",
-      "redirect_url": "/power-platform/architecture/fundamentals/expressroute/understanding-architecture.md",
+      "redirect_url": "/power-platform/architecture/key-concepts/expressroute/understanding-architecture.md",
       "redirect_document_id": "false"
     }
   ]
