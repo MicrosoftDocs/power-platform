@@ -1212,6 +1212,8 @@
       "source_path": "power-platform/guidance/expressroute/understanding-architecture.md",
       "redirect_url": "/power-platform/architecture/key-concepts/expressroute/understanding-architecture.md",
       "redirect_document_id": "false"
+    },
+    {
       "source_path": "power-platform/admin/troubleshooting-user-needs-read-write-access-organization.md",
       "redirect_url": "/troubleshoot/power-platform/dataverse/environment-app-access/troubleshooting-user-needs-read-write-access-organization"
     },
