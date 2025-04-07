@@ -3,7 +3,7 @@ title: Notifications for Business & Industry Copilot services
 description: Learn about the different ways that you can receive notifications for Business & Industry Copilot services. 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/04/2025
+ms.date: 04/07/2025
 ms.subservice: admin
 ms.author: kacortez
 author: kacortez
@@ -22,7 +22,7 @@ Admins can use the [Microsoft 365 Message center](/office365/admin/manage/messag
 
 ### Set up a weekly digest mail of Message center changes and notifications
 1. Log in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-2. In the navigation pane, select **Admin Centers**.
+2. In the navigation pane, select **Admin centers**.
 3. Select **Microsoft 365**.
 4. Expand Health and select **Message Center**.
 5. On the page that loads, select **Preferences**.
