@@ -58,11 +58,9 @@ Before configuring SameSite, be sure you meet the following requirements:
 - You have a non-production environment available for initial testing. 
 - You have the Power Platform admin center [System Administrator](security-roles-privileges.md) role for making changes to the organization entity in Dataverse. 
 
-## How to configure SameSite settings 
+## Configure SameSite attribute 
 
 Currently, we need to perform the configuration through API call. 
-
-### Steps to configure SameSite attribute 
 
 1. Log in to your Dynamics 365 organization where you want to apply the setting. 
 2. Open a browser console and run the following script. (You may need to run _allow pasting_ if not already allowed to paste script in console).  
