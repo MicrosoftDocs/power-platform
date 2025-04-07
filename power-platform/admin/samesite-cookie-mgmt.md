@@ -1,10 +1,10 @@
 ---
-title: Title
-description: Describe what people can learn in this article.
+title: Configure the SameSite attribute for session cookies in Dataverse and Dynamics 365
+description: Learn how to configure the SameSite attribute for session cookies in Dataverse and Dynamics 365.
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/24/2025
+ms.date: 04/07/2025
 author: abhijananddv
 ms.author: abhijanand
 ms.reviewer: sericks
@@ -12,13 +12,11 @@ search.audienceType:
   - admin
 ---
 
-# Title
+# Configure the SameSite attribute for session cookies in Dataverse and Dynamics 365
 
 [!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
-## Configure SameSite Attribute for Session Cookies in Dataverse 
-
-This document describes how to configure the SameSite attribute for session cookies (CrmOwinAuth) in Microsoft Dataverse and Dynamics 365. This setting enhances security by controlling how your session cookie is shared in cross site scenarios. 
+Learn how to configure the SameSite attribute for session cookies (CrmOwinAuth) in Microsoft Dataverse and Dynamics 365. This setting enhances security by controlling how your session cookie is shared in cross-site scenarios. 
 
 ## What is the SameSite cookie setting? 
 
