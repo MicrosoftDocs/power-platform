@@ -3,7 +3,7 @@ title: Rules for environment groups
 description: Learn how to govern your Managed Environments with rules in bulk.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/03/2025
+ms.date: 04/07/2025
 author: mikferland-msft
 ms.author: miferlan
 ms.reviewer: sericks
@@ -33,10 +33,10 @@ The following [rules](environment-groups.md#rules) can be applied to [environmen
 | 7 | [Maker welcome content](welcome-content.md) |
 | 8 | [Power Apps component framework for canvas apps](/power-apps/developer/component-framework/component-framework-for-canvas-apps) |
 | 9 | [Release channel](https://go.microsoft.com/fwlink/?linkid=2237290) |
-| 10 | [Sharing agents with Editor permissions (preview)](managed-environment-sharing-limits.md) |
-| 11 | [Sharing agents with Viewer permissions (preview)](managed-environment-sharing-limits.md) |
-| 12 | [Sharing controls for canvas apps](managed-environment-sharing-limits.md) |
-| 13 | [Sharing controls for solution-aware cloud flows](managed-environment-sharing-limits.md) |
+| 10 | [Sharing agents with Editor permissions (preview)](managed-environment-sharing-limits.md#agent-sharing-rules-preview) |
+| 11 | [Sharing agents with Viewer permissions (preview)](managed-environment-sharing-limits.md#agent-sharing-rules-preview) |
+| 12 | [Sharing controls for canvas apps](managed-environment-sharing-limits.md#canvas-app-sharing-rules) |
+| 13 | [Sharing controls for solution-aware cloud flows](managed-environment-sharing-limits.md#solution-aware-cloud-flow-sharing-rules) |
 | 14 | [Solution checker enforcement](managed-environment-solution-checker.md) |
 | 15 | [Unmanaged customizations](../alm/block-unmanaged-customizations.md) |
 | 16 | [Usage insights](managed-environment-usage-insights.md) |
