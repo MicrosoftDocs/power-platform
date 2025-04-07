@@ -18,47 +18,45 @@ search.audienceType:
 
 Learn how to configure the SameSite attribute for session cookies (CrmOwinAuth) in Microsoft Dataverse and Dynamics 365. This setting enhances security by controlling how your session cookie is shared in cross-site scenarios. 
 
-## What is the SameSite cookie setting? 
-
-The SameSite cookie setting controls how browsers share your session cookie (CrmOwinAuth) used in Dataverse and Dynamics 365. This cookie stores session management related information. 
+The SameSite cookie setting controls how browsers share your session cookie (CrmOwinAuth) used in Dataverse and Dynamics 365. This cookie stores session management-related information. 
 
 ## Why use SameSite? 
 
 | Setting | Description | Recommendation |
 | --- | --- | --- |
-| Lax | Cookies are sent for top-level navigation (link clicks) but not during cross-site form submissions (POST, PUT, DELETE, PATCH). | Recommended for most scenarios. |
-| None | Cookies are always sent, could be necessary for integrations (e.g., embedded dynamics CRM in iframes or custom integrations). This is the seeting by default | Can be used for integrations depending on cross-site requests. |
-| Strict | Cookies are never sent with cross site requests, even for top level navigations in cross site scenarios. | Can be used for highly sensitive environments; can impact user experience. |
+| Lax | Cookies are sent for top-level navigation&mdash;that is, link clicks&mdash;but not during cross-site form submissions such as POST, PUT, DELETE, PATCH. | Recommended for most scenarios. |
+| None | Cookies are always sent. This setting could be necessary for integrations such as embedded Dynamics CRM in iframes or custom integrations. This is the default setting.  | This setting can be used for integrations depending on cross-site requests. |
+| Strict | Cookies are never sent with cross-site requests, even for top-level navigations in cross-site scenarios. | This setting can be used for highly-sensitive environments. It can also impact the user experience. |
 
-## Important Considerations 
+## Important considerations 
 
-### Multiple CRM Instances in One Browser Session (Critical) 
+### Multiple CRM instances in one browser session (critical) 
 
-When logging into Dynamics 365 environments, browsers create a "session cookie" (CrmOwinAuth) that remembers your login. This cookie is shared across all Dynamics 365 environments under the same parent domain (crm.dynamics.com). 
+When logging into Dynamics 365 environments, browsers create a _session cookie_ (CrmOwinAuth) that remembers your login. This cookie is shared across all Dynamics 365 environments under the same parent domain (crm.dynamics.com). 
 
-If you log into multiple Dynamics 365 [environments](https://learn.microsoft.com/en-us/power-platform/admin/environments-overview) (e.g., a production CRM and a test CRM) in one browser session, the SameSite security setting applied to the first environment automatically applies to the other environments in the same browser session. This could lead to unexpected behavior in environments where you haven't explicitly set the SameSite configuration. 
+If you log into multiple Dynamics 365 [environments](environments-overview.md), such as a production and a test environment in one browser session, the SameSite security setting applied to the first environment automatically applies to the other environments in the same browser session. This could lead to unexpected behavior in environments where you haven't explicitly set the SameSite configuration. 
 
-### Recommended Actions: 
+#### Recommended actions
 
-- Use separate browser sessions or browser profiles for each CRM environment. 
+- Use separate browser sessions or browser profiles for each environment. 
 - Clear your browser cookies when switching between different Dynamics 365 environments. 
-- Consult your [Power Platform Admin Center (PPAC) Administrator](https://learn.microsoft.com/en-us/power-platform/admin/overview-role-power-platform-admin) if adjustments or disabling the setting across environments is needed (generally not recommended). 
+- Consult your [Power Platform admin center administrator](https://learn.microsoft.com/en-us/power-platform/admin/overview-role-power-platform-admin) if adjustments or turning off the setting across environments is needed, which is generally not recommended). 
 
-### Additional Important Considerations 
+### More considerations 
 
 | Consideration | Explanation | Guidance |
 | --- | --- | --- |
-| Security Against Cross-Site Attacks | Setting SameSite from None to Lax or Strict significantly reduces cross-site request forgery (CSRF) attacks by preventing cookie based cross-site requests like POST, PUT, DELETE, or PATCH. | Lax is generally recommended for protection without major usability impacts. |
-| Strict Setting Usage | The Strict setting provides maximum security but blocks all cross-site interactions, including direct user clicks from external sites where cookie is involved. | Recommended for highly confidential scenarios due to its strict restrictions. |
-| Embedding CRM (iFrames) or Custom Integrations | Embedding Dynamics CRM in external websites using iframes could require the SameSite setting to be None. Lax or Strict settings will cause embedding issues. | Use None for embedded scenarios and integrations. |
-| Consistency with Modern Browsers | Modern browsers default to Lax, offering protection against unintended cross-site data leakage without significantly affecting usability. | Lax setting is recommended as a balanced approach. |
+| Security against cross-site attacks | Setting SameSite from **None** to **Lax** or **Strict** significantly reduces cross-site request forgery (CSRF) attacks by preventing cookie-based cross-site requests like POST, PUT, DELETE, or PATCH. | Lax is generally recommended for protection without major usability impacts. |
+| Strict setting usage | The **Strict** setting provides maximum security but blocks all cross-site interactions, including direct user clicks from external sites where the cookie is involved. | Recommended for highly confidential scenarios due to its strict restrictions. |
+| Embedding Dynamics 365 (iFrames) or custom integrations | Embedding Dynamics 365 in external websites using iframes could require the SameSite setting to be **None**. **Lax** or **Strict** settings cause embedding issues. | Use **None** for embedded scenarios and integrations. |
+| Consistency with modern browsers | Modern browsers default to **Lax**, offering protection against unintended cross-site data leakage without significantly affecting usability. | **Lax** setting is recommended as a balanced approach. |
 
-## Pre-requisites 
+## Prerequisites 
 
-Before configuring SameSite, ensure: 
+Before configuring SameSite, be sure you meet the following requirements:
 
 - You have a non-production environment available for initial testing. 
-- You have the PPAC [System Administrator](https://learn.microsoft.com/en-us/power-platform/admin/security-roles-privileges) role for making changes to the organization entity in Dataverse. 
+- You have the Power Platform admin center [System Administrator](security-roles-privileges.md) role for making changes to the organization entity in Dataverse. 
 
 ## How to configure SameSite settings 
 
@@ -66,54 +64,54 @@ Currently, we need to perform the configuration through API call.
 
 ### Steps to configure SameSite attribute 
 
-1. Login to your dynamics organization where you want to apply setting. 
-2. Open browser console and run below script (You may need to run allow pasting if not already allowed to paste script in console).  
+1. Log in to your Dynamics 365 organization where you want to apply the setting. 
+2. Open a browser console and run the following script. (You may need to run _allow pasting_ if not already allowed to paste script in console).  
 
-> [!NOTE]
-> If you haven't configured the samesitemodeforsessioncookie, 0 is set as default (Currently 0 is mapped to None)
->
-> You can set samesitemodeforsessioncookie to 1 -> None, 2-> Lax, 3->Strict (Not recommended).
+    > [!NOTE]
+    > If you haven't configured the _samesitemodeforsessioncookie_, **0** is set as the default. (Currently 0 is mapped to **None**.)
+    >
+    > You can set _samesitemodeforsessioncookie_ to **1** for **None**, **2** for **Lax**, and **3** for **Strict**, which isn't recommended.
 
-```javascript
-const orgId = "<dynamics-org-id>"; 
-
-const url = `/api/data/v9.0/organizations(${orgId})`; 
-
-fetch(url, { 
-    method: "PATCH", 
-    headers: { 
-        "OData-MaxVersion": "4.0", 
-        "OData-Version": "4.0", 
-        "Accept": "application/json", 
-        "Content-Type": "application/json; charset=utf-8", 
-        "Prefer": "return=representation" 
-    }, 
-    body: JSON.stringify({ 
-        samesitemodeforsessioncookie: 1 // 1:None, 2:Lax 
+    ```javascript
+    const orgId = "<dynamics-org-id>"; 
+    
+    const url = `/api/data/v9.0/organizations(${orgId})`; 
+    
+    fetch(url, { 
+        method: "PATCH", 
+        headers: { 
+            "OData-MaxVersion": "4.0", 
+            "OData-Version": "4.0", 
+            "Accept": "application/json", 
+            "Content-Type": "application/json; charset=utf-8", 
+            "Prefer": "return=representation" 
+        }, 
+        body: JSON.stringify({ 
+            samesitemodeforsessioncookie: 1 // 1:None, 2:Lax 
+        }) 
     }) 
-}) 
-.then(response => { 
-    if (response.ok) { 
-        return response.json(); 
-    } else { 
-        throw new Error("Error updating: " + response.statusText); 
-    } 
-}) 
-.then(data => console.log(" Update successful:", data)) 
-.catch(error => console.error("Update failed:", error)); 
-```
+    .then(response => { 
+        if (response.ok) { 
+            return response.json(); 
+        } else { 
+            throw new Error("Error updating: " + response.statusText); 
+        } 
+    }) 
+    .then(data => console.log(" Update successful:", data)) 
+    .catch(error => console.error("Update failed:", error)); 
+    ```
 
-### Verify the Update 
+### Verify the update 
 
-Go to this URL: `<orgU-URL>/api/data/v9.0/organizations(<org-ID>)?$select=samesitemodeforsessioncookie`
+To verify the update, go to this URL: `<orgU-URL>/api/data/v9.0/organizations(<org-ID>)?$select=samesitemodeforsessioncookie`
 
-Check value should be updated. 
+Check that the value is updated. 
 
-Logout and re-login, samesite value for CRMOwinAuth cookie would be updated accordingly. 
+Log out and log in again. The SameSite value for the **CRMOwinAuth** cookie should be updated accordingly. 
 
-## Functional Testing 
+## Functional testing 
 
-Log out and login back into Dynamics 365. 
+Log out and log in again to Dynamics 365. 
 
 Check critical integrations and scenarios, especially iframe and cross-site interactions. 
 
@@ -121,6 +119,6 @@ Check critical integrations and scenarios, especially iframe and cross-site inte
 
 | Issue | Cause | Solution |
 | --- | --- | --- |
-| CRM pages fail to load in iframe | SameSite set to Lax or Strict | Change to None. |
-| Cookie setting persists between multiple CRM environments | Cookie shared across.crm.dynamics.com domain | Clear cookies or use separate browser sessions/profiles. |
-| Integrations failing (CSRF errors) | SameSite=Lax or Strict blocks necessary cookies | - use token-based authentication (recommended).<br>- Set to None. |
+| CRM pages fail to load in iframe. | SameSite set to **Lax** or **Strict**. | Change to **None**. |
+| Cookie setting persists between multiple environments. | The cookie is shared across the .crm.dynamics.com domain. | Clear cookies or use separate browser sessions, or profiles. |
+| Integrations failing (CSRF errors). | SameSite is set to **Lax** or **Strict** blocks necessary cookies. | Use token-based authentication, which is recommended. Or, configure the setting to **None**. |
