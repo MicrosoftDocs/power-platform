@@ -27,10 +27,10 @@ Admins can use the [Microsoft 365 Message center](/office365/admin/manage/messag
 1. Log in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 2. In the navigation pane, select **Admin centers**.
 3. Select **Microsoft 365**.
-4. Expand Health and select **Message Center**.
+4. Expand **Health** and select **Message Center**.
 5. On the page that loads, select **Preferences**.
 6. A flyout appears on the right, select the **Email** tab.
-7. Make sure the email notification settings are as expected. You can select Other e-mail addresses if you want the digest to be sent to different users or a shared mailbox.
+7. Make sure the email notification settings are as expected. You can select **Other e-mail addresses** if you want the digest to be sent to different users or a shared mailbox.
 8. Select the **Send me a weekly digest about services I select** box, and select the services you wish to receive information about.
 9. Press **Save**.
 
