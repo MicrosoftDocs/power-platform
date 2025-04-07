@@ -1,40 +1,38 @@
 ---
 title: Ensure data retention and mobility
-description: Protect your data with Power Platform's flexible backup and retention capabilities. Learn how to ensure resilience and recoverability for your business-critical data.
-#customer intent: As a Power Platform user, I want to understand how to enhance data resilience so that I can protect and recover business-critical data effectively.
+description: Protect your data with Power Platform's flexible backup and retention capabilities to ensure resilience and recoverability for business-critical data.
+#customer intent: As a Power Platform admin, I want to understand how to enhance data resilience so that I can protect and recover business-critical data effectively.
 author: manuelap-msft
 ms.component: pa-admin
-ms.topic: concept-article
+ms.topic: best-practice
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
-ms.date: 04/01/2025
+ms.date: 04/07/2025
 ---
 
 # Ensure data retention and mobility
 
-In today’s data-driven world, ensuring that your data remains available, secure, and recoverable in the face of disruptions is essential for businesses operating at a global scale. Microsoft Power Platform enables you to protect and recover their data seamlessly with a range of flexible backup and retention capabilities.
+In today's data-driven world, ensuring that your data remains available, secure, and recoverable in the face of disruptions is essential for businesses operating at a global scale. Microsoft Power Platform enables you to protect and recover their data seamlessly with a range of flexible backup and retention capabilities.
 
 This article provides recommendations to help you build robust and resilient solutions.
 
 > [!NOTE]
-> Our primary guidance for building reliability, resiliency, and failure recovery strategies in your architecture design can be found in [Reliability recommendations in Power Platform Well-Architected](/power-platform/well-architected/reliability/checklist). Your makers, solution architects, and enterprise architects should review the recommendations provided there to ensure the best solution design for their workloads. This article provides a summary of key recommendations that can form part of your tenant adoption strategy, helping you achieve robust and resilient Power Platform solutions.
-
-Here are some recommendations for enhancing data resilience in Power Platform:
+> Find guidance for building reliability, resiliency, and failure recovery strategies in your architecture design in [Recommendation checklist for Reliability in Power Platform Well-Architected](../../well-architected/reliability/checklist.md). Your makers, solution architects, and enterprise architects should review these recommendations to ensure the best solution design for their workloads. This article summarizes key recommendations for your tenant adoption strategy to help you build robust and resilient Power Platform solutions.
 
 ## Regular backups
 
-Environments that have a database are [automatically backed up and can be restored](/power-platform/admin/backup-restore-environments) to any selected system backup in the last seven days. These backups include all the data, configurations, and customizations within the environment. In addition to automatic backups, administrators can also create manual backups at any time. Manual backups are useful before making significant changes or updates to the environment.
+Environments that have a database are [automatically backed up and can be restored](../../admin/backup-restore-environments.md) to any selected system backup in the last seven days. These backups include all the data, configurations, and customizations within the environment. 
 
-You can now extend their backup retention from seven to 28 days by making an environment [managed](/power-platform/admin/managed-environment-overview). Learn more in [Back up and restore environments](/power-platform/admin/backup-restore-environments).
+In addition to automatic backups, administrators can also create manual backups at any time. Manual backups are useful before making significant changes or updates to the environment. You can extend backup retention from seven to 28 days by making an environment a [Managed Environment](../../admin/managed-environment-overview.md).
 
 ## Implement data loss prevention (DLP) policies
 
-Define and enforce data loss prevention policies to prevent unauthorized data access and ensure compliance with organizational standards. Learn more in[Establish a DLP strategy](dlp-strategy.md).
+Define and enforce data loss prevention policies to prevent unauthorized data access and ensure compliance with organizational standards. Learn more in [Establish a DLP strategy](dlp-strategy.md).
 
 ## Use role-based access control (RBAC)
 
-Implement role-based access control to restrict access to sensitive data, ensuring that only authorized users can access and modify data. Learn more in [Security in Microsoft Dataverse](/power-platform/admin/wp-security).
+Implement role-based access control to restrict access to sensitive data, ensuring that only authorized users can access and modify data. Learn more in [Security in Microsoft Dataverse](../../admin/wp-security.md).
 
 ## Enable data encryption
 
@@ -42,36 +40,35 @@ Power Platform encrypts data both at rest and in transit with a strong Microsoft
 
 Learn more:
 
-- [About data encryption](/power-platform/admin/about-encryption)
-- [Data protection](/power-platform/admin/wp-compliance-data-privacy#data-protection)
+- [About data encryption](../../admin/about-encryption.md)
+- [Data protection](../../admin/wp-compliance-data-privacy.md#data-protection)
 
-For organizations requiring greater control over their data security and compliance, customer managed keys (CMK) ensure that data isn't only protected both in transit and at rest, but also give organizations control over their encryption keys for enhancing data security.
+For organizations that need more control over data security and compliance, customer-managed keys (CMK) protect data in transit and at rest and give organizations control over their encryption keys to enhance security.
 
 Learn more:
 
-- [Manage your customer-managed encryption key](/power-platform/admin/customer-managed-key)
-- [Lock environments by revoking key vault and/or key permission access](/power-platform/admin/cmk-lock-unlock)
+- [Manage your customer-managed encryption key](../../admin/customer-managed-key.md)
+- [Lock environments by revoking key vault and/or key permission access](../../admin/cmk-lock-unlock.md)
 
 ## Long-term retention
 
-
-Either implement custom data archiving solutions to store historical data securely and efficiently, ensuring easy retrieval when needed or use long-term retention policies on tables to keep parent and associated child data—including activities, emails, and attachments—retained as a set for compliance and auditing purposes. Learn more in [Long-term retention for tables in Dataverse](/power-apps/maker/data-platform/data-retention-set#enable-a-table-for-long-term-retention).
+Either implement custom data archiving solutions to store historical data securely and efficiently, ensuring easy retrieval when needed, or use long-term retention policies on tables to keep parent and associated child data—including activities, emails, and attachments—retained as a set for compliance and auditing purposes. Learn more in [Enable a table for long term retention](/power-apps/maker/data-platform/data-retention-set#enable-a-table-for-long-term-retention).
 
 ## Recycle bin for table records
 
-The recycle bin feature allows users to restore deleted records from tables—across various deletion scenarios—within a configurable time frame. This feature ensures data recovery when needed. Learn more in [Restore deleted Dataverse table records](/power-platform/admin/restore-deleted-table-records).
+The recycle bin feature allows users to restore deleted records from tables—across various deletion scenarios—within a configurable time frame. This feature ensures data recovery when needed. Learn more in [Restore deleted Dataverse table records](../../admin/restore-deleted-table-records.md).
 
 ## Monitor and alert
 
-Set up monitoring and alerting systems using tools like Azure Application Insights to detect and respond to data-related issues promptly.
+Set up monitoring and alerting systems using tools like Azure Application Insights to detect and respond promptly to data-related issues.
 
-Learn more about [recommendations for designing a reliable monitoring and alerting strategy](/power-platform/well-architected/reliability/monitoring-alerting-strategy).
+Learn more in [Recommendations for designing a reliable monitoring and alerting strategy](../../well-architected/reliability/monitoring-alerting-strategy.md).
 
 ## Managed operations
 
-[Managed operations](/power-platform/admin/operations/overview) is a suite of capabilities that empower organizations of all sizes to build, deploy, and operate their most critical workloads. These capabilities are built with both existing and emerging AI-driven solutions in mind. They ensure stability and minimize disruption at the same time that they maximize the productivity of operations teams.
+[Managed operations](../../admin/operations/overview.md) is a suite of capabilities that empower organizations of all sizes to build, deploy, and operate their most critical workloads. These capabilities are built with both existing and emerging AI-driven solutions in mind. They ensure stability and minimize disruption at the same time that they maximize the productivity of operations teams.
 
-Learn more about [what you can do with managed operations](/power-platform/admin/operations/overview).
+Learn more about [what you can do with managed operations](../../admin/operations/overview.md).
 
 ## Conduct regular audits
 
@@ -89,12 +86,12 @@ Having a central source, such as a [SharePoint site or wiki](wiki-community.md),
 
 ## Create a disaster recovery plan
 
-Microsoft Business Applications provide business continuity and disaster recovery (BCDR) capabilities to all production environments in Dynamics 365 and Power Platform software as a service (SAAS) applications. Learn how [Microsoft ensures your production data is resilient during regional outages](/power-platform/admin/business-continuity-disaster-recovery).
+Microsoft Business Applications provide business continuity and disaster recovery (BCDR) capabilities to all production environments in Dynamics 365 and Power Platform software as a service (SAAS) applications. Learn how [Microsoft ensures your production data is resilient during regional outages](../../admin/business-continuity-disaster-recovery.md).
 
-Develop a comprehensive disaster recovery plan that outlines the steps to take if there's data loss or system failure. Regularly test and update this plan. Learn more about [designing a disaster recovery strategy](/power-platform/well-architected/reliability/disaster-recovery).
+Develop a comprehensive disaster recovery plan that outlines the steps to take if there's data loss or system failure. Regularly test and update this plan. Learn more about [designing a disaster recovery strategy](../../well-architected/reliability/disaster-recovery.md).
 
-## Related resources
+## Related information
 
-- [Managed operations](/power-platform/admin/operations/overview)
-- [Power Platform Well-Architected - Reliability recommendations](/power-platform/well-architected/reliability/checklist)
+- [Managed operations](../../admin/operations/overview.md)
+- [Power Platform Well-Architected Recommendation checklist for Reliability](../../well-architected/reliability/checklist.md)
 
