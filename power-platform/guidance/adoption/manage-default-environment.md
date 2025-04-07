@@ -105,7 +105,7 @@ Three PowerShell cmdlets manage app quarantines:
 - **Quarantine:** 
 
     ```powershell
-    `Set-AppAsQuarantined -EnvironmentName <EnvironmentName> -AppName <AppName>  
+    Set-AppAsQuarantined -EnvironmentName <EnvironmentName> -AppName <AppName>  
     ```
 
 - **Unquarantine:**  

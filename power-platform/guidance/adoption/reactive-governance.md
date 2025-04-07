@@ -19,21 +19,21 @@ Reactive governance focuses on responding to recommendations and optimizing perf
 
 ## Processes and tasks for reactive governance
 
-- **Business continuity risks**
+- **Business continuity risks:**
     - **Ownerless resources**: Resources owned by individuals who leave the organization create business continuity risks.
     - **High-value resources in the default environment**: Resources in the default environment might not follow application lifecycle management (ALM) best practices, posing a business continuity risk. 
     - **Use [Power Platform Advisor](../../admin/power-platform-advisor.md)** to identify and take action on resources that pose business continuity risks.
 
-- **Tenant hygiene**
+- **Tenant hygiene:**
     - **Overshared resources**: Overshared resources can lead to security vulnerabilities and inefficiencies. 
     - **Inactive resources**: Resources not used with a specified time frame require review and potential deletion to free resources and maintain a clean environment. 
     - **Use [Power Platform Advisor](../../admin/power-platform-advisor.md)** to identify and take action on resources that pose business continuity risks.
 
-- **Licenses**
+- **Licenses:**
     - **Pending license requests**: Manage pending license requests promptly to ensure users have the necessary access to perform their tasks efficiently. Use [Power Platform Advisor](../../admin/power-platform-advisor.md) to identify and take action on resources that pose business continuity risks. 
     - **Intelligent licensing recommendations**: Review [recommendations](../../admin/get-recommendations-licensing.md) about who in your organization would benefit from having a Power Apps premium license.
 
-- **Change requests and approvals**
+- **Change requests and approvals:**
     - **Requests for new environments**: Implement an approval workflow for new environment requests to ensure they align with organizational needs and governance policies. 
     - **Changes to DLP policies**: Data Loss Prevention (DLP) policies protect sensitive data. Any changes to these policies should go through a formal approval process to maintain security and compliance.
     - **Review [environment and DLP request components](../coe/env-mgmt.md) in the CoE Starter Kit** to automate these processes. 

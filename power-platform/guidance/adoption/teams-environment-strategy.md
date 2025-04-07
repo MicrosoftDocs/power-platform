@@ -35,11 +35,11 @@ We recommend setting up reactive governance workflows and monitoring abilities. 
 
 1. The team owner provides a business justification for their new environment within *n* days of creating the environment.
 
-    :::image type="content" source="media/teams-1.png" alt-text="Screenshot from Microsoft Teams prompting a Teams owner to provide a business justification." lightbox="media/teams-1.png":::
+    :::image type="content" source="media/teams-1.png" alt-text="Screenshot from Microsoft Teams prompting a Teams owner to provide a business justification.":::
 
 1. An admin approves or rejects the submitted business justification, and optionally marks it for later review.
 
-    :::image type="content" source="media/teams-2.png" alt-text="Screenshot from Power Apps Environment requesting admin approval or rejection of the submitted business justification." lightbox="media/teams-2.png":::
+    :::image type="content" source="media/teams-2.png" alt-text="Screenshot from Power Apps Environment requesting admin approval or rejection of the submitted business justification.":::
 
 1. An automated cleanup runs periodically to delete rejected or unclaimed environments (environments for which justification wasn't provided). If needed, deleted environments can be restored within seven days by using the [recover environment feature in the Power Platform admin center](../../admin/recover-environment.md#power-platform-admin-center).
 
@@ -55,11 +55,11 @@ Admins can use Power Apps and Power Automate analytics reports in the Power Plat
 
 Admins can monitor capacity usage for Microsoft Teams environments by using dedicated [capacity views in the Power Platform admin center](../../admin/about-teams-environment.md#capacity-limits). Notifications are sent to the makers in Microsoft Teams when the environment is nearing 80 percent of its capacity. Notifications are also sent to tenant admins when the tenant is reaching 80 percent capacity. These capacity limits can't be extended. Admins can monitor inactive Microsoft Teams environments in the tenant and invoke cleanup when necessary, in addition to performing automated cleanup of unused environments to help free up capacity.
 
-:::image type="content" source="media/teams-4.png" alt-text="Screenshot of dedicated view for monitoring Microsoft Teams environments capacity in Power Platform admin center." lightbox="media/teams-4.png":::
+:::image type="content" source="media/teams-4.png" alt-text="Screenshot of dedicated view for monitoring Microsoft Teams environments capacity in Power Platform admin center.":::
 
 A dashboard in the CoE Starter Kit further identifies the usage of Dataverse for Teams environments, in addition to inactive environments without apps or flows.
 
-:::image type="content" source="media/teams-3.png" alt-text="Screenshot of CoE Starter Kit dashboard displaying usage of Dataverse for Teams environments." lightbox="media/teams-3.png":::
+:::image type="content" source="media/teams-3.png" alt-text="Screenshot of CoE Starter Kit dashboard displaying usage of Dataverse for Teams environments.":::
 
 ## Set up data loss prevention policies
 
