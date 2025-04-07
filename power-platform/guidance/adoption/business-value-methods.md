@@ -30,7 +30,7 @@ ms.custom:
 
 [Measuring the business value](business-value.md) of Power Platform solutions is essential to ensure success and return on investment. By evaluating the impact of Power Platform solutions, organizations can identify areas for improvement, optimize resources, and demonstrate the value of their investments to stakeholders. 
 
-This article provides guidance on how to measure the business value of Power Platform solutions, including choose the best methods and tools, and walks you through an example scenario to help demonstrate the process.
+This article provides guidance on how to measure the business value of Power Platform solutions, including how to choose the best methods and tools, and walks you through an example scenario to help demonstrate the process.
 
 ## Methodologies
 
@@ -41,7 +41,7 @@ Measuring the business value of Power Platform solutions involves qualitative an
 - **Key performance indicators (KPIs)**: KPIs provide quantifiable data about the solution’s performance. Monitor metrics like response times, resolution times, error rates, user adoption rates, and cost savings. Ensure KPIs align with business objectives.
 - **User analytics**: User analytics tools help understand user behavior and interaction with the solution. Track adoption rates, feature usage, and user engagement. Tools like Power BI visualize this data for better insights.
 - **Return on investment (ROI) calculators**: Calculating ROI involves comparing implementation costs against the benefits obtained. Consider both tangible and intangible benefits, such as efficiency gains, user satisfaction, and reduced operational costs. Use standardized ROI calculation methods to ensure accuracy.
-- **360-degree feedback**: Gather feedback from all angles, from end-users and customers to support agents and IT teams. This holistic approach ensures a comprehensive view of the solution's impact. Use tools like Microsoft Forms or third-party survey platforms to facilitate this process.
+- **360-degree feedback**: Gather feedback from all angles, from end-users and customers to support agents and IT teams. This holistic approach ensures a comprehensive view of the solution's impact. Use Microsoft Forms to facilitate this process.
 - **Data integration and automation**: Automating data collection and integration with Power Platform tools ensures accurate and real-time data for measurement, reducing manual entry. Use connectors and APIs to streamline data flow between systems.
 - **Periodic reviews**: Periodic reviews and assessments help you track progress over time and make informed adjustments based on evolving needs. Schedule regular review meetings and use dashboards to present key metrics and insights.
 - **Benchmarking**: Compare the performance of your Power Platform solutions against industry standards or similar implementations within your organization. Benchmarking helps identify areas for improvement and set realistic performance targets.
@@ -89,8 +89,8 @@ Forms are stored in filing cabinets at each depot, which means there's no centra
 
 - **Reduction of risk**: Reduces the number of unsafe vehicles in operation and increases the number of vehicle checks being carried out.
 - **Reduction of cost**: Reduces vehicle maintenance by identifying issues earlier.
-- **Improved employee experience**: Improves with a simplified process.
-- **Improved customer experience**: Improves with less disruption.
+- **Improved employee experience**: Improves experience with a simplified process for employees to fill out the form.
+- **Improved customer experience**: Improves customer experience with less disruption as vehicles checks are monitored better.
 
 ### Business value assessment outcome
 

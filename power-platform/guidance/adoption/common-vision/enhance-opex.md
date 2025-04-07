@@ -9,11 +9,13 @@ ms.date: 02/28/2025
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
+ms.contributors: 
+- vabhavir
 ---
 
 # Enhance operational efficiency
 
-This article describes a common vision for Power Platform—enhancing operational efficiency. It follows a [structured framework](../vision.md) that includes defining clear objectives, measurable key results, and actionable initiatives. This article aims to guide you in creating your own vision for Power Platform adoption.
+This article describes a common goal for Power Platform—enhancing operational efficiency. It follows a [structured framework](../vision.md) that includes defining clear objectives, measurable key results, and actionable initiatives. This article aims to guide you in creating your own vision for Power Platform adoption.
 
 ## Vision
 
@@ -42,7 +44,6 @@ Typical key results, aligned with some of the [objectives](#objectives), for enh
 - **Optimize business processes and align effective resourcing**:
     - Build more consistent and sustainable automation, preventing chaos, with a target of ___% reduction in process variability. 
     - Ensure Power Platform capabilities are easy to discover, reuse solutions, and work faster, aiming for ___% increase in solution reuse. 
-    - Deploy ___ more processes per year. 
     - Achieve ___% increase in automated processes year over year. 
     - Reduce manual work by ___%. 
     - Decrease effort and duration to execute a given process by ___ hours. 
@@ -50,7 +51,6 @@ Typical key results, aligned with some of the [objectives](#objectives), for enh
 - **Reduce cost and effort to license, build, and deploy**:
     - Solve bigger technical problems with measurable savings, targeting a cost reduction of ___%. 
     - Reduce redundant licensing on other platforms by ___. 
-    - Invest ___ dollars in Power App development. 
     - Achieve a reduction in running costs by ___%. 
 - **Increase productivity for business and IT**:
     - Increase productivity of IT team members, moving from idea to execution faster, with a target of ___% reduction in time to market. 
@@ -63,13 +63,13 @@ Initiatives are the specific actions or projects that need to be implemented to 
 Typical initiatives, aligned with some of the [objectives](#objectives), for enhancing operational efficiency are:
 
 - **Optimize business processes and align effective resourcing**:
-    - Develop return of investment (ROI) metrics and value monitoring capability. 
-    - Define and implement ALM processes to streamline and manage app deployments. 
-    - Establish foundational Platform operating roles to provide clarity on "who does what" to manage the platform. 
+    - [Develop return of investment (ROI) metrics](../business-value.md) and value monitoring capability. 
+    - Define and [implement application lifecycle management (ALM)](../alm.md) processes to streamline and manage app deployments. 
+    - [Establish foundational operating roles](../roles.md) to provide clarity on "who does what" to manage the platform. 
 - **Digitize manual processes and shift to value creation tasks**:
     - Identify and understand manual processes per team. 
-    - Automate routine Platform support activities & request processes (for example, environment request form). 
-    - Create a Maker Portal with onboarding collateral, development guidelines, self-guided learning, and success stories. 
+    - Automate routine support activities & request processes (for example, environment request form). 
+    - [Create a Maker Portal](../wiki-community.md#sharepoint-communication-site) with onboarding collateral, development guidelines, self-guided learning, and success stories. 
 - **Reduce time to market for Power Platform solutions**: 
     - Develop automation and alerting for key assurance controls. 
     - Implement a peer-review mechanism for popular citizen-developed apps. 
@@ -83,10 +83,11 @@ Typical initiatives, aligned with some of the [objectives](#objectives), for enh
     - Establish a method by which IT can proactively monitor for newly released platform capabilities. 
 - **Develop innovative solutions that increase productivity**: 
     - Start using AI/Copilots in platform areas. 
-    - Identify community outreach opportunities - success stories, how to share for awareness tools and process. 
-    - Develop and publish a catalog of reusable app templates & components to help makers build with a reliable, reusable toolkit. 
+    - Identify community outreach opportunities - for example, [sharing success stories](../show-and-tell.md#share-success-stories) or [organizing show and tell events](../show-and-tell.md#organize-show-and-tell-sessions).
+    - Develop and [publish a catalog of reusable templates & components](../reusable.md) to help makers build with a reliable, reusable toolkit. 
 - **Break down siloes, improve process efficiency, and achieve unification**:
-    - Establish Governance and best practices. 
-    - Create a RACI for the Power Platform work. 
+    - Establish and publish governance guidelines.
+    - Create a [Responsible, Accountable, Consulted, Informed (RACI) matrix](../roles.md) for the Power Platform roles and responsibilities.
     - Establish and communicate a way for makers to easily collaborate with IT. 
-    - Integrate App-in-a-Day training. 
+    - Establish a [training strategy](../training-strategy.md).
+

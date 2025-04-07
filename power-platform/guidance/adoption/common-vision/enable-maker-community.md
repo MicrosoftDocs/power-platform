@@ -9,15 +9,17 @@ ms.date: 02/28/2025
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
+ms.contributors: 
+- vabhavir
 ---
 
 # Nurture a maker and champion community
 
-This article describes a common vision for Power Platform—nurturing a maker and champion community. It follows a [structured framework](../vision.md) that includes defining clear objectives, measurable key results, and actionable initiatives. This article aims to guide you in creating your own vision for Power Platform adoption.
+This article describes a common goal for Power Platform—nurturing a maker and champion community. It follows a [structured framework](../vision.md) that includes defining clear objectives, measurable key results, and actionable initiatives. This article aims to guide you in creating your own vision for Power Platform adoption.
 
 ## Vision
 
-Nurturing a maker and champion community is a common vision for Power Platform adoption because it fosters a culture of innovation, collaboration, and continuous improvement. With a network of enthusiastic and knowledgeable users, organizations can drive widespread adoption and maximize the platform's potential. Champions and makers serve as advocates, mentors, and problem-solvers, helping to spread best practices and support their peers.
+[Nurturing a maker and champion community](../community-goals.md) is a common vision for Power Platform adoption because it fosters a culture of innovation, collaboration, and continuous improvement. With a network of enthusiastic and knowledgeable users, organizations can drive widespread adoption and maximize the platform's potential. Champions and makers serve as advocates, mentors, and problem-solvers, helping to spread best practices and support their peers.
 
 This community-driven approach empowers employees to take ownership of their projects, reduces reliance on IT, and accelerates the development of solutions. It also encourages cross-team collaboration, leading to more innovative and impactful outcomes. By recognizing and rewarding contributions, organizations can motivate and retain talent, ensuring sustained engagement and growth.
 
@@ -29,18 +31,17 @@ Objectives are the key themes or focus areas that the strategy aims to achieve. 
 
 Typical objectives for nurturing a maker and champion community include:
 
-- **Build a thriving low-code community**: Foster a vibrant and engaged low-code community that encourages incremental innovation and widespread participation.
-- **Identify and recruit potential champions**: Build a network of enthusiastic and knowledgeable users who can advocate for the Power Platform and support their peers.
+- **Build a thriving low-code community**: [Foster a vibrant and engaged low-code community](../community-goals.md) that encourages incremental innovation and widespread participation.
+- **Identify and recruit [potential champions](../champions.md**: Build a network of enthusiastic and knowledgeable users who can advocate for the Power Platform and support their peers.
 - **Increase awareness**:  Increase awareness and understanding of the Power Platform through targeted evangelism and comprehensive training programs.
-- **Create a maker onboarding program**: Streamline the onboarding process for new makers, ensuring they have the tools and knowledge to succeed.
+- **Create a maker onboarding program**: Streamline the [onboarding process for new makers](../onboard-makers.md), ensuring they have the tools and knowledge to succeed.
 - **Empower developer and maker community with process and resource clarity**: Provide clear guidance and resources to enable developers and makers to create effective solutions.
-- **Provide specialized training and resources**: Implement comprehensive upskilling programs to ensure users are proficient in using Power Platform.
-- **Showcase success stories and best practices**: Inspire and guide the community by highlighting successful projects and effective strategies.
-- **Develop a centralized communication platform**: Provide a single source of truth for all Power Platform-related information. Ensure seamless communication and collaboration within the maker and champion community.
+- **Provide specialized training and resources**: Implement comprehensive [upskilling programs](../training-strategy.md) to ensure users are proficient in using Power Platform.
+- **[Showcase success stories](../show-and-tell.md) and best practices**: Inspire and guide the community by highlighting successful projects and effective strategies.
+- **Develop a [centralized communication platform](../wiki-community.md#sharepoint-communication-site)**: Provide a single source of truth for all Power Platform-related information. Ensure seamless communication and collaboration within the maker and champion community.
 - **Drive initiatives to kickstart and maintain adoption**: Plan initiatives that drive initial adoption and sustain long-term engagement with Power Platform.
 - **Empower employees to solve their own problems**: Enable employees to independently address and resolve issues using Power Platform. Reduce barriers to development and streamline the app-building process.
-- **Ensure makers have a support foundation**: Provide robust support to makers to ensure their success.
-- **Establish group specific adoption programs**:  Address the unique needs of different user segments to ensure widespread adoption.
+- **Ensure makers have a support foundation**: [Provide robust support](../support-strategy-makers.md) to makers to ensure their success.
 - **Foster collaboration and knowledge sharing**: Create a collaborative environment where makers and champions can share insights and best practices.
 - **Recognize and reward contributions**: Motivate and retain champions by acknowledging their efforts and achievements.
 - **Encourage continuous learning and development**: Promote ongoing skill development and innovation within the community.
@@ -93,9 +94,9 @@ Typical initiatives, aligned with some of the [objectives](#objectives), for nur
     - Implement automated welcome messages and portal access for new makers.
     - Develop an onboarding newsletter and provide regular updates and guidance on Power Platform governance and training resources 
 - **Empower developer and maker community with process and resource clarity**:
-    - Establish Application Lifecycle Management processes to streamline app deployments.
-    - Create guidelines for app classifications, environment strategy, and data loss prevention measures.
-    - Clarify roles and responsibilities for managing the platform.
+    - Establish application lifecycle management processes to streamline solution deployments.
+    - Create guidelines for solution classifications, environment strategy, and data loss prevention measures.
+    - Clarify [roles and responsibilities](../roles.md) for managing the platform.
 - **Provide specialized training and resources**:
     -  Develop a Community of Practice for Power Platform practitioners to share knowledge and best practices.
     - Introduce gamified elements to make learning engaging and competitive.

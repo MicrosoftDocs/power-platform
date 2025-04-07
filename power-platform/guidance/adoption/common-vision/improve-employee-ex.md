@@ -9,15 +9,17 @@ ms.date: 02/28/2025
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
+ms.contributors: 
+- vabhavir
 ---
 
 # Improve employee experience
 
-This article describes a common vision for Power Platform—improving employee experience. It follows a [structured framework](../vision.md) that includes defining clear objectives, measurable key results, and actionable initiatives. This article aims to guide you in creating your own vision for Power Platform adoption.
+This article describes a common goal for Power Platform—improving employee experience. It follows a [structured framework](../vision.md) that includes defining clear objectives, measurable key results, and actionable initiatives. This article aims to guide you in creating your own vision for Power Platform adoption.
 
 ## Vision
 
-Improving employee experience is a common vision for Power Platform adoption because it directly enhances productivity, engagement, and overall job satisfaction. By providing employees with intuitive, low-code tools, Power Platform empowers them to solve their own problems, streamline workflows, and innovate without heavy reliance on IT. This autonomy fosters a sense of ownership and accomplishment, leading to higher morale and motivation. Additionally, the platform's collaborative features promote teamwork and knowledge sharing, breaking down silos and creating a more connected and supportive work environment. A better employee experience translates to improved performance, reduced turnover, and a more agile and resilient organization, making it a key driver for adopting Power Platform.
+Improving employee experience is a common vision for Power Platform adoption because it directly enhances productivity, engagement, and overall job satisfaction. By providing employees with intuitive, low-code tools, Power Platform empowers them to solve their own problems, streamline workflows, and innovate without heavy reliance on IT. This autonomy fosters a sense of ownership and accomplishment, leading to higher morale and motivation. The platform's collaborative features promote teamwork and knowledge sharing, breaking down silos and creating a more connected and supportive work environment. A better employee experience translates to improved performance, reduced turnover, and a more agile and resilient organization, making it a key driver for adopting Power Platform.
 
 ## Objectives
 
@@ -53,30 +55,28 @@ Initiatives are the specific actions or projects that need to be implemented to 
 Typical initiatives, aligned with some of the [objectives](#objectives), for improving employee experience include:
 
 - **Foster a collaborative culture**: 
-    - Implement collaboration tools and platforms to facilitate communication between Power Platform makers. 
+    - Implement [collaboration tools and platforms](../wiki-community.md) to facilitate communication between Power Platform makers. 
     - Organize regular cross-functional workshops and activities that help teams collaborate with each other, such as hackathons.
     - Recognize and reward collaborative efforts and successful team projects.
-    - Create and sustain an online community of practice for Power Platform practitioners
+    - [Create and sustain an online community](../community-goals.md) of practice for Power Platform practitioners
     - Establish and communicate a way for makers to easily collaborate with IT 
 - **Enhance employee satisfaction**: 
     - Conduct regular surveys to gather feedback on employee needs and preferences.
-    - Provide training and support to help employees effectively use Power Platform.
+    - [Provide training](../training-strategy.md) and [support](../support-strategy.md) to help employees effectively use Power Platform.
     - Implement initiatives that address common pain points and improve the work environment.
 - **Empower employees with self-service capabilities**: 
     - Offer comprehensive training programs on low-code development.
-    - Develop a self-service maker portal with onboarding collateral, development guidelines, self-guided learning, and success stories.
+    - [Develop a self-service maker portal](../wiki-community.md#sharepoint-communication-site) with onboarding collateral, development guidelines, self-guided learning, and success stories.
     - Encourage a culture of experimentation and innovation by providing support and recognition for self-initiated projects.
 - **Drive tangible outcomes**: 
     - Set clear goals and metrics for collaborative projects and employee initiatives.
     - Monitor and evaluate the impact of these projects on business performance.
-    - Share success stories and case studies to highlight the tangible benefits of employee-driven innovation.
+    - [Share success stories](../show-and-tell.md) and case studies to highlight the tangible benefits of employee-driven innovation.
 - **Streamline workflows and reduce friction**: 
-    - Identify and prioritize workflows that can be automated using the Power Platform.
-    - Develop and deploy automation solutions to streamline these workflows.
+    - Identify and prioritize processes that can be automated using Power Platform.
+    - Develop and deploy automation solutions to streamline these processes.
     - Provide training and support to help employees adapt to new automated processes.
 - **Promote continuous learning and development**:
     - Offer access to online courses, certifications, and learning resources.
     - Create mentorship programs to support career development.
     - Recognize and reward continuous learning and skill advancement.
-
-

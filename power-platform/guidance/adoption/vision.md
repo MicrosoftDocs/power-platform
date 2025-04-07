@@ -9,6 +9,8 @@ ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
 ms.date: 03/07/2025
+ms.contributors: 
+- vabhavir
 ---
 
 # Develop a vision for adopting Microsoft Power Platform

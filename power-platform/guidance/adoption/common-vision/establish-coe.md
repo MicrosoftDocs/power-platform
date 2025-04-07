@@ -9,17 +9,19 @@ ms.date: 02/28/2025
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
+ms.contributors: 
+- vabhavir
 ---
 
 # Establish a Center of Excellence with governance patterns and practices
 
-This article describes a common vision for Power Platform - establishing a Center of Excellence (CoE) with robust governance patterns and practices. It follows a [structured framework](../vision.md) that includes defining clear objectives, measurable key results, and actionable initiatives. This article aims to guide you in creating your own vision for Power Platform adoption.
+This article describes a common goal for Power Platform - establishing a Center of Excellence (CoE) with robust governance patterns and practices. It follows a [structured framework](../vision.md) that includes defining clear objectives, measurable key results, and actionable initiatives. This article aims to guide you in creating your own vision for Power Platform adoption.
 
 ## Vision
 
-Establishing a Center of Excellence (CoE) with governance patterns and practices is a common vision for Power Platform adoption because it provides a structured approach to managing and scaling the platform effectively. 
+[Establishing a Center of Excellence (CoE)](../coe.md) with governance patterns and practices is a common vision for Power Platform adoption because it provides a structured approach to managing and scaling the platform effectively. 
 
-A CoE serves as a centralized team or function that oversees the administration, governance, and nurturing of Power Platform adoption within an organization. By implementing governance patterns and practices, the CoE ensures that the platform is used securely and efficiently, mitigating risks such as compliance and security issues. Additionally, the CoE fosters best practices, educates new makers, and provides a hub for sharing success stories and guidelines. Overall, a CoE with robust governance practices helps organizations maximize the value of their Power Platform investment, driving innovation while maintaining control and compliance.
+A CoE serves as a centralized team or function that oversees the administration, governance, and nurturing of Power Platform adoption within an organization. The CoE implements governance patterns and practices to ensure that the platform is used securely and efficiently, and to mitigate risks such as compliance and security issues. The CoE fosters best practices, educates new makers, and provides a hub for sharing success stories and guidelines. A CoE with robust governance practices helps organizations maximize the value of their Power Platform investment, driving innovation while maintaining control and compliance.
 
 ## Objectives
 
@@ -27,20 +29,20 @@ Objectives are the key themes or focus areas that the strategy aims to achieve. 
 
 Typical objectives for establishing a Center of Excellence with governance patterns and practices are:
 
-- **Standardize governance patterns and practices**: Establish consistent governance frameworks and best practices to ensure uniformity across the organization. Consider setting up environment strategies, configuring data loss prevention policies, and automating policies using management connectors
-- **Document and share governance policies**: Develop comprehensive documentation that outlines governance policies, procedures, and guidelines. Ensure that all stakeholders have access to and understand these documents to maintain consistency and compliance.
-- **Define and communicate roles and responsibilities**: Assign specific roles and responsibilities to team members involved in the CoE. Clearly communicate these roles to ensure accountability and effective collaboration. 
+- **Standardize governance patterns and practices**: Establish consistent governance frameworks and best practices to ensure uniformity across the organization. Consider setting up an [environment strategy](../environment-strategy.md), [configuring data loss prevention policies](../dlp-strategy.md), and [automating policies using management connectors](../reactive-governance.md).
+- **Document and share governance policies**: Develop comprehensive documentation that outlines governance policies, procedures, and guidelines. Ensure that all stakeholders have access to and understand these documents to maintain consistency and compliance. [Create a SharePoint communication site](../wiki-community.md#sharepoint-communication-site) to share rules of engagement and guidelines with your community.
+- **Define and communicate roles and responsibilities**: Assign specific [roles and responsibilities](../roles.md) to team members involved with the CoE. Clearly communicate these roles to ensure accountability and effective collaboration. 
 - **Foster innovation and trust**: Implement governance practices that encourage innovation while maintaining control and compliance. Provide a secure and scalable environment for users to experiment and innovate.
-- **Design an onboarding process that doesn't hinder creativity**: Design an onboarding process that is efficient and supportive, allowing new users to quickly get up to speed without stifling their creativity. Provide training and resources to help them understand and adhere to governance policies.
-- **Establish a process to evaluate and prioritize use cases**: Establish a structured process for evaluating and prioritizing use cases and ensure that the most impactful and strategic initiatives are addressed first.
-- **Develop an environment strategy**: Develop a well-defined [environment strategy](../../white-papers/environment-strategy.md) that includes guidelines for creating, managing, and decommissioning environments. An environment strategy helps in maintaining control and ensuring optimal use of resources and capacity.
+- **Design an onboarding process that doesn't hinder creativity**: Design an [onboarding process](../onboard-makers.md) that is efficient and supportive, allowing new users to quickly get up to speed without stifling their creativity. Provide [training and resources](../ready-overview.md) to help makers understand and adhere to governance policies.
+- **Establish a process to evaluate and prioritize use cases**: Establish a structured process for [evaluating and prioritizing use cases](../solution-envisioning.md) and ensure that the most impactful and strategic initiatives are addressed first.
+- **Develop an environment strategy**: Develop a well-defined [environment strategy](../environment-strategy.md) that includes guidelines for creating, managing, and decommissioning environments. An environment strategy helps in maintaining control and ensuring optimal use of resources and capacity.
 - **Provide guidelines for platform maintenance**: Provide guidelines for regular platform maintenance and cleanup to ensure optimal performance and avoid clutter. Consider how to archive or delete unused applications and data.
 - **Develop a comprehensive data governance framework**: Ensure data quality, security, and compliance with relevant regulations by establishing a robust data governance framework. Define data ownership, access controls, and data lifecycle management.
-- **Govern data connectivity and usage**: Implement policies and controls to govern data connectivity and usage and ensure that data is accessed and used appropriately, maintaining data integrity and security.
-- **Safeguard data and facilitate informed decision making**: Establish privacy policies to protect sensitive data and ensure compliance with data protection regulations. Provide tools and resources to help users make informed decisions about data usage.
+- **Govern data connectivity and usage**: Implement [policies and controls](../data-protection.md) to govern data connectivity and usage and ensure that data is accessed and used appropriately, maintaining data integrity and security.
+- **Safeguard data and facilitate informed decision making**: Establish privacy policies to protect sensitive data and [ensure compliance](../compliance.md) with data protection regulations. Provide tools and resources to help users make informed decisions about data usage.
 - **Define data domains and stewards**: Ensure accountability and effective data management by identifying and defining data domains within the organization and assigning data stewards to oversee and manage these domains.
 - **Define metrics and data-driven improvements**: Establish metrics to measure the effectiveness of governance practices and drive continuous improvement. Use data-driven insights to refine and enhance governance policies.
-- **Drive reusability and standardization**: Increase visibility into applications and best practices to promote reusability and standardization. This helps in boosting compliance and ensuring consistent quality across the organization.
+- **Drive reusability and standardization**: Increase visibility into applications and best practices to [promote reusability](../reusable.md) and standardization. This helps in boosting compliance and ensuring consistent quality across the organization.
 - **Develop a decision matrix for platform and license selection**: Develop a decision matrix to guide the selection of appropriate platforms and licenses based on specific use cases and requirements. A decision matrix can help with optimal resource allocation and cost management.
 - **Strive for continuous improvement**: Establish a clear pathway for decision-making that aligns policy and continuous process improvement to maximize technology capabilities. Regularly review and update governance policies based on feedback and evolving business needs.
 
@@ -63,7 +65,6 @@ Typical key results, aligned with some of the [objectives](#objectives), for est
     - Achieve ___% digital toolset awareness among relevant stakeholders. 
     - Define and implement a delivery framework, with ___% of projects adhering to it. 
 - **Define and communicate roles and responsibilities**:
-    - Create an effective catalog that highlights existing components, reducing duplication by ___% within six months. 
     - Minimize escalations and interactions between platform admin and users/makers by ___% within the next quarter. 
     - Establish a collaborative relationship between IT and the business, with a ___% increase in joint projects. 
     - Enhance stakeholder experience, aiming for a ___% increase in stakeholder satisfaction scores. 
@@ -86,11 +87,11 @@ Initiatives are the specific actions or projects that need to be implemented to 
 Typical initiatives, aligned with some of the [objectives](#objectives), for establishing a Center of Excellence with governance patterns and practices are:
 
 - **Standardize governance patterns and practices**:
-    - Define and implement Application Lifecycle Management (ALM) processes to streamline and manage app deployments, ensuring consistency and efficiency across all stages of the application lifecycle.
-    - Develop and publish a catalog of reusable app templates and components to help makers build with a reliable, reusable toolkit. Templates reduce development time and promote best practices.
-    - Document your Data Loss Prevention (DLP) policy strategy, environment strategy, and use case prioritization process. Publish this documentation internally to ensure all stakeholders and makers have access to important information and guidelines.
+    - [Define and implement application lifecycle management (ALM)](../alm.md) processes to streamline and manage app deployments, ensuring consistency and efficiency across all stages of the application lifecycle.
+    - Develop and publish a catalog of [reusable app templates and components](../reusable.md) to help makers build with a reliable, reusable toolkit. Templates reduce development time and promote best practices.
+    - [Document your Data Loss Prevention (DLP) policy strategy](../dlp-strategy.md), [environment strategy](../environment-strategy.md), and [use case prioritization process](../solution-envisioning.md). [Publish this documentation](../wiki-community.md#sharepoint-communication-site) internally to ensure all stakeholders and makers have access to important information and guidelines.
     - Publish a comprehensive strategy and version-controlled governance documentation to maintain transparency and accountability in platform management.
-    - Create a Maker Portal that includes onboarding collateral, development guidelines, self-guided learning resources, and success stories to support and inspire makers throughout their development journey.
+    - Create a Maker Portal, for example [a SharePoint communication site](../wiki-community.md#sharepoint-communication-site) that includes onboarding collateral, development guidelines, self-guided learning resources, and success stories to support and inspire makers throughout their development journey.
     - Establish a detailed environment strategy that outlines the structure and management of different environments, ensuring optimal performance and security.
     - Define app classifications and the corresponding Environment Strategy/DLP safeguards to support them, providing clear guidelines for app development and deployment.
 - **Define and communicate roles and responsibilities**:
@@ -98,14 +99,14 @@ Typical initiatives, aligned with some of the [objectives](#objectives), for est
     - Define and communicate app classifications and support tiers with clear Service Level Agreements (SLAs). Document each classification and support tier. Share the documentation with all users, providing clarity on the level of support and response times they can expect.
     - Define platform terms and conditions for makers that set clear expectations on ownership, security, and self-support responsibilities. This documentation should outline the roles and responsibilities of makers, including guidelines on data security, compliance, and the maintenance of their applications.
 - **Establish a process to evaluate and prioritize use cases**:
-    - Establish an App Intake Process to streamline the submission, review, and approval of new applications. This process should include clear guidelines on the required documentation, evaluation criteria, and timelines for each stage.
+    - Establish an idea intake process to streamline the submission, review, and approval of new solution ideas. This process should include clear guidelines on the required documentation, evaluation criteria, and timelines for each stage.
     - Develop a decision matrix for platform and license selection. This matrix should help users determine the most appropriate platform and licensing options based on their specific needs and use cases.
     - Build a "for this, do that" decision tree to guide users through common scenarios and recommend the best course of action. This decision tree should be intuitive and easy to follow, providing clear instructions for each step.
     - Create a comprehensive decision matrix and incorporate it into the helpdesk request system. This integration ensures that users have access to the decision matrix when submitting support requests, helping them make informed decisions. 
     - Start the baseline of decision trees/matrix for developers. This baseline should include common development scenarios and best practices, serving as a foundation for more detailed and specific decision trees in the future.
-- **Design an onboarding process that doesn't hinder creativity**:
-    - Create a Maker Portal with comprehensive onboarding collateral, detailed development guidelines, self-guided learning modules, and inspiring success stories. This portal should serve as a one-stop resource for makers, providing them with the tools and information they need to succeed.
-    - Resolve barriers by developing training and Tiered Certification Programs. Include a starter toolbox with essential resources and incorporate gamification elements and other incentives to encourage participation and engagement. This approach helps makers build their skills and advance through different certification levels.
+- **Design an [onboarding process](../onboard-makers.md) that doesn't hinder creativity**:
+    - Create a Maker Portal, for example a SharePoint communication site, with comprehensive onboarding collateral, detailed development guidelines, self-guided learning modules, and inspiring success stories. This portal should serve as a one-stop resource for makers, providing them with the tools and information they need to succeed.
+    - Resolve barriers by developing training. Include a starter toolbox with essential resources and incorporate gamification elements and other incentives to encourage participation and engagement.
     - Develop an onboarding newsletter for citizen developers. This newsletter should guide them on Power Platform governance, highlight available training resources, and provide updates on best practices and new features. Regular communication helps keep developers informed and aligned with governance policies.
 - **Provide guidelines for platform maintenance**:
     - Measure and understand the scope of default environment cleanup work. Assess the current state of the environment, identify unused or redundant apps, flows, and environments, and determine the resources required for cleanup.
@@ -121,10 +122,10 @@ Typical initiatives, aligned with some of the [objectives](#objectives), for est
     - Establish data management practices for each solution, determining the type of data involved, such as personal data, Sensitive Personally Identifiable Information (SPII), Critical Infrastructure Information (CII), and records retention policies. Ensure that each app complies with relevant data protection regulations and policies.
 - **Drive reusability and standardization**: 
     - Publish "when to use what" guidance to align expectations on what app development can be done on the platform. This guidance should provide clear criteria and examples to help makers choose the right tools and approaches for their specific needs.
-    - Create and sustain an online Community of Practice for Power Platform practitioners. This community should facilitate ideation, provide support, and offer mentorship opportunities. Encourage active participation through regular discussions, webinars, and collaborative projects.
+    - Create and sustain a [Community of Practice for Power Platform](../community-goals.md) practitioners. This community should facilitate ideation, provide support, and offer mentorship opportunities. Encourage active participation through regular discussions, webinars, and collaborative projects.
     - Establish themes and trends to guide the development of reusable components and toolkits. Identify common use cases and best practices to create a library of reusable assets that can accelerate development and ensure consistency across projects.
 - **Safeguard data and facilitate informed decision making**
-    - Establish Data Loss Prevention (DLP) policies to protect sensitive information and ensure compliance with data protection regulations. Clearly document and share these policies, and ensure makers understand how to request new connectors or exceptions to policies based on their use cases.
+    - [Establish Data Loss Prevention (DLP) policies](../dlp-strategy.md) to protect sensitive information and ensure compliance with data protection regulations. Clearly document and share these policies, and ensure makers understand how to request new connectors or exceptions to policies based on their use cases.
     - Align on a common DLP baseline with tracked divergence where necessary. Ensure that all stakeholders agree on the baseline policies, and document any deviations along with the rationale and impact of these divergences.
     - Develop automation and alerting for key assurance controls. Implement automated processes to monitor compliance with DLP policies and generate alerts for any violations or potential risks. 
 - **Strive for continuous improvement**:

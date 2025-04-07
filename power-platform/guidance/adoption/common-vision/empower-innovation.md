@@ -9,11 +9,13 @@ ms.date: 02/28/2025
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
+ms.contributors: 
+- vabhavir
 ---
 
 # Empower innovation and AI culture
 
-This article describes a common vision for Power Platform—empowering innovation and AI culture. It follows a [structured framework](../vision.md) that includes defining clear objectives, measurable key results, and actionable initiatives. This article aims to guide you in creating your own vision for Power Platform adoption.
+This article describes a common goal for Power Platform—empowering innovation and AI culture. It follows a [structured framework](../vision.md) that includes defining clear objectives, measurable key results, and actionable initiatives. This article aims to guide you in creating your own vision for Power Platform adoption.
 
 ## Vision
 
@@ -48,13 +50,12 @@ Key results are specific, quantifiable outcomes that indicate progress towards a
 Typical key results, aligned with some of the [objectives](#objectives), for empowering innovation and AI culture include:
 
 - **Foster an inclusive culture of innovation and experimentation**:
-    - Organizing regular hackathons, idea challenges, and innovation workshops with ___% employees participating in innovation initiatives.
+    - Organizing regular [hackathons](../hackathons.md), idea challenges, and innovation workshops with ___% employees participating in innovation initiatives.
     - Promote and incentivize idea submissions through internal campaigns and recognition programs with ___ (number) new ideas submitted per quarter.
 - **Enable rapid and pragmatic delivery**:
     - Implementing streamlined development processes and achieve a ___% reduction in the average time taken to develop and deploy new solutions.
     - Adopting agile methodologies and achieve a ___% increase in the number of projects completed within the planned timeline.
 - **Build a mindset of commitment and self-sufficiency**:
-    - Provide accessible and engaging online courses and resources and increase the number of employees completing self-paced learning modules by ___%.
     - Offer comprehensive training and support materials to empower self-sufficiency and increase the number of employees independently resolving issues using Power Platform by ___%.
 - **Empower businesses to be citizen developers**: 
     - Provide comprehensive training and resources to empower employees and increase the number of citizen-developed applications by ___%.
@@ -64,10 +65,10 @@ Typical key results, aligned with some of the [objectives](#objectives), for emp
     - Modernize systems with low-code with a goal of increasing process efficiency, such as time savings, error reduction, and cost savings with a goal of ___% improvement in process efficiency through low-code solutions.
     - Reduce operating, maintenance, and support cost of legacy system with a goal of $__ cost reduction.
 - **Create incentives for makers, champions, and departments**:
-    - Increase the number of innovation projects initiated by makers and champions by ___% through the implementation of a rewards and recognition program.
+    - Increase the number of innovation projects initiated by makers and champions by ___% through offering a rewards and recognition program.
     - Boost departmental participation in Power Platform initiatives by ___% by offering financial incentives and organizing quarterly awards.
 - **Start using AI and agents in Power Platform solutions**:
-    - Enhance the efficiency of app development and data analysis tasks by ___% by integrating AI and Copilot features into key platform areas.
+    - Enhance the efficiency of solution development by ___% by integrating AI and Copilot features into key platform areas.
     - Reduce the time taken to complete routine processes by ___% by providing training and resources on applying AI capabilities.
 - **Identify citizen developer quick wins**: 
     - Increase the number of quick win projects completed by citizen developers by ___% by identifying and supporting high-impact, easily achievable projects.
@@ -96,7 +97,7 @@ Typical initiatives, aligned with some of the [objectives](#objectives), for emp
   - Encourage a "fail fast, learn faster" approach to experimentation and innovation.
 - **Empower businesses to be citizen developers**:
   - Provide comprehensive training and resources on low-code development.
-  - Establish a support framework to assist citizen developers with their projects.
+  - Establish a [support framework](../support-strategy.md) to assist citizen developers with their projects.
   - Encourage collaboration between business units and IT to ensure alignment and support.
 - **Use low-code to challenge legacy technology and processes**:
   - Identify and prioritize legacy systems and processes that can benefit from low-code solutions.
@@ -111,7 +112,7 @@ Typical initiatives, aligned with some of the [objectives](#objectives), for emp
     - Provide training and resources to help users understand and apply AI capabilities.
     - Monitor and evaluate the impact of AI integration on productivity and innovation.
 - **Identify citizen developer quick wins**:
-    - Identify simple, high-impact projects that can be quickly developed and deployed using the Power Platform.
+    - Identify simple, high-impact projects that can be quickly developed and deployed using Power Platform.
     - Showcase these quick wins through internal communications and success stories.
     - Provide support and resources to help citizen developers achieve these quick wins.
 - **Encourage leaders to prioritize and allocate time to innovate**: 
@@ -127,6 +128,6 @@ Typical initiatives, aligned with some of the [objectives](#objectives), for emp
     - Publish these stories through internal newsletters, intranet sites, and community events.
     - Recognize and celebrate the achievements of individuals and teams who contribute to these success stories.
 - **Foster Power Platform knowledge among interns and early career professionals**: 
-    - Create onboarding programs and training sessions specifically for interns and early career professionals.
+    - Create [onboarding programs](../onboard-makers.md) and training sessions specifically for interns and early career professionals.
     - Provide mentorship opportunities with experienced Power Platform developers and champions.
     - Encourage participation in innovation initiatives and projects to build practical experience and skills.

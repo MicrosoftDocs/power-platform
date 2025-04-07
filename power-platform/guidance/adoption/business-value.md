@@ -34,7 +34,7 @@ Why does value measurement matter? It's the driving force behind your technology
 - **Strategic alignment**: Value measurement ensures that Power Platform initiatives are aligned with the broader strategic goals of the business. This alignment moves technology initiatives from being isolated efforts to directly supporting what the business has identified as important, ensuring that every project contributes to the overall mission.
 - **Informed decision-making**: Measuring business value equips you with the necessary information to make informed decisions about technology investments. Business value is not just a metric; it's a strategic compass that aligns with organizational goals, optimizes resource allocation, and empowers data-driven decisions. This shift moves decision-making from being based on intuition or subjective opinions to relying on concrete data regarding performance, satisfaction, and cost-effectiveness.
 
-The business value of the platform is often seen through two lenses: IT benefits and the value of the applications that run on it. From an IT perspective, core benefits include reducing development and maintenance costs, reducing non-Microsoft license spend, and reducing technical debt.
+The business value of the platform is often seen through two lenses: IT benefits and the value of the solutions that run on it. From an IT perspective, core benefits include reducing development and maintenance costs, reducing non-Microsoft license spend, and reducing technical debt.
 
 Power Platform solutions typically help improve one or more business value drivers, such as:
 
@@ -89,12 +89,12 @@ Here are examples of questions you could ask to establish time and cost savings,
 
 ### Mitigating risk
 
-Measuring the impact that a new application has on mitigating risk can be measured in several ways.
+Measuring the impact that a new solution has on mitigating risk can be measured in several ways.
 
 | Measure | Description |
 |---------|-------------|
-| Risk reduction | You can identify the risks that the application is designed to mitigate and track the number of incidents or issues related to those risks before and after implementation. You can also calculate the financial impact of these incidents and compare the costs before and after implementation. |
-| Compliance improvement | If the new application is designed to improve compliance, you can measure the impact by assessing the compliance rate before and after implementation. You could identify the regulations or standards that the application is designed to comply with and track the compliance rate over time. |
+| Risk reduction | You can identify the risks that the solution is designed to mitigate and track the number of incidents or issues related to those risks before and after implementation. You can also calculate the financial impact of these incidents and compare the costs before and after implementation. |
+| Compliance improvement | If the new solution is designed to improve compliance, you can measure the impact by assessing the compliance rate before and after implementation. You could identify the regulations or standards that the solution is designed to comply with and track the compliance rate over time. |
 | Incident response time | You can compare the time taken to identify the source of an issue over the time taken to resolve the issue before and after implementation.|
 
 #### Example questions for assessing risk mitigation
@@ -108,7 +108,7 @@ Here are examples of questions you could ask to establish risk reduction, compli
 
 ### Business transformation
 
-Many different metrics can be used to measure the impact new applications and solutions have on business transformation. The most appropriate metrics depend on the specific application or process being implemented and the goals of the business transformation initiative. Here are some common methods:
+Many different metrics can be used to measure the impact new solutions have on business transformation. The most appropriate metrics depend on the specific application or process being implemented and the goals of the business transformation initiative. Here are some common methods:
 
 | Measure | Description |
 |---------|-------------|

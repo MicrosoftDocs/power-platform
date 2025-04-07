@@ -8,6 +8,9 @@ ms.topic: concept-article
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
+author: stjeffer
+ms.contributors: 
+- stjeffer
 ms.date: 03/03/2025
 ms.custom:
   - ai-gen-docs-bap
@@ -79,6 +82,9 @@ A value play consists of the following key components:
 
 The following value plays aren't intended as an exhaustive list but rather a starting point for creating a simple, repeatable approach to measure and demonstrate business value. As your use of Power Platform grows and matures, your value plays will become more sophisticated, enabling you to capture and communicate even greater value.
 
+>[!TIP]
+> In addition to this guidance, download step-by-step guidance and templates for using business value plays in the Business Value Play Workbook.
+
 <!-- Let's provide links to PDF/s of the value plays PowerPoint slides from the Kickstarter Value-Drive Adoption Playbook. -->
 
 - The Innovation Accelerator: The Power Platform Innovation Accelerator focuses on Power Platform's ability to co-design, test, deploy, and iterate faster than other development methods.
@@ -87,7 +93,6 @@ The following value plays aren't intended as an exhaustive list but rather a sta
 - The Innovation Backlog: The Power Platform Innovation Backlog enables the business to capture ideas and describe process pain points, so that developers can prioritize high-value work.
 - The Paper-to-Power-App: Power Platform lets you capture data faster and with greater accuracy, and do more with the data you gather.
 - The Cream of the Crop: Identify and calculate ROI for your top apps and flows based on time and cost savings achieved (so you don't have to try to measure everything).
-- <!-- we use this as a play on words accelerator > excel > excelerator. not sure if this is allowed in learn docs. if not change to accelerator -->
 - The Finance "Excelerator:" Challenge the Finance department to identify and replace routine, manual, spreadsheet-based data collection processes with Power Platform solutions.
 - The Insight Sharer: Ensure project lessons are actually learned with a Power Platform solution that automatically shares insights across teams and projects.
 - The Stakeholder Aligner: Co-design and rapid ideation in Power Platform support stakeholder buy-in, as stakeholders see their ideas come to life, and de-risk projects through shared understanding of requirements.
@@ -101,4 +106,3 @@ The following value plays aren't intended as an exhaustive list but rather a sta
 ## Related information
 
 - [Success story framework](nurture-best-practices.md)
-- [Power Advisor](/power-platform/admin/power-platform-advisor)

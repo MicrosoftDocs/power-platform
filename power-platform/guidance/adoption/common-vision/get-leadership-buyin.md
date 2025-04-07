@@ -9,15 +9,17 @@ ms.date: 02/28/2025
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
+ms.contributors: 
+- vabhavir
 ---
 
 # Get leadership buy-in and organization alignment
 
-This article describes a common vision for Power Platform—getting leadership buy-in and organization alignment. It follows a [structured framework](../vision.md) that includes defining clear objectives, measurable key results, and actionable initiatives. This article aims to guide you in creating your own vision for Power Platform adoption.
+This article describes a common goal for Power Platform—getting leadership buy-in and organization alignment. It follows a [structured framework](../vision.md) that includes defining clear objectives, measurable key results, and actionable initiatives. This article aims to guide you in creating your own vision for Power Platform adoption.
 
 ## Vision
 
-Getting leadership buy-in and organizational alignment is a common vision for Power Platform adoption because it ensures that the initiative has the necessary support and resources to succeed. Leadership buy-in helps secure funding, allocate resources, and prioritize the adoption efforts within the organization. When leaders are on board, they can champion the initiative, drive cultural change, and set the tone for its importance.
+[Getting leadership buy-in](../executive-sponsorship.md) and organizational alignment is a common vision for Power Platform adoption because it ensures that the initiative has the necessary support and resources to succeed. Leadership buy-in helps secure funding, allocate resources, and prioritize the adoption efforts within the organization. When leaders are on board, they can champion the initiative, drive cultural change, and set the tone for its importance.
 
 Organizational alignment ensures that all departments and teams are working towards the same goals and understand the benefits of Power Platform. It fosters collaboration, reduces resistance to change, and ensures that the platform is used effectively across the organization. With leadership support and organizational alignment, the adoption process becomes smoother, more efficient, and more likely to deliver the desired outcomes, such as increased productivity, innovation, and return on investment (ROI).
 
@@ -65,7 +67,7 @@ Typical initiatives, aligned with some of the [objectives](#objectives), for get
     - Develop customized communication plans for each segment, highlighting the benefits and relevance of Power Platform to their roles.
     - Use various communication channels, such as emails, newsletters, webinars, and intranet posts, to reach each segment effectively.
 - **Uphold accountability and realize strategic goals**: 
-    - Provide training and resources to help business units understand how to apply the Power Platform effectively.
+    - Provide training and resources to help business units understand how to use Power Platform effectively.
     - Establish clear metrics and KPIs to measure the success of Power Platform projects and ensure they align with organizational objectives.
     - Create a feedback loop where business units can share their experiences, challenges, and successes, fostering a culture of continuous improvement and accountability.
 - **Encourage leadership to allocate time for upskilling**:
