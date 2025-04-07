@@ -56,7 +56,7 @@ Managing Power Platform at scale across hundreds or thousands of environments is
 
 Similar to folders, environment groups help admins organize their flat list of environments into structured groups based on criteria like business unit, project, and location. Learn more in [Environment groups](../../admin/environment-groups.md).
 
-Admins can apply rules to groups to govern environments in bulk, reducing manual effort and ensuring consistency. For example, admins might apply rules to security, licensing, compliance, and other facets. Learn more in [Rules](../../admin/environment-groups.md#configure-the-rules-for-your-environment-group).
+Admins can apply rules to groups to govern environments in bulk, reducing manual effort and ensuring consistency. For example, admins might apply rules to security, licensing, compliance, and other facets. Learn more in [Configure the rules for your environment group](../../admin/environment-groups.md#configure-the-rules-for-your-environment-group).
 
 ## Review recommendations
 
