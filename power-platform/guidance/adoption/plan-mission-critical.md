@@ -50,7 +50,7 @@ Learn how to drive architectural excellence by reviewing the guidance in [Power 
 
 ### Increased resiliency with Azure availability zones
 
-Power Platform runs on Microsoft Azure and uses [Azure availability zones](https://learn.microsoft.com/en-us/azure/reliability/availability-zones-overview). Applications and associated resources are stored in a container called an environment, hosted in a region of your choice.
+Power Platform runs on Microsoft Azure and uses [Azure availability zones](/azure/reliability/availability-zones-overview). Applications and associated resources are stored in a container called an environment, hosted in a region of your choice.
 
 Environments designated for production workloads are replicated synchronously across at least two (and typically three) physically separated Azure zones within the selected region. These zones are independent datacenters with separate power, networking, and cooling, ensuring zero data loss and rapid failover ([RTO](/power-platform/well-architected/reliability/metrics) < 5 min) if there's a failure.  This means that if one availability zone (AZ) experiences a failure (for example, due to a network outage, power disruption, or environmental disaster), customer traffic is automatically redirected to the other zones with minimal service disruption. Applications and resources running don't experience an outage because Power Platform ensures seamless failover and uninterrupted performance.
 
