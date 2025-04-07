@@ -9,7 +9,6 @@ ms.date: 04/07/2025
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
-search.audienceType: 
   - admin
 ---
 
@@ -28,35 +27,37 @@ Microsoft Power Platform adoption guidance includes documentation, recommendatio
 
 This guidance aligns with the following pillars and responsibilities for adoption.
 
-| | |
-|--|--|
+|   |   |
+|---|---|
 | :::image source="../media/strategy.svg" type="icon"::: [Strategy](strategy-best-practices.md) | Document the objectives, the measurable key results, and the key initiatives behind Power Platform adoption. |
-| :::image source="../media/plan.svg" type="icon"::: [Plan](plan-overview.md) | Define roles, responsibilities, and delivery models. | 
-| :::image source="../media/secure.svg" type="icon"::: [Security](secure-overview.md) | Protect your workloads and data from threats and meet compliance requirements. | 
-| :::image source="../media/govern.svg" type="icon"::: [Governance](admin-best-practices.md) | Implement digital guardrails for your makers to create with confidence. | 
-| :::image source="../media/operate.svg" type="icon"::: [Operations](operate-overview.md) | Establish a strategy for application lifecycle management and ongoing production support. | 
-| :::image source="../media/availability.svg" type="icon"::: [Availability](availability-overview.md) | Plan for failures and build a disaster recovery plan. | 
-| :::image source="../media/ready.svg" type="icon"::: [Readiness](ready-overview.md) | Upskill your makers and envision high-value use cases. | 
-| :::image source="../media/nurture.svg" type="icon"::: [Community](nurture-best-practices.md) | Accelerate your adoption with a thriving internal community.  | 
+| :::image source="../media/plan.svg" type="icon"::: [Plan](plan-overview.md) | Define roles, responsibilities, and delivery models. |
+| :::image source="../media/secure.svg" type="icon"::: [Security](secure-overview.md) | Protect your workloads and data from threats and meet compliance requirements. |
+| :::image source="../media/govern.svg" type="icon"::: [Governance](admin-best-practices.md) | Implement digital guardrails for your makers to create with confidence. |
+| :::image source="../media/operate.svg" type="icon"::: [Operations](operate-overview.md) | Establish a strategy for application lifecycle management and ongoing production support. |
+| :::image source="../media/availability.svg" type="icon"::: [Availability](availability-overview.md) | Plan for failures and build a disaster recovery plan. |
+| :::image source="../media/plan.svg" type="icon"::: [Readiness](ready-overview.md) | Upskill your makers and envision high-value use cases. |
+| :::image source="../media/nurture.svg" type="icon"::: [Community](nurture-best-practices.md) | Accelerate your adoption with a thriving internal community. |
+
+
 
 ## Intended audiences
 
 This guidance affects the business, technology, and culture of organizations. The guidance is intended for roles such as:
 
-- Power Platform Center of Excellence or Center of Enablement leads
-- Line-of-business leaders
-- Business decision makers
-- IT decision makers
-- Power Platform administrators
-- IT operations / IT support
-- IT security and compliance
-- IT governance
-- IT project delivery
-- IT change management
-- Enterprise architects
-- Business subject matter experts
+- Power Platform Center of Excellence or Center of Enablement leads  
+- Line-of-business leaders  
+- Business decision makers  
+- IT decision makers  
+- Power Platform administrators  
+- IT operations / IT support  
+- IT security and compliance  
+- IT governance  
+- IT project delivery  
+- IT change management  
+- Enterprise architects  
+- Business subject matter experts  
 
-Each role has unique goals and key performance indicators, and specific parts of the guidance apply to different audiences. This collection of guidance helps drive decision-making and ensures every role involved in Power Platform adoption has the right conversations with the right audiences.
+Each role has unique goals and key performance indicators, and specific parts of the guidance apply to different audiences. This collection of guidance helps drive decision-making and ensures every role involved in Power Platform adoption has the right conversations with the right audiences.  
 
 ## Related resources
 
