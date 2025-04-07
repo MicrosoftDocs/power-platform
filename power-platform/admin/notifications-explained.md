@@ -21,7 +21,7 @@ Microsoft regularly sends communications about service changes, maintenance, ret
 Admins can use the [Microsoft 365 Message center](/office365/admin/manage/message-center?view=o365-worldwide&preserve-view=true) to learn about official service announcements and feature changes. Email notifications can be sent for Message center posts.
 
 #### Prerequisites
-- Before you begin, ensure you have sufficient permissions (Message center reader as a minimum)
+Before you begin, be sure that you have sufficient permissions. (Message center **reader** as a minimum.)
 
 ### Set up a weekly digest mail of Message center changes and notifications
 1. Log in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
@@ -57,4 +57,4 @@ The following table lists the services that the Business & Industry Copilot comm
 | Microsoft Power Platform | `mspowerplatform@microsoft.com` |
 
 > [!IMPORTANT]
-Only users who are assigned to the Dynamics 365 administrator or Power Platform administrator role in the Microsoft 365 admin center or Microsoft Entra admin center will receive these email notifications. To assign a service admin role to a user, follow the instructions in [Assign a service admin role to a user](use-service-admin-role-manage-tenant.md#assign-a-service-admin-role-to-a-user).
+Only users who are assigned to the Dynamics 365 administrator or Power Platform administrator role in the Microsoft 365 admin center or Microsoft Entra admin center receive these email notifications. To assign a service admin role to a user, follow the instructions in [Assign a service admin role to a user](use-service-admin-role-manage-tenant.md#assign-a-service-admin-role-to-a-user).
