@@ -34,7 +34,7 @@ Culture change can take time, and it's important to address people's concerns, i
 
 Adopting Power Platform is more than just a technology project. It's important to have executive support. Although some successes can be achieved by a few motivated individuals, you're in a better position when a senior leader is engaged, supportive, informed, and available to assist with activities. These activities include:
 
-- Formulating a strategic vision and priorities for Power Platform and low code.
+- Formulating a [strategic vision](vision.md) and priorities for Power Platform and low code.
 - Allocating staffing and prioritizing resources.
 - Approving funding, for example, Power Apps user licenses or AI Builder credits.
 - Communicating announcements that are of critical importance.
