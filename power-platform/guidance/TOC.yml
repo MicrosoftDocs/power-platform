@@ -105,12 +105,6 @@
               href: adoption/environment-strategy.md
             - name: Implement reactive governance
               href: adoption/reactive-governance.md
-            - name: Monitor license and capacity consumption
-              href: adoption/cds-usage.md         
-            - name: Gain insights into Power Platform adoption
-              href: adoption/observability.md
-            - name: Report on resource usage
-              href: adoption/resource-usage.md
             - name: Manage Dataverse for Teams environments
               href: adoption/teams-environment-strategy.md
             - name: Manage the default environment
@@ -125,6 +119,12 @@
               href: adoption/cds-usage.md
             - name: Ensure data resilience
               href: adoption/data-retention.md
+            - name: Monitor license and capacity consumption
+              href: adoption/cds-usage.md         
+            - name: Gain insights into Power Platform adoption
+              href: adoption/observability.md
+            - name: Report on resource usage
+              href: adoption/resource-usage.md
             - name: Define your support process
               items:
                 - name: Support strategy - Overview
