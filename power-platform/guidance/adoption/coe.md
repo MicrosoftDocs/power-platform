@@ -1,6 +1,6 @@
 ---
-title: "Establishing a Microsoft Power Platform Center of Excellence"
-description: "Establishing a Microsoft Power Platform Center of Excellence (CoE) means investing in and nurturing organic growth while maintaining governance and control."
+title: "Establish a Microsoft Power Platform Center of Excellence"
+description: "Establish a Microsoft Power Platform Center of Excellence (CoE) means investing in and nurturing organic growth while maintaining governance and control."
 #customer intent: As a Power Platform user, I want to establish a Microsoft Power Platform Center of Excellence so that I can maximize the platform’s potential and ensure its sustainable, scalable, and secure use across the enterprise.
 author: manuelap-msft
 ms.component: pa-admin
@@ -12,7 +12,7 @@ ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
-# Establishing a Microsoft Power Platform Center of Excellence
+# Establish a Microsoft Power Platform Center of Excellence
 
 Establishing a Microsoft Power Platform Center of Excellence or Center of Enablement (CoE) is a strategic move that can maximize the platform’s potential and ensure its sustainable, scalable, and secure use across the enterprise. The CoE’s mission is to drive a culture of excellence by fostering innovation and efficiency. The aim is to create a strong foundation for rapid solution development and deployment, boosting productivity and supporting your commitment to excellence.
 
@@ -40,6 +40,7 @@ Typically, the following people or departments are key drivers or stakeholders w
 - **Developers and IT professionals**: Technical experts who can build and maintain solutions.
 - **Change management specialists**: Professionals who can drive user adoption and manage organizational change.
 - **Technology admins**: Enable adoption by ensuring platform security, compliance, and efficiency. Support effective use through environment strategies, governance policies, user and capacity management, and data availability via connectors, integration, or migration.
+- **Power Platform champions**: Enthusiastic users who advocate for Power Platform within the organization. They provide feedback back to the CoE team on what processes work and which ones don't, or where the maker community might need extra support.
 
 Clearly defined roles and responsibilities are essential for the sustained success of your Power Platform Center of Excellence. To ensure clarity in goals, roles, and tasks, learn more at [Define roles and responsibilities](roles.md).
 
@@ -50,9 +51,9 @@ Evolution of roles within a Center of Excellence (CoE) is a natural part of its 
 Governance is a cornerstone of a successful Power Platform Center of Excellence (CoE). It ensures that the platform is used securely, compliantly, and efficiently across the organization. Effective governance involves developing and enforcing standards and policies in several key areas:
 
 - **Data security and privacy**: Data security and privacy are paramount in today’s digital age. The CoE must ensure that all data handled within Power Platform solutions is protected and compliant with relevant regulations, such as GDPR or CCPA. This involves categorizing data based on sensitivity and implementing appropriate protection measures, implementing strict access controls to ensure that only authorized users can access sensitive data, and regularly conducting audits to ensure compliance with data protection regulations.
-- **Solution development**: Defining best practices for solution development is essential to maintain consistency, quality, and efficiency. The CoE should establish comprehensive guidelines that cover various aspects of development. This includes setting coding standards and naming conventions to ensure readability and maintainability (learn more: [link to Power Automate and Power Apps naming convention docs]), establishing rigorous testing protocols to ensure solutions are robust and reliable, and defining processes for deploying solutions to different environments, such as development, testing, and production.
+- **Solution development**: Defining best practices for solution development is essential to maintain consistency, quality, and efficiency. The CoE should establish comprehensive guidelines that cover various aspects of development. This includes setting coding standards and naming conventions to ensure readability and maintainability, establishing rigorous testing protocols to ensure solutions are robust and reliable, and defining processes for deploying solutions to different environments, such as development, testing, and production. Learn more: [Power Apps coding guidelines](/power-apps/guidance/coding-guidelines/overview) and [Power Automate coding guidelines](/power-automate/guidance/coding-guidelines/)
 - **User access and permissions**: Managing user access and permissions is critical to maintaining security and preventing unauthorized changes. The CoE should implement Role-Based Access Control (RBAC) to assign permissions based on users’ roles and responsibilities, ensuring that users have the minimum level of access necessary to perform their tasks according to the Least Privilege Principle. Regular reviews of user access and permissions should be conducted to identify and address any discrepancies. Additionally, maintaining audit trails is essential to track who accessed or modified solutions and data.
-- **Monitoring and reporting**: Continuous monitoring and reporting are vital to track the usage, performance, and compliance of the Power Platform. The CoE should monitor platform usage through usage analytics to identify trends, optimize resource allocation, and ensure efficient use. Tracking performance metrics is essential to identify and address any issues that may impact the user experience. Regular compliance monitoring should be conducted to ensure adherence to established standards and policies. Additionally, generating reports is crucial to provide insights into platform usage, performance, and compliance to stakeholders.
+- **Monitoring and reporting**: Continuous monitoring and reporting are vital to track the usage, performance, and compliance of the Power Platform. The CoE should monitor platform usage through usage analytics to identify trends, optimize resource allocation, and ensure efficient use. Tracking performance metrics helps identify and address any issues that may impact the user experience. Regular compliance monitoring should be conducted to ensure adherence to established standards and policies. Additionally, generating reports to provide insights into platform usage, performance, and compliance to stakeholders.
 
 Learn more:
 
@@ -64,12 +65,14 @@ Learn more:
 
 To maximize the impact of Power Platform, the CoE should offer comprehensive training and support to users. This includes:
 
-- **Training programs**: Providing structured training programs is essential to equip users with the knowledge and skills they need to effectively use Power Platform tools. These programs can include a variety of formats such as in-person workshops, online courses, webinars, and hands-on labs. The training should cover fundamental concepts, advanced techniques, and best practices for using Power Platform tools like Power BI, Power Apps, Power Automate, and Power Virtual Agents. Tailoring the training content to different user roles and skill levels ensures that everyone, from beginners to advanced users, can benefit.
-- **Documentation and resources**: Creating a comprehensive library of documentation and resources is crucial for ongoing user support. This includes detailed guides, step-by-step tutorials, FAQs, and troubleshooting tips. Well-organized and easily accessible documentation helps users find answers to their questions quickly and efficiently. Additionally, providing templates, sample applications, and code snippets can accelerate the development process and inspire users to create their own solutions.
+- **Training programs**: Provide structured training programs to equip users with the knowledge and skills they need to effectively use Power Platform tools. These programs can include a variety of formats such as in-person workshops, online courses, webinars, and hands-on labs. The training should cover fundamental concepts, advanced techniques, and best practices for using Power Platform tools like Power Apps, Power Automate, and Copilot Studio. Tailor the training content to different user roles and skill levels so that everyone, from beginners to advanced users, can benefit.
+- **Documentation and resources**: Create a comprehensive library of documentation and resources to support makers. The documentation should include detailed guides, step-by-step tutorials, FAQs, and troubleshooting tips. Well-organized and easily accessible documentation helps users find answers to their questions quickly and efficiently. Additionally, providing templates, sample applications, and code snippets can accelerate the development process and inspire users to create their own solutions.
 - **Community of practice**: Establishing a community of practice fosters collaboration and knowledge sharing among users. This can be achieved by setting up forums, user groups, and online communities where employees can ask questions, share their experiences, and collaborate on projects. Regularly scheduled meetups, webinars, and hackathons can further encourage engagement and innovation. By creating a supportive community, the CoE can help users stay motivated, learn from each other, and continuously improve their skills.
 
-<!-- TODO update when the nurture and ready sections are updated -->
-Learn more: [Nurture best practices](nurture-best-practices.md)
+Learn more:
+
+- [Power Platform readiness - overview and strategy](ready-overview.md)
+- [Power Platform community - overview and strategy](nurture-best-practices.md)
 
 ## Foster innovation and continuous improvement
 
