@@ -40,7 +40,7 @@ If you log into multiple Dynamics 365 [environments](environments-overview.md), 
 
 - Use separate browser sessions or browser profiles for each environment. 
 - Clear your browser cookies when switching between different Dynamics 365 environments. 
-- Consult your [Power Platform admin center administrator](https://learn.microsoft.com/en-us/power-platform/admin/overview-role-power-platform-admin) if adjustments or turning off the setting across environments is needed, which is generally not recommended). 
+- Consult your [Power Platform admin center administrator](overview-role-powerapps-admin.md) if adjustments or turning off the setting across environments is needed, which is generally not recommended). 
 
 ### More considerations 
 
