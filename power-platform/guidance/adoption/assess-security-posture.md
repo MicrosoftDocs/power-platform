@@ -1,6 +1,6 @@
 ---
-title: Assess your security posture
-description: Assess your Power Platform security posture with our comprehensive guide. Learn how to protect your data and ensure compliance with best practices.
+title: Understand your security posture and challenges
+description: Understand your Power Platform security posture with our comprehensive guide. Learn how to protect your data and ensure compliance with best practices.
 #customer intent: As a Power Platform admin, I want to assess my Power Platform security posture so that I can protect my data and ensure compliance with best practices.
 author: manuelap-msft
 ms.component: pa-admin
@@ -11,7 +11,7 @@ ms.reviewer: pankajsharma2087
 ms.date: 02/28/2025
 ---
 
-# Assess your security posture
+# Understand your security posture and challenges
 
 The core objectives of security teams don't change with the adoption of Power Platform. However, the methods to achieve these objectives evolve. Security teams must continue to prioritize reducing business risk from attacks and ensure that confidentiality, integrity, and availability are embedded in all information systems and data.
 

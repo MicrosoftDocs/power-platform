@@ -75,7 +75,7 @@
           items:
             - name: Overview
               href: adoption/secure-overview.md
-            - name: Assess your security posture
+            - name: Understand your security posture and challenges
               href: adoption/assess-security-posture.md
             - name: Enhance your security posture
               href: adoption/security-posture-management.md
