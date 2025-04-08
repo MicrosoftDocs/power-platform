@@ -18,7 +18,7 @@ search.audienceType:
 Microsoft regularly sends communications about service changes, maintenance, retirement, and customer action that is required. These communications primarily take the form of posts to the Microsoft 365 Service health dashboard and the Message center. Occasionally, we also use direct email communications to provide status, updates, or information about the service.
 
 ## Message center
-Admins can use the [Microsoft 365 Message center](/office365/admin/manage/message-center?view=o365-worldwide&preserve-view=true) to learn about official service announcements and feature changes. Email notifications can be sent for Message center posts.
+Admins can use the [Microsoft 365 Message center](/office365/admin/manage/message-center?view=o365-worldwide&preserve-view=true&preserve-view=true) to learn about official service announcements and feature changes. Email notifications can be sent for Message center posts.
 
 ### Prerequisites
 Before you begin, be sure that you have sufficient permissions. Most users who have been assigned any admin role in Microsoft 365 can view Message center posts. Here's [a list](/microsoft-365/admin/manage/message-center?view=o365-worldwide#admin-roles-that-dont-have-access-to-the-message-center) of admin roles that **don't** have access to the Message center. The **Message center reader role** can be assigned to users who should be able to read and share Message center posts without having any other admin privileges.
