@@ -1,7 +1,7 @@
 - name: Power Platform guidance
   href: index.yml
   items:
-    - name: Power Platform adoption best practices
+    - name: Power Platform adoption guidance
       items:
         - name: What's new
           href: adoption/whats-new.md
@@ -53,6 +53,12 @@
               href: adoption/executive-sponsorship.md
             - name: Establish a Center of Excellence
               href: adoption/coe.md
+            - name: "Case study: Success Hub"
+              items:
+                - name: Overview
+                  href: successhub/overview.md
+                - name: Digitizing Digital Transformation Platform group
+                  href: successhub/digitizing-digital-transformation-platform-group.md
         - name: Plan
           items:
             - name: Overview
@@ -64,7 +70,7 @@
             - name: Establish license assignment strategies
               href: adoption/license-assignment-strategies.md
             - name: Modernize applications with Power Platform
-              href: white-papers/application-modernization.md
+              href: adoption/application-modernization.md
         - name: Security
           items:
             - name: Overview
