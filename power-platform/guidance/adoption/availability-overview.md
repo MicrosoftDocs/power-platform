@@ -1,18 +1,19 @@
 ---
 title: Power Platform availability - Overview and strategy
 description: Learn how to identify, plan, and deploy mission critical workloads with Power Platform and prepare disaster recovery plans.
+#customer intent: As a Power Platform user, I want to understand how to ensure high availability for mission-critical workloads so that I can minimize downtime and maintain business continuity.
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: concept-article
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: sericks
-ms.date: 03/31/2025
+ms.date: 04/07/2025
 ---
 
 # Power Platform availability - Overview and strategy
 
-In a world where every second of downtime can mean lost revenue, disrupted operations, and frustrated users, high availability isn’t optional—it’s mission-critical. In an era where AI-driven agents power mission-critical workflows, ensuring always-on availability is essential for business continuity.
+In a world where every second of downtime means lost revenue, disrupted operations, and frustrated users, high availability isn’t optional—it’s mission-critical. In an era where AI-driven agents power mission-critical workflows, ensuring always-on availability is essential for business continuity.
 
 This series of articles provides comprehensive guidance on achieving enterprise grade reliability and availability for mission critical workloads with Power Platform. It covers key areas such as application lifecycle management, observability strategies, and data resilience.
 
