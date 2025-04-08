@@ -347,7 +347,7 @@
           "type": "string"
         },
         "supportedCountries": {
-          "description": "List of supported countries for the application",
+          "description": "List of supported countries/regions for the application",
           "type": "array",
           "items": {
             "type": "string"

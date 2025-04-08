@@ -81,7 +81,7 @@ Summarize( CityPopulations, Country,
 
 The result is this table:
 
-| Country | Total Population | Cities |
+| Country/Region | Total Population | Cities |
 |---------|------------------|--------|
 | United Kingdom | 8615000 | London |
 | Germany | 6816000 | Berlin, Hamburg, Munich |
