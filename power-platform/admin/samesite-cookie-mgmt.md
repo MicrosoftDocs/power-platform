@@ -26,7 +26,7 @@ The SameSite cookie setting controls how browsers share your session cookie (Crm
 | --- | --- | --- |
 | Lax | Cookies are sent for top-level navigation&mdash;that is, link clicks&mdash;but not during cross-site form submissions such as POST, PUT, DELETE, PATCH. | Recommended for most scenarios. |
 | None | Cookies are always sent. This setting could be necessary for integrations such as embedded Dynamics 365 in iframes or custom integrations. This is the default setting.  | This setting can be used for integrations depending on cross-site requests. |
-| Strict | Cookies are never sent with cross-site requests, even for top-level navigations in cross-site scenarios. | This setting can be used for highly-sensitive environments. It can also impact the user experience. |
+| Strict | Cookies are never sent with cross-site requests, even for top-level navigation in cross-site scenarios. | This setting can be used for highly sensitive environments. It can also impact the user experience. |
 
 ## Important considerations 
 
@@ -34,19 +34,19 @@ The SameSite cookie setting controls how browsers share your session cookie (Crm
 
 When logging into Dynamics 365 environments, browsers create a _session cookie_ (CrmOwinAuth) that remembers your login. This cookie is shared across all Dynamics 365 environments under the same parent domain (crm.dynamics.com). 
 
-If you log into multiple Dynamics 365 [environments](environments-overview.md), such as a production and a test environment in one browser session, the SameSite security setting applied to the first environment automatically applies to the other environments in the same browser session. This could lead to unexpected behavior in environments where you haven't explicitly set the SameSite configuration. 
+If you log into multiple Dynamics 365 [environments](environments-overview.md)&mdash;such as a production and a test environment in one browser session&mdash;the SameSite security setting applied to the first environment automatically applies to the other environments in the same browser session. This could lead to unexpected behavior in environments where you haven't explicitly set the SameSite configuration. 
 
 #### Recommended actions
 
 - Use separate browser sessions or browser profiles for each environment. 
 - Clear your browser cookies when switching between different Dynamics 365 environments. 
-- Consult your [Power Platform admin center administrator](overview-role-powerapps-admin.md) if adjustments or turning off the setting across environments is needed, which is generally not recommended). 
+- Consult your [Power Platform admin center administrator](overview-role-powerapps-admin.md) if adjustments or turning off the setting across environments is needed, which isn't recommended. 
 
 ### More considerations 
 
 | Consideration | Explanation | Guidance |
 | --- | --- | --- |
-| Security against cross-site attacks | Setting SameSite from **None** to **Lax** or **Strict** significantly reduces cross-site request forgery (CSRF) attacks by preventing cookie-based cross-site requests like POST, PUT, DELETE, or PATCH. | Lax is generally recommended for protection without major usability impacts. |
+| Security against cross-site attacks | Setting SameSite from **None** to **Lax** or **Strict** significantly reduces cross-site request forgery (CSRF) attacks by preventing cookie-based cross-site requests like POST, PUT, DELETE, or PATCH. | Lax is recommended for protection without major usability impacts. |
 | Strict setting usage | The **Strict** setting provides maximum security but blocks all cross-site interactions, including direct user clicks from external sites where the cookie is involved. | Recommended for highly confidential scenarios due to its strict restrictions. |
 | Embedding Dynamics 365 (iFrames) or custom integrations | Embedding Dynamics 365 in external websites using iframes could require the SameSite setting to be **None**. **Lax** or **Strict** settings cause embedding issues. | Use **None** for embedded scenarios and integrations. |
 | Consistency with modern browsers | Modern browsers default to **Lax**, offering protection against unintended cross-site data leakage without significantly affecting usability. | **Lax** setting is recommended as a balanced approach. |
@@ -55,7 +55,7 @@ If you log into multiple Dynamics 365 [environments](environments-overview.md), 
 
 Before configuring SameSite, be sure you meet the following requirements:
 
-- You have a non-production environment available for initial testing. 
+- You have a nonproduction environment available for initial testing. 
 - You have the Power Platform admin center [System Administrator](security-roles-privileges.md) role for making changes to the organization entity in Dataverse. 
 
 ## Configure SameSite attribute 
@@ -117,6 +117,6 @@ Check critical integrations and scenarios, especially iframe and cross-site inte
 
 | Issue | Cause | Solution |
 | --- | --- | --- |
-| Dynnamics 365 pages fail to load in iframe. | SameSite set to **Lax** or **Strict**. | Change to **None**. |
+| Dynamics 365 pages fail to load in iframe. | SameSite set to **Lax** or **Strict**. | Change to **None**. |
 | Cookie setting persists between multiple environments. | The cookie is shared across the .crm.dynamics.com domain. | Clear cookies or use separate browser sessions, or profiles. |
 | Integrations failing (CSRF errors). | SameSite is set to **Lax** or **Strict** blocks necessary cookies. | Use token-based authentication, which is recommended. Or, configure the setting to **None**. |
