@@ -72,7 +72,7 @@ Here's a detailed look at what this evaluation entails:
 1. **Security tools and technologies**: Examine the security tools and technologies you're currently using to protect your Power Platform environment. Consider:
     - **Data Loss Prevention (DLP) policies**: Are you using DLP policies to prevent unauthorized data sharing?
     - **Encryption**: Is your data encrypted both at rest and in transit?
-       **Identity and Access Management (IAM)**: Are you using advanced features of Microsoft Entra ID, such as Conditional Access or Privileged Identity Management (PIM), for authentication and authorization?
+    - **Identity and Access Management (IAM)**: Are you using advanced features of Microsoft Entra ID, such as Conditional Access or Privileged Identity Management (PIM), for authentication and authorization?
 1. **Security policies and guidelines**: Review any existing security policies or guidelines specific to Power Platform. Consider whether these policies are up-to-date and comprehensive enough to address current threats. Key areas to evaluate include:
     - **User access controls**: Are there clear policies on who can access what data and resources?
     - **Development guidelines**: Have you established secure coding practices for app and workflow development? Are these guidelines easily accessible to your makers? Do you have processes in place to train new makers on these guidelines?
@@ -83,17 +83,20 @@ Here's a detailed look at what this evaluation entails:
     - **Compliance audits**: Are you regularly conducting audits to ensure compliance?
     - **Documentation**: Do you have the necessary documentation to demonstrate compliance during audits?
 
-Evaluate these aspects and gain a clear understanding of your current security posture. This understanding is crucial for developing a strategic plan to enhance your security measures, ensuring that your Power Platform environment is robust, secure, and compliant.
+Evaluate these aspects and gain a clear understanding of your current security posture, then develop a strategic plan to enhance your security measures.
+
+>[!TIP]
+> Take the [Power Platform Well-Architected assessment](/assessments/689fd8d9-1000-4cbb-8096-a6c8f3294fc7/) to examine the security of your workload designs.
 
 Understanding your security maturity level is essential for developing a robust security strategy for Power Platform. Assess your current security posture to identify where you stand in terms of security practices and controls. Categorize your organization into a specific maturity level—initial, capable, or efficient—to establish a clear baseline. This baseline helps you pinpoint specific action items needed to advance to the next maturity level. By addressing these action items, you enhance your security measures and ensure better protection for your data, applications, and users.
 
 | | Initial | Capable | Efficient |
 | --- | --- | --- | --- |
-| **Identity and Access Management (IAM)** | Uses basic Microsoft Entra ID for user authentication and access control. | Uses advanced Microsoft Entra ID features, such as Conditional Access, Privileged Identity Management (PIM), and potentially Continuous Access Evaluation (CAE) for granular control over access. | Comprehensive Identity and Access management. Implements a mature identity governance framework with automated provisioning/de-provisioning, access reviews, and entitlement management. |
-| **Environment strategy** | Limited environment strategy. Employs a few environments with broad security group assignments. | Structured environment strategy. Uses a well-defined environment strategy with clear security group assignments and role-based access control (RBAC) for different workloads. | Optimized environment management. Uses environment lifecycle management, deployment pipelines, and potentially environment routing for efficient and secure application deployment. |
+| **[Identity and Access Management (IAM)](conditional-access.md)** | Uses basic Microsoft Entra ID for user authentication and access control. | Uses advanced Microsoft Entra ID features, such as Conditional Access, Privileged Identity Management (PIM), and potentially Continuous Access Evaluation (CAE) for granular control over access. | Comprehensive Identity and Access management. Implements a mature identity governance framework with automated provisioning/de-provisioning, access reviews, and entitlement management. |
+| **[Environment strategy](environment-strategy.md)** | Limited environment strategy. Employs a few environments with broad security group assignments. | Structured environment strategy. Uses a well-defined environment strategy with clear security group assignments and role-based access control (RBAC) for different workloads. | Optimized environment management. Uses environment lifecycle management, deployment pipelines, and potentially environment routing for efficient and secure application deployment. |
 | **Dataverse security** | Implements out-of-the-box Dataverse security roles and basic table permissions. | Customizes Dataverse security roles, implements column-level security, and uses record-level sharing for fine-grained data access control. | Advanced Data Security: Implements data masking, customer-managed keys (CMK), and potentially Customer Lockbox for enhanced data protection. Uses Microsoft Purview for data classification and labeling. |
-| **Data protection** | Has Data Loss Prevention (DLP) policies in place but with limited connector actions and endpoint filtering. | Advanced DLP and Network Security. Employs extended DLP with connector action control and endpoint filtering. Implements IP firewall and potentially virtual network support for network isolation. | Robust Network Security. Implements a defense-in-depth network security strategy with Azure Firewall, Network Security Groups (NSGs), and Azure Policy. |
-| **Monitoring** | Basic monitoring. Relies on basic audit logs and might not have integrated Power Platform into their broader security operations center (SOC). | Proactive monitoring. Integrates Power Platform logs with Microsoft Sentinel or a similar security information and event management (SIEM) solution for threat detection and incident response. | Advanced threat protection and monitoring. Employs advanced threat protection capabilities like Microsoft Defender for Cloud Apps. Uses AI and automation for threat detection and response in their SOC. Actively participates in the Security Development Lifecycle (SDL) and uses the [Power Platform Well-Architected Framework](/power-platform/well-architected/) for continuous improvement. |
+| **[Data protection](data-protection.md)** | Has Data Loss Prevention (DLP) policies in place but with limited connector actions and endpoint filtering. | Advanced DLP and Network Security. Employs extended DLP with connector action control and endpoint filtering. Implements IP firewall and potentially virtual network support for network isolation. | Robust Network Security. Implements a defense-in-depth network security strategy with Azure Firewall, Network Security Groups (NSGs), and Azure Policy. |
+| **[Monitoring](observability.md)** | Basic monitoring. Relies on basic audit logs and might not have integrated Power Platform into their broader security operations center (SOC). | Proactive monitoring. Integrates Power Platform logs with Microsoft Sentinel or a similar security information and event management (SIEM) solution for threat detection and incident response. | Advanced threat protection and monitoring. Employs advanced threat protection capabilities like Microsoft Defender for Cloud Apps. Uses AI and automation for threat detection and response in their SOC. Actively participates in the Security Development Lifecycle (SDL) and uses the [Power Platform Well-Architected Framework](/power-platform/well-architected/) for continuous improvement. |
 
 ## Typical security challenges in business applications
 
@@ -117,9 +120,9 @@ Power Platform offers a range of security controls and tools designed to tackle 
 
 1. **Managed security**: [Managed security](/power-platform/admin/security/managed-security) is a suite of premium capabilities that offers advanced protection and empowers security administrators to effectively manage and secure access to customer data and resources. It brings together Microsoft's most advanced threat protection, data protection and privacy, identity and access management, and compliance capabilities to help customers meet today's cybersecurity challenges.
 
-## Consider OWASP Top 10
+## Consider OWASP Top 10 security risks
 
-The Open Worldwide Application Security Project® ([OWASP](https://owasp.org/about/)) is a nonprofit foundation dedicated to improving software security. OWASP identified the [top 10 security risks](https://aka.ms/OWASPLowCodeSecurityRisks) associated with low-code/no-code platforms. This list is essential for users to understand and is regularly updated based on feedback from the security community to ensure it remains relevant and comprehensive.
+The Open Worldwide Application Security Project® ([OWASP](https://owasp.org/about/)) is a nonprofit foundation dedicated to improving software security. OWASP identified the [top 10 security risks](https://aka.ms/OWASPLowCodeSecurityRisks) associated with low-code/no-code platforms. This list is regularly updated based on feedback from the security community to ensure it remains relevant and comprehensive.
 
 These risks are common across all low-code/no-code platforms, and addressing them requires a combination of platform-specific security features and organizational security processes. While using a low-code/no-code platform can mitigate some security risks, it doesn't eliminate all of them.
 
@@ -129,7 +132,7 @@ By understanding and addressing these top 10 security risks, you can significant
 
 ## Find the right level of security friction
 
-Finding the right balance in security measures is critical to maintaining both productivity and safety within an organization. Users need sufficient security guidance to protect their assets, but overly restrictive measures can hinder their efficiency. When security protocols are too cumbersome or not well understood, users might become frustrated and attempt to bypass them, leading to risky "Shadow IT" practices. Such practices not only undermine security efforts but also increase the overall risk to the organization. Therefore, it's essential to implement robust yet user-friendly security measures, ensuring that users can work efficiently while keeping their assets secure.
+Find the right balance in security measures to maintain both productivity and safety within your organization. Users need sufficient security guidance to protect their assets, but overly restrictive measures can hinder their efficiency. When security protocols are too cumbersome or not well understood, users might become frustrated and attempt to bypass them, leading to risky "Shadow IT" practices. Such practices not only undermine security efforts but also increase the overall risk to the organization. Therefore, it's essential to implement robust yet user-friendly security measures, ensuring that users can work efficiently while keeping their assets secure.
 
 :::image type="content" source="media/find-balance.png" alt-text="Diagram illustrating the balance between security and productivity." lightbox="media/find-balance.png":::
 
@@ -141,16 +144,16 @@ Security naturally creates friction that might slow down processes. It's importa
 
 ## Make security a priority
 
-Security should be your first concern when you start your Power Platform adoption, not an afterthought. Ignoring security requirements can lead to serious legal, financial, and business risks, and delays in your project. It can also affect the overall scalability and performance of the solution. 
+Security should be your first concern when you start your Power Platform adoption, not an afterthought. Ignoring security requirements can lead to serious legal, financial, and business risks, and delays in your project. It can also affect the overall scalability and performance of the solution.
 
 Make security a priority from day one. Consider the security impacts on scalability, performance, compliance, rollout plans, reporting, and operational aspects. Include specific examples from each product that build on the concepts discussed.
 
 ## Next step
 
-A comprehensive security strategy for Power Platform adoption creates a framework that ensures protection of sensitive data, compliance with regulatory standards, and supports enterprise scalability. To develop your security strategy, be sure to implement a robust security posture.
+A comprehensive security strategy for Power Platform adoption creates a framework that protects sensitive data, complies with regulatory standards, and supports enterprise scalability. 
 
 > [!div class="nextstepaction"]
-> [Manage your security posture](security-posture-management.md)
+> [Enhance your security posture](security-posture-management.md)
 
 ## Resources
 
