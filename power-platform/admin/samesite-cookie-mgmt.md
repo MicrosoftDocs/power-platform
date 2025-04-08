@@ -4,7 +4,7 @@ description: Learn how to configure the SameSite attribute for session cookies i
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/07/2025
+ms.date: 04/08/2025
 author: abhijananddv
 ms.author: abhijanand
 ms.reviewer: sericks
@@ -25,12 +25,12 @@ The SameSite cookie setting controls how browsers share your session cookie (Crm
 | Setting | Description | Recommendation |
 | --- | --- | --- |
 | Lax | Cookies are sent for top-level navigation&mdash;that is, link clicks&mdash;but not during cross-site form submissions such as POST, PUT, DELETE, PATCH. | Recommended for most scenarios. |
-| None | Cookies are always sent. This setting could be necessary for integrations such as embedded Dynamics CRM in iframes or custom integrations. This is the default setting.  | This setting can be used for integrations depending on cross-site requests. |
+| None | Cookies are always sent. This setting could be necessary for integrations such as embedded Dynamics 365 in iframes or custom integrations. This is the default setting.  | This setting can be used for integrations depending on cross-site requests. |
 | Strict | Cookies are never sent with cross-site requests, even for top-level navigations in cross-site scenarios. | This setting can be used for highly-sensitive environments. It can also impact the user experience. |
 
 ## Important considerations 
 
-### Multiple CRM instances in one browser session (critical) 
+### Multiple Dynamics 365 instances in one browser session (critical) 
 
 When logging into Dynamics 365 environments, browsers create a _session cookie_ (CrmOwinAuth) that remembers your login. This cookie is shared across all Dynamics 365 environments under the same parent domain (crm.dynamics.com). 
 
@@ -117,6 +117,6 @@ Check critical integrations and scenarios, especially iframe and cross-site inte
 
 | Issue | Cause | Solution |
 | --- | --- | --- |
-| CRM pages fail to load in iframe. | SameSite set to **Lax** or **Strict**. | Change to **None**. |
+| Dynnamics 365 pages fail to load in iframe. | SameSite set to **Lax** or **Strict**. | Change to **None**. |
 | Cookie setting persists between multiple environments. | The cookie is shared across the .crm.dynamics.com domain. | Clear cookies or use separate browser sessions, or profiles. |
 | Integrations failing (CSRF errors). | SameSite is set to **Lax** or **Strict** blocks necessary cookies. | Use token-based authentication, which is recommended. Or, configure the setting to **None**. |
