@@ -100,6 +100,8 @@ The following value plays aren't intended as an exhaustive list but rather a sta
 
 ## Next step
 
+Getting executive sponsorship and executive leadership buy-in is one of the most important aspects of successful Power Platform adoption, especially in large organizations. Learn how to identify an executive leader to sponsor your project and understand the role and activities of an executive sponsor.
+
 > [!div class="nextstepaction"]
 > [Get executive sponsorship](executive-sponsorship.md)
 

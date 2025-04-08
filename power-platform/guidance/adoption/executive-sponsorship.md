@@ -73,3 +73,10 @@ The following table describes maturity levels to help you assess the current sta
 | 300: Defined | An executive sponsor is formally identified and expectations for this role are clear. |
 | 400: Capable | An executive sponsor is well established. A healthy relationship exists between the executive sponsor, CEO/CIO, business departments, and IT leadership. The teams share an understanding of what the organization wants to achieve with Power Platform and are working toward that goal. |
 | 500: Efficient | The executive sponsor is highly engaged and is a key driver for advancing Power Platform adoption. They take part in ongoing adoption improvements, using KPIs or OKRs to track goals. They celebrate internal success stories and participate as sponsors in internal events such as [hackathons](hackathons.md). |
+
+## Next step
+
+Establishing a Microsoft Power Platform Center of Excellence or Center of Enablement (CoE) is a strategic move that can maximize the platform’s potential and ensure its sustainable, scalable, and secure use across the enterprise.
+
+> [!div class="nextstepaction"]
+> [Establish a Center of Excellence](coe.md)

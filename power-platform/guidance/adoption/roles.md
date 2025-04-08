@@ -53,35 +53,35 @@ As your adoption matures, the roles within your organization might change. Initi
 
 Roles might vary based on the organization’s size and the maturity of its roles and capabilities. However, the following are typically involved in Power Platform adoption:
 
+### Strategic and executive roles
+
+- **Power Platform product owner**: Oversee the strategic direction, governance, and management of  Power Platform. This role sets the vision and roadmap for Power Platform to align with organizational goals, ensures compliance with policies and regulations, and manages the overall governance framework.
+- **Leadership / executives**: Guide the strategic direction and ensure alignment of Power Platform initiatives with business objectives. They promote user adoption and ensure adequate resourcing.
+- **Change management**: Manage the transition and adoption of Power Platform, ensuring smooth implementation and user acceptance.
+- **Business analysts**: Identify business needs and develop solutions using Power Platform to meet those needs, ensuring alignment with organizational goals.
+- **Project management office**: Ensure that low-code projects are managed in accordance with organizational project standards and controls, providing oversight and governance to ensure successful project delivery.
+
 ### Administration and governance
 
 - **Power Platform admins**: Administer Power Platform, manage security settings, monitor performance, and troubleshoot issues. This team is responsible for platform health, hygiene, monitoring, and implementing guardrails, and maintaining ongoing security posture.
-- **Power Platform environment admins**: Oversee the management and configuration of environments within the Power Platform. This team performs similar tasks to the Platform tenant admins but are delegated to a smaller subsection of the organization.
-- **Power Platform product owner**: Oversee the strategic direction, governance, and management of the Power Platform. This role sets the vision and roadmap for Power Platform to align with organizational goals, ensures compliance with policies and regulations, and manages the overall governance framework.
+- **Power Platform environment admins**: Oversee the management and configuration of Power Platform environments. This team performs similar tasks to the Platform admins but are delegated to a smaller subsection of the organization.
 - **Information Governance team**: Ensure that information generated and consumed is appropriately handled, maintaining compliance with data protection and regulatory standards.
 - **Information Security and Compliance team**: Ensure Power Platform complies with industry regulations and internal policies. They assure that Power Platform meets ongoing organizational cybersecurity objectives and ensures AI compliance with regulations.
 
 ### Support and enablement
 
-- **Community and enablement lead**: Provide training and support to users of Power Platform, ensuring they understand and can effectively use the tools. This role ensures adopters get the best out of the platform through training, guidance, and peer support. This role often establishes a champion community by identifying and training enthusiastic users, fostering collaboration, and recognizing contributions to sustain engagement and knowledge sharing.
+- **Community and enablement lead**: Provide training and support to users of Power Platform, ensuring they understand and can effectively use the tools. This role helps adopters get the best out of the platform through training, guidance, and peer support. This role often establishes a champion community by identifying and training enthusiastic users, fostering collaboration, and recognizing contributions to sustain engagement and knowledge sharing.
 - **IT operations (support)**: Provide frontline support for apps and solutions built on the platform, addressing user issues and ensuring smooth operation.
-- **Azure service administrator**: Oversee the administration of Azure services at a tenant level, ensuring appropriate configuration and security. They support Power Platform admins with configuring Azure features, for example setting up an Azure Application Insight instance or an Azure storage account to support monitoring.
+- **Azure service administrator**: Oversee the administration of Azure services at a tenant level. They support Power Platform admins with configuring Azure features, for example setting up an Azure Application Insight instance or an Azure storage account to support monitoring.
 - **Microsoft 365 admin**: Support the Power Platform Team with admin functions in Microsoft 365, for example license assignment and user configuration.
 - **Other service admins**: Service specific admin roles that administer specific services such as Copilot, Power BI, and Microsoft Teams, ensuring proper configuration and support. They support Power Platform admins with service specific admin functions.
 
 ### Development and architecture
 
 - **Makers (citizen to pro-devs)**: Utilize the platform to its fullest ability to solve business problems in a supported way with clarity around guardrails.
-- **DevOps engineer**: Bridge development and operations, implementing and automating processes to enhance the software development lifecycle. They ensure continuous integration and delivery, improving efficiency and reliability.
+- **DevOps engineer**: Bridge development and operations, implementing and automating processes to enhance the software development lifecycle. They help configure continuous integration and delivery, improving efficiency and reliability.
 - **Enterprise architects**: Design and oversee the architecture of Power Platform to align with organizational technology strategies. They ensure integration with line-of-business (LOB) systems and determine criteria for when to use Power Platform versus other systems.
 - **Solution architects**: Develop and derive solutions architecture, ensuring they meet business needs and technical requirements using Power Platform, Microsoft 365, and Azure services.
-
-### Strategic and executive roles
-
-- **Leadership / executives**: Guide the strategic direction and ensure alignment of Power Platform initiatives with business objectives. They promote user adoption and ensure adequate resourcing.
-- **Change management**: Manage the transition and adoption of Power Platform, ensuring smooth implementation and user acceptance.
-- **Business analysts**: Identify business needs and develop solutions using Power Platform to meet those needs, ensuring alignment with organizational goals.
-- **Project management office**: Ensure that low-code projects are managed in accordance with organizational project standards and controls, providing oversight and governance to ensure successful project delivery.
 
 ### Data and AI
 
@@ -95,14 +95,14 @@ Roles might vary based on the organization’s size and the maturity of its role
 
 ## Task clarity
 
-Task clarity refers to the clear definition and understanding of the specific tasks that need to be completed. It ensures that each team member knows exactly what is expected of them, including the steps and standards required to accomplish their tasks. This clarity helps reduce confusion, improve efficiency, and ensure that everyone is working towards the same objectives.
+Task clarity refers to the clear definition and understanding of the specific tasks that need to be completed. Through task clarity, each each team member knows exactly what is expected of them, including the steps and standards required to accomplish their tasks. This clarity helps reduce confusion, improve efficiency, and ensure that everyone is working towards the same objectives.
 
 To identify and define tasks:
 
 - **Break down goals**: Start by breaking down the overall goals into smaller, manageable tasks. This helps in understanding what needs to be done to achieve the larger objectives.
-- **Assign responsibilities**: Clearly assign each task to a specific role or individual. Ensure that everyone knows their responsibilities and how their tasks contribute to the overall goals.
+- **Assign responsibilities**: Clearly assign each task to a specific role or individual. Make sure that everyone knows their responsibilities and how their tasks contribute to the overall goals.
 - **Detail steps and standards**: Define the steps required to complete each task and the standards that need to be met. This includes specifying deadlines, quality expectations, and any necessary resources.
-- **Communicate clearly**: Ensure that all team members are aware of their tasks and have the information they need to complete them. Regular communication helps in addressing any uncertainties and keeping everyone aligned.
+- **Communicate clearly**: Make sure that all team members are aware of their tasks and have the information they need to complete them. Regular communication helps in addressing any uncertainties and keeping everyone aligned.
 - **Monitor and adjust**: Continuously monitor the progress of tasks and make adjustments as needed. This helps in ensuring that tasks are being completed effectively and any issues are addressed promptly.
 
 As you identify and define tasks, consider how your organization’s current processes can be applied to Power Platform. Key factors to consider include:
@@ -132,7 +132,7 @@ Tasks vary based on the organization’s size and the maturity of Power Platform
 | [Identify an executive sponsor](executive-sponsorship.md) to champion the Power Platform initiative and provide strategic direction | [Establish and maintain environment](environment-strategy.md) (and supporting Data Loss Prevention) strategy | [Configure and enable cross tenant isolation](data-protection.md#cross-tenant-inbound-and-outbound-restrictions) | [Regularly review Power Platform analytics](observability.md) for overall platform usage and adoption | Establish an internal [champions community](champions.md)|
 | [Establish specific, measurable goals](vision.md) for what the organization aims to achieve with Power Platform | Automate process for environment lifecycle operations (create, control, configure, delete) |Regularly review and approve connectors to be added to [DLP strategy](dlp-strategy.md) | [Monitor capacity/consumption](cds-usage.md) by department or organization structure to attribute cost | [Develop training & learning resources](training-strategy.md) to [onboard makers](onboard-makers.md) to standards for app design and development |
 | [Define a license assignment strategy](license-assignment-strategies.md), including a model for cross-charging license and capacity costs to business teams (if applicable to your organization). Enable self-service purchase and autoclaim. | Automate key support activities (for example, change app permissions or ownership, quarantine apps) | [Define and maintain application lifecycle management processes](alm.md) (for example, pipelines, solution checker, source control) | [Configure sharing limits](conditional-access.md#configure-sharing-limits) | Create a maker assessment and certification program|
-| Evaluate current processes and identify areas where Power Platform can add value | Establish visibility and control with Managed Environment capabilities | [Set up and maintain Data Loss Prevention (DLP) policies](dlp-strategy.md) | [Monitor and take action on overshared, unused, or orphaned resources to maintain hygiene](reactive-governance.md) | Create a catalog of sample apps, theming, and reusable UI components to [promote reuse](reusable.md|
+| Evaluate current processes and identify areas where Power Platform can add value | Establish visibility and control with Managed Environment capabilities | [Set up and maintain Data Loss Prevention (DLP) policies](dlp-strategy.md) | [Monitor and take action on overshared, unused, or orphaned resources to maintain hygiene](reactive-governance.md) | Create a catalog of sample apps, theming, and reusable UI components to [promote reuse](reusable.md)|
 | Determine the budget, personnel, and technology resources required for successful implementation | Review governance policies at a regular cadence| Restrict environment creation to admin | Monitor performance and reliability using Application Insights |Create a [dedicated support team](support-strategy.md) for Power Platform |
 | Involve key stakeholders from various departments to ensure their needs and concerns are addressed | [Manage user licenses and capacity / consumption](capacity-and-licenses.md) | Disable share to everyone and [apply sharing limits](conditional-access.md#configure-sharing-limits) to nominated environment | Enable Manged Environment Power Advisor to take recommended actions | Create a feedback system for makers to provide feedback to Power Platform Center of Excellence/Center of Enablement |
 | Outline how information about the Power Platform initiative will be communicated across the organization | Create a strategy for appropriate use of Default and Developer Environments | [Protect against data exfiltration](data-protection.md| Monitor and enable tenant and environment settings for Copilot Studio| Create a library of assets such as custom connectors, for makers to integrate with business systems in a secure way|
@@ -173,5 +173,12 @@ Here’s a simple example to illustrate how to create a RACI matrix:
 ## Continuous improvement
 
 Continuously evolve your roles and responsibilities as your organization progresses in its Power Platform adoption journey. This ongoing evaluation helps identify new tasks that emerge as your adoption matures and ensures that existing tasks are still relevant and effectively managed. Change management plays a vital role in this process, providing a structured approach to handle transitions smoothly. By regularly reviewing and updating your RACI matrix, you can adapt to new challenges, streamline workflows, and maintain alignment with your strategic goals.
+
+## Next step
+
+Defining a structured delivery and organization model is essential for driving successful Power Platform adoption within your organization. A well-defined model establishes clear roles and responsibilities, which help foster collaboration and innovation.
+
+> [!div class="nextstepaction"]
+> [Evaluate delivery models](delivery-models.md.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
