@@ -6,7 +6,7 @@ ms.subservice: admin
 ms.author: samathur
 ms.reviewer: sericks
 ms.topic: conceptual
-ms.date: 12/04/2024
+ms.date: 01/14/2025
 search.audienceType: 
   - admin
 ms.contributors:
@@ -15,6 +15,8 @@ ms.contributors:
 - matleon
 ---
 # Opt in to early access updates 
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 Microsoft Power Platform and customer engagement apps teams deliver two [major releases](policies-communications.md#major-release-events) per year (April and October) that offer new capabilities and functionality.
 
@@ -44,8 +46,8 @@ Early access begins approximately two months before general availability of each
 | Switzerland                  | January 22, 2025  |
 | Norway                       | January 22, 2025  |
 | Korea                        | January 22, 2025  |
-| Singapore                    | January 20, 2025  |
-| Sweden                       | January 20, 2025  |
+| Singapore                    | January 22, 2025  |
+| Sweden                       | January 22, 2025  |
 | United Arab Emirates         | January 27, 2025  |
 | Japan                        | January 27, 2025  |
 | Asia Pacific                 | January 27, 2025  |

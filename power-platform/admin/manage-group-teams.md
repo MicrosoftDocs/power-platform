@@ -13,6 +13,8 @@ search.audienceType:
 ---
 # Manage group teams
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 ## About group teams
 
 A Microsoft Entra *group* team. Similar to *owner* team, a Microsoft Entra group team can own records and can have security roles assigned to the team. There are two *group* team types, and they correspond directly to the Microsoft Entra group types – Security and Microsoft 365. The *group* security role can be just for the team or for team member with User privileges [member's privilege inheritance](security-roles-privileges.md#team-members-privilege-inheritance). Team members are dynamically derived (added and removed) when they access the environment based on their Microsoft Entra group membership. 
@@ -30,7 +32,7 @@ The administrator can create Microsoft Entra group teams that are associated to 
 When members of these group teams access these environments, their access rights are automatically granted based on the group team's security role.
 
 > [!TIP]
-> ![Video symbol](../admin/media/video-thumbnail-4.png "Video symbol") Check out the following video: [Dynamic Microsoft Entra Groups](https://www.microsoft.com/en-us/videoplayer/embed/RE58gAd).  
+> ![Video symbol](../admin/media/video-thumbnail-4.png "Video symbol") Check out the following video: [Dynamic Microsoft Entra Groups](https://learn-video.azurefd.net/vod/player?id=2624ecc4-a40a-451d-a5b4-8bc9d4d0069a).  
 
 
 #### Provision and deprovision users 

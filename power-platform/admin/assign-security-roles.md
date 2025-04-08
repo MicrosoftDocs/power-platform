@@ -17,6 +17,8 @@ contributors:
 ---
 # Assign a security role to a user  
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 Consider the following information about security roles:
 
  - Security roles control a user's access to data through a set of access levels and permissions. The combination of access levels and permissions that are included in a specific security role sets limits on the user's view of data and on the user's interactions with that data.  
@@ -36,7 +38,7 @@ Consider the following information about security roles:
 For more information about the difference between [!INCLUDE[pn_MS_Online_Services](../includes/pn-ms-online-services.md)] administrator roles and security roles, see [Grant users access](grant-users-access.md).
 
 > [!TIP]
-> Check out the following video: [Assigning security roles in the Power Platform admin center](https://www.microsoft.com/videoplayer/embed/RWJBr6).
+> Check out the following video: [Assigning security roles in the Power Platform admin center](https://learn-video.azurefd.net/vod/player?id=fa663203-981a-4a08-8e25-2ec1e8d793f6).
   
 Follow these steps to assign a security role.
 

@@ -14,6 +14,8 @@ search.audienceType:
 
 # Security concepts in Microsoft Dataverse
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 One of the key features of [Dataverse](/powerapps/maker/common-data-service/data-platform-intro) is its rich security model that can adapt to many business usage scenarios. This security model is only in play when there's a Dataverse database in the environment. As an administrator, you likely won't be building the entire security model yourself, but will often be involved in the process of managing users and making sure they have the proper configuration and troubleshooting security access related issues.
 
 > [!TIP]
@@ -26,7 +28,7 @@ Dataverse uses role-based security to group together a collection of privileges.
 ## Business units
 
 > [!TIP]
-> ![Video symbol](../admin/media/video-thumbnail-4.png "Video symbol") Check out the following video: [Modernize business units](https://www.microsoft.com/videoplayer/embed/RWOdR4). 
+> ![Video symbol](../admin/media/video-thumbnail-4.png "Video symbol") Check out the following video: [Modernize business units](https://learn-video.azurefd.net/vod/player?id=66e9e218-232d-4559-afb6-100433531b47). 
 
 
 Business units work with security roles to determine the effective security that a user has. Business units are a security modeling building block that helps in managing users and the data they can access. Business units define a security boundary. Every Dataverse database has a single root business unit.

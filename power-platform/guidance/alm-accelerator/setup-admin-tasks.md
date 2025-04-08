@@ -3,7 +3,7 @@ title: Configure the ALM Accelerator using the admin app
 description: Learn how to configure the ALM Accelerator for Power Platform using the built-in administration app.
 ms.topic: conceptual
 ms.date: 06/13/2024
-ms.subservice: guidance
+ms.subservice: guidance-toolkit
 author: jenschristianschroder
 ms.author: jeschro
 ms.reviewer: sericks

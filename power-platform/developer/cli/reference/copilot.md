@@ -5,9 +5,8 @@ keywords: "pac cli"
 ms.subservice: developer
 author: laneswenka
 ms.author: laswenka
-ms.date: 12/2/2024
 ms.reviewer: jdaly
-ms.topic: reference
+ms.topic: generated-reference
 contributors: 
  - JimDaly
 ---
@@ -101,6 +100,14 @@ Specifies the target Dataverse. The value may be a Guid or absolute https URL. W
 Allow overwrite of the output data file if it already exists.
 
 This parameter requires no value. It's a switch.
+
+#### `--templateName`
+
+Template name or 'kickStartTemplate' if name is not specified.
+
+#### `--templateVersion`
+
+Template version in X.X.X format or 1.0.0 if version is not specified.
 
 [!INCLUDE [copilot-extract-template-remarks](includes/copilot-extract-template-remarks.md)]
 

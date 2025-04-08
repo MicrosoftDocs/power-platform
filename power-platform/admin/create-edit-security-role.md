@@ -17,6 +17,8 @@ search.audienceType:
 
 # Create or edit a security role to manage access
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 Create security roles or edit the privileges associated with an existing security role to accommodate changes in your business requirements. You can [export your changes as a solution](/powerapps/maker/common-data-service/use-solutions-for-your-customizations) to make a backup or for use in a different implementation.
 
 ## Prerequisites
@@ -109,7 +111,7 @@ and assign the following privilege on the Business Management tab: Read User.
 
 - To render tables: assign Read privilege on the table
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW10lgO]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=85201287-5bcf-45a3-8e9f-f0ded7cd17c4]
 
 ## Privacy notices
 

@@ -1,7 +1,7 @@
 ---
 title: Content security policy
 description: Use content security policy to prevent click jacking in Power Apps. 
-ms.date: 09/10/2024
+ms.date: 01/06/2025
 ms.topic: conceptual
 author: JesseParsons
 ms.subservice: admin
@@ -15,7 +15,12 @@ contributors:
 ---
 # Content security policy
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 [Content Security Policy](https://developer.mozilla.org/docs/Web/HTTP/CSP) (CSP) is currently supported in model-driven and canvas Power Apps. Admins can control whether the CSP header is sent and, to an extent, what it contains. **The settings are at the environment level, which means it would be applied to all apps in the environment once turned on.**
+
+> [!Note]
+> The content security policy only applies to environments using Dataverse.
 
 Each component of the CSP header value controls the assets that can be downloaded and is described in more detail on the Mozilla Developer Network (MDN). The default values are as follows:
 

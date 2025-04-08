@@ -15,6 +15,8 @@ search.audienceType:
 ---
 # Grant users access
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 To have users up and running in Power Apps and customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), you complete some administrative tasks in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)]—which you generally do only once—followed by administrative tasks.  
 
 Power Apps is an online service subscription. When you signed up for this service, you received a set of licenses with your subscription, one license for each user. You can purchase additional licenses if you need them.  
@@ -59,6 +61,6 @@ In Power Apps, populate the service with your organization’s data, including u
 
  [Plan for deployment and administration](../admin/plan-for-deployment-and-administration.md)
  [Import data (all record types)](../admin/import-data-all-record-types.md)
- [Video: Administer application users, security roles, teams, and users in the Power Platform admin center](https://www.microsoft.com/videoplayer/embed/RWJBr8)
+ [Video: Administer application users, security roles, teams, and users in the Power Platform admin center](https://learn-video.azurefd.net/vod/player?id=5799c67e-f283-4cbd-aafa-bc38a3f53276)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

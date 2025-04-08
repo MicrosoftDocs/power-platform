@@ -15,6 +15,8 @@ search.audienceType:
 ---
 # Add users to an environment  
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 Environments can have zero or one Microsoft Dataverse database. The process for adding users to environments that have no Dataverse database differs from the process for environments that have one Dataverse database. For an overview of environments, see [Environments overview](environments-overview.md). 
 
 ## Add users to an environment that has no Dataverse database 
@@ -36,7 +38,7 @@ When an environment is created with a Dataverse database or a Dataverse database
 - Because it can take a long time to automatically add users to an environment, you can use the following procedure to add specific users to the environment sooner.
 
 > [!TIP]
-> Check out the following video: [Adding users to Dataverse](https://www.microsoft.com/videoplayer/embed/RWJBra).
+> Check out the following video: [Adding users to Dataverse](https://learn-video.azurefd.net/vod/player?id=373c7bec-b315-4958-8bb7-1d5d6fb03a81).
 
 **To add users to an environment that has a Dataverse database**
 

@@ -18,6 +18,8 @@ contributors:
 
 # Solution checker enforcement in Managed Environments
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 The solution checker is a powerful tool that performs a comprehensive static analysis of your solution objects against a set of best practice rules. By using solution checker, you can quickly identify problematic patterns in solution components and receive detailed reports that highlight issues, affected components, and provide links to documentation on how to resolve each issue.
 
 Administrators can use solution checker to enforce checks to identify problematic patterns on solutions when the solution is imported in the Managed Environment.

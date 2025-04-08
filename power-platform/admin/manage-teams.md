@@ -1,9 +1,9 @@
 ---
-title: "Teams in Dataverse   | MicrosoftDocs"
+title: Teams in Dataverse 
 description: Understand the different types of teams and how to view and manage settings.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/12/2024
+ms.date: 01/06/2025
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
@@ -14,10 +14,12 @@ search.audienceType:
 ---
 # Microsoft Dataverse teams management
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 Using Microsoft Dataverse teams is optional. However, teams provide an easy way to share business objects and let you collaborate with other people across business units. Although a team belongs to one business unit, it can include users from other business units. You can associate a user with more than one team. This topic discusses the different types of teams and their various operations.
 
 > [!TIP]
-> Check out the video: [Administer application users, security roles, teams, and users in the Power Platform admin center](https://www.microsoft.com/videoplayer/embed/RWJBr8).
+> Check out the video: [Administer application users, security roles, teams, and users in the Power Platform admin center](https://learn-video.azurefd.net/vod/player?id=5799c67e-f283-4cbd-aafa-bc38a3f53276).
 
 ## Types of teams
 
@@ -147,7 +149,7 @@ You can add and delete members from a team.
 
 4. Select **Delete** twice to confirm. Note that this action can't be undone.
 
-### Convert owner teams to access teams (preview)
+### Convert owner teams to access teams
 
 You can convert _owner_ teams to become _access_ teams. 
 
@@ -166,7 +168,7 @@ You can convert _owner_ teams to become _access_ teams.
 1. Select **Convert Owner team to Access Team** from the command bar. 
 1. Select **OK** to complete the action.
 
-### Reassign team's records (preview)
+### Reassign team's records
 
 You can reassign the owner team's records to another user or team.  
 
@@ -194,7 +196,7 @@ See [Change the business unit for a team](create-edit-business-units.md#change-t
  [Create a team template and add to an entity form](create-team-template-add-entity-form.md)   
  [Manage group teams](manage-group-teams.md)   
  [About team templates](../admin/about-team-templates.md)   
- [Add teams or users to a field security profile](add-teams-users-field-security-profile.md)   
+ [Add teams or users to a column security profile to control access](field-level-security.md#add-teams-or-users-to-a-column-security-profile-to-control-access)
  [About team templates](about-team-templates.md)   
  [Entity relationship behavior](/powerapps/maker/common-data-service/create-edit-entity-relationships#entity-relationship-behavior)
 

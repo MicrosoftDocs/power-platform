@@ -2,29 +2,23 @@
 title: Manage Copilot Studio messages and capacity 
 description: Learn how to manage Copilot Studio messages and capacity.
 author: amiyapatr-zz
-ms.date: 12/02/2024
+ms.date: 01/27/2025
 ms.reviewer: sericks
 ms.topic: conceptual
 ms.subservice: admin
 ms.author: ampatra
-ms.custom: bap-template
+ms.custom: bap-template, NewPPAC
 search.audienceType: 
  - admin
 ---
 
 # Manage Copilot Studio messages and capacity 
 
-The Microsoft Copilot Studio capacity management experience in the Power Platform admin center allows administrators to manage Copilot Studio message and session capacity, while monitoring overall capacity consumption. This experience also provides an overview of the licensing models in use.
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
+The Microsoft Copilot Studio capacity management experience in the Power Platform admin center allows administrators to manage Copilot Studio message capacity, while monitoring overall capacity consumption. This experience provides an overview of the licensing models in use. This experience allows administrators to efficiently manage their available session capacity.
 
 ## Use the Summary tab
-
-# [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. On the navigation pane, select **Billing** > **Licenses**. The **Licenses** page is displayed.
-1. Select the **Summary** tab.
-2. In the **Summaries** section, select **Copilot Studio**.
-
 
 # [New admin center](#tab/new)
 
@@ -32,6 +26,13 @@ The Microsoft Copilot Studio capacity management experience in the Power Platfor
 1. On the navigation pane, select **Licensing**.
 1. In the **Licensing** pane, under **Products**, select **Copilot Studio**.
 1. Select the **Summary** tab.
+
+# [Classic admin center](#tab/classic)
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. On the navigation pane, select **Billing** > **Licenses**. The **Licenses** page is displayed.
+1. Select the **Summary** tab.
+2. In the **Summaries** section, select **Copilot Studio**.
 
 ---
 
@@ -50,7 +51,7 @@ When viewing the Copilot Studio summary, the following cards are displayed in th
 :::image type="content" source="media/environment-tab.png" alt-text="The following cards are displayed in the **Capacity summary** section on the page and provide information to you.":::
 
 ### Pay-as-you-go messages
-This card displays the count of active billing plans with the Copilot Studio meter applied, along with the month-to-date total of Copilot Studio message units billed to these plans.
+This card displays the count of active billing plans with the Copilot Studio meter applied, along with the month-to-date total of Copilot Studio message units billed to these plans. A billing plan in the Power Platform admin center is a configuration that allows administrators to group one or more environments, allowing them to track and bill Copilot Studio message capacity usage directly to an Azure subscription on a pay-as-you-go basis.
 
 ### Prepaid capacity
 The Prepaid capacity card shows the number of prepaid capacity units that have been purchased, assigned, and consumed. These units can be either session-based or message capacity units, with a link provided to manage each type.
@@ -60,7 +61,9 @@ The Prepaid capacity card shows the number of prepaid capacity units that have b
 The following cards are displayed in the **Messages capacity** tab.
 
 ##### Capacity consumption by product
-This tile presents a product-focused view of Copilot message units consumed, detailing the number of units deducted from prepaid capacity packs and/or pay-as-you-go units.
+This tile presents a product-focused view of Copilot Studio message units consumed, detailing the number of units deducted from prepaid capacity packs and/or pay-as-you-go units.
+
+If Copilot Studio message units are consumed for Microsoft 365 Copilot Chat, the number of units consumed can be found under the Microsoft 365 Copilot Chat product.
  
 ##### Total capacity consumption trend
 Displays the daily trend of capacity consumption over the past three months.
@@ -70,17 +73,6 @@ Highlights the top environments based on Copilot Studio message usage.
 
 ## Use the Environments tab
 The **Environments** tab  provides details on the Copilot Studio message capacity consumed per environment, including the number of messages deducted from the prepaid capacity and the units billed under pay-as-you-go plans. It also indicates the environment's status, such as whether it's within capacity or in overage, if capacity is allocated, and if pay-as-you-go is used.
-
-# [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. On the navigation pane, select **Billing** > **Licenses**. The **Licenses** page is displayed.
-1. Select the **Environments** tab.
-1. Select the **Select environment** button.
-1. The **Select an environment** pane is displayed.
-1. Select the environment you want to use and select the **Select** button.
-1. In the **Summaries** section, select **Copilot Studio**.
-
 
 # [New admin center](#tab/new)
 
@@ -92,7 +84,19 @@ The **Environments** tab  provides details on the Copilot Studio message capacit
 1. The **Select an environment** pane is displayed.
 1. Select the environment you want to use and select the **Select** button.
 
+# [Classic admin center](#tab/classic)
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. On the navigation pane, select **Billing** > **Licenses**. The **Licenses** page is displayed.
+1. Select the **Environments** tab.
+1. Select the **Select environment** button.
+1. The **Select an environment** pane is displayed.
+1. Select the environment you want to use and select the **Select** button.
+1. In the **Summaries** section, select **Copilot Studio**.
+
 ---
+
+To view Copilot Studio capacity consumed for Microsoft 365 Copilot Chat, select the **Microsoft 365 Copilot Chat** environment in the environment selection page. 
  
 View the Copilot Studio capacity consumed within that environment. The following cards are displayed on the **Messages capacity** tab.
 
@@ -105,7 +109,21 @@ The grid displays a list of Copilot agents consuming capacity, including the ass
 ## Manage capacity
 Capacity allocation can be managed in the Power Platform admin center. 
 
-To allocate, complete the following steps depending on whether you're using the classic admin center or the new admin center.
+To allocate, complete the following steps depending on whether you're using the new admin center or the classic admin center .
+
+# [New admin center](#tab/new)
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. On the navigation pane, select **Licensing**.
+1. In the **Licensing** pane, under **Products**, select **Copilot Studio**.
+1. Select the **Summary** tab.
+1. Do one of the following:
+
+   - Select **Manage Capacity** from the **Prepaid capacity** card
+
+   -or-
+
+   - Under the **Copilot Studio** heading, select **Manage messages** or **Manage sessions**.
 
 # [Classic admin center](#tab/classic)
 
@@ -121,21 +139,6 @@ To allocate, complete the following steps depending on whether you're using the 
 
    - Under the **Copilot Studio** heading, select **Manage messages** or **Manage sessions**.
    
-
-
-# [New admin center](#tab/new)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. On the navigation pane, select **Licensing**.
-1. In the **Licensing** pane, under **Products**, select **Copilot Studio**.
-1. Select the **Summary** tab.
-1. Do one of the following:
-
-   - Select **Manage Capacity** from the **Prepaid capacity** card
-
-   -or-
-
-   - Under the **Copilot Studio** heading, select **Manage messages** or **Manage sessions**.
 
 ---
 
