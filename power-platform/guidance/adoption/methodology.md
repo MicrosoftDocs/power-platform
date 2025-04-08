@@ -35,7 +35,7 @@ This guidance aligns with the following pillars and responsibilities for adoptio
 | :::image source="../media/govern.svg" type="icon"::: [Governance](admin-best-practices.md) | Implement digital guardrails for your makers to create with confidence. |
 | :::image source="../media/operate.svg" type="icon"::: [Operations](operate-overview.md) | Establish a strategy for application lifecycle management and ongoing production support. |
 | :::image source="../media/availability.svg" type="icon"::: [Availability](availability-overview.md) | Plan for failures and build a disaster recovery plan. |
-| :::image source="../media/plan.svg" type="icon"::: [Readiness](ready-overview.md) | Upskill your makers and envision high-value use cases. |
+| :::image source="../media/innovate.svg" type="icon"::: [Readiness](ready-overview.md) | Upskill your makers and envision high-value use cases. |
 | :::image source="../media/nurture.svg" type="icon"::: [Community](nurture-best-practices.md) | Accelerate your adoption with a thriving internal community. |
 
 
