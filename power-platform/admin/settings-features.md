@@ -4,11 +4,12 @@ description: Learn how to manage feature settings to adjust how features appear 
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/18/2025
+ms.date: 04/03/2025
 ms.subservice: admin
 ms.author: sericks
 ms.reviewer: sericks
 contributors:
+    - marianaraujo 
     - jekom1
     - sriharibs-msft 
     - V-Camille
@@ -77,8 +78,10 @@ To update these settings, make sure you have the System Administrator or System 
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-|Enable this feature for:  | Allow AI to generate suggestions for fields in model-driven apps. Learn more in [Copilot assistance for form fill in model-driven apps](/power-apps/user/form-filling-assistance). | Users as the feature becomes available <br><br> **Note:** If the **Users as the feature becomes available (default)** option is selected, the feature is turned on for users in Dynamics 365 model-driven apps, and the feature is kept off for users in Power Apps model-driven apps. |
-| Enable smart paste (preview) | Smart paste (preview) uses the text copied to your clipboard to suggest text for specific fields and provides inline suggestions in the form. | Off |
+|Automatic suggestions | Allow AI to generate suggestions for fields in model-driven apps. Learn more in [Use Copilot's form fill assistance feature in model-driven apps](/power-apps/user/form-filling-assistance). | Default<br><br>**Note:** If the **Default** option is selected, the feature is turned on for users of Dynamics 365 model-driven apps, and the feature is kept off for users of Power Apps model-driven apps. |
+| Smart paste (Production Ready Preview) | Smart paste (preview) uses the text or image copied to your clipboard to suggest text for specific fields and provides inline suggestions in the form. Learn more in [Use smart paste](/power-apps/user/form-filling-assistance#use-smart-paste-preview).  | Default<br><br>**Note:** In the monthly channel, if the **Default** option is selected, the feature is turned on for users of Dynamics 365 model-driven apps, and the feature is kept off for users of Power Apps model-driven apps. |
+
+Makers can learn more about form fill assistance in [Manage model-driven app settings in the app designer](/power-apps/maker/model-driven-apps/app-properties#features).
 
 ## AI suggestions for formula columns (preview)
 
@@ -228,11 +231,18 @@ To update these settings, make sure you have the System Administrator or System 
 | Allow process capacity overage  |  When **On**, enables machines and cloud flows to go into process capacity overage. New process capacity overage is only possible in an environment with at least one process / hosted process / unattended capacity assigned. Learn more in [Process capacity overage](/power-automate/desktop-flows/capacity-utilization-process#capacity-overage). | On |
 | Allow auto-claim of process capacity |  When **On**, enables automatic assignment of process capacity to the environment (if any is available in the admin center) when required by an assignation of process capacity to a cloud flow, or to a machine while there's no available capacity in the environment. Learn more in [Process capacity](/power-automate/desktop-flows/capacity-process). | On |
 
+## Dataverse search
+
+| Setting | Description | Default value |
+|---------|-------------|---------------|
+| On |  When **On** is selected, the search bar becomes visible. Generative AI experiences using Dataverse data are also available. | Not selected|
+| Default |  When **Default** is selected, the search bar is hidden. However, generative AI experiences using Dataverse data remain available. | Selected|
+| Off  | When **Off** is selected, the search bar is hidden, and generative AI experiences using Dataverse data are limited.  | Not selected |
+
 ## Search
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-|Dataverse search| If **On**, you can use Dataverse search to find records across multiple tables, sorted by relevance.| Off|
 |Single table search option| If **On**, users get another option to search on a single table on view pages of search-enabled tables in all model-driven apps.|Off|
 |Prevent slow keyword filter for quick find terms on view pages |  If **On**, users are prevented from searching with keywords that begin with an asterisk (\*) in grid search in all model-driven apps, and a message displays in the application. If **Off**, users can search with keywords that begin with an asterisk (\*) in grid search in all model-driven apps, but an information tooltip displays indicating the search might be slow. Learn more in [Grid search](/power-apps/user/grid-filters#grid-search). | Off|
 |Quick Find record limits| If **On**, if more than 10,000 records are found, a message displays that suggests a more selective search. Learn more in [Configure Dataverse search for the organization](configure-relevance-search-organization.md).| On |
