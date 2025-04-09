@@ -6,6 +6,7 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 04/24/2024
 ms.subservice: admin
+ms.custom: NewPPAC
 ms.author: sericks 
 search.audienceType: 
   - admin
@@ -29,23 +30,29 @@ The following table shows tasks that are associated with changing regional and l
 
 ## Add a language  
 
-These settings can be found in the Microsoft Power Platform admin center by going to **Environments** > [select an environment] > **Settings** > **Product** > **Languages**.
+These settings can be found in the Microsoft Power Platform admin center for an environment, follow these steps:
 
-Make sure you have the System Administrator or System Customizer security role or equivalent permissions to update the setting.
+## [New admin center](#tab/new)
+ 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+ 1. Select **Manage**, select **Environments**, and then select an environment.
+ 1. Select **Settings**.
+ 1. Expand **Product**, and then select **Languages**.
+ 
+ ## [Classic admin center](#tab/classic)
+ 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+ 1. Select **Environments**, and then select an environment.
+ 1. Select **Settings**.
+ 1. Expand **Product**, and then select **Languages**.
+ ---
 
-- Follow the steps in [View your user profile](/powerapps/user/view-your-user-profile).
-- Don’t have the correct permissions? Contact your system administrator.
+Make sure you have the System Administrator or System Customizer security role or equivalent permissions to update the setting. To check your security role, see [View your user profile](/powerapps/user/view-your-user-profile). If you don’t have the correct permissions, contact your system administrator.
 
 Before users can start using a Language Pack to display a language, the Language Pack must be added in your organization.
 
 > [!NOTE]
 > To display the translated labels for the languages imported into an environment from a solution, the language must be added in the environment *before* you import the solution. More information: [Label text doesn’t display in additional languages after import](/powerapps/maker/data-platform/import-update-export-solutions#label-text-doesnt-display-in-additional-languages-after-import)
 
-1. Sign in to the Power Platform admin center. 
-
-1. Select an environment and go to **Settings** > **Product** > **Languages**.
-
-   Here you’ll see each Language Pack installed in your environment, with a check box to the left of each listed Language Pack.  
+You’ll see each Language Pack installed in your environment, with a check box to the left of each listed Language Pack.  
 
 1. For each Language Pack that you want to provision (use), select the check box next to it. For each Language Pack that you want to unprovision (not use), clear the check box.
 
