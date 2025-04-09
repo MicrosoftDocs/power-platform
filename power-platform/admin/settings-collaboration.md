@@ -15,7 +15,9 @@ search.app:
   - PowerApps
   - Powerplatform
   - Flow
-ms.custom: bap-template
+ms.custom:
+- bap-template
+- NewPPAC
 ms.contributors:
 - srihas
 ---
@@ -24,7 +26,22 @@ ms.contributors:
 
 [!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
-Use collaboration settings to adjust how collaboration features work in Power Platform. Adjust the settings in the Power Platform admin center, **Environments** > *select an environment* > **Settings** > **Product** > **Collaboration**.
+Use collaboration settings to adjust how collaboration features work in Power Platform. 
+
+To adjust the settings in the Power Platform admin center for an environment, follow these steps:
+
+## [New admin center](#tab/new)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. Select **Manage**, select **Environments**, and then select an environment.
+1. Select **Settings**.
+1. Expand **Product**, and then select **Collaboration**.
+
+## [Classic admin center](#tab/classic)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. Select **Environments**, and then select an environment.
+1. Select **Settings**.
+1. Expand **Product**, and then select **Collaboration**.
+---
 
 Make sure you have the System Administrator security role or equivalent permissions to update the collaboration settings. To check your security role, see [View your user profile](/powerapps/user/view-your-user-profile). If you don’t have the correct permissions, contact your system administrator.
 
