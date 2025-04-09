@@ -21,6 +21,8 @@ ms.contributors:
 ---
 # Data storage and governance in Power Platform
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 First, it’s important to distinguish between *personal data* and *customer data*.
 
 - **Personal data** is information about people that can be used to identify them.

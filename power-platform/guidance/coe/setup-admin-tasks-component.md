@@ -5,7 +5,7 @@ author: stjeffer
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/07/2022
-ms.subservice: guidance
+ms.subservice: guidance-toolkit
 ms.author: stjeffer
 ms.reviewer: sericks
 search.audienceType: 

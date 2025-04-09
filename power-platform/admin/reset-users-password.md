@@ -15,6 +15,8 @@ search.audienceType:
 ---
 # Reset a user's password
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 If a user loses a password, you can reset it. For step-by-step instructions, see [Reset a User’s Password](/microsoft-365/admin/add-users/reset-passwords).  
   
 > [!NOTE]

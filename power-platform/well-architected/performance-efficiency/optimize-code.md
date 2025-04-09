@@ -83,6 +83,10 @@ To optimize logic, consider the following strategies:
 
 Review the performance recommendations specific to the Power Platform product you're working with. Evaluate your logic against these recommendations to identify areas for improvement.
 
+Learn more about [Power Automate coding guidelines](/power-automate/guidance/coding-guidelines/) and [Power Apps coding guidelines](/power-apps/guidance/coding-guidelines/overview) that can help you optimize logic.
+
+[!INCLUDE [pp-tip-powercat-toolkit](~/../shared-content/shared/guidance-includes/pp-tip-powercat-toolkit.md)]
+
 > :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff**: Optimizing logic and hot paths requires expertise. Identifying logic inefficiencies is subjective and might require highly skilled individuals, whom you may need to pull from other tasks.
 
 ### Use concurrency and parallelism
