@@ -28,17 +28,18 @@ The following [rules](environment-groups.md#rules) can be applied to [environmen
 | 2 | [AI-generated descriptions (preview)](/power-apps/maker/canvas-apps/save-publish-app#create-an-app-description-with-copilot-preview) |
 | 3 | [AI-powered Copilot features](/power-apps/maker/canvas-apps/ai-overview?WT.mc_id=ppac_inproduct_settings) |
 | 4 | [Back-up retention](backup-restore-environments.md) |
-| 5 | [Generative AI settings](geographical-availability-copilot.md) |
-| 6 | [Maker welcome content](welcome-content.md) |
-| 7 | [Power Apps component framework for canvas apps](/power-apps/developer/component-framework/component-framework-for-canvas-apps) |
-| 8 | [Release channel](https://go.microsoft.com/fwlink/?linkid=2237290) |
-| 9 | [Sharing agents with Editor permissions (preview)](managed-environment-sharing-limits.md) |
-| 10 | [Sharing agents with Viewer permissions (preview)](managed-environment-sharing-limits.md) |
-| 11 | [Sharing controls for canvas apps](managed-environment-sharing-limits.md) |
-| 12 | [Sharing controls for solution-aware cloud flows](managed-environment-sharing-limits.md) |
-| 13 | [Solution checker enforcement](managed-environment-solution-checker.md) |
-| 14 | [Unmanaged customizations](../alm/block-unmanaged-customizations.md) |
-| 15 | [Usage insights](managed-environment-usage-insights.md) |
+| 5 | [Default deployment pipeline (preview)](../alm/default-deployment-pipeline-rule-for-environment-groups.md) |
+| 6 | [Generative AI settings](geographical-availability-copilot.md) |
+| 7 | [Maker welcome content](welcome-content.md) |
+| 8 | [Power Apps component framework for canvas apps](/power-apps/developer/component-framework/component-framework-for-canvas-apps) |
+| 9 | [Release channel](https://go.microsoft.com/fwlink/?linkid=2237290) |
+| 10 | [Sharing agents with Editor permissions (preview)](managed-environment-sharing-limits.md) |
+| 11 | [Sharing agents with Viewer permissions (preview)](managed-environment-sharing-limits.md) |
+| 12 | [Sharing controls for canvas apps](managed-environment-sharing-limits.md) |
+| 13 | [Sharing controls for solution-aware cloud flows](managed-environment-sharing-limits.md) |
+| 14 | [Solution checker enforcement](managed-environment-solution-checker.md) |
+| 15 | [Unmanaged customizations](../alm/block-unmanaged-customizations.md) |
+| 16 | [Usage insights](managed-environment-usage-insights.md) |
 
 > [!NOTE]
 > The rules that have “(preview)” in their name are in public preview, while rules without it are considered generally available.
