@@ -93,7 +93,7 @@ The constrained list of values varies according to what business process is bein
    | Language | "en", "de", "es" | The language code of the display value. The app combo box controls filter the appropriate values based on the user's browser language from the app. More languages can be created by extending the Dataverse choice values. |
    | Value Code | "US", "DE", "MX" | The language independent code that SAP expects within the API. |
    | Domain | "Country", "State", "Payment Terms" | Constrained value representing the domain that the list of values is mapped to. The app combo box controls filter the appropriate values based on mapped domain. More domains can be added by extending the Dataverse choice values. |
-   | Parent Value |  | Allows for parent-child relationships of values. For example, specific state/province domain values can be parented to a single country domain value. |
+   | Parent Value |  | Allows for parent-child relationships of values. For example, specific state/province domain values can be parented to a single country/region domain value. |
    | Description |  | General description of what the value represents. |
 
 1. Select **Save** and monitor the import progress.
