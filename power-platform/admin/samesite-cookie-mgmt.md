@@ -4,7 +4,7 @@ description: Learn how to configure the SameSite attribute for session cookies i
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/08/2025
+ms.date: 04/09/2025
 author: abhijananddv
 ms.author: abhijanand
 ms.reviewer: sericks
@@ -101,7 +101,7 @@ Currently, we need to perform the configuration through API call.
 
 ### Verify the update 
 
-To verify the update, go to this URL: `<orgU-URL>/api/data/v9.0/organizations(<org-ID>)?$select=samesitemodeforsessioncookie`
+To verify the update, go to this URL: `<org-URL>/api/data/v9.0/organizations(<org-ID>)?$select=samesitemodeforsessioncookie`
 
 Check that the value is updated. 
 
