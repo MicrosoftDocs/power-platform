@@ -1,13 +1,13 @@
 ---
 title: Deutsche Bahn empowers citizen developers with Power Platform
 description: Learn how Deutsche Bahn empowers 4,000 citizen developers to build over 500 low-code apps using Microsoft Power Platform, saving time and reducing costs.
-#customer intent: As a Power-Platform user, I want to understand how Deutsche Bahn uses Power Platform so that I can evaluate its potential for my organization.
+#customer intent: As a business owner, I want to understand how Deutsche Bahn uses Power Platform so that I can evaluate its potential for my organization.
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
 ms.subservice: architecture-center
 ms.topic: overview
-ms.date: 03/25/2025
+ms.date: 04/10/2025
 ---
 
 # Deutsche Bahn empowers citizen developers with Power Platform
@@ -96,7 +96,7 @@ Let's look at some successful example applications that the citizen developers h
 
 ### Build an app that digitizes the shift log reporting process
 
-Stephanie Schneider at DB Services GmbH built an app that digitizes the reporting process for the teams that clean passenger trains. Shift log data that was previously recorded on paper can now be entered directly into a mobile app that was built by using Power Apps. The data is automatically compiled, sent via email to managers through a scheduled [Power Automate](https://www.microsoft.com/power-platform/products/power-automate) flow, and shown on a [Power BI](https://www.microsoft.com/en-us/power-platform/products/power-bi) dashboard that provides instant insights into performance.
+Stephanie Schneider at DB Services GmbH built an app that digitizes the reporting process for the teams that clean passenger trains. Shift log data that was previously recorded on paper can now be entered directly into a mobile app that was built by using Power Apps. The data is automatically compiled, sent via email to managers through a scheduled [Power Automate](https://www.microsoft.com/power-platform/products/power-automate) flow, and shown on a [Power BI](https://www.microsoft.com/power-platform/products/power-bi) dashboard that provides instant insights into performance.
 
 The following image shows the user experience. An employee selects **Start** and fills in the reporting information, as shown on the left. The data is then visualized for business intelligence on the Power BI dashboard, as shown on the right.
 
