@@ -25,8 +25,6 @@ In this section, you learn how to:
 
 - Review out-of-the-box monitoring capabilities.
 - Check service and environment health.
-- Set alerts for security permissions or compliance regulations.
-- Perform typical actions to ensure the security, health, and safety of the citizen developer environment.
 
 ## What tools are available to monitor resource usage?
 
@@ -34,18 +32,15 @@ Several tools are available to monitor resource usage in Power Platform.
 
 ### Power Platform admin center
 
-The [Power Platform admin center](/power-platform/admin/new-admin-center) is designed with an outcome-driven approach, where all functionality is intuitively organized in pages based on administrative tasks. This is typically considered the primary path for completing administrative activities. From a monitoring point of view, this channel is used mostly for ad-hoc interactive discovery.
+The [Power Platform admin center](/power-platform/admin/new-admin-center) is designed with an outcome-driven approach, where all functionality is intuitively organized in pages based on administrative tasks. This is typically considered the primary path for completing administrative activities. From a resource monitoring point of view, this channel is used mostly for ad-hoc interactive discovery.
 
 - Use [tenant-level analytics](/power-platform/admin/tenant-level-analytics) to extract key service metrics based on user adoption across your environments.
-- Use the [Monitor page](/power-platform/admin/monitoring/monitoring-overview) in the Power Platform admin center to understand solution health and detect degradations.
-- Use the [Security page](/power-platform/admin/security/security-overview) to assess and monitor your security score and understand how to improve your security policies.
 - Use the [Copilot page](/power-platform/admin/copilot/copilot-hub) to track usage, and access governance controls for Power Platform Copilots.
 - Use [Power Platform Advisor](/power-platform/admin/power-platform-advisor) to monitor recommendations to optimize your tenant.
-- Check the [Service health dashboard](/power-platform/admin/check-online-service-health) to view the status of the Power Platform service, details about existing service incidents, and up to 30 days’ worth of history.
 
-### Microsoft Sentinel
+### Monitor page
 
-[Detect threats to your organization](threat-detection.md) using [Microsoft Sentinel](/azure/sentinel/business-applications/solution-overview). Microsoft Sentinel equips admins with a comprehensive security and monitoring solution that intelligently detects and responds to suspicious activities such as mass data deletion or app execution from unauthorized geographies. You can also use threat detection rules to run regularly query the collected data and analyze it to discover threats.
+You can use the [Monitor page](/power-platform/admin/monitoring/monitoring-overview) to assess and enhance the operational health metrics of resources developed or deployed within Power Platform. This tool is accessible to both makers (via experiences like Power Apps) and admins (via the Power Platform admin center). Makers utilize the data to refine their resources, while admins use it to gain insights into the overall operational health of the tenant or specific environments. 
 
 ### Custom tooling and extensibility
 

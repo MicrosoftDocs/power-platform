@@ -56,7 +56,7 @@ Navigating resistance to change can be challenging, but effective communication 
 | People are worried there isn't sufficient training for new ways of working​ | Share details about [training activities](training-strategy.md) and link to supporting content. Work with a partner to offer hands-on training workshops internally. Attend a [virtual "in a day" training](https://www.microsoft.com/power-platform/instructor-led-training).​ |
 | People don’t like change. They don’t want to change. Period.​ | Ensure the business sponsorship through to managers is there and promote the benefits of working in the new way. Provide information about how people can get help (champion support, training) if needed. ​|
 
-## Avoid IT fiefdoms and IT silos
+## Avoid IT silos
 
 Some antipatterns block the growth mindset in organizations that want to grow and transform. These antipatterns include micromanagement, biased thinking, and exclusionary practices. Many of these blockers are personal challenges that create personal growth opportunities for everyone. But two common antipatterns in IT, silos, and fiefdoms, require more than individual growth or maturity to address.
 

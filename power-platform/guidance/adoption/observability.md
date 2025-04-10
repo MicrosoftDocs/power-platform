@@ -27,7 +27,7 @@ As your Power Platform adoption grows, actionable insights become more important
 - **Usage trends:** Identifying which apps and features are most frequently used can guide development and support efforts.
 - **Performance metrics:** Monitoring app performance and identifying bottlenecks ensures a smooth user experience.
 - **Security alerts:** Keeping track of security incidents and potential vulnerabilities helps in maintaining a secure environment.
-- **Governance:** Ensuring that all activities comply with established governance policies is crucial for maintaining control and accountability.
+- **Governance:** Ensuring that all activities comply with established governance policies is required for maintaining control and accountability.
 - **Capacity management:** Understanding storage and license usage helps in planning for future growth and avoiding performance issues.
 
 This article delves into the key aspects of monitoring usage and adoption, governance and security, platform health, and capacity, providing actionable recommendations for each area.
@@ -40,20 +40,22 @@ Understanding how users interact with the Power Platform is important for drivin
 - Monitor usage patterns and frequency: Analyze how users and makers are interacting with the platform, including which features and tools are most frequently used. Identify any underutilized features that might require more training or promotion.
 - Identify and address any barriers to adoption: Collect feedback from users through surveys, focus groups, and direct communication. Use this feedback to identify pain points, areas for improvement, and opportunities for new features.
 
-Learn more about [tracking resource usage](resource-usage.md)
+Learn more about [tracking resource usage](resource-usage.md).
 
 ## Governance, security, and compliance
 
 Effective governance ensures that the Power Platform is used responsibly and aligns with organizational policies.
 
-- Ensure adherence to organizational policies and governance frameworks. Establish clear policies for the use of the Power Platform, including data handling, user access, and acceptable use. Regularly review and update policies to reflect changes in technology and business needs.
+- Ensure adherence to organizational policies and governance frameworks. Establish clear policies for the use of Power Platform, including data handling, user access, and acceptable use. Regularly review and update policies to reflect changes in technology and business needs.
 - Monitor access controls and permissions. Define roles and permissions to ensure users have appropriate access based on their responsibilities. Implement least privilege access to minimize security risks. Regularly review high-impact accounts and remove priviliges if they're no longer needed.
 - Track security incidents. Implement security monitoring tools to detect and respond to threats
 - Ensure the platform complies with relevant regulations such as GDPR, HIPAA, and CCPA. Conduct regular audits to verify compliance and address any gaps.
 
+Learn more about [managing Power Platform at scale](govern-at-scale.md).
+
 ## Platform and solution health
 
-Monitoring and maintaining the health of solutions is vital for uninterrupted service and user satisfaction.
+Monitor and maintain the health of solutions to guarantee uninterrupted service and user satisfaction.
 
 - Check the [Service health dashboard](/power-platform/admin/check-online-service-health) to view the status of the Power Platform service, details about existing service incidents, and up to 30 days’ worth of history.
 - Monitor experiences using the [Monitor page](/power-platform/admin/monitoring/monitoring-overview) in the Power Platform admin center. This capability includes admin and maker experiences that provide out-of-the-box metrics and recommendations. The metrics and recommendations help admin and makers understand production health, detect degradations, and improve production health. The Monitor page exists to bring attention to resources with degraded operational health and highlight which resources have opportunities for improvement.
@@ -104,7 +106,8 @@ Learn more about [recommendations for designing and creating a monitoring system
 
 To achieve effective observability and insights, you should use the following tools:
 
-1. **Power Platform admin center**: Use the Power Platform Admin Center to monitor tenant- and environment-level [analytics](/power-platform/admin/tenant-level-analytics). 
+1. **Power Platform admin center**: 
+    - Use the Power Platform Admin Center to monitor tenant- and environment-level [analytics](/power-platform/admin/tenant-level-analytics). 
     - Use the [Monitor page](/power-platform/admin/monitoring/monitoring-overview) in the Power Platform admin center to understand solution health and detect degradations.
     - Use the [Security page](/power-platform/admin/security/security-overview) to assess and monitor your security score and understand how to improve your security policies.
     - Use [Power Platform Advisor](/power-platform/admin/power-platform-advisor) to monitor recommendations to optimize your tenant.
@@ -117,10 +120,10 @@ To achieve effective observability and insights, you should use the following to
     - Frequently review the logging data, because it can provide help in troubleshooting logic problems. So, having some level of audit logging enabled ahead of the need is helpful to expedite problem solving.
     - Regularly review your audit log size, and delete audit records.
 
-1. **Application Insights**: Integrate Application Insights with Power Platform solutions to track detailed, granular logs and custom metrics for deep analysis, which facilitates a comprehensive understanding of application performance. [Learn more about Integration with Application Insights](/power-platform/admin/overview-integration-application-insights).
+1. **Application Insights**: Integrate Application Insights with Power Platform solutions to track detailed, granular logs and custom metrics for deep analysis, which facilitates a comprehensive understanding of application performance. [Learn more about integration with Application Insights](/power-platform/admin/overview-integration-application-insights).
 
 1. **Custom dashboards**: Create custom dashboards to visualize key metrics and trends, providing a centralized view of the adoption and usage patterns of your Power Platform environments. Use the [CoE Starter Kit](/power-platform/guidance/coe/starter-kit) as a starting point.
 
 1. **Automated alerts**: Set up automated alerts to notify administrators of critical events, such as performance degradation, security breaches, or capacity issues. Use the [integration with Application insights](/power-platform/admin/overview-integration-application-insights), [configure threat detection rules](/azure/sentinel/threat-detection), and [evaluate CoE Starter Kit features](/power-platform/guidance/coe/starter-kit).
 
-1. **Regular reviews**: Conduct regular reviews of monitoring data to identify trends, assess the effectiveness of governance policies, and make data-driven decisions for continuous improvement.
+Conduct regular reviews of monitoring data to identify trends, assess the effectiveness of governance policies, and make data-driven decisions for continuous improvement.

@@ -13,7 +13,7 @@ ms.date: 04/07/2025
 
 # Ensure data retention and mobility
 
-In today's data-driven world, ensuring that your data remains available, secure, and recoverable in the face of disruptions is essential for businesses operating at a global scale. Microsoft Power Platform enables you to protect and recover their data seamlessly with a range of flexible backup and retention capabilities.
+In today's data-driven world, ensuring that your data remains available, secure, and recoverable in the face of disruptions is essential for businesses operating at a global scale. Microsoft Power Platform enables you to protect and recover your data seamlessly with a range of flexible backup and retention capabilities.
 
 This article provides recommendations to help you build robust and resilient solutions.
 
@@ -88,10 +88,9 @@ Having a central source, such as a [SharePoint site or wiki](wiki-community.md),
 
 Microsoft Business Applications provide business continuity and disaster recovery (BCDR) capabilities to all production environments in Dynamics 365 and Power Platform software as a service (SAAS) applications. Learn how [Microsoft ensures your production data is resilient during regional outages](../../admin/business-continuity-disaster-recovery.md).
 
-Develop a comprehensive disaster recovery plan that outlines the steps to take if there's data loss or system failure. Regularly test and update this plan. Learn more about [designing a disaster recovery strategy](../../well-architected/reliability/disaster-recovery.md).
+Develop a comprehensive disaster recovery plan that outlines the steps to take if there's data loss or system failure. Regularly test and update this plan. Learn more about [designing a disaster recovery strategy](plan-disaster-recovery.md).
 
 ## Related information
 
 - [Managed operations](../../admin/operations/overview.md)
 - [Power Platform Well-Architected Recommendation checklist for Reliability](../../well-architected/reliability/checklist.md)
-
