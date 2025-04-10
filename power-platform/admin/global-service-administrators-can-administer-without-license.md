@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.date: 04/10/2024
 search.audienceType: 
   - admin
-contributors"
+contributors:
   - srpoduri 
 ---
 # Global admins and Power Platform admins can administer without a license
