@@ -100,3 +100,8 @@ Review the detailed articles in this series to further enhance your security pos
 - [Configure identity and access management](conditional-access.md)
 - [Meet compliance requirements](compliance.md)
 - [Secure the default environment](secure-default-environment.md)
+
+Once you've reviewed all the articles, take a look at the security checklist to ensure that their Power Platform deployments are robust, resilient, and aligned with best practices
+
+> [!div class="nextstepaction"]
+> [Review the security checklist](security-checklist.md)

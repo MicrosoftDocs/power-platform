@@ -112,7 +112,7 @@ As expected, any new environments that are created in Contoso map to the origina
 This setup of tenant-centric DLP policies doesn't prevent environment admins from coming up with their own environment-level DLP policies, if they want to introduce more restrictions or to classify custom connectors.
 
 
-:::image type="content" source="media/dlp-strategy_.png" alt-text="Screenshot of showing the dlp strategy.":::
+:::image type="content" source="media/dlp-strategy_.png" alt-text="Screenshot of showing the dlp strategy." lightbox="media/dlp-strategy_.png" :::
 
 ## Set up data policies
 
@@ -128,5 +128,20 @@ Set up a [SharePoint site or a wiki](wiki-community.md) that clearly communicate
 - Your admin group’s email ID so that makers can make contact for exception scenarios. For example, admins can help makers get back into compliance editing an existing DLP policy, moving the solution to a different environment, creating a new environment and a new DLP policy, and moving the maker and resource to this new environment.
 
 Also clearly communicate your organization's [environment strategy to makers](/power-platform/guidance/white-papers/environment-strategy#communicate-your-environment-strategy-to-your-organization).
+
+## Next step
+
+Review the detailed articles in this series to further enhance your security posture:
+
+- [Detect threats to your organization](threat-detection.md)
+- [Establish data protection and privacy controls](data-protection.md)
+- [Configure identity and access management](conditional-access.md)
+- [Meet compliance requirements](compliance.md)
+- [Secure the default environment](secure-default-environment.md)
+
+Once you've reviewed all the articles, take a look at the security checklist to ensure that their Power Platform deployments are robust, resilient, and aligned with best practices
+
+> [!div class="nextstepaction"]
+> [Review the security checklist](security-checklist.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

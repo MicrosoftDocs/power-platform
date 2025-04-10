@@ -5,22 +5,26 @@ author: rranjit83
 ms.author: rranjit
 ms.reviewer: sericks
 ms.topic: how-to
-ms.date: 11/15/2024
+ms.date: 04/10/2025
 ms.custom: bap-template
 ms.subservice: guidance
 contributors: 
 - arjunmayur
+ms.contributors:
+- mapichle
 ---
 
 # Secure the default environment
 
-Every employee in your organization has access to the default Power Platform environment. As a Power Platform admin, you need to consider ways to secure that environment while keeping it accessible for makers' personal productivity uses. This article provides suggestions.
+Every employee in your organization has access to the [default Power Platform environment](/power-platform/admin/environments-overview#default-environment). As a Power Platform admin, you need to consider ways to secure that environment while keeping it accessible for makers' personal productivity uses. 
 
 ## Assign administrator roles judiciously
 
-Consider whether your administrators need to have the Power Platform administrator role. Would the environment admin or system administrator role be more appropriate? In any case, limit the more powerful Power Platform admin role to just a few users. [Learn more about administering Power Platform environments](/power-platform/admin/environments-administration).
+Consider whether your administrators need to have the Power Platform administrator role. Would the environment admin or system administrator role be more appropriate? Limit the more powerful Power Platform admin role to just a few users. [Learn more about administering Power Platform environments](/power-platform/admin/environments-administration).
 
 Avoid permanent or standing access by using the JIT features of your IdP. For break glass situations, follow an emergency access process. [Use Privileged Identity Management (PIM)](/power-platform/admin/manage-high-privileged-admin-roles), a feature of Microsoft Entra ID, to manage, control, and monitor the use of these high-privilege roles.
+
+Review [Configure identity and access management](conditional-access.md) for more recommendations.
 
 ## Communicate intent
 
@@ -29,6 +33,10 @@ One of the key challenges for the Power Platform Center of Excellence (CoE) team
 ### Rename the default environment
 
 The default environment is created with the name ***TenantName* (default)**. You can [change the environment name](/power-platform/admin/edit-properties-environment) to something more descriptive, like *Personal Productivity Environment*, to clearly call out the intent.
+
+### Configure maker welcome content
+
+Configure a [customized welcome message](/power-platform/admin/welcome-content) to help makers get started with Power Apps and Copilot Studio. The welcome message replaces the default Power Apps first-time help experience for makers. This is a good opportunity to share the intent of the default environment with all makers immediately when they land in the default environment.
 
 ### Use the Power Platform hub
 
@@ -48,7 +56,7 @@ Maintain robust security and governance by making use of managed environment fea
 
 ## Prevent oversharing
 
-## Configure sharing limits
+### Configure sharing limits
 
 To enhance security and prevent oversharing within the Power Platform's default environment, limit how broadly users can share canvas apps, flows, and agents. Consider configuring [sharing limits](/power-platform/admin/managed-environment-sharing-limits) to maintain tighter control over access, reducing the risk of unauthorized usage or of solutions getting overshared and overused without the necessary governance controls in place. Implementing sharing limits helps safeguard critical information while promoting a more secure and manageable sharing framework within the Power Platform.
 
@@ -113,7 +121,7 @@ Use the following PowerShell cmdlets to customize the [governance policy message
 
 ### Block new connectors in the default environment
 
-By default, all new connectors are placed in the Nonbusiness group of your DLP policy. You can always [change the default group to either Business or Blocked](/power-platform/admin/prevent-data-loss#change-the-default-data-group). For a DLP policy that is applied to the default environment, we recommend that you configure the Blocked group as the default to make sure that new connectors remain unusable until they have been reviewed by one of your administrators.
+By default, all new connectors are placed in the non-business group of your DLP policy. You can always [change the default group to either Business or Blocked](/power-platform/admin/prevent-data-loss#change-the-default-data-group). For a DLP policy that is applied to the default environment, we recommend that you configure the Blocked group as the default to make sure that new connectors remain unusable until they have been reviewed by one of your administrators.
 
 ### Limit makers to prebuilt connectors
 
@@ -195,8 +203,22 @@ Tenant isolation is applied at the tenant level and affects all environments in 
 
 Power Platform tenant isolation is different from Microsoft Entra ID-wide tenant restriction. It doesn't affect Microsoft Entra ID-based access outside of Power Platform. It works only for connectors using Microsoft Entra ID-based authentication, such as the Office 365 Outlook and SharePoint connectors.
 
-### See also
+Learn more:
 
-[Restrict cross-tenant inbound and outbound access (preview)](/power-platform/admin/cross-tenant-restrictions)
+- [Restrict cross-tenant inbound and outbound access (preview)](/power-platform/admin/cross-tenant-restrictions)
+- [Get-PowerAppTenantIsolationPolicy (Microsoft.PowerApps.Administration.PowerShell)](/powershell/module/microsoft.powerapps.administration.powershell/get-powerapptenantisolationpolicy?view=pa-ps-latest&preserve-view=true)
 
-[Get-PowerAppTenantIsolationPolicy (Microsoft.PowerApps.Administration.PowerShell)](/powershell/module/microsoft.powerapps.administration.powershell/get-powerapptenantisolationpolicy?view=pa-ps-latest&preserve-view=true)
+## Next step
+
+Review the detailed articles in this series to further enhance your security posture:
+
+- [Detect threats to your organization](threat-detection.md)
+- [Establish data protection and privacy controls](data-protection.md)
+- [Implement a DLP strategy](dlp-strategy.md)
+- [Configure identity and access management](conditional-access.md)
+- [Meet compliance requirements](compliance.md)
+
+Once you've reviewed all the articles, take a look at the security checklist to ensure that their Power Platform deployments are robust, resilient, and aligned with best practices
+
+> [!div class="nextstepaction"]
+> [Review the security checklist](security-checklist.md)

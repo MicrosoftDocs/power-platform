@@ -19,20 +19,20 @@ contributors:
 
 Managing access to sensitive information and resources is top of mind for IT admins and Chief Information Security Officers (CISO) across industries and ensuring the least privilege access is paramount in maintaining a strong security stance. Power Platform is well-integrated with [Microsoft Entra ID](/entra/identity/) for identity and access management, empowering admins to securely manage users and their interactions with various Power Platform resources. Microsoft Entra ID is core to Microsoft authentication, and helps by protecting against identity compromise. Microsoft Entra ID gives the IT admin visibility and control, and offers more security capabilities such as multifactor authentication and conditional access. [Managed security](/power-platform/admin/security/managed-security) boasts a wealth of seamless capabilities built upon Microsoft Entra ID offering granular control to ensure that your data and resources are only viewed by authorized users.
 
+This article looks at identity and access management controls at every layer.
+
 ## Tenant access
 
 Tenant-level access is the initial layer of security and utilizes Microsoft Entra ID. This ensures that users have an active user account and comply with any conditional access policies to sign in. However, having an active and enabled account alone doesn't grant access to the platform; only users with the appropriate licenses can authenticate and use the platform.
 
 ### Service admin roles
 
-To help you administer environments and settings for the Microsoft Power Platform, you can assign users to manage the service at the tenant level without having to assign a role that provides access to other services within the tenant.
+There are two Power Platform related service admin roles you can assign to provide a high level of admin management:
 
-There are two Power Platform related service admin roles you can assign to provide a high level of admin management.
-
-- Power Platform administrator: This role can perform all admin functions in Microsoft Power Platform, regardless of security group membership at the environment level.
+- Power Platform administrator: This role can perform all admin functions in Power Platform, regardless of security group membership at the environment level.
 - Dynamics 365 administrator: This role can perform most admin functions in Power Platform, but only for environments where they belong to the security group.
 
-Neither of these roles can do tasks that only the Microsoft 365 global admin can do, such as managing user accounts, subscriptions, and access settings for other Microsoft 365 apps. You might need to assign other roles to admins who need to perform those tasks. Review the [service administrator permission matrix](/power-platform/admin/use-service-admin-role-manage-tenant) for more details of each role’s privileges.
+These roles can not manage user accounts, subscriptions, and access settings for other Microsoft 365 apps. You need to collaborate with other admins in your organization to perform those tasks. Review the [service administrator permission matrix](/power-platform/admin/use-service-admin-role-manage-tenant) for more details of each role’s privileges.
 
 Administrative identities introduce some of the highest impact security risks because the tasks they perform require privileged access to a broad set of these systems and applications. Compromise or misuse can have a detrimental effect on your business and its information systems. Security of administration is one of the most critical security areas.
 
@@ -95,9 +95,9 @@ Power Platform admins have access to all environments, even if they aren’t in 
 
 ### Manage guest users
 
-You might need to let guest users access environments and Power Platform resources. Set up their access to environments and apps as described earlier. As with internal users, you can use Microsoft Entra ID conditional access and continuous access evaluation to ensure that guest users are held to an elevated level of security.
+You might need to let guest users access environments and Power Platform resources. As with internal users, you can use Microsoft Entra ID conditional access and continuous access evaluation to ensure that guest users are held to an elevated level of security.
 
-To further enhance security and reduce the risk of incidental over-sharing, you can also block or enable [access by Microsoft Entra guests to your Dataverse-backed environments](/power-platform/admin/security/identity-access-management#guest-access-preview) as needed. By default, guest access is restricted for new Dataverse-backed environments, ensuring a secure setup from the start. With this new public preview feature, you can further boost your security score by enabling this setting for existing environments, too.
+To further enhance security and reduce the risk of incidental over-sharing, you can also block or enable [access by Microsoft Entra guests to your Dataverse-backed environments](/power-platform/admin/security/identity-access-management#guest-access-preview) as needed. By default, guest access is restricted for new Dataverse-backed environments, ensuring a secure setup from the start. You can further boost your security score by enabling this setting for existing environments too.
 
 ### Route makers to their own development environment
 
@@ -107,7 +107,7 @@ To further enhance security and reduce the risk of incidental over-sharing, you 
 
 The ability to create and run specific applications and flows is controlled by security roles in the context of environments. For example, you can share canvas apps directly with a user or with a Microsoft Entra ID group, while still being subject to Dataverse security roles. On the other hand, sharing model-driven apps is done via Dataverse security roles only.
 
-### Provide role-based authorization
+### Assign roles to identities based on their requirements
 
 Based on the responsibility of each identity, authorize actions that should be permitted. An identity must not be allowed to do more than it needs to do. Before you set authorization rules, you need to have a clear understanding of who or what is making requests, what that role is allowed to do, and to what extent it can do it. Those factors lead to choices that combine identity, role, and scope.
 
@@ -119,13 +119,10 @@ Consider the following:
 - Does the identity perform actions that require administrative/elevated permissions?
 - How will the workload interact with third-party services?
 
-### Assign roles to identities based on their requirements
-
 A role is a *set of permissions* assigned to an identity. Assign roles that only allow the identity to complete the task, and no more. When user's permissions are restricted to their job requirements, it's easier to identify suspicious or unauthorized behavior in the system.
 
 Ask questions like these:
 
-- Is read-only access enough?
 - Does the identity need permissions to delete resources?
 - Does the role only need access to the records they created?
 - Is hierarchical access based on the business unit the user is in required?
@@ -133,7 +130,7 @@ Ask questions like these:
 - Does the role need permanent access to these permissions?
 - What happens if the user changes jobs?
 
-**Limiting the level of access that users have reduces the potential attack surface**. If you grant only the minimum permissions that are required to perform specific tasks, the risk of a successful attack or unauthorized access is reduced. For example, developers only need maker access to the development environment but not the production environment; they only need access to create resources but not change environment properties; and they may only need access to read/write data from Dataverse but not change the data model or attributes of the Dataverse table.
+**Limiting the level of access that users have reduces the potential attack surface**. If you grant only the minimum permissions that are required to perform specific tasks, the risk of a successful attack or unauthorized access is reduced. For example, developers only need maker access to the development environment but not the production environment; they only need access to create resources but not change environment properties; and they might only need access to read/write data from Dataverse but not change the data model or attributes of the Dataverse table.
 
 **Avoid permissions that target individual users**. Granular and custom permissions create complexity and confusion and can become difficult to maintain as users change roles and move across the business, or as new users with similar authentication requirements join the team. This situation can create a complex legacy configuration that's difficult to maintain and negatively impacts both security and reliability.
 
@@ -152,6 +149,15 @@ As the race to adopt AI is prioritized across industries, admins are looking to 
 For Copilot Studio agent scenarios, admins are equipped with fine-grained controls over editor versus viewer permissions on a per environment or environment group basis and can limit viewers to security groups, individuals, or a finite number of viewers.
 
 :::image type="content" source="media/limit-sharing.png" alt-text="Screenshot of Limit sharing":::
+
+In addition to these granular sharing limits, also limit the ability for makers to use the [*Everyone* shorthand to share apps](/power-platform/admin/powerapps-powershell?branch=ppadoption-refresh-mapichle#display-tenant-setting-for-ability-to-share-apps-with-everyone) with everyone in the organization. 
+
+Learn more:
+
+- [Share an app](/power-apps/maker/canvas-apps/share-app)
+- [Share an app with guests](/power-apps/maker/canvas-apps/share-app-guests)
+- [Share a cloud flow](/power-automate/create-team-flows)
+- [Share agents with other users](/microsoft-copilot-studio/admin-share-bots)
 
 ### Connect to Azure resources that support managed identity
 
@@ -196,21 +202,25 @@ Effectively governing makers, users, and guests are essential for maintaining se
 
 1. **Diagnose user access issues by invoking 'Run Diagnostics'**: Use the ['Run diagnostics'](/power-platform/admin/troubleshooting-user-needs-read-write-access-organization) feature to troubleshoot and diagnose user access issues. This tool helps identify and resolve permission-related problems, ensuring that users have the appropriate access to perform their tasks. Regular diagnostics can also help detect and address potential security gaps.
 
-1. **Limit sharing with everyone, and evaluate configuring specific limits**: Avoid broad sharing permissions that allow access to everyone. Instead, configure specific sharing limits to control who can access applications and data. This targeted approach ensures that only authorized users can access sensitive information, reducing the risk of data leaks and unauthorized access.
+1. **Limit [sharing with everyone](/power-platform/admin/powerapps-powershell?branch=ppadoption-refresh-mapichle#display-tenant-setting-for-ability-to-share-apps-with-everyone), and evaluate configuring specific limits**: Avoid broad sharing permissions that allow everyone to access a resource. Configure specific sharing limits to control how many users makers can share their applications and data with. 
 
-1. **Apply Data Loss Prevention (DLP) policies to developer environments**: Apply DLP policies to developer environments to restrict access to only the connectors that makers need. This helps prevent unauthorized data transfers and ensures that sensitive information is protected. Regularly review and update DLP policies to align with changing security requirements.
+1. **Apply Data Loss Prevention (DLP) policies to the default and developer environments**: Apply DLP policies to the default and developer environments to restrict access to only the connectors that makers need. This helps prevent unauthorized data transfers and ensures that sensitive information is protected. Regularly review and update DLP policies to align with changing security requirements.
 
-1. **Use Entra ID Groups to secure environment access**: Use Microsoft Entra ID groups to manage and secure access to Power Platform environments. By grouping users based on their roles and responsibilities, you can efficiently assign and manage permissions. Entra ID groups also simplify the process of updating access controls as organizational needs evolve.
+1. **Use Microsoft Entra ID Groups to secure environment access**: Use Microsoft Entra ID groups to manage and secure access to Power Platform environments. By grouping users based on their roles and responsibilities, you can efficiently assign and manage permissions. Microsoft Entra ID groups also simplify the process of updating access controls as organizational needs evolve.
 
 1. **Use Dataverse to have built-in flexible RBAC security model**: Using Dataverse provides a built-in, flexible Role-Based Access Control (RBAC) security model that allows you to manage user permissions and access to data effectively. This model enables you to define custom roles and assign specific permissions based on job functions and responsibilities, ensuring that users have only the necessary access to perform their tasks. With features like granular permissions, hierarchical security, and team-based access, Dataverse's RBAC model enhances data protection, supports compliance with regulatory requirements, and simplifies the management of user access within Power Platform environments.
 
-## Next steps
+## Next step
 
-Every organization must comply with the legal and regulatory standards of the industry and region they operate in. They may also have more contractual requirements and corporate policies.
+Review the detailed articles in this series to further enhance your security posture:
 
-Learn more:
-- [Meet compliance requirements](/power-platform/guidance/adoption/compliance.md)
+- [Detect threats to your organization](threat-detection.md)
+- [Establish data protection and privacy controls](data-protection.md)
+- [Implement a DLP strategy](dlp-strategy.md)
+- [Meet compliance requirements](compliance.md)
+- [Secure the default environment](secure-default-environment.md)
 
+Once you've reviewed all the articles, take a look at the security checklist to ensure that their Power Platform deployments are robust, resilient, and aligned with best practices
 
-
-<!-- TODO -- >
+> [!div class="nextstepaction"]
+> [Review the security checklist](security-checklist.md)

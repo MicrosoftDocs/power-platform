@@ -15,7 +15,7 @@ ms.date: 02/28/2025
 
 Every organization must comply with the legal and regulatory standards of the industry and region they operate in. They might also have additional contractual requirements and corporate policies.
 
-Regional, industry-wide, and organization-specific regulations are top of mind as the race towards AI adoption continues. With Power Platform, you can feel confident that your organization’s business applications and copilots meet [all compliance requirements](/power-platform/admin/wp-compliance-data-privacy) including assured visibility, granular traceability, and comprehensive audits.
+Regional, industry-wide, and organization-specific regulations are top of mind as the race towards AI adoption continues. With Power Platform, you can feel confident that your organization’s business applications and agents meet [all compliance requirements](/power-platform/admin/wp-compliance-data-privacy) including assured visibility, granular traceability, and comprehensive audits.
 
 Microsoft is responsible for the platform, including the services it offers. We provide a cloud service that can meet or exceed your security, privacy, and compliance needs. Microsoft complies with data protection and privacy laws for cloud services, and our compliance with world-class industry standards is verified. Detailed information about compliance for our cloud services and solutions that help you meet regulatory requirements for data security is available in our [Microsoft Trust Center](https://www.microsoft.com/trust-center).
 
@@ -80,9 +80,24 @@ Ensure data is protected and managed in compliance with regulatory requirements.
 
 ## Provide employee training
 
-Train employees on data protection best practices and the importance of adhering to data residency requirements. Tailor training materials to the specific roles and responsibilities of different employees. Data protection laws and regulations are constantly evolving. Ensure that training programs are regularly updated to reflect the latest legal requirements and best practices. Use interactive methods such as workshops, simulations, and real-life scenarios to make the training engaging and effective. Provide continuous support and resources, such as access to data protection officers or legal advisors, to help employees stay informed and compliant.
+Train employees on data protection best practices and the importance of adhering to data residency requirements. Tailor training materials to the specific roles and responsibilities of different employees. Data protection laws and regulations are constantly evolving. Ensure that training programs are regularly updated to reflect the latest legal requirements and best practices. Use interactive methods such as workshops and showcasing real-world solutions to make the training engaging and effective. Provide continuous support and resources, such as access to data protection officers or legal advisors, to help employees stay informed and compliant.
 
-## Resources
+## Next step
+
+Review the detailed articles in this series to further enhance your security posture:
+
+- [Detect threats to your organization](threat-detection.md)
+- [Establish data protection and privacy controls](data-protection.md)
+- [Implement a DLP strategy](dlp-strategy.md)
+- [Configure identity and access management](conditional-access.md)
+- [Secure the default environment](secure-default-environment.md)
+
+Once you've reviewed all the articles, take a look at the security checklist to ensure that their Power Platform deployments are robust, resilient, and aligned with best practices
+
+> [!div class="nextstepaction"]
+> [Review the security checklist](security-checklist.md)
+
+## Related resources
 
 - [Compliance and data privacy](/power-platform/admin/wp-compliance-data-privacy)
 - [Microsoft Trust Center](https://www.microsoft.com/trustcenter)
