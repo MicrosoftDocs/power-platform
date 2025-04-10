@@ -64,7 +64,7 @@ During the deletion process, a new replacement default environment is created wi
 > [!IMPORTANT]
 > You can't turn off this cleanup mechanism. However, you can review the last activity date for environments in the Power Platform admin center. 
 
-## Develeoper environment
+## Developer environment
  Power Platform is implementing a cleanup process for developer environments that meet the following criteria. After 30 days of inactivity, an environment is turned off. After 30 days, if no action is taken, the environment that was turned off is deleted. You have seven days to recover deleted environments.
 
 - Admins receive two warning notifications before the environment is deleted due to inactivity.
@@ -122,7 +122,7 @@ By default, administrators have 15 days to re-enable an environment. If the envi
 2. Select **Environments**, and then select **Recover deleted environments**.
 3. Select an environment to recover, and then select **Recover**.
 
-[Learn more about recovering environment](recover-environment.md).
+[Learn more about recovering an environment](recover-environment.md).
 
 > [!NOTE]
 > Recovering a Teams environment that was deleted due to inactivity requires a tenant-level administrative role.
