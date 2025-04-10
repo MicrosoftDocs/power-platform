@@ -17,11 +17,14 @@ ms.custom:
 
 # Designate the Microsoft Power Platform admin role
 
-Effective management and governance of Power Platform require a dedicated administrative role to oversee operations, ensure compliance, and optimize performance. To help you manage environments and settings, assign users the [Power Platform admin role](../../admin/use-service-admin-role-manage-tenant.md#power-platform-administrator) to manage Microsoft Power Platform at the tenant level. 
+Effective management and governance of Power Platform requires a dedicated administrative role to oversee operations, ensure compliance, and optimize performance. To help you manage environments and settings, assign users the [Power Platform admin role](../../admin/use-service-admin-role-manage-tenant.md#power-platform-administrator) to manage Microsoft Power Platform at the tenant level. 
 
-<!-- Stray phrase...do we intend more here? 
 There are two Power Platform related service admin roles you can assign to provide a high level of admin management:
--->
+
+- Power Platform administrator: This role can perform all admin functions in Power Platform, regardless of security group membership at the environment level.
+- Dynamics 365 administrator: This role can perform most admin functions in Power Platform, but only for environments where they belong to the security group.
+
+These roles can not manage user accounts, subscriptions, and access settings for other Microsoft 365 apps. You need to collaborate with other admins in your organization to perform those tasks. Review the [service administrator permission matrix](/power-platform/admin/use-service-admin-role-manage-tenant) for more details of each role’s privileges.
 
 This article outlines the responsibilities, qualifications, and best practices for designating the Power Platform admin role.
 
@@ -32,7 +35,7 @@ The Power Platform admin manages and governs the platform. Some of the responsib
 - **Governance framework**: Develop and enforce governance policies, procedures, and best practices to ensure secure and compliant use of the Power Platform.
 - **Environment management**: Oversee the creation, management, and decommissioning of environments, ensuring they align with organizational goals and governance standards.
 - **Security and compliance**: Implement and monitor security measures, such as data encryption and access controls, to protect sensitive information and ensure compliance with regulatory standards.
-- **Performance monitoring**: Track usage and performance metrics to optimize resource allocation and enhance the efficiency of Power Platform applications.
+- **Performance monitoring**: Track usage and performance metrics to optimize resource allocation and enhance the efficiency of Power Platform solutions.
 - **User access management**: Manage user roles and permissions, ensuring that access levels are appropriate and comply with governance policies.
 - **Integration**: Facilitate the integration of Power Platform with other enterprise systems to ensure seamless operations and data flow. Work with other service owners on how their services can be used within Power Platform solutions, for example managing [on-premises gateway](../../admin/wp-onpremises-gateway.md) to connect to on-premises resources from Power Apps and Power Automate.
 - **Support and troubleshooting**: Provide support to users and troubleshoot issues to maintain a stable and reliable platform. Learn more in [Establish a support strategy](support-strategy.md).

@@ -29,7 +29,7 @@ As organizations progress through these stages, their governance practices must 
 
 ## Establish a governance framework
 
-Effective governance frameworks ensure successful adoption and management of Power Platform at scale. These frameworks provide a structured approach to ensuring security, compliance, and operational efficiency across the organization. By defining clear policies, roles, and responsibilities, governance frameworks help maintain control over data access, solution development, and environment management. They also facilitate the integration of best practices and automation tools, enabling organizations to streamline processes and adapt to evolving business needs.
+Effective governance frameworks help with the successful adoption and management of Power Platform at scale. These frameworks provide a structured approach to ensuring security, compliance, and operational efficiency across the organization. Define clear policies, roles, and responsibilities and maintain control over data access, solution development, and environment management. Governance frameworks also facilitate the integration of best practices and automation tools, enabling organizations to streamline processes and adapt to evolving business needs.
 
 1. **Assess your current governance policies**: Evaluate existing governance practices to identify strengths and areas for improvement. This includes reviewing data access policies, security protocols, compliance measures, environment management procedures, solution development standards, and monitoring tools. Conducting audits and gathering feedback from users and admins can provide valuable insights into the effectiveness of current governance and highlight opportunities for optimization.
 1. **Define governance objectives**: Establish clear goals and priorities for managing and using the platform in your organization. Ensure your governance framework is aligned with your organization [vision and goals](vision.md).
@@ -38,12 +38,13 @@ Effective governance frameworks ensure successful adoption and management of Pow
     - **Efficiency**: Streamline processes and reduce manual effort.
     - **Scalability**: Enable the platform to grow with the organization’s needs.
 
-1. **Develop governance policies**: Create detailed guidelines and rules that govern how the platform is used and managed within your organization. These policies ensure that all activities on the Power Platform are conducted in a secure, compliant, and efficient manner. Define which connectors are available in each environment and which data sources are available for use in Power Platform solutions. Learn more in [Define a DLP (Data Loss Prevention) policy strategy](dlp-strategy.md).
+1. **Develop governance policies**: Create detailed guidelines and rules that govern how the platform is used and managed within your organization. These policies ensure that all activities on the Power Platform are conducted in a secure, compliant, and efficient manner.
+    - **Connector management**: Define which connectors are available in each environment and which data sources are available for use in Power Platform solutions. Learn more in [Define a DLP (Data Loss Prevention) policy strategy](dlp-strategy.md).
     - **Environment management**: Establish guidelines for creating, managing, and decommissioning environments. Learn more in [Establish an environment strategy](environment-strategy.md).
     - **Solution development**: Set standards for developing, testing, and deploying solutions.
     - **Security protocols**: Implement measures such as encryption, row-level security, and secure data storage. Learn more in [Enhance your security posture](security-posture-management.md).
 
-1. **Establish roles and responsibilities**: As part of planning your governance framework, it’s essential to assign well-defined roles and responsibilities to the growing group of stakeholders. Learn more in [Define roles and responsibilities](roles.md). Some of the stakeholders to keep in mind are:
+1. **Establish roles and responsibilities**: As part of planning your governance framework assign well-defined roles and responsibilities to the growing group of stakeholders. Learn more in [Define roles and responsibilities](roles.md). Some of the stakeholders to keep in mind are:
     - **Power Platform admins**: Oversee the overall governance framework, define policies, and ensure compliance.
     - **Environment admins**: Manage specific environments, implement policies, and provide detailed reports.
     - **Makers**: Develop solutions within the defined governance framework, adhering to policies and standards.
@@ -52,9 +53,7 @@ Effective governance frameworks ensure successful adoption and management of Pow
 
 ## Create environment groups
 
-Managing Power Platform at scale across hundreds or thousands of environments is challenging for startup and enterprise IT teams.
-
-Similar to folders, environment groups help admins organize their flat list of environments into structured groups based on criteria like business unit, project, and location. Learn more in [Environment groups](../../admin/environment-groups.md).
+Managing Power Platform at scale across hundreds or thousands of environments can be challenging. Similar to folders, environment groups help admins organize their flat list of environments into structured groups based on criteria like business unit, project, and location. Learn more in [Environment groups](../../admin/environment-groups.md).
 
 Admins can apply rules to groups to govern environments in bulk, reducing manual effort and ensuring consistency. For example, admins might apply rules to security, licensing, compliance, and other facets. Learn more in [Configure the rules for your environment group](../../admin/environment-groups.md#configure-the-rules-for-your-environment-group).
 
@@ -98,6 +97,8 @@ Consider the following tasks:
 
 Automating common governance tasks reduces manual effort, ensures consistency, and enhances efficiency. Automation helps in maintaining control over the Power Platform, enabling organizations to scale their operations while adhering to governance standards.
 
+Explore the [governance components](../coe/governance-components.md) of the CoE Starter Kit for ideas and templates for automating tasks.
+
 Learn more: [Programmability and extensibility](../../admin/programmability-extensibility-overview.md)
 
 ## Train your team
@@ -110,7 +111,7 @@ Keep in mind that makers developing the solutions often aren't fully aware of go
 
 Your training should cover tenant-wide guardrails and configurations that might affect workloads. Makers also need training on configurations for their workloads, such as security roles and connecting to data. Share the process for collaborating with them on requests they might have, such as on creating a new environment or connector.
 
-A central source, such as a [SharePoint site or wiki](wiki-community.md), where makers can easily access training content is important. This centralized repository ensures all team members have consistent and up-to-date information, making it easier to find and reference security guidelines and resources. Empowering makers and developers with the knowledge and tools they need safeguards your organization's data and applications.
+Create a central source, such as a [SharePoint site or wiki](wiki-community.md), where makers can easily access training content. This centralized repository helps give all team members consistent and up-to-date information, making it easier to find and reference security guidelines and resources. Empowering makers and developers with the knowledge and tools they need safeguards your organization's data and applications.
 
 ### Training for environment admins
 
@@ -118,7 +119,7 @@ A central source, such as a [SharePoint site or wiki](wiki-community.md), where 
 
 **Power Platform admins**, on the other hand, oversee the broader governance and administration of the entire Power Platform across the organization. Their responsibilities include defining governance policies, monitoring overall platform usage, ensuring compliance with organizational standards, and managing integrations with other systems. They take a strategic view, ensuring that Power Platform aligns with the organization's goals and operates efficiently at scale.
 
-Your training should include an introduction to help environment admins understand their responsibilities. Environment admins manage the day-to-day operations of specific environments, including user access, data security, and compliance. Power Platform admins oversee the governance framework, define policies, and ensure all environments follow organizational standards.
+Your training for environment admins should include an introduction to help environment admins understand their responsibilities. Environment admins manage the day-to-day operations of specific environments, including user access, data security, and compliance. Power Platform admins oversee the governance framework, define policies, and ensure all environments follow organizational standards.
 
 Power Platform admins define governance policies, which environment admins implement in their environments. Both roles must collaborate to ensure data security and compliance. Power Platform admins [define a DLP (Data Loss Prevention) policy strategy](dlp-strategy.md), while environment admins assess the connectors and policies they need and work with Power Platform admins to assign the most appropriate policies.
 

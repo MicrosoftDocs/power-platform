@@ -1,5 +1,5 @@
 ---
-title: Manage and secure the default Power Platform environment
+title: Manage and govern the default Power Platform environment
 description: Learn best practices for managing default Power Platform environments, including tracking connectors, identifying unused resources, and migrating critical apps.
 #customer intent: As a Power Platform admin, I want to manage the default environment effectively so that I can maintain security and compliance, optimize resource usage, and ensure business continuity.
 author: rranjit83
@@ -14,11 +14,15 @@ contributors:
 - iscohen-microsoft
 ---
 
-# Manage and secure the default Power Platform environment
+# Manage and govern the default Power Platform environment
 
-Every employee in an organization that uses the Power Platform has access to the default environment. As a Power Platform admin, you should consider and, when necessary, implement ways to control the default environment. Your Center of Excellence (CoE) teams can gather information using the CoE Starter Kit, PowerShell cmdlets, and Power Platform admin connectors to understand what's happening in your organization's environments. 
+Every employee in an organization that uses the Power Platform has access to the [default environment](/power-platform/admin/environments-overview#default-environment). As a Power Platform admin, you should consider and implement ways to manage the default environment. Your Center of Excellence (CoE) teams can gather information using the CoE Starter Kit, PowerShell cmdlets, and Power Platform admin connectors to understand what's happening in your organization's environments. 
 
 This article provides some best practices for using the data you gather from these sources to manage your default environment.
+
+## Enable managed environments
+
+Maintain robust security and governance by making use of managed environment features in the default environment. Managed environment features provide advanced capabilities, such as monitoring, compliance, and security controls that are important for protecting your data. By enabling this feature, you can configure [sharing limits](/power-platform/admin/managed-environment-sharing-limits), gain more [usage insights](/power-platform/admin/managed-environment-usage-insights), [limiting user access to Microsoft Dataverse](/power-platform/admin/ip-firewall) from only allowed IP locations, use [Power Platform advisor](/power-platform/admin/power-platform-advisor) to get personalized recommendations to optimize the environment. Evaluate the current managed environments features and stay up to date with the product roadmap to maintain a secure, compliant, and well-governed default environment.
 
 ## Track connectors
 

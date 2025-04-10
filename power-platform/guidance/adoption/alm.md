@@ -18,7 +18,7 @@ Effective application lifecycle management (ALM) practices ensure that applicati
 Don't treat low-code workloads as low-complexity. You still benefit from formalizing the development and management of low-code workloads. Learn from other software development teams. Have a decision matrix in place that dictates the level of formalization that's required based on the complexity and criticality of the workload.
 
 > [!NOTE]
-> Our primary guidance for ALM can be found in [Application lifecycle management (ALM) with Microsoft Power Platform](/power-platform/alm/). This article serves as a summary of key recommendations and best practices for managing the application lifecycle within Power Platform. It provides an overview of essential strategies and tools to help you streamline development, deployment, and maintenance processes. For detailed, in-depth guidance and other resources, refer to the ALM documentation.
+> Our primary guidance for ALM can be found in [application lifecycle management (ALM) with Microsoft Power Platform](/power-platform/alm/). This article serves as a summary of key recommendations and best practices for managing the application lifecycle within Power Platform. It provides an overview of essential strategies and tools to help you streamline development, deployment, and maintenance processes. For detailed, in-depth guidance and other resources, refer to the ALM documentation.
 
 Here are some best practices for managing the application lifecycle in Power Platform:
 
@@ -66,7 +66,7 @@ Using [Pipelines in Power Platform](/power-platform/alm/pipelines) you can easil
 
 Take advantage of [gated deployments](/power-platform/alm/delegated-deployments-setup) that require approvals, which add a layer of security and compliance to production changes.
 
-[Pipelines extensibility](/power-platform/alm/extend-pipelines#gated-extensions-available) means that organizations can extend pipelines to meet their unique needs. For example, they can integrate post-deployment processes such as updating the backlog in Azure DevOps (ADO). Pipelines allow for such customizations through its extensibility features, enabling admins to insert custom steps and business logic at various points in the deployment process. This flexibility ensures that the deployment pipelines can be tailored to fit specific organizational workflows and requirements.
+[Pipelines extensibility](/power-platform/alm/extend-pipelines#gated-extensions-available) means that organizations can extend pipelines to meet their unique needs. For example, you can integrate post-deployment processes such as updating the backlog in Azure DevOps (ADO). Pipelines allow for such customizations through its extensibility features, enabling admins to insert custom steps and business logic at various points in the deployment process. This flexibility ensures that the deployment pipelines can be tailored to fit specific organizational workflows and requirements.
 
 ## Monitor and optimize performance
 
