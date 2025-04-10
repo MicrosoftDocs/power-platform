@@ -1,25 +1,26 @@
 ---
 title: Solution ideas for Power Platform and Copilot Studio
-description: Discover practical solution ideas for Microsoft Power Platform and Copilot Studio to address various business needs.
-#customer intent: As a Power Platform user, I want to explore solution ideas for Power Platform and Copilot Studio so that I can address various business needs.
+description: Learn how to transform your business processes with practical examples of Power Platform and Copilot Studio solutions.
 author: manuelap-msft
 ms.subservice: architecture-center
 ms.topic: overview
-ms.date: 04/06/2025
+ms.date: 04/10/2025
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-contributors: 
+contributors:
   - manuelap-msft
-search.audienceType: 
+search.audienceType:
   - admin
   - flowmaker
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-description
+  - ai-seo-date:04/10/2025
 ---
 
 # Solution ideas for Power Platform and Copilot Studio
 
-Solution ideas are practical examples that showcase the versatility and power of Power Platform and Copilot Studio in addressing various business needs. These ideas serve as inspiration and guidance for creating effective solutions tailored to specific scenarios.
-
-Explore these solution ideas to gain valuable insights and practical knowledge to design and implement effective solutions that address your specific business needs.
+Solution ideas are practical examples that showcase the versatility and power of Power Platform and Copilot Studio in addressing various business needs. These ideas can serve as inspiration and guidance for creating effective solutions that are tailored to your organization's specific needs.
 
 | Title | Description |
 | --- | --- |
