@@ -15,7 +15,7 @@ ms.date: 04/07/2025
 
 In a world where every second of downtime means lost revenue, disrupted operations, and frustrated users, high availability isn’t optional—it’s mission-critical. In an era where AI-driven agents power mission-critical workflows, ensuring always-on availability is essential for business continuity.
 
-This series of articles provides comprehensive guidance on achieving enterprise grade reliability and availability for mission critical workloads with Power Platform. It covers key areas such as application lifecycle management, observability strategies, and data resilience.
+This series of articles provides comprehensive guidance on achieving enterprise grade availability for mission critical workloads with Power Platform. 
 
 1. [Identify mission critical workloads](plan-mission-critical.md). Determine which workloads are essential for your business operations and require high reliability and availability.
 1. [Build a disaster recovery plan](plan-disaster-recovery.md). Develop a comprehensive strategy to ensure your mission-critical workloads can recover quickly and effectively from unexpected failures or disasters.

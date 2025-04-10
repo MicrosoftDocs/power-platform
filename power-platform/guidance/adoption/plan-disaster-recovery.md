@@ -13,7 +13,7 @@ ms.date: 04/07/2025
 
 # Build a disaster recovery plan
 
-Microsoft Business Applications provide business continuity and disaster recovery (BCDR) capabilities to all production environments in Dynamics 365 and Power Platform software as a service (SAAS) applications. [Learn how Microsoft ensures your production data is resilient during regional outages](/power-platform/admin/business-continuity-disaster-recovery).
+Microsoft Business Applications provide business continuity and disaster recovery (BCDR) capabilities to all production environments in Dynamics 365 and Power Platform software as a service (SaaS) applications. [Learn how Microsoft ensures your production data is resilient during regional outages](/power-platform/admin/business-continuity-disaster-recovery).
 
 > [!NOTE]
 > Review workload specific [recommendations for designing a disaster recovery strategy](/power-platform/well-architected/reliability/disaster-recovery). This article serves as a summary of key recommendations and best practices for building a disaster recovery plan.
