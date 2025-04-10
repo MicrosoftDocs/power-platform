@@ -58,6 +58,8 @@ Power Platform Data Loss Prevention (DLP) policies are rules and guidelines desi
 Establishing a Power Platform Data Loss Prevention (DLP) policy strategy is crucial to protect sensitive information, ensure regulatory compliance, and mitigate the risk of data breaches and unauthorized data sharing:
 
 Learn more:
+
+- [Data Loss Prevention (DLP) policies](/power-platform/admin/wp-data-loss-prevention)
 - [Establishing a DLP strategy](/powerplatform/guidance/adoption/dlp-strategy.md)
 
 ## Cross-tenant inbound and outbound restrictions
@@ -74,7 +76,7 @@ Power Platform service architecture lets you build end-to-end business app solut
 
 ### Network service tags
 
-Microsoft Power Platform is a cloud-based service requiring connectivity to the internet. Microsoft publishes a set of IPs, host names, and service tags representing Power Platform services for you to allow access to. To limit the susceptibility of attacks, configure these values in the firewalls or add them to browser proxy settings to access the respective endpoints.
+Power Platform is a cloud-based service requiring connectivity to the internet. Microsoft publishes a set of IPs, host names, and service tags representing Power Platform services for you to allow access to. To limit the susceptibility of attacks, configure these values in the firewalls or add them to browser proxy settings to access the respective endpoints.
 
 A service tag represents a group of IP address prefixes from a given Azure service. Microsoft manages the address prefixes encompassed by the service tag and automatically updates the service tag as addresses change, minimizing the complexity of frequent updates to network security rules.
 
@@ -92,7 +94,7 @@ Learn more: [Connecting and authenticating to data sources](/power-platform/admi
 
 With [Azure Virtual Network](/azure/virtual-network/virtual-networks-overview) support for Power Platform, you can integrate Power Platform with resources inside your virtual network without exposing them over the public internet. Virtual Network support uses [Azure subnet delegation](/azure/virtual-network/subnet-delegation-overview) to manage outbound traffic from Power Platform at runtime. Using Azure subnet delegation avoids the need for protected resources to be available over the internet to integrate with Power Platform. With virtual network support, Power Platform components can call resources owned by your enterprise inside your network, whether they're hosted in Azure or on-premises, and use plug-ins and connectors to make outbound calls.
 
-To mitigate the risk of data exfiltration through plug-ins and connectors, you can use network security to protect both inbound and outbound traffic. Power Platform supports Virtual Network (vNet) integration for both [connectors and Dataverse plug-ins including Microsoft Copilot Studio integrations](/power-platform/admin/vnet-support-overview#supported-services), providing private, outbound connectivity from the Power Platform to resources within your vNet. By limiting the resources in your Power Platform environment to only access an Azure Virtual Network, you can ensure that your Power Platform resources are protected without overexposure to the internet or unauthorized access, enhancing security when extending your business processes.
+To mitigate the risk of data exfiltration through plug-ins and connectors, you can use network security to protect both inbound and outbound traffic. Power Platform supports Virtual Network (vNet) integration for both [connectors and Dataverse plug-ins including Microsoft Copilot Studio integrations](/power-platform/admin/vnet-support-overview#supported-services), providing private, outbound connectivity from Power Platform to resources within your vNet. 
 
 ### IP firewall for Power Platform environments
 
@@ -106,10 +108,9 @@ Prevent session hijacking exploits in Dataverse with [IP address-based cookie bi
 
 ### Connect to on-premise resources
 
-The on-premises gateway allows Power Platform cloud apps and automations use on-premises 
-resources securely. You can use a gateway to connect to on-premises data from sources like a file system, DB2, Oracle, SAP ERP, SQL Server, and SharePoint. The gateway uses [Azure Relay](/azure/azure-relay/relay-what-is-it) to allow access to on-premises resources securely. Azure Relay can securely expose services inside your network to the public cloud without having to open a port on your firewall. The gateway uses these outbound ports: TCP 443, 5671, 5672, and 9350–9354. The gateway doesn't require inbound ports.
+The [on-premises gateway](/power-platform/admin/onpremises-data-gateway-management) allows Power Platform cloud apps and automations use on-premises resources securely. You can use a gateway to connect to on-premises data from sources like a file system, DB2, Oracle, SAP ERP, SQL Server, and SharePoint. The gateway uses [Azure Relay](/azure/azure-relay/relay-what-is-it) to allow access to on-premises resources securely. Azure Relay can securely expose services inside your network to the public cloud without having to open a port on your firewall. The gateway uses these outbound ports: TCP 443, 5671, 5672, and 9350–9354. The gateway doesn't require inbound ports.
 
-One gateway can allow multiple users to access multiple data sources. You can control who can install an on-premises data gateway in your tenant, but not at the environment level. 
+One gateway can allow multiple users to access multiple data sources. You can [control who can install an on-premises data gateway](/power-platform/admin/onpremises-data-gateway-management#manage-gateway-installers) in your tenant, but not at the environment level. 
 
 The following gateway roles manage the security of the gateway and its connections:
 
@@ -136,7 +137,7 @@ Once access is granted to Microsoft, any action taking place in the lockbox-prot
 
 ## Control which apps are allowed in your environment
 
-Protect against data exfiltration by controlling which apps can run in your Dataverse environment. These safeguards prevent unauthorized removal of sensitive information, helping your business maintain continuity and comply with regulations. [Learn more about app access control](/power-platform/admin/control-app-access-environment)
+Protect against data exfiltration by controlling which apps can run in your Dataverse environment. These safeguards prevent unauthorized removal of sensitive information, helping your business maintain continuity and comply with regulations. [Learn more about app access control](/power-platform/admin/control-app-access-environment).
 
 ## Protect sensitive information with data masking
 
@@ -172,15 +173,19 @@ As a customer, you're responsible for data classification, identity management, 
 
 ## Conclusion
 
-In conclusion, ensuring robust security within Power Platform is a critical responsibility for administrators. It involves a thorough evaluation of all available security features and selecting configurations that align with the organization's security policies and compliance requirements. By carefully assessing the specific needs and risks associated with their environment, administrators can implement tailored security measures that protect sensitive data, prevent unauthorized access, and maintain regulatory compliance. Regular reviews and updates to security configurations are essential to adapt to evolving threats and changing business needs. Ultimately, a proactive and informed approach to Power Platform security helps safeguard the organization's data and applications, ensuring a secure and resilient digital environment.
+In conclusion, ensuring robust data protection within Power Platform is a shared responsibility between customers and Microsoft. It involves a thorough evaluation of all available security features and selecting configurations that align with your organization's security policies and compliance requirements. By assessing the specific needs and risks associated with your environment, you can implement tailored security measures that protect sensitive data, prevent unauthorized access, and maintain regulatory compliance. Regular reviews and updates to security configurations are needed to adapt to evolving threats and changing business needs. 
 
-## Next steps
+## Next step
 
-Configuring and setting up the identity and access management (IAM) policies in line with your organization's security posture ensures the security and integrity of your data and applications. Proper IAM policies help control who can access your Power Platform environment, what actions they can perform, and under what conditions. Well-defined IAM policies support compliance with regulatory requirements and help maintain a secure and efficient operational environment, safeguarding your organization's assets and sensitive information.
+Review the detailed articles in this series to further enhance your security posture:
 
-Learn more:
-- [Configure identity and access management](/power-platform/guidance/adoption/conditional-access.md)
+- [Detect threats to your organization](threat-detection.md)
+- [Implement a DLP strategy](dlp-strategy.md)
+- [Configure identity and access management](conditional-access.md)
+- [Meet compliance requirements](compliance.md)
+- [Secure the default environment](secure-default-environment.md)
 
+Once you've reviewed all the articles, take a look at the security checklist to ensure that their Power Platform deployments are robust, resilient, and aligned with best practices
 
-
-<!-- TODO -->
+> [!div class="nextstepaction"]
+> [Review the security checklist](security-checklist.md)
