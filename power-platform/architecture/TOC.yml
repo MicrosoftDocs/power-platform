@@ -55,9 +55,9 @@
         href: reference-architectures/app-integrate-lakehouse.md
       - name: Use REST APIs to extend functionality of canvas apps
         href: reference-architectures/custom-connector-canvas.md
-      - name: ​Use the Dataverse connector with canvas apps​ 
+      - name: ​Use the Dataverse connector with canvas apps​
         href: reference-architectures/dataverse-canvas-app.md
-      - name: ​Scale RPA operations using Hosted RPA in Power Automate for desktop​ 
+      - name: Reduce infrastructure challenges with Hosted RPA in Power Automate​
         href: reference-architectures/rpa-scale-operations.md
     - name: Solution ideas
       items:
@@ -73,7 +73,7 @@
           href: solution-ideas/agent-custom-contact-center.md
         - name: Travel concierge using generative AI with Copilot Studio
           href: solution-ideas/agent-travel-customer.md
-        - name: Ticket management system with Copilot Studio agents        
+        - name: Ticket management system with Copilot Studio agents
           href: solution-ideas/agent-ticket-and-refund.md
     - name: Power Platform products
       items:
@@ -95,4 +95,3 @@
       href: /power-platform/developer/get-started
     - name: Application lifecycle management with Microsoft Power Platform
       href: /power-platform/alm/
-

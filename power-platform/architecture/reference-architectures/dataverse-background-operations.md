@@ -1,11 +1,10 @@
 ---
-title: Leverage Dataverse background operations
-description: Learn how to execute requests as background operations in Microsoft Dataverse using custom APIs for efficient asynchronous processing.
-#customer intent: As a Power Platform user, I want to define custom messages and implement business logic through plug-ins so that I can use background processing in Dataverse.
+title: Use Dataverse background operations
+description: Learn how Dataverse background operations enhance the efficiency of your solutions by using asynchronous processing and eliminating persistent connections.
 author: manuelap-msft
 ms.subservice: architecture-center
-ms.topic: example-scenario
-ms.date: 04/06/2025
+ms.topic: conceptual
+ms.date: 04/10/2025
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
 contributors:
@@ -15,59 +14,41 @@ ms.contributors:
 search.audienceType:
   - admin
   - flowmaker
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-description
+  - ai-seo-date:04/10/2025
 ---
 
-# Leverage Dataverse background operations
+# Use Dataverse background operations
 
-In Microsoft Dataverse, executing requests as background operations enhances asynchronous processing efficiency. Using custom APIs, you define custom messages and implement business logic through plug-ins, allowing for background processing that eliminates the need for a persistent connection during execution.
+Define Microsoft Dataverse requests as custom APIs to run them in the background. Custom APIs allow you to define custom messages and implement business logic through plug-ins. Background operations eliminate the need for a persistent connection during execution and allow you to take advantage of asynchronous processing. This article provides example scenarios and a generalized example architecture to illustrate how to use background operations in Dataverse. The architecture example can be modified for many different scenarios and industries.
 
-> [!TIP]
-> The article provides an example scenario and visual representation of how to implement background operations in Dataverse. This solution is a generalized example scenario architecture, which can be used for many different scenarios and industries.
-
-## Architecture diagram
+## Example architecture diagram
 
 :::image type="content" source="media/dataverse-background-operations/Background-job.png" alt-text="Architecture diagram illustrating the workflow for executing background operations in Microsoft Dataverse." lightbox="media/dataverse-background-operations/Background-job.png":::
 
-## Workflow
+Dataverse background operations allow asynchronous processing of tasks, a more efficient way to handle long-running or resource-intensive processes without affecting the user experience.
 
-To run a request as a background operation in Microsoft Dataverse, define the operation as a custom API. Custom APIs allow you to define custom messages and implement business logic through plug-ins. By configuring the operation as a custom API, you use background processing to handle requests asynchronously and eliminate the need to maintain a persistent connection during execution.
+## Components
 
-Background operations in Dataverse employ:
+<!-- EDITOR'S NOTE: List the components of the architecture. -->
 
-- **Asynchronous processing:** Background operations let Dataverse process requests without making the client wait for completion, enhancing efficiency for long-running tasks.
+## Example scenario
 
-- **Notification methods:** On completion of a background operation, you receive notifications by:
-  - Including a callback URL with your request.
-  - Subscribing to the `OnBackgroundOperationComplete` event.
-  
-- **Error handling:** If an error occurs during the execution of a background operation, Dataverse employs a retry mechanism. The system retries the failed request up to three times, using an [exponential backoff strategy](https://en.wikipedia.org/wiki/Exponential_backoff).
-
-### Makers
-
-To implement background operations in Dataverse, follow these steps:
+<!-- EDITOR'S NOTE: List the steps in the example scenario as in previous articles in the docset. -->
+The following steps describe the workflow that's shown in the example architecture diagram:
 
 1. Trigger a background operation using Microsoft Dataverse in Power Automate.
 1. Schedule the operation via recurrence triggers.
 1. Use the Perform a Background Operation action (Premium) in Dataverse to handle the operation asynchronously.
 1. Call the `OnBackgroundOperationComplete` event action from Power Automate or the API to receive the completion.
 
-When using Dataverse background operations to execute requests asynchronously, the two-minute execution time-out applies to any plug-ins invoked during the process.
+When you use Dataverse background operations to execute requests asynchronously, keep in mind that the two-minute execution time-out applies to any plug-ins that you invoke during the process.
 
-## Use cases
+### Use cases
 
-Dataverse's background operations enable asynchronous processing of tasks, allowing for efficient handling of long-running or resource-intensive processes without impacting user experience.
-
-### Bulk data processing
-
-*Scenario*: A marketing firm needs to process large datasets to analyze customer behavior and segment audiences.
-
-- Implement background operations to handle data aggregation and analysis tasks, allowing marketers to access insights without waiting for processing to complete.
-
-### Scheduled data cleanup
-
-*Scenario*: An organization wants to maintain data hygiene by regularly archiving or deleting outdated records from Dataverse.
-
-- Implement background operations to identify and manage obsolete data, ensuring the system remains efficient and storage costs are controlled.
+Dataverse background operations are particularly useful for scenarios that require long-running processes or operations that can be executed without user interaction. Use cases include analysis of large datasets, scheduled data cleanup, and batch processing of records.
 
 ## Considerations
 
@@ -79,17 +60,9 @@ Background jobs can scale with increasing workloads without compromising perform
 
 ### Reliability
 
-Anticipate potential failures by incorporating comprehensive error-handling mechanisms. Implement retry policies with exponential backoff to manage transient faults effectively.
+Anticipate potential failures by incorporating comprehensive error-handling mechanisms. Manage transient faults using retry policies with exponential backoff. Learn more in [Implement retries with exponential backoff](https://learn.microsoft.com/en-us/dotnet/architecture/microservices/implement-resilient-applications/implement-retries-exponential-backoff).
 
-## Contributors
+## Related content
 
-_Microsoft maintains this article. The following contributors wrote this article._
-
-Principal authors:
-
-- **[Pujarini Mohapatra](https://www.linkedin.com/in/biswapm/)**, Principal Engineering Manager
-
-## Related resources
-
-- [Power Platform Well-Architected](/power-platform/well-architected/reliability/background-jobs)
-- [Power Apps background operations (preview)](/power-apps/developer/data-platform/background-operations?tabs=sdk)
+- [Power Platform Well-Architected recommendations for developing background jobs](/power-platform/well-architected/reliability/background-jobs)
+- [Background operations (preview)](/power-apps/developer/data-platform/background-operations?tabs=sdk)
