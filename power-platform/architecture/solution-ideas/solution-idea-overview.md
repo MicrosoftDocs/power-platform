@@ -24,9 +24,9 @@ Solution ideas are practical examples that showcase the versatility and power of
 
 | Title | Description |
 | --- | --- |
-| **[Healthcare Patient Support Agent architecture](agent-healthcare-patient-support.md)** | Streamlines patient interactions and reduces administrative burdens for healthcare providers. |
-| **[Property rental portal with AI-driven search and payment processing](agent-rental-portal.md)** | Integrates various components to provide a robust and user-friendly experience for both users and administrators, from browsing and reserving listings to managing payments and generating reports. |
-| **[Enterprise Visual Vehicle Inspection Engine](app-evvie.md)** | Using generative AI and Power Platform, EVVIE revolutionizes the vehicle inspection process, saving valuable time and enhancing accuracy. |
-| **[Custom contact center solution with Copilot Studio agent](agent-custom-contact-center.md)** | Enhances customer service efficiency through integrated platforms and technologies. |
-| **[Travel concierge using generative AI with Copilot Studio](agent-travel-customer.md)** | Employs AI-driven solutions to enhance customer interactions and streamline information access. |
-| **[Ticket management system with Copilot Studio](agent-ticket-and-refund.md)** | Improves ticket refund and management processes by deploying both a user-based and autonomous agent to integrate with legacy systems. |
+| [**Healthcare Patient Support Agent architecture**](agent-healthcare-patient-support.md) | Streamlines patient interactions and reduces administrative burdens for healthcare providers. |
+| [**Property rental portal with AI-driven search and payment processing**](agent-rental-portal.md) | Integrates various components to provide a robust and user-friendly experience for both users and administrators, from browsing and reserving listings to managing payments and generating reports. |
+| [**Enterprise Visual Vehicle Inspection Engine**](app-evvie.md) | Using generative AI and Power Platform, EVVIE revolutionizes the vehicle inspection process, saving valuable time and enhancing accuracy. |
+| [**Custom contact center solution with Copilot Studio agent**](agent-custom-contact-center.md) | Enhances customer service efficiency through integrated platforms and technologies. |
+| [**Travel concierge using generative AI with Copilot Studio**](agent-travel-customer.md) | Employs AI-driven solutions to enhance customer interactions and streamline information access. |
+| [**Ticket management system with Copilot Studio**](agent-ticket-and-refund.md) | Improves ticket refund and management processes by deploying both a user-based and autonomous agent to integrate with legacy systems. |

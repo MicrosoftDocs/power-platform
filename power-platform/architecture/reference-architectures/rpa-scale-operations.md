@@ -1,6 +1,6 @@
 ---
-title: Reduce infrastructure challenges with Hosted RPA in Power Automate
-description: Learn how Hosted RPA in Power Automate allows you to scale your automation workflows seamlessly without static infrastructure.
+title: Reduce infrastructure challenges with hosted RPA in Power Automate
+description: Learn how hosted RPA in Power Automate allows you to scale your automation workflows seamlessly without static infrastructure.
 author: manuelap-msft
 ms.subservice: architecture-center
 ms.topic: conceptual
@@ -22,7 +22,7 @@ ms.custom:
   - ai-gen-title
 ---
 
-# ​Reduce infrastructure challenges with Hosted RPA in Power Automate
+# ​Reduce infrastructure challenges with hosted RPA in Power Automate
 
 [Robotic process automation (RPA)](/power-platform/products/power-automate/topics/robotic-process-automation/what-is-rpa) uses software bots to emulate human interactions in a graphical user interface like a desktop application to automate repetitive and manual tasks. [*Hosted RPA*](/power-automate/desktop-flows/hosted-rpa-overview) uses Microsoft infrastructure running in Azure to allow organizations to run RPA quickly and at scale in the cloud, without needing to provision and maintain their own static infrastructure.
 
@@ -34,7 +34,6 @@ This article provides an example scenario and a generalized example architecture
 
 :::image type="content" source="media/rpa-scale-operations/rpa-scale-operations.png" alt-text="Architecture diagram showing ​​how to scale RPA operations using hosted RPA in Power Automate for desktop." lightbox="media/rpa-scale-operations/rpa-scale-operations.png":::
 
-<!-- awaiting larger image to be provided -->
 Organizations that need to run RPA automations at scale, where workloads run on multiple machines, can use this architectural pattern to scale operations without provisioning their own infrastructure.
 
 ## Components

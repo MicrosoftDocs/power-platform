@@ -24,7 +24,7 @@ ms.custom:
  
 # Ticket management system with Copilot Studio agents
 
-This article outlines the architecture and workflow of a cinema ticket management system that uses automation and integration with Microsoft tools to improve customer and employee experiences.
+In this article, you learn about a cinema ticket management system that uses automation and integration with Microsoft tools to improve customer and employee experiences.
 
 [!INCLUDE [pp-arch-solution-idea-tip](../../includes/pp-arch-solution-idea-tip.md)]
 

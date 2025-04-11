@@ -37,7 +37,7 @@ A common misunderstanding is that ExpressRoute can connect Power Platform and Az
 
 ## Connectors
 
-[Connectors](/connectors/connectors) connect Power Platform to more than 400 Microsoft first-party and third-party services and apps. Consider how connectors interact with various services and how these interactions might affect connectivity with ExpressRoute.
+[Connectors](/connectors/connectors) connect Power Platform to more than 400 services and apps from Microsoft and others. Consider how connectors interact with various services and how these interactions might affect connectivity with ExpressRoute.
 
 Connectors use Azure API Management behind the scenes to manage the credentials and connections of each user.
 
