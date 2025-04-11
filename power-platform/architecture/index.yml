@@ -1,11 +1,11 @@
 ### YamlMime:Hub
 title: Microsoft Power Platform and Copilot Studio Architecture Center
-summary: Provides guidance for architecting solutions with Microsoft Power Platform and Copilot Studio using established patterns and practices.
+summary: Guidance for architecting solutions with Microsoft Power Platform and Copilot Studio using established patterns and best practices.
 # brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-apps | power-automate | power-bi | power-platform | power-virtual-agents | sql | sql-server | vs | visual-studio | windows | xamarin
 brand: dynamics
 metadata:
   title: Microsoft Power Platform and Copilot Studio Architecture Center
-  description: Guidance for architecting solutions with Power Platform and Copilot Studio using established patterns and practices.
+  description: Guidance for architecting solutions with Power Platform and Copilot Studio using established patterns and best practices.
   ms.service: power-platform
   ms.topic: hub-page
   ms.subservice: architecture-center
@@ -18,7 +18,7 @@ highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
   items:
     # Card
-    - title: Browse architectures
+    - title: Browse reference architectures
       itemType: architecture
       url: reference-architectures/reference-architecture-overview.md
     # Card
@@ -49,9 +49,9 @@ productDirectory:
     - title: Reference architectures
       imageSrc: /office/media/icons/blocks.png
       links:
-        - text: ​Integrate Microsoft Fabric Lakehouse data using Microsoft Dataverse virtual tables
+        - text: ​Integrate Microsoft Fabric Lakehouse data using Dataverse virtual tables
           url: reference-architectures/app-integrate-lakehouse.md
-        - text: Perform predictive data analysis with Dataverse Fabric and Azure AI
+        - text: Perform predictive data analysis using Dataverse, Fabric, and Azure AI services
           url: reference-architectures/ai-predictive-data-analysis.md
         - text: Secure Power Platform access to Azure resources
           url: reference-architectures/secure-access-azure-resources.md
@@ -65,7 +65,7 @@ productDirectory:
           url: solution-ideas/agent-healthcare-patient-support.md
         - text: Property rental portal with AI-driven search and payment processing
           url: solution-ideas/agent-rental-portal.md
-        - text: Enterprise Visual Vehicle Inspection Engine
+        - text: Revolutionize vehicle inspections with EVVIE
           url: solution-ideas/app-evvie.md
         - text: More...
           url: solution-ideas/solution-idea-overview.md
@@ -76,7 +76,7 @@ additionalContent:
   # Supports up to 3 sections
   sections:
     - title: Related guidance centers
-      summary: Guidance information focused on individual Power Platform components # < 160 chars (optional)
+      summary: Guidance for individual Power Platform components # < 160 chars (optional)
       items:
         # Cards with links style
         # Card
@@ -133,7 +133,7 @@ additionalContent:
             - text: More...
               url: /power-virtual-agents/guidance
     - title: Build your skills with Microsoft Learn training
-      summary: Build your skills with Microsoft Learn training
+      summary: Learning paths and modules to help you build your skills with Microsoft Power Platform and Copilot Studio.
       items:
         - title: Microsoft Power Platform Solution Architect course
           url: /training/courses/pl-600t00
