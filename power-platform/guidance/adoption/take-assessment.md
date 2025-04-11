@@ -29,9 +29,6 @@ The [Power Platform adoption assessment](/assessments/3c62fd23-9d36-491c-8941-26
 
 Based on your responses to the assessment questions, the assessment provides detailed recommended actions that are most relevant to your organization.
 
-> [!div class="nextstepaction"]
-> [Take the Power Platform adoption assessment](/assessments/3c62fd23-9d36-491c-8941-26d5553365f8/)
-
 ## Next steps
 
 Digital transformation is largely nontechnical, focusing on cultural, organizational, and process changes. Crafting a vision is an important step to ensure a successful transformation journey. Having a vision and clear objectives helps achieve positive business outcomes and align with your organizational strategy.
