@@ -55,13 +55,13 @@ Learn more about how [Shell's citizen-development initiative called DIY (Do IT Y
 
 ## Key ingredients for community success
 
-When defining the purpose and goals of a Power Platform community, it's important to consider the key ingredients that contribute to a successful community:
+When defining the purpose and goals of a Power Platform community, consider these key ingredients that contribute to a successful community:
 
-1. **Clear vision and leadership buy-in**: Establish a clear vision for the community and secure support from leadership. This commitment ensures that the community's goals align with the organization's objectives and that there's a commitment to its success.
-1. **Training and upskilling**: Help members stay current with the latest Power Platform developments by providing ongoing training and upskilling opportunities to. This investment in education fosters a knowledgeable and capable community.
-1. **Support and resources**: Ensure the community has access to the support and resources they need, including technical support, tools, and materials that help members collaborate and innovate effectively.
+1. **Clear vision and leadership buy-in**: Establish a clear vision for the community and [secure support from leadership](executive-sponsorship.md). This commitment ensures that the community's goals align with the organization's objectives and that there's a commitment to its success.
+1. **Training and upskilling**: Help members stay current with the latest Power Platform developments by providing [ongoing training and upskilling opportunities](training-strategy.md). This investment in education fosters a knowledgeable and capable community.
+1. **Support and resources**: Ensure the community has access to the [support](support-strategy.md) and [resources](wiki-community.md) they need, including technical support, tools, and materials that help members collaborate and innovate effectively.
 1. **Empowerment**: Empower employees to develop their own solutions and foster a sense of autonomy and creative problem-solving. When members feel empowered, they're more likely to contribute and engage with the community.
-1. **Recognition and celebrating success**: Recognize and celebrate the achievements of community members to boost morale and motivation. Acknowledging contributions and successes fosters a positive and supportive community culture.
+1. **Recognition and celebrating success**: [Recognize and celebrate](show-and-tell.md) the achievements of community members to boost morale and motivation. Acknowledging contributions and successes fosters a positive and supportive community culture.
 1. **Community champions and advocates**: Identify and nurture [community champions](champions.md) and advocates helps drive engagement and growth. These individuals can inspire and lead others, promoting the community's values and goals.
 
 ## Example community purpose and goals: The Power Innovators Hub
@@ -75,10 +75,10 @@ The purpose of the Power Innovators Hub is to **empower and connect professional
 ### Goals
 
 1. **Skill development & knowledge sharing**
-   - Organize regular training workshops and events to help members enhance their skills and stay updated with the latest Power Platform developments.
+   - Organize regular [training workshops](in-a-day.md) and events to help members enhance their skills and stay updated with the latest Power Platform developments.
    - Create a comprehensive [library of resources](wiki-community.md) that members can access to learn and share best practices.
 1. **Project collaboration & showcase**
-   - Encourage members to participate in quarterly hackathons that focus on solving practical business challenges using Power Platform.
+   - Encourage members to participate in quarterly [hackathons](hackathons.md) that focus on solving practical business challenges using Power Platform.
    - Provide a platform for members to present their innovative solutions, fostering a culture of recognition and inspiration.
 1. **Membership engagement and growth**
    - Grow community by 25% through outreach. Implement strategies to attract new members and expand the community's reach.
@@ -93,11 +93,18 @@ By defining a clear purpose and setting specific goals, the Power Platform commu
 
 Defining the purpose and goals of a community is just the beginning. To ensure the long-term success and vitality of your Power Platform community, monitor its health regularly. Let's explore various methods for monitoring community health, ranging from passive to proactive approaches.
 
-**Community call attendance**: Track the number of members attending community calls and webinars. High attendance rates indicate strong interest and engagement, while declining numbers might signal a need for more engaging content or better scheduling.
-**Post frequency**: Monitor the frequency of posts and interactions within the community. A high volume of posts suggests active participation, whereas a drop in activity might indicate waning interest or engagement.
-**Membership (growth/decline)**: Keep an eye on membership growth or decline over time. Steady growth or stable membership numbers are positive signs, while a decline may require investigation into potential causes and corrective actions.
-**Surveys and feedback**: Conduct regular surveys and solicit feedback from community members. Surveys provide direct insights into member satisfaction, needs, and areas for improvement. Regular feedback helps you stay attuned to the community's evolving expectations.
-**Open forums**: Host open forums where members can voice their opinions, share ideas, and discuss concerns. Open forums foster transparency and trust, allowing members to feel heard and valued. They also provide valuable insights into the community's needs and challenges.
-**Anonymous feedback**: Offer channels for anonymous feedback to encourage honest and candid input. Anonymous feedback can reveal issues that members might be hesitant to discuss openly. It provides a safe space for members to share their true feelings and concerns.
+- **Community call attendance**: Track the number of members attending community calls and webinars. High attendance rates indicate strong interest and engagement, while declining numbers might signal a need for more engaging content or better scheduling.
+- **Post frequency**: Monitor the frequency of posts and interactions within the community. A high volume of posts suggests active participation, whereas a drop in activity might indicate waning interest or engagement.
+- **Membership (growth/decline)**: Keep an eye on membership growth or decline over time. Steady growth or stable membership numbers are positive signs, while a decline may require investigation into potential causes and corrective actions.
+- **Surveys and feedback**: Conduct regular surveys and solicit feedback from community members. Surveys provide direct insights into member satisfaction, needs, and areas for improvement. Regular feedback helps you stay attuned to the community's evolving expectations.
+- **Open forums**: Host open forums where members can voice their opinions, share ideas, and discuss concerns. Open forums foster transparency and trust, allowing members to feel heard and valued. They also provide valuable insights into the community's needs and challenges.
+- **Anonymous feedback**: Offer channels for anonymous feedback to encourage honest and candid input. Anonymous feedback can reveal issues that members might be hesitant to discuss openly. It provides a safe space for members to share their true feelings and concerns.
 
 Analyze the overall sentiment of community interactions, including posts, comments, and feedback. Sentiment analysis helps gauge the community's mood and satisfaction levels. Positive sentiment indicates a healthy community, while negative sentiment may highlight areas needing improvement.
+
+## Next step
+
+Next, define the core roles and responsibilities for your community:
+
+> [!div class="nextstepaction"]
+> [Define community core team roles and responsibilities](community-core-team.md)

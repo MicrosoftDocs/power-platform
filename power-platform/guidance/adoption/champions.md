@@ -19,19 +19,19 @@ ms.custom:
 
 # Support Microsoft Power Platform champions in your organization
 
-Champions are essential to driving awareness, adoption, and education in your organization. Peers recognize _champions_ as the _go-to_ Power Apps, Power Automate, or Microsoft Copilot Studio experts. A champion continually builds and shares their knowledge even if it's not an official part of their job role. Power Platform champions influence and help their colleagues in many ways, including solution development, skills improvement, and troubleshooting.
+Champions are essential to driving awareness, adoption, and education in your organization. Peers recognize _champions_ as the _go-to_ Power Apps, Power Automate, or Copilot Studio experts. A champion continually builds and shares their knowledge even if it's not an official part of their job role. Power Platform champions influence and help their colleagues in many ways, including solution development, skills improvement, and troubleshooting.
 
 1. **Driving adoption**: Champions are early adopters who can influence their peers and encourage widespread use of Power Platform. Their enthusiasm and success stories serve as powerful testimonials.
 2. **Knowledge sharing**: Champions possess deep knowledge of the platform and can act as mentors, sharing best practices, tips, and insights with other community members.
-3. **Innovation**: Champions often lead innovative projects and experiments, pushing the boundaries of what the Power Platform can achieve. Their creativity inspires others to think outside the box.
+3. **Innovation**: Champions often lead innovative projects and experiments, pushing the boundaries of what Power Platform can achieve. Their creativity inspires others to think outside the box.
 4. **Community building**: Champions help build a sense of community by organizing events, facilitating discussions, and connecting members. They create a supportive environment where everyone can learn and grow.
 5. **Recognition and motivation**: A champions program recognizes and rewards the efforts of these individuals, boosting their morale and motivating them to continue contributing to the community.
 
 ## How will champions support your organization and Power Platform community?
 
-Champions play a vital role in evangelizing and training their teams on new ways of working with Microsoft Power Platform. They build awareness, understanding, and engagement throughout the community. Here’s how champions support the community:
+Champions play a vital role in evangelizing and training their colleagues and teams on new ways of working with Power Platform. They build awareness, understanding, and engagement throughout the community. Here’s how champions support the community:
 
-- **Create enthusiasm**: Champions generate excitement and drive the adoption of improved ways of working, evangelizing the value of Microsoft Power Platform across teams.
+- **Create enthusiasm**: Champions generate excitement and drive the adoption of improved ways of working, evangelizing the value of Power Platform across teams.
 - **Build influence**: They establish a circle of influence within their teams, helping members understand the benefits and what's in it for them.
 - **Bring new ways of working to life**: Champions actively implement and demonstrate new ways of working across teams.
 - **Identify challenges and solutions**: They pinpoint business challenges and propose innovative solutions using the Power Platform.
@@ -49,7 +49,7 @@ Champions are integral to your  Power Platform community in several ways:
 
 Identifying champions involves recognizing individuals who exhibit certain qualities and behaviors:
 
-1. **Passion and enthusiasm**: Champions are genuinely excited about the Power Platform and actively seek opportunities to learn and experiment with it.
+1. **Passion and enthusiasm**: Champions are genuinely excited about Power Platform and actively seek opportunities to learn and experiment with it.
 2. **Expertise**: They have developed a strong understanding of the platform and can demonstrate their skills through successful projects and solutions.
 3. **Leadership**: Champions take initiative and lead by example. They're proactive in sharing knowledge, organizing events, and helping others.
 4. **Collaboration**: They are team players who actively engage with the community, participate in discussions, and collaborate on projects.
@@ -120,7 +120,7 @@ Find enthusiastic champions who can commit time and effort. How can you help the
 
 ## How to support and reward champions
 
-Your champions will give you important insights into the progress and potential pitfalls of your project. Routinely provide recognition and incentives for champions. Not only is praise an effective motivator, but the act of sharing examples of successful efforts can motivate and inspire others.
+Your champions will give you important insights into the progress and potential pitfalls of your adoption project. Routinely provide recognition and incentives for champions. Not only is praise an effective motivator, but the act of sharing examples of successful efforts can motivate and inspire others.
 
 Supporting and rewarding champions involves providing them with the resources, recognition, and opportunities they need to thrive:
 
@@ -138,9 +138,9 @@ The following maturity levels will help you assess the current state of your com
 
 | **Level** | **State of Power Platform community** |
 | --- | --- |
-| 100: Initial | Some content creators do great work, but their efforts are unrecognized.</br></br>Efforts to share knowledge are rare and unstructured.</br></br>Some staff may have attended App in a Day events (Partner or Microsoft delivered).</br></br>Team-based initiatives for nurturing makers.|
-| 200: Repeatable | [On-boarding strategy](onboard-makers.md) for new makers.</br></br>Makers become ambassadors across their departments and evangelize the capabilities.</br></br>Some staff have participated in a [hackathon](hackathons.md).</br></br>Makers become ambassadors across their departments and evangelize the capabilities.|
-| 300: Defined | Makers provide insights into business pain points.</br></br>Knowledge sharing in multiple forms is a normal and regularly scheduled occurrence.</br></br>[Training and upskilling](training-strategy.md) strategy for makers.</br></br>Internal Champions community.</br></br>[CoE Starter Kit – Nurture Module](../coe/nurture-components.md) adopted.|
+| 100: Initial | No formal community established<br>Some content creators do great work, but their efforts are unrecognized.</br></br>Efforts to share knowledge are rare and unstructured.</br></br>Some staff may have attended App in a Day events (Partner or Microsoft delivered).</br></br>Team-based initiatives for nurturing makers.|
+| 200: Repeatable | Formal community and community goals established, organic growth of the community<br>[On-boarding strategy](onboard-makers.md) for new makers.</br></br>Makers become ambassadors across their departments and evangelize the capabilities.</br></br>Some staff have participated in a [hackathon](hackathons.md).</br></br>Makers become ambassadors across their departments and evangelize the capabilities.|
+| 300: Defined | Promotion campaigns to drive community engagement<br> Makers provide insights into business pain points.</br></br>Knowledge sharing in multiple forms is a normal and regularly scheduled occurrence.</br></br>[Training and upskilling](training-strategy.md) strategy for makers.</br></br>Internal Champions community.</br></br>[CoE Starter Kit – Nurture Module](../coe/nurture-components.md) adopted.|
 | 400: Capable | Regular events for Champions.</br></br>Regular hackathons.</br></br>Maker assessments and certificates.</br></br>Sharing and celebrating [success stories](show-and-tell.md).</br></br>Show & Tell sessions.</br></br>Adoption campaign. |
 | 500: Efficient | Large internal community with proven value.</br></br>Career path for makers.</br></br>Community of mentors.</br></br>Common development strategy and goals for Citizen and Pro developers. |
 

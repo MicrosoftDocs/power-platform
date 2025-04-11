@@ -41,13 +41,13 @@ There are several effective ways to share success stories within your organizati
 
 Organize town hall meetings or webinars where makers can present their projects and share their success stories. This provides a platform for live interaction and Q&A sessions.
 
-If you want to create more excitement in your organization and inspire more people to join your Power Platform community, a solution showcase is a great way to do so. Teams meet to demo what they built, share problems they solved, and show the impact they created with the apps they made.
+If you want to create more excitement in your organization and inspire more people to join your Power Platform community, a solution showcase is a great way to do so. Teams meet to demo what they built, share problems they solved, and show the impact they created with the solutions they made.
 
 It's an opportunity for other teams and makers to see the impact of digital culture, and the business value they could add by joining the Power Platform community.
 
 Here are a few lessons for organizing successful and impactful show-and-tell sessions:
 
-- Make them part of existing company events, such as townhall meetings or more general tech showcases. This would ensure a wide variety of people attend and see your apps.
+- Make them part of existing company events, such as townhall meetings or more general tech showcases. This would ensure a wide variety of people attend and see your solutions.
 
 - Encourage various different makers and problems to be showcased; don't show five "form over paper" apps, but focus on different use cases—an app, a flow, a dashboard, an agent.
 
@@ -59,9 +59,9 @@ Here are a few lessons for organizing successful and impactful show-and-tell ses
     - Current solution: Detail the existing solution. 
     - Business value: Highlight cost savings and impact. 
 
-- Provide just a brief overview of the app, and allow time for questions.
+- Provide just a brief overview of the solution, and allow time for questions.
 
-- Record the app showcase and make it available as a webinar—for example, on Microsoft Stream—to further the reach in your organization.
+- Record the solution showcase and make it available as a webinar—for example, on Microsoft Stream—to further the reach in your organization.
 
 ### Publish case studies as a newsletter
 
@@ -89,7 +89,7 @@ Here are some tips for writing and sharing success stories:
   
   - **Before process**: Summary of business process, challenges, and opportunities.
   
-  - **Solution**: Microsoft Power Platform solutions that have solved for a better process.
+  - **Solution**: How the Power Platform solution has improved the process.
   
   - **Impact and benefits**: Bullet point summary of time, cost, productivity, and benefits.
   

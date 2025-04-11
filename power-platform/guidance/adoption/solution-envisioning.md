@@ -121,7 +121,7 @@ To help you get started, here's a list of sample stakeholders, objectives, chall
 
 At the end of the workshop, each group presents their solution ideas and considerations to the entire workshop. Encourage constructive feedback and discussion to further refine the solutions.
 
-## Next steps
+## Next step
 
 Plan and execute hackathons following a solution envisioning workshop to take the next steps and turn ideas into solutions.
 

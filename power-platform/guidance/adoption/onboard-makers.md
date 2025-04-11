@@ -19,14 +19,14 @@ ms.custom:
 
 # Onboard new community members and makers
 
-Effective onboarding is essential to integrate new Power Platform makers into your community. A well-structured onboarding process not only boosts engagement but also sets the stage for long-term success. In this article, we explore the key components of a streamlined onboarding journey and how to guide new members from passive participants to active contributors.
+Effective onboarding integrates new Power Platform makers into your community. A well-structured onboarding process not only boosts engagement but also sets the stage for long-term success. In this article, we explore the key components of a streamlined onboarding journey and how to guide new members from passive participants to active contributors.
 
 ## Laying the foundations for a streamlined onboarding journey
 
 1. **Build momentum**: Quickly integrating new members into the community is essential for maintaining their initial enthusiasm. Providing immediate access to resources, introductory sessions, and quick wins can help new makers feel valued and motivated to engage further.
 1. **Reduce turnover**: A streamlined onboarding process reduces the likelihood of new members feeling overwhelmed or disconnected. By offering clear guidance and support, you can ensure that new makers feel confident and capable, decreasing the chances of early dropout.
 1. **Cultivate culture**: Instilling the community's values and practices from the start helps new members align with the community's ethos. This cultural integration fosters a sense of belonging and encourages adherence to community norms and standards.
-1. **Clarify communication channels**: Clear communication is vital for new members to understand where, when, and how to get help. Providing a roadmap of communication channels and resources ensures that new makers can easily navigate the community and access support when needed.
+1. **Clarify communication channels**: Clear communication helps new members understand where, when, and how to get help. Providing a roadmap of communication channels and resources ensures that new makers can easily navigate the community and access support when needed.
 
 ## The maker journey
 

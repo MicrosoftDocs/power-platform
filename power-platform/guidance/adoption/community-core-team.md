@@ -19,7 +19,7 @@ These areas of responsibility should be considered:
 
 1. **Community lead**: The community lead oversees the overall management of the community. This includes monitoring community activities, reporting on progress, and ensuring that the community's goals are being met. They act as the primary point of contact for the community and provide strategic direction.
 1. **Content lead**: The content lead is responsible for developing and curating content for the community. This includes creating news updates, training resources, and collateral for new programs. They ensure that the content is relevant, engaging, and aligns with the community's objectives.
-1. **Event lead**: The event lead organizes and manages community events. This includes planning and executing activities such as solution showcases, 'Ask a Developer' sessions, and hackathons. They ensure that events run smoothly and provide valuable experiences for community members.
+1. **Event lead**: The event lead organizes and manages community events. This includes planning and executing activities such as solution showcases, 'Ask an expert' sessions, and hackathons. They ensure that events run smoothly and provide valuable experiences for community members.
 1. **Community advocate(s)**: Community advocates act as liaisons between the community and the core team. They represent the interests and feedback of community members, ensuring that their voices are heard. Advocates help to foster a sense of belonging and engagement within the community.
 
 Depending on your organization's size and team structure, these roles may not be dedicated positions. Instead, team members might take on multiple responsibilities, fulfilling the objectives of each role. Or, a single team member could oversee all areas, including community management, content creation, event organization, and member liaison.
@@ -42,7 +42,7 @@ Responsibilities:
 
 Responsibilities:
 
-- **Content Curation**: Develop and curate relevant content, including news, training resources, and program collateral, to keep the community informed and engaged.
+- **Content curation**: Develop and curate relevant content, including news, training resources, and program collateral, to keep the community informed and engaged.
 - **Reporting and analytics**: Track and analyze content performance to understand what resonates with the community and make data-driven decisions.
 - **Networking and advocacy**: Collaborate with other content creators and external partners to enhance the community's content offerings.
 - **Tech and platform support**: Ensure that the technical aspects of content delivery run smoothly, including platform setup and troubleshooting.
@@ -68,3 +68,10 @@ Responsibilities:
 - **Promotion and marketing**: Encourage member participation and promote community initiatives to enhance engagement.
 
 By clearly defining these roles and responsibilities, you can ensure that each team member understands their specific duties and how they contribute to the overall success of the community.
+
+## Next step
+
+Next, design your community brand and promote your community within the organization:
+
+> [!div class="nextstepaction"]
+> [Promote the community and establish partnerships](community-promote.md)

@@ -21,7 +21,7 @@ ms.custom:
 
 A hackathon is a fun way to engage people within your organization around a digital culture of change. The key objective is to develop sample apps and cultivate ideas to drive digital transformation. Teams come together at the line of business or global scale from different roles and departments to compete and create apps that address an organizational need.
 
-The greater the variety of skills and roles represented, the better. One or more facilitators should be involved in organizing the hackathon and defining the teams and the rules. Consider starting the day with a review and demo of Power Apps, Power Automate, Power BI, Microsoft Copilot Studio, AI Builder, Microsoft Power Platform, and Microsoft Dataverse.
+The greater the variety of skills and roles represented, the better. One or more facilitators should be involved in organizing the hackathon and defining the teams and the rules. Consider starting the day with a review and demo of Power Apps, Power Automate, Power BI, Copilot Studio, AI Builder, and Dataverse.
 
 A successful hackathon often includes team colors, prizes, food, music, laughter, and competition.
 
@@ -58,6 +58,8 @@ Ask the following questions:
 - What are the pain points of the current process?
 - What data sources are required to solve your problem?
 
+You could also run a [solution envisioning workshop](solution-envisioning.md) prior to the hackathon to identify the most valuable ideas.
+
 Ask senior stakeholders to vote on the submitted ideas, and during the hackathon, have teams work only on the top-voted ideas. This strategy will increase senior leadership buy-in and ensure that important solutions are addressed.
 
 If attendees are looking to connect to third-party data sources for their solutions, make sure data is available to them. This might be as simple as preparing test data in an Excel file or populating a Dataverse entity with sample data for attendees to use.
@@ -85,7 +87,7 @@ Here's a sample agenda:
 
 ## Team presentations and judging
 
-Prepare a template that teams can use for the presentation. The template should include team name, app benefits, technical considerations, and vision, in addition to screenshots or process diagrams.
+Prepare a template that teams can use for the presentation. The template should include team name, solution benefits, technical considerations, and vision, in addition to screenshots or process diagrams.
 
 Prepare evaluation criteria for judges to use when judging the solutions. The criteria should range from business to technical to design categories, and take into consideration the innovation level, short- and long-term vision, and completeness. Suggest awarding bonus points for live demos during the presentation.
 
