@@ -544,6 +544,8 @@
                   href: continuous-access-evaluation.md
                 - name: Control access of TDS endpoint
                   href: control-tds-settings.md
+                - name: Configure the SameSite attribute for session cookies
+                  href: samesite-cookie-mgmt.md
                 - name: Environment security
                   items:
                     - name: Control user access to environments
