@@ -46,7 +46,7 @@ If you log into multiple Dynamics 365 or Power Platform [environments](environme
 
 | Consideration | Explanation | Guidance |
 | --- | --- | --- |
-| Security against cross-site attacks | Setting SameSite from **None** to **Lax** or **Strict** significantly reduces cross-site request forgery (CSRF) attacks by preventing cookie-based cross-site requests like POST, PUT, DELETE, or PATCH. | Lax is recommended for protection without major usability impacts. |
+| Security against cross-site attacks | Setting SameSite from **None** to **Lax** or **Strict** significantly reduces cross-site request forgery (CSRF) attacks by preventing cookie-based cross-site requests like POST, PUT, DELETE, or PATCH. | **Lax** is recommended for protection without major usability impacts. |
 | Strict setting usage | The **Strict** setting provides maximum security but blocks all cross-site interactions, including direct user clicks from external sites where the cookie is involved. | Recommended for highly confidential scenarios due to its strict restrictions. |
 | Embedding Dynamics 365 (iFrames) or custom integrations | Embedding Dynamics 365 in external websites using iframes could require the SameSite setting to be **None**. **Lax** or **Strict** settings cause embedding issues. | Use **None** for embedded scenarios and integrations. |
 | Consistency with modern browsers | Modern browsers default to **Lax**, offering protection against unintended cross-site data leakage without significantly affecting usability. | **Lax** setting is recommended as a balanced approach. |
