@@ -34,7 +34,7 @@ The SameSite cookie setting controls how browsers share your session cookie (Crm
 
 When logging into Dynamics 365 environments, browsers create a _session cookie_ (CrmOwinAuth) that remembers your login. This cookie is shared across all Dynamics 365 environments under the same parent domain (crm.dynamics.com). 
 
-If you log into multiple Dynamics 365 [environments](environments-overview.md)&mdash;such as a production and a test environment in one browser session&mdash;the SameSite security setting applied to the first environment automatically applies to the other environments in the same browser session. This could lead to unexpected behavior in environments where you haven't explicitly set the SameSite configuration. 
+If you log into multiple Dynamics 365 or Power Platform [environments](environments-overview.md)&mdash;such as a production and a test environment in one browser session&mdash;the SameSite security setting applied to the first environment automatically applies to the other environments in the same browser session. This could lead to unexpected behavior in environments where you haven't explicitly set the SameSite configuration. 
 
 #### Recommended actions
 
