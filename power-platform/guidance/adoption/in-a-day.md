@@ -19,7 +19,7 @@ ms.custom:
 
 # Provide internal training events
 
-Equipping your team with the right skills is important to harness to full potential of Power Platform. To maximize the potential of Power Platform, organizations should consider hosting internal training events. This article explores the benefits of various training opportunities, including "In a Day" workshops, and provides best practices for organizing these events.
+Equipping your team with the right skills is important to harness to full potential of Power Platform. Once you have [establishing your training strategy](training-strategy.md), consider what internal training events to host to upskill your makers. This article explores the benefits of various training opportunities, including "In a Day" workshops, and provides best practices for organizing these events.
 
 ## Power Up
 
@@ -32,24 +32,24 @@ You can join Power Up as an enterprise to upskill your workforce. Contact [Power
 
 ## Run internal "In a Day" events
 
-Microsoft's "Power Platform in a Day" workshops are hands-on sessions designed to provide participants with practical skills in a short time. These workshops cover the essentials of Power Apps, Power Automate, and Copilot Studio. You can [register for these workshops](https://www.microsoft.com/power-platform/training-workshops), which are delivered by Microsoft partners worldwide. Additionally, the content is [available for download](https://www.microsoft.com/power-platform/instructor-led-training/), allowing organizations to host these sessions internally and tailor the content to their specific needs.
+Microsoft's "Power Platform in a Day" workshops are hands-on sessions designed to provide participants with practical skills in a short time. These workshops cover the essentials of Power Apps, Power Automate, and Copilot Studio. You can [register for these workshops](https://www.microsoft.com/power-platform/training-workshops), which are delivered by Microsoft partners worldwide. The content is also [available for download](https://www.microsoft.com/power-platform/instructor-led-training/), allowing organizations to host these sessions internally and tailor the content to their specific needs.
 
 Here are a few tips for running this training internally:
 
-- Schedule the event well in advance and ensure all necessary resources, such as training materials and software, are ready. Use the [training in day components](/power-platform/guidance/coe/nurture-components#training-in-a-day-components) of the CoE Starter Kit to schedule events and get attendees to register.
+- Schedule the event well in advance and ensure all necessary resources, such as environments and licenses, are ready. Use the [training in day components](/power-platform/guidance/coe/nurture-components#training-in-a-day-components) of the CoE Starter Kit to schedule events and get attendees to register.
 - Promote the event in your internal community.
 - Create a dedicated [environment](/power-platform/admin/create-environment) or use [Developer environment](/power-platform/developer/create-developer-environment) for training purposes and make sure this environment is covered by a [Data Loss Prevention policy](/power-platform/admin/wp-data-loss-prevention) that allows required connectors. Ensure attendees have the right license and access to the environment before the event. Ask attendees to sign up for a premium trial, or assign them a premium license in the Microsoft 365 admin portal.
 - Get familiar with the course material, and make sure you have a few facilitators with you on the day who can help attendees 1:1 if they're stuck. Customize the workshop content to align with your organization's specific needs and goals.
-- Prepare a short intro presentation, explaining the purpose of Microsoft Power Platform and the goals for Power Platform usage in your organization. If you already have created successful solutions in your organization, it would be great to show them during the intro so attendees get an idea of what the platform can be used for.
+- Prepare a short intro presentation, explaining the purpose of Power Platform and the goals for Power Platform usage in your organization. If you already have created successful solutions in your organization, it would be great to show them during the intro so attendees get an idea of what the platform can be used for.
 - Run a trial event for 10 to 12 people who are able to provide feedback and test the logistics with you. This group could be your inner circle of champions. They can also be your trial group for other events and activities you're planning.
 - Set the right expectations with attendees, make sure they know what they're registering for, what the purpose of attending is, and what they should know or do before the event.
 - Offer extra resources and support after the event to reinforce learning and address any remaining questions.
 
 ## Lunch and Learn
 
-Sometimes people don’t want to or can’t set aside a full day to learn something they know little about. Often it just takes igniting the spark for leaders within the organization to rise up and inspire others—hosting Lunch and Learn sessions is another great way to form and nurture a Microsoft Power Platform community.
+Sometimes people don’t want to or can’t set aside a full day to learn something they know little about. Often it just takes igniting the spark for leaders within the organization to rise up and inspire others—hosting Lunch and Learn sessions is another great way to form and nurture a Power Platform community.
 
-It provides an environment for teams to share resources, guidelines, and procedures. Lunch and Learns should be fun and regular. As more people across the organization become interested, the sessions offer them a place to see if this is something they want to get involved with and a path for them to start skilling up on Power Apps.
+It provides an environment for teams to share resources, guidelines, and procedures. Lunch and Learns should be fun and regular. As more people across the organization become interested, the sessions offer them a place to see if this is something they want to get involved with and a path for them to start skilling up on Power Platform.
 
 You could also offer this in a webinar format, in a Teams call, or by uploading the video to stream beforehand and creating a Teams channel for attendees to ask questions. Participants can watch the webinar on their own or together as a team, and making a recording available creates a more geo-inclusive environment.
 
@@ -66,7 +66,7 @@ Solution building bootcamps are hands-on learning sessions designed to help part
 
 To ensure a successful bootcamp, consider the following steps:
 
-1. **Define objectives and target audience**: Clearly outline the goals of the bootcamp. Determine what skills participants should acquire and what projects they'll complete by the end of the session. Specify the target audience for the bootcamp. Decide if the event is aimed at a specific department, such as IT, HR, or Marketing, or if it's focused on a particular use case, like automating workflows or building autonomous agents.
+1. **Define objectives and target audience**: Clearly outline the goals of the bootcamp. Determine what skills participants should already have, which ones they'll acquire and what projects they'll complete by the end of the session. Specify the target audience for the bootcamp. Decide if the event is aimed at a specific department, such as IT, HR, or Marketing, or if it's focused on a particular use case, like automating workflows or building autonomous agents.
 1. **Select instructors**: Choose experienced instructors who are well-versed in Power Platform. They should be capable of delivering advanced content and providing hands-on support.
 1. **Develop curriculum**: Create a detailed curriculum that covers the necessary topics and skills. Include a mix of lectures, hands-on exercises, and project work. Ensure the content is challenging yet achievable for intermediate users.
 1. **Prepare materials**: Gather all necessary materials, like prebuilt templates or examples. Ensure participants have access to the tools they need to succeed.
@@ -77,20 +77,18 @@ To ensure a successful bootcamp, consider the following steps:
 
 Solution building bootcamps provide the perfect opportunity to deepen the understanding of Power Platform and develop more sophisticated solutions. The hands-on experience and expert guidance help them build confidence and competence. Hosting bootcamps can accelerate the development of internal talent, leading to more innovative and efficient solutions. It also fosters a culture of continuous learning and collaboration.
 
-## "Ask an Expert" events
+## "Ask an expert" events
 
-"Ask an Expert" events are a valuable component of internal Power Platform training strategies. These sessions provide participants with the opportunity to receive tailored advice and troubleshooting support from experienced professionals. Here’s a detailed look at how to organize and maximize the benefits of these events:
+"Ask an expert" events are designed to address specific questions and challenges that participants encounter while building apps, flows, and agents. These sessions offer makers an opportunity to overcome obstacles and improve their skills by receiving personalized guidance from an experienced maker. Record these sessions to create a valuable library of content that new makers can reference, fostering a culture of continuous learning.
 
-"Ask an Expert" events are designed to address specific questions and challenges that participants encounter while building apps, flows, and agents. These sessions offer makers an opportunity to overcome obstacles and improve their skills by receiving personalized guidance from an experienced maker. Experts can also provide immediate solutions to technical problems, ensuring that projects stay on track. By recording these sessions, organizations can create a valuable library of content that new makers can reference, fostering a culture of continuous learning.
-
-Start organizing "Ask an Expert" event by:
+Start organizing "Ask an expert" events by:
 
 1. **Identify experts**: Select experienced makers and champions within your organization or invite external experts who have in-depth knowledge of Power Platform. Ensure they're approachable and capable of providing clear, actionable advice.
 2. **Schedule regular sessions**: Plan regular Q&A sessions to provide ongoing support. Consistent scheduling helps participants know when they can seek help and encourages continuous engagement.
 3. **Promote the events**: Advertise the sessions within your organization to ensure that all potential participants are aware of the opportunity. Use internal communication channels such as emails, intranet posts, and team meetings.
 4. **Collect questions in advance**: Encourage participants to submit their questions ahead of time. This allows experts to prepare detailed responses and ensures that the session runs smoothly.
 5. **Facilitate live interaction**: During the session, allow participants to ask follow-up questions and engage in discussions. This interactive format helps clarify doubts and provides a richer learning experience.
-6. **Record and archive Sessions**: Record each session and make the videos available in a centralized repository. This library of recorded sessions can be a valuable resource for new makers and those who encounter similar challenges in the future. Explore using the [Video hub](/power-platform/guidance/coe/nurture-components#video-hub-components) of the CoE Starter Kit for sharing videos.
+6. **Record and archive sessions**: Record each session and make the videos available in a centralized repository. This library of recorded sessions can be a valuable resource for new makers and those who encounter similar challenges in the future. Explore using the [Video hub](/power-platform/guidance/coe/nurture-components#video-hub-components) of the CoE Starter Kit for sharing videos.
 
 ### Resources
 

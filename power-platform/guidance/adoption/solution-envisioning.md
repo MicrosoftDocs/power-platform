@@ -29,10 +29,10 @@ Solution envisioning workshops are an effective way to uncover high-value use ca
 ## Organizing solution envisioning workshops
 
 1. **Define objectives and scope**: Clearly define the goals of the workshop. Are you looking to improve a specific process, explore opportunities to use newer technologies, or enhance customer experience? Determine the scope of the workshop including the areas of the business to be addressed and the expected outcomes.
-1. **Identify and invite stakeholders**: Identify key stakeholders based on the workshop's objectives. This group includes business leaders, IT professionals, and end-users. Such a diverse group will provide a comprehensive view of the organization's needs. Depending on the scope, you can target a specific department or the entire organization to gather a wide range of insights and perspectives.
+1. **Identify and invite stakeholders**: Identify key stakeholders based on the workshop's objectives. This group includes business leaders, IT professionals, and end-users. Such a diverse group provides a comprehensive view of the organization's needs. Depending on the scope, you can target a specific department or the entire organization to gather a wide range of insights and perspectives.
 1. **Invitation and communication**: Send out invitations well in advance, clearly stating the purpose, agenda, and expected outcomes of the workshop.
 1. **Prepare workshop materials**: Provide participants with relevant background information, for example existing high-value Power Platform solutions in your organization. Prepare templates for brainstorming, prioritization, and documentation. Tools like whiteboards, sticky notes, and [Microsoft Whiteboard](/microsoft-365/whiteboard/) can facilitate the process.
-1. **Select a facilitator**: Designate someone to lead and manage the workshop. This person will be responsible for explaining the rules, setting time limits, guiding participants through each stage, and facilitating discussions.
+1. **Select a facilitator**: Designate someone to lead and manage the workshop. This person is responsible for explaining the rules, setting time limits, guiding participants through each stage, and facilitating discussions.
 
 ## Identify high-value use cases
 
@@ -42,9 +42,9 @@ Prepare a template that prompts workshop participants to:
 
 1. **Name their idea**: Start by naming your idea. A memorable name captures attention and makes your pitch engaging.
 1. **Identify an important process**: Think about an important process in your organization. Explain the process and why it's important. This exercise sets the context for your idea and emphasizes the significance of the problem you're solving.
-1. **Highlight the challenges**: Consider the challenges associated with this process. Are there steps where human errors frequently occur? Are there inconsistencies that impact efficiency? Clearly outline these difficulties to emphasize the need for an autonomous solution.
+1. **Highlight the challenges**: Consider the challenges associated with this process. Are there steps where human errors frequently occur? Are there inconsistencies that affect efficiency? Clearly outline these difficulties to emphasize the need for an autonomous solution.
 1. **Envision the solution**: Imagine a Power Platform solution that could solve the challenging aspects of the process. Describe what the solution does and how it works. Does it use flows to automate error-prone processes? Does an app facilitate accessing data from anywhere? This section should provide a clear picture of the proposed solution.
-1. **Explain the benefits**: Highlight the benefits of implementing the solution. Consider factors such as time saved, cost reductions, and improved accuracy. Additionally, think about other areas within your organization that might benefit from similar automation.
+1. **Explain the benefits**: Highlight the benefits of implementing the solution. Consider factors such as time saved, cost reductions, and improved accuracy. Also think about other areas within your organization that might benefit from similar automation.
 
 ### Example pitch
 
@@ -53,11 +53,11 @@ To help you get started, here’s an example pitch based on the questionnaire:
 1. **Idea name**: Smart Expense Tracker
 1. **Important process**: Managing expense reports ensures that employees are reimbursed for business-related expenses and helps maintain accurate financial records. However, the current manual process is time-consuming and prone to errors.
 1. **Challenges**:
-   - **Manual data entry**: Employees must manually enter their expenses into spreadsheets, which often leads to errors and inconsistencies.
+   - **Manual data entry**: Employees must manually enter their expenses into spreadsheets, which often lead to errors and inconsistencies.
    - **Approval delays**: The approval process is slow, as managers need to review and approve each report individually.
    - **Lack of visibility**: Finance teams struggle to get real-time insights into expense data, making it difficult to manage budgets effectively.
 1. **Solution**:
-   - **Automated cloud flows**: The Smart Expense Tracker uses Power Automate to create cloud flows that automate the entire expense reporting process. Employees can submit their expenses through a user-friendly app, which automatically categorizes and validates the entries.
+   - **Automated cloud flows**: The Smart Expense Tracker uses Power Automate cloud flows that automate the entire expense reporting process. Employees can submit their expenses through a user-friendly app, which automatically categorizes and validates the entries.
    - **Power App app**: The app provides a seamless interface for employees to upload receipts, and an AI Builder model extracts the relevant data which saves the employee from having to manually enter expense details. The app can also be used to track the status of their reports. Managers receive automated notifications for approvals, and finance teams can access real-time dashboards to monitor expenses.
 1. **Benefits**:
    - **Time savings**: Automating the expense reporting process reduces the time employees spend on data entry and managers spend on approvals.
@@ -79,7 +79,7 @@ The goal of this activity is to:
 - Identify and mitigate key challenges.
 - Define success metrics through outcomes.
 
-Prepare and distribute printouts of the example list of stakeholders, objectives, challenges, and outcomes. Ensure availability of markers, sticky notes, and templates for documenting discussions.
+Prepare and distribute printouts of the example list of stakeholders, objectives, challenges, and outcomes. Hand out markers, sticky notes, and templates for documenting discussions available to each group.
 
 Groups pick items from the list and discuss the relevance of each item to the use case, considering the following categories:
 
@@ -100,7 +100,7 @@ Groups assign an importance level to each item based on their discussion and doc
 
 The expected outcome of this activity is to gain a clear understanding of the most important stakeholders and objectives for the use case, to get awareness of key challenges and their potential impact, and to start defining concrete success metrics through well-defined outcomes, providing a clear path to measure the success of the proposed solutions.
 
-To help you get started, here is a list of sample stakeholders, objectives, challenges, and outcomes. Refine this list based on your objectives, and make sure it's available to attendees, such as printouts on the day.
+To help you get started, here's a list of sample stakeholders, objectives, challenges, and outcomes. Refine this list based on your objectives, and make sure it's available to attendees, such as printouts on the day.
 
 | Objectives | Stakeholders | Challenges | Outcomes |
 | --- | --- | --- | --- |
@@ -123,10 +123,15 @@ At the end of the workshop, each group presents their solution ideas and conside
 
 ## Next steps
 
+Plan and execute hackathons following a solution envisioning workshop to take the next steps and turn ideas into solutions.
+
+> [!div class="nextstepaction"]
+> [Organize hackathons](hackathons.md)
+
+## Related resources
+
 The articles in [Planning a Power Apps project](/powerapps/guidance/planning/introduction) can teach you how to convert an idea into a fully working application by using Power Apps.
 
 The articles in [Planning a Power Automate project](/power-automate/guidance/planning/introduction) help you plan and design an automation project.
 
 The [Copilot Studio implementation guide](https://aka.ms/CopilotStudioImplementationGuide) provides a framework to do a 360-degree review of your Copilot Studio project. Through probing questions, it highlights potential risks and gaps, aims at aligning the project with the product roadmap, and shares guidance, best practices, and reference architecture examples.
-
-Use these materials to help workshop attendees take the next steps and turn their ideas into solutions.

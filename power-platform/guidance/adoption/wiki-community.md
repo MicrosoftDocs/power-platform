@@ -19,7 +19,7 @@ ms.custom:
 
 # Set up tools to support your community
 
-At the heart of growth is a community, a place for people to collaborate, share ideas, and discover new ways to apply technology to achieve more. Creating a thriving Power Platform community requires not only enthusiastic members but also robust infrastructure and the right set of tools to facilitate communication, collaboration, feedback collection, and information dissemination. Here’s how you can use various tools to build an effective support system for your Power Platform community.
+At the heart of growth is a [community](community-goals.md), a place for people to collaborate, share ideas, and discover new ways to apply technology to achieve more. Creating a thriving Power Platform community requires not only enthusiastic members but also robust infrastructure and the right set of tools to facilitate communication, collaboration, feedback collection, and information dissemination. Here’s how you can use various tools to build an effective support system for your Power Platform community.
 
 ## Viva Engage
 
