@@ -21,15 +21,15 @@ Monitoring the health of your resources helps maintain the reliability and perfo
 
 Key points to consider:
 
-1. **Identify Critical and Non-Critical Flows**: Determine which flows are essential for your operations and prioritize monitoring for these critical components.
-2. **Enable Comprehensive Logging**: Ensure that all cloud resources are configured to produce standardized, meaningful data. This includes enabling diagnostic logging throughout your environment.
-3. **Centralize Data Collection**: Forward all diagnostic logs to a centralized data sink and analytics platform, such as a Log Analytics workspace, to facilitate comprehensive analysis.
-4. **Automate Alerts and Responses**: Configure actionable alerts and automatic responses to intelligently defined thresholds to notify teams when issues arise.
-5. **Visualize Health Metrics**: Use dashboards and reports to visualize the state of your workload, making it easier for stakeholders to understand and act on the data.
+1. **[Identify critical and non-critical flows](/power-platform/well-architected/reliability/identify-flows)**: Determine which flows are essential for your operations and prioritize monitoring for these critical components.
+2. **[Design a comprehensive monitoring strategy](/power-platform/well-architected/reliability/monitoring-alerting-strategy)**: Ensure that all resources are configured to produce standardized, meaningful data. 
+3. **Centralize data collection**: Forward all diagnostic logs to a centralized data sink and analytics platform, such as a Log Analytics workspace, to facilitate comprehensive analysis.
+4. **Automate alerts and responses**: Configure actionable alerts and automatic responses to intelligently defined thresholds to notify teams when issues arise.
+5. **Visualize health metrics**: Use dashboards and reports to visualize the state of your workload, making it easier for stakeholders to understand and act on the data.
 
-#### Power Platform Monitor Page
+## Power Platform Monitor Page
 
-The Power Platform Monitor page is a powerful tool for tracking the health and performance of your applications. It provides real-time insights into the behavior of your apps, helping you identify and troubleshoot issues quickly. Key features include:
+The [Power Platform Monitor page](/power-platform/admin/monitoring/monitoring-overview) is a powerful tool for tracking the health and performance of your applications. It provides real-time insights into the behavior of your apps, helping you identify and troubleshoot issues quickly. Key features include:
 
 - **Live Monitoring**: View real-time data on app performance, including response times, error rates, and user interactions.
 - **Detailed Logs**: Access detailed logs that capture events and errors, allowing you to diagnose and resolve issues efficiently.
