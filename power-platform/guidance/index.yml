@@ -132,12 +132,8 @@ additionalContent:
              text: Center of Excellence Starter Kit overview
            - url: /power-platform/guidance/creator-kit/overview
              text: Creator Kit overview
-           - url: /power-apps/maker/data-platform/dataverse-accelerator/dataverse-accelerator
-             text: Dataverse Accelerator overview
-           - url: /power-automate/guidance/automation-kit/overview/introduction
-             text: Automation Kit overview
-           - url: /power-automate/guidance/business-approvals-templates/introduction
-             text: Business Approvals templates overview
+           - url: /power-platform/guidance/toolkits/index
+             text: More...
         - title: Real-world case studies
           links:
             - url: /power-platform/guidance/case-studies/boost-efficiency-experience-case-study
@@ -146,8 +142,8 @@ additionalContent:
               text: Epiq streamlines employee onboarding
             - url: /power-platform/guidance/case-studies/nonprofit
               text: Degrees of Change automates nonprofit operations
-            - url: /power-platform/guidance/case-studies/automate-business-processes
-              text: Cineplex automates business processes
+            - url: /power-platform/guidance/case-studies/index
+              text: More...
         - title: More...
           links:
             - url: /power-platform/guidance/white-papers
