@@ -19,7 +19,7 @@ ms.custom:
 
 # Establish a training and upskilling strategy for makers
 
-It's important to think about your upskilling strategy for makers—what is available for new, intermediate, and advanced makers to ensure they're able to learn constantly and can get powered up.
+Establishing a training and upskilling strategy you can ensure your employees are proficient in using Power Platform, foster a culture of continuous learning and adaptability. This article will explore key considerations for developing an effective training strategy.
 
 ## From awareness to value: The persona-based approach to community training and content
 
@@ -27,17 +27,17 @@ In today's rapidly evolving digital landscape, organizations are always looking 
 
 ### Explorer: Embarking on a digital adventure
 
-The **Explorer** persona is at the beginning of their journey, eager to unlock personal productivity and discover new tools. They're curious about the Power Platform and want to learn how to build apps. Key questions for **Explorers** include:
+The **Explorer** persona is at the beginning of their journey, eager to unlock personal productivity and discover new tools. They're curious about Power Platform and want to learn how to build apps, flows and agents. Key questions for **Explorers** include:
 
 - What's Power Platform?
-- How do I build an app?
+- How do I build an app, a flow, or an agent?
 - What guardrails do I need to know about?
 
 To support **Explorers**, offer activities and resources such as:
 
 - **Show and Tell sessions**: These sessions are designed to provide an overview of new tools, features, or updates. Allow participants to see the practical applications and benefits of the technology by including demonstrations and presentations in these sessions. Make these sessions interactive and encourage attendees to ask questions and engage in discussions. Learn more about [organizing show & tell sessions](show-and-tell.md).
 - **Where to go for help**: Provide a resource that offers clear guidance on where users can find assistance when they encounter issues or have questions. This resource should include information on support channels such as help desks, knowledge bases, and contact details for technical support teams. Having a well-defined help resource ensures that users can quickly resolve problems and continue their work with minimal disruption. Learn more about [setting up a community hub](wiki-community.md).
-- **App in a day events**: These events are hands-on workshops where participants learn to build applications using the Power Platform products in a single day. Guided by experts, attendees go through the entire development process, from concept to deployment. These events are highly practical, providing participants with the skills and confidence to create their own apps. They're ideal for beginners and those looking to enhance their app-building capabilities. Learn more about [Power Platform in a day workshops](https://www.microsoft.com/en-us/power-platform/training-workshops) and organizing [internal training events](in-a-day.md).
+- **Power Platform in a day events**: These events are hands-on workshops where participants learn to build solutions using the Power Platform products in a single day. Guided by experts, attendees go through the entire development process, from concept to deployment. These events are highly practical, providing participants with the skills and confidence to create their own solutions. They're ideal for beginners. Learn more about [Power Platform in a day workshops](https://www.microsoft.com/en-us/power-platform/training-workshops) and organizing [internal training events](in-a-day.md).
 - **Self-paced training**: Self-paced training allows users to learn at their own speed and convenience. This training should include an online course, tutorials, and instructional videos that users can access anytime. This type of training is flexible, accommodating different learning styles and schedules. It empowers users to take control of their learning journey and progress at a comfortable pace. Check out [Power Up](https://powerup.microsoft.com/)—an immersive training program designed to empower individuals and teams with the skills and knowledge needed to harness the full potential of Power Platform. This comprehensive training covers everything from the basics of building apps to advanced features and best practices. Participants engage in hands-on workshops, interactive sessions, and real-world projects, ensuring they gain practical experience and confidence in using the platform. Power Up aims to transform participants into proficient makers who can drive innovation and efficiency within their organizations.
 - **Success stories**: Success stories highlight real-world examples of how individuals or teams have successfully implemented Power Platform solutions to achieve their goals. These stories serve as inspiration and provide practical insights into best practices and innovative solutions. They demonstrate the tangible benefits of the technology and encourage others to explore its potential. Learn more about [sharing success stories](show-and-tell.md)
 
@@ -52,11 +52,11 @@ The primary goal for **Explorers** is to create value for themselves, enhancing 
 
 To support **Innovators**, offer activities and resources such as:
 
-- **Badges and rewards**: Badges and rewards are an effective way to recognize and motivate users as they progress through their Power Platform training. By earning badges for completing courses, participating in events, or achieving specific milestones, users receive tangible acknowledgment of their efforts and skills. Rewards can range from digital certificates to exclusive access to advanced training sessions or community events. This approach not only encourages continuous learning but also fosters a sense of accomplishment and community engagement.
-- **Design inspiration and templates**: Providing design inspiration and templates helps users kickstart their projects by offering prebuilt examples and frameworks. These resources can include sample apps, workflows, and components that demonstrate best practices and innovative solutions. By using these templates, makers can save time and gain insights into effective design principles, enhancing the quality and functionality of their own creations.
+- **Design inspiration and templates**: Offer prebuilt examples and frameworks to help users kickstart their projects. These resources can include sample apps, workflows, and components that demonstrate best practices and innovative solutions. By using these templates, makers can save time and gain insights into effective design principles, enhancing the quality and functionality of their own creations.
 - **"Ask an expert" events**: "Ask an expert" events are interactive sessions where users can connect with experienced developers and experts to seek advice, troubleshoot issues, and gain deeper insights into Power Platform features. These events provide a valuable opportunity for users to ask specific questions, learn from real-world examples, and receive personalized guidance. By fostering direct communication between newer makers and experts, these events help bridge knowledge gaps and accelerate the learning process.
-- **Guardrails and support expectations**: Establishing clear guardrails and support expectations is important for ensuring that users can safely and effectively build Power Platform solutions. Guardrails refer to guidelines and best practices that help users avoid common pitfalls and adhere to organizational standards. Support expectations outline the resources available to users, such as help desks, documentation, and community forums. By providing this framework, organizations can ensure that users have the necessary support to succeed while maintaining compliance and security. Learn more about [setting up a community hub](wiki-community.md).
+- **Guardrails and support expectations**: Establishing clear guardrails and support expectations ensures that users can safely and effectively build Power Platform solutions and ensures makers have the right expectations of what they can and can't do with Power Platform. Guardrails refer to guidelines and best practices that help users avoid common pitfalls and adhere to organizational standards. Support expectations outline the resources available to users, such as help desks, documentation, and community forums. By providing this framework, organizations can ensure that users have the necessary support to succeed while maintaining compliance and security. Learn more about [setting up a community hub](wiki-community.md).
 - **Hackathons**: Hackathons are collaborative events where participants come together to develop innovative solutions using Power Platform. These events typically span a few days and involve brainstorming, coding, and presenting final projects. Hackathons encourage creativity, teamwork, and rapid problem-solving, allowing participants to apply their skills in a dynamic and competitive environment. They also provide a platform for showcasing talent, networking with peers, and gaining recognition for innovative ideas. Learn more about [organizing hackathons](hackathons.md)
+- **Badges and rewards**: Badges and rewards are an effective way to recognize and motivate users as they progress through their Power Platform training. By earning badges for completing courses, participating in events, or achieving specific milestones, users receive tangible acknowledgment of their efforts and skills. Rewards can range from digital certificates to exclusive access to advanced training sessions or community events. This approach not only encourages continuous learning but also fosters a sense of accomplishment and community engagement.
 
 **Innovators** aim to create value for their teams, fostering collaboration and efficiency.
 
@@ -71,10 +71,10 @@ Key questions for **Champions** include:
 
 To support **Champions**, offer activities and resources such as:
 
-- **Champions program**: A champions program is designed to identify and empower individuals within an organization who are passionate about Power Platform and can lead by example. These champions act as advocates, sharing their knowledge and expertise with their peers, and driving adoption and innovation. The program typically includes exclusive training sessions, recognition, and opportunities for champions to contribute to the development of best practices and community initiatives. By fostering a network of champions, organizations can accelerate the spread of skills and enthusiasm for the Power Platform. Learn more about [define champions community purpose & goals​](champions.md).
-_ **Early access to feature releases**: Feature releases are updates that introduce new functionalities and improvements to the Power Platform. Early access to feature releases can be a great benefit for Power Platform champions, providing them with the opportunity to explore new functionalities before they're widely available. This early access allows champions to stay ahead of the curve, gaining a deeper understanding of the latest tools and enhancements.
+- **Champions program**: A champions program is designed to identify and empower individuals within an organization who are passionate about Power Platform and can lead by example. These champions act as advocates, sharing their knowledge and expertise with their peers, and driving adoption and innovation. The program typically includes exclusive training sessions, recognition, and opportunities for champions to contribute to the development of best practices and community initiatives. By fostering a network of champions, organizations can accelerate the spread of skills and enthusiasm for the Power Platform. Learn more about [defining champions community purpose & goals​](champions.md).
+- **Early access to feature releases**: Feature releases are updates that introduce new functionalities and improvements to Power Platform. Early access to feature releases can be a great benefit for Power Platform champions, providing them with the opportunity to explore new functionalities before they're widely available. This early access allows champions to stay ahead of the curve, gaining a deeper understanding of the latest tools and enhancements.
 - **Premium and custom connectors**: Premium and custom connectors allow users to integrate Power Platform solutions with a wide range of external services and applications. Train champions on how to set up these connectors, best practices for use, and examples of how they can enhance their solutions.
-- **Code review standards and  Application Lifecycle Management (ALM)**: Code review standards and ALM processes are required for maintaining the quality and reliability of Power Platform solutions. Training in this area covers best practices for writing and reviewing code, ensuring consistency, and adhering to organizational standards. ALM involves managing the entire lifecycle of an application, from development to deployment and maintenance. This includes version control, automated testing, and continuous integration and delivery. By implementing robust code review and ALM practices, Champions can ensure their solutions are scalable, secure, and maintainable. Learn more about [recommendations to build a culture of operational excellence](/power-platform/well-architected/operational-excellence/checklist).
+- **Code review standards and application lifecycle management (ALM)**: Code review standards and ALM processes are required for maintaining the quality and reliability of Power Platform solutions. Training in this area covers best practices for writing and reviewing code, ensuring consistency, and adhering to organizational standards. ALM involves managing the entire lifecycle of an application, from development to deployment and maintenance. This includes version control, automated testing, and continuous integration and delivery. By implementing robust code review and ALM practices, champions can ensure their solutions are scalable, secure, and maintainable. Learn more about [recommendations to build a culture of operational excellence](/power-platform/well-architected/operational-excellence/checklist).
 - **Microsoft certifications**: Microsoft certifications validate an individual's expertise in using Power Platform and related technologies. These certifications are recognized industry-wide and can enhance career prospects and credibility. Training for certifications typically includes comprehensive courses, practice exams, and study materials that cover the required knowledge and skills. Achieving certification demonstrates a high level of proficiency and commitment to professional development, benefiting both the individual and their organization. Enable and support your champions in taking Microsoft certifications to progress their career further. Learn more about [Microsoft Power Platform certifications](/credentials/browse/?products=power-platform&credential_types=certification).
 
 **Champions** strive to create value for the entire business, driving widespread innovation and efficiency.
@@ -83,7 +83,7 @@ _ **Early access to feature releases**: Feature releases are updates that introd
 
 Effective training empowers users and drives innovation. A persona-based training approach tailors the learning experience to the specific needs and maturity levels of different user groups. This method ensures that each user receives the appropriate level of support and guidance, maximizing their potential and contribution to the organization. We'll now look at a training approach based on the personas of Explorer, Innovator, and Champion, each representing a different stage in the journey from awareness to proficiency.
 
-1. **Maker community**: This option provides a collaborative environment where learners can share ideas and resources. It's ideal for **Explorers** who are just starting and need a supportive community to guide them. **Champions** and **Innovators** can also benefit from this community by contributing their expertise and learning from peers.
+1. **Maker community**: A community provides a collaborative environment where learners can share ideas and resources. It's ideal for **Explorers** who are just starting and need a supportive community to guide them. **Champions** and **Innovators** can also benefit from this community by contributing their expertise and learning from peers. Learn how to [define community purpose and goals](community-goals.md).
 
 2. **Introduction session**: Aimed at **Explorers**, this session offers a simple and accessible entry point into Power Platform. It provides foundational knowledge without overwhelming beginners, ensuring they can grasp basic concepts before moving on to more complex material.
 
@@ -93,7 +93,7 @@ Effective training empowers users and drives innovation. A persona-based trainin
 
 5. **Build with you**: This collaborative approach pairs learners with experts to work on projects together. It's ideal for **Innovators** who need advanced support to bring their ideas to life. **Champions** can also benefit from this option by gaining insights from experienced professionals.
 
-6. **App in a day**: This guided training is designed for **Explorers** who are new to Power Platform. These events are hands-on workshops where participants learn to build applications using the Power Platform products in a single day. Guided by experts, attendees go through the entire development process, from concept to deployment. Learn more about [Power Platform in a day workshops](https://www.microsoft.com/en-us/power-platform/training-workshops) and organizing [internal training events](in-a-day.md).
+6. **Power Platform in a day**: This guided training is designed for **Explorers** who are new to Power Platform. These events are hands-on workshops where participants learn to build applications using the Power Platform products in a single day. Guided by experts, attendees go through the entire development process, from concept to deployment. Learn more about [Power Platform in a day workshops](https://www.microsoft.com/en-us/power-platform/training-workshops) and organizing [internal training events](in-a-day.md).
 
 ## Balance depth of interaction and scalability
 
@@ -107,7 +107,7 @@ This approach allows organizations to effectively train diverse groups by provid
 
 ## Microsoft training resources
 
-Microsoft offers a comprehensive suite of training resources designed to empower individuals and organizations to harness the full potential of Microsoft Power Platform. Here’s a look at some of the key resources available:
+Microsoft offers a comprehensive suite of training resources designed to empower individuals and organizations to harness the full potential of Power Platform. Here’s a look at some of the key resources available:
 
 ### Power Up
 
@@ -139,7 +139,7 @@ Microsoft's [Power Platform in a Day](/power-platform/guidance/adoption/in-a-day
 
 ### Microsoft Power Platform Fundamentals (Certification)
 
-For those looking to validate their skills, the [Microsoft Power Platform Fundamentals (Certification)](/certifications/power-platform-fundamentals) is an excellent option. This certification demonstrates a foundational understanding of the Power Platform, including Power Apps, Power Automate, Power BI, and Power Virtual Agents. It's ideal for individuals who want to showcase their knowledge and enhance their career prospects. Once you earned the fundamentals certificate, explore further [Microsoft Power Platform certifications](/credentials/browse/?products=power-platform&credential_types=certification).
+For those looking to validate their skills, the [Microsoft Power Platform Fundamentals (Certification)](/certifications/power-platform-fundamentals) is an excellent option. This certification demonstrates a foundational understanding of the Power Platform, including Power Apps, Power Automate, and Copilot Studio. It's ideal for individuals who want to showcase their knowledge and enhance their career prospects. Once you earned the fundamentals certificate, explore further [Microsoft Power Platform certifications](/credentials/browse/?products=power-platform&credential_types=certification).
 
 ### Power Platform community
 
@@ -149,10 +149,17 @@ Engaging with the [Power Platform Community](https://powerusers.microsoft.com) i
 
 As you start involving more people from across your organization, you need to get buy-in from various stakeholders.
 
-Citizen developers come from all parts of your organization and, traditionally, won't sit in IT. Because these people have "day jobs," they need manager buy-in to set aside time to learn about Microsoft Power Platform. Making digital transformation a core objective and goal of your company is an effective way to ensure makers of all parts of the organization are able to dedicate time to learning about Microsoft Power Platform and attending internal and external training events.
+Citizen developers come from all parts of your organization and, traditionally, won't sit in IT. Because these people have "day jobs," they need manager buy-in to set aside time to learn about Power Platform. Making digital transformation a core objective and goal of your company is an effective way to ensure makers of all parts of the organization are able to dedicate time to learning about Power Platform and attending internal and external training events.
 
 An effective way to gain buy-in is to highlight the positive impact the project and community can have for different stakeholders.
 
 Creating an innovation-friendly culture can take time. It's important to address people's concerns about how it might affect their part of the organization, both in the short term and the long run.
+
+## Next step
+
+A key component of your training strategy is to organize internal training events:
+
+> [!div class="nextstepaction"]
+> [Host internal training events](in-a-day.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
