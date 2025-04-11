@@ -53,7 +53,7 @@ Currently, all your customer data stored *only* in the following apps and servic
 - Dynamics 365 Project Operations (Finance and operations)
 - Dynamics 365 Supply Chain Management (Finance and operations)
 - Dynamics 365 Fraud Protection (Finance and operations)
-- [Copilot Studio](/copilot-studio/admin-customer-managed-keys)
+- [Copilot Studio](/microsoft-copilot-studio/admin-customer-managed-keys)
 
 > [!NOTE]
 > - Contact a representative for services not listed above for information about customer-managed key support.
