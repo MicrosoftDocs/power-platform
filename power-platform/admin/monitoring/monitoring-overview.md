@@ -57,12 +57,11 @@ Admin experiences are available to Power Platform service and Dynamics 365 admin
 
 The purpose of the **Monitor** page is to bring attention to resources that have degraded operational health and highlight resources that have opportunities for improvement.  
 
-The first resources that appear in the monitoring experience are apps that were created by using Power Apps. Therefore, the cards initially highlight apps where users experience the following issues:
+The first resources that appear in the monitoring experience are resources that were created by using Power Platform products like Power Apps or Power Automate. Therefore, the cards initially highlight resources where users experience the following issues:
 
-- They face obstacles when they try to access an app.
-- They have higher wait times to use the app.
+- They face obstacles when they try to access a resource.
+- They have higher wait times to use the resource.
 
-As more resources and metrics appear on the **Monitor** page, this experience evolves and brings attention to more than just apps.
 
 ## Products
 
@@ -88,39 +87,6 @@ For resources that are available in the monitoring experience, you can learn mor
 | Copilot Studio | Copilot Studio agents | Not yet available | Not yet available |
 | Dynamics 365 | Apps | Not yet available | Not yet available |
 
-## Monitoring experiences for makers
-
-When tenant-wide analytics are turned on, metrics and logs are available to makers. Makers can view only metrics and logs that they have edit privileges for. Two environment-level settings control what analytics information is available to makers. The first setting controls whether makers can view any analytics data in monitoring experiences, including metrics and logs. The second setting controls whether makers can view End User Pseudonymous Identifiers (EUPI) such as session IDs and user object IDs in event logs.
-
-### Turn on the monitoring experiences for makers
-
-The following [Power Platform Administrator](https://www.powershellgallery.com/packages/Microsoft.PowerApps.Administration.PowerShell/2.0.200) PowerShell cmdlets can be used to control what monitoring data is available to makers.
-
-#### Get settings values for maker access to analytics data
-
-```PowerShell
-Get-AdminPowerAppEnvironmentMakerAnalyticsSettings -EnvironmentName
-{environment id}
-```
-
-#### Turn on maker access to analytics data
-
-This setting doesn't include availability of EUPI such as the session IDs and user object IDs in event logs.
-
-```PowerShell
-Set-AdminPowerAppEnvironmentMakerAnalyticsSettings -EnvironmentName
-     {environment id} -EnableAnalyticsForMakers $true
-```
-
-#### Turn on maker access to session IDs and user object IDs in event logs
-
-This setting controls maker access to EUPI such as session IDs or user object IDs in event logs.
-
-```PowerShell
-Set-AdminPowerAppEnvironmentMakerAnalyticsSettings -EnvironmentName
-     {environment id} -EnableEUPIForMakerAnalytics $true
-```
-
 ## Frequently asked questions
 
 ### How does Power Platform monitoring coexist with Application Insights?
@@ -136,20 +102,9 @@ Application Insights contains a superset of runtime event logs.
 - It allows for custom traces, which support custom events, metrics, and dimensions.
 - Event logs can be correlated and joined across resources that emit data to the same Application Insights instance.
 
-### Why do makers in my organizations receive a message that settings must be enabled for their monitoring experience?
-
-In addition to the tenant-level analytics setting, the environment-level **Analytics data available to Makers** setting must be turned on. The availability of monitoring health metrics, logs, and recommendations in maker monitoring experiences is based on tenant and environment settings.
-
-| Are tenant-level analytics turned on? | Is analytics data available to makers? | Is the environment a Managed Environment? | Are operational health metrics available? | Are logs available? | Are recommendations available? |
-|---|---|---|---|---|---|
-| Yes | Yes | Yes | Yes | Yes | Yes |
-| Yes | Yes | No | Yes | Yes | No |
-| Yes | No | Not applicable | No | No | No |
-| No | Not applicable | Not applicable | No | No |No |
 
 ## Known limitations
 
-- Environment admins can't view monitoring data in the Power Platform admin center.
 - Only logs that are associated with metric recommendations are available.
 - Time-based metrics report out only the seventy-fifth percentile.
 
