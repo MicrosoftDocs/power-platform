@@ -4,7 +4,7 @@ description: Learn about Microsoft Azure Virtual Network support for Power Platf
 author: faix
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/11/2025
+ms.date: 04/14/2025
 ms.subservice: admin
 ms.author: osfaixat
 ms.reviewer: sericks
@@ -177,9 +177,9 @@ When a Power Platform environment has a delegated Azure subnet assigned, it uses
 
 Yes, you can use an existing Virtual Network for Power Platform, provided that a single, new subnet within the Virtual Network is delegated specifically to Power Platform. The delegated subnet has to be dedicated for subnet delegation and can't be used for other purposes.
 
-### Can i reuse the same delegated subnet in multiple enterprise policies?
+### Can I reuse the same delegated subnet in multiple enterprise policies?
 
-No. Reusing the same subnet in multiple Enterprise Policies is not supported. Each Power Platform enterpise policy must have its own unique subnet for delegation.
+No. Reusing the same subnet in multiple enterprise policies isn't supported. Each Power Platform enterpise policy must have its own unique subnet for delegation.
 
 ### What is a Dataverse plug-in?
 
