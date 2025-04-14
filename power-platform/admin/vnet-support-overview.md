@@ -63,7 +63,7 @@ Confirm that your Power Platform environment and enterprise policy are in suppor
 |-----------------------|--------------|
 | United States | eastus, westus |
 | South Africa  | southafricanorth, southafricawest |
-| Uk | uksouth, ukwest |
+| UK | uksouth, ukwest |
 | Japan | japaneast, japanwest |
 | India | centralindia, southindia |
 | France | francecentral, francesouth |
