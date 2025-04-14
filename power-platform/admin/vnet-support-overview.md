@@ -179,7 +179,7 @@ Yes, you can use an existing Virtual Network for Power Platform, provided that a
 
 ### Can I reuse the same delegated subnet in multiple enterprise policies?
 
-No. Reusing the same subnet in multiple enterprise policies isn't supported. Each Power Platform enterpise policy must have its own unique subnet for delegation.
+No. Reusing the same subnet in multiple enterprise policies isn't supported. Each Power Platform enterprise policy must have its own unique subnet for delegation.
 
 ### What is a Dataverse plug-in?
 
