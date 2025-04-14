@@ -1,7 +1,7 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "Microsoft Power Platform REST API - Power Pages",
+    "title": "Microsoft Power Platform REST API - powerpages",
     "description": "Unified API for all administrative capabilities in Microsoft Power Platform.",
     "version": "2022-03-01-preview"
   },
@@ -468,8 +468,8 @@
         "tags": [
           "Websites"
         ],
-        "summary": "Stamp bootstrap version five (v5) status as enabled for website.",
-        "description": "Stamp bootstrap version five (v5) status as enabled for website.",
+        "summary": "Stamp bootstrap version five (5) status as enabled for website.",
+        "description": "Stamp bootstrap version five (5) status as enabled for website.",
         "operationId": "SetPortalBootstrapV5Enabled",
         "produces": [
           "application/json"
