@@ -21,4 +21,69 @@ contributors:
 [!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-Content goes here.
+Here are the canvas app operational health metrics and recommendations that are available in Monitor. 
+
+## Canvas app metrics and recommendations
+
+### Metric Definitions
+| Metric | Definition |
+|---|---|
+| App open success rate| A percentage that describes how often end-users are able to successfully open the app |
+| Time to interactive (TTI)| The time (in seconds) that end-users have to wait to be able to interact with the 1st screen after app launch |
+| Time to full load (TTFL) | The time (in seconds) that end-users have to wait to have all the data requests for the 1st screen after app launch |
+
+
+### Metric and Recommendation pairings
+| Metric | Secondary metric | Recommendation | Example |
+|---|---|---|---|
+| App Open Success Rate | ErrorCode = AppForbidden | Evaluate if the app should be shared with users without permiission | "X% of sessions ended without users accessing the app becuase users didn't have permission to access the app. It's possible that the app may benefit from being shared with more users. The logs will show which users without permission attempting to open the app |
+| Time to interactive || Coming soon | Coming soon |
+| Time to full load || Coming soon | Coming soon |
+
+
+## Monitoring experiences for makers
+
+When tenant-wide analytics are turned on, metrics and logs are available to makers. Makers can view only metrics and logs that they have edit privileges for. Two environment-level settings control what analytics information is available to makers. The first setting controls whether makers can view any analytics data in monitoring experiences, including metrics and logs. The second setting controls whether makers can view End User Pseudonymous Identifiers (EUPI) such as session IDs and user object IDs in event logs.
+
+### Turn on the monitoring experiences for makers
+
+The following [Power Platform Administrator](https://www.powershellgallery.com/packages/Microsoft.PowerApps.Administration.PowerShell/2.0.200) PowerShell cmdlets can be used to control what monitoring data is available to makers.
+
+#### Get settings values for maker access to analytics data
+
+```PowerShell
+Get-AdminPowerAppEnvironmentMakerAnalyticsSettings -EnvironmentName
+{environment id}
+```
+
+#### Turn on maker access to analytics data
+
+This setting doesn't include availability of EUPI such as the session IDs and user object IDs in event logs.
+
+```PowerShell
+Set-AdminPowerAppEnvironmentMakerAnalyticsSettings -EnvironmentName
+     {environment id} -EnableAnalyticsForMakers $true
+```
+
+#### Turn on maker access to session IDs and user object IDs in event logs
+
+This setting controls maker access to EUPI such as session IDs or user object IDs in event logs.
+
+```PowerShell
+Set-AdminPowerAppEnvironmentMakerAnalyticsSettings -EnvironmentName
+     {environment id} -EnableEUPIForMakerAnalytics $true
+```
+
+## Frequently asked questions
+
+### Why do makers in my organizations receive a message that settings must be enabled for their monitoring experience?
+
+In addition to the tenant-level analytics setting, the environment-level **Analytics data available to Makers** setting must be turned on. The availability of monitoring health metrics, logs, and recommendations in maker monitoring experiences is based on tenant and environment settings.
+
+| Are tenant-level analytics turned on? | Is analytics data available to makers? | Is the environment a Managed Environment? | Are operational health metrics available? | Are logs available? | Are recommendations available? |
+|---|---|---|---|---|---|
+| Yes | Yes | Yes | Yes | Yes | Yes |
+| Yes | Yes | No | Yes | Yes | No |
+| Yes | No | Not applicable | No | No | No |
+| No | Not applicable | Not applicable | No | No |No |
+
