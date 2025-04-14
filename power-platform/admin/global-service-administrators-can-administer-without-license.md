@@ -1,5 +1,5 @@
 ---
-title: Administrator access for unlicensed Power Platform and Global admins
+title: Global admins and Power Platform admins can administer without a license
 description: Learn about the levels of permission in customer engagement apps available for global admins and Microsoft Power Platform admins who don't have a license.
 author: praveenmantha 
 ms.subservice: admin
