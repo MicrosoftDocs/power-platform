@@ -5,7 +5,7 @@ author: manuelap-msft
 
 ms.subservice: guidance
 ms.topic: conceptual
-ms.date: 06/13/2024
+ms.date: 04/14/2025
 ms.author: mapichle
 ms.reviewer: sericks
 search.audienceType: 
