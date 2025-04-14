@@ -1,12 +1,12 @@
 ---
 title: Manage collaboration settings
 description: Learn how to use collaboration settings to adjust how collaboration features work in Power Platform.
-author: fikaradz
+author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/16/2024
+ms.date: 04/14/2025
 ms.subservice: admin
-ms.author: fikaradz
+ms.author: sericks
 ms.reviewer: sericks
 search.audienceType:
   - admin
@@ -15,7 +15,9 @@ search.app:
   - PowerApps
   - Powerplatform
   - Flow
-ms.custom: bap-template
+ms.custom:
+- bap-template
+- NewPPAC
 ms.contributors:
 - srihas
 ---
@@ -24,7 +26,25 @@ ms.contributors:
 
 [!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
-Use collaboration settings to adjust how collaboration features work in Power Platform. Adjust the settings in the Power Platform admin center, **Environments** > *select an environment* > **Settings** > **Product** > **Collaboration**.
+Use collaboration settings to adjust how collaboration features work in Power Platform. 
+
+To adjust the settings in the Power Platform admin center for an environment, follow these steps:
+
+## [New admin center](#tab/new)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. In the **Environments** page, and select an environment.
+1. Select **Settings** in the command bar.
+1. Expand **Product**, and then select **Collaboration**. Collaboration settings are displayed.
+
+## [Classic admin center](#tab/classic)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Environments**.
+1. In the **Environments** page, select an environment.
+1. Select **Settings** in the command bar.
+1. Expand **Product**, and then select **Collaboration**. Collaboration settings are displayed.
+---
 
 Make sure you have the System Administrator security role or equivalent permissions to update the collaboration settings. To check your security role, see [View your user profile](/powerapps/user/view-your-user-profile). If you don’t have the correct permissions, contact your system administrator.
 
