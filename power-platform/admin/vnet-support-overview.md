@@ -177,6 +177,10 @@ When a Power Platform environment has a delegated Azure subnet assigned, it uses
 
 Yes, you can use an existing Virtual Network for Power Platform, provided that a single, new subnet within the Virtual Network is delegated specifically to Power Platform. The delegated subnet has to be dedicated for subnet delegation and can't be used for other purposes.
 
+### Can i reuse the same delegated subnet in multiple enterprise policies?
+
+No. Reusing the same subnet in multiple Enterprise Policies is not supported. Each Power Platform enterpise policy must have its own unique subnet for delegation.
+
 ### What is a Dataverse plug-in?
 
 A Dataverse plug-in is a piece of custom code that can be deployed in a Power Platform environment. This plug-in can be configured to run during events (such as a change in data) or triggered as a Custom API. Learn more: [Dataverse Plug-ins](/power-apps/developer/data-platform/plug-ins)
