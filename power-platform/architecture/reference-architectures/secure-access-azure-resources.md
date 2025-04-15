@@ -71,7 +71,7 @@ Implementing network security controls between application components often pres
 
 ### Reliability
 
-**Redundancy**: Power Platform infrastructure is built to use a primary and a failover region without explicit action by the customer. For example, if your Power Platform environment is in West US, the failover region is East US. To achieve the best resilience, set up a virtual network in both paired Azure regions and establish a peering connection between them. This setup allows for a seamless failover of Azure resources in the event of a disaster. Learn more in [Business continuity and disaster recovery](/power-platform/admin/business-continuity-disaster-recovery) and [Sample scenarios for Virtual Network setup and configuration](power-platform/admin/virtual-network-support-whitepaper#sample-scenarios-for-virtual-network-setup-and-configuration).
+**Redundancy**: Power Platform infrastructure is built to use a primary and a failover region without explicit action by the customer. For example, if your Power Platform environment is in West US, the failover region is East US. To achieve the best resilience, set up a virtual network in both paired Azure regions and establish a peering connection between them. This setup allows for a seamless failover of Azure resources in the event of a disaster. Learn more in [Business continuity and disaster recovery](/power-platform/admin/business-continuity-disaster-recovery) and [Sample scenarios for Virtual Network setup and configuration](/power-platform/admin/virtual-network-support-whitepaper#sample-scenarios-for-virtual-network-setup-and-configuration).
 
 ### Security
 
