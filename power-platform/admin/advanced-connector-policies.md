@@ -72,25 +72,25 @@ During publishing, an environment lifecycle operation is performed on every envi
 
 Previously, in [data policies](managed-environment-data-policies.md) customers couldn't see triggers, internal actions, or if an action is deprecated.  We have now added these tags across all certified connectors so that administrators can quickly decide to block specific triggers from use or turning off actions which are deprecated and no longer supported by the connector publisher.
 
-<img src="media/advanced-connector-policies-2.png" width="600px" />
 :::image type="content" source="media/advanced-connector-policies-2.png" alt-text="Text." lightbox="media/advanced-connector-policies-2.png":::
+
 ### Easier management experience
 
-We have taken feedback from customers and drastically simplified the management experience by making the policy a strict allow list.  When configured, all new connectors are blocked.  If you configure the allowed actions on a given connector, then no new actions, triggers, or internal actions will be allowed.  The concept of the Business and Non-Business categories in Data Policies (DLP) is not brought forward as it was not deemed effective in policy management.  
+We have taken feedback from customers and drastically simplified the management experience by making the policy a strict allow list. When configured, all new connectors are blocked. If you configure the allowed actions on a given connector, then no new actions, triggers, or internal actions are allowed. The concept of the business and non-business categories in data policies has not been brought forward, as it was not deemed effective in policy management.  
 
 ### Proactive policy management
 
-Advanced connector policies has shipped as part of environment groups and rules.  These have publicly documented APIs available on [Power Platform API](/rest/api/power-platform/environmentmanagement/environment-groups) so that you can build automated scenarios such as creating new policies, updating policies, and moving environments in to groups for management at scale. 
+Advanced connector policies has shipped as part of environment groups and rules. These have publicly documented APIs available on [Power Platform API](/rest/api/power-platform/environmentmanagement/environment-groups) so that you can build automated scenarios such as creating new policies, updating policies, and moving environments in to groups for management at scale. 
 
-## Data Policy (DLP) Mixed Mode
+## Data policy mixed mode
 
-Advanced connector policies (ACP) can be used in mixed mode with classic Data Policies (DLP).  This allows for complimenting configurations to be made such that DLP can achieve action control and endpoint filtering until such time as those features are native to ACP.  In addition, you can use ACP to block any connector which is not possible in classic DLP.  
+Advanced connector policies (ACP) can be used in mixed mode with classic data policies. This allows for complimenting configurations to be made such that data policies can achieve action control and endpoint filtering until such time as those features are native to ACP.  In addition, you can use ACP to block any connector which isn't possible in classic data policies.  
 
-At runtime, when a connector operation is invoked, it will query the effective policy for the current hosting environment.  This will include a combined policy that merges the most restrictive settings from both classic DLP and ACP to provide full enforcement.
+At runtime, when a connector operation is invoked, it queries the effective policy for the current hosting environment. This includes a combined policy that merges the most restrictive settings from both classic data policies and ACP to provide full enforcement.
 
-In the future, a separate rule will become available to allow you to skip Data Policy (DLP) evaluation in favor of only relying upon Connector Policy.  
+In the future, a separate rule will become available to allow you to skip data policy evaluation in favor of only relying upon connector policy.  
 
 ## Provide Feedback
 
-Trying out the new Advanced connector policies?  We would love your feedback!  Please join our Viva Engage network for keeping the conversation going under non-disclosure agreement (NDA):
+Trying out the new advanced connector policies? We would love your feedback! Please join our Viva Engage network for keeping the conversation going under non-disclosure agreement (NDA):
 [Public Preview - Advanced Connector Policies](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=215134347264&view=all).
