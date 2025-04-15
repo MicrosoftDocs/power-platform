@@ -25,7 +25,7 @@ The following [rules](environment-groups.md#rules) can be applied to [environmen
 | # | Rules (in alphabetical order) |
 |----|----------|
 | 1 | [Accessing transcripts from conversations in Copilot Studio agents](/microsoft-copilot-studio/admin-transcript-controls) |
-| 2 | [Advanced connector policy (preview)](advanced-connector-policy.md) |
+| 2 | [Advanced connector policy (preview)](advanced-connector-policies.md) |
 | 3 | [AI prompts](/ai-builder/administer#enable-or-disable-ai-prompts-in-power-platform-and-copilot-studio) |
 | 4 | [AI-generated descriptions (preview)](/power-apps/maker/canvas-apps/save-publish-app#create-an-app-description-with-copilot-preview) |
 | 5 | [AI-powered Copilot features](/power-apps/maker/canvas-apps/ai-overview?WT.mc_id=ppac_inproduct_settings) |
