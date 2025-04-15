@@ -52,6 +52,21 @@ To configure an advanced connector policy, complete the following steps.
 1. When all connectors are set as you require, select **Save**.
 1. The envrioment group's page is redisplayed. After all rules are updated to your requirements, select **Publish rules** in the command bar.
 
+## [Classic admin center](#tab/classic)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environment groups**.
+1. In the **Environment groups** page, select the environment group where the policy will be applied.
+1. The environment group's page is displayed. Select the **Rules** tab.
+1. Selecct **Advanced connector policies (preview)**. The **Advanced connector policies (preview)** pane is displayed.
+1. Define the policy. Keep the following points in mind:
+   - By default, the non-blockable connectors are pre-loaded as _allowed_.
+   - To add new connectors, select **Add connectors** to choose from all certified connectors.
+   - To remove connectors, select them and then select **Remove connector**.  You can remove any connector to block it.
+1. When all connectors are set as you require, select **Save**.
+1. The envrioment group's page is redisplayed. After all rules are updated to your requirements, select **Publish rules** in the command bar.
+---
+
 During publishing, an environment lifecycle operation will be performed on every environment that is part of the group, or the individual environment depending on where you are configuring the policy.  This operation will be available in environment history as *Update Managed Environment Settings* and will be what cascades the new connector policy to the design time and runtime infrastructure.
 
 ### More visibility and control
