@@ -24,7 +24,7 @@ ms.custom:
 
 # ​Reduce infrastructure challenges with hosted RPA in Power Automate
 
-[Robotic process automation (RPA)](/power-platform/products/power-automate/topics/robotic-process-automation/what-is-rpa) uses software bots to emulate human interactions in a graphical user interface like a desktop application to automate repetitive and manual tasks. [*Hosted RPA*](/power-automate/desktop-flows/hosted-rpa-overview) uses Microsoft infrastructure running in Azure to allow organizations to run RPA quickly and at scale in the cloud, without needing to provision and maintain their own static infrastructure.
+[Robotic process automation (RPA)](https://www.microsoft.com/power-platform/products/power-automate/topics/robotic-process-automation/what-is-rpa) uses software bots to emulate human interactions in a graphical user interface like a desktop application to automate repetitive and manual tasks. [*Hosted RPA*](/power-automate/desktop-flows/hosted-rpa-overview) uses Microsoft infrastructure running in Azure to allow organizations to run RPA quickly and at scale in the cloud, without needing to provision and maintain their own static infrastructure.
 
 Power Automate supports two hosted RPA scenarios. *Hosted machines* run attended or unattended RPA, allowing citizen and pro developers to build or test automations and business users to run them. *Hosted machine groups* run unattended RPA in production, optimizing resources for higher efficiency and lower cost with automatic scaling and dynamic load balancing.
 

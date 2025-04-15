@@ -66,7 +66,7 @@ If your users are highly distributed, such as at branch offices located througho
 
 :::image type="content" source="media/multiple-wan-config.png" alt-text="Diagram of the WAN network setup for each branch location to the customer's datacenter.":::
 
-ExpressRoute can't solve poor, saturated, or inefficient connections between the client device and ExpressRoute. Consider using [ExpressRoute Direct](/azure/expressroute/expressroute-erdirect-about.md), which lets you connect directly to Microsoft's global network.
+ExpressRoute can't solve poor, saturated, or inefficient connections between the client device and ExpressRoute. Consider using [ExpressRoute Direct](/azure/expressroute/expressroute-erdirect-about), which lets you connect directly to Microsoft's global network.
 
 :::image type="content" source="media/poor-wan-network.png" alt-text="Diagram showing one branch with poor WAN network connectivity compared with other branches.":::
 

@@ -92,7 +92,7 @@ Background jobs can scale with increasing workloads without compromising perform
 
 ### Reliability
 
-Anticipate potential failures by incorporating comprehensive error-handling mechanisms. Manage transient faults using retry policies with exponential backoff. Learn more in [Implement retries with exponential backoff](https://learn.microsoft.com/en-us/dotnet/architecture/microservices/implement-resilient-applications/implement-retries-exponential-backoff).
+Anticipate potential failures by incorporating comprehensive error-handling mechanisms. Manage transient faults using retry policies with exponential backoff. Learn more in [Implement retries with exponential backoff](/dotnet/architecture/microservices/implement-resilient-applications/implement-retries-exponential-backoff).
 
 ## Contributors
 
