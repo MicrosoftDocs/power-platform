@@ -10,7 +10,7 @@ ms.reviewer: sericks
 contributors:
   - laneswenka
 ms.subservice: admin
-ms.custom: "admin-security", "NewPPAC"
+ms.custom: NewPPAC
 search.audienceType: 
   - admin
 ---
