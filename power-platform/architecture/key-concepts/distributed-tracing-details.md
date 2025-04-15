@@ -193,7 +193,15 @@ telemetryClient.TrackTrace(traceTelemetry);
 > [!TIP]
 > The [Dataverse OpenTelemetry sample project](https://github.com/Grant-Archibald-MS/dataverse-opentelemetry) contains an example of a Dataverse plug-in integration with OpenTelemetry. OpenTelemetry is a collection of W3C standards, APIs, SDKs, and tools that you can use to instrument, generate, collect, and export telemetry data.
 
-## Related content
+## Contributors
+
+_Microsoft maintains this article. The following contributors wrote this article._
+
+Principal authors:
+
+- **[Grant Archibald](https://www.linkedin.com/in/grantarchibald/)**, Senior Program Manager
+
+## Related resources
 
 - [W3C ​​Trace Context recommendation](https://www.w3.org/TR/trace-context/)
 - [​Event framework](/power-apps/developer/data-platform/event-framework)

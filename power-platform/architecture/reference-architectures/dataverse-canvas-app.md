@@ -15,23 +15,18 @@ search.audienceType:
   - flowmaker  
 ---  
 
-# Use the Dataverse connector with canvas apps  
+# Use Dataverse as a data source for canvas apps
 
-Microsoft Dataverse is a good choice to use as a data source for your canvas apps because it supports complex data and security models and lets you build a more custom user experience. Canvas apps can use the Dataverse connector with other Power Platform connectors to integrate multiple data sources, such as SharePoint lists, Microsoft Access databases, or data from other business applications. This article provides an example scenario and a generalized example architecture to illustrate how to use the Dataverse connector with canvas apps. The architecture example can be modified for many different scenarios and industries.
+Microsoft Dataverse is a good choice to use as a data source for your canvas apps because it supports complex data and security models and lets you build a more custom user experience. Canvas apps can use the Dataverse connector with other Power Platform connectors to integrate multiple data sources, such as SharePoint lists, Microsoft Access databases, or data from other business applications. 
 
-## Example architecture diagram  
+> [!TIP]  
+> This article provides an example scenario and a generalized example architecture to illustrate how to use the Dataverse connector with canvas apps. The architecture example can be modified for many different scenarios and industries.
+
+## Architecture diagram  
 
 :::image type="content" source="media/dataverse-canvas/dataverse-canvas.png" alt-text="Architecture diagram illustrating the workflow for using the Dataverse connector with canvas apps." lightbox="media/dataverse-canvas/dataverse-canvas.png":::  
 
-## Components  
-
-[**Power Platform environment**](/power-platform/admin/environments-overview): Contains Power Platform resources that implement the user experience.
-
-[**Power Apps**](/power-apps/): Implements the user experience of the solution.
-
-[**Dataverse connector**](/connectors/commondataserviceforapps/): Lets you access a hierarchical data model where tables and their relationships are readily available, without building complex lookups and joins to retrieve related tables. The connector also bypasses the traditional connector infrastructure and calls directly into the Dataverse back end, improving performance.
-
-## Example scenario
+## Workflow
 
 The following steps describe the workflow that's shown in the example architecture diagram:
 
@@ -41,7 +36,15 @@ The following steps describe the workflow that's shown in the example architectu
 
 1. **Dataverse tables**: The Dataverse tables store data about the conference sessions hosted at a venue. The tables are related using one-to-many and many-to-many relationships. Dataverse security roles align with the roles of app users. Logic can be implemented at the Dataverse level to calculate and roll up values, enforce domain values, and automate data operations.
 
-### Use cases
+## Components  
+
+[**Power Platform environment**](/power-platform/admin/environments-overview): Contains Power Platform resources that implement the user experience.
+
+[**Power Apps**](/power-apps/): Implements the user experience of the solution.
+
+[**Dataverse connector**](/connectors/commondataserviceforapps/): Lets you access a hierarchical data model where tables and their relationships are readily available, without building complex lookups and joins to retrieve related tables. The connector also bypasses the traditional connector infrastructure and calls directly into the Dataverse back end, improving performance.
+
+## Scenario details
 
 Power Apps makes it easy to create custom user experiences for data that's stored in Microsoft Dataverse. Model-driven apps are ideal for scenarios that focus on forms over data. Canvas apps work best for scenarios that require more flexibility in customizing the layout.
 
@@ -72,3 +75,16 @@ The architecture in this example is useful when you need to provide access to da
 ### Experience Optimization
 
 **Design for efficiency**: A canvas app that lets users access other data sources alongside Dataverse tables, without requiring interaction with multiple individual apps, improves efficiency and provides a better experience. Avoid building an app to build an app, however&mdash;the app should provide some efficiency to the user or another architecture benefit over using a model-driven app experience.
+
+## Contributors  
+
+_Microsoft maintains this article. The following contributors wrote this article._  
+
+Principal authors:  
+
+- **[Mehdi Slaoui Andaloussi](https://www.linkedin.com/in/mehdi-slaoui-andaloussi-7450772/)**, Principal Engineering Manager  
+
+## Related resources  
+
+- [Microsoft Dataverse connector](/connectors/commondataserviceforapps/)  
+- [Understanding delegation](/power-apps/maker/canvas-apps/delegation-overview)

@@ -31,6 +31,13 @@ In this article, you learn about a travel agency that uses AI-driven solutions t
 
 :::image type="content" source="media/travel-agent/travel-agent-arch.png" alt-text="Architecture diagram of a call center solution that integrates Microsoft and other sources of data and knowledge with AI models and automated workflows." border="true" lightbox="media/travel-agent/travel-agent-arch.png":::
 
+## Workflow
+
+- **AI-driven customer support**: The Copilot Studio agent is designed to assist customers with travel-related inquiries, including reservation checks and balance inquiries, reducing the need for call center interactions.
+- **Data management**: The architecture uses Microsoft Dataverse as a central repository for customer and location data, and a SQL database for tracking reservations and transactions.
+- **Platform governance**: The Power Platform admin center is used for managing and monitoring components to maintain operational efficiency, with Microsoft Entra ID ensuring secure access to sensitive customer data.  
+- **Performance optimization**: The architecture emphasizes experience optimization through data unification, sentiment analysis, and user personalization.
+
 ## Components
 
 The solution described in this article includes the following components.

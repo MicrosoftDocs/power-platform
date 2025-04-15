@@ -1,4 +1,4 @@
----
+﻿---
 title: Healthcare Patient Support Agent
 description: Learn how the Healthcare Patient Support Agent streamlines patient interactions and reduces administrative burdens for healthcare providers.
 #customer intent: As a Power Platform user, I want to visualize the major components of the Healthcare Patient Support Agent architecture so that I can design a well-architected solution.
@@ -71,7 +71,7 @@ The following components are used in the Healthcare Patient Support Agent archit
 
 [**Application Insights**](/microsoft-copilot-studio/advanced-bot-framework-composer-capture-telemetry): Monitors workload performance and health.
 
-## Use case
+## Scenario details
 
 The Healthcare Patient Support Agent aims to improve the delivery of efficient and personalized healthcare to patients, while reducing the administrative burden on healthcare providers.
 
@@ -110,6 +110,14 @@ The Patient interactions agent integrates natural language processing and knowle
 ### Responsible AI
 
 Privacy and security: Patient data is protected by encryption and complies with [Health Insurance Portability and Accountability Act (HIPAA)](/compliance/regulatory/offering-hipaa-hitech) requirements.
+
+## Contributors
+
+_Microsoft maintains this article. The following contributors wrote this article._
+
+Principal authors:
+
+- **[Pujarini Mohapatra](https://www.linkedin.com/in/biswapm/)**, Principal Engineering Manager
 
 ## Related resources
 

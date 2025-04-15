@@ -45,7 +45,7 @@ Understanding reference architectures and exploring solution ideas can help you 
 | [**Integrate legacy data with Power Automate and SharePoint**](../reference-architectures/app-legacy-data-integration.md) | Streamline the process of integrating legacy data with modern platforms. |
 | [**Use Dataverse background operations**](../reference-architectures/dataverse-background-operations.md) | Use custom APIs to define custom messages and implement business logic through plug-ins, allowing for background processing that eliminates the need for a persistent connection during execution. |
 | [**Integrate Microsoft Fabric Lakehouse data using Dataverse virtual tables**](../reference-architectures/app-integrate-lakehouse.md) | Gather data from multiple internal systems into a Microsoft Fabric Lakehouse, and consume the data in Power Platform apps and automations using Dataverse virtual tables. |
-| [**Use the Dataverse connector with canvas apps**](../reference-architectures/dataverse-canvas-app.md) | Learn how creating a Power Apps canvas app that uses Dataverse as a data source helps build a more custom user experience. |
+| [**Use Dataverse as a data source for canvas apps**](../reference-architectures/dataverse-canvas-app.md) | Learn how creating a Power Apps canvas app that uses Dataverse as a data source helps build a more custom user experience. |
 
 ## Solution ideas
 
@@ -58,7 +58,7 @@ Understanding reference architectures and exploring solution ideas can help you 
 | [**Travel concierge using generative AI with Copilot Studio**](../solution-ideas/agent-travel-customer.md) | Employ an AI-driven solution to enhance customer interactions and streamline information access. |
 | [**Ticket management system with Copilot Studio agents**](../solution-ideas/agent-ticket-and-refund.md) | Improve ticket refund and management processes by deploying both a user-based and autonomous agent to integrate with legacy systems. |
 
-## Related content
+## Related resources
 
 - [Microsoft Dataverse documentation](/power-apps/maker/data-platform/)
 - [Microsoft Dataverse developer documentation](/power-apps/developer/data-platform/) 

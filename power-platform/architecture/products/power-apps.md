@@ -52,7 +52,7 @@ Understanding Power Apps reference architectures and exploring solution ideas ca
 | [**Use Dataverse background operations**](../reference-architectures/dataverse-background-operations.md) | Use custom APIs to define custom messages and implement business logic through plug-ins, allowing for background processing that eliminates the need for a persistent connection during execution. |
 | [**Secure Power Platform access to Azure resources**](../reference-architectures/secure-access-azure-resources.md) | Use Microsoft Azure Virtual Network support for Power Platform to integrate Power Platform with resources inside your virtual network without exposing them to the public internet. |
 | [**Use REST APIs to extend the functionality of canvas apps**](../reference-architectures/custom-connector-canvas.md) | When working with complex algorithms or multiple data sources, shift the logic from the canvas app to a RESTful API to keep formulas in your Power Apps canvas apps simple and move more complex functionality to the server. |
-| [**​Use the Dataverse connector with canvas apps​**](../reference-architectures/dataverse-canvas-app.md) | Learn how creating a Power Apps application that uses Dataverse as a data source helps build a more custom user experience. |
+| [**Use Dataverse as a data source for canvas apps​**](../reference-architectures/dataverse-canvas-app.md) | Learn how creating a Power Apps application that uses Dataverse as a data source helps build a more custom user experience. |
 
 ## Solution ideas
 
@@ -62,7 +62,7 @@ Understanding Power Apps reference architectures and exploring solution ideas ca
 | [**Property rental portal with AI-driven search and payment processing**](../solution-ideas/agent-rental-portal.md) | Build a comprehensive rental portal that uses AI-driven search capabilities and seamless payment processing. |
 | [**Revolutionize vehicle inspections with EVVIE**](../solution-ideas/app-evvie.md) | Inspect vehicles and assess damage using generative AI and Power Platform. |
 
-## Related content
+## Related resources
 
 - [Power Apps documentation](/power-apps/)
 - [Power Apps guidance](/power-apps/guidance/)

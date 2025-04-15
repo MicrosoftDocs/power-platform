@@ -20,29 +20,16 @@ ms.custom:
 
 # ​​Integrate Microsoft Fabric Lakehouse data using Dataverse virtual tables
 
-Gather data from multiple internal systems into a single source of truth in Microsoft Fabric Lakehouse, then use Dataverse virtual tables to consume the unified data in your Power Platform apps and flows. This article provides an example scenario and a generalized example architecture to illustrate how to integrate Microsoft Fabric Lakehouse data in your solutions using Microsoft Dataverse virtual tables. The architecture example can be modified for many different scenarios and industries.
+Gather data from multiple internal systems into a single source of truth in Microsoft Fabric Lakehouse, then use Dataverse virtual tables to consume the unified data in your Power Platform apps and flows. 
 
-## Example architecture diagram
+> [!TIP]
+> This article provides an example scenario and a generalized example architecture to illustrate how to integrate Microsoft Fabric Lakehouse data in your solutions using Microsoft Dataverse virtual tables. The architecture example can be modified for many different scenarios and industries.
+
+## Architecture diagram
 
 :::image type="content" source="media/app-integrate-lakehouse/app-integrate-lakehouse.png" alt-text="Architecture diagram illustrating how to integrate Microsoft Fabric Lakehouse data using Microsoft Dataverse virtual tables." border="true":::
 
-Your organization likely has data stored in silos. Use this architectural pattern to keep your data stream in place while making it available to Power Platform as virtual tables in Dataverse.
-
-## Components
-
-[**Power Platform environment**](/power-platform/admin/environments-overview): Contains the Power Platform resources that implement the user experience. The virtual tables that connect to the Fabric Lakehouse data are created in a Power Platform environment in the associated Dataverse instance.
-
-[**Microsoft Fabric**](/fabric/fundamentals/microsoft-fabric-overview): Ingests, transforms, and stores structured and unstructured data from across the organization. Similar to a Power Platform environment, Fabric uses the concept of a *workspace* to create a container for the Lakehouse, data flows, and other Fabric resources used in the solution.
-
-[**Virtual connector provider**](/power-apps/maker/data-platform/create-virtual-tables-using-connectors?tabs=fabric): Streamlines the creation of virtual tables. Virtual tables represent data that's integrated from external sources as tables in Microsoft Dataverse, without replicating the data. For each data source, a data provider must handle the interaction between Dataverse and the source and define the behavior of the virtual table. When you create a virtual table for Fabric Lakehouse data, the prebuilt Fabric virtual connector provider is the data provider. This approach uses a typical Power Platform connection and connection reference to manage the specifics of the Fabric workspace and Power Platform environment, allowing makers to build apps without the complexity of working with multiple systems.
-
-[**Power Apps**](/power-apps/): Implements the user experience of the solution. Makers can build a canvas or model-driven app using the virtual tables that represent Fabric data, adding them as a data source just like other Dataverse tables.
-
-[**Power Automate**](/power-automate/): Automates production of the monthly summary. The flow can be scheduled to run monthly and can use the same virtual tables as the app. The flow can also be triggered by events in the Fabric Lakehouse data, such as when a record is created or updated.
-
-[**Power BI**](/power-bi/): Visualizes the data in the Fabric Lakehouse. Power BI can connect to the Fabric Lakehouse directly or through a virtual table, allowing you to create reports and dashboards that combine data from multiple sources, including the Fabric Lakehouse and other Dataverse tables.
-
-## Example scenario
+## Workflow
 
 The following steps describe the workflow that's shown in the example architecture diagram:
 
@@ -54,7 +41,27 @@ The following steps describe the workflow that's shown in the example architectu
 
 1. **Account executive monthly interaction summary**: A scheduled Power Automate flow runs every month, generating a summary of customer interactions for each account executive based on the data in the same virtual tables.
 
-### Use cases
+## Components
+
+[**Power Platform environment**](/power-platform/admin/environments-overview): Contains the Power Platform resources that implement the user experience. The virtual tables that connect to the Fabric Lakehouse data are created in a Power Platform environment in the associated Dataverse instance.
+
+[**Microsoft Fabric**](/fabric/fundamentals/microsoft-fabric-overview): Ingests, transforms, and stores structured and unstructured data from across the organization. Similar to a Power Platform environment, Fabric uses the concept of a *workspace* to create a container for the Lakehouse, data flows, and other Fabric resources used in the solution.
+
+[**Virtual connector provider**](/power-apps/maker/data-platform/create-virtual-tables-using-connectors?tabs=fabric): Streamlines the creation of virtual tables. Virtual tables represent data that's integrated from external sources as tables in Microsoft Dataverse, without replicating the data. For each data source, a data provider must handle the interaction between Dataverse and the source and define the behavior of the virtual table. When you create a virtual table for Fabric Lakehouse data, the prebuilt Fabric virtual connector provider is the data provider. This approach uses a typical Power Platform connection and connection reference to manage the specifics of the Fabric workspace and Power Platform environment, allowing makers to build apps without the complexity of working with multiple systems.
+
+:::image type="content" source="media/app-integrate-lakehouse/app-integrate-lakehouse-vt.png" alt-text="Screenshot of connecting data source to Dataverse" border="true" lightbox="media/app-integrate-lakehouse/app-integrate-lakehouse-vt.png":::
+
+[**Power Apps**](/power-apps/): Implements the user experience of the solution. Makers can build a canvas or model-driven app using the virtual tables that represent Fabric data, adding them as a data source just like other Dataverse tables.
+
+[**Power Automate**](/power-automate/): Automates production of the monthly summary. The flow can be scheduled to run monthly and can use the same virtual tables as the app. The flow can also be triggered by events in the Fabric Lakehouse data, such as when a record is created or updated.
+
+[**Power BI**](/power-bi/): Visualizes the data in the Fabric Lakehouse. Power BI can connect to the Fabric Lakehouse directly or through a virtual table, allowing you to create reports and dashboards that combine data from multiple sources, including the Fabric Lakehouse and other Dataverse tables.
+
+## Scenario details
+
+Your organization likely has data stored in silos. Use this architectural pattern to keep your data stream in place while making it available to Power Platform as virtual tables in Dataverse.
+
+### Potential use cases
 
 In this example, customer interaction data from multiple internal systems is centralized in Fabric. A "customer 360" app gives account executives a complete view of all their organization's interactions with their customers. Because the app uses virtual tables to access the data in the Fabric Lakehouse, the account executives can view and analyze the data without needing to know where it came from or how it was transformed.
 
@@ -87,6 +94,14 @@ Here are other common use cases:
 
 - **Implement a consistent information architecture**: Data that comes from multiple systems often has inconsistent metadata. For example, one system might mark an interaction as "Successful," while another system stores it as "Completed." An app that presents this inconsistent data to a user could provide a poor experience. During the ingestion process, use the dataflow to unify and harmonize the data to present a consistent experience for users.
 
+## Contributors
+
+_Microsoft maintains this article. The following contributors wrote this article._
+
+Principal authors:
+
+- **[Ravi Chada](https://www.linkedin.com/in/ravi-chada/)**, Principal Program Manager
+
 ## Next steps
 
 Review how to [build apps and automations, and drive action with insights from Microsoft Fabric](/power-apps/maker/data-platform/azure-synapse-link-build-apps-with-fabric).
@@ -101,7 +116,7 @@ Follow these high-level steps to set up a solution architecture that uses virtua
 
 1. Create a canvas or model-driven app. [Connect to Microsoft Dataverse](/power-apps/maker/canvas-apps/connections/connection-common-data-service) to add your virtual table as a data source for the app.
 
-## Related content
+## Related resources
 
 - [Get started with virtual tables](/power-apps/developer/data-platform/virtual-entities/get-started-ve)
 - [Limitations of virtual tables](/power-apps/developer/data-platform/virtual-entities/get-started-ve#limitations-of-virtual-tables)

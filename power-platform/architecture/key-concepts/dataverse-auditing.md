@@ -23,13 +23,14 @@ ms.custom:
 
 # Dataverse auditing
 
-Dataverse auditing allows your organization to track data changes, user activities, and system and business events to ensure compliance and security. This article provides example scenarios and a generalized example architecture to illustrate Dataverse auditing. The architecture example can be modified for many different scenarios and industries.
+Dataverse auditing allows your organization to track data changes, user activities, and system and business events to ensure compliance and security. 
 
-## Overview of Dataverse auditing
+> [!TIP]
+> The article provides an example scenario and visual representation of how to establish Dataverse auditing. This solution is a generalized example scenario architecture, which can be used for many different scenarios and industries.
 
 Dataverse auditing is a feature of Microsoft Dataverse that allows your organization to track and record user activities, system events, and changes to data. It helps ensure data integrity, security, and compliance by capturing operations such as CRUD (create, read, update, and delete) actions, modifications of security roles, and user access to the system. By maintaining a historical log of these activities, your organization can monitor system usage, detect unauthorized access, and meet regulatory requirements around the handling of sensitive data. It's essential for businesses that require transparency in data changes, accountability in user actions, and insights into system performance to maintain operational efficiency.
 
-## Example architecture diagram
+## Architecture diagram
 
 :::image type="content" source="media/dataverse-auditing/dataverse-architecture.png" alt-text="Diagram of Dataverse auditing architecture showing data and business event auditing with Power Apps, Power Automate, and Power BI." lightbox="media/dataverse-auditing/dataverse-architecture.png":::
 
@@ -67,11 +68,34 @@ This scenario involves the following components:
 
 Different user personas in the organization use audit data in different ways and for different purposes.
 
-- **Employees** can view their own audit logs in a canvas app to learn who else accessed their data and report unauthorized access. They receive notifications by email if their data is modified.
+This section highlights the auditing needs of different user personas for this use case and how they consume audit data.
 
-- **Security teams** monitor audit logs collected in Power BI dashboards to look for suspicious activity and analyze trends in security incidents. Unusual activities, such as bulk data exports or unauthorized changes to security roles, trigger Power Automate alerts to the security team.
+#### Employees
 
-- **Environment admins** use Power BI dashboards to monitor who accessed or modified sensitive records such as financial transactions or customer data. They review audit logs by entity, user, and date in a model-driven app to identify potential security incidents, and set up Power Automate alerts for unauthorized modifications.
+**Employees** can view their own audit logs in a canvas app to learn who else accessed their data and report unauthorized access. They receive notifications by email if their data is modified.
+
+| Role | Employees accessing PowerApps and Dataverse for business needs |
+|----------|----------------------------------------------------------------|
+| **How they use audit logs** | - View who accessed their data and when<br>- Receive notifications if their records are modified<br>- Report unauthorized access via canvas apps |
+| **Components used** | - Canvas apps to view personal/self-service audit logs within canvas apps and report issues<br>- Email notifications if their data is accessed by unauthorized users |
+
+#### Security teams
+
+**Security teams** monitor audit logs collected in Power BI dashboards to look for suspicious activity and analyze trends in security incidents. Unusual activities, such as bulk data exports or unauthorized changes to security roles, trigger Power Automate alerts to the security team.
+
+| Role | Detects security threats, investigates anomalies, and prevents data breaches |
+|----------|----------------------------------------------------------------|
+| **How they use audit logs** | - Identify suspicious access patterns (for example, users accessing data outside their department)<br>- Investigate unauthorized changes to security roles and permissions<br>- Track user sessions and login locations for anomalies |
+| **Components used** | - Power Automate to trigger for unusual activities<br>- Model-driven app and built-in dashboards for managing policies and regulations<br>- Power BI dashboards for reviewing access logs |
+
+#### Environment admins
+
+**Environment admins** use Power BI dashboards to monitor who accessed or modified sensitive records such as financial transactions or customer data. They review audit logs by entity, user, and date in a model-driven app to identify potential security incidents, and set up Power Automate alerts for unauthorized modifications.
+
+| Role | Manages Dataverse environments and ensures compliance with security policies |
+|----------|----------------------------------------------------------------|
+| **How they use audit logs** | - Monitor who accessed or modified sensitive records (for example, financial transactions, customer data)<br>- Detect bulk data exports or deletions that might indicate data breaches<br>- Audit Power Apps access logs to ensure compliance with policies |
+| **Components used** | - Power BI dashboard showing user access logs and data changes<br>- Model-driven app to review audit logs by entity, user, and date<br>- Automated alerts for unauthorized modifications |
 
 ## Business event auditing
 
@@ -138,11 +162,10 @@ The workflow for business event auditing in the example loan approval process in
 - **Trigger**: Compliance officers or auditors request a report on loan approvals and modifications.
 - **Audit action**: All audit logs related to the loan application are retrieved for review.
 
-## Considerations
+## Contributors
 
-[!INCLUDE [pp-arch-ppwa-link](../../includes/pp-arch-ppwa-link.md)]
+_Microsoft maintains this article. The following contributors wrote this article._
 
-## Next step
+Principal authors:
 
-> [!div class="nextstepaction"]
-> [Distributed tracing across multiple services in Power Platform](./distributed-tracing.md)
+- **[Rasika Chaudhary](https://www.linkedin.com/in/rasika-chaudhary-a2348b28/)**, Principal Program Manager

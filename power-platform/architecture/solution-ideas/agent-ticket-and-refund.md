@@ -42,7 +42,7 @@ The following architecture diagram shows how a user-based and an autonomous Copi
 
 :::image type="content" source="media/ticket-refund/ticket-refund-overall.png" alt-text="Architecture diagram displaying two agents' use of the same Power Automate flows, Azure services, Microsoft 365, and Dataverse assets." border="true" lightbox="media/ticket-refund/ticket-refund-overall.png":::
 
-## Components
+## Workflow
 
 **Microsoft Teams integration**: Employees can interact with a Copilot Studio agent in Microsoft Teams for seamless chat support. They can initiate ticket refund processes without accessing legacy systems directly.
 
@@ -52,7 +52,7 @@ The following architecture diagram shows how a user-based and an autonomous Copi
 
 **Governance and compliance**: Azure Key Vault secures credentials and sensitive data, ensuring a reliable and secure automation environment.
 
-## Workflow
+## Components
 
 The following steps describe the workflow that's shown in the example architecture diagrams.
 

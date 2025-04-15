@@ -17,27 +17,16 @@ search.audienceType:
 
 # Streamline document processing with AI Builder
 
-Processing documents is often a manual, time-consuming task. With Power Automate and AI Builder, you can streamline document processing and automate data extraction from documents such as forms, invoices, and purchase orders. This article provides an example scenario and a generalized example architecture to illustrate how to process documents with Power Automate and AI Builder. The architecture example can be modified for many different scenarios and industries.
+Processing documents is often a manual, time-consuming task. With Power Automate and AI Builder, you can streamline document processing and automate data extraction from documents such as forms, invoices, and purchase orders.
 
-## Example architecture diagram
+> [!TIP]
+> The article provides an example scenario and visual representation of how to process documents with AI Builder. This solution is a generalized example scenario architecture, which can be used for many different scenarios and industries.
+
+## Architecture diagram
 
 :::image type="content" source="media/ai-doc-processing/ai-doc-processing.png" alt-text="Architecture diagram illustrating document processing with AI Builder, Power Automate, Dataverse, Power Apps, and Power BI." border="true" lightbox="media/ai-doc-processing/ai-doc-processing.png":::
 
-This architecture streamlines and automates document-intensive business processes, using AI Builder to reduce manual data entry, minimize errors, and accelerate decision-making workflows. Use cases include automating invoice processing, purchase order approvals, and rebate form processing.
-
-## Components
-
-[**AI Builder**](/ai-builder/overview): Extracts key data from documents using prebuilt or custom models.
-
-[**Power Automate**](/power-automate/): Orchestrates workflows for document processing.
-
-[**Microsoft Dataverse**](/power-apps/maker/data-platform/): Serves as the central data store for extracted document data and tracks document progress through the business process.
-
-[**Power Apps**](/power-apps/): Facilitates human review and data corrections.
-
-[**Power BI**](/power-bi/): Delivers analytics and insights into the document processing workflow.
-
-## Example scenario
+## Workflow
 
 The following steps describe the workflow that's shown in the example architecture diagram:
 
@@ -52,6 +41,22 @@ The following steps describe the workflow that's shown in the example architectu
 1. **Feedback to sender**: After the review, a Power Automate workflow sends an email to the sender with the approval or rejection status of the submitted document.
 
 1. **Reporting and analytics**: Power BI dashboards provide insights into the document processing workflow, including metrics such as processing time, number of documents reviewed, and approval rates.
+
+## Components
+
+[**AI Builder**](/ai-builder/overview): Extracts key data from documents using prebuilt or custom models.
+
+[**Power Automate**](/power-automate/): Orchestrates workflows for document processing.
+
+[**Microsoft Dataverse**](/power-apps/maker/data-platform/): Serves as the central data store for extracted document data and tracks document progress through the business process.
+
+[**Power Apps**](/power-apps/): Facilitates human review and data corrections.
+
+[**Power BI**](/power-bi/): Delivers analytics and insights into the document processing workflow.
+
+## Scenario details
+
+This architecture streamlines and automates document-intensive business processes, using AI Builder to reduce manual data entry, minimize errors, and accelerate decision-making workflows. Use cases include automating invoice processing, purchase order approvals, and rebate form processing.
 
 ## Considerations
 
@@ -99,7 +104,7 @@ The following steps describe the workflow that's shown in the example architectu
 
 - **Accountability**: Human-in-the-loop review ensures accountability for critical decisions.
 
-## Related content
+## Related resources
 
 - [Introduction to desktop flows](/power-automate/desktop-flows/introduction)
 - [Power BI documentation](/power-bi)

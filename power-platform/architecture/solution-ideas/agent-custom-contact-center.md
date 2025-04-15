@@ -21,9 +21,6 @@ ms.custom:
 - ai-seo-date:04/06/2025
 ---
 
-<!-- comment from Manuela: This solution explains how to integrate with a non-Microsoft/third party contact center solution. Based on acrolinx guidance I've replaced third-party with non-Microsoft and sometimes with "other database" but let me know if there is a different way of phrasing this -->
-<!-- EDITOR'S NOTE: You're fine. :) https://learn.microsoft.com/en-us/product-style-guide-msft-internal/a_z_names_terms/t/third-party -->
-
 # Custom contact center solution with Copilot Studio agent
 
 In this article, you learn about a national banking company that uses Microsoft and other platforms and technologies to enhance the efficiency of employees in its contact center and improve customer experiences. The solution integrates a non-Microsoft contact center and data sources with Microsoft Copilot Studio, Microsoft Dataverse, and Azure Data Lake Storage to provide a seamless experience for employees and customers.
@@ -86,7 +83,7 @@ The solution described in this article includes the following components.
 
 [**Power BI dashboards**](/power-bi/fundamentals/power-bi-overview): Visualize operational and customer-centric data to provide actionable insights. Power BI integrates seamlessly with Dataverse and can bring data from other storage sources into reports.
 
-## Use case
+## Scenario details
 
 This use case illustrates how a national banking company enhances customer experience by improving customer service, information access, and conversation processes through faster information retrieval for their employees.
 

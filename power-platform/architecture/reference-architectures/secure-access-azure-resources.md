@@ -23,27 +23,16 @@ ms.custom:
 
 # Secure Power Platform access to Azure resources
 
-Power Platform supports the use of Azure Virtual Network to access resources inside your virtual network without exposing them to the public internet. This article provides an example scenario and a generalized example architecture to illustrate how to secure Power Platform access to Azure resources with Azure Virtual Network. The architecture example can be modified for many different scenarios and industries.
+Power Platform supports the use of Azure Virtual Network to access resources inside your virtual network without exposing them to the public internet. 
+
+> [!TIP]
+> This article provides an example scenario and a generalized example architecture to illustrate how to secure Power Platform access to Azure resources with Azure Virtual Network. The architecture example can be modified for many different scenarios and industries.
 
 ## Example architecture diagram
 
 :::image type="content" source="media/secure-access-azure-resources/secure-architecture.png" alt-text="Architecture diagram showing secure Power Platform access to Azure resources." lightbox="media/secure-access-azure-resources/secure-architecture.png":::
 
-Organizations with high security needs must ensure safe communication between internal systems and cloud services. Use available security controls and integrate virtual networks between Power Platform and Azure resources as part of your solution architecture.
-
-## Components
-
-**Power Platform environment**: Contains Power Platform resources. The environment is the boundary for data access and security. Power Platform environments can be configured to use Azure Virtual Network integration, which allows Power Platform resources to communicate with Azure resources in a virtual network.
-
-**Power Apps**: Implements the solution's user experience. Users sign in to a canvas or model-driven app using Microsoft Entra ID.
-
-**Power Platform custom connectors**: Define the operations that are available to Power Platform applications from the services they connect to.
-
-[**Azure Virtual Network**](/azure/virtual-network/virtual-networks-overview): Supports hybrid connectivity with on-premises and other Azure networking capabilities to provide a virtual network in the cloud. Virtual networks can delegate a subnetwork to Power Platform resources, allowing Power Platform and Azure resources to interact over a private network without sending traffic over public networks.
-
-[**Azure Key Vault**](/azure/key-vault/general/basic-concepts): Stores the credentials required to connect to back-end APIs using OAuth. Similar to the back-end APIs, Power Platform resources access the Azure Key Vault through the virtual network.
-
-## Example scenario
+## Workflow
 
 The following steps describe the workflow that's shown in the example architecture diagram:
 
@@ -57,7 +46,21 @@ The following steps describe the workflow that's shown in the example architectu
 
 1. **Back-end API search**: The back-end API receives the search request and performs a database search in the context of the user who made the request.
 
-### Use case
+## Components
+
+**Power Platform environment**: Contains Power Platform resources. The environment is the boundary for data access and security. Power Platform environments can be configured to use Azure Virtual Network integration, which allows Power Platform resources to communicate with Azure resources in a virtual network.
+
+**Power Apps**: Implements the solution's user experience. Users sign in to a canvas or model-driven app using Microsoft Entra ID.
+
+**Power Platform custom connectors**: Define the operations that are available to Power Platform applications from the services they connect to.
+
+[**Azure Virtual Network**](/azure/virtual-network/virtual-networks-overview): Supports hybrid connectivity with on-premises and other Azure networking capabilities to provide a virtual network in the cloud. Virtual networks can delegate a subnetwork to Power Platform resources, allowing Power Platform and Azure resources to interact over a private network without sending traffic over public networks.
+
+[**Azure Key Vault**](/azure/key-vault/general/basic-concepts): Stores the credentials required to connect to back-end APIs using OAuth. Similar to the back-end APIs, Power Platform resources access the Azure Key Vault through the virtual network.
+
+## Scenario details
+
+Organizations with high security needs must ensure safe communication between internal systems and cloud services. Use available security controls and integrate virtual networks between Power Platform and Azure resources as part of your solution architecture.
 
 Implementing network security controls between application components often presents challenges, especially when they're at different levels of technology abstraction. With Azure Virtual Network, you can build solutions with Power Platform and Azure components without the complexity of a typical multi-network solution. The example architecture uses virtual network subnet delegation to let Power Platform and Azure resources work together in solutions that use the strengths of both products without sacrificing simplicity and security.
 
@@ -85,6 +88,15 @@ Implementing network security controls between application components often pres
 
 **Collect performance data**: The Azure Monitor service collects and aggregates metrics and logs from every component of your system, providing you with a view of availability, performance, and resilience. Learn more in [Monitor Azure Virtual Network](/azure/virtual-network/monitor-virtual-network).
 
+## Contributors
+
+_Microsoft maintains this article. The following contributors wrote this article._
+
+Principal authors:
+
+- **[Rahul Kannathusseril](https://www.linkedin.com/in/lowcodeprodev/)**, Principal Program Manager
+- **[Henry Luo](https://www.linkedin.com/in/henryluopp/)**, Senior Program Manager
+
 ## Next steps
 
 Follow these high-level steps to build an end-to-end solution:
@@ -107,7 +119,7 @@ Follow these high-level steps to build an end-to-end solution:
 
 1. Create a canvas app in Power Apps to provide a search interface.
 
-## Related content
+## Related resources
 
 - [Virtual Network support white paper](/power-platform/admin/virtual-network-support-whitepaper)
 - [Power Platform Well-Architected Security recommendations](/power-platform/well-architected/security)

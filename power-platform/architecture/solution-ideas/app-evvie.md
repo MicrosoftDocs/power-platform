@@ -27,18 +27,6 @@ For a demo and more information about EVVIE, visit [aka.ms/EVVIE](https://aka.ms
 
 :::image type="content" source="media/app-evvie/evvie.png" alt-text="Architecture diagram of the Enterprise Visual Vehicle Inspection Engine's use of low-code and pro-code to drive AI-assisted vehicle inspection." border="true" lightbox="media/app-evvie/evvie.png":::
 
-## Components
-
-[**Microsoft Dataverse**](/power-apps/maker/data-platform/): All data collected as part of vehicle inspections, such as photos of damage, severity level ranking, and descriptions, is stored in Dataverse.
-
-[**Power Apps**](/power-apps/): Staff in the field who inspect the vehicles and the administrative staff who review the inspections use apps built in Power Apps, Microsoft's no-code/low-code app development framework.
-
-[**Custom connector**](/connectors/custom-connectors/): A custom connector lets the EVVIE mobile vehicle inspection app (used by staff inspecting vehicles in the field) call a back-end service that uses advanced AI to assess the provided photos.
-
-[**Azure Functions**](/azure/azure-functions/): Azure Functions, Microsoft's event-driven serverless compute platform, act as a web API that the EVVIE app can call using an HTTP request through the custom connector. The Azure function app receives the images through the API call, uses an advanced AI model to assess damage, and returns the assessment to the app.
-
-[**Azure OpenAI Service**](/azure/ai-services/openai/overview): EVVIE uses a multimodal AI model to assess the damage in provided images and classify it into three fields: severity level (1-5), area of vehicle (such as doors, windshield, front bumper), and description of damage. While any future multimodal language model can be used (that is, "o1" or "o3" once they're widely available), GPT-4o is used as of the time of this writing.
-
 ## Workflow
 
 EVVIE uses a unique blend of Power Platform and Microsoft Azure resources to automate the vehicle inspection process using advanced AI models. At a high level, EVVIE's internal process is as follows:
@@ -53,7 +41,19 @@ EVVIE uses a unique blend of Power Platform and Microsoft Azure resources to aut
 
 1. A model-driven with custom pages lets administrators review vehicle inspection data.
 
-## Use case
+## Components
+
+[**Microsoft Dataverse**](/power-apps/maker/data-platform/): All data collected as part of vehicle inspections, such as photos of damage, severity level ranking, and descriptions, is stored in Dataverse.
+
+[**Power Apps**](/power-apps/): Staff in the field who inspect the vehicles and the administrative staff who review the inspections use apps built in Power Apps, Microsoft's no-code/low-code app development framework.
+
+[**Custom connector**](/connectors/custom-connectors/): A custom connector lets the EVVIE mobile vehicle inspection app (used by staff inspecting vehicles in the field) call a back-end service that uses advanced AI to assess the provided photos.
+
+[**Azure Functions**](/azure/azure-functions/): Azure Functions, Microsoft's event-driven serverless compute platform, act as a web API that the EVVIE app can call using an HTTP request through the custom connector. The Azure function app receives the images through the API call, uses an advanced AI model to assess damage, and returns the assessment to the app.
+
+[**Azure OpenAI Service**](/azure/ai-services/openai/overview): EVVIE uses a multimodal AI model to assess the damage in provided images and classify it into three fields: severity level (1-5), area of vehicle (such as doors, windshield, front bumper), and description of damage. While any future multimodal language model can be used (that is, "o1" or "o3" once they're widely available), GPT-4o is used as of the time of this writing.
+
+## Scenario details
 
 EVVIE helps organizations with large vehicle fleets manage regular inspections and maintenance. Routine inspections take time and distract staff from more valuable work.  
 
@@ -111,6 +111,15 @@ The interface presented to administrative staff for reviewing these inspections 
 
 **Controlled generative AI:** The generative AI models employed by EVVIE use features that constrain their assessments into predefined templates. This design ensures that the AI provides specific, factual responses as guided by the developer, limiting creativity and focusing on accurate, consistent assessments.
 
-## Related content
+## Contributors
+
+_Microsoft maintains this article. The following contributors wrote this article._
+
+Principal authors:
+
+- **[Tim Hanewich](https://www.linkedin.com/in/timhanewich/)**, Power Platform Technical Specialist
+- **[Kelly Cason](https://www.linkedin.com/in/kellycason/)**, Business Applications Technical Specialist
+
+## Next steps
 
 For a demo video, further explanation of functionality, architecture, source code, and more, visit EVVIE on GitHub at [aka.ms/EVVIE](https://github.com/microsoft/SLG-Business-Applications/tree/main/demos/EVVIE).

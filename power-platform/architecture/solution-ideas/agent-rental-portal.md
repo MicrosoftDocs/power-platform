@@ -26,26 +26,6 @@ In this article, you learn about a rental property portal that provides AI-drive
 
 :::image type="content" source="media/agent-rental-portal/agent-property-rental.png" alt-text="Architecture diagram of a property rental portal with an AI-driven search agent and payment processing." border="true" lightbox="media/agent-rental-portal/agent-property-rental.png":::
 
-The Contoso rental property system provides an integrated platform for managing rental property listings, reservations, and payments. Users interact with the Power Pages portal to browse listings and make reservations. AI Builder models in Copilot Studio analyze user interactions and provide personalized property recommendations. Azure Functions handle payment processing, and Dataverse manages listing and reservation data. Automated workflows in Power Automate ensure seamless integration between the portal and backend services, while Power BI dashboards provide real-time insights into listing performance and reservation trends.
-
-## Components
-
-[**Microsoft Dataverse**](/power-apps/maker/data-platform/): A cloud-based storage space that lets you securely store and manage data used by business applications. It stores listing and reservation data, including property details, user information, and reservation statuses.
-
-[**Power Apps**](/power-apps/): A suite of apps, services, connectors, and a data platform that provides a rapid application development environment to build custom apps for your business needs. It's used to create custom applications for managing rental property listings and tracking tenant interactions efficiently.
-
-[**Power Pages**](/power-pages/): A platform for building secure, low-code websites. Lets users browse listings, make reservations, and view personalized property recommendations. Users authenticate through Power Pages, ensuring secure access to their data.
-
-[**AI Builder prompts in Copilot Studio**](/ai-builder/use-a-custom-prompt-in-mcs): AI Builder models analyze user interactions and provide personalized property recommendations. They enhance the user experience by offering tailored property suggestions based on user behavior and preferences.
-
-[**Azure Functions**](/azure/azure-functions/functions-overview?pivots=programming-language-csharp), [Azure Key Vault](/azure/key-vault/), [Azure SQL](/azure/azure-sql/), [Application Insights](/azure/azure-monitor/app/app-insights-overview): Azure Functions is an event-driven serverless compute platform that runs on demand and at scale in the cloud. It handles payment processing securely, integrating with payment gateways like Stripe. Azure Functions uses managed identities to securely access the payment database. Azure Key Vault stores sensitive secrets such as the Stripe authentication key.
-
-[**Power Automate**](/power-automate/): A service that helps automate workflows between apps and services. It ensures seamless integration between the portal, Azure Functions, and Dataverse. It automates tasks such as calling the Payment API using a custom connector, sending confirmation emails, and updating reservation statuses.
-
-[**Power BI**](/power-bi/): A business analytics service that provides interactive visualizations and business intelligence capabilities. It provides insights into listing performance, user interactions, and reservation trends. Property managers use dashboards to make data-driven decisions. Data held in Application Insights and Azure SQL is joined with Dataverse reservation and property data.
-
-[**GitHub Actions**](/power-platform/alm/devops-github-actions): Used for continuous integration and continuous delivery (CI/CD), automating workflows to ensure consistent and efficient testing, validation, and deployment of changes. Automated builds and tests are triggered on code pushes, successful builds are deployed to staging and production environments, and unit tests are integrated into the pipelines to maintain code quality and catch issues early.
-
 ## Workflow
 
 The following steps describe the workflow that's shown in the example architecture diagram.
@@ -125,6 +105,28 @@ The following steps describe the workflow that's shown in the example architectu
 1. **Power BI reporting**
     - Reports use Fabric to aggregate telemetry data from the portal and APIs and listing and reservation data from Dataverse.
 
+## Components
+
+[**Microsoft Dataverse**](/power-apps/maker/data-platform/): A cloud-based storage space that lets you securely store and manage data used by business applications. It stores listing and reservation data, including property details, user information, and reservation statuses.
+
+[**Power Apps**](/power-apps/): A suite of apps, services, connectors, and a data platform that provides a rapid application development environment to build custom apps for your business needs. It's used to create custom applications for managing rental property listings and tracking tenant interactions efficiently.
+
+[**Power Pages**](/power-pages/): A platform for building secure, low-code websites. Lets users browse listings, make reservations, and view personalized property recommendations. Users authenticate through Power Pages, ensuring secure access to their data.
+
+[**AI Builder prompts in Copilot Studio**](/ai-builder/use-a-custom-prompt-in-mcs): AI Builder models analyze user interactions and provide personalized property recommendations. They enhance the user experience by offering tailored property suggestions based on user behavior and preferences.
+
+[**Azure Functions**](/azure/azure-functions/functions-overview?pivots=programming-language-csharp), [Azure Key Vault](/azure/key-vault/), [Azure SQL](/azure/azure-sql/), [Application Insights](/azure/azure-monitor/app/app-insights-overview): Azure Functions is an event-driven serverless compute platform that runs on demand and at scale in the cloud. It handles payment processing securely, integrating with payment gateways like Stripe. Azure Functions uses managed identities to securely access the payment database. Azure Key Vault stores sensitive secrets such as the Stripe authentication key.
+
+[**Power Automate**](/power-automate/): A service that helps automate workflows between apps and services. It ensures seamless integration between the portal, Azure Functions, and Dataverse. It automates tasks such as calling the Payment API using a custom connector, sending confirmation emails, and updating reservation statuses.
+
+[**Power BI**](/power-bi/): A business analytics service that provides interactive visualizations and business intelligence capabilities. It provides insights into listing performance, user interactions, and reservation trends. Property managers use dashboards to make data-driven decisions. Data held in Application Insights and Azure SQL is joined with Dataverse reservation and property data.
+
+[**GitHub Actions**](/power-platform/alm/devops-github-actions): Used for continuous integration and continuous delivery (CI/CD), automating workflows to ensure consistent and efficient testing, validation, and deployment of changes. Automated builds and tests are triggered on code pushes, successful builds are deployed to staging and production environments, and unit tests are integrated into the pipelines to maintain code quality and catch issues early.
+
+## Scenario details
+
+The Contoso rental property system provides an integrated platform for managing rental property listings, reservations, and payments. Users interact with the Power Pages portal to browse listings and make reservations. AI Builder models in Copilot Studio analyze user interactions and provide personalized property recommendations. Azure Functions handle payment processing, and Dataverse manages listing and reservation data. Automated workflows in Power Automate ensure seamless integration between the portal and backend services, while Power BI dashboards provide real-time insights into listing performance and reservation trends.
+
 ## Considerations
 
 [!INCLUDE [pp-arch-ppwa-link](../../includes/pp-arch-ppwa-link.md)]
@@ -189,6 +191,14 @@ The following steps describe the workflow that's shown in the example architectu
 
 **AI interaction design:** Natural, intuitive interactions with AI are designed. Fallback mechanisms are included to handle misunderstandings and provide alternative suggestions or support.
 
-## Reference implementation
+## Contributors
 
-A sample architecture implementation is available for reference on [GitHub](https://aka.ms/pp/contoso-real-estate).
+_Microsoft maintains this article. The following contributors wrote this article._
+
+Principal authors:
+
+- **[Scott Durow](https://www.linkedin.com/in/scottdurow/)**, Cloud Developer Advocate
+
+## Next steps
+
+A sample implementation of this solution idea is available for reference on [GitHub](https://aka.ms/pp/contoso-real-estate).

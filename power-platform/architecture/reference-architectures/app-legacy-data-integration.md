@@ -17,25 +17,16 @@ search.audienceType:
 
 # Integrate legacy data with Power Automate and SharePoint
 
-Integrating data from your legacy systems with modern platforms can be complex and challenging. This article provides an example scenario and a generalized example architecture to illustrate how to automate retrieval, centralize storage, and enhance analytics of your legacy data using Power Automate, SharePoint, Dataverse, Power BI, and Microsoft Teams. The architecture example can be modified for many different scenarios and industries.
+Integrating data from your legacy systems with modern platforms can be complex and challenging. 
 
-## Example architecture diagram
+> [!TIP]
+> This article provides an example scenario and a generalized example architecture to illustrate how to automate retrieval, centralize storage, and enhance analytics of your legacy data using Power Automate, SharePoint, Dataverse, Power BI, and Microsoft Teams. The architecture example can be modified for many different scenarios and industries.
+
+## Architecture diagram
 
 :::image type="content" source="media/app-legacy-data/app-legacy-data.png" alt-text="Architecture diagram illustrating a legacy data integration solution." border="true" lightbox="media/app-legacy-data/app-legacy-data.png":::
 
-Legacy systems often present challenges such as lack of integration with modern platforms, the need to extract data manually, and limited reporting capabilities. These hurdles lead to inefficiencies, delayed decision-making, and high operational overhead. This example architecture modernizes legacy workflows by automating data retrieval, centralizing storage, and enhancing analytics. Decision-makers gain real-time insights through Power BI dashboards that are accessible in Microsoft Teams, reducing manual effort and improving business agility.
-
-## Components
-
-[**Unattended desktop flows in Power Automate**](/power-automate/desktop-flows/run-unattended-desktop-flows): Automate data extraction from legacy systems.
-
-**SharePoint or Dataverse**: Central repository for data and reports, ensuring easy accessibility and version control. Dataverse is the preferred choice if you need more complex relational data.
-
-[**Power BI**](/power-bi/): Visualizes and consolidates data in interactive dashboards.
-
-**Microsoft Teams**: Provides access to insights and dashboards in a collaborative environment.
-
-## Example scenario
+## Workflow
 
 The following steps describe the integration workflow that's shown in the example architecture diagram:
 
@@ -50,6 +41,20 @@ The following steps describe the integration workflow that's shown in the exampl
 1. **Visualization in Power BI**: Power BI consolidates and visualizes the data in dashboards and reports.
 
 1. **Access in Microsoft Teams**: Reports and dashboards are integrated into Microsoft Teams, providing real-time access for decision-makers in their collaboration environment.
+
+## Components
+
+[**Unattended desktop flows in Power Automate**](/power-automate/desktop-flows/run-unattended-desktop-flows): Automate data extraction from legacy systems.
+
+**SharePoint or Dataverse**: Central repository for data and reports, ensuring easy accessibility and version control. Dataverse is the preferred choice if you need more complex relational data.
+
+[**Power BI**](/power-bi/): Visualizes and consolidates data in interactive dashboards.
+
+**Microsoft Teams**: Provides access to insights and dashboards in a collaborative environment.
+
+## Scenario details
+
+Legacy systems often present challenges such as lack of integration with modern platforms, the need to extract data manually, and limited reporting capabilities. These hurdles lead to inefficiencies, delayed decision-making, and high operational overhead. This example architecture modernizes legacy workflows by automating data retrieval, centralizing storage, and enhancing analytics. Decision-makers gain real-time insights through Power BI dashboards that are accessible in Microsoft Teams, reducing manual effort and improving business agility.
 
 ## Considerations
 

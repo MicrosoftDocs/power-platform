@@ -19,25 +19,16 @@ search.audienceType:
 
 # Integrate Power Platform with SAP for data management
 
-Integrating Microsoft Power Platform with SAP enhances your oranization's data management and automation capabilities. This article provides an example scenario and a generalized example architecture to illustrate how to connect these two platforms seamlessly. The architecture example can be modified for many different scenarios and industries.
+Integrating Microsoft Power Platform with SAP enhances your oranization's data management and automation capabilities.
 
-## Example architecture diagram
+> [!TIP]
+> This article provides an example scenario and a generalized example architecture to illustrate how to connect these two platforms seamlessly. The architecture example can be modified for many different scenarios and industries.
+
+## Architecture diagram
 
 :::image type="content" source="media/arch-pattern-sap/architecture.png" alt-text="Architecture diagram that shows a Power Platform integration with a typical SAP landing zone." lightbox="media/arch-pattern-sap/architecture.png":::
 
-## Components
-
-**Power Apps**: A low-code platform that lets you create custom business applications without extensive coding knowledge, using a drag-and-drop interface to add controls and connect to data sources. This approach allows for highly customizable, pixel-perfect apps that can be used across web and mobile devices.
-
-**Power Automate**: A low-code/no-code platform that lets you automate repetitive tasks and streamline workflows across applications and services.
-
-**SAP ERP connector** for Power Platform: Uses remote procedure calls (RPC) with a business application programming interface (BAPI) to connect your Power Platform flows and apps to any SAP ERP system, including SAP ECC and SAP S/4HANA, through an on-premises data gateway. The connector supports secure authentication methods such as SAP Basic, Windows (Kerberos), and Microsoft Entra ID, making it easier for your organization to develop modern apps and automate business processes using its SAP data.
-
-**On-premises data gateway**: A locally installed Windows client application that acts as a bridge between your on-premises data sources and services in the Microsoft Cloud. It provides quick and secure data transfer without requiring any inbound ports to your network, only outbound ports to reach the Azure web service to which the gateway connects. The gateway supports multiple services, including Power BI, Power Apps, Power Automate, Azure Analysis Services, and Azure Logic Apps, allowing your organization to keep its databases and other data sources on-premises while securely using that data in cloud services.
-
-**Desktop flows** in Power Automate: Use robotic process automation (RPA) to automate repetitive desktop tasks. Desktop flows can interact with both modern and legacy applications, allowing users to streamline their workflows and improve efficiency. In the rare and special instances where connectors don't meet your requirements, consider using desktop flows.
-
-## Example scenario
+## Workflow
 
 The example architecture diagram shows a full solution, but the flow between Power Platform and SAP is straightforward. The following steps describe the workflow:
 
@@ -51,25 +42,17 @@ The example architecture diagram shows a full solution, but the flow between Pow
 
 1. **SAP OData connector**: Performs operations like create, read, update, and delete actions and invokes functions on the service.
 
-### Use cases
-
-Of the many use cases for connecting to SAP from Power Platform, two are primary:
-
-- **Task-based straightforward user experience:** The SAP UI is powerful but can be complicated. The example scenario lets the user focus on one to a few key tasks in a modern canvas app experience.
-
-- **"Keep the core clean" principle:** You can use Power Platform to access SAP and keep external flows and rules that can't be embedded cleanly in SAP. This approach ensures that flows and rules stay safely where they belong and don't break SAP core upgrades.
-
-## Alternative connectivity methods
+### Alternative connectivity methods
 
 An on-premises data gateway isn't the only way to connect to SAP from Power Platform. You can also use an Azure virtual network or virtual tables.
 
-### Virtual network
+#### Virtual network
 
 The virtual network data gateway lets you connect your Azure and other data services to Microsoft Fabric and Power Platform to securely communicate with the data source, execute queries, and transmit results back to the service. This method ensures a secure, streamlined connection, enabling efficient data handling and processing.
 
 Because the virtual network data gateway transmits data using HTTPS, this option only works with the SAP OData connector. The SAP ERP connector uses RPC and BAPI.
 
-### Virtual tables
+#### Virtual tables
 
 Another option is to work with SAP through virtual tables, accessing SAP data as if you were accessing a Dataverse table.
 
@@ -77,7 +60,7 @@ Another option is to work with SAP through virtual tables, accessing SAP data as
 
 **Cons**: Row-level permissions and user-level validation in the source aren't possible.
 
-## Alternative flows
+### Alternative flows
 
 Power Automate desktop flows let you automate repetitive desktop processes using a drag-and-drop interface or by recording user actions. Use desktop flows on the rare occasions when the connectors don't meet your requirements or for a one-time screen scraping need.
 
@@ -93,6 +76,26 @@ Keep the following considerations in mind when you use desktop flows to integrat
 
   - Hosted machines for developing, testing, and running bots in the cloud
   - Hosted machine groups for automatically scaling workloads to optimize unattended automation in production
+
+## Components
+
+**Power Apps**: A low-code platform that lets you create custom business applications without extensive coding knowledge, using a drag-and-drop interface to add controls and connect to data sources. This approach allows for highly customizable, pixel-perfect apps that can be used across web and mobile devices.
+
+**Power Automate**: A low-code/no-code platform that lets you automate repetitive tasks and streamline workflows across applications and services.
+
+**SAP ERP connector** for Power Platform: Uses remote procedure calls (RPC) with a business application programming interface (BAPI) to connect your Power Platform flows and apps to any SAP ERP system, including SAP ECC and SAP S/4HANA, through an on-premises data gateway. The connector supports secure authentication methods such as SAP Basic, Windows (Kerberos), and Microsoft Entra ID, making it easier for your organization to develop modern apps and automate business processes using its SAP data.
+
+**On-premises data gateway**: A locally installed Windows client application that acts as a bridge between your on-premises data sources and services in the Microsoft Cloud. It provides quick and secure data transfer without requiring any inbound ports to your network, only outbound ports to reach the Azure web service to which the gateway connects. The gateway supports multiple services, including Power BI, Power Apps, Power Automate, Azure Analysis Services, and Azure Logic Apps, allowing your organization to keep its databases and other data sources on-premises while securely using that data in cloud services.
+
+**Desktop flows** in Power Automate: Use robotic process automation (RPA) to automate repetitive desktop tasks. Desktop flows can interact with both modern and legacy applications, allowing users to streamline their workflows and improve efficiency. In the rare and special instances where connectors don't meet your requirements, consider using desktop flows.
+
+### Scenario details
+
+Of the many use cases for connecting to SAP from Power Platform, two are primary:
+
+- **Task-based straightforward user experience:** The SAP UI is powerful but can be complicated. The example scenario lets the user focus on one to a few key tasks in a modern canvas app experience.
+
+- **"Keep the core clean" principle:** You can use Power Platform to access SAP and keep external flows and rules that can't be embedded cleanly in SAP. This approach ensures that flows and rules stay safely where they belong and don't break SAP core upgrades.
 
 ## Considerations
 
@@ -123,7 +126,15 @@ Dataverse is highlighted as a central component in both environments.
 
 You have flexibility in how you incorporate Power Platform solutions into your specific software delivery tools and processes. Power Platform offers in-product tools (pipelines) but can also fit into your broader DevOps strategy by connecting with tools such as Azure DevOps and GitHub Actions.
 
-## Related content
+## Contributors
+
+_Microsoft maintains this article. The following contributors wrote this article._
+
+Principal authors:
+
+- **[Lee Zuckett](https://www.linkedin.com/in/leezuckett/)**, Senior Program Manager
+
+## Related resources
 
 Power Platform and SAP:
 

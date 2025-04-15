@@ -23,31 +23,16 @@ ms.custom:
 
 # Perform predictive data analysis using Dataverse, Fabric, and Azure AI services
 
-In today's data-driven world, applying predictive analytics enhances decision-making processes and operational efficiency. This article provides an example scenario and a generalized example architecture to illustrate how to perform predictive data analysis with Microsoft Dataverse, Microsoft Fabric, and Azure AI services. The architecture example can be modified for many different scenarios and industries.
+In today's data-driven world, applying predictive analytics enhances decision-making processes and operational efficiency.
 
-## Example architecture diagram
+> [!TIP]
+> This article provides an example scenario and a generalized example architecture to illustrate how to perform predictive data analysis with Microsoft Dataverse, Microsoft Fabric, and Azure AI services. The architecture example can be modified for many different scenarios and industries.
+
+## Architecture diagram
 
 :::image type="content" source="media/ai-predictive-data/ai-predictive-data.png" alt-text="Architecture diagram illustrating predictive data analysis with Dataverse, Fabric, and Azure AI services." border="true" lightbox="media/ai-predictive-data/ai-predictive-data.png":::
 
-## Components
-
-[**AI Builder**](/ai-builder/overview): Extracts key data from documents using prebuilt or custom models.
-
-[**Microsoft Dataverse**](/power-apps/maker/data-platform/): Serves as the central data store for extracted document data and tracks document progress as the business process is applied.
-
-[**Power Platform**](/power-query/dataflows/create-use): Automated workflows collect and transform raw data from multiple sources.
-
-- As an alternative to Power Platform dataflows, use [**Azure Data Factory**](/azure/data-factory/) to collect and transform raw data from multiple sources.
-
-[**Link Dataverse to Microsoft Fabric**](/power-apps/maker/data-platform/azure-synapse-link-view-in-fabric): Syncs data from Dataverse to Fabric using the Fabric shortcut.
-
-[**Azure Machine Learning**](/azure/machine-learning/): Trains machine learning models.
-
-[**Power Apps**](/power-apps/): Facilitates human review and data corrections.
-
-[**Power BI**](/power-bi/): Delivers analytics and insights into the document processing workflow.
-
-## Example scenario
+## Workflow
 
 The following steps describe the workflow that's shown in the example architecture diagram:
 
@@ -61,9 +46,31 @@ The following steps describe the workflow that's shown in the example architectu
 
 1. **Actionable insights**: Develop a Power Apps canvas or model-driven app to provide frontline teams with predictive insights.
 
-### Use case: Predicting customer churn
+## Components
+
+[**AI Builder**](/ai-builder/overview): Extracts key data from documents using prebuilt or custom models.
+
+[**Microsoft Dataverse**](/power-apps/maker/data-platform/): Serves as the central data store for extracted document data and tracks document progress as the business process is applied.
+
+[**Power Platform**](/power-query/dataflows/create-use): Automated workflows collect and transform raw data from multiple sources.
+
+[**Link Dataverse to Microsoft Fabric**](/power-apps/maker/data-platform/azure-synapse-link-view-in-fabric): Syncs data from Dataverse to Fabric using the Fabric shortcut.
+
+[**Azure Machine Learning**](/azure/machine-learning/): Trains machine learning models.
+
+[**Power Apps**](/power-apps/): Facilitates human review and data corrections.
+
+[**Power BI**](/power-bi/): Delivers analytics and insights into the document processing workflow.
+
+### Alternatives
+
+- **[Azure Data Factory](/azure/data-factory/)**: Use Azure Data Factory instead of Power Platform dataflows for collecting and transforming raw data from multiple sources.
+
+## Scenario details
 
 **The scenario**: A company wants to predict customer churn to prevent user dissatisfaction.
+
+### Potential use case: Predicting customer churn
 
 In this scenario, the specific steps include:
 
@@ -99,7 +106,15 @@ In this scenario, the specific steps include:
 
 - **Versioning of data models**: Track and document changes to machine learning models and transformations in Fabric and Dataverse. Use Purview for comprehensive data lineage and metadata management to ensure model explainability and traceability.
 
-## Related content
+## Contributors
+
+_Microsoft maintains this article. The following contributors wrote this article._
+
+Principal authors:
+
+- **[Pujarini Mohapatra](https://www.linkedin.com/in/biswapm/)**, Principal Engineering Manager
+
+## Related resources
 
 - [Encryption scenarios](/power-platform/well-architected/security/encryption#encryption-scenarios)
 - [Use Azure Key Vault secrets](/power-platform/well-architected/security/application-secrets#use-azure-key-vault-secrets)

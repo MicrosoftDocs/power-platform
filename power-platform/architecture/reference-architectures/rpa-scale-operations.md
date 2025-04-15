@@ -28,25 +28,12 @@ ms.custom:
 
 Power Automate supports two hosted RPA scenarios. *Hosted machines* run attended or unattended RPA, allowing citizen and pro developers to build or test automations and business users to run them. *Hosted machine groups* run unattended RPA in production, optimizing resources for higher efficiency and lower cost with automatic scaling and dynamic load balancing.
 
-This article provides an example scenario and a generalized example architecture to illustrate how to ​​scale RPA operations using hosted RPA in Power Automate for desktop. The architecture example can be modified for many different scenarios and industries.
+> [!TIP]
+> This article provides an example scenario and a generalized example architecture to illustrate how to ​​scale RPA operations using hosted RPA in Power Automate for desktop. The architecture example can be modified for many different scenarios and industries.
 
-## Example architecture diagram
+:::image type="content" source="media/rpa-scale-operations/rpa-scale-operations.svg" alt-text="Architecture diagram showing ​​how to scale RPA operations using Hosted RPA in Power Automate for desktop." lightbox="media/rpa-scale-operations/rpa-scale-operations.svg":::
 
-:::image type="content" source="media/rpa-scale-operations/rpa-scale-operations.png" alt-text="Architecture diagram showing ​​how to scale RPA operations using hosted RPA in Power Automate for desktop." lightbox="media/rpa-scale-operations/rpa-scale-operations.png":::
-
-Organizations that need to run RPA automations at scale, where workloads run on multiple machines, can use this architectural pattern to scale operations without provisioning their own infrastructure.
-
-## Components
-
-[**Power Platform environment**](/power-platform/admin/environments-overview): Contains Power Platform resources such as Power Automate [cloud flows](/power-automate/overview-cloud) and [desktop flows](/power-automate/desktop-flows/introduction).
-
-**Microsoft Azure**: Includes resources like [Azure Compute Gallery](/azure/virtual-machines/azure-compute-gallery), virtual machine (VM) image definition, VM image source, and [Virtual Networks](/azure/virtual-network/virtual-networks-overview) that are used to create and share custom VM images in Power Automate portal.
-
-**Power Automate**: Provides the hosted RPA service that runs unattended automations in the cloud.
-
-[**Azure Compute Gallery**](/azure/virtual-machines/azure-compute-gallery): A service that allows you to create and manage custom VM images, which can be shared with Power Automate for use in hosted RPA.
-
-## Example scenario
+## Workflow
 
 The following steps describe the workflow that's shown in the example architecture diagram:
 
@@ -60,7 +47,21 @@ The following steps describe the workflow that's shown in the example architectu
 
 1. **Desktop flow connection**: In the parent cloud flow, create a desktop flow connection that points to the hosted machine group.
 
-### Use cases
+## Components
+
+[**Power Platform environment**](/power-platform/admin/environments-overview): Contains Power Platform resources such as Power Automate [cloud flows](/power-automate/overview-cloud) and [desktop flows](/power-automate/desktop-flows/introduction).
+
+**Microsoft Azure**: Includes resources like [Azure Compute Gallery](/azure/virtual-machines/azure-compute-gallery), virtual machine (VM) image definition, VM image source, and [Virtual Networks](/azure/virtual-network/virtual-networks-overview) that are used to create and share custom VM images in Power Automate portal.
+
+**Power Automate**: Provides the hosted RPA service that runs unattended automations in the cloud.
+
+[**Azure Compute Gallery**](/azure/virtual-machines/azure-compute-gallery): A service that allows you to create and manage custom VM images, which can be shared with Power Automate for use in hosted RPA.
+
+## Scenario details
+
+Organizations that need to run RPA automations at scale, where workloads run on multiple machines, can use this architectural pattern to scale operations without provisioning their own infrastructure.
+
+### Potential use cases
 
 Here are some example use cases for hosted RPA in Power Automate:
 
@@ -92,6 +93,14 @@ Here are some example use cases for hosted RPA in Power Automate:
 
 **Implement a consistent maintenance procedure**: When you need to update the custom VM image used by the hosted machine group, follow a standard procedure that uses maintenance mode to indicate an ongoing update. Note that when the VM image is updated, all hosted bots complete their ongoing desktop flow runs before being reprovisioned with the new VM image.
 
+## Contributors
+
+_Microsoft maintains this article. The following contributors wrote this article._
+
+Principal authors:
+
+- **[Jay Padimiti](https://www.linkedin.com/in/jpadimiti/)**, Principal Program Manager
+
 ## Next steps
 
 Review [Hosted machine group](/power-automate/desktop-flows/hosted-machine-groups).
@@ -110,7 +119,7 @@ Follow these high-level steps to set up a solution architecture that uses hosted
 
 1. Monitor your Power Automate RPA application. Track the performance of the hosted machine group and your RPA automation by monitoring the machine run group and desktop flow run sections in the Power Automate portal.
 
-## Related content
+## Related resources
 
 - [Introduction to the Power Automate hosted RPA](/power-automate/desktop-flows/hosted-rpa-overview)
 - [Hosted machine groups limitations](/power-automate/desktop-flows/hosted-machine-groups#hosted-machine-groups-limitations)
