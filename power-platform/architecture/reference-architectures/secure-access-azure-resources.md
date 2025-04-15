@@ -29,7 +29,7 @@ Power Platform supports the use of Azure Virtual Network to access resources ins
 > [!TIP]
 > This article provides an example scenario and a generalized example architecture to illustrate how to secure Power Platform access to Azure resources with Azure Virtual Network. The architecture example can be modified for many different scenarios and industries.
 
-## Example architecture diagram
+## Architecture diagram
 
 :::image type="content" source="media/secure-access-azure-resources/secure-architecture.png" alt-text="Architecture diagram showing secure Power Platform access to Azure resources." lightbox="media/secure-access-azure-resources/secure-architecture.png":::
 
