@@ -1,7 +1,7 @@
 ---
-title: Overview of Power Platform and Copilot Studio architectures
-description: Discover how Power Platform and Copilot Studio architectures can help you build scalable, reliable solutions tailored to your business needs.
-#customer intent: As a Power-Platform user, I want to understand the architectures of Power Platform and Copilot Studio so that I can build scalable and reliable solutions.
+title: Overview of Power Platform architectures
+description: Discover how Power Platform architectures can help you build scalable, reliable solutions tailored to your business needs.
+#customer intent: As a Power-Platform user, I want to understand the architectures of Power Platform so that I can build scalable and reliable solutions.
 author: manuelap-msft
 ms.subservice: architecture-center
 ms.topic: overview
@@ -15,9 +15,9 @@ search.audienceType:
   - flowmaker
 ---
 
-# Overview of Power Platform and Copilot Studio architectures
+# Overview of Power Platform architectures
 
-Reference architectures are essential frameworks that guide the design and implementation of solutions using Power Platform and Copilot Studio. By evaluating reference architectures, organizations can build powerful, reliable, and scalable solutions that meet their business needs and drive innovation.
+Reference architectures are essential frameworks that guide the design and implementation of solutions using Power Platform. By evaluating reference architectures, organizations can build powerful, reliable, and scalable solutions that meet their business needs and drive innovation.
 
 | Title | Description |
 | --- | --- |

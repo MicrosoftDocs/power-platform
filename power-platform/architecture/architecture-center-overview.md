@@ -1,6 +1,6 @@
 ---
-title: Welcome to the Microsoft Power Platform and Copilot Studio Architecture Center
-description: Learn how the Microsoft Power Platform and Copilot Studio Architecture Center can help you build scalable, secure, and efficient business solutions.
+title: Welcome to the Microsoft Power Platform Architecture Center
+description: Learn how the Microsoft Power Platform Architecture Center can help you build scalable, secure, and efficient business solutions.
 #customer intent: As a business user, I want to explore reference architectures and solution ideas in the architecture center so that I can implement effective solutions for my organization.  
 author: manuelap-msft
 ms.author: mapichle
@@ -14,19 +14,19 @@ ms.custom:
   - ai-seo-date:04/02/2025
 ---
 
-# Welcome to the Microsoft Power Platform and Copilot Studio Architecture Center
+# Welcome to the Microsoft Power Platform Architecture Center
 
-The architecture center is a valuable resource for architects, business users, and developers, pro and citizen alike, who want to build well-architected solutions with Power Platform and Copilot Studio. With the foundational reference architectures, innovative solution ideas, and best-practice recommendations hosted here, you can more easily create scalable, efficient solutions that are tailored to your organization's needs.
+The architecture center is a valuable resource for architects, business users, and developers, pro and citizen alike, who want to build well-architected solutions with Power Platform. With the foundational reference architectures, innovative solution ideas, and best-practice recommendations hosted here, you can more easily create scalable, efficient solutions that are tailored to your organization's needs.
 
 Here's what you'll find in the architecture center:
 
 - **Key concepts:** Learn about key architecture concepts to help build robust, efficient, and maintainable solutions.
 
-- **Reference architectures**: Explore foundational reference architectures that support building well-architected solutions with Power Platform and Copilot Studio. Learn best practices for scalability, security, and performance to ensure your solutions are robust and reliable.
+- **Reference architectures**: Explore foundational reference architectures that support building well-architected solutions with Power Platform. Learn best practices for scalability, security, and performance to ensure your solutions are robust and reliable.
 
-- **Solution ideas**: Discover a range of solution ideas that demonstrate the versatility and power of Power Platform and Copilot Studio. Gain inspiration from real-world scenarios and examples to help you design and implement effective solutions.
+- **Solution ideas**: Discover a range of solution ideas that demonstrate the versatility and power of Power Platform. Gain inspiration from real-world scenarios and examples to help you design and implement effective solutions.
 
-Whether you're looking to enhance scalability, improve security, or optimize performance, the architecture center offers valuable insights and practical guidance to help you achieve your goals, unlock the full potential of Power Platform and Copilot Studio, and drive innovation in your organization.
+Whether you're looking to enhance scalability, improve security, or optimize performance, the architecture center offers valuable insights and practical guidance to help you achieve your goals, unlock the full potential of Power Platform, and drive innovation in your organization.
 
 We'll continue to add patterns over time in collaboration with the Power Platform community.
 

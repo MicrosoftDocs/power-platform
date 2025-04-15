@@ -1,7 +1,7 @@
 ---
-title: What's new in the Power Platform and Copilot Studio Architecture Center
+title: What's new in the Power Platform Architecture Center
 description: Discover the latest updates and changes in the Power Platform and Microsoft Copilot Studio Architecture Center.
-#customer intent: As a Power Platform user, I want to review the latest updates so that I can design better solutions for Power Platform and Copilot Studio.  
+#customer intent: As a Power Platform user, I want to review the latest updates so that I can design better solutions for Power Platform.  
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
@@ -14,10 +14,10 @@ ms.custom:
   - ai-seo-date:04/02/2025
 ---
 
-# What's new in the Power Platform and Copilot Studio Architecture Center
+# What's new in the Power Platform Architecture Center
 
-Get the latest info about what's new and what's changed in the Power Platform and Copilot Studio Architecture Center.
+Get the latest info about what's new and what's changed in the Power Platform Architecture Center.
 
 ## April 2025
 
-Welcome to the initial launch of the Power Platform and Copilot Studio Architecture Center.
+Welcome to the initial launch of the Power Platform Architecture Center.
