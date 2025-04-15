@@ -4,7 +4,7 @@ description: Learn how the Healthcare Patient Support Agent streamlines patient 
 #customer intent: As a Power Platform user, I want to visualize the major components of the Healthcare Patient Support Agent architecture so that I can design a well-architected solution.
 author: manuelap-msft
 ms.subservice: architecture-center
-ms.topic: conceptual
+ms.topic: solution-idea
 ms.date: 04/06/2025
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
@@ -93,7 +93,7 @@ Use [Dataverse auditing](../key-concepts/dataverse-auditing.md) to track changes
 
 Follow [recommendations for monitoring and threat detection](/power-platform/well-architected/security/monitor-threats).
 
-### Performance eficiency
+### Performance Efficiency
 
 Power Automate flows with scalable parallelization handle peak patient interactions efficiently. Learn more in [Use an asynchronous flow pattern](/power-automate/guidance/coding-guidelines/asychronous-flow-pattern).
 
@@ -101,7 +101,7 @@ Azure Data Lake Storage Gen2 archives large datasets, ensuring cost-effective lo
 
 Azure Synapse Analytics facilitates big data processing and data warehousing, and unifies patient records for advanced analytical insights and reporting.
 
-### Experience optimization
+### Experience Optimization
 
 The patient access portal is designed with a responsive UI for easy use across devices.
 
