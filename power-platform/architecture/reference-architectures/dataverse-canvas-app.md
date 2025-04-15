@@ -1,5 +1,5 @@
 ---  
-title: Use the Dataverse connector with canvas apps
+title: Use Dataverse as a data source for canvas apps
 description: Learn how to use the Dataverse connector with canvas apps to create custom user experiences and integrate multiple data sources seamlessly.
 #customer intent: As a Power Apps maker, I want to use the Dataverse connector with canvas apps so that I can create custom user experiences and integrate multiple data sources seamlessly.  
 author: slaouist  
