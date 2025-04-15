@@ -113,7 +113,7 @@ Admins have full visibility into maker activities through audit logs in Microsof
 
 Learn more in [Security and compliance considerations for intelligent application workloads](/power-platform/well-architected/intelligent-application/security) and [Security concepts in Microsoft Dataverse](/power-platform/admin/wp-security-cds).
 
-### Performance Efficiency
+### Performance efficiency
 
 Tracking usage, dropouts, technical difficulties, and Customer Satisfaction Score (CSAT) enable adjustments to the agent's approaches, offerings, and structure. Learn more in [Measuring agent engagement](/microsoft-copilot-studio/guidance/measuring-engagement).
 
@@ -121,7 +121,7 @@ Power Automate flows can be used to handle processes asynchronously. Learn more 
 
 Consider using the Microsoft 365 Agents SDK to utilize multiple agents. Learn more in [Microsoft 365 Agents SDK](/microsoft-365/agents-sdk/).
 
-### Experience Optimization
+### Experience optimization
 
 Consolidate data on one centralized platform, such as Dataverse, to streamline access and management. Consider using virtual tables to integrate external data. Learn more in [Get started with virtual tables](/power-apps/developer/data-platform/virtual-entities/get-started-ve).
 
@@ -129,7 +129,7 @@ Consolidate data on one centralized platform, such as Dataverse, to streamline a
 
 AI systems should be fair, reliable, and secure, ensuring they treat all users equitably while maintaining consistent performance. Privacy and security are critical, with safeguards in place to protect sensitive information and prevent unauthorized access. Transparency matters, so users should understand how AI-driven decisions are made, and automation should include human oversight where necessary. This oversight is key, especially when working with autonomous agents. Accountability is essential, with clear ownership of AI operations to ensure ethical standards are met and continuously improved. Learn more in [Responsible AI considerations for intelligent application workloads](/power-platform/well-architected/intelligent-application/responsible-ai).
 
-## Related content
+## Related resources
 
 - [Power Platform Well-Architected](/power-platform/well-architected/)
 - [Copilot Studio documentation](/microsoft-copilot-studio/)
