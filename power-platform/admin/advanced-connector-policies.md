@@ -20,7 +20,7 @@ search.audienceType:
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 ## Overview
-Advanced connector policies (ACP) represent the next generation of securing connector usage within the Power Platform. This feature provides a modern and flexible approach to managing all [certified connectors](/power-platform/admin/dlp-connector-classification), aligning with the broader governance strategy of per-environment security controls paired with [environment group support](power-platform/admin/environment-groups).
+Advanced connector policies (ACP) represent the next generation of securing connector usage within the Power Platform. This feature provides a modern and flexible approach to managing all [certified connectors](/power-platform/admin/dlp-connector-classification), aligning with the broader governance strategy of per-environment security controls paired with [environment group support](../admin/environment-groups.md).
 
 By adopting advanced connector policies, administrators gain greater control and granularity in securing and managing connector usage while enhancing the overall governance of their Power Platform environments.
 
