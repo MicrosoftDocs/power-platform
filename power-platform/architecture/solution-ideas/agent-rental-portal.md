@@ -4,7 +4,7 @@ description: Discover how to build a property rental portal with AI-driven searc
 #customer intent: As a Power Platform user, I want to visualize the major components of the rental portal so that I can design a well-architected solution.
 author: manuelap-msft
 ms.subservice: architecture-center
-ms.topic: conceptual
+ms.topic: solution-idea
 ms.date: 04/06/2025
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
@@ -157,7 +157,7 @@ The following steps describe the workflow that's shown in the example architectu
 
 **Microsoft Purview:** Microsoft Purview, used for data governance and compliance management, maintains data integrity and ensures data handling practices meet regulatory requirements.
 
-### Operational excellence
+### Operational Excellence
 
 **Automation:** Power Automate streamlines routine tasks such as notifications and approvals, reducing manual effort and minimizing the risk of human error.
 
@@ -169,13 +169,13 @@ The following steps describe the workflow that's shown in the example architectu
 
 **Unit testing:** Unit tests are created for critical components to ensure that they function correctly. Automated testing is integrated into the CI/CD pipelines to catch issues early in the development process.
 
-### Performance efficiency
+### Performance Efficiency
 
 **Scalability:** Power Platform and Azure's scalable infrastructure can handle varying workloads. Autoscaling features adjust resources based on demand, ensuring optimal performance. Power Pages content delivery network improves page load times.
 
 **Optimization:** Queries and workflows are regularly reviewed using Application Insights and optimized to improve performance and address bottlenecks.
 
-### Experience optimization
+### Experience Optimization
 
 **Ease of use and streamlined processes:** Ease of use is prioritized by minimizing user effort and maximizing task efficiency. Complex processes, such as payment processing, are streamlined to minimize user input.
 
