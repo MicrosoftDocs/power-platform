@@ -1,9 +1,10 @@
 ---
 title: Use Dataverse background operations
 description: Learn how Dataverse background operations enhance the efficiency of your solutions by using asynchronous processing and eliminating persistent connections.
+#customer intent: As a Power Platform user, I want to define custom messages and implement business logic through plug-ins so that I can use background processing in Dataverse.
 author: manuelap-msft
 ms.subservice: architecture-center
-ms.topic: conceptual
+ms.topic: example-scenario
 ms.date: 04/10/2025
 ms.author: mapichle
 ms.reviewer: pankajsharma2087

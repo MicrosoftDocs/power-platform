@@ -3,7 +3,7 @@ title: Benefits of using ExpressRoute with Power Platform
 description: Learn how ExpressRoute enhances compliance and network predictability for Power Platform by avoiding public internet traffic and ensuring dedicated connections.
 #customer intent: As a network administrator, I want to learn how ExpressRoute minimizes internet traffic contention so that I can improve network security and predictability.  
 author: taiki-yoshida
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 04/02/2025
 ms.subservice: architecture-center
 ms.author: tayoshi

@@ -4,7 +4,7 @@ description: Integrate Microsoft Power Platform with SAP for seamless data manag
 #customer intent: As a Power Platform user, I want to integrate Microsoft Power Platform with SAP so that I can enhance data management and automation capabilities.
 author: manuelap-msft
 ms.subservice: architecture-center
-ms.topic: conceptual
+ms.topic: example-scenario
 ms.date: 04/06/2025
 ms.author: mapichle
 ms.reviewer: pankajsharma2087

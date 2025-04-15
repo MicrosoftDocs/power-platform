@@ -3,7 +3,7 @@ title: Plan an ExpressRoute deployment for use with Power Platform
 description: Learn the prerequisites and considerations for setting up ExpressRoute to connect Power Platform with your network efficiently.
 #customer intent: As a network architect, I want to understand the prerequisites for setting up ExpressRoute so that I can plan the deployment effectively.  
 author: taiki-yoshida
-ms.topic: conceptual
+ms.topic: best-practice
 ms.date: 04/02/2025
 ms.subservice: architecture-center
 ms.author: tayoshi

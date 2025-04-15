@@ -1,10 +1,11 @@
 ---
 title: Checklist for ExpressRoute readiness
-description: Make sure that your network is ready for ExpressRoute with this checklist, which addresses routing, peering, and geographical distribution for optimal performance.
+description: Make sure your network is ready for ExpressRoute with this checklist, which addresses routing, peering, and geographical distribution for optimal performance.
+#customer intent: As a network administrator, I want to validate client routing configurations so that traffic is correctly routed via the ExpressRoute circuit.
 author: taiki-yoshida
 ms.component: pa-admin
-ms.topic: conceptual
-ms.date: 04/09/2025
+ms.topic: checklist
+ms.date: 04/15/2025
 ms.subservice: architecture-center
 ms.author: tayoshi
 ms.reviewer: jhaskett-msft

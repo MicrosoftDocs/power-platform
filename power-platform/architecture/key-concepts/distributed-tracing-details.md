@@ -1,10 +1,10 @@
 ---
-title: Implement distributed tracing across multiple services​ in Power Platform
+title: Implement distributed tracing across multiple Power Platform services
 description: Learn how to implement distributed tracing in Power Platform to monitor and diagnose performance issues across multiple services.
-#customer intent: As a Power Platform user, I want to trace events across multiple services in my solution so that I can monitor and diagnose performance issues.
+#customer intent: As a Power Platform admin, I want to trace events across multiple services in my solution so that I can monitor and diagnose performance issues.
 author: manuelap-msft
 ms.subservice: architecture-center
-ms.topic: conceptual
+ms.topic: best-practice
 ms.date: 04/04/2025
 ms.author: mapichle
 ms.reviewer: jhaskett-msft

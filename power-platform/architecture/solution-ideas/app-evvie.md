@@ -4,8 +4,8 @@ description: Discover how the Enterprise Visual Vehicle Inspection Engine uses A
 #customer intent: As a Power Platform user, I want to understand the workflow of EVVIE so that I can design a similar solution.
 author: manuelap-msft
 ms.subservice: architecture-center
-ms.topic: conceptual
-ms.date: 03/24/2025
+ms.topic: solution-idea
+ms.date: 04/15/2025
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
 contributors:

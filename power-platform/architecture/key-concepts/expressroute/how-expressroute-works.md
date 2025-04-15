@@ -3,7 +3,7 @@ title: How ExpressRoute works with Power Platform
 description: Learn how ExpressRoute integrates with Microsoft Power Platform to optimize connectivity and improve performance for your cloud services.
 #customer intent: As a network administrator, I want to understand how ExpressRoute integrates with Microsoft Power Platform so that I can optimize connectivity for my organization.  
 author: taiki-yoshida
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 04/06/2025
 ms.subservice: architecture-center
 ms.author: tayoshi

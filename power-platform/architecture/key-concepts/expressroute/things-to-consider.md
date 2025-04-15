@@ -3,7 +3,7 @@ title: Things to consider before you use ExpressRoute with Power Platform
 description: Learn the key considerations for using ExpressRoute with Microsoft Power Platform, including network configuration, costs, and performance impacts.
 #customer intent: As a network administrator, I want to understand the considerations for using ExpressRoute with Power Platform so that I can plan and configure my network effectively.  
 author: taiki-yoshida
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 04/02/2025
 ms.subservice: architecture-center
 ms.author: tayoshi

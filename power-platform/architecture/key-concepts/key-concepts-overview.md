@@ -19,7 +19,7 @@ ms.custom:
   - ai-seo-date:04/02/2025
 ---
 
-# Power Platform  architecture key concepts overview
+# Power Platform architecture key concepts overview
 
 Architecture key concepts are the foundational principles and recommendations that guide the design, planning, and implementation of robust, scalable, and efficient solutions using Microsoft Power Platform. These fundamentals encompass key aspects such as reliability, security, operational excellence, performance efficiency, and user experience optimization.
 

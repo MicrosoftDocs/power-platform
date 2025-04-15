@@ -4,8 +4,8 @@ description: Explore a travel concierge solution that uses Copilot Studio to red
 #customer intent: As a Power Platform user, I want to explore an example implementation that employs AI-driven solutions so that I can improve my own organization's customer service experience.
 author: manuelap-msft
 ms.subservice: architecture-center
-ms.topic: conceptual
-ms.date: 04/06/2025
+ms.topic: solution-idea
+ms.date: 04/15/2025
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
 contributors:
@@ -145,7 +145,7 @@ Learn more in [Introduction to conversational experiences](/microsoft-copilot-st
 
 Ensure fair treatment across all customer segments by actively addressing bias and maintaining equity in every interaction. Transparently disclose data sources with appropriate links, enforce strict data privacy and security protocols, and incorporate human oversight to monitor these processes continuously. Learn more in [Responsible AI considerations for intelligent application workloads](/power-platform/well-architected/intelligent-application/responsible-ai).
 
-## Related content
+## Related resources
 
 - [Power Platform Well-Architected](/power-platform/well-architected/)
 - [Copilot Studio documentation](/microsoft-copilot-studio/)

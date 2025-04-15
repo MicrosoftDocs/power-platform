@@ -1,10 +1,11 @@
 ---
 title: ​​Integrate Microsoft Fabric Lakehouse data using Dataverse virtual tables
-description: Learn how to unify data from multiple internal systems in Microsoft Fabric Lakehouse and access it in your Power Platform solutions using Dataverse virtual tables.
+description: Learn how to unify data from multiple internal systems in Microsoft Fabric Lakehouse and access it in Power Platform solutions using Dataverse virtual tables.
+#customer intent: As a Power Platform user, I want to integrate Microsoft Fabric Lakehouse data using Microsoft Dataverse virtual tables so that I can gather data from multiple internal systems for use in Power Apps or Power Automate.
 author: manuelap-msft
 ms.subservice: architecture-center
-ms.topic: conceptual
-ms.date: 04/10/2025
+ms.topic: example-scenario
+ms.date: 04/15/2025
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
 contributors:

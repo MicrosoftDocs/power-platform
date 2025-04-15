@@ -1,9 +1,10 @@
 ---
 title: Reduce infrastructure challenges with hosted RPA in Power Automate
 description: Learn how hosted RPA in Power Automate allows you to scale your automation workflows seamlessly without static infrastructure.
+#customer intent: As a Power Platform user, I want to scale RPA operations using Hosted RPA in Power Automate so that I can reduce infrastructure management efforts.  
 author: manuelap-msft
 ms.subservice: architecture-center
-ms.topic: conceptual
+ms.topic: example-scenario
 ms.date: 04/10/2025
 ms.author: mapichle
 ms.reviewer: jhaskett-msft

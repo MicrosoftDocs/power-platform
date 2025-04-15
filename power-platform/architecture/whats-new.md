@@ -6,7 +6,7 @@ author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: architecture-center
-ms.topic: overview
+ms.topic: whats-new
 ms.date: 04/02/2025
 ms.custom:
   - ai-gen-docs-bap

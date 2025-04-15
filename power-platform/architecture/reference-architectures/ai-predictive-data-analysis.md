@@ -4,7 +4,7 @@ description: Learn how to perform predictive data analysis using Dataverse, Fabr
 #customer intent: As a Power Platform user, I want to learn how to perform predictive data analysis using Dataverse, Fabric, and Azure AI so that I can enhance decision-making processes.
 author: manuelap-msft
 ms.subservice: architecture-center
-ms.topic: conceptual
+ms.topic: example-scenario
 ms.date: 04/06/2025
 ms.author: mapichle
 ms.reviewer: pankajsharma2087

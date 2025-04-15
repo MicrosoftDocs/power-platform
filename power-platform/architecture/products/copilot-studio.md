@@ -1,12 +1,12 @@
 ---
 title: Copilot Studio architecture key concepts and solution ideas
-description: Learn about key architecture concepts and solution ideas to create intelligent applications and solutions with advanced AI capabilities in Microsoft Copilot Studio.
+description: Learn key architecture concepts and solution ideas to create intelligent applications and solutions with advanced AI capabilities in Microsoft Copilot Studio.
 #customer intent: As a Power Platform user, I want to understand Microsoft Copilot Studio key concepts and solution ideas so that I can create intelligent applications with advanced AI capabilities.
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: architecture-center
-ms.topic: conceptual
+ms.topic: article
 ms.date: 04/03/2025
 ---
 

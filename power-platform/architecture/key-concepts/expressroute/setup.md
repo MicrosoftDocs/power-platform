@@ -4,7 +4,7 @@ description: Learn how to set up ExpressRoute for Microsoft Power Platform, incl
 #customer intent: As a network administrator, I want to configure ExpressRoute for Power Platform so that I can ensure secure and efficient routing of traffic.  
 author: taiki-yoshida
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: best-practice
 ms.date: 04/02/2025
 ms.subservice: architecture-center
 ms.author: tayoshi

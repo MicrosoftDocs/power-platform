@@ -1,10 +1,10 @@
 ---
 title: Distributed tracing across multiple services​ in Power Platform
 description: Learn how distributed tracing in Power Platform can help ensure end-to-end traceability of your solution.
-#customer intent: As a Power Platform user, I want to trace events across multiple services so that I can achieve end-to-end traceability in my solution.  
+#customer intent: As a Power Platform admin, I want to trace events across multiple services so that I can achieve end-to-end traceability in my solution.  
 author: manuelap-msft
 ms.subservice: architecture-center
-ms.topic: conceptual
+ms.topic: example-scenario
 ms.date: 04/05/2025
 ms.author: mapichle
 ms.reviewer: jhaskett-msft

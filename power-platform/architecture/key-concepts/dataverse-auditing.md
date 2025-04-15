@@ -4,7 +4,7 @@ description: Learn how to use Dataverse auditing to ensure accountability, detec
 #customer intent: As a Power Platform admin, I want to set up Dataverse auditing so that I can track data changes, user activities, and system and business events for compliance and security.
 author: manuelap-msft
 ms.subservice: architecture-center
-ms.topic: conceptual
+ms.topic: example-scenario
 ms.date: 04/02/2025
 ms.author: mapichle
 ms.reviewer: pankajsharma2087

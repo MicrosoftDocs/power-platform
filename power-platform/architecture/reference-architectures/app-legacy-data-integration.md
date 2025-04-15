@@ -4,7 +4,7 @@ description: Learn how to integrate legacy data with modern platforms using Powe
 #customer intent: As a Power Platform user, I want to integrate legacy data with modern platforms so that I can streamline data retrieval and enhance analytics.
 author: manuelap-msft
 ms.subservice: architecture-center
-ms.topic: conceptual
+ms.topic: example-scenario
 ms.date: 04/06/2025
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
@@ -88,7 +88,7 @@ Consider which design strategies and recommendations of the [Performance Efficie
 
 **Integration with Microsoft Teams**: Users have access to dashboards that show where they spend time in Microsoft Teams to ensure easy discovery and insights.
 
-## Related content
+## Related resources
 
 - [Introduction to desktop flows](/power-automate/desktop-flows/introduction)
 - [Power BI documentation](/power-bi)
