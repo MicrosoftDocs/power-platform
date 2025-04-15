@@ -73,8 +73,7 @@ During publishing, an environment lifecycle operation is performed on every envi
 Previously, in [data policies](managed-environment-data-policies.md) customers couldn't see triggers, internal actions, or if an action is deprecated.  We have now added these tags across all certified connectors so that administrators can quickly decide to block specific triggers from use or turning off actions which are deprecated and no longer supported by the connector publisher.
 
 <img src="media/advanced-connector-policies-2.png" width="600px" />
-:::image type="content" source="media/advanced-connector-policies-2.png" alt-text="Admins can quickly decide to block specific triggers from use or turning off actions which are deprecated and no longer supported by the connector publisher." lightbox="media/advanced-connector-policies-2.png":::
-
+:::image type="content" source="media/advanced-connector-policies-2.png" alt-text="Text." lightbox="media/advanced-connector-policies-2.png":::
 ### Easier management experience
 
 We have taken feedback from customers and drastically simplified the management experience by making the policy a strict allow list.  When configured, all new connectors are blocked.  If you configure the allowed actions on a given connector, then no new actions, triggers, or internal actions will be allowed.  The concept of the Business and Non-Business categories in Data Policies (DLP) is not brought forward as it was not deemed effective in policy management.  
