@@ -31,7 +31,7 @@ Power Automate supports two hosted RPA scenarios. *Hosted machines* run attended
 > [!TIP]
 > This article provides an example scenario and a generalized example architecture to illustrate how to ​​scale RPA operations using hosted RPA in Power Automate for desktop. The architecture example can be modified for many different scenarios and industries.
 
-:::image type="content" source="media/rpa-scale-operations/rpa-scale-operations.svg" alt-text="Architecture diagram showing ​​how to scale RPA operations using Hosted RPA in Power Automate for desktop." lightbox="media/rpa-scale-operations/rpa-scale-operations.svg":::
+:::image type="content" source="media/rpa-scale-operations/rpa-scale-operations.png" alt-text="Architecture diagram showing ​​how to scale RPA operations using Hosted RPA in Power Automate for desktop." lightbox="media/rpa-scale-operations/rpa-scale-operations.png":::
 
 ## Workflow
 

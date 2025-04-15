@@ -80,7 +80,7 @@ The following steps describe the workflow that's shown in the example architectu
 
     - [**Power BI dashboards**](/power-bi/fundamentals/power-bi-overview): Visualize operational and customer-centric data to provide actionable insights. Power BI integrates seamlessly with Dataverse and can bring data from other storage sources into reports.
 
-## Use case
+## Scenario details
 
 This use case illustrates how a cinema company enhances customer and employee experiences by streamlining ticket management. Employees can process ticket issues, such as refunds, directly in Microsoft Teams or automatically through an autonomous agent, minimizing the need to interact with or replace legacy applications.
 

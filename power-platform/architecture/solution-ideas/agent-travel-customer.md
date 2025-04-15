@@ -94,7 +94,7 @@ The solution described in this article includes the following components.
 
 [**Power BI dashboards**](/power-bi/fundamentals/power-bi-overview): Visualize operational and customer-centric data to provide actionable insights. Power BI integrates seamlessly with Dataverse and can bring data from other storage sources into reports.
 
-## Use case
+## Scenario details
 
 This use case is based on a travel company's approach to improving their customer experience with customer service, information, and conversion processes.
 

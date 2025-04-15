@@ -64,7 +64,7 @@ The following steps describe the workflow that's shown in the example architectu
 
 ### Alternatives
 
-- **[Azure Data Factory](/azure/data-factory/)**: Use Azure Data Factory instead of Power Platform dataflows for collecting and transforming raw data from multiple sources.
+**[Azure Data Factory](/azure/data-factory/)**: Use Azure Data Factory instead of Power Platform dataflows for collecting and transforming raw data from multiple sources.
 
 ## Scenario details
 

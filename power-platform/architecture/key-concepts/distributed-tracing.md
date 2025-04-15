@@ -54,11 +54,11 @@ The following steps describe the Power Platform workflow:
 
 1. **Trace**: Copilot Studio, Power Apps, and Power Automate start a transaction by calling a custom Dataverse API.
 
-### Components
+## Components
 
 The example architecture includes monitoring tools and services and the Power Platform components that generate telemetry data.
 
-#### Monitoring tools and services
+### Monitoring tools and services
 
 [**Azure Monitor**](/azure/azure-monitor/fundamentals/overview) is a comprehensive solution for collecting, analyzing, and acting on telemetry from your cloud and on-premises environments. It uses [Kusto Query Language](/kusto/query/) (KQL) to query and correlate telemetry data across different components. Learn more in [Get started with log queries in Azure Monitor logs](/azure/azure-monitor/logs/get-started-queries?&tabs=kql) and [Query data in Azure Monitor using Azure Data Explorer](/azure/data-explorer/query-monitor-data).
 
@@ -66,7 +66,7 @@ The example architecture includes monitoring tools and services and the Power Pl
 
 [**Azure Data Explorer**](/azure/data-explorer/data-explorer-overview) is a fast and highly scalable analytics platform that's designed to analyze large volumes of data in near real time. You can use Azure Data Explorer to query and analyze telemetry data from Application Insights, Azure Monitor, and other Azure services.
 
-#### Power Platform components
+### Power Platform components
 
 [**Microsoft ​Dataverse**](/power-apps/maker/data-platform/data-platform-intro) is the data platform that underlies much of the Microsoft Cloud, including Power Platform. You can use Application Insights to receive diagnostics and performance telemetry from Dataverse. Learn more in [Analyze model-driven apps and Microsoft Dataverse telemetry with Application Insights](/power-platform/admin/analyze-telemetry).
 

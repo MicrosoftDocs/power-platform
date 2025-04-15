@@ -45,7 +45,7 @@
         href: reference-architectures/ai-predictive-data-analysis.md
       - name: Integrate legacy data with Power Automate and SharePoint
         href: reference-architectures/app-legacy-data-integration.md
-      - name: Leverage Dataverse background operations
+      - name: Use Dataverse background operations
         href: reference-architectures/dataverse-background-operations.md
       - name: Secure Power Platform access to Azure resources
         href: reference-architectures/secure-access-azure-resources.md
@@ -55,7 +55,7 @@
         href: reference-architectures/app-integrate-lakehouse.md
       - name: Use REST APIs to extend functionality of canvas apps
         href: reference-architectures/custom-connector-canvas.md
-      - name: ​Use the Dataverse connector with canvas apps​
+      - name: Use Dataverse as a data source for canvas apps
         href: reference-architectures/dataverse-canvas-app.md
       - name: Reduce infrastructure challenges with Hosted RPA in Power Automate​
         href: reference-architectures/rpa-scale-operations.md
