@@ -113,7 +113,7 @@ The principle of "garbage in, garbage out" is particularly important for agents 
 
 Implementing row-level security in Dataverse ensures that only authorized users can access specific information. This approach can also be applied to non-Microsoft data used by agents, ensuring secure handling when an API requests data. Learn more in [Security and compliance considerations for intelligent application workloads](/power-platform/well-architected/intelligent-application/security) and [Security concepts in Microsoft Dataverse](/power-platform/admin/wp-security-cds).
 
-### Performance efficiency
+### Performance Efficiency
 
 Tracking usage, dropouts, technical difficulties, and customer satisfaction scores (CSAT) inform adjustments to the agents' approaches, offerings, and structure. Learn more in [Measuring agent engagement](/microsoft-copilot-studio/guidance/measuring-engagement).
 
@@ -125,7 +125,7 @@ Consider using Microsoft's contact center offerings to integrate everything into
 
 Consider using the Microsoft 365 Agents SDK to utilize multiple agents. Learn more in [Microsoft 365 Agents SDK](/microsoft-365/agents-sdk/).
 
-### Experience optimization
+### Experience Optimization
 
 Consolidate data on one centralized platform, such as Dataverse, to streamline access and management. Consider using virtual tables in Dataverse to integrate external data. Learn more in [Get started with virtual tables](/power-apps/developer/data-platform/virtual-entities/get-started-ve).
 
