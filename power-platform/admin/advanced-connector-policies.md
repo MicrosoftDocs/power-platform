@@ -32,7 +32,7 @@ While advanced connector policies (ACP) offer robust capabilities, there are a f
 
 - **Environment group dependencies**: Per-environment support isn't yet available. When it becomes available, we'll update this article.
 - **Endpoint filtering**: Endpoint filtering will be replaced by a broader connection parameter filtering capability of which isn't yet available.
-- **Managed Environments**: This feature requires Managed Environments to be enabled.  In the future, you'll be able to use it on non-Managed Environments provided that you're not limiting the non-blockable connectors.  
+- **Managed Environments**: This feature requires Managed Environments to be enabled.  In the future, you'll be able to use it on non-Managed Environments if you're not limiting the nonblockable connectors.  
 
 ## Configure an advanced connector policy
 
@@ -44,43 +44,43 @@ To configure an advanced connector policy, complete the following steps.
 1. In the **Manage** pane, select **Environment groups**.
 1. In the **Environment groups** page, select the environment group where the policy will be applied.
 1. The environment group's page is displayed. Select the **Rules** tab.
-1. Selecct **Advanced connector policies (preview)**. The **Advanced connector policies (preview)** pane is displayed.
+1. Select **Advanced connector policies (preview)**. The **Advanced connector policies (preview)** pane is displayed.
 1. Define the policy. Keep the following points in mind:
-   - By default, the non-blockable connectors are pre-loaded as _allowed_.
+   - By default, the nonblockable connectors are preloaded as _allowed_.
    - To add new connectors, select **Add connectors** to choose from all certified connectors.
    - To remove connectors, select them and then select **Remove connector**.  You can remove any connector to block it.
 1. When all connectors are set as you require, select **Save**.
-1. The envrioment group's page is redisplayed. After all rules are updated to your requirements, select **Publish rules** in the command bar.
+1. The environment group's page is redisplayed. After all rules are updated to your requirements, select **Publish rules** in the command bar.
 
 ## [Classic admin center](#tab/classic)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Environment groups**.
 1. In the **Environment groups** page, select the environment group where the policy will be applied.
 1. The environment group's page is displayed. Select the **Rules** tab.
-1. Selecct **Advanced connector policies (preview)**. The **Advanced connector policies (preview)** pane is displayed.
+1. Select **Advanced connector policies (preview)**. The **Advanced connector policies (preview)** pane is displayed.
 1. Define the policy. Keep the following points in mind:
-   - By default, the non-blockable connectors are pre-loaded as _allowed_.
+   - By default, the nonblockable connectors are preloaded as _allowed_.
    - To add new connectors, select **Add connectors** to choose from all certified connectors.
    - To remove connectors, select them and then select **Remove connector**.  You can remove any connector to block it.
 1. When all connectors are set as you require, select **Save**.
-1. The envrioment group's page is redisplayed. After all rules are updated to your requirements, select **Publish rules** in the command bar.
+1. The environment group's page is redisplayed. After all rules are updated to your requirements, select **Publish rules** in the command bar.
 ---
 
 During publishing, an environment lifecycle operation is performed on every environment that's part of the group, or the individual environment depending on where you are configuring the policy. This operation is available in environment history as *Update Managed Environment Settings* and cascades the new connector policy to the design time and runtime infrastructure.
 
 ### More visibility and control
 
-Previously, in [data policies](managed-environment-data-policies.md) customers couldn't see triggers, internal actions, or if an action is deprecated.  We have now added these tags across all certified connectors so that administrators can quickly decide to block specific triggers from use or turning off actions which are deprecated and no longer supported by the connector publisher.
+Previously, in [data policies](managed-environment-data-policies.md) customers couldn't see triggers, internal actions, or if an action is deprecated.  We have added these tags across all certified connectors so that administrators can quickly decide to block specific triggers from use or turning off actions which are deprecated and no longer supported by the connector publisher.
 
 :::image type="content" source="media/advanced-connector-policies-2.png" alt-text="Text." lightbox="media/advanced-connector-policies-2.png":::
 
 ### Easier management experience
 
-We have taken feedback from customers and drastically simplified the management experience by making the policy a strict allow list. When configured, all new connectors are blocked. If you configure the allowed actions on a given connector, then no new actions, triggers, or internal actions are allowed. The concept of the business and non-business categories in data policies has not been brought forward, as it was not deemed effective in policy management.  
+Based on customer feedback, we drastically simplified the management experience by making the policy a strict allow list. When configured, all new connectors are blocked. If you configure the allowed actions on a given connector, then no new actions, triggers, or internal actions are allowed. The concept of the business and nonbusiness categories in data policies have not been brought forward, as it was not deemed effective in policy management.  
 
 ### Proactive policy management
 
-Advanced connector policies has shipped as part of environment groups and rules. These have publicly documented APIs available on [Power Platform API](/rest/api/power-platform/environmentmanagement/environment-groups) so that you can build automated scenarios such as creating new policies, updating policies, and moving environments in to groups for management at scale. 
+Advanced connector policies have shipped as part of environment groups and rules. These have publicly documented APIs available on [Power Platform API](/rest/api/power-platform/environmentmanagement/environment-groups) so that you can build automated scenarios such as creating new policies, updating policies, and moving environments in to groups for management at scale. 
 
 ## Data policy mixed mode
 
@@ -92,5 +92,5 @@ In the future, a separate rule will become available to allow you to skip data p
 
 ## Provide Feedback
 
-Trying out the new advanced connector policies? We would love your feedback! Please join our Viva Engage network for keeping the conversation going under non-disclosure agreement (NDA):
+Trying out the new advanced connector policies? We would love your feedback! Join our Viva Engage network for keeping the conversation going under non-disclosure agreement:
 [Public Preview - Advanced Connector Policies](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=215134347264&view=all).
