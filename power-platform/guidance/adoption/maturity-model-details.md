@@ -21,27 +21,37 @@ The aim of the adoption maturity model is to provide organizations and their par
 
 The following sections present detailed characteristics and capabilities of an organization in each stage.
 
-## Strategy and Vision
+## Strategy and vision
 
 | Level | State of Strategy and Vision |
 |----------|-----------|
 | 100: Initial | <ul><li>Innovation driven by business areas (bottom up)</li><li>Low-complexity scenarios</li><li>Limited reuse</li><li>Undefined strategy</li></ul> |
-| 200: Repeatable | <ul><li>Common vision between IT and business</li><li>Demand-management process</li></ul> |
-| 300: Defined | <ul><li>Dedicated Power Platform product owner</li><li>Bottom-up and top-down innovation</li><li>Defined understanding of Power Platform’s role in your organization’s IT portfolio</li></ul> |
+| 200: Repeatable | <ul><li>Defined [vision, metrics, and goals](vision.md) of what the organization wants to achieve with Power Platform</li><li>Common vision between IT and business</li><li>Demand-management process</li></ul> |
+| 300: Defined | <ul><li>[Executive sponsor](executive-sponsorship.md) formulates a strategic vision and priorities for Power Platform and low code</li><li>Dedicated Power Platform product owner</li><li>Bottom-up and top-down innovation</li><li>Defined understanding of Power Platform’s role in your organization’s IT portfolio</li><li>Defined [roles and responsibilities](roles.md) for key areas like governance and community</li></ul> |
 | 400: Capable | <ul><li>Established [Center of Excellence](coe.md) team</a></li><li>Increased delivery efficiency supports rapidly changing business needs</li><li>Business plans shared across departments</li></ul> |
 | 500: Efficient | <ul><li>Power Platform is key part of the digital transformation strategy</li><li>Vision and strategy understood by all</li><li>Organization-wide initiatives deliver larger-scale apps</li><li>Enterprise architecture decisions include Power Platform capabilities</li></ul> |
 
-## Business Value
+## Business value
 
 | Level | State of Business Value |
 |----------|-----------|
 | 100: Initial | <ul><li>No formal business value assessment</li><li>Undefined targets</li></ul> |
 | 200: Repeatable | <ul><li>No formal business value assessment</li><li>Business cases understood but lacking review</li></ul> |
-| 300: Defined | <ul><li>Key performance indicators (KPIs) understood, operationalized, reported on, and reviewed against goals</li><li>Ideas with the highest business value are chosen for development</li><li>Business pain points are quantified before project start and compared after finish</li></ul> |
-| 400: Capable | <ul><li>Precise quantitative and qualitative measures used to effectively control, predict, and improve business efficiency</li><li>[CoE Starter Kit and Innovation Backlog](../coe/use-innovationbacklog.md) or equivalent tooling for measuring business value adopted</li></ul> |
+| 300: Defined | <ul><li>[Key performance indicators (KPIs) understood](business-value.md), operationalized, reported on, and reviewed against goals</li><li>Ideas with the highest business value are chosen for development</li><li>Business pain points are quantified before project start and compared after finish</li></ul> |
+| 400: Capable | <ul><li>Precise quantitative and qualitative measures used to effectively control, predict, and improve business efficiency</li><li>[Business Value toolkit](business-value-methods.md#business-value-toolkit) or equivalent tooling for measuring business value adopted</li><li>Reports on business value of Power Platform solutions are shared with key stakeholders</li></ul> |
 | 500: Efficient | <ul><li>“Big picture” analytics visualize business value of Power Platform solutions all-up and per business area</li><li>Advanced dashboard and reporting provide decision-making capabilities and measure business value</li><li>Executive visibility of business value and impact of Power Platform solutions</li></ul> |
 
-## Admin and Governance
+## Security
+
+| Level | State of Admin and Governance |
+|----------|-----------|
+| 100: Initial | <ul><li>Uses basic Microsoft Entra ID for user authentication and access control.</li><li>No data loss prevention policies (DLP)</li><li>No monitoring of Power Platform activity</li></ul> |
+| 200: Repeatable | <ul><li>Default environment covered by [DLP controls](dlp-strategy.md)</a></li><li>[Tenant isolation](data-protection.md#cross-tenant-inbound-and-outbound-restrictions) is configured</li></ul> |
+| 300: Defined | <ul></ul> |
+| 400: Capable |  |
+| 500: Efficient |  |
+
+## Governance
 
 | Level | State of Admin and Governance |
 |----------|-----------|
@@ -51,7 +61,7 @@ The following sections present detailed characteristics and capabilities of an o
 | 400: Capable | <ul><li>Overshared, unused, and orphaned resources are identified and appropriate actions are taken</li><li>Reactive governance to automatically gather business and compliance information</li><li>[CoE Starter Kit - Governance Module](../coe/governance-components.md) adopted to gain compliance insights and archive resources</li><li>Telemetry helps identify business-critical apps</li><li>Power Platform Operations team looks after tenant hygiene</li><li>Maker responsibilities are clearly defined and understood and automatically communicated</li></ul> |
 | 500: Efficient | <ul><li>Further automation takes place through chatbots embedded in Teams &#8211; through clear risk profiles, tasks are auto-approved or routed through multi-step approval processes (for example, line manager, information security department, environment, or tenant admin)</li><li>Practices that worked in their organization are shared externally at Microsoft or  community events</li></ul> |
 
-## Support
+## Operations
 
 | Level | State of Support |
 |----------|-----------|
@@ -61,7 +71,7 @@ The following sections present detailed characteristics and capabilities of an o
 | 400: Capable | <ul><li>Dedicated support team</li><li>Continuous improvement plans in line with business strategy</li><li>Clearly understood roles and responsibilities</li></ul>|
 | 500: Efficient |<ul><li>Automation of support activities (for example, change ownership, bot for FAQ)</li><li>Responsibilities and ownership to build and operate solutions are fully understood</li></ul> |
 
-## Nurture and Citizen Makers
+## Community
 
 | Level | State of Nurture and Citizen Makers |
 |----------|-----------|
@@ -90,9 +100,6 @@ The following sections present detailed characteristics and capabilities of an o
 | 300: Defined | <ul><li>Teams plan work as a team, but operate independently</li><li>Teams manage source control and app lifecycles</li><li>[Standard libraries, custom connectors and components](reusable.md) to be consumed by makers</li></ul> |
 | 400: Capable | <ul><li>Cross-functional teams plan and execute work jointly, including makers, testers, and operational teams.</li><li>Collaborative planning for infrastructure and change enablement</li><li>Use of Common Data Model to aid data reuse</li></ul>|
 | 500: Efficient |<ul><li>Teams form seamlessly to accommodate cross-functional skills</li><li>Common development strategy and goals for citizen and pro developers needed for new projects</li></ul>  |
-
-> [!NOTE]
-> You can [download a printable version](https://go.microsoft.com/fwlink/?linkid=2174946) of the Power Platform adoption maturity model.
 
 ## Power Platform adoption
 
