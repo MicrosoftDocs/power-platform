@@ -43,7 +43,7 @@ Background operations in Dataverse employ:
   - Including a callback URL with your request.
   - Subscribing to the `OnBackgroundOperationComplete` event.
   
-- **Error handling:** If an error occurs during the execution of a background operation, Dataverse employs a retry mechanism. The system retries the failed request up to three times, using an [exponential backoff strategy](https://en.wikipedia.org/wiki/Exponential_backoff).
+- **Error handling:** If an error occurs during the execution of a background operation, Dataverse employs a retry mechanism. The system retries the failed request up to three times, using an [exponential backoff strategy](/power-platform/well-architected/reliability/handle-transient-faults).
 
 ### Makers
 
