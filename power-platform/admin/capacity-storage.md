@@ -165,6 +165,10 @@ To view this page, select **Resources** > **Capacity** > **Trials** tab.
 |Download     | Select **Download** above the list of environments to download an Excel .CSV file with high-level storage information for each environment that the signed-in admin has permission to see in the Power Platform admin center.        |
 |Search     | Use **Search** to search by the environment name and the environment type.         |
 
+
+
+
+
 ## Dataverse page in Licenses (preview)
 
 > [!IMPORTANT]
@@ -243,6 +247,12 @@ In the **Dataverse** tab, you can allocate capacity to a specific environment. O
 1. Allocate capacity by entering the desired value in the **Database**, **File**, and **Log** fields. Ensure the capacity values are positive integers and don't exceed the available capacity displayed at the top of the panel.
 1. Opt in to receive daily email alerts sent to tenant and environment admins when the consumed capacity (Database, Log, or File) reaches a set percentage of the allocated capacity.
 1. Select **Save** to apply the changes.
+
+
+
+
+
+
 
 #### Managing capacity overage 
 When an environment's capacity consumption exceeds the preallocated capacity, you have two options to manage the overage:   
