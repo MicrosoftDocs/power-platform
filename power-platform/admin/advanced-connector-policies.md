@@ -54,8 +54,7 @@ To configure an advanced connector policy, complete the following steps.
 
 ## [Classic admin center](#tab/classic)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Manage**.
-1. In the **Manage** pane, select **Environment groups**.
+1. In the navigation pane, select **Environment groups**.
 1. In the **Environment groups** page, select the environment group where the policy will be applied.
 1. The environment group's page is displayed. Select the **Rules** tab.
 1. Selecct **Advanced connector policies (preview)**. The **Advanced connector policies (preview)** pane is displayed.
@@ -67,13 +66,14 @@ To configure an advanced connector policy, complete the following steps.
 1. The envrioment group's page is redisplayed. After all rules are updated to your requirements, select **Publish rules** in the command bar.
 ---
 
-During publishing, an environment lifecycle operation will be performed on every environment that is part of the group, or the individual environment depending on where you are configuring the policy.  This operation will be available in environment history as *Update Managed Environment Settings* and will be what cascades the new connector policy to the design time and runtime infrastructure.
+During publishing, an environment lifecycle operation is performed on every environment that's part of the group, or the individual environment depending on where you are configuring the policy. This operation is available in environment history as *Update Managed Environment Settings* and cascades the new connector policy to the design time and runtime infrastructure.
 
 ### More visibility and control
 
-Previously, in Data Policies (DLP) customers could not see Triggers, Internal Actions, or if an action is Deprecated.  We have now added these tags across all certified connectors so that administrators can quickly decide to block specific triggers from use or turning off actions which are deprecated and no longer supported by the connector publisher.
+Previously, in [data policies](managed-environment-data-policies.md) customers couldn't see triggers, internal actions, or if an action is deprecated.  We have now added these tags across all certified connectors so that administrators can quickly decide to block specific triggers from use or turning off actions which are deprecated and no longer supported by the connector publisher.
 
 <img src="media/advanced-connector-policies-2.png" width="600px" />
+:::image type="content" source="media/advanced-connector-policies-2.png" alt-text="Admins can quickly decide to block specific triggers from use or turning off actions which are deprecated and no longer supported by the connector publisher." lightbox="media/advanced-connector-policies-2.png":::
 
 ### Easier management experience
 
