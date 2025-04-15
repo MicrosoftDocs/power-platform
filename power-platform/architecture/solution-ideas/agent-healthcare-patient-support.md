@@ -24,7 +24,7 @@ The Healthcare Patient Support Agent is designed to streamline patient interacti
 
 This article outlines the key components and workflows of the architecture, offering a blueprint for implementing a robust patient support system in healthcare environments.
 
-[!INCLUDE [pp-arch-solution-idea-tip](../../includes/pp-arch-solution-idea-tip.md)**]
+[!INCLUDE [pp-arch-solution-idea-tip](../../includes/pp-arch-solution-idea-tip.md)]
 
 ## Architecture diagram
 
@@ -83,7 +83,7 @@ Patients face delays in responses to their inquiries and a negative experience d
 
 ## Considerations
 
-[!INCLUDE [pp-arch-ppwa-link**](../../includes/pp-arch-ppwa-link.md)**]
+[!INCLUDE [pp-arch-ppwa-link**](../../includes/pp-arch-ppwa-link.md)]
 
 ### Security
 
@@ -111,7 +111,7 @@ The Patient interactions agent integrates natural language processing and knowle
 
 Privacy and security: Patient data is protected by encryption and complies with [Health Insurance Portability and Accountability Act (HIPAA)](/compliance/regulatory/offering-hipaa-hitech) requirements.
 
-## Related content
+## Related resources
 
 - [Power Platform Well-Architected](/power-platform/well-architected)
 - [Azure Synapse Analytics](/azure/synapse-analytics/)
