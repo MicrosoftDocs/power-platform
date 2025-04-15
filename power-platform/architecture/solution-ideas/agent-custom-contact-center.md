@@ -139,7 +139,7 @@ Learn more in [Introduction to conversational experiences](/microsoft-copilot-st
 
 Ensure fair treatment across all customer segments by actively addressing bias and maintaining equity in every interaction. Transparently disclose data sources with appropriate links, enforce strict data privacy and security protocols, and incorporate human oversight to continuously monitor these processes. Learn more in [Responsible AI considerations for intelligent application workloads](/power-platform/well-architected/intelligent-application/responsible-ai).
 
-## Related content
+## Related resources
 
 - [Power Platform Well-Architected](/power-platform/well-architected/)
 - [Copilot Studio documentation](/microsoft-copilot-studio/)
