@@ -123,7 +123,7 @@ This scenario involves the following components:
 
 - **Power BI dashboard**: Helps compliance officers and auditors review loan records for compliance with regulatory requirements.
 
-  :::image type="content" source="media/dataverse-auditing/business-event.png" alt-text="Diagram illustrating a sample business auditing workflow with Dataverse, Power Automate, and Power BI.":::
+  :::image type="content" source="media/dataverse-auditing/business-event.png" alt-text="Diagram illustrating a sample business auditing workflow with Dataverse, Power Automate, and Power BI." lightbox="media/dataverse-auditing/business-event.png":::
 
 The workflow for business event auditing in the example loan approval process includes the following steps:
 
