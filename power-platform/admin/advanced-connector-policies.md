@@ -90,7 +90,7 @@ At runtime, when a connector operation is invoked, it queries the effective poli
 
 In the future, a separate rule will become available to allow you to skip data policy evaluation in favor of only relying upon connector policy.  
 
-## Provide Feedback
+## Provide feedback
 
 Trying out the new advanced connector policies? We would love your feedback! Join our Viva Engage network for keeping the conversation going under non-disclosure agreement:
 [Public Preview - Advanced Connector Policies](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=215134347264&view=all).
