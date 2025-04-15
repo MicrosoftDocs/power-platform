@@ -37,8 +37,7 @@ Here are the power automate operational health metrics and recommendations that 
 ### Metric and Recommendation pairings
 | Metric | Secondary metric | Recommendation | Example |
 |---|---|---|---|
-| Success Rate |  |Review the list of runs and open flow or run details to troubleshoot.| 
-| Time to interactive || Coming soon | Coming soon |
-| Time to full load || Coming soon | Coming soon |
+| Success Rate |  |Review the list of runs and open flow or run details to troubleshoot.|| 
+| Time in queue|| Investigate and adjust the machine capacity and prioritization. |  |
 
 
