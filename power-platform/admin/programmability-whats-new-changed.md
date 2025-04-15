@@ -26,6 +26,7 @@ Learn about the latest changes and new capabilities for Power Platform API and a
 | Retrieve Temporary Currency Entitlement Count | API | New endpoint: [Retrieve Temporary Currency Entitlement Count](/rest/api/power-platform/licensing/temporarycurrencyentitlement/retrieve-temporary-currency-entitlement-count) |
 | Get Tenant Capacity Details | API | New endpoint: [Get Tenant Capacity Details](/rest/api/power-platform/licensing/tenantcapacitydetails/get-tenant-capacity-details) |
 | List Currency Reports | API | New endpoint: [List Currency Reports](/rest/api/power-platform/licensing/currencyreports/list-currency-reports) | 
+| Microsoft.PowerApps.CLI | SDK | [Monthly release](https://www.nuget.org/packages/Microsoft.PowerApps.CLI/1.41.1#releasenotes-body-tab) |  
 
 ## February 2025
 
@@ -40,6 +41,7 @@ Learn about the latest changes and new capabilities for Power Platform API and a
 | Update Rule Based Policy by ID | API | New endpoint: [Update Rule Based Policy By ID](/rest/api/power-platform/governance/rulebasedpolicies/update-rule-based-policy-by-id) |
 | Create Environment Group Rule Based Assignment | API | New endpoint: [Create Environment Group Rule Based Assignment](/rest/api/power-platform/governance/rulebasedpolicies/create-environment-group-rule-based-assignment) |
 | List Rule Assignments | API | New endpoint: [List Rule Based Assignments](/rest/api/power-platform/governance/rulebasedpolicies/list-rule-assignments) |
+| Microsoft.PowerApps.CLI | SDK | [Monthly release](https://www.nuget.org/packages/Microsoft.PowerApps.CLI/1.40.4#releasenotes-body-tab) |  
 
 
 ## January 2025
