@@ -50,7 +50,7 @@ Understanding reference architectures and exploring solution ideas can help you 
 | [**Travel concierge using generative AI with Copilot Studio**](../solution-ideas/agent-travel-customer.md) | Employ an AI-driven solution to enhance customer interactions and streamline information access. |
 | [**Ticket management system with Copilot Studio agents**](../solution-ideas/agent-ticket-and-refund.md) | Improve ticket refund and management processes by deploying both a user-based and autonomous agent to integrate with legacy systems. |
 
-## Related content
+## Related resources
 
 - [Power Automate documentation](/power-automate/)
 - [Power Automate guidance](/power-automate/guidance/)

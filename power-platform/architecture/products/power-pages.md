@@ -42,7 +42,7 @@ Understanding Power Pages architecture concepts and exploring solution ideas can
 | [**Property rental portal with AI-driven search and payment processing**](../solution-ideas/agent-rental-portal.md) | Build a comprehensive rental portal that uses AI-driven search capabilities and seamless payment processing. |
 | [**Healthcare Patient Support Agent**](../solution-ideas/agent-healthcare-patient-support.md) | Streamline patient interactions and reduce administrative burdens for healthcare providers. |
 
-## Resources
+## Related resources
 
 - [Power Pages documentation](/power-pages/)
 - [Power Pages guidance](/power-pages/guidance/)

@@ -42,7 +42,7 @@ Understanding Copilot Studio architecture concepts and exploring solution ideas 
 | [**Travel concierge using generative AI with Copilot Studio**](../solution-ideas/agent-travel-customer.md) | Employ an AI-driven solution to enhance customer interactions and streamline information access. |
 | [**Ticket management system with Copilot Studio agents**](../solution-ideas/agent-ticket-and-refund.md) | Improve ticket refund and management processes by deploying both a user-based and autonomous agent to integrate with legacy systems. |
 
-## Related content
+## Related resources
 
 - [Copilot Studio documentation](/microsoft-copilot-studio/)
 - [Copilot Studio guidance](/microsoft-copilot-studio/guidance/)
