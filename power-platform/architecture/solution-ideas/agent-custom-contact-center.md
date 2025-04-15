@@ -4,7 +4,7 @@ description: Explore a custom contact center solution that uses Copilot Studio t
 #customer intent: As a Power Platform user, I want to explore an example implementation that uses integrated platforms and solutions so that I can gain insights into improving my own organization's customer service.
 author: manuelap-msft
 ms.subservice: architecture-center
-ms.topic: conceptual
+ms.topic: solution-idea
 ms.date: 04/06/2025
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
