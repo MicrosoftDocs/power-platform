@@ -20,23 +20,23 @@ search.audienceType:
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 ## Overview
-Advanced Connector Policies (ACP) represent the next generation of securing connector usage within the Power Platform. This feature provides a modern and flexible approach to managing all [Certified Connectors](/power-platform/admin/dlp-connector-classification), aligning with the broader governance strategy of per-environment security controls paired with [environment group support](power-platform/admin/environment-groups).
+Advanced connector policies (ACP) represent the next generation of securing connector usage within the Power Platform. This feature provides a modern and flexible approach to managing all [certified connectors](/power-platform/admin/dlp-connector-classification), aligning with the broader governance strategy of per-environment security controls paired with [environment group support](power-platform/admin/environment-groups).
 
-By adopting Advanced Connector Policies, administrators gain greater control and granularity in securing and managing connector usage while enhancing the overall governance of their Power Platform environments.
+By adopting advanced connector policies, administrators gain greater control and granularity in securing and managing connector usage while enhancing the overall governance of their Power Platform environments.
 
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
 ## Known limitations
 
-While Advanced Connector Policies (ACP) offer robust capabilities, there are a few limitations to consider:
+While advanced connector policies (ACP) offer robust capabilities, there are a few limitations to consider:
 
-1. **Environment Group dependencies**: Per-environment support is not yet available.  When it becomes available we will update this article.
-2. **Endpoint filtering**: Endpoint filtering will be replaced by a broader Connection Parameter Filtering capability of which is not yet available.
-3. **Managed environments**: This feature require's managed environments to be enabled.  In the future you will be able to use it on non-managed environments provided that you are not limiting the non-blockable connectors.  
+1. **Environment group dependencies**: Per-environment support isn't yet available. When it becomes available, we'll update this article.
+2. **Endpoint filtering**: Endpoint filtering will be replaced by a broader connection parameter filtering capability of which isn't yet available.
+3. **Managed Environments**: This feature requires Managed Environments to be enabled.  In the future, you'll be able to use it on non-Managed Environments provided that you're not limiting the non-blockable connectors.  
 
-## Configure a Policy
+## Configure an advanced connector policy
 
-To configure an Advanced Connector Policy, follow these steps:
+To configure an advanced connector policy, complete the following steps.
 
 1. **Access the Admin Center**: Navigate to the Power Platform Admin Center and select the environment group where the policy will be applied.
 2. **Select the Rules tab**: Under the Rules tab, choose **Advanced Connector Policies (Preview)**.
