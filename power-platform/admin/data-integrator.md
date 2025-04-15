@@ -13,6 +13,8 @@ search.audienceType:
 ---
 # Integrate data into Microsoft Dataverse
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 The Data Integrator (for Admins) is a point-to-point integration service used to integrate data into Dataverse. It supports integrating data between finance and operations apps and Dataverse. It also supports integrating data into finance and operations apps and Dynamics 365 Sales. This service has been generally available since July 2017.   
 
 > [!NOTE]

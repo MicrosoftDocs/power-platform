@@ -13,6 +13,8 @@ search.audienceType:
 ---
 # On-off switch for Learning Path (guided help)
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 Learning Path (guided help) is turned on by default.  
   
 ## Turn Learning Path on or off for an individual user  

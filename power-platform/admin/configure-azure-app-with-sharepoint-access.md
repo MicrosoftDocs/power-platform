@@ -1,12 +1,13 @@
 ---
-title: Configure Azure App with SharePoint access
-description: Learn how to configure an Azure App for SharePoint access to enable API integration with Dynamics 365. Follow our step-by-step guide.
+title: Configure Azure app for SharePoint access
+description: Learn how to configure an Azure app for SharePoint access to allow API integration with Dynamics 365. Follow our step-by-step guide.
 author: adrianorth
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/14/2025
+ms.date: 03/11/2025
 ms.subservice: admin
 ms.author: aorth
+ms.reviewer: sericks
 search.audienceType:
   - admin
 ms.custom:
@@ -15,6 +16,8 @@ ms.custom:
   - ai-seo-date:01/14/2025
 ---
 # Configure Azure app for SharePoint access
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 Using the SharePoint Documents table in a Dynamics 365 environment outside of the documents grid in a model driven app requires an Azure application to grant access. Examples of this access include use within Power Automate or with Dataverse API calls. The setup uses the Power Platform Managed Identities with Azure to grant access.
 
@@ -113,13 +116,16 @@ An example using POST:
   "sharepointmanagedidentityid": "<newGuid>",
   "uniquename": "msft_ppmiforsharepointauth",
   "name": "Managed Identity For SharePoint Auth",
-  "ManagedIdentity@odata.bind": "/managedidentities(<managedIdentityId>)"
+  "ManagedIdentityId@odata.bind": "/managedidentities(<managedIdentityId>)"
   }
   ```
 
 ## Create federated credential
 
 Create a federated credential for the app registration. Learn more about federated identity credentials in [Configure an application for federated identity credential](/entra/workload-id/workload-identity-federation-config-app-trust-managed-identity?tabs=microsoft-entra-admin-center).
+
+> [!NOTE]
+> Federated identity credentials through Power Platform managed identity is generally available and fully supported for the SharePoint document integration. The Power Platform managed identity is used for many scenarios, but not all are generally available. However, this case is fully supported.
 
 1. Open the [Azure portal](https://portal.azure.com/).
 
@@ -144,10 +150,173 @@ Create a federated credential for the app registration. Learn more about federat
 
 1. In the **Value** field, enter the Subject Identifier:
 
-    - Value format: `/eid1/c/pub/t/v4j5cvGGr0GRqy180BHbRw/a/CQSGf3JJtEi27nY2ePL7UQ/Env/<orgid>/sharepointmanagedidentity/<sharepointmanagedidentityid>`
+    - Value format: `/eid1/c/pub/t/<base64-encoded-tenantId>/a/<base64-encoded-appid>/Env/<orgid>/sharepointmanagedidentity/<sharepointmanagedidentityid>`
+    - Replace `<base64-encoded-tenantId>` with the based64 encoded tenant ID.
+    - Replace `<base64-encoded-appid>` with the base64 encoded app client ID.
     - Replace `<orgid>` with the organization ID.
     - Replace `<sharepointmanagedidentityid>` with the GUID created earlier with the sharepointmanagedidentities record.
+
+   > [NOTE!]
+   > Use the script in [Generate the subject identifer](#generate-the-subject-identifer) to generate the subject identifier value with the base64 encoded values.
 
 1. Select **Add** to create the credential.
 
 By following these steps, you configure an Azure application with the necessary SharePoint permissions, set up managed identities in Dataverse, and configure federated credentials.
+
+## Generate the subject identifer
+
+This script generates the subject identifier value based on values provided in JavaScript.
+
+1. Open the Dynamics 365 application in a browser.
+
+1. Open the browser tools to the console.
+
+1. Copy the following JavaScript and set the value for the variable **sharePointManagedIdentityId**.
+      
+    ```JavaScript
+    // Replace with the id for SharePoint Managed Identity that was created attribute name: sharepointmanagedidentityid.
+    // Refer to the following documentation for configuring an aad app for SharePoint access:
+    //     https://learn.microsoft.com/en-us/power-platform/admin/configure-azure-app-with-sharepoint-access
+    // For the SharePoint Managed Identity creation, refer to the following documentation:
+    //     https://learn.microsoft.com/en-us/power-platform/admin/configure-azure-app-with-sharepoint-access#add-record-in-sharepoint-managed-identities-table
+    const sharePointManagedIdentityId = "";
+ 
+    const prefixForFICIssuer = "https://login.microsoftonline.com/";
+    const suffixForFICIssuer = "/v2.0";
+    const prefixForFICSubject = "/eid1/c/pub";
+    const tenantIdentifierForFICSubject = "/t/";
+    const appIdentifierForFICSubject = "/a/";
+    const environmentIdentifierForFICSubject = "/Env/";
+    const sharePointManagedIdentityIdentifierForFICSubject = "/sharepointmanagedidentity/";
+     
+    // This is the AAD App Id to be used for Power Platform Managed Identity: 58e835ab-2e39-46a9-b797-accce6633447
+    const powerPlatformManagedIdentityAppId = "58e835ab-2e39-46a9-b797-accce6633447";
+     
+    /**
+     * Represents a request for retrieving the current organization.
+     * @param {number} accessType - The access type (0 for Default, 1 for Internet, 2 for Intranet).
+     */
+    var RetrieveCurrentOrganizationRequest = function (accessType) {
+        this.AccessType = accessType;
+    };
+ 
+    /**
+     * Gets metadata for the request.
+     * @returns {Object} The metadata for the request.
+     */
+    RetrieveCurrentOrganizationRequest.prototype.getMetadata = function() {
+        return {
+            boundParameter: null,
+            parameterTypes: {
+                "AccessType": {
+                    "typeName": "Microsoft.Dynamics.CRM.EndpointAccessType",
+                    "structuralProperty": 3,  // Enum Type
+                    "enumProperties": [
+                        { "name": "Default", "value": 0 },
+                        { "name": "Internet", "value": 1 },
+                        { "name": "Intranet", "value": 2 }
+                    ]
+                }
+            },
+            operationType: 1, // This is a function
+            operationName: "RetrieveCurrentOrganization"
+        };
+    };
+     
+    /**
+     * Encodes a GUID to a Base64 URL-safe string.
+     *
+     * @param {string} guid - The GUID to encode.
+     * @returns {string} The Base64 URL-safe encoded string.
+     * @see {@link https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/btoa}
+     */
+    function encodeToBase64Url(guid) {
+        const buffer = [];
+        const regex = /.{1,2}/g;
+     
+        guid.split('-').forEach((number, index) => {
+            const bytesInChar = number.match(regex);
+            if (index < 3) bytesInChar.reverse();
+            bytesInChar.forEach(byte => buffer.push(parseInt(byte, 16)));
+        });
+     
+        const base64String = btoa(String.fromCharCode.apply(null, new Uint8Array(buffer)));
+     
+        // Make the Base64 string URL-safe by replacing '+' with '-' and '/' with '_'
+        // Remove any trailing '=' characters
+        return base64String.slice(0, 22).replace(/=+$/, '').replace(/\+/g, '-').replace(/\//g, '_');
+    }
+     
+    /**
+     * Construct the issuer URL using the tenant ID.
+     * This is needed for the issuer url in FIC configuration.
+     * @param {string} tenantId - The tenant ID.
+     * @returns {string} The constructed issuer URL.
+     * @example
+     * // Example for output
+     * // https://login.microsoftonline.com/your-tenant-id/v2.0
+     */
+    function constructIssuerUrlForFIC(tenantId) {
+        return `${prefixForFICIssuer}${tenantId}${suffixForFICIssuer}`;
+    }
+     
+    /**
+     * Constructs the subject url using the encoded tenant ID, encoded app ID, environment ID, and SharePoint managed identity ID.
+     * This is needed for the subject url in FIC configuration.
+     * @param {string} encodedTenantId - The encoded tenant ID.
+     * @param {string} encodedAppId - The encoded app ID.
+     * @param {string} environmentId - The environment ID.
+     * @param {string} sharePointManagedIdentityId - The SharePoint managed identity ID.
+     * @returns {string} The constructed subject string.
+     * @example
+     * // Example output: /eid1/c/pub/t/<EncodedTenantId>/a/<EncodedDV1PAppId>/Env/<EnvironmentId>/sharepointmanagedidentity/<sharePointManagedIdentityId>
+     */
+    function constructSubjectUrlForFIC(encodedTenantId, encodedAppId, environmentId, sharePointManagedIdentityId) {
+        return `${prefixForFICSubject}${tenantIdentifierForFICSubject}${encodedTenantId}${appIdentifierForFICSubject}${encodedAppId}${environmentIdentifierForFICSubject}${environmentId}${sharePointManagedIdentityIdentifierForFICSubject}${sharePointManagedIdentityId}`;
+    }
+     
+    (async () => {
+        try {
+            // Check if sharePointManagedIdentityId is null or undefined
+            if (!sharePointManagedIdentityId) {
+                console.error("SharePoint Managed Identity ID is null or undefined. Please ensure that the SharePoint Managed Identity ID is set.");
+                return;
+            }
+     
+            const accessType = 0;
+            const retrieveCurrentOrganizationRequest = new RetrieveCurrentOrganizationRequest(accessType);
+           
+            // Execute the request to retrieve the current organization details
+            // https://docs.microsoft.com/en-us/powerapps/developer/model-driven-apps/clientapi/reference/xrm-webapi/online/execute
+            // https://learn.microsoft.com/en-us/power-apps/developer/data-platform/webapi/web-api-functions-actions-sample#section-4-unbound-function-retrievecurrentorganization
+            const response = await Xrm.WebApi.online.execute(retrieveCurrentOrganizationRequest);
+            const result = await response.json();
+     
+            if (result.Detail) {
+                const { EnvironmentId: environmentId, TenantId: tenantId } = result.Detail;
+     
+                const encodedTenantId = encodeToBase64Url(tenantId);
+                const encodedPowerPlatformManagedIdentityAppId = encodeToBase64Url(powerPlatformManagedIdentityAppId);
+                const issuerUrlForFederatedCredentialConfig = constructIssuerUrlForFIC(tenantId);
+                const subjectUrlForFederatedCredentialConfig = constructSubjectUrlForFIC(encodedTenantId, encodedPowerPlatformManagedIdentityAppId,
+                     environmentId, sharePointManagedIdentityId);
+     
+                console.log(`SharePoint Managed Identity ID: ${sharePointManagedIdentityId},
+                    Tenant ID: ${tenantId},
+                    Encoded Tenant ID: ${encodedTenantId},
+                    Power Platform Managed Identity App ID: ${powerPlatformManagedIdentityAppId},
+                    Encoded App ID: ${encodedPowerPlatformManagedIdentityAppId},
+                    Issuer URL for Federated Credential Configuration: ${issuerUrlForFederatedCredentialConfig},
+                    Subject URL for Federated Credential Configuration: ${subjectUrlForFederatedCredentialConfig}`);
+            } else {
+                console.error("RetrieveCurrentOrganization response is missing detail.");
+            }
+        } catch (error) {
+            console.error(`Error executing request: ${error.message}`);
+        }
+    })();
+    ```
+
+1. Paste into the console to execute.
+
+1. Copy the **subject identifier** and paste into the **Value** field of the **Add credential**.

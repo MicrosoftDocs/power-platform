@@ -16,6 +16,8 @@ ms.contributors:
 ---
 # Opt in to early access updates 
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 Microsoft Power Platform and customer engagement apps teams deliver two [major releases](policies-communications.md#major-release-events) per year (April and October) that offer new capabilities and functionality.
 
 Each major release includes features that may affect the user experience. You may opt in for early access to update to the new release. Use the early enrollment period to validate the new functionality.
@@ -49,7 +51,7 @@ Early access begins approximately two months before general availability of each
 | United Arab Emirates         | January 27, 2025  |
 | Japan                        | January 27, 2025  |
 | Asia Pacific                 | January 27, 2025  |
-| Great Britain                | January 27, 2025  |
+| England                      | January 27, 2025  |
 | Australia                    | January 27, 2025  |
 | Europe                       | January 29, 2025 |
 | North America                | February 3, 2025 |

@@ -5,13 +5,15 @@ author: kacortez
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/05/2024
+ms.date: 2/20/2025
 ms.subservice: admin
 ms.author: kacortez
 search.audienceType: 
   - admin
 ---
 # Policies and communications for Power Platform and Dynamics 365 Services
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 ## Introduction
 
@@ -20,10 +22,7 @@ Microsoft regularly communicates work done to maintain and update Microsoft Powe
 For each of these scenarios, communication is provided through the Microsoft 365 admin center in the [Message Center](/microsoft-365/admin/manage/message-center), and the [Service health dashboard](/microsoft-365/enterprise/view-service-health). The Microsoft 365 admin center also has the ability to send email for a weekly digest of all messages, emails for major updates only, and emails for data privacy messages. You can opt in to this communication stream by following the instructions in [Preferences](/microsoft-365/admin/manage/message-center#preferences).
 
 > [!NOTE]
-> From time-to-time, Microsoft may also send direct email to users with the System Administrator role in a specifically impacted environment, or Microsoft Lifecycle Services project or environment. If you’re not sure who your admin is, learn more in [Find your administrator or support person](/powerapps/user/find-admin).  
-
-> [!IMPORTANT]
-> Starting December 1, 2024, only users assigned to the Dynamics 365 administrator or Power Platform administrator role in the Microsoft 365 admin center or Microsoft Entra admin center will receive email notifications. To assign a service admin role to a user, follow the instructions in [Assign a service admin role to a user](use-service-admin-role-manage-tenant.md#assign-a-service-admin-role-to-a-user).
+> Microsoft may also send direct email to users assigned to the Power Platform administrator or Dynamics 365 administrator role in an impacted tenant. If you’re not sure who your admin is, learn more in [Find your administrator or support person](/powerapps/user/find-admin). To assign a service admin role to a user, follow the instructions in [Assign a service admin role to a user](use-service-admin-role-manage-tenant.md#assign-a-service-admin-role-to-a-user).
   
 ## Scheduled system updates and maintenance
 
@@ -151,7 +150,6 @@ Because of the critical nature of service notifications and communications, ther
 
 - Download and install the [Microsoft 365 Admin mobile app](https://products.office.com/business/manage-office-365-admin-app) on your mobile device to view service updates and incident notifications 
 - Connect directly to our Service Communications using an externally accessible [Service Communication API](/office/office-365-management-api/office-365-service-communications-api-reference)
-- Use PowerShell to [configure additional notification email addresses](manage-email-notifications.md) in Dataverse  
 - [Track your message center tasks](/office365/planner/track-message-center-tasks-planner) in Planner 
   
 ### Notice about online policies

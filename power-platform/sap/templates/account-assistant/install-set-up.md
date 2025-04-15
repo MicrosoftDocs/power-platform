@@ -16,13 +16,13 @@ contributors:
   - MartinPankraz
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 12/16/2024
+ms.date: 02/11/2025
 ms.service: power-platform
 ms.subservice: sap
 # Customer intent: As an administrator, I want to learn how to access, install, and set up the Account assistant for SAP solutions.
 ---
 
-# Install and set up Account assistant for SAP solutions**
+# Install and set up Account assistant for SAP solutions
 
 To install and set up **Account assistant for SAP solutions**, be sure you review the prerequisites before you get started. Once you have all the requirements, follow the steps outlined in this article to install and set up the agent.
 

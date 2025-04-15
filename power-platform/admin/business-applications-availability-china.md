@@ -19,6 +19,8 @@ ms.contributors:
 ---
 # Power Apps operated by 21Vianet and Power Automate operated by 21Vianet
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 ## Overview
 
 Microsoft Dynamics 365 (Dynamics 365 Customer Service, Dynamics 365 Sales, Dynamics 365 Field Service, Dynamics 365 Finance, Dynamics 365 Supply Chain Management,and Dynamics 365 Project Operations) and Microsoft Power Platform (Microsoft Power BI, Power BI Premium, Power BI Embedded, Power Apps, and Power Automate) online services collectively known as “Business Applications” operated by 21Vianet are a physically separated instance of cloud services operated and transacted by a local operator, Shanghai Blue Cloud Technology Co., Ltd (“21Vianet”). This is a wholly owned subsidiary of Beijing 21Vianet Broadband Data Center Co., Ltd. located in China. These services are available to serve customers in regulated industries and commercial organizations that do business in China and require local data residency.

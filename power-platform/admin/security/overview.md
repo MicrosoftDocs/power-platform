@@ -15,6 +15,8 @@ search.audienceType:
 ---
 # Security in Microsoft Power Platform
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 Power Platform puts the power to quickly and easily create end-to-end solutions in the hands of non-professional and professional developers alike. Security is critical for these solutions. Power Platform is built to provide industry-leading protection.
 
 Organizations are accelerating their transition to the cloud, incorporating advanced technologies in operations and business decision-making. More employees are working remotely. Customer demand for online services is soaring. Traditional on-premise application security is no longer enough. Organizations looking for a cloud-native, multi-tiered, defense-in-depth security solution for their business intelligence data turn to Power Platform. National security agencies, financial institutions, and health care providers trust Power Platform with their most sensitive information.

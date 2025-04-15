@@ -7,7 +7,7 @@ ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 04/10/2023
-ms.subservice: guidance
+ms.subservice: guidance-toolkit
 ms.custom: bap-template
 ---
 

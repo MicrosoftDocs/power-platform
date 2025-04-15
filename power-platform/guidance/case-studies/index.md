@@ -5,8 +5,8 @@ author: robstand
 ms.author: rstand
 ms.reviewer: jhaskett-msft
 ms.subservice: guidance
-ms.topic: conceptual
-ms.date: 01/24/2025
+ms.topic: overview
+ms.date: 04/10/2025
 ---
 
 # Real-world case studies
@@ -33,3 +33,6 @@ Case studies are detailed accounts of real-world applications and implementation
 | [Epiq streamlines employee onboarding](streamline-employee-onboarding.md) | This case study covers how Epiq streamlines employee onboarding with Power Automate, Microsoft Dataverse, and AI Builder. |
 | [Degress of Change automates nonprofit operations](nonprofit.md) | This case study covers how Degrees of Change automates nonprofit operations with Power Pages, Power Apps, and AI Builder. |
 | [Cineplex automates business processes](automate-business-processes.md) | This case study covers how Cineplex automates business processes with generative AI and Power Automate. |
+| [EY automates payment processing](global-finance.md) | This case study covers how the Global Finance team at Ernst & Young used Power Automate, AI Builder, and Dataverse to automate customer payment processing. |
+| [John Cockerill streamlines enterprise business processes](engineering-time-tracking.md) | This case study covers how international engineering company John Cockerill uses Power Platform to develop enterprise apps. |
+| [Deutsche Bahn empowers citizen developers](db-empowers-citizen-devs.md) | This case study covers how Deutsche Bahn Group accelerated innovation by empowering their employees to build low-code business applications using Power Platform. |
