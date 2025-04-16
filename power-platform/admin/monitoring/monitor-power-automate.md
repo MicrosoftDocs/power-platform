@@ -21,7 +21,7 @@ contributors:
 [!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-Here are the power automate operational health metrics and recommendations that are available in Monitor. 
+Here are the Power Automate operational health metrics and recommendations that are available in Monitor. 
 
 ## Power Automate metrics and recommendations
 
