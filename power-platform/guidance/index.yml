@@ -62,10 +62,10 @@ productDirectory:
     - title: More...
       imageSrc: ./media/sample-more.svg
       links:
-        - url: /power-platform/guidance/architecture/real-world-examples/overview
-          text: Real-world solution architecture examples
-        - url: /power-platform/guidance/expressroute/overview
-          text: Azure ExpressRoute and Power Platform
+        - url: /power-platform/architecture/
+          text: Power Platform Architecture Center
+        - url: /power-platform/well-architected/
+          text: Power Platform Well-Architected
         - url: /power-platform/guidance/white-papers
           text: White papers
         - url: /power-platform/guidance/icons
