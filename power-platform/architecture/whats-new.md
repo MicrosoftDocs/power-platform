@@ -20,4 +20,4 @@ Get the latest info about what's new and what's changed in the Power Platform  a
 
 ## April 2025
 
-Welcome to the initial launch of the Power Platform  and Copilot Studio Architecture Center.
+Welcome to the initial launch of the Power Platform and Copilot Studio Architecture Center.

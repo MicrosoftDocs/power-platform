@@ -1,11 +1,11 @@
 ### YamlMime:Hub
-title: Microsoft Power Platform Architecture Center
-summary: Guidance for architecting solutions with Microsoft Power Platform using established patterns and best practices.
+title: Microsoft Power Platform and Copilot Studio Architecture Center
+summary: Guidance for architecting solutions with Microsoft Power Platform and Copilot Studio using established patterns and best practices.
 # brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-apps | power-automate | power-bi | power-platform | power-virtual-agents | sql | sql-server | vs | visual-studio | windows | xamarin
 brand: dynamics
 metadata:
-  title: Microsoft Power Platform Architecture Center
-  description: Guidance for architecting solutions with Power Platform using established patterns and best practices.
+  title: Microsoft Power Platform and Copilot Studio Architecture Center
+  description: Guidance for architecting solutions with Power Platform and Copilot Studio using established patterns and best practices.
   ms.service: power-platform
   ms.topic: hub-page
   ms.subservice: architecture-center
@@ -31,7 +31,7 @@ highlightedContent:
       itemType: how-to-guide
 # productDirectory section (optional)
 productDirectory:
-  title: Architecting workloads on Power Platform
+  title: Architecting workloads on Power Platform and Copilot Studio
   items:
     # Card
     - title: Architecture key concepts
@@ -44,7 +44,7 @@ productDirectory:
       - text: Distributed tracing across multiple services
         url: key-concepts/distributed-tracing.md
       - text: More...
-        url: key-concepts/key-concepts-overview.md
+        url: key-concepts/index.md
     # Card
     - title: Reference architectures
       imageSrc: /office/media/icons/blocks.png
@@ -56,7 +56,7 @@ productDirectory:
         - text: Secure Power Platform access to Azure resources
           url: reference-architectures/secure-access-azure-resources.md
         - text: More...
-          url: reference-architectures/reference-architecture-overview.md
+          url: reference-architectures/index.md
     # Card
     - title: Solution ideas
       imageSrc: /office/media/icons/lightbulb-idea-capture.png
@@ -68,7 +68,7 @@ productDirectory:
         - text: Revolutionize vehicle inspections with EVVIE
           url: solution-ideas/app-evvie.md
         - text: More...
-          url: solution-ideas/solution-idea-overview.md
+          url: solution-ideas/index.md
 
 # additionalContent section (optional)
 # Card with summary style
