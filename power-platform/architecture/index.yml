@@ -20,7 +20,7 @@ highlightedContent:
     # Card
     - title: Browse reference architectures
       itemType: architecture
-      url: reference-architectures/reference-architecture-overview.md
+      url: reference-architectures/index.md
     # Card
     - title: Learn what's new
       url: whats-new.md
