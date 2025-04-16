@@ -21,22 +21,22 @@ contributors:
 [!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-Here are the canvas app operational health metrics and recommendations that are available in Monitor. 
+Here are the Power App operational health metrics and recommendations that are available in Monitor. 
 
-## Canvas app metrics and recommendations
+## Power App metrics and recommendations
 
 ### Metric Definitions
-| Metric | Definition |
-|---|---|
-| App open success rate| A percentage that describes how often end-users are able to successfully open the app |
-| Time to interactive (TTI)| The time (in seconds) that end-users have to wait to be able to interact with the 1st screen after app launch |
-| Time to full load (TTFL) | The time (in seconds) that end-users have to wait to have all the data requests for the 1st screen after app launch |
+|Type | Metric | Definition |
+|---|---|---|
+|Canvas apps | App open success rate| A percentage that describes how often end-users are able to successfully open the app |
+|Canvas apps| Time to interactive (TTI)| The time (in seconds) that end-users have to wait to be able to interact with the 1st screen after app launch |
+|Canvas apps| Time to full load (TTFL) | The time (in seconds) that end-users have to wait to have all the data requests for the 1st screen after app launch |
 
 
 ### Metric and Recommendation pairings
-| Metric | Secondary metric | Recommendation | Example |
+| Metric | Secondary metric | Recommendation Title | Recommendation Description |
 |---|---|---|---|
-| App Open Success Rate | ErrorCode = AppForbidden | Evaluate if the app should be shared with users without permiission | "X% of sessions ended without users accessing the app becuase users didn't have permission to access the app. It's possible that the app may benefit from being shared with more users. The logs will show which users without permission attempting to open the app |
+| App Open Success Rate | ErrorCode = AppForbidden | Evaluate if the app should be shared with users without permiission | "X% of sessions ended without users accessing the app because users didn't have permission to access the app. It's possible that the app may benefit from being shared with more users. The logs will show which users without permission attempting to open the app" |
 | Time to interactive || Coming soon | Coming soon |
 | Time to full load || Coming soon | Coming soon |
 
