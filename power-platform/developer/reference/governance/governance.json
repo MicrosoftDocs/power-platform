@@ -10,6 +10,323 @@
     "https"
   ],
   "paths": {
+    "/governance/ruleBasedPolicies": {
+      "post": {
+        "tags": [
+          "RuleBasedPolicies"
+        ],
+        "summary": "Create rule based policy.",
+        "description": "Create new rule based policy. The input includes rule sets, inputs, and other metadata related to the policy.",
+        "operationId": "CreateRuleBasedPolicy",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/PolicyRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The details of the policy.",
+            "schema": {
+              "$ref": "#/definitions/RuleAssignment"
+            }
+          },
+          "400": {
+            "description": "Bad Request - The query parameters are invalid."
+          },
+          "401": {
+            "description": "Unauthorized - Invalid credentials or missing authentication."
+          },
+          "404": {
+            "description": "Not Found - The specified resource does not exist."
+          },
+          "500": {
+            "description": "Internal Server Error - Unexpected server error."
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "RuleBasedPolicies"
+        ],
+        "summary": "List rule based policies.",
+        "description": "List rule based policies available in the tenant.",
+        "operationId": "ListRuleBasedPolicies",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The list of policies.",
+            "schema": {
+              "$ref": "#/definitions/ListPolicyResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request - The query parameters are invalid."
+          },
+          "401": {
+            "description": "Unauthorized - Invalid credentials or missing authentication."
+          },
+          "404": {
+            "description": "Not Found - The specified resource does not exist."
+          },
+          "500": {
+            "description": "Internal Server Error - Unexpected server error."
+          }
+        }
+      }
+    },
+    "/governance/ruleBasedPolicies/{policyId}": {
+      "get": {
+        "tags": [
+          "RuleBasedPolicies"
+        ],
+        "summary": "Get rule based policy by ID.",
+        "description": "Retrieves details about a specific policy based on the policy ID. The response includes rule sets, inputs, and other metadata related to the policy.",
+        "operationId": "GetRuleBasedPolicyByID",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "policyId",
+            "description": "The unique identifier of the policy.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The details of the policy.",
+            "schema": {
+              "$ref": "#/definitions/Policy"
+            }
+          },
+          "400": {
+            "description": "Bad Request - The query parameters are invalid."
+          },
+          "401": {
+            "description": "Unauthorized - Invalid credentials or missing authentication."
+          },
+          "404": {
+            "description": "Not Found - The specified resource does not exist."
+          },
+          "500": {
+            "description": "Internal Server Error - Unexpected server error."
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "RuleBasedPolicies"
+        ],
+        "summary": "Update rule based policy by ID.",
+        "description": "Updates details about a specific policy based on the policy ID. The input includes rule sets, inputs, and other metadata related to the policy.",
+        "operationId": "UpdateRuleBasedPolicyByID",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "policyId",
+            "description": "The unique identifier of the policy.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/PolicyRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The details of the policy.",
+            "schema": {
+              "$ref": "#/definitions/RuleAssignment"
+            }
+          },
+          "400": {
+            "description": "Bad Request - The query parameters are invalid."
+          },
+          "401": {
+            "description": "Unauthorized - Invalid credentials or missing authentication."
+          },
+          "404": {
+            "description": "Not Found - The specified resource does not exist."
+          },
+          "500": {
+            "description": "Internal Server Error - Unexpected server error."
+          }
+        }
+      }
+    },
+    "/governance/ruleBasedPolicies/{policyId}/environmentGroups/{groupId}/assignments": {
+      "post": {
+        "tags": [
+          "RuleBasedPolicies"
+        ],
+        "summary": "Create environment group rule based assignment.",
+        "description": "Create new rule based policy assignment for an environment group. The input includes rule sets, inputs, and other metadata related to the policy.",
+        "operationId": "CreateEnviornmentGroupRuleBasedAssignment",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "policyId",
+            "description": "The unique identifier of the policy.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "groupId",
+            "description": "The unique identifier of the environment group.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The details of the policy.",
+            "schema": {
+              "$ref": "#/definitions/RuleAssignment"
+            }
+          },
+          "201": {
+            "description": "Record created",
+            "schema": {
+              "$ref": "#/definitions/RuleAssignment"
+            }
+          },
+          "400": {
+            "description": "Bad Request - The query parameters are invalid."
+          },
+          "401": {
+            "description": "Unauthorized - Invalid credentials or missing authentication."
+          },
+          "404": {
+            "description": "Not Found - The specified resource does not exist."
+          },
+          "500": {
+            "description": "Internal Server Error - Unexpected server error."
+          }
+        }
+      }
+    },
+    "/governance/ruleBasedPolicies/assignments": {
+      "get": {
+        "tags": [
+          "RuleBasedPolicies"
+        ],
+        "summary": "List rule based policy assignments.",
+        "description": "Retrieves a list of rule assignments for a tenant. This operation provides details about the policy assignments, including rule sets and associated resource types.",
+        "operationId": "ListRuleAssignments",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "includeRuleSetCounts",
+            "description": "Flag to include rule set counts in the response.",
+            "required": true,
+            "type": "boolean"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "A list of policy assignments.",
+            "schema": {
+              "$ref": "#/definitions/RuleAssignmentsResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request - The query parameters are invalid."
+          },
+          "401": {
+            "description": "Unauthorized - Invalid credentials or missing authentication."
+          },
+          "404": {
+            "description": "Not Found - The specified resource does not exist."
+          },
+          "500": {
+            "description": "Internal Server Error - Unexpected server error."
+          }
+        }
+      }
+    },
     "/governance/crossTenantConnectionReports": {
       "get": {
         "tags": [
@@ -146,6 +463,134 @@
     }
   },
   "definitions": {
+    "RuleAssignmentsResponse": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/RuleAssignment"
+          }
+        }
+      }
+    },
+    "ListPolicyResponse": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Policy"
+          }
+        }
+      }
+    },
+    "RuleAssignment": {
+      "type": "object",
+      "properties": {
+        "ruleSetCount": {
+          "description": "The count of rule sets assigned.",
+          "type": "integer"
+        },
+        "policyId": {
+          "description": "The unique identifier of the policy.",
+          "type": "string"
+        },
+        "tenantId": {
+          "description": "The unique identifier of the tenant.",
+          "type": "string"
+        },
+        "resourceId": {
+          "description": "The unique identifier of the resource.",
+          "type": "string"
+        },
+        "resourceType": {
+          "description": "The type of resource assigned to the rule.",
+          "enum": [
+            "NotSpecified",
+            "EnvironmentGroup"
+          ],
+          "type": "string",
+          "example": "EnvironmentGroup"
+        }
+      }
+    },
+    "PolicyRequest": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "The name of the policy.",
+          "type": "string",
+          "example": "Default Policy Name"
+        },
+        "ruleSets": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/RuleSet"
+          }
+        }
+      }
+    },
+    "Policy": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "The unique identifier of the policy assignment.",
+          "type": "string",
+          "example": "0946e801-254d-4698-b1e6-db43a52c017c"
+        },
+        "tenantId": {
+          "description": "The unique identifier of the tenant.",
+          "type": "string",
+          "example": "d8d86e5f-13e9-4bb5-bb94-0f99b507cd15"
+        },
+        "name": {
+          "description": "The name of the policy.",
+          "type": "string",
+          "example": "Default Policy Name"
+        },
+        "lastModified": {
+          "format": "date-time",
+          "description": "The date and time when the policy was last modified.",
+          "type": "string",
+          "example": "2025-04-11T13:41:32.0000000+00:00"
+        },
+        "ruleSets": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/RuleSet"
+          }
+        },
+        "ruleSetCount": {
+          "description": "The number of rule sets associated with this policy.",
+          "type": "integer",
+          "example": 2
+        }
+      }
+    },
+    "RuleSet": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "The unique identifier of the rule set.",
+          "type": "string",
+          "example": "ConnectorManagement"
+        },
+        "version": {
+          "description": "The version of the rule set.",
+          "type": "string",
+          "example": "1.0"
+        },
+        "inputs": {
+          "description": "The inputs for the rule set, which may vary based on the rule.",
+          "type": "object",
+          "example": {
+            "AllowedConnectorList": [ ],
+            "tsg": ""
+          }
+        }
+      }
+    },
     "CrossTenantConnection": {
       "required": [
         "tenantId",
