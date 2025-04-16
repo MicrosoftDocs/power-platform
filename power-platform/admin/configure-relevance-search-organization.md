@@ -6,6 +6,7 @@ ms.component: pa-admin
 ms.topic: get-started
 ms.date: 04/03/2025
 ms.subservice: admin
+ms.custom: NewPPAC
 ms.author: maaraujo
 ms.reviewer: EllenWehrle
 search.audienceType: 
@@ -106,19 +107,25 @@ Individual users aren't able to switch to [Quick Find search, formerly known as
 
 Take these steps to turn on Dataverse search:
 
-1. Open the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) as a system administrator.
+## [New admin center](#tab/new)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. In the **Environments** page, select an environment.
+1. Select **Settings** in the command bar.
+1. Expand **Product**, and then select **Features**.
+1. Under **Dataverse search**, set **Dataverse search** to **On**.
+1. Select **Save**.
 
-2. Select **Manage**.
-
-3. Select an environment.
-
-4. Select **Settings** > **Product** > **Features**.
-
-5. Under **Dataverse search**, set **Dataverse search** to **On**.
-
-6. Select **Save**.
-
-   :::image type="content" source="media/ppac-dataverse-search3.png" alt-text="This image shows Dataverse search set to On.":::
+## [Classic admin center](#tab/classic)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, **Environments**.
+1. In the **Environments** page, select an environment.
+1. Select **Settings** in the command bar.
+1. Expand **Product**, and then select **Features**.
+1. Under **Dataverse search**, set **Dataverse search** to **On**.
+1. Select **Save**.
+---
 
 Turning on Dataverse search enables global-search and generative-AI experiences in all of your model-driven apps within that environment. You can't turn it off in specific apps.
 
@@ -135,15 +142,25 @@ People using secured computers in the United States review your queries and resu
 
 The **Share anonymized search analytics with Microsoft** option is **Off**, by default. To turn it on:
 
-1. Sign in to [Power Platform admin center](https://admin.powerplatform.microsoft.com/), select an _environment_.
+## [New admin center](#tab/new)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. In the **Environments** page, select an environment.
+1. Select **Settings** in the command bar.
+1. Expand **Product**, and then select **Features**.
+1. Under **Search**, set **Share anonymized search analytics with Microsoft** to **On**.
+1. Select **Save**.
 
-2. Select **Settings** > **Product** > **Features**.
-
-3. Under **Search**, set **Share anonymized search analytics with Microsoft** to **On**.
-
-4. Select **Save**
-
-   :::image type="content" source="media/ppac-dataverse-search2.png" alt-text="Set Share anonymized search analytics with Microsoft to On.":::
+## [Classic admin center](#tab/classic)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, **Environments**.
+1. In the **Environments** page, select an environment.
+1. Select **Settings** in the command bar.
+1. Expand **Product**, and then select **Features**.
+1. Under **Search**, set **Share anonymized search analytics with Microsoft** to **On**.
+1. Select **Save**.
+---
 
 ## Set up Dataverse search
 
