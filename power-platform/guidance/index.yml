@@ -63,7 +63,7 @@ productDirectory:
       imageSrc: ./media/sample-more.svg
       links:
         - url: /power-platform/architecture/
-          text: Power Platform Architecture Center
+          text: Power Platform and Copilot Studio Architecture Center
         - url: /power-platform/well-architected/
           text: Power Platform Well-Architected
         - url: /power-platform/guidance/white-papers
