@@ -83,9 +83,7 @@ A value play consists of the following key components:
 The following value plays aren't intended as an exhaustive list but rather a starting point for creating a simple, repeatable approach to measure and demonstrate business value. As your use of Power Platform grows and matures, your value plays will become more sophisticated, enabling you to capture and communicate even greater value.
 
 >[!TIP]
-> In addition to this guidance, download step-by-step guidance and templates for using business value plays in the Business Value Play Workbook.
-
-<!-- Let's provide links to PDF/s of the value plays PowerPoint slides from the Kickstarter Value-Drive Adoption Playbook. -->
+> In addition to this guidance, download step-by-step guidance and templates for using business value plays in the [Business Value Play Workbook](https://aka.ms/ppvalueplays).
 
 - The Innovation Accelerator: The Power Platform Innovation Accelerator focuses on Power Platform's ability to co-design, test, deploy, and iterate faster than other development methods.
 - The Success Story: Share insightful solution case studies and maker success stories that bring to life the day-to-day value of Power Platform and inspire increased adoption.
