@@ -5,7 +5,7 @@ author: paulliew
 ms.author: paulliew
 ms.reviewer: sericks, matp, ratrtile
 ms.topic: how-to
-ms.date: 01/23/2025
+ms.date: 04/16/2025
 ms.custom: template-how-to
 contributors:
   - samathur
@@ -53,22 +53,14 @@ Currently, all your customer data stored *only* in the following apps and servic
 - Dynamics 365 Project Operations (Finance and operations)
 - Dynamics 365 Supply Chain Management (Finance and operations)
 - Dynamics 365 Fraud Protection (Finance and operations)
+- [Copilot Studio](/microsoft-copilot-studio/admin-customer-managed-keys)
 
 > [!NOTE]
-> Nuance Conversational IVR and [Maker Welcome Content](welcome-content.md) are excluded from customer-managed key encryption.
-
-[Microsoft Copilot Studio](/power-virtual-agents/fundamentals-what-is-power-virtual-agents) stores its data in their own storage and in [Microsoft Dataverse](/power-apps/maker/data-platform/data-platform-intro). When you apply the customer-managed key to these environments, only the data stores in **Microsoft Dataverse** are encrypted with your key. The non-Microsoft Dataverse data continues to be encrypted with the Microsoft-managed key.
-
-> [!NOTE]
-> The connection settings for connectors will continue to be encrypted with a Microsoft-managed key.
->
-> Contact a representative for services not listed above for information about customer-managed key support.
-
-> [!NOTE]
-> Power Apps display names, descriptions, and connection metadata continue to be encrypted with a Microsoft-managed key.
-
-> [!NOTE]
-> The download results link and other data produced by solution checker enforcement during a solution check continues to be encrypted with a Microsoft-managed key.
+> - Contact a representative for services not listed above for information about customer-managed key support.
+> - Nuance Conversational IVR and [maker welcome content](welcome-content.md) are excluded from customer-managed key encryption.
+> - The connection settings for connectors continue to be encrypted with a Microsoft-managed key.
+> - Power Apps display names, descriptions, and connection metadata continue to be encrypted with a Microsoft-managed key.
+> - The download results link and other data produced by solution checker enforcement during a solution check continues to be encrypted with a Microsoft-managed key.
 
 Environments with finance and operations apps where [Power Platform integration is enabled](/dynamics365/fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration) can also be encrypted. Finance and operations environments without Power Platform integration will continue to use the default Microsoft managed key to encrypt data. More information: [Encryption in finance and operations apps](/dynamics365/fin-ops-core/dev-itpro/sysadmin/customer-managed-keys)
 
@@ -196,7 +188,7 @@ In Azure, perform the following steps:
       - **Options**: **Generate**
       - **Name**: Provide a name for the key
       - **Key type**: **RSA**
-      - **RSA key size**: **2048** or **4096**
+      - **RSA key size**: **2048** or **3072**
         
    > [!Important]
    > If you set an **expiration date** in your key and the key expired, all the environments that're encrypted with this key will be down. Set [an alert to monitor expiry certificates](/azure/key-vault/general/alert#example-log-query-alert-for-near-expiry-certificates) with email notifications for your local Power Platform admin and Azure key vault admin as a reminder to renew the expiration date. This is important to prevent any unplanned system outages.  
@@ -242,7 +234,7 @@ You can either create a [new key vault and establish a private link connection](
 1. Create an [Azure Key vault](/azure/key-vault/general/quick-create-portal#create-a-vault) with these options:
    - Enable **Purge Protection**
    - Key type: RSA 
-   - Key size: 2048 or 4096
+   - Key size: 2048 or 3072
 1. Copy the key vault URL and the encryption key URL to be used for creating the enterprise policy.
 
    > [!NOTE]
