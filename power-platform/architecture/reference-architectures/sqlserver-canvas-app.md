@@ -53,7 +53,7 @@ Power Apps lets organizations easily create custom user experiences that can ser
 
 ### Reliability  
 
-**Design your workload to avoid unnecessary complexity**: Power Apps works well with straight-forward queries that can be delegated to the server. Ensure straight-forward queries that can be delegated to the server by pushing complex tasks into views and stored procedures. Then, directly use those stored procedures for synchronous action stored procedures. Use Power Automate for any asynchronous actions - including long-running stored procedures. 
+**Design your workload to avoid unnecessary complexity**: Power Apps works well with straight-forward queries that can be delegated to the server. Ensure straight-forward queries that can be delegated to the server by pushing complex tasks into views and stored procedures. Then, directly use those stored procedures for synchronous action stored procedures. Use Power Automate for any asynchronous actions - including calls to long-running stored procedures. 
 
 ### Security  
 
