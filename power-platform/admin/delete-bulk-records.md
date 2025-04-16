@@ -12,6 +12,8 @@ search.audienceType:
 ---
 # Remove a large amount of specific, targeted data with bulk deletion 
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 The *bulk deletion* feature helps you to maintain data quality and manage the consumption of system storage by deleting data that you no longer need.  
   
  For example, you can delete the following data in bulk:  
@@ -34,7 +36,7 @@ These settings can be found in the Microsoft Power Platform admin center by goin
 
 Make sure you have the System Administrator permission to update the setting.
 
-- Follow the steps in [View your user profile](/powerapps/user/view-your-user-profile).
+- Follow the steps in [View your user information](/powerapps/user/view-your-user-profile).
 - Don’t have the correct permissions? Contact your system administrator.
 
   
@@ -44,7 +46,7 @@ Make sure you have the System Administrator permission to update the setting.
   
 2. Select **New** to run the **Bulk Deletion Wizard** to create a bulk deletion job with the records you want to delete.  
   
-For information about how to implement bulk delete in code, see [Delete data in bulk](/powerapps/developer/common-data-service/delete-data-bulk). 
+For information about how to implement bulk delete in code, go to [Delete data in bulk](/powerapps/developer/common-data-service/delete-data-bulk). 
 
 ## Restore the deleted records in Power Apps
 
@@ -56,7 +58,7 @@ If the recycle bin is not available, learn more in [Back up and restore environm
 
 ### Restore all records deleted by a bulk delete job
 
-To restore deleted records, complete the following steps
+To restore deleted records, complete the following steps:
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a system administrator.
 1. Select **Environments** and select the environment for which you want to view and restore deleted records.
@@ -66,20 +68,20 @@ To restore deleted records, complete the following steps
 1. Select **OK** to confirm the action to restore.
 
 ## Restore individual records
-To restore deleted records, complete the following steps.
+To restore deleted records, complete the following steps:
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a system administrator.
 2. Select **Environments** and select the environment for which you want to view and restore deleted records.
 3. Select **Settings** > **Data management** > **Bulk deletion**.
 4. You can view all the bulk record deletion jobs.
 5. Select the bulk deletion job you want to restore the record from.
-6. The record view form opens. At the end of the form, is a link. Select **Restore individual records using System Job.**
+6. The record view form opens. At the end of the form is a link. Select **Restore individual records using System Job.**
 7. The above link will navigate you to the deleted records tab of the job. Select one or more records you want to restore, and then select **Restore** on the command bar.
 8. Select **OK** to confirm the action to restore.
 
 ### Related content
-- [Manage your data](add-remove-sample-data.md)   
-- [Data Encryption](data-encryption.md)
+- [Add or remove sample data](add-remove-sample-data.md)   
+- [Enhance security by encrypting your column-level sensitive data](data-encryption.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,6 +1,6 @@
 ---
 title: Manage Copilot
-description: Learn more about the Copilot page, a centralized location in the Power Platform admin center for documents, insights, and controls relevant to Power Platform Copilots. 
+description: Learn about the Copilot page in the Power Platform admin center for documents, insights, and controls related to Power Platform Copilots.
 author: amchern
 ms.component: pa-admin
 ms.topic: conceptual
@@ -13,6 +13,8 @@ search.audienceType:
 ---
 
 # Manage Copilot
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 The **Copilot** page is a centralized location in the Power Platform admin center for documents, insights, and controls relevant to Power Platform Copilots. Tenant admins can access educational resources about Copilot features, track usage, and access governance controls in one place by selecting **Copilot** in the navigation pane.
 
@@ -53,7 +55,7 @@ To learn more information on each feature, use the following links.
 
 ## Governance 
 
-The **Governance** section displays the percentage of environments in your tenant that have specific Copilot features turned on or off. Selecting the Power Automate or Copilot Studio features lead you to documentation that includes detailed information on that Copilot’s capabilities, prerequisites, and how to turn it on or off.  
+The **Governance** section displays the percentage of environments in your tenant that have specific Copilot features turned on or off. When selecting the Power Automate or Copilot Studio features, you'll find documentation with detailed information on that Copilot’s capabilities, prerequisites, and how to turn it on or off.  
 
 Selecting the Power Platform Settings, Power Apps settings or **Manage settings** next to the governance header opens the settings panel where you can modify [tenant](../tenant-settings.md) and [environment-level Copilot settings](../settings-features.md#copilot-preview). Select your environment, your Power Platform product, and set your controls before selecting **Save**. 
 

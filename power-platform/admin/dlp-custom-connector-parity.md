@@ -17,6 +17,8 @@ search.audienceType:
 
 # DLP for custom connectors
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 Power Platform allows makers to create and share [custom connectors](/connectors/custom-connectors/). You can manage custom connectors for tenant and environment level data loss prevention (DLP) policies. Specifically:
 
 1. Environment admins can use the Power Platform admin center to classify individual, custom connectors by name for environment-level data policies.

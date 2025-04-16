@@ -16,6 +16,8 @@ contributors:
 ---
 # Limit sharing
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 <!-- https://go.microsoft.com/fwlink/?linkid=2194484 and 2211538 -->
 
 In Managed Environments, admins can limit how broadly users can share canvas apps, flows, and agents. To configure these rules, select a Managed Environment from the environments list in the Power Platform admin center. Then, select **Edit Managed Environments** in the command bar. The sharing rules are located in the **Manage sharing** section.

@@ -5,7 +5,7 @@ author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 1/16/2025
+ms.date: 3/20/2025
 ms.author: gregli
 search.audienceType: 
   - maker
@@ -114,13 +114,13 @@ In a browser, the confirmation dialog box might appear with a generic message fr
     > [!div class="mx-imgBorder"]
     > ![Form-specific confirmation dialog box.](media/object-app/confirm-native-custom.png)
 
-## Set up Instrumentation Key for Application Insights
+## Set up Connection string for Application Insights
 
-To export system-generated application logs to [Application Insights](/power-apps/maker/canvas-apps/application-insights), you need to set up the **Instrumentation Key** for your canvas app. 
+To export system-generated application logs to [Application Insights](/power-apps/maker/canvas-apps/application-insights), you need to set up the **Connection string** for your canvas app. 
 
 1. Open your app for [editing](/power-apps/maker/canvas-apps/edit-app) in Power Apps Studio.
 2. Select the **App** object in the left navigation tree view.
-3. Enter the **Instrumentation Key** in the properties pane.
+3. Enter the **Connection string** in the properties pane.
 
 If data isn't sent to App Insights, contact your Power Platform administrator and verify if **App Insights** is disabled at the tenant level. 
 

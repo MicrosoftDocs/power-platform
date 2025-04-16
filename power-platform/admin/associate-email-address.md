@@ -14,6 +14,8 @@ search.audienceType:
 
 # Associate an email address with a row
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 When customer engagement apps track an email, it associates the email address to a row within customer engagement apps. The contents of the email **From** field can only be associated with one row. If there are less than 100 duplicate rows within customer engagement apps with the same email address, the contents of the email **From** field will resolve to the first active row in the following order:
 
 

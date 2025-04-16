@@ -19,6 +19,8 @@ search.audienceType:
 
 # Combined effect of multiple data policies
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 As a tenant or environment admin, you can create more than one data policy and apply it to the same environment. At design time and runtime, all policies that are applicable to the environment in which the app or flow resides are evaluated together to decide whether the resource is in compliance or violation of the data policies.
 
 ## Blocked classification impact across multiple policies
