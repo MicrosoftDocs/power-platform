@@ -1086,11 +1086,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "power-platform/guidance/adoption/environment-strategy.md",
-      "redirect_url": "/power-platform/guidance/white-papers/environment-strategy",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "power-platform/admin/power-automate-licensing/overview.md",
       "redirect_url": "/power-platform/admin/power-automate-licensing/types",
       "redirect_document_id": false
