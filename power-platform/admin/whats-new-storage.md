@@ -4,14 +4,15 @@ description: Learn about enhancements for Dataverse capacity-based storage that 
 author: ianceicys-msft
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 10/01/2024
+ms.date: 04/07/2025
 ms.subservice: admin
 ms.author: ceian
 ms.reviewer: sericks
 search.audienceType: 
   - admin
 contributors:
-- ianceicys-msft 
+- ianceicys-msft
+- dasussMS 
 ---
 # Dataverse capacity-based storage overview
 
@@ -143,6 +144,7 @@ You can request a temporary (30-day) extension that allows copy and restore oper
 | January 2021 | We added database, log, and file storage capacity that is included with the Project for the Web licenses. Go to [Project for the web and Microsoft Dataverse](/office365/servicedescriptions/project-online-service-description/project-online-service-description#project-roadmap-and-power-automate). |
 | January 2021 | The amount of default Dataverse database capacity entitled per tenant for both the per-app and per-flow licenses increased from **1 GB** to **5 GB**. The corresponding update to the ["Subscription Capacity" section of the Power Apps and Power Automate Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130) is in progress and should be published soon. |
 | December 2020 | As part of our storage optimization efforts, we continue to make improvements. In December 2020, we included most of the *WebResourceBase* table and *RibbonClientMetadataBase* table as part of file storage. Customers see file storage consumption increase and database consumption decrease based on the amount of data in these tables. This effort will continue for other tables in the future. Check back here to see when more tables go through a similar transition. |
+| April 2025 | We are making internal adjustments to how Web Resources are stored in a Dataverse organization. Web Resources continue to be reported as file store, however, customers may see the size of *WebResourceBase* fluctuate as storage is transitioned internally. Dataverse doesn't expect storage to significantly increase for *WebResourceBase*, but may temporarily drop as files are transitioned. |
 
 ### Related information
 [Legacy storage capacity](legacy-capacity-storage.md)<br>

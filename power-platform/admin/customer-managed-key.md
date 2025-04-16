@@ -5,7 +5,7 @@ author: paulliew
 ms.author: paulliew
 ms.reviewer: sericks, matp, ratrtile
 ms.topic: how-to
-ms.date: 04/03/2025
+ms.date: 04/16/2025
 ms.custom: template-how-to
 contributors:
   - samathur
@@ -53,7 +53,7 @@ Currently, all your customer data stored *only* in the following apps and servic
 - Dynamics 365 Project Operations (Finance and operations)
 - Dynamics 365 Supply Chain Management (Finance and operations)
 - Dynamics 365 Fraud Protection (Finance and operations)
-- [Copilot Studio](/copilot-studio/admin-customer-managed-keys)
+- [Copilot Studio](/microsoft-copilot-studio/admin-customer-managed-keys)
 
 > [!NOTE]
 > - Contact a representative for services not listed above for information about customer-managed key support.
@@ -188,7 +188,7 @@ In Azure, perform the following steps:
       - **Options**: **Generate**
       - **Name**: Provide a name for the key
       - **Key type**: **RSA**
-      - **RSA key size**: **2048** or **4096**
+      - **RSA key size**: **2048** or **3072**
         
    > [!Important]
    > If you set an **expiration date** in your key and the key expired, all the environments that're encrypted with this key will be down. Set [an alert to monitor expiry certificates](/azure/key-vault/general/alert#example-log-query-alert-for-near-expiry-certificates) with email notifications for your local Power Platform admin and Azure key vault admin as a reminder to renew the expiration date. This is important to prevent any unplanned system outages.  
@@ -234,7 +234,7 @@ You can either create a [new key vault and establish a private link connection](
 1. Create an [Azure Key vault](/azure/key-vault/general/quick-create-portal#create-a-vault) with these options:
    - Enable **Purge Protection**
    - Key type: RSA 
-   - Key size: 2048 or 4096
+   - Key size: 2048 or 3072
 1. Copy the key vault URL and the encryption key URL to be used for creating the enterprise policy.
 
    > [!NOTE]
