@@ -17,10 +17,10 @@ search.audienceType:
 
 # Use Dataverse as a data source for canvas apps
 
-Microsoft Dataverse is a good choice to use as a data source for your canvas apps because it supports complex data and security models and lets you build a more custom user experience. Canvas apps can use the Dataverse connector with other Power Platform connectors to integrate multiple data sources, such as SharePoint lists, Microsoft Access databases, or data from other business applications. 
+Microsoft Dataverse is a good choice to use as a data source for your canvas apps because it supports complex data and security models and lets you build a more custom user experience. Canvas apps can use Dataverse as a data source with other Power Platform connectors to integrate multiple data sources, such as SharePoint lists, Microsoft Access databases, or data from other business applications. Power Apps doesn't use a connector to work with Dataverse. It connects directly to Dataverse outside of the connector framework.  
 
 > [!TIP]  
-> This article provides an example scenario and a generalized example architecture to illustrate how to use the Dataverse connector with canvas apps. The architecture example can be modified for many different scenarios and industries.
+> This article provides an example scenario and a generalized example architecture to illustrate how to use Dataverse as a data source in a canvas apps. The architecture example can be modified for many different scenarios and industries.
 
 ## Architecture diagram  
 
@@ -30,17 +30,17 @@ Microsoft Dataverse is a good choice to use as a data source for your canvas app
 
 The following steps describe the workflow that's shown in the example architecture diagram:
 
-1. **Canvas app**: A canvas app lets users manage conference details, such as the venue and session start and end times. The user authenticates to the app using Microsoft Entra ID, and access is limited to the data that the user is authorized to access.
+1. **Canvas app**: A canvas app lets users manage conference details, such as the venue and session start and end times. The canvas app directly accesses data in Dataverse. The user authenticates to the Power Platform using Microsoft Entra ID, and that same ID is used to access to the data. Any restrictions placed on the user's Entra ID in Dataverse are enforced seamlessly.  
 
-1. **Dataverse connector**: The app uses the Dataverse connector to access conference data that's stored in Dataverse tables.
+1. **Dataverse data source**: The canvas app uses Dataverse as a data source. It lets you access a relational data model where tables and their relationships are readily available. The built-in option set feature means you don't have to build complex lookups and joins. Performance is also generally good because Power Apps connects directly to Dataverse.  
 
-1. **Dataverse tables**: The Dataverse tables store data about the conference sessions hosted at a venue. The tables are related using one-to-many and many-to-many relationships. Dataverse security roles align with the roles of app users. Logic can be implemented at the Dataverse level to calculate and roll up values, enforce domain values, and automate data operations.
+1. **Dataverse tables**: In this example, the Dataverse tables store data about the conference sessions hosted at a venue. The tables are related using one-to-many and many-to-many relationships. Dataverse security roles align with the roles of app users. Logic can be implemented at the Dataverse level to calculate and roll up values, enforce domain values, and automate data operations.
 
 ## Components  
 
 [**Power Platform environment**](/power-platform/admin/environments-overview): Contains Power Platform resources that implement the user experience.
 
-[**Power Apps**](/power-apps/): Implements the user experience of the solution.
+[**Power Apps**](/power-apps/): Implements the user experience of the solution. Makers can build a canvas app with Dataverse by adding the Dataverse table as an application data source.
 
 [**Dataverse connector**](/connectors/commondataserviceforapps/): Lets you access a hierarchical data model where tables and their relationships are readily available, without building complex lookups and joins to retrieve related tables. The connector also bypasses the traditional connector infrastructure and calls directly into the Dataverse back end, improving performance.
 
@@ -56,7 +56,7 @@ The architecture in this example is useful when you need to provide access to da
 
 ### Reliability
 
-**Design your workload to avoid unnecessary complexity**: Using Dataverse in your canvas apps avoids the complexity of a traditional database solution. The Dataverse connector offers abstractions and built-in logic capabilities and supports the relationships and security model of the underlying Dataverse environment. It frees app makers from having to build that support into their apps themselves.
+**Design your workload to avoid unnecessary complexity**: Dataverse's built-in abstractions and features help you avoid the unnecessary complexity a traditional database solution might require. For example, Dataverse supports built-in relationships, smart data types, option sets, and a security model.
 
 ### Security
 
@@ -64,13 +64,13 @@ The architecture in this example is useful when you need to provide access to da
 
 ### Operational Excellence
 
-**Adopt safe deployment practices**: Standardize deployment of any changes to your canvas apps using automated deployment processes such as pipelines. Promote the app to production only after testing those changes.  
+**Adopt safe deployment practices**: Standardize deployment of any changes to your canvas apps using automated deployment processes such as pipelines. Deploy the application to a production environment only after testing changes.  
 
 ### Performance Efficiency
 
-**Design to meet performance requirements**: Evaluate your solution performance and volume of data requirements to ensure that your Dataverse table design is appropriate. Your evaluation should include how data is accessed and how your apps that use the Dataverse connector delegate operations to the Dataverse infrastructure. Be aware of limitations that might apply when searching and filtering data because of the delegation support offered by the Dataverse connector. For example, some functions and operations can't be delegated, which means that the app retrieves all data from the server and then filters it on the client side. This behavior can lead to performance issues when working with large datasets. Learn more in [Query limitations: Delegation and query limits](/powerapps/maker/canvas-apps/delegation-overview).
+**Design to meet performance requirements**: Evaluate your solution performance and volume of data requirements to ensure your Dataverse table design is appropriate. Evaluation should include how data is accessed and evaluation of how your app delegates operations to Dataverse. Be aware of delegation limitations [when searching and filtering data.](/power-apps/maker/canvas-apps/connections/connection-common-data-service#power-apps-delegable-functions-and-operations-for-dataverse.) These limitations are documented in  [Understand delegation in a canvas app](/powerapps/maker/canvas-apps/delegation-overview) and should be taken into account when choosing the right data source or backend for your app.  
 
-**Optimize logic**: By default, canvas apps that get data from Dataverse implement logic using Power Fx, which might cause multiple interactions with Dataverse or repeated logic in multiple applications. Each operation is independent and isn't handled as an atomic transaction. For example, if the app created a venue row but couldn't create a session, the venue row would remain. In Dataverse, logic can be invoked on a Dataverse table event, like the creation of a row, or on demand using a custom API or Dataverse functions. With both of the latter approaches, the logic performs work in a transaction, and all work done with Dataverse data either commits or rolls back. In our example, the venue row wouldn't have remained if the session couldn't be created. Integrating these approaches optimizes logic in some scenarios by ensuring successful completion as a combined unit of work and centralizing reusable logic. Learn more in [Write a plug-in](/power-apps/developer/data-platform/write-plug-in?tabs=pluginbase), [Create and use custom APIs](/power-apps/developer/data-platform/custom-api), and [Functions in Microsoft Dataverse](/power-apps/maker/data-platform/functions-overview).
+**Optimize logic**: By default, canvas applications using Dataverse implement logic using Power Fx, which may cause multiple interactions with Dataverse or repeated logic in multiple applications. Each operation is independent and isn't handled as an atomic transaction. For example, if the application created a Venue row but couldn’t create a session, the Venue row would remain. Dataverse supports [implementing logic](/power-apps/developer/data-platform/write-plug-in?tabs=pluginbase) that can be invoked on a Dataverse table event. For example, creation of a row. It also supports the concept of invoking logic on demand using the [Dataverse custom API](/power-apps/developer/data-platform/custom-api) or [Functions in Dataverse](/power-apps/maker/data-platform/functions-overview) capabilities. With both of these approaches, the work performed by the logic is in a transaction. All work done in Dataverse data either commits or rolls back. In our previous example, the Venue row wouldn't have remained after the error occurred. Integrating these approaches optimizes logic in some scenarios by ensuring successful completion as a combined unit of work and centralizing reusable logic. 
 
 ### Experience Optimization
 
@@ -86,5 +86,5 @@ Principal authors:
 
 ## Related resources  
 
-- [Microsoft Dataverse connector](/connectors/commondataserviceforapps/)  
+- [Microsoft Dataverse and Power Apps](/connectors/commondataserviceforapps/)  
 - [Understanding delegation](/power-apps/maker/canvas-apps/delegation-overview)
