@@ -253,6 +253,9 @@ If an environment group is no longer needed, administrators can delete it to avo
 > [!IMPORTANT]
 > When you delete a group, first remove all of its environments and ensure no developer environments are routed to it. If a group still has environments, you see a warning that prevents you from deleting the group.
 
+## Known limitations
+1. If you've published any of the following rules within your group, the corresponding settings at the environment level will be overridden when adding the environment to the group: sharing limits, Maker welcome content, solution checker, usage insights, backup retention, and generative AI settings. For example, if you've published sharing limits in your environment group but already had Maker welcome content and sharing limits set at the environment level, upon adding the environment to the group, the sharing limits will update to match the group's setting while the Maker welcome content will be reset.
+
 ## Related content
 
 [Managed Environments overview](managed-environment-overview.md) <br>
