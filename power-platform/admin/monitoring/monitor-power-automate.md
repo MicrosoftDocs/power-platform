@@ -31,13 +31,13 @@ Here are the power automate operational health metrics and recommendations that 
 | Flows| Success rate| A percentage that describes how often flows are able to run successfully |
 | Flows| Run count| Count of flow runs |
 | Flows| Duration| Average (in seconds) total execution time of flow run |
-| Desktop flows| Time in queue| The time (in seconds) that desktop flows have to wait before a machine is assigned to run them |
+| Desktop flows| Time in queue| The minimum time (in seconds) that the slowest 10% of desktop flows have to wait before a machine is assigned to run them |
 
 
 ### Metric and Recommendation pairings
-| Metric | Secondary metric | Recommendation | Example |
+| Metric | Secondary metric | Recommendation title | Recommendation description |
 |---|---|---|---|
-| Success Rate |  |Review the list of runs and open flow or run details to troubleshoot.|| 
-| Time in queue|| Investigate and adjust the machine capacity and prioritization. |  |
+| Success Rate | N/A |There are one or more runs that need your attention. | Review the list of runs and open flow or run details to troubleshoot.| 
+| Time in queue| N/A | Investigate and adjust the machine capacity and prioritization. | Your current machine capacity is preventing your desktop flows to run efficiently. Investigate and adjust the machine capacity and prioritization.  |
 
 
