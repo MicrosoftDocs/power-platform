@@ -73,6 +73,9 @@
     },
     "/powerapps/environments/{environmentId}/apps/{app}": {
       "get": {
+        "tags": [
+          "Apps"
+        ],
         "summary": "Get app as administrator.",
         "description": "Returns a PowerApp.",
         "operationId": "Get-AdminApp",
