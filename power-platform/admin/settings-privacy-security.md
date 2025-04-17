@@ -1,7 +1,7 @@
 ---
 title: Manage privacy and security settings
 description: Learn how to view and manage privacy and security settings for Microsoft Dataverse.
-ms.date: 07/25/2023
+ms.date: 04/17/2025
 ms.topic: how-to
 ms.component: pa-admin
 ms.subservice: admin
@@ -76,7 +76,7 @@ You need to have the System Administrator or System Customizer security role or 
 1. In the **Environments** page, select an environment.
 1. Select **Settings** in the command bar.
 1. Expand **Product**, and then select **Privacy + Security**. 
-1. Under **Privacy Preferences**, turn on **Show privacy statement link for this organization**.
+1. Under **Privacy preferences**, turn on **Show privacy statement link for this organization**.
 1. In the **Privacy statement URL** box, enter the URL of the page you want to show.
 1. Select **Save**.
 
@@ -86,7 +86,7 @@ You need to have the System Administrator or System Customizer security role or 
 1. In the **Environments** page, select an environment.
 1. Select **Settings** in the command bar.
 1. Expand **Product**, and then select **Privacy + Security**. 
-1. Under **Privacy Preferences**, turn on **Show privacy statement link for this organization**.
+1. Under **Privacy preferences**, turn on **Show privacy statement link for this organization**.
 1. In the **Privacy statement URL** box, enter the URL of the page you want to show.
 1. Select **Save**.
 ---
