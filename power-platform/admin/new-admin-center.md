@@ -31,11 +31,13 @@ We're happy to announce the public preview of the new and improved Power Platfor
 
 ## When and how can customers benefit from the new experience?
 
-All customers can access the public preview of the new Power Platform admin center. To start using it, turn on the **Try the new admin center** toggle in the upper-right corner of the current admin center.
+All customers can access the public preview of the new Power Platform admin center. It's turned on by default when you access the admin center. 
+
+To revert to the classic admin center, turn off the **Try the new admin center** toggle in the upper-right corner of the current admin center.
 
 :::image type="content" source="media/classic-ppac.png" alt-text="Screenshot of the Try the new admin center toggle in the current Power Platform admin center window.":::
 
-After you turn on the toggle, you can explore the new interface with its logically organized pages. To revert to the classic admin center, turn off the toggle at any time.
+To revert to the classic admin center, turn off the toggle at any time.
 
 ## Where are pages from the classic admin center in the new one?  
 
