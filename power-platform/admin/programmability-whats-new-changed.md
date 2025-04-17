@@ -39,7 +39,7 @@ Learn about the latest changes and new capabilities for Power Platform API and a
 | List Rule Based Policies | API | New endpoint: [List Rule Based Policies](/rest/api/power-platform/governance/rule-based-policies/list-rule-based-policies) |
 | Get Rule Based Policy by ID | API | New endpoint: [Get Rule Based Policy By ID](/rest/api/power-platform/governance/rule-based-policies/get-rule-based-policy-by-id) |
 | Update Rule Based Policy by ID | API | New endpoint: [Update Rule Based Policy By ID](/rest/api/power-platform/governance/rule-based-policies/update-rule-based-policy-by-id) |
-| Create Environment Group Rule Based Assignment | API | New endpoint: [Create Environment Group Rule Based Assignment](/rest/api/power-platform/governance/rule-based-policies/create-environment-group-rule-based-assignment) |
+| Create Environment Group Rule Based Assignment | API | New endpoint: [Create Environment Group Rule Based Assignment](rest/api/power-platform/governance/rule-based-policies/create-enviornment-group-rule-based-assignment) |
 | List Rule Assignments | API | New endpoint: [List Rule Based Assignments](/rest/api/power-platform/governance/rule-based-policies/list-rule-assignments) |
 | Microsoft.PowerApps.CLI | SDK | [Monthly release](https://www.nuget.org/packages/Microsoft.PowerApps.CLI/1.40.4#releasenotes-body-tab) |  
 
