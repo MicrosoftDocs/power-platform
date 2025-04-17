@@ -76,16 +76,16 @@ The following are some of the user events you can audit.
 | Enable diagnostic logs                         | DiagnosticLogsEnabled                  | When diagnostic logs are enabled                                              |
 | Disable early upgrade                          | EarlyUpgradeDisabled                   | When early upgrade is disabled                                                |
 | Enable early upgrade                           | EarlyUpgradeEnabled                    | When early upgrade is enabled                                                 |
-| Install field service extension               | FieldServiceExtensionInstalled         | When the Field Service extension is installed                                 |
+| Install field service extension               | FieldServiceExtensionInstalled         | When the field service extension is installed                                 |
 | Modify maintenance mode URL                   | MaintenanceModeURLModified             | When the maintenance mode URL is modified                                     |
-| Install project service automation extension        | ProjectServiceAutomationExtensionInstalled | When the Project Service Automation extension is installed                   |
+| Install project service automation extension        | ProjectServiceAutomationExtensionInstalled | When the project service automation extension is installed                   |
 | Archive site                                   | SiteArchived                           | When the site is archived                                                     |
 | Suspend site                                  | SiteSuspended                          | When the site is suspended                                                    |
 | Unarchive site                                 | SiteUnarchived                         | When the site is unarchived                                                   |
 | Update website authentication key             | WebsiteAuthenticationKeyUpdated        | When the website authentication key is updated                                |
 | Create site                                    | SiteCreated                            | When the site is created                                                      |
-| Enable CDN                                     | CDNEnabled                             | When the Content Delivery Network (CDN) is enabled                            |
-| Disable CDN                                    | CDNDisabled                            | When the Content Delivery Network (CDN) is disabled                           |
+| Enable CDN                                     | CDNEnabled                             | When CDN is enabled                            |
+| Disable CDN                                    | CDNDisabled                            | When CDN is disabled                           |
 
 
 ### See also
