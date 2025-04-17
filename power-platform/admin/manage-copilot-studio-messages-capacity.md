@@ -40,7 +40,7 @@ The licensing summary view shows usage of both prepaid and session-based capacit
 
 Purchasing a Copilot Studio license includes a specified number of billed message units pooled across the tenant, which must be assigned to an environment to allow Copilot Studio features for agents in that environment.
 
-Capacity management features allow administrators to allocate prepurchased capacity across environments, within the tenant, based on anticipated usage of Copilot agents in each environment. The **Capacity summary** section of the page includes daily consumption data at the environment-level for up to three months, helping to determine appropriate capacity needs.
+Capacity management features allow administrators to allocate prepurchased capacity across environments, within the tenant, based on anticipated usage of Copilot agents in each environment. The **Capacity summary** section of the page includes daily consumption data at the environment level for up to three months, helping to determine appropriate capacity needs.
 
 The consumption monitoring views in capacity management provide detailed, daily usage data for the current month-to-date, the last two full months, and monthly data for the past 12 months, supporting budgeting and licensing planning.
 
@@ -48,7 +48,7 @@ The consumption monitoring views in capacity management provide detailed, daily 
 
 When viewing the Copilot Studio summary, the following cards are displayed in the **Capacity summary** section on the page and provide information to you.
 
-:::image type="content" source="media/environment-tab.png" alt-text="The following cards are displayed in the **Capacity summary** section on the page and provide information to you.":::
+:::image type="content" source="media/environment-tab.png" alt-text="The following cards are displayed in the **Capacity summary** section on the page.":::
 
 ### Pay-as-you-go messages
 This card displays the count of active billing plans with the Copilot Studio meter applied, along with the month-to-date total of Copilot Studio message units billed to these plans. A billing plan in the Power Platform admin center is a configuration that allows administrators to group one or more environments, allowing them to track and bill Copilot Studio message capacity usage directly to an Azure subscription on a pay-as-you-go basis.
@@ -67,6 +67,9 @@ If Copilot Studio message units are consumed for Microsoft 365 Copilot Chat, the
  
 ##### Total capacity consumption trend
 Displays the daily trend of capacity consumption over the past three months.
+
+
+
 
 ##### Message usage by environment
 Highlights the top environments based on Copilot Studio message usage.
