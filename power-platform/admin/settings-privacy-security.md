@@ -104,7 +104,7 @@ You need to have the System Administrator or System Customizer security role or 
 1. In the **Environments** page, select an environment.
 1. Select **Settings** in the command bar.
 1. Expand **Product**, and then select **Privacy + Security**.
-1. Under **Privacy Preferences**, select a **Default action to take when an error occurs**.
+1. Under **Privacy preferences**, select a **Default action to take when an error occurs**.
 1. Select **Save**.
 
 ## [Classic admin center](#tab/classic)
@@ -113,7 +113,7 @@ You need to have the System Administrator or System Customizer security role or 
 1. In the **Environments** page, select an environment.
 1. Select **Settings** in the command bar.
 1. Expand **Product**, and then select **Privacy + Security**.
-1. Under **Privacy Preferences**, select a **Default action to take when an error occurs**.
+1. Under **Privacy preferences**, select a **Default action to take when an error occurs**.
 1. Select **Save**.
 ---
 
