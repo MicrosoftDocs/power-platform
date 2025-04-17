@@ -44,13 +44,12 @@ You can enable the IP firewall in a Power Platform environment by using either P
 ### Enable the IP firewall using Power Platform admin center
 
 1. Sign in to [Power Platform admin center](https://admin.powerplatform.microsoft.com) as an administrator.
-1. Select **Environments**, and then select an environment.
-1. Select **Settings** > **Product** > **Privacy + Security**.
-1. Under **IP address settings**, set **Enable IP address based firewall rule** to **On**.
-1. Under **Allowed list of IPv4/IPv6 ranges**, specify the allowed IP ranges in classless interdomain routing (CIDR) format as per [RFC 4632](https://datatracker.ietf.org/doc/html/rfc4632). If you have multiple IP ranges, separate them with a comma. This field accepts up to 4,000 alphanumeric characters and allows a maximum of 200 IP ranges. IPv6 addresses are allowed both in hexadecimal and compressed format.
-1. Select other settings, as appropriate:
+1. Select **Security** > **Identity and access**.
+1. Select an environment > **set up IP firewall** > Enable **IP Firewall** to **On**
+1. Under **Allowed list of IP addresses**, specify the allowed IP ranges in classless interdomain routing (CIDR) format as per [RFC 4632](https://datatracker.ietf.org/doc/html/rfc4632). If you have multiple IP ranges, separate them with a comma. This field accepts up to 4,000 alphanumeric characters and allows a maximum of 200 IP ranges. IPv6 addresses are allowed both in hexadecimal and compressed format.
+1. Select other advanced settings, as appropriate:
 
-   - **Service tags to be allowed by IP firewall**: From the list, select service tags that can bypass IP firewall restrictions.
+   - **Allowed list of service tags**: From the list, select service tags that can bypass IP firewall restrictions.
    - **Allow access for Microsoft trusted services**: This setting enables Microsoft trusted services like monitoring and [support user](support-environment.md) etc. to bypass the IP firewall restrictions to access the Power Platform environment with Dataverse. Enabled by default.
    - **Allow access for all application users**: This setting allows [all application users](system-application-users.md) third-party and first-party access to Dataverse APIs. Enabled by default. If you clear this value, it only blocks third-party application users.
    - [**Enable IP firewall in audit-only mode**](#what-is-audit-only-mode): This setting enables the IP firewall but allows requests regardless of their IP address. Enabled by default.
