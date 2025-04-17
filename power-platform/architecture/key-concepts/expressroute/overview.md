@@ -4,7 +4,7 @@ description: Learn how Azure ExpressRoute enables private connectivity to Power 
 #customer intent: As a network administrator, I want to understand how to use Azure ExpressRoute with Microsoft Power Platform so that I can ensure secure and predictable performance for mission-critical applications.  
 author: taiki-yoshida
 ms.topic: overview
-ms.date: 04/06/2025
+ms.date: 04/17/2025
 ms.reviewer: jhaskett-msft
 ms.subservice: architecture-center
 ms.author: tayoshi

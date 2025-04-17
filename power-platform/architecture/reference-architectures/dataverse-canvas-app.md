@@ -5,7 +5,7 @@ description: Learn how to use the Dataverse connector with canvas apps to create
 author: slaouist  
 ms.subservice: architecture-center  
 ms.topic: example-scenario
-ms.date: 04/01/2025
+ms.date: 04/17/2025
 ms.author: mehdis  
 ms.reviewer: pankajsharma2087  
 contributors:  

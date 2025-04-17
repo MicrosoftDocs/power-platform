@@ -4,7 +4,7 @@ description: Understand Power Platform's architecture and its interaction with E
 #customer intent: As a network architect, I want to under the Power Platform architecture in the context of ExpressRoute so that I can plan deployments effectively.
 author: taiki-yoshida
 ms.topic: concept-article
-ms.date: 04/02/2025
+ms.date: 04/17/2025
 ms.subservice: architecture-center
 ms.author: tayoshi
 ms.reviewer: jhaskett-msft

@@ -5,7 +5,7 @@ description: Discover how to build a property rental portal with AI-driven searc
 author: manuelap-msft
 ms.subservice: architecture-center
 ms.topic: solution-idea
-ms.date: 04/06/2025
+ms.date: 04/17/2025
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
 contributors:

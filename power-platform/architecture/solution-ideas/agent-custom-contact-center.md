@@ -5,7 +5,7 @@ description: Explore a custom contact center solution that uses Copilot Studio t
 author: manuelap-msft
 ms.subservice: architecture-center
 ms.topic: solution-idea
-ms.date: 04/06/2025
+ms.date: 04/17/2025
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
 contributors:

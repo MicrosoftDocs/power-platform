@@ -5,7 +5,7 @@ description: Learn how to set up ExpressRoute for Microsoft Power Platform, incl
 author: taiki-yoshida
 ms.component: pa-admin
 ms.topic: best-practice
-ms.date: 04/02/2025
+ms.date: 04/17/2025
 ms.subservice: architecture-center
 ms.author: tayoshi
 ms.reviewer: kathyos

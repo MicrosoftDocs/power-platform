@@ -4,7 +4,7 @@ description: Learn how ExpressRoute enhances compliance and network predictabili
 #customer intent: As a network administrator, I want to learn how ExpressRoute minimizes internet traffic contention so that I can improve network security and predictability.  
 author: taiki-yoshida
 ms.topic: concept-article
-ms.date: 04/02/2025
+ms.date: 04/17/2025
 ms.subservice: architecture-center
 ms.author: tayoshi
 ms.reviewer: jhaskett-msft

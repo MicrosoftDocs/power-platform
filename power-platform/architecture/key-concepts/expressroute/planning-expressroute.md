@@ -4,7 +4,7 @@ description: Learn the prerequisites and considerations for setting up ExpressRo
 #customer intent: As a network architect, I want to understand the prerequisites for setting up ExpressRoute so that I can plan the deployment effectively.  
 author: taiki-yoshida
 ms.topic: best-practice
-ms.date: 04/02/2025
+ms.date: 04/17/2025
 ms.subservice: architecture-center
 ms.author: tayoshi
 ms.reviewer: jhaskett-msft

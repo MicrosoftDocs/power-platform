@@ -4,7 +4,7 @@ description: Learn how to use REST APIs to extend the functionality of canvas ap
 author: slaouist
 ms.subservice: architecture-center
 ms.topic: example-scenario
-ms.date: 04/22/2025
+ms.date: 04/17/2025
 ms.author: mehdis
 ms.reviewer: pankajsharma2087
 contributors: 

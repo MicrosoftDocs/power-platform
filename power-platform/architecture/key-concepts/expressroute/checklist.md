@@ -5,7 +5,7 @@ description: Make sure your network is ready for ExpressRoute with this checklis
 author: taiki-yoshida
 ms.component: pa-admin
 ms.topic: checklist
-ms.date: 04/15/2025
+ms.date: 04/17/2025
 ms.subservice: architecture-center
 ms.author: tayoshi
 ms.reviewer: jhaskett-msft

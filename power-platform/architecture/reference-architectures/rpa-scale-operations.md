@@ -5,7 +5,7 @@ description: Learn how hosted RPA in Power Automate allows you to scale your aut
 author: manuelap-msft
 ms.subservice: architecture-center
 ms.topic: example-scenario
-ms.date: 04/10/2025
+ms.date: 04/17/2025
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
 contributors:

@@ -5,7 +5,7 @@ description: Discover how the Enterprise Visual Vehicle Inspection Engine uses A
 author: manuelap-msft
 ms.subservice: architecture-center
 ms.topic: solution-idea
-ms.date: 04/15/2025
+ms.date: 04/17/2025
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
 contributors:

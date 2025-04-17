@@ -4,7 +4,7 @@ description: Learn the key considerations for using ExpressRoute with Microsoft 
 #customer intent: As a network administrator, I want to understand the considerations for using ExpressRoute with Power Platform so that I can plan and configure my network effectively.  
 author: taiki-yoshida
 ms.topic: concept-article
-ms.date: 04/02/2025
+ms.date: 04/17/2025
 ms.subservice: architecture-center
 ms.author: tayoshi
 ms.reviewer: jhaskett-msft

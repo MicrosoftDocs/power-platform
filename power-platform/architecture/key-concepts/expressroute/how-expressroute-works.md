@@ -4,7 +4,7 @@ description: Learn how ExpressRoute integrates with Microsoft Power Platform to 
 #customer intent: As a network administrator, I want to understand how ExpressRoute integrates with Microsoft Power Platform so that I can optimize connectivity for my organization.  
 author: taiki-yoshida
 ms.topic: concept-article
-ms.date: 04/06/2025
+ms.date: 04/17/2025
 ms.subservice: architecture-center
 ms.author: tayoshi
 ms.reviewer: jhaskett-msft
