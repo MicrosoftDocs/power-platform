@@ -50,7 +50,7 @@ You can enable the IP firewall in a Power Platform environment by using either P
 1. In the **Security** pane, select **Identity and access**.
 1. In the **Identity and access management** page, select **IP firewll**.
 1. In the **Set up IP firewall** pane, select an environment. Then select **Set up IP firewall**.
-1. In the **Set up IP firewall for this environment** pane, select **IP Firewall** to **On**. Then select **Save**.
+1. In the **Set up IP firewall for this environment** pane, select **IP Firewall** to **On**.
 1. Under **Allowed list of IP addresses**, specify the allowed IP ranges in classless interdomain routing (CIDR) format as per [RFC 4632](https://datatracker.ietf.org/doc/html/rfc4632). If you have multiple IP ranges, separate them with a comma. This field accepts up to 4,000 alphanumeric characters and allows a maximum of 200 IP ranges. IPv6 addresses are allowed both in hexadecimal and compressed format.
 1. Select other advanced settings, as appropriate:
 
