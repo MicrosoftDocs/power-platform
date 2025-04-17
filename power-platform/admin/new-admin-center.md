@@ -31,9 +31,7 @@ We're happy to announce the public preview of the new and improved Power Platfor
 
 ## When and how can customers benefit from the new experience?
 
-All customers can access the public preview of the new Power Platform admin center starting November 24, 2024. Customers in some regions might have earlier access.  
-
-To start using it, turn on the **Try the new admin center** toggle in the upper-right corner of the current admin center.
+All customers can access the public preview of the new Power Platform admin center. To start using it, turn on the **Try the new admin center** toggle in the upper-right corner of the current admin center.
 
 :::image type="content" source="media/classic-ppac.png" alt-text="Screenshot of the Try the new admin center toggle in the current Power Platform admin center window.":::
 
