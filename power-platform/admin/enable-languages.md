@@ -51,14 +51,14 @@ Make sure you have the System Administrator or System Customizer security role o
 Before users can start using a language pack to display a language, the language pack must be added in your organization.
 
 > [!NOTE]
-> To display the translated labels for the languages imported into an environment from a solution, the language must be added in the environment *before* you import the solution. More information: [Label text doesn’t display in additional languages after import](/powerapps/maker/data-platform/import-update-export-solutions#label-text-doesnt-display-in-additional-languages-after-import)
+> To display the translated labels for the languages imported into an environment from a solution, the language must be added in the environment *before* you import the solution. Learn more in [Label text doesn’t display in additional languages after import](/powerapps/maker/data-platform/import-update-export-solutions#label-text-doesnt-display-in-additional-languages-after-import)
 
-You’ll see each language pack installed in your environment, with a check box to the left of each listed language pack.  
+You see each language pack installed in your environment, with a check box to the left of each listed language pack.  
 
 1. For each language pack that you want to provision (use), select the check box next to it. For each language pack that you want to unprovision (not use), clear the check box.
 
    > [!NOTE]
-   >  Additional storage is required for each language you use.  Not using a specific language doesn't uninstall the language or reduce the storage requirement.  Only use languages that you need.
+   >  More storage is required for each language you use. Not using a specific language doesn't uninstall the language or reduce the storage requirement. Only use languages that you need.
 
 1. Select **Apply**.  
 
@@ -71,7 +71,7 @@ You’ll see each language pack installed in your environment, with a check box 
 
 ## Select the language to display the user interface and Help  
 
- Each user selects the language to display in an app.  See [Languages tab options](/powerapps/user/set-personal-options#languages-tab-options).
+ Each user selects the language to display in an app. See [Languages tab options](/powerapps/user/set-personal-options#languages-tab-options).
 
 
 
