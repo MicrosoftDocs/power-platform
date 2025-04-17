@@ -58,21 +58,15 @@ The Prepaid capacity card shows the number of prepaid capacity units that have b
 
 #### Messages capacity tab
 
-The following cards are displayed in the **Messages capacity** tab.
+The following cards are displayed in the **Messages capacity** tab:
 
-##### Capacity consumption by product
-This tile presents a product-focused view of Copilot Studio message units consumed, detailing the number of units deducted from prepaid capacity packs and/or pay-as-you-go units.
+- **Capacity consumption by product**: This tile presents a product-focused view of Copilot Studio message units consumed, detailing the number of units deducted from prepaid capacity packs and/or pay-as-you-go units.
 
-If Copilot Studio message units are consumed for Microsoft 365 Copilot Chat, the number of units consumed can be found under the Microsoft 365 Copilot Chat product.
+  If Copilot Studio message units are consumed for Microsoft 365 Copilot Chat, the number of units consumed can be found under the Microsoft 365 Copilot Chat product.
  
-##### Total capacity consumption trend
-Displays the daily trend of capacity consumption over the past three months.
+- **Total capacity consumption trend**: Displays the daily trend of capacity consumption over the past three months.
 
-
-
-
-##### Message usage by environment
-Highlights the top environments based on Copilot Studio message usage.
+- **Message usage by environment**: Highlights the top environments based on Copilot Studio message usage.
 
 ## Use the Environments tab
 The **Environments** tab  provides details on the Copilot Studio message capacity consumed per environment, including the number of messages deducted from the prepaid capacity and the units billed under pay-as-you-go plans. It also indicates the environment's status, such as whether it's within capacity or in overage, if capacity is allocated, and if pay-as-you-go is used.
