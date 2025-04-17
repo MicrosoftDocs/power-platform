@@ -1,7 +1,7 @@
 ---
 title: IP firewall in Power Platform environments
 description: Learn how to configure the IP firewall in Microsoft Power Platform environments to help keep your organizational data secure.
-ms.date: 10/30/2024
+ms.date: 04/17/2025
 ms.topic: how-to
 author: ritesp
 ms.author: ritesp
@@ -9,6 +9,8 @@ ms.reviewer: sericks
 ms.custom:
   - template-overview
   - bap-template
+contributors:
+  - matapg007 
 ---
 
 # IP firewall in Power Platform environments
@@ -44,8 +46,11 @@ You can enable the IP firewall in a Power Platform environment by using either P
 ### Enable the IP firewall using Power Platform admin center
 
 1. Sign in to [Power Platform admin center](https://admin.powerplatform.microsoft.com) as an administrator.
-1. Select **Security** > **Identity and access**.
-1. Select an environment > **set up IP firewall** > Enable **IP Firewall** to **On**
+1. In the navigation pane, select **Security**.
+1. In the **Security** pane, select **Identity and access**.
+1. In the **Identity and access management** page, select **IP firewll**.
+1. In the **Set up IP firewall** pane, select an environment. Then select **Set up IP firewall**.
+1. In the **Set up IP firewall for this environment** pane, select **IP Firewall** to **On**. Then select **Save**.
 1. Under **Allowed list of IP addresses**, specify the allowed IP ranges in classless interdomain routing (CIDR) format as per [RFC 4632](https://datatracker.ietf.org/doc/html/rfc4632). If you have multiple IP ranges, separate them with a comma. This field accepts up to 4,000 alphanumeric characters and allows a maximum of 200 IP ranges. IPv6 addresses are allowed both in hexadecimal and compressed format.
 1. Select other advanced settings, as appropriate:
 
