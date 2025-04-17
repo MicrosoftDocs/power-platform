@@ -67,6 +67,26 @@ The following are some of the user events you can audit.
 | Enable maintenance mode                        | MaintenanceModeEnabled                 | When site is put in maintenance mode                                          |
 | Disable maintenance mode                       | MaintenanceModeDisabled                | When site if taken off of maintenance mode                                    |
 | disableAnonymousAccess exception list changed | AnonymousSettingExceptionListChanged | When anonymous access governance control is changed<br /><br />These operations take time to complete from the point they're initiated. The audit logs are captured when the action is initiated. It isn't necessary that the action is successfully completed.                           |
+| Update bootstrap version                       | BootstrapVersionUpdated            | When bootstrap version is updated                            |
+| Disable custom errors                          | CustomErrorsDisabled            | When custom errors are disabled                            |
+| Enable custom errors                           | CustomErrorsEnabled            | When custom errors are enabled                            |
+| Update D365 URL                                 | D365URLUpdated                 | When URL for Dynamic365 is updated                           |
+| Update data model version                       | DataModelVersionUpdated            | When data model version is updated                           |
+| Disable diagnostic logs                       | DiagnosticLogsDisabled            | When diagnostic logs is disabled                           |
+| Enable diagnostic logs                         | DiagnosticLogsEnabled                  | When diagnostic logs are enabled                                              |
+| Disable early upgrade                          | EarlyUpgradeDisabled                   | When early upgrade is disabled                                                |
+| Enable early upgrade                           | EarlyUpgradeEnabled                    | When early upgrade is enabled                                                 |
+| Install field service extension               | FieldServiceExtensionInstalled         | When the Field Service extension is installed                                 |
+| Modify maintenance mode URL                   | MaintenanceModeURLModified             | When the maintenance mode URL is modified                                     |
+| Install project service automation extension        | ProjectServiceAutomationExtensionInstalled | When the Project Service Automation extension is installed                   |
+| Archive site                                   | SiteArchived                           | When the site is archived                                                     |
+| Suspend site                                  | SiteSuspended                          | When the site is suspended                                                    |
+| Unarchive site                                 | SiteUnarchived                         | When the site is unarchived                                                   |
+| Update website authentication key             | WebsiteAuthenticationKeyUpdated        | When the website authentication key is updated                                |
+| Create site                                    | SiteCreated                            | When the site is created                                                      |
+| Enable CDN                                     | CDNEnabled                             | When the Content Delivery Network (CDN) is enabled                            |
+| Disable CDN                                    | CDNDisabled                            | When the Content Delivery Network (CDN) is disabled                           |
+
 
 ### See also
 
