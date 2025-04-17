@@ -1,7 +1,7 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "Microsoft Power Platform REST API - environment management",
+    "title": "Microsoft Power Platform REST API - environmentmanagement",
     "description": "Unified API for all administrative capabilities in Microsoft Power Platform.",
     "version": "2022-03-01-preview"
   },
@@ -107,7 +107,7 @@
         "tags": [
           "EnvironmentManagementSettings"
         ],
-        "summary": "Gets environment management setting by ID. Only columns provided in the $select queryOption will be returned.\r\nA list of selectable properties is defined in the Microsoft.Dynamics.Artemis.Infrastructure.Models.EnvironmentManagementSetting type.",
+        "summary": "Gets Environment Management Setting by ID. Only columns provided in the $select queryOption will be returned.\r\nA list of selectable properties is defined in the Microsoft.Dynamics.Artemis.Infrastructure.Models.EnvironmentManagementSetting typeGets environment management setting by ID. Only columns provided in the $select queryOption will be returned.\r\nA list of selectable properties is defined in the Microsoft.Dynamics.Artemis.Infrastructure.Models.EnvironmentManagementSetting type.",
         "operationId": "ListEnvironmentManagementSettings",
         "produces": [
           "application/json;odata.metadata=minimal;odata.streaming=true",
@@ -277,6 +277,98 @@
             "description": "Precondition Failed",
             "schema": {
               "$ref": "#/definitions/OperationResponse"
+            }
+          }
+        }
+      }
+    },
+    "/environmentmanagement/environments/{environmentId}/operations": {
+      "get": {
+        "tags": [
+          "Operations"
+        ],
+        "summary": "List the available operations for an environment.",
+        "description": "Returns a list of the available operations for an environment.",
+        "operationId": "ListOperationsForEnvironment",
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The environment ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "limit",
+            "description": "String indicating to limit the results.",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "continuationToken",
+            "description": "The continuation token provided from a previous response.",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/OperationExecutionResultPagedCollection"
+            }
+          }
+        }
+      }
+    },
+    "/environmentmanagement/operations/{operationId}": {
+      "get": {
+        "tags": [
+          "Operations"
+        ],
+        "summary": "Retrieve the operation by ID.",
+        "description": "Retrieve the operation specified by ID.",
+        "operationId": "GetOperationByID",
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "operationId",
+            "description": "The operation ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/OperationExecutionResult"
             }
           }
         }
@@ -696,7 +788,7 @@
         "tags": [
           "Environments"
         ],
-        "summary": "Retrieve a single environment by ID.",
+        "summary": "Retrieves a single environment by ID.",
         "operationId": "GetEnvironmentByIdForUser",
         "produces": [
           "application/json"
@@ -724,6 +816,54 @@
             "schema": {
               "$ref": "#/definitions/EnvironmentResponse"
             }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Environments"
+        ],
+        "summary": "Delete the environment by ID.",
+        "description": "Delete the environment specified by ID.",
+        "operationId": "DeleteEnvironmentByID",
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "tenantId",
+            "description": "The tenant ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The environment ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "ValidateOnly",
+            "description": "Boolean flag indicating to validate instead of executing the delete operation.",
+            "type": "boolean"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
           }
         }
       }
@@ -875,7 +1015,7 @@
       "type": "object",
       "properties": {
         "id": {
-          "description": "The value of ID property on the environment object.",
+          "description": "The value of id property on the environment object.",
           "type": "string"
         },
         "displayName": {
@@ -1013,7 +1153,7 @@
         },
         "extensions": {
           "type": "object",
-          "additionalProperties": {},
+          "additionalProperties": { },
           "readOnly": true
         }
       },
@@ -1071,6 +1211,149 @@
         },
         "lastModifiedBy": {
           "$ref": "#/definitions/Principal"
+        }
+      },
+      "additionalProperties": false
+    },
+    "UserIdentity": {
+      "type": "object",
+      "properties": {
+        "userId": {
+          "description": "The user ID.",
+          "type": "string"
+        },
+        "displayName": {
+          "description": "The display name.",
+          "type": "string"
+        },
+        "tenantId": {
+          "description": "The tenant ID.",
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "OperationStatus": {
+      "description": "The operation status.",
+      "enum": [
+        "Queued",
+        "InProgress",
+        "Succeeded",
+        "ValidationError",
+        "Failed",
+        "NoOperation",
+        "Validated"
+      ],
+      "type": "string"
+    },
+    "OperationExecutionResultPagedCollection": {
+      "type": "object",
+      "properties": {
+        "collection": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/OperationExecutionResult"
+          }
+        },
+        "continuationToken": {
+          "description": "The continuation token from a previous response.",
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "OperationExecutionResult": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "The result name.",
+          "type": "string"
+        },
+        "status": {
+          "$ref": "#/definitions/OperationStatus"
+        },
+        "operationId": {
+          "description": "The operation ID.",
+          "type": "string"
+        },
+        "startTime": {
+          "format": "date-time",
+          "description": "The start time.",
+          "type": "string"
+        },
+        "endTime": {
+          "format": "date-time",
+          "description": "The end time.",
+          "type": "string"
+        },
+        "updatedEnvironment": {
+          "$ref": "#/definitions/Environment"
+        },
+        "requestedBy": {
+          "$ref": "#/definitions/UserIdentity"
+        },
+        "errorDetail": {
+          "$ref": "#/definitions/ErrorInfo"
+        },
+        "jobStatuses": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/JobStatus"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "JobStatus": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "The job name.",
+          "type": "string"
+        },
+        "status": {
+          "description": "The job status.",
+          "type": "string"
+        },
+        "startTime": {
+          "format": "date-time",
+          "description": "The job start time.",
+          "type": "string"
+        },
+        "endTime": {
+          "format": "date-time",
+          "description": "The job end time.",
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "ErrorInfo": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "description": "The error code.",
+          "type": "string"
+        },
+        "fieldErrors": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "array",
+            "items": {
+              "description": "The individual errors.",
+              "type": "string"
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "Environment": {
+      "type": "object",
+      "properties": {
+        "environmentId": {
+          "description": "The environment ID.",
+          "type": "string"
         }
       },
       "additionalProperties": false
