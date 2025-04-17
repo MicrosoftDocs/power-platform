@@ -4,7 +4,7 @@ description: Records are now available in the Outlook web client using a simple 
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/06/2024
+ms.date: 04/17/2025
 ms.subservice: admin
 ms.custom: NewPPAC
 ms.author: sericks
