@@ -43,7 +43,7 @@ You need to have the System Administrator or System Customizer security role or 
 | -------------- | ----------------- |
 | **Privacy preference** | [Set error reporting preferences for the organization](#set-error-reporting-preferences-for-the-organization) |
 | Show privacy statement link for this organization | Default: Off. Select to display the privacy statement link. |
-| Privacy statement URL | Provide users with a link to your organization's privacy statement. If you show the link, it's added to the **Settings** menu. Learn more at [Replace the privacy statement for the organization](#replace-the-privacy-statement-for-the-organization)|
+| Privacy statement URL | Provide users with a link to your organization's privacy statement. If you show the link, it's added to the **Settings** menu. Learn more at [Replace the privacy statement for the organization](#replace-the-privacy-statement-for-the-organization).|
 | **Default action to take when an error occurs** | [Set error reporting preferences for the organization](#set-error-reporting-preferences-for-the-organization) |
 | Ask the user for permission to send an error report to Microsoft | Default: Not selected. |
 | Automatically send an error report to Microsoft without user interaction | Default: Not selected. |
