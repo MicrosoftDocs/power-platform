@@ -468,8 +468,8 @@
         "tags": [
           "Websites"
         ],
-        "summary": "Stamp bootstrap version five (v5) status as enabled for website.",
-        "description": "Stamp bootstrap version five (v5) status as enabled for website.",
+        "summary": "Stamp bootstrap version five (5) status as enabled for website.",
+        "description": "Stamp bootstrap version five (5) status as enabled for website.",
         "operationId": "SetPortalBootstrapV5Enabled",
         "produces": [
           "application/json"
