@@ -4,8 +4,9 @@ description: Learn how to manage feature settings to adjust how features appear 
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/03/2025
+ms.date: 04/17/2025
 ms.subservice: admin
+ms.custom: NewPPAC
 ms.author: sericks
 ms.reviewer: sericks
 contributors:
@@ -27,7 +28,23 @@ ms.collection:
 
 Use feature settings to adjust how features appear and function in Power Apps [canvas apps](/power-apps/maker/canvas-apps/getting-started) and [model-driven apps](/powerapps/maker/model-driven-apps/model-driven-app-overview).
 
-These settings can be found in the Power Platform admin center by going to **Environments** > [select an environment] > **Settings** > **Product** > **Features**.
+These settings can be found in the Power Platform admin center for an environment.
+
+## [New admin center](#tab/new)
+ 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+ 1. In the navigation pane, select **Manage**.
+ 1. In the **Manage** pane, select **Environments**.
+ 1. In the **Environments** page, select an environment.
+ 1. Select **Settings** in the command bar.
+ 1. Expand **Product**, and then select **Features**.
+ 
+ ## [Classic admin center](#tab/classic)
+ 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+ 1. In the navigation pane, select **Environments**.
+ 1. In the **Environments** page, select an environment.
+ 1. Select **Settings** in the command bar.
+ 1. Expand **Product**, and then select **Features**.
+ ---
 
 To update these settings, make sure you have the System Administrator or System Customizer security role or equivalent permissions.
 
