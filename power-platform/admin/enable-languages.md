@@ -30,7 +30,7 @@ The following table shows tasks that are associated with changing regional and l
 
 ## Add a language  
 
-These settings can be found in the Microsoft Power Platform admin center for an environment, follow these steps:
+These settings can be found in the Microsoft Power Platform admin center for an environment.
 
 ## [New admin center](#tab/new)
  1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
@@ -46,16 +46,16 @@ These settings can be found in the Microsoft Power Platform admin center for an 
  1. Expand **Product**, and then select **Languages**.
  ---
 
-Make sure you have the System Administrator or System Customizer security role or equivalent permissions to update the setting. To check your security role, see [View your user profile](/powerapps/user/view-your-user-profile). If you don’t have the correct permissions, contact your system administrator.
+Make sure you have the System Administrator or System Customizer security role or equivalent permissions to update the setting. To check your security role, go to [View your user profile](/powerapps/user/view-your-user-profile). If you don’t have the correct permissions, contact your system administrator.
 
-Before users can start using a Language Pack to display a language, the Language Pack must be added in your organization.
+Before users can start using a language pack to display a language, the language pack must be added in your organization.
 
 > [!NOTE]
 > To display the translated labels for the languages imported into an environment from a solution, the language must be added in the environment *before* you import the solution. More information: [Label text doesn’t display in additional languages after import](/powerapps/maker/data-platform/import-update-export-solutions#label-text-doesnt-display-in-additional-languages-after-import)
 
-You’ll see each Language Pack installed in your environment, with a check box to the left of each listed Language Pack.  
+You’ll see each language pack installed in your environment, with a check box to the left of each listed language pack.  
 
-1. For each Language Pack that you want to provision (use), select the check box next to it. For each Language Pack that you want to unprovision (not use), clear the check box.
+1. For each language pack that you want to provision (use), select the check box next to it. For each language pack that you want to unprovision (not use), clear the check box.
 
    > [!NOTE]
    >  Additional storage is required for each language you use.  Not using a specific language doesn't uninstall the language or reduce the storage requirement.  Only use languages that you need.
