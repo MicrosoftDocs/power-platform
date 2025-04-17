@@ -1,5 +1,5 @@
 ---
-title:Power Platform adoption maturity model: Detailed capabilities
+title:Power Platform adoption maturity model - Detailed capabilities
 description: Learn how the Power Platform adoption maturity model helps organizations define a roadmap for successful low-code adoption and digital transformation.
 #customer intent: As a Power Platform user, I want to understand the Power Platform adoption maturity model so that I can define a roadmap for successful low-code adoption.
 author: manuelap-msft
@@ -11,7 +11,7 @@ ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
-# Power Platform adoption maturity model: Detailed capabilities
+# Power Platform adoption maturity model - Detailed capabilities
 
 The adoption maturity model helps define a roadmap for Microsoft Power Platform adoption. The roadmap includes strategic and tactical considerations and action items that lead to successful Power Platform adoption.
 
