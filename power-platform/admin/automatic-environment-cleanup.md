@@ -67,7 +67,7 @@ During the deletion process, a new replacement default environment is created wi
 > You can't turn off this cleanup mechanism. However, you can review the last activity date for environments in the Power Platform admin center. 
 
 ## Developer environment
-Power Platform is implementing a cleanup process for developer environments that meet the following criteria. After 30 days of inactivity, environments are automatically disabled. After 15 days of being disabled, the environment gets deleted unless the customer re-enabled the environment. Once its deleted, the customer has seven days to recover the environment before soft-deletion.
+Power Platform is implementing a cleanup process for developer environments that meet the following criteria. After 30 days of inactivity, environments are automatically disabled. After 15 days of being disabled, the environment gets "soft-deleted", unless the customer re-enabled the environment. Once the environment is soft-deleted, the customer has seven days to recover the environment before it's fully deleted.
 
 As part of this cleanup process, you can expect the following:
 - Admins will receive two warning notifications before the environment gets disabled or deleted due to inactivity
@@ -104,7 +104,7 @@ Here are some examples of the types of activities that are included in the measu
 Activity includes automations such as scheduled flow runs. For example, if there's no user, maker, or admin activity in an environment, but it contains a cloud flow that runs daily, then the environment is considered active.
 
 > [!NOTE]
-> Center of Excellence (COE) toolkit operations will not be considered as activity. 
+> As of April 20, 2025, Center of Excellence (CoE) toolkit operations, which query data from multiple Dataverse organizations in a customer tenant, will no longer be considered as activity by queried Developer organizations. As a result of this change, Developer organizations which were previously only kept active by CoE queries will become inactive, unless there is other activity against those Developer organizations. 
 
 ## Trigger activity, re-enable, and recover an environment
 
