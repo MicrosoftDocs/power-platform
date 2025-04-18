@@ -4,11 +4,13 @@ description: Learn how to manage feature settings to adjust how features appear 
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/01/2025
+ms.date: 04/17/2025
 ms.subservice: admin
+ms.custom: NewPPAC
 ms.author: sericks
 ms.reviewer: sericks
 contributors:
+    - marianaraujo 
     - jekom1
     - sriharibs-msft 
     - V-Camille
@@ -26,7 +28,23 @@ ms.collection:
 
 Use feature settings to adjust how features appear and function in Power Apps [canvas apps](/power-apps/maker/canvas-apps/getting-started) and [model-driven apps](/powerapps/maker/model-driven-apps/model-driven-app-overview).
 
-These settings can be found in the Power Platform admin center by going to **Environments** > [select an environment] > **Settings** > **Product** > **Features**.
+These settings can be found in the Power Platform admin center for an environment.
+
+## [New admin center](#tab/new)
+ 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+ 1. In the navigation pane, select **Manage**.
+ 1. In the **Manage** pane, select **Environments**.
+ 1. In the **Environments** page, select an environment.
+ 1. Select **Settings** in the command bar.
+ 1. Expand **Product**, and then select **Features**.
+ 
+ ## [Classic admin center](#tab/classic)
+ 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+ 1. In the navigation pane, select **Environments**.
+ 1. In the **Environments** page, select an environment.
+ 1. Select **Settings** in the command bar.
+ 1. Expand **Product**, and then select **Features**.
+ ---
 
 To update these settings, make sure you have the System Administrator or System Customizer security role or equivalent permissions.
 
@@ -230,11 +248,18 @@ Makers can learn more about form fill assistance in [Manage model-driven app set
 | Allow process capacity overage  |  When **On**, enables machines and cloud flows to go into process capacity overage. New process capacity overage is only possible in an environment with at least one process / hosted process / unattended capacity assigned. Learn more in [Process capacity overage](/power-automate/desktop-flows/capacity-utilization-process#capacity-overage). | On |
 | Allow auto-claim of process capacity |  When **On**, enables automatic assignment of process capacity to the environment (if any is available in the admin center) when required by an assignation of process capacity to a cloud flow, or to a machine while there's no available capacity in the environment. Learn more in [Process capacity](/power-automate/desktop-flows/capacity-process). | On |
 
+## Dataverse search
+
+| Setting | Description | Default value |
+|---------|-------------|---------------|
+| On |  When **On** is selected, the search bar becomes visible. Generative AI experiences using Dataverse data are also available. | Not selected|
+| Default |  When **Default** is selected, the search bar is hidden. However, generative AI experiences using Dataverse data remain available. | Selected|
+| Off  | When **Off** is selected, the search bar is hidden, and generative AI experiences using Dataverse data are limited.  | Not selected |
+
 ## Search
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-|Dataverse search| If **On**, you can use Dataverse search to find records across multiple tables, sorted by relevance.| Off|
 |Single table search option| If **On**, users get another option to search on a single table on view pages of search-enabled tables in all model-driven apps.|Off|
 |Prevent slow keyword filter for quick find terms on view pages |  If **On**, users are prevented from searching with keywords that begin with an asterisk (\*) in grid search in all model-driven apps, and a message displays in the application. If **Off**, users can search with keywords that begin with an asterisk (\*) in grid search in all model-driven apps, but an information tooltip displays indicating the search might be slow. Learn more in [Grid search](/power-apps/user/grid-filters#grid-search). | Off|
 |Quick Find record limits| If **On**, if more than 10,000 records are found, a message displays that suggests a more selective search. Learn more in [Configure Dataverse search for the organization](configure-relevance-search-organization.md).| On |

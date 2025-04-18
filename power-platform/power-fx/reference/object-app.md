@@ -5,7 +5,7 @@ author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 3/20/2025
+ms.date: 4/16/2025
 ms.author: gregli
 search.audienceType: 
   - maker
@@ -50,6 +50,7 @@ Nobody wants to lose unsaved changes. Use the **ConfirmExit** and **ConfirmExitM
 
 > [!NOTE]
 > - **ConfirmExit** doesn't work in apps that are embedded in, for example, Power BI and SharePoint.
+> - **ConfirmExit** is not supported in custom pages. 
 > - Now, these properties can reference controls on only the first screen if the **Delayed load** preview feature is enabled (which it is by default for new apps). If references are made, Power Apps Studio doesn't show an error, but the resulting published app doesn't open in Power Apps Mobile or a browser. We're actively working to lift this limitation. In the meantime, you can turn off **Delayed load** in **Settings** > **Upcoming features** (under **Preview**).
 
 ### ConfirmExit
