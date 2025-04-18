@@ -1,6 +1,7 @@
 ---
-title: "Power Platform adoption maturity model - Microsoft Power Platform | MicrosoftDocs"
-description: "Microsoft has identified consistent themes, patterns, practices, and behaviors that underpin the progress of successful organizations as they implement comprehensive digital transformation with Power Platform."
+title: Power Platform adoption maturity model- Repeatable patterns for successful Power Platform adoption
+description: Discover repeatable patterns and practices for successful Power Platform adoption to drive digital transformation in your organization.
+#customer intent: As a Power Platform user, I want to understand the Power Platform adoption maturity model so that I can guide my organization through successful digital transformation.
 author: manuelap-msft
 ms.subservice: guidance
 ms.topic: conceptual
@@ -10,13 +11,13 @@ ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
-# Power Platform adoption maturity model: Repeatable patterns for successful Power Platform adoption
+# Power Platform adoption maturity model- Repeatable patterns for successful Power Platform adoption
 
-Microsoft Power Platform’s low-code approach to solution delivery has enabled thousands of organizations around the world to use technology to transform their business. This is done by enabling more people than ever to create applications, and to use mobile platforms and artificial intelligence to transform organizations with new ways of working.
+Microsoft Power Platform’s low-code approach to solution delivery allows thousands of organizations worldwide use technology to transform their business. It allows more people create applications and use mobile platforms and artificial intelligence to introduce new ways of working.
 
-This transformation is more critical now than ever. Technology is disrupting every industry but it's also the key to those that are thriving. Hence, it’s important to start the digital transformation journey incrementally but with urgency. Adopting a new technology with such broad applicability as Microsoft Power Platform is a transition for any organization.
+This transformation is more critical than ever. Technology disrupts every industry, but it's also key to those that thrive. It's important to start the digital transformation journey incrementally and with urgency. Adopting a technology as broadly applicable as Microsoft Power Platform is a transition for any organization.
 
-We have identified consistent themes, patterns, practices, and behaviors that underpin the progress of successful organizations as they implement comprehensive digital transformation with Power Platform. The result of this work is the Power Platform adoption maturity model, which has broken down this process into five stages, based on the [Capability Maturity Model](https://en.wikipedia.org/wiki/Capability_Maturity_Model).
+Consistent themes, patterns, practices, and behaviors underpin the progress of successful organizations implementing comprehensive digital transformation with Power Platform. The result of this work is the Power Platform adoption maturity model, which has broken down this process into five stages, based on the [Capability Maturity Model](https://en.wikipedia.org/wiki/Capability_Maturity_Model).
 
 > [!NOTE]
 > Organizational adoption maturity is a long journey. It takes time, effort, and planning to progress to the higher levels.
