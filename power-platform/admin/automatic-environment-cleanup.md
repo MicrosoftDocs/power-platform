@@ -101,8 +101,6 @@ Here are some examples of the types of activities that are included in the measu
 - **Maker activity**: Create, update, or delete an app, flow (both desktop and cloud flows), Microsoft Copilot Studio bot, or custom connector
 - **Admin activity**: Environment operations such as copy, delete, recover, and reset  
 
-Activity includes automations such as scheduled flow runs. For example, if there's no user, maker, or admin activity in an environment, but it contains a cloud flow that runs daily, then the environment is considered active.
-
 > [!NOTE]
 > As of April 20, 2025, Center of Excellence (CoE) toolkit operations, which query data from multiple Dataverse organizations in a customer tenant, will no longer be considered as activity by queried Developer organizations. As a result of this change, Developer organizations which were previously only kept active by CoE queries will become inactive, unless there is other activity against those Developer organizations. 
 
