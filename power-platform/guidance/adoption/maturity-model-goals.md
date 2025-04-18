@@ -52,22 +52,22 @@ This phase describes a process well-documented, so you can repeat the same steps
 
 In the *Repeatable* stage, organizations start to establish a common vision between IT and business units. There's a demand-management process in place, and while business cases are understood, they might lack a thorough review. This stage marks the beginning of structured efforts to align Power Platform and low-code AI initiatives with organizational goals. 
 
-A *Repeatable* organization takes what it learned in the Initial stage to put structure around the deployment of Power Platform and low-code AI. A central IT team or other team focused on Power Platform and low-code AI implement these controls. Early efforts are focused on establishing foundational governance policies and drafting compliance processes tailored to the specific challenges of low-code AI systems. Senior leadership begins to recognize the value of responsible AI and promotes it through occasional incentives or support for passionate individuals or teams. Some training resources might exist, but they aren't accessible or widely adopted.
+A *Repeatable* organization uses what it learned in the Initial stage to structure the deployment of Power Platform and low-code AI. A central IT team or other team focused on Power Platform and low-code AI implement these controls. Early efforts are focused on establishing foundational governance policies and drafting compliance processes tailored to the specific challenges of low-code AI systems. Senior leadership recognizes the value of responsible AI and promotes it through occasional incentives or support for passionate individuals or teams. Some training resources might exist, but they aren't accessible or widely adopted.
 
-Environments are used as needed. For example, various production environments and different data loss prevention (DLP) policies might be created without a consistent strategy. These organizations sometimes believe Power Platform is running "out of control" until they shape administrative and governance controls for Power Platform, transitioning to the [Defined](#level-300--defined) stage.
+Environments are used as needed. For example, you can create various production environments and different data loss prevention (DLP) policies without a consistent strategy. These organizations sometimes believe Power Platform is running "out of control" until they implement administrative and governance controls for Power Platform, transitioning to the [Defined](#level-300--defined) stage.
 
 ### Characteristics - Repeatable
 
-- Common vision between IT and business
-- Demand-management process
-- Business cases understood but lacking review
-- Early efforts to establish Power Platform and low-code AI governance policies and compliance processes
+- Common vision between IT and business units.
+- Demand-management process.
+- Business cases understood but lacking review.
+- Early efforts to establish Power Platform and low-code. AI governance policies and compliance processes.
 
 ### Opportunities - Repeatable
 
 - Establish a [Center of Excellence](coe.md) team.
 - Gain tenant-wide [oversight of resources](resource-usage.md) being created in your tenant.
-- [Establish DLP policies](dlp-strategy.md) in the default environment. Mitigate the risk of apps and flows breaking by performing a [DLP Impact Analysis](../coe/core-components.md#dlp-impact-analysis) first.
+- [Establish DLP policies](dlp-strategy.md) in the default environment. Reduce the risk of apps and flows breaking by performing a [DLP Impact Analysis](../coe/core-components.md#dlp-impact-analysis) first.
 - [Manage the default environment](manage-default-environment.md).
 - Embrace new makers with an [onboarding process](onboard-makers.md), informing them of internal training resources and policies.
 - Develop responsible AI training programs.
@@ -75,22 +75,22 @@ Environments are used as needed. For example, various production environments an
 
 ## Level 300 – Defined
 
-This phase describes a process that is defined/confirmed as a standard business process.
+This phase describes a process that is defined as a standard business process.
 
-The *Defined*  stage is characterized by a more structured approach to Power Platform and low-code AI adoption. Organizations have a dedicated Power Platform and low-code AI product owner and a clear understanding of its role within the IT portfolio. Innovation is driven both bottom-up and top-down, and key performance indicators (KPIs) are operationalized and reviewed against goals. Responsible AI (RAI) practices are increasingly prioritized, with dedicated budgets, and AI champions promoting responsible AI practices. Comprehensive responsible AI policies are in place, covering most aspects of RAI (for example, fairness, transparency). Responsible AI training programs are developed but aren't yet mandatory
+The *Defined*  stage is characterized by a more structured approach to Power Platform and low-code AI adoption. Organizations have a dedicated Power Platform and low-code AI product owner and a clear understanding of its role within the IT portfolio. Innovation is driven both bottom-up and top-down, and key performance indicators (KPIs) are operationalized and reviewed against goals. Responsible AI (RAI) practices are increasingly prioritized, with dedicated budgets, and AI champions promoting responsible AI practices. Comprehensive responsible AI policies are in place, covering most aspects of RAI (for example, fairness, transparency). Responsible AI training programs are developed but aren't yet mandatory.
 
 A *Defined* organization standardizes the repeatable practices that evolved in the Repeatable phase. You can define practices like environment and DLP requests automation, solutions that move apps and flows between environments, and commonly shared components among makers.
 
 The organization is achieving measurable success with Power Platform to digitally transform and has a defined Power Platform and low-code AI Center of Excellence team.
 
-Much of this transformation might reflect the organic growth of the organization. However, the Center of Excellence team is working to automate those processes and define standard approaches to move the organization to the Capable stage.
+This transformation might reflect the organic growth of the organization. However, the Center of Excellence team works to automate those processes and define standard approaches to move the organization to the Capable stage.
 
 ### Characteristics - Defined
 
-- Dedicated Power Platform product owner
-- Bottom-up and top-down innovation
-- Defined understanding of Power Platform’s role in IT portfolio
-- KPIs understood, operationalized, and reviewed
+- Dedicated Power Platform product owner.
+- Bottom-up and top-down innovation.
+- Defined understanding of Power Platform’s role in IT portfolio.
+- KPIs understood, operationalized, and reviewed.
 - Comprehensive responsible AI policies covering most aspects of RAI.
 - Responsible AI training programs are developed but not yet mandatory.
 
@@ -114,17 +114,17 @@ At the *Capable* stage, organizations have established a Center of Excellence (C
 
 A *Capable* organization has standard processes for managing and monitoring Power Platform and low-code AI. Makers now automate and deeply understand the processes of the Defined stage.
 
-Power Platform and low-code AI capabilities transform the business broadly and for enterprise-critical apps and integrations. Platform champions establish channels for sharing best practices, training new makers, and conducting regular hackathons.
+Power Platform and low-code AI capabilities broadly transform businesses and support enterprise-critical apps and integrations. Platform champions establish channels for sharing best practices, training new makers, and conducting regular hackathons.
 
 Standard, branded app templates and components are available to all makers. Business value assessments are carried out to measure and understand the impact of Power Platform and low-code AI.
 
 ### Characteristics - Capable
 
-- Established CoE team
-- Increased delivery efficiency
-- Business plans shared across departments
-- Precise measures for business efficiency
-- Responsible AI is fully integrated into leadership decision-making
+- Established CoE team.
+- Increased delivery efficiency.
+- Business plans shared across departments.
+- Precise measures for business efficiency.
+- Responsible AI is fully integrated into leadership decision-making.
 
 ### Opportunities – Capable
 
@@ -150,11 +150,11 @@ In organizations at the Efficient stage, Power Platform and low-code AI capabili
 
 ### Characteristics - Efficient
 
-- Power Platform integral to digital transformation strategy
-- Vision and strategy understood by all
-- Organization-wide initiatives for larger-scale apps
-- Enterprise architecture includes Power Platform capabilities
-- Responsible AI is a strategic priority at every level of the organization
+- Power Platform integral to digital transformation strategy.
+- Vision and strategy understood by all.
+- Organization-wide initiatives for larger-scale apps.
+- Enterprise architecture includes Power Platform capabilities.
+- Responsible AI is a strategic priority at every level of the organization.
 
 ### Opportunities - Efficient
 
@@ -168,7 +168,7 @@ In organizations at the Efficient stage, Power Platform and low-code AI capabili
 
 ## Next step
 
-Review detailed capabilities across disciplines such as strategy and vision, administration, governance, and community:
+Review detailed capabilities across disciplines such as strategy and vision, administration, governance, and community.
 
 > [!div class="nextstepaction"]
 > [Detailed capabilities](maturity-model-details.md)
