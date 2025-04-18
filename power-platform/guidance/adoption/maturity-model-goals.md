@@ -1,30 +1,30 @@
 ---
-title: "Power Platform adoption maturity model: Goals and Opportunities - Microsoft Power Platform | MicrosoftDocs"
-description: "This article describes goals and opportunities per maturity stage in the Power Platform adoption maturity model."
+title: Power Platform adoption maturity model- Goals and Opportunities
+description: Discover how the Power Platform adoption maturity model helps organizations align technology capabilities with digital transformation strategies.
+#customer intent: As a Power Platform user, I want to understand the Power Platform adoption maturity model so that I can align it with my organization's digital transformation strategy.
 author: manuelap-msft
-
 ms.subservice: guidance
 ms.topic: conceptual
-ms.date: 04/14/2025
+ms.date: 04/18/2025
 ms.author: mapichle
 ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
 
-# Power Platform adoption maturity model: Goals and opportunities
+# Power Platform adoption maturity model- Goals and opportunities
 
-The goal of the Microsoft Power Platform adoption maturity model is to help organizations and their partners improve their capabilities and decide which ones matter most. These decisions are based not only on the technology capabilities but the digital transformation strategy of the organization.
+The Microsoft Power Platform adoption maturity model helps organizations and their partners improve their capabilities and decide which ones matter most. These decisions are based on both the organization's technology capabilities and its digital transformation strategy.
 
-This article examines five stages of the model and the opportunities within each stage.
+This article explains the five stages of the model and highlights the opportunities in each stage.
 
 ## Level 100 – Initial
 
-*The initial phase describes the starting point for use of a new or undocumented process.*
+The initial phase describes the starting point for use of a new or undocumented process.
 
-An *Initial* organization is just beginning to explore the capabilities of Power Platform and low-code AI. Individual business areas drive innovation, often in a bottom-up approach. The scenarios addressed are usually low-complexity, and there's limited reuse of solutions. Strategy and vision are undefined, and there's no formal assessment of business value. The organization has no visibility into organization-wide adoption and use. There's no formal governance approach, and no compliance process for responsible AI.
+An *Initial* organization is beginning to explore the capabilities of Power Platform and low-code AI. Individual business areas drive innovation, often in a bottom-up approach. The scenarios addressed are usually low-complexity, and there's limited reuse of solutions. Strategy and vision are undefined, and there's no formal assessment of business value. The organization has no visibility into organization-wide adoption and use. There's no formal governance approach or compliance process for responsible AI.
 
-Apps are mostly used by a single team and supported by the makers. Apps primarily use Excel and SharePoint as their data sources. The organization sees the potential of a strategic investment in Power Platform and low-code AI, but has no clear path forward for organization-wide execution.
+Apps are mostly used by a single team and supported by the makers. Apps mainly use Excel and SharePoint as data sources. The organization sees the potential of investing in Power Platform and low-code AI but lacks a clear path for organization-wide execution.
 
 ### Characteristics - Initial
 
@@ -37,7 +37,7 @@ Apps are mostly used by a single team and supported by the makers. Apps primaril
 
 ### Opportunities - Initial
 
-- Define [vision, metrics, and goals](vision.md)
+- Define your [vision, metrics, and goals](vision.md).
 - Get an [executive sponsor](executive-sponsorship.md) and teams as you review the [roles and responsibilities](roles.md) needed for your Power Platform adoption.
 - Understand and assess your current [security posture](assess-security-posture.md).
 - Designate a [Power Platform admin](pp-admin.md).
@@ -48,9 +48,9 @@ Apps are mostly used by a single team and supported by the makers. Apps primaril
 
 ## Level 200 – Repeatable
 
-*This phase describes a process well-documented, so you can repeat the same steps if needed.*
+This phase describes a process well-documented, so you can repeat the same steps if needed.
 
-In the *Repeatable* stage, organizations start to establish a common vision between IT and business units. There's a demand-management process in place, and while business cases are understood, they might lack thorough review. This stage marks the beginning of structured efforts to align Power Platform and low-code AI initiatives with organizational goals. 
+In the *Repeatable* stage, organizations start to establish a common vision between IT and business units. There's a demand-management process in place, and while business cases are understood, they might lack a thorough review. This stage marks the beginning of structured efforts to align Power Platform and low-code AI initiatives with organizational goals. 
 
 A *Repeatable* organization takes what it learned in the Initial stage to put structure around the deployment of Power Platform and low-code AI. A central IT team or other team focused on Power Platform and low-code AI implement these controls. Early efforts are focused on establishing foundational governance policies and drafting compliance processes tailored to the specific challenges of low-code AI systems. Senior leadership begins to recognize the value of responsible AI and promotes it through occasional incentives or support for passionate individuals or teams. Some training resources might exist, but they aren't accessible or widely adopted.
 
@@ -75,7 +75,7 @@ Environments are used as needed. For example, various production environments an
 
 ## Level 300 – Defined
 
-*This phase describes a process that is defined/confirmed as a standard business process.*
+This phase describes a process that is defined/confirmed as a standard business process.
 
 The *Defined*  stage is characterized by a more structured approach to Power Platform and low-code AI adoption. Organizations have a dedicated Power Platform and low-code AI product owner and a clear understanding of its role within the IT portfolio. Innovation is driven both bottom-up and top-down, and key performance indicators (KPIs) are operationalized and reviewed against goals. Responsible AI (RAI) practices are increasingly prioritized, with dedicated budgets, and AI champions promoting responsible AI practices. Comprehensive responsible AI policies are in place, covering most aspects of RAI (for example, fairness, transparency). Responsible AI training programs are developed but aren't yet mandatory
 
@@ -108,7 +108,7 @@ Much of this transformation might reflect the organic growth of the organization
 
 ## Level 400 – Capable
 
-*This phase describes a process that is quantitatively managed in accordance with agreed-upon metrics.*
+This phase describes a process that is quantitatively managed in accordance with agreed-upon metrics.
 
 At the *Capable* stage, organizations have established a Center of Excellence (CoE) team that drives increased delivery efficiency to support rapidly changing business needs. Business plans are shared across departments, and precise quantitative and qualitative measures are used to control, predict, and improve business efficiency. Responsible AI is fully integrated into leadership decision-making, with resources allocated for governance, training, and compliance. Governance and compliance processes are well-established and automated where appropriate. Responsible AI training is mandatory for key roles, and a dedicated community of practice is established to share best practices.
 
@@ -138,7 +138,7 @@ Standard, branded app templates and components are available to all makers. Busi
 
 ## Level 500 – Efficient
 
-*This phase describes a process that is quantitatively managed in accordance with agreed-upon metrics.*
+This phase describes a process that is quantitatively managed in accordance with agreed-upon metrics.
 
 The *Efficient* stage represents the pinnacle of Power Platform and low-code AI adoption maturity. Power Platform and low-code AI capabilities are a key part of the organization's digital transformation strategy, with vision and strategy understood by all. Organization-wide initiatives deliver larger-scale apps, and enterprise architecture decisions include Power Platform and low-code AI capabilities. Responsible AI is driven at every level of the organization, seen as a strategic priority with regular reviews of responsible AI initiatives, cross-team collaboration, and continuous investment in culture, tooling, and governance. Governance policies and compliance processes are continuously updated, and responsible AI is seamlessly integrated into all operations. Responsible AI training is a continuous process that is highly accessible to all employees
 
