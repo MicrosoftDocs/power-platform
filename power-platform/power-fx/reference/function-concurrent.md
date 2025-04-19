@@ -1,4 +1,4 @@
----
+﻿---
 title: Concurrent function
 description: Reference information including syntax and examples for the Concurrent function.
 author: gregli-msft

@@ -1,4 +1,4 @@
----
+﻿---
 title: Update and UpdateIf functions
 description: Reference information including syntax and examples for the Update and UpdateIf functions.
 author: gregli-msft

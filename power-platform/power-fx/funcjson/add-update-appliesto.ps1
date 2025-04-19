@@ -15,6 +15,9 @@ Set-StrictMode -Version 2.0
 
 $funcsAppliesToMap = @{}
 
+# default line endings, can be overridden when we see file contents
+$nl = "`r`n"
+
 function get_formula_references {
     $refLink = @{}    
     $refProducts = @()
@@ -38,6 +41,7 @@ function get_formula_references {
             foreach ( $refLine in $refLines ) {
                 if ( $refLine -match '^\*\*\[(\w+)\]\(\s*([^\)\s]+)\s*\)' ) {
                     if ($refLink -contains $matches[1]) {
+                        write-host "duplicate for $matches[1]"
                         if (-not ($refLink[$matches[1]] -eq $matches[2])) {
                             write-host "reference links for $matches[1] do not agree: $refLink[$matches[1]] $matches[2]"
                         }
@@ -56,47 +60,55 @@ function get_formula_references {
         }
     }
 
-    $tocContent = Get-Content "$powerFxPath/TOC.yml"
-    $tocLines = $tocContent -split '[\n\r]+'
+    $tocContent = [System.IO.File]::ReadAllText( "$powerFxPath/TOC.yml", $enc )
+
+    # look for first newline to determine which kind of newline to emit, different folks have different Git settings
+    if ($tocContent -match '(\r\n|\n|\r)') {
+        $nl = $matches[1];
+    }
+
+    $tocLines = $tocContent -split '\r\n|\n|\r'
     $refPrefix = ""
+    $tocCompare = ""
     foreach ($toc in $tocLines ) {
+        $tocCompare += $toc + $nl
         $toc = $toc -replace "`t", "  "
         if ($refPrefix) {
             if ($toc -match "^$refPrefix") {
                 # eat lines until we are back at the same indentation level
             }
             else {
-                $newToc += $toc + "`n"
+                $newToc += $toc + $nl
                 $refPrefix = ""
             }
         }
         elseif ($toc -match '^(\s*) - name: Formula reference') {
             $refPrefix = $matches[1]
-            $newToc += "$refPrefix - name: Formula reference`n"
-            $newToc += "$refPrefix   items:`n"
+            $newToc += "$refPrefix - name: Formula reference" + $nl
+            $newToc += "$refPrefix   items:" + $nl
             $refPrefix += "  "
-            $newToc += "$refPrefix - name: Overview`n"
-            $newToc += "$refPrefix   href: formula-reference-overview.md`n"
+            $newToc += "$refPrefix - name: Overview" + $nl
+            $newToc += "$refPrefix   href: formula-reference-overview.md" + $nl
             $refProducts = ($refProducts | Sort-Object)
             foreach ($r in $refProducts) {
                 $n = $r + " formula reference"
-                $newToc += "$refPrefix - name: $n`n"
+                $newToc += "$refPrefix - name: $n" + $nl
                 $p = $productToHost[$r]
-                $newToc += "$refPrefix   href: formula-reference-$p.md`n"
+                $newToc += "$refPrefix   href: formula-reference-$p.md" + $nl
             }
             $refKeys = $refLink.Keys | Sort-Object
             foreach ($r in $refKeys) {
-                $newToc += "$refPrefix - name: $r`n"
+                $newToc += "$refPrefix - name: $r" + $nl
                 $l = $refLink[$r]
-                $newToc += "$refPrefix   href: $l`n" 
+                $newToc += "$refPrefix   href: $l" + $nl
             }
         }
         else {
-            $newToc += $toc + "`n"
+            $newToc += $toc + $nl
         }
     }    
 
-    if (-not ($tocContent -eq $newToc)) {
+    if (-not ($tocCompare -eq $newToc)) {
         [System.IO.File]::WriteAllText( "$powerFxPath/TOC.yml", $newToc, $enc )
         Write-Host "Updated TOC.yml"
     }
@@ -114,7 +126,7 @@ function get_func_appliesto_map {
         if ( Test-Path $errataFile )
         {
             $errataContent = [System.IO.File]::ReadAllText( $errataFile, $enc )
-            ForEach ($errata in $($errataContent -split "`n"))
+            ForEach ($errata in $($errataContent -split "[\r\n]+"))
             {
                 if ($errata -match '^\-\s(\w+)') {
                     $errataMinus += $matches[1]           
@@ -156,7 +168,9 @@ function get_func_appliesto_map {
             if (-not $funcsAppliesToMap.ContainsKey($funcName)) {
                 $funcsAppliesToMap[$funcName] = @()
             }       
-            $funcsAppliesToMap[$funcName] += $appliesToName
+            if (-not ($funcsAppliesToMap[$funcName] -contains $appliesToName)) {
+                $funcsAppliesToMap[$funcName] += $appliesToName
+            }
         }
     
         if ($json -and $json.ContainsKey( "HostObjects" ) ) {
@@ -177,6 +191,12 @@ function apply_appliesto() {
         $refFileFullName = $refFile.FullName
         $refName = $refFile.Name
         $originalRefContent = [System.IO.File]::ReadAllText( $refFileFullName, $enc )
+
+        # look for first newline to determine which kind of newline to emit, different folks have different Git settings
+        if ($originalRefContent -match '(\r\n|\n|\r)') {
+            $nl = $matches[1];
+        }
+
         $refContent = $originalRefContent
 
         $errataMinus = @()
@@ -185,8 +205,8 @@ function apply_appliesto() {
         $errataFile = "$powerFxPath/funcjson/" + $refFile.Name + ".errata"
         if ( Test-Path $errataFile )
         {
-            $errataContent = [System.IO.File]::ReadAllText( $errataFile, $enc )
-            ForEach ($errata in $($errataContent -split "`n"))
+            $errataContent = [System.IO.File]::ReadAllText( $errataFile, $enc )            
+            ForEach ($errata in $($errataContent -split "[\r\n]+"))
             {
                 if ($errata -match '^\-\s(\w+)') {
                     $errataMinus += $matches[1]           
@@ -212,6 +232,12 @@ function apply_appliesto() {
         # Refresh the include file
         if (Test-Path $includeFilePath) {
             $incContent = [System.IO.File]::ReadAllText( $includeFilePath, $enc )
+
+            # look for first newline to determine which kind of newline to emit, different folks have different Git settings
+            if ($incContent -match '(\r\n|\n|\r)') {
+                $nl = $matches[1];            
+            }
+#            write-host $includeFilePath $nl.length
         }
         else {
             $incContent = ""
@@ -255,13 +281,13 @@ function apply_appliesto() {
         }
         #If all funcs have same applies-to create an include file with applies-to text        
         elseif ($appliesToGroup.Count -eq 1) {
-            $appliesToText = "`n**Applies to:** "
+            $appliesToText = $nl + "**Applies to:** "
             foreach ($appTo in $appliesToGroup.Keys[0].Split(",")) {
                 $appToText = $hostToProduct[$appTo]
                 $appliesToText += $imageType + $appToText
             }
        
-            $newInc = $appliesToText + "`n"
+            $newInc = $appliesToText + $nl
         }
         # If funcs differ in applies-to, create an include file with applies-to table
         elseif ($appliesToGroup.Count -gt 1) {
@@ -271,8 +297,8 @@ function apply_appliesto() {
                     $plural = 1
                 }
             }
-            $tableText = "`n| Function" + ($plural ? "s" : "") + " | Applies to |`n"
-            $tableText += "|-----------|------------|`n"			
+
+            $tableLines = @()
             foreach ($key in $appliesToGroup.Keys) {
                 $appliesToText = ""
                 $funcText = ""
@@ -303,10 +329,15 @@ function apply_appliesto() {
                     }
                 }
 
-                $tableText = $tableText + "| $funcText | $appliesToText |`n"
+                $tableLines += "| $funcText | $appliesToText |"
             }
+            $tableLinesSorted = $tableLines | Sort-Object
+                        
+            $tableText = $nl + "| Function" + ($plural ? "s" : "") + " | Applies to |" + $nl
+            $tableText += "|-----------|------------|" + $nl
+            $tableText += ($tableLinesSorted -join $nl)
 			
-            $newInc = $tableText + "`n"
+            $newInc = $tableText + $nl + $nl
         }
 
         if (-not ($incContent -eq $newInc))
@@ -324,7 +355,7 @@ function apply_appliesto() {
         }
 
         # Remove existing applies-to text if exists from the reference file
-        $refAppliesTo = Select-String ':::image[^:]*source="media/yes-icon.svg"[^:]*:::\s*([^|:\n\r]+)' -input $refContent -AllMatches        
+        $refAppliesTo = Select-String ':::image[^:]*source="media/yes-icon.svg"[^:]*:::\s*([^|:\r\n]+)' -input $refContent -AllMatches        
         if ($refAppliesTo) {
             foreach ( $appliesToMatch in $refAppliesTo.matches ) {
                 $refContent = $refContent.Replace($appliesToMatch.Value, "")
@@ -332,7 +363,7 @@ function apply_appliesto() {
         }
     
         # Remove existing applies-to include if exists from the reference file
-        $refAppliesTo = Select-String '\n*\[!INCLUDE\[[\w\-]+-applies-to\]\(includes[/\\][\w\-]+-applies-to.md\)\]' -input $refContent -AllMatches        
+        $refAppliesTo = Select-String '(\r\n|\n|\r)\[!INCLUDE\[[\w\-]+-applies-to\]\(includes[/\\][\w\-]+-applies-to.md\)\]' -input $refContent -AllMatches        
         if ($refAppliesTo) {
             foreach ( $appliesToMatch in $refAppliesTo.matches ) {
                 $refContent = $refContent.Replace($appliesToMatch.Value, "")
@@ -340,10 +371,8 @@ function apply_appliesto() {
         }        
 
         # Add new applies-to include to the reference file after heading 1
-        if ($refContent -match '[\n\r]+# .+') {
-            $includeText = $includeFileName.Replace(".md", "")
-            $refContent = $refContent -replace '[\n\r]+# .+', "`$&`n[!INCLUDE[$includeText](includes/$includeFileName)]"
-        }
+        $includeText = $includeFileName.Replace(".md", "")
+        $refContent = $refContent -replace '(\r\n|\n|\r)# [^\r\n]+', ("`$&`$1[!INCLUDE[$includeText](includes/$includeFileName)]")
 
         if (-not ($refContent -eq $originalRefContent))
         {
@@ -357,6 +386,7 @@ function Main () {
     get_func_appliesto_map
     apply_appliesto
     get_formula_references
+    Write-Host "Update complete`n"
 }
 
 Main 

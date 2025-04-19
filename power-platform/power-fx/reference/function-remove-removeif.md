@@ -1,4 +1,4 @@
----
+﻿---
 title: Remove and RemoveIf functions
 description: Reference information including syntax and examples for the Remove and RemoveIf functions.
 author: gregli-msft

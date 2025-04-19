@@ -1,4 +1,4 @@
----
+﻿---
 title: Text function
 description: Reference information including syntax and examples for the Text function.
 author: gregli-msft

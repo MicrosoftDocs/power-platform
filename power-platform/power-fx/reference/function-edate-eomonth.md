@@ -1,4 +1,4 @@
----
+﻿---
 title: EDate and EOMonth functions
 description: Reference information including syntax and examples for the EDate and EOMonth functions.
 author: gregli-msft

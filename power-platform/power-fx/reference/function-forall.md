@@ -1,4 +1,4 @@
----
+﻿---
 title: ForAll function
 description: Reference information including syntax and examples for the ForAll function.
 author: gregli-msft

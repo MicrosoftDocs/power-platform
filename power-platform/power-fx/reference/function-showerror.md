@@ -1,4 +1,4 @@
----
+﻿---
 title: Notify function
 description: Reference information including syntax and examples for the Notify function.
 author: gregli-msft

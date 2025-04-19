@@ -1,4 +1,4 @@
----
+﻿---
 title: Exit function
 description: Reference information including syntax and examples for the Exit function.
 author: gregli-msft

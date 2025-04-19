@@ -15,7 +15,7 @@ contributors:
   - mduelae
 ---
 
-# AIClassify, AIExtract, AIReply, AISentiment, AISummarize, and AITranslate
+# AIClassify, AIExtract, AIReply, AISentiment, AISummarize, and AITranslate
 [!INCLUDE[function-ai-applies-to](includes/function-ai-applies-to.md)]
 
 

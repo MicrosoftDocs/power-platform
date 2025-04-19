@@ -1,4 +1,4 @@
----
+﻿---
 title: Lower, Upper, and Proper functions
 description: Reference information including syntax and examples for the Lower, Upper, and Proper functions.
 author: gregli-msft

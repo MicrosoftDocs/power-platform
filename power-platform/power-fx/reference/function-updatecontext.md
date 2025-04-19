@@ -1,4 +1,4 @@
----
+﻿---
 title: UpdateContext function
 description: Reference information including syntax and examples for the UpdateContext function.
 author: gregli-msft

@@ -1,4 +1,4 @@
----
+﻿---
 title: RecordOf and Type functions
 description: Reference information including syntax and examples for the RecordOf and Type functions.
 author: gregli-msft

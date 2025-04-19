@@ -1,4 +1,4 @@
----
+﻿---
 title: Hex2Dec and Dec2Hex functions
 description: Reference information including syntax and examples for the Hex2Dec and Dec2Hex functions in Power Fx.
 author: gregli-msft

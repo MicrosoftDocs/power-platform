@@ -1,4 +1,4 @@
----
+﻿---
 title: Day, Month, Year, Hour, Minute, Second, and Weekday functions
 description: Reference information including syntax and examples for the Day, Month, Year, Hour, Minute, Second, and Weekday functions.
 author: gregli-msft

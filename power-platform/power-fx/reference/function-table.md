@@ -1,4 +1,4 @@
----
+﻿---
 title: Table function
 description: Reference information including syntax and examples for the Table function.
 author: gregli-msft

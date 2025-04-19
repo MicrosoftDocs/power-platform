@@ -1,4 +1,4 @@
----
+﻿---
 title: DateAdd, DateDiff, and TimeZoneOffset functions
 description: Reference information including syntax and examples for the DateAdd, DateDiff, and TimeZoneOffset functions.
 author: gregli-msft

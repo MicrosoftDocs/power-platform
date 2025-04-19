@@ -1,4 +1,4 @@
----
+﻿---
 title: Char and UniChar functions
 description: Reference information including syntax and examples for the Char and UniChar functions.
 author: gregli-msft

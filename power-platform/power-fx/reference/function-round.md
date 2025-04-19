@@ -1,4 +1,4 @@
----
+﻿---
 title: Int, Round, RoundDown, RoundUp, and Trunc functions
 description: Reference information, including syntax, for the Int, Round, RoundDown, RoundUp, and Trunc functions
 author: gregli-msft

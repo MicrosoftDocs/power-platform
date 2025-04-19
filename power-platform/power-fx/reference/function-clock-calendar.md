@@ -1,4 +1,4 @@
----
+﻿---
 title: Calendar and Clock functions
 description: Reference information including syntax and examples for the Calendar and Clock functions.
 author: gregli-msft

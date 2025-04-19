@@ -1,4 +1,4 @@
----
+﻿---
 title: Relate and Unrelate functions
 description: Reference information including syntax and examples for the Relate and Unrelate functions.
 author: gregli-msft

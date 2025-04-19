@@ -1,4 +1,4 @@
----
+﻿---
 title: Assert function
 description: Reference information, including syntax, for the Assert function.
 author: mduelae

@@ -1,4 +1,4 @@
----
+﻿---
 title: And, Or, and Not functions
 description: Reference information including syntax and examples for the And, Or, and Not functions.
 author: gregli-msft

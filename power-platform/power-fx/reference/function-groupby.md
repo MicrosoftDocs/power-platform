@@ -1,4 +1,4 @@
----
+﻿---
 title: GroupBy and Ungroup functions
 description: Reference information including syntax and examples for the GroupBy and Ungroup functions.
 author: gregli-msft

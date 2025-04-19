@@ -1,4 +1,4 @@
----
+﻿---
 title: Distinct function
 description: Reference information including syntax and examples for the Distinct function.
 author: gregli-msft

@@ -1,4 +1,4 @@
----
+﻿---
 title: Decimal, Float, and Value functions
 description: Reference information including syntax and examples for the Decimal, Float, and Value functions.
 author: gregli-msft

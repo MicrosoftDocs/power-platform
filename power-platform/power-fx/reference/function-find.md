@@ -1,4 +1,4 @@
----
+﻿---
 title: Find function
 description: Reference information including syntax and examples for the Find function.
 author: gregli-msft

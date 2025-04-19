@@ -1,4 +1,4 @@
----
+﻿---
 title: Select function
 description: Reference information including syntax and examples for the Select function.
 author: gregli-msft

@@ -1,4 +1,4 @@
----
+﻿---
 title: Date, DateTime, and Time functions
 description: Reference information including syntax and examples for the Date, DateTime, and Time functions.
 author: gregli-msft

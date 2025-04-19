@@ -1,4 +1,4 @@
----
+﻿---
 title: ShowHostInfo object in Power Apps
 description: Reference information including syntax and examples for the ShowHostInfo object in Power Apps.
 author: gregli

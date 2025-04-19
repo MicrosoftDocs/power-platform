@@ -1,4 +1,4 @@
----
+﻿---
 title: Count, CountA, CountIf, and CountRows functions
 description: Reference information including syntax and examples for the Count, CountA, CountIf, and CountRows functions.
 author: gregli-msft

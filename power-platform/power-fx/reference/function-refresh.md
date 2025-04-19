@@ -1,4 +1,4 @@
----
+﻿---
 title: Refresh function
 description: Reference information including syntax and examples for the Refresh function.
 author: gregli-msft

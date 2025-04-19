@@ -1,4 +1,4 @@
----
+﻿---
 title: AsType and IsType functions
 description: Reference information including syntax and examples for the AsType and IsType functions.
 author: gregli-msft

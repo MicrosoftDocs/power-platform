@@ -1,4 +1,4 @@
----
+﻿---
 title: Color enumeration and ColorFade, ColorValue, and RGBA functions
 description: Reference information including syntax and examples for the Color enumeration and ColorFade, ColorValue, and RGBA functions.
 author: gregli-msft

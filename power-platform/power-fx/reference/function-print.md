@@ -1,4 +1,4 @@
----
+﻿---
 title: Print function
 description: Reference information including syntax and examples for the Print function.
 author: gregli-msft

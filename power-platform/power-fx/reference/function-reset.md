@@ -1,4 +1,4 @@
----
+﻿---
 title: Reset function
 description: Reference information including syntax and examples for the Reset function.
 author: gregli-msft

@@ -1,4 +1,4 @@
----
+﻿---
 title: Shuffle function
 description: Reference information including syntax and examples for the Shuffle function.
 author: gregli-msft

@@ -1,4 +1,4 @@
----
+﻿---
 title: Error, IfError, IsError, and IsBlankOrError functions
 description: Reference information including syntax and examples for the Error, IfError, IsError, IsBlankOrError functions.
 author: gregli-msft

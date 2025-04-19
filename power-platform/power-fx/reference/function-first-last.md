@@ -1,4 +1,4 @@
----
+﻿---
 title: First, FirstN, Index, Last, and LastN functions
 description: Reference information including syntax and examples for the First, FirstN, Index, Last, and LastN functions.
 author: gregli-msft

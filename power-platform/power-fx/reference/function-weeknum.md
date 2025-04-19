@@ -1,4 +1,4 @@
----
+﻿---
 title: WeekNum and ISOWeekNum functions
 description: Reference information including syntax and examples for the WeekNum and ISOWeekNum functions.
 author: gregli-msft

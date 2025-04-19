@@ -1,4 +1,4 @@
----
+﻿---
 title: Concat and Concatenate functions
 description: Reference information including syntax and examples for the Concat and Concatenate functions.
 author: gregli-msft

@@ -1,4 +1,4 @@
----
+﻿---
 title: Replace and Substitute functions
 description: Reference information including syntax and examples for the Replace and Substitute functions.
 author: gregli-msft

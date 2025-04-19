@@ -1,4 +1,4 @@
----
+﻿---
 title: ReadNFC function
 description: Reference information, including syntax, for the ReadNFC function
 author: mikepenaMS

@@ -1,4 +1,4 @@
----
+﻿---
 title: AddColumns, DropColumns, RenameColumns, and ShowColumns functions
 description: Reference information including syntax and examples for the AddColumns, DropColumns, RenameColumns, and ShowColumns functions.
 author: gregli-msft

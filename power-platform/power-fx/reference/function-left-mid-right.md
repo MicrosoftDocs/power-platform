@@ -1,4 +1,4 @@
----
+﻿---
 title: Left, Mid, and Right functions
 description: Reference information including syntax and examples for the Left, Mid, and Right functions.
 author: gregli-msft

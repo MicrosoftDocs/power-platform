@@ -1,4 +1,4 @@
----
+﻿---
 title: Revert function
 description: Reference information including syntax and examples for the Revert function.
 author: gregli-msft

@@ -1,4 +1,4 @@
----
+﻿---
 title: Download function
 description: Reference information including syntax and examples for the Download function.
 author: gregli-msft

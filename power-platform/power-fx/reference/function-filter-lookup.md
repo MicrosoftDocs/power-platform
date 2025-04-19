@@ -1,4 +1,4 @@
----
+﻿---
 title: Filter, Search, and LookUp functions
 description: Reference information including syntax and examples for the Filter, Search, and LookUp functions.
 author: gregli-msft

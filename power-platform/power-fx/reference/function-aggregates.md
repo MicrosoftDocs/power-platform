@@ -1,4 +1,4 @@
----
+﻿---
 title: Average, Max, Min, StdevP, Sum, and VarP functions
 description: Reference information including syntax and examples for the Average, Max, Min, StdevP, Sum, and VarP functions.
 author: gregli-msft

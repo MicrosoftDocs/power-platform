@@ -1,4 +1,4 @@
----
+﻿---
 title: DateValue, TimeValue, and DateTimeValue functions
 description: Reference information including syntax and examples for the DateValue, TimeValue, and DateTimeValue functions.
 author: gregli-msft

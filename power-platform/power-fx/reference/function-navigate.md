@@ -1,4 +1,4 @@
----
+﻿---
 title: Back and Navigate functions
 description: Reference information including syntax and examples for the Back and Navigate functions.
 author: gregli-msft

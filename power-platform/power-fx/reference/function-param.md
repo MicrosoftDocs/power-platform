@@ -1,4 +1,4 @@
----
+﻿---
 title: Launch and Param functions
 description: Reference information including syntax and examples for the Launch and Param functions.
 author: gregli-msft
@@ -16,7 +16,7 @@ contributors:
   - gregli
 ---
 
-# Launch and Param functions
+# Launch and Param functions
 [!INCLUDE[function-param-applies-to](includes/function-param-applies-to.md)]
 
 

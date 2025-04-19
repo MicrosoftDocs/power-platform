@@ -1,4 +1,4 @@
----
+﻿---
 title: Blank, Coalesce, IsBlank, and IsEmpty functions
 description: Reference information including syntax and examples for the Blank, Coalesce, IsBlank, and IsEmpty functions.
 author: gregli-msft

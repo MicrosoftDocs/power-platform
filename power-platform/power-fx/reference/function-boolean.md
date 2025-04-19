@@ -1,4 +1,4 @@
----
+﻿---
 title: Boolean function
 description: Reference information including syntax and examples for the Boolean function.
 author: gregli

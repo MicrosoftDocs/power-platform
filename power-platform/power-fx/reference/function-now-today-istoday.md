@@ -1,4 +1,4 @@
----
+﻿---
 title: Now, Today, IsToday, UTCNow, and UTCToday functions
 description: Reference information including syntax and examples for the Now, Today, IsToday, UTCNow, and UTCToday functions.
 author: gregli-msft

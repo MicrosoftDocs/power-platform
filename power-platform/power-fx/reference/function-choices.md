@@ -1,4 +1,4 @@
----
+﻿---
 title: Choices function
 description: Reference information including syntax and examples for the Choices function.
 author: gregli-msft

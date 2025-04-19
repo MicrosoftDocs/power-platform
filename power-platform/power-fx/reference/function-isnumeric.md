@@ -1,4 +1,4 @@
----
+﻿---
 title: IsNumeric function
 description: Reference information including syntax and examples for the IsNumeric function.
 author: gregli-msft

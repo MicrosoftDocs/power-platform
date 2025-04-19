@@ -1,4 +1,4 @@
----
+﻿---
 title: PDF function (experimental)
 description: Reference information including syntax and examples for the PDF function.
 author: TashasEv
@@ -16,8 +16,8 @@ contributors:
 ---
 
 # PDF function (experimental)
-
 [!INCLUDE[function-pdf-applies-to](includes/function-pdf-applies-to.md)]
+
 
 
 

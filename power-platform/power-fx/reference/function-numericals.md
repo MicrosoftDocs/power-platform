@@ -1,4 +1,4 @@
----
+﻿---
 title: Abs, Exp, Ln, Power, Log, and Sqrt functions
 description: Reference information including syntax and examples for the Abs, Exp, Ln, Power, and Sqrt functions.
 author: gregli-msft

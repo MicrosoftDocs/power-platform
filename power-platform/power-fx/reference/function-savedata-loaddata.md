@@ -1,4 +1,4 @@
----
+﻿---
 title: SaveData, LoadData, and ClearData functions
 description: Reference information including syntax and examples for the SaveData, LoadData, and ClearData functions.
 author: gregli-msft

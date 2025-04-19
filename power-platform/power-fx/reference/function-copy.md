@@ -1,4 +1,4 @@
----
+﻿---
 title: Copy function
 description: Reference information for the Copy function.
 author: gregli

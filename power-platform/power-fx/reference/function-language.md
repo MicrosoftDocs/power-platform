@@ -1,4 +1,4 @@
----
+﻿---
 title: Language function
 description: Reference information including syntax and examples for the Language function.
 author: gregli-msft

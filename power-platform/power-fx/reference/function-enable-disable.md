@@ -1,4 +1,4 @@
----
+﻿---
 title: Enable and Disable functions
 description: Reference information including syntax and examples for the Enable and Disable functions.
 author: gregli-msft

@@ -1,4 +1,4 @@
----
+﻿---
 title: RequestHide function
 description: Reference information including syntax and examples for the RequestHide function.
 author: emcoope-msft

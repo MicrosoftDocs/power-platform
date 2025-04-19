@@ -1,4 +1,4 @@
----
+﻿---
 title: EncodeHTML, EncodeUrl, and PlainText functions
 description: Reference information including syntax and examples for the EncodeHTML, EncodeUrl, and PlainText functions.
 author: gregli-msft

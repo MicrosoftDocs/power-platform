@@ -1,4 +1,4 @@
----
+﻿---
 title: If and Switch functions
 description: Reference information including syntax and examples for the If and Switch functions.
 author: gregli-msft

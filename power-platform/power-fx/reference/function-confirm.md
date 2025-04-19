@@ -1,4 +1,4 @@
----
+﻿---
 title: Confirm function
 description: Reference information for the Confirm function.
 author: gregli-msft

@@ -1,4 +1,4 @@
----
+﻿---
 title: Summarize function
 description: Reference information including syntax and examples for Summarize function.
 author: gregli-msft

@@ -1,4 +1,4 @@
----
+﻿---
 title: Collect, Clear, and ClearCollect functions
 description: Reference information including syntax and examples for the Collect, Clear, and ClearCollect functions.
 author: gregli-msft

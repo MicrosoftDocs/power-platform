@@ -1,4 +1,4 @@
----
+﻿---
 title: EditForm, NewForm, SubmitForm, ResetForm, and ViewForm functions
 description: Reference information including syntax and examples for the EditForm, NewForm, SubmitForm, ResetForm, and ViewForm functions.
 author: gregli-msft

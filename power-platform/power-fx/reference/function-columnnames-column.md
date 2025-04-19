@@ -1,4 +1,4 @@
----
+﻿---
 title: ColumnNames and Column functions
 description: Reference information including syntax and examples for the ColumnNames and Column functions.
 author: carlosff

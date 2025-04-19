@@ -1,4 +1,4 @@
----
+﻿---
 title: Trim and TrimEnds functions
 description: Reference information including syntax and examples for the Trim and TrimEnds functions.
 author: gregli-msft

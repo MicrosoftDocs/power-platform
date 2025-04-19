@@ -1,4 +1,4 @@
----
+﻿---
 title: Len function
 description: Reference information including syntax and examples for the Len function.
 author: gregli-msft

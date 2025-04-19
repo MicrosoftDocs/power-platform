@@ -1,4 +1,4 @@
----
+﻿---
 title: EndsWith and StartsWith functions
 description: Reference information including syntax and examples for the EndsWith and StartsWith functions.
 author: gregli-msft

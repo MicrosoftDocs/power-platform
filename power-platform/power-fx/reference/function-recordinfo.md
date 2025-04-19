@@ -1,4 +1,4 @@
----
+﻿---
 title: RecordInfo function
 description: Reference information including syntax and examples for the RecordInfo function.
 author: gregli-msft

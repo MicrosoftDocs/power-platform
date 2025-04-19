@@ -1,4 +1,4 @@
----
+﻿---
 title: Rand and RandBetween functions
 description: Reference information including syntax and examples for the Rand and RandBetween functions.
 author: gregli-msft

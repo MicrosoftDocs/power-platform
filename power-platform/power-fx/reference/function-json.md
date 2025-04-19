@@ -1,4 +1,4 @@
----
+﻿---
 title: JSON function
 description: Reference information including syntax and examples for the JSON function.
 author: gregli-msft

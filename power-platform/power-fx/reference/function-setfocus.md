@@ -1,4 +1,4 @@
----
+﻿---
 title: SetFocus function in
 description: Reference information including syntax and examples for the SetFocus function.
 author: gregli-msft

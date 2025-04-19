@@ -1,4 +1,4 @@
----
+﻿---
 title: IsMatch, Match, and MatchAll functions
 description: Reference information including syntax and examples for the IsMatch, Match, and MatchAll functions.
 author: gregli-msft
