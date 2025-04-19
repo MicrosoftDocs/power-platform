@@ -82,7 +82,7 @@ Predefined patterns provide a simple way to match either one of a set of charact
 | **Letter**            | Matches a letter.                                                                                        | `\p{L}`               |
 | **MultipleDigits**    | Matches one or more digits.                                                                              | `\d+`                 |
 | **MultipleLetters**   | Matches one or more letters.                                                                             | `\p{L}+`              |
-| **MultipleNonSpaces** | Matches one or more characters that don't add whitespace (not space, tab, or newline).                   | `\S+`                 |
+| **MultipleNonSpaces** | Matches one or more characters that don't add whitespace (not space, tab, or newline).                          | `\S+`                 |
 | **MultipleSpaces**    | Matches one or more characters that add whitespace (space, tab, or newline).                             | `\s+`                 |
 | **NonSpace**          | Matches a single character that doesn't add whitespace.                                                  | `\S`                  |
 | **OptionalDigits**    | Matches zero, one, or more digits.                                                                       | `\d*`                 |
