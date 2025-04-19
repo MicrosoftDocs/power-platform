@@ -76,8 +76,8 @@ Predefined patterns provide a simple way to match either one of a set of charact
 | **Any**               | Matches any character.                                                                                   | `.`                   |
 | **Comma**             | Matches a comma.                                                                                         | `,`                   |
 | **Digit**             | Matches a single digit ("0" through "9").                                                                | `\d`                  |
-| **Email**             | Matches an email address that contains an "at" symbol ("\@") and a domain name that contains a dot (".") | `.+\@.+\\.[^\\.]{2,}` |
-| **Hyphen**            | Matches a hyphen.                                                                                        | `\-`                  |
+| **Email**             | Matches an email address that contains an "at" symbol ("\@") and a domain name that contains a dot (".") | *See note* |
+| **Hyphen**            | Matches a hyphen.                                                                                        | `-` *See note*               |
 | **LeftParen**         | Matches a left parenthesis "(".                                                                          | `\(`                  |
 | **Letter**            | Matches a letter.                                                                                        | `\p{L}`               |
 | **MultipleDigits**    | Matches one or more digits.                                                                              | `\d+`                 |
@@ -96,45 +96,22 @@ Predefined patterns provide a simple way to match either one of a set of charact
 
 For example, the pattern **"A" & MultipleDigits** will match the letter "A" followed by one or more digits.
 
+Power Apps has a different definition for **Match.EMail** and **Match.Hyphen**. Evaluate `Text( Match.Email )` to see the regular expression used by your host.
+
 ### Regular expressions
 
-The pattern that these functions use is a [regular expression](https://en.wikipedia.org/wiki/Regular_expression). The ordinary characters and predefined patterns that are described earlier in this topic help build regular expressions.
+The pattern they these functions use is called a [regular expression](https://en.wikipedia.org/wiki/Regular_expression). 
 
-Regular expressions are very powerful, available in many programming languages, and used for a wide variety of purposes. They can also often look like a random sequence of punctuation marks. This article doesn't describe all aspects of regular expressions, but a wealth of information, tutorials, and tools are available online.
+Regular expressions are very powerful and are used for a wide variety of purposes. They can also look like a random sequence of punctuation marks. This article doesn't describe all aspects of regular expressions, but a wealth of information, tutorials, and tools are available online.
 
-Every programming language has its own dialect of regular expressions and there is no standard.  Power Fx uses a dialect that includes the most common regular expression features found in the industry, avoids ambiguity, and ensures that Power Fx regular expressions give the same result everywhere that Power Fx is used.
+Regular expressions have a long history and are available in many programming languages. Every programming language has its own dialect of regular expressions and there are few standards. As much as possible, we are striving to have the same regular expression give the same result across all Power Fx implementations. That isn't easy to accomplish as Power Fx runs on top of JavaScript and .NET which have significant differences. To accommodate running on different platforms, Power Fx regular expressions are limited to a subset of features that are widely supported across the industry.
 
-Power Fx regular expressions support these common regular expression features:
+As a result, some regular expressions that may work in other environments may be blocked or require a tweak in Power Fx. Power Fx will produce an authoring time error when unsupported features are encountered. This is one of the reasons that the regular expression and options must be an authoring time constant and not dynamic (for example, provided in a variable).
 
-| Feature | Description |
-|---------|---------|
-| Literal characters | Any character except `[ ] \ ^ $ . | ? * + ( )` can be inserted directly. |
-| Escaped literal characters | `\` (backslash) followed by any character except `[A-Za-z_]`. Used to insert the exceptions to direct literal characters, such as `\?` to insert a question mark. | 
-| Dot | `.`, matches everything except `[\r\n]` unless **MatchOptions.DotAll** is used. |
-| Greedy quantifiers | `?` matches 0 or 1 times, `+` matches 1 or more times, `*` matches 0 or more times, `{3}` matches exactly 3 times, `{1,}` matches at least 1 time, `{1,3}` matches between 1 and 3 times. By default, matching is "greedy" and the match will be as *large* as possible. |
-| Lazy quantifiers | Same as the greedy quantifiers followed by `?`, for example `*?` or `{1,3}?`. With the lazy modifier, the match will be as *small* as possible. |
-| Alternation | `a|b` matches "a" or "b". |
-| Non capture group | `(?:a)`, group without capturing the result as a named or numbered sub-match. |
-| Named group and back reference | `(?<name>chars)` captures a sub-match with the name `name`, referenced with `\k<name>`. Cannot be used if **MatchOptions.NumberedSubMatches** is enabled. |
-| Numbered group and back reference | `(a|b)` captures a sub-match, referenced with `\1`. **MatchOptions.NumberedSubMatches** must be enabled. |
-| Anchors | `^` and `$`, matches the beginning and end of the string, or of a line if **MatchOptions.Multiline** is used. |
-| Lookahead and lookbehind | `(?=a)`, `(?!a)`, `(?<=b)`, `(?<!b)`. |
-| Character class | `[abc]` list of characters, `[a-fA-f0-9]` range of characters, `[^a-z]` everything but these characters. Character classes cannot be nested, subtracted, or intersected, and the same character cannot appear twice in the character class (except for a hyphen). |  
-| Word characters and breaks | `\w`, `\W`, `\b`, `\B`, using the Unicode definition of letters `[\p{Ll}\p{Lu}\p{Lt}\p{Lo}\p{Nd}\p{Pc}\p{Lm}]`. |
-| Digit characters | `\d` includes the digits 0-9 and `\p{Nd}`, `\D` matches everything except characters matched by `\d`. |
-| Space characters | `\s` includes spacing characters `[ \r\n\t\f\x0B\x85\p{Z}]`, `\S` which matches everything except characters matched by `\s`, `\r` carriage return, `\n` newline, `\t` tab, `\f` form feed. |
-| Control characters | `\cA`, where the control characters is `[A-Za-z]`. |
-| Hexadecimal and Unicode character codes | `\x20` with two hexadecimal digits, `\u2028` with four hexadecimal digits. |
-| Unicode character class and property | `\p{Ll}` matches all Unicode lowercase letters, while `\P{Ll}` matches everything that is not a Unicode lowercase letter. |
-| Inline comments | `(?# comment here)`, which is ignored as a comment.  See **MatchOptions.FreeSpacing** for an alternative to formatting and commenting regular expressions. |
-| Inline mode modifiers | `(?im)` is the same as using **MatchOptions.IgnoreCase** and **MatchOptions.Multiline**. Must be used at the beginning of the regular expression. Supported inline modes are `[imsx]`, corresponding to **MatchOptions.IgnoreCase**, **MatchOptions.Multiline**, **MatchOptions.DotAll**, and **MatchOptions.FreeSpacing**, respectively. |
+> [!NOTE]
+> Power Apps uses an earlier version of Power Fx regular expressions which has fewer limitations but also fewer features. **MatchOptions.DotAll** and **MatchOptions.FreeSpacing** are not available and the definitions of **Match.Email** and **Match.Hyphen** are different. Unicode surrogate pairs are not treated as a single character. **MatchOptions.NumberedSubMatches** is the default. The version of regular expressions described here will be available in Power Apps soon, under a "Power Fx V1.0 compatibility" switch.
 
-Power Fx regular expressions do not support these features:
-
-- Octal codes for characters, such as `\044` or `\o{044}`. Use `\x` or `\u` instead. Octal character codes can be ambiguous with numbered back references which is why Power Fx disallows them.
-- Unescaped `[`, `]`, `{`, or `}` as a literal character. Escape these characters with a backslash. 
-- Named and numbered sub-matches cannot be used together. By default, named sub-matches are enabled and are preferred for clarity and maintainability, while standard capture groups become non capture groups with improved performance. This can be changed with **MatchOptions.NumberedSubMatches** which provides for traditional capture groups but disables named captures groups. Some implementations treat a mix of numbered and named capture groups differently, leading to ambiguity, which is why Power Fx disallows it.
-- And there are many other features from other regular expression implementations that are not supported. Power Fx will provide an authoring time error when these are encountered. This is one of the reasons that the regular expression and options must be a constant and not dynamic (for example stored in a variable).
+For more details see [Regular expressions in Power Fx](../regular-expressions.md).
 
 ## Match options
 
@@ -145,12 +122,12 @@ You can modify the behavior of these functions by specifying one or more options
 | **MatchOptions.BeginsWith**    | The pattern must match from the beginning of the text.                                                                     | Adds a **^** to the start of the regular expression.                                                                       |
 | **MatchOptions.Complete**      | Default for **IsMatch**. The pattern must match the entire string of text, from beginning to end.                          | Adds a **^** to the start and a **$** to the end of the regular expression.                                                |
 | **MatchOptions.Contains**      | Default for **Match** and **MatchAll**. The pattern must appear somewhere in the text but doesn't need to begin or end it. | Doesn't modify the regular expression.                                                                                     |
-| **MatchOptions.DotAll**      | Changes the behavior of the `.` (dot) operator to match all characters, including newline characters. | Doesn't modify the regular expression. This option is the equivalent of the standard "s" modifier for regular expressions.                                                                        |
+| **MatchOptions.DotAll**      | Changes the behavior of the `.` (dot) operator to match all characters, including newline characters. Not available in Power Apps. | Doesn't modify the regular expression. This option is the equivalent of the standard "s" modifier for regular expressions.                                                                        |
 | **MatchOptions.EndsWith**      | The pattern must match the end of the string of text.                                                                      | Adds a **$** to the end of the regular expression.                                                                         |
-| **MatchOptions.FreeSpacing**    | Whitespace characters, including newlines, are ignored in the regular expression. End of line comments beginning with a `#` are ignored. | Only changes how the regular expression syntax. This option is the equivalent of the standard "x" modifier for regular expressions. |
+| **MatchOptions.FreeSpacing**    | Whitespace characters, including newlines, are ignored in the regular expression. End of line comments beginning with a `#` are ignored. Not available in Power Apps. | Only changes how the regular expression syntax. This option is the equivalent of the standard "x" modifier for regular expressions. |
 | **MatchOptions.IgnoreCase**    | Treats uppercase and lowercase letters as identical. By default, matching is case sensitive.                               | Doesn't modify the regular expression. This option is the equivalent of the standard "i" modifier for regular expressions. |
 | **MatchOptions.Multiline**     | Changes the behavior of `^` and `$` to match at the end of aline.                                                                                             | Doesn't modify the regular expression. This option is the equivalent of the standard "m" modifier for regular expressions. |
-| **MatchOptions.NumberedSubMatches**     | Named captures are preferred as they are easier to understand and maintain.  Performance is also improved as unneeded captures are not retained.  But for older regular expressions, treats each set of parenthesis as a numbered capture that is included with the **SubMatches** table in the result.  .  | Doesn't modify the regular expression. Named captures are disabled and `\1` style back references are enabled. |
+| **MatchOptions.NumberedSubMatches**     | Named captures are preferred as they are easier to understand and maintain.  Performance is also improved as unneeded captures are not retained.  But for older regular expressions, treats each set of parenthesis as a numbered capture that is included with the **SubMatches** table in the result. Default in Power Apps. | Doesn't modify the regular expression. Named captures are disabled and `\1` style back references are enabled. |
 
 Using **MatchAll** is equivalent to using the standard "g" modifier for regular expressions.
 
