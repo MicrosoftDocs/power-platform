@@ -12,6 +12,8 @@ search.audienceType:
 ---
 # Integrate (synchronize) your email system
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 One of the main reasons people use customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), is to store all customer communications in one place, so anyone with the appropriate permissions can see all relevant customer records. For example, view all email associated with a particular contact, account, opportunity, or case.  
   
  To store email and other messaging records, you need to synchronize your email system with customer engagement apps. You can do this with server-side synchronization. 

@@ -17,6 +17,8 @@ search.audienceType:
 
 # Subscription Tracking Deleted Object Table
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 The **SubscriptionTrackingDeletedObject** table is linked to the **DeletionService** that handles two types of cleanup: organization-wide and records. When records are initially deleted from entity tables, they're added to the **dbo.SubscriptionTrackingDeletedObject** table. This table supplies the **DeletionService** with **ObjectIDs** of removed items for asynchronous cleanup.
 
 ## FAQ

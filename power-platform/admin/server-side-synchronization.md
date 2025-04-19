@@ -15,6 +15,8 @@ contributors:
 ---
 # Server-side synchronization
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 Server-side synchronization is the preferred option for organizations with users who run customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation) in a web browser or on a mobile device, such as a tablet or smartphone. Server-side synchronization provides direct apps-to-email server synchronization. When you use [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)], this includes bidirectional synchronization of email, contacts, tasks, and appointments. The data synchronized for each user can be controlled by using synchronization filters that are available on the **Synchronization** tab in the user options dialog box.  
   
 If you use a POP3 email server, the data that is synchronized includes email only.  
