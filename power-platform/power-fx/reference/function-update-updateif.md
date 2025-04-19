@@ -1,4 +1,4 @@
----
+﻿---
 title: Update and UpdateIf functions
 description: Reference information including syntax and examples for the Update and UpdateIf functions.
 author: gregli-msft
@@ -18,8 +18,9 @@ contributors:
 ---
 
 # Update and UpdateIf functions
+[!INCLUDE[function-update-updateif-applies-to](includes/function-update-updateif-applies-to.md)]
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps   
+
 
 Updates [records](/power-apps/maker/canvas-apps/working-with-tables#records) in a [data source](/power-apps/maker/canvas-apps/working-with-data-sources).
 
@@ -86,3 +87,137 @@ In these examples, you'll replace or modify records in a data source that's name
    The number of units in stock for the product you specified decreases by the amount that you specified.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

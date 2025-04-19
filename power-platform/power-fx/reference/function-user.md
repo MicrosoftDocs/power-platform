@@ -1,4 +1,4 @@
----
+﻿---
 title: User function
 description: Reference information including syntax and examples for the User function.
 author: gregli-msft
@@ -18,8 +18,9 @@ contributors:
 ---
 
 # User function
+[!INCLUDE[function-user-applies-to](includes/function-user-applies-to.md)]
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Pages
+
 
 Returns information about the current user.
 
@@ -62,3 +63,137 @@ The current Power Apps user has the following information:
 | **User().Image**    | The image URL for the current Power Apps user. Set the **Image** property of the **Image** control to this value to display the image in the app. | "blob:1234...5678"<br><br>With **ImageControl.Image**:<br>![Image icon 1.](media/function-user/john-doe-picture.png "Image icon 1") |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

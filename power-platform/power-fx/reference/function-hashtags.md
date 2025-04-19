@@ -1,4 +1,4 @@
----
+﻿---
 title: HashTags function
 description: Reference information including syntax and examples for the HashTags function.
 author: gregli-msft
@@ -18,8 +18,9 @@ contributors:
 ---
 
 # HashTags function
+[!INCLUDE[function-hashtags-applies-to](includes/function-hashtags-applies-to.md)]
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Pages
+
 
 Extracts the hashtags (#strings) from a string of text.
 
@@ -63,3 +64,139 @@ The **HashTags** function scans a string for hashtags. Hashtags start with a pou
    - **\#1**
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

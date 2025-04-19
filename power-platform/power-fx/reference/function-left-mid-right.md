@@ -1,4 +1,4 @@
----
+﻿---
 title: Left, Mid, and Right functions
 description: Reference information including syntax and examples for the Left, Mid, and Right functions.
 author: gregli-msft
@@ -18,8 +18,9 @@ contributors:
 ---
 
 # Left, Mid, and Right functions
+[!INCLUDE[function-left-mid-right-applies-to](includes/function-left-mid-right-applies-to.md)]
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Dataverse formula columns :::image type="icon" source="media/yes-icon.svg" border="false"::: Desktop flows :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Pages :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
+
 
 Extracts the left, middle, or right portion of a string of text.
 
@@ -87,3 +88,139 @@ Each example in this section extracts strings from the **Address** [column](/pow
    The label shows the last three characters of each product name.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

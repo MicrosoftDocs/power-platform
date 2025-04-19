@@ -1,4 +1,4 @@
----
+﻿---
 title: Relate and Unrelate functions
 description: Reference information including syntax and examples for the Relate and Unrelate functions.
 author: gregli-msft
@@ -18,8 +18,9 @@ contributors:
 ---
 
 # Relate and Unrelate functions
+[!INCLUDE[function-relate-unrelate-applies-to](includes/function-relate-unrelate-applies-to.md)]
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps 
+
 
 Relate and unrelate records of two tables through a one-to-many or many-to-many relationship.
 
@@ -330,3 +331,138 @@ With this new screen, users can add a contact to a product and then flip to a vi
 ![Demonstrate many-to-many relationship from either side.](media/function-relate-unrelate/contacts-reverse.gif)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
