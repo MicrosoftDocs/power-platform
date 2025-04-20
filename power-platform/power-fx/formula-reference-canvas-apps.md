@@ -195,7 +195,6 @@ Other elements include:
 
 **[Exp](reference/function-numericals.md)** – Returns _e_ raised to a power.
 
-
 ## F
 
 **[Filter](reference/function-filter-lookup.md)** – Returns a filtered table based on one or more criteria.
@@ -254,8 +253,6 @@ Other elements include:
 **[IsToday](reference/function-now-today-istoday.md)** – Checks whether a date/time value is sometime today in the user's time zone.
 
 **[IsType](reference/function-astype-istype.md)** – Checks whether a record reference refers to a specific table type.
-
-**[IsUTCToday](reference/function-now-today-istoday.md)** – Checks whether a date/time value is sometime today in Coordinated Universal Time (UTC).
 
 ## J
 
@@ -339,6 +336,8 @@ Other elements include:
 
 **[Power](reference/function-numericals.md)** – Returns a number raised to a power. You can also use the [**^** operator](reference/operators.md).
 
+**[Print](reference/function-print.md)** - Opens the current screen in the default browser print dialog.
+
 **[Proper](reference/function-lower-upper-proper.md)** – Converts the first letter of each word in a string to uppercase, and converts the rest to lowercase.
 
 ## R
@@ -352,6 +351,8 @@ Other elements include:
 **[ReadNFC](reference/function-readnfc.md)** – Reads a Near Field Communication (NFC) tag.
 
 **[RecordInfo](reference/function-recordinfo.md)** – Provides information about a record of a data source.
+
+**[RecordOf](reference/function-type.md)** - Extracts the type of a record from a table.
 
 **[Refresh](reference/function-refresh.md)** – Refreshes the records of a data source.
 
@@ -396,8 +397,6 @@ Other elements include:
 **[Self](reference/operators.md#self-and-parent-operators)** – Provides access to the properties of the current control.
 
 **[Sequence](reference/function-sequence.md)** – Generate a table of sequential numbers, useful when iterating with **ForAll**.
-
-**[SendAppNotification (preview)](reference/function-send-app-notification.md)** – Send an in-app notification with optional actions to a recipient.
 
 **[Set](reference/function-set.md)** – Sets the value of a global variable.
 
@@ -461,6 +460,8 @@ Other elements include:
 
 **[Trunc](reference/function-round.md)** – Truncates the number to only the integer portion by removing any decimal portion.
 
+**[Type](reference/function-type.md)** - Defines a user defined type.
+
 ## U
 
 **[Ungroup](reference/function-groupby.md)** – Removes a grouping.
@@ -478,10 +479,6 @@ Other elements include:
 **[Upper](reference/function-lower-upper-proper.md)** – Converts letters in a string of text to all uppercase.
 
 **[User](reference/function-user.md)** – Returns information about the current user.
-
-**[UTCNow](reference/function-now-today-istoday.md)** – Returns the current date/time value in Coordinated Universal Time (UTC).
-
-**[UTCToday](reference/function-now-today-istoday.md)** – Returns the current date-only value in Coordinated Universal Time (UTC).
 
 ## V
 
