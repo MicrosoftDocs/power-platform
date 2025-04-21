@@ -67,12 +67,12 @@ During the deletion process, a new replacement default environment is created wi
 > You can't turn off this cleanup mechanism. However, you can review the last activity date for environments in the Power Platform admin center. 
 
 ## Developer environment
-Power Platform is implementing a cleanup process for developer environments that meet the following criteria. After 30 days of inactivity, environments are automatically turned off. After 15 days after that, the environment gets _soft-deleted_, unless the customer turns on the environment. Once the environment is soft-deleted, the customer has seven days to recover the environment before it's fully deleted.
+Power Platform is implementing a cleanup process for developer environments that meet the following criteria. After 30 days of inactivity, environments are automatically disabled. After 15 days after that, the environment gets _soft-deleted_, unless the customer re-enables the environment. Once the environment is soft-deleted, the customer has seven days to recover the environment before it's fully deleted.
 
 As part of this cleanup process, you can expect the following:
-- Admins receive two warning notifications before the environment gets turned off or deleted due to inactivity.
+- Admins receive two warning notifications before the environment gets disabled or deleted due to inactivity.
 - Any activity on the environment resets the inactivity period.
-- Environments that have been turned off due to inactvity are deleted 15 days after the warning notification was sent.
+- Disabled environments, due to inactvity, are deleted 15 days after the warning notification was sent.
   
 ### Timeline for unused developer environments
 
@@ -87,7 +87,7 @@ The environment's administrators and the user who created the environment are no
 | 11 days after the environment is disabled | Send a second warning that the environment will be deleted. |
 | 15 days after the environment is disabled | Delete the environment, and send a notice that the environment has been deleted. |
 
-A warning message appears on the **Environments** list page and **Environment** page when an environment is turned off.
+A warning message appears on the **Environments** list page and **Environment** page when an environment is disabled.
 
 ### Definition of user activity
 
