@@ -134,34 +134,6 @@ When you provision a Dataverse search index, an indication that provisioning is 
 > [!IMPORTANT]
 > Turning off Dataverse search deprovisions and removes the index within a period of 12 hours. If you turn on Dataverse search after its been off for 12 hours, it provisions a fresh index that needs to go through a full sync. Syncing may take up to an hour or more for average size organizations, and a couple of days for large organizations. Be sure to consider these implications when you turn off Dataverse search temporarily.
 
-## Help improve Dataverse search
-
-Share your environment's Dataverse search queries in Dynamics 365 and Power Platform applications with Microsoft to help Microsoft improve Dataverse search. This data helps Microsoft build, improve, and validate the Microsoft machine learning model for the Dynamics 365 Natural Language search query technology.
-
-People using secured computers in the United States review your queries and results. Aggregate data about queries and results are used by Microsoft engineers and data scientists to improve future search query results for all users worldwide. Your data remains your property. Your organization's data is stored within your tenant's compliance boundary and is automatically deleted after 30 days. You can delete the data at any time by navigating to the Power Platform admin center and toggling the **Share anonymized search analytics with Microsoft** option to **Off**. For more information, go to **Terms of Service** in the Power Platform admin center.
-
-The **Share anonymized search analytics with Microsoft** option is **Off**, by default. To turn it on:
-
-## [New admin center](#tab/new)
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Manage**.
-1. In the **Manage** pane, select **Environments**.
-1. In the **Environments** page, select an environment.
-1. Select **Settings** in the command bar.
-1. Expand **Product**, and then select **Features**.
-1. Under **Search**, set **Share anonymized search analytics with Microsoft** to **On**.
-1. Select **Save**.
-
-## [Classic admin center](#tab/classic)
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, **Environments**.
-1. In the **Environments** page, select an environment.
-1. Select **Settings** in the command bar.
-1. Expand **Product**, and then select **Features**.
-1. Under **Search**, set **Share anonymized search analytics with Microsoft** to **On**.
-1. Select **Save**.
----
-
 ## Set up Dataverse search
 
 Setting up Dataverse search after turning it on in the Power Platform admin center involves four steps:
