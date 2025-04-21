@@ -1,4 +1,4 @@
----
+﻿---
 title: Confirm function
 description: Reference information for the Confirm function.
 author: gregli-msft
@@ -17,8 +17,9 @@ contributors:
 ---
 
 # Confirm function
+[!INCLUDE[function-confirm-applies-to](includes/function-confirm-applies-to.md)]
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps 
+
 
 Display a confirmation dialog box to the user.
 
@@ -83,3 +84,139 @@ Confirm( "There was a problem, please review your order." )
 ```
 
 Displays a message much like the **Notify** function does, but is modal and requires the user to select a button to proceed.  Use when it's important that the user acknowledges the message before proceeding.  In this situation, which button was selected isn't important and the result isn't checked.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

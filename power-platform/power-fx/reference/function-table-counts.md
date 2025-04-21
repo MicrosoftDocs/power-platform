@@ -1,4 +1,4 @@
----
+﻿---
 title: Count, CountA, CountIf, and CountRows functions
 description: Reference information including syntax and examples for the Count, CountA, CountIf, and CountRows functions.
 author: gregli-msft
@@ -18,8 +18,9 @@ contributors:
 ---
 
 # Count, CountA, CountIf, and CountRows functions
+[!INCLUDE[function-table-counts-applies-to](includes/function-table-counts-applies-to.md)]
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Desktop flows :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Pages :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
+
 
 Counts all [records](/power-apps/maker/canvas-apps/working-with-tables#records) in a [table](/power-apps/maker/canvas-apps/working-with-tables), or counts all records that satisfy a condition.
 
@@ -89,3 +90,137 @@ You need to enable the **Enhanced delegation for Microsoft Dataverse** option in
    The label shows **5** because the collection contains five rows.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
