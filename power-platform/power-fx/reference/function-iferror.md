@@ -1,4 +1,4 @@
----
+﻿---
 title: Error, IfError, IsError, and IsBlankOrError functions
 description: Reference information including syntax and examples for the Error, IfError, IsError, IsBlankOrError functions.
 author: gregli-msft
@@ -17,8 +17,9 @@ contributors:
 ---
 
 # Error, IfError, IsError, IsBlankOrError functions
+[!INCLUDE[function-iferror-applies-to](includes/function-iferror-applies-to.md)]
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Dataverse formula columns :::image type="icon" source="media/yes-icon.svg" border="false"::: Desktop flows :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Pages :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
+
 
 Detects errors and provides an alternative value or takes action. Create a custom error or pass through an error.
 
@@ -262,3 +263,139 @@ Error( Filter( AllErrors, Kind <> ErrorKind.Div0 ) )
 [Formula reference for Power Apps](/power-apps/maker/canvas-apps/formula-reference)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

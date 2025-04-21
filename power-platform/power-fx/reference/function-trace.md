@@ -1,4 +1,4 @@
----
+﻿---
 title: Trace function
 description: Reference information including syntax and examples for the Trace function.
 author: mduelae
@@ -18,8 +18,9 @@ contributors:
 ---
 
 # Trace function
+[!INCLUDE[function-trace-applies-to](includes/function-trace-applies-to.md)]
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
+
 
 Often there is a lot of logic working behind the scenes in an app. Sometimes the impact is obvious, for example a control's value or color changes, confirming the logic operated correctly. However, sometimes it isn't obvious and it can be difficult to visualize and understand what is happening inside the app. Use the **Trace** function to record diagnostic information from behind the scenes, creating a timeline of what actually happened, to better understand how your app is operating and to help debug issues.
 
@@ -58,3 +59,137 @@ When used with [Test Studio](/power-apps/maker/canvas-apps/test-studio), **Trace
 [Working with Test Studio](/power-apps/maker/canvas-apps/working-with-test-studio)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

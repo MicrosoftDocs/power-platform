@@ -1,4 +1,4 @@
----
+﻿---
 title: AddColumns, DropColumns, RenameColumns, and ShowColumns functions
 description: Reference information including syntax and examples for the AddColumns, DropColumns, RenameColumns, and ShowColumns functions.
 author: gregli-msft
@@ -18,12 +18,13 @@ contributors:
 ---
 
 # AddColumns, DropColumns, RenameColumns, and ShowColumns functions
+[!INCLUDE[function-table-shaping-applies-to](includes/function-table-shaping-applies-to.md)]
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Desktop flows :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
+
 
 Shapes a [table](/power-apps/maker/canvas-apps/working-with-tables) by adding, dropping, renaming, and selecting its [columns](/power-apps/maker/canvas-apps/working-with-tables#columns).
 
-The **[ForAll](function-forall.md) function can also be used to shape a table, by returning a table of new records created from existing columns.
+The [ForAll](function-forall.md) function can also be used to shape a table, by returning a table of new records created from existing columns.
 
 ## Overview
 
@@ -155,3 +156,137 @@ Let's try some of the examples from earlier in this article.
 See [Map columns](/power-apps/maker/canvas-apps/map-component-input-fields#map-columns).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
