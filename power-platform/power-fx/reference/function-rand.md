@@ -1,4 +1,4 @@
----
+﻿---
 title: Rand and RandBetween functions
 description: Reference information including syntax and examples for the Rand and RandBetween functions.
 author: gregli-msft
@@ -17,8 +17,9 @@ contributors:
 ---
 
 # Rand and RandBetween functions
+[!INCLUDE[function-rand-applies-to](includes/function-rand-applies-to.md)]
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Desktop flows :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Pages :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
+
 
 Returns a pseudo-random number.
 
@@ -104,3 +105,138 @@ When used in a [behavior formula](/power-apps/maker/canvas-apps/working-with-for
 To generate a single random number instead of a table, use **Set( RandomNumber, Rand() )** or **Set( RandNumber, RandBetween( 1, 20 ) )**.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

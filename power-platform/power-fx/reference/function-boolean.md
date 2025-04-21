@@ -1,4 +1,4 @@
----
+﻿---
 title: Boolean function
 description: Reference information including syntax and examples for the Boolean function.
 author: gregli
@@ -14,8 +14,9 @@ contributors:
   - gregli
 ---
 # Boolean function
+[!INCLUDE[function-boolean-applies-to](includes/function-boolean-applies-to.md)]
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Desktop flows :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Pages :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
+
 
 Converts a text string, number, or untyped value to a Boolean value.
 
@@ -75,3 +76,140 @@ In most cases, type coercion happens automatically and the **Boolean** function 
 | **Boolean( [&nbsp;1,&nbsp;2,&nbsp;0 &nbsp;] )** | Converts the single column table of numbers to a single column table of boolean value. | [ *true*, *true*, *false* ] |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

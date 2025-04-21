@@ -1,4 +1,4 @@
----
+﻿---
 title: ColumnNames and Column functions
 description: Reference information including syntax and examples for the ColumnNames and Column functions.
 author: carlosff
@@ -14,8 +14,9 @@ contributors:
   - carlosff
 ---
 # ColumnNames and Column functions
+[!INCLUDE[function-columnnames-column-applies-to](includes/function-columnnames-column-applies-to.md)]
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
+
 
 Retrieves column names and values from an [untyped object](../untyped-object.md).
 
@@ -91,3 +92,140 @@ Calling the Column or ColumnNames functions with untyped objects that don't repr
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

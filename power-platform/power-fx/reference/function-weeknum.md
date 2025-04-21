@@ -1,4 +1,4 @@
----
+﻿---
 title: WeekNum and ISOWeekNum functions
 description: Reference information including syntax and examples for the WeekNum and ISOWeekNum functions.
 author: gregli-msft
@@ -16,8 +16,9 @@ contributors:
   - gregli
 ---
 # WeekNum and ISOWeekNum functions
+[!INCLUDE[function-weeknum-applies-to](includes/function-weeknum-applies-to.md)]
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Pages :::image type="icon" source="media/yes-icon.svg" border="false"::: Dataverse formula columns
+
 
 Returns the week number of a specific date.
 
@@ -80,3 +81,137 @@ First and last calendar weeks of 2021
 | Friday,&nbsp;December&nbsp;31,&nbsp;2021 | 53 | 52 | 53 |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
