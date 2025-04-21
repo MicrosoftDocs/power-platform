@@ -1,4 +1,4 @@
----
+﻿---
 title: With function
 description: Reference information including syntax and examples for the With function.
 author: gregli-msft
@@ -18,8 +18,9 @@ contributors:
 ---
 
 # With function
+[!INCLUDE[function-with-applies-to](includes/function-with-applies-to.md)]
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Desktop flows :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Pages :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
+
 
 Calculates values and performs actions for a single [record](/power-apps/maker/canvas-apps/working-with-tables#records), including inline records of named values.
 
@@ -129,3 +130,137 @@ Note that although the sub-matches contain numbers they are still in a text stri
 See [Map record](/power-apps/maker/canvas-apps/map-component-input-fields#map-records).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

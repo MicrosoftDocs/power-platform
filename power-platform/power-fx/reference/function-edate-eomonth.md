@@ -1,4 +1,4 @@
----
+﻿---
 title: EDate and EOMonth functions
 description: Reference information including syntax and examples for the EDate and EOMonth functions.
 author: gregli-msft
@@ -17,8 +17,9 @@ contributors:
 ---
 
 # EDate and EOMonth functions
+[!INCLUDE[function-edate-eomonth-applies-to](includes/function-edate-eomonth-applies-to.md)]
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Desktop flows :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Pages
+
 
 Adds or subtracts months to a Date/Time value, with optional adjustment to the day of the month.
 
@@ -68,3 +69,139 @@ See [working with dates and times](/power-apps/maker/canvas-apps/show-text-dates
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

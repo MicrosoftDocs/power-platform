@@ -1,4 +1,4 @@
----
+﻿---
 title: Choices function
 description: Reference information including syntax and examples for the Choices function.
 author: gregli-msft
@@ -18,8 +18,9 @@ contributors:
 ---
 
 # Choices function
+[!INCLUDE[function-choices-applies-to](includes/function-choices-applies-to.md)]
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps   
+
 
 Returns a table of the possible values for a lookup column.
 
@@ -108,3 +109,140 @@ At this time, you can use lookup columns only with SharePoint and Microsoft Data
    ![A canvas screen with a data table control. The Items property is set to the formula Choices( Accounts.'Primary Contact' ), and the table shows the firstname and lastname columns for the first set of records from the Contacts table.](media/function-choices/full-accounts-pc.png)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
