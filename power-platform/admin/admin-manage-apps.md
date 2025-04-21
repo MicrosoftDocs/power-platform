@@ -6,6 +6,7 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 01/24/2025
 ms.subservice: admin
+ms.custom: NewPPAC
 ms.author: alaug
 ms.reviewer: sericks
 search.audienceType: 
@@ -32,22 +33,23 @@ Admins can do the following from the Power Platform admin center:
 
 ## Manage Power Apps
 
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-
-2. In the navigation pane, select **Environments**, select an environment with resources, and then select the **Power Apps** resource.
-
-   > [!div class="mx-imgBorder"] 
-   > ![Select Power Apps resource.](media/resources-select-power-apps.png "Select Power Apps resource")
-
-3. Select an app to manage.
-
-   > [!div class="mx-imgBorder"] 
-   > ![Select an app.](media/resources-manage-power-apps-list.png "Select an app") 
-
-4. Select your desired action.
-
-   > [!div class="mx-imgBorder"] 
-   > ![Share or delete app.](media/resources-edit-power-app.png "Share or delete app") 
+## [New admin center](#tab/new)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. In the **Environments** page, select an environment.
+1. In the **Resources** pane, select **Power Apps** 
+1. Select an app to manage.
+1. Select your desired action **Share** or **Delete** from the command bar.
+   
+## [Classic admin center](#tab/classic)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Environments**.
+1. In the **Environments** page, select an environment.
+1. In the **Resources** pane, select **Power Apps** 
+1. Select an app to manage.
+1. Select your desired action **Share** or **Delete** from the command bar.
+---
 
 ## Manage who can share canvas apps
 
