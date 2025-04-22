@@ -46,7 +46,7 @@ The following diagram shows virtual network support in a Power Platform environm
 
 ## Set up Virtual Network support
 
-The following four steps help you set up your virtual network.
+The following steps help you set up your virtual network.
 
 1. [Set up the virtual network and subnets](#set-up-the-virtual-network-and-subnets).
 
