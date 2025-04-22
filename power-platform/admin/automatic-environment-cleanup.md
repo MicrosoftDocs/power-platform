@@ -11,6 +11,8 @@ ms.reviewer: sericks
 search.audienceType: 
   - admin
 ms.custom: bap-template
+contributors:
+  - iscohen-microsoft 
 ---
 
 # Automatic deletion of Power Platform environments
@@ -58,12 +60,12 @@ The environment's administrators and the user who created the environment are no
 
 | State of environment | What to expect |
 | --- | --- |
-| 23 days with no [user activity](#definition-of-user-activity) | A warning email that the environment will be disabled and a countdown displayed in the **Environment state** on the **Environments** list page and the **Environment** page. |
-| 27 days with no [user activity](#definition-of-user-activity) | A second warning email that the environment will be disabled.   |
-| 30 days with no [user activity](#definition-of-user-activity) | The environment is disabled. An email notice that the environment has been disabled. The **Environment state** is disabled on the **Environments** list page and the **Environment** page. |
-| 7 days after the environment is disabled | A warning that the environment will be deleted and a countdown in display in the **Environment state** on the **Environments** list page and the **Environment** page. |
-| 11 days after the environment is disabled | A second warning that the environment will be deleted. |
-| 15 days after the environment is disabled | The environment is deleted. An email notice that the environment has been deleted. |
+| 23 days with no [user activity](#definition-of-user-activity) | A warning email is sent stating that the environment will be disabled and a countdown is displayed in the **Environment state** on the **Environments** list page and the **Environment** page. |
+| 27 days with no [user activity](#definition-of-user-activity) | A second warning email is sent stating that the environment will be disabled. |
+| 30 days with no [user activity](#definition-of-user-activity) | The environment is disabled. An email notice is sent stating that the environment has been disabled. The **Environment state** is disabled on the **Environments** list page and the **Environment** page. |
+| 7 days after the environment is disabled | A warning is sent stating that the environment will be deleted and a countdown is displayed in the **Environment state** on the **Environments** list page and the **Environment** page. |
+| 11 days after the environment is disabled | A second warning is sent stating that the environment will be deleted. |
+| 15 days after the environment is disabled | The environment is deleted. An email notice is sent stating that the environment has been deleted. |
 
 A warning message appears on the **Environments** list page and **Environment** page when an environment is disabled.
 
