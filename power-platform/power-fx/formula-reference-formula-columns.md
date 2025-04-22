@@ -45,9 +45,19 @@ In this article, learn about all the functions available with [formula columns i
 
 **[Day](reference/function-datetime-parts.md )** – Retrieves the day portion of a date/time value.
 
+**[Decimal](reference/function-value.md)** – Converts a string to a [decimal number](data-types.md#decimal-numbers).
+
 ## E
 
 **[EndsWith](reference/function-startswith.md )** – Checks whether a text string ends with another text string.
+
+**[Error](reference/function-iferror.md)** – Create a custom error or pass through an error.
+
+**[Exp](reference/function-numericals.md)** – Returns _e_ raised to a power.
+
+## F
+
+**[Float](reference/function-value.md)** – Converts a string to a [floating point number](data-types.md#floating-point-numbers).
 
 ## H
 
@@ -72,6 +82,12 @@ In this article, learn about all the functions available with [formula columns i
 
 ## L
 
+**[Left](reference/function-left-mid-right.md)** – Returns the left-most portion of a string.
+
+**[Len](reference/function-len.md)** – Returns the length of a string.
+
+**[Ln](reference/function-numericals.md)** – Returns the natural log.
+
 **[Lower](reference/function-lower-upper-proper.md )** – Converts letters in a string of text to all lowercase.
 
 ## M
@@ -92,9 +108,15 @@ In this article, learn about all the functions available with [formula columns i
 
 **[Not](reference/function-logicals.md )** – Boolean logic NOT. Returns true if its argument is false, and returns false if its argument is true. You can also use the [! operator](reference/operators.md).
 
+**[Now](reference/function-now-today-istoday.md)** – Returns the current date/time value in the user's time zone.
+
 ## O
 
 **[Or](reference/function-logicals.md )** – Boolean logic OR. Returns true if any of its arguments are true. You can also use the [|| operator](reference/operators.md).
+
+## P
+
+**[Power](reference/function-numericals.md)** – Returns a number raised to a power. You can also use the [**^** operator](reference/operators.md).
 
 ## R
 
@@ -111,6 +133,8 @@ In this article, learn about all the functions available with [formula columns i
 ## S
 
 **[Second](reference/function-datetime-parts.md )** – Retrieves the second portion of a date/time value.
+
+**[Sqrt](reference/function-numericals.md)** – Returns the square root of a number.
 
 **[StartsWith](reference/function-startswith.md )** – Checks if a text string begins with another text string.
 
@@ -143,6 +167,8 @@ In this article, learn about all the functions available with [formula columns i
 **[Value](reference/function-value.md )** – Converts a string to a number.
 
 ## W
+
+**[Weekday](reference/function-datetime-parts.md)** – Retrieves the weekday portion of a date/time value.
 
 **[WeekNum](reference/function-weeknum.md )** – Returns the week number of a date/time value.
 

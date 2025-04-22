@@ -1,4 +1,4 @@
----
+﻿---
 title: Acceleration, App, Compass, Connection, and Location signals in Power Apps
 description: Reference information including syntax and examples for the Acceleration, App, Compass, Connection, and Location signals in Power Apps.
 author: gregli-msft
@@ -18,8 +18,9 @@ contributors:
 ---
 
 # Acceleration, App, Compass, Connection, and Location signals in Power Apps
+[!INCLUDE[signals-applies-to](includes/signals-applies-to.md)]
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps   
+
 
 Returns information about the app's environment, such as where the user is located in the world and which screen is displayed.
 
@@ -122,3 +123,137 @@ In a baseball field, a pitcher throws a phone from the pitcher's mound to a catc
 | **App.ActiveScreen.Fill**       | Returns the background color for the displayed screen.                                                                                                                                                                                                                                                                                                                                         | **Color.Green**                                                                                                                     |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

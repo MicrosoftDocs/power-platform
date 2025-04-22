@@ -125,6 +125,8 @@ Use these commands to interact with data in Dataverse using a command line or sc
 
 **[Exp](reference/function-numericals.md)** – Returns _e_ raised to a power.
 
+**[Exit](reference/function-exit.md)** – Exits the Power Fx script or closes the REPL.
+
 ## F
 
 **[Filter](reference/function-filter-lookup.md)** – Returns a filtered table based on one or more criteria.
@@ -176,7 +178,9 @@ Use these commands to interact with data in Dataverse using a command line or sc
 
 **[IsToday](reference/function-now-today-istoday.md)** – Checks whether a date/time value is sometime today in the user's time zone.
 
-<!-- ## J -->
+## J
+
+**[JSON](reference/function-json.md)** – Generates a JSON text string for a table, a record, or a value.
 
 ## L
 
@@ -254,8 +258,6 @@ Use these commands to interact with data in Dataverse using a command line or sc
 
 **[Remove](reference/function-remove-removeif.md)** – Removes one or more specific records from a data source.
 
-**[RemoveIf](reference/function-remove-removeif.md)** – Removes records from a data source based on a condition.
-
 **[RenameColumns](reference/function-table-shaping.md)** – Renames columns of a table.
 
 **[Replace](reference/function-replace-substitute.md)** – Replaces part of a string with another string, by starting position of the string.
@@ -272,6 +274,8 @@ Use these commands to interact with data in Dataverse using a command line or sc
 
 ## S
 
+**[Search](reference/function-filter-lookup.md)** – Finds records in a table that contain a string in one of their columns.
+
 **[Second](reference/function-datetime-parts.md)** – Retrieves the second portion of a date/time value.
 
 **[Sequence](reference/function-sequence.md)** – Generate a table of sequential numbers, useful when iterating with **ForAll**.
@@ -286,6 +290,8 @@ Use these commands to interact with data in Dataverse using a command line or sc
 
 **[Sort](reference/function-sort.md)** – Returns a sorted table based on a formula.
 
+**[SortByColumns](reference/function-sort.md)** – Returns a sorted table based on one or more columns.
+
 **[Split](reference/function-split.md)** – Splits a text string into a table of substrings.
 
 **[Sqrt](reference/function-numericals.md)** – Returns the square root of a number.
@@ -297,6 +303,8 @@ Use these commands to interact with data in Dataverse using a command line or sc
 **[Substitute](reference/function-replace-substitute.md)** – Replaces part of a string with another string, by matching strings.
 
 **[Sum](reference/function-aggregates.md)** – Calculates the sum of a table expression or a set of arguments.
+
+**[Summarize](reference/function-summarize.md)** – Groups records by selected columns and summarizes the remainder.
 
 **[Switch](reference/function-if.md)** – Matches with a set of values and then evaluates a corresponding formula.
 
@@ -339,6 +347,8 @@ Use these commands to interact with data in Dataverse using a command line or sc
 ## W
 
 **[Weekday](reference/function-datetime-parts.md)** – Retrieves the weekday portion of a date/time value.
+
+**[WeekNum](reference/function-weeknum.md)** – Returns the week number of a date/time value.
 
 **[With](reference/function-with.md)** – Calculates values and performs actions for a single record, including inline records of named values.
 

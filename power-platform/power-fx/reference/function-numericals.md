@@ -1,4 +1,4 @@
----
+﻿---
 title: Abs, Exp, Ln, Power, Log, and Sqrt functions
 description: Reference information including syntax and examples for the Abs, Exp, Ln, Power, and Sqrt functions.
 author: gregli-msft
@@ -18,8 +18,9 @@ contributors:
 ---
 
 # Abs, Exp, Ln, Power, Log, and Sqrt functions
+[!INCLUDE[function-numericals-applies-to](includes/function-numericals-applies-to.md)]
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Dataverse formula columns :::image type="icon" source="media/yes-icon.svg" border="false"::: Desktop flows :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Pages :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
+
 
 Calculates absolute values, logarithms, square roots, and the results of raising _e_ or any number to specified powers.
 
@@ -101,3 +102,138 @@ The examples in this section use a [data source](/power-apps/maker/canvas-apps/w
 3. Type a number into **Source**, and confirm that the **Label** control shows the square root of the number that you typed.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

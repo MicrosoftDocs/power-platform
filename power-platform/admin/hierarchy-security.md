@@ -8,7 +8,7 @@ ms.reviewer: sericks
 ms.custom: "admin-security"
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/20/2024
+ms.date: 04/21/2025
 search.audienceType: 
   - admin
 ms.contributors:
@@ -106,19 +106,6 @@ The hierarchy security is disabled by default. To enable hierarchy security, com
     > [!NOTE]
     >  While, the hierarchy security grants the VP of Sales access to the records in the red rectangle, additional access can be available based on the security role that the VP of Sales has.  
   
-1. In the **Hierarchy Table Management** section, all system tables are enabled for hierarchy security, by default. To exclude a specific table from the hierarchy model, clear the check mark next to the table name and save your changes.
-
-    ### [New, modern UI in preview](#tab/preview)
-  
-    :::image type="content" source="media/hierarchy-security/hierarchy-security.png" alt-text="Screenshot that shows where to set up hierarchy security in Settings of the new, modern UI.":::
-
-    [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
-
-    ### [Legacy UI](#tab/LegacyUI)
-  
-    :::image type="content" source="media/hierarchy-security/hierarchy-security-setup2.png" alt-text="Screenshot that shows where to set up hierarchy security in the legacy UI.":::
-
-    ---
   
 ## Set up manager and position hierarchies
 

@@ -1,4 +1,4 @@
----
+﻿---
 title: Revert function
 description: Reference information including syntax and examples for the Revert function.
 author: gregli-msft
@@ -18,8 +18,9 @@ contributors:
 ---
 
 # Revert function
+[!INCLUDE[function-revert-applies-to](includes/function-revert-applies-to.md)]
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps
+
 
 Refreshes and clears errors for the [records](/power-apps/maker/canvas-apps/working-with-tables#records) of a [data source](/power-apps/maker/canvas-apps/working-with-data-sources).
 
@@ -69,3 +70,138 @@ You reapply your change on top of the previous change, and your change succeed b
 ![Reapplied changes with resolved conflict.](media/function-revert/icecream-success.png)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

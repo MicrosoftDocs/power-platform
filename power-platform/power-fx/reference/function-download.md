@@ -1,4 +1,4 @@
----
+﻿---
 title: Download function
 description: Reference information including syntax and examples for the Download function.
 author: gregli-msft
@@ -18,8 +18,9 @@ contributors:
 ---
 
 # Download function
+[!INCLUDE[function-download-applies-to](includes/function-download-applies-to.md)]
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps   
+
 
 Downloads a file from the web to the local device.
 
@@ -89,3 +90,139 @@ The **Product Showcase** tablet layout template was used for the following examp
 [Canvas app formula reference](/power-apps/maker/canvas-apps/formula-reference)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
