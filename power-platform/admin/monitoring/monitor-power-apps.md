@@ -4,7 +4,7 @@ description: Learn more about the metrics and recommendations for Power Apps.
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/31/2025
+ms.date: 04/22/2025
 ms.custom: NewPPAC
 author: alaug
 ms.author: alaug
@@ -18,25 +18,33 @@ contributors:
 
 # Metrics and recommendations for Power Apps (preview)
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner.md)]
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
-Here are the Power App operational health metrics and recommendations that are available in Monitor. 
+Power Apps operational health metrics and recommendations are available in the new Power Platform admin center.
 
-## Power App metrics and recommendations
+## View metrics and recommendations
 
-### Metric Definitions
+ 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+ 1. In the navigation pane, select **Monitor**.
+ 1. In the **Monitor** pane, under **Products**, select **Power Apps**.
+
+    The **Power Apps (preview)** page displays the metrics and recommendations.
+
+## Power Apps metrics and recommendations
+
+### Metric definitions
 |Type | Metric | Definition |
 |---|---|---|
-|Canvas apps | App open success rate| A percentage that describes how often end-users are able to successfully open the app |
-|Canvas apps| Time to interactive (TTI)| The time (in seconds) that end-users have to wait to be able to interact with the 1st screen after app launch |
-|Canvas apps| Time to full load (TTFL) | The time (in seconds) that end-users have to wait to have all the data requests for the 1st screen after app launch |
+|Canvas apps | App open success rate| A percentage that describes how often end users are able to successfully open the app. |
+|Canvas apps| Time to interactive (TTI)| The time (in seconds) that end users have to wait to interact with the first screen displayed after the app opens. |
+|Canvas apps| Time to full load (TTFL) | The time (in seconds) that end users have to wait to have all the data requests for the first screen displayed after the app opens. |
 
 
-### Metric and Recommendation pairings
+### Metric and recommendation pairings
 | Metric | Secondary metric | Recommendation title | Recommendation description |
 |---|---|---|---|
-| App Open Success Rate | ErrorCode = AppForbidden | Evaluate if the app should be shared with users without permiission | "X% of sessions ended without users accessing the app because users didn't have permission to access the app. It's possible that the app may benefit from being shared with more users. The logs will show which users without permission attempting to open the app" |
+| App Open Success Rate | ErrorCode = AppForbidden | Evaluate if the app should be shared with users without permiission | "X% of sessions ended without users accessing the app because users didn't have permission to access the app. It's possible that the app may benefit from being shared with more users. The logs show which users without permission are attempting to open the app." |
 | Time to interactive || Coming soon | Coming soon |
 | Time to full load || Coming soon | Coming soon |
 
