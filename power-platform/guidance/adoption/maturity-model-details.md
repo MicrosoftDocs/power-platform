@@ -48,7 +48,7 @@ The following table describes business value across the five levels of the adopt
 
 The following table describes security across the five levels of the adoption maturity model.
 
-| Level | State of admin and governance |
+| Level | State of security |
 |-------|-------------------------------|
 | 100: Initial | <ul><li>Uses basic Microsoft Entra ID for user authentication and access control</li><li>No data loss prevention policies (DLP)</li><li>No monitoring of Power Platform activity</li><li>Compliance requirements aren't understood</li></ul> |
 | 200: Repeatable | <ul><li>Default environment covered by [DLP controls](dlp-strategy.md)</a></li><li>[Tenant isolation](data-protection.md#cross-tenant-inbound-and-outbound-restrictions) is configured</li><li>Some workload teams understand compliance and regulatory requirements for the solutions they're building and are taking them into consideration during the workload design</li><li>[Sharing limits](conditional-access.md#configure-sharing-limits) are configured</li><li>Security teams are starting to work with Power Platform admins to define a security strategy</li></ul> |
@@ -96,9 +96,9 @@ The following table describes community across the five levels of the adoption m
 
 The following table describes responsible AI across the five levels of the adoption maturity model.
 
-| Level | State of nurture and citizen makers |
+| Level | State of responsible AI |
 |-------|-------------------------------------|
-| 100: Initial | <ul><li>Leadership recognizes responsible AI (RAI) as important but has yet to integrate it fully into decision-making processes or embed it into organizational culture</li><li>Little or no formal governance policies or compliance processes in place for responsible AI</li><li>Little or no structured training available for responsible AI, and awareness is low</li><li>AI projects proceed without oversight</li><li>Lack of awareness about what constitutes RAI risks</li><li>There are no formal processes for managing or governing data used in AI systems</li></ul> |
+| 100: Initial | <ul><li>Leadership recognizes responsible AI (RAI) as important but has yet to integrate it fully into decision-making processes or embed it into organizational culture</li><li>Little or no formal governance policies or compliance processes in place for responsible AI</li><li>Little or no structured training available for responsible AI, and awareness is low</li><li>AI projects proceed without oversight</li><li>Lack of awareness about what constitutes RAI risks</li><li>No formal processes for managing or governing data used in AI systems</li></ul> |
 | 200: Repeatable | <ul><li>Senior leadership begins to recognize the value of responsible AI and promotes it through occasional incentives or support for passionate individuals or teams</li><li>Early efforts are focused on establishing foundational governance policies and drafting compliance processes tailored to the specific challenges of low-code AI systems</li><li>Some training resources might exist, but they aren't accessible or widely adopted</li><li>Some projects begin to integrate responsible AI reviews, typically towards the end of the project lifecycle</li><li>RAI risks are raised in an ad-hoc manner without conducting specific investigations</li><li>Data sources used in custom models are documented, but there's no formal auditing process</li></ul>|
 | 300: Defined |<ul><li>Leadership increasingly prioritizes responsible AI, allocating resources such as dedicated budgets and AI champions to promote responsible AI practices</li><li>A comprehensive responsible AI policy is in place, covering most aspects of RAI (for example, fairness, transparency)</li><li>Responsible AI training programs are developed but aren't yet mandatory</li><li>RAI reviews are integrated into the project lifecycle at key stages</li><li>Impact assessments start to be conducted and involve relevant stakeholders to identify risks relating to RAI</li><li>Data governance practices are formalized, with regular data quality assessments and sensitivity classifications for all unstructured data used in AI</li></ul> |
 | 400: Capable |<ul><li>Responsible AI is fully integrated into leadership decision-making. Resources are allocated for governance, training, and compliance.</li><li>Governance and compliance processes are well-established and automated where appropriate</li><li>Responsible AI training is mandatory for key roles</li><li>Projects are reviewed for responsible AI risks at regular intervals, and some teams begin to allocate specific resources for responsible AI oversight</li><li>RAI risks are managed with a recognized risk management framework (for example, NIST AI risk management framework)</li><li>Automated frameworks are in place for managing unstructured data quality and sensitivity, with ongoing monitoring of compliance requirements</li></ul> |
@@ -132,7 +132,7 @@ The following table describes characteristics of fusion teams across the five le
 
 Successful Power Platform adoption involves making effective processes, support, tools, and data available to makers and users.
 
-A common misconception is that adoption relates primarily to usage or the number of users. While usage statistics are important, adoption isn't just about regular use; it's about using the technology *effectively*. Effectiveness is harder to define and measure.
+A common misconception is that adoption relates primarily to usage or the number of users. While usage statistics are important, adoption isn't just about regular use&mdash;it's about using the technology *effectively*. Effectiveness is harder to define and measure.
 
 Whenever possible, align adoption efforts across low-code platforms and other Power Platform products, such as Power BI.
 
