@@ -36,11 +36,9 @@ With the implementation of the Project Connect application, AECOM addressed seve
 
 ## Meet the team
 
-:::image type="content" source="media/microsoft-learn-use-case---aecom/image1.png" alt-text="Screenshot of a group of men with glasses. AI-generated content may be incorrect.":::
+:::image type="content" source="media/aecom-streamlined-onboarding/team.png" alt-text="Screenshot of a group of men with glasses. AI-generated content may be incorrect." lightbox ="media/aecom-streamlined-onboarding/team.png":::
 
-“We needed a solution that would enable our information managers to efficiently onboard project members across various technologies and multiple projects. With Microsoft Power Platform, integrated with Azure and Microsoft Fabric, we discovered the perfect solution to streamline and optimize the entire process.”
-
-\- Abdullah Tanvir, AECOM
+> “We needed a solution that would enable our information managers to efficiently onboard project members across various technologies and multiple projects. With Microsoft Power Platform, integrated with Azure and Microsoft Fabric, we discovered the perfect solution to streamline and optimize the entire process” - Abdullah Tanvir, AECOM.
 
 ## Solution
 
