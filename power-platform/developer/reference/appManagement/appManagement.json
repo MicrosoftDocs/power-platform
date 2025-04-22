@@ -1,7 +1,7 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "Microsoft Power Platform REST API - appmanagement",
+    "title": "Microsoft Power Platform REST API - app management",
     "description": "Unified API for all administrative capabilities in Microsoft Power Platform.",
     "version": "2022-03-01-preview"
   },
@@ -56,7 +56,7 @@
           "Applications"
         ],
         "summary": "Get the list of application packages that are available for install in a target environment.",
-        "description": "Get the list of application packages that are relevant in the context of a target environment. The client can filter the application packages based on install state (NotInstalled, Installed, All) and any other response parameters utilizing standard OData capabilities.",
+        "description": "Get the list of available application packages that are relevant in the context of a target environment. The client can filter the application packages based on install state (NotInstalled, Installed, All) and any other response parameters utilizing standard OData capabilities.",
         "operationId": "GetEnvironmentApplicationPackage",
         "produces": [
           "application/json"
@@ -197,7 +197,7 @@
           {
             "in": "path",
             "name": "environmentId",
-            "description": "Environment ID (not to be confused with Org ID).",
+            "description": "Environment ID (not to be confused with organization ID).",
             "required": true,
             "type": "string"
           },
@@ -347,7 +347,7 @@
           "type": "string"
         },
         "supportedCountries": {
-          "description": "List of supported countries for the application",
+          "description": "List of supported countries/regions for the application",
           "type": "array",
           "items": {
             "type": "string"
@@ -577,7 +577,7 @@
       "type": "string"
     },
     "InstancePackageState": {
-      "description": "State of instance package",
+      "description": "State of the instance package",
       "enum": [
         "None",
         "Installed",
@@ -598,11 +598,11 @@
       "type": "object",
       "properties": {
         "uniqueName": {
-          "description": "Unique name of tenant application package",
+          "description": "Unique name of the tenant application package",
           "type": "string"
         },
         "localizedDescription": {
-          "description": "Localized description of tenant application package",
+          "description": "Localized description of the tenant application package",
           "type": "string"
         },
         "localizedName": {

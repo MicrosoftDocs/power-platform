@@ -1134,43 +1134,38 @@
       "redirect_document_id": "false"
     },
     {
-      "source_path": "power-platform/guidance/architecture/real-world-examples/custom-connectors-canvas.md",
-      "redirect_url": "/power-platform/architecture/reference-architectures/custom-connectors-canvas",
-      "redirect_document_id": "false"
-    },
-    {
       "source_path": "power-platform/guidance/architecture/real-world-examples/dataverse-canvas-app.md",
       "redirect_url": "/power-platform/architecture/reference-architectures/dataverse-canvas-app",
       "redirect_document_id": "false"
     },
     {
       "source_path": "power-platform/guidance/architecture/real-world-examples/pcf-canvas-components.md",
-      "redirect_url": "/power-platform/architecture/reference-architectures/reference-architecture-overview",
+      "redirect_url": "/power-platform/architecture/reference-architectures/",
       "redirect_document_id": "false"
     },
     {
       "source_path": "power-platform/guidance/architecture/real-world-examples/sharepoint-canvas.md",
-      "redirect_url": "/power-platform/architecture/reference-architectures/reference-architecture-overview",
+      "redirect_url": "/power-platform/architecture/reference-architectures/",
       "redirect_document_id": "false"
     },
     {
       "source_path": "power-platform/guidance/architecture/real-world-examples/sql-gateway-canvas.md",
-      "redirect_url": "/power-platform/architecture/reference-architectures/reference-architecture-overview",
+      "redirect_url": "/power-platform/architecture/reference-architectures/",
       "redirect_document_id": "false"
     },
     {
       "source_path": "power-platform/guidance/architecture/real-world-examples/azure-function-canvas.md",
-      "redirect_url": "/power-platform/architecture/reference-architectures/reference-architecture-overview",
+      "redirect_url": "/power-platform/architecture/reference-architectures/",
       "redirect_document_id": "false"
     },
     {
       "source_path": "power-platform/guidance/architecture/real-world-examples/overview.md",
-      "redirect_url": "/power-platform/architecture/reference-architectures/reference-architecture-overview",
+      "redirect_url": "/power-platform/architecture/reference-architectures/",
       "redirect_document_id": "false"
     },
     {
       "source_path": "power-platform/guidance/architecture/real-world-examples/bpf-dataverse-powerautomate.md",
-      "redirect_url": "/power-platform/architecture/reference-architectures/reference-architecture-overview",
+      "redirect_url": "/power-platform/architecture/reference-architectures/",
       "redirect_document_id": "false"
     },
     {

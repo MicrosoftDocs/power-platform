@@ -22,9 +22,9 @@ Businesses expect their applications and customer data to be protected and resil
 
 Microsoft provides business continuity and disaster recovery (BCDR) capabilities to all [production type environments](environments-overview.md) in Dynamics 365 and Power Platform software as a service (SAAS) applications. This article describes details and practices Microsoft takes to ensure your production data is resilient during outages.
 
-The following diagram shows a typical architecture of a geography that serves a single or multiple countries. Although the geography location is all your Power Platform administrators need to be concerned with, within the geography, Microsoft deploys more infrastructure to provide scale and added protection for your data.
+The following diagram shows a typical architecture of a geography that serves a single or multiple countries/regions. Although the geography location is all your Power Platform administrators need to be concerned with, within the geography, Microsoft deploys more infrastructure to provide scale and added protection for your data.
 
-:::image type="content" source="media/bcdr_architecture.png" alt-text="The diagram shows a typical architecture of a geography that serves a single or multiple countries." lightbox="media/bcdr_architecture.png":::
+:::image type="content" source="media/bcdr_architecture.png" alt-text="The diagram shows a typical architecture of a geography that serves a single or multiple countries/regions." lightbox="media/bcdr_architecture.png":::
 
 A geography includes at least one Azure region that is typically made up of three [availability zones](/azure/reliability/availability-zones-overview?tabs=azure-cli), but no less than two availability zones. 
 

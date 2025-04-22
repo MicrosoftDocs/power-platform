@@ -8,7 +8,7 @@
     - name: Architecture key concepts
       items:
       - name: Overview
-        href: key-concepts/key-concepts-overview.md
+        href: key-concepts/index.md
       - name: ExpressRoute and Power Platform
         items:
           - name: Overview
@@ -38,14 +38,14 @@
     - name: Reference architectures
       items:
       - name: Overview
-        href: reference-architectures/reference-architecture-overview.md
+        href: reference-architectures/index.md
       - name: Streamline document processing with AI Builder
         href: reference-architectures/ai-document-processing.md
       - name: Perform predictive data analysis
         href: reference-architectures/ai-predictive-data-analysis.md
       - name: Integrate legacy data with Power Automate and SharePoint
         href: reference-architectures/app-legacy-data-integration.md
-      - name: Leverage Dataverse background operations
+      - name: Use Dataverse background operations
         href: reference-architectures/dataverse-background-operations.md
       - name: Secure Power Platform access to Azure resources
         href: reference-architectures/secure-access-azure-resources.md
@@ -55,25 +55,25 @@
         href: reference-architectures/app-integrate-lakehouse.md
       - name: Use REST APIs to extend functionality of canvas apps
         href: reference-architectures/custom-connector-canvas.md
-      - name: ​Use the Dataverse connector with canvas apps​ 
+      - name: Use Dataverse as a data source for canvas apps
         href: reference-architectures/dataverse-canvas-app.md
-      - name: ​Scale RPA operations using Hosted RPA in Power Automate for desktop​ 
+      - name: Reduce infrastructure challenges with Hosted RPA in Power Automate​
         href: reference-architectures/rpa-scale-operations.md
     - name: Solution ideas
       items:
         - name: Overview
-          href: solution-ideas/solution-idea-overview.md
+          href: solution-ideas/index.md
         - name: Healthcare Patient Support Agent
           href: solution-ideas/agent-healthcare-patient-support.md
         - name: Property rental reservation portal
           href: solution-ideas/agent-rental-portal.md
-        - name: Enterprise Visual Vehicle Inspection Engine
+        - name: Revolutionize vehicle inspections with EVVIE
           href: solution-ideas/app-evvie.md
         - name: Custom contact center solution with Copilot Studio agent
           href: solution-ideas/agent-custom-contact-center.md
         - name: Travel concierge using generative AI with Copilot Studio
           href: solution-ideas/agent-travel-customer.md
-        - name: Ticket management system with Copilot Studio agents        
+        - name: Ticket management system with Copilot Studio agents
           href: solution-ideas/agent-ticket-and-refund.md
     - name: Power Platform products
       items:
@@ -95,4 +95,3 @@
       href: /power-platform/developer/get-started
     - name: Application lifecycle management with Microsoft Power Platform
       href: /power-platform/alm/
-

@@ -13,7 +13,7 @@ metadata:
   ms.collection: collection
   author: sericks007
   ms.author: sericks
-  ms.date: 12/21/2022
+  ms.date: 04/17/2025
 
 # highlightedContent section (optional)
 # Maximum of 8 items
@@ -62,10 +62,10 @@ productDirectory:
     - title: More...
       imageSrc: ./media/sample-more.svg
       links:
-        - url: /power-platform/guidance/architecture/real-world-examples/overview
-          text: Real-world solution architecture examples
-        - url: /power-platform/guidance/expressroute/overview
-          text: Azure ExpressRoute and Power Platform
+        - url: /power-platform/architecture/
+          text: Power Platform and Copilot Studio Architecture Center
+        - url: /power-platform/well-architected/
+          text: Power Platform Well-Architected
         - url: /power-platform/guidance/white-papers
           text: White papers
         - url: /power-platform/guidance/icons
