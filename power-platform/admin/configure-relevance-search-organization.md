@@ -98,17 +98,13 @@ Individual users aren't able to switch to [Quick Find search, formerly known as
 > Dataverse search is automatically allowed (turned **On**) to ensure business continuity if you already use Dataverse search or any of the related AI-powered experiences. If you're using your own encryption key, you can turn off Dataverse search after enabling early access of 2021 release wave 2 in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 > Dataverse search is set to **Default** if you aren't currently using Dataverse search or any of the related AI-powered experiences. When set to default, you only trigger data indexing when you turn on the Copilot setting, create a Microsoft Copilot Studio skill, or upload a Dataverse table or a file to an agent.
 
-:::image type="content" source="media/model-app1.png" alt-text="The image shows first sample model-driven app.":::
-
-:::image type="content" source="media/model-app2.png" alt-text="The image shows second sample model-driven app.":::
-
 > [!NOTE]
 > Dataverse search doesn't support lifecycle operations such as create, delete, backup, recover, copy, and reset. In the event of such an operation, be sure to turn on Dataverse search again.
 
 Take these steps to turn on Dataverse search:
 
 ## [New admin center](#tab/new)
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) as a system administrator.
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
 1. In the **Environments** page, select an environment.
@@ -118,7 +114,7 @@ Take these steps to turn on Dataverse search:
 1. Select **Save**.
 
 ## [Classic admin center](#tab/classic)
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) as a system administrator.
 1. In the navigation pane, **Environments**.
 1. In the **Environments** page, select an environment.
 1. Select **Settings** in the command bar.
@@ -155,16 +151,10 @@ Setting up search starts with reviewing the tables that are allowed for Datavers
    > :::image type="content" source="media/legacy-solution-explorer-small.png" alt-text="Image of legacy solution explorer":::
 
 1. Sign in to [Power Apps](https://make.powerapps.com/).
-
-2. Select **Solutions**.
-
-3. Select the solution you want to make the changes in, and then select **Overview**.
-
-   :::image type="content" source="media/maker-portal1.png" alt-text="Image of where to select the solution and then select Overview.":::
-
-4. Select **Manage search index**.
-
-   :::image type="content" source="media/maker-portal2.gif" alt-text="Image of how to select tables to index in the Manage-search-index panel.":::
+2. In the navigation pane, select **Solutions**.
+3. Select the solution you want to make the changes in, and then select **Edit** in the command bar.
+4. In the navigation pane, select **Overview**.
+5. In the **Dataverse search** pane, select **Manage search index**.
 
 Although there's no limit on how many tables you can index for Dataverse search, there's a limit on the total number of **fields** that you can enable for Dataverse search. Dataverse search indexes 50 fields by default. Since the maximum is 1,000 searchable fields for an organization, this means you can configure up to **950 searchable fields**.
 
@@ -234,18 +224,11 @@ The table's Quick Find view drives the searchable table fields and filters used 
 To edit the searchable fields of a table:
 
 1. Sign in to [Power Apps](https://make.powerapps.com/).
-
-2. Select **Dataverse** > **Tables**.
-
-3. Select the table you want to make the changes to and then select the **Views** tab.
-
+2. In the navigation pane, select **Tables**.
+3. Select the table you want to make the changes to, and then select the **Views** tab.
 4. Select **Quick Find view** type in the list of views.
-
 5. Edit _View_ columns and _Find_ columns by adding, removing, or reordering columns. For a more detailed description of how to add or remove columns in a view, go to [Choose and configure columns in model-driven app views in Power Apps](/powerapps/maker/model-driven-apps/choose-and-configure-columns).
-
-   :::image type="content" source="media/maker-portal5.gif" alt-text="Image shows how to edit searchable fields of a table":::
-
-6. Select **Publish** to publish the changes to the view.
+6. Select **Save and Publish** to publish the changes to the view.
 
 > [!IMPORTANT]
 > Changes to Quick Find view also apply to single-table and multi-table Quick Find configurations. Therefore, **we don't prevent you from including fields that aren't supported for Dataverse search when you configure Quick Find view**. However, unsupported fields aren't synced to the Dataverse search index and don't appear in the Dataverse search results.
@@ -362,10 +345,21 @@ In the past, a table called, _RelevanceSearch_ reported on the storage consumed 
 
 Respectively, Dataverse search is reported as part of database and files storage consumption in the **Summary** tab. You can also view Dataverse search in the **Environment** report in Power Platform admin center or **Capacity** report:
 
-- In the new admin center, go to **Licensing > Capacity add-ons > Dataverse** tab to select the **Chart** icon for details.
-- In the classic admin center, go to **Resources > Capacity > Dataverse** tab.
-- In the new admin center, go to **Licensing > Dataverse > Environments** tab to select an environment and see a _Table view_ for it on the main page.
-- In the classic admin center, go to **Billing > Licenses > Dataverse > Environment** tab.
+## [New admin center](#tab/new)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Licensing**.
+1. In the **Licensing** pane, select **Capacity add-ons**.
+1. Select the **Dataverse** tab, select an environment and then select the **Chart** icon for details.
+1. In the **Licensing** pane, select **Dataverse**.
+1. Select the **Environments** tab, select an environment to view.
+   
+## [Classic admin center](#tab/classic)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Resources** and then select **Capacity**.
+1. Select the **Dataverse** tab, select an environment and then select the **Chart** icon for details.
+1. In the navigation pane, select **Billing** and then select **Licenses**.
+1. Select the **Environments** tab, select an environment to view.
+---
 
 ### What entitlements are consumed by Dataverse search?
 
