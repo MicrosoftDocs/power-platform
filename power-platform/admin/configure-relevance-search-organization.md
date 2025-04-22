@@ -4,7 +4,7 @@ description: Configure Dataverse search for your environment to improve search r
 author: marianaraujo 
 ms.component: pa-admin
 ms.topic: get-started
-ms.date: 04/03/2025
+ms.date: 04/22/2025
 ms.subservice: admin
 ms.custom: NewPPAC
 ms.author: maaraujo
@@ -110,7 +110,7 @@ Take these steps to turn on Dataverse search:
 1. In the **Environments** page, select an environment.
 1. Select **Settings** in the command bar.
 1. Expand **Product**, and then select **Features**.
-1. Under **Dataverse search**, set **Dataverse search** to **On**.
+1. Under **Dataverse search**, select **On**.
 1. Select **Save**.
 
 ## [Classic admin center](#tab/classic)
@@ -119,7 +119,7 @@ Take these steps to turn on Dataverse search:
 1. In the **Environments** page, select an environment.
 1. Select **Settings** in the command bar.
 1. Expand **Product**, and then select **Features**.
-1. Under **Dataverse search**, set **Dataverse search** to **On**.
+1. Under **Dataverse search**, select **On**.
 1. Select **Save**.
 ---
 
