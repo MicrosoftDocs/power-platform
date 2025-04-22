@@ -1,4 +1,4 @@
----
+﻿---
 title: Text function
 description: Reference information including syntax and examples for the Text function.
 author: gregli-msft
@@ -15,8 +15,9 @@ contributors:
 ---
 
 # Text function
+[!INCLUDE[function-text-applies-to](includes/function-text-applies-to.md)]
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Dataverse formula columns :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Pages :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
+
 
 Converts any value and formats a number or date/time value to a string of text.
 
@@ -209,3 +210,137 @@ Unless otherwise specified, the user running these formulas is located in the Un
 | **Left(&nbsp;Text(&nbsp;GUID()&nbsp;),&nbsp;4&nbsp;)**        | Returns the first four characters of a generated GUID.                                                                                                                                                            | "2d9c"                                 |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

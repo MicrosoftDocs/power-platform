@@ -1,4 +1,4 @@
----
+﻿---
 title: SetProperty function
 description: Reference information including syntax and examples for the SetProperty function.
 author: mduelae
@@ -18,8 +18,9 @@ contributors:
 ---
 
 # SetProperty function
+[!INCLUDE[function-setproperty-applies-to](includes/function-setproperty-applies-to.md)]
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps   
+
 
 The SetProperty function simulates interactions with input controls as if the user had entered or set a value on the control. This function is only available if you are writing tests in the Power Apps Test Studio. The following properties can be set using the SetProperty function.
 
@@ -59,3 +60,138 @@ _SetProperty(Control Property, value)_
 [Working with Test Studio](/power-apps/maker/canvas-apps/working-with-test-studio)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

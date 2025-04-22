@@ -2,10 +2,10 @@
 title: Power Pages activity logging
 description: Learn how to view Power Pages logs in the Microsoft Purview compliance portal.
 ms.topic: conceptual
-ms.date: 03/12/2025
-author: vamseedillimsft
+ms.date: 04/17/2025
+author: PramithaU
 ms.subservice: admin
-ms.author: vamseedilli
+ms.author: pudupa
 ms.reviewer: dmartens 
 search.audienceType: 
   - admin
@@ -32,6 +32,9 @@ To filter or search for Power Pages admin activities, select **PowerPlatformAdmi
 :::image type="content" source="media/admin-activity-logging/logging-power-pages/new-search-record-types.png" alt-text="A screenshot of the New Search page with Record types emphasized. The value PowerPlatformAdministratorActivity is emphasized.":::
 
 For more information about how to search audit logs in Microsoft Purview, see [Search the audit log in Microsoft Purview](/purview/audit-new-search#get-started-with-audit-new-search). 
+
+> [!NOTE]
+> You can search Power Pages activities for a specific period by entering the operation names listed in the documentation under **Activities – operation names** or by using the **Keyword Search** option in the search panel.
 
 ## What events are audited?
 
@@ -64,6 +67,26 @@ The following are some of the user events you can audit.
 | Enable maintenance mode                        | MaintenanceModeEnabled                 | When site is put in maintenance mode                                          |
 | Disable maintenance mode                       | MaintenanceModeDisabled                | When site if taken off of maintenance mode                                    |
 | disableAnonymousAccess exception list changed | AnonymousSettingExceptionListChanged | When anonymous access governance control is changed<br /><br />These operations take time to complete from the point they're initiated. The audit logs are captured when the action is initiated. It isn't necessary that the action is successfully completed.                           |
+| Update bootstrap version                       | BootstrapVersionUpdated            | When bootstrap version is updated                            |
+| Disable custom errors                          | CustomErrorsDisabled            | When custom errors are disabled                            |
+| Enable custom errors                           | CustomErrorsEnabled            | When custom errors are enabled                            |
+| Update D365 URL                                 | D365URLUpdated                 | When URL for Dynamic365 is updated                           |
+| Update data model version                       | DataModelVersionUpdated            | When data model version is updated                           |
+| Disable diagnostic logs                       | DiagnosticLogsDisabled            | When diagnostic logs is disabled                           |
+| Enable diagnostic logs                         | DiagnosticLogsEnabled                  | When diagnostic logs are enabled                                              |
+| Disable early upgrade                          | EarlyUpgradeDisabled                   | When early upgrade is disabled                                                |
+| Enable early upgrade                           | EarlyUpgradeEnabled                    | When early upgrade is enabled                                                 |
+| Install field service extension               | FieldServiceExtensionInstalled         | When the field service extension is installed                                 |
+| Modify maintenance mode URL                   | MaintenanceModeURLModified             | When the maintenance mode URL is modified                                     |
+| Install project service automation extension        | ProjectServiceAutomationExtensionInstalled | When the project service automation extension is installed                   |
+| Archive site                                   | SiteArchived                           | When the site is archived                                                     |
+| Suspend site                                  | SiteSuspended                          | When the site is suspended                                                    |
+| Unarchive site                                 | SiteUnarchived                         | When the site is unarchived                                                   |
+| Update website authentication key             | WebsiteAuthenticationKeyUpdated        | When the website authentication key is updated                                |
+| Create site                                    | SiteCreated                            | When the site is created                                                      |
+| Enable CDN                                     | CDNEnabled                             | When CDN is enabled                            |
+| Disable CDN                                    | CDNDisabled                            | When CDN is disabled                           |
+
 
 ### See also
 

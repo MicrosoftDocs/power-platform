@@ -3,7 +3,7 @@ title: Automatic deletion of Power Platform environments
 description: Learn about the automatic processes that identify and disable Power Platform environments and how you can prevent them from being deleted.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 03/24/2025
+ms.date: 04/21/2025
 ms.subservice: admin
 author: matapg007
 ms.author: matgupta 
@@ -49,6 +49,8 @@ If an environment has already been deleted, you have a limited window of time to
 
 A cleanup mechanism in Power Platform automatically removes environments that aren't being used. Only default, developer, and [Dataverse for Teams environments](inactive-teams-environment.md) are affected by the activity-based automatic cleanup.
 
+Inactivity timeline varies by environment type. Learn more in the following sections.
+
 ## Default environment 
 Power Platform is implementing a cleanup process for default environments that meet the following criteria. After 90 days of inactivity, two warning notifications are sent to environment administrators, if no action is taken, the environment is deleted. You have seven days to recover deleted environments.
 
@@ -65,13 +67,14 @@ During the deletion process, a new replacement default environment is created wi
 > You can't turn off this cleanup mechanism. However, you can review the last activity date for environments in the Power Platform admin center. 
 
 ## Developer environment
- Power Platform is implementing a cleanup process for developer environments that meet the following criteria. After 30 days of inactivity, an environment is turned off. After 30 days, if no action is taken, the environment that was turned off is deleted. You have seven days to recover deleted environments.
+Power Platform is implementing a cleanup process for developer environments that meet the following criteria. After 30 days of inactivity, environments are automatically disabled. After 15 days after that, the environment gets _soft-deleted_, unless the customer re-enables the environment. Once the environment is soft-deleted, the customer has seven days to recover the environment before it's fully deleted.
 
-- Admins receive two warning notifications before the environment is deleted due to inactivity.
-- Any activity within 15 days of the notification resets the inactivity period.
-- Inactive environments are deleted after 15 days of inactivity notification.
+As part of this cleanup process, you can expect the following:
+- Admins receive two warning notifications before the environment gets disabled or deleted due to inactivity.
+- Any activity on the environment resets the inactivity period.
+- Disabled environments, due to inactvity, are deleted 15 days after the warning notification was sent.
   
-### Timeline for unused environments
+### Timeline for unused developer environments
 
 The environment's administrators and the user who created the environment are notified by email according to the schedule described in the following table.
 
@@ -84,7 +87,7 @@ The environment's administrators and the user who created the environment are no
 | 11 days after the environment is disabled | Send a second warning that the environment will be deleted. |
 | 15 days after the environment is disabled | Delete the environment, and send a notice that the environment has been deleted. |
 
-A notification appears on the **Environments** list page and **Environment** page when an environment is disabled.
+A warning message appears on the **Environments** list page and **Environment** page when an environment is disabled.
 
 ### Definition of user activity
 
@@ -98,7 +101,8 @@ Here are some examples of the types of activities that are included in the measu
 - **Maker activity**: Create, update, or delete an app, flow (both desktop and cloud flows), Microsoft Copilot Studio bot, or custom connector
 - **Admin activity**: Environment operations such as copy, delete, recover, and reset  
 
-Activity includes automations such as scheduled flow runs. For example, if there's no user, maker, or admin activity in an environment, but it contains a cloud flow that runs daily, then the environment is considered active.
+> [!NOTE]
+> As of April 20, 2025, Center of Excellence (CoE) toolkit operations&mdash;which query data from multiple Dataverse organizations in a customer tenant&mdash;are no longer considered as activity by developer organizations. Developer organizations, which were previously only kept active by CoE queries, will become inactive, unless there is other activity against those developer organizations. 
 
 ## Trigger activity, re-enable, and recover an environment
 
