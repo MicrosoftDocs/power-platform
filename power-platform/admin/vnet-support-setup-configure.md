@@ -8,7 +8,9 @@ author: faix
 ms.author: osfaixat 
 ms.reviewer: sericks
 ms.subservice: admin
-ms.custom: "admin-security"
+ms.custom: 
+  - admin-security
+  - NewPPAC
 search.audienceType: 
   - admin
 ---
@@ -86,13 +88,21 @@ When you set up your virtual network, you need to delegate a subnet to the assoc
 
 ### Validate the connection
 
-1. Go to the [Power Platform admin center](https://aka.ms/ppac) and select the environment where you set up virtual network support.
-
-1. Select **History**.
-
-   You should see that the enterprise policies link with your environment is successful if the **Status** says **Succeeded**.
-
-    :::image type="content" source="media/vnet-support/vnet-success-linked.png" alt-text="Screenshot showing your virtual network is linked to your environment." lightbox="media/vnet-support/vnet-success-linked.png":::
+## [New admin center](#tab/new)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. In the **Environments** page, select an environment.
+1. Select **...** then **History** in the command bar.
+1. You should see that the enterprise policies link with your environment is successful if the **Status** says **Succeeded**.
+   
+## [Classic admin center](#tab/classic)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, **Environments**.
+1. In the **Environments** page, select an environment.
+1. Select **...** then **History** in the command bar.
+1. You should see that the enterprise policies link with your environment is successful if the **Status** says **Succeeded**.
+---
 
 ### Related content
 
