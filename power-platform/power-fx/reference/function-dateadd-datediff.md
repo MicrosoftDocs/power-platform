@@ -1,4 +1,4 @@
----
+﻿---
 title: DateAdd, DateDiff, and TimeZoneOffset functions
 description: Reference information including syntax and examples for the DateAdd, DateDiff, and TimeZoneOffset functions.
 author: gregli-msft
@@ -19,12 +19,13 @@ contributors:
 ---
 
 # DateAdd, DateDiff, and TimeZoneOffset functions
+[!INCLUDE[function-dateadd-datediff-applies-to](includes/function-dateadd-datediff-applies-to.md)]
 
 | Function | Applies to |
 | - | - |
-| **DateAdd** | :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Dataverse formula columns :::image type="icon" source="media/yes-icon.svg" border="false"::: Desktop flows :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI  |
-| **DateDiff** | :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Dataverse formula columns :::image type="icon" source="media/yes-icon.svg" border="false"::: Desktop flows :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI |
-| **TimeZoneOffset** | :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Desktop flows :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI |
+| **DateAdd** | |
+| **DateDiff** | |
+| **TimeZoneOffset** | |
 
 
 Adds to or finds the difference in date/time values and converts between local time and UTC.
@@ -117,3 +118,139 @@ Note the negative sign before **TimeZoneOffset** to subtract the offset rather t
 To see the result, use the **Text** function with the format _dd-mm-yyyy hh:mm_, which will result in **15-07-2013 13:02** if you're in Pacific Daylight Time.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

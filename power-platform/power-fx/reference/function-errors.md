@@ -1,4 +1,4 @@
----
+﻿---
 title: Errors function
 description: Reference information including syntax and examples for the Errors function.
 author: gregli-msft
@@ -18,8 +18,9 @@ contributors:
 ---
 
 # Errors function
+[!INCLUDE[function-errors-applies-to](includes/function-errors-applies-to.md)]
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps   
+
 
 Provides error information for previous changes to a [data source](/power-apps/maker/canvas-apps/working-with-data-sources).
 
@@ -112,3 +113,139 @@ You can also add a **Reload** button on the form, so that the user can efficient
   **ReloadButton.OnSelect = Revert( IceCream, EditRecord )**
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

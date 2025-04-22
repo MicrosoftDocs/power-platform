@@ -1,4 +1,4 @@
----
+﻿---
 title: ReadNFC function
 description: Reference information, including syntax, for the ReadNFC function
 author: mikepenaMS
@@ -19,8 +19,9 @@ contributors:
 ---
 
 # ReadNFC function
+[!INCLUDE[function-readnfc-applies-to](includes/function-readnfc-applies-to.md)]
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps
+
 
 Reads a Near Field Communication (NFC) tag.
 
@@ -113,3 +114,138 @@ Additional **RTD** and **TNF** values may be supported in the future. If mor
     :::image type="content" source="media/function-readnfc/app-example.png" alt-text="App on mobile device with the NFC Tag reading example and the result inside the gallery.":::
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

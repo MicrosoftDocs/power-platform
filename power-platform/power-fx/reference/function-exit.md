@@ -1,4 +1,4 @@
----
+﻿---
 title: Exit function
 description: Reference information including syntax and examples for the Exit function.
 author: gregli-msft
@@ -18,8 +18,9 @@ contributors:
 ---
 
 # Exit function
+[!INCLUDE[function-exit-applies-to](includes/function-exit-applies-to.md)]
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps
+
 
 Exits the currently running app and optionally signs out the current user.
 
@@ -49,3 +50,139 @@ While authoring the app, calling **Exit** doesn't exit or sign out the user. How
 | **Exit(&nbsp;true&nbsp;)** | Exits the current app and the user is signed out. The user will need to sign back in with their credentials before running an app. |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
