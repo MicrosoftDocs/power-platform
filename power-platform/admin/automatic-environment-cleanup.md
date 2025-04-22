@@ -3,7 +3,7 @@ title: Automatic deletion of Power Platform environments
 description: Learn about the automatic processes that identify and disable Power Platform environments and how you can prevent them from being deleted.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 04/21/2025
+ms.date: 04/22/2025
 ms.subservice: admin
 author: matapg007
 ms.author: matgupta 
@@ -49,7 +49,7 @@ If an environment has already been deleted, you have a limited window of time to
 
 A cleanup mechanism in Power Platform automatically removes environments that aren't being used. Only default, developer, and [Dataverse for Teams environments](inactive-teams-environment.md) are affected by the activity-based automatic cleanup.
 
-Inactivity timeline varies by environment type; please refer to the following sections to learn more.
+Inactivity timeline varies by environment type. Learn more in the following sections.
 
 > [!IMPORTANT]
 > You can't turn off this cleanup mechanism. However, you can review the last activity date for environments in the Power Platform admin center. 
