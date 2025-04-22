@@ -71,18 +71,18 @@ A warning message appears on the **Environments** list page and **Environment** 
 
 ### Definition of user activity
 
-Power Platform calculates a single measure of inactivity for each environment. The measure accounts for all activity by users, makers, and admins across Power Apps, Power Automate, Power Platform Administration, Microsoft Copilot Studio, and Dataverse.
+Power Platform calculates a single measure of inactivity for each environment. The measure accounts for all activity by users, makers, and admins across Power Apps, Power Automate, Power Platform, Microsoft Copilot Studio, and Dataverse.
 
 Most create, read, update, and delete operations on the environment and its resources&mdash;that a user, maker, or admin initiates&mdash;are considered activity. Visits to the home page, solution explorer, and Power Apps or Power Automate designer aren't considered activity.
 
-Here are some examples of the types of actions that are considered as activity:
+Here are some examples of the types of actions that're considered as activity:
 
-- **User activity**: Launch an app, launch the environment url, execute a flow (whether automatic or not), or chat with a Microsoft Copilot Studio bot
-- **Maker activity**: Create, update, or delete an app, flow (both desktop and cloud flows), Microsoft Copilot Studio bot, or custom connector
-- **Admin activity**: Trigger an environment operation such as copy, restore, or reset  
+- **User activity**: Launch an app, launch the environment URL, execute a flow (whether automatic or not), or chat with a Microsoft Copilot Studio bot.
+- **Maker activity**: Create, update, or delete an app, flow (both desktop and cloud flows), Microsoft Copilot Studio bot, or custom connector.
+- **Admin activity**: Trigger an environment operation such as copy, restore, or reset.
 
 > [!NOTE]
-> As of April 20, 2025, Center of Excellence (CoE) toolkit operations&mdash;which query data from multiple Dataverse organizations in a customer tenant&mdash;are no longer considered as activity by developer organizations. Developer organizations, which were previously only kept active by CoE queries, will become inactive, unless there is other activity against those developer organizations. 
+> As of April 20, 2025, Center of Excellence (CoE) toolkit operations&mdash;which query data from multiple Dataverse organizations in a customer tenant&mdash;are no longer considered as activity by developer organizations. Developer organizations, which were previously only kept active by CoE queries, become inactive unless there's other activity against those developer organizations. 
 
 ## Trigger activity, re-enable, and recover an environment
 
