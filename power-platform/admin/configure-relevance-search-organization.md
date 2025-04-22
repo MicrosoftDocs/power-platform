@@ -148,7 +148,6 @@ Setting up search starts with reviewing the tables that are allowed for Datavers
 
    > [!NOTE]
    > If you're selecting tables for Dataverse search on a Power Apps US Government environment, use the legacy solution explorer to choose the tables to be indexed for Dataverse search.
-   > :::image type="content" source="media/legacy-solution-explorer-small.png" alt-text="Image of legacy solution explorer":::
 
 1. Sign in to [Power Apps](https://make.powerapps.com/).
 2. In the navigation pane, select **Solutions**.
@@ -163,8 +162,6 @@ Although there's no limit on how many tables you can index for Dataverse search,
 
 When you select a table to index for Dataverse search, you can see the number of fields that are added to the index.
 
-:::image type="content" source="media/maker-portal3.png" alt-text="Manage search index pane with number of fields highlighted.":::
-
 The number of fields indexed for a table is dependent on the tables Quick Find view. Additionally, some field types are treated as multiple fields in the Dataverse search index, as indicated in this table.
 
 | Field type          |  Number of fields used in <br /> the Dataverse search index  |
@@ -174,8 +171,6 @@ The number of fields indexed for a table is dependent on the tables Quick Find v
 | All other types of fields                          | 1  |
 
 The progress bar at the bottom shows the percentage of indexed fields as a fraction of the maximum allowed number of searchable fields.
-
-:::image type="content" source="media/maker-portal4.png" alt-text="Search pane with progress bar highlighted.":::
 
 A warning message appears when you reach the indexed field limit. If you want to add more fields to the index, you have to free up space, either by removing some of the fields that are already in the index or removing entire tables from Dataverse search scope.
 
@@ -315,9 +310,7 @@ To set the managed property, take these steps:
 
 3. Under **Components**, expand **Entities**, and then select the table you want.
 
-4. On the menu bar, select **Managed Properties**. For **Can enable sync to external search index**, select **True** or **False** to set the property to the desired state. Select **Set** to exit, as shown here.
-
-   :::image type="content" source="media/relevance-search-managed-properties.PNG" alt-text="Image of how to set the managed property.":::
+4. On the menu bar, select **Managed Properties**. For **Can enable sync to external search index**, select **True** or **False** to set the property to the desired state. Select **Set** to exit.
 
 5. Select **Publish** for your changes to take effect.
 
