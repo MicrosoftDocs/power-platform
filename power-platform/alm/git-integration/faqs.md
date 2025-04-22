@@ -19,12 +19,12 @@ This article includes answers to commonly asked questions about Git integration 
 
 ## What is source code integration in Power Platform?
 
-Git integration provides an easier way of syncing Power Platform customizatinos (solutions and their objects) with a Git repository. The solutions and their objects are stored in human readable formats in the repository, which allows you to easily search, track changes, and manage your solutions in a source control system.
+Git integration provides an easier way of syncing Power Platform customizations (solutions and their objects) with a Git repository. The solutions and their objects are stored in human readable formats in the repository, which allows you to easily search, track changes, and manage your solutions in a source control system.
 
 ## What's the difference between Git integration and pre-existing Developer tools?
 
 Git integration is built into Power Platform and is more performant, democratized for makers and admins, has more robust safeguards, and uses an optimized file format.
-Developer tools currently provide more flexitility for code-first developers.
+Developer tools currently provide more flexibility for code-first developers.
 
 ## What are the prerequisites for using Git integration?
 
@@ -58,7 +58,7 @@ The feature currently works with a single branch that you specify when you bind 
 
 For example, you can connect your development to a developer branch, PR the changes into a feature branch, then disconnect your solution and reconnect to the feature branch to pull the latest changes into an environment.
 
-## Why isn't there unmanaged and managed solution representation for different objects in Git?
+## Why isn't there an unmanaged and managed solution representation for different objects in Git?
 
 Before this feature existed, it was common to store managed and unmanaged solution versions in Git. That's no longer needed. Git should only include your source code and unmanaged customizations. Managed vs unmanaged is determined when building and releasing the solution.
 
@@ -89,11 +89,11 @@ Yes. See the [Web API reference](/power-apps/developer/data-platform/webapi/refe
 
 ## Can I now make changes directly in source control in a supported manner?
 
-Support for direct modifications to solution customizations isn't changing with this feature. Our recommendation is to continue the practice of making your changes directly in the environment, then committing those changes to source control. Changes to localized labels are permitted directly in source. Code-first objects that are supported using our developer tools are also supported, and include plug-ins, PCF controls, and web resources.
+Support for direct modifications to solution customizations isn't changing with this feature. Our recommendation is to continue the practice of making your changes directly in the environment, then committing those changes to source control. Changes to localized labels are permitted directly in the source. Code-first objects that are supported using our developer tools are also supported, and include plug-ins, PCF controls, and web resources.
 
 ## Can I commit large solutions?
 
-Yes. However, there's a 17MB limit for single file commits withing Azure DevOps. The system will chunk large solutions, containing multiple files into multiple commits and squash-merge them.
+Yes. However, there's a 17MB limit for single file commits within Azure DevOps. The system will chunk large solutions, containing multiple files into multiple commits and squash-merge them.
 
 ## Are all object types supported?
 
@@ -111,7 +111,7 @@ Yes, this is common. Dataverse API's can also be used to commit changes automati
 
 Not currently.
 
-## Can I automically deploy changes pushed to Git?
+## Can I automatically deploy changes pushed to Git?
 
 Support is currently limited, but you can use Pipelines in Power Platform and pac pipeline deploy.
 
