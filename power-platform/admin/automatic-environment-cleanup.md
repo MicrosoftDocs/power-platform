@@ -67,7 +67,7 @@ A cleanup mechanism in Power Platform will soon automatically removes default en
 During the deletion process, a new replacement default environment is created without Dataverse, with an option to add Dataverse later, and the previous default environment is deleted. After an environment is deleted, it can be recovered within the next seven days. However, the environment type is changed to **production** type upon restoration, as we can't overwrite the new default environment.
 
 ## Developer environment
-A cleanup mechanism in Power Platform automatically removes developer environments that aren't being used based on the following schedule. After 30 days of inactivity, environments are automatically disabled. If, after 15 days, the [environment is not re-enabled](#Re-enable-a-disabled-environment), the environment will be deleted. You have seven days to [recover the environment](recover-environment.md) once it has been deleted.
+A cleanup mechanism in Power Platform automatically removes developer environments that aren't being used based on the following schedule. After 30 days of inactivity, environments are automatically disabled. If, after 15 days, the [environment is not re-enabled](#re-enable-a-disabled-environment), the environment will be deleted. You have seven days to [recover the environment](recover-environment.md) once it has been deleted.
 
 As part of this cleanup process, you can expect the following:
 - Admins receive email notifications which warn of upcoming disablement or deletion.
