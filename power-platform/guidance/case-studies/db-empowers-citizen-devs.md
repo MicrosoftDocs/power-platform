@@ -5,7 +5,7 @@ description: Learn how Deutsche Bahn empowers 4,000 citizen developers to build 
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
-ms.subservice: architecture-center
+ms.subservice: guidance
 ms.topic: overview
 ms.date: 04/10/2025
 ---
