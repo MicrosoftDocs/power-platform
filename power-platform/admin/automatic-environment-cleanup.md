@@ -55,14 +55,14 @@ Inactivity timeline varies by environment type; please refer to the following se
 > You can't turn off this cleanup mechanism. However, you can review the last activity date for environments in the Power Platform admin center. 
 
 ## Default environment 
-Power Platform is implementing a cleanup process for default environments that meet the following criteria. After 90 days of inactivity, two warning notifications are sent to environment administrators, if no action is taken, the environment is deleted. You have seven days to recover deleted environments.
+A cleanup mechanism in Power Platform will soon automatically removes default environments that aren't being used based on the following schedule. After 90 days of inactivity, two warning notifications are sent to environment administrators, if no action is taken, the environment is deleted. You have seven days to recover deleted environments.
 
 - Environments with [premium licenses](pricing-billing-skus.md) aren't included in the cleanup.
 - Environments with Microsoft 365 agents or planner activity aren't included in the cleanup.
 - Environments with flows aren't cleaned up until they have a year of inactivity, to allow for annual and seasonal activity.
 - Admins receive two warning notifications before the default environment is deleted due to inactivity.
 - Any activity within 30 days of the notification resets the inactivity period.
-- Inactive environments are deleted after 30 days of inactivity notification. 
+- Inactive environments are deleted 30 days after the first inactivity notification. 
 
 During the deletion process, a new replacement default environment is created without Dataverse, with an option to add Dataverse later, and the previous default environment is deleted. After an environment is deleted, it can be recovered within the next seven days. However, the environment type is changed to **production** type upon restoration, as we can't overwrite the new default environment.
 
@@ -95,7 +95,7 @@ Power Platform calculates a single measure of inactivity for each environment. T
 
 Most create, read, update, and delete operations on the environment and its resources&mdash;that a user, maker, or admin initiates&mdash;are considered activity. Visits to the home page, solution explorer, and Power Apps or Power Automate designer aren't considered activity.
 
-Here are some examples of the types of activities that are included in the measure:
+Here are some examples of the types of actions that are considered as activity:
 
 - **User activity**: Launch an app, launch the environment url, execute a flow (whether automatic or not), or chat with a Microsoft Copilot Studio bot
 - **Maker activity**: Create, update, or delete an app, flow (both desktop and cloud flows), Microsoft Copilot Studio bot, or custom connector
