@@ -156,6 +156,13 @@ In this scenario, the admin adds the Fabrikam tenant to both the inbound and out
 > [!NOTE]
 > To ensure that tenant isolation doesn't block any calls when used, turn tenant isolation **On**, add a new tenant rule, set **Tenant ID** as "\*", and set allowed direction to **inbound** and **outbound**.
 
+
+
+
+
+> [!NOTE]
+> Due to technical limitations, the threshold limit for rules is 500.
+
 You can perform all the allow list operations like add, edit, and delete while tenant isolation is turned **On** or **Off**. Allow list entries do have an effect on the connection behavior when tenant isolation is turned **Off** since all cross-tenant connections are allowed. 
 
 ## Design time impact on apps and flows
