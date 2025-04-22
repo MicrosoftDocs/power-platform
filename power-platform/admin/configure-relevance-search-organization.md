@@ -342,16 +342,16 @@ Respectively, Dataverse search is reported as part of database and files storage
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Licensing**.
 1. In the **Licensing** pane, select **Capacity add-ons**.
-1. Select the **Dataverse** tab, select an environment and then select the **Chart** icon for details.
+1. In the **Capacity** page, select the **Dataverse** tab, select an environment, and then select the **Chart** icon for details.
 1. In the **Licensing** pane, select **Dataverse**.
-1. Select the **Environments** tab, select an environment to view.
+1. In the **Licenses** page, select the **Environments** tab, and then select an environment to view.
    
 ## [Classic admin center](#tab/classic)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Resources** and then select **Capacity**.
-1. Select the **Dataverse** tab, select an environment and then select the **Chart** icon for details.
-1. In the navigation pane, select **Billing** and then select **Licenses**.
-1. Select the **Environments** tab, select an environment to view.
+1. In the **Capacity** page, select the **Dataverse** tab, select an environment, and then select the **Chart** icon for details.
+1. In the navigation pane, expand **Billing** and then select **Licenses**.
+1. In the **Licenses** page, select the **Environments** tab and select an environment to view.
 ---
 
 ### What entitlements are consumed by Dataverse search?
