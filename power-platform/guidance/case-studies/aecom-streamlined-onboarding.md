@@ -42,7 +42,7 @@ With the implementation of the Project Connect application, AECOM addressed seve
 
 ## Solution
 
-The Project Connect application was created using canvas apps and is now in production and is used by all Information Managers across the MEA region.
+The Project Connect application was created using canvas apps and is now in production and is used by all information managers across the MEA region.
 
 Due to its simplicity and the positive feedback from users in the MEA region, the application has also been deployed in the AECOM Canada region. Further expansion to other regions is expected.
 
@@ -50,13 +50,15 @@ With the Project Connect application, information managers can onboard members t
 
 They click the user icon next to the Teams icon to see a data analytical view of the user’s permissions. The Teams icon accesses the project’s SharePoint site.
 
-:::image type="content" source="media/microsoft-learn-use-case---aecom/image5.png" alt-text="Screenshot of the Project Connect application showing the Teams and SharePoint onboarding process.":::
+:::image type="content" source="media/aecom-streamlined-onboarding/project-onboarding.png" alt-text="Screenshot of the Project Connect application showing the Teams and SharePoint onboarding process." lightbox ="media/aecom-streamlined-onboarding/project-onboarding.png":::
 
-Information managers start by selecting the desired project (1), which shows a gallery of current members in the middle pane. The information manager can search for a member to see if they already exist in Teams and SharePoint (2). If the member isn’t found, they can be added using the AECOM User Directory by clicking the **Add** icon (3). If the member needs to be included in the Project Management (PM) security group, the administrator can toggle the **PM Security Group** button.
+- Information managers start by selecting the desired project (1), which shows a gallery of current members in the middle pane. 
+- The information manager can search for a member to see if they already exist in Teams and SharePoint (2). 
+- If the member isn’t found, they can be added using the AECOM User Directory by clicking the **Add** icon (3). 
+- If the member needs to be included in the Project Management (PM) security group, the administrator can toggle the **PM Security Group** button.
+- For adding members in bulk, users can download the Bulk Import Excel sheet template (4). They receive an email with the Excel sheet attached. See the following example email.
 
-For adding members in bulk, users can download the Bulk Import Excel sheet template (4). They receive an email with the Excel sheet attached. See the following example email.
-
-:::image type="content" source="media/microsoft-learn-use-case---aecom/image7.png" alt-text="Screenshot of an example email with the Bulk Import Excel sheet template attached.":::
+:::image type="content" source="media/aecom-streamlined-onboarding/email.png" alt-text="Screenshot of an example email with the Bulk Import Excel sheet template attached." lightbox ="media/aecom-streamlined-onboarding/email.png":::
 
 Once the Excel sheet is filled out, it’s uploaded to the location specified in the email. A Power Automate flow then runs in the background and adds each member to the project’s SharePoint site.
 
@@ -65,29 +67,37 @@ Once the Excel sheet is filled out, it’s uploaded to the location specified in
 
 ## Project View
 
-The Project View enables information managers to see which technologies a user has access to, such as Teams/SharePoint, ACC, and Revizto. Information managers can select a project (1), click the \$ icon for the project cost report, click a platform logo to access the project on that platform, and search for a user in the directory (2) to quickly view their technology access. Administrators can also add the user to all relevant technologies simultaneously by assigning a role (3) and clicking the **Add** icon (4).
+The Project View enables information managers to see which technologies a user has access to, such as Teams/SharePoint, ACC, and Revizto. Information managers can:
+- Select a project (1)
+- Click the \$ icon for the project cost report
+- Click a platform logo to access the project on that platform
+- Search for a user in the directory (2) to quickly view their technology access.
+- Administrators can also add the user to all relevant technologies simultaneously by assigning a role (3) and clicking the **Add** icon (4).
 
-:::image type="content" source="media/microsoft-learn-use-case---aecom/image13.png" alt-text="Screenshot of the Project View interface showing project selection, cost report icon, platform logos, and user directory search.":::
+:::image type="content" source="media/aecom-streamlined-onboarding/projecr-view.png" alt-text="Screenshot of the Project View interface showing project selection, cost report icon, platform logos, and user directory search." lightbox = "media/aecom-streamlined-onboarding/projecr-view.png":::
 
 ## User View
 
-The User View is the counterpart to the Project View. It allows information managers to search for a specific user in the AECOM user directory (1) and see which technologies they have access to across all projects.
+The User View is the counterpart to the Project View. It allows information managers to:
+- Search for a specific user in the AECOM user directory (1) 
+- See which technologies they have access to across all projects.
 
-:::image type="content" source="media/microsoft-learn-use-case---aecom/image15.png" alt-text="Screenshot of the User View interface showing a search for a specific user and their access to technologies across projects.":::
+:::image type="content" source="media/aecom-streamlined-onboarding/user-view.png" alt-text="Screenshot of the User View interface showing a search for a specific user and their access to technologies across projects." lightbox = "media/aecom-streamlined-onboarding/user-view.png":::
 
 If an icon appears next to a project name, it indicates that the user has access to that specific technology. The checkmark shows that the user has completed onboarding. 
 
 ## Admin screen (model-driven app)
 
-The Project Connect Admin screen was created using the Power Apps model-driven app design. The Admin screen allows information managers to set up projects for the Project Connect app. Relevant details, such as the Revizto Project ID and Autodesk Project ID, are entered on the Admin screen. Then the project is ready for onboarding through the app. To ensure the project is visible in the projects list, the '**Project_Onboarding** **_Setup**' field is set to **Yes**.
+The Project Connect Admin screen was created using the Power Apps model-driven app design. The Admin screen allows information managers to set up projects for the Project Connect app. Relevant details, such as the Revizto Project ID and Autodesk Project ID, are entered on the Admin screen. Then the project is ready for onboarding through the app. 
+- To ensure the project is visible in the projects list, the '**Project_Onboarding** **_Setup**' field is set to **Yes**.
 
-:::image type="content" source="media/microsoft-learn-use-case---aecom/image17.png" alt-text="Screenshot of the Project Connect Admin screen showing fields for Revizto Project ID and Autodesk Project ID.":::
+:::image type="content" source="media/aecom-streamlined-onboarding/admin-screen.png" alt-text="Screenshot of the Project Connect Admin screen showing fields for Revizto Project ID and Autodesk Project ID." lightbox = "media/aecom-streamlined-onboarding/admin-screen.png":::
 
-## Project Connect Onboarding Dashboard
+## Project Connect onboarding dashboard
 
 AECOM then displays the information in Power BI. The Project Connect Onboarding Access Report, as shown in the image below, helps them track their team’s onboarding progress over time.
 
-:::image type="content" source="media/microsoft-learn-use-case---aecom/image19.png" alt-text="Screenshot of the Project Connect Onboarding Access Report displayed in Power BI.":::
+:::image type="content" source="media/aecom-streamlined-onboarding/project-connect-onboarding.png" alt-text="Screenshot of the Project Connect Onboarding Access Report displayed in Power BI." lightbox = "media/aecom-streamlined-onboarding/project-connect-onboarding.png":::
 
 ## Technologies used
 
@@ -119,13 +129,13 @@ The development and implementation of the Project Connect application leveraged 
 
 - Use a dashboard to understand permissions analytics across Teams, SharePoint, ACC, and Revizto.
 
-## Architecture
+## Architecture diagrams
 
-To better understand the technical foundation of the Project Connect application, we’ll take a closer look at the solution architecture. The following diagrams provide visual representation of the various components and how they interact to deliver an effective onboarding experience.
+To better understand the technical foundation of the Project Connect application, we take a closer look at the solution architecture. The following diagrams provide visual representation of the various components and how they interact to deliver an effective onboarding experience.
 
 The first part of the architecture shows how data is automatically extracted from Workday and Workbench platforms to be displayed in Power BI and in Project Connect, which was built using Power Apps.
 
-:::image type="content" source="media/microsoft-learn-use-case---aecom/image21.png" alt-text="Screenshot of the architecture diagram showing data flow from Workday and Workbench platforms to Power BI and Project Connect.":::
+:::image type="content" source="media/aecom-streamlined-onboarding/architecture.png" alt-text="Screenshot of the architecture diagram showing data flow from Workday and Workbench platforms to Power BI and Project Connect." lightbox = "media/aecom-streamlined-onboarding/architecture.png":::
 
 1.  Copilot capabilities were used in Power Automate and Power Apps to streamline workflows and increase productivity.
 2.  The Workday system sends weekly scheduled human resource management (HRM) data to a shared mailbox in Microsoft Outlook.
@@ -140,7 +150,7 @@ The first part of the architecture shows how data is automatically extracted fro
 
 Next, let’s take a deeper look at the architecture of the Project Connect application, which was built using Power Apps.
 
-:::image type="content" source="media/microsoft-learn-use-case---aecom/image22.png" alt-text="Screenshot of the architecture diagram showing the Project Connect application built using Power Apps.":::
+:::image type="content" source="media/aecom-streamlined-onboarding/architecture-power-apps.png" alt-text="Screenshot of the architecture diagram showing the Project Connect application built using Power Apps." lightbox = "media/aecom-streamlined-onboarding/architecture-power-apps.png":::
 
 1.  Copilot capabilities were used in Power Automate, Dataverse, and Power Apps, to streamline workflows and increase productivity.
 2.  From the last workflow, the HR data is sent from Azure SQL Database to be displayed in the Project Connect application that was built with Power Apps.
@@ -196,32 +206,32 @@ As AECOM continues to innovate and enhance their solutions, several exciting dev
 
 ## Related information
 
-- What is Power Apps?
+- [What is Power Apps?](/power-apps/powerapps-overview)
 
-  - Overview of building canvas apps  
-  - Copilot in Power Apps overview  
+  - [Overview of building canvas apps](/power-apps/maker/canvas-apps/getting-started)  
+  - [Copilot in Power Apps overview](/power-apps/maker/canvas-apps/ai-overview)  
 
-- What is Power Automate?
+- [What is Power Automate?](/power-automate/flow-types)
 
-  - Automation adoption best practices  
-  - Use SharePoint and Power Automate to build workflows  
-  - Overview of how to integrate flows with Dataverse  
-  - Use Copilot in Power Automate  
-  - Adopt automation with Copilot in Power Automate  
-  - Get started with Copilot in cloud flows  
+  - [Automation adoption best practices](/power-automate/guidance/automation-coe/overview?branch=main)  
+  - [Use SharePoint and Power Automate to build workflows](/power-automate/sharepoint-overview)  
+  - [Overview of how to integrate flows with Dataverse](/power-automate/dataverse/overview)  
+  - [Use Copilot in Power Automate](/training/modules/use-copilot-power-automate/)  
+  - [Adopt automation with Copilot in Power Automate](/power-automate/copilot-overview)  
+  - [Get started with Copilot in cloud flows](/power-automate/get-started-with-copilot)  
 
-- What is Microsoft Dataverse?  
+- [What is Microsoft Dataverse?](/power-apps/maker/data-platform/data-platform-intro)  
 
-- What is Microsoft Fabric?
+- [What is Microsoft Fabric?](/fabric/fundamentals/microsoft-fabric-overview)
 
-  - What is Data Factory in Microsoft Fabric?  
-  - What is data warehousing in Microsoft Fabric?  
+  - [What is Data Factory in Microsoft Fabric?](/fabric/data-factory/data-factory-overview)  
+  - [What is data warehousing in Microsoft Fabric?](/fabric/data-warehouse/data-warehousing)  
 
-- Learn more about the Azure services used in this solution:
 
-  - Introduction to Azure Blob Storage  
-  - What is Azure SQL Database?  
 
-- Fluent UI Web Components overview  
+- [Introduction to Azure Blob Storage](/azure/storage/blobs/storage-blobs-introduction)  
+- [What is Azure SQL Database?](/azure/azure-sql/database/sql-database-paas-overview?view=azuresql)  
 
-- Copilot Studio overview  
+- [Fluent UI Web Components overview](/fluent-ui/web-components/)  
+
+- [Copilot Studio overview](/microsoft-copilot-studio/fundamentals-what-is-copilot-studio)  
