@@ -35,8 +35,8 @@ Dataverse search has these benefits:
 
 - **Generative AI experiences**. Provides generative AI-powered search and work experiences using Copilot when Dataverse tables and files are uploaded in Microsoft Copilot Studio,
 
-> [!NOTE]
-> Searching across images isn't supported.
+    > [!NOTE]
+    > Searching across images isn't supported.
 
 - **Suggested results as you type**. Finds what you're looking for and shows you the top results, as you type.
 
@@ -298,10 +298,10 @@ These three new enable rules give you the flexibility to optimize quick actions:
 
 - **ShowOnGrid rule** is a rule to make a command appear only on the homepage grid. You can use this command to hide an existing quick action.
 
-> [!NOTE]
-> Each table can have up to six quick actions.
->
-> Quick actions currently show up only in the context of search—alongside suggestions and in the results page on the primary column. The same set of quick actions appears alongside suggestions and in the results page.
+  > [!NOTE]
+  > Each table can have up to six quick actions.
+  >
+  > Quick actions currently show up only in the context of search—alongside suggestions and in the results page on the primary column. The same set of quick actions appears alongside suggestions and in the results page.
 
 ## Set managed properties for Dataverse search
 
