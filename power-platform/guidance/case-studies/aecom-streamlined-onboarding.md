@@ -22,7 +22,7 @@ To automate the process of adding project team members to multiple platforms, AE
 
 AECOM needed to manage onboarding project members across multiple technology platforms for their complex engineering projects in the Middle East and Africa (MEA) region. As projects grew in scope and complexity, information managers needed to ensure that all team members were properly onboarded to the right technology platform, which reduced delays and enabled engineering teams to start work seamlessly, optimizing efficiency. The need for a streamlined, centralized solution became critical, especially as more projects came online. The key roles involved were the information managers, designers, and the digital team.
 
-AECOM Digital Director of MEA, Martin Angus, said, “As a company deeply committed to leveraging Microsoft products, we believe that Microsoft technologies are instrumental in driving our digital transformation journey.”
+> AECOM Digital Director of MEA, Martin Angus, said, “As a company deeply committed to leveraging Microsoft products, we believe that Microsoft technologies are instrumental in driving our digital transformation journey.”
 
 With the implementation of the Project Connect application, AECOM addressed several challenges that hindered efficiency and productivity:
 
