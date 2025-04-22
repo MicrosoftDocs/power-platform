@@ -6,31 +6,34 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/14/2022
 ms.subservice: admin
+ms.custom: NewPPAC
 ms.author: gned
 ---
 # Set up duplicate detection rules to keep your data clean
 
 [!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
-To maintain the integrity of your data, it's a good idea to have rules in place to reduce duplicate records in the system. The model-driven apps and the customer engagement apps (such as Dynamics 365 Sales and Dynamics 365 Customer Service) include default duplicate detection rules for accounts and contacts, but not for other types of records. If you want the system to detect duplicates for other record types, you'll need to create a new duplicate detection rule.  
+To maintain the integrity of your data, it's a good idea to have rules in place to reduce duplicate records in the system. The model-driven apps and the customer engagement apps (such as Dynamics 365 Sales and Dynamics 365 Customer Service) include default duplicate detection rules for accounts and contacts, but not for other types of records. If you want the system to detect duplicates for other record types, you'll need to create a new duplicate detection rule. After you've created duplicate detection rules, you need to turn on the rules.  
   
- After you've created duplicate detection rules, you need to turn on the rules.  
-  
-1. [!INCLUDE[proc_permissions_mgr_vp_sys_admin_sys_cust](../includes/proc-permissions-mgr-vp-sys-admin-sys-cust.md)]  
-  
-    Check your security role  
-  
-   1. [!INCLUDE[proc_follow_steps_in_link](../includes/proc-follow-steps-in-link.md)]  
-  
-   2. [!INCLUDE[proc_dont_have_correct_permissions](../includes/proc-dont-have-correct-permissions.md)]  
-  
-2. Sign in to the [Power Platform admin center](https://aka.ms/ppac) and select an environment.
+[!INCLUDE[proc_permissions_mgr_vp_sys_admin_sys_cust](../includes/proc-permissions-mgr-vp-sys-admin-sys-cust.md)] To check your security role, see [View your user profile](/powerapps/user/view-your-user-profile). If you don’t have the correct permissions, contact your system administrator.
 
-3. Select **Settings** > **Data management** > **Duplicate detection rules**.
+## [New admin center](#tab/new)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. In the **Environments** page, select an environment.
+1. Select **Settings** in the command bar.
+1. Expand **Data management**, and then select **Duplicate detection rules**. 
 
-    :::image type="content" source="media/dup-detection-rule.png" alt-text="Create or manage duplicate detection rule":::  
+## [Classic admin center](#tab/classic)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, **Environments**.
+1. In the **Environments** page, select an environment.
+1. Select **Settings** in the command bar.
+1. Expand **Data management**, and then select **Duplicate detection rules**. 
+---
 
-4. To create a new duplicate detection rule, select **New**. Type a name and description.  
+1. To create a new duplicate detection rule, select **New**. Type a name and description.  
   
     –OR–  
   
@@ -40,7 +43,7 @@ To maintain the integrity of your data, it's a good idea to have rules in place 
   
     To edit a published duplicate detection rule, select the rule. On the **Actions** menu, select **Unpublish**, and then select the rule.  
   
-5. Select the criteria to be used to identify a record as a duplicate.  
+2. Select the criteria to be used to identify a record as a duplicate.  
   
    1. If you're creating a new rule:  
   
@@ -68,8 +71,6 @@ To maintain the integrity of your data, it's a good idea to have rules in place 
    >  If the duplicate detection rule contains only one condition, blank values are ignored during duplicate detection job and they do not work when the user is offline.
   
     The number of criteria that you can select is limited by the number of characters that can be stored in the matchcode for the record. As you add criteria, watch the **Current matchcode length** value shown at the bottom of the criteria list.  
-  
-   ![Example duplicate detection rule.](../admin/media/cc-duplicate-detection-rule-cc-duplicate-detection-rule.PNG "Example duplicate detection rule")  
   
 6. When you're finished adding criteria, select **Save and Close**.  
   
