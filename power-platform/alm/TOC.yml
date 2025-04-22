@@ -73,10 +73,10 @@
       items:
         - name: Manage solutions using PowerShell
           href: powershell-api.md
-        - name: Source control integration (preview)
+        - name: Source control integration 
           href: git-integration/overview.md
           items:
-            - name: Dataverse Git integration setup
+            - name: Connect to Git
               href: git-integration/connecting-to-git.md
             - name: Source control operations
               href: git-integration/source-control-operations.md   
