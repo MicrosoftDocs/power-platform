@@ -4,7 +4,7 @@ description: "This article discusses the integration of Dataverse with Git, focu
 author: caburk
 ms.subservice: alm
 ms.author: matp
-ms.date: 10/29/2024
+ms.date: 04/21/2025
 ms.custom: 
 ms.topic: article
 ms.reviewer: tapanm
@@ -27,7 +27,7 @@ The source control screen provides a list of **Changes** available to commit fro
 
 ## Conflict resolution
 
-The system detects if there are conflicting changes to your source repository. It lists these issues on the **conflicts** tab. You should resolve all conflicts before pulling or committing. Select each conflict listed, then choose to **keep existing changes** if you want to keep the changes originated in your environment or **accept incoming changes** if you want to accept the changes that were made in your source code repository. 
+The system detects if there are conflicting changes to your source repository. It lists these issues on the **conflicts** tab. You should resolve all conflicts before pulling or committing. Select each conflict listed, then choose to **keep existing changes** if you want to keep the changes originated in your environment or **accept incoming changes** if you want to accept the changes that were made in your source code repository.
 
 If you choose to keep existing changes, those objects are moved to the **Changes** tab and are available to commit to your source code repository. If you choose to accept incoming changes, those objects are moved to the **Updates** tab and are available to pull into your environment. Making the selection in the **Conflicts** tab doesn't perform any immediate action with source control, but it resolves the conflict so that your next pull or commit action performs the changes that you selected without further conflict.
 
@@ -35,7 +35,7 @@ If you choose to keep existing changes, those objects are moved to the **Changes
 
 To import updates available from your source control repository into your environment, switch to the **Updates** tab and click **Check for updates**. Next, review the updates available, and then select **Pull** on the command bar. We recommend that you validate the application experiences that might have been impacted by those incoming changes.
 
-If an object was deleted in Git, you'll be promted to either remove the object from your solution (object remains in the environment) or delete the object from your environment. This is necessary before updates are pulled from Git. 
+If an object was deleted in Git, you'll be promted to either remove the object from your solution (object remains in the environment) or delete the object from your environment. This is necessary before updates are pulled from Git.
 
 ## Commit changes to source control repository
 
@@ -49,6 +49,5 @@ Once your changes are committed, you can either navigate directly to Azure DevOp
 ### Next steps
 
 [Dataverse Git integration setup](/power-platform/alm/git-integration/connecting-to-git)  
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

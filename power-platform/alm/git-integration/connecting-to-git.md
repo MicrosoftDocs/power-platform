@@ -4,7 +4,7 @@ description: "This article discusses the integration of Dataverse with Git, focu
 author: caburk
 ms.subservice: alm
 ms.author: matp
-ms.date: 10/29/2024
+ms.date: 04/21/2025
 ms.custom: 
 ms.topic: article
 ms.reviewer: tapanm
@@ -16,11 +16,11 @@ ms.contributors:
 
 Git integration is initiated from Power Platform in the **Solutions** area within [Power Apps](https://make.powerapps.com), [Copilot Studio](https://copilotstudio.microsoft.com), [Power Automate](https://make.powerautomate.com), and [Power Pages](https://make.powerpages.microsoft.com). This article discusses connecting environments and solutions to an Azure DevOps Git repository.
 
-As the team develops, customizations within an environment can be committed to Git and changes made within Git can be pulled into connected environments. 
+As the team develops, customizations within an environment can be committed to Git and changes made within Git can be pulled into connected environments.
 
 ## Prerequisites for Git integration with Dataverse
 
-- Dataverse Git integration feature of [Managed Environments](../../admin/managed-environment-overview.md). Development and target environments must be enabled as Managed Environments. 
+- Dataverse Git integration feature of [Managed Environments](../../admin/managed-environment-overview.md). Development and target environments must be enabled as Managed Environments.
 - An Azure DevOps subscription and licenses for users who interact with source control are required when connecting your Dataverse environment to Git.
 
    > [!NOTE]
@@ -46,14 +46,14 @@ Connecting to Git binds solutions in your environment to a specific location and
 1. Enable all development and target environments as Managed Environments within the [Power Platform Admin Center](https://admin.powerplatform.microsoft.com/).
 1. Sign in to [Power Apps](https://make.powerapps.com) and then go to **Solutions**.
 1. On the **Solutions** page, or the **Source control** page within a custom unmanaged solution, select **Connect to Git**.
-1. Select either [**Environment**](#environment-binding) or [**Solution**](#solution-binding) from the connection type options, and select your Azure DevOps organization and project. 
+1. Select either [**Environment**](#environment-binding) or [**Solution**](#solution-binding) from the connection type options, and select your Azure DevOps organization and project.
    For more information about the differences between environment and solution binding, go to [the following section](#how-to-choose-between-environment-and-solution-binding).
-1. Depending on your binding type, you can select a project, repository, or branch and enter a folder to bind the environment or solution to. 
+1. Depending on your binding type, you can select a project, repository, or branch and enter a folder to bind the environment or solution to.
 1. Optionally, create a new branch.
 1. Select **Connect**.
 
    > [!NOTE]
-   > By design, the Default solution and Common Data Service Default Solution cannot be connected to Git. The best practice is developing in custom solutions. 
+   > By design, the Default solution and Common Data Service Default Solution cannot be connected to Git. The best practice is developing in custom solutions.
 
 ### How to choose between environment and solution binding
 
@@ -88,35 +88,37 @@ To validate your connection to Git, create a new solution or make changes to an 
 Now you can view the changes made to the solution and can commit and push the changes to the repository as well as view the current branch your solution is bound to.
 
 ## Disconnect from Git
-Environments and solutions can be disconnected and then reconnected to different Git locations. 
-With environment and solution binding, all solutions can be disconnected. With solution binding, you can also disconnect a specific solution. 
 
-### Disconnect all solutions 
+Environments and solutions can be disconnected and then reconnected to different Git locations.
+With environment and solution binding, all solutions can be disconnected. With solution binding, you can also disconnect a specific solution.
+
+### Disconnect all solutions
+
 1. On the **Solutions** page select **Git connection** (Environment binding) or **Connect to Git** (Solution binding)
 1. Select **Disconnect all solutions from Git**
 1. Select **Continue** on the confirmation dialog.
 
 ### Disconnect a specific solution
+
 1. On the **Solutions** or **Source control** pages, select **Git connection**
 1. Select **Disconnect solution from Git**
 1. Select **Continue** on the confirmation dialog.
 
 ## Connect multiple Development Environments to Git
-Multiple development environments can be connected to the same Git location. This provides developer isolation with the ability to quickly push your changes to Git and pull others' changes into your environment. 
+
+Multiple development environments can be connected to the same Git location. This provides developer isolation with the ability to quickly push your changes to Git and pull others' changes into your environment.
 
 > [!IMPORTANT]
-> Every environment must be connected with the same binding type, Repository, Branch, and Git folder. 
+> Every environment must be connected with the same binding type, Repository, Branch, and Git folder.
 
 1. Export desired solution(s) as Unmanaged from the original development environment, then Import into the second environment.
 1. Alternatively, create a solution in the second environment with the same exact name and publisher.
 1. In other environment(s), repeat the above **Connect to Git** steps. Use the same Connection type (binding), Organization, Project, Repository, Branch, and Git Folder.
 
-Now you can synchronize changes across multiple environments. 
-
+Now you can synchronize changes across multiple environments.
 
 ## Next steps
 
 After your environments and solutions are connected to Git, you can start making changes to your solutions and committing those changes to the repository. For more information about source control operations, go to [Source control repository operations (preview)](source-control-operations.md).
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

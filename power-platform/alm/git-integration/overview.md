@@ -4,7 +4,7 @@ description: "This article discusses the integration of Dataverse with Git, focu
 author: caburk
 ms.subservice: alm
 ms.author: matp
-ms.date: 10/29/2024
+ms.date: 04/21/2025
 ms.custom: 
 ms.topic: article
 ms.reviewer: matp
