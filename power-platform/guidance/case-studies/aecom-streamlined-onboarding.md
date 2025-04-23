@@ -14,7 +14,7 @@ ms.date: 04/22/2025
 
 In this article, you learn from a real-world example how [AECOM](https://aecom.com/), a global leader in infrastructure development, simplifies project onboarding with Power Platform, Microsoft Azure, and Microsoft Fabric. AECOM manages a wide range of projects, including transportation systems, water supply, waste management, energy systems, and public buildings. These projects are significant in scale and complexity, which requires effective coordination across various disciplines and stakeholders.
 
-> “I've seen firsthand how the integration of cutting-edge-technology with engineering excellence transform the solutions we deliver to clients."
+> I've seen firsthand how the integration of cutting-edge-technology with engineering excellence transform the solutions we deliver to clients.
 >
 > -*Steve Harrison, Vice President of AECOM MEA's Building Engineering Team*
 
@@ -24,7 +24,9 @@ To automate the process of adding project team members to multiple platforms, AE
 
 AECOM needed to manage onboarding project members across multiple technology platforms for their complex engineering projects in the Middle East and Africa (MEA) region. As projects grew in scope and complexity, information managers ensured all team members were onboarded to the right technology platform, reducing delays and enabling engineering teams to start work seamlessly and optimize efficiency. A streamlined, centralized solution became critical, especially as more projects came online. Key roles included information managers, designers, and the digital team.
 
-> AECOM Digital Director of MEA, Martin Angus, said, “As a company committed to leveraging Microsoft products, we believe that Microsoft technologies are instrumental in driving our digital transformation journey.”
+> As a company committed to leveraging Microsoft products, we believe that Microsoft technologies are instrumental in driving our digital transformation journey.
+>
+> -Martin Angus, AECOM Digital Director of MEA
 
 With the implementation of the Project Connect application, AECOM addressed several challenges that hindered efficiency and productivity:
 
@@ -40,7 +42,9 @@ With the implementation of the Project Connect application, AECOM addressed seve
 
 :::image type="content" source="media/aecom-streamlined-onboarding/team.png" alt-text="Screenshot of a group of men with glasses. AI-generated content may be incorrect." lightbox ="media/aecom-streamlined-onboarding/team.png":::
 
-> “We needed a solution that would enable our information managers to efficiently onboard project members across various technologies and multiple projects. With Microsoft Power Platform, integrated with Azure and Microsoft Fabric, we discovered the perfect solution to streamline and optimize the entire process” - Abdullah Tanvir, AECOM.
+> We needed a solution that would enable our information managers to efficiently onboard project members across various technologies and multiple projects. With Microsoft Power Platform, integrated with Azure and Microsoft Fabric, we discovered the perfect solution to streamline and optimize the entire process.
+>
+> -Abdullah Tanvir, AECOM.
 
 ## Solution
 
@@ -91,7 +95,7 @@ If an icon appears next to a project name, it indicates that the user has access
 ## Admin screen (model-driven app)
 
 The Project Connect Admin screen is created using the Power Apps model-driven app design. The Admin screen lets information managers set up projects for the Project Connect app. Relevant details, like the Revizto Project ID and Autodesk Project ID, are entered on the Admin screen. Afterward, the project is ready for onboarding through the app. 
-- To ensure the project is visible in the projects list, the '**Project_Onboarding** **_Setup**' field is set to **Yes**.
+- To ensure the project is visible in the projects list, the `Project_Onboarding_Setup` field is set to **Yes**.
 
 :::image type="content" source="media/aecom-streamlined-onboarding/admin-screen.png" alt-text="Screenshot of the Project Connect Admin screen showing fields for Revizto Project ID and Autodesk Project ID." lightbox = "media/aecom-streamlined-onboarding/admin-screen.png":::
 
