@@ -52,11 +52,13 @@ Power Apps operational health metrics and recommendations are available in the n
 
 ## Monitoring experiences for makers
 
-When [tenant-level analytics](../tenant-level-analytics.md) are turned on, metrics and logs are available to makers. Makers can view only metrics and logs for which they have edit privileges. Two environment-level settings control what analytics information is available to makers. The first setting controls whether makers can view any analytics data in monitoring experiences, including metrics and logs. The second setting controls whether makers can view End User Pseudonymous Identifiers (EUPI) such as session IDs and user object IDs in event logs.
+When [tenant-level analytics](../tenant-level-analytics.md) are turned on, metrics and logs are available to makers. Makers can view only metrics and logs for which they have edit privileges. 
+
+Two environment-level settings, described in the following sections, control what analytics information is available to makers. The first setting controls whether makers can view any analytics data in monitoring experiences, including metrics and logs. The second setting controls whether makers can view End User Pseudonymous Identifiers (EUPI) such as session IDs and user object IDs in event logs.
 
 ### Turn on the monitoring experiences for makers
 
-The following [Power Platform Administrator](https://www.powershellgallery.com/packages/Microsoft.PowerApps.Administration.PowerShell/2.0.200) PowerShell cmdlets can be used to control what monitoring data is available to makers.
+The following [Power Platform Administrator PowerShell](https://www.powershellgallery.com/packages/Microsoft.PowerApps.Administration.PowerShell/2.0.200) cmdlets can be used to control what monitoring data is available to makers.
 
 #### Get settings values for maker access to analytics data
 
