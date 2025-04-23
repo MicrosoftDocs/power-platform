@@ -4,7 +4,7 @@ description: Learn more about the metrics and recommendations for Power Apps.
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/22/2025
+ms.date: 04/23/2025
 ms.custom: NewPPAC
 author: alaug
 ms.author: alaug
@@ -23,7 +23,7 @@ contributors:
 
 Power Apps operational health metrics and recommendations are available in the new Power Platform admin center.
 
-## View metrics and recommendations
+## View Power Apps metrics and recommendations
 
  1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
  1. In the navigation pane, select **Monitor**.
@@ -37,21 +37,20 @@ Power Apps operational health metrics and recommendations are available in the n
 |Type | Metric | Definition |
 |---|---|---|
 |Canvas apps | App open success rate| A percentage that describes how often end users are able to successfully open the app. |
-|Canvas apps| Time to interactive (TTI)| The time (in seconds) that end users have to wait to interact with the first screen displayed after the app opens. |
-|Canvas apps| Time to full load (TTFL) | The time (in seconds) that end users have to wait to have all the data requests for the first screen displayed after the app opens. |
+|Canvas apps| Time to interactive (TTI)| The time (in seconds) that end users have to wait to interact with the first screen that's displayed after the app opens. |
+|Canvas apps| Time to full load (TTFL) | The time (in seconds) that end users have to wait to have all the data requests for the first screen that's displayed after the app opens. |
 
 
 ### Metric and recommendation pairings
-| Metric | Secondary metric | Recommendation title | Recommendation description |
+| Metric | Secondary metric | Recommended title | Recommended description |
 |---|---|---|---|
-| App Open Success Rate | ErrorCode = AppForbidden | Evaluate if the app should be shared with users without permiission | "X% of sessions ended without users accessing the app because users didn't have permission to access the app. It's possible that the app may benefit from being shared with more users. The logs show which users without permission are attempting to open the app." |
+| App Open Success Rate | ErrorCode = AppForbidden | Evaluate if the app should be shared with users without permiission | X% of sessions ended without users accessing the app because users didn't have permission to access the app. It's possible that the app may benefit from being shared with more users. The logs show which users&mdash;without permissions&mdash;are attempting to open the app. |
 | Time to interactive || Coming soon | Coming soon |
 | Time to full load || Coming soon | Coming soon |
 
-
 ## Monitoring experiences for makers
 
-When tenant-wide analytics are turned on, metrics and logs are available to makers. Makers can view only metrics and logs that they have edit privileges for. Two environment-level settings control what analytics information is available to makers. The first setting controls whether makers can view any analytics data in monitoring experiences, including metrics and logs. The second setting controls whether makers can view End User Pseudonymous Identifiers (EUPI) such as session IDs and user object IDs in event logs.
+When tenant-wide analytics are turned on, metrics and logs are available to makers. Makers can view only metrics and logs for which they have edit privileges. Two environment-level settings control what analytics information is available to makers. The first setting controls whether makers can view any analytics data in monitoring experiences, including metrics and logs. The second setting controls whether makers can view End User Pseudonymous Identifiers (EUPI) such as session IDs and user object IDs in event logs.
 
 ### Turn on the monitoring experiences for makers
 
@@ -66,7 +65,7 @@ Get-AdminPowerAppEnvironmentMakerAnalyticsSettings -EnvironmentName
 
 #### Turn on maker access to analytics data
 
-This setting doesn't include availability of EUPI such as the session IDs and user object IDs in event logs.
+This setting doesn't include availability of EUPI, such as the session IDs and user object IDs in event logs.
 
 ```PowerShell
 Set-AdminPowerAppEnvironmentMakerAnalyticsSettings -EnvironmentName
@@ -75,7 +74,7 @@ Set-AdminPowerAppEnvironmentMakerAnalyticsSettings -EnvironmentName
 
 #### Turn on maker access to session IDs and user object IDs in event logs
 
-This setting controls maker access to EUPI such as session IDs or user object IDs in event logs.
+This setting controls maker access to EUPI, such as session IDs or user object IDs in event logs.
 
 ```PowerShell
 Set-AdminPowerAppEnvironmentMakerAnalyticsSettings -EnvironmentName
@@ -84,7 +83,7 @@ Set-AdminPowerAppEnvironmentMakerAnalyticsSettings -EnvironmentName
 
 ## Frequently asked questions
 
-### Why do makers in my organizations receive a message that settings must be enabled for their monitoring experience?
+### Why do makers in my organizations receive a message that settings must be turned on for their monitoring experience?
 
 In addition to the tenant-level analytics setting, the environment-level **Analytics data available to Makers** setting must be turned on. The availability of monitoring health metrics, logs, and recommendations in maker monitoring experiences is based on tenant and environment settings.
 
