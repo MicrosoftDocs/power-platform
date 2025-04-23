@@ -6,6 +6,7 @@ ms.topic: conceptual
 ms.date: 02/12/2025
 ms.reviewer: sericks
 ms.subservice: admin
+ms.custom: NewPPAC
 ms.author: sericks
 contributors:
   - marcelbf
@@ -111,24 +112,29 @@ You can create environments for different purposes. A trial environment is for t
 
 ## Manage environments in the Power Platform admin center
 
-You can view and manage your environments on the **Environments** page in the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+You can view and manage your environments in the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
-> [!div class="mx-imgBorder"]
-> ![Environment list.](media/environment-list.png "Environment list")
-
-You can sort and search the list of environments; this is useful if you have a large number of environments to manage.
+### [New admin center](#tab/new)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. In the **Environments** page, select an environment.
+1. You can sort and search the list of environments; this is useful if you have a large number of environments to manage.
+   
+### [Classic admin center](#tab/classic)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, **Environments**.
+1. In the **Environments** page, select an environment.
+1. You can sort and search the list of environments; this is useful if you have a large number of environments to manage.
+---
 
 ### Environment details
 
-Select an environment to view the details of that environment, including the URL, region it's hosted in, and version. Select **See all** to see more environment details.
+Select an environment to view the details of that environment, including the URL, type, current state, region it's hosted in. 
 
-> [!div class="mx-imgBorder"]
-> ![Environment details.](media/environment-details-see-all.png "Environment details")
-
-Select **Edit** to review and edit environment details.
-
-> [!div class="mx-imgBorder"]
-> ![More environment details.](media/environment-details-more.png "More environment details")
+In the Details pane:
+- Select **See all** to see more environment details. 
+- Select **Edit** to review and edit environment details.
 
 ## Environment location
 
@@ -178,13 +184,19 @@ Environment history gives admins a timeline of the full environment lifecycle fr
 
 To see the environment history:
 
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as an admin.
-
-2. Select **Environments**, and then select an environment from the list.
-
-3. On the command bar, select **History**.
-
-:::image type="content" source="media/environment-history-data.png" alt-text="Environment history data":::
+### [New admin center](#tab/new)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. In the **Environments** page, select an environment.
+1. Select **History** in the command bar.
+   
+### [Classic admin center](#tab/classic)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, **Environments**.
+1. In the **Environments** page, select an environment.
+1. Select **History** in the command bar.
+---
 
 > [!NOTE]
 >
