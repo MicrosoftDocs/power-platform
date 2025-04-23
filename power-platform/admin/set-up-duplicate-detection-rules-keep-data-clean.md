@@ -14,7 +14,7 @@ ms.author: sericks
 
 [!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
-To maintain the integrity of your data, it's a good idea to have rules in place to reduce duplicate records in the system. The model-driven apps and the customer engagement apps (such as Dynamics 365 Sales and Dynamics 365 Customer Service) include default duplicate detection rules for accounts and contacts, but not for other types of records. If you want the system to detect duplicates for other record types, you'll need to create a new duplicate detection rule. After you've created duplicate detection rules, you need to turn on the rules.  
+To maintain the integrity of your data, it's a good idea to have rules in place to reduce duplicate records in the system. Model-driven apps and customer engagement apps (such as Dynamics 365 Sales and Dynamics 365 Customer Service) include default, duplicate detection rules for accounts and contacts, but not for other types of records. If you want the system to detect duplicates for other record types, you need to create a new duplicate detection rule. After you've created duplicate detection rules, you can turn on the rules.  
   
 [!INCLUDE[proc_permissions_mgr_vp_sys_admin_sys_cust](../includes/proc-permissions-mgr-vp-sys-admin-sys-cust.md)] To check your security role, see [View your user profile](/powerapps/user/view-your-user-profile). If you don’t have the correct permissions, contact your system administrator.
 
@@ -44,7 +44,7 @@ To maintain the integrity of your data, it's a good idea to have rules in place 
   
     To edit a published duplicate detection rule, select the rule. On the **Actions** menu, select **Unpublish**, and then select the rule.  
   
-2. Select the criteria to be used to identify a record as a duplicate.  
+1. Select the criteria to be used to identify a record as a duplicate.  
   
    1. If you're creating a new rule:  
   
@@ -73,9 +73,9 @@ To maintain the integrity of your data, it's a good idea to have rules in place 
   
     The number of criteria that you can select is limited by the number of characters that can be stored in the matchcode for the record. As you add criteria, watch the **Current matchcode length** value shown at the bottom of the criteria list.  
   
-6. When you're finished adding criteria, select **Save and Close**.  
+1. When you're finished adding criteria, select **Save and Close**.  
   
-7. To make the new or changed duplicate detection rule usable, select the rule, and then select **Publish**.  
+1. To make the new or changed duplicate detection rule usable, select the rule, and then select **Publish**.  
   
     When you publish a duplicate detection rule, a matchcode is created for every record in the matching record type for that rule. You can publish only five rules for the same base record type (Account, for example) at a time. You might need to delete or unpublish an existing rule if you bump up against this limit.  
   
@@ -84,7 +84,7 @@ To maintain the integrity of your data, it's a good idea to have rules in place 
 > - We recommend that you set the duplicate detection criteria on a field that has unique values, for example, **Email**.  
 > - You can have more than one duplicate detection rule for each record type.  
   
-### See also  
+### Related content
 
  [Turn duplicate detection rules on or off for the whole organization](../admin/turn-duplicate-detection-rules-off-whole-organization.md)<br />
  [Run bulk system jobs to detect duplicate records](../admin/run-bulk-system-jobs-detect-duplicate-records.md)<br />
