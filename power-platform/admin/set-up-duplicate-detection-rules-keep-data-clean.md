@@ -71,7 +71,7 @@ To maintain the integrity of your data, it's a good idea to have rules in place 
        > [!IMPORTANT]
        >  If the duplicate detection rule contains only one condition, blank values are ignored during duplicate detection job and they do not work when the user is offline.
   
-    The number of criteria that you can select is limited by the number of characters that can be stored in the matchcode for the record. As you add criteria, watch the **Current matchcode length** value shown at the bottom of the criteria list.  
+      The number of criteria that you can select is limited by the number of characters that can be stored in the matchcode for the record. As you add criteria, watch the **Current matchcode length** value shown at the bottom of the criteria list.  
   
 1. When you're finished adding criteria, select **Save and Close**.  
   
