@@ -55,9 +55,9 @@ Admin experiences are available to Power Platform service and Dynamics 365 admin
 
 :::image type="content" source="../media/monitoring-architecture.svg" alt-text="Diagram that shows the flow of monitoring data to both a maker and an admin, starting from users in the runtime environment." lightbox="../media/monitoring-architecture.svg":::
 
-## Purpose of the Monitor page
+## Purpose of Monitor area of the Power Platform admin center
 
-The purpose of the **Monitor** > **Overview** page is to bring attention to resources that have degraded operational health and highlight resources that have opportunities for improvement.  
+The purpose of the **Monitor** area of the Power Platform admin center is to bring attention to resources that have degraded operational health and highlight resources that have opportunities for improvement.  
 
 The first resources that appear in the monitoring experience are resources that were created by using Power Platform products like Power Apps or Power Automate. Therefore, the cards initially highlight resources where users experience the following issues:
 
@@ -116,6 +116,6 @@ Application Insights contains a superset of runtime event logs.
 - Event logs in the monitoring experiences are available for only up to seven days.
 - Metrics are available for only up to 28 days.
 
-## Related information
+## Related content
 
 [Overview of integration with Application Insights](../overview-integration-application-insights.md)
