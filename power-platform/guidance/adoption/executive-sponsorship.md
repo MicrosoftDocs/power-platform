@@ -1,11 +1,11 @@
 ---
 title: Get executive sponsorship
-description: Learn how to get executive buy-in for Power Platform adoption and understand the role of an executive sponsor in driving successful implementation.
+description: Learn how to secure executive sponsorship for Power Platform adoption and understand the critical role of a sponsor in driving organizational success.
 #customer intent: As an business leader, I want to learn how to identify an executive sponsor so that I can ensure support for Power Platform projects.
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 03/07/2025
+ms.date: 04/23/2025
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
@@ -36,7 +36,7 @@ Adopting Power Platform is more than just a technology project. It's important t
 
 - Formulating a [strategic vision](vision.md) and priorities for Power Platform and low code.
 - Allocating staffing and prioritizing resources.
-- Approving funding, for example, Power Apps user licenses or AI Builder credits.
+- Approving funding, for example, Power Apps user licenses.
 - Communicating announcements that are of critical importance.
 - Making decisions.
 - Resolving resistance on issues that can't be resolved by operational or tactical personnel.
@@ -46,15 +46,15 @@ Adopting Power Platform is more than just a technology project. It's important t
 
 There are multiple ways to identify an executive sponsor:
 
-- **Top-down:** The Chief Executive Officer (CEO) might nominate the Chief Information Officer (CIO) or head of digital transformation to advance  low-code adoption. Having an executive sponsor at the C-level indicates that the organization recognizes the importance of Power Platform as a strategic asset.
+- **Top-down:** The Chief Executive Officer (CEO) might nominate the Chief Information Officer (CIO) or Head of Digital Transformation to advance low-code adoption. Having an executive sponsor at the C-level indicates that the organization recognizes the importance of Power Platform as a strategic asset.
 
-- **Bottom-up:** An executive sponsor could emerge through the success they've experienced with Power Platform. For example, a department such as marketing has accomplished great business value with the use of Power Platform. A leader in that department might then grow into the executive sponsor role by sharing successes with other departments across the organization.
+- **Bottom-up:** An executive sponsor could emerge through the success they've experienced with Power Platform. For example, a department such as Marketing has accomplished great business value with the use of Power Platform. A leader in that department might then grow into the executive sponsor role by sharing successes with other departments across the organization.
 
     The challenge with this approach is that the sponsor doesn't have formal influence over other business units, and may experience challenges that are beyond their level of influence. Although initial successes can be achieved with a bottom-up approach, the recommendation is to seek a C-level sponsor.
 
 ## Considerations
 
-The following considerations can help you identify and engage an executive sponsor:
+To help identify and engage an executive sponsor:
 
 - **Identify an executive sponsor with broad authority**: Select an executive sponsor in a position of influence and authority across organizational boundaries who understands the value and impact of Power Platform. It's important that the executive sponsor has an interest in the success of low-code and Power Platform in the organization.
 - **Involve your executive sponsor**: Ensure your executive sponsor is consistently engaged in all strategic-level governance decisions related to Power Platform.

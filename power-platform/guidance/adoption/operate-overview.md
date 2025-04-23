@@ -1,5 +1,5 @@
 ---
-title: Power Platform operations - Overview and strategy
+title: Power Platform operations overview and strategy
 description: Learn how to achieve operational excellence with Power Platform by following best practices for lifecycle management, observability, and data resilience.
 #customer intent: As a Power-Platform user, I want to understand operational best practices for Power Platform so that I can ensure stability and minimize disruptions.
 author: manuelap-msft
@@ -8,10 +8,10 @@ ms.topic: concept-article
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
-ms.date: 03/31/2025
+ms.date: 04/23/2025
 ---
 
-# Power Platform operations - Overview and strategy
+# Power Platform operations overview and strategy
 
 Microsoft Power Platform is transforming how organizations deliver modern AI-powered customer experiences, improved employee satisfaction, and business results. Customers increasingly rely on Power Platform to run global-scale, mission critical workloads, where the risk and business impact of failure are high. These workloads demand operational excellence: highly controlled change management to avoid unexpected disruptions to stability and quality, deep insights into ongoing operations to detect and resolve issues, and resiliency to recover from failures.
 

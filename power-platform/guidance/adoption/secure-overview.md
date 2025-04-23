@@ -1,17 +1,17 @@
 ---
-title: Security overview
+title: Security overview and strategy
 description: Develop a robust Power Platform security strategy with our comprehensive guide. Learn how to protect your data, applications, and users effectively.
 #customer intent: As a Power Platform user, I want to assess my security posture so that I can identify potential vulnerabilities.
 author: manuelap-msft
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
-ms.date: 02/28/2025
+ms.date: 04/23/2025
 ---
 
-# Secure overview
+# Security overview and strategy
 
 In today's digital age, the potential for innovation through AI-driven use of organizational data is greater than ever. However, the effort to maintain enterprise-level security and the complexity of cyber threats increase. IT administrators must balance the immense technological advancements offered by AI with the critical need to secure data, applications, and users.
 

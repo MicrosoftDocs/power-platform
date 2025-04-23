@@ -1,11 +1,11 @@
 ---
 title: Microsoft Power Platform adoption guidance
 description: Discover how Microsoft Power Platform adoption guidance helps organizations align business and technical strategies for successful implementation.
-#customer intent: As a Power Platform user, I want to understand adoption strategies so that I can manage and secure the platform effectively.
+#customer intent: As a business leader, I want to understand adoption strategies so that I can manage and secure the platform effectively.
 author: manuelap-msft
 ms.component: pa-admin
-ms.topic: conceptual
-ms.date: 04/07/2025
+ms.topic: overview
+ms.date: 04/23/2025
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
@@ -14,16 +14,16 @@ ms.reviewer: pankajsharma2087
 
 # Microsoft Power Platform adoption guidance
 
-Microsoft Power Platform adoption guidance helps you create and implement business and technology strategies for success with Microsoft Power Platform. This guidance provides recommendations for Power Platform Center of Excellence leads, Power Platform admins, Chief Information Security Officers (CISOs), IT operations and support, and business decision makers to achieve short-term and long-term objectives.
+Microsoft Power Platform adoption guidance helps you create and implement business and technology strategies for success with Microsoft Power Platform. This guidance provides recommendations for Power Platform Center of Excellence (or Center of Enablement) leads, Power Platform admins, Chief Information Security Officers (CISOs), IT operations and support, and business decision makers to achieve short-term and long-term objectives.
 
 > [!TIP]
 > In addition to the material found in this documentation, a great resource for your adoption journey is the [Microsoft Power Platform Adoption](https://adoption.microsoft.com/powerplatform) website, with links to resources and workbooks that guide you step by step through your Power Platform adoption.
 
 Microsoft Power Platform adoption guidance helps organizations align business and technical strategies for success.
 
-The Microsoft Power Platform adoption guidance helps establish "digital guardrails" for the platform within an enterprise. This approach lets professional and citizen developers build solutions confidently, knowing they are managed, secured, and compliant with best practices. A key objective is creating an environment—both technically and culturally speaking—in which your users can thrive.
+The Microsoft Power Platform adoption guidance helps establish "digital guardrails" for the platform within an enterprise. This approach lets professional and citizen developers build solutions confidently, knowing that what they build is managed, secured, and compliant with best practices. A key objective is creating an environment—both technically and culturally speaking—in which your users can thrive.
 
-Microsoft Power Platform adoption guidance includes documentation, recommendations, and templates to accelerate your adoption journey. It provides tools, guidance, and narratives to shape technology, business, and people strategies for achieving desired business outcomes.
+Microsoft Power Platform adoption guidance includes documentation, recommendations, and templates proven to accelerate your adoption journey. It provides tools, guidance, and narratives to shape technology, business, and people strategies for achieving desired business outcomes.
 
 This guidance aligns with the following pillars and responsibilities for adoption.
 
@@ -37,8 +37,6 @@ This guidance aligns with the following pillars and responsibilities for adoptio
 | :::image source="../media/availability.svg" type="icon"::: [Availability](availability-overview.md) | Plan for failures and build a disaster recovery plan. |
 | :::image source="../media/innovate.svg" type="icon"::: [Readiness](ready-overview.md) | Upskill your makers and envision high-value use cases. |
 | :::image source="../media/nurture.svg" type="icon"::: [Community](nurture-best-practices.md) | Accelerate your adoption with a thriving internal community. |
-
-
 
 ## Intended audiences
 
@@ -57,9 +55,9 @@ This guidance affects the business, technology, and culture of organizations. Th
 - Enterprise architects  
 - Business subject matter experts  
 
-Each role has unique goals and key performance indicators, and specific parts of the guidance apply to different audiences. This collection of guidance helps drive decision-making and ensures every role involved in Power Platform adoption has the right conversations with the right audiences.  
+Each role has unique goals and key performance indicators, and different parts of the guidance are relevant to specific audiences. This collection of guidance helps drive decision-making and ensures every role involved in Power Platform adoption has the right conversations with the right audiences.  
 
-## Related resources
+## Related information
 
 - [Microsoft Power Platform admin documentation](/power-platform/admin/)
 - [Microsoft Power Platform documentation](/power-platform/)
