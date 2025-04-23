@@ -1,14 +1,15 @@
 ---
-title: "Set up duplicate detection rules to keep your data clean  | MicrosoftDocs"
-description: Set up duplicate detection rules to keep your data clean
+title: Set up duplicate detection rules to keep your data clean  
+description: Set up duplicate detection rules to keep your data clean.
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/14/2022
+ms.date: 04/23/2025
 ms.subservice: admin
 ms.custom: NewPPAC
-ms.author: gned
+ms.author: sericks
 ---
+
 # Set up duplicate detection rules to keep your data clean
 
 [!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
