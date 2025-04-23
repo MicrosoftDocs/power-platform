@@ -21,7 +21,9 @@ contributors:
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner.md)]
 [!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
-Your organization can use the **Monitor** area of the Power Platform admin center to measure and improve operational health metrics of resources that are built or deployed. Those resources include apps. The **Monitor** > **Overview** page is available to both makers (in experiences such as [Power Apps](https://make.powerapps.com/)) and admins (in experiences such as the [Power Platform admin center](https://admin.powerplatform.microsoft.com/)). Makers use the data to improve their resources. Admins use it to understand aggregate operational health in the tenant or in specific environments. Metrics are calculated by aggregating daily event logs from runtime activity. Recommendations are calculated from the following sources:
+Your organization can use the **Monitor** area of the Power Platform admin center to measure and improve operational health metrics of resources that are built or deployed. Those resources include apps. 
+
+The **Monitor** > **Overview** page is available to both makers (in experiences such as [Power Apps](https://make.powerapps.com/)) and admins (in experiences such as the [Power Platform admin center](https://admin.powerplatform.microsoft.com/)). Makers use the data to improve their resources. Admins use it to understand aggregate operational health in the tenant or in specific environments. Metrics are calculated by aggregating daily event logs from runtime activity. Recommendations are calculated from the following sources:
 
 - Aggregation of runtime event logs to highlight a measurable opportunity for improving a health metric
 - Static analysis of resource properties that can be changed to improve a health metric
