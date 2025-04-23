@@ -23,6 +23,8 @@ contributors:
 
 Power Apps operational health metrics and recommendations are available in the new Power Platform admin center.
 
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
+
 ## View Power Apps metrics and recommendations
 
  1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
