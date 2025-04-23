@@ -1,7 +1,22 @@
 
 {
   "redirections": [
-  {
+   {
+      "source_path": "power-platform/admin/add-teams-users-field-security-profile.md",
+      "redirect_url": "field-level-security#add-teams-or-users-to-a-column-security-profile-to-control-access",
+      "redirect_document_id": "false"
+   },
+   {
+      "source_path": "power-platform/admin/enable-disable-security-field.md",
+      "redirect_url": "field-level-security#enable-column-security",
+      "redirect_document_id": "false"
+   },
+   {
+      "source_path": "power-platform/admin/set-up-security-permissions-field.md",
+      "redirect_url": "field-level-security#add-teams-or-users-to-a-column-security-profile-to-control-access",
+      "redirect_document_id": "false"
+   },
+   {
       "source_path": "power-platform/admin/wp-work-with-admin-portals.md",
       "redirect_url": "power-platform/admin/admin-documentation",
       "redirect_document_id": "false"
@@ -1116,6 +1131,86 @@
     {
       "source_path": "power-platform/power-fx/formula-reference.md",
       "redirect_url": "/power-platform/power-fx/formula-reference-canvas-apps",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/architecture/real-world-examples/dataverse-canvas-app.md",
+      "redirect_url": "/power-platform/architecture/reference-architectures/dataverse-canvas-app",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/architecture/real-world-examples/pcf-canvas-components.md",
+      "redirect_url": "/power-platform/architecture/reference-architectures/",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/architecture/real-world-examples/sharepoint-canvas.md",
+      "redirect_url": "/power-platform/architecture/reference-architectures/",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/architecture/real-world-examples/sql-gateway-canvas.md",
+      "redirect_url": "/power-platform/architecture/reference-architectures/",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/architecture/real-world-examples/azure-function-canvas.md",
+      "redirect_url": "/power-platform/architecture/reference-architectures/",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/architecture/real-world-examples/overview.md",
+      "redirect_url": "/power-platform/architecture/reference-architectures/",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/architecture/real-world-examples/bpf-dataverse-powerautomate.md",
+      "redirect_url": "/power-platform/architecture/reference-architectures/",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/expressroute/benefits.md",
+      "redirect_url": "/power-platform/architecture/key-concepts/expressroute/benefits",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/expressroute/checklist.md",
+      "redirect_url": "/power-platform/architecture/key-concepts/expressroute/checklist",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/expressroute/how-expressroute-works.md",
+      "redirect_url": "/power-platform/architecture/key-concepts/expressroute/how-expressroute-works",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/expressroute/overview.md",
+      "redirect_url": "/power-platform/architecture/key-concepts/expressroute/overview",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/expressroute/planning-expressroute.md",
+      "redirect_url": "/power-platform/architecture/key-concepts/expressroute/planning-expressroute",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/expressroute/setup.md",
+      "redirect_url": "/power-platform/architecture/key-concepts/expressroute/setup",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/expressroute/things-to-consider.md",
+      "redirect_url": "/power-platform/architecture/key-concepts/expressroute/things-to-consider",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/expressroute/understanding-architecture.md",
+      "redirect_url": "/power-platform/architecture/key-concepts/expressroute/understanding-architecture",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/architecture/real-world-examples/custom-connector-canvas.md",
+      "redirect_url": "/power-platform/architecture/reference-architectures/custom-connector-canvas",
       "redirect_document_id": "false"
     },
     {

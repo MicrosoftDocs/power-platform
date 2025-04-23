@@ -1,11 +1,11 @@
----
+﻿---
 title: App object in Power Apps
 description: Reference information including syntax and examples for the App object in Power Apps.
 author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 3/20/2025
+ms.date: 4/16/2025
 ms.author: gregli
 search.audienceType: 
   - maker
@@ -17,8 +17,9 @@ ms.contributors:
 - anuitz
 ---
 # App object in Power Apps
+[!INCLUDE[object-app-applies-to](includes/object-app-applies-to.md)]
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps
+
 
 Provides information about the currently running app and control over the app's behavior.
 
@@ -49,6 +50,7 @@ Nobody wants to lose unsaved changes. Use the **ConfirmExit** and **ConfirmExitM
 
 > [!NOTE]
 > - **ConfirmExit** doesn't work in apps that are embedded in, for example, Power BI and SharePoint.
+> - **ConfirmExit** is not supported in custom pages. 
 > - Now, these properties can reference controls on only the first screen if the **Delayed load** preview feature is enabled (which it is by default for new apps). If references are made, Power Apps Studio doesn't show an error, but the resulting published app doesn't open in Power Apps Mobile or a browser. We're actively working to lift this limitation. In the meantime, you can turn off **Delayed load** in **Settings** > **Upcoming features** (under **Preview**).
 
 ### ConfirmExit
@@ -405,3 +407,137 @@ Use the **StudioVersion** property to display or log the version of Power Apps S
 **StudioVersion** is returned as text. The format of the text may change over time and should be treated as a whole; avoid extracting individual portions.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

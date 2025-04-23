@@ -12,6 +12,9 @@
     - name: Guidance
       tocHref: /power-platform/guidance/
       topicHref: /power-platform/guidance/index
+    - name: Architecture Center
+      tocHref: /power-platform/architecture/
+      topicHref: /power-platform/architecture/index
     - name: Well-Architected
       tocHref: /power-platform/well-architected/
       topicHref: /power-platform/well-architected/index

@@ -1,4 +1,4 @@
----
+﻿---
 title: ShowHostInfo object in Power Apps
 description: Reference information including syntax and examples for the ShowHostInfo object in Power Apps.
 author: gregli
@@ -13,8 +13,9 @@ contributors:
   - gregli
 ---
 # ShowHostInfo function
+[!INCLUDE[showhostinfo-applies-to](includes/showhostinfo-applies-to.md)]
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps 
+
 
 Show [Host object](object-host.md) information to a user.
 
@@ -39,4 +40,138 @@ When the users selects the Sync icon on their mobile device, a pop-up with the o
 ## Known issue
 - The table column in the available table section shows the table name instead of the display name.
 - The popup on Windows is loaded in full screen.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

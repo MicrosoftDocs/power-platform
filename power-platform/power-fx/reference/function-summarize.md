@@ -1,4 +1,4 @@
----
+﻿---
 title: Summarize function
 description: Reference information including syntax and examples for Summarize function.
 author: gregli-msft
@@ -16,8 +16,9 @@ contributors:
   - gregli
 ---
 # Summarize function
+[!INCLUDE[function-summarize-applies-to](includes/function-summarize-applies-to.md)]
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Pages
+
 
 Summarize [records](/power-apps/maker/canvas-apps/working-with-tables#records) of a [table](/power-apps/maker/canvas-apps/working-with-tables) by grouping on one or more [columns](/power-apps/maker/canvas-apps/working-with-tables#columns).
 
@@ -81,7 +82,7 @@ Summarize( CityPopulations, Country,
 
 The result is this table:
 
-| Country | Total Population | Cities |
+| Country/Region | Total Population | Cities |
 |---------|------------------|--------|
 | United Kingdom | 8615000 | London |
 | Germany | 6816000 | Berlin, Hamburg, Munich |
@@ -120,3 +121,138 @@ Summarize( Inventory, Supplier, Fruit, Average( ThisGroup, Price ) As 'Average P
 | Bananas | Contoso   | 12            |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
