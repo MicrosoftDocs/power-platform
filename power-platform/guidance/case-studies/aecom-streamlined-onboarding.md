@@ -5,7 +5,7 @@ description: Learn how AECOM streamlined project onboarding using Power Platform
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
-ms.subservice: architecture-center
+ms.subservice: guidance
 ms.topic: overview
 ms.date: 04/22/2025
 ---
@@ -14,7 +14,9 @@ ms.date: 04/22/2025
 
 In this article, you learn from a real-world example how [AECOM](https://aecom.com/), a global leader in infrastructure development, simplifies project onboarding with Power Platform, Microsoft Azure, and Microsoft Fabric. AECOM manages a wide range of projects, including transportation systems, water supply, waste management, energy systems, and public buildings. These projects are significant in scale and complexity, which requires effective coordination across various disciplines and stakeholders.
 
-> Steve Harrison, Vice President of AECOM MEA's Building Engineering Team, said, “I've seen firsthand how the integration of cutting-edge-technology with engineering excellence transform the solutions we deliver to clients."
+> “I've seen firsthand how the integration of cutting-edge-technology with engineering excellence transform the solutions we deliver to clients."
+>
+> -*Steve Harrison, Vice President of AECOM MEA's Building Engineering Team*
 
 To automate the process of adding project team members to multiple platforms, AECOM developes the Project Connect application that integrates with SharePoint, Autodesk Construction Cloud (ACC), and Revizto. The application ensures that all necessary permissions and access rights are set up correctly from the start, which allows users to avoid interacting with complex data and data sources.
 
