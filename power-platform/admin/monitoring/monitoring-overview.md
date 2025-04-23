@@ -1,10 +1,10 @@
 ---
-title: Monitor page (preview)
-description: Learn how to use the Monitor page monitor and improve operational health.
+title: Monitor resources (preview)
+description: Learn how to use the Monitor > Overview page to monitor and improve operational health.
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/31/2025
+ms.date: 04/23/2025
 ms.custom: NewPPAC
 author: alaug
 ms.author: alaug
@@ -16,12 +16,12 @@ contributors:
   - trdehove
 ---
 
-# Monitor page (preview)
+# Monitor resources (preview)
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner.md)]
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
-Your organization can use the **Monitor** page to measure and improve operational health metrics of resources that are built or deployed in Microsoft Power Platform. Those resources include apps. The **Monitor** page is available to both makers (in experiences such as [Power Apps](https://make.powerapps.com/)) and admins (in experiences such as the [Power Platform admin center](https://admin.powerplatform.microsoft.com/)). Makers use the data to improve their resources. Admins use it to understand aggregate operational health in the tenant or in specific environments. Metrics are calculated by aggregating daily event logs from runtime activity. Recommendations are calculated from the following sources:
+Your organization can use the **Monitor** area of the Power Platform admin center to measure and improve operational health metrics of resources that are built or deployed. Those resources include apps. The **Monitor** > **Overview** page is available to both makers (in experiences such as [Power Apps](https://make.powerapps.com/)) and admins (in experiences such as the [Power Platform admin center](https://admin.powerplatform.microsoft.com/)). Makers use the data to improve their resources. Admins use it to understand aggregate operational health in the tenant or in specific environments. Metrics are calculated by aggregating daily event logs from runtime activity. Recommendations are calculated from the following sources:
 
 - Aggregation of runtime event logs to highlight a measurable opportunity for improving a health metric
 - Static analysis of resource properties that can be changed to improve a health metric
@@ -49,13 +49,13 @@ The availability of monitoring health metrics, logs, and recommendations in the 
 
 To produce health metrics and generate recommendations, Power Platform monitoring experiences require runtime activity. Unused resources don't appear in monitoring experiences.
 
-Admin experiences are available to Power Platform service and Dynamics 365 admins, who can view monitoring data across the tenant. Makers can view data only for resources that they have edit privileges for in the runtime environment. Power Automate doesn't have a **Monitor** page in the maker portal. However, users can use the [Automation center](/power-automate/automation-center-overview) for a similar experience.
+Admin experiences are available to Power Platform service and Dynamics 365 admins, who can view monitoring data across the tenant. Makers can view data only for resources that they have edit privileges for in the runtime environment. Power Automate doesn't have a monitoring page in the maker portal. However, users can use the [Automation center](/power-automate/automation-center-overview) for a similar experience.
 
 :::image type="content" source="../media/monitoring-architecture.svg" alt-text="Diagram that shows the flow of monitoring data to both a maker and an admin, starting from users in the runtime environment." lightbox="../media/monitoring-architecture.svg":::
 
 ## Purpose of the Monitor page
 
-The purpose of the **Monitor** page is to bring attention to resources that have degraded operational health and highlight resources that have opportunities for improvement.  
+The purpose of the **Monitor** > **Overview** page is to bring attention to resources that have degraded operational health and highlight resources that have opportunities for improvement.  
 
 The first resources that appear in the monitoring experience are resources that were created by using Power Platform products like Power Apps or Power Automate. Therefore, the cards initially highlight resources where users experience the following issues:
 
