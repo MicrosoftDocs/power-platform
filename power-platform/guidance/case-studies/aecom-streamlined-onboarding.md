@@ -127,6 +127,7 @@ The development and implementation of the Project Connect application use a vari
 
 ## Key capabilities
 
+Here are the key capabilities:
 - Onboard users of third-party software, such as ACC and Revizto.
 
 - Bulk onboard users to Microsoft Teams, SharePoint, ACC, and Revizto by using an Excel template.
