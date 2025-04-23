@@ -480,7 +480,7 @@
           items:
             - name: Overview (preview)
               href: monitoring/monitoring-overview.md
-            - name: View logs (preview)
+            - name: View event logs and error logs (preview)
               href: monitoring/logs.md
             - name: Metrics and recommendations
               items:
