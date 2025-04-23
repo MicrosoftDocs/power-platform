@@ -3,7 +3,7 @@ title: Power Platform environments overview
 description: Learn about Power Platform environments and how to use them.
 author: sericks007
 ms.topic: conceptual
-ms.date: 02/12/2025
+ms.date: 04/23/2025
 ms.reviewer: sericks
 ms.subservice: admin
 ms.custom: NewPPAC
@@ -119,13 +119,13 @@ You can view and manage your environments in the [Power Platform admin center](h
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
 1. In the **Environments** page, select an environment.
-1. You can sort and search the list of environments; this is useful if you have a large number of environments to manage.
+   You can sort and search the list of environments; this is useful if you have a large number of environments to manage.
    
 ### [Classic admin center](#tab/classic)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, **Environments**.
 1. In the **Environments** page, select an environment.
-1. You can sort and search the list of environments; this is useful if you have a large number of environments to manage.
+   You can sort and search the list of environments; this is useful if you have a large number of environments to manage.
 ---
 
 ### Environment details
