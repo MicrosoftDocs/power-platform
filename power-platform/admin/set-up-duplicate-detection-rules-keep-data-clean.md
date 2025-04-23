@@ -52,24 +52,24 @@ To maintain the integrity of your data, it's a good idea to have rules in place 
   
        - In the **Matching Record Type** box, select the type of record to compare. In most cases, you'll probably want to use the same record type for **Base Record Type** and **Matching Record Type**. It's also useful to be able to compare different record types. For example, you might want to compare the **Email** field in Contacts to the **Email** field in Leads.  
   
-   2. If you want the rule to consider only active records while detecting duplicates, select the **Exclude inactive matching records** check box. You should also select this check box if your duplicate detection rule criteria are based on a status field.  
+   1. If you want the rule to consider only active records while detecting duplicates, select the **Exclude inactive matching records** check box. You should also select this check box if your duplicate detection rule criteria are based on a status field.  
   
-   3. If you want the rule to be case-sensitive, select the **Case-sensitive** check box.  
+   1. If you want the rule to be case-sensitive, select the **Case-sensitive** check box.  
   
-   4. If you selected different record types for the base and matching record types, for each new criterion, in the **Base Record Field** column, select **Select**, and then select a field name. In the same row, in the **Matching Record Field** column, select **Select**, and then select a field name.  
+   1. If you selected different record types for the base and matching record types, for each new criterion, in the **Base Record Field** column, select **Select**, and then select a field name. In the same row, in the **Matching Record Field** column, select **Select**, and then select a field name.  
   
         \-  OR -  
   
         If you selected the same record types for the base and matching record types, for each new criterion, in the **Field** column, select **Select**, and then select a field.  
   
-   5. In the same row, in the **Criteria** column, select **Select**, and then select an operator. For example, select **Exact Match**.  
+   1. In the same row, in the **Criteria** column, select **Select**, and then select an operator. For example, select **Exact Match**.  
   
-   6. If you specified **Same First Characters** or **Same Last Characters**, in the **No. of Characters** column, select **Enter Value**, and then enter the number of characters to compare.  
+   1. If you specified **Same First Characters** or **Same Last Characters**, in the **No. of Characters** column, select **Enter Value**, and then enter the number of characters to compare.  
   
-   7. If you don't want the rule to consider blank fields (null values) as equal while identifying duplicates, select the **Ignore Blank Values** check box.  
+   1. If you don't want the rule to consider blank fields (null values) as equal while identifying duplicates, select the **Ignore Blank Values** check box.  
   
-   > [!IMPORTANT]
-   >  If the duplicate detection rule contains only one condition, blank values are ignored during duplicate detection job and they do not work when the user is offline.
+       > [!IMPORTANT]
+       >  If the duplicate detection rule contains only one condition, blank values are ignored during duplicate detection job and they do not work when the user is offline.
   
     The number of criteria that you can select is limited by the number of characters that can be stored in the matchcode for the record. As you add criteria, watch the **Current matchcode length** value shown at the bottom of the criteria list.  
   
@@ -80,7 +80,6 @@ To maintain the integrity of your data, it's a good idea to have rules in place 
     When you publish a duplicate detection rule, a matchcode is created for every record in the matching record type for that rule. You can publish only five rules for the same base record type (Account, for example) at a time. You might need to delete or unpublish an existing rule if you bump up against this limit.  
   
 > [!NOTE]
->
 > - We recommend that you set the duplicate detection criteria on a field that has unique values, for example, **Email**.  
 > - You can have more than one duplicate detection rule for each record type.  
   
