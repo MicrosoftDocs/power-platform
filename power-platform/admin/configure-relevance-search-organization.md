@@ -349,8 +349,8 @@ Respectively, Dataverse search is reported as part of database and files storage
    
 ## [Classic admin center](#tab/classic)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Resources**, then choose **Capacity**.
-1. On the **Capacity** page, go to the **Dataverse** tab, select an environment, then seelct the **Chart** icon for details.
+1. In the navigation pane, expand **Resources**, and then select **Capacity**.
+1. On the **Capacity** page, go to the **Dataverse** tab, select an environment, and then seelct the **Chart** icon for details.
 1. In the navigation pane, expand **Billing**, then select **Licenses**.
 1. On the **Licenses** page, go to the **Environments** tab, then select an environment to view.
 ---
