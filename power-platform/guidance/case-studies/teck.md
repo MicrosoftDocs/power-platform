@@ -22,7 +22,7 @@ Rodolfo sought to automate the tedious task of customs document verification. Wh
 
 > Seeing the flow come together and watching it in action, it’s like watching a symphony.
 >
-> -Rodolfo explained
+> -Rodolfo 
 
 A user-friendly Power BI dashboard then visually displays the results, which allows the team to focus only on the flagged issues. Overall, the tool saved hundreds of hours (40 hours every week) and reduced errors by 99%. Teck has increased their productivity by over 5x with these tasks, where effectively managing the compliance process would have taken five people, but now the tasks are completed with just one person.
 
@@ -30,7 +30,7 @@ Not only this change frees up resources for strategic work, but it also enhances
 
 
 
-:::image type="content" source="media/teck/rodolfo.jpeg" alt-text="Profile photo of Rodolfo Rodrigues CCS." lightbox = "media/teck/rodolfo.jpeg":::
+:::image type="content" source="media/teck/rodolfo.png" alt-text="Profile photo of Rodolfo Rodrigues CCS." lightbox = "media/teck/rodolfo.jpeg":::
 
 > I saw a need, and I wanted to solve it. That’s what I love about Power Platform – there’s no limit to what you can build.
 >  
