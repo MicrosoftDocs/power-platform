@@ -1,7 +1,7 @@
 ---
 title: Manage privacy and security settings
 description: Learn how to view and manage privacy and security settings for Microsoft Dataverse.
-ms.date: 04/17/2025
+ms.date: 04/24/2025
 ms.topic: how-to
 ms.component: pa-admin
 ms.subservice: admin
@@ -29,14 +29,14 @@ To adjust the settings in the Power Platform admin center for an environment, fo
 1. In the **Manage** pane, select **Environments**.
 1. On the **Environments** page, select an environment.
 1. In the command bar, select **Settings**.
-1. Expand **Product**, then select **Privacy + Security**. 
+1. Expand **Product**, and then select **Privacy + Security**. 
 
 ## [Classic admin center](#tab/classic)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Environments**.
 1. On the **Environments** page, select an environment.
 1. In the command bar, select **Settings**.
-1. Expand **Product**, then select **Privacy + Security**. 
+1. Expand **Product**, and then select **Privacy + Security**. 
 ---
 
 ## Settings
@@ -77,9 +77,9 @@ To adjust the settings in the Power Platform admin center for an environment, fo
 1. In the **Manage** pane, select **Environments**.
 1. On the **Environments** page, select an environment.
 1. In the command bar, select **Settings**.
-1. Expand **Product**, then select **Privacy + Security**.
-1. Under **Privacy preferences**, enable **Show privacy statement link for this organization**.
-1. In the **Privacy statement URL** field, enter the URL of the page you want to diplay.
+1. Expand **Product**, and then select **Privacy + Security**.
+1. Under **Privacy preferences**, turn on the **Show privacy statement link for this organization** option.
+1. In the **Privacy statement URL** field, enter the URL of the page you want to display.
 1. Select **Save** to apply the changes.
 
 ## [Classic admin center](#tab/classic)
@@ -87,9 +87,9 @@ To adjust the settings in the Power Platform admin center for an environment, fo
 1. In the navigation pane, select **Environments**.
 1. On the **Environments** page, select an environment.
 1. In the command bar, select **Settings**.
-1. Expand **Product**, then select **Privacy + Security**.
-1. Under **Privacy preferences**, enable **Show privacy statement link for this organization**.
-1. In the **Privacy statement URL** field, enter the URL of the page you want to diplay.
+1. Expand **Product**, and then select **Privacy + Security**.
+1. Under **Privacy preferences**, turn on the **Show privacy statement link for this organization** option.
+1. In the **Privacy statement URL** field, enter the URL of the page you want to display.
 1. Select **Save** to apply the changes.
 ---
 
@@ -105,7 +105,7 @@ To adjust the settings in the Power Platform admin center for an environment, fo
 1. In the **Manage** pane, select **Environments**.
 1. On the **Environments** page, select an environment.
 1. In the command bar, select **Settings**.
-1. Expand **Product**, then select **Privacy + Security**.
+1. Expand **Product**, and then select **Privacy + Security**.
 1. Under **Privacy preferences**, select a **Default action to take when an error occurs**.
 1. Select **Save** to apply the change.
 
@@ -114,7 +114,7 @@ To adjust the settings in the Power Platform admin center for an environment, fo
 1. In the navigation pane, **Environments**.
 1. On the **Environments** page, select an environment.
 1. In the command bar, select **Settings**.
-1. Expand **Product**, then select **Privacy + Security**.
+1. Expand **Product**, and then select **Privacy + Security**.
 1. Under **Privacy preferences**, select a **Default action to take when an error occurs**.
 1. Select **Save** to apply the change.
 ---
