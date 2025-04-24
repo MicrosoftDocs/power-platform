@@ -31,20 +31,20 @@ Use feature settings to adjust how features appear and function in Power Apps [c
 These settings can be found in the Power Platform admin center for an environment.
 
 ## [New admin center](#tab/new)
- 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
- 1. In the navigation pane, select **Manage**.
- 1. In the **Manage** pane, select **Environments**.
- 1. In the **Environments** page, select an environment.
- 1. Select **Settings** in the command bar.
- 1. Expand **Product**, and then select **Features**.
- 
- ## [Classic admin center](#tab/classic)
- 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
- 1. In the navigation pane, select **Environments**.
- 1. In the **Environments** page, select an environment.
- 1. Select **Settings** in the command bar.
- 1. Expand **Product**, and then select **Features**.
- ---
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. On the **Environments** page, select an environment.
+1. In the command bar, select **Settings**.
+1. Expand **Product**, then select **Features**. 
+
+## [Classic admin center](#tab/classic)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Environments**.
+1. On the **Environments** page, select an environment.
+1. In the command bar, select **Settings**.
+1. Expand **Product**, then select **Features**. 
+---
 
 To update these settings, make sure you have the System Administrator or System Customizer security role or equivalent permissions.
 
