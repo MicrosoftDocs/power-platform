@@ -71,7 +71,7 @@ Make sure you have the System Administrator security role or equivalent permissi
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-| Allow Copilot Studio to share data with Viva Insights | When **On**, enables Copilot Studio data to flow to Microsoft Viva Insights for [analytical reports](/microsoft-copilot-studio/analytics-viva-insights). Also requires [Microsoft 365 services](geographical-availability-copilot.md?tabs=new#copilots-and-generative-ai-features-that-are-available-when-you-allow-data-movement-across-regions) to be turned on. | Off |
+| Allow Copilot Studio to share data with Viva Insights | When **On**, enables Copilot Studio data to flow to Microsoft Viva Insights for [analytical reports](/microsoft-copilot-studio/analytics-viva-insights). Also requires [Microsoft 365 services](geographical-availability-copilot.md?tabs=new#copilots-and-generative-ai-features-that-are-available-when-you-allow-data-movement-across-regions) to be turned on. | On |
 | Allow cross-geo boundary sharing of aggregated analytics data of your tenant preferred data location for Viva Insights is different than the location of your Copilot Studio environment | For tenants with Power Platform environments across multiple geos. When turned **On**, allows Microsoft Copilot Studio agent usage data to go to and be stored in the base location of the tenant in Viva Insights, even when crossing geo boundaries. Requires turning on **Allow Copilot Studio to share data with Viva Insights**.  | Off |
 
 ## Microsoft 365 Copilot
