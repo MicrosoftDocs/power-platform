@@ -4,7 +4,7 @@ description: Records are now available in the Outlook web client using a simple 
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/17/2025
+ms.date: 04/24/2025
 ms.subservice: admin
 ms.custom: NewPPAC
 ms.author: sericks
@@ -38,23 +38,26 @@ If there are any changes to the synced data including updates or deletions, the 
 ## Turn on the /mention feature
 
 ## [New admin center](#tab/new)
+
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
-1. In the **Environments** page, select an environment.
-1. Select **Settings** in the command bar.
+1. On the **Environments** page, select an environment.
+1. In the command bar, select **Settings**.
 1. Expand **Product**, and then select **Features**.
-1. Under the **Search** section, turn on the **Search for records in Microsoft 365 apps** setting.
-1. Select **Save**.
+1. Under the **Search** section, turn on **Search for records in Microsoft 365 apps**.
+1. Select **Save** to apply the changes.
 
 ## [Classic admin center](#tab/classic)
+
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, **Environments**.
-1. In the **Environments** page, select an environment.
-1. Select **Settings** in the command bar.
-1. Expand **Product**, and then select **Features**.
-1. Under the **Search** section, turn on the **Search for records in Microsoft 365 apps** setting.
-1. Select **Save**.
+1. In the navigation pane, select **Environments**.
+1. On the **Environments** page, select an environment.
+1. In the command bar, select **Settings** .
+1. Expand **Product**, then select **Features**.
+1. Under the **Search** section, turn on **Search for records in Microsoft 365 apps**.
+1. Select **Save** to apply the changes.
+
 ---
 
 ## Link to business records in email messages in your Outlook web client
