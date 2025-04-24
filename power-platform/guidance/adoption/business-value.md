@@ -1,5 +1,5 @@
 ---
-title: Measuring and communicating business value
+title: Measure and communicate the business value of Power Platform solutions
 description: Learn how to measure and communicate the business value of Power Platform solutions to ensure success and return on investment.
 #customer intent: As a business leader, I want to measure and communicate the value of Power Platform solutions so that I can ensure success and return on investment.
 author: stjeffer
@@ -14,7 +14,7 @@ ms.contributors:
 - jean-romero
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 02/28/2025
+ms.date: 04/24/2025
 ms.subservice: guidance
 ms.reviewer: pankajsharma2087
 search.audienceType: 
@@ -22,7 +22,7 @@ search.audienceType:
 ms.custom: bap-template
 ---
 
-# Measuring and communicating the business value of Power Platform solutions
+# Measure and communicate the business value of Power Platform solutions
 
 Measuring business value in Power Platform is an important aspect of ensuring success and return on investment. Power Platform provides a low-code or no-code platform for building applications, automating tasks, streamlining business processes, and infusing AI into your solutions. These capabilities can bring significant benefits and it's important to track and measure the value to the business that the platform is delivering.
 
@@ -34,20 +34,20 @@ Why does value measurement matter? It's the driving force behind your technology
 - **Strategic alignment**: Value measurement ensures that Power Platform initiatives are aligned with the broader strategic goals of the business. This alignment moves technology initiatives from being isolated efforts to directly supporting what the business has identified as important, ensuring that every project contributes to the overall mission.
 - **Informed decision-making**: Measuring business value equips you with the necessary information to make informed decisions about technology investments. Business value is not just a metric; it's a strategic compass that aligns with organizational goals, optimizes resource allocation, and empowers data-driven decisions. This shift moves decision-making from being based on intuition or subjective opinions to relying on concrete data regarding performance, satisfaction, and cost-effectiveness.
 
-The business value of the platform is often seen through two lenses: IT benefits and the value of the solutions that run on it. From an IT perspective, core benefits include reducing development and maintenance costs, reducing non-Microsoft license spend, and reducing technical debt.
+The business value of the platform is often seen through two lenses: IT benefits, and the value of the solutions that run on it. From an IT perspective, core benefits include the reduction of development and maintenance costs, of non-Microsoft license spend, and of technical debt.
 
 Power Platform solutions typically help improve one or more business value drivers, such as:
 
 - **Performance improvement**: Solutions that help businesses improve their operational efficiency and effectiveness, improve outcomes, and increase employee and customer satisfaction. We see measurable impact in key performance indicators (KPIs) such as sales growth, time-to-market, and improved customer satisfaction.
 - **Direct or indirect cost savings**: Solutions that help organizations reduce their operational costs by automating manual processes, reducing errors, and improving resource utilization. They can also help organizations save money indirectly by improving the quality of products or services, such as by reducing paper, fuel, or other resources.
-- **Risk mitigation**: Solutions that help organizations mitigate risks by improving data security, ensuring compliance with regulatory requirements, and reducing the risk of errors, such as reducing the risk of a process outage and data breach.
+- **Risk mitigation**: Solutions that help organizations mitigate risks by improving data security, ensuring compliance with regulatory requirements, and reducing reducing errors, such as process outages and data breaches.
 - **Business transformation**: Solutions that help organizations transform their operations and business models. These solutions might include enabling businesses to adapt to changing market conditions, introduce new products or services, or replace aging legacy systems.
 
 ### Tangible and intangible value
 
 Understanding tangible and intangible value is important to fully appreciate the benefits of investments. 
 
-Tangible value refers to measurable outcomes such as cost savings, increased productivity, and faster time-to-market for solutions. These outcomes are often quantified through metrics and financial reports, providing clear evidence of the platform's impact. 
+Tangible value refers to measurable outcomes such as cost savings, increased productivity, and faster time-to-market for solutions. These outcomes are often quantified through metrics and financial reports and provide clear evidence of the platform's impact. 
 
 Intangible value encompasses benefits that aren't easily measured but are equally important, such as improved employee satisfaction, enhanced collaboration, and a culture of innovation.
 
@@ -66,17 +66,17 @@ Consider how you can measure and report both tangible and intangible value. Refe
 
 ### Performance improvements and direct or indirect cost savings
 
-Measuring the improvements Power Platform solutions have on existing processes can be achieved in several ways.
+You can measure how Power Platform solutions improve existing processes in several ways.
 
 | Measure | Description |
 |---------|-------------|
-| Time and cost savings | One way to measure the improvement in operational efficiency is by calculating the time and cost savings achieved by implementing an automated process. Compare the time taken to complete a task before and after automation, as well as the associated costs such as labor, materials, and equipment. Savings can be calculated in terms of hours saved per week or month, reduction in errors, and costs savings per task. |
-| Error reduction | One way to measure improvements in efficiency is by assessing the error rate. Automated processes are designed to minimize errors. Tracking the number of errors before and after implementation can be a good indication of the improvement in performance. |
+| Time and cost savings | One way to measure the improvement in operational efficiency is by calculating the time and cost savings achieved by implementing an automated process. Compare the time taken to complete a task before and after automation, as well as the associated costs such as labor, materials, and equipment. Calculate savings based on hours saved per week or month, reduction in errors, and costs savings per task. |
+| Error reduction | One way to measure improvements in efficiency is by assessing the error rate. Automated processes are designed to minimize errors. Tracking the number of errors before and after implementation is a good way to measure performance improvement. |
 | Productivity improvements | You can measure the productivity improvements of automated processes by comparing the output achieved before and after implementation. Include the number of completed tasks or the amount of work completed in a given time period. |
 
 #### Example questions for assessing performance improvements and cost savings
 
-Here are examples of questions you could ask to establish time and cost savings, error reductions, and productivity improvements:
+Here are examples of questions you could ask to establish time and cost savings, error reduction, and productivity improvements:  
 
 - What was the average time it took to complete this process before automation, and what is the average time it takes now that it's automated?
 - What would it mean to complete a process faster with fewer errors?
@@ -89,13 +89,13 @@ Here are examples of questions you could ask to establish time and cost savings,
 
 ### Mitigating risk
 
-Measuring the impact that a new solution has on mitigating risk can be measured in several ways.
+You can measure the impact of a new solution on mitigating risk in several ways.
 
 | Measure | Description |
 |---------|-------------|
-| Risk reduction | You can identify the risks that the solution is designed to mitigate and track the number of incidents or issues related to those risks before and after implementation. You can also calculate the financial impact of these incidents and compare the costs before and after implementation. |
-| Compliance improvement | If the new solution is designed to improve compliance, you can measure the impact by assessing the compliance rate before and after implementation. You could identify the regulations or standards that the solution is designed to comply with and track the compliance rate over time. |
-| Incident response time | You can compare the time taken to identify the source of an issue over the time taken to resolve the issue before and after implementation.|
+| Risk reduction | Identify the risks that the solution is designed to mitigate and track the number of incidents or issues related to those risks before and after implementation. You can also calculate the financial impact of these incidents and compare the costs before and after implementation. |
+| Compliance improvement | If the new solution is designed to improve compliance, measure the impact by assessing the compliance rate before and after implementation. Identify the regulations or standards that the solution is designed to comply with and track the compliance rate over time. |
+| Incident response time | Compare the time taken to identify the source of an issue over the time taken to resolve the issue before and after implementation.|
 
 #### Example questions for assessing risk mitigation
 
@@ -103,7 +103,7 @@ Here are examples of questions you could ask to establish risk reduction, compli
 
 - How has the Power Platform solution helped to reduce the likelihood of errors or mistakes occurring in the process or function it supports?
 - How has the Power Platform solution helped to increase the security and compliance measures for the process or function it supports?
-- Are there examples of situations where the Power Platform solution has helped to identify or mitigate risks and issues before they become significant problems?
+- Are there examples of situations where the Power Platform solution has helped to identify or mitigate risks and issues before they became significant problems?
 - What was the average response time for incidents before the Power Platform solution was developed, and how does this compare to the current average response time?
 
 ### Business transformation
@@ -114,9 +114,9 @@ Many different metrics can be used to measure the impact new solutions have on b
 |---------|-------------|
 | Efficiency improvement | Assess the efficiency improvement achieved by implementing the solution by comparing the time taken to complete a task or process before and after implementation. |
 | Revenue increase | One way to measure the impact of a new application or process is by analyzing the impact on revenue, before and after implementation. |
-| Employee productivity | You could assess the productivity of employees before and after implementation. This could include comparing the output achieved, or tracking the time taken to complete a task. |
-| Total Cost of Ownership (TCO) | For an on-premises or in-house system, you could assess the total cost of ownership. This includes all the costs associated with owning, operating, and maintaining the system over its lifetime. For example, you could include hardware and software costs, maintenance costs, energy and cooling costs, personnel, downtime, and replacement costs. These costs can then be compared to the cost of Power Platform. |
-| Employee satisfaction | Surveys, interviews, focus groups, and analytics can be used to measure the success of a new system or process. By using a combination of these methods, organizations can get a comprehensive view of employee satisfaction before and after a new system or process is implemented. |
+| Employee productivity | Assess the productivity of employees before and after implementation by comparing the output achieved or by tracking the time taken to complete a task. |
+| Total cost of ownership (TCO) | For an on-premises or in-house system, assess the total cost of ownership. This assessment includes all the costs associated with owning, operating, and maintaining the system over its lifetime. For example, include hardware and software costs, maintenance costs, energy and cooling costs, personnel, downtime, and replacement costs. These costs can then be compared to the cost of Power Platform. |
+| Employee satisfaction | Use surveys, interviews, focus groups, and analytics to measure the success of a new system or process. A combination of these methods will provide a comprehensive view of employee satisfaction before and after a new system or process is implemented. |
 
 #### Example questions for assessing business transformation
 
@@ -124,7 +124,7 @@ Here are examples of questions you could ask to establish efficiency improvement
 
 - How much has the time to complete a particular task or process been reduced since implementing the Power Platform solution?
 - Are you able to complete more tasks within the same amount of time since implementing the Power Platform solution?
-- Has the number of errors or defects been reduced since implementing the Power Platform solution?
+- Has the number of errors or defects reduced since implementing the Power Platform solution?
 - Has the team been able to meet deadlines more consistently since the Power Platform solution was implemented?
 - Has the team been able to take on extra tasks or responsibilities since the Power Platform solution was implemented?
 - What are the ongoing maintenance costs for the on-premises system, including software updates, hardware, and technical support?
@@ -180,7 +180,7 @@ By considering these factors, you achieve improved engagement, increased credibi
 
 To build a robust business value measurement framework for Power Platform, follow this structured approach to ensure alignment with your organization's objectives and goals. Here are the key steps:
 
-:::image type="content" source="media/business-value-framework.png" alt-text="Illustration of the value measurement framework.":::
+:::image type="content" source="media/business-value-framework.png" alt-text="Diagram that illustrates the value measurement framework.":::
 
 - **Centralize objectives and goals**: Start by clearly defining the objectives and goals for your organization, departments, business units, or functions. Understand what each group is trying to achieve. For example, a goal might be to improve customer satisfaction or increase operational efficiency.
 - **Identify relevant metrics**: Choose metrics that directly align with the objectives you've outlined. These metrics will serve as benchmarks for measuring progress. Consider using metrics such as time, rate, scale, number, or percentage. For instance, you might set a goal to "Reduce health and safety incidents by 50% over the next twelve months."
@@ -188,7 +188,7 @@ To build a robust business value measurement framework for Power Platform, follo
 - **Reporting and presentation**: Communicate your findings effectively. Develop clear and concise reports that highlight key insights and the impact of Power Platform solutions. Ensure that the reports are tailored to the needs of your audience, whether they are executives, managers, or team members. Use visual aids and summaries to make the information accessible and engaging.
 
 > [!TIP]
-> The [Business value toolkit](../coe/business-value-toolkit.md) is a feature of the [Center of Excellence Starter Kit](../coe/overview.md) that provides a comprehensive framework to capture and communicate the value of Power Platform solutions effectively. The toolkit allows you to specify objectives and goals, and guides app owners through a structured storytelling process to and analyze the impact of their solution on organizational strategic objective.
+> The [Business value toolkit](../coe/business-value-toolkit.md) is a feature of the [Center of Excellence Starter Kit](../coe/overview.md) that provides a comprehensive framework to capture and communicate the value of Power Platform solutions effectively. The toolkit allows you to specify objectives and goals, and guides app owners through a structured storytelling process to analyze the impact of their solution on organizational strategic objective.
 
 ## Summary
 
@@ -207,8 +207,8 @@ Obtaining executive sponsor and executive leadership buy-in is critical for succ
 ## Related information
 
 - [How Microsoft measures business value](https://youtu.be/cOkJI_e0Ni0)
-- [Defining the value of a business problem](/power-apps/guidance/planning/defining-business-value)
-- [Total economic impact of Power Platform Premium capabilities (forrester)](https://info.microsoft.com/ww-landing-forrester-tei-of-power-platform-premium-capabilities.html?LCID=EN-US)
+- [Defining the business value of solving a problem](/power-apps/guidance/planning/defining-business-value)
+- [The Total Economic Impact of Power Platform Premium Capabilities (Forrester Consulting)](https://info.microsoft.com/ww-landing-forrester-tei-of-power-platform-premium-capabilities.html?LCID=EN-US)
 - [Real-world examples of measuring and communicating value](https://www.youtube.com/watch?v=L_jRljdk1T0)
 
 [!INCLUDE [footer-include](../../includes/footer-banner.md)]

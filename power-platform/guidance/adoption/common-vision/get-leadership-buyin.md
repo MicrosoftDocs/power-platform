@@ -4,7 +4,7 @@ description: Achieve leadership buy-in and organizational alignment for Power Pl
 #customer intent: As a business leader, I want to secure leadership buy-in and organizational alignment for Power Platform adoption so that the initiative has the necessary support and resources to succeed.
 author: manuelap-msft
 ms.component: pa-admin
-ms.topic: concept-overview
+ms.topic: concept-article
 ms.date: 04/24/2025
 ms.subservice: guidance
 ms.author: mapichle
