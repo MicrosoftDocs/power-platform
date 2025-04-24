@@ -44,7 +44,7 @@ Power Apps operational health metrics and recommendations are available in the n
 
 
 ### Metric and recommendation pairings
-| Metric | Secondary metric | Recommendation title | Recommendation description |
+| Metric | Secondary metric | Title of recommendation | Description of recommendation |
 |---|---|---|---|
 | App Open Success Rate | ErrorCode = AppForbidden | Evaluate if the app should be shared with users without permiission | X% of sessions ended without users accessing the app because users didn't have permission to access the app. It's possible that the app may benefit from being shared with more users. The logs show which users&mdash;without permissions&mdash;are attempting to open the app. |
 
