@@ -476,7 +476,7 @@
                   href: wp-task-automation-powershell.md
                 - name: Automation of tasks with Power Automate
                   href: wp-task-automation-flow.md
-        - name: Monitor resources
+        - name: Monitor
           items:
             - name: Overview (preview)
               href: monitoring/monitoring-overview.md
