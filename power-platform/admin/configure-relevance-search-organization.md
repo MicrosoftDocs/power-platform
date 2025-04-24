@@ -107,20 +107,20 @@ Take these steps to turn on Dataverse search:
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) as a system administrator.
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
-1. In the **Environments** page, select an environment.
-1. Select **Settings** in the command bar.
-1. Expand **Product**, and then select **Features**.
-1. Under **Dataverse search**, select **On**.
-1. Select **Save**.
+1. On the **Environments** page, select an environment.
+1. In the command bar, select **Settings** .
+1. Expand **Product**, then select **Features**.
+1. Under **Dataverse search**, select **On**.
+1. Select **Save** to apply the change.
 
 ## [Classic admin center](#tab/classic)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) as a system administrator.
-1. In the navigation pane, **Environments**.
-1. In the **Environments** page, select an environment.
-1. Select **Settings** in the command bar.
-1. Expand **Product**, and then select **Features**.
-1. Under **Dataverse search**, select **On**.
-1. Select **Save**.
+1. In the navigation pane, select **Environments**.
+1. On the **Environments** page, select an environment.
+1. In the command bar, select **Settings** .
+1. Expand **Product**, then select **Features**.
+1. Under **Dataverse search**, select **On**.
+1. Select **Save** to apply the change.
 ---
 
 Turning on Dataverse search enables global-search and generative-AI experiences in all of your model-driven apps within that environment. You can't turn it off in specific apps.
@@ -151,8 +151,8 @@ Setting up search starts with reviewing the tables that are allowed for Datavers
 
 1. Sign in to [Power Apps](https://make.powerapps.com/).
 2. In the navigation pane, select **Solutions**.
-3. Select the solution you want to make the changes in, and then select **Edit** in the command bar.
-4. In the navigation pane, select **Overview**.
+3. Choose the solution you want to modify, then select **Edit** in the command bar.
+4. On the **Objects** page, in the navigation pane, select **Overview**. 
 5. In the **Dataverse search** pane, select **Manage search index**.
 
 Although there's no limit on how many tables you can index for Dataverse search, there's a limit on the total number of **fields** that you can enable for Dataverse search. Dataverse search indexes 50 fields by default. Since the maximum is 1,000 searchable fields for an organization, this means you can configure up to **950 searchable fields**.
@@ -220,10 +220,11 @@ To edit the searchable fields of a table:
 
 1. Sign in to [Power Apps](https://make.powerapps.com/).
 2. In the navigation pane, select **Tables**.
-3. Select the table you want to make the changes to, and then select the **Views** tab.
-4. Select **Quick Find view** type in the list of views.
-5. Edit _View_ columns and _Find_ columns by adding, removing, or reordering columns. For a more detailed description of how to add or remove columns in a view, go to [Choose and configure columns in model-driven app views in Power Apps](/powerapps/maker/model-driven-apps/choose-and-configure-columns).
-6. Select **Save and Publish** to publish the changes to the view.
+3. On the **Tables** page, select the table you want to edit.
+4. In the **Data experiences** pane, select **Views**.
+5. From the list of views, select the **Quick Find View** type (e.g., "Quick Find Active Accounts").
+6. Edit _View_ columns and _Find_ columns by adding, removing, or reordering columns. For a more detailed description of how to add or remove columns in a view, go to [Choose and configure columns in model-driven app views in Power Apps](/powerapps/maker/model-driven-apps/choose-and-configure-columns).
+7. Select **Save and Publish** to publish the changes to the view.
 
 > [!IMPORTANT]
 > Changes to Quick Find view also apply to single-table and multi-table Quick Find configurations. Therefore, **we don't prevent you from including fields that aren't supported for Dataverse search when you configure Quick Find view**. However, unsupported fields aren't synced to the Dataverse search index and don't appear in the Dataverse search results.
@@ -342,16 +343,16 @@ Respectively, Dataverse search is reported as part of database and files storage
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Licensing**.
 1. In the **Licensing** pane, select **Capacity add-ons**.
-1. In the **Capacity** page, select the **Dataverse** tab, select an environment, and then select the **Chart** icon for details.
+1. On the **Capacity** page, go to the **Dataverse** tab, select an environment, then click the **Chart** icon for details.
 1. In the **Licensing** pane, select **Dataverse**.
-1. In the **Licenses** page, select the **Environments** tab, and then select an environment to view.
+1. On the **Licenses** page, go to the **Environments** tab, then select an environment to view.
    
 ## [Classic admin center](#tab/classic)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Resources** and then select **Capacity**.
-1. In the **Capacity** page, select the **Dataverse** tab, select an environment, and then select the **Chart** icon for details.
-1. In the navigation pane, expand **Billing** and then select **Licenses**.
-1. In the **Licenses** page, select the **Environments** tab and select an environment to view.
+1. In the navigation pane, select **Resources**, then choose **Capacity**.
+1. On the **Capacity** page, go to the **Dataverse** tab, select an environment, then click the **Chart** icon for details.
+1. In the navigation pane, expand **Billing**, then select **Licenses**.
+1. On the **Licenses** page, go to the **Environments** tab, then select an environment to view.
 ---
 
 ### What entitlements are consumed by Dataverse search?
