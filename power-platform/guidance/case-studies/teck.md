@@ -30,7 +30,7 @@ Not only this change frees up resources for strategic work, but it also enhances
 
 
 
-:::image type="content" source="media/teck/rodolfo.png" alt-text="Profile photo of Rodolfo Rodrigues CCS." lightbox = "media/teck/rodolfo.jpeg":::
+:::image type="content" source="media/teck/rodolfo.png" alt-text="Profile photo of Rodolfo Rodrigues CCS." lightbox = "media/teck/rodolfo.png":::
 
 > I saw a need, and I wanted to solve it. That’s what I love about Power Platform – there’s no limit to what you can build.
 >  
