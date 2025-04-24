@@ -80,7 +80,7 @@ To adjust the settings in the Power Platform admin center for an environment, fo
 1. Expand **Product**, then select **Privacy + Security**.
 1. Under **Privacy preferences**, enable **Show privacy statement link for this organization**.
 1. In the **Privacy statement URL** field, enter the URL of the page you want to diplay.
-1. Select **Save** to apply the changes
+1. Select **Save** to apply the changes.
 
 ## [Classic admin center](#tab/classic)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
@@ -90,7 +90,7 @@ To adjust the settings in the Power Platform admin center for an environment, fo
 1. Expand **Product**, then select **Privacy + Security**.
 1. Under **Privacy preferences**, enable **Show privacy statement link for this organization**.
 1. In the **Privacy statement URL** field, enter the URL of the page you want to diplay.
-1. Select **Save** to apply the changes
+1. Select **Save** to apply the changes.
 ---
 
 ## Set error reporting preferences for the organization
@@ -107,7 +107,7 @@ To adjust the settings in the Power Platform admin center for an environment, fo
 1. In the command bar, select **Settings**.
 1. Expand **Product**, then select **Privacy + Security**.
 1. Under **Privacy preferences**, select a **Default action to take when an error occurs**.
-1. Select **Save** to apply the changes
+1. Select **Save** to apply the change.
 
 ## [Classic admin center](#tab/classic)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
@@ -116,7 +116,7 @@ To adjust the settings in the Power Platform admin center for an environment, fo
 1. In the command bar, select **Settings**.
 1. Expand **Product**, then select **Privacy + Security**.
 1. Under **Privacy preferences**, select a **Default action to take when an error occurs**.
-1. Select **Save** to apply the changes
+1. Select **Save** to apply the change.
 ---
 
 [!INCLUDE [footer-include](../includes/footer-banner.md)]
