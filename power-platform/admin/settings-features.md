@@ -46,12 +46,7 @@ These settings can be found in the Power Platform admin center for an environmen
 1. Expand **Product**, then select **Features**. 
 ---
 
-To update these settings, make sure you have the System Administrator or System Customizer security role or equivalent permissions.
-
-**Check your security role**
-
-- Follow the steps in [View your user profile](/powerapps/user/view-your-user-profile).
-- Don't have the correct permissions? Contact your system administrator.
+Make sure you have the System Administrator security role or equivalent permissions to update the settings. To check your security role, see [View your user profile](/powerapps/user/view-your-user-profile). If you don’t have the correct permissions, contact your system administrator.
 
 > [!NOTE]
 > These settings might not yet be available in your environment. The settings availability depends on the region's release plan.
