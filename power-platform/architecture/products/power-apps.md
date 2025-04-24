@@ -54,6 +54,7 @@ Understanding Power Apps reference architectures and exploring solution ideas ca
 | [**Secure Power Platform access to Azure resources**](../reference-architectures/secure-access-azure-resources.md) | Use Microsoft Azure Virtual Network support for Power Platform to integrate Power Platform with resources inside your virtual network without exposing them to the public internet. |
 | [**Use REST APIs to extend the functionality of canvas apps**](../reference-architectures/custom-connector-canvas.md) | When working with complex algorithms or multiple data sources, shift the logic from the canvas app to a RESTful API to keep formulas in your Power Apps canvas apps simple and move more complex functionality to the server. |
 | [**Use Dataverse as a data source for canvas apps​**](../reference-architectures/dataverse-canvas-app.md) | Learn how creating a Power Apps application that uses Dataverse as a data source helps build a more custom user experience. |
+| [**Use SQL Server with canvas apps​**](../reference-architectures/sqlserver-canvas-app.md)** | Learn how to build and publish an enterprise-grade canvas app using SQL Server as a data source. |
 
 ## Solution ideas
 
