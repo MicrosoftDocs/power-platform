@@ -1,5 +1,5 @@
 ---
-title: Monitor resources (preview)
+title: Monitor the health of your resources (preview)
 description: Learn how to use the Monitor > Overview page to monitor and improve operational health.
 ms.subservice: admin
 ms.component: pa-admin
@@ -16,12 +16,12 @@ contributors:
   - trdehove
 ---
 
-# Monitor resources (preview)
+# Monitor the health of your resources (preview)
 
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner.md)]
 [!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
-Your organization can use the **Monitor** area of the Power Platform admin center to measure and improve operational health metrics of resources that are built or deployed. Those resources include apps. 
+Your organization can use the **Monitor** area of the Power Platform admin center to measure and improve operational health metrics of resources that are built or deployed. Those resources include apps and flows. 
 
 The **Monitor** > **Overview** page is available to both makers (in experiences such as [Power Apps](https://make.powerapps.com/)) and admins (in experiences such as the [Power Platform admin center](https://admin.powerplatform.microsoft.com/)). Makers use the data to improve their resources. Admins use it to understand aggregate operational health in the tenant or in specific environments. Metrics are calculated by aggregating daily event logs from runtime activity. Recommendations are calculated from the following sources:
 
