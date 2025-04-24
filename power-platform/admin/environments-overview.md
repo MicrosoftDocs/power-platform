@@ -3,7 +3,7 @@ title: Power Platform environments overview
 description: Learn about Power Platform environments and how to use them.
 author: sericks007
 ms.topic: conceptual
-ms.date: 04/23/2025
+ms.date: 04/24/2025
 ms.reviewer: sericks
 ms.subservice: admin
 ms.custom: NewPPAC
@@ -115,25 +115,29 @@ You can create environments for different purposes. A trial environment is for t
 You can view and manage your environments in the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
 ### [New admin center](#tab/new)
+
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
 1. On the **Environments** page, select an environment.
-1. Use the **Sort** or **Filter** options to organize the list of environments—helpful when managing a large number of environments.
+1. Use the **Sort** or **Filter** options to organize the list of environments. These options are helpful when managing a large number of environments.
 
 ### [Classic admin center](#tab/classic)
+
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Environments**.
 1. On the **Environments** page, select an environment.
-1. Use the **Sort** or **Filter** options to organize the list of environments—helpful when managing a large number of environments.
+1. Use the **Sort** or **Filter** options to organize the list of environments. These options are helpful when managing a large number of environments.
+
 ---
 
 ### Environment details
 
-Select an environment to view the details of that environment, including the URL, type, current state, region it's hosted in. 
+Select an environment to view the details of that environment, including the URL, type, current state, region it's hosted in.
 
 In the Details pane:
-- Select **See all** to see the environment details. 
+
+- Select **See all** to see the environment details.
 - Select **Edit** to review and edit the environment details.
 
 ## Environment location
