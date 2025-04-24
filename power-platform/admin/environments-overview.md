@@ -118,14 +118,14 @@ You can view and manage your environments in the [Power Platform admin center](h
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
-1. In the **Environments** page, select an environment.
-   You can sort and search the list of environments; this is useful if you have a large number of environments to manage.
-   
+1. On the **Environments** page, select an environment.
+1. Use the **Sort** or **Filter** options to organize the list of environments—helpful when managing a large number of environments.
+
 ### [Classic admin center](#tab/classic)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, **Environments**.
-1. In the **Environments** page, select an environment.
-   You can sort and search the list of environments; this is useful if you have a large number of environments to manage.
+1. In the navigation pane, select **Environments**.
+1. On the **Environments** page, select an environment.
+1. Use the **Sort** or **Filter** options to organize the list of environments—helpful when managing a large number of environments.
 ---
 
 ### Environment details
@@ -133,8 +133,8 @@ You can view and manage your environments in the [Power Platform admin center](h
 Select an environment to view the details of that environment, including the URL, type, current state, region it's hosted in. 
 
 In the Details pane:
-- Select **See all** to see more environment details. 
-- Select **Edit** to review and edit environment details.
+- Select **See all** to see the environment details. 
+- Select **Edit** to review and edit the environment details.
 
 ## Environment location
 
