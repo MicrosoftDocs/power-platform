@@ -92,16 +92,17 @@ When you set up your virtual network, you need to delegate a subnet to the assoc
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
-1. In the **Environments** page, select an environment.
-1. Select **...** then **History** in the command bar.
-1. You should see that the enterprise policies link with your environment is successful if the **Status** says **Succeeded**.
+1. On the **Environments** page, select an environment.
+1. In the command bar, select **History**.
+1. The **enterprise policies link** is successful if the **Status** shows **Succeeded**.
+
    
 ## [Classic admin center](#tab/classic)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, **Environments**.
-1. In the **Environments** page, select an environment.
-1. Select **...** then **History** in the command bar.
-1. You should see that the enterprise policies link with your environment is successful if the **Status** says **Succeeded**.
+1. In the navigation pane, select **Environments**.
+1. On the **Environments** page, select an environment.
+1. In the command bar, select **History**.
+1. The **enterprise policies link** is successful if the **Status** shows **Succeeded**.
 ---
 
 ### Related content
