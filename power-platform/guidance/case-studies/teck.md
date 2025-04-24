@@ -14,19 +14,19 @@ ms.date: 04/24/2025
 
 In this article, you learn how [Teck](https://www.teck.com/), a top Canadian resource company, uses Power Platform to revolutionize their routine processes. This enables Teck to efficiently provide essential metals for global development and energy transition.
 
-Rodolfo Rodrigues Jr., a Customs Supervisor based in Toronto, is able to explore Power Platform through online tutorials, even though he doesn't have a background in software development. Rodolfo collaborated with Jorge Obregon, and they started by automating document transfers from a shared mailbox to SharePoint, which eliminates hours of manual work.
+Rodolfo Rodrigues Jr., a Customs Supervisor based in Toronto, explores Power Platform through online tutorials, even though he doesn't have a background in software development. Rodolfo collaborated with Jorge Obregon, and they started by automating document transfers from a shared mailbox to SharePoint, which eliminates hours of manual work.
 
-Rodolfo’s team faced a daily grind. They had to manually compare incoming customs documentation with system-generated documents. This task was time-consuming, requiring hours of line-by-line verification to ensure data accuracy. In one example, they had to handle 5,000 shipments to the USA for TAMSI operations, and the sheer volume of this 'busy work' was inefficient and increased stress for the team. Also, if the team didn’t have to do these tasks, then they could focus on work that could have a bigger and better impact on the business.
+Rodolfo’s team faced a daily grind. They had to manually compare incoming customs documentation with system-generated documents. This task was time-consuming, requiring hours of line-by-line verification to ensure data accuracy. In one example, they had to handle 5,000 shipments to the USA for TAMSI operations, and the sheer volume of this 'busy work' was inefficient and increased stress for the team. If the team didn’t have to do these tasks, they could focus on work with a bigger and better impact on the business.
 
-Rodolfo sought to automate the tedious task of customs document verification. When he and his team receive emails with customs documents, the system automatically saves the attachments to a shared folder on SharePoint.  AI Builder, the tool extracts key information from the documents and compares it with data from the company’s system to ensure accuracy. Any mismatches are flagged for review, and reports from the company database are automatically generated and uploaded to support the checks.
+Rodolfo sought to automate the tedious task of customs document verification. When he and his team receive emails with customs documents, the system automatically saves the attachments to a shared folder on SharePoint.  AI Builder extracts key information from the documents and compares it with data from the company’s system to ensure accuracy. Any mismatches are flagged for review, and reports from the company database are automatically generated and uploaded to support the checks.
 
-> Seeing the flow come together and watching it in action, it’s like watching a symphony.
+> Seeing the flow come together and watching it in action is like watching a symphony.
 >
 > -Rodolfo 
 
-A user-friendly Power BI dashboard then visually displays the results, which allows the team to focus only on the flagged issues. Overall, the tool saved hundreds of hours (40 hours every week) and reduced errors by 99%. Teck increases their productivity by over 5x with these tasks, where effectively managing the compliance process would take five people, but now the tasks are completed with just one person.
+A user-friendly Power BI dashboard then visually displays the results, which allows the team to focus only on the flagged issues. Overall, the tool saved hundreds of hours (40 hours every week) and reduced errors by 99%. Teck increases productivity by over 5x with these tasks. Managing the compliance process previously required five people, but now one person completes the tasks.
 
-Not only this change frees up resources for strategic work, but it also enhances their accuracy through consistUsingent checks that minimized human error. The solution mitigates financial and reputational risks for Teck by reducing the chances of noncompliance. It also enables the team to monitor broker compliance levels and foster continuous improvements in their external partnerships.
+This change not only frees up resources for strategic work but also enhances accuracy through consistent checks that minimize human error. The solution mitigates financial and reputational risks for Teck by reducing the chances of noncompliance. It also enables the team to monitor broker compliance levels and foster continuous improvements in their external partnerships.
 
 
 
@@ -47,15 +47,15 @@ In this technical case study, you learn how:
 
 ## The scenario
 
-The following image visually demonstrates the architecture of this automated solution. The tool uses Power Platform’s Power Automate, including robotic process automation (RPA) desktop flows, AI Builder, and Power BI, along with other software, such as Outlook, SharePoint, and Excel.
+The following image shows the architecture of this automated solution. The tool uses Power Platform’s Power Automate, including robotic process automation (RPA) desktop flows, AI Builder, and Power BI, along with other software like Outlook, SharePoint, and Excel.
 
 :::image type="content" source="media/teck/architecture.png" alt-text="Screenshot of a diagram showing the architecture of an automated solution using Power Automate, AI Builder, Power BI, Outlook, SharePoint, and Excel." lightbox = "media/teck/architecture.png":::
 
-The Power Automate flow checks the team’s shared mailbox in Outlook, and based on the sender, it then gathers the reference information (agent, date, and shipment ID). The flow then saves the files into a predetermined SharePoint folder, along with the metadata. Meanwhile, a Power Automate desktop flow is used to download reports from the team’s internal customs agent data feed and is also used to save it to SharePoint.
+The Power Automate flow checks the team’s shared mailbox in Outlook and gathers the reference information (agent, date, and shipment ID) based on the sender. The flow then saves the files into a predetermined SharePoint folder, along with the metadata. Meanwhile, a Power Automate desktop flow downloads reports from the team’s internal customs agent data feed and saves them to SharePoint.
 
-Once in SharePoint, AI Builder is used to extract the data from each document and from the automated system. AI Builder then uses Excel to compare the data between the customs documents sent via email and the system-generated data. It confirms that the transactions have all the required documentation and ensures the sources don’t contain any mismatched information. If mismatched data is found, the information is flagged for further review.
+Once in SharePoint, AI Builder is used to extract the data from each document and from the automated system. AI Builder then uses Excel to compare the data between the customs documents sent via email and the system-generated data. It confirms that the transactions have all the required documentation and ensures the sources don’t contain any mismatched information. If the flow finds mismatched data, it flags the information for further review.
 
-The results of the processing are visually reported as a custom compliance dashboard built with Power BI. 
+The results are shown in a custom compliance dashboard built with Power BI. 
 
 ## Key takeaways
 
