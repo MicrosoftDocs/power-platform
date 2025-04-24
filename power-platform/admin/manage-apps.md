@@ -35,7 +35,7 @@ App management is done from the tenant-level view of apps in the Power Platform 
    
 ### [Classic admin center](#tab/classic)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Resources**, and then select **Dynamics 365 Apps**.
+1. In the navigation pane, select **Resources**, then choose **Dynamics 365 Apps**.
 ---
 
    You'll see a list of installed or available to install or configure Dynamics 365 apps for the signed-in user. System administrator will see all installed or available to install apps. 
@@ -64,14 +64,14 @@ App management can also be done from the environment-level view of apps in the P
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
-1. In the **Environments** page, select an environment.
-1. In the top command bar, select **Resources** drop-down, and then select **Dynamics 365 Apps**.
+1. On the **Environments** page, select an environment.
+1. In the top command bar, select **Resources**, then choose **Dynamics 365 Apps**.
    
 ### [Classic admin center](#tab/classic)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, **Environments**.
-1. In the **Environments** page, select an environment.
-1. In the top command bar, select **Resources** drop-down, and then select **Dynamics 365 Apps**.
+1. In the navigation pane, select **Environments**.
+1. On the **Environments** page, select an environment.
+1. In the top command bar, select **Resources**, then choose **Dynamics 365 Apps**.
 ---
 
    You'll see a list of Dynamics 365 apps installed **by you** in the selected environment. System administrator will see all installed apps in the selected environment.
@@ -97,14 +97,14 @@ The process to install an app depends on your view.
    
 ### [Classic admin center](#tab/classic)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Resources**, and then select **Dynamics 365 Apps**.
+1. In the navigation pane, select **Resources**, then choose **Dynamics 365 Apps**.
 ---
 
    You'll see a list of apps that are available to install and configure in the tenant. 
 
-   To install an app, follow these steps:
-  1. Select an **Enabled** app, and then select **Install** from the top command bar. 
-  1. In the side pane, select an **environment**, review the packages to be installed, select **Agree** to the terms of service, and then select **Install**.
+   **To install an app:**
+  1. Select an **Enabled** app, then choose **Install** from the top command bar. 
+  1. In the side pane, select an **environment**, review the packages to be installed, then agree to the terms of service by selecting **Agree**, followed by **Install**.
   1. You'll navigate to the environment-level view where you can see the installation status.
 
 ### Install an app in the environment view
@@ -113,22 +113,22 @@ The process to install an app depends on your view.
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
-1. In the **Environments** page, select an environment.
-1. In the top command bar, select **Resources** drop-down, and then select **Dynamics 365 Apps**.
+1. On the **Environments** page, select an environment.
+1. In the top command bar, select **Resources**, then choose **Dynamics 365 Apps**.
 
 ### [Classic admin center](#tab/classic)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, **Environments**.
-1. In the **Environments** page, select an environment.
-1. In the top command bar, select **Resources** drop-down, and then select **Dynamics 365 Apps**. 
+1. In the navigation pane, select **Environments**.
+1. On the **Environments** page, select an environment.
+1. In the top command bar, select **Resources**, then choose **Dynamics 365 Apps**. 
 ---
 
   You'll see the list of apps that are available to install and manage in the environment.
   
-   To install an app, follow these steps:
+   **To install an app:**:
 1. In the top command bar, select **Install app**.
-1. In the side pane, select an **Enabled** app, and then select **Next**.
-1. Select **Agree** to the terms of service, and then select **Install**.
+1. In the side pane, select an **Enabled** app, then select **Next**.
+1. Agree to the terms of service by selecting **Agree**, then choose **Install**.
    
 ## Troubleshooting installation error
 <!-- fwlink  2182141 -->
