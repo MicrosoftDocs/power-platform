@@ -4,7 +4,7 @@ description: Configure Dataverse search for your environment to improve search r
 author: marianaraujo 
 ms.component: pa-admin
 ms.topic: get-started
-ms.date: 04/22/2025
+ms.date: 04/24/2025
 ms.subservice: admin
 ms.custom: NewPPAC
 ms.author: maaraujo
@@ -109,7 +109,7 @@ Take these steps to turn on Dataverse search:
 1. In the **Manage** pane, select **Environments**.
 1. On the **Environments** page, select an environment.
 1. In the command bar, select **Settings** .
-1. Expand **Product**, then select **Features**.
+1. Expand **Product**, and then select **Features**.
 1. Under **Dataverse search**, select **On**.
 1. Select **Save** to apply the change.
 
@@ -118,7 +118,7 @@ Take these steps to turn on Dataverse search:
 1. In the navigation pane, select **Environments**.
 1. On the **Environments** page, select an environment.
 1. In the command bar, select **Settings** .
-1. Expand **Product**, then select **Features**.
+1. Expand **Product**, and then select **Features**.
 1. Under **Dataverse search**, select **On**.
 1. Select **Save** to apply the change.
 ---
@@ -222,8 +222,8 @@ To edit the searchable fields of a table:
 2. In the navigation pane, select **Tables**.
 3. On the **Tables** page, select the table you want to edit.
 4. In the **Data experiences** pane, select **Views**.
-5. From the list of views, select the **Quick Find View** type (e.g., "Quick Find Active Accounts").
-6. Edit _View_ columns and _Find_ columns by adding, removing, or reordering columns. For a more detailed description of how to add or remove columns in a view, go to [Choose and configure columns in model-driven app views in Power Apps](/powerapps/maker/model-driven-apps/choose-and-configure-columns).
+5. From the list of views, select the **Quick Find View** type. For example, select **Quick Find Active Accounts**.
+6. Edit _View_ columns and _Find_ columns by adding, removing, or reordering the columns. For a more detailed description of how to add or remove columns in a view, go to [Choose and configure columns in model-driven app views in Power Apps](/powerapps/maker/model-driven-apps/choose-and-configure-columns).
 7. Select **Save and Publish** to publish the changes to the view.
 
 > [!IMPORTANT]
@@ -343,14 +343,14 @@ Respectively, Dataverse search is reported as part of database and files storage
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Licensing**.
 1. In the **Licensing** pane, select **Capacity add-ons**.
-1. On the **Capacity** page, go to the **Dataverse** tab, select an environment, then click the **Chart** icon for details.
+1. On the **Capacity** page, go to the **Dataverse** tab, select an environment, then select the **Chart** icon for details.
 1. In the **Licensing** pane, select **Dataverse**.
 1. On the **Licenses** page, go to the **Environments** tab, then select an environment to view.
    
 ## [Classic admin center](#tab/classic)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Resources**, then choose **Capacity**.
-1. On the **Capacity** page, go to the **Dataverse** tab, select an environment, then click the **Chart** icon for details.
+1. On the **Capacity** page, go to the **Dataverse** tab, select an environment, then seelct the **Chart** icon for details.
 1. In the navigation pane, expand **Billing**, then select **Licenses**.
 1. On the **Licenses** page, go to the **Environments** tab, then select an environment to view.
 ---
