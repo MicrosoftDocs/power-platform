@@ -37,7 +37,7 @@ To adjust the settings in the Power Platform admin center for an environment, fo
 1. Expand **Product**, then select **Behavior**. 
 ---
 
-Make sure you have the System Administrator security role or equivalent permissions to update the collaboration settings. To check your security role, see [View your user profile](/powerapps/user/view-your-user-profile). If you don’t have the correct permissions, contact your system administrator.
+Make sure you have the System Administrator security role or equivalent permissions to update the settings. To check your security role, see [View your user profile](/powerapps/user/view-your-user-profile). If you don’t have the correct permissions, contact your system administrator.
 
 ## Release channel
 
