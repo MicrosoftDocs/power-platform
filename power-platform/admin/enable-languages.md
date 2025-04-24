@@ -4,7 +4,7 @@ description: Set regional and language options for your environment
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/17/2025
+ms.date: 04/24/2025
 ms.subservice: admin
 ms.custom: NewPPAC
 ms.author: sericks 
@@ -38,14 +38,14 @@ These settings can be found in the Microsoft Power Platform admin center for an 
 1. In the **Manage** pane, select **Environments**.
 1. On the **Environments** page, select an environment.
 1. In the command bar, select **Settings**.
-1. Expand **Product**, then select **Languages**. 
+1. Expand **Product**, and then select **Languages**. 
 
 ## [Classic admin center](#tab/classic)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Environments**.
 1. On the **Environments** page, select an environment.
 1. In the command bar, select **Settings**.
-1. Expand **Product**, then select **Languages**. 
+1. Expand **Product**, and then select **Languages**. 
 ---
 
 Make sure you have the System Administrator or System Customizer security role or equivalent permissions to update the setting. To check your security role, go to [View your user profile](/powerapps/user/view-your-user-profile). If you don’t have the correct permissions, contact your system administrator.
