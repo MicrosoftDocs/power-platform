@@ -193,28 +193,28 @@ The table's Quick Find view drives the searchable table fields and filters used 
 
 - The **View columns** on a Quick Find view define the fields that are displayed in model-driven apps' search results page when the matched results are returned.
 
-- The **Filter conditions** on a Quick Find view are applied to the Dataverse search results. This table provides a list of filter clauses **not supported** by Dataverse search.
+- The **Filter conditions** on a Quick Find view are applied to the Dataverse search results. The following table provides a list of filter clauses **not supported** by Dataverse search.
 
-| Operator          |
-|-----------------------|
-| Like             |
-| NotLike          |
-| BeginsWith       |
-| DoesNotBeginWith  |
-| EndWith           |
-| DoesNotEndWith    |
-| ChildOf           |
-| Mask              |
-| NotMask           |
-| MaskSelect        |
-| EqualUserLanguage |
-| Under             |
-| NotUnder          |
-| UnderOrEqual      |
-| Above             |
-| AboveOrEqual      |
-| NotNull           |
-| Null              |
+    | Operator          |
+    |-----------------------|
+    | Like             |
+    | NotLike          |
+    | BeginsWith       |
+    | DoesNotBeginWith  |
+    | EndWith           |
+    | DoesNotEndWith    |
+    | ChildOf           |
+    | Mask              |
+    | NotMask           |
+    | MaskSelect        |
+    | EqualUserLanguage |
+    | Under             |
+    | NotUnder          |
+    | UnderOrEqual      |
+    | Above             |
+    | AboveOrEqual      |
+    | NotNull           |
+    | Null              |
 
 To edit the searchable fields of a table:
 
