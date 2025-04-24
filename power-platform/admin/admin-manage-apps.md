@@ -4,7 +4,7 @@ description: How to manage apps created using Power Apps in your organization.
 author: alaug
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/22/2025
+ms.date: 04/24/2025
 ms.subservice: admin
 ms.custom: NewPPAC
 ms.author: alaug
@@ -34,21 +34,24 @@ Admins can do the following from the Power Platform admin center:
 ## Manage Power Apps
 
 ### [New admin center](#tab/new)
+
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
 1. On the **Environments** page, select an environment.
 1. In the **Resources** pane, select **Power Apps**.
 1. Select the app you want to manage.
-1. In the command bar, choose your desired action: **Share** or **Delete** .
-   
+1. In the command bar, choose your desired action: **Share** or **Delete**.
+
 ### [Classic admin center](#tab/classic)
+
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Environments**.
 1. On the **Environments** page, select an environment.
 1. In the **Resources** pane, select **Power Apps**.
 1. Select the app you want to manage.
-1. In the command bar, choose your desired action: **Share** or **Delete** .
+1. In the command bar, choose your desired action: **Share** or **Delete**.
+
 ---
 
 ## Manage who can share canvas apps
