@@ -147,7 +147,7 @@ The following table lists these measures along with example questions.
 | Accessibility | The degree to which a company's products, services, and facilities can be used by people with specific needs. | <ul><li>Will the solution improve accessibility for users with specific needs?</li><li>What improvements will the solution make?</li><li>Will there be any observable improvements in user engagement or satisfaction?</li><li>Will the solution help reduce any barriers or challenges that users with specific needs previously faced when interacting with our company?</li></ul> |
 | Environment and sustainability | The company's commitment to reducing its impact on the environment and its efforts to promote sustainable business practices that balance economic, social, and environmental goals. | <ul><li>Will there be a reduction in energy consumption through the use of the solution?</li><li>What is the estimated percentage reduction in energy consumption?</li><li>Will the solution affect our use of natural resources?</li><li>Will the solution affect the conservation of biodiversity?</li></ul> |
 
-### Aligning to organization KPIs and OKRs
+### Align to organization KPIs and OKRs
 
 Align the business value of Power Platform solutions to the organization's key performance indicators (KPIs), objectives, and key results (OKRs) to maximize the impact of the solutions.
 
