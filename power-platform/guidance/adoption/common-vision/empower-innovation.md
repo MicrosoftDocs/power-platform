@@ -4,8 +4,8 @@ description: Empower your organization with innovation and AI culture using Powe
 #customer intent: As an IT admin, I want to empower my organization with innovation and AI culture using Power Platform so that we can drive growth and competitiveness.
 author: manuelap-msft
 ms.component: pa-admin
-ms.topic: conceptual
-ms.date: 02/28/2025
+ms.topic: concept-article
+ms.date: 04/24/2025
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
@@ -25,7 +25,7 @@ Power Platform allows nontechnical users to create and deploy solutions, breakin
 
 ## Objectives
 
-Objectives are the key themes or focus areas that the strategy aims to achieve. They're broad, overarching goals that align with the organizational vision and priorities. Objectives provide direction and set the stage for the initiatives and key results. Objectives help ensure that everyone in the organization understands what the strategy aims to accomplish and why it's important.
+Objectives are the key themes or focus areas that the strategy aims to achieve. They are broad, overarching goals that align with the organizational vision and priorities. Objectives provide direction and set the stage for the initiatives and key results. Objectives help ensure that everyone in the organization understands what the strategy aims to accomplish and why it's important.
 
 Typical objectives for empowering innovation and AI culture include:
 
@@ -50,11 +50,11 @@ Key results are specific, quantifiable outcomes that indicate progress towards a
 Typical key results, aligned with some of the [objectives](#objectives), for empowering innovation and AI culture include:
 
 - **Foster an inclusive culture of innovation and experimentation**:
-    - Organizing regular [hackathons](../hackathons.md), idea challenges, and innovation workshops with ___% employees participating in innovation initiatives.
+    - Organize regular [hackathons](../hackathons.md), idea challenges, and innovation workshops with ___% employees participating in innovation initiatives.
     - Promote and incentivize idea submissions through internal campaigns and recognition programs with ___ (number) new ideas submitted per quarter.
 - **Enable rapid and pragmatic delivery**:
-    - Implementing streamlined development processes and achieve a ___% reduction in the average time taken to develop and deploy new solutions.
-    - Adopting agile methodologies and achieve a ___% increase in the number of projects completed within the planned timeline.
+    - Implement streamlined development processes and achieve a ___% reduction in the average time taken to develop and deploy new solutions.
+    - Adopt agile methodologies and achieve a ___% increase in the number of projects completed within the planned timeline.
 - **Build a mindset of commitment and self-sufficiency**:
     - Offer comprehensive training and support materials to empower self-sufficiency and increase the number of employees independently resolving issues using Power Platform by ___%.
 - **Empower businesses to be citizen developers**: 
@@ -62,8 +62,8 @@ Typical key results, aligned with some of the [objectives](#objectives), for emp
     - Empower employees to develop their own solutions and achieve a ___% reduction in the number of IT support requests related to application development. 
 - **Use low-code to challenge legacy technology and processes**:
     - Decommission legacy system and modernize systems with low-code with a goal of ___% reduction in the number of legacy systems still in use.
-    - Modernize systems with low-code with a goal of increasing process efficiency, such as time savings, error reduction, and cost savings with a goal of ___% improvement in process efficiency through low-code solutions.
-    - Reduce operating, maintenance, and support cost of legacy system with a goal of $__ cost reduction.
+    - Modernize systems with low-code with a goal of increasing process efficiency, such as time savings, error reduction, and cost savings, with a goal of ___% improvement in process efficiency through low-code solutions.
+    - Reduce operating, maintenance, and support cost of legacy systems with a goal of $__ cost reduction.
 - **Create incentives for makers, champions, and departments**:
     - Increase the number of innovation projects initiated by makers and champions by ___% through offering a rewards and recognition program.
     - Boost departmental participation in Power Platform initiatives by ___% by offering financial incentives and organizing quarterly awards.

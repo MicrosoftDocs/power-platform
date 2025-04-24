@@ -4,7 +4,7 @@ description: Build a thriving Power Platform community with tools like Viva Enga
 #customer intent: As a Power Platform admin, I want to set up tools like Viva Engage, Microsoft Forms, and SharePoint to support my community so that I can foster collaboration and innovation.
 author: manuelap-msft
 ms.component: pa-admin
-ms.topic: concept-article
+ms.topic: how-to
 ms.date: 04/01/2025
 ms.subservice: guidance
 ms.author: mapichle

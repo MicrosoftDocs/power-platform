@@ -1,16 +1,16 @@
 ---
 title: Measure value and realize return on investment
 description: Learn how to measure value and realize ROI with Power Platform. Follow a structured framework to align initiatives with strategic goals and deliver tangible benefits.
-#customer intent: Learn how to measure value and realize ROI with Power Platform. Follow a structured framework to align initiatives with strategic goals and deliver tangible benefits.
+#customer intent: As a business leader, I want to measure value and realize ROI with Power Platform so that I can align initiatives with strategic goals and deliver tangible benefits.  
 author: manuelap-msft
 ms.component: pa-admin
-ms.topic: conceptual
-ms.date: 02/28/2025
+ms.topic: concept-article
+ms.date: 04/24/2025
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
-ms.contributors: 
-- vabhavir
+ms.contributors:
+  - vabhavir
 ---
 
 # Measure value and realize return on investment
@@ -25,7 +25,7 @@ By focusing on ROI, organizations can prioritize projects that provide the most 
 
 ## Objectives
 
-Objectives are the key themes or focus areas that the strategy aims to achieve. They're broad, overarching goals that align with the organizational vision and priorities. Objectives provide direction and set the stage for the initiatives and key results. Objectives help ensure that everyone in the organization understands what the strategy is aiming to accomplish and why it's important. 
+Objectives are the key themes or focus areas that the strategy aims to achieve. They are broad, overarching goals that align with the organizational vision and priorities. Objectives provide direction and set the stage for the initiatives and key results. Objectives help ensure that everyone in the organization understands what the strategy aims to accomplish and why it's important.
 
 Typical objectives for measuring value and realizing return of investment include:
 
@@ -57,16 +57,15 @@ Typical key results, aligned with some of the [objectives](#objectives), for mea
 - Improve business time to value in a measurable way, reducing time by ___%. 
 Save costs and innovate more without compromising quality, achieving a cost reduction of ___%. 
 
-
 ## Key initiatives
 
-Initiatives are the specific actions or projects that need to be implemented to achieve the objectives. They outline what needs to be done in the immediate term, in the next year and in the next three years. Initiatives provide a roadmap for action and ensure that there's a clear plan to reach the objectives. Initiatives should be actionable, prioritized, and aligned with the key results. 
+Initiatives are the specific actions or projects that need to be implemented to achieve the objectives. They outline what needs to be done in the immediate term, in the next year, and in the next three years. Initiatives provide a roadmap for action and ensure that there's a clear plan to reach the objectives. Initiatives should be actionable, prioritized, and aligned with the key results. 
 
 Typical initiatives, aligned with some of the [objectives](#objectives), for measuring value and realizing return on investment include:
 
-- **Establish and monitor impactful KPIs**
+- **Establish and monitor impactful KPIs**:
   - Identify key metrics that reflect the financial and strategic benefits of Power Platform projects.
-  - Implement tools and processes for tracking these metrics in real-time.
+  - Implement tools and processes for tracking these metrics in real time.
   - Regularly review and update metrics to ensure they remain relevant and aligned with business goals.
   - Define the KPIs that are used to measure the success of Power Platform initiatives.
   - Develop a methodology for calculating ROI and tracking costs.
@@ -79,7 +78,7 @@ Typical initiatives, aligned with some of the [objectives](#objectives), for mea
   - Create a standardized reporting template that includes key metrics, insights, and recommendations.
   - Schedule regular reporting intervals (for example, monthly, quarterly) to maintain transparency and accountability.
   - Use the reports to inform decision-making and drive continuous improvement.
-- **Define initiatives with pilot groups to drive case studies that demonstrate tangible ROI**
+- **Define initiatives with pilot groups to drive case studies that demonstrate tangible ROI**:
   - Select pilot groups that represent a cross-section of the organization.
   - Define specific initiatives for these groups to implement, focusing on high-value areas.
   - Document the outcomes and develop detailed case studies that highlight the tangible ROI achieved.

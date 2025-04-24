@@ -1,11 +1,11 @@
 ---
 title: Establish a Center of Excellence with governance patterns and practices
-description: Guidance for establishing a Center of Excellence with governance patterns and practices
-#customer intent: As an IT admin, I want to establish a Center of Excellence with governance patterns and practices so that I can manage and scale the Power Platform effectively.
+description: Learn how to establish a Center of Excellence with governance patterns and practices to manage and scale Power Platform adoption effectively.
+#customer intent: As a business leader, I want to establish a Center of Excellence with governance patterns and practices so that I can manage and scale the Power Platform effectively.
 author: manuelap-msft
 ms.component: pa-admin
-ms.topic: conceptual
-ms.date: 02/28/2025
+ms.topic: concept-article
+ms.date: 04/24/2025
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
@@ -15,17 +15,17 @@ ms.contributors:
 
 # Establish a Center of Excellence with governance patterns and practices
 
-This article describes a common goal for Power Platform - establishing a Center of Excellence (CoE) with robust governance patterns and practices. It follows a [structured framework](../vision.md) that includes defining clear objectives, measurable key results, and actionable initiatives. This article aims to guide you in creating your own vision for Power Platform adoption.
+This article describes a common goal for Power Platform&mdash;establishing a Center of Excellence (CoE) with robust governance patterns and practices. It follows a [structured framework](../vision.md) that includes defining clear objectives, measurable key results, and actionable initiatives. This article aims to guide you in creating your own vision for Power Platform adoption.
 
 ## Vision
 
-[Establishing a Center of Excellence (CoE)](../coe.md) with governance patterns and practices is a common vision for Power Platform adoption because it provides a structured approach to managing and scaling the platform effectively. 
+[Establishing a Center of Excellence (CoE)](../coe.md) with governance patterns and practices is a common vision for Power Platform adoption because it provides a structured approach to manage and scale the platform effectively. 
 
 A CoE serves as a centralized team or function that oversees the administration, governance, and nurturing of Power Platform adoption within an organization. The CoE implements governance patterns and practices to ensure that the platform is used securely and efficiently, and to mitigate risks such as compliance and security issues. The CoE fosters best practices, educates new makers, and provides a hub for sharing success stories and guidelines. A CoE with robust governance practices helps organizations maximize the value of their Power Platform investment, driving innovation while maintaining control and compliance.
 
 ## Objectives
 
-Objectives are the key themes or focus areas that the strategy aims to achieve. They're broad, overarching goals that align with the organizational vision and priorities. Objectives provide direction and set the stage for the initiatives and key results. Objectives help ensure that everyone in the organization understands what the strategy is aiming to accomplish and why it's important. 
+Objectives are the key themes or focus areas that the strategy aims to achieve. They are broad, overarching goals that align with the organizational vision and priorities. Objectives provide direction and set the stage for the initiatives and key results. Objectives help ensure that everyone in the organization understands what the strategy aims to accomplish and why it's important.
 
 Typical objectives for establishing a Center of Excellence with governance patterns and practices are:
 
@@ -42,7 +42,7 @@ Typical objectives for establishing a Center of Excellence with governance patte
 - **Safeguard data and facilitate informed decision making**: Establish privacy policies to protect sensitive data and [ensure compliance](../compliance.md) with data protection regulations. Provide tools and resources to help users make informed decisions about data usage.
 - **Define data domains and stewards**: Ensure accountability and effective data management by identifying and defining data domains within the organization and assigning data stewards to oversee and manage these domains.
 - **Define metrics and data-driven improvements**: Establish metrics to measure the effectiveness of governance practices and drive continuous improvement. Use data-driven insights to refine and enhance governance policies.
-- **Drive reusability and standardization**: Increase visibility into applications and best practices to [promote reusability](../reusable.md) and standardization. This helps in boosting compliance and ensuring consistent quality across the organization.
+- **Drive reusability and standardization**: Increase visibility into applications and best practices to [promote reusability](../reusable.md) and standardization. These efforts help boost compliance and ensure consistent quality across the organization.
 - **Develop a decision matrix for platform and license selection**: Develop a decision matrix to guide the selection of appropriate platforms and licenses based on specific use cases and requirements. A decision matrix can help with optimal resource allocation and cost management.
 - **Strive for continuous improvement**: Establish a clear pathway for decision-making that aligns policy and continuous process improvement to maximize technology capabilities. Regularly review and update governance policies based on feedback and evolving business needs.
 
@@ -50,7 +50,7 @@ Typical objectives for establishing a Center of Excellence with governance patte
 
 Key results are specific, quantifiable outcomes that indicate progress towards achieving the strategic objectives. They provide clear benchmarks for success and help in tracking performance. Defining key results is necessary because they offer a way to measure the effectiveness of the initiatives and ensure that the objectives are met. Key results should be realistic, time-bound, and directly linked to the objectives. 
 
-Typical key results, aligned with some of the [objectives](#objectives), for establishing a Center of Excellence with governance patterns and practices are:
+Key results, aligned with some of the [objectives](#objectives), for establishing a Center of Excellence with governance patterns and practices are:
 
 - **Establish a process to evaluate and prioritize use cases**:
     - Establish an effective Center of Excellence to inventory and track user ideas, with a goal of solving at least ___% of submitted ideas within the quarter. 
@@ -91,7 +91,7 @@ Typical initiatives, aligned with some of the [objectives](#objectives), for est
     - Develop and publish a catalog of [reusable app templates and components](../reusable.md) to help makers build with a reliable, reusable toolkit. Templates reduce development time and promote best practices.
     - [Document your Data Loss Prevention (DLP) policy strategy](../dlp-strategy.md), [environment strategy](../environment-strategy.md), and [use case prioritization process](../solution-envisioning.md). [Publish this documentation](../wiki-community.md#sharepoint-communication-site) internally to ensure all stakeholders and makers have access to important information and guidelines.
     - Publish a comprehensive strategy and version-controlled governance documentation to maintain transparency and accountability in platform management.
-    - Create a Maker Portal, for example [a SharePoint communication site](../wiki-community.md#sharepoint-communication-site) that includes onboarding collateral, development guidelines, self-guided learning resources, and success stories to support and inspire makers throughout their development journey.
+    - Create a Maker Portal, for example [a SharePoint communication site](../wiki-community.md#sharepoint-communication-site), that includes onboarding collateral, development guidelines, self-guided learning resources, and success stories to support and inspire makers throughout their development journey.
     - Establish a detailed environment strategy that outlines the structure and management of different environments, ensuring optimal performance and security.
     - Define app classifications and the corresponding Environment Strategy/DLP safeguards to support them, providing clear guidelines for app development and deployment.
 - **Define and communicate roles and responsibilities**:
@@ -105,7 +105,7 @@ Typical initiatives, aligned with some of the [objectives](#objectives), for est
     - Create a comprehensive decision matrix and incorporate it into the helpdesk request system. This integration ensures that users have access to the decision matrix when submitting support requests, helping them make informed decisions. 
     - Start the baseline of decision trees/matrix for developers. This baseline should include common development scenarios and best practices, serving as a foundation for more detailed and specific decision trees in the future.
 - **Design an [onboarding process](../onboard-makers.md) that doesn't hinder creativity**:
-    - Create a Maker Portal, for example a SharePoint communication site, with comprehensive onboarding collateral, detailed development guidelines, self-guided learning modules, and inspiring success stories. This portal should serve as a one-stop resource for makers, providing them with the tools and information they need to succeed.
+    - Create a Maker Portal, for example [a SharePoint communication site](../wiki-community.md#sharepoint-communication-site), with comprehensive onboarding collateral, detailed development guidelines, self-guided learning modules, and inspiring success stories. This portal should serve as a one-stop resource for makers, providing them with the tools and information they need to succeed.
     - Resolve barriers by developing training. Include a starter toolbox with essential resources and incorporate gamification elements and other incentives to encourage participation and engagement.
     - Develop an onboarding newsletter for citizen developers. This newsletter should guide them on Power Platform governance, highlight available training resources, and provide updates on best practices and new features. Regular communication helps keep developers informed and aligned with governance policies.
 - **Provide guidelines for platform maintenance**:
@@ -124,7 +124,7 @@ Typical initiatives, aligned with some of the [objectives](#objectives), for est
     - Publish "when to use what" guidance to align expectations on what app development can be done on the platform. This guidance should provide clear criteria and examples to help makers choose the right tools and approaches for their specific needs.
     - Create and sustain a [Community of Practice for Power Platform](../community-goals.md) practitioners. This community should facilitate ideation, provide support, and offer mentorship opportunities. Encourage active participation through regular discussions, webinars, and collaborative projects.
     - Establish themes and trends to guide the development of reusable components and toolkits. Identify common use cases and best practices to create a library of reusable assets that can accelerate development and ensure consistency across projects.
-- **Safeguard data and facilitate informed decision making**
+- **Safeguard data and facilitate informed decision making**:
     - [Establish Data Loss Prevention (DLP) policies](../dlp-strategy.md) to protect sensitive information and ensure compliance with data protection regulations. Clearly document and share these policies, and ensure makers understand how to request new connectors or exceptions to policies based on their use cases.
     - Align on a common DLP baseline with tracked divergence where necessary. Ensure that all stakeholders agree on the baseline policies, and document any deviations along with the rationale and impact of these divergences.
     - Develop automation and alerting for key assurance controls. Implement automated processes to monitor compliance with DLP policies and generate alerts for any violations or potential risks. 

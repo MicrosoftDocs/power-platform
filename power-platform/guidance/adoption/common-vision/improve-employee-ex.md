@@ -1,21 +1,21 @@
 ---
-title: Improve employee experience
-description: Improve employee experience with Power Platform adoption. Learn how to enhance productivity, engagement, and job satisfaction through intuitive, low-code tools.
-#customer intent: As an IT admin, I want to implement Power Platform adoption so that employees can solve their own problems and streamline workflows.
+title: Improve the employee experience
+description: Improve the employee experience with Power Platform adoption. Learn how to enhance productivity, engagement, and job satisfaction through intuitive, low-code tools.
+#customer intent: As a business leader, I want to foster a collaborative culture so that employees can share knowledge and work effectively as a team.  
 author: manuelap-msft
 ms.component: pa-admin
-ms.topic: conceptual
-ms.date: 02/28/2025
+ms.topic: concept-article
+ms.date: 04/24/2025
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
-ms.contributors: 
-- vabhavir
+ms.contributors:
+  - vabhavir
 ---
 
-# Improve employee experience
+# Improve the employee experience
 
-This article describes a common goal for Power Platform—improving employee experience. It follows a [structured framework](../vision.md) that includes defining clear objectives, measurable key results, and actionable initiatives. This article aims to guide you in creating your own vision for Power Platform adoption.
+This article describes a common goal for Power Platform—improving the employee experience. It follows a [structured framework](../vision.md) that includes defining clear objectives, measurable key results, and actionable initiatives. This article aims to guide you in creating your own vision for Power Platform adoption.
 
 ## Vision
 
@@ -23,7 +23,7 @@ Improving employee experience is a common vision for Power Platform adoption bec
 
 ## Objectives
 
-Objectives are the key themes or focus areas that the strategy aims to achieve. They're broad, overarching goals that align with the organizational vision and priorities. Objectives provide direction and set the stage for the initiatives and key results. Objectives help ensure that everyone in the organization understands what the strategy aims to accomplish and why it's important.
+Objectives are the key themes or focus areas that the strategy aims to achieve. They are broad, overarching goals that align with the organizational vision and priorities. Objectives provide direction and set the stage for the initiatives and key results. Objectives help ensure that everyone in the organization understands what the strategy aims to accomplish and why it's important.
 
 Typical objectives for improving employee experience include:
 
@@ -58,15 +58,15 @@ Typical initiatives, aligned with some of the [objectives](#objectives), for imp
     - Implement [collaboration tools and platforms](../wiki-community.md) to facilitate communication between Power Platform makers. 
     - Organize regular cross-functional workshops and activities that help teams collaborate with each other, such as hackathons.
     - Recognize and reward collaborative efforts and successful team projects.
-    - [Create and sustain an online community](../community-goals.md) of practice for Power Platform practitioners
-    - Establish and communicate a way for makers to easily collaborate with IT 
+    - [Create and sustain an online community](../community-goals.md) of practice for Power Platform practitioners.
+    - Establish and communicate a way for makers to easily collaborate with IT.
 - **Enhance employee satisfaction**: 
     - Conduct regular surveys to gather feedback on employee needs and preferences.
     - [Provide training](../training-strategy.md) and [support](../support-strategy.md) to help employees effectively use Power Platform.
     - Implement initiatives that address common pain points and improve the work environment.
 - **Empower employees with self-service capabilities**: 
     - Offer comprehensive training programs on low-code development.
-    - [Develop a self-service maker portal](../wiki-community.md#sharepoint-communication-site) with onboarding collateral, development guidelines, self-guided learning, and success stories.
+    - Create a Maker Portal, for example [a SharePoint communication site](../wiki-community.md#sharepoint-communication-site), with onboarding collateral, development guidelines, self-guided learning, and success stories.
     - Encourage a culture of experimentation and innovation by providing support and recognition for self-initiated projects.
 - **Drive tangible outcomes**: 
     - Set clear goals and metrics for collaborative projects and employee initiatives.

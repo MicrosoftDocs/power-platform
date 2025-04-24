@@ -1,11 +1,11 @@
 ---
 title: Nurture a maker and champion community
 description: Learn how to nurture a maker and champion community with Power Platform. Discover strategies to foster innovation and collaboration.
-#customer intent: As a Power Platform admin, I want to build a thriving low-code community so that I can foster innovation and collaboration.
+#customer intent: As a business leader, I want to build a thriving low-code community so that I can foster innovation and collaboration.
 author: manuelap-msft
 ms.component: pa-admin
-ms.topic: conceptual
-ms.date: 02/28/2025
+ms.topic: concept-article
+ms.date: 04/24/2025
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
@@ -27,12 +27,12 @@ A thriving maker and champion community helps create a supportive environment wh
 
 ## Objectives
 
-Objectives are the key themes or focus areas that the strategy aims to achieve. They're broad, overarching goals that align with the organizational vision and priorities. Objectives provide direction and set the stage for the initiatives and key results. Objectives ensure that everyone in the organization understands what the strategy aims to accomplish and why it's important.
+Objectives are the key themes or focus areas that the strategy aims to achieve. They are broad, overarching goals that align with the organizational vision and priorities. Objectives provide direction and set the stage for the initiatives and key results. Objectives help ensure that everyone in the organization understands what the strategy aims to accomplish and why it's important.
 
 Typical objectives for nurturing a maker and champion community include:
 
 - **Build a thriving low-code community**: [Foster a vibrant and engaged low-code community](../community-goals.md) that encourages incremental innovation and widespread participation.
-- **Identify and recruit [potential champions](../champions.md**: Build a network of enthusiastic and knowledgeable users who can advocate for the Power Platform and support their peers.
+- **Identify and recruit [potential champions](../champions.md)**: Build a network of enthusiastic and knowledgeable users who can advocate for the Power Platform and support their peers.
 - **Increase awareness**:  Increase awareness and understanding of the Power Platform through targeted evangelism and comprehensive training programs.
 - **Create a maker onboarding program**: Streamline the [onboarding process for new makers](../onboard-makers.md), ensuring they have the tools and knowledge to succeed.
 - **Empower developer and maker community with process and resource clarity**: Provide clear guidance and resources to enable developers and makers to create effective solutions.
@@ -60,7 +60,7 @@ Typical key results, aligned with some of the [objectives](#objectives), for nur
 - **Create a maker onboarding program**:
     - Enable citizen developers through a standard onboarding process and training, increasing IT capacity by ___% and decreasing time to value by ___%. 
 - **Provide specialized training and resources**:
-    - Encourage makers to obtain certifications, like Microsoft Certified: Power Platform fundamentals, with a target of __ new certifications per quarter. 
+    - Encourage makers to obtain certifications, like [Microsoft Certified: Power Platform Fundamentals](/credentials/certifications/power-platform-fundamentals/), with a target of __ new certifications per quarter. 
     - Cultivate a low-code first mindset among employees, with ___% of employees trained and skilled in low-code development. 
 - **Foster collaboration and knowledge sharing**:
     - Ensure employees are innovating faster and across team lines, with ___% of projects involving cross-team collaboration. 
@@ -74,7 +74,7 @@ Typical key results, aligned with some of the [objectives](#objectives), for nur
 
 ## Key initiatives
 
-Initiatives are the specific actions or projects that need to be implemented to achieve the objectives. They outline what needs to be done in the immediate term, in the next year and in the next three years. Initiatives provide a roadmap for action and ensure that there's a clear plan to reach the objectives. Initiatives should be actionable, prioritized, and aligned with the key results. 
+Initiatives are the specific actions or projects that need to be implemented to achieve the objectives. They outline what needs to be done in the immediate term, in the next year, and in the next three years. Initiatives provide a roadmap for action and ensure that there's a clear plan to reach the objectives. Initiatives should be actionable, prioritized, and aligned with the key results. 
 
 Typical initiatives, aligned with some of the [objectives](#objectives), for nurturing a maker and champion community include:
 
@@ -87,12 +87,12 @@ Typical initiatives, aligned with some of the [objectives](#objectives), for nur
     - Offer certification programs to validate skills and knowledge.
     - Create online courses and training materials to support self-paced learning.
     - Launch a campaign to highlight the benefits and capabilities of the platform.
-    - Establish Communities of Practices (CoP) to facilitate ongoing learning and collaboration.
+    - Establish Communities of Practice (CoP) to facilitate ongoing learning and collaboration.
     - Address obstacles to adoption by providing structured training and certification pathways.
 - **Create a maker onboarding program**:
     - Develop a maker portal with resources such as development guidelines, self-guided learning modules, and success stories.
     - Implement automated welcome messages and portal access for new makers.
-    - Develop an onboarding newsletter and provide regular updates and guidance on Power Platform governance and training resources 
+    - Develop an onboarding newsletter and provide regular updates and guidance on Power Platform governance and training resources.
 - **Empower developer and maker community with process and resource clarity**:
     - Establish application lifecycle management processes to streamline solution deployments.
     - Create guidelines for solution classifications, environment strategy, and data loss prevention measures.
@@ -114,7 +114,7 @@ Typical initiatives, aligned with some of the [objectives](#objectives), for nur
     - Launch efforts to promote the platform and build a community.
     - Regularly clean up unused environments to maintain organization and efficiency.
     - Develop a central site for communication and collaboration.
-- **Empower employees to solve their own problems**
+- **Empower employees to solve their own problems**:
     - Implement a system for IT to stay informed about new features and updates.
     - Streamline support processes through automation.
     - Create a clear path for transitioning apps from citizen development to IT support.

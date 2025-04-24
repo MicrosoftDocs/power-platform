@@ -4,7 +4,7 @@ description: Take the Power Platform adoption assessment to streamline efforts, 
 #customer intent: As a business leader, I want to assess my organization's Power Platform adoption strategy so that I can identify areas for optimization.
 author: manuelap-msft
 ms.component: pa-admin
-ms.topic: article
+ms.topic: concept-article
 ms.date: 04/23/2025
 ms.subservice: guidance
 ms.author: mapichle

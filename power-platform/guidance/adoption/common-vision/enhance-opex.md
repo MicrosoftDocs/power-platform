@@ -4,8 +4,8 @@ description: Enhance operational efficiency with Power Platform by streamlining 
 #customer intent: As a business leader, I want to enhance operational efficiency with Power Platform so that I can streamline processes, automate tasks, and optimize resources.
 author: manuelap-msft
 ms.component: pa-admin
-ms.topic: conceptual
-ms.date: 02/28/2025
+ms.topic: concept-article
+ms.date: 04/24/2025
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
@@ -23,7 +23,7 @@ Enhancing operational efficiency is a common vision for Power Platform adoption 
 
 ## Objectives
 
-Objectives are the key themes or focus areas that the strategy aims to achieve. They're broad, overarching goals that align with the organizational vision and priorities. Objectives provide direction and set the stage for the initiatives and key results. Objectives help ensure that everyone in the organization understands what the strategy aims to accomplish and why it's important.
+Objectives are the key themes or focus areas that the strategy aims to achieve. They are broad, overarching goals that align with the organizational vision and priorities. Objectives provide direction and set the stage for the initiatives and key results. Objectives help ensure that everyone in the organization understands what the strategy aims to accomplish and why it's important.
 
 Typical objectives for enhancing operational efficiency include:
 
@@ -33,7 +33,7 @@ Typical objectives for enhancing operational efficiency include:
 - **Reduce cost and effort to license, build, and deploy**: Minimize the costs and efforts associated with licensing, building, and deploying Power Platform solutions.
 - **Increase productivity for business and IT**: Enhance the productivity of both business and IT teams through effective use of Power Platform.
 - **Develop innovative solutions that increase productivity**: Create innovative solutions that enhance productivity and contribute to the organization’s financial performance.
-- **Break down siloes, improve process efficiency, and achieve unification**: Foster cross-functional collaboration to eliminate siloes, improve process efficiency, and achieve organizational unification.
+- **Break down silos, improve process efficiency, and achieve unification**: Foster cross-functional collaboration to eliminate silos, improve process efficiency, and achieve organizational unification.
 
 ## Measurable key results
 
@@ -68,8 +68,8 @@ Typical initiatives, aligned with some of the [objectives](#objectives), for enh
     - [Establish foundational operating roles](../roles.md) to provide clarity on "who does what" to manage the platform. 
 - **Digitize manual processes and shift to value creation tasks**:
     - Identify and understand manual processes per team. 
-    - Automate routine support activities & request processes (for example, environment request form). 
-    - [Create a Maker Portal](../wiki-community.md#sharepoint-communication-site) with onboarding collateral, development guidelines, self-guided learning, and success stories. 
+    - Automate routine support activities and request processes (for example, environment request form). 
+    - Create a Maker Portal, for example [a SharePoint communication site](../wiki-community.md#sharepoint-communication-site), with onboarding collateral, development guidelines, self-guided learning, and success stories. 
 - **Reduce time to market for Power Platform solutions**: 
     - Develop automation and alerting for key assurance controls. 
     - Implement a peer-review mechanism for popular citizen-developed apps. 
@@ -83,9 +83,9 @@ Typical initiatives, aligned with some of the [objectives](#objectives), for enh
     - Establish a method by which IT can proactively monitor for newly released platform capabilities. 
 - **Develop innovative solutions that increase productivity**: 
     - Start using AI/Copilots in platform areas. 
-    - Identify community outreach opportunities - for example, [sharing success stories](../show-and-tell.md#share-success-stories) or [organizing show and tell events](../show-and-tell.md#organize-show-and-tell-sessions).
-    - Develop and [publish a catalog of reusable templates & components](../reusable.md) to help makers build with a reliable, reusable toolkit. 
-- **Break down siloes, improve process efficiency, and achieve unification**:
+    - Identify community outreach opportunities, by [sharing success stories](../show-and-tell.md#share-success-stories) and [organizing show and tell events](../show-and-tell.md#organize-show-and-tell-sessions).
+    - Develop and [publish a catalog of reusable templates and components](../reusable.md) to help makers build with a reliable, reusable toolkit. 
+- **Break down silos, improve process efficiency, and achieve unification**:
     - Establish and publish governance guidelines.
     - Create a [Responsible, Accountable, Consulted, Informed (RACI) matrix](../roles.md) for the Power Platform roles and responsibilities.
     - Establish and communicate a way for makers to easily collaborate with IT. 

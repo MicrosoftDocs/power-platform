@@ -4,8 +4,8 @@ description: Achieve leadership buy-in and organizational alignment for Power Pl
 #customer intent: As a business leader, I want to secure leadership buy-in and organizational alignment for Power Platform adoption so that the initiative has the necessary support and resources to succeed.
 author: manuelap-msft
 ms.component: pa-admin
-ms.topic: conceptual
-ms.date: 02/28/2025
+ms.topic: concept-overview
+ms.date: 04/24/2025
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
@@ -25,7 +25,7 @@ Organizational alignment ensures that all departments and teams are working towa
 
 ## Objectives
 
-Objectives are the key themes or focus areas that the strategy aims to achieve. They're broad, overarching goals that align with the organizational vision and priorities. Objectives provide direction and set the stage for the initiatives and key results. Objectives help ensure that everyone in the organization understands what the strategy aims to accomplish and why it's important.
+Objectives are the key themes or focus areas that the strategy aims to achieve. They are broad, overarching goals that align with the organizational vision and priorities. Objectives provide direction and set the stage for the initiatives and key results. Objectives help ensure that everyone in the organization understands what the strategy aims to accomplish and why it's important.
 
 Typical objectives for getting leadership buy-in and organization alignment include:
 
@@ -33,7 +33,7 @@ Typical objectives for getting leadership buy-in and organization alignment incl
 - **Communicate the value of Power Platform effectively and elevate key stakeholder perception**: Increase awareness and understanding of Power Platform’s value among key stakeholders through targeted internal marketing campaigns.
 - **Uphold accountability and realize strategic goals**: Empower business units to take ownership of their Power Platform initiatives and align them with strategic goals.
 - **Encourage leadership to allocate time for upskilling**: Ensure that leaders are knowledgeable about Power Platform and its potential benefits.
-- **Get senior business leaders to advocate for Power Platform**: Utilize the influence of senior leaders to promote the adoption of Power Platform.
+- **Get senior business leaders to advocate for Power Platform**: Use the influence of senior leaders to promote the adoption of Power Platform.
 - **Engage leadership for active sponsorship and governance participation**: Secure ongoing leadership support and involvement in the governance of Power Platform.
 - **Encourage leadership to enable their teams to change the way they work**: Provide leaders with easy-to-use resources to support and encourage the adoption of new processes and technologies.
 
@@ -51,7 +51,7 @@ Typical key results, aligned with some of the [objectives](#objectives), for get
 
 ## Key initiatives
 
-Initiatives are the specific actions or projects that need to be implemented to achieve the objectives. They outline what needs to be done in the immediate term, in the next year and in the next three years. Initiatives provide a roadmap for action and ensure that there's a clear plan in place to reach the objectives. Initiatives should be actionable, prioritized, and aligned with the key results. 
+Initiatives are the specific actions or projects that need to be implemented to achieve the objectives. They outline what needs to be done in the immediate term, in the next year, and in the next three years. Initiatives provide a roadmap for action and ensure that there's a clear plan in place to reach the objectives. Initiatives should be actionable, prioritized, and aligned with the key results. 
 
 Typical initiatives, aligned with some of the [objectives](#objectives), for getting leadership buy-in and organization alignment include:
 
@@ -62,7 +62,7 @@ Typical initiatives, aligned with some of the [objectives](#objectives), for get
 - **Communicate the value of Power Platform effectively and elevate key stakeholder perception**:
     - Develop and distribute engaging marketing materials, such as newsletters, infographics, and success stories, that showcase the platform’s capabilities and benefits.
     - Organize workshops, webinars, and demo sessions to provide hands-on experience and demonstrate real-world applications of Power Platform.
-    - Use internal communication channels, such as intranet sites, to share updates, best practices, and success stories regularly.
+    - Use internal communication channels, such as intranet sites, to regularly share updates, best practices, and success stories.
     - Conduct stakeholder analysis to identify key segments and their specific requirements.
     - Develop customized communication plans for each segment, highlighting the benefits and relevance of Power Platform to their roles.
     - Use various communication channels, such as emails, newsletters, webinars, and intranet posts, to reach each segment effectively.

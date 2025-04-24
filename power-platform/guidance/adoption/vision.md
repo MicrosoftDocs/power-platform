@@ -8,7 +8,7 @@ ms.topic: best-practice
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
-ms.date: 04/23/2025
+ms.date: 04/24/2025
 ms.contributors:
   - vabhavir
 ms.custom:
@@ -159,7 +159,7 @@ Here are some examples of measurable key results:
 - Enable citizen developers through a standard onboarding process and training, increasing IT capacity by ___% and decreasing time to value by ___%.
 - Achieve ___% increase in automated processes year over year.
 
-Review [common goals when adopting Power Platform](common-vision/vision-overview.md) to find inspiration for measurable key results based on why you're adopting Power Platform.
+Review [common goals when adopting Power Platform](common-vision/index.md) to find inspiration for measurable key results based on why you're adopting Power Platform.
 
 ### Align to organization direction
 
@@ -181,7 +181,7 @@ Here are some examples of objectives:
 - Establish an inclusive culture of innovation and experimentation.
 - Create a culture of collaboration that drives employee satisfaction and tangible outcomes.
 
-Review [common goals for adopting Power Platform](common-vision/vision-overview.md) to find inspiration for objectives based on why you're adopting Power Platform.
+Review [common goals for adopting Power Platform](common-vision/index.md) to find inspiration for objectives based on why you're adopting Power Platform.
 
 ## Define initiatives
 
@@ -205,7 +205,7 @@ Continuously monitor the progress of your Power Platform adoption strategy again
 
 Understanding the objectives and goals behind your organization's Power Platform adoption can help you achieve more successful business outcomes. Review common objectives, goals, and initiatives to help drive alignment with your stakeholders and create positive business outcomes.
 
-Learn more: [Review common objectives and goals](common-vision/vision-overview.md)
+Learn more: [Review common objectives and goals](common-vision/index.md)
 
 Measuring business value in Power Platform is an important aspect of ensuring success and return on investment. Learn methods and tools to measure business value, how to measure value at scale, and how to communicate business value to your stakeholders.
 
