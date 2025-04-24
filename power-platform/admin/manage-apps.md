@@ -17,7 +17,7 @@ search.audienceType:
 
 [!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
-You can use the Microsoft Power Platform admin center to install, configure, and manage Dynamics 365 apps that run on [Microsoft Dataverse](/powerapps/maker/common-data-service/data-platform-intro). Apps in this topic refer to Dynamics 365 apps such as Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, and Dynamics 365 Marketing as well as apps purchased from Microsoft AppSource requiring any of these Dynamics 365 licenses.
+You can use the Microsoft Power Platform admin center to install, configure, and manage Dynamics 365 apps that run on [Microsoft Dataverse](/powerapps/maker/common-data-service/data-platform-intro). Apps in this topic refer to Dynamics 365 apps such as Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing and apps purchased from Microsoft AppSource requiring any of these Dynamics 365 licenses.
 
 > [!NOTE]
 > You can install and manage Dynamics 365 apps only in an environment that was created with a database and with Dynamics 365 apps enabled during the environment creation. A valid Dynamics 365 license is required to enable Dynamics 365 apps during the environment creation. More information: [Create an environment with a database](./create-environment.md#create-an-environment-with-a-database)
@@ -38,9 +38,9 @@ App management is done from the tenant-level view of apps in the Power Platform 
 1. In the navigation pane, expand **Resources**, and then select **Dynamics 365 Apps**.
 ---
 
-You'll see a list of installed&mdash;or available to install or configure&mdash;Dynamics 365 apps for the signed-in user. The system administrator can view all installed or available to install apps. 
+You see a list of installed&mdash;or available to install or configure&mdash;Dynamics 365 apps for the signed-in user. The system administrator can view all installed or available to install apps. 
    
-Duplicate items will appear under **Name** if you have the same app license applied to multiple environments.
+Duplicate items appear under **Name** if you have the same app license applied to multiple environments.
 
 Note the following under **Status**:
 
@@ -52,7 +52,7 @@ From the top command bar, depending on the status of the app, you can do the fol
 
 - **Manage**: Select to go to a page where you can manage your app. 
 - **Details**: See information about the app such as the publisher.
-- **Install app**: Install certain applications to the selected environment for which you have permissions. Once an environment is selected, you'll see a list of packages to be installed.
+- **Install app**: Install certain applications to the selected environment for which you have permissions. Once an environment is selected, you see a list of packages to be installed.
 
 If your tenant is multigeo, you can change the locale with the region selector in the top command bar.
 
@@ -78,7 +78,7 @@ You see a list of Dynamics 365 apps installed **by you** in the selected environ
 
 Select an app. From the top menu bar, depending on the status of the app, you can do the following:
 
-- **Install app**: Admins can install certain applications to the selected environment for which they have permission. Once an environment is selected, you'll see a list of packages to be installed.
+- **Install app**: Admins can install certain applications to the selected environment for which they have permission. Once an environment is selected, you see a list of packages to be installed.
 - **Open AppSource**: Select to install an app from AppSource.
 - **Update**: Appears if an update is available. Select to update the package.
 - **Details**: See information about the app such as the publisher.
@@ -104,8 +104,8 @@ You see a list of apps that are available to install and configure in the tenant
 
 **To install an app:**
 1. Select an **Enabled** app, then choose **Install** from the top command bar. 
-1. In the side pane, select an **environment**, review the packages to be installed, then agree to the terms of service by selecting **Agree**, followed by **Install**.
-1. You'll navigate to the environment-level view where you can see the installation status.
+1. In the side pane, select an **environment**. Review the packages to be installed, then agree to the terms of service by selecting **Agree**, followed by **Install**.
+1. Navigate to the environment-level view where you can see the installation status.
 
 ### Install an app in the environment view
 
