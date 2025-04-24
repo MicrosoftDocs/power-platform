@@ -22,16 +22,16 @@ To maintain the integrity of your data, it's a good idea to have rules in place 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
-1. In the **Environments** page, select an environment.
-1. Select **Settings** in the command bar.
-1. Expand **Data management**, and then select **Duplicate detection rules**. 
+1. On the **Environments** page, select an environment.
+1. In the command bar, select **Settings** .
+1. Expand **Data management**, then select **Duplicate detection rules**. 
 
 ## [Classic admin center](#tab/classic)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, **Environments**.
-1. In the **Environments** page, select an environment.
-1. Select **Settings** in the command bar.
-1. Expand **Data management**, and then select **Duplicate detection rules**. 
+1. In the navigation pane, select **Environments**.
+1. On the **Environments** page, select an environment.
+1. In the command bar, select **Settings** .
+1. Expand **Data management**, then select **Duplicate detection rules**. 
 ---
 
 1. To create a new duplicate detection rule, select **New**. Type a name and description.  
