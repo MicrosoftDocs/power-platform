@@ -47,7 +47,7 @@ Power Automate operational health metrics and recommendations are available in t
 ### Metric and recommendation pairings
 | Metric | Secondary metric | Title of recommendation | Description of recommendation|
 |---|---|---|---|
-| Success rate | N/A |There are one or more runs that need your attention. | Review the list of runs and open flows or run details to troubleshoot.| 
-| Time in queue| N/A | Investigate and adjust the machine capacity and prioritization. | Your current machine capacity is preventing your desktop flows from running efficiently. Investigate and adjust the machine capacity and prioritization.  |
+| Success rate | Not applicable  |There are one or more runs that need your attention. | Review the list of runs and open flows or run details to troubleshoot.| 
+| Time in queue| Not applicable | Investigate and adjust the machine capacity and prioritization. | Your current machine capacity is preventing your desktop flows from running efficiently. Investigate and adjust the machine capacity and prioritization.  |
 
 
