@@ -43,3 +43,8 @@ Use Power Platform Well-Architected to evaluate and align your decisions with de
 - [Experience Optimization](/power-platform/well-architected/experience-optimization/)
 
 Evaluate the trade-offs between these architectural pillars to create a design that meets business requirements and is durable, maintainable, secure, and scalable.
+
+## Related resources
+
+- [Azure Architecture Center](/azure/architecture/)
+- [Dynamics 365 reference architectures](/dynamics365/guidance/reference-architectures/)
