@@ -51,7 +51,7 @@ To produce health metrics and generate recommendations, Power Platform monitorin
 
 Admin experiences are available to Power Platform service and Dynamics 365 admins, who can view monitoring data across the tenant. Makers can view data only for resources that they have edit privileges for in the runtime environment. Power Automate doesn't have a **Monitor** page in the maker portal. However, users can use the [Automation center](/power-automate/automation-center-overview) for a similar experience.
 
-:::image type="content" source="../media/monitoring-architecture.png" alt-text="Diagram that shows the flow of monitoring data to both a maker and an admin, starting from users in the runtime environment.":::
+:::image type="content" source="../media/monitoring-architecture.svg" alt-text="Diagram that shows the flow of monitoring data to both a maker and an admin, starting from users in the runtime environment." lightbox="../media/monitoring-architecture.svg":::
 
 ## Purpose of the Monitor page
 

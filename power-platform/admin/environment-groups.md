@@ -3,7 +3,7 @@ title: Environment groups
 description: Learn how to organize your Managed Environments into groups and govern them in bulk.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/03/2025
+ms.date: 04/17/2025
 author: mikferland-msft
 ms.author: miferlan
 ms.reviewer: sericks
@@ -252,6 +252,9 @@ If an environment group is no longer needed, administrators can delete it to avo
 
 > [!IMPORTANT]
 > When you delete a group, first remove all of its environments and ensure no developer environments are routed to it. If a group still has environments, you see a warning that prevents you from deleting the group.
+
+## Known limitation
+If you've published any of the following rules within your environment group, the corresponding settings at the environment level are overridden when added added to the group: sharing limits, maker welcome content, solution checker, usage insights, backup retention, and generative AI settings. For example, if you've published sharing limits in your environment group, but already had maker welcome content and sharing limits set at the environment level, upon adding the environment to the group, the sharing limits are updated to match the group's sharing limits and the maker welcome content is reset.
 
 ## Related content
 

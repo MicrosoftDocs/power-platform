@@ -11,6 +11,7 @@ ms.reviewer: sericks
 search.audienceType:
   - admin
 contributors:
+  - v-aangie
   - CedrickBellarosa 
   - antoinecellerier 
   - JesseParsons
@@ -151,7 +152,7 @@ More Copilots and generative AI features will be available in the future.
 | Power Apps | Build apps through conversation | No | [Build apps through conversation](/power-apps/maker/canvas-apps/ai-conversations-create-app) |
 | Power Apps | Describe a new table | No | [Describe the new table](/power-apps/maker/data-platform/create-edit-entities-portal#describe-the-new-table) |
 | Power Apps | Draft with Copilot | No | [Draft with Copilot](/power-apps/user/well-written-input-text-copilot) |
-| Power Automate | Power Automate designer Copilot | No | [Get started with Copilot in cloud flows (preview)](/power-automate/get-started-with-copilot) |
+| Power Automate | Power Automate designer Copilot | Yes | [Get started with Copilot in cloud flows](/power-automate/get-started-with-copilot) |
 | Power Pages | Copilot | No | [Overview of AI-powered and Copilot features in Power Pages (preview)](/power-pages/configure/ai-copilot-overview) |
 | AI Builder | AI Prompts | Yes | [Overview of Prompts](/ai-builder/prompts-overview) |
 

@@ -3,9 +3,9 @@ title: Extend pipelines using GitHub Actions
 description: Download, unpack, and commit a solution using a GitHub workflow called from a Power Automate flow with Power Apps.
 author: mikefactorial
 ms.author: caburk
-ms.reviewer: sericks
+ms.reviewer: matp
 ms.topic: overview
-ms.date: 03/13/2025
+ms.date: 04/16/2025
 ms.custom: 
 ---
 
@@ -155,6 +155,8 @@ jobs:
               git push origin ${{ github.event.inputs.source_branch }}
           }
 ```
+> [!NOTE]
+> The Dataverse web API used to download the solution artifact has a maximum file size limit of 16 MB.
 
 ## Example Power Automate flow
 

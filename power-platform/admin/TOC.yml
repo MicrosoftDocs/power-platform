@@ -260,7 +260,7 @@
                       href: settings-collaboration.md
                     - name: Features
                       href: settings-features.md
-                    - name: Enable languages
+                    - name: Regional and language options
                       href: enable-languages.md
                     - name: Manage privacy and security settings
                       href: settings-privacy-security.md
@@ -544,6 +544,8 @@
                   href: continuous-access-evaluation.md
                 - name: Control access of TDS endpoint
                   href: control-tds-settings.md
+                - name: Configure the SameSite attribute for session cookies
+                  href: samesite-cookie-mgmt.md
                 - name: Environment security
                   items:
                     - name: Control user access to environments
@@ -552,6 +554,10 @@
                       href: cross-tenant-restrictions.md
                     - name: Configure content security policy
                       href: content-security-policy.md
+                - name: Advanced connector policies (preview)
+                  items: 
+                    - name: Overview
+                      href: advanced-connector-policies.md
                 - name: Data policies
                   items:
                     - name: Overview

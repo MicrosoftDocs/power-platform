@@ -4,8 +4,9 @@ description: View and manage behavior settings for Microsoft Dataverse.
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/17/2024
+ms.date: 04/24/2025
 ms.subservice: admin
+ms.custom: NewPPAC
 ms.author: sericks 
 search.audienceType: 
   - admin
@@ -18,9 +19,25 @@ contributors:
 
 Use behavior settings to adjust how model-driven apps appear and function. These settings don't apply to canvas apps, except where noted.
 
-Adjust the settings in the Power Platform admin center by going to **Environments** > _select an environment_ > **Settings** > **Product** > **Behavior**.
+To adjust the settings in the Power Platform admin center for an environment, follow these steps:
 
-Make sure you have the System Administrator security role or equivalent permissions to update the collaboration settings. To check your security role, see [View your user profile](/powerapps/user/view-your-user-profile). If you don’t have the correct permissions, contact your system administrator.
+## [New admin center](#tab/new)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. On the **Environments** page, select an environment.
+1. In the command bar, select **Settings**.
+1. Expand **Product**, and then select **Behavior**. 
+
+## [Classic admin center](#tab/classic)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Environments**.
+1. On the **Environments** page, select an environment.
+1. In the command bar, select **Settings**.
+1. Expand **Product**, and then select **Behavior**. 
+---
+
+Make sure you have the System Administrator security role or equivalent permissions to update the settings. To check your security role, see [View your user profile](/powerapps/user/view-your-user-profile). If you don’t have the correct permissions, contact your system administrator.
 
 ## Release channel
 
@@ -49,11 +66,11 @@ Make sure you have the System Administrator security role or equivalent permissi
 
 |Settings|Description| Default value |
 |--------------|-----------------|-----|  
-|Use updated experience for classic settings where possible.| If **On**, user is redirected to the modern experience when accessing some settings from the legacy experience.  Learn more at [New location for admin settings](admin-settings.md#new-location-for-admin-settings).|**Off** for existing environment. <br><br>**On** for new environment created after October 2021. |
-|Show the Switch to classic buttons in Power Apps| When **On**, makers are able to open and continue to use the deprecated, classic app view and form designers.  Learn more at [Classic app, form, and view designers are deprecated](../important-changes-coming.md#classic-app-form-and-view-designers-are-deprecated). |On |
+|Use updated experience for classic settings where possible.| If **On**, user is redirected to the modern experience when accessing some settings from the legacy experience. Learn more at [New location for admin settings](admin-settings.md#new-location-for-admin-settings).|**Off** for existing environment. <br><br>**On** for new environment created after October 2021. |
+|Show the Switch to classic buttons in Power Apps| When **On**, makers are able to open and continue to use the deprecated, classic app view and form designers. Learn more at [Classic app, form, and view designers are deprecated](../important-changes-coming.md#classic-app-form-and-view-designers-are-deprecated). |On |
 |Show app download message|If **On**, users see a message regarding downloading the Dynamics 365 for tablets app.| On|
 |Show legacy app to everyone, not just admins|The legacy web app, also known as *Dynamics 365 - custom*, is hidden from end users when a new environment is provisioned. It's always visible to those with System Administrator and System Customizer roles, and to other custom roles with similar privileges.  Learn more at [Dynamics 365 - custom (hidden for users)](enable-unified-interface-only.md#dynamics-365---custom-hidden-for-users).| Off | 
-|Show legacy app for admins|Indicate if the legacy web app, also known as *Dynamics 365 - custom*, is hidden from System Administrator and System Customizer roles, and to other custom roles with similar privileges.  Learn more at [Dynamics 365 - custom (hidden for admins)](enable-unified-interface-only.md#dynamics-365---custom-hidden-for-admins).| Auto<br><br>**Note**: New environments are defaulted to **Off**. | 
+|Show legacy app for admins|Indicate if the legacy web app, also known as *Dynamics 365 - custom*, is hidden from System Administrator and System Customizer roles, and to other custom roles with similar privileges. Learn more at [Dynamics 365 - custom (hidden for admins)](enable-unified-interface-only.md#dynamics-365---custom-hidden-for-admins).| Auto<br><br>**Note**: New environments are defaulted to **Off**. | 
 |Legacy app name|Enter the label to use for the legacy app. This appears on the Dynamics 365 home page. Learn more at [Dynamics 365 - custom (hidden for users)](enable-unified-interface-only.md#dynamics-365---custom-hidden-for-users).|Dynamics 365 - custom |
 |Show welcome screen on sign in|Indicate if you want users to see the welcome screen when they sign in. |  On|
 |Show Power Automate on forms and in the site map|Select **On** to enable embedded Power Automate flows in your organization. Learn more at [Enable embedded Power Automate to automate processes](enable-embedded-flow-in-your-organization.md).<br><br>**Important:** Once the Power Automate integration option has been enabled, it can't be disabled.|  On | 

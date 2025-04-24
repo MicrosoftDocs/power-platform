@@ -1,4 +1,4 @@
----
+﻿---
 title: Launch and Param functions
 description: Reference information including syntax and examples for the Launch and Param functions.
 author: gregli-msft
@@ -17,8 +17,9 @@ contributors:
 ---
 
 # Launch and Param functions
+[!INCLUDE[function-param-applies-to](includes/function-param-applies-to.md)]
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps
+
 
 Launches a webpage or a canvas app and provides access to launch parameters.
 
@@ -316,3 +317,138 @@ The **Product Showcase** tablet layout template was used for the following examp
 [Canvas app formula reference](/power-apps/maker/canvas-apps/formula-reference)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

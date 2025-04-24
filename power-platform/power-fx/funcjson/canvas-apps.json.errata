@@ -1,0 +1,32 @@
+### errata for canvas apps
+
+# not available in canvas yet
+- Confirm
+- Decimal
+- Float
+- TraceValue
+
+# deprecated functions
+- ScanBarcode
+
+# old data caching functions
+- Pending
+- State
+
+# functions available by adding Environment.*
++ AIClassify
++ AIExtract
++ AIReply
++ AISentiment
++ AISummarize
++ AITranslate
+
+# user defined type functions aren't real functions and won't show up in the json file
++ Type
++ RecordOf
+
+# special operators that are Canvas specific
++ ThisItem
++ Self
++ Parent
+
