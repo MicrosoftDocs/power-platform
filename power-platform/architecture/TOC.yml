@@ -89,6 +89,8 @@
           href: products/microsoft-dataverse.md
         - name: Copilot Studio
           href: products/copilot-studio.md
+    - name: Contribute
+      href: contribute.md
     - name: Power Platform icons
       href: /power-platform/guidance/icons?toc=/power-platform/architecture/toc.json&bc=/power-platform/architecture/breadcrumb/toc.json
     - name: Power Platform Well-Architected
