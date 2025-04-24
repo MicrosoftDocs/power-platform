@@ -41,6 +41,7 @@ These admins can't perform activities that require direct access to Dataverse da
 
 > [!IMPORTANT]
 > Global admins, Power Platform admins, and Dynamics 365 service administrators must complete another step before they can perform activities requiring access to Dataverse. They must elevate themselves to the **System Administrator** role in the environment where they need access. All elevation actions are logged to Microsoft Purview.
+> 
 > If you use Privileged Identity Management to get just-in-time access to admin roles in Microsoft Entra ID and then self-elevate, Microsoft removes your **System Administrator** role when role assignment expires in Privileged Identity Management, usually after a short duration.
 
 ## Known limitations
