@@ -151,7 +151,7 @@ The following table lists these measures along with example questions.
 
 Align the business value of Power Platform solutions to the organization's key performance indicators (KPIs), objectives, and key results (OKRs) to maximize the impact of the solutions.
 
-Aligning Power Platform solutions to KPIs and OKRs ensures that organizations address the most critical business needs and drive significant impact. This strategy helps senior leaders and decision makers see Power Platform solutions as valuable investments, making it easier to approve resource allocation. Various tools and calculators are available to help.
+Aligning Power Platform solutions to KPIs and OKRs ensures that organizations address the most critical business needs and drive significant impact. This strategy helps senior leaders and decision makers see Power Platform solutions as valuable investments, making it easier to approve resource allocation. Various tools and calculators are available to help, check out the [Business Value toolkit](/power-platform/guidance/coe/business-value-toolkit), [Innovation Backlog](/power-platform/guidance/coe/innovationbacklog-components), [Automation Project app](/power-automate/guidance/automation-kit/use-automation-kit#automation-project-app).
 
 ## How to communicate business value
 
