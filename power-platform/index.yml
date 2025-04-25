@@ -132,7 +132,7 @@ additionalContent:
           url: ./developer/index.yml
         # Card
         - title: Architecture Center
-          summary: "Guidance for architecting solutions with Microsoft Power Platform and Copilot Studio using established patterns and best practices"
+          summary: "Guidance for architecting solutions with Power Platform and Copilot Studio using established patterns and best practices"
           url: ./architecture/index.yml
         # Card
         - title: Well-Architected
