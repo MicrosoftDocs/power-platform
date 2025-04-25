@@ -1,4 +1,4 @@
----
+﻿---
 title: Host object in Power Apps
 description: Reference information including syntax and examples for the Host object in Power Apps.
 author: gregli
@@ -13,8 +13,9 @@ contributors:
   - gregli
 ---
 # Host object in Power Apps
+[!INCLUDE[object-host-applies-to](includes/object-host-applies-to.md)]
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps 
+
 
 The **Host** object in Power Apps provides information about the current host running the app.
 
@@ -163,3 +164,137 @@ Host.SessionID: a09a946d-ce71-4c1f-bd35-519c79849c8d
 Host.TenantID: aaaabbbb-0000-cccc-1111-dddd2222eeee
 Host.Version: PowerApps-Web/3.23084.6(iOS)
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

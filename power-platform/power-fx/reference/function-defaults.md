@@ -1,4 +1,4 @@
----
+﻿---
 title: Defaults function
 description: Reference information including syntax and examples for the Defaults function.
 author: gregli-msft
@@ -18,8 +18,9 @@ contributors:
 ---
 
 # Defaults function
+[!INCLUDE[function-defaults-applies-to](includes/function-defaults-applies-to.md)]
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps 
+
 
 Returns the default values for a [data source](/power-apps/maker/canvas-apps/working-with-data-sources).
 
@@ -46,3 +47,139 @@ You can combine the **Defaults** function with the **[Patch](function-patch.md)*
 | **Defaults(&nbsp;Scores&nbsp;)** | Returns the default values for the **Scores** data source. | **{ Score: 0 }** |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -3,12 +3,14 @@ title: Set up Virtual Network support for Power Platform
 description: Learn how to set up Azure Virtual Network support for Power Platform.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/20/2025
+ms.date: 04/24/2025
 author: faix 
 ms.author: osfaixat 
 ms.reviewer: sericks
 ms.subservice: admin
-ms.custom: "admin-security"
+ms.custom: 
+  - admin-security
+  - NewPPAC
 search.audienceType: 
   - admin
 ---
@@ -46,7 +48,7 @@ The following diagram shows virtual network support in a Power Platform environm
 
 ## Set up Virtual Network support
 
-The following four steps help you set up your virtual network.
+The following steps help you set up your virtual network.
 
 1. [Set up the virtual network and subnets](#set-up-the-virtual-network-and-subnets).
 
@@ -86,13 +88,24 @@ When you set up your virtual network, you need to delegate a subnet to the assoc
 
 ### Validate the connection
 
-1. Go to the [Power Platform admin center](https://aka.ms/ppac) and select the environment where you set up virtual network support.
+## [New admin center](#tab/new)
 
-1. Select **History**.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. On the **Environments** page, select an environment.
+1. In the command bar, select **History**.
+1. The **enterprise policies link** works if the **Status** shows **Succeeded**.
 
-   You should see that the enterprise policies link with your environment is successful if the **Status** says **Succeeded**.
+## [Classic admin center](#tab/classic)
 
-    :::image type="content" source="media/vnet-support/vnet-success-linked.png" alt-text="Screenshot showing your virtual network is linked to your environment." lightbox="media/vnet-support/vnet-success-linked.png":::
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Environments**.
+1. On the **Environments** page, select an environment.
+1. In the command bar, select **History**.
+1. The **enterprise policies link** works if the **Status** shows **Succeeded**.
+
+---
 
 ### Related content
 
