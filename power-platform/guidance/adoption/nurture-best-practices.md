@@ -39,6 +39,6 @@ By exploring these questions, you embark on a journey to connect the dots and cr
 These steps help you build a thriving Power Platform community that meets individual needs and drives organizational success.
 
 > [!TIP]
-> In addition this documentation, the [Microsoft Power Platform Adoption Workbook](https://aka.ms/powerplatformadoptionworkbook) contains practical step-by-step guidance to help nurture your Power Platform community. You can find this workbook and other resources on [the Microsoft Power Platform Adoption website](https://adoption.microsoft.com/powerplatform).
+> In addition this documentation, the [Microsoft Power Platform Adoption Planning Workbook](https://aka.ms/powerplatformadoptionworkbook) contains practical step-by-step guidance to help nurture your Power Platform community. You can find this workbook and other resources on [the Microsoft Power Platform Adoption website](https://adoption.microsoft.com/powerplatform).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

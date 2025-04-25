@@ -14,7 +14,7 @@ ms.contributors:
   - jean-romero
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 03/07/2025
+ms.date: 04/25/2025
 ms.subservice: guidance
 ms.reviewer: pankajsharma2087
 search.audienceType:
@@ -51,7 +51,7 @@ Measuring the business value of Power Platform solutions involves qualitative an
 Choosing the best value measurement method and tool involves considering several key factors. Here are some steps to guide you:
 
 - **Define your objectives**: Clearly outline what you aim to achieve with the measurement. Include improving efficiency, tracking progress, or demonstrating value to stakeholders.
-- **Identify key metrics**: Determine the specific metrics that will help you measure value, such as financial metrics, performance indicators, or customer satisfaction scores.
+- **Identify key metrics**: Determine specific metrics to help you measure value, such as financial metrics, performance indicators, or customer satisfaction scores.
 - **Evaluate automation capabilities**: Look for tools that offer robust automation features. Automation can save significant time by reducing manual data entry and ensuring consistent data collection.
 - **Assess reporting features**: Choose tools that provide comprehensive reporting capabilities like customizable reports, real-time data visualization, and the ability to export data in various formats.
 - **Consider integration**: Ensure the tool can integrate with your existing systems so that you can streamline data flow and reduce the need for duplicate data entry. For example, consider integrating a feedback mechanism directly within the app to streamline the process for users. This approach eliminates the need for users to leave the app and navigate to an external form or system. By embedding feedback options within the app interface, you capture real-time insights and improve user engagement.
@@ -77,11 +77,13 @@ Your organization's field engineering team must perform a safety inspection of t
 
 ### Measuring tangible value
 
-- **Employee productivity and efficiency improvement**: Digitizing the process has the potential to streamline submitting and processing vehicle safety checks. Some effort will be required by the engineers to submit vehicle checks; for example, they might need to follow new guidelines to ensure the requests are completed accurately. The tangible value of digitizing the process as measured by employee productivity and efficiency is low or difficult to calculate at this point.
+Digitizing the process has the potential to streamline submitting and processing vehicle safety checks. However, the tangible value of digitizing the process is difficult to quantify. Here are some suggestions:
+
+- **Employee productivity and efficiency improvement**: Engineers need to put in some effort to submit vehicle checks. For example, they might need to follow new guidelines to ensure requests are completed accurately. The tangible value of digitizing the process as measured by employee productivity and efficiency is low or difficult to calculate at this point.
 
 - **Cost savings**: Based on the hourly rate of $50 for a field engineer, and assuming each engineer spends 12 hours per year on the process, the total cost to the organization is $600 per engineer, per year.
 
-    Based on an analysis of time savings, the potential cost saving of digitizing the process might not be as large as expected. However, there may be intangible benefits of a digitized process&mdash;such as improved data accuracy and faster access to information&mdash;that are difficult to quantify yet add value to the organization.
+Based on an analysis of time savings, the potential cost saving of digitizing the process might not be as large as expected. However, there may be intangible benefits of a digitized process&mdash;such as improved data accuracy and faster access to information&mdash;that are difficult to quantify, yet add value to the organization.
 
 ### Measuring intangible value
 
@@ -94,7 +96,7 @@ Forms are stored in filing cabinets at each depot, which means there's no centra
 
 ### Business value assessment outcome
 
-By talking to subject matter experts and looking at the current process, you've established the value of digitizing the process through the following measures:
+By consulting subject matter experts and analyzing the current process, you've established the value of digitizing the process through these measures:
 
 | Measure | Business value | Value type | Value level |
 |---------|----------------|------------|-------------|
@@ -103,11 +105,11 @@ By talking to subject matter experts and looking at the current process, you've 
 | Reduction of risk | Digitizing the process increases daily safety check compliance and leads to a reduction in unsafe vehicles. | Intangible | High |
 | Reduction of cost | There may be earlier detection of vehicle faults creating a reduction in fleet maintenance costs. | Intangible | High |
 | Employee experience | Simplifying the process may lead to improved employee satisfaction and engagement as employees can complete their tasks with greater ease and efficiency. | Intangible | Medium |
-| Customer experience | Less disruption due to faulty vehicles. | Intangible | High |
+| Customer experience | Digitizing the process results in less disruption from faulty vehicles. | Intangible | High |
 
 ## Business value toolkit
 
-The [Business value toolkit](../coe/business-value-toolkit.md) is a feature of the [Center of Excellence Starter Kit](../coe/overview.md) that provides a comprehensive framework to capture and communicate the value of Power Platform solutions. By guiding app owners through a structured storytelling process, enhanced by AI to both refine the narrative and analyze its impact on organizational strategic objectives, the toolkit helps transform raw insights into compelling success stories that highlight the true impact of their solutions.
+The [Business value toolkit](../coe/business-value-toolkit.md) is a feature of the [Center of Excellence starter kit](../coe/overview.md) that provides a comprehensive framework to capture and communicate the value of Power Platform solutions. It guides app owners through a structured storytelling process, enhanced by AI, to refine the narrative and analyze its impact on organizational strategic objectives. The toolkit helps transform raw insights into compelling success stories that highlight the true impact of their solutions.
 
 Learn more:
 
@@ -116,7 +118,7 @@ Learn more:
 
 ## Next step
 
-Next, take a step back and consider the bigger picture of your adoption journey with strategic initiatives or *value plays,* strategies designed to help you identify high-impact opportunities and execute them effectively.
+Next, step back and consider the bigger picture of your adoption journey with strategic initiatives or *value plays,* strategies designed to help you identify high-impact opportunities and execute them effectively.
 
 > [!div class="nextstepaction"]
 > [Use business value plays](value-plays.md)

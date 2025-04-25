@@ -11,7 +11,7 @@ ms.reviewer: pankajsharma2087
 author: stjeffer
 ms.contributors: 
 - stjeffer
-ms.date: 03/03/2025
+ms.date: 04/25/2025
 ms.custom:
   - ai-gen-docs-bap
   - ai-gen-description
@@ -35,7 +35,7 @@ Here's how to apply value plays:
 
 1. **Execute and iterate**: Implement the value plays by developing and deploying solutions using Power Platform. Continuously gather feedback and iterate on the solution to ensure it meets the defined objectives and delivers the expected value.
 
-1. **Measure and communicate results**: Collect data to measure the success of the value plays. Use tools like Power BI to analyze and visualize the results. Communicate the outcomes to stakeholders through clear and concise reports, highlighting both the tangible and intangible benefits achieved.
+1. **Measure and communicate results**: Collect data to measure the success of the value plays. Use tools like Power BI to analyze and visualize the results. Communicate the outcomes to stakeholders through clear and concise reports, including highlight both the tangible and intangible benefits achieved.
 
 ### Monitor and measure value
 
@@ -80,21 +80,21 @@ A value play consists of the following key components:
 
 ## Example value plays
 
-The following value plays aren't intended as an exhaustive list but rather a starting point for creating a simple, repeatable approach to measure and demonstrate business value. As your use of Power Platform grows and matures, your value plays will become more sophisticated, enabling you to capture and communicate even greater value.
+The following value plays aren't intended as an exhaustive list but rather a starting point for creating a simple, repeatable approach to measure and demonstrate business value. As your use of Power Platform grows and matures, your value plays will become more sophisticated and enable you to capture and communicate even greater value.
 
 >[!TIP]
-> In addition to this guidance, download step-by-step guidance and templates for using business value plays in the [Business Value Play Workbook](https://aka.ms/ppvalueplays).
+> In addition to this guidance, download step-by-step guidance and templates for using business value plays in the [Business Value Plays workbook](https://aka.ms/ppvalueplays).
 
-- The Innovation Accelerator: The Power Platform Innovation Accelerator focuses on Power Platform's ability to co-design, test, deploy, and iterate faster than other development methods.
-- The Success Story: Share insightful solution case studies and maker success stories that bring to life the day-to-day value of Power Platform and inspire increased adoption.
-- The Graduate Program: Help Graduate (or Vacation) Program participants to jump-start their career through valuable, real-world skills in developing Power Platform solutions.
-- The Innovation Backlog: The Power Platform Innovation Backlog enables the business to capture ideas and describe process pain points, so that developers can prioritize high-value work.
-- The Paper-to-Power-App: Power Platform lets you capture data faster and with greater accuracy, and do more with the data you gather.
-- The Cream of the Crop: Identify and calculate ROI for your top apps and flows based on time and cost savings achieved (so you don't have to try to measure everything).
-- The Finance "Excelerator:" Challenge the Finance department to identify and replace routine, manual, spreadsheet-based data collection processes with Power Platform solutions.
-- The Insight Sharer: Ensure project lessons are actually learned with a Power Platform solution that automatically shares insights across teams and projects.
-- The Stakeholder Aligner: Co-design and rapid ideation in Power Platform support stakeholder buy-in, as stakeholders see their ideas come to life, and de-risk projects through shared understanding of requirements.
-- The Reuse, Buy, Build reverse value play: Challenge the *avoid custom development* mindset by proving the sustained value and supportability of Power Platform solutions.
+- **The Innovation Accelerator**: The Power Platform Innovation Accelerator focuses on Power Platform's ability to co-design, test, deploy, and iterate faster than other development methods.
+- **The Success Story**: Share insightful solution case studies and maker success stories that bring to life the day-to-day value of Power Platform and inspire increased adoption.
+- **The Graduate Program**: Help Graduate (or Vacation) Program participants to jump-start their career through valuable, real-world skills in developing Power Platform solutions.
+- **The Innovation Backlog**: The Power Platform Innovation Backlog enables the business to capture ideas and describe process pain points, so that developers can prioritize high-value work.
+- **The Paper-to-Power-App**: Power Platform lets you capture data faster and with greater accuracy, and do more with the data you gather.
+- **The Cream of the Crop**: Identify and calculate ROI for your top apps and flows based on time and cost savings achieved (so you don't have to try to measure everything).
+- **The Finance "Excelerator:**" Challenge the Finance department to identify and replace routine, manual, spreadsheet-based data collection processes with Power Platform solutions.
+- **The Insight Sharer**: Ensure project lessons are actually learned with a Power Platform solution that automatically shares insights across teams and projects.
+- **The Stakeholder Aligner**: Co-design and rapid ideation in Power Platform support stakeholder buy-in, as stakeholders see their ideas come to life, and de-risk projects through shared understanding of requirements.
+- **The Reuse, Buy, Build reverse value play**: Challenge the *avoid custom development* mindset by proving the sustained value and supportability of Power Platform solutions.
 
 ## Next step
 

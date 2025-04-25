@@ -5,7 +5,7 @@ description: Discover repeatable patterns and practices for successful Power Pla
 author: manuelap-msft
 ms.subservice: guidance
 ms.topic: concept-article
-ms.date: 04/21/2025
+ms.date: 04/25/2025
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
 search.audienceType: 
@@ -21,7 +21,7 @@ This transformation is more critical than ever. Technology is disrupting every i
 Organizational adoption maturity is a long journey. It takes time, effort, and planning to progress. Consistent themes, patterns, practices, and behaviors drive the success of organizations implementing comprehensive digital transformation with Power Platform. These common elements are reflected in the Power Platform adoption maturity model, a framework designed to help organizations progress from ad hoc processes to well-defined, optimized, and continuously improving practices. 
 
 > [!NOTE]
-> The Power Platform maturity model is based on the Capability Maturity Model (CMM), a development model widely used in software development, IT, and other industries to assess and enhance organizational maturity. 
+> The Power Platform maturity model is based on the Capability Maturity Model (CMM), a development model widely used in software development, IT, and other industries to assess and enhance organizational maturity. Another such model is [Microsoft's Platform Engineering Capability Model](/platform-engineering/platform-engineering-capability-model), designed to improve platform engineering practices.
 
 ## Next steps
 

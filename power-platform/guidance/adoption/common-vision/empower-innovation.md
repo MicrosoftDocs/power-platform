@@ -25,7 +25,7 @@ Power Platform allows nontechnical users to create and deploy solutions, breakin
 
 ## Objectives
 
-Objectives are the key themes or focus areas that the strategy aims to achieve. They are broad, overarching goals that align with the organizational vision and priorities. Objectives provide direction and set the stage for the initiatives and key results. Objectives help ensure that everyone in the organization understands what the strategy aims to accomplish and why it's important.
+[!INCLUDE [guidance-adoption-common-goals-objectives](../../../includes/guidance-adoption-common-goals-objectives.md)]
 
 Typical objectives for empowering innovation and AI culture include:
 
@@ -45,7 +45,7 @@ Typical objectives for empowering innovation and AI culture include:
 
 ## Measurable key results
 
-Key results are specific, quantifiable outcomes that indicate progress towards achieving the strategic objectives. They provide clear benchmarks for success and help in tracking performance. Defining key results is necessary because they offer a way to measure the effectiveness of the initiatives and ensure that the objectives are met. Key results should be realistic, time-bound, and directly linked to the objectives.
+[!INCLUDE [guidance-adoption-common-goals-results](../../../includes/guidance-adoption-common-goals-results.md)]
 
 Typical key results, aligned with some of the [objectives](#objectives), for empowering innovation and AI culture include:
 
@@ -61,7 +61,7 @@ Typical key results, aligned with some of the [objectives](#objectives), for emp
     - Provide comprehensive training and resources to empower employees and increase the number of citizen-developed applications by ___%.
     - Empower employees to develop their own solutions and achieve a ___% reduction in the number of IT support requests related to application development. 
 - **Use low-code to challenge legacy technology and processes**:
-    - Decommission legacy system and modernize systems with low-code with a goal of ___% reduction in the number of legacy systems still in use.
+    - Decommission legacy systems and modernize systems with low-code with a goal of ___% reduction in the number of legacy systems still in use.
     - Modernize systems with low-code with a goal of increasing process efficiency, such as time savings, error reduction, and cost savings, with a goal of ___% improvement in process efficiency through low-code solutions.
     - Reduce operating, maintenance, and support cost of legacy systems with a goal of $__ cost reduction.
 - **Create incentives for makers, champions, and departments**:
@@ -79,7 +79,7 @@ Typical key results, aligned with some of the [objectives](#objectives), for emp
 
 ## Key initiatives
 
-Initiatives are specific actions or projects to achieve objectives. They outline what needs to be done immediately, in the next year, and in the next three years. Initiatives provide a roadmap for action and ensure a clear plan to reach objectives. Initiatives should be actionable, prioritized, and aligned with the key results.
+[!INCLUDE [guidance-adoption-common-goals-initiatives](../../../includes/guidance-adoption-common-goals-initiatives.md)]
 
 Typical initiatives, aligned with some of the [objectives](#objectives), for empowering innovation and AI culture include:
 

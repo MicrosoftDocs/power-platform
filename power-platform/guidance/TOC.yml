@@ -26,7 +26,7 @@
             - name: Common goals
               items: 
                 - name: Overview of common goals
-                  href: adoption/common-vision/vision-overview.md
+                  href: adoption/common-vision/index.md
                 - name: Establish a Center of Excellence with governance patterns and practices
                   href: adoption/common-vision/establish-coe.md
                 - name: Measure value and realize return on investment

@@ -25,7 +25,7 @@ A CoE serves as a centralized team or function that oversees the administration,
 
 ## Objectives
 
-Objectives are the key themes or focus areas that the strategy aims to achieve. They are broad, overarching goals that align with the organizational vision and priorities. Objectives provide direction and set the stage for the initiatives and key results. Objectives help ensure that everyone in the organization understands what the strategy aims to accomplish and why it's important.
+[!INCLUDE [guidance-adoption-common-goals-objectives](../../../includes/guidance-adoption-common-goals-objectives.md)]
 
 Typical objectives for establishing a Center of Excellence with governance patterns and practices are:
 
@@ -48,7 +48,7 @@ Typical objectives for establishing a Center of Excellence with governance patte
 
 ## Measurable key results
 
-Key results are specific, quantifiable outcomes that indicate progress towards achieving the strategic objectives. They provide clear benchmarks for success and help in tracking performance. Defining key results is necessary because they offer a way to measure the effectiveness of the initiatives and ensure that the objectives are met. Key results should be realistic, time-bound, and directly linked to the objectives. 
+[!INCLUDE [guidance-adoption-common-goals-results](../../../includes/guidance-adoption-common-goals-results.md)]
 
 Key results, aligned with some of the [objectives](#objectives), for establishing a Center of Excellence with governance patterns and practices are:
 
@@ -82,7 +82,7 @@ Key results, aligned with some of the [objectives](#objectives), for establishin
 
 ## Key initiatives
 
-Initiatives are the specific actions or projects that need to be implemented to achieve the objectives. They outline what needs to be done in the immediate term, in the next year, and in the next three years. Initiatives provide a roadmap for action and ensure that there's a clear plan in place to reach the objectives. Initiatives should be actionable, prioritized, and aligned with the key results. 
+[!INCLUDE [guidance-adoption-common-goals-initiatives](../../../includes/guidance-adoption-common-goals-initiatives.md)]
 
 Typical initiatives, aligned with some of the [objectives](#objectives), for establishing a Center of Excellence with governance patterns and practices are:
 
