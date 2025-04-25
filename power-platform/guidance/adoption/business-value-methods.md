@@ -75,7 +75,7 @@ In the following scenario, you've been asked to measure the business value of di
 
 Your organization's field engineering team must perform a safety inspection of their vehicles daily before beginning their work. The inspection involves identifying any faults or damage, recording the mileage, and noting other relevant details. The team documents inspections on paper forms, which are stored in filing cabinets at each depot. The field engineering fleet consists of 1,000 vehicles. The inspection process takes 2-3 minutes per vehicle and poses challenges for tracking and analyzing the data collected and remaining compliant.
 
-### Measuring tangible value
+### Measure tangible value
 
 Digitizing the process has the potential to streamline submitting and processing vehicle safety checks. However, the tangible value of digitizing the process is difficult to quantify. Here are some suggestions:
 
@@ -85,7 +85,7 @@ Digitizing the process has the potential to streamline submitting and processing
 
 Based on an analysis of time savings, the potential cost saving of digitizing the process might not be as large as expected. However, there may be intangible benefits of a digitized process&mdash;such as improved data accuracy and faster access to information&mdash;that are difficult to quantify, yet add value to the organization.
 
-### Measuring intangible value
+### Measure intangible value
 
 Forms are stored in filing cabinets at each depot, which means there's no central visibility or assurance that checks are being performed in a compliant manner. Digitizing the process and establishing a central view on compliance has the following benefits:
 

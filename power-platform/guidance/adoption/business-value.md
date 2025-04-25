@@ -188,7 +188,7 @@ To build a robust business value measurement framework for Power Platform, follo
 - **Reporting and presentation**: Communicate your findings effectively. Develop clear and concise reports that highlight key insights and the impact of Power Platform solutions. Ensure that the reports are tailored to the needs of your audience, whether executives, managers, or team members. Use visual aids and summaries to make the information accessible and engaging.
 
 > [!TIP]
-> The [Business value toolkit](../coe/business-value-toolkit.md) is a feature of the [Center of Excellence Starter Kit](../coe/overview.md) that provides a comprehensive framework to capture and communicate the value of Power Platform solutions effectively. The toolkit allows you to specify objectives and goals, and guides app owners through a structured storytelling process to analyze the impact of their solution on organizational strategic objective.
+> The [Business value toolkit](../coe/business-value-toolkit.md) is a feature of the [Center of Excellence starter kit](../coe/overview.md) that provides a comprehensive framework to capture and communicate the value of Power Platform solutions effectively. The toolkit allows you to specify objectives and goals, and guides app owners through a structured storytelling process to analyze the impact of their solution on organizational strategic objective.
 
 ## Summary
 

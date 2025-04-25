@@ -119,7 +119,7 @@ As you identify and define tasks, consider how your organization's current proce
 - **Change management**: Develop a structured approach to manage changes. Include communication plans and training to reduce disruption.
 - **Handover to support**: Ensure a smooth transition to support teams by providing comprehensive documentation and training to maintain ongoing user satisfaction.
 
-### Prioritize identified tasks into horizons
+### Prioritize tasks into horizons
 
 *Horizon mapping* is a technique used to visualize and prioritize tasks across different time horizons. By mapping tasks into immediate, near-term, and long-term horizons, organizations ensure they address urgent needs while planning for future objectives. This approach helps in balancing short-term demands with long-term strategic goals, ensuring sustained progress and alignment with overall business objectives.
 
@@ -188,6 +188,6 @@ Continuously evolve your roles and responsibilities as your organization progres
 Defining a structured delivery and organization model is essential for driving successful Power Platform adoption within your organization. A well-defined model establishes clear roles and responsibilities and fosters collaboration and innovation.
 
 > [!div class="nextstepaction"]
-> [Evaluate delivery models](delivery-models.md.md)
+> [Evaluate delivery models](delivery-models.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
