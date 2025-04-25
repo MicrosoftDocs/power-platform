@@ -101,7 +101,3 @@ Getting executive sponsorship and executive leadership buy-in is one of the most
 
 > [!div class="nextstepaction"]
 > [Get executive sponsorship](executive-sponsorship.md)
-
-## Related information
-
-- [Success story framework](nurture-best-practices.md)
