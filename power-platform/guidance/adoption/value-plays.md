@@ -8,7 +8,6 @@ ms.topic: concept-article
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
-author: stjeffer
 ms.contributors: 
 - stjeffer
 ms.date: 04/25/2025
