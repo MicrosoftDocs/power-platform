@@ -96,7 +96,7 @@ An example using POST:
 
 ### Add record in SharePoint Managed Identities table
 
-Insert a row into the `sharepointmanagedidentity` table using values from the following table.
+Insert a row into the [`sharepointmanagedidentity`](/power-apps/developer/data-platform/reference/entities/sharepointmanagedidentity) table using values from the following table.
 
 | Table field | Value |
 | --- | --- |
