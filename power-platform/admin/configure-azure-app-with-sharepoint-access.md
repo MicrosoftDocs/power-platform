@@ -68,7 +68,7 @@ Create managed identity records in Dataverse. Learn more about managed identitie
 
 ### Add record in Managed Identities table
 
-Insert a row into the [`managedidentities`](/power-apps/developer/data-platform/reference/entities/managedidentity) table using values from the following table.
+Insert a row into the [`managedidentities`](/power-apps/developer/data-platform/reference/entities/managedidentity) table using values from the following table. [Learn how to create a table row using the Web API](/power-apps/developer/data-platform/webapi/create-entity-web-api).
 
 | Table field | Value |
 | --- | --- |
@@ -96,7 +96,7 @@ An example using POST:
 
 ### Add record in SharePoint Managed Identities table
 
-Insert a row into the [`sharepointmanagedidentity`](/power-apps/developer/data-platform/reference/entities/sharepointmanagedidentity) table using values from the following table.
+Insert a row into the [`sharepointmanagedidentity`](/power-apps/developer/data-platform/reference/entities/sharepointmanagedidentity) table using values from the following table. [Learn how to create a table row using the Web API](/power-apps/developer/data-platform/webapi/create-entity-web-api).
 
 | Table field | Value |
 | --- | --- |
