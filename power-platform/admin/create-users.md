@@ -5,7 +5,9 @@ author: sericks007
 ms.reviewer: sericks007
 ms.subservice: admin
 ms.author: sericks
-ms.custom: "admin-security"
+ms.custom: 
+- "admin-security"
+- NewPPAC
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 11/14/2024
@@ -118,18 +120,33 @@ The following table shows the fields that are managed in the **Users** section o
 >
 > The system adds a "#" as the First Name if the First Name was originally blank.
 
-The following image shows Microsoft 365 user contact fields.
-
-![Job title, Department, Office, Office phone, Mobile phone, Fax number, Street address, City, State or province, ZIP or postal code, Country or region.](media/office-365-contact-info.png "Job title, Department, Office, Office phone, Mobile phone, Fax number, Street address, City, State or province, ZIP or postal code, Country or region")
-
 ## View and edit a user profile
 
 To view and edit a user's profile in the Power Platform admin center:
 
-1. Select an environment and go to **Settings** > **Users + permissions** > **Users**.
-2. Select a user in the list.
+#### [New admin center](#tab/new)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. On the **Environments** page, choose an environment.
+1. In the command bar, select **Settings**. 
+1. Expand **Users + permissions**, then select **Users**.
+1. Select a user from the list.
+   
+#### [Classic admin center](#tab/classic)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Environments**.
+1. On the **Environments** page, choose an environment.
+1. In the command bar, select **Settings**.  
+1. Expand **Users + permissions**, then select **Users**.
+1. Select a user from the list.
+---
 
-On the user profile page you can view and make changes to important user profile information such as security roles, team membership, business unit, manager, position, and more. You can also **Run diagnostics** to troubleshoot access issues or **Refresh User** to resync from Microsoft Entra ID. 
+On the **user profile** page, you can view and modify key user profile details, including security roles, team membership, business unit, manager, position, and more.
+
+Additionally, you can:
+- Use **Run diagnostics** to troubleshoot access issues.
+- Use **Refresh User** to resync information from Microsoft Entra ID. 
 
 ## Add a license to a user account
 
@@ -165,24 +182,25 @@ To enable a user in an environment that has a Dataverse database, you enable sig
 #### To enable sign-in
 
 1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com).
-2. Select **Users** > **Active users**, and then select the user.
-3. Ensure that under the user's display name, you see **Sign in allowed**. If you don't, select **Block this user**, and then unblock sign in.
+2. In the navigation pane, select **Users**, then choose **Active users**.
+3. On the **Active users** page, select the user you want to update.
+4. Ensure that under the user's display name, you see **Sign in allowed**. If you don't, select **Block this user**, then unblock sign in.
 
 #### To assign a license
 
 1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com).
-2. Select **Users** > **Active users**, and then select the user.
-3. Select the **Licenses and Apps** tab, and then select the licenses you want to assign.
-4. Select **Save changes**.
+2. In the navigation pane, select **Users**, then choose **Active users**.
+3. On the **Active users** page, select the user you want to update.
+4. Select the **Licenses and Apps** tab, then choose the licenses you want to assign.
+5. Click **Save changes** to apply the changes.
 
 #### To add a user to a security group
 
 1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com).
-2. Select **Teams & groups** > **Active teams & groups**.
-3. Select the security group that's associated with your environment.
-4. Select the **Members** tab. 
-5. Under **Members**, select **View all and manage members** >**Add members**.
-6. Choose users from the list or search for users, and then select **Save**.
+2. In the navigation pane, select **Teams & groups**, then choose **Active teams & groups**.
+3. Select the security group associated with your environment.
+4. Select the **Members** tab, then click **Add members** from the command bar.
+5. Choose users from the list or search for users, then click **Add** to apply the changes.
 
 ### Disable a user account in an environment 
 
@@ -191,18 +209,18 @@ To disable a user account in an environment that has a Dataverse database, you c
 #### To remove a user from a security group
 
 1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com).
-2. Select **Teams & groups** > **Active teams & groups**.
-3. Select the security group that's associated with your environment.
+2. In the navigation pane, select **Teams & groups**, then choose **Active teams & groups**.
+3. Select the security group associated with your environment.
 4. Select the **Members** tab. 
-5. Under **Members**, select **View all and manage members**.
-6. Select the users in the list to remove them, and then select **Save**.
+6. Select the users you want to remove, then click **Remove as member** to apply the changes.
 
 #### To remove a license from a user
 
 1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com).
-2. Select **Users** > **Active users**, and then select the user.
-3. Select the **Licenses and Apps** tab, and then select the licenses you want to remove.
-4. Select **Save changes**.
+2. In the navigation pane, select **Users**, then choose **Active users**.
+3. On the **Active users** page, select the user you want to update.
+4. Select the **Licenses and Apps** tab, then choose the licenses you want to remove.
+5. Click **Save changes** to apply the changes.
 
 Removing a license from a user might not always result in disabling the user account, though the license is freed up for assigning to another user. The recommended approach to disabling a user account in an environment is to remove them from the security group that's associated with the environment.
 
@@ -277,13 +295,33 @@ Adding users to Dataverse has different implications depending on the environmen
 
 By default, all licensed users are created with an access mode of **Read-Write**. This access mode provides full access rights to the user based on the security privileges that are assigned.
 
-**To update the access mode of a user**
+**To update the access mode of a user:**
 
-1. In the Power Platform admin center, select an environment, and go to **Settings** > **Users + permissions** > **Users**.
-1. Select **Enabled Users**, and then open a user from the list.  
-1. On the user pane command bar, select **...** > **Manage user in Dynamics 365**.
-1. In the user form, scroll down under **Administration**  to the **Client Access License (CAL) Information** section. In the **Access Mode** list, select **Read-Write**.  
-1. Select the **Save** icon.
+### [New admin center](#tab/new)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. On the **Environments** page, choose an environment.
+1. In the command bar, select **Settings**. 
+1. Expand **Users + permissions**, then select **Users**.
+1. Select a user from the list.
+1. In the command bar, select **...**, then choose **Manage user in Dynamics 365**.
+1. In the user form, select the **Administration** tab.
+1. In the **Client Access License (CAL) Information** pane, from the **Access Mode** list, select **Read-Write**.  
+1. In the coammand bar, select **Save** to apply the changes.
+   
+### [Classic admin center](#tab/classic)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Environments**.
+1. On the **Environments** page, choose an environment.
+1. In the command bar, select **Settings**.  
+1. Expand **Users + permissions**, then select **Users**.
+1. Select a user from the list.
+1. In the command bar, select **...**, then choose **Manage user in Dynamics 365**.
+1. In the user form, select the **Administration** tab.
+1. In the **Client Access License (CAL) Information** pane, from the **Access Mode** list, select **Read-Write**.  
+1. In the coammand bar, select **Save** to apply the changes.
+---
 
 ## Create an administrative user account
 
@@ -296,64 +334,90 @@ You need to have the System Administrator security role or equivalent permission
 > 
 > See [Create an administrative user and prevent elevation of security role privilege](prevent-elevation-security-role-privilege.md) for an example of how an Administrative user account can be used.
 
-1. Create a user account in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)].  
-  
-   Be sure to assign a license to the account. You'll remove the license in a later step after you've assigned the **Administrative** access mode.
-  
-    1. In the **Optional settings** form, expand **Roles**.
+Create a user account in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)]. Be sure to assign a license to the account. You'll remove the license in a later step after you've assigned the **Administrative** access mode.
 
-    1. Scroll down the form, and then select **Show all by category**.
+1. In the **Optional settings** form, expand **Roles**.
+2. Scroll down the form, and then select **Show all by category**.
+3. Select the **Power Platform Administrator** or **Dynamics 365 Administrator** checkbox.
+4. Wait for the user to sync to the environments.
 
-    1. Select the **Power Platform Administrator** or **Dynamics 365 Administrator** checkbox.
-  
-          Wait for the user to sync to the environments.
+#### [New admin center](#tab/new)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. On the **Environments** page, choose an environment.
+1. In the command bar, select **Settings**. 
+1. Expand **Users + permissions**, then select **Users**.
+1. Select the user from the list.
+1. In the command bar, select **...**, then choose **Manage user in Dynamics 365**.
+1. In the user form, select the **Administration** tab.
+1. In the **Client Access License (CAL) Information** pane, from the **Access Mode** list, select **Administrative**.  
+1. In the coammand bar, select **Save** to apply the changes.
 
-1. In the Power Platform admin center, select an environment, and go to **Settings** > **Users + permissions** > **Users**.
-  
-1. Select a user from the list.  
+#### [Classic admin center](#tab/classic)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Environments**.
+1. On the **Environments** page, choose an environment.
+1. In the command bar, select **Settings**.  
+1. Expand **Users + permissions**, then select **Users**.
+1. Select the user from the list.
+1. In the command bar, select **...**, then choose **Manage user in Dynamics 365**.
+1. In the user form, select the **Administration** tab.
+1. In the **Client Access License (CAL) Information** pane, from the **Access Mode** list, select **Administrative**.  
+1. In the coammand bar, select **Save** to apply the changes.
+---
+ 
+Now you need to remove the license from the account.  
 
-1. On the user pane command bar, select **...** > **Manage user in Dynamics 365**.
+1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com).
+2. In the navigation pane, select **Users**, then choose **Active users**.
+3. On the **Active users** page, select the user you want to update.
+4. Select the **Licenses and Apps** tab, then clear the license boxes.
+5. Click **Save changes** to apply the changes.
   
-1. In the user form, scroll down under **Administration** to the **Client Access License (CAL) Information** section. In the **Access Mode** list, select **Administrative**.  
-
-   Now you need to remove the license from the account.  
-  
-1. Go to the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)].  
-  
-1. Select **Users** > **Active Users**.  
-  
-1. Select the Administrative user account, and then select the **Licenses and apps** tab.  
-  
-1. Clear the license boxes, and then select **Save changes**.
-
 ## Create a non-interactive user account
 
 The non-interactive user isn't a "user" in the typical sense&mdash;it doesn't represent a person, it's an access mode that's created with a user account. It's used for programmatic access to and from customer engagement apps between applications. A non-interactive user account lets these applications or tools&mdash;such as a connector from customer engagement apps to ERP&mdash;authenticate and access customer engagement apps without requiring a license. For each environment, you can create up to seven non-interactive user accounts.  
   
-You need to have the System Administrator security role or equivalent permissions to create a non-interactive user. First, you create a user account in Microsoft 365. Then, in customer engagement apps, select the non-interactive access mode for the account.  
-  
-1. Create a user account in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)].  
-  
-   Be sure to assign a license to the account.  
-  
-2. In the Power Platform admin center, select an environment, and go to **Settings** > **Users + permissions** > **Users**.
-  
-3. Select **Enabled Users**, and then open a user from the list.  
+You need to have the System Administrator security role or equivalent permissions to create a non-interactive user. 
 
-4. On the user pane command bar, select **...** > **Manage user in Dynamics 365**.
-5. In the user form, scroll down under **Administration**  to the **Client Access License (CAL) Information** section. In the **Access Mode** list, select **Non-interactive**.  
-  
-   You then need to remove the license from the account.  
-  
-6. Go to the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)].  
-  
-7. Select **Users** > **Active Users**.  
-  
-8. On the **Licenses and Apps** tab, select the non-interactive user account.  
-  
-9. Clear the license boxes, and then select **Save changes**.  
-  
-10. Go back to the customer engagement app and confirm that the non-interactive user account **Access Mode** is still set for **Non-interactive**.  
+First, you create a user account in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)]. Be sure to assign a license to the account. Then in customer engagement apps, select the non-interactive access mode for the account.  
+
+#### [New admin center](#tab/new)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. On the **Environments** page, choose an environment.
+1. In the command bar, select **Settings**. 
+1. Expand **Users + permissions**, then select **Users**.
+1. Select a user from the list.
+1. In command bar, select **...**, then select **Manage user in Dynamics 365**.
+1. In the user form, select the **Administration** tab.
+1. In the **Client Access License (CAL) Information** pane, from the **Access Mode** list, select **Non-interactive**.  
+1. In the command bar, select **Save** to apply the changes.
+
+#### [Classic admin center](#tab/classic)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Environments**.
+1. On the **Environments** page, choose an environment.
+1. In the command bar, select **Settings**.  
+1. Expand **Users + permissions**, then select **Users**.
+1. Select a user from the list.
+1. In command bar, select **...**, then select **Manage user in Dynamics 365**.
+1. In the user form, select the **Administration** tab.
+1. In the **Client Access License (CAL) Information** pane, from the **Access Mode** list, select **Non-interactive**.  
+1. In the command bar, select **Save** to apply the changes.
+---  
+ 
+You then need to remove the license from the account.  
+
+1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com).
+2. In the navigation pane, select **Users**, then choose **Active users**.
+3. On the **Active users** page, select the non-interactive user account. 
+4. Select the **Licenses and Apps** tab, then clear the license boxes.
+5. Click **Save changes** to apply the changes.
+
+Go back to the customer engagement app and confirm that the non-interactive user account **Access Mode** is still set for **Non-interactive**.  
 
 ## Create an application user
 
@@ -392,12 +456,28 @@ A default security role is automatically assigned to these imported users. The *
 > [!NOTE]
 > By default, a security role can only be assigned to users with an Enabled status. If you need to assign a security role to users who have a Disabled status, you can do so by enabling the allowRoleAssignmentOnDisabledUsers [OrgDBOrgSettings](https://support.microsoft.com/help/2691237/orgdborgsettings-tool-for-microsoft-dynamics-crm).
 
-## View stub users
+### View stub users
 To view a stub user's profile in the Power Platform admin center, complete the following steps.
 
-1. Select an environment and go to **Settings > Users + permissions > Users**.
+#### [New admin center](#tab/new)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. On the **Environments** page, choose an environment.
+1. In the command bar, select **Settings**. 
+1. Expand **Users + permissions**, then select **Users**.
 1. From the **Search** bar, search for **stub users**.
-1. Select a stub user to view user details.
+1. Select a stub user to view the user details.
+   
+#### [Classic admin center](#tab/classic)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Environments**.
+1. On the **Environments** page, choose an environment.
+1. In the command bar, select **Settings**.  
+1. Expand **Users + permissions**, then select **Users**.
+1. From the **Search** bar, search for **stub users**.
+1. Select a stub user to view the user details.
+---
 
     > [!Note]
     > Refresh user and user diagnostics options are not available for a stub user.
@@ -406,9 +486,23 @@ To view a stub user's profile in the Power Platform admin center, complete the f
 
 When you create a new user or update an existing user in Dynamics 365 Customer Engagement (on-premises), some fields in the user records, such as name and phone number, are populated with the information obtained from Active Directory Domain Services (AD DS). After the user record is created, no further synchronization occurs between Microsoft Entra user accounts and customer engagement apps user records. If you make changes to the Microsoft Entra user account, you must manually edit the user record to reflect the changes.
 
-1. In the Power Platform admin center, select an environment, and go to **Settings** > **Users + permissions** > **Users**.
-
-2. In the list, select the user record you want to update, and then select **Edit**.
+#### [New admin center](#tab/new)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. On the **Environments** page, choose an environment.
+1. In the command bar, select **Settings**. 
+1. Expand **Users + permissions**, then select **Users**.
+1. Select the user you want to update.
+   
+#### [Classic admin center](#tab/classic)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Environments**.
+1. On the **Environments** page, choose an environment.
+1. In the command bar, select **Settings**.  
+1. Expand **Users + permissions**, then select **Users**.
+1. Select the user you want to update.
+---
 
 The following table shows the fields that are populated on the user form (user record) from the Microsoft Entra user account.
 
