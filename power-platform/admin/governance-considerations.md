@@ -8,7 +8,9 @@ author: sericks007
 ms.subservice: admin
 ms.author: sericks
 ms.reviewer: angieandrews
-ms.custom: "admin-security"
+ms.custom: 
+  - "admin-security"
+  - NewPPAC
 search.audienceType: 
   - admin
 ---
@@ -156,13 +158,18 @@ It's well understood that monitoring is a critical aspect of managing software a
 
 ### View the Power Apps and Power Automate license report
 
-1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+#### [New admin center](#tab/new)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Licensing**.
+1. In the **Licensing** pane, select **Power Automate** or **Power Apps** to review the analytics details.
 
-2. Select **Analytics** > **Power Automate** or **Power Apps**.
+#### [Classic admin center](#tab/classic)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Analytics**
+1. Choose **Power Automate** or **Power Apps** to review the analytics details.
+---
 
-3. View Power Apps and Power Automate admin analytics
-
-   You can get information about the following:
+You can get information about the following:
    - Active User and App usage  - how many users are using an app and how often? 
    - Location – where is the usage? 
    - Service Performance of connectors
@@ -189,9 +196,19 @@ The export can take a while for tenants with a large number of Power Platform us
 
 ### View app resources used in an Environment
 
-1. In the Power Platform admin center, select Environments in the navigation menu. 
-2. Select an Environment.
-3. Optionally, the list of resources used in an Environment can be downloaded as a .csv.
+#### [New admin center](#tab/new)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. On the **Environments** page, choose an environment.
+1. In the **Resources** pane, review the list of apps used in the environment.
+
+#### [Classic admin center](#tab/classic)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Environments**.
+1. On the **Environments** page, choose an environment.
+1. In the **Resources** pane, review the list of apps used in the environment.
+---
 
 ## Related information
 
