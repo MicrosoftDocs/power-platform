@@ -20,7 +20,7 @@ The bank, which already operates several chatbots, wants to explore a new platfo
 
 > With the rapid introduction of Generative AI, we anticipate that our customers are going to expect much more from a chatbot and we want to get ahead of that demand. 
 >
-> -Bobby van Groningen, IT Lead at ABN AMRO.
+> -Bobby van Groningen, IT Lead at ABN AMRO
 
 By rapidly transitioning to Copilot Studio and deploying its new agents, ABN AMRO integrates Azure AI Conversational Language Understanding (CLU) for superior accuracy in processing Dutch, leading to more precise and reliable customer and employee interactions.
 
@@ -33,7 +33,7 @@ Because Copilot Studio already enables the features it needs, ABN AMRO significa
 
 > Microsoft’s leadership and innovation in the AI space led us to select Microsoft Copilot Studio. We also liked that many of the chatbot capabilities we needed are available out of the box. This contributes to an intuitive and easy-to-use development experience.
 > 
-> Bobby van Groningen, IT Engineering Lead at ABN AMRO Bank  
+> -Bobby van Groningen, IT Engineering Lead at ABN AMRO Bank  
 
 ## Case study
 
@@ -85,7 +85,7 @@ The migration to Copilot Studio was completed in six months, driven by a success
 
 > We anchored the partnership with our team and the ABN AMRO team, laying the groundwork for a successful implementation.
 >
-> -Mark Oost, Vice President AI & Generative AI, Insights and Data at CapGemini. 
+> -Mark Oost, Vice President AI & Generative AI, Insights and Data at CapGemini
 
 ## Copilot Studio for intent recognition and entity extraction
 
@@ -135,13 +135,13 @@ With Copilot Studio's robust architecture, ABN AMRO is positioned to integrate a
 
 >ABN AMRO creates a maturity model to enable more natural and productive conversations with its customers. This is implemented through a combination of features in Copilot Studio and Azure services, like OpenAI models and Azure Search.
 >
-> -van Groningen.
+> -van Groningen
 
 ABN AMRO is planning agents for other areas of the business. 
 
 > Thanks to the efficiency of Microsoft Copilot Studio, ABN AMRO can develop chatbot support for a wide range of business applications—and get them into production quickly.
 >
-> -van Groningen.
+> -van Groningen
 
 The bank's next agent is set up as a full generative AI agent. The project is also used as a testing ground for similar generative AI-driven experiences in Anna. 
 > At ABN AMRO, the generative AI journey is just beginning. But with Microsoft Copilot Studio, ABN AMRO delivers the benefits of generative AI quickly and effectively to its customers.
