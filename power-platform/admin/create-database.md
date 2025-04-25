@@ -7,6 +7,7 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/29/2022
 ms.subservice: admin
+ms.custom: NewPPAC
 ms.author: sericks
 search.audienceType: 
   - admin
@@ -27,16 +28,23 @@ There are various ways to add or create a database:
 > [!NOTE]
 > For security reasons, we do not support creating a copy of the database for local use.
 
-## Add a database in the admin center
-1. In the [admin center](https://admin.powerplatform.microsoft.com), in the left navigation pane, select **Environments**.
-    
-2. Select the environment to which you want to add the database.
+## Add a database in the Power Platform admin center
 
-3. Select **+ Add database**. 
-    
-    ![Add a database.](./media/add-database.png)
+#### [New admin center](#tab/new)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. On the **Environments** page, select the environment you want to add the database.
+1. In the **Add Database** pane, click **+ Add database**.
+ 
+#### [Classic admin center](#tab/classic)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Environments**.
+1. On the **Environments** page, select the environment you want to add the database.
+1. In the **Add Database** pane, click **+ Add database**.
+---
 
-4. Enter the following, and then select **Add**.
+In the **Add Dataverse** side pane, enter the following information, then select **Add** to apply the changes.
 
    |Setting  |Description  |
    |---------|---------|
@@ -48,12 +56,8 @@ There are various ways to add or create a database:
 
 ## Create a database in the Tables pane of Power Apps
 1. Sign in to [Power Apps](https://make.powerapps.com).
-
-1. In the left pane, expand the **Data** section, select **Tables** in the left navigation pane.
-
-2. Select **Create a database** to create the database.
-
-    ![Create database from tables.](./media/create-database.png)
+2. In the navigation pane, select **Tables**.
+3. Select **Create a database** to create the database.
 
 ## Security model for the databases
 When a database is created, the users who have environment roles assigned to them, will continue to maintain those privileges.  
