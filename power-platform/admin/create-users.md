@@ -6,11 +6,11 @@ ms.reviewer: sericks007
 ms.subservice: admin
 ms.author: sericks
 ms.custom: 
-- "admin-security"
-- NewPPAC
+  - "admin-security"
+  - NewPPAC
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/14/2024
+ms.date: 04/25/2025
 search.audienceType: 
   - admin
 contributors:
@@ -128,7 +128,7 @@ To view and edit a user's profile in the Power Platform admin center:
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
-1. On the **Environments** page, choose an environment.
+1. On the **Environments** page, select an environment.
 1. In the command bar, select **Settings**. 
 1. Expand **Users + permissions**, then select **Users**.
 1. Select a user from the list.
@@ -136,7 +136,7 @@ To view and edit a user's profile in the Power Platform admin center:
 #### [Classic admin center](#tab/classic)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Environments**.
-1. On the **Environments** page, choose an environment.
+1. On the **Environments** page, select an environment.
 1. In the command bar, select **Settings**.  
 1. Expand **Users + permissions**, then select **Users**.
 1. Select a user from the list.
@@ -301,10 +301,10 @@ By default, all licensed users are created with an access mode of **Read-Write**
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
-1. On the **Environments** page, choose an environment.
+1. On the **Environments** page, select an environment.
 1. In the command bar, select **Settings**. 
 1. Expand **Users + permissions**, then select **Users**.
-1. Select a user from the list.
+1. Select the radio button next to a user's name.
 1. In the command bar, select **...**, then choose **Manage user in Dynamics 365**.
 1. In the user form, select the **Administration** tab.
 1. In the **Client Access License (CAL) Information** pane, from the **Access Mode** list, select **Read-Write**.  
