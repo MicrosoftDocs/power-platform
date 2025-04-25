@@ -7,16 +7,16 @@ ms.author: mapichle
 ms.reviewer: pankajsharma2087
 ms.subservice: guidance
 ms.topic: overview
-ms.date: 04/22/2025
+ms.date: 04/25/2025
 ---
 
 # How AECOM streamlined onboarding with Power Platform and Azure
 
 In this article, you learn from a real-world example how [AECOM](https://aecom.com/), a global leader in infrastructure development, simplifies project onboarding with Power Platform, Microsoft Azure, and Microsoft Fabric. AECOM manages a wide range of projects, including transportation systems, water supply, waste management, energy systems, and public buildings. These projects are significant in scale and complexity, which requires effective coordination across various disciplines and stakeholders.
 
-> I've seen firsthand how the integration of cutting-edge-technology with engineering excellence transform the solutions we deliver to clients.
+> I've seen firsthand how the integration of cutting-edge-technology with engineering excellence transforms the solutions we deliver to clients.
 >
-> -*Steve Harrison, Vice President of AECOM MEA's Building Engineering Team*
+> - *Steve Harrison, Vice President of AECOM MEA's Building Engineering Team*
 
 To automate the process of adding project team members to multiple platforms, AECOM developes the Project Connect application that integrates with SharePoint, Autodesk Construction Cloud (ACC), and Revizto. The application ensures that all necessary permissions and access rights are set up correctly from the start, which allows users to avoid interacting with complex data and data sources.
 
@@ -26,7 +26,7 @@ AECOM needed to manage onboarding project members across multiple technology pla
 
 > As a company committed to leveraging Microsoft products, we believe that Microsoft technologies are instrumental in driving our digital transformation journey.
 >
-> -Martin Angus, AECOM Digital Director of MEA
+> - *Martin Angus, AECOM Digital Director of MEA*
 
 With the implementation of the Project Connect application, AECOM addressed several challenges that hindered efficiency and productivity:
 
@@ -44,7 +44,7 @@ With the implementation of the Project Connect application, AECOM addressed seve
 
 > We needed a solution that would enable our information managers to efficiently onboard project members across various technologies and multiple projects. With Microsoft Power Platform, integrated with Azure and Microsoft Fabric, we discovered the perfect solution to streamline and optimize the entire process.
 >
-> -Abdullah Tanvir, AECOM.
+> - *Abdullah Tanvir, AECOM*
 
 ## Solution
 
@@ -85,7 +85,7 @@ The Project View enables information managers to see which technologies a user h
 ## User View
 
 The User View is the counterpart to the Project View. It allows information managers to:
-- Search for a specific user in the AECOM user directory (1) 
+- Search for a specific user in the AECOM user directory (1).
 - See which technologies they have access to across all projects.
 
 :::image type="content" source="media/aecom-streamlined-onboarding/user-view.png" alt-text="Screenshot of the User View interface showing a search for a specific user and their access to technologies across projects." lightbox = "media/aecom-streamlined-onboarding/user-view.png":::
@@ -115,11 +115,11 @@ The development and implementation of the Project Connect application use a vari
 
 - **Power BI:** Provides analytical reports to end users, offering insights into permissions and access levels across different technology platforms for better decision-making and management.
 
+- **Microsoft Fabric:** Facilitates data engineering by consolidating data from multiple sources and storing it in a data warehouse for comprehensive reporting and analysis.
+  
 - **Azure Blob Storage:** Stores bulk import templates, such as Excel sheets, used for onboarding users to platforms like Microsoft Teams and SharePoint, ACC, and Revizto.
 
 - **Azure SQL Database:** Houses HRM data from Workday, which is leveraged in Power Apps and the Power Automate flows.
-
-- **Microsoft Fabric:** Facilitates data engineering by consolidating data from multiple sources and storing it in a data warehouse for comprehensive reporting and analysis.
 
 - **Dataverse:** Serves as the backend database for the Project Connect app, storing user information from Microsoft Teams, ACC, and Revizto.
 
