@@ -56,7 +56,7 @@ The following diagram depicts the functions of the roles in the setup process fo
 1. Create [virtual network(s)](/azure/virtual-network/virtual-networks-overview) in Azure region(s) associated with your Power Platform environment. For example, if your Power Platform environment region is United States, your virtual network(s) should be created in the **eastus**/**westus** Azure regions. For a mapping of environment region to Azure regions, [see list of supported regions](./vnet-support-overview.md#supported-regions).
 
     > [!IMPORTANT]
-    > If there are 2+ supported regions for the geo (ex. United States with eastus, westus). **2** virtual networks in ***different*** regions will be required to create the enterprise policy (for BCDR/failover scenarios)
+    > If there are 2+ supported regions for the geo (ex. United States with eastus, westus). **2** virtual networks in ***different*** regions will be required to create the enterprise policy (needed for BCDR/failover scenarios)
     * you can [reuse existing virtual networks](./vnet-support-overview#can-i-use-an-existing-virtual-network-for-power-platform) if desired
 
 1. Create a subnet in each of your virtual networks. Review the number of IP addresses that are allocated to each subnet and consider the load of the environment. Both subnets must have the same number of available IP addresses.
@@ -64,7 +64,7 @@ The following diagram depicts the functions of the roles in the setup process fo
     > [!IMPORTANT]
     > Be sure that the subnet you create has at least a /24 Classless Inter-Domain Routing (CIDR) address block, which equates to 251 IP addresses, including five reserved IP addresses. If you plan to use the same delegated subnet for multiple Power Platform environments, you may need a larger IP address block than /24.
 
-    To allow public internet access for Power Platform components, create an [Azure NAT gateway](/azure/nat-gateway/nat-overview) for the delegated subnets.
+    To allow public internet access for Power Platform components, create an [Azure NAT gateway](/azure/nat-gateway/nat-overview) for the subnets.
 
 1. Ensure your Azure subscription is registered for the `Microsoft.PowerPlatform` resource provider by running the ["setup subscription for power platform" script](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/enterprisePolicies#how-to-run-setup-scripts).
 
@@ -92,7 +92,7 @@ The following diagram depicts the functions of the roles in the setup process fo
 ### Validate the connection
 
 > [!NOTE]
-> The ["Enterprise Policies"](https://admin.powerplatform.microsoft.com/security/dataprotection/cmk) page in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) **does not** display "Subnet injection" type enterprise policies. Check the environment history as described below, or see the [powershell scripts](https://github.com/microsoft/PowerApps-Samples/blob/master/powershell/enterprisePolicies/README.md#8-get-subnet-injection-for-an-environment) to view details of these enterprise policies.
+> The ["Enterprise Policies"](https://admin.powerplatform.microsoft.com/security/dataprotection/cmk) page in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) **does not** display "Subnet injection" type enterprise policies. Check the environment history as described below, or use the [powershell scripts](https://github.com/microsoft/PowerApps-Samples/blob/master/powershell/enterprisePolicies/README.md#8-get-subnet-injection-for-an-environment) to view details of these enterprise policies.
 
 ## [New admin center](#tab/new)
 
