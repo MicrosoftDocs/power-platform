@@ -66,18 +66,18 @@ Create an App registration with API permission to SharePoint. Learn more about r
 
 ## Create managed identities in Dataverse
 
-Create managed identity records in Dataverse. Learn more about managed identities in [Setup Dataverse Managed Identities](/power-platform/admin/set-up-managed-identity).
+Create managed identity records in Dataverse. The instructions below use the Dataverse Web API. You may want to use [Insomnia to create these records](/power-apps/developer/data-platform/webapi/insomnia).  Learn more about managed identities in [Setup Dataverse Managed Identities](/power-platform/admin/set-up-managed-identity).
 
 ### Add record in Managed Identities table
 
-Insert a row into the [`managedidentities`](/power-apps/developer/data-platform/reference/entities/managedidentity) table using values from the following table.
+Insert a row into the [`managedidentity`](/power-apps/developer/data-platform/reference/entities/managedidentity) table using values from the following table.
 
 | Table field | Value | Description |
 | --- | --- |--- |
 | `applicationid` | A guid value |Use the **Application (client) ID** value from the [Create an Azure application with SharePoint permissions](#create-an-azure-application-with-sharepoint-permissions) section. |
-| `tenantid` | A guid value | Use the **Directory (tenant) ID** value from first section |
+| `tenantid` | A guid value | Use the **Directory (tenant) ID** value from the [Create an Azure application with SharePoint permissions](#create-an-azure-application-with-sharepoint-permissions) section. |
 | `credentialsource` | 2 |This is an **IsManaged** source. |
-| `subjectscope` | 1 | This is an **EnvironmentScope** |
+| `subjectscope` | 1 | This is an **EnvironmentScope** scope.|
 
 
 This example shows how to create a `managedidentity` record using the Dataverse Web API. More information: [Create a record using the Dataverse Web API](/power-apps/developer/data-platform/webapi/create-entity-web-api).
@@ -112,7 +112,7 @@ OData-EntityId: [Organization URI]/api/data/v9.2/managedidentities(aaaaaaaa-0000
 
 ### Add record in SharePoint Managed Identities table
 
-Insert a row into the [`sharepointmanagedidentity`](/power-apps/developer/data-platform/reference/entities/sharepointmanagedidentity) table using values from the following table. [Learn how to create a table row using the Web API](/power-apps/developer/data-platform/webapi/create-entity-web-api).
+Insert a row into the [`sharepointmanagedidentity`](/power-apps/developer/data-platform/reference/entities/sharepointmanagedidentity) table using values from the following table. 
 
 | Table field | Value |
 | --- | --- |
