@@ -107,7 +107,7 @@ OData-Version: 4.0
 OData-EntityId: [Organization URI]/api/data/v9.2/managedidentities(aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb)
 ```
 
-`aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb` is the `managedidentityid` of the `managedidentity` record created in this example. You will need this in the following step.
+`aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb` represents the `managedidentityid` of the `managedidentity` record created in this example. You will need this in the following step.
 
 
 ### Add record in SharePoint Managed Identities table
@@ -147,7 +147,7 @@ OData-Version: 4.0
 OData-EntityId: [Organization URI]/api/data/v9.2/sharepointmanagedidentities(bbbbbbbb-1111-2222-3333-cccccccccccc)
 ```
 
-`bbbbbbbb-1111-2222-3333-cccccccccccc` is the `sharepointmanagedidentityid` of the `sharepointmanagedidentity` record created in this example.
+`bbbbbbbb-1111-2222-3333-cccccccccccc` represents the `sharepointmanagedidentityid` of the `sharepointmanagedidentity` record created in this example.
 
 ## Create federated credential
 
