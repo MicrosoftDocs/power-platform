@@ -4,7 +4,7 @@ description: Learn how to configure an Azure app for SharePoint access to allow 
 author: adrianorth
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/11/2025
+ms.date: 04/25/2025
 ms.subservice: admin
 ms.author: aorth
 ms.reviewer: sericks
@@ -14,6 +14,8 @@ ms.custom:
   - ai-gen-docs-bap
   - ai-gen-description
   - ai-seo-date:01/14/2025
+contributors:
+ - JimDaly
 ---
 # Configure Azure app for SharePoint access
 
@@ -68,31 +70,45 @@ Create managed identity records in Dataverse. Learn more about managed identitie
 
 ### Add record in Managed Identities table
 
-Insert a row into the [`managedidentities`](/power-apps/developer/data-platform/reference/entities/managedidentity) table using values from the following table. [Learn how to create a table row using the Web API](/power-apps/developer/data-platform/webapi/create-entity-web-api).
+Insert a row into the [`managedidentities`](/power-apps/developer/data-platform/reference/entities/managedidentity) table using values from the following table.
 
-| Table field | Value |
-| --- | --- |
-| `applicationid` | Use the **Application (client) ID** value from first section |
-| `tenantid` | Use the **Directory (tenant) ID** value from first section |
-| `managedidentityid` | Create new GUID |
-| `credentialsource` | 2 |
-| `subjectscope` | 1 |
+| Table field | Value | Description |
+| --- | --- |--- |
+| `applicationid` | A guid value |Use the **Application (client) ID** value from the [Create an Azure application with SharePoint permissions](#create-an-azure-application-with-sharepoint-permissions) section. |
+| `tenantid` | A guid value | Use the **Directory (tenant) ID** value from first section |
+| `credentialsource` | 2 |This is an **IsManaged** source. |
+| `subjectscope` | 1 | This is an **EnvironmentScope** |
 
-An example using POST:
 
-- Request:
-`https://contoso.crm.dynamics.com/api/data/v9.0/managedidentities`
-- Body:
+This example shows how to create a `managedidentity` record using the Dataverse Web API. More information: [Create a record using the Dataverse Web API](/power-apps/developer/data-platform/webapi/create-entity-web-api).
 
-  ```json
-  {
-  "applicationid": "<appId>",
-  "managedidentityid": "<newGuid>",
-  "credentialsource": 2,
-  "subjectscope": 1,
-  "tenantid": "<tenantId>"
-  }
-  ```
+ **Request:**
+
+```http
+POST [Organization URI]/api/data/v9.2/managedidentities
+Content-Type: application/json; charset=utf-8
+OData-MaxVersion: 4.0
+OData-Version: 4.0
+Accept: application/json
+
+{
+   "applicationid": "<appId>",
+   "credentialsource": 2,
+   "subjectscope": 1,
+   "tenantid": "<tenantId>"
+}
+```
+
+ **Response:**
+
+```http
+HTTP/1.1 204 No Content
+OData-Version: 4.0
+OData-EntityId: [Organization URI]/api/data/v9.2/managedidentities(aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb)
+```
+
+`aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb` is the `managedidentityid` of the `managedidentity` record created in this example. You will need this in the following step.
+
 
 ### Add record in SharePoint Managed Identities table
 
@@ -100,25 +116,38 @@ Insert a row into the [`sharepointmanagedidentity`](/power-apps/developer/data-p
 
 | Table field | Value |
 | --- | --- |
-| `sharepointmanagedidentityid` | Create new GUID |
 | `uniquename` | "msft_ppmiforsharepointauth" |
 | `name` | "Managed Identity For SharePoint Auth" |
 | `ManagedIdentity@odata.bind` | `/managedidentities(<managedidentityid>)` replacing `<managedidentityid>` with the value from the previous section  |
 
-An example using POST:
 
-- Request:
-`https://contoso.crm.dynamics.com/api/data/v9.0/sharepointmanagedidentities`
-- Body:
+This example shows how to create a `sharepointmanagedidentity` record using the Dataverse Web API. More information: [Create a record using the Dataverse Web API](/power-apps/developer/data-platform/webapi/create-entity-web-api).
 
-  ```json
-  {
-  "sharepointmanagedidentityid": "<newGuid>",
-  "uniquename": "msft_ppmiforsharepointauth",
-  "name": "Managed Identity For SharePoint Auth",
-  "ManagedIdentityId@odata.bind": "/managedidentities(<managedIdentityId>)"
-  }
-  ```
+ **Request:**
+
+```http
+POST [Organization URI]/api/data/v9.2/sharepointmanagedidentities
+Content-Type: application/json; charset=utf-8
+OData-MaxVersion: 4.0
+OData-Version: 4.0
+Accept: application/json
+
+{
+   "uniquename": "msft_ppmiforsharepointauth",
+   "name": "Managed Identity For SharePoint Auth",
+   "ManagedIdentityId@odata.bind": "/managedidentities(<managedidentityid>)"
+}
+```
+
+ **Response:**
+
+```http
+HTTP/1.1 204 No Content
+OData-Version: 4.0
+OData-EntityId: [Organization URI]/api/data/v9.2/sharepointmanagedidentities(bbbbbbbb-1111-2222-3333-cccccccccccc)
+```
+
+`bbbbbbbb-1111-2222-3333-cccccccccccc` is the `sharepointmanagedidentityid` of the `sharepointmanagedidentity` record created in this example.
 
 ## Create federated credential
 
