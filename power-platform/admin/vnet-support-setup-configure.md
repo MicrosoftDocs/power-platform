@@ -57,7 +57,7 @@ The following diagram depicts the functions of the roles in the setup process fo
 
     > [!IMPORTANT]
     > If there are 2+ supported regions for the geo (ex. United States with eastus, westus). **2** virtual networks in ***different*** regions will be required to create the enterprise policy (needed for BCDR/failover scenarios)
-    * you can [reuse existing virtual networks](./vnet-support-overview#can-i-use-an-existing-virtual-network-for-power-platform) if desired
+    * you can [reuse existing virtual networks](./vnet-support-overview.md#can-i-use-an-existing-virtual-network-for-power-platform) if desired
 
 1. Create a subnet in each of your virtual networks. Review the number of IP addresses that are allocated to each subnet and consider the load of the environment. Both subnets must have the same number of available IP addresses.
 
