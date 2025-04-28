@@ -41,6 +41,7 @@ The following [rules](environment-groups.md#rules) can be applied to [environmen
 | 15 | [Solution checker enforcement](managed-environment-solution-checker.md) |
 | 16 | [Unmanaged customizations](../alm/block-unmanaged-customizations.md) |
 | 17 | [Usage insights](managed-environment-usage-insights.md) |
+| 18 | [Sharing data between Copilot Studio and Viva Insights](settings-features.md?&tabs=new#sharing-copilot-studio-agent-data-with-viva-insights) |
 
 > [!NOTE]
 > The rules that have “(preview)” in their name are in public preview, while rules without it are considered generally available.
