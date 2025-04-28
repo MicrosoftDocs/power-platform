@@ -3,7 +3,7 @@ title: "Connector endpoint filtering (preview) | MicrosoftDocs"
 description: A description goes here.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/31/2023
+ms.date: 04/28/2025
 ms.subservice: admin
 author: mikferland-msft
 ms.author: miferlan
@@ -11,6 +11,7 @@ ms.reviewer: sericks
 contributors:
   - mikferland-msft
   - mihaelablendea
+  - nimoutzo
 ms.custom: "admin-security"
 search.audienceType: 
   - admin
@@ -32,7 +33,8 @@ Connector endpoint filtering allows admins to govern which specific endpoints ma
 - HTTP Webhook
 - SQL Server (includes using SQL Server Connector to access Azure Synapse data warehouse)
 - Azure Blob Storage 
-- SMTP 
+- SMTP
+- DesktopFlow - Browser Automation
 
 When a maker tries to connect their app, flow, or chatbot to a blocked endpoint, they will encounter a DLP error message.
 
@@ -165,6 +167,21 @@ Allow access to only the Azure subscriptions page within `https://management.azu
 1. Allow `https://management.azure.com/subscriptions*`
 2. Deny `https://management.azure.com/*` 
 3. Deny `*`
+
+### DesktopFlow - Browser Automation
+
+This feature allows you to control which web pages a desktop flow can access in Power Automate for Desktop. The endpoints are represented in either URL format or web page name format, and you should utilize wildcards for dynamic URL or page name matching. The validation is performed during 'Launch Web Browser' or 'Go to web page' actions before a desktop flow can proceed with browser interactions.
+
+> [!NOTE]
+> Endpoint filtering cannot be validated when 'Launch Web Browser' actions are configured to attach to the foreground window. In such cases, the action will not be blocked unless access to all web pages is denied.
+
+The following is an example scenario: 
+
+Allow access to all web pages except for URL `https://www.microsoft.com/` and any URL or web page containing the string `powerplatform`.
+
+1. Deny `https://www.microsoft.com/`
+2. Deny `*powerplatform*`
+3. Allow `*`
 
 ## PowerShell support for endpoint filtering
 
