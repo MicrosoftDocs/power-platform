@@ -7,6 +7,7 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 05/05/2020
 ms.subservice: admin
+ms.custom: NewPPAC
 ms.author: sericks
 search.audienceType: 
   - admin
@@ -33,22 +34,23 @@ Admins can do the following from the Power Platform admin center:
 
 ## Manage Power Automate flows
 
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+## [New admin center](#tab/new)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. On the **Environments** page, select an environment.
+1. In the **Resources** pane, select **Flows**.
+1. On the **Flows** page, select the flow you want to manage.
 
-2. In the navigation pane, select **Environments**, select an environment with resources, and then select the **Power Automate (Flows)** resource.
+## [Classic admin center](#tab/classic)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Environments**.
+1. On the **Environments** page, select an environment.
+1. In the **Resources** pane, select **Flows**.
+1. On the **Flows** page, select the flow you want to manage.
+---
 
-   > [!div class="mx-imgBorder"] 
-   > ![Select Power Automate resource.](media/resources-select-power-automate.png "Select Power Automate resource")
-
-3. Select a flow to manage.
-
-   > [!div class="mx-imgBorder"] 
-   > ![Select a flow.](media/resources-power-automate-flows-list.png "Select a flow") 
-
-4. Select your desired action.
-
-   > [!div class="mx-imgBorder"] 
-   > ![Manage a flow.](media/resources-edit-power-automate.png "Manage a flow") 
+Choose your desired **action** for the selected flow.
 
    |Action  |Description  |
    |---------|---------|
