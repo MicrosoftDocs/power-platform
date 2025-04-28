@@ -199,8 +199,9 @@ To enable a user in an environment that has a Dataverse database, you enable sig
 1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com).
 2. In the navigation pane, select **Teams & groups**, then choose **Active teams & groups**.
 3. Select the security group associated with your environment.
-4. Select the **Members** tab, then select **Add members** from the command bar.
-5. Choose users from the list or search for users, then click **Add** to apply the changes.
+4. Select the **Membership** tab.
+5. In the navigation pane, select **Members**, then select **Add members** from the command bar.
+6. Choose users from the list or search for users, then click **Add** to apply the changes.
 
 ### Disable a user account in an environment 
 
@@ -211,7 +212,8 @@ To disable a user account in an environment that has a Dataverse database, you c
 1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com).
 2. In the navigation pane, select **Teams & groups**, then choose **Active teams & groups**.
 3. Select the security group associated with your environment.
-4. Select the **Members** tab. 
+4. Select the **Membership** tab.
+5. In the navigation pane, select **Members**, 
 6. Select the users you want to remove, then click **Remove as member** to apply the changes.
 
 #### To remove a license from a user
