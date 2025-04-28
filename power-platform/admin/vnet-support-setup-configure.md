@@ -31,7 +31,7 @@ Azure Virtual Network support for Power Platform allows you to integrate Power P
 - Prepare your tenant, setup permissions:
   - Have an Azure subscription where virtual network, subnet, and enterprise policy resources will be created
   - In the Azure portal, assign the Azure Network Administrator role (ie. [network contributor role](/azure/role-based-access-control/built-in-roles#network-contributor) or equivalent custom role).
-  - In the Micosoft Entra admin center, assign the [Power Platform Administrator role](/entra/identity/role-based-access-control/permissions-reference#power-platform-administrator).
+  - In the Microsoft Entra admin center, assign the [Power Platform Administrator role](/entra/identity/role-based-access-control/permissions-reference#power-platform-administrator).
 
 - Prepare to use PowerShell
   - [Install PowerShell](/powershell/scripting/install/installing-powershell)
@@ -56,7 +56,7 @@ The following diagram depicts the functions of the roles in the setup process fo
 1. Create [virtual network(s)](/azure/virtual-network/virtual-networks-overview) in Azure region(s) associated with your Power Platform environment. For example, if your Power Platform environment region is United States, your virtual network(s) should be created in the **eastus**/**westus** Azure regions. For a mapping of environment region to Azure regions, [see list of supported regions](./vnet-support-overview.md#supported-regions).
 
     > [!IMPORTANT]
-    > If there are 2+ supported regions for the geo (ex. United States with eastus, westus). **2** virtual networks in ***different*** regions will be required to create the enterprise policy (needed for BCDR/failover scenarios)
+    > If there are 2+ supported regions for the geo (ex. United States with eastus, westus). **2** virtual networks in ***different*** regions are required to create the enterprise policy (needed for BCDR/failover scenarios)
     * you can [reuse existing virtual networks](./vnet-support-overview.md#can-i-use-an-existing-virtual-network-for-power-platform) if desired
 
 1. Create a subnet in each of your virtual networks. Review the number of IP addresses that are allocated to each subnet and consider the load of the environment. Both subnets must have the same number of available IP addresses.
@@ -73,13 +73,13 @@ The following diagram depicts the functions of the roles in the setup process fo
 
 ### Create the enterprise policy
 
-1. [Create a subnet injection enterprise policy](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/enterprisePolicies#2-create-subnet-injection-enterprise-policy), using the virtual network(s) and subnet(s) you delegated. Remember 2 virtual networks in different regions are required for geos that support 2+ regions.
+1. [Create a subnet injection enterprise policy](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/enterprisePolicies#2-create-subnet-injection-enterprise-policy), using the virtual network(s) and subnet(s) you delegated. Remember two virtual networks in different regions are required for geos that support 2+ regions.
     > [!IMPORTANT]
     > If you wish to delete the virtual network/subnet (or getting errors like `InUseSubnetCannotBeDeleted`, `SubnetMissingRequiredDelegation`), you **will have to delete the enterprise policy** if it exists. You can delete the enterprise policy with the following command:
     > ```powershell
     > Remove-AzResource -ResourceId $policyArmId -Force
     > ```
-    > Various powershell scripts are available to [get the enterprise policy](https://github.com/microsoft/PowerApps-Samples/blob/master/powershell/enterprisePolicies/README.md#4-get-subnet-injection-enterprise-policies-in-subscription) (for the ARM resource ID)
+    > Various PowerShell scripts are available to [get the enterprise policy](https://github.com/microsoft/PowerApps-Samples/blob/master/powershell/enterprisePolicies/README.md#4-get-subnet-injection-enterprise-policies-in-subscription) (for the ARM resource ID)
 
 1. [Grant read access](customer-managed-key.md#grant-the-power-platform-admin-privilege-to-read-enterprise-policy) for the enterprise policy to the user(s) with the Power Platform Administrator role.
 
@@ -92,7 +92,7 @@ The following diagram depicts the functions of the roles in the setup process fo
 ### Validate the connection
 
 > [!NOTE]
-> The ["Enterprise Policies"](https://admin.powerplatform.microsoft.com/security/dataprotection/cmk) page in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) **does not** display "Subnet injection" type enterprise policies. Check the environment history as described below, or use the [powershell scripts](https://github.com/microsoft/PowerApps-Samples/blob/master/powershell/enterprisePolicies/README.md#8-get-subnet-injection-for-an-environment) to view details of these enterprise policies.
+> The ["Enterprise Policies"](https://admin.powerplatform.microsoft.com/security/dataprotection/cmk) page in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) **does not** display "Subnet injection" type enterprise policies. Check the environment history as described in this section, or use the [PowerShell scripts](https://github.com/microsoft/PowerApps-Samples/blob/master/powershell/enterprisePolicies/README.md#8-get-subnet-injection-for-an-environment) to view details of these enterprise policies.
 
 ## [New admin center](#tab/new)
 
