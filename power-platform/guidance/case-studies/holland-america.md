@@ -218,7 +218,7 @@ Anna’s accuracy and performance are monitored using multiple tools and data so
 
 > The built-in analytics tools in Microsoft Copilot Studio and connectivity to other analytics platforms enabled us to set up an effective feedback loop.
 >
-> -Pettit. 
+> -Pettit 
 
 Integration with Dataverse delivers conversational logs and feedback from customers. Adobe Analytics provides custom business metrics, and Azure Application Insights provides near-real-time technical monitoring of the platform.
 
@@ -234,7 +234,7 @@ This is reflected in the latest business results.
 
 > What we’re finding is that when customers engage with Anna, they are more likely to find the right cruise that fits their needs than if they do not engage at all.
 > 
-> -Pettit. 
+> -Pettit 
 
 At the same time, there are early indications that Anna helps reduce the total number of call center queries. 
 
