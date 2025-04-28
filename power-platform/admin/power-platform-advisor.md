@@ -4,7 +4,7 @@ description: Learn how to use Power Platform Advisor to optimize your tenant.
 author: sidhartg
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/31/2025
+ms.date: 04/28/2025
 ms.subservice: admin
 ms.author: sidhartg
 ms.reviewer: sericks
@@ -292,6 +292,4 @@ This recommendation lists users that are actively using Power Apps applications 
 Learn more about [Microsoft Power Apps and Power Automate use rights for Microsoft 365 applications](/power-platform/admin/powerapps-flow-licensing-faq#what-are-microsoft-power-apps-and-power-automate-use-rights-for-microsoft-365-applications) with additional information about the April 1,2025 enforcement in the [Power Platform licensing FAQs](/power-platform/admin/powerapps-flow-licensing-faq).
 
 > [!NOTE]
-> This recommendation provides a list of users that have used these apps without a premium license in the past 14 days.
-> 
 > This recommendation only checks for Power Apps premium plans and may show users from apps that use [Power Apps per app](about-powerapps-perapp.md) or [Pay-as-you-go](pay-as-you-go-overview.md) plans. Review if your apps use [per app plans](about-powerapps-perapp.md#step-3-set-up-apps-to-use-per-app-plans) or [pay-as-you-go plans](pay-as-you-go-set-up.md#set-up-pay-as-you-go-for-your-environment-from-your-apps-setting).
