@@ -122,7 +122,9 @@ Use the following links to view and manage proactive policies for governance and
 - [Compliance](compliance.md): Implement robust compliance measures to safeguard organizational data and ensure adherence to industry regulations, through features such [Customer Lockbox](../about-lockbox.md) and auditing.
 
 ## Dismiss recommendations
-We understand that security management isn’t one-size-fits-all. Some recommendations may already be mitigated through alternative solutions, but until now, admins had no way to reflect these changes leading to a security score that remained stagnant.With dismiss recommendations, admins can now mark specific recommendations as dismissed through an alternate solution. Once dismissed, these recommendations will no longer impact your security score, allowing you to gain the points associated with them.Your dismissed recommendations are always accessible, meaning you can review their history at any time. If circumstances change or you wish to revisit a previously dismissed recommendation, you can easily reactivate it to ensure continuous security optimization.
+Administrators now have the ability to **dismiss security recommendations** that have been mitigated through alternative solutions. Previously, unaddressed recommendations could result in a stagnant security score, despite proactive measures taken outside the recommended solutions.
+Dismissed recommendations will no longer negatively impact the security score, ensuring an accurate reflection of the organization's security posture.
+Your dismissed recommendations are always accessible, meaning you can review their history at any time. If circumstances change or you wish to revisit a previously dismissed recommendation, you can easily reactivate it to ensure continuous security optimization.
 
 ## Manage security settings at environment group
 
