@@ -10,7 +10,7 @@ ms.custom:
   - NewPPAC
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/25/2025
+ms.date: 04/28/2025
 search.audienceType: 
   - admin
 contributors:
@@ -142,7 +142,7 @@ To view and edit a user's profile in the Power Platform admin center:
 1. Select a user from the list.
 ---
 
-On the **user profile** page, you can view and modify key user profile details, including security roles, team membership, business unit, manager, position, and more.
+On the **Users** page, you can view and modify key user profile details, including security roles, team membership, business unit, manager, position, and more.
 
 Additionally, you can:
 - Use **Run diagnostics** to troubleshoot access issues.
@@ -191,7 +191,7 @@ To enable a user in an environment that has a Dataverse database, you enable sig
 1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com).
 2. In the navigation pane, select **Users**, then choose **Active users**.
 3. On the **Active users** page, select the user you want to update.
-4. Select the **Licenses and Apps** tab, then choose the licenses you want to assign.
+4. Select the **Licenses and apps** tab, then choose the licenses you want to assign.
 5. Click **Save changes** to apply the changes.
 
 #### To add a user to a security group
@@ -199,7 +199,7 @@ To enable a user in an environment that has a Dataverse database, you enable sig
 1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com).
 2. In the navigation pane, select **Teams & groups**, then choose **Active teams & groups**.
 3. Select the security group associated with your environment.
-4. Select the **Members** tab, then click **Add members** from the command bar.
+4. Select the **Members** tab, then select **Add members** from the command bar.
 5. Choose users from the list or search for users, then click **Add** to apply the changes.
 
 ### Disable a user account in an environment 
