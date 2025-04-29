@@ -239,6 +239,6 @@ As AECOM continues to innovate and enhance their solutions, several exciting dev
   - [What is Data Factory in Microsoft Fabric?](/fabric/data-factory/data-factory-overview)  
   - [What is data warehousing in Microsoft Fabric?](/fabric/data-warehouse/data-warehousing)  
 - [Introduction to Azure Blob Storage](/azure/storage/blobs/storage-blobs-introduction)  
-- [What is Azure SQL Database?](/azure/azure-sql/database/sql-database-paas-overview?view=azuresql)  
+- [What is Azure SQL Database?](/azure/azure-sql/database/sql-database-paas-overview)  
 - [Fluent UI Web Components overview](/fluent-ui/web-components/)  
 - [Copilot Studio overview](/microsoft-copilot-studio/fundamentals-what-is-copilot-studio)  
