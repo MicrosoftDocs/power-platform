@@ -37,14 +37,14 @@ The next approach makes use of a more comprehensive data protection approach tha
 
 ![Diagram of end to end process of Browser storage state using Microsoft Data Protection and Dataverse Data store for secure values](./media/test-engine-security-storage-state.png)
 
-1. The current storage state user authentication provider is extended to Save and load the Playwright browser context as Encrypted values
-2. Make use of the Microsoft.AspNetCore.DataProtection package to offer Windows Data Protection (DAPI) or Certificate public / private encryption
-3. Use the current logged in Azure CLI session to obtain an access token to the Dataverse instance where Test Engine Key values and encrypted key data are stored
-4. Use a custom xml repository that provides the ability query and create Data Protection state by implementing IXmlRepository
-5. Store XML state of data protection in Dataverse Table. Encryption of XML State managed by Data Protection API and selected protection providers
-6. Make use of Dataverse Security model, sharing and auditing features are enabled to control access and record access to key and key data. Data Protection API is used to decrypt values and apply the state json to other test sessions.
-7. Use the Data Protection API to decrypt the encrypted value using Windows Data Protection API (DAPI) or X.509 certificate private key.
-8. A future option could also consider adding integration with [Azure Key Vault](/aspnet/core/security/key-vault-configuration?view=aspnetcore-9.0)
+- The current storage state user authentication provider is extended to Save and load the Playwright browser context as Encrypted values
+- Make use of the Microsoft.AspNetCore.DataProtection package to offer Windows Data Protection (DAPI) or Certificate public / private encryption
+- Use the current logged in Azure CLI session to obtain an access token to the Dataverse instance where Test Engine Key values and encrypted key data are stored
+- Use a custom xml repository that provides the ability query and create Data Protection state by implementing IXmlRepository
+- Store XML state of data protection in Dataverse Table. Encryption of XML State managed by Data Protection API and selected protection providers
+- Make use of Dataverse Security model, sharing and auditing features are enabled to control access and record access to key and key data. Data Protection API is used to decrypt values and apply the state json to other test sessions.
+- Use the Data Protection API to decrypt the encrypted value using Windows Data Protection API (DAPI) or X.509 certificate private key.
+- A future option could also consider adding integration with [Azure Key Vault](/aspnet/core/security/key-vault-configuration)
 
 ## Playwright
 
@@ -79,15 +79,15 @@ The [How to: Use Data Protection](/dotnet/standard/security/how-to-use-data-prot
 
 ### Data Protection API
 
-The [Microsoft.AspNetCore.DataProtection](/aspnet/core/security/data-protection/introduction?view=aspnetcore-9.0) package offers Windows Data Protection (DAPI) or Certificate public/private encryption. This ensures that sensitive data, such as sign-in tokens, is securely encrypted and stored.
+The [Microsoft.AspNetCore.DataProtection](/aspnet/core/security/data-protection/introduction) package offers Windows Data Protection (DAPI) or Certificate public/private encryption. This ensures that sensitive data, such as sign-in tokens, is securely encrypted and stored.
 
 Key information to review for readers that are unfamiliar with Data Protection API:
 
-- [Authenticated encryption details in ASP.NET Core](/aspnet/core/security/data-protection/implementation/authenticated-encryption-details?view=aspnetcore-9.0) with ES-256-CBC + HMACSHA256
-- [Key management in ASP.NET Core](/aspnet/core/security/data-protection/implementation/key-management?view=aspnetcore-9.0)
-- [Custom key repository](/aspnet/core/security/data-protection/implementation/key-storage-providers?view=aspnetcore-9.0&tabs=visual-studio#custom-key-repository)
-- [Windows DPAPI key encryption at rest](/aspnet/core/security/data-protection/implementation/key-encryption-at-rest?view=aspnetcore-9.0#windows-dpapi) encryption mechanism for data that's never read outside of the current machine. Only applies to Windows deployments.
-- [X.509 certificate key encryption at rest](/aspnet/core/security/data-protection/implementation/key-encryption-at-rest?view=aspnetcore-9.0#x509-certificate)
+- [Authenticated encryption details in ASP.NET Core](/aspnet/core/security/data-protection/implementation/authenticated-encryption-details) with ES-256-CBC + HMACSHA256
+- [Key management in ASP.NET Core](/aspnet/core/security/data-protection/implementation/key-management)
+- [Custom key repository](/aspnet/core/security/data-protection/implementation/key-storage-providers&tabs=visual-studio#custom-key-repository)
+- [Windows DPAPI key encryption at rest](/aspnet/core/security/data-protection/implementation/key-encryption-at-rest#windows-dpapi) encryption mechanism for data that's never read outside of the current machine. Only applies to Windows deployments.
+- [X.509 certificate key encryption at rest](/aspnet/core/security/data-protection/implementation/key-encryption-at-rest#x509-certificate)
 
 #### Encryption 
 

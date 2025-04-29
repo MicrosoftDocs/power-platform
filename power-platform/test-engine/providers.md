@@ -49,7 +49,7 @@ testSettings:
 
 When you enable Dataverse integration, you're required to open Azure CLI with a user or service principal that has rights to the Dataverse environment. You can use the command: `az login`  More information: [Sign in with Azure CLI](/cli/azure/authenticate-azure-cli).
 
-The WebApi used for Dataverse integration is obtained either from the host domain name of the [pac test run](../developer/cli/reference/tests#pac-test-run) domain argument or by defining an environment variable named `DATAVERSE_URL`.
+The WebApi used for Dataverse integration is obtained either from the host domain name of the [pac test run](../developer/cli/reference/test.md#pac-test-run) domain argument or by defining an environment variable named `DATAVERSE_URL`.
 
 #### AI Integration
 
@@ -66,7 +66,7 @@ testSettings:
 
 ### Example Commands
 
-To run tests for each provider, you can use the following [pac test run](../developer/cli/reference/tests#pac-test-run) commands
+To run tests for each provider, you can use the following [pac test run](../developer/cli/reference/test.md#pac-test-run) commands
 
 #### Canvas Applications
 

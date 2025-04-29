@@ -22,7 +22,7 @@ contributors:
 
 ## What is Power Fx?
 
-[Microsoft Power Fx](../power-fx/overview) is a low-code general-purpose programming language based on spreadsheet-like formulas. It's a typed, declarative, and functional language, with imperative logic and state management available as needed. Its history from Excel makes it accessible to a wide range of users, from beginners to experienced developers.
+[Microsoft Power Fx](../power-fx/overview.md) is a low-code general-purpose programming language based on spreadsheet-like formulas. It's a typed, declarative, and functional language, with imperative logic and state management available as needed. Its history from Excel makes it accessible to a wide range of users, from beginners to experienced developers.
 
 ### Advanced Power Fx Scenarios
 
@@ -160,9 +160,9 @@ This function captures a screenshot of the app at the current point in time. The
 
 `Select(Index(gallerycontrol.AllItems, row or column).child control)`
 
-This function has the same functionality as the Power Apps  [Select function](../power-fx/reference/function-select).
+This function has the same functionality as the Power Apps  [Select function](../power-fx/reference/function-select.md).
 
-When working with a nested gallery, use [Index()](../power-fx/reference/function-first-last) within the select function.
+When working with a nested gallery, use [Index()](../power-fx/reference/function-first-last.md) within the select function.
 
 ### Select example
 
@@ -180,9 +180,9 @@ When working with a nested gallery, use [Index()](../power-fx/reference/function
 
 `SetProperty(control.propertyName, propertyValue)`
 
-This function has the same functionality as the Power Apps [SetProperty function](../power-fx/reference/function-setproperty).
+This function has the same functionality as the Power Apps [SetProperty function](../power-fx/reference/function-setproperty.md).
 
-When working with a nested gallery, use [Index()](../power-fx/reference/function-first-last) within the `SetProperty` function.
+When working with a nested gallery, use [Index()](../power-fx/reference/function-first-last.md) within the `SetProperty` function.
 
 ### SetProperty example
 
@@ -208,17 +208,17 @@ This function waits for the property of the control to equal the specified value
 
 ### See also
 
-[Power Apps Test Engine overview (preview)](overview.md)   
-[Power Apps Test Engine YAML format (preview)](yaml.md)   
+- [Power Apps Test Engine overview (preview)](overview.md)
+- [Power Apps Test Engine YAML format (preview)](yaml.md)
 
 ## Preview Functions
 
 The following functions can optionally be included in tests when the Power Fx Preview namespace by adding it to the allowlist in the testSettings section
 
-> NOTES:
-> 1. Preview functions are subject to change. As these functions become ready for wider usage they may move to the `TestEngine` namespace.
-> 2. You can use User Defined Functions to wrap `Preview` functions to make migration to non preview versions of the function easier.
-> 3. You could have the model only return a JSON object that you could pars using the `ParseJSON()` function 
+> [!NOTE]
+> - Preview functions are subject to change. As these functions become ready for wider usage they may move to the `TestEngine` namespace.
+> - You can use User Defined Functions to wrap `Preview` functions to make migration to non preview versions of the function easier.
+> - You could have the model only return a JSON object that you could pars using the `ParseJSON()` function.
 
 ### Preview.AIExecutePrompt
 
@@ -366,7 +366,7 @@ Preview.SimulateConnector({name: "msnweather", then: {responses: { daily: { day:
 
 #### Preview.SimuateDataverse Example
 
-This example when a call is made to query the Dataverse entity with logical name **cr693_combotable** it returns the records using [**Table()**](../power-fx/reference/function-table) function
+This example when a call is made to query the Dataverse entity with logical name **cr693_combotable** it returns the records using [**Table()**](../power-fx/reference/function-table.md) function
 
 ```
 Preview.SimulateDataverse({

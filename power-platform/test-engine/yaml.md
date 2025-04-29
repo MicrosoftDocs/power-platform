@@ -16,7 +16,7 @@ contributors:
 
 [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
 
-Tests are defined in YAML following the same guidelines as Power Fx does. [Learn more about the Power Fx YAML formula grammar](../power-fx/yaml-formula-grammar).
+Tests are defined in YAML following the same guidelines as Power Fx does. [Learn more about the Power Fx YAML formula grammar](../power-fx/yaml-formula-grammar.md).
 
 View the [PowerApps-TestEngine/samples](https://github.com/microsoft/PowerApps-TestEngine/tree/main/samples) folder for detailed examples.
 
@@ -71,7 +71,7 @@ For Sharepoint/Dataverse/Connector apps, `requestURL` and `method` can be the sa
 
 #### Test TestSteps
 
-- This can use any existing [Test Engine Power Fx functions](../power-fx/overview) functions or [specific test functions](powerfx.md) defined by this framework.
+- This can use any existing [Test Engine Power Fx functions](../power-fx/overview.md) functions or [specific test functions](powerfx.md) defined by this framework.
 - It should start with a `|` to allow for multiline YAML expressions followed by an `=` sign to indicate that it's a Power Fx expression
 - Functions should be separated by a `;`
 - Comments can be used and should start with `//`
@@ -84,7 +84,7 @@ Used to define settings for the tests in the test plan.
 
 | Property | Required | Description |
 |---|---|---|
-| `locale` | Yes | The locale/culture syntax in which the test cases or test steps are written in. See [Global Support in Microsoft Power Fx](../power-fx/global) for more information. If unspecified, `CultureInfo.CurrentCulture` is used for the locale by default for parsing the test steps. |
+| `locale` | Yes | The locale/culture syntax in which the test cases or test steps are written in. See [Global Support in Microsoft Power Fx](../power-fx/global.md) for more information. If unspecified, `CultureInfo.CurrentCulture` is used for the locale by default for parsing the test steps. |
 | `browserConfigurations` | Yes | A list of browser configurations to be tested. At least one browser must be specified. |
 | `recordVideo` | No | Default is false. If set to true, a video recording of the test is captured. |
 | `headless` | No | Default is true. If set to false, the browser shows up during test execution. |
