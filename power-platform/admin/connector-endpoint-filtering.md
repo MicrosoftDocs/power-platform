@@ -1,9 +1,9 @@
 ---
-title: "Connector endpoint filtering (preview) | MicrosoftDocs"
-description: A description goes here.
+title: Connector endpoint filtering (preview)
+description: Learn how to configure connector endpoint filtering in DLP policies to control app, flow, and chatbot connections.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/28/2025
+ms.date: 04/29/2025
 ms.subservice: admin
 author: mikferland-msft
 ms.author: miferlan
@@ -12,8 +12,12 @@ contributors:
   - mikferland-msft
   - mihaelablendea
   - nimoutzo
-ms.custom: "admin-security"
-search.audienceType: 
+ms.custom:
+  - admin-security
+  - ai-gen-docs-bap
+  - ai-gen-description
+  - ai-seo-date:04/29/2025
+search.audienceType:
   - admin
 search.app:
   - D365CE
@@ -27,19 +31,20 @@ search.app:
 [!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 [This article is pre-release documentation and is subject to change.]
 
-Connector endpoint filtering allows admins to govern which specific endpoints makers can connect to when building apps, flows, or chatbots. It is configured within a data loss prevention (DLP) policy, and it is exclusively available for six connectors: 
+Connector endpoint filtering allows admins to govern which specific endpoints makers can connect to when building apps, flows, or chatbots. It's configured within a data loss prevention (DLP) policy, and it's exclusively available for six connectors:
+
 - HTTP
 - HTTP with Microsoft Entra ID (AD)
 - HTTP Webhook
 - SQL Server (includes using SQL Server Connector to access Azure Synapse data warehouse)
-- Azure Blob Storage 
+- Azure Blob Storage
 - SMTP
-- DesktopFlow - Browser Automation
+- Desktop flows
 
-When a maker tries to connect their app, flow, or chatbot to a blocked endpoint, they will encounter a DLP error message.
+When a maker tries to connect their app, flow, or chatbot to a blocked endpoint, they encounter a DLP error message.
 
 > [!WARNING]
-> Endpoint filtering rules are not enforced on environment variables, custom inputs, or any endpoint that is dynamically created at run-time. Only static endpoints are evaluated in the app, flow, or chatbot designers. For more information, see [Known limitations](#known-limitations).
+> Endpoint filtering rules aren't enforced on environment variables, custom inputs, or any endpoint that is dynamically created at run-time. Only static endpoints are evaluated in the app, flow, or chatbot designers. For more information, see [Known limitations](#known-limitations).
 
 > [!Important]
 > [!include [preview](../includes/cc-preview-features-definition.md)]
@@ -67,14 +72,16 @@ After a pattern has been added, you can edit or delete these patterns by selecti
 
 :::image type="content" source="media/dlp-delete-pattern.png" alt-text="Delete a pattern.":::
 
-After saving your connector endpoint filtering rules and the DLP policy in which they are defined, they become instantly enforced on the targeted environments. Below is an example where a maker tried to connect their cloud flow to an HTTP endpoint that is not allowed.
+After saving your connector endpoint filtering rules and the DLP policy in which they're defined, they become instantly enforced on the targeted environments. Below is an example where a maker tried to connect their cloud flow to an HTTP endpoint that isn't allowed.
 
 :::image type="content" source="media/EF_CloudFlow.png" alt-text="DLP error because of endpoint filtering rules.":::
 
 ## Known limitations
-- Endpoint filtering rules are not enforced on environment variables, custom inputs, and dynamically bound endpoints during runtime. Only static endpoints known and selected when building an app, flow, or chatbot during design time are enforced. This implies that connector endpoint filtering rules for SQL Server and Azure Blob Storage are not enforced if the connections are authenticated with Microsoft Entra ID. In the two screenshots below, a maker has built a cloud flow that defines the SQL Server and database inside variables, and then uses those variables as input to the connection definition. Therefore, the endpoint filtering rules are not evaluated and the cloud flow can execute successfully.
+
+- Endpoint filtering rules aren't enforced on environment variables, custom inputs, and dynamically bound endpoints during runtime. Only static endpoints known and selected when building an app, flow, or chatbot during design time are enforced. This implies that connector endpoint filtering rules for SQL Server and Azure Blob Storage aren't enforced if the connections are authenticated with Microsoft Entra ID. In the two screenshots below, a maker has built a cloud flow that defines the SQL Server and database inside variables, and then uses those variables as input to the connection definition. Therefore, the endpoint filtering rules aren't evaluated and the cloud flow can execute successfully.
 
     :::image type="content" source="media/EF_KnownLimitation_1.png" alt-text="Cloud flow uses variables to connect to SQL.":::
+
     :::image type="content" source="media/EF_KnownLimitation_2.png" alt-text="Cloud flow runs successfully.":::
 
 - Some Power Apps published before October 1, 2020, need to be re-published for DLP connector action rules and endpoint rules to be enforced. The following script enables admins and makers to identify apps that must be re-published to respect these new DLP granular control rules:
@@ -103,19 +110,19 @@ After saving your connector endpoint filtering rules and the DLP policy in which
 
 ## Endpoint input formats and examples 
 
-Each connector has a different notion of what an endpoint means. Further, some endpoints can be defined in multiple formats. Therefore, endpoints have to be entered in all possible formats to block makers from using them while creating apps and flows. Admins can either enter the full endpoint name or use pattern matching with the wildcard character (`*`) when creating an endpoint filtering rule. These rules are entered and presented in an ordered list of endpoint patterns, meaning that they'll be evaluated in ascending order by number. Note that the last rule for any given connector is always `*` Allow or `*` Deny. Allow is the default, which can be changed to Deny. 
+Each connector has a different notion of what an endpoint means. Further, some endpoints can be defined in multiple formats. Therefore, endpoints have to be entered in all possible formats to block makers from using them while creating apps and flows. Admins can either enter the full endpoint name or use pattern matching with the wildcard character (`*`) when creating an endpoint filtering rule. These rules are entered and presented in an ordered list of endpoint patterns, meaning that they'll be evaluated in ascending order by number. The last rule for any given connector is always `*` Allow or `*` Deny. Allow is the default, which can be changed to Deny. 
 
 The following guidance describes how to enter connector endpoints while creating rules to allow or deny them. 
 
-### SQL Server 
+### SQL Server
 
 SQL Server connection endpoints have to be listed in `<Server_name, database_name>` format. A few things to keep in mind: 
 
-- The server name can be entered in various formats by makers. Therefore, to truly address an endpoint, it has to be entered in all possible formats. For example, on-premises instances can be in `<machine_name\named_instance, database_name>` or `<IP address, custom port, database_name>` format. In this case, you'll have to apply allow or block rules in both formats for an endpoint. For example:
+- The server name can be entered in various formats by makers. Therefore, to truly address an endpoint, it has to be entered in all possible formats. For example, on-premises instances can be in `<machine_name\named_instance, database_name>` or `<IP address, custom port, database_name>` format. In this case, you have to apply allow or block rules in both formats for an endpoint. For example:
   - Block `WS12875676\Servername1,MktingDB` 
   - Block `11.22.33.444,1401,MktingDB`
 
-- There's no special logic to handle relative addresses such as `localhost`. Therefore, if you block `*localhost*`, it will block makers from using any endpoints by using `localhost` as part of the SQL Server endpoint. However, it won't stop them from accessing the endpoint by using the absolute address, unless the absolute address has also been blocked by the admin. 
+- There's no special logic to handle relative addresses such as `localhost`. Therefore, if you block `*localhost*`, it blocks makers from using any endpoints by using `localhost` as part of the SQL Server endpoint. However, it doesn't stop them from accessing the endpoint by using the absolute address, unless the absolute address has also been blocked by the admin. 
 
 The following are examples: 
 
@@ -129,7 +136,7 @@ The following are examples:
 
 ### Dataverse 
 
-Dataverse endpoints are represented by the [organization ID](determine-org-id-name.md), such as, 00aa00aa-bb11-cc22-dd33-44ee44ee44ee. Please note that only the regular Dataverse connector is currently in scope for endpoint filtering. Dataverse dynamics and Dataverse current connectors are not in scope. Also, the local instance of Dataverse (also known as the current environment) can never be blocked for use within an environment. This means that within any given environment, makers can always access the Dataverse current environment. 
+Dataverse endpoints are represented by the [organization ID](determine-org-id-name.md), such as, 00aa00aa-bb11-cc22-dd33-44ee44ee44ee. Note that only the regular Dataverse connector is currently in scope for endpoint filtering. Dataverse dynamics and Dataverse current connectors aren't in scope. Also, the local instance of Dataverse (also known as the current environment) can never be blocked for use within an environment. This means that within any given environment, makers can always access the Dataverse current environment. 
 
 Therefore, a rule that says the following:
 
@@ -151,41 +158,42 @@ Azure Blob Storage endpoints are represented by the Azure storage account name.
 
 SMTP endpoints are represented in `<SMTP server address, port number>` format. 
 
-The following is an example scenario: 
+Here's an example scenario:
 
-1. Deny `smtp.gmail.com,587` 
+1. Deny `smtp.gmail.com,587`
 2. Allow `*`
 
-### HTTP with Microsoft Entra ID, HTTP Webhook, and HTTP connectors 
+### HTTP with Microsoft Entra ID, HTTP Webhook, and HTTP connectors
 
-The endpoints for all HTTP connectors are represented by a URL pattern. The **Get web resource** action of the HTTP with Microsoft Entra connector is out of scope. 
+The endpoints for all HTTP connectors are represented by a URL pattern. The **Get web resource** action of the HTTP with Microsoft Entra connector is out of scope.
 
-The following is an example scenario: 
+Here's an example scenario:
 
 Allow access to only the Azure subscriptions page within `https://management.azure.com/`.
 
 1. Allow `https://management.azure.com/subscriptions*`
-2. Deny `https://management.azure.com/*` 
+2. Deny `https://management.azure.com/*`
 3. Deny `*`
 
-### DesktopFlow - Browser Automation
+### Desktop flows
 
-This feature allows you to control which web pages a desktop flow can access in Power Automate for Desktop. The endpoints are represented in either URL format or web page name format, and you should utilize wildcards for dynamic URL or page name matching. The validation is performed during 'Launch Web Browser' or 'Go to web page' actions before a desktop flow can proceed with browser interactions.
+This feature lets you control which web pages a desktop flow accesses in Power Automate for desktop. The endpoints are represented in either URL format or web page name format, and you can use wildcards for dynamic URL or page name matching. Validation occurs during "Launch Web Browser" or "Go to web page" actions before a desktop flow proceeds with browser interactions.
 
 > [!NOTE]
-> Endpoint filtering cannot be validated when 'Launch Web Browser' actions are configured to attach to the foreground window. In such cases, the action will not be blocked unless access to all web pages is denied.
+> Endpoint filtering isn't validated when "Launch Web Browser" actions are configured to attach to the foreground window. In such cases, the action isn't blocked unless access to all web pages is denied.
 
-The following is an example scenario: 
+The following is an example scenario:
 
-Allow access to all web pages except for URL `https://www.microsoft.com/` and any URL or web page containing the string `powerplatform`.
+Allow access to all web pages except for the URL `https://www.microsoft.com/` and any URL or web page containing the string `powerplatform`.
 
 1. Deny `https://www.microsoft.com/`
-2. Deny `*powerplatform*`
-3. Allow `*`
+1. Deny `*powerplatform*`
+1. Allow `*`
 
 ## PowerShell support for endpoint filtering
 
 ### Configure endpoint filtering rules for a policy
+
 The object that contains endpoint filtering rules for a policy is referred to below as the connector configurations.
 
 The connector configurations object has the following structure:
