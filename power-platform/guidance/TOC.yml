@@ -423,12 +423,12 @@
       items:
         - name: Overview
           href: case-studies/index.md
+        - name: A1 Inteligencia em Viagens boosts team efficiency
+          href: case-studies/boost-efficiency-experience-case-study.md
         - name: ABN AMRO enhances AI capabilities
           href: case-studies/abn-amro-enhances-ai.md
         - name: AECOM simplifies project onboarding
           href: case-studies/aecom-streamlined-onboarding.md
-        - name: A1 Inteligencia em Viagens boosts team efficiency
-          href: case-studies/boost-efficiency-experience-case-study.md
         - name: Cineplex automates business processes
           href: case-studies/automate-business-processes.md
         - name: Degrees of Change automates nonprofit operations

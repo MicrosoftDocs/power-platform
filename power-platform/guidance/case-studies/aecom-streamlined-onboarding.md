@@ -60,7 +60,7 @@ They select the user icon next to the Teams icon to view the user's permissions 
 
 1. For adding members in bulk, users can download the Bulk Import Excel sheet template. They receive an email with the Excel sheet attached. See the following example email.
 
-:::image type="content" source="media/aecom-streamlined-onboarding/email.png" alt-text="Screenshot of an example email with the Bulk Import Excel sheet template attached." lightbox ="media/aecom-streamlined-onboarding/email.png":::
+:::image type="content" source="media/aecom-streamlined-onboarding/email.png" alt-text="Screenshot of an example email with the Bulk Import Excel sheet template attached.":::
 
 After filling out the Excel sheet, information managers upload it to the location specified in the email. A Power Automate flow runs in the background to add each member to the project's SharePoint site.
 
@@ -141,7 +141,7 @@ To better understand the technical foundation of the Project Connect application
 
 The first part of the architecture shows how data is automatically extracted from Workday and Workbench platforms to be displayed in Power BI and in Project Connect, which was built using Power Apps.
 
-:::image type="content" source="media/aecom-streamlined-onboarding/architecture.png" alt-text="Diagram showing data flow from Workday and Workbench platforms to Power BI and Project Connect." lightbox="media/aecom-streamlined-onboarding/architecture.png":::
+:::image type="content" source="media/aecom-streamlined-onboarding/architecture.png" alt-text="Diagram showing data flow from Workday and Workbench platforms to Power BI and Project Connect.":::
 
 1.  Copilot capabilities in Power Automate and Power Apps streamline workflows and increase productivity.
 2.  Workday sends weekly human resource management (HRM) data to a shared mailbox in Microsoft Outlook.
@@ -156,7 +156,7 @@ The first part of the architecture shows how data is automatically extracted fro
 
 Next, let's take a deeper look at the architecture of the Project Connect application, built using Power Apps.
 
-:::image type="content" source="media/aecom-streamlined-onboarding/architecture-power-apps.png" alt-text="Diagram showing the Project Connect application architecture built using Power Apps." lightbox="media/aecom-streamlined-onboarding/architecture-power-apps.png":::
+:::image type="content" source="media/aecom-streamlined-onboarding/architecture-power-apps.png" alt-text="Diagram showing the Project Connect application architecture built using Power Apps.":::
 
 1. Copilot capabilities in Power Automate, Dataverse, and Power Apps streamline workflows and increase productivity.
 

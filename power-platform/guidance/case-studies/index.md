@@ -30,7 +30,7 @@ Case studies are detailed accounts of real-world applications and implementation
 | Case study | Description |
 | --- | --- |
 | [A1 Inteligência em Viagens boosts efficiency and customer experience](boost-efficiency-experience-case-study.md) | This case study covers how A1 Inteligência em Viagens boosts team efficiency and customer experience with Power Automate and Copilot Studio. |
-| [ABN AMRO Bank enhances AI capabilities with Copilot Studio and Azure services](abn-amro-enhances-ai.md) | This case study covers how ABN AMRO enhanced customer and employee interactions using Copilot Studio. |
+| [ABN AMRO Bank enhances AI capabilities with Copilot Studio and Azure services](abn-amro-enhances-ai.md) | This case study covers how ABN AMRO enhanced customer and employee interactions using Copilot Studio and Azure. |
 | [AECOM simplifies project onboarding with Power Platform, Azure, and Microsoft Fabric](aecom-streamlined-onboarding.md) | This case study covers how AECOM streamlined project onboarding using Power Platform, Microsoft Azure, and Microsoft Fabric. |
 | [Cineplex automates business processes](automate-business-processes.md) | This case study covers how Cineplex automates business processes with generative AI and Power Automate. |
 | [Degrees of Change automates nonprofit operations](nonprofit.md) | This case study covers how Degrees of Change automates nonprofit operations with Power Pages, Power Apps, and AI Builder. |

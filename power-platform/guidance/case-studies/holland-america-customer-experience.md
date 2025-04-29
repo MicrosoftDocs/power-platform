@@ -40,7 +40,7 @@ Holland America Line used Microsoft Copilot Studio to develop a virtual agent ca
 
 The following example shows the interface of the Anna digital concierge:
 
-:::image type="content" source="media/holland-america/anna-digital.png" alt-text="Screenshot of the Anna digital concierge in which a user has asked to book a cruise to Alaska." lightbox="media/holland-america/anna-digital.png":::
+:::image type="content" source="media/holland-america/anna-digital.png" alt-text="Screenshot of the Anna digital concierge in which a user has asked to book a cruise to Alaska.":::
 
 ### Implementation approach
 
@@ -60,7 +60,7 @@ Working closely with Microsoft, Holland America Line pushed the boundaries of ge
 
 - **Multi-intent detection**: Ability to understand queries such as, "Help me find a cruise to Alaska for 6 to 8 days from Seattle."
 
-- **Custom entity extraction**: Ability to expand on predefined entities such as dates and add custom entities, such as dates and custom entities. For example, "I want to go next summer" generates a JSON object for the June-August summer season (2025) as follows:
+- **Custom entity extraction**: Ability to expand on predefined entities such as dates and add custom entities. For example, "I want to go next summer" generates a JSON object for the June-August summer season (2025) as follows:
  
      ```json        
     {"departurefromdate": "2025-06-01", "departuretodate": "2025-08-01"}
@@ -70,9 +70,9 @@ Working closely with Microsoft, Holland America Line pushed the boundaries of ge
 
 ### Hybrid orchestration with AI Prompt for intent recognition
 
-The team developed an alternative approach for intent recognition. Classic orchestration, which relies solely on trigger phrases, was too basic and generative orchestration was still in preview at that time. As an alternative, they used a hybrid mode.
+The team used an alternative approach for intent recognition. Classic orchestration, which relies solely on trigger phrases, was too basic, and generative orchestration was in preview when they developed the agent. As an alternative, they used a hybrid mode.
 
-Hybrid orchestration uses classic orchestration and enhances it with AI Builder prompts to help interpret user intent. The team created a powerful prompt that processes user queries, considers previous conversations, determines intent, and routes to the most relevant topic.
+Hybrid orchestration uses classic orchestration and enhances it with AI Builder prompts to help interpret user intent. A defined powerful prompt processes user queries, considers previous conversations, determines intent, and routes to the most relevant topic.
 
 Key benefits of hybrid orchestration:
 
@@ -104,39 +104,39 @@ To set up hybrid orchestration, here are the general steps:
 1. Add a conditional branch to route conversations to various custom topics.
 1. Include fallback mechanisms.
 
-The goal is to capture the user's intent in a prompt, extract it as output, and redirect the conversation to the appropriate custom topic. A key aspect is to avoid trigger phrases in topics and ensure conversation boost activates consistently.
+The goal is to capture the user's intent in a prompt, extract it as output, and redirect the conversation to the appropriate custom topic. A key aspect is to avoid trigger phrases in topics and ensure the conversational boosting topic activates consistently.
 
-In this case study, a Power Automate cloud flow was used to integrate the AI Prompt. AI Prompts were initially unavailable for use within Copilot Studio. However, they're now integrated, allowing agents to use AI Prompts directly without requiring a flow as an intermediary.
+In this case study, a Power Automate cloud flow was used to integrate the AI Prompt. Note that AI prompts are now integrated in Copilot Studio, allowing agents to use AI Prompts directly without requiring a flow as an intermediary.
 
 In the first step, the user information is saved as a variable. Next, an action calls a Power Automate cloud flow, where the AI Prompt extracts the intent and returns it to the agent.
 
-:::image type="content" source="media/holland-america/ai-prompt-integration.png" alt-text="Screenshot of a Power Automate cloud flow integrating AI Prompt for intent extraction." lightbox="media/holland-america/ai-prompt-integration.png":::
+:::image type="content" source="media/holland-america/ai-prompt-integration.png" alt-text="Screenshot of a Power Automate cloud flow integrating AI Prompt for intent extraction.":::
 
 This image shows an overview of the flow. Notice that an action uses an AI Prompt. When successful, the agent interprets the intent and applies it in a conditional branch.
 
-:::image type="content" source="media/holland-america/flow-overview.png" alt-text="Screenshot of a flow overview showing AI Prompt integration for intent recognition." lightbox="media/holland-america/flow-overview.png":::
+:::image type="content" source="media/holland-america/flow-overview.png" alt-text="Screenshot of a flow overview showing AI Prompt integration for intent recognition.":::
 
 The following example demonstrates how the system redirects to the Beverage, Spa, or Dining topics.
 
-:::image type="content" source="media/holland-america/system-redirects.png" alt-text="Screenshot showing how the system redirects to Beverage, Spa, or Dining topics based on AI Prompt intent recognition." lightbox="media/holland-america/system-redirects.png":::
+:::image type="content" source="media/holland-america/system-redirects.png" alt-text="Screenshot showing how the system redirects to Beverage, Spa, or Dining topics based on AI Prompt intent recognition.":::
 
 Users can also speak with an agent. The *All other conditions* setting triggers various fallback mechanisms.
 
-:::image type="content" source="media/holland-america/fallback-mechanism.png" alt-text="Screenshot of fallback mechanisms triggered by 'All other conditions' setting." lightbox="media/holland-america/fallback-mechanism.png":::
+:::image type="content" source="media/holland-america/fallback-mechanism.png" alt-text="Screenshot of fallback mechanisms triggered by 'All other conditions' setting.":::
 
 An example of a fallback is an FAQ based on website content and a node that uses generative answers with Bing Custom Search as a data source.
 
-:::image type="content" source="media/holland-america/generative-answers.png" alt-text="Screenshot of a fallback FAQ node using generative answers and Bing Custom Search." lightbox="media/holland-america/generative-answers.png":::
+:::image type="content" source="media/holland-america/generative-answers.png" alt-text="Screenshot of a fallback FAQ node using generative answers and Bing Custom Search.":::
 
 Here is an overview of the intent recognition part of the conversational boosting topic.
 
 :::image type="content" source="media/holland-america/conversational-boosting.png" alt-text="Screenshot of the intent recognition part of the conversational boosting topic." lightbox="media/holland-america/conversational-boosting.png":::
 
-### The AI rompt
+### The AI prompt
 
 An AI prompt can be added directly to the agent in Copilot Studio. You choose the model you want to use. In this example GPT-4o is used:
 
-:::image type="content" source="media/holland-america/model-gpt4.png" alt-text="Screenshot of an AI prompt example in Copilot Studio showing text and instructions." lightbox="media/holland-america/model-gpt4.png":::
+:::image type="content" source="media/holland-america/model-gpt4.png" alt-text="Screenshot of an AI prompt example in Copilot Studio showing text and instructions.":::
 
 The prompt in this case study is built up as follows:
 
@@ -195,7 +195,7 @@ The following architecture diagram shows how Holland America Line developed the 
 
 :::image type="content" source="media/holland-america/architecture.png" alt-text="Diagram showing the architecture of the Holland America Line digital concierge" lightbox="media/holland-america/architecture.png":::
 
-1. The customer visits the HAL website and interacts with Anna, the virtual agent built with Microsoft Copilot Studio.  
+1. The customer visits the Holland America Line (HAL) website and interacts with Anna, the virtual agent built with Microsoft Copilot Studio.  
 
 1. On the customer service side, an AI-driven agent provides customers with a live chat with customer representatives.  
 
