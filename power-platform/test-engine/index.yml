@@ -1,0 +1,73 @@
+### YamlMime:Landing
+
+title: Microsoft Power Apps Test Engine
+summary: Learn how to create automated test for Power Platform apps.
+
+metadata:
+  title: Microsoft Power Apps Test Engine
+  description: Learn how to create automated test for Power Platform apps.
+  ms.subservice: developer
+  
+  ms.topic: landing-page
+  author: grant-archibald-ms
+  ms.author: grarchib
+  ms.reviewer: jdaly
+  ms.date: 04/28/2025
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: First group
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is Test Engine?
+            url: overview.md
+      - linkListType: concept
+        links:
+          - text: Test Engine Authentication
+            url: authentication.md
+          - text: Authentication implementation
+            url: authentication-implementation.md
+      - linkListType: how-to-guide
+        links:
+          - text: Test Canvas app
+            url: canvas-application.md
+          - text: Test Model Driven app
+            url: model-driven-application.md
+          - text: Test Dataverse
+            url: dataverse.md
+
+  # Card (optional)
+  - title: Second group
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Yaml format
+            url: yaml.md
+          - text: Power Fx functions
+            url: powerfx.md
+          - text: Providers
+            url: providers.md
+          - text: Extensibility
+            url: extensibility.md
+
+  # Card
+  - title: Third group
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Ring deployment model
+            url: ring-deployment-model.md
+          - text: Power Fx Connector and Dataverse simulation
+            url: simulation.md
+          - text: Power Fx namespaces
+            url: powerfx-namespaces.md
+          - text: Power Fx C# functions
+            url: powerfx-csharp.md
+          - text: Test engine and Playwright
+            url: playwright.md
+
