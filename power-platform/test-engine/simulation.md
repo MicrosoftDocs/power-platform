@@ -2,6 +2,7 @@
 title: "Dataverse and Connector Simulation with Test Engine"
 description: "Discusses the ability to simulate interaction with Dataverse and Connectors using Power Fx functions"
 author: grant-archibald-ms
+ms.author: grarchib
 ms.date: 05/09/2025
 ms.reviewer: jdaly
 ms.topic: article

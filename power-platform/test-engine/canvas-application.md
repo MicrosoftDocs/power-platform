@@ -2,6 +2,7 @@
 title: "Test Canvas Application with Test Engine (preview)"
 description: "Describes testing a Power Apps Canvas application"
 author: grant-archibald-ms
+ms.author: grarchib
 ms.date: 05/09/2025
 ms.reviewer: jdaly
 ms.topic: article
@@ -77,7 +78,7 @@ $env:user1Email = "someone@example.com"
 
 ### Run the test
 
-Use the PAC CLI [pac test run](../developer/cli/reference/tests#pac-test-run) command to run your test plan.
+Use the PAC CLI [pac test run](../developer/cli/reference/tests.md#pac-test-run) command to run your test plan.
 
 - Path to your test plan file
 - EnvironmentId (For example 00aa00aa-bb11-cc22-dd33-44ee44ee44ee)
@@ -101,7 +102,7 @@ The first preview version of the Test Engine was focused on testing canvas appli
 
 #### Model Driven Application Support
 
-The latest version of the Test Engine now expands Power Apps testing to include support for [Model Driven Applications](./mode-driven-application.md) (MDA). This enhancement allows testers to create more comprehensive test plans that cover both canvas and MDA.
+The latest version of the Test Engine now expands Power Apps testing to include support for [Model Driven Applications](model-driven-application.md) (MDA). This enhancement allows testers to create more comprehensive test plans that cover both canvas and MDA.
 
 #### Dataverse Integration
 

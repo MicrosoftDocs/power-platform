@@ -48,12 +48,12 @@ In this example, the `ForAll()` is used to iterate over a table and perform an a
 
 Here are some functions that are useful when working with Dataverse:
 
-- [Collect()](../power-fx/reference/function-clear-collect-clearcollect#collect): Adds records to a table.
-- [CountRows()](../power-fx/reference/function-table-counts): Returns the number of records in a table.
-- [First()](../power-fx/reference/function-first-last): Returns the first record in a table.
-- [ForAll()](../power-fx/reference/function-forall): Iterates over a table and performs an action on each record.
-- [Patch()](../power-fx/reference/function-patch): Update an existing record.
-- [Remove()](../power-fx/reference/function-remove-removeif): Deletes a specific record from a table.
+- [Collect()](../power-fx/reference/function-clear-collect-clearcollect.md#collect): Adds records to a table.
+- [CountRows()](../power-fx/reference/function-table-counts.md): Returns the number of records in a table.
+- [First()](../power-fx/reference/function-first-last.md): Returns the first record in a table.
+- [ForAll()](../power-fx/reference/function-forall.md): Iterates over a table and performs an action on each record.
+- [Patch()](../power-fx/reference/function-patch.md): Update an existing record.
+- [Remove()](../power-fx/reference/function-remove-removeif.md): Deletes a specific record from a table.
 
 ## Considerations
 

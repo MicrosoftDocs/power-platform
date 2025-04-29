@@ -110,13 +110,13 @@ The current logged-in Azure CLI session is used to obtain an access token to the
 
 Further reading for readers unfamiliar with Azure CLI sign-in, Access Token, and Dataverse security model:
 1. [az sign-in](/cli/azure/reference-index?view=azure-cli-latest#az-login)
-2. [az account get-access-token](/cli/azure/account?view=azure-cli-latest#az-account-get-access-token) using Azure CLI to obtain access token. In this case it's used to obtain access token to integrate with Dataverse custom XML repository
-3. [Microsoft.PowerPlatform.Dataverse.Client](https://www.nuget.org/packages/Microsoft.PowerPlatform.Dataverse.Client/) used to access Custom XML Repository using the obtained access token
-4. [Security concepts in Microsoft Dataverse](../admin/wp-security-cds.md) where using User or Team owned records.
-5. [Granting permission to tables in Dataverse for Microsoft Teams](/power-apps/teams/dataverse-for-teams-table-permissions)
-6. [Record sharing](../admin/wp-security-cds.md#record-sharing) Individual records can be shared on a one-by-one basis with another user (interactive or application user).
-7. [Column-level security in Dataverse](../admin/wp-security-cds#column-level-security-in-dataverse)
-8. [System and application users](../admin/system-application-users). Specifically [application users](../admin/create-users#create-an-application-user) that could be used from the context of a CI/CD process.
+1. [az account get-access-token](/cli/azure/account?view=azure-cli-latest#az-account-get-access-token) using Azure CLI to obtain access token. In this case it's used to obtain access token to integrate with Dataverse custom XML repository
+1. [Microsoft.PowerPlatform.Dataverse.Client](https://www.nuget.org/packages/Microsoft.PowerPlatform.Dataverse.Client/) used to access Custom XML Repository using the obtained access token
+1. [Security concepts in Microsoft Dataverse](../admin/wp-security-cds.md) where using User or Team owned records.
+1. [Granting permission to tables in Dataverse for Microsoft Teams](/power-apps/teams/dataverse-for-teams-table-permissions)
+1. [Record sharing](../admin/wp-security-cds.md#record-sharing) Individual records can be shared on a one-by-one basis with another user (interactive or application user).
+1. [Column-level security in Dataverse](../admin/wp-security-cds.md#column-level-security-in-dataverse)
+1. [System and application users](../admin/system-application-users.md). Specifically [application users](../admin/create-users.md#create-an-application-user) that could be used from the context of a CI/CD process.
 
 ### Custom XML Repository
 
