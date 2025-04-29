@@ -1,6 +1,6 @@
 ---
-title: "Test Engine and Playwright"
-description: "Describes the relationship between Playwright and Test Engine"
+title: Test Engine and Playwright
+description: Describes the relationship between Playwright and Test Engine
 author: grant-archibald-ms
 ms.author: grarchib
 ms.date: 05/09/2025
@@ -38,10 +38,10 @@ Examples from customers demonstrate that the time required to build tests using 
 
 To address these challenges, it's essential to use low-code testing tools that align with the principles of low-code development. These tools are designed to be user-friendly, require minimal coding skills, and can be quickly integrated into the development workflow. By using low-code testing tools, organizations can:
 
-- Accelerate Testing: Low-code testing tools enable faster test creation and execution, keeping pace with the rapid development cycles of low-code solutions.
-- Reduce Bottlenecks: By minimizing the reliance on specialized code-first testers, low-code testing tools help eliminate bottlenecks in the testing process.
-- Enhance Collaboration: Low-code testing tools facilitate collaboration between developers, testers, and business users, ensuring that all stakeholders are involved in the testing process.
-- Maintain Quality: Despite the speed of development, low-code testing tools ensure that applications are thoroughly tested and meet high standards of quality and reliability.
+- **Accelerate Testing**: Low-code testing tools enable faster test creation and execution, keeping pace with the rapid development cycles of low-code solutions.
+- **Reduce Bottlenecks**: By minimizing the reliance on specialized code-first testers, low-code testing tools help eliminate bottlenecks in the testing process.
+- **Enhance Collaboration**: Low-code testing tools facilitate collaboration between developers, testers, and business users, ensuring that all stakeholders are involved in the testing process.
+- **Maintain Quality**: Despite the speed of development, low-code testing tools ensure that applications are thoroughly tested and meet high standards of quality and reliability.
 
 ## Power Apps Test Engine and Playwright
 

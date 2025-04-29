@@ -38,14 +38,15 @@ The next approach makes use of a more comprehensive data protection approach tha
 
 ![Diagram of end to end process of Browser storage state using Microsoft Data Protection and Dataverse Data store for secure values](./media/test-engine-security-storage-state.png)
 
-- The current storage state user authentication provider is extended to Save and load the Playwright browser context as Encrypted values
-- Make use of the Microsoft.AspNetCore.DataProtection package to offer Windows Data Protection (DAPI) or Certificate public / private encryption
-- Use the current logged in Azure CLI session to obtain an access token to the Dataverse instance where Test Engine Key values and encrypted key data are stored
-- Use a custom xml repository that provides the ability query and create Data Protection state by implementing IXmlRepository
-- Store XML state of data protection in Dataverse Table. Encryption of XML State managed by Data Protection API and selected protection providers
-- Make use of Dataverse Security model, sharing and auditing features are enabled to control access and record access to key and key data. Data Protection API is used to decrypt values and apply the state json to other test sessions.
-- Use the Data Protection API to decrypt the encrypted value using Windows Data Protection API (DAPI) or X.509 certificate private key.
-- A future option could also consider adding integration with [Azure Key Vault](/aspnet/core/security/key-vault-configuration)
+1. The current storage state user authentication provider is extended to Save and load the Playwright browser context as Encrypted values
+1. Make use of the Microsoft.AspNetCore.DataProtection package to offer Windows Data Protection (DAPI) or Certificate public / private encryption
+1. Use the current logged in Azure CLI session to obtain an access token to the Dataverse instance where Test Engine Key values and encrypted key data are stored
+1. Use a custom xml repository that provides the ability query and create Data Protection state by implementing IXmlRepository
+1. Store XML state of data protection in Dataverse Table. Encryption of XML State managed by Data Protection API and selected protection providers
+1. Make use of Dataverse Security model, sharing and auditing features are enabled to control access and record access to key and key data. Data Protection API is used to decrypt values and apply the state json to other test sessions.
+1. Use the Data Protection API to decrypt the encrypted value using Windows Data Protection API (DAPI) or X.509 certificate private key.
+
+A future option could also consider adding integration with [Azure Key Vault](/aspnet/core/security/key-vault-configuration)
 
 ## Playwright
 
@@ -70,9 +71,7 @@ The goal of the sign-in process it works with organization defined sign-in proce
 
 ### Storage State
 
-After a successful sign-in process The storage state of the browser context can contain [cookies](/entra/identity/authentication/concept-authentication-web-browser-cookies) that are used to authenticate later sessions. 
-
-The [How to: Use Data Protection](/dotnet/standard/security/how-to-use-data-protection) provides more information and details on this approach.
+After a successful sign-in process The storage state of the browser context can contain [cookies](/entra/identity/authentication/concept-authentication-web-browser-cookies) that are used to authenticate later sessions. [Learn more about how to use data protection](/dotnet/standard/security/how-to-use-data-protection)
 
 ### Windows Data Protection API
 
@@ -84,24 +83,24 @@ The [Microsoft.AspNetCore.DataProtection](/aspnet/core/security/data-protection/
 
 Key information to review for readers that are unfamiliar with Data Protection API:
 
-- [Authenticated encryption details in ASP.NET Core](/aspnet/core/security/data-protection/implementation/authenticated-encryption-details) with ES-256-CBC + HMACSHA256
+- [Authenticated encryption details in ASP.NET Core](/aspnet/core/security/data-protection/implementation/authenticated-encryption-details) with `ES-256-CBC` + `HMACSHA256`
 - [Key management in ASP.NET Core](/aspnet/core/security/data-protection/implementation/key-management)
 - [Custom key repository](/aspnet/core/security/data-protection/implementation/key-storage-providers#custom-key-repository)
 - [Windows DPAPI key encryption at rest](/aspnet/core/security/data-protection/implementation/key-encryption-at-rest#windows-dpapi) encryption mechanism for data that's never read outside of the current machine. Only applies to Windows deployments.
 - [X.509 certificate key encryption at rest](/aspnet/core/security/data-protection/implementation/key-encryption-at-rest#x509-certificate)
 
-#### Encryption 
+#### DPAPI Encryption
 
-By default data values are encrypted with ES-256-CBC and HMACSHA256. 
+By default data values are encrypted with `ES-256-CBC` and `HMACSHA256`. 
 
-ES-256-CBC stands for "AES-256 in Cipher Block Chaining (CBC) mode." AES (Advanced Encryption Standard) is a widely used encryption algorithm that ensures data confidentiality. The "256" refers to the key size, which is 256 bits. CBC mode is a method of encrypting data in blocks, where each block of plaintext is XORed with the previous ciphertext block before being encrypted. This ensures that identical plaintext blocks produce different ciphertext blocks, enhancing security.
+`ES-256-CBC` stands for 'AES-256 in Cipher Block Chaining (CBC) mode'. AES (Advanced Encryption Standard) is a widely used encryption algorithm that ensures data confidentiality. `256` refers to the key size, which is 256 bits. CBC mode is a method of encrypting data in blocks, where each block of plaintext is XORed with the previous ciphertext block before being encrypted. This ensures that identical plaintext blocks produce different ciphertext blocks, enhancing security.
 
-HMACSHA256 stands for "Hash-based Message Authentication Code using SHA-256." Hash-Based Message Authentication Code (HMAC) is a mechanism that provides data integrity and authenticity by combining a cryptographic hash function (in this case, SHA-256) with a secret key. SHA-256 is a member of the SHA-2 family of cryptographic hash functions, producing a 256-bit hash value.
+`HMACSHA256` stands for "Hash-based Message Authentication Code using SHA-256." Hash-Based Message Authentication Code (HMAC) is a mechanism that provides data integrity and authenticity by combining a cryptographic hash function (in this case, SHA-256) with a secret key. SHA-256 is a member of the SHA-2 family of cryptographic hash functions, producing a 256-bit hash value.
 
-When combined, ES-256-CBC + HMACSHA256 provides both encryption and authentication:
+When combined, `ES-256-CBC` + `HMACSHA256` provides both encryption and authentication:
 
-- Encryption with AES-256-CBC: The data is encrypted using AES-256 in CBC mode, ensuring that the data is confidential and can't be read by unauthorized parties.
-- Authentication with HMACSHA256: An HMAC is generated using SHA-256 and a secret key. This HMAC is appended to the encrypted data. When the data is received, the HMAC can be recalculated and compared to the appended HMAC to verify that the data hasn't been tampered with.
+- Encryption with `AES-256-CBC`: The data is encrypted using AES-256 in CBC mode, ensuring that the data is confidential and can't be read by unauthorized parties.
+- Authentication with `HMACSHA256`: An HMAC is generated using SHA-256 and a secret key. This HMAC is appended to the encrypted data. When the data is received, the HMAC can be recalculated and compared to the appended HMAC to verify that the data hasn't been tampered with.
 
 This combination ensures that the data is both encrypted (confidential) and authenticated (integrity and authenticity), providing a robust security mechanism.
 
@@ -110,20 +109,20 @@ This combination ensures that the data is both encrypted (confidential) and auth
 The current logged-in Azure CLI session is used to obtain an access token to the Dataverse instance where Test Engine key values and encrypted key data are stored. The Dataverse security model, sharing, and auditing features are enabled to control access and record access to key and key data.
 
 Further reading for readers unfamiliar with Azure CLI sign-in, Access Token, and Dataverse security model:
-1. [az sign-in](/cli/azure/reference-index?view=azure-cli-latest#az-login)
-1. [az account get-access-token](/cli/azure/account?view=azure-cli-latest#az-account-get-access-token) using Azure CLI to obtain access token. In this case it's used to obtain access token to integrate with Dataverse custom XML repository
-1. [Microsoft.PowerPlatform.Dataverse.Client](https://www.nuget.org/packages/Microsoft.PowerPlatform.Dataverse.Client/) used to access Custom XML Repository using the obtained access token
-1. [Security concepts in Microsoft Dataverse](../admin/wp-security-cds.md) where using User or Team owned records.
-1. [Granting permission to tables in Dataverse for Microsoft Teams](/power-apps/teams/dataverse-for-teams-table-permissions)
-1. [Record sharing](../admin/wp-security-cds.md#record-sharing) Individual records can be shared on a one-by-one basis with another user (interactive or application user).
-1. [Column-level security in Dataverse](../admin/wp-security-cds.md#column-level-security-in-dataverse)
-1. [System and application users](../admin/system-application-users.md). Specifically [application users](../admin/create-users.md#create-an-application-user) that could be used from the context of a CI/CD process.
+- [az sign-in](/cli/azure/reference-index?view=azure-cli-latest#az-login)
+- [az account get-access-token](/cli/azure/account?view=azure-cli-latest#az-account-get-access-token) using Azure CLI to obtain access token. In this case it's used to obtain access token to integrate with Dataverse custom XML repository
+- [Microsoft.PowerPlatform.Dataverse.Client](https://www.nuget.org/packages/Microsoft.PowerPlatform.Dataverse.Client/) used to access Custom XML Repository using the obtained access token
+- [Security concepts in Microsoft Dataverse](../admin/wp-security-cds.md) where using User or Team owned records.
+- [Granting permission to tables in Dataverse for Microsoft Teams](/power-apps/teams/dataverse-for-teams-table-permissions)
+- [Record sharing](../admin/wp-security-cds.md#record-sharing) Individual records can be shared on a one-by-one basis with another user (interactive or application user).
+- [Column-level security in Dataverse](../admin/wp-security-cds.md#column-level-security-in-dataverse)
+- [System and application users](../admin/system-application-users.md). Specifically [application users](../admin/create-users.md#create-an-application-user) that could be used from the context of a CI/CD process.
 
 ### Custom XML Repository
 
 A custom XML repository provides the ability to query and create Data Protection state by implementing [IXmlRepository](/aspnet/core/security/data-protection/extensibility/key-management?view=aspnetcore-8.0#ixmlrepository). The XML state of data protection is stored in a Dataverse table, with encryption managed by the Data Protection API and selected protection providers.
 
-Note the IXmlRepository don't need to parse the XML passing through them. They treat the XML documents as opaque and let higher layers of the Data Protection API worry about generating and parsing the documents.
+Note the `IXmlRepository` doesn't need to parse the XML passing through them. They treat the XML documents as opaque and let higher layers of the Data Protection API worry about generating and parsing the documents.
 
 ### Decryption Process
 
@@ -131,7 +130,13 @@ The Data Protection API is used to decrypt the encrypted value using Windows Dat
 
 ## Sample
 
-The following sample is a conceptual overview of how values are Protected and Unprotected using Dataverse as the IXmlRepository
+The following sample is a conceptual overview of how values are *Protected* and *Unprotected* using Dataverse as the `IXmlRepository`
+
+<!-- 
+TODO: Can this be refactored to provide a static method with identifiable inputs and outputs?
+Perhaps more generic so it might be re-usable?
+And with /// comments
+ -->
 
 ```csharp
 using Microsoft.AspNetCore.DataProtection;
@@ -210,19 +215,46 @@ public class Program {
 Possible code to query and store encryption key values encrypted via DAPI or public key of certificate. This layer just passes the opaque xml to other components interact with.
 
 ```csharp
+/// <summary>
+/// Represents a key store for Dataverse, implementing the IXmlRepository interface.
+/// </summary>
 public class DataverseKeyStore : IXmlRepository
 {
+    /// <summary>
+    /// Logger instance for logging information.
+    /// </summary>
     private readonly ILogger<Program>? _logger;
+
+    /// <summary>
+    /// Service instance for interacting with Dataverse.
+    /// </summary>
     private readonly IOrganizationService _service;
+
+    /// <summary>
+    /// Friendly name used for querying and storing keys.
+    /// </summary>
     private string _friendlyName;
 
-    public DataverseKeyStore(ILogger<Program>? logger, IOrganizationService organizationService, string friendlyName)
+    /// <summary>
+    /// Initializes a new instance of the DataverseKeyStore class.
+    /// </summary>
+    /// <param name="logger">Logger instance for logging information.</param>
+    /// <param name="organizationService">Service instance for interacting with Dataverse.</param>
+    /// <param name="friendlyName">Friendly name used for querying and storing keys.</param>
+    public DataverseKeyStore(
+      ILogger<Program>? logger, 
+      IOrganizationService organizationService, 
+      string friendlyName)
     {
         _logger = logger;
         _service = organizationService;
         _friendlyName = friendlyName;
     }
 
+    /// <summary>
+    /// Retrieves all XML elements stored in Dataverse.
+    /// </summary>
+    /// <returns>A read-only collection of XML elements.</returns>
     public IReadOnlyCollection<XElement> GetAllElements()
     {
         // Retrieve keys from Dataverse
@@ -233,7 +265,10 @@ public class DataverseKeyStore : IXmlRepository
             {
                 Conditions =
                 {
-                    new ConditionExpression("te_name", ConditionOperator.Equal, _friendlyName)
+                    new ConditionExpression(
+                     attributeName: "te_name", 
+                     conditionOperator: ConditionOperator.Equal, 
+                     value: _friendlyName)
                 }
             }
         };
@@ -246,6 +281,11 @@ public class DataverseKeyStore : IXmlRepository
         return keys.AsReadOnly();
     }
 
+    /// <summary>
+    /// Stores an XML element in Dataverse.
+    /// </summary>
+    /// <param name="element">The XML element to store.</param>
+    /// <param name="friendlyName">The friendly name associated with the XML element.</param>
     public void StoreElement(XElement element, string friendlyName)
     {
         var keyEntity = new Entity("te_key")
@@ -261,10 +301,20 @@ public class DataverseKeyStore : IXmlRepository
 
 ### Saving and Locating Encrypted Data
 
-The following gives a simple view of possible code to store and retrieve encrypted values from Dataverse
+The following static `FindMatch` and `StoreValue` methods demonstrates a simple view of possible code to store and retrieve encrypted values from Dataverse
 
 ```csharp
-public static IReadOnlyCollection<ProtectedKeyValue> FindMatch(IOrganizationService service, string keyName, string? valueName)
+/// <summary>
+/// Finds and retrieves a collection of protected key-value pairs from Dataverse based on the specified key name and value name.
+/// </summary>
+/// <param name="service">The IOrganizationService instance used to interact with Dataverse.</param>
+/// <param name="keyName">The name of the key to search for.</param>
+/// <param name="valueName">The name of the value to search for. This parameter is optional.</param>
+/// <returns>A read-only collection of ProtectedKeyValue objects that match the specified key name and value name.</returns>
+public static IReadOnlyCollection<ProtectedKeyValue> FindMatch(
+   IOrganizationService service, 
+   string keyName, 
+   string? valueName)
 {
     // Retrieve keys from Dataverse
     FilterExpression filter = new FilterExpression(LogicalOperator.And);
@@ -290,7 +340,18 @@ public static IReadOnlyCollection<ProtectedKeyValue> FindMatch(IOrganizationServ
     return keys.AsReadOnly();
 }
 
-public static void StoreValue(IOrganizationService service, string keyName, string valueName, string data)
+/// <summary>
+/// Stores a new key-value pair in Dataverse.
+/// </summary>
+/// <param name="service">The IOrganizationService instance used to interact with Dataverse.</param>
+/// <param name="keyName">The name of the key to store.</param>
+/// <param name="valueName">The name of the value to store.</param>
+/// <param name="data">The data associated with the key-value pair.</param>
+public static void StoreValue(
+   IOrganizationService service, 
+   string keyName, 
+   string valueName, 
+   string data)
 {
     var keyEntity = new Entity("te_keydata")
     {
@@ -301,6 +362,7 @@ public static void StoreValue(IOrganizationService service, string keyName, stri
 
     service.Create(keyEntity);
 }
+
 ```
 
 [!INCLUDE [footer-banner](../includes/footer-banner.md)]

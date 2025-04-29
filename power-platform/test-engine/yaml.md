@@ -1,8 +1,8 @@
 ---
 title: "Power Apps Test Engine YAML format (preview)"
 description: Describes the YAML format for test following the same guidelines as Power Fx.
-author: pvillads
-ms.author: pvillads
+author: grant-archibald-ms
+ms.author: grarchib
 ms.date: 02/23/2024
 ms.reviewer: jdaly
 ms.topic: article

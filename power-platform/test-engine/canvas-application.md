@@ -1,6 +1,6 @@
 ---
 title: "Test Canvas Application with Test Engine (preview)"
-description: "Describes testing a Power Apps Canvas application"
+description: "Learn about testing Power Apps Canvas applications using Test Engine"
 author: grant-archibald-ms
 ms.author: grarchib
 ms.date: 05/09/2025
@@ -11,7 +11,7 @@ contributors:
  - pvillads
 ---
 
-# Testing your canvas app
+# Test Canvas Application with Test Engine (preview)
 
 > [!NOTE]
 > [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
@@ -82,13 +82,17 @@ $env:user1Email = "someone@example.com"
 Use the PAC CLI [pac test run](../developer/cli/reference/tests.md#pac-test-run) command to run your test plan.
 
 - Path to your test plan file
-- EnvironmentId (For example 00aa00aa-bb11-cc22-dd33-44ee44ee44ee)
 - TenantId (For example aaaabbbb-0000-cccc-1111-dddd2222eeee)
+- EnvironmentId (For example 00aa00aa-bb11-cc22-dd33-44ee44ee44ee)
 
 For example this could be
 
-```pwsh
-pac test run -p "canvas" -i "testplan.te.yaml" -t aaaabbbb-0000-cccc-1111-dddd2222eeee -e 00aa00aa-bb11-cc22-dd33-44ee44ee44ee
+```powershell
+pac test run `
+   -p "canvas" `
+   -i "testplan.te.yaml" `
+   -t aaaabbbb-0000-cccc-1111-dddd2222eeee `
+   -e 00aa00aa-bb11-cc22-dd33-44ee44ee44ee
 ```
 
 ### View the results
@@ -100,6 +104,8 @@ When the tests complete, you can view the results of your test in the `.trx` fil
 The first preview version of the Test Engine was focused on testing canvas applications only. The updated preview version of Test Engine provides new features to allow for more diverse test types.
 
 ### Summary of New Features
+
+<!-- TODO: This section seems outside the scope of testing canvas apps. Does it belong here? Is it mentioned anywhere else? -->
 
 #### Model Driven Application Support
 

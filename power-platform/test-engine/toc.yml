@@ -7,12 +7,14 @@ items:
     href: authentication.md
   - name: Authentication implementation
     href: authentication-implementation.md
-  - name: Test Canvas app with test engine
-    href: canvas-application.md
-  - name: Test Model Driven app with test engine
-    href: model-driven-application.md
-  - name: Test Dataverse with test engine
-    href: dataverse.md
+  - name: How to use Test Engine
+    items:
+    - name: Test Canvas apps
+      href: canvas-application.md
+    - name: Test Model Driven apps
+      href: model-driven-application.md
+    - name: Test Dataverse extensions
+      href: dataverse.md
   - name: Yaml format
     href: yaml.md
   - name: Power Fx functions

@@ -10,9 +10,11 @@ contributors:
  - JimDaly
  - pvillads
 ---
-
-
 # Test Engine Extensibility
+
+<!-- 
+TODO I'm not immediately understanding what I can do with this information.
+ -->
 
 > [!NOTE]
 > [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
@@ -21,21 +23,22 @@ This document provides a detailed explanation of the core elements of the Test E
 
 ![Overview diagram of test engine extensibility](./media/test-engine-extensibility.png)
 
+<!-- TODO: provide some explanation of this diagram -->
+
 ## Common Features of the Test Engine
 
 The Test Engine offers several key features:
 
 - **Test Suite and Test Case Execution**: At its core, the test engine allows you to define and execute test suites and test cases. This means you can organize your tests into logical groups and run them systematically to ensure your application behaves as expected.
-
 - **Saving Test Results and Log Files**: After Test Engine completes executing your tests, it will save the results in various formats, including the popular `.trx` files. These files store detailed information about each test run, making it easier to review outcomes and diagnose issues. Additionally, log files and video recordings capture the execution details, providing a comprehensive audit trail.
 
 ## Managed Extensibility Framework (MEF)
 
 The **[Managed Extensibility Framework (MEF)](/dotnet/framework/mef/)** provides modular extension pattern for applications. MEF is used in Test Engine to enable three main classes of extensibility:
 
-1. **Authentication**: Integrate various authentication mechanisms into the testing framework, including support patterns that need to account for sign in with multifactor authentication or OAuth based authentication.
-1. **Providers**: Modules that support specific platforms or technologies, such as [Power Apps Canvas apps](./canvas-application.md) and [Model Driven apps](./model-driven-application.md). These providers enable seamless interaction and testing of applications built on these platforms.
-1. **Power Fx Functions**: Allow test steps to be extended support custom Power Fx functions, allowing the creation of sophisticated and tailored test scenarios. These Power Fx function can be defined as [user defined functions](./powerfx.md#user-defined-functions) or extended as custom code using C#.
+- **Authentication**: Integrate various authentication mechanisms into the testing framework, including support patterns that need to account for sign in with multifactor authentication or OAuth based authentication.
+- **Providers**: Modules that support specific platforms or technologies, such as [Power Apps Canvas apps](./canvas-application.md) and [Model Driven apps](./model-driven-application.md). These providers enable seamless interaction and testing of applications built on these platforms.
+- **Power Fx Functions**: Allow test steps to be extended support custom Power Fx functions, allowing the creation of sophisticated and tailored test scenarios. These Power Fx function can be defined as [user defined functions](./powerfx.md#user-defined-functions) or extended as custom code using C#.
 
 
 > [!NOTE]

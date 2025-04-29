@@ -24,7 +24,7 @@ The "no cliffs" extensibility model of Power Apps Test Engine ensures that users
 
 ## Example
 
-Here's an example of a Power Fx function that provides the outline of code to handle a conditional consent dialog in a [canvas application](./canvas-application.md)
+Here's an example of a Power Fx function that provides the outline of code to handle a conditional consent dialog in a [canvas application](./canvas-application.md).
 
 ## What is a Consent Dialog?
 
@@ -42,7 +42,7 @@ One of the challenges with consent dialogs is that they can make tests nondeterm
 
 ## Abstracting Complexity with Power Fx
 
-Power Fx, a low-code language used in Power Apps, helps abstract the complexity of conditionally waiting for the consent dialog and creating connections if needed. By using Power Fx, makers can define the logic for handling consent dialogs in a more straightforward and intuitive manner.
+Power Fx, the low-code language used in Power Apps, helps abstract the complexity of conditionally waiting for the consent dialog and creating connections if needed. Using Power Fx, makers can define the logic for handling consent dialogs in a more straightforward and intuitive manner.
 
 ### Example: Handling Consent Dialog with Power Fx
 
@@ -63,7 +63,6 @@ Sample outline code that could be used as a starting point to complete this exam
 ```csharp
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT license.
-
 using Microsoft.Extensions.Logging;
 using Microsoft.Playwright;
 using Microsoft.PowerApps.TestEngine.Config;
@@ -85,6 +84,12 @@ namespace testengine.module
         private static TableType SearchType = TableType.Empty()
               .Add(new NamedFormulaType("Text", FormulaType.String, displayName: "Text"));
     
+        /// <summary>
+        /// Constructor: Initializes the function with necessary dependencies, including ITestInfraFunctions, ITestState, and ILogger.
+        /// </summary>
+        /// <param name="testInfraFunctions">The test infrastructure functions.</param>
+        /// <param name="testState">The test state.</param>
+        /// <param name="logger">The logger instance.</param>
         public ConsentDialogFunction(ITestInfraFunctions testInfraFunctions, ITestState testState, ILogger logger)
             : base(DPath.Root.Append(new DName("Preview")), "ConsentDialog", FormulaType.Blank, SearchType)
         {
@@ -93,6 +98,11 @@ namespace testengine.module
             _logger = logger;
         }
 
+        /// <summary>
+        /// Execute Method: Logs the execution and calls the ExecuteAsync method to handle the consent dialog.
+        /// </summary>
+        /// <param name="searchFor">The table value to search for.</param>
+        /// <returns>A blank value.</returns>
         public BlankValue Execute(TableValue searchFor)
         {
             _logger.LogInformation("------------------------------\n\n" +
@@ -103,6 +113,11 @@ namespace testengine.module
             return FormulaValue.NewBlank();
         }
 
+        /// <summary>
+        /// ExecuteAsync Method: Retrieves the page context and handles the consent dialog with a timeout.
+        /// </summary>
+        /// <param name="searchFor">The table value to search for.</param>
+        /// <returns>A task representing the asynchronous operation.</returns>
         private async Task ExecuteAsync(TableValue searchFor)
         {
             var page = _testInfraFunctions.GetContext().Pages.Where(p => p.Url.Contains("main.aspx")).First();
@@ -115,11 +130,11 @@ namespace testengine.module
 
 ### Explanation
 
-- Namespace and Imports: The code begins by importing necessary namespaces and defining the testengine.module namespace.
-- Class Definition: The `ConsentDialogFunction` class inherits from `ReflectionFunction` and defines the custom function ConsentDialog.
-- Constructor: The constructor initializes the function with necessary dependencies, including ITestInfraFunctions, ITestState, and ILogger.
-- Execute Method: The Execute method logs the execution and calls the ExecuteAsync method to handle the consent dialog.
-- ExecuteAsync Method: The ExecuteAsync method retrieves the page context and handles the consent dialog with a timeout.
+- **Namespace and Imports**: The code begins by importing necessary namespaces and defining the testengine.module namespace.
+- **Class Definition**: The `ConsentDialogFunction` class inherits from `ReflectionFunction` and defines the custom function ConsentDialog.
+- **Constructor**: The constructor initializes the function with necessary dependencies, including ITestInfraFunctions, ITestState, and ILogger.
+- **Execute Method**: The `Execute` method logs the execution and calls the `ExecuteAsync` method to handle the consent dialog.
+- **ExecuteAsync Method**: The `ExecuteAsync` method retrieves the page context and handles the consent dialog with a timeout.
 
 ## Conclusion
 

@@ -1,6 +1,6 @@
 ---
-title: "Test Dataverse with test engine"
-description: "Describes how Test Engine can be used to perform integration testing of Dataverse"
+title: "Test Dataverse extensions with test engine"
+description: "Describes how perform integration testing of Dataverse extensions with test engine."
 author: grant-archibald-ms
 ms.author: grarchib
 ms.date: 05/09/2025
@@ -11,12 +11,12 @@ contributors:
  - pvillads
 ---
 
-# Testing Dataverse
+# Test Dataverse extensions with test engine
 
 > [!NOTE]
 > [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
 
-In this article, we discuss the ability to create integration tests with Dataverse. This functionality applies the Power Fx capability to connect with Dataverse Entities. We cover the following points:
+This article explains how to create integration tests with Dataverse. This functionality applies the Power Fx capability to connect with Dataverse tables. We cover the following points:
 
 - Connecting to Dataverse
 - **onTestCaseStart**: Resetting the current state.
@@ -31,7 +31,7 @@ To you require a connection to Dataverse as part of your test, review provider [
 
 ## Resetting the Current State
 
-The `onTestCaseStart` can be defined in your authored test yaml to perform common actions before each test case. For example:
+Define the `onTestCaseStart` event handler in your authored test yaml to perform common actions before each test case. For example:
 
 ```yaml
 testSuite:
@@ -47,7 +47,7 @@ In this example, the `ForAll()` is used to iterate over a table and perform an a
 
 ## Functions of Interest
 
-Here are some functions that are useful when working with Dataverse:
+These functions are useful when working with Dataverse:
 
 - [Collect()](../power-fx/reference/function-clear-collect-clearcollect.md#collect): Adds records to a table.
 - [CountRows()](../power-fx/reference/function-table-counts.md): Returns the number of records in a table.
@@ -58,9 +58,9 @@ Here are some functions that are useful when working with Dataverse:
 
 ## Considerations
 
-As you create, you test steps with Power Fx Dataverse take into account: 
+Take these considerations into account as you write test steps:
 
-1. `Defaults()` isn't supported. As a result Power Fx examples like `Patch(Accounts, Defaults(Accounts), {name:"test"})` aren't supported. 
-1. You can use `Collect()` to an alternative to Patch() with the Defaults() function
+- `Defaults()` isn't supported. As a result Power Fx examples like `Patch(Accounts, Defaults(Accounts), {name:"test"})` aren't supported. 
+- You can use `Collect()` to an alternative to Patch() with the Defaults() function
 
 [!INCLUDE [footer-banner](../includes/footer-banner.md)]

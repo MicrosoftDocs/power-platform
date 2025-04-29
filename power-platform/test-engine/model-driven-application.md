@@ -40,7 +40,7 @@ Test Engine currently has these authentication methods:
 | Storage State | Store authenticated user state locally in the user profile using Microsoft Windows [Data Protection API](/dotnet/standard/security/how-to-use-data-protection)
 | Dataverse | Store authenticated user state inside dataverse using your own customer managed key encrypted with an X.509 certificate using [ASP.NET Core Data Protection](/aspnet/core/security/data-protection/introduction)
 
-You can't store test credentials in test plan files you must select `storagestate` or `dataverse` as the secure location to store credentials. The test plan file contains references to which environment variables are used for user persona. For example, the following YAML snippet indicates that the `user1Email` environment variables are used:
+You can't store test credentials in test plan files. You must select `storagestate` or `dataverse` as the secure location to store credentials. The test plan file contains references to which environment variables are used for user persona. For example, the following YAML snippet indicates that the `user1Email` environment variables are used:
 
 ```yaml
 environmentVariables:
@@ -66,8 +66,7 @@ Use the PAC CLI [pac test run](../developer/cli/reference/test.md#pac-test-run) 
 - EnvironmentId (For example `00aa00aa-bb11-cc22-dd33-44ee44ee44ee`)
 - Url of the page MDA page to test
 
-For example this could be
-
+Invoking this command looks something like the following example:
 
 ```powershell
 pac test run `
