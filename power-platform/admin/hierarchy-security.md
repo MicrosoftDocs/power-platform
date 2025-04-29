@@ -137,6 +137,13 @@ The manager hierarchy is easily created by using the manager relationship on the
   
    :::image type="content" source="../admin/media/hierachy-security-enabled-users.png" alt-text="Screenshot that shows enabled users with assigned positions.":::
 
+## Edit and update multiple levels of direct reports' records
+By default, managers can update their direct reports' and their directs' direct reports' records (up to 3 level deep). You can change this default by:
+ 1. Install the [OrganizationSettingsEditor tool](environment-database-settings.md#install-the-organizationsettingseditor-tool).
+ 1. Edit the **HierarchyLevelForHierarchyFeature** setting.
+ 2. Enter the number of direct level depth, example 5.
+ 3. Select **Update**.
+
 ## Include or exclude records owned by direct report with the disabled user status
 
 > [!VIDEO 3d49a8e0-9ab5-43be-bc86-4ee1b59ff855]
@@ -168,7 +175,9 @@ Managers can see their disabled status direct report's records for environments 
   
 - Keep the effective hierarchy security to 50 users or less under a manager or position. Your hierarchy might have more than 50 users under a manager or position, but you can use the **Depth** setting to reduce the number of levels for read-only access and with this limit the effective number of users under a manager or position to 50 users or less.  
   
-- Use hierarchy security models with other existing security models for more complex scenarios. Avoid creating a large number of business units, instead, create fewer business units and add hierarchy security.  
+- Use hierarchy security models with other existing security models for more complex scenarios. Avoid creating a large number of business units, instead, create fewer business units and add hierarchy security.
+
+- Keep the **HierarchyLevelForHierarchyFeature** number to its lowest number of direct level depth as required by your business requirements to allow managers to update their direct reports' records.  
   
 ### See also
 
