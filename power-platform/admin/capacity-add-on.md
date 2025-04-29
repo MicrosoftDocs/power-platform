@@ -1,7 +1,7 @@
 ---
-title: "Capacity add-ons for Power Apps and Power Automate  | MicrosoftDocs"
+title: Capacity add-ons for Power Apps and Power Automate  
 description: This topic covers the Per app, Power Automate per business process, AI builder, Portal logins, and Portal views. 
-ms.date: 08/01/2023
+ms.date: 04/29/2025
 ms.reviewer: sericks
 ms.topic: conceptual
 author: sericks007
@@ -34,14 +34,14 @@ If your organization has purchased capacity add-ons, an **Add-ons** tile appears
 
 #### [New admin center](#tab/new)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Resources**, then choose **Capacity**.
-1. Select the **Add-ons** tab.
+1. In the navigation pane, select **Licensing**.
+1. In the **Licensing** pane, select **Capacity add-ons**.
+1. In the **Capacity** page, select the **Add-ons** tab.
 
 #### [Classic admin center](#tab/classic)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Licensing**.
-1. In the **Licensing** pane, select **Capacity add-ons**.
-1. Select the **Add-ons** tab. 
+1. In the navigation pane, expand **Resources**, then select **Capacity**.
+1. In the **Capacity** page, select the **Add-ons** tab.
 ---
 
 The **Add-ons** tile shows summary information about the capacity add-ons that your organization has.
