@@ -176,7 +176,7 @@ Managers can see their disabled status direct report's records for environments 
   
 - Keep the effective hierarchy security to 50 users or less under a manager or position. Your hierarchy might have more than 50 users under a manager or position, but you can use the **Depth** setting to reduce the number of levels for read-only access and with this limit the effective number of users under a manager or position to 50 users or less.  
   
-- Use hierarchy security models with other existing security models for more complex scenarios. Avoid creating a large number of business units, instead, create fewer business units and add hierarchy security.
+- Use hierarchy security models with other, existing security models for more complex scenarios. Avoid creating a large number of business units. Instead, create fewer business units and add hierarchy security.
 
 - Keep the **HierarchyLevelForHierarchyFeature** number to its lowest number of direct level depth as required by your business requirements to allow managers to update their direct reports' records.  
   
