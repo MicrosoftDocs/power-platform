@@ -129,6 +129,8 @@ Dismissed recommendations no longer negatively impact the security score, ensuri
 Your dismissed recommendations are always accessible, meaning you can review their history at any time. If circumstances change or you wish to revisit a previously dismissed recommendation, you can easily reactivate it to ensure continuous security optimization.
 
 ## Manage security settings at environment group
+Managing Power Platform at scale presents challenges for IT teams overseeing numerous environments. To streamline security governance, administrators can configure security settings at the **environment group** level, ensuring uniform enforcement of policies across all environments within a group.
+Currently, security management at environment group is available for **Sharing and IP Firewall** features, with plans to extend support to additional security capabilities in the near future. This structured approach simplifies administration, enhances security, and optimizes large-scale environment management for both startups and enterprises.
 
 ## Provide feedback
 
