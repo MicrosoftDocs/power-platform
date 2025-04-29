@@ -1,5 +1,5 @@
 ---
-title: Test Engine Extensibility
+title: "Test Engine Extensibility (preview)"
 description: Describes the different components of Test Engine and how it can be extended
 author: grant-archibald-ms
 ms.author: grarchib
@@ -10,7 +10,7 @@ contributors:
  - JimDaly
  - pvillads
 ---
-# Test Engine Extensibility
+# Test Engine Extensibility (preview)
 
 <!-- 
 TODO I'm not immediately understanding what I can do with this information.
@@ -21,7 +21,7 @@ TODO I'm not immediately understanding what I can do with this information.
 
 This document provides a detailed explanation of the core elements of the Test Engine, including context on [provider model](./providers.md) and the Power Fx extension model. It also highlights how Power Fx test steps can be extended as low-code user-defined functions or as C# modules.
 
-![Overview diagram of test engine extensibility](./media/test-engine-extensibility.png)
+![Overview diagram of Test Engine extensibility](./media/test-engine-extensibility.png)
 
 <!-- TODO: provide some explanation of this diagram -->
 
@@ -29,7 +29,7 @@ This document provides a detailed explanation of the core elements of the Test E
 
 The Test Engine offers several key features:
 
-- **Test Suite and Test Case Execution**: At its core, the test engine allows you to define and execute test suites and test cases. This means you can organize your tests into logical groups and run them systematically to ensure your application behaves as expected.
+- **Test Suite and Test Case Execution**: At its core, the Test Engine allows you to define and execute test suites and test cases. This means you can organize your tests into logical groups and run them systematically to ensure your application behaves as expected.
 - **Saving Test Results and Log Files**: After Test Engine completes executing your tests, it will save the results in various formats, including the popular `.trx` files. These files store detailed information about each test run, making it easier to review outcomes and diagnose issues. Additionally, log files and video recordings capture the execution details, providing a comprehensive audit trail.
 
 ## Managed Extensibility Framework (MEF)

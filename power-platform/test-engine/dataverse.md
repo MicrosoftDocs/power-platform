@@ -1,6 +1,6 @@
 ---
-title: "Test Dataverse extensions with test engine"
-description: "Describes how perform integration testing of Dataverse extensions with test engine."
+title: "Test Dataverse extensions with Test Engine (preview)"
+description: "Describes how perform integration testing of Dataverse extensions with Test Engine."
 author: grant-archibald-ms
 ms.author: grarchib
 ms.date: 05/09/2025
@@ -11,7 +11,7 @@ contributors:
  - pvillads
 ---
 
-# Test Dataverse extensions with test engine
+# Test Dataverse extensions with Test Engine (preview)
 
 > [!NOTE]
 > [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]

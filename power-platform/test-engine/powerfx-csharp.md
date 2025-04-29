@@ -1,5 +1,5 @@
 ---
-title: "Test Engine Power Fx C# Functions"
+title: "Create a C# Power Fx Test Function (preview)"
 description: "Describes the creating Power Fx functions using C# in Test Engine"
 author: grant-archibald-ms
 ms.author: grarchib
@@ -11,7 +11,7 @@ contributors:
  - pvillads
 ---
 
-# Creating a C# Power Fx Test Function
+# Create a C# Power Fx Test Function (preview)
 
 > [!NOTE]
 > [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
@@ -38,7 +38,7 @@ The consent dialog is important because it helps prevent unauthorized access and
 
 ## Challenges with Consent Dialogs in Testing
 
-One of the challenges with consent dialogs is that they can make tests nondeterministic. The prompt can conditionally appear based on various factors, such as user permissions or previous interactions. This conditional appearance can complicate the testing process, as the test engine needs to handle these dialogs appropriately.
+One of the challenges with consent dialogs is that they can make tests nondeterministic. The prompt can conditionally appear based on various factors, such as user permissions or previous interactions. This conditional appearance can complicate the testing process, as the Test Engine needs to handle these dialogs appropriately.
 
 ## Abstracting Complexity with Power Fx
 

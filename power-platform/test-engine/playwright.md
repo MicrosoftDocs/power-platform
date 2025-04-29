@@ -1,6 +1,6 @@
 ---
-title: Test Engine and Playwright
-description: Describes the relationship between Playwright and Test Engine
+title: Test Engine and Playwright (preview)
+description: Learn about the relationship between Playwright and Test Engine.
 author: grant-archibald-ms
 ms.author: grarchib
 ms.date: 05/09/2025
@@ -11,7 +11,7 @@ contributors:
  - pvillads
 ---
 
-# Test Engine and Playwright
+# Test Engine and Playwright (preview)
 
 > [!NOTE]
 > [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]

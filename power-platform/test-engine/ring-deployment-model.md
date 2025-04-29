@@ -1,5 +1,5 @@
 ---
-title: "Test Engine Ring Deployment Model"
+title: "Test Engine Ring Deployment Mode (preview)"
 description: "Describes progress release process of Preview features from source code to general availability"
 author: grant-archibald-ms
 ms.author: grarchib
@@ -11,7 +11,7 @@ contributors:
  - pvillads
 ---
 
-# Test Engine Ring Deployment Mode
+# Test Engine Ring Deployment Mode (preview)
 
 > [!NOTE]
 > [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]

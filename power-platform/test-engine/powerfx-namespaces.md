@@ -1,5 +1,5 @@
 ---
-title: "Test Engine Power Fx Namespaces"
+title: "Use Power Fx namespaces in testing (preview)"
 description: "Describes the Power Fx namespaces used in Test Engine"
 author: grant-archibald-ms
 ms.author: grarchib
@@ -11,7 +11,7 @@ contributors:
  - pvillads
 ---
 
-# Using Power Fx Namespaces in Testing
+# Use Power Fx namespaces in testing (preview)
 
 > [!NOTE]
 > [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]

@@ -1,5 +1,5 @@
 ---
-title: "Authentication provider in test engine"
+title: "Test engine Authentication implementation (preview)"
 description: "Describes authentication provider options Test Engine"
 author: grant-archibald-ms
 ms.author: grarchib
@@ -11,7 +11,7 @@ contributors:
  - pvillads
 ---
 
-# Test Engine Authentication implementation
+# Test engine Authentication implementation (preview)
 
 > [!NOTE]
 > [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]

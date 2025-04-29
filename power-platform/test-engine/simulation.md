@@ -1,5 +1,5 @@
 ---
-title: "Dataverse and Connector Simulation with Test Engine"
+title: "Dataverse and Connector Simulation with Test Engine (preview)"
 description: "Discusses the ability to simulate interaction with Dataverse and Connectors using Power Fx functions"
 author: grant-archibald-ms
 ms.author: grarchib
@@ -11,7 +11,7 @@ contributors:
  - pvillads
 ---
 
-# Dataverse and Connector Simulation with Test Engine
+# Dataverse and Connector Simulation with Test Engine (preview)
 
 > [!NOTE]
 > [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]

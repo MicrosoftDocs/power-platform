@@ -1,5 +1,5 @@
 ---
-title: "Authentication in test engine"
+title: "Authentication in Power Apps Test Engine (preview)"
 description: "Describes authentication changes and options Test Engine"
 author: grant-archibald-ms
 ms.author: grarchib
@@ -11,7 +11,7 @@ contributors:
  - pvillads
 ---
 
-# Authentication in Power Apps Test Engine
+# Authentication in Power Apps Test Engine (preview)
 
 > [!NOTE]
 > [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
