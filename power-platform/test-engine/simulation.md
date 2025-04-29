@@ -22,6 +22,8 @@ This approach helps in identifying potential issues and ensuring that the soluti
 
 ## Power Fx Functions
 
+<!-- TODO add some text here to introduce the sections below -->
+
 ### Simulating a Dataverse Query
 
 The most common simulation scenario is to allow the test to define what data should be used when the application wants to query data from Dataverse. In this case, you can make use of the [Preview.SimulateDataverse()](./powerfx.md#previewsimulatedataverse) function. For example
@@ -55,8 +57,8 @@ This function simulates a connector call to the `Office365Groups` connector when
 
 By making use of functions like [Preview.SimulateDataverse()](./powerfx.md#previewsimulatedataverse) and [Preview.SimulateConnector()](./powerfx.md#previewsimulateconnector) you can:
 
-- Test Different Scenarios: Address how the application responds with various scenarios, including edge cases and exceptions, without affecting real data.
-- Happy Path Tests: Perform simulations allow for testing the "happy path" where everything works as expected.
-- Testing Edge Cases and Exceptions: Build tests that validate test edge cases and expected exceptions that ensure your applications handle them gracefully.
+- **Test Different Scenarios**: Address how the application responds with various scenarios, including edge cases and exceptions, without affecting real data.
+- **Happy Path Tests**: Perform simulations allow for testing the "happy path" where everything works as expected.
+- **Testing Edge Cases and Exceptions**: Build tests that validate test edge cases and expected exceptions that ensure your applications handle them gracefully.
 
 [!INCLUDE [footer-banner](../includes/footer-banner.md)]
