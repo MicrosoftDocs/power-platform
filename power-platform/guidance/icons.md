@@ -2,8 +2,8 @@
 title: "Microsoft Power Platform icons | MicrosoftDocs"
 description: "Official icons for use in building architecture diagrams and illustrations for Microsoft Power Platform (Power Platform, Power Apps, Power Automate, Power BI, Power Pages, Microsoft Copilot Studio, Dataverse, AI Builder, and Power Fx)."
 author: sericks007
-ms.topic: conceptual
-ms.date: 09/13/2024
+ms.topic: article
+ms.date: 04/17/2025
 ms.subservice: guidance
 ms.author: sericks
 ms.reviewer: sericks
@@ -14,13 +14,13 @@ ms.reviewer: sericks
 
 This article provides information about the official collection of icons for Microsoft Power Platform (Power Platform, Power Apps, Power Automate, Power BI, Power Pages, Microsoft Copilot Studio, Dataverse, AI Builder, and Power Fx) that you can use in architectural diagrams, training materials, or documentation.
 
-### Do’s
+## Do’s
 
 - Use the icon to illustrate how products can work together
 - In diagrams, we recommend including the product name somewhere close to the icon
 - Use the icons as they would appear within Microsoft Power Platform or individual products (Power Apps, Power Automate, Power BI, Power Pages, Microsoft Copilot Studio, Dataverse, and AI Builder)
 
-### Don’ts
+## Don’ts
 
 - Don’t crop, flip, or rotate icons
 - Don’t distort or change icon shape in any way
@@ -47,7 +47,7 @@ I agree to the above terms
  > [!div class="button"]
  > [Download SVG icons](https://download.microsoft.com/download/e/f/4/ef434e60-8cdc-4dd1-9d9f-e58670e57ec1/Power_Platform_scalable.zip)
 
-### See also
+## Related information
 
-[Azure icons](/azure/architecture/icons)<br/>
-[Dynamics 365 icons](/dynamics365/get-started/icons)
+- [Azure icons](/azure/architecture/icons)
+- [Dynamics 365 icons](/dynamics365/get-started/icons)

@@ -1,4 +1,4 @@
----
+﻿---
 title: SaveData, LoadData, and ClearData functions
 description: Reference information including syntax and examples for the SaveData, LoadData, and ClearData functions.
 author: gregli-msft
@@ -19,8 +19,9 @@ contributors:
 ---
 
 # SaveData, LoadData, and ClearData functions
+[!INCLUDE[function-savedata-loaddata-applies-to](includes/function-savedata-loaddata-applies-to.md)]
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps
+
 
 Saves and reloads a [collection](/power-apps/maker/canvas-apps/working-with-data-sources#collections) from the app host's storage.
 
@@ -211,3 +212,138 @@ Following simple example captures and stores the names and pictures of everyday 
 For a detailed example, see the article on [simple offline capabilities](/power-apps/maker/canvas-apps/offline-apps).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

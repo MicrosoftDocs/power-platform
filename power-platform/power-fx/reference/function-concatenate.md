@@ -1,4 +1,4 @@
----
+﻿---
 title: Concat and Concatenate functions
 description: Reference information including syntax and examples for the Concat and Concatenate functions.
 author: gregli-msft
@@ -18,8 +18,9 @@ contributors:
 ---
 
 # Concat and Concatenate functions
+[!INCLUDE[function-concatenate-applies-to](includes/function-concatenate-applies-to.md)]
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Dataverse formula columns :::image type="icon" source="media/yes-icon.svg" border="false"::: Desktop flows :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Pages :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
+
 
 Concatenates individual strings of text and strings in [tables](/power-apps/maker/canvas-apps/working-with-tables).
 
@@ -109,3 +110,140 @@ For these examples, add a blank, vertical gallery, set its **Items** property to
 | **Split( Concat(&nbsp;Products,&nbsp;Name,&nbsp;",&nbsp;"&nbsp;), ", " )** | Splits the text string with the separator **", "**. | A single-column table with a `Value` column containing the following values: "Violin", "Cello", "Trumpet" |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
