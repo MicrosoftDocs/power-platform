@@ -1,7 +1,7 @@
 ### YamlMime:Landing
 
 title: Microsoft Power Apps Test Engine
-summary: Learn how to create automated test for Power Platform apps.
+summary: Learn how to create automated tests for Power Platform apps.
 
 metadata:
   title: Microsoft Power Apps Test Engine
@@ -34,11 +34,11 @@ landingContent:
             url: authentication-implementation.md
       - linkListType: how-to-guide
         links:
-          - text: Test Canvas app
+          - text: Test Canvas apps
             url: canvas-application.md
-          - text: Test Model Driven app
+          - text: Test Model Driven apps
             url: model-driven-application.md
-          - text: Test Dataverse
+          - text: Test Dataverse extensions
             url: dataverse.md
 
   # Card (optional)

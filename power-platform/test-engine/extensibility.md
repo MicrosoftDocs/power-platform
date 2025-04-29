@@ -14,7 +14,8 @@ contributors:
 
 # Test Engine Extensibility
 
-[!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
+> [!NOTE]
+> [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
 
 This document provides a detailed explanation of the core elements of the Test Engine, including context on [provider model](./providers.md) and the Power Fx extension model. It also highlights how Power Fx test steps can be extended as low-code user-defined functions or as C# modules.
 

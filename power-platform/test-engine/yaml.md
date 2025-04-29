@@ -14,7 +14,8 @@ contributors:
 
 # Power Apps Test Engine YAML format (preview)
 
-[!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
+> [!NOTE]
+> [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
 
 Tests are defined in YAML following the same guidelines as Power Fx does. [Learn more about the Power Fx YAML formula grammar](../power-fx/yaml-formula-grammar.md).
 

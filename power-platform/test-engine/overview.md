@@ -15,7 +15,8 @@ contributors:
 
 # Power Apps Test Engine overview (preview)
 
-[!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
+> [!NOTE]
+> [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
 
 Power Apps Test Engine is a component within the Power Platform CLI (PAC CLI) that can be used to test the following Power Platform components:
 

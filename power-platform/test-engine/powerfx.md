@@ -15,7 +15,8 @@ contributors:
 
 # Power Apps Test Engine Power Fx 
 
-[!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
+> [!NOTE]
+> [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
 
 > NOTE:
 > You can make use of [Learning Playground](https://microsoft.github.io/PowerApps-TestEngine/learning/playground/) to get hands on and try the functions documented in this guide.

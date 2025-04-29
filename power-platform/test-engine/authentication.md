@@ -13,7 +13,8 @@ contributors:
 
 # Authentication in Power Apps Test Engine
 
-[!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
+> [!NOTE]
+> [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
 
 Authentication is a critical component of the test automation process. This article focuses on browser-based authentication options within the Test Engine which offers a range of options to authenticate with Microsoft Entra.
 
@@ -64,22 +65,28 @@ Certificate-based authentication is another method that can be used in the Power
 
 To run tests using certificate-based authentication, you can use the following pac test run command:
 
-```cmd
-pac test run -p "canvas" -u "dataverse" -a "certstore" -i "testplan.te.yaml" -t aaaabbbb-0000-cccc-1111-dddd2222eeee -e 00aa00aa-bb11-cc22-dd33-44ee44ee44ee
+
+```powershell
+pac test run -p "canvas" `
+   -u "dataverse" `
+   -a "certstore" `
+   -i "testplan.te.yaml" `
+   -t aaaabbbb-0000-cccc-1111-dddd2222eeee `
+   -e 00aa00aa-bb11-cc22-dd33-44ee44ee44ee
 ```
 
 ### Technical Overview
 
 ![Overview diagram for Test Engine Storage State](./media/test-engine-security-storage-state.png)
 
-1. The current storage state user authentication provider is extended to Save and load the Playwright browser context as Encrypted values
-2. Make use of the Microsoft.AspNetCore.DataProtection package to offer Windows Data Protection (DAPI) or Certificate public / private encryption
-3. Use the current logged in Azure CLI session to obtain an access token to the Dataverse instance where Test Engine Key values and encrypted key data is stored
-4. Use a custom xml repository that provides the ability query and create Data Protection state by implementing IXmlRepository
-5. Store XML state of data protection in Dataverse Table. Encryption of XML State managed by Data Protection API and selected protection providers
-6. Make use of Dataverse Security model, sharing and auditing features are enabled to control access and record access to key and key data. Data Protection API is used to decrypt values and apply the state json to other test sessions.
-7. Use the Data Protection API to decrypt the encrypted value using Windows Data Protection API (DAPI) or X.509 certificate private key.
-8. A future option could also consider adding integration with [Azure Key Vault](/aspnet/core/security/key-vault-configuration?view=aspnetcore-9.0)
+- The current storage state user authentication provider is extended to Save and load the Playwright browser context as Encrypted values
+- Make use of the Microsoft.AspNetCore.DataProtection package to offer Windows Data Protection (DAPI) or Certificate public / private encryption
+- Use the current logged in Azure CLI session to obtain an access token to the Dataverse instance where Test Engine Key values and encrypted key data is stored
+- Use a custom xml repository that provides the ability query and create Data Protection state by implementing IXmlRepository
+- Store XML state of data protection in Dataverse Table. Encryption of XML State managed by Data Protection API and selected protection providers
+- Make use of Dataverse Security model, sharing and auditing features are enabled to control access and record access to key and key data. Data Protection API is used to decrypt values and apply the state json to other test sessions.
+- Use the Data Protection API to decrypt the encrypted value using Windows Data Protection API (DAPI) or X.509 certificate private key.
+- A future option could also consider adding integration with [Azure Key Vault](/aspnet/core/security/key-vault-configuration)
 
 ## Conditional Access Policies
 

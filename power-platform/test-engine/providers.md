@@ -13,7 +13,8 @@ contributors:
 
 # Test Engine Providers
 
-[!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
+> [!NOTE]
+> [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
 
 Initially, the Test Engine was limited to supporting only canvas applications. However, with the introduction of the new provider model, the capabilities is expanded significantly.
 

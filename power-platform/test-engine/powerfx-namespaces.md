@@ -13,7 +13,8 @@ contributors:
 
 # Using Power Fx Namespaces in Testing
 
-[!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
+> [!NOTE]
+> [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
 
 Power Fx namespaces are a powerful feature that allows developers to organize and separate different sets of functions within the Power Fx language. By using namespaces, you can distinguish between the default functions provided by Power Fx, such as [CountRows()](../power-fx/reference/function-table-counts.md), and extensions added for specific purposes, like the Test Engine with functions such as Preview.Pause(). This separation helps in maintaining clarity and avoiding conflicts between different sets of features.
 

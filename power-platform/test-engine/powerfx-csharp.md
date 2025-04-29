@@ -13,7 +13,8 @@ contributors:
 
 # Creating a C# Power Fx Test Function
 
-[!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
+> [!NOTE]
+> [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
 
 Power Fx is a powerful low-code language used in Power Apps, and it can be extended using C# to create custom test functions. This article explains how to create a C# Power Fx test function, providing a seamless experience for both makers and developers.
 

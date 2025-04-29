@@ -13,7 +13,8 @@ contributors:
 
 # Testing your canvas app
 
-[!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
+> [!NOTE]
+> [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
 
 Testing your canvas app with [Test Engine](./overview.md) requires the following steps:
 

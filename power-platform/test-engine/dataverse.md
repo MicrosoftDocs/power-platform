@@ -13,7 +13,8 @@ contributors:
 
 # Testing Dataverse
 
-[!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
+> [!NOTE]
+> [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
 
 In this article, we discuss the ability to create integration tests with Dataverse. This functionality applies the Power Fx capability to connect with Dataverse Entities. We cover the following points:
 

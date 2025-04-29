@@ -13,7 +13,8 @@ contributors:
 
 # Test Engine Authentication implementation
 
-[!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
+> [!NOTE]
+> [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
 
 One of the key elements of automated testing discussion for browser based tests using the multiple profiles of automated testing of Power Apps is the security model to allow sign-in and the security around these credentials.
 
@@ -52,18 +53,18 @@ Test Engine web based tests encapsulate browser automation using [Playwright](ht
 
 ### Initial sign-in
 
-Using the storage state provider of Test Engine the initial sign-in must be part of an interactive sign-in process. This process attempts to start a test session. When no previous storage state is available or valid the interactive user will be prompted to be logged in via Microsoft Entra before allowing access to the requested page. This sign-in process uses what ever Multi Factor and Conditional Access policies that have been applied to validate the user sign-in. 
+Using the storage state provider of Test Engine the initial sign-in must be part of an interactive sign-in process. This process attempts to start a test session. When no previous storage state is available or valid the interactive user will be prompted to be logged in via Microsoft Entra before allowing access to the requested page. This sign-in process uses what ever Multi Factor and Conditional Access policies that have been applied to validate the user sign-in.
 
 Including some further on possible settings for background reading:
 
-1. Configured [Authentication Methods](/entra/identity/authentication/concept-authentication-methods)
-2. [How it works: Microsoft Entra multifactor authentication](/entra/identity/authentication/concept-mfa-howitworks)
-3. [Reauthentication prompts and session lifetime for Microsoft Entra multifactor authentication](/entra/identity/authentication/concepts-azure-multi-factor-authentication-prompts-session-lifetime)
-4. [Web browser cookies used in Microsoft Entra authentication](/entra/identity/authentication/concept-authentication-web-browser-cookies)
-5. [What is Conditional Access?](/entra/identity/conditional-access/overview)
-6. [Configure adaptive session lifetime policies](/entra/identity/conditional-access/howto-conditional-access-session-lifetime)
-7. [Require a compliant device, Microsoft Entra hybrid joined device, or multifactor authentication for all users](/entra/identity/conditional-access/policy-alt-all-users-compliant-hybrid-or-mfa)
-8. [Microsoft Defender for Cloud Apps overview](/defender-cloud-apps/what-is-defender-for-cloud-apps)
+- Configured [Authentication Methods](/entra/identity/authentication/concept-authentication-methods)
+- [How it works: Microsoft Entra multifactor authentication](/entra/identity/authentication/concept-mfa-howitworks)
+- [Reauthentication prompts and session lifetime for Microsoft Entra multifactor authentication](/entra/identity/authentication/concepts-azure-multi-factor-authentication-prompts-session-lifetime)
+- [Web browser cookies used in Microsoft Entra authentication](/entra/identity/authentication/concept-authentication-web-browser-cookies)
+- [What is Conditional Access?](/entra/identity/conditional-access/overview)
+- [Configure adaptive session lifetime policies](/entra/identity/conditional-access/howto-conditional-access-session-lifetime)
+- [Require a compliant device, Microsoft Entra hybrid joined device, or multifactor authentication for all users](/entra/identity/conditional-access/policy-alt-all-users-compliant-hybrid-or-mfa)
+- [Microsoft Defender for Cloud Apps overview](/defender-cloud-apps/what-is-defender-for-cloud-apps)
 
 The goal of the sign-in process it works with organization defined sign-in process so that defined authentication methods are validated.
 
@@ -85,7 +86,7 @@ Key information to review for readers that are unfamiliar with Data Protection A
 
 - [Authenticated encryption details in ASP.NET Core](/aspnet/core/security/data-protection/implementation/authenticated-encryption-details) with ES-256-CBC + HMACSHA256
 - [Key management in ASP.NET Core](/aspnet/core/security/data-protection/implementation/key-management)
-- [Custom key repository](/aspnet/core/security/data-protection/implementation/key-storage-providers&tabs=visual-studio#custom-key-repository)
+- [Custom key repository](/aspnet/core/security/data-protection/implementation/key-storage-providers#custom-key-repository)
 - [Windows DPAPI key encryption at rest](/aspnet/core/security/data-protection/implementation/key-encryption-at-rest#windows-dpapi) encryption mechanism for data that's never read outside of the current machine. Only applies to Windows deployments.
 - [X.509 certificate key encryption at rest](/aspnet/core/security/data-protection/implementation/key-encryption-at-rest#x509-certificate)
 

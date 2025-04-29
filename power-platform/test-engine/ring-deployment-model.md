@@ -13,7 +13,8 @@ contributors:
 
 # Test Engine Ring Deployment Mode
 
-[!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
+> [!NOTE]
+> [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
 
 In the ever-evolving landscape of software development, the Ring Deployment Model stands out as a strategic approach to rolling out new features and updates. The ring deployment model, inspired by the concentric rings of a tree allows us to validate that changes are introduced in a controlled, phased manner, minimizing risks and maximizing feedback.
 
