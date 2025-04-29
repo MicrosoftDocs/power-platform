@@ -19,11 +19,11 @@ contributors:
 
 Power Apps Test Engine is a component within the Power Platform CLI (PAC CLI) that can be used to test the following Power Platform components:
 
-- [Canvas Apps](/power-apps/maker/canvas-apps/index.yml)
-- [Dataverse](/power-apps/maker/data-platform/index.yml)
-- [Model Driven Application](/power-apps/maker/model-driven-apps/index.yml)
+- [Canvas Apps](/power-apps/maker/canvas-apps/index)
+- [Dataverse](/power-apps/maker/data-platform/index)
+- [Model Driven Application](/power-apps/maker/model-driven-apps/index)
 
-You must [Install Microsoft Power Platform CLI](../developer/cli/introduction#install-microsoft-power-platform-cli) to use the Test Engine.
+You must [Install Microsoft Power Platform CLI](../developer/cli/introduction.md#install-microsoft-power-platform-cli) to use the Test Engine.
 
 
 
@@ -31,7 +31,7 @@ You must [Install Microsoft Power Platform CLI](../developer/cli/introduction#in
 
 Power Apps Test Engine has the following benefits:
 
-- **Authentication Abstraction**: Make use of different [authentication](./authetication.md) methods to interact with different provider as User or Service Account or a Service Principal for Dataverse integration testing.
+- **Authentication Abstraction**: Make use of different [authentication](authentication.md) methods to interact with different provider as User or Service Account or a Service Principal for Dataverse integration testing.
 - **Power Fx test authoring**: Author tests in YAML format using the familiar Power Fx language.
 - **Dataverse Integration**: The ability to optionally include Dataverse Power Fx support in your test.
 - **DOM abstraction**: Use references to control names that are defined within Power Apps Studio when you author tests. You don't need to use JavaScript, or be familiar with the browser Document Object Model (DOM) rendered output of the app.
@@ -73,7 +73,7 @@ The way that test plan files refer to the target app depends on whether or not t
 
 #### Working with apps within solutions
 
-Test plan files for apps that are part of [Solutions overview](/power-apps/maker/data-platform/solutions-overview.md) are portable across environments. For solution-based apps, the test plan refers to the target app with a logical name (the app `LogicalName` property) which doesn't change if the app moves to a different environment.
+Test plan files for apps that are part of [Solutions overview](/power-apps/maker/data-platform/solutions-overview) are portable across environments. For solution-based apps, the test plan refers to the target app with a logical name (the app `LogicalName` property) which doesn't change if the app moves to a different environment.
 
 1. Locate the Logical name for the app
    1. In the **Solutions** tab, open the solution that contains the app

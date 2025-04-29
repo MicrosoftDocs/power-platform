@@ -1,5 +1,5 @@
 ---
-title: "Test Model Driven Application with Test Engine (preview)"
+title: "Test Model Driven Applications with Test Engine (preview)"
 description: "Describes testing a Power Apps Model Driven application"
 author: grant-archibald-ms
 ms.author: grarchib
@@ -11,7 +11,7 @@ contributors:
  - pvillads
 ---
 
-# Testing your model driven application
+# Test Model Driven Applications with Test Engine (preview)
 
 [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
 
@@ -58,17 +58,23 @@ $env:user1Email = "someone@example.com"
 
 ## Run the test
 
-Use the PAC CLI [pac test run](../developer/cli/reference/tests#pac-test-run) command to run your test plan.
+Use the PAC CLI [pac test run](../developer/cli/reference/test.md#pac-test-run) command to run your test plan.
 
 - Path to your test plan file
-- EnvironmentId (For example 00aa00aa-bb11-cc22-dd33-44ee44ee44ee)
-- TenantId (For example aaaabbbb-0000-cccc-1111-dddd2222eeee)
-- Url of the page MDA page to test 
+- TenantId (For example `aaaabbbb-0000-cccc-1111-dddd2222eeee`)
+- EnvironmentId (For example `00aa00aa-bb11-cc22-dd33-44ee44ee44ee`)
+- Url of the page MDA page to test
 
 For example this could be
 
-```pwsh
-pac test run -p "mda" -i "testplan.te.yaml" -t aaaabbbb-0000-cccc-1111-dddd2222eeee -e 00aa00aa-bb11-cc22-dd33-44ee44ee44ee -d "https://contoso.crm.dynamicss.com/main.aspx?appid=00001111-aaaa-2222-bbbb-3333cccc4444&pagetype=custom&name=dev_home_c8017"
+
+```powershell
+pac test run `
+   -p "mda" `
+   -i "testplan.te.yaml" `
+   -t aaaabbbb-0000-cccc-1111-dddd2222eeee `
+   -e 00aa00aa-bb11-cc22-dd33-44ee44ee44ee `
+   -d "https://contoso.crm.dynamicss.com/main.aspx?appid=00001111-aaaa-2222-bbbb-3333cccc4444&pagetype=custom&name=dev_home_c8017"
 ```
 
 ## View the results

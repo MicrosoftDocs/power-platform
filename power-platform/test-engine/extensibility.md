@@ -1,6 +1,6 @@
 ---
-title: "Test Engine Extensibility"
-description: "Describes the different components of Test Engine and how it can be extended"
+title: Test Engine Extensibility
+description: Describes the different components of Test Engine and how it can be extended
 author: grant-archibald-ms
 ms.author: grarchib
 ms.date: 05/09/2025
@@ -33,14 +33,13 @@ The Test Engine offers several key features:
 The **[Managed Extensibility Framework (MEF)](/dotnet/framework/mef/)** provides modular extension pattern for applications. MEF is used in Test Engine to enable three main classes of extensibility:
 
 1. **Authentication**: Integrate various authentication mechanisms into the testing framework, including support patterns that need to account for sign in with multifactor authentication or OAuth based authentication.
+1. **Providers**: Modules that support specific platforms or technologies, such as [Power Apps Canvas apps](./canvas-application.md) and [Model Driven apps](./model-driven-application.md). These providers enable seamless interaction and testing of applications built on these platforms.
+1. **Power Fx Functions**: Allow test steps to be extended support custom Power Fx functions, allowing the creation of sophisticated and tailored test scenarios. These Power Fx function can be defined as [user defined functions](./powerfx.md#user-defined-functions) or extended as custom code using C#.
 
-2. **Providers**: Modules that support specific platforms or technologies, such as [Power Apps Canvas apps](./canvas-application.md) and [Model Driven apps](./model-driven-application.md). These providers enable seamless interaction and testing of applications built on these platforms.
 
-3. **Power Fx Functions**: Allow test steps to be extended support custom Power Fx functions, allowing the creation of sophisticated and tailored test scenarios. These Power Fx function can be defined as [user defined functions](./powerfx.md#user-defined-functions) or extended as custom code using C#.
-
- > NOTES:
- > 1. During public preview only MEF [providers](./providers.md) and C# Power Fx module function compiled and signed by Microsoft will be loaded by [pac test run](../developer/cli/reference/tests#pac-test-run) command.
- > 2. Create or build new extensions cab be done using the open source MIT licensed [Power Apps Test Engine](https://github.com/microsoft/PowerApps-TestEngine)
+> [!NOTE]
+ > - During public preview only MEF [providers](./providers.md) and C# Power Fx module function compiled and signed by Microsoft will be loaded by [pac test run](../developer/cli/reference/test.md#pac-test-run) command.
+ > - Create or build new extensions cab be done using the open source MIT licensed [Power Apps Test Engine](https://github.com/microsoft/PowerApps-TestEngine)
 
 ## Playwright Integration
 
@@ -51,7 +50,6 @@ C# extension models can have the ability to interact with Playwright [IBrowserCo
 The Test Engine follows a [Ring Deployment Model](./ring-deployment-model.md):
 
 - **Preview Namespace**: New features and extensions are first introduced in the Preview namespace. Using the Preview namespace allows early adopters to test and provide feedback on these new capabilities before they're widely released.
-
 - **TestEngine Namespace**: After initial testing and refinement, features are promoted to the TestEngine namespace. This stage is designed for wider usage, ensuring that the extensions are robust and ready for broader deployment.
 
 ## Conclusion
