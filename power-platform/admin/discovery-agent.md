@@ -26,6 +26,8 @@ You can use discovery agent to:
 -	Access environment configurations without navigating through multiple pages.
 - Locate relevant documentation or learning materials to enhance understanding of Power Platform functionalities.
 
+By integrating the discovery agent, the Power Platform admin center delivers a streamlined and intuitive search experience, empowering users to focus on their tasks more effectively.
+
 The Discovery Agent is integrated into the Power Platform admin center and is available globally.
 
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
@@ -43,3 +45,10 @@ The discovery agent supports the following categories for searches:
 - **Environment settings**: Find configurations related to specific environments.
 - **Documentation**: Access articles and resources at [learn.microsoft.com](https://learn.microsoft.com).
 - **Learning paths**: Explore guided training modules available at [learn.microsoft.com/training/](https://learn.microsoft.com/training/).
+
+## Limitations
+- The discovery agent doesn't support dynamic content searches for users, groups, and environments. This functionality is planned for future updates.
+- Search results may vary depending on the context and phrasing of the query. Users are encouraged to use clear and specific language for optimal results.
+
+
+
