@@ -68,16 +68,13 @@ To allocate capacity to an environment:
 
 On the **Summary** tab view, do **one** of the following to open the **Manage add-ons** screen:
 
-   - Scroll down to the Add-ons tile, and then select **Manage** on the top-right corner of the Add-ons tile.
-   - Select the **Add-ons** tab. Select **Assign to an environment** in the upper-left menu bar.    
-   - Select the **Add-ons** tab. Select an environment, and then select **Manage add-ons** in the upper-left menu bar.
+- Scroll down to the Add-ons tile, and then select **Manage** on the top-right corner of the Add-ons tile.
+- Select the **Add-ons** tab. Select **Assign to an environment** in the upper-left menu bar.    
+- Select the **Add-ons** tab. Select an environment, and then select **Manage add-ons** in the upper-left menu bar.
 
-   You can also select **Download reports** to download usage reports for various capacities.
+You can also select **Download reports** to download usage reports for various capacities.
    
 On the **Manage add-ons** site panel, select the environment where you want to add capacity from the **Environment** drop-down menu, and then allocate from your available capacity.
-
-   > [!div class="mx-imgBorder"] 
-   > ![Manage add-ons.](./media/manage-add-ons.png "Manage add-ons")
 
    **Some examples**
 
@@ -85,8 +82,8 @@ On the **Manage add-ons** site panel, select the environment where you want to a
    - If you want to create 5 flows in an environment which are going to be used for business process flows, assign a capacity of 5 for **flow per business process**.
    - If a company has created a portal and anticipate 50,000 views of the portal, they should allocate 50,000 **portal page views**.
 
-> [!NOTE]
-> If you want to update many add-on allocations across environments at scale, see [Tutorial: Allocate add-ons to environments (preview)](./programmability-tutorial-allocate-capacity-addons.md) for more information.
+  > [!NOTE]
+  > If you want to update many add-on allocations across environments at scale, see [Tutorial: Allocate add-ons to environments (preview)](./programmability-tutorial-allocate-capacity-addons.md) for more information.
 
 ## Control who can allocate add-on capacity
 
