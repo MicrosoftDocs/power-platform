@@ -4,7 +4,7 @@ description: Learn how to manage security in the Power Platform admin center by 
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/30/2025
+ms.date: 04/29/2025
 ms.custom: NewPPAC
 author: matapg007
 ms.author: matgupta
@@ -122,8 +122,10 @@ Use the following links to view and manage proactive policies for governance and
 - [Compliance](compliance.md): Implement robust compliance measures to safeguard organizational data and ensure adherence to industry regulations, through features such [Customer Lockbox](../about-lockbox.md) and auditing.
 
 ## Dismiss recommendations
-Administrators now have the ability to **dismiss security recommendations** that have been mitigated through alternative solutions. Previously, unaddressed recommendations could result in a stagnant security score, despite proactive measures taken outside the recommended solutions.
-Dismissed recommendations will no longer negatively impact the security score, ensuring an accurate reflection of the organization's security posture.
+Administrators now have the ability to dismiss security recommendations that have been mitigated through alternative solutions. Previously, unaddressed recommendations could result in a stagnant security score, despite proactive measures taken outside the recommended solutions.
+
+Dismissed recommendations no longer negatively impact the security score, ensuring an accurate reflection of the organization's security posture.
+
 Your dismissed recommendations are always accessible, meaning you can review their history at any time. If circumstances change or you wish to revisit a previously dismissed recommendation, you can easily reactivate it to ensure continuous security optimization.
 
 ## Manage security settings at environment group
