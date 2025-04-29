@@ -67,7 +67,7 @@ When a database is created, the users who have environment roles assigned to the
 You can assign more users to predefined roles or even create custom roles. Learn more in [Database Security](database-security.md).
 
 > [!NOTE]
-> On creating the database, any security group assigned to Environment Admin or Environment Maker role aren't honored any more. Currently, assigning permissions in database, don't support Microsoft Entra security group.
+> On creating the database, any security group assigned to Environment Admin or Environment Maker role aren't honored. Currently, assigning permissions in database, don't support Microsoft Entra security group.
 
 
 ## License and security permissions
