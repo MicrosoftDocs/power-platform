@@ -31,6 +31,7 @@ Understanding Copilot Studio architecture concepts and exploring solution ideas 
 | [**Generative answers based on public websites**](/microsoft-copilot-studio/guidance/generative-ai-public-websites) | Learn more about using public websites or Bing Custom Search as a knowledge source in Copilot Studio. |
 | [**Guidance for using instructions in generative mode**](/microsoft-copilot-studio/guidance/generative-mode-guidance) | Learn how to write the best instructions for your agent when it's using generative orchestration. |
 | [**Introduction to conversational experiences**](/microsoft-copilot-studio/guidance/cux-overview)| Design ideal conversational user experiences. |
+| [**​Authentication in Copilot Studio**](../key-concepts/copilot-studio-auth.md) | Learn about different authentication methods in Copilot Studio. |
 
 ## Solution ideas
 

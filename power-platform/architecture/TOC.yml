@@ -35,6 +35,8 @@
             href: key-concepts/distributed-tracing.md
           - name: Implement distributed tracing
             href: key-concepts/distributed-tracing-details.md
+      - name: Authentication in Copilot Studio
+        href: key-concepts/copilot-studio-auth.md
     - name: Reference architectures
       items:
       - name: Overview
