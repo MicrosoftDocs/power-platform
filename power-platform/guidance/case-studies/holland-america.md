@@ -72,15 +72,15 @@ Working closely with Microsoft, Holland America Line pushes the boundaries of ge
 
 - **Multi-intent detection**: Ability to understand queries such as, “Help me find a cruise to Alaska for 6 to 8 days from Seattle.”
 
-- **Custom entity extraction**: Ability to expand on predefined entities such as dates and add custom entities, such as dates and custom entities. For example, "I want to go next summer" generates a JSON object for the June-August summer season `{"departurefromdate": "2025-06-01", "departuretodate": "2025-08-01"}.`
+- **Custom entity extraction**: Ability to expand on predefined entities such as dates and add custom entities. For example, "I want to go next summer" generates a JSON object for the June-August summer season `{"departurefromdate": "2025-06-01", "departuretodate": "2025-08-01"}.`
 
 - **Single-page reasoning**: Ability to reason over a particular cruise itinerary page to answer questions like, “Which day do we get to the Bahamas and what do we see before we get there?”
 
 ## Hybrid orchestration with AI prompt for intent recognition
 
-The team develops an alternative approach for intent recognition. Classic orchestration, which relies solely on trigger phrases, is simple, and generative orchestration is still in preview at that time. As an alternative, they use a hybrid mode.
+The team uses an alternative approach for intent recognition. Classic orchestration, which relies solely on trigger phrases, is simple, and generative orchestration was in preview when they developed the agent. As an alternative, they use a hybrid mode.
 
-Hybrid orchestration uses classic orchestration and enhances it with AI Prompt Builder to interpret user intent more flexibly and powerfully. They create a powerful prompt that processes user queries, considers previous conversations, determines intent, and routes to the most relevant topic.
+Hybrid orchestration uses classic orchestration and enhances it with AI Prompt Builder to interpret user intent more flexibly and powerfully. A defined powerful prompt processes user queries, considers previous conversations, determines intent, and routes to the most relevant topic.
 
 Key benefits of hybrid orchestration:
 
@@ -112,9 +112,9 @@ The following are prerequisites for setting up hybrid orchestration.
 1. Add a conditional branch to route conversations to various custom topics.
 1. Include fallback mechanisms.
 
-The goal is to capture the user’s intent in a prompt, extract it as output, and redirect the conversation to the appropriate custom topic. A key aspect is to avoid trigger phrases in topics and ensure conversation boost activates consistently.
+The goal is to capture the user’s intent in a prompt, extract it as output, and redirect the conversation to the appropriate custom topic. A key aspect is to avoid trigger phrases in topics and ensure the conversational boosting topic activates consistently.
 
-In this case study, a Power Automate cloud flow is used to integrate the AI prompt. AI prompts are initially unavailable for use within Copilot Studio. However, they're now integrated, allow agents to utilize AI Prompts directly without requiring a flow as an intermediary.
+In this case study, a Power Automate cloud flow is used to integrate the AI prompt. Note that AI prompts are now integrated in Copilot Studio, allowing agents to utilize AI Prompts directly without requiring a flow as an intermediary.
 
 In the first step, the user information is saved as a variable. Next, an action calls a Power Automate cloud flow, where the AI Prompt extracts the intent and returns it to the agent.
 
@@ -196,7 +196,7 @@ To improve the user experience by minimizing follow-up questions, use a prompt c
 
 ## Architecture diagram
 
-The architecture below explains how Holland America Line develops the Anna virtual agent.
+The architecture below explains how Holland America Line developed the Anna virtual agent.
 
 :::image type="content" source="media/holland-america/architecture.png" alt-text="Screenshot of a diagram showing a software development process. AI-generated content may be incorrect." lightbox = "media/holland-america/architecture.png":::
 
