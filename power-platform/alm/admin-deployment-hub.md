@@ -3,7 +3,7 @@ title: Admin deployment page
 description: Manage ALM in the admin center.
 author: asheehi1
 ms.subservice: alm
-ms.author: matp
+ms.author: asheehi
 ms.custom: NewPPAC
 ms.reviewer: matp
 ms.topic: overview
@@ -44,7 +44,7 @@ It’s important admins review changes in the solution and the sharing request. 
 
 ### Retry failed deployments
 
-Deployments shown as **Failed** in the run history view can now be deployed by selecting **Retry** in the details panel if the operation was "Deploy". A confirmation dialogue will appear when clicked to confirm the retry.
+Deployments shown as **Failed** in the run history view can be deployed by selecting **Retry** in the details panel if the operation was **Deploy**. A confirmation message appears when you confirm the retry.
 
 ## Related articles
 
