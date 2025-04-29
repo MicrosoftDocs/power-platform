@@ -1,5 +1,5 @@
 ---
-title: "Hierarchy security  | MicrosoftDocs"
+title: Hierarchy security  
 description: Learn how to use hierarchy security to control access.
 author: paulliew
 ms.subservice: admin
@@ -8,7 +8,7 @@ ms.reviewer: sericks
 ms.custom: "admin-security"
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/21/2025
+ms.date: 04/29/2025
 search.audienceType: 
   - admin
 ms.contributors:
@@ -137,11 +137,12 @@ The manager hierarchy is easily created by using the manager relationship on the
   
    :::image type="content" source="../admin/media/hierachy-security-enabled-users.png" alt-text="Screenshot that shows enabled users with assigned positions.":::
 
-## Edit and update multiple levels of direct reports' records
-By default, managers can update their direct reports' and their directs' direct reports' records (up to 3 level deep). You can change this default by:
+## Edit and update multiple levels of records for direct reports
+By default, managers can update records for their direct reports and records for individuals who report to their direct reports. Essentailly, you can update records that are three levels deep). You can change the default setting by completing the following steps.
+
  1. Install the [OrganizationSettingsEditor tool](environment-database-settings.md#install-the-organizationsettingseditor-tool).
  1. Edit the **HierarchyLevelForHierarchyFeature** setting.
- 2. Enter the number of direct level depth, example 5.
+ 2. Enter the number of direct level depth. For example, enter 5.
  3. Select **Update**.
 
 ## Include or exclude records owned by direct report with the disabled user status
