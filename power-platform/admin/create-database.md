@@ -18,7 +18,7 @@ search.audienceType:
 
 You can create a database and build apps by using Dataverse as a data store. You can either create your own custom tables or use the predefined tables. To create a database, you first need to either create an environment, or be assigned to an existing environment as an **Environment Admin**. In addition, you must be assigned the appropriate license. For information on purchasing a plan for using Dataverse, see [Pricing info](pricing-billing-skus.md).
 
-You can only add a single database to an environment. This topic applies to those who haven't yet added a Dataverse database to an environment.
+You can only add a single database to an environment. This article applies to customers who haven't yet added a Dataverse database to an environment.
 
 There are various ways to add or create a database:
 
@@ -60,14 +60,14 @@ In the **Add Dataverse** side pane, enter the following information, then select
 3. Select **Create a database** to create the database.
 
 ## Security model for the databases
-When a database is created, the users who have environment roles assigned to them, will continue to maintain those privileges.  
+When a database is created, the users who have environment roles assigned to them, continue to maintain those privileges.  
     Users with **Environment Admin** role are assigned to **System Administrator** role. 
     Users with **Environment Maker** continue to possess the same role.
 
-You can assign additional users to pre-defined roles or even create custom roles. See [Database Security](database-security.md) for more details.
+You can assign more users to predefined roles or even create custom roles. Learn more in [Database Security](database-security.md).
 
 > [!NOTE]
-> On creating the database, any security group assigned to Environment Admin or Environment Maker role will not be honored any more. Currently, assigning permissions in database, do not support Microsoft Entra security group.
+> On creating the database, any security group assigned to Environment Admin or Environment Maker role aren't honored any more. Currently, assigning permissions in database, don't support Microsoft Entra security group.
 
 
 ## License and security permissions
