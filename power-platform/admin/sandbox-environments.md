@@ -7,6 +7,7 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 08/24/2020
 ms.subservice: admin
+ms.custom: NewPPAC
 ms.author: sericks 
 search.audienceType: 
   - admin
@@ -20,13 +21,18 @@ A sandbox environment is any non-production environment of Microsoft Dataverse. 
 ## View your sandbox environments  
 
 Manage your sandbox environments from the Power Platform admin center.  
-  
-1. Go to [https://admin.powerplatform.microsoft.com/](https://admin.powerplatform.microsoft.com), and sign in using Environment Admin or System Administrator role credentials.
-  
-2. Open the **Environments** page. Select the **Type** tab to sort by environment type.
-  
-   > [!div class="mx-imgBorder"] 
-   > ![Environments page.](media/sandbox-environments.png "Environments page")
+
+### [New admin center](#tab/new)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) using Environment Admin or System Administrator credentials.
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. On the **Environments** page, click the **Type** column to sort by environment type.
+
+### [Classic admin center](#tab/classic)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) using Environment Admin or System Administrator credentials.
+1. In the navigation pane, select **Environments**.
+1. On the **Environments** page, click the **Type** column to sort by environment type.
+---
 
 ## Create a sandbox environment
 
@@ -34,21 +40,23 @@ See [Create and manage environments in the Power Platform admin center](create-e
 
 ## Change a production environment to sandbox
 
-1. Sign in to the Power Platform admin center at [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) as an admin (Service admin or Delegated admin).
+### [New admin center](#tab/new)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) using Service admin or Delegated admin credentials.
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. On the **Environments** page, select a production environment.
+1. In the **Details** pane, click **Edit**.
+1. In the **Edit details** panel, under **Type**, select Sandbox.
+1. Click **Save** to apply the changes.
 
-2. From the left-side menu, select **Environments**, and then select a production environment.
-
-3. Select **Edit**
-
-   > [!div class="mx-imgBorder"] 
-   > ![Select Edit.](media/select-edit.png "Select Edit")
-
-4. Under **Type**, choose the sandbox environment type. 
-
-   > [!div class="mx-imgBorder"] 
-   > ![Select sandbox environment.](media/select-sandbox.png "Select sandbox environment")
-
-5. Select **Save**.
+### [Classic admin center](#tab/classic)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) using Service admin or Delegated admin credentials.
+1. In the navigation pane, select **Environments**.
+1. On the **Environments** page, select a production environment.
+1. In the **Details** pane, click **Edit**.
+1. In the **Edit details** panel, under **Type**, select Sandbox.
+1. Click **Save** to apply the changes.
+---
 
 ## Reset a sandbox environment  
 
@@ -70,28 +78,31 @@ Reset a sandbox environment to delete and reprovision it. Consider a reset when 
  
 ### To reset an environment  
 
-1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) and sign in using Environment Admin or System Administrator role credentials.
-  
-2. From the left-side menu, select **Environments**, and then select an environment to reset.
+### [New admin center](#tab/new)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) using Environment Admin or System Administrator credentials.
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. On the **Environments** page, select the environment you want to reset.
+1. Click **Reset** from the top command bar. 
 
-3. Select **Reset** from the top menu bar.
-  
-   > [!div class="mx-imgBorder"] 
-   > ![Reset menu.](media/reset-menu.png "Reset menu")
+### [Classic admin center](#tab/classic)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) using Environment Admin or System Administrator credentials.
+1. In the navigation pane, select **Environments**.
+1. On the **Environments** page, select the environment you want to reset.
+1. Click **Reset** from the top command bar.
+---
 
-4. On the **Reset environment** page, adjust the environment settings as needed and understand the following consequences:  
+In the **Reset environment** panel:
+1. Adjust the environment settings as needed.
+1. Review and understand the consequences of resetting the environment.  
   
    > [!WARNING]
    > - The sandbox environment will be deleted and reset to factory settings. You will not be able to recover any data that was previously in the environment. 
    > - When you reset an environment, the security group specified on the **Reset environment** page will be applied. If a security group isn’t specified during the reset, no security group will be assigned to the environment after the reset is completed.  Any existing security group configured before the reset is performed will no longer be applied to the environment. More information: [Control user access to environments: security groups and licenses](control-user-access.md)   
   
-5. Select **Reset**, and then select **Confirm** to reset the selected environment.
+1. Click **Reset**, then select **Confirm** to begin the process.
+1. The environment reset will then start.
 
-The reset process starts.
-
-> [!div class="mx-imgBorder"] 
-> ![Reset environment status.](media/reset-environment-status.png "Reset environment status")
-  
 ## Administration mode  
 
  When you place a sandbox environment in administration mode, only users with System Administrator or System Customizer security roles are able to sign in to that environment.
