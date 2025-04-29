@@ -26,6 +26,8 @@ You can use discovery agent to:
 -	Access environment configurations without navigating through multiple pages.
 - Locate relevant documentation or learning materials to enhance understanding of Power Platform functionalities.
 
+The Discovery Agent is integrated into the Power Platform admin center and is available globally.
+
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
 ## Discovery agent features
