@@ -109,8 +109,8 @@ This combination ensures that the data is both encrypted (confidential) and auth
 The current logged-in Azure CLI session is used to obtain an access token to the Dataverse instance where Test Engine key values and encrypted key data are stored. The Dataverse security model, sharing, and auditing features are enabled to control access and record access to key and key data.
 
 Further reading for readers unfamiliar with Azure CLI sign-in, Access Token, and Dataverse security model:
-- [az sign-in](/cli/azure/reference-index?view=azure-cli-latest#az-login)
-- [az account get-access-token](/cli/azure/account?view=azure-cli-latest#az-account-get-access-token) using Azure CLI to obtain access token. In this case it's used to obtain access token to integrate with Dataverse custom XML repository
+- [az sign-in](/cli/azure/reference-index#az-login)
+- [az account get-access-token](/cli/azure/account#az-account-get-access-token) using Azure CLI to obtain access token. In this case it's used to obtain access token to integrate with Dataverse custom XML repository
 - [Microsoft.PowerPlatform.Dataverse.Client](https://www.nuget.org/packages/Microsoft.PowerPlatform.Dataverse.Client/) used to access Custom XML Repository using the obtained access token
 - [Security concepts in Microsoft Dataverse](../admin/wp-security-cds.md) where using User or Team owned records.
 - [Granting permission to tables in Dataverse for Microsoft Teams](/power-apps/teams/dataverse-for-teams-table-permissions)
@@ -120,7 +120,7 @@ Further reading for readers unfamiliar with Azure CLI sign-in, Access Token, and
 
 ### Custom XML Repository
 
-A custom XML repository provides the ability to query and create Data Protection state by implementing [IXmlRepository](/aspnet/core/security/data-protection/extensibility/key-management?view=aspnetcore-8.0#ixmlrepository). The XML state of data protection is stored in a Dataverse table, with encryption managed by the Data Protection API and selected protection providers.
+A custom XML repository provides the ability to query and create Data Protection state by implementing [IXmlRepository](/aspnet/core/security/data-protection/extensibility/key-management#ixmlrepository). The XML state of data protection is stored in a Dataverse table, with encryption managed by the Data Protection API and selected protection providers.
 
 Note the `IXmlRepository` doesn't need to parse the XML passing through them. They treat the XML documents as opaque and let higher layers of the Data Protection API worry about generating and parsing the documents.
 
