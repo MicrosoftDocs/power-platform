@@ -117,7 +117,7 @@ The development and implementation of the Project Connect application use a vari
 
 - **Microsoft Fabric:** Facilitates data engineering by consolidating data from multiple sources and storing it in a data warehouse for comprehensive reporting and analysis.
   
-- **Azure Blob Storage:** Stores bulk import templates, such as Excel sheets, used for onboarding users to platforms like Microsoft Teams and SharePoint, ACC, and Revizto.
+- **Azure Blob Storage:** Stores the Workbench financial reports and Workday HR data, to be ingested by Microsoft Fabric Data Factory.
 
 - **Azure SQL Database:** Houses HRM data from Workday, which is leveraged in Power Apps and the Power Automate flows.
 
