@@ -30,7 +30,7 @@ There are three stages for using capacity add-ons:
 
 ## View capacity add-ons in Power Platform admin center
 
-If your organization has purchased capacity add-ons, an **Add-ons** tile appears on the **Capacity** screen in the Microsoft [Power Platform admin center](https://admin.powerplatform.microsoft.com/). 
+If your organization has purchased capacity add-ons, an **Add-ons** tab appears on the **Capacity** page in the Power Platform admin center.
 
 #### [New admin center](#tab/new)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
@@ -44,7 +44,7 @@ If your organization has purchased capacity add-ons, an **Add-ons** tile appears
 1. In the **Capacity** page, select the **Add-ons** tab.
 ---
 
-The **Add-ons** tile shows summary information about the capacity add-ons that your organization has.
+The **Add-ons** tab shows summary information about the capacity add-ons that your organization has.
 
 ![Add-on tile.](media/add-on-tile2.png "Add-on tile")
 
@@ -56,14 +56,14 @@ To allocate capacity to an environment:
 
 #### [New admin center](#tab/new)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Resources**, then choose **Capacity**.
-1. Select the **Summary** tab.
+1. In the navigation pane, select **Licensing**.
+1. In the **Licensing** pane, select **Capacity add-ons**.
+1. In the **Capacity** page, select the **Summary** tab.
 
 #### [Classic admin center](#tab/classic)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Licensing**.
-1. In the **Licensing** pane, select **Capacity add-ons**.
-1. Select the **Summary** tab.
+1. In the navigation pane, expand **Resources**, then select **Capacity**.
+1. In the **Capacity** page, select the **Summary** tab.
 ---
 
 On the **Summary** tab view, do **one** of the following to open the **Manage add-ons** screen:
@@ -83,7 +83,7 @@ On the **Manage add-ons** site panel, select the environment where you want to a
 
    - If you have 10 users who are going to be using 1 app each, you should assign 10 **app passes** to the app environment.
    - If you want to create 5 flows in an environment which are going to be used for business process flows, assign a capacity of 5 for **flow per business process**.
-  - If a company has created a portal and anticipate 50,000 views of the portal, they should allocate 50,000 **portal page views**.
+   - If a company has created a portal and anticipate 50,000 views of the portal, they should allocate 50,000 **portal page views**.
 
 > [!NOTE]
 > If you want to update many add-on allocations across environments at scale, see [Tutorial: Allocate add-ons to environments (preview)](./programmability-tutorial-allocate-capacity-addons.md) for more information.
@@ -103,7 +103,7 @@ The following admins will be able to allocate add-on capacity in the Power Platf
 - Dynamics 365 admins
 - Power Platform admins
 
-### See also
+### Related content
 [About Power Apps per app plans](about-powerapps-perapp.md)
 [AI Builder consumption report](/ai-builder/administer-consumption-report)
 
