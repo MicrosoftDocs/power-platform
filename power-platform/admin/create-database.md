@@ -1,11 +1,11 @@
 ---
-title: Add a Microsoft Dataverse database | Microsoft Docs
+title: Add a Microsoft Dataverse database
 description: Walkthrough of how to add a Microsoft Dataverse database.
 services: powerapps
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/29/2022
+ms.date: 04/29/2025
 ms.subservice: admin
 ms.custom: NewPPAC
 ms.author: sericks
@@ -34,25 +34,25 @@ There are various ways to add or create a database:
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
-1. On the **Environments** page, select the environment you want to add the database.
-1. In the **Add Database** pane, click **+ Add database**.
+1. On the **Environments** page, select the environment to which you want to add a database.
+1. In the **Add Dataverse** web part, click **+ Add Dataverse**.
  
 #### [Classic admin center](#tab/classic)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Environments**.
-1. On the **Environments** page, select the environment you want to add the database.
-1. In the **Add Database** pane, click **+ Add database**.
+1. On the **Environments** page, select the environment to which you want to add a database.
+1. In the **Add Dataverse** web part, click **+ Add Dataverse**.
 ---
 
 In the **Add Dataverse** side pane, enter the following information, then select **Add** to apply the changes.
 
-   |Setting  |Description  |
-   |---------|---------|
-   |Language     | The default language for this environment. More information: [Dataverse language collations](language-collations.md)     |
-   |Currency     | The base currency used for reporting.         |
-   |Enable Dynamics 365 apps | Select **Yes** and make a selection to automatically deploy apps such as Dynamics 365 Sales and Dynamics 365 Customer Service. |
-   |Deploy sample apps and data     | Select **Yes** to include sample apps and data. Sample data gives you something to experiment with as you learn. You must select **No** for **Enable Dynamics 365 apps** for this setting to appear.        |
-   |Security group | Select a security group to restrict access to this environment. |
+|Setting  |Description  |
+|---------|---------|
+|Language     | The default language for this environment. More information: [Dataverse language collations](language-collations.md)     |
+|Currency     | The base currency used for reporting.         |
+|Enable Dynamics 365 apps | Select **Yes** and make a selection to automatically deploy apps such as Dynamics 365 Sales and Dynamics 365 Customer Service. |
+|Deploy sample apps and data     | Select **Yes** to include sample apps and data. Sample data gives you something to experiment with as you learn. You must select **No** for **Enable Dynamics 365 apps** for this setting to appear.        |
+|Security group | Select a security group to restrict access to this environment. |
 
 ## Create a database in the Tables pane of Power Apps
 1. Sign in to [Power Apps](https://make.powerapps.com).
