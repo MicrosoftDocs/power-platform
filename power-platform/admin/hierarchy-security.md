@@ -138,7 +138,7 @@ The manager hierarchy is easily created by using the manager relationship on the
    :::image type="content" source="../admin/media/hierachy-security-enabled-users.png" alt-text="Screenshot that shows enabled users with assigned positions.":::
 
 ## Edit and update multiple levels of records for direct reports
-By default, managers can update records for their direct reports and records for individuals who report to their direct reports. Essentailly, you can update records that are three levels deep). You can change the default setting by completing the following steps.
+By default, managers can update records for their direct reports and records for individuals who report to their direct reports. Essentailly, you can update records that are three levels deep. You can change the default setting by completing the following steps.
 
  1. Install the [OrganizationSettingsEditor tool](environment-database-settings.md#install-the-organizationsettingseditor-tool).
  1. Edit the **HierarchyLevelForHierarchyFeature** setting.
