@@ -44,7 +44,7 @@ The discovery agent supports the following categories for searches:
 - **Power Platform admin center settings**: Access various administrative and platform settings.
 - **Environment settings**: Find configurations related to specific environments.
 - **Documentation**: Access articles and resources at [learn.microsoft.com](https://learn.microsoft.com).
-- **Learning paths**: Explore guided training modules available at [learn.microsoft.com/training/](https://learn.microsoft.com/training/).
+- **Learning paths**: Explore guided training modules available at [learn.microsoft.com/training/](/training/).
 
 ## Limitations
 - The discovery agent doesn't support dynamic content searches for users, groups, and environments. This functionality is planned for future updates.
