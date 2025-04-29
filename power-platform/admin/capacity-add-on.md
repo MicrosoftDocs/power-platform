@@ -93,10 +93,10 @@ On the **Manage add-ons** site panel, select the environment where you want to a
 As an admin, you can restrict who can allocate add-on capacity to environments.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-2. In the command bar, select **Settings**.
+2. In the title bar, select the **Settings** icon.
 3. Select **Power Platform settings**.
-4. On the **Tenant settings** page, select **Add-on capacity assignments**, then choose **Only specific admins**.
-5. Click **Save** to apply the changes.
+4. On the **Tenant settings** page, select **Add-on capacity assignments**, then select **Only specific admins**.
+5. Select **Save** to apply the changes.
 
 The following admins will be able to allocate add-on capacity in the Power Platform admin center:
 
