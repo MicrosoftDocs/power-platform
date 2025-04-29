@@ -6,7 +6,7 @@ ms.author: rstand
 ms.reviewer: jhaskett-msft
 ms.subservice: guidance
 ms.topic: overview
-ms.date: 04/10/2025
+ms.date: 04/29/2025
 ---
 
 # Real-world case studies
@@ -30,9 +30,13 @@ Case studies are detailed accounts of real-world applications and implementation
 | Case study | Description |
 | --- | --- |
 | [A1 Inteligência em Viagens boosts efficiency and customer experience](boost-efficiency-experience-case-study.md) | This case study covers how A1 Inteligência em Viagens boosts team efficiency and customer experience with Power Automate and Copilot Studio. |
-| [Epiq streamlines employee onboarding](streamline-employee-onboarding.md) | This case study covers how Epiq streamlines employee onboarding with Power Automate, Microsoft Dataverse, and AI Builder. |
-| [Degress of Change automates nonprofit operations](nonprofit.md) | This case study covers how Degrees of Change automates nonprofit operations with Power Pages, Power Apps, and AI Builder. |
+| [ABN AMRO Bank enhances AI capabilities with Copilot Studio and Azure services](abn-amro-enhances-ai.md) | This case study covers how ABN AMRO enhanced customer and employee interactions using Copilot Studio. |
+| [AECOM simplifies project onboarding with Power Platform, Azure, and Microsoft Fabric](aecom-streamlined-onboarding.md) | This case study covers how AECOM streamlined project onboarding using Power Platform, Microsoft Azure, and Microsoft Fabric. |
 | [Cineplex automates business processes](automate-business-processes.md) | This case study covers how Cineplex automates business processes with generative AI and Power Automate. |
-| [EY automates payment processing](global-finance.md) | This case study covers how the Global Finance team at Ernst & Young used Power Automate, AI Builder, and Dataverse to automate customer payment processing. |
-| [John Cockerill streamlines enterprise business processes](engineering-time-tracking.md) | This case study covers how international engineering company John Cockerill uses Power Platform to develop enterprise apps. |
+| [Degrees of Change automates nonprofit operations](nonprofit.md) | This case study covers how Degrees of Change automates nonprofit operations with Power Pages, Power Apps, and AI Builder. |
 | [Deutsche Bahn empowers citizen developers](db-empowers-citizen-devs.md) | This case study covers how Deutsche Bahn Group accelerated innovation by empowering their employees to build low-code business applications using Power Platform. |
+| [Epiq streamlines employee onboarding](streamline-employee-onboarding.md) | This case study covers how Epiq streamlines employee onboarding with Power Automate, Microsoft Dataverse, and AI Builder. |
+| [EY automates payment processing](global-finance.md) | This case study covers how the Global Finance team at Ernst & Young used Power Automate, AI Builder, and Dataverse to automate customer payment processing. |
+| [Holland America Line transforms customer experience with Copilot Studio](holland-america-customer-experience.md) | This case study covers how Holland America Line used Copilot Studio to create a sophisticated virtual agent to act as a digital concierge on their website. |
+| [John Cockerill streamlines enterprise business processes](engineering-time-tracking.md) | This case study covers how international engineering company John Cockerill uses Power Platform to develop enterprise apps. |
+| [Teck Resources Limited automates data extraction with Power Automate and AI Builder](teck-automates-data-extraction.md) | This case study covers how Teck uses Power Automate and AI Builder to automate data extraction processes. |

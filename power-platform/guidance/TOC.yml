@@ -140,12 +140,12 @@
               href: coe/setup-quarantine-components.md
             - name: Collect audit log data
               items:
-                  - name: Using Microsoft Graph API (recommended)
-                    href: coe/setup-auditlog-http-graphapi.md  
-                  - name: Using Office 365 Management API
-                    href: coe/setup-auditlog-http.md
-                  - name: Collect historic audit log events
-                    href: coe/setup-auditlog-http-old-data.md
+                - name: Using Microsoft Graph API (recommended)
+                  href: coe/setup-auditlog-http-graphapi.md
+                - name: Using Office 365 Management API
+                  href: coe/setup-auditlog-http.md
+                - name: Collect historic audit log events
+                  href: coe/setup-auditlog-http-old-data.md
             - name: Set up Power BI reports
               href: coe/setup-powerbi.md
             - name: Set up nurture components
@@ -157,7 +157,7 @@
             - name: Set up theming components
               href: coe/setup-theming.md
             - name: Set up the Business value toolkit
-              href: coe/setup-business-value-toolkit.md              
+              href: coe/setup-business-value-toolkit.md
             - name: What's next - updating the CoE Starter Kit
               href: coe/after-setup.md
             - name: What's next - extending the CoE Starter Kit
@@ -401,10 +401,10 @@
                   href: creator-kit/gaugechart.md
                 - name: HorizontalBar
                   items:
-                  - name: HorizontalBarChart (preview)
-                    href: creator-kit/horizontalbarchart.md
-                  - name: HorizontalBarChart - Stacked (preview)
-                    href: creator-kit/stackedbarchart.md
+                    - name: HorizontalBarChart (preview)
+                      href: creator-kit/horizontalbarchart.md
+                    - name: HorizontalBarChart - Stacked (preview)
+                      href: creator-kit/stackedbarchart.md
             - name: Utilities
               items:
                 - name: Elevation
@@ -423,20 +423,28 @@
       items:
         - name: Overview
           href: case-studies/index.md
+        - name: ABN AMRO enhances AI capabilities
+          href: case-studies/abn-amro-enhances-ai.md
+        - name: AECOM simplifies project onboarding
+          href: case-studies/aecom-streamlined-onboarding.md
         - name: A1 Inteligencia em Viagens boosts team efficiency
           href: case-studies/boost-efficiency-experience-case-study.md
-        - name: Epiq streamlines employee onboarding
-          href: case-studies/streamline-employee-onboarding.md
-        - name: Degrees of Change automates nonprofit operations
-          href: case-studies/nonprofit.md
         - name: Cineplex automates business processes
           href: case-studies/automate-business-processes.md
-        - name: EY automates payment processing 
-          href: case-studies/global-finance.md
-        - name: John Cockerill streamlines business processes 
-          href: case-studies/engineering-time-tracking.md
+        - name: Degrees of Change automates nonprofit operations
+          href: case-studies/nonprofit.md
         - name: Deutsche Bahn empowers citizen developers
           href: case-studies/db-empowers-citizen-devs.md
+        - name: Epiq streamlines employee onboarding
+          href: case-studies/streamline-employee-onboarding.md
+        - name: EY automates payment processing
+          href: case-studies/global-finance.md
+        - name: Holland America Line transforms customer experience
+          href: case-studies/holland-america-customer-experience.md
+        - name: John Cockerill streamlines business processes
+          href: case-studies/engineering-time-tracking.md
+        - name: Teck automates data extraction
+          href: case-studies/teck-automates-data-extraction.md
     - name: White papers
       items:
         - name: Power Platform white papers
