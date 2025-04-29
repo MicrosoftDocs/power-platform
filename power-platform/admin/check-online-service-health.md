@@ -39,7 +39,7 @@ The dashboard provides a quick snapshot of the service health of some of your Mi
 
 To view information about all your services, select **Service health** on the dashboard (or select **Health** \> **Service health** on the menu).
 
-![Screenshot that shows the Service health card on the Microsoft 365 admin center dashboard.](media/office-365-admin-center-service-health-dashboard.png "Screenshot that shows the Service health card on the Microsoft 365 admin center dashboard")
+![Screenshot showing the Service health card on the Microsoft 365 admin center dashboard.](media/office-365-admin-center-service-health-dashboard.png "Screenshot showing the Service health card on the Microsoft 365 admin center dashboard.")
 
 ### View Dynamics 365 service health
 

@@ -1,4 +1,4 @@
----
+﻿---
 title: Operators and Identifiers in Power Apps
 description: Reference information including syntax and examples for the Operators and Identifiers in Power Apps.
 author: gregli-msft
@@ -17,8 +17,9 @@ contributors:
 ---
 
 # Operators and Identifiers in Power Apps
+[!INCLUDE[operators-applies-to](includes/operators-applies-to.md)]
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps  :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Pages 
+
 
 Some of these operators are dependent on the language of the author. For more information about language support in canvas apps, see [Global apps](/power-apps/maker/canvas-apps/global-apps).
 
@@ -324,3 +325,137 @@ Some functions create [record scopes](/power-apps/maker/canvas-apps/working-with
 For more information and examples, see [record scopes](/power-apps/maker/canvas-apps/working-with-tables#record-scope).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

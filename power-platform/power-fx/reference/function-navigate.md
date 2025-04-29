@@ -1,4 +1,4 @@
----
+﻿---
 title: Back and Navigate functions
 description: Reference information including syntax and examples for the Back and Navigate functions.
 author: gregli-msft
@@ -18,6 +18,7 @@ contributors:
 ---
 
 # Back and Navigate functions
+[!INCLUDE[function-navigate-applies-to](includes/function-navigate-applies-to.md)]
 
 Changes which screen is displayed.
 
@@ -35,7 +36,7 @@ You can use either function only within a [behavior formula](/power-apps/maker/c
 
 ## Navigate
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps 
+
 
 In the first argument, specify the name of the screen to display.
 
@@ -60,7 +61,7 @@ Context variables for navigation are explained in the article [navigate between 
 
 ## Back
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps 
+
 
 The **Back** function returns to the screen that was most recently displayed.
 
@@ -130,3 +131,139 @@ When the **Back** function runs, the inverse transition is used by default. For 
 [Using context variables](/power-apps/maker/canvas-apps/working-with-variables#use-a-context-variable)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

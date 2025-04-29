@@ -4,8 +4,9 @@ description: Set regional and language options for your environment
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/24/2024
+ms.date: 04/24/2025
 ms.subservice: admin
+ms.custom: NewPPAC
 ms.author: sericks 
 search.audienceType: 
   - admin
@@ -29,28 +30,37 @@ The following table shows tasks that are associated with changing regional and l
 
 ## Add a language  
 
-These settings can be found in the Microsoft Power Platform admin center by going to **Environments** > [select an environment] > **Settings** > **Product** > **Languages**.
+These settings can be found in the Microsoft Power Platform admin center for an environment.
 
-Make sure you have the System Administrator or System Customizer security role or equivalent permissions to update the setting.
+## [New admin center](#tab/new)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. On the **Environments** page, select an environment.
+1. In the command bar, select **Settings**.
+1. Expand **Product**, and then select **Languages**. 
 
-- Follow the steps in [View your user profile](/powerapps/user/view-your-user-profile).
-- Don’t have the correct permissions? Contact your system administrator.
+## [Classic admin center](#tab/classic)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Environments**.
+1. On the **Environments** page, select an environment.
+1. In the command bar, select **Settings**.
+1. Expand **Product**, and then select **Languages**. 
+---
 
-Before users can start using a Language Pack to display a language, the Language Pack must be added in your organization.
+Make sure you have the System Administrator or System Customizer security role or equivalent permissions to update the setting. To check your security role, go to [View your user profile](/powerapps/user/view-your-user-profile). If you don’t have the correct permissions, contact your system administrator.
+
+Before users can start using a language pack to display a language, the language pack must be added in your organization.
 
 > [!NOTE]
-> To display the translated labels for the languages imported into an environment from a solution, the language must be added in the environment *before* you import the solution. More information: [Label text doesn’t display in additional languages after import](/powerapps/maker/data-platform/import-update-export-solutions#label-text-doesnt-display-in-additional-languages-after-import)
+> To display the translated labels for the languages imported into an environment from a solution, the language must be added in the environment *before* you import the solution. Learn more in [Label text doesn’t display in additional languages after import](/powerapps/maker/data-platform/import-update-export-solutions#label-text-doesnt-display-in-additional-languages-after-import)
 
-1. Sign in to the Power Platform admin center. 
+You see each language pack installed in your environment, with a check box to the left of each listed language pack.  
 
-1. Select an environment and go to **Settings** > **Product** > **Languages**.
-
-   Here you’ll see each Language Pack installed in your environment, with a check box to the left of each listed Language Pack.  
-
-1. For each Language Pack that you want to provision (use), select the check box next to it. For each Language Pack that you want to unprovision (not use), clear the check box.
+1. For each language pack that you want to provision (use), select the check box next to it. For each language pack that you want to unprovision (not use), clear the check box.
 
    > [!NOTE]
-   >  Additional storage is required for each language you use.  Not using a specific language doesn't uninstall the language or reduce the storage requirement.  Only use languages that you need.
+   >  More storage is required for each language you use. Not using a specific language doesn't uninstall the language or reduce the storage requirement. Only use languages that you need.
 
 1. Select **Apply**.  
 
@@ -63,7 +73,7 @@ Before users can start using a Language Pack to display a language, the Language
 
 ## Select the language to display the user interface and Help  
 
- Each user selects the language to display in an app.  See [Languages tab options](/powerapps/user/set-personal-options#languages-tab-options).
+ Each user selects the language to display in an app. See [Languages tab options](/powerapps/user/set-personal-options#languages-tab-options).
 
 
 
