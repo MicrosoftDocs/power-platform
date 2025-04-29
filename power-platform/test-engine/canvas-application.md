@@ -80,13 +80,13 @@ $env:user1Email = "someone@example.com"
 Use the PAC CLI [pac test run](../developer/cli/reference/tests#pac-test-run) command to run your test plan.
 
 - Path to your test plan file
-- EnvironmentId (For example f4326efd-d0fc-4b9e-a21b-d3355f59d37c)
-- TenantId (For example ad3f05a5-0e5c-494b-9b8e-9dc5c197529a)
+- EnvironmentId (For example 00aa00aa-bb11-cc22-dd33-44ee44ee44ee)
+- TenantId (For example aaaabbbb-0000-cccc-1111-dddd2222eeee)
 
 For example this could be
 
 ```pwsh
-pac test run -p "canvas" -i "testplan.te.yaml" -t ad3f05a5-0e5c-494b-9b8e-9dc5c197529a -e f4326efd-d0fc-4b9e-a21b-d3355f59d37c
+pac test run -p "canvas" -i "testplan.te.yaml" -t aaaabbbb-0000-cccc-1111-dddd2222eeee -e 00aa00aa-bb11-cc22-dd33-44ee44ee44ee
 ```
 
 ### View the results

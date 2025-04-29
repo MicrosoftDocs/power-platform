@@ -34,14 +34,14 @@ These methods can range to include the following scenarios:
 
 Using persistent browser cookies allows for non-interactive execution of subsequent tests. This approach works with the conditional access policies of your environments and allows a quick and less intrusive process to authenticate as different test personas. The browser persistent browser based cookies are stored locally in windows encrypted using  [Windows Data Projection API](/dotnet/standard/security/how-to-use-data-protection) to protect and unprotect the values stored at rest.
 
-During the first run, the user is prompted to enter their credentials interactively. These credentials are then saved securely in the browser's storage state, allowing for  multifactor authentication (MFA).
+During the first run, the user is prompted to enter their credentials interactively. These credentials are then saved securely in the browser's storage state, allowing for multifactor authentication (MFA).
 
 ### Example Command
 
 To run tests using browser-based authentication, you can use the following pac test run command:
 
 ```cmd
-pac test run -p "canvas" -i "testplan.te.yaml" -t ad3f05a5-0e5c-494b-9b8e-9dc5c197529a -e f4326efd-d0fc-4b9e-a21b-d3355f59d37c
+pac test run -p "canvas" -i "testplan.te.yaml" -t aaaabbbb-0000-cccc-1111-dddd2222eeee -e 00aa00aa-bb11-cc22-dd33-44ee44ee44ee
 ```
 
 ### Technical Overview
@@ -65,7 +65,7 @@ Certificate-based authentication is another method that can be used in the Power
 To run tests using certificate-based authentication, you can use the following pac test run command:
 
 ```cmd
-pac test run -p "canvas" -u "dataverse" -a "certstore" -i "testplan.te.yaml" -t ad3f05a5-0e5c-494b-9b8e-9dc5c197529a -e f4326efd-d0fc-4b9e-a21b-d3355f59d37c
+pac test run -p "canvas" -u "dataverse" -a "certstore" -i "testplan.te.yaml" -t aaaabbbb-0000-cccc-1111-dddd2222eeee -e 00aa00aa-bb11-cc22-dd33-44ee44ee44ee
 ```
 
 ### Technical Overview

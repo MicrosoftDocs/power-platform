@@ -61,14 +61,14 @@ $env:user1Email = "someone@example.com"
 Use the PAC CLI [pac test run](../developer/cli/reference/tests#pac-test-run) command to run your test plan.
 
 - Path to your test plan file
-- EnvironmentId (For example f4326efd-d0fc-4b9e-a21b-d3355f59d37c)
-- TenantId (For example ad3f05a5-0e5c-494b-9b8e-9dc5c197529a)
+- EnvironmentId (For example 00aa00aa-bb11-cc22-dd33-44ee44ee44ee)
+- TenantId (For example aaaabbbb-0000-cccc-1111-dddd2222eeee)
 - Url of the page MDA page to test 
 
 For example this could be
 
 ```pwsh
-pac test run -p "mda" -i "testplan.te.yaml" -t ad3f05a5-0e5c-494b-9b8e-9dc5c197529a -e f4326efd-d0fc-4b9e-a21b-d3355f59d37c -d "https://contoso.crm.dynamicss.com/main.aspx?appid=003f3c80-5e44-4cfd-8975-3837fb5a6909&pagetype=custom&name=dev_home_c8017"
+pac test run -p "mda" -i "testplan.te.yaml" -t aaaabbbb-0000-cccc-1111-dddd2222eeee -e 00aa00aa-bb11-cc22-dd33-44ee44ee44ee -d "https://contoso.crm.dynamicss.com/main.aspx?appid=00001111-aaaa-2222-bbbb-3333cccc4444&pagetype=custom&name=dev_home_c8017"
 ```
 
 ## View the results
