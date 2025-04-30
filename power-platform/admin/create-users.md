@@ -481,8 +481,8 @@ To view a stub user's profile in the Power Platform admin center, complete the f
 1. Select a stub user to view the user details.
 ---
 
-    > [!Note]
-    > Refresh user and user diagnostics options are not available for a stub user.
+> [!Note]
+> Refresh user and user diagnostics options are not available for a stub user.
 
 ### Update a user record to reflect changes in Microsoft Entra ID
 
