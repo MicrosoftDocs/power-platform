@@ -13,15 +13,15 @@ ms.date: 02/28/2025
 
 # Understand your security posture and challenges
 
-The core objectives of security teams don't change with the adoption of Power Platform. However, the methods to achieve these objectives evolve. Security teams must continue to prioritize reducing business risk from attacks and ensure that confidentiality, integrity, and availability are embedded in all information systems and data.
+The core objectives of security teams don't change with the adoption of Power Platform. However, the methods to achieve these objectives will evolve. Security teams must continue to prioritize reducing business risk from attacks and ensure that confidentiality, integrity, and availability are embedded in all information systems and data.
 
-Security is the protection of IT systems and networks from theft, damage, or disruption. Power Platform is a cloud offering from Microsoft, which means you own your data, but share some control over the workloads with Microsoft. Therefore, operational and security responsibilities for workloads are split between you and Microsoft.
+Security is the protection of IT systems and networks from theft, damage, or disruption. Power Platform is a cloud offering from Microsoft. You own your data but share control of workloads with Microsoft. Operational and security responsibilities for workloads are split between you and Microsoft.
 
-This diagram illustrates how security responsibilities are distributed between you and Microsoft:
+The following diagram illustrates how security responsibilities are distributed between you and Microsoft.
 
 :::image type="content" source="media/shared-responsibility.png" alt-text="Diagram showing the distribution of security responsibilities shared between the customer and Microsoft." lightbox="media/shared-responsibility.png":::
 
-This article explains the security principles and practices that apply to Power Platform. It also prompts you to assess what you are doing today to secure Power Platform solutions and provides next steps to design your action plan.
+This article explains the security principles and practices that apply to Power Platform. It also prompts you to assess what you are doing today to secure Power Platform solutions, and provides next steps to design your action plan.
 
 ## Microsoft security foundation
 
@@ -31,9 +31,9 @@ Microsoft has made massive investments in security since the mid-2000s. More tha
 
 Microsoft works toward this goal by focusing on tools and capabilities that support the following high level goals:
 
-- Protect everything. Keep your entire organization safe with integrated business security solutions that work well across platforms and cloud environments. This goal includes making your organization's Power Platform solutions part of your protected resources.
-- Simplify the complex. Prioritize the right risks with management tools that make the best use of the human expertise in your company. Include security management of Power Platform business applications in your management tools to avoid adding more complexity.
-- Catch what others miss. Use leading AI, automation, and expertise to find and stop cyberthreats fast and fortify your security position.
+- **Protect everything**. Keep your entire organization safe with integrated business security solutions that work well across platforms and cloud environments. This goal includes making your organization's Power Platform solutions part of your protected resources.
+- **Simplify the complex**. Prioritize the right risks with management tools that make the best use of the human expertise in your company. Include security management of Power Platform business applications in your management tools to avoid adding more complexity.
+- **Catch what others miss**. Use leading AI, automation, and expertise to find and stop cyberthreats fast and fortify your security position.
 
 These security goals drive the innovation in the following Microsoft integrated security products:
 
@@ -155,7 +155,7 @@ A comprehensive security strategy for Power Platform adoption creates a framewor
 > [!div class="nextstepaction"]
 > [Enhance your security posture](security-posture-management.md)
 
-## Resources
+## Related information
 
 - [Low-code security and governance](https://www.microsoft.com/en-us/power-platform/trusted-cloud?msockid=32e5014d245262fc0dd6128a2508631d)
 - [Microsoft compliance](/compliance/)
