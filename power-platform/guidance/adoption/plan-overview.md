@@ -8,7 +8,7 @@ ms.topic: concept-article
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
-ms.date: 04/25/2025
+ms.date: 04/30/2025
 ---
 
 # Plan your Power Platform adoption
@@ -20,4 +20,4 @@ Use the following articles to document your Power Platform adoption plan:
 1. [Define roles and responsibilities](roles.md). Foster collaboration, align initiatives with strategic goals, and ensure compliance and security.
 1. [Evaluate delivery models](delivery-models.md). Consider ways to structure your team and decide what is the best fit for your situation and organization.
 1. [Establish license assignment strategies](license-assignment-strategies.md). Ensure a return on investment, user adoption, and optimized costs.
-1. [Modernize applications with Power Platform](../white-papers/application-modernization.md). Explore the benefits, strategies, and best practices of modernizing applications with Power Platform.
+1. [Modernize applications with Power Platform](application-modernization.md). Explore the benefits, strategies, and best practices of modernizing applications with Power Platform.

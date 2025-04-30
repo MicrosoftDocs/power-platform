@@ -1,16 +1,17 @@
 ---
 title: Application modernization with Power Platform
 description: Explore the benefits, strategies, and best practices of modernizing applications with Microsoft Power Platform.
+#customer intent: As an IT decision-maker, I want to understand how Power Platform can modernize legacy applications so that I can improve operational efficiency and reduce costs.  
 author: robstand
 ms.component: pa-admin
-ms.topic: overview
+ms.topic: concept-article
 ms.date: 01/22/2025
 ms.author: rstand
 ms.reviewer: jhaskett-msft
 ms.custom: bap-template
 ms.subservice: guidance
 contributors:
-    - RobStand
+  - RobStand
 ---
 
 # Application modernization with Power Platform
