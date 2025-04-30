@@ -31,7 +31,7 @@ search.app:
 [!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 [This article is pre-release documentation and is subject to change.]
 
-Connector endpoint filtering allows admins to govern which specific endpoints makers can connect to when building apps, flows, or chatbots. It's configured within a data loss prevention (DLP) policy, and it's exclusively available for six connectors:
+Connector endpoint filtering allows admins to govern which specific endpoints makers can connect to when building apps, flows, or chatbots. It's configured within a data loss prevention (DLP) policy, and it's exclusively available for the following connectors:
 
 - HTTP
 - HTTP with Microsoft Entra ID (AD)
