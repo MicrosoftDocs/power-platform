@@ -39,7 +39,7 @@ Connector endpoint filtering allows admins to govern which specific endpoints ma
 - SQL Server (includes using SQL Server Connector to access Azure Synapse data warehouse)
 - Azure Blob Storage
 - SMTP
-- Desktop flows
+- DesktopFlow - Browser Automation
 
 When a maker tries to connect their app, flow, or chatbot to a blocked endpoint, they encounter a DLP error message.
 
@@ -175,7 +175,7 @@ Allow access to only the Azure subscriptions page within `https://management.azu
 2. Deny `https://management.azure.com/*`
 3. Deny `*`
 
-### Desktop flows
+### DesktopFlow - Browser Automation
 
 This feature lets you control which web pages a desktop flow accesses in Power Automate for desktop. The endpoints are represented in either URL format or web page name format, and you can use wildcards for dynamic URL or page name matching. Validation occurs during "Launch Web Browser" or "Go to web page" actions before a desktop flow proceeds with browser interactions.
 
