@@ -38,10 +38,10 @@ The following [rules](environment-groups.md#rules) can be applied to [environmen
 | 12 | [Sharing agents with Viewer permissions (preview)](managed-environment-sharing-limits.md#agent-sharing-rules-preview) |
 | 13 | [Sharing controls for canvas apps](managed-environment-sharing-limits.md#canvas-app-sharing-rules) |
 | 14 | [Sharing controls for solution-aware cloud flows](managed-environment-sharing-limits.md#solution-aware-cloud-flow-sharing-rules) |
-| 15 | [Solution checker enforcement](managed-environment-solution-checker.md) |
-| 16 | [Unmanaged customizations](../alm/block-unmanaged-customizations.md) |
-| 17 | [Usage insights](managed-environment-usage-insights.md) |
-| 18 | [Sharing data between Copilot Studio and Viva Insights](settings-features.md?&tabs=new#sharing-copilot-studio-agent-data-with-viva-insights) |
+| 15 | [Sharing data between Copilot Studio and Viva Insights](settings-features.md?&tabs=new#sharing-copilot-studio-agent-data-with-viva-insights) |
+| 16 | [Solution checker enforcement](managed-environment-solution-checker.md) |
+| 17 | [Unmanaged customizations](../alm/block-unmanaged-customizations.md) |
+| 18 | [Usage insights](managed-environment-usage-insights.md) |
 
 > [!NOTE]
 > The rules that have “(preview)” in their name are in public preview, while rules without it are considered generally available.
