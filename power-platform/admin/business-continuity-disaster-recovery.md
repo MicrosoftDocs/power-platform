@@ -157,9 +157,9 @@ We recommend that you perform disaster recovery drills or an emergency response 
 
    Disabling self-service disaster recovery deletes all replicated environment data in the paired region. You'll be prompted to confirm the environment's name before proceeding.
 
-### Can I disable self-service DR while in a paired region?
+### Can I disable self-service disaster recovery while in a paired region?
 
-   No, self-service DR cannot be disabled while the environment is in a paired region. You must switch to the primary region first.
+   No, self-service disaster recovery cannot be disabled while the environment is in a paired region. You must switch to the primary region first.
 
 ### Are there any known limitations during a region-wide outage that self-service disaster recovery cannot mitigate?
 
