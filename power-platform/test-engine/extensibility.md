@@ -12,10 +12,6 @@ contributors:
 ---
 # Test Engine Extensibility (preview)
 
-<!-- 
-TODO I'm not immediately understanding what I can do with this information.
- -->
-
 > [!NOTE]
 > [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
 
@@ -23,7 +19,9 @@ This document provides a detailed explanation of the core elements of the Test E
 
 ![Overview diagram of Test Engine extensibility](./media/test-engine-extensibility.png)
 
-<!-- TODO: provide some explanation of this diagram -->
+The extensibility model of Test Engine is based on **[Managed Extensibility Framework (MEF)](/dotnet/framework/mef/)** and allows .Net Assemblies to be created for [autentication](./authentication.md), test [providers](./providers.md) and Power Fx [user defined functions](./powerfx.md#user-defined-functions) and [C# functions](./powerfx-csharp.md). Web based providers are an abstraction on [Playwright](https://playwright.dev/).
+
+Using the `testSettings` [yaml](./yaml.md) you can configure the extensions that are allowed within your tests.
 
 ## Common Features of the Test Engine
 
@@ -39,7 +37,6 @@ The **[Managed Extensibility Framework (MEF)](/dotnet/framework/mef/)** provides
 - **Authentication**: Integrate various authentication mechanisms into the testing framework, including support patterns that need to account for sign in with multifactor authentication or OAuth based authentication.
 - **Providers**: Modules that support specific platforms or technologies, such as [Power Apps Canvas apps](./canvas-application.md) and [Model Driven apps](./model-driven-application.md). These providers enable seamless interaction and testing of applications built on these platforms.
 - **Power Fx Functions**: Allow test steps to be extended support custom Power Fx functions, allowing the creation of sophisticated and tailored test scenarios. These Power Fx function can be defined as [user defined functions](./powerfx.md#user-defined-functions) or extended as custom code using C#.
-
 
 > [!NOTE]
  > - During public preview only MEF [providers](./providers.md) and C# Power Fx module function compiled and signed by Microsoft will be loaded by [pac test run](../developer/cli/reference/test.md#pac-test-run) command.

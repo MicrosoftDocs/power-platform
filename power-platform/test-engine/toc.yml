@@ -3,10 +3,10 @@ items:
   items:
   - name: Overview
     href: overview.md
+  - name: New features
+    href: new-features.md
   - name: Authentication
     href: authentication.md
-  - name: Authentication implementation
-    href: authentication-implementation.md
   - name: How to use Test Engine
     items:
     - name: Test Canvas apps
@@ -17,8 +17,16 @@ items:
       href: dataverse.md
   - name: Yaml format
     href: yaml.md
-  - name: Power Fx functions
-    href: powerfx.md
+  - name: Power Fx
+    items:
+    - name: Power Fx overview
+      href: powerfx.md
+    - name: Power Fx test functions
+      href: powerfx-functions.md
+    - name: Namespaces
+      href: powerfx-namespaces.md
+    - name: Power Fx C# functions
+      href: powerfx-csharp.md
   - name: Providers
     href: providers.md
   - name: Extensibility
@@ -27,9 +35,5 @@ items:
     href: ring-deployment-model.md
   - name: Power Fx Connector and Dataverse simulation
     href: simulation.md
-  - name: Power Fx namespaces
-    href: powerfx-namespaces.md
-  - name: Power Fx C# functions
-    href: powerfx-csharp.md
   - name: Test engine and Playwright
     href: playwright.md

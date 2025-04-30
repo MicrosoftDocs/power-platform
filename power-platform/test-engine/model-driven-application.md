@@ -51,7 +51,7 @@ environmentVariables:
 
 View [Users](yaml.md#users) for more information.
 
-Use the following PowerShell script to store the username and password in your environment variables.
+Use the following PowerShell script to store the username in your environment variables.
 
 ```powershell
 $env:user1Email = "someone@example.com"

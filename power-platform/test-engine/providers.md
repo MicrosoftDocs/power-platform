@@ -16,19 +16,11 @@ contributors:
 > [!NOTE]
 > [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
 
-Initially, the Test Engine was limited to supporting only canvas applications. However, with the introduction of the new provider model, the capabilities is expanded significantly.
-
-## The First Version: Canvas Applications Only
-
-When the Test Engine was first introduced, it was designed to support [canvas applications](./canvas-application.md) exclusively. Canvas applications are a type of app within the Power Platform that allows users to design and build apps by dragging and dropping elements onto a canvas, much like creating a slide in PowerPoint. This approach is highly intuitive and enables rapid development of custom applications.
-
-## The New Provider Model
-
-The version 2.0 provider model expanded the scope of the Test Engine. It now supports not only canvas applications but also [model-driven applications](./model-driven-application.md). Model-driven applications are data-centric apps that are built on top of the Dataverse, which is the underlying data platform for the Power Platform. These applications are typically used for business processes or common data administration tasks and offer a more structured approach compared to canvas apps.
+Initially, the Test Engine was limited to supporting only canvas applications. However, with the introduction of the new provider model, the capabilities is expanded significantly. The current provider model supports not only canvas applications but also [model-driven applications](./model-driven-application.md). Model-driven applications are data-centric apps that are built on top of the Dataverse, which is the underlying data platform for the Power Platform. These applications are typically used for business processes or common data administration tasks and offer a more structured approach compared to canvas apps.
 
 ### Current Providers
 
-1. **Canvas Applications**: As before, the Test Engine continues to support and extend the range of test scenarios for canvas applications.
+1. **Canvas Applications**: The Test Engine continues to support and extend the range of test scenarios for canvas applications.
 2. **Model-Driven Applications**: Test Engine can interact with model-driven applications, including:
    - **Entity Lists**: Lists of records from a specific entity in Dataverse.
    - **Entity Records**: Individual records within an entity.

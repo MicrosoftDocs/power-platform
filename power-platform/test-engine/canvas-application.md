@@ -71,11 +71,13 @@ environmentVariables:
 
 View [Users](yaml.md#users) for more information.
 
-Use the following PowerShell script to store the username and password in your environment variables.
+Use the following PowerShell script to store the username in your environment variables.
 
 ```powershell
 $env:user1Email = "someone@example.com"
 ```
+
+> [!NOTE] the user password is no longer required in an environment variable. Review [authenication](./authentication.md) for supported options.
 
 ### Run the test
 
@@ -98,36 +100,3 @@ pac test run `
 ### View the results
 
 When the tests complete, you can view the results of your test in the `.trx` file located in the output directory. This folder contains any screenshots or videos captured by your tests when `recordVideo` is set to `true` in the test plan yaml.
-
-## Test Engine Canvas Changes
-
-The first preview version of the Test Engine was focused on testing canvas applications only. The updated preview version of Test Engine provides new features to allow for more diverse test types.
-
-### Summary of New Features
-
-<!-- TODO: This section seems outside the scope of testing canvas apps. Does it belong here? Is it mentioned anywhere else? -->
-
-#### Model Driven Application Support
-
-The latest version of the Test Engine now expands Power Apps testing to include support for [Model Driven Applications](model-driven-application.md) (MDA). This enhancement allows testers to create more comprehensive test plans that cover both canvas and MDA.
-
-#### Dataverse Integration
-
-The ability to optionally include Dataverse in your test plans enables the creation of integration tests. This feature allows testers to validate interactions between applications and Dataverse, ensuring data integrity and consistency across the platform.
-
-#### Managed Extensibility Framework
-
-The new Managed Extensibility Framework model allows extra Power Fx actions to be registered. This framework provides a flexible way to extend the capabilities of the Test Engine by adding custom actions that can be used within test plans.
-
-#### User Defined Types and User Defined Functions
-
-The introduction of User Defined Types (UDTs) and User Defined Functions (UDFs) makes test steps more reusable and maintainable. UDTs allow you to define custom data structures, while UDFs enable the creation of custom functions. These features enhance the flexibility and readability of your test plans.
-
-For more information on UDTs and UDFs, review the [PowerFx](./powerfx.md) documentation.
-
-#### New Authentication Model
-
-The new authentication model removes the need for environment user name and password security, replacing it with a new authentication provider model. This model supports scenarios including multifactor authentication, enhancing the security and reliability of the Test Engine.
-
-[!INCLUDE [footer-banner](../includes/footer-banner.md)]
-

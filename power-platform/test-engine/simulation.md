@@ -22,7 +22,7 @@ This approach helps in identifying potential issues and ensuring that the soluti
 
 ## Power Fx Functions
 
-<!-- TODO add some text here to introduce the sections below -->
+The `Preview.SimulateDataverse` and `Preview.SimulateConnector` functions provide important functionality to test the behavior of a Power App intendant of dependancies on the current data stored in Dataverse or actions carries our with connectors. By applying these functions you can test different test case scenarios and avoid hanging the state of the application you are testing.
 
 ### Simulating a Dataverse Query
 

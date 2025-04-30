@@ -20,18 +20,18 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
-  - title: First group
+  - title: Get started
     linkLists:
       - linkListType: overview
         links:
           - text: What is Test Engine?
             url: overview.md
+          - text: New features
+            url: new-features.md
       - linkListType: concept
         links:
           - text: Test Engine Authentication
             url: authentication.md
-          - text: Authentication implementation
-            url: authentication-implementation.md
       - linkListType: how-to-guide
         links:
           - text: Test Canvas apps
@@ -42,7 +42,7 @@ landingContent:
             url: dataverse.md
 
   # Card (optional)
-  - title: Second group
+  - title: References
     linkLists:
       - linkListType: concept
         links:
@@ -54,20 +54,23 @@ landingContent:
             url: providers.md
           - text: Extensibility
             url: extensibility.md
+          - text: Ring deployment model
+            url: ring-deployment-model.md
+          - text: Test engine and Playwright
+            url: playwright.md
 
   # Card
-  - title: Third group
+  - title: Power Fx
     linkLists:
       - linkListType: concept
         links:
-          - text: Ring deployment model
-            url: ring-deployment-model.md
+          - text: Why Power Fx?
+            url: powerfx.md
           - text: Power Fx Connector and Dataverse simulation
             url: simulation.md
           - text: Power Fx namespaces
             url: powerfx-namespaces.md
           - text: Power Fx C# functions
             url: powerfx-csharp.md
-          - text: Test engine and Playwright
-            url: playwright.md
+          
 
