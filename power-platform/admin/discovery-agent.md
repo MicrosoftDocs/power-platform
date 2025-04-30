@@ -6,8 +6,8 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 04/29/2025
 ms.custom: NewPPAC
-author: sericks007
-ms.author: sericks
+author: Greggbarker-ms
+ms.author: grbarker
 ms.reviewer: sericks
 search.audienceType: 
   - admin
