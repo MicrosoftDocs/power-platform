@@ -34,11 +34,11 @@ The event logs that are used to calculate metrics are available for review and d
 
 ## Prerequisites
 
-- [Tenant-level analytics](../tenant-level-analytics.md) must be turned on to make data available for monitoring experiences.
+- [Tenant-level analytics](../tenant-level-analytics.md) must be turned on to make data available for Monitor experiences.
 - You must be assigned to the [system administrator role of the environment](../manage-high-privileged-admin-roles.md#self-elevate-to-the-system-administrator-role) to view the name of resources that belong to the environment.
-- **Optional**: A [Managed Environment](../managed-environment-overview.md) is required to view monitoring recommendations.
+- **Optional**: A [Managed Environment](../managed-environment-overview.md) is required to view Monitor recommendations.
 
-The availability of monitoring health metrics, logs, and recommendations in the Power Platform admin center depends on tenant and environment settings.
+The availability of Monitor health metrics, logs, and recommendations in the Power Platform admin center depends on tenant and environment settings.
 
 | Are tenant-level analytics turned on? | Is the environment a Managed Environment? | Are health metrics available? | Are logs available? | Are recommendations available? |
 |---|---|---|---|---|
@@ -49,17 +49,17 @@ The availability of monitoring health metrics, logs, and recommendations in the 
 
 ## Architecture
 
-To produce health metrics and generate recommendations, Power Platform monitoring experiences require runtime activity. Unused resources don't appear in monitoring experiences.
+To produce health metrics and generate recommendations, Power Platform Monitor experiences require runtime activity. Unused resources don't appear in Monitor experiences.
 
-Admin experiences are available to Power Platform service and Dynamics 365 admins, who can view monitoring data across the tenant. Makers can view data only for resources that they have edit privileges for in the runtime environment. Power Automate doesn't have a monitoring page in the maker portal. However, users can use the [Automation center](/power-automate/automation-center-overview) for a similar experience.
+Admin experiences are available to Power Platform service and Dynamics 365 admins, who can view Monitor data across the tenant. Makers can view data only for resources that they have edit privileges for in the runtime environment. Power Automate doesn't have a monitoring page in the maker portal. However, users can use the [Automation center](/power-automate/automation-center-overview) for a similar experience.
 
-:::image type="content" source="../media/monitoring-architecture.svg" alt-text="Diagram that shows the flow of monitoring data to both a maker and an admin, starting from users in the runtime environment." lightbox="../media/monitoring-architecture.svg":::
+:::image type="content" source="../media/monitoring-architecture.svg" alt-text="Diagram that shows the flow of Monitor data to both a maker and an admin, starting from users in the runtime environment." lightbox="../media/monitoring-architecture.svg":::
 
 ## Purpose of Monitor area of the Power Platform admin center
 
 The purpose of the **Monitor** area of the Power Platform admin center is to bring attention to resources that have degraded operational health and highlight resources that have opportunities for improvement.  
 
-The first resources that appear in the monitoring experience are resources that were created by using Power Platform products like Power Apps or Power Automate. Therefore, the cards initially highlight resources where users experience the following issues:
+The first resources that appear in the Monitor experience are resources that were created by using Power Platform products like Power Apps or Power Automate. Therefore, the cards initially highlight resources where users experience the following issues:
 
 - They face obstacles when they try to access a resource.
 - They have higher wait times to use the resource.
@@ -76,7 +76,7 @@ In the products view, you can compare health metrics across a pool of common res
 1. Review the details pane, which includes time-series charts for each available metric.
 1. **Optional**: If a recommendation is available, select the contextual button in it. You can also share the recommendation with a user.
 
-For resources that are available in the monitoring experience, you can learn more about resource-specific metrics in the maker documentation. The following table shows which resources are currently available.
+For resources that are available in the Monitor experience, you can learn more about resource-specific metrics in the maker documentation. The following table shows which resources are currently available.
 
 | Product | Resource | Availability in the Power Platform admin center | Availability in the maker experience |
 |---|---|---|---|
@@ -93,9 +93,9 @@ For resources that are available in the monitoring experience, you can learn mor
 
 ### How does Power Platform monitoring coexist with Application Insights?
 
-Power Platform monitoring includes recommendations for improving a metric. Application Insights doesn't automatically derive recommendations.
+Power Platform Monitor includes recommendations for improving a metric. Application Insights doesn't automatically derive recommendations.
 
-Power Platform monitoring doesn't require Azure subscriptions.
+Power Platform Monitor doesn't require Azure subscriptions.
 
 Application Insights contains a superset of runtime event logs.
 
