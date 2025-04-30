@@ -59,21 +59,12 @@ Most geographies are typically made up of region pairs with a minimum distance o
 
 Self-service disaster recovery is a Power Platform infrastructure capability that allows customers to replicate their environment across far distances and initiate environment failover between regions in a self-serve manner.
 
-Customers typically have multiple environments of different types created in their tenant. This capability is available specifically for production-type, [Managed Environments](managed-environment-overview.md) and can be turned on for each environment. Currently, this capability isn't available for finance and operations production environments.
-
-## Self-service disaster recovery cost and billing
-
-Environments that activate disaster recovery replicate all environment data between two regions and can fail over between the regions. Replicated data of different storage types, such as Database, Log, and File are added to Dataverse capacity consumed and billed at the same rate as the primary storage.
-
-To use self-serve disaster recovery for an environment, the environment must first be linked to a [pay-as-you-go billing plan](pay-as-you-go-overview.md).
-
-If your environment already uses a pay-as-you-go billing plan, then no further action is needed and replicated capacity is billed to your Azure subscription.
-
-If your environment is configured to draw capacity from your tenant's Dataverse capacity entitlement, then entitled capacity is consumed first, A pay-as-you-go billing plan is still required so you can avoid capacity overages. Learn how to allocate capacity and manage capacity overages through pay-as-you-go billing plans. Learn more in [View usage and billing information](/power-platform/admin/pay-as-you-go-usage-costs).
+Customers typically have multiple environments of different types created in their tenant. This capability is available specifically for production-type.
+In order to turn on self-service disaster recovery the environment must be managed, [Managed Environments](managed-environment-overview.md) and must first be linked to a [pay-as-you-go billing plan](pay-as-you-go-overview.md).
 
 ## Turn on self-service disaster recovery
 
-After you set up billing as outlined above, you can turn on self-service disaster recovery for an environment. This is a one-time action that provisions resources and starts the process of replicating data between the primary location and secondary location. This may take up to 48 hours to complete. Admins receive a notification when the process is complete.
+This is a one-time action that provisions resources and starts the process of replicating data between the primary location and secondary location. This may take up to 48 hours to complete. Admins receive a notification when the process is complete.
 
 Turning on disaster recovery in an environment has no impact on the environment or the data within it.
 
@@ -138,14 +129,13 @@ We recommend that you perform disaster recovery drills or an emergency response 
 ## Frequently Asked Questions
 
 ### What are the costs associated with enabling Self-Service Disaster Recovery
- - Capacity charges will be based on the consumption of the environment's paired region for Database, File, and Log storage types. These costs will be billed at the same rate as the customer's primary storage cost.
- - Capacity consumption will be reflected in the familiar licensing experience within the Power Platform Admin Center (PPAC).
+ - Capacity charges will be based on the consumption of the environment's paired region for Database, File, and Log storage types. 
+ - Capacity consumption will be reflected in the familiar licensing experience within the Power Platform Admin Center (PPAC). Learn more in [View usage and billing information](/power-platform/admin/pay-as-you-go-usage-costs).
  
 ###    How does billing work for Self-Service Disaster Recovery?
-  - To prevent overages or unexpected impacts (such as the creation of new environments), self-service DR requires that the environment be linked to a pay-as-you-go (PAYG) billing plan.
   - If your environment is configured to draw capacity from your tenant's Dataverse capacity entitlement, then entitled capacity is consumed first, A pay-as-you-go billing plan is still required so you can avoid capacity overages.
   - Admins can allocate capacity to the environment, after which the PAYG plan will be billed.
-  - Customers cannot turn off the PAYG plan in the billing experience if self-service DR is turned on. To disable self-service DR, the environment's replication will be deleted first.
+  - Customers cannot turn off the PAYG plan in the billing experience if self-service DR is turned on.
 
 ### Can I switch regions during a regional outage?
    In the case of a regional outage, the system supports failover to the designated secondary region as part of self-service disaster recovery, but it does not allow switching to any other arbitrary regions.
@@ -156,13 +146,13 @@ We recommend that you perform disaster recovery drills or an emergency response 
    - When the self-service DR is active, the capacity graph will display the extra consumption from cross-region replication, with a "Disaster recovery active" tag in the Dataverse capacity summary.
 
 ### How do I disable self-service DR?
-   To disable self-service DR, go to the Disaster Recovery pane and select the option to disable it.
+   To disable self-service Disaster Recovery, go to the Disaster Recovery pane in Power platform admin center and uncheck the Turn on Disaster recovery checkbox.
 
 ### What happens when I disable self-service DR?
    Disabling self-service DR will delete all replicated environment data in the paired region. You'll be prompted to confirm the environment's name before proceeding.
 
-### Can I disable self-service DR while in a secondary region?
-   No, self-service DR cannot be disabled while the environment is in a secondary region. You must switch to the primary region first.
+### Can I disable self-service DR while in a paired region?
+   No, self-service DR cannot be disabled while the environment is in a paired region. You must switch to the primary region first.
       
 ### Are there any known limitations during a region-wide outage that self-service disaster recovery cannot mitigate?
    In the rare event of a region-wide outage, the following scenarios may experience temporary degradation, depending on the severity of the outage.
