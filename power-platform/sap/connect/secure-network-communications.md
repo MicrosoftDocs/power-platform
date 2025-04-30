@@ -106,7 +106,7 @@ This article focuses on setting up the Root CA and SNC certificates.
 
 1. Create an OpenSSL configuration file, `sncCert/extensions.cnf`, for signing:
 
-   ```ini
+   ```cnf
    [ v3_leaf ]
    subjectKeyIdentifier = hash
    authorityKeyIdentifier = keyid,issuer
