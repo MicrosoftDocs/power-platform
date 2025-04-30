@@ -128,10 +128,29 @@ Dismissed recommendations no longer negatively impact the security score, ensuri
 
 Your dismissed recommendations are always accessible, meaning that you can review their history at any time. If circumstances change or you wish to revisit a previously dismissed recommendation, you can easily reactivate it to ensure continuous security optimization.
 
+To dismiss recommendation follow below steps
+- Navigate to security page
+- Select recommendations from active tab you want to dismiss
+- Click **X** to dismiss recommendation
+- select reason from drop down list and click dismiss
+- Recommendation will be moved to dismissed tab
+
+  Make recommendation active again
+  - Navigate to security page
+- Select recommendations from dismissed tab you want to make active
+- click on arrow icon to make recommendation active
+- Recommendation will be moved to active tab
+  
 ## Manage security settings at an environment group level
 Managing Power Platform at scale presents challenges for IT teams overseeing numerous environments. To streamline security governance, administrators can configure security settings at the *environment group* level, ensuring uniform enforcement of policies across all environments within a group.
 
-Currently, security management at environment group is available for **Sharing and IP Firewall** features, with plans to extend support to additional security capabilities in the near future. This structured approach simplifies administration, enhances security, and optimizes large-scale environment management for both startups and enterprises.
+Currently, security management at environment group is available for **Sharing** features, with plans to extend support to additional security capabilities in the near future. This structured approach simplifies administration, enhances security, and optimizes large-scale environment management for both startups and enterprises.
+- Navigate to security page
+- select recommendation
+- select environment group
+- click Manage sharing
+- Select configuration will get applied to all environments in that group and will overwride any existing settings of environment in that group.
+
 
 ## Provide feedback
 
