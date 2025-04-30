@@ -6,6 +6,18 @@
           href: index.yml
         - name: Overview of the Power Platform admin center
           href: admin-documentation.md
+        - name: Environment management
+          items:
+            - name: Environment management capabilities
+              href: environment-management-overview.md
+            - name: Managed security
+              href: security/managed-security.md
+            - name: Managed governance
+              href: managed-governance.md
+            - name: Managed operations
+              href: operations/overview.md
+            - name: Managed availability
+              href: managed-availability.md
         - name: Get started
           items:
             - name: Role of a Power Platform administrator
@@ -196,6 +208,8 @@
                   href: managed-environment-enable.md
                 - name: Environment groups
                   href: environment-groups.md
+                - name: Rules for environment groups
+                  href: environment-groups-rules.md
                 - name: Enable maker welcome content
                   href: welcome-content.md
                 - name: Limit sharing
@@ -246,7 +260,7 @@
                       href: settings-collaboration.md
                     - name: Features
                       href: settings-features.md
-                    - name: Enable languages
+                    - name: Regional and language options
                       href: enable-languages.md
                     - name: Manage privacy and security settings
                       href: settings-privacy-security.md
@@ -462,22 +476,16 @@
                   href: wp-task-automation-powershell.md
                 - name: Automation of tasks with Power Automate
                   href: wp-task-automation-flow.md
-        - name: Managed operations
+        - name: Monitor
           items:
-            - name: Overview
-              href: operations/overview.md
             - name: Monitor page (preview)
               href: monitoring/monitoring-overview.md
             - name: View logs (preview)
               href: monitoring/logs.md
-        - name: Security and governance
+        - name: Security
           items:
-            - name: Security and governance
-              href: security.yml
             - name: Overview of Power Platform security
               href: security/overview.md
-            - name: Managed security
-              href: security/managed-security.md
             - name: Security page
               items:
               - name: Overview
@@ -536,6 +544,8 @@
                   href: continuous-access-evaluation.md
                 - name: Control access of TDS endpoint
                   href: control-tds-settings.md
+                - name: Configure the SameSite attribute for session cookies
+                  href: samesite-cookie-mgmt.md
                 - name: Environment security
                   items:
                     - name: Control user access to environments
@@ -544,6 +554,10 @@
                       href: cross-tenant-restrictions.md
                     - name: Configure content security policy
                       href: content-security-policy.md
+                - name: Advanced connector policies (preview)
+                  items: 
+                    - name: Overview
+                      href: advanced-connector-policies.md
                 - name: Data policies
                   items:
                     - name: Overview
@@ -588,16 +602,12 @@
                       href: /microsoft-copilot-studio/admin-data-loss-prevention
                 - name: Configure column-level security
                   items:
-                    - name: Overview
+                    - name: Column-level security
                       href: field-level-security.md
-                    - name: Set permissions for a column
-                      href: set-up-security-permissions-field.md
-                    - name: Enable or disable column security
-                      href: enable-disable-security-field.md
-                    - name: Add teams or users to column security profile
-                      href: add-teams-users-field-security-profile.md
                     - name: Create and manage masking rules (preview)
                       href: create-manage-masking-rules.md
+                    - name: Column-level security example
+                      href: column-level-security-example.md
                 - name: Teams and team templates
                   items:
                     - name: Manage teams
@@ -1141,6 +1151,8 @@
               href: unified-experience/tutorial-copy-lifecycle-services-environment-unified-environment.md
             - name: "Tutorial: Perform a transaction-less copy between environments"
               href: unified-experience/tutorial-perform-transactionless-copy.md
+            - name: "Tutorial: Back up and restore unified environment"
+              href: unified-experience/tutorial-backup-restore-unified-environment.md
             - name: "Admin trials for finance and operations apps"
               href: unified-experience/admin-trials.md
         - name: Performance tuning and optimization

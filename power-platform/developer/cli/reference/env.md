@@ -5,7 +5,6 @@ keywords: "pac cli"
 ms.subservice: developer
 author: laneswenka
 ms.author: laswenka
-ms.date: 1/16/2025
 ms.reviewer: jdaly
 ms.topic: generated-reference
 contributors: 
@@ -27,7 +26,7 @@ Work with your Dataverse organization.
 |Command|Description|
 |---------|---------|
 |[pac env fetch](#pac-env-fetch)|Performs FetchXML query against Dataverse|
-|[pac env list](#pac-env-list)|Lists all of the Dataverse organizations the user has access to|
+|[pac env list](#pac-env-list)|List all Dataverse environments from Global Discovery Service (GDS).|
 |[pac env list-settings](#pac-env-list-settings)|List environment settings|
 |[pac env select](#pac-env-select)|Select default organization for current authentication profile.|
 |[pac env update-settings](#pac-env-update-settings)|Update environment settings|
@@ -59,7 +58,7 @@ File with FetchXML query to run
 
 ## pac env list
 
-Lists all of the Dataverse organizations the user has access to
+List all Dataverse environments from Global Discovery Service (GDS).
 
 [!INCLUDE [env-list-intro](includes/env-list-intro.md)]
 

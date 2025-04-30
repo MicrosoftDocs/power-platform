@@ -3,9 +3,10 @@ title: Power Platform environments overview
 description: Learn about Power Platform environments and how to use them.
 author: sericks007
 ms.topic: conceptual
-ms.date: 02/12/2025
+ms.date: 04/24/2025
 ms.reviewer: sericks
 ms.subservice: admin
+ms.custom: NewPPAC
 ms.author: sericks
 contributors:
   - marcelbf
@@ -111,24 +112,33 @@ You can create environments for different purposes. A trial environment is for t
 
 ## Manage environments in the Power Platform admin center
 
-You can view and manage your environments on the **Environments** page in the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+You can view and manage your environments in the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
-> [!div class="mx-imgBorder"]
-> ![Environment list.](media/environment-list.png "Environment list")
+### [New admin center](#tab/new)
 
-You can sort and search the list of environments; this is useful if you have a large number of environments to manage.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. On the **Environments** page, select an environment.
+1. Use the **Sort** or **Filter** options to organize the list of environments. These options are helpful when managing a large number of environments.
+
+### [Classic admin center](#tab/classic)
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Environments**.
+1. On the **Environments** page, select an environment.
+1. Use the **Sort** or **Filter** options to organize the list of environments. These options are helpful when managing a large number of environments.
+
+---
 
 ### Environment details
 
-Select an environment to view the details of that environment, including the URL, region it's hosted in, and version. Select **See all** to see more environment details.
+Select an environment to view the details of that environment, including the URL, type, current state, region it's hosted in.
 
-> [!div class="mx-imgBorder"]
-> ![Environment details.](media/environment-details-see-all.png "Environment details")
+In the Details pane:
 
-Select **Edit** to review and edit environment details.
-
-> [!div class="mx-imgBorder"]
-> ![More environment details.](media/environment-details-more.png "More environment details")
+- Select **See all** to see the environment details.
+- Select **Edit** to review and edit the environment details.
 
 ## Environment location
 
@@ -178,19 +188,23 @@ Environment history gives admins a timeline of the full environment lifecycle fr
 
 To see the environment history:
 
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as an admin.
-
-2. Select **Environments**, and then select an environment from the list.
-
-3. On the command bar, select **History**.
-
-:::image type="content" source="media/environment-history-data.png" alt-text="Environment history data":::
+### [New admin center](#tab/new)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. In the **Environments** page, select an environment.
+1. Select **History** in the command bar.
+   
+### [Classic admin center](#tab/classic)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, **Environments**.
+1. In the **Environments** page, select an environment.
+1. Select **History** in the command bar.
+---
 
 > [!NOTE]
 >
 > - Some actions such as Edit shows the edit as an action but not details of the action.
-> - Once an environment is completely deleted, environment history is also deleted. So, it might not be possible to know who deleted an environment after it's been hard deleted.
-
-### Related content
+> - Once an environment is deleted, environment history is also deleted. So, it might not be possible to know who deleted an environment after it's been hard deleted.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

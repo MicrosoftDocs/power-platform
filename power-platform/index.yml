@@ -1,18 +1,18 @@
 ### YamlMime:Hub
 
 title: Microsoft Power Platform documentation # < 60 chars
-summary: Discover how to make the most of Microsoft Power Platform products with online training courses, docs, and videos covering product capabilities and how-to guides. Learn how to quickly and easily build custom apps using Power Apps, automate workflows to improve business productivity using Power Automate, analyze data for insights using Power BI, and rapidly design, configure, and publish modern websites using Power Pages.
+summary: Discover how to make the most of Microsoft Power Platform products with online training courses, docs, and videos covering product capabilities and how-to guides. Learn how to quickly and easily build AI-driven agents with Copilot Studio, custom apps using Power Apps, automate workflows to improve business productivity using Power Automate, analyze data for insights using Power BI, and rapidly design, configure, and publish modern websites using Power Pages.
 # brand: aspnet | azure | dotnet | dynamics | m365 | office | sql | windows | visual-studio | xamarin
 brand: dynamics
 
 metadata:
   title: Official Microsoft Power Platform documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: Use Microsoft Power Platform to analyze data, build custom apps, automate workflows, build websites with Power BI, Power Apps, Power Automate, and Power Pages. # Required; article description that is displayed in search results. < 160 chars.
+  description: Use Microsoft Power Platform to analyze data, build AI-driven agents and custom apps, automate workflows, build websites with Copilot Studio, Power BI, Power Apps, Power Automate, and Power Pages. # Required; article description that is displayed in search results. < 160 chars.
 
   ms.topic: hub-page # Required
   author: tapanm-MSFT #Required; your GitHub user alias, with correct capitalization.
   ms.author: tapanm #Required; microsoft alias of author; optional team alias.
-  ms.date: 09/05/2024 #Required; mm/dd/yyyy format.
+  ms.date: 04/25/2025 #Required; mm/dd/yyyy format.
   hide_bc: false
 
 highlightedContent:
@@ -37,8 +37,18 @@ highlightedContent:
 
 productDirectory:
   title: Power Platform products # < 60 chars (Optional; Remove if not applicable.)
-  summary: Use Microsoft Power Platform to build apps using Power Apps, automate tasks using Power Automate, analyze data using Power BI, and create websites using Power Pages. # < 160 chars (Optional; Remove if not applicable.)
+  summary: Use Microsoft Power Platform to build AI-driven agents using Copilot Studio, apps using Power Apps, automate tasks using Power Automate, analyze data using Power BI, and create websites using Power Pages. # < 160 chars (Optional; Remove if not applicable.)
   items:
+  - title: Copilot Studio
+    imageSrc: "media/hub-page/copilot-studio.svg"
+    summary: Learn how to extend or create your own AI-driven copilot experiences.
+    links:
+    - url: /microsoft-copilot-studio
+      text: Copilot Studio documentation
+    - url: /training/browse/?expanded=power-platform&products=microsoft-copilot-studio
+      text: Copilot Studio training
+    - url: https://www.youtube.com/@MicrosoftCopilotStudio
+      text: Copilot Studio videos
   - title: Power Apps
     imageSrc: "media/hub-page/power-apps.svg"
     summary: Learn how to quickly build modern low-code apps for business challenges in your organization.
@@ -79,14 +89,6 @@ productDirectory:
       text: Power Pages training
     - url: /power-pages/training-videos
       text: Power Pages videos   
-  - title: Microsoft Copilot Studio
-    imageSrc: "media/hub-page/copilot-studio.svg"
-    summary: Learn how to extend or create your own AI-driven copilot experiences.
-    links:
-    - url: /microsoft-copilot-studio
-      text: Copilot Studio documentation
-    - url: /training/paths/work-power-virtual-agents
-      text: Copilot Studio training  
     
 tools:
   title: Power Platform capabilities 
@@ -129,9 +131,9 @@ additionalContent:
           summary: "Learn about developing apps and services in Power Platform using code"
           url: ./developer/index.yml
         # Card
-        - title: Licensing
-          summary: "Understand licensing across Power Platform products and services"
-          url: ./admin/pricing-billing-skus.md
+        - title: Architecture Center
+          summary: "Guidance for architecting solutions with Power Platform and Copilot Studio using established patterns and best practices"
+          url: ./architecture/index.yml
         # Card
         - title: Well-Architected
           summary: "Guiding principles, strategies, and tools to help make informed decisions about the design, planning, and implementation of Power Platform workloads"

@@ -27,11 +27,23 @@ In this article, learn about all the formulas available with [functions](/power-
 
 **[Acot](reference/function-trig.md)** – Returns the arccotangent of a number, in radians.
 
+**[AddColumns](reference/function-table-shaping.md)** – Returns a table with [columns](/power-apps/maker/canvas-apps/working-with-tables#columns) added.
+
+**[AIClassify](reference/function-ai.md)** – Classifies text into one or more of categories.
+
+**[AIExtract](reference/function-ai.md)** – Extracts specified entities such as registration numbers, phone numbers, or names of people.
+
+**[AIReply](reference/function-ai.md)** – Drafts a reply to the message that you provide.
+
+**[AISentiment](reference/function-ai.md)** – Detects the sentiment of the text that you provide.
+
+**[AISummarize](reference/function-ai.md)** – Summarizes the text that you provide.
+
+**[AITranslate](reference/function-ai.md)** – Translates text from another language.
+
 **[And](reference/function-logicals.md)** – Boolean logic AND. Returns **true** if all arguments are **true**. You can also use the [**&&** operator](reference/operators.md).
 
 **[Asin](reference/function-trig.md)** – Returns the arcsine of a number, in radians.
-
-**[Assert](reference/function-assert.md)** – Evaluates to true or false in a test.
 
 **[AsType](reference/function-astype-istype.md)** – Treats a record reference as a specific table type.
 
@@ -51,6 +63,8 @@ In this article, learn about all the formulas available with [functions](/power-
 
 **[Char](reference/function-char.md)** – Translates a character code into a string.
 
+**[Clear](reference/function-clear-collect-clearcollect.md)** – Deletes all data from a [collection](/power-apps/maker/canvas-apps/working-with-data-sources#collections).
+
 **[Coalesce](reference/function-isblank-isempty.md)** – Replaces _blank_ values while leaving non-_blank_ values unchanged.
 
 **[Collect](reference/function-clear-collect-clearcollect.md )** – Creates a collection or adds data to a data source.
@@ -65,11 +79,9 @@ In this article, learn about all the formulas available with [functions](/power-
 
 **[ColumnNames](reference/function-columnnames-column.md)** – Retrieves column names and values from an [Untyped object data type](untyped-object.md).
 
+**[Concat](reference/function-concatenate.md)** – Concatenates strings in a data source.
+
 **[Concatenate](reference/function-concatenate.md)** – Concatenates strings.
-
-**[Concurrent](reference/function-concurrent.md)** – Evaluates multiple formulas concurrently with one another.
-
-**[Copy](reference/function-copy.md)** – Copies text to the clipboard on the device where the app is running.
 
 **[Count](reference/function-table-counts.md)** – Counts table records that contain numbers.
 
@@ -84,8 +96,6 @@ In this article, learn about all the formulas available with [functions](/power-
 **[CountRows](reference/function-table-counts.md)** – Counts table records.
 
 ## D
-
-**[DataSourceInfo](reference/function-datasourceinfo.md)** – Provides information about a data source.
 
 **[Date](reference/function-date-time.md)** – Returns a date/time value, based on **Year**, **Month**, and **Day** values.
 
@@ -103,11 +113,13 @@ In this article, learn about all the formulas available with [functions](/power-
 
 **[Dec2Hex](reference/function-hexdec.md)** – Convert a number to a hexadecimal text string.
 
+**[Decimal](reference/function-value.md)** – Converts a string to a [decimal number](data-types.md#decimal-numbers).
+
 **[Degrees](reference/function-trig.md)** – Converts radians to degrees.
 
-**[Disable](reference/function-enable-disable.md)** – Disables a signal, such as **[Location](reference/signals.md)** for reading the GPS.
-
 **[Distinct](reference/function-distinct.md)** – Summarizes records of a table, removing duplicates.
+
+**[DropColumns](reference/function-table-shaping.md)** – Returns a table with one or more columns removed.
 
 ## E
 
@@ -125,8 +137,6 @@ In this article, learn about all the formulas available with [functions](/power-
 
 **[exactin](reference/operators.md#in-and-exactin-operators)** – Checks if a text string is contained within another text string or table, case dependent. Also used to check if a record is in a table.
 
-**[Exit](reference/function-exit.md)** – Exits the currently running app and optionally signs out the current user.
-
 **[Exp](reference/function-numericals.md)** – Returns _e_ raised to a power.
 
 ## F
@@ -139,6 +149,8 @@ In this article, learn about all the formulas available with [functions](/power-
 
 **[FirstN](reference/function-first-last.md)** – Returns the first set of records (N records) of a table.
 
+**[Float](reference/function-value.md)** – Converts a string to a [floating point number](data-types.md#floating-point-numbers).
+
 **[ForAll](reference/function-forall.md)** – Calculates values and performs actions for all records of a table.
 
 ## G
@@ -149,8 +161,6 @@ In this article, learn about all the formulas available with [functions](/power-
 
 **[Hex2Dec](reference/function-hexdec.md)** – Convert a hexadecimal text string to a number.
 
-**[Host](reference/object-host.md)** – Provides information about the current host running the app.
-
 **[Hour](reference/function-datetime-parts.md)** – Returns the hour portion of a date/time value.
 
 ## I
@@ -158,6 +168,7 @@ In this article, learn about all the formulas available with [functions](/power-
 **[If](reference/function-if.md)** – Returns one value if a condition is true and another value if not.
 
 **[IfError](reference/function-iferror.md)** – Detects errors and provides an alternative value or takes action.
+
 **[in](reference/operators.md#in-and-exactin-operators)** – Checks if a text string is contained within another text string or table, case independent. Also used to check if a record is in a table.
 
 **[Index](reference/function-first-last.md)** – Returns a record from a table based on ordered position.
@@ -168,6 +179,8 @@ In this article, learn about all the formulas available with [functions](/power-
 
 **[IsBlankOrError](reference/function-iferror.md)** – Checks for a [blank](reference/function-isblank-isempty.md) value or error.
 
+**[IsEmpty](reference/function-isblank-isempty.md)** – Checks for an empty table.
+
 **[IsError](reference/function-iferror.md)** – Checks for an error.
 
 **[IsMatch](reference/function-ismatch.md)** – Checks a string against a pattern. Regular expressions can be used.
@@ -176,7 +189,11 @@ In this article, learn about all the formulas available with [functions](/power-
 
 **[IsToday](reference/function-now-today-istoday.md)** – Checks whether a date/time value is sometime today in the user's time zone.
 
-**[IsUTCToday](reference/function-now-today-istoday.md)** – Checks whether a date/time value is sometime today in Coordinated Universal Time (UTC).
+**[IsType](reference/function-astype-istype.md)** – Checks whether a record reference refers to a specific table type.
+
+## J
+
+**[JSON](reference/function-json.md)** – Generates a JSON text string for a table, a record, or a value.
 
 ## L
 
@@ -185,8 +202,6 @@ In this article, learn about all the formulas available with [functions](/power-
 **[Last](reference/function-first-last.md)** – Returns the last record of a table.
 
 **[LastN](reference/function-first-last.md)** – Returns the last set of records (N records) of a table.
-
-**[Launch](reference/function-param.md)** – Launches a webpage or a canvas app.
 
 **[Left](reference/function-left-mid-right.md)** – Returns the left-most portion of a string.
 
@@ -220,8 +235,6 @@ In this article, learn about all the formulas available with [functions](/power-
 
 ## N
 
-**[Navigate](reference/function-navigate.md)** – Changes which screen is displayed.
-
 **[Not](reference/function-logicals.md)** – Boolean logic NOT. Returns **true** if its argument is **false**, and returns **false** if its argument is **true**. You can also use the [**!** operator](reference/operators.md).
 
 **[Now](reference/function-now-today-istoday.md)** – Returns the current date/time value in the user's time zone.
@@ -232,15 +245,11 @@ In this article, learn about all the formulas available with [functions](/power-
 
 ## P
 
-**[Param](reference/function-param.md)** – Access parameters passed to a canvas app when launched.
-
 **[Parent](reference/operators.md#self-and-parent-operators)** – Provides access to a container control's properties.
 
 **[ParseJSON](reference/function-parsejson.md)** – Converts JSON document represented as text to an [Untyped object](untyped-object.md) value.
 
 **[Patch](reference/function-patch.md)** – Modifies or creates a record in a data source, or merges records outside of a data source.
-
-**[PDF](reference/function-pdf.md)** – Export contents from the current screen to an object for use in multiple scenarios.
 
 **[Pi](reference/function-trig.md)** – Returns the number &pi;.
 
@@ -258,19 +267,13 @@ In this article, learn about all the formulas available with [functions](/power-
 
 **[RandBetween](reference/function-rand.md)** – Returns a pseudo-random number between two numbers.
 
-**[RecordInfo](reference/function-recordinfo.md)** – Provides information about a record of a data source.
-
-**[Relate](reference/function-relate-unrelate.md)** – Relates records of two tables through a one-to-many or many-to-many relationship.
+**[Refresh](reference/function-refresh.md)** – Refreshes the records of a data source.
 
 **[Remove](reference/function-remove-removeif.md)** – Removes one or more specific records from a data source.
 
 **[Replace](reference/function-replace-substitute.md)** – Replaces part of a string with another string, by starting position of the string.
 
-**[RequestHide](reference/function-requesthide.md)** – Hides a SharePoint form.
-
-**[Reset](reference/function-reset.md)** – Resets an input control to its default value, discarding any user changes.
-
-**[Revert](reference/function-revert.md)** – Reloads and clears errors for the records of a data source.
+**[RenameColumns](reference/function-table-shaping.md)** – Renames columns of a table.
 
 **[RGBA](reference/function-colors.md)** – Returns a color value for a set of red, green, blue, and alpha components.
 
@@ -292,17 +295,17 @@ In this article, learn about all the formulas available with [functions](/power-
 
 **[Sequence](reference/function-sequence.md)** – Generate a table of sequential numbers, useful when iterating with **ForAll**.
 
-**[SendAppNotification (preview)](reference/function-send-app-notification.md)** – Send an in-app notification with optional actions to a recipient.
-
 **[Set](reference/function-set.md )** – Sets the value of a global variable.
 
-**[ShowHostInfo](reference/showhostinfo.md)** – Displays information to the user in the app. 
+**[ShowColumns](reference/function-table-shaping.md)** – Returns a table with only selected columns.
 
 **[Shuffle](reference/function-shuffle.md)** – Randomly reorders the records of a table.
 
 **[Sin](reference/function-trig.md)** – Returns the sine of an angle specified in radians.
 
 **[Sort](reference/function-sort.md)** – Returns a sorted table based on a formula.
+
+**[SortByColumns](reference/function-sort.md)** – Returns a sorted table based on one or more columns.
 
 **[Split](reference/function-split.md)** – Splits a text string into a table of substrings.
 
@@ -315,6 +318,8 @@ In this article, learn about all the formulas available with [functions](/power-
 **[Substitute](reference/function-replace-substitute.md)** – Replaces part of a string with another string, by matching strings.
 
 **[Sum](reference/function-aggregates.md)** – Calculates the sum of a table expression or a set of arguments.
+
+**[Summarize](reference/function-summarize.md)** – Groups records by selected columns and summarizes the remainder.
 
 **[Switch](reference/function-if.md)** – Matches with a set of values and then evaluates a corresponding formula.
 
@@ -348,11 +353,7 @@ In this article, learn about all the formulas available with [functions](/power-
 
 ## U
 
-**[Ungroup](reference/function-groupby.md)** – Removes a grouping.
-
 **[UniChar](reference/function-char.md)** – Translates a Unicode code into a string.
-
-**[Unrelate](reference/function-relate-unrelate.md)** – Unrelates records of two tables from a one-to-many or many-to-many relationship.
 
 **[Upper](reference/function-lower-upper-proper.md)** – Converts letters in a string of text to all uppercase.
 
@@ -365,6 +366,10 @@ In this article, learn about all the formulas available with [functions](/power-
 **[VarP](reference/function-aggregates.md)** – Returns the variance of its arguments.
 
 ## W
+
+**[Weekday](reference/function-datetime-parts.md)** – Retrieves the weekday portion of a date/time value.
+
+**[WeekNum](reference/function-weeknum.md)** – Returns the week number of a date/time value.
 
 **[With](reference/function-with.md)** – Calculates values and performs actions for a single record, including inline records of named values.
 
