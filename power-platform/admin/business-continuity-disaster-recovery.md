@@ -20,7 +20,7 @@ contributors:
 
 Businesses expect their applications and customer data to be protected and resilient during unavoidable outages and disruptions. It's important to have a documented business continuity plan that aims to minimize the effects of outages. Be sure the plan includes stakeholders, processes, and specific steps to be taken to recover and resume operations.
 
-Microsoft provides business continuity and disaster recovery (BCDR) capabilities to all [production type environments](environments-overview.md) in Dynamics 365 and Power Platform software as a service (SAAS) applications. This article describes details and practices Microsoft takes to ensure your production data is resilient during outages.
+Microsoft provides business continuity and disaster recovery capabilities to all [production type environments](environments-overview.md) in Dynamics 365 and Power Platform software as a service (SAAS) applications. This article describes details and practices Microsoft takes to ensure your production data is resilient during outages.
 
 The diagram shows a typical architecture of a geography that serves a single or multiple countries/regions. Although the geography location is all your Power Platform administrators need to be concerned with, within the geography, Microsoft deploys more infrastructure to provide scale and added protection for your data.
 
@@ -60,6 +60,7 @@ Most geographies are typically made up of region pairs with a minimum distance o
 Self-service disaster recovery is a Power Platform infrastructure capability that allows customers to replicate their environment across far distances and initiate environment failover between regions in a self-serve manner.
 
 Customers typically have multiple environments of different types created in their tenant. This capability is available specifically for production-type.
+
 In order to turn on self-service disaster recovery the environment must be managed, [Managed Environments](managed-environment-overview.md) and must first be linked to a [pay-as-you-go billing plan](pay-as-you-go-overview.md).
 
 ## Turn on self-service disaster recovery
@@ -110,7 +111,7 @@ We recommend performing drills on a copy of a production environment, since this
 
 You would choose this option during an emergency, that is, when the primary region has sustained an outage and access to environments or data isn't possible. If you choose this option, the environment fails without copying any more data other than the data that has been replicated before the outage occurred.
 
-When you perform an emergency response, you see the amount of data loss represented in time, which you can compare to your recovery point objective (RPO) if you determine that it's acceptable and you choose to continue. The environment operates in a Running state until the disaster recovery is complete, and the environment is back to normal operation from the secondary region.
+When you perform an emergency response, you see the amount of data loss represented in time, which you can compare to your recovery point objective if you determine that it's acceptable and you choose to continue. The environment operates in a Running state until the disaster recovery is complete, and the environment is back to normal operation from the secondary region.
 
 ## Switch back to primary region
 
@@ -128,10 +129,10 @@ We recommend that you perform disaster recovery drills or an emergency response 
 
 ## Frequently Asked Questions
 
-### What are the costs associated with enabling self-service disaster recovery
+### What are the costs associated with enabling self-service disaster recovery?
 
 - Capacity charges will be based on the consumption of the environment's paired region for Database, File, and Log storage types.
-- Capacity consumption will be reflected in the familiar licensing experience within the Power Platform Admin Center (PPAC). Learn more in [View usage and billing information](/power-platform/admin/pay-as-you-go-usage-costs).
+- Capacity consumption will be reflected in the familiar licensing experience within the Power Platform Admin Center. Learn more in [View usage and billing information](/power-platform/admin/pay-as-you-go-usage-costs).
 
 ### How does billing work for self-service disaster recovery?
 
@@ -166,8 +167,9 @@ We recommend that you perform disaster recovery drills or an emergency response 
    In the rare event of a region-wide outage, the following scenarios may experience temporary degradation, depending on the severity of the outage.
 
 - Power Automate flows impacted by the regional outage will not recover through self-service disaster recovery and will remain unavailable until the primary region is restored.
-- Copilot Studio conversation requests can fail until Microsoft restores the service in the primary region.
-- In Dynamics 365, analytics and automation in Sales, real-time updates in Customer Insights, and case or knowledge base access in Customer Service may be unavailable.
-- Under field service, Resource Scheduling Optimization (RSO), will be impacted during a regional outage. For AI workloads, training and predictive analytics can fail in the secondary region.
-- Connectors can have recovery issues, when dependent on external systems like SharePoint or SQL.D365 Sales: Analytics, reporting, and functions dependent on automation (such as sales forecasting) will be unavailable.
-- Finance and operations (FNO) products are not currently supported for self-serve disaster recovery during regional outages.
+- Copilot Studio conversation requests may fail until Microsoft restores the service in the primary region.
+- In Dynamics 365, analytics and automation in Sales, real-time updates in Customer Insights, and case or knowledge base access in customer service may be unavailable.
+- Under field service, Resource Scheduling Optimization (RSO), will be impacted during a regional outage. For AI workloads, training and predictive analytics may fail in the secondary region.
+- Connectors may have recovery issues, when dependent on external systems like SharePoint or SQL.
+- Dynamics 365 Sales: Analytics, reporting, and functions dependent on automation (such as sales forecasting) will be unavailable.
+- Finance and operations products are not currently supported for self-serve disaster recovery during regional outages.
