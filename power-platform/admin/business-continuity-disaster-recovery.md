@@ -166,10 +166,10 @@ We recommend that you perform disaster recovery drills or an emergency response 
 
    In the rare event of a region-wide outage, the following scenarios may experience temporary degradation, depending on the severity of the outage.
 
-- Power Automate flows impacted by the regional outage will not recover through self-service disaster recovery and will remain unavailable until the primary region is restored.
+- Power Automate flows impacted by the regional outage may not recover through self-service disaster recovery and will remain unavailable until the primary region is restored.
 - Copilot Studio conversation requests may fail until Microsoft restores the service in the primary region.
 - In Dynamics 365, analytics and automation in Sales, real-time updates in Customer Insights, and case or knowledge base access in customer service may be unavailable.
-- Under field service, Resource Scheduling Optimization (RSO), will be impacted during a regional outage. For AI workloads, training and predictive analytics may fail in the secondary region.
+- Under field service, Resource Scheduling Optimization (RSO), may be impacted during a regional outage. For AI workloads, training and predictive analytics may fail in the secondary region.
 - Connectors may have recovery issues, when dependent on external systems like SharePoint or SQL.
 - Dynamics 365 Sales: Analytics, reporting, and functions dependent on automation (such as sales forecasting) will be unavailable.
 - Finance and operations products are not currently supported for self-serve disaster recovery during regional outages.
