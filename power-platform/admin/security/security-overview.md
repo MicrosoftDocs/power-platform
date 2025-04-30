@@ -4,7 +4,7 @@ description: Learn how to manage security in the Power Platform admin center by 
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/29/2025
+ms.date: 04/30/2025
 ms.custom: NewPPAC
 author: matapg007
 ms.author: matgupta
@@ -128,29 +128,44 @@ Dismissed recommendations no longer negatively impact the security score, ensuri
 
 Your dismissed recommendations are always accessible, meaning that you can review their history at any time. If circumstances change or you wish to revisit a previously dismissed recommendation, you can easily reactivate it to ensure continuous security optimization.
 
-To dismiss recommendation follow below steps
-- Navigate to security page
-- Select recommendations from active tab you want to dismiss
-- Click **X** to dismiss recommendation
-- select reason from drop down list and click dismiss
-- Recommendation will be moved to dismissed tab
+To dismiss a recommendation, complete the following steps.
 
-  Make recommendation active again
-  - Navigate to security page
-- Select recommendations from dismissed tab you want to make active
-- click on arrow icon to make recommendation active
-- Recommendation will be moved to active tab
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Security**.
+1. In the **Security** pane, select **Overeview**.
+1. The **Overview** page appears. Scroll down to the **Recommendations** section.
+1. In the **Active** tab, select the recommendations that you want to dismiss.
+1. Select the **X** icon to dismiss the recommendation.
+1. The Dismiss window is displayed. Select a reason for dismissing the recommendation from the dropdown list. Then select **Dismiss**.
+1. The recommendation moves to the **Dismissed** tab.
+
+To make a recommendation active again, complete the following steps.
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Security**.
+1. In the **Security** pane, select **Overeview**.
+1. The **Overview** page appears. Scroll down to the **Take action to increase your security score** section.
+1. Select the **Dismissed** tab.
+1. Select the recommendation that you want to make active.
+1. Select the **Arrows** icon to make the recommendation active. The recommendation moves to the **Active** tab.
   
 ## Manage security settings at an environment group level
 Managing Power Platform at scale presents challenges for IT teams overseeing numerous environments. To streamline security governance, administrators can configure security settings at the *environment group* level, ensuring uniform enforcement of policies across all environments within a group.
 
-Currently, security management at environment group is available for **Sharing** features, with plans to extend support to additional security capabilities in the near future. This structured approach simplifies administration, enhances security, and optimizes large-scale environment management for both startups and enterprises.
-- Navigate to security page
-- select recommendation
-- select environment group
-- click Manage sharing
-- Select configuration will get applied to all environments in that group and will overwride any existing settings of environment in that group.
+Currently, security management at the environment group level is available for **Sharing** features, with plans to extend support to additional security capabilities in the near future. This structured approach simplifies administration, enhances security, and optimizes large-scale environment management for both startups and enterprises.
 
+To configure security settings at the environment group level, complete the following steps.
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Security**.
+1. In the **Security** pane, select **Overeview**.
+1. The **Overview** page appears. Scroll down to the **Take action to increase your security score** section.
+1. Select a recommendation.
+1. In the pane that is displayed, select the **Environment groups** tab and the **Environments** tab to select the environment groups or environments to which you want the security setting applied.
+1. Select the **Manage sharing** button.
+
+    > [!Note]
+    > The name of the button is determined by the security setting you're applying. In this specific example, we're applying a **Sharing** security setting, that's why **Manage sharing** is the name of the button mentioned in this step.
 
 ## Provide feedback
 
