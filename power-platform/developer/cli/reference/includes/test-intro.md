@@ -9,4 +9,4 @@
 > [!NOTE]
 > With pac cli version 1.27, the `pac tests` command was changed to `pac test`. `tests` will continue to work, but we recommend using `test` going forward.
 
-[Learn more about test engine](/power-apps/developer/test-engine/overview)
+[Learn more about test engine (preview)](../../../../test-engine/overview.md)
