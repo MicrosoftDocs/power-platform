@@ -4,7 +4,7 @@ description: Learn how to manage compliance in the Power Platform admin center.
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/30/2025
+ms.date: 03/21/2025
 ms.custom: NewPPAC
 author: matapg007
 ms.author: matgupta
@@ -19,11 +19,7 @@ search.audienceType:
 
 Compliance is essential for safeguarding organizational data and ensuring adherence to industry regulations. Implementation of robust compliance measures helps mitigate risks and maintain trust with stakeholders.
 
-## Auditing (preview)
-
-[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
-
-[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
+## Auditing 
 
 Auditing log changes are made to customer records in an environment that has a Dataverse database. Dataverse auditing also logs user access through an app or through the software development kit (SDK) in an environment. Learn more in [Manage Dataverse auditing](../manage-dataverse-auditing.md).
 

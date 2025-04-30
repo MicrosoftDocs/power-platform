@@ -6,6 +6,18 @@
           href: index.yml
         - name: Overview of the Power Platform admin center
           href: admin-documentation.md
+        - name: Environment management
+          items:
+            - name: Environment management capabilities
+              href: environment-management-overview.md
+            - name: Managed security
+              href: security/managed-security.md
+            - name: Managed governance
+              href: managed-governance.md
+            - name: Managed operations
+              href: operations/overview.md
+            - name: Managed availability
+              href: managed-availability.md
         - name: Get started
           items:
             - name: Role of a Power Platform administrator
@@ -248,7 +260,7 @@
                       href: settings-collaboration.md
                     - name: Features
                       href: settings-features.md
-                    - name: Enable languages
+                    - name: Regional and language options
                       href: enable-languages.md
                     - name: Manage privacy and security settings
                       href: settings-privacy-security.md
@@ -464,22 +476,16 @@
                   href: wp-task-automation-powershell.md
                 - name: Automation of tasks with Power Automate
                   href: wp-task-automation-flow.md
-        - name: Managed operations
+        - name: Monitor
           items:
-            - name: Overview
-              href: operations/overview.md
             - name: Monitor page (preview)
               href: monitoring/monitoring-overview.md
             - name: View logs (preview)
               href: monitoring/logs.md
-        - name: Security and governance
+        - name: Security
           items:
-            - name: Security and governance
-              href: security.yml
             - name: Overview of Power Platform security
               href: security/overview.md
-            - name: Managed security
-              href: security/managed-security.md
             - name: Security page
               items:
               - name: Overview
@@ -538,6 +544,8 @@
                   href: continuous-access-evaluation.md
                 - name: Control access of TDS endpoint
                   href: control-tds-settings.md
+                - name: Configure the SameSite attribute for session cookies
+                  href: samesite-cookie-mgmt.md
                 - name: Environment security
                   items:
                     - name: Control user access to environments
@@ -546,6 +554,10 @@
                       href: cross-tenant-restrictions.md
                     - name: Configure content security policy
                       href: content-security-policy.md
+                - name: Advanced connector policies (preview)
+                  items: 
+                    - name: Overview
+                      href: advanced-connector-policies.md
                 - name: Data policies
                   items:
                     - name: Overview

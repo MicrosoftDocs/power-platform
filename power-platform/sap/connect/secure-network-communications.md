@@ -106,7 +106,8 @@ This article focuses on setting up the Root CA and SNC certificates.
 
 1. Create an OpenSSL configuration file, `sncCert/extensions.cnf`, for signing:
 
-   ```[ v3_leaf ]
+   ```cnf
+   [ v3_leaf ]
    subjectKeyIdentifier = hash
    authorityKeyIdentifier = keyid,issuer
    basicConstraints = critical,CA:false
@@ -145,8 +146,9 @@ Create a Personal Secure Environment (PSE) for the on-premises data gateway. The
     1. Select **Environment Variables**.
     1. Under **System variables**, select **New**.
     1. Set the variable name to `SECUDIR`.
-    1. Set the value to `C:\sapsecudir`.
+    1. Set the value to `C:\sapsecudir` (create this directory if it does not exist).
     1. Select **OK**.
+    1. Restart your Powershell session to pick up this new environment variable.
 
 1. Import the PKCS#12 container into a PSE:
 
@@ -167,7 +169,8 @@ Create a Personal Secure Environment (PSE) for the on-premises data gateway. The
 1. Go to transaction code `RZ10`.
 1. Set these profile parameters:
 
-   ```snc/accept_insecure_cpic: 1
+   ```txt
+   snc/accept_insecure_cpic: 1
    snc/accept_insecure_gui: 1
    snc/accept_insecure_rfc: 1
    snc/enable: 1
