@@ -63,7 +63,7 @@ Create an App registration with API permission to SharePoint. Learn more about r
    1. Select **Grant admin consent for `<tenant name>`**.
   
 > [!NOTE]
-> To apply more granular access to individual SharePoint sites, the **Sites.Selected** can be used to apply a scope. Learn more at [Understanding Resource Specific Consent for Microsoft Graph and SharePoint Online](https://learn.microsoft.com/en-us/sharepoint/dev/sp-add-ins-modernize/understanding-rsc-for-msgraph-and-sharepoint-online).
+> To apply more granular access to individual SharePoint sites, the **Sites.Selected** can be used to apply a scope. Learn more at [Understanding Resource Specific Consent for Microsoft Graph and SharePoint Online](https://learn.microsoft.com/sharepoint/dev/sp-add-ins-modernize/understanding-rsc-for-msgraph-and-sharepoint-online).
 
 ## Create managed identities in Dataverse
 
@@ -97,18 +97,6 @@ An example using POST:
   }
   ```
 
-An example using the Client WebAPI:
-
-```JavaScript
-Xrm.WebApi.createRecord("managedidentities", {
-  "applicationid": "<appId>",
-  "managedidentityid": "<newGuid>",
-  "credentialsource": 2,
-  "subjectscope": 1,
-  "tenantid": "<tenantId>"
-})
-```
-
 ### Add record in SharePoint Managed Identities table
 
 Insert a row into the `sharepointmanagedidentity` table using values from the following table.
@@ -134,18 +122,6 @@ An example using POST:
   "ManagedIdentityId@odata.bind": "/managedidentities(<managedIdentityId>)"
   }
   ```
-
-An example using the Client WebAPI:
-
-```JavaScript
-Xrm.WebApi.createRecord("sharepointmanagedidentities", {
-  "sharepointmanagedidentityid": "<newGuid>",
-  "uniquename": "msft_ppmiforsharepointauth",
-  "name": "Managed Identity For SharePoint Auth",
-  "ManagedIdentityId@odata.bind": "/managedidentities(<managedIdentityId>)"
-})
-```
-
 
 ## Create federated credential
 
