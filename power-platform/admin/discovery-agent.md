@@ -1,5 +1,5 @@
 ---
-title: Discovery agent (preview)
+title: Search with the discovery agent (preview)
 description: Learn how to use the discovery agent in the Power Platform admin center.
 ms.subservice: admin
 ms.component: pa-admin
@@ -14,7 +14,7 @@ search.audienceType:
 
 ---
 
-# Discovery agent (preview)
+# Search with the discovery agent (preview)
 
 [!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner.md)]
