@@ -1,11 +1,11 @@
 ---
-title: "Change environment type | MicrosoftDocs"
+title: Change environment type 
 description: Change the environment type
 author: sericks007
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/04/2020
+ms.date: 05/01/2025
 ms.subservice: admin
 ms.custom: NewPPAC
 ms.author: sericks
@@ -21,7 +21,7 @@ You may decide that your customization work developed and tested on a sandbox en
 - Production to sandbox
 - Sandbox to production
 
-Make sure you have the System Administrator or Environment Admin role credentials. To check your security role, see [View your user profile](/powerapps/user/view-your-user-profile). If you don’t have the correct permissions, contact your system administrator.
+Make sure you have the System Administrator or Environment Admin role credentials. To check your security role, go to [View your user profile](/powerapps/user/view-your-user-profile). If you don’t have the correct permissions, contact your system administrator.
 
 **To change the environment type**: 
 
