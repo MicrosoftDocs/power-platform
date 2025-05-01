@@ -6,7 +6,7 @@ author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 6/1/2025
+ms.date: 5/1/2025
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
