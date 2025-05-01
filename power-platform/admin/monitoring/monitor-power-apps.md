@@ -4,7 +4,7 @@ description: Learn more about the metrics and recommendations for Power Apps.
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/23/2025
+ms.date: 04/30/2025
 ms.custom: NewPPAC
 author: alaug
 ms.author: alaug
