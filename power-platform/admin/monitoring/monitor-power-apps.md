@@ -46,7 +46,7 @@ Power Apps operational health metrics and recommendations are available in the n
 ### Metric and recommendation pairings
 | Metric | Secondary metric | Title of recommendation | Description of recommendation |
 |---|---|---|---|
-| App Open Success Rate | ErrorCode = AppForbidden | Evaluate if the app should be shared with users without permiission | X% of sessions ended without users accessing the app because users didn't have permission to access the app. It's possible that the app may benefit from being shared with more users. The logs show which users&mdash;without permissions&mdash;are attempting to open the app. |
+| App Open Success Rate | ErrorCode = AppForbidden | Evaluate if the app should be shared with users without permission | X% of sessions ended without users accessing the app because users didn't have permission to access the app. It's possible that the app may benefit from being shared with more users. The logs show which users&mdash;without permissions&mdash;are attempting to open the app. |
 | Time to interactive | Not applicable | Users wait longer to access the app due to high App.OnStart latencies | App.OnStart durations impact end-user wait times to access an app. Evaluate simplifying Power Fx in App.OnStart and moving some Power Fx to App.Formulas. |
 | Time to full load | Not applicable | Users wait longer to see data in the app due to many data requests during app start up | More data requests correlate with longer end-user wait times to meaningfully use an app. Evaluate reducing data calls in App.OnStart and screen.OnVisible and move Power Fx to App.Formulas. |
 
