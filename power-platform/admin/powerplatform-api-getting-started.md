@@ -15,6 +15,8 @@ search.audienceType:
 
 # Get started with Power Platform API (preview)
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 Power Platform API is currently used to manage environments, tenant settings, and to query capacity consumption. 

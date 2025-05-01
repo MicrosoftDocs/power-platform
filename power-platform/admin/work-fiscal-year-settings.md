@@ -12,6 +12,8 @@ search.audienceType:
 ---
 # Work with fiscal year settings
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 <!-- legacy procedure -->
 
 You can set the fiscal year period, and how it's displayed, for your organization.  

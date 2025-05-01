@@ -13,6 +13,8 @@ search.audienceType:
 ---
 # View known issues
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 Customer trust and transparency are important to us. You can now view existing product issues, or known issues, for which a fix has been identified or is in progress. A workaround and expected time to fix the issue are also provided, when available.  
 
 ## View known issues  

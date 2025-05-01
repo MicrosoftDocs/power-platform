@@ -14,6 +14,8 @@ search.audienceType:
 
 # Administration for partners and systems implementers
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 Microsoft partners and systems implementers play a crucial role in deploying, managing, and optimizing solutions that are built for finance and operations apps. The transition of administrative capabilities to the Power Platform admin center brings significant changes and enhancements in both technology and processes. This article provides an overview of the improvements. It focuses on the key differences in terminology and processes between the Power Platform admin center and the previous admin center, Microsoft Dynamics Lifecycle Services.
 
 ## A single, unified admin center

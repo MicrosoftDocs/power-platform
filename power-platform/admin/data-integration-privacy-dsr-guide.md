@@ -13,6 +13,8 @@ search.audienceType:
 ---
 # Responding to Data Subject Rights (DSR) requests for Data Integration for Microsoft Dataverse customer data
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 ## Introduction to DSR requests
 
 [!INCLUDE [gdpr-intro](~/../shared-content/shared/privacy-includes/gdpr-intro.md)]

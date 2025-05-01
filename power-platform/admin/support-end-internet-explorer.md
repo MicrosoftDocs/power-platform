@@ -13,6 +13,8 @@ search.audienceType:
 ---
 # Support end for Internet Explorer 
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 Microsoft Internet Explorer and Microsoft Edge Legacy support has ended. This topic outlines the experience that administrators and end users will see related to the support end.
  
 Users moving to [Microsoft Edge](https://www.microsoft.com/edge) (based on Chromium) or another supported modern browser will have a significantly improved experience. Experiences in Dynamics / Power Apps are twice as fast on [Microsoft Edge](https://www.microsoft.com/edge) than on Internet Explorer.

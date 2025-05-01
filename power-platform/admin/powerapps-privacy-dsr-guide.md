@@ -16,6 +16,8 @@ contributors:
 
 # Responding to Data Subject Rights (DSR) requests for Power Apps customer data
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 ## Introduction to DSR Requests
 
 [!INCLUDE [gdpr-intro](~/../shared-content/shared/privacy-includes/gdpr-intro.md)]

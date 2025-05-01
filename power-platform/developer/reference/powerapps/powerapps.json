@@ -1,7 +1,7 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "Microsoft Power Platform REST API",
+    "title": "Microsoft Power Platform REST API - Power Apps",
     "description": "Unified API for all administrative capabilities in Microsoft Power Platform.",
     "version": "2022-03-01-preview"
   },
@@ -10,7 +10,7 @@
     "https"
   ],
   "paths": {
-    "/powerapps/environment/{environmentId}/apps": {
+    "/powerapps/environments/{environmentId}/apps": {
       "get": {
         "tags": [
           "Apps"
@@ -63,7 +63,7 @@
             }
           },
           "default": {
-            "description": "Operation Failed"
+            "description": "Operation Failed."
           }
         },
         "x-ms-pageable": {
@@ -237,7 +237,7 @@
                   "type": "string"
                 },
                 "displayName": {
-                  "description": "PowerApp owner principal displayName.",
+                  "description": "PowerApp owner principal display name.",
                   "type": "string"
                 },
                 "email": {
@@ -253,7 +253,7 @@
                   "type": "string"
                 },
                 "userPrincipalName": {
-                  "description": "PowerApp owner user principal name.",
+                  "description": "PowerApp owner principal user principal name.",
                   "type": "string"
                 }
               }
@@ -283,7 +283,7 @@
                   "type": "string"
                 },
                 "userPrincipalName": {
-                  "description": "PowerApp creator user principal name.",
+                  "description": "PowerApp creator principal user principal name.",
                   "type": "string"
                 }
               }
@@ -313,7 +313,7 @@
                   "type": "string"
                 },
                 "userPrincipalName": {
-                  "description": "PowerApp last modified by user principal name.",
+                  "description": "PowerApp last modified by principal userPrincipalName.",
                   "type": "string"
                 }
               }
@@ -347,7 +347,7 @@
                       "type": "string"
                     },
                     "readonlyValue": {
-                      "description": "PowerApp appUri document URI read-only value.",
+                      "description": "PowerApp appUri document URI read only value.",
                       "type": "string"
                     }
                   }
@@ -363,56 +363,56 @@
             },
             "createdTime": {
               "format": "date-time",
-              "description": "PowerApp property createdTime.",
+              "description": "PowerApp property created time.",
               "type": "string"
             },
             "lastModifiedTime": {
               "format": "date-time",
-              "description": "PowerApp property lastModifiedTime.",
+              "description": "PowerApp property last modified time.",
               "type": "string"
             },
             "sharedGroupsCount": {
               "format": "int32",
-              "description": "PowerApp property sharedGroupsCount.",
+              "description": "PowerApp property shared groups count.",
               "type": "integer"
             },
             "sharedUsersCount": {
               "format": "int32",
-              "description": "PowerApp property sharedUsersCount.",
+              "description": "PowerApp property shared users count.",
               "type": "integer"
             },
             "appOpenProtocolUri": {
-              "description": "PowerApp property appOpenProtocolUri.",
+              "description": "PowerApp property app open protocol URI.",
               "type": "string"
             },
             "appOpenUri": {
-              "description": "PowerApp property appOpenUri.",
+              "description": "PowerApp property app open URI.",
               "type": "string"
             },
             "userAppMetadata": {
-              "description": "PowerApp property userAppMetadata object.",
+              "description": "PowerApp property user app metadata object.",
               "type": "object",
               "properties": {
                 "favorite": {
-                  "description": "PowerApp property userAppMetadata favorite.",
+                  "description": "PowerApp property user app metadata favorite.",
                   "type": "string"
                 },
                 "includeInAppsList": {
-                  "description": "PowerApp property userAppMetadata includeInAppsList.",
+                  "description": "PowerApp property user app metadata include in apps list.",
                   "type": "boolean"
                 }
               }
             },
             "isFeaturedApp": {
-              "description": "PowerApp property isFeaturedApp.",
+              "description": "PowerApp property is featured app.",
               "type": "boolean"
             },
             "bypassConsent": {
-              "description": "PowerApp property bypassConsent.",
+              "description": "PowerApp property bypass consent.",
               "type": "boolean"
             },
             "isHeroApp": {
-              "description": "PowerApp property isHeroApp.",
+              "description": "PowerApp property indicating hero application.",
               "type": "boolean"
             },
             "environment": {
@@ -435,44 +435,44 @@
           }
         },
         "tags": {
-          "description": "PowerApp tags.",
+          "description": "tags",
           "type": "object",
           "properties": {
             "primaryDeviceWidth": {
-              "description": "PowerApp tag primaryDeviceWidth.",
+              "description": "PowerApp tag primary device width.",
               "type": "string"
             },
             "primaryDeviceHeight": {
-              "description": "PowerApp tag primaryDeviceHeight.",
+              "description": "PowerApp tag primary device height.",
               "type": "string"
             },
             "sienaVersion": {
-              "description": "PowerApp tag sienaVersion.",
+              "description": "PowerApp tag siena version.",
               "type": "string"
             },
             "deviceCapabilities": {
-              "description": "PowerApp tag deviceCapabilities.",
+              "description": "PowerApp tag device capabilities.",
               "type": "string"
             },
             "supportsPortrait": {
-              "description": "PowerApp tag supportsPortrait.",
+              "description": "PowerApp tag supports portrait.",
               "type": "string"
             },
             "supportsLandscape": {
-              "description": "PowerApp tag supportsLandscape.",
+              "description": "PowerApp tag supports landscape.",
               "type": "string"
             },
             "primaryFormFactor": {
-              "description": "PowerApp tag primaryFormFactor.",
+              "description": "PowerApp tag primary form factor.",
               "type": "string"
             },
             "publisherVersion": {
-              "description": "PowerApp tag publisherVersion.",
+              "description": "PowerApp tag publisher version.",
               "type": "string"
             },
             "minimumRequiredApiVersion": {
               "format": "date-time",
-              "description": "PowerApp tag minimumRequiredApiVersion.",
+              "description": "PowerApp tag minimum required API version.",
               "type": "string"
             }
           }
@@ -494,7 +494,7 @@
       "properties": {
         "id": {
           "type": "string",
-          "x-ms-summary": "Connector ID",
+          "x-ms-summary": "Connector Id",
           "x-ms-visibility": "important"
         },
         "displayName": {
@@ -508,7 +508,7 @@
           "x-ms-visibility": "important"
         },
         "dataSources": {
-          "description": "List of data sources for the connection.",
+          "description": "List of data sources for the connection",
           "type": "array",
           "items": {
             "type": "string"
@@ -516,7 +516,7 @@
           "x-ms-summary": "Data sources"
         },
         "dependencies": {
-          "description": "List of dependencies for the connection.",
+          "description": "List of dependencies for the connection",
           "type": "array",
           "items": {
             "type": "string"
@@ -524,7 +524,7 @@
           "x-ms-summary": "Dependencies"
         },
         "dependents": {
-          "description": "List of dependant connectors for the connector.",
+          "description": "List of dependant connectors for the connector",
           "type": "array",
           "items": {
             "type": "string"
@@ -532,37 +532,37 @@
           "x-ms-summary": "Dependents"
         },
         "isOnPremiseConnection": {
-          "description": "Flag indicates an on-premise data gateway.",
+          "description": "Flag indicates on premise data gateway",
           "type": "boolean",
-          "x-ms-summary": "Is on-premise connection"
+          "x-ms-summary": "Is on premise connection"
         },
         "bypassConsent": {
-          "description": "Flag indicates bypassed API consent.",
+          "description": "Flag indicates bypassed API consent",
           "type": "boolean",
           "x-ms-summary": "Bypass consent"
         },
         "apiTier": {
-          "description": "API tier is standard or premium.",
+          "description": "API tier is standard or premium",
           "type": "string",
           "x-ms-summary": "API tier"
         },
         "isCustomApiConnection": {
-          "description": "Flag indicates a custom connector.",
+          "description": "Flag indicates custom connector",
           "type": "boolean",
           "x-ms-summary": "Custom API flag"
         },
         "runtimePolicyName": {
-          "description": "String indicating the name of the run-time policy.",
+          "description": "String indicating the name of the runtime policy",
           "type": "string",
-          "x-ms-summary": "Runtime policy name"
+          "x-ms-summary": "Runtime Policy Name"
         },
         "executionRestrictions": {
-          "description": "Execution restrictions for the run-time policy.",
+          "description": "Execution restrictions for the runtime policy",
           "type": "object",
-          "x-ms-summary": "Execution restrictions"
+          "x-ms-summary": "Execution Restrictions"
         },
         "sharedConnectionId": {
-          "description": "String indicating the ID of the shared connection.",
+          "description": "String indicating the ID of the shared connection",
           "type": "string",
           "x-ms-summary": "Shared Connection ID"
         }
@@ -577,7 +577,7 @@
       "scopes": {
         ".default": ".default"
       },
-      "description": "Microsoft Entra ID OAuth2."
+      "description": "Microsoft Entra ID OAuth2"
     }
   },
   "security": [

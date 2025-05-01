@@ -1,11 +1,11 @@
 ---
-title: "Tutorial: Create cross tenant isolation reports | Microsoft Docs"
+title: "Tutorial: Create cross-tenant isolation reports | Microsoft Docs"
 description: Learn how to use the Power Platform API to create cross tenant isolation reports.
 author: laneswenka
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 01/29/2025
+ms.date: 03/07/2025
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
@@ -14,41 +14,41 @@ contributors:
 - mihaelablendea 
 ---
 
-# Tutorial: Create cross tenant isolation reports
+# Tutorial: Create cross-tenant isolation reports
 
-This tutorial demonstrates how to use the Power Platform API to create cross tenant isolation reports.
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
+This tutorial demonstrates how to use the programmability tools to create cross-tenant isolation reports.
 
 In this tutorial, learn how to:
 
-1. [Authenticate using Power Platform API](#step-1-authenticate-using-power-platform-api)
-1. [Create a report](#step-2-create-a-report)
-1. [List all reports for the tenant](#step-3-list-all-reports-for-the-tenant)
-1. [Fetch a single report](#step-4-fetch-a-single-report)
+> [!div class="checklist"]
+> + Create a report
+> + List all reports for the tenant
+> + Fetch a single report
 
 > [!IMPORTANT]
 > For more details about tenant isolation, see [Cross-tenant inbound and outbound restrictions](cross-tenant-restrictions.md).
 
-## Step 1. Authenticate using Power Platform API
-
-Use the following PowerShell script to authenticate using Power Platform API.
+## Create a report
+Use the following information to find various ways in which you can create a new report. 
 
 > [!NOTE]
-> Users with the Power Platform administrator Entra ID role have permission to run the tenant isolation impact report.
+> You can only create one report per tenant per calendar day.
+
+# [Power Automate / Logic Apps](#tab/Automate)
+Add a new action to the canvas, searching for "Create a request to generate a cross-tenant connection report for a tenant, or return an existing report".  There are no parameters required.
+
+:::image type="content" source="media/tutorial-tenantisolation-flow1.png" alt-text="Cross-tenant connection report create screenshot.":::
+
+# [PowerShell](#tab/PowerShell)
+Use the following PowerShell script to create the report.
 
 ```PowerShell
 Import-Module "MSAL.PS"
 $AuthResult = Get-MsalToken -ClientId '49676daf-ff23-4aac-adcc-55472d4e2ce0' -Scope 'https://api.powerplatform.com/.default'
 $Headers = @{Authorization = "Bearer $($AuthResult.AccessToken)"}
-```
 
-## Step 2. Create a report
-
-Use the following PowerShell script to create the report.
-
-> [!NOTE]
-> You can only create one report per tenant per calendar day.
-
-```PowerShell
 try 
 {
     # Create a cross tenant connections report
@@ -73,13 +73,25 @@ try
 }
 ```
 
-Power Platform API reference: [Create Cross Tenant Connection Report](/rest/api/power-platform/governance/cross-tenant-connection-reports/create-cross-tenant-connection-report)
+Power Platform API reference: [Create Cross-Tenant Connection Report](/rest/api/power-platform/governance/cross-tenant-connection-reports/create-cross-tenant-connection-report)
 
-## Step 3. List all reports for the tenant
+---
 
+## List all reports for the tenant
+
+# [Power Automate / Logic Apps](#tab/Automate)
+Add a new action to the canvas, searching for "List cross-tenant connection reports for a tenant".  There are no parameters required.
+
+:::image type="content" source="media/tutorial-tenantisolation-flow2.png" alt-text="List cross-tenant connection reports for a tenant screenshot.":::
+
+# [PowerShell](#tab/PowerShell)
 Use the following PowerShell script to list all of the available reports for your tenant.
 
 ```PowerShell
+Import-Module "MSAL.PS"
+$AuthResult = Get-MsalToken -ClientId '49676daf-ff23-4aac-adcc-55472d4e2ce0' -Scope 'https://api.powerplatform.com/.default'
+$Headers = @{Authorization = "Bearer $($AuthResult.AccessToken)"}
+
 try 
 {
      # Get all available cross tenant connections reports for a tenant
@@ -102,13 +114,25 @@ try
 }
 ```
 
-Power Platform API reference: [Get Cross Tenant Connection Report](/rest/api/power-platform/governance/cross-tenant-connection-reports/get-cross-tenant-connection-report)
+Power Platform API reference: [Get Cross-Tenant Connection Report](/rest/api/power-platform/governance/cross-tenant-connection-reports/get-cross-tenant-connection-report)
 
-## Step 4. Fetch a single report
+---
 
+## Fetch a single report
+
+# [Power Automate / Logic Apps](#tab/Automate)
+Add a new action to the canvas, searching for "Get a cross-tenant connection report by report ID for a tenant".  Provide the report ID from prior steps.
+
+:::image type="content" source="media/tutorial-tenantisolation-flow3.png" alt-text="Get a cross-tenant connection report by report ID for a tenant screenshot.":::
+
+# [PowerShell](#tab/PowerShell)
 Use the following PowerShell script to fetch a single report for your tenant about connections used within the tenant.
 
 ```PowerShell
+Import-Module "MSAL.PS"
+$AuthResult = Get-MsalToken -ClientId '49676daf-ff23-4aac-adcc-55472d4e2ce0' -Scope 'https://api.powerplatform.com/.default'
+$Headers = @{Authorization = "Bearer $($AuthResult.AccessToken)"}
+
 try 
 {
    # Get one cross tenant connections report for a tenant
@@ -132,8 +156,10 @@ try
 }
 ```
 
-Power Platform API reference: [List Cross Tenant Connection Reports](/rest/api/power-platform/governance/cross-tenant-connection-reports/list-cross-tenant-connection-reports)
+Power Platform API reference: [List Cross-Tenant Connection Reports](/rest/api/power-platform/governance/cross-tenant-connection-reports/list-cross-tenant-connection-reports)
 
-### See also
+---
 
-[Power Platform API reference - Cross Tenant Connection Reports](/rest/api/power-platform/governance/cross-tenant-connection-reports)
+### Related content
+
+[Power Platform API reference - Cross-Tenant Connection Reports](/rest/api/power-platform/governance/cross-tenant-connection-reports)

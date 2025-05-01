@@ -18,6 +18,8 @@ search.audienceType:
 
 # When premium flows are subject to license enforcement
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 This article describes when a [Premium user license](types.md#user-licenses) is required for Power Automate flows and enforcement scenarios currently in scope.
 
 ## Enforcement

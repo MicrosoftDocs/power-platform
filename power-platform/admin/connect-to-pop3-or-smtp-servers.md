@@ -13,6 +13,8 @@ search.audienceType:
 ---
 # Connect Gmail accounts, POP3 email server, or SMTP email server by using credentials specified by a user or queue 
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 > [!IMPORTANT]
 > As documented [here](https://support.google.com/accounts/answer/6010255), starting May 30th of 2022, Gmail is ending support for apps that are configured to only use your username and password. To use server-side synchronization with Gmail, follow the steps in [Connect Gmail accounts by using OAuth 2.0](connect-gmail-oauth2.md). 
 

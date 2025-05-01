@@ -13,6 +13,8 @@ search.audienceType:
 ---
 # Quickly navigate with the Microsoft 365 app launcher
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 <a name="BKMK_AppLauncher"></a>   
 ## Quickly move between apps with the app launcher  
 The app launcher is built in to all Dynamics 365 and [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] apps. Use the app launcher in the upper-left corner to quickly navigate to your Dynamics 365 application of choice.  

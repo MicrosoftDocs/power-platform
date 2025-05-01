@@ -3,17 +3,21 @@ title: Security and governance considerations in Power Platform
 description: Learn how Power Apps and Power Automate are made widely available to their business and are supported by IT.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 12/02/2024
+ms.date: 04/28/2025
 author: sericks007
 ms.subservice: admin
 ms.author: sericks
 ms.reviewer: angieandrews
-ms.custom: "admin-security"
+ms.custom: 
+  - "admin-security"
+  - NewPPAC
 search.audienceType: 
   - admin
 ---
 
 # Security and governance considerations in Power Platform
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 Many customers wonder how can Power Platform be made available to their broader business and supported by IT? Governance is the answer. It aims to enable business groups to focus on solving business problems efficiently while complying with IT and business compliance standards. The following content is intended to structure themes often associated with governing software and bring awareness to capabilities available for each theme as it relates to governing Power Platform.
 
@@ -154,13 +158,18 @@ It's well understood that monitoring is a critical aspect of managing software a
 
 ### View the Power Apps and Power Automate license report
 
-1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+#### [New admin center](#tab/new)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Licensing**.
+1. In the **Licensing** pane, select **Power Automate** or **Power Apps** to review the information.
 
-2. Select **Analytics** > **Power Automate** or **Power Apps**.
+#### [Classic admin center](#tab/classic)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Analytics**.
+1. Choose **Power Automate** or **Power Apps** to review the information.
+---
 
-3. View Power Apps and Power Automate admin analytics
-
-   You can get information about the following:
+You can get information about the following:
    - Active User and App usage  - how many users are using an app and how often? 
    - Location – where is the usage? 
    - Service Performance of connectors
@@ -187,11 +196,21 @@ The export can take a while for tenants with a large number of Power Platform us
 
 ### View app resources used in an Environment
 
-1. In the Power Platform admin center, select Environments in the navigation menu. 
-2. Select an Environment.
-3. Optionally, the list of resources used in an Environment can be downloaded as a .csv.
+#### [New admin center](#tab/new)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. On the **Environments** page, select an environment.
+1. In the **Resources** section, review the list of apps used in the environment.
 
-## Related information
+#### [Classic admin center](#tab/classic)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Environments**.
+1. On the **Environments** page, select an environment.
+1. In the **Resources** section, review the list of apps used in the environment.
+---
+
+## Related content
 
 - [Use best practices to secure and govern Power Automate environments](/training/paths/best-practices-environments/) <br />
 - [Microsoft Power Platform Center of Excellence (CoE) Starter Kit](../guidance/coe/starter-kit.md)

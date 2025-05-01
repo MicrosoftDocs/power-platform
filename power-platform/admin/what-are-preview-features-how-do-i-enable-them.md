@@ -9,6 +9,8 @@ ms.author: sericks
 ---
 # What are preview features, and how do I enable them? 
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 Preview features are features that aren't complete, but are made available on a "preview" basis so customers can get early access and provide feedback. Preview features:  
   
 - Are subject to separate [Supplemental Terms of Use](https://go.microsoft.com/fwlink/p/?LinkId=511446).  

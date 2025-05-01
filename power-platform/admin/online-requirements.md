@@ -21,6 +21,8 @@ search.audienceType:
 ---
 # Power Platform URLs and IP address ranges
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 Microsoft Power Platform requires connectivity to the internet. The endpoints listed in this article should be reachable for customers using the Power Platform services.
 
 ## Internet URLs to allow

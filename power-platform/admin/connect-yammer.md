@@ -13,6 +13,8 @@ search.audienceType:
 ---
 # Connect to Yammer 
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 <!-- legacy procedure -->
 
 > [!NOTE]

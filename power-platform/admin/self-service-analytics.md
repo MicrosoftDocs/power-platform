@@ -18,6 +18,8 @@ ms.contributors:
 
 # Set up Microsoft Power Platform self-service analytics to export inventory and usage data (preview)
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 With the Power Platform admin center, you can export Power Platform inventory and usage data directly into [Azure Data Lake Storage](https://azure.microsoft.com/solutions/data-lake/) for your organization's business needs. Having the data in your own data lake means you can store data for the durations specified in your organization's data retention policies.

@@ -13,6 +13,8 @@ search.audienceType:
 
 # Detect duplicate records and merge
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 Duplicate records can creep into your data when you or others enter data manually or import data in bulk. Microsoft Dataverse helps you address potential duplicates by detecting duplicates for active records such as accounts and contacts.
 
 After you know there are duplicate records, you can merge the duplicates and retain the record you want. When you merge a record, any related or child records are also merged. Your administrator might also set up duplicate detection rules so duplicates are detected at the time of entering or updating records or importing records.

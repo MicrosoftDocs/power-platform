@@ -14,6 +14,8 @@ contributors:
 ---
 # Control who can create and manage environments in Power Platform
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 With the new provisioning model, those users with the correct licenses can create an environment as long as 1 GB of capacity is available. When you complete the steps in this article to restrict who can create environments, only users who have the following admin security roles can create new environments in the Power Platform admin center:
 
 - Global admins

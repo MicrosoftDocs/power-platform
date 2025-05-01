@@ -1,7 +1,7 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "Microsoft Power Platform REST API",
+    "title": "Microsoft Power Platform REST API - environmentmanagement",
     "description": "Unified API for all administrative capabilities in Microsoft Power Platform.",
     "version": "2022-03-01-preview"
   },
@@ -10,6 +10,502 @@
     "https"
   ],
   "paths": {
+    "/environmentmanagement/environments/{environmentId}/settings": {
+      "post": {
+        "tags": [
+          "EnvironmentManagementSettings"
+        ],
+        "summary": "Create environment management settings.",
+        "operationId": "CreateEnvironmentManagementSettings",
+        "consumes": [
+          "application/json;odata.metadata=minimal;odata.streaming=true",
+          "application/json;odata.metadata=minimal;odata.streaming=false",
+          "application/json;odata.metadata=minimal",
+          "application/json;odata.metadata=full;odata.streaming=true",
+          "application/json;odata.metadata=full;odata.streaming=false",
+          "application/json;odata.metadata=full",
+          "application/json;odata.metadata=none;odata.streaming=true",
+          "application/json;odata.metadata=none;odata.streaming=false",
+          "application/json;odata.metadata=none",
+          "application/json;odata.streaming=true",
+          "application/json;odata.streaming=false",
+          "application/json",
+          "application/xml",
+          "application/prs.odatatestxx-odata",
+          "application/json-patch+json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "application/json;odata.metadata=minimal;odata.streaming=true",
+          "application/json;odata.metadata=minimal;odata.streaming=false",
+          "application/json;odata.metadata=minimal",
+          "application/json;odata.metadata=full;odata.streaming=true",
+          "application/json;odata.metadata=full;odata.streaming=false",
+          "application/json;odata.metadata=full",
+          "application/json;odata.metadata=none;odata.streaming=true",
+          "application/json;odata.metadata=none;odata.streaming=false",
+          "application/json;odata.metadata=none",
+          "application/json;odata.streaming=true",
+          "application/json;odata.streaming=false",
+          "application/json",
+          "application/xml",
+          "application/prs.odatatestxx-odata",
+          "text/plain",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The environment ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "description": "Payload for the environment management setting",
+            "schema": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "string"
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/CreateEnvironmentManagementSettingResponse"
+            }
+          },
+          "409": {
+            "description": "Conflict",
+            "schema": {
+              "$ref": "#/definitions/CreateEnvironmentManagementSettingResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/CreateEnvironmentManagementSettingResponse"
+            }
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "EnvironmentManagementSettings"
+        ],
+        "summary": "Gets Environment Management Setting by ID. Only columns provided in the $select queryOption will be returned.\r\nA list of selectable properties is defined in the Microsoft.Dynamics.Artemis.Infrastructure.Models.EnvironmentManagementSetting typeGets environment management setting by ID. Only columns provided in the $select queryOption will be returned.\r\nA list of selectable properties is defined in the Microsoft.Dynamics.Artemis.Infrastructure.Models.EnvironmentManagementSetting type.",
+        "operationId": "ListEnvironmentManagementSettings",
+        "produces": [
+          "application/json;odata.metadata=minimal;odata.streaming=true",
+          "application/json;odata.metadata=minimal;odata.streaming=false",
+          "application/json;odata.metadata=minimal",
+          "application/json;odata.metadata=full;odata.streaming=true",
+          "application/json;odata.metadata=full;odata.streaming=false",
+          "application/json;odata.metadata=full",
+          "application/json;odata.metadata=none;odata.streaming=true",
+          "application/json;odata.metadata=none;odata.streaming=false",
+          "application/json;odata.metadata=none",
+          "application/json;odata.streaming=true",
+          "application/json;odata.streaming=false",
+          "application/json",
+          "application/xml",
+          "application/prs.odatatestxx-odata",
+          "text/plain",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "ID for the environment management setting.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "$top",
+            "description": "Number of records to retrieve. If not set, five humdred (500) records are returned.",
+            "type": "integer"
+          },
+          {
+            "in": "query",
+            "name": "$select",
+            "description": "List of properties to select for this entity.",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/GetEnvironmentManagementSettingResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/GetEnvironmentManagementSettingResponse"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/GetEnvironmentManagementSettingResponse"
+            }
+          },
+          "429": {
+            "description": "Too Many Requests",
+            "schema": {
+              "$ref": "#/definitions/GetEnvironmentManagementSettingResponse"
+            }
+          }
+        }
+      },
+      "patch": {
+        "tags": [
+          "EnvironmentManagementSettings"
+        ],
+        "summary": "Updates fields on the EnvironmentManagementSetting. This API currently doesn't return any entity data in the response body.",
+        "operationId": "UpdateEnvironmentManagementSettings",
+        "consumes": [
+          "application/json;odata.metadata=minimal;odata.streaming=true",
+          "application/json;odata.metadata=minimal;odata.streaming=false",
+          "application/json;odata.metadata=minimal",
+          "application/json;odata.metadata=full;odata.streaming=true",
+          "application/json;odata.metadata=full;odata.streaming=false",
+          "application/json;odata.metadata=full",
+          "application/json;odata.metadata=none;odata.streaming=true",
+          "application/json;odata.metadata=none;odata.streaming=false",
+          "application/json;odata.metadata=none",
+          "application/json;odata.streaming=true",
+          "application/json;odata.streaming=false",
+          "application/json",
+          "application/xml",
+          "application/prs.odatatestxx-odata",
+          "application/json-patch+json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "application/json;odata.metadata=minimal;odata.streaming=true",
+          "application/json;odata.metadata=minimal;odata.streaming=false",
+          "application/json;odata.metadata=minimal",
+          "application/json;odata.metadata=full;odata.streaming=true",
+          "application/json;odata.metadata=full;odata.streaming=false",
+          "application/json;odata.metadata=full",
+          "application/json;odata.metadata=none;odata.streaming=true",
+          "application/json;odata.metadata=none;odata.streaming=false",
+          "application/json;odata.metadata=none",
+          "application/json;odata.streaming=true",
+          "application/json;odata.streaming=false",
+          "application/json",
+          "application/xml",
+          "application/prs.odatatestxx-odata",
+          "text/plain",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The ID for the environment management setting being updated.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "description": "Details on the environment management setting to be updated",
+            "schema": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "string"
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/OperationResponse"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/OperationResponse"
+            }
+          },
+          "409": {
+            "description": "Conflict",
+            "schema": {
+              "$ref": "#/definitions/OperationResponse"
+            }
+          },
+          "412": {
+            "description": "Precondition Failed",
+            "schema": {
+              "$ref": "#/definitions/OperationResponse"
+            }
+          }
+        }
+      }
+    },
+    "/environmentmanagement/environments/{environmentId}/operations": {
+      "get": {
+        "tags": [
+          "Operations"
+        ],
+        "summary": "List the available operations for an environment.",
+        "description": "Returns a list of the available operations for an environment.",
+        "operationId": "ListOperationsForEnvironment",
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The environment ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "limit",
+            "description": "String indicating to limit the results.",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "continuationToken",
+            "description": "The continuation token provided from a previous response.",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/OperationExecutionResultPagedCollection"
+            }
+          }
+        }
+      }
+    },
+    "/environmentmanagement/operations/{operationId}": {
+      "get": {
+        "tags": [
+          "Operations"
+        ],
+        "summary": "Retrieve the operation by ID.",
+        "description": "Retrieve the operation specified by ID.",
+        "operationId": "GetOperationByID",
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "operationId",
+            "description": "The operation ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/OperationExecutionResult"
+            }
+          }
+        }
+      }
+    },
+    "/environmentmanagement/environmentGroupOperations/{operationId}": {
+      "get": {
+        "tags": [
+          "EnvironmentGroups"
+        ],
+        "summary": "Get operation status.",
+        "operationId": "GetEnvironmentGroupOperation",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "operationId",
+            "description": "The operation ID.",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "204": {
+            "description": "No Content"
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ProblemDetails"
+            }
+          }
+        }
+      }
+    },
+    "/environmentmanagement/environmentGroups": {
+      "post": {
+        "tags": [
+          "EnvironmentGroups"
+        ],
+        "summary": "Create the environment group.",
+        "operationId": "CreateEnvironmentGroup",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "description": "The group.",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/EnvironmentGroup"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/EnvironmentGroup"
+            }
+          },
+          "204": {
+            "description": "No Content"
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ProblemDetails"
+            }
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "EnvironmentGroups"
+        ],
+        "summary": "List the environment groups.",
+        "operationId": "ListEnvironmentGroups",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/EnvironmentGroupResponseWithOdataContinuation"
+            }
+          },
+          "204": {
+            "description": "No Content"
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ProblemDetails"
+            }
+          }
+        }
+      }
+    },
     "/environmentmanagement/environmentGroups/{groupId}": {
       "get": {
         "tags": [
@@ -31,7 +527,7 @@
           {
             "in": "query",
             "name": "api-version",
-            "description": "The API version",
+            "description": "The API version.",
             "required": true,
             "type": "string",
             "default": "2022-03-01-preview"
@@ -71,7 +567,7 @@
           {
             "in": "path",
             "name": "groupId",
-            "description": "The group Id.",
+            "description": "The group ID.",
             "required": true,
             "type": "string",
             "format": "uuid"
@@ -125,7 +621,7 @@
           {
             "in": "path",
             "name": "groupId",
-            "description": "The group Id.",
+            "description": "The group ID.",
             "required": true,
             "type": "string"
           },
@@ -141,94 +637,6 @@
         "responses": {
           "200": {
             "description": "Success"
-          },
-          "204": {
-            "description": "No Content"
-          },
-          "400": {
-            "description": "Bad Request",
-            "schema": {
-              "$ref": "#/definitions/ProblemDetails"
-            }
-          }
-        }
-      }
-    },
-    "/environmentmanagement/environmentGroups": {
-      "get": {
-        "tags": [
-          "EnvironmentGroups"
-        ],
-        "summary": "List the environment groups.",
-        "operationId": "ListEnvironmentGroups",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "in": "query",
-            "name": "api-version",
-            "description": "The API version.",
-            "required": true,
-            "type": "string",
-            "default": "2022-03-01-preview"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Success",
-            "schema": {
-              "$ref": "#/definitions/EnvironmentGroupResponseWithOdataContinuation"
-            }
-          },
-          "204": {
-            "description": "No Content"
-          },
-          "400": {
-            "description": "Bad Request",
-            "schema": {
-              "$ref": "#/definitions/ProblemDetails"
-            }
-          }
-        }
-      },
-      "post": {
-        "tags": [
-          "EnvironmentGroups"
-        ],
-        "summary": "Create the environment group.",
-        "operationId": "CreateEnvironmentGroup",
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "in": "query",
-            "name": "api-version",
-            "description": "The API version.",
-            "required": true,
-            "type": "string",
-            "default": "2022-03-01-preview"
-          },
-          {
-            "in": "body",
-            "name": "body",
-            "description": "The group.",
-            "required": true,
-            "schema": {
-              "$ref": "#/definitions/EnvironmentGroup"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Success",
-            "schema": {
-              "$ref": "#/definitions/EnvironmentGroup"
-            }
           },
           "204": {
             "description": "No Content"
@@ -344,25 +752,18 @@
         }
       }
     },
-    "/environmentmanagement/environmentGroupOperations/{operationId}": {
+    "/environmentmanagement/environments": {
       "get": {
         "tags": [
-          "EnvironmentGroups"
+          "Environments"
         ],
-        "summary": "Get operation status.",
-        "operationId": "GetEnvironmentGroupOperation",
+        "summary": "Retrieve a list of environments.",
+        "description": "Returns a list of environments available for the authenticated user.",
+        "operationId": "ListEnvironmentsForUser",
         "produces": [
           "application/json"
         ],
         "parameters": [
-          {
-            "in": "path",
-            "name": "operationId",
-            "description": "The operation ID.",
-            "required": true,
-            "type": "string",
-            "format": "uuid"
-          },
           {
             "in": "query",
             "name": "api-version",
@@ -374,63 +775,23 @@
         ],
         "responses": {
           "200": {
-            "description": "Success"
-          },
-          "204": {
-            "description": "No Content"
-          },
-          "400": {
-            "description": "Bad Request",
+            "description": "A list of environments.",
             "schema": {
-              "$ref": "#/definitions/ProblemDetails"
+              "$ref": "#/definitions/EnvironmentList"
             }
           }
         }
       }
     },
-    "/environmentManagement/environments/{environmentId}/settings": {
-      "post": {
+    "/environmentmanagement/environments/{environmentId}": {
+      "get": {
         "tags": [
-          "EnvironmentManagementSettings"
+          "Environments"
         ],
-        "summary": "Create environment management settings.",
-        "operationId": "CreateEnvironmentManagementSettings",
-        "consumes": [
-          "application/json;odata.metadata=minimal;odata.streaming=true",
-          "application/json;odata.metadata=minimal;odata.streaming=false",
-          "application/json;odata.metadata=minimal",
-          "application/json;odata.metadata=full;odata.streaming=true",
-          "application/json;odata.metadata=full;odata.streaming=false",
-          "application/json;odata.metadata=full",
-          "application/json;odata.metadata=none;odata.streaming=true",
-          "application/json;odata.metadata=none;odata.streaming=false",
-          "application/json;odata.metadata=none",
-          "application/json;odata.streaming=true",
-          "application/json;odata.streaming=false",
-          "application/json",
-          "application/xml",
-          "application/prs.odatatestxx-odata",
-          "application/json-patch+json",
-          "text/json",
-          "application/*+json"
-        ],
+        "summary": "Retrieves a single environment by ID.",
+        "operationId": "GetEnvironmentByIdForUser",
         "produces": [
-          "application/json;odata.metadata=minimal;odata.streaming=true",
-          "application/json;odata.metadata=minimal;odata.streaming=false",
-          "application/json;odata.metadata=minimal",
-          "application/json;odata.metadata=full;odata.streaming=true",
-          "application/json;odata.metadata=full;odata.streaming=false",
-          "application/json;odata.metadata=full",
-          "application/json;odata.metadata=none;odata.streaming=true",
-          "application/json;odata.metadata=none;odata.streaming=false",
-          "application/json;odata.metadata=none",
-          "application/json;odata.streaming=true",
-          "application/json;odata.streaming=false",
-          "application/json",
-          "application/xml",
-          "application/prs.odatatestxx-odata",
-          "text/plain",
-          "text/json"
+          "application/json"
         ],
         "parameters": [
           {
@@ -447,83 +808,49 @@
             "required": true,
             "type": "string",
             "default": "2022-03-01-preview"
-          },
-          {
-            "in": "body",
-            "name": "body",
-            "description": "Payload for the environment management setting",
-            "schema": {
-              "type": "object",
-              "additionalProperties": {
-                "type": "string"
-              }
-            }
           }
         ],
         "responses": {
           "200": {
-            "description": "OK",
+            "description": "Success",
             "schema": {
-              "$ref": "#/definitions/CreateEnvironmentManagementSettingResponse"
-            }
-          },
-          "409": {
-            "description": "Conflict",
-            "schema": {
-              "$ref": "#/definitions/CreateEnvironmentManagementSettingResponse"
-            }
-          },
-          "400": {
-            "description": "Bad Request",
-            "schema": {
-              "$ref": "#/definitions/CreateEnvironmentManagementSettingResponse"
+              "$ref": "#/definitions/EnvironmentResponse"
             }
           }
         }
       },
-      "get": {
+      "delete": {
         "tags": [
-          "EnvironmentManagementSettings"
+          "Environments"
         ],
-        "summary": "Gets environment management setting by ID.  Only columns provided in the $select query option will be returned.\r\nA list of selectable properties is defined in the Microsoft.Dynamics.Artemis.Infrastructure.Models.EnvironmentManagementSetting type.",
-        "operationId": "ListEnvironmentManagementSettings",
+        "summary": "Delete the environment by ID.",
+        "description": "Delete the environment specified by ID.",
+        "operationId": "DeleteEnvironmentByID",
         "produces": [
-          "application/json;odata.metadata=minimal;odata.streaming=true",
-          "application/json;odata.metadata=minimal;odata.streaming=false",
-          "application/json;odata.metadata=minimal",
-          "application/json;odata.metadata=full;odata.streaming=true",
-          "application/json;odata.metadata=full;odata.streaming=false",
-          "application/json;odata.metadata=full",
-          "application/json;odata.metadata=none;odata.streaming=true",
-          "application/json;odata.metadata=none;odata.streaming=false",
-          "application/json;odata.metadata=none",
-          "application/json;odata.streaming=true",
-          "application/json;odata.streaming=false",
-          "application/json",
-          "application/xml",
-          "application/prs.odatatestxx-odata",
           "text/plain",
+          "application/json",
           "text/json"
         ],
         "parameters": [
           {
             "in": "path",
+            "name": "tenantId",
+            "description": "The tenant ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
             "name": "environmentId",
-            "description": "ID for the environment management setting.",
+            "description": "The environment ID.",
             "required": true,
             "type": "string"
           },
           {
             "in": "query",
-            "name": "$top",
-            "description": "Number of records to retrieve. If not set, 500 records are returned.",
-            "type": "integer"
-          },
-          {
-            "in": "query",
-            "name": "$select",
-            "description": "List of properties to select for this entity.",
-            "type": "string"
+            "name": "ValidateOnly",
+            "description": "Boolean flag indicating to validate instead of executing the delete operation.",
+            "type": "boolean"
           },
           {
             "in": "query",
@@ -536,245 +863,19 @@
         ],
         "responses": {
           "200": {
-            "description": "OK",
-            "schema": {
-              "$ref": "#/definitions/GetEnvironmentManagementSettingResponse"
-            }
-          },
-          "400": {
-            "description": "Bad Request",
-            "schema": {
-              "$ref": "#/definitions/GetEnvironmentManagementSettingResponse"
-            }
-          },
-          "404": {
-            "description": "Not Found",
-            "schema": {
-              "$ref": "#/definitions/GetEnvironmentManagementSettingResponse"
-            }
-          },
-          "429": {
-            "description": "Too Many Requests",
-            "schema": {
-              "$ref": "#/definitions/GetEnvironmentManagementSettingResponse"
-            }
-          }
-        }
-      },
-      "patch": {
-        "tags": [
-          "EnvironmentManagementSettings"
-        ],
-        "summary": "Updates fields on a environment management setting. This API currently doesn't return any entity data in the response body.",
-        "operationId": "UpdateEnvironmentManagementSettings",
-        "consumes": [
-          "application/json;odata.metadata=minimal;odata.streaming=true",
-          "application/json;odata.metadata=minimal;odata.streaming=false",
-          "application/json;odata.metadata=minimal",
-          "application/json;odata.metadata=full;odata.streaming=true",
-          "application/json;odata.metadata=full;odata.streaming=false",
-          "application/json;odata.metadata=full",
-          "application/json;odata.metadata=none;odata.streaming=true",
-          "application/json;odata.metadata=none;odata.streaming=false",
-          "application/json;odata.metadata=none",
-          "application/json;odata.streaming=true",
-          "application/json;odata.streaming=false",
-          "application/json",
-          "application/xml",
-          "application/prs.odatatestxx-odata",
-          "application/json-patch+json",
-          "text/json",
-          "application/*+json"
-        ],
-        "produces": [
-          "application/json;odata.metadata=minimal;odata.streaming=true",
-          "application/json;odata.metadata=minimal;odata.streaming=false",
-          "application/json;odata.metadata=minimal",
-          "application/json;odata.metadata=full;odata.streaming=true",
-          "application/json;odata.metadata=full;odata.streaming=false",
-          "application/json;odata.metadata=full",
-          "application/json;odata.metadata=none;odata.streaming=true",
-          "application/json;odata.metadata=none;odata.streaming=false",
-          "application/json;odata.metadata=none",
-          "application/json;odata.streaming=true",
-          "application/json;odata.streaming=false",
-          "application/json",
-          "application/xml",
-          "application/prs.odatatestxx-odata",
-          "text/plain",
-          "text/json"
-        ],
-        "parameters": [
-          {
-            "in": "path",
-            "name": "environmentId",
-            "description": "The ID for the environment management setting being updated.",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "in": "query",
-            "name": "api-version",
-            "description": "The API version.",
-            "required": true,
-            "type": "string",
-            "default": "2022-03-01-preview"
-          },
-          {
-            "in": "body",
-            "name": "body",
-            "description": "Details on the environment management setting to be updated.",
-            "schema": {
-              "type": "object",
-              "additionalProperties": {
-                "type": "string"
-              }
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "schema": {
-              "$ref": "#/definitions/OperationResponse"
-            }
-          },
-          "404": {
-            "description": "Not Found",
-            "schema": {
-              "$ref": "#/definitions/OperationResponse"
-            }
-          },
-          "409": {
-            "description": "Conflict",
-            "schema": {
-              "$ref": "#/definitions/OperationResponse"
-            }
-          },
-          "412": {
-            "description": "Precondition Failed",
-            "schema": {
-              "$ref": "#/definitions/OperationResponse"
-            }
+            "description": "OK"
           }
         }
       }
     }
   },
   "definitions": {
-    "EnvironmentGroup": {
-      "type": "object",
-      "properties": {
-        "id": {
-          "format": "uuid",
-          "type": "string"
-        },
-        "displayName": {
-          "type": "string"
-        },
-        "description": {
-          "type": "string"
-        },
-        "parentGroupId": {
-          "format": "uuid",
-          "type": "string"
-        },
-        "childrenGroupIds": {
-          "type": "array",
-          "items": {
-            "format": "uuid",
-            "type": "string"
-          }
-        },
-        "createdTime": {
-          "format": "date-time",
-          "type": "string"
-        },
-        "createdBy": {
-          "$ref": "#/definitions/Principal"
-        },
-        "lastModifiedTime": {
-          "format": "date-time",
-          "type": "string"
-        },
-        "lastModifiedBy": {
-          "$ref": "#/definitions/Principal"
-        }
-      },
-      "additionalProperties": false
-    },
-    "EnvironmentGroupResponseWithOdataContinuation": {
-      "type": "object",
-      "properties": {
-        "value": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/EnvironmentGroup"
-          }
-        },
-        "@odata.nextLink": {
-          "type": "string"
-        }
-      },
-      "additionalProperties": false
-    },
-    "ProblemDetails": {
-      "type": "object",
-      "properties": {
-        "type": {
-          "type": "string"
-        },
-        "title": {
-          "type": "string"
-        },
-        "status": {
-          "format": "int32",
-          "type": "integer"
-        },
-        "detail": {
-          "type": "string"
-        },
-        "instance": {
-          "type": "string"
-        },
-        "extensions": {
-          "type": "object",
-          "additionalProperties": {},
-          "readOnly": true
-        }
-      },
-      "additionalProperties": false
-    },
-    "Principal": {
-      "type": "object",
-      "properties": {
-        "id": {
-          "type": "string"
-        },
-        "displayName": {
-          "type": "string"
-        },
-        "email": {
-          "type": "string"
-        },
-        "type": {
-          "type": "string"
-        },
-        "tenantId": {
-          "type": "string"
-        },
-        "userPrincipalName": {
-          "type": "string"
-        }
-      },
-      "additionalProperties": false
-    },
     "CreateEnvironmentManagementSettingResponse": {
       "description": "Represents the response object for APIs in this service.",
       "type": "object",
       "properties": {
         "objectResult": {
-          "description": "Gets or sets the ID of the entity being created in the response.",
+          "description": "Gets or sets the ID of the entity being created in the response",
           "type": "string"
         },
         "errors": {
@@ -782,7 +883,7 @@
         },
         "nextLink": {
           "format": "uri",
-          "description": "Gets or sets the next link if there are more records to be returned.",
+          "description": "Gets or sets the next link if there are more records to be returned",
           "type": "string"
         },
         "responseMessage": {
@@ -874,7 +975,7 @@
         },
         "nextLink": {
           "format": "uri",
-          "description": "Gets or sets the next link if there are more records to be returned.",
+          "description": "Gets or sets the next link if there are more records to be returned",
           "type": "string"
         },
         "responseMessage": {
@@ -889,22 +990,369 @@
       "type": "object",
       "properties": {
         "objectResult": {
-          "description": "Gets or sets the response's object."
+          "description": "Gets or sets the response's object"
         },
         "errors": {
           "$ref": "#/definitions/ErrorResponse"
         },
         "nextLink": {
           "format": "uri",
-          "description": "Gets or sets the next link if there are more records to be returned.",
+          "description": "Gets or sets the next link if there are more records to be returned",
           "type": "string"
         },
         "debugErrors": {
-          "description": "Gets or sets debug errors, only shown for private/local testing.",
+          "description": "Gets or sets debug errors, that are only shown for private/local testing",
           "type": "string"
         },
         "responseMessage": {
           "description": "Gets or sets the error message.",
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "EnvironmentResponse": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "The value of id property on the environment object.",
+          "type": "string"
+        },
+        "displayName": {
+          "description": "The display name of the environment.",
+          "type": "string"
+        },
+        "tenantId": {
+          "description": "The value of tenantId property on the environment object.",
+          "type": "string"
+        },
+        "type": {
+          "description": "The type of environment.",
+          "type": "string"
+        },
+        "geo": {
+          "description": "The geographical region of the environment.",
+          "type": "string"
+        },
+        "azureRegion": {
+          "description": "The Azure region of the environment.",
+          "type": "string"
+        },
+        "createdDateTime": {
+          "format": "date-time",
+          "description": "The creation date and time of the environment.",
+          "type": "string"
+        },
+        "deletedDateTime": {
+          "format": "date-time",
+          "description": "The deletion date and time of the environment.",
+          "type": "string"
+        },
+        "dataverseId": {
+          "description": "The value of dataverseId property on the environment object.",
+          "type": "string"
+        },
+        "url": {
+          "description": "The URL of the environment.",
+          "type": "string"
+        },
+        "version": {
+          "description": "The version of the environment.",
+          "type": "string"
+        },
+        "domainName": {
+          "description": "The domain name of the environment.",
+          "type": "string"
+        },
+        "state": {
+          "description": "The state of the environment.",
+          "type": "string"
+        },
+        "adminMode": {
+          "description": "The administrative mode of the environment.",
+          "type": "string"
+        },
+        "backgroundOperationsState": {
+          "description": "The background operations state of the environment.",
+          "type": "string"
+        },
+        "protectionLevel": {
+          "description": "The protection level of the environment.",
+          "type": "string"
+        },
+        "retentionDetails": {
+          "description": "The retention details of the environment.",
+          "type": "object",
+          "properties": {
+            "retentionPeriod": {
+              "description": "The retention period of the environment.",
+              "type": "string"
+            },
+            "availableFromDateTime": {
+              "format": "date-time",
+              "description": "The available from date and time of the environment.",
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "EnvironmentList": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/EnvironmentResponse"
+          }
+        }
+      }
+    },
+    "Principal": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "displayName": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "tenantId": {
+          "type": "string"
+        },
+        "userPrincipalName": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "ProblemDetails": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "status": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "detail": {
+          "type": "string"
+        },
+        "instance": {
+          "type": "string"
+        },
+        "extensions": {
+          "type": "object",
+          "additionalProperties": { },
+          "readOnly": true
+        }
+      },
+      "additionalProperties": false
+    },
+    "EnvironmentGroupResponseWithOdataContinuation": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/EnvironmentGroup"
+          }
+        },
+        "@odata.nextLink": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "EnvironmentGroup": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "format": "uuid",
+          "type": "string"
+        },
+        "displayName": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "parentGroupId": {
+          "format": "uuid",
+          "type": "string"
+        },
+        "childrenGroupIds": {
+          "type": "array",
+          "items": {
+            "format": "uuid",
+            "type": "string"
+          }
+        },
+        "createdTime": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "createdBy": {
+          "$ref": "#/definitions/Principal"
+        },
+        "lastModifiedTime": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "lastModifiedBy": {
+          "$ref": "#/definitions/Principal"
+        }
+      },
+      "additionalProperties": false
+    },
+    "UserIdentity": {
+      "type": "object",
+      "properties": {
+        "userId": {
+          "description": "The user ID.",
+          "type": "string"
+        },
+        "displayName": {
+          "description": "The display name.",
+          "type": "string"
+        },
+        "tenantId": {
+          "description": "The tenant ID.",
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "OperationStatus": {
+      "description": "The operation status.",
+      "enum": [
+        "Queued",
+        "InProgress",
+        "Succeeded",
+        "ValidationError",
+        "Failed",
+        "NoOperation",
+        "Validated"
+      ],
+      "type": "string"
+    },
+    "OperationExecutionResultPagedCollection": {
+      "type": "object",
+      "properties": {
+        "collection": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/OperationExecutionResult"
+          }
+        },
+        "continuationToken": {
+          "description": "The continuation token from a previous response.",
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "OperationExecutionResult": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "The result name.",
+          "type": "string"
+        },
+        "status": {
+          "$ref": "#/definitions/OperationStatus"
+        },
+        "operationId": {
+          "description": "The operation ID.",
+          "type": "string"
+        },
+        "startTime": {
+          "format": "date-time",
+          "description": "The start time.",
+          "type": "string"
+        },
+        "endTime": {
+          "format": "date-time",
+          "description": "The end time.",
+          "type": "string"
+        },
+        "updatedEnvironment": {
+          "$ref": "#/definitions/Environment"
+        },
+        "requestedBy": {
+          "$ref": "#/definitions/UserIdentity"
+        },
+        "errorDetail": {
+          "$ref": "#/definitions/ErrorInfo"
+        },
+        "jobStatuses": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/JobStatus"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "JobStatus": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "The job name.",
+          "type": "string"
+        },
+        "status": {
+          "description": "The job status.",
+          "type": "string"
+        },
+        "startTime": {
+          "format": "date-time",
+          "description": "The job start time.",
+          "type": "string"
+        },
+        "endTime": {
+          "format": "date-time",
+          "description": "The job end time.",
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "ErrorInfo": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "description": "The error code.",
+          "type": "string"
+        },
+        "fieldErrors": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "array",
+            "items": {
+              "description": "The individual errors.",
+              "type": "string"
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "Environment": {
+      "type": "object",
+      "properties": {
+        "environmentId": {
+          "description": "The environment ID.",
           "type": "string"
         }
       },
@@ -919,7 +1367,7 @@
       "scopes": {
         ".default": ".default"
       },
-      "description": "Microsoft Entra ID OAuth2."
+      "description": "Microsoft Entra ID OAuth2"
     }
   },
   "security": [

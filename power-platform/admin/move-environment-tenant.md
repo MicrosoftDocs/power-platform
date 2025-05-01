@@ -20,6 +20,8 @@ search.audienceType:
 ---
 
 # Tenant-to-tenant migrations
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 The tenant-to-tenant migration feature allows you to transfer an environment from one tenant to another. This feature supports scenarios such as merging multiple tenants into one and facilitating company acquisitions. The environment doesn't actually _move_, but rather is _linked_ to another tenant. The environment still exists but isn't part of the source tenant anymore. It's accessible and managed under the destination tenant. There are no user interface changes or version changes as part of this move.
 
 ## Before you get started

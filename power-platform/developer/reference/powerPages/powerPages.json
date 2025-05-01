@@ -1,7 +1,7 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "Microsoft Power Platform REST API",
+    "title": "Microsoft Power Platform REST API - Power Pages",
     "description": "Unified API for all administrative capabilities in Microsoft Power Platform.",
     "version": "2022-03-01-preview"
   },
@@ -25,12 +25,14 @@
           {
             "in": "path",
             "name": "environmentId",
+            "description": "The environment ID.",
             "required": true,
             "type": "string"
           },
           {
             "in": "query",
             "name": "skip",
+            "description": "The number of items to skip before returning the remaining items.",
             "type": "string"
           },
           {
@@ -80,6 +82,7 @@
           {
             "in": "path",
             "name": "environmentId",
+            "description": "The environment ID.",
             "required": true,
             "type": "string"
           },
@@ -105,7 +108,7 @@
             "description": "Accepted",
             "headers": {
               "Operation-Location": {
-                "description": "Location of a resource.",
+                "description": "Location of a resource",
                 "type": "string"
               }
             }
@@ -137,7 +140,7 @@
           "Websites"
         ],
         "summary": "Get the Power Pages website details by specifying its unique identifier (ID).",
-        "description": "Get website details from the website ID.",
+        "description": "Get website details using a specified website ID.",
         "operationId": "GetWebsiteById",
         "produces": [
           "application/json"
@@ -146,12 +149,14 @@
           {
             "in": "path",
             "name": "environmentId",
+            "description": "The environment ID.",
             "required": true,
             "type": "string"
           },
           {
             "in": "path",
             "name": "id",
+            "description": "Website unique identifier (ID).",
             "required": true,
             "type": "string"
           },
@@ -205,18 +210,21 @@
           {
             "in": "header",
             "name": "Operation-Location",
+            "description": "Operation location.",
             "required": true,
             "type": "string"
           },
           {
             "in": "path",
             "name": "environmentId",
+            "description": "The environment ID.",
             "required": true,
             "type": "string"
           },
           {
             "in": "path",
             "name": "id",
+            "description": "Website unique identifier (ID).",
             "required": true,
             "type": "string"
           },
@@ -234,253 +242,10 @@
             "description": "Accepted",
             "headers": {
               "Operation-Location": {
-                "description": "Location of a resource.",
+                "description": "Location of a resource",
                 "type": "string"
               }
             }
-          },
-          "400": {
-            "description": "Bad Request",
-            "schema": {
-              "$ref": "#/definitions/ErrorMessage"
-            }
-          },
-          "401": {
-            "description": "Unauthorized",
-            "schema": {
-              "$ref": "#/definitions/ErrorMessage"
-            }
-          },
-          "404": {
-            "description": "Not Found",
-            "schema": {
-              "$ref": "#/definitions/ErrorMessage"
-            }
-          }
-        }
-      }
-    },
-    "/powerpages/environments/{environmentId}/websites/{id}/restart": {
-      "post": {
-        "tags": [
-          "Websites"
-        ],
-        "summary": "Restart a Power Pages website.",
-        "description": "Restart the website for the given site ID.",
-        "operationId": "RestartWebsite",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "in": "path",
-            "name": "environmentId",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "in": "path",
-            "name": "id",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "in": "query",
-            "name": "api-version",
-            "description": "The API version.",
-            "required": true,
-            "type": "string",
-            "default": "2022-03-01-preview"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Success"
-          },
-          "400": {
-            "description": "Bad Request",
-            "schema": {
-              "$ref": "#/definitions/ErrorMessage"
-            }
-          },
-          "401": {
-            "description": "Unauthorized",
-            "schema": {
-              "$ref": "#/definitions/ErrorMessage"
-            }
-          },
-          "404": {
-            "description": "Not Found",
-            "schema": {
-              "$ref": "#/definitions/ErrorMessage"
-            }
-          }
-        }
-      }
-    },
-    "/powerpages/environments/{environmentId}/websites/{id}/setPortalDataModelVersion": {
-      "post": {
-        "tags": [
-          "Websites"
-        ],
-        "summary": "Stamp data model version for the website.",
-        "description": "Stamp data model version for the website.",
-        "operationId": "SetPortalDataModelVersion",
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "in": "path",
-            "name": "environmentId",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "in": "path",
-            "name": "id",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "in": "query",
-            "name": "api-version",
-            "description": "The API version.",
-            "required": true,
-            "type": "string",
-            "default": "2022-03-01-preview"
-          },
-          {
-            "in": "body",
-            "name": "body",
-            "required": true,
-            "schema": {
-              "$ref": "#/definitions/PortalDataModelDto"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Success"
-          },
-          "400": {
-            "description": "Bad Request",
-            "schema": {
-              "$ref": "#/definitions/ErrorMessage"
-            }
-          },
-          "401": {
-            "description": "Unauthorized",
-            "schema": {
-              "$ref": "#/definitions/ErrorMessage"
-            }
-          },
-          "404": {
-            "description": "Not Found",
-            "schema": {
-              "$ref": "#/definitions/ErrorMessage"
-            }
-          }
-        }
-      }
-    },
-    "/powerpages/environments/{environmentId}/websites/{id}/stop": {
-      "post": {
-        "tags": [
-          "Websites"
-        ],
-        "summary": "Stop a Power Pages website.",
-        "description": "Stop the website for the given site ID.",
-        "operationId": "StopWebsite",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "in": "path",
-            "name": "environmentId",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "in": "path",
-            "name": "id",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "in": "query",
-            "name": "api-version",
-            "description": "The API version.",
-            "required": true,
-            "type": "string",
-            "default": "2022-03-01-preview"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Success"
-          },
-          "400": {
-            "description": "Bad Request",
-            "schema": {
-              "$ref": "#/definitions/ErrorMessage"
-            }
-          },
-          "401": {
-            "description": "Unauthorized",
-            "schema": {
-              "$ref": "#/definitions/ErrorMessage"
-            }
-          },
-          "404": {
-            "description": "Not Found",
-            "schema": {
-              "$ref": "#/definitions/ErrorMessage"
-            }
-          }
-        }
-      }
-    },
-    "/powerpages/environments/{environmentId}/websites/{id}/start": {
-      "post": {
-        "tags": [
-          "Websites"
-        ],
-        "summary": "Start a Power Pages website.",
-        "description": "Start the website for the given site ID.",
-        "operationId": "StartWebsite",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "in": "path",
-            "name": "environmentId",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "in": "path",
-            "name": "id",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "in": "query",
-            "name": "api-version",
-            "description": "The API version.",
-            "required": true,
-            "type": "string",
-            "default": "2022-03-01-preview"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Success"
           },
           "400": {
             "description": "Bad Request",
@@ -508,8 +273,8 @@
         "tags": [
           "Websites"
         ],
-        "summary": "Enable a web application firewall on a Power Pages website.",
-        "description": "Enable a web application firewall on the given website.",
+        "summary": "Enable web application firewall on a Power Pages website.",
+        "description": "Enable web application firewall on the given website.",
         "operationId": "EnableWAF",
         "produces": [
           "application/json"
@@ -518,12 +283,14 @@
           {
             "in": "path",
             "name": "environmentId",
+            "description": "The environment ID.",
             "required": true,
             "type": "string"
           },
           {
             "in": "path",
             "name": "id",
+            "description": "Website unique identifier (ID).",
             "required": true,
             "type": "string"
           },
@@ -541,7 +308,7 @@
             "description": "Accepted",
             "headers": {
               "Operation-Location": {
-                "description": "Location of a resource.",
+                "description": "Location of a resource",
                 "type": "string"
               }
             }
@@ -588,12 +355,14 @@
           {
             "in": "path",
             "name": "environmentId",
+            "description": "The environment ID.",
             "required": true,
             "type": "string"
           },
           {
             "in": "path",
             "name": "id",
+            "description": "Website unique identifier (ID).",
             "required": true,
             "type": "string"
           },
@@ -633,6 +402,449 @@
           }
         }
       }
+    },
+    "/powerpages/environments/{environmentId}/websites/{id}/restart": {
+      "post": {
+        "tags": [
+          "Websites"
+        ],
+        "summary": "Restart a Power Pages website.",
+        "description": "Restart the website for the given site ID.",
+        "operationId": "RestartWebsite",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The environment ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "id",
+            "description": "Website unique identifier (ID).",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          }
+        }
+      }
+    },
+    "/powerpages/environments/{environmentId}/websites/{id}/SetPortalBootstrapV5Enabled": {
+      "patch": {
+        "tags": [
+          "Websites"
+        ],
+        "summary": "Stamp bootstrap version five (5) status as enabled for website.",
+        "description": "Stamp bootstrap version five (5) status as enabled for website.",
+        "operationId": "SetPortalBootstrapV5Enabled",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The environment ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "id",
+            "description": "Website unique identifier (ID).",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          }
+        }
+      }
+    },
+    "/powerpages/environments/{environmentId}/websites/{id}/setPortalDataModelVersion": {
+      "post": {
+        "tags": [
+          "Websites"
+        ],
+        "summary": "Stamp data model version for website.",
+        "description": "Stamp data model version for website.",
+        "operationId": "SetPortalDataModelVersion",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The environment ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "id",
+            "description": "Website unique identifier (ID).",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/PortalDataModelDto"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          }
+        }
+      }
+    },
+    "/powerpages/environments/{environmentId}/websites/{id}/start": {
+      "post": {
+        "tags": [
+          "Websites"
+        ],
+        "summary": "Start a Power Pages website.",
+        "description": "Start the website for the given site ID.",
+        "operationId": "StartWebsite",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The environment ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "id",
+            "description": "Website unique identifier (ID).",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          }
+        }
+      }
+    },
+    "/powerpages/environments/{environmentId}/websites/{id}/stop": {
+      "post": {
+        "tags": [
+          "Websites"
+        ],
+        "summary": "Stop a Power Pages website.",
+        "description": "Stop the website for the given site ID.",
+        "operationId": "StopWebsite",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The environment ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "id",
+            "description": "Website unique identifier (ID).",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          }
+        }
+      }
+    },
+    "/powerpages/environments/{environmentId}/websites/{id}/updatePortalSecurityGroup": {
+      "post": {
+        "tags": [
+          "Websites"
+        ],
+        "summary": "Update security group for site visibility for a website.",
+        "description": "Update security group for site visibility for a website.",
+        "operationId": "updatePortalSecurityGroup",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The environment ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "id",
+            "description": "Website unique identifier (ID).",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "securityGroupId",
+            "description": "Security group ID.",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          }
+        }
+      }
+    },
+    "/powerpages/environments/{environmentId}/websites/{id}/updateSiteVisibility": {
+      "post": {
+        "tags": [
+          "Websites"
+        ],
+        "summary": "Update site visibility for a website.",
+        "description": "Update site visibility for a website.",
+        "operationId": "updateSiteVisibility",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The environment ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "id",
+            "description": "Website unique identifier (ID).",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "siteVisibility",
+            "description": "Site visibility.",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          }
+        }
+      }
     }
   },
   "definitions": {
@@ -648,16 +860,16 @@
       "properties": {
         "dataverseOrganizationId": {
           "format": "uuid",
-          "description": "Dataverse organization's unique identifier (ID).",
+          "description": "Dataverse organization's unique identifier (ID)",
           "type": "string",
           "example": "00000000-0000-0000-0000-000000000000"
         },
         "name": {
-          "description": "Name of the website.",
+          "description": "Name of the website",
           "type": "string"
         },
         "templateName": {
-          "description": "Website template name.",
+          "description": "Website template name",
           "enum": [
             "DefaultPortalTemplate",
             "PowerPortals_ProgramRegistration",
@@ -667,15 +879,15 @@
         },
         "selectedBaseLanguage": {
           "format": "int32",
-          "description": "Language unique identifier (ID) of the website (see https://go.microsoft.com/fwlink/?linkid=2208135).",
+          "description": "Language unique identifier (ID) of the website - https://go.microsoft.com/fwlink/?linkid=2208135",
           "type": "integer"
         },
         "subdomain": {
-          "description": "Subdomain for the website URL.",
+          "description": "Subdomain for the website URL",
           "type": "string"
         },
         "websiteRecordId": {
-          "description": "Dataverse record unique identifier (ID) of the website.",
+          "description": "Dataverse record unique identifier (ID) of the website",
           "type": "string"
         }
       }
@@ -704,15 +916,15 @@
           "type": "object",
           "properties": {
             "code": {
-              "description": "Error code.",
+              "description": "Error code",
               "type": "string"
             },
             "message": {
-              "description": "Error message.",
+              "description": "Error message",
               "type": "string"
             },
             "target": {
-              "description": "Target parameter.",
+              "description": "Target parameter",
               "type": "string"
             },
             "details": {
@@ -721,15 +933,15 @@
                 "type": "object",
                 "properties": {
                   "code": {
-                    "description": "Error code.",
+                    "description": "Error code",
                     "type": "string"
                   },
                   "message": {
-                    "description": "Error message.",
+                    "description": "Error message",
                     "type": "string"
                   },
                   "target": {
-                    "description": "Target parameter.",
+                    "description": "Target parameter",
                     "type": "string"
                   }
                 }
@@ -743,19 +955,19 @@
       "type": "object",
       "properties": {
         "id": {
-          "description": "Website unique identifier (ID).",
+          "description": "Website unique identifier (ID)",
           "type": "string"
         },
         "name": {
-          "description": "Website name.",
+          "description": "Website name",
           "type": "string"
         },
         "createdOn": {
-          "description": "Website creation time in ISO 8601 UTC format.",
+          "description": "Website creation time in the ISO 8601 UTC format",
           "type": "string"
         },
         "templateName": {
-          "description": "Website template name.",
+          "description": "Website template name",
           "enum": [
             "DefaultPortalTemplate",
             "PowerPortals_ProgramRegistration",
@@ -764,51 +976,51 @@
           "type": "string"
         },
         "websiteUrl": {
-          "description": "Website URL.",
+          "description": "Website URL",
           "type": "string"
         },
         "tenantId": {
-          "description": "Tenant unique identifier (ID) of the website.",
+          "description": "Tenant unique identifier (ID) of the website",
           "type": "string"
         },
         "dataverseInstanceUrl": {
-          "description": "Organization URL of the website.",
+          "description": "Organization URL of the website",
           "type": "string"
         },
         "environmentName": {
-          "description": "Environment name of the website.",
+          "description": "Environment name of the website",
           "type": "string"
         },
         "environmentId": {
-          "description": "Environment unique identifier (ID) of the website.",
+          "description": "Environment unique identifier (ID) of the website",
           "type": "string"
         },
         "dataverseOrganizationId": {
-          "description": "Organization unique identifier (ID) of the website.",
+          "description": "Organization unique identifier (ID) of the website",
           "type": "string"
         },
         "selectedBaseLanguage": {
           "format": "int32",
-          "description": "Language unique identifier (ID) of the website (see https://go.microsoft.com/fwlink/?linkid=2208135).",
+          "description": "Language unique identifier (ID) of the website - https://go.microsoft.com/fwlink/?linkid=2208135",
           "type": "integer"
         },
         "customHostNames": {
-          "description": "Custom host names added for the website.",
+          "description": "Custom hostnames added for the website",
           "type": "array",
           "items": {
             "type": "string"
           }
         },
         "websiteRecordId": {
-          "description": "Dataverse record unique identifier (ID) of the website.",
+          "description": "Dataverse record unique identifier (ID) of the website",
           "type": "string"
         },
         "subdomain": {
-          "description": "Subdomain of the website.",
+          "description": "Subdomain of website",
           "type": "string"
         },
         "packageInstallStatus": {
-          "description": "Package installation status of the website.",
+          "description": "Package installation status of the website",
           "enum": [
             "None",
             "Installed",
@@ -826,7 +1038,7 @@
           "type": "string"
         },
         "type": {
-          "description": "Application type of the website.",
+          "description": "Application type of the website",
           "enum": [
             "Trial",
             "Production"
@@ -835,36 +1047,36 @@
         },
         "trialExpiringInDays": {
           "format": "int32",
-          "description": "Time (in days) to expiration of the website.",
+          "description": "Time (in days) to expiration of the website",
           "type": "integer"
         },
         "suspendedWebsiteDeletingInDays": {
           "format": "int32",
-          "description": "Time (in days) to website deletion (if suspended).",
+          "description": "Time (in days) to website deletion, if suspended",
           "type": "integer"
         },
         "packageVersion": {
-          "description": "Package version of the website.",
+          "description": "Package version of the website",
           "type": "string"
         },
         "isEarlyUpgradeEnabled": {
-          "description": "Website eligibility for early upgrade.",
+          "description": "Website eligibility for early upgrade",
           "type": "boolean"
         },
         "isCustomErrorEnabled": {
-          "description": "Custom error enablement for the Website.",
+          "description": "Custom error enablement for Website",
           "type": "boolean"
         },
         "applicationUserAadAppId": {
-          "description": "Microsoft Entra ID (formerly Azure Active Directory) object unique identifier (ID).",
+          "description": "Entra ID (formerly Azure Active Directory) object unique identifier (ID)",
           "type": "string"
         },
         "ownerId": {
-          "description": "User unique identifier (ID) of the website owner.",
+          "description": "User unique identifier (ID) of the website owner",
           "type": "string"
         },
         "status": {
-          "description": "Website status.",
+          "description": "Website status",
           "enum": [
             "OperationComplete",
             "OperationInProgress",
@@ -874,7 +1086,7 @@
           "type": "string"
         },
         "siteVisibility": {
-          "description": "Website visibility status.",
+          "description": "Website visibility status",
           "enum": [
             "public",
             "private"
@@ -890,13 +1102,13 @@
       "type": "object",
       "properties": {
         "dataModelVersionValue": {
-          "description": "value of the data model version for IsNewDataModel.",
+          "description": "value of data model version for IsNewDataModel",
           "type": "boolean"
         }
       }
     },
     "WebApplicationFirewallStatus": {
-      "description": "Web application firewall status.",
+      "description": "Web application firewall status",
       "enum": [
         "None",
         "Creating",
@@ -916,7 +1128,7 @@
       "scopes": {
         ".default": ".default"
       },
-      "description": "Microsoft Entra ID OAuth2."
+      "description": "Microsoft Entra ID OAuth2"
     }
   },
   "security": [

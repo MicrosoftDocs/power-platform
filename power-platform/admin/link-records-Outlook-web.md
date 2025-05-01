@@ -4,8 +4,9 @@ description: Records are now available in the Outlook web client using a simple 
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/06/2024
+ms.date: 04/24/2025
 ms.subservice: admin
+ms.custom: NewPPAC
 ms.author: sericks
 ms.reviewer: sericks
 contributors:
@@ -17,6 +18,8 @@ ms.contributors:
 ---
 
 # Use /mention to link to records in Outlook web client
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 One of the most time-consuming tasks when using email is sharing information in your line-of-business applications with colleagues. You have to jump out of your Outlook web experience, open your line-of-business app, navigate to a record, and then copy and paste the link of the record into your email.  
 
@@ -34,11 +37,28 @@ If there are any changes to the synced data including updates or deletions, the 
 
 ## Turn on the /mention feature
 
-1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment.
-2. Select **Settings** > **Product** > **Features**.
-3. Under the **Search** section, turn on the **Search for records in Microsoft 365 apps** setting.
+## [New admin center](#tab/new)
 
-    :::image type="content" source="media/search-records-m365-apps.png" alt-text="A screenshot of the option to enable searching records in Microsoft 365 apps.":::
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. On the **Environments** page, select an environment.
+1. In the command bar, select **Settings**.
+1. Expand **Product**, and then select **Features**.
+1. Under the **Search** section, turn on **Search for records in Microsoft 365 apps**.
+1. Select **Save** to apply the changes.
+
+## [Classic admin center](#tab/classic)
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Environments**.
+1. On the **Environments** page, select an environment.
+1. In the command bar, select **Settings** .
+1. Expand **Product**, then select **Features**.
+1. Under the **Search** section, turn on **Search for records in Microsoft 365 apps**.
+1. Select **Save** to apply the changes.
+
+---
 
 ## Link to business records in email messages in your Outlook web client
 

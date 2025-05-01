@@ -18,6 +18,8 @@ search.audienceType:
 
 # DLP resource exemption
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 > [!IMPORTANT]
 > Effective March 2024, the data loss prevention (DLP) resource exemption feature is deprecated for tenants that have never used it before.  By October 2024, the resource exemption feature will be deprecated for all customers.  
 

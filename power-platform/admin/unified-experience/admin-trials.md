@@ -12,6 +12,8 @@ ms.reviewer: sericks
 
 # Unified admin trials
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 Administrators, partners, and ISVs historically have had to use cloud-hosted environments in Lifecycle Services to create demo or trial environments for finance and operations apps. This was to demonstrate the software capabilities and try out new features of the product on a low-cost basis.
 
 To improve this experience, Microsoft has made available free subscription-based trial environments for finance and operations apps, including Dynamics 365 Finance, Supply Chain Management, Project Operations, and Commerce apps.

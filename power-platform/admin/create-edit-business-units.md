@@ -15,6 +15,8 @@ contributors:
 ---
 # Create or edit business units 
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 A business unit is a logical grouping of related business activities.
 
 This article explains how to create or edit business units. There are two experiences available:

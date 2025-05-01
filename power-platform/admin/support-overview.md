@@ -11,6 +11,8 @@ ms.author: "sericks"
 ---
 # Support for Microsoft Power Platform and Dynamics 365 apps
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 Support is available in markets where Microsoft Power Platform or Dynamics 365 services are offered. Some specific services might not be covered in all regions immediately after general availability (GA).
 
 ## About support

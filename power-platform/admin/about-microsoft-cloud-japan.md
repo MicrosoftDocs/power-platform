@@ -13,6 +13,8 @@ search.audienceType:
 ---
 # About the Microsoft Cloud Japan datacenter
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
  If you’re an existing customer with a billing address mapping to a new data center region, review the information in this topic to understand the move process:  
   
 <a name="BKMK_Expansion"></a>   

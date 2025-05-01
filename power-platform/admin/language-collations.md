@@ -14,6 +14,8 @@ search.audienceType:
 ---
 # Microsoft Dataverse language collations
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 When an environment with a Dataverse database is created, admins are asked to select which default language they would like to use. This sets the dictionary, time and date
 format, number format, and indexing properties for the environment.
 

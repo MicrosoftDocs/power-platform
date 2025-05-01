@@ -1,5 +1,5 @@
 ---
-title: "Hierarchy security  | MicrosoftDocs"
+title: Hierarchy security  
 description: Learn how to use hierarchy security to control access.
 author: paulliew
 ms.subservice: admin
@@ -8,7 +8,7 @@ ms.reviewer: sericks
 ms.custom: "admin-security"
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/20/2024
+ms.date: 04/29/2025
 search.audienceType: 
   - admin
 ms.contributors:
@@ -16,6 +16,8 @@ ms.contributors:
 ---
 
 # Hierarchy security to control access
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 The hierarchy security model is an extension to the existing security models that use business units, security roles, sharing, and teams. It can be used with all other existing security models. Hierarchy security offers a more granular access to records for an organization and helps to bring the maintenance costs down.
 
@@ -104,19 +106,6 @@ The hierarchy security is disabled by default. To enable hierarchy security, com
     > [!NOTE]
     >  While, the hierarchy security grants the VP of Sales access to the records in the red rectangle, additional access can be available based on the security role that the VP of Sales has.  
   
-1. In the **Hierarchy Table Management** section, all system tables are enabled for hierarchy security, by default. To exclude a specific table from the hierarchy model, clear the check mark next to the table name and save your changes.
-
-    ### [New, modern UI in preview](#tab/preview)
-  
-    :::image type="content" source="media/hierarchy-security/hierarchy-security.png" alt-text="Screenshot that shows where to set up hierarchy security in Settings of the new, modern UI.":::
-
-    [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
-
-    ### [Legacy UI](#tab/LegacyUI)
-  
-    :::image type="content" source="media/hierarchy-security/hierarchy-security-setup2.png" alt-text="Screenshot that shows where to set up hierarchy security in the legacy UI.":::
-
-    ---
   
 ## Set up manager and position hierarchies
 
@@ -147,6 +136,14 @@ The manager hierarchy is easily created by using the manager relationship on the
    The example of the enabled users with their corresponding positions is shown in the following image.  
   
    :::image type="content" source="../admin/media/hierachy-security-enabled-users.png" alt-text="Screenshot that shows enabled users with assigned positions.":::
+
+## Edit and update multiple levels of records for direct reports
+By default, managers can update records for their direct reports and records for individuals who report to their direct reports. Essentailly, you can update records that are three levels deep. You can change the default setting by completing the following steps.
+
+ 1. Install the [OrganizationSettingsEditor tool](environment-database-settings.md#install-the-organizationsettingseditor-tool).
+ 1. Edit the **HierarchyLevelForHierarchyFeature** setting.
+ 2. Enter the number of direct level depth. For example, enter 5.
+ 3. Select **Update**.
 
 ## Include or exclude records owned by direct report with the disabled user status
 
@@ -179,7 +176,9 @@ Managers can see their disabled status direct report's records for environments 
   
 - Keep the effective hierarchy security to 50 users or less under a manager or position. Your hierarchy might have more than 50 users under a manager or position, but you can use the **Depth** setting to reduce the number of levels for read-only access and with this limit the effective number of users under a manager or position to 50 users or less.  
   
-- Use hierarchy security models with other existing security models for more complex scenarios. Avoid creating a large number of business units, instead, create fewer business units and add hierarchy security.  
+- Use hierarchy security models with other, existing security models for more complex scenarios. Avoid creating a large number of business units. Instead, create fewer business units and add hierarchy security.
+
+- Keep the **HierarchyLevelForHierarchyFeature** number to its lowest number of direct level depth as required by your business requirements to allow managers to update their direct reports' records.  
   
 ### See also
 

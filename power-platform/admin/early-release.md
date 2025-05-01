@@ -10,6 +10,8 @@ ms.author: iyanni
 
 ---
 # Early release cycle environments
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 Product engineering teams update online software continuously. Updates that include fixes and minor or major features and capabilities may be made daily and weekly. It may take the update days or weeks to rollout to all customer environments in all regions. 
 
 _Early release cycle_ gives you the ability to create environments that are updated first. This allows you to experience and validate scenarios that are important to you before any updates reach your business-critical applications.

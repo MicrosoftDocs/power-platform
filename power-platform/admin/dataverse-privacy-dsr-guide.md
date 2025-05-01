@@ -14,6 +14,8 @@ search.audienceType:
 
 # Responding to Data Subject Rights (DSR) requests for Microsoft Dataverse customer data
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 [!INCLUDE [gdpr-intro](~/../shared-content/shared/privacy-includes/gdpr-intro.md)]
 
 This article provides examples of steps you can take to support privacy compliance when using Power Apps, Power Automate, and Dataverse. Learn how to use Microsoft products, services, and administrative tools to help controller customers find, access, and act on personal data in the Microsoft cloud in response to Data Subject Rights (DSR) requests.

@@ -33,8 +33,6 @@ In this article, learn about all the functions available in Power Pages.
 
 **[Asin](reference/function-trig.md)** – Returns the arcsine of a number, in radians.
 
-**[Assert](reference/function-assert.md)** – Evaluates to true or false in a test.
-
 **[As](reference/operators.md#thisitem-thisrecord-and-as-operators)** – Names the current record in gallery, form, and record scope functions such as **ForAll**, **With**, and **Sum**.
 
 **[AsType](reference/function-astype-istype.md)** – Treats a record reference as a specific table type.
@@ -51,13 +49,9 @@ In this article, learn about all the functions available in Power Pages.
 
 ## C
 
-**[Calendar](reference/function-clock-calendar.md)** – Retrieves information about the calendar for the current locale.
-
 **[Char](reference/function-char.md)** – Translates a character code into a string.
 
 **[Choices](reference/function-choices.md)** – Returns a table of the possible values for a lookup column.
-
-**[Clock](reference/function-clock-calendar.md)** – Retrieves information about the clock for the current locale.
 
 **[Coalesce](reference/function-isblank-isempty.md)** – Replaces _blank_ values while leaving non-_blank_ values unchanged.
 
@@ -108,6 +102,8 @@ In this article, learn about all the functions available in Power Pages.
 **[EndsWith](reference/function-startswith.md)** – Checks whether a text string ends with another text string.
 
 **[EOMonth](reference/function-edate-eomonth.md)** – Adds or subtracts months to a date, returning the last day of that month.
+
+**[Error](reference/function-iferror.md)** – Create a custom error or pass through an error.
 
 **[exactin](reference/operators.md#in-and-exactin-operators)** – Checks if a text string is contained within another text string or table, case dependent. Also used to check if a record is in a table.
 
@@ -305,6 +301,8 @@ In this article, learn about all the functions available in Power Pages.
 
 ## U
 
+**[UniChar](reference/function-char.md)** – Translates a Unicode code into a string.
+
 **[Upper](reference/function-lower-upper-proper.md)** – Converts letters in a string of text to all uppercase.
 
 **[User](reference/function-user.md)** – Returns information about the current user.
@@ -318,7 +316,6 @@ In this article, learn about all the functions available in Power Pages.
 **[Value](reference/function-value.md)** – Converts a string to a number.
 
 **[VarP](reference/function-aggregates.md)** – Returns the variance of its arguments.
-
 
 ## W
 

@@ -14,6 +14,8 @@ search.audienceType:
 ---
 # Edit mailboxes
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 By default, when users and queues are created in customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), their respective mailbox records are also created. These mailbox records contain information that is specific to an individual mailbox on the email server, like email address, mailbox credentials, and email synchronization method. To process email messages using server-side synchronization for users and queues, their respective mailbox records should be associated to an email server profile record in customer engagement apps.  
 
 If your organization wants to configure server-side synchronization using a forward mailbox, you can create a new forward mailbox record. 

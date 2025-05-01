@@ -15,6 +15,8 @@ search.audienceType:
 
 # Download a list of active users in your tenant
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 This process has changed. Please see [Download Reports](analytics-common-data-service.md#download-reports).
 
 

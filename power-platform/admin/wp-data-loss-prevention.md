@@ -15,6 +15,8 @@ contributors:
 - ChrisGarty 
 ---
 # Data Loss Prevention (DLP) policies 
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 Data Loss Prevention (DLP) is a critical aspect of maintaining data security and compliance within the Microsoft Power Platform ecosystem. 
 
 You can create data policies that can act as guardrails to help reduce the risk of users from unintentionally exposing organizational data. A core component of Power Apps, Power Automate, and Microsoft Copilot Studio is the use of connectors to enumerate, populate, push, and pull data. **Data policies** in Power Platform admin center allow administrators to control access to these connectors in various ways to help reduce risk in your organization.

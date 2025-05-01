@@ -12,6 +12,8 @@ search.audienceType:
 ---
 # About the Microsoft Cloud Canada datacenter
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 <a name="BKMK_NewCloud"></a>   
 ## New Microsoft Cloud Services in Canada  
   

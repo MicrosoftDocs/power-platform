@@ -12,6 +12,8 @@ search.audienceType:
 
 # Buy Power Automate licenses
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 ## I'm an admin
 
 Power Platform admins can purchase licenses for Power Automate and then manage those licenses in their organization.

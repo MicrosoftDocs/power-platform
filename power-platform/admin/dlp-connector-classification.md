@@ -20,6 +20,8 @@ search.audienceType:
 
 # Connector classification
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 Data groups are a simple way to categorize connectors within a data loss prevention (DLP) policy. The three data groups available are the **Business** data group, the **Non-Business** data group, and the **Blocked** data group. 
 
 A good way to categorize connectors is to place them in groups based on the business-centered or personal-use-centered services that they connect to in the context of your organization. Connectors that host business-use data should be classified as **Business**, and connectors that host personal-use data should be classified as **Non-Business**. Any connectors that you want to keep from being used at all across one or more environments should be classified as **Blocked**.

@@ -4,7 +4,7 @@ description: Learn how to use Power Platform Advisor to optimize your tenant.
 author: sidhartg
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/25/2025
+ms.date: 04/28/2025
 ms.subservice: admin
 ms.author: sidhartg
 ms.reviewer: sericks
@@ -15,6 +15,8 @@ search.audienceType:
 ---
 
 # Use Power Platform Advisor
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 Power Platform Advisor is your guide to personalized recommendations to optimize your Power Platform tenant. Advisor analyzes all Managed Environments and the apps in these environments within your Power Platform tenant. Advisor offers solutions to enhance security, reliability, and overall health.
 
@@ -198,14 +200,18 @@ This recommendation lists the number of pending license requests in your tenant.
 
 ### High-value apps in default environment
 
-This recommendation lists apps that are potentially high-value (used by over 100 users each month) and are currently hosted in the default environment. Apps that don't follow a proper application lifecycle management are prone to business continuity risks. By moving these high-value apps out of the default environment to a Managed Environment, you can also take advantage of various premium security and governance capabilities, such as [Customer Managed Keys](customer-managed-key.md) and [Solution Checker enforcement](managed-environment-solution-checker.md), to protect these apps. Alternatively, you can set the default environment as a [Managed Environment](managed-environment-overview.md) to leverage premium security and governance capabilities for all resources.
+This recommendation lists apps that are potentially high-value (used by over 100 users each month) and are currently hosted in the default environment. Apps that don't follow a proper application lifecycle management are prone to business continuity risks. By moving these high-value apps out of the default environment to a Managed Environment, you can also take advantage of various premium security and governance capabilities, such as [Customer Managed Keys](customer-managed-key.md) and [Solution Checker enforcement](managed-environment-solution-checker.md), to protect these apps. Alternatively, you can set the default environment as a [Managed Environment](managed-environment-overview.md) to use premium security and governance capabilities for all resources.
 
 > [!IMPORTANT]
 >
 > - Apps should follow application lifecycle management (ALM) best practices. Not following proper ALM could cause a single change to break the app for several users with no easy way to recover.
 > - The new _pipelines_ feature helps citizen developers, without prior ALM experience, to safely deploy their apps and dependent assets to a production environment.
 
-### Websites are expiring in the next 7 days
+### Power Pages - Review & assign capacity to avoid degraded performance
+
+This recommendation identifies environments where capacity consumption is nearing or exceeding the assigned limits. To prevent performance degradation, review the affected environments and allocate more capacity as needed. Select an environment to [manage and adjust capacity assignments](/power-pages/admin/capacity-management) accordingly.
+
+### Websites are expiring in the next seven days
 
 This recommendation lists trial websites that are expiring in the next seven days. Review and [convert the websites to production](/power-pages/admin/convert-site) as needed.
 
@@ -286,4 +292,4 @@ This recommendation lists users that are actively using Power Apps applications 
 Learn more about [Microsoft Power Apps and Power Automate use rights for Microsoft 365 applications](/power-platform/admin/powerapps-flow-licensing-faq#what-are-microsoft-power-apps-and-power-automate-use-rights-for-microsoft-365-applications) with additional information about the April 1,2025 enforcement in the [Power Platform licensing FAQs](/power-platform/admin/powerapps-flow-licensing-faq).
 
 > [!NOTE]
-> This recommendation provides a list of users that have used these apps without a premium license in the past 14 days.
+> This recommendation only checks for Power Apps premium plans and may show users from apps that use [Power Apps per app](about-powerapps-perapp.md) or [Pay-as-you-go](pay-as-you-go-overview.md) plans. Review if your apps use [per app plans](about-powerapps-perapp.md#step-3-set-up-apps-to-use-per-app-plans) or [pay-as-you-go plans](pay-as-you-go-set-up.md#set-up-pay-as-you-go-for-your-environment-from-your-apps-setting).

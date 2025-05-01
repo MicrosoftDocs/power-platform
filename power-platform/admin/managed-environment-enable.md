@@ -3,7 +3,7 @@ title: Enable Managed Environments
 description: Learn how to enable Managed Environments for Power Platform in the admin center or PowerShell.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/24/2024
+ms.date: 03/06/2025
 author: mikferland-msft
 ms.author: miferlan
 ms.reviewer: sericks
@@ -13,6 +13,8 @@ search.audienceType:
   - admin
 ---
 # Enable Managed Environments
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 <!-- https://go.microsoft.com/fwlink/?linkid=2194805 and 2211456 -->
 
@@ -47,6 +49,7 @@ Use the following settings to increase visibility and control for the selected e
 | Don't set limits | Select to not limit sharing of canvas apps. |
 | Exclude sharing with security groups | Select if makers aren't allowed to share canvas apps with any security groups. Admins may share with a limit on who an app can be shared with. |
 | Limit total individuals who can be shared to | If **Exclude sharing with security groups** is selected, select to limit the number of people that makers can share canvas apps with. |
+| Enable AI-generated app descriptions (preview) | If descriptions of apps are blank, AI is used to generate them. This happens when an app is published and can help people understand what the purpose of an app is. |
 | **[Usage insights](managed-environment-usage-insights.md)** | Select to include insights for this environment in the weekly email digest. |
 | **[Data policies](managed-environment-data-policies.md)** | Help safeguard your organizational data by limiting the connectors available.|
 | See active data policies for this environment | View the policies that define the consumer connectors that specific data can be shared with. |

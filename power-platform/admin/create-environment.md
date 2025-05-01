@@ -20,6 +20,8 @@ contributors:
 
 # Create and manage environments in the Power Platform admin center
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 An environment is a space to store, manage, and share your organization's business data, apps, and flows. An environment is a container to separate apps that might have different roles, security requirements, or target audiences. Power Apps creates a single default environment for each tenant that's shared by all users in that tenant.
 
 ## Who can create environments?

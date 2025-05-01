@@ -1,8 +1,8 @@
 ---
-title: "Copy an environment"
-description: "Learn how to copy apps and data from an environment. Review next steps for administrators in the target environment." 
+title: Copy an environment
+description: Learn how to copy apps and data from an environment. Review next steps for administrators in the target environment.
 ms.topic: conceptual
-ms.date: 03/25/2024
+ms.date: 03/25/2025
 author: ChrisGarty
 ms.author: cgarty
 contributors:
@@ -11,12 +11,15 @@ ms.reviewer: sericks
 ---
 # Copy an environment
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 You can use the **Copy** option in the Microsoft Power Platform admin center to copy data between environments. You can select two levels of copy: **Everything** or **Customizations and schemas only**.  
 
 > [!NOTE]
 > - The target environment will be listed in the **Select environment to overwrite** drop-down. If you don't see an environment, that means you can't overwrite it. For example, you can't overwrite production environments so you won't see any environments of type production.  
 >   :::image type="content" source="media/copy-environment-no-target.png" alt-text="No target for copying environment.":::
 > - You can only copy to an environment in the same tenant and region.
+> - If an environment is [enabled for Virtual Network support](vnet-support-overview.md), you can only copy to an environment in the same enterprise policy.
 > - Components that have not been added to a solution (including canvas apps, flows, custom connectors, and connections) might not be part of the copy. You should validate your apps post copy.
 > - For each canvas App only up to 20 of the most recent revisions will be copied over.
 > - You can't copy from or to a default or trial type environment.

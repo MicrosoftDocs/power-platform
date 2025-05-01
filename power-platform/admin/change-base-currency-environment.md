@@ -13,6 +13,8 @@ search.audienceType:
 ---
 # Change the base currency of a Dataverse environment in Power Platform
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 When you create an environment that includes a database in Microsoft Power Platform, you must specify the currency that is used as the base currency in Dataverse. The base currency is the default currency. It's used in currency conversion and reporting.
 
 In some situations, you might have to change the base currency of an environment. This article explains how to change it.

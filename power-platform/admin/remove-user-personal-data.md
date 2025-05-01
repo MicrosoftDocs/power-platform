@@ -13,6 +13,8 @@ search.audienceType:
 ---
 # Remove user personal data
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 After a user is deleted by the global admin from the Microsoft 365 admin center, the user's personal data can be removed from all tenant environments. A user is deleted from the Microsoft 365 admin center when:
 
 1. The user leaves the company. In this scenario, the user record remains in the tenant's Active Directory for 30 days before the record is deleted.

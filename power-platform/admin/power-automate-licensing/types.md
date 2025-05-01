@@ -20,6 +20,8 @@ search.audienceType:
 
 # Types of Power Automate licenses
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 Power Automate supports both user and capacity licensing. With a Power Automate Premium user license, users gain the full set of capabilities for cloud and desktop automation including premium connectors, process and task mining, AI Builder, use of Managed Environments, and Microsoft Dataverse storage.
 
 For additional capacity, running desktop flows unattended, or licensing flows on their own without use licenses, subscribe to Power Automate Process licenses or enable pay-as-you-go. To extend further, [additional add-ons](add-ons.md) are available for hosted machines, RPA unattended bots expanding Dataverse storage, AI credits, and other resources.

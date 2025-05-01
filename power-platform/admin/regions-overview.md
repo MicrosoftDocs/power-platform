@@ -5,13 +5,16 @@ author: sericks007
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/03/2024
+ms.date: 04/28/2024
 ms.subservice: admin
+ms.custom: NewPPAC
 ms.author: sericks
 search.audienceType: 
   - admin
 ---
 # Regions overview 
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 For multinational companies with employees and customers distributed around the world, you can create and manage environments specific to your global regions. You can create an environment in a different region than where your tenant resides. Local environments can provide quicker data access for users in that region. Be sure to read [A multi-environment deployment](multiple-online-environments-tenants.md#a-multi-environment-deployment) to understand the features of multiple environments.  
 
@@ -22,12 +25,17 @@ Your app is deployed in the region that hosts the environment. For example, if y
 ### Using Power Platform admin center
 If you're an administrator, you can determine the region of each environment in the Power Platform admin center.
 
-- Browse to the [admin center](https://admin.powerplatform.microsoft.com), and sign in with your admin account.
-  
-  From the left-side menu, select **Environments**.
-  
-  > [!div class="mx-imgBorder"] 
-  > ![Environments page.](media/environment-list-region.png "Environments page")
+#### [New admin center](#tab/new)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. On the **Environments** page, locate the **Region** column.
+
+#### [Classic admin center](#tab/classic)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Environments**.
+1. On the **Environments** page, locate the **Region** column.
+---
 
 ## What regions are available?
 

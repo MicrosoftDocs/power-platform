@@ -19,6 +19,8 @@ ms.contributors:
 
 # System and application users
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 There's a list of special system and application users that is created when the system is provisioned.  Special system users are created for integration and support scenarios. Application users are created during system provisioning for setup and configuration management.  [Application users](create-users.md#create-an-application-user) can also be used for performing back-end services and their data access is managed by the special security role that is assigned. These security roles are managed by the system and might not be modifiable. See other system [predefined security roles](database-security.md#predefined-security-roles).  
 
 Most of these users are hidden from user views but they can be found by using the Advanced Find on the Users table.  Don't delete or modify these users including changing or reassigning security role.

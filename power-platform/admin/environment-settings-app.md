@@ -12,6 +12,8 @@ search.audienceType:
 ---
 # Use the Power Platform Environment Settings app
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 The Power Platform Environment Settings app provides a modern, performant, accessible, secure, and extensible management experience. This app is generally available to the public, replacing the legacy advanced settings experience to provide a unified experience for system administrators to create and manage their environment-wide settings.
 
 > [!IMPORTANT]

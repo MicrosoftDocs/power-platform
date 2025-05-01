@@ -20,6 +20,8 @@ search.audienceType:
 
 # Configure user security in an environment
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 You can create security roles and then assign those roles (new or existing) to users whether or not they use Dataverse.
 
 ## Prerequisites

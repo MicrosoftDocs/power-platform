@@ -1,7 +1,7 @@
 ---
 title: Restrict cross-tenant inbound and outbound access
 description: Use tenant restrictions to control access to SaaS cloud applications based on the Microsoft Entra tenant. You can also enforce tenant isolation for Power Platform connections. 
-ms.date: 01/31/2025
+ms.date: 04/23/2025
 ms.topic: conceptual
 ms.assetid: 
 author: mihaelablendea
@@ -12,11 +12,14 @@ ms.custom: NewPPAC
 search.audienceType: 
   - admin
 contributors:
+  - cmerino01 
   - jahnavisunil
   - akadrno
 ---
 
 # Cross-tenant inbound and outbound restrictions
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 Microsoft Power Platform has a rich ecosystem of connectors based on Microsoft Entra that allow authorized Microsoft Entra users to build compelling apps and flows establishing connections to the business data available through these data stores. Tenant isolation makes it easy for administrators to ensure that these connectors can be harnessed in a safe and secure way within the tenant while minimizing the risk of data exfiltration outside the tenant. Tenant isolation allows Power Platform administrators to effectively govern the movement of tenant data from Microsoft Entra authorized data sources to and from their tenant. 
 
@@ -142,17 +145,10 @@ In this scenario, the admin adds the Fabrikam tenant to both the inbound and out
 1. Select **Save**.
 ---
 
-
-
 > [!NOTE]
-> You must have a Power Platform administrator role to see and set the tenant isolation policy.
-
-
-
-
-
-> [!NOTE]
-> To ensure that tenant isolation doesn't block any calls when used, turn tenant isolation **On**, add a new tenant rule, set **Tenant ID** as "\*", and set allowed direction to **inbound** and **outbound**.
+> - You must have a Power Platform administrator role to see and set the tenant isolation policy.
+> - To ensure that tenant isolation doesn't block any calls when used, turn tenant isolation **On**, add a new tenant rule, set **Tenant ID** as "\*", and set allowed direction to **inbound** and **outbound**.
+> - Due to technical limitations, the threshold limit for rules is 500.
 
 You can perform all the allow list operations like add, edit, and delete while tenant isolation is turned **On** or **Off**. Allow list entries do have an effect on the connection behavior when tenant isolation is turned **Off** since all cross-tenant connections are allowed. 
 

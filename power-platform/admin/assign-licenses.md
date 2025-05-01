@@ -15,6 +15,8 @@ search.audienceType:
 ---
 # Assign licenses
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 A user account must be assigned a license in order for the user to have access to the service.
 
 ## Add a license to a user account

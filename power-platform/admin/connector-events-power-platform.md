@@ -25,6 +25,8 @@ contributors:
 
 # View the Power Platform connector activity logs
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 Audit logs are logs for important system level events. In the audit log feature, audit logs are available for events related to connections and custom connectors.
 
 ## Access the logs

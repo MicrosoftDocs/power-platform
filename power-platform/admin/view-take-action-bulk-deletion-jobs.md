@@ -13,6 +13,8 @@ search.audienceType:
 ---
 # View and take action on bulk deletion jobs
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 You can view the status of, pause, postpone, and resume a system job that you created using **Bulk Record Deletion**.  
   
 1. In the Power Platform admin center, select an environment. 

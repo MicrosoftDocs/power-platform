@@ -13,6 +13,8 @@ search.audienceType:
 ---
 # Select the start date for processing incoming email
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 When you test and enable a mailbox that is configured for processing incoming email from the mailbox form, you're prompted to select a start date to process email from.
 
 :::image type="content" source="media/start-date-incoming-email.png" alt-text="Set the start date for processing incoming email.":::

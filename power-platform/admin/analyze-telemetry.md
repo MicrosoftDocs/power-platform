@@ -13,6 +13,8 @@ search.audienceType:
   - admin
 ---
 # Analyze model-driven apps and Microsoft Dataverse telemetry with Application Insights
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 <!-- fwlink: 2147020 2151390 -->
 
 You can set up an Application Insights environment to receive telemetry on diagnostics and performance captured by the Dataverse platform.

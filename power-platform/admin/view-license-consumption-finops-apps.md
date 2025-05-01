@@ -14,6 +14,8 @@ search.audienceType:
 
 # View license consumption for finance and operations apps
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 <!-- fwlink: https://go.microsoft.com/fwlink/?linkid=2206011 -->
 
 

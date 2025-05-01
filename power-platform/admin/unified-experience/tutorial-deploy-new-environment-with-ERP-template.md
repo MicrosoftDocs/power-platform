@@ -14,6 +14,8 @@ search.audienceType:
 
 # Tutorial: Provision a new environment with an ERP-based template
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 Finance and operations apps have been reimagined as an application hosted by Microsoft Dataverse. No longer do customers need to provision their enterprise resource planning (ERP) system separately from their low-code and other Dynamics 365 platform applications. Additionally, most administrative actions in Power Platform are available through the admin center and an API-based experience.
 
 In this tutorial, learn how to:

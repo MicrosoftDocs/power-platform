@@ -13,6 +13,8 @@ search.audienceType:
 ---
 # Admin Analytics for Power Apps
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 Analytics for the environment admin is available at the Microsoft Power Platform admin center. The admin reports provide a view into environment level usage, errors, service performance to drive governance, and change management services to users. These reports are available for canvas apps only and not available for model-driven apps.
 
 To access these reports, sign in to the Power Platform admin center and select **Analytics** > **Power Apps**. Reports appear in a menu bar at the top of the page.
@@ -42,11 +44,6 @@ There are six reports available for Power Apps admins. The last viewed environme
 
 > [!div class="mx-imgBorder"] 
 > ![Power Apps analytics usage report.](media/powerapps-analytics-usage.png "Power Apps analytics usage report")
-
-**Location** report provides a map-based view of usage. It gives an insight into regional adoption and usage trends.  
-
-> [!div class="mx-imgBorder"] 
-> ![Power Apps analytics location report.](media/powerapps-analytics-location.png "Power Apps analytics location report")
 
 **Toast Errors** report provides insights into the toast error trends, types, and counts per app to help drive improvements in app quality. The toast errors are errors displayed to the end users of the app. 
 

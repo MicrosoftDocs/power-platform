@@ -13,6 +13,8 @@ search.audienceType:
 ---
 # Manage Bing Maps for your organization
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 Learn how you can manage [!INCLUDE[pn_bing_maps](../includes/pn-bing-maps.md)] for your entire organization. When [!INCLUDE[pn_bing_maps](../includes/pn-bing-maps.md)] is turned on, people see a map of a customer's location when they view contacts, leads, or accounts.  
   
 > [!IMPORTANT]

@@ -13,6 +13,8 @@ search.audienceType:
 ---
 # Customize regional options 
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 You can customize how numbers, currencies, times, and dates appear to everyone in your organization.
 
 > [!NOTE]

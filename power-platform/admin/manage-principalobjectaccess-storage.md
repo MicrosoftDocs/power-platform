@@ -15,6 +15,8 @@ search.audienceType:
 ---
 # Manage PrincipalObjectAccess storage
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 Users in an environment with the Microsoft Dataverse database can collaborate with other users by granting access to a user-owned record. The user can share a record with another user or team, or reassign a record to another user or team.
 
 To manage this record-level collaboration and to provide user access to shared records, all sharing of records and their permissions are stored in the PrincipalObjectAccess (POA) table. Whenever users try to access a record that they don’t own or don't have the appropriate privilege in their security role, the system checks the POA table to authorize the user’s access. 

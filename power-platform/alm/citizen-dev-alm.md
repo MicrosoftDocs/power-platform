@@ -6,7 +6,7 @@ author: caburk
 ms.subservice: alm
 ms.author: caburk
 ms.custom: ""
-ms.date: 02/06/2025
+ms.date: 03/13/2025
 ms.reviewer: "matp"
 ms.topic: "article"
 search.audienceType: 
@@ -16,7 +16,7 @@ search.audienceType:
 
 This scenario aims at the legacy canvas app makers and flow makers in Power Apps and Power Automate, respectively, who work in a Microsoft Dataverse environment *without* a Dataverse database.
 
-You currently build canvas apps and flows that aren't* part of a solution, and
+You currently build canvas apps and flows that aren't part of a solution, and
 share your apps and flows by specifying each user by name or specifying a
 security group in Microsoft Entra who can access your app or flow.
 

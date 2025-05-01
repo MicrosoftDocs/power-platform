@@ -13,6 +13,8 @@ search.audienceType:
 ---
 # Create custom dashboards by using Power Platform inventory and usage data (preview)
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 This topic discusses how you can use data exported from Power Platform and with other line-of-business scenarios, and display data insights at tenant and environment levels across business units. For example, you can use exported Power Platform inventory and usage data for your existing enterprise dashboards and other custom solutions.
