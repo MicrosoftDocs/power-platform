@@ -108,7 +108,7 @@ Application Insights contains a superset of runtime event logs.
 ## Known limitations
 
 - Only logs that are associated with metric recommendations are available.
-- Time-based metrics report out only the seventy-fifth percentile.
+- Time-based metrics report out only the 75th percentile.
 
 ## Considerations
 
