@@ -169,7 +169,7 @@ Create a federated credential for the app registration. Learn more about federat
     - Replace `<orgid>` with the organization ID.
     - Replace `<sharepointmanagedidentityid>` with the GUID created earlier with the sharepointmanagedidentities record.
 
-   > [NOTE!]
+   > [!NOTE]
    > Use the script in [Generate the subject identifier](#generate-the-subject-identifier) to generate the subject identifier value with the base64 encoded values.
 
 1. Select **Add** to create the credential.
