@@ -264,7 +264,7 @@ This PowerShell script generates the subject identifier value based on input val
          },
          # MoonCake
          @{
-               IssuerUrl                = "https://login.partner.microsoftonline.cn"
+               IssuerUrl                = "https://login.partner.microsoftonline.cn/"
                TokenExchangeResourceUrl = "api://AzureADTokenExchangeChina"
                SubjectPrefix            = "/eid1/c/chn"
                Environments             = @("MoonCake")
