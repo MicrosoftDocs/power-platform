@@ -1,14 +1,14 @@
 ---
 title: Meet compliance requirements
 description: Configure identity and access management for Microsoft Power Platform to ensure secure access to resources.
-#customer intent: As a Power Platform user, I want to configure identity and access management for Microsoft Power Platform so that I can ensure secure access to resources.
+#customer intent: As an IT admin, I want to understand compliance requirements for Power Platform so that I can meet legal and regulatory standards.  
 author: manuelap-msft
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
-ms.date: 02/28/2025
+ms.date: 05/01/2025
 ---
 
 # Meet compliance requirements
@@ -82,7 +82,7 @@ Ensure data is protected and managed in compliance with regulatory requirements.
 
 Train employees on data protection best practices and the importance of adhering to data residency requirements. Tailor training materials to the specific roles and responsibilities of different employees. Data protection laws and regulations are constantly evolving. Ensure that training programs are regularly updated to reflect the latest legal requirements and best practices. Use interactive methods such as workshops and showcasing real-world solutions to make the training engaging and effective. Provide continuous support and resources, such as access to data protection officers or legal advisors, to help employees stay informed and compliant.
 
-## Next step
+## Next steps
 
 Review the detailed articles in this series to further enhance your security posture:
 
@@ -92,12 +92,9 @@ Review the detailed articles in this series to further enhance your security pos
 - [Configure identity and access management](conditional-access.md)
 - [Secure the default environment](secure-default-environment.md)
 
-Once you've reviewed all the articles, take a look at the security checklist to ensure that their Power Platform deployments are robust, resilient, and aligned with best practices
+[!INCLUDE [guidance-adoption-security-review.checklist](../../includes/guidance-adoption-security-review.checklist.md)]
 
-> [!div class="nextstepaction"]
-> [Review the security checklist](security-checklist.md)
-
-## Related resources
+## Related information
 
 - [Compliance and data privacy](/power-platform/admin/wp-compliance-data-privacy)
 - [Microsoft Trust Center](https://www.microsoft.com/trustcenter)

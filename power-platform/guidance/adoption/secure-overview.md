@@ -26,4 +26,4 @@ This series of articles provides guidance on achieving this balance, offering re
 1. [Meet compliance requirements](compliance.md). Ensure visibility and adherence to industry and regional regulatory requirements.
 1. [Secure the default environment](secure-default-environment.md). Implement security measures to protect the default environment from unauthorized access and potential threats.
 
-Once reviewing the articles, review the [security checklist](security-checklist.md). The checklist gives an overview of security measures and best practices. It serves as a practical guide to implement strategies discussed in the articles and offers actionable steps to improve your organization's security posture.
+After reviewing the articles, review the [security checklist](security-checklist.md). The checklist gives an overview of security measures and best practices. It serves as a practical guide to implement strategies discussed in the articles and offers actionable steps to improve your organization's security posture.

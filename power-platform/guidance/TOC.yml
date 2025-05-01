@@ -79,7 +79,7 @@
               href: adoption/assess-security-posture.md
             - name: Enhance your security posture
               href: adoption/security-posture-management.md
-            - name: Detect threats
+            - name: Detect threats to your organization
               href: adoption/threat-detection.md
             - name: Establish data protection and privacy controls
               href: adoption/data-protection.md
