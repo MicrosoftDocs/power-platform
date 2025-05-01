@@ -474,9 +474,16 @@ This PowerShell script generates the subject identifier value based on input val
   1. Create a `test.ps1` and pass inputs to the `GetSharePointManagedIdentifyConfig` function
   
       ```powershell
-      . GetSharePointManagedIdentifyConfig.ps1
-  
-      GetSharePointManagedIdentifyConfig -environmentType "Public" -sharePointManagedIdentityId "7098aeec-1b6e-466d-a9e5-56b5af4f263a" -tenantId "631e6586-3a18-42a6-9204-058bdf23d2eb" -environmentId "ca61fa25-fe11-eabb-9029-9664406f0c0d"
+      . .\GetSharePointManagedIdentifyConfig.ps1
+      
+      $configInput = @{
+          environmentType = "Public"
+          sharePointManagedIdentityId = "<sharePointManagedIdentityId>"
+          tenantId = "<tenantId>"
+          environmentId = "<environmentId>"
+      }
+      
+      GetSharePointManagedIdentifyConfig @configInput
       ```
 
 1. Execute the `test.ps1` script.
