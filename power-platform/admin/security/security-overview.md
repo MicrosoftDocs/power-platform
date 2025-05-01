@@ -133,11 +133,12 @@ To dismiss a recommendation, complete the following steps.
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Security**.
 1. In the **Security** pane, select **Overeview**.
-1. The **Overview** page appears. Scroll down to the **Recommendations** section.
+1. The **Overview** page appears. Scroll down to the **Take action to increase your security score** section.
 1. In the **Active** tab, select the recommendations that you want to dismiss.
 1. Select the **X** icon to dismiss the recommendation.
-1. The Dismiss window is displayed. Select a reason for dismissing the recommendation from the dropdown list. Then select **Dismiss**.
-1. The recommendation moves to the **Dismissed** tab.
+1. The **Dismiss** window is displayed. Select a reason for dismissing the recommendation from the dropdown list. Then select **Dismiss**.
+
+    The recommendation moves to the **Dismissed** tab.
 
 To make a recommendation active again, complete the following steps.
 
