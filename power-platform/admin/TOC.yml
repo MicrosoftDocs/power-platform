@@ -478,10 +478,16 @@
                   href: wp-task-automation-flow.md
         - name: Monitor
           items:
-            - name: Monitor page (preview)
+            - name: Overview (preview)
               href: monitoring/monitoring-overview.md
-            - name: View logs (preview)
+            - name: View event logs and error logs (preview)
               href: monitoring/logs.md
+            - name: Metrics and recommendations
+              items:
+                - name: For Power Apps (preview)
+                  href: monitoring/monitor-power-apps.md
+                - name: For Power Automate (preview)
+                  href: monitoring/monitor-power-automate.md
         - name: Security
           items:
             - name: Overview of Power Platform security
