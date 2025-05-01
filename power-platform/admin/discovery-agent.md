@@ -21,6 +21,8 @@ search.audienceType:
 
 The discovery agent is an advanced global search tool integrated into the Power Platform admin center. It's designed to enhance user navigation within the admin center by leveraging natural language search capabilities. This tool allows users to quickly and efficiently locate information, settings, and features without needing to know their exact location or name. By providing accurate and context-relevant search results, the discovery agent helps improve overall productivity and simplifies the search process.
 
+:::image type="content" source="media/discovery-agent.png" alt-text="The discovery agent is an advanced global search tool integrated into the Power Platform admin center." lightbox="media/discovery-agent.png":::
+
 You can use discovery agent to:
 - Quickly find specific settings or features within the Power Platform admin center.
 -	Access environment configurations without navigating through multiple pages.
