@@ -63,7 +63,7 @@ Create an App registration with API permission to SharePoint. Learn more about r
    1. Select **Grant admin consent for `<tenant name>`**.
   
 > [!NOTE]
-> To apply more granular access to individual SharePoint sites, the **Sites.Selected** can be used to apply a scope. Learn more at [Understanding Resource Specific Consent for Microsoft Graph and SharePoint Online](https://learn.microsoft.com/sharepoint/dev/sp-add-ins-modernize/understanding-rsc-for-msgraph-and-sharepoint-online).
+> To apply more granular access to individual SharePoint sites, the **Sites.Selected** can be used to apply a scope. Learn more at [Understanding Resource Specific Consent for Microsoft Graph and SharePoint Online](/sharepoint/dev/sp-add-ins-modernize/understanding-rsc-for-msgraph-and-sharepoint-online).
 
 ## Create managed identities in Dataverse
 
