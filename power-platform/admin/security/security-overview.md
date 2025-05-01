@@ -158,7 +158,7 @@ To configure security settings at the environment group level, complete the foll
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Security**.
-1. In the **Security** pane, select **Overeview**.
+1. In the **Security** pane, select **Overview**.
 1. The **Overview** page appears. Scroll down to the **Take action to increase your security score** section.
 1. Select a recommendation.
 1. In the pane that is displayed, select the **Environment groups** tab and the **Environments** tab to select the environment groups or environments to which you want the security setting applied.
@@ -166,6 +166,7 @@ To configure security settings at the environment group level, complete the foll
 
     > [!Note]
     > The name of the button is determined by the security setting you're applying. In this specific example, we're applying a **Sharing** security setting, that's why **Manage sharing** is the name of the button mentioned in this step.
+    > Selected settings will get applied to all the environments in that environment group.
 
 ## Provide feedback
 
