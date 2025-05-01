@@ -148,7 +148,9 @@ To make a recommendation active again, complete the following steps.
 1. The **Overview** page appears. Scroll down to the **Take action to increase your security score** section.
 1. Select the **Dismissed** tab.
 1. Select the recommendation that you want to make active.
-1. Select the **Arrows** icon to make the recommendation active. The recommendation moves to the **Active** tab.
+1. Select the **Arrows** icon to make the recommendation active.
+
+    The recommendation moves to the **Active** tab.
   
 ## Manage security settings at an environment group level
 Managing Power Platform at scale presents challenges for IT teams overseeing numerous environments. To streamline security governance, administrators can configure security settings at the *environment group* level, ensuring uniform enforcement of policies across all environments within a group.
