@@ -305,7 +305,7 @@ This PowerShell script generates the subject identifier value based on input val
         Encoded Tenant ID: $encodedTenantId
         Power Platform Managed Identity App ID: $POWER_PLATFORM_MANAGED_IDENTITY_APP_ID
         Encoded App ID: $encodedPowerPlatformManagedIdentityAppId
-        Token Exchange Resource URL: $environmentTypeConfig.TokenExchangeResourceUrl
+        Token Exchange Resource URL: $($environmentTypeConfig.TokenExchangeResourceUrl)
         Issuer URL for Federated Credential Configuration: $issuerUrlForFederatedCredentialConfig
     
     Result:
@@ -325,9 +325,13 @@ This PowerShell script generates the subject identifier value based on input val
     . .\GetSharePointManagedIdentifyConfig.ps1
     
     $configInput = @{
-        environmentType = "Public"
+        # Specifies the type of environment (e.g., Public, Gov, GovFr, High, DoD, MoonCake, USNat, USSec)
+        environmentType = "<environentType>"
+        # GUID of the SharePoint Managed Identity
         sharePointManagedIdentityId = "<sharePointManagedIdentityId>"
+        # GUID of the Azure AD tenant
         tenantId = "<tenantId>"
+        # GUID of the environment where the configuration is being applied
         environmentId = "<environmentId>"
     }
     
