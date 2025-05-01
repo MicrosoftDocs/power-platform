@@ -4,7 +4,7 @@ description: Learn key strategies and best practices for data protection and pri
 #customer intent: As an IT admin, I want to understand data protection strategies in Power Platform so that I can ensure security and compliance.
 author: manuelap-msft
 ms.component: pa-admin
-ms.topic: concept-articl
+ms.topic: concept-article
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: pankajsharma2087

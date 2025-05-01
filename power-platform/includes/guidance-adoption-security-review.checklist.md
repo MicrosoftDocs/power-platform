@@ -9,4 +9,4 @@ ms.subservice: guidance
 After reviewing the articles, review the security checklist to ensure Power Platform deployments are robust, resilient, and aligned with best practices.
 
 > [!div class="nextstepaction"]
-> [Review the security checklist](security-checklist.md)
+> [Review the security checklist](../guidance/adoption/security-checklist.md)
