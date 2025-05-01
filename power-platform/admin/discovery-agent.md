@@ -48,7 +48,7 @@ The discovery agent supports the following categories for searches:
 - **Documentation**: Access articles and resources at [learn.microsoft.com](https://learn.microsoft.com).
 - **Learning paths**: Explore guided training modules available at [learn.microsoft.com/training/](/training/).
 
-For example, if you type _copilot_ into the search bar, discovery agent find appropriate pages withing the Power Platform admin center, documentation, and training modules available at at [learn.microsoft.com](https://learn.microsoft.com), as shown in the following image.
+For example, if you type _copilot_ into the search bar, discovery agent finds appropriate settings and pages in the Power Platform admin center, documentation, and training modules available at [learn.microsoft.com](https://learn.microsoft.com), as shown in the following image.
 
 :::image type="content" source="media/results-list.png" alt-text="Quickly and efficiently locate information, settings, and features ." lightbox="media/results-list.png":::
 
