@@ -6,7 +6,7 @@ author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 8/15/2024
+ms.date: 6/1/2025
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
@@ -22,21 +22,21 @@ contributors:
 
 
 
-Tests for a match or extracts portions of a text string based on a pattern.
+Tests for a match or extracts parts of a text string based on a pattern.
 
 ## Description
 
 The **IsMatch** function tests whether a text string matches a pattern that can comprise ordinary characters, predefined patterns, or a [regular expression](#regular-expressions). The **Match** and **MatchAll** functions return what was matched, including submatches.
 
-Use **IsMatch** to validate what a user typed in a **[Text input](/power-apps/maker/canvas-apps/controls/control-text-input)** control. For example, you can confirm whether the user entered a valid email address before the result is saved to your data source. If the entry doesn't match your criteria, add other controls that prompt the user to correct the entry.
+Use **IsMatch** to validate what a user typed in a **[Text input](/power-apps/maker/canvas-apps/controls/control-text-input)** control. For example, confirm whether the user entered a valid email address before the result is saved to your data source. If the entry doesn't match your criteria, add other controls that prompt the user to fix the entry.
 
-Use **Match** to extract the first text string that matches a pattern and **MatchAll** to extract all text strings that match. You can also extract submatches to parse complex strings.
+Use **Match** to extract the first text string that matches a pattern and **MatchAll** to extract all text strings that match. Extract submatches to parse complex strings.
 
 **Match** returns a record of information for the first match found, and **MatchAll** returns a table of records for every match found. The record or records contain:
 
 | Column                                       | Type                                           | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | -------------------------------------------- | ---------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| _named sub&#8209;match or sub&#8209;matches_ | Text                                           | Each named submatch will have its own column. Create a named submatch by using **(?&lt;_name_&gt;**...**)** in the regular expression. If a named submatch has the same name as one of the predefined columns, the submatch takes precedence, and a warning is generated. To avoid this warning, rename the submatch.                                                                                                                                         |
+| _named sub&#8209;match or sub&#8209;matches_ | Text                                           | Each named submatch has its own column. Create a named submatch by using **(?&lt;_name_&gt;**...**)** in the regular expression. If a named submatch has the same name as one of the predefined columns, the submatch takes precedence, and a warning is generated. Rename the submatch to avoid this warning.                                                                                                                                         |
 | **FullMatch**                                | Text                                           | All of the text string that was matched.                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | **StartMatch**                               | Number                                         | The starting position of the match within the input text string. The first character of the string returns 1.                                                                                                                                                                                                                                                                                                                                                             |
 | **SubMatches**, only if **MatchOptions.NumberedSubMatches** is used.                               | Single-column table of Text (column **Value**) | The table of numbered submatches in the order in which they appear in the regular expression. Generally, named submatches are easier to work with and are encouraged. Use the [**ForAll**](function-forall.md) function or [**Last**](function-first-last.md)( [**FirstN**](function-first-last.md)( **...** ) ) functions to work with an individual submatch. If no submatches are defined in the regular expression, this table will be present but empty. |
@@ -48,7 +48,7 @@ These functions support [**MatchOptions**](#match-options). By default:
 
 **IsMatch** returns _true_ if the text string matches the pattern or _false_ if it doesn't. **Match** returns _blank_ if no match is found that can be tested with the [**IsBlank**](function-isblank-isempty.md) function. **MatchAll** returns an empty table if no match is found that can be tested with the [**IsEmpty**](function-isblank-isempty.md) function.
 
-If you're using **MatchAll** to split a text string, consider using the **[Split](function-split.md)** function, which is simpler to use and faster.
+If you use **MatchAll** to split a text string, consider using the **[Split](function-split.md)** function, which is simpler and faster.
 
 ## Patterns
 
@@ -58,11 +58,11 @@ The key to using these functions is in describing the pattern to match. You desc
 - Predefined patterns, such as **Letter**, **MultipleDigits**, or **Email**. (The **Match** enum defines these patterns.)
 - Regular-expression codes, such as **"\d+\s+\d+"** or **"[a-z]+"**.
 
-Combine these elements by using the [string-concatenation operator **&**](operators.md). For example, **"abc" & Digit & "\s+"** is a valid pattern that matches the characters "a", "b", and "c", followed by a digit from 0 to 9, followed by at least one whitespace character.
+Combine these elements using the [string-concatenation operator **&**](operators.md). For example, **"abc" & Digit & "\s+"** is a valid pattern that matches the characters "a", "b", and "c", followed by a digit from 0 to 9, followed by at least one whitespace character.
 
 ### Ordinary characters
 
-The simplest pattern is a sequence of ordinary characters to be matched exactly.
+The simplest pattern is a sequence of ordinary characters that match exactly.
 
 For example, when used with the **IsMatch** function, the string "Hello" matches the pattern **"Hello"** exactly. No more and no less. The string `"hello!"` doesn't match the pattern because of the exclamation point on the end and because the case is wrong for the letter "h". (See [Match options](#match-options) for ways to modify this behavior.)
 
@@ -97,22 +97,22 @@ Predefined patterns provide a simple way to match either one of a set of charact
 
 For example, the pattern **"A" & MultipleDigits** matches the letter "A" followed by one or more digits.
 
-Power Apps has a different definition for **Match.EMail** and **Match.Hyphen**. Evaluate `Text( Match.Email )` to see the regular expression used by your host.
+Power Apps uses a different definition for **Match.EMail** and **Match.Hyphen**. Evaluate `Text( Match.Email )` to see the regular expression used by your host.
 
 ### Regular expressions
 
-The pattern they these functions use is called a [regular expression](https://en.wikipedia.org/wiki/Regular_expression). Power Fx's particular dialect of regular expressions is detailed in [Regular expressions in Power Fx](../regular-expressions.md).
+The pattern they these functions use is called a [regular expression](https://en.wikipedia.org/wiki/Regular_expression). Power Fx's specific dialect of regular expressions is detailed in [Regular expressions in Power Fx](../regular-expressions.md).
 
-Regular expressions are powerful and used for a wide variety of purposes. They can also look like a random sequence of punctuation marks. This article doesn't describe all aspects of regular expressions, but a wealth of information, tutorials, and tools are available online.
+Regular expressions are powerful and serve a wide variety of purposes. They can also look like a random sequence of punctuation marks. This article doesn't describe all aspects of regular expressions, but a wealth of information, tutorials, and tools are available online.
 
-Regular expressions have a long history and are available in many programming languages. Every programming language has its own dialect of regular expressions and there are few standards. As much as possible, we're striving to have the same regular expression give the same result across all Power Fx implementations. Compatibility isn't easy to accomplish as Power Fx runs on top of JavaScript and .NET which have significant differences. To accommodate running on different platforms, Power Fx regular expressions are limited to a subset of features that are widely supported across the industry.
+Regular expressions have a long history and are available in many programming languages. Every programming language has its own dialect of regular expressions, and there are few standards. We strive to ensure the same regular expression gives the same result across all Power Fx implementations. Compatibility isn't easy to accomplish as Power Fx runs on top of JavaScript and .NET which have significant differences. To accommodate running on different platforms, Power Fx regular expressions are limited to a subset of features that are widely supported across the industry.
 
 As a result, some regular expressions that may work in other environments may be blocked or require a tweak in Power Fx. Authoring time errors are reported as unsupported features are encountered. This is one of the reasons that the regular expression and options must be an authoring time constant and not dynamic (for example, provided in a variable).
 
 > [!NOTE]
-> Power Apps uses an earlier version of Power Fx regular expressions which has fewer limitations but also fewer features. **MatchOptions.DotAll** and **MatchOptions.FreeSpacing** aren't available and the definitions of **Match.Email** and **Match.Hyphen** are different. Unicode surrogate pairs aren't treated as a single character. **MatchOptions.NumberedSubMatches** is the default. The version of regular expressions described here will be available in Power Apps soon, under a "Power Fx V1.0 compatibility" switch.
+> Power Apps uses an earlier version of Power Fx regular expressions that has fewer limitations but also fewer features. **MatchOptions.DotAll** and **MatchOptions.FreeSpacing** aren't available and the definitions of **Match.Email** and **Match.Hyphen** are different. Unicode surrogate pairs aren't treated as a single character. **MatchOptions.NumberedSubMatches** is the default. The version of regular expressions described here will be available in Power Apps soon, under a "Power Fx V1.0 compatibility" switch.
 
-Here are some basic elements of regular expressions, building up complexity in parsing a number.
+Here are some basic elements of regular expressions that build up complexity in parsing a number.
 
 | Feature | Example | Description |
 |---------|---------|-------------|
@@ -128,29 +128,29 @@ These examples only give a small taste of what regular expressions can do. They 
 
 ## Match options
 
-You can modify the behavior of these functions by specifying one or more options, which you can combine by using the string- concatenation operator (**&amp;**).
+Modify the behavior of these functions by specifying one or more options, which you combine using the string- concatenation operator (**&amp;**).
 
 | MatchOptions enum | Description                                                                                                                | Impact on a regular expression                                                                                             |
 | ----------------- | -------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
 | **MatchOptions.BeginsWith**    | The pattern must match from the beginning of the text.                                                                     | Adds a **^** to the start of the regular expression.                                                                       |
-| **MatchOptions.Complete**      | Default for **IsMatch** on Power Apps. The pattern must match the entire string of text, from beginning to end.                          | Adds a **^** to the start and a **$** to the end of the regular expression.                                                |
+| **MatchOptions.Complete**      | Default for **IsMatch** on Power Apps. The pattern matches the entire string of text, from beginning to end.                          | Adds a **^** to the start and a **$** to the end of the regular expression.                                                |
 | **MatchOptions.Contains**      | Default for **Match** and **MatchAll**, and **IsMatch** outside of Power Apps. The pattern must appear somewhere in the text but doesn't need to begin or end it. | Doesn't modify the regular expression.                                                                                     |
 | **MatchOptions.DotAll**      | Changes the behavior of the `.` (dot) operator to match all characters, including newline characters. Not available in Power Apps. | Doesn't modify the regular expression. This option is the equivalent of the standard "s" modifier for regular expressions.                                                                        |
 | **MatchOptions.EndsWith**      | The pattern must match the end of the string of text.                                                                      | Adds a **$** to the end of the regular expression.                                                                         |
-| **MatchOptions.FreeSpacing**    | Whitespace characters, including newlines, are ignored in the regular expression. End of line comments beginning with a `#` are ignored. Not available in Power Apps. | Only changes how the regular expression syntax. This option is the equivalent of the standard "x" modifier for regular expressions. |
+| **MatchOptions.FreeSpacing**    | Whitespace characters, including newlines, are ignored in the regular expression. End-of-line comments beginning with a `#` are ignored. Not available in Power Apps. | Only changes how the regular expression syntax. This option is the equivalent of the standard "x" modifier for regular expressions. |
 | **MatchOptions.IgnoreCase**    | Treats uppercase and lowercase letters as identical. By default, matching is case sensitive.                               | Doesn't modify the regular expression. This option is the equivalent of the standard "i" modifier for regular expressions. |
 | **MatchOptions.Multiline**     | Changes the behavior of `^` and `$` to match at the end of aline.                                                                                             | Doesn't modify the regular expression. This option is the equivalent of the standard "m" modifier for regular expressions. |
-| **MatchOptions.NumberedSubMatches**     | Named captures are preferred as they are easier to understand and maintain.  Performance is also improved as unneeded captures are not retained.  But for older regular expressions, treats each set of parenthesis as a numbered capture that is included with the **SubMatches** table in the result. Default in Power Apps. | Doesn't modify the regular expression. Named captures are disabled and `\1` style back references are enabled. |
+| **MatchOptions.NumberedSubMatches**     | Named captures are preferred because they are easier to understand and maintain. Performance also improves as unneeded captures aren't retained.  But for older regular expressions, treats each set of parenthesis as a numbered capture that is included with the **SubMatches** table in the result. Default in Power Apps. | Doesn't modify the regular expression. Named captures are disabled and `\1` style back references are enabled. |
 
-Using **MatchAll** is equivalent to using the standard "g" modifier for regular expressions.
+Using **MatchAll** is the same as using the standard "g" modifier for regular expressions.
 
 ## Syntax
 
 **IsMatch**( _Text_, _Pattern_ [, *Options* ] )
 
 - _Text_ – Required. The text string to test.
-- _Pattern_ – Required. The pattern to test as a text string. Concatenate predefined patterns that the **Match** enum defines, or provide a regular expression. _Pattern_ must be a constant formula without any variables, data sources, or other dynamic references that change as the app runs.
-- _Options_ – Optional. A text-string combination of **MatchOptions** enum values. By default, **MatchOptions.Complete** is used. _Options_ must be a constant formula without any variables, data sources, or other dynamic references that change as the app runs.
+- _Pattern_ – Required. The pattern to test as a text string. Concatenate predefined patterns that the **Match** enum defines or provide a regular expression. _Pattern_ must be a constant formula without variables, data sources, or other dynamic references that change as the app runs.
+- _Options_ – Optional. A text-string combination of **MatchOptions** enum values. By default, **MatchOptions.Complete** is used. _Options_ must be a constant formula without variables, data sources, or other dynamic references that change as the app runs.
 
 **Match**( _Text_, _Pattern_ [, *Options* ] )
 
@@ -161,16 +161,16 @@ Using **MatchAll** is equivalent to using the standard "g" modifier for regular 
 **MatchAll**( _Text_, _Pattern_ [, *Options* ] )
 
 - _Text_ – Required. The text string to match.
-- _Pattern_ – Required. The pattern to match as a text string. Concatenate predefined patterns that the **Match** enum defines, or provide a regular expression. _Pattern_ must be a constant formula without any variables, data sources, or other dynamic references that change as the app runs.
-- _Options_ – Optional. A text-string combination of **MatchOptions** enum values. By default, **MatchOptions.Contains** is used. _Options_ must be a constant formula without any variables, data sources, or other dynamic references that change as the app runs.
+- _Pattern_ – Required. The pattern to match as a text string. Concatenate predefined patterns that the **Match** enum defines or provide a regular expression. _Pattern_ must be a constant formula without variables, data sources, or other dynamic references that change as the app runs.
+- _Options_ – Optional. A text-string combination of **MatchOptions** enum values. By default, **MatchOptions.Contains** is used. _Options_ must be a constant formula without variables, data sources, or other dynamic references that change as the app runs.
 
 ## IsMatch examples
 
 ### Ordinary characters
 
-Imagine that your app contains a **Text input** control named **TextInput1**. The user enters values into this control to be stored in a database.
+Imagine your app has a **Text input** control named **TextInput1**. Users enter values into this control to store them in a database.
 
-The user types **Hello world** into **TextInput1**.
+Users type **Hello world** into **TextInput1**.
 
 | Formula                                                      | Description                                                                  | Result    |
 | ------------------------------------------------------------ | ---------------------------------------------------------------------------- | --------- |
@@ -183,7 +183,7 @@ The user types **Hello world** into **TextInput1**.
 
 | Formula                                                                                                             | Description                                                                                                                                        | Result    |
 | ------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- | --------- |
-| `IsMatch( "123-45-7890", Digit & Digit & Digit & Hyphen & Digit & Digit & Hyphen & Digit & Digit & Digit & Digit )` | Matches a United States Social Security Number                                                                                                     | **true**  |
+| `IsMatch( "123-45-7890", Digit & Digit & Digit & Hyphen & Digit & Digit & Hyphen & Digit & Digit & Digit & Digit )` | Matches a United States Social Security number                                                                                                     | **true**  |
 | `IsMatch( "joan@contoso.com", Email )`                                                                              | Matches an email address                                                                                                                           | **true**  |
 | `IsMatch( "123.456", MultipleDigits & Period & OptionalDigits )`                                                    | Matches a sequence of digits, a period, and then zero or more digits.                                                                              | **true**  |
 | `IsMatch( "123", MultipleDigits & Period & OptionalDigits )`                                                        | Matches a sequence of digits, a period, and then zero or more digits. A period doesn't appear in the text to match, so this pattern isn't matched. | **false** |
@@ -197,7 +197,7 @@ The user types **Hello world** into **TextInput1**.
 | `IsMatch( "-4.95", "(-)?\d+(\.\d\d)?" )`                                              | Matches a positive or negative currency amount. If the input contains a decimal point, the input must also contain two numeric characters after the decimal point.                                                                                                                     | **true**  |
 | `IsMatch( "111-11-1111", "\d{3}-\d{2}-\d{4}" )`                                       | Matches a United States Social Security number. Validates the format, type, and length of the supplied input field. The string to match must consist of three numeric characters followed by a dash, then two numeric characters followed by a dash, and then four numeric characters. | **true**  |
 | `IsMatch( "111-111-111", "\d{3}-\d{2}-\d{4}" )`                                       | Same as the previous example, but one of the hyphens is out of place in the input.                                                                                                                                                                                                     | **false** |
-| `IsMatch( "AStrongPasswordNot", "(?!^[0-9]\*$)(?!^[a-zA-Z]\*$)([a-zA-Z0-9]{8,10})" )` | Validates a strong password, which must contain eight, nine, or 10 characters, in addition to at least one digit and at least one alphabetic character. The string must not contain special characters.                                                                                | **false** |
+| `IsMatch( "AStrongPasswordNot", "(?!^[0-9]\*$)(?!^[a-zA-Z]\*$)([a-zA-Z0-9]{8,10})" )` | Validates a strong password that must contain eight, nine, or 10 characters, at least one digit, and at least one alphabetic character. The string can't contain special characters.                                                                                | **false** |
 
 ## Match and MatchAll examples
 
@@ -205,10 +205,10 @@ The user types **Hello world** into **TextInput1**.
 | --------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `Match( "Bob Jones <bob.jones@contoso.com>", "<(?<email>" & Match.Email & ")>"`         | Extracts only the email portion of the contact information.                                                                                                                                                                                                                                                                                       | {<br>email:&nbsp;"bob.jones@contoso.com",<br>FullMatch:&nbsp;"&lt;bob.jones@contoso.com>",<br>StartMatch: 11<br>} |
 | `Match( "Bob Jones <InvalidEmailAddress>", "<(?<email>" & Match.Email & ")>"`           | Extracts only the email portion of the contact information. No legal address is found (there is no @ sign), so the function returns _blank_.                                                                                                                                                                                                      | _blank_                                                                                                                                                                      |
-| `Match( Language(), "(<language>\w{2})(?:-(?<script>\w{4}))?(?:-(?<region>\w{2}))?" )`  | Extracts the language, script, and region portions of the language tag that the **[Language](function-language.md)** function returns. These results reflect the United States; see the [**Language** function documentation](function-language.md) for more examples. The **(?:** operator groups characters without creating another submatch. | {<br>language: "en",<br>script: _blank_, <br>region: "US",<br>FullMatch: "en-US", <br>StartMatch: 1<br>}                                 |
+| `Match( Language(), "(<language>\w{2})(?:-(?<script>\w{4}))?(?:-(?<region>\w{2}))?" )`  | Extracts the language, script, and region portions of the language tag that the **[Language](function-language.md)** function returns. These results reflect the United States; see the [**Language** function documentation](function-language.md) for more examples. The **(?:** operator groups characters without creating another sub-match. | {<br>language: "en",<br>script: _blank_, <br>region: "US",<br>FullMatch: "en-US", <br>StartMatch: 1<br>}                                 |
 | `Match( "PT2H1M39S", "PT(?:<hours>\d+)H)?(?:(?<minutes>\d+)M)?(?:(?<seconds>\d+)S)?" )` | Extracts the hours, minutes, and seconds from an ISO 8601 duration value. The extracted numbers are still in a text string; use the [**Value**](function-value.md) function to convert it to a number before mathematical operations are performed on it.                                                                                         | {<br> hours: "2",<br>minutes: "1",<br>seconds: "39",<br>FullMatch: "PT2H1M39S",<br>StartMatch: 1<br>}            |
 
-Let's drill into that last example. If you wanted to convert this string to a date/time value using the **[Time](function-date-time.md)** function, you must pass in the named submatches individually. To do this, you can use the **[With](function-with.md)** function operating on the record that **Match** returns:
+Let's drill into that last example. If you wanted to convert this string to a date/time value using the **[Time](function-date-time.md)** function, you must pass in the named submatches individually. To do this, use the **[With](function-with.md)** function operating on the record that **Match** returns:
 
 ```power-fx
 With(
@@ -233,7 +233,7 @@ Set( pangram, "The quick brown fox jumps over the lazy dog." )
 
 To see the results of **MatchAll** in a gallery:
 
-1. In an empty screen, insert a blank vertical **[Gallery](/power-apps/maker/canvas-apps/controls/control-gallery)** control.
+1. In an empty screen, insert a blank vertical **[gallery](/power-apps/maker/canvas-apps/controls/control-gallery)** control.
 
 2. Set the gallery's **Items** property to **MatchAll( pangram, "\w+" )** or **MatchAll( pangram, MultipleLetters )**.
 
@@ -245,7 +245,7 @@ To see the results of **MatchAll** in a gallery:
 
 5. Set the label's **Text** property to **ThisItem.FullMatch**.
 
-   The gallery is filled with each word in our example text. To see all the words on one screen, Resize the gallery's template and the label control.
+   The gallery is filled with each word in our example text. To see all the words on one screen, resize the gallery's template and the label control.
 
    ![Text property.](media/function-ismatch/pangram-gallery2.png)
 
