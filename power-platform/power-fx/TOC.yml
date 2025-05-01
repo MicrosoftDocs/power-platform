@@ -18,6 +18,8 @@
           href: error-handling.md
         - name: Global apps
           href: global.md
+        - name: Regular expressions
+          href: regular-expressions.md
         - name: Untyped objects
           href: untyped-object.md
         - name: Working with JSON
