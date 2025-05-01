@@ -26,7 +26,7 @@ Azure Virtual Network support for Power Platform allows you to integrate Power P
 > [!NOTE]
 > To enable Virtual Network support for Power Platform, environments must be [Managed Environments](managed-environment-overview.md).
 
-- Review your apps, flows, and plug-in code to ensure they connect over your virtual network—they shouldn't call endpoints over the public internet. If your components need to connect to public endpoints, ensure your firewall or network configuration allows such calls. More information [here](./vnet-support-overview.md#considerations-to-enable-virtual-network-support-for-power-platform-environment) and in [the FAQ](./vnet-support-overview.md#can-i-make-internet-bound-calls-from-plug-ins-or-connectors-after-my-environment-is-subnet-delegated)
+- Review your apps, flows, and plug-in code to ensure they connect over your virtual network. They shouldn't call endpoints over the public internet. If your components need to connect to public endpoints, ensure your firewall or network configuration allows such calls. More information [here](./vnet-support-overview.md#considerations-to-enable-virtual-network-support-for-power-platform-environment) and in [the FAQ](./vnet-support-overview.md#can-i-make-internet-bound-calls-from-plug-ins-or-connectors-after-my-environment-is-subnet-delegated)
 
 - Prepare your tenant, setup permissions:
   - Have an Azure subscription where virtual network, subnet, and enterprise policy resources will be created
@@ -34,8 +34,8 @@ Azure Virtual Network support for Power Platform allows you to integrate Power P
   - In the Microsoft Entra admin center, assign the [Power Platform Administrator role](/entra/identity/role-based-access-control/permissions-reference#power-platform-administrator).
 
 - Prepare to use PowerShell
-  - [Install PowerShell](/powershell/scripting/install/installing-powershell)
-  - Download [PowerShell scripts for enterprise policies](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/enterprisePolicies)
+  - Use Windows PowerShell or [Install PowerShell Core](/powershell/scripting/install/installing-powershell)
+  - Clone the github repository to obtain the [PowerShell scripts for enterprise policies](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/enterprisePolicies)
   - Run the ["install modules and setup subscription" scripts](https://github.com/microsoft/PowerApps-Samples/blob/master/powershell/enterprisePolicies/README.md#how-to-run-setup-scripts)
 
 The following diagram depicts the functions of the roles in the setup process for virtual network support in a Power Platform environment:
@@ -57,7 +57,7 @@ The following diagram depicts the functions of the roles in the setup process fo
 
     > [!IMPORTANT]
     > If there are 2+ supported regions for the geo (ex. United States with eastus, westus). **2** virtual networks in ***different*** regions are required to create the enterprise policy (needed for BCDR/failover scenarios)
-    * you can [reuse existing virtual networks](./vnet-support-overview.md#can-i-use-an-existing-virtual-network-for-power-platform) if desired
+    * you can [reuse existing virtual networks](./vnet-support-overview.md#can-i-use-an-existing-virtual-network-for-power-platform) if desired. Subnets on the other hand, [cannot be reused in multiple enterprise policies](./vnet-support-overview#can-i-reuse-the-same-delegated-subnet-in-multiple-enterprise-policies) 
 
 1. Create a subnet in each of your virtual networks. Review the number of IP addresses that are allocated to each subnet and consider the load of the environment. Both subnets must have the same number of available IP addresses.
 
@@ -66,7 +66,7 @@ The following diagram depicts the functions of the roles in the setup process fo
 
     To allow public internet access for Power Platform components, create an [Azure NAT gateway](/azure/nat-gateway/nat-overview) for the subnets.
 
-1. Ensure your Azure subscription is registered for the `Microsoft.PowerPlatform` resource provider by running the ["setup subscription for power platform" script](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/enterprisePolicies#how-to-run-setup-scripts).
+1. (A reminder, from the prerequisites) Ensure your Azure subscription is registered for the `Microsoft.PowerPlatform` resource provider by running the ["setup subscription for power platform" script](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/enterprisePolicies#how-to-run-setup-scripts).
 
 1. Ensure your subnets don't have any resources connected to them, then delegate each subnet to `Microsoft.PowerPlatform/enterprisePolicies` by running the ["setup virtual network for subnet injection" script](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/enterprisePolicies#1-setup-virtual-network-for-subnet-injection) for each subnet.
     * More information on subnet delegation [here](/azure/virtual-network/manage-subnet-delegation?tabs=manage-subnet-delegation-portal)
@@ -90,9 +90,6 @@ The following diagram depicts the functions of the roles in the setup process fo
     * In the future, if removing the enterprise policy from the environment you can run the ["remove subnet injection from an environment" script](https://github.com/microsoft/PowerApps-Samples/blob/master/powershell/enterprisePolicies/README.md#9-remove-subnet-injection-from-an-environment)
 
 ### Validate the connection
-
-> [!NOTE]
-> The ["Enterprise Policies"](https://admin.powerplatform.microsoft.com/security/dataprotection/cmk) page in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) **does not** display "Subnet injection" type enterprise policies. Check the environment history as described in this section, or use the [PowerShell scripts](https://github.com/microsoft/PowerApps-Samples/blob/master/powershell/enterprisePolicies/README.md#8-get-subnet-injection-for-an-environment) to view details of these enterprise policies.
 
 ## [New admin center](#tab/new)
 
