@@ -169,7 +169,8 @@ To configure security settings at the environment group level, complete the foll
 
     > [!Note]
     > The name of the button is determined by the security setting you're applying. In this specific example, we're applying a **Sharing** security setting, that's why **Manage sharing** is the name of the button mentioned in this step.
-    > Selected settings will get applied to all the environments in that environment group.
+    >
+    > Selected settings are applied to all the environments in that environment group.
 
 ## Provide feedback
 
