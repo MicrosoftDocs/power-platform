@@ -4,7 +4,7 @@ description: Learn how to configure an Azure app for SharePoint access to allow 
 author: adrianorth
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/11/2025
+ms.date: 05/01/2025
 ms.subservice: admin
 ms.author: aorth
 ms.reviewer: sericks
@@ -61,6 +61,9 @@ Create an App registration with API permission to SharePoint. Learn more about r
    1. Select **Add permissions** to create the SharePoint permission.
 
    1. Select **Grant admin consent for `<tenant name>`**.
+  
+> [!NOTE]
+> To apply more granular access to individual SharePoint sites, the **Sites.Selected** can be used to apply a scope. Learn more at [Understanding Resource Specific Consent for Microsoft Graph and SharePoint Online](/sharepoint/dev/sp-add-ins-modernize/understanding-rsc-for-msgraph-and-sharepoint-online).
 
 ## Create managed identities in Dataverse
 
