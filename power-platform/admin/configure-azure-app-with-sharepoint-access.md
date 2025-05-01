@@ -174,120 +174,34 @@ This PowerShell script generates the subject identifier value based on input val
 1. Copy the following script into `GetSharePointManagedIdentifyConfig.ps1`.
 
     ```powershell
-    # This is the AAD App Id for DV.
-    $POWER_PLATFORM_MANAGED_IDENTITY_APP_ID = '58e835ab-2e39-46a9-b797-accce6633447'
-     
-    # Combined collection of FIC issuer URLs and Token Exchange Resource URLs mapped to environment identifiers.
-    $ENVIRONMENT_CONFIG_COLLECTION = @{
-        "GovGroup"  = @{
-            IssuerUrl                = "https://login.microsoftonline.com/"
-            TokenExchangeResourceUrl = "api://AzureADTokenExchange"
-            SubjectPrefix            = "/eid1/c/pub"
-            Environments             = @("Gov", "GovFR", "Public")
-        }
-        "HighGroup" = @{
-            IssuerUrl                = "https://login.microsoftonline.us/"
-            TokenExchangeResourceUrl = "api://AzureADTokenExchangeUSGov"
-            SubjectPrefix            = "/eid1/c/usg"
-            Environments             = @("High", "DoD")
-        }
-        "Mooncake"  = @{
-            IssuerUrl                = "https://login.partner.microsoftonline.cn"
-            TokenExchangeResourceUrl = "api://AzureADTokenExchangeChina"
-            SubjectPrefix            = "/eid1/c/chn"
-        }
-        "USNat"     = @{
-            IssuerUrl                = "https://login.microsoftonline.eaglex.ic.gov/"
-            TokenExchangeResourceUrl = "api://AzureADTokenExchangeUSNat"
-            SubjectPrefix            = "/eid1/c/uss"
-        }
-        "USSec"     = @{
-            IssuerUrl                = "https://login.microsoftonline.microsoft.scloud/"
-            TokenExchangeResourceUrl = "api://AzureADTokenExchangeUSSec"
-            SubjectPrefix            = "/eid1/c/usn"
-        }
-    }
-   
-    <#
-    .SYNOPSIS
-        Retrieves the environment configuration based on the provided identifier.
-     
-    .DESCRIPTION
-        This function searches the `$ENVIRONMENT_CONFIG_COLLECTION` for a configuration that matches the provided identifier.
-        It first checks if the identifier exists in the `Environments` array of any configuration.
-        If no match is found, it directly checks if the identifier exists as a key in the collection.
-     
-    .PARAMETER Identifier
-        The identifier used to retrieve the environment configuration. This can be an environment name or a key in the collection.
-     
-    .OUTPUTS
-        [hashtable] The matching environment configuration.
-     
-    .NOTES
-        - If the identifier is invalid or not found, the function throws an error.
-        - Ensure that `$ENVIRONMENT_CONFIG_COLLECTION` is properly initialized before calling this function.
-    #>
-    function Get-EnvironmentConfigByIdentifier {
-        param (
-            [Parameter(Mandatory = $true)]
-            [ValidateNotNullOrEmpty()]
-            [string]$Identifier
-        )
-     
-        # Search for the identifier in the Environments array of each configuration
-        $matchingConfig = $ENVIRONMENT_CONFIG_COLLECTION.Values |
-        Where-Object { $_.Environments -and $_.Environments -contains $Identifier }
-     
-        if ($matchingConfig) {
-            return $matchingConfig
-        }
-     
-        # Check if the identifier exists as a key in the collection
-        if ($ENVIRONMENT_CONFIG_COLLECTION.ContainsKey($Identifier)) {
-            return $ENVIRONMENT_CONFIG_COLLECTION[$Identifier]
-        }
-     
-        # Throw an error if no match is found
-        throw "Invalid identifier: '$Identifier'. Please provide a valid identifier from the environment configuration."
-    }
-     
-    <#
-    .SYNOPSIS
-        Converts a GUID to a Base64 URL-safe string.
-     
-    .DESCRIPTION
-        This function takes a GUID as input, validates it, and converts it into a Base64 URL-safe string.
-        The resulting string is trimmed of padding characters and replaces characters to make it URL-safe.
-     
-    .PARAMETER Guid
-        The GUID to be converted to a Base64 URL-safe string. It must be a valid GUID format.
-     
-    .OUTPUTS
-        [string] A Base64 URL-safe string representation of the GUID.
-     
-    .NOTES
-        - If the input is not a valid GUID, the function will output an error message and return `$null`.
-        - This function is useful for encoding GUIDs in scenarios where URL-safe strings are required.
-    #>
+    # This script is designed to generate a subject URL for a federated credential configuration in Azure AD.
+    # It takes a SharePoint Managed Identity ID, environment ID, tenant ID, and environment type as inputs.
+    #
+    # The environment type must be one of these values:
+    # - "Gov", "GovFR", "High", or "DoD" for environments associated with "https:#login.microsoftonline.us/".
+    # - "Mooncake" for "https:#login.partner.microsoftonline.cn".
+    # - "USNat" for "https:#login.microsoftonline.eaglex.ic.gov/".
+    # - "USSec" for "https:#login.microsoftonline.microsoft.scloud/".
+    # - "Public" for "https:#login.microsoftonline.com/".
+    
+    # This function converts a GUID to a Base64 URL-safe string.
     function Convert-ToBase64Url {
         param (
             [Parameter(Mandatory = $true)]
             [ValidateNotNullOrEmpty()]
-            [string]$Guid
+            [guid]$Guid
         )
         try {
-            # Validate and convert the input to a GUID object
-            [guid]$Guid = $Guid
-     
+    
             # Convert the GUID to a byte array
             $guidBytes = $Guid.ToByteArray()
-     
+    
             # Convert the byte array to a Base64 string
             $base64String = [Convert]::ToBase64String($guidBytes)
-     
+    
             # Make the Base64 string URL-safe
             $base64StringUrl = $base64String.TrimEnd('=') -replace '\+', '-' -replace '/', '_'
-     
+    
             return $base64StringUrl
         }
         catch {
@@ -295,174 +209,107 @@ This PowerShell script generates the subject identifier value based on input val
             return $null
         }
     }
-   
-    <#
-    .SYNOPSIS
-        Constructs the issuer URL for Federated Identity Credential (FIC) configuration.
-     
-    .DESCRIPTION
-        This function generates the issuer URL by combining a prefix, the provided tenant ID, and a suffix.
-        It ensures that the tenant ID is not null or empty and throws an error if validation fails.
-     
-    .PARAMETER TenantId
-        The tenant ID used to construct the issuer URL. It must be a non-empty string.
-     
-    .OUTPUTS
-        [string] The constructed issuer URL.
-     
-    .NOTES
-        - Ensure that `$prefixForFICIssuer` and `$suffixForFICIssuer` are properly initialized before calling this function.
-        - This function is critical for generating the issuer URL required for FIC configuration.
-    #>
-    function New-IssuerUrlForFIC {
-        param (
-            [Parameter(Mandatory = $true)]
-            [ValidateNotNullOrEmpty()]
-            [string]$TenantId
-        )
-     
-        return "$prefixForFICIssuer$TenantId$suffixForFICIssuer"
-    }
-     
-    <#
-    .SYNOPSIS
-        Constructs the subject URL for Federated Identity Credential (FIC) configuration.
-     
-    .DESCRIPTION
-        This function generates the subject URL by combining various encoded identifiers and prefixes.
-        It ensures that all required parameters are provided and valid before constructing the URL.
-     
-    .PARAMETER EncodedTenantId
-        The Base64 URL-safe encoded tenant ID. It must be a non-empty string.
-     
-    .PARAMETER EncodedAppId
-        The Base64 URL-safe encoded application ID. It must be a non-empty string.
-     
-    .PARAMETER EnvironmentId
-        The environment ID used in the subject URL. It must be a non-empty string.
-     
-    .PARAMETER SharePointManagedIdentityId
-        The SharePoint Managed Identity ID used in the subject URL. It must be a non-empty string.
-     
-    .OUTPUTS
-        [string] The constructed subject URL.
-     
-    .NOTES
-        - Ensure that the required prefix variables (`$subjectPrefixForFICIssuer`, `$tenantIdentifierForFICSubject`, etc.) are initialized before calling this function.
-        - This function is critical for generating the subject URL required for FIC configuration.
-    #>
-    function New-SubjectUrlForFIC {
-        param (
-            [Parameter(Mandatory = $true)]
-            [ValidateNotNullOrEmpty()]
-            [string]$EncodedTenantId,
-     
-            [Parameter(Mandatory = $true)]
-            [ValidateNotNullOrEmpty()]
-            [string]$EncodedAppId,
-     
-            [Parameter(Mandatory = $true)]
-            [ValidateNotNullOrEmpty()]
-            [string]$EnvironmentId,
-     
-            [Parameter(Mandatory = $true)]
-            [ValidateNotNullOrEmpty()]
-            [string]$SharePointManagedIdentityId
-        )
-        return "$subjectPrefixForFICIssuer$tenantIdentifierForFICSubject$EncodedTenantId$appIdentifierForFICSubject$EncodedAppId$environmentIdentifierForFICSubject$EnvironmentId$sharePointManagedIdentityIdentifierForFICSubject$SharePointManagedIdentityId"
-    }
     
-    # Specify the environment identifier that matches the customer's use case.
-    # Examples:
-    # - Use "Gov", "GovFR", "High", or "DoD" for environments associated with "https:#login.microsoftonline.us/".
-    # - Use "Mooncake" for "https:#login.partner.microsoftonline.cn".
-    # - Use "USNat" for "https:#login.microsoftonline.eaglex.ic.gov/".
-    # - Use "USSec" for "https:#login.microsoftonline.microsoft.scloud/".
-    # - Use "Public" for "https:#login.microsoftonline.com/".
-    # This value is critical for determining the correct issuer URL and token exchange resource URL.
-    $environmentType = ""
-     
-    # Replace with the id for SharePoint Managed Identity that was created.
-    # Refer to the following documentation for configuring an aad app for SharePoint access:
-    #  https://learn.microsoft.com/en-us/power-platform/admin/configure-azure-app-with-sharepoint-access
-    # For the SharePoint Managed Identity creation, refer to the following documentation:
-    #  https://learn.microsoft.com/en-us/power-platform/admin/configure-azure-app-with-sharepoint-access#add-record-in-sharepoint-managed-identities-table
-    $sharePointManagedIdentityId = ""
-     
-    # Placeholder for tenant ID, replaced with the tenant id for the crm organization.
-    # This value is used to construct the issuer URL for the federated credential configuration.
-    # It is important to ensure that the tenant ID is correctly set to avoid issues with the federated credential configuration.
-    # For fetching the tenant ID, refer to the following documentation:
-    #  https://learn.microsoft.com/en-us/power-platform/alm/checker-api/overview#find-your-tenant-id
-    $tenantId = ""
-     
-    # Placeholder for environment ID, replaced with the environment id for the crm organization.
-    # This value is used to construct the subject URL for the federated credential configuration.
-    # It is important to ensure that the environment ID is correctly set to avoid issues with the federated credential configuration.
-    # For fetching the environment ID, refer to the following documentation:
-    #  https://learn.microsoft.com/en-us/power-platform/admin/determine-org-id-name
-    $environmentId = ""
-    
+    # This function generates the subject URL for a federated credential configuration in Azure AD.
     function GetSharePointManagedIdentifyConfig {
         param (
             [Parameter(Mandatory = $true)]
             [ValidateNotNullOrEmpty()]
-            [string]$environmentType,
-     
+            [string]$EnvironmentType,
+    
             [Parameter(Mandatory = $true)]
             [ValidateNotNullOrEmpty()]
-            [string]$sharePointManagedIdentityId,
-     
+            [guid]$SharePointManagedIdentityId,
+    
             [Parameter(Mandatory = $true)]
             [ValidateNotNullOrEmpty()]
-            [string]$tenantId,
-     
+            [guid]$TenantId,
+    
             [Parameter(Mandatory = $true)]
             [ValidateNotNullOrEmpty()]
-            [string]$environmentId
+            [guid]$EnvironmentId
         )
     
-        # Main script logic
+        # This is the AAD App Id for DV.
+        $POWER_PLATFORM_MANAGED_IDENTITY_APP_ID = '58e835ab-2e39-46a9-b797-accce6633447'
+    
+        # List of FIC issuer URLs and Token Exchange Resource URLs mapped to environment 
+        $environmentConfigList = @(
+            # GovGroup
+            @{
+                IssuerUrl                = "https://login.microsoftonline.com/"
+                TokenExchangeResourceUrl = "api://AzureADTokenExchange"
+                SubjectPrefix            = "/eid1/c/pub"
+                Environments             = @("Gov", "GovFR", "Public")
+            },
+            # HighGroup
+            @{
+                IssuerUrl                = "https://login.microsoftonline.us/"
+                TokenExchangeResourceUrl = "api://AzureADTokenExchangeUSGov"
+                SubjectPrefix            = "/eid1/c/usg"
+                Environments             = @("High", "DoD")
+            },
+            # MoonCake
+            @{
+                IssuerUrl                = "https://login.partner.microsoftonline.cn"
+                TokenExchangeResourceUrl = "api://AzureADTokenExchangeChina"
+                SubjectPrefix            = "/eid1/c/chn"
+                Environments             = @("MoonCake")
+            },
+            # USNat
+            @{
+                IssuerUrl                = "https://login.microsoftonline.eaglex.ic.gov/"
+                TokenExchangeResourceUrl = "api://AzureADTokenExchangeUSNat"
+                SubjectPrefix            = "/eid1/c/uss"
+                Environments             = @("USNat")
+            },
+            # USSec
+            @{
+                IssuerUrl                = "https://login.microsoftonline.microsoft.scloud/"
+                TokenExchangeResourceUrl = "api://AzureADTokenExchangeUSSec"
+                SubjectPrefix            = "/eid1/c/usn"
+                Environments             = @("USSec")
+            }
+        )
+    
         try {
-            $requiredValues = @{
-                "Environment Identifier for FIC Issuer URL" = $environmentType
-                "SharePoint Managed Identity ID"            = $sharePointManagedIdentityId
-                "Tenant ID"                                 = $tenantId
-                "Environment ID"                            = $environmentId
+    
+            # Lookup  environment config based on the environment type 
+            $environmentTypeConfig = $environmentConfigList | 
+                Where-Object { $_.Environments -contains $EnvironmentType }
+    
+            if ($null -eq $environmentTypeConfig) {
+                Write-Error "Invalid environment type: '$EnvironmentType'. Please provide a valid environment type."
+                return
             }
-     
-            foreach ($key in $requiredValues.Keys) {
-                if (-not $requiredValues[$key]) {
-                    Write-Error "$key is null or undefined. Please ensure that $key is set."
-                    return
-                }
-            }
-     
-            $config = Get-EnvironmentConfigByIdentifier -Identifier $environmentType
-            $prefixForFICIssuer = $config.IssuerUrl
-            $tokenExchangeResourceUrl = $config.TokenExchangeResourceUrl
-            $subjectPrefixForFICIssuer = $config.SubjectPrefix
-            $suffixForFICIssuer = "/v2.0"
-            $tenantIdentifierForFICSubject = "/t/"
-            $appIdentifierForFICSubject = "/a/"
-            $environmentIdentifierForFICSubject = "/Env/"
-            $sharePointManagedIdentityIdentifierForFICSubject = "/sharepointmanagedidentity/"
-        
-            $encodedTenantId = Convert-ToBase64Url -Guid $tenantId
+    
+            # Construct the issuer URL for the federated credential configuration
+            $issuerUrlForFederatedCredentialConfig = $environmentTypeConfig.IssuerUrl + $TenantId + "/v2.0"
+    
+            # Convert the Tenant ID and Power Platform Managed Identity App ID to Base64 URL-safe strings
+            $encodedTenantId = Convert-ToBase64Url -Guid $TenantId
             $encodedPowerPlatformManagedIdentityAppId = Convert-ToBase64Url -Guid $POWER_PLATFORM_MANAGED_IDENTITY_APP_ID
-            $issuerUrlForFederatedCredentialConfig = New-IssuerUrlForFIC -TenantId $tenantId
-            $subjectUrlForFederatedCredentialConfig = New-SubjectUrlForFIC -EncodedTenantId $encodedTenantId -EncodedAppId $encodedPowerPlatformManagedIdentityAppId -EnvironmentId $environmentId -SharePointManagedIdentityId $sharePointManagedIdentityId
-        
-            Write-Output @"
-    SharePoint Managed Identity ID: $sharePointManagedIdentityId
-    Environment ID: $environmentId
-    Tenant ID: $tenantId
-    Encoded Tenant ID: $encodedTenantId
-    Power Platform Managed Identity App ID: $POWER_PLATFORM_MANAGED_IDENTITY_APP_ID
-    Encoded App ID: $encodedPowerPlatformManagedIdentityAppId
-    Token Exchange Resource URL: $tokenExchangeResourceUrl
-    Issuer URL for Federated Credential Configuration: $issuerUrlForFederatedCredentialConfig
-    Subject URL for Federated Credential Configuration: $subjectUrlForFederatedCredentialConfig
+    
+            # Construct the subject URL for the federated credential configuration
+            $subjectUrlForFederatedCredentialConfig = ("{0}/t/{1}/a/{2}/Env/{3}/sharepointmanagedidentity/{4}" -f 
+                $environmentTypeConfig.SubjectPrefix, $encodedTenantId, $encodedPowerPlatformManagedIdentityAppId, 
+                $EnvironmentId, $SharePointManagedIdentityId)
+    
+    Write-Output @"
+    Inputs:
+        SharePoint Managed Identity ID: $SharePointManagedIdentityId
+        Environment ID: $EnvironmentId
+        Tenant ID: $TenantId
+    
+    Calculated Values:
+        Encoded Tenant ID: $encodedTenantId
+        Power Platform Managed Identity App ID: $POWER_PLATFORM_MANAGED_IDENTITY_APP_ID
+        Encoded App ID: $encodedPowerPlatformManagedIdentityAppId
+        Token Exchange Resource URL: $environmentTypeConfig.TokenExchangeResourceUrl
+        Issuer URL for Federated Credential Configuration: $issuerUrlForFederatedCredentialConfig
+    
+    Result:
+        Subject URL for Federated Credential Configuration: $subjectUrlForFederatedCredentialConfig
     "@
     
         }
@@ -470,21 +317,22 @@ This PowerShell script generates the subject identifier value based on input val
             Write-Error "Error executing request: $_"
         }
     }
-      ```
-  1. Create a `test.ps1` and pass inputs to the `GetSharePointManagedIdentifyConfig` function
+    ```
+    
+1. Create a `test.ps1` and pass inputs to the `GetSharePointManagedIdentifyConfig` function
   
-      ```powershell
-      . .\GetSharePointManagedIdentifyConfig.ps1
-      
-      $configInput = @{
-          environmentType = "Public"
-          sharePointManagedIdentityId = "<sharePointManagedIdentityId>"
-          tenantId = "<tenantId>"
-          environmentId = "<environmentId>"
-      }
-      
-      GetSharePointManagedIdentifyConfig @configInput
-      ```
+    ```powershell
+    . .\GetSharePointManagedIdentifyConfig.ps1
+    
+    $configInput = @{
+        environmentType = "Public"
+        sharePointManagedIdentityId = "<sharePointManagedIdentityId>"
+        tenantId = "<tenantId>"
+        environmentId = "<environmentId>"
+    }
+    
+    GetSharePointManagedIdentifyConfig @configInput
+    ```
 
 1. Execute the `test.ps1` script.
 
