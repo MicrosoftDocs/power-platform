@@ -149,6 +149,10 @@ No, not while the feature is used in your environment. You can't change the IP a
 
 No, not while the feature is used in your environment. You can't change the DNS address of the Virtual Network after it's delegated to "Microsoft.PowerPlatform/enterprisePolicies." If you do this, the change isn't picked up in our configuration and your environment may stop working. To change the DNS address, you must remove the delegation feature from your environment, make the necessary changes, and then turn on the feature for your environment.
 
+### Can I use the same enterprise policy for multiple Power Platform environments?
+
+Yes. You can use the same enterprise policy for multiple Power Platform environments. However, there is a limitation that early release cycle environments can't be used with the same enterprise policy as other environments.
+
 ### My Virtual Network has a custom DNS configured. Does Power Platform use my custom DNS?
 
 Yes. Power Platform uses the custom DNS configured in the Virtual Network that holds the delegated subnet to resolve all endpoints. After the environment is delegated, you can update plug-ins to use the correct endpoint so that your custom DNS can resolve them.
