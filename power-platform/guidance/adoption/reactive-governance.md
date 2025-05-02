@@ -1,17 +1,17 @@
 ---
-title: Reactive governance - Optimize Power Platform security and performance
+title: Implement reactive governance controls
 description: Learn how to optimize Power Platform security and performance with reactive governance by addressing issues in real time and by improving tenant hygiene.
 #customer intent: As a Power Platform admin, I want to address business continuity risks so that I can ensure uninterrupted operations.
 author: manuelap-msft
 ms.component: pa-admin
-ms.topic: best-practice
+ms.topic: concept-article
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
-ms.date: 04/07/2025
+ms.date: 05/02/2025
 ---
 
-# Reactive governance: Optimize Power Platform security and performance
+# Implement reactive governance controls
 
 Reactive governance refers to the approach of managing and addressing actions and issues as they arise, based on real-time data and insights. Instead of relying solely on predefined policies and procedures, reactive governance involves continuously monitoring the environment, identifying potential problems, and taking corrective actions promptly.
 
@@ -35,7 +35,7 @@ Reactive governance focuses on responding to recommendations and optimizing perf
 
 - **Change requests and approvals:**
     - **Requests for new environments**: Implement an approval workflow for new environment requests to ensure they align with organizational needs and governance policies. 
-    - **Changes to DLP policies**: Data Loss Prevention (DLP) policies protect sensitive data. Any changes to these policies should go through a formal approval process to maintain security and compliance.
+    - **Changes to DLP policies**: Data loss prevention (DLP) policies protect sensitive data. Any changes to these policies should go through a formal approval process to maintain security and compliance.
     - **Review [environment and DLP request components](../coe/env-mgmt.md) in the CoE Starter Kit** to automate these processes. 
 
 - **Changes to user management**: Managing user roles and permissions is vital for security. Implement workflows to approve changes in user management, ensuring they comply with governance standards.

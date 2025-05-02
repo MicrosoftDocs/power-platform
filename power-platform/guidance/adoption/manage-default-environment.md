@@ -6,7 +6,7 @@ author: rranjit83
 ms.author: rranjit
 ms.reviewer: jhaskett-msft
 ms.topic: best-practice
-ms.date: 04/07/2025
+ms.date: 05/02/2025
 ms.custom: bap-template
 ms.subservice: guidance
 contributors:
@@ -22,7 +22,7 @@ This article provides some best practices for using the data you gather from the
 
 ## Enable managed environments
 
-Maintain robust security and governance by making use of managed environment features in the default environment. Managed environment features provide advanced capabilities, such as monitoring, compliance, and security controls that are important for protecting your data. By enabling this feature, you can configure [sharing limits](/power-platform/admin/managed-environment-sharing-limits), gain more [usage insights](/power-platform/admin/managed-environment-usage-insights), [limiting user access to Microsoft Dataverse](/power-platform/admin/ip-firewall) from only allowed IP locations, use [Power Platform advisor](/power-platform/admin/power-platform-advisor) to get personalized recommendations to optimize the environment. Evaluate the current managed environments features and stay up to date with the product roadmap to maintain a secure, compliant, and well-governed default environment.
+Maintain robust security and governance by making use of managed environment features in the default environment. Managed environment features provide advanced capabilities, such as monitoring, compliance, and security controls that are important for protecting your data. By enabling this feature, you can configure [sharing limits](/power-platform/admin/managed-environment-sharing-limits), gain more [usage insights](/power-platform/admin/managed-environment-usage-insights), [limiting user access to Microsoft Dataverse](/power-platform/admin/ip-firewall) from only allowed IP locations, and use [Power Platform Advisor](/power-platform/admin/power-platform-advisor) to get personalized recommendations to optimize the environment. Evaluate the current managed environments features and stay up to date with the product roadmap to maintain a secure, compliant, and well-governed default environment.
 
 ## Track connectors
 
@@ -30,7 +30,7 @@ Connectors are Power Platform services that integrate apps and flows with other 
 
 Some connectors that drive core Power Platform functionality [can't be blocked](../../admin/dlp-connector-classification.md#list-of-connectors-that-cant-be-blocked). You need to know if these core connectors are being used so that you can provide policy guidance to your makers. For example, you might want to track the apps and flows in the default environment that use the Exchange connector and direct the makers to move to a different environment that allows outbound emails.
 
-The CoE Starter Kit contains schema and flows to report the details of all connectors used by each app or flow in all environments. The data reported in the CoE dashboard is refreshed every 24 hours. You can also search for related flows and apps directly from the Dataverse environment where the CoE Starter Kit is installed. [Learn more about tracking connectors with the CoE Power BI dashboard](../coe/power-bi-monitor.md)
+The CoE Starter Kit contains schema and flows to report the details of all connectors used by each app or flow in all environments. The data reported in the CoE dashboard is refreshed every 24 hours. You can also search for related flows and apps directly from the Dataverse environment where the CoE Starter Kit is installed. Learn more about [tracking connectors with the CoE Power BI dashboard](../coe/power-bi-monitor.md).
 
 ## Discover unused and owner-less resources
 
@@ -40,7 +40,7 @@ To maintain environment hygiene, establish processes and procedures to clean up 
 
 Use [Power Platform Advisor](../../admin/power-platform-advisor.md) to view recommendations for apps without valid owners and apps that haven't been used in the last 60 days. You can take action for each recommendation in the recommendation pane, or you can use the [Power Platform for Admin V2 connector](/connectors/powerplatformadminv2/) to automate tasks.
 
-Our recommendation is to use [Power Platform Advisor](../../admin/power-platform-advisor.md). For more custom processes, evaluate the [CoE Starter Kit](../coe/overview.md) to [set up clean-up of orphaned objects](../coe/setup-orphan-components.md) and [set up inactivity processes](../coe/setup-archive-components.md). You can use these processes as-is or modify them to suit the needs of your organization.
+Our recommendation is to use [Power Platform Advisor](../../admin/power-platform-advisor.md). For more custom processes, evaluate the [CoE Starter Kit](../coe/overview.md) to [set up clean-up for orphaned objects](../coe/setup-orphan-components.md) and [set up inactivity processes](../coe/setup-archive-components.md). You can use these processes as-is or modify them to suit the needs of your organization.
 
 ## Discover highly used apps and flows
 
@@ -54,7 +54,7 @@ Again, our recommendation is to use [Power Platform Advisor](../../admin/power-p
 
 ## Discover highly shared apps
 
-When 10 or more employees use a personal productivity app or flow, the Power Platform CoE helps you evaluate whether to move it to its own or a shared environment. The following table describes the parameters to consider. [Learn more about establishing an environment strategy](../white-papers/environment-strategy.md).
+When 10 or more employees use a personal productivity app or flow, the Power Platform CoE helps you evaluate whether to move it to its own or a shared environment. The following table describes the parameters to consider. Learn more about [developing an environment strategy](environment-strategy.md).
 
 | Parameters                          | Defining criteria          | Environment         |
 |-------------------------------------|----------------------------|---------------------|
@@ -69,9 +69,9 @@ When 10 or more employees use a personal productivity app or flow, the Power Pla
 | **Requires ALM**                    | Yes                        | Shared or Dedicated |
 |                                     | No                         | Default             |
 
-[Proactively limits](../../admin/managed-environment-sharing-limits.md) how broadly users can share canvas apps, flows, and agents to avoid over-sharing of resources.
+[Proactively set sharing limits](../../admin/managed-environment-sharing-limits.md) to control how broadly users can share canvas apps, flows, and agents to avoid over-sharing of resources.
 
-For a reactive approach, use the compliance process in the CoE Starter Kit to track app sharing and usage. Use it as-is or modify it to suit the needs of your organization. [Learn more about the app auditing process](../coe/example-processes.md). This process occurs only after sharing is complete.  
+For a reactive approach, use the compliance process in the CoE Starter Kit to track app sharing and usage. Use it as-is or modify it to suit the needs of your organization. Learn more about the [app auditing process](../coe/example-processes.md). This process occurs only after sharing is complete.  
 
 ## Move applications from the default environment
 
@@ -80,19 +80,12 @@ Use [solutions](/power-apps/developer/data-platform/introduction-solutions) to p
 Fusion teams can use the following process to package the solution components, deploy it to a target environment, and delete it from the default environment:
 
 1. Create a solution and add the app and all its dependent apps, flows, and tables.
-
 1. Export the solution from the default environment and import it in a different environment.
-
 1. Make sure that all users who had access to the app in the default environment have the right security roles in the target environment. Consider creating and using a dedicated security group to manage them.
-
 1. Migrate all configuration and app data to the new environment.
-
 1. Test and validate the app.
-
 1. Notify users of the new application.
-
 1. Remove access to the application for all users in the default environment. However, keep access for a few admins and makers.
-
 1. Eventually, delete the solution and its contents from the default environment. Make sure that you don't delete any shared assets. For example, if another app or flow uses a table, don't delete the table.
 
 ## Quarantine apps
@@ -149,13 +142,13 @@ Keep these key points in mind:
 
 - If you delete the SharePoint form environment after setting it, the custom SharePoint forms are lost. The user interface reverts to using the default SharePoint form. Canvas apps associated with new custom SharePoint forms are created in the default environment again.
 
-- The Set-AdminPowerAppSharepointFormEnvironment cmdlet applies only to SharePoint forms customized by Power Apps. Power Automate flows created from SharePoint always use the default environment.
+- The `Set-AdminPowerAppSharepointFormEnvironment` cmdlet applies only to SharePoint forms customized by Power Apps. Power Automate flows created from SharePoint always use the default environment.
 
 ## Back up and restore the default environment
 
-Like every other environment type (sandbox, production, developer), the default environment is archived automatically. However, you can request a restore for the default environment. If you need to restore a backup, contact Microsoft Support. They can restore your environment data to a [Support environment](../../admin/support-environment.md). Once that restore is complete, you can view and export data as needed. Keep in mind that restoring the default environment might also restore unused or orphaned apps and flows removed during cleanup.  
+Like every other environment type (sandbox, production, developer), the default environment is archived automatically. However, you can request a restore for the default environment. If you need to restore a backup, contact Microsoft Support. They can restore your environment data to a [support environment](../../admin/support-environment.md). Once that restore is complete, you can view and export data as needed. Keep in mind that restoring the default environment might also restore unused or orphaned apps and flows removed during cleanup.  
 
-Learn more: [Backup and restore environments](../../admin/backup-restore-environments.md)
+Learn more: [Back up and restore environments](../../admin/backup-restore-environments.md)
 
 ### Related information
 

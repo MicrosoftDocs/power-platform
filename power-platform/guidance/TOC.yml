@@ -99,15 +99,15 @@
               href: adoption/admin-best-practices.md
             - name: Designate a Power Platform admin
               href: adoption/pp-admin.md
-            - name: Manage at scale 
+            - name: Manage adoption at scale 
               href: adoption/govern-at-scale.md
-            - name: Establish an environment strategy
+            - name: Develop a tenant environment strategy
               href: adoption/environment-strategy.md
             - name: Implement reactive governance controls
               href: adoption/reactive-governance.md
             - name: Manage Dataverse for Teams environments
               href: adoption/teams-environment-strategy.md
-            - name: Manage the default environment
+            - name: Manage and govern the default environment
               href: adoption/manage-default-environment.md 
         - name: Operations
           items:
@@ -197,14 +197,10 @@
       items:
         - name: Power Platform white papers
           href: white-papers/index.md
-        - name: Develop an environment strategy
-          href: white-papers/environment-strategy.md
-        - name: Enterprise security
+        - name: Enterprise security with Power Platform
           href: white-papers/enterprise-security.md
         - name: Activating Managed Environments
           href: white-papers/managed-environment-activation.md
-        - name: Application modernization with Power Platform
-          href: white-papers/application-modernization.md
         - name: Migrating apps and flows from the default environment
           href: white-papers/migrating-from-default-environment.md
     - name: Resources

@@ -8,7 +8,7 @@ ms.topic: best-practice
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
-ms.date: 04/07/2025
+ms.date: 05/02/2025
 ---
 
 # Manage Power Platform adoption at scale
@@ -17,9 +17,9 @@ Adopting Power Platform at scale requires a robust governance framework to ensur
 
 ## Understand your adoption maturity
 
-The [Power Platform maturity model](maturity-model.md) provides a framework for understanding the different stages of adoption and governance. 
+The [Power Platform adoption maturity model](maturity-model.md) provides a framework for understanding the different stages of adoption and governance. 
 
-- **Initial stage**: At this stage, organizations are just beginning to explore Power Platform. Governance practices are minimal, focusing primarily on basic security and compliance.
+- **Initial stage**: At this stage, organizations are just beginning to explore Power Platform. Governance practices are minimal and focus primarily on basic security and compliance.
 - **Repeatable stage**: Organizations start to build more solutions and integrate Power Platform into their workflows. Governance practices expand to include more detailed policies and procedures.
 - **Defined stage**: Power Platform becomes a critical part of the organization's operations. Governance practices become more sophisticated, with a focus on standardization and best practices.
 - **Capable stage**: Organizations achieve a high level of maturity, with Power Platform deeply embedded in their processes. Governance practices are comprehensive, covering all aspects of security, compliance, and performance.
@@ -31,25 +31,25 @@ As organizations progress through these stages, their governance practices must 
 
 Effective governance frameworks help with the successful adoption and management of Power Platform at scale. These frameworks provide a structured approach to ensuring security, compliance, and operational efficiency across the organization. Define clear policies, roles, and responsibilities and maintain control over data access, solution development, and environment management. Governance frameworks also facilitate the integration of best practices and automation tools, enabling organizations to streamline processes and adapt to evolving business needs.
 
-1. **Assess your current governance policies**: Evaluate existing governance practices to identify strengths and areas for improvement. This includes reviewing data access policies, security protocols, compliance measures, environment management procedures, solution development standards, and monitoring tools. Conducting audits and gathering feedback from users and admins can provide valuable insights into the effectiveness of current governance and highlight opportunities for optimization.
-1. **Define governance objectives**: Establish clear goals and priorities for managing and using the platform in your organization. Ensure your governance framework is aligned with your organization [vision and goals](vision.md).
+1. **Assess your current governance policies**: Evaluate existing governance practices to identify strengths and areas for improvement. This assessment includes reviewing data access policies, security protocols, compliance measures, environment management procedures, solution development standards, and monitoring tools. Conduct audits and gather feedback from users and admins to get insights into the effectiveness of current governance and to highlight opportunities for optimization.
+1. **Define governance objectives**: Establish clear goals and priorities for managing and using the platform in your organization. Ensure your governance framework is aligned with your organization's [vision and goals](vision.md).
     - **Security**: Ensure data protection and prevent unauthorized access.
     - **Compliance**: Adhere to regulatory standards and organizational policies.
     - **Efficiency**: Streamline processes and reduce manual effort.
     - **Scalability**: Enable the platform to grow with the organization’s needs.
 
 1. **Develop governance policies**: Create detailed guidelines and rules that govern how the platform is used and managed within your organization. These policies ensure that all activities on the Power Platform are conducted in a secure, compliant, and efficient manner.
-    - **Connector management**: Define which connectors are available in each environment and which data sources are available for use in Power Platform solutions. Learn more in [Define a DLP (Data Loss Prevention) policy strategy](dlp-strategy.md).
-    - **Environment management**: Establish guidelines for creating, managing, and decommissioning environments. Learn more in [Establish an environment strategy](environment-strategy.md).
+    - **Connector management**: Define which connectors are available in each environment and which data sources are available for use in Power Platform solutions. Learn more in [Implement a DLP (data loss prevention) strategy](dlp-strategy.md).
+    - **Environment management**: Establish guidelines for creating, managing, and decommissioning environments. Learn more in [Develop a tenant environment strategy](environment-strategy.md).
     - **Solution development**: Set standards for developing, testing, and deploying solutions.
     - **Security protocols**: Implement measures such as encryption, row-level security, and secure data storage. Learn more in [Enhance your security posture](security-posture-management.md).
 
-1. **Establish roles and responsibilities**: As part of planning your governance framework assign well-defined roles and responsibilities to the growing group of stakeholders. Learn more in [Define roles and responsibilities](roles.md). Some of the stakeholders to keep in mind are:
+1. **Establish roles and responsibilities**: As part of planning your governance framework, assign well-defined roles and responsibilities to the growing group of stakeholders. Learn more in [Define roles and responsibilities](roles.md). Some of the stakeholders to keep in mind are:
     - **Power Platform admins**: Oversee the overall governance framework, define policies, and ensure compliance.
     - **Environment admins**: Manage specific environments, implement policies, and provide detailed reports.
     - **Makers**: Develop solutions within the defined governance framework, adhering to policies and standards.
 
-1. **Define delivery model**: Effective delivery models are vital for managing Power Platform adoption at scale. These models include centralized administration, decentralized administration, and hybrid approaches. Centralized administration involves a dedicated team managing all environments, while decentralized administration allows individual departments to manage their own environments. Hybrid models combine elements of both, providing flexibility and scalability. Learn more in [Delivery models](delivery-models.md).
+1. **Define delivery model**: Effective delivery models are vital for managing Power Platform adoption at scale. These models include centralized administration, decentralized administration, and hybrid approaches. Centralized administration involves a dedicated team managing all environments, while decentralized administration allows individual departments to manage their own environments. Hybrid models combine elements of both, providing flexibility and scalability. Learn more in [Evaluate delivery models](delivery-models.md).
 
 ## Create environment groups
 
@@ -76,7 +76,7 @@ Consider the following tasks:
     - Process: Implement an approval workflow to ensure that new environments are created only when necessary and meet governance standards. Consider automating the clean-up of environments that are no longer needed. 
 
 - **New connector requests**: 
-    - Purpose: Adding new connectors to existing Data Loss Prevention (DLP) policies or creating a new DLP policy for specific environments.
+    - Purpose: Adding new connectors to existing data loss prevention (DLP) policies or creating a new DLP policy for specific environments.
     - Considerations: Evaluate the security, compliance, and compatibility of new connectors.
     - Process: Establish an approval workflow to review and authorize new connector requests. Consider who has to approve the connector request. Is it the Power Platform admin alone, or are their product or service owners that also need to approve the request? For example, if a maker requests the SAP connector for use in their environment, does the Power Platform or SAP service owner approve this request? 
 
@@ -131,7 +131,7 @@ Environment admins handle immediate issues in their environments and escalate co
 
 Monitor and review governance practices to maintain the effectiveness and efficiency of Power Platform adoption. Conduct regular audits to ensure compliance with established governance policies and identify areas for improvement. These audits detect deviations from the policies and provide insights into potential risks and vulnerabilities. Review recommendations for [managing the default environment](manage-default-environment.md) and ensure your default environment is well governed.
 
-Implement feedback mechanisms to gather input from makers and admins on governance practices. These channels allow stakeholders to share their experiences, suggest improvements, and report issues, fostering a culture of continuous improvement. Together, these practices ensure that the governance framework remains robust, adaptable, and aligned with organizational goals. Explore the [pulse survey](../coe/nurture-components.md#pulse-survey-components) components of the CoE Starter Kit for sending out feedback surveys to your makers.
+Implement feedback mechanisms to gather input from makers and admins on governance practices. These channels allow stakeholders to share their experiences, suggest improvements, and report issues, fostering a culture of continuous improvement. Together, these practices ensure that the governance framework remains robust, adaptable, and aligned with organizational goals. Explore the [pulse survey components](../coe/nurture-components.md#pulse-survey-components) of the CoE Starter Kit for sending out feedback surveys to your makers.
 
 ## Continuously improve
 
@@ -141,5 +141,5 @@ Regularly review and refine governance practices to ensure they remain effective
 
 - [Microsoft Power Platform security and governance documentation](../../admin/security.yml)
 - [What's the role of a Power Platform administrator?](../../admin/overview-role-powerapps-admin.md)
-- [Configure user security to resources in an environment](../../admin/database-security.md)
+- [Role-based security roles](../../admin/database-security.md)
 - [Managed Environments overview](../../admin/managed-environment-overview.md)

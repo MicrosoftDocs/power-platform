@@ -5,7 +5,7 @@ description: Discover best practices for managing Dataverse for Teams environmen
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 04/07/2025
+ms.date: 05/02/2025
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
@@ -69,7 +69,7 @@ Manage the data governance policies for newly created Dataverse for Teams enviro
 
 - Create a policy specifically for Dataverse for Teams environments. Keep the available connectors in this policy limited to those you want team members to have access to. Create a script using [PowerShell cmdlets](../../admin/powerapps-powershell.md#data-loss-prevention-dlp-policy-commands), or a flow that uses admin connectors, to periodically add newly created Dataverse for Teams environments to this policy and remove them from the default tenant-level policy.
 
-Learn more: [Best practices for establishing a DLP strategy](./dlp-strategy.md)
+Learn more: [Implement a DLP strategy](./dlp-strategy.md)
 
 ## Use Microsoft Teams admin center controls
 
