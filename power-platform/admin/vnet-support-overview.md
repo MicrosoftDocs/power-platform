@@ -38,6 +38,20 @@ With Virtual Network support, your Power Platform and Dataverse components get a
 
 - **No unauthorized access**: Virtual Network connects with your resources without needing Power Platform IP ranges or service tags in the connection.
 
+## Estimating Subnet Size for Power Platform Environments
+Over the past year, telemetry data and observations indicate that production environments typically require 25 to 30 IP addresses, with most use cases falling within this range. Based on this, we recommend allocating 20 to 30 IPs for production environments and 6 to 10 IPs for non-production environments (such as sandbox or developer environments).IP addresses within the subnet are primarily used by containers connected to the vNet. Each environment hosts a minimum of four containers, which dynamically scale based on call volume, though they typically remain within the 10 to 30 container range. These containers are responsible for executing all requests for their respective environments and efficiently handling parallel connection requests.
+## Planning for Multiple Environments
+If using the same delegated subnet for multiple Power Platform environments, you may need a larger IP address block Classless Inter-Domain Routing (CIDR). Consider the recommended IP ranges for production and non-production environments when linking environments to a single policy.
+To enhance visibility into resource utilization, we are working on exposing subnet IP consumption for enterprise policies and subnets. Keep in mind that each subnet reserves five IP addresses, which must be factored into your estimation.
+Example IP Allocation
+Consider a tenant with two enterprise policies:
+1.	Production Policy
+- 4 production environments, each requiring 30 IPs
+- Total: 120 IPs + 5 reserved IPs → /25 CIDR
+2.	Non-Production Policy
+- 20 developer/sandbox environments, each requiring 10 IPs
+- Total: 200 IPs + 5 reserved IPs → /24 CIDR
+
 ## Supported scenarios
 
 Power Platform enables Virtual Network support for both Dataverse plug-ins and [connectors](vnet-support-overview.md#supported-services). With this support, you can establish secured, private, outbound-connectivity from Power Platform to resources within your Virtual Network. Dataverse plug-ins and connectors enhance data integration security by connecting to external data sources from Power Apps, Power Automate, and Dynamics 365 apps. For example, you can:
@@ -132,10 +146,6 @@ A Virtual Network linked to a Power Platform environment must reside in the [Pow
 ### Can I monitor outbound traffic from delegated subnets?
 
 Yes. You can use Network Security Group and firewalls to monitor outbound traffic from delegated subnets. Learn more in [Monitor Azure Virtual Network](/azure/virtual-network/monitor-virtual-network).
-
-### How many IP addresses does Power Platform need to be delegated in the subnet?
-
-The subnet that you create should have at least a /24 Classless Inter-Domain Routing (CIDR) address block, which equates to 251 IP addresses, including five reserved IP addresses. If you plan to use the same delegated subnet for multiple Power Platform environments, you may need a larger IP address block than /24.
 
 ### Can I make internet-bound calls from plug-ins or connectors after my environment is subnet-delegated?
 
