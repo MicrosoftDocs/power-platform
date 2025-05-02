@@ -27,7 +27,7 @@ Administrators can complete these tasks:
 
 ## Prerequisite
 
-To view your security score, you must turn on tenant-wide analytics. You can find instructions in [How do I enable tenant-level analytics?](../tenant-level-analytics.md#how-do-i-enable-tenant-level-analytics)
+To view your security score, you must turn on tenant-wide analytics. You can find instructions in [How do I turn on tenant-level analytics?](../tenant-level-analytics.md#how-do-i-turn-on-tenant-level-analytics)
 
 > [!NOTE]
 > After you turn on tenant-wide analytics, it might take up to 24 hours for the **Security** page to be populated with data. Until then, most sections of the page show the message "Calculating security score."
