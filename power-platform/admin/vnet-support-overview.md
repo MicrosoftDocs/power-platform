@@ -44,8 +44,10 @@ Over the past year, telemetry data and observations indicate that production env
 
 ### Planning for Multiple Environments
 
-If using the same delegated subnet for multiple Power Platform environments, you may need a larger block of Classless Inter-Domain Routing (CIDR) IP addresses. Consider the recommended IP ranges for production and non-production environments when linking environments to a single policy.
-To enhance visibility into resource utilization, we are working on exposing delegated subnet IP consumption for enterprise policies and subnets. Keep in mind that each subnet reserves five IP addresses, which must be factored into your estimation.
+If using the same delegated subnet for multiple Power Platform environments, you may need a larger block of Classless Inter-Domain Routing (CIDR) IP addresses. Consider the recommended amount of IP addresses for production and non-production environments when linking environments to a single policy. Keep in mind that each subnet reserves five IP addresses, which must be factored into your estimation.
+
+> [!NOTE]
+> To enhance visibility into resource utilization, we are working on exposing delegated subnet IP consumption for enterprise policies and subnets.
 
 ### Example IP Allocation
 
