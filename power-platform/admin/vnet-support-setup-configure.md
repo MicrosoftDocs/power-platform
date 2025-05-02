@@ -3,7 +3,7 @@ title: Set up Virtual Network support for Power Platform
 description: Learn how to set up Azure Virtual Network support for Power Platform.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/24/2025
+ms.date: 05/02/2025
 author: faix 
 ms.author: osfaixat 
 ms.reviewer: sericks
@@ -66,7 +66,7 @@ When you set up your virtual network, you need to delegate a subnet to the assoc
 1. [Set up the virtual network and subnets](/azure/virtual-network/manage-subnet-delegation?tabs=manage-subnet-delegation-portal).
 
    > [!IMPORTANT]
-   > Be sure that the subnet you create has been appropriately sized according to [Estimating Subnet Size for Power Platform Environments](./vnet-support-overview.md#estimating-subnet-size-for-power-platform-environments).
+   > Be sure that the subnet you create has been appropriately sized according to [Estimating subnet size for Power Platform environments](./vnet-support-overview.md#estimating-subnet-size-for-power-platform-environments).
 
    To allow internet access within Power Platform containers, create an [Azure NAT gateway](/azure/nat-gateway/nat-overview) for the delegated subnets.
 
