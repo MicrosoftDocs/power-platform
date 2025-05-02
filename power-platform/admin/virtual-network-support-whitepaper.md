@@ -4,7 +4,7 @@ description: Learn how Azure Virtual Network support enhances the security, conn
 author: faix
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/22/2025
+ms.date: 05/02/2025
 ms.subservice: admin
 ms.author: osfaixat
 ms.reviewer: sericks
@@ -165,7 +165,7 @@ If your Azure resources are in different Azure regions, you must still deploy yo
 
 ### Subnet size
 
-The size of the delegated subnet in a virtual network should accommodate future growth in usage and the addition of new services. Sizing your subnet appropriately ensures that requests don't get throttled. For more information on sizing your subnet, see [Estimating Subnet Size for Power Platform Environments](./vnet-support-overview.md#estimating-subnet-size-for-power-platform-environments)
+The size of the delegated subnet in a virtual network should accommodate future growth in usage and the addition of new services. Sizing your subnet appropriately ensures that requests don't get throttled. For more information on sizing your subnet, go to [Estimating subnet size for Power Platform environments](./vnet-support-overview.md#estimating-subnet-size-for-power-platform-environments).
 
 ### Azure NAT Gateway
 
