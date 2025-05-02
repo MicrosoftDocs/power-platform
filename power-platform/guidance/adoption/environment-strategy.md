@@ -52,7 +52,7 @@ Establish your environment strategy using the recommended environment capabiliti
 
 - [**Types of environments**](#types-of-environments) describes the different uses of environments as part of your strategy.
 - [**Managed Environments**](#managed-environments) provides a set of premium capabilities that make environments easier to manage at scale.
-- **[License auto-claim](#license-autoclaim)** simplifies license assignment by allowing users to claim Power Apps per user licenses when they're needed, instead of requiring an admin to identify users who need licenses in advance.
+- **[License auto-claim](#license-auto-claim)** simplifies license assignment by allowing users to claim Power Apps per user licenses when they're needed, instead of requiring an admin to identify users who need licenses in advance.
 - [**Environment groups and rules**](#environment-groups-and-rules) explains how to manage environments as groups and apply rules to groups to automate consistent governance policies.
 - [**Default environment routing**](#default-environment-routing) automatically moves makers away from creating resources in the default environment to their own personal environment.
 - [**Microsoft Dataverse**](#microsoft-dataverse) provides enhanced security and ALM.
@@ -131,7 +131,7 @@ When a group rule is managing a setting, individual environment settings are loc
 
 Using environment groups allows you to organize your environments in logical ways, similar to your organization structure, product service hierarchy, or other frameworks that we explore later. The following diagram is a conceptual example of how the Contoso organization might think about organizing its environment groups.
 
-:::image type="content" source="media/environment-strategy/image3.png" alt-text="Diagram illustrating an environment strategy for a Contoso tenant".:::
+:::image type="content" source="media/environment-strategy/image3.png" alt-text="Diagram illustrating an environment strategy for a Contoso tenant.":::
 
 *Figure: Conceptualization of an environment strategy for a Contoso tenant.*
 
