@@ -69,28 +69,29 @@ The following diagram depicts the functions of the roles in the setup process fo
 
     To allow public internet access for Power Platform components, create an [Azure NAT gateway](/azure/nat-gateway/nat-overview) for the subnets.
 
-1. (A reminder, from the prerequisites) Ensure your Azure subscription is registered for the `Microsoft.PowerPlatform` resource provider by running the ["setup subscription for power platform" script](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/enterprisePolicies#how-to-run-setup-scripts).
+1. Ensure tht your Azure subscription is registered for the Microsoft.PowerPlatform resource provider by running the [SetupSubscriptionForPowerPlatform.ps1 script](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/enterprisePolicies#how-to-run-setup-scripts).
 
-1. Ensure your subnets don't have any resources connected to them, then delegate each subnet to `Microsoft.PowerPlatform/enterprisePolicies` by running the ["setup virtual network for subnet injection" script](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/enterprisePolicies#1-setup-virtual-network-for-subnet-injection) for each subnet.
-    * More information on subnet delegation [here](/azure/virtual-network/manage-subnet-delegation?tabs=manage-subnet-delegation-portal)
+1. Ensure your subnets don't have any resources connected to them. Delegate each subnet to Microsoft.PowerPlatform/enterprisePolicies by running the [SetupVnetForSubnetDelegation.ps1 script](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/enterprisePolicies#1-setup-virtual-network-for-subnet-injection) for each subnet.
+
+    Learn more at [Add or remove a subnet delegation](/azure/virtual-network/manage-subnet-delegation?tabs=manage-subnet-delegation-portal).
 
 ### Create the enterprise policy
 
-1. [Create a subnet injection enterprise policy](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/enterprisePolicies#2-create-subnet-injection-enterprise-policy), using the virtual network(s) and subnet(s) you delegated. Remember two virtual networks in different regions are required for geos that support 2+ regions.
+1. [Create a subnet injection enterprise policy](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/enterprisePolicies#2-create-subnet-injection-enterprise-policy), using the virtual networks and subnets you delegated. Remember two virtual networks in different regions are required for geos that support two or more regions.
+   
     > [!IMPORTANT]
-    > If you wish to delete the virtual network/subnet (or getting errors like `InUseSubnetCannotBeDeleted`, `SubnetMissingRequiredDelegation`), you **will have to delete the enterprise policy** if it exists. You can delete the enterprise policy with the following command:
-    > ```powershell
-    > Remove-AzResource -ResourceId $policyArmId -Force
-    > ```
-    > Various PowerShell scripts are available to [get the enterprise policy](https://github.com/microsoft/PowerApps-Samples/blob/master/powershell/enterprisePolicies/README.md#4-get-subnet-injection-enterprise-policies-in-subscription) (for the ARM resource ID)
+    > If you wish to delete the virtual network or subnet, or getting errors like `InUseSubnetCannotBeDeleted`, `SubnetMissingRequiredDelegation`, you **must delete the enterprise policy** if it exists. You can delete the enterprise policy with the following command:
+    
+    ```powershell
+    Remove-AzResource -ResourceId $policyArmId -Force
+    ```
+    Various PowerShell scripts are available to [get the enterprise policy](https://github.com/microsoft/PowerApps-Samples/blob/master/powershell/enterprisePolicies/README.md#4-get-subnet-injection-enterprise-policies-in-subscription) for the ARM resource ID.
 
-1. [Grant read access](customer-managed-key.md#grant-the-power-platform-admin-privilege-to-read-enterprise-policy) for the enterprise policy to the user(s) with the Power Platform Administrator role.
+1. [Grant read access](customer-managed-key.md#grant-the-power-platform-admin-privilege-to-read-enterprise-policy) for the enterprise policy to users with the Power Platform Administrator role.
 
 ### Configure your Power Platform environment
 
-1. Run the ["set subnet injection for an environment" script](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/enterprisePolicies#7-set-subnet-injection-for-an-environment) to apply the enterprise policy to your environment.
-
-    * In the future, if removing the enterprise policy from the environment you can run the ["remove subnet injection from an environment" script](https://github.com/microsoft/PowerApps-Samples/blob/master/powershell/enterprisePolicies/README.md#9-remove-subnet-injection-from-an-environment)
+Run the [NewSubnetInjection.ps1 script](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/enterprisePolicies#7-set-subnet-injection-for-an-environment) to apply the enterprise policy to your environment.
 
 ### Validate the connection
 
