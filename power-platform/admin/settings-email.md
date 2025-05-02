@@ -6,6 +6,7 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/19/2022
 ms.subservice: admin
+ms.custom: NewPPAC
 ms.author: sericks 
 search.audienceType: 
   - admin
@@ -16,17 +17,30 @@ search.audienceType:
 
 Use Email settings to adjust how model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, features appear and function.
 
-These settings can be found in the Power Platform admin center by going to **Environments** > [select an environment] > **Settings** > **Email** > **Email settings**.
+These settings can be found in the Power Platform admin center.
+
+Make sure you have the System Administrator or System Customizer security role or equivalent permissions to update the email settings. To check your security role, see [View your user profile](/powerapps/user/view-your-user-profile). If you don’t have the correct permissions, contact your system administrator.
+
+
+#### [New admin center](#tab/new)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. On the **Environments** page, choose an environment.
+1. In the command bar, click **Settings**.  
+1. Expand **Email**, then select **Email settings**.
+
+#### [Classic admin center](#tab/classic)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Environments**.
+1. On the **Environments** page, choose an environment.
+1. In the command bar, click **Settings**.  
+1. Expand **Email**, then select **Email settings**.
+---
+
 
 > [!TIP]
 > In addition to the settings mentioned below, there are more settings available to control synchronization behavior. For more information, see [OrgDBOrgSettings for server-side synchronization](OrgDbOrgSettings.md).
-
-Make sure you have the System Administrator or System Customizer security role or equivalent permissions to update the business closures.
-
-**Check your security role**
-
-- Follow the steps in [View your user profile](/powerapps/user/view-your-user-profile).
-- Don’t have the correct permissions? Contact your system administrator.
 
 > [!div class="mx-tableFixed"]
 > |Settings|Description|  
