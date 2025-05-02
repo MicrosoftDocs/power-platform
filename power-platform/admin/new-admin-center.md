@@ -27,7 +27,7 @@ We're happy to announce the public preview of the new and improved Power Platfor
 
  > [!VIDEO 1d442a39-f7ce-438f-a53e-b7c23ce33e25]
 
-[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/production-ready-preview-powerplatform.md)]
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
 ## When and how can customers benefit from the new experience?
 
