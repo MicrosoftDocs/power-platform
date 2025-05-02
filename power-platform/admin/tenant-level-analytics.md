@@ -68,8 +68,6 @@ Once turned on, this feature aggregates data from environments across all region
 
 The **Overview** tab displays a message indicating that tenant-level analytics has been turned on. Typically, these reports are displayed within 24-48 hours of turning on the feature. 
 
-:::image type="content" source="media/analytics-overview-tab-feature-enabled.png" alt-text="Tenant-level analytics has been enabled.":::
-
 > [!Note]
 > Using tenant-level analytics is free and comes with no additional cost.
 
