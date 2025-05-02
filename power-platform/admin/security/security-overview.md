@@ -152,12 +152,12 @@ To make a recommendation active again, complete the following steps.
 
     The recommendation moves to the **Active** tab.
   
-## Manage security settings at an environment group level
+## Manage security settings at an environment group-level
 Managing Power Platform at scale presents challenges for IT teams overseeing numerous environments. To streamline security governance, administrators can configure security settings at the *environment group* level, ensuring uniform enforcement of policies across all environments within a group.
 
-Currently, security management at the environment group level is available for **Sharing** features, with plans to extend support to additional security capabilities in the near future. This structured approach simplifies administration, enhances security, and optimizes large-scale environment management for both startups and enterprises.
+Currently, security management at the environment group-level is available for **Sharing** features, with plans to extend support to additional security capabilities in the near future. This structured approach simplifies administration, enhances security, and optimizes large-scale environment management for both startups and enterprises.
 
-To configure security settings at the environment group level, complete the following steps.
+To configure security settings at the environment group-level, complete the following steps.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Security**.
