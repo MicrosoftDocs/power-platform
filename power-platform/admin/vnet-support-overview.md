@@ -4,7 +4,7 @@ description: Learn about Microsoft Azure Virtual Network support for Power Platf
 author: faix
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/14/2025
+ms.date: 05/02/2025
 ms.subservice: admin
 ms.author: osfaixat
 ms.reviewer: sericks
@@ -38,40 +38,36 @@ With Virtual Network support, your Power Platform and Dataverse components get a
 
 - **No unauthorized access**: Virtual Network connects with your resources without needing Power Platform IP ranges or service tags in the connection.
 
-## Estimating Subnet Size for Power Platform Environments
+## Estimating subnet size for Power Platform environments
 
-Over the past year, telemetry data and observations indicate that production environments typically require 25 to 30 IP addresses, with most use cases falling within this range. Based on this, we recommend allocating 20 to 30 IPs for production environments and 6 to 10 IPs for non-production environments (such as sandbox or developer environments). IP addresses within the subnet are primarily used by containers connected to the vNet. Each environment hosts a minimum of four containers, which dynamically scale based on call volume, though they typically remain within the 10 to 30 container range. These containers are responsible for executing all requests for their respective environments and efficiently handling parallel connection requests.
+Over the past year, telemetry data and observations indicate that production environments typically require 25 to 30 IP addresses, with most use cases falling within this range. Based on this information, we recommend allocating 20 to 30 IPs for production environments and 6 to 10 IPs for non-production environments, such as sandbox or developer environments. IP addresses within the subnet are primarily used by containers connected to the Virtual Network. Each environment hosts a minimum of four containers, which dynamically scale based on call volume, though they typically remain within the 10 to 30 container range. These containers are responsible for executing all requests for their respective environments and efficiently handling parallel connection requests.
 
-### Planning for Multiple Environments
+### Planning for multiple environments
 
-If using the same delegated subnet for multiple Power Platform environments, you may need a larger block of Classless Inter-Domain Routing (CIDR) IP addresses. Consider the recommended amount of IP addresses for production and non-production environments when linking environments to a single policy. Keep in mind that each subnet reserves five IP addresses, which must be factored into your estimation.
+If using the same delegated subnet for multiple Power Platform environments, you may need a larger block of classless inter-domain routing (CIDR) IP addresses. Consider the recommended amount of IP addresses for production and non-production environments when linking environments to a single policy. Keep in mind that each subnet reserves five IP addresses, which must be factored into your estimation.
 
 > [!NOTE]
 > To enhance visibility into resource utilization, we are working on exposing delegated subnet IP consumption for enterprise policies and subnets.
 
-### Example IP Allocation
+### Example IP allocation
 
-Consider a tenant with two enterprise policies. The first policy is for production environments, while the second is for non-production environments.
+Consider a tenant with two enterprise policies. The first policy is for production environments, while the second policy is for non-production environments.
 
-#### Production Enterprise Policy
+#### Production enterprise policy
 
-If you have four production environments associated to your enterprise policy, each requiring 30 IPs, the total IP allocation would be as follows:
+If you have four production environments associated to your enterprise policy, each requiring 30 IPs. The total IP allocation would be as follows:
 
-```text
 (4 environments x 30 IPs) + 5 reserved IPs = 125 IPs
-```
 
-This would require a CIDR block of **/25**, which has capacity for 128 IPs.
+This scenario requires a CIDR block of **/25**, which has capacity for 128 IPs.
 
-#### Non-Production Enterprise Policy
+#### Non-production enterprise policy
 
-For a non-production enterprise policy with 20 developer/sandbox environments, each requiring 10 IPs, the total IP allocation would be as follows:
+For a non-production enterprise policy with 20 developer and sandbox environments&mdash;each requiring 10 IPs&mdash;the total IP allocation would be as follows:
 
-```text
 (20 environments x 10 IPs) + 5 reserved IPs = 205 IPs
-```
 
-This would require a CIDR block of **/24**, which has capacity for 256 IPs and would also have enough space to add additional environments to the enterprise policy.
+This scenario would require a CIDR block of **/24**, which has capacity for 256 IPs and has enough space to add more environments to the enterprise policy.
 
 ## Supported scenarios
 
