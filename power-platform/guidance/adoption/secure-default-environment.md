@@ -41,16 +41,17 @@ The default environment is created with the name ***TenantName* (default)**. To 
 
 ### Configure maker welcome content
 
-Configure a [customized welcome message](/power-platform/admin/welcome-content) to help makers get started with Power Apps and Copilot Studio. The welcome message replaces the default Power Apps first-time help experience for makers. This is a good opportunity to share the intent of the default environment with all makers immediately when they land in the default environment.
+Configure a [customized welcome message](/power-platform/admin/welcome-content) to help makers get started with Power Apps and Copilot Studio. The welcome message replaces the default Power Apps first-time help experience for makers. Take the opportunity to share the intent of the default environment with all makers as soon as they land in the default environment.
 
 ### Use the Power Platform hub
 
 The [Microsoft Power Platform hub](/power-platform/guidance/adoption/wiki-community#get-started-with-the-power-platform-hub-template) is a SharePoint communication site template. It provides a starting point for a central source of information for makers about your organization's use of Power Platform. Starter content and page templates make it easy to offer makers information like:
 
 - Personal productivity use cases
-- How to build apps and flows
-- Where to build apps and flows
-- How to reach out to the CoE support team
+- Information on:
+    - How to build apps and flows
+    - Where to build apps and flows
+    - How to reach out to the CoE support team
 - Rules around integrating with external services
 
 Add links to any other internal resources your makers might find helpful.
@@ -160,14 +161,20 @@ The SMTP header inserted in an email sent from a flow looks similar to the follo
  x-ms-mail-environment-id: 0c5781e0-65ec-ecd7-b964-fd94b2c8e71b 
 ```
 
-The following table describes the values that can appear in the x-ms-mail-application header depending on the service used:
+### Header details
+
+#### x-ms-mail-application
+
+The following table describes the values that can appear in the x-ms-mail-application header depending on the service used.
 
 | Service | Value |
 |---------|---------|
 | Power Automate | Microsoft Power Automate; User-Agent: azure-logic-apps/1.0 (workflow &lt;GUID&gt;; version &lt;version number&gt;) microsoft-flow/1.0 |
 | Power Apps | Microsoft Power Apps; User-Agent: PowerApps/ (; AppName= &lt;app name&gt;) |
 
-The following table describes the values that can appear in the x-ms-mail-operation-type header depending on the action being performed:
+#### x-ms-mail-operation-type
+
+The following table describes the values that can appear in the x-ms-mail-operation-type header depending on the action being performed.
 
 | Value | Description |
 |---------|---------|
@@ -175,7 +182,9 @@ The following table describes the values that can appear in the x-ms-mail-operat
 | Forward | For forward email operations |
 | Send | For send email operations including, SendEmailWithOptions and SendApprovalEmail |
 
-The x-ms-mail-environment-id header contains the environment ID value. The presence of this header depends on the product you're using:
+#### x-ms-mail-environment-id
+
+The x-ms-mail-environment-id header contains the environment ID value. The presence of this header depends on the product you're using.
 
 - In Power Apps, it's always present.
 - In Power Automate, it's present only in connections created after July 2020.
@@ -195,7 +204,7 @@ Here are some potential exceptions to the Exchange rules to block email to add f
 
 - **Exempt specific apps and flows**: Add an exemption list to the rules suggested earlier so that approved apps or flows can send email to external recipients.
 
-- **Organization-level allowlis**t: In this scenario, it makes sense to move the solution into a dedicated environment. If several flows in the environment have to send outbound emails, you can create a blanket exception rule to allow outbound emails from that environment. The maker and admin permission on that environment must be tightly controlled and limited.
+- **Organization-level allowlist**: In this scenario, it makes sense to move the solution into a dedicated environment. If several flows in the environment have to send outbound emails, you can create a blanket exception rule to allow outbound emails from that environment. The maker and admin permission on that environment must be tightly controlled and limited.
 
 Learn more about [how to set up the appropriate exfiltration rules for Power Platform related email traffic](../../admin/block-forwarded-email-from-power-automate.md).
 
@@ -222,4 +231,4 @@ Review the detailed articles in this series to further enhance your security pos
 - [Configure identity and access management](conditional-access.md)
 - [Meet compliance requirements](compliance.md)
 
-[!INCLUDE [guidance-adoption-security-review.checklist](../../includes/guidance-adoption-security-review.checklist.md)]
+[!INCLUDE [guidance-adoption-security-review-checklist](../../includes/guidance-adoption-security-review-checklist.md)]

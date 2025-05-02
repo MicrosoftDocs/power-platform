@@ -44,7 +44,7 @@ Business and non-business classifications draw boundaries around what connectors
 - **Blocked**: No Power App or Power Automate resource can use a connector from a blocked group. All Microsoft-owned premium connectors and third-party connectors (standard and premium) can be blocked. Microsoft-owned standard connectors and Common Data Service connectors can't be blocked.
 
 > [!NOTE]
-> The names "business" and "non-business" don't have any special meaning&mdash;they're simply labels. The grouping of the connectors themselves is of significance, not the name of the group they're placed in.
+> The names "business" and "non-business" don't have any special meaning&mdash;they are simply labels. The grouping of the connectors themselves is of significance, not the name of the group they're placed in.
 
 Learn more: [Connector classification](/power-platform/admin/dlp-connector-classification)
 
@@ -82,11 +82,11 @@ We recommend the following starting point for DLP policies for **production (bus
 
 - Exclude those environments from shared user and team productivity policies.
 - Work with the business unit and project to establish which connectors and connector combinations they use and create a tenant policy to include the selected environments only.
-- Environment admins of those environments can use environment policies to categorize custom connectors as business-data only, if necessary.
+- Use environment policies to categorize custom connectors as business-data only, as necessary.
 
 We also recommend to:
 
-- Create a minimal number of policies per environment. There's no strict hierarchy between tenant and environment policies, and at design and runtime, all policies that are applicable to the environment in which the app or flow resides are evaluated together to decide whether the resource is in compliance or in violation of DLP policies. [Multiple DLP policies](/power-platform/admin/dlp-combined-effect-multiple-policies) applied to one environment will fragment your connector space in complicated ways, and might make it difficult to understand issues your makers are facing.  
+- Create a minimal number of policies per environment. There's no strict hierarchy between tenant and environment policies. At design and runtime, all policies that are applicable to the environment in which the app or flow resides are evaluated together to decide whether the resource is in compliance or in violation of DLP policies. [Multiple DLP policies](/power-platform/admin/dlp-combined-effect-multiple-policies) applied to one environment will fragment your connector space in complicated ways and might make it difficult to understand issues your makers are facing.  
 - Centrally manage DLP policies using tenant level policies, and use environment policies only to categorize custom connectors or in exception cases.  
 
 With a base strategy in place, plan how to handle exceptions. You can: 
@@ -111,7 +111,7 @@ The environment and DLP strategy that Contoso admins apply includes:
 
 1. Similarly, development, test, and production environments are created for Central IT to develop and roll out relevant applications. These business application scenarios typically have a well-defined set of connectors that need to be available for makers, testers, and users in these environments. Access to these connectors is managed using a dedicated tenant-level policy.
 
-1. Contoso also has a special purpose environment dedicated to their Center of Excellence activities. In Contoso, the DLP policy for the special purpose environment remains high touch given the experimental nature of the theory teams book. In this case, tenant admins delegate DLP management for this environment directly to a trusted environment admin of the CoE team and exclude it from a school of all tenant-level policies. This environment is managed only by the environment-level DLP policy, which is an exception rather than the rule at Contoso.
+1. Contoso also has a special purpose environment dedicated to their Center of Excellence activities. In Contoso, the DLP policy for the special purpose environment remains high touch given the experimental nature of the theory teams book. In this case, tenant admins delegate DLP management for this environment directly to a trusted environment admin of the CoE team and exclude it from all tenant-level policies. This environment is managed only by the environment-level DLP policy, which is an exception rather than the rule at Contoso.
 
 As expected, any new environments that are created in Contoso map to the original all-environments policy.
 
@@ -121,7 +121,7 @@ This setup of tenant-centric DLP policies doesn't prevent environment admins fro
 
 ## Set up data policies
 
-1. Create your policy in the [Power Platform admin center](https://aka.ms/ppac). Learn more in[Manage data policies](../../admin/prevent-data-loss.md).
+1. Create your policy in the [Power Platform admin center](https://aka.ms/ppac). Learn more in [Manage data policies](../../admin/prevent-data-loss.md).
 
 1. Use the [DLP SDK](../../admin/data-loss-prevention-sdk.md) to add custom connectors to a DLP policy.
 
@@ -130,7 +130,7 @@ This setup of tenant-centric DLP policies doesn't prevent environment admins fro
 Set up a [SharePoint site or a wiki](wiki-community.md) that clearly communicates:
 
 - Tenant-level and key environment-level (for example, default environment, trial environment) DLP policies enforced in the organization, inclusive of lists of connectors classified as business, non-business, and blocked.
-- Your admin group's email ID so makers can contact them for exception scenarios. For example, admins can help makers get back into compliance editing an existing DLP policy, moving the solution to a different environment, creating a new environment and a new DLP policy, and moving the maker and resource to this new environment.
+- Your admin group's email ID so makers can contact them for exception scenarios. For example, admins can help makers comply by editing an existing DLP policy, moving the solution to a different environment, creating a new environment and a new DLP policy, and moving the maker and resource to this new environment.
 
 Also clearly [communicate your organization's environment strategy](environment-strategy.md#communicate-your-environment-strategy-to-your-organization) to makers.
 
@@ -144,5 +144,5 @@ Review the detailed articles in this series to further enhance your security pos
 - [Meet compliance requirements](compliance.md)
 - [Secure the default environment](secure-default-environment.md)
 
-[!INCLUDE [guidance-adoption-security-review.checklist](../../includes/guidance-adoption-security-review.checklist.md)]
+[!INCLUDE [guidance-adoption-security-review-checklist](../../includes/guidance-adoption-security-review-checklist.md)]
 

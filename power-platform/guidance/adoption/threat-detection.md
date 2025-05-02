@@ -46,7 +46,7 @@ The Microsoft Sentinel solution includes [built-in threat coverage](/azure/senti
 
 The SecOps team can use Microsoft Sentinel tools to investigate and respond to these incidents. The following screenshot shows an example of an incident: a Power Automate flow created by a fired employee.
 
-:::image type="content" source="media/sentinel-example.png" alt-text="Screenshot of a Microsoft Sentinel incident showing a Power Automate cloud flow created by a fired employee.":::
+:::image type="content" source="media/sentinel-example.png" alt-text="Screenshot of a Microsoft Sentinel incident showing a Power Automate cloud flow created by a fired employee." lightbox="media/sentinel-example.png":::
 
 After setting up Microsoft Sentinel to collect Power Platform data, use [threat detection rules](/azure/sentinel/threat-detection) to run regularly, query the collected data, and analyze it to discover threats. Start by using the [built-in analytics rules](/azure/sentinel/business-applications/power-platform-solution-security-content#built-in-analytics-rules) to create these rules. The rules generate alerts when they detect specific conditions. Alerts are aggregated into incidents that you can assign and investigate. You can also build predetermined, automated responses into the rules' configuration.
 
@@ -68,7 +68,7 @@ Microsoft Entra ID uses adaptive machine learning algorithms, heuristics, and kn
 
 ## Activity logging
 
-[Power Apps](/power-platform/admin/logging-powerapps), [Power Automate](/power-platform/admin/logging-power-automate), [Copilot Studio](/microsoft-copilot-studio/admin-logging-copilot-studio), [Connectors](/power-platform/admin/connector-events-power-platform), [Power Pages](/power-platform/admin/logging-power-pages), [Data Loss Prevention](/power-platform/admin/dlp-activity-logging), and [Power Platform administrative](/power-platform/admin/admin-activity-logging) activity logging are tracked and viewed from Microsoft Purview. Learn more in [Learn about Microsoft Purview](/purview/purview).
+[Power Apps](/power-platform/admin/logging-powerapps), [Power Automate](/power-platform/admin/logging-power-automate), [Copilot Studio](/microsoft-copilot-studio/admin-logging-copilot-studio), [Connectors](/power-platform/admin/connector-events-power-platform), [Power Pages](/power-platform/admin/logging-power-pages), [Data Loss Prevention](/power-platform/admin/dlp-activity-logging), and [Power Platform administrative](/power-platform/admin/admin-activity-logging) activity logging are tracked and viewed from Microsoft Purview. [Learn about Microsoft Purview](/purview/purview).
 
 [Dataverse auditing](/power-platform/admin/manage-dataverse-auditing) logs changes that are made to customer records in an environment with a Dataverse database. Dataverse auditing also logs user access through an app or the SDK in an environment. This auditing is enabled at the environment level, and additional configuration is required for individual tables and columns.
 
@@ -92,4 +92,4 @@ Review the other articles in this series to further enhance your security postur
 - [Meet compliance requirements](compliance.md)
 - [Secure the default environment](secure-default-environment.md)
 
-[!INCLUDE [guidance-adoption-security-review.checklist](../../includes/guidance-adoption-security-review.checklist.md)]
+[!INCLUDE [guidance-adoption-security-review-checklist](../../includes/guidance-adoption-security-review-checklist.md)]

@@ -1,14 +1,18 @@
 ---
 title: Enhance your security posture
-description: Enhance your Power Platform security posture with our comprehensive guide. Learn how to assess security scores, adopt Zero Trust, and implement proactive policies.
+description: Learn how to assess your Power Platform security score, adopt Zero Trust principles, and implement managed security features to protect your organization.
 #customer intent: As a Power Platform admin, I want to manage my Power Platform security posture so that I can ensure the security of my organization's data and applications.
 author: manuelap-msft
 ms.component: pa-admin
-ms.topic: best-practice
+ms.topic: concept-article
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
-ms.date: 02/28/2025
+ms.date: 05/02/2025
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-description
+  - ai-seo-date:05/02/2025
 ---
 
 # Enhance your security posture
@@ -70,7 +74,7 @@ Learn more: [Recommendations for securing a development lifecycle](/power-platfo
 Provide security training for makers and developers to help them build solutions with Power Platform that are secure and resilient against threats. This training should cover best practices for secure coding, data protection, and compliance with regulatory standards. By educating makers and developers on potential security risks and how to mitigate them, you foster a culture of security awareness and responsibility. Training should include practical exercises, real-world scenarios, and regular updates to keep pace with evolving threats.
 
 - Enhance existing Power Platform trainings by adding information on how to build secure solutions.
-- Educate users on your [environment and data loss prevention policy strategy](environment-strategy.md) and any other configurations that may impact their solutions, and provide guidance on how to request changes.
+- Educate users on your [environment and data loss prevention policy strategy](environment-strategy.md) and any other configurations that might impact their solutions, and provide guidance on how to request changes.
 - Include information on the Security Development Lifecycle (SDL) phases and what users should be aware of to keep their solutions secure.
 - Communicate to users how you'll work together to progress through each phase.
 
@@ -78,7 +82,7 @@ Having a central source, such as [a SharePoint site or wiki](wiki-community.md#s
 
 ## Incident preparation and response
 
-Establish a comprehensive incident response plan that outlines procedures for identifying, managing, and mitigating security incidents. This plan should include clear roles and responsibilities, communication protocols, and steps for containment, eradication, and recovery. Regular training and simulations help ensure that all team members are familiar with the plan and can respond effectively in the event of an incident. Additionally, maintain detailed logs and audit trails to investigate incidents and understand their impact. By being well-prepared and having a robust incident response strategy in place, you can minimize the damage caused by security breaches and quickly restore normal operations.
+Establish a comprehensive incident response plan that outlines procedures for identifying, managing, and mitigating security incidents. This plan should include clear roles and responsibilities, communication protocols, and steps for containment, eradication, and recovery. Regular training and simulations help ensure that all team members are familiar with the plan and can respond effectively to an incident. Additionally, maintain detailed logs and audit trails to investigate incidents and understand their impact. By being well-prepared and having a robust incident response strategy in place, you can minimize the damage caused by security breaches and quickly restore normal operations.
 
 Integrate Power Platform into your security operations (SecOps) practices to enhance the security and compliance of your low-code/no-code solutions.
 
@@ -101,4 +105,4 @@ Review the detailed articles in this series to further enhance your security pos
 - [Meet compliance requirements](compliance.md)
 - [Secure the default environment](secure-default-environment.md)
 
-[!INCLUDE [guidance-adoption-security-review.checklist](../../includes/guidance-adoption-security-review.checklist.md)]
+[!INCLUDE [guidance-adoption-security-review-checklist](../../includes/guidance-adoption-security-review-checklist.md)]

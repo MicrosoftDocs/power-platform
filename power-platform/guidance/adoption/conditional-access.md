@@ -19,7 +19,7 @@ contributors:
 
 Managing access to sensitive information and resources is critical for IT admins and Chief Information Security Officers (CISOs) across industries. Ensuring least privilege access is essential for maintaining strong security. 
 
-Power Platform integrates with [Microsoft Entra ID](/entra/identity/) for identity and access management, empowering admins to securely manage users and their interactions with Power Platform resources. Microsoft Entra ID is central to Microsoft authentication, and helps by protecting against identity compromise. Microsoft Entra ID gives IT admins visibility and control, and security capabilities like multifactor authentication and conditional access. [Managed security](/power-platform/admin/security/managed-security) provides capabilities built on Microsoft Entra ID, giving admins granular control to ensure only authorized users access data and resources.
+Power Platform integrates with [Microsoft Entra ID](/entra/identity/) for identity and access management, empowering admins to securely manage users and their interactions with Power Platform resources. Microsoft Entra ID is central to Microsoft authentication and helps by protecting against identity compromise. Microsoft Entra ID gives IT admins visibility and control and offers security capabilities like multifactor authentication and conditional access. [Managed security](/power-platform/admin/security/managed-security) provides capabilities built on Microsoft Entra ID, giving admins granular control to ensure only authorized users access data and resources.
 
 This article explains identity and access management controls at every layer.
 
@@ -34,7 +34,7 @@ There are two Power Platform related service admin roles you can assign to provi
 - **Power Platform administrator**: This role can perform all admin functions in Power Platform, regardless of security group membership at the environment level.
 - **Dynamics 365 administrator**: This role can perform most admin functions in Power Platform, but only for environments where it belongs to the security group.
 
-These roles cannot manage user accounts, subscriptions, and access settings for other Microsoft 365 apps. You need to collaborate with other admins in your organization to perform those tasks. Review the [service administrator permission matrix](/power-platform/admin/use-service-admin-role-manage-tenant) for more information on each role's privileges.
+These roles can't manage user accounts, subscriptions, and access settings for other Microsoft 365 apps. You need to collaborate with other admins in your organization to perform those tasks. Review the [service administrator permission matrix](/power-platform/admin/use-service-admin-role-manage-tenant) for more information on each role's privileges.
 
 Administrative identities pose significant security risks because their tasks require privileged access to many systems and applications. Compromise or misuse can harm your business and its information systems. Security of administration is one of the most critical security areas.
 
@@ -107,7 +107,7 @@ To further enhance security and reduce the risk of incidental over-sharing, you 
 
 ## Resource access
 
-Security roles control the ability to create and run specific applications and flows in environments. For example, you can share canvas apps directly with a user or a Microsoft Entra ID group, but they are still subject to Dataverse security roles. However, you share model-driven apps only through Dataverse security roles.  
+Security roles control the ability to create and run specific applications and flows in environments. For example, you can share canvas apps directly with a user or a Microsoft Entra ID group, but they're still subject to Dataverse security roles. However, you share model-driven apps only through Dataverse security roles.  
 
 ### Assign roles to identities based on their requirements
 
@@ -222,4 +222,4 @@ Review the detailed articles in this series to further enhance your security pos
 - [Meet compliance requirements](compliance.md)
 - [Secure the default environment](secure-default-environment.md)
 
-[!INCLUDE [guidance-adoption-security-review.checklist](../../includes/guidance-adoption-security-review.checklist.md)]
+[!INCLUDE [guidance-adoption-security-review-checklist](../../includes/guidance-adoption-security-review-checklist.md)]

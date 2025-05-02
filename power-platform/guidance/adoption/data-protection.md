@@ -55,7 +55,7 @@ Learn more:
 
 Power Platform data loss prevention (DLP) policies are rules and guidelines designed to protect sensitive data within the Power Platform environment. These policies help prevent unauthorized sharing and transfer of data by controlling how data can flow between different connectors and environments.
 
-Establishing a Power Platform data loss prevention (DLP) policy strategy is crucial to protect sensitive information, ensure regulatory compliance, and mitigate the risks of data breaches, and unauthorized data sharing:
+Establishing a Power Platform data loss prevention (DLP) policy strategy is crucial to protect sensitive information, ensure regulatory compliance, and mitigate the risks of data breaches and unauthorized data sharing:
 
 Learn more:
 
@@ -66,7 +66,7 @@ Learn more:
 
 [Tenant isolation](../../admin/cross-tenant-restrictions.md) is a security feature that helps you control and restrict how connectors that use Microsoft Entra ID authentication can access data from other tenants. This feature is useful for organizations that need to maintain strict data boundaries between various subsidiaries or external partners.
 
-By default, tenant isolation is off, and connectors access data across tenants unless other data policies are in place. Tenant isolation applies to all connectors that use Microsoft Entra ID authentication.
+By default, tenant isolation is off, and connectors can access data across tenants unless other data policies are in place. Tenant isolation applies to all connectors that use Microsoft Entra ID authentication.
 
 When configuring tenant isolation, consider the specific data access requirements and collaboration needs of each tenant. Ensure that the isolation settings align with your organization's security policies and compliance requirements. Regularly review and update the isolation configurations to adapt to changing business needs and security threats. Properly configuring tenant isolation helps prevent unauthorized data access, reduces the risk of data breaches, and ensures that sensitive information remains within the intended boundaries.
 
@@ -141,7 +141,7 @@ Protect against data exfiltration by controlling which apps can run in your Data
 
 ## Protect sensitive information with data masking
 
-For scenarios that use personally identifiable information such as credit card numbers or social security numbers, create [data masking rules](/power-platform/admin/create-manage-masking-rules) to protect your organization's and customer's sensitive data. With data masking, also referred to as de-identification or obfuscation, sensitive data is replaced with masked strings to hide the original values remain hidden. Only authorized users can access unmasked data, one record at a time, ensuring that data is treated with utmost sensitivity. Safeguard your data by using an existing, predefined rule, or create your own as a solution.
+For scenarios that use personally identifiable information (PII) such as credit card numbers or social security numbers, create [data masking rules](/power-platform/admin/create-manage-masking-rules) to protect your organization's and customer's sensitive data. With data masking, also referred to as de-identification or obfuscation, sensitive data is replaced with masked strings to hide the original values remain hidden. Only authorized users can access unmasked data, one record at a time, ensuring that data is treated with utmost sensitivity. Safeguard your data by using an existing, predefined rule, or create your own as a solution.
 
 ## Use Microsoft Purview for data discovery and classification
 
@@ -157,7 +157,7 @@ Dataverse uses [security roles](/power-platform/admin/security-roles-privileges)
 
 Dataverse security roles can act as if they were assigned directly to the user. This setup gives the user privileges at the user level through their membership in a Dataverse team. To simplify setup, share a canvas app with a Microsoft Entra ID security group and select the Dataverse security roles needed to use the app. The system creates a Dataverse team for you and associates it with the Microsoft Entra ID security group. The new team also gets the Dataverse security roles you select. This approach simplifies the admin experience and helps you manage user security with less manual work.
 
-Dataverse security is a complex topic and requires collaboration between the application makers, the security team, and the user admin team. You should plan and communicate any major changes before you apply them to your environment.
+Dataverse security is complex and requires collaboration between the application makers, the security team, and the user admin team. You should plan and communicate any major changes before you apply them to your environment.
 
 Learn more about [security concepts in Dataverse](/power-platform/admin/wp-security-cds).
 
@@ -169,7 +169,7 @@ We believe you should have control over your data. Learn how we [handle data req
 
 As a customer, you're responsible for data classification, identity management, and assigning appropriate security roles to protect data.
 
-Learn more about [Microsoft privacy](https://privacy.microsoft.com/).
+Learn more: [Microsoft privacy](https://privacy.microsoft.com/).
 
 ## Conclusion
 
@@ -185,4 +185,4 @@ Review the detailed articles in this series to further enhance your security pos
 - [Meet compliance requirements](compliance.md)
 - [Secure the default environment](secure-default-environment.md)
 
-[!INCLUDE [guidance-adoption-security-review.checklist](../../includes/guidance-adoption-security-review.checklist.md)]
+[!INCLUDE [guidance-adoption-security-review-checklist](../../includes/guidance-adoption-security-review-checklist.md)]
