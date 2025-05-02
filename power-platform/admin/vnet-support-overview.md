@@ -42,7 +42,7 @@ With Virtual Network support, your Power Platform and Dataverse components get a
 
 Over the past year, telemetry data and observations indicate that production environments typically require 25 to 30 IP addresses, with most use cases falling within this range. Based on this, we recommend allocating 20 to 30 IPs for production environments and 6 to 10 IPs for non-production environments (such as sandbox or developer environments). IP addresses within the subnet are primarily used by containers connected to the vNet. Each environment hosts a minimum of four containers, which dynamically scale based on call volume, though they typically remain within the 10 to 30 container range. These containers are responsible for executing all requests for their respective environments and efficiently handling parallel connection requests.
 
-## Planning for Multiple Environments
+### Planning for Multiple Environments
 
 If using the same delegated subnet for multiple Power Platform environments, you may need a larger block of Classless Inter-Domain Routing (CIDR) IP addresses. Consider the recommended IP ranges for production and non-production environments when linking environments to a single policy.
 To enhance visibility into resource utilization, we are working on exposing delegated subnet IP consumption for enterprise policies and subnets. Keep in mind that each subnet reserves five IP addresses, which must be factored into your estimation.
