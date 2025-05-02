@@ -4,7 +4,7 @@ description: Learn how to use the updated Power Platform admin center's new UI a
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/21/2025
+ms.date: 05/02/2025
 ms.custom: 
   - NewPPAC
   - ignite-2024
@@ -21,7 +21,7 @@ search.audienceType:
 
 [!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
-[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner.md)]
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/production-ready-preview-powerplatform.md)]
 
 We're happy to announce the public preview of the new and improved Power Platform admin center! The new Power Platform admin center is designed with an outcome-driven approach, where all functionality is intuitively organized in pages based on administrative tasks. The new admin center isn't just task-oriented, it also helps you achieve specific outcomes and goals. The design focuses on providing an optimal user experience, catering to a wide range of stakeholders with varying needs.
 
@@ -31,13 +31,9 @@ We're happy to announce the public preview of the new and improved Power Platfor
 
 ## When and how can customers benefit from the new experience?
 
-All customers can access the public preview of the new Power Platform admin center starting November 24, 2024. Customers in some regions might have earlier access.  
+All customers can access the public preview of the new Power Platform admin center. It's turned on by default when you access the admin center. 
 
-To start using it, turn on the **Try the new admin center** toggle in the upper-right corner of the current admin center.
-
-:::image type="content" source="media/classic-ppac.png" alt-text="Screenshot of the Try the new admin center toggle in the current Power Platform admin center window.":::
-
-After you turn on the toggle, you can explore the new interface with its logically organized pages. To revert to the classic admin center, turn off the toggle at any time.
+To revert to the classic admin center, turn off the **Try the new admin center** toggle in the upper-right corner of the admin center.
 
 ## Where are pages from the classic admin center in the new one?  
 
