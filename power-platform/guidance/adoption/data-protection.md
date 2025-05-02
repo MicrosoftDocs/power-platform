@@ -64,7 +64,7 @@ Learn more:
 
 ## Cross-tenant inbound and outbound restrictions
 
-[Tenant isolation](/power-platform/admin/cross-tenant-restriction) is a security feature that helps you control and restrict how connectors that use Microsoft Entra ID authentication can access data from other tenants. This feature is useful for organizations that need to maintain strict data boundaries between various subsidiaries or external partners.
+[Tenant isolation](../../admin/cross-tenant-restrictions.md) is a security feature that helps you control and restrict how connectors that use Microsoft Entra ID authentication can access data from other tenants. This feature is useful for organizations that need to maintain strict data boundaries between various subsidiaries or external partners.
 
 By default, tenant isolation is off, and connectors access data across tenants unless other data policies are in place. Tenant isolation applies to all connectors that use Microsoft Entra ID authentication.
 
