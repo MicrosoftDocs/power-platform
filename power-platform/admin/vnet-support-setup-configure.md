@@ -26,13 +26,13 @@ Azure Virtual Network support for Power Platform allows you to integrate Power P
 ## Prerequisites
 
 > [!NOTE]
-> To enable Virtual Network support for Power Platform, environments must be [Managed Environments](managed-environment-overview.md).
+> To allow Virtual Network support for Power Platform, environments must be [Managed Environments](managed-environment-overview.md).
 
-- Review your apps, flows, and plug-in code to ensure they connect over your virtual network. They shouldn't call endpoints over the public internet. If your components need to connect to public endpoints, ensure your firewall or network configuration allows such calls. More information [here](./vnet-support-overview.md#considerations-to-enable-virtual-network-support-for-power-platform-environment) and in [the FAQ](./vnet-support-overview.md#can-i-make-internet-bound-calls-from-plug-ins-or-connectors-after-my-environment-is-subnet-delegated)
+- Review your apps, flows, and plug-in code to ensure they connect over your virtual network. They shouldn't call endpoints over the public internet. If your components need to connect to public endpoints, ensure your firewall or network configuration allows such calls. Learn more in [Considerations to enable Virtual Network support for Power Platform Environment](./vnet-support-overview.md#considerations-to-enable-virtual-network-support-for-power-platform-environment) and in [the FAQ](./vnet-support-overview.md#can-i-make-internet-bound-calls-from-plug-ins-or-connectors-after-my-environment-is-subnet-delegated).
 
 - Prepare your tenant, setup permissions:
-  - Have an Azure subscription where virtual network, subnet, and enterprise policy resources will be created
-  - In the Azure portal, assign the Azure Network Administrator role (ie. [network contributor role](/azure/role-based-access-control/built-in-roles#network-contributor) or equivalent custom role).
+  - Have an Azure subscription where virtual network, subnet, and enterprise policy resources are created.
+  - In the Azure portal, assign the Azure Network Administrator role such as the [network contributor role](/azure/role-based-access-control/built-in-roles#network-contributor) or equivalent custom role.
   - In the Microsoft Entra admin center, assign the [Power Platform Administrator role](/entra/identity/role-based-access-control/permissions-reference#power-platform-administrator).
 
 - Prepare to use PowerShell
@@ -40,7 +40,7 @@ Azure Virtual Network support for Power Platform allows you to integrate Power P
   - Clone the github repository to obtain the [PowerShell scripts for enterprise policies](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/enterprisePolicies)
   - Run the ["install modules and setup subscription" scripts](https://github.com/microsoft/PowerApps-Samples/blob/master/powershell/enterprisePolicies/README.md#how-to-run-setup-scripts)
 
-The following diagram depicts the functions of the roles in the setup process for virtual network support in a Power Platform environment:
+The following diagram depicts the functions of the roles in the setup process for virtual network support in a Power Platform environment.
 
 :::image type="content" source="media/vnet-support/vnet-support-configurations.png" alt-text="Screenshot that shows the configurations for virtual network support in a Power Platform environment." lightbox="media/vnet-support/vnet-support-configurations.png":::
 
@@ -53,13 +53,14 @@ The following diagram depicts the functions of the roles in the setup process fo
 ### Set up the virtual network and subnets
 
 > [!NOTE]
-> Power Platform doesn't support the CENTRAL US region. [See list of supported regions](./vnet-support-overview.md#supported-regions).
+> Power Platform doesn't support the Central US region. [Review the list of supported regions](./vnet-support-overview.md#supported-regions).
 
-1. Create [virtual network(s)](/azure/virtual-network/virtual-networks-overview) in Azure region(s) associated with your Power Platform environment. For example, if your Power Platform environment region is United States, your virtual network(s) should be created in the **eastus**/**westus** Azure regions. For a mapping of environment region to Azure regions, [see list of supported regions](./vnet-support-overview.md#supported-regions).
+1. Create [virtual networks](/azure/virtual-network/virtual-networks-overview) in Azure regions associated with your Power Platform environment. For example, if your Power Platform environment region is United States, your virtual networks should be created in the **eastus** or **westus** Azure regions. For a mapping of environment region to Azure regions, [review the list of supported regions](./vnet-support-overview.md#supported-regions).
 
     > [!IMPORTANT]
-    > If there are 2+ supported regions for the geo (ex. United States with eastus, westus). **2** virtual networks in ***different*** regions are required to create the enterprise policy (needed for BCDR/failover scenarios)
-    * you can [reuse existing virtual networks](./vnet-support-overview.md#can-i-use-an-existing-virtual-network-for-power-platform) if desired. Subnets on the other hand, [cannot be reused in multiple enterprise policies](./vnet-support-overview.md#can-i-reuse-the-same-delegated-subnet-in-multiple-enterprise-policies) 
+    > If there are two or more supported regions for the geo, such as the United States with **eastus** and  **westus**, two virtual networks in ***different*** regions are required to create the enterprise policy for [business continuity and disaster recovery] or failover scenarios.
+    > 
+    > You can [reuse existing virtual networks](./vnet-support-overview.md#can-i-use-an-existing-virtual-network-for-power-platform) if desired. Subnets on the other hand, [can't be reused in multiple enterprise policies](./vnet-support-overview.md#can-i-reuse-the-same-delegated-subnet-in-multiple-enterprise-policies).
 
 1. Create a subnet in each of your virtual networks. Review the number of IP addresses that are allocated to each subnet and consider the load of the environment. Both subnets must have the same number of available IP addresses.
 
