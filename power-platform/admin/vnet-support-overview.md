@@ -151,7 +151,7 @@ No, not while the feature is used in your environment. You can't change the DNS 
 
 ### Can I use the same enterprise policy for multiple Power Platform environments?
 
-Yes. You can use the same enterprise policy for multiple Power Platform environments. However, there is a limitation that early release cycle environments can't be used with the same enterprise policy as other environments.
+Yes. You can use the same enterprise policy for multiple Power Platform environments. However, there is a limitation that [early release cycle environments](early-release.md) can't be used with the same enterprise policy as other environments.
 
 ### My Virtual Network has a custom DNS configured. Does Power Platform use my custom DNS?
 
