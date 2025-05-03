@@ -23,6 +23,8 @@ items:
       href: powerfx.md
     - name: Power Fx test functions
       href: powerfx-functions.md
+    - name: Connector and Dataverse simulation
+      href: simulation.md
     - name: Namespaces
       href: powerfx-namespaces.md
     - name: Power Fx C# functions
@@ -35,7 +37,5 @@ items:
     href: extensibility.md
   - name: Ring deployment model
     href: ring-deployment-model.md
-  - name: Power Fx Connector and Dataverse simulation
-    href: simulation.md
   - name: Test engine and Playwright
     href: playwright.md

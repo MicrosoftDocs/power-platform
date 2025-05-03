@@ -1,23 +1,14 @@
 ---
 title: ALM in Power Platform with Test Engine
 description: Learn how to apply quality gates of Application Lifecycle Management (ALM) with Test Engine
-author: manuelap-msft
-ms.subservice: architecture-center
-ms.topic: example-scenario
-ms.date: 04/22/2025
-ms.author: mapichle
-ms.reviewer: pankajsharma2087
+author: grant-archibald-ms
+ms.author: grarchib
+ms.date: 05/09/2025
+ms.reviewer: jdaly
+ms.topic: article
 contributors:
-  - manuelap-msft
-ms.contributors:
-  - caburk
-  - grarchib
-  - pvillads
-search.audienceType:
-  - admin
-  - flowmaker
-  - devops
-  - alm
+ - JimDaly
+ - pvillads
 ---
 
 ## Introduction to ALM in Power Platform with Test Engine
