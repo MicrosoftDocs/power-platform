@@ -27,6 +27,8 @@ items:
       href: powerfx-namespaces.md
     - name: Power Fx C# functions
       href: powerfx-csharp.md
+  - name: ALM
+    href: alm.md
   - name: Providers
     href: providers.md
   - name: Extensibility
