@@ -29,7 +29,7 @@ The **[Azure CLI](/cli/azure/install-azure-cli)** is essential for obtaining acc
 
 #### Power Platform Command Line
 
-The **/power-platform/developer/cli/introduction** is required to execute test suite files using the [pac test run](/power-platform/developer/cli/reference/test) command. You can use **[Power Platform CLI Install Instructions](/power-platform/developer/cli/introduction)** so that you can use [pac test run](/power-platform/developer/cli/reference/test) to execute test suite files.
+The **/power-platform/developer/cli/introduction** is required to execute test suite files using the [pac test run](../developer/cli/reference/test) command. You can use **[Power Platform CLI Install Instructions](../developer/cli/introduction)** so that you can use [pac test run](../developer/cli/reference/test) to execute test suite files.
 
 #### Source Code
 

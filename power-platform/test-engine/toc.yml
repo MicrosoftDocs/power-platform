@@ -3,8 +3,8 @@ items:
   items:
   - name: Overview
     href: overview.md
-  - name: New features
-    href: new-features.md
+  - name: Features
+    href: features.md
   - name: Authentication
     href: authentication.md
   - name: How to use Test Engine

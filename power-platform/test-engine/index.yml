@@ -26,8 +26,8 @@ landingContent:
         links:
           - text: What is Test Engine?
             url: overview.md
-          - text: New features
-            url: new-features.md
+          - text: Features
+            url: features.md
       - linkListType: concept
         links:
           - text: Test Engine Authentication
