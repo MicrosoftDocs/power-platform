@@ -41,7 +41,7 @@ With Virtual Network support, your Power Platform and Dataverse components get a
 
 ## Estimating subnet size for Power Platform environments
 
-Over the past year, telemetry data and observations indicate that production environments typically require 25 to 30 IP addresses, with most use cases falling within this range. Based on this information, we recommend allocating 25 to 30 IPs for production environments and 6 to 10 IPs for non-production environments, such as sandbox or developer environments. IP addresses within the subnet are primarily used by containers connected to the Virtual Network. Each environment hosts a minimum of four containers, which dynamically scale based on call volume, though they typically remain within the 10 to 30 container range. These containers are responsible for executing all requests for their respective environments and efficiently handling parallel connection requests.
+Over the past year, telemetry data and observations indicate that production environments typically require 25 to 30 IP addresses, with most use cases falling within this range. Based on this information, we recommend allocating 25 to 30 IPs for production environments and 6 to 10 IPs for non-production environments, such as sandbox or developer environments. IP addresses within the subnet are primarily used by containers connected to the Virtual Network. Once the environment starts being used, a minimum of four containers will be created, which dynamically scale based on call volume, though they typically remain within the 10 to 30 container range. These containers are responsible for executing all requests for their respective environments and efficiently handling parallel connection requests.
 
 ### Planning for multiple environments
 
