@@ -80,7 +80,7 @@ The following diagram depicts the functions of the roles in the setup process fo
 1. [Create a subnet injection enterprise policy](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/enterprisePolicies#2-create-subnet-injection-enterprise-policy), using the virtual networks and subnets you delegated. Remember two virtual networks in different regions are required for geos that support two or more regions.
    
     > [!IMPORTANT]
-    > If you wish to delete the virtual network or subnet, or getting errors like `InUseSubnetCannotBeDeleted`, `SubnetMissingRequiredDelegation`, you **must delete the enterprise policy** if it exists. You can delete the enterprise policy with the following command:
+    > If you wish to delete the virtual network or subnet, or are getting errors like `InUseSubnetCannotBeDeleted` and `SubnetMissingRequiredDelegation`, you **must delete the enterprise policy** if it exists. You can delete the enterprise policy with the following command.
     
     ```powershell
     Remove-AzResource -ResourceId $policyArmId -Force
