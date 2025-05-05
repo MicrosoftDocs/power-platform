@@ -99,7 +99,7 @@ OData-Version: 4.0
 OData-EntityId: [Organization URI]/api/data/v9.2/managedidentities(aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb)
 ```
 
-`aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb` represents the `managedidentityid` of the `managedidentity` record created in this example. You will need this in the following step.
+`aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb` represents the `managedidentityid` of the `managedidentity` record created in this example. You need this in the following step.
 
 
 ### Add record in SharePoint Managed Identities table
