@@ -102,10 +102,11 @@ Before you configure customer engagement apps and [!INCLUDE[pn_SharePoint_short]
     The following cmdlets enable the computer to receive remote commands and add [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] modules to the [!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] session. For more information about these cmdlets see [Windows PowerShell Core Cmdlets](/powershell/module/microsoft.powershell.core/).  
   
    ```powershell
+   if (-not (Get-Module -ListAvailable -Name "Microsoft.Graph")) { Install-Module -Name "Microsoft.Graph" -Scope CurrentUser -Force }
+   if (-not (Get-Module -Name "Microsoft.Graph")) { Import-Module "Microsoft.Graph" -Function @("Connect-MgGraph", "Get-MgOrganization") -Force }
+   if (-not (Get-Module -ListAvailable -Name "Microsoft.Graph.Identity.DirectoryManagement")) { Install-Module -Name "Microsoft.Graph.Identity.DirectoryManagement" -Scope CurrentUser -Force }
+   if (-not (Get-Module -Name "Microsoft.Graph.Identity.DirectoryManagement")) { Import-Module "Microsoft.Graph.Identity.DirectoryManagement" -Function @("Get-MgServicePrincipal", "Update-MgServicePrincipal") -Force }
    Enable-PSRemoting -force  
-   New-PSSession  
-   Import-Module MSOnline -force  
-   Import-Module MSOnlineExtended -force  
    ```  
   
 2. Connect to [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)].  
@@ -115,15 +116,16 @@ Before you configure customer engagement apps and [!INCLUDE[pn_SharePoint_short]
     For detailed information about each of the [!INCLUDE[pn_azure_active_directory](../includes/pn-azure-active-directory.md)][!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] commands listed here, see [Manage Microsoft Entra using Windows PowerShell](/previous-versions/azure/jj151815(v=azure.100))  
   
    ```powershell
-   $msolcred = get-credential  
-   connect-msolservice -credential $msolcred  
+   Connect-MgGraph -Scopes "Directory.ReadWrite.All", "Application.ReadWrite.All"  
    ```  
   
-3. Set the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] host name.  
+3.	Set the SharePoint host url.  
   
-    The value that you set for the variable *HostName* must be the complete host name of the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] site collection. The hostname must be derived from the site collection URL and is case sensitive. In this example, the site collection URL is `<https://SharePoint.constoso.com/sites/salesteam>`, so the hostname is *SharePoint.contoso.com*.  
+    The value that you set for the variable *HostNameUrl* must be the complete host name url of the SharePoint site collection. The hostname must be derived from the site collection URL and is case sensitive. In this example, the site collection URL is <https://SharePoint.constoso.com/sites/salesteam>, so the hostname url is *https://SharePoint.contoso.com*.
   
    ```powershell
+   # Generate unique Service Principal Names (SPNs) from site URLs
+   $servicePrincipalNames = @(" https://SharePoint.constoso.com/sites/salesteam ") | ForEach-Object { "$($_ -split '/')[0]://$($_ -split '/')[2]" } | Sort-Object -Unique
    $HostName = "SharePoint.contoso.com"  
    ```  
   
@@ -134,9 +136,17 @@ Before you configure customer engagement apps and [!INCLUDE[pn_SharePoint_short]
    $SPOContextId = (Get-MsolCompanyInformation).ObjectID  
    $SharePoint = Get-MsolServicePrincipal -AppPrincipalId $SPOAppId  
    $ServicePrincipalName = $SharePoint.ServicePrincipalNames  
+   ```
+   
+5. Get the [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] object (tenant) id and [!INCLUDE[pn_SharePoint_Server_short](../includes/pn-sharepoint-server-short.md)] Service Principal Name (SPN).  
+  
+   ```powershell
+   # Update Service Principal Names if missing
+   $missingUrls = $servicePrincipalNames | Where-Object { -not ($SharePoint.ServicePrincipalNames -contains $_) }
+   if ($missingUrls.Count -gt 0) { Update-MgServicePrincipal -ServicePrincipalId $SharePoint.Id -ServicePrincipalNames ($SharePoint.ServicePrincipalNames + $missingUrls) } 
    ```  
   
-5. Set the [!INCLUDE[pn_SharePoint_Server_short](../includes/pn-sharepoint-server-short.md)] Service Principal Name (SPN) in [!INCLUDE[pn_azure_active_directory](../includes/pn-azure-active-directory.md)].  
+6. Set the [!INCLUDE[pn_SharePoint_Server_short](../includes/pn-sharepoint-server-short.md)] Service Principal Name (SPN) in [!INCLUDE[pn_azure_active_directory](../includes/pn-azure-active-directory.md)].  
   
    ```powershell
    $ServicePrincipalName.Add("$SPOAppId/$HostName")   
@@ -176,15 +186,15 @@ Set-SPAuthenticationRealm -Realm $SPOContextId
 2. Set the metadata endpoint.  
   
    ```powershell
-   $metadataEndpoint = "https://accounts.accesscontrol.windows.net/" + $SPOContextId + "/metadata/json/1"  
-   $acsissuer = "00000001-0000-0000-c000-000000000000@" + $SPOContextId  
+   $metadataEndpoint = "https://login.microsoftonline.com/common/.well-known/openid-configuration"  
+   $oboissuer = "https://sts.windows.net/*/” 
    $issuer = "00000007-0000-0000-c000-000000000000@" + $SPOContextId  
    ```  
   
 3. Create the new token control service application proxy in [!INCLUDE[pn_azure_active_directory](../includes/pn-azure-active-directory.md)].  
   
    ```powershell
-   New-SPAzureAccessControlServiceApplicationProxy -Name "Internal" -MetadataServiceEndpointUri $metadataEndpoint -DefaultProxyGroup  
+   $obo = New-SPTrustedSecurityTokenIssuer –Name "D365Obo" –IsTrustBroker:$true –MetadataEndpoint $metadataEndpoint -RegisteredIssuerName $ oboissuer  
    ```  
   
    > [!NOTE]
@@ -211,7 +221,7 @@ The following commands require [!INCLUDE[pn_SharePoint_short](../includes/pn-sha
   
    ```powershell  
    $site = Get-SPSite "https://sharepoint.contoso.com/sites/crm/"  
-   Register-SPAppPrincipal -site $site.RootWeb -NameIdentifier $issuer -DisplayName "crm"  
+   Register-SPAppPrincipal -site $site.RootWeb -NameIdentifier $issuer -DisplayName "crmobo"    
    ```  
   
 2. Grant customer engagement apps access to the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] site. Replace *<https://sharepoint.contoso.com/sites/crm/>* with your [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] site URL.  
