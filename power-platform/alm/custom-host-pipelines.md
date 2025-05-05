@@ -186,4 +186,4 @@ After creating an environment record in the Deployment Pipeline Configuration ap
 ## Related content
 
 - [Set up pipeline environments in Microsoft Power Platform - Learn Module](https://aka.ms/PipelinesLearnSetup)
-- [Create a pipeline in Microsoft Power Platform](https://aka.ms/PipelinesLearnCreate)
+- [Create a pipeline in Microsoft Power Platform - Learn Module](https://aka.ms/PipelinesLearnCreate)
