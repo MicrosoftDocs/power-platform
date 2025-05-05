@@ -72,4 +72,5 @@ Select a pipeline, then select **Run history** to view more detail and error inf
 
 ### Related articles
 
-[Solution concepts](solution-concepts-alm.md)
+- [Create a pipeline in Microsoft Power Platform - Learn Module](https://aka.ms/PipelinesLearnCreate)
+- [Solution concepts](solution-concepts-alm.md)

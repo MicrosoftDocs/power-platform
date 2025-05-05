@@ -131,9 +131,10 @@ This download contains sample cloud flows for managing approvals and sharing dep
 
 ## Next steps
 
-[Run pipelines in Power Platform](run-pipeline.md)
+- [Run pipelines in Power Platform](run-pipeline.md)
 
 ### Related content
 
-[What are cloud flows?](/power-automate/overview-cloud)<br/>
-[Use Dataverse connector with cloud flows](/power-automate/dataverse/overview)
+- [Extend a pipeline in Microsoft Power Platform - Learn Module](https://aka.ms/PipelinesLearnExtend)
+- [What are cloud flows?](/power-automate/overview-cloud)<br/>
+- [Use Dataverse connector with cloud flows](/power-automate/dataverse/overview)

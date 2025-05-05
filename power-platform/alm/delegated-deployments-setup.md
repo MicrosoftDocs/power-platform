@@ -159,3 +159,7 @@ This happens when the approval status isn't yet in the pending state. Make sure 
 ### Can I use different service principals for different pipelines and stages?
 
 Yes.
+
+## Related information
+
+- [Deploy a Microsoft Power Platform solution by using a service principal - Learn Module](https://aka.ms/PipelinesLearnDeploy)

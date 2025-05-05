@@ -180,6 +180,10 @@ After creating an environment record in the Deployment Pipeline Configuration ap
 
 ## Next steps
 
-- [Set up pipeline environments in Microsoft Power Platform - Learn Module](https://aka.ms/PipelinesLearnSetup)
 - [Extend pipelines in Power Platform](extend-pipelines.md)
 - [Run pipelines in Power Platform](run-pipeline.md)
+
+## Related content
+
+- [Set up pipeline environments in Microsoft Power Platform - Learn Module](https://aka.ms/PipelinesLearnSetup)
+- [Create a pipeline in Microsoft Power Platform](https://aka.ms/PipelinesLearnCreate)
