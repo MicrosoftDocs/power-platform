@@ -4,7 +4,7 @@ description: Learn how to configure an Azure app for SharePoint access to allow 
 author: adrianorth
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/01/2025
+ms.date: 05/05/2025
 ms.subservice: admin
 ms.author: aorth
 ms.reviewer: sericks
@@ -99,7 +99,7 @@ OData-Version: 4.0
 OData-EntityId: [Organization URI]/api/data/v9.2/managedidentities(aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb)
 ```
 
-`aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb` represents the `managedidentityid` of the `managedidentity` record created in this example. You will need this in the following step.
+`aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb` represents the `managedidentityid` of the `managedidentity` record created in this example. You need this in the following step.
 
 
 ### Add record in SharePoint Managed Identities table
@@ -108,7 +108,7 @@ Insert a row into the [`sharepointmanagedidentity`](/power-apps/developer/data-p
 
 | Table field | Value |
 | --- | --- |
-| `uniquename` | "msft_ppmiforsharepointauth" |
+| `uniquename` | "new_ppmiforsharepointauth" |
 | `name` | "Managed Identity For SharePoint Auth" |
 | `ManagedIdentity@odata.bind` | `/managedidentities(<managedidentityid>)` replacing `<managedidentityid>` with the value from the previous section  |
 
@@ -125,7 +125,7 @@ OData-Version: 4.0
 Accept: application/json
 
 {
-   "uniquename": "msft_ppmiforsharepointauth",
+   "uniquename": "new_ppmiforsharepointauth",
    "name": "Managed Identity For SharePoint Auth",
    "ManagedIdentityId@odata.bind": "/managedidentities(<managedidentityid>)"
 }
