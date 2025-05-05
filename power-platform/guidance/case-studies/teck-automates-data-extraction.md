@@ -1,6 +1,6 @@
 ---
-title: Teck Resources Limited automates data extraction with Power Automate and AI Builder
-description: Learn how Teck automated customs data extraction using Power Automate and AI Builder, saving 40 hours weekly and reducing errors by 99%.
+title: Teck automates data extraction with Power Automate and AI Builder
+description: Learn how Teck automated extraction of customs data using Power Automate and AI Builder, saving 40 hours weekly and reducing errors by 99%.
 #customer intent: As a Power Platform user, I want to learn how Teck automated data extraction using Power Automate and AI Builder and so that I can implement similar solutions to save time and reduce errors.
 author: manuelap-msft
 ms.author: mapichle
@@ -10,27 +10,29 @@ ms.topic: overview
 ms.date: 04/24/2025
 ---
 
-# Teck Resources Limited automates data extraction with Power Automate and AI Builder
+# Teck automates data extraction with Power Automate and AI Builder
 
-In this article, you learn how [Teck](https://www.teck.com/), a leading Canadian resource company, uses Power Platform to transform their routine processes. This solution enables Teck to efficiently provide essential metals for global development and energy transition.
+In this case study, you learn how [Teck](https://www.teck.com/) used Microsoft Power Platform to transform its routine processes by automating the extraction of data from customs documents. Teck, a leading Canadian resource company, focuses on responsibly producing the metals essential for global development and the energy transition.
 
-Rodolfo Rodrigues Jr., a Customs Supervisor based in Toronto, was able to explore Power Platform through online tutorials, even though he doesn't have a background in software development. Rodolfo collaborated with Jorge Obregon, and they started by automating document transfers from a shared mailbox to SharePoint, which eliminated hours of manual work.
+## Business challenges
 
-Rodolfo's team faced a daily grind. They had to manually compare incoming customs documentation with system-generated documents. This task was time-consuming, requiring hours of line-by-line verification to ensure data accuracy. In one example, they had to handle 5,000 shipments to the USA for TAMSI operations, and the sheer volume of this "busy work" was inefficient and increased stress for the team. If the team didn't have to do these tasks, they could focus on work that has a greater impact on the business.
+The team led by Rodolfo Rodrigues, Jr., a Teck Customs Supervisor based in Toronto, faced a daily grind. They had to manually compare incoming customs documentation with system-generated documents. It was inefficient, tedious, and time-consuming work, requiring hours of line-by-line verification to ensure the accuracy of customs data. The sheer volume of this "busy work" put enormous stress on the team and prevented them from focusing on work that had a greater impact on the business.
 
-Rodolfo sought to automate the tedious task of customs document verification. When he and his team receive emails with customs documents, the system automatically saves the attachments to a shared folder on SharePoint. AI Builder extracts key information from the documents and compares it with data from the company's system to ensure accuracy. Any mismatches are flagged for review, and reports from the company database are automatically generated and uploaded to support the checks.
+The heavily manual process was also prone to human error, which could lead to compliance issues and financial penalties. The team needed a solution that would not only streamline their workflow but also enhance accuracy and reduce the risk of noncompliance.
 
-> Seeing the flow come together and watching it in action...it's like watching a symphony.
+> I saw a need, and I wanted to solve it. That's what I love about Power Platform&mdash;there's no limit to what you can build. Seeing the flow come together and watching it in action&hellip;it's like watching a symphony.
 >
-> — *Rodolfo Rodrigues Jr., Customs Supervisor* 
+> — *Rodolfo Rodrigues, Jr., Customs Supervisor, Teck*
 
-A user-friendly Power BI dashboard then visually displays the results, which allows the team to focus only on the flagged issues. Overall, the tool saved hundreds of hours (40 hours every week) and reduced errors by 99%. Teck increased productivity fivefold with these tasks. Managing the compliance process previously required five people, but now just one person completes the tasks.
+## The solution
 
-This change not only frees up resources for strategic work but also enhances accuracy through consistent checks that minimize human error. The solution mitigates financial and reputational risks for Teck by reducing the chances of noncompliance. It also enables the team to monitor broker compliance levels and foster continuous improvements in their external partnerships.
+Even though he doesn't have a background in software development, Rodrigues started to explore Microsoft Power Platform through online tutorials. He collaborated with coworker Jorge Obregon to develop an automated solution that eventually incorporated Power Automate, Power BI, and AI Builder along with SharePoint, Outlook, and Excel.
 
-> I saw a need, and I wanted to solve it. That's what I love about Power Platform—there's no limit to what you can build.
->  
-> — *Rodolfo Rodrigues Jr., Customs Supervisor* 
+Now when team members receive emails with customs documents, the system automatically saves the attachments to a shared folder on SharePoint. AI Builder extracts key information from the documents and compares it with data from the company's system. Any mismatches are flagged for human review. Reports from the company database are automatically generated and uploaded to support the checks. A user-friendly Power BI dashboard visually displays the results, allowing the team to focus on flagged issues.
+
+Overall, the new workflow saves 40 hours every week&mdash;hundreds of hours annually&mdash;and reduced errors by an incredible 99%. Managing the compliance process previously required five people, but now just one person completes the tasks&mdash;a fivefold increase in efficiency. The solution also improved the team's ability to monitor broker compliance levels and foster continuous improvements in their external partnerships.
+
+The improved process not only frees up resources for strategic work but also enhances accuracy through consistent checks that minimize human error. By reducing the chances of noncompliance, it mitigates financial and reputational risks for Teck.
 
 ## Case study
 
@@ -39,44 +41,44 @@ In this technical case study, you learn how:
 - Teck automated data extraction for customs documents using Power Platform and AI.
 - Power Automate can complete time-consuming email processing, file storage, and data validation tasks.
 - You can report the results of data extraction and comparison automatically.
-- You can use Power Automate and Power Platform as core tools to complete repetitive, time-consuming tasks.  
+- You can use Power Automate and Power Platform to automate repetitive, time-consuming tasks, freeing your employees for more engaging and strategic work.  
 
-## The scenario
+## The architecture
 
 The following image shows the architecture of the automated solution. The tool uses Power Automate, including cloud flows and robotic process automation (RPA) desktop flows, AI Builder, and Power BI, along with other software like Outlook, SharePoint, and Excel.
 
-:::image type="content" source="media/teck/architecture.png" alt-text="Screenshot of a diagram showing the architecture of an automated solution using Power Automate, AI Builder, Power BI, Outlook, SharePoint, and Excel." lightbox = "media/teck/architecture.png":::
+:::image type="content" source="media/teck/architecture.png" alt-text="Flowchart showing the automated customs compliance process using Outlook, SharePoint, Power Automate, AI Builder, Excel, SAP, and Power BI." lightbox = "media/teck/architecture.png":::
 
-The Power Automate flow checks the team's shared mailbox in Outlook and gathers the reference information (such as agent, date, and shipment ID) based on the sender. The flow then saves the files into a predetermined SharePoint folder, along with the metadata. Meanwhile, a Power Automate desktop flow downloads reports from the team's internal customs agent data feed and saves them to SharePoint.
+The Power Automate flow checks the team's shared mailbox in Outlook and gathers the reference information, such as agent, date, and shipment ID, based on the sender. The flow then saves the files into a predetermined SharePoint folder, along with the metadata. Meanwhile, a Power Automate desktop flow downloads reports from the team's internal customs agent data feed and saves them to SharePoint.
 
-Once in SharePoint, AI Builder extracts the data from each document and from the automated system. AI Builder then uses Excel to compare the data between the customs documents sent via email and the system-generated data. It confirms that the transactions have all the required documentation and ensures the sources don't contain any mismatched information. If the flow finds mismatched data, it flags the information for further review.
+In SharePoint, AI Builder extracts the data from each document and from the automated system. AI Builder then uses Excel to compare the data between the customs documents sent through email and the system-generated data. It confirms that the transactions have all the required documentation and ensures the sources don't contain any mismatched information. If the flow finds mismatched data, it flags the information for further review.
 
-The results appear in a custom compliance dashboard built using Power BI. 
+The results appear in a custom compliance dashboard built using Power BI.
 
 ## Key takeaways
 
 The case study of Teck's data extraction and reporting demonstrates the potential of using Power Platform to set up file or data processing and comparison tools. Here are some key takeaways for professionals who are looking to implement a similar solution in their own organizations:
 
-- **Process files**: Use Power Automate to process files sent via email and to compare the data.
+- **Process files**: Use Power Automate to process files sent in email and to compare the data.
 - **Extract and compare data**: Use AI Builder to extract and compare the data.
 - **Store documents**: Use Power Automate to automatically update and store the documents on SharePoint.
 - **Monitor the results**: Use an automated Power BI dashboard to visualize and report the results of the data comparison.
 
-Since building the data extraction tool, Teck has received the following benefits:
+Teck enjoys the following benefits of its automated data extraction tool:
 
-- **Increased productivity**: The Teck team increased efficiency by five times on these tasks, saving hundreds of hours (40 hours every week).
+- **Increased productivity**: The Teck team increased efficiency by five times on these tasks, saving hundreds of hours.
 - **Reduced errors**: The solution reduced data processing errors by 99%.
 
 ## Looking ahead
 
-As Rodolfo looks ahead, his focus is on empowering others. He's eager to share his knowledge by mentoring colleagues and inspiring them to explore Power Platform's capabilities. He believes that in a rapidly changing job market, these skills aren't just valuable—they're essential.
+As Rodrigues looks ahead, his focus is on empowering others. He's eager to share his knowledge by mentoring colleagues and inspiring them to explore Power Platform's capabilities. He believes that in a rapidly changing job market, these skills aren't just valuable&mdash;they're essential.
 
-"If you're not building these skills now, you're going to be left behind," Rodolfo said candidly. "The future belongs to those who can adapt, automate, and innovate. I want to help people get there."
+"If you're not building these skills now, you're going to be left behind," Rodrigues says. "The future belongs to those who can adapt, automate, and innovate. I want to help people get there."
 
 ## Related information
 
 - [Power Platform Well-Architected](/power-platform/well-architected/)
-- [Automation adoption best practices](/power-automate/guidance/automation-coe/overview/)
+- [Automation adoption best practices overview](/power-automate/guidance/automation-coe/overview/)
 - [Overview of using Outlook and Power Automate](/power-automate/email-overview)
 - [Get started with Copilot in cloud flows](/power-automate/get-started-with-copilot)
 - [Automate a business process using Power Automate (learning path)](/training/paths/automate-process-power-automate/)
