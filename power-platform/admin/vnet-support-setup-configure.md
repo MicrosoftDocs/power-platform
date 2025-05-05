@@ -30,14 +30,14 @@ Azure Virtual Network support for Power Platform allows you to integrate Power P
 
 - Review your apps, flows, and plug-in code to ensure they connect over your virtual network. They shouldn't call endpoints over the public internet. If your components need to connect to public endpoints, ensure your firewall or network configuration allows such calls. Learn more in [Considerations to enable Virtual Network support for Power Platform Environment](./vnet-support-overview.md#considerations-to-enable-virtual-network-support-for-power-platform-environment) and in [the FAQ](./vnet-support-overview.md#can-i-make-internet-bound-calls-from-plug-ins-or-connectors-after-my-environment-is-subnet-delegated).
 
-- Prepare your tenant, setup permissions:
+- Prepare your tenant, set up permissions:
   - Have an Azure subscription where virtual network, subnet, and enterprise policy resources are created.
   - In the Azure portal, assign the Azure Network Administrator role such as the [network contributor role](/azure/role-based-access-control/built-in-roles#network-contributor) or equivalent custom role.
   - In the Microsoft Entra admin center, assign the [Power Platform Administrator role](/entra/identity/role-based-access-control/permissions-reference#power-platform-administrator).
 
 - Prepare to use PowerShell
   - Use Windows PowerShell or [Install PowerShell Core](/powershell/scripting/install/installing-powershell)
-  - Clone the github repository to obtain the [PowerShell scripts for enterprise policies](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/enterprisePolicies)
+  - Clone the GitHub repository to obtain the [PowerShell scripts for enterprise policies](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/enterprisePolicies)
   - Run the ["install modules and setup subscription" scripts](https://github.com/microsoft/PowerApps-Samples/blob/master/powershell/enterprisePolicies/README.md#how-to-run-setup-scripts)
 
 The following diagram depicts the functions of the roles in the setup process for virtual network support in a Power Platform environment.
