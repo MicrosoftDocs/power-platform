@@ -4,7 +4,7 @@ description: Learn about Microsoft Azure Virtual Network support for Power Platf
 author: faix
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/01/2025
+ms.date: 05/05/2025
 ms.subservice: admin
 ms.author: osfaixat
 ms.reviewer: sericks
@@ -149,6 +149,10 @@ No, not while the feature is used in your environment. You can't change the IP a
 ### Can I update the DNS address of my Virtual Network after it's delegated to "Microsoft.PowerPlatform/enterprisePolicies"?
 
 No, not while the feature is used in your environment. You can't change the DNS address of the Virtual Network after it's delegated to "Microsoft.PowerPlatform/enterprisePolicies." If you do this, the change isn't picked up in our configuration and your environment may stop working. To change the DNS address, you must [remove the delegation feature from your environment](https://github.com/microsoft/PowerApps-Samples/blob/master/powershell/enterprisePolicies/README.md#9-remove-subnet-injection-from-an-environment), make the necessary changes, and then turn on the feature for your environment.
+
+### Can I use the same enterprise policy for multiple Power Platform environments?
+
+Yes. You can use the same enterprise policy for multiple Power Platform environments. However, there is a limitation that [early release cycle environments](early-release.md) can't be used with the same enterprise policy as other environments.
 
 ### My Virtual Network has a custom DNS configured. Does Power Platform use my custom DNS?
 
