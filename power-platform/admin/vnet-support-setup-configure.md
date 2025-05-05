@@ -31,7 +31,7 @@ Azure Virtual Network support for Power Platform allows you to integrate Power P
 - Review your apps, flows, and plug-in code to ensure they connect over your virtual network. They shouldn't call endpoints over the public internet. If your components need to connect to public endpoints, ensure your firewall or network configuration allows such calls. Learn more in [Considerations to enable Virtual Network support for Power Platform Environment](./vnet-support-overview.md#considerations-to-enable-virtual-network-support-for-power-platform-environment) and in [the FAQ](./vnet-support-overview.md#can-i-make-internet-bound-calls-from-plug-ins-or-connectors-after-my-environment-is-subnet-delegated).
 
 - Prepare your tenant, set up permissions:
-  - Have an Azure subscription where virtual network, subnet, and enterprise policy resources are created.
+  - Have an Azure subscription where virtual network, subnet, and enterprise policy resources will be created.
   - In the Azure portal, assign the Azure Network Administrator role such as the [network contributor role](/azure/role-based-access-control/built-in-roles#network-contributor) or equivalent custom role.
   - In the Microsoft Entra admin center, assign the [Power Platform Administrator role](/entra/identity/role-based-access-control/permissions-reference#power-platform-administrator).
 
@@ -59,7 +59,7 @@ The following diagram depicts the functions of the roles in the setup process fo
 
     > [!IMPORTANT]
     > If there are two or more supported regions for the geo, such as the United States with **eastus** and  **westus**, two virtual networks in ***different*** regions are required to create the enterprise policy for [business continuity and disaster recovery] or failover scenarios.
-
+    
     You can [reuse existing virtual networks](./vnet-support-overview.md#can-i-use-an-existing-virtual-network-for-power-platform) if desired. Subnets on the other hand, [can't be reused in multiple enterprise policies](./vnet-support-overview.md#can-i-reuse-the-same-delegated-subnet-in-multiple-enterprise-policies).
 
 1. Create a subnet in each of your virtual networks. Review the number of IP addresses that are allocated to each subnet and consider the load of the environment. Both subnets must have the same number of available IP addresses.
@@ -82,9 +82,9 @@ The following diagram depicts the functions of the roles in the setup process fo
     > [!IMPORTANT]
     > If you wish to delete the virtual network or subnet, or are getting errors like `InUseSubnetCannotBeDeleted` and `SubnetMissingRequiredDelegation`, you **must delete the enterprise policy** if it exists. You can delete the enterprise policy with the following command.
     >
-    >```powershell
-    >Remove-AzResource -ResourceId $policyArmId -Force
-    >```
+    > ```powershell
+    > Remove-AzResource -ResourceId $policyArmId -Force
+    > ```
     >
     > Various PowerShell scripts are available to [get the enterprise policy](https://github.com/microsoft/PowerApps-Samples/blob/master/powershell/enterprisePolicies/README.md#4-get-subnet-injection-enterprise-policies-in-subscription) for the ARM resource ID.
 
@@ -93,6 +93,9 @@ The following diagram depicts the functions of the roles in the setup process fo
 ### Configure your Power Platform environment
 
 Run the [NewSubnetInjection.ps1 script](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/enterprisePolicies#7-set-subnet-injection-for-an-environment) to apply the enterprise policy to your environment.
+
+> [!Note]
+> If you want to remove the enterprise policy from the environment, you can run the ["remove subnet injection from an environment" script](https://github.com/microsoft/PowerApps-Samples/blob/master/powershell/enterprisePolicies/README.md#9-remove-subnet-injection-from-an-environment).
 
 ### Validate the connection
 
