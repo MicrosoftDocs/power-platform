@@ -169,7 +169,7 @@ Create a federated credential for the app registration. Learn more about federat
     - Replace `<orgid>` with the organization ID.
     - Replace `<sharepointmanagedidentityid>` with the GUID created earlier with the sharepointmanagedidentities record.
 
-   > [NOTE!]
+   > [!NOTE]
    > Use the script in [Generate the subject identifier](#generate-the-subject-identifier) to generate the subject identifier value with the base64 encoded values.
 
 1. Select **Add** to create the credential.
@@ -180,7 +180,7 @@ By following these steps, you configure an Azure application with the necessary 
 
 This PowerShell script generates the subject identifier value based on input values:
 
-- EnvironmentType of Public, Gov, GovFR, High, DoD, Mooncake, USNat, USSec
+- EnvironmentType of `Public`, `Gov`, `GovFR`, `High`, `DoD`, `Mooncake`, `USNat`, `USSec`
 - sharePointManagedIdentityId
 - tenantId
 - environmentId
@@ -291,7 +291,8 @@ This PowerShell script generates the subject identifier value based on input val
          Where-Object { $_.Environments -contains $EnvironmentType }
 
          if ($null -eq $environmentTypeConfig) {
-               Write-Error "Invalid environment type: '$EnvironmentType'. Please provide a valid environment type."
+               Write-Error "Invalid environment type: '$EnvironmentType'."+
+               " Please provide a valid environment type."
                return
          }
 
@@ -300,12 +301,13 @@ This PowerShell script generates the subject identifier value based on input val
 
          # Convert the Tenant ID and Power Platform Managed Identity App ID to Base64 URL-safe strings
          $encodedTenantId = Convert-ToBase64Url -Guid $TenantId
-         $encodedPowerPlatformManagedIdentityAppId = Convert-ToBase64Url -Guid $POWER_PLATFORM_MANAGED_IDENTITY_APP_ID
+         $encodedPowerPlatformManagedIdentityAppId = Convert-ToBase64Url `
+         -Guid $POWER_PLATFORM_MANAGED_IDENTITY_APP_ID
 
          # Construct the subject URL for the federated credential configuration
          $subjectUrlForFederatedCredentialConfig = ("{0}/t/{1}/a/{2}/Env/{3}/sharepointmanagedidentity/{4}" -f 
-               $environmentTypeConfig.SubjectPrefix, $encodedTenantId, $encodedPowerPlatformManagedIdentityAppId, 
-               $EnvironmentId, $SharePointManagedIdentityId)
+            $environmentTypeConfig.SubjectPrefix, $encodedTenantId, $encodedPowerPlatformManagedIdentityAppId, 
+            $EnvironmentId, $SharePointManagedIdentityId)
 
          Write-Output @"
    Inputs:
@@ -330,7 +332,7 @@ This PowerShell script generates the subject identifier value based on input val
       }
    }
    ```
-    
+
 1. Create a `test.ps1` and pass inputs to the `GetSharePointManagedIdentifyConfig` function
   
     ```powershell

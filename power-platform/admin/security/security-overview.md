@@ -4,7 +4,7 @@ description: Learn how to manage security in the Power Platform admin center by 
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/30/2025
+ms.date: 04/30/2025
 ms.custom: NewPPAC
 author: matapg007
 ms.author: matgupta
@@ -27,7 +27,7 @@ Administrators can complete these tasks:
 
 ## Prerequisite
 
-To view your security score, you must turn on tenant-wide analytics. You can find instructions in [How do I enable tenant-level analytics?](../tenant-level-analytics.md#how-do-i-enable-tenant-level-analytics)
+To view your security score, you must turn on tenant-wide analytics. You can find instructions in [How do I turn on tenant-level analytics?](../tenant-level-analytics.md#how-do-i-turn-on-tenant-level-analytics)
 
 > [!NOTE]
 > After you turn on tenant-wide analytics, it might take up to 24 hours for the **Security** page to be populated with data. Until then, most sections of the page show the message "Calculating security score."
@@ -120,6 +120,57 @@ Use the following links to view and manage proactive policies for governance and
 - [Data protection and privacy](data-protection-privacy.md): Ensure that personal information is securely handled, stored, and protected; prevent unauthorized access to data; and protect apps and cloud workloads from network-based cyberattacks through features such as [customer-managed keys](../customer-managed-key.md), data policies, and Azure Virtual Network.
 - [Identity and access management](identity-access-management.md): Ensure that authorized users are the only people who can access sensitive data in items across the tenant, through features such as IP firewall, IP address-based cookie binding, tenant isolation, environment security groups, sharing controls, and guest access.
 - [Compliance](compliance.md): Implement robust compliance measures to safeguard organizational data and ensure adherence to industry regulations, through features such [Customer Lockbox](../about-lockbox.md) and auditing.
+
+## Dismiss recommendations
+Administrators now have the ability to dismiss security recommendations that have been mitigated through alternative solutions. Previously, unaddressed recommendations could result in a stagnant security score, despite proactive measures taken outside the recommended solutions.
+
+Dismissed recommendations no longer negatively impact the security score, ensuring an accurate reflection of the organization's security posture.
+
+Your dismissed recommendations are always accessible, meaning that you can review their history at any time. If circumstances change or you wish to revisit a previously dismissed recommendation, you can easily reactivate it to ensure continuous security optimization.
+
+To dismiss a recommendation, complete the following steps.
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Security**.
+1. In the **Security** pane, select **Overeview**.
+1. The **Overview** page appears. Scroll down to the **Take action to increase your security score** section.
+1. In the **Active** tab, select the recommendations that you want to dismiss.
+1. Select the **X** icon to dismiss the recommendation.
+1. The **Dismiss** window is displayed. Select a reason for dismissing the recommendation from the dropdown list. Then select **Dismiss**.
+
+    The recommendation moves to the **Dismissed** tab.
+
+To make a recommendation active again, complete the following steps.
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Security**.
+1. In the **Security** pane, select **Overeview**.
+1. The **Overview** page appears. Scroll down to the **Take action to increase your security score** section.
+1. Select the **Dismissed** tab.
+1. Select the recommendation that you want to make active.
+1. Select the **Arrows** icon to make the recommendation active.
+
+    The recommendation moves to the **Active** tab.
+  
+## Manage security settings at an environment group-level
+Managing Power Platform at scale presents challenges for IT teams overseeing numerous environments. To streamline security governance, administrators can configure security settings at the *environment group* level, ensuring uniform enforcement of policies across all environments within a group.
+
+Currently, security management at the environment group-level is available for **Sharing** features, with plans to extend support to additional security capabilities in the near future. This structured approach simplifies administration, enhances security, and optimizes large-scale environment management for both startups and enterprises.
+
+To configure security settings at the environment group-level, complete the following steps.
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Security**.
+1. In the **Security** pane, select **Overview**.
+1. The **Overview** page appears. Scroll down to the **Take action to increase your security score** section.
+1. Select a recommendation.
+1. In the pane that is displayed, select the **Environment groups** tab and the **Environments** tab to select the environment groups or environments to which you want the security setting applied.
+1. Select the **Manage sharing** button.
+
+    > [!Note]
+    > The name of the button is determined by the security setting you're applying. In this specific example, we're applying a **Sharing** security setting, that's why **Manage sharing** is the name of the button mentioned in this step.
+    >
+    > Selected settings are applied to all the environments in that environment group.
 
 ## Provide feedback
 
