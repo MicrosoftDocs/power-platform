@@ -6,7 +6,7 @@ summary: Power Platform toolkits are made available by the Power Platform engine
 metadata:
   title: Power Platform toolkits documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: Power Platform toolkits documentation # Required; article description that is displayed in search results. < 160 chars.
-  ms.service: service
+  ms.services: service
   ms.subservice: guidance
   ms.topic: landing-page # Required
   author: manuelap-msft #Required; your GitHub user alias, with correct capitalization.
@@ -51,8 +51,8 @@ landingContent:
              text: ALM Accelerator overview
            - url: /power-platform/guidance/alm-accelerator/kit-contents
              text: What's in the ALM Accelerator
-           - url: /power-platform/guidance/creator-kit/setup-admin-tasks
+           - url: /power-platform/guidance/alm-accelerator/setup-admin-tasks
              text: Install the ALM Accelerator
-           - url: /power-platform/guidance/creator-kit/new-maker-experience
+           - url: /power-platform/guidance/alm-accelerator/new-maker-experience
              text: Use the ALM Accelerator
   
