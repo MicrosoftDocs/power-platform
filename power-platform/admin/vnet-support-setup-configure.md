@@ -77,7 +77,7 @@ The following diagram depicts the functions of the roles in the setup process fo
 
 ### Create the enterprise policy
 
-1. [Create a subnet injection enterprise policy](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/enterprisePolicies#2-create-subnet-injection-enterprise-policy), using the virtual networks and subnets you delegated. Remember two virtual networks in different regions are required for geos that support two or more regions.
+1. Run the [CreateSubnetInjectionEnterprisePolicy.ps1 script](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/enterprisePolicies#2-create-subnet-injection-enterprise-policy), using the virtual networks and subnets you delegated. Remember two virtual networks in different regions are required for geos that support two or more regions.
    
     > [!IMPORTANT]
     > If you wish to delete the virtual network or subnet, or are getting errors like `InUseSubnetCannotBeDeleted` and `SubnetMissingRequiredDelegation`, you **must delete the enterprise policy** if it exists. You can delete the enterprise policy with the following command.
@@ -95,7 +95,7 @@ The following diagram depicts the functions of the roles in the setup process fo
 Run the [NewSubnetInjection.ps1 script](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/enterprisePolicies#7-set-subnet-injection-for-an-environment) to apply the enterprise policy to your environment.
 
 > [!Note]
-> If you want to remove the enterprise policy from the environment, you can run the ["remove subnet injection from an environment" script](https://github.com/microsoft/PowerApps-Samples/blob/master/powershell/enterprisePolicies/README.md#9-remove-subnet-injection-from-an-environment).
+> If you want to remove the enterprise policy from the environment, you can run the [RevertSubnetInjection.ps1 script](https://github.com/microsoft/PowerApps-Samples/blob/master/powershell/enterprisePolicies/README.md#9-remove-subnet-injection-from-an-environment).
 
 ### Validate the connection
 
