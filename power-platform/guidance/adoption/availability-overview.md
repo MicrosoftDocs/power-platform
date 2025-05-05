@@ -1,14 +1,14 @@
 ---
 title: Power Platform availability overview and strategy
 description: Learn how to identify, plan, and deploy mission critical workloads with Power Platform and prepare disaster recovery plans.
-#customer intent: As a Power Platform admin, I want to understand how to ensure high availability for mission-critical workloads so that I can minimize downtime and maintain business continuity.
+#customer intent: As a Power Platform architect, I want to understand how to ensure high availability for mission-critical workloads so that I can minimize downtime and maintain business continuity.
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: concept-article
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.date: 05/02/2025
+ms.date: 05/05/2025
 ---
 
 # Power Platform availability overview and strategy

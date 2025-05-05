@@ -1,7 +1,7 @@
 ---
 title: Develop a Power Platform adoption plan
 description: Develop a Power Platform adoption plan with clear roles, responsibilities, and strategies for efficient implementation.
-#customer intent: As a Power Platform user, I want to develop a Power Platform adoption plan so that I can ensure efficient implementation and clear roles and responsibilities.
+#customer intent: As a business leader, I want to develop a Power Platform adoption plan so that I can ensure efficient implementation and clear roles and responsibilities.
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: concept-article

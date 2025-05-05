@@ -107,6 +107,6 @@ Site administrators can use this method. It requires more setup and planning but
 
 1. Refresh the website in your browser to see the changes.
 
-### See also
+## Related information
 
 [Learn more about deployment profiles in the portal CLI documentation](../../developer/cli/reference/paportal.md)

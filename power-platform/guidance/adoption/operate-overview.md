@@ -1,14 +1,14 @@
 ---
 title: Power Platform operations overview and strategy
 description: Learn how to achieve operational excellence with Power Platform by following best practices for lifecycle management, observability, and data resilience.
-#customer intent: As a Power-Platform user, I want to understand operational best practices for Power Platform so that I can ensure stability and minimize disruptions.
+#customer intent: As a Power Platform user, I want to understand operational best practices for Power Platform so that I can ensure stability and minimize disruptions.
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: concept-article
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
-ms.date: 04/23/2025
+ms.date: 05/05/2025
 ---
 
 # Power Platform operations overview and strategy

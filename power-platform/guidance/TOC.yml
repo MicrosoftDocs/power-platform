@@ -161,15 +161,15 @@
           items: 
             - name: Overview 
               href: adoption/nurture-best-practices.md
-            - name: Define community purpose & goals
+            - name: Define community purpose and goals
               href: adoption/community-goals.md
             - name: Define community core team responsibilities
               href: adoption/community-core-team.md
-            - name: Promote the community & establish partnerships
+            - name: Promote the community and establish partnerships
               href: adoption/community-promote.md
             - name: Identify champions
               href: adoption/champions.md
-            - name: Onboard new makers
+            - name: Onboard new community members and makers
               href: adoption/onboard-makers.md
             - name: Share success stories
               href: adoption/show-and-tell.md

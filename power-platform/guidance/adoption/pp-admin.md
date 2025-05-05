@@ -60,7 +60,7 @@ Designating the Power Platform admin role requires selecting individuals with th
 Consider the following recommendations:
 
 - **Clear role definition**: Define the responsibilities and qualifications of the Power Platform admin role to ensure the right expectations. Learn more in [Define roles and responsibilities](roles.md).
-- **Training and certification**: Provide training and certification programs to allow the designated admin to continuously up-skill and perform their role effectively. Explore [Microsoft Power Platform certifications](/credentials/browse/?products=power-platform) for relevant courses and certifications.
+- **Training and certification**: Provide training and certification programs to allow the designated admin to continuously upskill and perform their role effectively. Explore [Microsoft Power Platform certifications](/credentials/browse/?products=power-platform) for relevant courses and certifications.
 - **Support and resources**: Offer ongoing support and resources, such as documentation, community forums, and mentorship programs, to help the admin succeed in their role.
 - **Regular reviews**: Conduct regular reviews of the individuals with the Power Platform service admin role and evaluate if the role is still required. 
 

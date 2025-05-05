@@ -1,14 +1,14 @@
 ---
 title: Security overview and strategy
 description: Develop a robust Power Platform security strategy with our comprehensive guide. Learn how to protect your data, applications, and users effectively.
-#customer intent: As a Power Platform user, I want to assess my security posture so that I can identify potential vulnerabilities.
+#customer intent: As an IT admin, I want to assess my security posture so that I can identify potential vulnerabilities.
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: concept-article
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
-ms.date: 04/30/2025
+ms.date: 05/05/2025
 ---
 
 # Security overview and strategy
