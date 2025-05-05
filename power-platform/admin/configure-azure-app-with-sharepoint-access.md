@@ -108,7 +108,6 @@ Insert a row into the [`sharepointmanagedidentity`](/power-apps/developer/data-p
 
 | Table field | Value |
 | --- | --- |
-| `sharepointmanagedidentityid` | Create new GUID |
 | `uniquename` | "new_ppmiforsharepointauth" |
 | `name` | "Managed Identity For SharePoint Auth" |
 | `ManagedIdentity@odata.bind` | `/managedidentities(<managedidentityid>)` replacing `<managedidentityid>` with the value from the previous section  |
