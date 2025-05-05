@@ -223,4 +223,5 @@ We encourage customers to use pipelines for core deployment functionality, and w
 
 ## Related information
 
-[Deploy solutions using Pipeline in Power Apps (video)](https://youtu.be/iziCkYl8Shc?feature=shared)
+- [Deploy solutions using Pipeline in Power Apps (video)](https://youtu.be/iziCkYl8Shc?feature=shared)
+- [Pipelines in Power Platform Learning Path](https://aka.ms/PipelinesLearningPath)
