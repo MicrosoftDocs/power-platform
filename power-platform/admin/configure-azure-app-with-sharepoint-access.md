@@ -4,7 +4,7 @@ description: Learn how to configure an Azure app for SharePoint access to allow 
 author: adrianorth
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/01/2025
+ms.date: 05/05/2025
 ms.subservice: admin
 ms.author: aorth
 ms.reviewer: sericks
