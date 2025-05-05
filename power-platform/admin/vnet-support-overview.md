@@ -4,13 +4,14 @@ description: Learn about Microsoft Azure Virtual Network support for Power Platf
 author: faix
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/02/2025
+ms.date: 05/05/2025
 ms.subservice: admin
 ms.author: osfaixat
 ms.reviewer: sericks
 search.audienceType: 
   - admin
 contributors:
+  - wifun
   - matapg007
 ---
 
@@ -84,7 +85,7 @@ Power Platform enables Virtual Network support for both Dataverse plug-ins and [
 ### Limitations
 
 - [Dataverse low-code plug-ins](/power-apps/maker/data-platform/low-code-plug-ins) that use connectors aren't supported until those connector types are updated to use subnet delegation.
-- You use copy, backup, and restore [environment lifecycle operations](/dynamics365/fin-ops-core/dev-itpro/power-platform/environment-lifecycle-core-concepts#terminology-differences-between-lifecycle-services-and-power-platform-admin-center) on virtual network-supported Power Platform environments. The restore operation can be performed within the same virtual network, as well as across different environments, provided they're connected to the same virtual network. Additionally, the restore operation is permissible from environments that don't support virtual networks to those that do.
+- You use copy, backup, and restore [environment lifecycle operations](/dynamics365/fin-ops-core/dev-itpro/power-platform/environment-lifecycle-core-concepts#terminology-differences-between-lifecycle-services-and-power-platform-admin-center) on virtual network-supported Power Platform environments. The restore operation can be performed within the same virtual network, and across different environments, provided they're connected to the same virtual network. Additionally, the restore operation is permissible from environments that don't support virtual networks to those that do.
 
 ## Supported regions
 
@@ -170,15 +171,15 @@ Yes. You can make internet-bound calls from plug-ins or connectors, but the subn
 
 ### Can I update the subnet IP address range after it's delegated to "Microsoft.PowerPlatform/enterprisePolicies"?
 
-No, not while the feature is used in your environment. You can't change the IP address range of the subnet after it's delegated to "Microsoft.PowerPlatform/enterprisePolicies." If you do this, the delegation configuration is broken and the environment stops working. To change the IP address range, you must remove the delegation feature from your environment, make the necessary changes, and then turn on the feature for your environment.
+No, not while the feature is used in your environment. You can't change the IP address range of the subnet after it's delegated to "Microsoft.PowerPlatform/enterprisePolicies." If you do this, the delegation configuration is broken and the environment stops working. To change the IP address range, you must [remove the delegation feature from your environment](https://github.com/microsoft/PowerApps-Samples/blob/master/powershell/enterprisePolicies/README.md#9-remove-subnet-injection-from-an-environment), make the necessary changes, and then turn on the feature for your environment.
 
 ### Can I update the DNS address of my Virtual Network after it's delegated to "Microsoft.PowerPlatform/enterprisePolicies"?
 
-No, not while the feature is used in your environment. You can't change the DNS address of the Virtual Network after it's delegated to "Microsoft.PowerPlatform/enterprisePolicies." If you do this, the change isn't picked up in our configuration and your environment may stop working. To change the DNS address, you must remove the delegation feature from your environment, make the necessary changes, and then turn on the feature for your environment.
+No, not while the feature is used in your environment. You can't change the DNS address of the Virtual Network after it's delegated to "Microsoft.PowerPlatform/enterprisePolicies." If you do this, the change isn't picked up in our configuration and your environment may stop working. To change the DNS address, you must [remove the delegation feature from your environment](https://github.com/microsoft/PowerApps-Samples/blob/master/powershell/enterprisePolicies/README.md#9-remove-subnet-injection-from-an-environment), make the necessary changes, and then turn on the feature for your environment.
 
 ### Can I use the same enterprise policy for multiple Power Platform environments?
 
-Yes. You can use the same enterprise policy for multiple Power Platform environments. However, there is a limitation that [early release cycle environments](early-release.md) can't be used with the same enterprise policy as other environments.
+Yes. You can use the same enterprise policy for multiple Power Platform environments. However, there's a limitation that [early release cycle environments](early-release.md) can't be used with the same enterprise policy as other environments.
 
 ### My Virtual Network has a custom DNS configured. Does Power Platform use my custom DNS?
 
@@ -206,7 +207,7 @@ When a Power Platform environment has a delegated Azure subnet assigned, it uses
 
 ### Can I use an existing Virtual Network for Power Platform?
 
-Yes, you can use an existing Virtual Network for Power Platform, provided that a single, new subnet within the Virtual Network is delegated specifically to Power Platform. The delegated subnet has to be dedicated for subnet delegation and can't be used for other purposes.
+Yes, you can use an existing Virtual Network for Power Platform, if a single, new subnet within the Virtual Network is delegated specifically to Power Platform. The delegated subnet has to be dedicated for subnet delegation and can't be used for other purposes.
 
 ### Can I reuse the same delegated subnet in multiple enterprise policies?
 
