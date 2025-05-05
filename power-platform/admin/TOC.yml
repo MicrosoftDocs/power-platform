@@ -468,6 +468,8 @@
                   href: monitoring/monitor-power-apps.md
                 - name: For Power Automate (preview)
                   href: monitoring/monitor-power-automate.md
+        - name: Manage Copilot
+          href: copilot/copilot-hub.md
         - name: Security
           items:
             - name: Overview of Power Platform security
@@ -490,8 +492,6 @@
                           href: apps-to-allow.md
                 - name: Compliance
                   href: security/compliance.md
-            - name: Manage Copilot
-              href: copilot/copilot-hub.md
             - name: Power Platform managed identity
               items:
                 - name: Managed identity overview (preview)
@@ -844,10 +844,8 @@
                       href: powerapps-powershell.md
                     - name: Automation of tasks with PowerShell
                       href: wp-task-automation-powershell.md
-            - name: Connectors
-              items:
-                - name: Connector reference
-                  href: /connectors/powerplatformadminv2/
+            - name: Connectors reference
+              href: /connectors/powerplatformadminv2/
             - name: Power Platform API
               items:
                 - name: Getting started
