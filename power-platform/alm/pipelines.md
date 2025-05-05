@@ -215,7 +215,7 @@ We encourage customers to use pipelines for core deployment functionality, and w
 
 ## Next steps
 
-[Set up pipelines](set-up-pipelines.md)
+[Set up pipelines](set-up-pipelines.md)  
 [Extend pipelines](extend-pipelines.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
