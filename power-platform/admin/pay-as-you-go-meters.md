@@ -3,7 +3,7 @@ title: Pay-as-you-go meters
 description: If you're using a pay-as-you-go plan, 3 meters determine how much you pay based on usage of apps, Dataverse storage, and Power Platform requests.
 author: amiyapatr-zz
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 02/07/2025
 ms.subservice: admin
 ms.author: ampatra
