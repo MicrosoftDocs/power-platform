@@ -6,6 +6,7 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/25/2024
 ms.subservice: admin
+ms.custom: NewPPAC
 ms.author: sericks
 search.audienceType: 
   - admin
@@ -14,27 +15,29 @@ search.audienceType:
 
 [!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
-You can view and manage the settings for your environments by signing in to the Microsoft [Power Platform admin center](https://admin.powerplatform.microsoft.com), going to the **Environments** page, selecting an environment, and then selecting **Settings**.
+You can view and manage the settings for your environments by signing in to the Microsoft [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
-Settings for the selected environment can be managed here.
+#### [New admin center](#tab/new)
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. On the **Environments** page, choose an environment.
+1. In the command bar, select **Settings**. 
 
-![Environment settings.](media/environment-settings.png)
+#### [Classic admin center](#tab/classic)
+1. In the navigation pane, select **Environments**.
+1. On the **Environments** page, choose an environment.
+1. In the command bar, select **Settings**.  
+---
 
-## Environment settings are moving
-Across organization admin settings are gradually moving from the web client to the Power Platform admin center, apps with unified interface, or Power Apps. Meanwhile, you can manage settings in customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), as usual.
+Ensure you have the **System Administrator** security role or equivalent permissions to review and update the settings. To check your security role, refer to [View your user profile](/powerapps/user/view-your-user-profile). If you don’t have the necessary permissions, contact your system administrator.
 
-Many of these settings...
+## Environment settings have moved
 
-![Settings.](./media/old-settings.png)
+Organization-wide admin settings have been moved from the web client to the the [Power Platform admin center](https://admin.powerplatform.microsoft.com) , [Power Platform Environment Settings App](https://learn.microsoft.com/en-us/power-platform/admin/environment-settings-app), apps with unified interface, or Power Apps. Meanwhile, you can continue to manage settings in customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), as usual.
 
-...are moving here.
-
-![Environment settings mini.](media/environment-settings-mini.png)
-
-Use the links on this page to manage organization-wide settings. App-specific settings remain in customer engagement apps and accessed through the app settings. 
+Use the links on this page to manage organization-wide settings. App-specific settings remain in customer engagement apps and accessed through the app settings.
 
 ## New location for admin settings
-The following web client admin settings have moved.
 
 ### Security settings
 
@@ -48,72 +51,19 @@ These security settings are managed in the Power Platform admin center.
 - [Manage business units](create-edit-business-units.md)
 - [Hierarchy security to control access](hierarchy-security.md)
 
-## App settings
+### Settings in Power Platform Environment Settings app
 
-Getting to app feature settings can vary based on the type of app you're using. 
+Organization-wide settings can be managed via the [Power Platform Environment Settings app](https://learn.microsoft.com/en-us/power-platform/admin/environment-settings-app) and launched directly from the **Apps list** within the organization's environment.
 
-When the **[Display behavior -> Use updated experience for classic settings where possible](settings-behavior.md)** toggle is **On** , the following app settings have the modernized experience available in the unified interface. 
+Alternatively, if the PPAC feature setting **Environment settings behavior | Advanced Settings redirection** toggle is **On**, apps using the [Unified Interface](about-unified-interface.md) can access the settings by clicking **Settings** in the top command bar and selecting **Advanced settings**. This will open the [Power Platform Environment Settings app](https://learn.microsoft.com/en-us/power-platform/admin/environment-settings-app) in a new browser tab.
 
-| Legacy settings | Modernized experience  |
-|--- | --- | 
-|**Administration** ||
-| System Settings > Goals | Sales Hub|
-|**Business Management**  ||
-| Business Closures    | Customer Service admin center|
-| Currencies           | App-less unified interface|
-| Facilities/Equipment | Customer Service admin center|
-| Goal Metrics        | Customer Service admin center|
-| Queues              | Customer Service admin center|
-| Resource Groups     | Customer Service admin center|
-| Rollup Queries      | Sales Hub |
-| Sales Territories   | Sales Hub |
-| Services            | Customer Service admin center|
-| Sites               | Customer Service admin center|
-| Subjects            | Customer Service admin center|
-| LinkedIn Sales Navigator |  Sales Hub     |
-| **Data Management** | |
-| Similar Record Suggestion Settings | Customer Service admin center|
-| **Product Catalog** | |
-|  Discount Lists     | Sales Hub|
-|  Families & Products| Sales Hub|
-|  Price Lists        | Sales Hub|
-|  Unit Groups        | Sales Hub|
-| **Service Management** | |
-| Business Closures   | Customer Service admin center| 
-| Categories          | Customer Service admin center|
-| Customer Service Schedule | Customer Service admin center|
-| Email Templates     | Customer Service admin center|
-| Embedded Knowledge Search | Customer Service admin center|
-| Entitlement Templates | Customer Service admin center|
-| Entitlements         | Customer Service admin center|
-| Facilities/Equipment | Customer Service admin center|
-| Holiday Schedule     | Customer Service admin center|
-| Parent and Child case settings | Customer Service admin center|
-| Queues               | Customer Service admin center|
-| Resource Groups      | Customer Service admin center|
-| Routing Rule Sets    | Customer Service admin center|
-| Service Configuration Settings | Customer Service admin center|
-| Services             | Customer Service admin center|
-| Sites                | Customer Service admin center|
-|**Templates** | |
-| Document Templates   | App-less unified interface|
-| Email Signatures     | Customer Service admin center|
-| Email Templates      | Customer Service admin center|
+## Settings in Unified Interface apps
+- If the PPAC feature setting **Environment settings behavior | Advanced Settings redirection** toggle is **On**, click **Settings** in the top command bar, then select **Advanced settings**. This will open the Power Platform Environment Settings app in a new browser tab.
+- If the PPAC feature setting **Environment settings behavior | Advanced Settings redirection** toggle is **Off**, click **Settings** in the top command bar, then select **Advanced settings**. This will open the legacy settings in a new browser tab.
 
+## Settings in legacy web client apps
 
-### Settings in Unified Interface apps
-
-To open legacy settings for apps that use [Unified Interface](about-unified-interface.md), look in the upper-right corner and select the **Gear** icon (![Gear icon.](media/selection-rule-gear-button.png)). Then select **Advanced settings**. 
-
-> [!div class="mx-imgBorder"] 
-> ![Advanced settings.](media/advanced-settings.png "Advanced settings")
-
-### Settings in legacy web client apps
-
-To open settings for legacy client apps, select the arrow next to the app name, and then select **Settings**. 
-
-> [!div class="mx-imgBorder"] 
-> ![Legacy settings.](media/legacy-settings.png "Legacy settings")
+To open settings for legacy web client apps, click the arrow next to the app name in the top command bar. Then, from the drop-down menu, select **Settings**. 
 
 ### See also
 [Get started with Customer Service admin center](/dynamics365/customer-service/cs-admin-center)
