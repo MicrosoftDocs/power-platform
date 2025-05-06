@@ -1,7 +1,7 @@
 ---
-title: Support strategy - Maturity levels
+title: Support strategy maturity levels
 description: Discover how to evolve your Power Platform support strategy with defined maturity levels and actionable insights.
-#customer intent: As a Power Platform user, I want to assess the maturity level of my Power Platform support strategy so that I can identify areas for improvement.
+#customer intent: As a Power Platform admin, I want to assess the maturity level of my Power Platform support strategy so that I can identify areas for improvement.
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: concept-article
@@ -17,7 +17,7 @@ ms.custom:
   - ai-seo-date:03/28/2025
 ---
 
-# Support strategy - Maturity levels
+# Support strategy maturity levels
 
 Use the following maturity levels to assess the current state of your support strategy:
 

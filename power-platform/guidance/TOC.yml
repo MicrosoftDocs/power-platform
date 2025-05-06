@@ -113,7 +113,7 @@
           items:
             - name: Overview
               href: adoption/operate-overview.md
-            - name: Establish effective application lifecycle management practices
+            - name: Establish effective ALM practices
               href: adoption/alm.md
             - name: Gain insights into Power Platform adoption
               href: adoption/observability.md
@@ -125,15 +125,15 @@
               href: adoption/data-retention.md
             - name: Define your support process
               items:
-                - name: Support strategy - Overview
+                - name: Support strategy overview
                   href: adoption/support-strategy.md
                 - name: End-user support
                   href: adoption/support-strategy-solutions.md
                 - name: Maker support
                   href: adoption/support-strategy-makers.md
-                - name: Support strategy - Maturity Levels
+                - name: Support strategy maturity Levels
                   href: adoption/support-strategy-maturity.md
-            - name: Manage resistance and avoid organizational anti-patterns
+            - name: Manage resistance and avoid anti-patterns
               href: adoption/manage-resistance.md
         - name: Availability
           items: 
