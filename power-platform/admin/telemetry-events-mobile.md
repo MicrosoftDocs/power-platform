@@ -3,7 +3,7 @@ title: Telemetry events for mobile app synchronization and actions
 description: Power Apps mobile application data related to offline synchronization events is now available for model-driven and canvas apps.
 services: powerapps
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 02/06/2025
 author: JonBaker007
 ms.subservice: admin
