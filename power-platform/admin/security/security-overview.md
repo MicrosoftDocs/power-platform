@@ -3,7 +3,7 @@ title: Security page overview
 description: Learn how to manage security in the Power Platform admin center by using the available security features.
 ms.subservice: admin
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 04/30/2025
 ms.custom: NewPPAC
 author: matapg007
