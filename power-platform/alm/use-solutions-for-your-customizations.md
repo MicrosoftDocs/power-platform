@@ -4,7 +4,7 @@ description: "Using a custom solution in Power Platform is highly recommended. D
 ms.custom: ""
 ms.date: 02/06/2025
 ms.reviewer: ""
-ms.topic: "article"
+ms.topic: concept-article
 author: "Mattp123"
 ms.subservice: alm
 ms.author: "matp"

@@ -8,7 +8,7 @@ ms.author: matp
 ms.custom: ""
 ms.date: 03/14/2025
 ms.reviewer: ""
-ms.topic: "conceptual"
+ms.topic: concept-article
 ai-usage: ai-assisted
 search.audienceType: 
   - maker
