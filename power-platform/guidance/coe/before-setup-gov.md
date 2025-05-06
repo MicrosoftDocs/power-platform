@@ -4,7 +4,7 @@ description: "Prerequisites and instructions for setting up the governance compo
 author: manuelap-msft
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: get-started
 ms.date: 01/24/2022
 ms.subservice: guidance-toolkit
 ms.author: mapichle
