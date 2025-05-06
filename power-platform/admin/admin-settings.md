@@ -31,9 +31,11 @@ You can view and manage the settings for your environments by signing in to the 
 
 Ensure you have the **System Administrator** security role or equivalent permissions to review and update the settings. To check your security role, refer to [View your user profile](/powerapps/user/view-your-user-profile). If you don’t have the necessary permissions, contact your system administrator.
 
-## Environment settings have moved
+## Environment settings are moving
 
-Organization-wide admin settings have been moved from the web client to the the [Power Platform admin center](https://admin.powerplatform.microsoft.com) , [Power Platform Environment Settings App](https://go.microsoft.com/fwlink/p/?LinkID=2277077), apps with unified interface, or Power Apps. Meanwhile, you can continue to manage settings in customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), as usual.
+Organization-wide admin settings are moving from the web client to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) , [Power Platform Environment Settings App](environment-settings-app.md), apps with Unified Interface, or Power Apps. 
+
+Meanwhile, you can continue managing settings in customer engagement apps—such as Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation—as usual.
 
 Use the links on this page to manage organization-wide settings. App-specific settings remain in customer engagement apps and accessed through the app settings.
 
@@ -53,13 +55,13 @@ These security settings are managed in the Power Platform admin center.
 
 ### Settings in Power Platform Environment Settings app
 
-Organization-wide settings can be managed via the [Power Platform Environment Settings app](https://go.microsoft.com/fwlink/p/?LinkID=2277077) and launched directly from the **Apps list** within the organization's environment.
+Organization-wide settings can be managed via the [Power Platform Environment Settings app](environment-settings-app.md) and launched directly from the **Apps list** within the organization's environment.
 
-Alternatively, if the PPAC feature setting **Environment settings behavior | Advanced Settings redirection** toggle is **On**, apps using the [Unified Interface](about-unified-interface.md) can access the settings by clicking **Settings** in the top command bar and selecting **Advanced settings**. This will open the **Power Platform Environment Settings app** in a new browser tab.
+Alternatively, if the **Power Platform Admin Center (PPAC)** feature setting **Environment settings behavior | Advanced Settings redirection** toggle is **On**, apps using the [Unified Interface](about-unified-interface.md) can access the settings by clicking **Settings** in the top command bar and selecting **Advanced settings**. This opens the **Power Platform Environment Settings app** in a new browser tab.
 
 ## Settings in Unified Interface apps
-- If the PPAC feature setting **Environment settings behavior | Advanced Settings redirection** toggle is **On**, click **Settings** in the top command bar, then select **Advanced settings**. This will open the **Power Platform Environment Settings app** in a new browser tab.
-- If the PPAC feature setting **Environment settings behavior | Advanced Settings redirection** toggle is **Off**, click **Settings** in the top command bar, then select **Advanced settings**. This will open the **legacy settings** in a new browser tab.
+- If the PPAC feature setting **Environment settings behavior | Advanced Settings redirection** toggle is **On**, click **Settings** in the top command bar, then select **Advanced settings**. This opens the **Power Platform Environment Settings app** in a new browser tab.
+- If the PPAC feature setting **Environment settings behavior | Advanced Settings redirection** toggle is **Off**, click **Settings** in the top command bar, then select **Advanced settings**. This opens the **legacy settings** in a new browser tab.
 
 ## Settings in legacy web client apps
 
