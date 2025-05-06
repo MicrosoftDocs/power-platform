@@ -462,37 +462,36 @@
           href: copilot/copilot-hub.md
         - name: Security
           items:
-                - name: Secuirty overview
-                  href: security/security-overview.md
-                - name: Data protection and privacy
-                  href: security/data-protection-privacy.md
-                    - name: Encryption
-                    - name: Encryption
-                      items:
-                        - name: About encryption
-                          href: about-encryption.md
-                        - name: Self-managed key (BYOK)
-                          href: manage-encryption-key.md
-                        - name: Customer-managed key
-                          href: customer-managed-key.md
-                        - name: Lock and unlock environments
-                          href: cmk-lock-unlock.md
-                        - name: Migrate from BYOK
-                          href: cmk-migrate-from-byok.md
-                        - name: Encrypt your column-level data
-                          href: data-encryption.md
-                - name: Identity and access
+            - name: Secuirty overview
+              href: security/security-overview.md
+            - name: Data protection and privacy
+              href: security/data-protection-privacy.md
+                - name: Encryption
                   items:
-                    - name: Identity and access management
-                      href: security/identity-access-management.md
-                    - name: App access control
-                      items:
-                        - name: Control which apps are allowed in your environment (preview)
-                          href: control-app-access-environment.md
-                        - name: Commonly used Microsoft first-party services and portal apps (preview)
-                          href: apps-to-allow.md
-                - name: Compliance
-                  href: security/compliance.md
+                    - name: About encryption
+                      href: about-encryption.md
+                    - name: Self-managed key (BYOK)
+                      href: manage-encryption-key.md
+                    - name: Customer-managed key
+                      href: customer-managed-key.md
+                    - name: Lock and unlock environments
+                      href: cmk-lock-unlock.md
+                    - name: Migrate from BYOK
+                      href: cmk-migrate-from-byok.md
+                    - name: Encrypt your column-level data
+                      href: data-encryption.md
+            - name: Identity and access
+              items:
+                - name: Identity and access management
+                  href: security/identity-access-management.md
+                - name: App access control
+                  items:
+                    - name: Control which apps are allowed in your environment (preview)
+                      href: control-app-access-environment.md
+                    - name: Commonly used Microsoft first-party services and portal apps (preview)
+                      href: apps-to-allow.md
+            - name: Compliance
+              href: security/compliance.md
             - name: Power Platform managed identity
               items:
                 - name: Managed identity overview (preview)
