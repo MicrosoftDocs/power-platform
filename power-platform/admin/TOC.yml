@@ -480,6 +480,20 @@
                       href: cmk-migrate-from-byok.md
                     - name: Encrypt your column-level data
                       href: data-encryption.md
+                - name: Data policies
+                  items:
+                    - name: Data policies for Managed Environments
+                      href: managed-environment-data-policies.md
+                    - name: Data loss prevention (DLP) policies
+                      href: wp-data-loss-prevention.md
+                - name: Virtual Networks
+                  items: 
+                    - name: Virtual Network support overview
+                      href: vnet-support-overview.md
+                    - name: Virtual Network support white paper
+                      href: virtual-network-support-whitepaper.md
+                    - name: Set up Virtual Network support for Power Platform
+                      href: vnet-support-setup-configure.md
             - name: Identity and access
               items:
                 - name: Identity and access management
@@ -668,14 +682,6 @@
                   href: restrict-access-online-trusted-ip-rules.md
                 - name: B2B collaboration with Microsoft Entra ID
                   href: invite-users-azure-active-directory-b2b-collaboration.md
-            - name: Virtual Network support
-              items:
-                - name: Virtual Network support overview
-                  href: vnet-support-overview.md
-                - name: Virtual Network support white paper
-                  href: virtual-network-support-whitepaper.md
-                - name: Set up Virtual Network support
-                  href: vnet-support-setup-configure.md
             - name: Security FAQs
               href: security/faqs.md
         - name: Analytics
