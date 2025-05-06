@@ -6,7 +6,7 @@ ms.subservice: admin
 ms.author: meeram
 ms.reviewer: sericks
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 07/26/2024
 search.audienceType: 
   - admin
