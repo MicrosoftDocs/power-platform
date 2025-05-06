@@ -4,7 +4,7 @@ description: "The Environment Management components in the Core solution will he
 author: denise-msft
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 08/04/2021
 ms.subservice: guidance-toolkit
 ms.author: demora
