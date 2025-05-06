@@ -2,7 +2,7 @@
 title: "Replicate data to Azure SQL Database using Data Export Service | MicrosoftDocs"
 description: Replicate data to Azure SQL Database using Data Export Service 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 03/20/2023
 ms.subservice: admin
 ms.author: nhelgren
