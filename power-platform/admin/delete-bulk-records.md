@@ -3,7 +3,7 @@ title: Delete bulk records
 description: Delete bulk records.
 author: bhgoswam 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 01/23/2025
 ms.subservice: admin
 ms.author: bhgoswam
