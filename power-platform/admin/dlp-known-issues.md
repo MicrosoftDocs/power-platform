@@ -1,7 +1,7 @@
 ---
 title: Known limitations for data loss prevention (DLP) policies
 description: Learn more about the known limitations when using our suite of data loss prevention (DLP) capabilities.
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 02/05/2025
 ms.subservice: admin
 author: mikferland-msft
