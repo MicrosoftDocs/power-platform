@@ -3,7 +3,7 @@ title: "Install, update, or remove a preferred solution  | MicrosoftDocs"
 description: Install, update, or remove a preferred solution
 author: sericks007
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 08/20/2020
 ms.subservice: admin
 ms.author: sericks

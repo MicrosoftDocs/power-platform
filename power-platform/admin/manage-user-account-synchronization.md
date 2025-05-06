@@ -3,7 +3,7 @@ title: "Manage user account synchronization  | MicrosoftDocs"
 description: Manage user account synchronization
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 01/21/2021
 author: sericks007
 ms.subservice: admin

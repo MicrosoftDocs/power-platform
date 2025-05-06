@@ -4,7 +4,7 @@ description: "Learn how to use the Power Platform admin center to view and take 
 author: sericks007
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 04/15/2020
 ms.subservice: admin
 ms.author: sericks

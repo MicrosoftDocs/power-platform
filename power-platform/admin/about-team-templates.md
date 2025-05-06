@@ -3,7 +3,7 @@ title: "Use access and owner team templates for collaboration"
 description: "Learn how to use team templates in Microsoft Power Platform to allow users across business units to share information and collaborate."
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 01/11/2021
 author: sericks007
 ms.subservice: admin

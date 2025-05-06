@@ -3,7 +3,7 @@ title: Legacy storage capacity
 description: Learn more about the legacy storage model details.
 ms.date: 08/01/2024
 ms.reviewer: sericks
-ms.topic: conceptual
+ms.topic: concept-article
 author: sericks007
 ms.subservice: admin
 ms.author: sericks

@@ -3,7 +3,7 @@ title: "Regional and language options for your environment | MicrosoftDocs"
 description: Set regional and language options for your environment 
 author: sericks007
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 04/24/2025
 ms.subservice: admin
 ms.custom: NewPPAC

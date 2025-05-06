@@ -2,7 +2,7 @@
 title: Privacy-related privileges
 description: Learn about the privacy-related privileges you can assign to a security role in Power Platform.
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 06/23/2023
 ms.subservice: admin
 author: sericks007
