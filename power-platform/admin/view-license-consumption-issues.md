@@ -4,7 +4,7 @@ description: Learn how to view your organization's Power Apps license consumptio
 author: amiyapatr-zz
 ms.date: 04/23/2024
 ms.reviewer: sericks
-ms.topic: conceptual
+ms.topic: concept-article
 ms.subservice: admin
 ms.author: ampatra
 ms.custom: bap-template
