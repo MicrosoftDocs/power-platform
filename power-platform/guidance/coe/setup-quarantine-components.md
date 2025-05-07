@@ -4,7 +4,7 @@ description: "Learn how to set up the app quarantine components of the CoE Start
 author: manuelap-msft
 ms.service: power-platform
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 06/13/2024
 ms.subservice: guidance-toolkit
 ms.author: mapichle

@@ -3,7 +3,7 @@ title: Executive sponsorship
 description: Guidance for getting buy-in from an executive leader for your Power Platform adoption journey, understanding their role and activities, and learning how to identify an executive sponsor.
 author: manuelap-msft
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 03/31/2023
 ms.subservice: guidance
 ms.author: mapichle

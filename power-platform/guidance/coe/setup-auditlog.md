@@ -4,7 +4,7 @@ description: "The Audit Log Sync flow connects to the Audit Log using a custom c
 author: manuelap-msft
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 09/26/2024
 ms.subservice: guidance-toolkit
 ms.author: mapichle
