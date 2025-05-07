@@ -3,7 +3,7 @@ title: Column-level security
 description: Overview of column-level security using an example.
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 04/01/2025
+ms.date: 05/07/2025
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
@@ -108,8 +108,8 @@ Columns that can't be secured include:
 - System columns like `createdon`, `modifiedon`, `statecode`, and `statuscode`.
 
 > [!Note]
-- File and Image data types can be secured but they cannot be masked.
-- Text data type with Rich text format can be secured but embedded image in Rich text cannot be masked or bypassed for masking
+- File and Image data types can be secured, but they can't be masked.
+- Text data type with Rich text format can be secured, but an embedded image in Rich text can't be masked or bypassed for masking.
 
 Whether the **Enable column security** checkbox is enabled depends on the value of these column properties: `CanBeSecuredForCreate`, `CanBeSecuredForRead`, and `CanBeSecuredForUpdate`. A developer can write a query to retrieve a list of these columns and you can view this data by installing the Metadata Browser solution described in [Browse the Metadata for Your Organization](/powerapps/developer/common-data-service/browse-your-metadata). Learn more about [which columns can be secured](/power-apps/developer/data-platform/field-security-entities#which-attributes-can-be-secured) and [how developers can retrieve this data](/power-apps/developer/data-platform/query-schema-definitions).
 
