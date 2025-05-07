@@ -3,7 +3,7 @@ title: Manage email notifications
 description: Manage email notifications
 author: karacortez
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 1/30/2025
 ms.subservice: admin
 ms.author: kacortez

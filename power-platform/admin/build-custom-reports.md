@@ -2,7 +2,7 @@
 title: "Create custom dashboards with Power Platform inventory and usage data (preview)"
 description: Use Power Apps exported data with other line-of-business scenarios and display data insights at tenant and environment levels across business units.
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 03/30/2022
 ms.subservice: admin
 author: Zeffin

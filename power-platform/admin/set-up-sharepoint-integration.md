@@ -4,7 +4,7 @@ description: "Learn about the benefits of using the document management capabili
 author: Mattp123
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 09/28/2020
 ms.subservice: admin
 ms.author: matp

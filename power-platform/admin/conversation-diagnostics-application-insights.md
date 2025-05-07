@@ -3,7 +3,7 @@ title: Conversation diagnostics in Azure Application Insights (preview)
 description: Learn about how to proactively monitor the system and allow developers to easily identify, diagnose, and fix problematic conversations, or seek swift support.
 services: powerapps
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 03/03/2025
 author: sericks007
 ms.subservice: admin

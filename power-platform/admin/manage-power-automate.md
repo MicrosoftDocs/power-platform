@@ -4,7 +4,7 @@ description: How to manage Power Automate flows created in your organization
 author: sericks007
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 04/29/2025
 ms.subservice: admin
 ms.custom: NewPPAC

@@ -4,7 +4,7 @@ description: Merge data
 author: sericks007
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 11/04/2019
 ms.subservice: admin
 ms.author: sericks

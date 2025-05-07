@@ -4,7 +4,7 @@ description: "As an administrator taking over an environment or starting to supp
 author: manuelap-msft
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 06/13/2024
 ms.subservice: guidance
 ms.author: mapichle

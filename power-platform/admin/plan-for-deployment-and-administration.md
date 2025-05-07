@@ -4,7 +4,7 @@ description: "As an administrator, learn about the considerations when planning 
 author: sericks007
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 09/08/2020
 ms.subservice: admin
 ms.author: sericks

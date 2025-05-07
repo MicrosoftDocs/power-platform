@@ -11,7 +11,7 @@ contributors:
 - JesseParsons 
 - srpoduri
 - kavehkazms 
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 08/20/2024
 search.audienceType: 
   - admin

@@ -4,7 +4,7 @@ description: "The Microsoft Power Platform CoE Starter Kit is a collection of co
 author: manuelap-msft
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: overview
 ms.date: 04/10/2020
 ms.subservice: guidance-toolkit
 ms.author: mapichle

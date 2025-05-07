@@ -4,7 +4,7 @@ description: "To avoid multiple installed solutions from interfering with one an
 ms.custom: ""
 ms.date: 02/04/2025
 ms.reviewer: ""
-ms.topic: "article"
+ms.topic: concept-article
 author: "caburke" 
 ms.subservice: alm
 ms.author: "matp" 

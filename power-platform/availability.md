@@ -4,7 +4,7 @@ description: Learn about product availability, customer data locations, and lang
 author: tapanm-MSFT
 ms.reviewer: tapanm
 ms.date: 03/25/2025
-ms.topic: article
+ms.topic: concept-article
 ms.subservice: admin
 ms.custom:
 audience: Application User, IT Pro, Developer

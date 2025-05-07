@@ -3,7 +3,7 @@ title: "Set up Microsoft Entra Conditional Access - Microsoft Power Platform | M
 description: "By using Conditional Access policies, you can apply the right access controls when needed to keep your organization secure and stay out of your user’s way when not needed."
 author: manuelap-msft
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 04/02/2024
 ms.subservice: guidance
 ms.author: mapichle
