@@ -3,7 +3,7 @@ title: "Track Outlook email by moving it to a tracked Exchange folder | Microsof
 description: Track Outlook email by moving it to a tracked Exchange folder
 author: sericks007
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 09/11/2020
 ms.subservice: admin
 ms.author: sericks

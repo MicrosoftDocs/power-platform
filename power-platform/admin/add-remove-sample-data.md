@@ -4,7 +4,7 @@ description: Add or remove sample data
 author: sericks007
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 10/07/2021
 ms.subservice: admin
 ms.author: sericks

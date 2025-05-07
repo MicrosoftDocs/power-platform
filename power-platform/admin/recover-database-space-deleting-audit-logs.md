@@ -3,7 +3,7 @@ title: "Recover database space by deleting audit logs  | MicrosoftDocs"
 description: Recover database space by deleting audit logs
 author: sericks007
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 03/29/2024
 ms.subservice: admin
 ms.author: sericks
