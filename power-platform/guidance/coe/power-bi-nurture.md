@@ -3,7 +3,7 @@ title: "Nurture with the CoE Power BI dashboard | MicrosoftDocs"
 description: "The Nurture section of the Center of Excellence (CoE) Power BI dashboard gives you the ability to identify your app and flow gurus."
 author: manuelap-msft 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 08/02/2023
 ms.subservice: guidance-toolkit
 ms.author: mapichle

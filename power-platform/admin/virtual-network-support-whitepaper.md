@@ -3,7 +3,7 @@ title: Virtual Network support white paper
 description: Learn how Azure Virtual Network support enhances the security, connectivity, and scalability of your Power Platform solutions.
 author: faix
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 05/02/2025
 ms.subservice: admin
 ms.author: osfaixat

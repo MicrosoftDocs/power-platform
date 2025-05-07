@@ -4,7 +4,7 @@ description: "The Power Platform CoE Starter Kit is shipped in multiple componen
 author: manuelap-msft
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 09/05/2023
 ms.subservice: guidance-toolkit
 ms.author: mapichle
