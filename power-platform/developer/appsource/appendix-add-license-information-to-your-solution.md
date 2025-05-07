@@ -5,7 +5,7 @@ ms.date: 04/03/2023
 author: angela21k
 ms.author: angelakim
 ms.reviewer: pehecke
-ms.topic: article
+ms.topic: concept-article
 ms.subservice: developer
 search.audienceType: 
   - developer
