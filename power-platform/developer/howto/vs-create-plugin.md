@@ -4,7 +4,7 @@ description: "Learn how to create and register a Dataverse plug-in using the Pow
 ms.custom: ""
 ms.date: 01/31/2025
 ms.reviewer: "pehecke"
-ms.topic: "article"
+ms.topic: quickstart
 author: "phecke" # GitHub ID
 ms.subservice: developer
 ms.author: "pehecke" # MSFT alias of Microsoft employees only

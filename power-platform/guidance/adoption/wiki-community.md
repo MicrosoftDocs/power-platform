@@ -4,7 +4,7 @@ description: "At the heart of growth is a community, a place for people to colla
 author: manuelap-msft
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 07/17/2024
 ms.subservice: guidance
 ms.author: mapichle
