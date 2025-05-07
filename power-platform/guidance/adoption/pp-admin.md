@@ -4,7 +4,7 @@ description: "To help you administer environments and settings, you can assign u
 author: denise-msft
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 04/10/2020
 ms.subservice: guidance
 ms.author: mapichle
