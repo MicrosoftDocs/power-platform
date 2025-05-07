@@ -2,7 +2,7 @@
 title: Dataverse capacity-based storage details  
 description: Learn about the Microsoft Dataverse capacity-based storage model.
 ms.date: 03/21/2025
-ms.topic: conceptual
+ms.topic: concept-article
 author: marianaraujo 
 ms.subservice: admin
 ms.author: maaraujo
