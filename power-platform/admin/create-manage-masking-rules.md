@@ -2,7 +2,7 @@
 title: Create and manage masking rules (preview)
 description: Learn how to create and manage masking rules in Microsoft Power Apps.
 ms.component: pa-admin
-ms.date: 02/20/2025
+ms.date: 05/07/2025
 ms.topic: overview
 ms.custom: "admin-security"
 author: paulliew
@@ -237,4 +237,4 @@ In these examples, replace `<url>`, `<table collection name>`, and `<recordid>` 
 
 - **Embedded images in Rich text data**
 
-  If you are using Rich text format in a large text area like email body and you accept embedded images, the masking rules continue to be applied to the image making it unreadable. 
+  If you're using Rich text format in a large text area, like email body, and you accept embedded images, the masking rules continue to be applied to the image making it unreadable. 
