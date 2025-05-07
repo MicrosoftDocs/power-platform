@@ -52,4 +52,4 @@ Loading large amounts of data can significantly slow down your app:
 ## Next step
 
 > [!div class="nextstepaction"]
-> [Power Platform performance monitoring tools](tools.md)
+> [Identifying and Mitigating Canvas App Performance Issues](top-issues.md)
