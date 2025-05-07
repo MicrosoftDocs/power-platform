@@ -1,7 +1,7 @@
 ---
 title: App registration considerations
 description: Learn about considerations to keep in mind and approaches you can take when you're designing app registrations for the ALM Accelerator for Power Platform.
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 04/12/2023
 ms.subservice: guidance-toolkit
 author: jenschristianschroder
