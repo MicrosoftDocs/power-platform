@@ -4,7 +4,7 @@ description: "If you want to create more excitement in your organization and ins
 author: manuelap-msft
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 09/11/2020
 ms.subservice: guidance
 ms.author: mapichle

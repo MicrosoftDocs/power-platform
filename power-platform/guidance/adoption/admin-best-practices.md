@@ -4,7 +4,7 @@ description: "Discover admin and governance best practices for Microsoft Power P
 author: manuelap-msft
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: best-practice
 ms.date: 06/13/2024
 ms.subservice: guidance
 ms.author: mapichle

@@ -2,7 +2,7 @@
 title: Restrict cross-tenant inbound and outbound access
 description: Use tenant restrictions to control access to SaaS cloud applications based on the Microsoft Entra tenant. You can also enforce tenant isolation for Power Platform connections. 
 ms.date: 04/23/2025
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 
 author: mihaelablendea
 ms.subservice: admin

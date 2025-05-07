@@ -4,7 +4,7 @@ description: "Learn how to set up the Microsoft Teams governance components of t
 author: manuelap-msft
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 09/05/2023
 ms.subservice: guidance-toolkit
 ms.author: mapichle

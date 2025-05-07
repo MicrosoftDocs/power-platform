@@ -5,7 +5,7 @@ author: samathur
 ms.subservice: admin
 ms.author: samathur
 ms.reviewer: sericks
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 01/14/2025
 search.audienceType: 
   - admin

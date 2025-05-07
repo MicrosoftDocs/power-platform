@@ -3,7 +3,7 @@ title: "Use Microsoft Dataverse to detect duplicate records and merge  | Microso
 description: About detecting and merging duplicate records.
 author: sericks007
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 03/01/2023
 ms.subservice: admin
 ms.author: sericks

@@ -2,7 +2,7 @@
 title: "License assignment strategies | MicrosoftDocs"
 description: "Guidance for license assignment."
 author: stjeffer
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 06/20/2023
 ms.subservice: guidance
 ms.author: stjeffer

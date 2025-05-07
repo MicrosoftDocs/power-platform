@@ -2,7 +2,7 @@
 title: "End of support for Internet Explorer | MicrosoftDocs"
 description: Information about end of support for Internet Explorer.
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 08/18/2022
 ms.subservice: admin
 ms.author: aorth 

@@ -4,7 +4,7 @@ description: "Learn about the factors in selecting a region when creating a new 
 author: sericks007
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 04/28/2024
 ms.subservice: admin
 ms.custom: NewPPAC

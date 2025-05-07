@@ -3,7 +3,7 @@ title: "Get Help + Support in Power Platform  | MicrosoftDocs"
 description: Use the Help + support experience to contact a Microsoft support representative to get resolution for your issue.
 author: sericks007
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 11/25/2024
 ms.subservice: admin
 ms.author: sericks 

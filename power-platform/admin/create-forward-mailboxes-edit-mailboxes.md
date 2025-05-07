@@ -3,7 +3,7 @@ title: "Create forward mailboxes or edit mailboxes | MicrosoftDocs"
 description: Create forward mailboxes or edit mailboxes 
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 09/29/2020
 author: sericks007
 ms.subservice: admin
