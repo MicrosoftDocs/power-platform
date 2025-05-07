@@ -6,7 +6,7 @@ ms.subservice: developer
 ms.author: pehecke
 ms.date: 05/14/2024
 ms.reviewer: pehecke
-ms.topic: "article"
+ms.topic: concept-article
 ---
 
 # Power Platform ALM developer tools
