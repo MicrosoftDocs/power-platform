@@ -1,11 +1,11 @@
 ---
 title: User and maker support strategy
 description: Learn how to create a robust support framework for Power Platform users and makers, including internal and external resources.
-#customer intent: As a Power Platform user, I want to create a support framework for Power Platform users and makers so that I can ensure effective internal and external support.
+#customer intent: As a Power Platform admin, I want to create a support framework for Power Platform users and makers so that I can ensure effective internal and external support.
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 04/01/2025
+ms.date: 05/06/2025
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
