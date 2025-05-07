@@ -4,7 +4,7 @@ description: A review of digitizing Business Applications Group
 author: kathyos
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 05/20/2021
 ms.subservice: guidance
 ms.author: kathyos
