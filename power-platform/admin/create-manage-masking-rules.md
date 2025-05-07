@@ -2,7 +2,7 @@
 title: Create and manage masking rules (preview)
 description: Learn how to create and manage masking rules in Microsoft Power Apps.
 ms.component: pa-admin
-ms.date: 02/20/2025
+ms.date: 05/07/2025
 ms.topic: overview
 ms.custom: "admin-security"
 author: paulliew
@@ -204,7 +204,7 @@ If you have permission to **Read** unmasked fields, you see masked values by def
 | Excel report   | Always                                          |
 
 > [!NOTE]
-> Audit log shows unmasked values in the before-and-after update events. Grant reading audit logs to only authorized users.
+> Audit log shows masked values in the before-and-after update events. Grant reading audit logs to only authorized users.
 
 ### Options for viewing masked fields
 
@@ -225,7 +225,7 @@ In these examples, replace `<url>`, `<table collection name>`, and `<recordid>` 
 
   `https://<url>/api/data/v9.1/<table collection name>(<recordid>)?$select=<column_name>&UnMaskedData=true`
 
-## Known limitations
+## Known limitations/Not supported
 
 - **Reading unmasked values on the form**
 
@@ -235,6 +235,6 @@ In these examples, replace `<url>`, `<table collection name>`, and `<recordid>` 
 
   When you create a new record, you enter the sensitive field as unmasked values. After you save, the form automatically refreshes, and the sensitive field is immediately masked. You can update the field but make sure that you enter the unmasked values.
 
-- **Audit log**
+- **Embedded images in Rich text data**
 
-  Unmasked values are displayed in the audit log. In future releases, these are masked with option to read unmasked for users who have **Read unmasked** permission.
+  If you're using Rich text format in a large text area, like email body, and you accept embedded images, the masking rules continue to be applied to the image making it unreadable. 
