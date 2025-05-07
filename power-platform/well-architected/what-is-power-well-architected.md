@@ -5,7 +5,7 @@ author: robstand
 ms.author: rstand
 ms.reviewer: jhaskett-msft
 ms.subservice: well-architected
-ms.topic: conceptual
+ms.topic: overview
 ms.date: 05/16/2024
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Upgrade the ALM Accelerator
 description: Learn how to install new releases of the ALM Accelerator for Power Platform.
-ms.topic: conceptual
+ms.topic: upgrade-and-migration-article
 ms.date: 04/13/2023
 ms.subservice: guidance-toolkit
 author: rsantos00
