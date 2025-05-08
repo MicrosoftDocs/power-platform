@@ -54,3 +54,6 @@ Complete the following steps to allow users to delete address data.
 1. Select **Product** > **Features**.
 1. Find the **Enable deletion of address records** setting and turn it **On**.
 1. Select **Save** on the bottom of the page to save the changes.
+
+> [!IMPORTANT]
+> When deleting an address record, the related parent record (**Account** or **Contact**) is automatically updated by the system to reflect empty address information within the relevant address field(s).
