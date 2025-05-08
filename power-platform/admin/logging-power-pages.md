@@ -27,7 +27,7 @@ To view Power Pages activities in Microsoft Purview:
 
 From the Audit screen, an administrator can filter for specific activities by selecting the **Activities – friendly names** dropdown and choosing from the available options.
 
-To filter or search for Power Pages admin activities, select **PowerPlatformAdministratorActivity** as the value for **Record types**. 
+To filter or search for Power Pages admin activities, select **PowerPagesSite** as the value for **Record types**. 
 
 :::image type="content" source="media/admin-activity-logging/logging-power-pages/new-search-record-types.png" alt-text="A screenshot of the New Search page with Record types emphasized. The value PowerPlatformAdministratorActivity is emphasized.":::
 
