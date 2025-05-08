@@ -3,7 +3,7 @@ title: "Step 4: Store your AppSource Package on Azure Storage and generate a URL
 description: "To maintain security of your files, all app developers must store their AppSource package file in a Microsoft Azure Blob storage account, and use a Shared Access Signature (SAS) key to share the package file. Your package file is retrieved from your Azure Storage location for certification, and then for AppSource trials."
 ms.date: 04/03/2023
 ms.reviewer: pehecke
-ms.topic: article
+ms.topic: how-to
 author: shmcarth
 ms.author: shmcarth
 ms.subservice: developer

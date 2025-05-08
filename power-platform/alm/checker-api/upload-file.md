@@ -5,7 +5,7 @@ ms.custom: ""
 ms.date: 06/09/2020
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: how-to
 applies_to: 
   - "Dynamics 365 (online)"
 ms.assetid: 08d7d73b-1377-4d3f-b8ef-5c89b19dd735

@@ -12,7 +12,7 @@ ms.custom:
   - "admin-security"
   - bap-template
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 02/11/2025
 search.audienceType: 
   - admin

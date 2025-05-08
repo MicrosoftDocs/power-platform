@@ -2,7 +2,7 @@
 title: "View policies and scope  | MicrosoftDocs"
 description: View policies and policy scope.
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 05/03/2024
 ms.subservice: admin
 author: mikferland-msft

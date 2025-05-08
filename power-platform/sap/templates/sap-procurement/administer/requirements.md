@@ -12,7 +12,7 @@ contributors:
   - scottwoodallmsft
   - Wrighttyler
 ms.reviewer: ellenwehrle
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 03/27/2025
 ms.custom: bap-template
 ms.service: power-platform

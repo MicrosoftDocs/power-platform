@@ -3,7 +3,7 @@ title: Automatic deletion of inactive Dataverse for Teams environments
 description: Admins can configure an automatic cleanup process that removes inactive Dataverse for Teams environments from their tenants.
 author: matapg007
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 02/21/2024
 ms.subservice: admin
 ms.author: matgupta 

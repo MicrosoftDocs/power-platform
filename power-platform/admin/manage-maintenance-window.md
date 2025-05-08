@@ -5,7 +5,7 @@ author: samathur
 ms.author: samathur
 ms.reviewer: sericks
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 10/28/2021
 search.audienceType: 
   - admin

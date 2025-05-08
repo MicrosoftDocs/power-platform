@@ -4,7 +4,7 @@ description: Learn how to integrate OneNote with customer engagement apps
 author: sericks007
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 11/10/2020
 ms.subservice: admin
 ms.author: sericks

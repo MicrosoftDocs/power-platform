@@ -3,7 +3,7 @@ title: Strategy and vision best practices
 description: Guidance for Microsoft Power Platform adoption best practices around admin, governance, nurture, strategy, and vision.
 author: manuelap-msft
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 03/31/2023
 ms.subservice: guidance
 ms.author: mapichle

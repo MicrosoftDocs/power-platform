@@ -4,7 +4,7 @@ description: "Learn how to install, configure, and manage Dynamics 365 apps in P
 author: sericks007
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 04/24/2025
 ms.subservice: admin
 ms.custom: NewPPAC

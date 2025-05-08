@@ -3,7 +3,7 @@ title: "About Microsoft Cloud Australia  | MicrosoftDocs"
 description: About Microsoft Cloud Australia
 author: sericks007
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 09/20/2022
 ms.subservice: admin
 ms.author: sericks

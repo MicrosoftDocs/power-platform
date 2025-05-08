@@ -6,7 +6,7 @@ ms.subservice: alm
 ms.author: matp
 ms.date: 04/21/2025
 ms.custom: 
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.reviewer: matp
 ms.collection: 
 ms.contributors:

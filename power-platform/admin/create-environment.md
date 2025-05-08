@@ -3,7 +3,7 @@ title: Create and manage environments in the Power Platform admin center | Micro
 description: Learn how to create and manage environments in the Power Platform admin center.
 author: sericks007
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 02/12/2025
 ms.subservice: admin
 ms.author: mbajwa
