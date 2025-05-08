@@ -9,7 +9,7 @@ contributors:
   - v-aangie
   - kenseongtan
 ms.subservice: admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 07/04/2024
 ms.author: cvassallo
 ms.reviewer: angieandrews

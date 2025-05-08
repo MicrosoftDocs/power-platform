@@ -1,7 +1,7 @@
 ---
 title: "Migrate default and Dataverse for Teams environments  | MicrosoftDocs"
 description: The article provides information about how to migrate the default environment within a tenant.
-ms.topic: conceptual
+ms.topic: upgrade-and-migration-article
 ms.date: 11/28/2022
 ms.subservice: admin
 author: sericks007

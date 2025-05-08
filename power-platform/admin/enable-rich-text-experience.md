@@ -4,7 +4,7 @@ description: "Enable the rich text experience for appointment activities."
 author: Mattp123
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 09/04/2018
 ms.subservice: admin
 ms.author: matp

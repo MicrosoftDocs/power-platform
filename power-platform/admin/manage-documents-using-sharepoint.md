@@ -4,7 +4,7 @@ description: "Learn about document management with SharePoint and Microsoft Dyna
 author: Mattp123
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 09/08/2020
 ms.subservice: admin
 ms.author: matp

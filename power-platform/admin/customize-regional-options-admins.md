@@ -4,7 +4,7 @@ description: Customize regional options
 author: sericks007
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 09/28/2023
 ms.subservice: admin
 ms.author: sericks

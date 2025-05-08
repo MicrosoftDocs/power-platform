@@ -2,7 +2,7 @@
 title: Data policies for Managed Environments
 description: View the data policies that are in effect in your Managed Environments.
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 05/03/2024
 author: mikferland-msft
 ms.author: miferlan

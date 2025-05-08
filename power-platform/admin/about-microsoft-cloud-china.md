@@ -3,7 +3,7 @@ title: Power Platform and Dynamics 365 apps operated by 21Vianet in China
 description: This article provides information about Microsoft Power Platform and Dynamics 365 apps that are operated by 21Vianet in China.
 author: sericks007
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 02/12/2025
 ms.subservice: admin
 ms.author: sericks

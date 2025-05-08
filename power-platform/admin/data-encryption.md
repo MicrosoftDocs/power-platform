@@ -2,7 +2,7 @@
 title: Enhance security by encrypting your column-level sensitive data 
 description: Data encryption
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 01/21/2025
 author: paulliew
 ms.subservice: admin

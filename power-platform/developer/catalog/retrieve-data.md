@@ -6,7 +6,7 @@ ms.author: mbarbour
 ms.subservice: developer
 ms.date: 11/05/2024
 ms.reviewer: jdaly
-ms.topic: article
+ms.topic: how-to
 search.audienceType: 
   - developer
 contributors:

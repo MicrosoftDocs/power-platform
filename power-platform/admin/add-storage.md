@@ -7,7 +7,7 @@ ms.author: sericks
 ms.reviewer: sericks
 ms.custom: "admin-security"
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 08/01/2024
 search.audienceType: 
   - admin

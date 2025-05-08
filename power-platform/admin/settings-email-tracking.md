@@ -3,7 +3,7 @@ title: "Manage email tracking settings  | MicrosoftDocs"
 description: View and manage email tracking settings for Microsoft Dataverse.
 author: sericks007
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 09/03/2024
 ms.subservice: admin
 ms.author: sericks 
