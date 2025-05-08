@@ -15,26 +15,26 @@ search.audienceType:
 
 [!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
-Use Email settings to adjust how model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, features appear and function.
+You can use email settings to adjust how features appear and function in Dynamics 365 model-driven apps, such as Dynamics 365 Sales and Customer Service.
 
-These settings can be found in the Power Platform admin center.
+The email settings can be found in the Power Platform admin center.
 
 Make sure you have the System Administrator or System Customizer security role or equivalent permissions to update the email settings. To check your security role, see [View your user profile](/powerapps/user/view-your-user-profile). If you don’t have the correct permissions, contact your system administrator.
 
 
 #### [New admin center](#tab/new)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Manage**.
-1. In the **Manage** pane, select **Environments**.
-1. On the **Environments** page, choose an environment.
-1. In the command bar, click **Settings**.  
+1. On the left navigation pane, select **Manage**.
+1. On the *Manage* panel, select **Environments**.
+1. On the *Environments* page, choose an environment.
+1. On the command bar, select **Settings**.  
 1. Expand **Email**, then select **Email settings**.
 
 #### [Classic admin center](#tab/classic)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Environments**.
+1. On the left navigation pane, select **Environments**.
 1. On the **Environments** page, choose an environment.
-1. In the command bar, click **Settings**.  
+1. On the command bar, select **Settings**.  
 1. Expand **Email**, then select **Email settings**.
 ---
 
@@ -65,10 +65,10 @@ Make sure you have the System Administrator or System Customizer security role o
 > |Outgoing email|Select whether you want to use [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)], the Email Router, or server-side synchronization for processing outgoing email.|  
 > |Appointments, contacts, and tasks|Select whether you want to use [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)] or server-side synchronization to synchronize appointments, contacts, and tasks between [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] and [!INCLUDE[pn_crm_shortest](../includes/pn-crm-shortest.md)]. **Note:**  You can’t synchronize appointments, contacts, and tasks if you’re synchronizing with a [!INCLUDE[pn_POP3_short](../includes/pn-pop3-short.md)] email server.|  
 > |**Email form options**||  
-> |Use secure frames to restrict email message content|Default: Off. If this is set to **On**, you may see the following error message when you’re reading email: “This content cannot be displayed in a frame”. Although this can make sending sensitive content in email less secure, changing the setting to **Off** typically eliminates this error.|  
+> |Use secure frames to restrict email message content|Default: Off. If this is set to *On*, you may see the following error message when you’re reading email: *This content cannot be displayed in a frame*. Although this can make sending sensitive content in email less secure, changing the setting to **Off** typically eliminates this error.|  
 > |People can send emails with unresolved recipients|Default: Off. Set this to **On** if you want to send email messages that have unresolved recipients.|  
 > |If there are multiple possible recipient matches in the to, CC, or BCC fields, set them as unresolved|Default: Off. Use this setting to choose which record an email address resolves to when there are multiple possible matches in **to**, **cc**, or **bcc** fields of an email. When you select **On**, if the **to**, **cc**, or **bcc** fields of an email have an email address that can be resolved to multiple contacts (or other records), the email address will be resolved in the unresolved mode instead of resolving to all possible records. Unresolved email addresses can then be resolved individually as you encounter them.|  
-> |When someone manually resolves an unresolved email address, apply it to all similar unresolved addresses|When set to **Yes**, the same email address is applied to all similar unresolved email addresses when resolved in one email activity.  When set to **Off**, the email address is applied only to the specific email activity and does not resolve similar addresses present in other email activities. The default value is **On**. <br /><br />This setting is configurable when **Set To, cc, bcc, fields as unresolved values is multiple matches are found in Incoming Emails** is set to **On**.|
+> |When someone manually resolves an unresolved email address, apply it to all similar unresolved addresses|When set to **On**, the same email address is applied to all similar unresolved email addresses when resolved in one email activity.  When set to **Off**, the email address is applied only to the specific email activity and does not resolve similar addresses present in other email activities. The default value is **On**. <br /><br />This setting is configurable when **Set To, cc, bcc, fields as unresolved values is multiple matches are found in Incoming Emails** is set to **On**.|
 > | **Additional app-specific settings**   |   |
 > | Enhanced email for Timeline  | The enhanced email experience allows users to compose an email without leaving the record they're working on. This setting is available with environments that have customer engagement apps in Dynamics 365, such as Dynamics 365 Sales or Dynamics 365 Customer Service.   |
 
