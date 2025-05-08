@@ -69,6 +69,25 @@ For more information on the different roles for managing your tenant across the 
 
 <a name="BKMK_ActiveUsage"></a>   
 
+## Mode of access
+
+### About this dashboard
+Use this dashboard to review how your [!INCLUDE[pn_dyn_365](../includes/pn-dyn-365.md)] users are interacting with your system over a period of time.
+
+### What's included in this dashboard
+
+> [!div class="mx-tableFixed"]
+> |Chart element |Description|  
+> |--------------|-----------|
+> | Active users by OS                      | This chart shows the number of active users per various operating systems, such as `Windows`,`iOS`, `Android`, ... |
+> | Active users by device type             | This chart shows the number of active users per device type used to access [!INCLUDE [pn-dyn-365](../includes/pn-dyn-365.md)], such as `iPad`, `iPhone`, `Mac`, ... |
+> | Active users by browser                 | This chart shows the number of active users per browser, such as `Edge`, `Chrome`, `Apple Mail`, ... |
+> | Active users by security role           | This chart shows the number of active users per their security roles, such as `Basic User`, `System Administrator`, ... |
+> | Active users by business unit           | This chart shows the number of active users per business unit |
+> | Active users by entities                | This chart shows the number of active users distributed per entities |
+> | Active users by client                  | This chart shows the number of active users per client, such as `Web` |
+> | Active users using more than one client | This chart shows the number of active users using more than one type of client when accessing [!INCLUDE [pn-dyn-365](../includes/pn-dyn-365.md)] | 
+
 ## Active Users  
 
 > [!div class="mx-imgBorder"] 
