@@ -3,7 +3,7 @@ title: DonutChart control reference (preview) | Creator Kit
 description: Learn about the details and properties of the Donut chart control in the Creator Kit.
 author: denise-msft
 ms.component: pa-maker
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 06/10/2024
 ms.subservice: guidance-toolkit
 ms.author: demora

@@ -2,7 +2,7 @@
 title: Advanced connector policies (preview)
 description: Learn how to use Advanced connector policies to govern connector usage in Power Platform.
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 04/15/2025
 author: laneswenka
 ms.author: laswenka

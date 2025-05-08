@@ -3,7 +3,7 @@ title: "System Settings Service tab | MicrosoftDocs"
 description: System Settings Service tab 
 author: sericks007
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 03/12/2024
 ms.subservice: admin
 ms.author: sericks

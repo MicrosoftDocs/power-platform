@@ -2,7 +2,7 @@
 title: "When to edit the customizations file (Microsoft Dataverse) | Microsoft Docs"
 description: "The customizations.xml file that is exported as part of an unmanaged solution can be edited to perform specific customization tasks. After editing the file, you can compress the modified file together with the other files exported in the unmanaged solution. You apply the changes by importing that modified unmanaged solution."
 ms.date: 05/23/2023
-ms.topic: article
+ms.topic: concept-article
 author: shmcarth # GitHub ID
 ms.subservice: alm
 ms.author: shmcarth # MSFT alias of Microsoft employees only

@@ -7,7 +7,7 @@ ms.subservice: admin
 ms.author: sericks
 ms.custom: "admin-security"
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 11/14/2024
 search.audienceType: 
   - admin

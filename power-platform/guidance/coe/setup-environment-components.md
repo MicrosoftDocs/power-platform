@@ -4,7 +4,7 @@ description: "Learn how to set up the environment request components solution of
 author: manuelap-msft
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 02/08/2023
 ms.subservice: guidance-toolkit
 ms.author: mapichle

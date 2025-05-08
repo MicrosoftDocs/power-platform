@@ -4,7 +4,7 @@ description: Move configuration data across organizations
 author: sericks007
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 11/21/2023
 ms.subservice: admin
 ms.author: sericks

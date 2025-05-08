@@ -2,7 +2,7 @@
 title: Connector action control
 description: You can use connector action control to allow or block individual actions within a given connector.
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 02/05/2025
 ms.subservice: admin
 author: mikferland-msft

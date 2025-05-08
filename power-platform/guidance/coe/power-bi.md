@@ -4,7 +4,7 @@ description: "Gain deep insights into your Microsoft Power Platform adoption wit
 author: manuelap-msft
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 08/02/2023
 ms.subservice: guidance-toolkit
 ms.author: mapichle

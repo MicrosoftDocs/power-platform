@@ -3,7 +3,7 @@ title: "Enable and make available OneDrive for Business (online)"
 description: "Learn about licensing and other requirements for using OneDrive for Business, and how to enable it in your environment and control access in apps."
 author: sericks007
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 09/04/2020
 ms.subservice: admin
 ms.author: sericks

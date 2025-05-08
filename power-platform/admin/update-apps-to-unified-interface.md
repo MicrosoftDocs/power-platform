@@ -4,7 +4,7 @@ description: Update your apps to Unified Interface
 author: sericks007
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 10/09/2019
 ms.subservice: admin
 ms.author: sericks
