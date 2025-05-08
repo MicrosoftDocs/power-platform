@@ -488,6 +488,44 @@
                       href: managed-environment-data-policies.md
                     - name: Data loss prevention (DLP) policies
                       href: wp-data-loss-prevention.md
+                    - name: Known limitations
+                      href: dlp-known-issues.md
+                    - name: Policies
+                      items:
+                        - name: Create and manage policies
+                          href: prevent-data-loss.md
+                        - name: Policy scopes
+                          href: dlp-policy-scope.md
+                        - name: Effect of multiple policies
+                          href: dlp-combined-effect-multiple-policies.md
+                        - name: Disable new connectors
+                          href: connector-off-by-default.md
+                        - name: Design-time versus runtime
+                          href: dlp-impact-policies-apps-flows.md
+                        - name: Exempt apps and flows
+                          href: dlp-resource-exemption.md
+                    - name: Certified connectors
+                      items:
+                        - name: Connector classification
+                          href: dlp-connector-classification.md
+                        - name: Connector action control
+                          href: connector-action-control.md
+                        - name: Connector endpoint filtering (preview)
+                          href: connector-endpoint-filtering.md
+                    - name: Custom connectors
+                      items:
+                        - name: Connector classification
+                          href: dlp-custom-connector-parity.md
+                    - name: DLP for Power Automate
+                      items:
+                        - name: Overview
+                          href: prevent-data-loss.md
+                        - name: Identifying blocked flows
+                          href: identify-blocked-flows-data-policies.md
+                    - name: DLP for desktop flows
+                      href: /power-automate/prevent-data-loss
+                    - name: DLP for Copilot Studio
+                      href: /microsoft-copilot-studio/admin-data-loss-prevention
                 - name: Virtual Networks
                   items: 
                     - name: Virtual Network support overview
@@ -558,48 +596,6 @@
                       href: content-security-policy.md
                 - name: Advanced connector policies (preview)
                   href: advanced-connector-policies.md
-                - name: Data policies
-                  items:
-                    - name: Overview
-                      href: wp-data-loss-prevention.md
-                    - name: Known limitations
-                      href: dlp-known-issues.md
-                    - name: Policies
-                      items:
-                        - name: Create and manage policies
-                          href: prevent-data-loss.md
-                        - name: Policy scopes
-                          href: dlp-policy-scope.md
-                        - name: Effect of multiple policies
-                          href: dlp-combined-effect-multiple-policies.md
-                        - name: Disable new connectors
-                          href: connector-off-by-default.md
-                        - name: Design-time versus runtime
-                          href: dlp-impact-policies-apps-flows.md
-                        - name: Exempt apps and flows
-                          href: dlp-resource-exemption.md
-                    - name: Certified connectors
-                      items:
-                        - name: Connector classification
-                          href: dlp-connector-classification.md
-                        - name: Connector action control
-                          href: connector-action-control.md
-                        - name: Connector endpoint filtering (preview)
-                          href: connector-endpoint-filtering.md
-                    - name: Custom connectors
-                      items:
-                        - name: Connector classification
-                          href: dlp-custom-connector-parity.md
-                    - name: DLP for Power Automate
-                      items:
-                        - name: Overview
-                          href: prevent-data-loss.md
-                        - name: Identifying blocked flows
-                          href: identify-blocked-flows-data-policies.md
-                    - name: DLP for desktop flows
-                      href: /power-automate/prevent-data-loss
-                    - name: DLP for Copilot Studio
-                      href: /microsoft-copilot-studio/admin-data-loss-prevention
                 - name: Configure column-level security
                   items:
                     - name: Column-level security
