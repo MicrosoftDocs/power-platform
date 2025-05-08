@@ -4,7 +4,7 @@ description: "Allows the reader to easily view the default value that has been p
 author: manuelap-msft
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 06/01/2021
 ms.subservice: guidance-toolkit
 ms.author: mapichle

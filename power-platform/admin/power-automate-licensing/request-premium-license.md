@@ -6,7 +6,7 @@ contributors:
   - PriyaKodukula
   - v-aangie
 ms.subservice: admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 04/03/2023
 ms.author: prkoduku
 ms.reviewer: angieandrews

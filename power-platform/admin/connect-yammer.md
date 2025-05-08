@@ -4,7 +4,7 @@ description: "Learn how to integrate Yammer with customer engagement apps to ena
 author: sericks007
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 08/26/2021
 ms.subservice: admin
 ms.author: sericks

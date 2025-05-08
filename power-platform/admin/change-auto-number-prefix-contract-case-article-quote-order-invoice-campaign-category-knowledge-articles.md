@@ -4,7 +4,7 @@ description: Change auto-numbering prefixes for contracts, cases, articles, quot
 author: sericks007
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 08/13/2020
 ms.subservice: admin
 ms.author: sericks

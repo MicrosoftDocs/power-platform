@@ -4,7 +4,7 @@ description: Provides information about the support for Power Platform and Dynam
 author: sericks007
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 02/23/2022
 ms.subservice: admin
 ms.author: sericks

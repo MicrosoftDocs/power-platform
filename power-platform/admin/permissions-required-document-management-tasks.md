@@ -4,7 +4,7 @@ description: "Learn about the security roles and permissions required for docume
 author: Mattp123
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 09/30/2017
 ms.subservice: admin
 ms.author: matp

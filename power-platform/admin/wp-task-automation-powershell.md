@@ -3,7 +3,7 @@ title: "Automation of tasks with PowerShell  | MicrosoftDocs"
 description: Automate tasks with PowerShell
 author: laneswenka
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 08/26/2020
 ms.subservice: admin
 ms.author: laswenka

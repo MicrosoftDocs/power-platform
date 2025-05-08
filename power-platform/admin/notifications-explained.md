@@ -2,7 +2,7 @@
 title: Notifications for Business & Industry Copilot services
 description: Learn about the different ways that you can receive notifications for Business & Industry Copilot services. 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 04/08/2025
 ms.subservice: admin
 ms.author: kacortez

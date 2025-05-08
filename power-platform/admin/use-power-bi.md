@@ -4,7 +4,7 @@ description: Use Power BI
 author: sericks007
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 04/15/2021
 ms.subservice: admin
 ms.author: sericks
