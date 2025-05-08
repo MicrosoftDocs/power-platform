@@ -152,7 +152,9 @@
             - name: Host internal training events
               href: adoption/in-a-day.md
             - name: Set up tools to support your community
-              href: adoption/wiki-community.md          
+              href: adoption/wiki-community.md
+            - name: Get started with a SharePoint site template
+              href: adoption/sharepoint-site-template.md          
             - name: Share templates and reusable components
               href: adoption/reusable.md
             - name: Envision and uncover high-value use cases

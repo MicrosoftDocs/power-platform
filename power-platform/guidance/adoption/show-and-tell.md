@@ -37,7 +37,7 @@ To ensure the success stories you share are impactful, consider the following cr
 
 There are several effective ways to share success stories within your organization:
 
-### Organize show-and-tell sessions
+### Organize show and tell sessions
 
 Organize town hall meetings or webinars where makers can present their projects and share their success stories. This provides a platform for live interaction and Q&A sessions.
 
@@ -45,7 +45,7 @@ If you want to create more excitement in your organization and inspire more peop
 
 It's an opportunity for other teams and makers to see the impact of digital culture, and the business value they could add by joining the Power Platform community.
 
-Here are a few lessons for organizing successful and impactful show-and-tell sessions:
+Here are a few lessons for organizing successful and impactful show and tell sessions:
 
 - Make them part of existing company events, such as townhall meetings or more general tech showcases. This would ensure a wide variety of people attend and see your solutions.
 
