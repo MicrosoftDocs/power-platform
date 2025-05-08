@@ -34,7 +34,7 @@ The Power Platform communication site template is a SharePoint Online template i
 
 1. [Download](https://aka.ms/pphub-download) the Power Platform communication site template.
 1. Extract the contents of the PowerPlatformHub.zip file.
-1. Copy the path to the directory where you extracted the files. You need this path when you run the PowerShell scripts to deploy the template.
+1. Copy the path to the folder where you extracted the files. You need this path when you run the PowerShell scripts to deploy the template.
 
 ### Prerequisites
 
@@ -80,7 +80,7 @@ The PowerShell scripts to deploy the Power Platform communication site template 
     - `$newSiteURL`: Replace */powerplatformhub* with your Power Platform communication site URL.
     - `$ownerEmail`: Update with the admin email address.
     - `$siteTitle`: Replace with the title of your Power Platform communication site.
-    - `$timeZone`" Enter a value that represents the time zone of your organization.
+    - `$timeZone`: Enter a value that represents the time zone of your organization.
 
 1. Open **Set-PowerPlatformHubAsDLPErrorSettings.ps1** in the ISE of your choice.
 
@@ -143,7 +143,7 @@ The Power Platform communication site contains placeholder text and ideas for yo
 
 From **Settings** (Gear icon), navigate to **Site contents** > **Site Pages**, and modify the following pages:
 
-- **Accelerate-innovation-and-amplify-your-productivity-with-Power-Platform.aspx**: This permanent news story is your place to share your strategy and vision for Power Platform with your makers and community. Record a video with your executive sponsor with the goal to inspire your makers to achieve more with Power Platform.
+- **Accelerate-innovation-and-amplify-your-productivity-with-Power-Platform.aspx**: This permanent news story is your place to share your strategy and vision for Power Platform with your makers and community. Record a video of your executive sponsor with the goal to inspire your makers to achieve more with Power Platform.
 
 - **Consultation-and-Development.aspx**: If your organization has an internal Power Platform development team, include their contact details and ways to engage. If your organization doesn't have one, delete this page.
 
@@ -167,7 +167,7 @@ From **Settings** (Gear icon), navigate to **Site contents** > **Site Pages**, a
 
 - **Requesting-a-Premium-License.aspx**: Explain the available licenses, what's included in them, how to request premium licenses, and who pays for premium licenses if cross-charging from IT to business units or teams applies.
 
-- **Support.aspx**: Share how makers and solutions are supported. Learn more in [Develop a support strategy](support-strategy.md).
+- **Support.aspx**: Share how makers and solutions are supported. Learn more in [User and maker support strategy](support-strategy.md).
 
 ## Further customize the site
 

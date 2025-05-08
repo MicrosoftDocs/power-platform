@@ -39,7 +39,7 @@ Regularly survey your community members using Forms to understand their challeng
 
 A [SharePoint communication site](https://support.microsoft.com/office/plan-your-sharepoint-communication-site-35d9adfe-d5cc-462f-a63a-bae7f2529182) serves as a central repository to securely share important information while being easily accessible to all community members. Set up your own SharePoint Hub or Teams site to share success stories, upcoming events, rules of engagement, and guidelines with your maker community. Get started with the [Power Platform Hub template](sharepoint-site-template.md). This site is intended to be a one-stop shop for makers to learn everything they need to get started with Power Platform.  
 
-:::image type="content" source="media/wiki.png" alt-text="Sample Microsoft Power Platform wiki page." lightbox="media/wiki.png":::
+:::image type="content" source="media/wiki.png" alt-text="Sample Microsoft Power Platform wiki page.":::
 
 Here are a few tips on what to include in a SharePoint communication site:  
 
