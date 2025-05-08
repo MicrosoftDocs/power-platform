@@ -49,7 +49,7 @@ The **Copy** function accepts text, which can be itself an expression that manip
 ```power-fx
 Copy( $"{employeeRecord.Name} {employeeRecord.LastName} ({employeeRecord.Title})" )
 ```
-
+Note: This function works in Canvas Apps and Custom Pages. It is not currently supported in Modern Commanding for model-driven apps. Intellisense won't show an error, however the formula won't execute.
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
 
 
