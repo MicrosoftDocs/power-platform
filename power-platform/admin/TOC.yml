@@ -444,17 +444,17 @@
                   href: security/data-protection-privacy.md
                 - name: Encryption
                   items:
-                    - name: About encryption
+                    - name: About data encryption
                       href: about-encryption.md
-                    - name: Self-managed key (BYOK)
+                    - name: Manage the encryption key
                       href: manage-encryption-key.md
-                    - name: Customer-managed key
+                    - name: Manage your customer-managed encryption key
                       href: customer-managed-key.md
                     - name: Lock and unlock environments
                       href: cmk-lock-unlock.md
                     - name: Migrate from BYOK
                       href: cmk-migrate-from-byok.md
-                    - name: Encrypt your column-level data
+                    - name: Encrypt column-level data
                       href: data-encryption.md
                 - name: Data policies
                   items:
