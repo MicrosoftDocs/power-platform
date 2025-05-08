@@ -452,7 +452,7 @@
                       href: customer-managed-key.md
                     - name: Lock and unlock environments
                       href: cmk-lock-unlock.md
-                    - name: Migrate from BYOK
+                    - name: Migrate BYOK environments
                       href: cmk-migrate-from-byok.md
                     - name: Encrypt column-level data
                       href: data-encryption.md
