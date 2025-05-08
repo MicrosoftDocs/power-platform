@@ -182,18 +182,12 @@
                   href: environment-groups-rules.md
                 - name: Enable maker welcome content
                   href: welcome-content.md
-                - name: Limit sharing
-                  href: managed-environment-sharing-limits.md
                 - name: Usage insights
                   href: managed-environment-usage-insights.md
-                - name: Data policies
-                  href: managed-environment-data-policies.md
                 - name: Solution checker enforcement
                   href: managed-environment-solution-checker.md
                 - name: Licensing
                   href: managed-environment-licensing.md
-                - name: Safeguarding Dataverse sessions with IP cookie binding
-                  href: block-cookie-replay-attack.md
                 - name: Use Power Platform Advisor
                   href: power-platform-advisor.md
             - name: Environment updates
@@ -362,10 +356,6 @@
                       href: /dynamics365/customerengagement/on-premises/basics/import-accounts-leads-other-data
                     - name: Sample data
                       href: add-remove-sample-data.md
-                - name: Encryption
-                  items:
-                    - name: Encrypt your column-level data
-                      href: data-encryption.md
                 - name: Resources
                   items:
                     - name: All legacy settings
@@ -476,7 +466,7 @@
                       href: dlp-known-issues.md
                     - name: Policies
                       items:
-                        - name: Create and manage policies
+                        - name: Manage data policies
                           href: prevent-data-loss.md
                         - name: Policy scopes
                           href: dlp-policy-scope.md
@@ -502,8 +492,6 @@
                           href: dlp-custom-connector-parity.md
                     - name: DLP for Power Automate
                       items:
-                        - name: Overview
-                          href: prevent-data-loss.md
                         - name: Identifying blocked flows
                           href: identify-blocked-flows-data-policies.md
                     - name: DLP for desktop flows
@@ -544,18 +532,14 @@
                   href: security/compliance.md
                 - name: Auditing
                   items:
-                    - name: Audit log management
+                    - name: Recover database space by deleting audit logs
                       href: recover-database-space-deleting-audit-logs.md
-                    - name: Audit settings
-                      href: system-settings-dialog-box-auditing-tab.md
                     - name: Manage Dataverse auditing
                       href: manage-dataverse-auditing.md
                     - name: Audit security roles
                       href: audit-security-roles.md
                     - name: Access audit data using Azure Synapse Link for Dataverse
                       href: audit-data-azure-synapse-link.md
-                    - name: System jobs
-                      href: manage-dataverse-auditing.md#monitoring-system-jobs
                 - name: Customer Lockbox
                   href: about-lockbox.md
             - name: Power Platform managed identity
@@ -598,10 +582,6 @@
                   href: samesite-cookie-mgmt.md
                 - name: Environment security
                   items:
-                    - name: Control user access to environments
-                      href: control-user-access.md
-                    - name: Restrict cross-tenant access
-                      href: cross-tenant-restrictions.md
                     - name: Configure content security policy
                       href: content-security-policy.md
                 - name: Advanced connector policies (preview)
@@ -672,8 +652,6 @@
                   href: add-users-to-environment.md
                 - name: Configure user security to resources
                   href: database-security.md
-                - name: Configure user access to an environment
-                  href: control-user-access.md
                 - name: View user profile
                   href: /powerapps/user/view-your-user-profile
                 - name: Create an administrative user
@@ -802,8 +780,6 @@
               href: connector-events-power-platform.md
             - name: Data loss prevention activity logging
               href: dlp-activity-logging.md
-            - name: Manage Dataverse auditing
-              href: manage-dataverse-auditing.md
             - name: Dataverse and model-driven apps
               href: enable-use-comprehensive-auditing.md
             - name: View Power Platform administrative logs in Microsoft Purview
@@ -920,8 +896,6 @@
               href: restore-deleted-table-records.md
             - name: Remove user personal data
               href: remove-user-personal-data.md
-            - name: Recover database space by deleting audit logs
-              href: recover-database-space-deleting-audit-logs.md
             - name: Enable change tracking to control data synchronization
               href: enable-change-tracking-control-data-synchronization.md
             - name: Replicate data to Azure SQL Database
