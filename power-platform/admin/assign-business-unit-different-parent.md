@@ -4,7 +4,7 @@ description: "Learn how to change the parent business for a business unit and it
 author: sericks007
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 03/05/2020
 ms.subservice: admin
 ms.author: sericks

@@ -3,7 +3,7 @@ title: Use Power Platform Advisor
 description: Learn how to use Power Platform Advisor to optimize your tenant.
 author: sidhartg
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 04/28/2025
 ms.subservice: admin
 ms.author: sidhartg

@@ -4,7 +4,7 @@ description: "Guidance on establishing maker education and development support f
 author: manuelap-msft
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 02/01/2022
 ms.subservice: guidance
 ms.author: mapichle

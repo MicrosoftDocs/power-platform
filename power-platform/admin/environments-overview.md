@@ -2,7 +2,7 @@
 title: Power Platform environments overview
 description: Learn about Power Platform environments and how to use them.
 author: sericks007
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 04/24/2025
 ms.reviewer: sericks
 ms.subservice: admin

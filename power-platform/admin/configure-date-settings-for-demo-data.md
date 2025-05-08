@@ -4,7 +4,7 @@ description: Configure date settings for demo data
 author: sericks007
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 11/20/2017
 ms.subservice: admin
 ms.author: sericks

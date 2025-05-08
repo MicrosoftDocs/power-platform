@@ -9,7 +9,7 @@ contributors:
   - ShawnNandiMSFT 
   - PriyaKodukula 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 10/11/2024
 ms.subservice: admin
 ms.author: samathur

@@ -2,7 +2,7 @@
 title: "Email service configurations supported by server-side synchronization"
 description: "Learn about the email service configurations supported by server-side synchronization when using customer engagement apps and Microsoft Power Platform."
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 06/23/2022
 author: gattimassimo 
 ms.subservice: admin

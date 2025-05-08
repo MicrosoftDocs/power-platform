@@ -6,7 +6,7 @@ ms.date: 08/24/2022
 ms.reviewer: "yinkafatona"
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: conceptual
+ms.topic: how-to
 applies_to: 
   - "Dynamics 365 (online)"
 author: sericks007

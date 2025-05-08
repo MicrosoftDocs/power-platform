@@ -2,7 +2,7 @@
 title: Impact of data policies on apps and flows 
 description: About the impact of data policies on apps and flows.
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 05/03/2024
 ms.subservice: admin
 author: mikferland-msft

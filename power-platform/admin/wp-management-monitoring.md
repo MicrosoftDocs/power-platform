@@ -3,7 +3,7 @@ title: "Management and monitoring  | MicrosoftDocs"
 description: About management and monitoring.
 author: sericks007
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 07/12/2022
 ms.subservice: admin
 ms.author: sericks

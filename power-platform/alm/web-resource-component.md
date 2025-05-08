@@ -6,7 +6,7 @@ ms.author: marcelbf
 ms.subservice: alm
 ms.date: 05/05/2020
 ms.reviewer: pehecke
-ms.topic: "article"
+ms.topic: how-to
 search.audienceType: 
   - developer
 ---

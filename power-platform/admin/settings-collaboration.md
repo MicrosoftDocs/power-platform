@@ -3,7 +3,7 @@ title: Manage collaboration settings
 description: Learn how to use collaboration settings to adjust how collaboration features work in Power Platform.
 author: sericks007
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 04/24/2025
 ms.subservice: admin
 ms.author: sericks

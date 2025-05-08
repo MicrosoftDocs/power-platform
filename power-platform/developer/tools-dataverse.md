@@ -6,7 +6,7 @@ ms.subservice: developer
 ms.author: jdaly
 ms.date: 11/09/2022
 ms.reviewer: jdaly
-ms.topic: article
+ms.topic: concept-article
 ---
 
 # Dataverse developer tools

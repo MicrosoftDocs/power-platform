@@ -4,7 +4,7 @@ description: Manage product catalog configuration
 author: sericks007
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 02/17/2021
 ms.subservice: admin
 ms.author: derekkwan
