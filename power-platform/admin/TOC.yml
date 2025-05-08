@@ -480,20 +480,6 @@
                       href: cmk-migrate-from-byok.md
                     - name: Encrypt your column-level data
                       href: data-encryption.md
-                - name: Data policies
-                  items:
-                    - name: Data policies for Managed Environments
-                      href: managed-environment-data-policies.md
-                    - name: Data loss prevention (DLP) policies
-                      href: wp-data-loss-prevention.md
-                - name: Virtual Networks
-                  items: 
-                    - name: Virtual Network support overview
-                      href: vnet-support-overview.md
-                    - name: Virtual Network support white paper
-                      href: virtual-network-support-whitepaper.md
-                    - name: Set up Virtual Network support for Power Platform
-                      href: vnet-support-setup-configure.md
             - name: Identity and access
               items:
                 - name: Identity and access management
