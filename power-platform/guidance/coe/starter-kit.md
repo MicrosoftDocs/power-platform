@@ -42,7 +42,7 @@ The Microsoft Power Platform CoE Starter Kit is a collection of components and t
 [Power BI documentation](/power-bi)<br/>
 [Power Apps documentation](/powerapps)<br/>
 [Power Automate documentation](/power-automate)<br/>
-[Microsoft Copilot Studio documentation](/microsoft-copilot-studio/))
+[Microsoft Copilot Studio documentation](/microsoft-copilot-studio/)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
