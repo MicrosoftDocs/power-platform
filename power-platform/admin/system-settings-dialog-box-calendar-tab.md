@@ -4,7 +4,7 @@ description: System Settings Calendar tab
 author: sericks007
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 03/31/2020
 ms.subservice: admin
 ms.author: sericks

@@ -4,7 +4,7 @@ description: "Dependencies sometimes can block operations. This article describe
 ms.custom: ""
 ms.date: 03/21/2024
 ms.reviewer: ""
-ms.topic: "article"
+ms.topic: concept-article
 author: "ccdietrich" 
 ms.subservice: alm
 ms.author: "cdietric" 

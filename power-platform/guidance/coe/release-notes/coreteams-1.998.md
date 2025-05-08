@@ -4,7 +4,7 @@ description: "Release notes and latest version of the CoE Starter Kit for Teams 
 author: manuelap-msft
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: release-notes
 ms.date: 05/08/2021
 ms.subservice: guidance-toolkit
 ms.author: mapichle

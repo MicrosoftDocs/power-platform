@@ -6,7 +6,7 @@ ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.date: 09/11/2024
 ms.subservice: well-architected
-ms.topic: conceptual
+ms.topic: concept-article
 ---
 
 # Recommendations for designing a reliability testing strategy

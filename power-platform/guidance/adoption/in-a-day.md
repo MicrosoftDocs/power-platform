@@ -4,7 +4,7 @@ description: "Microsoft has created a variety of hands-on lab content, ranging f
 author: manuelap-msft
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 09/09/2020
 ms.subservice: guidance
 ms.author: mapichle

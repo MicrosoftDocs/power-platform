@@ -4,7 +4,7 @@ description: "It is important to think about your upskilling strategy for makers
 author: manuelap-msft
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 09/11/2020
 ms.subservice: guidance
 ms.author: mapichle

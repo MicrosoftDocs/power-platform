@@ -3,7 +3,7 @@ title: Set up the CoE Starter Kit
 description: Prerequisites and instructions for setting up the Center of Excellence (CoE) Starter Kit for adopting and supporting Microsoft Power Platform, with a focus on Power Apps and Power Automate.
 author: Grant-Archibald-MS 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 10/02/2024
 ms.subservice: guidance-toolkit
 ms.author: grarchib

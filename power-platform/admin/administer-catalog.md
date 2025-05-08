@@ -5,7 +5,7 @@ author: derekkwanpm
 ms.author: derekkwan
 ms.date: 11/05/2024
 ms.reviewer: matp
-ms.topic: article
+ms.topic: how-to
 ms.subservice: admin
 search.audienceType:
 - admin

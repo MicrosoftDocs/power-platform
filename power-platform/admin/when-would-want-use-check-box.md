@@ -2,7 +2,7 @@
 title: "When would I want to use this check box?  | MicrosoftDocs"
 description: When would I want to use this check box?
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 09/11/2020
 author: sericks007
 ms.subservice: admin

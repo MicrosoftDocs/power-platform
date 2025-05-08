@@ -4,7 +4,7 @@ description: Walkthrough of how to add a Microsoft Dataverse database.
 services: powerapps
 author: sericks007
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 04/29/2025
 ms.subservice: admin
 ms.custom: NewPPAC

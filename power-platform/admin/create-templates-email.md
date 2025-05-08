@@ -4,7 +4,7 @@ description: Create templates for email
 author: sericks007
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 09/16/2020
 ms.subservice: admin
 ms.author: sericks

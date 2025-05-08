@@ -3,7 +3,7 @@ title: "Requirements for using SharePoint document management"
 description: "Learn about the software requirements for using SharePoint document management for apps in Dynamics 365, including site collections and server-based integration."
 author: Mattp123
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.subservice: admin
 ms.date: 09/10/2020
 ms.author: matp

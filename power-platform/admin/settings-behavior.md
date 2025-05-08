@@ -3,7 +3,7 @@ title: Manage behavior settings
 description: View and manage behavior settings for Microsoft Dataverse.
 author: sericks007
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 04/24/2025
 ms.subservice: admin
 ms.custom: NewPPAC

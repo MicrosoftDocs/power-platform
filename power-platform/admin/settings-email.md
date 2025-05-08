@@ -3,7 +3,7 @@ title: "Manage email settings  | MicrosoftDocs"
 description: View and manage email settings for Microsoft Dataverse.
 author: sericks007
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 09/19/2022
 ms.subservice: admin
 ms.custom: NewPPAC

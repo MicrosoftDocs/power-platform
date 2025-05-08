@@ -4,7 +4,7 @@ description: "Patches help you manage tables and all of its related assets when 
 ms.custom: ""
 ms.date: 02/06/2025
 ms.reviewer: "pehecke"
-ms.topic: "article"
+ms.topic: how-to
 author: "caburke"
 ms.subservice: alm
 ms.author: "jdaly"

@@ -4,7 +4,7 @@ description: "Learn how use performance insights to improve app performance"
 author: Mattp123
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 08/12/2021
 ms.subservice: admin
 ms.author: matp

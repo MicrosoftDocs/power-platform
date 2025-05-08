@@ -3,7 +3,7 @@ title: "Manage PrincipalObjectAccess storage  | MicrosoftDocs"
 description: Information about managing PrincipalObjectAccess storage.
 author: paulliew 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 09/20/2023
 ms.subservice: admin
 ms.author: paulliew 

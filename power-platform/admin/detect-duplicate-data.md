@@ -4,7 +4,7 @@ description: "Learn about duplicate detection rules for data, including match co
 author: sericks007
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: article
 ms.date: 10/16/2020
 ms.subservice: admin
 ms.author: sericks
