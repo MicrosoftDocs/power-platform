@@ -284,20 +284,6 @@
                       href: user-channel-override.md
                     - name: Plug-in steps
                       href: plug-ins.md
-                - name: Audit and logs
-                  items:
-                    - name: Audit log management
-                      href: recover-database-space-deleting-audit-logs.md
-                    - name: Audit settings
-                      href: system-settings-dialog-box-auditing-tab.md
-                    - name: Manage Dataverse auditing
-                      href: manage-dataverse-auditing.md
-                    - name: Audit security roles
-                      href: audit-security-roles.md
-                    - name: Access audit data using Azure Synapse Link for Dataverse
-                      href: audit-data-azure-synapse-link.md
-                    - name: System jobs
-                      href: manage-dataverse-auditing.md#monitoring-system-jobs
                 - name: Templates
                   items:
                     - name: Access team templates
@@ -462,7 +448,7 @@
           href: copilot/copilot-hub.md
         - name: Security
           items:
-            - name: Secuirty overview
+            - name: Security overview
               href: security/security-overview.md
             - name: Data and privacy
               items:
@@ -545,7 +531,23 @@
                     - name: Commonly used Microsoft first-party services and portal apps (preview)
                       href: apps-to-allow.md
             - name: Compliance
-              href: security/compliance.md
+              items:
+                - name: Comliance tools
+                  href: security/compliance.md
+                - name: Auditing
+                  items:
+                    - name: Audit log management
+                      href: recover-database-space-deleting-audit-logs.md
+                    - name: Audit settings
+                      href: system-settings-dialog-box-auditing-tab.md
+                    - name: Manage Dataverse auditing
+                      href: manage-dataverse-auditing.md
+                    - name: Audit security roles
+                      href: audit-security-roles.md
+                    - name: Access audit data using Azure Synapse Link for Dataverse
+                      href: audit-data-azure-synapse-link.md
+                    - name: System jobs
+                      href: manage-dataverse-auditing.md#monitoring-system-jobs
             - name: Power Platform managed identity
               items:
                 - name: Managed identity overview (preview)
