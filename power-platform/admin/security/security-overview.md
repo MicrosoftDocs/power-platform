@@ -4,7 +4,7 @@ description: Learn how to manage security in the Power Platform admin center by 
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 04/30/2025
+ms.date: 05/08/2025
 ms.custom: NewPPAC
 author: matapg007
 ms.author: matgupta
@@ -132,7 +132,7 @@ To dismiss a recommendation, complete the following steps.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Security**.
-1. In the **Security** pane, select **Overeview**.
+1. In the **Security** pane, select **Overview**.
 1. The **Overview** page appears. Scroll down to the **Take action to increase your security score** section.
 1. In the **Active** tab, select the recommendations that you want to dismiss.
 1. Select the **X** icon to dismiss the recommendation.
