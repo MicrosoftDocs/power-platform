@@ -194,8 +194,6 @@
                   href: managed-environment-licensing.md
                 - name: Safeguarding Dataverse sessions with IP cookie binding
                   href: block-cookie-replay-attack.md
-                - name: Configure IP firewall
-                  href: ip-firewall.md
                 - name: Use Power Platform Advisor
                   href: power-platform-advisor.md
             - name: Environment updates
@@ -524,6 +522,16 @@
               items:
                 - name: Identity and access management
                   href: security/identity-access-management.md
+                - name: IP firewall
+                  href: ip-firewall.md
+                - name: Tenant isolation
+                  href: cross-tenant-restrictions.md
+                - name: IP address-based cookie binding
+                  href: block-cookie-replay-attack.md
+                - name: Control user access to environments with security groups
+                  href: control-user-access.md
+                - name: Limit sharing
+                  href: managed-environment-sharing-limits.md
                 - name: App access control
                   items:
                     - name: Control which apps are allowed in your environment (preview)
