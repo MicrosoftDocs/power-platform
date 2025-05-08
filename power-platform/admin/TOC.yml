@@ -548,6 +548,8 @@
                       href: audit-data-azure-synapse-link.md
                     - name: System jobs
                       href: manage-dataverse-auditing.md#monitoring-system-jobs
+                - name: Customer Lockbox
+                  href: about-lockbox.md
             - name: Power Platform managed identity
               items:
                 - name: Managed identity overview (preview)
@@ -558,8 +560,6 @@
               href: security/authenticate-services.md
             - name: Data storage and governance
               href: security/data-storage.md
-            - name: Securely access customer data using Customer Lockbox
-              href: about-lockbox.md
             - name: Connecting and authenticating to data sources
               href: security/connect-data-sources.md
             - name: Security and governance considerations
