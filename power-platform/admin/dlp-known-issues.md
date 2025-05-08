@@ -4,8 +4,8 @@ description: Learn more about the known limitations when using our suite of data
 ms.topic: concept-article
 ms.date: 02/05/2025
 ms.subservice: admin
-author: mikferland-msft
-ms.author: miferlan
+author: laneswenka
+ms.author: laswenka
 ms.reviewer: sericks
 contributors:
   - laneswenka
@@ -33,10 +33,10 @@ Below are known limitations to know about when using our suite of data loss prev
 Power Apps treats [Dataverse native](/power-apps/maker/canvas-apps/data-platform-create-app-scratch) and [Dataverse (legacy)](/connectors/commondataservice/) connections as the same for DLP enforcement. 
 
 > [!NOTE]
-> DLP authoring experiences allow [Dataverse (legacy)](/connectors/commondataservice/) and [Dataverse](/connectors/commondataserviceforapps/) connectors to be grouped separately. If the following conditions are true, it can cause an app to not be DLP compliant:
-> - The Dataverse connectors are grouped separately
-> - An app triggers a flow 
-> - Both the app and flow connect to Dataverse
+> Although the DLP authoring experience supports the technical possibility of grouping [Dataverse (legacy)](/connectors/commondataservice/) and [Dataverse](/connectors/commondataserviceforapps/) connectors in separate groups, doing so may result in non-compliant Canvas Apps when:
+> - The app has an embedded flow, and
+> - Both the app and embedded flow connect to Dataverse
+> This is due to the connector in the app being treated as Dataverse (legacy), as mentioned in the first statement of this section. **To prevent errors, both [Dataverse (legacy)](/connectors/commondataservice/) and [Dataverse](/connectors/commondataserviceforapps/) connectors must be in the same group.**
 
 ### Desktop flows
 - There's no support for cross checking the categories between a cloud flow and the desktop flows it calls. This will be supported when [DLP for desktop flows](/power-automate/prevent-data-loss#data-loss-prevention-dlp-for-desktop-flows-preview) is generally available.
