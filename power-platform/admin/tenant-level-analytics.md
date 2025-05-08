@@ -2,7 +2,7 @@
 title: Tenant-level analytics
 description: View tenant-level analytics in various reports.
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 05/02/2025
 author: sericks007
 ms.subservice: admin

@@ -3,7 +3,7 @@ title: Set up managed identity for Power Platform (preview)
 description: Learn how to set up Power Platform managed identity.
 author: ritesp
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 12/09/2024
 ms.subservice: admin
 ms.author: ritesp

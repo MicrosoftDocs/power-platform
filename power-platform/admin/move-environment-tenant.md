@@ -2,7 +2,7 @@
 title: Tenant-to-tenant migrations 
 description: Learn about the impact of migrating an environment from one tenant to another. 
 ms.date: 02/11/2025
-ms.topic: conceptual
+ms.topic: concept-article
 author: matapg007
 contributors:
   - SatishKumarkannanMs

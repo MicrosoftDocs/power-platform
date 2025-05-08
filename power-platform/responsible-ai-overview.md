@@ -5,7 +5,7 @@ author: tapanm-MSFT
 ms.date: 11/19/2024
 ms.custom: 
   - responsible-ai-faqs
-ms.topic: article
+ms.topic: faq
 ms.author: tapanm
 ms.reviewer: tapanm
 ms.collection: bap-ai-copilot

@@ -3,7 +3,7 @@ title: "Step 3: Create an AppSource package for your app | Microsoft Docs"
 description: "Learn about how to create an AppSource package (.zip file) to include your solution and demo data files along with other required files."
 ms.date: 05/22/2023
 ms.reviewer: pehecke
-ms.topic: article
+ms.topic: how-to
 author: angela21k
 ms.author: angelakim
 ms.subservice: developer

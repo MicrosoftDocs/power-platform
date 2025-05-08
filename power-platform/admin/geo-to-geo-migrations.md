@@ -3,7 +3,7 @@ title: Geo-to-geo migrations
 description: Move your environment in a single tenant from one region to another with the Geo Migration feature.
 author: matapg007
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 12/01/2024
 ms.subservice: admin
 ms.author: matgupta 

@@ -3,7 +3,7 @@ title: Configure the SameSite attribute for session cookies in Dataverse and Dyn
 description: Learn how to configure the SameSite attribute for session cookies in Dataverse and Dynamics 365.
 ms.subservice: admin
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 04/09/2025
 author: abhijananddv
 ms.author: abhijanand

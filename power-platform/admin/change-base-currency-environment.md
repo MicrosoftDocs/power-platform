@@ -4,7 +4,7 @@ description: Learn how to change the base currency of a Dataverse environment in
 author: sanjeevgoyal
 ms.date: 06/18/2024
 ms.reviewer: matp
-ms.topic: conceptual
+ms.topic: how-to
 ms.subservice: admin
 ms.author: sanjeevgoyal
 ms.custom: bap-template

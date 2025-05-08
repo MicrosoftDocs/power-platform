@@ -4,7 +4,7 @@ description: "Find your Microsoft Power Platform champions with the right tools,
 author: manuelap-msft
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 10/14/2021
 ms.subservice: guidance
 ms.author: mapichle

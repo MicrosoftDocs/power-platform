@@ -4,7 +4,7 @@ description: Enable Power Automate integration to automate processes
 author: sericks007
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 12/17/2021
 ms.subservice: admin
 ms.author: sericks

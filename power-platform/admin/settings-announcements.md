@@ -4,7 +4,7 @@ description: About broadcast announcements to an entire organization
 author: sericks007
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 03/09/2021
 ms.subservice: admin
 ms.author: sericks 
