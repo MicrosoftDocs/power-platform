@@ -41,7 +41,7 @@ To access the **Security** > **Overview** page, you must have Microsoft Entra ID
 1. In the **Security** pane, select the page that you want to open. You can open pages for the overview, [data protection and privacy](data-protection-privacy.md), [identity and access management](identity-access-management.md), and [compliance](compliance.md).
 
 > [!NOTE]
-> - Only tenant administrators can access the scorecard and recommendations on the **Overview** page (**Security** \> **Overview**).
+> - Only tenant administrators can access the scorecard and recommendations on the **Security** > **Overview** page.
 > - Only tenant administrators can convert an environment to a managed type.
 > - On every security page, features that apply to Managed Environments are marked with the following meter symbol:
 >
