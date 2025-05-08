@@ -14,6 +14,9 @@ search.audienceType:
 
 # Use governance components
 
+>[!NOTE]
+>Governance components where previously named Audit components. There might still be some references to Audit components in the solution and/or documentation.
+
 After you've become familiar with your environments and resources, you might start thinking about governance processes for your apps. You might want to gather additional information about your apps from your makers, or audit specific connectors or app usage.
 
 [Watch an overview](https://www.youtube.com/embed/6bfaFsFtLow) of how to use the Governance components solution.
