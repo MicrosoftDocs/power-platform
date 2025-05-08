@@ -33,11 +33,14 @@ Within your new app registration, navigate to the **Manage - API Permissions** t
 If you don't see Power Platform API showing up in the list when searching by GUID, it's possible that you still have access to it but the visibility isn't refreshed. To force a refresh, run the following PowerShell script:
 
 ```powershell
-#Install the Microsoft Entra the module
-Install-Module AzureAD
+#Required Microsoft Graph modules
+#Requires -Modules Microsoft.Graph.Authentication, Microsoft.Graph.Applications
 
-Connect-AzureAD
-New-AzureADServicePrincipal -AppId 8578e004-a5c6-46e7-913e-12f58912df43 -DisplayName "Power Platform API"
+Connect-MgGraph -Scopes "Application.ReadWrite.All"
+$ServicePrincipalID = @{
+    "AppId" = "8578e004-a5c6-46e7-913e-12f58912df43"
+}
+New-MgServicePrincipal -BodyParameter $ServicePrincipalID | Format-List id, DisplayName, AppId, SignInAudience
 ```
 
 From here, you must select the permissions you require. These are grouped by [**Namespaces** ](/rest/api/power-platform). Within a namespace, you see resource types and actions for example *AppManagement.ApplicationPackages.Read* which give read permissions for application packages. For more information, see our [Permission reference](programmability-permission-reference.md) article.
