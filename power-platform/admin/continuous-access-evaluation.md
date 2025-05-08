@@ -57,7 +57,7 @@ Continuous access evaluation supports two types of events:
 
 ## Supported Power Platform clients
 
-Power Platform clients that are enabled for continuous access evaluation support *claim challenges*. A claim challenge is a redirect of a user's session to Microsoft Entra ID reauthentication when a continuous access evaluation-enabled service like Dataverse rejects a cached user token. Dynamics 365 Sales, Customer Service, Field Service, Marketing, and Project Service Automation support continuous access evaluation claims, with more clients planned to onboard in the future.
+Power Platform clients that are enabled for continuous access evaluation support *claim challenges*. A claim challenge is a redirect of a user's session to Microsoft Entra ID reauthentication when a continuous access evaluation-enabled service like Dataverse rejects a cached user token. Dynamics 365 Sales, Customer Service, Field Service, Marketing, Project Service Automation, and Power Apps support continuous access evaluation claims. Power Apps canvas apps do not support continous access evaluation in embedded experiences. 
 
 For clients that don't support continuous access evaluation, the access token lifetime remains the same as configured or set to the default value.
 
