@@ -3,7 +3,7 @@ title: Export data to Application Insights
 description: Learn how to export data to Application Insights from the Power Platform admin center.
 services: powerapps
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 07/23/2024
 author: srpoduri 
 ms.subservice: admin

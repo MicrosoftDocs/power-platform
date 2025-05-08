@@ -4,7 +4,7 @@ description: "Release notes and latest version of the CoE Starter Kit 1.18."
 author: manuelap-msft
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: release-notes
 ms.date: 07/08/2020
 ms.subservice: guidance-toolkit
 ms.author: mapichle

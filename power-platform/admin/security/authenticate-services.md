@@ -3,7 +3,7 @@ title: Authenticating to Power Platform services
 description: Learn how Power Platform authenticates users.
 ms.date: 02/14/2022
 ms.service: power-platform
-ms.topic: conceptual
+ms.topic: how-to
 ms.custom: "admin-security"
 ms.collection: get-started
 author: lancedMicrosoft

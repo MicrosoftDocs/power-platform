@@ -3,7 +3,7 @@ title: "About on-premises gateways  | Microsoft Docs"
 description: About on-premises gateway
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 10/22/2020
 author: arthiriyer
 ms.subservice: admin

@@ -6,7 +6,7 @@ author: paulliew
 ms.author: paulliew
 ms.reviewer: sericks
 ms.custom: "admin-security"
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 08/27/2024
 search.audienceType: 
   - admin

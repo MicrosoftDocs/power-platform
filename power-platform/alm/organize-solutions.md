@@ -5,7 +5,7 @@ author: marcelbf
 ms.author: marcelbf
 ms.date: 02/04/2025
 ms.reviewer: pehecke
-ms.topic: article
+ms.topic: how-to
 ms.subservice: alm
 search.audienceType: 
   - developer

@@ -8,7 +8,7 @@ ms.reviewer: sericks
 ms.custom: "admin-security"
 ms.component: pa-admin
 contributors: srpoduri
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 04/24/2025
 search.audienceType: admin
 
