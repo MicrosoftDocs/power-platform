@@ -61,7 +61,7 @@ Potential partners might include:
 - **Data management team**: Work with the data management team to apply data insights and ensure that your Power Platform applications are data-driven and compliant with organizational standards.
 - **Business improvement team**: Collaborate with the business improvement team to identify and implement process improvements using Power Platform tools.
 
-### Opportunities for collaboration
+### Explore opportunities for collaboration
 
 Once you identify potential partners, explore various opportunities for collaboration that can benefit both your community and your partners. Here are some ideas:
 
