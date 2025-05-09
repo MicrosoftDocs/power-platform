@@ -504,7 +504,7 @@
                       href: vnet-support-overview.md
                     - name: Virtual Network support white paper
                       href: virtual-network-support-whitepaper.md
-                    - name: Set up Virtual Network support for Power Platform
+                    - name: Set up Virtual Network support
                       href: vnet-support-setup-configure.md
             - name: Identity and access
               items:
