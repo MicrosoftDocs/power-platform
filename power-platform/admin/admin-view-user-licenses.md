@@ -2,7 +2,7 @@
 title: "Download a list of active users in your tenant"
 description: "Download a report for a list of active users in your tenant."
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 08/05/2020
 author: sericks007
 ms.subservice: admin

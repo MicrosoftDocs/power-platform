@@ -3,7 +3,7 @@ title: "Disable and delete a business unit from an environment"
 description: "Learn how to disable and delete a business unit from an environment. Learn about the considerations before taking this irreversible action."
 author: paulliew
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 05/18/2023
 ms.subservice: admin
 ms.author: paulliew

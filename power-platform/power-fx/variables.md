@@ -2,7 +2,7 @@
 title: Understand variables in Microsoft Power Fx | Microsoft Docs
 description: Reference information about working with global variables and collections in Microsoft Power Fx
 author: gregli-msft
-ms.topic: conceptual
+ms.topic: how-to
 ms.reviewer: jdaly
 ms.date: 3/22/2024
 ms.subservice: power-fx

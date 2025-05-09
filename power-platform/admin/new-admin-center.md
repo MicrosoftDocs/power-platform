@@ -3,7 +3,7 @@ title: Use the new and improved Power Platform admin center (preview)
 description: Learn how to use the updated Power Platform admin center's new UI and features for effective administration and monitoring.
 ms.subservice: admin
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 05/02/2025
 ms.custom: 
   - NewPPAC

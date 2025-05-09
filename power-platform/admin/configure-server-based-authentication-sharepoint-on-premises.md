@@ -3,7 +3,7 @@ title: "Configure server-based authentication with SharePoint on-premises | Micr
 description: Configure server-based authentication with SharePoint on-premises
 author: Mattp123
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 06/08/2022
 ms.subservice: admin
 ms.author: matp

@@ -7,7 +7,7 @@ documentationcenter: na
 author: schabungbam
 editor: ''
 tags: ''
-ms.topic: conceptual
+ms.topic: how-to
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/30/2024

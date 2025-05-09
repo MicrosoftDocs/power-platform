@@ -4,7 +4,7 @@ description: "Guidance on establishing ongoing production solution and maker edu
 author: manuelap-msft
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 02/01/2022
 ms.subservice: guidance
 ms.author: mapichle

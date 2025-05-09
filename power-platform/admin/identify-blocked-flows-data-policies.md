@@ -2,7 +2,7 @@
 title: Identify blocked Power Automate flows from data policies
 description: Quickly identify flows impacted by data policies.
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 03/12/2025
 ms.subservice: admin
 author: laneswenka

@@ -5,7 +5,7 @@ author: sericks007
 ms.date: 10/07/2024
 ms.custom: 
   - responsible-ai-faqs
-ms.topic: article
+ms.topic: faq
 ms.author: sericks
 ms.reviewer: tapanm
 ms.collection: 

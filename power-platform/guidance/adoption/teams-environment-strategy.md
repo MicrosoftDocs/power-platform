@@ -4,7 +4,7 @@ description: "Microsoft Dataverse for Teams enables users to build custom apps, 
 author: manuelap-msft
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 06/11/2020
 ms.subservice: guidance
 ms.author: mapichle

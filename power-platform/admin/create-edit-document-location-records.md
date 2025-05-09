@@ -4,7 +4,7 @@ description: "Learn how to create document location records that will let custom
 author: Mattp123
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 09/04/2020
 ms.subservice: admin
 ms.author: matp

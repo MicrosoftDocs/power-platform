@@ -4,7 +4,7 @@ description: "The Microsoft Dataverse analytics in the Power Platform admin cent
 author: manuelap-msft
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 09/09/2020
 ms.subservice: guidance
 ms.author: mapichle

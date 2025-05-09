@@ -4,7 +4,7 @@ description: Learn how to manage Copilot Studio messages and capacity.
 author: amiyapatr-zz
 ms.date: 01/27/2025
 ms.reviewer: sericks
-ms.topic: conceptual
+ms.topic: how-to
 ms.subservice: admin
 ms.author: ampatra
 ms.custom: bap-template, NewPPAC

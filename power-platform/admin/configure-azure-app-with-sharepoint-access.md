@@ -3,7 +3,7 @@ title: Configure Azure app for SharePoint access
 description: Learn how to configure an Azure app for SharePoint access to allow API integration with Dynamics 365. Follow our step-by-step guide.
 author: adrianorth
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 05/05/2025
 ms.subservice: admin
 ms.author: aorth

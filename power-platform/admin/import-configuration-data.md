@@ -4,7 +4,7 @@ description: Import configuration data
 author: sericks007
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 03/26/2020
 ms.subservice: admin
 ms.author: sericks

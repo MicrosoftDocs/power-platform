@@ -3,7 +3,7 @@ title: Persona control reference (preview) | Creator Kit
 description: Learn about the details and properties of the Persona control in the Creator Kit.
 author: denise-msft
 ms.component: pa-maker
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 11/02/2022
 ms.subservice: guidance-toolkit
 ms.author: demora

@@ -3,7 +3,7 @@ title: "Disable new connectors by default | MicrosoftDocs"
 description: Describes how new connectors are disabled by default in GCC High and DoD.
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 02/25/2022
 ms.subservice: admin
 author: mikferland-msft
