@@ -8,7 +8,7 @@ ms.topic: concept-article
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
-ms.date: 05/05/2025
+ms.date: 05/09/2025
 ms.custom:
   - ai-gen-docs-bap
   - ai-gen-description
@@ -26,7 +26,7 @@ Nurturing your community means addressing key questions such as:
 - How can we recognize their efforts and successes?
 - How can we grow the community?
 
-By exploring these questions, you embark on a journey to connect the dots and create a community that is greater than the sum of its parts. This series of articles guides you through the essential steps to nurture your Power Platform community:
+By exploring these questions, you embark on a journey to connect the dots and build a community that is greater than the sum of its parts. This series of articles guides you through the essential steps to nurture your Power Platform community:
 
 1. [Define community purpose and goals](community-goals.md): Establish a clear vision and objectives for your community.
 1. [Define community core team roles and responsibilities](community-core-team.md): Assign roles and responsibilities to ensure smooth operation.
