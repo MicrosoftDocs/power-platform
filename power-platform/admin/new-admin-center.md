@@ -25,7 +25,7 @@ We're happy to announce the public preview of the new and improved Power Platfor
 
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
-## When and how can customers benefit from the new experience?
+## Use the new experience
 
 All customers can access the public preview of the new Power Platform admin center. It's turned on by default when you access the admin center. 
 
