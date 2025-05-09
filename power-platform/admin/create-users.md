@@ -50,7 +50,7 @@ These users are the regular synchronized users from Microsoft Entra ID.
 
 ### Application users
 
-Identified by the presence of ApplicationId attribute in the system user record. To check the Microsoft Entra application ID, see [View or edit the details of an application user](manage-application-users.md#view-or-edit-the-details-of-an-application-user).
+Identified by the presence of ApplicationId attribute in the system user record. To check the Microsoft Entra application ID, go to [View or edit the details of an application user](manage-application-users.md#view-or-edit-the-details-of-an-application-user).
 
 ### Non-interactive users
 
@@ -61,8 +61,6 @@ Identified by the presence of ApplicationId attribute in the system user record.
 
 ### Support user
 
-See [System and application users](system-application-users.md).
-
 - Not synchronized with Microsoft Entra ID, and created by Dataverse out of the box.
 - Placeholder user record for all of the internal Microsoft support users. 
 - Key identifiers: 
@@ -70,18 +68,18 @@ See [System and application users](system-application-users.md).
   - Access mode value is 3.
 - All Microsoft support users are mapped to this well-known record at runtime.
 
-### Delegated administrator
+Learn more in [System and application users](system-application-users.md).
 
-See the following articles: <br />
-[For partners: the Delegated Administrator](for-partners-delegated-administrator.md) <br />
-[System and application users](system-application-users.md)
+### Delegated administrator
 
 - Not synchronized with Microsoft Entra ID, and created by Dataverse out of the box. 
 - Placeholder user record for all of customer’s delegated admin partner users to access Dataverse as delegated administrators. 
 - Key identifiers: 
   - UPN value is crmoln2@microsoft.com. 
   - Access mode value is 5. 
-- All the delegated admin partner users are mapped to this well-known record at runtime. 
+- All the delegated admin partner users are mapped to this well-known record at runtime.
+
+Learn more in [For partners: the Delegated Administrator](for-partners-delegated-administrator.md) and [System and application users](system-application-users.md).
 
 ## User profile information
 
@@ -175,11 +173,11 @@ To disable a user account, remove a license from the user or remove the user fro
 
 You must be a member of an appropriate administrator role to do these tasks. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Assign admin roles](/microsoft-365/admin/add-users/assign-admin-roles)  
 
-### Enable a user account in an environment  
+### Allow a user account in an environment  
 
-To enable a user in an environment that has a Dataverse database, you enable sign-in for the user, assign a license to the user, and then add the user to a security group.
+To allow a user in an environment that has a Dataverse database, you allow sign-in for the user, assign a license to the user, and then add the user to a security group.
 
-#### To enable sign-in
+#### To allow sign-in
 
 1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com).
 2. In the navigation pane, select **Users**, then choose **Active users**.
@@ -203,9 +201,9 @@ To enable a user in an environment that has a Dataverse database, you enable sig
 5. In the navigation pane, select **Members**, then select **Add members** from the command bar.
 6. Choose users from the list or search for users, then select **Add** to apply the changes.
 
-### Disable a user account in an environment 
+### Prohibit a user account in an environment 
 
-To disable a user account in an environment that has a Dataverse database, you can either remove the user from the security group or remove the license from the user.
+To prohibit a user account in an environment that has a Dataverse database, you can either remove the user from the security group or remove the license from the user.
 
 #### To remove a user from a security group
 
@@ -280,8 +278,8 @@ Below criteria must be met for successfully adding the user in the Dataverse tab
    4. Non-interactive users don't need a license.
    5. Free Dataverse plans from Microsoft 365 license are honored when users added on-demand (either at first attempt to access the environment or through API/Power Platform admin center). 
 
-> [!NOTE]
-> Guest users should also have a license from the environment’s tenant. License from Guest user's tenant isn't considered as valid license.
+    > [!NOTE]
+    > Guest users should also have a license from the environment’s tenant. License from Guest user's tenant isn't considered as valid license.
 
 3. If the environment has a security group defined, user must be part of the respective security group, unless the user is a Tenant or Power Platform Administrator. Nonadmin users or Dynamics 365 service admin must be in the security group to access the system. When the owner of the security group is added to Dataverse through an on-demand action, the user is considered a valid member of the security group and is added to Dataverse successfully.  
 
@@ -334,7 +332,7 @@ You need to have the System Administrator security role or equivalent permission
 > [!NOTE]
 > Any admin user with the Global admin, Power Platform admin, or Dynamics 365 Service admin role will receive the **Administrative** access mode as long as there are no user licenses assigned. This is true regardless of enabling app-passes or pay-as-you-go use at the tenant level.
 > 
-> See [Create an administrative user and prevent elevation of security role privilege](prevent-elevation-security-role-privilege.md) for an example of how an Administrative user account can be used.
+> Go to [Create an administrative user and prevent elevation of security role privilege](prevent-elevation-security-role-privilege.md) for an example of how an Administrative user account can be used.
 
 Create a user account in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)]. Be sure to assign a license to the account. You'll remove the license in a later step after you've assigned the **Administrative** access mode.
 
@@ -576,7 +574,7 @@ Users from Microsoft Entra are added to Dataverse only if they meet the criteria
 
 Assigning a Microsoft Entra security group to the environment is a best practice in general. It can also result in a performance increase when adding users that are part of the security group to Dataverse. 
 
-### See also
+### Related content
 
 [User settings](users-settings.md) <br />
 [Get started with security roles in Dataverse](/training/modules/get-started-security-roles/) <br />
