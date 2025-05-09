@@ -81,35 +81,43 @@ Before you configure customer engagement apps and [!INCLUDE[pn_SharePoint_short]
   
     For more information about these plans, see [Find the right solution for you](https://products.office.com/business/compare-office-365-for-business-plans) and [Compare SharePoint options](https://products.office.com/sharepoint/compare-sharepoint-plans)  
   
-- The following software features are required to run the [!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] cmdlets described in this topic.  
+- The following software features are required to run the [!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] cmdlets described in this topic.
+
+  **Microsoft.Graph**
   
-  -   Microsoft Online Services Sign-In Assistant for IT Professionals Beta  
-  
-  -   [MSOnlineExt](https://www.powershellgallery.com/packages/MSOnlineExt/)  
-     -   To install the MSOnlineExt module, enter the following command from an administrator PowerShell session.
-         `PS> Install-Module -Name "MSOnlineExt"`
-  
-  > [!IMPORTANT]
-  >  At the time of this writing, there is an issue with the RTW version of Microsoft Online Services Sign-In Assistant for IT Professionals. Until the issue is resolved, we recommend that you use the Beta version. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Microsoft Azure Forums: Cannot install Microsoft Entra Module for Windows PowerShell. MOSSIA is not installed](https://social.msdn.microsoft.com/Forums/azure/46a38822-28a4-4abb-b747-96f7db2a2676/cannot-install-azure-active-directory-module-for-windows-powershell-mossia-is-not-installed?forum=WindowsAzureAD).  
-  
+  To install the Microsoft.Graph module, enter the following command from an administrator PowerShell session. 
+
+  ```powershell
+  $currentValueForMaxFunctionCount = $ExecutionContext.SessionState.PSVariable.Get("MaximumFunctionCount").Value
+   
+  # Set execution policy to RemoteSigned for this session
+  if ((Get-ExecutionPolicy -Scope Process) -ne "RemoteSigned") {
+      Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned -Force
+  }
+   
+  # Update MaximumFunctionCount if needed
+  if ($currentValue -lt 32768) {
+      $ExecutionContext.SessionState.PSVariable.Set("MaximumFunctionCount", 32768)
+  }
+   
+  # Install and import required modules
+  if (-not (Get-Module -ListAvailable -Name "Microsoft.Graph")) {
+      Install-Module -Name "Microsoft.Graph" -Scope CurrentUser -Force
+  }
+  Import-Module "Microsoft.Graph" -Function @("Connect-MgGraph", "Get-MgOrganization")
+   
+  if (-not (Get-Module -ListAvailable -Name "Microsoft.Graph.Identity.DirectoryManagement")) {
+      Install-Module -Name "Microsoft.Graph.Identity.DirectoryManagement" -Scope CurrentUser -Force
+  }
+  Import-Module "Microsoft.Graph.Identity.DirectoryManagement" -Function @("Get-MgServicePrincipal", "Update-MgServicePrincipal")
+  ```  
 - A suitable claims-based authentication mapping type to use for mapping identities between customer engagement apps and [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises. By default, email address is used. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Grant customer engagement apps permission to access SharePoint and configure the claims-based authentication mapping](#grant-customer-engagement-apps-permission-to-access-sharepoint-and-configure-the-claims-based-authentication-mapping)  
   
 ### Update the SharePoint Server SPN in Microsoft Entra Domain Services  
- On the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises server, in the SharePoint 2013 Management Shell, run these [!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] commands in the order given.  
-  
-1. Prepare the [!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] session.  
-  
-    The following cmdlets enable the computer to receive remote commands and add [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] modules to the [!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] session. For more information about these cmdlets see [Windows PowerShell Core Cmdlets](/powershell/module/microsoft.powershell.core/).  
-  
-   ```powershell
-   if (-not (Get-Module -ListAvailable -Name "Microsoft.Graph")) { Install-Module -Name "Microsoft.Graph" -Scope CurrentUser -Force }
-   if (-not (Get-Module -Name "Microsoft.Graph")) { Import-Module "Microsoft.Graph" -Function @("Connect-MgGraph", "Get-MgOrganization") -Force }
-   if (-not (Get-Module -ListAvailable -Name "Microsoft.Graph.Identity.DirectoryManagement")) { Install-Module -Name "Microsoft.Graph.Identity.DirectoryManagement" -Scope CurrentUser -Force }
-   if (-not (Get-Module -Name "Microsoft.Graph.Identity.DirectoryManagement")) { Import-Module "Microsoft.Graph.Identity.DirectoryManagement" -Function @("Get-MgServicePrincipal", "Update-MgServicePrincipal") -Force }
-   Enable-PSRemoting -force  
-   ```  
-  
-2. Connect to [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)].  
+
+On the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises server, in the SharePoint 2013 Management Shell, run these [!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] commands in the order given.  
+    
+1. Connect to [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)].  
   
     When you run the Connect-MsolService command, you must provide a valid [!INCLUDE[pn_Windows_Live_ID](../includes/pn-windows-live-id.md)] that has Global admin membership for the [!INCLUDE[pn_sharepoint_online](../includes/pn-sharepoint-online.md)] license that is required.  
   
@@ -119,41 +127,35 @@ Before you configure customer engagement apps and [!INCLUDE[pn_SharePoint_short]
    Connect-MgGraph -Scopes "Directory.ReadWrite.All", "Application.ReadWrite.All"  
    ```  
   
-3.	Set the SharePoint host url.  
+1. Set the SharePoint host url.  
   
-    The value that you set for the variable *HostNameUrl* must be the complete host name url of the SharePoint site collection. The hostname must be derived from the site collection URL and is case sensitive. In this example, the site collection URL is <https://SharePoint.constoso.com/sites/salesteam>, so the hostname url is *https://SharePoint.contoso.com*.
+   The value that you set for the variable *HostNameUrl* must be the complete host name url of the SharePoint site collection. The hostname must be derived from the site collection URL and is case sensitive. In this example, the site collection URL is <https://SharePoint.constoso.com/sites/salesteam>, so the hostname url is *https://SharePoint.contoso.com*.
   
    ```powershell
-   # Generate unique Service Principal Names (SPNs) from site URLs
-   $servicePrincipalNames = @(" https://SharePoint.constoso.com/sites/salesteam ") | ForEach-Object { "$($_ -split '/')[0]://$($_ -split '/')[2]" } | Sort-Object -Unique
-   $HostName = "SharePoint.contoso.com"  
+   # Generate Service Principal Name
+   # Note: If there are multiple sites, and the host is the same, no action is needed.
+   #       If the host is different, each site needs to be configured to add the host to the service principal.
+   $uri = [System.Uri]"https://auth.meddling.net/sites/SP2016"
+   $hostName = $uri.Host
+   $baseUrl = "$($uri.Scheme)://$hostName"
+   $servicePrincipalName = $baseUrl
    ```  
   
-4. Get the [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] object (tenant) id and [!INCLUDE[pn_SharePoint_Server_short](../includes/pn-sharepoint-server-short.md)] Service Principal Name (SPN).  
+1. Get the [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] object (tenant) id and [!INCLUDE[pn_SharePoint_Server_short](../includes/pn-sharepoint-server-short.md)] Service Principal Name (SPN).  
   
    ```powershell
-   $SPOAppId = "00000003-0000-0ff1-ce00-000000000000"  
-   $SPOContextId = (Get-MsolCompanyInformation).ObjectID  
-   $SharePoint = Get-MsolServicePrincipal -AppPrincipalId $SPOAppId  
-   $ServicePrincipalName = $SharePoint.ServicePrincipalNames  
+   # Retrieve SharePoint Online Service Principal
+   $SharePoint = Get-MgServicePrincipal -Filter "AppId eq '$SPOAppId'"
+   $UpdatedServicePrincipalNames = $SharePoint.ServicePrincipalNames + $servicePrincipalName
    ```
    
-5. Get the [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] object (tenant) id and [!INCLUDE[pn_SharePoint_Server_short](../includes/pn-sharepoint-server-short.md)] Service Principal Name (SPN).  
+1. Get the [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] object (tenant) id and [!INCLUDE[pn_SharePoint_Server_short](../includes/pn-sharepoint-server-short.md)] Service Principal Name (SPN).  
   
    ```powershell
-   # Update Service Principal Names if missing
-   $missingUrls = $servicePrincipalNames | Where-Object { -not ($SharePoint.ServicePrincipalNames -contains $_) }
-   if ($missingUrls.Count -gt 0) { Update-MgServicePrincipal -ServicePrincipalId $SharePoint.Id -ServicePrincipalNames ($SharePoint.ServicePrincipalNames + $missingUrls) } 
+   Update-MgServicePrincipal -ServicePrincipalId $SharePoint.Id -ServicePrincipalNames $UpdatedServicePrincipalNames
    ```  
   
-6. Set the [!INCLUDE[pn_SharePoint_Server_short](../includes/pn-sharepoint-server-short.md)] Service Principal Name (SPN) in [!INCLUDE[pn_azure_active_directory](../includes/pn-azure-active-directory.md)].  
-  
-   ```powershell
-   $ServicePrincipalName.Add("$SPOAppId/$HostName")   
-   Set-MsolServicePrincipal -AppPrincipalId $SPOAppId -ServicePrincipalNames $ServicePrincipalName  
-   ```  
-  
-   After these commands complete do not close the SharePoint 2013 Management Shell, and continue to the next step.  
+After these commands complete do not close the SharePoint 2013 Management Shell, and continue to the next step.  
   
 ### Update the SharePoint realm to match that of SharePoint Online  
  On the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises server, in the SharePoint 2013 Management Shell, run this [!INCLUDE[pn_PowerShell](../includes/pn-powershell.md)] command.  
@@ -195,15 +197,6 @@ Set-SPAuthenticationRealm -Realm $SPOContextId
   
    ```powershell
    $obo = New-SPTrustedSecurityTokenIssuer –Name "D365Obo" –IsTrustBroker:$true –MetadataEndpoint $metadataEndpoint -RegisteredIssuerName $ oboissuer  
-   ```  
-  
-   > [!NOTE]
-   >  The `New- SPAzureAccessControlServiceApplicationProxy` command may return an error message indicating that an  application proxy with the same name already exists. If the named  application proxy already exists, you can ignore the error.  
-  
-4. Create the new token control service issuer in [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises for [!INCLUDE[pn_azure_active_directory](../includes/pn-azure-active-directory.md)].  
-  
-   ```powershell
-   $acs = New-SPTrustedSecurityTokenIssuer –Name "ACSInternal" –IsTrustBroker:$true –MetadataEndpoint $metadataEndpoint -RegisteredIssuerName $acsissuer  
    ```  
   
 ### Grant customer engagement apps permission to access SharePoint and configure the claims-based authentication mapping
