@@ -1,7 +1,7 @@
 ---
 title: Manage Copilot
 description: Learn about the Copilot page in the Power Platform admin center for documents, insights, and controls related to Power Platform Copilots.
-author: amchern
+author: amchern, jordanchodak
 ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 12/05/2024
@@ -16,7 +16,48 @@ search.audienceType:
 
 [!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
-The **Copilot** page is a centralized location in the Power Platform admin center for documents, insights, and controls relevant to Power Platform Copilots. Tenant admins can access educational resources about Copilot features, track usage, and access governance controls in one place by selecting **Copilot** in the navigation pane.
+The **Copilot** hub is a centralized location in the Power Platform admin center for usage and cost insights, upcoming features, learning documents, and granular controls to scale Copilot and agent adoption in Power Platform. Tenant admins and environment admins can access these resources in one place by selecting **Copilot** in the navigation pane.
+
+# [New admin center](#tab/new)
+
+[This content is prerelease documentation and is subject to change.]
+
+## Get started 
+
+Resources and documents to help admins better understand how Copilot works, data and security fundamentals for Copilot features, and Microsoft's Responsible AI principles are available in the **Get started** section. These documents are updated over time as new Copilot capabilities are released. 
+
+## What's new
+
+The **What’s new** section in Copilot hub provides admins with a centralized location to view notifications and updates about upcoming AI capabilities. Admins will be able to learn about the capability, how it will impact their organization, and prepare environment configurations for the new capability. It will also include capabilities that have recently become available. 
+
+## Settings
+
+The **Settings** section displays settings grouped by product. Some settings span across Power Platform and are located at the top in the Power Platform section. Settings can be configured at the environment level, with some settings also configurable through environment groups and rules. Selecting a setting, opens a panel where you can select your environment, click "Add", and configure the control. Some settings in the Copilot Studio product will direct you to documentation with instructions on how you can configure a Data Loss Prevention (DLP) policy.
+
+## Product pages 
+The product pages contain usage and cost insights specific to each product. Currently, there are product pages for **Copilot Studio**, **Power Apps**, and **Power Pages**.
+
+### Copilot Studio
+
+The **Copilot Studio** section provides valuable insights about agents built in Copilot Studio (note that this does not include agents built with M365 Agent builder at this time). Admins can view message consumption data, with additional licensing details available through the licensing hub. Additionally, they can view the number of active agents, defined as agents with active sessions in the last 28 days, and reports the agent session success rate, which is the percentage of sessions resolved by conversational agents or runs that are successful for autonomous agents. Furthermore, the agent table displays the top 20 agents ranked by monthly active sessions.  
+
+> [!Note]
+> During the initial weeks of rollout, data will be populated over a 28-day lookback period, resulting in an incomplete month initially.
+
+### Power Apps
+
+Admins can view usage analytics for the data entry agent and data exploration agent on the **Power Apps** page to understand the value that end users are getting from AI in Power Apps.  The page includes monthly active user count information for each agent, as well as the number of actions taken.  For data entry agent, this action count is the number of forms where Copilot assisted in filling in. For data exploration agent, this action count is for the number of natural language queries that users have entered to search and filter their grid view using natural language.  Furthermore, admins can deep dive into each agent by clicking on them from the bottom table view.  This will open a panel where you can see top environments and drill into those to see apps where users are interacting with each agent the most. 
+
+> [!Note]
+> During the initial weeks of rollout, data will be populated over a 28-day lookback period, resulting in an incomplete month initially.
+
+### Power Pages
+
+Power Pages now has a dedicated experience within the Copilot Hub, enabling tenant administrators to monitor and manage AI-powered features specific to website creation and usage. This integration provides visibility into how makers use AI to build sites and how end users interact with AI components on live sites. 
+
+Admins can access detailed usage analytics and apply governance controls tailored to Power Pages, ensuring responsible and effective use of Copilot features across environments and individual sites. 
+
+# [Classic admin center](#tab/classic)
 
 ## Readiness 
 
