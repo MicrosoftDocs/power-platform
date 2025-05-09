@@ -4,7 +4,7 @@ description: "Microsoft has identified consistent themes, patterns, practices, a
 author: manuelap-msft
 
 ms.subservice: guidance
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 10/31/2021
 ms.author: mapichle
 ms.reviewer: sericks

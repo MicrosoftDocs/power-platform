@@ -3,7 +3,7 @@ title: "Security enhancements: User session and access management  | MicrosoftDo
 description: "Security enhancements: User session and access management"
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 05/01/2023
 author: alaug 
 ms.subservice: admin

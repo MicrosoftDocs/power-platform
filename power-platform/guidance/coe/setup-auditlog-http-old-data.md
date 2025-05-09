@@ -3,7 +3,7 @@ title: Collect historic audit log events
 description: Learn how to export old LaunchPowerApp events from Microsoft Purview audit logs and import them into the CoE Kit Audit Logs Dataverse table.
 author: pete-msft
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 10/02/2024
 ms.subservice: guidance-toolkit
 ms.author: petrip

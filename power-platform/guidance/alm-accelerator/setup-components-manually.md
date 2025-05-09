@@ -1,7 +1,7 @@
 ---
 title: Configure the ALM accelerator manually
 description: Learn how to set up the components of the ALM Accelerator for Power Platform manually if you choose not to use the accompanying administration app to configure them.
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 06/13/2024
 ms.subservice: guidance-toolkit
 author: jenschristianschroder

@@ -3,7 +3,7 @@ title: "Telemetry events for model-driven apps | Microsoft Docs"
 description: About telemetry events for model-driven apps.
 services: powerapps
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 05/06/2022
 author: Zeffin
 ms.subservice: admin

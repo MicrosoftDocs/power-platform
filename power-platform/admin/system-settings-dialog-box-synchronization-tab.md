@@ -3,7 +3,7 @@ title: "System SettingsSynchronization tab  | MicrosoftDocs"
 description: System Settings Synchronization tab 
 author: sericks007
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 11/15/2023
 ms.subservice: admin
 ms.author: sericks

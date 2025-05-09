@@ -11,7 +11,7 @@ contributors:
 ms.custom: "admin-security"
 ms.service: power-platform
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 02/28/2022
 search.audienceType: 
   - admin

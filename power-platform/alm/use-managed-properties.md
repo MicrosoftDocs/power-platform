@@ -5,7 +5,7 @@ ms.custom: ""
 ms.date: 07/15/2022
 ms.reviewer: "pehecke"
 
-ms.topic: "article"
+ms.topic: concept-article
 author: "shmcarth" # GitHub ID
 ms.subservice: alm
 ms.author: "shmcarth" # MSFT alias of Microsoft employees only

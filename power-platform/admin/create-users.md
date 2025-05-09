@@ -9,8 +9,8 @@ ms.custom:
   - "admin-security"
   - NewPPAC
 ms.component: pa-admin
-ms.topic: conceptual
-ms.date: 04/28/2025
+ms.topic: how-to
+ms.date: 05/09/2025
 search.audienceType: 
   - admin
 contributors:

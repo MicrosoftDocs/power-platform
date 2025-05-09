@@ -5,7 +5,7 @@ author: robstand
 ms.author: rstand
 ms.reviewer: sericks
 ms.subservice: guidance
-ms.topic: conceptual
+ms.topic: oveview
 ms.date: 05/31/2024
 ---
 # Power Platform white papers

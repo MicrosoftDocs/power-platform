@@ -2,7 +2,7 @@
 title: Manage data policies
 description: Learn how to create, edit, and delete data policies, including the default data group for new connectors.
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 07/24/2024
 author: mikferland-msft
 ms.author: miferlan

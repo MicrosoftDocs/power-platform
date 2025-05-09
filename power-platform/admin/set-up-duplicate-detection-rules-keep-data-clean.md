@@ -3,8 +3,8 @@ title: Set up duplicate detection rules to keep your data clean
 description: Set up duplicate detection rules to keep your data clean.
 author: sericks007
 ms.component: pa-admin
-ms.topic: conceptual
-ms.date: 04/23/2025
+ms.topic: how-to
+ms.date: 04/24/2025
 ms.subservice: admin
 ms.custom: NewPPAC
 ms.author: sericks
@@ -19,19 +19,22 @@ To maintain the integrity of your data, it's a good idea to have rules in place 
 [!INCLUDE[proc_permissions_mgr_vp_sys_admin_sys_cust](../includes/proc-permissions-mgr-vp-sys-admin-sys-cust.md)] To check your security role, see [View your user profile](/powerapps/user/view-your-user-profile). If you don’t have the correct permissions, contact your system administrator.
 
 ## [New admin center](#tab/new)
+
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
-1. In the **Environments** page, select an environment.
-1. Select **Settings** in the command bar.
-1. Expand **Data management**, and then select **Duplicate detection rules**. 
+1. On the **Environments** page, select an environment.
+1. In the command bar, select **Settings**.
+1. Expand **Data management**, and then select **Duplicate detection rules**.
 
 ## [Classic admin center](#tab/classic)
+
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, **Environments**.
-1. In the **Environments** page, select an environment.
-1. Select **Settings** in the command bar.
-1. Expand **Data management**, and then select **Duplicate detection rules**. 
+1. In the navigation pane, select **Environments**.
+1. On the **Environments** page, select an environment.
+1. In the command bar, select **Settings** .
+1. Expand **Data management**, and then select **Duplicate detection rules**.
+
 ---
 
 1. To create a new duplicate detection rule, select **New**. Type a name and description.  

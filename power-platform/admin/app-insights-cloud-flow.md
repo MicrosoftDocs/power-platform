@@ -3,7 +3,7 @@ title: Set up Application Insights with Power Automate
 description: Learn about how to set up Azure Application Insights with Power Automate to create monitor cloud flows.
 services: powerapps
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 01/16/2025
 author: samathur
 ms.subservice: admin

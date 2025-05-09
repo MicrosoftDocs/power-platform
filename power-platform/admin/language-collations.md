@@ -4,7 +4,7 @@ description: "Understand the Microsoft Dataverse language collations"
 keywords: ""
 ms.date: 06/30/2020
 ms.custom: 
-ms.topic: conceptual
+ms.topic: concept-article
 author: "NHelgren"
 ms.subservice: admin
 ms.author: nhelgren

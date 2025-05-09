@@ -12,7 +12,7 @@ metadata:
   ms.topic: hub-page # Required
   author: tapanm-MSFT #Required; your GitHub user alias, with correct capitalization.
   ms.author: tapanm #Required; microsoft alias of author; optional team alias.
-  ms.date: 04/04/2025 #Required; mm/dd/yyyy format.
+  ms.date: 04/25/2025 #Required; mm/dd/yyyy format.
   hide_bc: false
 
 highlightedContent:
@@ -131,9 +131,9 @@ additionalContent:
           summary: "Learn about developing apps and services in Power Platform using code"
           url: ./developer/index.yml
         # Card
-        - title: Licensing
-          summary: "Understand licensing across Power Platform products and services"
-          url: ./admin/pricing-billing-skus.md
+        - title: Architecture Center
+          summary: "Guidance for architecting solutions with Power Platform and Copilot Studio using established patterns and best practices"
+          url: ./architecture/index.yml
         # Card
         - title: Well-Architected
           summary: "Guiding principles, strategies, and tools to help make informed decisions about the design, planning, and implementation of Power Platform workloads"

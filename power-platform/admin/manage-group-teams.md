@@ -2,7 +2,7 @@
 title: "Manage group teams  | MicrosoftDocs"
 description: About managing group teams 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 03/21/2024
 author: paulliew
 ms.subservice: admin
