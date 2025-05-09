@@ -111,6 +111,7 @@ Before you configure customer engagement apps and [!INCLUDE[pn_SharePoint_short]
   }
   Import-Module "Microsoft.Graph.Identity.DirectoryManagement" -Function @("Get-MgServicePrincipal", "Update-MgServicePrincipal")
   ```  
+
 - A suitable claims-based authentication mapping type to use for mapping identities between customer engagement apps and [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises. By default, email address is used. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Grant customer engagement apps permission to access SharePoint and configure the claims-based authentication mapping](#grant-customer-engagement-apps-permission-to-access-sharepoint-and-configure-the-claims-based-authentication-mapping)  
   
 ### Update the SharePoint Server SPN in Microsoft Entra Domain Services  
@@ -118,15 +119,15 @@ Before you configure customer engagement apps and [!INCLUDE[pn_SharePoint_short]
 On the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises server, in the SharePoint 2013 Management Shell, run these [!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] commands in the order given.  
     
 1. Connect to [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)].  
+
+   When you run the Connect-MgGraph command, you must provide a valid [!INCLUDE[pn_Windows_Live_ID](../includes/pn-windows-live-id.md)] that has Global admin membership for the [!INCLUDE[pn_sharepoint_online](../includes/pn-sharepoint-online.md)] license that is required.  
   
-    When you run the Connect-MsolService command, you must provide a valid [!INCLUDE[pn_Windows_Live_ID](../includes/pn-windows-live-id.md)] that has Global admin membership for the [!INCLUDE[pn_sharepoint_online](../includes/pn-sharepoint-online.md)] license that is required.  
-  
-    For detailed information about each of the [!INCLUDE[pn_azure_active_directory](../includes/pn-azure-active-directory.md)][!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] commands listed here, see [Manage Microsoft Entra using Windows PowerShell](/previous-versions/azure/jj151815(v=azure.100))  
+   For detailed information about each of the [!INCLUDE[pn_azure_active_directory](../includes/pn-azure-active-directory.md)][!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] commands listed here, see [Manage Microsoft Entra using Windows PowerShell](/previous-versions/azure/jj151815(v=azure.100))  
   
    ```powershell
    Connect-MgGraph -Scopes "Directory.ReadWrite.All", "Application.ReadWrite.All"  
    ```  
-  
+
 1. Set the SharePoint host url.  
   
    The value that you set for the variable *HostNameUrl* must be the complete host name url of the SharePoint site collection. The hostname must be derived from the site collection URL and is case sensitive. In this example, the site collection URL is <https://SharePoint.constoso.com/sites/salesteam>, so the hostname url is *https://SharePoint.contoso.com*.
