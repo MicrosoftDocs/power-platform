@@ -227,11 +227,11 @@ The following commands require [!INCLUDE[pn_SharePoint_short](../includes/pn-sha
    >  To complete this command, the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] App Management Service Application Proxy must exist and be running. For more information about how to start and configure the service, see the Configure the Subscription Settings and App Management service applications subtopic in [Configure an environment for apps for SharePoint (SharePoint 2013)](/SharePoint/administration/configure-an-environment-for-apps-for-sharepoint).  
   
    ```powershell
-  $site = Get-SPSite "https://sharepoint.contoso.com/sites/crm/"
-  Register-SPAppPrincipal `
-      -site $site.RootWeb `
-      -NameIdentifier $issuer `
-      -DisplayName "crmobo"
+   $site = Get-SPSite "https://sharepoint.contoso.com/sites/crm/"
+   Register-SPAppPrincipal `
+       -site $site.RootWeb `
+       -NameIdentifier $issuer `
+       -DisplayName "crmobo"
    ```  
   
 2. Grant customer engagement apps access to the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] site. Replace *<https://sharepoint.contoso.com/sites/crm/>* with your [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] site URL.  
@@ -244,14 +244,14 @@ The following commands require [!INCLUDE[pn_SharePoint_short](../includes/pn-sha
    >   - `sitesubscription`. Grants the customer engagement apps permission to all websites in the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] farm, including all site collections, websites, and subsites.  
   
    ```powershell
-  $app = Get-SPAppPrincipal `
-      -NameIdentifier $issuer `
-      -Site "https://sharepoint.contoso.com/sites/crm/"  
-  Set-SPAppPrincipalPermission `
-      -AppPrincipal $app `
-      -Site $site.Rootweb `
-      -Scope "sitecollection" `
-      -Right "FullControl"  
+   $app = Get-SPAppPrincipal `
+       -NameIdentifier $issuer `
+       -Site "https://sharepoint.contoso.com/sites/crm/"  
+   Set-SPAppPrincipalPermission `
+       -AppPrincipal $app `
+       -Site $site.Rootweb `
+       -Scope "sitecollection" `
+       -Right "FullControl"  
    ```  
   
 3. Set the claims-based authentication mapping type.  
@@ -260,10 +260,10 @@ The following commands require [!INCLUDE[pn_SharePoint_short](../includes/pn-sha
    >  By default, the claims-based authentication mapping uses the user's [!INCLUDE[pn_Windows_Live_ID](../includes/pn-windows-live-id.md)] email address and the user's [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises **work email** address for mapping. When you use claims-based authentication mapping, the user's email addresses must match between the two systems. For more information, see [Selecting a claims-based authentication mapping type](../admin/configure-server-based-authentication-sharepoint-on-premises.md#BKMK_selectclmmap).  
   
    ```powershell
-  $map1 = New-SPClaimTypeMapping `
-      -IncomingClaimType "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress" `
-      -IncomingClaimTypeDisplayName "EmailAddress" `
-      -SameAsIncoming
+   $map1 = New-SPClaimTypeMapping `
+       -IncomingClaimType "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress" `
+       -IncomingClaimTypeDisplayName "EmailAddress" `
+       -SameAsIncoming
    ```  
   
 ### Run the Enable server-based SharePoint integration wizard
