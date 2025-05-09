@@ -14,7 +14,7 @@ contributors:
   - jordanchodak
 ---
 
-# Manage Copilot
+# Copilot capabilities
 
 [!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
