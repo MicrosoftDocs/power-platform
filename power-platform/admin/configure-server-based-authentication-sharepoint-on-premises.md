@@ -88,8 +88,9 @@ Before you configure customer engagement apps and [!INCLUDE[pn_SharePoint_short]
   To install the Microsoft.Graph module, enter the following command from an administrator PowerShell session. 
 
   ```powershell
-  $currentValueForMaxFunctionCount = $ExecutionContext.SessionState.PSVariable.Get("MaximumFunctionCount").Value
-   
+  $currentValueForMaxFunctionCount = `
+      $ExecutionContext.SessionState.PSVariable.Get("MaximumFunctionCount").Value
+     
   # Set execution policy to RemoteSigned for this session
   if ((Get-ExecutionPolicy -Scope Process) -ne "RemoteSigned") {
       Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned -Force
@@ -106,10 +107,13 @@ Before you configure customer engagement apps and [!INCLUDE[pn_SharePoint_short]
   }
   Import-Module "Microsoft.Graph" -Function @("Connect-MgGraph", "Get-MgOrganization")
    
-  if (-not (Get-Module -ListAvailable -Name "Microsoft.Graph.Identity.DirectoryManagement")) {
-      Install-Module -Name "Microsoft.Graph.Identity.DirectoryManagement" -Scope CurrentUser -Force
+  if (-not (Get-Module -ListAvailable `
+          -Name "Microsoft.Graph.Identity.DirectoryManagement")) {
+      Install-Module -Name "Microsoft.Graph.Identity.DirectoryManagement" `
+          -Scope CurrentUser -Force
   }
-  Import-Module "Microsoft.Graph.Identity.DirectoryManagement" -Function @("Get-MgServicePrincipal", "Update-MgServicePrincipal")
+  Import-Module "Microsoft.Graph.Identity.DirectoryManagement" `
+      -Function @("Get-MgServicePrincipal", "Update-MgServicePrincipal")
   ```  
 
 - A suitable claims-based authentication mapping type to use for mapping identities between customer engagement apps and [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises. By default, email address is used. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Grant customer engagement apps permission to access SharePoint and configure the claims-based authentication mapping](#grant-customer-engagement-apps-permission-to-access-sharepoint-and-configure-the-claims-based-authentication-mapping)  
@@ -135,7 +139,8 @@ On the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-pr
    ```powershell
    # Generate Service Principal Name
    # Note: If there are multiple sites, and the host is the same, no action is needed.
-   #       If the host is different, each site needs to be configured to add the host to the service principal.
+   #       If the host is different, each site needs to be configured to add the 
+   #       host to the service principal.
    $uri = [System.Uri]"https://auth.meddling.net/sites/SP2016"
    $hostName = $uri.Host
    $baseUrl = "$($uri.Scheme)://$hostName"
@@ -147,13 +152,16 @@ On the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-pr
    ```powershell
    # Retrieve SharePoint Online Service Principal
    $SharePoint = Get-MgServicePrincipal -Filter "AppId eq '$SPOAppId'"
-   $UpdatedServicePrincipalNames = $SharePoint.ServicePrincipalNames + $servicePrincipalName
+   $UpdatedServicePrincipalNames = `
+       $SharePoint.ServicePrincipalNames + $servicePrincipalName
    ```
    
 1. Get the [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] object (tenant) id and [!INCLUDE[pn_SharePoint_Server_short](../includes/pn-sharepoint-server-short.md)] Service Principal Name (SPN).  
   
    ```powershell
-   Update-MgServicePrincipal -ServicePrincipalId $SharePoint.Id -ServicePrincipalNames $UpdatedServicePrincipalNames
+   Update-MgServicePrincipal `
+       -ServicePrincipalId $SharePoint.Id `
+       -ServicePrincipalNames $UpdatedServicePrincipalNames
    ```  
   
 After these commands complete, do not close the SharePoint 2013 Management Shell, and continue to the next step.  
@@ -189,7 +197,8 @@ Set-SPAuthenticationRealm -Realm $SPOContextId
 2. Set the metadata endpoint.  
   
    ```powershell
-   $metadataEndpoint = "https://login.microsoftonline.com/common/.well-known/openid-configuration"  
+   $metadataEndpoint = `
+       "https://login.microsoftonline.com/common/.well-known/openid-configuration"  
    $oboissuer = "https://sts.windows.net/*/” 
    $issuer = "00000007-0000-0000-c000-000000000000@" + $SPOContextId  
    ```  
@@ -197,7 +206,11 @@ Set-SPAuthenticationRealm -Realm $SPOContextId
 3. Create the new token control service application proxy in [!INCLUDE[pn_azure_active_directory](../includes/pn-azure-active-directory.md)].  
   
    ```powershell
-   $obo = New-SPTrustedSecurityTokenIssuer –Name "D365Obo" –IsTrustBroker:$true –MetadataEndpoint $metadataEndpoint -RegisteredIssuerName $ oboissuer  
+   $obo = New-SPTrustedSecurityTokenIssuer `
+       –Name "D365Obo" `
+       –IsTrustBroker:$true `
+       –MetadataEndpoint $metadataEndpoint `
+       -RegisteredIssuerName $ oboissuer  
    ```  
   
 ### Grant customer engagement apps permission to access SharePoint and configure the claims-based authentication mapping
@@ -213,9 +226,12 @@ The following commands require [!INCLUDE[pn_SharePoint_short](../includes/pn-sha
    > [!IMPORTANT]
    >  To complete this command, the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] App Management Service Application Proxy must exist and be running. For more information about how to start and configure the service, see the Configure the Subscription Settings and App Management service applications subtopic in [Configure an environment for apps for SharePoint (SharePoint 2013)](/SharePoint/administration/configure-an-environment-for-apps-for-sharepoint).  
   
-   ```powershell  
-   $site = Get-SPSite "https://sharepoint.contoso.com/sites/crm/"  
-   Register-SPAppPrincipal -site $site.RootWeb -NameIdentifier $issuer -DisplayName "crmobo"    
+   ```powershell
+  $site = Get-SPSite "https://sharepoint.contoso.com/sites/crm/"
+  Register-SPAppPrincipal `
+      -site $site.RootWeb `
+      -NameIdentifier $issuer `
+      -DisplayName "crmobo"
    ```  
   
 2. Grant customer engagement apps access to the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] site. Replace *<https://sharepoint.contoso.com/sites/crm/>* with your [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] site URL.  
@@ -228,8 +244,14 @@ The following commands require [!INCLUDE[pn_SharePoint_short](../includes/pn-sha
    >   - `sitesubscription`. Grants the customer engagement apps permission to all websites in the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] farm, including all site collections, websites, and subsites.  
   
    ```powershell
-   $app = Get-SPAppPrincipal -NameIdentifier $issuer -Site "https://sharepoint.contoso.com/sites/crm/"  
-   Set-SPAppPrincipalPermission -AppPrincipal $app -Site $site.Rootweb -Scope "sitecollection" -Right "FullControl"  
+  $app = Get-SPAppPrincipal `
+      -NameIdentifier $issuer `
+      -Site "https://sharepoint.contoso.com/sites/crm/"  
+  Set-SPAppPrincipalPermission `
+      -AppPrincipal $app `
+      -Site $site.Rootweb `
+      -Scope "sitecollection" `
+      -Right "FullControl"  
    ```  
   
 3. Set the claims-based authentication mapping type.  
@@ -238,7 +260,10 @@ The following commands require [!INCLUDE[pn_SharePoint_short](../includes/pn-sha
    >  By default, the claims-based authentication mapping uses the user's [!INCLUDE[pn_Windows_Live_ID](../includes/pn-windows-live-id.md)] email address and the user's [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises **work email** address for mapping. When you use claims-based authentication mapping, the user's email addresses must match between the two systems. For more information, see [Selecting a claims-based authentication mapping type](../admin/configure-server-based-authentication-sharepoint-on-premises.md#BKMK_selectclmmap).  
   
    ```powershell
-   $map1 = New-SPClaimTypeMapping -IncomingClaimType "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress" -IncomingClaimTypeDisplayName "EmailAddress" -SameAsIncoming  
+  $map1 = New-SPClaimTypeMapping `
+      -IncomingClaimType "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress" `
+      -IncomingClaimTypeDisplayName "EmailAddress" `
+      -SameAsIncoming
    ```  
   
 ### Run the Enable server-based SharePoint integration wizard
@@ -275,17 +300,25 @@ By default, Account, Article, Lead, Product, Quote, and Sales Literature entitie
   
 ```powershell
 Add-Pssnapin *  
+
 # Access WellKnown App principal  
 [Microsoft.SharePoint.Administration.SPWebService]::ContentService.WellKnownAppPrincipals  
   
 # Create WellKnown App principal  
 $ClientId = "00000007-0000-0000-c000-000000000000"  
-$PermissionXml = "<AppPermissionRequests AllowAppOnlyPolicy=""true""><AppPermissionRequest Scope=""http://sharepoint/content/tenant"" Right=""FullControl"" /><AppPermissionRequest Scope=""http://sharepoint/social/tenant"" Right=""Read"" /><AppPermissionRequest Scope=""http://sharepoint/search"" Right=""QueryAsUserIgnoreAppPrincipal"" /></AppPermissionRequests>"  
+$PermissionXml = @"
+<AppPermissionRequests AllowAppOnlyPolicy="true">
+    <AppPermissionRequest Scope="http://sharepoint/content/tenant" Right="FullControl" />
+    <AppPermissionRequest Scope="http://sharepoint/social/tenant" Right="Read" />
+    <AppPermissionRequest Scope="http://sharepoint/search" Right="QueryAsUserIgnoreAppPrincipal" />
+</AppPermissionRequests>
+"@
+
+$wellKnownApp = New-Object `
+    -TypeName "Microsoft.SharePoint.Administration.SPWellKnownAppPrincipal" `
+    -ArgumentList ($ClientId, $PermissionXml)  
   
-$wellKnownApp= New-Object -TypeName "Microsoft.SharePoint.Administration.SPWellKnownAppPrincipal" -ArgumentList ($ClientId, $PermissionXml)  
-  
-$wellKnownApp.Update()  
-  
+$wellKnownApp.Update()    
 ```  
   
 <a name="BKMK_selectclmmap"></a>   
