@@ -1,7 +1,7 @@
 ---
 title: Continuous access evaluation (preview)
 description: Learn how continuous access evaluation in Microsoft Power Platform enforces changes to user access and tenant policy in near real time.
-ms.date: 07/25/2023
+ms.date: 05/09/2025
 ms.topic: overview
 author: ritesp
 ms.author: ritesp
@@ -11,6 +11,8 @@ ms.subservice: admin
 search.audienceType: 
   - admin
 ms.custom: bap-template
+contributors:
+  - alaug 
 ---
 
 # Continuous access evaluation (preview)
@@ -51,14 +53,14 @@ Continuous access evaluation supports two types of events:
   - User account is disabled or deleted.
   - Password is changed or reset.
   - User sessions are revoked.
-  - Multifactor authentication is enabled for the user.
+  - Multifactor authentication is allowed for the user.
 
 - [Conditional access policy](/azure/active-directory/conditional-access/concept-continuous-access-evaluation#conditional-access-policy-evaluation) evaluation occurs when a user should lose access to a resource based on an administrator-defined policy, such as when the user is no longer connecting from allowed IP locations.
 
 ## Supported Power Platform clients
 
-Power Platform clients that are enabled for continuous access evaluation support *claim challenges*. A claim challenge is a redirect of a user's session to Microsoft Entra ID reauthentication when a continuous access evaluation-enabled service like Dataverse rejects a cached user token. Dynamics 365 Sales, Customer Service, Field Service, Marketing, Project Service Automation, and Power Apps support continuous access evaluation claims. Power Apps canvas apps do not support continous access evaluation in embedded experiences. 
+Power Platform clients that allow continuous access evaluation support *claim challenges*. A claim challenge is a redirect of a user's session to Microsoft Entra ID reauthentication when a continuous access evaluation-enabled service like Dataverse rejects a cached user token. Dynamics 365 Sales, Customer Service, Field Service, Marketing, Project Service Automation, and Power Apps support continuous access evaluation claims. Power Apps canvas apps don't support continous access evaluation in embedded experiences. 
 
 For clients that don't support continuous access evaluation, the access token lifetime remains the same as configured or set to the default value.
 
-To enable continuous access evaluation in your Power Platform Dataverse environment, reach out to your Microsoft contact or Microsoft Support.
+To allow continuous access evaluation in your Power Platform Dataverse environment, reach out to your Microsoft contact or Microsoft Support.
