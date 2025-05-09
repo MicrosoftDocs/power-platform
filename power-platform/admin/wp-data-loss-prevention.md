@@ -1,5 +1,5 @@
 ---
-title: "Data Loss Prevention (DLP) policies | MicrosoftDocs"
+title: Data loss prevention (DLP) policies
 description: You can create data policies that can act as guardrails to help reduce the risk of users from unintentionally exposing organizational data.
 ms.component: pa-admin
 ms.topic: overview
@@ -14,10 +14,10 @@ search.audienceType:
 contributors:
 - ChrisGarty 
 ---
-# Data Loss Prevention (DLP) policies 
+# Data loss prevention (DLP) policies 
 
 [!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-Data Loss Prevention (DLP) is a critical aspect of maintaining data security and compliance within the Microsoft Power Platform ecosystem. 
+Data loss prevention (DLP) is a critical aspect of maintaining data security and compliance within the Microsoft Power Platform ecosystem. 
 
 You can create data policies that can act as guardrails to help reduce the risk of users from unintentionally exposing organizational data. A core component of Power Apps, Power Automate, and Microsoft Copilot Studio is the use of connectors to enumerate, populate, push, and pull data. **Data policies** in Power Platform admin center allow administrators to control access to these connectors in various ways to help reduce risk in your organization.
 
@@ -78,7 +78,7 @@ As new data policies are created, or when existing policies are updated, there's
 ## Latency considerations
 The time it takes to effectively implement data policies varies from customer to customer based on their volume of environments and resources within those environments. The more apps, flows, and chatbots a customer has the longer it takes for policy changes to take full effect. For the most extreme cases, the latency for full enforcement is 24 hours. In most cases it is within an hour.
 
-### See also
+### Related content
 
 - [Manage data loss prevention (DLP) policies](prevent-data-loss.md)
 - [DLP policies for Power Automate](/power-automate/prevent-data-loss)
