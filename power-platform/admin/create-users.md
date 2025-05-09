@@ -225,7 +225,7 @@ To prohibit a user account in an environment that has a Dataverse database, you 
 Removing a license from a user might not always result in disabling the user account, though the license is freed up for assigning to another user. The recommended approach to disabling a user account in an environment is to remove them from the security group that's associated with the environment.
 
 > [!NOTE]
-> You can also delete users in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)]. When you remove a user from your subscription, the license assigned to that user automatically becomes available to be assigned to a different user. If you want the user to still have access to other applications you manage through [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)]&mdash;for example, [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] or [!INCLUDE[pn_ms_SharePoint_long](../includes/pn-ms-sharepoint-long.md)]&mdash;don't delete them as a user. Instead, simply remove the license you've assigned to them.  
+> You can also delete users in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)]. When you remove a user from your subscription, the license assigned to that user automatically becomes available to be assigned to a different user. If you want the user to still have access to other applications you manage through [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)]&mdash;for example, [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] or [!INCLUDE[pn_ms_SharePoint_long](../includes/pn-ms-sharepoint-long.md)]&mdash;don't delete them as a user. Instead, remove the license you've assigned to them.  
 > 
 > When you sign out of the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)], you aren't signing out of customer engagement apps. You have to do that separately.  
 
@@ -263,7 +263,7 @@ In certain conditions, the above-mentioned system background process isn't addin
 3. Users are part of an environment with a Dataverse database and environment level app-pass license type.
 
 > [!NOTE]
-> Users can't be added to SystemUser table either automatically or on demand in case of environments without Dataverse database.  
+> Users can't be added to SystemUser table either automatically or on demand in environments without Dataverse database.  
 
 ## Requirements for successfully adding users in Dataverse
 
@@ -437,7 +437,7 @@ When application users are created, they're automatically enabled. The default *
 You can customize the default **Application User** form to allow updates to the **Status** field so that you can enable or disable application users, if necessary. For step-by-step information about customizing the default **Application User** form, see [Enable or disable application users](/powerapps/developer/common-data-service/use-single-tenant-server-server-authentication#enable-or-disable-application-users).
 
 > [!CAUTION]
-> Disabling an application user will break all the integration scenarios that use the application user.
+> Disabling an application user breaks all the integration scenarios that use the application user.
 
 ### Manage application users in the Power Platform admin center
 
