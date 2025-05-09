@@ -1,5 +1,5 @@
 ---
-title: Manage Copilot
+title: Copilot capabilities
 description: Learn about the Copilot page in the Power Platform admin center for documents, insights, and controls related to Power Platform Copilots.
 author: amchern
 ms.component: pa-admin
@@ -18,7 +18,7 @@ contributors:
 
 [!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
-The **Copilot** hub is a centralized location in the Power Platform admin center for usage and cost insights, upcoming features, learning documents, and granular controls to scale Copilot and agent adoption in Power Platform. Tenant admins and environment admins can access these resources in one place by selecting **Copilot** in the navigation pane.
+The **Copilot** page is a centralized location in the Power Platform admin center for usage and cost insights, upcoming features, learning documents, and granular controls to scale Copilot and agent adoption in Power Platform. Tenant admins and environment admins can access these resources in one place by selecting **Copilot** in the navigation pane.
 
 # [New admin center](#tab/new)
 
