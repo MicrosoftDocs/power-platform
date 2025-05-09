@@ -142,11 +142,11 @@ To view and edit a user's profile in the Power Platform admin center:
 1. Select a user from the list.
 ---
 
-On the **Users** page, you can view and modify key user profile details, including security roles, team membership, business unit, manager, position, and more.
+A pane is displayed with details of the user. You can view and modify key user profile details, including security roles, team membership, business unit, manager, position, and more.
 
 Additionally, you can:
 - Use **Run diagnostics** to troubleshoot access issues.
-- Use **Refresh User** to resync information from Microsoft Entra ID. 
+- Use **Refresh user** to resync information from Microsoft Entra ID. 
 
 ## Add a license to a user account
 
@@ -201,7 +201,7 @@ To enable a user in an environment that has a Dataverse database, you enable sig
 3. Select the security group associated with your environment.
 4. Select the **Membership** tab.
 5. In the navigation pane, select **Members**, then select **Add members** from the command bar.
-6. Choose users from the list or search for users, then click **Add** to apply the changes.
+6. Choose users from the list or search for users, then select **Add** to apply the changes.
 
 ### Disable a user account in an environment 
 
@@ -214,7 +214,7 @@ To disable a user account in an environment that has a Dataverse database, you c
 3. Select the security group associated with your environment.
 4. Select the **Membership** tab.
 5. In the navigation pane, select **Members**, 
-6. Select the users you want to remove, then click **Remove as member** to apply the changes.
+6. Select the users you want to remove, then select **Remove as member** to apply the changes.
 
 #### To remove a license from a user
 
@@ -306,7 +306,7 @@ By default, all licensed users are created with an access mode of **Read-Write**
 1. On the **Environments** page, select an environment.
 1. In the command bar, select **Settings**. 
 1. Expand **Users + permissions**, then select **Users**.
-1. Select the radio button next to a user's name.
+1. Select a user. A pane is displayed showing details about the user.
 1. In the command bar, select **...**, then choose **Manage user in Dynamics 365**.
 1. In the user form, select the **Administration** tab.
 1. In the **Client Access License (CAL) Information** pane, from the **Access Mode** list, select **Read-Write**.  
@@ -318,7 +318,7 @@ By default, all licensed users are created with an access mode of **Read-Write**
 1. On the **Environments** page, choose an environment.
 1. In the command bar, select **Settings**.  
 1. Expand **Users + permissions**, then select **Users**.
-1. Select a user from the list.
+1. Select a user. A pane is displayed showing details about the user.
 1. In the command bar, select **...**, then choose **Manage user in Dynamics 365**.
 1. In the user form, select the **Administration** tab.
 1. In the **Client Access License (CAL) Information** pane, from the **Access Mode** list, select **Read-Write**.  
@@ -340,7 +340,7 @@ Create a user account in the [!INCLUDE[pn_office_365_admin_center](../includes/p
 
 1. In the **Optional settings** form, expand **Roles**.
 2. Scroll down the form, and then select **Show all by category**.
-3. Select the **Power Platform Administrator** or **Dynamics 365 Administrator** checkbox.
+3. Select the **Power Platform Administrator** or **Dynamics 365 Administrator** check box.
 4. Wait for the user to sync to the environments.
 
 #### [New admin center](#tab/new)
@@ -350,7 +350,7 @@ Create a user account in the [!INCLUDE[pn_office_365_admin_center](../includes/p
 1. On the **Environments** page, choose an environment.
 1. In the command bar, select **Settings**. 
 1. Expand **Users + permissions**, then select **Users**.
-1. Select the user from the list.
+1. Select a user. A pane is displayed showing details about the user.
 1. In the command bar, select **...**, then choose **Manage user in Dynamics 365**.
 1. In the user form, select the **Administration** tab.
 1. In the **Client Access License (CAL) Information** pane, from the **Access Mode** list, select **Administrative**.  
@@ -362,7 +362,7 @@ Create a user account in the [!INCLUDE[pn_office_365_admin_center](../includes/p
 1. On the **Environments** page, choose an environment.
 1. In the command bar, select **Settings**.  
 1. Expand **Users + permissions**, then select **Users**.
-1. Select the user from the list.
+1. Select a user. A pane is displayed showing details about the user.
 1. In the command bar, select **...**, then choose **Manage user in Dynamics 365**.
 1. In the user form, select the **Administration** tab.
 1. In the **Client Access License (CAL) Information** pane, from the **Access Mode** list, select **Administrative**.  
@@ -392,7 +392,7 @@ First, you create a user account in the [!INCLUDE[pn_office_365_admin_center](..
 1. On the **Environments** page, choose an environment.
 1. In the command bar, select **Settings**. 
 1. Expand **Users + permissions**, then select **Users**.
-1. Select a user from the list.
+1. Select a user. A pane is displayed showing details about the user.
 1. In command bar, select **...**, then select **Manage user in Dynamics 365**.
 1. In the user form, select the **Administration** tab.
 1. In the **Client Access License (CAL) Information** pane, from the **Access Mode** list, select **Non-interactive**.  
@@ -404,7 +404,7 @@ First, you create a user account in the [!INCLUDE[pn_office_365_admin_center](..
 1. On the **Environments** page, choose an environment.
 1. In the command bar, select **Settings**.  
 1. Expand **Users + permissions**, then select **Users**.
-1. Select a user from the list.
+1. Select a user. A pane is displayed showing details about the user.
 1. In command bar, select **...**, then select **Manage user in Dynamics 365**.
 1. In the user form, select the **Administration** tab.
 1. In the **Client Access License (CAL) Information** pane, from the **Access Mode** list, select **Non-interactive**.  
