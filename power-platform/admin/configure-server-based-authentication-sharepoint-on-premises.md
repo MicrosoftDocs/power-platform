@@ -199,7 +199,7 @@ Set-SPAuthenticationRealm -Realm $SPOContextId
    ```powershell
    $metadataEndpoint = `
        "https://login.microsoftonline.com/common/.well-known/openid-configuration"  
-   $oboissuer = "https://sts.windows.net/*/” 
+   $oboissuer = "https://sts.windows.net/*/" 
    $issuer = "00000007-0000-0000-c000-000000000000@" + $SPOContextId  
    ```  
   
