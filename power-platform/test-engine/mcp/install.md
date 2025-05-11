@@ -153,7 +153,7 @@ cd PowerApps-TestEngine
 
 ```PowerShell
 git pull
-``
+```
 
 4. Change to the mcp sample
 
