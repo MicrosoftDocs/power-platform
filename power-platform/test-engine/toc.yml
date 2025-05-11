@@ -15,6 +15,12 @@ items:
       href: model-driven-application.md
     - name: Test Dataverse extensions
       href: dataverse.md
+  - name: Model Context Protocol Server
+    items:
+    - name: Overview
+      href: mcp/overview.md
+    - name: Installation
+      href: mcp/install.md
   - name: Yaml format
     href: yaml.md
   - name: Power Fx

@@ -23,11 +23,12 @@ A summary of key features covering:
 
 | Feature                        | Initial Preview | Current | Open Source | Roadmap |
 |--------------------------------|-----------------|---------|-------------|-------------|
-| Test Engine Canvas             | ✅             | ✅      | ✅          |  |
+| Model Context Protocol Server  |                 |         | ✅          |
+| Test Engine Canvas             | ✅             | ✅      | ✅          |  
 | Multifactor authentication    |                 | ✅      | ✅         |
 | Managed Extensibility Framework |                | ✅      | ✅         | Customer signed extensions |
 | Model-Driven Application       |                 | ⏹️      | ⏹️         | Command Bar, Navigation |
-| Dataverse Integration          |                 | ⏹️      | ⏹️         | Plugins         |
+| Dataverse Integration          |                 | ⏹️      | ⏹️         | Execute Plugins         |
 | AI Builder Prompt              |                 |          | ✅         |
 | User-Defined Types and Functions|                | ✅      | ✅ |
 | C# Power Fx functions          |                 | ✅     | ✅ |
