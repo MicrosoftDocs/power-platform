@@ -13,6 +13,8 @@ ms.contributors:
 
 # Canvas Apps Git Integration (Preview)
 
+[!INCLUDE [cc-preview-features-expect-changes](../../includes/cc-preview-features-expect-changes.md)]
+
 Makers and developers use Git integration in Power Platform to manage canvas apps' source code effectively using version control. This feature helps you review changes made by makers in Power Apps Studio without encountering noisy diffs. Additionally, it allows for minimal edits to be made directly in the repository, ensuring a streamlined and efficient workflow.
 
 ## How to Commit Canvas Apps Using Git Integration
