@@ -11,8 +11,8 @@ metadata:
   ms.subservice: guidance
   ms.topic: hub-page
   ms.collection: collection
-  author: jhaskett
-  ms.author: jhaskett-msft
+  author: jhaskett-msft
+  ms.author: jhaskett
   ms.date: 05/12/2025
 
 # highlightedContent section (optional)
@@ -131,7 +131,7 @@ additionalContent:
              text: Center of Excellence Starter Kit overview
            - url: /power-platform/guidance/creator-kit/overview
              text: Creator Kit overview
-           - url: /power-platform/guidance/toolkits/index
+           - url: /power-platform/guidance/toolkits/
              text: More...
         - title: Real-world case studies
           links:
