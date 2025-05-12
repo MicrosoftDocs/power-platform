@@ -81,7 +81,7 @@
             - name: Source control operations
               href: git-integration/source-control-operations.md   
             - name: Source control canvas apps
-              href: git-integration/source-control-canvas-apps.md
+              href: git-integration/canvas-apps-git-integration.md
             - name: Frequently asked questions
               href: git-integration/faqs.md
         - name: View solution deployments in deployment hub (preview)
