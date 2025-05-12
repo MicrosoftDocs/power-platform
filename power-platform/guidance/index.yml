@@ -76,7 +76,7 @@ productDirectory:
       # imageSrc should be square in ratio with no white space
       imageSrc: ./media/operate.svg
       links:
-        - text: Establish effective application lifecycle management practices
+        - text: Establish effective ALM practices
           url: adoption/alm.md
         - text: Gain insights into Power Platform adoption
           url: adoption/observability.md
@@ -129,6 +129,8 @@ additionalContent:
           links:
            - url: /power-platform/guidance/coe/overview
              text: Center of Excellence Starter Kit overview
+           - url: /power-platform/guidance/alm-accelerator/overview
+             text: ALM Accelerator overview
            - url: /power-platform/guidance/creator-kit/overview
              text: Creator Kit overview
            - url: /power-platform/guidance/toolkits/
@@ -156,6 +158,8 @@ additionalContent:
         # Card
         - title: Power Apps guidance
           links:
+            - text: Power Apps coding guidelines
+              url: /power-apps/guidance/coding-guidelines/overview
             - text: Power Apps patterns
               url: /power-apps/guidance/patterns/overview
             - text: Planning a Power Apps project
@@ -167,7 +171,9 @@ additionalContent:
         # Card
         - title: Power Automate guidance
           links:
-            - text: Planning a Power Automate project
+            - text: Best practices for building cloud flows
+              url: /power-automate/guidance/coding-guidelines/
+            - text: Plan a Power Automate project
               url: /power-automate/guidance/planning/introduction
             - text: RPA with SAP
               url: /power-automate/guidance/rpa-sap-playbook/introduction
@@ -199,10 +205,22 @@ additionalContent:
           links:
             - text: What is Power Platform Well-Architected?
               url: /power-platform/well-architected/what-is-power-well-architected
+            - text: Power Platform Well-Architected pillars
+              url: /power-platform/well-architected/pillars
             - text: Implementing recommendations
               url: /power-platform/well-architected/implementing-recommendations
             - text: More...
               url: /power-platform/well-architected
+        - title: Power Platform and Copilot Studio Architecture Center
+          links:
+            - text: Welcome to the Architecture Center
+              url: /power-platform/architecture/architecture-center-overview.md
+            - text: Architecture key concepts
+              url: /power-platform/architecture/key-concepts
+            - text: Browse reference architectures
+              url: /power-platform/architecture/reference-architectures
+            - text: More...
+              url: /power-platform/architecture
 
     - title: Documentation # < 60 chars (optional)
       summary: Official documentation for Power Platform components
