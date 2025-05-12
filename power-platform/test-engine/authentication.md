@@ -87,7 +87,7 @@ pac test run -p "canvas" `
    -env 00aa00aa-bb11-cc22-dd33-44ee44ee44ee
 ```
   
-  > [!NOTE] You can select `certstore` or `certenv` for the authentication provider "-a". `certstore` uses environment variable `$env:DataProtectionCertificateName` with the Certificate name in local windows store. `certenv` uses base 64 encoded certificate in the variable found in `$env:DataProtectionCertificateName`, for example DataProtectionCertificateName="SampleCertificateVariableName" and  SampleCertificateVariableName="*Encoded Certificate Value*". 
+> [!NOTE] You can select `certstore` or `certenv` for the authentication provider "-a". `certstore` uses environment variable `$env:DataProtectionCertificateName` with the Certificate name in local windows store. `certenv` uses base 64 encoded certificate in the variable found in `$env:DataProtectionCertificateName`, for example DataProtectionCertificateName="SampleCertificateVariableName" and  SampleCertificateVariableName="*Encoded Certificate Value*". 
 
 ### Technical Overview
 

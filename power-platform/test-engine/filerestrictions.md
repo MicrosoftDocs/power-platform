@@ -1,6 +1,6 @@
 ---
-title: "Test command migration process for Test Engine (preview)"
-description: "Learn about the process of transitioning Test command between versions of Test Engine"
+title: "File restrictions for Test Engine (preview)"
+description: "Learn about the file restrictions for Test Engine in different operating systems"
 author: snamilikonda
 ms.author: snamilikonda
 ms.date: 05/09/2025
@@ -11,7 +11,7 @@ contributors:
  - pvillads
 ---
 
-# Migration Guide
+# File Restrictions
 [This article is prerelease documentation and is subject to change.]
 
 > [!NOTE]
@@ -20,7 +20,7 @@ contributors:
 # File Access Restrictions for Test Engine
 The test engine is allowed to write files exclusively within designated directories under the `Microsoft/TestEngine` folder located in the temporary directory.
 
-The test engine is prohibited from reading files certain file types and from specific locations, including network paths. Below is a non-exhaustive list of restricted directories:
+The test engine is prohibited from reading files certain file types and from specific locations, including network paths. Below is a nonexhaustive list of restricted directories:
 
 ## Windows
 Note: `%SystemDrive%` is assumed for all paths listed below.

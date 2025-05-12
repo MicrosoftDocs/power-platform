@@ -11,7 +11,7 @@ contributors:
  - pvillads
 ---
 
-# Test Engine Model Context Protocol
+# Test Engine Model Context Protocol Install
 
 To install the Model Context Protocol (MCP) server for Test Engine ensure that you have the prerequisites installed and then complete install steps.
 
@@ -28,7 +28,7 @@ To use the full features of Test Engine MCP Server, ensure the following tools a
 winget install Microsoft.DotNet.SDK.8
 ```
 
-2. An install of PowerShell following the [Install Instructions](https://learn.microsoft.com/powershell/scripting/install/installing-powershell) for your operating system. For example 
+2. An install of PowerShell following the [Install Instructions](/powershell/scripting/install/installing-powershell) for your operating system. For example 
 
 ```cmd
 winget install --id Microsoft.PowerShell --source winget

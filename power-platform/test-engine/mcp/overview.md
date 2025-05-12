@@ -1,5 +1,5 @@
 ---
-title: "Test Engine Model Context Protocol"
+title: "Test Engine Model Context Protocol Overview"
 description: "Describes the Model Context Protocol server integration"
 author: grant-archibald-ms
 ms.author: grarchib
@@ -31,7 +31,7 @@ The Test Engine MCP Server contains the following commands
 
 1. Use the [Plan Designer](/power-apps/maker/plan-designer/plan-designer) to generate and save a plan that you want to build tests for
 
-2. Ensure that the Power Platform that contains the plan solution is integrated with [Dataverse Git](../../alm/git-integration/connecting-to-git)
+2. Ensure that the Power Platform that contains the plan solution is integrated with [Dataverse Git](../../alm/git-integration/connecting-to-git.md)
 
 3. Clone the Git Repository to your machine
 

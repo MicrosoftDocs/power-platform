@@ -17,7 +17,7 @@ contributors:
 
 A summary of key features covering:
 - The initial Test Engine release
-- The current version of features in [pac test run](../developer/cli/reference/test) 
+- The current version of features in [pac test run](../developer/cli/reference/test.md) 
 - The [open source](https://github.com/microsoft/PowerApps-TestEngine/) MIT license version 
 - An outline of roadmap items / enhancements planned.
 
