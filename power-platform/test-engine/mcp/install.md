@@ -74,7 +74,7 @@ To use the full features of Test Engine MCP Server, ensure the following tools a
 1. A Power Platform solution with a created [Plan](/power-apps/maker/plan-designer/plan-designer)
 1. For the solution that includes the plan you have setup [Dataverse Git integration](../../alm/git-integration/connecting-to-git.md)
 
-#### Install Steps
+## Install Steps
 
 To install the MCP Server for Test Engine
 
