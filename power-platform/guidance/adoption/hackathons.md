@@ -4,7 +4,7 @@ description: "A hackathon is a fun way to engage lots of people within your orga
 author: manuelap-msft
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 09/09/2020
 ms.subservice: guidance
 ms.author: mapichle

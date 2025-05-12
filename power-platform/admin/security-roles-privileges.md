@@ -6,7 +6,7 @@ author: paulliew
 ms.author: paulliew
 ms.reviewer: sericks
 ms.custom: bap-template, NEWPPAC
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 02/19/2025
 contributors:
   - srpoduri 

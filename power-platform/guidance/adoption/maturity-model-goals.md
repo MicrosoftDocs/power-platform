@@ -4,7 +4,7 @@ description: "This article describes goals and opportunities per maturity stage 
 author: manuelap-msft
 
 ms.subservice: guidance
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 06/13/2024
 ms.author: mapichle
 ms.reviewer: sericks

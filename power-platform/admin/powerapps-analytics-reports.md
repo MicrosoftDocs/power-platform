@@ -2,7 +2,7 @@
 title: Tenant-level Analytics for Power Apps
 description: View tenant-level analytics for Power Apps.
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 11/16/2022
 author: Zeffin
 ms.subservice: admin

@@ -4,7 +4,7 @@ description: Set up customer engagement apps to use SharePoint Online
 author: Mattp123
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 03/30/2020
 ms.subservice: admin
 ms.author: matp

@@ -4,7 +4,7 @@ description: "There are two main ways to log in and access your Microsoft Dynami
 author: sericks007
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.collection: get-started
 ms.date: 11/14/2022
 ms.subservice: admin

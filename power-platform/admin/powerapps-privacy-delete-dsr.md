@@ -4,7 +4,7 @@ description: Walkthrough of how to respond to Data Subject Rights (DSR) requests
 author: sericks007
 ms.reviewer: paulliew
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 04/02/2024
 ms.subservice: admin
 ms.author: sericks

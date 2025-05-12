@@ -3,7 +3,7 @@ title: "About Power Apps per app plans  | MicrosoftDocs"
 description: About Power Apps per app plans 
 author: alaug
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 12/01/2023
 ms.subservice: admin
 ms.author: alaug

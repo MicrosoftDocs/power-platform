@@ -3,7 +3,7 @@ title: "Telemetry events for Microsoft Dataverse | Microsoft Docs"
 description: About telemetry events for Microsoft Dataverse 
 services: powerapps
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 12/12/2022
 author: Zeffin
 ms.subservice: admin

@@ -4,7 +4,7 @@ description: "The Microsoft Power Platform adoption practices provide admin and 
 author: manuelap-msft
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: overview
 ms.date: 09/09/2020
 ms.subservice: guidance
 ms.author: mapichle

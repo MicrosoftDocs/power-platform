@@ -6,7 +6,7 @@ ms.author: marcelbf
 ms.reviewer: jdaly
 ms.subservice: developer
 ms.date: 05/25/2022
-ms.topic: article
+ms.topic: concept-article
 search.audienceType: 
   - developer
 ---
