@@ -1,5 +1,5 @@
 ---
-title: "Test command known issues for Test Engine (preview)"
+title: "Test Engine known issues (preview)"
 description: "Known issues for Test Engine"
 author: snamilikonda
 ms.author: snamilikonda
@@ -11,7 +11,7 @@ contributors:
  - pvillads
 ---
 
-# Known Issues
+# Test Engine known issues (preview)
 
 > [!NOTE]
 > [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]

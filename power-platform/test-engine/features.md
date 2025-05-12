@@ -1,5 +1,5 @@
 ---
-title: Power Apps Test Engine features
+title: Power Apps Test Engine features (preview)
 description: Summary of features for Test Engine
 author: grant-archibald-ms
 ms.author: grarchib
@@ -15,7 +15,11 @@ contributors:
 
 # Test Engine Features
 
+> [!NOTE]
+> [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
+
 A summary of key features covering:
+
 - The initial Test Engine release
 - The current version of features in [pac test run](../developer/cli/reference/test.md) 
 - The [open source](https://github.com/microsoft/PowerApps-TestEngine/) MIT license version 

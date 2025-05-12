@@ -15,6 +15,9 @@ contributors:
 
 # Power Apps Test Engine Power Fx Functions (preview)
 
+> [!NOTE]
+> [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
+
 There are several functions defined for the test framework.
 
 - [Assert](#assert)
