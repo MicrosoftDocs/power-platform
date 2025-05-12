@@ -25,6 +25,8 @@ The Test Engine MCP Server contains the following commands
 |--------------------|------------|-------------|
 | GetPlans           | None       |Obtain the list of available Plan Designer plans in the configured environment |
 | GetPlanDetails     | planId: string, workspace:string | Queries the details for the Plan Designer and scans the workspace for recommendations to generate tests for |
+| GetScanTypes       | None       | Obtain a list of available scan types configured for your MCP Server |
+| Scan               | workspacePath: string, scans: string[], powerFx: string | Scan workspace for recommendations and apply optional post scan Power Fx steps 
 | ValidatePowerFx    | powerFx: string | Validates that the provided Power Fx is valid for use in Test Engine
 
 ### Get Plan Designer Plans
