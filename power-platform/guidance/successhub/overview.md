@@ -4,7 +4,7 @@ description: Learn how Success Hub empowers organizations to digitize efficientl
 #customer intent: As a business decision maker, I want to compare the Success Hub co-development model with other approaches so that I can choose the best strategy for my team.  
 author: kathyos
 ms.component: pa-admin
-ms.topic: article
+ms.topic: concept-article
 ms.date: 04/23/2025
 ms.subservice: guidance
 ms.author: kathyos
