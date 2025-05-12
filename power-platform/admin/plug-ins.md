@@ -8,7 +8,7 @@ ms.reviewer: sericks
 ms.custom:
   - "admin-security"
   - bap-template
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 09/21/2023
 ---
 

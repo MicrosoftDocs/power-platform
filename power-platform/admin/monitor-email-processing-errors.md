@@ -3,7 +3,7 @@ title: "Monitor email processing errors  | MicrosoftDocs"
 description: Monitor email processing errors
 author: sericks007
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 02/17/2021
 ms.subservice: admin
 ms.author: sericks

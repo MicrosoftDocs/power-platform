@@ -3,7 +3,7 @@ title: Recover a recently deleted environment
 description: Learn how to restore a recently deleted environment by using Microsoft Power Platform admin center or Power Apps cmdlet.
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 04/02/2024
 ms.subservice: admin
 author: ChrisGarty

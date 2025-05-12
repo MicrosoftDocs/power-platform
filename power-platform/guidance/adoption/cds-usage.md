@@ -5,7 +5,7 @@ description: Learn how to track Power Platform license consumption and storage c
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 05/06/2025
+ms.date: 05/12/2025
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: pankajsharma2087

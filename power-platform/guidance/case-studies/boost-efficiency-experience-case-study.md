@@ -67,14 +67,14 @@ For the travel booking process, the following steps must be completed consistent
 
 1. Get the booking confirmation, which contains flight and destination details that were confirmed by the client.
 1. Retrieve the latest predeparture travel requirements from relevant authorities and government websites.
-1. Identify the latest travel risk status for the destination country.
+1. Identify the latest travel risk status for the destination country/region.
 1. Collate all the information into an email and send it to the client.
 
 :::image type="content" source="media/a1-travel/image4.png" alt-text="Diagram that shows the manual travel booking process." lightbox="media/a1-travel/image4.png":::
 
 ### The Power Automate process
 
-The Power Automate solution automatically analyzes the booking confirmation email and retrieves destination country and airport codes from Dataverse. It then uses this information to request the latest, real-time travel requirements through the APIs of various authorities.
+The Power Automate solution automatically analyzes the booking confirmation email and retrieves destination country/region and airport codes from Dataverse. It then uses this information to request the latest, real-time travel requirements through the APIs of various authorities.
 
 Manual collation of data is no longer required. In addition, information is automatically translated from English to the client's native Portuguese before it's sent out.
 
@@ -82,7 +82,7 @@ The automated travel booking process has the following steps:
 
 1. The booking system emails the booking confirmation to a shared Outlook mailbox.
 1. Power Automate is triggered and searches for the travel destination in the PDF that is attached to the booking confirmation email.
-1. Destination country and corresponding airport codes are retrieved from a [Dataverse](/power-apps/maker/data-platform/data-platform-intro) list.
+1. Destination country/region and corresponding airport codes are retrieved from a [Dataverse](/power-apps/maker/data-platform/data-platform-intro) list.
 1. The destination details are sent to various APIs, which use [custom connectors](/connectors/custom-connectors/) to retrieve travel requirements.
 1. Microsoft Translator is used to translate information from English to Portuguese, the national language of Brazil.
 1. Data is formatted into an email and sent to the travel agent and client.
@@ -98,7 +98,7 @@ Receipt of an email acts as the workflow trigger. A [text function](https://comm
 | ![Outlook icon.](media/a1-travel/outlook-icon.png) | 1. A new email arrives in a shared mailbox. | The Outlook connector is used to select a shared mailbox that triggers the workflow. |
 | ![Text function icon.](media/a1-travel/text-function-icon.png) | 2. Find the travel destination. | A text function is used to identify details (parameters) in the email to be automatically read. |
 | ![Variables icon.](media/a1-travel/variables-icon.png) | 3. Identify the travel requirements for collection. | Variables act as placeholders to collect data during the workflow. |
-| ![Dataverse icon.](media/a1-travel/dataverse-icon.png) | 4. Find the destination country and airport codes. | The Dataverse or SQL connector is used to look up destination details in a list. |
+| ![Dataverse icon.](media/a1-travel/dataverse-icon.png) | 4. Find the destination country/region and airport codes. | The Dataverse or SQL connector is used to look up destination details in a list. |
 | ![Http icon.](media/a1-travel/http-icon.png) | 5. Collect the travel requirements. | Connect to APIs to retrieve information from external sources. A custom connector populates data (for example, credentials) for the API. |
 | ![Join icon.](media/a1-travel/join-icon.png) | 6. Collate the travel requirements. | The join action is used to collate information from various sources and formats to serve as inputs for an email. |
 | ![Condition icon.](media/a1-travel/condition-icon.png) | 7. Confirm that the travel requirements are complete. | A conditional is used to confirm that all the received information is complete. If `yes`, prepare to send the email. If `no`, issue an error. |

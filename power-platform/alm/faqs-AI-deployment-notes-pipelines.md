@@ -4,7 +4,7 @@ description: FAQ that discusses using Copilot to generate deployment notes in pi
 ms.date: 9/03/2024
 ms.custom: 
   - responsible-ai-faqs
-ms.topic: article
+ms.topic: faq
 author: ASheehi1
 ms.author: matp
 ms.collection: bap-ai-copilot

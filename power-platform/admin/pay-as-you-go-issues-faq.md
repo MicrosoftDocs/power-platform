@@ -3,7 +3,7 @@ title: Issues and FAQs about pay-as-you-go plans
 description: This article addresses known issues about pay-as-you-go plans and provides answers to frequently asked questions.
 author: Kavishi
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: faq
 ms.date: 12/02/2024
 ms.subservice: admin
 ms.author: kaagar 

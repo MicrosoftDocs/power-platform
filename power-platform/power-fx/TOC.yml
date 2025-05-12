@@ -1,4 +1,4 @@
-- name: Microsoft Power Fx
+﻿- name: Microsoft Power Fx
   items:
     - name: Power Fx
       items: 
@@ -18,6 +18,8 @@
           href: error-handling.md
         - name: Global apps
           href: global.md
+        - name: Regular expressions
+          href: regular-expressions.md
         - name: Untyped objects
           href: untyped-object.md
         - name: Working with JSON
@@ -29,11 +31,13 @@
           - name: Canvas apps formula reference
             href: formula-reference-canvas-apps.md
           - name: Cards formula reference
-            href: formula-reference-cards.md  
+            href: formula-reference-cards.md
+          - name: Copilot Studio formula reference
+            href: formula-reference-copilot-studio.md
           - name: Dataverse formula columns formula reference
             href: formula-reference-formula-columns.md
           - name: Dataverse functions formula reference
-            href: formula-reference-plug-ins.md  
+            href: formula-reference-plug-ins.md
           - name: Desktop flows formula reference
             href: formula-reference-desktop-flows.md
           - name: Model-driven apps formula reference
@@ -50,6 +54,8 @@
             href: reference/function-trig.md
           - name: Acot
             href: reference/function-trig.md
+          - name: AddColumns
+            href: reference/function-table-shaping.md
           - name: AIClassify
             href: reference/function-ai.md
           - name: AIExtract
@@ -62,8 +68,6 @@
             href: reference/function-ai.md
           - name: AITranslate
             href: reference/function-ai.md
-          - name: AddColumns
-            href: reference/function-table-shaping.md
           - name: And
             href: reference/function-logicals.md
           - name: App
@@ -98,6 +102,8 @@
             href: reference/function-clear-collect-clearcollect.md
           - name: ClearCollect
             href: reference/function-clear-collect-clearcollect.md
+          - name: ClearData
+            href: reference/function-savedata-loaddata.md
           - name: Clock
             href: reference/function-clock-calendar.md
           - name: Coalesce
@@ -128,12 +134,12 @@
             href: reference/signals.md
           - name: Copy
             href: reference/function-copy.md
-          - name: Count
-            href: reference/function-table-counts.md
           - name: Cos
             href: reference/function-trig.md
           - name: Cot
             href: reference/function-trig.md
+          - name: Count
+            href: reference/function-table-counts.md
           - name: CountA
             href: reference/function-table-counts.md
           - name: CountIf
@@ -184,6 +190,8 @@
             href: reference/function-encode-decode.md
           - name: EndsWith
             href: reference/function-startswith.md
+          - name: Env
+            href: /microsoft-copilot-studio/authoring-variables-about#environment-variables
           - name: EOMonth
             href: reference/function-edate-eomonth.md
           - name: Error
@@ -208,6 +216,8 @@
             href: reference/function-value.md
           - name: ForAll
             href: reference/function-forall.md
+          - name: Global
+            href: /microsoft-copilot-studio/authoring-variables-bot
           - name: GroupBy
             href: reference/function-groupby.md
           - name: GUID
@@ -222,8 +232,6 @@
             href: reference/object-host.md
           - name: Hour
             href: reference/function-datetime-parts.md
-          - name: Identifiers
-            href: reference/operators.md
           - name: If
             href: reference/function-if.md
           - name: IfError
@@ -237,7 +245,7 @@
           - name: IsBlank
             href: reference/function-isblank-isempty.md
           - name: IsBlankOrError
-            href: reference/function-iferror.md    
+            href: reference/function-iferror.md
           - name: IsEmpty
             href: reference/function-isblank-isempty.md
           - name: IsError
@@ -247,13 +255,13 @@
           - name: IsNumeric
             href: reference/function-isnumeric.md
           - name: ISOWeekNum
-            href: reference/function-weeknum.md    
+            href: reference/function-weeknum.md
           - name: IsToday
             href: reference/function-now-today-istoday.md
           - name: IsType
             href: reference/function-astype-istype.md
           - name: IsUTCToday
-            href: reference/function-now-today-istoday.md    
+            href: reference/function-now-today-istoday.md
           - name: JSON
             href: reference/function-json.md
           - name: Language
@@ -274,6 +282,8 @@
             href: reference/function-savedata-loaddata.md
           - name: Location
             href: reference/signals.md
+          - name: Log
+            href: reference/function-numericals.md
           - name: LookUp
             href: reference/function-filter-lookup.md
           - name: Lower
@@ -304,8 +314,6 @@
             href: reference/function-showerror.md
           - name: Now
             href: reference/function-now-today-istoday.md
-          - name: Operators
-            href: reference/operators.md
           - name: Or
             href: reference/function-logicals.md
           - name: Param
@@ -333,13 +341,13 @@
           - name: Rand
             href: reference/function-rand.md
           - name: RandBetween
-            href: reference/function-rand.md    
+            href: reference/function-rand.md
           - name: ReadNFC
             href: reference/function-readnfc.md
           - name: RecordInfo
-            href: reference/function-recordinfo.md   
+            href: reference/function-recordinfo.md
           - name: RecordOf
-            href: reference/function-type.md             
+            href: reference/function-type.md
           - name: Refresh
             href: reference/function-refresh.md
           - name: Relate
@@ -352,14 +360,14 @@
             href: reference/function-table-shaping.md
           - name: Replace
             href: reference/function-replace-substitute.md
+          - name: RequestHide
+            href: reference/function-requesthide.md
           - name: Reset
             href: reference/function-reset.md
           - name: ResetForm
             href: reference/function-form.md
           - name: Revert
             href: reference/function-revert.md
-          - name: RequestHide
-            href: reference/function-requesthide.md
           - name: RGBA
             href: reference/function-colors.md
           - name: Right
@@ -380,16 +388,14 @@
             href: reference/function-select.md
           - name: Self
             href: reference/operators.md#self-and-parent-operators
-          - name: SendAppNotification (preview)
-            href: reference/function-send-app-notification.md
+          - name: Sequence
+            href: reference/function-sequence.md
           - name: Set
             href: reference/function-set.md
           - name: SetFocus
             href: reference/function-setfocus.md
           - name: SetProperty
             href: reference/function-setproperty.md
-          - name: Sequence
-            href: reference/function-sequence.md
           - name: ShowColumns
             href: reference/function-table-shaping.md
           - name: ShowHostInfo
@@ -410,16 +416,18 @@
             href: reference/function-startswith.md
           - name: StdevP
             href: reference/function-aggregates.md
-          - name: Substitute
-            href: reference/function-replace-substitute.md
           - name: SubmitForm
             href: reference/function-form.md
+          - name: Substitute
+            href: reference/function-replace-substitute.md
           - name: Sum
             href: reference/function-aggregates.md
           - name: Summarize
-            href: reference/function-summarize.md  
+            href: reference/function-summarize.md
           - name: Switch
             href: reference/function-if.md
+          - name: System
+            href: /microsoft-copilot-studio/authoring-variables-about#system-variables
           - name: Table
             href: reference/function-table.md
           - name: Tan
@@ -438,6 +446,8 @@
             href: reference/function-dateadd-datediff.md
           - name: Today
             href: reference/function-now-today-istoday.md
+          - name: Topic
+            href: /microsoft-copilot-studio/authoring-variables-about
           - name: Trace
             href: reference/function-trace.md
           - name: Trim
@@ -445,7 +455,7 @@
           - name: TrimEnds
             href: reference/function-trim.md
           - name: Trunc
-            href: reference/function-round.md 
+            href: reference/function-round.md
           - name: Type
             href: reference/function-type.md
           - name: Ungroup
@@ -467,7 +477,7 @@
           - name: UTCNow
             href: reference/function-now-today-istoday.md
           - name: UTCToday
-            href: reference/function-now-today-istoday.md    
+            href: reference/function-now-today-istoday.md
           - name: Validate
             href: reference/function-validate.md
           - name: Value

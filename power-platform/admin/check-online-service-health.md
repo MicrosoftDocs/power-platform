@@ -3,7 +3,7 @@ title: How do I check my online service health?
 description: Learn how to quickly get the real-time status of your Microsoft Power Platform, Microsoft Dynamics 365, and Microsoft 365 services.
 ms.date: 02/11/2025
 ms.reviewer: sericks
-ms.topic: conceptual
+ms.topic: concept-article
 author: karacortez
 ms.subservice: admin
 ms.author: kacortez
@@ -39,7 +39,7 @@ The dashboard provides a quick snapshot of the service health of some of your Mi
 
 To view information about all your services, select **Service health** on the dashboard (or select **Health** \> **Service health** on the menu).
 
-![Screenshot that shows the Service health card on the Microsoft 365 admin center dashboard.](media/office-365-admin-center-service-health-dashboard.png "Screenshot that shows the Service health card on the Microsoft 365 admin center dashboard")
+![Screenshot showing the Service health card on the Microsoft 365 admin center dashboard.](media/office-365-admin-center-service-health-dashboard.png "Screenshot showing the Service health card on the Microsoft 365 admin center dashboard.")
 
 ### View Dynamics 365 service health
 

@@ -1,15 +1,17 @@
 ---
-title: "Administrator access for unlicensed Power Platform and Global admins"
-description: "Learn about the levels of permission in customer engagement apps available for Global admins and Microsoft Power Platform admins who don't have a license."
+title: Global admins and Power Platform admins can administer without a license
+description: Learn about the levels of permission in customer engagement apps available for global admins and Microsoft Power Platform admins who don't have a license.
 author: praveenmantha 
 ms.subservice: admin
 ms.author: pmantha
 ms.reviewer: sericks
 ms.component: pa-admin
-ms.topic: conceptual
-ms.date: 07/23/2024
+ms.topic: concept-article
+ms.date: 04/10/2024
 search.audienceType: 
   - admin
+contributors:
+  - srpoduri 
 ---
 # Global admins and Power Platform admins can administer without a license
 
@@ -41,9 +43,9 @@ To give these administrators access to additional areas, such as the Sales, Mark
 > 
 > Unlicensed administrators who need to work with Power Apps for Admins PowerShell module or management connectors need to sign into the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) at least once before invoking these administrative commands.
 > 
-> For tenants with special capabilities (like pay-as-you-go, per app plans, special licenses), all users except administrators will have Read-Write access set by default. Microsoft 365 Global Admins, Power Platform Admins, or Dynamics 365 Admins will need a license added in order to be assigned **Read-Write** permission in the Access Mode. See [Assign Microsoft 365 licenses to users](/microsoft-365/admin/manage/assign-licenses-to-users). 
+> For tenants with special capabilities, such as pay-as-you-go plans, per app plans, or [special licenses](pricing-billing-skus.md#tenant-level-special-licenses), all users except administrators have read/write access set by default. Microsoft 365 global admins, Power Platform admins, or Dynamics 365 admins need a license added in order to be assigned read/write permission in the access mode. Learn more in [Assign Microsoft 365 licenses to users](/microsoft-365/admin/manage/assign-licenses-to-users). 
 
-### See also
+### Related content
 
 [Assigning admin roles](https://support.office.com/article/Assign-admin-roles-in-Office-365-eac4d046-1afd-4f1a-85fc-8219c79e1504) <br />
 [Create an Administrative user account](create-users.md#create-an-administrative-user-account)

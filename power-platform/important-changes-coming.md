@@ -1,8 +1,8 @@
 ---
 title: Important changes (deprecations) coming in Power Platform
 description: Important changes (deprecations) coming in Power Platform 
-ms.date: 03/28/2025
-ms.topic: conceptual
+ms.date: 04/15/2025
+ms.topic: concept-article
 ms.subservice: admin
 searchScope:
   - "Power Platform"  
@@ -38,38 +38,6 @@ Please make sure you replace the V1 actions with the new V2 actions of the SQL s
 ## Deprecation of rich text editor classic experience
 
 Starting April 18, 2025, the classic rich text editor experience will be deprecated and no longer supported in Dynamics 365 apps. The new, modernized rich text editor is the default experience, and customers who use the classic experience will be upgraded automatically. Learn more in [Modern text editor enhancements](/power-apps/maker/model-driven-apps/rich-text-editor-control#modern-text-editor-enhancements).
-
-## Deprecation of support for personal Microsoft service accounts in Power Automate
-
-Starting on June 30, 2025, support for personal Microsoft service accounts will be deprecated in Power Automate. Users signing in with personal email accounts, such as Gmail.com or Outlook.com, will lose access to all features within the Power Automate portal and mobile app. Power Automate Desktop won't be affected and will continue to work with personal email accounts.
-
-### Why is this needed?
-
-The deprecation of personal accounts in Power Automate is aimed at enhancing security and aligning the platform with professional, enterprise-grade standards. Work or school accounts offer the robust authentication, enterprise-level security, and advanced functionality needed to ensure a seamless and secure experience for managing automation workflows in modern environments. This transition reflects a commitment to delivering a more reliable and focused tool for professional use.
-
-### Impact
-
-- Microsoft service account users will no longer be able to log into the Power Automate portal or mobile app.
-
-- Microsoft service account users will no longer be able to create, edit, or manage cloud flows on the portal or mobile app.
-
-- Access to any flows associated with Microsoft service accounts will be permanently removed, and these flows will be deleted.
-
-Power Automate Desktop users aren't affected by this change, as Power Automate Desktop uses distinct authentication and storage mechanisms.
-
-### Action required by you
-
-If you wish to continue using Power Automate, transitioning to the **Power Apps Developer Plan** is strongly recommended. This transition provides access to modern features and allows for seamless management of your workflows.
-
-Complete the following steps:
-
-1. **No work or school email?** Create a sandbox tenant to set up an eligible account. Follow the steps outlined in [Create a developer environment with the Power Apps Developer Plan](/power-platform/developer/create-developer-environment).
-
-1. **Already have a work or school email?** Sign up for the Power Apps Developer Plan using your existing account.
-
-1. **Transfer your flows** Log into your account, export your flows from your Microsoft service account, and reimport them into your new environment. Detailed guidance can be found in [https://learn.microsoft.com/en-us/power-automate/export-import-flow-non-solution](/power-automate/export-import-flow-non-solution).
-
-The Power Apps Developer Plan includes flow creation and integration with Microsoft Dataverse, making it an excellent option for automation enthusiasts and professionals. Learn more about the [Developer Plan](/power-platform/developer/plan).
 
 ## Deprecation of Cards for Power Apps
 

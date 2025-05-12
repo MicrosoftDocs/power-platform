@@ -2,7 +2,7 @@
 title: "Center of Excellence (CoE) overview  | MicrosoftDocs"
 description: Overview of the CoE Starter Kit
 author: manuelap-msft
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 02/08/2023
 ms.subservice: guidance-toolkit
 ms.author: mapichle

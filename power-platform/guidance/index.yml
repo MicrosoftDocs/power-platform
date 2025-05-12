@@ -11,9 +11,9 @@ metadata:
   ms.subservice: guidance
   ms.topic: hub-page
   ms.collection: collection
-  author: sericks007
-  ms.author: sericks
-  ms.date: 02/28/2025
+  author: jhaskett
+  ms.author: jhaskett-msft
+  ms.date: 05/12/2025
 
 # highlightedContent section (optional)
 # Maximum of 8 items
@@ -117,8 +117,7 @@ productDirectory:
         - url: /power-platform/guidance/adoption/show-and-tell
           text: Share success stories
         - url: /power-platform/guidance/adoption/nurture-best-practices
-          text: More...
-
+          text: Nurture and educate
 
 # additionalContent section (optional)
 additionalContent:

@@ -8,7 +8,7 @@ manager: pladhani
 ms.reviewer: sericks
 ms.custom: bap-template
 ms.date: 04/10/2023
-ms.topic: conceptual
+ms.topic: concept-article
 search.audienceType: 
   - admin
 search.app: 

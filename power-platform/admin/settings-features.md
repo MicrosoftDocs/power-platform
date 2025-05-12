@@ -3,9 +3,10 @@ title: Manage feature settings
 description: Learn how to manage feature settings to adjust how features appear and function in Power Platform.
 author: sericks007
 ms.component: pa-admin
-ms.topic: conceptual
-ms.date: 04/03/2025
+ms.topic: concept-article
+ms.date: 04/30/2025
 ms.subservice: admin
+ms.custom: NewPPAC
 ms.author: sericks
 ms.reviewer: sericks
 contributors:
@@ -27,14 +28,25 @@ ms.collection:
 
 Use feature settings to adjust how features appear and function in Power Apps [canvas apps](/power-apps/maker/canvas-apps/getting-started) and [model-driven apps](/powerapps/maker/model-driven-apps/model-driven-app-overview).
 
-These settings can be found in the Power Platform admin center by going to **Environments** > [select an environment] > **Settings** > **Product** > **Features**.
+These settings can be found in the Power Platform admin center for an environment.
 
-To update these settings, make sure you have the System Administrator or System Customizer security role or equivalent permissions.
+## [New admin center](#tab/new)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. On the **Environments** page, select an environment.
+1. In the command bar, select **Settings**.
+1. Expand **Product**, and then select **Features**. 
 
-**Check your security role**
+## [Classic admin center](#tab/classic)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Environments**.
+1. On the **Environments** page, select an environment.
+1. In the command bar, select **Settings**.
+1. Expand **Product**, and then select **Features**. 
+---
 
-- Follow the steps in [View your user profile](/powerapps/user/view-your-user-profile).
-- Don't have the correct permissions? Contact your system administrator.
+Make sure you have the System Administrator security role or equivalent permissions to update the settings. To check your security role, see [View your user profile](/powerapps/user/view-your-user-profile). If you don’t have the correct permissions, contact your system administrator.
 
 > [!NOTE]
 > These settings might not yet be available in your environment. The settings availability depends on the region's release plan.
@@ -79,7 +91,8 @@ To update these settings, make sure you have the System Administrator or System 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
 |Automatic suggestions | Allow AI to generate suggestions for fields in model-driven apps. Learn more in [Use Copilot's form fill assistance feature in model-driven apps](/power-apps/user/form-filling-assistance). | Default<br><br>**Note:** If the **Default** option is selected, the feature is turned on for users of Dynamics 365 model-driven apps, and the feature is kept off for users of Power Apps model-driven apps. |
-| Smart paste (Production Ready Preview) | Smart paste (preview) uses the text or image copied to your clipboard to suggest text for specific fields and provides inline suggestions in the form. Learn more in [Use smart paste](/power-apps/user/form-filling-assistance#use-smart-paste-preview).  | Default<br><br>**Note:** In the monthly channel, if the **Default** option is selected, the feature is turned on for users of Dynamics 365 model-driven apps, and the feature is kept off for users of Power Apps model-driven apps. |
+| Smart paste and file suggestions (production-ready preview) | Smart paste and file suggestions (production-ready preview) use the text or image copied to your clipboard or files you upload via the form fill assist toolbar to suggest text for specific fields. They also provide inline suggestions in the form. Learn more in [Use smart paste](/power-apps/user/form-filling-assistance#use-smart-paste-preview).  | Default<br><br>**Note:** In the monthly channel, if the **Default** option is selected, the feature is turned on for users of Dynamics 365 model-driven apps, and the feature is kept off for users of Power Apps model-driven apps. |
+| Form fill assist toolbar | The form fill assist toolbar lets users access form fill assistance features, view and manage suggestions in the form, and provide feedback.  | Default<br><br>**Note:** In the monthly channel, if the **Default** option is selected, the feature is turned on for users of all model-driven apps. The toolbar appears when at least one of the above AI form fill assistance features is enabled.<br><br> You can override this setting for individual apps using the form fill assist toolbar setting in app designer, documented in [Manage model-driven app settings in the app designer](/power-apps/maker/model-driven-apps/app-properties#features).  |
 
 Makers can learn more about form fill assistance in [Manage model-driven app settings in the app designer](/power-apps/maker/model-driven-apps/app-properties#features).
 

@@ -4,7 +4,7 @@ description: "This article describes a sample process for managing Microsoft Tea
 author: manuelap-msft
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 09/05/2023
 ms.subservice: guidance-toolkit
 ms.author: mapichle

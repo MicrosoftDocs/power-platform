@@ -3,7 +3,7 @@ title: Elevation control reference | Creator Kit
 description: Learn about the details and properties of the Elevation control in the Creator Kit.
 author: denise-msft
 ms.component: pa-maker
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 05/16/2022
 ms.subservice: guidance-toolkit
 ms.author: demora
