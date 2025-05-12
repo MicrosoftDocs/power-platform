@@ -1,12 +1,13 @@
 ---
-title: "Configure server-based authentication with SharePoint on-premises | MicrosoftDocs"
+title: Configure server-based authentication with SharePoint on-premises
 description: Configure server-based authentication with SharePoint on-premises
-author: Mattp123
+author: adrianorth 
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 06/08/2022
 ms.subservice: admin
-ms.author: matp
+ms.author: aorth
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
@@ -16,7 +17,7 @@ search.audienceType:
 
 <!-- legacy procedure -->
 
-Server-based [!INCLUDE[pn_ms_SharePoint_long](../includes/pn-ms-sharepoint-long.md)] integration for document management is used to connect customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), with [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises. When using server-based authentication, [Microsoft Entra Domain Services](/azure/active-directory-domain-services/overview) is used as the trust broker and users do not need to sign in to [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)].  
+Server-based [!INCLUDE[pn_ms_SharePoint_long](../includes/pn-ms-sharepoint-long.md)] integration for document management is used to connect customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation) with [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises. When using server-based authentication, [Microsoft Entra Domain Services](/azure/active-directory-domain-services/overview) is used as the trust broker and users don't need to sign in to [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)].  
   
 ## Permissions required
 
@@ -63,7 +64,7 @@ Before you configure customer engagement apps and [!INCLUDE[pn_SharePoint_short]
   
   - [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] website must be accessible via the Internet. A reverse proxy may also be required for [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] authentication. More information: [Configure a reverse proxy device for SharePoint Server 2013 hybrid](/SharePoint/hybrid/configure-a-reverse-proxy-device-for-sharepoint-server-hybrid)  
   
-  - [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] website must be configured to use SSL (HTTPS) on TCP port 443 (no custom ports are supported) and using a public root Certificate Authority issued certificate. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [SharePoint: About Secure Channel SSL certificates](/SharePoint/hybrid/plan-connectivity-from-office-365-to-sharepoint-server#AboutSecureChannel)  
+  - [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] website must be configured to use SSL (HTTPS) on TCP port 443 (no custom ports are supported) and use a public root, Certificate Authority-issued certificate. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [SharePoint: About Secure Channel SSL certificates](/SharePoint/hybrid/plan-connectivity-from-office-365-to-sharepoint-server#AboutSecureChannel).
   
   - A reliable user property to use for claims-based authentication mapping between [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] and customer engagement apps. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Selecting a claims mapping type](../admin/configure-server-based-authentication-sharepoint-on-premises.md#BKMK_selectclmmap)  
   
@@ -81,7 +82,7 @@ Before you configure customer engagement apps and [!INCLUDE[pn_SharePoint_short]
   
     For more information about these plans, see [Find the right solution for you](https://products.office.com/business/compare-office-365-for-business-plans) and [Compare SharePoint options](https://products.office.com/sharepoint/compare-sharepoint-plans)  
   
-- The following software features are required to run the [!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] cmdlets described in this topic.
+- The following software features are required to run the [!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] cmdlets described in this article.
 
   **Microsoft.Graph**
   
@@ -124,9 +125,9 @@ On the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-pr
     
 1. Connect to [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)].  
 
-   When you run the Connect-MgGraph command, you must provide a valid [!INCLUDE[pn_Windows_Live_ID](../includes/pn-windows-live-id.md)] that has Global admin membership for the [!INCLUDE[pn_sharepoint_online](../includes/pn-sharepoint-online.md)] license that is required.  
+   When you run the Connect-MgGraph command, you must provide a valid [!INCLUDE[pn_Windows_Live_ID](../includes/pn-windows-live-id.md)] that has global admin membership for the [!INCLUDE[pn_sharepoint_online](../includes/pn-sharepoint-online.md)] license that's required.  
   
-   For detailed information about each of the [!INCLUDE[pn_azure_active_directory](../includes/pn-azure-active-directory.md)][!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] commands listed here, see [Manage Microsoft Entra using Windows PowerShell](/previous-versions/azure/jj151815(v=azure.100))  
+   For detailed information about each of the [!INCLUDE[pn_azure_active_directory](../includes/pn-azure-active-directory.md)][!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] commands listed here, go to [Manage Microsoft Entra using Windows PowerShell](/previous-versions/azure/jj151815(v=azure.100)).
   
    ```powershell
    Connect-MgGraph -Scopes "Directory.ReadWrite.All", "Application.ReadWrite.All"  
@@ -134,7 +135,7 @@ On the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-pr
 
 1. Set the SharePoint host url.  
   
-   The value that you set for the variable *HostNameUrl* must be the complete host name url of the SharePoint site collection. The hostname must be derived from the site collection URL and is case sensitive. In this example, the site collection URL is <https://SharePoint.constoso.com/sites/salesteam>, so the hostname url is *https://SharePoint.contoso.com*.
+   The value that you set for the variable **HostNameUrl** must be the complete host name URL of the SharePoint site collection. The hostname must be derived from the site collection URL and is case sensitive. In this example, the site collection URL is `https://SharePoint.constoso.com/sites/salesteam`, so the hostname URL is `https://SharePoint.contoso.com`.
   
    ```powershell
    # Generate Service Principal Name
@@ -147,7 +148,7 @@ On the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-pr
    $servicePrincipalName = $baseUrl
    ```  
   
-1. Get the [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] object (tenant) id and [!INCLUDE[pn_SharePoint_Server_short](../includes/pn-sharepoint-server-short.md)] Service Principal Name (SPN).  
+1. Get the [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] object (tenant) ID and [!INCLUDE[pn_SharePoint_Server_short](../includes/pn-sharepoint-server-short.md)] Service Principal Name (SPN).  
   
    ```powershell
    # Retrieve SharePoint Online Service Principal
@@ -156,7 +157,7 @@ On the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-pr
        $SharePoint.ServicePrincipalNames + $servicePrincipalName
    ```
    
-1. Get the [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] object (tenant) id and [!INCLUDE[pn_SharePoint_Server_short](../includes/pn-sharepoint-server-short.md)] Service Principal Name (SPN).  
+1. Get the [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] object (tenant) ID and [!INCLUDE[pn_SharePoint_Server_short](../includes/pn-sharepoint-server-short.md)] Service Principal Name (SPN).  
   
    ```powershell
    Update-MgServicePrincipal `
@@ -164,7 +165,7 @@ On the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-pr
        -ServicePrincipalNames $UpdatedServicePrincipalNames
    ```  
   
-After these commands complete, do not close the SharePoint 2013 Management Shell, and continue to the next step.  
+After these commands complete, don't close the SharePoint 2013 Management Shell. Continue to the next step.  
   
 ### Update the SharePoint realm to match that of SharePoint Online  
  On the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises server, in the SharePoint 2013 Management Shell, run this [!INCLUDE[pn_PowerShell](../includes/pn-powershell.md)] command.  
@@ -172,7 +173,7 @@ After these commands complete, do not close the SharePoint 2013 Management Shell
  The following command requires [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] farm administrator membership and sets the authentication realm of the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises farm.  
   
 > [!CAUTION]
->  Running this command changes the authentication realm of the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises farm. For applications that use an existing security token service (STS), this command may cause unexpected behavior with other applications that use access tokens. More information: [Set-SPAuthenticationRealm](/powershell/module/sharepoint-server/Set-SPAuthenticationRealm).  
+>  Running this command changes the authentication realm of the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises farm. For applications that use an existing security token service (STS), this command may cause unexpected behavior with other applications that use access tokens. Learn more in [Set-SPAuthenticationRealm](/powershell/module/sharepoint-server/Set-SPAuthenticationRealm).  
   
 ```powershell
 Set-SPAuthenticationRealm -Realm $SPOContextId  
@@ -257,7 +258,7 @@ The following commands require [!INCLUDE[pn_SharePoint_short](../includes/pn-sha
 3. Set the claims-based authentication mapping type.  
   
    > [!IMPORTANT]
-   >  By default, the claims-based authentication mapping uses the user's [!INCLUDE[pn_Windows_Live_ID](../includes/pn-windows-live-id.md)] email address and the user's [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises **work email** address for mapping. When you use claims-based authentication mapping, the user's email addresses must match between the two systems. For more information, see [Selecting a claims-based authentication mapping type](../admin/configure-server-based-authentication-sharepoint-on-premises.md#BKMK_selectclmmap).  
+   >  By default, the claims-based authentication mapping uses the user's [!INCLUDE[pn_Windows_Live_ID](../includes/pn-windows-live-id.md)] email address and the user's [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises **work email** address for mapping. When you use claims-based authentication mapping, the user's email addresses must match between the two systems. Learn more in [Selecting a claims-based authentication mapping type](../admin/configure-server-based-authentication-sharepoint-on-premises.md#BKMK_selectclmmap).  
   
    ```powershell
    $map1 = New-SPClaimTypeMapping `
@@ -288,12 +289,12 @@ Follow these steps:
   
 ### Select the entities that you want to include in document management  
 
-By default, Account, Article, Lead, Product, Quote, and Sales Literature entities are included. You can add or remove the entities used for document management with [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] in **Document Management Settings**. Go to **Settings** > **Document Management**. More information:  [Enable document management on entities](enable-sharepoint-document-management-specific-entities.md)  
+By default, Account, Article, Lead, Product, Quote, and Sales Literature entities are included. You can add or remove the entities used for document management with [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] in **Document Management Settings**. Go to **Settings** > **Document Management**. Learn more in [Enable document management on entities](enable-sharepoint-document-management-specific-entities.md). 
   
 <a name="addOneDrive"></a>   
 
 ## Add OneDrive for Business integration  
- After you complete customer engagement apps and [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises server-based authentication configuration, you can also integrate [!INCLUDE[pn_onedrive_for_business](../includes/pn-onedrive-for-business.md)]. With customer engagement apps and [!INCLUDE[pn_onedrive_for_business](../includes/pn-onedrive-for-business.md)] integration, users can create and manage private documents using [!INCLUDE[pn_onedrive_for_business](../includes/pn-onedrive-for-business.md)]. Those documents can be accessed in once the system administrator enables [!INCLUDE[pn_onedrive_for_business](../includes/pn-onedrive-for-business.md)].  
+ After you complete customer engagement apps and [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises server-based authentication configuration, you can also integrate [!INCLUDE[pn_onedrive_for_business](../includes/pn-onedrive-for-business.md)]. With customer engagement apps and [!INCLUDE[pn_onedrive_for_business](../includes/pn-onedrive-for-business.md)] integration, users can create and manage private documents using [!INCLUDE[pn_onedrive_for_business](../includes/pn-onedrive-for-business.md)]. Those documents can be accessed after the system administrator enables [!INCLUDE[pn_onedrive_for_business](../includes/pn-onedrive-for-business.md)].  
   
 ### Enable OneDrive for Business  
  On the Windows Server where [!INCLUDE[pn_SharePoint_Server_short](../includes/pn-sharepoint-server-short.md)] on-premises is running, open the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] Management Shell and run the following commands:  
@@ -324,7 +325,7 @@ $wellKnownApp.Update()
 <a name="BKMK_selectclmmap"></a>   
 
 ## Selecting a claims-based authentication mapping type  
- By default, the claims-based authentication mapping uses the user's [!INCLUDE[pn_Windows_Live_ID](../includes/pn-windows-live-id.md)] email address and the user's [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises work email address for mapping. Whatever claims-based authentication type you use, the values, such as email addresses, **must match** between customer engagement apps and [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)]. [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] directory synchronization helps email addresses match. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Deploy Microsoft 365 Directory Synchronization in Microsoft Azure](/microsoft-365/enterprise/deploy-microsoft-365-directory-synchronization-dirsync-in-microsoft-azure). To use a different type of claims-based authentication mapping, see [Define custom claim mapping for SharePoint server-based integration]().
+ By default, the claims-based authentication mapping uses the user's [!INCLUDE[pn_Windows_Live_ID](../includes/pn-windows-live-id.md)] email address and the user's [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises work email address for mapping. Whatever claims-based authentication type you use, the values, such as email addresses, **must match** between customer engagement apps and [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)]. [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] directory synchronization helps email addresses match. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Deploy Microsoft 365 Directory Synchronization in Microsoft Azure](/microsoft-365/enterprise/deploy-microsoft-365-directory-synchronization-dirsync-in-microsoft-azure). To use a different type of claims-based authentication mapping, go to [Define custom claim mapping for SharePoint server-based integration]().
   
 > [!IMPORTANT]
 >  To enable the Work email property, [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises must have a User Profile Service Application configured and started. To enable a User Profile Service Application in [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)], see [Create, edit, or delete User Profile service applications in SharePoint Server 2013](/SharePoint/install/create-a-user-profile-service-application). To make changes to a user property, such as Work email, see [Edit a user profile property](/SharePoint/administration/add-edit-or-delete-custom-properties-for-a-user-profile). For more information about the User Profile Service Application, see [Overview of the User Profile service application in SharePoint Server 2013](/SharePoint/install/user-profile-service-overview).  
