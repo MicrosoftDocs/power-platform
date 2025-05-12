@@ -55,7 +55,7 @@ This function simulates a connector call to the `Office365Groups` connector when
 
 ## Benefits of Simulating Calls
 
-By making use of functions like [Preview.SimulateDataverse()](./powerfx-functions.md#previewsimulatedataverse) and [Preview.SimulateConnector()](./powerfx.md#previewsimulateconnector) you can:
+By making use of functions like [Preview.SimulateDataverse()](./powerfx-functions.md#previewsimulatedataverse) and [Preview.SimulateConnector()](./powerfx-functions.md#previewsimulateconnector) you can:
 
 - **Test Different Scenarios**: Address how the application responds with various scenarios, including edge cases and exceptions, without affecting real data.
 - **Happy Path Tests**: Perform simulations allow for testing the "happy path" where everything works as expected.

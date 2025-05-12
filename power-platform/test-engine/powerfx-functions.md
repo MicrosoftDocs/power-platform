@@ -213,11 +213,12 @@ Preview.PlaywrightAction("//input[@data-id='1']", "fill", "Hello");
 
 ### Preview.PlaywrightScript
 
-`Preview.PlaywrghtScript(Text)`
+`Preview.PlaywrightScript(Text)`
 
 Execute the C# script on the current page
 
-> [!NOTE] This function is only implemented for the Debug build from open source version of Test Engine not in `pac test run`
+> [!NOTE] 
+> This function is only implemented for the Debug build from open source version of Test Engine not in `pac test run`
 
 ### Preview.PlaywrightScript Example
 
