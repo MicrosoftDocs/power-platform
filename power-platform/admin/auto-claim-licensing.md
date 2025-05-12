@@ -4,7 +4,7 @@ description: Learn how to assign Power Apps licenses through auto-claim policies
 author: amiyapatr-zz
 ms.date: 02/21/2025
 ms.reviewer: sericks
-ms.topic: conceptual
+ms.topic: concept-article
 ms.subservice: admin
 ms.author: ampatra
 ms.custom: bap-template

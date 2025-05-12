@@ -3,7 +3,7 @@ title: "Step 1: Create a Microsoft Partner Center account | Microsoft Docs" # In
 description: "App builders must be members of Microsoft Partner Network (MPN) to publish apps on AppSource." # 115-145 characters including spaces. This abstract displays in the search result.
 ms.date: 04/03/2023
 ms.reviewer: pehecke
-ms.topic: article
+ms.topic: how-to
 author: angela21k
 ms.author: angelakim
 ms.subservice: developer

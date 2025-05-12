@@ -3,7 +3,7 @@ title: Compliance
 description: Learn how to manage compliance in the Power Platform admin center.
 ms.subservice: admin
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 03/21/2025
 ms.custom: NewPPAC
 author: matapg007

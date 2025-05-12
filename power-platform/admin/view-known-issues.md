@@ -3,7 +3,7 @@ title: View known issues
 description: Learn how to view known issues in Power Platform admin center.
 author: mamali-ms 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: troubleshooting-known-issue
 ms.date: 07/12/2024
 ms.subservice: admin
 ms.author: mamali 

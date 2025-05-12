@@ -3,7 +3,7 @@ title: "Why does the email message I sent have a Pending Send status? | Microsof
 description: Why does the email message I sent have a Pending Send status? 
 author: sericks007
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 09/11/2020
 ms.subservice: admin
 ms.author: sericks

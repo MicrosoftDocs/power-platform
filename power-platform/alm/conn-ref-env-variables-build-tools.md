@@ -7,7 +7,7 @@ ms.custom: ""
 ms.date: 08/20/2021
 ms.reviewer: angieandrews
 ms.subservice: alm
-ms.topic: conceptual
+ms.topic: concept-article
 search.audienceType: 
   - developer
 ---

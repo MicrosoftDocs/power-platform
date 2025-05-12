@@ -4,7 +4,7 @@ description: Microsoft provides business continuity and disaster recovery for Dy
 author: ImadYanni 
 ms.date: 04/30/2025
 ms.reviewer: sericks
-ms.topic: conceptual
+ms.topic: concept-article
 ms.subservice: admin
 ms.author: iyanni
 ms.custom: NewPPAC

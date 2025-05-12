@@ -2,7 +2,7 @@
 title: Administration mode  
 description: Administration mode
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 04/04/2025
 ms.subservice: admin
 ms.custom: NewPPAC

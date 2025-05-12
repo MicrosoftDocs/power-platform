@@ -3,7 +3,7 @@ title: "Block access by location with Microsoft Entra Conditional Access  | Micr
 description: Block access by location with Microsoft Entra Conditional Access
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 01/29/2021
 author: paulliew
 ms.subservice: admin

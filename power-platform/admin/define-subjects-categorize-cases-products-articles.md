@@ -4,7 +4,7 @@ description: "Learn to create and edit subjects to categorize service cases, kno
 author: shubhadaj
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 02/17/2021
 ms.subservice: admin
 ms.author: shujoshi

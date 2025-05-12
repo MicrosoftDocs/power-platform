@@ -2,7 +2,7 @@
 title: "Test connection to Exchange Server (on-premises) | MicrosoftDocs"
 description: Learn how to test your app connection to  Exchange Server (on-premises)
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 05/13/2021
 author: DanaMartens
 ms.subservice: admin

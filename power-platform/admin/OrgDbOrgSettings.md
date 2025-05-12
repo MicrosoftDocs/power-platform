@@ -3,7 +3,7 @@ title: "Default OrgDBOrgSettings for server-side synchronization  | MicrosoftDoc
 description: This topic covers the default options available in OrgDBOrgSettings related to server-side synchronization.
 author: DanaMartens
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 04/01/2024
 ms.subservice: admin
 ms.author: dmartens

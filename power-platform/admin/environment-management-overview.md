@@ -2,7 +2,7 @@
 title: Environment management capabilities
 description: Learn how environment management provides enhanced security, governance, and operations capabilities for environments that have opted in for the capabilities.
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 04/04/2025
 author: praveenmantha
 ms.custom: NewPPAC

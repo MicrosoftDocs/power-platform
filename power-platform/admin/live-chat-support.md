@@ -3,7 +3,7 @@ title: Use live chat with persistence for support requests
 description: "Use live chat with persistence for support requests in Power Platform admin center."
 ms.date: 11/25/2024
 ms.reviewer: w-azure
-ms.topic: conceptual
+ms.topic: how-to
 ms.custom: 
 ms.collection: 
 author: sericks

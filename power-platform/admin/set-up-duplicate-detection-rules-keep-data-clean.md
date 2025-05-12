@@ -3,7 +3,7 @@ title: Set up duplicate detection rules to keep your data clean
 description: Set up duplicate detection rules to keep your data clean.
 author: sericks007
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 04/24/2025
 ms.subservice: admin
 ms.custom: NewPPAC

@@ -5,7 +5,7 @@ author: marcelbf
 ms.author: marcelbf
 ms.date: 04/05/2022
 ms.reviewer: pehecke
-ms.topic: article
+ms.topic: concept-article
 search.audienceType: 
   - developer
 ---
