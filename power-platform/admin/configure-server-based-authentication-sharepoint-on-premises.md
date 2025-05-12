@@ -222,7 +222,7 @@ The following commands require [!INCLUDE[pn_SharePoint_short](../includes/pn-sha
   
 1. Register customer engagement apps with the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] site collection.  
   
-    Enter the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises site collection URL. In this example, *<https://sharepoint.contoso.com/sites/crm/>* is used.  
+    Enter the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises site collection URL. In this example, `<https://sharepoint.contoso.com/sites/crm/>` is used.  
   
    > [!IMPORTANT]
    >  To complete this command, the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] App Management Service Application Proxy must exist and be running. For more information about how to start and configure the service, go to the Configure the Subscription Settings and App Management service applications subtopic in [Configure an environment for apps for SharePoint (SharePoint 2013)](/SharePoint/administration/configure-an-environment-for-apps-for-sharepoint).  
@@ -235,7 +235,7 @@ The following commands require [!INCLUDE[pn_SharePoint_short](../includes/pn-sha
        -DisplayName "crmobo"
    ```  
   
-2. Grant customer engagement apps access to the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] site. Replace *<https://sharepoint.contoso.com/sites/crm/>* with your [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] site URL.  
+2. Grant customer engagement apps access to the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] site. Replace `<https://sharepoint.contoso.com/sites/crm/>` with your [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] site URL.  
   
    > [!NOTE]
    >  In the following example, the customer engagement app is granted permission to the specified [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] site collection by using the –Scope site collection parameter. The Scope parameter accepts the following options. Choose the scope that is most appropriate for your [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] configuration.  
