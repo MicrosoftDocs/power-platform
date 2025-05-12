@@ -1,6 +1,6 @@
 ---
 title: "Canvas Apps Git Integration (Preview)"
-description: "This article discusses how to use Git integration with canvas apps in Power Platform."
+description: "Learn how to use Git integration with canvas apps in Power Platform."
 author: marcelbf
 ms.subservice: alm
 ms.author: marcelbf
@@ -13,21 +13,21 @@ ms.contributors:
 
 # Canvas Apps Git Integration (Preview)
 
-Git integration in Power Platform enables makers and developers to manage canvas apps' source code effectively using version control. This feature is designed to help you review changes made by makers in Power Apps Studio without encountering noisy diffs. Additionally, it allows for minimal edits to be made directly in the repository, ensuring a streamlined and efficient workflow.
+Makers and developers use Git integration in Power Platform to manage canvas apps' source code effectively using version control. This feature helps you review changes made by makers in Power Apps Studio without encountering noisy diffs. Additionally, it allows for minimal edits to be made directly in the repository, ensuring a streamlined and efficient workflow.
 
 ## How to Commit Canvas Apps Using Git Integration
 
-The canvas app is available to commit when you publish your canvas app. If you change the app, changes aren't available to commit until you publish your app. This behavior ensures that the source code reflects the latest published version of your app, making it ready for use with Git integration.
+You can commit your canvas apps when you publish them. Changes aren't available to commit until you publish your app. This behavior ensures that the source code reflects the latest published version of your app, making it ready for use with Git integration.
 
 ### Steps to Commit Canvas Apps
 
 1. Open Power Apps Studio and make changes to your canvas app.
-2. Publish the app to make the changes available for Git integration.
-3. Navigate to your Git repository and commit the changes.
+1. Publish the app to make the changes available for Git integration.
+1. Navigate to your Git repository and commit the changes.
 
 ## Accessing Source Code Files
 
-Canvas apps' source code is stored in `.pa.yaml` files, which are human-readable and designed for use with source control. When you use Git integration, the source code for canvas apps is automatically available in the repository without requiring any conversion. The source code is stored within the `canvas` folder in the repository.
+Canvas apps' source code is stored in `.pa.yaml` files.  These files are human-readable and designed for use with source control. When you use Git integration, the source code for canvas apps is automatically available in the repository without requiring any conversion. The source code is stored within the `canvas` folder in the repository.
 
 ## File Structure for Canvas Apps
 
@@ -37,7 +37,7 @@ The extracted source code files are located in the `\Src` folder and include:
 - `[screen Name].pa.yaml`: One file for each screen, representing the screen.
 - `\Component`: A folder containing one file for each component, represented as `[component Name].pa.yaml`.
 
-Only `.pa.yaml` files within the `\Src` folder are intended for use with source control. Other files, such as JSON files, shouldn't be used as source code as they aren't stable between save and load cycles.
+Only use `.pa.yaml` files within the `\Src` folder with source control. Don't use other files, such as JSON files, as source code because they aren't stable between save and load cycles.
 
 ## Editing `.pa.yaml` Files
 
@@ -59,6 +59,8 @@ Editing files with these components prevent the app from running. If you change 
 
 ## Troubleshooting
 
+This section contains common issues and tips to help you be more successful using Git integration with canvas apps.
+
 ### Common Issues
 
 - **Merge Conflicts**: Resolve conflicts carefully to avoid corrupting the `.pa.yaml` files.
@@ -72,5 +74,5 @@ Editing files with these components prevent the app from running. If you change 
 ## Next Steps
 
 - [Overview of Dataverse Git Integration](./overview.md)
-- [View Source Code for Canvas Apps](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/power-apps-yaml)
+- [View Source Code for Canvas Apps](/power-apps/maker/canvas-apps/power-apps-yaml)
 
