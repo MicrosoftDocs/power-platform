@@ -5,9 +5,8 @@ author: marcelbf
 ms.subservice: alm
 ms.author: marcelbf
 ms.date: 05/11/2025
-ms.custom: 
-ms.topic:
-ms.reviewer: 
+ms.topic: how-to
+ms.reviewer: jdaly
 ms.collection: 
 ms.contributors:
 ---
@@ -18,7 +17,7 @@ Git integration in Power Platform enables makers and developers to manage canvas
 
 ## How to Commit Canvas Apps Using Git Integration
 
-The canvas app will be available to commit when you publish your canvas app. If you change the app, changes will not be available to commit until you publish your app. This ensures that the source code reflects the latest published version of your app, making it ready for use with Git integration.
+The canvas app is available to commit when you publish your canvas app. If you change the app, changes aren't available to commit until you publish your app. This behavior ensures that the source code reflects the latest published version of your app, making it ready for use with Git integration.
 
 ### Steps to Commit Canvas Apps
 
@@ -28,7 +27,7 @@ The canvas app will be available to commit when you publish your canvas app. If 
 
 ## Accessing Source Code Files
 
-Canvas apps' source code is stored in `.pa.yaml` files, which are human-readable and designed for use with source control. When using Git integration, the source code for canvas apps is automatically available in the repository without requiring any conversion. The source code is stored within the `canvas` folder in the repository.
+Canvas apps' source code is stored in `.pa.yaml` files, which are human-readable and designed for use with source control. When you use Git integration, the source code for canvas apps is automatically available in the repository without requiring any conversion. The source code is stored within the `canvas` folder in the repository.
 
 ## File Structure for Canvas Apps
 
@@ -38,11 +37,11 @@ The extracted source code files are located in the `\Src` folder and include:
 - `[screen Name].pa.yaml`: One file for each screen, representing the screen.
 - `\Component`: A folder containing one file for each component, represented as `[component Name].pa.yaml`.
 
-Only `.pa.yaml` files within the `\Src` folder are intended for use with source control. Other files, such as JSON files, should not be used as source code as they are not stable between save and load cycles.
+Only `.pa.yaml` files within the `\Src` folder are intended for use with source control. Other files, such as JSON files, shouldn't be used as source code as they aren't stable between save and load cycles.
 
 ## Editing `.pa.yaml` Files
 
-You can do minor edits directly in the repository. Any changes will be restored with the app when you pull changes to your environment. You must consider any code in your branch as a published app.
+You can do minor edits directly in the repository. Any changes are restored with the app when you pull changes to your environment. You must consider any code in your branch as a published app.
 
 ### Best Practices for Editing
 
@@ -51,12 +50,12 @@ You can do minor edits directly in the repository. Any changes will be restored 
 
 ## Known Limitations
 
-You cannot edit the `.pa.yaml` files directly in your repository if your app contains:
+You can't edit the `.pa.yaml` files directly in your repository if your app contains:
 
 - **Canvas Components**.
 - **Code Components** (also known as PCF).
 
-Editing files with these components will prevent the app from running. If you change these files by mistake, you can load the previous version of your canvas app in the Maker portal.
+Editing files with these components prevent the app from running. If you change these files by mistake, you can load the previous version of your canvas app in the Maker portal.
 
 ## Troubleshooting
 
