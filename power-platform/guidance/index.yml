@@ -171,7 +171,7 @@ additionalContent:
         # Card
         - title: Power Automate guidance
           links:
-            - text: Best practices for building cloud flows
+            - text: Power Automate coding guidelines
               url: /power-automate/guidance/coding-guidelines/
             - text: Plan a Power Automate project
               url: /power-automate/guidance/planning/introduction
@@ -214,7 +214,7 @@ additionalContent:
         - title: Power Platform and Copilot Studio Architecture Center
           links:
             - text: Welcome to the Architecture Center
-              url: /power-platform/architecture/architecture-center-overview.md
+              url: /power-platform/architecture/architecture-center-overview
             - text: Architecture key concepts
               url: /power-platform/architecture/key-concepts
             - text: Browse reference architectures
