@@ -4,7 +4,7 @@ description: Configure server-based authentication with SharePoint on-premises
 author: adrianorth 
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 06/08/2022
+ms.date: 05/12/2025
 ms.subservice: admin
 ms.author: aorth
 ms.reviewer: sericks
