@@ -56,13 +56,13 @@ Before you configure customer engagement apps and [!INCLUDE[pn_SharePoint_short]
   > [!IMPORTANT]
   >  SharePoint Foundation 2013 versions aren't supported for use with customer engagement apps document management.  
   
-- Install the April 2019 Cumulative Update (CU) for the SharePoint 2013 product family. This April 2019 CU includes all SharePoint 2013 fixes (including all SharePoint 2013 security fixes) released since SP1. The April 2019 CU does not include SP1. You need to install SP1 before installing the April 2019 CU. More information: [KB4464514 SharePoint Server 2013 April 2019 CU](https://support.microsoft.com/help/4464514/april-9-2019-cumulative-update-for-sharepoint-enterprise-server-2013-k) 
+- Install the April 2019 Cumulative Update (CU) for the SharePoint 2013 product family. This April 2019 CU includes all SharePoint 2013 fixes (including all SharePoint 2013 security fixes) released since SP1. The April 2019 CU does not include SP1. You need to install SP1 before installing the April 2019 CU. Learn more in [KB4464514 SharePoint Server 2013 April 2019 CU](https://support.microsoft.com/help/4464514/april-9-2019-cumulative-update-for-sharepoint-enterprise-server-2013-k).
 
 - [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] configuration  
   
   - If you use [!INCLUDE[pn_microsoft_sharepoint_2013](../includes/pn-microsoft-sharepoint-2013.md)], for each [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] farm, only one customer engagement app can be configured for server-based integration.  
   
-  - [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] website must be accessible via the Internet. A reverse proxy may also be required for [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] authentication. More information: [Configure a reverse proxy device for SharePoint Server 2013 hybrid](/SharePoint/hybrid/configure-a-reverse-proxy-device-for-sharepoint-server-hybrid)  
+  - [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] website must be accessible via the Internet. A reverse proxy may also be required for [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] authentication. Learn more in [Configure a reverse proxy device for SharePoint Server 2013 hybrid](/SharePoint/hybrid/configure-a-reverse-proxy-device-for-sharepoint-server-hybrid).
   
   - [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] website must be configured to use SSL (HTTPS) on TCP port 443 (no custom ports are supported) and use a public root, Certificate Authority-issued certificate. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [SharePoint: About Secure Channel SSL certificates](/SharePoint/hybrid/plan-connectivity-from-office-365-to-sharepoint-server#AboutSecureChannel).
   
@@ -80,7 +80,7 @@ Before you configure customer engagement apps and [!INCLUDE[pn_SharePoint_short]
   
   - An [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] subscription that includes [!INCLUDE[pn_sharepoint_online](../includes/pn-sharepoint-online.md)]. For example, if you have [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] E3, you have the appropriate licensing even if the license isn't assigned to a user.  
   
-    For more information about these plans, see [Find the right solution for you](https://products.office.com/business/compare-office-365-for-business-plans) and [Compare SharePoint options](https://products.office.com/sharepoint/compare-sharepoint-plans)  
+    For more information about these plans, go to [Find the right solution for you](https://products.office.com/business/compare-office-365-for-business-plans) and [Compare SharePoint options](https://products.office.com/sharepoint/compare-sharepoint-plans).
   
 - The following software features are required to run the [!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] cmdlets described in this article.
 
@@ -184,7 +184,7 @@ Set-SPAuthenticationRealm -Realm $SPOContextId
   
  The following commands require [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] farm administrator membership.  
   
- For detailed information about these [!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] commands, see [Use Windows PowerShell cmdlets to administer security in SharePoint 2013](/powershell/module/sharepoint-server/).  
+ For detailed information about these [!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] commands, go to [Use Windows PowerShell cmdlets to administer security in SharePoint 2013](/powershell/module/sharepoint-server/).  
   
 1. Enable the [!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] session to make changes to the security token service for the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] farm.  
   
@@ -225,7 +225,7 @@ The following commands require [!INCLUDE[pn_SharePoint_short](../includes/pn-sha
     Enter the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises site collection URL. In this example, *<https://sharepoint.contoso.com/sites/crm/>* is used.  
   
    > [!IMPORTANT]
-   >  To complete this command, the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] App Management Service Application Proxy must exist and be running. For more information about how to start and configure the service, see the Configure the Subscription Settings and App Management service applications subtopic in [Configure an environment for apps for SharePoint (SharePoint 2013)](/SharePoint/administration/configure-an-environment-for-apps-for-sharepoint).  
+   >  To complete this command, the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] App Management Service Application Proxy must exist and be running. For more information about how to start and configure the service, go to the Configure the Subscription Settings and App Management service applications subtopic in [Configure an environment for apps for SharePoint (SharePoint 2013)](/SharePoint/administration/configure-an-environment-for-apps-for-sharepoint).  
   
    ```powershell
    $site = Get-SPSite "https://sharepoint.contoso.com/sites/crm/"
@@ -271,7 +271,7 @@ The following commands require [!INCLUDE[pn_SharePoint_short](../includes/pn-sha
 
 Follow these steps:  
   
-1. Verify that you have the appropriate permission to run the wizard. More information: [Permissions required](#permissions-required)
+1. Verify that you have the appropriate permission to run the wizard. Learn more in [Permissions required](#permissions-required).
 
 1. [!INCLUDE[proc_settings_doc_management](../includes/proc-settings-doc-management.md)]  
   
@@ -285,7 +285,7 @@ Follow these steps:
   
 1. Click **Next**.  
   
-1. The validate sites section appears. If all sites are determined valid, click **Enable**. If one or more sites are determined invalid, see [Troubleshooting server-based authentication](../admin/troubleshooting-server-based-authentication.md).  
+1. The validate sites section appears. If all sites are determined valid, click **Enable**. If one or more sites are determined invalid, go to [Troubleshooting server-based authentication](../admin/troubleshooting-server-based-authentication.md).  
   
 ### Select the entities that you want to include in document management  
 
@@ -328,11 +328,11 @@ $wellKnownApp.Update()
  By default, the claims-based authentication mapping uses the user's [!INCLUDE[pn_Windows_Live_ID](../includes/pn-windows-live-id.md)] email address and the user's [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises work email address for mapping. Whatever claims-based authentication type you use, the values, such as email addresses, **must match** between customer engagement apps and [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)]. [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] directory synchronization helps email addresses match. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Deploy Microsoft 365 Directory Synchronization in Microsoft Azure](/microsoft-365/enterprise/deploy-microsoft-365-directory-synchronization-dirsync-in-microsoft-azure). To use a different type of claims-based authentication mapping, go to [Define custom claim mapping for SharePoint server-based integration]().
   
 > [!IMPORTANT]
->  To enable the Work email property, [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises must have a User Profile Service Application configured and started. To enable a User Profile Service Application in [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)], see [Create, edit, or delete User Profile service applications in SharePoint Server 2013](/SharePoint/install/create-a-user-profile-service-application). To make changes to a user property, such as Work email, see [Edit a user profile property](/SharePoint/administration/add-edit-or-delete-custom-properties-for-a-user-profile). For more information about the User Profile Service Application, see [Overview of the User Profile service application in SharePoint Server 2013](/SharePoint/install/user-profile-service-overview).  
+>  To enable the Work email property, [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises must have a User Profile Service Application configured and started. To enable a User Profile Service Application in [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)], go to [Create, edit, or delete User Profile service applications in SharePoint Server 2013](/SharePoint/install/create-a-user-profile-service-application). To make changes to a user property, such as Work email, go to [Edit a user profile property](/SharePoint/administration/add-edit-or-delete-custom-properties-for-a-user-profile). For more information about the User Profile Service Application, go to [Overview of the User Profile service application in SharePoint Server 2013](/SharePoint/install/user-profile-service-overview).  
   
-### See also  
- [Troubleshooting server-based authentication](../admin/troubleshooting-server-based-authentication.md)   
- [Set up SharePoint integration with customer engagement apps](../admin/set-up-sharepoint-integration.md)
+### Related content
+- [Troubleshooting server-based authentication](../admin/troubleshooting-server-based-authentication.md)   
+- [Set up SharePoint integration with customer engagement apps](../admin/set-up-sharepoint-integration.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
