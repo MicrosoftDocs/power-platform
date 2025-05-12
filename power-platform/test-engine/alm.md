@@ -17,7 +17,7 @@ Application Lifecycle Management (ALM) is a comprehensive approach to managing t
 
 ## Local Machine Execution
 
-You can use a local editor like [Visual Studio Code](https://code.visualstudio.com/) to edit the [yaml](./yaml.md) files to author the Test Engine tests. To run the tests, install these command line tools. 
+You can use a local editor like [Visual Studio Code](https://code.visualstudio.com/) to edit the [yaml](./yaml.md) files to author the Test Engine tests. To run the tests, install these command line tools.
 
 ### Command Line Tools
 
@@ -57,8 +57,8 @@ Using your Azure DevOps pipeline you could look to use these links and tasks to 
 - **[Dataverse Git integration setup (preview)](/power-platform/alm/git-integration/connecting-to-git)**: If using Azure DevOps Git integration to include the resources of the solution being tested
 - **[Use service principals & managed identities in Azure DevOps](/azure/devops/integrate/get-started/authentication/service-principal-managed-identity)**: For Azure Pipelines to connect to Dataverse.
 - **[Use dotnet v2 task](/azure/devops/pipelines/tasks/reference/use-dotnet-v2)**: To install 8.0 SDK if building Test Engine from source from **https://microsoft.github.io/PowerApps-TestEngine/**
-- **[PowerShell v2 task](/azure/devops/pipelines/tasks/reference/powershell-v2?view=azure-pipelines) or [Bash v3 task](/azure/devops/pipelines/tasks/reference/bash-v3)**: To execute `pac test run` to execute tests via the Power Platform CLI
+- **[PowerShell v2 task](/azure/devops/pipelines/tasks/reference/powershell-v2) or [Bash v3 task](/azure/devops/pipelines/tasks/reference/bash-v3)**: To execute `pac test run` to execute tests via the Power Platform CLI
 - **[Variable groups](/azure/devops/pipelines/library/variable-groups)**: To store values required for test automation
 - **[Secure files](/azure/devops/pipelines/library/secure-files)**: To host configuration files required for test run execution if using Azure Devops
 - **[Download secure file v1 task](/azure/devops/pipelines/tasks/reference/download-secure-file-v1)**: To download and secure files doe use in the Azure DevOps pipeline
-- **[Publish test results v2 task](/devops/pipelines/tasks/reference/publish-test-results-v2)**: To publish test results (*.trx) to Azure Pipelines.
+- **[Publish test results v2 task](/azure/devops/pipelines/tasks/reference/publish-test-results-v2)**: To publish test results (*.trx) to Azure Pipelines.

@@ -21,12 +21,12 @@ Initially, the Test Engine was limited to supporting only canvas applications. H
 ### Current Providers
 
 1. **Canvas Applications**: The Test Engine continues to support and extend the range of test scenarios for canvas applications.
-2. **Model-Driven Applications**: Test Engine can interact with model-driven applications, including:
+1. **Model-Driven Applications**: Test Engine can interact with model-driven applications, including:
    - **Entity Lists**: Lists of records from a specific entity in Dataverse.
    - **Entity Records**: Individual records within an entity.
    - **Custom Pages**: Custom-designed pages within model-driven apps.
-3. **Power Fx**: Allows Power Fx steps to be run independent of a specific application. For example, you could use this provider be used to perform integration tests with Dataverse.
-4. **Power Apps Portal**: Allows preview support for a limited number of automation tasks of `https://make.powerapps.com` to perform and verify common operations.
+1. **Power Fx**: Allows Power Fx steps to be run independent of a specific application. For example, you could use this provider be used to perform integration tests with Dataverse.
+1. **Power Apps Portal**: Allows preview support for a limited number of automation tasks of `https://make.powerapps.com` to perform and verify common operations.
 
 ### Provider Dataverse Integration
 
@@ -46,7 +46,7 @@ The WebApi used for Dataverse integration is obtained either from the host domai
 
 #### AI Integration
 
-Using the open source [Power Apps Test Engine](https://github.com/microsoft/PowerApps-TestEngine) to compiled in `Debug` mode to together with the testSettings will optionally enable [Preview.AIEvaluatePrompt()](./powerfx.md#previewaiexecuteprompt) function in your tests.
+Using the open source [Power Apps Test Engine](https://github.com/microsoft/PowerApps-TestEngine) to compiled in `Debug` mode to together with the testSettings will optionally enable [Preview.AIExecutePrompt()](powerfx-functions.md#previewaiexecuteprompt) function in your tests.
 
 ```yaml
 testSettings:

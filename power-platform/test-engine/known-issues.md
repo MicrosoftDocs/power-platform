@@ -18,9 +18,12 @@ contributors:
 
 [This article is prerelease documentation and is subject to change.]
 
+> [!NOTE]
+> Please raise any issues by filing [GitHub issues for Test Engine](https://github.com/microsoft/PowerApps-TestEngine/issues) to make Microsoft and the community aware of issues.
+
 ## Issue 1: Preview.Pause function doesn't properly open up the inspector for pac test run
 
 **Description:** The `Preview.Pause()` function fails to open the inspector during a `pac test run`.  
 **Workaround:** The Open Source version of the Test Engine can be used for pause functionality.
 
-> [!NOTE] Please raise any issues by filing [GitHub issues for Test Engine](https://github.com/microsoft/PowerApps-TestEngine/issues) to make Microsoft and the community aware of issues.
+

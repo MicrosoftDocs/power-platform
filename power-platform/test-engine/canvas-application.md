@@ -77,7 +77,8 @@ Use the following PowerShell script to store the username in your environment va
 $env:user1Email = "someone@example.com"
 ```
 
-> [!NOTE] The user password is no longer required in an environment variable. Review [authenication](./authentication.md) for supported options.
+> [!NOTE]
+> The user password is no longer required in an environment variable. Review [authenication](./authentication.md) for supported options.
 
 ### Run the test
 

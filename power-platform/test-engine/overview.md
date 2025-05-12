@@ -43,7 +43,7 @@ Power Apps Test Engine has the following benefits:
 The following are known limitations when working with Power Apps Test Engine.
 
 - Browser locale follows your browser's default settings
-- Not all controls are fully represented in the Power Fx. In these cases where full support isn't yet available the [Preview.PlaywrightAction()](./powerfx.md#previewplaywrightaction) function could be considered to interact with these controls via the Document Object Model (DOM)  
+- Not all controls are fully represented in the Power Fx. In these cases where full support isn't yet available the [Preview.PlaywrightAction() function](powerfx-functions.md#previewplaywrightaction) could be considered to interact with these controls via the Document Object Model (DOM)  
 
 ### Supported Browsers
 

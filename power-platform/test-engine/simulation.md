@@ -26,7 +26,7 @@ The `Preview.SimulateDataverse` and `Preview.SimulateConnector` functions provid
 
 ### Simulating a Dataverse Query
 
-The most common simulation scenario is to allow the test to define what data should be used when the application wants to query data from Dataverse. In this case, you can make use of the [Preview.SimulateDataverse()](./powerfx.md#previewsimulatedataverse) function. For example
+The most common simulation scenario is to allow the test to define what data should be used when the application wants to query data from Dataverse. In this case, you can make use of the [Preview.SimulateDataverse](powerfx-functions.md#previewsimulatedataverse) function. For example
 
 ```powerfx
 Preview.SimulateDataverse({
@@ -41,7 +41,7 @@ This function will simulate a Dataverse that queries the "Account" entity when t
 
 ### Simulating a Connector Call
 
-Another common scenario is the ability to define the data that should be returned from a request to a Power Platform Connector. In this case, you can make use of the  [Preview.SimulateConnector()](./powerfx.md#previewsimulateconnector) function. For example
+Another common scenario is the ability to define the data that should be returned from a request to a Power Platform Connector. In this case, you can make use of the  [Preview.SimulateConnector()](./powerfx-functions.md#previewsimulateconnector) function. For example
 
 ```powerfx
 Preview.SimulateConnector({
@@ -55,7 +55,7 @@ This function simulates a connector call to the `Office365Groups` connector when
 
 ## Benefits of Simulating Calls
 
-By making use of functions like [Preview.SimulateDataverse()](./powerfx.md#previewsimulatedataverse) and [Preview.SimulateConnector()](./powerfx.md#previewsimulateconnector) you can:
+By making use of functions like [Preview.SimulateDataverse()](./powerfx-functions.md#previewsimulatedataverse) and [Preview.SimulateConnector()](./powerfx.md#previewsimulateconnector) you can:
 
 - **Test Different Scenarios**: Address how the application responds with various scenarios, including edge cases and exceptions, without affecting real data.
 - **Happy Path Tests**: Perform simulations allow for testing the "happy path" where everything works as expected.
