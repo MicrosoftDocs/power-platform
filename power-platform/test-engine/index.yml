@@ -64,6 +64,8 @@ landingContent:
             url: ring-deployment-model.md
           - text: Test engine and Playwright
             url: playwright.md
+          - text: Version migration guide
+            url: migration-guide.md
 
   # Card
   - title: Power Fx

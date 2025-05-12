@@ -157,18 +157,13 @@ environmentVariables:
     - users:
         - personaName: "User1"
           emailKey: "user1Email"
-          passwordKey: "user1Password"
         - personaName: "User2"
           emailKey: "user2Email"
-          passwordKey: "user2Password"
 ```
 
 The `personaName` is used as part of the test definition to indicate what user to run the test as.
 
 ### Supported credentials storage mechanisms
-
-> [!NOTE]
-> Multi-factor authentication is not supported.
 
 #### Environment variables
 
@@ -182,21 +177,18 @@ $env:variableName = "variableValue"
 In the YAML, two properties need to be defined to indicate that this user's credentials are stored in environment variables:
 
 - `emailKey`: The environment variable used to store the user's email.
-- `passwordKey`: The environment variable used to store the user's password.
 
 Example YAML:
 
 ```yaml
     - personaName: "User1"
       emailKey: "user1Email"
-      passwordKey: "user1Password"
 ```
 
 Example PowerShell to set user credentials based on YAML:
 
 ```powershell
 $env:user1Email = "someone@example.com"
-$env:user1Password = "fake password"
 ```
 
 ### See also

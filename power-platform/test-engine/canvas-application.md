@@ -77,7 +77,7 @@ Use the following PowerShell script to store the username in your environment va
 $env:user1Email = "someone@example.com"
 ```
 
-> [!NOTE] the user password is no longer required in an environment variable. Review [authenication](./authentication.md) for supported options.
+> [!NOTE] The user password is no longer required in an environment variable. Review [authenication](./authentication.md) for supported options.
 
 ### Run the test
 
@@ -92,9 +92,9 @@ For example this could be
 ```powershell
 pac test run `
    -p "canvas" `
-   -i "testplan.te.yaml" `
+   -test "testplan.te.yaml" `
    -t aaaabbbb-0000-cccc-1111-dddd2222eeee `
-   -e 00aa00aa-bb11-cc22-dd33-44ee44ee44ee
+   -env 00aa00aa-bb11-cc22-dd33-44ee44ee44ee
 ```
 
 ### View the results

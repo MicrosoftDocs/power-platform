@@ -35,10 +35,10 @@ During the first run, the user is prompted to enter their credentials interactiv
 
 ### Example Command
 
-To run tests using browser-based authentication, you can use the following pac test run command:
+To run tests using browser-based authentication, you can use the following pac test run command `(uses -u "storagestate" by default)`:
 
 ```cmd
-pac test run -p "canvas" -i "testplan.te.yaml" -t aaaabbbb-0000-cccc-1111-dddd2222eeee -e 00aa00aa-bb11-cc22-dd33-44ee44ee44ee
+pac test run -p "canvas" -test "testplan.te.yaml" -t aaaabbbb-0000-cccc-1111-dddd2222eeee -env 00aa00aa-bb11-cc22-dd33-44ee44ee44ee
 ```
 
 ## Playwright
@@ -72,22 +72,22 @@ The goal of the sign-in process it works with organization defined sign-in proce
 
 ## Certificate-Based Authentication
 
-Certificate-based authentication is another method that can be used in the Power Apps Test Engine. This method requires X.509 certificates to be configured as an authentication method and optionally configured as a method of second-factor authentication. Certificates can be stored in the user's personal certificate store or in a secure location accessible by the pipeline. This method is useful for scenarios where no user interaction is required.
+Certificate-based authentication is another method that can be used in the Power Apps Test Engine. This method requires X.509 certificates to be configured as an authentication method and optionally configured as a method of second-factor authentication. Certificates can be stored in the user's personal certificate store or in a secure location accessible by the pipeline. 
 
 ### Example Command
 
-To run tests using certificate-based authentication, you can use the following pac test run command:
+To run tests using certificate-based authentication `(uses -u "dataverse")`, you can use the following pac test run command:
 
 ```powershell
 pac test run -p "canvas" `
    -u "dataverse" `
    -a "certstore" `
-   -i "testplan.te.yaml" `
+   -test "testplan.te.yaml" `
    -t aaaabbbb-0000-cccc-1111-dddd2222eeee `
-   -e 00aa00aa-bb11-cc22-dd33-44ee44ee44ee
+   -env 00aa00aa-bb11-cc22-dd33-44ee44ee44ee
 ```
   
-  > [!NOTE] You can select `certstore` or `certenv` for the authentication provider. `certstore` uses environment variable `$env:DataProtectionCertificateName` with the Certificate name in local windows store. `certenv` uses base 64 encoded certificate in the variable found in `$env:DataProtectionCertificateName`
+  > [!NOTE] You can select `certstore` or `certenv` for the authentication provider "-a". `certstore` uses environment variable `$env:DataProtectionCertificateName` with the Certificate name in local windows store. `certenv` uses base 64 encoded certificate in the variable found in `$env:DataProtectionCertificateName`, for example DataProtectionCertificateName="SampleCertificateVariableName" and  SampleCertificateVariableName="*Encoded Certificate Value*". 
 
 ### Technical Overview
 

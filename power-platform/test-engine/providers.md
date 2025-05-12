@@ -66,9 +66,9 @@ To run tests for each provider, you can use the following [pac test run](../deve
 ```powershell
 pac test run `
    -p "canvas" `
-   -i "testplan.te.yaml" `
+   -test "testplan.te.yaml" `
    -t aaaabbbb-0000-cccc-1111-dddd2222eeee `
-   -e 00aa00aa-bb11-cc22-dd33-44ee44ee44ee
+   -env 00aa00aa-bb11-cc22-dd33-44ee44ee44ee
 ```
 
 #### Model Driven Applications
@@ -76,9 +76,9 @@ pac test run `
 ```powershell
 pac test run `
    -p "mda" `
-   -i "testplan.te.yaml" `
+   -test "testplan.te.yaml" `
    -t aaaabbbb-0000-cccc-1111-dddd2222eeee `
-   -e 00aa00aa-bb11-cc22-dd33-44ee44ee44ee `
+   -env 00aa00aa-bb11-cc22-dd33-44ee44ee44ee `
    -d "https://contoso.crm.dynamics.com/main.aspx?appid=00001111-aaaa-2222-bbbb-3333cccc4444&pagetype=custom&name=dev_home_c8017"
 ```
 
@@ -87,9 +87,9 @@ pac test run `
 ```cmd
 pac test run `
    -p "powerfx" `
-   -i "testplan.te.yaml" `
+   -test "testplan.te.yaml" `
    -t aaaabbbb-0000-cccc-1111-dddd2222eeee `
-   -e 00aa00aa-bb11-cc22-dd33-44ee44ee44ee `
+   -env 00aa00aa-bb11-cc22-dd33-44ee44ee44ee `
    -d "https://contoso.crm.dynamics.com"
 ```
 
