@@ -40,7 +40,7 @@ The following memberships and privileges are required to enable SharePoint docum
  Follow the steps in the order provided to set up customer engagement apps with [!INCLUDE[pn_sharepoint_2013](../includes/pn-sharepoint-2013.md)] on-premises.  
   
 > [!IMPORTANT]
-> The steps described here must be completed in the order provided. If a task is not completed, such as a [!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] command that returns an error message, the issue must be resolved before you continue to the next command, task, or step.  
+> The steps described here must be completed in the order provided. If a task isn't completed, such as a [!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] command that returns an error message, the issue must be resolved before you continue to the next command, task, or step.  
   
   
 ### Verify prerequisites
@@ -56,7 +56,7 @@ Before you configure customer engagement apps and [!INCLUDE[pn_SharePoint_short]
   > [!IMPORTANT]
   >  SharePoint Foundation 2013 versions aren't supported for use with customer engagement apps document management.  
   
-- Install the April 2019 Cumulative Update (CU) for the SharePoint 2013 product family. This April 2019 CU includes all SharePoint 2013 fixes (including all SharePoint 2013 security fixes) released since SP1. The April 2019 CU does not include SP1. You need to install SP1 before installing the April 2019 CU. Learn more in [KB4464514 SharePoint Server 2013 April 2019 CU](https://support.microsoft.com/help/4464514/april-9-2019-cumulative-update-for-sharepoint-enterprise-server-2013-k).
+- Install the April 2019 Cumulative Update (CU) for the SharePoint 2013 product family. This April 2019 CU includes all SharePoint 2013 fixes (including all SharePoint 2013 security fixes) released since SP1. The April 2019 CU doesn't include SP1. You need to install SP1 before installing the April 2019 CU. Learn more in [KB4464514 SharePoint Server 2013 April 2019 CU](https://support.microsoft.com/help/4464514/april-9-2019-cumulative-update-for-sharepoint-enterprise-server-2013-k).
 
 - [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] configuration: 
   
