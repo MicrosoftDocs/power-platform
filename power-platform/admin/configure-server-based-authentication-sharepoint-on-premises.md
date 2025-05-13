@@ -51,12 +51,9 @@ Before you configure customer engagement apps and [!INCLUDE[pn_SharePoint_short]
 
 #### SharePoint prerequisites  
   
-- SharePoint 2016 (on-premises) with Service Pack 1 (SP1) or later version.  
-  
-  > [!IMPORTANT]
-  >  SharePoint Foundation 2013 versions aren't supported for use with customer engagement apps document management.  
-  
-- Install the April 2019 Cumulative Update (CU) for the SharePoint 2016 product family. This April 2019 CU includes all SharePoint 2016 fixes (including all SharePoint 2016 security fixes) released since SP1. The April 2019 CU doesn't include SP1. You need to install SP1 before installing the April 2019 CU. Learn more in [KB4464514 SharePoint Server 2013 April 2019 CU](https://support.microsoft.com/help/4464514/april-9-2019-cumulative-update-for-sharepoint-enterprise-server-2013-k).
+- SharePoint 2016 (on-premises) with Service Pack 1 (SP1) or later version.
+
+- Install the May 2025 Cumulative Update (CU) for the SharePoint 2016 product family. This May 2025 CU includes all SharePoint 2016 fixes (including all SharePoint 2016 security fixes) released since SP1. The May 2025 CU doesn't include SP1. You need to install SP1 before installing the May 2025 CU.
 
 - [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] configuration: 
   
