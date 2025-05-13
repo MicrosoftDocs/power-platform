@@ -215,7 +215,7 @@ We encourage customers to use pipelines for core deployment functionality, and w
 
 ## Next steps
 
-[Set up pipelines](set-up-pipelines.md)
+[Set up pipelines](set-up-pipelines.md)  
 [Extend pipelines](extend-pipelines.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
@@ -223,4 +223,5 @@ We encourage customers to use pipelines for core deployment functionality, and w
 
 ## Related information
 
-[Deploy solutions using Pipeline in Power Apps (video)](https://youtu.be/iziCkYl8Shc?feature=shared)
+- [Deploy solutions using Pipeline in Power Apps (video)](https://youtu.be/iziCkYl8Shc?feature=shared)
+- [Simplify Microsoft Power Platform deployments by using pipelines - Learning Path](/training/paths/simplify-power-platform-deployments)
