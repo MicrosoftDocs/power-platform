@@ -11,7 +11,7 @@ ms.collection:
 ms.contributors:
 ---
 
-# Source control canvas apps (review)
+# Source control canvas apps (preview)
 
 [!INCLUDE [cc-preview-features-expect-changes](../../includes/cc-preview-features-expect-changes.md)]
 
