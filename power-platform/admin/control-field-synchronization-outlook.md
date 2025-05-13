@@ -3,7 +3,7 @@ title: "Control field synchronization with Outlook  | MicrosoftDocs"
 description: Control field synchronization with Outlook
 author: sericks007
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 02/17/2021
 ms.subservice: admin
 ms.author: sericks

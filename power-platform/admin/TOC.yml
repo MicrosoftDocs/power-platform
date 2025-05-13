@@ -6,6 +6,8 @@
           href: index.yml
         - name: Overview of the Power Platform admin center
           href: admin-documentation.md
+        - name: Welcome to the new Power Platform admin center (preview)
+          href: new-admin-center.md
         - name: Environment management
           items:
             - name: Environment management capabilities
@@ -26,62 +28,38 @@
               href: wp-management-monitoring.md
             - name: Try Power Platform apps for free
               href: try-powerapps-dynamics-365.md
-            - name: Move between your apps
-              href: quickly-navigate-office-365-app-launcher.md
             - name: Sign in to your apps
               href: sign-in-office-365-apps.md
-            - name: Manage subscription with Microsoft 365 admin center
-              href: use-office-365-admin-center-manage-subscription.md
-            - name: How do I check my online service health?
-              href: check-online-service-health.md
-            - name: Enabling preview features
+            - name: Move between your apps
+              href: quickly-navigate-office-365-app-launcher.md
+            - name: Enable preview features
               href: what-are-preview-features-how-do-i-enable-them.md
-            - name: Use the new Power Platform admin center (preview)
-              href: new-admin-center.md
-            - name: Requirements
+            - name: Subscriptions, service health, and more
               items:
-                - name: URLs and IP address ranges
-                  href: online-requirements.md
-                - name: End of support for Internet Explorer
-                  href: support-end-internet-explorer.md
-                - name: Plan for deployment and administration
-                  href: plan-for-deployment-and-administration.md
-                - name: Server cipher suites and TLS requirements
-                  href: server-cipher-tls-requirements.md
-            - name: Unified Interface
-              items:
-                - name: About Unified Interface
-                  href: about-unified-interface.md
-                - name: Enable Unified Interface Only
-                  href: enable-unified-interface-only.md
-                - name: Update apps to Unified Interface
-                  href: update-apps-to-unified-interface.md
-                - name: Enable the hybrid experience
-                  href: enable-hybrid-experience.md
-        - name: Support
-          items:
-            - name: Get Help + Support
-              href: get-help-support.md
-            - name: Support overview
-              href: support-overview.md
-            - name: Use live chat with persistence
-              href: live-chat-support.md
-            - name: View known issues
-              href: view-known-issues.md
-            - name: View service health
-              href: view-service-health.md
-            - name: Support environments and the consent process
-              href: support-environment.md
-            - name: Determine your organization ID and name
-              href: determine-org-id-name.md
-            - name: Manage email notifications to admins
-              href: manage-email-notifications.md
-            - name: Policies and communications
-              href: policies-communications.md
-            - name: Manage maintenance window
-              href: manage-maintenance-window.md
-            - name: Notifications explained
-              href: notifications-explained.md
+                - name: How do I check my online service health?
+                  href: check-online-service-health.md
+                - name: Manage subscription with Microsoft 365 admin center
+                  href: use-office-365-admin-center-manage-subscription.md
+                - name: Requirements
+                  items:
+                    - name: URLs and IP address ranges
+                      href: online-requirements.md
+                    - name: End of support for Internet Explorer
+                      href: support-end-internet-explorer.md
+                    - name: Plan for deployment and administration
+                      href: plan-for-deployment-and-administration.md
+                    - name: Server cipher suites and TLS requirements
+                      href: server-cipher-tls-requirements.md
+                - name: Unified Interface
+                  items:
+                    - name: About Unified Interface
+                      href: about-unified-interface.md
+                    - name: Enable Unified Interface Only
+                      href: enable-unified-interface-only.md
+                    - name: Update apps to Unified Interface
+                      href: update-apps-to-unified-interface.md
+                    - name: Enable the hybrid experience
+                      href: enable-hybrid-experience.md
         - name: Licensing
           items:
             - name: Overview
@@ -148,6 +126,8 @@
               href: api-request-limits-allocations.md
             - name: Power Platform licensing FAQs
               href: powerapps-flow-licensing-faq.md
+        - name: Deploy (preview)
+          href: ../alm/admin-deployment-hub.md
         - name: Environments
           items:
             - name: Administer environments
@@ -229,12 +209,12 @@
                 - name: Use Power Platform Advisor
                   href: power-platform-advisor.md
             - name: Environment updates
-              items: 
+              items:
                 - name: Opt in to early access updates
                   href: opt-in-early-access-updates.md
                 - name: General availability deployment
                   href: general-availability-deployment.md
-                - name: "Manage maintenance window (preview)"
+                - name: Manage maintenance window (preview)
                   href: manage-maintenance-window.md
             - name: Early release cycle environments
               href: early-release.md
@@ -260,7 +240,7 @@
                       href: settings-collaboration.md
                     - name: Features
                       href: settings-features.md
-                    - name: Enable languages
+                    - name: Regional and language options
                       href: enable-languages.md
                     - name: Manage privacy and security settings
                       href: settings-privacy-security.md
@@ -290,7 +270,7 @@
                       href: add-resources-site.md
                 - name: Users + permissions
                   items:
-                    - name: Create or edit business units 
+                    - name: Create or edit business units
                       href: create-edit-business-units.md
                     - name: Update record owner
                       href: update-record-owner.md
@@ -478,40 +458,46 @@
                   href: wp-task-automation-flow.md
         - name: Monitor
           items:
-            - name: Monitor page (preview)
+            - name: Overview (preview)
               href: monitoring/monitoring-overview.md
-            - name: View logs (preview)
+            - name: View event logs and error logs (preview)
               href: monitoring/logs.md
+            - name: Metrics and recommendations
+              items:
+                - name: For Power Apps (preview)
+                  href: monitoring/monitor-power-apps.md
+                - name: For Power Automate (preview)
+                  href: monitoring/monitor-power-automate.md
+        - name: Manage Copilot
+          href: copilot/copilot-hub.md
         - name: Security
           items:
             - name: Overview of Power Platform security
               href: security/overview.md
             - name: Security page
               items:
-              - name: Overview
-                href: security/security-overview.md
-              - name: Data protection and privacy
-                href: security/data-protection-privacy.md
-              - name: Identity and access
-                items:
-                - name: Identity and access management
-                  href: security/identity-access-management.md
-                - name: App access control
-                  items: 
-                  - name: Control which apps are allowed in your environment (preview)
-                    href: control-app-access-environment.md
-                  - name: Commonly used Microsoft first-party services and portal apps (preview)
-                    href: apps-to-allow.md
-              - name: Compliance 
-                href: security/compliance.md
-            - name: Manage Copilot
-              href: copilot/copilot-hub.md
+                - name: Overview
+                  href: security/security-overview.md
+                - name: Data protection and privacy
+                  href: security/data-protection-privacy.md
+                - name: Identity and access
+                  items:
+                    - name: Identity and access management
+                      href: security/identity-access-management.md
+                    - name: App access control
+                      items:
+                        - name: Control which apps are allowed in your environment (preview)
+                          href: control-app-access-environment.md
+                        - name: Commonly used Microsoft first-party services and portal apps (preview)
+                          href: apps-to-allow.md
+                - name: Compliance
+                  href: security/compliance.md
             - name: Power Platform managed identity
               items:
-              - name: Managed identity overview (preview)
-                href: managed-identity-overview.md
-              - name: Set up managed identity (preview)
-                href: set-up-managed-identity.md
+                - name: Managed identity overview (preview)
+                  href: managed-identity-overview.md
+                - name: Set up managed identity (preview)
+                  href: set-up-managed-identity.md
             - name: Authenticating to Power Platform services
               href: security/authenticate-services.md
             - name: Data storage and governance
@@ -555,9 +541,7 @@
                     - name: Configure content security policy
                       href: content-security-policy.md
                 - name: Advanced connector policies (preview)
-                  items: 
-                    - name: Overview
-                      href: advanced-connector-policies.md
+                  href: advanced-connector-policies.md
                 - name: Data policies
                   items:
                     - name: Overview
@@ -566,30 +550,30 @@
                       href: dlp-known-issues.md
                     - name: Policies
                       items:
-                      - name: Create and manage policies
-                        href: prevent-data-loss.md
-                      - name: Policy scopes
-                        href: dlp-policy-scope.md
-                      - name: Effect of multiple policies
-                        href: dlp-combined-effect-multiple-policies.md
-                      - name: Disable new connectors
-                        href: connector-off-by-default.md
-                      - name: Design-time versus runtime
-                        href: dlp-impact-policies-apps-flows.md
-                      - name: Exempt apps and flows
-                        href: dlp-resource-exemption.md
+                        - name: Create and manage policies
+                          href: prevent-data-loss.md
+                        - name: Policy scopes
+                          href: dlp-policy-scope.md
+                        - name: Effect of multiple policies
+                          href: dlp-combined-effect-multiple-policies.md
+                        - name: Disable new connectors
+                          href: connector-off-by-default.md
+                        - name: Design-time versus runtime
+                          href: dlp-impact-policies-apps-flows.md
+                        - name: Exempt apps and flows
+                          href: dlp-resource-exemption.md
                     - name: Certified connectors
                       items:
-                      - name: Connector classification
-                        href: dlp-connector-classification.md
-                      - name: Connector action control
-                        href: connector-action-control.md
-                      - name: Connector endpoint filtering (preview)
-                        href: connector-endpoint-filtering.md
+                        - name: Connector classification
+                          href: dlp-connector-classification.md
+                        - name: Connector action control
+                          href: connector-action-control.md
+                        - name: Connector endpoint filtering (preview)
+                          href: connector-endpoint-filtering.md
                     - name: Custom connectors
                       items:
-                      - name: Connector classification
-                        href: dlp-custom-connector-parity.md
+                        - name: Connector classification
+                          href: dlp-custom-connector-parity.md
                     - name: DLP for Power Automate
                       items:
                         - name: Overview
@@ -658,12 +642,12 @@
                   href: manage-application-users.md
                 - name: Delete users
                   items:
-                  - name: Delete users from an environment
-                    href: delete-users.md
-                  - name: Delete stub users from an environment
-                    href: delete-stub-users.md
-                  - name: Delete unlicensed or removed Microsoft Entra group members
-                    href: delete-unlicensed-or-removed-microsoft-entra-group-users.md
+                    - name: Delete users from an environment
+                      href: delete-users.md
+                    - name: Delete stub users from an environment
+                      href: delete-stub-users.md
+                    - name: Delete unlicensed or removed Microsoft Entra group members
+                      href: delete-unlicensed-or-removed-microsoft-entra-group-users.md
                 - name: Reset a user's password
                   href: reset-users-password.md
                 - name: Assign service admin role to users
@@ -693,9 +677,9 @@
             - name: Virtual Network support
               items:
                 - name: Virtual Network support overview
-                  href: vnet-support-overview.md                
+                  href: vnet-support-overview.md
                 - name: Virtual Network support white paper
-                  href: virtual-network-support-whitepaper.md   
+                  href: virtual-network-support-whitepaper.md
                 - name: Set up Virtual Network support
                   href: vnet-support-setup-configure.md
             - name: Security FAQs
@@ -722,11 +706,11 @@
                   href: power-automate-analytics-reports.md
             - name: Data export (preview)
               items:
-                - name: "Export Power Apps inventory and usage data"
+                - name: Export Power Apps inventory and usage data
                   href: self-service-analytics.md
-                - name: "Self-service analytics schema definition"
+                - name: Self-service analytics schema definition
                   href: self-service-analytics-schema-definition.md
-                - name: "Create custom dashboards using Power Apps inventory and usage data"
+                - name: Create custom dashboards using Power Apps inventory and usage data
                   href: build-custom-reports.md
             - name: Analyze telemetry with Application Insights
               items:
@@ -752,7 +736,7 @@
               href: add-storage.md
             - name: Dataverse capacity-based storage overview
               href: whats-new-storage.md
-            - name: Dataverse capacity-based storage details 
+            - name: Dataverse capacity-based storage details
               href: capacity-storage.md
             - name: Database Tables
               items:
@@ -834,9 +818,9 @@
               href: programmability-permission-reference.md
             - name: Tutorials
               items:
-                - name: "Create a daily capacity report"
+                - name: Create a daily capacity report
                   href: programmability-tutorial-create-daily-capacity-report.md
-                - name: "Install an application to a target environment"
+                - name: Install an application to a target environment
                   href: programmability-tutorial-install-application-environment.md
                 - name: "Tutorial: Allocate add-ons to environments"
                   href: programmability-tutorial-allocate-capacity-addons.md
@@ -860,10 +844,8 @@
                       href: powerapps-powershell.md
                     - name: Automation of tasks with PowerShell
                       href: wp-task-automation-powershell.md
-            - name: Connectors
-              items:
-                - name: Connector reference
-                  href: /connectors/powerplatformadminv2/
+            - name: Connectors reference
+              href: /connectors/powerplatformadminv2/
             - name: Power Platform API
               items:
                 - name: Getting started
@@ -880,9 +862,9 @@
                       items:
                         - name: Environments
                           items:
-                            - name: "List environments"
+                            - name: List environments
                               href: list-environments.md
-                            - name: "Create a Dataverse application user"
+                            - name: Create a Dataverse application user
                               href: create-dataverseapplicationuser.md
                         - name: Tenant Settings
                           items:
@@ -894,9 +876,9 @@
               href: data-integrator.md
         - name: Data sources and gateway clusters
           items:
-            - name: "About on-premises gateway"
+            - name: About on-premises gateway
               href: wp-onpremises-gateway.md
-            - name: "On-premises data gateway management"
+            - name: On-premises data gateway management
               href: onpremises-data-gateway-management.md
         - name: Manage data
           items:
@@ -952,12 +934,6 @@
               href: deploy-packages-using-package-deployer-windows-powershell.md
         - name: Work with templates
           items:
-            - name: Article templates
-              href: create-templates-articles.md
-            - name: Email templates
-              href: create-templates-email.md
-            - name: Mail merge templates
-              href: work-mail-merge-templates.md
             - name: Excel templates
               href: analyze-your-data-with-excel-templates.md
             - name: Word templates
@@ -1073,7 +1049,6 @@
               items:
                 - name: Manage your documents using SharePoint
                   href: manage-documents-using-sharepoint.md
-                  items:
                 - name: SharePoint document management software requirements
                   href: sharepoint-document-management-software-requirements.md
                 - name: Setup
@@ -1153,7 +1128,7 @@
               href: unified-experience/tutorial-perform-transactionless-copy.md
             - name: "Tutorial: Back up and restore unified environment"
               href: unified-experience/tutorial-backup-restore-unified-environment.md
-            - name: "Admin trials for finance and operations apps"
+            - name: Admin trials for finance and operations apps
               href: unified-experience/admin-trials.md
         - name: Performance tuning and optimization
           items:
@@ -1214,14 +1189,37 @@
                   href: powerapps-us-government.md
             - name: Geo to geo migrations
               href: geo-to-geo-migrations.md
-        - name: Partners
+        - name: For partners
           items:
             - name: Add a Partner of Record
               href: add-partner-record-subscription.md
-            - name: "For partners: get credit when customers subscribe"
+            - name: "For partners: Get credit when customers subscribe"
               href: partners-credit-when-customers-subscribe-dynamics-365.md
             - name: "For partners: Delegated Administrator"
               href: for-partners-delegated-administrator.md
+        - name: Support
+          items:
+            - name: Get Help + Support
+              href: get-help-support.md
+            - name: Support overview
+              href: support-overview.md
+            - name: Use live chat with persistence
+              href: live-chat-support.md
+            - name: View known issues
+              href: view-known-issues.md
+            - name: View service health
+              href: view-service-health.md
+            - name: Support environments and the consent process
+              href: support-environment.md
+            - name: Determine your organization ID and name
+              href: determine-org-id-name.md
+            - name: Manage email notifications to admins
+              href: manage-email-notifications.md
+            - name: Policies and communications 
+              displayName: update, maintenance
+              href: policies-communications.md
+            - name: Notifications explained
+              href: notifications-explained.md
     - name: Administer customer engagement apps in Dynamics 365
       items:
         - name: Overview

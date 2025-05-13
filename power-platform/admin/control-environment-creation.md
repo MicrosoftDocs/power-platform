@@ -3,7 +3,7 @@ title: Control environment creation and management | Microsoft Docs
 description: Control who can create and manage environments in the Power Platform admin center.
 author: Mattp123
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 04/17/2024
 ms.subservice: admin
 ms.author: matp

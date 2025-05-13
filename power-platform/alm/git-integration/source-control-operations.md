@@ -3,10 +3,10 @@ title: "Source control operations"
 description: "This article discusses the integration of Dataverse with Git, focusing on viewing changes, committing and pulling changes."
 author: caburk
 ms.subservice: alm
-ms.author: matp
+ms.author: caburk
 ms.date: 04/21/2025
 ms.custom: 
-ms.topic: article
+ms.topic: how-to
 ms.reviewer: tapanm
 ms.collection: 
 ms.contributors:
@@ -14,16 +14,16 @@ ms.contributors:
 ---
 # Source control repository operations
 
-After connecting to Git, your changes are tracked in Dataverse. You can view a list unmanaged changes on the **Source control** page within your unmanaged **Solution**. Objects that are part of the managed layer aren't included in the commit.
+After you connect to Git, your changes are tracked in Microsoft Dataverse. You can view a list of unmanaged changes on the **Source control** page within your unmanaged **Solution**. Objects that are part of the managed layer aren't included in the commit.
 
 ## View changes in the solutions area
 
-1. After making a change or adding a object in an unmanaged solution, go to the **Solutions** area in Power Apps.
+1. After making a change or adding an object in an unmanaged solution, go to the **Solutions** area in Power Apps.
 1. Open the solution that you made changes to and select **Source Control** on the left navigation pane.
 
    :::image type="content" source="../media/git-integration-changes.png" alt-text="List of changes in solution ready to commit to Git" lightbox="../media/git-integration-changes.png":::
 
-The source control screen provides a list of **Changes** available to commit from your environment to source control. Select **Refresh** to refresh the list if you made changes in another browser tab. Selecting **Check for updates** queries your source code repository and identifies whether there are **Updates** in Git available to pull into your environment. When detected, you'll need to resolve **Conflicts** detected between objects in your environment and Git.
+The source control screen provides a list of **Changes** available to commit from your environment to source control. Select **Refresh** to refresh the list if you made changes in another browser tab. Selecting **Check for updates** queries your source code repository and identifies whether there are **Updates** in Git available to pull into your environment. When detected, you need to resolve **Conflicts** detected between objects in your environment and Git.
 
 ## Conflict resolution
 
@@ -33,13 +33,13 @@ If you choose to keep existing changes, those objects are moved to the **Changes
 
 ## Pull changes available from source control repository
 
-To import updates available from your source control repository into your environment, switch to the **Updates** tab and click **Check for updates**. Next, review the updates available, and then select **Pull** on the command bar. We recommend that you validate the application experiences that might have been impacted by those incoming changes.
+To import updates available from your source control repository into your environment, switch to the **Updates** tab and select **Check for updates**. Next, review the updates available, and then select **Pull** on the command bar. We recommend that you validate the application experiences that might have been impacted by those incoming changes.
 
-If an object was deleted in Git, you'll be promted to either remove the object from your solution (object remains in the environment) or delete the object from your environment. This is necessary before updates are pulled from Git.
+If an object was deleted in Git, you're prompted to either remove the object from your solution (object remains in the environment) or delete the object from your environment. This is necessary before updates are pulled from Git.
 
 ## Commit changes to source control repository
 
-To commit the changes to source control, switch to the **Changes** tab and review the changes. Select **Commit** from the top menu, enter a comment about your commit and then select **Commit** again.
+To commit the changes to source control, switch to the **Changes** tab and review the changes. Select **Commit** from the top menu, enter a comment about your commit, and then select **Commit** again.
 
 Once your changes are committed, you can either navigate directly to Azure DevOps to view your commit or select the commit number provided on the information bar item that notifies you of your successful commit.
 
@@ -48,6 +48,6 @@ Once your changes are committed, you can either navigate directly to Azure DevOp
 
 ### Next steps
 
-[Dataverse Git integration setup](/power-platform/alm/git-integration/connecting-to-git)  
+[Git integration setup](/power-platform/alm/git-integration/connecting-to-git)  
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

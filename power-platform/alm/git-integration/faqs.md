@@ -3,17 +3,17 @@ title: "FAQs about source code integration"
 description: "This article includes answers to commonly asked questions about Git integration with Microsoft Dataverse."
 author: caburk
 ms.subservice: alm
-ms.author: matp
+ms.author: caburk
 ms.date: 04/21/2025
 ms.custom: 
-ms.topic: article
+ms.topic: faq
 ms.reviewer: tapanm
 ms.collection: 
 ms.contributors:
 - mikefactorial
 ---
 
-# FAQs about source code integration (preview)
+# FAQs about source code integration
 
 This article includes answers to commonly asked questions about Git integration with Microsoft Dataverse.
 
@@ -24,25 +24,25 @@ Git integration provides an easier way of syncing Power Platform customizatinos 
 ## What's the difference between Git integration and pre-existing Developer tools?
 
 Git integration is built into Power Platform and is more performant, democratized for makers and admins, has more robust safeguards, and uses an optimized file format.
-Developer tools currently provide more flexitility for code-first developers.
+Developer tools currently provide more flexibility for code-first developers.
 
 ## What are the prerequisites for using Git integration?
 
 You need a Power Platform environment with the necessary permissions to connect to Azure DevOps and bind your environment to a project in Azure DevOps. It requires a system administrator role in the Dataverse environment to bind to Git.  
 
-You need an Azure DevOps subscription and licenses for users who interact with source control. These users need **Basic** access level in the Azure DevOps Organization and access to contribute to the Project and Repository.
+You need an Azure DevOps subscription and licenses for users who interact with source control. These users need **Basic** access level in the Azure DevOps organization and access to contribute to the project and repository.
 
 Development and target environments must be enabled as Managed Environments.
 
 ## What other Git providers are supported?
 
-Azure DevOps Git repositories are currently the only Git provider supported. This capability uses the Git provider model so that others can be supported in the future.
+Azure DevOps Git repositories are currently the only Git provider supported. This capability uses the Git provider model so that others might be supported later.
 
 ## What licenses do I need to use Git integration with Dataverse?
 
 All users within the environment must meet license requirements for [Managed Environments](../../admin/managed-environment-overview.md). Managed Environments is required regardless of environment type.
 
-Developers using source code integration also need an Azure DevOps license to gain access to the repository. For more information, see [Azure DevOps Services](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/)
+Developers using source code integration also need an Azure DevOps license to gain access to the repository. For more information, go to [Azure DevOps Services](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/)
 
 ## Why am I getting the message "Failed to retrieve the default branch for the selected repository. Choose a default branch to allow creating new branches?"
 
@@ -50,7 +50,7 @@ Make sure that your Azure DevOps Git repo is initialized. New projects and repos
 
 ## Do I integrate my dev, test, and prod environments with source code and use branch merging to push configuration to another environment?
 
-This feature is designed to only have your unmanaged solutions in development environments connected to Git. Deployment to upstream environments currently requires the managed solution from a development environment or using Pipelines in Power Platform. Developer tooling support will be available soon for building and deploying the solution from Git.
+This feature is designed to only have your unmanaged solutions in development environments connected to Git. Deployment to upstream environments currently requires the managed solution from a development environment or using pipelines in Power Platform.
 
 ## How do I work with branches?
 
@@ -60,7 +60,7 @@ For example, you can connect your development to a developer branch, PR the chan
 
 ## Why isn't there unmanaged and managed solution representation for different objects in Git?
 
-Before this feature existed, it was common to store managed and unmanaged solution versions in Git. That's no longer needed. Git should only include your source code and unmanaged customizations. Managed vs unmanaged is determined when building and releasing the solution.
+Before this feature became available, it was common to store managed and unmanaged solution versions in Git. That's no longer needed. Git should only include your source code and unmanaged customizations. Managed versus unmanaged is determined when building and releasing the solution.
 
 ## Why are my source code files in YAML yet the solution export is still primarily XML?
 
@@ -68,7 +68,7 @@ The feature uses YAML to represent solution content because it's easier to read,
 
 ## How can I build and deploy a solution from source code?
 
-The new format will soon be supported within developer tooling, allowing you to pack (build) and deploy the artifact from Git. Currently, deployment requires synchronizing the Git release branch with a development environment and exporting the managed artifact from the environment.
+Currently, deployment requires synchronizing the Git release branch with a development environment and exporting the managed artifact from the environment. <!-- Update this FAQ when expanded feature becomes available.-->
 
 ## How do I develop with code-first objects where I don't want my compiled binaries checked into source code?
 
@@ -76,7 +76,8 @@ Currently, you can still author different objects, such as Power Apps component 
 
 ## How do I resolve conflicts?
 
-Simple conflicts can be resolved on the Solution's Source control page by selecting which version to keep (environment vs Git).
+Simple conflicts can be resolved on the solution's source control page by selecting which version to keep (environment versus Git).
+
 Merge conflicts detected when merging branches is currently managed within Git.
 
 ## Can I commit specific changes instead of all changes for a solution?
@@ -85,7 +86,7 @@ Currently, you need to commit all pending object changes within a solution. Howe
 
 ## Can I use an API to bind to Git and trigger commits and pulls?
 
-Yes. See the [Web API reference](/power-apps/developer/data-platform/webapi/reference/about) for developer documentation about connecting to Git, CommitToGit, RefreshChangesFromGit, and PullChangesFromGit.
+Yes. Go to the [Web API reference](/power-apps/developer/data-platform/webapi/reference/about) for developer documentation about connecting to Git, `CommitToGit`, `RefreshChangesFromGit`, and `PullChangesFromGit`.
 
 ## Can I now make changes directly in source control in a supported manner?
 
@@ -93,15 +94,15 @@ Support for direct modifications to solution customizations isn't changing with 
 
 ## Can I commit large solutions?
 
-Yes. However, there's a 17MB limit for single file commits withing Azure DevOps. The system will chunk large solutions, containing multiple files into multiple commits and squash-merge them.
+Yes. However, there's a 17 MB limit for single file commits withing Azure DevOps. The system chunks large solutions, containing multiple files into multiple commits and squash-merges them.
 
 ## Are all object types supported?
 
-Currently, a small number of low-usage legacy object types are unsupported. You'll see an error when unsupported object types are detected.
+Currently, a small number of low-usage legacy object types are unsupported. You receive an error when unsupported object types are detected.
 
 ## How can I upgrade existing solutions?
 
-You can connect existing solutions in an environment to Git and commit them. If the solution is only in Git, first use developer tools to pack and import the unmanaged solution into a new development environment. It's recommended to a new source code location to avoid disruptive changes between old and new file formats.
+You can connect existing solutions in an environment to Git and commit them. If the solution is only in Git, first use developer tools to pack and import the unmanaged solution into a new development environment. We recommend a new source code location to avoid disruptive changes between old and new file formats.
 
 ## Can I use Git integration to audit metadata changes? Even for citizen developers?
 
@@ -111,13 +112,13 @@ Yes, this is common. Dataverse API's can also be used to commit changes automati
 
 Not currently.
 
-## Can I automically deploy changes pushed to Git?
+## Can I automatically deploy changes pushed to Git?
 
-Support is currently limited, but you can use Pipelines in Power Platform and pac pipeline deploy.
+Support is currently limited, but you can use pipelines in Power Platform and pac pipeline deploy.
 
 ## Can I connect environments located in a different geo than the ADO repo?
 
-Consent is needed when the environment is in a different geo than the ADO repo. A message and consent are shown when connecting.
+Consent is needed when the environment is in a different geography than the ADO repo. A message and consent are shown when connecting.
 
 ### Related content
 

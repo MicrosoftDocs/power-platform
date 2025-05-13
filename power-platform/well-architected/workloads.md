@@ -4,7 +4,7 @@ description: Learn about workloads in the context of Power Platform Well-Archite
 author: robstand
 ms.author: rstand
 ms.date: 05/10/2024
-ms.topic: conceptual
+ms.topic: concept-article
 contributors:
     chkittel
 ---

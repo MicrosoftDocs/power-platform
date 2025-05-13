@@ -4,7 +4,7 @@ description: "The SolutionPackager tool can be used with any source control syst
 ms.custom: ""
 ms.date: 02/06/2025
 ms.reviewer: "pehecke"
-ms.topic: "article"
+ms.topic: how-to
 author: "caburke"
 ms.subservice: alm
 ms.author: "jdaly"

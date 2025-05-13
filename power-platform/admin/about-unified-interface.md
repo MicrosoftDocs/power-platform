@@ -3,7 +3,7 @@ title: "About Unified Interface  | MicrosoftDocs"
 description: About Unified Interface
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 10/20/2021
 author: sericks007
 ms.subservice: admin

@@ -4,7 +4,7 @@ description: "This article describes detailed capabilities in the Power Platform
 author: manuelap-msft
 
 ms.subservice: guidance
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 06/13/2024
 ms.author: mapichle
 ms.reviewer: sericks

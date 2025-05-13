@@ -3,7 +3,7 @@ title: Collect audit logs using Microsoft Graph API
 description: Learn how to connect audit log sync flows to the audit log by using a Microsoft Graph API action in a cloud flow to gather telemetry data for apps in Microsoft 365.
 author: pete-msft
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 10/15/2024
 ms.subservice: guidance-toolkit
 ms.author: petrip

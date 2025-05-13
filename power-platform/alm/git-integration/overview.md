@@ -3,10 +3,10 @@ title: "Overview of Dataverse Git integration"
 description: "This article discusses the integration of Dataverse with Git, focusing on high-level concepts and requirements."
 author: caburk
 ms.subservice: alm
-ms.author: matp
+ms.author: caburk
 ms.date: 04/21/2025
 ms.custom: 
-ms.topic: article
+ms.topic: concept-article
 ms.reviewer: matp
 ms.collection: 
 ms.contributors:
@@ -15,7 +15,7 @@ ms.contributors:
 
 # Overview of Git integration in Power Platform
 
-Source control integration allows development teams to sync solutions and solution objects across one or more Microsoft Dataverse environments using an Azure DevOps Git repository. The source control integration functionality is available natively within the solutions experiences, ensuring citizen developers, code-first developers, and administrators can benefit from version control, change tracking, and seamless team collaboration across different tools and environments. Git integration is intended to be used with developer environments and not in your test or production environments where deployments can be made using builds to create solution artifacts and [pipelines in Power Platform](../pipelines.md) to deploy.
+Source control integration allows development teams to sync solutions and solution objects across one or more Microsoft Dataverse environments using an Azure DevOps Git repository. The source control integration functionality is available natively within the solutions experiences, ensuring citizen developers, code-first developers, and administrators can benefit from version control, change tracking, and seamless team collaboration across different tools and environments. Git integration is intended to be used with developer environments and not in your test or production environments where deployments can be made using builds to create solution artifacts and pipelines in Power Platform to deploy.
 
 In this article, you find some of the key concepts and benefits to using Git-enabled source control with your Dataverse environments and solutions. For information about Git in Azure DevOps, go to [Azure DevOps Git repository](/azure/devops/repos/get-started/what-is-repos).
 
@@ -51,7 +51,7 @@ By enabling Git integration in Dataverse, you can meet code-first developers whe
 
 ### Fusion development with Dataverse Git integration
 
-Power Platform provides capabilities for both low-code and code-first development. This article discusses code-first development processes associated with Dataverse and Git integration and provides guidance about how to manage code-first and low-code objects in a single environment. objects like Power Apps component framework controls, Dataverse plug-ins, and custom workflow activities are examples of code-first objects that can be managed in source control.
+Power Platform provides capabilities for both low-code and code-first development. This article discusses code-first development processes associated with Dataverse and Git integration and provides guidance about how to manage code-first and low-code objects in a single environment. Objects like Power Apps component framework controls, Dataverse plug-ins, and custom workflow activities are examples of code-first objects that can be managed in source control.
 
 ### Code-first and low-code objects in a single environment
 

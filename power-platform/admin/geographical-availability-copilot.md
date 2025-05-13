@@ -3,7 +3,7 @@ title: Move data across regions for Copilots and generative AI features
 description: Learn how to turn on data movement across regions for Copilots and generative AI features.
 author: amchern
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 03/20/2025
 ms.subservice: admin
 ms.author: amchern

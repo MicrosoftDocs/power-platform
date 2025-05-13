@@ -4,7 +4,7 @@ description: "Evaluate the impact of a new connector and choose to allow busines
 author: manuelap-msft
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 09/09/2020
 ms.subservice: guidance
 ms.author: mapichle

@@ -4,7 +4,7 @@ description: System Settings Outlook tab
 author: sericks007
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 09/11/2020
 ms.subservice: admin
 ms.author: sericks
