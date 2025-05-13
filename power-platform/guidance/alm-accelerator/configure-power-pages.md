@@ -5,7 +5,7 @@ ms.topic: how-to
 ms.date: 04/10/2023
 ms.subservice: guidance-toolkit
 author: rajeevpentyala
-ms.author: rajeevpe
+ms.author: grarchib
 ms.reviewer: sericks
 ms.custom: bap-template
 ---

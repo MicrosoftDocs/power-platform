@@ -129,8 +129,8 @@ additionalContent:
           links:
            - url: /power-platform/guidance/coe/overview
              text: Center of Excellence Starter Kit overview
-           - url: /power-platform/guidance/alm-accelerator/overview
-             text: ALM Accelerator overview
+           - url: /power-platform/guidance/coe/business-value-toolkit
+             text: Business Value toolkit
            - url: /power-platform/guidance/creator-kit/overview
              text: Creator Kit overview
            - url: /power-platform/guidance/toolkits/
