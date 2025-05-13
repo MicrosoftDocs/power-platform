@@ -37,7 +37,7 @@ The following memberships and privileges are required to enable SharePoint docum
 <a name="setups2s"></a>   
 
 ## Set up server-to-server authentication with SharePoint on-premises  
- Follow the steps in the order provided to set up customer engagement apps with [!INCLUDE[pn_sharepoint_2013](../includes/pn-sharepoint-2013.md)] on-premises.  
+ Follow the steps in the order provided to set up customer engagement apps with [!INCLUDE[pn_sharepoint_2016](../includes/pn-sharepoint-2016.md)] on-premises.  
   
 > [!IMPORTANT]
 > The steps described here must be completed in the order provided. If a task isn't completed, such as a [!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] command that returns an error message, the issue must be resolved before you continue to the next command, task, or step.  
@@ -51,18 +51,18 @@ Before you configure customer engagement apps and [!INCLUDE[pn_SharePoint_short]
 
 #### SharePoint prerequisites  
   
-- [!INCLUDE[pn_microsoft_sharepoint_2013](../includes/pn-microsoft-sharepoint-2013.md)] (on-premises) with Service Pack 1 (SP1) or later version.  
+- [!INCLUDE[pn_microsoft_sharepoint_2016](../includes/pn-microsoft-sharepoint-2016.md)] (on-premises) with Service Pack 1 (SP1) or later version.  
   
   > [!IMPORTANT]
   >  SharePoint Foundation 2013 versions aren't supported for use with customer engagement apps document management.  
   
-- Install the April 2019 Cumulative Update (CU) for the SharePoint 2013 product family. This April 2019 CU includes all SharePoint 2013 fixes (including all SharePoint 2013 security fixes) released since SP1. The April 2019 CU doesn't include SP1. You need to install SP1 before installing the April 2019 CU. Learn more in [KB4464514 SharePoint Server 2013 April 2019 CU](https://support.microsoft.com/help/4464514/april-9-2019-cumulative-update-for-sharepoint-enterprise-server-2013-k).
+- Install the April 2019 Cumulative Update (CU) for the SharePoint 2016 product family. This April 2019 CU includes all SharePoint 2016 fixes (including all SharePoint 2016 security fixes) released since SP1. The April 2019 CU doesn't include SP1. You need to install SP1 before installing the April 2019 CU. Learn more in [KB4464514 SharePoint Server 2013 April 2019 CU](https://support.microsoft.com/help/4464514/april-9-2019-cumulative-update-for-sharepoint-enterprise-server-2013-k).
 
 - [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] configuration: 
   
-  - If you use [!INCLUDE[pn_microsoft_sharepoint_2013](../includes/pn-microsoft-sharepoint-2013.md)], for each [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] farm, only one customer engagement app can be configured for server-based integration.  
+  - If you use [!INCLUDE[pn_microsoft_sharepoint_2016](../includes/pn-microsoft-sharepoint-2016.md)], for each [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] farm, only one customer engagement app can be configured for server-based integration.  
   
-  - [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] website must be accessible via the Internet. A reverse proxy may also be required for [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] authentication. Learn more in [Configure a reverse proxy device for SharePoint Server 2013 hybrid](/SharePoint/hybrid/configure-a-reverse-proxy-device-for-sharepoint-server-hybrid).
+  - [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] website must be accessible via the Internet. A reverse proxy may also be required for [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] authentication. Learn more in [Configure a reverse proxy device for SharePoint Server 2016 hybrid](/SharePoint/hybrid/configure-a-reverse-proxy-device-for-sharepoint-server-hybrid).
   
   - [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] website must be configured to use SSL (HTTPS) on TCP port 443 (no custom ports are supported) and use a public root, Certificate Authority-issued certificate. Learn more in [SharePoint: About Secure Channel SSL certificates](/SharePoint/hybrid/plan-connectivity-from-office-365-to-sharepoint-server#AboutSecureChannel).
   
@@ -121,7 +121,7 @@ Before you configure customer engagement apps and [!INCLUDE[pn_SharePoint_short]
   
 ### Update the SharePoint Server SPN in Microsoft Entra Domain Services  
 
-On the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises server, in the SharePoint 2013 Management Shell, run these [!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] commands in the order given.  
+On the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises server, in the SharePoint 2016 Management Shell, run these [!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] commands in the order given.  
     
 1. Connect to [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)].  
 
@@ -165,10 +165,10 @@ On the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-pr
        -ServicePrincipalNames $UpdatedServicePrincipalNames
    ```  
   
-After these commands complete, don't close the SharePoint 2013 Management Shell. Continue to the next step.  
+After these commands complete, don't close the SharePoint 2016 Management Shell. Continue to the next step.  
   
 ### Update the SharePoint realm to match that of SharePoint Online  
- On the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises server, in the SharePoint 2013 Management Shell, run this [!INCLUDE[pn_PowerShell](../includes/pn-powershell.md)] command.  
+ On the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises server, in the SharePoint 2016 Management Shell, run this [!INCLUDE[pn_PowerShell](../includes/pn-powershell.md)] command.  
   
  The following command requires [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] farm administrator membership and sets the authentication realm of the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises farm.  
   
@@ -180,11 +180,11 @@ Set-SPAuthenticationRealm -Realm $SPOContextId
 ```  
   
 ### Create a trusted security token issuer for Microsoft Entra ID on SharePoint  
- On the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises server, in the SharePoint 2013 Management Shell, run these [!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] commands in the order given.  
+ On the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises server, in the SharePoint 2016 Management Shell, run these [!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] commands in the order given.  
   
  The following commands require [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] farm administrator membership.  
   
- For detailed information about these [!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] commands, go to [Use Windows PowerShell cmdlets to administer security in SharePoint 2013](/powershell/module/sharepoint-server/).  
+ For detailed information about these [!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] commands, go to [Use Windows PowerShell cmdlets to administer security in SharePoint 2016](/powershell/module/sharepoint-server/).  
   
 1. Enable the [!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] session to make changes to the security token service for the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] farm.  
   
@@ -216,7 +216,7 @@ Set-SPAuthenticationRealm -Realm $SPOContextId
   
 ### Grant customer engagement apps permission to access SharePoint and configure the claims-based authentication mapping
 
-On the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises server, in the SharePoint 2013 Management Shell, run these [!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] commands in the order given.  
+On the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises server, in the SharePoint 2016 Management Shell, run these [!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] commands in the order given.  
   
 The following commands require [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] site collection administration membership.  
   
@@ -225,7 +225,7 @@ The following commands require [!INCLUDE[pn_SharePoint_short](../includes/pn-sha
     Enter the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises site collection URL. In this example, `<https://sharepoint.contoso.com/sites/crm/>` is used.  
   
    > [!IMPORTANT]
-   >  To complete this command, the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] App Management Service Application Proxy must exist and be running. For more information about how to start and configure the service, go to the Configure the Subscription Settings and App Management service applications subtopic in [Configure an environment for apps for SharePoint (SharePoint 2013)](/SharePoint/administration/configure-an-environment-for-apps-for-sharepoint).  
+   >  To complete this command, the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] App Management Service Application Proxy must exist and be running. For more information about how to start and configure the service, go to the Configure the Subscription Settings and App Management service applications subtopic in [Configure an environment for apps for SharePoint (SharePoint 2016)](/SharePoint/administration/configure-an-environment-for-apps-for-sharepoint).  
   
    ```powershell
    $site = Get-SPSite "https://sharepoint.contoso.com/sites/crm/"
@@ -328,7 +328,7 @@ $wellKnownApp.Update()
  By default, the claims-based authentication mapping uses the user's [!INCLUDE[pn_Windows_Live_ID](../includes/pn-windows-live-id.md)] email address and the user's [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises work email address for mapping. Whatever claims-based authentication type you use, the values, such as email addresses, **must match** between customer engagement apps and [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)]. [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] directory synchronization helps email addresses match. Learn more in [Deploy Microsoft 365 Directory Synchronization in Microsoft Azure](/microsoft-365/enterprise/deploy-microsoft-365-directory-synchronization-dirsync-in-microsoft-azure). To use a different type of claims-based authentication mapping, go to [Define custom claim mapping for SharePoint server-based integration](/dynamics365/customerengagement/on-premises/developer/integration-dev/define-custom-claim-mapping-sharepoint-server-based-integration?view=op-9-1&preserve-view=true).
   
 > [!IMPORTANT]
->  To enable the Work email property, [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises must have a User Profile Service Application configured and started. To enable a User Profile Service Application in [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)], go to [Create, edit, or delete User Profile service applications in SharePoint Server 2013](/SharePoint/install/create-a-user-profile-service-application). To make changes to a user property, such as Work email, go to [Edit a user profile property](/SharePoint/administration/add-edit-or-delete-custom-properties-for-a-user-profile). For more information about the User Profile Service Application, go to [Overview of the User Profile service application in SharePoint Server 2013](/SharePoint/install/user-profile-service-overview).  
+>  To enable the Work email property, [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises must have a User Profile Service Application configured and started. To enable a User Profile Service Application in [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)], go to [Create, edit, or delete User Profile service applications in SharePoint Server 2016](/SharePoint/install/create-a-user-profile-service-application). To make changes to a user property, such as Work email, go to [Edit a user profile property](/SharePoint/administration/add-edit-or-delete-custom-properties-for-a-user-profile). For more information about the User Profile Service Application, go to [Overview of the User Profile service application in SharePoint Server 2016](/SharePoint/install/user-profile-service-overview).  
   
 ### Related content
 - [Troubleshooting server-based authentication](../admin/troubleshooting-server-based-authentication.md)   
