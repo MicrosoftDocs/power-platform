@@ -207,7 +207,7 @@ TenantToTenant-ManageMigrationRequest -MigrationId {MigrationId from above comma
 ```
 Once a request is approved, the admin of the destination tenant can notify the admin of the source tenant to proceed with the next step of the migration.
 
-### Upload the user mapping file for the Tenant To Tenant Migration
+### Upload the user mapping file (source admin)
 This step involves creating the SAS URL, which is used later for uploading the user mapping file. Run the following PowerShell command, substituting **EnvironmentId** with the actual environment ID and **FileLocation** with the Actual File Location.
 
 > [!Note]
@@ -218,7 +218,7 @@ This step involves creating the SAS URL, which is used later for uploading the u
 TenantToTenant-UploadUserMappingFile –EnvironmentName {EnvironmentId} -UserMappingFilePath {FileLocation}
 ```
 
-**Please note down the "_Read Only UserMapping File ContainerUri_" returned in the command you need to use it in the prepare migration command**
+**Make sure to copy the value of the _Read Only UserMapping File ContainerUri_ returned by the command. This SAS URI is required as the -ReadOnlyUserMappingFileContainerUri parameter in the TenantToTenant-PrepareMigration command.**
 
 ### Prepare the environment migration (source admin)
 The following step involves conducting comprehensive validations to ensure that every user listed in the user mapping file is verified and currently active within the target tenant. 
@@ -265,7 +265,7 @@ TenantToTenant-GetMigrationStatus -MigrationId {MigrationId}
 After fixing user mapping errors, you need to reupload the user mapping file using the same SAS URI.
   
 ### Download the error report (source admin)
-If any errors are in the user mapping file, there's an option to download an error report. This can be done by directly copying and pasting the **SasUrl** provided in the **Tenant-To-Tenant-GetMigrationStatus** command or by using the following commands that use the SAS URI from the previous step to check status and the desired location to download the error report.
+If any errors are in the user mapping file, there's an option to download an error report. This can be done by directly copying and pasting the **SasUrl** provided in the **Tenant-To-Tenant-GetMigrationStatus** command to the **Internet Browser** or by using the following commands that use the SAS URI from the previous step to check status and the desired location to download the error report.
 
 Complete the following steps:
 
