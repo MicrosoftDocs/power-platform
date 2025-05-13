@@ -5,7 +5,7 @@ author: grant-archibald-ms
 ms.author: grarchib
 ms.date: 02/23/2024
 ms.reviewer: jdaly
-ms.topic: article
+ms.topic: reference
 contributors:
  - JimDaly
  - jt000
@@ -21,7 +21,7 @@ Tests are defined in YAML following the same guidelines as Power Fx does. [Learn
 
 View the [PowerApps-TestEngine/samples](https://github.com/microsoft/PowerApps-TestEngine/tree/main/samples) folder for detailed examples.
 
-## YAML schema definition
+**YAML schema definitions**
 
 | Property | Description |
 |---|---|
@@ -33,7 +33,9 @@ View the [PowerApps-TestEngine/samples](https://github.com/microsoft/PowerApps-T
 
 Used to define one test.
 
-### Test YAML schema definition
+### testSuite YAML schema definition
+
+<!-- Should these properties be ordered alphabetically, or required first? -->
 
 | Property | Required | Description |
 |---|---|---|
@@ -50,6 +52,8 @@ Used to define one test.
 
 #### Test NetworkRequestMocks
 
+<!-- What is this? Some complex type used by testSuite? -->
+
 | Property | Required | Description |
 |---|---|---|
 | `requestURL` | Yes | The request URL that gets mock response. Glob patterns are accepted |
@@ -63,6 +67,8 @@ For optional properties, if no value is specified, the routing applies to all. F
 For Sharepoint/Dataverse/Connector apps, `requestURL` and `method` can be the same for all requests. `x-ms-request-method` and `x-ms-request-url` in headers could need to be configured in that case to identify different requests.
 
 #### Test TestCases
+
+<!-- What is this? Some complex type used by testSuite? -->
 
 | Property | Required | Description |
 |---|---|---|

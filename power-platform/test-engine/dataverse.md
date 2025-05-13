@@ -23,7 +23,7 @@ This article explains how to create integration tests with Dataverse. This funct
 - **ForAll** and **Remove** functions.
 - Connecting to a Model Driven Application or specifying `$env:DATAVERSE_URL`.
 - Using Azure CLI to sign in.
-- Functions of interest: `ForAll`, `Remove`, `CountRows`, `Collect`, `First`.
+- Functions of interest
 
 ## Connecting to Dataverse
 
@@ -60,7 +60,10 @@ These functions are useful when working with Dataverse:
 
 Take these considerations into account as you write test steps:
 
-- `Defaults` isn't supported. As a result Power Fx examples like `Patch(Accounts, Defaults(Accounts), {name:"test"})` aren't supported. 
+- [Defaults](../power-fx/reference/function-defaults.md) isn't supported. As a result Power Fx examples like `Patch(Accounts, Defaults(Accounts), {name:"test"})` aren't supported.
 - You can use `Collect` to an alternative to `Patch` with the `Defaults` function
+
+
+<!-- I'm confused. Is Defaults supported or not? -->
 
 [!INCLUDE [footer-banner](../includes/footer-banner.md)]

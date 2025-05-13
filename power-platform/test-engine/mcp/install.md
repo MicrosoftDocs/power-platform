@@ -13,15 +13,17 @@ contributors:
 
 # Test Engine Model Context Protocol Install
 
-To install the Model Context Protocol (MCP) server for Test Engine ensure that you have the prerequisites installed and then complete install steps.
+To install the Model Context Protocol (MCP) server for Test Engine, ensure that you have the prerequisites installed and then complete install steps.
 
 ## Prerequisites
 
 >[!NOTE]
-> This version of the Model Context Protocol (MCP) server for Test Engine make use of the open source version the server. Future versions of a NuGet package method won't require and .NET SDK to be installed and `git clone` operations.
+> This version of the Model Context Protocol (MCP) server for Test Engine makes use of the open source version the server. Future versions of a NuGet package method won't require and .NET SDK to be installed and `git clone` operations.
 
 To use the full features of Test Engine MCP Server, ensure the following tools are available, installed, and configured using examples when using Microsoft windows:
 
+1. A Power Platform solution with a created [Plan](/power-apps/maker/plan-designer/plan-designer)
+1. For the solution that includes the plan you have setup [Dataverse Git integration](../../alm/git-integration/connecting-to-git.md)
 1. Install of .NET SDK 8.0 from [Downloads](https://dotnet.microsoft.com/download/dotnet/8.0). For example
 
    ```cmd
@@ -71,8 +73,7 @@ To use the full features of Test Engine MCP Server, ensure the following tools a
    ```
 
 1. MCP Client: A Model Context Protocol Client. This guide assumes you're using [GitHub Copilot](https://github.com/features/copilot)
-1. A Power Platform solution with a created [Plan](/power-apps/maker/plan-designer/plan-designer)
-1. For the solution that includes the plan you have setup [Dataverse Git integration](../../alm/git-integration/connecting-to-git.md)
+
 
 ## Install Steps
 
@@ -104,7 +105,7 @@ To install the MCP Server for Test Engine
 
 1. After the install. Open Visual Studio Code
 1. Open User Settings and merge in the recommended JSON provided in the results of `Install.ps1`
-
+<!-- What 'User Settings'? -->
 
 ## MCP Server Configuration
 
@@ -118,13 +119,17 @@ Once you have the Test Engine MCP Server [installed](./install.md) using [Visual
 
 1. Sign in to Power Apps. Go to https://make.powerapps.com and sign in with your organizational account.
 1. Select the Environment. In the top-right corner, choose the environment for which you want the Instance URL.
-1. Open Settings. Select the gear icon (⚙️) in the top-right corner of the page.
-1. Choose **Session details**. From the dropdown, select Session details.
-1. Copy the Instance URL. In the dialog that appears, select Copy Details. Look for the line that starts with Instance url: — it looks something like: `https://yourenvironmentid.crm.dynamics.com/`
+1. Open **Settings**. Select the gear icon (⚙️) in the top-right corner of the page.
+1. Choose **Session details**. From the dropdown, select **Session detail**s.
+1. Copy the **Instance URL**. In the dialog that appears, select **Copy Details**. Look for the line that starts with Instance url: — it looks something like: `https://yourenvironmentid.crm.dynamics.com/`
 1. Update your `settings.json` in Visual Studio Code with the copied the **Instance URL** url
-1. Restart the Test Engine MCP Server
+1. Restart the Test Engine MCP Server 
+<!-- How to restart? -->
 
 ## Upgrade
+
+<!-- Why do I want to upgrade?
+When do I know an new upgrade is available? -->
 
 To upgrade the server, use the following commands
 
