@@ -37,7 +37,7 @@ The following memberships and privileges are required to enable SharePoint docum
 <a name="setups2s"></a>   
 
 ## Set up server-to-server authentication with SharePoint on-premises  
- Follow the steps in the order provided to set up customer engagement apps with [!INCLUDE[pn_sharepoint_2016](../includes/pn-sharepoint-2016.md)] on-premises.  
+ Follow the steps in the order provided to set up customer engagement apps with SharePoint 2016 on-premises.  
   
 > [!IMPORTANT]
 > The steps described here must be completed in the order provided. If a task isn't completed, such as a [!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] command that returns an error message, the issue must be resolved before you continue to the next command, task, or step.  
@@ -51,7 +51,7 @@ Before you configure customer engagement apps and [!INCLUDE[pn_SharePoint_short]
 
 #### SharePoint prerequisites  
   
-- [!INCLUDE[pn_microsoft_sharepoint_2016](../includes/pn-microsoft-sharepoint-2016.md)] (on-premises) with Service Pack 1 (SP1) or later version.  
+- SharePoint 2016 (on-premises) with Service Pack 1 (SP1) or later version.  
   
   > [!IMPORTANT]
   >  SharePoint Foundation 2013 versions aren't supported for use with customer engagement apps document management.  
@@ -60,7 +60,7 @@ Before you configure customer engagement apps and [!INCLUDE[pn_SharePoint_short]
 
 - [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] configuration: 
   
-  - If you use [!INCLUDE[pn_microsoft_sharepoint_2016](../includes/pn-microsoft-sharepoint-2016.md)], for each [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] farm, only one customer engagement app can be configured for server-based integration.  
+  - If you use SharePoint 2016, for each [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] farm, only one customer engagement app can be configured for server-based integration.  
   
   - [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] website must be accessible via the Internet. A reverse proxy may also be required for [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] authentication. Learn more in [Configure a reverse proxy device for SharePoint Server 2016 hybrid](/SharePoint/hybrid/configure-a-reverse-proxy-device-for-sharepoint-server-hybrid).
   
