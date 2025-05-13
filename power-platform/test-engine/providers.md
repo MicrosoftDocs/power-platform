@@ -46,7 +46,7 @@ The WebApi used for Dataverse integration is obtained either from the host domai
 
 #### AI Integration
 
-Using the open source [Power Apps Test Engine](https://github.com/microsoft/PowerApps-TestEngine) to compiled in `Debug` mode to together with the testSettings will optionally enable [Preview.AIExecutePrompt()](powerfx-functions.md#previewaiexecuteprompt) function in your tests.
+Using the open source [Power Apps Test Engine](https://github.com/microsoft/PowerApps-TestEngine) to compiled in `Debug` mode to together with the testSettings will optionally enable [Preview.AIExecutePrompt](powerfx-functions.md#previewaiexecuteprompt) function in your tests.
 
 ```yaml
 testSettings:

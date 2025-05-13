@@ -76,7 +76,7 @@ This function captures a screenshot of the app at the current point in time. The
 
 This function has the same functionality as the Power Apps  [Select function](../power-fx/reference/function-select.md).
 
-When working with a nested gallery, use [Index()](../power-fx/reference/function-first-last.md) within the select function.
+When working with a nested gallery, use [Index](../power-fx/reference/function-first-last.md) within the select function.
 
 ### Select example
 
@@ -96,7 +96,7 @@ When working with a nested gallery, use [Index()](../power-fx/reference/function
 
 This function has the same functionality as the Power Apps [SetProperty function](../power-fx/reference/function-setproperty.md).
 
-When working with a nested gallery, use [Index()](../power-fx/reference/function-first-last.md) within the `SetProperty` function.
+When working with a nested gallery, use [Index](../power-fx/reference/function-first-last.md) within the `SetProperty` function.
 
 ### SetProperty example
 
@@ -132,7 +132,7 @@ The following functions can optionally be included in tests when the Power Fx Pr
 > [!NOTE]
 > - Preview functions are subject to change. As these functions become ready for wider usage they may move to the `TestEngine` namespace.
 > - You can use User Defined Functions to wrap `Preview` functions to make migration to non preview versions of the function easier.
-> - You could have the model only return a JSON object that you could pars using the `ParseJSON()` function.
+> - You could have the model only return a JSON object that you could pars using the `ParseJSON` function.
 
 ### Preview.AIExecutePrompt
 
@@ -281,9 +281,9 @@ Preview.SimulateConnector({name: "msnweather", then: {responses: { daily: { day:
 
 `Preview.SimulateDataverse({Action: Text, Entity: Text, Then: Table})`
 
-#### Preview.SimuateDataverse Example
+#### Preview.SimulateDataverse Example
 
-This example when a call is made to query the Dataverse entity with logical name **cr693_combotable** it returns the records using [**Table()**](../power-fx/reference/function-table.md) function
+This example when a call is made to query the Dataverse entity with logical name `cr693_combotable` it returns the records using [Table](../power-fx/reference/function-table.md) function
 
 ```
 Preview.SimulateDataverse({

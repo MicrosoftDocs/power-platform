@@ -23,7 +23,7 @@ contributors:
 
 ## Issue 1: Preview.Pause function doesn't properly open up the inspector for pac test run
 
-**Description:** The `Preview.Pause()` function fails to open the inspector during a `pac test run`.  
+**Description:** The `Preview.Pause` function fails to open the inspector during a `pac test run`.  
 **Workaround:** The Open Source version of the Test Engine can be used for pause functionality.
 
 

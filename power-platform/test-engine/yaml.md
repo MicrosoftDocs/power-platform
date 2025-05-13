@@ -133,7 +133,7 @@ testFunctions:
       Preview.GetOptions(control);
 ```
 
-These test function examples demonstrate how to define custom Power Fx functions for use in your test cases. The `WaitUntilVisible()` function uses a DOM selector to wait until a specified control is visible, leveraging Playwright actions. The GetOptions function retrieves the options for a specified control from a [Model Driven App](./model-driven-application.md) (MDA), utilizing the Power Fx control. These custom functions enhance the flexibility and power of your test definitions, allowing for more complex and specific test scenarios.
+These test function examples demonstrate how to define custom Power Fx functions for use in your test cases. The `WaitUntilVisible` function uses a DOM selector to wait until a specified control is visible, leveraging Playwright actions. The GetOptions function retrieves the options for a specified control from a [Model Driven App](./model-driven-application.md) (MDA), utilizing the Power Fx control. These custom functions enhance the flexibility and power of your test definitions, allowing for more complex and specific test scenarios.
 
 #### testSettings Browser configuration
 

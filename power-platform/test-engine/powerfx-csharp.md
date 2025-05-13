@@ -52,7 +52,7 @@ Here's an example of how Power Fx can be used to handle a consent dialog in a cu
 Preview.ConsentDialog(Table({Text: "Center of Excellence Setup Wizard"}))
 ```
 
-In this example, the `ConsentDialog()` function checks if the consent dialog is visible. If it is, the function can respond to the dialog confirming consent for the test account. Once the dialog is handled the remaining test steps will be executed.
+In this example, the `ConsentDialog` function checks if the consent dialog is visible. If it is, the function can respond to the dialog confirming consent for the test account. Once the dialog is handled the remaining test steps will be executed.
 
 The Table argument allows the consent dialog wait process to exit is a label with the provided text is visible.
 
