@@ -78,6 +78,7 @@ Legend:
 
 1. Select the icons to view the Project Management security group, Revizto clash report, and project cost report. Select a platform icon to access the project records on that platform.
 1. Search for a user in the directory to quickly view their technology access.
+
 1. (Administrators) Assign relevant technologies simultaneously by assigning a role to the user.
 1. (Administrators) Select the **Add** icon to add the role to the user.
 
