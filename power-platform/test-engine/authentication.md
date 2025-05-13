@@ -65,17 +65,28 @@ Using persistent browser cookies allows for non-interactive execution of subsequ
 
 During the first run, the user is prompted to enter their credentials interactively. These credentials are then saved securely in the browser's storage state, allowing for multifactor authentication (MFA).
 
-### Example Command
+### Example Command using browser based authentication
 
-To run tests using browser-based authentication, you can use the following pac test run command `(uses -u "storagestate" by default)`:
+To run tests using browser-based authentication, you can use the following [pac test run command](../developer/cli/reference/test.md#pac-test-run) like the following example:
 
-```cmd
-pac test run -p "canvas" -test "testplan.te.yaml" -t aaaabbbb-0000-cccc-1111-dddd2222eeee -env 00aa00aa-bb11-cc22-dd33-44ee44ee44ee
+```powershell
+pac test run `
+   --provider canvas `
+   --test-plan-file "testplan.te.yaml" `
+   --tenant aaaabbbb-0000-cccc-1111-dddd2222eeee `
+   --environment-id 00aa00aa-bb11-cc22-dd33-44ee44ee44ee
 ```
+
+This command using the uses `--user-auth Storagestate` by default.
+<!--
+ The other alternative is `Dataverse`.
+ There is no reference documentation that says Storagestate is the default.
+ -->
+
 
 ## Playwright
 
-Test Engine web based tests encapsulate browser automation using [Playwright](https://playwright.dev/dotnet/). The key class in this process is [BrowserContext](https://playwright.dev/dotnet/docs/api/class-browsercontext#browser-context-storage-state) that allows provide a way to operate multiple independent browser sessions. Specifically the key element is the use of storage state for this browser context, contains current cookies and local storage snapshot to allow interactive and headless sign-in.
+Test Engine web based tests encapsulate browser automation using [Playwright](https://playwright.dev/dotnet/). The key class in this process is [BrowserContext](https://playwright.dev/dotnet/docs/api/class-browsercontext) that allows provide a way to operate multiple independent browser sessions. Specifically the key element is the use of [storage state](https://playwright.dev/dotnet/docs/api/class-browsercontext#browser-context-storage-state) for this browser context, contains current cookies and local storage snapshot to allow interactive and headless sign-in.
 
 ## Initial sign-in
 
@@ -106,21 +117,22 @@ The goal of the sign-in process it works with organization defined sign-in proce
 
 Certificate-based authentication is another method that can be used in the Power Apps Test Engine. This method requires X.509 certificates to be configured as an authentication method and optionally configured as a method of second-factor authentication. Certificates can be stored in the user's personal certificate store or in a secure location accessible by the pipeline. 
 
-### Example Command
+### Example Command using certificate-based authentication
 
-To run tests using certificate-based authentication `(uses -u "dataverse")`, you can use the following pac test run command:
+To run tests using certificate-based authentication `(uses --user-auth "dataverse")`, you can use the following pac test run command:
 
 ```powershell
-pac test run -p "canvas" `
-   -u "dataverse" `
-   -a "certstore" `
-   -test "testplan.te.yaml" `
-   -t aaaabbbb-0000-cccc-1111-dddd2222eeee `
-   -env 00aa00aa-bb11-cc22-dd33-44ee44ee44ee
+pac test run `
+   --provider canvas `
+   --user-auth dataverse `
+   --auth Certstore `
+   --test-plan-file testplan.te.yaml `
+   --tenant aaaabbbb-0000-cccc-1111-dddd2222eeee `
+   --environment-id 00aa00aa-bb11-cc22-dd33-44ee44ee44ee
 ```
 
 > [!NOTE]
-> You can select `certstore` or `certenv` for the authentication provider "-a". `certstore` uses environment variable `$env:DataProtectionCertificateName` with the Certificate name in local windows store. `certenv` uses base 64 encoded certificate in the variable found in `$env:DataProtectionCertificateName`, for example DataProtectionCertificateName="SampleCertificateVariableName" and  SampleCertificateVariableName="*Encoded Certificate Value*".
+> You can select `Certstore` or `Certenv` for the authentication provider `--auth`. `Certstore` uses environment variable `$env:DataProtectionCertificateName` with the certificate name in local windows store. `Certenv` uses base 64 encoded certificate in the variable found in `$env:DataProtectionCertificateName`, for example DataProtectionCertificateName="SampleCertificateVariableName" and  SampleCertificateVariableName="*Encoded Certificate Value*".
 
 ### Technical Overview
 
