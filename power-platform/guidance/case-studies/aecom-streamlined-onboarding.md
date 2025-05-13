@@ -7,7 +7,7 @@ ms.author: mapichle
 ms.reviewer: pankajsharma2087
 ms.subservice: guidance
 ms.topic: overview
-ms.date: 04/29/2025
+ms.date: 05/13/2025
 ---
 
 # AECOM simplifies project onboarding with Power Platform, Azure, and Microsoft Fabric
@@ -54,7 +54,7 @@ The following workflow follows the numbered callouts in the screenshot:
 
 1. If the team member isn't found, the information manager selects the **Add** icon to add the individual to the AECOM user directory.
 
-    If the team member also needs to be added to the Project Management (PM) security group, the information manager selects the **PM Security Group** option.
+1. If the team member also needs to be added to the Project Management (PM) security group, the information manager selects the **Add to PM SG** option.
 
 1. Information managers can also add team members in bulk using the Bulk Import Excel worksheet template. The template is attached to an email that looks like the following example:
 
@@ -78,7 +78,6 @@ Legend:
 
 1. Select the icons to view the Project Management security group, Revizto clash report, and project cost report. Select a platform icon to access the project records on that platform.
 1. Search for a user in the directory to quickly view their technology access.
-
 1. (Administrators) Assign relevant technologies simultaneously by assigning a role to the user.
 1. (Administrators) Select the **Add** icon to add the role to the user.
 
