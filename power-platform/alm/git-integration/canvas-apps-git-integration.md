@@ -1,5 +1,5 @@
 ---
-title: "Canvas Apps Git Integration (Preview)"
+title: "Source control canvas apps (Preview)"
 description: "Learn how to use Git integration with canvas apps in Power Platform."
 author: marcelbf
 ms.subservice: alm
@@ -11,7 +11,7 @@ ms.collection:
 ms.contributors:
 ---
 
-# Canvas Apps Git Integration (Preview)
+# Source control canvas apps (Preview)
 
 [!INCLUDE [cc-preview-features-expect-changes](../../includes/cc-preview-features-expect-changes.md)]
 
