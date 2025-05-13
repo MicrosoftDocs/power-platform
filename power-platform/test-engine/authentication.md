@@ -29,26 +29,21 @@ I don't feel this image adds value, it seems more like a slide to speak over in 
 <!-- Example columns start -->
 
 :::row:::
-   :::column::: 
+   :::column:::
    **Browser based** Persist session cookies
-   :::column-end:::
-   **Certificate based authentication**
-   :::column:::
-   :::column-end:::
-    **Conditional access policy**
-   :::column:::
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column:::
+
    - Requires user interaction with MFA
    - Governed by "Stay Signed In" and conditional access policies
    :::column-end:::
    :::column:::
+   **Certificate based authentication**
+
    - Can configure a certificate as optional MFA configured for the user persona
    - Issue certificate and store in Release Aget (Power Automate Desktop of Build Agent)
    :::column-end:::
    :::column:::
+   **Conditional access policy**
+
    - Operating System, Intune Managed, Browser Type, Location, Risk Profile..
    - For projects like CoE Kit we use Windows 11, Intune managed agents with conditional access policy applied
    :::column-end:::
