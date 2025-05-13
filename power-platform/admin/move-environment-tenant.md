@@ -207,51 +207,18 @@ TenantToTenant-ManageMigrationRequest -MigrationId {MigrationId from above comma
 ```
 Once a request is approved, the admin of the destination tenant can notify the admin of the source tenant to proceed with the next step of the migration.
 
-### Generate a shared access signature (SAS) URL (source admin)
-This step involves creating the SAS URL, which is used later for uploading the user mapping file. Run the following PowerShell command, substituting **EnvironmentId** with the actual environment ID.
-
-```PowerShell
-GenerateResourceStorage-PowerAppEnvironment –EnvironmentName {EnvironmentId}
-```
-
-> [!Important]
-> Make sure that the environment is **not** in **Admin Mode** and the user has the **Basic User** role assigned in the environment.
-
-#### Sample output
-
-```PowerShell
-Code        :
-Description :
-Headers     :
-Error       :
-Errors      :
-Internal    : @{sharedAccessSignature=https://dynamics.blob.core.windows.net/20240604t000000z73e18df430fe40059290dsddc25d783?sv=2018-03-28&sr=c&si=SASpolicyXXRRRX}
-```
-
-### Upload the user mapping file (source admin)
-The next step involves transferring the user mapping file to the previously established SAS URL. To accomplish this, run the following commands in Windows PowerShell ISE, ensuring that the parameters **SASUri** and **FileToUpload** contain the appropriate information about your environment. This step is crucial for accurately uploading mapping of the users in the system.
+### Upload the user mapping file for the Tenant To Tenant Migration
+This step involves creating the SAS URL, which is used later for uploading the user mapping file. Run the following PowerShell command, substituting **EnvironmentId** with the actual environment ID and **FileLocation** with the Actual File Location.
 
 > [!Note]
-> The installation of the Azure module is required to run the script mentioned. Complete the following steps with Windows PowerShell ISE.
+> While passing the **FileLocation** value, you must provide the parameter with the usermapping file name (usermapping.csv):
+> `C:\Filelocation\usermapping.csv`.
 
-```Windows PowerShell ISE
-$SASUri ="Update the SAS Uri from previous step”
-$Uri = [System.Uri] $SASUri
- 
-$storageAccountName = $uri.DnsSafeHost.Split(".")[0]
-$container = $uri.LocalPath.Substring(1)
-$sasToken = $uri.Query
- 
-# File to upload
-# Note that the file name should be usermapping.csv (case sensitive) with comma separated values.
-$fileToUpload = 'C:\filelocation\usermapping.csv'
- 
-# Create a storage context
-$storageContext = New-AzStorageContext -StorageAccountName $storageAccountName -SasToken $sasToken
- 
-# Upload the file to Azure Blob Storage
-Set-AzStorageBlobContent -File $fileToUpload -Container $container -Context $storageContext -Force
+```PowerShell
+TenantToTenant-UploadUserMappingFile –EnvironmentName {EnvironmentId} -UserMappingFilePath {FileLocation}
 ```
+
+**Please note down the "_Read Only UserMapping File ContainerUri_" returned in the command you need to use it in the prepare migration command**
 
 ### Prepare the environment migration (source admin)
 The following step involves conducting comprehensive validations to ensure that every user listed in the user mapping file is verified and currently active within the target tenant. 
