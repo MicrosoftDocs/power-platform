@@ -162,4 +162,4 @@ Yes.
 
 ## Related information
 
-- [Deploy a Microsoft Power Platform solution by using a service principal - Learn Module](https://aka.ms/PipelinesLearnDeploy)
+- [Deploy a Microsoft Power Platform solution by using a service principal - Learn Module](/training/modules/deploy-pipeline)
