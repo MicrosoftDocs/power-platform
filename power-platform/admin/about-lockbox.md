@@ -4,7 +4,7 @@ description: This article covers information on how customers can review and app
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 02/25/2024
+ms.date: 05/13/2025
 author: mihaelablendea
 ms.author: mihaelab
 ms.reviewer: sericks
@@ -12,6 +12,7 @@ search.audienceType:
   - admin
 ms.collection: bap-ai-copilot
 contributors:
+- lavanyakr01 
 - iaanw 
 - kavehkazms 
 ---
