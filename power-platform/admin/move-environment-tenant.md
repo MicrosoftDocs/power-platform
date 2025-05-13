@@ -1,7 +1,7 @@
 ---
 title: Tenant-to-tenant migrations 
 description: Learn about the impact of migrating an environment from one tenant to another. 
-ms.date: 02/11/2025
+ms.date: 05/13/2025
 ms.topic: concept-article
 author: matapg007
 contributors:
@@ -208,7 +208,7 @@ TenantToTenant-ManageMigrationRequest -MigrationId {MigrationId from above comma
 Once a request is approved, the admin of the destination tenant can notify the admin of the source tenant to proceed with the next step of the migration.
 
 ### Upload the user mapping file (source admin)
-This step involves creating the SAS URL, which is used later for uploading the user mapping file. Run the following PowerShell command, substituting **EnvironmentId** with the actual environment ID and **FileLocation** with the Actual File Location.
+This step involves creating the SAS URL, which is used later for uploading the user mapping file. Run the following PowerShell command, substituting **EnvironmentId** with the actual environment ID and **FileLocation** with the actual file location.
 
 > [!Note]
 > While passing the **FileLocation** value, you must provide the parameter with the usermapping file name (usermapping.csv):
@@ -218,7 +218,7 @@ This step involves creating the SAS URL, which is used later for uploading the u
 TenantToTenant-UploadUserMappingFile –EnvironmentName {EnvironmentId} -UserMappingFilePath {FileLocation}
 ```
 
-**Make sure to copy the value of the _Read Only UserMapping File ContainerUri_ returned by the command. This SAS URI is required as the -ReadOnlyUserMappingFileContainerUri parameter in the TenantToTenant-PrepareMigration command.**
+Be sure to copy the value of the **Read Only UserMapping File ContainerUri** returned by the command. This SAS URI is required as the **-ReadOnlyUserMappingFileContainerUri** parameter in the **TenantToTenant-PrepareMigration** command.
 
 ### Prepare the environment migration (source admin)
 The following step involves conducting comprehensive validations to ensure that every user listed in the user mapping file is verified and currently active within the target tenant. 
@@ -265,7 +265,7 @@ TenantToTenant-GetMigrationStatus -MigrationId {MigrationId}
 After fixing user mapping errors, you need to reupload the user mapping file using the same SAS URI.
   
 ### Download the error report (source admin)
-If any errors are in the user mapping file, there's an option to download an error report. This can be done by directly copying and pasting the **SasUrl** provided in the **Tenant-To-Tenant-GetMigrationStatus** command to the **Internet Browser** or by using the following commands that use the SAS URI from the previous step to check status and the desired location to download the error report.
+If any errors are in the user mapping file, there's an option to download an error report. This can be done by directly copying and pasting the **SasUrl** provided in the **Tenant-To-Tenant-GetMigrationStatus** command to your internet browser or by using the following commands that use the SAS URI from the previous step to check status and the desired location to download the error report.
 
 Complete the following steps:
 
