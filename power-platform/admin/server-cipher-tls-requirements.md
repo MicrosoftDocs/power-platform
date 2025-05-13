@@ -6,7 +6,7 @@ ms.subservice: admin
 ms.author: paulliew
 ms.reviewer: sericks
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 12/02/2024
 contributors:
     - ColeHarrison-Microsoft 

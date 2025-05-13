@@ -4,7 +4,7 @@ description: Deploy Microsoft 365 groups
 author: sericks007
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: install-set-up-deploy
 ms.date: 08/26/2021
 ms.subservice: admin
 ms.author: sericks

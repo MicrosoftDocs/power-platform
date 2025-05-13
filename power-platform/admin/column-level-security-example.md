@@ -2,7 +2,7 @@
 title: Column-level security example 
 description: This scenario-based example describes how to configure column level security.
 ms.component: pa-admin
-ms.topic: article
+ms.topic: how-to
 ms.date: 03/25/2025
 author: paulliew
 ms.subservice: admin

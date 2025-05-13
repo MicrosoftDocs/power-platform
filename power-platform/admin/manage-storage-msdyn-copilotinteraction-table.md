@@ -3,7 +3,7 @@ title: Overview of the msdyn_copilotinteraction table
 description: Learn about the management of msdyn_copilotinteraction table storage.
 author: ceian
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 08/01/2024
 ms.subservice: admin
 ms.author: ceian

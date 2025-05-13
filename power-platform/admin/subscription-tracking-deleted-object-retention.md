@@ -3,7 +3,7 @@ title: "Subscription Tracking Deleted Object Table | MicrosoftDocs"
 description: Information about changes to retention enteries for Subscription Tracking Deleted Object Table.
 author: ceian
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 01/19/2024
 ms.subservice: admin
 ms.author: ceian

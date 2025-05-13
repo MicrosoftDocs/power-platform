@@ -3,7 +3,7 @@ title: Data protection and privacy
 description: Learn how to manage data protection and privacy in the Power Platform admin center by using the available security features.
 ms.subservice: admin
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 01/29/2025
 author: matapg007
 ms.custom: NewPPAC

@@ -3,8 +3,8 @@ title: Virtual Network support white paper
 description: Learn how Azure Virtual Network support enhances the security, connectivity, and scalability of your Power Platform solutions.
 author: faix
 ms.component: pa-admin
-ms.topic: conceptual
-ms.date: 04/22/2025
+ms.topic: concept-article
+ms.date: 05/02/2025
 ms.subservice: admin
 ms.author: osfaixat
 ms.reviewer: sericks
@@ -165,9 +165,7 @@ If your Azure resources are in different Azure regions, you must still deploy yo
 
 ### Subnet size
 
-The size of the delegated subnet in a virtual network should accommodate future growth in usage and the addition of new services. Sizing your subnet appropriately ensures that requests don't get throttled.
-
-The subnet that you create should have at least a /24 Classless Inter-Domain Routing (CIDR) address block. A /24 CIDR address block provides 251 IP addresses and five reserved IP addresses. If you plan to use the same delegated subnet for multiple Power Platform environments, you might need a larger IP address block.
+The size of the delegated subnet in a virtual network should accommodate future growth in usage and the addition of new services. Sizing your subnet appropriately ensures that requests don't get throttled. For more information on sizing your subnet, go to [Estimating subnet size for Power Platform environments](./vnet-support-overview.md#estimating-subnet-size-for-power-platform-environments).
 
 ### Azure NAT Gateway
 
