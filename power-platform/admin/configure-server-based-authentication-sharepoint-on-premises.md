@@ -53,7 +53,7 @@ Before you configure customer engagement apps and [!INCLUDE[pn_SharePoint_short]
   
 - SharePoint 2016 (on-premises) with Service Pack 1 (SP1) or later version.
 
-- Install the May 2025 Cumulative Update (CU) for the SharePoint 2016 product family. This May 2025 CU includes all SharePoint 2016 fixes (including all SharePoint 2016 security fixes) released since SP1. The May 2025 CU doesn't include SP1. You need to install SP1 before installing the May 2025 CU.
+- Install the May 2025 Cumulative Update (CU) for the SharePoint 2016 product family. This May 2025 CU includes all SharePoint 2016 fixes (including all SharePoint 2016 security fixes) released since SP1. The May 2025 CU doesn't include SP1. You need to install SP1 before installing the May 2025 CU. Learn more in [Download Security Update for Microsoft SharePoint Enterprise Server 2016 (KB5002722) from Official Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=108177) and for 2019: [Download Security Update for Microsoft SharePoint Server 2019 Core (KB5002708) from Official Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=108171).
 
 - [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] configuration: 
   
