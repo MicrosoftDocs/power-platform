@@ -133,7 +133,10 @@ On the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-pr
 1. Set the SharePoint host url.  
   
    The value that you set for the variable **HostNameUrl** must be the complete host name URL of the SharePoint site collection. The hostname must be derived from the site collection URL and is case sensitive. In this example, the site collection URL is `https://SharePoint.constoso.com/sites/salesteam`, so the hostname URL is `https://SharePoint.contoso.com`.
-  
+
+   > [!IMPORTANT]
+   > If there are multiple sites, run the following for each site.
+ 
    ```powershell
    # Generate Service Principal Name
    # Note: If there are multiple sites, and the host is the same, no action is needed.
@@ -220,10 +223,7 @@ The following commands require [!INCLUDE[pn_SharePoint_short](../includes/pn-sha
 1. Register customer engagement apps with the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] site collection.  
   
     Enter the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises site collection URL. In this example, `<https://sharepoint.contoso.com/sites/crm/>` is used.  
-  
-   > [!IMPORTANT]
-   >  To complete this command, the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] App Management Service Application Proxy must exist and be running. For more information about how to start and configure the service, go to the Configure the Subscription Settings and App Management service applications subtopic in [Configure an environment for apps for SharePoint (SharePoint 2016)](/SharePoint/administration/configure-an-environment-for-apps-for-sharepoint).  
-  
+    
    ```powershell
    $site = Get-SPSite "https://sharepoint.contoso.com/sites/crm/"
    Register-SPAppPrincipal `
@@ -240,7 +240,10 @@ The following commands require [!INCLUDE[pn_SharePoint_short](../includes/pn-sha
    > - `site`. Grants the customer engagement apps permission to the specified [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] website only. It doesn't grant permission to any subsites under the named site.  
    >   - `sitecollection`. Grants the customer engagement apps permission to all websites and subsites within the specified [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] site collection.  
    >   - `sitesubscription`. Grants the customer engagement apps permission to all websites in the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] farm, including all site collections, websites, and subsites.  
-  
+
+   > [!Important]
+   > If there are multiple sites, perform the script for each site.
+
    ```powershell
    $app = Get-SPAppPrincipal `
        -NameIdentifier $issuer `
