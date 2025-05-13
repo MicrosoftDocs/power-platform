@@ -56,7 +56,7 @@ They select the user icon next to the Teams icon to view the user's permissions 
 
 1. If the member isn't found, the information manager can click the **Add** icon to add the member to the AECOM User Directory.
 
-    If the member needs to be included in the Project Management (PM) security group, the administrator can toggle the **PM Security Group** button.
+1. If the member needs to be included in the Project Management (PM) security group, the administrator can toggle the **PM Security Group** button.
 
 1. For adding members in bulk, users can download the Bulk Import Excel sheet template. They receive an email with the Excel sheet attached. See the following example email.
 
@@ -77,7 +77,6 @@ The Project View enables information managers to see which technologies a user h
 
 1. Search for a user in the directory to quickly view their technology access.
 
-
 1. (Administrators) Assign relevant technologies simultaneously by assigning a role to the user.
 1. (Administrators) Click the **Add** icon to add the role to the user.
 
@@ -87,8 +86,8 @@ The Project View enables information managers to see which technologies a user h
 
 The User View is the counterpart to the Project View. It allows information managers to:
 
-- Search for a specific user in the AECOM user directory.
-- See which technologies they have access to across all projects.
+1. Search for a specific user in the AECOM user directory.
+1. Select the user from the search results. In the right pane, the person can then see which technologies the user has access to across all the projects.
 
 :::image type="content" source="media/aecom-streamlined-onboarding/user-view.png" alt-text="Screenshot of the User View interface showing a search for a specific user and their access to technologies across projects." lightbox="media/aecom-streamlined-onboarding/user-view.png":::
 
