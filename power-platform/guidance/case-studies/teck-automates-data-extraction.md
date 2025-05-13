@@ -7,7 +7,7 @@ ms.author: mapichle
 ms.reviewer: pankajsharma2087
 ms.subservice: guidance
 ms.topic: overview
-ms.date: 04/24/2025
+ms.date: 05/13/2025
 ---
 
 # Teck automates data extraction with Power Automate and AI Builder

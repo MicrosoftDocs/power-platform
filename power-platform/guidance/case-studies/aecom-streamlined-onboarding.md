@@ -54,7 +54,7 @@ The following workflow follows the numbered callouts in the screenshot:
 
 1. If the team member isn't found, the information manager selects the **Add** icon to add the individual to the AECOM user directory.
 
-1. If the team member also needs to be added to the Project Management (PM) security group, the information manager selects the **Add to PM SG** option.
+1. If the team member also needs to be added to the Project Management (PM) security group, the administrator selects the **Add to PM SG** option.
 
 1. Information managers can also add team members in bulk using the Bulk Import Excel worksheet template. The template is attached to an email that looks like the following example:
 

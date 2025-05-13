@@ -7,7 +7,7 @@ ms.author: mapichle
 ms.reviewer: pankajsharma2087
 ms.subservice: guidance
 ms.topic: overview
-ms.date: 04/29/2025
+ms.date: 05/13/2025
 ---
 
 # ABN AMRO Bank enhances AI capabilities with Copilot Studio and Azure services
