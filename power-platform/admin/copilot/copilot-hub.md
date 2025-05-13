@@ -64,9 +64,9 @@ Admins can access detailed usage analytics and apply governance controls tailore
 
 # [Classic admin center](#tab/classic)
 
-## Readiness 
+## Get ready to manage Copilot and agents
 
-Resources and documents to help admins better understand how Copilot works, data and security fundamentals for Copilot features, and Microsoft's Responsible AI principles are available in the **Readiness** section. These documents are updated over time as new Copilot capabilities are released. 
+Resources and documents to help admins better understand how Copilot works, data and security fundamentals for Copilot features, and Microsoft's Responsible AI principles are available in the **Get ready to manage Copilot and agents** section. These documents are updated over time as new Copilot capabilities are released. 
 
 The **What’s new** web part lists new Copilot features as they're introduced or promoted to general availability. 
 
