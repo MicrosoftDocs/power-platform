@@ -358,11 +358,12 @@ The following steps must be completed for each website in the environment.
 After completing all of the above steps and the migration, you may validate the environment in the target tenant. Later, you can delete the source environment in the Power Platform admin center.
 
 ### Frequently asked questions
-**Are background operations enabled during tenant-to-tenant migration?**
+
+#### Are background operations enabled during tenant-to-tenant migration?
 
 Administration mode is enabled during tenant-to-tenant migration, therefore background operations don't run. Learn more in [Administration mode](admin-mode.md).
 
-**Can we migrate all users of the Dataverse organization?**
+#### Can we migrate all users of the Dataverse organization?
 
 We can migrate all users of the Dataverse organization only if users exist in the destination tenant. For example:
 
@@ -370,26 +371,26 @@ We can migrate all users of the Dataverse organization only if users exist in th
 
 `user002@source.com`, `user002@destination.com`
 
-**What environments are supported for migration?**
+#### What environments are supported for migration?
 
-Only Production and Sandbox environments are supported. Default, Developer, Trial, and Teams environments are not supported.
+Only production and sandbox environments are supported. Default, developer, trial, and Teams environments aren't supported.
 
-**Will the environment physically move to the new tenant?**
+#### Will the environment physically move to the new tenant?
 
-No. The environment remains in place but the dataverse organization is moved to the destination tenant. It is no longer part of the source tenant and is managed under the new environment in Destination tenant.
+No. The environment remains in place, but the Dataverse organization is moved to the destination tenant. It's no longer part of the source tenant and is managed under the new environment in the destination tenant.
 
-**Are there any components that are not fully supported?**
+#### Are there any components that aren't fully supported?
 
-Please refer to the "Before you get Started" section in this TSG to understand which components are supported and which components are not supported.
+Leaern more in "Before you get Started" section in this article to understand which components are supported and which components aren't supported.
 
-**What happens to mailbox configurations?**
+#### What happens to mailbox configurations?
 
 If the mapped user (mentioned in the user mapping file) has a mailbox in the destination tenant, it is automatically configured. Otherwise, manual reconfiguration is required.
 
-**How do I initiate a migration?**
+#### How do I initiate a migration?
 
-The source tenant’s D365 or Power Platform admin must submit a request using PowerShell commands with the environment name, ID, and tenant ID. Please refer above for the commands.
+The source tenant’s Dynamics 365 or Power Platform admin must submit a request using PowerShell commands with the environment name, ID, and tenant ID. Refer to the commands above.
 
-**Is there a self-serve UI option?**
+#### Is there a self-serve UI option?
 
-No, currently we do not support PPAC UI for Tenant To Tenant Migration. It can only be done by powershell.
+No, currently we don't support the Power Platform admin center UI for tenant-to-tenant migration. It can only be done by PowerShell.
