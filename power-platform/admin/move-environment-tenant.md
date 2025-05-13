@@ -381,11 +381,11 @@ No. The environment remains in place, but the Dataverse organization is moved to
 
 #### Are there any components that aren't fully supported?
 
-Leaern more in "Before you get Started" section in this article to understand which components are supported and which components aren't supported.
+Leaern more in [Before you get started](#before-you-get-started) to understand which components are supported and which components aren't supported.
 
 #### What happens to mailbox configurations?
 
-If the mapped user (mentioned in the user mapping file) has a mailbox in the destination tenant, it is automatically configured. Otherwise, manual reconfiguration is required.
+If the mapped user (mentioned in the user mapping file) has a mailbox in the destination tenant, it's automatically configured. Otherwise, manual reconfiguration is required.
 
 #### How do I initiate a migration?
 
