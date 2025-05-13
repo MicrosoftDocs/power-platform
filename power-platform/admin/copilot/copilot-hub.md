@@ -18,33 +18,35 @@ contributors:
 
 [!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
-The **Copilot** page is a centralized location in the Power Platform admin center for usage and cost insights, upcoming features, learning documents, and granular controls to scale Copilot and agent adoption in Power Platform. Tenant admins and environment admins can access these resources in one place by selecting **Copilot** in the navigation pane.
+The **Copilot** area in the Power Platform admin center is a centralized location for usage and cost insights, upcoming features, learning documents, and granular controls to scale Copilot and agent adoption in Power Platform. Tenant admins and environment admins can access these resources in one place by selecting **Copilot** in the navigation pane.
 
 # [New admin center](#tab/new)
 
 [This content is prerelease documentation and is subject to change.]
 
+When you select **Copilot** in the navigation pane, the following pages are available for you to select in the **Copilot** pane of the Power Platform admin center.
+
 ## Get started 
 
-Resources and documents to help admins better understand how Copilot works, data and security fundamentals for Copilot features, and Microsoft's Responsible AI principles are available in the **Get started** section. These documents are updated over time as new Copilot capabilities are released. 
+Resources and documents to help admins better understand how Copilot works, data and security fundamentals for Copilot features, and Microsoft's Responsible AI principles are available in the **Get started** page. These documents are updated over time as new Copilot capabilities are released. 
 
 ## What's new
 
-The **What’s new** section in **Copilot** area provides admins with a centralized location to view notifications and updates about upcoming AI capabilities. Admins can learn about the capability, how it impacts their organization, and prepare environment configurations for the new capability. It also includes capabilities that have recently become available. 
+The **What’s new** page in the **Copilot** area provides admins with a centralized location to view notifications and updates about upcoming AI capabilities. Admins can learn about the capability, how it impacts their organization, and prepare environment configurations for the new capability. It also includes capabilities that have recently become available. 
 
 ## Settings
 
-The **Settings** section displays settings grouped by product. Some settings span across Power Platform and are located at the top in the Power Platform section. Settings can be configured at the environment level, with some settings also configurable through environment groups and rules. Selecting a setting opens a panel where you can select your environment, select **Add**, and configure the control. Some settings in the Copilot Studio product direct you to documentation with instructions on how you can configure a data loss prevention (DLP) policy.
+The **Settings** page displays settings grouped by product. Some settings span across Power Platform and are located at the top in the **Power Platform** section. Settings can be configured at the environment level, with some settings also configurable through environment groups and rules. Selecting a setting opens a panel where you can select your environment, select **Add**, and configure the control. Some settings in the Copilot Studio product direct you to documentation with instructions on how you can configure a data loss prevention (DLP) policy.
 
 ## Product pages 
 The product pages contain usage and cost insights specific to each product. Currently, there are product pages for **Copilot Studio**, **Power Apps**, and **Power Pages**.
 
 ### Copilot Studio
 
-The **Copilot Studio** section provides valuable insights about agents built in Copilot Studio. Admins can view message consumption data, with additional licensing details available through the **Licensing** area of the Power Platform admin center. Admins can view the number of active agents, defined as agents with active sessions in the last 28 days, and the agent session success rate, which is the percentage of sessions resolved by conversational agents or runs that are successful for autonomous agents. Furthermore, the agent table displays the top 20 agents ranked by monthly active sessions.  
+The **Copilot Studio** page provides valuable insights about agents built in Copilot Studio. Admins can view message consumption data, with additional licensing details available through the **Licensing** area of the Power Platform admin center. Admins can view the number of active agents, defined as agents with active sessions in the last 28 days, and the agent session success rate, which is the percentage of sessions resolved by conversational agents or runs that are successful for autonomous agents. Furthermore, the agent table displays the top 20 agents ranked by monthly active sessions.  
 
 > [!Note]
-> - The **Copilot Studio** section doesn't include agents built with Microsoft 365 Agent Builder at this time.
+> - The **Copilot Studio** page doesn't include agents built with Microsoft 365 Agent Builder at this time.
 > - During the initial weeks of rollout, data is populated over a 28-day lookback period, resulting in an incomplete month initially.
 
 ### Power Apps
