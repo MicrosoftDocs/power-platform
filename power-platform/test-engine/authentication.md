@@ -18,7 +18,44 @@ contributors:
 
 Authentication is a critical component of the test automation process. This article focuses on browser-based authentication options within the Test Engine which offers a range of options to authenticate with Microsoft Entra.
 
+<!-- 
+I want to remove this image and replace with text.
+I don't feel this image adds value, it seems more like a slide to speak over in a presentation rather than something than better communciates the information in docs. Pictures primarily including text should generally be avoided. 
+
+-->
+
 :::image type="content" source="media/authentication-options.png" alt-text="Overview of authentication options in Test Engine":::
+
+<!-- Example columns start -->
+
+:::row:::
+   :::column::: 
+   **Browser based** Persist session cookies
+   :::column-end:::
+   **Certificate based authentication**
+   :::column:::
+   :::column-end:::
+    **Conditional access policy**
+   :::column:::
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column:::
+   - Requires user interaction with MFA
+   - Governed by "Stay Signed In" and conditional access policies
+   :::column-end:::
+   :::column:::
+   - Can configure a certificate as optional MFA configured for the user persona
+   - Issue certificate and store in Release Aget (Power Automate Desktop of Build Agent)
+   :::column-end:::
+   :::column:::
+   - Operating System, Intune Managed, Browser Type, Location, Risk Profile..
+   - For projects like CoE Kit we use Windows 11, Intune managed agents with conditional access policy applied
+   :::column-end:::
+:::row-end:::
+
+
+<!-- Example columns end -->
 
 These methods can range to include the following scenarios:
 
