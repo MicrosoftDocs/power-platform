@@ -268,4 +268,8 @@ Preview.SimulateDataverse({
 });
 ```
 
+### Related articles
+
+[Dataverse and Connector Simulation with Test Engine (preview)](simulation.md)
+
 [!INCLUDE [footer-banner](../includes/footer-banner.md)]

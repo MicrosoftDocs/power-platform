@@ -48,7 +48,7 @@ Power Fx, the low-code language used in Power Apps, helps abstract the complexit
 
 Here's an example of how Power Fx can be used to handle a consent dialog in a custom page:
 
-```powerfx
+```powerappsfl
 Preview.ConsentDialog(Table({Text: "Center of Excellence Setup Wizard"}))
 ```
 
