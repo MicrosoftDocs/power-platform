@@ -11,70 +11,146 @@ metadata:
   ms.subservice: guidance
   ms.topic: hub-page
   ms.collection: collection
-  author: sericks007
-  ms.author: sericks
-  ms.date: 04/17/2025
+  author: jhaskett-msft
+  ms.author: jhaskett
+  ms.date: 05/14/2025
 
 # highlightedContent section (optional)
 # Maximum of 8 items
 
 # productDirectory section (optional)
 productDirectory:
+  title: Power Platform adoption guidance # < 60 chars (optional)
+  summary: Find guidance for each phase of your Power Platform adoption journey. # < 160 chars (optional)
   items:
     # Card
-    - title: Adoption best practices
+    - title: Strategy
       # imageSrc should be square in ratio with no white space
-      imageSrc: ./media/sample-adoption.svg
+      imageSrc: ./media/strategy.svg
       links:
-        - url: /power-platform/guidance/adoption/methodology
-          text: Adoption overview
+        - url: /power-platform/guidance/adoption/take-assessment
+          text: Assess Power Platform adoption strategy
+        - url: /power-platform/guidance/adoption/vision
+          text: Define vision, metrics and goals 
+        - url: /power-platform/guidance/adoption/business-value
+          text: Measure and communicate business value
         - url: /power-platform/guidance/adoption/strategy-best-practices
-          text: Strategy and vision
+          text: More...
+    - title: Plan
+      # imageSrc should be square in ratio with no white space
+      imageSrc: ./media/plan.svg
+      links:
+        - url: /power-platform/guidance/adoption/roles
+          text: Define roles and responsibilities
+        - url: /power-platform/guidance/adoption/delivery-models
+          text: Evaluate delivery models
+        - url: /power-platform/guidance/adoption/license-assignment-strategies
+          text: Establish license assignment strategies
+        - url: /power-platform/guidance/adoption/plan-overview
+          text: More...
+    - title: Security
+      # imageSrc should be square in ratio with no white space
+      imageSrc: ./media/secure.svg
+      links:
+        - url: /power-platform/guidance/adoption/security-posture-management
+          text: Enhance your security posture 
+        - url: /power-platform/guidance/adoption/data-protection
+          text: Establish data protection and privacy controls
+        - url: /power-platform/guidance/adoption/conditional-access
+          text: Configure identity and access management
+        - url: /power-platform/guidance/adoption/secure-overview
+          text: More...
+    - title: Governance
+      # imageSrc should be square in ratio with no white space
+      imageSrc: ./media/govern.svg
+      links:
+        - url: /power-platform/guidance/adoption/govern-at-scale
+          text: Management at scale
+        - url: /power-platform/guidance/adoption/environment-strategy
+          text: Establish an environment strategy
+        - url: /power-platform/guidance/adoption/reactive-governance
+          text: Implement reactive governance controls
         - url: /power-platform/guidance/adoption/admin-best-practices
-          text: Admin and governance
+          text: More...
+    - title: Operations
+      # imageSrc should be square in ratio with no white space
+      imageSrc: ./media/operate.svg
+      links:
+        - text: Establish effective ALM practices
+          url: adoption/alm.md
+        - text: Gain insights into Power Platform adoption
+          url: adoption/observability.md
+        - text: Monitor license and capacity consumption
+          url: adoption/cds-usage.md
+        - text: More...
+          url: adoption/operate-overview.md
+    - title: Availability
+      # imageSrc should be square in ratio with no white space
+      imageSrc: ./media/availability.svg
+      links:
+        - text: Plan mission critical workloads
+          url: adoption/plan-mission-critical.md
+        - text: Build a disaster recovery plan
+          url: adoption/plan-disaster-recovery.md
+        - text: More...
+          url: adoption/availability-overview.md
+    - title: Readiness
+      # imageSrc should be square in ratio with no white space
+      imageSrc: ./media/innovate.svg
+      links:
+        - text: Establish a training and upskilling strategy
+          url: adoption/training-strategy.md
+        - text: Set up tools to support your community
+          url: adoption/wiki-community.md          
+        - text: Host internal training events
+          url: adoption/in-a-day.md
+        - text: More...
+          url: adoption/ready-overview.md
+    - title: Community
+      # imageSrc should be square in ratio with no white space
+      imageSrc: ./media/nurture.svg
+      links:
+        - url: /power-platform/guidance/adoption/community-goals
+          text: Define community purpose and goals
+        - url: /power-platform/guidance/adoption/onboard-makers
+          text: Onboard new makers
+        - url: /power-platform/guidance/adoption/show-and-tell
+          text: Share success stories
         - url: /power-platform/guidance/adoption/nurture-best-practices
           text: Nurture and educate
-    # Card
-    - title: Center of Excellence (CoE) Kit
-      imageSrc: ./media/sample-coe.svg
-      links:
-        - url: /power-platform/guidance/coe/overview
-          text: CoE overview
-        - url: /power-platform/guidance/coe/starter-kit-explained
-          text: What's in the CoE starter Kit
-        - url: /power-platform/guidance/coe/setup
-          text: Set up the CoE starter Kit
-        - url: /power-platform/guidance/coe/power-bi
-          text: Use the CoE starter Kit
-    # Card
-    - title: Creator Kit
-      imageSrc: ./media/sample-creator.svg
-      links:
-        - url: /power-platform/guidance/creator-kit/overview
-          text: Creator Kit overview
-        - url: /power-platform/guidance/creator-kit/components
-          text: What's in the Creator Kit
-        - url: /power-platform/guidance/creator-kit/setup
-          text: Install the Creator Kit
-        - url: /power-platform/guidance/creator-kit/creator-kit-explained
-          text: Use the Creator Kit
-    # Card
-    - title: More...
-      imageSrc: ./media/sample-more.svg
-      links:
-        - url: /power-platform/architecture/
-          text: Power Platform and Copilot Studio Architecture Center
-        - url: /power-platform/well-architected/
-          text: Power Platform Well-Architected
-        - url: /power-platform/guidance/white-papers
-          text: White papers
-        - url: /power-platform/guidance/icons
-          text: Power Platform icons
 
 # additionalContent section (optional)
 additionalContent:
   # Supports up to 4 subsections
   sections:
+    - title: Tools and resources
+      items:
+        - title: Power Platform toolkits
+          links:
+           - url: /power-platform/guidance/coe/overview
+             text: Center of Excellence Starter Kit overview
+           - url: /power-platform/guidance/coe/business-value-toolkit
+             text: Business value toolkit
+           - url: /power-platform/guidance/creator-kit/overview
+             text: Creator Kit overview
+           - url: /power-platform/guidance/toolkits/
+             text: More...
+        - title: Real-world case studies
+          links:
+            - url: /power-platform/guidance/case-studies/boost-efficiency-experience-case-study
+              text: A1 Inteligencia em Viagens boosts team efficiency
+            - url: /power-platform/guidance/case-studies/streamline-employee-onboarding
+              text: Epiq streamlines employee onboarding
+            - url: /power-platform/guidance/case-studies/nonprofit
+              text: Degrees of Change automates nonprofit operations
+            - url: /power-platform/guidance/case-studies/index
+              text: More...
+        - title: More...
+          links:
+            - url: /power-platform/guidance/white-papers
+              text: White papers
+            - url: /power-platform/guidance/icons
+              text: Power Platform icons
     - title: Related guidance centers
       summary: Guidance information focused on individual Power Platform components # < 160 chars (optional)
       items:
@@ -82,6 +158,8 @@ additionalContent:
         # Card
         - title: Power Apps guidance
           links:
+            - text: Power Apps coding guidelines
+              url: /power-apps/guidance/coding-guidelines/overview
             - text: Power Apps patterns
               url: /power-apps/guidance/patterns/overview
             - text: Planning a Power Apps project
@@ -93,7 +171,9 @@ additionalContent:
         # Card
         - title: Power Automate guidance
           links:
-            - text: Planning a Power Automate project
+            - text: Power Automate coding guidelines
+              url: /power-automate/guidance/coding-guidelines/
+            - text: Plan a Power Automate project
               url: /power-automate/guidance/planning/introduction
             - text: RPA with SAP
               url: /power-automate/guidance/rpa-sap-playbook/introduction
@@ -101,17 +181,6 @@ additionalContent:
               url: /power-automate/guidance/automation-kit/overview/introduction
             - text: More...
               url: /power-automate/guidance
-        # Card
-        - title: Power BI guidance
-          links:
-            - text: Migrate to Power BI
-              url: /power-bi/guidance/powerbi-migration-overview
-            - text: Power BI adoption roadmap
-              url: /power-bi/guidance/powerbi-adoption-roadmap-overview
-            - text: Power BI implementation planning
-              url: /power-bi/guidance/powerbi-implementation-planning-introduction
-            - text: More...
-              url: /power-bi/guidance
         # Card
         - title: Power Pages guidance
           links:
@@ -132,6 +201,26 @@ additionalContent:
               url: /power-virtual-agents/guidance/measuring-engagement
             - text: More...
               url: /power-virtual-agents/guidance
+        - title: Power Platform Well-Architected guidance
+          links:
+            - text: What is Power Platform Well-Architected?
+              url: /power-platform/well-architected/what-is-power-well-architected
+            - text: Power Platform Well-Architected pillars
+              url: /power-platform/well-architected/pillars
+            - text: Implementing recommendations
+              url: /power-platform/well-architected/implementing-recommendations
+            - text: More...
+              url: /power-platform/well-architected
+        - title: Power Platform and Copilot Studio Architecture Center
+          links:
+            - text: Welcome to the Architecture Center
+              url: /power-platform/architecture/architecture-center-overview
+            - text: Architecture key concepts
+              url: /power-platform/architecture/key-concepts
+            - text: Browse reference architectures
+              url: /power-platform/architecture/reference-architectures
+            - text: More...
+              url: /power-platform/architecture
 
     - title: Documentation # < 60 chars (optional)
       summary: Official documentation for Power Platform components
