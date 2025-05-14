@@ -4,7 +4,7 @@ description: Configure server-based authentication with SharePoint on-premises
 author: adrianorth 
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 05/12/2025
+ms.date: 05/14/2025
 ms.subservice: admin
 ms.author: aorth
 ms.reviewer: sericks
@@ -37,7 +37,7 @@ The following memberships and privileges are required to enable SharePoint docum
 <a name="setups2s"></a>   
 
 ## Set up server-to-server authentication with SharePoint on-premises  
- Follow the steps in the order provided to set up customer engagement apps with SharePoint 2016 on-premises.  
+Follow the steps, in the order provided, to set up customer engagement apps with SharePoint 2016 on-premises.  
   
 > [!IMPORTANT]
 > The steps described here must be completed in the order provided. If a task isn't completed, such as a [!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] command that returns an error message, the issue must be resolved before you continue to the next command, task, or step.  
