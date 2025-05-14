@@ -129,7 +129,7 @@ A broader range of customizable filters is available so you can view your invent
 
 Tenant-level insights in the Power Platform admin center provide you with a great starting point to get familiar with your tenants adoption of Power Platform. As your need for those insights matures, you can explore the rich and customizable reports of the CoE Starter Kit.
 
-## See also
+## Next steps
 
 - Explore the [Power Apps admin documentation](../../admin/admin-documentation.md).
 

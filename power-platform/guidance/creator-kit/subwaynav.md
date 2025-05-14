@@ -34,7 +34,7 @@ A control used to guide users through a process.
 ## Description
 The `SubwayNav` control allows you to visualize the steps required for a given wizard. The Wizard is a component that guides users to complete predefined steps to achieve a setup or creation task.
 
-This code component provides a wrapper around a forked version of the [Office 365 Admin Control `SubwayNav`](https://admincontrolsdemoapps.blob.core.windows.net/release/admin-controls/45.0.2/index.html#/examples/subwaynav). 
+This code component provides a wrapper around a forked version of the Office 365 Admin Control `SubwayNav`.
 
 > [!IMPORTANT]
 > **Do not open bugs with the Admin Controls team** - always submit issues to the Creator Kit Github Repository at [aka.ms/creatorkit/bug](https://aka.ms/creatorkit/bug).
