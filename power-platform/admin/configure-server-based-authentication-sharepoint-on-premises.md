@@ -109,9 +109,10 @@ Before you configure customer engagement apps and [!INCLUDE[pn_SharePoint_short]
   }
   
   $Params = @{
+      Name = "Microsoft.Graph"
       Function = @("Connect-MgGraph", "Get-MgOrganization")
   }
-  Import-Module "Microsoft.Graph" @Params
+  Import-Module @Params
    
   if (-not (Get-Module -ListAvailable -Name "Microsoft.Graph.Identity.DirectoryManagement")) {
       $Params = @{
@@ -122,9 +123,10 @@ Before you configure customer engagement apps and [!INCLUDE[pn_SharePoint_short]
   }
   
   $Params = @{
+      Name = "Microsoft.Graph.Identity.DirectoryManagement"
       Function = @("Get-MgServicePrincipal", "Update-MgServicePrincipal")
   }
-  Import-Module "Microsoft.Graph.Identity.DirectoryManagement" @Params
+  Import-Module @Params
   ```  
 
 - A suitable claims-based authentication mapping type to use for mapping identities between customer engagement apps and [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises. By default, email address is used. Learn more in [Grant customer engagement apps permission to access SharePoint and configure the claims-based authentication mapping](#grant-customer-engagement-apps-permission-to-access-sharepoint-and-configure-the-claims-based-authentication-mapping). 
@@ -155,7 +157,7 @@ On the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-pr
    # Note: If there are multiple sites, and the host is the same, no action is needed.
    #       If the host is different, each site needs to be configured to add the 
    #       host to the service principal.
-   $uri = [System.Uri]"https://auth.meddling.net/sites/SP2016"
+   $uri = [System.Uri]"https://SharePoint.constoso.com/sites/salesteam"
    $hostName = $uri.Host
    $baseUrl = "$($uri.Scheme)://$hostName"
    $servicePrincipalName = $baseUrl
@@ -176,9 +178,11 @@ On the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-pr
 1. Get the [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] object (tenant) ID and [!INCLUDE[pn_SharePoint_Server_short](../includes/pn-sharepoint-server-short.md)] Service Principal Name (SPN).  
   
    ```powershell
-   Update-MgServicePrincipal `
-       -ServicePrincipalId $SharePoint.Id `
-       -ServicePrincipalNames $UpdatedServicePrincipalNames
+   $Params = @(
+       ServicePrincipalId = $SharePoint.Id
+       ServicePrincipalNames = $UpdatedServicePrincipalNames
+   )
+   Update-MgServicePrincipal @Params
    ```  
   
 After these commands complete, don't close the SharePoint 2016 Management Shell. Continue to the next step.  
@@ -223,11 +227,13 @@ Set-SPAuthenticationRealm -Realm $SPOContextId
 3. Create the new token control service application proxy in [!INCLUDE[pn_azure_active_directory](../includes/pn-azure-active-directory.md)].  
   
    ```powershell
-   $obo = New-SPTrustedSecurityTokenIssuer `
-       –Name "D365Obo" `
-       –IsTrustBroker:$true `
-       –MetadataEndpoint $metadataEndpoint `
-       -RegisteredIssuerName $ oboissuer  
+   $Params = @(
+       Name = "D365Obo"
+       IsTrustBroker = $true
+       MetadataEndpoint = $metadataEndpoint
+       RegisteredIssuerName = $oboissuer
+   )
+   $obo = New-SPTrustedSecurityTokenIssuer @Params
    ```  
   
 ### Grant customer engagement apps permission to access SharePoint and configure the claims-based authentication mapping
@@ -242,10 +248,12 @@ The following commands require [!INCLUDE[pn_SharePoint_short](../includes/pn-sha
     
    ```powershell
    $site = Get-SPSite "https://sharepoint.contoso.com/sites/crm/"
-   Register-SPAppPrincipal `
-       -site $site.RootWeb `
-       -NameIdentifier $issuer `
-       -DisplayName "crmobo"
+   $Params = @(
+       site = $site.RootWeb
+       NameIdentifier = $issuer
+       DisplayName = "crmobo"
+   )
+   Register-SPAppPrincipal @Params
    ```  
   
 2. Grant customer engagement apps access to the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] site. Replace `<https://sharepoint.contoso.com/sites/crm/>` with your [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] site URL.  
@@ -261,14 +269,19 @@ The following commands require [!INCLUDE[pn_SharePoint_short](../includes/pn-sha
    > If there are multiple sites, perform the script for each site.
 
    ```powershell
-   $app = Get-SPAppPrincipal `
-       -NameIdentifier $issuer `
-       -Site "https://sharepoint.contoso.com/sites/crm/"  
-   Set-SPAppPrincipalPermission `
-       -AppPrincipal $app `
-       -Site $site.Rootweb `
-       -Scope "sitecollection" `
-       -Right "FullControl"  
+   $Params = @(
+       NameIdentifier = $issuer
+       Site = "https://sharepoint.contoso.com/sites/crm/"
+   )
+   $app = Get-SPAppPrincipal @Params
+   
+   $Params = @(
+       AppPrincipal = $app
+       Site = $site.Rootweb
+       Scope = "sitecollection"
+       Right = "FullControl"
+   )
+   Set-SPAppPrincipalPermission @Params
    ```  
   
 3. Set the claims-based authentication mapping type.  
@@ -277,10 +290,12 @@ The following commands require [!INCLUDE[pn_SharePoint_short](../includes/pn-sha
    >  By default, the claims-based authentication mapping uses the user's [!INCLUDE[pn_Windows_Live_ID](../includes/pn-windows-live-id.md)] email address and the user's [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises **work email** address for mapping. When you use claims-based authentication mapping, the user's email addresses must match between the two systems. Learn more in [Selecting a claims-based authentication mapping type](../admin/configure-server-based-authentication-sharepoint-on-premises.md#BKMK_selectclmmap).  
   
    ```powershell
-   $map1 = New-SPClaimTypeMapping `
-       -IncomingClaimType "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress" `
-       -IncomingClaimTypeDisplayName "EmailAddress" `
-       -SameAsIncoming
+   $Params = @(
+       IncomingClaimType = "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress"
+       IncomingClaimTypeDisplayName = "EmailAddress"
+       SameAsIncoming
+   )
+   $map1 = New-SPClaimTypeMapping @Params
    ```  
   
 ### Run the Enable server-based SharePoint integration wizard
