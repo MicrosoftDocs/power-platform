@@ -18,31 +18,25 @@ contributors:
 
 Power Fx is a powerful low-code language used in Power Apps, and it can be extended using C# to create custom test functions. This article explains how to create a C# Power Fx test function, providing a seamless experience for both makers and developers.
 
-## Extending Power Fx Test Functions Using C#
-
 The "no cliffs" extensibility model of Power Apps Test Engine ensures that users can extend the capabilities of the Power Apps Test Engine without hitting any barriers. This model allows developers to create custom functions using C#, which can be integrated into Power Fx to handle complex scenarios.
 
-## Example
+## Consent Dialog example
 
 Here's an example of a Power Fx function that provides the outline of code to handle a conditional consent dialog in a [canvas application](./canvas-application.md).
-
-## What is a Consent Dialog?
 
 A [consent dialog](/power-apps/maker/canvas-apps/connections-list#connection-consent-dialog) is a prompt that appears to users, asking for their permission to access certain resources or perform specific actions. This dialog is crucial for maintaining security and ensuring that users are aware of and agree to the actions being taken on their behalf.
 
 ![Example of the connection consent dialog for an app connecting to a SharePoint site.](/power-apps/maker/canvas-apps/media/connections-list/power_apps_consent_dialog.png)
 
-## Importance of the Consent Dialog
-
 The consent dialog is important because it helps prevent unauthorized access and actions. It ensures that users are informed and provide their explicit consent before any sensitive operations are performed. This is important in scenarios where the application needs to access user data or perform actions and this conditional behavior could affect automated tests.
 
-## Challenges with Consent Dialogs in Testing
+### Challenges with Consent Dialogs in testing
 
 One of the challenges with consent dialogs is that they can make tests nondeterministic. The prompt can conditionally appear based on various factors, such as user permissions or previous interactions. This conditional appearance can complicate the testing process, as the Test Engine needs to handle these dialogs appropriately.
 
 ## Abstracting Complexity with Power Fx
 
-Power Fx, the low-code language used in Power Apps, helps abstract the complexity of conditionally waiting for the consent dialog and creating connections if needed. Using Power Fx, makers can define the logic for handling consent dialogs in a more straightforward and intuitive manner.
+Power Fx helps abstract the complexity of conditionally waiting for the consent dialog and creating connections if needed. Using Power Fx, makers can define the logic for handling consent dialogs in a more straightforward and intuitive manner.
 
 ### Example: Handling Consent Dialog with Power Fx
 
@@ -54,7 +48,7 @@ Preview.ConsentDialog(Table({Text: "Center of Excellence Setup Wizard"}))
 
 In this example, the `ConsentDialog` function checks if the consent dialog is visible. If it is, the function can respond to the dialog confirming consent for the test account. Once the dialog is handled the remaining test steps will be executed.
 
-The Table argument allows the consent dialog wait process to exit is a label with the provided text is visible.
+The `Table` argument allows the consent dialog wait process to exit is a label with the provided text is visible.
 
 ## Extending Power Fx Test functions using C#
 
@@ -85,21 +79,28 @@ namespace testengine.module
               .Add(new NamedFormulaType("Text", FormulaType.String, displayName: "Text"));
     
         /// <summary>
-        /// Constructor: Initializes the function with necessary dependencies, including ITestInfraFunctions, ITestState, and ILogger.
+        /// Constructor: Initializes the function with necessary dependencies, 
+        /// including ITestInfraFunctions, ITestState, and ILogger.
         /// </summary>
         /// <param name="testInfraFunctions">The test infrastructure functions.</param>
         /// <param name="testState">The test state.</param>
         /// <param name="logger">The logger instance.</param>
-        public ConsentDialogFunction(ITestInfraFunctions testInfraFunctions, ITestState testState, ILogger logger)
-            : base(DPath.Root.Append(new DName("Preview")), "ConsentDialog", FormulaType.Blank, SearchType)
-        {
-            _testInfraFunctions = testInfraFunctions;
-            _testState = testState;
-            _logger = logger;
-        }
+        public ConsentDialogFunction(ITestInfraFunctions testInfraFunctions, 
+           ITestState testState, 
+           ILogger logger) : base(DPath.Root.Append(
+               new DName("Preview")), 
+               "ConsentDialog", 
+               FormulaType.Blank, 
+               SearchType)
+               {
+                  _testInfraFunctions = testInfraFunctions;
+                  _testState = testState;
+                  _logger = logger;
+               }
 
         /// <summary>
-        /// Execute Method: Logs the execution and calls the ExecuteAsync method to handle the consent dialog.
+        /// Execute Method: Logs the execution and calls the ExecuteAsync 
+        /// method to handle the consent dialog.
         /// </summary>
         /// <param name="searchFor">The table value to search for.</param>
         /// <returns>A blank value.</returns>
@@ -120,7 +121,11 @@ namespace testengine.module
         /// <returns>A task representing the asynchronous operation.</returns>
         private async Task ExecuteAsync(TableValue searchFor)
         {
-            var page = _testInfraFunctions.GetContext().Pages.Where(p => p.Url.Contains("main.aspx")).First();
+            var page = _testInfraFunctions
+               .GetContext()
+               .Pages
+               .Where(p => p.Url.Contains("main.aspx"))
+               .First();
 
             // ... IPage to handle consent dialog with timeout
         }
@@ -128,16 +133,13 @@ namespace testengine.module
 }
 ```
 
-### Explanation
+### ConsentDialogFunction example explanation
 
-- **Namespace and Imports**: The code begins by importing necessary namespaces and defining the testengine.module namespace.
-- **Class Definition**: The `ConsentDialogFunction` class inherits from `ReflectionFunction` and defines the custom function ConsentDialog.
-- **Constructor**: The constructor initializes the function with necessary dependencies, including ITestInfraFunctions, ITestState, and ILogger.
-- **Execute Method**: The `Execute` method logs the execution and calls the `ExecuteAsync` method to handle the consent dialog.
-- **ExecuteAsync Method**: The `ExecuteAsync` method retrieves the page context and handles the consent dialog with a timeout.
+- **Namespace and Imports**: Imports necessary namespaces and defining the `testengine.module` namespace.
+- **Class Definition**: The `ConsentDialogFunction` class inherits from [ReflectionFunction](/dotnet/api/microsoft.powerfx.reflectionfunction) and defines the custom function `ConsentDialog`.
+- **Constructor**: Initializes the function with necessary dependencies, including `ITestInfraFunctions`, `ITestState`, and [ILogger](/dotnet/api/microsoft.extensions.logging.ilogger).
+- **Execute Method**: Logs the execution and calls the `ExecuteAsync` method to handle the consent dialog.
+- **ExecuteAsync Method**: Retrieves the page context and handles the consent dialog with a timeout.
 
-## Conclusion
-
-By extending Power Fx with C#, developers can create custom test functions that handle complex scenarios like consent dialogs. This approach uses the "no cliffs" extensibility model of Power Apps Test Engine, providing a robust and flexible solution for testing Power Apps.
 
 [!INCLUDE [footer-banner](../includes/footer-banner.md)]
