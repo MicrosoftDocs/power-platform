@@ -105,8 +105,7 @@ Before you configure customer engagement apps and [!INCLUDE[pn_SharePoint_short]
   }
   Import-Module "Microsoft.Graph" -Function @("Connect-MgGraph", "Get-MgOrganization")
    
-  if (-not (Get-Module -ListAvailable `
-          -Name "Microsoft.Graph.Identity.DirectoryManagement")) {
+  if (-not (Get-Module -ListAvailable -Name "Microsoft.Graph.Identity.DirectoryManagement")) {
       Install-Module -Name "Microsoft.Graph.Identity.DirectoryManagement" `
           -Scope CurrentUser -Force
   }
