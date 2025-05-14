@@ -171,18 +171,40 @@ On the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-pr
    
    # Retrieve SharePoint Online Service Principal
    $SharePoint = Get-MgServicePrincipal -Filter "AppId eq '$SPOAppId'"
-   $UpdatedServicePrincipalNames =
-       $SharePoint.ServicePrincipalNames + $servicePrincipalName
+
+   $UpdatedServicePrincipalNames = $SharePoint.ServicePrincipalNames |
+       Where-Object { $_ -ne $servicePrincipalName }
+   $UpdatedServicePrincipalNames += $servicePrincipalName
    ```
    
 1. Get the [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] object (tenant) ID and [!INCLUDE[pn_SharePoint_Server_short](../includes/pn-sharepoint-server-short.md)] Service Principal Name (SPN).  
   
    ```powershell
-   $Params = @{
-       ServicePrincipalId = $SharePoint.Id
-       ServicePrincipalNames = $UpdatedServicePrincipalNames
+   $maxRetries = 5
+   $retryDelay = 5 # seconds 
+   
+   for ($retry = 1; $retry -le $maxRetries; $retry++) {
+       try {
+           $Params = @{
+    	         ServicePrincipalId = $SharePoint.Id
+    			     ServicePrincipalNames = $UpdatedServicePrincipalNames
+    		   }
+    		   Update-MgServicePrincipal @Params
+    		   Write-Host "Service Principal Names updated successfully."
+    		   break
+    	 }
+    	 catch {
+    		   if ($_.Exception.Message -match "Directory_ConcurrencyViolation" -and
+               $retry -lt $maxRetries) {
+    			     Write-Host "Concurrency violation detected. (Attempt $retry of $maxRetries)"
+    			     Start-Sleep -Seconds $retryDelay
+      		 }
+      		 else {
+        			 Write-Host "Failed to update Service Principal Names. Error: $_"
+    		    	 exit 1
+           }
+       }
    }
-   Update-MgServicePrincipal @Params
    ```  
   
 After these commands complete, don't close the SharePoint 2016 Management Shell. Continue to the next step.  
@@ -227,13 +249,24 @@ Set-SPAuthenticationRealm -Realm $SPOContextId
 3. Create the new token control service application proxy in [!INCLUDE[pn_azure_active_directory](../includes/pn-azure-active-directory.md)].  
   
    ```powershell
-   $Params = @{
-       Name = "D365Obo"
-       IsTrustBroker = $true
-       MetadataEndpoint = $metadataEndpoint
-       RegisteredIssuerName = $oboissuer
+   $existingIssuer = Get-SPTrustedSecurityTokenIssuer "D365Obo"
+   if ($existingIssuer) {
+       $Params = @{
+           Identity = $existingIssuer
+           IsTrustBroker = $true
+           MetadataEndpoint = $metadataEndpoint
+           RegisteredIssuerName = $oboissuer
+       }
+       Set-SPTrustedSecurityTokenIssuer @Params
+   } else {
+       $Params = @{
+           Name = "D365Obo"
+           IsTrustBroker = $true
+           MetadataEndpoint = $metadataEndpoint
+           RegisteredIssuerName = $oboissuer
+       }
+       $obo = New-SPTrustedSecurityTokenIssuer @Params
    }
-   $obo = New-SPTrustedSecurityTokenIssuer @Params
    ```  
   
 ### Grant customer engagement apps permission to access SharePoint and configure the claims-based authentication mapping
@@ -293,9 +326,8 @@ The following commands require [!INCLUDE[pn_SharePoint_short](../includes/pn-sha
    $Params = @{
        IncomingClaimType = "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress"
        IncomingClaimTypeDisplayName = "EmailAddress"
-       SameAsIncoming
    }
-   $map1 = New-SPClaimTypeMapping @Params
+   $map1 = New-SPClaimTypeMapping @Params -SameAsIncoming
    ```  
   
 ### Run the Enable server-based SharePoint integration wizard
