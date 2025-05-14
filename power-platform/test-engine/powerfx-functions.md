@@ -18,15 +18,20 @@ contributors:
 > [!NOTE]
 > [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
 
-There are several functions defined for the test framework.
+Test engine uses these existing PowerFx functions:
 
-- [Assert](#assert)
+- [Assert](../power-fx/reference/function-assert.md)
+- [Select function](../power-fx/reference/function-select.md)
+- [SetProperty function](../power-fx/reference/function-setproperty.md)
+
+
+These functions are available to use in Test engine only:
+
 - [Screenshot](#screenshot)
-- [Select](#select)
-- [SetProperty](#setproperty)
 - [Wait](#wait)
 
-There are also preview functions that are provided:
+
+ Test engine provides these preview functions:
 
 - [Preview.AIExecutePrompt](#previewaiexecuteprompt)
 - [Preview.ConsentDialog](#previewconsentdialog)
@@ -38,21 +43,11 @@ There are also preview functions that are provided:
 - [Preview.SimulateConnector](#previewsimulateconnector)
 - [Preview.SimulateDataverse](#previewsimulatedataverse)
 
-## Assert
+## Test engine functions
 
-`Assert(BooleanExpression)`
+These functions are only available to be used with Test engine
 
-`Assert(BooleanExpression, Message)`
-
-The `Assert` function takes in a Power Fx expression that should evaluate to a boolean value. If the value returned is false, the test fails.
-
-### Assert example
-
-`Assert(Label1.Text = "1");`
-
-`Assert(Label1.Text = "1", "Checking that the Label1 text is set to 1");`
-
-## Screenshot
+### Screenshot
 
 `Screenshot(fileNameOfScreenshot)`
 
@@ -60,70 +55,21 @@ This function captures a screenshot of the app at the current point in time. The
 
 > **Note:** Only jpeg and png files are supported.
 
-### Screenshot Example
+#### Screenshot Example
 
 `Screenshot("buttonClicked.png")`
 
-## Select
 
-`Select(control)`
-
-`Select(control, row or column)`
-
-`Select(control, row or column, child control)`
-
-`Select(Index(gallerycontrol.AllItems, row or column).child control)`
-
-This function has the same functionality as the Power Apps  [Select function](../power-fx/reference/function-select.md).
-
-When working with a nested gallery, use [Index](../power-fx/reference/function-first-last.md) within the select function.
-
-### Select example
-
-`Select(Button1)`
-
-`Select(Gallery1,1)`
-
-`Select(Gallery1,1,Button1)`
-
-`Select(Index(Gallery1.AllItems, 2).Icon2)`
-
-`Select(Index(Index(Gallery1.AllItems, 1).Gallery2.AllItems, 4).Icon3);`
-
-## SetProperty
-
-`SetProperty(control.propertyName, propertyValue)`
-
-This function has the same functionality as the Power Apps [SetProperty function](../power-fx/reference/function-setproperty.md).
-
-When working with a nested gallery, use [Index](../power-fx/reference/function-first-last.md) within the `SetProperty` function.
-
-### SetProperty example
-
-`SetProperty(TextInput.Text, "Say Something")`
-
-`SetProperty(Dropdown1.Selected, {Value:"2"})`
-
-`SetProperty(ComboBox1.SelectedItems, Table({Value:"1"},{Value:"2"}))`
-
-`SetProperty(Index(Gallery1.AllItems, 1).TextInput1.Text, "Change the text input")`
-
-`Select(Index(Index(Gallery1.AllItems, 1).Gallery2.AllItems, 1).TextInput1.Text, "Change the text input")`
-
-## Wait
+### Wait
 
 `Wait(Control, Property, Value)`
 
 This function waits for the property of the control to equal the specified value.
 
-### Wait example
+#### Wait example
 
 ` Wait(Label1, "Text", "0")`
 
-### See also
-
-- [Power Apps Test Engine overview (preview)](overview.md)
-- [Power Apps Test Engine YAML format (preview)](yaml.md)
 
 ## Preview Functions
 
@@ -132,7 +78,7 @@ The following functions can optionally be included in tests when the Power Fx Pr
 > [!NOTE]
 > - Preview functions are subject to change. As these functions become ready for wider usage they may move to the `TestEngine` namespace.
 > - You can use User Defined Functions to wrap `Preview` functions to make migration to non preview versions of the function easier.
-> - You could have the model only return a JSON object that you could pars using the `ParseJSON` function.
+> - You could have the model only return a JSON object that you could parse using the `ParseJSON` function.
 
 ### Preview.AIExecutePrompt
 
@@ -140,13 +86,14 @@ The following functions can optionally be included in tests when the Power Fx Pr
 
 Call a [Custom AI Builder prompt](/ai-builder/create-a-custom-prompt) and obtain text results of the execution.
 
-> NOTE: Review the provider [Dataverse AI Integration](./providers.md#ai-integration) for information on availablity and configuration of this function.
+> [!NOTE]
+> Review the provider [Dataverse AI Integration](./providers.md#ai-integration) for information on availablity and configuration of this function.
 
 #### Preview.AIExecutePrompt Example
 
 The following example calls the AI Prompt named **Country Capital** with a parameters value of **Country** and expects the model execution to return a single word **Paris**
 
-```
+```powerappsfl
 Assert("Paris" = Preview.AIExecutePrompt("Country Capital", { Country: "France" }).Text)
 ```
 
@@ -158,7 +105,7 @@ Wait to confirm a consent dialog for a canvas application or Model Driven Applic
 
 #### Preview.ConsentDialog Example
 
-```
+```powerappsfl
 Preview.ConsentDialog(Table({Text: "Your Dialog Title"}));
 ```
 
@@ -170,7 +117,7 @@ Pause the test and display the [Playwright Inspector](https://playwright.dev/doc
 
 #### Preview.Pause Example
 
-```
+```powerappsfl
 Preview.Pause()
 ```
 
@@ -182,9 +129,9 @@ Select a control using Document Object Model
 
 #### Preview.SelectControl Example
 
-Select first Button3 match
+Select first `Button3` match
 
-```
+```powerappsfl
 Preview.SelectControl(Button3,1);
 ```
 
@@ -196,7 +143,7 @@ Execute an action on the current page using a Playwright [CSS or XPath Locator](
 
 #### Preview.PlaywrightAction Examples
 
-```
+```powerappsfl
 Preview.PlaywrightAction("//button", "click");
 Preview.PlaywrightAction("//button", "exists");
 Preview.PlaywrightAction("//button", "wait");
@@ -210,7 +157,7 @@ Execute an action on the current page using a Playwright [CSS or XPath Locator](
 
 #### Preview.PlaywrightActionValue Examples
 
-```
+```powerappsfl
 Preview.PlaywrightAction("//input[@data-id='1']", "fill", "Hello");
 ```
 
@@ -221,17 +168,17 @@ Preview.PlaywrightAction("//input[@data-id='1']", "fill", "Hello");
 Execute the C# script on the current page
 
 > [!NOTE] 
-> This function is only implemented for the Debug build from open source version of Test Engine not in `pac test run`
+> This function is only implemented for the Debug build from open source version of Test Engine not in [pac test run](../developer/cli/reference/test.md#pac-test-run).
 
 ### Preview.PlaywrightScript Example
 
-```
+```powerappsfl
 Preview.PlaywrightScript("sample.csx")
 ```
 
-With the content of the sample.csx similar to
+With the content of the `sample.csx` similar to this code:
 
-```sample.csx
+```csharp
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
@@ -273,8 +220,17 @@ When a call is made from the Power Apps to a connector type found from [List of 
 
 #### Preview.SimulateConnector Example
 
-```
-Preview.SimulateConnector({name: "msnweather", then: {responses: { daily: { day: { summary: "You are seeing the mock response" }}}}})
+```powerappsfl
+Preview.SimulateConnector({
+   name: "msnweather", 
+   then: {responses: { 
+      daily: { 
+         day: { 
+            summary: "You are seeing the mock response" }
+            }
+         }
+      }
+   })
 ```
 
 ### Preview.SimulateDataverse
@@ -283,29 +239,29 @@ Preview.SimulateConnector({name: "msnweather", then: {responses: { daily: { day:
 
 #### Preview.SimulateDataverse Example
 
-This example when a call is made to query the Dataverse entity with logical name `cr693_combotable` it returns the records using [Table](../power-fx/reference/function-table.md) function
+This example when a call is made to query the Dataverse entity with logical name `sample_combotable` it returns the records using [Table](../power-fx/reference/function-table.md) function
 
-```
+```powerappsfl
 Preview.SimulateDataverse({
     Action: "Query",
-    Entity: "cr693_combotable",
+    Entity: "sample_combotable",
     Then: Table(
     {
-        'cr693_name': "Item 1",
-        'cr693_id': 3,
-        'cr693_combotableid': "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
+        'sample_name': "Item 1",
+        'sample_id': 3,
+        'sample_combotableid': "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
         'createdon': "2024-12-02T17:52:45Z"
     },
     {
-        'cr693_name': "RR2",
-        'cr693_id': 4,
-        'cr693_combotableid': "bbbbbbbb-1111-2222-3333-cccccccccccc",
+        'sample_name': "RR2",
+        'sample_id': 4,
+        'sample_combotableid': "bbbbbbbb-1111-2222-3333-cccccccccccc",
         'createdon': "2024-12-02T17:54:45Z"
     },
         {
-        'cr693_name': "RR3",
-        'cr693_id': 5,
-        'cr693_combotableid': "cccccccc-2222-3333-4444-dddddddddddd",
+        'sample_name': "RR3",
+        'sample_id': 5,
+        'sample_combotableid': "cccccccc-2222-3333-4444-dddddddddddd",
         'createdon': "2024-12-02T17:54:45Z"
     }
     )

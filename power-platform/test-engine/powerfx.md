@@ -10,7 +10,6 @@ contributors:
  - JimDaly
  - jt000
  - FrankDahl
- - grant-archibald-md
 ---
 
 # Power Apps Test Engine Power Fx (preview)
