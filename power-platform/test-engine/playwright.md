@@ -16,23 +16,16 @@ contributors:
 > [!NOTE]
 > [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
 
-For many code-first developers, the initial inclination is to use familiar code-first testing tools like [Playwright](https://playwright.dev/) when working with low-code solutions. While this approach might seem logical, it can present several challenges, particularly in terms of scalability and efficiency.
+For many code-first developers, the initial inclination is to use familiar code-first testing tools like [Playwright](https://playwright.dev/) when working with low-code solutions. While this approach might seem logical, it can present several challenges, particularly in terms of scalability and efficiency. The following table lists some of the challenges
 
-## Scale Issues and Resource Constraints
 
-Code-first testing tools often require specialized skills and knowledge, which can be in relatively short supply. This scarcity of resources can create bottlenecks in the testing process, in cases where there isn't enough access skilled testers available to meet the demands of large-scale projects. This limitation can slow down the development cycle and delay the release of new features and updates. 
+|Challenge  |&nbsp;  |
+|---------|---------|
+|**Scale Issues and Resource Constraints**|Code-first testing tools often require specialized skills and knowledge, which can be in relatively short supply. This scarcity of resources can create bottlenecks in the testing process, in cases where there isn't enough access skilled testers available to meet the demands of large-scale projects. This limitation can slow down the development cycle and delay the release of new features and updates. |
+|**Level of Abstraction**|Generative AI can help with generation of Playwright code generally it's still create code at a Document Object Model (DOM) level. Where possible, Test Engine takes advantage of the JavaScript object model of [canvas apps](./canvas-application.md) and [model driven application](./model-driven-application.md) to provide a longer term sustainability of the authored tests.|
+|**Bottleneck in the Testing Process**|Relying solely on code-first testing tools can create a bottleneck in the testing process. As low-code solutions are designed to accelerate development, the testing phase should ideally keep pace with this rapid development cycle. However, code-first testing tools can be time-consuming to set up and maintain, leading to delays and inefficiencies.|
+|**Limited time**|Examples from customers demonstrate that the time required to build tests using code-first tools can exceed the time taken to create the low-code application itself. This discrepancy undermines the promise of rapid results that low-code solutions are designed to deliver. In such cases, the benefits of low-code development are negated with slow and cumbersome testing process.|
 
-## Level of Abstraction
-
-Generative AI can help with generation of Playwright code generally it's still create code at a Document Object Model (DOM) level. Where possible, Test Engine takes advantage of the JavaScript object model of [canvas apps](./canvas-application.md) and [model driven application](./model-driven-application.md) to provide a longer term sustainability of the authored tests.
-
-## Bottleneck in the Testing Process
-
-Relying solely on code-first testing tools can create a bottleneck in the testing process. As low-code solutions are designed to accelerate development, the testing phase should ideally keep pace with this rapid development cycle. However, code-first testing tools can be time-consuming to set up and maintain, leading to delays and inefficiencies.
-
-## Examples from Customers
-
-Examples from customers demonstrate that the time required to build tests using code-first tools can exceed the time taken to create the low-code application itself. This discrepancy undermines the promise of rapid results that low-code solutions are designed to deliver. In such cases, the benefits of low-code development are negated with slow and cumbersome testing process.
 
 ## The Need for Low-Code Testing Tools
 
