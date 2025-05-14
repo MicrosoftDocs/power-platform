@@ -5,7 +5,7 @@ description: Take the Power Platform adoption assessment to streamline efforts, 
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 04/23/2025
+ms.date: 05/14/2025
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: pankajsharma2087

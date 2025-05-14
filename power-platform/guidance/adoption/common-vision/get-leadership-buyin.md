@@ -5,7 +5,7 @@ description: Achieve leadership buy-in and organizational alignment for Power Pl
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 04/24/2025
+ms.date: 05/14/2025
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: pankajsharma2087

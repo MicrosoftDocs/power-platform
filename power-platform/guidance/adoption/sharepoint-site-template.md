@@ -5,7 +5,7 @@ description: Discover how to use the Power Platform communication site template 
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 05/08/2025
+ms.date: 05/14/2025
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jhaskett-msft

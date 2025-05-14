@@ -5,7 +5,7 @@ description: Discover best practices for setting up a Power Platform CoE to fost
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: best-practice
-ms.date: 04/23/2025
+ms.date: 05/14/2025
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jhaskett-msft

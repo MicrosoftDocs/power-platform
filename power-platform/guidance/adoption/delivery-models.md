@@ -5,7 +5,7 @@ description: Discover how to evaluate Power Platform delivery models to align wi
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/30/2025
+ms.date: 05/14/2025
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jhaskett-msft

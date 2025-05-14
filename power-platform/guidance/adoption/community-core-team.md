@@ -8,7 +8,7 @@ ms.topic: concept-article
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.date: 05/09/2025
+ms.date: 05/14/2025
 ---
 
 # Define community core team roles and responsibilities

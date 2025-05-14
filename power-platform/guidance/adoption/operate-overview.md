@@ -8,7 +8,7 @@ ms.topic: concept-article
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
-ms.date: 05/06/2025
+ms.date: 05/14/2025
 ---
 
 # Power Platform operations overview and strategy

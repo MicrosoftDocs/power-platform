@@ -5,7 +5,7 @@ description: Discover repeatable patterns and practices for successful Power Pla
 author: manuelap-msft
 ms.subservice: guidance
 ms.topic: concept-article
-ms.date: 04/25/2025
+ms.date: 05/14/2025
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
 search.audienceType: 

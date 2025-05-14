@@ -8,7 +8,7 @@ ms.topic: best-practice
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
-ms.date: 02/28/2025
+ms.date: 05/14/2025
 ---
 
 # Understand your security posture and challenges

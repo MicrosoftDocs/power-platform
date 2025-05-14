@@ -5,7 +5,7 @@ description: Learn how to configure identity and access management for Microsoft
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 05/01/2025
+ms.date: 05/14/2025
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: pankajsharma2087

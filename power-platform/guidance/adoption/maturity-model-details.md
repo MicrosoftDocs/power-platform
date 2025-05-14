@@ -5,7 +5,7 @@ description: Learn how the Power Platform adoption maturity model helps organiza
 author: manuelap-msft
 ms.subservice: guidance
 ms.topic: concept-article
-ms.date: 04/21/2025
+ms.date: 05/14/2025
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
 search.audienceType:

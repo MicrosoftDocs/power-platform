@@ -5,7 +5,7 @@ description: Learn how to implement a data loss prevention strategy in Power Pla
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 05/01/2025
+ms.date: 05/14/2025
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: pankajsharma2087

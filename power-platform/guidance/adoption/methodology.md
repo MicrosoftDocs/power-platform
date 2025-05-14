@@ -5,7 +5,7 @@ description: Discover how Microsoft Power Platform adoption guidance helps organ
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 04/23/2025
+ms.date: 05/14/2025
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: pankajsharma2087

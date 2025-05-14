@@ -4,7 +4,7 @@ description: Learn how to establish a license assignment strategy for Power Plat
 #customer intent: As a Power Platform user, I want to establish a license assignment strategy for Power Platform so that I can optimize costs, ensure governance, and improve user adoption.
 author: stjeffer
 ms.topic: concept-article
-ms.date: 06/20/2023
+ms.date: 05/14/2025
 ms.subservice: guidance
 ms.author: stjeffer
 ms.reviewer: pankajsharma2087

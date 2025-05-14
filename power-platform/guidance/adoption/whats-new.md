@@ -4,10 +4,10 @@ description: What's new in the Microsoft Power Platform adoption guidance
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/04/2025
+ms.date: 05/14/2025
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: sericks
+ms.reviewer: jhaskett-msft
 ---
 
 # What's new in the Microsoft Power Platform adoption guidance

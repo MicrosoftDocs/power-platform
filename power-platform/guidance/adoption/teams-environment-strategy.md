@@ -5,7 +5,7 @@ description: Discover best practices for managing Dataverse for Teams environmen
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 05/02/2025
+ms.date: 05/14/2025
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jhaskett-msft

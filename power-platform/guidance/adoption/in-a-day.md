@@ -5,10 +5,10 @@ description: Learn how to organize Power Platform training events to upskill you
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 05/08/2025
+ms.date: 05/14/2025
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: sericks
+ms.reviewer: jhaskett-msft
 search.audienceType:
   - admin
 ms.custom:

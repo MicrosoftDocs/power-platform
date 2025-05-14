@@ -13,7 +13,7 @@ metadata:
   ms.collection: collection
   author: jhaskett-msft
   ms.author: jhaskett
-  ms.date: 05/12/2025
+  ms.date: 05/14/2025
 
 # highlightedContent section (optional)
 # Maximum of 8 items
@@ -130,7 +130,7 @@ additionalContent:
            - url: /power-platform/guidance/coe/overview
              text: Center of Excellence Starter Kit overview
            - url: /power-platform/guidance/coe/business-value-toolkit
-             text: Business Value toolkit
+             text: Business value toolkit
            - url: /power-platform/guidance/creator-kit/overview
              text: Creator Kit overview
            - url: /power-platform/guidance/toolkits/
