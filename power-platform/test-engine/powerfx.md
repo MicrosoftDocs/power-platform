@@ -57,9 +57,9 @@ As developer or advanced maker understanding and using the extensibility model, 
 
 User Defined Types (UDTs) in Power Apps Test Engine allow you to define custom data structures that can be used within your test plans. This feature enhances the flexibility and reusability of your test cases by enabling you to create complex data types tailored to your specific testing needs.
 
-### Example: testSettings.yaml
+### UDT example
 
-This example shows how to define and use User Defined Types in a `testSettings.yaml` file:
+This example shows how to define and use UDTs in a `testSettings.yaml` file:
 
 ```yaml
 powerFxTestTypes:
@@ -71,22 +71,29 @@ powerFxTestTypes:
       [{Name: Text, Value: Number}]   
 ```
 
-### Explanation
+### UDT example explanation
 
-Defining the Type: The `powerFxTestTypes` section defines two new types: ControlName and Options.
+The `powerFxTestTypes` section defines two new types: `ControlName` and `Options`.
 
-ControlName is a simple type with a single property ControlName of type Text.
-Options are a more complex type, representing a list of objects, each with Name (of type Text) and Value (of type Number).
+- `ControlName` is a simple type with a single property `ControlName` of type `Text`.
+- `Options` are a more complex type, representing a list of objects, each with `Name` (of type `Text`) and `Value` (of type `Number`).
 
-Using the Type: These types can be used within your test cases to define variables and validate their properties. For example, you can set a variable of type Options and validate that it contains the expected Name and Value pairs.
+You can use these types within your test cases to define variables and validate their properties. For example, you can set a variable of type `Options` and validate that it contains the expected `Name` and `Value` pairs.
 
 ## User Defined Functions
 
 User Defined Functions (UDFs) in Power Apps Test Engine allow you to define custom functions that can be used within your test plans. This feature enhances the flexibility and reusability of your test cases by enabling you to create complex functions tailored to your specific testing needs.
 
-### Example: testSettings.yaml
+### UDF Benefits
 
-This example shows how to define and use User Defined Functions in a `testSettings.yaml` file:
+- **Reusability**: UDFs allow you to define complex functions once and reuse them across multiple test cases. This reduces redundancy and ensures consistency in your test plans.
+- **Readability**: Using UDFs makes your test plans more readable and easier to maintain. By defining custom functions, you can encapsulate complex logic and make your test cases more understandable.
+- **Flexibility**: UDFs provide the flexibility to create custom functions that fit your specific testing requirements. Use this approach to allow you to tailor your test cases to better fit your application's needs.
+- **Maintainability**: With UDFs, changes to functions can be made in one place, reducing the effort required to update multiple test cases. This improves the maintainability of your test plans.
+
+### UDF example
+
+This example shows how to define and use UDFs in a `testSettings.yaml` file:
 
 ```yaml
 testFunctions:
@@ -100,19 +107,12 @@ testFunctions:
       Preview.GetOptions(control);
 ```
 
-### Explanation
+### UDF example explanation
 
-1. **Defining the Functions**: The `testFunctions` section defines two new functions:
-   - `WaitUntilVisible`: This function takes a `control` parameter of type `Text` and waits until the specified control is visible using a DOM selector.
-   - `GetOptions`: This function takes a `control` parameter of type `ControlName` and returns the options for the specified control using Power Fx from a Model Driven App (MDA).
+The `testFunctions` section defines two new functions:
+   - `WaitUntilVisible` takes a `control` parameter of type `Text` and waits until the specified control is visible using a DOM selector.
+   - `GetOptions` takes a `control` parameter of type `ControlName` and returns the options for the specified control using Power Fx from a Model Driven App (MDA).
 
-2. **Using the Functions**: These functions can be used within your test cases to perform specific actions or retrieve data. For example, you can use `WaitUntilVisible` to ensure a control is visible before interacting with it, and `GetOptions` to retrieve and validate the options available for a control.
-
-### Benefits
-
-- **Reusability**: UDFs allow you to define complex functions once and reuse them across multiple test cases. This reduces redundancy and ensures consistency in your test plans.
-- **Readability**: Using UDFs makes your test plans more readable and easier to maintain. By defining custom functions, you can encapsulate complex logic and make your test cases more understandable.
-- **Flexibility**: UDFs provide the flexibility to create custom functions that fit your specific testing requirements. Use this approach to allow you to tailor your test cases to better fit your application's needs.
-- **Maintainability**: With UDFs, changes to functions can be made in one place, reducing the effort required to update multiple test cases. This improves the maintainability of your test plans.
+Use these functions in your test cases to perform specific actions or retrieve data. For example, you can use `WaitUntilVisible` to ensure a control is visible before interacting with it, and `GetOptions` to retrieve and validate the options available for a control.
 
 [!INCLUDE [footer-banner](../includes/footer-banner.md)]
