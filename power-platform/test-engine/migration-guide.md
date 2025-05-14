@@ -25,14 +25,14 @@ This document provides guidance on any transition steps required for running the
 ## Table of Contents
 
 1. [Prerequisites](#prerequisites)
-1. [Migrating from Older Versions to 1.43 and Later](#migrating-from-older-versions-to-143-and-later)
+1. [Migrating from older versions to 1.43 and later](#migrating-from-older-versions-to-143-and-later)
 1. [Additional Resources](#additional-resources)
 
 ## Prerequisites
 
 - Ensure you have a backup of your current configuration and test files.
 
-## Migrating from Older Versions to 1.43 and Later
+## Migrating from older versions to 1.43 and later
 
 Version 1.43 of the Power Platform CLI (PAC CLI) introduces significant updates and breaking changes to the test run command.
 Alternatively, follow guidance to [Check which version of Power Platform CLI is installed](../developer/cli/introduction.md#check-which-version-of-power-platform-cli-is-installed) and choose appropriate version based on related PAC CLI installation documents.
@@ -42,11 +42,11 @@ Follow these steps to migrate:
 1. **Authentication updates**  
    The new version moves away from using the environment variable for password. It instead relies on the browser based authentication to be compatible with multi factor authentication mechanisms (MFA). In the test settings of the test plan file ensure that the 'headless' property is set to false to be able to see the browser and interactively login for the initial sign in.
 
-   There are currently 2 authentication providers 'storagestate' (default, no need to specify explicitely) and 'dataverse' which can be set using the -u parameter in the test run command.
-   'storagestate' mechanism can be used in local Windows scenarios only.
-   'dataverse' can be used in local and pipeline execution scenarios and requires additional setup.  
+   There are currently 2 authentication providers `Storagestate` (default, no need to specify explicitly) and `Dataverse` which can be set using the -u parameter in the test run command.
+   `Storagestate` mechanism can be used in local Windows scenarios only.
+   `Dataverse` can be used in local and pipeline execution scenarios and requires additional setup.  
 
-   Please look at [authentication](authentication.md) for more details.
+   [Learn more about authentication](authentication.md).
 
 
 1. **File system access restrictions**  

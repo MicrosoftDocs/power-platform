@@ -113,12 +113,12 @@ Certificate-based authentication is another method that can be used in the Power
 
 ### Example Command using certificate-based authentication
 
-To run tests using certificate-based authentication `(uses --user-auth "dataverse")`, you can use the following pac test run command:
+To run tests using certificate-based authentication `(uses --user-auth "Dataverse")`, you can use the following pac test run command:
 
 ```powershell
 pac test run `
    --provider canvas `
-   --user-auth dataverse `
+   --user-auth Dataverse `
    --auth Certstore `
    --test-plan-file testplan.te.yaml `
    --tenant aaaabbbb-0000-cccc-1111-dddd2222eeee `
