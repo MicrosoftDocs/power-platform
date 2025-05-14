@@ -309,7 +309,7 @@ This section provides answers to frequently asked questions about Dataverse sear
 
 ### How can I find out how much storage Dataverse search consumes?
 
-There is a table called _RelevanceSearch_ that reports on the storage consumed by Dataverse search at the environment level. Respectively, Dataverse search is reported as part of database and files storage consumption in the **Summary** tab. You can also view Dataverse search in the **Environment** report in Power Platform admin center or **Capacity** report:
+There is a table called _RelevanceSearch_ that reports on the storage consumed by Dataverse search at the environment level. Respectively, Dataverse search is reported as part of database storage consumption in the **Summary** tab. You can also view Dataverse search in the **Environment** report in Power Platform admin center or **Capacity** report:
 
 ## [New admin center](#tab/new)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
