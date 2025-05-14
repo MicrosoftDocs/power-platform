@@ -86,7 +86,7 @@ Before you configure customer engagement apps and [!INCLUDE[pn_SharePoint_short]
   To install the Microsoft.Graph module, enter the following command from an administrator PowerShell session. 
 
   ```powershell
-  $currentValueForMaxFunctionCount = `
+  $currentValueForMaxFunctionCount =
       $ExecutionContext.SessionState.PSVariable.Get("MaximumFunctionCount").Value
      
   # Set execution policy to RemoteSigned for this session
@@ -152,7 +152,7 @@ On the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-pr
    ```powershell
    # Retrieve SharePoint Online Service Principal
    $SharePoint = Get-MgServicePrincipal -Filter "AppId eq '$SPOAppId'"
-   $UpdatedServicePrincipalNames = `
+   $UpdatedServicePrincipalNames =
        $SharePoint.ServicePrincipalNames + $servicePrincipalName
    ```
    
@@ -197,7 +197,7 @@ Set-SPAuthenticationRealm -Realm $SPOContextId
 2. Set the metadata endpoint.  
   
    ```powershell
-   $metadataEndpoint = `
+   $metadataEndpoint = 
        "https://login.microsoftonline.com/common/.well-known/openid-configuration"  
    $oboissuer = "https://sts.windows.net/*/" 
    $issuer = "00000007-0000-0000-c000-000000000000@" + $SPOContextId  
