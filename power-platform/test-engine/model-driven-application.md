@@ -49,7 +49,6 @@ View [Users](yaml.md#users) for more information.
 
 Use the following PowerShell script to store the username in your environment variables.
 
-<!-- Feel like context is missing here -->
 
 ```powershell
 $env:user1Email = "someone@example.com"

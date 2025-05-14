@@ -18,12 +18,6 @@ contributors:
 
 Authentication is a critical component of the test automation process. This article focuses on browser-based authentication options within the Test Engine which offers a range of options to authenticate with Microsoft Entra.
 
-<!-- 
-I want to remove this image and replace with text.
-I don't feel this image adds value, it seems more like a slide to speak over in a presentation rather than something than better communciates the information in docs. Pictures primarily including text should generally be avoided. 
-
--->
-
 :::image type="content" source="media/authentication-options.png" alt-text="Overview of authentication options in Test Engine":::
 
 <!-- Example columns start -->

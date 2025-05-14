@@ -63,7 +63,4 @@ Take these considerations into account as you write test steps:
 - [Defaults](../power-fx/reference/function-defaults.md) isn't supported. As a result Power Fx examples like `Patch(Accounts, Defaults(Accounts), {name:"test"})` aren't supported.
 - You can use `Collect` to an alternative to `Patch` with the `Defaults` function
 
-
-<!-- I'm confused. Is Defaults supported or not? -->
-
 [!INCLUDE [footer-banner](../includes/footer-banner.md)]

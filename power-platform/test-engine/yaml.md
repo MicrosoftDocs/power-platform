@@ -35,7 +35,6 @@ Used to define one test.
 
 ### testSuite YAML schema definition
 
-<!-- Should these properties be ordered alphabetically, or required first? -->
 
 | Property | Required | Description |
 |---|---|---|

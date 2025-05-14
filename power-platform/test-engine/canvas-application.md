@@ -103,6 +103,4 @@ pac test run `
 
 When the tests complete, you can view the results of your test in the `.trx` file located in the output directory. This folder contains any screenshots or videos captured by your tests when `recordVideo` is set to `true` in the test plan yaml.
 
-<!-- I'd like to know more about what this trx file looks like without having to try it -->
-
 [!INCLUDE [footer-banner](../includes/footer-banner.md)]
