@@ -86,7 +86,7 @@ Before you configure customer engagement apps and [!INCLUDE[pn_SharePoint_short]
   To install the Microsoft.Graph module, enter the following command from an administrator PowerShell session. 
 
   ```powershell
-  $currentValueForMaxFunctionCount =
+  $currentMaxFunctionCount =
       $ExecutionContext.SessionState.PSVariable.Get("MaximumFunctionCount").Value
      
   # Set execution policy to RemoteSigned for this session
@@ -95,22 +95,36 @@ Before you configure customer engagement apps and [!INCLUDE[pn_SharePoint_short]
   }
    
   # Update MaximumFunctionCount if needed
-  if ($currentValue -lt 32768) {
+  if ($currentMaxFunctionCount -lt 32768) {
       $ExecutionContext.SessionState.PSVariable.Set("MaximumFunctionCount", 32768)
   }
    
   # Install and import required modules
   if (-not (Get-Module -ListAvailable -Name "Microsoft.Graph")) {
-      Install-Module -Name "Microsoft.Graph" -Scope CurrentUser -Force
+      $Params = @{
+          Name = "Microsoft.Graph"
+          Scope = CurrentUser
+      }
+      Install-Module @Params -Force
   }
-  Import-Module "Microsoft.Graph" -Function @("Connect-MgGraph", "Get-MgOrganization")
+  
+  $Params = @{
+      Function = @("Connect-MgGraph", "Get-MgOrganization")
+  }
+  Import-Module "Microsoft.Graph" @Params
    
   if (-not (Get-Module -ListAvailable -Name "Microsoft.Graph.Identity.DirectoryManagement")) {
-      Install-Module -Name "Microsoft.Graph.Identity.DirectoryManagement" `
-          -Scope CurrentUser -Force
+      $Params = @{
+          Name = "Microsoft.Graph.Identity.DirectoryManagement"
+          Scope = CurrentUser
+      }
+      Install-Module @Params -Force
   }
-  Import-Module "Microsoft.Graph.Identity.DirectoryManagement" `
-      -Function @("Get-MgServicePrincipal", "Update-MgServicePrincipal")
+  
+  $Params = @{
+      Function = @("Get-MgServicePrincipal", "Update-MgServicePrincipal")
+  }
+  Import-Module "Microsoft.Graph.Identity.DirectoryManagement" @Params
   ```  
 
 - A suitable claims-based authentication mapping type to use for mapping identities between customer engagement apps and [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises. By default, email address is used. Learn more in [Grant customer engagement apps permission to access SharePoint and configure the claims-based authentication mapping](#grant-customer-engagement-apps-permission-to-access-sharepoint-and-configure-the-claims-based-authentication-mapping). 
@@ -150,6 +164,9 @@ On the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-pr
 1. Get the [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] object (tenant) ID and [!INCLUDE[pn_SharePoint_Server_short](../includes/pn-sharepoint-server-short.md)] Service Principal Name (SPN).  
   
    ```powershell
+   # SharePoint Online App ID
+   $SPOAppId = "00000003-0000-0ff1-ce00-000000000000"
+   
    # Retrieve SharePoint Online Service Principal
    $SharePoint = Get-MgServicePrincipal -Filter "AppId eq '$SPOAppId'"
    $UpdatedServicePrincipalNames =
