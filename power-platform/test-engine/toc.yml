@@ -48,5 +48,6 @@ items:
   - name: Migration
     href: migration-guide.md
   - name: Known issues
-    href: File Access restrictions
-  - name: filerestrictions.md
+    href: known-issues.md
+  - name: File Access restrictions
+    href: filerestrictions.md
