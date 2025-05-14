@@ -178,10 +178,10 @@ On the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-pr
 1. Get the [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] object (tenant) ID and [!INCLUDE[pn_SharePoint_Server_short](../includes/pn-sharepoint-server-short.md)] Service Principal Name (SPN).  
   
    ```powershell
-   $Params = @(
+   $Params = @{
        ServicePrincipalId = $SharePoint.Id
        ServicePrincipalNames = $UpdatedServicePrincipalNames
-   )
+   }
    Update-MgServicePrincipal @Params
    ```  
   
@@ -227,12 +227,12 @@ Set-SPAuthenticationRealm -Realm $SPOContextId
 3. Create the new token control service application proxy in [!INCLUDE[pn_azure_active_directory](../includes/pn-azure-active-directory.md)].  
   
    ```powershell
-   $Params = @(
+   $Params = @{
        Name = "D365Obo"
        IsTrustBroker = $true
        MetadataEndpoint = $metadataEndpoint
        RegisteredIssuerName = $oboissuer
-   )
+   }
    $obo = New-SPTrustedSecurityTokenIssuer @Params
    ```  
   
@@ -248,11 +248,11 @@ The following commands require [!INCLUDE[pn_SharePoint_short](../includes/pn-sha
     
    ```powershell
    $site = Get-SPSite "https://sharepoint.contoso.com/sites/crm/"
-   $Params = @(
+   $Params = @{
        site = $site.RootWeb
        NameIdentifier = $issuer
        DisplayName = "crmobo"
-   )
+   }
    Register-SPAppPrincipal @Params
    ```  
   
@@ -269,18 +269,18 @@ The following commands require [!INCLUDE[pn_SharePoint_short](../includes/pn-sha
    > If there are multiple sites, perform the script for each site.
 
    ```powershell
-   $Params = @(
+   $Params = @{
        NameIdentifier = $issuer
        Site = "https://sharepoint.contoso.com/sites/crm/"
-   )
+   }
    $app = Get-SPAppPrincipal @Params
    
-   $Params = @(
+   $Params = @{
        AppPrincipal = $app
        Site = $site.Rootweb
        Scope = "sitecollection"
        Right = "FullControl"
-   )
+   }
    Set-SPAppPrincipalPermission @Params
    ```  
   
@@ -290,11 +290,11 @@ The following commands require [!INCLUDE[pn_SharePoint_short](../includes/pn-sha
    >  By default, the claims-based authentication mapping uses the user's [!INCLUDE[pn_Windows_Live_ID](../includes/pn-windows-live-id.md)] email address and the user's [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises **work email** address for mapping. When you use claims-based authentication mapping, the user's email addresses must match between the two systems. Learn more in [Selecting a claims-based authentication mapping type](../admin/configure-server-based-authentication-sharepoint-on-premises.md#BKMK_selectclmmap).  
   
    ```powershell
-   $Params = @(
+   $Params = @{
        IncomingClaimType = "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress"
        IncomingClaimTypeDisplayName = "EmailAddress"
        SameAsIncoming
-   )
+   }
    $map1 = New-SPClaimTypeMapping @Params
    ```  
   
