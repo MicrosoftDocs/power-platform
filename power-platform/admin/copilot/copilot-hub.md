@@ -43,7 +43,7 @@ The product pages contain usage and cost insights specific to each product. Curr
 
 ### Copilot Studio
 
-The **Copilot Studio** page provides valuable insights about agents built in Copilot Studio. Admins can view message consumption data, with additional licensing details available through the **Licensing** area of the Power Platform admin center. Admins can view the number of active agents, defined as agents with active sessions in the last 28 days, and the agent session success rate, which is the percentage of sessions resolved by conversational agents or runs that are successful for autonomous agents. Furthermore, the agent table displays the top 20 agents ranked by monthly active sessions.  
+The **Copilot Studio** page provides valuable insights about agents built in Copilot Studio. Admins can view message consumption data, with additional licensing details available through the **Licensing** area of the Power Platform admin center. Admins can view the number of active agents, defined as agents with active sessions in the last 28 days, and the agent session success rate, which is the percentage of sessions resolved by conversational agents or runs that are successful for autonomous agents. Furthermore, the agent table displays the top 10 agents ranked by monthly active sessions.  
 
 > [!Note]
 > - The **Copilot Studio** page doesn't include agents built with Microsoft 365 Agent Builder at this time.
