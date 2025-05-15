@@ -115,7 +115,7 @@ Setting up Dataverse search after turning it on in the Power Platform admin cent
 
 1. Select the _searchable tables_ for Dataverse search.
 
-2. Review the columns that will be searched, the columns that will be displayed, and the filter conditions that will be applied in model-driven Power Apps as detailed in the [_Select searchable fields and filters for each table_](#select-searchable-fields-and-filters-for-each-table) section.
+2. Review the columns that will be searched, the columns that are displayed, and the filter conditions that are applied in model-driven Power Apps as detailed in the [_Select searchable fields and filters for each table_](#select-searchable-fields-and-filters-for-each-table) section.
 
 3. Be sure to include the tables allowed for Dataverse search in the model-driven app. Use the app designer to verify table inclusion in an app's components. For more information, go to [Add or edit model-driven app components](/powerapps/maker/model-driven-apps/add-edit-app-components#add-a-component).
 
@@ -168,7 +168,7 @@ The table's Quick Find view drives the searchable table fields and filters used 
 
 - The **Find columns** on a Quick Find view define the searchable fields in the Dataverse search index. Text fields such as _Single Line of Text_ and _Multiple Lines of Text_, _Lookups_, and _Option Sets_ are searchable. **Find columns** of all other data types are ignored.
   > [!NOTE]
-  > Currency fields must be added to the **Find Columns** so the currency symbol that is visible on the record will be returned in the search results. If the currency field isn't added to the search index, users see the currency symbol localized according to their language settings.
+  > Currency fields must be added to the **Find Columns** so the currency symbol that is visible on the record are returned in the search results. If the currency field isn't added to the search index, users see the currency symbol localized according to their language settings.
 
 - The **View columns** on a Quick Find view define the fields that are displayed in model-driven apps' search results page when the matched results are returned.
 
@@ -213,7 +213,7 @@ To edit the searchable fields of a table:
 
 > [!NOTE]
 >
-> - Changes made to the Dataverse search configuration or to the searchable data may take up to 15 minutes to appear in the search service. It may take up to an hour or more to complete a full sync for average size organizations, and a couple of days for very large size organizations.
+> - Changes made to the Dataverse search configuration or to the searchable data may take up to 15 minutes to appear in the search service. It may take up to an hour or more to complete a full sync for average size organizations, and a couple of days for large size organizations.
 >
 > - The maximum search-term size is 1,024 characters.
 >
@@ -221,7 +221,7 @@ To edit the searchable fields of a table:
 >
 > - If you change the length of text in a table column and the column is set to **Simple Search view**, the import may not be successful and you may see this error: _Length isn't valid because this is an indexed attribute and hence cannot have size greater than 1,700_.
 >
-> - The indexed attribute can't extend beyond 1700 bytes. If the corresponding column is registered in the **Quick Find view**, remove the corresponding column from the **Quick Find view** and try to re-export after a time interval. If you change or delete a **Quick Find view** setting, it may take up to 24 hours to be reflected in the index, as it's a once-a-day maintenance job for the on-premises product. For more information, go to [Maximum capacity specifications for SQL Server](/sql/sql-server/maximum-capacity-specifications-for-sql-server?view=sql-server-ver16&preserve-view=true).
+> - The indexed attribute can't extend beyond 1,700 bytes. If the corresponding column is registered in the **Quick Find view**, remove the corresponding column from the **Quick Find view** and try to re-export after a time interval. If you change or delete a **Quick Find view** setting, it may take up to 24 hours to be reflected in the index, as it's a once-a-day maintenance job for the on-premises product. For more information, go to [Maximum capacity specifications for SQL Server](/sql/sql-server/maximum-capacity-specifications-for-sql-server?view=sql-server-ver16&preserve-view=true).
 >
 > - Updates to calculated fields and lookups don't automatically sync in Dataverse search. Data is refreshed whenever a field configured for Dataverse search is updated in a record.
 >
@@ -309,7 +309,7 @@ This section provides answers to frequently asked questions about Dataverse sear
 
 ### How can I find out how much storage Dataverse search consumes?
 
-There is a table called **RelevanceSearch** that reports on the storage consumed by Dataverse search at the environment level. Respectively, Dataverse search is reported as part of database storage consumption in the **Summary** tab. You can also view Dataverse search in the **Environment** report in Power Platform admin center or **Capacity** report:
+There's a table called **RelevanceSearch** that reports on the storage consumed by Dataverse search at the environment level. Respectively, Dataverse search is reported as part of database storage consumption in the **Summary** tab. You can also view Dataverse search in the **Environment** report in Power Platform admin center or **Capacity** report:
 
 ## [New admin center](#tab/new)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
@@ -322,12 +322,12 @@ There is a table called **RelevanceSearch** that reports on the storage consumed
 ## [Classic admin center](#tab/classic)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, expand **Resources**, and then select **Capacity**.
-1. On the **Capacity** page, go to the **Dataverse** tab, select an environment, and then seelct the **Chart** icon for details.
+1. On the **Capacity** page, go to the **Dataverse** tab, select an environment, and then select the **Chart** icon for details.
 1. In the navigation pane, expand **Billing**, then select **Licenses**.
 1. On the **Licenses** page, go to the **Environments** tab, then select an environment to view.
 ---
 
-We recommend turning on Dataverse search so users can enjoy a better search experience in model-driven apps. As an environment admin, you can opt out of this feature for the purpose of managing your environments by selecting the option **Off**.
+We recommend turning on Dataverse search so users can enjoy a better search experience in model-driven apps. As an environment admin, you can opt out of this feature bu managing your environments by selecting the option **Off**.
 
 > [!IMPORTANT]
 > Dataverse search counts towards the different storage entitlements you have in the tenant.
