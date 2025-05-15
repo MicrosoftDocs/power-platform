@@ -18,35 +18,59 @@ contributors:
 > [!NOTE]
 > [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
 
-## What is Power Apps Test Engine?
+Power Apps Test Engine is a testing solution designed specifically for Power Platform applications. Whether you're new to automated testing, familiar with [Test Studio](/power-apps/maker/canvas-apps/test-studio), or an experienced developer with Playwright knowledge, Test Engine offers a scalable approach to testing that aligns with the low-code philosophy of Power Platform.
 
-Power Apps Test Engine is a testing solution designed specifically for Power Platform applications. Whether you're new to automated testing, familiar with Test Studio, or an experienced developer with Playwright knowledge, Test Engine offers a scalable approach to testing that aligns with the low-code philosophy of Power Platform.
+Learn more about how Test Engine helps you regardless of where you are starting from:
 
-### For Manual Testers
 
-If you're currently performing manual tests on your Power Platform applications, Test Engine provides an accessible entry point to test automation:
+## [Manual Testers](#tab/manual)
+
+If you're testing your Power Platform applications manually, Test Engine provides an accessible entry point to test automation:
 
 - **Low-code approach**: Create automated tests using YAML and Power Fx, the same formula language used in Power Apps
 - **No DOM knowledge required**: You don't need to understand HTML or CSS selectors to interact with your app's components
 - **Familiar terminology**: Tests reference control names as they appear in Power Apps Studio, making tests easy to read and maintain
 
-### For Test Studio Users
+Test Engine can help you:
 
-If you're familiar with Test Studio, Test Engine represents an evolution in Power Platform testing:
+- **Save time**: Automate repetitive test scenarios that you're currently performing manually
+- **Increase coverage**: Run more comprehensive tests more frequently
+- **Create a test baseline**: Document your testing process in a format that can be reused and shared
+- **Learn gradually**: Start with simple tests and expand as your comfort level increases
+
+## [Test Studio users](#tab/teststudio)
+
+If you're familiar with testing canvas apps using Test Studio, Test Engine represents an evolution in Power Platform testing:
 
 - **Command-line interface**: Run tests from the Power Platform CLI, enabling integration with CI/CD pipelines
-- **Broader application support**: Test not only Canvas apps but also Model-driven applications and Dataverse extensions
+- **Broader application support**: Test Model-driven applications, Dataverse extensions, and canvas apps.
 - **Enhanced capabilities**: Access features like connector mocking, screenshot capture, and video recording for comprehensive test coverage
 
-### For Professional Developers
+Test Engine offers these advantages:
 
-If you're a pro developer experienced with tools like Playwright, Test Engine offers:
+- **Command-line execution**: Run tests from terminals or CI/CD pipelines
+- **Broader application support**: Test Model-driven apps and Dataverse integrations, not just Canvas apps
+- **Greater control**: Customize test behavior with fine-grained settings
+- **Programmatic approach**: Create test patterns that can be reused across multiple apps
+
+## [Professional Developers](#tab/prodev)
+
+If you're a pro developer experienced with tools like [Playwright](https://playwright.dev/), Test Engine offers:
 
 - **Domain-specific advantages**: While Playwright operates at the DOM level, Test Engine applies the JavaScript object model of Power Apps for more resilient tests
 - **Efficiency gains**: Create and maintain tests faster than traditional code-first approaches
 - **Integration options**: Use the [Preview.PlaywrightAction function](powerfx-functions.md#previewplaywrightaction) when you need direct Playwright capabilities like locators
 
-Power Apps Test Engine works with the following Power Platform components:
+Test Engine provides:
+
+- **Power Platform optimization**: Tests that understand the unique structure of Power Platform applications
+- **Lower maintenance**: Tests that are more resilient to UI changes
+- **Team collaboration**: A testing approach that both developers and low-code makers can understand
+- **Hybrid options**: Use Playwright actions directly when needed for specialized scenarios
+
+---
+
+Currently, Power Apps Test Engine works with the following Power Platform components:
 
 - [Canvas Apps](/power-apps/maker/canvas-apps/index)
 - [Model Driven Application](/power-apps/maker/model-driven-apps/index)
@@ -54,34 +78,58 @@ Power Apps Test Engine works with the following Power Platform components:
 
 You must [Install Microsoft Power Platform CLI](../developer/cli/introduction.md#install-microsoft-power-platform-cli) to use the Test Engine.
 
-## Why Choose Test Engine?
 
-### For Manual Testers
+## Getting Started with Test Engine
 
-If you're currently running manual tests, Test Engine can help you:
+The approach to getting started depends on your role and experience level:
 
-1. **Save time**: Automate repetitive test scenarios that you're currently performing manually
-2. **Increase coverage**: Run more comprehensive tests more frequently
-3. **Create a test baseline**: Document your testing process in a format that can be reused and shared
-4. **Learn gradually**: Start with simple tests and expand as your comfort level increases
+### [Manual Testers](#tab/manual)
 
-### For Test Studio Users
+1. **Install the Tools**: 
+   - [Install Microsoft Power Platform CLI](../developer/cli/introduction.md#install-microsoft-power-platform-cli)
+   - Familiarize yourself with basic command-line operations
 
-If you're familiar with Test Studio, Test Engine offers these advantages:
+1. **Start with a Simple Test**:
+   - Begin with a basic test that validates a single screen or function
+   - Use the [YAML format](yaml.md) to structure your test
+   - Learn common [Power Fx functions](powerfx-functions.md) for testing
 
-1. **Command-line execution**: Run tests from terminals or CI/CD pipelines
-2. **Broader application support**: Test Model-driven apps and Dataverse integrations, not just Canvas apps
-3. **Greater control**: Customize test behavior with fine-grained settings
-4. **Programmatic approach**: Create test patterns that can be reused across multiple apps
+1. **Build Your Testing Skills**:
+   - Follow tutorials and examples in the [Test Engine documentation](https://github.com/microsoft/PowerApps-TestEngine/tree/main/samples)
+   - Gradually add more complex scenarios to your tests
 
-### For Professional Developers
+### [Test Studio users](#tab/teststudio)
 
-If you're experienced with tools like Playwright, Test Engine provides:
+1. **Understand the Differences**:
+   - Test Engine uses a command-line approach instead of the interactive designer
+   - Tests are written in YAML files with Power Fx expressions
+   - Test Engine supports broader application types
 
-1. **Power Platform optimization**: Tests that understand the unique structure of Power Platform applications
-2. **Lower maintenance**: Tests that are more resilient to UI changes
-3. **Team collaboration**: A testing approach that both developers and low-code makers can understand
-4. **Hybrid options**: Use Playwright actions directly when needed for specialized scenarios
+1. **Learn the Test Structure**:
+   - Review the [YAML format](yaml.md) to understand how tests are structured
+   - See how [authentication](authentication.md) works differently in Test Engine
+
+1. **Expand Your Testing Scope**:
+   - Explore testing [Model-driven applications](model-driven-application.md)
+   - Learn about [Dataverse integration](dataverse.md) for more comprehensive tests
+
+
+### [Professional Developers](#tab/prodev)
+
+1. **Evaluate the Architecture**:
+   - Review how Test Engine [compares to Playwright](playwright.md)
+   - Understand the [provider model](providers.md) for different application types
+
+1. **Integrate with Development Workflows**:
+   - Add Test Engine to your CI/CD pipelines
+   - Explore the [extensibility options](extensibility.md) for custom providers and functions
+
+1. **Use Advanced Features**:
+   - Implement [connector mocking](simulation.md) for isolated testing
+   - Use [Dataverse integration](dataverse.md) for end-to-end testing
+   - Apply [PlaywrightAction](powerfx-functions.md#previewplaywrightaction) for specialized control interactions
+
+---
 
 ## Key Features and Benefits
 
@@ -109,55 +157,6 @@ The Test Engine works with the following browsers:
 - Firefox
 - WebKit (Safari)
 
-## Getting Started with Test Engine
-
-The approach to getting started depends on your role and experience level:
-
-### For Manual Testers
-
-1. **Install the Tools**: 
-   - [Install Microsoft Power Platform CLI](../developer/cli/introduction.md#install-microsoft-power-platform-cli)
-   - Familiarize yourself with basic command-line operations
-
-2. **Start with a Simple Test**:
-   - Begin with a basic test that validates a single screen or function
-   - Use the [YAML format](yaml.md) to structure your test
-   - Learn common [Power Fx functions](powerfx-functions.md) for testing
-
-3. **Build Your Testing Skills**:
-   - Follow tutorials and examples in the [Test Engine documentation](https://github.com/microsoft/PowerApps-TestEngine/tree/main/samples)
-   - Gradually add more complex scenarios to your tests
-
-### For Test Studio Users
-
-1. **Understand the Differences**:
-   - Test Engine uses a command-line approach instead of the interactive designer
-   - Tests are written in YAML files with Power Fx expressions
-   - Test Engine supports broader application types
-
-2. **Learn the Test Structure**:
-   - Review the [YAML format](yaml.md) to understand how tests are structured
-   - See how [authentication](authentication.md) works differently in Test Engine
-
-3. **Expand Your Testing Scope**:
-   - Explore testing [Model-driven applications](model-driven-application.md)
-   - Learn about [Dataverse integration](dataverse.md) for more comprehensive tests
-
-### For Professional Developers
-
-1. **Evaluate the Architecture**:
-   - Review how Test Engine [compares to Playwright](playwright.md)
-   - Understand the [provider model](providers.md) for different application types
-
-2. **Integrate with Development Workflows**:
-   - Add Test Engine to your CI/CD pipelines
-   - Explore the [extensibility options](extensibility.md) for custom providers and functions
-
-3. **Use Advanced Features**:
-   - Implement [connector mocking](simulation.md) for isolated testing
-   - Use [Dataverse integration](dataverse.md) for end-to-end testing
-   - Apply [PlaywrightAction](powerfx-functions.md#previewplaywrightaction) for specialized control interactions
-
 ## Regional and Language Considerations
 
 Test Engine supports various language and regional settings:
@@ -166,7 +165,7 @@ Test Engine supports various language and regional settings:
 
 - **Sample Configurations**:
   1. For regions using semicolons as list separators: [Sample with semicolon separators](https://github.com/microsoft/PowerApps-TestEngine/blob/main/samples/basicgallery/testPlanForRegionUseSemicolonAsSeparator.fx.yaml)
-  2. For regions using commas as decimal separators: [Sample with comma decimals](https://github.com/microsoft/PowerApps-TestEngine/blob/main/samples/calculator/testPlanWithCommaForDecimal.fx.yaml)
+  1. For regions using commas as decimal separators: [Sample with comma decimals](https://github.com/microsoft/PowerApps-TestEngine/blob/main/samples/calculator/testPlanWithCommaForDecimal.fx.yaml)
 
 ## Working with Apps in Test Plans
 
@@ -178,7 +177,7 @@ For apps in solutions, tests remain portable across environments:
    - Open the solution containing your app in Power Apps
    - Note the app's **Name** (not Display name) in the list
 
-2. **Reference in test plan**:
+1. **Reference in test plan**:
    - Use `appLogicalName` in your test plan YAML
    - This ensures tests work when the solution is moved to a different environment
 
@@ -190,7 +189,7 @@ For apps not in solutions, update tests when moving environments:
    - Locate the app in the Power Apps list
    - Open Details and note the App ID GUID
 
-2. **Update your test plan**:
+1. **Update your test plan**:
    - Use `appId` in your test plan YAML
    - Update this value when moving to a new environment
 
