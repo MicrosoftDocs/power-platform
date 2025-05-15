@@ -141,7 +141,7 @@ These test function examples demonstrate how to define custom Power Fx functions
 
 <!-- Add a description here -->
 
-| Property | type | Description |
+| Property | Type | Description |
 |---|---|---|
 | `browser` | string |Required. The browser to be launched when testing. Should match the [browsers supported by Playwright](https://playwright.dev/dotnet/docs/browsers). |
 | `device` | string |Optional. The device to emulate when launching the browser. Should match the [devices supported by Playwright](https://playwright.dev/dotnet/docs/api/class-playwright#playwright-devices) |
