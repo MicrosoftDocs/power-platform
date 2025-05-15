@@ -1,82 +1,100 @@
 ---
-title: "Leverage resource usage reports - Microsoft Power Platform | MicrosoftDocs"
-description: "Learn how to review out-of-the-box monitoring capabilities, check service and environment health, set alerts on security permissions or compliance regulations, and perform typical actions to ensure a secure, healthy, and safe citizen developer environment."
+title: Report on resource usage
+description: Monitor Power Apps, Power Automate, and Copilot adoption and performance with tools and strategies to ensure governance and security.
+#customer intent: As a Power Platform admin, I want to monitor resource usage so that I can ensure governance and security.
 author: manuelap-msft
-
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 06/11/2020
+ms.date: 05/14/2025
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: sericks
-search.audienceType: 
+ms.reviewer: jhaskett-msft
+search.audienceType:
   - admin
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-description
+  - ai-seo-date:03/31/2025
 ---
+
 # Report on resource usage
 
-One of the key principles of administering Microsoft Power Platform is having full visibility into how your organization is using Power Apps and Power Automate. Insights into your adoption will help you govern and secure the platform, identify patterns, and nurture your makers to accelerate adoption.
+A key principle of administering Microsoft Power Platform is understanding how your organization uses Power Apps and Power Automate. Insights into your adoption help you govern and secure the platform, identify patterns, and support makers to accelerate adoption.  
 
-In this section, you'll learn how to:
+In this article, you learn how to:
 
-- Review out-of-the-box monitoring capabilities.
-- Check service and environment health.
-- Set alerts for security permissions or compliance regulations.
-- Perform typical actions to ensure the security, health, and safety of the citizen developer environment.
+- Review built-in monitoring capabilities.
+- Monitor service and environment health.
 
-Out-of-the-box tooling around monitoring, alerts, and actions falls into the following categories:
+## What tools are available to monitor resource usage?
 
-- The **[Power Platform admin center](https://aka.ms/ppac)** offers an interactive experience for performing administrative tasks. This is typically considered the primary path for completing administrative activities. From a monitoring point of view, this channel is used mostly for ad hoc interactive discovery. Additionally, some admin tasks would need access to [Microsoft 365 (formerly Office 365) admin center](https://admin.microsoft.com/), in addition to the [Office 365 Security and Compliance Center](https://protection.office.com/).
+Several tools help you monitor resource usage in Power Platform.
 
-- **[PowerShell cmdlets](../../admin/powerapps-powershell.md#power-apps-cmdlets-for-app-creators)** offer a way to automate both management and monitoring tasks using PowerShell. These cmdlets can be used in a sequence to automate multiple-step administrative actions. Note that Microsoft typically provides capabilities as cmdlets first and then the same capabilities might be offered in the admin center UI or Management and Admin connectors in later releases.  
+### Power Platform admin center
 
-- **Management and Admin connectors** offer the ability to use the platform’s own tools to manage and monitor itself. Part of the available 300-plus out-of-the-box connectors and approval process capabilities are five admin-specific connectors:
+The [Power Platform admin center](/power-platform/admin/new-admin-center) is designed with an outcome-driven approach, where all functionality is intuitively organized in pages based on administrative tasks. This tool is typically the primary path for completing administrative activities. For resource monitoring, this channel is mostly used for ad-hoc interactive discovery.
 
-  - [Power Automate Management](/connectors/flowmanagement/) is specifically designed to help with administrative management and monitoring.
-  - [Power Automate for Admins](/connectors/microsoftflowforadmins/) allows you to perform typical admin actions, such as disabling or deleting a flow.
-  - [Power Apps for Admins](/connectors/powerappsforadmins/) to set permissions on Power Apps or set permissions to a certain connector being used by this app.
-  - [Power Apps for Makers](/connectors/powerappsforappmakers/), which can be used by the makers themselves, although some actions overlay administrative tasks, such as settings permissions to a Power Apps app as mentioned previously.
-  - [Power Platform for Admins](/connectors/powerplatformforadmins) to perform tasks against platform components, such as creating an environment or provisioning a Microsoft Dataverse database or creating a data loss prevention (DLP) policy for a specific environment.
+- Use [tenant-level analytics](/power-platform/admin/tenant-level-analytics) to extract key service metrics based on user adoption across your environments.
+- Use the [Copilot page](/power-platform/admin/copilot/copilot-hub) to track usage, and access governance controls for Power Platform Copilots.
+- Use [Power Platform Advisor](/power-platform/admin/power-platform-advisor) to monitor recommendations to optimize your tenant.
 
-The [Center of Excellence Starter Kit](../coe/starter-kit.md) offers a template implementation using the management and admin connectors and comes with a Power BI dashboard that can be used to gain tenant-wide insights.
+### Monitor page
 
-## Monitoring storage capacity add-ons
+Use the [Monitor page](/power-platform/admin/monitoring/monitoring-overview) to assess and enhance the operational health metrics of resources developed or deployed in Power Platform. This tool is accessible to both makers (via experiences like Power Apps) and admins (via the Power Platform admin center). Makers use the data to refine their resources, while admins use it to gain insights into the overall operational health of the tenant or specific environments. 
 
-The capacity section of analytics allows you to monitor storage capacity use and availability in your tenant. From the all-up view across all the environments, you can drill down into the individual environments for details such as top entity using storage on a timeline view. Sign in to the [Power Platform admin center](https://aka.ms/ppac) and select **Analytics** > **Capacity** in the left-side navigation pane.
+### Custom tooling and extensibility
 
-![Microsoft Power Platform Capacity Analytics.](media/resource-usage1.png "Microsoft Power Platform Capacity Analytics")
+Power Platform admins often need to orchestrate and automate routine activities for their tenants. These activities depend on the organization's operational and governance requirements. The programmability and extensibility capabilities of the Power Platform empower administrators to create bespoke tools and solutions using various resources.
 
-If your organization has purchased capacity add-ons, an Add-ons tile appears on the Capacity screen in the Power Platform admin center. Sign in to the admin center and select **Analytics** > **Capacity** in the left-side navigation pane. The Add-ons tile shows summary information about the capacity add-ons that your organization has.
+- Evaluate features of the [Center of Excellence Starter Kit](../coe/starter-kit.md). The CoE Starter Kit provides a template implementation that uses the management and admin connectors and includes a Power BI dashboard for gaining tenant-wide insights.
+- Use [programmability and extensibility](/power-platform/admin/programmability-extensibility-overview) features (APIs, PowerShell cmdlets, Power Platform CLI, and connectors) to manage and automate tasks. The Power Platform API provides a unified interface for managing tenant-level resources, while the Dataverse API supports detailed data interactions within environments.
 
-![Microsoft Power Platform add-on capacity.](media/resource-usage6.png "Microsoft Power Platform add-on capacity")
+This flexibility lets admins tailor automation and orchestration to their organization's unique needs, enhancing efficiency and control over their Power Platform adoption.
 
-As an administrator, you should:
+## What should I monitor?
 
-- Regularly check the capacity available to ensure new environments can be created by users in your tenant.
-- Review the top storage used by environments to ensure you are aware of your top consuming environments.
-- Look for any unexpected spikes in usage using the database, file, and log charts for individual environments.
-- Review capacity add-ons such as Power Apps app passes, flow per business processes, portal page views, portal sign-ins, or AI Builder credits, and assign that capacity to specific environments.
+Monitor the default environment and its usage, along with the usage of Power Apps, Power Automate, and Copilots.
 
-More information: [Monitoring new and legacy capacity storage](../../admin/whats-new-storage.md)
+### Default environment
 
-## Power Automate usage
+Every employee in an organization that uses Power Platform has access to the default environment. As a Power Platform admin, you should consider, and when necessary implement, ways to control the default environment.
 
-As an administrator, you should:
+When monitoring the default environment in Power Platform, ensure optimal governance and security by focusing on these key aspects:
 
-- Monitor usage and look for insights related to types of flows that are in use.
-- Watch for errors by error type to look for common problems that might exist.
-- Spot data usage that isn't expected by drilling in to connector usage and adjust your data loss prevention policies for that environment to ensure the overall health of the platform.
+- Track connector usage and identify which connectors are used to help inform your [data loss prevention strategy](dlp-strategy.md).  
+- Identify widely adopted or business-critical apps and flows to determine which solutions need more support or should move to a dedicated environment.
+- Identify unused and ownerless apps and flows that consume capacity and clutter the default environment.
 
-More information: [Admin Analytics for Power Automate](../../admin/analytics-flow.md)
+Learn more about [managing and governing the default Power Platform environment](manage-default-environment.md).
 
-## Power Apps usage
+### Power Automate usage
 
 As an administrator, you should:
 
-- Watch overall adoption by monitoring insights into how much the apps are being used and when.
-- Check out app launches in terms of being used in a browser or via a mobile player version and on which platforms. Following your device strategy, you could ensure users are using the latest player edition.
-- Regularly monitor overall service performance to ensure user run-time experience when interacting with the platform services.
+- Monitor usage to identify the types of flows in use.
+- Watch for errors by error type to identify common problems.
+- Identify unexpected data usage by analyzing connector usage, and adjust your data loss prevention policies for that environment to ensure the overall health of the platform.
 
-More information: [Admin Analytics for Power Apps](../../admin/analytics-powerapps.md)
+Learn more: [View analytics for cloud flows](../../admin/analytics-flow.md)
 
+### Power Apps usage
+
+As an administrator, you should:
+
+- Monitor app adoption by reviewing insights on usage frequency and timing.
+- Review app launches to see if they're used in a browser, mobile player, or on specific platforms. Ensure users follow your device strategy by using the latest player version.  
+- Regularly monitor service performance to ensure a smooth user experience with platform services.  
+
+Learn more: [Admin Analytics for Power Apps](../../admin/analytics-powerapps.md)
+
+### Copilot usage
+
+As an administrator, you should:
+
+- Monitor adoption by reviewing insights into which Copilot features are used.  
+- Review governance settings and adjust which environments have Copilot features turned on based on your requirements.
+- Develop training materials to guide your makers in using AI responsibly.  
+
+Learn more: [Manage Copilot](/power-platform/admin/copilot/copilot-hub)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

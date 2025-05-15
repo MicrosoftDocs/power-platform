@@ -50,7 +50,7 @@ Make sure that your Azure DevOps Git repo is initialized. New projects and repos
 
 ## Do I integrate my dev, test, and prod environments with source code and use branch merging to push configuration to another environment?
 
-This feature is designed to only have your unmanaged solutions in development environments connected to Git. Deployment to upstream environments currently requires the managed solution from a development environment or using pipelines in Power Platform.
+This feature is designed to only have your unmanaged solutions in development environments connected to Git. Deployment to upstream environments currently requires exporting the managed solution from a development environment or using pipelines in Power Platform.
 
 ## How do I work with branches?
 
