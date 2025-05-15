@@ -27,8 +27,6 @@ The new Power Platform admin center is designed with an outcome-driven approach,
 
 All customers can access the new Power Platform admin center. It's turned on by default when you access the admin center. To revert to the classic admin center, turn off the **Try the new admin center** toggle in the upper-right corner of the admin center.
 
-[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
-
 ## Where are pages from the classic admin center in the new one?  
 
 Most of the pages from the classic admin center are available in the new one, either in their original form or with improved functionality. The following table outlines where to find them in the updated layout.
