@@ -13,6 +13,7 @@ items:
       href: authentication-guide.md
     - name: Security Details
       href: authentication-security.md
+  - name: Test your solution
     items:
     - name: Test Canvas apps
       href: canvas-application.md
