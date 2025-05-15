@@ -13,7 +13,7 @@ search.audienceType:
   - admin
 ---
 
-# What is the System Settings Reporting tab?
+# System Settings Reporting tab
 
 Use the settings on this page to configure the reporting settings for model-driven apps in customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation).
 
