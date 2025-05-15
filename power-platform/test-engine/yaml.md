@@ -38,7 +38,7 @@ Used to define one test.
 | `appLogicalName` | string |Required. The logical name of the app that is to be launched. It can be obtained from the solution. For canvas apps, you need to add it to a solution to obtain it |
 | `persona` | string |Required. The user that is logged in to perform the test. Must match a persona listed in the [Users](#users) section |
 | `testCases` | [TestCases](#testcases) |Required. Defines test cases in the test suite. Test cases contained in test suites are run sequentially. The app state is persisted across all test cases in a suite |
-| `testSuiteName` | strin |Required. The name of the test suite |
+| `testSuiteName` | string |Required. The name of the test suite |
 | `appId` | Guid |Optional. The ID of the app that is to be launched. Required and used only when app logical name isn't present. App ID should be used only for canvas apps that aren't in the solution |
 | `networkRequestMocks` | [NetworkRequestMocks](#networkrequestmocks) |Optional. Defines network request mocks needed for the test |
 | `onTestCaseComplete` | string |Optional. Defines the steps that need to be triggered for every test case in a suite after the case finishes executing |
