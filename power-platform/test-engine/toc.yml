@@ -13,8 +13,6 @@ items:
       href: authentication-guide.md
     - name: Security Details
       href: authentication-security.md
-    href: authentication.md
-  - name: How to use Test Engine
     items:
     - name: Test Canvas apps
       href: canvas-application.md

@@ -22,8 +22,6 @@ Authentication is a critical component of the test automation process. The Power
 
 The Test Engine provides two primary authentication methods:
 
-:::image type="content" source="media/authentication-options.png" alt-text="Overview of authentication options in Test Engine":::
-
 <!-- Example columns start -->
 
 :::row:::
