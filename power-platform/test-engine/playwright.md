@@ -1,9 +1,9 @@
 ---
-title: Test Engine and Playwright (preview)
-description: Learn about the relationship between Playwright and Test Engine.
+title: Test Engine and Playwright Integration (preview)
+description: Learn how Test Engine leverages Playwright to provide robust browser automation capabilities.
 author: grant-archibald-ms
 ms.author: grarchib
-ms.date: 05/09/2025
+ms.date: 05/15/2025
 ms.reviewer: jdaly
 ms.topic: article
 contributors:
@@ -11,45 +11,213 @@ contributors:
  - pvillads
 ---
 
-# Test Engine and Playwright (preview)
+# Test Engine and Playwright Integration (preview)
 
 > [!NOTE]
 > [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
 
-For many code-first developers, the initial inclination is to use familiar code-first testing tools like [Playwright](https://playwright.dev/) when working with low-code solutions. While this approach might seem logical, it can present several challenges, particularly in terms of scalability and efficiency. The following table lists some of the challenges
+## Overview
+
+Power Apps Test Engine uses [Playwright](https://playwright.dev/) as its core browser automation technology. This integration provides Test Engine with powerful, reliable, and cross-browser testing capabilities while adding several layers of abstraction to simplify test creation for Power Platform applications.
+
+## How Test Engine Enhances Playwright
+
+While Playwright offers excellent browser automation capabilities, Test Engine extends these capabilities specifically for Power Platform:
+
+| Test Engine Enhancement | Description |
+|------------------------|-------------|
+| **App-Level Abstractions** | Test Engine works with app-level objects rather than DOM elements, making tests more resilient to UI changes |
+| **Power Fx Integration** | Test Engine adds [Power Fx](./powerfx.md) support, enabling a low-code approach to test authoring |
+| **Built-in Authentication** | Pre-built authentication mechanisms handle Microsoft Entra and conditional access scenarios |
+| **Dataverse Integration** | Direct integration with [Dataverse](./dataverse.md) allows for comprehensive end-to-end testing |
+| **Specialized Providers** | Optimized [providers](./providers.md) for Canvas apps and Model-driven apps |
 
 
-|Challenge  |&nbsp;  |
-|---------|---------|
-|**Scale Issues and Resource Constraints**|Code-first testing tools often require specialized skills and knowledge, which can be in relatively short supply. This scarcity of resources can create bottlenecks in the testing process, in cases where there isn't enough access skilled testers available to meet the demands of large-scale projects. This limitation can slow down the development cycle and delay the release of new features and updates. |
-|**Level of Abstraction**|Generative AI can help with generation of Playwright code generally it's still create code at a Document Object Model (DOM) level. Where possible, Test Engine takes advantage of the JavaScript object model of [canvas apps](./canvas-application.md) and [model driven application](./model-driven-application.md) to provide a longer term sustainability of the authored tests.|
-|**Bottleneck in the Testing Process**|Relying solely on code-first testing tools can create a bottleneck in the testing process. As low-code solutions are designed to accelerate development, the testing phase should ideally keep pace with this rapid development cycle. However, code-first testing tools can be time-consuming to set up and maintain, leading to delays and inefficiencies.|
-|**Limited time**|Examples from customers demonstrate that the time required to build tests using code-first tools can exceed the time taken to create the low-code application itself. This discrepancy undermines the promise of rapid results that low-code solutions are designed to deliver. In such cases, the benefits of low-code development are negated with slow and cumbersome testing process.|
+## Technical Implementation
 
+### Browser Automation Foundation
 
-## The Need for Low-Code Testing Tools
+Test Engine utilizes Playwright's core capabilities for consistent browser automation:
 
-To address these challenges, it's essential to use low-code testing tools that align with the principles of low-code development. These tools are designed to be user-friendly, require minimal coding skills, and can be quickly integrated into the development workflow. By using low-code testing tools, organizations can:
+- **Cross-browser support** for Chrome, Firefox, and Edge
+- **Reliable waiting mechanisms** that automatically wait for elements to be ready
+- **Network request interception** for simulating API responses
+- **Tracing and debugging tools** to diagnose test failures
 
-- **Accelerate Testing**: Low-code testing tools enable faster test creation and execution, keeping pace with the rapid development cycles of low-code solutions.
-- **Reduce Bottlenecks**: By minimizing the reliance on specialized code-first testers, low-code testing tools help eliminate bottlenecks in the testing process.
-- **Enhance Collaboration**: Low-code testing tools facilitate collaboration between developers, testers, and business users, ensuring that all stakeholders are involved in the testing process.
-- **Maintain Quality**: Despite the speed of development, low-code testing tools ensure that applications are thoroughly tested and meet high standards of quality and reliability.
+### Test Engine's Architectural Integration
 
-## Power Apps Test Engine and Playwright
+![Test Engine and Playwright Architecture](./media/test-engine-playwright-architecture.png)
 
-The Power Apps Test Engine for web-based tests is based on Playwright. It provides levels of abstraction that allow a greater range of people to create tests. This approach not only simplifies the testing process but also ensures that skills and approaches are transferable across multiple components. Additionally, the Power Apps Test Engine allows for easy integration with [Dataverse](./dataverse.md) using [Power Fx](./powerfx.md), further enhancing its versatility and usability.
+1. **Provider Layer**: The provider layer in Test Engine interfaces directly with Playwright APIs to control browser behavior
+2. **Object Model**: Rather than working with raw DOM elements, Test Engine maps to application-specific object models
+3. **Power Fx Layer**: Test steps written in Power Fx are interpreted and executed through the provider layer
 
-## Keep It Simple Principle
+## Key Technical Features
 
-The "Keep it simple" principle is important in automated testing. Approaches like [user defined functions](./powerfx.md#user-defined-functions) and prebuilt assets like [C# functions](./powerfx-csharp.md) provide the ability customers and build on components provided by Power Platform Engineering team so that developers can avoid reinventing the wheel. These levels of abstraction for common patterns simplify the testing process and ensure consistency across applications. This approach not only saves time but also uses the expertise of the engineering team to create robust and reliable tests.
+### App-Specific Selectors
 
-## No Cliffs Extensibility Model
+Test Engine uses app-specific selectors instead of CSS or XPath selectors:
 
-The no cliffs extensibility model with examples like using [C# and Power Fx](./powerfx-csharp.md) further enhances the testing process by allowing seamless integration of code-first contributions and extensions. This model ensures that there are no abrupt transitions or "cliffs" when moving between low-code and code-first approaches. It creates a win-win situation where code-first developers can contribute their expertise to low-code solutions, and low-code developers can benefit from the advanced capabilities of code-first tools.
+```yaml
+# Test Engine (using app-level selectors)
+- testSteps: |
+    Select(Button1)
 
-## Conclusion
+# Equivalent in raw Playwright (using DOM selectors)
+    Select(Button1)
+# page.locator('div[data-control-name="Button1"]').click();
+```
 
-While code-first testing tools have their place, it's important to consider the best fit for low-code solutions. The scale issues, resource constraints, and potential bottlenecks they introduce can limit the effectiveness of low-code development. By adopting comon principles and extensibility patterns enhance this approach, allowing for seamless integration of code-first contributions and creating a collaborative and productive development environment.
+### Browser Context Management
+
+Test Engine manages browser contexts to support various authentication scenarios:
+
+```powershell
+# Test Engine handles browser context automatically
+pac test run `
+   --provider canvas `
+   --test-plan-file testplan.te.yaml `
+   --tenant $tenantId `
+   --environment-id $environmentId
+```
+
+## Direct Playwright Functions
+
+While Test Engine abstracts many Playwright interactions, there are scenarios where directly accessing Playwright capabilities can be valuable. Test Engine provides several preview functions that enable direct interaction with Playwright from within your Power Fx test steps.
+
+### Using Playwright Functions in Test Engine
+
+Test Engine includes the following preview functions that allow you to leverage Playwright's element selection capabilities:
+
+| Function | Description | Example |
+|----------|-------------|---------|
+| `Preview.PlaywrightAction(selector, action)` | Execute an action on elements using CSS or DOM selectors | `Preview.PlaywrightAction("//button", "click")` |
+| `Preview.PlaywrightActionValue(selector, action, value)` | Execute an action that requires a value parameter | `Preview.PlaywrightActionValue("//input[@data-id='1']", "fill", "Hello")` |
+| `Preview.PlaywrightScript(scriptPath)` | Execute a custom C# script that interfaces with Playwright | `Preview.PlaywrightScript("sample.csx")` |
+| `Preview.Pause()` | Pause test execution and display the Playwright Inspector | `Preview.Pause()` |
+
+> [!NOTE]
+> To use these preview functions, you must add the Preview functions to the allowed list in your test settings section.
+
+### Common Playwright Action Operations
+
+The following operations can be performed with `Preview.PlaywrightAction`:
+
+| Action | Description | Example |
+|--------|-------------|---------|
+| `click` | Click on an element | `Preview.PlaywrightAction("//button[@id='submit']", "click")` |
+| `exists` | Check if an element exists | `Preview.PlaywrightAction("//div[@class='error-message']", "exists")` |
+| `wait` | Wait for an element to be available | `Preview.PlaywrightAction("//table[@data-loading='false']", "wait")` |
+
+### Common Playwright Action Value Operations
+
+The following operations can be performed with `Preview.PlaywrightActionValue`:
+
+| Action | Description | Example |
+|--------|-------------|---------|
+| `fill` | Fill a form field with text | `Preview.PlaywrightActionValue("//input[@name='search']", "fill", "Product name")` |
+| `select` | Select an option from a selection list | `Preview.PlaywrightActionValue("//select", "select", "Option2")` |
+| `setAttribute` | Set an attribute on an element | `Preview.PlaywrightActionValue("//div", "setAttribute", "data-custom='value'")` |
+
+### When to Use Direct Playwright Functions
+
+While app-level abstractions are preferred, direct Playwright functions are useful in these scenarios:
+
+1. **Complex UI interactions** not covered by standard Test Engine functions
+2. **Third-party components** within Power Platform applications that need special handling
+3. **Debugging complex test scenarios** where more control is needed
+4. **Advanced validation** of element states or properties
+
+### Example: Combined Approach
+
+This example demonstrates combining app-level abstractions with direct Playwright actions:
+
+```yaml
+testSteps: |
+  # Use app-level abstraction for Power Apps control
+  Select(SubmitButton);
+  
+  # Use direct Playwright action for a third-party component
+  Preview.PlaywrightAction("//div[@class='custom-calendar']//button[@data-day='15']", "click");
+  
+  # Wait for a specific condition using Playwright
+  Preview.PlaywrightAction("//div[@data-status='complete']", "wait");
+  
+  # Resume using app-level abstractions
+  Assert(Label1.Text = "Submission Complete");
+```
+
+### Advanced: Custom Playwright Scripts
+
+For highly specialized scenarios, you can create custom Playwright scripts:
+
+1. Create a `.csx` file with your custom Playwright logic
+2. Reference required Playwright assemblies
+3. Implement the required class structure
+4. Call the script from your test steps
+
+```csharp
+// sample.csx
+#r "Microsoft.Playwright.dll"
+#r "Microsoft.Extensions.Logging.dll"
+using Microsoft.Playwright;
+using Microsoft.Extensions.Logging;
+
+public class PlaywrightScript {
+    public static void Run(IBrowserContext context, ILogger logger) {
+        Execute(context, logger).Wait();
+    }
+
+    public static async Task Execute(IBrowserContext context, ILogger logger) {
+        var page = context.Pages.First();
+        // Custom Playwright logic here
+    }
+}
+```
+
+> [!NOTE]
+> `Preview.PlaywrightScript` is only implemented for debug builds of Test Engine built from source, not in the released `pac test run` tool.
+
+## Integration with Development Process
+
+### Local Development
+
+For local development, Test Engine provides a complete environment:
+
+- Local browser execution with UI visibility
+- Step-by-step test execution
+- Detailed logs and diagnostics
+
+### CI/CD Integration
+
+In CI/CD environments, Test Engine can run Playwright in headless mode:
+
+```yaml
+# Example Azure DevOps pipeline step
+- task: PowerShell@2
+  displayName: 'Run Test Engine Tests'
+  inputs:
+    script: |
+      pac test run `
+        --provider canvas `
+        --test-plan-file "$(Build.SourcesDirectory)/tests/testplan.te.yaml" `
+        --tenant "$(TenantId)" `
+        --environment-id "$(EnvironmentId)" `
+        --headless
+```
+
+## Best Practices
+
+When working with Test Engine's Playwright integration:
+
+1. **Focus on app-level objects** rather than DOM elements
+2. **Use Power Fx functions** for complex logic rather than raw JavaScript
+3. **Take advantage of built-in authentication** mechanisms
+4. **Reserve direct Playwright functions** for scenarios where app-level abstractions are insufficient
+5. **Review generated tests** to optimize for readability and maintenance
+
+## Summary
+
+Test Engine provides the power of Playwright with abstraction layers designed specifically for Power Platform applications. This approach combines the reliability of browser automation with the simplicity of app-level testing, resulting in more robust, maintainable test suites.
 
 [!INCLUDE [footer-banner](../includes/footer-banner.md)]
