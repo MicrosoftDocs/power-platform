@@ -51,7 +51,7 @@ The admin doesn't need to be a licensed user. Environment admins gain access to 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Tenant settings**.
-1. On the **Tenant settings** page, select **Analtyics**.
+1. On the **Tenant settings** page, select **Analytics**.
 1. In the **Analytics** pane, turn the **Tenant-level analytics** option to **Enable**.
 1. Select **Save**.
 

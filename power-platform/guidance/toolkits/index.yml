@@ -1,0 +1,58 @@
+### YamlMime:Landing
+
+title: Power Platform toolkits documentation # < 60 chars
+summary: Power Platform toolkits are made available by the Power Platform engineering team as reference implementation to provide a starting point in solving a problem. # < 160 chars
+
+metadata:
+  title: Power Platform toolkits documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Power Platform toolkits documentation # Required; article description that is displayed in search results. < 160 chars.
+  ms.services: service
+  ms.subservice: guidance
+  ms.topic: landing-page # Required
+  author: manuelap-msft #Required; your GitHub user alias, with correct capitalization.
+  ms.author: mapichle #Required; microsoft alias of author; optional team alias.
+  ms.date: 05/14/2025
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | tutorial | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card 
+  - title: Center of Excellence (CoE) Kit
+    linkLists:
+      - linkListType: overview
+        links:
+           - url: /power-platform/guidance/coe/overview
+             text: CoE overview
+           - url: /power-platform/guidance/coe/starter-kit-explained
+             text: What's in the CoE starter Kit
+           - url: /power-platform/guidance/coe/setup
+             text: Set up the CoE starter Kit
+           - url: /power-platform/guidance/coe/power-bi
+             text: Use the CoE starter Kit
+  - title: Creator Kit
+    linkLists:
+      - linkListType: overview
+        links:
+           - url: /power-platform/guidance/creator-kit/overview
+             text: Creator Kit overview
+           - url: /power-platform/guidance/creator-kit/components
+             text: What's in the Creator Kit
+           - url: /power-platform/guidance/creator-kit/setup
+             text: Install the Creator Kit
+           - url: /power-platform/guidance/creator-kit/creator-kit-explained
+             text: Use the Creator Kit
+  - title: ALM Accelerator
+    linkLists:
+      - linkListType: overview
+        links:
+           - url: /power-platform/guidance/alm-accelerator/overview
+             text: ALM Accelerator overview
+           - url: /power-platform/guidance/alm-accelerator/kit-contents
+             text: What's in the ALM Accelerator
+           - url: /power-platform/guidance/alm-accelerator/setup-admin-tasks
+             text: Install the ALM Accelerator
+           - url: /power-platform/guidance/alm-accelerator/new-maker-experience
+             text: Use the ALM Accelerator
+  
