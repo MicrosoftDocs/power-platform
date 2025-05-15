@@ -4,7 +4,7 @@ description: Configure Dataverse search for your environment to improve search r
 author: marianaraujo 
 ms.component: pa-admin
 ms.topic: get-started
-ms.date: 04/24/2025
+ms.date: 05/15/2025
 ms.subservice: admin
 ms.custom: NewPPAC
 ms.author: maaraujo
@@ -68,14 +68,14 @@ For more information about Dataverse search, see [Search for tables and rows by
 
 Dataverse search is an opt-out feature, set to **On** for all new production environments. We recommend turning on Dataverse search so users have a superior search experience in model-driven apps.
 
-- When set to **On**, you see the search bar in the header of all model-driven apps in the environment enabling your users to have a global-search experience.
+- When set to **On**, you see the search bar in the header of all model-driven apps in the environment allowing your users to have a global-search experience.
 - When set to **Off**, you don't see the search bar in the header of all model-driven apps in the environment.
 
 
 Individual users aren't able to switch to [Quick Find search, formerly known as categorized search](/powerapps/user/quick-find). Tables must be included in the application you're using with Dataverse search. Be sure that any table you want users to search on are included in your application.
 
 > [!IMPORTANT]
-> If you're using your own encryption key, you can turn off Dataverse search after enabling early access of 2021 release wave 2 in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+> If you're using your own encryption key, you can turn off Dataverse search after allowing early access of 2021 release wave 2 in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 
 > [!NOTE]
 > Dataverse search doesn't support lifecycle operations such as create, delete, backup, recover, copy, and reset. If such an operation, be sure to turn on Dataverse search again.
@@ -102,7 +102,7 @@ Take these steps to turn on Dataverse search:
 1. Select **Save** to apply the change.
 ---
 
-Turning on Dataverse search enables global-search in all of your model-driven apps within that environment. You can't turn it off in specific apps.
+Turning on Dataverse search allows global-search in all of your model-driven apps within that environment. You can't turn it off in specific apps.
 
 When you provision a Dataverse search index, an indication that provisioning is in progress is visible. Once index provisioning is complete, it may take anywhere between an hour or more to complete a full sync for average size organizations, to a couple of days for large organizations.
 
@@ -309,7 +309,7 @@ This section provides answers to frequently asked questions about Dataverse sear
 
 ### How can I find out how much storage Dataverse search consumes?
 
-There is a table called _RelevanceSearch_ that reports on the storage consumed by Dataverse search at the environment level. Respectively, Dataverse search is reported as part of database storage consumption in the **Summary** tab. You can also view Dataverse search in the **Environment** report in Power Platform admin center or **Capacity** report:
+There is a table called **RelevanceSearch** that reports on the storage consumed by Dataverse search at the environment level. Respectively, Dataverse search is reported as part of database storage consumption in the **Summary** tab. You can also view Dataverse search in the **Environment** report in Power Platform admin center or **Capacity** report:
 
 ## [New admin center](#tab/new)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
@@ -327,13 +327,12 @@ There is a table called _RelevanceSearch_ that reports on the storage consumed b
 1. On the **Licenses** page, go to the **Environments** tab, then select an environment to view.
 ---
 
-
-We recommend turning on Dataverse search so users can enjoy a better search experience in model-driven apps. As an Environment admin, you can opt out of this feature for the purpose of managing your environments by selecting the option **Off**.
+We recommend turning on Dataverse search so users can enjoy a better search experience in model-driven apps. As an environment admin, you can opt out of this feature for the purpose of managing your environments by selecting the option **Off**.
 
 > [!IMPORTANT]
 > Dataverse search counts towards the different storage entitlements you have in the tenant.
 
-### See also  
+### Related content
 
 - [Search for tables and rows by using Dataverse search](/powerapps/user/relevance-search)
 - [Configure facets and filters](/power-apps/user/facets-and-filters)
