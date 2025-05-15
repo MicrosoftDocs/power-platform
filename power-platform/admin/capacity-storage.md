@@ -79,7 +79,7 @@ All tables of Dataverse, including system tables, are included in the storage ca
 |Number  |Description |
 |---------|---------|
 |(1)   |**Storage capacity usage**  <ul><li>**File and database**: The following tables store data in file and database storage: <ul><li>Attachment</li><li>AnnotationBase</li><li>Any custom or out-of-the-box table that has columns of datatype file or image (full size)</li><li>Any table that is used by one or more installed Insights applications and [ends in *- Analytics*](#what-are-tables-ending-in---analytics-in-my-capacity-report) </li> </ul></li><ul><li>WebResourceBase</li></ul><ul><li>RibbonClientMetadataBase</li></ul><li>**Log**: The following tables are used: <ul><li>AuditBase</li><li>PlugInTraceLogBase</li><li>Elastic tables</li></ul><li>**Database only**: All other tables are counted for your database</li></ul>  |
-|(2)    |**Storage capacity, by source** <ul><li>**Org (tenant) default**: The default capacity given at the time of sign up </li><li>**User licenses**: More capacity added for every user license purchased</li><li>**Additional storage**: Any extra storage you bought </li><li>**Total**: Total storage available </li><li>**View self-service sources**: Learn more at [View self-service license amounts and storage capacity](view-self-service-capacity.md)</li></ul>      |
+|(2)    |**Storage capacity, by source** <ul><li>**Org (tenant) default**: The default capacity given at the time of sign-up </li><li>**User licenses**: More capacity added for every user license purchased</li><li>**Additional storage**: Any extra storage you bought </li><li>**Total**: Total storage available </li><li>**View self-service sources**: Learn more at [View self-service license amounts and storage capacity](view-self-service-capacity.md)</li></ul>      |
 |(3)     |**Top storage usage, by environment**: The environments that consume the most capacity        |
 |(4)  |  **Add-ons**:  Your organization's add-on usage details. Learn more at [View capacity add-ons in Power Platform admin center](capacity-add-on.md#view-capacity-add-ons-in-power-platform-admin-center). |
 
@@ -238,11 +238,11 @@ We're making changes for what happens when an organization's storage capacity is
 
 Notifications for capacity approaching storage limits are triggered when any of the three storage capacities (database, file, or log) have less than 15% of space available. Another warning notification that admin operations could be impacted is sent when any of the three storage capacities have less than 5% of space available. The final tier of notification triggers when the tenant is "in overage" (storage usage exceeds capacity entitlements), which alerts the admin that the following operations are no longer available until the overage is resolved:
 
-- Create a new environment (requires minimum 1 GB capacity available)
+- Create a new environment (requires minimum 1-GB capacity available)
 - Copy an environment
 - Restore an environment
-- Convert a trial environment to paid (requires minimum 1 GB capacity available)
-- Recover an environment (requires minimum 1 GB capacity available)
+- Convert a trial environment to paid (requires minimum 1-GB capacity available)
+- Recover an environment (requires minimum 1-GB capacity available)
 - Add Dataverse database to an environment
 
 > [!NOTE]
@@ -271,7 +271,7 @@ You should be within limits for your entitled capacity for database, log, and fi
 |**Log**     |  10 GB       | 5 GB        |
 |**File**     | 400 GB        | 200 GB        |
 
-This tenant is 10 GB over in database usage. Despite having 200 GB excess file storage, the tenant is considered to be in deficit. This tenant should free up storage or purchase more capacity.
+This tenant is 10 GB over in database usage. Despite having 200-GB excess file storage, the tenant is considered to be in deficit. This tenant should free up storage or purchase more capacity.
 
 ### Scenario 2: Log storage is over capacity, overage enforcement
 
@@ -291,7 +291,7 @@ This tenant is 10 GB over in log usage and has only 5 GB available in database c
 |**Log**     |  10 GB       | 5 GB        |
 |**File**     | 200 GB        | 290 GB        |
 
-This tenant is 90 GB over in file usage. Despite having 85 GB available (80 GB database + 5 GB log) in storage capacity, the tenant is considered to be in deficit. This tenant should free up storage or purchase more capacity.
+This tenant is 90 GB over in file usage. Despite having 85 GB available (80-GB database + 5-GB log) in storage capacity, the tenant is considered to be in deficit. This tenant should free up storage or purchase more capacity.
 
 ## Example storage capacity scenario, no overage
 
