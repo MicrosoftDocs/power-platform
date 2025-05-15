@@ -6,7 +6,7 @@ ms.subservice: alm
 ms.author: matp
 ms.date: 04/21/2025
 ms.custom: 
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.reviewer: matp
 ms.collection: 
 ms.contributors:
@@ -119,6 +119,6 @@ Now you can synchronize changes across multiple environments.
 
 ## Next steps
 
-After your environments and solutions are connected to Git, you can start making changes to your solutions and committing those changes to the repository. For more information about source control operations, go to [Source control repository operations (preview)](source-control-operations.md).
+After your environments and solutions are connected to Git, you can start making changes to your solutions and committing those changes to the repository. For more information about source control operations, go to [Source control repository operations](source-control-operations.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

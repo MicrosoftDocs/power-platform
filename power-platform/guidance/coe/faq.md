@@ -3,7 +3,7 @@ title: "CoE Starter Kit - Frequently asked questions"
 description: "Explore frequently asked questions, tips, and how-to's when getting the Microsoft CoE Starter Kit set up."
 author: manuelap-msft
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: faq
 ms.date: 09/05/2023
 ms.subservice: guidance-toolkit
 ms.author: mapichle

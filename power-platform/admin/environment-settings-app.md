@@ -3,7 +3,7 @@ title: Use the Power Platform Environment Settings app
 description: Learn how to use the Power Platform Environment Settings app.
 author: yingchin
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 02/03/2025
 ms.subservice: admin
 ms.author: yingchin

@@ -3,8 +3,8 @@ title: View event logs and error logs (preview)
 description: Learn how to use event logs and error logs to help with operational health analysis.
 ms.subservice: admin
 ms.component: pa-admin
-ms.topic: conceptual
-ms.date: 11/17/2024
+ms.topic: how-to
+ms.date: 03/31/2025
 ms.custom: NewPPAC
 author: alaug
 ms.author: alaug
@@ -15,8 +15,8 @@ search.audienceType:
 
 # View event logs and error logs (preview)
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner.md)]
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 All metrics that are part of the monitoring experience can be accessed on the **Logs** page. They are aggregated from runtime event logs and error logs that are associated with a metric. Logs can help with operational health analysis. They can be downloaded for offline review.
 

@@ -2,7 +2,7 @@
 title: Tenant-level analytics for Power Automate
 description: View Tenant-level analytics for Power Automate.
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 10/30/2023
 author: Zeffin
 ms.subservice: admin

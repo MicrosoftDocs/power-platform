@@ -8,7 +8,7 @@ ms.author: matp
 ms.custom: ""
 ms.date: 02/04/2025
 ms.reviewer: ""
-ms.topic: "article"
+ms.topic: how-to
 search.audienceType: 
   - maker
 ---
