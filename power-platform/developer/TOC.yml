@@ -101,6 +101,8 @@
                 href: cli\reference\canvas.md
               - name: pac catalog
                 href: cli\reference\catalog.md
+              - name: pac code
+                href: cli\reference\code.md
               - name: pac connection
                 href: cli\reference\connection.md
               - name: pac connector
