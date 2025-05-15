@@ -69,15 +69,15 @@ For Sharepoint/Dataverse/Connector apps, `requestURL` and `method` can be the sa
 | Property | Type | Description |
 |---|---|---|
 | `testCaseName` | string |Required. The name of the test case that is used in reporting success and failure |
-| `testSteps` | [TestSteps](#teststeps) |Required. A set of Power Fx functions describing the steps needed to perform the test case |
+| `testSteps` | [TestSteps](#teststeps) |Required. A set of Power Fx functions describing the steps needed to perform the test case. See [TestSteps example](#teststeps-example)|
 | `testCaseDescription` | No |Optional. Additional information describes what the test case does |
 
 ### TestSteps
 
-- This can use any existing [Test Engine Power Fx functions](../power-fx/overview.md) functions or [specific test functions](powerfx.md) defined by this framework.
-- It should start with a `|` to allow for multiline YAML expressions followed by an `=` sign to indicate that it's a Power Fx expression
-- Functions should be separated by a `;`
-- Comments can be used and should start with `//`
+- `TestSteps` can use any existing [Test Engine Power Fx functions](../power-fx/overview.md) functions or [specific test functions](powerfx.md) defined by this framework.
+- The value should start with a pipe symbol (`|`) to allow for multiline YAML expressions followed by an equals (`=`) sign to indicate that it's a Power Fx expression
+- Functions should be separated by a semicolon (`;`).
+- Comments can be used and should start with double backslash characters (`//`).
 
 #### TestSteps example
 
@@ -175,7 +175,7 @@ The `personaName` is used as part of the test definition to indicate what user t
 
 #### Supported credentials storage mechanisms
 
-To store credentials as environment variables, you can set it as follows:
+To store credentials as environment variables, you can set them as follows:
 
 ```powershell
 # In PowerShell - replace variableName and variableValue with the correct values
