@@ -218,7 +218,9 @@ After these commands complete, don't close the SharePoint 2016 Management Shell.
 >  Running this command changes the authentication realm of the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises farm. For applications that use an existing security token service (STS), this command may cause unexpected behavior with other applications that use access tokens. Learn more in [Set-SPAuthenticationRealm](/powershell/module/sharepoint-server/Set-SPAuthenticationRealm).  
   
 ```powershell
-Set-SPAuthenticationRealm -Realm $SPOContextId  
+# SPOContextId is the tenant ID for the dynamics 365 tenant. It is used to identify the tenant in Azure AD and SharePoint Online.
+$SPOContextId = "<tenantId>"
+Set-SPAuthenticationRealm -Realm $SPOContextId
 ```  
   
 ### Create a trusted security token issuer for Microsoft Entra ID on SharePoint  
