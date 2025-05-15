@@ -35,7 +35,7 @@ Before you install the ALM Accelerator for Power Platform, make sure you've met 
   - [Establishing an environment strategy for Microsoft Power Platform](../white-papers/environment-strategy.md)
   - [Environment strategy for ALM](../../alm/environment-strategy-alm.md)
 
-- The ALM Accelerator uses Azure DevOps for source control and deployments. If you don't have an Azure DevOps organization, sign up for free for up to five users on the [Azure DevOps site](https://azure.microsoft.com/services/DevOps/).
+- The ALM Accelerator uses Azure DevOps for source control and deployments. If you don't have an Azure DevOps organization, sign up for free for up to five users on the [Azure DevOps site](https://azure.microsoft.com/products/devops/).
 
 - To complete the steps in this section, you need the following users and permissions in Azure, Azure DevOps, and Power Platform:
 

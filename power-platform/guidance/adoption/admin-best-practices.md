@@ -1,61 +1,25 @@
 ---
-title: "Admin and governance best practices - Microsoft Power Platform | MicrosoftDocs"
-description: "Discover admin and governance best practices for Microsoft Power Platform."
+title: Power Platform governance overview and strategy
+description: Learn how to develop a governance strategy for Power Platform to ensure operational excellence, stability, and compliance for mission-critical workloads.
+#customer intent: As a Power Platform admin, I want to develop a governance strategy for Power Platform so that I can ensure operational excellence and compliance for mission-critical workloads.
 author: manuelap-msft
-
 ms.component: pa-admin
-ms.topic: best-practice
-ms.date: 06/13/2024
+ms.topic: concept-article
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: sericks
-search.audienceType: 
-  - admin
+ms.reviewer: pankajsharma2087
+ms.date: 05/14/2025
 ---
-# Admin and governance best practices
 
-What sets Microsoft Power Platform apart from other low-code options already in use in your organization (through Excel or Access) or other shadow IT, point-solution SaaS providers, is that everything is governed and authenticated through Microsoft Entra—you need to sign in with your work or school Microsoft Entra account in order to use this service. This means that as an admin, you have full visibility of everything your makers and users do—it's governable, automatable, auditable, and manageable by default.
+# Power Platform governance overview and strategy
 
-In this section, we'll explore some best practices to follow when establishing admin and governance for Microsoft Power Platform.
+Power Platform governance refers to the set of policies, practices, and tools used to manage and control the use of Power Platform within your organization. It aims to ensure that the platform is used efficiently, securely, and in compliance with organizational standards and regulations. Effective governance helps you use the full potential of Power Platform while maintaining control and mitigating risks.
 
-:::row:::
-   :::column span="":::
-      <img src="media/i_tools.svg" alt="Manage icon" width="80"/><br><br>**Manage** <br /> 
+In this section, we explore some best practices to follow when establishing and implementing a governance strategy for Power Platform.
 
-> [!div class="checklist"]
-> * [Designate the Microsoft Power Platform admin role](pp-admin.md)
-> * [Manage users](../../admin/create-users.md)  
-> * [Plan and manage license and capacity](../../admin/capacity-add-on.md)
-> * [Establish an environment strategy](../white-papers/environment-strategy.md)
-> * [Manage Microsoft Dataverse for Teams environments](teams-environment-strategy.md)
-   :::column-end:::
-   :::column span="":::
-      <img src="media/i_protect.svg" alt="Secure icon" width="80"/><br><br>**Secure**
-
-> [!div class="checklist"]
-> * [Establish tenant and environment level DLP Policies](dlp-strategy.md)
-> * [Set up Microsoft Entra conditional access](conditional-access.md)
-> * [Enable cross-tenant isolation](../../admin/cross-tenant-restrictions.md)
-   :::column-end:::
-   :::column span="":::
-      <img src="media/i_alert.svg" alt="Overview icon" width="80"/><br><br>**Monitor & Alert**
-
-> [!div class="checklist"]
-> * [Report on resource usage](resource-usage.md)
-> * [Track user access](access-usage.md)
-> * [Monitor Microsoft Dataverse usage](cds-usage.md)
-> * [Monitor new connectors](new-connectors.md)
-> * [Set up sharing alerts and mitigations](sharing-alerts.md)
-> * Don't start from scratch, take advantage of the [CoE Starter Kit](../coe/starter-kit.md)
-   :::column-end:::
-:::row-end:::
-
-## Related resources
-
-- [Microsoft Power Platform admin guide](../../admin/admin-documentation.md)
-- [Microsoft Power Apps and Power Automate Admin Whitepaper](https://aka.ms/powerappsadminwhitepaper)
-- [Default environment routing](../../admin/default-environment-routing.md)
-
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+1. [Designate a Power Platform admin](pp-admin.md). Assign a dedicated administrative role to oversee operations, ensure compliance, and optimize performance.
+1. [Support management at scale](govern-at-scale.md). Implement governance practices that support the efficient and secure management of Power Platform environments at scale, ensuring consistency and control across the organization.
+1. [Establish an environment strategy](environment-strategy.md). Develop a comprehensive strategy for creating, managing, and decommissioning environments to support organizational goals.
+1. [Implement reactive governance controls](reactive-governance.md). Manage and address actions and issues as they arise.
+1. [Manage Dataverse for Teams environments](teams-environment-strategy.md). Develop strategies for managing Dataverse for Teams environments.
+1. [Manage the default environment](manage-default-environment.md). Implement best practices for managing the default environment.

@@ -94,8 +94,8 @@ This deployment type involves different Microsoft Entra deployments that separat
 - Users of the main tenant might use Azure business-to-business authentication to access the development tenant.
 - Users from outside the organization may be invited to the development tenant and not have access to the main tenant.
 
-### See also
+## Related information
 
-[Tenancy in Microsoft Entra ID](/azure/active-directory/develop/single-and-multi-tenant-apps)
+- [Tenancy in Microsoft Entra ID](/azure/active-directory/develop/single-and-multi-tenant-apps)
 
 [!INCLUDE [footer-include](../../../includes/footer-banner.md)]
