@@ -59,19 +59,26 @@ A member of one of the following admin roles is required to turn on tenant-level
 - Microsoft 365 Global admin
 - Delegated admin 
 
-The admin doesn't need to be a licensed user. Environment admins gain access to the tenant-level analytics once the service admin enables the feature using the following steps: 
+The admin doesn't need to be a licensed user. Environment admins gain access to the tenant-level analytics once the service admin turns on the feature using the following steps.
 
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) and select **Analytics** > **Power Apps** or **Analytics** > **Power Automate**.
+#### [New admin center](#tab/new)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Tenant settings**.
+1. On the **Tenant settings** page, select **Analytics**.
+1. In the **Analytics** pane, turn the **Tenant-level analytics** option to **Enable**.
+1. Select **Save**.
 
+#### [Classic admin center](#tab/classic)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Analytics** > **Power Apps** or **Analytics** > **Power Automate**.
 1. Select the **Overview** tab.
+1. Select **Enable**.
+1. In the **Analytics** pane, turn the **Tenant-level analytics** option to **Enable**.
+1. Select **Save**.
+---
 
-1. Select **Enable** to redirect to the **Analytics** pane.
-  
-    You may also select the **Settings** icon in the upper-right corner of the site, and then select **Power Platform settings**. 
-
-1. In the **Analytics** pane, grant consent for tenant-level analytics by enabling the **Tenant-level analytics** feature.
-
-    Once enabled, this feature aggregates data from environments across all regions in your tenant and copies it into the default environment region for tenant-level reporting. A tenant-level administrator role is required for one-time operation of granting consent for tenant-level analytics. 
+Once turned on, this feature aggregates data from environments across all regions in your tenant and copies it into the default environment region for tenant-level reporting. A tenant-level administrator role is required for one-time operation of granting consent for tenant-level analytics. 
 
 1. Select **Save**, and then close the form. 
 
