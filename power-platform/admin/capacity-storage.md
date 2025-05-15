@@ -1,7 +1,7 @@
 ---
 title: Dataverse capacity-based storage details  
 description: Learn about the Microsoft Dataverse capacity-based storage model.
-ms.date: 03/21/2025
+ms.date: 05/15/2025
 ms.topic: concept-article
 author: marianaraujo 
 ms.subservice: admin
@@ -344,7 +344,7 @@ Because custom Quick Find lookups are created by an admin in the org, these can 
 
 ### What is the RelevanceSearch table and how can I reduce it?
 
-The RelevanceSearch table is the cumulative storage used by the Global Search. It includes the data from all searchable, retrievable, and filterable fields of the tables you indexed for your environment. Learn more in [Configure Dataverse search to improve search results and performance](configure-relevance-search-organization.md). You can reduce the table size by removing Find Columns, View Columns, and Filter conditions for one or more tables.
+The **RelevanceSearch** table is the cumulative storage used by the global search. It includes the data from all searchable, retrievable, and filterable fields of the tables you indexed for your environment. Learn more in [Configure Dataverse search to improve search results and performance](configure-relevance-search-organization.md). You can reduce the table size by removing find columns, view columns, and filter conditions for one or more tables.
 
 ### I just bought the new capacity-based licenses. How do I provision an environment by using this model?
 
