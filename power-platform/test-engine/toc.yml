@@ -6,6 +6,13 @@ items:
   - name: Features
     href: features.md
   - name: Authentication
+    items:
+    - name: Overview
+      href: authentication.md
+    - name: Guide
+      href: authentication-guide.md
+    - name: Security Details
+      href: authentication-security.md
     href: authentication.md
   - name: How to use Test Engine
     items:
@@ -15,12 +22,6 @@ items:
       href: model-driven-application.md
     - name: Test Dataverse extensions
       href: dataverse.md
-  - name: Model Context Protocol Server
-    items:
-    - name: Overview
-      href: mcp/overview.md
-    - name: Installation
-      href: mcp/install.md
   - name: Yaml format
     href: yaml.md
   - name: Power Fx

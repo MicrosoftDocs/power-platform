@@ -32,8 +32,6 @@ landingContent:
         links:
           - text: Test Engine Authentication
             url: authentication.md
-          - text: Model Context Protocol Server
-            url: mcp/overview.md
       - linkListType: how-to-guide
         links:
           - text: Test Canvas apps
@@ -50,8 +48,6 @@ landingContent:
     linkLists:
       - linkListType: concept
         links:
-          - text: Model Context Protocol Server Installation
-            url: mcp/install.md
           - text: Yaml format
             url: yaml.md
           - text: Power Fx functions
