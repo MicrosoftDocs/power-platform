@@ -21,10 +21,7 @@ Initially, the Test Engine was limited to supporting only canvas applications. H
 ### Current Providers
 
 1. **Canvas Applications**: The Test Engine continues to support and extend the range of test scenarios for canvas applications.
-1. **Model-Driven Applications**: Test Engine can interact with model-driven applications, including:
-   - **Entity Lists**: Lists of records from a specific entity in Dataverse.
-   - **Entity Records**: Individual records within an entity.
-   - **Custom Pages**: Custom-designed pages within model-driven apps.
+1. **Model-Driven Applications**: Test Engine can interact with model-driven applications.
 1. **Power Fx**: Allows Power Fx steps to be run independent of a specific application. For example, you could use this provider be used to perform integration tests with Dataverse.
 1. **Power Apps Portal**: Allows preview support for a limited number of automation tasks of `https://make.powerapps.com` to perform and verify common operations.
 
@@ -73,14 +70,36 @@ pac test run `
 
 #### Model Driven Applications
 
+For model-driven apps, the `--domain` parameter will vary based on the type of page you're testing. The URL format should specify the correct `pagetype` based on your testing scenario:
+
 ```powershell
+# For custom pages
 pac test run `
    --provider mda `
    --test-plan-file testplan.te.yaml `
    --tenant aaaabbbb-0000-cccc-1111-dddd2222eeee `
    --environment-id 00aa00aa-bb11-cc22-dd33-44ee44ee44ee `
    --domain "https://contoso.crm.dynamics.com/main.aspx?appid=00001111-aaaa-2222-bbbb-3333cccc4444&pagetype=custom&name=dev_home_c8017"
+
+# For entity lists (views)
+pac test run `
+   --provider mda `
+   --test-plan-file testplan.te.yaml `
+   --tenant aaaabbbb-0000-cccc-1111-dddd2222eeee `
+   --environment-id 00aa00aa-bb11-cc22-dd33-44ee44ee44ee `
+   --domain "https://contoso.crm.dynamics.com/main.aspx?appid=00001111-aaaa-2222-bbbb-3333cccc4444&pagetype=entitylist&etn=account&viewid=5a84c584-df1c-ed11-9db0-000d3a991110"
+
+# For entity records (forms)
+pac test run `
+   --provider mda `
+   --test-plan-file testplan.te.yaml `
+   --tenant aaaabbbb-0000-cccc-1111-dddd2222eeee `
+   --environment-id 00aa00aa-bb11-cc22-dd33-44ee44ee44ee `
+   --domain "https://contoso.crm.dynamics.com/main.aspx?appid=00001111-aaaa-2222-bbbb-3333cccc4444&pagetype=entityrecord&etn=account&id=72e0e163-df1c-ed11-9db0-000d3a991110"
 ```
+
+> [!TIP]
+> For more examples of URL formats and test automation with Model-Driven Apps, see the [PowerApps-TestEngine sample scripts](https://github.com/microsoft/PowerApps-TestEngine/blob/main/samples/copilotstudiokit/RunTests.ps1).
 
 #### Power Fx
 
