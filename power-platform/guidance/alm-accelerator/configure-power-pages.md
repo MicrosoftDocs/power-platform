@@ -5,7 +5,7 @@ ms.topic: how-to
 ms.date: 04/10/2023
 ms.subservice: guidance-toolkit
 author: rajeevpentyala
-ms.author: rajeevpe
+ms.author: grarchib
 ms.reviewer: sericks
 ms.custom: bap-template
 ---
@@ -107,6 +107,6 @@ Site administrators can use this method. It requires more setup and planning but
 
 1. Refresh the website in your browser to see the changes.
 
-### See also
+## Related information
 
 [Learn more about deployment profiles in the portal CLI documentation](../../developer/cli/reference/paportal.md)

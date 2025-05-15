@@ -783,7 +783,15 @@ Update tenant settings.
 [!INCLUDE [admin-update-tenant-settings-intro](includes/admin-update-tenant-settings-intro.md)]
 
 
-### Required Parameters for admin update-tenant-settings
+### Optional Parameters for admin update-tenant-settings
+
+#### `--setting-name` `-n`
+
+Name of the setting to be updated.
+
+#### `--setting-value` `-v`
+
+Value of the setting to be updated.
 
 #### `--settings-file` `-s`
 
