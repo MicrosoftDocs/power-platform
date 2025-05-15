@@ -18,7 +18,7 @@ contributors:
 > [!NOTE]
 > [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
 
-Power Apps Test Engine is a testing solution designed specifically for Power Platform applications. Whether you're new to automated testing, familiar with Test Studio, or an experienced developer with Playwright knowledge, Test Engine offers a scalable approach to testing that aligns with the low-code philosophy of Power Platform.
+Power Apps Test Engine is a testing solution designed specifically for Power Platform applications. Whether you're new to automated testing, familiar with [Test Studio](/power-apps/maker/canvas-apps/test-studio), or an experienced developer with Playwright knowledge, Test Engine offers a scalable approach to testing that aligns with the low-code philosophy of Power Platform.
 
 Learn more about how Test Engine helps you regardless of where you are starting from:
 
@@ -30,6 +30,9 @@ If you're testing your Power Platform applications manually, Test Engine provide
 - **Low-code approach**: Create automated tests using YAML and Power Fx, the same formula language used in Power Apps
 - **No DOM knowledge required**: You don't need to understand HTML or CSS selectors to interact with your app's components
 - **Familiar terminology**: Tests reference control names as they appear in Power Apps Studio, making tests easy to read and maintain
+
+Test Engine can help you:
+
 - **Save time**: Automate repetitive test scenarios that you're currently performing manually
 - **Increase coverage**: Run more comprehensive tests more frequently
 - **Create a test baseline**: Document your testing process in a format that can be reused and shared
@@ -37,11 +40,14 @@ If you're testing your Power Platform applications manually, Test Engine provide
 
 ## [Test Studio users](#tab/teststudio)
 
-If you're familiar with testing canvas apps using [Test Studio](/power-apps/maker/canvas-apps/test-studio), Test Engine represents an evolution in Power Platform testing:
+If you're familiar with testing canvas apps using Test Studio, Test Engine represents an evolution in Power Platform testing:
 
 - **Command-line interface**: Run tests from the Power Platform CLI, enabling integration with CI/CD pipelines
 - **Broader application support**: Test Model-driven applications, Dataverse extensions, and canvas apps.
 - **Enhanced capabilities**: Access features like connector mocking, screenshot capture, and video recording for comprehensive test coverage
+
+Test Engine offers these advantages:
+
 - **Command-line execution**: Run tests from terminals or CI/CD pipelines
 - **Broader application support**: Test Model-driven apps and Dataverse integrations, not just Canvas apps
 - **Greater control**: Customize test behavior with fine-grained settings
@@ -54,6 +60,9 @@ If you're a pro developer experienced with tools like [Playwright](https://playw
 - **Domain-specific advantages**: While Playwright operates at the DOM level, Test Engine applies the JavaScript object model of Power Apps for more resilient tests
 - **Efficiency gains**: Create and maintain tests faster than traditional code-first approaches
 - **Integration options**: Use the [Preview.PlaywrightAction function](powerfx-functions.md#previewplaywrightaction) when you need direct Playwright capabilities like locators
+
+Test Engine provides:
+
 - **Power Platform optimization**: Tests that understand the unique structure of Power Platform applications
 - **Lower maintenance**: Tests that are more resilient to UI changes
 - **Team collaboration**: A testing approach that both developers and low-code makers can understand
@@ -69,32 +78,6 @@ Currently, Power Apps Test Engine works with the following Power Platform compon
 
 You must [Install Microsoft Power Platform CLI](../developer/cli/introduction.md#install-microsoft-power-platform-cli) to use the Test Engine.
 
-
-## Key Features and Benefits
-
-- **[Authentication Flexibility](authentication.md)**: Multiple authentication methods including interactive, service principal, and session persistence
-- **[Power Fx Test Authoring](powerfx.md)**: Write tests using the same formula language used in Power Apps
-- **[Dataverse Integration](dataverse.md)**: Test Dataverse-dependent functionality with built-in support
-- **Control Name References**: Reference controls by their studio names rather than complex DOM selectors
-- **[Multiple Application Types](providers.md)**: Test Canvas apps, Model-driven apps, and more with specialized providers
-- **[Connector Mocking](simulation.md)**: Simulate connector responses for reliable, isolated testing
-- **Visual Diagnostics**: Capture screenshots and videos to troubleshoot test failures
-
-## Limitations
-
-As Test Engine is in preview, be aware of these current limitations:
-
-- Browser locale settings follow your default browser settings
-- Some specialized controls can require using the [Preview.PlaywrightAction function](powerfx-functions.md#previewplaywrightaction)
-- Performance testing capabilities are still in development
-
-### Supported Browsers
-
-The Test Engine works with the following browsers:
-
-- Chromium (Chrome, Microsoft Edge)
-- Firefox
-- WebKit (Safari)
 
 ## Getting Started with Test Engine
 
@@ -147,6 +130,32 @@ The approach to getting started depends on your role and experience level:
    - Apply [PlaywrightAction](powerfx-functions.md#previewplaywrightaction) for specialized control interactions
 
 ---
+
+## Key Features and Benefits
+
+- **[Authentication Flexibility](authentication.md)**: Multiple authentication methods including interactive, service principal, and session persistence
+- **[Power Fx Test Authoring](powerfx.md)**: Write tests using the same formula language used in Power Apps
+- **[Dataverse Integration](dataverse.md)**: Test Dataverse-dependent functionality with built-in support
+- **Control Name References**: Reference controls by their studio names rather than complex DOM selectors
+- **[Multiple Application Types](providers.md)**: Test Canvas apps, Model-driven apps, and more with specialized providers
+- **[Connector Mocking](simulation.md)**: Simulate connector responses for reliable, isolated testing
+- **Visual Diagnostics**: Capture screenshots and videos to troubleshoot test failures
+
+## Limitations
+
+As Test Engine is in preview, be aware of these current limitations:
+
+- Browser locale settings follow your default browser settings
+- Some specialized controls can require using the [Preview.PlaywrightAction function](powerfx-functions.md#previewplaywrightaction)
+- Performance testing capabilities are still in development
+
+### Supported Browsers
+
+The Test Engine works with the following browsers:
+
+- Chromium (Chrome, Microsoft Edge)
+- Firefox
+- WebKit (Safari)
 
 ## Regional and Language Considerations
 
