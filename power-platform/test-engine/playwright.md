@@ -46,8 +46,6 @@ Test Engine utilizes Playwright's core capabilities for consistent browser autom
 
 ### Test Engine's Architectural Integration
 
-![Test Engine and Playwright Architecture](./media/test-engine-playwright-architecture.png)
-
 1. **Provider Layer**: The provider layer in Test Engine interfaces directly with Playwright APIs to control browser behavior
 2. **Object Model**: Rather than working with raw DOM elements, Test Engine maps to application-specific object models
 3. **Power Fx Layer**: Test steps written in Power Fx are interpreted and executed through the provider layer
