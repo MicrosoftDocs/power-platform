@@ -44,7 +44,8 @@ items:
   - name: Feature lifecycle
     href: feature-lifecycle.md
   - name: Migration
-    href: migration-guide.md  - name: Reference
+    href: migration-guide.md
+  - name: Reference
     items:
     - name: Overview
       href: reference.md
