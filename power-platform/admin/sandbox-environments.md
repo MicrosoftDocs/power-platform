@@ -28,13 +28,13 @@ Manage your sandbox environments from the Power Platform admin center.
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) using Environment Admin or System Administrator credentials.
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
-1. On the **Environments** page, select the **Type** column to sort by environment type.
+1. On the **Environments** page, select the **Type** column to sort and filter by environment type.
 
 ### [Classic admin center](#tab/classic)
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) using Environment Admin or System Administrator credentials.
 1. In the navigation pane, select **Environments**.
-1. On the **Environments** page, select the **Type** column to sort by environment type.
+1. On the **Environments** page, select the **Type** column to sort and filter by environment type.
 
 ---
 
@@ -49,18 +49,18 @@ See [Create and manage environments in the Power Platform admin center](create-e
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) using Service admin or Delegated admin credentials.
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
-1. On the **Environments** page, select a production environment.
-1. In the **Details** pane, click **Edit**.
-1. In the **Edit details** panel, under **Type**, select Sandbox.
+1. On the **Environments** page, select a production environment link.
+1. In the environment's **Details** section, select **Edit**.
+1. In the **Edit details** panel, under **Type**, select **Sandbox**.
 1. Select **Save** to apply the changes.
 
 ### [Classic admin center](#tab/classic)
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) using Service admin or Delegated admin credentials.
 1. In the navigation pane, select **Environments**.
-1. On the **Environments** page, select a production environment.
-1. In the **Details** pane, click **Edit**.
-1. In the **Edit details** panel, under **Type**, select Sandbox.
+1. On the **Environments** page, select a production environment link.
+1. In the environment's **Details** section, select **Edit**.
+1. In the **Edit details** panel, under **Type**, select **Sandbox**.
 1. Select **Save** to apply the changes.
 
 ---
