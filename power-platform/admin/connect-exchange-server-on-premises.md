@@ -55,28 +55,28 @@ For more information about authentication, go to:
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
 1. On the **Environments** page, choose an environment.
-1. In the command bar, click **Settings**. 
+1. In the command bar, select **Settings**. 
 1. Expand **Email**, then select **Server profiles**.
-1. In the command bar, click **New server profile**.
+1. In the command bar, select **New server profile**.
 
 #### [Classic admin center](#tab/classic)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Environments**.
 1. On the **Environments** page, choose an environment.
-1. In the command bar, click **Settings**.  
+1. In the command bar, select **Settings**.  
 1. Expand **Email**, then select **Server profiles**.
-1. In the command bar, click **New server profile**.
+1. In the command bar, select **New server profile**.
 ---
 
 #### In the **Set up server profile** panel:
-1. For **Email Server Type**, select **Exchange Server (On Prem)**, then enter a meaningful **Name** for the profile.
+1. For **Email Server Type**, select **Exchange Server (on premises)**, then enter a meaningful **Name** for the profile.
 2. To set this server profile as the default for new mailboxes, enable **Set as default profile for new mailboxes**. 
 3. For **Authentication Type**, choose one of the following:
 
-    - **Authenticate using Impersonation (Basic Authentication)**: Enter the imersonation account **User name** and **Password**. The credentials specified in the email server profile are used for sending or receiving email for the mailboxes of all users and queues associated with this profile. The credentials must have impersonation or delegation permissions on the mailboxes associated with the profile. This option requires some configuration on the email server, for example configuring impersonation rights on Exchange for the mailboxes associated with the profile.
+    - **Authenticate using Impersonation (Basic Authentication)**: Enter the impersonation account **User name** and **Password**. The credentials specified in the email server profile are used for sending or receiving email for the mailboxes of all users and queues associated with this profile. The credentials must have impersonation or delegation permissions on the mailboxes associated with the profile. This option requires some configuration on the email server, for example configuring impersonation rights on Exchange for the mailboxes associated with the profile.
 
-      > [!NOTE]
-      > To ensure the credentials are secured, SQL encryption is used to encrypt the credentials stored in the email server profile.
+    > [!NOTE]
+    > To ensure the credentials are secured, SQL encryption is used to encrypt the credentials stored in the email server profile.
     
     - **Hybrid Modern Authentication (OAuth)**: To get the information for this option, follow the steps in [Hybrid Modern Authentication (HMA) for Exchange on-premises](connect-exchange-server-onprem-hma.md).
 
