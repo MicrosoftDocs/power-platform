@@ -127,7 +127,7 @@ Let's walk through a simple example of customizing an [!INCLUDE[pn_Excel_short](
 ### Step 3: Upload the template and share with others  
  When you have your [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] template customized the way you want, you can upload it. Where you upload the template determines its availability.  
 
- Administrators can go to **[Power Platform admin center](https://admin.powerplatform.microsoft.com/)** to upload the [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] template.  A template uploaded there is available to all users.  
+ Administrators can go to **[Power Platform admin center](https://admin.powerplatform.microsoft.com/)** to upload the [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] template. A template uploaded is available to all users.  
  
 #### For admins: Upload the Excel template
 
