@@ -4,7 +4,7 @@ description: Configure server-based authentication with SharePoint on-premises
 author: adrianorth 
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 05/12/2025
+ms.date: 05/15/2025
 ms.subservice: admin
 ms.author: aorth
 ms.reviewer: sericks
@@ -142,7 +142,7 @@ On the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-pr
    # Note: If there are multiple sites, and the host is the same, no action is needed.
    #       If the host is different, each site needs to be configured to add the 
    #       host to the service principal.
-   $uri = [System.Uri]"https://auth.meddling.net/sites/SP2016"
+   $uri = [System.Uri]"https://SharePoint.constoso.com/sites/salesteam"
    $hostName = $uri.Host
    $baseUrl = "$($uri.Scheme)://$hostName"
    $servicePrincipalName = $baseUrl
