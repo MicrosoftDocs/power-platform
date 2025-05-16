@@ -403,6 +403,6 @@ The following reference components may be useful as you build your automation te
 - [Learn about Test Engine YAML syntax](./yaml.md)
 - [Set up authentication for your tests](./authentication.md)
 - [Test canvas applications](./canvas-application.md), [model-driven applications](./model-driven-application.md), or [Dataverse extensions](./dataverse.md)
-- [Understand Power Platform ALM](../alm/alm-overview.md)
+- [Understand Power Platform ALM](../alm/overview-alm.md)
 
 [!INCLUDE [footer-banner](../includes/footer-banner.md)]
