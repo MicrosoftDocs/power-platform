@@ -89,7 +89,7 @@ You can easily integrate Test Engine with Power Platform's built-in pipelines fo
 
 - **Solution Pipelines** - Add automated testing to your [solution pipelines](../alm/pipelines.md) to ensure quality at each stage
 - **Environment Strategy** - Test in [development and test environments](../alm/environment-strategy-alm.md) before promoting to production
-- **Pipeline Templates** - Use [pipeline templates](../alm/pipeline-templates.md) to standardize testing across your organization
+- **Pipeline Templates** - Use [pipeline templates](../guidance/alm-accelerator/customize-deployment-pipelines.md) to standardize testing across your organization
 
 You can trigger execution of automated tests when using a [Custom pipelines host](/power-platform/alm/custom-host-pipelines):
 
@@ -114,7 +114,7 @@ This flow uses:
 
 For organizations with existing CI/CD tooling, Test Engine integrates with custom pipelines through Power Automate using the [Power Platform Custom Host](../alm/custom-host-pipelines.md) feature. With the Custom Host approach, you can:
 
-- Define a [custom pipeline host](../alm/custom-host-pipelines.md#configure-a-custom-pipeline-host) that executes your automated tests
+- Define a [custom pipeline host](../alm/custom-host-pipelines.md) that executes your automated tests
 - Create Power Automate cloud flows that trigger automatically from deployment events
 - Execute `pac test run` commands directly from cloud flows to run tests stored in source control
 - Connect to your preferred CI/CD system (Azure DevOps, GitHub Actions, etc.)

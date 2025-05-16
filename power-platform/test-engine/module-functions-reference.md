@@ -1,4 +1,14 @@
-# Test Engine Module Functions Reference
+---
+title: Test Engine Module Functions Reference (preview)
+description: Find available test engine module functions you can use.
+author: grant-archibald-ms
+ms.author: grarchib
+ms.date: 05/15/2025
+ms.reviewer: jdaly
+ms.topic: reference
+---
+
+# Test Engine Module Functions Reference (preview)
 
 This table provides an overview of the various modules available in the Power Apps Test Engine and their specialized functions.
 
