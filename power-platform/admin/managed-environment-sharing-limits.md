@@ -2,7 +2,7 @@
 title: Limit sharing 
 description: Limit how broadly makers can share canvas apps and solution-aware cloud flows in your Managed Environments.
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 12/11/2024
 author: mikferland-msft 
 ms.author: miferlan

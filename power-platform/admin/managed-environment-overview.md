@@ -2,7 +2,7 @@
 title: Managed Environments overview 
 description: Use Managed Environments to view and control your Dynamics 365 applications with less effort.
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 01/24/2025
 author: mihaelablendea 
 ms.author: mihaelab 

@@ -3,7 +3,7 @@ title: "Compliance and data privacy  | MicrosoftDocs"
 description: Compliance and data privacy
 author: sericks007
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 08/29/2022
 ms.subservice: admin
 ms.author: sericks

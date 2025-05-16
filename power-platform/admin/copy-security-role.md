@@ -6,7 +6,7 @@ ms.subservice: admin
 ms.author: paulliew
 ms.reviewer: sericks
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 01/21/2025
 contributors: matp
 search.audienceType: 

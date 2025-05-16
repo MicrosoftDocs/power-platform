@@ -4,7 +4,7 @@ description: "As a Microsoft Dynamics 365 partner, learn how to help your custom
 author: sericks007
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 09/30/2017
 ms.subservice: admin
 ms.author: sericks

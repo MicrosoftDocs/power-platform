@@ -2,7 +2,7 @@
 title: How access to a record is determined | Microsoft Docs
 description: How access to a record is determined 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 03/02/2023
 author: sericks007
 ms.subservice: admin

@@ -4,7 +4,7 @@ description: "Learn about the Power Platform Tools extension for Visual Studio a
 ms.custom: ""
 ms.date: 02/04/2025
 ms.reviewer: "pehecke"
-ms.topic: "article"
+ms.topic: concept-article
 author: "phecke" # GitHub ID
 ms.subservice: developer
 ms.author: "pehecke" # MSFT alias of Microsoft employees only

@@ -1,7 +1,7 @@
 ---
 title: Configure the ALM Accelerator using the admin app
 description: Learn how to configure the ALM Accelerator for Power Platform using the built-in administration app.
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 06/13/2024
 ms.subservice: guidance-toolkit
 author: jenschristianschroder
@@ -33,10 +33,10 @@ Before you install the ALM Accelerator for Power Platform, make sure you've met 
 
   We recommend you install the ALM Accelerator in the same environment as other CoE Starter Kit solutions. Learn more about how to determine the best strategy for your organization:
 
-  - [Establishing an environment strategy for Microsoft Power Platform](../white-papers/environment-strategy.md)
+  - [Develop a tenant environment strategy to adopt Power Platform at scale](../adoption/environment-strategy.md)
   - [Environment strategy for ALM](../../alm/environment-strategy-alm.md)
 
-- The ALM Accelerator uses Azure DevOps for source control and deployments. If you don't have an Azure DevOps organization, sign up for free for up to five users on the [Azure DevOps site](https://azure.microsoft.com/services/DevOps/).
+- The ALM Accelerator uses Azure DevOps for source control and deployments. If you don't have an Azure DevOps organization, sign up for free for up to five users on the [Azure DevOps site](https://azure.microsoft.com/products/devops/).
 
 - To complete the steps in this section, you need the following users and permissions in Azure, Azure DevOps, and Power Platform:
 
