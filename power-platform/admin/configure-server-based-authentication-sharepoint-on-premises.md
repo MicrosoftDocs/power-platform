@@ -144,12 +144,12 @@ On the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-pr
    Connect-MgGraph -Scopes "Directory.ReadWrite.All", "Application.ReadWrite.All"  
    ```  
 
-1. Set the SharePoint host url.  
+1. Set the SharePoint host URL.  
   
    The value that you set for the variable **HostNameUrl** must be the complete host name URL of the SharePoint site collection. The hostname must be derived from the site collection URL and is case sensitive. In this example, the site collection URL is `https://SharePoint.constoso.com/sites/salesteam`, so the hostname URL is `https://SharePoint.contoso.com`.
 
    > [!IMPORTANT]
-   > If there are multiple sites, run the following for each site.
+   > If there are multiple sites, run the following command for each site.
  
    ```powershell
    # Generate Service Principal Name
@@ -300,7 +300,7 @@ The following commands require [!INCLUDE[pn_SharePoint_short](../includes/pn-sha
    >   - `sitesubscription`. Grants the customer engagement apps permission to all websites in the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] farm, including all site collections, websites, and subsites.  
 
    > [!Important]
-   > If there are multiple sites, perform the script for each site.
+   > If there are multiple sites, run the script for each site.
 
    ```powershell
    $Params = @{
