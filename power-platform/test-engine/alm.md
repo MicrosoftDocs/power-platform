@@ -48,7 +48,7 @@ You can easily integrate Test Engine with Power Platform's built-in pipeline cap
 
 - **Solution Pipelines** - Add automated testing to your [solution pipelines](../alm/pipelines.md) to ensure quality at each stage
 - **Environment Strategy** - Test in [development and test environments](../alm/environment-strategy-alm.md) before promoting to production
-- **Pipeline Templates** - Use [pipeline templates](../alm/pipeline-templates.md) to standardize testing across your organization
+- **Pipeline Templates** - Use [pipeline templates](../guidance/alm-accelerator/customize-deployment-pipelines.md) to standardize testing across your organization
 
 ### Custom CI/CD Integration with Power Automate
 
@@ -276,6 +276,6 @@ steps:
 - [Learn about Test Engine YAML syntax](./yaml.md)
 - [Set up authentication for your tests](./authentication.md)
 - [Explore supported test providers](./providers.md)
-- [Understand Power Platform ALM](../alm/alm-overview.md)
+- [Understand Power Platform ALM](../alm/overview-alm.md)
 
 [!INCLUDE [footer-banner](../includes/footer-banner.md)]
