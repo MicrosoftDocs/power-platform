@@ -23,7 +23,6 @@ Power Apps Test Engine features a robust extensibility framework that allows the
 - How the extensibility model works using the Managed Extensibility Framework (MEF)
 - Options for organizations to create their own extensions
 
-
 ## Microsoft-Signed Components
 
 > [!IMPORTANT]
@@ -154,7 +153,7 @@ Power Apps Test Engine is built on top of [Playwright](https://playwright.dev/),
 
 ### Ring Deployment for New Features
 
-New extensions follow a [Ring Deployment Model](./ring-deployment-model.md):
+New extensions follow a [Feature Lifecycle](./feature-lifecycle.md):
 
 1. **Preview Namespace** - New extensions are first available in the Preview namespace for early testing
 2. **TestEngine Namespace** - After validation, extensions move to the core TestEngine namespace

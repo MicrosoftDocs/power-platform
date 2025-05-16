@@ -23,7 +23,7 @@ This article provides guidance on how to use the authentication options availabl
 Power Apps Test Engine offers two primary authentication methods:
 
 1. **Browser-based Authentication (Storage State)** - Uses persistent browser cookies to store authentication state
-2. **Certificate-based Authentication (Dataverse)** - Uses X.509 certificates for encrypted authentication stored in Dataverse
+2. **Certificate-based Encryption (Dataverse)** - Uses X.509 certificates for encrypted authentication stored in Dataverse
 
 Each method has its own benefits depending on your testing scenario:
 
@@ -64,19 +64,19 @@ This is the default behavior (`--user-auth Storagestate` is implicit), so you do
 - Allows for testing with different user personas
 - Encrypted storage of authentication state
 
-## Using Certificate-based Authentication
+## Using Certificate-based Encryption
 
-Certificate-based authentication is ideal for CI/CD pipelines and automated environments. It uses X.509 certificates for authentication and can be configured to work with Dataverse.
+Certificate-based encryption is ideal for CI/CD pipelines and automated environments. It uses X.509 certificates for authentication and can be configured to work with Dataverse.
 
 ### Prerequisites
 
-Before using certificate-based authentication:
+Before using certificate-based encryption:
 
 1. Ensure you have a valid X.509 certificate
-2. Configure the certificate as an authentication method in Microsoft Entra
+2. Configure User Account or Service Principal to access encrypted data
 3. Set up the appropriate environment variables
 
-### Running Tests with Certificate-based Authentication
+### Running Tests with Certificate-based Encryption
 
 To run tests using certificate-based authentication, use the following command:
 
@@ -112,14 +112,14 @@ You can store your certificate in one of two ways:
    $env:SampleCertificateVariableName = "BASE64_ENCODED_CERTIFICATE"
    ```
 
-### Benefits of Certificate-based Authentication
+### Benefits of Certificate-based Encryption
 
 - Non-interactive execution ideal for CI/CD pipelines
-- Enhanced security through certificate-based authentication
+- Enhanced security through certificate-based encryption of data at rest
 - Integration with Dataverse security model
 - Support for automated test environments
 
-## Dataverse Authentication
+## Dataverse Encryption
 
 When working with Dataverse directly (for integration testing), use the `--user-auth Dataverse` option. This requires you to be logged in with Azure CLI:
 
@@ -144,6 +144,7 @@ Common authentication issues include:
 - Expired authentication tokens
 - Missing or incorrect certificates
 - Conditional access policy restrictions
+- Dataverse permissions
 - Network connectivity problems
 
 ## Next Steps

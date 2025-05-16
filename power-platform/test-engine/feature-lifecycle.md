@@ -1,9 +1,9 @@
 ---
-title: "Test Engine Ring Deployment Model (preview)"
+title: "Test Engine Feature Lifecycle (preview)"
 description: "Describes how Test Engine features progress from open source to preview to general availability"
 author: grant-archibald-ms
 ms.author: grarchib
-ms.date: 05/15/2025
+ms.date: 05/16/2025
 ms.reviewer: jdaly
 ms.topic: article
 contributors:
@@ -11,20 +11,20 @@ contributors:
  - pvillads
 ---
 
-# Test Engine Ring Deployment Model (preview)
+# Test Engine Feature Lifecycle (preview)
 
 > [!NOTE]
 > [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
 
 ## Overview
 
-The Test Engine product employs a structured ring deployment model to manage the progression of features from experimental concepts to generally available capabilities. This approach allows users to access new functionality at different maturity levels while ensuring reliability and stability for production scenarios.
+The Test Engine product employs a structured feature lifecycle model to manage the progression of features from experimental concepts to generally available capabilities. This approach allows users to access new functionality at different maturity levels while ensuring reliability and stability for production scenarios.
 
 ## Feature Progression in Test Engine
 
 Test Engine features follow a defined pathway from inception to general availability.
 
-### 1. Open Source Innovation (Inner Ring)
+### 1. Open Source Innovation (Preview Phase)
 
 The journey of many Test Engine features begins in the [open source repository](https://github.com/microsoft/PowerApps-TestEngine), where:
 
@@ -33,11 +33,11 @@ The journey of many Test Engine features begins in the [open source repository](
 - Custom Power Fx actions can be created and tested in real-world environments
 - Experimental concepts can be validated before formal product integration
 
-This inner ring represents the most cutting-edge capabilities, available to developers who build the Test Engine from source.
+This preview phase represents the most cutting-edge capabilities, available to developers who build the Test Engine from source.
 
-### 2. Preview Features (Middle Ring)
+### 2. Preview Features (Evaluation Phase)
 
-Features that demonstrate value in the open source environment may progress to the Preview ring, where they become available in the official Power Platform CLI (`pac`) release with explicit opt-in:
+Features that demonstrate value in the open source environment may progress to the Preview phase, where they become available in the official Power Platform CLI (`pac`) release with explicit opt-in:
 
 - Features are accessible through the `Preview` function prefix in Power Fx
 - Functionality must be explicitly enabled in test settings:
@@ -50,12 +50,12 @@ testSettings:
       - Preview
 ```
 
-- Features in this ring receive more extensive testing but may still evolve based on feedback
+- Features in this phase receive more extensive testing but may still evolve based on feedback
 - Documentation includes the Preview designation to indicate potential future changes
 
-### 3. General Availability (Outer Ring)
+### 3. General Availability (Stable Phase)
 
-After thorough testing and refinement in the Preview ring, stable features progress to general availability:
+After thorough testing and refinement in the Preview phase, stable features progress to general availability:
 
 - Features migrate from the `Preview` prefix to the `TestEngine` prefix
 - Functionality becomes available by default without special configuration
@@ -111,7 +111,7 @@ Developers interested in contributing features that may eventually be included i
 3. **Provide Comprehensive Tests**: Include automated tests demonstrating reliability
 4. **Document the Feature**: Create clear documentation for users
 
-## Benefits of the Ring Deployment Model
+## Benefits of the Feature Lifecycle Model
 
 For Test Engine users, this model offers several advantages:
 
@@ -122,6 +122,6 @@ For Test Engine users, this model offers several advantages:
 
 ## Summary
 
-The Test Engine Ring Deployment Model provides a structured approach to feature progression, from open source innovation to preview availability and ultimately to general availability. By leveraging Power Fx function organization and encouraging community contributions, Test Engine balances innovation with stability, allowing users to adopt new capabilities at their preferred pace.
+The Test Engine Feature Lifecycle provides a structured approach to feature progression, from open source innovation to preview availability and ultimately to general availability. By leveraging Power Fx function organization and encouraging community contributions, Test Engine balances innovation with stability, allowing users to adopt new capabilities at their preferred pace.
 
 [!INCLUDE [footer-banner](../includes/footer-banner.md)]

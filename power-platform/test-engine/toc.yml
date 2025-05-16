@@ -21,8 +21,6 @@ items:
       href: model-driven-application.md
     - name: Test Dataverse extensions
       href: dataverse.md
-  - name: Yaml format
-    href: yaml.md
   - name: Power Fx
     items:
     - name: Power Fx overview
@@ -34,20 +32,27 @@ items:
     - name: Namespaces
       href: powerfx-namespaces.md
     - name: Power Fx C# functions
-      href: powerfx-csharp.md
-  - name: ALM
+      href: powerfx-csharp.md  - name: ALM
     href: alm.md
   - name: Providers
     href: providers.md
-  - name: Extensibility
-    href: extensibility.md
-  - name: Ring deployment model
-    href: ring-deployment-model.md
-  - name: Test engine and Playwright
-    href: playwright.md
+  - name: Feature lifecycle
+    href: feature-lifecycle.md
   - name: Migration
     href: migration-guide.md
-  - name: Known issues
-    href: known-issues.md
-  - name: File Access restrictions
-    href: filerestrictions.md
+  - name: Reference
+    items:
+    - name: Yaml format
+      href: yaml.md
+    - name: Extensibility
+      href: extensibility.md
+    - name: Power Fx modules
+      href: module-functions-reference.md
+    - name: Authentication security
+      href: authentication-security.md
+    - name: Test engine and Playwright
+      href: playwright.md
+    - name: Known issues
+      href: known-issues.md
+    - name: File Access restrictions
+      href: filerestrictions.md

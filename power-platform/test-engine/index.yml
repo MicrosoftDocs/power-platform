@@ -56,8 +56,8 @@ landingContent:
             url: providers.md
           - text: Extensibility
             url: extensibility.md
-          - text: Ring deployment model
-            url: ring-deployment-model.md
+          - text: Feature lifecycle
+            url: feature-lifecycle.md
           - text: Test engine and Playwright
             url: playwright.md
           - text: Version migration guide

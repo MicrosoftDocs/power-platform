@@ -20,6 +20,10 @@ Power Fx is a powerful low-code language used in Power Apps, and it can be exten
 
 The "no cliffs" extensibility model of Power Apps Test Engine ensures that users can extend the capabilities of the Power Apps Test Engine without hitting any barriers. This model allows developers to create custom functions using C#, which can be integrated into Power Fx to handle complex scenarios.
 
+## Test Engine Modules
+
+The [Test engine modules](./module-functions-reference.md) for Power Fx inside Test Engine are built using the extensibility model. You can use the product code as examples of how Test Engine can be extended.
+
 ## Consent Dialog example
 
 Here's an example of a Power Fx function that provides the outline of code to handle a conditional consent dialog in a [canvas application](./canvas-application.md).

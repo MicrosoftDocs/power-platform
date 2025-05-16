@@ -22,7 +22,7 @@ Power Apps Test Engine provides a comprehensive set of features that enable you 
 
 ## Open Source Implementation
 
-The [Power Apps Test Engine](https://github.com/microsoft/PowerApps-TestEngine/) is available as an open-source project with an MIT license. New features are typically first introduced in the GitHub repository before being integrated into the Power Platform CLI. This approach follows the [ring deployment model](ring-deployment-model.md), allowing for community feedback, contribution and validation before features reach general availability.
+The [Power Apps Test Engine](https://github.com/microsoft/PowerApps-TestEngine/) is available as an open-source project with an MIT license. New features are typically first introduced in the GitHub repository before being integrated into the Power Platform CLI. This approach follows the [feature lifecycle](feature-lifecycle.md), allowing for community feedback, contribution and validation before features reach general availability.
 
 ## Testing Capabilities
 
