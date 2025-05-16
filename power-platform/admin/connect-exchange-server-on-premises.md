@@ -3,12 +3,13 @@ title: "Connect to Exchange Server (on-premises) | MicrosoftDocs"
 description: Connect to Exchange Server (on-premises)
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/16/2023
+ms.date: 05/16/2025
 author: DanaMartens
+contributors: yingchin
 ms.subservice: admin
 ms.custom: NewPPAC
 ms.author: dmartens
-ms.reviewer: sericks
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
