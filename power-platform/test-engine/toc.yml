@@ -53,7 +53,5 @@ items:
       href: authentication-security.md
     - name: Test engine and Playwright
       href: playwright.md
-    - name: Known issues
-      href: known-issues.md
     - name: File Access restrictions
       href: filerestrictions.md

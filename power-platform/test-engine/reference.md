@@ -61,7 +61,6 @@ Integration capabilities for incorporating Test Engine into development processe
 Additional reference documentation for advanced scenarios:
 
 - [Data and Connector Simulation](./simulation.md): Reference for simulating data and connector responses
-- [Known Issues](./known-issues.md): Current limitations and workarounds
 - [Migration Guide](./migration-guide.md): Reference for migrating from earlier versions and other testing tools
 
 These reference topics provide the technical details needed to implement robust, maintainable automated tests using Power Apps Test Engine. Use them alongside the conceptual guides to build a comprehensive testing strategy for your Power Platform applications.

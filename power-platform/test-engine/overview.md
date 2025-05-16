@@ -18,7 +18,7 @@ contributors:
 > [!NOTE]
 > [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
 
-Power Apps Test Engine is a testing solution designed specifically for Power Platform applications. Whether you're new to automated testing, familiar with [Test Studio](/power-apps/maker/canvas-apps/test-studio), or an experienced developer with Playwright knowledge, Test Engine offers a scalable approach to testing that aligns with the low-code philosophy of Power Platform.
+Power Apps Test Engine is a testing solution designed specifically for Power Platform applications. Whether you're new to automated testing, familiar with [Test Studio](/power-apps/maker/canvas-apps/test-studio), or an experienced developer with [Playwright](https://playwright.dev/) knowledge, Test Engine offers a scalable approach to testing that aligns with the low-code philosophy of Power Platform.
 
 Learn more about how Test Engine helps you regardless of where you're starting from:
 
@@ -55,7 +55,7 @@ Test Engine offers these advantages:
 
 ## [Professional Developers](#tab/prodev)
 
-If you're a pro developer experienced with tools like [Playwright](https://playwright.dev/), Test Engine offers:
+If you're a pro developer experienced with tools like Playwright, Test Engine offers:
 
 - **Domain-specific advantages**: While Playwright operates at the DOM level, Test Engine applies the JavaScript object model of Power Apps for more resilient tests
 - **Efficiency gains**: Create and maintain tests faster than traditional code-first approaches

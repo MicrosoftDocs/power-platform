@@ -16,28 +16,30 @@ contributors:
 > [!NOTE]
 > [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
 
-## Overview
-
-The Test Engine product employs a structured feature lifecycle model to manage the progression of features from experimental concepts to generally available capabilities. This approach allows users to access new functionality at different maturity levels while ensuring reliability and stability for production scenarios.
+Test Engine has a structured feature lifecycle model to manage the progression of features from experimental concepts to generally available capabilities. This approach allows users to access new functionality at different maturity levels while ensuring reliability and stability for production scenarios.
 
 ## Feature Progression in Test Engine
 
-Test Engine features follow a defined pathway from inception to general availability.
+Test Engine features follow a defined pathway from inception to general availability in three phases:
+
+1. [Open Source Innovation (Preview Phase)](#1-open-source-innovation-preview-phase)
+1. [Preview Features (Evaluation Phase)](#2-preview-features-evaluation-phase)
+1. [General Availability (Stable Phase)](#3-general-availability-stable-phase)
 
 ### 1. Open Source Innovation (Preview Phase)
 
 The journey of many Test Engine features begins in the [open source repository](https://github.com/microsoft/PowerApps-TestEngine), where:
 
-- Community members and Microsoft engineers can propose and contribute new features
-- New providers and extensions can be developed to support additional scenarios
-- Custom Power Fx actions can be created and tested in real-world environments
-- Experimental concepts can be validated before formal product integration
+- Community members and Microsoft engineers propose and contribute new features
+- New providers and extensions are developed to support additional scenarios
+- Custom Power Fx actions are created and tested in real-world environments
+- Experimental concepts are validated before formal product integration
 
 This preview phase represents the most cutting-edge capabilities, available to developers who build the Test Engine from source.
 
 ### 2. Preview Features (Evaluation Phase)
 
-Features that demonstrate value in the open source environment may progress to the Preview phase, where they become available in the official Power Platform CLI (`pac`) release with explicit opt-in:
+Features that demonstrate value in the open source environment may progress to the evaluation phase, where they become available in the official Power Platform CLI (`pac`) release with explicit opt-in:
 
 - Features are accessible through the `Preview` function prefix in Power Fx
 - Functionality must be explicitly enabled in test settings:
@@ -89,8 +91,9 @@ The Test Engine product team actively collaborates with the community to evolve 
 Community members can contribute to Test Engine in several ways:
 
 1. **Provider Extensions**: Create new providers to support additional application types
-2. **Power Fx Actions**: Develop custom actions to enable new testing scenarios
-3. **Feature Enhancements**: Improve existing functionality to address common scenarios
+1. **Power Fx Actions**: Develop custom actions to enable new testing scenarios
+1. **Feature Enhancements**: Improve existing functionality to address common scenarios
+1. **Reporting issues**: Report any issues you discover using our GitHub repository issues. Find existing known issues here: [aka.ms/TestEngineOpenIssues](https://aka.ms/TestEngineOpenIssues)
 
 ### Pathway to Product Integration
 

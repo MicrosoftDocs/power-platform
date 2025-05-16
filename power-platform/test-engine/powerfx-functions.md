@@ -115,6 +115,11 @@ Preview.ConsentDialog(Table({Text: "Your Dialog Title"}));
 
 Pause the test and display the [Playwright Inspector](https://playwright.dev/docs/debug#playwright-inspector) if running an interactive test
 
+> [!NOTE]
+> **Known Issue**: [Preview.Pause function doesn't properly open up the inspector for pac test run](https://github.com/microsoft/PowerApps-TestEngine/issues/622)
+> **Description:** The `Preview.Pause` function fails to open the inspector during a `pac test run`.  
+> **Workaround:** The open source version of the Test Engine can be used for pause functionality.
+
 #### Preview.Pause Example
 
 ```powerappsfl
