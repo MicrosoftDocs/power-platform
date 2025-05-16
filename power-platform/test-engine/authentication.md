@@ -33,7 +33,7 @@ The Test Engine provides two primary authentication methods:
    - Interactive first-time sign-in, automated subsequent runs
    :::column-end:::
    :::column:::
-   **Certificate based authentication**
+   **Certificate based encryption**
 
    - Use X.509 certificates for encrypted authentication stored in Dataverse
    - Integrate with Dataverse security model
@@ -74,8 +74,8 @@ Select the best authentication approach based on your specific testing needs:
 |----------|-------------------|-------------------|
 | Development environment | Browser-based | Simple setup, interactive first sign-in |
 | Testing with MFA | Browser-based | Supports all Microsoft Entra authentication methods |
-| Automated CI/CD | Certificate-based | No user interaction required |
-| Dataverse integration | Certificate-based | Enhanced security integration |
+| Automated CI/CD | Certificate-based encryption | No user interaction required |
+| Dataverse integration | Certificate-based encryption | Enhanced security integration |
 
 ## What's New in Authentication
 

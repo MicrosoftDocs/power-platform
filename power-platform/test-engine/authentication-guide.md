@@ -30,7 +30,7 @@ Each method has its own benefits depending on your testing scenario:
 | Authentication Method | Best For | Key Benefits |
 |----------------------|----------|-------------|
 | Browser-based (Default) | Interactive development, Testing with MFA | Works with conditional access policies, Simple setup |
-| Certificate-based | CI/CD pipelines, Automated environments | Non-interactive execution, Enhanced security |
+| Certificate-based encryption| CI/CD pipelines, Automated environments | Non-interactive execution, Enhanced security |
 
 ## Using Browser-based Authentication
 
