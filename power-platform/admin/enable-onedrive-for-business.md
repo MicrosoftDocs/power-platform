@@ -6,6 +6,7 @@ ms.component: pa-admin
 ms.topic: how-to
 ms.date: 09/04/2020
 ms.subservice: admin
+ms.custom: NewPPAC
 ms.author: sericks
 search.audienceType: 
   - admin
@@ -36,25 +37,51 @@ Users can create and manage private documents with [!INCLUDE[pn_onedrive_for_bus
 ## Enable OneDrive for Business  
  You can enable [!INCLUDE[pn_onedrive_for_business](../includes/pn-onedrive-for-business.md)] as follows.  
 
-1. In the Microsoft Power Platform admin center, select an environment. 
-
-2. Select **Settings** > **Integration** > **Document management settings**. 
-  
-3. Select **Enable OneDrive for Business** to enable it, and then select **OK**.  
-  
+### [Modern admin center](#tab/new)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. On the **Environments** page, choose an environment.
+1. In the command bar, select **Settings**. 
+1. Expand **Integration**, then select **Document management settings**.
+1. Select **Enable OneDrive for Business**, then check the box **Enable OneDrive for Business** to activate it.
+1  Click **OK** to save the changes. 
+   
+### [Classic admin center](#tab/classic)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Environments**.
+1. On the **Environments** page, choose an environment.
+1. In the command bar, select **Settings**.  
+1. Expand **Integration**, then select **Document management settings**.
+1. Select **Enable OneDrive for Business**, then check the box **Enable OneDrive for Business** to activate it.
+1  Click **OK** to save the changes. 
+---
+ 
 ## Controlling access to OneDrive for Business
  You can toggle availability of [!INCLUDE[pn_onedrive](../includes/pn-onedrive.md)] in customer engagement apps for end users through the **OneDrive for Business** privilege.  
 
-1. In the Power Platform admin center, select an environment. 
+### [Modern admin center](#tab/new)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. On the **Environments** page, choose an environment.
+1. In the command bar, select **Settings**. 
+1. Expand **Users + permissions**, then select **Security roles**.
+1. Select a security role, then go to the **Miscellaneous Privileges** tab.
+1. Assign the **OneDrive for Business** privilege to the appropriate level.
+1  In the command bar, click **Save** to apply the changes. 
+   
+### [Classic admin center](#tab/classic)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Environments**.
+1. On the **Environments** page, choose an environment.
+1. In the command bar, select **Settings**.  
+1. Expand **Users + permissions**, then select **Security roles**.
+1. Select a security role, then go to the **Miscellaneous Privileges** tab.
+1. Assign the **OneDrive for Business** privilege to the appropriate level.
+1  In the command bar, click **Save** to apply the changes. 
+---
 
-2. Select **Settings** > **Users + permissions** > **Security roles**. 
-  
-3. Select a security role, and then select the **Core Records** tab.  
-  
-4. Under **Miscellaneous Privileges**, toggle the **OneDrive for Business** privilege to the desired availability.  
-  
-   ![Toggle availability of OneDrive for Business.](../admin/media/crm-itpro-onedriveforbusn-priv.png "Toggle availability of OneDrive for Business")  
-  
 ### See also  
  [Enable OneDrive for Business (on-premises)](connect-onedrive-business.md)   
  [What is OneDrive for Business?](https://support.office.com/article/What-is-OneDrive-for-Business-187f90af-056f-47c0-9656-cc0ddca7fdc2)
