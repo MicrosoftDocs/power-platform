@@ -2,7 +2,7 @@
 title: "Sandbox environments  | MicrosoftDocs"
 description: Manage sandbox environments.
 author: sericks007
-
+contributors: yingchin
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 05/16/2025
@@ -21,7 +21,7 @@ A sandbox environment is any non-production environment of Microsoft Dataverse. 
 
 ## View your sandbox environments  
 
-Manage your sandbox environments from the Power Platform admin center.  
+You can view and manage your sandbox environments from the Power Platform admin center. To get started, take steps to view, sort, and filter your environments.
 
 ### [New admin center](#tab/new)
 
@@ -40,9 +40,11 @@ Manage your sandbox environments from the Power Platform admin center.
 
 ## Create a sandbox environment
 
-See [Create and manage environments in the Power Platform admin center](create-environment.md).
+You can create new sandbox environments in the Power Platform admin center. To get started, go to [Create and manage environments in the Power Platform admin center](create-environment.md).
 
 ## Change a production environment to sandbox
+
+You can change a production environment to a sandbox environment. To get started, take steps to edit the production environments details.
 
 ### [New admin center](#tab/new)
 
@@ -67,7 +69,7 @@ See [Create and manage environments in the Power Platform admin center](create-e
 
 ## Reset a sandbox environment  
 
-Reset a sandbox environment to delete and reprovision it. Consider a reset when you want to:  
+You can reset a sandbox environment to delete and reprovision it. You may consider a reset when you want to:  
   
 - Create a new project  
 - Free up storage space  
@@ -78,13 +80,15 @@ Reset a sandbox environment to delete and reprovision it. Consider a reset when 
 > - You can only reset sandbox environments.
 > - A reset will permanently delete environment components such as canvas apps, flows, custom connectors, and connections.
 
- **An example scenario**  
+**An example scenario**  
   
-  Thomas is looking at the storage consumed by the various Contoso environments. Thomas is getting concerned that they'll run out of space in one of their production environments. Thomas also wants to free up some space to give the production environment some extra storage.  Thomas has also been notified that the Legal department has a retention policy regarding the use of production data in test environments.  
+Thomas is looking at the storage consumed by the various Contoso environments. Thomas is getting concerned that they'll run out of space in one of their production environments. Thomas also wants to free up some space to give the production environment some extra storage.  Thomas has also been notified that the Legal department has a retention policy regarding the use of production data in test environments.  
   
- After contacting Elisa, Thomas resets the Sales department's complete sandbox environment. The environment has been reprovisioned to factory settings. It's now ready for future use as a sandbox environment for a future project.  
+After contacting Elisa, Thomas resets the Sales department's complete sandbox environment. The environment has been reprovisioned to factory settings. It's now ready for future use as a sandbox environment for a future project.  
 
-### To reset an environment  
+### Steps to reset an environment
+
+If you find yourself in a situation where you need to reset an environment, take these steps to get started.
 
 ### [New admin center](#tab/new)
 
@@ -107,14 +111,14 @@ In the **Reset environment** panel:
 
 1. Adjust the environment settings as needed.
 1. Review and understand the consequences of resetting the environment.  
-  
-   > [!WARNING]
-   > - The sandbox environment will be deleted and reset to factory settings. You will not be able to recover any data that was previously in the environment. 
-   > - When you reset an environment, the security group specified on the **Reset environment** page will be applied. If a security group isn't specified during the reset, no security group will be assigned to the environment after the reset is completed.  Any existing security group configured before the reset is performed will no longer be applied to the environment. More information: [Control user access to environments: security groups and licenses](control-user-access.md)   
-  
 1. Select **Reset**, then select **Confirm** to begin the process.
 1. The environment reset will then start.
 
+> [!WARNING]
+>
+> - The sandbox environment will be deleted and reset to factory settings. You will not be able to recover any data that was previously in the environment.
+> - When you reset an environment, the security group specified on the **Reset environment** page will be applied. If a security group isn't specified during the reset, no security group will be assigned to the environment after the reset is completed.  Any existing security group configured before the reset is performed will no longer be applied to the environment. More information: [Control user access to environments: security groups and licenses](control-user-access.md)
+  
 ## Administration mode  
 
  When you place a sandbox environment in administration mode, only users with System Administrator or System Customizer security roles are able to sign in to that environment.
