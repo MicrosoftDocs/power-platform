@@ -1,6 +1,6 @@
 ---
 title: Test Engine Module Functions Reference (preview)
-description: Learn about how you can automate tests of standalone canvas apps using the Power Apps Test Engine within Power Platform CLI.
+description: Find available test engine module functions you can use.
 author: grant-archibald-ms
 ms.author: grarchib
 ms.date: 05/15/2025

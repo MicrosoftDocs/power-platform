@@ -118,7 +118,7 @@ For organizations with existing CI/CD tooling, Test Engine integrates with custo
 
 With the Custom Host approach, you can:
 
-- Define a [custom pipeline host](../alm/custom-host-pipelines.md#configure-a-custom-pipeline-host) that executes your automated tests
+- Define a [custom pipeline host](../alm/custom-host-pipelines.md) that executes your automated tests
 - Create Power Automate cloud flows that trigger automatically from deployment events
 - Execute `pac test run` commands directly from cloud flows to run tests stored in source control
 - Connect to your preferred CI/CD system (Azure DevOps, GitHub Actions, etc.)
