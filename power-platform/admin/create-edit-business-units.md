@@ -95,9 +95,9 @@ In the **Create new business unit** panel:
 1. On the **Environments** page, select an environment.
 1. In the command bar, select **Settings**.  
 1. Expand **Users + permissions**, then select **Business units**.
-1. On the **Business Units** page, select the desired business unit.
+1. On the **Business units** page, select the desired business unit.
 1. On the **Details** pane, select **Edit**.
-1. In the **Edit busines unit** panel, make the necessary changes, then select **Save** to apply them.
+1. In the **Edit business unit** panel, make the necessary changes, then select **Save** to apply them.
 
 ### [Classic admin center](#tab/classic)
 
@@ -106,9 +106,9 @@ In the **Create new business unit** panel:
 1. On the **Environments** page, select an environment.
 1. In the command bar, select **Settings**.  
 1. Expand **Users + permissions**, then select **Business units**.
-1. On the **Business Units** page, select the desired business unit.
+1. On the **Business units** page, select the desired business unit.
 1. On the **Details** pane, select **Edit**.
-1. In the **Edit busines unit** panel, make the necessary changes, then select **Save** to apply them.
+1. In the **Edit business unit** panel, make the necessary changes, then select **Save** to apply them.
 
 ---
 
@@ -127,7 +127,7 @@ In the **Create new business unit** panel:
 1. Expand **Users + permissions**, then select **Users**.
 1. On the **Users** page, select the desired user.
 1. In the command bar, select **Change business unit**.
-1. In the **Change busines unit** panel, select a business unit and check the **Move records to new business unit** option.
+1. In the **Change business unit** panel, select a business unit and check the **Move records to new business unit** option.
 1. Click **OK** to apply the changes.
 
 ### [Classic admin center](#tab/classic)
@@ -139,13 +139,13 @@ In the **Create new business unit** panel:
 1. Expand **Users + permissions**, then select **Users**.
 1. On the **Users** page, select the desired user.
 1. In the command bar, select **Change business unit**.
-1. In the **Change busines unit** panel, select a business unit and check the **Move records to new business unit** option.
+1. In the **Change business unit** panel, select a business unit and check the **Move records to new business unit** option.
 1. Click **OK** to apply the changes.
 
 ---
 
   > [!NOTE]
-  > If you have enabled [record ownership across business units](wp-security-cds.md#matrix-data-access-structure-modernized-business-units), you can use [environment database settings]environment-database-settings.md) to manage your user security roles and how you want to move the user's records when you are changing the user's business unit.
+  > If you have enabled [record ownership across business units](wp-security-cds.md#matrix-data-access-structure-modernized-business-units), you can use [environment database settings](environment-database-settings.md) to manage your user security roles and how you want to move the user's records when you are changing the user's business unit.
   >
   > 1. **DoNotRemoveRolesOnChangeBusinessUnit** default = false (the user's assigned security role is removed) You can set it to true, and the user's assigned security role for the from-Business unit is not removed.
   >
@@ -161,10 +161,10 @@ In the **Create new business unit** panel:
 1. On the **Environments** page, select an environment.
 1. In the command bar, select **Settings**.  
 1. Expand **Users + permissions**, then select **Teams**.
-1. On the **Teams** page, select the desired team.
+1. On the **Teams** page, select the checkmark next to the desired team.
 1. In the command bar, select **Change business unit**.
-1. In the **Change busines unit** panel, select a business unit and check the **Move records to new business unit** option.
-1. Click **OK** to apply the changes.
+1. In the **Change business unit** panel, select a business unit and check the **Move records to new business unit** option.
+1. Select **OK** to apply the changes.
 
 ### [Classic admin center](#tab/classic)
 
@@ -173,9 +173,9 @@ In the **Create new business unit** panel:
 1. On the **Environments** page, select an environment.
 1. In the command bar, select **Settings**.  
 1. Expand **Users + permissions**, then select **Teams**.
-1. On the **Teams** page, select the desired team.
+1. On the **Teams** page, select the row of the desired team.
 1. In the command bar, select **Change business unit**.
-1. In the **Change busines unit** panel, select a business unit and check the **Move records to new business unit** option.
+1. In the **Change business unit** panel, select a business unit and check the **Move records to new business unit** option.
 1. Click **OK** to apply the changes.
 
 ---
@@ -202,7 +202,7 @@ In the **Create new business unit** panel:
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Environments**.
-1. On the **Environments** page, select an environment.
+1. On the **Environments** page, select the row of the desired environment.
 1. In the command bar, select **Settings**.  
 1. Expand **Users + permissions**, then select **Business units**.
 
@@ -216,7 +216,7 @@ On the **Business Units** page:
 
 - Select the desired business unit then select it. In the business unit **Details** page, select **Reassign business unit records** in the command bar.
 
-In the **Reassign busines unit** panel:
+In the **Reassign business unit** panel:
 
 - Select a target business unit and check the **Move records to new business unit** option.
 - Click **OK** to apply the changes.
