@@ -17,9 +17,9 @@ contributors:
 
 [!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
-Whether your data is stored in spreadsheets, databases, or other systems, you'll want to import the data into customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), so you can keep track of all your customer information in one place. You use templates for importing many types of records, such as accounts, leads or cases. There is a complete list in the Templates for Data Import wizard.  
+Whether your data is stored in spreadsheets, databases, or other systems, you'll want to import it into Dynamics 365 applications—such as Dynamics 365 Sales, Dynamics 365 Customer Service, or Dynamics 365 Field Service—to centralize customer information in one place. You can use templates to import various types of records, with a complete list available in the Templates for Data Import wizard.  
 
-These settings can be found in the Microsoft Power Platform admin center. Make sure you have the System Administrator or System Customizer security role or equivalent permissions to update the setting.
+These settings can be accessed in the Microsoft Power Platform admin center. TO update them, ensure sure you have the System Administrator or System Customizer security role, or equivalent permissions.
 
 ### [New admin center](#tab/new)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
