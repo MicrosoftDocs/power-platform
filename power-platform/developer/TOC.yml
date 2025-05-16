@@ -13,7 +13,7 @@
     - name: Fusion development
       href: fusion-development.md
     - name: Test apps with Test Engine (preview)
-      href: /test-engine/toc.yml
+      href: ../test-engine/toc.yml
     - name: ALM for developers
       href: /power-platform/alm/alm-for-developers
     - name: Publish your app on AppSource
