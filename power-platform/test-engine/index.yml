@@ -54,12 +54,6 @@ landingContent:
             url: powerfx.md
           - text: Providers
             url: providers.md
-          - text: Canvas applications
-            url: canvas-application.md
-          - text: Model-driven applications
-            url: model-driven-application.md
-          - text: Dataverse extensions
-            url: dataverse.md
           - text: Extensibility
             url: extensibility.md
           - text: Feature lifecycle
