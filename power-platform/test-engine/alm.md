@@ -38,17 +38,77 @@ The Test Engine supports a complete testing lifecycle that integrates with your 
 3. **Release Gates** - Use test results as quality gates for controlled deployments
 4. **Production Verification** - Validate critical functionality in production environments
 
+## Getting Started with Test Automation in ALM
+
+To get started with incorporating Test Engine into your ALM processes:
+
+1. **Create your test plan** - Design [YAML test plans](./yaml.md) for your Power Platform solutions
+2. **Run tests locally** - Verify tests work in your development environment
+3. **Set up authentication** - Configure [appropriate authentication](./authentication.md) for your local execite and pipeline environments
+4. **Integrate with your pipeline** - Connect Test Engine to your existing ALM pipeline
+5. **Implement quality gates** - Use test results to control the promotion of solutions
+
+> [!TIP]
+> Start with critical user journeys and gradually expand your automated test coverage as you become more familiar with Test Engine.
+
+## Source Code Version of Test Engine (Optional)
+
+If you are using the source code version of Test Engine, you will also need:
+
+- [.Net 8.0 SDK](/dotnet/core/install/) - If you plan to build Test Engine from source
+- [Git](/devops/develop/git/install-and-set-up-git) - To pull changes from [Power Apps Test Engine repository](https://github.com/microsoft/PowerApps-TestEngine)
+</details>
+
 ## Integration Options
 
-Test Engine integrates seamlessly with various ALM tools and processes:
+Test Engine integrates seamlessly with various ALM tools and processes
 
-### Power Platform Pipelines
+## [Local Execution](#tab/local)
 
-You can easily integrate Test Engine with Power Platform's built-in pipeline capabilities for a fully native experience:
+You can use a local editor like [Visual Studio Code](https://code.visualstudio.com/) to edit the [YAML](./yaml.md) files to author the Test Engine tests. To run the tests locally:
+
+1. Ensure you have [Microsoft Power Platform CLI](../developer/cli/introduction.md) installed
+
+1. If you are using [source control integration](../alm/git-integration/source-control-operations.md) clone your project to your local machine
+
+1. Use the [pac test run](../developer/cli/reference/test.md#pac-test-run) to execute your test
+
+1. Review the pass / fail results of the test
+
+## Azure CLI
+
+The [Azure CLI](/cli/azure/install-azure-cli) is essential for obtaining access tokens to connect to Dataverse. Locally, you can use:
+
+```powershell
+az login --allow-no-subscriptions
+```
+
+## [Power Platform Pipelines](#tab/pipelines)
+
+You can easily integrate Test Engine with Power Platform's built-in pipelines for a native integrated experience:
 
 - **Solution Pipelines** - Add automated testing to your [solution pipelines](../alm/pipelines.md) to ensure quality at each stage
 - **Environment Strategy** - Test in [development and test environments](../alm/environment-strategy-alm.md) before promoting to production
 - **Pipeline Templates** - Use [pipeline templates](../guidance/alm-accelerator/customize-deployment-pipelines.md) to standardize testing across your organization
+
+You can trigger execution of automated tests when using a [Custom pipelines host](/power-platform/alm/custom-host-pipelines):
+
+1. Create a Power Automate cloud flow that triggers based on pipeline events
+
+1. Connect to your CI/CD system to run the tests
+
+1. Process test results and update the pipeline status
+
+The following diagram shows an example of this integration pattern:
+
+![Example Power Automate cloud flow to trigger Azure DevOps connector action to trigger build](./media/gated-approval-process.png)
+
+This flow uses:
+- [Dataverse Triggers](../alm/extend-pipelines.md#triggers) to start a pipeline when conditions are met
+- [Trigger conditions](../alm/extend-pipelines.md#trigger-conditions) to determine which deployment stage applies
+- [Azure DevOps Connector](/connectors/visualstudioteamservices/) to start a build with [parameters](/connectors/visualstudioteamservices/#other-fields-parameter)
+- [Approval actions](/connectors/approvals/) to manage the approval process
+- [Dataverse Actions](/power-platform/alm/extend-pipelines#actions) to update the pipeline based on results
 
 ### Custom CI/CD Integration with Power Automate
 
@@ -67,150 +127,266 @@ With the Custom Host approach, you can:
 
 This integration enables you to maintain your existing CI/CD investments while adding Test Engine's capabilities to your ALM process. The Custom Host acts as a bridge between Power Platform's native ALM features and your external testing infrastructure.
 
-## Common ALM Testing Patterns
+## [DevOps Pipeline](#tab/devops)
 
-Here are several effective patterns for incorporating Test Engine into your ALM processes:
+You can extend your Power Platform Pipeline using [custom host](../alm/custom-host-pipelines.md) or directly integrate the [pac test run](../developer/cli/reference/test.md#pac-test-run) command into to execute your build scripts.
 
-### Quality Gate Pattern
+### Example Script
 
-Use automated tests as a quality gate that must be passed before a solution can progress to the next environment:
+#### Azure DevOps Pipeline
 
-1. Deploy solution to a test environment
-2. Execute Test Engine test suite automatically
-3. Generate test report and approval notification
-4. Approve or reject deployment based on test results
+Here's an example of an Azure DevOps pipeline YAML file that demonstrates how to set up and run Power Apps Test Engine tests:
 
-### Continuous Integration Pattern
+```yaml
+trigger:
+- main
 
-Run tests on each build to catch issues early:
+pool:
+  vmImage: 'windows-latest'
 
-1. Developer commits code to repository
-2. CI system builds the solution
-3. Test Engine runs automated tests against the build
-4. Build is marked as passed/failed based on test results
+variables:
+  - group: PowerPlatformTestVariables # Create a variable group with these variables
+  # Required variables in the variable group:
+  # ClientId - Service Principal App ID
+  # ClientSecret - Service Principal Secret (mark as secret)
+  # TenantId - Microsoft Entra Tenant ID
+  # EnvironmentUrl - Power Platform Environment URL
+  # EnvironmentId - Power Platform Environment ID
 
-### Regression Testing Pattern
+steps:
+# Download the test plan file from secure files
+- task: DownloadSecureFile@1
+  name: testPlan
+  displayName: 'Download Test Plan File'
+  inputs:
+    secureFile: 'testplan.te.yaml' # Upload your test plan to Secure Files in Azure DevOps
 
-Run comprehensive test suites before major releases:
+# Install Power Platform CLI
+- task: PowerShell@2
+  displayName: 'Install Power Platform CLI'
+  inputs:
+    targetType: 'inline'
+    script: |
+      Write-Host "Installing Power Platform CLI..."
+      $pacUrl = "https://aka.ms/PowerAppsCLI"
+      $pacZip = "$env:TEMP\pac.zip"
+      $pacDestination = "$env:TEMP\pac"
+      
+      # Create the destination folder if it doesn't exist
+      if (-not (Test-Path $pacDestination)) {
+          New-Item -ItemType Directory -Path $pacDestination -Force | Out-Null
+      }
+      
+      # Download PAC CLI
+      Invoke-WebRequest -Uri $pacUrl -OutFile $pacZip
+      
+      # Extract PAC CLI
+      Expand-Archive -Path $pacZip -DestinationPath $pacDestination -Force
+      
+      # Add PAC CLI to PATH
+      $env:PATH = "$pacDestination;$env:PATH"
+      
+      # Verify installation
+      pac help
 
-1. Prepare release candidate solution
-2. Deploy to staging environment
-3. Execute full regression test suite with Test Engine
-4. Analyze results and identify any regressions
-5. Fix issues before proceeding to production
+# Install Azure CLI and authenticate with service principal
+- task: PowerShell@2
+  displayName: 'Install Azure CLI and Authenticate'
+  inputs:
+    targetType: 'inline'
+    script: |
+      Write-Host "Installing Azure CLI..."
+      $azureCliUrl = "https://aka.ms/installazurecliwindows"
+      $azureCliInstaller = "$env:TEMP\AzureCLI.msi"
+      
+      # Download Azure CLI installer
+      Invoke-WebRequest -Uri $azureCliUrl -OutFile $azureCliInstaller
+      
+      # Install Azure CLI silently
+      Start-Process -FilePath msiexec.exe -Args "/i $azureCliInstaller /quiet /norestart" -Wait
+      
+      # Reload PATH to include Azure CLI
+      $env:PATH = [System.Environment]::GetEnvironmentVariable("PATH", "Machine") + ";" + [System.Environment]::GetEnvironmentVariable("PATH", "User")
+      
+      # Authenticate with service principal
+      Write-Host "Authenticating with Azure CLI..."
+      az login --service-principal -u "$(ClientId)" -p "$(ClientSecret)" --tenant "$(TenantId)" --allow-no-subscriptions
 
-## Getting Started with Test Automation in ALM
+# Authenticate PAC CLI with service principal
+- task: PowerShell@2
+  displayName: 'Authenticate PAC CLI'
+  inputs:
+    targetType: 'inline'
+    script: |
+      Write-Host "Authenticating PAC CLI..."
+      
+      # Create authentication profile
+      pac auth create --name TestEngineAuth --url "$(EnvironmentUrl)" --applicationId "$(ClientId)" --clientSecret "$(ClientSecret)" --tenant "$(TenantId)"
+      
+      # Select the authentication profile
+      pac auth select --name TestEngineAuth
 
-To get started with incorporating Test Engine into your ALM processes:
+# Run the tests
+- task: PowerShell@2
+  displayName: 'Execute Test Engine Tests'
+  inputs:
+    targetType: 'inline'
+    script: |
+      Write-Host "Running Test Engine tests..."
+      
+      # Create output directory
+      $outputDir = "$(Build.ArtifactStagingDirectory)\TestResults"
+      New-Item -ItemType Directory -Path $outputDir -Force | Out-Null
+      
+      # Run the tests
+      pac test run `
+        --test-plan-file "$(testPlan.secureFilePath)" `
+        --environment-id "$(EnvironmentId)" `
+        --tenant "$(TenantId)" `
+        --logConsole info `
+        --trx `
+        --outputDirectory $outputDir
+      
+      if ($LASTEXITCODE -ne 0) {
+          Write-Error "Test execution failed with exit code $LASTEXITCODE"
+          exit $LASTEXITCODE
+      }
 
-1. **Create your test plan** - Design [YAML test plans](./yaml.md) for your Power Platform solutions
-2. **Run tests locally** - Verify tests work in your development environment
-3. **Set up authentication** - Configure [appropriate authentication](./authentication.md) for your pipeline environments
-4. **Integrate with your pipeline** - Connect Test Engine to your existing ALM pipeline
-5. **Implement quality gates** - Use test results to control the promotion of solutions
+# Publish test results
+- task: PublishTestResults@2
+  displayName: 'Publish Test Results'
+  inputs:
+    testResultsFormat: 'VSTest'
+    testResultsFiles: '$(Build.ArtifactStagingDirectory)\TestResults\*.trx'
+    mergeTestResults: true
+    testRunTitle: 'Power Apps Test Engine Results'
+  condition: always() # Ensure results are published even if tests fail
 
-> [!TIP]
-> Start with critical user journeys and gradually expand your automated test coverage as you become more familiar with Test Engine.
-
-## Technical Reference Guide
-
-The following sections provide detailed technical implementation guidance for different environments and scenarios.
-
-### Local Development Environment Setup
-
-For local test development and execution, install these essential tools:
-
-<details>
-<summary>Click to expand local development setup details</summary>
-
-You can use a local editor like [Visual Studio Code](https://code.visualstudio.com/) to edit the [YAML](./yaml.md) files to author the Test Engine tests. To run the tests locally, install these command line tools:
-
-#### Azure CLI
-
-The [Azure CLI](/cli/azure/install-azure-cli) is essential for obtaining access tokens to connect to Dataverse. Locally, you can use:
-
-```powershell
-az login --allow-no-subscriptions
+# Publish test artifacts
+- task: PublishBuildArtifacts@1
+  displayName: 'Publish Test Artifacts'
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)\TestResults'
+    ArtifactName: 'TestArtifacts'
+    publishLocation: 'Container'
+  condition: always()
 ```
 
-#### Power Platform CLI
+#### GitHub Actions Workflow
 
-The [Microsoft Power Platform CLI](../developer/cli/introduction.md) is required to execute test suite files using the [pac test run](../developer/cli/reference/test.md#pac-test-run) command. Install it following the [Power Platform CLI Installation Instructions](../developer/cli/introduction.md#install-microsoft-power-platform-cli).
+Here's an example of a GitHub Actions workflow that performs the same test execution process:
 
-#### Source Code (Optional)
+```yaml
+name: Test Engine Execution
 
-If you are using the source code version of Test Engine, you will also need:
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:  # Allow manual triggering
 
-- [.Net 8.0 SDK](/dotnet/core/install/) - If you plan to build Test Engine from source
-- [Git](/devops/develop/git/install-and-set-up-git) - If you need to pull changes from [Power Apps Test Engine repository](https://github.com/microsoft/PowerApps-TestEngine)
-</details>
+jobs:
+  test:
+    runs-on: windows-latest
+    
+    env:
+      TENANT_ID: ${{ secrets.TENANT_ID }}
+      CLIENT_ID: ${{ secrets.CLIENT_ID }}
+      CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
+      ENVIRONMENT_URL: ${{ secrets.ENVIRONMENT_URL }}
+      ENVIRONMENT_ID: ${{ secrets.ENVIRONMENT_ID }}
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+      
+    - name: Install Power Platform CLI
+      run: |
+        Write-Host "Installing Power Platform CLI..."
+        $pacUrl = "https://aka.ms/PowerAppsCLI"
+        $pacZip = "$env:TEMP\pac.zip"
+        $pacDestination = "$env:TEMP\pac"
+        
+        # Create the destination folder if it doesn't exist
+        if (-not (Test-Path $pacDestination)) {
+            New-Item -ItemType Directory -Path $pacDestination -Force | Out-Null
+        }
+        
+        # Download PAC CLI
+        Invoke-WebRequest -Uri $pacUrl -OutFile $pacZip
+        
+        # Extract PAC CLI
+        Expand-Archive -Path $pacZip -DestinationPath $pacDestination -Force
+        
+        # Add PAC CLI to PATH
+        $env:PATH = "$pacDestination;$env:PATH"
+        echo "$pacDestination" >> $env:GITHUB_PATH
+        
+        # Verify installation
+        pac help
 
-### Power Platform Pipelines Integration
+    - name: Install Azure CLI
+      run: |
+        Write-Host "Installing Azure CLI..."
+        $ProgressPreference = 'SilentlyContinue'
+        Invoke-WebRequest -Uri https://aka.ms/installazurecliwindows -OutFile .\AzureCLI.msi
+        Start-Process msiexec.exe -Wait -ArgumentList '/I AzureCLI.msi /quiet'
+        rm .\AzureCLI.msi
+        
+    - name: Azure CLI Authentication
+      run: |
+        Write-Host "Authenticating with Azure CLI..."
+        az login --service-principal -u "$env:CLIENT_ID" -p "$env:CLIENT_SECRET" --tenant "$env:TENANT_ID" --allow-no-subscriptions
+        
+    - name: PAC CLI Authentication
+      run: |
+        Write-Host "Authenticating PAC CLI..."
+        # Create authentication profile
+        pac auth create --name TestEngineAuth --url "$env:ENVIRONMENT_URL" --applicationId "$env:CLIENT_ID" --clientSecret "$env:CLIENT_SECRET" --tenant "$env:TENANT_ID"
+        
+        # Select the authentication profile
+        pac auth select --name TestEngineAuth
+      
+    - name: Run Test Engine tests
+      run: |
+        Write-Host "Running Test Engine tests..."
+        
+        # Create output directory
+        $outputDir = "./TestResults"
+        New-Item -ItemType Directory -Path $outputDir -Force | Out-Null
+        
+        # Run the tests
+        pac test run `
+          --test-plan-file "./TestPlan/testplan.te.yaml" `
+          --environment-id "$env:ENVIRONMENT_ID" `
+          --tenant "$env:TENANT_ID" `
+          --logConsole info `
+          --trx `
+          --outputDirectory $outputDir
+        
+        if ($LASTEXITCODE -ne 0) {
+            Write-Error "Test execution failed with exit code $LASTEXITCODE"
+            exit $LASTEXITCODE
+        }
+    
+    - name: Upload test results
+      uses: actions/upload-artifact@v3
+      if: always()
+      with:
+        name: test-results
+        path: ./TestResults
+        
+    - name: Publish Test Results
+      uses: EnricoMi/publish-unit-test-result-action@v2
+      if: always()
+      with:
+        files: ./TestResults/**/*.trx
+```
 
-<details>
-<summary>Click to expand Power Platform Pipelines integration details</summary>
+### Reference Components
 
-You can trigger execution of automated tests when using a [Custom pipelines host](/power-platform/alm/custom-host-pipelines):
-
-1. Create a Power Automate cloud flow that triggers based on pipeline events
-2. Connect to your CI/CD system to run the tests
-3. Process test results and update the pipeline status
-
-The following diagram shows an example of this integration pattern:
-
-![Example Power Automate cloud flow to trigger Azure DevOps connector action to trigger build](./media/gated-approval-process.png)
-
-This flow uses:
-- [Dataverse Triggers](../alm/extend-pipelines.md#triggers) to start a pipeline when conditions are met
-- [Trigger conditions](../alm/extend-pipelines.md#trigger-conditions) to determine which deployment stage applies
-- [Azure DevOps Connector](/connectors/visualstudioteamservices/) to start a build with [parameters](/connectors/visualstudioteamservices/#other-fields-parameter)
-- [Approval actions](/connectors/approvals/) to manage the approval process
-- [Dataverse Actions](/power-platform/alm/extend-pipelines#actions) to update the pipeline based on results
-
-#### Example: Running Tests with a Custom Host
-
-Here's how to use a Custom Host with Test Engine:
-
-1. **Configure the Custom Host**:
-   ```powershell
-   pac pipeline create-host --name "TestAutomationHost"
-   ```
-
-2. **Create a Power Automate Cloud Flow** that triggers on pipeline events:
-   - Trigger: When a deployment stage is ready
-   - Filter: Based on environment or solution name
-   - Action: Execute tests with `pac test run`
-
-3. **Set up the flow to run tests**:
-   ```
-   HTTP with Azure AD
-     Method: POST
-     URI: https://your-agent-host/api/run-tests
-     Body: {
-       "tenant": "@{triggerOutputs()?['body/tenant']}",
-       "environmentId": "@{triggerOutputs()?['body/targetEnvironmentId']}",
-       "testPlanPath": "path/to/testplan.te.yaml"
-     }
-   ```
-
-4. **Update deployment status** based on test results:
-   ```
-   Power Platform for Admins - Update deployment stage status
-     Environment: @{triggerOutputs()?['body/targetEnvironmentId']}
-     Deployment Id: @{triggerOutputs()?['body/deploymentId']}
-     Stage Id: @{triggerOutputs()?['body/stageId']}
-     Status: @{if(equals(outputs('Run_Tests')?['statusCode'], 200), 'Succeed', 'Failed')}
-   ```
-
-This approach gives you complete flexibility to run Test Engine tests as part of your Power Platform ALM process while maintaining control over test execution.
-</details>
-
-### Azure DevOps Implementation
-
-<details>
-<summary>Click to expand Azure DevOps implementation details</summary>
-
-If you're implementing Test Engine within Azure DevOps pipelines, you can use these resources to build an effective implementation:
+The following reference components may be usefule as you build your automation test pipeline.
 
 | Component | Resource | Purpose |
 |-----------|----------|---------|
@@ -224,52 +400,7 @@ If you're implementing Test Engine within Azure DevOps pipelines, you can use th
 | File Access | [Download secure file v1 task](/azure/devops/pipelines/tasks/reference/download-secure-file-v1) | Access configuration files during pipeline run |
 | Results Publishing | [Publish test results v2 task](/azure/devops/pipelines/tasks/reference/publish-test-results-v2) | Publish test results (*.trx) to Azure DevOps |
 
-#### Sample Pipeline YAML
-
-```yaml
-trigger:
-- main
-
-pool:
-  vmImage: 'windows-latest'
-
-steps:
-- task: PowerShell@2
-  displayName: 'Install Power Platform CLI'
-  inputs:
-    targetType: 'inline'
-    script: |
-      Install-Module -Name Microsoft.PowerApps.Administration.PowerShell -Force
-      Install-Module -Name Microsoft.PowerApps.PowerShell -AllowClobber -Force
-      
-- task: DownloadSecureFile@1
-  name: testPlanConfig
-  displayName: 'Download Test Plan'
-  inputs:
-    secureFile: 'testplan.te.yaml'
-
-- task: PowerShell@2
-  displayName: 'Run Test Engine Tests'
-  inputs:
-    targetType: 'inline'
-    script: |
-      pac test run `
-        --provider canvas `
-        --test-plan-file "$(testPlanConfig.secureFilePath)" `
-        --tenant "$(TenantId)" `
-        --environment-id "$(EnvironmentId)" `
-        --user-auth Dataverse `
-        --auth Certenv `
-
-- task: PublishTestResults@2
-  displayName: 'Publish Test Results'
-  inputs:
-    testResultsFormat: 'VSTest'
-    testResultsFiles: '**/*.trx'
-    mergeTestResults: true
-    testRunTitle: 'Power Platform Test Engine Results'
-```
-</details>
+---
 
 ## Next Steps
 
