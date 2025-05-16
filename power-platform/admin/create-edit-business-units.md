@@ -166,13 +166,13 @@ Once this action is chosen, all relevant records of the source Business Unit wil
 
 ## Legacy experience
   
- If your organization is structured around departments or divisions that have separate products, customers, and marketing lists, you might want to create business units. Business units are mapped to an organization’s departments or divisions. Users can securely access data in their own business unit, but they can’t access data in other business units unless they're assigned a security role from that business unit.  
+ If your organization is structured around departments or divisions that have separate products, customers, and marketing lists, you might want to create business units. Business units are mapped to an organization's departments or divisions. Users can securely access data in their own business unit, but they can't access data in other business units unless they're assigned a security role from that business unit.  
   
  Business units, security roles, and users are linked together in a way that conforms to the role-based security model. Use business units together with security roles to control data access so people see just the information they need to do their jobs.   
   
  Keep the following in mind when creating business units:  
   
-- The organization (also known as the root business unit) is the top level of a business unit hierarchy. The customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), automatically create the organization when you install or provision customer engagement apps. You can’t delete the organization name. The organization name is derived from the domain name when the environment was provisioned. You can't change the organization name using the Business Unit form but it can be changed using the [Web API](/dynamics365/customer-engagement/web-api/businessunit?view=dynamics-ce-odata-9&preserve-view=true).
+- The organization (also known as the root business unit) is the top level of a business unit hierarchy. The customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), automatically create the organization when you install or provision customer engagement apps. You can't delete the organization name. The organization name is derived from the domain name when the environment was provisioned. You can't change the organization name using the Business Unit form but it can be changed using the [Web API](/dynamics365/customer-engagement/web-api/businessunit?view=dynamics-ce-odata-9&preserve-view=true).
   
 - Each business unit can have just one parent business unit.  
   
@@ -205,7 +205,7 @@ These settings can be found in the Microsoft Power Platform admin center by goin
 Make sure you have the System Administrator permission to update the setting.
 
 - Follow the steps in [View your user profile](/powerapps/user/view-your-user-profile).
-- Don’t have the correct permissions? Contact your system administrator. 
+- Don't have the correct permissions? Contact your system administrator. 
  
 1. Select an environment and go to **Settings** > **Users + permissions** > **Business units**.
  
@@ -223,13 +223,13 @@ Make sure you have the System Administrator permission to update the setting.
   
      1. Choose **New**, and then add the information for the new parent business unit in the **Business Unit** dialog box.  
   
-     2. When you’re done adding information, select **Save and Close**.  
+     2. When you're done adding information, select **Save and Close**.  
   
      3. In the **Look Up Record** dialog box, select **Add**.  
   
 5. In the **Business Unit** dialog box, fill in any of the other optional fields, such as the Division, Website, contact information, or addresses.  
   
-6. When you’re done making entries, select **Save and Close**.  
+6. When you're done making entries, select **Save and Close**.  
   
 ### Change the settings for a business unit  
   
@@ -245,7 +245,7 @@ Make sure you have the System Administrator permission to update the setting.
     
    - Select a record type under **Organization** to see a list of related records. For example, select **Users** to view a list of users in the selected business unit.  
   
-4. When you’re done making changes select **Save and Close**.  
+4. When you're done making changes select **Save and Close**.  
 
 #### Change the business unit for a user  
 
@@ -291,14 +291,14 @@ Make sure you have the System Administrator permission to update the setting.
    
 ##### Role assignment removal and business unit movement database settings
 > [!NOTE] 
-> If you have enabled [**Record ownership across business units**](wp-security-cds.md#matrix-data-access-structure-modernized-business-units), you can use the following [environment database settings](environment-database-settings.md) to manage your user security role and how you want to move the user’s records when you are changing the user’s business unit.
+> If you have enabled [**Record ownership across business units**](wp-security-cds.md#matrix-data-access-structure-modernized-business-units), you can use the following [environment database settings](environment-database-settings.md) to manage your user security role and how you want to move the user's records when you are changing the user's business unit.
 > 
 > 1. **DoNotRemoveRolesOnChangeBusinessUnit**
->    default = false  (the user’s assigned security role is removed) 
->    You can set it to true, and the user’s assigned security role for the from-Business unit is not removed. 
+>    default = false  (the user's assigned security role is removed) 
+>    You can set it to true, and the user's assigned security role for the from-Business unit is not removed. 
 > 2. **AlwaysMoveRecordToOwnerBusinessUnit**
->    default = true (user owned records are moved to the new user’s business unit) 
->    You can set it to false, and the user owned records’ Business unit is not moved to the new user’s business unit. Note that the user won't be able to access these records unless a security role from the old business unit is assigned to the user. 
+>    default = true (user owned records are moved to the new user's business unit) 
+>    You can set it to false, and the user owned records' Business unit is not moved to the new user's business unit. Note that the user won't be able to access these records unless a security role from the old business unit is assigned to the user. 
 
 #### Change the business unit for a team  
 
@@ -323,7 +323,7 @@ Make sure you have the System Administrator permission to update the setting.
 >    You can set it to true, and the team's assigned security role for the from-Business unit is not removed. 
 > 2. **AlwaysMoveRecordToOwnerBusinessUnit**
 >    default = true (team owned records are moved to the new team's business unit) 
->    You can set it to false, and the team owned records’ Business unit is not moved to the new team's business unit. Note that the team will not be able to access these records unless a security role from the old business unit is assigned to the team. 
+>    You can set it to false, and the team owned records' Business unit is not moved to the new team's business unit. Note that the team will not be able to access these records unless a security role from the old business unit is assigned to the team. 
 
 #### See also  
  [Delete a business unit](delete-business-unit.md)   
