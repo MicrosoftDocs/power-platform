@@ -56,7 +56,7 @@ Release status key:
 | **`Shimmer`**<br>[aka.ms/ck/shimmer](shimmer.md) | User Interface | Provides a wrapper around the [Fluent UI `Shimmer`](https://developer.microsoft.com/fluentui#/controls/web/shimmer) control for use in canvas apps and custom pages. | Yes | Yes | Yes | No | Shipped |
 | **`SpinButton`**<br>[aka.ms/ck/spinbutton](spinbutton.md) | User Interface | Provides a wrapper around the [Fluent UI `SpinButton`](https://developer.microsoft.com/fluentui#/controls/web/spinbutton) control for use in canvas apps and custom pages. | Yes | Yes | Yes | No | Preview |
 | **`Spinner`**<br>[aka.ms/ck/spinner](spinner.md) | User Interface | Mimics the style and behavior of the [Fluent UI `Spinner` component](https://developer.microsoft.com/fluentui#/controls/web/spinner) from inside canvas apps and custom pages. | Yes | Yes | Yes| No | Shipped |
-| **`SubwayNav`**<br>[aka.ms/ck/subwaynav](subwaynav.md) | User Interface | Provides a wrapper around the [Office 365 Admin SubwayNav](https://admincontrolsdemoapps.blob.core.windows.net/release/admin-controls/45.0.2/index.html#/examples/subwaynav) control for use in canvas & custom pages. | Yes | Yes | Yes| No | Preview |
+| **`SubwayNav`**<br>[aka.ms/ck/subwaynav](subwaynav.md) | User Interface | Provides a wrapper around the Office 365 Admin SubwayNav control for use in canvas & custom pages. | Yes | Yes | Yes| No | Preview |
 | **`TagList`**<br>[aka.ms/ck/taglist](taglist.md) | User Interface | Provides a tag list that provides flexible-width rendering bound to a collection. | Yes | Yes | Yes| No | Shipped |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
