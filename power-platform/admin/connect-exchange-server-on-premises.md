@@ -222,27 +222,24 @@ You need to approve each user mailbox or queue before that mailbox can process e
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
 1. On the **Environments** page, choose an environment.
-1. In the command bar, click **Settings**. 
+1. In the command bar, select **Settings**. 
 1. Expand **Email**, then select **Mailboxes**.
 1. In the grid view selector, choose **Active Mailboxes**.
-1. Select the mailboxes you want to test, then click **Test & Enable Mailboxes** in the command bar.
+1. Select the mailboxes you want to test, then select **Test & Enable Mailboxes** in the command bar.
 
 #### [Classic admin center](#tab/classic)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Environments**.
 1. On the **Environments** page, choose an environment.
-1. In the command bar, click **Settings**.  
+1. In the command bar, select **Settings**.  
 1. Expand **Email**, then select **Mailboxes**.
 1. In the grid view selector, choose **Active Mailboxes**.
-1. Select the mailboxes you want to test, then click **Test & Enable Mailboxes** in the command bar.
+1. Select the mailboxes you want to test, then select **Test & Enable Mailboxes** in the command bar.
 ---
 
-   This tests the incoming and outgoing email configuration of the selected mailboxes and enables them for email processing. If an error occurs in a mailbox, an alert is shown on the **Alerts** wall of the mailbox and the profile owner. Depending on the nature of the error, customer engagement apps try to process the email again after some time or disable the mailbox for email processing.  
+This tests the incoming and outgoing email configuration of the selected mailboxes and enables them for email processing. If an error occurs in a mailbox, an alert is shown on the **Alerts** wall of the mailbox and the profile owner. Depending on the nature of the error, customer engagement apps try to process the email again after some time or disable the mailbox for email processing.  
 
-   The result of the email configuration test is displayed in the **Incoming Email Status**, **Outgoing Email Status**, and **Appointments, Contacts, and Tasks Status** fields of a mailbox record. An alert is also generated when the configuration is successfully completed for a mailbox. This alert is shown to the mailbox owner.  
-
-> [!TIP]
->  If you're unable to synchronize contacts, appointments, and tasks for a mailbox, you might want to select the **Sync items with Exchange from this org only, even if Exchange was set to sync with a different org** checkbox. More information: [When would I want to use this check box?](when-would-want-use-check-box.md) 
+The result of the email configuration test is displayed in the **Incoming Email Status**, **Outgoing Email Status**, and **Appointments, Contacts, and Tasks Status** fields of a mailbox record. An alert is also generated when the configuration is successfully completed for a mailbox. This alert is shown to the mailbox owner.  
 
 ## Test email configuration for all mailboxes associated with an email server profile  
 
@@ -253,7 +250,7 @@ You need to approve each user mailbox or queue before that mailbox can process e
 1. On the **Environments** page, choose an environment.
 1. In the command bar, select **Settings**. 
 1. Expand **Email**, then select **Server profiles**.
-1. Select the profile you created, then click **Test & Enable Mailboxes** in the command bar.
+1. Select the profile you created, then select **Test & Enable Mailboxes** in the command bar.
 
 #### [Classic admin center](#tab/classic)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
@@ -261,13 +258,13 @@ You need to approve each user mailbox or queue before that mailbox can process e
 1. On the **Environments** page, choose an environment.
 1. In the command bar, select **Settings**.  
 1. Expand **Email**, then select **Server profiles**.
-1. Select the profile you created, then click **Test & Enable Mailboxes** in the command bar.
+1. Select the profile you created, then select **Test & Enable Mailboxes** in the command bar.
 ---
 
 When you test the email configuration, an asynchronous job runs in the background. It might take a few minutes for the test to be completed. Customer engagement apps test the email configuration of all the mailboxes associated with the server profile. For the mailboxes configured with server-side synchronization for synchronizing appointments, tasks, and contacts, it also checks to make sure they're configured properly.  
 
 > [!TIP]
->  If you're unable to synchronize contacts, appointments, and tasks for a mailbox, you might want to select the **Sync items with Exchange from this org only, even if Exchange was set to sync with a different org** checkbox. More information: [When would I want to use this check box?](when-would-want-use-check-box.md)  
+> If you're unable to synchronize contacts, appointments, and tasks for a mailbox, you might want to select the **Sync items with Exchange from this org only, even if Exchange was set to sync with a different org** checkbox. You can learn more about this tip by reading, [When would I want to use this check box?](when-would-want-use-check-box.md). 
 
 ### See also
 
