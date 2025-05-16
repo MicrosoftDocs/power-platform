@@ -7,6 +7,7 @@ ms.component: pa-admin
 ms.topic: how-to
 ms.date: 12/16/2021
 ms.subservice: admin
+ms.custom: NewPPAC
 ms.author: sericks
 search.audienceType: 
   - admin
@@ -43,30 +44,47 @@ search.audienceType:
 ### Step 1: Create a new template from existing data  
  There are two places where you can create an [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] template:  
   
-- **From the Settings page**. Go to **Settings** > **Templates** > **Document Templates** > **New** (![New or Add button.](../admin/media/nb-ua-r1-plus.png "New or Add button")). You must have sufficient permissions to access to the Settings page, such as System Administrator or System Customizer.  
-  
-- **From a list of records**. For example, go to **Sales** > **Opportunities** > **My Open Opportunities**. On the menu bar, click **Excel Templates** > **Create Excel Template**.  
-  
-  ![Create Excel Template menu option.](../admin/media/excel-template-create-menu.png "Create Excel Template menu option")  
-  
-  The **Create template** page appears.  
-  
-  ![Create Excel Template page.](../admin/media/excel-template-create-from-data-page.png "Create Excel Template page")  
-  
+- **From [Power Platform admin center](https://admin.powerplatform.microsoft.com/)**.
+
+Access requires sufficient permissions, such as System Administrator or System Customizer role. To check your security role, see [View your user profile](/powerapps/user/view-your-user-profile). If you don’t have the correct permissions, contact your system administrator.
+
+#### [New admin center](#tab/new)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. On the **Environments** page, choose an environment.
+1. In the command bar, select **Settings**. 
+1. Expand **Templates**, then select **Document templates**.
+1. In the command bar, click **New**, then select **Excel Template**.
+1. In the dialog window, select the **Entity** to filter and the **View** to use, then click **Download** to download the template.
+   
+#### [Classic admin center](#tab/classic)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Environments**.
+1. On the **Environments** page, choose an environment.
+1. In the command bar, select **Settings**. 
+1. Expand **Templates**, then select **Document templates**.
+1. In the command bar, click **New**, then select **Excel Template**.
+1. In the dialog window, select the **Entity** to filter and the **View** to use, then click **Download** to create the template file.
+---
+
+- **From a list of records**. 
+For example:
+1. Sign in to the **Sales Hub** app.
+1. In the navigation pane, select **Opportunities**.
+1. From the grid view selector in the command bar, choose **My Open Opportunities** to display a list of records.
+1. In the command bar, click **Excel Templates**, then select **Create Excel Template - Download Template**.
+1. In the dialog window, select the **Entity** to filter and the **View** to use, then click **Download** to create the template file.
+    
 #### Select the data to include in the template  
   
-1. Click **Excel Template**.  
-  
-2. Select an entity (record type) to include that entity's data. The views you can select in the next field depend on the entity you select.  
-  
-3. Select a view.  
-  
-4. Click **Edit Columns** to add, remove, and adjust properties for the columns to include in the template.  
-  
-5. Click **Download File** to create the template file.  
+Follow steps described above:
+1. In the dialog window, select the **Entity** to filter and the **View** to use.
+1. Click **Edit Columns** to customize the columns—add, remove, and adjust properties as needed.  
+1. Click **Download** to create the template file.  
   
 > [!WARNING]
->  You can also download a template containing no data except for the columns associated with the record type (entity) using **Settings** > **Data Management** > **Templates for Data Import**. For more information, see: [Download a template for data import](../admin/download-template-data-import.md).  
+>  You can also download a template containing no data except for the columns associated with the record type (entity). See: [Download a template for data import](../admin/download-template-data-import.md).  
 
 > [!IMPORTANT]
 > Document template downloaded from one environment can only be used within that environment. Environment to environment migration for Word or Excel templates isn't currently supported.
@@ -108,55 +126,53 @@ Let's walk through a simple example of customizing an [!INCLUDE[pn_Excel_short](
   
 ### Step 3: Upload the template and share with others  
  When you have your [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] template customized the way you want, you can upload it. Where you upload the template determines its availability.  
-  
- Administrators can use the Settings page to upload the [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] template. A template uploaded in Settings is available to all users.  
-  
+
+ Administrators can go to **[Power Platform admin center](https://admin.powerplatform.microsoft.com/)** to upload the [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] template.  A template uploaded there is available to all users.  
+ 
 #### For admins: Upload the Excel template
-  
-1. Go to **Settings** > **Templates** > **Document Templates**.  
-  
-2. Click **Upload Template**.  
-  
-3. Drag the [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] file into the dialog box or browse to find and upload the file.  
-  
-   ![Upload Template dialog box.](../admin/media/word-template-upload-dialog-box.png "Upload Template dialog box")  
-  
-4. Click **Upload**.  
-  
-   Non-admin users can upload a template for their own use from a list of records.  
-  
+
+#### [New admin center](#tab/new)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. On the **Environments** page, choose an environment.
+1. In the command bar, select **Settings**. 
+1. Expand **Templates**, then select **Document templates**.
+1. In the command bar, click **Upload Template**, then select **Excel Template**.
+1. In the dialog window, choose a file to upload, then click **Upload** to upload the template file.
+   
+#### [Classic admin center](#tab/classic)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Environments**.
+1. On the **Environments** page, choose an environment.
+1. In the command bar, select **Settings**. 
+1. Expand **Templates**, then select **Document templates**.
+1. In the command bar, click **Upload Template**, then select **Excel Template**.
+1. In the dialog window, choose a file to upload, then click **Upload** to upload the template file.
+---
+   
 #### For non-admins or admins wanting to create a personal template: Upload the Excel template
-  
-1. Open a page with a list of records, for example, the list of Sales Opportunities. Go to **Sales** > **Opportunities** > **My Open Opportunities**.  
-  
-2. On the menu bar, click **Excel Templates** > **Create Excel Template**.  
-  
-3. Click **Excel Template** > **Upload**.  
-  
-   ![Click Upload to add the Excel template.](../admin/media/excel-template-upload.png "Click Upload to add the Excel template")  
-  
-4. Drag the file into the dialog box or browse to find and upload the file.  
-  
-5. Click **Upload**.  
-  
+
+Non-admin users can upload a template for their own use from a list of records.  
+
+For example:
+1. Sign in to the **Sales Hub** app.
+1. In the navigation pane, select **Opportunities**.
+1. From the grid view selector in the command bar, choose **My Open Opportunities** to display a list of records.
+1. In the command bar, click **Excel Templates**, then select **Create Excel Template - Upload Template**.
+1. In the dialog window, choose a file to upload, then click **Upload** to upload the template file.
+
 ### Step 4: Choose who can use the new template  
+
  Access to the newly-created [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] template depends on how you uploaded it, and on the access granted to the security role. Be sure to check out [Use security roles to control access to templates](#use-security-roles-to-control-access-to-templates).  
   
- **If you uploaded the template from the Settings page**  
+ **If you uploaded the template from the [Power Platform admin center](https://admin.powerplatform.microsoft.com/)**  
   
- The Information page for the uploaded [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] template will look like this.  
-  
- ![Excel template uploaded from Settings page.](../admin/media/excel-template-uploaded-from-settings-page.png "Excel template uploaded from Settings page")  
-  
- Templates uploaded from the Settings page are available to all users. You don't need to take any further action.  
+ Templates are available to all users. You don't need to take any further action.  
   
  **If you uploaded the template from a list of records**  
   
- The Information page for the uploaded [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] template will look like this.  
-  
- ![An Excel template uploaded from a list of records.](../admin/media/excel-template-uploaded-from-list.png "An Excel template uploaded from a list of records")  
-  
- Templates uploaded from a list of records are available to the user who uploaded the template. To share the template with others, following these steps:  
+ Templates are available to the user who uploaded the template. To share the template with others, following these steps:  
   
 1. From the template Information page, click **Share**.  
   
