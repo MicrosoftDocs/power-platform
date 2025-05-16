@@ -3,7 +3,7 @@ title: "Test Canvas Application with Test Engine (preview)"
 description: "Learn about testing Power Apps Canvas applications using Test Engine"
 author: grant-archibald-ms
 ms.author: grarchib
-ms.date: 05/09/2025
+ms.date: 05/16/2025
 ms.reviewer: jdaly
 ms.topic: article
 contributors:
@@ -59,7 +59,7 @@ Test Engine currently has these authentication methods:
 | Method | Description |
 |--------|-------------|
 | Storage State | Store authenticated user state locally in the user profile using Microsoft Windows [Data Protection API](/dotnet/standard/security/how-to-use-data-protection)
-| Dataverse | Store authenticated user state inside dataverse using your own customer managed key encrypted with an X.509 certificate using [ASP.NET Core Data Protection](/aspnet/core/security/data-protection/introduction)
+| Dataverse | Store authenticated user state inside Dataverse using your own customer managed key encrypted with an X.509 certificate using [ASP.NET Core Data Protection](/aspnet/core/security/data-protection/introduction)
 
 You can't store test credentials in test plan files you must select `Storagestate` or `Dataverse` as the secure location to store credentials. The test plan file contains references to which [environment variables](/power-apps/maker/data-platform/environmentvariables) are used for user persona. For example, the following YAML snippet indicates that the `user1Email` environment variables are used:
 
@@ -79,17 +79,33 @@ $env:user1Email = "someone@example.com"
 ```
 
 > [!NOTE]
-> The user password is no longer required in an environment variable. Review [authenication](./authentication.md) for supported options.
+> The user password is no longer required in an environment variable. Review [authentication](./authentication.md) for supported options.
 
 ## Run the test
 
 Use the PAC CLI [pac test run](../developer/cli/reference/tests.md#pac-test-run) command to run your test plan.
 
+### Required Parameters
+
+You'll need to provide the following information:
+
 - Path to your test plan file
 - TenantId (For example `aaaabbbb-0000-cccc-1111-dddd2222eeee`)
 - EnvironmentId (For example `00aa00aa-bb11-cc22-dd33-44ee44ee44ee`)
 
-For example this could be
+### Example Command
+
+Here's an example of running a test for a canvas application:
+
+```powershell
+pac test run `
+   --provider canvas `
+   --test-plan-file testplan.te.yaml `
+   --tenant aaaabbbb-0000-cccc-1111-dddd2222eeee `
+   --environment-id 00aa00aa-bb11-cc22-dd33-44ee44ee44ee
+```
+
+You can also use the shorter parameter aliases:
 
 ```powershell
 pac test run `
@@ -98,6 +114,22 @@ pac test run `
    -t aaaabbbb-0000-cccc-1111-dddd2222eeee `
    -env 00aa00aa-bb11-cc22-dd33-44ee44ee44ee
 ```
+
+## Dataverse Integration
+
+To enable Dataverse integration with your canvas app tests, you can add the `enableDataverseFunctions` parameter in your test settings:
+
+```yaml
+testSettings:
+  extensionModules:
+    enable: true
+    parameters:
+      enableDataverseFunctions: true
+```
+
+When you enable Dataverse integration, you're required to open Azure CLI with a user or service principal that has rights to the Dataverse environment. You can use the command: `az login`  More information: [Sign in with Azure CLI](/cli/azure/authenticate-azure-cli).
+
+The WebApi used for Dataverse integration is obtained either from the host domain name of the [pac test run](../developer/cli/reference/test.md#pac-test-run) `--domain` parameter or by defining an environment variable named `DATAVERSE_URL`.
 
 ## View the results
 

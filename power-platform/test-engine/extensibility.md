@@ -57,7 +57,7 @@ Provider extensions enable testing different types of applications:
 - **Power Fx Provider** - For executing Power Fx statements independently
 - **Portal Provider** - For automating operations in the maker portal
 
-For more information, see [Test Engine Providers](./providers.md).
+For more information, see [Canvas Applications](./canvas-application.md), [Model-driven Applications](./model-driven-application.md), and [Dataverse Extensions](./dataverse.md).
 
 ### 3. Power Fx Extensions
 
@@ -74,7 +74,7 @@ Organizations have multiple options for extending Test Engine:
 
 ### 1. Using the Open Source Version
 
-The [Power Apps Test Engine](https://github.com/microsoft/PowerApps-TestEngine) is available as an open source project under the MIT license. First-party Microsoft teams, third-party teams, and organizations can:
+The [Power Apps Test Engine](https://github.com/microsoft/PowerApps-TestEngine) is available as an open source project under the MIT license. First-party Microsoft, third-party teams, and organizations can:
 
 - Create new providers for specialized testing scenarios
 - Develop custom authentication mechanisms
@@ -136,12 +136,12 @@ public class TestEngineSampleModule : ITestEngineModule
 
 ## Collaboration with the Test Engine Team
 
-Organizations that develop valuable extensions using the open source Test Engine may want to see their extensions available in the official product. The process typically involves:
+Organizations that develop valuable extensions using the open source Test Engine can consider creating a pull request for their extensions to make them available in the official product. The process typically involves:
 
 1. **Development** - Create your extension using the open source Test Engine
 2. **Validation** - Test your extension thoroughly in your own environment
 3. **Collaboration** - Work with the Core Test Engine team to evaluate the extension
-4. **Integration** - If approved, Microsoft may sign and integrate the extension into the product
+4. **Integration** - If approved, Microsoft will sign and integrate the extension into the product
 
 This collaboration model enables innovation while maintaining the security and reliability of the official Test Engine product.
 
@@ -165,7 +165,7 @@ The extensibility model provides significant benefits:
 - **Standardization** - Microsoft-signed components ensure consistent quality and security
 - **Innovation** - The open source model allows for community-driven innovation
 - **Flexibility** - Organizations can create specialized extensions for unique requirements
-- **Integration** - Valuable extensions may be considered for inclusion in the official product
+- **Integration** - Valuable extensions are considered for inclusion in the official product
 
 ## Summary
 

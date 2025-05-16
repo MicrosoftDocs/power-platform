@@ -1,6 +1,6 @@
 ---
 title: Test Engine and Playwright Integration (preview)
-description: Learn how Test Engine leverages Playwright to provide robust browser automation capabilities.
+description: Learn how Test Engine applies Playwright to provide robust browser automation capabilities.
 author: grant-archibald-ms
 ms.author: grarchib
 ms.date: 05/15/2025
@@ -28,9 +28,9 @@ While Playwright offers excellent browser automation capabilities, Test Engine e
 |------------------------|-------------|
 | **App-Level Abstractions** | Test Engine works with app-level objects rather than DOM elements, making tests more resilient to UI changes |
 | **Power Fx Integration** | Test Engine adds [Power Fx](./powerfx.md) support, enabling a low-code approach to test authoring |
-| **Built-in Authentication** | Pre-built authentication mechanisms handle Microsoft Entra and conditional access scenarios |
+| **Built-in Authentication** | Prebuilt authentication mechanisms handle Microsoft Entra and conditional access scenarios |
 | **Dataverse Integration** | Direct integration with [Dataverse](./dataverse.md) allows for comprehensive end-to-end testing |
-| **Specialized Providers** | Optimized [providers](./providers.md) for Canvas apps and Model-driven apps |
+| **Specialized Providers** | Optimized providers for [Canvas apps](./canvas-application.md) and [Model-driven apps](./model-driven-application.md) |
 
 
 ## Technical Implementation
@@ -39,7 +39,7 @@ While Playwright offers excellent browser automation capabilities, Test Engine e
 
 Test Engine utilizes Playwright's core capabilities for consistent browser automation:
 
-- **Cross-browser support** for Chrome, Firefox, and Edge
+- **Cross-browser support** for Chrome, Firefox, and Microsoft Edge
 - **Reliable waiting mechanisms** that automatically wait for elements to be ready
 - **Network request interception** for simulating API responses
 - **Tracing and debugging tools** to diagnose test failures
@@ -85,7 +85,7 @@ While Test Engine abstracts many Playwright interactions, there are scenarios wh
 
 ### Using Playwright Functions in Test Engine
 
-Test Engine includes the following preview functions that allow you to leverage Playwright's element selection capabilities:
+Test Engine includes the following preview functions that allow you to apply Playwright's element selection capabilities:
 
 | Function | Description | Example |
 |----------|-------------|---------|
@@ -103,7 +103,7 @@ The following operations can be performed with `Preview.PlaywrightAction`:
 
 | Action | Description | Example |
 |--------|-------------|---------|
-| `click` | Click on an element | `Preview.PlaywrightAction("//button[@id='submit']", "click")` |
+| `click` | Selection of an element using click event | `Preview.PlaywrightAction("//button[@id='submit']", "click")` |
 | `exists` | Check if an element exists | `Preview.PlaywrightAction("//div[@class='error-message']", "exists")` |
 | `wait` | Wait for an element to be available | `Preview.PlaywrightAction("//table[@data-loading='false']", "wait")` |
 

@@ -76,7 +76,7 @@ This function waits for the property of the control to equal the specified value
 The following functions can optionally be included in tests when the Power Fx Preview namespace by adding it to the allowlist in the testSettings section
 
 > [!NOTE]
-> - Preview functions are subject to change. As these functions become ready for wider usage they may move to the `TestEngine` namespace.
+> - Preview functions are subject to change. As these functions become ready for wider usage, they're considered to move within the `TestEngine` namespace.
 > - You can use User Defined Functions to wrap `Preview` functions to make migration to non preview versions of the function easier.
 > - You could have the model only return a JSON object that you could parse using the `ParseJSON` function.
 
@@ -87,7 +87,7 @@ The following functions can optionally be included in tests when the Power Fx Pr
 Call a [Custom AI Builder prompt](/ai-builder/create-a-custom-prompt) and obtain text results of the execution.
 
 > [!NOTE]
-> Review the provider [Dataverse AI Integration](./providers.md#ai-integration) for information on availablity and configuration of this function.
+> Review the [Dataverse AI Integration](./dataverse.md#ai-integration) section for information on availability and configuration of this function.
 
 #### Preview.AIExecutePrompt Example
 

@@ -44,7 +44,7 @@ To get started with incorporating Test Engine into your ALM processes:
 
 1. **Create your test plan** - Design [YAML test plans](./yaml.md) for your Power Platform solutions
 2. **Run tests locally** - Verify tests work in your development environment
-3. **Set up authentication** - Configure [appropriate authentication](./authentication.md) for your local execite and pipeline environments
+3. **Set up authentication** - Configure [appropriate authentication](./authentication.md) for your local execute and pipeline environments
 4. **Integrate with your pipeline** - Connect Test Engine to your existing ALM pipeline
 5. **Implement quality gates** - Use test results to control the promotion of solutions
 
@@ -53,9 +53,9 @@ To get started with incorporating Test Engine into your ALM processes:
 
 ## Source Code Version of Test Engine (Optional)
 
-If you are using the source code version of Test Engine, you will also need:
+If you're using the source code version of Test Engine, you'll also need:
 
-- [.Net 8.0 SDK](/dotnet/core/install/) - If you plan to build Test Engine from source
+- [.NET 8.0 SDK](/dotnet/core/install/) - If you plan to build Test Engine from source
 - [Git](/devops/develop/git/install-and-set-up-git) - To pull changes from [Power Apps Test Engine repository](https://github.com/microsoft/PowerApps-TestEngine)
 </details>
 
@@ -69,7 +69,7 @@ You can use a local editor like [Visual Studio Code](https://code.visualstudio.c
 
 1. Ensure you have [Microsoft Power Platform CLI](../developer/cli/introduction.md) installed
 
-1. If you are using [source control integration](../alm/git-integration/source-control-operations.md) clone your project to your local machine
+1. If you're using [source control integration](../alm/git-integration/source-control-operations.md) clone your project to your local machine
 
 1. Use the [pac test run](../developer/cli/reference/test.md#pac-test-run) to execute your test
 
@@ -112,11 +112,7 @@ This flow uses:
 
 ### Custom CI/CD Integration with Power Automate
 
-For organizations with existing CI/CD tooling, Test Engine integrates with custom pipelines through Power Automate using the [Power Platform Custom Host](../alm/custom-host-pipelines.md) feature:
-
-![Example Power Automate integration with CI/CD pipelines](./media/gated-approval-process.png)
-
-With the Custom Host approach, you can:
+For organizations with existing CI/CD tooling, Test Engine integrates with custom pipelines through Power Automate using the [Power Platform Custom Host](../alm/custom-host-pipelines.md) feature. With the Custom Host approach, you can:
 
 - Define a [custom pipeline host](../alm/custom-host-pipelines.md#configure-a-custom-pipeline-host) that executes your automated tests
 - Create Power Automate cloud flows that trigger automatically from deployment events
@@ -272,7 +268,7 @@ steps:
   condition: always()
 ```
 
-#### GitHub Actions Workflow
+## [GitHub Runner](#tab/github)
 
 Here's an example of a GitHub Actions workflow that performs the same test execution process:
 
@@ -386,7 +382,7 @@ jobs:
 
 ### Reference Components
 
-The following reference components may be usefule as you build your automation test pipeline.
+The following reference components may be useful as you build your automation test pipeline.
 
 | Component | Resource | Purpose |
 |-----------|----------|---------|
@@ -406,7 +402,7 @@ The following reference components may be usefule as you build your automation t
 
 - [Learn about Test Engine YAML syntax](./yaml.md)
 - [Set up authentication for your tests](./authentication.md)
-- [Explore supported test providers](./providers.md)
+- [Test canvas applications](./canvas-application.md), [model-driven applications](./model-driven-application.md), or [Dataverse extensions](./dataverse.md)
 - [Understand Power Platform ALM](../alm/alm-overview.md)
 
 [!INCLUDE [footer-banner](../includes/footer-banner.md)]

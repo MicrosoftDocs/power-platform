@@ -20,7 +20,7 @@ contributors:
 
 Power Apps Test Engine is a testing solution designed specifically for Power Platform applications. Whether you're new to automated testing, familiar with [Test Studio](/power-apps/maker/canvas-apps/test-studio), or an experienced developer with Playwright knowledge, Test Engine offers a scalable approach to testing that aligns with the low-code philosophy of Power Platform.
 
-Learn more about how Test Engine helps you regardless of where you are starting from:
+Learn more about how Test Engine helps you regardless of where you're starting from:
 
 
 ## [Manual Testers](#tab/manual)
@@ -118,7 +118,10 @@ The approach to getting started depends on your role and experience level:
 
 1. **Evaluate the Architecture**:
    - Review how Test Engine [compares to Playwright](playwright.md)
-   - Understand the [provider model](providers.md) for different application types
+   - Understand the application types:
+     - [Canvas applications](canvas-application.md)
+     - [Model-driven applications](model-driven-application.md)
+     - [Dataverse extensions](dataverse.md)
 
 1. **Integrate with Development Workflows**:
    - Add Test Engine to your CI/CD pipelines
@@ -137,7 +140,7 @@ The approach to getting started depends on your role and experience level:
 - **[Power Fx Test Authoring](powerfx.md)**: Write tests using the same formula language used in Power Apps
 - **[Dataverse Integration](dataverse.md)**: Test Dataverse-dependent functionality with built-in support
 - **Control Name References**: Reference controls by their studio names rather than complex DOM selectors
-- **[Multiple Application Types](providers.md)**: Test Canvas apps, Model-driven apps, and more with specialized providers
+- **Multiple Application Types**: Test [Canvas apps](canvas-application.md), [Model-driven apps](model-driven-application.md), and more with specialized providers
 - **[Connector Mocking](simulation.md)**: Simulate connector responses for reliable, isolated testing
 - **Visual Diagnostics**: Capture screenshots and videos to troubleshoot test failures
 
@@ -196,7 +199,9 @@ For apps not in solutions, update tests when moving environments:
 ## Next Steps
 
 - [Explore Test Engine Features](features.md)
-- [Learn About Different Providers](providers.md)
+- [Test Canvas applications](canvas-application.md)
+- [Test Model-driven applications](model-driven-application.md)
+- [Test Dataverse extensions](dataverse.md)
 - [View YAML Test Plan Format](yaml.md)
 - [Browse Power Fx Functions for Testing](powerfx-functions.md)
 - [Read Test Engine Release Notes](https://github.com/microsoft/PowerApps-TestEngine/releases)

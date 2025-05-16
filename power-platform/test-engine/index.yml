@@ -47,13 +47,21 @@ landingContent:
   - title: References
     linkLists:
       - linkListType: concept
-        links:
+        links: 
           - text: Yaml format
             url: yaml.md
           - text: Power Fx functions
             url: powerfx.md
           - text: Providers
             url: providers.md
+          - text: Application types
+            items:
+            - text: Canvas applications
+              url: canvas-application.md
+            - text: Model-driven applications
+              url: model-driven-application.md
+            - text: Dataverse extensions
+              url: dataverse.md
           - text: Extensibility
             url: extensibility.md
           - text: Feature lifecycle

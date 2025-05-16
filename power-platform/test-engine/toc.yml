@@ -11,7 +11,6 @@ items:
       href: authentication.md
     - name: Guide
       href: authentication-guide.md
-
   - name: Test your solution
     items:
     - name: Test Canvas apps
@@ -34,18 +33,25 @@ items:
       href: powerfx-csharp.md
   - name: ALM
     href: alm.md
-  - name: Providers
-    href: providers.md
+  - name: Application types
+    items:
+    - name: Canvas applications
+      href: canvas-application.md
+    - name: Model-driven applications
+      href: model-driven-application.md
+    - name: Dataverse extensions
+      href: dataverse.md
   - name: Feature lifecycle
     href: feature-lifecycle.md
   - name: Migration
-    href: migration-guide.md
-  - name: Reference
+    href: migration-guide.md  - name: Reference
     items:
     - name: Overview
       href: reference.md
     - name: Yaml format
       href: yaml.md
+    - name: Providers
+      href: providers.md
     - name: Extensibility
       href: extensibility.md
     - name: Power Fx modules

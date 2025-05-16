@@ -30,7 +30,7 @@ The Test Engine provides two primary authentication methods:
 
    - Persist session cookies for repeated test runs
    - Support for MFA and conditional access policies
-   - Interactive first-time login, automated subsequent runs
+   - Interactive first-time sign-in, automated subsequent runs
    :::column-end:::
    :::column:::
    **Certificate based authentication**
@@ -72,7 +72,7 @@ Select the best authentication approach based on your specific testing needs:
 
 | Scenario | Recommended Method | Key Considerations |
 |----------|-------------------|-------------------|
-| Development environment | Browser-based | Simple setup, interactive first login |
+| Development environment | Browser-based | Simple setup, interactive first sign-in |
 | Testing with MFA | Browser-based | Supports all Microsoft Entra authentication methods |
 | Automated CI/CD | Certificate-based | No user interaction required |
 | Dataverse integration | Certificate-based | Enhanced security integration |
@@ -82,7 +82,7 @@ Select the best authentication approach based on your specific testing needs:
 The Test Engine's authentication has evolved significantly to enhance security:
 
 - **Modern Authentication** - Moved from basic authentication to modern Microsoft Entra authentication
-- **MFA Support** - Full support for multi-factor authentication requirements
+- **MFA Support** - Full support for multifactor authentication requirements
 - **Secure Storage** - Encrypted storage of authentication state
 - **Conditional Access** - Integration with organizational security policies
 
@@ -96,8 +96,8 @@ The Test Engine's authentication has evolved significantly to enhance security:
    - Explore the technical implementation details
    - Review integration with enterprise security systems
 
-3. [**Explore Providers**](providers.md)
-   - Learn how authentication integrates with different provider types
-   - Configure provider-specific authentication options
+3. [**Explore Application Types**](canvas-application.md)
+   - Learn how authentication integrates with [canvas applications](canvas-application.md), [model-driven applications](model-driven-application.md), and [Dataverse extensions](dataverse.md)
+   - Configure application-specific authentication options
 
 [!INCLUDE [footer-banner](../includes/footer-banner.md)]

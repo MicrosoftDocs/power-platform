@@ -22,12 +22,6 @@ contributors:
 
 This document provides guidance on any transition steps required for running the latest version of the Power Platform Test Engine as part of an update to the version of the Power Platform CLI (PAC CLI). Follow the steps outlined below to ensure a smooth transition.
 
-## Table of Contents
-
-1. [Prerequisites](#prerequisites)
-1. [Migrating from older versions to 1.43 and later](#migrating-from-older-versions-to-143-and-later)
-1. [Additional Resources](#additional-resources)
-
 ## Prerequisites
 
 - Ensure you have a backup of your current configuration and test files.
@@ -40,17 +34,17 @@ Alternatively, follow guidance to [Check which version of Power Platform CLI is 
 Follow these steps to migrate:
 
 1. **Authentication updates**  
-   Older versions used an environment variable for password. After version 1.43, the test run command depends on browser based authentication to be compatible with multi-factor authentication mechanisms (MFA). In the test settings of the test plan file, ensure that the `headless` property is set to false to be able to see the browser and interactively login for the initial sign in.
+   Older versions used an environment variable for password. After version 1.43, the test run command depends on browser based authentication to be compatible with multifactor authentication mechanisms (MFA). In the test settings of the test plan file, ensure that the `headless` property is set to false to be able to see the browser and interactively sign-in for the initial sign in.
 
-   There are 2 authentication providers `Storagestate` (default, no need to specify explicitly) and `Dataverse` which can be set using the `--user-auth` parameter in the [test run command](../developer/cli/reference/test.md#pac-test-run). `Storagestate` mechanism can be used in local Windows scenarios only. `Dataverse` can be used in local and pipeline execution scenarios and requires additional setup.
+   There are two authentication providers `Storagestate` (default, no need to specify explicitly) and `Dataverse` which can be set using the `--user-auth` parameter in the [test run command](../developer/cli/reference/test.md#pac-test-run). `Storagestate` mechanism can be used in local Windows scenarios only. `Dataverse` can be used in local and pipeline execution scenarios and requires other setup.
 
    [Learn more about authentication](authentication.md).
 
 
 1. **File system access restrictions**  
-   Additional restrictions are applied to the Test engine to ensure that files cannot be accessed from certain locations on the file system. Please ensure test files and results are not located in one of the restricted locations as outlined in [file access restrictions](filerestrictions.md).
+   Extra restrictions are applied to the Test engine to ensure that files can't be accessed from certain locations on the file system. Ensure test files and results aren't located in one of the restricted locations as outlined in [file access restrictions](filerestrictions.md).
 
-## Additional Resources
+## Other Resources
 
 [Power Apps Test Engine release notes](https://github.com/microsoft/PowerApps-TestEngine/releases)  
 [Power Apps Test Engine YAML format (preview)](yaml.md)  

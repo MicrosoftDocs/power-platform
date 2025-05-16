@@ -54,7 +54,7 @@ pac test run `
    --environment-id 00aa00aa-bb11-cc22-dd33-44ee44ee44ee
 ```
 
-This is the default behavior (`--user-auth Storagestate` is implicit), so you don't need to specify additional authentication parameters.
+This is the default behavior (`--user-auth Storagestate` is implicit), so you don't need to specify other authentication parameters.
 
 ### Benefits of Browser-based Authentication
 
@@ -127,7 +127,7 @@ When working with Dataverse directly (for integration testing), use the `--user-
 az login --use-device-code --allow-no-subscriptions
 ```
 
-For more information on Dataverse integration, see [Provider Dataverse Integration](./providers.md#provider-dataverse-integration).
+For more information on Dataverse integration, see [Test Dataverse extensions](./dataverse.md).
 
 ## Troubleshooting Authentication Issues
 
@@ -150,7 +150,7 @@ Common authentication issues include:
 ## Next Steps
 
 - Learn about the [security architecture of Test Engine authentication](./authentication-security.md)
-- Explore [provider options and capabilities](./providers.md)
+- Explore [canvas application testing](./canvas-application.md) and [model-driven application testing](./model-driven-application.md)
 - Understand [how to test Dataverse extensions](./dataverse.md)
 
 [!INCLUDE [footer-banner](../includes/footer-banner.md)]
