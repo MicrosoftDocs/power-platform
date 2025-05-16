@@ -32,3 +32,4 @@ Reference architectures are essential frameworks that guide the design and imple
 | **[Use Dataverse as a data source for canvas apps​](dataverse-canvas-app.md)** | Creating a Power Apps application that uses Dataverse as a data source can enable building a more custom user experience. |
 | **[Reduce infrastructure challenges with hosted RPA in Power Automate​](rpa-scale-operations.md)** | Learn how to use the Hosted RPA feature to decrease the time and effort required for procuring, provisioning, operationalizing, and maintaining infrastructure to support robotic process automations. |
 | **[Use SQL Server with canvas apps​](sqlserver-canvas-app.md)** | Learn how to build and publish an enterprise-grade canvas app using SQL Server as a data source. |
+| **[Use an autonomous agent in Copilot Studio for document processing](document-processing-agent.md)** | Learn how to build an autonomous agent in Copilot Studio for document processing. |

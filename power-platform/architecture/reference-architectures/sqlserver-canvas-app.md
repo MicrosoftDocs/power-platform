@@ -6,10 +6,9 @@ author: lanced
 ms.subservice: architecture-center  
 ms.topic: example-scenario  
 ms.date: 04/15/2025
-ms.author: lanced
+ms.author: mapichle
 ms.reviewer: pankajsharma2087  
 ms.contributors:  
-  - lanced
   - mapichle
 search.audienceType:  
   - admin  

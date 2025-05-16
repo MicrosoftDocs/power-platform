@@ -46,6 +46,7 @@ Understanding reference architectures and exploring solution ideas can help you 
 | [**Use Dataverse background operations**](../reference-architectures/dataverse-background-operations.md) | Use custom APIs to define custom messages and implement business logic through plug-ins, allowing for background processing that eliminates the need for a persistent connection during execution. |
 | [**Integrate Microsoft Fabric Lakehouse data using Dataverse virtual tables**](../reference-architectures/app-integrate-lakehouse.md) | Gather data from multiple internal systems into a Microsoft Fabric Lakehouse, and consume the data in Power Platform apps and automations using Dataverse virtual tables. |
 | [**Use Dataverse as a data source for canvas apps**](../reference-architectures/dataverse-canvas-app.md) | Learn how creating a Power Apps canvas app that uses Dataverse as a data source helps build a more custom user experience. |
+| **[Use an autonomous agent in Copilot Studio for document processing](../reference-architectures/document-processing-agent.md)** | Learn how to build an autonomous agent in Copilot Studio for document processing. |
 
 ## Solution ideas
 

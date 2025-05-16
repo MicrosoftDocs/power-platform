@@ -33,6 +33,12 @@ Understanding Copilot Studio architecture concepts and exploring solution ideas 
 | [**Introduction to conversational experiences**](/microsoft-copilot-studio/guidance/cux-overview)| Design ideal conversational user experiences. |
 | [**​Authentication in Copilot Studio**](../key-concepts/copilot-studio-auth.md) | Learn about different authentication methods in Copilot Studio. |
 
+## Reference architectures
+
+| Title | Description |
+| --- | --- |
+| **[Use an autonomous agent in Copilot Studio for document processing](../reference-architectures/document-processing-agent.md)** | Learn how to build an autonomous agent in Copilot Studio for document processing. |
+
 ## Solution ideas
 
 | Title | Description |
