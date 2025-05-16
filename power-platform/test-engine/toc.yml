@@ -11,8 +11,7 @@ items:
       href: authentication.md
     - name: Guide
       href: authentication-guide.md
-    - name: Security Details
-      href: authentication-security.md
+
   - name: Test your solution
     items:
     - name: Test Canvas apps
@@ -32,7 +31,8 @@ items:
     - name: Namespaces
       href: powerfx-namespaces.md
     - name: Power Fx C# functions
-      href: powerfx-csharp.md  - name: ALM
+      href: powerfx-csharp.md
+  - name: ALM
     href: alm.md
   - name: Providers
     href: providers.md
@@ -42,6 +42,8 @@ items:
     href: migration-guide.md
   - name: Reference
     items:
+    - name: Overview
+      href: reference.md
     - name: Yaml format
       href: yaml.md
     - name: Extensibility
