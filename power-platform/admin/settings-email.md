@@ -27,18 +27,18 @@ Make sure you have the System Administrator or System Customizer security role o
 #### [New admin center](#tab/new)
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. On the left navigation pane, select **Manage**.
-1. On the **Manage** panel, select **Environments**.
+1. In the left navigation pane, select **Manage**.
+1. In the **Manage** panel, select **Environments**.
 1. On the **Environments** page, choose an environment.
-1. On the command bar, select **Settings**.  
+1. In the command bar, select **Settings**.  
 1. Expand **Email**, then select **Email settings**.
 
 #### [Classic admin center](#tab/classic)
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. On the left navigation pane, select **Environments**.
+1. In the left navigation pane, select **Environments**.
 1. On the **Environments** page, choose an environment.
-1. On the command bar, select **Settings**.  
+1. In the command bar, select **Settings**.  
 1. Expand **Email**, then select **Email settings**.
 ---
 
@@ -77,7 +77,8 @@ Make sure you have the System Administrator or System Customizer security role o
 > | Enhanced email for Timeline  | The enhanced email experience allows users to compose an email without leaving the record they're working on. This setting is available with environments that have customer engagement apps in Dynamics 365, such as Dynamics 365 Sales or Dynamics 365 Customer Service.   |
 
   
-### See also  
+### See also
+
  [Track Outlook email by moving it to a tracked Exchange folder](track-outlook-email-by-moving-it-tracked-exchange-folder.md)   
  [Frequently asked questions about synchronizing records between model-driven apps in Dynamics 365 and Outlook](frequently-asked-questions-synchronizing-records-dynamics-365-and-outlook.yml)   
  [Set up email through server-side synchronization](set-up-server-side-synchronization-of-email-appointments-contacts-and-tasks.md)   
