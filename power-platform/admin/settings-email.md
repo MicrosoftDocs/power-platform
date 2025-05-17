@@ -2,12 +2,14 @@
 title: "Manage email settings  | MicrosoftDocs"
 description: View and manage email settings for Microsoft Dataverse.
 author: sericks007
+contributor: yingchin
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 09/19/2022
+ms.date: 05/16/2025
 ms.subservice: admin
 ms.custom: NewPPAC
-ms.author: sericks 
+ms.author: sericks
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -23,14 +25,16 @@ Make sure you have the System Administrator or System Customizer security role o
 
 
 #### [New admin center](#tab/new)
+
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. On the left navigation pane, select **Manage**.
-1. On the *Manage* panel, select **Environments**.
-1. On the *Environments* page, choose an environment.
+1. On the **Manage** panel, select **Environments**.
+1. On the **Environments** page, choose an environment.
 1. On the command bar, select **Settings**.  
 1. Expand **Email**, then select **Email settings**.
 
 #### [Classic admin center](#tab/classic)
+
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. On the left navigation pane, select **Environments**.
 1. On the **Environments** page, choose an environment.
