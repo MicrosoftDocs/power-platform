@@ -23,7 +23,7 @@ This guide provides step-by-step instructions for setting up authentication in T
 Test Engine supports two authentication methods:
 
 1. **StorageState** - Default, easy setup for individual development (for web-based Canvas and Model-driven app tests)
-2. **Dataverse** - Team-based approach for sharing test users and CI/CD (for web-based Canvas and Model-driven app tests)
+1. **Dataverse** - Team-based approach for sharing test users and CI/CD (for web-based Canvas and Model-driven app tests)
 
 > [!NOTE]
 > For PowerFx provider and direct Dataverse tests, authentication is handled differently. These tests obtain access tokens directly from your logged in Azure CLI session using `az` commands to get resource access tokens. Make sure you're signed in with `az login --allow-no-subscriptions` before running these types of tests.
@@ -61,11 +61,11 @@ Dataverse authentication is perfect for teams and CI/CD pipelines. It securely s
 
 ### Step 1: Download and import the Test Engine solution
 
-1. Download the Power Platform solution from [https://aka.ms/TestEngineAuth](https://aka.ms/TestEngineAuth)
-2. Sign in to [Power Platform Admin Center](https://admin.powerplatform.microsoft.com)
-3. Select your target environment
-4. Go to Solutions and select Import solution
-5. Upload and follow the import wizard to install the Test Engine solution
+1. Download the Power Platform solution from [https://aka.ms/TestEngineAuth](https://aka.ms/TestEngineAuth).
+1. Sign in to [Power Apps](https://make.powerapps.com).
+1. Select your target environment.
+1. Go to **Solutions** and select **Import solution**.
+1. Upload and follow the import wizard to install the Test Engine solution.
 
 ### Step 2: Create a certificate for encryption
 
@@ -96,19 +96,19 @@ For production, use a certificate from your enterprise certificate authority.
    az logout
    ```
 
-2. Sign in with Azure CLI (required for Dataverse authentication):
+1. Sign in with Azure CLI (required for Dataverse authentication):
 
    ```powershell
    az login --allow-no-subscriptions
    ```
 
-3. Set your certificate name as an environment variable:
+1. Set your certificate name as an environment variable:
 
    ```powershell
    $env:DataProtectionCertificateName = "CN=testengine"
    ```
 
-4. Run your test with Dataverse authentication:
+1. Run your test with Dataverse authentication:
 
    ```powershell
    pac test run `
@@ -120,7 +120,7 @@ For production, use a certificate from your enterprise certificate authority.
       --environment-id your-environment-id
    ```
 
-5. Complete the interactive sign-in when prompted
+1. Complete the interactive sign-in when prompted
 
 ## Setting Up Service Principals (For CI/CD)
 
@@ -129,39 +129,39 @@ For automated testing in CI/CD pipelines, you can use service principals instead
 ### Step 1: Create an application registration in Microsoft Entra ID
 
 1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com)
-2. Navigate to **Applications** > **App registrations**
-3. Select **New registration**
-4. Enter a name (For example "Test Engine Automation")
-5. Keep the default options and select **Register**
-6. After creation, note the **Application (client) ID** and **Directory (tenant) ID**
+1. Navigate to **Applications** > **App registrations**
+1. Select **New registration**
+1. Enter a name (For example "Test Engine Automation")
+1. Keep the default options and select **Register**
+1. After creation, note the **Application (client) ID** and **Directory (tenant) ID**
 
 ### Step 2: Configure API permissions for Dataverse
 
 1. In your application registration, go to **API permissions**
-2. Select **Add a permission**
-3. Choose **APIs my organization uses**
-4. Search for and select **Dataverse**
-5. Select **Delegated permissions**
-6. Check **user_impersonation**
-7. Select **Add permissions**
-8. Select **Grant admin consent**
+1. Select **Add a permission**
+1. Choose **APIs my organization uses**
+1. Search for and select **Dataverse**
+1. Select **Delegated permissions**
+1. Check **user_impersonation**
+1. Select **Add permissions**
+1. Select **Grant admin consent**
 
 ### Step 3: Create a client secret
 
 1. Go to **Certificates & secrets**
-2. Select **New client secret**
-3. Add a description and choose an expiration
-4. Copy the secret **Value** immediately (you won't be able to see it again)
+1. Select **New client secret**
+1. Add a description and choose an expiration
+1. Copy the secret **Value** immediately (you won't be able to see it again)
 
 ### Step 4: Add the application user to Dataverse
 
 1. Open the [Power Platform Admin Center](https://admin.powerplatform.microsoft.com)
-2. Select your environment
-3. Go to **Settings** > **Users + permissions** > **Application users**
-4. Select **+ New app user**
-5. Search for and select your application
-6. Assign appropriate business unit and security roles (include "Test Engine User" role)
-7. Save the changes
+1. Select your environment
+1. Go to **Settings** > **Users + permissions** > **Application users**
+1. Select **+ New app user**
+1. Search for and select your application
+1. Assign appropriate business unit and security roles (include "Test Engine User" role)
+1. Save the changes
 
 ### Step 5: Configure your CI/CD pipeline
 
@@ -205,8 +205,8 @@ For PowerFx provider tests and direct Dataverse tests, authentication works diff
 ### How PowerFx/Dataverse Authentication Works
 
 1. Test Engine uses Azure CLI to obtain a resource-specific access token
-2. The token is used to authenticate directly with Dataverse APIs
-3. No browser or web-based authentication is involved
+1. The token is used to authenticate directly with Dataverse APIs
+1. No browser or web-based authentication is involved
 
 ### Setting Up PowerFx/Dataverse Authentication
 
@@ -217,13 +217,13 @@ For PowerFx provider tests and direct Dataverse tests, authentication works diff
    az upgrade
    ```
 
-2. Sign in with Azure CLI:
+1. Sign in with Azure CLI:
    ```powershell
    # The --allow-no-subscriptions flag is important as you may not have Azure subscriptions
    az login --allow-no-subscriptions
    ```
 
-3. Run your test with the PowerFx provider:
+1. Run your test with the PowerFx provider:
    ```powershell
    pac test run `
       --provider powerfx `
