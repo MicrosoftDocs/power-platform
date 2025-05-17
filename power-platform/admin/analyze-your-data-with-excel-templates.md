@@ -19,9 +19,9 @@ search.audienceType:
 
 <!-- legacy procedure -->
   
- [!INCLUDE[pn_microsoft_excel](../includes/pn-microsoft-excel.md)] provides powerful ways to analyze and present your data. With [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] templates, you can easily create and share your customized analysis with others in your organization.  
+[!INCLUDE[pn_microsoft_excel](../includes/pn-microsoft-excel.md)] provides powerful ways to analyze and present your data. With [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] templates, you can easily create and share your customized analysis with others in your organization.  
   
- Use [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] templates for:  
+Use [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] templates for:  
   
 - Sales Forecasting  
   
@@ -33,17 +33,19 @@ search.audienceType:
   
 - And much more…  
   
-  You can try out the [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] templates included with customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), to get a quick view of what kind of analysis is possible.  
+You can try out the [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] templates included with customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), to get a quick view of what kind of analysis is possible.  
   
   ![Example of a pipeline analysis Excel template.](../admin/media/excel-template-example-pipeline-analysis.png "Example of a pipeline analysis Excel template")  
  
-## Create a new Excel template  
- Following are the steps for creating an [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] template.  
+## Create a new Excel template
+
+Follow the steps to create an [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] template.  
   
  ![The process to create an Excel template.](../admin/media/excel-template-create-process.png "The process to create an Excel template")  
 
-### Step 1: Create a new template from existing data  
- There are two places where you can create an [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] template:  
+### Step 1: Create a new template from existing data
+
+There are two places where you can create an [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] template:  
   
 - **From [Power Platform admin center](https://admin.powerplatform.microsoft.com/)**.
 
