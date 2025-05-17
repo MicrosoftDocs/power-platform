@@ -2,12 +2,14 @@
 title: Manage Microsoft Dataverse settings 
 description: View and manage Microsoft Dataverse settings.
 author: sericks007
+contributor: yingchin
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 09/25/2024
+ms.date: 05/16/2025
 ms.subservice: admin
 ms.custom: NewPPAC
 ms.author: sericks
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
