@@ -3,12 +3,15 @@ title: "Connect Gmail accounts using OAuth 2.0| MicrosoftDocs"
 description: "Connect Gmail accounts using OAuth 2.0 "
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 04/04/2022
+ms.date: 05/16/2025
 author: DanaMartens
 ms.subservice: admin
 ms.custom: NewPPAC
 ms.author: dmartens
 ms.reviewer: sericks
+contributors:
+- yingchin
+- EllenWehrle
 search.audienceType: 
   - admin
 ---
@@ -97,6 +100,7 @@ Follow the steps for **Create a project** in [Create, shut down, and restore pro
 1. In the command bar, click **Settings**.
 1. Expand **Email**, then select **Server profiles**.
 1. In the command bar, click **New server profile**.
+
 ---
 
 In the **Set up server profile** panel:
@@ -127,7 +131,7 @@ In the **Set up server profile** panel:
    |Incoming email    | Server-Side Synchronization or Email Router       |
    |Outgoing email | Server-Side Synchronization or Email Router   |
 
-5. Click **Save** to apply the changes.
+5. Select **Save** to apply the changes.
 
 6. Select **Signin to Gmail**.
 
@@ -135,7 +139,7 @@ In the **Set up server profile** panel:
 
 ## Step 6. Add test users
 
-In the Google Cloud Platform (Developer Console), add users in the **Test Users** section when publishing the app. More information: [Google Cloud Platform Console Help](https://support.google.com/cloud/answer/7454865)
+In the Google Cloud Platform (Developer Console), add users in the **Test Users** section when publishing the app. You can learn more about adding test users in [Google Cloud Platform Console Help](https://support.google.com/cloud/answer/7454865).
 
 > [!div class="mx-imgBorder"] 
 > ![Screenshot of adding test users.](media/gmail-oauth-add-users.png "Add test users")
