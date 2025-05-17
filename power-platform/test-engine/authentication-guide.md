@@ -1,9 +1,9 @@
 ---
 title: "Authentication Guide for Power Apps Test Engine (preview)"
-description: "User guide for authentication options in Test Engine"
+description: "Step-by-step guide for setting up authentication in Test Engine"
 author: grant-archibald-ms
 ms.author: grarchib
-ms.date: 05/15/2025
+ms.date: 05/17/2025
 ms.reviewer: jdaly
 ms.topic: article
 contributors:
@@ -16,141 +16,239 @@ contributors:
 > [!NOTE]
 > [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
 
-This article provides guidance on how to use the authentication options available in Power Apps Test Engine. For a more detailed technical overview of the authentication architecture and security implementation, see [Authentication Security Architecture](./authentication-security.md).
+This guide provides step-by-step instructions for setting up authentication in Test Engine. For a quick overview of authentication options, see [Authentication in Test Engine](./authentication.md).
 
-## Authentication Options Overview
+## Getting Started with Authentication
 
-Power Apps Test Engine offers two primary authentication methods:
+Test Engine supports two authentication methods:
 
-1. **Browser-based Authentication (Storage State)** - Uses persistent browser cookies to store authentication state
-2. **Certificate-based Encryption (Dataverse)** - Uses X.509 certificates for encrypted authentication stored in Dataverse
+1. **StorageState** - Default, easy setup for individual development (for web-based Canvas and Model-driven app tests)
+2. **Dataverse** - Team-based approach for sharing test users and CI/CD (for web-based Canvas and Model-driven app tests)
 
-Each method has its own benefits depending on your testing scenario:
+> [!NOTE]
+> For PowerFx provider and direct Dataverse tests, authentication is handled differently. These tests obtain access tokens directly from your logged in Azure CLI session using `az` commands to get resource access tokens. Make sure you're signed in with `az login --allow-no-subscriptions` before running these types of tests.
 
-| Authentication Method | Best For | Key Benefits |
-|----------------------|----------|-------------|
-| Browser-based (Default) | Interactive development, Testing with MFA | Works with conditional access policies, Simple setup |
-| Certificate-based encryption| CI/CD pipelines, Automated environments | Non-interactive execution, Enhanced security |
+## Quick Setup: StorageState Authentication
 
-## Using Browser-based Authentication
+StorageState authentication is the simplest way to get started. It uses the Windows Data Protection API to securely store authentication tokens on your local machine.
 
-Browser-based authentication is the default method and is ideal for development environments and scenarios that require MFA. It uses persistent browser cookies to maintain your authentication state.
-
-### How it works
-
-1. During the first test run, you'll be prompted to sign in interactively
-2. Your authentication state is securely saved locally (encrypted on Windows)
-3. Subsequent test runs use the saved state without requiring re-authentication
-
-### Running Tests with Browser-based Authentication
-
-To run tests using browser-based authentication, use the following command:
+### Step 1: Run your test with default authentication
 
 ```powershell
 pac test run `
    --provider canvas `
-   --test-plan-file "testplan.te.yaml" `
-   --tenant aaaabbbb-0000-cccc-1111-dddd2222eeee `
-   --environment-id 00aa00aa-bb11-cc22-dd33-44ee44ee44ee
+   --test-plan-file testplan.yaml `
+   --tenant your-tenant-id `
+   --environment-id your-environment-id
 ```
 
-This is the default behavior (`--user-auth Storagestate` is implicit), so you don't need to specify other authentication parameters.
+### Step 2: Complete the interactive sign-in
 
-### Benefits of Browser-based Authentication
+- A browser window opens automatically
+- Sign in with your test user account
+- If prompted, approve MFA and consent prompts
+- Select "Stay signed in" when prompted
 
-- Supports Multi-Factor Authentication (MFA)
-- Honors conditional access policies
-- Works with Microsoft Entra session settings
-- Allows for testing with different user personas
-- Encrypted storage of authentication state
+### Step 3: Your authentication is now saved
 
-## Using Certificate-based Encryption
+- Test Engine securely stores your authentication
+- Future test runs will use the saved state without requiring sign-in
+- Tokens refresh automatically when needed
 
-Certificate-based encryption is ideal for CI/CD pipelines and automated environments. It uses X.509 certificates for authentication and can be configured to work with Dataverse.
+## Team Setup: Dataverse Authentication
 
-### Prerequisites
+Dataverse authentication is perfect for teams and CI/CD pipelines. It securely stores authenticated user states in Dataverse, encrypted with X.509 certificates.
 
-Before using certificate-based encryption:
+### Step 1: Download and import the Test Engine solution
 
-1. Ensure you have a valid X.509 certificate
-2. Configure User Account or Service Principal to access encrypted data
-3. Set up the appropriate environment variables
+1. Download the Power Platform solution from [https://aka.ms/TestEngineAuth](https://aka.ms/TestEngineAuth)
+2. Sign in to [Power Platform Admin Center](https://admin.powerplatform.microsoft.com)
+3. Select your target environment
+4. Go to Solutions and select Import solution
+5. Upload and follow the import wizard to install the Test Engine solution
 
-### Running Tests with Certificate-based Encryption
+### Step 2: Create a certificate for encryption
 
-To run tests using certificate-based authentication, use the following command:
+For a self-signed certificate (development only), run this in PowerShell:
 
 ```powershell
-pac test run `
-   --provider canvas `
-   --user-auth Dataverse `
-   --auth Certstore `
-   --test-plan-file testplan.te.yaml `
-   --tenant aaaabbbb-0000-cccc-1111-dddd2222eeee `
-   --environment-id 00aa00aa-bb11-cc22-dd33-44ee44ee44ee
+$Params = @{
+  DnsName = @("testengine", "testengine")
+  CertStoreLocation = "Cert:\CurrentUser\My"
+  NotAfter = (Get-Date).AddMonths(6)
+  KeyAlgorithm = "RSA"
+  KeyLength = 2048
+}
+New-SelfSignedCertificate @Params
 ```
 
-### Certificate Storage Options
+For production, use a certificate from your enterprise certificate authority.
 
-You can store your certificate in one of two ways:
+### Step 3: Set up your test user
 
-1. **Certificate Store** (`--auth Certstore`):
-   - Uses the certificate from your local Windows certificate store
-   - Set the environment variable `$env:DataProtectionCertificateName` to the certificate name
+1. Open your terminal and sign out of any existing sessions:
 
    ```powershell
-   $env:DataProtectionCertificateName = "YourCertificateName"
+   # Clear Power Platform CLI credentials
+   pac auth clear
+   
+   # Clear Azure CLI credentials
+   az logout
    ```
 
-2. **Environment Variable** (`--auth Certenv`):
-   - Uses a base64-encoded certificate from an environment variable
-   - Set `$env:DataProtectionCertificateName` to the name of the environment variable containing the certificate
-   - Set the referenced environment variable to the base64-encoded certificate value
+2. Sign in with Azure CLI (required for Dataverse authentication):
 
    ```powershell
-   $env:DataProtectionCertificateName = "SampleCertificateVariableName"
-   $env:SampleCertificateVariableName = "BASE64_ENCODED_CERTIFICATE"
+   az login --allow-no-subscriptions
    ```
 
-### Benefits of Certificate-based Encryption
+3. Set your certificate name as an environment variable:
 
-- Non-interactive execution ideal for CI/CD pipelines
-- Enhanced security through certificate-based encryption of data at rest
-- Integration with Dataverse security model
-- Support for automated test environments
+   ```powershell
+   $env:DataProtectionCertificateName = "CN=testengine"
+   ```
 
-## Dataverse Encryption
+4. Run your test with Dataverse authentication:
 
-When working with Dataverse directly (for integration testing), use the `--user-auth Dataverse` option. This requires you to be logged in with Azure CLI:
+   ```powershell
+   pac test run `
+      --provider canvas `
+      --user-auth Dataverse `
+      --auth Certstore `
+      --test-plan-file testplan.yaml `
+      --tenant your-tenant-id `
+      --environment-id your-environment-id
+   ```
 
-```powershell
-az login --use-device-code --allow-no-subscriptions
+5. Complete the interactive sign-in when prompted
+
+## Setting Up Service Principals (For CI/CD)
+
+For automated testing in CI/CD pipelines, you can use service principals instead of interactive user accounts.
+
+### Step 1: Create an application registration in Microsoft Entra ID
+
+1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com)
+2. Navigate to **Applications** > **App registrations**
+3. Select **New registration**
+4. Enter a name (For example "Test Engine Automation")
+5. Keep the default options and select **Register**
+6. After creation, note the **Application (client) ID** and **Directory (tenant) ID**
+
+### Step 2: Configure API permissions for Dataverse
+
+1. In your application registration, go to **API permissions**
+2. Select **Add a permission**
+3. Choose **APIs my organization uses**
+4. Search for and select **Dataverse**
+5. Select **Delegated permissions**
+6. Check **user_impersonation**
+7. Select **Add permissions**
+8. Select **Grant admin consent**
+
+### Step 3: Create a client secret
+
+1. Go to **Certificates & secrets**
+2. Select **New client secret**
+3. Add a description and choose an expiration
+4. Copy the secret **Value** immediately (you won't be able to see it again)
+
+### Step 4: Add the application user to Dataverse
+
+1. Open the [Power Platform Admin Center](https://admin.powerplatform.microsoft.com)
+2. Select your environment
+3. Go to **Settings** > **Users + permissions** > **Application users**
+4. Select **+ New app user**
+5. Search for and select your application
+6. Assign appropriate business unit and security roles (include "Test Engine User" role)
+7. Save the changes
+
+### Step 5: Configure your CI/CD pipeline
+
+Add these variables to your pipeline:
+
+```
+AZURE_CLIENT_ID: (your application ID)
+AZURE_CLIENT_SECRET: (your client secret)
+AZURE_TENANT_ID: (your tenant ID)
+DataProtectionCertificateValue: (base64 encoded certificate)
+ENVIRONMENT_URL: (your Dataverse environment URL)
 ```
 
-For more information on Dataverse integration, see [Test Dataverse extensions](./dataverse.md).
+For Azure DevOps, securely store these in Variable Groups with appropriate permissions.
 
-## Troubleshooting Authentication Issues
+## Troubleshooting Authentication
 
-If you encounter authentication issues, you can enable detailed logging:
+### Common issues with StorageState
 
-1. Set the log level to Debug or greater
-2. Review the logs for:
-   - Selected authentication method
-   - Authentication request details
-   - Network page requests and HTTP status codes
+- **Problem**: Authentication prompt appears on every run
+  - **Solution**: Check if you selected "Stay signed in" during login
 
-Common authentication issues include:
+- **Problem**: "Cannot access secure storage" error
+  - **Solution**: Ensure you have appropriate access to your user profile folder
 
-- Expired authentication tokens
-- Missing or incorrect certificates
-- Conditional access policy restrictions
-- Dataverse permissions
-- Network connectivity problems
+### Common issues with Dataverse authentication
+
+- **Problem**: Certificate not found
+  - **Solution**: Verify that the certificate name matches exactly what's in your certificate store
+
+- **Problem**: "Unable to connect to Dataverse" error
+  - **Solution**: Check that Azure CLI is logged in with `az login --allow-no-subscriptions`
+
+- **Problem**: "Access denied" with service principal
+  - **Solution**: Verify the app has correct permissions in Dataverse and appropriate security roles
+
+## PowerFx and Direct Dataverse Test Authentication
+
+For PowerFx provider tests and direct Dataverse tests, authentication works differently than for web-based tests.
+
+### How PowerFx/Dataverse Authentication Works
+
+1. Test Engine uses Azure CLI to obtain a resource-specific access token
+2. The token is used to authenticate directly with Dataverse APIs
+3. No browser or web-based authentication is involved
+
+### Setting Up PowerFx/Dataverse Authentication
+
+1. Ensure Azure CLI is installed and up to date:
+   ```powershell
+   winget install -e --id Microsoft.AzureCLI
+   # Or update it if already installed
+   az upgrade
+   ```
+
+2. Sign in with Azure CLI:
+   ```powershell
+   # The --allow-no-subscriptions flag is important as you may not have Azure subscriptions
+   az login --allow-no-subscriptions
+   ```
+
+3. Run your test with the PowerFx provider:
+   ```powershell
+   pac test run `
+      --provider powerfx `
+      --test-plan-file testplan.yaml `
+      --tenant your-tenant-id `
+      --environment-id your-environment-id `
+      --domain "https://your-environment.crm.dynamics.com"
+   ```
+
+### Common Issues with PowerFx/Dataverse Authentication
+
+- **Problem**: "Unable to obtain access token" error
+  - **Solution**: Verify you're signed in with Azure CLI using `az account get-access-token`
+
+- **Problem**: "Access denied" to Dataverse
+  - **Solution**: Ensure your logged-in user has appropriate permissions in the Dataverse environment
+
+- **Problem**: Token expiration during long test runs
+  - **Solution**: Use a service principal with longer token expiration or handle reauthentication in test steps
 
 ## Next Steps
 
-- Learn about the [security architecture of Test Engine authentication](./authentication-security.md)
-- Explore [canvas application testing](./canvas-application.md) and [model-driven application testing](./model-driven-application.md)
-- Understand [how to test Dataverse extensions](./dataverse.md)
+- [Understand technical details](authentication-security.md) of the security architecture
+- [Test canvas applications](canvas-application.md) with your authenticated users
+- [Test model-driven applications](model-driven-application.md) with authenticated sessions
+- [Explore Dataverse testing](dataverse.md) with authenticated connections
 
 [!INCLUDE [footer-banner](../includes/footer-banner.md)]
