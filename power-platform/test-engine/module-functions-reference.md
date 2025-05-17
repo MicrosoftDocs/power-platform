@@ -10,7 +10,9 @@ ms.topic: reference
 
 # Test Engine Module Functions Reference (preview)
 
-This table provides an overview of the various modules available in the Power Apps Test Engine and their specialized functions.
+This table provides an overview of the specialized functions and the Test Engine modules that they are implemented in.
+
+various modules available in the Power Apps Test Engine and their specialized functions.
 
 | Function | Description |
 |----------|-------------|
