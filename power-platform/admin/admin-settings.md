@@ -59,15 +59,15 @@ These security settings are managed in the Power Platform admin center.
 
 Organization-wide settings can be managed via the [Power Platform Environment Settings app](environment-settings-app.md) and launched directly from the **Apps list** within the organization's environment.
 
-Alternatively, if the **Power Platform Admin Center (PPAC)** feature setting **Environment settings behavior | Advanced Settings redirection** toggle is **On**, apps using the [Unified Interface](about-unified-interface.md) can access the settings by clicking **Settings** in the top command bar and selecting **Advanced settings**. This opens the **Power Platform Environment Settings app** in a new browser tab.
+Alternatively, if the **Power Platform Admin Center (PPAC)** feature setting **Environment settings behavior | Advanced Settings redirection** toggle is **On**, apps using the [Unified Interface](about-unified-interface.md) can access the settings by selecting **Settings** in the top command bar and selecting **Advanced settings**. This opens the **Power Platform Environment Settings app** in a new browser tab.
 
 ## Settings in Unified Interface apps
-- If the PPAC feature setting **Environment settings behavior | Advanced Settings redirection** toggle is **On**, click **Settings** in the top command bar, then select **Advanced settings**. This opens the **Power Platform Environment Settings app** in a new browser tab.
-- If the PPAC feature setting **Environment settings behavior | Advanced Settings redirection** toggle is **Off**, click **Settings** in the top command bar, then select **Advanced settings**. This opens the **legacy settings** in a new browser tab.
+- If the PPAC feature setting **Environment settings behavior | Advanced Settings redirection** toggle is **On**, select **Settings** in the top command bar, then select **Advanced settings**. This opens the **Power Platform Environment Settings app** in a new browser tab.
+- If the PPAC feature setting **Environment settings behavior | Advanced Settings redirection** toggle is **Off**, select **Settings** in the top command bar, then select **Advanced settings**. This opens the **legacy settings** in a new browser tab.
 
 ## Settings in legacy web client apps
 
-To open settings for legacy web client apps, click the arrow next to the app name in the top command bar. Then, from the drop-down menu, select **Settings**. 
+To open settings for legacy web client apps, select the arrow next to the app name in the top command bar. Then, from the drop-down menu, select **Settings**. 
 
 ### See also
 [Get started with Customer Service admin center](/dynamics365/customer-service/cs-admin-center)
