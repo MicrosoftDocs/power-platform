@@ -26,13 +26,13 @@ Use the following steps to find your environment ID, organization ID, and organi
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
 1. On the **Environments** page, choose an environment.
-1. In the **Details** pane, locate the **Organization ID** and **Environment ID**.
+1. In the **Details** section, locate the **Organization ID** and **Environment ID**.
 
 #### [Classic admin center](#tab/classic)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Environments**.
 1. On the **Environments** page, choose an environment.
-1. In the **Details** pane, locate the **Organization ID** and **Environment ID**.
+1. In the **Details** section, locate the **Organization ID** and **Environment ID**.
 ---
 
 ## Find your organization name
@@ -42,20 +42,20 @@ Use the following steps to find your environment ID, organization ID, and organi
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
 1. On the **Environments** page, choose an environment.
-1. In the **Resources** pane, select **Power Apps**.
+1. In the **Resources** section, select **Power Apps**.
 1. On the **Power Apps** page, open any app.
-1. In the command bar of the opened app, select **Settings**, then click **Advanced Settings**.
-1. In the navigation pane, select **Administration**, then click **Resources in use**.
+1. In the command bar of the opened app, select **Settings**, then select **Advanced Settings**.
+1. In the navigation pane, select **Administration**, then select **Resources in use**.
 1. Locate the **Dynamics 365 Organization Name**.
 
 #### [Classic admin center](#tab/classic)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Environments**.
 1. On the **Environments** page, choose an environment.
-1. In the **Resources** pane, select **Power Apps**.
+1. In the **Resources** section, select **Power Apps**.
 1. On the **Power Apps** page, open any app.
-1. In the command bar of the opened app, select **Settings**, then click **Advanced Settings**.
-1. In the navigation pane, select **Administration**, then click **Resources in use**.
+1. In the command bar of the opened app, select **Settings**, then select **Advanced Settings**.
+1. In the navigation pane, select **Administration**, then select **Resources in use**.
 1. Locate the **Dynamics 365 Organization Name**.
 ---
 
