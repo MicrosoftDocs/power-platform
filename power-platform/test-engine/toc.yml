@@ -19,6 +19,8 @@ items:
       href: model-driven-application.md
     - name: Test Dataverse extensions
       href: dataverse.md
+    - name: Sample tests
+      href: samples.md
   - name: Power Fx
     items:
     - name: Power Fx overview
@@ -31,6 +33,8 @@ items:
       href: powerfx-namespaces.md
     - name: Power Fx C# functions
       href: powerfx-csharp.md
+  - name: AI-assisted test authoring
+    href: ai-authoring.md
   - name: ALM
     href: alm.md
   - name: Feature lifecycle

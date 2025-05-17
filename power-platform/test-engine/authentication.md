@@ -20,7 +20,11 @@ Test Engine offers straightforward authentication options to support both develo
 
 ## Authentication Made Simple
 
-Test Engine offers two easy-to-use authentication methods:
+Test Engine offers easy-to-use authentication methods depending on the type of test you're looking to create.
+
+## Web Based Provided (Canvas, MDA)
+
+For web based tests that make sue of an interactive user account to run the test.
 
 <!-- Example columns start -->
 
@@ -47,8 +51,9 @@ Test Engine offers two easy-to-use authentication methods:
 
 <!-- Example columns end -->
 
-> [!NOTE]
-> For PowerFx provider and direct Dataverse tests, authentication works differently. These tests obtain access tokens directly from your Azure CLI session using `az` commands to get resource-specific access tokens. Ensure you're signed in with `az login --allow-no-subscriptions` before running these types of tests.
+## OAuth Based Tests (Dataverse)
+
+For PowerFx provider and direct Dataverse tests, authentication works differently. These tests obtain access tokens directly from your Azure CLI session using `az` commands to get resource-specific access tokens. Ensure you're signed in with `az login --allow-no-subscriptions` before running these types of tests.
 
 ## When to Use Each Authentication Method
 

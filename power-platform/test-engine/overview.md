@@ -136,13 +136,31 @@ The approach to getting started depends on your role and experience level:
 
 ## Key Features and Benefits
 
-- **[Authentication Flexibility](authentication.md)**: Multiple authentication methods including interactive, service principal, and session persistence
-- **[Power Fx Test Authoring](powerfx.md)**: Write tests using the same formula language used in Power Apps
-- **[Dataverse Integration](dataverse.md)**: Test Dataverse-dependent functionality with built-in support
-- **Control Name References**: Reference controls by their studio names rather than complex DOM selectors
-- **Multiple Application Types**: Test [Canvas apps](canvas-application.md), [Model-driven apps](model-driven-application.md), and more with specialized providers
-- **[Connector Mocking](simulation.md)**: Simulate connector responses for reliable, isolated testing
-- **Visual Diagnostics**: Capture screenshots and videos to troubleshoot test failures
+### End-to-End Integration Testing
+- **Comprehensive Power Platform Coverage**: Test your entire solution with integrated testing for [Canvas apps](canvas-application.md), [Model-driven apps](model-driven-application.md), and [Dataverse](dataverse.md)
+- **Realistic User Journey Testing**: Validate complete business processes across multiple Power Platform components, ensuring your solutions work as expected for real users
+- **Simplified Environment Setup**: Use the same authentication context across your entire test suite, reducing setup complexity and maintenance overhead
+
+### Natural Language and AI-Powered Testing
+- **Copilot-Generated Tests**: Create tests using natural language - describe what you want to test, and let Copilot help generate the test code
+- **AI Result Validation**: Confidently test AI-powered features with specialized functions that handle non-deterministic AI outputs
+- **Human-Readable Test Plans**: Write and maintain tests that business users and developers can both understand and contribute to
+- **[AI-Assisted Test Authoring](ai-authoring.md)**: Use GitHub Copilot to accelerate test creation with source-controlled solutions
+
+### Power Fx Test Authoring
+- **Familiar Formula Language**: Write tests using the same [Power Fx language](powerfx.md) you already know from building canvas apps
+- **Low Learning Curve**: Leverage your existing Power Platform skills to create tests without learning complex testing frameworks
+- **Control Name References**: Reference app controls by their studio names rather than having to learn complex DOM selectors
+
+### Enterprise-Ready Testing Infrastructure
+- **[Authentication Flexibility](authentication.md)**: Support for interactive login, service principal, and session persistence to fit your security requirements
+- **ALM Integration**: Seamlessly integrate with Azure DevOps, GitHub Actions, and other CI/CD pipelines for automated testing
+- **MFA Support**: Run automated tests in environments that enforce Multi-Factor Authentication without compromises
+
+### Advanced Testing Capabilities
+- **[Connector Mocking](simulation.md)**: Create reliable tests by simulating connector responses, even for paid or external services
+- **Data Isolation**: Test with predictable data conditions without impacting production environments
+- **Visual Diagnostics**: Troubleshoot test failures with automatic screenshots and video recordings
 
 ## Limitations
 
@@ -166,6 +184,7 @@ The Test Engine works with the following browsers:
 - [Test Canvas applications](canvas-application.md)
 - [Test Model-driven applications](model-driven-application.md)
 - [Test Dataverse extensions](dataverse.md)
+- [Use AI-assisted test authoring](ai-authoring.md)
 - [View YAML Test Plan Format](yaml.md)
 - [Browse Power Fx Functions for Testing](powerfx-functions.md)
 - [Read Test Engine Release Notes](https://github.com/microsoft/PowerApps-TestEngine/releases)
