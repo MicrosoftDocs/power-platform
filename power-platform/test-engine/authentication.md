@@ -24,7 +24,7 @@ Test Engine offers easy-to-use authentication methods depending on the type of t
 
 ## Web Based Provided (Canvas, MDA)
 
-For web based tests that make sue of an interactive user account to run the test.
+For web based tests that make use of an interactive user account to run the test.
 
 <!-- Example columns start -->
 
