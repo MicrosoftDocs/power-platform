@@ -2,13 +2,14 @@
 title: "Create and share data analysis Excel templates"
 description: "Excel templates provide powerful ways to analyze and present your data. Learn tips for creating new templates, exporting data, and following best practices."
 author: sericks007
-
+contributor: yingchin
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 12/16/2021
+ms.date: 05/16/2025
 ms.subservice: admin
 ms.custom: NewPPAC
 ms.author: sericks
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
