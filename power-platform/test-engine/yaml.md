@@ -35,16 +35,41 @@ Used to define one test.
 
 | Property | Type | Description |
 |---|---|---|
-| `appLogicalName` | string |Required. The logical name of the app that is to be launched. It can be obtained from the solution. For canvas apps, you need to add it to a solution to obtain it |
-| `persona` | string |Required. The user that is logged in to perform the test. Must match a persona listed in the [Users](#users) section |
-| `testCases` | [TestCases](#testcases) |Required. Defines test cases in the test suite. Test cases contained in test suites are run sequentially. The app state is persisted across all test cases in a suite |
-| `testSuiteName` | string |Required. The name of the test suite |
-| `appId` | Guid |Optional. The ID of the app that is to be launched. Required and used only when app logical name isn't present. App ID should be used only for canvas apps that aren't in the solution |
-| `networkRequestMocks` | [NetworkRequestMocks](#networkrequestmocks) |Optional. Defines network request mocks needed for the test |
-| `onTestCaseComplete` | string |Optional. Defines the steps that need to be triggered for every test case in a suite after the case finishes executing |
-| `onTestCaseStart` | string |Optional. Defines the steps that need to be triggered for every test case in a suite before the case begins executing |
-| `onTestSuiteComplete` | string |Optional. Defines the steps that need to be triggered after the suite finishes executing |
-| `testSuiteDescription` | string |Optional. Additional information describes what the test suite does |
+| `persona` | string |Required. The user that is logged in to perform the test. Must match a persona listed in the [Users](#users) section.|
+| `testCases` | [TestCases](#testcases) |Required. Defines test cases in the test suite. Test cases contained in test suites are run sequentially. The app state is persisted across all test cases in a suite. |
+| `testSuiteName` | string |Required. The name of the test suite. |
+| `appLogicalName` | string |Optional. The logical name of the app that is to be launched. It can be obtained from the solution. For canvas apps, you need to add it to a solution to obtain it. See [How to identify your application in the test plan](#how-to-identify-your-application-in-the-test-plan) |
+| `appId` | Guid |Optional. The ID of the app that is to be launched. Required and used only when `appLogicalName` isn't present. App ID should be used only for canvas apps that aren't in the solution. See [How to identify your application in the test plan](#how-to-identify-your-application-in-the-test-plan)  |
+| `networkRequestMocks` | [NetworkRequestMocks](#networkrequestmocks) |Optional. Defines network request mocks needed for the test. |
+| `onTestCaseComplete` | string |Optional. Defines the steps that need to be triggered for every test case in a suite after the case finishes executing. |
+| `onTestCaseStart` | string |Optional. Defines the steps that need to be triggered for every test case in a suite before the case begins executing. |
+| `onTestSuiteComplete` | string |Optional. Defines the steps that need to be triggered after the suite finishes executing. |
+| `testSuiteDescription` | string |Optional. Additional information describes what the test suite does.|
+
+### How to identify your application in the test plan
+
+You need set either `appLogicalName` or `appId` to identify your application. Which you use depends on whether your app is defined within a solution.
+
+#### Solution-based apps (recommended)
+
+When you define your apps within solutions your tests remain portable across environments. Set the `appLogicalName` property to indicate that the app is solution based. 
+
+To locate the app's logical name:
+
+1. Open the solution containing your app in Power Apps
+1. Use the **Name** (not **Display name**) in the list. The name value will include the customization prefix for the solution publisher.
+
+
+#### Standalone apps
+
+When your app isn't defined within a solution, you need to use the `appId` property.
+
+To locate the ID of the app:
+
+1. Locate the app in the Power Apps list
+1. Open Details and note the App ID GUID
+
+
 
 ### NetworkRequestMocks
 

@@ -170,32 +170,6 @@ Test Engine supports various language and regional settings:
   1. For regions using semicolons as list separators: [Sample with semicolon separators](https://github.com/microsoft/PowerApps-TestEngine/blob/main/samples/basicgallery/testPlanForRegionUseSemicolonAsSeparator.fx.yaml)
   1. For regions using commas as decimal separators: [Sample with comma decimals](https://github.com/microsoft/PowerApps-TestEngine/blob/main/samples/calculator/testPlanWithCommaForDecimal.fx.yaml)
 
-## Working with Apps in Test Plans
-
-### Solution-Based Apps (Recommended)
-
-For apps in solutions, tests remain portable across environments:
-
-1. **Locate the app's logical name**:
-   - Open the solution containing your app in Power Apps
-   - Note the app's **Name** (not Display name) in the list
-
-1. **Reference in test plan**:
-   - Use `appLogicalName` in your test plan YAML
-   - This ensures tests work when the solution is moved to a different environment
-
-### Standalone Apps
-
-For apps not in solutions, update tests when moving environments:
-
-1. **Find the App ID**:
-   - Locate the app in the Power Apps list
-   - Open Details and note the App ID GUID
-
-1. **Update your test plan**:
-   - Use `appId` in your test plan YAML
-   - Update this value when moving to a new environment
-
 ## Next Steps
 
 - [Explore Test Engine Features](features.md)
