@@ -160,16 +160,6 @@ The Test Engine works with the following browsers:
 - Firefox
 - WebKit (Safari)
 
-## Regional and Language Considerations
-
-Test Engine supports various language and regional settings:
-
-- **Decimal Separators**: Use the `locale` property in `testSettings` to handle different decimal separators (`.` vs `,`) and list separators (`,` vs `;`). [Learn more about testSettings](yaml.md#testsettings).
-
-- **Sample Configurations**:
-  1. For regions using semicolons as list separators: [Sample with semicolon separators](https://github.com/microsoft/PowerApps-TestEngine/blob/main/samples/basicgallery/testPlanForRegionUseSemicolonAsSeparator.fx.yaml)
-  1. For regions using commas as decimal separators: [Sample with comma decimals](https://github.com/microsoft/PowerApps-TestEngine/blob/main/samples/calculator/testPlanWithCommaForDecimal.fx.yaml)
-
 ## Next Steps
 
 - [Explore Test Engine Features](features.md)
