@@ -104,6 +104,6 @@ Choose the path that's right for you:
 
 - [Authentication Guide](authentication-guide.md) - Step-by-step instructions for both authentication methods
 - [Security Details](authentication-security.md) - Technical details for security professionals
-- [Service Principal Setup](authentication-guide.md#setting-up-service-principals) - Configure non-interactive authentication for automation
+- [Service Principal Setup](authentication-guide.md#setting-up-service-principals-for-cicd) - Configure non-interactive authentication for automation
 
 [!INCLUDE [footer-banner](../includes/footer-banner.md)]

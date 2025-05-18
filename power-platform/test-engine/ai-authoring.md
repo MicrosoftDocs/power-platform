@@ -134,7 +134,7 @@ This approach helps Copilot understand the test structure and generates more acc
 
 ### Use source-controlled solutions as context
 
-Copilot performs best when it can analyze your solution structure. Use [source control for Power Platform solutions](../alm/solution-source-control.md) to provide this context. This allows Copilot to:
+Copilot performs best when it can analyze your solution structure. Use  [source control for Power Platform solutions](../alm/use-source-control-solution-files.md) to provide this context. This allows Copilot to:
 
 - Understand your app's structure
 - Identify control names and properties
@@ -153,11 +153,13 @@ While AI-generated tests provide an excellent starting point, always:
 ### Combine with manual expertise
 
 For complex test scenarios, use GitHub Copilot to:
+
 - Generate the test framework and structure
 - Create standard validation patterns
 - Suggest edge cases to consider
 
 Then augment with your domain expertise for:
+
 - Business-specific validation rules
 - Environmental considerations
 - Specialized test data
