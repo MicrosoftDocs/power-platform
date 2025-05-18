@@ -16,7 +16,7 @@ contributors:
 > [!NOTE]
 > [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
 
-Testing your canvas app with [Test Engine](./overview.md) requires the following steps:
+Testing canvas apps with [Test Engine](./overview.md) requires the following steps:
 
 1. [Create a Test Plan](#create-a-test-plan)
 1. [Set up your user](#set-up-your-user)
@@ -33,7 +33,7 @@ Create a yaml file using the test plan schema explained in [Power Apps Test Engi
 
 When choosing authoring your own test plan, you can take advantage of the following features:
 
-- **Additional Power Fx Functions**: Use the extra registered Power Fx actions to interact with Power Apps component framework (PCF) Controls and Galleries, enhancing the capabilities of your test plans.
+- **Additional Power Fx Functions**: Use the [extra registered Power Fx actions](powerfx-functions.md) to interact with Power Apps component framework (PCF) components, enhancing the capabilities of your test plans.
 - **Define Custom Data Structures and Functions**: Make use of User Defined Types (UDTs) and User Defined Functions (UDFs) to create reusable and maintainable test steps.
 
 ### Download recorded tests from Test Studio
@@ -58,10 +58,10 @@ Test Engine currently has these authentication methods:
 
 | Method | Description |
 |--------|-------------|
-| Storage State | Store authenticated user state locally in the user profile using Microsoft Windows [Data Protection API](/dotnet/standard/security/how-to-use-data-protection)
-| Dataverse | Store authenticated user state inside Dataverse using your own customer managed key encrypted with an X.509 certificate using [ASP.NET Core Data Protection](/aspnet/core/security/data-protection/introduction)
+| [Storage State](authentication.md#storagestate-authentication-quick-start) | Store authenticated user state locally in the user profile using Microsoft Windows [Data Protection API](/dotnet/standard/security/how-to-use-data-protection)
+| [Dataverse](authentication.md#edataverse-authentication-team-ready) | Store authenticated user state inside Dataverse using your own customer managed key encrypted with an X.509 certificate using [ASP.NET Core Data Protection](/aspnet/core/security/data-protection/introduction)
 
-You can't store test credentials in test plan files you must select `Storagestate` or `Dataverse` as the secure location to store credentials. The test plan file contains references to which [environment variables](/power-apps/maker/data-platform/environmentvariables) are used for user persona. For example, the following YAML snippet indicates that the `user1Email` environment variables are used:
+You can't store test credentials in test plan files. You must select `Storagestate` or `Dataverse` as the secure location to store credentials. The test plan file contains references to which [environment variables](/power-apps/maker/data-platform/environmentvariables) are used for user persona. For example, the following YAML snippet indicates that the `user1Email` environment variables are used:
 
 ```yaml
 environmentVariables:
@@ -89,9 +89,9 @@ Use the PAC CLI [pac test run](../developer/cli/reference/tests.md#pac-test-run)
 
 You'll need to provide the following information:
 
-- Path to your test plan file
-- TenantId (For example `aaaabbbb-0000-cccc-1111-dddd2222eeee`)
-- EnvironmentId (For example `00aa00aa-bb11-cc22-dd33-44ee44ee44ee`)
+- `--test-plan-file`: Path to your test plan file
+- `--tenant`: Your tenant ID
+- `--environment-id`: Your environment ID
 
 ### Example Command
 
@@ -100,9 +100,9 @@ Here's an example of running a test for a canvas application:
 ```powershell
 pac test run `
    --provider canvas `
-   --test-plan-file testplan.te.yaml `
-   --tenant aaaabbbb-0000-cccc-1111-dddd2222eeee `
-   --environment-id 00aa00aa-bb11-cc22-dd33-44ee44ee44ee
+   --test-plan-file your-testplan.te.yaml `
+   --tenant your-tenantid-guid-value `
+   --environment-id your-environmentid-guid-value
 ```
 
 You can also use the shorter parameter aliases:
@@ -110,12 +110,12 @@ You can also use the shorter parameter aliases:
 ```powershell
 pac test run `
    -p canvas `
-   -test testplan.te.yaml `
-   -t aaaabbbb-0000-cccc-1111-dddd2222eeee `
-   -env 00aa00aa-bb11-cc22-dd33-44ee44ee44ee
+   -test your-testplan.te.yaml `
+   -t your-tenantid-guid-value `
+   -env your-environmentid-guid-value
 ```
 
-## Dataverse Integration
+### Dataverse Integration
 
 To enable Dataverse integration with your canvas app tests, you can add the `enableDataverseFunctions` parameter in your test settings:
 
@@ -127,9 +127,9 @@ testSettings:
       enableDataverseFunctions: true
 ```
 
-When you enable Dataverse integration, you're required to open Azure CLI with a user or service principal that has rights to the Dataverse environment. You can use the command: `az login`  More information: [Sign in with Azure CLI](/cli/azure/authenticate-azure-cli).
+When you enable Dataverse integration, you're required to open Azure CLI with a user or service principal that has rights to the Dataverse environment. You can use the [az login](/cli/azure/reference-index#az-login) command.  More information: [Sign in with Azure CLI](/cli/azure/authenticate-azure-cli).
 
-The WebApi used for Dataverse integration is obtained either from the host domain name of the [pac test run](../developer/cli/reference/test.md#pac-test-run) `--domain` parameter or by defining an environment variable named `DATAVERSE_URL`.
+The Dataverse API URL used for integration is obtained either from the host domain name of the [pac test run](../developer/cli/reference/test.md#pac-test-run) `--domain` parameter or by defining an [PowerShell environment variable](/powershell/module/microsoft.powershell.core/about/about_environment_variables) named `DATAVERSE_URL`.
 
 ## View the results
 

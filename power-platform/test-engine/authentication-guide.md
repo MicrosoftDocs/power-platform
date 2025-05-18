@@ -111,7 +111,7 @@ Complete the following steps to set up your test user:
    az login --allow-no-subscriptions
    ```
 
-1. Set your certificate name as a PowerShell environment variable named `DataProtectionCertificateName`:
+1. Set your certificate name as a [PowerShell environment variable](/powershell/module/microsoft.powershell.core/about/about_environment_variables) named `DataProtectionCertificateName`:
 
    ```powershell
    $env:DataProtectionCertificateName = "CN=testengine"
