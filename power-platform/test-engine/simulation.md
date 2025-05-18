@@ -6,9 +6,6 @@ ms.author: grarchib
 ms.date: 05/09/2025
 ms.reviewer: jdaly
 ms.topic: article
-contributors:
- - JimDaly
- - pvillads
 ---
 
 # Dataverse and Connector Simulation with Test Engine (preview)
@@ -45,7 +42,7 @@ Preview.SimulateDataverse({
 });
 ```
 
-This function will simulate a Dataverse that queries the "Account" entity when the status is "Active" and the `CreatedOn` date is after January 1, 2023. Using this kind of simulation can help in testing how the application responds when different results are returned.
+This function will simulate a Dataverse that queries the [Account table](/power-apps/developer/data-platform/reference/entities/account) when the `Status` is **Active** and the `CreatedOn` value is after January 1, 2023. Using this kind of simulation can help in testing how the application responds when different results are returned.
 
 ### Simulating a Connector Call
 

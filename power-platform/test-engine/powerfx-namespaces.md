@@ -16,15 +16,15 @@ contributors:
 > [!NOTE]
 > [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
 
-Power Fx namespaces are a powerful feature that allows developers to organize and separate different sets of functions within the Power Fx language. By using namespaces, you can distinguish between the default functions provided by Power Fx, such as [CountRows](../power-fx/reference/function-table-counts.md), and extensions added for specific purposes, like the Test Engine with functions such as `Preview.Pause`. This separation helps in maintaining clarity and avoiding conflicts between different sets of features.
+Power Fx namespaces are a powerful feature that allows developers to organize and separate different sets of functions within the Power Fx language. By using namespaces, you can distinguish between the default functions provided by Power Fx, such as [CountRows](../power-fx/reference/function-table-counts.md), and extensions added for specific purposes, like the Test Engine with functions such as [Preview.Pause](powerfx-functions.md#previewpause). This separation helps in maintaining clarity and avoiding conflicts between different sets of features.
 
 ## Common Features vs. Specific Actions
 
-Namespaces make it clear what are common features of the Power Fx language and what are specific actions unique to certain extensions. For example, functions like [CountRows](../power-fx/reference/function-table-counts.md) are part of the core Power Fx language and are available universally. On the other hand, functions like [Preview.Pause](powerfx-functions.md#previewpause) are specific to the Test Engine and are used exclusively within the context of testing Power Apps. This distinction helps developers understand the scope and applicability of each function, ensuring that they use the right tools for the right tasks.
+Namespaces make it clear what are common features of the Power Fx language and what are specific actions unique to certain extensions. For example, functions like `CountRows` are part of the core Power Fx language and are available universally. On the other hand, functions like `Preview.Pause` are specific to the Test Engine and are used exclusively within the context of testing Power Apps. This distinction helps developers understand the scope and applicability of each function, ensuring that they use the right tools for the right tasks.
 
 ## Separating Wider Usage Actions from Preview Features
 
-Namespaces also allow developers to separate actions that have wider usage from functions that are experimental and subject to change. For instance, the Preview namespace can be used for early concepts and features that are still being tested and refined. By placing preview features in a separate namespace, developers can experiment with new ideas without affecting the stability of their main applications. This approach encourages innovation while maintaining a clear boundary between stable and experimental features.
+Namespaces also allow developers to separate actions that have wider usage from functions that are experimental and subject to change. For instance, the `Preview` namespace can be used for early concepts and features that are still being tested and refined. By placing preview features in a separate namespace, developers can experiment with new ideas without affecting the stability of their main applications. This approach encourages innovation while maintaining a clear boundary between stable and experimental features.
 
 ## Progression from Preview to TestEngine Namespace
 
@@ -47,8 +47,5 @@ testSettings:
       - Preview
 ```
 
-## Conclusion
-
-In summary, Power Fx namespaces provide a structured way to organize and separate different sets of functions within the language. They help in distinguishing between common features and specific actions, separating stable functionalities from experimental ones, and managing the progression of features from experimental to specialized contexts. By using namespaces effectively, developers can maintain clarity, avoid conflicts, and ensure the stability and reliability of their Power Apps.
 
 [!INCLUDE [footer-banner](../includes/footer-banner.md)]

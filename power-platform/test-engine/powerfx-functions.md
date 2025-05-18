@@ -6,11 +6,6 @@ ms.author: grarchib
 ms.date: 08/11/2023
 ms.reviewer: jdaly
 ms.topic: article
-contributors:
- - JimDaly
- - jt000
- - FrankDahl
- - grant-archibald-md
 ---
 
 # Power Apps Test Engine Power Fx Functions (preview)
@@ -31,7 +26,7 @@ These functions are available to use in Test engine only:
 - [Wait](#wait)
 
 
- Test engine provides these preview functions:
+ Test engine provides these [preview functions](#preview-functions):
 
 - [Preview.AIExecutePrompt](#previewaiexecuteprompt)
 - [Preview.ConsentDialog](#previewconsentdialog)
@@ -53,7 +48,8 @@ These functions are only available to be used with Test engine
 
 This function captures a screenshot of the app at the current point in time. The screenshot file is saved to the test output folder and with the name provided.
 
-> **Note:** Only jpeg and png files are supported.
+> [!NOTE]
+> Only jpeg and png files are supported.
 
 #### Screenshot Example
 
@@ -71,7 +67,7 @@ This function waits for the property of the control to equal the specified value
 ` Wait(Label1, "Text", "0")`
 
 
-## Preview Functions
+## Preview functions
 
 The following functions can optionally be included in tests when the Power Fx Preview namespace by adding it to the allowlist in the testSettings section
 
@@ -101,7 +97,7 @@ Assert("Paris" = Preview.AIExecutePrompt("Country Capital", { Country: "France" 
 
 `Preview.ConsentDialog(Table({Text: Text}));`
 
-Wait to confirm a consent dialog for a canvas application or Model Driven Application custom page
+Wait to confirm a consent dialog for a canvas application or model-driven application custom page
 
 #### Preview.ConsentDialog Example
 
@@ -116,7 +112,7 @@ Preview.ConsentDialog(Table({Text: "Your Dialog Title"}));
 Pause the test and display the [Playwright Inspector](https://playwright.dev/docs/debug#playwright-inspector) if running an interactive test
 
 > [!NOTE]
-> **Known Issue**: [Preview.Pause function doesn't properly open up the inspector for pac test run](https://github.com/microsoft/PowerApps-TestEngine/issues/622)
+> **Known Issue**: [Preview.Pause function doesn't properly open up the inspector for pac test run](https://github.com/microsoft/PowerApps-TestEngine/issues/622)  
 > **Description:** The `Preview.Pause` function fails to open the inspector during a `pac test run`.  
 > **Workaround:** The open source version of the Test Engine can be used for pause functionality.
 
@@ -221,7 +217,7 @@ public class PlaywrightScript {
 
 `Preview.SimulateConnector({name: Text, then: Record})`
 
-When a call is made from the Power Apps to a connector type found from [List of all Power Apps connectors](/connectors/connector-reference/connector-reference-powerapps-connectors)
+When a call is made from Power Apps to a connector type found from [List of all Power Apps connectors](/connectors/connector-reference/connector-reference-powerapps-connectors)
 
 #### Preview.SimulateConnector Example
 

@@ -6,9 +6,6 @@ ms.author: grarchib
 ms.date: 05/09/2025
 ms.reviewer: jdaly
 ms.topic: article
-contributors:
- - JimDaly
- - pvillads
 ---
 
 # Create a C# Power Fx Test Function (preview)
@@ -16,9 +13,9 @@ contributors:
 > [!NOTE]
 > [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
 
-Power Fx is a powerful low-code language used in Power Apps, and it can be extended using C# to create custom test functions. This article explains how to create a C# Power Fx test function, providing a seamless experience for both makers and developers.
+[Microsoft Power Fx](../power-fx/overview.md) is a powerful low-code language used in Power Apps, and it can be extended using C# to create custom test functions. This article explains how to create a C# Power Fx test function, providing a seamless experience for both makers and developers.
 
-The "no cliffs" extensibility model of Power Apps Test Engine ensures that users can extend the capabilities of the Power Apps Test Engine without hitting any barriers. This model allows developers to create custom functions using C#, which can be integrated into Power Fx to handle complex scenarios.
+The ['no cliffs' extensibility model](/power-platform/guidance/adoption/application-modernization#power-platform-extensibility-options) of Power Apps Test Engine ensures that users can extend the capabilities of the Power Apps Test Engine without hitting any barriers. This model allows developers to create custom functions using C#, which can be integrated into Power Fx to handle complex scenarios.
 
 ## Test Engine Modules
 
@@ -44,7 +41,7 @@ Power Fx helps abstract the complexity of conditionally waiting for the consent 
 
 ### Example: Handling Consent Dialog with Power Fx
 
-Here's an example of how Power Fx can be used to handle a consent dialog in a custom page:
+Here's an example of using Power Fx to handle a consent dialog in a custom page:
 
 ```powerappsfl
 Preview.ConsentDialog(Table({Text: "Center of Excellence Setup Wizard"}))
@@ -56,7 +53,7 @@ The `Table` argument allows the consent dialog wait process to exit is a label w
 
 ## Extending Power Fx Test functions using C#
 
-Sample outline code that could be used as a starting point to complete this example
+The following is a sample outline code that could be used as a starting point to complete this example:
 
 ```csharp
 // Copyright (c) Microsoft Corporation.
