@@ -134,31 +134,48 @@ The approach to getting started depends on your role and experience level:
 
 ---
 
-## Key Features and Benefits
+## Key features and benefits
 
-### End-to-End Integration Testing
+Power Apps Test Engine provides a comprehensive set of features to support robust, low-code, and professional-grade testing for Power Platform solutions. The following highlights showcase how Test Engine can help you automate, validate, and maintain quality across your Power Platform applications.
+
+### End-to-end integration testing
+
+Each of the following features are designed to help you achieve end-to-end integration testing across your Power Platform solutions:
+
 - **Comprehensive Power Platform Coverage**: Test your entire solution with integrated testing for [Canvas apps](canvas-application.md), [Model-driven apps](model-driven-application.md), and [Dataverse](dataverse.md)
 - **Realistic User Journey Testing**: Validate complete business processes across multiple Power Platform components, ensuring your solutions work as expected for real users
 - **Simplified Environment Setup**: Use the same authentication context across your entire test suite, reducing setup complexity and maintenance overhead
 
-### Natural Language and AI-Powered Testing
+### Natural language and AI-powered testing
+
+Each of the following features are designed to help you achieve Natural language and AI-powered  integration testing across your Power Platform solutions:
+
 - **Copilot-Generated Tests**: Create tests using natural language - describe what you want to test, and let Copilot help generate the test code
 - **Natural Language and Generative AI-Powered Testing**: Create test plans in natural language and convert them to executable tests using [Generative AI capabilities](ai-overview.md)
 - **AI Result Validation**: Confidently test AI-powered features with specialized functions that handle non-deterministic AI outputs
 - **Human-Readable Test Plans**: Write and maintain tests that business users and developers can both understand and contribute to
 - **[AI-Assisted Test Authoring](ai-authoring.md)**: Use GitHub Copilot to accelerate test creation with source-controlled solutions
 
-### Power Fx Test Authoring
+### Power Fx test authoring
+
+Using Power Fx as the text authoring language provides the following benefits:
+
 - **Familiar Formula Language**: Write tests using the same [Power Fx language](powerfx.md) you already know from building canvas apps
 - **Low Learning Curve**: Leverage your existing Power Platform skills to create tests without learning complex testing frameworks
 - **Control Name References**: Reference app controls by their studio names rather than having to learn complex DOM selectors
 
-### Enterprise-Ready Testing Infrastructure
+### Enterprise-ready testing infrastructure
+
+Enterprise customers require robust features to manage authentication securely. Test engine provides:
+
 - **[Authentication Flexibility](authentication.md)**: Support for interactive login, service principal, and session persistence to fit your security requirements
 - **ALM Integration**: Seamlessly integrate with Azure DevOps, GitHub Actions, and other CI/CD pipelines for automated testing
 - **MFA Support**: Run automated tests in environments that enforce Multi-Factor Authentication without compromises
 
-### Advanced Testing Capabilities
+### Advanced testing capabilities
+
+These are advanced capabilities that Test engine provides:
+
 - **[Connector Mocking](simulation.md)**: Create reliable tests by simulating connector responses, even for paid or external services
 - **Data Isolation**: Test with predictable data conditions without impacting production environments
 - **Visual Diagnostics**: Troubleshoot test failures with automatic screenshots and video recordings
@@ -171,7 +188,7 @@ As Test Engine is in preview, be aware of these current limitations:
 - Some specialized controls can require using the [Preview.PlaywrightAction function](powerfx-functions.md#previewplaywrightaction)
 - Performance testing capabilities are still in development
 
-### Supported Browsers
+### Supported browsers
 
 The Test Engine works with the following browsers:
 
@@ -179,16 +196,9 @@ The Test Engine works with the following browsers:
 - Firefox
 - WebKit (Safari)
 
-## Next Steps
+### Next Steps
 
-- [Explore Test Engine Features](features.md)
-- [Discover Generative AI capabilities in Test Engine](ai-overview.md)
-- [Test Canvas applications](canvas-application.md)
-- [Test Model-driven applications](model-driven-application.md)
-- [Test Dataverse extensions](dataverse.md)
-- [Use AI-assisted test authoring](ai-authoring.md)
-- [View YAML Test Plan Format](yaml.md)
-- [Browse Power Fx Functions for Testing](powerfx-functions.md)
-- [Read Test Engine Release Notes](https://github.com/microsoft/PowerApps-TestEngine/releases)
+[Explore Test Engine Features](features.md)
+
 
 [!INCLUDE [footer-banner](../includes/footer-banner.md)]
