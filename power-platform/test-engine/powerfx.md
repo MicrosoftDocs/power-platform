@@ -6,37 +6,32 @@ ms.author: grarchib
 ms.date: 08/11/2023
 ms.reviewer: jdaly
 ms.topic: article
-contributors:
- - JimDaly
- - jt000
- - FrankDahl
 ---
 
 # Power Apps Test Engine Power Fx (preview)
 
 > [!NOTE]
 > [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
-
-> NOTE:
+> 
 > You can make use of [Learning Playground](https://microsoft.github.io/PowerApps-TestEngine/learning/playground/) to get hands on and try the functions documented in this guide.
 
 ## What is Power Fx?
 
-[Microsoft Power Fx](../power-fx/overview.md) is a low-code general-purpose programming language based on spreadsheet-like formulas. It's a typed, declarative, and functional language, with imperative logic and state management available as needed. Its history from Excel makes it accessible to a wide range of users, from beginners to experienced developers.
+[Microsoft Power Fx](../power-fx/overview.md) is a low-code general-purpose programming language based on spreadsheet-like formulas. It's a typed, declarative, functional language, with imperative logic and state management available as needed. Its history from Excel makes it accessible to a wide range of users, from beginners to experienced developers.
 
 ### Advanced Power Fx Scenarios
 
 If you're already familiar with Power Fx, diving into advanced scenarios can significantly enhance the capabilities and efficiency of your applications. Here are some advanced scenarios and why they might be of interest:
 
-- **Creating Custom Functions** Creating custom functions allows developers to encapsulate complex logic into reusable components. This approach not only simplifies the development process but also ensures consistency and reduces the likelihood of errors. Custom functions can be tailored to specific business needs, making your test more powerful and flexible.
+- **Creating Custom Functions**: Creating custom functions allows developers to encapsulate complex logic into reusable components. This approach not only simplifies the development process but also ensures consistency and reduces the likelihood of errors. Custom functions can be tailored to specific business needs, making your test more powerful and flexible.
 
-- **Integrating with External Data Sources** Integrating Power Fx with external data sources enables your tests to interact with a wide range of data, from databases to web services. This integration can enhance the functionality of your applications by providing real-time data access and updates. It also allows for more dynamic and responsive tests that can adapt to changing data.
+- **Integrating with External Data Sources**: Integrating Power Fx with external data sources enables your tests to interact with a wide range of data, from databases to web services. This integration can enhance the functionality of your applications by providing real-time data access and updates. It also allows for more dynamic and responsive tests that can adapt to changing data.
 
-- **Optimizing Performance for Large-Scale Tests** As your tests grow in complexity and scale, performance optimization becomes important. These optimizations could include performance, such as efficient data handling and using Power Fx's built-in functions for better performance. These optimizations ensure that your tests remain responsive and efficient, even with large datasets and complex logic.
+- **Optimizing Performance for Large-Scale Tests**: As your tests grow in complexity and scale, performance optimization becomes important. These optimizations could include performance, such as efficient data handling and using Power Fx's built-in functions for better performance. These optimizations ensure that your tests remain responsive and efficient, even with large datasets and complex logic.
 
 ## Extensibility Model
 
-Test Engines Power Fx's [extensibility model](./extensibility.md) is one of its many compelling features. It allows you to extend the language with custom functions and actions, making it highly adaptable to various scenarios. Here are some key aspects of the extensibility model:
+Test Engines Power Fx's [extensibility model](./extensibility.md) is one of its many compelling features. You can extend the language with custom functions and actions, making it highly adaptable to various scenarios. Here are some key aspects of the extensibility model:
 
 - **Reuse the Skills You Already Have**: Power Fx's extensibility model allows you to use your existing skills in Power Fx and other programming languages, such as C#. Using this approach means you can bring your knowledge and experience into the Power Fx based tests, making it easier to create powerful and customized solutions.
 
@@ -109,8 +104,9 @@ testFunctions:
 ### UDF example explanation
 
 The `testFunctions` section defines two new functions:
-   - `WaitUntilVisible` takes a `control` parameter of type `Text` and waits until the specified control is visible using a DOM selector.
-   - `GetOptions` takes a `control` parameter of type `ControlName` and returns the options for the specified control using Power Fx from a Model Driven App (MDA).
+
+- `WaitUntilVisible` takes a `control` parameter of type `Text` and waits until the specified control is visible using a DOM selector.
+- `GetOptions` takes a `control` parameter of type `ControlName` and returns the options for the specified control using Power Fx from a Model Driven App (MDA).
 
 Use these functions in your test cases to perform specific actions or retrieve data. For example, you can use `WaitUntilVisible` to ensure a control is visible before interacting with it, and `GetOptions` to retrieve and validate the options available for a control.
 
