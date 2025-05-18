@@ -36,10 +36,12 @@ Before you begin, ensure you have:
 
 To maximize the effectiveness of AI-assisted test authoring, combine these tools in a structured workflow:
 
-1. Export your solution from Power Platform with source control files using [pac solution export](/power-platform/developer/cli/reference/solution#pac-solution-export)
-2. Initialize a git repository for version control (if not already done)
-3. Create a dedicated test folder in your solution repository
-4. Open the solution folder in Visual Studio Code
+1. Get your source files
+   - Clone your Power Platform environment or solution from [source control](../alm/git-integration/connecting-to-git.md) 
+   - Export and unpack your solution from Power Platform with files using [pac solution export](../developer/cli/reference/solution.md#pac-solution-export) and [pac solution unpack](../developer/cli/reference/solution.md#pac-solution-unpack)
+1. Initialize a git repository for version control (if not already done)
+1. Create a dedicated test folder in your solution repository
+1. Open the solution folder in Visual Studio Code
 
 ## Using GitHub Copilot for test creation
 
@@ -50,8 +52,8 @@ GitHub Copilot can help you generate various test components based on your sourc
 The [Test Engine samples catalog](samples.md) provides a rich source of reference material for GitHub Copilot. You can help Copilot generate higher-quality tests by:
 
 1. Including the samples.md file in your workspace
-2. Referencing specific samples in your prompts
-3. Providing links to sample GitHub repositories
+1. Referencing specific samples in your prompts
+1. Providing links to sample GitHub repositories
 
 For example, you could:
 - Open both your application code and the samples.md file in VS Code
@@ -67,8 +69,8 @@ Visual Studio Code's GitHub Copilot Chat offers an ["Agent Mode"](/training/modu
 To use Agent Mode for test generation:
 
 1. In VS Code, open GitHub Copilot Chat (Ctrl+Shift+I)
-2. Select "Agent" from the Copilot mode selector
-3. Craft a detailed prompt about the test you want to create
+1. Select "Agent" from the Copilot mode selector
+1. Craft a detailed prompt about the test you want to create
 
 #### Example prompts for test generation
 
@@ -123,9 +125,9 @@ The [samples.md](samples.md) documentation catalogs all available samples from t
 ```
 Generate a test for my Canvas app at ./SolutionPackage/src/CanvasApps/src/MyApp/Src/App.fx.yaml using the ButtonClicker sample from https://github.com/microsoft/PowerApps-TestEngine/tree/main/samples/buttonclicker. The test should:
 1. Verify that my counter button increments a value on the screen
-2. Test boundary conditions (e.g., max value)
-3. Include OnTestCaseStart and OnTestCaseComplete lifecycle hooks
-4. Generate the config.json with appropriate environment variables
+1. Test boundary conditions (e.g., max value)
+1. Include OnTestCaseStart and OnTestCaseComplete lifecycle hooks
+1. Generate the config.json with appropriate environment variables
 ```
 
 This approach helps Copilot understand the test structure and generates more accurate, contextually relevant tests based on proven examples.
@@ -267,8 +269,8 @@ Non-deterministic testing involves validating outputs that may legitimately vary
 The Test Engine provides the [`Preview.AIExecutePrompt` function](powerfx-functions.md) that enables deterministic validation of AI responses. This approach allows you to:
 
 1. Execute AI prompts within test scenarios
-2. Parse and validate the structured responses
-3. Verify that critical outputs meet expectations despite potential variations
+1. Parse and validate the structured responses
+1. Verify that critical outputs meet expectations despite potential variations
 
 #### Example: Rating evaluation with AI Builder
 
@@ -310,9 +312,9 @@ Generate a test for my AI-powered app that uses AI Builder form processing. Incl
 If GitHub Copilot generates tests that don't meet your needs:
 
 1. **Refine your prompt**: Be more specific about what you want to test
-2. **Provide examples**: Link to specific test samples that match your desired style
-3. **Break down complex tests**: Request generation of smaller, focused test components
-4. **Iterate**: Use Copilot's responses to refine your next prompt
+1. **Provide examples**: Link to specific test samples that match your desired style
+1. **Break down complex tests**: Request generation of smaller, focused test components
+1. **Iterate**: Use Copilot's responses to refine your next prompt
 
 ## Next steps
 
