@@ -11,51 +11,58 @@ contributors:
  - pvillads
 ---
 
-# Authentication Guide for Power Apps Test Engine (preview)
+# Authentication guide for Power Apps Test Engine (preview)
 
 > [!NOTE]
 > [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
 
 This guide provides step-by-step instructions for setting up authentication in Test Engine. For a quick overview of authentication options, see [Authentication in Test Engine](./authentication.md).
 
-## Getting Started with Authentication
+## Getting started with authentication
 
-Test Engine supports two authentication methods:
+Test Engine supports two authentication methods for web-based tests for canvas and model-driven applications:
 
-1. **StorageState** - Default, easy setup for individual development (for web-based Canvas and Model-driven app tests)
-1. **Dataverse** - Team-based approach for sharing test users and CI/CD (for web-based Canvas and Model-driven app tests)
+- **StorageState** - Default, easy setup for individual development (for web-based canvas and model-driven app tests)
+- **Dataverse** - Team-based approach for sharing test users and CI/CD (for web-based canvas and model-driven app tests)
 
-> [!NOTE]
-> For PowerFx provider and direct Dataverse tests, authentication is handled differently. These tests obtain access tokens directly from your logged in Azure CLI session using `az` commands to get resource access tokens. Make sure you're signed in with `az login --allow-no-subscriptions` before running these types of tests.
 
-## Quick Setup: StorageState Authentication
+Authentication is handled differently for PowerFx provider and direct Dataverse tests. These tests obtain access tokens directly from your logged in Azure CLI session using `az` commands to get resource access tokens. Make sure you're signed in with `az login --allow-no-subscriptions` before running these types of tests.
+
+## Quick setup: StorageState authentication
 
 StorageState authentication is the simplest way to get started. It uses the Windows Data Protection API to securely store authentication tokens on your local machine.
 
 ### Step 1: Run your test with default authentication
 
+Run the following PowerShell command replacing the parameters starting with `your`.
+
 ```powershell
 pac test run `
    --provider canvas `
-   --test-plan-file testplan.yaml `
+   --test-plan-file your-test-plan.yaml `
    --tenant your-tenant-id `
    --environment-id your-environment-id
 ```
 
+> [!NOTE]
+> The [pac test run](../developer/cli/reference/test.md#pac-test-run) `--user-auth` parameter isn't used in this example because the default provider is `StorageState`. You can include it if you wish.
+
 ### Step 2: Complete the interactive sign-in
 
-- A browser window opens automatically
-- Sign in with your test user account
-- If prompted, approve MFA and consent prompts
-- Select "Stay signed in" when prompted
+Enter your test user account credentials
 
-### Step 3: Your authentication is now saved
+1. A browser window opens automatically
+1. Sign in with your test user account
+1. If prompted, approve MFA and consent prompts
+1. Select "Stay signed in" when prompted
+
+Your authentication is now saved.
 
 - Test Engine securely stores your authentication
 - Future test runs will use the saved state without requiring sign-in
 - Tokens refresh automatically when needed
 
-## Team Setup: Dataverse Authentication
+## Team setup: Dataverse authentication
 
 Dataverse authentication is perfect for teams and CI/CD pipelines. It securely stores authenticated user states in Dataverse, encrypted with X.509 certificates.
 
@@ -65,7 +72,7 @@ Dataverse authentication is perfect for teams and CI/CD pipelines. It securely s
 1. Sign in to [Power Apps](https://make.powerapps.com).
 1. Select your target environment.
 1. Go to **Solutions** and select **Import solution**.
-1. Upload and follow the import wizard to install the Test Engine solution.
+1. Follow the wizard to upload and install the Test Engine solution.
 
 ### Step 2: Create a certificate for encryption
 
@@ -86,6 +93,8 @@ For production, use a certificate from your enterprise certificate authority.
 
 ### Step 3: Set up your test user
 
+Complete the following steps to set up your test user:
+
 1. Open your terminal and sign out of any existing sessions:
 
    ```powershell
@@ -102,7 +111,7 @@ For production, use a certificate from your enterprise certificate authority.
    az login --allow-no-subscriptions
    ```
 
-1. Set your certificate name as an environment variable:
+1. Set your certificate name as a PowerShell environment variable named `DataProtectionCertificateName`:
 
    ```powershell
    $env:DataProtectionCertificateName = "CN=testengine"
@@ -120,13 +129,18 @@ For production, use a certificate from your enterprise certificate authority.
       --environment-id your-environment-id
    ```
 
-1. Complete the interactive sign-in when prompted
+   > [!NOTE]
+   > Unlike [StorageState](#quick-setup-storagestate-authentication), in this case you must the `--user-auth` parameter with a value of `Dataverse`.
 
-## Setting Up Service Principals (For CI/CD)
+1. Complete the interactive sign-in when prompted.
+
+## Setting up service principals (for CI/CD)
 
 For automated testing in CI/CD pipelines, you can use service principals instead of interactive user accounts.
 
 ### Step 1: Create an application registration in Microsoft Entra ID
+
+Complete the following steps to create an application registration in Microsoft Entra ID.
 
 1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com)
 1. Navigate to **Applications** > **App registrations**
@@ -136,6 +150,8 @@ For automated testing in CI/CD pipelines, you can use service principals instead
 1. After creation, note the **Application (client) ID** and **Directory (tenant) ID**
 
 ### Step 2: Configure API permissions for Dataverse
+
+Complete the following steps to configure API permissions for Dataverse.
 
 1. In your application registration, go to **API permissions**
 1. Select **Add a permission**
@@ -148,12 +164,16 @@ For automated testing in CI/CD pipelines, you can use service principals instead
 
 ### Step 3: Create a client secret
 
+Complete the following steps to create a client secret.
+
 1. Go to **Certificates & secrets**
 1. Select **New client secret**
 1. Add a description and choose an expiration
 1. Copy the secret **Value** immediately (you won't be able to see it again)
 
 ### Step 4: Add the application user to Dataverse
+
+Complete the following steps to add the application user to Dataverse.
 
 1. Open the [Power Platform Admin Center](https://admin.powerplatform.microsoft.com)
 1. Select your environment
@@ -175,42 +195,22 @@ DataProtectionCertificateValue: (base64 encoded certificate)
 ENVIRONMENT_URL: (your Dataverse environment URL)
 ```
 
-For Azure DevOps, securely store these in Variable Groups with appropriate permissions.
+For Azure DevOps, securely store these in [Variable Groups](/azure/devops/pipelines/library/variable-groups) with appropriate permissions.
 
-## Troubleshooting Authentication
-
-### Common issues with StorageState
-
-- **Problem**: Authentication prompt appears on every run
-  - **Solution**: Check if you selected "Stay signed in" during login
-
-- **Problem**: "Cannot access secure storage" error
-  - **Solution**: Ensure you have appropriate access to your user profile folder
-
-### Common issues with Dataverse authentication
-
-- **Problem**: Certificate not found
-  - **Solution**: Verify that the certificate name matches exactly what's in your certificate store
-
-- **Problem**: "Unable to connect to Dataverse" error
-  - **Solution**: Check that Azure CLI is logged in with `az login --allow-no-subscriptions`
-
-- **Problem**: "Access denied" with service principal
-  - **Solution**: Verify the app has correct permissions in Dataverse and appropriate security roles
-
-## PowerFx and Direct Dataverse Test Authentication
+## PowerFx and direct Dataverse test authentication
 
 For PowerFx provider tests and direct Dataverse tests, authentication works differently than for web-based tests.
 
-### How PowerFx/Dataverse Authentication Works
+### How PowerFx/Dataverse authentication works
 
 1. Test Engine uses Azure CLI to obtain a resource-specific access token
 1. The token is used to authenticate directly with Dataverse APIs
 1. No browser or web-based authentication is involved
 
-### Setting Up PowerFx/Dataverse Authentication
+### Setting up PowerFx/Dataverse authentication
 
 1. Ensure Azure CLI is installed and up to date:
+1. 
    ```powershell
    winget install -e --id Microsoft.AzureCLI
    # Or update it if already installed
@@ -233,18 +233,41 @@ For PowerFx provider tests and direct Dataverse tests, authentication works diff
       --domain "https://your-environment.crm.dynamics.com"
    ```
 
-### Common Issues with PowerFx/Dataverse Authentication
+## Troubleshooting authentication
 
-- **Problem**: "Unable to obtain access token" error
+This section contains information about troubleshooting authentication with Test Engine.
+
+### Common issues with StorageState
+
+- **Problem**: Authentication prompt appears on every run.
+  - **Solution**: Check if you selected **Stay signed in** during login.
+
+- **Problem**: `Cannot access secure storage` error.
+  - **Solution**: Ensure you have appropriate access to your user profile folder.
+
+### Common issues with Dataverse authentication
+
+- **Problem**: `Certificate not found` error.
+  - **Solution**: Verify that the certificate name matches exactly what's in your certificate store.
+
+- **Problem**: `Unable to connect to Dataverse` error.
+  - **Solution**: Check that Azure CLI is logged in with `az login --allow-no-subscriptions`.
+
+- **Problem**: `Access denied` error with service principal.
+  - **Solution**: Verify the app has correct permissions in Dataverse and appropriate security roles.
+
+### Common issues with PowerFx/Dataverse authentication
+
+- **Problem**: `Unable to obtain access token` error
   - **Solution**: Verify you're signed in with Azure CLI using `az account get-access-token`
 
-- **Problem**: "Access denied" to Dataverse
+- **Problem**: `Access denied` to Dataverse
   - **Solution**: Ensure your logged-in user has appropriate permissions in the Dataverse environment
 
 - **Problem**: Token expiration during long test runs
   - **Solution**: Use a service principal with longer token expiration or handle reauthentication in test steps
 
-## Next Steps
+## Next steps
 
 - [Understand technical details](authentication-security.md) of the security architecture
 - [Test canvas applications](canvas-application.md) with your authenticated users

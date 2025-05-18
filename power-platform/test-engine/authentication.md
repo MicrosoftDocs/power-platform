@@ -22,34 +22,32 @@ Test Engine offers straightforward authentication options to support both develo
 
 Test Engine offers easy-to-use authentication methods depending on the type of test you're looking to create.
 
-## Web Based Tests (Canvas, MDA)
+## Web Based Tests (Canvas, Model-driven apps)
 
 For web based tests that make use of an interactive user account to run the test.
 
-<!-- Example columns start -->
 
 :::row:::
    :::column:::
-   **StorageState** (Default)
+**StorageState** (Default)
 
-   - Uses Windows Data Protection API for secure local storage
-   - Perfect for individual development and testing
-   - Handles MFA and conditional access automatically
-   - Interactive first-time sign-in, automated after that
-   - Used for web-based Canvas and Model-driven app tests
+- Uses Windows Data Protection API for secure local storage
+- Perfect for individual development and testing
+- Handles MFA and conditional access automatically
+- Interactive first-time sign-in, automated after that
+- Used for web-based Canvas and Model-driven app tests
    :::column-end:::
    :::column:::
-   **Dataverse**
+**Dataverse**
 
-   - Uses X.509 certificates and ASP.NET Core Data Protection
-   - Ideal for team environments and CI/CD pipelines
-   - Stores encrypted tokens in Dataverse
-   - Supports service principals for automated testing
-   - Used for web-based Canvas and Model-driven app tests
+- Uses X.509 certificates and ASP.NET Core Data Protection
+- Ideal for team environments and CI/CD pipelines
+- Stores encrypted tokens in Dataverse
+- Supports service principals for automated testing
+- Used for web-based Canvas and Model-driven app tests
    :::column-end:::
 :::row-end:::
 
-<!-- Example columns end -->
 
 ## OAuth Based Tests (Dataverse)
 
