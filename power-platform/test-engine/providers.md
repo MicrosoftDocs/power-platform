@@ -83,7 +83,7 @@ API-based providers interact directly with backend services without necessarily 
 
 The Power Fx Provider (`powerfx`) allows direct execution of Power Fx formulas, useful for Dataverse integration testing:
 
-- **Authentication**: Uses OAuth tokens obtained via Azure CLI (`az login`)
+- **Authentication**: Uses OAuth tokens obtained via Azure CLI [az login](/cli/azure/reference-index#az-login) command
 - **Technology**: Directly calls Dataverse API endpoints
 - **Key Capabilities**:
   - Performs CRUD operations on Dataverse tables

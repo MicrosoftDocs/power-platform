@@ -6,9 +6,6 @@ ms.author: grarchib
 ms.date: 05/16/2025
 ms.reviewer: jdaly
 ms.topic: article
-contributors:
- - JimDaly
- - pvillads
 ---
 
 # Test Dataverse extensions with Test Engine (preview)
@@ -16,15 +13,9 @@ contributors:
 > [!NOTE]
 > [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
 
-This article explains how to create integration tests with Dataverse. This functionality applies the Power Fx capability to connect with Dataverse tables. We cover the following points:
+This article explains how to create integration tests with Dataverse. This functionality applies the Power Fx capability to connect with Dataverse tables.
 
-- [Connecting to Dataverse](#connecting-to-dataverse)
-- [Resetting the current state](#resetting-the-current-state)
-- [Functions of interest](#functions-of-interest)
-- [Considerations](#considerations)
-- [Running Dataverse tests](#running-dataverse-tests)
-- [AI Integration](#ai-integration) (Preview)
-
+<!-- The following section is duplicated in two other articles -->
 ## Connecting to Dataverse
 
 To enable Dataverse integration, add the `enableDataverseFunctions` parameter in your test settings:
@@ -37,9 +28,9 @@ testSettings:
       enableDataverseFunctions: true
 ```
 
-When you enable Dataverse integration, you're required to open Azure CLI with a user or service principal that has rights to the Dataverse environment. You can use the command: `az login` More information: [Sign in with Azure CLI](/cli/azure/authenticate-azure-cli).
+When you enable Dataverse integration, you're required to open Azure CLI with a user or service principal that has rights to the Dataverse environment. You can use the command: [az login](/cli/azure/reference-index#az-login) More information: [Sign in with Azure CLI](/cli/azure/authenticate-azure-cli).
 
-The WebApi used for Dataverse integration is obtained either from the host domain name of the [pac test run](../developer/cli/reference/test.md#pac-test-run) `--domain` parameter or by defining an environment variable named `DATAVERSE_URL`.
+The Dataverse API URL used for integration is obtained either from the host domain name of the [pac test run](../developer/cli/reference/test.md#pac-test-run) `--domain` parameter or by defining an [PowerShell environment variable](/powershell/module/microsoft.powershell.core/about/about_environment_variables) named `DATAVERSE_URL`.
 
 ## Resetting the current state
 
@@ -77,14 +68,14 @@ Take these considerations into account as you write test steps:
 
 ## Running Dataverse tests
 
-You can use the Power Fx provider to run tests that interact with Dataverse without the need for a canvas or model-driven app interface. This is useful for testing business logic, plugins, flows, and other backend services.
+You can use the Power Fx provider (`powerfx`) to run tests that interact with Dataverse without the need for a canvas or model-driven app interface. This is useful for testing business logic, plugins, flows, and other backend services.
 
 ```powershell
 pac test run `
    --provider powerfx `
-   --test-plan-file testplan.te.yaml `
-   --tenant aaaabbbb-0000-cccc-1111-dddd2222eeee `
-   --environment-id 00aa00aa-bb11-cc22-dd33-44ee44ee44ee `
+   --test-plan-file your-testplan.te.yaml `
+   --tenant your-tenantid-guid-value `
+   --environment-id your-environmentid-guid-value `
    --domain "https://contoso.crm.dynamics.com"
 ```
 

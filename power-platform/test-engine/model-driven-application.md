@@ -99,7 +99,7 @@ pac test run `
    --environment-id your-environmentid-guid-value `
    --domain "https://contoso.crm.dynamics.com/main.aspx?appid=00001111-aaaa-2222-bbbb-3333cccc4444&pagetype=entityrecord&etn=account&id=72e0e163-df1c-ed11-9db0-000d3a991110"
 ```
-
+<!-- The following section is duplicated in two other articles -->
 ### Dataverse Integration
 
 To enable Dataverse integration with your model-driven app tests, add the `enableDataverseFunctions` parameter in your test settings:
@@ -112,9 +112,9 @@ testSettings:
       enableDataverseFunctions: true
 ```
 
-When you enable Dataverse integration, you're required to open Azure CLI with a user or service principal that has rights to the Dataverse environment. You can use the command: `az login`  More information: [Sign in with Azure CLI](/cli/azure/authenticate-azure-cli).
+When you enable Dataverse integration, you're required to open Azure CLI with a user or service principal that has rights to the Dataverse environment. You can use the command: [az login](/cli/azure/reference-index#az-login)  More information: [Sign in with Azure CLI](/cli/azure/authenticate-azure-cli).
 
-The WebApi used for Dataverse integration is obtained either from the host domain name of the [pac test run](../developer/cli/reference/test.md#pac-test-run) `--domain` parameter or by defining an environment variable named `DATAVERSE_URL`.
+The Dataverse API URL used for integration is obtained either from the host domain name of the [pac test run](../developer/cli/reference/test.md#pac-test-run) `--domain` parameter or by defining an [PowerShell environment variable](/powershell/module/microsoft.powershell.core/about/about_environment_variables) named `DATAVERSE_URL`.
 
 ## View the results
 

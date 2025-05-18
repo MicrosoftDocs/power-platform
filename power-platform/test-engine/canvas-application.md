@@ -117,7 +117,7 @@ pac test run `
    -t your-tenantid-guid-value `
    -env your-environmentid-guid-value
 ```
-
+<!-- The following section is duplicated in two other articles -->
 ### Dataverse Integration
 
 To enable Dataverse integration with your canvas app tests, you can add the `enableDataverseFunctions` parameter in your test settings:
