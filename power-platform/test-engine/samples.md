@@ -7,11 +7,6 @@ ms.author: grarchib
 ms.date: 05/17/2025
 ms.reviewer: jdaly
 ms.topic: article
-contributors:
- - JimDaly
- - jt000
- - FrankDahl
- - grant-archibald-ms
 ---
 
 # Power Apps Test Engine Samples
@@ -57,12 +52,18 @@ Most samples follow a common structure:
 These samples demonstrate several key testing capabilities:
 
 ### Basic Test Operations
+
+Basic test operations include:
+
 - Setting and getting control properties
 - Verifying control values and visibility
 - Clicking buttons and interacting with controls
 - Waiting for conditions before proceeding
 
 ### Advanced Testing Features
+
+Advanced testing feature include:
+
 - Navigation between screens and forms
 - Working with galleries and collections
 - Testing with different data types
@@ -70,7 +71,10 @@ These samples demonstrate several key testing capabilities:
 - Testing with different user contexts
 
 ### Test Lifecycle Management
-- Using OnTestCaseStart and OnTestCaseComplete hooks
+
+These are examples of test lifecycle management:
+
+- Using `OnTestCaseStart` and `OnTestCaseComplete` hooks
 - Configuration for different environments
 - Error handling and test diagnostics
 - Video recording and screenshot capabilities
@@ -91,17 +95,17 @@ For detailed instructions, refer to each sample's README.md file and the [Test E
 
 The samples provide excellent learning resources:
 
-1. **Start simple**: Begin with the Button Clicker or Basic Gallery samples for fundamental concepts
-2. **Progress gradually**: Move to more complex samples as you gain confidence
-3. **Customize tests**: Modify the samples to match your own application's requirements
-4. **Learn by example**: Use the sample code patterns as templates for your own tests
+1. **Start simple**: Begin with the [Button Clicker](https://github.com/microsoft/PowerApps-TestEngine/tree/main/samples/buttonclicker) or [Basic Gallery](https://github.com/microsoft/PowerApps-TestEngine/tree/main/samples/basicgallery) samples for fundamental concepts
+1. **Progress gradually**: Move to more complex samples as you gain confidence
+1. **Customize tests**: Modify the samples to match your own application's requirements
+1. **Learn by example**: Use the sample code patterns as templates for your own tests
 
-## Related Links
+### Related articles
 
-- [Test Engine Overview](overview.md)
-- [Power Fx Functions for Testing](powerfx-functions.md)
-- [YAML Test Format](yaml.md)
-- [Authentication Guide](authentication-guide.md)
-- [AI-assisted Test Authoring](ai-authoring.md)
+[Test Engine Overview](overview.md)  
+[Power Fx Functions for Testing](powerfx-functions.md)  
+[YAML Test Format](yaml.md)  
+[Authentication Guide](authentication-guide.md)  
+[AI-assisted Test Authoring](ai-authoring.md)  
 
 [!INCLUDE [footer-banner](../includes/footer-banner.md)]
