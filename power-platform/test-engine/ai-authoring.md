@@ -8,7 +8,7 @@ ms.reviewer: jdaly
 ms.topic: article
 ---
 
-# AI-assisted test authoring with GitHub Copilot
+# AI-assisted test authoring with GitHub Copilot (preview)
 
 > [!NOTE]
 > [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
@@ -60,7 +60,7 @@ This approach helps Copilot understand Power Platform Test Engine patterns and g
 
 ### Working with GitHub Copilot in Agent Mode
 
-Visual Studio Code's GitHub Copilot Chat offers an [Agent Mode](/training/modules/github-copilot-agent-mode/) that can help generate tests based on your solution files. This mode allows Copilot to access and understand your project context more deeply.
+Visual Studio Code's GitHub Copilot Chat offers an [Agent Mode](https://code.visualstudio.com/docs/copilot/chat/chat-agent-mode) that can help generate tests based on your solution files. This mode allows Copilot to access and understand your project context more deeply.
 
 To use Agent Mode for test generation:
 
@@ -74,7 +74,8 @@ Try using prompts like these for test generation:
 
 :::row:::
    :::column:::
-This prompt generates a comprehensive test suite for a Canvas app using the PowerApps Test Engine, modeled after the [ButtonClicker sample](https://github.com/microsoft/PowerApps-TestEngine/tree/main/samples/buttonclicker):
+**Goal:**  
+Generate a comprehensive test suite for a Canvas app using the PowerApps Test Engine, modeled after the [ButtonClicker sample](https://github.com/microsoft/PowerApps-TestEngine/tree/main/samples/buttonclicker).
    :::column-end:::
    :::column:::
 > **Prompt:**  
@@ -83,7 +84,8 @@ This prompt generates a comprehensive test suite for a Canvas app using the Powe
 :::row-end:::
 :::row:::
    :::column:::
-This prompt builds a detailed test plan for a Model-driven app to ensure core functionality and business logic are working as expected.
+**Goal:**  
+Build a detailed test plan for a Model-driven app to ensure core functionality and business logic are working as expected.
    :::column-end:::
    :::column:::
 > **Prompt:**  
@@ -92,7 +94,8 @@ This prompt builds a detailed test plan for a Model-driven app to ensure core fu
 :::row-end:::
 :::row:::
    :::column:::
-This prompt constructs a test plan for Dataverse entities to verify CRUD operations through Power Fx actions.
+**Goal:**  
+Construct a test plan for Dataverse entities to verify CRUD operations through Power Fx actions.
    :::column-end:::
    :::column:::
 > **Prompt:**  
@@ -122,7 +125,7 @@ MyAppTests/
 
 ## Best practices for AI-assisted test authoring
 
-To get the most out of GitHub Copilot for Test Engine test creation:
+Consider the following sections to get the most out of GitHub Copilot for Test Engine test creation.
 
 ### Provide clear context in your prompts
 
@@ -191,7 +194,8 @@ For canvas apps, use prompts that reference the `App.fx.yaml` file in your sourc
 > **Prompt:**  
 > *Generate a test for my Canvas app at ./SolutionPackage/src/CanvasApps/src/MyExpenseApp/Src/App.fx.yaml that validates the expense submission process. The test should populate expense fields, submit the form, and verify the confirmation message appears.*
 
-[Learn more about Canvas app testing](canvas-application.md)
+> [!div class="nextstepaction"]
+> [Learn more about Canvas app testing](canvas-application.md)
 
 ### Testing Model-Driven Apps
 
@@ -200,7 +204,8 @@ For model-driven apps, focus on entity navigation, form interactions, and busine
 > **Prompt:**  
 > *Create a test for my Model-driven app that tests the Account entity form. The test should create a new account record, validate required fields, and verify that business rules for credit limit calculation are working correctly.*
 
-[Learn more about Model-driven app testing](model-driven-application.md)
+> [!div class="nextstepaction"]
+> [Learn more about Model-driven app testing](model-driven-application.md)
 
 ### Testing Dataverse Extensions
 
@@ -209,7 +214,8 @@ For Dataverse tests, emphasize data operations and business logic validation:
 > **Prompt:**  
 > *Generate a Dataverse test that validates the custom plugins in my solution. The test should create test records, trigger the plugin execution, and verify the expected data transformations occurred.*
 
-[Learn more about Dataverse testing](dataverse.md)
+> [!div class="nextstepaction"]
+> [Learn more about Dataverse testing](dataverse.md)
 
 ## Sample-specific test prompts
 
@@ -248,7 +254,7 @@ For testing AI-powered functionality, reference the [AI Prompt sample](https://g
 
 ## Advanced techniques
 
-This section provides advanced prompts.
+This section provides examples of advanced prompt capabilities.
 
 ### Creating multi-environment test suites
 
@@ -335,5 +341,6 @@ If GitHub Copilot generates tests that don't meet your needs:
 [Learn about Power Fx test functions](powerfx-functions.md)  
 [Understand the YAML test format](yaml.md)  
 [Explore authentication options](authentication.md)  
+[Training: Building applications with GitHub Copilot agent mode](/training/modules/github-copilot-agent-mode)
 
 [!INCLUDE [footer-banner](../includes/footer-banner.md)]
