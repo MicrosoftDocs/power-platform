@@ -1,5 +1,5 @@
 ---
-title: "Authentication Security Architecture in Test Engine (preview)"
+title: "Authentication security architecture in Test Engine (preview)"
 description: "Technical overview of authentication security implementation in Test Engine"
 author: grant-archibald-ms
 ms.author: grarchib
@@ -11,7 +11,7 @@ contributors:
  - pvillads
 ---
 
-# Authentication Security Architecture in Test Engine (preview)
+# Authentication security architecture in Test Engine (preview)
 
 > [!NOTE]
 > [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]

@@ -210,7 +210,7 @@ For PowerFx provider tests and direct Dataverse tests, authentication works diff
 ### Setting up PowerFx/Dataverse authentication
 
 1. Ensure Azure CLI is installed and up to date:
-1. 
+   
    ```powershell
    winget install -e --id Microsoft.AzureCLI
    # Or update it if already installed
@@ -218,12 +218,14 @@ For PowerFx provider tests and direct Dataverse tests, authentication works diff
    ```
 
 1. Sign in with Azure CLI:
+   
    ```powershell
    # The --allow-no-subscriptions flag is important as you may not have Azure subscriptions
    az login --allow-no-subscriptions
    ```
 
 1. Run your test with the PowerFx provider:
+   
    ```powershell
    pac test run `
       --provider powerfx `
@@ -269,9 +271,9 @@ This section contains information about troubleshooting authentication with Test
 
 ### Related articles
 
-[Understand technical details of the security architecture](authentication-security.md)  
-[Test canvas applications with your authenticated users](canvas-application.md)  
-[Test model-driven applications with authenticated sessions](model-driven-application.md)  
-[Explore Dataverse testing with authenticated connections](dataverse.md)  
+[Authentication security architecture](authentication-security.md)  
+[Test canvas applications](canvas-application.md)  
+[Test model-driven applications](model-driven-application.md)  
+[Test Dataverse extensions](dataverse.md)  
 
 [!INCLUDE [footer-banner](../includes/footer-banner.md)]

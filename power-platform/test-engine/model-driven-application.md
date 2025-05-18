@@ -1,6 +1,6 @@
 ---
-title: "Test Model Driven Applications with Test Engine (preview)"
-description: "Describes testing a Power Apps Model Driven application"
+title: "Test model-driven applications with Test Engine (preview)"
+description: "Explains how to test a Power Apps Model Driven application using Test Engine."
 author: grant-archibald-ms
 ms.author: grarchib
 ms.date: 05/16/2025
@@ -11,7 +11,7 @@ contributors:
  - pvillads
 ---
 
-# Test Model Driven Applications with Test Engine (preview)
+# Test model-driven applications with Test Engine (preview)
 
 > [!NOTE]
 > [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]

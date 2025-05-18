@@ -138,10 +138,10 @@ Be specific about what you want to test and include references to:
 The [samples.md](samples.md) documentation catalogs all available samples from the Test Engine repository, which can be an excellent reference when crafting prompts for GitHub Copilot. For example, when testing a canvas app with buttons, you might reference the [Button Clicker sample](https://github.com/microsoft/PowerApps-TestEngine/tree/main/samples/buttonclicker):
 
 > **Prompt:**  
-> *Generate a test for my Canvas app at ./SolutionPackage/src/CanvasApps/src/MyApp/Src/App.fx.yaml using the ButtonClicker sample from https://github.com/microsoft/PowerApps-TestEngine/tree/main/samples/buttonclicker. The test should:*
-> *1. Verify that my counter button increments a value on the screen*
-> *2. Test boundary conditions (e.g., max value)*
-> *3. Include OnTestCaseStart and OnTestCaseComplete lifecycle hooks*
+> *Generate a test for my Canvas app at ./SolutionPackage/src/CanvasApps/src/MyApp/Src/App.fx.yaml using the ButtonClicker sample from https://github.com/microsoft/PowerApps-TestEngine/tree/main/samples/buttonclicker. The test should:*  
+> *1. Verify that my counter button increments a value on the screen*  
+> *2. Test boundary conditions (e.g., max value)*  
+> *3. Include OnTestCaseStart and OnTestCaseComplete lifecycle hooks*  
 > *4. Generate the config.json with appropriate environment variables*
 
 
