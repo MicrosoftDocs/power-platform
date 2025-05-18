@@ -18,14 +18,17 @@ contributors:
 
 Testing your model-driven application with [Test Engine](./overview.md) requires the following steps:
 
-1. [Create a Test Plan](#create-a-test-plan)
+1. [Create a test plan](#create-a-test-plan)
 1. [Set up your user](#set-up-your-user)
 1. [Run the test](#run-the-test)
 1. [View the results](#view-the-results)
 
-## Create a Test Plan
+## Create a test plan
 
 Create a yaml file using the test plan schema explained in [Power Apps Test Engine YAML format (preview)](yaml.md).
+
+> [!TIP]
+> Review [available sample](samples.md#available-samples) plans in the GitHub repository.
 
 ## Set up your user
 
@@ -33,8 +36,8 @@ Test Engine currently has these authentication methods:
 
 | Method | Description |
 |--------|-------------|
-| Storage State | Store authenticated user state locally in the user profile using Microsoft Windows [Data Protection API](/dotnet/standard/security/how-to-use-data-protection)
-| Dataverse | Store authenticated user state inside Dataverse using your own customer managed key encrypted with an X.509 certificate using [ASP.NET Core Data Protection](/aspnet/core/security/data-protection/introduction)
+| [Storage State](authentication.md#storagestate-authentication-quick-start) | Store authenticated user state locally in the user profile using Microsoft Windows [Data Protection API](/dotnet/standard/security/how-to-use-data-protection)
+| [Dataverse](authentication.md#dataverse-authentication-team-ready) | Store authenticated user state inside Dataverse using your own customer managed key encrypted with an X.509 certificate using [ASP.NET Core Data Protection](/aspnet/core/security/data-protection/introduction)
 
 You can't store test credentials in test plan files. You must select `Storagestate` or `Dataverse` as the secure location to store credentials. The test plan file contains references to which environment variables are used for user persona. For example, the following YAML snippet indicates that the `user1Email` environment variables are used:
 
@@ -47,7 +50,7 @@ environmentVariables:
 
 View [Users](yaml.md#users) for more information.
 
-Use the following PowerShell script to store the username in your environment variables.
+Use the following PowerShell script to store the username in your [environment variables](/powershell/module/microsoft.powershell.core/about/about_environment_variables#use-the-variable-syntax).
 
 
 ```powershell
@@ -62,10 +65,10 @@ Use the PAC CLI [pac test run](../developer/cli/reference/test.md#pac-test-run) 
 
 You need to provide the following information:
 
-- Path to your test plan file
-- Tenant ID (For example `aaaabbbb-0000-cccc-1111-dddd2222eeee`)
-- Environment ID (For example `00aa00aa-bb11-cc22-dd33-44ee44ee44ee`)
-- Domain URL of the model-driven app page to test
+- `--test-plan-file`: Path to your test plan file
+- `--tenant`: Your tenant ID
+- `--environment-id`: Your environment ID
+- `--domain`: Domain URL of the model-driven app page to test
 
 ### URL Formats for Model-Driven Apps
 
@@ -75,32 +78,29 @@ For model-driven apps, the `--domain` parameter varies based on the type of page
 # For custom pages
 pac test run `
    --provider mda `
-   --test-plan-file testplan.te.yaml `
-   --tenant aaaabbbb-0000-cccc-1111-dddd2222eeee `
-   --environment-id 00aa00aa-bb11-cc22-dd33-44ee44ee44ee `
+   --test-plan-file your-testplan.te.yaml `
+   --tenant your-tenantid-guid-value `
+   --environment-id your-environmentid-guid-value `
    --domain "https://contoso.crm.dynamics.com/main.aspx?appid=00001111-aaaa-2222-bbbb-3333cccc4444&pagetype=custom&name=dev_home_c8017"
 
 # For entity lists (views)
 pac test run `
    --provider mda `
-   --test-plan-file testplan.te.yaml `
-   --tenant aaaabbbb-0000-cccc-1111-dddd2222eeee `
-   --environment-id 00aa00aa-bb11-cc22-dd33-44ee44ee44ee `
+   --test-plan-file your-testplan.te.yaml `
+   --tenant your-tenantid-guid-value `
+   --environment-id your-environmentid-guid-value `
    --domain "https://contoso.crm.dynamics.com/main.aspx?appid=00001111-aaaa-2222-bbbb-3333cccc4444&pagetype=entitylist&etn=account&viewid=5a84c584-df1c-ed11-9db0-000d3a991110"
 
 # For entity records (forms)
 pac test run `
    --provider mda `
-   --test-plan-file testplan.te.yaml `
-   --tenant aaaabbbb-0000-cccc-1111-dddd2222eeee `
-   --environment-id 00aa00aa-bb11-cc22-dd33-44ee44ee44ee `
+   --test-plan-file your-testplan.te.yaml `
+   --tenant your-tenantid-guid-value `
+   --environment-id your-environmentid-guid-value `
    --domain "https://contoso.crm.dynamics.com/main.aspx?appid=00001111-aaaa-2222-bbbb-3333cccc4444&pagetype=entityrecord&etn=account&id=72e0e163-df1c-ed11-9db0-000d3a991110"
 ```
 
-> [!TIP]
-> For more examples of URL formats and test automation with Model-Driven Apps, see the [PowerApps-TestEngine sample scripts](https://github.com/microsoft/PowerApps-TestEngine/blob/main/samples/copilotstudiokit/RunTests.ps1).
-
-## Dataverse Integration
+### Dataverse Integration
 
 To enable Dataverse integration with your model-driven app tests, add the `enableDataverseFunctions` parameter in your test settings:
 

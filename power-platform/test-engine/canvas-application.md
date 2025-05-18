@@ -18,12 +18,12 @@ contributors:
 
 Testing canvas apps with [Test Engine](./overview.md) requires the following steps:
 
-1. [Create a Test Plan](#create-a-test-plan)
+1. [Create a test plan](#create-a-test-plan)
 1. [Set up your user](#set-up-your-user)
 1. [Run the test](#run-the-test)
 1. [View the results](#view-the-results)
 
-## Create a Test Plan
+## Create a test plan
 
 Test plans are defined using [YAML](https://yaml.org/spec/1.2.2/) format. You can [author your own test plan](#author-your-own-test-plan) or [download recorded tests from Test Studio](#download-recorded-tests-from-test-studio).
 
@@ -35,6 +35,9 @@ When choosing authoring your own test plan, you can take advantage of the follow
 
 - **Additional Power Fx Functions**: Use the [extra registered Power Fx actions](powerfx-functions.md) to interact with Power Apps component framework (PCF) components, enhancing the capabilities of your test plans.
 - **Define Custom Data Structures and Functions**: Make use of User Defined Types (UDTs) and User Defined Functions (UDFs) to create reusable and maintainable test steps.
+
+> [!TIP]
+> Review [available sample](samples.md#available-samples) plans in the GitHub repository.
 
 ### Download recorded tests from Test Studio
 
@@ -59,7 +62,7 @@ Test Engine currently has these authentication methods:
 | Method | Description |
 |--------|-------------|
 | [Storage State](authentication.md#storagestate-authentication-quick-start) | Store authenticated user state locally in the user profile using Microsoft Windows [Data Protection API](/dotnet/standard/security/how-to-use-data-protection)
-| [Dataverse](authentication.md#edataverse-authentication-team-ready) | Store authenticated user state inside Dataverse using your own customer managed key encrypted with an X.509 certificate using [ASP.NET Core Data Protection](/aspnet/core/security/data-protection/introduction)
+| [Dataverse](authentication.md#dataverse-authentication-team-ready) | Store authenticated user state inside Dataverse using your own customer managed key encrypted with an X.509 certificate using [ASP.NET Core Data Protection](/aspnet/core/security/data-protection/introduction)
 
 You can't store test credentials in test plan files. You must select `Storagestate` or `Dataverse` as the secure location to store credentials. The test plan file contains references to which [environment variables](/power-apps/maker/data-platform/environmentvariables) are used for user persona. For example, the following YAML snippet indicates that the `user1Email` environment variables are used:
 
