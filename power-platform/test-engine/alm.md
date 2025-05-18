@@ -57,6 +57,8 @@ If you're using the source code version of Test Engine, you'll also need:
 
 - [.NET 8.0 SDK](/dotnet/core/install/) - If you plan to build Test Engine from source
 - [Git](/devops/develop/git/install-and-set-up-git) - To pull changes from [Power Apps Test Engine repository](https://github.com/microsoft/PowerApps-TestEngine)
+- Complete the source code [Setup Steps](https://github.com/microsoft/PowerApps-TestEngine/blob/main/README.md) to run tests using the local compiled version of Test Engine
+
 </details>
 
 ## Integration Options
