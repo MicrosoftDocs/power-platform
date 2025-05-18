@@ -143,6 +143,7 @@ The approach to getting started depends on your role and experience level:
 
 ### Natural Language and AI-Powered Testing
 - **Copilot-Generated Tests**: Create tests using natural language - describe what you want to test, and let Copilot help generate the test code
+- **Natural Language and Generative AI-Powered Testing**: Create test plans in natural language and convert them to executable tests using [Generative AI capabilities](ai-overview.md)
 - **AI Result Validation**: Confidently test AI-powered features with specialized functions that handle non-deterministic AI outputs
 - **Human-Readable Test Plans**: Write and maintain tests that business users and developers can both understand and contribute to
 - **[AI-Assisted Test Authoring](ai-authoring.md)**: Use GitHub Copilot to accelerate test creation with source-controlled solutions
@@ -181,6 +182,7 @@ The Test Engine works with the following browsers:
 ## Next Steps
 
 - [Explore Test Engine Features](features.md)
+- [Discover Generative AI capabilities in Test Engine](ai-overview.md)
 - [Test Canvas applications](canvas-application.md)
 - [Test Model-driven applications](model-driven-application.md)
 - [Test Dataverse extensions](dataverse.md)

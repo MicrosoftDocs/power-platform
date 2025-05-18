@@ -30,6 +30,8 @@ landingContent:
             url: features.md
       - linkListType: concept
         links:
+          - text: Generative AI overview
+            url: ai-overview.md
           - text: Test Engine Authentication
             url: authentication.md
       - linkListType: how-to-guide
@@ -77,4 +79,3 @@ landingContent:
           - text: Power Fx C# functions
             url: powerfx-csharp.md
           
-

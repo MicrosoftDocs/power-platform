@@ -3,7 +3,7 @@ title: AI-assisted test authoring with GitHub Copilot (preview)
 description: Learn how to use GitHub Copilot and AI tools to author tests for Power Platform applications
 author: grant-archibald-ms
 ms.author: grarchib
-ms.date: 05/17/2025
+ms.date: 05/19/2025
 ms.reviewer: jdaly
 ms.topic: article
 contributors:
@@ -64,7 +64,7 @@ This approach helps Copilot understand Power Platform Test Engine patterns and g
 
 ### Working with GitHub Copilot in Agent Mode
 
-Visual Studio Code's GitHub Copilot Chat offers an ["Agent Mode"](/training/modules/github-copilot-agent-mode/) that can help generate tests based on your solution files. This mode allows Copilot to access and understand your project context more deeply.
+Visual Studio Code's GitHub Copilot Chat offers an [Agent Mode](/training/modules/github-copilot-agent-mode/) that can help generate tests based on your solution files. This mode allows Copilot to access and understand your project context more deeply.
 
 To use Agent Mode for test generation:
 
