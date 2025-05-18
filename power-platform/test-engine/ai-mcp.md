@@ -22,7 +22,7 @@ Power Apps Test Engine includes a Model Context Protocol (MCP) server implementa
 
 ## What is the Model Context Protocol?
 
-The [Model Context Protocol (MCP)](https://aka.ms/TestEngineMCP) is a standard for communication between AI tools and development environments. It enables:
+The Model Context Protocol (MCP) is a standard for communication between AI tools to provide context and actions. In the context of Test Engine it can enable:
 
 - **Deterministic analysis**: Scanning and analyzing application structure
 - **Contextual awareness**: Understanding code relationships and dependencies
@@ -46,7 +46,7 @@ The Test Engine MCP server combines deterministic application scanning with gene
    - Form layouts and business rules
    - Custom code components
 
-2. **Analysis phase**: Processes the scan results to determine:
+2. **Analysis phase**: Processes the scan results to determine refined prompts that help identify:
    - Testable components and properties
    - Potential test scenarios
    - Coverage opportunities
@@ -61,7 +61,7 @@ The Test Engine MCP server combines deterministic application scanning with gene
    - Track test coverage against plan items
    - Generate reports on test coverage
 
-4. **Recommendation phase**: Generates contextually relevant:
+4. **Recommendation phase**: Generates contextually relevant prompts to assist with:
    - Test templates and structures
    - Power Fx assertions
    - Navigation sequences
@@ -72,12 +72,11 @@ The Test Engine MCP server combines deterministic application scanning with gene
 5. **Integration phase**: Communicates with MCP clients through stdio to:
    - Respond to user prompts
    - Provide context-aware suggestions
-   - Generate complete test cases
-   - Deliver structured test plans
+   - Recommended prompts to assist with generation of complete test cases
 
 ## Benefits of using the MCP approach
 
-The Model Context Protocol server offers several advantages over pure generative approaches:
+The Model Context Protocol server offers several advantages over pure generative approaches that can be configured to improve:
 
 | Benefit | Description |
 |---------|-------------|
@@ -86,7 +85,7 @@ The Model Context Protocol server offers several advantages over pure generative
 | **Context awareness** | The MCP server understands your application's structure and can generate more relevant tests |
 | **Integration with Plan Designer** | Allows tests to be organized according to business requirements and plan items |
 | **Solution metadata utilization** | Uses your solution's entity definitions, relationships, and business rules |
-| **Test data generation** | Creates appropriate test data based on your solution's data model |
+| **Test data generation** | Creates suggestions to build appropriate test data based on your solution's data model |
 | **Complementary to LLMs** | Works with large language models to enhance their generation capabilities |
 | **Standardized approach** | Follows the MCP specification for consistent interaction with various clients |
 
@@ -113,7 +112,7 @@ Plan Designer provides a structured approach to organizing and prioritizing your
 
 1. **Test plan creation**: Define test plans with specific objectives and success criteria
 2. **Requirement mapping**: Link tests to business requirements and solution components
-3. **Test prioritization**: Identify critical paths and high-risk areas for focused testing
+3. **Test priority**: Identify critical paths and high-risk areas for focused testing as you implement your solution
 4. **Coverage analysis**: Track test coverage against plan items and solution components
 5. **Test data definition**: Specify test data requirements for each test scenario
 
@@ -129,7 +128,7 @@ The MCP server uses Plan Designer information to:
 
 ### Getting Started
 
-Review the [Test Engine MCP](https://aks.ms/TestEngineMCP) on information the MCP Server and getting started
+Review the [Test Engine MCP](https://aks.ms/TestEngineMCP) for information the MCP Server and getting started.
 
 ## Combining deterministic analysis with generative AI
 
@@ -141,7 +140,7 @@ The real power of the Test Engine MCP server lies in combining deterministic ana
 
 This hybrid approach helps overcome the limitations of both:
 - Pure deterministic approaches can lack coverage of creative test scenarios
-- Pure generative approaches may reference nonexistent controls or incorrect properties
+- Pure generative approaches can reference nonexistent controls or incorrect properties
 - Review process to refine and improve the generated results
 
 ## Best practices
