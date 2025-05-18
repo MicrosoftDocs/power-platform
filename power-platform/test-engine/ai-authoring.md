@@ -77,7 +77,8 @@ Try using prompts like these for test generation:
 This prompt generates a comprehensive test suite for a Canvas app using the PowerApps Test Engine, modeled after the [ButtonClicker sample](https://github.com/microsoft/PowerApps-TestEngine/tree/main/samples/buttonclicker):
    :::column-end:::
    :::column:::
-> Generate a test for ./SolutionPackage/src/CanvasApps/src/MyApp/Src/App.fx.yaml using the sample at https://github.com/microsoft/PowerApps-TestEngine/tree/main/samples/ButtonClicker as reference. Create expected cases, edge cases, and exception cases. The test should create a test YAML file and Power Fx test steps, config.json, and RunTest.ps1 based on the sample to enable me to run the test.
+> **Prompt:**
+> *Generate a test for ./SolutionPackage/src/CanvasApps/src/MyApp/Src/App.fx.yaml using the sample at https://github.com/microsoft/PowerApps-TestEngine/tree/main/samples/ButtonClicker as reference. Create expected cases, edge cases, and exception cases. The test should create a test YAML file and Power Fx test steps, config.json, and RunTest.ps1 based on the sample to enable me to run the test.*
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -85,7 +86,8 @@ This prompt generates a comprehensive test suite for a Canvas app using the Powe
 This prompt builds a detailed test plan for a Model-driven app to ensure core functionality and business logic are working as expected.
    :::column-end:::
    :::column:::
-> Create a comprehensive test plan for my Model-driven app located at ./SolutionPackage/src/Other/Solution.xml. The test should validate form load, record creation, and business rule execution. Generate the test YAML, Power Fx steps, and a PowerShell script to run the test.
+> **Prompt:**
+> *Create a comprehensive test plan for my Model-driven app located at ./SolutionPackage/src/Other/Solution.xml. The test should validate form load, record creation, and business rule execution. Generate the test YAML, Power Fx steps, and a PowerShell script to run the test.*
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -93,7 +95,8 @@ This prompt builds a detailed test plan for a Model-driven app to ensure core fu
 This prompt constructs a test plan for Dataverse entities to verify CRUD operations through Power Fx actions.
    :::column-end:::
    :::column:::
-> Create a comprehensive test plan for my Dataverse entites. The test should perform create, update, delete Power Fx actions. Generate the test YAML, Power Fx steps, and a PowerShell script to run the test.
+> **Prompt:**
+> *Create a comprehensive test plan for my Dataverse entites. The test should perform create, update, delete Power Fx actions. Generate the test YAML, Power Fx steps, and a PowerShell script to run the test.*
    :::column-end:::
 :::row-end:::
 
@@ -134,12 +137,12 @@ Be specific about what you want to test and include references to:
 
 The [samples.md](samples.md) documentation catalogs all available samples from the Test Engine repository, which can be an excellent reference when crafting prompts for GitHub Copilot. For example, when testing a canvas app with buttons, you might reference the [Button Clicker sample](https://github.com/microsoft/PowerApps-TestEngine/tree/main/samples/buttonclicker):
 
-
-> Generate a test for my Canvas app at ./SolutionPackage/src/CanvasApps/src/MyApp/Src/App.fx.yaml using the ButtonClicker sample from https://github.com/microsoft/PowerApps-TestEngine/tree/main/samples/buttonclicker. The test should:
-> 1. Verify that my counter button increments a value on the screen
-> 2. Test boundary conditions (e.g., max value)
-> 3. Include OnTestCaseStart and OnTestCaseComplete lifecycle hooks
-> 4. Generate the config.json with appropriate environment variables
+> **Prompt:**
+> *Generate a test for my Canvas app at ./SolutionPackage/src/CanvasApps/src/MyApp/Src/App.fx.yaml using the ButtonClicker sample from https://github.com/microsoft/PowerApps-TestEngine/tree/main/samples/buttonclicker. The test should:*
+> *1. Verify that my counter button increments a value on the screen*
+> *2. Test boundary conditions (e.g., max value)*
+> *3. Include OnTestCaseStart and OnTestCaseComplete lifecycle hooks*
+> *4. Generate the config.json with appropriate environment variables*
 
 
 This approach helps Copilot understand the test structure and generates more accurate, contextually relevant tests based on proven examples.
@@ -184,7 +187,9 @@ This section contains some common test generation patterns:
 
 For canvas apps, use prompts that reference the `App.fx.yaml` file in your source-controlled solution:
 
-> Generate a test for my Canvas app at ./SolutionPackage/src/CanvasApps/src/MyExpenseApp/Src/App.fx.yaml that validates the expense submission process. The test should populate expense fields, submit the form, and verify the confirmation message appears.
+
+> **Prompt:**
+> *Generate a test for my Canvas app at ./SolutionPackage/src/CanvasApps/src/MyExpenseApp/Src/App.fx.yaml that validates the expense submission process. The test should populate expense fields, submit the form, and verify the confirmation message appears.*
 
 [Learn more about Canvas app testing](canvas-application.md)
 
@@ -192,7 +197,8 @@ For canvas apps, use prompts that reference the `App.fx.yaml` file in your sourc
 
 For model-driven apps, focus on entity navigation, form interactions, and business rules:
 
-> Create a test for my Model-driven app that tests the Account entity form. The test should create a new account record, validate required fields, and verify that business rules for credit limit calculation are working correctly.
+> **Prompt:**
+> *Create a test for my Model-driven app that tests the Account entity form. The test should create a new account record, validate required fields, and verify that business rules for credit limit calculation are working correctly.*
 
 [Learn more about Model-driven app testing](model-driven-application.md)
 
@@ -200,7 +206,8 @@ For model-driven apps, focus on entity navigation, form interactions, and busine
 
 For Dataverse tests, emphasize data operations and business logic validation:
 
-> Generate a Dataverse test that validates the custom plugins in my solution. The test should create test records, trigger the plugin execution, and verify the expected data transformations occurred.
+> **Prompt:**
+> *Generate a Dataverse test that validates the custom plugins in my solution. The test should create test records, trigger the plugin execution, and verify the expected data transformations occurred.*
 
 [Learn more about Dataverse testing](dataverse.md)
 
@@ -212,27 +219,32 @@ To get the most accurate test generation, reference specific samples from the [T
 
 The [ButtonClicker sample](https://github.com/microsoft/PowerApps-TestEngine/tree/main/samples/buttonclicker) demonstrates basic counter functionality testing. Use these prompts:
 
-> Generate a test for my counter app with a similar structure to the ButtonClicker sample. My app has buttons named "IncrementBtn" and "ResetBtn" with a "CounterLabel" that displays the current count. Create a test that verifies both buttons work correctly and that the maximum count is 10.
+> **Prompt:**
+> *Generate a test for my counter app with a similar structure to the ButtonClicker sample. My app has buttons named "IncrementBtn" and "ResetBtn" with a "CounterLabel" that displays the current count. Create a test that verifies both buttons work correctly and that the maximum count is 10.*
 
-> Create a test for my button interaction app using the ButtonClicker sample as a reference. My app has a "SubmitButton" that should be enabled only when the "NameInput" and "EmailInput" fields are completed. Generate a test plan with Power Fx steps to validate this behavior.
+> **Prompt:**
+> *Create a test for my button interaction app using the ButtonClicker sample as a reference. My app has a "SubmitButton" that should be enabled only when the "NameInput" and "EmailInput" fields are completed. Generate a test plan with Power Fx steps to validate this behavior.*
 
 ### Gallery testing prompts
 
 The [BasicGallery](https://github.com/microsoft/PowerApps-TestEngine/tree/main/samples/basicgallery) and [NestedGallery](https://github.com/microsoft/PowerApps-TestEngine/tree/main/samples/nestedgallery) samples show how to test gallery interactions:
 
-> Generate a test for my gallery app where I have a "Products" gallery with product items containing "TitleLabel", "PriceLabel", and "SelectButton" controls. Use the BasicGallery sample structure to verify I can select items and that the correct details appear in a "DetailPanel".
+> **Prompt:**
+> *Generate a test for my gallery app where I have a "Products" gallery with product items containing "TitleLabel", "PriceLabel", and "SelectButton" controls. Use the BasicGallery sample structure to verify I can select items and that the correct details appear in a "DetailPanel".*
 
 ### Data operations prompts
 
 The [Dataverse sample](https://github.com/microsoft/PowerApps-TestEngine/tree/main/samples/dataverse) demonstrates data operations testing:
 
-> Create a test for my CRM app using the Dataverse sample pattern. Test that I can create a new Contact record, update it, then verify the changes persist. Include both UI tests and direct Dataverse operations.
+> **Prompt:**
+> *Create a test for my CRM app using the Dataverse sample pattern. Test that I can create a new Contact record, update it, then verify the changes persist. Include both UI tests and direct Dataverse operations.*
 
 ### AI testing prompts
 
 For testing AI-powered functionality, reference the [AI Prompt sample](https://github.com/microsoft/PowerApps-TestEngine/blob/main/samples/dataverse/ai-prompt.fx.yaml):
 
-> Generate a test for my sentiment analysis app based on the AI Prompt sample. My app has a "FeedbackInput" textbox and uses AI Builder to classify it as positive, negative, or neutral. Create a test that validates different inputs produce expected outputs within acceptable thresholds.
+> **Prompt:**
+>*Generate a test for my sentiment analysis app based on the AI Prompt sample. My app has a "FeedbackInput" textbox and uses AI Builder to classify it as positive, negative, or neutral. Create a test that validates different inputs produce expected outputs within acceptable thresholds.*
 
 ## Advanced techniques
 
@@ -242,13 +254,15 @@ This section provides advanced prompts.
 
 You can prompt Copilot to generate tests that work across multiple environments:
 
-> Generate a test suite for my app that can run in DEV, TEST, and PROD environments with appropriate configuration variables for each environment.
+> **Prompt:**
+> *Generate a test suite for my app that can run in DEV, TEST, and PROD environments with appropriate configuration variables for each environment.*
 
 ### Generating data mocking scenarios
 
 For isolated testing with [connector mocking](simulation.md):
 
-> Create a test with mocked connector responses for my app that uses the Office 365 Outlook connector. The test should simulate receiving emails and validate the app's processing logic.
+> **Prompt:**
+> *Create a test with mocked connector responses for my app that uses the Office 365 Outlook connector. The test should simulate receiving emails and validate the app's processing logic.*
 
 ## Testing AI capabilities and handling non-deterministic results
 
@@ -302,7 +316,8 @@ You can explore the complete implementation in the [AI Prompt sample](https://gi
 
 When using GitHub Copilot to generate tests for AI-powered applications:
 
-> Generate a test for my AI-powered app that uses AI Builder form processing. Include test steps that validate the AI results with appropriate tolerance for non-deterministic outputs.
+> **Prompt:**
+> *Generate a test for my AI-powered app that uses AI Builder form processing. Include test steps that validate the AI results with appropriate tolerance for non-deterministic outputs.*
 
 ## Troubleshooting and refinement
 
