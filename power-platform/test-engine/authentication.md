@@ -22,7 +22,7 @@ Test Engine offers straightforward authentication options to support both develo
 
 Test Engine offers easy-to-use authentication methods depending on the type of test you're looking to create.
 
-## Web Based Provided (Canvas, MDA)
+## Web Based Tests (Canvas, MDA)
 
 For web based tests that make use of an interactive user account to run the test.
 
