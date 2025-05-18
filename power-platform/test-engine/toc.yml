@@ -51,8 +51,6 @@ items:
     href: migration-guide.md
   - name: Reference
     items:
-    - name: Overview
-      href: reference.md
     - name: Yaml format
       href: yaml.md
     - name: Providers
