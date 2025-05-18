@@ -209,11 +209,11 @@ TestFormProcessing(FormType: Text): TestResult =
   ))
 ```
 
-## Next steps
+### Related articles
 
-- [Learn about Power Fx test functions](powerfx-functions.md)
-- [Explore AI-assisted test authoring](ai-authoring.md)
-- [Understand the Model Context Protocol](ai-mcp.md)
-- [Browse the Test Engine samples catalog](samples.md)
+[Learn about Power Fx test functions](powerfx-functions.md)  
+[Explore AI-assisted test authoring](ai-authoring.md)  
+[Understand the Model Context Protocol](ai-mcp.md)  
+[Browse the Test Engine samples catalog](samples.md)  
 
 [!INCLUDE [footer-banner](../includes/footer-banner.md)]

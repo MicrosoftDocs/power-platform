@@ -164,10 +164,10 @@ If you encounter issues with the MCP server:
 | Generated tests reference incorrect controls | Ensure your solution files are complete and up-to-date |
 | Analysis seems incomplete | Use verbose logging to see what the server is scanning |
 
-## Next steps
+### Related articles
 
-- [Learn about AI-assisted test authoring](ai-authoring.md)
-- [Understand nondeterministic AI testing](ai-evaluation.md)
-- [Explore Test Engine samples](samples.md)
+[Learn about AI-assisted test authoring](ai-authoring.md)  
+[Understand nondeterministic AI testing](ai-evaluation.md)  
+[Explore Test Engine samples](samples.md)  
 
 [!INCLUDE [footer-banner](../includes/footer-banner.md)]

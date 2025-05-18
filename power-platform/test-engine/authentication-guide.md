@@ -267,11 +267,11 @@ This section contains information about troubleshooting authentication with Test
 - **Problem**: Token expiration during long test runs
   - **Solution**: Use a service principal with longer token expiration or handle reauthentication in test steps
 
-## Next steps
+### Related articles
 
-- [Understand technical details](authentication-security.md) of the security architecture
-- [Test canvas applications](canvas-application.md) with your authenticated users
-- [Test model-driven applications](model-driven-application.md) with authenticated sessions
-- [Explore Dataverse testing](dataverse.md) with authenticated connections
+[Understand technical details of the security architecture](authentication-security.md)  
+[Test canvas applications with your authenticated users](canvas-application.md)  
+[Test model-driven applications with authenticated sessions](model-driven-application.md)  
+[Explore Dataverse testing with authenticated connections](dataverse.md)  
 
 [!INCLUDE [footer-banner](../includes/footer-banner.md)]

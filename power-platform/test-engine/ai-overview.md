@@ -87,13 +87,13 @@ For optimal results, consider these guidelines:
 | Structure your testing efforts based on business requirements | Plan Designer with MCP server integration |
 | Generate tests using solution metadata and data schemas | MCP server with solution definition scanning |
 
-## Next steps
+### Related articles
 
-- [Learn about Generative AI-assisted test authoring](ai-authoring.md)
-- [Explore the Model Context Protocol implementation](ai-mcp.md)
-- [Understand nondeterministic AI testing](ai-evaluation.md)
-- [Browse the Test Engine samples catalog](samples.md)
-- [Try the Test Engine power-fx-functions](powerfx-functions.md)
-- [Use Plan Designer](/power-apps/maker/plan-designer/plan-designer)
+[Learn about Generative AI-assisted test authoring](ai-authoring.md)  
+[Explore the Model Context Protocol implementation](ai-mcp.md)  
+[Understand nondeterministic AI testing](ai-evaluation.md)  
+[Browse the Test Engine samples catalog](samples.md)  
+[Try the Test Engine power-fx-functions](powerfx-functions.md)  
+[Use Plan Designer](/power-apps/maker/plan-designer/plan-designer)  
 
 [!INCLUDE [footer-banner](../includes/footer-banner.md)]
