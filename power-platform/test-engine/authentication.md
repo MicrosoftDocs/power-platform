@@ -55,20 +55,22 @@ For PowerFx provider and direct Dataverse tests, authentication works differentl
 
 ## When to Use Each Authentication Method
 
+The following table describes when to use each authentication method:
+
 | If you need to... | Choose | Why it works best |
 |-------------------|--------|-------------------|
-| Get started quickly | StorageState | Zero setup, just run your tests and sign-in |
-| Test locally with MFA | StorageState | Handles all modern authentication methods |
-| Share test users with your team | Dataverse | Centralized, secure credential storage |
-| Run tests in CI/CD pipelines | Dataverse | Non-interactive, automation-friendly |
-| Use service principals | Dataverse | Supports secure, headless authentication |
+| Get started quickly | `StorageState` | Zero setup, just run your tests and sign-in |
+| Test locally with MFA | `StorageState` | Handles all modern authentication methods |
+| Share test users with your team | `Dataverse` | Centralized, secure credential storage |
+| Run tests in CI/CD pipelines | `Dataverse` | Non-interactive, automation-friendly |
+| Use service principals | `Dataverse` | Supports secure, headless authentication |
 
 ## StorageState Authentication: Quick Start
 
-The StorageState method securely stores browser authentication data locally using Windows Data Protection API. It's perfect for individual developers and testers.
+The `StorageState` method securely stores browser authentication data locally using Windows Data Protection API. It's perfect for individual developers and testers.
 
 ```powershell
-# StorageState is the default, so no extra parameters needed
+# StorageState is the default, so you don't need to set it using the --user-auth parameter
 pac test run `
    --provider canvas `
    --test-plan-file testplan.yaml `
