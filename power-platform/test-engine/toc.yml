@@ -13,9 +13,9 @@ items:
       href: authentication-guide.md
   - name: Test your solution
     items:
-    - name: Test Canvas apps
+    - name: Test canvas apps
       href: canvas-application.md
-    - name: Test Model Driven apps
+    - name: Test model-driven apps
       href: model-driven-application.md
     - name: Test Dataverse extensions
       href: dataverse.md

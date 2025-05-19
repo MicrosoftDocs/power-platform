@@ -1,5 +1,5 @@
 ---
-title: "Test Engine Providers Reference"
+title: "Understanding Test Engine providers (preview)"
 description: "Comprehensive explanation of providers in Power Apps Test Engine"
 author: grant-archibald-ms
 ms.author: grarchib
@@ -11,11 +11,11 @@ contributors:
  - pvillads
 ---
 
-# Understanding Test Engine Providers
+# Understanding Test Engine providers (preview)
 
 Test Engine uses a provider-based architecture that allows it to support testing across different application types. Each provider is optimized for a specific application type, allowing for efficient test automation while providing a consistent testing experience.
 
-## What are Providers?
+## What are providers?
 
 Providers are specialized modules within Test Engine that handle the specifics of interacting with different application types:
 
@@ -24,13 +24,15 @@ Providers are specialized modules within Test Engine that handle the specifics o
 - They handle authentication and context appropriately for each application type
 - They determine how tests are executed and interpreted
 
-## Provider Types
+## Provider types
 
-### Web-based Providers
+The following sections describe the different types of providers available in Test Engine. Each provider is designed for a specific application scenario, offering tailored capabilities for web-based and API-based testing.
+
+### Web-based providers
 
 Web-based providers extend Playwright's browser automation capabilities by adding application-specific abstractions, making it easier to test web applications without dealing with low-level DOM elements.
 
-#### Canvas Application Provider
+#### Canvas application provider
 
 The Canvas Application Provider (`canvas`) is specialized for testing Power Apps canvas applications:
 
@@ -42,17 +44,18 @@ The Canvas Application Provider (`canvas`) is specialized for testing Power Apps
   - Supports gallery control navigation and interaction
 
 **Command Example**:
+
 ```powershell
 pac test run `
    --provider canvas `
-   --test-plan-file testplan.te.yaml `
-   --tenant aaaabbbb-0000-cccc-1111-dddd2222eeee `
-   --environment-id 00aa00aa-bb11-cc22-dd33-44ee44ee44ee
+   --test-plan-file your-testplan.te.yaml `
+   --tenant your-tenantid-guid-value `
+   --environment-id your-environmentid-guid-value
 ```
 
-For detailed information, see [Test Canvas Applications](./canvas-application.md).
+[Learn more about testing canvas applications](./canvas-application.md).
 
-#### Model-driven Application Provider
+#### Model-driven application provider
 
 The Model-driven Application Provider (`mda`) is specialized for Dataverse model-driven applications:
 
@@ -64,22 +67,23 @@ The Model-driven Application Provider (`mda`) is specialized for Dataverse model
   - Supports entity record operations
 
 **Command Example**:
+
 ```powershell
 pac test run `
    --provider mda `
-   --test-plan-file testplan.te.yaml `
-   --tenant aaaabbbb-0000-cccc-1111-dddd2222eeee `
-   --environment-id 00aa00aa-bb11-cc22-dd33-44ee44ee44ee `
+   --test-plan-file your-testplan.te.yaml `
+   --tenant your-tenantid-guid-value `
+   --environment-id your-environmentid-guid-value `
    --domain "https://contoso.crm.dynamics.com/main.aspx?appid=00001111-aaaa-2222-bbbb-3333cccc4444&pagetype=entityrecord&etn=account"
 ```
 
-For detailed information, see [Test Model-driven Applications](./model-driven-application.md).
+[Learn more about testing model-driven applications](./model-driven-application.md).
 
-### API-based Providers
+### API-based providers
 
 API-based providers interact directly with backend services without necessarily using a browser interface.
 
-#### Power Fx Provider
+#### Power Fx provider
 
 The Power Fx Provider (`powerfx`) allows direct execution of Power Fx formulas, useful for Dataverse integration testing:
 
@@ -91,18 +95,21 @@ The Power Fx Provider (`powerfx`) allows direct execution of Power Fx formulas, 
   - Enables focused integration testing
 
 **Command Example**:
+
 ```powershell
 pac test run `
    --provider powerfx `
-   --test-plan-file testplan.te.yaml `
-   --tenant aaaabbbb-0000-cccc-1111-dddd2222eeee `
-   --environment-id 00aa00aa-bb11-cc22-dd33-44ee44ee44ee `
+   --test-plan-file your-testplan.te.yaml `
+   --tenant your-tenantid-guid-value `
+   --environment-id your-environmentid-guid-value `
    --domain "https://contoso.crm.dynamics.com"
 ```
 
-For detailed information, see [Test Dataverse Extensions](./dataverse.md).
+[Learn more about testing Dataverse extensions](./dataverse.md).
 
-## Technical Implementation
+## Technical implementation
+
+The following sections explain the underlying architecture, authentication flows, and Dataverse integration for Test Engine providers. Understanding these details will help you configure and extend providers for your specific testing needs.
 
 ### Architecture
 
@@ -113,14 +120,14 @@ Test Engine's provider architecture follows a layered approach:
 3. **Authentication Layer**: Handles identity and security context
 4. **Extension Layer**: Allows custom functionality to be added
 
-### Authentication Flow
+### Authentication flow
 
 Providers use different authentication flows based on their requirements:
 
 - **Web Providers** (Canvas, Model-driven): Use browser-based authentication with storage state
 - **API Providers** (Power Fx): Use OAuth tokens from Azure CLI for direct API access
 
-### Dataverse Integration
+### Dataverse integration
 
 All providers can benefit from Dataverse integration, which enables:
 
@@ -140,22 +147,22 @@ testSettings:
 
 See [Dataverse Extensions](./dataverse.md) for more information.
 
-## Choosing the Right Provider
+## Choosing the right provider
 
 Select a provider based on your application type and testing requirements:
 
 | Application Type | Provider | Best For |
 |------------------|----------|----------|
-| Canvas apps | canvas | UI testing, control interaction, screen navigation |
-| Model-driven apps | mda | Forms, views, business process flows, entity operations |
-| Pure Dataverse integration | powerfx | Backend logic, table operations, plugin validation |
+| Canvas apps | `canvas` | UI testing, control interaction, screen navigation |
+| Model-driven apps | `mda` | Forms, views, business process flows, entity operations |
+| Pure Dataverse integration | `powerfx` | Backend logic, table operations, plugin validation |
 
-## See Also
+## Related articles
 
-- [Canvas Applications](./canvas-application.md)
-- [Model-driven Applications](./model-driven-application.md)
-- [Dataverse Extensions](./dataverse.md)
-- [Extensibility](./extensibility.md)
-- [Test Engine and Playwright](./playwright.md)
+[Test canvas applications](./canvas-application.md)  
+[Test model-driven applications](./model-driven-application.md)  
+[Test Dataverse extensions](./dataverse.md)  
+[Test Engine Extensibility](./extensibility.md)  
+[Test Engine and Playwright](./playwright.md)  
 
 [!INCLUDE [footer-banner](../includes/footer-banner.md)]

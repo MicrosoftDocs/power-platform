@@ -36,9 +36,9 @@ landingContent:
             url: authentication.md
       - linkListType: how-to-guide
         links:
-          - text: Test Canvas apps
+          - text: Test canvas apps
             url: canvas-application.md
-          - text: Test Model Driven apps
+          - text: Test model-driven apps
             url: model-driven-application.md
           - text: Test Dataverse extensions
             url: dataverse.md
