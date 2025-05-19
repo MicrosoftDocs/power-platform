@@ -468,7 +468,7 @@
                   href: monitoring/monitor-power-apps.md
                 - name: For Power Automate (preview)
                   href: monitoring/monitor-power-automate.md
-        - name: Manage Copilot
+        - name: Copilot
           href: copilot/copilot-hub.md
         - name: Security
           items:
