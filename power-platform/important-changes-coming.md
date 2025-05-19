@@ -46,7 +46,7 @@ After deprecation ends, Microsoft service account users will experience the foll
 
 To continue using Power Automate, we recommend that you transition to the Power Apps Developer Plan. This transition provides access to modern features and allows for seamless management of your workflows. The Power Apps Developer Plan includes flow creation and integration with Microsoft Dataverse, making it an excellent option for automation enthusiasts and professionals.
 
-1. If you don't have [trial Azure account](https://azure.microsoft.com/en-us/pricing/purchase-options/azure-account), create one.
+1. If you don't have a [trial Azure account](https://azure.microsoft.com/pricing/purchase-options/azure-account), create one.
 1. Using the Azure account you just created, [set up a new Microsoft Entra tenant](/entra/identity-platform/quickstart-create-new-tenant).
 1. Using the Azure account and Entra tenant you set up in this procedure, create a [Power Apps developer environment](developer/create-developer-environment.md).
 
@@ -686,7 +686,7 @@ When you access your Dataverse environment for the first time or every time afte
 
 The old URL redirector service, cloudredirector.crm.dynamics.com, was replaced in September 2019 with the new one, bn1--namcrlivesg614.crm.dynamics.com (just an example; the URL will differ based on your environment region). The old URL redirector service is deprecated, and will be removed on **March 31, 2020**.
 
-This change will impact you if you have created a bookmark of the sign-in page before September 2019 that contained the link to the old URL redirector service. The users impacted by this change will see a notification starting February 17, 2020, with instructions to resolve the issue. For detailed information about this issue and how to resolve it, see <https://support.microsoft.com/help/4541747>.
+This change will impact you if you have created a bookmark of the sign-in page before September 2019 that contained the link to the old URL redirector service. The users impacted by this change will see a notification starting February 17, 2020, with instructions to resolve the issue.<!--this link doesn't exist - For detailed information about this issue and how to resolve it, see <https://support.microsoft.com/help/4541747>-->
 
 ## Deprecation of Office365 authentication type and OrganizationServiceProxy class for connecting to Dataverse
 
