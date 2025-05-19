@@ -1,0 +1,67 @@
+items:
+- name: Test Engine (preview)
+  items:
+  - name: Overview
+    href: overview.md
+  - name: Features
+    href: features.md
+  - name: Authentication
+    items:
+    - name: Overview
+      href: authentication.md
+    - name: Guide
+      href: authentication-guide.md
+  - name: Test your solution
+    items:
+    - name: Test canvas apps
+      href: canvas-application.md
+    - name: Test model-driven apps
+      href: model-driven-application.md
+    - name: Test Dataverse extensions
+      href: dataverse.md
+    - name: Sample tests
+      href: samples.md
+  - name: Power Fx
+    items:
+    - name: Power Fx overview
+      href: powerfx.md
+    - name: Power Fx test functions
+      href: powerfx-functions.md
+    - name: Connector and Dataverse simulation
+      href: simulation.md
+    - name: Namespaces
+      href: powerfx-namespaces.md
+    - name: Power Fx C# functions
+      href: powerfx-csharp.md
+  - name: Generative AI capabilities
+    items:
+    - name: Generative AI overview
+      href: ai-overview.md
+    - name: AI-assisted test authoring
+      href: ai-authoring.md
+    - name: Model Context Protocol
+      href: ai-mcp.md
+    - name: Testing AI-powered apps
+      href: ai-evaluation.md
+  - name: ALM
+    href: alm.md
+  - name: Feature lifecycle
+    href: feature-lifecycle.md
+  - name: Migration
+    href: migration-guide.md
+  - name: Reference
+    items:
+    - name: Yaml format
+      href: yaml.md
+    - name: Providers
+      href: providers.md
+    - name: Extensibility
+      href: extensibility.md
+    - name: Power Fx modules
+      href: module-functions-reference.md
+    - name: Authentication security
+      href: authentication-security.md
+    - name: Test engine and Playwright
+      href: playwright.md
+    - name: File Access restrictions
+      href: filerestrictions.md

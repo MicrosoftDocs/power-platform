@@ -1,0 +1,18 @@
+sequenceDiagram
+    participant DAPI as Data Protection API
+    participant XmlRepo as IXmlRepository
+    participant Dataverse
+    participant Security as Dataverse Security
+    
+    DAPI->>XmlRepo: Store XML key document
+    XmlRepo->>Dataverse: Create/update record
+    Dataverse->>Security: Apply record-level security
+    
+    Note over DAPI,Security: For retrieving keys
+    
+    DAPI->>XmlRepo: Request XML documents
+    XmlRepo->>Dataverse: Query records
+    Dataverse->>Security: Check access permissions
+    Security->>Dataverse: Return authorized data
+    Dataverse->>XmlRepo: Return records
+    XmlRepo->>DAPI: Return XML documents
