@@ -1,7 +1,7 @@
 ---
 title: Important changes (deprecations) coming in Power Platform
 description: Important changes (deprecations) coming in Power Platform 
-ms.date: 04/15/2025
+ms.date: 05/20/2025
 ms.topic: concept-article
 ms.subservice: admin
 searchScope:
@@ -9,6 +9,9 @@ searchScope:
 ms.custom:
  - dyn365-hub
 author: sericks007
+contributors:
+  - sbasi19
+  - v-aangie
 ms.author: sericks
 ms.reviewer: sericks
 ---
@@ -20,6 +23,37 @@ For deprecation information of other products, see [Other deprecation articles](
 
 > [!IMPORTANT]
 > "Deprecated" means we intend to remove the feature or capability from a future release. The feature or capability is fully supported until it's officially removed. This deprecation notification can span a few months or years. After removal, the feature or capability will no longer work. This notice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
+
+## Deprecation of support for personal Microsoft service accounts in Power Automate
+
+Starting May 27, 2025, support for personal Microsoft service accounts will be deprecated in Power Automate. This deprecation will end July 26, 2025. To continue using Power Automate, users must perform the procedure in the [Replacement feature](#replacement-feature) section before deprecation ends.
+
+Power Automate for desktop won't be affected and will continue to work with personal email accounts.
+
+### Why is this needed?
+
+The deprecation of personal accounts in Power Automate is aimed at enhancing security and aligning the platform with professional, enterprise-grade standards. Work or school accounts offer the robust authentication, enterprise-level security, and advanced functionality needed to ensure a seamless and secure experience for managing automation workflows in modern environments. This transition reflects a commitment to delivering a more reliable and focused tool for professional use.
+
+### Impact
+
+After deprecation ends, Microsoft service account users will experience the following changes:
+
+- Users can't log into the Power Automate portal or mobile app with personal email accounts, such as gmail.com or outlook.com.
+- Users can't create, edit, or manage cloud flows on the portal or mobile app.
+- Access to any cloud flows associated with Microsoft service accounts are permanently removed, and these cloud flows are deleted.
+
+### Replacement feature
+
+To continue using Power Automate, we recommend that you transition to the Power Apps Developer Plan. This transition provides access to modern features and allows for seamless management of your workflows. The Power Apps Developer Plan includes flow creation and integration with Microsoft Dataverse, making it an excellent option for automation enthusiasts and professionals.
+
+1. If you don't have [trial Azure account](https://azure.microsoft.com/en-us/pricing/purchase-options/azure-account), create one.
+1. Using the Azure account you just created, [set up a new Microsoft Entra tenant](/entra/identity-platform/quickstart-create-new-tenant).
+1. Using the Azure account and Entra tenant you set up in this procedure, create a [Power Apps developer environment](developer/create-developer-environment.md).
+
+    Learn more about capabilities in [About the Developer Plan](developer/plan.md).
+
+1. [Export your cloud flows](/power-automate/export-import-flow-non-solution#export-a-flow-package) created using your Microsoft account.
+1. [Import the cloud flows you exported](/power-automate/export-import-flow-non-solution#import-a-flow) in the previous step into the newly created Power Apps developer environment.
 
 ## Deprecation of SQL server connector's V1 actions
 
