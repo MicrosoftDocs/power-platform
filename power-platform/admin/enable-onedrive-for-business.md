@@ -1,6 +1,6 @@
 ---
-title: "Enable and make available OneDrive for Business (online)"
-description: "Learn about licensing and other requirements for using OneDrive for Business, and how to enable it in your environment and control access in apps."
+title: Enable and make available OneDrive for Business (online)
+description: Learn about licensing and other requirements for using OneDrive for Business, and how to enable it in your environment and control access in apps.
 author: sericks007
 ms.component: pa-admin
 ms.topic: how-to
@@ -12,8 +12,6 @@ search.audienceType:
   - admin
 ---
 # Enable OneDrive for Business (online)
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 Users can create and manage private documents with [!INCLUDE[pn_onedrive_for_business](../includes/pn-onedrive-for-business.md)]. Those documents can be accessed in customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), after the system administrator has enabled [!INCLUDE[pn_onedrive_for_business](../includes/pn-onedrive-for-business.md)].  
   
@@ -41,20 +39,20 @@ Users can create and manage private documents with [!INCLUDE[pn_onedrive_for_bus
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
-1. On the **Environments** page, choose an environment.
+1. On the **Environments** page, select an environment.
 1. In the command bar, select **Settings**. 
 1. Expand **Integration**, then select **Document management settings**.
-1. Select **Enable OneDrive for Business**, then check the box **Enable OneDrive for Business** to activate it.
-1  Click **OK** to save the changes. 
+1. Select **Enable OneDrive for Business**, then select the **Enable OneDrive for Business** check box to activate it.
+1.  Select **OK** to save the changes. 
    
 ### [Classic admin center](#tab/classic)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Environments**.
-1. On the **Environments** page, choose an environment.
+1. On the **Environments** page, select an environment.
 1. In the command bar, select **Settings**.  
 1. Expand **Integration**, then select **Document management settings**.
-1. Select **Enable OneDrive for Business**, then check the box **Enable OneDrive for Business** to activate it.
-1  Click **OK** to save the changes. 
+1. Select **Enable OneDrive for Business**, then select the **Enable OneDrive for Business** check box to activate it.
+1.  Select **OK** to save the changes. 
 ---
  
 ## Controlling access to OneDrive for Business
@@ -64,12 +62,12 @@ Users can create and manage private documents with [!INCLUDE[pn_onedrive_for_bus
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
-1. On the **Environments** page, choose an environment.
+1. On the **Environments** page, select an environment.
 1. In the command bar, select **Settings**. 
 1. Expand **Users + permissions**, then select **Security roles**.
-1. Select a security role, then go to the **Miscellaneous Privileges** tab.
+1. Select a security role, then go to the **Miscellaneous privileges** tab.
 1. Assign the **OneDrive for Business** privilege to the appropriate level.
-1  In the command bar, click **Save** to apply the changes. 
+1..  In the command bar, click **Save** to apply the changes. 
    
 ### [Classic admin center](#tab/classic)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
@@ -79,10 +77,10 @@ Users can create and manage private documents with [!INCLUDE[pn_onedrive_for_bus
 1. Expand **Users + permissions**, then select **Security roles**.
 1. Select a security role, then go to the **Miscellaneous Privileges** tab.
 1. Assign the **OneDrive for Business** privilege to the appropriate level.
-1  In the command bar, click **Save** to apply the changes. 
+1.  In the command bar, click **Save** to apply the changes. 
 ---
 
-### See also  
+### Related content
  [Enable OneDrive for Business (on-premises)](connect-onedrive-business.md)   
  [What is OneDrive for Business?](https://support.office.com/article/What-is-OneDrive-for-Business-187f90af-056f-47c0-9656-cc0ddca7fdc2)
 
