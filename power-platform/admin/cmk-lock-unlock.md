@@ -33,6 +33,9 @@ Key access revocation can be triggered by completing any of the following tasks:
   > - Locked environment's data can't be copied to another environment.
   > - Locked production and sandbox environment's data persist in the platform but it can't be accessed.
 
+## Enterprise policy status check
+To ensure the smooth operation of your customer managed key environments, the health of the **Enterprise policy** is continually monitored. In an event of 
+
 ## Unlock environments
 
 To unlock environments, all key access permissions must be restored for the original encryption key. Submit a Microsoft Support request to unlock and enable the environments. The environments can only be enabled when the original encryption key used to encrypt the customer data is restored.
