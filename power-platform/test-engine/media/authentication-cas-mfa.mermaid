@@ -1,0 +1,22 @@
+sequenceDiagram
+    participant TestEngine
+    participant Browser
+    participant MicrosoftEntra as Microsoft Entra
+    participant CAP as Conditional Access Policy
+    participant MFA as Multi-Factor Auth
+    
+    TestEngine->>Browser: Launch authentication request
+    Browser->>MicrosoftEntra: Request authentication
+    MicrosoftEntra->>CAP: Evaluate conditions
+    CAP->>MicrosoftEntra: Apply policy requirements
+    
+    alt MFA Required
+        MicrosoftEntra->>MFA: Request additional verification
+        MFA->>Browser: Prompt for additional factor
+        Browser->>MFA: Provide additional factor
+        MFA->>MicrosoftEntra: Verify additional factor
+    end
+    
+    MicrosoftEntra->>Browser: Complete authentication
+    Browser->>TestEngine: Return storage state
+    TestEngine->>TestEngine: Encrypt and store state

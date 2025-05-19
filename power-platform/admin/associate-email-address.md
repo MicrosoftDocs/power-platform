@@ -3,7 +3,7 @@ title: "Associate an email address with a row   | MicrosoftDocs"
 description: Associate an email address with a row. 
 author: DanaMartens
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 05/05/2023
 ms.subservice: admin
 ms.author: dmartens

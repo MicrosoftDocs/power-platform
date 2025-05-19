@@ -4,7 +4,7 @@ description: Learn about common questions and answers for licensing and plan opt
 author: amchern
 ms.date: 01/24/2025
 ms.reviewer: sericks
-ms.topic: conceptual
+ms.topic: faq
 ms.subservice: 
 ms.author: amchern
 ms.custom: 

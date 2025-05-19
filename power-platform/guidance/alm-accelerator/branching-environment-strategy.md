@@ -5,7 +5,7 @@ author: mikefactorial
 ms.author: rusant
 ms.reviewer: sericks
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 04/10/2023
 ms.subservice: guidance-toolkit
 ms.custom: bap-template

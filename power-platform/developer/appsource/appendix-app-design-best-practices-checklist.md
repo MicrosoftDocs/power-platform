@@ -3,7 +3,7 @@ title: "Appendix: App design best practices checklist (PowerApps) | Microsoft Do
 description: "Use the app design checklist to evaluate your app design in Power Apps." # 115-145 characters including spaces. This abstract displays in the search result.
 ms.date: 04/03/2023
 ms.reviewer: pehecke
-ms.topic: article
+ms.topic: best-practice
 author: angela21k
 ms.author: angelakim
 ms.subservice: developer

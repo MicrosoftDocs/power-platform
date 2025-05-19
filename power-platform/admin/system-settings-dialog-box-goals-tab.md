@@ -4,7 +4,7 @@ description: System Settings Goals tab
 author: sericks007
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.subservice: admin
 ms.date: 08/31/2021
 ms.author: sericks

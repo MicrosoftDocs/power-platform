@@ -3,7 +3,7 @@ title: "Connector classification  | MicrosoftDocs"
 description: About ways to categorize connectors within a DLP policy.
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 05/04/2024
 ms.subservice: admin
 author: mikferland-msft

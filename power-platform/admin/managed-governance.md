@@ -2,7 +2,7 @@
 title: Managed governance
 description: Learn how to govern Power Platform to ensure that its capabilities are harnessed responsibly and effectively.
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 03/12/2025
 author: akadrno
 ms.custom: NewPPAC

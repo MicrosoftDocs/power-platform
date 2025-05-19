@@ -3,7 +3,7 @@ title: Use /mention to link to records in Outlook web client
 description: Records are now available in the Outlook web client using a simple /mention gesture. 
 author: sericks007
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 04/24/2025
 ms.subservice: admin
 ms.custom: NewPPAC

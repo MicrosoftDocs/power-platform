@@ -4,7 +4,7 @@ description: The Innovation Backlog components contain a canvas app that can be 
 author: manuelap-msft
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 02/12/2025
 ms.subservice: guidance-toolkit
 ms.author: mapichle

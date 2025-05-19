@@ -5,7 +5,7 @@ author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: well-architected
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 05/10/2024
 ---
 

@@ -4,7 +4,7 @@ description: Learn more about policies and communications for incidents provided
 author: kacortez
 ms.reviewer: sericks
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 2/20/2025
 ms.subservice: admin
 ms.author: kacortez

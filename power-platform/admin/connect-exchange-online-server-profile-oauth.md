@@ -2,7 +2,7 @@
 title: Exchange Online cross-tenant authentication 
 description: Exchange Online cross tenant authentication
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 01/23/2025
 author: gattimassimo 
 ms.author: magatti

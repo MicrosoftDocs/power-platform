@@ -1,0 +1,19 @@
+sequenceDiagram
+    participant TestEngine
+    participant DataProtectionAPI as Data Protection API
+    participant CustomXmlRepo as Custom XML Repository
+    participant Dataverse
+    
+    TestEngine->>DataProtectionAPI: Encrypt storage state
+    DataProtectionAPI->>TestEngine: Return encrypted data & keys
+    TestEngine->>CustomXmlRepo: Store encrypted keys & data
+    CustomXmlRepo->>Dataverse: Save to Dataverse tables
+    
+    Note over TestEngine,Dataverse: Later, when needed
+    
+    TestEngine->>CustomXmlRepo: Request encryption keys & data
+    CustomXmlRepo->>Dataverse: Query tables
+    Dataverse->>CustomXmlRepo: Return encrypted keys & data
+    CustomXmlRepo->>TestEngine: Return XML documents
+    TestEngine->>DataProtectionAPI: Decrypt using certificate
+    DataProtectionAPI->>TestEngine: Return decrypted storage state

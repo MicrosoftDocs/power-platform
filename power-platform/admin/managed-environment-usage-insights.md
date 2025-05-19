@@ -2,7 +2,7 @@
 title: Usage insights
 description: Stay informed about your managed environments with weekly digests.
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 05/01/2025
 author: mihaelablendea 
 ms.author: amchern

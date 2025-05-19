@@ -7,7 +7,7 @@ ms.author: marcelbf
 ms.custom: "ai-learning-hub"
 ms.date: 09/23/2024
 ms.reviewer: jdaly
-ms.topic: "article"
+ms.topic: concept-article
 search.audienceType: 
   - developer
 ---

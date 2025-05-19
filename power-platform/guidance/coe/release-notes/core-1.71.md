@@ -4,7 +4,7 @@ description: "Release notes and latest version of the CoE Starter Kit 1.71."
 author: manuelap-msft
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: release-notes
 ms.date: 11/16/2020
 ms.subservice: guidance-toolkit
 ms.author: mapichle
