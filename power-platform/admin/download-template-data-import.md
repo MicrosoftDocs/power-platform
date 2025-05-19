@@ -28,15 +28,15 @@ These settings can be accessed in the Microsoft Power Platform admin center. TO 
 1. On the **Environments** page, select an environment.
 1. In the command bar, select **Settings**. 
 1. Expand **Templates**, then select **Data import templates**.
-1. Select the record type for which a template is needed, then click **Download**. The file downloads to your machine.
+1. Select the record type for which a template is needed, then select **Download**. The file downloads to your machine.
    
 ### [Classic admin center](#tab/classic)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Environments**.
-1. On the **Environments** page, choose an environment.
+1. On the **Environments** page, select an environment.
 1. In the command bar, select **Settings**.  
 1. Expand **Templates**, then select **Data import templates**.
-1. Choose the record type for which a template is needed, then click **Download**. The file downloads to your machine.
+1. Select the record type for which a template is needed, then select **Download**. The file downloads to your machine.
 ---
  
 ### Related content
