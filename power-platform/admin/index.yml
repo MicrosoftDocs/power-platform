@@ -32,7 +32,7 @@ landingContent:
             url: capacity-storage.md
           - text: Sign in to your apps
             url: sign-in-office-365-apps.md
-          - text: Use the new Power Platform admin center (preview)
+          - text: Use the new Power Platform admin center
             url: new-admin-center.md
        
 

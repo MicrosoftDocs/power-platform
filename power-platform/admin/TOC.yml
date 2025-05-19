@@ -6,7 +6,7 @@
           href: index.yml
         - name: Overview of the Power Platform admin center
           href: admin-documentation.md
-        - name: Welcome to the new Power Platform admin center (preview)
+        - name: Use the new Power Platform admin center
           href: new-admin-center.md
         - name: Environment management
           items:
@@ -468,7 +468,7 @@
                   href: monitoring/monitor-power-apps.md
                 - name: For Power Automate (preview)
                   href: monitoring/monitor-power-automate.md
-        - name: Manage Copilot
+        - name: Copilot
           href: copilot/copilot-hub.md
         - name: Security
           items:
