@@ -4,7 +4,7 @@ description: Download a template for data import
 author: sericks007
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 09/28/2023
+ms.date: 05/19/2025
 ms.subservice: admin
 ms.custom: NewPPAC
 ms.author: sericks
@@ -25,12 +25,10 @@ These settings can be accessed in the Microsoft Power Platform admin center. TO 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
-1. On the **Environments** page, choose an environment.
+1. On the **Environments** page, select an environment.
 1. In the command bar, select **Settings**. 
 1. Expand **Templates**, then select **Data import templates**.
-1. Choose the record type for which a template is needed, then click **Download**.
-1. In the file download box, select **Save** or **Save as**, then select a location for the file.
-1. Click **Close** when the download is completed.
+1. Select the record type for which a template is needed, then click **Download**. The file downloads to your machine.
    
 ### [Classic admin center](#tab/classic)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
@@ -38,12 +36,10 @@ These settings can be accessed in the Microsoft Power Platform admin center. TO 
 1. On the **Environments** page, choose an environment.
 1. In the command bar, select **Settings**.  
 1. Expand **Templates**, then select **Data import templates**.
-1. Choose the record type for which a template is needed, then click **Download**.
-1. In the file download box, select **Save** or **Save as**, then select a location for the file.
-1. Click **Close** when the download is completed.
+1. Choose the record type for which a template is needed, then click **Download**. The file downloads to your machine.
 ---
  
-### See also  
+### Related content
 [Import data (all record types) from multiple sources](import-data-all-record-types.md) <br />
 [Import data](/powerapps/developer/common-data-service/import-data)
  
