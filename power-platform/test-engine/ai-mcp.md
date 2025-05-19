@@ -28,7 +28,7 @@ The Model Context Protocol (MCP) is a standard for communication between AI tool
 - **Contextual awareness**: Understanding code relationships and dependencies
 - **Code generation**: Creating code snippets based on context
 - **Interactive assistance**: Responding to user queries with relevant suggestions
-- **Plan integration**: Working with Plan Designer for structured test planning
+- **Plan integration**: Working with [Plan Designer](/power-apps/maker/plan-designer/plan-designer) for structured test planning
 
 The Test Engine MCP server provides a standard input/output (stdio) implementation that you can use with MCP clients like Visual Studio, GitHub Copilot, or other compatible tools.
 
@@ -54,7 +54,7 @@ The Test Engine MCP server combines deterministic application scanning with gene
    - Data dependencies
    - Required test data setup
 
-3. **Plan integration phase**: Works with Plan Designer to:
+3. **Plan integration phase**: Works with [Plan Designer](/power-apps/maker/plan-designer/plan-designer) to:
    - Organize tests by business requirements
    - Prioritize critical test scenarios
    - Create structured test plans
@@ -106,9 +106,7 @@ To use the Test Engine MCP server:
 
 ## Using Plan Designer with MCP
 
-Plan Designer provides a structured approach to organizing and prioritizing your test efforts. When used with the Test Engine MCP server, it enhances the test generation process:
-
-### Plan Designer integration
+[Plan Designer](/power-apps/maker/plan-designer/plan-designer) provides a structured approach to organizing and prioritizing your test efforts. When used with the Test Engine MCP server, it enhances the test generation process:
 
 1. **Test plan creation**: Define test plans with specific objectives and success criteria
 2. **Requirement mapping**: Link tests to business requirements and solution components
@@ -128,7 +126,7 @@ The MCP server uses Plan Designer information to:
 
 ### Getting Started
 
-Review the [Test Engine MCP](https://aks.ms/TestEngineMCP) for information the MCP Server and getting started.
+Review the [Test Engine MCP](https://aka.ms/TestEngineMCP) for information the MCP Server and getting started.
 
 ## Combining deterministic analysis with generative AI
 
@@ -139,6 +137,7 @@ The real power of the Test Engine MCP server lies in combining deterministic ana
 3. Together, they produce tests that are both reliable and comprehensive
 
 This hybrid approach helps overcome the limitations of both:
+
 - Pure deterministic approaches can lack coverage of creative test scenarios
 - Pure generative approaches can reference nonexistent controls or incorrect properties
 - Review process to refine and improve the generated results
@@ -147,15 +146,15 @@ This hybrid approach helps overcome the limitations of both:
 
 When working with the Test Engine MCP server:
 
-1. **Provide complete source context**: Ensure your solution folder contains all relevant files
-2. **Be specific in prompts**: Include specific control names and expected behaviors
-3. **Iterate incrementally**: Start with basic tests and progressively add complexity
-4. **Verify generated tests**: Review and adjust tests before execution
-5. **Combine with manual expertise**: Use the MCP server as a productivity tool, not a replacement for testing knowledge
+- **Provide complete source context**: Ensure your solution folder contains all relevant files
+- **Be specific in prompts**: Include specific control names and expected behaviors
+- **Iterate incrementally**: Start with basic tests and progressively add complexity
+- **Verify generated tests**: Review and adjust tests before execution
+- **Combine with manual expertise**: Use the MCP server as a productivity tool, not a replacement for testing knowledge
 
 ## Troubleshooting
 
-If you encounter issues with the MCP server:
+If you encounter issues with the MCP server, try these troubleshooting steps:
 
 | Issue | Resolution |
 |-------|------------|
