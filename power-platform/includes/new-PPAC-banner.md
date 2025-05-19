@@ -1,2 +1,2 @@
 > [!NOTE]
-> The [new and improved Power Platform admin center](../admin/new-admin-center.md) is now in public preview and on by default! We designed the new admin center to be easier to use, with task-oriented navigation that helps you achieve specific outcomes faster. We'll be publishing new and updated documentation as the new Power Platform admin center moves to [general availability](/power-platform/release-plan/2025wave1/power-platform-governance-administration/use-new-improved-power-platform-admin-center).
+> The [new and improved Power Platform admin center](../admin/new-admin-center.md) is now generally available. We're currently updating the documentation to reflect these changes, so check back to ensure that you're getting the latest updates.
