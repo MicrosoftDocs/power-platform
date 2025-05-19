@@ -6,14 +6,9 @@ ms.author: grarchib
 ms.date: 05/19/2025
 ms.reviewer: jdaly
 ms.topic: how-to
-contributors:
- - JimDaly
- - jt000
- - FrankDahl
- - grant-archibald-ms
 ---
 
-# Testing nondeterministic AI components
+# Testing nondeterministic AI in Power Apps (preview)
 
 > [!NOTE]
 > [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
@@ -34,11 +29,11 @@ Traditional testing relies on deterministic inputs producing consistent outputs.
 
 Power Apps Test Engine provides several strategies for effectively testing AI-powered components:
 
-### 1. Use the `Preview.AIExecutePrompt` function
+### Use the Preview.AIExecutePrompt function
 
-The [`Preview.AIExecutePrompt` function](powerfx-functions.md) enables controlled execution of AI prompts within your tests:
+The [Preview.AIExecutePrompt function](powerfx-functions.md) enables controlled execution of AI prompts within your tests. The following example demonstrates how to use it:
 
-```powerfx
+```powerappsfl
 Response: ParseJSON(
   Preview.AIExecutePrompt("CustomPrompt",
   {
@@ -48,24 +43,25 @@ Response: ParseJSON(
 ```
 
 This approach allows you to:
+
 - Execute prompts with controlled inputs
 - Parse and validate structured responses
 - Compare results against expected values
 
-### 2. Implement tolerance-based validation
+### Implement tolerance-based validation
 
-Instead of expecting exact matches, verify that outputs meet criteria within acceptable thresholds:
+Instead of expecting exact matches, verify that outputs meet criteria within acceptable thresholds. The following is an example:
 
-```powerfx
+```powerappsfl
 // Validate that the sentiment score is within appropriate range
 Assert(Response.SentimentScore >= 0.7, "Sentiment score should be positive")
 ```
 
-### 3. Test core functionality rather than exact outputs
+### Test core functionality rather than exact outputs
 
-Focus tests on validating that the AI component fulfills its essential purpose:
+Focus tests on validating that the AI component fulfills its essential purpose as shown in the following example:
 
-```powerfx
+```powerappsfl
 // Check that the classification happens (not the exact classification)
 Assert(
   Response.Category = "Positive" || 
@@ -75,11 +71,11 @@ Assert(
 )
 ```
 
-### 4. Use structural validation for complex outputs
+### Use structural validation for complex outputs
 
-For complex AI responses, validate the response structure rather than specific content:
+For complex AI responses, validate the response structure rather than specific content as shown in the following example:
 
-```powerfx
+```powerappsfl
 // Verify all expected fields exist in the response
 Assert(!IsBlank(Response.Rating), "Rating should be present")
 Assert(!IsBlank(Response.Explanation), "Explanation should be present")
@@ -88,11 +84,11 @@ Assert(!IsBlank(Response.NextSteps), "Next steps should be present")
 
 ## Using Preview.AIExecutePrompt
 
-The Test Engine provides the [`Preview.AIExecutePrompt` function](powerfx-functions.md) specifically for testing AI interactions.
+Test Engine provides the [Preview.AIExecutePrompt function](powerfx-functions.md) specifically for testing AI interactions.
 
 ### Function signature
 
-```powerfx
+```powerappsfl
 Preview.AIExecutePrompt(
   PromptName: Text, 
   PromptContext: Record
@@ -110,6 +106,7 @@ Preview.AIExecutePrompt(
 ### Return value
 
 A record containing:
+
 - **Text**: The raw response text
 - Other properties depending on the prompt template and model
 
@@ -129,7 +126,7 @@ testSettings:
 
 The following example demonstrates testing an AI-powered sentiment analysis feature:
 
-```powerfx
+```powerappsfl
 EvaluateSentimentPrompt(Input: Text): TestResult =
   With({
     Response: ParseJSON(
@@ -146,11 +143,11 @@ EvaluateSentimentPrompt(Input: Text): TestResult =
   })
 ```
 
-## Example: Rating evaluation AI
+### Example: Rating evaluation AI
 
 The following example demonstrates using `Preview.AIExecutePrompt` to test an AI-powered rating system:
 
-```powerfx
+```powerappsfl
 EvaluateTestQuestionPrompt(Prompt: TestQuestion): TestResult =
   With({
     Response: ParseJSON(
@@ -172,18 +169,20 @@ You can explore a complete implementation in the [AI Prompt sample](https://gith
 
 To create effective tests for AI-powered components:
 
-1. **Define acceptable ranges** instead of exact values for numeric outputs
-2. **Create guard rails** to verify outputs meet structural requirements
-3. **Test with diverse inputs** including edge cases and boundary conditions
-4. **Include negative test cases** to ensure the AI handles invalid inputs appropriately
-5. **Segment your tests** by functionality rather than specific content
-6. **Use appropriate tolerances** based on the criticality of the component
+- **Define acceptable ranges** instead of exact values for numeric outputs
+- **Create guard rails** to verify outputs meet structural requirements
+- **Test with diverse inputs** including edge cases and boundary conditions
+- **Include negative test cases** to ensure the AI handles invalid inputs appropriately
+- **Segment your tests** by functionality rather than specific content
+- **Use appropriate tolerances** based on the criticality of the component
 
 ## Common patterns for AI testing
 
+The following examples illustrate common approaches for testing AI-powered features in Power Platform applications. These patterns help you validate content classification, boundary conditions, and other scenarios where AI outputs may vary.
+
 ### Content classification testing
 
-```powerfx
+```powerappsfl
 // Test that a content classifier produces valid categories
 ClassifyContent(Text: Text): Record = 
   With({
@@ -197,7 +196,7 @@ ClassifyContent(Text: Text): Record =
 
 ### Boundary testing
 
-```powerfx
+```powerappsfl
 // Test AI Builder form processing with edge cases
 TestFormProcessing(FormType: Text): TestResult =
   With({
