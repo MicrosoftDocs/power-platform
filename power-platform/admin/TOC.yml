@@ -338,7 +338,7 @@
                       href: supported-email-service-configurations-server-side-synchronization.md
                 - name: Integration
                   items:
-                    - name: Enable server-based SharePoint integration
+                    - name: Configure server-based authentication with SharePoint on-premises
                       href: configure-server-based-authentication-sharepoint-on-premises.md
                     - name: Document management settings
                       href: enable-sharepoint-document-management-specific-entities.md
