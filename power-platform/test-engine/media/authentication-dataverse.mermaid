@@ -1,0 +1,26 @@
+sequenceDiagram
+    participant User
+    participant TestEngine
+    participant AzureCLI as Azure CLI
+    participant Certificate
+    participant DataProtectionAPI as Data Protection API
+    participant Dataverse
+    participant MicrosoftEntra as Microsoft Entra
+    
+    User->>TestEngine: Execute test command with certificate auth
+    TestEngine->>Certificate: Request certificate from store/env
+    Certificate->>TestEngine: Return certificate
+    
+    TestEngine->>AzureCLI: Request access token
+    AzureCLI->>MicrosoftEntra: Authenticate
+    MicrosoftEntra->>AzureCLI: Return token
+    AzureCLI->>TestEngine: Return access token
+    
+    TestEngine->>Dataverse: Request encrypted state using token
+    Dataverse->>TestEngine: Return encrypted state
+    
+    TestEngine->>DataProtectionAPI: Decrypt state with certificate
+    DataProtectionAPI->>TestEngine: Return decrypted state
+    
+    TestEngine->>TestEngine: Apply state to test context
+    TestEngine->>User: Execute test steps
