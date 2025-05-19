@@ -67,7 +67,7 @@ Users can create and manage private documents with [!INCLUDE[pn_onedrive_for_bus
 1. Expand **Users + permissions**, then select **Security roles**.
 1. Select a security role, then go to the **Miscellaneous privileges** tab.
 1. Assign the **OneDrive for Business** privilege to the appropriate level.
-1..  In the command bar, click **Save** to apply the changes. 
+1. In the command bar, click **Save** to apply the changes. 
    
 ### [Classic admin center](#tab/classic)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
