@@ -200,8 +200,7 @@ In CI/CD environments, Test Engine can run Playwright in headless mode:
         --provider canvas `
         --test-plan-file "$(Build.SourcesDirectory)/tests/testplan.te.yaml" `
         --tenant "$(TenantId)" `
-        --environment-id "$(EnvironmentId)" `
-        --headless
+        --environment-id "$(EnvironmentId)"
 ```
 
 ## Best Practices

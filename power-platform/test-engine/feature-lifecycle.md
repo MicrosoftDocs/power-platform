@@ -76,9 +76,9 @@ Test Engine uses Power Fx function prefixes as the primary mechanism to control 
 
 This organization provides several benefits:
 
-1. **Clear indication of feature maturity**: The prefix communicates the stability expectation
-2. **Controlled access**: Preview features must be explicitly enabled, protecting users from unintended changes
-3. **Version resilience**: As features mature, code can be updated gradually to use the new prefix
+- **Clear indication of feature maturity**: The prefix communicates the stability expectation
+- **Controlled access**: Preview features must be explicitly enabled, protecting users from unintended changes
+- **Version resilience**: As features mature, code can be updated gradually to use the new prefix
 
 For more information on configuring and using these prefixes, see [Use Power Fx function organization in testing](./powerfx-namespaces.md).
 
@@ -90,10 +90,10 @@ The Test Engine product team actively collaborates with the community to evolve 
 
 Community members can contribute to Test Engine in several ways:
 
-1. **Provider Extensions**: Create new providers to support additional application types
-1. **Power Fx Actions**: Develop custom actions to enable new testing scenarios
-1. **Feature Enhancements**: Improve existing functionality to address common scenarios
-1. **Reporting issues**: Report any issues you discover using our GitHub repository issues. Find existing known issues here: [aka.ms/TestEngineOpenIssues](https://aka.ms/TestEngineOpenIssues)
+- **Provider Extensions**: Create new providers to support additional application types
+- **Power Fx Actions**: Develop custom actions to enable new testing scenarios
+- **Feature Enhancements**: Improve existing functionality to address common scenarios
+- **Reporting issues**: Report any issues you discover using our GitHub repository issues. Find existing known issues here: [aka.ms/TestEngineOpenIssues](https://aka.ms/TestEngineOpenIssues)
 
 ### Pathway to Product Integration
 
@@ -109,10 +109,10 @@ Features that begin as open source contributions may be considered for inclusion
 
 Developers interested in contributing features that may eventually be included in the official product should:
 
-1. **Discuss Before Developing**: Open an issue in the repository to discuss the concept
-2. **Follow Design Guidelines**: Ensure the implementation aligns with Test Engine's architecture
-3. **Provide Comprehensive Tests**: Include automated tests demonstrating reliability
-4. **Document the Feature**: Create clear documentation for users
+- **Discuss Before Developing**: Open an issue in the repository to discuss the concept
+- **Follow Design Guidelines**: Ensure the implementation aligns with Test Engine's architecture
+- **Provide Comprehensive Tests**: Include automated tests demonstrating reliability
+- **Document the Feature**: Create clear documentation for users
 
 ## Benefits of the Feature Lifecycle Model
 
@@ -123,8 +123,5 @@ For Test Engine users, this model offers several advantages:
 - **Clear Expectations**: Understand feature stability through consistent prefix conventions
 - **Participation Opportunity**: Influence product direction through contributions and feedback
 
-## Summary
-
-The Test Engine Feature Lifecycle provides a structured approach to feature progression, from open source innovation to preview availability and ultimately to general availability. By leveraging Power Fx function organization and encouraging community contributions, Test Engine balances innovation with stability, allowing users to adopt new capabilities at their preferred pace.
 
 [!INCLUDE [footer-banner](../includes/footer-banner.md)]

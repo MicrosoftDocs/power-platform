@@ -173,7 +173,7 @@ These test function examples demonstrate how to define custom Power Fx functions
 
 #### BrowserConfiguration
 
-<!-- Add a description here -->
+Every [testSettings](#testsettings) requires at least one `BrowserConfiguration`.
 
 | Property | Type | Description |
 |---|---|---|
@@ -181,10 +181,6 @@ These test function examples demonstrate how to define custom Power Fx functions
 | `device` | string |Optional. The device to emulate when launching the browser. Should match the [devices supported by Playwright](https://playwright.dev/dotnet/docs/api/class-playwright#playwright-devices) |
 | `screenHeight` | integer |Optional. The height of the screen to use when launching the browser. If specified, `screenWidth` must also be specified. |
 | `screenWidth` | integer |Optional. The width of the screen to use when launching the browser. If specified, `screenHeight` must also be specified. |
-
-
-
-
 
 ## environmentVariables
 
