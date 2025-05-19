@@ -6,14 +6,9 @@ ms.author: snamilikonda
 ms.date: 05/09/2025
 ms.reviewer: jdaly
 ms.topic: article
-contributors:
- - JimDaly
- - pvillads
 ---
 
 # File Access Restrictions for Test Engine (preview)
-
-[This article is prerelease documentation and is subject to change.]
 
 > [!NOTE]
 > [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
