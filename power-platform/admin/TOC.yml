@@ -38,8 +38,6 @@
               href: what-are-preview-features-how-do-i-enable-them.md
             - name: Use the new Power Platform admin center (preview)
               href: new-admin-center.md
-            - name: Search with the discovery agent (preview)
-              href: discovery-agent.md
             - name: Requirements
               items:
                 - name: URLs and IP address ranges
