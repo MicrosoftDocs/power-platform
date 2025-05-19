@@ -59,25 +59,19 @@ If you're using the source code version of Test Engine, you'll also need:
 - [Git](/devops/develop/git/install-and-set-up-git) - To pull changes from [Power Apps Test Engine repository](https://github.com/microsoft/PowerApps-TestEngine)
 - Complete the source code [Setup Steps](https://github.com/microsoft/PowerApps-TestEngine/blob/main/README.md) to run tests using the local compiled version of Test Engine
 
-</details>
 
 ## Integration Options
 
 Test Engine integrates seamlessly with various ALM tools and processes
 
-## [Local Execution](#tab/local)
+### [Local Execution](#tab/local)
 
 You can use a local editor like [Visual Studio Code](https://code.visualstudio.com/) to edit the [YAML](./yaml.md) files to author the Test Engine tests. To run the tests locally:
 
 1. Ensure you have [Microsoft Power Platform CLI](../developer/cli/introduction.md) installed
-
 1. If you're using [source control integration](../alm/git-integration/source-control-operations.md) clone your project to your local machine
-
 1. Use the [pac test run](../developer/cli/reference/test.md#pac-test-run) to execute your test
-
 1. Review the pass / fail results of the test
-
-## Azure CLI
 
 The [Azure CLI](/cli/azure/install-azure-cli) is essential for obtaining access tokens to connect to Dataverse. Locally, you can use:
 
@@ -85,7 +79,7 @@ The [Azure CLI](/cli/azure/install-azure-cli) is essential for obtaining access 
 az login --allow-no-subscriptions
 ```
 
-## [Power Platform Pipelines](#tab/pipelines)
+### [Power Platform Pipelines](#tab/pipelines)
 
 You can easily integrate Test Engine with Power Platform's built-in pipelines for a native integrated experience:
 
@@ -96,9 +90,7 @@ You can easily integrate Test Engine with Power Platform's built-in pipelines fo
 You can trigger execution of automated tests when using a [Custom pipelines host](/power-platform/alm/custom-host-pipelines):
 
 1. Create a Power Automate cloud flow that triggers based on pipeline events
-
 1. Connect to your CI/CD system to run the tests
-
 1. Process test results and update the pipeline status
 
 The following diagram shows an example of this integration pattern:
@@ -106,13 +98,14 @@ The following diagram shows an example of this integration pattern:
 ![Example Power Automate cloud flow to trigger Azure DevOps connector action to trigger build](./media/gated-approval-process.png)
 
 This flow uses:
+
 - [Dataverse Triggers](../alm/extend-pipelines.md#triggers) to start a pipeline when conditions are met
 - [Trigger conditions](../alm/extend-pipelines.md#trigger-conditions) to determine which deployment stage applies
 - [Azure DevOps Connector](/connectors/visualstudioteamservices/) to start a build with [parameters](/connectors/visualstudioteamservices/#other-fields-parameter)
 - [Approval actions](/connectors/approvals/) to manage the approval process
 - [Dataverse Actions](/power-platform/alm/extend-pipelines#actions) to update the pipeline based on results
 
-### Custom CI/CD Integration with Power Automate
+#### Custom CI/CD Integration with Power Automate
 
 For organizations with existing CI/CD tooling, Test Engine integrates with custom pipelines through Power Automate using the [Power Platform Custom Host](../alm/custom-host-pipelines.md) feature. With the Custom Host approach, you can:
 
@@ -125,15 +118,13 @@ For organizations with existing CI/CD tooling, Test Engine integrates with custo
 
 This integration enables you to maintain your existing CI/CD investments while adding Test Engine's capabilities to your ALM process. The Custom Host acts as a bridge between Power Platform's native ALM features and your external testing infrastructure.
 
-## [DevOps Pipeline](#tab/devops)
+### [DevOps Pipeline](#tab/devops)
 
 You can extend your Power Platform Pipeline using [custom host](../alm/custom-host-pipelines.md) or directly integrate the [pac test run](../developer/cli/reference/test.md#pac-test-run) command into to execute your build scripts.
 
-### Example Script
-
-#### Azure DevOps Pipeline
-
 Here's an example of an Azure DevOps pipeline YAML file that demonstrates how to set up and run Power Apps Test Engine tests:
+
+<!-- TODO: Edit this script so that no line exceeds 100 characters. This way it won't require horizontal scrolling to read it -->
 
 ```yaml
 trigger:
@@ -270,9 +261,27 @@ steps:
   condition: always()
 ```
 
-## [GitHub Runner](#tab/github)
+#### Reference Components
+
+The following reference components may be useful as you build your automation test pipeline.
+
+| Component | Resource | Purpose |
+|-----------|----------|---------|
+| Pipeline Creation | [Create Azure DevOps pipeline](/azure/devops/pipelines/create-first-pipeline) | Set up your CI/CD pipeline |
+| Source Control | [Dataverse Git integration](/power-platform/alm/git-integration/connecting-to-git) | Connect to solution source code |
+| Authentication | [Service principals & managed identities](/azure/devops/integrate/get-started/authentication/service-principal-managed-identity) | Secure connection to Dataverse |
+| .NET Setup | [Use dotnet v2 task](/azure/devops/pipelines/tasks/reference/use-dotnet-v2) | Install .NET SDK if needed |
+| Test Execution | [PowerShell v2 task](/azure/devops/pipelines/tasks/reference/powershell-v2) | Execute `pac test run` commands |
+| Secret Management | [Variable groups](/azure/devops/pipelines/library/variable-groups) | Store secure test configuration values |
+| Config Files | [Secure files](/azure/devops/pipelines/library/secure-files) | Store test configuration files |
+| File Access | [Download secure file v1 task](/azure/devops/pipelines/tasks/reference/download-secure-file-v1) | Access configuration files during pipeline run |
+| Results Publishing | [Publish test results v2 task](/azure/devops/pipelines/tasks/reference/publish-test-results-v2) | Publish test results (*.trx) to Azure DevOps |
+
+### [GitHub Runner](#tab/github)
 
 Here's an example of a GitHub Actions workflow that performs the same test execution process:
+
+<!-- TODO: Edit this script so that no line exceeds 100 characters. This way it won't require horizontal scrolling to read it -->
 
 ```yaml
 name: Test Engine Execution
@@ -381,22 +390,6 @@ jobs:
       with:
         files: ./TestResults/**/*.trx
 ```
-
-### Reference Components
-
-The following reference components may be useful as you build your automation test pipeline.
-
-| Component | Resource | Purpose |
-|-----------|----------|---------|
-| Pipeline Creation | [Create Azure DevOps pipeline](/azure/devops/pipelines/create-first-pipeline) | Set up your CI/CD pipeline |
-| Source Control | [Dataverse Git integration](/power-platform/alm/git-integration/connecting-to-git) | Connect to solution source code |
-| Authentication | [Service principals & managed identities](/azure/devops/integrate/get-started/authentication/service-principal-managed-identity) | Secure connection to Dataverse |
-| .NET Setup | [Use dotnet v2 task](/azure/devops/pipelines/tasks/reference/use-dotnet-v2) | Install .NET SDK if needed |
-| Test Execution | [PowerShell v2 task](/azure/devops/pipelines/tasks/reference/powershell-v2) | Execute `pac test run` commands |
-| Secret Management | [Variable groups](/azure/devops/pipelines/library/variable-groups) | Store secure test configuration values |
-| Config Files | [Secure files](/azure/devops/pipelines/library/secure-files) | Store test configuration files |
-| File Access | [Download secure file v1 task](/azure/devops/pipelines/tasks/reference/download-secure-file-v1) | Access configuration files during pipeline run |
-| Results Publishing | [Publish test results v2 task](/azure/devops/pipelines/tasks/reference/publish-test-results-v2) | Publish test results (*.trx) to Azure DevOps |
 
 ---
 
