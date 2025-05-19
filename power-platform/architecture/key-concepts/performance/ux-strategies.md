@@ -32,6 +32,8 @@ If you ask 5 people their opinion on what consitutes good app performance, you'l
 - **Benchmark the current process**: If your solution is going to replace an old app or process, first aim to improve upon the status quo in one way or another. If replacing an app, ensure that your new app loads as quickly as before, and allows the user to get their tasks done more quickly as before. At a minimum, app performance should be maintained.
 - **Don't cause new problems**: If replacing a business process, your benchmark should focus on the timing of the full cycle and ensure that your solution is clearing bottlenecks to allow your users to get work done more quickly, while not creating new bottlenecks with the new process. Ensure that it is easy for users to understand how your new solution fits into their existing processes.
 
+Learn more about [defining performance targets](/power-platform/well-architected/performance-efficiency/performance-targets).
+
 ## Perform regular performance audits
 
 During the solution development process ensure that there are performance tests and/or checks throughout, so that any potential issues are caught before too much rework will be required:
@@ -39,6 +41,8 @@ During the solution development process ensure that there are performance tests 
 - **Match the production data size**: As closely as possible, ensure that your development data sources properly reflect the size and scope of production data. If a close match is not possible, test your solution with a small amount of data to test functionality and measure the performance of your solution with varying levels of data, 100 rows, 1000 rows, and 10,000 rows for example, and compare the performance of your solution at each data size. If the performance of your solution is trending upwards with data size, extrapolate how that performance would be at true production size, and ensure that stays within your agreed upon paramters.
 - **Track your solution performance over time**: Track your performance test results, and compare results across testing runs. If you are running these tests often, you will be better able to trace what changes were made since the last test, and therefore where fixes should be made. Big performance changes caused by solution changes in either direction (good or bad) should be tracked, and included as a part of "lessons learned"/"best practices" guidnace for future solutions.
 - **Test on target devices**: Regularly test your app on actual user devices to ensure consistent performance across different platforms and network conditions.
+
+Learn more about [continuous performance optimization](/power-platform/well-architected/performance-efficiency/continuous-performance-optimize).
 
 ## Reduce Data Load
 
@@ -48,6 +52,8 @@ Loading large amounts of data can significantly slow down your app:
 - **Avoid delegation warnings**: Ensure that the row limit for delegation warnings in any canvas app is set very low, to 5 or 10. This will ensure that any data call that cannot be delegated is flagged in the formula bar, allowing the app developer to be purposeful on allowing potentially non-delegated queries, and not be unaware of the issue because the amount of data returned from the development data source is not enough to trigger the default warning limit value.
 
   Non-delegated queries can be acceptable if there is a constant, small amount of data to be returned, as in configuration data or other small data sets.
+
+Learn more about [optimizing your solution's logic](/power-platform/well-architected/performance-efficiency/optimize-code).
 
 ## Next step
 

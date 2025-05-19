@@ -72,3 +72,15 @@ To mitigate Select N+1 queries and improve performance, follow these best practi
 - **Optimize the data structure**: If possible, adjust your data source structure to include related data within a single table or view, reducing the need for additional lookups or queries.
 
 By proactively identifying and addressing Cross-screen References and Select N+1 query patterns, you can significantly enhance your canvas app's performance, responsiveness, and overall user experience.
+
+## Further reading
+
+There are plenty of issues that can pop up, depending on your particular app, the usage patterns, and so on.
+
+Find out more about [troubleshooting canvas app performance issues](/troubleshoot/power-platform/power-apps/canvas-app-performance/troubleshoot-perf-table).
+
+Very often, having proper coding standards in place along with a strong community to communicate what those standards are and why they are useful can be key to building apps at scale.
+
+Learn more about [Power Apps coding guidelines](/power-apps/guidance/coding-guidelines/overview).
+
+Find out more about [nurturing a Power Platform community within your organization](/power-platform/guidance/adoption/nurture-best-practices).

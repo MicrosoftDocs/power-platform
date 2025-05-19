@@ -55,6 +55,12 @@ This page provides an overview of key tools available for monitoring and optimiz
 
   To use Solution Checker, go to your solution in the Power Apps portal, select "Solution Checker," and run the analysis. The tool will generate a detailed report highlighting issues and suggesting fixes, such as optimizing queries or refactoring code. Regularly running Solution Checker helps you catch potential problems early and maintain high-quality solutions.
 
+- **Distributed tracing**
+
+At times, an issue with performance may be spread across services, or buried deep within service calls such that it becomes hard to trace, only happens intermittently with no discernible pattern, etc. One solution to this is to implement a pattern of distributed tracing, so that when issues do happen, you have the telemetry you need to come a conclusion on the problem at hand.
+
+Learn more about how to implement a [distributed tracing pattern](power-platform/architecture/key-concepts/distributed-tracing).
+
 ## Recommendations across solution complexity
 
 When evaluating Power Platform solutions, it's helpful to classify them into three tiers of complexity: Low risk, Medium risk, and High risk. Each tier reflects the potential impact and technical sophistication of the solution, with Low risk solutions being simple and personal, Medium risk involving moderate business impact or integration, and High risk encompassing mission-critical or highly integrated systems. As the complexity increases from Low to High risk, the requirements for monitoring, testing, and optimization become more stringent, ensuring that each solution receives the right level of attention and best practices to match its importance and potential risks.
