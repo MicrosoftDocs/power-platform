@@ -3,14 +3,9 @@ title: Power Apps Test Engine features (preview)
 description: Summary of Power Apps Test Engine features.
 author: grant-archibald-ms
 ms.author: grarchib
-ms.date: 05/15/2025
+ms.date: 05/19/2025
 ms.reviewer: jdaly
 ms.topic: article
-contributors:
- - JimDaly
- - jt000
- - FrankDahl
- - grant-archibald-ms
 ---
 
 # Power Apps Test Engine features (preview)
@@ -22,7 +17,7 @@ Power Apps Test Engine provides a comprehensive set of features for effectively 
 
 ## Application testing capabilities
 
-Test Engine capabiltities start with testing applications.
+Test Engine capabilities start with testing applications.
 
 ### Canvas application testing
 
@@ -70,7 +65,7 @@ Test Engine capabiltities start with testing applications.
 
 **Key capabilities:**
 
-- **CRUD operations:** Test create, read, update, and delete operations on Dataverse records
+- **CRUD operations:** Tests create, read, update, and delete operations on Dataverse records
 - **Business rule validation:** Verify that business rules execute as expected
 - **Security model testing:** Validate that security roles and permissions work correctly
 - **Calculated and rollup field testing:** Ensure formulas and aggregations compute correctly
@@ -86,11 +81,11 @@ Test Engine capabiltities start with testing applications.
 
 ## Specialized testing features
 
-The following specialized features enable you to test advanced scenarios such as AI-powered components, authentication and security, and data simulation. These capabilities help ensure your Power Platform solutions are robust, secure, and reliable even in complex or non-deterministic environments.
+The following specialized features enable you to test advanced scenarios such as AI-powered components, authentication and security, and data simulation. These capabilities help ensure your Power Platform solutions are robust, secure, and reliable even in complex or nondeterministic environments.
 
 ### AI and Copilot capabilities testing
 
-**What it enables:** Test AI-powered components with specialized functions that account for non-deterministic behaviors.
+**What it enables:** Test AI-powered components with specialized functions that account for nondeterministic behaviors.
 
 **Key capabilities:**
 
@@ -112,7 +107,7 @@ The following specialized features enable you to test advanced scenarios such as
 **Key capabilities:**
 
 - **[Multiple authentication methods](authentication.md):** Support for interactive, service principal, and session persistence
-- **[MFA handling](authentication-guide.md):** Test in environments that enforce Multi-Factor Authentication
+- **[MFA handling](authentication-guide.md):** Test in environments that enforce multifactor authentication
 - **Simulated user contexts:** Test with different security roles and permissions
 - **Token management:** Automate the handling of authentication tokens across test steps
 
@@ -154,7 +149,7 @@ The following features are designed to enhance the experience of test authors an
 **Key capabilities:**
 
 - **Natural language test generation:** Create tests by describing scenarios in plain language
-- **Source context awareness:** Leverage solution files to generate accurate control references and navigation flows
+- **Source context awareness:** Use solution files to generate accurate control references and navigation flows
 - **Sample-based learning:** Use existing samples as templates for more complex test scenarios
 - **Guided test patterns:** Generate complete test suites including edge cases and exception handling
 
@@ -179,7 +174,7 @@ The following features are designed to enhance the experience of test authors an
 
 **When to use it:**
 
-- Leveraging existing Power Fx knowledge for test creation
+- Using existing Power Fx knowledge for test creation
 - Creating tests that app makers can understand and maintain
 - Building complex validation logic for sophisticated app behaviors
 
@@ -233,7 +228,7 @@ The following diagnostics and troubleshooting features help you quickly identify
 
 - **Screenshot capture:** Automatically take screenshots at key test points
 - **Video recording:** Record videos of test execution for complex scenarios
-- **Error context capture:** Collect additional context information when tests fail
+- **Error context capture:** Collect more context information when tests fail
 - **Tracing and logs:** Generate detailed execution logs for debugging
 
 **When to use it:**
@@ -244,17 +239,17 @@ The following diagnostics and troubleshooting features help you quickly identify
 
 ## Upcoming capabilities
 
-The following upcoming capabilities highlight planned enhancements for the Test Engine. These features will expand support for conversational AI, Power Automate flows, and advanced AI testing scenarios to further strengthen your testing strategy.
+The following upcoming capabilities highlight planned enhancements for the Test Engine. These features expand support for conversational AI, Power Automate flows, and advanced AI testing scenarios to further strengthen your testing strategy.
 
 ### Microsoft Copilot Studio integration
 
-Planned integration with Microsoft Copilot Studio will enable testing of conversational experiences and AI-powered virtual agents, allowing you to validate bot responses, conversation flows, and integration with backend systems.
+Planned integration with Microsoft Copilot Studio enables testing of conversational experiences and AI-powered virtual agents, allowing you to validate bot responses, conversation flows, and integration with backend systems.
 
 ### Power Automate testing
 
-Enhanced support for Power Automate testing is in development, which will provide more comprehensive capabilities for testing automated flows, flow actions, and triggers. This will support both integration testing and unit testing approaches for flow components.
+Enhanced support for Power Automate testing is in development, which provides more comprehensive capabilities for testing automated flows, flow actions, and triggers. This work supports both integration testing and unit testing approaches for flow components.
 
-### Additional AI testing capabilities
+### More AI testing capabilities
 
 Future enhancements include an AI Evaluator for the AI Builder SDK and expanded support for custom evaluation scenarios, making it easier to validate AI-powered features with predictable, repeatable test results.
 

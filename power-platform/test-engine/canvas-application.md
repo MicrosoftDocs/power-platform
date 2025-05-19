@@ -3,7 +3,7 @@ title: "Test canvas applications with Test Engine (preview)"
 description: "Learn how to test Power Apps Canvas applications using Test Engine"
 author: grant-archibald-ms
 ms.author: grarchib
-ms.date: 05/16/2025
+ms.date: 05/19/2025
 ms.reviewer: jdaly
 ms.topic: article
 contributors:
@@ -88,15 +88,15 @@ $env:user1Email = "someone@example.com"
 
 Use the PAC CLI [pac test run](../developer/cli/reference/tests.md#pac-test-run) command to run your test plan.
 
-### Required Parameters
+### Required parameters
 
-You'll need to provide the following information:
+You need to provide the following information:
 
 - `--test-plan-file`: Path to your test plan file
 - `--tenant`: Your tenant ID
 - `--environment-id`: Your environment ID
 
-### Example Command
+### Example command
 
 Here's an example of running a test for a canvas application:
 
@@ -118,7 +118,7 @@ pac test run `
    -env your-environmentid-guid-value
 ```
 <!-- The following section is duplicated in two other articles -->
-### Dataverse Integration
+### Dataverse integration
 
 To enable Dataverse integration with your canvas app tests, you can add the `enableDataverseFunctions` parameter in your test settings:
 
@@ -130,7 +130,7 @@ testSettings:
       enableDataverseFunctions: true
 ```
 
-When you enable Dataverse integration, you're required to open Azure CLI with a user or service principal that has rights to the Dataverse environment. You can use the [az login](/cli/azure/reference-index#az-login) command.  More information: [Sign in with Azure CLI](/cli/azure/authenticate-azure-cli).
+When you enable Dataverse integration, you're required to open Azure CLI with a user or service principal that has rights to the Dataverse environment. You can use the [az login](/cli/azure/reference-index#az-login) command. More information: [Sign in with Azure CLI](/cli/azure/authenticate-azure-cli).
 
 The Dataverse API URL used for integration is obtained either from the host domain name of the [pac test run](../developer/cli/reference/test.md#pac-test-run) `--domain` parameter or by defining an [PowerShell environment variable](/powershell/module/microsoft.powershell.core/about/about_environment_variables) named `DATAVERSE_URL`.
 

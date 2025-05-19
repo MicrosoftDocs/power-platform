@@ -3,7 +3,7 @@ title: "Power Apps Test Engine YAML format (preview)"
 description: Describes the YAML format for test following the same guidelines as Power Fx.
 author: grant-archibald-ms
 ms.author: grarchib
-ms.date: 02/23/2024
+ms.date: 05/19/2025
 ms.reviewer: jdaly
 ms.topic: reference
 contributors:
@@ -57,7 +57,7 @@ When you define your apps within solutions your tests remain portable across env
 To locate the app's logical name:
 
 1. Open the solution containing your app in Power Apps
-1. Use the **Name** (not **Display name**) in the list. The name value will include the customization prefix for the solution publisher.
+1. Use the **Name** (not **Display name**) in the list. The name value includes the customization prefix for the solution publisher.
 
 
 #### Standalone apps
@@ -126,7 +126,7 @@ Used to define settings for the tests in the test plan.
 | `browserConfigurations` | [BrowserConfiguration](#browserconfiguration)[] |Required. A list of browser configurations to be tested. At least one browser must be specified. |
 | `filePath` | string |Optional. The file path to a separate yaml file with all the test settings. If provided, it will **override** all the test settings in the test plan. |
 | `headless` | boolean |Optional. Default is true. If set to false, the browser shows up during test execution. |
-| `locale` | string |Optional. The locale/culture syntax in which the test cases or test steps are written in.  If unspecified, `CultureInfo.CurrentCulture` is used for the locale by default for parsing the test steps. See [Region and language considerations](#region-and-language-considerations) |
+| `locale` | string |Optional. The locale/culture syntax in which the test cases or test steps are written in. If unspecified, `CultureInfo.CurrentCulture` is used for the locale by default for parsing the test steps. See [Region and language considerations](#region-and-language-considerations) |
 | `recordVideo` | boolean |Optional. Default is false. If set to true, a video recording of the test is captured. |
 | `timeout` | integer |Optional. Timeout value in milliseconds. Default is 30,000 milliseconds (30s). If any operation takes longer than the timeout limit, it ends the test in a failure. |
 |`powerFxTestTypes`|`name` `value` pair|Optional. A list of type name and Power Fx type definitions. See [powerFxTestTypes example](#powerfxtesttypes-example)|
@@ -134,7 +134,7 @@ Used to define settings for the tests in the test plan.
 
 ### Region and language considerations
 
-Test Engine supports various language and regional settings such as decimal and list separators. The `testSettings.locale` property controls these behaviors. See [Global Support in Microsoft Power Fx](../power-fx/global.md) for more information.
+Test Engine supports various language and regional settings such as decimal and list separators. The `testSettings.locale` property controls these behaviors. For more information, see [Global Support in Microsoft Power Fx](../power-fx/global.md).
 
 Look at these sample configurations on the [PowerApps-TestEngine GitHub repository](https://github.com/microsoft/PowerApps-TestEngine):
 
@@ -169,7 +169,7 @@ testFunctions:
       Preview.GetOptions(control);
 ```
 
-These test function examples demonstrate how to define custom Power Fx functions for use in your test cases. The `WaitUntilVisible` function uses a DOM selector to wait until a specified control is visible, leveraging Playwright actions. The GetOptions function retrieves the options for a specified control from a [Model Driven App](./model-driven-application.md) (MDA), utilizing the Power Fx control. These custom functions enhance the flexibility and power of your test definitions, allowing for more complex and specific test scenarios.
+These test function examples demonstrate how to define custom Power Fx functions for use in your test cases. The `WaitUntilVisible` function uses a DOM selector to wait until a specified control is visible, using Playwright actions. The GetOptions function retrieves the options for a specified control from a [Model Driven App](./model-driven-application.md) (MDA), utilizing the Power Fx control. These custom functions enhance the flexibility and power of your test definitions, allowing for more complex and specific test scenarios.
 
 #### BrowserConfiguration
 

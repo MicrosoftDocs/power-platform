@@ -1,9 +1,9 @@
 ---
-title: "Test Engine Feature Lifecycle (preview)"
+title: "Test Engine feature lifecycle (preview)"
 description: "Describes how Test Engine features progress from open source to preview to general availability"
 author: grant-archibald-ms
 ms.author: grarchib
-ms.date: 05/16/2025
+ms.date: 05/19/2025
 ms.reviewer: jdaly
 ms.topic: article
 contributors:
@@ -11,35 +11,35 @@ contributors:
  - pvillads
 ---
 
-# Test Engine Feature Lifecycle (preview)
+# Test Engine feature lifecycle (preview)
 
 > [!NOTE]
 > [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
 
 Test Engine has a structured feature lifecycle model to manage the progression of features from experimental concepts to generally available capabilities. This approach allows users to access new functionality at different maturity levels while ensuring reliability and stability for production scenarios.
 
-## Feature Progression in Test Engine
+## Feature progression in Test Engine
 
 Test Engine features follow a defined pathway from inception to general availability in three phases:
 
-1. [Open Source Innovation (Preview Phase)](#1-open-source-innovation-preview-phase)
-1. [Preview Features (Evaluation Phase)](#2-preview-features-evaluation-phase)
-1. [General Availability (Stable Phase)](#3-general-availability-stable-phase)
+1. [Open source innovation (preview phase)](#1-open-source-innovation-preview-phase)
+1. [Preview features (evaluation phase)](#2-preview-features-evaluation-phase)
+1. [General availability (stable phase)](#3-general-availability-stable-phase)
 
-### 1. Open Source Innovation (Preview Phase)
+### 1. Open source innovation (preview phase)
 
 The journey of many Test Engine features begins in the [open source repository](https://github.com/microsoft/PowerApps-TestEngine), where:
 
 - Community members and Microsoft engineers propose and contribute new features
-- New providers and extensions are developed to support additional scenarios
+- New providers and extensions are developed to support more scenarios
 - Custom Power Fx actions are created and tested in real-world environments
 - Experimental concepts are validated before formal product integration
 
 This preview phase represents the most cutting-edge capabilities, available to developers who build the Test Engine from source.
 
-### 2. Preview Features (Evaluation Phase)
+### 2. Preview features (evaluation phase)
 
-Features that demonstrate value in the open source environment may progress to the evaluation phase, where they become available in the official Power Platform CLI (`pac`) release with explicit opt-in:
+Features that demonstrate value in the open source environment might progress to the evaluation phase, where they become available in the official Power Platform CLI (`pac`) release with explicit opt-in:
 
 - Features are accessible through the `Preview` function prefix in Power Fx
 - Functionality must be explicitly enabled in test settings:
@@ -52,10 +52,10 @@ testSettings:
       - Preview
 ```
 
-- Features in this phase receive more extensive testing but may still evolve based on feedback
+- Features in this phase receive more extensive testing but might still evolve based on feedback
 - Documentation includes the Preview designation to indicate potential future changes
 
-### 3. General Availability (Stable Phase)
+### 3. General availability (stable phase)
 
 After thorough testing and refinement in the Preview phase, stable features progress to general availability:
 
@@ -64,14 +64,14 @@ After thorough testing and refinement in the Preview phase, stable features prog
 - Features are considered production-ready with full support
 - Documentation removes the Preview designation
 
-## Enabling Features Through Power Fx Function Organization
+## Enabling features through Power Fx function organization
 
 Test Engine uses Power Fx function prefixes as the primary mechanism to control feature availability:
 
 | Function Prefix | Description | Availability |
 |-----------|-------------|-------------|
 | `TestEngine` | Production-ready features available to all users | Enabled by default |
-| `Preview` | Features under evaluation that may change | Requires explicit opt-in |
+| `Preview` | Features under evaluation that might change | Requires explicit opt-in |
 | (None) | Core Power Fx functions | Always available |
 
 This organization provides several benefits:
@@ -82,22 +82,22 @@ This organization provides several benefits:
 
 For more information on configuring and using these prefixes, see [Use Power Fx function organization in testing](./powerfx-namespaces.md).
 
-## Contributing to Test Engine's Evolution
+## Contributing to Test Engine's evolution
 
 The Test Engine product team actively collaborates with the community to evolve the product:
 
-### Open Source Contributions
+### Open source contributions
 
 Community members can contribute to Test Engine in several ways:
 
-- **Provider Extensions**: Create new providers to support additional application types
+- **Provider Extensions**: Create new providers to support more application types
 - **Power Fx Actions**: Develop custom actions to enable new testing scenarios
 - **Feature Enhancements**: Improve existing functionality to address common scenarios
 - **Reporting issues**: Report any issues you discover using our GitHub repository issues. Find existing known issues here: [aka.ms/TestEngineOpenIssues](https://aka.ms/TestEngineOpenIssues)
 
-### Pathway to Product Integration
+### Pathway to product integration
 
-Features that begin as open source contributions may be considered for inclusion in the official Power Platform CLI (`pac test run`) through the following process:
+Features that begin as open source contributions might be considered for inclusion in the official Power Platform CLI (`pac test run`) through the following process:
 
 1. **Initial Development**: Feature is created and tested in the open source repository
 2. **Community Validation**: Other users verify the feature's utility and stability
@@ -105,16 +105,16 @@ Features that begin as open source contributions may be considered for inclusion
 4. **Preview Integration**: If approved, the feature is integrated into the Preview prefix
 5. **General Availability**: After sufficient validation, the feature graduates to the TestEngine prefix
 
-### Collaboration with the Product Team
+### Collaboration with the product team
 
-Developers interested in contributing features that may eventually be included in the official product should:
+Developers interested in contributing features that might eventually be included in the official product should:
 
 - **Discuss Before Developing**: Open an issue in the repository to discuss the concept
 - **Follow Design Guidelines**: Ensure the implementation aligns with Test Engine's architecture
 - **Provide Comprehensive Tests**: Include automated tests demonstrating reliability
 - **Document the Feature**: Create clear documentation for users
 
-## Benefits of the Feature Lifecycle Model
+## Benefits of the feature lifecycle model
 
 For Test Engine users, this model offers several advantages:
 

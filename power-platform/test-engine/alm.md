@@ -18,27 +18,27 @@ contributors:
 
 Application Lifecycle Management (ALM) is a comprehensive approach to managing the lifecycle of applications from initial concept through development, testing, deployment, and ongoing maintenance. In the context of Power Platform, incorporating automated testing with Test Engine into your ALM process ensures that applications are thoroughly tested at each stage of development, resulting in higher quality releases.
 
-## Understanding Test Automation in ALM
+## Understanding test automation in ALM
 
 Test automation plays a critical role in the ALM process by:
 
-- **Ensuring Quality** - Verifying that applications function as expected before deployment
-- **Reducing Risk** - Catching issues early before they reach production environments
-- **Enabling Continuous Integration** - Supporting automated build verification testing
-- **Facilitating Controlled Deployments** - Adding quality gates to release pipelines
+- **Ensuring quality** - Verifying that applications function as expected before deployment
+- **Reducing risk** - Catching issues early before they reach production environments
+- **Enabling continuous integration** - Supporting automated build verification testing
+- **Facilitating controlled deployments** - Adding quality gates to release pipelines
 
 With Power Apps Test Engine, you can integrate automated testing into your existing Power Platform ALM workflows, regardless of which CI/CD tooling you use.
 
-## Test Automation Lifecycle
+## Test automation lifecycle
 
 The Test Engine supports a complete testing lifecycle that integrates with your ALM processes:
 
 1. **Development** - Create and run tests locally during app development
-2. **Build Validation** - Execute tests as part of automated build verification
-3. **Release Gates** - Use test results as quality gates for controlled deployments
-4. **Production Verification** - Validate critical functionality in production environments
+2. **Build validation** - Execute tests as part of automated build verification
+3. **Release gates** - Use test results as quality gates for controlled deployments
+4. **Production verification** - Validate critical functionality in production environments
 
-## Getting Started with Test Automation in ALM
+## Getting started with test automation in ALM
 
 To get started with incorporating Test Engine into your ALM processes:
 
@@ -51,7 +51,7 @@ To get started with incorporating Test Engine into your ALM processes:
 > [!TIP]
 > Start with critical user journeys and gradually expand your automated test coverage as you become more familiar with Test Engine.
 
-## Source Code Version of Test Engine (Optional)
+## Source code version of Test Engine (optional)
 
 If you're using the source code version of Test Engine, you'll also need:
 
@@ -60,7 +60,7 @@ If you're using the source code version of Test Engine, you'll also need:
 - Complete the source code [Setup Steps](https://github.com/microsoft/PowerApps-TestEngine/blob/main/README.md) to run tests using the local compiled version of Test Engine
 
 
-## Integration Options
+## Integration options
 
 Test Engine integrates seamlessly with various ALM tools and processes
 
@@ -105,7 +105,7 @@ This flow uses:
 - [Approval actions](/connectors/approvals/) to manage the approval process
 - [Dataverse Actions](/power-platform/alm/extend-pipelines#actions) to update the pipeline based on results
 
-#### Custom CI/CD Integration with Power Automate
+#### Custom CI/CD integration with Power Automate
 
 For organizations with existing CI/CD tooling, Test Engine integrates with custom pipelines through Power Automate using the [Power Platform Custom Host](../alm/custom-host-pipelines.md) feature. With the Custom Host approach, you can:
 
@@ -261,9 +261,9 @@ steps:
   condition: always()
 ```
 
-#### Reference Components
+#### Reference components
 
-The following reference components may be useful as you build your automation test pipeline.
+The following reference components might be useful as you build your automation test pipeline.
 
 | Component | Resource | Purpose |
 |-----------|----------|---------|
@@ -275,7 +275,7 @@ The following reference components may be useful as you build your automation te
 | Secret Management | [Variable groups](/azure/devops/pipelines/library/variable-groups) | Store secure test configuration values |
 | Config Files | [Secure files](/azure/devops/pipelines/library/secure-files) | Store test configuration files |
 | File Access | [Download secure file v1 task](/azure/devops/pipelines/tasks/reference/download-secure-file-v1) | Access configuration files during pipeline run |
-| Results Publishing | [Publish test results v2 task](/azure/devops/pipelines/tasks/reference/publish-test-results-v2) | Publish test results (*.trx) to Azure DevOps |
+| Results Publishing | [Publish test results v2 task](/azure/devops/pipelines/tasks/reference/publish-test-results-v2) | Publish test results (`*.trx`) to Azure DevOps |
 
 ### [GitHub Runner](#tab/github)
 

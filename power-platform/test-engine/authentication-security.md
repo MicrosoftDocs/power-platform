@@ -3,7 +3,7 @@ title: "Authentication security architecture in Test Engine (preview)"
 description: "Technical overview of authentication security implementation in Test Engine"
 author: grant-archibald-ms
 ms.author: grarchib
-ms.date: 05/15/2025
+ms.date: 05/19/2025
 ms.reviewer: jdaly
 ms.topic: article
 ---
@@ -22,11 +22,11 @@ Test Engine supports two primary authentication methods:
 - **Storage State Authentication** - Based on persistent browser cookies and storage state
 - **Certificate-Based Authentication** - Based on X.509 certificates and Dataverse integration
 
-Both methods are designed to support modern security requirements including Multi-Factor Authentication (MFA) and conditional access policies.
+Both methods are designed to support modern security requirements including multifactor authentication (MFA) and conditional access policies.
 
 ## Storage state authentication architecture
 
-The storage state authentication method leverages Playwright's browser context management to securely store and reuse authentication tokens.
+The storage state authentication method uses Playwright's browser context management to securely store and reuse authentication tokens.
 
 :::image type="content" source="media/authentication-flow.png" alt-text="Overview of authentication flow in Test Engine":::
 
@@ -65,9 +65,9 @@ The following sections describe the encryption algorithms and key management app
 
 By default, data values are encrypted with a combination of AES-256-CBC and HMACSHA256:
 
-:::image type="content" source="media/authentication-dataverse.png" alt-text="Overview of  Dataverse encryption using ASP.Net Data Protection API":::
+:::image type="content" source="media/authentication-dataverse.png" alt-text="Overview of Dataverse encryption using ASP.Net Data Protection API":::
 
-This provides:
+This approach provides:
 
 1. **Confidentiality** through AES-256 encryption
 2. **Integrity** through HMAC verification
@@ -93,11 +93,11 @@ Test Engine's authentication architecture is designed to work seamlessly with Mi
 
 ## Advanced security considerations
 
-The following sections highlight additional security features and integrations that enhance the protection of authentication data and support secure operations in enterprise environments.
+The following sections highlight other security features and integrations that enhance the protection of authentication data and support secure operations in enterprise environments.
 
 ### Dataverse security model integration
 
-Test Engine leverages Dataverse's robust security model:
+Test Engine uses Dataverse's robust security model:
 
 - **Record-Level Security** - Controls access to stored authentication data
 - **Sharing Model** - Enables secure sharing of test authentication contexts
@@ -127,7 +127,7 @@ Potential future enhancements to the authentication security architecture includ
 - Integration with Azure Key Vault for enhanced secret management
 - Support for managed identities in Azure environments
 - Enhanced logging and security monitoring capabilities
-- Additional protection providers for cross-platform scenarios
+- More protection providers for cross-platform scenarios
 
 ### Related articles
 

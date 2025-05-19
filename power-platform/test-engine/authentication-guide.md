@@ -3,7 +3,7 @@ title: "Authentication Guide for Power Apps Test Engine (preview)"
 description: "Step-by-step guide for setting up authentication in Test Engine"
 author: grant-archibald-ms
 ms.author: grarchib
-ms.date: 05/17/2025
+ms.date: 05/19/2025
 ms.reviewer: jdaly
 ms.topic: article
 contributors:
@@ -59,7 +59,7 @@ Enter your test user account credentials
 Your authentication is now saved.
 
 - Test Engine securely stores your authentication
-- Future test runs will use the saved state without requiring sign-in
+- Future test runs use the saved state without requiring sign-in
 - Tokens refresh automatically when needed
 
 ## Team setup: Dataverse authentication
@@ -76,7 +76,7 @@ Dataverse authentication is perfect for teams and CI/CD pipelines. It securely s
 
 ### Step 2: Create a certificate for encryption
 
-For a self-signed certificate (development only), run this in PowerShell:
+For a self-signed certificate (development only), run this the following PowerShell script:
 
 ```powershell
 $Params = @{
@@ -130,7 +130,7 @@ Complete the following steps to set up your test user:
    ```
 
    > [!NOTE]
-   > Unlike [StorageState](#quick-setup-storagestate-authentication), in this case you must the `--user-auth` parameter with a value of `Dataverse`.
+   > Unlike [StorageState](#quick-setup-storagestate-authentication), in this case you must use the `--user-auth` parameter with a value of `Dataverse`.
 
 1. Complete the interactive sign-in when prompted.
 
@@ -169,7 +169,7 @@ Complete the following steps to create a client secret.
 1. Go to **Certificates & secrets**
 1. Select **New client secret**
 1. Add a description and choose an expiration
-1. Copy the secret **Value** immediately (you won't be able to see it again)
+1. Copy the secret **Value** immediately (you aren't able to see it again)
 
 ### Step 4: Add the application user to Dataverse
 

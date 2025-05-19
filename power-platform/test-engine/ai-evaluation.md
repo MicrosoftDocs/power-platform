@@ -23,7 +23,7 @@ Traditional testing relies on deterministic inputs producing consistent outputs.
 - Selecting different versions of models
 - Minor variations in natural language processing
 - Confidence scores that fluctuate within normal ranges
-- Context-dependent reasoning that may take different paths
+- Context-dependent reasoning that might take different paths
 
 ## Strategies for testing nondeterministic AI
 
@@ -50,7 +50,7 @@ This approach allows you to:
 
 ### Implement tolerance-based validation
 
-Instead of expecting exact matches, verify that outputs meet criteria within acceptable thresholds. The following is an example:
+Instead of expecting exact matches, verify that outputs meet criteria within acceptable thresholds. The following code is an example:
 
 ```powerappsfl
 // Validate that the sentiment score is within appropriate range
@@ -178,7 +178,7 @@ To create effective tests for AI-powered components:
 
 ## Common patterns for AI testing
 
-The following examples illustrate common approaches for testing AI-powered features in Power Platform applications. These patterns help you validate content classification, boundary conditions, and other scenarios where AI outputs may vary.
+The following examples illustrate common approaches for testing AI-powered features in Power Platform applications. These patterns help you validate content classification, boundary conditions, and other scenarios where AI outputs might vary.
 
 ### Content classification testing
 

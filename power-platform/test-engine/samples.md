@@ -4,31 +4,31 @@ description: Examples and sample tests for Power Apps Test Engine
 # Update samples.md that reads all the folders from https://github.com/microsoft/PowerApps-TestEngine/tree/main/samples and uses any readme.md to summarize the sample. Generate samples as table with link to the sample and a second column with the description
 author: grant-archibald-ms
 ms.author: grarchib
-ms.date: 05/17/2025
+ms.date: 05/19/2025
 ms.reviewer: jdaly
 ms.topic: article
 ---
 
-# Power Apps Test Engine Samples
+# Power Apps Test Engine samples
 
 > [!NOTE]
 > [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
 
 This page provides an overview of the sample projects available in the Power Apps Test Engine repository. These samples demonstrate various testing capabilities and scenarios to help you understand how to create effective tests for your Power Platform solutions.
 
-## Available Samples
+## Available samples
 
 The following samples are available in the [PowerApps-TestEngine GitHub repository](https://github.com/microsoft/PowerApps-TestEngine/tree/main/samples):
 
 | Sample | Description |
 |--------|-------------|
 | [Basic Gallery](https://github.com/microsoft/PowerApps-TestEngine/tree/main/samples/basicgallery) | Demonstrates how to test interactions with controls within a basic gallery in a canvas app. Sample shows how to assert label text values and navigate between gallery items. |
-| [Button Clicker](https://github.com/microsoft/PowerApps-TestEngine/tree/main/samples/buttonclicker) | Simple test that verifies a counter increments when a button is clicked. Shows how to use test lifecycle hooks (OnTestCaseStart, OnTestCaseComplete) and basic control interactions. |
+| [Button Clicker](https://github.com/microsoft/PowerApps-TestEngine/tree/main/samples/buttonclicker) | Simple test that verifies a counter increments when a button is clicked. Shows how to use test lifecycle hooks (`OnTestCaseStart`, `OnTestCaseComplete`) and basic control interactions. |
 | [Calculator](https://github.com/microsoft/PowerApps-TestEngine/tree/main/samples/calculator) | Tests a calculator component with multiple operations (Add, Subtract, Multiply, Divide). Demonstrates how to test components with input and output controls. |
 | [Copilot Studio Kit](https://github.com/microsoft/PowerApps-TestEngine/tree/main/samples/copilotstudiokit) | Advanced sample demonstrating tests for the Power CAT Copilot Studio Kit. Features testing of multiple custom pages, report generation, and entity-based testing. |
 | [Containers](https://github.com/microsoft/PowerApps-TestEngine/tree/main/samples/containers) | Shows how to interact with controls inside container components, verifying property changes and event handling. |
 | [Dataverse](https://github.com/microsoft/PowerApps-TestEngine/tree/main/samples/dataverse) | Demonstrates testing Dataverse operations using Power Fx actions. Shows how to create, read, update, and delete records directly with Dataverse. |
-| [Different Variable Types](https://github.com/microsoft/PowerApps-TestEngine/tree/main/samples/differentvariabletypes) | Showcases testing with multiple data types (String, Number, Boolean, Date, Record, Table) using various controls like TextInput, Rating, Toggle, DatePicker, Dropdown, and ComboBox. |
+| [Different Variable Types](https://github.com/microsoft/PowerApps-TestEngine/tree/main/samples/differentvariabletypes) | Showcases testing with multiple data types (`String`, `Number`, `Boolean`, `Date`, `Record`, `Table`) using various controls like `TextInput`, `Rating`, `Toggle`, `DatePicker`, `Dropdown`, and `ComboBox`. |
 | [Many Screens](https://github.com/microsoft/PowerApps-TestEngine/tree/main/samples/manyscreens) | Tests navigation between multiple screens in a canvas app, verifying correct screen transitions and content. |
 | [MDA Header Control](https://github.com/microsoft/PowerApps-TestEngine/tree/main/samples/mdaheadercontrol) | Tests the header control interactions in a model-driven app, demonstrating testing of model-driven app UI elements. |
 | [Nested Gallery](https://github.com/microsoft/PowerApps-TestEngine/tree/main/samples/nestedgallery) | Demonstrates testing nested galleries with both row and column galleries. Shows how to select items in nested galleries and validate selection state. |
@@ -37,7 +37,7 @@ The following samples are available in the [PowerApps-TestEngine GitHub reposito
 | [Screen Navigation](https://github.com/microsoft/PowerApps-TestEngine/tree/main/samples/screennavigation) | Focuses on testing screen navigation capabilities, verifying correct transitions between screens. |
 | [Weather](https://github.com/microsoft/PowerApps-TestEngine/tree/main/samples/weather) | Shows how to mock connector responses for the MSN Weather connector. Demonstrates testing with simulated external service calls. |
 
-## Sample Structure
+## Sample structure
 
 Most samples follow a common structure:
 
@@ -47,11 +47,11 @@ Most samples follow a common structure:
 - **Test YAML files**: Test definitions (.fx.yaml or .te.yaml)
 - **Solution package**: A .zip file containing the sample app (for some samples)
 
-## Common Features Demonstrated
+## Common features demonstrated
 
 These samples demonstrate several key testing capabilities:
 
-### Basic Test Operations
+### Basic test operations
 
 Basic test operations include:
 
@@ -60,9 +60,9 @@ Basic test operations include:
 - Clicking buttons and interacting with controls
 - Waiting for conditions before proceeding
 
-### Advanced Testing Features
+### Advanced testing features
 
-Advanced testing feature include:
+Advanced testing features include:
 
 - Navigation between screens and forms
 - Working with galleries and collections
@@ -70,7 +70,7 @@ Advanced testing feature include:
 - Mocking external services and connectors
 - Testing with different user contexts
 
-### Test Lifecycle Management
+### Test lifecycle management
 
 These are examples of test lifecycle management:
 
@@ -79,7 +79,7 @@ These are examples of test lifecycle management:
 - Error handling and test diagnostics
 - Video recording and screenshot capabilities
 
-## Getting Started with Samples
+## Getting started with samples
 
 To use a sample, follow these general steps:
 
@@ -91,7 +91,7 @@ To use a sample, follow these general steps:
 
 For detailed instructions, refer to each sample's README.md file and the [Test Engine documentation](overview.md).
 
-## Using Samples for Learning
+## Using samples for learning
 
 The samples provide excellent learning resources:
 

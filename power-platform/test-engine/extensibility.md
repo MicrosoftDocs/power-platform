@@ -3,7 +3,7 @@ title: "Test Engine extensibility (preview)"
 description: Understanding the extensibility model for Test Engine and the role of Microsoft-signed components
 author: grant-archibald-ms
 ms.author: grarchib
-ms.date: 05/15/2025
+ms.date: 05/19/2025
 ms.reviewer: jdaly
 ms.topic: article
 ---
@@ -23,7 +23,7 @@ Power Apps Test Engine features a robust extensibility framework that allows the
 ## Microsoft-signed components
 
 > [!IMPORTANT]
-> During the public preview phase, only Microsoft-signed extensions are loaded by the official [pac test run](../developer/cli/reference/test.md#pac-test-run) command. This ensures security, stability, and performance of the Test Engine platform.
+> During the public preview phase, the [pac test run](../developer/cli/reference/test.md#pac-test-run) command only loads Microsoft-signed extensions. This design ensures security, stability, and performance of the Test Engine platform.
 
 Microsoft builds, signs, and validates first-party components to ensure they meet quality and security standards. These components include:
 
@@ -138,13 +138,13 @@ Organizations that develop valuable extensions using the open source Test Engine
 1. **Development** - Create your extension using the open source Test Engine
 2. **Validation** - Test your extension thoroughly in your own environment
 3. **Collaboration** - Work with the Core Test Engine team to evaluate the extension
-4. **Integration** - If approved, Microsoft will sign and integrate the extension into the product
+4. **Integration** - If approved, Microsoft signs and integrates the extension into the product
 
 This collaboration model enables innovation while maintaining the security and reliability of the official Test Engine product.
 
 ## Technical integration points
 
-The following sections describe how Test Engine extensibility integrates with core technologies such as Playwright and the feature lifecycle. Understanding these integration points will help you develop and deploy custom extensions effectively.
+The following sections describe how Test Engine extensibility integrates with core technologies such as Playwright and the feature lifecycle. Understanding these integration points help you develop and deploy custom extensions effectively.
 
 ### Playwright integration
 

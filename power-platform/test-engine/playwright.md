@@ -3,12 +3,12 @@ title: Test Engine and Playwright Integration (preview)
 description: Learn how Test Engine applies Playwright to provide robust browser automation capabilities.
 author: grant-archibald-ms
 ms.author: grarchib
-ms.date: 05/15/2025
+ms.date: 05/19/2025
 ms.reviewer: jdaly
 ms.topic: article
 ---
 
-# Test Engine and Playwright Integration (preview)
+# Test Engine and Playwright integration (preview)
 
 > [!NOTE]
 > [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
@@ -17,7 +17,7 @@ ms.topic: article
 
 Power Apps Test Engine uses [Playwright](https://playwright.dev/) as its core browser automation technology. This integration provides Test Engine with powerful, reliable, and cross-browser testing capabilities while adding several layers of abstraction to simplify test creation for Power Platform applications.
 
-## How Test Engine Enhances Playwright
+## How Test Engine enhances Playwright
 
 While Playwright offers excellent browser automation capabilities, Test Engine extends these capabilities specifically for Power Platform:
 
@@ -30,11 +30,11 @@ While Playwright offers excellent browser automation capabilities, Test Engine e
 | **Specialized Providers** | Optimized providers for [Canvas apps](./canvas-application.md) and [Model-driven apps](./model-driven-application.md) |
 
 
-## Technical Implementation
+## Technical implementation
 
 The following sections describe how Test Engine builds on Playwright's browser automation foundation and integrates it with Power Platform-specific abstractions, enabling robust and maintainable test automation.
 
-### Browser Automation Foundation
+### Browser automation foundation
 
 Test Engine utilizes Playwright's core capabilities for consistent browser automation:
 
@@ -43,17 +43,17 @@ Test Engine utilizes Playwright's core capabilities for consistent browser autom
 - **Network request interception** for simulating API responses
 - **Tracing and debugging tools** to diagnose test failures
 
-### Test Engine's Architectural Integration
+### Test Engine's architectural integration
 
 - **Provider Layer**: The provider layer in Test Engine interfaces directly with Playwright APIs to control browser behavior
 - **Object Model**: Rather than working with raw DOM elements, Test Engine maps to application-specific object models
 - **Power Fx Layer**: Test steps written in Power Fx are interpreted and executed through the provider layer
 
-## Key Technical Features
+## Key technical features
 
 The following sections highlight important technical features that Test Engine adds on top of Playwright, including app-specific selectors, browser context management, and direct access to Playwright functions for advanced scenarios.
 
-### App-Specific Selectors
+### App-specific selectors
 
 Test Engine uses app-specific selectors instead of CSS or XPath selectors:
 
@@ -67,7 +67,7 @@ Test Engine uses app-specific selectors instead of CSS or XPath selectors:
 # page.locator('div[data-control-name="Button1"]').click();
 ```
 
-### Browser Context Management
+### Browser context management
 
 Test Engine manages browser contexts to support various authentication scenarios:
 
@@ -80,11 +80,11 @@ pac test run `
    --environment-id $environmentId
 ```
 
-## Direct Playwright Functions
+## Direct Playwright functions
 
 While Test Engine abstracts many Playwright interactions, there are scenarios where directly accessing Playwright capabilities can be valuable. Test Engine provides several preview functions that enable direct interaction with Playwright from within your Power Fx test steps.
 
-### Using Playwright Functions in Test Engine
+### Using Playwright functions in Test Engine
 
 Test Engine includes the following preview functions that allow you to apply Playwright's element selection capabilities:
 
@@ -98,7 +98,7 @@ Test Engine includes the following preview functions that allow you to apply Pla
 > [!NOTE]
 > To use these preview functions, you must add the preview functions to the allowed list in your test settings section.
 
-### Common Playwright Action Operations
+### Common Playwright action operations
 
 The following operations can be performed with [Preview.PlaywrightAction](powerfx-functions.md#previewplaywrightaction):
 
@@ -108,7 +108,7 @@ The following operations can be performed with [Preview.PlaywrightAction](powerf
 | `exists` | Check if an element exists | `Preview.PlaywrightAction("//div[@class='error-message']", "exists")` |
 | `wait` | Wait for an element to be available | `Preview.PlaywrightAction("//table[@data-loading='false']", "wait")` |
 
-### Common Playwright Action Value Operations
+### Common Playwright action value operations
 
 The following operations can be performed with [Preview.PlaywrightActionValue](powerfx-functions.md#previewplaywrightactionvalue):
 
@@ -118,7 +118,7 @@ The following operations can be performed with [Preview.PlaywrightActionValue](p
 | `select` | Select an option from a selection list | `Preview.PlaywrightActionValue("//select", "select", "Option2")` |
 | `setAttribute` | Set an attribute on an element | `Preview.PlaywrightActionValue("//div", "setAttribute", "data-custom='value'")` |
 
-### When to Use Direct Playwright Functions
+### When to use direct Playwright functions
 
 While app-level abstractions are preferred, direct Playwright functions are useful in these scenarios:
 
@@ -127,7 +127,7 @@ While app-level abstractions are preferred, direct Playwright functions are usef
 - **Debugging complex test scenarios** where more control is needed
 - **Advanced validation** of element states or properties
 
-### Example: Combined Approach
+### Example: Combined approach
 
 This example demonstrates combining app-level abstractions with direct Playwright actions:
 
@@ -146,7 +146,7 @@ testSteps: |
   Assert(Label1.Text = "Submission Complete");
 ```
 
-### Advanced: Custom Playwright Scripts
+### Advanced: Custom Playwright scripts
 
 For highly specialized scenarios, you can create custom Playwright scripts:
 
@@ -177,11 +177,11 @@ public class PlaywrightScript {
 > [!NOTE]
 > [Preview.PlaywrightScript](powerfx-functions.md#previewplaywrightscript) is only implemented for debug builds of Test Engine built from source, not in the released `pac test run` tool.
 
-## Integration with Development Process
+## Integration with development process
 
 The following sections describe how Test Engine and Playwright can be used in both local development and CI/CD environments, supporting a range of workflows from interactive debugging to automated pipeline execution.
 
-### Local Development
+### Local development
 
 For local development, Test Engine provides a complete environment:
 
@@ -189,7 +189,7 @@ For local development, Test Engine provides a complete environment:
 - Step-by-step test execution
 - Detailed logs and diagnostics
 
-### CI/CD Integration
+### CI/CD integration
 
 In CI/CD environments, Test Engine can run Playwright in headless mode:
 
@@ -206,7 +206,7 @@ In CI/CD environments, Test Engine can run Playwright in headless mode:
         --environment-id "$(EnvironmentId)"
 ```
 
-## Best Practices
+## Best practices
 
 When working with Test Engine's Playwright integration:
 

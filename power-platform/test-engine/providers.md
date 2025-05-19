@@ -3,7 +3,7 @@ title: "Understanding Test Engine providers (preview)"
 description: "Comprehensive explanation of providers in Power Apps Test Engine"
 author: grant-archibald-ms
 ms.author: grarchib
-ms.date: 05/16/2025
+ms.date: 05/19/2025
 ms.reviewer: jdaly
 ms.topic: article
 contributors:
@@ -26,7 +26,7 @@ Providers are specialized modules within Test Engine that handle the specifics o
 
 ## Provider types
 
-The following sections describe the different types of providers available in Test Engine. Each provider is designed for a specific application scenario, offering tailored capabilities for web-based and API-based testing.
+The following sections describe the different types of providers available in Test Engine. Each provider is designed for a specific application scenario, offering tailored capabilities for web-based, and API-based testing.
 
 ### Web-based providers
 
@@ -109,7 +109,7 @@ pac test run `
 
 ## Technical implementation
 
-The following sections explain the underlying architecture, authentication flows, and Dataverse integration for Test Engine providers. Understanding these details will help you configure and extend providers for your specific testing needs.
+The following sections explain the underlying architecture, authentication flows, and Dataverse integration for Test Engine providers. Understanding these details help you configure and extend providers for your specific testing needs.
 
 ### Architecture
 
@@ -145,7 +145,7 @@ testSettings:
       enableDataverseFunctions: true
 ```
 
-See [Dataverse Extensions](./dataverse.md) for more information.
+[Learn how to test Dataverse extensions](./dataverse.md)
 
 ## Choosing the right provider
 

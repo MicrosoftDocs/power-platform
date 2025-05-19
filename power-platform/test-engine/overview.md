@@ -3,14 +3,9 @@ title: Power Apps Test Engine overview (preview)
 description: Learn about how you can automate tests of standalone canvas apps using the Power Apps Test Engine within Power Platform CLI.
 author: grant-archibald-ms
 ms.author: grarchib
-ms.date: 05/15/2025
+ms.date: 05/19/2025
 ms.reviewer: jdaly
 ms.topic: article
-contributors:
- - JimDaly
- - jt000
- - FrankDahl
- - grant-archibald-ms
 ---
 
 # Power Apps Test Engine overview (preview)
@@ -152,7 +147,7 @@ Each of the following features are designed to help you achieve Natural language
 
 - **Copilot-Generated Tests**: Create tests using natural language - describe what you want to test, and let Copilot help generate the test code
 - **Natural Language and Generative AI-Powered Testing**: Create test plans in natural language and convert them to executable tests using [Generative AI capabilities](ai-overview.md)
-- **AI Result Validation**: Confidently test AI-powered features with specialized functions that handle non-deterministic AI outputs
+- **AI Result Validation**: Confidently test AI-powered features with specialized functions that handle nondeterministic AI outputs
 - **Human-Readable Test Plans**: Write and maintain tests that business users and developers can both understand and contribute to
 - **[AI-Assisted Test Authoring](ai-authoring.md)**: Use GitHub Copilot to accelerate test creation with source-controlled solutions
 
@@ -161,7 +156,7 @@ Each of the following features are designed to help you achieve Natural language
 Using Power Fx as the text authoring language provides the following benefits:
 
 - **Familiar Formula Language**: Write tests using the same [Power Fx language](powerfx.md) you already know from building canvas apps
-- **Low Learning Curve**: Leverage your existing Power Platform skills to create tests without learning complex testing frameworks
+- **Low Learning Curve**: Use your existing Power Platform skills to create tests without learning complex testing frameworks
 - **Control Name References**: Reference app controls by their studio names rather than having to learn complex DOM selectors
 
 ### Enterprise-ready testing infrastructure
@@ -170,7 +165,7 @@ Enterprise customers require robust features to manage authentication securely. 
 
 - **[Authentication Flexibility](authentication.md)**: Support for interactive login, service principal, and session persistence to fit your security requirements
 - **ALM Integration**: Seamlessly integrate with Azure DevOps, GitHub Actions, and other CI/CD pipelines for automated testing
-- **MFA Support**: Run automated tests in environments that enforce Multi-Factor Authentication without compromises
+- **MFA Support**: Run automated tests in environments that enforce multifactor authentication without compromises
 
 ### Advanced testing capabilities
 

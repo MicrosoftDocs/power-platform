@@ -3,7 +3,7 @@ title: "Authentication in Power Apps Test Engine (preview)"
 description: "Simple guide to authentication options in Test Engine"
 author: grant-archibald-ms
 ms.author: grarchib
-ms.date: 05/17/2025
+ms.date: 05/19/2025
 ms.reviewer: jdaly
 ms.topic: article
 contributors:
@@ -18,14 +18,13 @@ contributors:
 
 Test Engine offers straightforward authentication options to support both development and production scenarios. This article provides a clear overview of your authentication choices and how to select the best option for your needs.
 
-## Authentication Made Simple
+## Authentication made simple
 
 Test Engine offers easy-to-use authentication methods depending on the type of test you're looking to create.
 
-## Web Based Tests (Canvas, Model-driven apps)
+## Web based tests (canvas, model-driven apps)
 
 For web based tests that make use of an interactive user account to run the test.
-
 
 :::row:::
    :::column:::
@@ -48,12 +47,11 @@ For web based tests that make use of an interactive user account to run the test
    :::column-end:::
 :::row-end:::
 
-
-## OAuth Based Tests (Dataverse)
+## OAuth based tests (Dataverse)
 
 For PowerFx provider and direct Dataverse tests, authentication works differently. These tests obtain access tokens directly from your Azure CLI session using `az` commands to get resource-specific access tokens. Ensure you're signed in with `az login --allow-no-subscriptions` before running these types of tests.
 
-## When to Use Each Authentication Method
+## When to use each authentication method
 
 The following table describes when to use each authentication method:
 
@@ -65,7 +63,7 @@ The following table describes when to use each authentication method:
 | Run tests in CI/CD pipelines | `Dataverse` | Non-interactive, automation-friendly |
 | Use service principals | `Dataverse` | Supports secure, headless authentication |
 
-## StorageState Authentication: Quick Start
+## StorageState authentication: Quick start
 
 The `StorageState` method securely stores browser authentication data locally using Windows Data Protection API. It's perfect for individual developers and testers.
 
@@ -78,11 +76,11 @@ pac test run `
    --environment-id your-environment-id
 ```
 
-## Dataverse Authentication: Team-Ready
+## Dataverse authentication: Team-ready
 
 The Dataverse method stores encrypted tokens in Dataverse using X.509 certificates and ASP.NET Core Data Protection. It's ideal for teams and automated workflows.
 
-### Setting Up Dataverse Authentication
+### Setting up Dataverse authentication
 
 1. Download the Test Engine solution: [https://aka.ms/TestEngineAuth](https://aka.ms/TestEngineAuth)
 2. Import the solution into your Dataverse environment
@@ -100,7 +98,7 @@ pac test run `
    --environment-id your-environment-id
 ```
 
-## Next Steps
+## Next steps
 
 Choose the path that's right for you:
 

@@ -3,7 +3,7 @@ title: "Use Power Fx namespaces in testing (preview)"
 description: "Describes the Power Fx namespaces used in Test Engine"
 author: grant-archibald-ms
 ms.author: grarchib
-ms.date: 05/09/2025
+ms.date: 05/19/2025
 ms.reviewer: jdaly
 ms.topic: article
 contributors:

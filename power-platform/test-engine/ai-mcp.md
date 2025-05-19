@@ -22,7 +22,7 @@ Power Apps Test Engine includes a Model Context Protocol (MCP) server implementa
 
 ## What is the Model Context Protocol?
 
-The Model Context Protocol (MCP) is a standard for communication between AI tools to provide context and actions. In the context of Test Engine it can enable:
+The Model Context Protocol (MCP) is a standard for communication between AI tools to provide context and actions. In the context of Test Engine, it can enable:
 
 - **Deterministic analysis**: Scanning and analyzing application structure
 - **Contextual awareness**: Understanding code relationships and dependencies
@@ -132,9 +132,9 @@ Review the [Test Engine MCP](https://aka.ms/TestEngineMCP) for information the M
 
 The real power of the Test Engine MCP server lies in combining deterministic analysis with generative capabilities:
 
-1. The deterministic analysis ensures accuracy by identifying actual components
-2. Generative AI provides natural language understanding and creative test scenarios
-3. Together, they produce tests that are both reliable and comprehensive
+- The deterministic analysis ensures accuracy by identifying actual components
+- Generative AI provides natural language understanding and creative test scenarios
+- Together, they produce tests that are both reliable and comprehensive
 
 This hybrid approach helps overcome the limitations of both:
 

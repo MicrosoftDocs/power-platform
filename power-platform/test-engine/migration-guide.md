@@ -3,7 +3,7 @@ title: "Test command migration process for Test Engine (preview)"
 description: "Learn about the process of transitioning Test command between versions of Test Engine"
 author: snamilikonda
 ms.author: snamilikonda
-ms.date: 05/09/2025
+ms.date: 05/19/2025
 ms.reviewer: jdaly
 ms.topic: article
 ---
@@ -15,7 +15,7 @@ ms.topic: article
 
 ## Overview
 
-This document provides guidance on any transition steps required for running the latest version of the Power Platform Test Engine as part of an update to the version of the Power Platform CLI (PAC CLI). Follow the steps outlined below to ensure a smooth transition.
+This document provides guidance on any transition steps required for running the latest version of the Power Platform Test Engine as part of an update to the version of the Power Platform CLI (PAC CLI). Follow the steps outlined in this article to ensure a smooth transition.
 
 ## Prerequisites
 

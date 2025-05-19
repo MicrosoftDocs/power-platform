@@ -1,14 +1,14 @@
 ---
-title: "Create a C# Power Fx Test Function (preview)"
+title: "Create a C# Power Fx test function (preview)"
 description: "Describes the creating Power Fx functions using C# in Test Engine"
 author: grant-archibald-ms
 ms.author: grarchib
-ms.date: 05/09/2025
+ms.date: 05/19/2025
 ms.reviewer: jdaly
 ms.topic: article
 ---
 
-# Create a C# Power Fx Test Function (preview)
+# Create a C# Power Fx test function (preview)
 
 > [!NOTE]
 > [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
@@ -17,11 +17,11 @@ ms.topic: article
 
 The ['no cliffs' extensibility model](/power-platform/guidance/adoption/application-modernization#power-platform-extensibility-options) of Power Apps Test Engine ensures that users can extend the capabilities of the Power Apps Test Engine without hitting any barriers. This model allows developers to create custom functions using C#, which can be integrated into Power Fx to handle complex scenarios.
 
-## Test Engine Modules
+## Test Engine modules
 
 The [Test engine modules](./module-functions-reference.md) for Power Fx inside Test Engine are built using the extensibility model. You can use the product code as examples of how Test Engine can be extended.
 
-## Consent Dialog example
+## Consent dialog example
 
 Here's an example of a Power Fx function that provides the outline of code to handle a conditional consent dialog in a [canvas application](./canvas-application.md).
 
@@ -31,15 +31,15 @@ A [consent dialog](/power-apps/maker/canvas-apps/connections-list#connection-con
 
 The consent dialog is important because it helps prevent unauthorized access and actions. It ensures that users are informed and provide their explicit consent before any sensitive operations are performed. This is important in scenarios where the application needs to access user data or perform actions and this conditional behavior could affect automated tests.
 
-### Challenges with Consent Dialogs in testing
+### Challenges with consent dialogs in testing
 
 One of the challenges with consent dialogs is that they can make tests nondeterministic. The prompt can conditionally appear based on various factors, such as user permissions or previous interactions. This conditional appearance can complicate the testing process, as the Test Engine needs to handle these dialogs appropriately.
 
-## Abstracting Complexity with Power Fx
+## Abstracting complexity with Power Fx
 
-Power Fx helps abstract the complexity of conditionally waiting for the consent dialog and creating connections if needed. Using Power Fx, makers can define the logic for handling consent dialogs in a more straightforward and intuitive manner.
+Power Fx helps abstract the complexity of conditionally waiting for the consent dialog and creating connections if needed. Makers can use Power Fx to define the logic for handling consent dialogs in a more straightforward and intuitive manner.
 
-### Example: Handling Consent Dialog with Power Fx
+### Example: Handling consent dialog with Power Fx
 
 Here's an example of using Power Fx to handle a consent dialog in a custom page:
 
@@ -47,13 +47,13 @@ Here's an example of using Power Fx to handle a consent dialog in a custom page:
 Preview.ConsentDialog(Table({Text: "Center of Excellence Setup Wizard"}))
 ```
 
-In this example, the `ConsentDialog` function checks if the consent dialog is visible. If it is, the function can respond to the dialog confirming consent for the test account. Once the dialog is handled the remaining test steps will be executed.
+In this example, the `ConsentDialog` function checks if the consent dialog is visible. If it is, the function can respond to the dialog confirming consent for the test account. Once the dialog is handled, the remaining test steps are executed.
 
 The `Table` argument allows the consent dialog wait process to exit is a label with the provided text is visible.
 
-## Extending Power Fx Test functions using C#
+## Extending Power Fx test functions using C#
 
-The following is a sample outline code that could be used as a starting point to complete this example:
+The following example is a sample outline code that could be used as a starting point to complete this example:
 
 ```csharp
 // Copyright (c) Microsoft Corporation.

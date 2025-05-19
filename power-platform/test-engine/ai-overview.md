@@ -28,7 +28,7 @@ Test Engine's generative AI features address three key areas of the testing proc
 Creating comprehensive test plans can be time-consuming, especially for complex applications. Test Engine supports generative AI-assisted authoring through:
 
 - **GitHub Copilot integration**: Generate test templates, test steps, and assertions based on your application code
-- **Natural language test creation**: Describe test scenarios in plain English and have them translated into executable tests
+- **Natural language test creation**: Describe test scenarios in plain English and translate them into executable tests
 - **Sample-based test generation**: Reference existing samples to create contextually relevant tests
 
 This approach helps test authors focus on business logic and validation rules rather than test syntax and boilerplate code.

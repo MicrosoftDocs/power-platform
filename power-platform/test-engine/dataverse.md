@@ -1,9 +1,9 @@
 ---
 title: "Test Dataverse extensions with Test Engine (preview)"
-description: "Describes how perform integration testing of Dataverse extensions with Test Engine."
+description: "Describes how to perform integration testing of Dataverse extensions with Test Engine."
 author: grant-archibald-ms
 ms.author: grarchib
-ms.date: 05/16/2025
+ms.date: 05/19/2025
 ms.reviewer: jdaly
 ms.topic: article
 ---
@@ -81,7 +81,7 @@ pac test run `
 
 ## AI Integration
 
-Using the open source [Power Apps Test Engine](https://github.com/microsoft/PowerApps-TestEngine) compiled in `Debug` mode together with the appropriate test settings will optionally enable the [Preview.AIExecutePrompt](powerfx-functions.md#previewaiexecuteprompt) function in your tests.
+Using the open source [Power Apps Test Engine](https://github.com/microsoft/PowerApps-TestEngine) compiled in `Debug` mode together with the appropriate test settings will enable the [Preview.AIExecutePrompt](powerfx-functions.md#previewaiexecuteprompt) function in your tests.
 
 Add the following to your test settings to enable AI integration:
 

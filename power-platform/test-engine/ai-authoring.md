@@ -15,7 +15,7 @@ ms.topic: article
 
 Creating comprehensive test plans for Power Platform applications can be time-consuming, especially for complex scenarios. AI-assisted authoring tools like GitHub Copilot can significantly accelerate this process by generating test templates, suggesting test cases, and automating boilerplate code creation.
 
-This guide explains how to leverage GitHub Copilot with Power Platform source control solutions to efficiently create Test Engine test plans.
+This guide explains how to use GitHub Copilot with Power Platform source control solutions to efficiently create Test Engine test plans.
 
 ## Prerequisites
 
@@ -40,7 +40,7 @@ To maximize the effectiveness of AI-assisted test authoring, combine these tools
 
 ## Using GitHub Copilot for test creation
 
-GitHub Copilot can help you generate various test components based on your source-controlled solution. Here's how to leverage its capabilities effectively:
+GitHub Copilot can help you generate various test components based on your source-controlled solution. Here's how to use its capabilities effectively:
 
 ### Using sample documentation as context
 
@@ -75,7 +75,7 @@ Try using prompts like these for test generation:
 :::row:::
    :::column:::
 **Goal:**  
-Generate a comprehensive test suite for a Canvas app using the PowerApps Test Engine, modeled after the [ButtonClicker sample](https://github.com/microsoft/PowerApps-TestEngine/tree/main/samples/buttonclicker).
+Generate a comprehensive test suite for a canvas app using the Power Apps Test Engine, modeled after the [ButtonClicker sample](https://github.com/microsoft/PowerApps-TestEngine/tree/main/samples/buttonclicker).
    :::column-end:::
    :::column:::
 > **Prompt:**  
@@ -131,12 +131,12 @@ Consider the following sections to get the most out of GitHub Copilot for Test E
 
 Be specific about what you want to test and include references to:
 
-- The exact file(s) to test
+- The exact files to test
 - Sample tests to use as templates
 - Specific test scenarios you want to cover
 - Any authentication or environment requirements
 
-#### Leveraging Test Engine samples for context
+#### Using Test Engine samples for context
 
 The [samples.md](samples.md) documentation catalogs all available samples from the Test Engine repository, which can be an excellent reference when crafting prompts for GitHub Copilot. For example, when testing a canvas app with buttons, you might reference the [Button Clicker sample](https://github.com/microsoft/PowerApps-TestEngine/tree/main/samples/buttonclicker):
 
@@ -152,7 +152,7 @@ This approach helps Copilot understand the test structure and generates more acc
 
 ### Use source-controlled solutions as context
 
-Copilot performs best when it can analyze your solution structure. Use  [source control for Power Platform solutions](../alm/use-source-control-solution-files.md) to provide this context. This allows Copilot to:
+Copilot performs best when it can analyze your solution structure. Use [source control for Power Platform solutions](../alm/use-source-control-solution-files.md) to provide this context. This context allows Copilot to:
 
 - Understand your app's structure
 - Identify control names and properties
@@ -270,13 +270,13 @@ For isolated testing with [connector mocking](simulation.md):
 > **Prompt:**  
 > *Create a test with mocked connector responses for my app that uses the Office 365 Outlook connector. The test should simulate receiving emails and validate the app's processing logic.*
 
-## Testing AI capabilities and handling non-deterministic results
+## Testing AI capabilities and handling nondeterministic results
 
-When working with AI-powered applications, testing introduces unique challenges since AI outputs may vary slightly between runs, even with identical inputs. This non-deterministic behavior requires special testing approaches.
+When you work with AI-powered applications, testing introduces unique challenges since AI outputs might vary slightly between runs, even with identical inputs. This nondeterministic behavior requires special testing approaches.
 
-### Understanding non-deterministic testing
+### Understanding nondeterministic testing
 
-Non-deterministic testing involves validating outputs that may legitimately vary across test runs:
+Nondeterministic testing involves validating outputs that might legitimately vary across test runs:
 
 - **AI Model Outputs**: Responses from AI models like GPT or custom AI Builder components
 - **Confidence Scores**: Numerical evaluations that might fluctuate within acceptable ranges
