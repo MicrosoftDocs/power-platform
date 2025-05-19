@@ -1,5 +1,5 @@
 ---
-title: Migrate from BYOK to self-managed key with Power Platform
+title: Migrate bring-your-own-key (BYOK) environments to customer-managed key
 description: Details how to migrate from the legacy self-managed key feature to customer-managed key
 author: paulliew
 ms.author: paulliew
