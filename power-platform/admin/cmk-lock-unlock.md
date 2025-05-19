@@ -3,9 +3,9 @@ title: Lock self-managed key environments with Power Platform
 description: Learn how to lock and unlock self-managed key environments
 author: paulliew
 ms.author: paulliew
-ms.reviewer: matp, ratrtile
+ms.reviewer: sericks
 ms.topic: how-to 
-ms.date: 06/02/2023
+ms.date: 05/19/2025
 ms.custom: template-how-to
 ---
 # Lock environments by revoking key vault and/or key permission access
@@ -34,7 +34,7 @@ Key access revocation can be triggered by completing any of the following tasks:
   > - Locked production and sandbox environment's data persist in the platform but it can't be accessed.
 
 ## Enterprise policy status check
-To ensure the smooth operation of your customer managed key environments, the health of the **Enterprise policy** is continually monitored. In an event of 
+To ensure the smooth operation of your customer-managed key environments, the health of the **Enterprise policy** is continually monitored. In an event of 
 
 ## Unlock environments
 
