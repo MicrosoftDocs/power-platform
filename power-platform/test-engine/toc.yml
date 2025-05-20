@@ -49,19 +49,19 @@ items:
     href: feature-lifecycle.md
   - name: Migration
     href: migration-guide.md
+  - name: Test engine and Playwright
+    href: playwright.md
+  - name: Authentication security
+    href: authentication-security.md
+  - name: Extensibility
+    href: extensibility.md
+  - name: Providers
+    href: providers.md
   - name: Reference
     items:
     - name: Yaml format
       href: yaml.md
-    - name: Providers
-      href: providers.md
-    - name: Extensibility
-      href: extensibility.md
     - name: Power Fx modules
       href: module-functions-reference.md
-    - name: Authentication security
-      href: authentication-security.md
-    - name: Test engine and Playwright
-      href: playwright.md
     - name: File Access restrictions
       href: filerestrictions.md

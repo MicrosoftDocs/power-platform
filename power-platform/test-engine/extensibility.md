@@ -52,7 +52,7 @@ Provider extensions enable testing different types of applications:
 - **Canvas App Provider** - For testing Power Apps canvas applications
 - **Model-driven App Provider** - For testing Dataverse model-driven apps
 - **Power Fx Provider** - For executing Power Fx statements independently
-- **Portal Provider** - For automating operations in the maker portal
+- **Portal Provider** - For automating operations in [Power Apps](https://make.powerapps.com)
 
 For more information, see [Canvas Applications](./canvas-application.md), [Model-driven Applications](./model-driven-application.md), and [Dataverse Extensions](./dataverse.md).
 
