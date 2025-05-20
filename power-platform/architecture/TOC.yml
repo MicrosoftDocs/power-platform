@@ -35,8 +35,16 @@
             href: key-concepts/distributed-tracing.md
           - name: Implement distributed tracing
             href: key-concepts/distributed-tracing-details.md
-      - name: Authentication in Copilot Studio
-        href: key-concepts/copilot-studio-auth.md
+      - name: Managing Solution Performance
+        items:
+          - name: Overview
+            href: key-concepts/performance/overview.md
+          - name: UX Strategies
+            href: key-concepts/performance/ux-strategies.md
+          - name: Monitoring and Reporting Tools
+            href: key-concepts/performance/tools.md
+          - name: Identifying and Mitigating Canvas App Performance Issues
+            href: key-concepts/performance/top-issues.md
     - name: Reference architectures
       items:
       - name: Overview
