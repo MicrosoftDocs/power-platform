@@ -49,12 +49,12 @@ There are two important workflows related to the agent:
 
 The document processing flow functions like a state machine, where the agent works as an orchestrator and the current state is persisted in the Data Processing Events table in Dataverse. The process happens as follows:
 
-1. A trigger identifies a new document is ready for processing. This is displayed on the **Data sources** area in the architecture diagram, and they are [agent flows](/microsoft-copilot-studio/flows-overview) that scan certain directories (such as Outlook Mailboxes, SharePoint folders, etc). Once a document is added in any directory, the agent flow will store the document in the **Data Processing Events** table with status **New** and send a message to the agent with the following content: `Process the document: {ID}.`
-    1. All attempts to add documents or update statuses on the **Data Processing Events** table follow the **Default** configuration in Power Automate, retrying up to 4 times with an exponential interval on requests that return statuses 408, 429 or 5xx and on any connectivity exceptions.
+1. A trigger identifies a new document is ready for processing. This is displayed on the **Data sources** area in the architecture diagram, and they are [agent flows](/microsoft-copilot-studio/flows-overview) that scan certain directories (such as Outlook Mailboxes, SharePoint folders, etc). Once a document is added in any directory, the agent flow will store the document in the *Data Processing Events* table with status *New* and send a message to the agent with the following content: `Process the document: {ID}.`
+    1. All attempts to add documents or update statuses on the *Data Processing Events* table follow the *Default* configuration in Power Automate, retrying up to 4 times with an exponential interval on requests that return statuses 408, 429 or 5xx and on any connectivity exceptions.
     1. In case all retry attempts fail, it is possible to debug and check the run history in Power Automate for the particular action that could not be executed.
 
-1. The agent instructions tell it to call the **Document Extraction** action whenever it’s requested to process a document. This action is then called, and the ID of the message is passed through.
-1. The **Document Extraction** action is an agent flow that receives a Data Processing Event ID as input and:
+1. The agent instructions tell it to call the *Document Extraction* action whenever it’s requested to process a document. This action is then called, and the ID of the message is passed through.
+1. The *Document Extraction* action is an agent flow that receives a Data Processing Event ID as input and:
     1. Fetches the document that was stored in Dataverse.
     1. Sends it to an AI Prompt in AI Builder to process. This prompt uses GPT 4.o to:
         1. Extract all relevant information from the document.
@@ -64,13 +64,13 @@ The document processing flow functions like a state machine, where the agent wor
 
 1. A Dataverse trigger (agent flow) monitors the status of all documents in Data Processing Events and notifies the agent whenever a status changes with the following message: `The status of document {ID} changed to {Status}`
 
-1. The agent instructions tell it to call the **Document Validation** action whenever the status of a document is changed to **Processed**. This action is then called, and the ID of the message is passed through.
+1. The agent instructions tell it to call the *Document Validation* action whenever the status of a document is changed to *Processed*. This action is then called, and the ID of the message is passed through.
 
-1. The Document Validation action is an agent flow that receives a Data Processing Event ID as input and:
+1. The *Document Validation* action is an agent flow that receives a Data Processing Event ID as input and:
     1. Fetches the extracted data that was stored in Dataverse.
     1. Sends it to an AI Prompt in AI Builder to validate. This prompt uses GPT 4.o to:
         1. Validate the extracted JSON against format rules such as “dates must be in X format”.
-        1. Validate the extracted JSON against business rules such as “the author of the document must be in the ‘Accounts’ table in Dataverse”. 
+        1. Validate the extracted JSON against business rules such as “the author of the document must be in the *Accounts* table in Dataverse”. 
     1. If the validation succeeds, it updates the status of the document to “Validated”.
     1. Otherwise, it updates the status of the document to “Manual Review”.
 
