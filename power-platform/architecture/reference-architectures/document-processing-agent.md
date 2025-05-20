@@ -16,25 +16,27 @@ ms.contributors:
 
 # Use an autonomous agent in Copilot Studio for document processing
 
-The Document Processing Agent is an autonomous agent in Copilot Studio that leverage Large Language Models for document processing.
+The Document Processing Agent is an autonomous agent in Copilot Studio that uses Large Language Models for document processing.
 
 > [!TIP]  
 > This article provides an example scenario and a generalized example architecture to illustrate how to use an autonomous agent in Copilot Studio for document processing. The architecture example can be modified for many different scenarios and industries.
 
 ## Architecture diagram  
 
-:::image type="content" source="media/docprocessing-agent/docprocessing-agent.png" alt-text="Architecture diagram illustrating the workflow for using an autonomous agent in Copilot Studio for document processing." lightbox="media/media/docprocessing-agent/docprocessing-agent.png":::  
+:::image type="content" source="media/docprocessing-agent/docprocessing-agent.png" alt-text="Architecture diagram illustrating the workflow for using an autonomous agent in Copilot Studio for document processing." lightbox="media/docprocessing-agent/docprocessing-agent.png":::  
 
 ### Agent instructions
 
 The following instructions were provided to create the autonomous agent:
 
-`"You are a helpful, polite, Document Processing Agent. You assist users in processing documents and extracting valuable information. If the user asks about any topic other than document processing, politely decline and offer to assist with document-related queries.
+```copilot-prompt
+You are a helpful, polite, Document Processing Agent. You assist users in processing documents and extracting valuable information. If the user asks about any topic other than document processing, politely decline and offer to assist with document-related queries.
 When requested to process a document with a certain document processing event ID, extract the information from that document. 
 When told that a document processing event status of a document changed to Processed, validate the extracted information from the document.
 When told that a document processing event status of a document changed to Validated, import the extracted information from the document into the system. 
 When told that a document processing event status of a document changed to Manual Review, submit the extracted information from the document to manual review.
-Ignore other document processing event status changes."`
+Ignore other document processing event status changes."
+```
 
 ## Workflows
 
@@ -45,14 +47,14 @@ There are two important workflows related to the agent:
 
 ### Document processing flow
 
-The document processing flow functions like a state machine, where the agent works as orchestrator and the current state is persisted in the Data Processing Events table in Dataverse. It happens as follows:
+The document processing flow functions like a state machine, where the agent works as an orchestrator and the current state is persisted in the Data Processing Events table in Dataverse. The process happens as follows:
 
-1. A trigger identifies a new document is ready for processing. This is displayed on the **Data sources** area on the diagram above, and they are Agent Flows that scan certain directories (such as Outlook Mailboxes, SharePoint folders, etc). Once a document is added in this directory, this Agent Flow will store this document in the **Data Processing Events** table with status **New** and send a message to the agent with the following content: `Process the document: {ID}.`
+1. A trigger identifies a new document is ready for processing. This is displayed on the **Data sources** area in the architecture diagram, and they are [agent flows](/microsoft-copilot-studio/flows-overview) that scan certain directories (such as Outlook Mailboxes, SharePoint folders, etc). Once a document is added in any directory, the agent flow will store the document in the **Data Processing Events** table with status **New** and send a message to the agent with the following content: `Process the document: {ID}.`
     1. All attempts to add documents or update statuses on the **Data Processing Events** table follow the **Default** configuration in Power Automate, retrying up to 4 times with an exponential interval on requests that return statuses 408, 429 or 5xx and on any connectivity exceptions.
     1. In case all retry attempts fail, it is possible to debug and check the run history in Power Automate for the particular action that could not be executed.
 
-1. The Agent instructions tell it to call the **Document Extraction** action whenever it’s requested to process a document. This action is then called, and the ID of the message is passed through.
-1. The **Document Extraction** action is an Agent Flow that receives a Data Processing Event ID as input and:
+1. The agent instructions tell it to call the **Document Extraction** action whenever it’s requested to process a document. This action is then called, and the ID of the message is passed through.
+1. The **Document Extraction** action is an agent flow that receives a Data Processing Event ID as input and:
     1. Fetches the document that was stored in Dataverse.
     1. Sends it to an AI Prompt in AI Builder to process. This prompt uses GPT 4.o to:
         1. Extract all relevant information from the document.
@@ -60,11 +62,11 @@ The document processing flow functions like a state machine, where the agent wor
     1. Stores extracted information in the same Data Processing Event row
     1. Updates the status of the document to “Processed”.
 
-1. A Dataverse trigger (Agent Flow) monitors the status of all documents in Data Processing Events and notifies the agent whenever a status changes with the following message: `The status of document {ID} changed to {Status}`
+1. A Dataverse trigger (agent flow) monitors the status of all documents in Data Processing Events and notifies the agent whenever a status changes with the following message: `The status of document {ID} changed to {Status}`
 
-1. The Agent instructions tell it to call “Document Validation” action whenever the status of a document is changed to “Processed”. This action is then called, and the ID of the message is passed through.
+1. The agent instructions tell it to call the **Document Validation** action whenever the status of a document is changed to **Processed**. This action is then called, and the ID of the message is passed through.
 
-1. The Document Validation action is an Agent Flow that receives a Data Processing Event ID as input and:
+1. The Document Validation action is an agent flow that receives a Data Processing Event ID as input and:
     1. Fetches the extracted data that was stored in Dataverse.
     1. Sends it to an AI Prompt in AI Builder to validate. This prompt uses GPT 4.o to:
         1. Validate the extracted JSON against format rules such as “dates must be in X format”.
@@ -90,16 +92,16 @@ Lastly, users can manually submit documents for the agent to process using the c
 
 When doing so:
 
-1. The document is uploaded to Data Processing Events.
-1.The agent notifies itself that a new document was imported.
-1.The extraction prompt is run to give the user a preview of what will be exported on the chat pane.
-1.The processing of the document happens as described in this flow starting from step 2.
+1. The document is uploaded to the Data Processing Events table.
+1. The agent notifies itself that a new document was imported.
+1. The extraction prompt is run to give the user a preview of what will be exported on the chat pane.
+1. The processing of the document happens as described in this flow starting from step 2.
 
 ## Configuration workflow
 
 To operate autonomously, the agent needs multiple configurations. To simplify this process for users, a comprehensive configuration experience has been developed. The steps are as follows:
 
-1. A Maker installs the Document Processing Agent in Copilot Studio. The solution of the agent contains:
+1. A maker installs the Document Processing Agent in Copilot Studio. The solution of the agent contains:
     1. Document Processing Configuration table.
     1. Validation Station Canvas App for monitoring.
     1. Connection References used by the agent (Dataverse, Copilot Studio, PowerApps for Admins).
