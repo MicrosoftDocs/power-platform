@@ -162,9 +162,10 @@ Principal authors:
 - **[Jaganmohan Naidu Penikalapati](https://www.linkedin.com/in/jaganmohan-naidu-penikalapati-4558b117/)**, Principal Software Engineering Manager  
 - **[Ceren Kiroglu](https://www.linkedin.com/in/cerenoneykiroglu/)**, Senior Product Manager
 - **[Durga Yelavarthi](https://www.linkedin.com/in/durga-yelavarthi/)**, Principal Architect
+- **[Jo Ruas](https://www.linkedin.com/in/joao-otavio-de-lima-ruas/)**, Software Engineer
 
 ## Next steps
 
-- Enhancement of the Configuration Flow to allow users to further customize their export experience. That would include adding the ability of adding pre-built Power Platform Connectors to integrate exporting to different systems like SAP or Salesforce and customizing the schema to fit SAP/Salesforce table entries.
-- Enhancement of the Configuration Flow to allow users to connect to multiple document sources at the same time (e.g. Outlook and SharePoint).
-- Allowing Agent to handle multiple document types at the same time through dynamically changing the schema used in Exporting based on document type.
+- You can enhance the Configuration Flow to allow users to further customize their export experience. That would include adding the ability of adding pre-built Power Platform connectors to integrate exporting to different systems like SAP or Salesforce and customizing the schema to fit SAP/Salesforce table entries.
+- You can enhance the Configuration Flow to allow users to connect to multiple document sources at the same time (e.g. Outlook and SharePoint).
+- You can allow the agent to handle multiple document types at the same time through dynamically changing the schema used in Exporting based on document type.
