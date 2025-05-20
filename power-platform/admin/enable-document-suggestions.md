@@ -4,7 +4,7 @@ description: Enable document suggestions for Dynamics 365 for Customer Engagemen
 author: sericks007
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 10/27/2020
 ms.subservice: admin
 ms.author: sericks 

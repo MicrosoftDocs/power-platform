@@ -3,7 +3,7 @@ title: Managed security
 description: Learn about managed security environments in Power Platform admin center.
 ms.subservice: admin
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 03/04/2025
 ms.custom: NewPPAC
 author: matapg007

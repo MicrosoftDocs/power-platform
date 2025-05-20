@@ -2,7 +2,7 @@
 title: "View and manage on-premises data gateways | MicrosoftDocs"
 description: View and manage on-premises gateways. 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 05/22/2024
 author: arthiriyer
 ms.subservice: admin

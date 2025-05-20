@@ -2,7 +2,7 @@
 title: Invite users with Microsoft Entra B2B collaboration
 description: Invite users with Microsoft Entra B2B collaboration.
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 10/14/2024
 author: sericks007
 ms.subservice: admin

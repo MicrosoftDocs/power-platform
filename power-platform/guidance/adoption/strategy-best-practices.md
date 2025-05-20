@@ -1,31 +1,34 @@
 ---
-title: Strategy and vision best practices
-description: Guidance for Microsoft Power Platform adoption best practices around admin, governance, nurture, strategy, and vision.
+title: Develop a Power Platform adoption strategy
+description: Develop a Power Platform adoption strategy to improve business agility, reduce costs, and enhance productivity. Start by documenting your vision and goals.
+#customer intent: As a business leader, I want to develop a Power Platform adoption strategy so that my organization can improve business agility, reduce costs, and enhance productivity.
 author: manuelap-msft
 ms.component: pa-admin
-ms.topic: conceptual
-ms.date: 03/31/2023
+ms.topic: concept-article
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: sericks
-ms.custom: bap-template
+ms.reviewer: pankajsharma2087
+ms.date: 05/14/2025
 ---
 
-# Strategy and vision best practices
+# Develop a Power Platform adoption strategy
 
-Microsoft Power Platform delivers fundamental technology benefits that can improve business agility and productivity and reduce costs. Most organizations say that accelerating digital innovation and transformation is the number one reason they embrace low-code application development.
+Power Platform delivers fundamental technology benefits that help your organization execute multiple business strategies. 
 
-The advice in this guidance will help you transform your organization. You're already an expert in your business. Power Platform gives you the tools to take that expertise and solve business problems with automation and apps tailored for your organization. To take advantage of this potential, make sure Power Platform is part of your digital transformation strategy.
+By using Power Platform, you can:
 
-The following articles can help you understand how to get started with your enterprise adoption of Microsoft Power Platform, and what roles and responsibilities might be involved:
+- Improve business agility
+- Reduce costs
+- Accelerate time to market
+- Enhance productivity
 
-- [Establish a Center of Excellence](coe.md)
-- [Measure business value](business-value.md)
-- [Roles and responsibilities](roles.md)>
-- [Executive sponsorship](executive-sponsorship.md)
-- [Delivery models](delivery-models.md)
-- [License assignment strategies](license-assignment-strategies.md)
+To take advantage of this potential, start by documenting your Power Platform adoption vision in a way that addresses both business and technical stakeholders.
 
-Another great resource for your adoption journey is the [Microsoft Power Platform Adoption](https://adoption.microsoft.com/powerplatform) website. Find links to resources and workbooks that guide you step-by-step through your Power Platform adoption.
+This approach helps you drive adoption efforts that capture targeted business value. The following steps help you document your adoption strategy efficiently:
 
-[!INCLUDE [footer-include](../../includes/footer-banner.md)]
+1. [Assess your adoption strategy](take-assessment.md). Take the Power Platform adoption assessment and use the results from the assessment to continue building your Power Platform adoption strategy.
+1. [Define vision, metrics, and goals](vision.md). Meet with your key stakeholders to document the objectives, the measurable key results, and the key initiatives behind Power Platform adoption.
+1. [Establish common goals](common-vision/index.md). Align your Power Platform adoption strategy with your organization's business goals and objectives.
+1. [Measure and communicate business value](business-value.md). Define how to measure business value and align with your organization's objectives and key results (OKRs).
+1. [Get executive sponsorship](executive-sponsorship.md). Secure an executive sponsor and get leadership buy-in.
+1. [Establish a Center of Excellence](coe.md). Maximize the platform’s potential and ensure its sustainable, scalable, and secure use across the enterprise.

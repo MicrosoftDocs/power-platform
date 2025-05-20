@@ -3,8 +3,8 @@ title: Move data across regions for Copilots and generative AI features
 description: Learn how to turn on data movement across regions for Copilots and generative AI features.
 author: amchern
 ms.component: pa-admin
-ms.topic: conceptual
-ms.date: 03/20/2025
+ms.topic: how-to
+ms.date: 05/19/2025
 ms.subservice: admin
 ms.author: amchern
 ms.reviewer: sericks
@@ -151,7 +151,6 @@ More Copilots and generative AI features will be available in the future.
 | Microsoft Dataverse | Excel to table for new makers | No | [Upload an Excel file (preview)](/power-apps/maker/data-platform/create-edit-entities-portal#upload-an-excel-file-preview) |
 | Power Apps | Build apps through conversation | No | [Build apps through conversation](/power-apps/maker/canvas-apps/ai-conversations-create-app) |
 | Power Apps | Describe a new table | No | [Describe the new table](/power-apps/maker/data-platform/create-edit-entities-portal#describe-the-new-table) |
-| Power Apps | Draft with Copilot | No | [Draft with Copilot](/power-apps/user/well-written-input-text-copilot) |
 | Power Automate | Power Automate designer Copilot | Yes | [Get started with Copilot in cloud flows](/power-automate/get-started-with-copilot) |
 | Power Pages | Copilot | No | [Overview of AI-powered and Copilot features in Power Pages (preview)](/power-pages/configure/ai-copilot-overview) |
 | AI Builder | AI Prompts | Yes | [Overview of Prompts](/ai-builder/prompts-overview) |

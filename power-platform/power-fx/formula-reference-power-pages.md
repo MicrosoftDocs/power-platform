@@ -49,13 +49,9 @@ In this article, learn about all the functions available in Power Pages.
 
 ## C
 
-**[Calendar](reference/function-clock-calendar.md)** – Retrieves information about the calendar for the current locale.
-
 **[Char](reference/function-char.md)** – Translates a character code into a string.
 
 **[Choices](reference/function-choices.md)** – Returns a table of the possible values for a lookup column.
-
-**[Clock](reference/function-clock-calendar.md)** – Retrieves information about the clock for the current locale.
 
 **[Coalesce](reference/function-isblank-isempty.md)** – Replaces _blank_ values while leaving non-_blank_ values unchanged.
 

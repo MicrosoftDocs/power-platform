@@ -3,7 +3,7 @@ title: "Step 2: Create a managed solution for your app (Microsoft Dataverse) | M
 description: "Learn about how to create a managed solution for your app to include all the components. This is required for publishing an app to Appsource." # 115-145 characters including spaces. This abstract displays in the search result.
 ms.date: 04/03/2023
 ms.reviewer: pehecke
-ms.topic: article
+ms.topic: how-to
 author: angela21k
 ms.author: angelakim
 ms.subservice: developer

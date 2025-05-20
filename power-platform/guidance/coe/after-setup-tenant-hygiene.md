@@ -2,7 +2,7 @@
 title: "Establishing tenant hygiene with the CoE Starter Kit | Microsoft Docs"
 description: "The CoE Starter Kit contains many useful components to help you establish tenant hygiene."
 author: stjeffer
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 06/13/2024
 ms.subservice: guidance-toolkit
 ms.author: stjeffer
@@ -207,7 +207,7 @@ The CoE Starter Kit's **Power BI dashboard** can help you identify highly used a
 
 ### Collaborate and share knowledge
 
-The [Power Platform Community Site Template](../adoption/wiki-community.md#get-started-with-the-power-platform-communication-site-template) provides useful templates for promoting success stories, events, hackathons, and other relevant information. This powerful tool can encourage collaboration and knowledge sharing within your organization. The tool can also help enable the adoption of best practices and standards for Power Platform development.
+The [Power Platform SharePoint community site template](../adoption/sharepoint-site-template.md) provides useful templates for promoting success stories, events, hackathons, and other relevant information. This powerful tool can encourage collaboration and knowledge sharing within your organization. The tool can also help enable the adoption of best practices and standards for Power Platform development.
 
 ## Active makers
 
@@ -253,8 +253,7 @@ Strategies for effectively communicating governance to your makers:
 
 For more information, see:
 
-- [Power Platform community site template](/power-platform/guidance/adoption/wiki-community)
-- [Set up the Power Platform community site template](/power-platform/guidance/adoption/wiki-community#get-started-with-the-power-platform-communication-site-template)
+- [Get started with the Power Platform SharePoint community site template](../adoption/sharepoint-site-template.md)
 - [Welcome new makers to the platform](/power-platform/guidance/adoption/onboard-makers)
 
 ## Administration of the platform

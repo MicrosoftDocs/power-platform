@@ -2,7 +2,7 @@
 title: Business value toolkit
 description: The CoE Starter Kit contains useful components for measuring and communicating the value of Power Platform solutions.
 author: stjeffer
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 08/07/2024
 ms.subservice: guidance-toolkit
 ms.author: stjeffer

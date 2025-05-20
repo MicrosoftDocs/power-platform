@@ -6,7 +6,7 @@ author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: architecture-center
-ms.topic: article
+ms.topic: concept-article
 ms.date: 04/17/2025
 ---
 

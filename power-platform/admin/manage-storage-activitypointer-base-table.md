@@ -3,7 +3,7 @@ title: ActivityPointerBase table storage
 description: Learn about managing ActivityPointerBase table storage.
 author: ceian
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 08/01/2024
 ms.subservice: admin
 ms.author: ceian

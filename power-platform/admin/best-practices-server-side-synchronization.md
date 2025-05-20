@@ -2,7 +2,7 @@
 title: Best practices for server-side synchronization
 description: Consider the best practices outlined in this topic when you plan and deploy server-side synchronization.
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: best-practice
 ms.date: 01/14/2025
 author: rahulmital
 ms.subservice: admin

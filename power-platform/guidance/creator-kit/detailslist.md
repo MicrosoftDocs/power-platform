@@ -3,7 +3,7 @@ title: DetailsList control reference | Creator Kit
 description: Learn about the details and properties of the DetailsList control in the Creator Kit.
 author: denise-msft
 ms.component: pa-maker
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 05/01/2023
 ms.subservice: guidance-toolkit
 ms.author: demora

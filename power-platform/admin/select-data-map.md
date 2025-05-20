@@ -6,7 +6,7 @@ ms.subservice: admin
 ms.author: sericks
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 06/19/2020
 search.audienceType: 
   - admin

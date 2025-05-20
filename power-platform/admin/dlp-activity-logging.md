@@ -3,7 +3,7 @@ title: "Data loss prevention activity logging  | MicrosoftDocs"
 description: Data loss prevention activity logging
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 06/07/2024
 ms.subservice: admin
 author: sericks007
