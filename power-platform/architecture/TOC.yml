@@ -35,15 +35,15 @@
             href: key-concepts/distributed-tracing.md
           - name: Implement distributed tracing
             href: key-concepts/distributed-tracing-details.md
-      - name: Managing Solution Performance
+      - name: Manage solution performance
         items:
           - name: Overview
             href: key-concepts/performance/overview.md
-          - name: UX Strategies
+          - name: UX strategies
             href: key-concepts/performance/ux-strategies.md
-          - name: Monitoring and Reporting Tools
+          - name: Monitoring and reporting Tools
             href: key-concepts/performance/tools.md
-          - name: Identifying and Mitigating Canvas App Performance Issues
+          - name: Identifying and mitigating canvas app performance issues
             href: key-concepts/performance/top-issues.md
     - name: Reference architectures
       items:
