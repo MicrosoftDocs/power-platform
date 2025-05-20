@@ -18,7 +18,7 @@ ms.custom:
 
 Get the latest info about what's new and what's changed in the Power Platform  and Copilot Studio Architecture Center.
 
-## June 2025
+## May 2025
 
 New key concepts:
 
