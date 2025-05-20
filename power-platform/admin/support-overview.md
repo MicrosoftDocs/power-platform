@@ -17,7 +17,7 @@ ms.contributors:
 
 Support is available in markets where Microsoft Power Platform or Dynamics 365 services are offered. Some specific services might not be covered in all regions immediately after general availability (GA).
 
-Support for billing and subscription management-related issues as well as technical break-fix issues is available at all support levels. Advisory, escalation and account management services are available at the Professional Direct and Microsoft Unified support levels.
+Support for billing and subscription management-related issues and technical break-fix issues is available at all support levels. Advisory, escalation, and account management services are available at the Professional Direct and Microsoft Unified support levels.
 
 Products and services covered include:
 
