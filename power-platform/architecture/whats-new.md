@@ -18,6 +18,21 @@ ms.custom:
 
 Get the latest info about what's new and what's changed in the Power Platform  and Copilot Studio Architecture Center.
 
+## June 2025
+
+New key concepts:
+
+- [Managing solution performance](key-concepts/performance/overview.md)
+
+New reference architectures:
+
+- [Use SQL with canvas apps](reference-architectures/sqlserver-canvas-app.md)
+- [Use an autonomous agent in Copilot Studio for document processing](reference-architectures/document-processing-agent.md)
+
+Other updates:
+
+- [Contributors guide](contribute.md) for external contributions
+
 ## April 2025
 
 Welcome to the initial launch of the Power Platform and Copilot Studio Architecture Center.
