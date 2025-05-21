@@ -1,14 +1,14 @@
 ---
 title: Workflow for complex data migration
 description: Learn how to plan and execute complex data migrations from Salesforce to Dataverse, including technical steps, error handling, and best practices.
-#customer intent: As a Power Platform user, I want to plan and execute a complex data migration from Salesforce to Dataverse so that I can ensure data integrity and minimize business disruption.
+#customer intent: As a data migration specialist, I want to plan and execute a complex data migration, such as from Salesforce, to Dataverse so that I can ensure data integrity and minimize business disruption.
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: concept-article
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
-ms.date: 05/20/2025
+ms.date: 05/21/2025
 ---
 
 # Workflow for complex data migration
@@ -41,42 +41,34 @@ Here are some considerations for bringing data into a staging database.
 
 After extracting data from source system like Salesforce, it’s crucial to transform data into a database which is equivalent to tables in Dataverse, and which has the values which can be directly inserted / updated into Dataverse. This form of tables we call as "target staging database". You can think of following transformations for this.
 
-- **Create mappings from source table column names to target**
-  (Dataverse) column names and write scripts to send data from source
-  table to target table. In some cases, data from multiple tables may
-  come to a single table. You need to write join queries to bring the
-  combined data.
+- **Create mappings from source table column names to target** (Dataverse) column names and write scripts to send data from source table to target table. In some cases, data from multiple tables may come to a single table. You need to write join queries to bring the combined data.
 
 - **Option set mapping for transformation**: For optionset values, if source system has those text values, you can write the mapping from text to optionset value in Dataverse and write queries to resolve them. We recommend creating a table like this:
 
+  OptionSetMapping:
 
-
-    OptionSetMapping
+    - Source Table Name (string)
+    - Target Table Name (string)
+    - Source Text (string)
+    - Source Value (string)
+    - Target Text (string)
+    - Target Value (string)
 
     | Source Table Name (string) | Target Table Name (string) | Source Text (string) | Source Value (string) | Target Text (string) | Target Value (string) |
     |:--------------------------:|:-------------------------:|:--------------------:|:---------------------:|:--------------------:|:---------------------:|
     |                            |                           |                      |                      |                      |                      |
 
 
+    And now, you must update all the optionset values in a table named contact in target, where you have two columns for optionset text and value. 
 
+    You can write below query:
 
-And now, you must update all the optionset values in a table named contact in target, where you have two columns for optionset text and value. 
+    ```
+    Update C.\<OptionsetValue\> = M.\<TargetValue\> FROM Contact C JOIN OptionsetMapping M ON C.OptionsetText = M.TargetText AND M.TargetTableName = 'Contact'
+    ```
 
-You can write below query:
-
-` Update C.\<OptionsetValue\> = M.\<TargetValue\> FROM Contact C JOIN OptionsetMapping M ON C.OptionsetText = M.TargetText AND M.TargetTableName = ‘Contact’ `
-
-
-- **Do not generate GUIDs for Dataverse**: Dataverse uses GUID as
-  primary key. You can either supply a GUID during insert or let
-  Dataverse generate it. You must not generate the GUIDs, if the source
-  system isn't Dataverse. The reason is whatever algorithms you use for
-  generating GUIDs, it might not be same which Dataverse uses internally
-  to generate the GUIDs, and random GUIDs cause a heavy page
-  fragmentation in Dataverse table which will reduce the performance of
-  those tables and that won't be a good scenario. So, you should
-  always let Dataverse generate the GUIDs, as they're coming from
-  another Dataverse instance.
+- **Do not generate GUIDs for Dataverse**: Dataverse uses GUID as primary key. You can either supply a GUID during insert or let
+  Dataverse generate it. You must not generate the GUIDs, if the source system isn't Dataverse. The reason is whatever algorithms you use for generating GUIDs, it might not be same which Dataverse uses internally to generate the GUIDs, and random GUIDs cause a heavy page fragmentation in Dataverse table which will reduce the performance of those tables and that won't be a good scenario. So, you should always let Dataverse generate the GUIDs, as they're coming from another Dataverse instance.
 
 - **String lengths**: Check all string column lengths carefully and match them with the Dataverse column lengths. If the data exceeds the allowed length, take appropriate corrective actions such as trimming the data or reducing its length to match the Dataverse column requirements.
 

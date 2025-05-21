@@ -13,7 +13,8 @@ ms.date: 05/20/2025
 
 # Data migration approaches
 
-Data migration is a critical step when you move to Microsoft Power Platform. The right migration approach depends on your data’s size and complexity. This article outlines simple, medium, and complex data migration strategies, highlights recommended tools, and shares best practices to help you plan and run a successful migration. Whether you’re handling a small dataset or a large, complex environment, use this article to choose the best method for your scenario and make your move to Dataverse smooth.
+
+Migrating data from an external customer relationship management (CRM) system to Microsoft Dataverse is a key step in modernizing your business applications. The right migration approach depends on your data's size and complexity. This article explains simple, medium, and complex migration strategies, recommends tools for each scenario, and shares best practices to help you plan and execute a successful  migration.
 
 ## Simple data migration
 
@@ -67,21 +68,18 @@ Data migration is a critical step when you move to Microsoft Power Platform. The
 
 This article focuses on the approach for large, complex data migration scenarios. It introduces a proven methodology for handling complex data migrations. The biggest challenge with large data migrations is managing errors, retries, and tracking what's loaded and what's not loaded. Migration often takes significant time—sometimes from a few days to a few weeks. Use a phased migration strategy so you only migrate delta data during production cutover.
 
-
 ## Architecture diagram
 
-This diagram shows why a staging database is important for large and complex data migrations.
+This diagram illustrates the importance of using a staging database for large and complex data migrations. Note that the source system is not directly connected to the target system. Instead, data is first moved to a staging database, where it is transformed and validated before being loaded in Dataverse. This approach helps ensure data integrity and minimizes the risk of errors during the migration process.
 
-:::image type="content" source="media/data-migration-approaches/architecture.svg" alt-text="Screenshot of a data migration workflow architecture diagram showing the importance of a staging database for large and complex data migrations." lightbox="media/data-migration-approaches/architecture.svg":::
+:::image type="content" source="media/data-migration-approaches/architecture.svg" alt-text="Architecture diagram showing the workflow for a complex data migration from a CRM system such as Salesforce or Sibel to Microsoft Dataverse." lightbox="media/data-migration-approaches/architecture.svg":::
 
-
-## Next steps
+## Next step
 
 - [Workflow for complex data migration](workflow-complex-data-migration.md)
 
 
 ## Related information
 
-
-- [Export to data lake](/power-apps/maker/data-platform/export-to-data-lake-data-adf)
-- [Azure synapse link view in fabric](/power-apps/maker/data-platform/azure-synapse-link-view-in-fabric)
+- [Ingest exported Dataverse data with Azure Data Factory](/power-apps/maker/data-platform/export-to-data-lake-data-adf)
+- [Link your Dataverse environment to Microsoft Fabric and unlock deep insights](/power-apps/maker/data-platform/azure-synapse-link-view-in-fabric)

@@ -1,36 +1,42 @@
 ---
-title: "Achieve excellence in CRM migration: real-world Dataverse insights"
+title: "CRM migration to Dataverse: Key insights and best practices"
 description: Learn how to move data from external CRM systems to Microsoft Dataverse, overcome common challenges, and ensure business continuity.
-#customer intent: As a Power Platform user, I want to migrate data from an external CRM system to Microsoft Dataverse so that my organization can maintain business continuity.
+#customer intent: As a business analyst, I want to understand the challenges of migrating CRM data to Dataverse so that I can plan a smooth transition.
 author: manuelap-msft
 ms.component: pa-admin
-ms.topic: concept-article
+ms.topic: overview
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
-ms.date: 05/20/2025
+ms.date: 05/21/2025
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-title
+  - ai-seo-date:05/21/2025
 ---
 
-# Achieve excellence in CRM migration: real-world Dataverse insights
+# CRM migration to Dataverse: Key insights and best practices
 
-Dataverse data migration lets you move data from different CRM systems into Microsoft Dataverse. This process helps keep your operations running smoothly. Moving data from external CRM systems like Salesforce or Siebel into Dataverse can be challenging. Differences in data schema, volume, complexity, and dependencies in the source systems cause issues. Keep your data accurate, consistent, and secure during migration to maintain business continuity.
+Data migration is the process by which data is transferred from one system to another. This article provides key insights and best practices to help you plan and execute a successful migration from an external customer relationship management (CRM) system to Microsoft Dataverse.
 
-Some common issues during migration include:
+The migration of data from external CRM systems like Salesforce or Siebel into Dataverse is complex. Challenges include differences in data schema, volume, complexity, and dependencies in the source systems. Ensuring data integrity, consistency, and security during the migration process is critical to maintain business continuity.
 
-1. **Data mapping and transformation**: Source and target data structures often differ. Mapping and transforming data to fit Dataverse schemas takes time and can cause errors.
+Common issues during migration include:
 
-1. **Data volume**: Large data sets slow down migration, so plan carefully to handle high volumes.
+- **Data mapping and transformation**: Source and target data structures often differ significantly. Mapping and transforming data to fit Dataverse schemas is time-intensive and error-prone.
 
-1. **Data quality**: Duplicates, missing fields, or inconsistent formats in source systems affect the integrity of migrated data.
+- **Data volume**: Large data sets can strain migration processes. Plan carefully to handle high volumes effectively.
 
-1. **Integration of dependencies**: Relationships between entities, lookups, and other data dependencies need careful handling to keep everything working in Dataverse.
+- **Data quality**: Duplicates, missing fields, or inconsistent formats in source systems can affect the integrity of migrated data.
 
-1. **Performance and downtime**: Large or complex migrations cause downtime or slow performance, which affects business operations.
+- **Integration of dependencies**: Relationships between entities, lookups, and other data interdependencies need careful handling to maintain functionality within Dataverse.
 
-1. **Security compliance**: Handle sensitive data securely to meet data protection rules and policies.
+- **Performance and downtime**: Large or complex migrations can cause prolonged downtime or slow system performance, which may affect business operations.
+
+- **Security compliance**: Sensitive data must be handled securely to meet data protection rules and policies.
 
 The migration approach depends on the size and complexity of your data set. Use a simple, medium, or complex approach based on volume and complexity.
 
-## Next steps
+## Next step
 
-- [Data migration approaches](Data-migration-approaches.md)
+- [Data migration approaches](data-migration-approaches.md)
