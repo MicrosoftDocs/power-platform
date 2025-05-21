@@ -1,0 +1,18 @@
+sequenceDiagram
+    participant TestEngine
+    participant DAPI as Data Protection API
+    participant KeyRing as Key Ring
+    participant Protection as Protection Provider
+    
+    TestEngine->>DAPI: Protect data
+    DAPI->>KeyRing: Request current key
+    KeyRing->>DAPI: Return key
+    DAPI->>Protection: Apply protection algorithm
+    Protection->>DAPI: Return protected data
+    DAPI->>TestEngine: Return encrypted payload
+    
+    Note over TestEngine,Protection: For X.509 certificate encryption
+    
+    TestEngine->>DAPI: Configure X.509 certificate
+    DAPI->>Protection: Update protection provider
+    Protection->>KeyRing: Encrypt keys with certificate

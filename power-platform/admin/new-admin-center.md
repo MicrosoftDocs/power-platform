@@ -1,10 +1,10 @@
 ---
-title: Use the new and improved Power Platform admin center (preview)
+title: Use the new and improved Power Platform admin center
 description: Learn how to use the updated Power Platform admin center's new UI and features for effective administration and monitoring.
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 05/02/2025
+ms.date: 05/19/2025
 ms.custom: 
   - NewPPAC
   - ignite-2024
@@ -17,23 +17,15 @@ search.audienceType:
   - admin
 ---
 
-# Use the new and improved Power Platform admin center (preview)
+# Use the new and improved Power Platform admin center 
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
-[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner.md)]
-
-We're happy to announce the public preview of the new and improved Power Platform admin center! The new Power Platform admin center is designed with an outcome-driven approach, where all functionality is intuitively organized in pages based on administrative tasks. The new admin center isn't just task-oriented, it also helps you achieve specific outcomes and goals. The design focuses on providing an optimal user experience, catering to a wide range of stakeholders with varying needs.
+We're happy to announce the general availability of the new and improved Power Platform admin center! We designed the new admin center to be easier to use, with task-oriented navigation that helps you achieve specific outcomes faster.
 
  > [!VIDEO 1d442a39-f7ce-438f-a53e-b7c23ce33e25]
 
-[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
+The new Power Platform admin center is designed with an outcome-driven approach, where all functionality is intuitively organized in pages based on administrative tasks. The new admin center isn't just task-oriented, it also helps you achieve specific outcomes and goals. The design focuses on providing an optimal user experience, catering to a wide range of stakeholders with varying needs.
 
-## When and how can customers benefit from the new experience?
-
-All customers can access the public preview of the new Power Platform admin center. It's turned on by default when you access the admin center. 
-
-To revert to the classic admin center, turn off the **Try the new admin center** toggle in the upper-right corner of the admin center.
+All customers can access the new Power Platform admin center. It's turned on by default when you access the admin center. To revert to the classic admin center, turn off the **Try the new admin center** toggle in the upper-right corner of the admin center.
 
 ## Where are pages from the classic admin center in the new one?  
 
@@ -72,7 +64,3 @@ Most of the pages from the classic admin center are available in the new one, ei
 In addition to reorganized pages based on admin tasks, we're introducing a new *monitoring pages* experience. Monitoring pages allow admins and makers to track performance statistics in their tenant, helping them identify app accessibility problems or slow-loading Power Pages sites.  
 
 These new experiences help you measure and improve the operational health of your organizational resources such as apps. They provide insights into overall operational health in a tenant or specific environments. Metrics are derived from aggregated event logs of runtime activities, with recommendations based on these logs or static analysis of resource properties. Event logs used for metric calculations are available for review and download for further analysis.
-
-## What's next?
-
-Over the coming months, we'll add more features to assist admins with day-to-day tasks, including application lifecycle management. Stay tuned for more information!
