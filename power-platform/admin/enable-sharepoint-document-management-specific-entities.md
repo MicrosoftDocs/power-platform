@@ -19,7 +19,7 @@ search.audienceType:
 Enable document management for specific entities to store related records in SharePoint. This setting allows you to quickly access, share, and manage these documents directly from customer engagement apps such as Dynamics 365 Sales, Customer Service, Field Service, Marketing, and Project Service Automation.
 
 > [!TIP]
-> If you did not set up server-based [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] integration, you may want to do that before enabling document management for specific entities. For more information, see [Set up SharePoint integration](set-up-sharepoint-integration.md).
+> If you didn't set up server-based [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] integration, you may want to do that before enabling document management for specific entities. For more information, see [Set up SharePoint integration](set-up-sharepoint-integration.md).
 
 > [!IMPORTANT]
 > If you have customer engagement apps and SharePoint Online, make sure the site is under the same Microsoft 365 tenant as your environments.
