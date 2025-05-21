@@ -1,5 +1,5 @@
 ---
-title: Security page overview
+title: Security overview
 description: Learn how to manage security in the Power Platform admin center by using the available security features.
 ms.subservice: admin
 ms.component: pa-admin
@@ -13,11 +13,11 @@ search.audienceType:
   - admin
 ---
 
-# Security page overview
+# Security overview
 
 [!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
-The **Security** page in the Power Platform admin center is designed to enhance your organization's security and streamline management. It provides a centralized location where you can view and manage security recommendations, assess your security score, and implement proactive policies to safeguard your organization.
+The **Security** > **Overview** page in the Power Platform admin center is designed to enhance your organization's security and streamline management. It provides a centralized location where you can view and manage security recommendations, assess your security score, and implement proactive policies to safeguard your organization.
 
 Administrators can complete these tasks:
 
@@ -30,18 +30,18 @@ Administrators can complete these tasks:
 To view your security score, you must turn on tenant-wide analytics. You can find instructions in [How do I turn on tenant-level analytics?](../tenant-level-analytics.md#how-do-i-turn-on-tenant-level-analytics)
 
 > [!NOTE]
-> After you turn on tenant-wide analytics, it might take up to 24 hours for the **Security** page to be populated with data. Until then, most sections of the page show the message "Calculating security score."
+> After you turn on tenant-wide analytics, it might take up to 24 hours for the **Security** > **Overview** page to be populated with data. Until then, most sections of the page show the message "Calculating security score."
 
-## Access the Security page
+## Access the Security > Overview page
 
-To access the **Security** page, you must have Microsoft Entra ID roles such as Power Platform administrator or Dynamics 365 administrator. Learn more about these roles in [Use service admin roles to manage your tenant](../use-service-admin-role-manage-tenant.md). Environment administrators can manage security and compliance features for owned environments by opening the **Security** page as explained in the following procedure.
+To access the **Security** > **Overview** page, you must have Microsoft Entra ID roles such as Power Platform administrator or Dynamics 365 administrator. Learn more about these roles in [Use service admin roles to manage your tenant](../use-service-admin-role-manage-tenant.md). Environment administrators can manage security and compliance features for owned environments by opening the **Security** page as explained in the following procedure.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Security**.
-1. In the **Security** pane, select the page that you want to open. You can open pages for [data protection and privacy](data-protection-privacy.md), [identity and access management](identity-access-management.md), and [compliance](compliance.md).
+1. In the **Security** pane, select the page that you want to open. You can open pages for the overview, [data protection and privacy](data-protection-privacy.md), [identity and access management](identity-access-management.md), and [compliance](compliance.md).
 
 > [!NOTE]
-> - Only tenant administrators can access the scorecard and recommendations on the **Overview** page (**Security** \> **Overview**).
+> - Only tenant administrators can access the scorecard and recommendations on the **Security** > **Overview** page.
 > - Only tenant administrators can convert an environment to a managed type.
 > - On every security page, features that apply to Managed Environments are marked with the following meter symbol:
 >
@@ -144,7 +144,7 @@ To make a recommendation active again, complete the following steps.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Security**.
-1. In the **Security** pane, select **Overeview**.
+1. In the **Security** pane, select **Overview**.
 1. The **Overview** page appears. Scroll down to the **Take action to increase your security score** section.
 1. Select the **Dismissed** tab.
 1. Select the recommendation that you want to make active.
