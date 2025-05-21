@@ -77,11 +77,11 @@ This diagram shows why a staging database is important for large and complex dat
 
 ## Next steps
 
-- [Workflow for complex data migration](workflow-for-complex-data-migration.md)
+- [Workflow for complex data migration](workflow-complex-data-migration.md)
 
 
 ## Related information
 
 
-- [Export to data lake](https://learn.microsoft.com/en-us/power-apps/maker/data-platform/export-to-data-lake-data-adf)
-- [Azure synapse link view in fabric](https://learn.microsoft.com/en-us/power-apps/maker/data-platform/azure-synapse-link-view-in-fabric)
+- [Export to data lake](/power-apps/maker/data-platform/export-to-data-lake-data-adf)
+- [Azure synapse link view in fabric](/power-apps/maker/data-platform/azure-synapse-link-view-in-fabric)
