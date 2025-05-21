@@ -77,6 +77,19 @@ The environment's administrators and the user who created the environment are no
 
 A warning message appears on the **Environments** list page and **Environment** page when an environment is disabled.
 
+## Default environment 
+Power Platform is implementing a cleanup process for default environments that meet the following criteria. After 90 days of inactivity, two warning notifications are sent to environment administrators, if no action is taken, the environment is deleted. You have seven days to recover deleted environments.
+A cleanup mechanism in Power Platform will soon automatically removes default environments that aren't being used based on the following schedule. After 90 days of inactivity, two warning notifications are sent to environment administrators, if no action is taken, the environment is deleted. You have seven days to recover deleted environments.
+
+- Environments with [premium licenses](pricing-billing-skus.md) aren't included in the cleanup.
+- Environments with Microsoft 365 agents or planner activity aren't included in the cleanup.
+- Environments with flows aren't cleaned up until they have a year of inactivity, to allow for annual and seasonal activity.
+- Admins receive two warning notifications before the default environment is deleted due to inactivity.
+- Any activity within 30 days of the notification resets the inactivity period.
+- Inactive environments are deleted 30 days after the first inactivity notification. 
+
+During the deletion process, a new replacement default environment is created without Dataverse, with an option to add Dataverse later, and the previous default environment is deleted. After an environment is deleted, it can be recovered within the next seven days. However, the environment type is changed to **production** type upon restoration, as we can't overwrite the new default environment.
+
 ### Definition of user activity
 
 Power Platform calculates a single measure of inactivity for each environment. The measure accounts for all activity by users, makers, and admins across Power Apps, Power Automate, Power Platform, Microsoft Copilot Studio, and Dataverse.
