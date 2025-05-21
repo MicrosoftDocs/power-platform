@@ -6,6 +6,7 @@ ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 05/04/2024
 ms.subservice: admin
+ms.custom: NewPPAC
 ms.author: matp
 search.audienceType: 
   - admin
@@ -20,10 +21,7 @@ Introduced in September 2020, *Microsoft Dataverse for Teams* is a built-in, low
 
 The Dataverse for Teams environment is automatically created for the selected team when you create an [app](/powerapps/teams/create-first-app) or [bot](/power-virtual-agents/teams/authoring-first-bot-teams#create-a-bot) in Microsoft Teams for the first time or install an app created using Power Apps from the app catalog for the first time. The Dataverse for Teams environment is used to store, manage, and share team-specific data, apps, and flows. Each team can have one environment, and all data, apps, bots, and flows created with the app created using Power Apps inside a team are available from that team's Dataverse for Teams database.  
 
-You can identify a Dataverse for Teams environment in the [Power Platform admin center](https://admin.powerplatform.microsoft.com) by using the **Type** column in the list of environments.
-
-> [!div class="mx-imgBorder"] 
-> ![A Dataverse for Teams environment in the environment list.](media/teams-environment-list.png "A Dataverse for Teams environment in the environment list")
+You can identify a Dataverse for Teams environment in the [Power Platform admin center](https://admin.powerplatform.microsoft.com) by checking the **Type** column in the list of environments. Environments where the **Type** is marked as **Microsoft Teams** are Dataverse for Teams environments.
 
 ## Licensing and restrictions
 
@@ -137,42 +135,83 @@ There's a difference in the models for adding users to an environment with a Dat
 ## Dataverse for Teams environment settings and actions
 <!-- fwlink 2133713 2134780(settings) 213924(backup/restore) -->
 
-To change settings for a Dataverse for Teams environment, go to **Environments** > [select a Dataverse for Teams environment] > **Settings**.
+Access requires sufficient permissions, such as System Administrator or System Customizer role. To check your security role, see [View your user profile](/powerapps/user/view-your-user-profile). If you don’t have the correct permissions, contact your system administrator.
 
-> [!div class="mx-imgBorder"] 
-> ![Dataverse for Teams environment settings.](media/teams-environment-settings.png "Dataverse for Teams environment settings")
+To change settings for a Dataverse for Teams environment, follow these steps:
+
+#### [Modern admin center](#tab/new)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. On the Environments page, select an environment where the Type is marked as Microsoft Teams.
+1. In the command bar, select **Settings**. 
+1. Expand **Integration**, then select **Teams integration settings**.
+   
+#### [Classic admin center](#tab/classic)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Environments**.
+1. On the Environments page, select an environment where the Type is marked as Microsoft Teams.
+1. In the command bar, select **Settings**.  
+1. Expand **Integration**, then select **Teams integration settings**.
+---
+
+In the **Microsoft Teams collaboration and chat** settings, choose one of the following options:
+
+- **Turn on for all Dynamics 365 apps** – Enables Teams chat for all supported Dynamics 365 apps in your organization, including any that you add in the future.
+- **Turn on for selected Dynamics 365 apps** – Enables Teams chat for the apps you choose. If your organization already uses Teams, the selection you made previously remains. If you didn't previously set up Teams, it's on by default for the Copilot Service workspace and Customer Service Hub apps.
+
+Click **Save** to apply the changes.
 
 ### Users + permissions
 <!-- fwlink 2123134 2127762 -->
 
 You can specify users in an environment to provide access to Dataverse for Teams environment apps, bots, and data.
 
-1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select **Environments** on the left pane, and then select a Dataverse for Teams environment.
+#### [Modern admin center](#tab/new)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. On the **Environments** page, select an environment where the **Type** is marked as **Microsoft Teams**.
+1. In the command bar, select **Settings**. 
+1. Expand **Users + permissions**, then select **Users**.
+1. In the command bar, select **Add user**.
+1. Enter a name or email address of a user who meets the user access requirements to be added to the Dataverse for Teams environment.
+1. Click **Add** to save the changes.
+   
+#### [Classic admin center](#tab/classic)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Environments**.
+1. On the **Environments** page, select an environment where the **Type** is marked as **Microsoft Teams**.
+1. In the command bar, select **Settings**.  
+1. Expand **Users + permissions**, then select **Users**.
+1. In the command bar, select **Add user**.
+1. Enter a name or email address of a user who meets the user access requirements to be added to the Dataverse for Teams environment.
+1. Click **Add** to save the changes.
+---
 
-2. Select **Settings**.
+In the top command bar, click Refresh to update the list and view the newly added user.
 
-3. Select **Users + permissions**, and then select **Users**.
-
-4. You'll see a list of enabled and disabled users who are members of the Dataverse for Teams environment. You can select a user from the list to run diagnostics and view their access details and status.
-
-5. Select **+ Add user** to add a tenant user to the selected Dataverse for Teams environment. 
-
-   > [!div class="mx-imgBorder"] 
-   > ![Add a user to a Dataverse for Teams environment.](media/teams-environment-user-list-add.png "Add a user to a Dataverse for Teams environment") 
-
-6. Enter a name or email address of a user who meets the user access requirements to add the user to the Dataverse for Teams environment, and then select **Add**.
-
-   > [!div class="mx-imgBorder"] 
-   > ![Add a user settings.](media/teams-environment-add-user.png "Add a user settings") 
-
-7. Select **Refresh** to see the added user in the list.
+The list displays enabled and disabled users who are members of the Dataverse for Teams environment. You can select a user to run diagnostics, check their access details, and review their status.
 
 ### Delete a Dataverse for Teams environment
 
-To delete a Dataverse for Teams environment, select it from the list of environments and then select **Delete**.
+To delete a Dataverse for Teams environment, follow these steps:
 
-> [!div class="mx-imgBorder"] 
-> ![Delete a Dataverse for Teams environment.](media/teams-environment-manage-delete.png "Delete a Dataverse for teams environment")
+#### [Modern admin center](#tab/new)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. On the **Environments** page, select an environment where the **Type** is marked as **Microsoft Teams**.
+1. In the command bar, select **Delete**. 
+1. Confirm the deletion to delete the environement.
+   
+#### [Classic admin center](#tab/classic)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Environments**.
+1. On the **Environments** page, select an environment where the **Type** is marked as **Microsoft Teams**.
+1. In the command bar, select **Delete**. 
+1. Confirm the deletion to delete the environement.
+---
 
 ### Upgrade a Dataverse for Teams environment to production
 
@@ -182,10 +221,21 @@ Select **Upgrade to production**. More information: [Upgrade process](#upgrade-p
 
 The consumption of capacity by Dataverse for Teams environments won't count towards the tenant's capacity limits. Instead, we'll provide a pool of capacity for Dataverse for Teams environments, which will be separate from the tenant's Microsoft Power Platform Dataverse capacity pool. Capacity won't be transferable between these two pools.  
 
-**Per-environment limits on Dataverse for Teams environments**: Each Dataverse for Teams environment provides 2 GB of combined database and file storage, with a portion of this amount reserved for system use. To see the consumption of each Dataverse for Teams environment in a tenant, go to the Power Platform admin center (https://aka.ms/ppac), then to **Resources** > **Capacity** > **Microsoft Teams Capacity**.
+**Per-environment limits on Dataverse for Teams environments**: Each Dataverse for Teams environment provides 2 GB of combined database and file storage, with a portion of this amount reserved for system use. 
 
-> [!div class="mx-imgBorder"] 
-> ![Dataverse for Teams environment capacity.](media/teams-environment-capacity.png "Dataverse for Teams environment capacity")
+To see the consumption of each Dataverse for Teams environment in a tenant, follows these steps:
+
+#### [Modern admin center](#tab/new)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Licensing**.
+1. In the **Licensing** pane, select **Capacity add-ons**.
+1. On the **Capacity** page, select the **Microsoft Teams** tab to view consumption details.
+   
+#### [Classic admin center](#tab/classic)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, click **Resources**, then select **Capacity**.
+1. On the **Capacity** page, select the **Microsoft Teams** tab to view consumption details.
+---
 
 **Tenant-wide limits on Dataverse for Teams environments**: Each tenant will also have limits related to Dataverse for Teams environments defined in the following table. 
 
