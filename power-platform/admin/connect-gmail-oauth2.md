@@ -5,6 +5,7 @@ ms.component: pa-admin
 ms.topic: how-to
 ms.date: 05/16/2025
 author: DanaMartens
+contributors:
 ms.subservice: admin
 ms.custom: NewPPAC
 ms.author: dmartens
@@ -16,7 +17,7 @@ search.audienceType:
   - admin
 ---
 
-# Connect Gmail accounts by using OAuth 2.0 
+# Connect Gmail accounts by using OAuth 2.0
 
 [!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
@@ -43,28 +44,28 @@ Using a Google account (this can be the same one you'll use to send and retrieve
 
 Follow the steps for **Create a project** in [Create, shut down, and restore projects](https://support.google.com/googleapi/answer/6251787).
 
-## Step 3. Configure OAuth consent 
+## Step 3. Configure OAuth consent
 
 > [!NOTE]
 > These steps should be done by the system administrator.
 
 1. Select **OAuth consent screen**, and then select the user type:
    - Select **Internal** if you're using a GSuite admin tenant and will be creating the app exclusively for your organization.
-   - Select **External** if you're testing by using a standalone Gmail account. 
+   - Select **External** if you're testing by using a standalone Gmail account.
 
-   > [!div class="mx-imgBorder"] 
+   > [!div class="mx-imgBorder"]
    > ![Screenshot of the OAuth consent screen.](media/gmail-oauth-consent-screen.png "OAuth consent screen")
 
 2. Select **Create**.
 
 3. Under **Application name**, enter the application name. Under **Authorized domains**, enter your environment's top private domain name (for example, `dynamics.com`). Select **Save**.
 
-   > [!div class="mx-imgBorder"] 
+   > [!div class="mx-imgBorder"]
    > ![Screenshot of entering application name and domain.](media/gmail-oauth-consent-domain-name.png "Enter application name and domain")
 
 4. Select **Credentials** > **Create credentials**.
 
-   > [!div class="mx-imgBorder"] 
+   > [!div class="mx-imgBorder"]
    > ![Screenshot of the Create credentials command.](media/gmail-oauth-consent-create-credentials.png "Create credentials")
 
 5. Select **OAuth client ID**.
@@ -141,7 +142,7 @@ In the **Set up server profile** panel:
 
 In the Google Cloud Platform (Developer Console), add users in the **Test Users** section when publishing the app. You can learn more about adding test users in [Google Cloud Platform Console Help](https://support.google.com/cloud/answer/7454865).
 
-> [!div class="mx-imgBorder"] 
+> [!div class="mx-imgBorder"]
 > ![Screenshot of adding test users.](media/gmail-oauth-add-users.png "Add test users")
 
 ## Step 7. Test and enable
@@ -151,9 +152,7 @@ In the Google Cloud Platform (Developer Console), add users in the **Test Users*
 
 Select **Test & Enable Mailbox** to test the mailbox configured in step 6.
 
-> [!div class="mx-imgBorder"] 
+> [!div class="mx-imgBorder"]
 > ![Screenshot of the Test & Enable Mailbox command.](media/gmail-oauth-test-enable-mailbox.png "Test and enable mailbox")
-
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
