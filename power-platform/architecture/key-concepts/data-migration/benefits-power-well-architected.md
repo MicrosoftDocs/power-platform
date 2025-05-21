@@ -17,35 +17,35 @@ ms.date: 05/20/2025
 
 ## Reliability
 
-The defined data migration architecture ensures reliability by using several key strategies. Using a virtual machine in the same region as Dataverse minimizes latency and maximizes data transfer speeds. This setup makes migration efficient and less likely to be interrupted. Also, using a high-memory and high-storage virtual machine, like the D4 with 8 cores, 28 GB RAM, and 500 GB storage, means the architecture can handle large volumes of data without performance issues. Using a local database instead of an Azure database further improves reliability because it reduces dependencies on external services and avoids potential connectivity or service outages. Deploying Azure Data Factory in the same region as Dataverse ensures consistent and fast data processing. This architecture lets organizations achieve a robust and dependable data migration process with minimal downtime, fast error handling, and a simple recovery strategy.
+The defined data migration architecture is reliable because it uses several key strategies. Running a virtual machine in the same region as Dataverse reduces latency and increases data transfer speeds. This setup makes migration efficient and less likely to be interrupted. Also, a high-memory and high-storage virtual machine, like the D4 with 8 cores, 28 GB RAM, and 500 GB storage, handles large volumes of data without performance issues. A local database instead of an Azure database further improves reliability because it reduces dependencies on external services and avoids potential connectivity or service outages. Deploying Azure Data Factory in the same region as Dataverse keeps data processing consistent and fast. This architecture gives you a robust and dependable data migration process with minimal downtime, fast error handling, and a simple recovery strategy.
 
 - **Design for business requirements**
 
-Design for business requirements by considering the need for data migration. After segmenting data, discuss migration needs with each business stakeholder to bring only relevant data. By adding columns like `Processing Flag`, `Action Flag`, and `DM Created Date Time`, you can monitor the progress of data migration at a granular level.
+Design for business requirements by considering the need for data migration. After segmenting data, talk with each business stakeholder about migration needs to bring only relevant data. Add columns like `Processing Flag`, `Action Flag`, and `DM Created Date Time` to monitor the progress of data migration at a granular level.
 
 - **Resiliency**
 
-Build a failover mechanism and handle errors immediately for every table to ensure resiliency during migration. Keeping error and success tables gives a clear picture of successful and failed records.
+Build a failover mechanism and handle errors immediately for every table to keep migration resilient. Keep error and success tables to give a clear picture of successful and failed records.
 
 - **Recovery**
 
-Plan the recovery process for any data migration. By storing data in intermediate staging databases, you can take full database backups at regular intervals to ensure recovery if the system fails or crashes. If you keep only tools at the application layer, it's hard to recover and find the current state of migration if the application fails. Running failed records is easier with a separate intermediate database.
+Plan the recovery process for any data migration. Store data in intermediate staging databases so you can take full database backups at regular intervals to recover if the system fails or crashes. If you keep only tools at the application layer, it's hard to recover and find the current state of migration if the application fails. Running failed records is easier with a separate intermediate database.
 
 - **Self-support**
 
-A clear schema and systematic approach let team members support each other. If a key member is on vacation, others can understand the current situation by checking the status of individual tables and the current migration set. This architecture supports self-service.
+A clear schema and systematic approach let team members support each other. If a key member is on vacation, others can check the status of individual tables and the current migration set to understand the current situation. This architecture supports self-service.
 
 - **Simplicity**
 
-This architecture is simple and reliable. Any data migration developer can understand and implement it after learning the approach.
+This architecture is simple and reliable. Any data migration developer can learn and implement it after learning the approach.
 
 ## Security
 
-Security is critical in data migration architecture. Protect sensitive information throughout the migration process by using strong encryption for data in transit and at rest. Define access controls carefully and grant permissions only to authorized people to reduce internal risks. Run regular security audits and vulnerability assessments to find and fix risks. Use real-time monitoring and alerting to detect and respond to suspicious activity quickly. Follow industry standards and best practices to keep the migration environment secure and maintain data integrity, confidentiality, and availability during and after migration.
+Security is critical in data migration architecture. Protect sensitive information throughout the migration process by using strong encryption for data in transit and at rest. Carefully define access controls, and grant permissions only to authorized people to reduce internal risks. Run regular security audits and vulnerability assessments to find and fix risks. Use real-time monitoring and alerting to detect and respond to suspicious activity quickly. Follow industry standards and best practices to keep the migration environment secure, and maintain data integrity, confidentiality, and availability during and after migration.
 
 - **Security readiness**
 
-For Dataverse data, security depends on ownership, business units, and security roles. Use disabled users as stubs and assign them a minimum privilege security role, like the "Salesperson" role. Keep data secure at the source by storing it in a VM or database with limited access.
+For Dataverse data, security depends on ownership, business units, and security roles. Use disabled users as stubs and assign them a minimum privilege security role, like the "salesperson" role. Keep data secure at the source by storing it in a VM or database with limited access.
 
 - **Protecting confidentiality**
 
@@ -57,11 +57,11 @@ Dataverse is a SaaS platform that guarantees high availability of data and the s
 
 - **Sustaining the security**
 
-After migration, keep security intact by making sure ownership migration isn't changed. Discard intermediate staging databases after you validate the migration.
+After migration, keep security intact by making sure ownership migration isn't changed. Discard the intermediate staging database after you validate the migration.
 
 ## Operational Excellence
 
-Operational excellence in our Data Migration Architecture is achieved
+Operational excellence in our data migration architecture is achieved
 through a combination of meticulous planning, continuous improvement,
 and adherence to best practices. The architecture is designed to ensure
 that data is migrated efficiently and securely while maintaining high
@@ -79,8 +79,8 @@ quality and security.
 
 - **Embraces fusion development**
 
-By integrating fusion development principles into our Data Migration
-Architecture, we foster a collaborative environment where developers, IT
+By integrating fusion development principles into our aata migration
+architecture, we foster a collaborative environment where developers, IT
 professionals, and business users work together seamlessly. This
 approach enables the rapid development and deployment of migration
 solutions that are tailored to meet the specific needs of the
@@ -92,7 +92,7 @@ the migration strategy is executed effectively.
 
 - **Establishes development standards**
 
-Our Data Migration Architecture establishes strict development standards
+Our data migration architecture establishes strict development standards
 to ensure consistency and quality across all migration projects. These
 standards include guidelines for coding practices, documentation,
 testing, and validation. By adhering to these standards, we ensure that
@@ -116,7 +116,7 @@ enabling continuous improvement and optimization of our processes.
 
 - **Deploy with confidence**
 
-Our Data Migration Architecture is designed to instill confidence in the
+Our data migration architecture is designed to instill confidence in the
 deployment process. Rigorous testing and validation procedures are
 implemented to ensure that all migrated data is accurate, complete, and
 functional in the target environment. This includes unit testing,
@@ -129,7 +129,7 @@ project.
 
 - **Automate for efficiency**
 
-Automation is a key component of our Data Migration Architecture,
+Automation is a key component of our data migration architecture,
 driving efficiency and reducing the risk of human error. Automated
 scripts and workflows handle repetitive tasks such as data extraction,
 transformation, and loading (ETL), as well as validation and testing.
@@ -154,8 +154,8 @@ process is smooth, and that the data always remains protected.
 
 ## Performance Efficiency
 
-Performance efficiency is a critical aspect of our Data Migration
-Architecture. By employing advanced monitoring and analytics tools, the
+Performance efficiency is a critical aspect of our data migration
+architecture. By employing advanced monitoring and analytics tools, the
 architecture ensures that the migration process is consistently
 optimized for speed and reliability. These tools track key performance
 indicators (KPIs) such as data transfer rates, system resource
@@ -183,7 +183,7 @@ migration.
 
 - **Designed to meet performance requirements**
 
-Our Data Migration Architecture is meticulously designed to meet
+Our data migration architecture is meticulously designed to meet
 stringent performance requirements. This involves incorporating best
 practices in coding, testing, and validation to ensure that every aspect
 of the migration process is optimized for peak performance. Rigorous
@@ -222,24 +222,22 @@ migration.
 
 ## Experience Optimization
 
-Experience optimization in our Data Migration Architecture focuses on
+Experience optimization in our data migration architecture focuses on
 enhancing the overall experience of both developers and end-users. By
 integrating user-centric design principles and using advanced
-technologies, we create an environment that is intuitive, efficient, and
+technologies, you create an environment that is intuitive, efficient, and
 highly productive. This approach ensures that the migration process isn't only effective but also user-friendly, minimizing disruptions and
 maximizing satisfaction.
 
-- **Design for the developer/user**
-
-In this Architecture of Data Migration presented here, it gives a
-systematic approach for complex Dataverse Data Migration. How a
+- **Design for the developer/user:** In this architecture of data migration presented here, it gives a
+systematic approach for complex Dataverse data migration. How a
 developer can start extracting data from source and then create staging
 tables and after necessary transformations moving to the Dataverse
 environment. This whole process creates a clarity in developer’s mind
-for using this Data Migration Architecture. It also suggests several
+for using this data migration Architecture. It also suggests several
 tools for efficient data migration. Designing for the developer and
 end-user experience is paramount in crafting a seamless data migration
-process. Our Data Migration Architecture encompasses several key
+process. Our data migration architecture encompasses several key
 elements to achieve this:
 
 - **Intuitive SQL:** We prioritize the creation of user-friendly SQL
@@ -259,12 +257,9 @@ elements to achieve this:
   performance and reliability. Features like load balancing and parallel
   processing are incorporated to manage high workloads effectively.
 
-<!-- -->
 
-- **Design for simplicity**
-
-Designing for simplicity is a core principle of our Data Migration
-Architecture. Simplified workflows and automated processes reduce
+- **Design for simplicity:** Designing for simplicity is a core principle of our data migration
+architecture. Simplified workflows and automated processes reduce
 complexity, making the migration process more straightforward and less
 error prone. This involves implementing user-friendly SQL procedures and
 clear, concise documentation that guides users through each step of the
@@ -281,41 +276,33 @@ over planning for going live after complex data migration. We need to
 plan the cut over planning carefully to avoid any real business
 impacts. Here are some important considerations for cut over planning.
 
-- **Assess the duration for migration –** Most of the times developers
-  keep building Data Migration jobs for dev / UAT environment and don't
-  have any idea on the real volume / size of actual data. We should
+- **Assess the duration for migration:** Most of the times developers
+  keep building data migration jobs for dev / UAT environment and don't
+  have any idea on the real volume / size of actual data. You should
   always assess the speed of CRUD operations in terms of records/second,
   and estimate number of such operations which are likely to happen in
   production and on top of that we can add 20-30% buffer time for
   monitoring those jobs, this gives us a good idea on how much
   approximate time it’s going to take for full data migration.
 
-- **Plan for full vs. delta load –** If full data migration is taking
-  more time, we need to plan it carefully. Even if we can achieve a
-  good speed of data migration which might be 100-200 records per
-  second, and there are about 1.2 million seconds in two weeks, in that
-  scenario also, a 24x7 successfully running job will migration about
-  120 million records in about two weeks. Which is also impacting the
-  business for two weeks. In most cases this isn't allowed. With speed of
-  50 records per second similar volume of data would take approximately
-  four weeks, which is a long time.
+- **Plan for full vs. delta load:** If full data migration is taking more time, you need to plan it carefully. Even if you achieve a good migration speed of 100–200 records per second, there are about 1.2 million seconds in two weeks. In that scenario, a 24x7 successfully running job will migrate about 120 million records in two weeks, which still impacts the business for that entire period. In most cases, this isn't allowed. With a speed of 50 records per second, a similar volume of data would take approximately four weeks, which is a long time.
 
-We can resolve this problem by making a strategy so that we do full load
-data migration approximately a month ago then the actual Go Live, and
+You can resolve this problem by making a strategy so that you do full load
+data migration approximately a month ago then the actual go live, and
 then every week by week we can start migrating the delta data for that
 week, this way we know the approximate time for loading a week’s
-delta data and can plan Go Live accurately. Also, business users also
+delta data and can plan go live accurately. Also, business users also
 get a time to test on migrated data and can compare Apple to Apple,
 meaning source system data records to target system data records.
 
-Any Data Migration which is taking more than 2-3 days to complete, we
+Any Data Migration which is taking more than 2-3 days to complete, you
 must plan for full and delta data loads. This helps planning for
 business continuity.
 
-- **Plan for clear communication and downtime –** Final delta data
+- **Plan for clear communication and downtime:** Final delta data
   migration must be done after freezing the source and target systems
   for any real time transactions, so that we get a clear snapshot of
-  Data, and can switch from source systems to target system. We need to
+  Data, and can switch from source systems to target system. You need to
   plan for this communication and send it to the team well in advance.
   To minimize this downtime, we should plan this downtime in
   non-business hours or weekends.
