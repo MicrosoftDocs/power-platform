@@ -47,19 +47,16 @@ After extracting data from source system like Salesforce, it’s crucial to tran
   come to a single table. You need to write join queries to bring the
   combined data.
 
-- **Option set mapping for transformation**: For optionset values, if
-  source system has those text values, you can write the mapping from
-  text to optionset value in Dataverse and write queries to resolve
-  them. We recommend creating a table like this:
+- **Option set mapping for transformation**: For optionset values, if source system has those text values, you can write the mapping from text to optionset value in Dataverse and write queries to resolve them. We recommend creating a table like this:
 
-  ```OptionSetMapping
 
-      - Source Table Name (string)
-      - Target Table Name (string)
-      - Source Text (string)
-      - Source Value (string)
-      - Target Text (string)
-      - Target Value (string)```
+
+    OptionSetMapping
+
+    | Source Table Name (string) | Target Table Name (string) | Source Text (string) | Source Value (string) | Target Text (string) | Target Value (string) |
+    |:--------------------------:|:-------------------------:|:--------------------:|:---------------------:|:--------------------:|:---------------------:|
+    |                            |                           |                      |                      |                      |                      |
+
 
 
 
