@@ -13,7 +13,7 @@ ms.date: 05/20/2025
 
 # Data migration approaches
 
-Data migration is a critical step when you move to Microsoft Power Platform. The right migration approach depends on your data’s size and complexity. This article outlines simple, medium, and complex data migration strategies, highlights recommended tools, and shares best practices to help you plan and run a successful migration. Whether you’re handling a small dataset or a large, complex environment, use this article to pick the best method for your scenario and make your move to Dataverse smooth.
+Data migration is a critical step when you move to Microsoft Power Platform. The right migration approach depends on your data’s size and complexity. This article outlines simple, medium, and complex data migration strategies, highlights recommended tools, and shares best practices to help you plan and run a successful migration. Whether you’re handling a small dataset or a large, complex environment, use this article to choose the best method for your scenario and make your move to Dataverse smooth.
 
 ## Simple data migration
 
@@ -39,33 +39,33 @@ Data migration is a critical step when you move to Microsoft Power Platform. The
 
 **Approach**:
 
-- **Detailed data assessment**: Assess source system schemas, validate relationships, and identify data quality issues.
+- **Detailed data assessment**: Check source system schemas, validate relationships, and find data quality issues.
 
-- **ETL tools**: Use Extract, Transform, Load (ETL) tools such as Azure Data Factory or Kingsway Soft to handle transformations and mapping.
+- **ETL tools**: Use Extract, Transform, Load (ETL) tools like Azure Data Factory or Kingsway Soft to handle transformations and mapping.
 
-- **Batch migration**: Run migration in batches to minimize downtime and system strain.
+- **Batch migration**: Run migration in batches to reduce downtime and system strain.
 
-- **Testing and validation**: Run extensive test runs in a staging environment to check data accuracy and verify relational integrity.
+- **Testing and validation**: Run test migrations in a staging environment to check data accuracy and confirm relational integrity.
 
-- **Monitoring**: Use telemetry to monitor migration performance and fix errors promptly.
+- **Monitoring**: Use telemetry to track migration performance and fix errors quickly.
 
 ## Complex data migration
 
 **Definition**:
 
-- **Data volume**: More than 50 GB or more than 500,000 records
-- **Data complexity**: High complexity with intricate relationships, custom entities, and interdependent workflows
+- **Data volume**: More than 50 GB or more than 500,000 records.
+- **Data complexity**: High complexity with intricate relationships, custom entities, and interdependent workflows.
 
 **Approach**:
 
-- **Comprehensive analysis**: Analyze schema, dependencies, and customizations in the source CRM
-- **Specialized tools**: Use advanced tools like Azure Data Factory, SSIS (SQL Server Integration Services), Azure Synapse Analytics, Microsoft Fabric, or custom migration solutions for scalable data handling
-- **Custom development**: Create custom scripts or apps to manage unique migration needs, including APIs for complex relationships and workflows
-- **Phased migration**: Break the migration into logical phases to minimize disruption. Run pilot migrations before full-scale execution
-- **Continuous validation**: Test at each stage of migration to ensure data fidelity and business functionality
-- **Post-migration optimization**: Optimize Dataverse configurations, workflows, and relationships after migration for better performance
+- **Comprehensive analysis**: Analyze schema, dependencies, and customizations in the source CRM.
+- **Specialized tools**: Use advanced tools like Azure Data Factory, SSIS (SQL Server Integration Services), Azure Synapse Analytics, Microsoft Fabric, or custom migration solutions for scalable data handling.
+- **Custom development**: Create custom scripts or apps to manage unique migration needs, including APIs for complex relationships and workflows.
+- **Phased migration**: Break the migration into logical phases to minimize disruption. Run pilot migrations before full-scale execution.
+- **Continuous validation**: Test at each stage of migration to ensure data fidelity and business functionality.
+- **Post-migration optimization**: Optimize Dataverse configurations, workflows, and relationships after migration for better performance.
 
-This article focuses on the approach for large, complex data migration scenarios. It introduces a proven methodology for handling complex data migrations. The biggest challenge with large data migrations is managing errors, retries, and tracking what's loaded versus what's not loaded. Migration often takes significant time—sometimes from a few days to a few weeks. Use a phased migration strategy so you only migrate delta data during production cutover.
+This article focuses on the approach for large, complex data migration scenarios. It introduces a proven methodology for handling complex data migrations. The biggest challenge with large data migrations is managing errors, retries, and tracking what's loaded and what's not loaded. Migration often takes significant time—sometimes from a few days to a few weeks. Use a phased migration strategy so you only migrate delta data during production cutover.
 
 
 ## Architecture diagram
