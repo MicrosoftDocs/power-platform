@@ -132,4 +132,4 @@ Experience optimization in our data migration architecture focuses on enhancing 
 
 ## Next step
 
-- [Plan cut over to go live](cut-over-planning)
+- [Plan cut over to go live](cut-over-planning.md)
