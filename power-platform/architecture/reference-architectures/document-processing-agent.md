@@ -132,27 +132,27 @@ Organizations deal with structured documents (forms, invoices, receipts, identit
 
 ## Reliability
 
-Document Processing Agent is designed for resilience, recovery, operations by leveraging Power Platform components hosted in Azure.
+The Document Processing agent is designed for resilience, recovery, operations by using Power Platform components hosted in Azure.
 
 ## Security  
 
-Document Processing Agent is designed to protect confidentiality, integrity, data availability by leveraging Power Platform components hosted in Azure. Documents imported in the Data Processing Events table are visible only by System Admins. No additional data (such as email body/subject) other than attached documents is persisted in Dataverse. All customer related information that is associated to a document is persisted in the Processed Data column of the Data Processing Events table. GDPR requests can be handled by querying this column.
+The Document Processing agent is designed to protect confidentiality, integrity, data availability by using Power Platform components hosted in Azure. Documents imported in the Data Processing Events table are visible only by System Admins. No additional data (such as email body/subject) other than attached documents is persisted in Dataverse. All customer related information that is associated to a document is persisted in the Processed Data column of the Data Processing Events table. GDPR requests can be handled by querying this column.
 
 ## Operational Excellence
 
-Document Processing Agent is designed to Improve operations with monitoring and insights, automate for efficiency by leveraging Power Platform components hosted in Azure.
+The Document Processing agent is designed to improve operations with monitoring and insights, automate for efficiency by using Power Platform components hosted in Azure.
 
 ## Performance Efficiency
 
-Document Processing Agent is designed to achieve and sustain performance, improve efficiency through optimization by leveraging Power Platform components hosted in Azure. As of the most recent benchmark, the Document Processing Agent takes approximately 42 minutes to handle 1000 PDF documents of up to 18MB of size.  
+The Document Processing agent is designed to achieve performance through optimization by using Power Platform components hosted in Azure. The Document Processing agent supports processing documents of up to 20MB size. As of the most recent benchmark, it takes approximately 48 seconds to process a single document of 2MB size. The agent is designed to sustain this processing duration for over 1000 documents given the selected document source has sufficient storage. For other quotas and limitations, see [Limits - Power Automate](/power-automate/limits-and-config#power-platform-request-limits).
 
 ## Experience Optimization
 
-Document Processing Agent is designed for document processing users by achieving simplicity and efficiency by leveraging Power Platform components. Agent provides configurable experience to add document sources, allow extensibility to add additional document sources.
+The Document Processing agent is designed for document processing users by achieving simplicity and efficiency by using Power Platform components. The agent provides configurable experience to add document sources, allow extensibility to add additional document sources.
 
 ## Responsible AI
 
-Document Processing Agent is designed to achieve responsible AI standards by leveraging Power Platform components including Copilot Studio which is designed for generative AI features.
+The Document Processing agent is designed to achieve responsible AI standards by using Power Platform components including Copilot Studio which is designed for generative AI features. Learn more: [Responsible AI FAQ for Copilot Studio](/microsoft-copilot-studio/responsible-ai-overview).
 
 ## Related resources
 
