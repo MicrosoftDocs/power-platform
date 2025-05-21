@@ -26,7 +26,7 @@ Key access revocation can be triggered by completing any of the following tasks:
 - Adding a virtual network or adding an IP range outside of Microsoft services' reach.
 
   > [!CAUTION]
-  > You should never revoke key access as part of your normal business process. When you revoked key access, all environments associated with the enterprise policy will be taken completely offline immediately and your users who were active in the environment will experience unplanned downtime including data loss. If you decide to leave the service, locking the environment can ensure that your customer data can never be accessed again by anyone, including Microsoft.
+  > You should never revoke key access as part of your normal business process. When you revoked key access, all environments associated with the enterprise policy will be disabled immediately and your users who were active in the environment will experience unplanned downtime including data loss. If you decide to leave the service, locking the environment can ensure that your customer data can never be accessed again by anyone, including Microsoft.
   > Note the following about environments locking:
   >
   > - Locked environments can't be restored from backup.
@@ -49,7 +49,7 @@ Re-enable the environments to unlock them.
 
 1. Sign into the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), and locate the environment.
 1. On the environment **Details** page and under the **Environment disabled** section, select the **Re-enable environment** action.
-1. Environment shall be enabled if the Azure key access was restored.
+1. Repeat this step for each environment that is associated with the enterprise policy to enable them.
 
 > [!IMPORTANT]
 > Locked environments can be enabled by an administrator when the key access permissions are restored. Environments remain disabled and they can be enabled independently by the Power Platform administrator once the Azure key has been restored. 
