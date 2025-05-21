@@ -51,19 +51,18 @@ After extracting data from Source System like Salesforce, it’s crucial to tran
 - **Option set mapping for transformation** - For option set values, if
   source system has those text values, we can write the mapping from
   text to option set value in Dataverse and write queries to resolve
-  them. We recommend creating a table like this OptionSetMapping
+  them. We recommend creating a table like this:
+
+OptionSetMapping
 
 - Source Table Name (string)
-
 - Target Table Name (string)
-
 - Source Text (string)
-
 - Source Value (string)
-
 - Target Text (string)
-
 - Target Value (string)
+
+
 
 And now, We must update all the option set values in a table named contact in Target, where we have two columns for optionset text and value. 
 
