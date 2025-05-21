@@ -6,7 +6,7 @@
           href: index.yml
         - name: Overview of the Power Platform admin center
           href: admin-documentation.md
-        - name: Welcome to the new Power Platform admin center (preview)
+        - name: Use the new Power Platform admin center
           href: new-admin-center.md
         - name: Environment management
           items:
@@ -158,16 +158,6 @@
                   href: edit-properties-environment.md
                 - name: Administration mode
                   href: admin-mode.md
-                - name: Encryption key management
-                  items:
-                    - name: Self-managed key (BYOK)
-                      href: manage-encryption-key.md
-                    - name: Customer-managed key
-                      href: customer-managed-key.md
-                    - name: Lock and unlock environments
-                      href: cmk-lock-unlock.md
-                    - name: Migrate from BYOK
-                      href: cmk-migrate-from-byok.md
                 - name: Sandbox environment
                   href: sandbox-environments.md
                 - name: Trial environments
@@ -192,20 +182,12 @@
                   href: environment-groups-rules.md
                 - name: Enable maker welcome content
                   href: welcome-content.md
-                - name: Limit sharing
-                  href: managed-environment-sharing-limits.md
                 - name: Usage insights
                   href: managed-environment-usage-insights.md
-                - name: Data policies
-                  href: managed-environment-data-policies.md
                 - name: Solution checker enforcement
                   href: managed-environment-solution-checker.md
                 - name: Licensing
                   href: managed-environment-licensing.md
-                - name: Safeguarding Dataverse sessions with IP cookie binding
-                  href: block-cookie-replay-attack.md
-                - name: Configure IP firewall
-                  href: ip-firewall.md
                 - name: Use Power Platform Advisor
                   href: power-platform-advisor.md
             - name: Environment updates
@@ -294,20 +276,6 @@
                       href: user-channel-override.md
                     - name: Plug-in steps
                       href: plug-ins.md
-                - name: Audit and logs
-                  items:
-                    - name: Audit log management
-                      href: recover-database-space-deleting-audit-logs.md
-                    - name: Audit settings
-                      href: system-settings-dialog-box-auditing-tab.md
-                    - name: Manage Dataverse auditing
-                      href: manage-dataverse-auditing.md
-                    - name: Audit security roles
-                      href: audit-security-roles.md
-                    - name: Access audit data using Azure Synapse Link for Dataverse
-                      href: audit-data-azure-synapse-link.md
-                    - name: System jobs
-                      href: manage-dataverse-auditing.md#monitoring-system-jobs
                 - name: Templates
                   items:
                     - name: Access team templates
@@ -338,7 +306,7 @@
                       href: supported-email-service-configurations-server-side-synchronization.md
                 - name: Integration
                   items:
-                    - name: Enable server-based SharePoint integration
+                    - name: Configure server-based authentication with SharePoint on-premises
                       href: configure-server-based-authentication-sharepoint-on-premises.md
                     - name: Document management settings
                       href: enable-sharepoint-document-management-specific-entities.md
@@ -388,10 +356,6 @@
                       href: /dynamics365/customerengagement/on-premises/basics/import-accounts-leads-other-data
                     - name: Sample data
                       href: add-remove-sample-data.md
-                - name: Encryption
-                  items:
-                    - name: Encrypt your column-level data
-                      href: data-encryption.md
                 - name: Resources
                   items:
                     - name: All legacy settings
@@ -468,30 +432,116 @@
                   href: monitoring/monitor-power-apps.md
                 - name: For Power Automate (preview)
                   href: monitoring/monitor-power-automate.md
-        - name: Manage Copilot
+        - name: Copilot
           href: copilot/copilot-hub.md
         - name: Security
           items:
-            - name: Overview of Power Platform security
-              href: security/overview.md
-            - name: Security page
+            - name: Security overview
+              href: security/security-overview.md
+            - name: Data and privacy
               items:
-                - name: Overview
-                  href: security/security-overview.md
                 - name: Data protection and privacy
                   href: security/data-protection-privacy.md
-                - name: Identity and access
+                - name: Encryption
                   items:
-                    - name: Identity and access management
-                      href: security/identity-access-management.md
-                    - name: App access control
+                    - name: About data encryption
+                      href: about-encryption.md
+                    - name: Manage the encryption key
+                      href: manage-encryption-key.md
+                    - name: Manage your customer-managed encryption key
+                      href: customer-managed-key.md
+                    - name: Lock and unlock environments
+                      href: cmk-lock-unlock.md
+                    - name: Migrate BYOK environments
+                      href: cmk-migrate-from-byok.md
+                    - name: Encrypt column-level data
+                      href: data-encryption.md
+                - name: Data policies
+                  items:
+                    - name: Data policies for Managed Environments
+                      href: managed-environment-data-policies.md
+                    - name: Data loss prevention (DLP) policies
+                      href: wp-data-loss-prevention.md
+                    - name: Known limitations
+                      href: dlp-known-issues.md
+                    - name: Policies
                       items:
-                        - name: Control which apps are allowed in your environment (preview)
-                          href: control-app-access-environment.md
-                        - name: Commonly used Microsoft first-party services and portal apps (preview)
-                          href: apps-to-allow.md
-                - name: Compliance
+                        - name: Manage data policies
+                          href: prevent-data-loss.md
+                        - name: Policy scopes
+                          href: dlp-policy-scope.md
+                        - name: Effect of multiple policies
+                          href: dlp-combined-effect-multiple-policies.md
+                        - name: Disable new connectors
+                          href: connector-off-by-default.md
+                        - name: Design-time versus runtime
+                          href: dlp-impact-policies-apps-flows.md
+                        - name: Exempt apps and flows
+                          href: dlp-resource-exemption.md
+                    - name: Certified connectors
+                      items:
+                        - name: Connector classification
+                          href: dlp-connector-classification.md
+                        - name: Connector action control
+                          href: connector-action-control.md
+                        - name: Connector endpoint filtering (preview)
+                          href: connector-endpoint-filtering.md
+                    - name: Custom connectors
+                      items:
+                        - name: Connector classification
+                          href: dlp-custom-connector-parity.md
+                    - name: DLP for Power Automate
+                      items:
+                        - name: Identifying blocked flows
+                          href: identify-blocked-flows-data-policies.md
+                    - name: DLP for desktop flows
+                      href: /power-automate/prevent-data-loss
+                    - name: DLP for Copilot Studio
+                      href: /microsoft-copilot-studio/admin-data-loss-prevention
+                - name: Virtual Networks
+                  items: 
+                    - name: Virtual Network support overview
+                      href: vnet-support-overview.md
+                    - name: Virtual Network support white paper
+                      href: virtual-network-support-whitepaper.md
+                    - name: Set up Virtual Network support
+                      href: vnet-support-setup-configure.md
+            - name: Identity and access
+              items:
+                - name: Identity and access management
+                  href: security/identity-access-management.md
+                - name: IP firewall
+                  href: ip-firewall.md
+                - name: Tenant isolation
+                  href: cross-tenant-restrictions.md
+                - name: IP address-based cookie binding
+                  href: block-cookie-replay-attack.md
+                - name: Control user access to environments with security groups
+                  href: control-user-access.md
+                - name: Limit sharing
+                  href: managed-environment-sharing-limits.md
+                - name: App access control
+                  items:
+                    - name: Control which apps are allowed in your environment (preview)
+                      href: control-app-access-environment.md
+                    - name: Commonly used Microsoft first-party services and portal apps (preview)
+                      href: apps-to-allow.md
+            - name: Compliance
+              items:
+                - name: Comliance tools
                   href: security/compliance.md
+                - name: Auditing
+                  items:
+                    - name: Recover database space by deleting audit logs
+                      href: recover-database-space-deleting-audit-logs.md
+                    - name: Manage Dataverse auditing
+                      href: manage-dataverse-auditing.md
+                    - name: Audit security roles
+                      href: audit-security-roles.md
+                    - name: Access audit data using Azure Synapse Link for Dataverse
+                      href: audit-data-azure-synapse-link.md
+                - name: Customer Lockbox
+                  href: about-lockbox.md
             - name: Power Platform managed identity
               items:
                 - name: Managed identity overview (preview)
@@ -502,8 +552,6 @@
               href: security/authenticate-services.md
             - name: Data storage and governance
               href: security/data-storage.md
-            - name: Securely access customer data using Customer Lockbox
-              href: about-lockbox.md
             - name: Connecting and authenticating to data sources
               href: security/connect-data-sources.md
             - name: Security and governance considerations
@@ -534,56 +582,10 @@
                   href: samesite-cookie-mgmt.md
                 - name: Environment security
                   items:
-                    - name: Control user access to environments
-                      href: control-user-access.md
-                    - name: Restrict cross-tenant access
-                      href: cross-tenant-restrictions.md
                     - name: Configure content security policy
                       href: content-security-policy.md
                 - name: Advanced connector policies (preview)
                   href: advanced-connector-policies.md
-                - name: Data policies
-                  items:
-                    - name: Overview
-                      href: wp-data-loss-prevention.md
-                    - name: Known limitations
-                      href: dlp-known-issues.md
-                    - name: Policies
-                      items:
-                        - name: Create and manage policies
-                          href: prevent-data-loss.md
-                        - name: Policy scopes
-                          href: dlp-policy-scope.md
-                        - name: Effect of multiple policies
-                          href: dlp-combined-effect-multiple-policies.md
-                        - name: Disable new connectors
-                          href: connector-off-by-default.md
-                        - name: Design-time versus runtime
-                          href: dlp-impact-policies-apps-flows.md
-                        - name: Exempt apps and flows
-                          href: dlp-resource-exemption.md
-                    - name: Certified connectors
-                      items:
-                        - name: Connector classification
-                          href: dlp-connector-classification.md
-                        - name: Connector action control
-                          href: connector-action-control.md
-                        - name: Connector endpoint filtering (preview)
-                          href: connector-endpoint-filtering.md
-                    - name: Custom connectors
-                      items:
-                        - name: Connector classification
-                          href: dlp-custom-connector-parity.md
-                    - name: DLP for Power Automate
-                      items:
-                        - name: Overview
-                          href: prevent-data-loss.md
-                        - name: Identifying blocked flows
-                          href: identify-blocked-flows-data-policies.md
-                    - name: DLP for desktop flows
-                      href: /power-automate/prevent-data-loss
-                    - name: DLP for Copilot Studio
-                      href: /microsoft-copilot-studio/admin-data-loss-prevention
                 - name: Configure column-level security
                   items:
                     - name: Column-level security
@@ -602,12 +604,6 @@
                       href: about-team-templates.md
                     - name: Team templates for access rights
                       href: create-team-template-add-entity-form.md
-                - name: Encryption
-                  items:
-                    - name: About encryption
-                      href: about-encryption.md
-                    - name: Encrypt your column-level data
-                      href: data-encryption.md
             - name: Manage users
               items:
                 - name: Overview of user security
@@ -656,8 +652,6 @@
                   href: add-users-to-environment.md
                 - name: Configure user security to resources
                   href: database-security.md
-                - name: Configure user access to an environment
-                  href: control-user-access.md
                 - name: View user profile
                   href: /powerapps/user/view-your-user-profile
                 - name: Create an administrative user
@@ -674,14 +668,6 @@
                   href: restrict-access-online-trusted-ip-rules.md
                 - name: B2B collaboration with Microsoft Entra ID
                   href: invite-users-azure-active-directory-b2b-collaboration.md
-            - name: Virtual Network support
-              items:
-                - name: Virtual Network support overview
-                  href: vnet-support-overview.md
-                - name: Virtual Network support white paper
-                  href: virtual-network-support-whitepaper.md
-                - name: Set up Virtual Network support
-                  href: vnet-support-setup-configure.md
             - name: Security FAQs
               href: security/faqs.md
         - name: Analytics
@@ -794,8 +780,6 @@
               href: connector-events-power-platform.md
             - name: Data loss prevention activity logging
               href: dlp-activity-logging.md
-            - name: Manage Dataverse auditing
-              href: manage-dataverse-auditing.md
             - name: Dataverse and model-driven apps
               href: enable-use-comprehensive-auditing.md
             - name: View Power Platform administrative logs in Microsoft Purview
@@ -912,8 +896,6 @@
               href: restore-deleted-table-records.md
             - name: Remove user personal data
               href: remove-user-personal-data.md
-            - name: Recover database space by deleting audit logs
-              href: recover-database-space-deleting-audit-logs.md
             - name: Enable change tracking to control data synchronization
               href: enable-change-tracking-control-data-synchronization.md
             - name: Replicate data to Azure SQL Database

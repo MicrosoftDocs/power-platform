@@ -87,9 +87,9 @@ The page visualizes:
 
 ![Microsoft Teams environment dashboard.](media/pb-6.png "Microsoft Teams environment dashboard")
 
-### See also
+## Related information
 
-[What is Dataverse for Teams?](/powerapps/teams/overview-data-platform)
+- [What is Dataverse for Teams?](/powerapps/teams/overview-data-platform)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
