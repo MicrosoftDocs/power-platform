@@ -59,20 +59,9 @@ Most geographies are typically made up of region pairs with a minimum distance o
 
 Self-service disaster recovery is a Power Platform infrastructure capability that allows customers to replicate their environment across far distances and initiate environment failover between regions in a self-serve manner.
 
-Customers typically have multiple environments of different types created in their tenant. This capability is available specifically for production-type, [Managed Environments](managed-environment-overview.md) and can be turned on for each environment. Currently, this capability isn't available for finance and operations production environments.
+Customers typically have multiple environments of different types created in their tenant. This capability is available specifically for production-type.
 
-> [!Note]
-> During the preview, there's no charge for this feature, and you can't turn it off. When the feature reaches general availability, preview customers can keep the functionality by following the cost and billing details listed in this article or allow it to be turned off by Microsoft. There will be no impact on your primary environment location or capabilities if you choose not to upgrade during general availability.
-
-## Self-service disaster recovery cost and billing
-
-Environments that activate disaster recovery replicate all environment data between two regions and can fail over between the regions. Replicated data of different storage types, such as Database, Log, and File are added to Dataverse capacity consumed and billed at the same rate as the primary storage.
-
-To use self-serve disaster recovery for an environment, the environment must first be linked to a [pay-as-you-go billing plan](pay-as-you-go-overview.md).
-
-If your environment already uses a pay-as-you-go billing plan, then no further action is needed and replicated capacity is billed to your Azure subscription.
-
-If your environment is configured to draw capacity from your tenant's Dataverse capacity entitlement, then entitled capacity is consumed first, A pay-as-you-go billing plan is still required so you can avoid capacity overages. Learn how to allocate capacity and manage capacity overages through pay-as-you-go billing plans. Learn more in [View usage and billing information](/power-platform/admin/pay-as-you-go-usage-costs).
+In order to turn on self-service disaster recovery the environment must be managed, [Managed Environments](managed-environment-overview.md) and must first be linked to a [pay-as-you-go billing plan](pay-as-you-go-overview.md).
 
 ## Turn on self-service disaster recovery
 
@@ -89,10 +78,10 @@ To turn on disaster recovery, complete the following steps.
 1. In the Manage pane, select **Environments**. The Environments page is displayed.
 1. Select the production-type environment where you want to turn on self-service disaster recovery.
 1. Select **Disaster Recovery** in the command bar at the top of the page. The **Disaster Recovery** pane appears.
-1.    Select the toggle to change it to **Enabled**.
-1.    Select **Save**.
-1.    The environment is placed in the **Edit details** page briefly.
-1.    The **Environment details** page appears, indicating that the process of turning on the feature has started.
+1. Select the checkbox to turn on **Disaster Recovery**.
+1. Select **Save**.
+1. The environment is placed in the **Edit details** page briefly.
+1. The **Environment details** page appears, indicating that the process of turning on the feature has started.
 
 # [Classic admin center](#tab/classic)
 
@@ -100,10 +89,10 @@ To turn on disaster recovery, complete the following steps.
 1. In the navigation pane, select **Environments**.
 1. Select the production-type environment where you want to turn on self-service disaster recovery.
 1. Select **Disaster Recovery** in the command bar at the top of the page. The **Disaster Recovery** pane appears.
-1.    Select the toggle to change it to **Enabled**.
-1.    Select **Save**.
-1.    The environment is placed in the **Edit details** page briefly.
-1.    The **Environment details** page appears, indicating that the process of turning on the feature has started.
+1. Select the checkbox to turn on **Disaster Recovery**.
+1. Select **Save**.
+1. The environment is placed in the **Edit details** page briefly.
+1. The **Environment details** page appears, indicating that the process of turning on the feature has started.
 
 ---
 
