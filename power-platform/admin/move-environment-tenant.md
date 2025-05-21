@@ -233,7 +233,7 @@ TenantToTenant-PrepareMigration
 ```
 
 > [!Note]
-> **SASUri** value, must be provided from the output of **TenantToTenant-UploadUserMappingFile** command.
+> The **SASUri** value must be provided from the output of **TenantToTenant-UploadUserMappingFile** command.
 
 #### Sample output
 
