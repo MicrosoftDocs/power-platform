@@ -53,14 +53,14 @@ This section provides a summary of key lifecycle operations that will be allowed
 |Backup     | Automated backups and labeled backups can be taken. Admins can view them in the Power Platform admin center. Backups will be available for up to 7 days.        |  Yes       |
 |Restore     | Teams environments only support self-restore. Only point-in-time restores to the same environment will be possible. Note: if the environment has been upgraded, the point-in-time restore will only be available starting from the moment it was upgraded. | Yes        |
 |Copy     | Not available by default for Dataverse for Teams environments.        | No        |
-|Create     | Only through Microsoft Teams. Note: these Dataverse for Teams environments will be limited to a 1:1 mapping to the Microsoft Teams team it was created in and bound to the Microsoft 365 group associated with the team.        | No        |
+|Create     | Only through Microsoft Teams. Note: Dataverse for Teams environments will be limited to a 1:1 mapping to the Microsoft Teams team it was created in and bound to the Microsoft 365 group associated with the team.        | No        |
 |Delete     | The environment can be deleted by the team owner. The environment will be deleted automatically if the team it was created in is also deleted.| Yes  |
 |Reset     | Not available by default for Dataverse for Teams environments.        | No        |
 |Upgrade     | Unlocks all the functionality of Dataverse services for the environment.         | Yes        | 
 
 The lifetime of the environment will be tied to the team it was created in. If you upgrade an environment to Dataverse, the 1:1 mapping isn't guaranteed because the environment can be used by applications outside of Microsoft Teams. The upgraded environment is bound by the lifecycle rules associated with the Power Apps license and the configuration of the environment.
 
-Some operations are blocked by default, such as the Copy and Reset operations. For scenarios where you need this capability, use an environment with a Dataverse database . Refer to the previous table for details.
+Some operations are blocked by default, such as the Copy and Reset operations. For scenarios where you need this capability, use an environment with a Dataverse database. Refer to the previous table for details.
 
 > [!IMPORTANT]
 > Dataverse for Teams environments won't be allowed to change types until the upgrade operation has been carried out on the environment. After the upgrade is complete, the Dataverse for Teams environment will have the full capabilities found in Dataverse.  
@@ -191,7 +191,7 @@ You can specify users in an environment to provide access to Dataverse for Teams
 
 In the top command bar, click Refresh to update the list and view the newly added user.
 
-The list displays enabled and disabled users who are members of the Dataverse for Teams environment. You can select a user to run diagnostics, check their access details, and review their status.
+The list displays users with enabled and disabled statuses who are members of the Dataverse for Teams environment. You can select a user to run diagnostics, check their access details, and review their status.
 
 ### Delete a Dataverse for Teams environment
 
@@ -203,14 +203,14 @@ To delete a Dataverse for Teams environment, follow these steps:
 1. In the **Manage** pane, select **Environments**.
 1. On the **Environments** page, select an environment where the **Type** is marked as **Microsoft Teams**.
 1. In the command bar, select **Delete**. 
-1. Confirm the deletion to delete the environement.
+1. Confirm to delete the environement.
    
 #### [Classic admin center](#tab/classic)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Environments**.
 1. On the **Environments** page, select an environment where the **Type** is marked as **Microsoft Teams**.
 1. In the command bar, select **Delete**. 
-1. Confirm the deletion to delete the environement.
+1. Confirm to delete the environement.
 ---
 
 ### Upgrade a Dataverse for Teams environment to production
@@ -223,7 +223,7 @@ The consumption of capacity by Dataverse for Teams environments won't count towa
 
 **Per-environment limits on Dataverse for Teams environments**: Each Dataverse for Teams environment provides 2 GB of combined database and file storage, with a portion of this amount reserved for system use. 
 
-To see the consumption of each Dataverse for Teams environment in a tenant, follows these steps:
+To see the consumption of each Dataverse for Teams environment in a tenant, follow these steps:
 
 #### [Modern admin center](#tab/new)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
