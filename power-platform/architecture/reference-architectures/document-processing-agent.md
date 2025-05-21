@@ -16,10 +16,10 @@ ms.contributors:
 
 # Use an autonomous agent in Copilot Studio for document processing
 
-The Document Processing Agent is an autonomous agent in Copilot Studio that uses Large Language Models for document processing.
+The [Document Processing agent](/microsoft-copilot-studio/template-managed-document-processor) is an autonomous agent in Copilot Studio that uses Large Language Models for document processing.
 
 > [!TIP]  
-> This article provides an example scenario and a generalized example architecture to illustrate how to use an autonomous agent in Copilot Studio for document processing. The architecture example can be modified for many different scenarios and industries.
+> The [Document Processor]((/microsoft-copilot-studio/template-managed-document-processor)) managed agent is an off-the-shelf, packaged solution for end-to-end document processing, including extraction, validation, human monitoring, and exporting to downstream apps. This article provides the reference architecture to illustrate how to use an autonomous agent in Copilot Studio for document processing. The architecture example can be modified for many different scenarios and industries.
 
 ## Architecture diagram  
 
@@ -80,11 +80,11 @@ The document processing flow functions like a state machine, where the agent wor
     1. Fetches the extracted data that was stored in Dataverse.
     1. Exports this data to the target system (e.g. Invoices table in Dataverse).
 
-1. If the status of the document changed to “Manual Review”, the instructions tell the agent to call the “Manual Review” action. This action is then called, and the ID of the message is passed through.
+1. If the status of the document changed to *Manual Review*, the instructions tell the agent to call the *Manual Review* action. This action is then called, and the ID of the message is passed through.
 
-1. The Manual Review action is an Agent Flow that receives a Data Processing Event ID as input and:
+1. The *Manual Review action* is an Agent Flow that receives a Data Processing Event ID as input and:
     1. Fetches the extracted data that was stored in Dataverse.
-    1. Creates an Approvals request for the agent administrator sharing a link to a Validation Station app, where the user can edit extracted data and validate manually. This manual validation sets the status of the document to “Validated”.
+    1. Creates an Approvals request for the agent administrator sharing a link to a Validation Station app, where the user can edit extracted data and validate manually. This manual validation sets the status of the document to *Validated*.
 
 1. After manual review, if the status of the document is “Validated”, step 7 runs.
 
@@ -107,7 +107,8 @@ To operate autonomously, the agent needs multiple configurations. To simplify th
     1. Connection References used by the agent (Dataverse, Copilot Studio, PowerApps for Admins).
     1. Connection References used by the triggers that will initiate the agent workflow (Outlook, SharePoint).
     1. Environment Variables used by the triggers.
-1. Maker launches agent configuration wizard. This happens as the last step of the installation wizard in Copilot Studio. It guides the user through the following flow: 1. A Maker uploads a sample document.
+1. Maker launches agent configuration wizard. This happens as the last step of the installation wizard in Copilot Studio. It guides the user through the following flow:
+    1. A Maker uploads a sample document.
     1. The system sends the uploaded document to the agent’s Extraction Prompt.
     1. Extracted content is surfaced to the Maker along with Document type, where the maker can select which parts of the extracted data they want exported into the system. This will create a schema that will be stored in the Document Processing Configuration table and leveraged during the Document Export action. A maker can enter Advanced mode to make changes to the AI Prompt used in the Document Extraction action to customize it.     
     1. The Maker can then define validation rules using a simple UI interface that will append rules to the prompt used in the Document Validation action. Additionally, the Maker can enter Advanced mode to make changes directly into the AI Prompt.
@@ -152,6 +153,12 @@ Document Processing Agent is designed for document processing users by achieving
 ## Responsible AI
 
 Document Processing Agent is designed to achieve responsible AI standards by leveraging Power Platform components including Copilot Studio which is designed for generative AI features.
+
+## Related resources
+
+- [Install managed agents from Microsoft](/microsoft-copilot-studio/authoring-install-agent)
+- [Agents in action: Document processing 2.0](https://build.microsoft.com/sessions/OD814)
+- [How agent conversations work](/microsoft-copilot-studio/authoring-fundamentals#how-agent-conversations-work)
 
 ## Contributors  
 
