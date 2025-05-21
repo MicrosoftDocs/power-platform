@@ -33,4 +33,4 @@ The migration approach depends on the size and complexity of your data set. Use 
 
 ## Next steps
 
-- [Data migration approaches](/power-platform/architecture/key-concepts/data-migration/Data-migration-approaches)
+- [Data migration approaches](Data-migration-approaches.md)
