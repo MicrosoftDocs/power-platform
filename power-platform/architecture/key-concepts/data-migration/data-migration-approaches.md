@@ -70,7 +70,7 @@ This article focuses on the approach for large, complex data migration scenarios
 
 ## Architecture diagram
 
-This diagram illustrates the importance of using a staging database for large and complex data migrations. Note that the source system is not directly connected to the target system. Instead, data is first moved to a staging database, where it is transformed and validated before being loaded in Dataverse. This approach helps ensure data integrity and minimizes the risk of errors during the migration process.
+This diagram illustrates the importance of using a staging database for large and complex data migrations. Note that the source system is not directly connected to the target system. Instead, data is first moved to a staging database, where it is transformed and validated before being loaded into Dataverse. This approach helps ensure data integrity and minimizes the risk of errors during the migration process.
 
 :::image type="content" source="media/data-migration-approaches/architecture.svg" alt-text="Architecture diagram showing the workflow for a complex data migration from a CRM system such as Salesforce or Sibel to Microsoft Dataverse." lightbox="media/data-migration-approaches/architecture.svg":::
 
