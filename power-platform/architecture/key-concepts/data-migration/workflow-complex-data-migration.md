@@ -52,14 +52,14 @@ After extracting data from source system like Salesforce, it’s crucial to tran
   text to optionset value in Dataverse and write queries to resolve
   them. We recommend creating a table like this:
 
-    OptionSetMapping
+  OptionSetMapping
 
-        - Source Table Name (string)
-        - Target Table Name (string)
-        - Source Text (string)
-        - Source Value (string)
-        - Target Text (string)
-        - Target Value (string)
+      - Source Table Name (string)
+      - Target Table Name (string)
+      - Source Text (string)
+      - Source Value (string)
+      - Target Text (string)
+      - Target Value (string)
 
 
 
