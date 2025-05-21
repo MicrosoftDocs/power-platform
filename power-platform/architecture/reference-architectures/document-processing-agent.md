@@ -1,6 +1,6 @@
 ---  
 title: Use an autonomous agent in Copilot Studio for document processing
-description: Learn how to use an autonomous agent in Copilot Studio that leverages large language models for document processing.
+description: Learn how to use an autonomous agent in Copilot Studio that uses generative AI for document processing.
 #customer intent: As a Copilot Studio maker, I want to use an autonomous agent to process documents.
 author: mapichle  
 ms.subservice: architecture-center  
@@ -16,7 +16,7 @@ ms.contributors:
 
 # Use an autonomous agent in Copilot Studio for document processing
 
-The [Document Processing agent](/microsoft-copilot-studio/template-managed-document-processor) is an autonomous agent in Copilot Studio that uses Large Language Models for document processing.
+The [Document Processing agent](/microsoft-copilot-studio/template-managed-document-processor) is an autonomous agent in Copilot Studio that uses generative AI for document processing.
 
 > [!TIP]  
 > The [Document Processor]((/microsoft-copilot-studio/template-managed-document-processor)) managed agent is an off-the-shelf, packaged solution for end-to-end document processing, including extraction, validation, human monitoring, and exporting to downstream apps. This article provides the reference architecture to illustrate how to use an autonomous agent in Copilot Studio for document processing. The architecture example can be modified for many different scenarios and industries.
@@ -154,12 +154,6 @@ The Document Processing agent is designed for document processing users by achie
 
 The Document Processing agent is designed to achieve responsible AI standards by using Power Platform components including Copilot Studio which is designed for generative AI features. Learn more: [Responsible AI FAQ for Copilot Studio](/microsoft-copilot-studio/responsible-ai-overview).
 
-## Related resources
-
-- [Install managed agents from Microsoft](/microsoft-copilot-studio/authoring-install-agent)
-- [Agents in action: Document processing 2.0](https://build.microsoft.com/sessions/OD814)
-- [How agent conversations work](/microsoft-copilot-studio/authoring-fundamentals#how-agent-conversations-work)
-
 ## Contributors  
 
 _Microsoft maintains this article. The following contributors wrote this article._  
@@ -170,6 +164,12 @@ Principal authors:
 - **[Ceren Kiroglu](https://www.linkedin.com/in/cerenoneykiroglu/)**, Senior Product Manager
 - **[Durga Yelavarthi](https://www.linkedin.com/in/durga-yelavarthi/)**, Principal Architect
 - **[Jo Ruas](https://www.linkedin.com/in/joao-otavio-de-lima-ruas/)**, Software Engineer
+
+## Related resources
+
+- [Install managed agents from Microsoft](/microsoft-copilot-studio/authoring-install-agent)
+- [Agents in action: Document processing 2.0](https://build.microsoft.com/sessions/OD814)
+- [How agent conversations work](/microsoft-copilot-studio/authoring-fundamentals#how-agent-conversations-work)
 
 ## Next steps
 
