@@ -62,7 +62,7 @@ Migrating data from an external customer relationship management (CRM) system to
 
 ## Workflow for complex data migration
 
-The next article, [Suggested workflow for a complex data migration](workflow-complex-data-migration.md), introduces a proven methodology for handling complex data migrations. The biggest challenge with large data migrations is managing errors, retrials, and tracking what's loaded and what's not loaded. Migration often takes significant time—sometimes from a few days to a few weeks. Use a phased migration strategy so you only migrate delta data during production cut over.
+The next article, [Suggested workflow for a complex data migration](workflow-complex-data-migration.md), introduces a proven methodology for handling complex data migrations. The biggest challenge with large data migrations is managing errors, retrials, and tracking what's loaded and what's not loaded. Migration often takes significant time—sometimes from a few days to a few weeks. Use a phased migration strategy so you only migrate delta data during production cutover.
 
 ## Architecture diagram
 

@@ -39,7 +39,7 @@
               href: key-concepts/data-migration/workflow-complex-data-migration.md
             - name: Power Platform Well-Architected and data migration
               href: key-concepts/data-migration/benefits-power-well-architected.md
-            - name: Cut over planning
+            - name: Planning for go-live
               href: key-concepts/data-migration/cut-over-planning.md
         - name: Distributed tracing across multiple services
           items:

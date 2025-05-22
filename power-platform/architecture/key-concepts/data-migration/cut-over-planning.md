@@ -1,7 +1,7 @@
 ---
 title: Data migration planning for go-live
-description: Cut over planning for go-live ensures a smooth transition after data migration. Discover how to estimate migration time, manage delta loads, and notify teams.
-#customer intent: As a project manager, I want to plan the cut over for go-live after data migration so that the transition is smooth and business impact is minimized.
+description: Cutover planning for go-live ensures a smooth transition after data migration. Discover how to estimate migration time, manage delta loads, and notify teams.
+#customer intent: As a project manager, I want to plan the go-live after data migration so that the transition is smooth and business impact is minimized.
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: concept-article
@@ -18,7 +18,7 @@ ms.custom:
 
 # Data migration planning for go-live
 
-Many organizations find it hard to plan the right cut over for going live after complex data migration. Careful cut over planning helps avoid real business impact. Here are some important things to consider for cut over planning.
+Many organizations struggle to plan the cutover for going live after complex data migration. Careful cutover planning helps avoid impacts on the business. Here are some important things to consider when planning the process.
 
 ## Assess the duration for migration
 
