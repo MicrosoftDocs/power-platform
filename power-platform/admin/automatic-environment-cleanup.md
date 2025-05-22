@@ -49,7 +49,7 @@ If an environment has already been deleted, you have a limited window of time to
 
 ## Inactivity-based cleanup
 
-A cleanup mechanism in Power Platform automatically removes environments that aren't being used. Only developer and [Dataverse for Teams environments](inactive-teams-environment.md) are affected by the activity-based automatic cleanup.
+A cleanup mechanism in Power Platform automatically removes environments that aren't being used. Only Default, Developer and [Dataverse for Teams environments](inactive-teams-environment.md) are affected by the activity-based automatic cleanup.
 
 > [!IMPORTANT]
 > You can't turn off this cleanup mechanism. However, you can review the last activity date for environments in the Power Platform admin center. 
