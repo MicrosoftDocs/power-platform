@@ -69,11 +69,11 @@ Security is critical in data migration architecture. Protect sensitive informati
 
 Operational excellence is achieved through a combination of meticulous planning, continuous improvement, and adherence to best practices. The architecture is designed to ensure that data is migrated efficiently and securely while maintaining high levels of performance and reliability. Regular audits and assessments help identify areas for improvement, allowing for the refinement of processes and the implementation of innovative solutions. Advanced technologies and methodologies help ensure that the migration process is streamlined, reducing downtime and minimizing disruptions to business operations. Additionally, the architecture includes robust monitoring and alerting systems that provide real-time insights into the migration process, enabling immediate response to any issues that may arise. This proactive approach ensures that the migration is completed on time and within budget, while also meeting the highest standards of quality and security.
 
-- **Embraces fusion development**
+- **Embrace fusion development**
 
     Fusion development principles foster a collaborative environment where developers, IT professionals, and business users work together. This approach promotes rapid development and deployment of migration solutions that are tailored to meet the specific needs of the organization. Low-code platforms and tools empower business users to contribute to the migration process, reducing the dependency on IT resources and accelerating the overall timeline. This collaborative model ensures that all stakeholders are aligned, and that the migration strategy is executed effectively.
 
-- **Establishes development standards**
+- **Establish development standards**
 
     Strict development standards ensure consistency and quality across all migration projects. These standards include guidelines for coding practices, documentation, testing, and validation. Following these standards helps ensure that the migration is predictable, repeatable, and scalable. This structured approach reduces the risk of errors and enhances the overall reliability of the migration. Additionally, standardized development practices facilitate better communication and collaboration among team members, leading to more efficient and effective project execution.
 
@@ -117,7 +117,7 @@ Advanced monitoring and analytics tools optimize the migration process for speed
 
 Experience optimization focuses on enhancing the overall experience of both developers and end users. User-centric design principles and advanced technologies create an environment that's intuitive, efficient, and highly productive. This approach makes the migration process effective and user friendly, both reducing disruptions and increasing satisfaction.
 
-- **Design for the developer/user:** 
+- **Design for the developer/user** 
 
     With a systematic approach for complex Dataverse data migration, a developer can start extracting data from source, then create staging tables, and after necessary transformations, move data to the Dataverse environment. This process gives developers clarity. Designing for the developer and end-user experience is key to crafting a seamless data migration process. 
 
@@ -129,7 +129,7 @@ Experience optimization focuses on enhancing the overall experience of both deve
 
     - **Scalable solutions:** Scale the solutions to the needs of the project. Whether handling small datasets or migrating vast volumes of data, the solution must adapt to ensure consistent performance and reliability. Features like load balancing and parallel processing help manage high workloads effectively.
 
-- **Design for simplicity:** 
+- **Design for simplicity** 
  
     Simplified workflows and automated processes reduce complexity, making the migration process more straightforward and less error prone. This approach includes implementing user-friendly SQL procedures and clear, concise documentation that guides users through each step of the migration. The architecture uses modular design principles, so components are easy to understand, maintain, and upgrade. Prioritizing simplicity ensures that the migration process is efficient, reduces the learning curve, and promotes quicker adoption by both developers and end users.
 
