@@ -74,9 +74,10 @@ This diagram illustrates the importance of using a staging database for large an
 
 :::image type="content" source="media/data-migration-approaches/architecture.svg" alt-text="Architecture diagram showing the workflow for a complex data migration from a CRM system such as Salesforce or Sibel to Microsoft Dataverse." lightbox="media/data-migration-approaches/architecture.svg":::
 
-## Next step
+> [!div class="nextstepaction"]
+> [Workflow complex data migration](workflow-complex-data-migration.md)
 
-- [Workflow for complex data migration](workflow-complex-data-migration.md)
+
 
 
 ## Related information
