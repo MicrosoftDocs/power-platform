@@ -40,7 +40,7 @@ To ensure the smooth operation of your customer-managed key environments, the he
 
 When the environments are shut-down due to unhealthy entreprise policy status, a message will show up in the environment details page that the '**Environment disabled** due to unhealthy enterprise policy' on the Power Platform admin center.  
 
-<<image of environment disabled message>>
+(insert image)
 
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 
