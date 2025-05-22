@@ -54,10 +54,7 @@ After extracting data from source system like Salesforce, it’s crucial to tran
     - Target Text (string)
     - Target Value (string)
 
-    | Source Table Name (string) | Target Table Name (string) | Source Text (string) | Source Value (string) | Target Text (string) | Target Value (string) |
-    |:--------------------------:|:-------------------------:|:--------------------:|:---------------------:|:--------------------:|:---------------------:|
-    |                            |                           |                      |                      |                      |                      |
-
+  
 
     And now, you must update all the optionset values in a table named contact in target, where you have two columns for optionset text and value. 
 
@@ -277,7 +274,7 @@ Technical planning for data migration involves tool selection, infrastructure se
 
 Data segmentation is important for any CRM system to Dataverse data migration. Often, migration scenarios involve moving from CRM systems like Salesforce or Siebel to Dataverse. Segment data tables by line of business or business segments, such as sales, service, or marketing.
 
-**<u>Tables segmentation</u>**
+#### Tables segmentation
 
 Start by listing eligible tables for migration in each area, such as tables related to sales, marketing, or service.
 
@@ -285,13 +282,13 @@ After segmenting tables, add their schema to Excel or a similar tool. Run basic 
 
 This exercise might not seem interesting, but for CRM systems running in production for more than 10 years, you often cut down almost 30 to 40 percent of columns and 20 percent of tables. This reduction is a significant gain for data migration.
 
-**<u>Columns relevancy</u>**
+#### Columns relevancy
 
 Some columns in the source CRM system might be regular columns, while others might be calculated columns in the target Dataverse environment. Separate these columns and discuss with business stakeholders to decide if you need to write data migration jobs for them.
 
 Some columns are only meaningful in the source system and aren't relevant for the target system. Ignore these columns for migration. Many out-of-the-box columns, like created by, modified by, or row version number, can also be ignored if they aren't meaningful for data migration.
 
-**<u>File type data</u>**
+#### File type data
 
 In source systems, if you have file type data, mark them and consider a different approach for migrating these files. Here are some considerations for file migration:
 
@@ -309,7 +306,7 @@ After analyzing data relevancy, data volume usually reduces significantly, espec
 
 Sometimes, data is relevant, important, and necessary to run the business, but it's rarely retrieved. For example, old emails (more than two or three years old), closed cases older than three years, lost opportunities, or disqualified leads. Create a strategy that brings minimal data with no disruptions to current business scenarios. Consider the following for data archival:
 
-**<u>Marking objects for archival</u>**
+#### Marking objects for archival
 
 Some straightforward objects are easy examples for archival, such as:
 
@@ -323,7 +320,7 @@ Some straightforward objects are easy examples for archival, such as:
 
 Besides these common objects, review your business system and carefully check which tables can be archived.
 
-**<u>Archival strategy</u>**
+#### Archival strategy
 
 The strategy for archiving records is important, especially where you store archived data. Consider the following options:
 
@@ -343,6 +340,6 @@ You can use any tool for data migration, but this article recommends the followi
 
 - Use a local database on the machine instead of connecting to an Azure database. If you use Azure Data Factory, deploy it in the same region as Dataverse.
 
-## Next steps
+> [!div class="nextstepaction"]
+> [Power Platform Well-Architected pillars and data migration](benefits-power-well-architected.md)
 
-- [Benefits of following Power Well Architected for data Migration](benefits-power-well-architected.md)
