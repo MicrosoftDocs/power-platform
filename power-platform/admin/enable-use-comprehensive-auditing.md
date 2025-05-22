@@ -18,7 +18,7 @@ search.audienceType:
 
 Protecting data, preserving privacy, and complying with [privacy regulations](https://www.microsoft.com/trust-center/privacy) are some of the highest priorities for your business. It's critical that you audit the entirety of data processing actions taking place to be able to analyze for possible security breaches. This information from Activity Logging can be used when you perform a Data Protection Impact Assessment (DPIA) addressing the use of Office, Power Apps, Power Automate, and customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation).  
 
-This topic covers how you can set Power Apps, Power Automate, and customer engagement apps to audit a broad range of data processing activities and use the [Microsoft Purview compliance portal](https://support.office.com/article/go-to-the-office-365-security-compliance-center-7e696a40-b86b-4a20-afcc-559218b7b1b8?ui=en-US&rs=en-US&ad=US) to review the data in activity reports.
+This topic covers how you can set Power Apps, Power Automate, and customer engagement apps to audit a broad range of data processing activities and use the [Microsoft Purview portal](https://support.office.com/article/go-to-the-office-365-security-compliance-center-7e696a40-b86b-4a20-afcc-559218b7b1b8?ui=en-US&rs=en-US&ad=US) to review the data in activity reports.
 
 ## Requirements
 - At least one user assigned a Microsoft/Office 365 [E1](https://www.microsoft.com/microsoft-365/enterprise/office-365-e1) or greater license.
@@ -42,7 +42,7 @@ Logging takes place at the SDK layer which means a single action can trigger mul
 |Report Viewer Render Image  |Logging multimedia assets that are shown when a report is displayed. They might contain critical customer information.  |
 
 ## Base schema
-Schemas define which fields are sent to the Microsoft Purview compliance portal.  Some fields are common to all applications that send audit data to Microsoft Purview, while others are specific to customer engagement apps. The Base schema contains the common fields. 
+Schemas define which fields are sent to the Microsoft Purview portal. Some fields are common to all applications that send audit data to Microsoft Purview, while others are specific to customer engagement apps. The Base schema contains the common fields. 
 
 |Field name  |Type  |Mandatory  |Description  |
 |---------|---------|---------|---------|
@@ -134,14 +134,14 @@ On the **Audit settings** page:
 10. Turn on audit logging in **Microsoft Purview**. See [Turn audit log search on or off](https://support.office.com/article/turn-office-365-audit-log-search-on-or-off-e893b19a-660c-41f2-9074-d3631c95a014).
 
 
-## Review your audit data using reports in Microsoft Purview compliance portal
+## Review your audit data using reports in Microsoft Purview portal
 
-When [audit log search](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance) is turned on in the Microsoft Purview compliance portal, user and admin activity from your organization is recorded in the audit log and retained for 90 days. However, your organization might not want to record and retain audit log data. Or you might be using a third-party security information and event management (SIEM) application to access your auditing data. In those cases, a global admin can turn off audit log search in Microsoft Purview. For more information, see [Auditing solutions in Microsoft Purview](/microsoft-365/compliance/auditing-solutions-overview).
+When [audit log search](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance) is turned on in the Microsoft Purview portal, user and admin activity from your organization is recorded in the audit log and retained for 90 days. However, your organization might not want to record and retain audit log data. Or you might be using a third-party security information and event management (SIEM) application to access your auditing data. In those cases, a global admin can turn off audit log search in Microsoft Purview. For more information, see [Auditing solutions in Microsoft Purview](/microsoft-365/compliance/auditing-solutions-overview).
 
-To search for records in [Microsoft Purview compliance portal](https://compliance.microsoft.com/), choose **Record type** as **CRM**, and  **Activities** as **All Dynamics 365 activities**.
+To search for records in [Microsoft Purview portal](https://compliance.microsoft.com/), choose **Record type** as **CRM**, and  **Activities** as **All Dynamics 365 activities**.
 
 ## Create reports
-You can create your own reports to review your audit data. See [Search the audit log in the Purview compliance portal](https://support.office.com/article/search-the-audit-log-in-the-office-365-security-compliance-center-0d4d0f35-390b-4518-800e-0c7ec95e946c).
+You can create your own reports to review your audit data. See [Search the audit log in the Microsoft Purview portal](https://support.office.com/article/search-the-audit-log-in-the-office-365-security-compliance-center-0d4d0f35-390b-4518-800e-0c7ec95e946c).
 
 ## What's logged
 
@@ -239,14 +239,14 @@ The following are some examples of logs created with Activity Logging.
 
 ## Additional considerations
 
-When audit log search in the Microsoft Purview compliance portal is turned on, user and activity from your organization is recorded in the audit log and retained for 90 days. However, your organization might not want to record and retain audit log data. Or you might be using a third-party security information and event management (SIEM) application to access your auditing data. In those cases, a global admin can turn off audit log search in Microsoft 365.
+When audit log search in the Microsoft Purview portal is turned on, user and activity from your organization is recorded in the audit log and retained for 90 days. However, your organization might not want to record and retain audit log data. Or you might be using a third-party security information and event management (SIEM) application to access your auditing data. In those cases, a global admin can turn off audit log search in Microsoft 365.
 
 ## Known issues
 
-- Office has a 3KB limit for each audit record. Therefore, in some cases a single record from customer engagement apps needs to be split into multiple records in Office. The CorrelationId field can be used to retrieve the set of split records for a given source record. Operations that are likely to require splitting include RetrieveMultiple and ExportToExcel.
+- Office has a 3-KB limit for each audit record. Therefore, in some cases a single record from customer engagement apps needs to be split into multiple records in Office. The CorrelationId field can be used to retrieve the set of split records for a given source record. Operations that are likely to require splitting include RetrieveMultiple and ExportToExcel.
 - Some operations need additional processing to retrieve all relevant data. For example, RetrieveMultiple and ExportToExcel are processed to extract the list of records that are retrieved or exported. However, not all relevant operations are yet processed. For example, ExportToWord is currently logged as single operation with no additional details about what was exported.
 - In future releases, logging will disabled for operations that are determined to not be useful based on a review of the logs. For example, some operations result from automated system activity, not user activity.
-- In some record instances, the EntityName value may be marked with Unknown.  These records are not related to any specific entity related operation and came in blank from CRM. They all have entity id of 0000000-0000-0000-0000-000000000000.
+- In some record instances, the EntityName value may be marked with Unknown. These records aren't related to any specific entity related operation and came in blank from CRM. They all have entity id of 0000000-0000-0000-0000-000000000000.
 
 ### See also
 [Manage Dataverse auditing](manage-dataverse-auditing.md)<br />
