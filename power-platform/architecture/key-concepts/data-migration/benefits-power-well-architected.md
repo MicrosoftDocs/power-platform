@@ -59,7 +59,7 @@ Security is critical in data migration architecture. Protect sensitive informati
 
 - **High availability**
 
-    Dataverse is a SaaS (software as a service) platform that guarantees high availability of data and the system. During migration, use an intermediate database with regular backups to ensure high availability and prevent data loss.
+    Dataverse is an SaaS (software as a service) platform that guarantees high availability of data and the system. During migration, use an intermediate database with regular backups to ensure high availability and prevent data loss.
 
 - **Maintaining security**
 
@@ -67,7 +67,7 @@ Security is critical in data migration architecture. Protect sensitive informati
 
 ## Operational Excellence
 
-Operational excellence is achieved through a combination of meticulous planning, continuous improvement, and adherence to best practices. The architecture is designed to ensure that data is migrated efficiently and securely while maintaining high levels of performance and reliability. Regular audits and assessments help identify areas for improvement, allowing for the refinement of processes and the implementation of innovative solutions. Advanced technologies and methodologies help ensure that the migration process is streamlined, reducing downtime and minimizing disruptions to business operations. Additionally, the architecture includes robust monitoring and alerting systems that provide real-time insights into the migration process, enabling immediate response to any issues that may arise. This proactive approach ensures that the migration is completed on time and within budget, while also meeting the highest standards of quality and security.
+Operational excellence is achieved through a combination of meticulous planning, continuous improvement, and adherence to best practices. The architecture is designed to ensure that data is migrated efficiently and securely while maintaining high levels of performance and reliability. Regular audits and assessments help identify areas for improvement, allowing for the refinement of processes and the implementation of innovative solutions. Advanced technologies and methodologies help ensure that the migration process is streamlined, reducing downtime and minimizing disruptions to business operations. Additionally, the architecture includes robust monitoring and alerting systems that provide real-time insights into the migration process, enabling immediate response to any issues that might arise. This proactive approach ensures that the migration is completed on time and within budget, while also meeting the highest standards of quality and security.
 
 - **Embrace fusion development**
 
@@ -83,7 +83,7 @@ Operational excellence is achieved through a combination of meticulous planning,
 
 - **Deploy with confidence**
 
-    The data migration architecture is designed to instill confidence in the deployment process. Rigorous testing and validation procedures are implemented to ensure that all migrated data is accurate, complete, and functional in the target environment. The process includes unit testing, integration testing, and user acceptance testing. By thoroughly validating the data and systems before deployment, post-migration issues are minimized and help ensure a seamless transition for end users. This comprehensive approach to validation and deployment provides peace of mind to stakeholders and guarantees the success of the migration project.
+    The data migration architecture is designed to instill confidence in the deployment process. Rigorous testing and validation procedures are implemented to ensure that all migrated data is accurate, complete, and functional in the target environment. The process includes unit testing, integration testing, and user acceptance testing. Thoroughly validating the data and systems before deployment minimizes post-migration issues and helps ensure a seamless transition for end users. This comprehensive approach to validation and deployment provides peace of mind to stakeholders and guarantees the success of the migration project.
 
 - **Automate for efficiency**
 
@@ -91,7 +91,7 @@ Operational excellence is achieved through a combination of meticulous planning,
 
 - **Adopt safe deployment practices**
 
-    The adoption of safe deployment practices protect the integrity and security of data. These practices include implementing robust backup and recovery procedures, conducting thorough pre-deployment testing, and ensuring that all changes are thoroughly documented and reviewed. A phased deployment approach means changes are rolled out gradually to minimize risk and allow for easy rollback if issues are encountered. Prioritizing safety and security in deployment practices helps guarantee a smooth migration process and the protection of data.
+   Safe deployment practices protect the integrity and security of data. These practices include implementing robust backup and recovery procedures, conducting thorough predeployment testing, and ensuring that all changes are thoroughly documented and reviewed. A phased deployment approach means changes are rolled out gradually to minimize risk and allow for easy rollback if issues are encountered. Prioritizing safety and security in deployment practices helps guarantee a smooth migration process and the protection of data.
 
 ## Performance Efficiency
 
@@ -107,7 +107,7 @@ Advanced monitoring and analytics tools optimize the migration process for speed
 
 - **Achieving and sustaining performance**
 
-    Achieving and sustaining performance during data migration requires a proactive approach to monitoring and optimization. Continuous performance monitoring tracks the progress and status of the migration in real time, to quickly identify and address any performance issues that may arise and ensure that the migration process remains on track. Regular performance reviews and adjustments help maintain optimal performance throughout the migration. A dynamic and responsive approach helps the migration process achieve and sustain high levels of performance.
+    Achieving and sustaining performance during data migration requires a proactive approach to monitoring and optimization. Continuous performance monitoring tracks the progress and status of the migration in real time, to quickly identify and address any performance issues that might arise and ensure that the migration process remains on track. Regular performance reviews and adjustments help maintain optimal performance throughout the migration. A dynamic and responsive approach helps the migration process achieve and sustain high levels of performance.
 
 - **Improving efficiency through optimization**
 
@@ -117,7 +117,7 @@ Advanced monitoring and analytics tools optimize the migration process for speed
 
 Experience optimization focuses on enhancing the overall experience of both developers and end users. User-centric design principles and advanced technologies create an environment that's intuitive, efficient, and highly productive. This approach makes the migration process effective and user friendly, both reducing disruptions and increasing satisfaction.
 
-- **Design for the developer/user** 
+- **Design for the developer and end user** 
 
     With a systematic approach for complex Dataverse data migration, a developer can start extracting data from source, then create staging tables, and after necessary transformations, move data to the Dataverse environment. This process gives developers clarity. Designing for the developer and end-user experience is key to crafting a seamless data migration process. 
 
