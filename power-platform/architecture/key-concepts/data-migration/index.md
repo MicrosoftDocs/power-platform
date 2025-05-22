@@ -37,6 +37,7 @@ Common issues during migration include:
 
 The migration approach depends on the size and complexity of your data set. Use a simple, medium, or complex approach based on volume and complexity.
 
-## Next step
 
-- [Data migration approaches](data-migration-approaches.md)
+> [!div class="nextstepaction"]
+> [Data migration approaches](data-migration-approaches.md)
+
