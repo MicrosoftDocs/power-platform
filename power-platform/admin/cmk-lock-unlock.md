@@ -38,11 +38,11 @@ Key access revocation can be triggered by completing any of the following tasks:
 ## Enterprise policy status check (preview)
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 
-To ensure the smooth operation of your customer-managed key environments, the health of the **Enterprise policy** is continually monitored. In an event the Azure key access is revoked, the enterprise policy is flagged as unhealthy and all the environments that are associated with the enterprise policy will be shut-down automatically. Users will not be able to use these locked out environments until the Azure key access is restored. 
+To ensure the smooth operation of your customer-managed key environments, the health of the **enterprise policy** is continually monitored. When the Azure key access is revoked, the enterprise policy is flagged as unhealthy and all the environments that are associated with the enterprise policy are shut-down automatically. Users can't use these locked-out environments until the Azure key access is restored. 
 
-When the environments are shut-down due to unhealthy entreprise policy status, a message will show up in the environment details page that the '**Environment disabled** due to unhealthy enterprise policy' on the Power Platform admin center.  
+When an environment is shut down due to unhealthy entreprise policy status, an **Environment disabled** message is displayed in the environment details page.
 
-:::image type="content" source="media/environment-disabled.png" alt-text="Tenant capacity extension in admin center." lightbox="media/environment-disabled.png":::
+:::image type="content" source="media/environment-disabled.png" alt-text="An environment is shut down." lightbox="media/environment-disabled.png":::
 
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
