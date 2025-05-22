@@ -27,20 +27,20 @@ Key access revocation can be triggered by completing any of the following tasks:
 - Adding a virtual network or adding an IP range outside of Microsoft services' reach.
 
   > [!CAUTION]
-  > You should never revoke key access as part of your normal business process. When you revoke key access, all environments associated with the enterprise policy are taken completely offline immediately and your users, who were active in the environment, experience unplanned downtime including data loss. If you decide to leave the service, locking the environment can ensure that your customer data can never be accessed again by anyone, including Microsoft.
-  > Note the following about environments locking:
+  > You should never revoke key access as part of your normal business process. When you revoke key access, all environments associated with the enterprise policy are taken offline immediately and your users, who were active in the environment, experience unplanned downtime including data loss. If you decide to leave the service, locking the environment can ensure that your customer data can never be accessed again by anyone, including Microsoft.
+  > Note the following information about locked environments:
   >
   > - Locked environments can't be restored from backup.
   > - Locked environment's data can't be copied to another environment.
   > - Locked production and sandbox environment's data persist in the platform but it can't be accessed.
-  > - Locked sandbox environments are deleted after 7 days and production environments are deleted after 30 days if key access isn't restored.
+  > - Locked sandbox environments are deleted after seven days and production environments are deleted after 30 days if key access isn't restored.
 
 ## Enterprise policy status check (preview)
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 
-To ensure the smooth operation of your customer-managed key environments, the health of the **enterprise policy** is continually monitored. When the Azure key access is revoked, the enterprise policy is flagged as unhealthy and all the environments that are associated with the enterprise policy are shut-down automatically. Users can't use these locked-out environments until the Azure key access is restored. 
+To ensure the smooth operation of your customer-managed key environments, the health of the **enterprise policy** is continually monitored. When the Azure key access is revoked, the enterprise policy is flagged as unhealthy and all the environments that are associated with the enterprise policy are shut down automatically. Users can't use these locked-out environments until the Azure key access is restored. 
 
-When an environment is shut down due to unhealthy entreprise policy status, an **Environment disabled** message is displayed in the environment details page.
+When an environment is shut down due to unhealthy enterprise policy status, an **Environment disabled** message is displayed in the environment details page.
 
 :::image type="content" source="media/environment-disabled.png" alt-text="An environment is shut down." lightbox="media/environment-disabled.png":::
 
