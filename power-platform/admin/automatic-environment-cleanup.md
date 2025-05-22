@@ -80,13 +80,24 @@ A warning message appears on the **Environments** list page and **Environment** 
 ## Default environment 
 
 A cleanup mechanism in Power Platform automatically removes Default environments based on the following criteria:
+- Tenants with premium licenses are excluded from the cleanup.
+- Default environments with Microsoft 365 agents or Microsoft planner are excluded from deletion.
+- Admins receive two warning notifications before the Default environment is deleted due to inactivity. Default environments are deleted 30 days after the first notification.
+- Default environments with flows are deleted after 402 days of inactivity, to allow annual and seasonal activity.
+- Default environments without flows are deleted after 120 days of inactivity.
 
-Tenants with premium licenses are excluded from the cleanup.
-Default environments with Microsoft 365 agents or Microsoft planner are excluded from deletion.
-Admins receive two warning notifications before the Default environment is deleted due to inactivity. Default environments are deleted 30 days after the first notification.
-Default environments with flows are deleted after 402 days of inactivity, to allow annual and seasonal activity.
-Default environments without flows are deleted after 120 days of inactivity.
 As part of this cleanup process, a new replacement Default environment without Dataverse is created, with an option to add Dataverse later. The original Default environment is deleted but can be recovered as a Production environment within 7 days. Any activity triggered on the environment will reset the inactivity period.
+
+### Timeline for unused Default environments
+
+The environment's administrators are notified by email according to the schedule described in the following table.
+
+| Default Environment with Flows | Default Environment without Flows | What to expect |
+| --- | --- | -- |
+| 372 days with no [user activity](#definition-of-user-activity) | 90 days with no [user activity](#definition-of-user-activity) | A warning email is sent stating that the environment will be disabled and a countdown is displayed in the **Environment state** on the **Environments** list page and the **Environment** page. |
+
+A warning message appears on the **Environments** list page and **Environment** page when an environment is disabled.
+
 
 
 ### Definition of user activity
