@@ -42,7 +42,7 @@ To ensure the smooth operation of your customer-managed key environments, the he
 
 When the environments are shut-down due to unhealthy entreprise policy status, a message will show up in the environment details page that the '**Environment disabled** due to unhealthy enterprise policy' on the Power Platform admin center.  
 
-:::image type="content" source="media/XXXX.png" alt-text="Tenant capacity extension in admin center." lightbox="media/XXXXX.png":::
+:::image type="content" source="media/environment-disabled.png" alt-text="Tenant capacity extension in admin center." lightbox="media/environment-disabled.png":::
 
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
