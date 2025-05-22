@@ -20,9 +20,7 @@ This article uses a data migration example from Salesforce. Salesforce is a robu
 To ensure a successful migration, follow a structured technical approach that includes extracting, transforming, and loading data while maintaining data integrity and minimizing business disruption.
 
 :::image type="complex" source="media/db-migration-workflow.png" alt-text="Diagram illustrating a data migration workflow with six interconnected circles as steps." lightbox="media/db-migration-workflow.png":::
-    The six main steps in the data migration workflow are:  1. Prepare target, success, and error tables.
-    2. Load data into the target table. 3. Perform transformations such as option sets and text trimming.
-    4. Preload lookup GUIDs in the target table. 5. Load data into Dataverse. 6. Load GUIDs of successful records to the target table.
+    The six main steps in the data migration workflow are: 1. Prepare target, success, and error tables. 2. Load data into the target table. 3. Perform transformations such as option sets and text trimming. 4. Preload lookup GUIDs in the target table. 5. Load data into Dataverse. 6. Load GUIDs of successful records to the target table.
 :::image-end:::
 
 ### Extract data from source to staging database
