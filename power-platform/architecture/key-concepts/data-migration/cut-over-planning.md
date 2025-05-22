@@ -18,20 +18,20 @@ ms.custom:
 
 # Data migration planning for go-live
 
-Most of the organizations face difficulty to assess on the correct cut over planning for going live after complex data migration. We need to plan the cut over planning carefully to avoid any real business impacts. Here are some important considerations for cut over planning.
+Many organizations find it hard to plan the right cut over for going live after complex data migration. Careful cut over planning helps avoid real business impact. Here are some important things to consider for cut over planning.
 
 ## Assess the duration for migration
 
-Most of the times developers keep building data migration jobs for dev / UAT environment and don't have any idea on the real volume / size of actual data. You should always assess the speed of CRUD operations in terms of records/second, and estimate number of such operations which are likely to happen in production and on top of that we can add 20-30% buffer time for monitoring those jobs, this gives us a good idea on how much approximate time it’s going to take for full data migration.
+Developers often build data migration jobs for development or UAT (user acceptance testing) environments without knowing the actual data volume. Always assess the speed of CRUD (create,read,update,or delete) operations in records per second, and estimate how many operations are likely in production. Add a 20 to 30 percent buffer for monitoring jobs. This approach gives you a good idea of how much time a full data migration takes.
 
 ## Plan for full or delta load
 
-If full data migration is taking more time, you need to plan it carefully. Even if you achieve a good migration speed of 100–200 records per second, there are about 1.2 million seconds in two weeks. In that scenario, a 24x7 successfully running job will migrate about 120 million records in two weeks, which still impacts the business for that entire period. In most cases, this isn't practical. With a speed of 50 records per second, a similar volume of data would take approximately four weeks, which is a long time.
+If full data migration takes too long, plan it carefully. Even with a good migration speed of 100–200 records per second, there are about 1.2 million seconds in two weeks. In this case, a job running 24x7 migrates about 120 million records in two weeks, which still affect the business during that time. In most cases, this isn't practical. At 50 records per second, migrating a similar volume takes about four weeks, which is a long time.
 
-You can resolve this problem by making a strategy so that you do full load data migration approximately a month ago then the actual go live, and then every week by week we can start migrating the delta data for that week, this way we know the approximate time for loading a week’s delta data and can plan go live accurately. Also, business users also get a time to test on migrated data and can compare Apple to Apple, meaning source system data records to target system data records.
+Fix this problem by running a full data migration about a month before go live. Then, migrate the delta data each week. This approach lets you estimate the time needed to load a week's delta data and plan go live accurately. Business users also get time to test the migrated data and compare source system records to target system records.
 
-Any Data Migration which is taking more than 2-3 days to complete, you must plan for full and delta data loads. This helps planning for business continuity.
+If data migration takes more than two or three days, plan for both full and delta data loads. This helps ensure business continuity.
 
 ## Provide clear communication
 
-Final delta data migration must be done after freezing the source and target systems for any real time transactions, so that we get a clear snapshot of Data, and can switch from source systems to target system. You need to plan for this communication and send it to the team well in advance. To minimize this downtime, we should plan this downtime in non-business hours or weekends.
+Do the final delta data migration after you freeze the source and target systems for any real-time transactions. This approach gives you a clear snapshot of data and lets you switch from the source system to the target system. Plan this communication and notify the team in advance. To minimize downtime, schedule it during nonbusiness hours or on weekends.
