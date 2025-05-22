@@ -130,6 +130,7 @@ Experience optimization in our data migration architecture focuses on enhancing 
  
     Designing for simplicity is a core principle of our data migration architecture. Simplified workflows and automated processes reduce complexity, making the migration process more straightforward and less error prone. This involves implementing user-friendly SQL procedures and clear, concise documentation that guides users through each step of the migration. Additionally, the architecture uses modular design principles, allowing components to be easily understood, maintained, and upgraded. By prioritizing simplicity, we ensure that the migration process is efficient, reducing the learning curve and enabling quicker adoption by both developers and end-users.
 
-## Next step
+> [!div class="nextstepaction"]
+> [Data migration planning for go-live](cut-over-planning.md)
 
-- [Plan cut over to go live](cut-over-planning.md)
+
