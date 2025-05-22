@@ -27,7 +27,7 @@ Key access revocation can be triggered by completing any of the following tasks:
 - Adding a virtual network or adding an IP range outside of Microsoft services' reach.
 
   > [!CAUTION]
-  > You should never revoke key access as part of your normal business process. When you revoke key access, all environments associated with the enterprise policy are disabled immediately and your users, who were active in the environment, experience unplanned downtime including data loss. If you decide to leave the service, locking the environment can ensure that your customer data can never be accessed again by anyone, including Microsoft.
+  > You should never revoke key access as part of your normal business process. When you revoke key access, all environments associated with the enterprise policy are taken completely offline immediately and your users, who were active in the environment, experience unplanned downtime including data loss. If you decide to leave the service, locking the environment can ensure that your customer data can never be accessed again by anyone, including Microsoft.
   > Note the following about environments locking:
   >
   > - Locked environments can't be restored from backup.
