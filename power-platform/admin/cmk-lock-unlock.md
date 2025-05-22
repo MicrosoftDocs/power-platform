@@ -36,15 +36,16 @@ Key access revocation can be triggered by completing any of the following tasks:
   > - Locked sandbox environments are deleted after 7 days and production environments are deleted after 30 days if key access isn't restored.
 
 ## Enterprise policy status check (preview)
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
+
 To ensure the smooth operation of your customer-managed key environments, the health of the **Enterprise policy** is continually monitored. In an event the Azure key access is revoked, the enterprise policy is flagged as unhealthy and all the environments that are associated with the enterprise policy will be shut-down automatically. Users will not be able to use these locked out environments until the Azure key access is restored. 
 
 When the environments are shut-down due to unhealthy entreprise policy status, a message will show up in the environment details page that the '**Environment disabled** due to unhealthy enterprise policy' on the Power Platform admin center.  
 
-(insert image)
+:::image type="content" source="media/XXXX.png" alt-text="Tenant capacity extension in admin center." lightbox="media/XXXXX.png":::
 
+## Unlock environments (preview)
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
-
-## Unlock environments (Preview)
 
 To unlock environments, all key access permissions must be restored for the original encryption key. The environments can only be enabled when the original Azure encryption key used to encrypt the customer data is restored. 
 Re-enable the environments to unlock them.
