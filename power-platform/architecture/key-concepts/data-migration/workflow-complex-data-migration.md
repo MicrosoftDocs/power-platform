@@ -39,7 +39,7 @@ Here are some considerations for bringing data into a staging database.
 
 ### Transform data into target staging database
 
-After extracting data from source system like Salesforce, it’s crucial to transform data into a database which is equivalent to tables in Dataverse, and which has the values which can be directly inserted / updated into Dataverse. This form of tables we call as "target staging database". You can think of following transformations for this.
+After extracting data from source system like Salesforce, it’s crucial to transform data into a database which is equivalent to tables in Dataverse, and which has the values which can be directly inserted / updated into Dataverse. This form of tables we call as target staging database. You can think of following transformations for this.
 
 - **Create mappings from source table column names to target** (Dataverse) column names and write scripts to send data from source table to target table. In some cases, data from multiple tables may come to a single table. You need to write join queries to bring the combined data.
 
@@ -89,7 +89,7 @@ After extracting data from source system like Salesforce, it’s crucial to tran
 
 Now next important task after static transformations is to sequence the tables in such a way that you have minimum cyclic dependencies (when two or more tables have lookup to each other in such a way that we can't import a single table without having reference from other table). You can do this easily by this way.
 
-- List down all the tables which are eligible for Data Migration
+- List down all the tables which are eligible for data migration
 
 - Note the number of unique table lookups that are eligible for migration. For example, if the Contact table has two Account lookups, count it as one since both point to a single table. You can ignore out-of-the-box (OOB) lookups like Created By or Modified By if they aren't eligible for migration in your scenario. Also, ignore any table lookups that you aren't migrating.
 
@@ -162,33 +162,33 @@ But with almost every tool you should consider following things:
 | **Measure**                   | **Description**                                               | **Limit per web server**                                      |
 |-------------------------------|---------------------------------------------------------------|---------------------------------------------------------------|
 | Number of requests            | The cumulative number of requests made by the user.           | 6000 within the 5-minute sliding window                       |
-| Execution time                | The combined execution time of all requests made by the user. | 20 minutes (1,200 seconds) within the 5-minute sliding window |
+| Execution time                | The combined execution time of all requests made by the user. | 20 minutes (1,200 seconds) within the five-minute sliding window |
 | Number of concurrent requests | The number of concurrent requests made by the user            | 52 or higher                                                  |
 
 Now the science lies in making the optimal combinations of these so that
 you get best performance. Here are some of the considerations which are recommended:
 
-1. For out of the box tables like contact, account, lead, etc. no matter
+- For out of the box tables like contact, account, lead, etc. no matter
    what you do, speed of migration would be comparatively lower. The reason is there are many platform jobs and plugins which run for
    these records, but we have seen if we aren't using too many lookups
    during insertion like up to 10 lookup fields and total 50-70 columns
    then batch size of 200-300 and the max parallel threads 30 give optimal speed.
 
-2. For simpler tables with no lookups or few lookups, small
+- For simpler tables with no lookups or few lookups, small
    batch sizes like 10 or less and max parallel threads 50 also don’t
    create exception in no. of concurrent requests and exceptionally
    speed up the migration.
 
-3. For any other custom table with decent number of lookups max batch
+- For any other custom table with decent number of lookups max batch
    size 100 and max parallel threads of 30 give optimal speed.
 
-4. For large and complex tables with more than 100 columns and
+- For large and complex tables with more than 100 columns and
    more than 20 lookups, you should keep batch size low like 10-20
    and max parallel threads should be 10-20 only. This ensures that
    data migration isn't failing in between, although speed of
    migration will be low.
 
-5. Another important factor for migration speed is data centre
+- Another important factor for migration speed is data centre
    location. You should run our data migration from a VM in the same
    region that speed up the whole operation exponentially. To find the
    data center for your Dataverse environment, you can follow these
@@ -200,7 +200,7 @@ you get best performance. Here are some of the considerations which are recommen
 
       - Navigate to the environment you want to check.
 
-      - Look for the "Region" or "Azure Region" information, which
+      - Look for the `Region` or `Azure Region` information, which
         indicates the data center's location.
 
    1. **Ping the environment URL**:
@@ -225,17 +225,17 @@ you get best performance. Here are some of the considerations which are recommen
 
 Dataverse allows you to create stub users, and by default, they receive the salesperson security role. This is a fixed role, and you must not update the name or spelling of this role, as doing so might prevent the creation of stub users. There are various reasons why you might need to create stub users instead of licensed users. For example, you may not want to pay for licensing during large migrations that could take months, or many owners from previous source systems may have left the organization or changed departments, making it impossible to license them.
 
-To become an owner of any record, a user needs minimal read privileges on that table. After building all your tables, you can provide user-level read privileges for all those tables to the “salesperson” security role. This ensures that any disabled user can also be an owner of any record you are migrating.
+To become an owner of any record, a user needs minimal read privileges on that table. After building all your tables, you can provide user-level read privileges for all those tables to the salesperson security role. This ensures that any disabled user can also be an owner of any record you are migrating.
 
 Another important consideration is setting the correct business unit for these stub users during their creation. The moment you try to update the business unit of any stub or real user, they lose all security roles, including salesperson, and you cannot make these stub users the owner of any record until you license them and assign them some security roles. Therefore, you must plan user migration carefully, and their business units must be determined before migration begins. To summarize:
 
 - All non-licensed users must be created using the data migration job with the appropriate business units set during insertion. Never update the business unit after record creation, as this will cause the user to lose their security roles.
 
-- By default, they will receive the “salesperson” security role, which must have user-level read privileges on all tables eligible for migration.
+- By default, they will receive the salesperson security role, which must have user-level read privileges on all tables eligible for migration.
 
-- A user with the “salesperson” security role and minimal read privileges on all data migration-eligible tables can be the owner of any record, even if the user is disabled.
+- A user with the salesperson security role and minimal read privileges on all data migration-eligible tables can be the owner of any record, even if the user is disabled.
 
-  1. **Setting the currency exchange rate during insertion**: When you move from Salesforce or any other CRM system to Dataverse, you should try to set the correct currency exchange rates for all money fields. In Dataverse, there are no historical currency exchange rates, so you can write a pre-validation plugin and override the exchange rate property in a record to apply the specific currency exchange rates. If you don’t do this, it becomes difficult to see the same financial state across geographies in both the source and target systems.
+  - **Setting the currency exchange rate during insertion**: When you move from Salesforce or any other CRM system to Dataverse, you should try to set the correct currency exchange rates for all money fields. In Dataverse, there are no historical currency exchange rates, so you can write a pre-validation plugin and override the exchange rate property in a record to apply the specific currency exchange rates. If you don’t do this, it becomes difficult to see the same financial state across geographies in both the source and target systems.
 
 ### Post data load into Dataverse
 
