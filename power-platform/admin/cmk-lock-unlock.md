@@ -44,6 +44,8 @@ When the environments are shut-down due to unhealthy entreprise policy status, a
 
 :::image type="content" source="media/XXXX.png" alt-text="Tenant capacity extension in admin center." lightbox="media/XXXXX.png":::
 
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
+
 ## Unlock environments (preview)
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 
@@ -58,8 +60,9 @@ Re-enable the environments to unlock them.
 > It can take up to 5 minutes to re-enable the environment,
 
 > [!IMPORTANT]
-> Locked environments can be enabled by an administrator who has Read access to the **enterprise policy** when the key access permissions are restored. Environments remain disabled and they can be enabled independently by the Power Platform administrator once the Azure key has been restored. 
+> Locked environments can be enabled by an administrator who has Read access to the **enterprise policy** when the key access permissions are restored. Environments remain disabled and they can be enabled independently by the Power Platform administrator once the Azure key has been restored.
 
-## See also
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
+## Related content
 [Manage your customer-managed encryption key](customer-managed-key.md)
