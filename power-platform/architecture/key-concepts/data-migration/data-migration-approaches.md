@@ -34,20 +34,15 @@ Migrating data from an external customer relationship management (CRM) system to
 
 **Definition**:
 
-- **Data volume**: Between 1GB and 50GB or 50,000 to 500,000 records.
-
+- **Data volume**: Between 1 GB and 50 GB or 50,000 to 500,000 records.
 - **Data complexity**: Moderate complexity with hierarchical or relational data (for example, accounts with associated contacts and opportunities).
 
 **Approach**:
 
 - **Detailed data assessment**: Check source system schemas, validate relationships, and find data quality issues.
-
 - **ETL tools**: Use Extract, Transform, Load (ETL) tools like Azure Data Factory or Kingsway Soft to handle transformations and mapping.
-
 - **Batch migration**: Run migration in batches to reduce downtime and system strain.
-
 - **Testing and validation**: Run test migrations in a staging environment to check data accuracy and confirm relational integrity.
-
 - **Monitoring**: Use telemetry to track migration performance and fix errors quickly.
 
 ## Complex data migration
@@ -75,7 +70,7 @@ This diagram illustrates the importance of using a staging database for large an
 :::image type="content" source="media/data-migration-approaches/architecture.svg" alt-text="Architecture diagram showing the workflow for a complex data migration from a CRM system such as Salesforce or Sibel to Microsoft Dataverse." lightbox="media/data-migration-approaches/architecture.svg":::
 
 > [!div class="nextstepaction"]
-> [Workflow complex data migration](workflow-complex-data-migration.md)
+> [Workflow for complex data migration](workflow-complex-data-migration.md)
 
 
 
