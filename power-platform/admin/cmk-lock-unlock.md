@@ -53,8 +53,11 @@ Re-enable the environments to unlock them.
 1. On the environment **Details** page and under the **Environment disabled** section, select the **Re-enable environment** action.
 1. Repeat this step for each environment that is associated with the enterprise policy to enable them.
 
+> [!Note]
+> It can take up to 5 minutes to re-enable the environment,
+
 > [!IMPORTANT]
-> Locked environments can be enabled by an administrator when the key access permissions are restored. Environments remain disabled and they can be enabled independently by the Power Platform administrator once the Azure key has been restored. 
+> Locked environments can be enabled by an administrator who has Read access to the **enterprise policy** when the key access permissions are restored. Environments remain disabled and they can be enabled independently by the Power Platform administrator once the Azure key has been restored. 
 
 ## See also
 
