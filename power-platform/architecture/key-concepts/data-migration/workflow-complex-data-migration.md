@@ -39,7 +39,7 @@ Here are some considerations for bringing data into a staging database.
 
 ### Transform data into target staging database
 
-After extracting data from source system like Salesforce, it’s crucial to transform data into a database which is equivalent to tables in Dataverse, and which has the values which can be directly inserted / updated into Dataverse. This form of tables we call as target staging database. You can think of following transformations for this.
+After extracting data from source system like Salesforce, it’s crucial to transform data into a database which is equivalent to tables in Dataverse, and which has the values which can be directly updated into Dataverse. This form of tables we call as target staging database. You can think of following transformations for this.
 
 - **Create mappings from source table column names to target** (Dataverse) column names and write scripts to send data from source table to target table. In some cases, data from multiple tables may come to a single table. You need to write join queries to bring the combined data.
 
