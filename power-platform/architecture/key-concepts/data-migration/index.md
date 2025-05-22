@@ -8,7 +8,7 @@ ms.topic: overview
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
-ms.date: 05/21/2025
+ms.date: 05/22/2025
 ms.custom:
   - ai-gen-docs-bap
   - ai-gen-title
@@ -37,6 +37,7 @@ Common issues during migration include:
 
 The migration approach depends on the size and complexity of your data set. Use a simple, medium, or complex approach based on volume and complexity.
 
+## Next step
 
 > [!div class="nextstepaction"]
 > [Data migration approaches](data-migration-approaches.md)

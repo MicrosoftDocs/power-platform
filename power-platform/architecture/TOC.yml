@@ -31,13 +31,13 @@
           href: key-concepts/dataverse-auditing.md
         - name: CRM migration to Dataverse
           items:
-            - name: Index
+            - name: Overview
               href: key-concepts/data-migration/index.md
             - name: Data migration approaches
               href: key-concepts/data-migration/data-migration-approaches.md
-            - name: Workflow complex data migration
+            - name: Workflow for complex data migration
               href: key-concepts/data-migration/workflow-complex-data-migration.md
-            - name: Benefits power well architected
+            - name: Power Platform Well-Architected and data migration
               href: key-concepts/data-migration/benefits-power-well-architected.md
             - name: Cut over planning
               href: key-concepts/data-migration/cut-over-planning.md
