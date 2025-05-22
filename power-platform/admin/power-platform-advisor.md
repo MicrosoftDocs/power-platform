@@ -24,7 +24,8 @@ With Advisor, administrators can:
 
 - Provide proactive, best practice recommendations.
 - Improve the overall health of their Power Platform tenant.
-- Take inline actions or automate actions using the cloud.
+- Take inline actions
+- Take automate actions using the cloud flows or PowerShell via the Power Platform for Admin v2 connector actions.
 
 > [!NOTE]  
 > Find Advisor recommendations on the Advisor page in the Power Platform admin center. If you turn on the new admin center experience, recommendations are in the Action center.
@@ -75,7 +76,9 @@ Power Platform Advisor shows a summary of recommendations for non-managed enviro
 
 Advisor includes these capabilities:
 
-- **Snooze recommendations**: Pause recommendations for up to two months and undo snoozing if needed sooner.
+- **Snooze recommendations**: Pause non-security recommendations for up to two months and undo snoozing from the Snoozed recommendations tab, if needed sooner.
+
+- **Dismiss recommendations**: Dismiss security recommendations that are not applicable to your organization or the ones that were addressed in a different way. Activate dismissed security recommendations from the Dismissed recommendations tab, if they become relevant at a later date.
 
 - **Delegate or collaborate**: Share recommendations and resources with colleagues to resolve them collaboratively.
 
@@ -92,6 +95,8 @@ Power Platform Advisor lets admins address recommendations through different typ
 - **Inline actions**: Perform actions directly from the Advisor interface.
 
 - **Automated actions using Power Automate**: Use flows to automate remediation processes.
+
+- **Automated actions using PowerShell**: Use PowerShell to automate remediation processes.
 
 - **Redirection to other pages**: Navigate to specific sections for detailed actions.
 
@@ -115,7 +120,7 @@ Power Platform Advisor lets admins address recommendations through different typ
 
 Power Platform Advisor supports automated actions in the [Power Platform for Admin V2](/connectors/powerplatformadminv2/) connector. These actions are useful for building remediation processes. For example, instead of deleting an unused app, an admin can first send an email or message to the owner of the app. The message informs the owner about an impending action. If the admin doesn't receive a reply from the owner, the app can be deleted.
 
-While building cloud flows using the connector, you can get Power Platform Advisor recommendations and actions:
+While building cloud flows or PowerShell using the connector, you can get Power Platform Advisor recommendations and actions:
 
 - **Get recommendations**: Returns all the valid recommendations in the tenant.
 - **Get recommendation resources**: Returns all the resources for a specific recommendation.
@@ -132,6 +137,14 @@ Power Platform admins can snooze nonsecurity recommendations for up to two month
 When you snooze a recommendation, it's removed from the active recommendations tab and moved to the snoozed recommendations tab. Admins can see the person snoozing the recommendation along with the duration and date when it was snoozed. Advisor stops refreshing recommendations in their snoozed state.
 
 Snoozed recommendations can be activated again manually by selecting undo snooze from the snoozed recommendation table. They’re automatically activated after the snoozed duration elapses. 
+
+### Dismiss recommendations
+
+Power Platform admins can dismiss security recommendations that are not applicable for their organization. To dismiss a recommendation, hover on the recommendation to select the dismiss action in the recommendation table and choose the reason for dismissing the recommendation.
+
+When you dismiss a recommendation, it's removed from the active recommendations tab and moved to the dismissed recommendations tab. Admins can see the person dismissing the recommendation along with the reason and date when it was dismissed. Advisor stops scanning dismissed recommendations.
+
+Dismissed recommendations can be activated again manually by selecting activate from the dismissed recommendation table. Dismissed recommendations remain in that state until they're manually activated.
 
 ### Share recommendations
 
@@ -150,7 +163,7 @@ When an entire recommendation or multiple rows in the recommendation are shared,
 
 You can export the recommendation data displayed in Power Platform Advisor using the **Get Recommendation Resources** action in the [Power Platform for Admin V2](/connectors/powerplatformadminv2/) connector.
 
-To retrieve resources for each recommendation, create a cloud flow or scheduled cloud flow. Export them to an Excel file or send them by email using Excel Online or Office 365 Outlook connectors.
+To retrieve resources for each recommendation, create a PowerShell script, a cloud flow or a scheduled cloud flow. Export them to an Excel file or send them by email using Excel Online or Office 365 Outlook connectors.
 
 ## Recommendations
 
