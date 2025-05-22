@@ -1,6 +1,6 @@
 ---
 title: "Microsoft Dataverse and model-driven apps activity logging  | MicrosoftDocs"
-description: Learn how to enable auditing to be used for reports in the Microsoft 365 Security Compliance Center.
+description: Learn how to enable auditing to be used for reports in the Microsoft Purview portal.
 ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 01/25/2024
@@ -16,7 +16,9 @@ search.audienceType:
 
 [!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
-Protecting data, preserving privacy, and complying with [privacy regulations](https://www.microsoft.com/trust-center/privacy) are some of the highest priorities for your business. It's critical that you audit the entirety of data processing actions taking place to be able to analyze for possible security breaches. This information from Activity Logging can be used when you perform a Data Protection Impact Assessment (DPIA) addressing the use of Office, Power Apps, Power Automate, and customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation).  
+Protecting data, preserving privacy, and complying with [privacy regulations](https://www.microsoft.com/trust-center/privacy) are some of the highest priorities for your business. It's critical that you audit the entirety of data processing actions taking place to be able to analyze for possible security breaches. 
+
+This information from Activity Logging assists in performing a Data Protection Impact Assessment (DPIA) addressing the use of Office, Power Apps, Power Automate, and customer engagement apps such as Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation.
 
 This topic covers how you can set Power Apps, Power Automate, and customer engagement apps to audit a broad range of data processing activities and use the [Microsoft Purview portal](https://support.office.com/article/go-to-the-office-365-security-compliance-center-7e696a40-b86b-4a20-afcc-559218b7b1b8?ui=en-US&rs=en-US&ad=US) to review the data in activity reports.
 
@@ -52,7 +54,7 @@ Schemas define which fields are sent to the Microsoft Purview portal. Some field
 |Result Status     |Edm.String         |No         |Status of the row logged. Success in most cases          |
 |Organization Id     |Edm.Guid         |Yes        |Unique identifier of the organization from which the log was generated. You can find this ID under Dynamics Developer Resources.          |
 |ClientIP     |Edm.String         |No         |IP Address of the user or corporate gateway          |
-|CorrelationId     |Edm.Guid         |No         |A unique value used to associate related rows (e.g., when a large row is split)          |
+|CorrelationId     |Edm.Guid         |No         |A unique value used to associate related rows (for example, when a large row is split)          |
 |CreationTime     |Edm.Date         |No         |Date and time of when the log was generated in UTC          |
 |Operation     |Edm.Date         |No         |Name of the message called in the SDK          |
 |UserKey     |Edm.String         |No         |Unique Identifier of the User in Microsoft Entra ID. AKA User PUID          |
@@ -77,12 +79,12 @@ The customer engagement apps schema contains fields specific to customer engagem
 |Id     |Edm.String          |No         |Entity name in customer engagement apps        |
 |Query     |Edm.String         |No         |The Filter query parameters used while executing the FetchXML          |
 |QueryResults     |Edm.String         |No         |One or multiple unique records returned by the Retrieve and Retrieve Multiple SDK message call          |
-|ServiceContextId     |Edm.Guid         |No         |The unique id associated with service context          |
+|ServiceContextId     |Edm.Guid         |No         |The unique ID associated with service context          |
 |ServiceContextIdType     |Edm.String         |No         |Application defined token to define context use          |
 |ServiceName     |Edm.String         |No         |Name of the Service generating the log          |
 |SystemUserId     |Edm.Guid         |No         |Unique identifier of the user GUID in the organization          |
 |UserAgent     |Edm.Guid          |No        |Browser used to execute the request          |
-|UserId     |Edm.Guid          |No         |The unique id of the Dynamics system user associated with this activity          |
+|UserId     |Edm.Guid          |No         |The unique ID of the Dynamics system user associated with this activity          |
 |UserUpn     |Edm.String         |No         |User principal name of the user associated with this activity          |
 
 ## Enable auditing 
@@ -115,7 +117,7 @@ On the **Audit settings** page:
 3. Click **Save** to apply the changes.
 
 **Setting Organization-Leve Auditing on Tables**
-1. From the **Audit settings** page, click **Gobal Audit Settings**.
+1. From the **Audit settings** page, click **Global Audit Settings**.
 2. Under **Enable Auditing in the following areas**, select the check boxes for the areas you want to audit.
 3. Click **OK** to apply the changes.
    
@@ -123,9 +125,9 @@ On the **Audit settings** page:
 1. Sign in to [Power Apps Home Page](https://make.powerapps.com/).
 2. In the command bar, select **Settings**, then choose **Advanced settings**.
 3. Select **Customizations**, then click **Customize the System**.
-4. In the navigation pane, under **Components**, expand **Entities** and select the entity to audit (e.g., **Account**).
+4. In the navigation pane, under **Components**, expand **Entities** and select the entity to audit (for example, **Account**).
 5. Scroll down to **Data Services**, then enable the check box for **Auditing**.
-6. Under **Auditing**, enable the following optionss:
+6. Under **Auditing**, enable the following options:
    - **Single record auditing. Log a record when opened.**
    - **Multiple record auditing. Log all records displayed on an opened page.**
 7. In the command bar, click **Save** to apply the changes.
@@ -237,21 +239,21 @@ The following are some examples of logs created with Activity Logging.
 |a0469f30-078b-419d-be61-b04c9a34121f      |1cad069e-4d22-e811-a953-000d3a732d76          |Lead         |Update         |
 |0975bceb-07c7-4dc2-b621-5a7b245c36a4      |1cad069e-4d22-e811-a953-000d3a732d76          |Lead         |Update         |
 
-## Additional considerations
+## Other considerations
 
-When audit log search in the Microsoft Purview portal is turned on, user and activity from your organization is recorded in the audit log and retained for 90 days. However, your organization might not want to record and retain audit log data. Or you might be using a third-party security information and event management (SIEM) application to access your auditing data. In those cases, a global admin can turn off audit log search in Microsoft 365.
+When audit log search in the Microsoft Purview portal is turned on, user and activity from your organization is recorded in the audit log and retained for 90 days. However, your organization might not want to record and retain audit log data. Or you might be using a third-party security information and event management application to access your auditing data. In those cases, a global admin can turn off audit log search in Microsoft 365.
 
 ## Known issues
 
 - Office has a 3-KB limit for each audit record. Therefore, in some cases a single record from customer engagement apps needs to be split into multiple records in Office. The CorrelationId field can be used to retrieve the set of split records for a given source record. Operations that are likely to require splitting include RetrieveMultiple and ExportToExcel.
-- Some operations need additional processing to retrieve all relevant data. For example, RetrieveMultiple and ExportToExcel are processed to extract the list of records that are retrieved or exported. However, not all relevant operations are yet processed. For example, ExportToWord is currently logged as single operation with no additional details about what was exported.
-- In future releases, logging will disabled for operations that are determined to not be useful based on a review of the logs. For example, some operations result from automated system activity, not user activity.
-- In some record instances, the EntityName value may be marked with Unknown. These records aren't related to any specific entity related operation and came in blank from CRM. They all have entity id of 0000000-0000-0000-0000-000000000000.
+- Some operations need more processing to retrieve all relevant data. For example, RetrieveMultiple and ExportToExcel are processed to extract the list of records that are retrieved or exported. However, not all relevant operations are yet processed. For example, ExportToWord is currently logged as single operation with no other details about what was exported.
+- In future releases, logging is disabled for operations deemed unnecessary based on a review of the logs. For example, some operations originate from automated system activity rather than user actions.
+- In some record instances, the EntityName value may be marked with Unknown. These records aren't related to any specific entity related operation and came in blank from CRM. They all have entity ID of 0000000-0000-0000-0000-000000000000.
 
 ### See also
 [Manage Dataverse auditing](manage-dataverse-auditing.md)<br />
-[Search the audit log in the compliance Center](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance) <br />
-Search the audit log for user activity using [Office 365 Management APIs overview](/office/office-365-management-api/office-365-management-apis-overview)
+[Search the audit log in Microsoft Purview portal](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance) <br />
+[Search the audit log for user activity using Office 365 Management APIs overview](/office/office-365-management-api/office-365-management-apis-overview)
 
 
 
