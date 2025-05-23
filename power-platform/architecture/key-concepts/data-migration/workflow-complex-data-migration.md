@@ -8,12 +8,15 @@ ms.topic: concept-article
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
-ms.date: 05/21/2025
+ms.date: 05/23/2025
 ---
 
 # Suggested workflow for a complex data migration
 
-This article uses a data migration example from Salesforce. Salesforce is a robust cloud-based CRM, but migrating data from it needs careful planning because of its complex data structures, like custom objects, relationships, and unique record IDs. When you migrate from Salesforce, map these elements to Dataverse to keep data integrity and relationships. Separate different lines of business data, and let each business leader decide what to migrate or discard. You can also archive some data and use it from legacy systems if needed. This article covers both approaches because each approach is important for data migration.
+This article provides a suggested workflow for managing large-scale data migrations. Migrating data from a robust cloud-based CRM such as Salesforce requires careful planning due to its complex data structures, including custom objects, relationships, and unique record IDs. It's important to plan both  the technical aspects of the migration, as well as the functional approach. 
+
+- **Technical approach**: Technical steps for data migration, such as extracting, transforming, and loading data into Dataverse, while maintaining data integrity and relationships. Includes error handling, data validation, and performance optimization.
+- **Functional approach**: Functional aspects of data migration, such as data segmentation and archival strategies. Covers the importance of involving business stakeholders in the migration process to ensure that the migrated data meets their needs.
 
 ## Technical approach for data migration
 
@@ -25,23 +28,23 @@ To ensure a successful migration, follow a structured technical approach that in
 
 ### Extract data from source to staging database
 
-For complex data migrations, it’s always recommended to bring data into a staging database (for example, SQL Server), which you can call as source staging database. Also, the staging database represents a snapshot of data at a specific point in time, and business continuity can still happen on the source system without impacting it.
+For complex data migrations, it's recommended to bring data into a staging database (for example, SQL Server). The staging database represents a snapshot of data at a specific point in time, and business continuity continues on the source system without impacting the staging database.
 
-Here are some considerations for bringing data into a staging database.
+Here are some considerations for bringing data into a staging database:
 
-- **Full vs. delta load**: Phasing data into full load vs. delta load becomes possible because you can easily segregate the data in the intermediate database. You can keep the data coming from the source system and auto-generate columns for date and time to keep track of when the data arrived in the staging database. At the time of migration, you can easily determine the delta based on these dates and load only the delta data.
+- **Full vs. delta load**: Phase data as a full load vs. delta load by segregating data in the intermediate database. You can keep the data coming from the source system and auto-generate columns for date and time to keep track of when the data arrived in the staging database. At the time of migration, you can easily determine the delta based on these dates and load only the delta data.
 
 - **Failover mechanism**: Continue after encountering failed records and minimize the loading of subsequent data records. When migrating data, some records may fail due to genuine reasons, such as field length exceeding limits, option set values not matching, or lookup values not existing in the target system. You can continue past these failures, and before the next run, try to resolve as many issues as possible and then rerun the migration.
 
 - **Mapping of fields**: Easily create mapping for optionset text to integer value in Dataverse. In the source systems like Salesforce, the optionset values may come in the form of text, and you can match their text from the Dataverse optionset value text and do a transformation to appropriate value, so that all such transformations are preloaded in the database itself.
 
-- **Data validations**: Run prevalidation queries on the retrieved data to check its integrity. In most cases, if the data is coming from a well-defined SaaS platform like Salesforce, it shouldn’t have integrity problems, such as a contact record referencing an account that doesn’t exist in the account table. However, these issues can occur in practice. When dealing with large datasets, data extraction can take anywhere from a few hours to a few days, and new data is continuously generated in the source system since it remains active. For example, if you extract the account table in one hour and then retrieve the contact table the next hour, new contact and account combinations may have been created in the meantime. As a result, you might retrieve a contact for which you didn’t retrieve the corresponding account record. A staging database can help in such scenarios by allowing you to easily eliminate such records beforehand. In the next extraction, based on the start date and time, you can retrieve all records that are fully integrated.
+- **Data validations**: Run prevalidation queries on the retrieved data to check its integrity. In most cases, if the data is coming from a well-defined SaaS platform like Salesforce, it shouldn't have integrity problems, such as a contact record referencing an account that doesn't exist in the account table. However, these issues can occur in practice. When dealing with large datasets, data extraction can take anywhere from a few hours to a few days, and new data is continuously generated in the source system since it remains active. For example, if you extract the account table in one hour and then retrieve the contact table the next hour, new contact and account combinations may have been created in the meantime. As a result, you might retrieve a contact without retrieving the corresponding account record. A staging database can help in such scenarios by allowing you to easily eliminate such records beforehand. In the next extraction, based on the start date and time, you can retrieve all records that are fully integrated.
 
-- **Data visualization**: Visualization of all data in the database is easier when it comes to taking record counts, summing opportunity values, or using other numeric or financial fields to cross-audit the records.
+- **Data visualization**: Visualization of all data in the database is easier when it comes to taking record counts, summing opportunity values, or using any other numeric or financial fields to cross-audit the records.
 
 ### Transform data into target staging database
 
-After extracting data from source system like Salesforce, it’s crucial to transform data into a database which is equivalent to tables in Dataverse, and which has the values which can be directly updated into Dataverse. This form of tables you can call as target staging database. You can think of following transformations for this.
+After you extract data from the source system, transform it into a database with tables that match Dataverse tables and contain values you can update directly in Dataverse. This database is called the target staging database. Consider the following transformations for this process:
 
 - **Create mappings from source table column names to target** (Dataverse) column names and write scripts to send data from source table to target table. In some cases, data from multiple tables may come to a single table. You need to write join queries to bring the combined data.
 
@@ -60,9 +63,7 @@ After extracting data from source system like Salesforce, it’s crucial to tran
 
   You can write below query:
 
-  ```
-  Update C.\<OptionsetValue\> = M.\<TargetValue\> FROM Contact C JOIN OptionsetMapping M ON C.OptionsetText = M.TargetText AND M.TargetTableName = 'Contact'
-  ```
+  `Update C.\<OptionsetValue\> = M.\<TargetValue\> FROM Contact C JOIN OptionsetMapping M ON C.OptionsetText = M.TargetText AND M.TargetTableName = 'Contact'`
 
 - **Do not generate GUIDs for Dataverse**: Dataverse uses GUID as primary key. You can either supply a GUID during insert or let Dataverse generate it. You must not generate the GUIDs, if the source system isn't Dataverse. The reason is whatever algorithms you use for generating GUIDs, it might not be same which Dataverse uses internally to generate the GUIDs, and random GUIDs cause a heavy page fragmentation in Dataverse table which will reduce the performance of those tables and that won't be a good scenario. So, you should always let Dataverse generate the GUIDs, as they're coming from another Dataverse instance.
 
@@ -72,11 +73,11 @@ After extracting data from source system like Salesforce, it’s crucial to tran
 
 - **Additional fields consideration**: When you create the tables equivalent to Dataverse schema, you should consider following additional tables and fields.
 
-  - **DM_CreatedDateTime**: This field should be auto-populated with the current date and time. This helps in resolving conflicts or issues, especially when someone else is supplying the data from the source, as you can determine when each row was received. It also helps in deciding whether data should be part of a full load or an incremental delta load. You won’t add this field for import, but it would still help us to segregate data that came in different loads.
+  - **DM_CreatedDateTime**: This field should be auto-populated with the current date and time. This helps in resolving conflicts or issues, especially when someone else is supplying the data from the source, as you can determine when each row was received. It also helps in deciding whether data should be part of a full load or an incremental delta load. You won't add this field for import, but it would still help us to segregate data that came in different loads.
 
-  - **Action flag**: You can keep this as a one-character field and define characters such as ‘I’, ‘U’, and ‘D’ to indicate whether a particular record should be inserted, updated, or deleted. Using queries, you can then process records easily based on these values.
+  - **Action flag**: You can keep this as a one-character field and define characters such as 'I', 'U', and 'D' to indicate whether a particular record should be inserted, updated, or deleted. Using queries, you can then process records easily based on these values.
 
-  - **Processing flag**: This field can be set to ‘P’, ‘U’, ‘E’, or ‘S’, representing Processed, Unprocessed, Error, or Success, to indicate the state of the record. You should update this field after the complete data load run based on the success table, not during the per-page data load.
+  - **Processing flag**: This field can be set to 'P', 'U', 'E', or 'S', representing Processed, Unprocessed, Error, or Success, to indicate the state of the record. You should update this field after the complete data load run based on the success table, not during the per-page data load.
 
   - **Unique column**: You should keep one unique column depending on the source data. For example, Salesforce has a Salesforce ID in every table, which is a hexadecimal unique ID. You can create a similar schema in all migration-eligible Dataverse tables to help map rows from Salesforce to Dataverse. If there is no clearly defined unique column in the source tables, you can use the out-of-the-box importsequencenumber column.
 
@@ -110,7 +111,7 @@ sequence in most of the cases.
 ### Load data into Dataverse
 
 Now you can start the data loading into Dataverse. There are many tools available in the market which can be utilized, like SDK configuration
-migration tool, Azure Data Factory, Kingsway Soft, Scribe, Xrm Toolbox’s Data Transporter etc. Depending on size you can choose the tool wisely.
+migration tool, Azure Data Factory, Scribe, Xrm Toolbox's Data Transporter etc. Depending on size you can choose the tool wisely.
 But with almost every tool you should consider following things:
 
 - **Plan to update lookups for cyclic dependencies**: In cases where
@@ -150,7 +151,7 @@ you get best performance. Here are some of the considerations which are recommen
    then batch size of 200-300 and the max parallel threads 30 give optimal speed.
 
 - For simpler tables with no lookups or few lookups, small
-   batch sizes like 10 or less and max parallel threads 50 also don’t
+   batch sizes like 10 or less and max parallel threads 50 also don't
    create exception in no. of concurrent requests and exceptionally
    speed up the migration.
 
@@ -194,9 +195,9 @@ you get best performance. Here are some of the considerations which are recommen
 
    1. **Do not ignore errors for the end**: If there are errors in a load, you shouldn't just ignore them and move on, because this creates a ripple effect. For example, one account insertion failure may cause ten contact record insertions to fail, and those contact records may, in turn, cause failures in many other table records. Depending on the error type—such as string length issues, option set mismatches, lookup values not available, or owners not available in the organization—you should always have a default strategy for each type of error. You can reduce string lengths to insert the records, use a default option set value, or leave a lookup blank. This way, you get the GUID of the record being inserted and the ripple effect won't occur. You can keep track of these additional steps somewhere, perhaps in a separate column in the main table itself.
 
-   1. **Delay loading status to the end**: You can update only the active status during record insertion, but for inactive records or any other custom state code, the status code needs to be updated later. For custom tables, you can immediately update the status code and state code after insertion. However, for special tables where state and status code play a crucial role—for example, case closure, opportunity closure, or lead qualification—you should delay the status update until the very end, even after data validation. This is because once cases or opportunities are closed, it’s impossible to update them until you reopen them, which is a time-consuming process. If you miss any column updates, it also becomes a problem. Therefore, you should always delay such complex table status updates. Additionally, many tools might provide only CRUD operations and not these complex operations as part of their toolkit, so you might have to develop code-based tools for CaseClosure, OpportunityClose requests, or leadQualification requests.
+   1. **Delay loading status to the end**: You can update only the active status during record insertion, but for inactive records or any other custom state code, the status code needs to be updated later. For custom tables, you can immediately update the status code and state code after insertion. However, for special tables where state and status code play a crucial role—for example, case closure, opportunity closure, or lead qualification—you should delay the status update until the very end, even after data validation. This is because once cases or opportunities are closed, it's impossible to update them until you reopen them, which is a time-consuming process. If you miss any column updates, it also becomes a problem. Therefore, you should always delay such complex table status updates. Additionally, many tools might provide only CRUD operations and not these complex operations as part of their toolkit, so you might have to develop code-based tools for CaseClosure, OpportunityClose requests, or leadQualification requests.
 
-   1. **Setting the right owner during insert**: When you move from Salesforce or any other CRM system to Dataverse, you should try to set the correct owner during the insertion itself because, in Dataverse, both business unit (BU) level and user level security are driven by the owner’s BU. Therefore, setting the correct business unit for every user is also important.
+   1. **Setting the right owner during insert**: When you move from Salesforce or any other CRM system to Dataverse, you should try to set the correct owner during the insertion itself because, in Dataverse, both business unit (BU) level and user level security are driven by the owner's BU. Therefore, setting the correct business unit for every user is also important.
 
 Dataverse allows you to create stub users, and by default, they receive the salesperson security role. This is a fixed role, and you must not update the name or spelling of this role, as doing so might prevent the creation of stub users. There are various reasons why you might need to create stub users instead of licensed users. For example, you may not want to pay for licensing during large migrations that could take months, or many owners from previous source systems may have left the organization or changed departments, making it impossible to license them.
 
@@ -210,16 +211,16 @@ Another important consideration is setting the correct business unit for these s
 
 - A user with the salesperson security role and minimal read privileges on all data migration-eligible tables can be the owner of any record, even if the user is disabled.
 
-  - **Setting the currency exchange rate during insertion**: When you move from Salesforce or any other CRM system to Dataverse, you should try to set the correct currency exchange rates for all money fields. In Dataverse, there are no historical currency exchange rates, so you can write a pre-validation plugin and override the exchange rate property in a record to apply the specific currency exchange rates. If you don’t do this, it becomes difficult to see the same financial state across geographies in both the source and target systems.
+  - **Setting the currency exchange rate during insertion**: When you move from Salesforce or any other CRM system to Dataverse, you should try to set the correct currency exchange rates for all money fields. In Dataverse, there are no historical currency exchange rates, so you can write a pre-validation plugin and override the exchange rate property in a record to apply the specific currency exchange rates. If you don't do this, it becomes difficult to see the same financial state across geographies in both the source and target systems.
 
 ### Post data load into Dataverse
 
 After the data load has been completed for any table, you should immediately check for any errors, try to rectify them, and rerun those records to minimize the ripple effect. You must also bring the GUIDs of successful records into the main table so they can be used for lookup resolution in subsequent data loads.
 
-- **Update main table from success table**: You must update the record GUIDs and the processing flag in the main table. This ensures that during a rerun or delta run, you can easily avoid records marked as ‘P’ (Processed) in the main table and run the process only for ‘E’ (Errored) or ‘U’ (Unprocessed) records. Also, bringing the GUID into the main table can serve as a preload for subsequent table lookup resolutions.
+- **Update main table from success table**: You must update the record GUIDs and the processing flag in the main table. This ensures that during a rerun or delta run, you can easily avoid records marked as 'P' (Processed) in the main table and run the process only for 'E' (Errored) or 'U' (Unprocessed) records. Also, bringing the GUID into the main table can serve as a preload for subsequent table lookup resolutions.
 
 - **Retrial of errored records**: To minimize the rework in data
-  migration it’s recommended to get some alternative way to rectify the
+  migration it's recommended to get some alternative way to rectify the
   error and get at-least placeholder record to get the GUID, which can
   be referred as lookup resolution in the subsequent tables. Retrial
   failed records could be:
