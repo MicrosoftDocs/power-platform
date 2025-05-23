@@ -21,13 +21,22 @@ contributors:
 
 Automated processes periodically identify, disable, and eventually delete inactive Power Platform environments to optimize storage capacity. An environment may be deleted because it's in a tenant with an expired subscription or because it's not being used. In either case, there are actions you can take to prevent the environment from being deleted.
 
+> [!Note]
+> This feature is in the process of rolling out and might not be available in your region yet.
+
 ## View the status of your environments
 
+# [New admin center](#tab/new)
 1. Sign in as an admin to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-2. Select **Environments**.
-3. Look for environments with an **Inactive** status.
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. Look for environments with an **Inactive** status.
 
-    :::image type="content" source="media/inactive-environment.png" alt-text="Screenshot of a list of environments in the Power Platform admin center, with an inactive environment highlighted.":::
+# [Classic admin center](#tab/classic)
+1. Sign in as an admin to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Environments**.
+1. Look for environments with an **Inactive** status.
+---
 
 ## Environments in a tenant with an expired subscription
 
@@ -121,25 +130,31 @@ By default, administrators have 15 days to re-enable an environment. If the envi
 
 ### Trigger activity in an inactive environment
 
+# [Classic admin center](#tab/classic)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-2. Select **Environments**, and then select the inactive environment.
-3. On the **Environment** page, select **Trigger environment activity**.
+1. Select **Environments**, and then select the inactive environment.
+1. On the **Environment** page, select **Trigger environment activity**.
+---
 
 ### Re-enable a disabled environment
 
+# [Classic admin center](#tab/classic)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-2. Select **Environments**, and then select the disabled environment.
-3. On the **Environment** page, select **Re-enable environment**.
+1. Select **Environments**, and then select the disabled environment.
+1. On the **Environment** page, select **Re-enable environment**.
+---
 
 ### Recover a deleted environment
 
+# [Classic admin center](#tab/classic)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-2. Select **Environments**, and then select **Recover deleted environments**.
-3. Select an environment to recover, and then select **Recover**.
+1. Select **Environments**, and then select **Recover deleted environments**.
+1. Select an environment to recover, and then select **Recover**.
+---
 
 [Learn more about recovering an environment](recover-environment.md).
 
-### See also
+### Related content
 
 [Back up and restore environments](backup-restore-environments.md)  
 [Automatic deletion of inactive Microsoft Dataverse for Teams environments](inactive-teams-environment.md)  
