@@ -131,6 +131,8 @@ By default, administrators have 15 days to re-enable an environment. If the envi
 
 ### Trigger activity in an inactive environment
 
+Once environment administrators receive notification that an environment will be cleaned up, environment admins can trigger activity on the environment to mark the environment as active and prevent the cleanup action. If an environment has already been disabled, the trigger activity button will not show up, the only option for the customer is to Re-enable the environment before deletion. 
+
 # [New admin center](#tab/new)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. In the navigation pane, select **Manage**.
