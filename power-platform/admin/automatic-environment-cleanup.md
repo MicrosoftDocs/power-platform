@@ -111,7 +111,7 @@ Here are some examples of the types of actions that are considered as activity:
 > As of April 20, 2025, Center of Excellence (CoE) toolkit operations&mdash;which query data from multiple Dataverse organizations in a customer tenant&mdash;are no longer considered as activity by developer organizations. Developer organizations, which were previously only kept active by CoE queries, become inactive unless there's other activity against those developer organizations.
 
 ### View last user activity of environment
-Environment admins can see when an environment was last used by checking the **Last Activity** column in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/). The activity for each environment is updated once a day.
+Environment admins can see when an environment was last used by checking the **Last activity** column in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/). The activity for each environment is updated once a day.
 
 ### [New admin center](#tab/new)
 1. Sign in as an admin to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
