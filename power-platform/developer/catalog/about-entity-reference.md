@@ -1,10 +1,10 @@
 ---
 title: "Catalog in Power Platform table/entity reference | Microsoft Docs"
 description: "Use this reference to understand the available operations that can be performed for specific tables, the default columns/attributes of each table/entity and the relationships between tables in Catalog in Power Platform"
-author: jdaly
+author: isaacwinoto
+ms.author: isaacwinoto
 ms.topic: reference
 ms.date: 11/05/2024
-ms.author: JimDaly
 ms.reviewer: jdaly
 search.audienceType: 
   - developer
