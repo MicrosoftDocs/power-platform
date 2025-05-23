@@ -45,7 +45,7 @@ A cleanup mechanism in Power Platform automatically removes environments that ar
 > You can't turn off this cleanup mechanism. However, you can review the last activity date for environments in the Power Platform admin center. 
 
 ## Developer environments
-A cleanup mechanism in Power Platform automatically removes developer environments that aren't being used based on the following schedule. After 30 days of inactivity, environments are automatically disabled. If, after 15 days, the [environment is not re-enabled](#re-enable-a-disabled-environment), the environment is deleted. You have seven days to [recover the environment](recover-environment.md) once it has been deleted.
+A cleanup mechanism in Power Platform automatically removes developer environments that aren't being used based on the following schedule. After 30 days of inactivity, environments are automatically disabled. If, after 15 days, the [environment isn't re-enabled](#re-enable-a-disabled-environment), the environment is deleted. You have seven days to [recover the environment](recover-environment.md) once it has been deleted.
 
 As part of this cleanup process, you can expect the following:
 - Admins receive email notifications which warn of upcoming disablement or deletion.
@@ -129,7 +129,7 @@ By default, administrators have 15 days to re-enable an environment. If the envi
 
 ### Trigger activity in an inactive environment
 
-Once environment administrators receive notification that an environment will be cleaned up, environment admins can trigger activity on the environment to indicate that the environment is active and prevent the cleanup action. If an environment has already been disabled, the **Trigger environment activity** button will not be displayed. In this situation, the only option for the customer is to re-enable the environment before deletion. 
+Once environment administrators receive notification that an environment will be cleaned up, environment admins can trigger activity on the environment to indicate that the environment is active and prevent the cleanup action. If an environment has already been disabled, the **Trigger environment activity** button won't be displayed. In this situation, the only option for the customer is to re-enable the environment before deletion. 
 
 # [New admin center](#tab/new)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
