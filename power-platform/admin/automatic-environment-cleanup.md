@@ -21,20 +21,6 @@ contributors:
 
 Automated processes periodically identify, disable, and eventually delete inactive Power Platform environments to optimize storage capacity. An environment may be deleted because it's in a tenant with an expired subscription or because it's not being used. In either case, there are actions you can take to prevent the environment from being deleted.
 
-## View the status of your environments
-
-# [New admin center](#tab/new)
-1. Sign in as an admin to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Manage**.
-1. In the **Manage** pane, select **Environments**.
-1. Look for environments with an **Inactive** status.
-
-# [Classic admin center](#tab/classic)
-1. Sign in as an admin to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Environments**.
-1. Look for environments with an **Inactive** status.
----
-
 ## Environments in a tenant with an expired subscription
 
 If the subscription for a tenant has expired or been deprovisioned, all the environments in the tenant are marked for deactivation and eventual deletion. When an environment is marked for cleanup, the system sends an email notification to all admins in your organization 14 days, 7 days, and 1 day before the environment is disabled. If no action is taken, the environment is deleted 10 days after the final email is sent.
@@ -122,7 +108,22 @@ Here are some examples of the types of actions that are considered as activity:
 - **Admin activity**: Trigger an environment operation such as copy, restore, or reset.
 
 > [!NOTE]
-> As of April 20, 2025, Center of Excellence (CoE) toolkit operations&mdash;which query data from multiple Dataverse organizations in a customer tenant&mdash;are no longer considered as activity by developer organizations. Developer organizations, which were previously only kept active by CoE queries, become inactive unless there's other activity against those developer organizations. 
+> As of April 20, 2025, Center of Excellence (CoE) toolkit operations&mdash;which query data from multiple Dataverse organizations in a customer tenant&mdash;are no longer considered as activity by developer organizations. Developer organizations, which were previously only kept active by CoE queries, become inactive unless there's other activity against those developer organizations.
+
+### View last user activity of environment
+Environment admins can see when an environment was last used by checking the **Last Activity** column in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/). The activity for each environment is updated once a day.
+
+### [New admin center](#tab/new)
+1. Sign in as an admin to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. See **Last Activity** column for environment in question.
+
+### [Classic admin center](#tab/classic)
+1. Sign in as an admin to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Environments**.
+1. See **Last Activity** column for environment in question.
+---
 
 ## Trigger activity, re-enable, and recover an environment
 
