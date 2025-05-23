@@ -8,7 +8,7 @@ ms.topic: overview
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
-ms.date: 05/22/2025
+ms.date: 05/23/2025
 ms.custom:
   - ai-gen-docs-bap
   - ai-gen-title
@@ -17,9 +17,9 @@ ms.custom:
 
 # CRM migration to Dataverse: Key insights and best practices
 
-Data migration is the process by which data is transferred from one system to another. This article provides key insights and best practices to help you plan and execute a successful migration from an external customer relationship management (CRM) system to Microsoft Dataverse.
+The migration of data from external customer relationship management (CRM) systems into Microsoft Dataverse is complex. Challenges include differences in data schema, volume, complexity, and dependencies in the source systems. Ensuring data integrity, consistency, and security during the migration process is critical to maintain business continuity.
 
-The migration of data from external CRM systems like Salesforce or Siebel into Dataverse is complex. Challenges include differences in data schema, volume, complexity, and dependencies in the source systems. Ensuring data integrity, consistency, and security during the migration process is critical to maintain business continuity.
+This article provides key insights and best practices to help you plan and execute a successful migration from external CRM systems like Salesforce or Siebel to Microsoft Dataverse.
 
 Common issues during migration include:
 
