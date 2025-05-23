@@ -25,7 +25,7 @@ To ensure a successful migration, follow a structured technical approach that in
 
 ### Extract data from source to staging database
 
-For complex data migrations, it’s always recommended to bring data into a staging database (for example, SQL Server), which we can call as source staging database. Also, the staging database represents a snapshot of data at a specific point in time, and business continuity can still happen on the source system without impacting it.
+For complex data migrations, it’s always recommended to bring data into a staging database (for example, SQL Server), which you can call as source staging database. Also, the staging database represents a snapshot of data at a specific point in time, and business continuity can still happen on the source system without impacting it.
 
 Here are some considerations for bringing data into a staging database.
 
@@ -33,7 +33,7 @@ Here are some considerations for bringing data into a staging database.
 
 - **Failover mechanism**: Continue after encountering failed records and minimize the loading of subsequent data records. When migrating data, some records may fail due to genuine reasons, such as field length exceeding limits, option set values not matching, or lookup values not existing in the target system. You can continue past these failures, and before the next run, try to resolve as many issues as possible and then rerun the migration.
 
-- **Mapping of fields**: Easily create mapping for optionset text to integer value in Dataverse. In the source systems like Salesforce, the optionset values may come in the form of text, and you can match their text from our Dataverse optionset value text and do a transformation to appropriate value, so that all such transformations are preloaded in the database itself.
+- **Mapping of fields**: Easily create mapping for optionset text to integer value in Dataverse. In the source systems like Salesforce, the optionset values may come in the form of text, and you can match their text from the Dataverse optionset value text and do a transformation to appropriate value, so that all such transformations are preloaded in the database itself.
 
 - **Data validations**: Run prevalidation queries on the retrieved data to check its integrity. In most cases, if the data is coming from a well-defined SaaS platform like Salesforce, it shouldn’t have integrity problems, such as a contact record referencing an account that doesn’t exist in the account table. However, these issues can occur in practice. When dealing with large datasets, data extraction can take anywhere from a few hours to a few days, and new data is continuously generated in the source system since it remains active. For example, if you extract the account table in one hour and then retrieve the contact table the next hour, new contact and account combinations may have been created in the meantime. As a result, you might retrieve a contact for which you didn’t retrieve the corresponding account record. A staging database can help in such scenarios by allowing you to easily eliminate such records beforehand. In the next extraction, based on the start date and time, you can retrieve all records that are fully integrated.
 
@@ -41,11 +41,11 @@ Here are some considerations for bringing data into a staging database.
 
 ### Transform data into target staging database
 
-After extracting data from source system like Salesforce, it’s crucial to transform data into a database which is equivalent to tables in Dataverse, and which has the values which can be directly updated into Dataverse. This form of tables we call as target staging database. You can think of following transformations for this.
+After extracting data from source system like Salesforce, it’s crucial to transform data into a database which is equivalent to tables in Dataverse, and which has the values which can be directly updated into Dataverse. This form of tables you can call as target staging database. You can think of following transformations for this.
 
 - **Create mappings from source table column names to target** (Dataverse) column names and write scripts to send data from source table to target table. In some cases, data from multiple tables may come to a single table. You need to write join queries to bring the combined data.
 
-- **Option set mapping for transformation**: For optionset values, if source system has those text values, you can write the mapping from text to optionset value in Dataverse and write queries to resolve them. We recommend creating a table like this:
+- **Option set mapping for transformation**: For optionset values, if source system has those text values, you can write the mapping from text to optionset value in Dataverse and write queries to resolve them. Creating a table like this is recomended:
 
   OptionSetMapping:
 
@@ -76,7 +76,7 @@ After extracting data from source system like Salesforce, it’s crucial to tran
 
   - **Action flag**: You can keep this as a one-character field and define characters such as ‘I’, ‘U’, and ‘D’ to indicate whether a particular record should be inserted, updated, or deleted. Using queries, you can then process records easily based on these values.
 
-  - **Processing flag**: This field can be set to ‘P’, ‘U’, ‘E’, or ‘S’, representing Processed, Unprocessed, Error, or Success, to indicate the state of the record. We should update this field after the complete data load run based on the Success Table, not during the per-page data load.
+  - **Processing flag**: This field can be set to ‘P’, ‘U’, ‘E’, or ‘S’, representing Processed, Unprocessed, Error, or Success, to indicate the state of the record. You should update this field after the complete data load run based on the success table, not during the per-page data load.
 
   - **Unique column**: You should keep one unique column depending on the source data. For example, Salesforce has a Salesforce ID in every table, which is a hexadecimal unique ID. You can create a similar schema in all migration-eligible Dataverse tables to help map rows from Salesforce to Dataverse. If there is no clearly defined unique column in the source tables, you can use the out-of-the-box importsequencenumber column.
 
@@ -84,7 +84,7 @@ After extracting data from source system like Salesforce, it’s crucial to tran
 
 ### Sequence tables and pre-load lookups
 
-Now next important task after static transformations is to sequence the tables in such a way that you have minimum cyclic dependencies (when two or more tables have lookup to each other in such a way that we can't import a single table without having reference from other table). You can do this easily by this way.
+Now next important task after static transformations is to sequence the tables in such a way that you have minimum cyclic dependencies (when two or more tables have lookup to each other in such a way that you can't import a single table without having reference from other table). You can do this easily by this way.
 
 - List down all the tables which are eligible for data migration
 
@@ -110,7 +110,7 @@ sequence in most of the cases.
 ### Load data into Dataverse
 
 Now you can start the data loading into Dataverse. There are many tools available in the market which can be utilized, like SDK configuration
-migration tool, Azure Data Factory, Kingsway Soft, Scribe, Xrm Toolbox’s Data Transporter etc. Depending on size you can choose our tool wisely.
+migration tool, Azure Data Factory, Kingsway Soft, Scribe, Xrm Toolbox’s Data Transporter etc. Depending on size you can choose the tool wisely.
 But with almost every tool you should consider following things:
 
 - **Plan to update lookups for cyclic dependencies**: In cases where
@@ -145,7 +145,7 @@ you get best performance. Here are some of the considerations which are recommen
 
 - For out of the box tables like contact, account, lead, etc. no matter
    what you do, speed of migration would be comparatively lower. The reason is there are many platform jobs and plugins which run for
-   these records, but we have seen if we aren't using too many lookups
+   these records, but if you aren't using too many lookups
    during insertion like up to 10 lookup fields and total 50-70 columns
    then batch size of 200-300 and the max parallel threads 30 give optimal speed.
 
@@ -164,7 +164,7 @@ you get best performance. Here are some of the considerations which are recommen
    migration will be low.
 
 - Another important factor for migration speed is data centre
-   location. You should run our data migration from a VM in the same
+   location. You should run the data migration from a VM in the same
    region that speed up the whole operation exponentially. To find the
    data center for your Dataverse environment, you can follow these
    steps:
