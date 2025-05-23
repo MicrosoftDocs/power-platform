@@ -117,12 +117,12 @@ Environment admins can see when an environment was last used by checking the **L
 1. Sign in as an admin to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
-1. See **Last Activity** column for environment in question.
+1. See **Last activity** column for environment in question.
 
 ### [Classic admin center](#tab/classic)
 1. Sign in as an admin to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Environments**.
-1. See **Last Activity** column for environment in question.
+1. See **Last activity** column for environment in question.
 ---
 
 ## Trigger activity, re-enable, and recover an environment
