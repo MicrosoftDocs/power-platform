@@ -8,7 +8,7 @@ ms.topic: concept-article
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
-ms.date: 05/21/2025
+ms.date: 05/23/2025
 ms.custom:
   - ai-gen-docs-bap
   - ai-gen-title
@@ -18,7 +18,7 @@ ms.custom:
 
 # Data migration planning for go-live
 
-Many organizations struggle to plan the cutover for going live after complex data migration. Careful cutover planning helps avoid affecting the business. Here are some important things to consider when you plan the process.
+Many organizations struggle to plan the cutover for going live after complex data migration. Careful cutover planning helps avoid negative impact to the business. Here are some important things to consider when you plan the process.
 
 ## Assess the duration for migration
 
@@ -26,12 +26,12 @@ Developers often build data migration jobs for development or UAT (user acceptan
 
 ## Plan for full or delta load
 
-If full data migration takes too long, plan it carefully. Even with a good migration speed of 100–200 records per second, about 1.2 million seconds make up two weeks. A job running 24x7 migrates about 120 million records in two weeks, but this still affects the business during that time. In most cases, this approach isn't practical. At 50 records per second, migrating a similar volume takes about four weeks, which is a long time.
+If full data migration will take a long time, plan carefully. Even at a good migration speed of 100–200 records per second, migrating 120 million records takes about two weeks if the job runs all day. This process affects the business during that time, so it's usually not practical. At 50 records per second, migrating a similar volume takes about four weeks, which is a long time.
 
-Run a full data migration about a month before go live to fix this problem. Then, migrate the delta data each week. This approach lets you estimate the time needed to load a week's delta data and plan go live accurately. Business users also get time to test the migrated data and compare source system records to target system records.
+To avoid this situation, run a full data migration about a month before go-live. Then, migrate the delta data each week. This approach lets you estimate the time needed to load a week's delta data and plan go-live accurately. Business users also have time to test the migrated data and compare source system records to target system records.
 
-If data migration takes more than two or three days, plan for both full and delta data loads. This helps ensure business continuity.
+If data migration takes more than two or three days, plan for both full and delta data loads. This approach helps ensure business continuity.
 
 ## Provide clear communication
 
-Do the final delta data migration after you freeze the source and target systems for any real-time transactions. This approach gives you a clear snapshot of data and lets you switch from the source system to the target system. Plan this communication and notify the team in advance. To minimize downtime, schedule it during nonbusiness hours or on weekends.
+Do the final delta data migration after you freeze the source and target systems for any real-time transactions. This approach gives you a clear snapshot of data and lets you switch from the source system to the target system. Plan communication to the team and notify them in advance. To minimize disruption, schedule downtime during non-business hours or on weekends.
