@@ -70,17 +70,17 @@ A warning message appears on the **Environments** list page and **Environment** 
 ## Default environment 
 
 A cleanup mechanism in Power Platform automatically removes Default environments based on the following criteria:
+- Default environments without flows are deleted after 120 days of inactivity.
+- Default environments with flows are deleted after 402 days of inactivity to allow annual and seasonal activity.
 - Tenants with [premium licenses](pricing-billing-skus.md) are excluded from the cleanup.
 - Default environments with Microsoft 365 agents or Microsoft Planner are excluded from deletion.
 - Admins receive two warning notifications before the Default environment is deleted due to inactivity. Default environments are deleted 30 days after the first notification.
-- Default environments with flows are deleted after 402 days of inactivity to allow annual and seasonal activity.
-- Default environments without flows are deleted after 120 days of inactivity.
 
 As part of this cleanup process, a new replacement Default environment without Dataverse is created, with an option to add Dataverse later. The original Default environment is deleted, but can be recovered as a production environment within seven days. [Any activity triggered](#trigger-activity-in-an-inactive-environment) on the environment resets the inactivity period.
 
 ### Timeline for unused Default environments
 
-The environment's administrators are notified by email according to the schedule described in the following table.
+The environment's administrators are notified by email according to the following schedule:
 
 | Default environment with Flows | Default environment without Flows | What to expect |
 | --- | --- | -- |
