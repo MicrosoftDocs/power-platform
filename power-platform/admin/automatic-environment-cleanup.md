@@ -21,9 +21,6 @@ contributors:
 
 Automated processes periodically identify, disable, and eventually delete inactive Power Platform environments to optimize storage capacity. An environment may be deleted because it's in a tenant with an expired subscription or because it's not being used. In either case, there are actions you can take to prevent the environment from being deleted.
 
-> [!Note]
-> This feature is in the process of rolling out and might not be available in your region yet.
-
 ## View the status of your environments
 
 # [New admin center](#tab/new)
@@ -108,6 +105,9 @@ The environment's administrators are notified by email according to the schedule
 | 402 days with no [user activity](#definition-of-user-activity) | 120 days with no [user activity](#definition-of-user-activity) | The environment is deleted, a new Default environment without Dataverse is created for the tenant. An email notice is sent stating that the environment has been deleted. |
 
 A warning message appears on the **Environments** list page and **Environment** page when the Default environment is within 30 days of deletion.
+
+> [!Note]
+> Default environment cleanup is in the process of rolling out and might not be available in your region yet.
 
 ### Definition of user activity
 
