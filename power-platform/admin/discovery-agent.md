@@ -1,5 +1,5 @@
 ---
-title: Search with the discovery agent (preview)
+title: Search with the discovery agent 
 description: Learn how to use the discovery agent in the Power Platform admin center.
 ms.subservice: admin
 ms.component: pa-admin
@@ -14,10 +14,7 @@ search.audienceType:
 
 ---
 
-# Search with the discovery agent (preview)
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner.md)]
+# Search with the discovery agent
 
 The discovery agent is an advanced global search tool integrated into the Power Platform admin center. It's designed to enhance user navigation within the admin center by leveraging natural language search capabilities. This tool allows users to quickly and efficiently locate information, settings, and features without needing to know their exact location or name. By providing accurate and context-relevant search results, the discovery agent helps improve overall productivity and simplifies the search process.
 
@@ -30,9 +27,7 @@ Use discovery agent to:
 
 By integrating the discovery agent, the Power Platform admin center delivers a streamlined and intuitive search experience, empowering users to focus on their tasks more effectively.
 
-The Discovery Agent is integrated into the Power Platform admin center and is available globally.
-
-[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
+The discovery agent is integrated into the Power Platform admin center and is available globally.
 
 ## Discovery agent features
 
