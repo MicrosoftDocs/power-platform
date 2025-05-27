@@ -132,6 +132,23 @@ Used to define settings for the tests in the test plan.
 |`powerFxTestTypes`|`name` `value` pair|Optional. A list of type name and Power Fx type definitions. See [powerFxTestTypes example](#powerfxtesttypes-example)|
 | `testFunctions` | `description` `code` pair |Optional. A list of description and Power Fx function definitions. See [testFunctions example](#testfunctions-example)|
 
+### Preview features
+Features that are in evaluation phase, where they become available in the official Power Platform CLI (`pac`) release with explicit opt-in:
+- Features where providers are explicitely opt-in
+- Features are accessible through the `Preview` function prefix in Power Fx
+- Functionality must be explicitly enabled in test settings:
+
+```yaml
+testSettings:
+  extensionModules:
+    enable: true
+    allowPowerFxNamespaces:
+    - Preview
+```
+
+- Features in this phase receive more extensive testing but might still evolve based on feedback
+- Documentation includes the Preview designation to indicate potential future changes
+
 ### Region and language considerations
 
 Test Engine supports various language and regional settings such as decimal and list separators. The `testSettings.locale` property controls these behaviors. For more information, see [Global Support in Microsoft Power Fx](../power-fx/global.md).
