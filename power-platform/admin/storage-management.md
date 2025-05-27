@@ -121,6 +121,87 @@ Shared & Integrated Storage Scenarios
       - OneLake (Fabric-based analytics)
       - Synapse Link (custom lake analytics)
 
+## How your data grows over time
+As organizations scale their use of Microsoft Dataverse and the Dynamics 365 Finance & Operations (F&O) Platform, data growth becomes both a sign of success and a strategic challenge. What begins as a lean, transactional dataset can quickly evolve into a complex, multi-layered data estate. This section explores five key drivers of data growth and their implications for storage, performance, and governance.
+
+### Enabling data warehousing on Operational data[RP6.1][RP6.2]
+To unlock insights from operational systems, many organizations enable Azure Synapse Link, OneLake, or Data Export to replicate data from Dataverse and F&O into analytical system. While this supports advanced reporting and AI workloads, it also introduces:
+
+- **Redundant storage** across operational and analytical layers.
+Data is often duplicated between the operational and analytical environments. This redundancy increases overall storage consumption and may lead to higher costs—especially if historical data is retained indefinitely in both systems.
+- **Schema duplication** and versioning overhead.
+To maintain consistency between systems, organizations must replicate schema changes (e.g., new fields, renamed columns) across both operational and analytical layers. This adds complexity to data governance and increases the risk of schema drift, which can break downstream reports or models.
+- **Increased retention** of historical data for trend analysis.
+Analytical systems typically retain data for longer periods to support trend analysis, forecasting, and regulatory reporting. While valuable, this long-term retention can lead to bloated datasets if not managed with proper archival and tiering strategies.
+
+“Data warehousing is essential for analytics, but without lifecycle policies, it can double or triple your storage footprint.”
+
+Enabling Search on the data[RP7.1][RP7.2]
+Features like Dataverse Search, Copilot Indexing, and Relevance Search require indexing large volumes of structured and unstructured data. These indexes:
+•	Consume log and database storage.
+Search indexes are stored in both log and database storage. As more tables and fields are marked as searchable, the index size grows proportionally. This can significantly impact overall storage usage—especially in environments with large volumes of records or frequent schema changes.
+•	Persist even for unused or deprecated tables.
+Even when certain tables are deprecated or no longer actively used, their associated search indexes may persist unless explicitly removed. This leads to unnecessary storage consumption and can complicate capacity planning.
+•	Are often duplicated across environments (e.g., dev, test, prod).
+Search indexes are typically replicated across development, test, and production environments. While this ensures consistent search behaviour, it also multiplies the storage footprint—particularly when environments are cloned or refreshed frequently.[JA8.1]
+“Search improves usability and AI readiness, but index bloat is a silent contributor to storage overages.”
+
+Enabling logging on the data[RP9.1][RP9.2]
+Audit logs, plugin trace logs, and telemetry are critical for compliance, debugging, and monitoring. However:
+•	Log storage grows linearly with usage and user count.
+Log data grows proportionally with:
+•	The number of users and their activity levels
+•	The volume of transactions and integrations
+•	The complexity of business logic (e.g., plugins, workflows)
+In high-usage environments, this can lead to rapid expansion of log tables, consuming both database and log storage quotas.
+•	Retention defaults are often too generous (e.g., 90 days+).
+By default, many logging features retain data for extended periods (e.g., 90 days or more). While this supports long-term traceability, it can result in unnecessary storage consumption—especially when logs are not actively reviewed or exported.
+•	System-generated logs are billed to the customer in Dataverse.
+In Dataverse, system-generated logs—including audit logs and plugin trace logs—are counted against the customer’s storage entitlement. This means that without proper cleanup or export strategies, logging can directly contribute to storage overages and increased licensing costs.
+“Logging is non-negotiable for regulated industries but must be paired with retention and export strategies (e.g., to Azure Monitor or Log Analytics).”
+Having multiple copies of the Production environment[RP10.1][RP10.2]
+To support development, testing, training, and troubleshooting, customers often create sandbox or cloned environments. Each copy:
+•	Replicates the full data and index footprint.
+•	May include non-obvious dependencies like search indexes, audit logs, and metadata.
+•	Is rarely cleaned up after use.
+“Environment sprawl is a major driver of storage cost and complexity. Governance policies and automation are key to containment.”
+
+Optimization of queries on the data
+As data volumes grow and application responsiveness becomes critical, customers and ISVs often implement various query optimization techniques to improve performance in Dataverse and Dynamics 365. These strategies are especially common in reporting, analytics, and integration-heavy scenarios.
+To improve performance, customers and ISVs often create:
+1.	Custom indexes and materialized views.
+These are used to accelerate query execution by precomputing joins or aggregations. They are particularly helpful in scenarios involving complex filters or large datasets.
+2.	Denormalized tables for reporting.
+To simplify reporting and reduce query complexity, developers often create flattened versions of relational data. These tables reduce the need for runtime joins and improve dashboard performance.
+3.	Caching layers or aggregates.
+Frequently accessed data is sometimes pre-aggregated or cached in intermediate tables or external stores to reduce load on the primary database.
+While these improve responsiveness, they also:
+•	Increase storage usage.
+Each optimization layer introduces additional data structures—whether it's a copy of existing data in a denormalized format, a precomputed view, or a cache table. These structures often duplicate data already stored elsewhere, leading to a larger overall storage footprint. In environments with strict storage quotas or cost-based licensing models (like Dataverse), this can quickly escalate into avoidable overages.
+•	Can become orphaned as apps evolve.
+As applications evolve, some optimization artifacts may no longer be referenced by active reports, dashboards, or integrations. These "orphaned" objects continue to consume storage and may even slow down system operations (e.g., during backups or indexing) if not identified and removed. Without regular audits, they can accumulate unnoticed, undermining the very performance gains they were created to support.
+“Query optimization is essential for scale but must be balanced with storage hygiene and telemetry-driven tuning.”
+
+Indexes [RP11.1][RP11.2]and Their Impact on Storage
+Indexes are essential for improving query performance and enabling fast data retrieval in large datasets. In both Dataverse and Dynamics 365 Finance & Operations (F&O), indexes are automatically created for primary keys and frequently queried fields, and additional custom indexes can be defined to support specific business scenarios.
+While indexes are critical for performance, they also have a direct impact on storage consumption—often underestimated during solution design.
+📦 How Indexes Consume Storage
+1.	Physical Duplication of Data
+Each index stores a copy of the indexed column(s), along with pointers to the corresponding rows. The more columns and rows indexed, the larger the index size.
+2.	Growth with Data Volume
+As the underlying table grows, so does the index. In high-transaction environments, indexes can grow rapidly—especially on large, denormalized tables or those with frequent inserts and updates.
+3.	Multiple Indexes per Table
+It’s common for a single table to have multiple indexes (e.g., for search, filtering, sorting, and joins). Each additional index adds to the cumulative storage footprint.
+4.	Search Indexes in Dataverse
+Features like Dataverse Search and Copilot Indexing create specialized indexes that span multiple fields and tables. These are stored in the DataverseSearch table and can consume significant space—especially when enabled across multiple environments (e.g., dev, test, prod).
+5.	System-Generated Indexes
+Some indexes are created automatically by the platform (e.g., for lookup fields or relationships). These may persist even if the associated tables are deprecated, unless explicitly removed.
+⚠️ Storage Implications
+•	Increased Database and Log Storage: Indexes contribute to both database and log storage usage, which can affect licensing costs in Dataverse.
+•	Environment Duplication: When environments are copied or refreshed, all indexes are duplicated—amplifying storage usage across dev/test/prod.
+•	Maintenance Overhead: Indexes must be updated as data changes, which can increase write latency and resource consumption.
+
+Indexes to support search[
 
 
 
