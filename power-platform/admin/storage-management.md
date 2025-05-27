@@ -123,72 +123,73 @@ Finance and operations storage is managed separately, but is increasingly being 
       - Synapse Link (custom lake analytics)
 
 ## How your data grows over time
-As organizations scale their use of Microsoft Dataverse and the Dynamics 365 Finance & Operations (F&O) Platform, data growth becomes both a sign of success and a strategic challenge. What begins as a lean, transactional dataset can quickly evolve into a complex, multi-layered data estate. This section explores five key drivers of data growth and their implications for storage, performance, and governance.
+As organizations scale their use of Microsoft Dataverse and the Dynamics 365 finance and operations platform, data growth becomes both a sign of success and a strategic challenge. What begins as a lean, transactional dataset can quickly evolve into a complex, multi-layered data estate. This section explores five key drivers of data growth and their implications for storage, performance, and governance.
 
-### Enabling data warehousing on Operational data
-To unlock insights from operational systems, many organizations enable Azure Synapse Link, OneLake, or Data Export to replicate data from Dataverse and F&O into analytical system. While this supports advanced reporting and AI workloads, it also introduces:
+### Enabling data warehousing on operational data
+To unlock insights from operational systems, many organizations use Azure Synapse Link, OneLake, or data export to replicate data from Dataverse and finance and operations apps into an analytical system. While this supports advanced reporting and AI workloads, it also introduces:
 
 - **Redundant storage** across operational and analytical layers.
 
-    Data is often duplicated between the operational and analytical environments. This redundancy increases overall storage consumption and may lead to higher costs—especially if historical data is retained indefinitely in both systems.
+    Data is often duplicated between the operational and analytical environments. This redundancy increases overall storage consumption and may lead to higher costs, especially if historical data is retained indefinitely in both systems.
 
 - **Schema duplication** and versioning overhead.
 
-    To maintain consistency between systems, organizations must replicate schema changes (e.g., new fields, renamed columns) across both operational and analytical layers. This adds complexity to data governance and increases the risk of schema drift, which can break downstream reports or models.
+    To maintain consistency between systems, organizations must replicate schema changes&mdash; for example, new fields and renamed columns&mdash;across both operational and analytical layers. This adds complexity to data governance and increases the risk of schema drift, which can break downstream reports or models.
 
 - **Increased retention** of historical data for trend analysis.
 
     Analytical systems typically retain data for longer periods to support trend analysis, forecasting, and regulatory reporting. While valuable, this long-term retention can lead to bloated datasets if not managed with proper archival and tiering strategies.
 
-_Data warehousing is essential for analytics, but without lifecycle policies, it can double or triple your storage footprint._
+Data warehousing is essential for analytics, but without lifecycle policies, it can double or triple your storage footprint.
 
-### Enabling Search on the data
-Features like Dataverse Search, Copilot Indexing, and Relevance Search require indexing large volumes of structured and unstructured data. These indexes:
+### Using search on the data
+Features like Dataverse search, Copilot indexing, and relevance search require indexing large volumes of structured and unstructured data. These indexes often:
 
 - Consume log and database storage.
 
-    Search indexes are stored in both log and database storage. As more tables and fields are marked as searchable, the index size grows proportionally. This can significantly impact overall storage usage—especially in environments with large volumes of records or frequent schema changes.
+    Search indexes are stored in both log and database storage. As more tables and fields are marked as searchable, the index size grows proportionally. This can significantly impact overall storage usage, especially in environments with large volumes of records or frequent schema changes.
 
 - Persist even for unused or deprecated tables.
 
     Even when certain tables are deprecated or no longer actively used, their associated search indexes may persist unless explicitly removed. This leads to unnecessary storage consumption and can complicate capacity planning.
 
-- Are often duplicated across environments (e.g., dev, test, prod).
+- Are often duplicated across environments, such as development, test, and production environments.
 
-    Search indexes are typically replicated across development, test, and production environments. While this ensures consistent search behaviour, it also multiplies the storage footprint—particularly when environments are cloned or refreshed frequently.[JA8.1]
+    Search indexes are typically replicated across development, test, and production environments. While this ensures consistent search behaviour, it also multiplies the storage footprint, particularly when environments are cloned or refreshed frequently.
 
-_Search improves usability and AI readiness, but index bloat is a silent contributor to storage overages._
+Search improves usability and AI readiness, but index bloat is a silent contributor to storage overages.
 
 ### Enabling logging on the data
-Audit logs, plugin trace logs, and telemetry are critical for compliance, debugging, and monitoring. However:
+Audit logs, plug-in trace logs, and telemetry are critical for compliance, debugging, and monitoring. However, note the following points:
 
 - **Log storage** grows linearly with usage and user count.
-    Log data grows proportionally with:
+
+  Log data grows proportionally with:
   
   - The number of users and their activity levels
   - The volume of transactions and integrations
-  - The complexity of business logic (e.g., plugins, workflows)
+  - The complexity of business logic such as plug-ins and workflows
   
     In high-usage environments, this can lead to rapid expansion of log tables, consuming both database and log storage quotas.
   
-- **Retention defaults** are often too generous (e.g., 90 days+).
+- **Retention defaults** are often too generous such as 90 days or more.
 
-    By default, many logging features retain data for extended periods (e.g., 90 days or more). While this supports long-term traceability, it can result in unnecessary storage consumption—especially when logs are not actively reviewed or exported.
+    By default, many logging features retain data for extended periods, such as 90 days or more). While this supports long-term traceability, it can result in unnecessary storage consumption, especially when logs aren't actively reviewed or exported.
   
 - **System-generated logs** are billed to the customer in Dataverse.
 
-    In Dataverse, system-generated logs—including audit logs and plugin trace logs—are counted against the customer’s storage entitlement. This means that without proper cleanup or export strategies, logging can directly contribute to storage overages and increased licensing costs.
+    In Dataverse, system-generated logs, including audit logs and plug-in trace logs, are counted against the customer’s storage entitlement. This means that without proper cleanup or export strategies, logging can directly contribute to storage overages and increased licensing costs.
 
-_Logging is non-negotiable for regulated industries but must be paired with retention and export strategies (e.g., to Azure Monitor or Log Analytics)._
+Logging is non-negotiable for regulated industries, but must be paired with retention and export strategies, such as Azure Monitor or Log Analytics.
 
-### Having multiple copies of the Production environment
+### Having multiple copies of the production environment
 To support development, testing, training, and troubleshooting, customers often create sandbox or cloned environments. Each copy:
 
 - Replicates the full data and index footprint.
 - May include non-obvious dependencies like search indexes, audit logs, and metadata.
 - Is rarely cleaned up after use.
 
-_Environment sprawl is a major driver of storage cost and complexity. Governance policies and automation are key to containment._
+Environment sprawl is a major driver of storage cost and complexity. Governance policies and automation are key to containment.
 
 ### Optimization of queries on the data
 As data volumes grow and application responsiveness becomes critical, customers and ISVs often implement various query optimization techniques to improve performance in Dataverse and Dynamics 365. These strategies are especially common in reporting, analytics, and integration-heavy scenarios.
