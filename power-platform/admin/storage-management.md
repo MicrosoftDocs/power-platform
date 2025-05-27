@@ -300,15 +300,15 @@ Dataverse offers several built-in tools and strategies to help administrators ma
 **Long-Term Retention (LTR) and Archival**
 - [Data Archival: LTR](/power-apps/maker/data-platform/data-retention-overview): Microsoft Dataverse supports custom retention policies to securely retain unlimited data long term in a cost-efficient way. While Dataverse can support your business growth with no limit on active data, you might want to consider moving inactive data to the Dataverse long term retention store.
 - Clean up Dataverse Tables: If you want to retain the data, but remove it from the relational storage, go to [Dataverse long term data retention](/power-apps/maker/data-platform/data-retention-overview). Otherwise, to clean up the following tables.
-  - [ActivityPointerBase](manage-storage-activitypointer-base-table.nd): You can follow the steps here to clean up the table.
+  - [ActivityPointerBase](manage-storage-activitypointer-base-table.md): You can follow the steps here to clean up the table.
   - [AsyncOperationBase](manage-storage-asyncoperation-base-table.md): You can follow the steps here to clean up the table 
-  - [msdyn_copilotinteraction](manage-storage-msdyn-copilotinteraction-table,md): You can follow the steps here to clean up the table.
+  - [msdyn_copilotinteraction](manage-storage-msdyn-copilotinteraction-table.md): You can follow the steps here to clean up the table.
   - [PrincipalObjectsAcces](manage-principalobjectaccess-storage.md): You can follow the steps here to clean up the table.
   - [Subscription Tracking](subscription-tracking-deleted-object-retention.md): You can follow the steps here to clean up the table.
 
 **Search Index Optimization**
-- [Reduce Dataverse Search](capacity-storage.md#what-actions-can-admins-take): You can reduce the storage size by performing all the steps in [Dataverse capacity-based storage details](capacity-storage.md#what-actions-can-admins-take).
-- [Reduce the size of DataverseSearch table](capacity-storage.md#what-is-the-dataversesearch-table-and-how-can-i-reduce-it): The DataverseSearch table is the cumulative storage used by the Dataverse search index. It includes the data from all searchable, retrievable, and filterable fields of the tables you indexed for your environment. You can reduce the table size by removing Find Columns, View Columns, and Filter conditions for one or more tables. You can turn off Dataverse search to remove all indexed data.
+- [Reduce Dataverse Search](capacity-storage.md): You can reduce the storage size by performing all the steps in [Dataverse capacity-based storage details](capacity-storage.md).
+- [Reduce the size of DataverseSearch table](capacity-storage.md): The DataverseSearch table is the cumulative storage used by the Dataverse search index. It includes the data from all searchable, retrievable, and filterable fields of the tables you indexed for your environment. You can reduce the table size by removing Find Columns, View Columns, and Filter conditions for one or more tables. You can turn off Dataverse search to remove all indexed data.
 
 ##### Finance and operations
 Finance and opertions provides flexible options for managing storage across production and sandbox environments.
@@ -319,7 +319,7 @@ Finance and opertions provides flexible options for managing storage across prod
   - Restore process provides an opening and trimming execution
   - Write T-SQL
   - Write X++
-- [Perform a transaction-less copy between environments](/unified-experience/tutorial-perform-transactionless-copy.md): Environment copy for Finance and Operations apps has traditionally involved full database duplication—including configuration, master data, and transactions—which, while useful for debugging, significantly increases storage consumption across both F&O and Dataverse. 
+- [Perform a transaction-less copy between environments](unified-experience/tutorial-perform-transactionless-copy.md): Environment copy for Finance and Operations apps has traditionally involved full database duplication—including configuration, master data, and transactions—which, while useful for debugging, significantly increases storage consumption across both F&O and Dataverse. 
 
 **Custom Cleanup and Log Management**
 - Write custom cleanups as necessary: You can write custom cleanups routine as needed by your business to clean the unwanted data.
