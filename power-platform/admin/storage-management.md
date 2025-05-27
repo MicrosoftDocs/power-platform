@@ -287,8 +287,8 @@ Dataverse offers several built-in tools and strategies to help administrators ma
 
 ##### Dataverse 
 **Environment and Data Cleanup**
-- {Delete Unused Environments}(delete-environment.md): You can delete an environment to recover storage space and to remove Personally Identifiable Information (PII).
-- [Bulk Deletion Jobs}(delete-bulk-records): You can delete following data in bulk:
+- {Delete Unused Environments](delete-environment.md): You can delete an environment to recover storage space and to remove Personally Identifiable Information (PII).
+- [Bulk Deletion Jobs](delete-bulk-records.md): You can delete following data in bulk:
   - Stale data or Data that is irrelevant to the business.
   - Unneeded test or sample data.
   - Data that is incorrectly imported from other systems.
