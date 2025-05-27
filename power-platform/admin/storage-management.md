@@ -14,32 +14,32 @@ search.audienceType:
 
 # Storage management in Dataverse and finance and operations apps
 
-As organizations accelerate their digital transformation journeys, the ability to manage data effectively becomes a strategic business imperative. With the rise of AI-powered applications and Copilot-driven workflows, enterprises are generating and consuming data at unprecedented rates. This data fuels innovation, enables personalized experiences, and supports critical decision-making—but only if it is governed and stored intelligently.
+As organizations accelerate their digital transformation journeys, the ability to manage data effectively becomes a strategic business imperative. With the rise of AI-powered applications and Copilot-driven workflows, enterprises are generating and consuming data at unprecedented rates. This data fuels innovation, allows personalized experiences, and supports critical decision-making&mdash;but only if it's governed and stored intelligently.
 
-To support these evolving business needs, organizations must adopt a proactive storage management strategy. This ensures that data no longer required for day-to-day operations is handled responsibly freeing up capacity for high-value workloads, reducing operational friction, and aligning with compliance and audit requirements.
+To support these evolving business needs, organizations must adopt a proactive, storage management strategy. This ensures that data no longer required for day-to-day operations is handled responsibly, freeing up capacity for high-value workloads, reducing operational friction, and aligning with compliance and audit requirements.
 
 From a technical standpoint, effective storage management in Dataverse and Dynamics 365 enhances system performance, improves cost efficiency, and ensures adherence to long-term retention (LTR) policies. Both platforms offer tools and automation capabilities that empower organizations to manage storage.
 
-By implementing the strategies outlined in this paper, enterprises can reduce support overhead, streamline compliance, and unlock greater value from their business applications—turning storage from a constraint into a competitive advantage.
+By implementing the strategies outlined in this article, enterprises can reduce support overhead, streamline compliance, and unlock greater value from their business applications&mdash;turning storage from a constraint into a competitive advantage.
 
 ## Key benefits
-Effective storage management in Dataverse and Dynamics 365 provides several key benefits that address common customer pain points and enhance overall operational efficiency.
+Effective storage management in Dataverse and Dynamics 365 provides several key benefits that address common, customer pain points and enhance overall operational efficiency.
 
-- **Increased compliance with LTR**: [RG1.1]Effective storage management ensures that data is stored in compliance with LTR policies. This not only helps in meeting regulatory requirements but also ensures that critical data is preserved and accessible when needed.
+- **Increased compliance with LTR**: Effective storage management ensures that data is stored in compliance with LTR policies. This not only helps in meeting regulatory requirements, but also ensures that critical data is preserved and accessible when needed.
 - **Improved performance**: By optimizing storage management, organizations can significantly enhance the performance of their systems. Efficient storage allocation and management reduce latency and improve the speed of data retrieval, leading to smoother and faster operations.
-- **Driving cost efficiency**: Effective storage management empowers organizations to focus on high-value data by streamlining and decluttering their storage landscape. By retaining only what’s necessary, businesses can optimize their storage footprint—leading to smarter resource utilization and cost-effective scalability.
+- **Driving cost efficiency**: Effective storage management empowers organizations to focus on high-value data by streamlining and decluttering their storage landscape. By retaining only what’s necessary, businesses can optimize their storage footprint, leading to smarter resource utilization and cost-effective scalability.
 
 ## Background
-As organizations grow and digitize more of their operations, the volume of business data stored in systems like Dataverse and Dynamics 365 increases steadily. This includes not only active transactional data but also historical records that must be retained for audit, regulatory, or business continuity purposes. Over time, this accumulation can lead to performance degradation, increased operational overhead, and rising storage costs—especially when data that is no longer actively used remains in high-performance storage tiers.
+As organizations grow and digitize more of their operations, the volume of business data stored in systems like Dataverse and Dynamics 365 increases steadily. This includes not only active, transactional data but also historical records that must be retained for audit, regulatory, or business continuity purposes. Over time, this accumulation can lead to performance degradation, increased operational overhead, and rising storage costs&mdash;especially when data that is no longer actively used remains in high-performance storage tiers.
 
-A well-defined storage management strategy helps organizations address these challenges by identifying data that can be archived, cleaned up, or moved to lower-cost, read-optimized storage. This is particularly important for compliance scenarios where data must remain immutable, low-access, and read-only—such as financial records, audit logs, or regulatory filings. Ensuring that such data is retained in a compliant manner, without impacting the performance of live systems, is a key requirement for many enterprises.
+A well-defined, storage management strategy helps organizations address these challenges by identifying data that can be archived, cleaned up, or moved to lower-cost, read-optimized storage. This is particularly important for compliance scenarios where data must remain immutable, low-access, and read-only, such as financial records, audit logs, or regulatory filings. Ensuring that such data is retained in a compliant manner, without impacting the performance of live systems, is a key requirement for many enterprises.
 
 By leveraging the tools and strategies available in both platforms, organizations can gain better visibility into their storage footprint, reduce unnecessary consumption, and ensure that compliance-critical data is handled appropriately.
 
-This document outlines practical approaches to storage management that help customers align their data retention practices with business and regulatory needs—improving system performance, reducing operational overhead, and ensuring that compliance obligations are met without compromise.
+This article outlines practical approaches to storage management that help customers align their data retention practices with business and regulatory needs. This improves system performance, reduces operational overhead, and ensures that compliance obligations are met without compromise.
 
 ## Why we store data
-To select and optimise the right data retention pattern for your data, it is valuable to reflect on the reasons and uses for which we stored data.
+To select and optimise the right data retention pattern for your data, it's valuable to reflect on the reasons and uses for which we store data.
 
 ### Operational data
 With a business application, operational data is what is used to execute the business tracking sales, or financial or supply chain actions. 
