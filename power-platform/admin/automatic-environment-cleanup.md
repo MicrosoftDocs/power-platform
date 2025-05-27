@@ -3,7 +3,7 @@ title: Automatic deletion of Power Platform environments
 description: Learn about the automatic processes that identify and disable Power Platform environments and how you can prevent them from being deleted.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 04/22/2025
+ms.date: 05/23/2025
 ms.subservice: admin
 author: matapg007
 ms.author: matgupta 
@@ -17,17 +17,7 @@ contributors:
 
 # Automatic deletion of Power Platform environments
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 Automated processes periodically identify, disable, and eventually delete inactive Power Platform environments to optimize storage capacity. An environment may be deleted because it's in a tenant with an expired subscription or because it's not being used. In either case, there are actions you can take to prevent the environment from being deleted.
-
-## View the status of your environments
-
-1. Sign in as an admin to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-2. Select **Environments**.
-3. Look for environments with an **Inactive** status.
-
-    :::image type="content" source="media/inactive-environment.png" alt-text="Screenshot of a list of environments in the Power Platform admin center, with an inactive environment highlighted.":::
 
 ## Environments in a tenant with an expired subscription
 
@@ -49,13 +39,13 @@ If an environment has already been deleted, you have a limited window of time to
 
 ## Inactivity-based cleanup
 
-A cleanup mechanism in Power Platform automatically removes environments that aren't being used. Only developer and [Dataverse for Teams environments](inactive-teams-environment.md) are affected by the activity-based automatic cleanup.
+A cleanup mechanism in Power Platform automatically removes environments that aren't being used. Only Default, Developer, and [Dataverse for Teams environments](inactive-teams-environment.md) are affected by the activity-based automatic cleanup.
 
 > [!IMPORTANT]
 > You can't turn off this cleanup mechanism. However, you can review the last activity date for environments in the Power Platform admin center. 
 
 ## Developer environments
-A cleanup mechanism in Power Platform automatically removes developer environments that aren't being used based on the following schedule. After 30 days of inactivity, environments are automatically disabled. If, after 15 days, the [environment is not re-enabled](#re-enable-a-disabled-environment), the environment is deleted. You have seven days to [recover the environment](recover-environment.md) once it has been deleted.
+A cleanup mechanism in Power Platform automatically removes developer environments that aren't being used based on the following schedule. After 30 days of inactivity, environments are automatically disabled. If, after 15 days, the [environment isn't re-enabled](#re-enable-a-disabled-environment), the environment is deleted. You have seven days to [recover the environment](recover-environment.md) once it has been deleted.
 
 As part of this cleanup process, you can expect the following:
 - Admins receive email notifications which warn of upcoming disablement or deletion.
@@ -77,6 +67,32 @@ The environment's administrators and the user who created the environment are no
 
 A warning message appears on the **Environments** list page and **Environment** page when an environment is disabled.
 
+## Default environment 
+
+A cleanup mechanism in Power Platform automatically removes Default environments based on the following criteria:
+- Default environments without flows are deleted after 120 days of inactivity.
+- Default environments with flows are deleted after 402 days of inactivity to allow annual and seasonal activity.
+- Tenants with [premium licenses](pricing-billing-skus.md) are excluded from the cleanup.
+- Default environments with Microsoft 365 agents or Microsoft Planner are excluded from deletion.
+- Admins receive two warning notifications before the Default environment is deleted due to inactivity. Default environments are deleted 30 days after the first notification.
+
+As part of this cleanup process, a new replacement Default environment without Dataverse is created, with an option to add Dataverse later. The original Default environment is deleted, but can be recovered as a production environment within seven days. [Any activity triggered](#trigger-activity-in-an-inactive-environment) on the environment resets the inactivity period.
+
+### Timeline for unused Default environments
+
+The environment's administrators are notified by email according to the following schedule:
+
+| Default environment with Flows | Default environment without Flows | What to expect |
+| --- | --- | -- |
+| 372 days with no [user activity](#definition-of-user-activity) | 90 days with no [user activity](#definition-of-user-activity) | A warning is sent stating that the environment will be deleted and a countdown is displayed in the **Environment state** on the **Environments** list page and the **Environment** page. |
+| 387 days with no [user activity](#definition-of-user-activity) | 105 days with no [user activity](#definition-of-user-activity) | A second warning is sent stating that the environment will be deleted.|
+| 402 days with no [user activity](#definition-of-user-activity) | 120 days with no [user activity](#definition-of-user-activity) | The environment is deleted, a new Default environment without Dataverse is created for the tenant. An email notice is sent stating that the environment has been deleted. |
+
+A warning message appears on the **Environments** list page and **Environment** page when the Default environment is within 30 days of deletion.
+
+> [!Note]
+> Default environment cleanup is in the process of rolling out and might not be available in your region yet.
+
 ### Definition of user activity
 
 Power Platform calculates a single measure of inactivity for each environment. The measure accounts for all activity by users, makers, and admins across Power Apps, Power Automate, Power Platform, Microsoft Copilot Studio, and Dataverse.
@@ -90,7 +106,22 @@ Here are some examples of the types of actions that are considered as activity:
 - **Admin activity**: Trigger an environment operation such as copy, restore, or reset.
 
 > [!NOTE]
-> As of April 20, 2025, Center of Excellence (CoE) toolkit operations&mdash;which query data from multiple Dataverse organizations in a customer tenant&mdash;are no longer considered as activity by developer organizations. Developer organizations, which were previously only kept active by CoE queries, become inactive unless there's other activity against those developer organizations. 
+> As of April 20, 2025, Center of Excellence (CoE) toolkit operations&mdash;which query data from multiple Dataverse organizations in a customer tenant&mdash;are no longer considered as activity by developer organizations. Developer organizations, which were previously only kept active by CoE queries, become inactive unless there's other activity against those developer organizations.
+
+### View last user activity of environment
+Environment admins can see when an environment was last used by checking the **Last activity** column in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/). The activity for each environment is updated once a day.
+
+### [New admin center](#tab/new)
+1. Sign in as an admin to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. See **Last activity** column for environment in question.
+
+### [Classic admin center](#tab/classic)
+1. Sign in as an admin to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Environments**.
+1. See **Last activity** column for environment in question.
+---
 
 ## Trigger activity, re-enable, and recover an environment
 
@@ -98,25 +129,54 @@ By default, administrators have 15 days to re-enable an environment. If the envi
 
 ### Trigger activity in an inactive environment
 
+Once environment administrators receive notification that an environment will be cleaned up, environment admins can trigger activity on the environment to indicate that the environment is active and prevent the cleanup action. If an environment has already been disabled, the **Trigger environment activity** button won't be displayed. In this situation, the only option for the customer is to re-enable the environment before deletion. 
+
+# [New admin center](#tab/new)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-2. Select **Environments**, and then select the inactive environment.
-3. On the **Environment** page, select **Trigger environment activity**.
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1.Select the inactive environment.
+1. On the **Environment** page, select **Trigger environment activity**.
+
+# [Classic admin center](#tab/classic)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. Select **Environments**, and then select the inactive environment.
+1. On the **Environment** page, select **Trigger environment activity**.
+---
 
 ### Re-enable a disabled environment
 
+# [New admin center](#tab/new)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-2. Select **Environments**, and then select the disabled environment.
-3. On the **Environment** page, select **Re-enable environment**.
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. Select the disabled environment.
+1. On the **Environment** page, select **Re-enable environment**.
+
+# [Classic admin center](#tab/classic)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. Select **Environments**, and then select the disabled environment.
+1. On the **Environment** page, select **Re-enable environment**.
+---
 
 ### Recover a deleted environment
 
+# [New admin center](#tab/new)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-2. Select **Environments**, and then select **Recover deleted environments**.
-3. Select an environment to recover, and then select **Recover**.
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. Select **Recover deleted environments**.
+1. Select an environment to recover, and then select **Recover**.
+
+# [Classic admin center](#tab/classic)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. Select **Environments**, and then select **Recover deleted environments**.
+1. Select an environment to recover, and then select **Recover**.
+---
 
 [Learn more about recovering an environment](recover-environment.md).
 
-### See also
+### Related content
 
 [Back up and restore environments](backup-restore-environments.md)  
 [Automatic deletion of inactive Microsoft Dataverse for Teams environments](inactive-teams-environment.md)  
