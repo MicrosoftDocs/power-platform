@@ -15,6 +15,9 @@ ms.topic: article
 
 This article explains how to create integration tests with Dataverse. This functionality applies the Power Fx capability to connect with Dataverse tables.
 
+## Enable Preview
+Refer [Preview feature](yaml.md#Preview-Features)
+
 <!-- The following section is duplicated in two other articles -->
 ## Connecting to Dataverse
 
