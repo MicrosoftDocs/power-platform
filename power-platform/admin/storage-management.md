@@ -242,8 +242,45 @@ Some indexes are created automatically by the platform (e.g., for lookup fields 
 - Environment Duplication: When environments are copied or refreshed, all indexes are duplicated—amplifying storage usage across dev/test/prod.
 - Maintenance Overhead: Indexes must be updated as data changes, which can increase write latency and resource consumption.
 
-Indexes to support search[
+## How I can manage the ever-growing storage
+Whether you're already facing storage overages or aiming to stay ahead of them, managing data growth in Microsoft Dataverse and the Dynamics 365 Finance & Operations (F&O) Platform requires a deliberate, policy-driven approach. This section outlines two strategic entry points: reactive remediation and proactive governance.
 
+There are two possible scenarios:
+
+1. You want to proactively apply best practices to manage storage and avoid high costs in the future.
+1. You’re already in a situation where reducing storage size and cost is necessary.
+
+## Apply best practices to manage storage size and costs
+
+### Scenario 1: You Want to Proactively Apply Best Practices to Manage Storage
+If you're not yet in crisis mode, now is the time apply tools and techniques to manage the storage proactively:
+****
+#### Configure analytics for your data
+As organizations grow, so does the need to extract insights from operational data—without impacting the performance of core business applications. Microsoft offers multiple ways to enable analytics on Dataverse and Dynamics 365 Finance & Operations (F&O) data by integrating with your own data lake or warehouse.
+
+Here are two powerful options to consider:
+
+**1. Use Azure Synapse Link – Bring Your Own Lake**
+Azure Synapse Link allows you to connect Dataverse directly to your own Azure Data Lake or Synapse workspace. This enables near real-time replication of operational data into an analytical environment—without writing complex ETL pipelines.
+
+Benefits:
+- Run advanced analytics and AI models on live or near-live data
+- Avoid performance impact on your production systems
+- Use familiar tools like T-SQL, Spark, or Power BI for reporting
+
+**Use Case Example:** A retail company uses Synapse Link to analyse customer purchase behaviour across regions, combining Dataverse CRM data with external market data in their own lake.
+
+**2. Use OneLake – Unified Analytics with Microsoft Fabric**
+OneLake, part of Microsoft Fabric, provides a unified data lake experience where you can store and analyse data from multiple sources—including Dataverse and F&O—without duplication.
+
+Benefits:
+- Centralized storage for all analytical workloads
+- Native integration with Power BI, Synapse, and AI services
+- Simplified governance and security across data domains
+
+**Use Case Example:** A financial services firm uses OneLake to consolidate operational data from F&O and Dataverse with external economic indicators, enabling real-time risk modelling and executive dashboards.
+
+By doing this, you can decouple operational data from your core systems and enable scalable, cost-effective analytics by exporting that data to their own analytical environments—without duplicating workloads or impacting performance.
 
 
 
