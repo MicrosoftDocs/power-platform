@@ -83,4 +83,7 @@ It also typically allows for aggregation of data across multiple parts of the bu
 ### Flow of data
 
 The data of these types typically flow over time as follows:
-(image)
+
+:::image type="content" source="media/flow-of-data.png" alt-text="The flow of data." lightbox="media/flow-of-data.png":::
+
+
