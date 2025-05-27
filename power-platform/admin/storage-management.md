@@ -1,6 +1,6 @@
 ---
-title: Storage management in Dataverse and finance and operations
-description: Learn about storage management in Dataverse and finance and operations
+title: Storage management in Dataverse and finance and operations apps
+description: Learn about storage management in Dataverse and finance and operations apps.
 author: ritesp
 ms.component: pa-admin
 ms.topic: concept-article
@@ -12,7 +12,7 @@ search.audienceType:
   - admin
 ---
 
-# Storage management in Dataverse and finance and operations
+# Storage management in Dataverse and finance and operations apps
 
 As organizations accelerate their digital transformation journeys, the ability to manage data effectively becomes a strategic business imperative. With the rise of AI-powered applications and Copilot-driven workflows, enterprises are generating and consuming data at unprecedented rates. This data fuels innovation, enables personalized experiences, and supports critical decision-making—but only if it is governed and stored intelligently.
 
