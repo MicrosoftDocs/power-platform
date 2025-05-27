@@ -6,8 +6,8 @@ ms.topic: concept-article
 ms.date: 05/27/2025
 author: Zeffin
 contributors:
- - yingchin
- - EllenWehrle
+  - yingchin
+  - EllenWehrle
 ms.subservice: admin
 ms.custom: NewPPAC
 ms.author: johnev
@@ -15,24 +15,24 @@ ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
-# Microsoft Dataverse and model-driven apps activity logging 
+# Microsoft Dataverse and model-driven apps activity logging
 
 [!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
-Protecting data, preserving privacy, and complying with [privacy regulations](https://www.microsoft.com/trust-center/privacy) are priorities for your business. To safeguard sensitive information, it’s essential to audit all data processing activities and analyze them for potential security breaches. 
 
 Activity Logging data supports Data Protection Impact Assessment (DPIA) for Power Apps, Power Automate, and customer engagement apps such as Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation.
 
 This topic explains how to configure Power Apps, Power Automate, and customer engagement apps to audit a broad range of data processing activities. You can then view the logged data in activity reports using the [Microsoft Purview portal](https://support.office.com/article/go-to-the-office-365-security-compliance-center-7e696a40-b86b-4a20-afcc-559218b7b1b8?ui=en-US&rs=en-US&ad=US).
 
 ## Requirements
+
 - At least one user assigned a Microsoft/Office 365 [E1](https://www.microsoft.com/microsoft-365/enterprise/office-365-e1) or greater license.
 - Available for production and not sandbox environments.
 
 ## What events are audited
+
 Logging takes place at the SDK layer which means a single action can trigger multiple events that are logged. The following are a sample of user events you can audit. Admin events are currently not logged.
 
-### User and support-related events 
+### User and support-related events
 
 |Event  |Description  |
 |---------|---------|
@@ -47,7 +47,8 @@ Logging takes place at the SDK layer which means a single action can trigger mul
 |Report Viewer Render Image  |Logging multimedia assets that are shown when a report is displayed. They might contain critical customer information.  |
 
 ## Base schema
-Schemas define which fields are sent to the Microsoft Purview portal. Some fields are common to all applications that send audit data to Microsoft Purview, while others are specific to customer engagement apps. The Base schema contains the common fields. 
+
+Schemas define which fields are sent to the Microsoft Purview portal. Some fields are common to all applications that send audit data to Microsoft Purview, while others are specific to customer engagement apps. The Base schema contains the common fields.
 
 |Field name  |Type  |Mandatory  |Description  |
 |---------|---------|---------|---------|
@@ -65,7 +66,8 @@ Schemas define which fields are sent to the Microsoft Purview portal. Some field
 |User     |Edm.String        |No         |Primary email of the user          |
 
 ## Customer engagement apps schema
-The customer engagement apps schema contains fields specific to customer engagement apps and partner teams. 
+
+The customer engagement apps schema contains fields specific to customer engagement apps and partner teams.
 
 |Field name  |Type  |Mandatory  |Description  |
 |---------|---------|---------|---------|
@@ -90,44 +92,50 @@ The customer engagement apps schema contains fields specific to customer engagem
 |UserId     |Edm.Guid          |No         |The unique ID of the Dynamics system user associated with this activity          |
 |UserUpn     |Edm.String         |No         |User principal name of the user associated with this activity          |
 
-## Enable auditing 
+## Enable auditing
 
-Access requires sufficient permissions, such as System Administrator or System Customizer role. To check your security role, see [View your user profile](/powerapps/user/view-your-user-profile). If you don’t have the correct permissions, contact your system administrator.
+Access requires sufficient permissions, such as System Administrator or System Customizer role. To check your security role, see [View your user profile](/powerapps/user/view-your-user-profile). If you don't have the correct permissions, contact your system administrator.
 
 ### [Modern admin center](#tab/new)
+
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
 1. On the **Environments** page, select an environment.
-1. In the command bar, select **Settings**. 
+1. In the command bar, select **Settings**.
 1. Expand **Audit and logs**, then select **Audit settings**.
-   
+
 ### [Classic admin center](#tab/classic)
+
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Environments**.
 1. On the **Environments** page, select an environment.
 1. In the command bar, select **Settings**.  
 1. Expand **Audit and logs**, then select **Audit settings**.
+
 ---
 
-**Configure Audit settings**
+**Configure audit settings**
 On the **Audit settings** page:
-1. Under **Auditing**, turn on the following options:
+
+1. Under **Auditing**, enable the following options:
    - **Start Auditing** - Activates auditing for the environment.
    - **Log access** - Tracks user sign-ins.
-   - **Read logs** - Captures most user activities and events.
+   - **Read logs** - captures most user activities and events.
 2. Set the **retention policy** for auditing logs based on your requirements.
 3. Select **Save** to apply the changes.
 
 **Set organization-level auditing on tables**
-1. From the **Audit settings** page, select **Global Audit Settings**.
-2. Under **Enable Auditing in the following areas**, select the check boxes for the areas you want to audit.
-3. Select **OK** to apply the changes.
-   
+
+1. On the **Audit settings** page, select **Global Audit Settings**.
+1. Under **Enable Auditing in the following areas**, select the check boxes for the areas you want to audit.
+1. Select **OK** to apply the changes.
+
 **Set table-level auditing**
+
 1. Sign in to [Power Apps Home Page](https://make.powerapps.com/).
 2. In the command bar, select **Settings**, then choose **Advanced settings**.
-3. Select **Customizations**, then select **Customize the system**.
+3. Select **Customizations**, then select **Customize the System**.
 4. In the navigation pane, under **Components**, expand **Entities** and select the entity to audit (for example, **Account**).
 5. Scroll down to **Data Services**, then enable the check box for **Auditing**.
 6. Under **Auditing**, enable the following options:
@@ -135,9 +143,8 @@ On the **Audit settings** page:
    - **Multiple record auditing. Log all records displayed on an opened page.**
 7. In the command bar, select **Save** to apply the changes.
 8. Select **Publish** to finalize the customization.
-9. Repeat steps **4–8** for other tables you want to audit.
+9. Repeat steps **4-8** for other tables you want to audit.
 10. Turn on audit logging in **Microsoft Purview**. See [Turn audit log search on or off](https://support.office.com/article/turn-office-365-audit-log-search-on-or-off-e893b19a-660c-41f2-9074-d3631c95a014).
-
 
 ## Review your audit data using reports in Microsoft Purview portal
 
@@ -146,39 +153,40 @@ When [audit log search](/microsoft-365/compliance/search-the-audit-log-in-securi
 To search for records in [Microsoft Purview portal](https://compliance.microsoft.com/), choose **Record type** as **CRM**, and  **Activities** as **All Dynamics 365 activities**.
 
 ## Create reports
+
 You can create your own reports to review your audit data. See [Search the audit log in the Microsoft Purview portal](https://support.office.com/article/search-the-audit-log-in-the-office-365-security-compliance-center-0d4d0f35-390b-4518-800e-0c7ec95e946c).
 
-## What's logged
+## See what's logged
 
 For a list of what's logged with Activity Logging, see [Microsoft.Crm.Sdk.Messages Namespace](/dotnet/api/microsoft.crm.sdk.messages).
 
 We log all SDK messages except the following:
 
 - WhoAmI
--	RetrieveFilteredForms
--	TriggerServiceEndpointCheck
--	QueryExpressionToFetchXml
--	FetchXmlToQueryExpression
--	FireNotificationEvent
--	RetrieveMetadataChanges
--	RetrieveEntityChanges
--	RetrieveProvisionedLanguagePackVersion
--	RetrieveInstalledLanguagePackVersion
--	RetrieveProvisionedLanguages
--	RetrieveAvailableLanguages
--	RetrieveDeprovisionedLanguages
--	RetrieveInstalledLanguagePacks
--	GetAllTimeZonesWithDisplayName
--	GetTimeZoneCodeByLocalizedName
--	IsReportingDataConnectorInstalled
--	LocalTimeFromUtcTime
--	IsBackOfficeInstalled
--	FormatAddress
--	IsSupportUserRole
--	IsComponentCustomizable
--	ConfigureReportingDataConnector
--	CheckClientCompatibility
--	RetrieveAttribute
+- RetrieveFilteredForms
+- TriggerServiceEndpointCheck
+- QueryExpressionToFetchXml
+- FetchXmlToQueryExpression
+- FireNotificationEvent
+- RetrieveMetadataChanges
+- RetrieveEntityChanges
+- RetrieveProvisionedLanguagePackVersion
+- RetrieveInstalledLanguagePackVersion
+- RetrieveProvisionedLanguages
+- RetrieveAvailableLanguages
+- RetrieveDeprovisionedLanguages
+- RetrieveInstalledLanguagePacks
+- GetAllTimeZonesWithDisplayName
+- GetTimeZoneCodeByLocalizedName
+- IsReportingDataConnectorInstalled
+- LocalTimeFromUtcTime
+- IsBackOfficeInstalled
+- FormatAddress
+- IsSupportUserRole
+- IsComponentCustomizable
+- ConfigureReportingDataConnector
+- CheckClientCompatibility
+- RetrieveAttribute
 
 ## How we categorize read and readmultiple
 
@@ -189,10 +197,10 @@ We use the prefix to categorize.
 |RetrieveMultiple     |ReadMultiple  |
 |ExportToExcel     |ReadMultiple |
 |RollUp |ReadMultiple |
-|RetrieveEntitiesForAggregateQuery |ReadMultiple | 
-|RetrieveRecordWall  |ReadMultiple | 
-|RetrievePersonalWall  |ReadMultiple | 
-|ExecuteFetch  |ReadMultiple | 
+|RetrieveEntitiesForAggregateQuery |ReadMultiple |
+|RetrieveRecordWall  |ReadMultiple |
+|RetrievePersonalWall  |ReadMultiple |
+|ExecuteFetch  |ReadMultiple |
 |Retrieve      |Read  |
 |Search     |Read |
 |Get     |Read |
@@ -202,7 +210,7 @@ We use the prefix to categorize.
 
 The following are some examples of logs created with Activity Logging.
 
-### Example 1 – Logs generated when user reads an Account record 
+### Example 1 – Logs generated when user reads an Account record
 
 | **Schema Name** |                                                      **Value**                                                      |
 |-----------------|---------------------------------------------------------------------------------------------------------------------|
@@ -217,7 +225,7 @@ The following are some examples of logs created with Activity Logging.
 |  QueryResults   |                                                         N/A                                                         |
 |     ItemURL     | `https://orgname.onmicrosoft.com/main.aspx?etn=account&pagetype=entityrecord&id=00aa00aa-bb11-cc22-dd33-44ee44ee44ee` |
 
-### Example 2 – Logs generated when user sees Account records in a Grid (Export to Microsoft Excel logs are like this) 
+### Example 2 – Logs generated when user sees Account records in a Grid (Export to Microsoft Excel logs are like this)
 
 |**Schema Name**  |**Value**  |
 |---------|---------|
@@ -232,7 +240,7 @@ The following are some examples of logs created with Activity Logging.
 |QueryResults     |00aa00aa-bb11-cc22-dd33-44ee44ee44ee, dc136b61-6c1e-e811-a952-000d3a732d76        |
 |ItemURL     |N/A        |
 
-### Example 3 – List of messages logged when user converts a lead to opportunity 
+### Example 3 – List of messages logged when user converts a lead to opportunity
 
 |**ID**  |**EntityID**  |**EntityName**  |**Operation**  |
 |---------|---------|---------|---------|
@@ -254,10 +262,9 @@ When audit log search in the Microsoft Purview portal is turned on, user and act
 - In some record instances, the EntityName value may be marked with Unknown. These records aren't related to any specific entity related operation and came in blank from CRM. They all have entity ID of 0000000-0000-0000-0000-000000000000.
 
 ### See also
+
 [Manage Dataverse auditing](manage-dataverse-auditing.md)<br />
 [Search the audit log in Microsoft Purview portal](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance) <br />
 [Search the audit log for user activity using Office 365 Management APIs overview](/office/office-365-management-api/office-365-management-apis-overview)
-
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
