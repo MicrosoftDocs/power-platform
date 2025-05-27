@@ -244,8 +244,8 @@ While indexes are critical for performance, they also have a direct impact on st
 - **Environment duplication**: When environments are copied or refreshed, all indexes are duplicated, amplifying storage usage across development, test, and production environments.
 - **Maintenance overhead**: Indexes must be updated as data changes, which can increase write latency and resource consumption.
 
-## How I can manage the ever-growing storage 
-Whether you're already facing storage overages or aiming to stay ahead of them, managing data growth in Microsoft Dataverse and the Dynamics 365 Finance & Operations (F&O) Platform requires a deliberate, policy-driven approach. This section outlines two strategic entry points: reactive remediation and proactive governance.
+## How I can manage the ever-growing storage? 
+Whether you're already facing storage overages or aiming to stay ahead of them, managing data growth in Dataverse and the Dynamics 365 finance and operations platform requires a deliberate, policy-driven approach. This section outlines two strategic entry points: reactive remediation and proactive governance.
 
 There are two possible scenarios:
 
