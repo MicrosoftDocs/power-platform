@@ -125,7 +125,7 @@ Finance and operations storage is managed separately, but is increasingly being 
 ## How your data grows over time
 As organizations scale their use of Microsoft Dataverse and the Dynamics 365 finance and operations platform, data growth becomes both a sign of success and a strategic challenge. What begins as a lean, transactional dataset can quickly evolve into a complex, multi-layered data estate. This section explores five key drivers of data growth and their implications for storage, performance, and governance.
 
-### Enabling data warehousing on operational data
+### Using data warehousing on operational data
 To unlock insights from operational systems, many organizations use Azure Synapse Link, OneLake, or data export to replicate data from Dataverse and finance and operations apps into an analytical system. While this supports advanced reporting and AI workloads, it also introduces:
 
 - **Redundant storage** across operational and analytical layers.
@@ -227,24 +227,24 @@ While indexes are critical for performance, they also have a direct impact on st
 
 #### How indexes consume storage
 
-1. **Physical Duplication of Data**
-Each index stores a copy of the indexed column(s), along with pointers to the corresponding rows. The more columns and rows indexed, the larger the index size.
-1. **Growth with Data Volume**
-As the underlying table grows, so does the index. In high-transaction environments, indexes can grow rapidly—especially on large, denormalized tables or those with frequent inserts and updates.
-1. **Multiple Indexes per Table**
-It’s common for a single table to have multiple indexes (e.g., for search, filtering, sorting, and joins). Each additional index adds to the cumulative storage footprint.
-1. **Search Indexes in Dataverse**
-Features like Dataverse Search and Copilot Indexing create specialized indexes that span multiple fields and tables. These are stored in the DataverseSearch table and can consume significant space—especially when enabled across multiple environments (e.g., dev, test, prod).
-1. **System-Generated Indexes**
-Some indexes are created automatically by the platform (e.g., for lookup fields or relationships). These may persist even if the associated tables are deprecated, unless explicitly removed.
+- **Physical duplication of data**
+  Each index stores a copy of the indexed columns, along with pointers to the corresponding rows. The more columns and rows indexed, the larger the index size.
+- **Growth with data volume**
+  As the underlying table grows, so does the index. In high-transaction environments, indexes can grow rapidly, especially on large, denormalized tables or those with frequent inserts and updates.
+- **Multiple indexes per table**
+  It’s common for a single table to have multiple indexes, for example for search, filtering, sorting, and joins. Each additional index adds to the cumulative storage footprint.
+- **Search indexes in Dataverse**
+  Features like Dataverse search and Copilot indexing create specialized indexes that span multiple fields and tables. These are stored in the **DataverseSearch** table and can consume significant space, especially when used across multiple environments such as development, test, and production enviroments.
+- **System-generated indexes**
+  Some indexes are created automatically by the platform such as for lookup fields or relationships. These may persist even if the associated tables are deprecated, unless explicitly removed.
 
-#### Storage Implications
+#### Storage implications
 
-- Increased Database and Log Storage: Indexes contribute to both database and log storage usage, which can affect licensing costs in Dataverse.
-- Environment Duplication: When environments are copied or refreshed, all indexes are duplicated—amplifying storage usage across dev/test/prod.
-- Maintenance Overhead: Indexes must be updated as data changes, which can increase write latency and resource consumption.
+- **Increased database and log storage**: Indexes contribute to both database and log storage usage, which can affect licensing costs in Dataverse.
+- **Environment duplication**: When environments are copied or refreshed, all indexes are duplicated, amplifying storage usage across development, test, and production environments.
+- **Maintenance overhead**: Indexes must be updated as data changes, which can increase write latency and resource consumption.
 
-## How I can manage the ever-growing storage
+## How I can manage the ever-growing storage 
 Whether you're already facing storage overages or aiming to stay ahead of them, managing data growth in Microsoft Dataverse and the Dynamics 365 Finance & Operations (F&O) Platform requires a deliberate, policy-driven approach. This section outlines two strategic entry points: reactive remediation and proactive governance.
 
 There are two possible scenarios:
