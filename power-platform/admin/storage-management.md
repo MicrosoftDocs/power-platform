@@ -87,34 +87,34 @@ The data of these types typically flow over time as follows:
 
 :::image type="content" source="media/flow-of-data.png" alt-text="The flow of data." lightbox="media/flow-of-data.png":::
 
-## Different types of Storage
+## Different types of storage
 
 ### Dataverse storage types
-Dataverse organizes storage into three main categories, each with distinct usage patterns and billing implications:
+Dataverse organizes storage into three main categories, each with distinct usage patterns and billing implications.
 
 | Storage type | Description | Common use cases|
 |-------------|--------------|-----------------|
-|Database storage | Stores structured data in tables (standard and custom). | Business records, metadata, relationships, and configurations. |
-| File storage | Stores attachments and binary data. | Email attachments, images, documents uploaded via Power Apps. | 
-| Log storage | Stores audit logs and plugin trace logs. | Change tracking, auditing, diagnostics, and compliance. |
+|Database storage | Stores structured data in tables (standard and custom). | Business records, metadata, relationships, and configurations |
+| File storage | Stores attachments and binary data. | Email attachments, images, documents uploaded through Power Apps | 
+| Log storage | Stores audit logs and plugin trace logs. | Change tracking, auditing, diagnostics, and compliance|
 
 ### Finance and operations platform storage types
 
-Finance and operations storage is managed separately but is increasingly being integrated into the Power Platform ecosystem. It includes:
+Finance and operations storage is managed separately, but is increasingly being integrated into the Power Platform ecosystem. It includes the following storage types.
 
 | Storage type | Description | Common use cases|
 |-------------|--------------|-----------------|
-| Operational database storage | Core transactional data for finance, supply chain, HR, etc.| Ledger entries, inventory, customer orders. |
-| Document management storage | Binary large objects (BLOBs) stored in Azure Blob Storage. | Invoices, receipts, scanned documents. |
-| Telemetry and diagnostic logs | System logs and telemetry data. | Performance monitoring, issue diagnostics. |
+| Operational database storage | Core transactional data for finance, supply chain, human resources, and more | Ledger entries, inventory, customer orders |
+| Document management storage | Binary large objects (Blobs) stored in Azure Blob Storage | Invoices, receipts, scanned documents |
+| Telemetry and diagnostic logs | System logs and telemetry data | Performance monitoring, issue diagnostics.|
 
-Shared & Integrated Storage Scenarios
+### Shared and integrated storage scenarios
 
-1. Dual-write Storage
-    - Enables real-time sync between Dataverse and F&O.
+1. Dual-write 2torage
+    - Enables real-time sync between Dataverse and finance and operations apps.
     - Requires careful role and capacity management to avoid duplication or overuse.
 
-1. Long-Term Retention (LTR)
+1. Long-term retention (LTR)
     - Moves historical data to a Managed Data Lake (MDL).
     - Reduces primary storage usage while maintaining compliance and analytics access.
     - Integrates with:
