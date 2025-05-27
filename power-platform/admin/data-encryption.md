@@ -1,5 +1,5 @@
 ---
-title: Enhance security by encrypting your column-level sensitive data 
+title: Encrypt column-level data 
 description: Data encryption
 ms.component: pa-admin
 ms.topic: how-to
@@ -15,7 +15,7 @@ ms.custom: "admin-security"
 search.audienceType: 
   - admin
 ---
-# Enhance security by encrypting your column-level sensitive data 
+# Encrypt column-level data 
 
 [!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 

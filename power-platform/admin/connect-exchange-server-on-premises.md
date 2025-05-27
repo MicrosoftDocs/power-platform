@@ -3,11 +3,13 @@ title: "Connect to Exchange Server (on-premises) | MicrosoftDocs"
 description: Connect to Exchange Server (on-premises)
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 10/16/2023
+ms.date: 05/16/2025
 author: DanaMartens
+contributors: yingchin
 ms.subservice: admin
+ms.custom: NewPPAC
 ms.author: dmartens
-ms.reviewer: sericks
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -47,119 +49,81 @@ For more information about authentication, go to:
 > To learn more about the protocols and ciphers used to secure the connection between Dynamics 365 and external email services, see [Server cipher suites and TLS requirements](server-cipher-tls-requirements.md).
 
 
-## Preview: Create an email server profile  
-
-
-1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment. 
-
-2. On the command bar, select **Settings** > **Email** > **Server profiles**.  
-    
-   > [!div class="mx-imgBorder"] 
-   > ![Screenshot of email server profile setting.](media/server-profile-settings.png "Email server profile setting")
-
-3. On the command bar, select **New server profile**.
-
-   > [!div class="mx-imgBorder"] 
-   > ![Screenshot of creating a new server profile.](media/new-server-profile.png "Create a new server profile")
-
-4. For **Email Server Type**, select **Exchange Server (On Prem)**, and then specify a meaningful **Name** for the profile.
-
-   > [!div class="mx-imgBorder"] 
-   > ![Screenshot of selecting the Exchange Server On Prem server profile](media/exchange-onprem-server-profile.png "Select Exchange Server On Prem server profile]")
-
-5. If you want to use this server profile as the default profile for new mailboxes, turn on **Set as default profile for new mailboxes**. 
-
-6. For **Authentication Type**, choose one of the following:
-
-    - **Credential specified in email server profile**: The credentials specified in the email server profile are used for sending or receiving email for the mailboxes of all users and queues associated with this profile. The credentials must have impersonation or delegation permissions on the mailboxes associated with the profile. This option requires some configuration on the email server, for example configuring impersonation rights on Exchange for the mailboxes associated with the profile.
-
-      > [!NOTE]
-      > To ensure the credentials are secured, SQL encryption is used to encrypt the credentials stored in the email server profile.
-    
-    - **Exchange Hybrid Modern Auth (HMA)**: To get the information for this option, follow the steps in [Hybrid Modern Authentication (HMA) for Exchange on-premises](connect-exchange-server-onprem-hma.md).
-
-7. Expand **Locations and ports**, and follow these steps:
-
-   - If **Authentication Type** is set to **Credential specified in email server profile**, select whether **Auto-discover server location** is **Active** or **Inactive**. <br><br> If you choose **Inactive**, enter the incoming and outgoing email server information. Enter the ports for the email server to use for accessing incoming and outgoing email. Select the protocol that will be used for authentication for incoming and outgoing email. 
-   
-      > [!div class="mx-imgBorder"] 
-      > ![Screenshot showing entering email server information.](media/auto-discover-server-location.png "Enter email server information")
-   
-   -  If **Authentication Type** is set to **Exchange Hybrid Modern Auth (HMA)**, enter the location and port for the email server.
-
-8. Expand the **Advanced** section, and then use the tooltips to choose your email processing options. 
-
-9. When you're done, select **Save**.
-
-
 ## Create an email server profile  
 
-1. Do one of the following: 
+#### [New admin center](#tab/new)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. On the **Environments** page, choose an environment.
+1. In the command bar, select **Settings**. 
+1. Expand **Email**, then select **Server profiles**.
+1. In the command bar, select **New server profile**.
 
-   - In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment. 
-   - In the legacy web client in the upper-right corner, select ![Gear icon.](media/selection-rule-gear-button.png), and then select **Advanced settings**. 
+#### [Classic admin center](#tab/classic)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Environments**.
+1. On the **Environments** page, choose an environment.
+1. In the command bar, select **Settings**.  
+1. Expand **Email**, then select **Server profiles**.
+1. In the command bar, select **New server profile**.
+---
 
-2. Select **Settings** > **Email** > **Server profiles**.  
+#### In the **Set up server profile** panel:
+1. For **Email Server Type**, select **Exchange Server (on premises)**, then enter a meaningful **Name** for the profile.
+2. To set this server profile as the default for new mailboxes, enable **Set as default profile for new mailboxes**. 
+3. For **Authentication Type**, choose one of the following:
 
-3. Select **New** > **Exchange Server (Hybrid)**.  
+    - **Authenticate using Impersonation (Basic Authentication)**: Enter the impersonation account **User name** and **Password**. The credentials specified in the email server profile are used for sending or receiving email for the mailboxes of all users and queues associated with this profile. The credentials must have impersonation or delegation permissions on the mailboxes associated with the profile. This option requires some configuration on the email server, for example configuring impersonation rights on Exchange for the mailboxes associated with the profile.
 
-4. **For an Exchange email server profile, specify the following details:**  
+    > [!NOTE]
+    > To ensure the credentials are secured, SQL encryption is used to encrypt the credentials stored in the email server profile.
+    
+    - **Hybrid Modern Authentication (OAuth)**: To get the information for this option, follow the steps in [Hybrid Modern Authentication (HMA) for Exchange on-premises](connect-exchange-server-onprem-hma.md).
 
+4. Expand **Locations and ports**, then follow these steps:
 
-   |                                         Fields                                         |                                                                                                                                                                                                                                                                                                                                                       Description                                                                                                                                                                                                                                                                                                                                                       |
-   |----------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-   |                                      **General**                                       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-   |                                          Name                                          |                                                                                                                                                                                                                                                                                                                                       Specify a meaningful name for the profile.                                                                                                                                                                                                                                                                                                                                        |
-   |                                      Description                                       |                                                                                                                                                                                                                                                                                                                        Type a short description about the objective of the email server profile.                                                                                                                                                                                                                                                                                                                        |
-   |                             Auto Discover Server Location                              |                                                                                                                                                                                                                                                          Select **Yes** (recommended), if you want to use the automatically discover service to determine the server location. If you set this to **No**, you must specify the email server location manually.                                                                                                                                                                                                                                                           |
-   |                 Incoming Server Location and Outgoing Server Location                  |                                                                                                                                                                                                                                                                                        If you select **No** in **Auto Discover Server Location**, enter a URL for **Incoming Server Location** and **Outgoing Server Location**.                                                                                                                                                                                                                                                                                        |
-   |                                    **Credentials**                                     |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-   |                            Authenticate Using Impersonation                            |                                                                                                                                                                                                                                                                                    Enter the credentials for the [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] service account granted the **ApplicationImpersonation** role.                                                                                                                                                                                                                                                                                     |
-   |                                       User Name                                        |                                                                                                                                                                                                                                                                                                             Type the user name for the [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] service account.                                                                                                                                                                                                                                                                                                             |
-   |                                        Password                                        |                                                                                                                                                                                                                                                                                                             Type the password for the [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] service account.                                                                                                                                                                                                                                                                                                              |
-   |                                      **Advanced**                                      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-   |                                **Additional Settings**                                 |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-   |                                   Process Email From                                   |                                                                                                                                                                                             Select a date and time. Email received after the date and time will be processed by server-side synchronization for all mailboxes associated with this profile. If you set a value less than the current date, the change will be applied to all newly associated mailboxes and their earlier processed emails will be pulled.                                                                                                                                                                                              |
-   |                          Minimum Polling Intervals in Minutes                          |                                                                                                                                                                                                                                           Type the minimum polling interval, in minutes, for mailboxes that are associated with this email server profile. The polling interval determines how often server-side synchronization polls your mailboxes for new email messages.                                                                                                                                                                                                                                           |
-   |                             Maximum Concurrent Connections                             | Type the maximum number of simultaneous connections that can be made by customer engagement apps to the corresponding email server per mailbox. Increase the value to allow more parallel calls to [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] to improve performance or reduce the value if there are errors on [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] due to large number of calls from customer engagement apps. The default value of this field is 10. The maximum number is considered per mailbox or per email server profile depending on whether the credentials are specified in a mailbox or email server profile. |
-   |                       Move Failed Emails to Undeliverable Folder                       |                                                                                                                                                                                                     To move the undelivered email to the Undeliverable folder, select **Yes**. If there's an error in tracking email messages in Dynamics 365 apps as email activities, and if this option is set to **Yes**, the email message will be moved to the Undeliverable folder.                                                                                                                                                                                                     |
-   |                                **Email Notifications**                                 |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-   | Send an alert email to the owner of the email server profile reporting on major events |                                                                                                                                                                                                                                                                                                   If you want the email server profile owner to be notified when more than 50% of the mailboxes fail, select **Yes**.                                                                                                                                                                                                                                                                                                    |
+   - If **Authentication Type** is set to **Authenticate using Impersonation (Basic Authentication)**, select whether **Autodiscover server location** is **Active** or **Inactive**. <br><br> If you choose **Inactive**, enter the incoming and outgoing email server information. Enter the ports for the email server to use for accessing incoming and outgoing email. Select the protocol that will be used for authentication for incoming and outgoing email. 
+   
+   -  If **Authentication Type** is set to **Hybrid Modern Authentication (OAuth)**, enter the location and port for the email server.
 
-
-5. Select **Save**.  
-
-6. Select **Test Connection** and review the results. To diagnose issues, see the following section.  
-
-### Troubleshooting the Exchange Server (Hybrid) profile connection
-
- If you've run the **Test Connection** command and have issues with the Exchange Server (Hybrid) profile connection, use the information in the **Test Connection** dialog to diagnose and fix the connection.
-
- In this example, there was a problem with the auto-discover server location feature. Review the username and password used for **Authentication Using Impersonation** for the Exchange Server (Hybrid) profile.  
-
- You can find information about recurring issues and other troubleshooting information in [Blog: Test and Enable Mailboxes in Microsoft Dynamics CRM 2015](https://cloudblogs.microsoft.com/dynamics365/no-audience/2015/08/31/test-and-enable-mailboxes-in-microsoft-dynamics-crm-2015/) and [Troubleshooting and monitoring server-side synchronization](troubleshooting-monitoring-server-side-synchronization.md).  
+5. Expand the **Advanced** section and use the tooltips to configure email processing options. 
+6. When finished, click **Save** to apply the changes. 
 
 ## Configure default email processing and synchronization
 
 Set server-side synchronization to be the default configuration method.  
 
-1. In the Power Platform admin center, select an environment. 
+#### [New admin center](#tab/new)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. On the **Environments** page, choose an environment.
+1. In the command bar, click **Settings**. 
+1. Expand **Email**, then select **Email settings**.
 
-2. Select **Settings** > **Email** > **Email settings**.  
+#### [Classic admin center](#tab/classic)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Environments**.
+1. On the **Environments** page, choose an environment.
+1. In the command bar, click **Settings**.  
+1. Expand **Email**, then select **Email settings**.
+---
 
-3. Under **Synchronization methods**, set the processing and synchronization fields as follows:  
+On the **Email settings** page, set up the **Synchronization methods** as follows:
+1. Configure the following processing and synchronization options:  
 
-   - **Server Profile**: The profile you created in the preceding section.  
+   - **Server Profile**: Select the profile created in the preceding section.  
 
-   - **Incoming Email**: Server-Side Synchronization or Email Router  
+   - **Incoming Email**: Choose **Server-Side Synchronization** or **Email Router**.
 
-   - **Outgoing Email**: Server-Side Synchronization or Email Router  
+   - **Outgoing Email**: Choose **Server-Side Synchronization** or **Email Router**.
 
-   - **Appointments, Contacts, and Tasks**: Server-Side Synchronization or Email Router  
+   - **Appointments, Contacts, and Tasks**: Choose **Server-Side Synchronization** or **Email Router**.
 
-     If you leave **Email processing for unapproved user and queues** at the default values (selected), you'll need to approve emails and queues for user mailboxes as directed in [**Approve email**](#approve-email), later in this topic.  
+     If **Email processing for unapproved user and queues** remains at its default setting (enabled), you'll need to approve emails and queues for user mailboxes as directed in [**Approve email**](#approve-email) later in this topic.  
 
-4. Select **Save**.  
+2. Click **Save** to apply the changes.  
 
 ## Configure mailboxes
 
@@ -167,83 +131,141 @@ To set mailboxes to use the default profile, you must first set the server profi
 
 In addition to administrator permissions, you must have Read and Write privileges on the Mailbox table to set the delivery method for the mailbox.  
 
-Choose *one* of the following methods: set mailboxes to the default profile, or edit mailboxes to set profile and delivery methods.
+Choose **one** of the following methods: **set mailboxes to the default profile**, or **edit mailboxes to set profile and delivery methods**.
  
 **To set mailboxes to the default profile**  
 
-1. In the Power Platform admin center, select an environment. 
+#### [New admin center](#tab/new)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. On the **Environments** page, choose an environment.
+1. In the command bar, click **Settings**. 
+1. Expand **Email**, then select **Mailboxes**.
+1. In the grid view selector, select to **Active Mailboxes**.
+1. Select all the mailboxes to associate with the server profile you created.
+1. In the command bar, click **Apply Default Email Settings**, verify the settings, then click **OK**. 
 
-2. Select **Settings** > **Email** > **Mailboxes**.  
+#### [Classic admin center](#tab/classic)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Environments**.
+1. On the **Environments** page, choose an environment.
+1. In the command bar, click **Settings**.  
+1. Expand **Email**, then select **Mailboxes**.
+1. In the grid view selector, select **Active Mailboxes**.
+1. Select all the mailboxes to associate with the server profile you created.
+1. In the command bar, click **Apply Default Email Settings**, verify the settings, then click **OK**.  
+---
 
-3. Select **Active Mailboxes**.  
-
-4. Select all the mailboxes that you want to associate with the [!INCLUDE[pn_Exchange_Server_short](../includes/pn-exchange-server-short.md)] profile you created, select **Apply Default Email Settings**, verify the settings, and then select **OK**.  
-
-   ![Screenshot of applying default email settings.](../admin/media/apply-default-email-settings.png "Apply default email settings")  
-
-    By default, the mailbox configuration is tested and the mailboxes are enabled when you select **OK**.  
+By default, the mailbox configuration is tested, and the mailboxes are enabled upon selecting **OK**.  
 
 **To edit mailboxes to set the profile and delivery methods**  
 
-1. In the Power Platform admin center, select an environment. 
+#### [New admin center](#tab/new)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. On the **Environments** page, choose the environment you want to modify.
+1. In the command bar, click **Settings**. 
+1. Expand **Email**, then select **Mailboxes**.
+1. In the grid view selector, choose **Active Mailboxes**.
+1. Select the mailboxes you want to configure, then click **Edit** in the command bar.
 
-2. Select **Settings** > **Email** > **Mailboxes**.  
+#### [Classic admin center](#tab/classic)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Environments**.
+1. On the **Environments** page, choose the environment you want to modify.
+1. In the command bar, click **Settings**.  
+1. Expand **Email**, then select **Mailboxes**.
+1. In the grid view selector, choose **Active Mailboxes**.
+1. Select the mailboxes you want to configure, then click **Edit** in the command bar.
+---
 
-3. Select **Active Mailboxes**.  
+On the **Mailbox** page, go to the **General** tab and set up **Synchronization methods** as follows:
+1. Config the following processing and synchronization options:
 
-4. Select the mailboxes that you want to configure, and then select **Edit**.  
+- **Server Profile**: Select the server profile created earlier.  
+- **Incoming** and **Outgoing** **Email**: Choose **Server-Side Synchronization** or **Email Router**.  
+- **Appointments, Contacts, and Tasks**: Set to **Server-Side Synchronization**.  
 
-5. In the **Change Multiple Records** form, under **Synchronization Method**, set **Server Profile** to the [!INCLUDE[pn_Exchange_Server_short](../includes/pn-exchange-server-short.md)] profile you created earlier.  
-
-6. Set **Incoming** and **Outgoing** **Email** to **Server-Side Synchronization or Email Router**.  
-
-7. Set **Appointments, Contacts, and Tasks** to **Server-Side Synchronization**.  
-
-8. Select **Change**.  
+2. Click **Save** to apply the changes.  
 
 ## Approve email
 
 You need to approve each user mailbox or queue before that mailbox can process email.  
 
-1. In the Power Platform admin center, select an environment. 
+#### [New admin center](#tab/new)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. On the **Environments** page, choose an environment.
+1. In the command bar, click **Settings**. 
+1. Expand **Email**, then select **Mailboxes**.
+1. In the grid view selector, choose **Active Mailboxes**.
+1. Select the mailboxes you want to approve, then click **Approve Email** in the command bar.  
+1. Click **OK** to apply the changes.
 
-2. Select **Settings** > **Email** > **Mailboxes**.  
-
-3. Select **Active Mailboxes**.  
-
-4. Select the mailboxes that you want to approve, and then select **More Commands** (**…**) > **Approve Email**.  
-
-5. Select **OK**.  
+#### [Classic admin center](#tab/classic)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Environments**.
+1. On the **Environments** page, choose an environment.
+1. In the command bar, click **Settings**.  
+1. Expand **Email**, then select **Mailboxes**.
+1. In the grid view selector, choose **Active Mailboxes**.
+1. Select the mailboxes you want to approve, then click **Approve Email** in the command bar.  
+1. Click **OK** to apply the changes.
+---
 
 ## Test the configuration of mailboxes  
 
-1. In the Power Platform admin center, select an environment. 
+#### [New admin center](#tab/new)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. On the **Environments** page, choose an environment.
+1. In the command bar, select **Settings**. 
+1. Expand **Email**, then select **Mailboxes**.
+1. In the grid view selector, choose **Active Mailboxes**.
+1. Select the mailboxes you want to test, then select **Test & Enable Mailboxes** in the command bar.
 
-2. Select **Settings** > **Email** > **Mailboxes**.  
+#### [Classic admin center](#tab/classic)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Environments**.
+1. On the **Environments** page, choose an environment.
+1. In the command bar, select **Settings**.  
+1. Expand **Email**, then select **Mailboxes**.
+1. In the grid view selector, choose **Active Mailboxes**.
+1. Select the mailboxes you want to test, then select **Test & Enable Mailboxes** in the command bar.
+---
 
-3. Select **Active Mailboxes**.  
+This tests the incoming and outgoing email configuration of the selected mailboxes and enables them for email processing. If an error occurs in a mailbox, an alert is shown on the **Alerts** wall of the mailbox and the profile owner. Depending on the nature of the error, customer engagement apps try to process the email again after some time or disable the mailbox for email processing.  
 
-4. Select the mailboxes you want to test, and then select **Test & Enable Mailboxes**.  
-
-   This tests the incoming and outgoing email configuration of the selected mailboxes and enables them for email processing. If an error occurs in a mailbox, an alert is shown on the **Alerts** wall of the mailbox and the profile owner. Depending on the nature of the error, customer engagement apps try to process the email again after some time or disable the mailbox for email processing.  
-
-   The result of the email configuration test is displayed in the **Incoming Email Status**, **Outgoing Email Status**, and **Appointments, Contacts, and Tasks Status** fields of a mailbox record. An alert is also generated when the configuration is successfully completed for a mailbox. This alert is shown to the mailbox owner.  
-
-> [!TIP]
->  If you're unable to synchronize contacts, appointments, and tasks for a mailbox, you might want to select the **Sync items with Exchange from this org only, even if Exchange was set to sync with a different org** checkbox. More information: [When would I want to use this check box?](when-would-want-use-check-box.md) 
+The result of the email configuration test is displayed in the **Incoming Email Status**, **Outgoing Email Status**, and **Appointments, Contacts, and Tasks Status** fields of a mailbox record. An alert is also generated when the configuration is successfully completed for a mailbox. This alert is shown to the mailbox owner.  
 
 ## Test email configuration for all mailboxes associated with an email server profile  
 
-1. In the Power Platform admin center, select an environment. 
+#### [New admin center](#tab/new)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. On the **Environments** page, choose an environment.
+1. In the command bar, select **Settings**. 
+1. Expand **Email**, then select **Server profiles**.
+1. Select the profile you created, then select **Test & Enable Mailboxes** in the command bar.
 
-2. Select **Settings** > **Email** > **Server profiles**.  
+#### [Classic admin center](#tab/classic)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Environments**.
+1. On the **Environments** page, choose an environment.
+1. In the command bar, select **Settings**.  
+1. Expand **Email**, then select **Server profiles**.
+1. Select the profile you created, then select **Test & Enable Mailboxes** in the command bar.
+---
 
-3. Select the profile you created, and then select **Test & Enable Mailboxes**.  
-
-    When you test the email configuration, an asynchronous job runs in the background. It might take a few minutes for the test to be completed. Customer engagement apps test the email configuration of all the mailboxes associated with the [!INCLUDE[pn_Exchange_Server_short](../includes/pn-exchange-server-short.md)] profile. For the mailboxes configured with server-side synchronization for synchronizing appointments, tasks, and contacts, it also checks to make sure they're configured properly.  
+When you test the email configuration, an asynchronous job runs in the background. It might take a few minutes for the test to be completed. Customer engagement apps test the email configuration of all the mailboxes associated with the server profile. For the mailboxes configured with server-side synchronization for synchronizing appointments, tasks, and contacts, it also checks to make sure they're configured properly.  
 
 > [!TIP]
->  If you're unable to synchronize contacts, appointments, and tasks for a mailbox, you might want to select the **Sync items with Exchange from this org only, even if Exchange was set to sync with a different org** checkbox. More information: [When would I want to use this check box?](when-would-want-use-check-box.md)  
+> If you're unable to synchronize contacts, appointments, and tasks for a mailbox, you might want to select the **Sync items with Exchange from this org only, even if Exchange was set to sync with a different org** checkbox. You can learn more about this tip by reading, [When would I want to use this check box?](when-would-want-use-check-box.md). 
 
 ### See also
 
