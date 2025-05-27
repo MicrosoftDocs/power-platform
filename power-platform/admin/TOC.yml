@@ -34,6 +34,8 @@
               href: quickly-navigate-office-365-app-launcher.md
             - name: Enable preview features
               href: what-are-preview-features-how-do-i-enable-them.md
+            - name: Search with the discovery agent
+              href: discovery-agent.md
             - name: Subscriptions, service health, and more
               items:
                 - name: How do I check my online service health?
