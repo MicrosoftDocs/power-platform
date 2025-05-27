@@ -3,8 +3,11 @@ title: "Microsoft Dataverse and model-driven apps activity logging  | MicrosoftD
 description: Learn how to enable auditing to be used for reports in the Microsoft Purview portal.
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 01/25/2024
+ms.date: 05/27/2025
 author: Zeffin
+contributors:
+ - yingchin
+ - EllenWehrle
 ms.subservice: admin
 ms.custom: NewPPAC
 ms.author: johnev
