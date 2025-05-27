@@ -286,6 +286,27 @@ By doing this, you can decouple operational data from your core systems and enab
 Dataverse offers several built-in tools and strategies to help administrators manage storage efficiently and maintain system performance.
 
 ##### Dataverse 
+**Environment and Data Cleanup**
+- {Delete Unused Environments}(delete-environment.md): You can delete an environment to recover storage space and to remove Personally Identifiable Information (PII).
+- [Bulk Deletion Jobs}(delete-bulk-records): You can delete following data in bulk:
+  - Stale data or Data that is irrelevant to the business.
+  - Unneeded test or sample data.
+  - Data that is incorrectly imported from other systems.
+  
+🔹 File and Table Optimization
+•	Reduce File Storage using Advance Find: This article gives you 15 methods to better manage your storage. Use one or more of these methods to control your total data storage usage. You can delete categories of data as the need arises or set up bulk deletion jobs to reoccur at set intervals. For example, you can delete notes, attachments, import history, and other data.
+•	Clean up records from System Job (AsyncOperationBase) and Process Log (WorkflowLogBase) tables: If your organization makes heavy use of workflows or business process flows, these tables (AsyncOperationBase, WorkflowLogBase) will grow over time and eventually become large enough to introduce performance issues and consume excessive storage in your organization database. For WorkflowLogBase, you can configure to Automatically delete completed background workflow jobs
+🔹 Long-Term Retention (LTR) and Archival
+•	Data Archival: LTR: Microsoft Dataverse supports custom retention policies to securely retain unlimited data long term in a cost-efficient way. While Dataverse can support your business growth with no limit on active data, you might want to consider moving inactive data to the Dataverse long term retention store.
+•	Clean up Dataverse Tables: If you want to retain the data, but remove it from the relational storage, go to Dataverse long term data retention. Otherwise, to clean up the following tables.
+o	ActivityPointerBase: You can follow the steps here to clean up the table.
+o	AsyncOperationBase: You can follow the steps here to clean up the table 
+o	msdyn_copilotinteraction: You can follow the steps here to clean up the table.
+o	PrincipalObjectsAcces: You can follow the steps here to clean up the table.
+o	Subscription Tracking: You can follow the steps here to clean up the table.
+🔹 Search Index Optimization
+•	Reduce Dataverse Search: You can reduce the storage size by performing all the steps here.
+•	Reduce the size of DataverseSearch table: The DataverseSearch table is the cumulative storage used by the Dataverse search index. It includes the data from all searchable, retrievable, and filterable fields of the tables you indexed for your environment. You can reduce the table size by removing Find Columns, View Columns, and Filter conditions for one or more tables. You can turn off Dataverse search to remove all indexed data.
 
 
 
