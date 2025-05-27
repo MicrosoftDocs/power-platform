@@ -337,6 +337,25 @@ Finance and opertions provides flexible options for managing storage across prod
 - Cleanup routines: In Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management, cleanup routines are available in various modules. [Cleanup routines](/dynamics365/fin-ops-core/dev-itpro/sysadmin/cleanuproutines) provides an overview of the routines that are currently available. After copying the sandbox database, run these cleanup routines proactively to remove unnecessary tables—such as batch history, logs, and retail transaction history—and to delete outdated or irrelevant data.
 - [Archive credit card transaction data](/dynamics365/commerce/dev-itpro/archive-cc-data): Describes an archival job in Microsoft Dynamics 365 Commerce that can help free up space in the database by archiving credit card payment tokens.
 
+### Reduce storage size and costs
+
+#### Scenario 2: You Are Already in a Situation Where Reducing Storage Size and Cost Is Necessary
+1. Assess What’s Consuming Storage
+  - Use the Power Platform Admin Center (PPAC) and F&O Storage Reports to identify top-consuming tables, file types, and logs.
+  - Leverage telemetry (if available) to attribute usage to specific apps, users, or business units.
+1. Prioritize Cleanup Candidates
+  - Focus on:
+    - Staging and integration tables (e.g., dual-write buffers)
+    - Audit logs: retain it in your own storage.
+    - Unused environments or sandboxes
+    - Orphaned metadata and search indexes
+    - Delete what you don’t need -> bulk delete, and we have a bunch of retention policies (logs, jobs.)
+1. Use Synapse Link and OneLake for Analytical reporting
+  - Export the analytical data to Synapse Link
+  - Use OneLake to access the retained data and business data for reporting and analytical purposes.
+1. Apply Long-Term Retention (LTR)
+  - Move historical data to a Managed Data Lake (MDL) using LTR policies.
+  - Maintain search and analytics access via Quick Find, Synapse Link, or OneLake.
 
 
 
