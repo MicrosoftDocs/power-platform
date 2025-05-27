@@ -42,31 +42,32 @@ This article outlines practical approaches to storage management that help custo
 To select and optimise the right data retention pattern for your data, it's valuable to reflect on the reasons and uses for which we store data.
 
 ### Operational data
-With a business application, operational data is what is used to execute the business tracking sales, or financial or supply chain actions. 
+With a business application, operational data is what is used to track sales or financial or supply chain actions. 
 
-This data needs to be accessed in real time supporting customer and internal operational processes of the business recording granular actions such as interactions with customers, orders or inventory activities. 
+This data needs to be accessed in real time, supporting customer and internal operational processes that record granular actions such as interactions with customers, orders, or inventory activities. 
 
-Over time operational data may move from being actively used to infrequently used but would need to be accessible in near real time assisting a customer in an order or support case e.g. 
-- from a customer placing an order to one who has not interacted with the business for some time
-- Each order that has been placed and is being shipped being accessed constantly to < 1% of orders one that under a warranty period of 3 years may need to be referenced for support and possibly requiring a refund
+Over time, operational data may move from being actively used to infrequently used. The data might need to be accessible in near real time, to assist a customer with an order or in a support case. For example, consider the following scenarios:
+
+- A customer places an order, while another customer, who hasn't interacted with the business for some time, places an order.
+- Each order that has been placed and is being shipped, is being accessed constantly. There are also orders that are under a warranty period of three years that may need to be referenced for support and possibly requirr a refund.
 
 This may lead to phases of operational data access needs such as:
 
-- < 1 year of actively accessed data
-- < 3 years of infrequently accessed data
-- > 3 years where data is no longer operationally accessed
+- Less than one year of actively accessed data.
+- Less than three years of infrequently accessed data.
+- More than three years where data is no longer operationally accessed.
 
-The real time nature of operational storage does make that relatively expensive compared to other storage, so recognising where data needs to be accessed operationally and where it does not is important for defining retention strategies.
+The real time nature of operational storage does make that relatively expensive compared to other storage, so recognizing when data needs to be accessed operationally and when it doesn't is important for defining retention strategies.
 
-### Operational Integration
+### Operational integration
 
-As a specialised category of operational use, data may be required to be replicated between multiple operational systems, including patterns such as:
+As a specialized category of operational use, data may be required to be replicated between multiple operational systems, including patterns such as:
 
-- Banking: CRM for front line customer interactions and replication to multiple banking systems (current accounts, credit cards, mortgage, credit check systems)
-- Manufacturing: CRM for front line order taking and ERP for supply chain management
-- Police emergency handling: CRM for citizen interactions and Dispatch systems for police offer deployment management
+- Banking: Customer relationship management for front line customer interactions and replication to multiple banking systems. For example, you have current accounts, credit cards, mortgage, and credit check systems.
+- Manufacturing: Customer relationship management for front line order taking and and enterprise resource management system for supply chain management.
+- Police emergency handling: Customer relationship management for citizen interactions and a dispatch systems for police offer deployment management.
 
-In these cases, while each system may have unique data it tracks, there is often common master data needing to be shared between them and kept in sync leading to integration needs
+In these cases, while each system may have unique data it tracks, there is often common, master data that needs to be shared between the systems and kept in sync, leading to integration needs.
 
 ### Audit data
 A business typically has regulatory responsibility to keep data for extended periods (e.g. for 7 years on average) for audit purposes, whether internal or external, such as supporting financial auditing, regulatory disclosure or fraud review.
@@ -74,11 +75,11 @@ A business typically has regulatory responsibility to keep data for extended per
 This data would typically span both data needed for operational purposes and data that is no longer needed as it allows review across the data set from one place.
 
 ### Analytics data
-Organizations also have a need to review and analyse the state of their business, measuring and comparing over time as well as spanning multiple or all parts of the business. 
+Organizations also have a need to review and analyze the state of their business. They must measure and compare statistics over time, as well as spanning multiple or all parts of the business. 
 
-The large periods and breadth of data over which this analysis can occur leads to the need to replicate operational data into specialist analytics tools. This avoids complex analytics from affecting the performance of operational systems but also allows analysis across data sets that go beyond the period for which data is needed operationally e.g. over 7 years rather than over 1-2 years. Differing analytics needs however may need the full data retention periods or only span the data retained in operational systems 
+The large periods and breadth of data over which this analysis can occur leads to the need to replicate operational data into specialized, analytics tools. This avoids complex analytics from affecting the performance of operational systems, but also allows analysis across data sets that go beyond the period for which data is needed operationally. For example, you might need to compare data over seven years, rather than over one to two years. Differing analytics needs however may need the full data retention periods or only span the data retained in operational systems.
 
-It also typically allows for aggregation of data across multiple parts of the business, so combines data fed from multiple systems.
+Analytics data typically allows for aggregation of data across multiple parts of the business and combines data from multiple systems.
 
 ### Flow of data
 
