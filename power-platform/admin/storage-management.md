@@ -196,36 +196,36 @@ As data volumes grow and application responsiveness becomes critical, customers 
 
 To improve performance, customers and ISVs often create:
 
-1. Custom indexes and materialized views.
+- **Custom indexes and materialized views**
 
-    These are used to accelerate query execution by precomputing joins or aggregations. They are particularly helpful in scenarios involving complex filters or large datasets.
+  These are used to accelerate query execution by precomputing joins or aggregations. They are particularly helpful in scenarios involving complex filters or large datasets.
 
-1. Denormalized tables for reporting.
+- **Denormalized tables for reporting**
 
-    To simplify reporting and reduce query complexity, developers often create flattened versions of relational data. These tables reduce the need for runtime joins and improve dashboard performance.
+  To simplify reporting and reduce query complexity, developers often create flattened versions of relational data. These tables reduce the need for runtime joins and improve dashboard performance.
 
-1. Caching layers or aggregates.
+- **Caching layers or aggregates**
 
-    Frequently accessed data is sometimes pre-aggregated or cached in intermediate tables or external stores to reduce load on the primary database.
+  Frequently accessed data is sometimes pre-aggregated or cached in intermediate tables or external stores to reduce load on the primary database.
 
 While these improve responsiveness, they also:
 
-- Icrease storage usage.
+- Icrease storage usage
 
-    Each optimization layer introduces additional data structures—whether it's a copy of existing data in a denormalized format, a precomputed view, or a cache table. These structures often duplicate data already stored elsewhere, leading to a larger overall storage footprint. In environments with strict storage quotas or cost-based licensing models (like Dataverse), this can quickly escalate into avoidable overages.
+  Each optimization layer introduces additional data structures, whether it's a copy of existing data in a denormalized format, a precomputed view, or a cache table. These structures often duplicate data already stored elsewhere, leading to a larger overall storage footprint. In environments with strict storage quotas or cost-based licensing models, like Dataverse, this can quickly escalate into avoidable overages.
 
-- Can become orphaned as apps evolve.
+- Can become orphaned as apps evolve
 
-    As applications evolve, some optimization artifacts may no longer be referenced by active reports, dashboards, or integrations. These "orphaned" objects continue to consume storage and may even slow down system operations (e.g., during backups or indexing) if not identified and removed. Without regular audits, they can accumulate unnoticed, undermining the very performance gains they were created to support.
+  As applications evolve, some optimization artifacts may no longer be referenced by active reports, dashboards, or integrations. These _orphaned_ objects continue to consume storage and may even slow down system operations, for example, during backups or indexing, if not identified and removed. Without regular audits, they can accumulate unnoticed, undermining the very performance gains they were created to support.
 
-_Query optimization is essential for scale but must be balanced with storage hygiene and telemetry-driven tuning._
+Query optimization is essential for scale but must be balanced with storage hygiene and telemetry-driven tuning.
 
-### Indexes and Their Impact on Storage
-Indexes are essential for improving query performance and enabling fast data retrieval in large datasets. In both Dataverse and Dynamics 365 Finance & Operations (F&O), indexes are automatically created for primary keys and frequently queried fields, and additional custom indexes can be defined to support specific business scenarios.
+### Indexes and their impact on storage
+Indexes are essential for improving query performance and using fast data retrieval in large datasets. In both Dataverse and Dynamics 365 finance and operations apps, indexes are automatically created for primary keys and frequently queried fields, and additional custom indexes can be defined to support specific, business scenarios.
 
-While indexes are critical for performance, they also have a direct impact on storage consumption—often underestimated during solution design.
+While indexes are critical for performance, they also have a direct impact on storage consumption, often underestimated during solution design.
 
-#### How Indexes Consume Storage
+#### How indexes consume storage
 
 1. **Physical Duplication of Data**
 Each index stores a copy of the indexed column(s), along with pointers to the corresponding rows. The more columns and rows indexed, the larger the index size.
