@@ -357,7 +357,33 @@ Finance and opertions provides flexible options for managing storage across prod
   - Move historical data to a Managed Data Lake (MDL) using LTR policies.
   - Maintain search and analytics access via Quick Find, Synapse Link, or OneLake.
 
+## Use cases
+Use cases for storage management in Dataverse and Finance & Operations (F&O) environments are critical for optimizing database space, enhancing system performance, and meeting regulatory requirements. Below are some typical scenarios that demonstrate how these strategies can be applied:
 
+1. Managing Growth of Historical Data
+  **Scenario**: A business has been live on Dynamics 365 for several years and has accumulated large volumes of historical transactions, and attachments.
+  **Action**: Implement long-term retention (LTR) strategies to retain inactive data, reduce primary database size, and maintain compliance with audit requirements.
+1. Compliance-Driven Data Retention:
+  **Scenario**: A regulated industry customer must retain financial or customer data for 7–10 years in a tamper-proof format.
+  **Action**: Use LTR to retain the immutable, read-only data in compliance with legal and regulatory requirements, while keeping business data lean without compromising on the analytics and reporting.
+1. Search and Copilot Index Optimization
+  **Scenario**: Dataverse Search and Copilot indexing are enabled across all environments, including unused tables.
+  **Action**: Audit searchable fields and disable indexing for low-value or deprecated tables. Monitor the size of the DataverseSearch table and optimize configurations to reduce log and database storage.
+1. Audit and Telemetry Management
+  **Scenario**: Plugin trace logs and audit logs are growing rapidly, consuming storage and impacting performance.
+  **Action**: Export logs to external systems (e.g., Azure Monitor), and automate cleanup of old entries to maintain visibility without bloating storage.
+1. Data Warehousing and Analytics Integration
+  **Scenario**: The organization replicates operational data to Synapse or OneLake for analytics, leading to duplicated storage.
+  **Action**: Use incremental exports, apply filters, and avoid full dataset replication to minimize redundancy while enabling rich insights.
+1. Reducing Storage Overages
+  **Scenario**: A customer receives a notification about exceeding their Dataverse storage quota, leading to unexpected costs.
+  **Action**: Use capacity reports to identify top-consuming tables, clean up obsolete environments, and remove unused attachments or logs. Consider moving cold data to lower-cost storage tiers.
+1. Optimizing Performance in Large Tables
+  **Scenario**: Business-critical processes are slowing down due to large tables.
+  **Action**: Archive old records, clean up system jobs (e.g., AsyncOperationBase, WorkflowLogBase).
+1. Environment Lifecycle Management
+  **Scenario**: Development and test environments are cloned from production, duplicating all data and indexes.
+  **Action**: Trim sandbox environments post-refresh, disable unnecessary search indexing, and remove test data to reduce redundant storage consumption. Delete unused sandbox environments to save storage.
 
 
 
