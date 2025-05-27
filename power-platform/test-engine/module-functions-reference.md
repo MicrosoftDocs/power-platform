@@ -37,7 +37,7 @@ These functions are available through the Power Fx Preview namespace when the co
 testSettings:
   extensionModules:
     enable: true
-    allowNamespaces:
+    allowPowerFxNamespaces:
       - Preview
 ```
 
