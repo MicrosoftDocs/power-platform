@@ -10,7 +10,7 @@ contributors:
   - EllenWehrle
 ms.subservice: admin
 ms.custom: NewPPAC
-ms.author: johnev
+ms.author: yingchin
 ms.reviewer: sericks 
 search.audienceType: 
   - admin
@@ -25,7 +25,7 @@ This topic explains how to configure Power Apps, Power Automate, and customer en
 
 ## Requirements
 
-- At least one user assigned a Microsoft/Office 365 [E1](https://www.microsoft.com/microsoft-365/enterprise/office-365-e1) or greater license.
+- At least one user assigned a [Microsoft Office 365 E1](https://www.microsoft.com/microsoft-365/enterprise/office-365-e1) or greater license.
 - Available for production and not sandbox environments.
 
 ## What events are audited
