@@ -3,8 +3,11 @@ title: "Microsoft Dataverse and model-driven apps activity logging  | MicrosoftD
 description: Learn how to enable auditing to be used for reports in the Microsoft Purview portal.
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 01/25/2024
+ms.date: 05/27/2025
 author: Zeffin
+contributors:
+ - yingchin
+ - EllenWehrle
 ms.subservice: admin
 ms.custom: NewPPAC
 ms.author: johnev
@@ -107,32 +110,32 @@ Access requires sufficient permissions, such as System Administrator or System C
 1. Expand **Audit and logs**, then select **Audit settings**.
 ---
 
-**Audit Settings Configuration**
+**Configure Audit settings**
 On the **Audit settings** page:
-1. Under **Auditing**, enable the following options:
+1. Under **Auditing**, turn on the following options:
    - **Start Auditing** - Activates auditing for the environment.
-   - **Audit user access** - Tracks user sign-ins.
-   - **Start Read Auditing** - captures most user activities and events.
+   - **Log access** - Tracks user sign-ins.
+   - **Read logs** - Captures most user activities and events.
 2. Set the **retention policy** for auditing logs based on your requirements.
-3. Click **Save** to apply the changes.
+3. Select **Save** to apply the changes.
 
-**Setting Organization-Leve Auditing on Tables**
-1. From the **Audit settings** page, click **Global Audit Settings**.
+**Set organization-level auditing on tables**
+1. From the **Audit settings** page, select **Global Audit Settings**.
 2. Under **Enable Auditing in the following areas**, select the check boxes for the areas you want to audit.
-3. Click **OK** to apply the changes.
+3. Select **OK** to apply the changes.
    
-**Setting Table-Level Auditing**
+**Set table-level auditing**
 1. Sign in to [Power Apps Home Page](https://make.powerapps.com/).
 2. In the command bar, select **Settings**, then choose **Advanced settings**.
-3. Select **Customizations**, then click **Customize the System**.
+3. Select **Customizations**, then select **Customize the system**.
 4. In the navigation pane, under **Components**, expand **Entities** and select the entity to audit (for example, **Account**).
 5. Scroll down to **Data Services**, then enable the check box for **Auditing**.
 6. Under **Auditing**, enable the following options:
    - **Single record auditing. Log a record when opened.**
    - **Multiple record auditing. Log all records displayed on an opened page.**
-7. In the command bar, click **Save** to apply the changes.
-8. Click **Publish** to finalize the customization.
-9. Repeat steps **4 - 8** for other tables you want to audit.
+7. In the command bar, select **Save** to apply the changes.
+8. Select **Publish** to finalize the customization.
+9. Repeat steps **4–8** for other tables you want to audit.
 10. Turn on audit logging in **Microsoft Purview**. See [Turn audit log search on or off](https://support.office.com/article/turn-office-365-audit-log-search-on-or-off-e893b19a-660c-41f2-9074-d3631c95a014).
 
 
