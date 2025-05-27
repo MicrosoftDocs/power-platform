@@ -30,6 +30,10 @@ Create a yaml file using the test plan schema explained in [Power Apps Test Engi
 > [!TIP]
 > Review [available sample](samples.md#available-samples) plans in the GitHub repository.
 
+## Enable Preview
+Refer [Preview feature](yaml.md#Preview-Features)
+
+
 ## Set up your user
 
 Test Engine currently has these authentication methods:
