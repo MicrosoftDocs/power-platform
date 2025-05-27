@@ -31,7 +31,7 @@ Create a yaml file using the test plan schema explained in [Power Apps Test Engi
 > Review [available sample](samples.md#available-samples) plans in the GitHub repository.
 
 ## Enable Preview
-Refer [Preview feature](yaml.md#Preview-Features)
+Refer [Preview feature](yaml.md#preview-features)
 
 
 ## Set up your user
