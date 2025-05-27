@@ -1,7 +1,7 @@
 ---
 title: Tenant-to-tenant migrations 
 description: Learn about the impact of migrating an environment from one tenant to another. 
-ms.date: 05/13/2025
+ms.date: 05/21/2025
 ms.topic: concept-article
 author: matapg007
 contributors:
@@ -233,8 +233,7 @@ TenantToTenant-PrepareMigration
 ```
 
 > [!Note]
-> While passing the **SASUri** value, you must provide the parameter like this:
-> `https://dynamics.blob.core.windows.net/20240604t000000z73e18df430fe40059290dsddc25d783`.
+> The **SASUri** value must be provided from the output of the **TenantToTenant-UploadUserMappingFile** command.
 
 #### Sample output
 
@@ -296,6 +295,7 @@ The **MigrationId** can be viewed using the **TenantToTenant-ViewMigrationReques
 TenantToTenant-MigratePowerAppEnvironment
 -MigrationId {MigrationId}
 -TargetTenantId {TargetTenantId}
+-SecurityGroupId {SecurityGroupId}
 ```
 ### Get status (source admin)
 

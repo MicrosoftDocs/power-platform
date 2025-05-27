@@ -5,7 +5,7 @@ author: snamilikonda
 ms.author: snamilikonda
 ms.date: 05/19/2025
 ms.reviewer: jdaly
-ms.topic: article
+ms.topic: reference
 ---
 
 # File access restrictions for Test Engine (preview)

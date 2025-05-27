@@ -131,10 +131,10 @@ Potential future enhancements to the authentication security architecture includ
 
 ### Related articles
 
-[Data Protection in ASP.NET Core](/aspnet/core/security/data-protection/introduction)
-[Windows Data Protection API](/dotnet/standard/security/how-to-use-data-protection)
-[Microsoft Entra authentication](/entra/identity/authentication/overview-authentication)
-[Dataverse security model](../admin/wp-security-cds.md)
+[Data Protection in ASP.NET Core](/aspnet/core/security/data-protection/introduction)  
+[Windows Data Protection API](/dotnet/standard/security/how-to-use-data-protection)  
+[Microsoft Entra authentication](/entra/identity/authentication/overview-authentication)  
+[Dataverse security model](../admin/wp-security-cds.md)  
 [X.509 certificate-based authentication](/entra/identity/authentication/concept-certificate-based-authentication)
 
 [!INCLUDE [footer-banner](../includes/footer-banner.md)]
