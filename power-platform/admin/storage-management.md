@@ -250,11 +250,11 @@ There are two possible scenarios:
 1. You want to proactively apply best practices to manage storage and avoid high costs in the future.
 1. You’re already in a situation where reducing storage size and cost is necessary.
 
-## Apply best practices to manage storage size and costs
+### Apply best practices to manage storage size and costs
 
-### Scenario 1: You Want to Proactively Apply Best Practices to Manage Storage
+#### Scenario 1: You Want to Proactively Apply Best Practices to Manage Storage
 If you're not yet in crisis mode, now is the time apply tools and techniques to manage the storage proactively:
-****
+
 #### Configure analytics for your data
 As organizations grow, so does the need to extract insights from operational data—without impacting the performance of core business applications. Microsoft offers multiple ways to enable analytics on Dataverse and Dynamics 365 Finance & Operations (F&O) data by integrating with your own data lake or warehouse.
 
@@ -282,6 +282,10 @@ Benefits:
 
 By doing this, you can decouple operational data from your core systems and enable scalable, cost-effective analytics by exporting that data to their own analytical environments—without duplicating workloads or impacting performance.
 
+#### Tools and techniques to reduce the storage
+Dataverse offers several built-in tools and strategies to help administrators manage storage efficiently and maintain system performance.
+
+##### Dataverse 
 
 
 
