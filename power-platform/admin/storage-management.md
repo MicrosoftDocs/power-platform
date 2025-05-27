@@ -97,7 +97,7 @@ Dataverse organizes storage into three main categories, each with distinct usage
 | File storage | Stores attachments and binary data. | Email attachments, images, documents uploaded via Power Apps. | 
 | Log storage | Stores audit logs and plugin trace logs. | Change tracking, auditing, diagnostics, and compliance. |
 
-Finance and operations platform storage types
+### Finance and operations platform storage types
 
 Finance and operations storage is managed separately but is increasingly being integrated into the Power Platform ecosystem. It includes:
 
@@ -164,9 +164,9 @@ Audit logs, plugin trace logs, and telemetry are critical for compliance, debugg
 - **Log storage** grows linearly with usage and user count.
     Log data grows proportionally with:
   
-      - The number of users and their activity levels
-      - The volume of transactions and integrations
-      - The complexity of business logic (e.g., plugins, workflows)
+  - The number of users and their activity levels
+  - The volume of transactions and integrations
+  - The complexity of business logic (e.g., plugins, workflows)
   
     In high-usage environments, this can lead to rapid expansion of log tables, consuming both database and log storage quotas.
   
