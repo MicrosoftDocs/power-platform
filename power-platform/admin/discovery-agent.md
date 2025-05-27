@@ -3,7 +3,7 @@ title: Search with the discovery agent
 description: Learn how to use the discovery agent in the Power Platform admin center.
 ms.subservice: admin
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 05/27/2025
 ms.custom: NewPPAC
 author: Greggbarker-ms
