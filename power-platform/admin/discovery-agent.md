@@ -4,7 +4,7 @@ description: Learn how to use the discovery agent in the Power Platform admin ce
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/01/2025
+ms.date: 05/27/2025
 ms.custom: NewPPAC
 author: Greggbarker-ms
 ms.author: grbarker
