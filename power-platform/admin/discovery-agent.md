@@ -16,7 +16,7 @@ search.audienceType:
 
 # Search with the discovery agent
 
-The discovery agent is an advanced global search tool integrated into the Power Platform admin center. It's designed to enhance user navigation within the admin center by leveraging natural language search capabilities. This tool allows users to quickly and efficiently locate information, settings, and features without needing to know their exact location or name. By providing accurate and context-relevant search results, the discovery agent helps improve overall productivity and simplifies the search process.
+The discovery agent is an advanced global search tool integrated into the Power Platform admin center. It's designed to enhance user navigation within the admin center by using natural language search capabilities. This tool allows users to quickly and efficiently locate information, settings, and features without needing to know their exact location or name. By providing accurate and context-relevant search results, the discovery agent helps improve overall productivity and simplifies the search process.
 
 :::image type="content" source="media/discovery-agent.png" alt-text="The discovery agent is an advanced global search tool integrated into the Power Platform admin center." lightbox="media/discovery-agent.png":::
 
@@ -45,7 +45,7 @@ The discovery agent supports the following categories for searches:
 
 For example, if you type _copilot_ into the search bar, discovery agent finds appropriate settings and pages in the Power Platform admin center, documentation, and training modules available at [learn.microsoft.com](https://learn.microsoft.com), as shown in the following image.
 
-:::image type="content" source="media/results-list.png" alt-text="Quickly and efficiently locate information, settings, and features ." lightbox="media/results-list.png":::
+:::image type="content" source="media/results-list.png" alt-text="Quickly and efficiently locate information, settings, and features." lightbox="media/results-list.png":::
 
 ## Limitations
 - The discovery agent doesn't support dynamic content searches for users, groups, and environments. This functionality is planned for future updates.
