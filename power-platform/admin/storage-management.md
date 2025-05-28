@@ -4,7 +4,7 @@ description: Learn about storage management in Dataverse and finance and operati
 author: ritesp
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 05/27/2025
+ms.date: 05/28/2025
 ms.subservice: admin
 ms.author: ritesp
 ms.reviewer: sericks
@@ -180,7 +180,7 @@ Audit logs, plug-in trace logs, and telemetry are critical for compliance, debug
   
 - **System-generated logs** are billed to the customer in Dataverse.
 
-    In Dataverse, system-generated logs, including audit logs and plug-in trace logs, are counted against the customer’s storage entitlement. This means that without proper cleanup or export strategies, logging can directly contribute to storage overages and increased licensing costs.
+    In Dataverse, system-generated logs, including audit logs and plug-in trace logs, are counted against the customer’s storage entitlement. This means that without proper clean-up or export strategies, logging can directly contribute to storage overages and increased licensing costs.
 
 Logging is non-negotiable for regulated industries, but must be paired with retention and export strategies, such as Azure Monitor or Log Analytics.
 
@@ -339,7 +339,7 @@ Finance and opertions apps provides flexible options for managing storage across
 - [Archive customization](/dynamics365/fin-ops-core/dev-itpro/sysadmin/archive-custom)
 - [Inventory transaction consolidation](/dynamics365/supply-chain/inventory/archive-inventory-transactions#view-archived-inventory-transactions)
 
-**Built-in cleanup routines**
+**Built-in clean-up routines**
 - Clean-up routines: In Dynamics 365 Finance and Dynamics 365 Supply Chain Management, clean-up routines are available in various modules. [Clean-up routines](/dynamics365/fin-ops-core/dev-itpro/sysadmin/cleanuproutines) provides an overview of the routines that're currently available. After copying the sandbox database, run these clean-up routines proactively to remove unnecessary tables, such as batch history, logs, and retail transaction history. Delete outdated or irrelevant data.
 - [Archive credit card transaction data](/dynamics365/commerce/dev-itpro/archive-cc-data): Describes an archival job in Dynamics 365 Commerce that can help free up space in the database by archiving credit card payment tokens.
 
