@@ -49,14 +49,16 @@ items:
     href: feature-lifecycle.md
   - name: Migration
     href: migration-guide.md
-  - name: Test engine and Playwright
-    href: playwright.md
-  - name: Authentication security
-    href: authentication-security.md
-  - name: Extensibility
-    href: extensibility.md
-  - name: Providers
-    href: providers.md
+  - name: Advanced topics
+    items:
+    - name: Test engine and Playwright
+      href: playwright.md
+    - name: Authentication security
+      href: authentication-security.md
+    - name: Extensibility
+      href: extensibility.md
+    - name: Providers
+      href: providers.md
   - name: Reference
     items:
     - name: Yaml format
