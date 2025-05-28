@@ -6,6 +6,20 @@
           href: index.yml
         - name: Overview of the Power Platform admin center
           href: admin-documentation.md
+        - name: Use the new Power Platform admin center
+          href: new-admin-center.md
+        - name: Environment management
+          items:
+            - name: Environment management capabilities
+              href: environment-management-overview.md
+            - name: Managed security
+              href: security/managed-security.md
+            - name: Managed governance
+              href: managed-governance.md
+            - name: Managed operations
+              href: operations/overview.md
+            - name: Managed availability
+              href: managed-availability.md
         - name: Get started
           items:
             - name: Role of a Power Platform administrator
@@ -14,62 +28,40 @@
               href: wp-management-monitoring.md
             - name: Try Power Platform apps for free
               href: try-powerapps-dynamics-365.md
-            - name: Move between your apps
-              href: quickly-navigate-office-365-app-launcher.md
             - name: Sign in to your apps
               href: sign-in-office-365-apps.md
-            - name: Manage subscription with Microsoft 365 admin center
-              href: use-office-365-admin-center-manage-subscription.md
-            - name: How do I check my online service health?
-              href: check-online-service-health.md
-            - name: Enabling preview features
+            - name: Move between your apps
+              href: quickly-navigate-office-365-app-launcher.md
+            - name: Enable preview features
               href: what-are-preview-features-how-do-i-enable-them.md
-            - name: Use the new Power Platform admin center (preview)
-              href: new-admin-center.md
-            - name: Requirements
+            - name: Search with the discovery agent
+              href: discovery-agent.md
+            - name: Subscriptions, service health, and more
               items:
-                - name: URLs and IP address ranges
-                  href: online-requirements.md
-                - name: End of support for Internet Explorer
-                  href: support-end-internet-explorer.md
-                - name: Plan for deployment and administration
-                  href: plan-for-deployment-and-administration.md
-                - name: Server cipher suites and TLS requirements
-                  href: server-cipher-tls-requirements.md
-            - name: Unified Interface
-              items:
-                - name: About Unified Interface
-                  href: about-unified-interface.md
-                - name: Enable Unified Interface Only
-                  href: enable-unified-interface-only.md
-                - name: Update apps to Unified Interface
-                  href: update-apps-to-unified-interface.md
-                - name: Enable the hybrid experience
-                  href: enable-hybrid-experience.md
-        - name: Support
-          items:
-            - name: Get Help + Support
-              href: get-help-support.md
-            - name: Support overview
-              href: support-overview.md
-            - name: Use live chat with persistence
-              href: live-chat-support.md
-            - name: View known issues
-              href: view-known-issues.md
-            - name: View service health
-              href: view-service-health.md
-            - name: Support environments and the consent process
-              href: support-environment.md
-            - name: Determine your organization ID and name
-              href: determine-org-id-name.md
-            - name: Manage email notifications to admins
-              href: manage-email-notifications.md
-            - name: Policies and communications
-              href: policies-communications.md
-            - name: Manage maintenance window
-              href: manage-maintenance-window.md
-            - name: Notifications explained
-              href: notifications-explained.md
+                - name: How do I check my online service health?
+                  href: check-online-service-health.md
+                - name: Manage subscription with Microsoft 365 admin center
+                  href: use-office-365-admin-center-manage-subscription.md
+                - name: Requirements
+                  items:
+                    - name: URLs and IP address ranges
+                      href: online-requirements.md
+                    - name: End of support for Internet Explorer
+                      href: support-end-internet-explorer.md
+                    - name: Plan for deployment and administration
+                      href: plan-for-deployment-and-administration.md
+                    - name: Server cipher suites and TLS requirements
+                      href: server-cipher-tls-requirements.md
+                - name: Unified Interface
+                  items:
+                    - name: About Unified Interface
+                      href: about-unified-interface.md
+                    - name: Enable Unified Interface Only
+                      href: enable-unified-interface-only.md
+                    - name: Update apps to Unified Interface
+                      href: update-apps-to-unified-interface.md
+                    - name: Enable the hybrid experience
+                      href: enable-hybrid-experience.md
         - name: Licensing
           items:
             - name: Overview
@@ -136,6 +128,8 @@
               href: api-request-limits-allocations.md
             - name: Power Platform licensing FAQs
               href: powerapps-flow-licensing-faq.md
+        - name: Deploy (preview)
+          href: ../alm/admin-deployment-hub.md
         - name: Environments
           items:
             - name: Administer environments
@@ -166,16 +160,6 @@
                   href: edit-properties-environment.md
                 - name: Administration mode
                   href: admin-mode.md
-                - name: Encryption key management
-                  items:
-                    - name: Self-managed key (BYOK)
-                      href: manage-encryption-key.md
-                    - name: Customer-managed key
-                      href: customer-managed-key.md
-                    - name: Lock and unlock environments
-                      href: cmk-lock-unlock.md
-                    - name: Migrate from BYOK
-                      href: cmk-migrate-from-byok.md
                 - name: Sandbox environment
                   href: sandbox-environments.md
                 - name: Trial environments
@@ -200,20 +184,12 @@
                   href: environment-groups-rules.md
                 - name: Enable maker welcome content
                   href: welcome-content.md
-                - name: Limit sharing
-                  href: managed-environment-sharing-limits.md
                 - name: Usage insights
                   href: managed-environment-usage-insights.md
-                - name: Data policies
-                  href: managed-environment-data-policies.md
                 - name: Solution checker enforcement
                   href: managed-environment-solution-checker.md
                 - name: Licensing
                   href: managed-environment-licensing.md
-                - name: Safeguarding Dataverse sessions with IP cookie binding
-                  href: block-cookie-replay-attack.md
-                - name: Configure IP firewall
-                  href: ip-firewall.md
                 - name: Power Platform Advisor
                   items:
                     - name: Overview
@@ -260,7 +236,7 @@
                       href: settings-collaboration.md
                     - name: Features
                       href: settings-features.md
-                    - name: Enable languages
+                    - name: Regional and language options
                       href: enable-languages.md
                     - name: Manage privacy and security settings
                       href: settings-privacy-security.md
@@ -314,20 +290,6 @@
                       href: user-channel-override.md
                     - name: Plug-in steps
                       href: plug-ins.md
-                - name: Audit and logs
-                  items:
-                    - name: Audit log management
-                      href: recover-database-space-deleting-audit-logs.md
-                    - name: Audit settings
-                      href: system-settings-dialog-box-auditing-tab.md
-                    - name: Manage Dataverse auditing
-                      href: manage-dataverse-auditing.md
-                    - name: Audit security roles
-                      href: audit-security-roles.md
-                    - name: Access audit data using Azure Synapse Link for Dataverse
-                      href: audit-data-azure-synapse-link.md
-                    - name: System jobs
-                      href: manage-dataverse-auditing.md#monitoring-system-jobs
                 - name: Templates
                   items:
                     - name: Access team templates
@@ -358,7 +320,7 @@
                       href: supported-email-service-configurations-server-side-synchronization.md
                 - name: Integration
                   items:
-                    - name: Enable server-based SharePoint integration
+                    - name: Configure server-based authentication with SharePoint on-premises
                       href: configure-server-based-authentication-sharepoint-on-premises.md
                     - name: Document management settings
                       href: enable-sharepoint-document-management-specific-entities.md
@@ -408,10 +370,6 @@
                       href: /dynamics365/customerengagement/on-premises/basics/import-accounts-leads-other-data
                     - name: Sample data
                       href: add-remove-sample-data.md
-                - name: Encryption
-                  items:
-                    - name: Encrypt your column-level data
-                      href: data-encryption.md
                 - name: Resources
                   items:
                     - name: All legacy settings
@@ -476,42 +434,128 @@
                   href: wp-task-automation-powershell.md
                 - name: Automation of tasks with Power Automate
                   href: wp-task-automation-flow.md
-        - name: Managed operations
+        - name: Monitor
           items:
-            - name: Overview
-              href: operations/overview.md
-            - name: Monitor page (preview)
+            - name: Overview (preview)
               href: monitoring/monitoring-overview.md
-            - name: View logs (preview)
+            - name: View event logs and error logs (preview)
               href: monitoring/logs.md
-        - name: Security and governance
-          items:
-            - name: Security and governance
-              href: security.yml
-            - name: Overview of Power Platform security
-              href: security/overview.md
-            - name: Managed security
-              href: security/managed-security.md
-            - name: Security page
+            - name: Metrics and recommendations
               items:
-                - name: Overview
-                  href: security/security-overview.md
+                - name: For Power Apps (preview)
+                  href: monitoring/monitor-power-apps.md
+                - name: For Power Automate (preview)
+                  href: monitoring/monitor-power-automate.md
+        - name: Copilot
+          href: copilot/copilot-hub.md
+        - name: Security
+          items:
+            - name: Security overview
+              href: security/security-overview.md
+            - name: Data and privacy
+              items:
                 - name: Data protection and privacy
                   href: security/data-protection-privacy.md
-                - name: Identity and access
+                - name: Encryption
                   items:
-                    - name: Identity and access management
-                      href: security/identity-access-management.md
-                    - name: App access control
+                    - name: About data encryption
+                      href: about-encryption.md
+                    - name: Manage the encryption key
+                      href: manage-encryption-key.md
+                    - name: Manage your customer-managed encryption key
+                      href: customer-managed-key.md
+                    - name: Lock and unlock environments
+                      href: cmk-lock-unlock.md
+                    - name: Migrate BYOK environments
+                      href: cmk-migrate-from-byok.md
+                    - name: Encrypt column-level data
+                      href: data-encryption.md
+                - name: Data policies
+                  items:
+                    - name: Data policies for Managed Environments
+                      href: managed-environment-data-policies.md
+                    - name: Data loss prevention (DLP) policies
+                      href: wp-data-loss-prevention.md
+                    - name: Known limitations
+                      href: dlp-known-issues.md
+                    - name: Policies
                       items:
-                        - name: Control which apps are allowed in your environment (preview)
-                          href: control-app-access-environment.md
-                        - name: Commonly used Microsoft first-party services and portal apps (preview)
-                          href: apps-to-allow.md
-                - name: Compliance
+                        - name: Manage data policies
+                          href: prevent-data-loss.md
+                        - name: Policy scopes
+                          href: dlp-policy-scope.md
+                        - name: Effect of multiple policies
+                          href: dlp-combined-effect-multiple-policies.md
+                        - name: Disable new connectors
+                          href: connector-off-by-default.md
+                        - name: Design-time versus runtime
+                          href: dlp-impact-policies-apps-flows.md
+                        - name: Exempt apps and flows
+                          href: dlp-resource-exemption.md
+                    - name: Certified connectors
+                      items:
+                        - name: Connector classification
+                          href: dlp-connector-classification.md
+                        - name: Connector action control
+                          href: connector-action-control.md
+                        - name: Connector endpoint filtering (preview)
+                          href: connector-endpoint-filtering.md
+                    - name: Custom connectors
+                      items:
+                        - name: Connector classification
+                          href: dlp-custom-connector-parity.md
+                    - name: DLP for Power Automate
+                      items:
+                        - name: Identifying blocked flows
+                          href: identify-blocked-flows-data-policies.md
+                    - name: DLP for desktop flows
+                      href: /power-automate/prevent-data-loss
+                    - name: DLP for Copilot Studio
+                      href: /microsoft-copilot-studio/admin-data-loss-prevention
+                - name: Virtual Networks
+                  items: 
+                    - name: Virtual Network support overview
+                      href: vnet-support-overview.md
+                    - name: Virtual Network support white paper
+                      href: virtual-network-support-whitepaper.md
+                    - name: Set up Virtual Network support
+                      href: vnet-support-setup-configure.md
+            - name: Identity and access
+              items:
+                - name: Identity and access management
+                  href: security/identity-access-management.md
+                - name: IP firewall
+                  href: ip-firewall.md
+                - name: Tenant isolation
+                  href: cross-tenant-restrictions.md
+                - name: IP address-based cookie binding
+                  href: block-cookie-replay-attack.md
+                - name: Control user access to environments with security groups
+                  href: control-user-access.md
+                - name: Limit sharing
+                  href: managed-environment-sharing-limits.md
+                - name: App access control
+                  items:
+                    - name: Control which apps are allowed in your environment (preview)
+                      href: control-app-access-environment.md
+                    - name: Commonly used Microsoft first-party services and portal apps (preview)
+                      href: apps-to-allow.md
+            - name: Compliance
+              items:
+                - name: Comliance tools
                   href: security/compliance.md
-            - name: Manage Copilot
-              href: copilot/copilot-hub.md
+                - name: Auditing
+                  items:
+                    - name: Recover database space by deleting audit logs
+                      href: recover-database-space-deleting-audit-logs.md
+                    - name: Manage Dataverse auditing
+                      href: manage-dataverse-auditing.md
+                    - name: Audit security roles
+                      href: audit-security-roles.md
+                    - name: Access audit data using Azure Synapse Link for Dataverse
+                      href: audit-data-azure-synapse-link.md
+                - name: Customer Lockbox
+                  href: about-lockbox.md
             - name: Power Platform managed identity
               items:
                 - name: Managed identity overview (preview)
@@ -522,8 +566,6 @@
               href: security/authenticate-services.md
             - name: Data storage and governance
               href: security/data-storage.md
-            - name: Securely access customer data using Customer Lockbox
-              href: about-lockbox.md
             - name: Connecting and authenticating to data sources
               href: security/connect-data-sources.md
             - name: Security and governance considerations
@@ -550,68 +592,22 @@
                   href: continuous-access-evaluation.md
                 - name: Control access of TDS endpoint
                   href: control-tds-settings.md
+                - name: Configure the SameSite attribute for session cookies
+                  href: samesite-cookie-mgmt.md
                 - name: Environment security
                   items:
-                    - name: Control user access to environments
-                      href: control-user-access.md
-                    - name: Restrict cross-tenant access
-                      href: cross-tenant-restrictions.md
                     - name: Configure content security policy
                       href: content-security-policy.md
-                - name: Data policies
-                  items:
-                    - name: Overview
-                      href: wp-data-loss-prevention.md
-                    - name: Known limitations
-                      href: dlp-known-issues.md
-                    - name: Policies
-                      items:
-                        - name: Create and manage policies
-                          href: prevent-data-loss.md
-                        - name: Policy scopes
-                          href: dlp-policy-scope.md
-                        - name: Effect of multiple policies
-                          href: dlp-combined-effect-multiple-policies.md
-                        - name: Disable new connectors
-                          href: connector-off-by-default.md
-                        - name: Design-time versus runtime
-                          href: dlp-impact-policies-apps-flows.md
-                        - name: Exempt apps and flows
-                          href: dlp-resource-exemption.md
-                    - name: Certified connectors
-                      items:
-                        - name: Connector classification
-                          href: dlp-connector-classification.md
-                        - name: Connector action control
-                          href: connector-action-control.md
-                        - name: Connector endpoint filtering (preview)
-                          href: connector-endpoint-filtering.md
-                    - name: Custom connectors
-                      items:
-                        - name: Connector classification
-                          href: dlp-custom-connector-parity.md
-                    - name: DLP for Power Automate
-                      items:
-                        - name: Overview
-                          href: prevent-data-loss.md
-                        - name: Identifying blocked flows
-                          href: identify-blocked-flows-data-policies.md
-                    - name: DLP for desktop flows
-                      href: /power-automate/prevent-data-loss
-                    - name: DLP for Copilot Studio
-                      href: /microsoft-copilot-studio/admin-data-loss-prevention
+                - name: Advanced connector policies (preview)
+                  href: advanced-connector-policies.md
                 - name: Configure column-level security
                   items:
-                    - name: Overview
+                    - name: Column-level security
                       href: field-level-security.md
-                    - name: Set permissions for a column
-                      href: set-up-security-permissions-field.md
-                    - name: Enable or disable column security
-                      href: enable-disable-security-field.md
-                    - name: Add teams or users to column security profile
-                      href: add-teams-users-field-security-profile.md
                     - name: Create and manage masking rules (preview)
                       href: create-manage-masking-rules.md
+                    - name: Column-level security example
+                      href: column-level-security-example.md
                 - name: Teams and team templates
                   items:
                     - name: Manage teams
@@ -622,12 +618,6 @@
                       href: about-team-templates.md
                     - name: Team templates for access rights
                       href: create-team-template-add-entity-form.md
-                - name: Encryption
-                  items:
-                    - name: About encryption
-                      href: about-encryption.md
-                    - name: Encrypt your column-level data
-                      href: data-encryption.md
             - name: Manage users
               items:
                 - name: Overview of user security
@@ -676,8 +666,6 @@
                   href: add-users-to-environment.md
                 - name: Configure user security to resources
                   href: database-security.md
-                - name: Configure user access to an environment
-                  href: control-user-access.md
                 - name: View user profile
                   href: /powerapps/user/view-your-user-profile
                 - name: Create an administrative user
@@ -694,14 +682,6 @@
                   href: restrict-access-online-trusted-ip-rules.md
                 - name: B2B collaboration with Microsoft Entra ID
                   href: invite-users-azure-active-directory-b2b-collaboration.md
-            - name: Virtual Network support
-              items:
-                - name: Virtual Network support overview
-                  href: vnet-support-overview.md
-                - name: Virtual Network support white paper
-                  href: virtual-network-support-whitepaper.md
-                - name: Set up Virtual Network support
-                  href: vnet-support-setup-configure.md
             - name: Security FAQs
               href: security/faqs.md
         - name: Analytics
@@ -814,8 +794,6 @@
               href: connector-events-power-platform.md
             - name: Data loss prevention activity logging
               href: dlp-activity-logging.md
-            - name: Manage Dataverse auditing
-              href: manage-dataverse-auditing.md
             - name: Dataverse and model-driven apps
               href: enable-use-comprehensive-auditing.md
             - name: View Power Platform administrative logs in Microsoft Purview
@@ -864,10 +842,8 @@
                       href: powerapps-powershell.md
                     - name: Automation of tasks with PowerShell
                       href: wp-task-automation-powershell.md
-            - name: Connectors
-              items:
-                - name: Connector reference
-                  href: /connectors/powerplatformadminv2/
+            - name: Connectors reference
+              href: /connectors/powerplatformadminv2/
             - name: Power Platform API
               items:
                 - name: Getting started
@@ -934,8 +910,6 @@
               href: restore-deleted-table-records.md
             - name: Remove user personal data
               href: remove-user-personal-data.md
-            - name: Recover database space by deleting audit logs
-              href: recover-database-space-deleting-audit-logs.md
             - name: Enable change tracking to control data synchronization
               href: enable-change-tracking-control-data-synchronization.md
             - name: Replicate data to Azure SQL Database
@@ -956,12 +930,6 @@
               href: deploy-packages-using-package-deployer-windows-powershell.md
         - name: Work with templates
           items:
-            - name: Article templates
-              href: create-templates-articles.md
-            - name: Email templates
-              href: create-templates-email.md
-            - name: Mail merge templates
-              href: work-mail-merge-templates.md
             - name: Excel templates
               href: analyze-your-data-with-excel-templates.md
             - name: Word templates
@@ -1214,14 +1182,37 @@
                   href: powerapps-us-government.md
             - name: Geo to geo migrations
               href: geo-to-geo-migrations.md
-        - name: Partners
+        - name: For partners
           items:
             - name: Add a Partner of Record
               href: add-partner-record-subscription.md
-            - name: 'For partners: get credit when customers subscribe'
+            - name: "For partners: Get credit when customers subscribe"
               href: partners-credit-when-customers-subscribe-dynamics-365.md
             - name: 'For partners: Delegated Administrator'
               href: for-partners-delegated-administrator.md
+        - name: Support
+          items:
+            - name: Get Help + Support
+              href: get-help-support.md
+            - name: Support overview
+              href: support-overview.md
+            - name: Use live chat with persistence
+              href: live-chat-support.md
+            - name: View known issues
+              href: view-known-issues.md
+            - name: View service health
+              href: view-service-health.md
+            - name: Support environments and the consent process
+              href: support-environment.md
+            - name: Determine your organization ID and name
+              href: determine-org-id-name.md
+            - name: Manage email notifications to admins
+              href: manage-email-notifications.md
+            - name: Policies and communications 
+              displayName: update, maintenance
+              href: policies-communications.md
+            - name: Notifications explained
+              href: notifications-explained.md
     - name: Administer customer engagement apps in Dynamics 365
       items:
         - name: Overview

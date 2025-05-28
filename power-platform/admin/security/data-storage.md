@@ -1,9 +1,9 @@
 ---
 title: Data storage and governance in Power Platform
 description: Learn how data is stored and governed in Power Platform.
-ms.date: 10/02/2024
+ms.date: 04/17/2025
 ms.service: power-platform
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: 
   - "admin-security"
 author: lancedMicrosoft
@@ -93,6 +93,12 @@ Admins can allow one of these four options for this setting:
 
 > [!NOTE]
 > Admins who chose to allow IP Firewall (Option 2, 3, and 4 listed in the table above) must enter **both** the IPv4 and IPv6 ranges of their networks to ensure proper coverage of their users.
+
+> [!WARNING]
+> Option 1 and 3 use IP Binding which doesn't work correctly if customers have IP Pools, Reverse Proxy, or Network Address Translation (NAT) enabled gateways used within their networks. This results in a user's IP address changing too frequently for a requester to reliably have the same IP between the read/write operations of the SAS.
+>
+> Options 2 and 4 work as intended.
+
 
 #### Products enforcing IP Binding when enabled:
 - Dataverse

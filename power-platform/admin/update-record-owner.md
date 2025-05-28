@@ -2,7 +2,7 @@
 title: "Update a record Owner and Owning Business Unit"
 description: "Learn to update a record’s owner, an Owning Business Unit, or both an Owner and Owning Business Unit because the record changes ownership."
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 03/28/2023
 ms.subservice: admin
 author: paulliew

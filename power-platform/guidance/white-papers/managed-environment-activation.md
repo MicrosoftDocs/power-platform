@@ -438,6 +438,6 @@ Since these solutions are tightly integrated with the product, the CoE Starter K
 
 Managed Environments with premium governance capabilities stands as a pivotal solution for IT admins who are tasked with managing and governing Power Platform adoption at scale. By providing a robust suite of tools and controls, it empowers governance teams to maintain a delicate balance between innovation and security. With granular access controls, streamlined solution deployment, and policy enforcement, Managed Environments offers the foundation for organizations to confidently harness the full potential of Power Platform while ensuring compliance, data integrity, and optimal performance. In an era where data governance is paramount, these capabilities make Power Platform a cornerstone in modern enterprise IT strategies, fostering efficiency and peace of mind for administrators and stakeholders alike.
 
-### See also
+## Related information
 
 - [Power Platform white papers](index.md)

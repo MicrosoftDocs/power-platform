@@ -4,7 +4,7 @@ description: Import data (all record types)
 author: sericks007
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 09/08/2020
 ms.subservice: admin
 ms.author: sericks 

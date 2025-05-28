@@ -3,7 +3,7 @@ title: "About Microsoft Cloud Canada  | MicrosoftDocs"
 description: About Microsoft Cloud Canada
 author: sericks007
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 02/23/2022
 ms.subservice: admin
 ms.author: sericks

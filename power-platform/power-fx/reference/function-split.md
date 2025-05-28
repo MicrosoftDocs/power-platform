@@ -1,4 +1,4 @@
----
+﻿---
 title: Split function
 description: Reference information including syntax and examples for the Split function.
 author: gregli-msft
@@ -18,8 +18,9 @@ contributors:
 ---
 
 # Split function
+[!INCLUDE[function-split-applies-to](includes/function-split-applies-to.md)]
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Desktop flows :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Pages :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
+
 
 Splits a text string into a table of substrings.
 
@@ -71,3 +72,138 @@ The examples show how **Split** can be used with the **[First](function-first-la
 | `Match( "Bob Jones <bob.jones@contoso.com>", "<(?<email>.+)>" ).email`                           | Performs the same delimiter based extraction as the last example but uses the **Match** function and a regular expression instead.                                                                                                                                      | "bob.jones@contoso.com" |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

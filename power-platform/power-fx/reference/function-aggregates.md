@@ -1,4 +1,4 @@
----
+﻿---
 title: Average, Max, Min, StdevP, Sum, and VarP functions
 description: Reference information including syntax and examples for the Average, Max, Min, StdevP, Sum, and VarP functions.
 author: gregli-msft
@@ -18,8 +18,9 @@ contributors:
 ---
 
 # Average, Max, Min, StdevP, Sum, and VarP functions
+[!INCLUDE[function-aggregates-applies-to](includes/function-aggregates-applies-to.md)]
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Desktop flows  :::image type="icon" source="media/yes-icon.svg" border="false"::: Dataverse formula columns :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Pages :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
+
 
 Aggregate functions that summarize a set of numbers.
 
@@ -77,3 +78,140 @@ As a different example, let's say that you had sliders that were named **Slider1
 **VarP(Slider1.Value, Slider2.Value, Slider3.Value)**: The label would show the variance of all values to which the sliders were set.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,4 +1,4 @@
----
+﻿---
 title: Acceleration, App, Compass, Connection, and Location signals in Power Apps
 description: Reference information including syntax and examples for the Acceleration, App, Compass, Connection, and Location signals in Power Apps.
 author: gregli-msft
@@ -18,8 +18,9 @@ contributors:
 ---
 
 # Acceleration, App, Compass, Connection, and Location signals in Power Apps
+[!INCLUDE[signals-applies-to](includes/signals-applies-to.md)]
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps   
+
 
 Returns information about the app's environment, such as where the user is located in the world and which screen is displayed.
 
@@ -66,7 +67,7 @@ The **Connection** signal returns the information about the network connection. 
 
 | Property                 | Description                                                                                                |
 | ------------------------ | ---------------------------------------------------------------------------------------------------------- |
-| **Connection.Connected** | Returns a Boolean **true** or **false** value that indicates whether the device is connected to a network. |
+| **Connection.Connected** | Returns a Boolean true or false value that indicates whether the device is connected to either a Wi-Fi or cellular network. Please note that this does not guarantee an active internet connection.|
 | **Connection.Metered**   | Returns a Boolean **true** or **false** value that indicates whether the connection is metered.            |
 | **Connection.Sync**   | Returns an enum named **ConnectionSync** which holds the current synchronization state for an app that is enabled for offline. 
     
@@ -122,3 +123,137 @@ In a baseball field, a pitcher throws a phone from the pitcher's mound to a catc
 | **App.ActiveScreen.Fill**       | Returns the background color for the displayed screen.                                                                                                                                                                                                                                                                                                                                         | **Color.Green**                                                                                                                     |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

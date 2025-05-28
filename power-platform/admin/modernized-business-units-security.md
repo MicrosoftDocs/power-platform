@@ -2,7 +2,7 @@
 title: Modernized business units security
 description: Learn more about modernized business units security in Microsoft Dataverse.
 ms.date: 03/13/2025
-ms.topic: conceptual
+ms.topic: concept-article
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew

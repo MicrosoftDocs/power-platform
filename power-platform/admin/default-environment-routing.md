@@ -2,8 +2,8 @@
 title: Environment routing
 description: Learn how to use the environment routing governance feature. 
 ms.component: pa-admin
-ms.topic: conceptual
-ms.date: 01/27/2025
+ms.topic: how-to
+ms.date: 05/07/2025
 author: akadrno
 ms.custom: NewPPAC
 ms.author: kauguillard 
@@ -18,6 +18,8 @@ search.audienceType:
 [!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 Environment routing is a premium governance feature. This feature allows Power Platform admins to automatically direct new or existing makers into their own personal developer environments when they visit [make.powerapps.com](https://make.powerapps.com/) or [copilotstudio.microsoft.com](https://copilotstudio.microsoft.com). Environment routing offers makers a personal, safe space to build with Microsoft Dataverse without the fear of others accessing their apps or data.
+
+> [!VIDEO 4e944970-757a-4c21-9349-83bf52672583]
 
 When the **Environment routing** setting is enabled in [Power Platform admin center](https://admin.powerplatform.microsoft.com), the maker lands in their own personal developer environment instead of the default environment. Personal developer environments are the makers' own spaces, like OneDrive, for personal productivity where they can start building apps and solutions in their own workspace. Makers don't need to know which environment to work in, since the personal developer environment appears automatically.
 

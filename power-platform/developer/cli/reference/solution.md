@@ -109,6 +109,12 @@ Indicates whether other solution components required by the solution component t
 
 This parameter requires no value. It's a switch.
 
+#### `--async` `-a`
+
+Imports the solution asynchronously.
+
+This parameter requires no value. It's a switch.
+
 #### `--environment` `-env`
 
 Environment URL or ID of the target environment.

@@ -1,4 +1,4 @@
----
+﻿---
 title: Update and UpdateIf functions
 description: Reference information including syntax and examples for the Update and UpdateIf functions.
 author: gregli-msft
@@ -6,7 +6,7 @@ author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 10/31/2024
+ms.date: 4/3/2025
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
@@ -18,8 +18,9 @@ contributors:
 ---
 
 # Update and UpdateIf functions
+[!INCLUDE[function-update-updateif-applies-to](includes/function-update-updateif-applies-to.md)]
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps   
+
 
 Updates [records](/power-apps/maker/canvas-apps/working-with-tables#records) in a [data source](/power-apps/maker/canvas-apps/working-with-data-sources).
 
@@ -45,25 +46,21 @@ Both **Update** and **UpdateIf** return the modified data source as a [table](/p
 
 ### Delegation
 
-When used with a data source, these functions cannot be delegated.  Only the first portion of the data source will be retrieved and then the function applied.  This may not represent the complete story.  A warning may appear at authoring time to remind you of this limitation.
-
-#### Delegation support
-
-Only some data sources support UpdateIf. If a data source does not support this feature, Power Apps will now send a query to the server and retrieve all data that matches the filter expression up to the maximum of either 500 or 2000, or the data page size. Then, it will update those records and send each  back to the server to be updated. 
+These functions do not delegate to a data source. However, **UpdateIf** and **RemoveIf** work locally to simulate delegation up to a limit of 500/2000 records. They progressively bring down records beyond the non-delegation limit of 500/2000 records. Records that meet the **If** condition are collected. Generally, a maximum of 500/2000 records are collected separately and then modified per execution. However, more records may be updated if the existing local data cache is large, as the function may have access to more records for evaluation. Only the initial portion of the data source will be retrieved, and then the function will be applied. This may not represent the complete picture. A warning may appear during authoring to remind you of this limitation.
 
 ## Syntax
 
-**Update**( _DataSource_, _OldRecord_, _NewRecord_ [, **RemoveFlags.All** ] )
+**Update**(DataSource_, _OldRecord_, _NewRecord_ [, **RemoveFlags.All** ] )
 
 - _DataSource_ – Required. The data source that contains the record that you want to replace.
 - _OldRecord_ – Required. The record to replace.
-- _NewRecord_ – Required. The replacement record. This isn't a change record. The entire record is replaced, and missing properties will contain _blank_.
+- _NewRecord_ – Required. The replacement record. This isn't a change record. The entire record is replaced, and missing properties contain _blank_.
 - _RemoveFlags.All_ – Optional. In a collection, the same record may appear more than once. Specify the **RemoveFlags.All** argument to update all copies of the record.
 
-**UpdateIf**( _DataSource_, _Condition1_, _ChangeRecord1_ [, *Condition2*, *ChangeRecord2*, ... ] )
+**UpdateIf**(DataSource_, _Condition1_, _ChangeRecord1_ [, *Condition2*, *ChangeRecord2*, ... ] )
 
 - _DataSource_ – Required. The data source that contains the record or records that you want to modify.
-- _Condition(s)_ – Required. A formula that evaluates to **true** for the record or records that you want to modify. You can use column names of _DataSource_ in the formula.
+- _Conditions_ – Required. A formula that evaluates to **true** for the record or records that you want to modify. You can use column names of _DataSource_ in the formula.
 - _ChangeRecord(s)_ - Required. For each corresponding condition, a change record of new property values to apply to records of _DataSource_ that satisfy the condition. If you provide the record inline using curly braces, property values of the existing record can be used in the property formulas.
 
 ## Examples
@@ -90,3 +87,137 @@ In these examples, you'll replace or modify records in a data source that's name
    The number of units in stock for the product you specified decreases by the amount that you specified.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

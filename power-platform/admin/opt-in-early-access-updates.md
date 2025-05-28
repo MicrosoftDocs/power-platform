@@ -5,7 +5,7 @@ author: samathur
 ms.subservice: admin
 ms.author: samathur
 ms.reviewer: sericks
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 01/14/2025
 search.audienceType: 
   - admin
@@ -51,7 +51,7 @@ Early access begins approximately two months before general availability of each
 | United Arab Emirates         | January 27, 2025  |
 | Japan                        | January 27, 2025  |
 | Asia Pacific                 | January 27, 2025  |
-| Great Britain                | January 27, 2025  |
+| England                      | January 27, 2025  |
 | Australia                    | January 27, 2025  |
 | Europe                       | January 29, 2025 |
 | North America                | February 3, 2025 |

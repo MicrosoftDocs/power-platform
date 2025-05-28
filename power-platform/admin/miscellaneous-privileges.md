@@ -2,7 +2,7 @@
 title: Miscellaneous privileges
 description: Learn about the miscellaneous privileges that you can assign to a security role in Power Platform.
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 04/19/2024
 ms.subservice: admin
 author: sericks007

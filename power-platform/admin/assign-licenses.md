@@ -8,7 +8,7 @@ ms.author: sericks
 ms.custom: "admin-security"
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 07/26/2024
 search.audienceType: 
   - admin

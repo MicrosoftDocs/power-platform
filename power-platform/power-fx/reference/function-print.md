@@ -1,4 +1,4 @@
----
+﻿---
 title: Print function
 description: Reference information including syntax and examples for the Print function.
 author: gregli-msft
@@ -17,8 +17,9 @@ contributors:
 ---
 
 # Print function
+[!INCLUDE[function-print-applies-to](includes/function-print-applies-to.md)]
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps
+
 
 Opens the current screen in the default browser print dialog.
 
@@ -93,3 +94,138 @@ To build out a print for a specific size, you can build a [responsive app](/powe
 ### See also
 
 [Canvas app formula reference](/power-apps/maker/canvas-apps/formula-reference)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -3,7 +3,7 @@ title: Set focus on a control | Creator Kit
 description: Learn how to set the focus on a Creator Kit component.
 author: denise-msft
 ms.component: pa-maker
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 08/24/2022
 ms.subservice: guidance-toolkit
 ms.author: demora

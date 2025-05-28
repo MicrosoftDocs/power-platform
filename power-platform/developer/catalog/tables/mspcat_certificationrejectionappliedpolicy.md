@@ -3,9 +3,9 @@ title: "Approval Rejection Applied Policy (mspcat_CertificationRejectionAppliedP
 description: "Includes schema information and supported messages for the Approval Rejection Applied Policy (mspcat_CertificationRejectionAppliedPolicy) table/entity with Power Platform Catalog Manager."
 ms.date: 11/05/2024
 ms.service: power-platform
-ms.topic: reference
-author: JimDaly
-ms.author: jdaly
+ms.topic: generated-reference
+author: isaacwinoto
+ms.author: isaacwinoto
 search.audienceType: 
   - developer
 ---

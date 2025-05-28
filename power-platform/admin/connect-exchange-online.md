@@ -2,7 +2,7 @@
 title: "Connect to Exchange Online | MicrosoftDocs"
 description: Connect to Exchange Online.
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 03/12/2024
 author: rahulmital 
 ms.subservice: admin

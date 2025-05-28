@@ -3,7 +3,7 @@ title: Use the action center
 description: Optimize your Power Platform tenant with action center. Get tailored recommendations, automate actions, and track improvements easily.
 author: sidhartg
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 05/28/2025
 ms.subservice: admin
 ms.author: sidhartg

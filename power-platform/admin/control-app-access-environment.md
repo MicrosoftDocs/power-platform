@@ -1,5 +1,5 @@
 ---
-title: Control which apps are allowed in your environment (preview)
+title: Control which apps are allowed in your environment
 description: You can protect against data exfiltration by managing and controlling what apps can run in your Dataverse environment.
 author: paulliew
 ms.author: paulliew
@@ -13,17 +13,13 @@ search.audienceType:
   - admin
 ---
 
-# Control which apps are allowed in your environment (preview)
+# Control which apps are allowed in your environment
 
 [!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
-[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 Protect against data exfiltration by controlling which apps can run in your Dataverse environment. These safeguards prevent unauthorized removal of sensitive information, helping your business maintain continuity and comply with regulations.
 
 Configure which apps are allowed or blocked in your environment. This prevents malicious users from using unapproved apps to export sensitive data.
-
-[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
 ## How does app access control work?
 
@@ -223,7 +219,7 @@ These apps are powerful exporters of data. Blocking them prevents possible data 
 |----------------|------------------|
 | a672d62c-fc7b-4e81-a576-e60dc46e951d | Microsoft Power Query for Excel (desktop client) |
 | d3590ed6-52b3-4102-aeff-aad2292ab01c | Microsoft Access client |
-| 51f81489-12ee-4a9e-aaae-a2591f45987d | xRm ToolBox |
+| 51f81489-12ee-4a9e-aaae-a2591f45987d | [XrmToolBox](https://www.xrmtoolbox.com) |
 | 2ad88395-b77d-4561-9441-d0e40824f9bc | PowerShell |
 | a672d62c-fc7b-4e81-a576-e60dc46e951d | Power BI |
 

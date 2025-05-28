@@ -1,6 +1,6 @@
----
-title: AISummarize, AISentiment, AIReply, AITranslate, AIClassify, and AIExtract functions
-description: Reference information including syntax and examples for the AISummarize, AISentiment, AIReply, AITranslate, AIClassify, and AIExtract functions.
+﻿---
+title: AIClassify, AIExtract, AIReply,AISummarize, AISentiment, and AITranslate functions
+description: Reference information including syntax and examples for the AIClassify, AIExtract, AIReply,AISummarize, AISentiment, and AITranslate functions.
 author: paulliew
 ms.topic: reference
 ms.custom: canvas
@@ -16,8 +16,9 @@ contributors:
 ---
 
 # AIClassify, AIExtract, AIReply, AISentiment, AISummarize, and AITranslate
+[!INCLUDE[function-ai-applies-to](includes/function-ai-applies-to.md)]
 
-Applies to: :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps 
+
 
 ## Description
 
@@ -36,6 +37,7 @@ Dataverse provides a variety of ready-to-use AI functions that are preconfigured
 - **AIReply** drafts a reply to the message that you provide. For example, this function drafts a reply to a customer's review of a product.
 - **AISentiment** detects the sentiment of the text that you provide. For example, this function detects whether the sentiment of a customer review is positive, negative, or neutral.
 - **AISummarize** summarizes the text that you provide. For example, this function summarizes an email message or text from a document.
+- - **AISummarizeRecord** summarizes the information in a record. For example, this function summarizes a customer's information based on a record in the Customers table.
 - **AITranslate** translates text from another language. For example, this function translates a customer email or product review. The source language doesn't need to be specified, and is automatically detected.
 
     For more information about languages supported for the source and target language, see [Translator language support—Translation](/azure/ai-services/translator/language-support) and review the list of supported languages under the **Auto Language Detection** column. 
@@ -210,7 +212,7 @@ To setup the following examples:
 
 1. In canvas apps, set the **OnSelect** property of the **Button** control to:
    ```power-fx
-   Set( Result, Environment.AITranslate( {Text:Subject, Language: "fr"} ).TranslatedText )
+   Set( Result, Environment.AITranslate( {Text:Subject, TargetLanguage: "fr"} ).TranslatedText )
    ```
    For all other products, use this formula:
    ```power-fx
@@ -225,3 +227,140 @@ To setup the following examples:
    le crabe et les palourdes. L’État possède un long littoral et de nombreuses rivières et lacs 
    qui fournissent des fruits de mer abondants et de haute qualité.
    ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

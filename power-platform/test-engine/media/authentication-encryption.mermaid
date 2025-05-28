@@ -1,0 +1,16 @@
+sequenceDiagram
+    participant Data as Plain Data
+    participant AES as AES-256-CBC
+    participant HMAC as HMACSHA256
+    participant Encrypted as Encrypted Data
+    
+    Data->>AES: Apply AES-256 in CBC mode
+    AES->>HMAC: Output ciphertext
+    HMAC->>HMAC: Generate authentication code with SHA-256
+    HMAC->>Encrypted: Append authentication code to ciphertext
+    
+    Note over Data,Encrypted: Decryption process
+    
+    Encrypted->>HMAC: Verify authentication code
+    HMAC->>AES: Pass authenticated ciphertext
+    AES->>Data: Decrypt to plaintext

@@ -2,7 +2,7 @@
 title: Teams in Dataverse 
 description: Understand the different types of teams and how to view and manage settings.
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 01/06/2025
 author: paulliew
 ms.subservice: admin
@@ -196,7 +196,7 @@ See [Change the business unit for a team](create-edit-business-units.md#change-t
  [Create a team template and add to an entity form](create-team-template-add-entity-form.md)   
  [Manage group teams](manage-group-teams.md)   
  [About team templates](../admin/about-team-templates.md)   
- [Add teams or users to a field security profile](add-teams-users-field-security-profile.md)   
+ [Add teams or users to a column security profile to control access](field-level-security.md#add-teams-or-users-to-a-column-security-profile-to-control-access)
  [About team templates](about-team-templates.md)   
  [Entity relationship behavior](/powerapps/maker/common-data-service/create-edit-entity-relationships#entity-relationship-behavior)
 
