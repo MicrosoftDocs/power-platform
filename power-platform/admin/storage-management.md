@@ -172,7 +172,7 @@ Audit logs, plug-in trace logs, and telemetry are critical for compliance, debug
   - The volume of transactions and integrations
   - The complexity of business logic such as plug-ins and workflows
   
-    In high-usage environments, this can lead to rapid expansion of log tables, consuming both database and log storage quotas.
+  In high-usage environments, this can lead to rapid expansion of log tables, consuming both database and log storage quotas.
   
 - **Retention defaults** are often too generous such as 90 days or more.
 
@@ -231,12 +231,16 @@ While indexes are critical for performance, they also have a direct impact on st
 
 - **Physical duplication of data**
   Each index stores a copy of the indexed columns, along with pointers to the corresponding rows. The more columns and rows indexed, the larger the index size.
+  
 - **Growth with data volume**
   As the underlying table grows, so does the index. In high-transaction environments, indexes can grow rapidly, especially on large, denormalized tables or those with frequent inserts and updates.
+  
 - **Multiple indexes per table**
   It’s common for a single table to have multiple indexes, for example for search, filtering, sorting, and joins. Each additional index adds to the cumulative storage footprint.
+  
 - **Search indexes in Dataverse**
   Features like Dataverse search and Copilot indexing create specialized indexes that span multiple fields and tables. These are stored in the **DataverseSearch** table and can consume significant space, especially when used across multiple environments such as development, test, and production enviroments.
+  
 - **System-generated indexes**
   Some indexes are created automatically by the platform such as for lookup fields or relationships. These may persist even if the associated tables are deprecated, unless explicitly removed.
 
@@ -256,15 +260,15 @@ There are two possible scenarios:
 
 ### Apply best practices to manage storage size and costs
 
-#### Scenario 1: You Want to Proactively Apply Best Practices to Manage Storage
-If you're not yet in crisis mode, now is the time apply tools and techniques to manage the storage proactively:
+#### Scenario 1: You Want to proactively apply best practices to manage storage
+If you're not yet in crisis mode, now is the time apply tools and techniques to manage the storage proactively.
 
-#### Configure analytics for your data
-As organizations grow, so does the need to extract insights from operational data—without impacting the performance of core business applications. Microsoft offers multiple ways to enable analytics on Dataverse and Dynamics 365 Finance & Operations (F&O) data by integrating with your own data lake or warehouse.
+##### Configure analytics for your data
+As organizations grow, so does the need to extract insights from operational data, without impacting the performance of core business applications. Microsoft offers multiple ways to allow analytics on Dataverse and Dynamics 365 finance and operations data by integrating with your own data lake or warehouse.
 
-Here are two powerful options to consider:
+Here are two, powerful options to consider:
 
-**1. Use Azure Synapse Link – Bring Your Own Lake**
+**Option 1. Use Azure Synapse Link – bring your own lake**
 Azure Synapse Link allows you to connect Dataverse directly to your own Azure Data Lake or Synapse workspace. This enables near real-time replication of operational data into an analytical environment—without writing complex ETL pipelines.
 
 Benefits:
@@ -274,7 +278,7 @@ Benefits:
 
 **Use Case Example:** A retail company uses Synapse Link to analyse customer purchase behaviour across regions, combining Dataverse CRM data with external market data in their own lake.
 
-**2. Use OneLake – Unified Analytics with Microsoft Fabric**
+**Option 2. Use OneLake – Unified Analytics with Microsoft Fabric**
 OneLake, part of Microsoft Fabric, provides a unified data lake experience where you can store and analyse data from multiple sources—including Dataverse and F&O—without duplication.
 
 Benefits:
