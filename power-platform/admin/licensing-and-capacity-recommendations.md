@@ -32,13 +32,13 @@ The following recommendations relate to licenses:
 
 - **Severity**: High  
 - **Refresh Frequency**: Weekly  
-- **Managed Environments**: Yes  
+- **Managed environments only**: Yes  
 
 ### Assign licenses to pending Power Apps license requests
 
 - **Severity**: High  
 - **Refresh Frequency**: Weekly  
-- **Managed Environments**: Yes  
+- **Managed environments only**: Yes  
 
 ## Capacity
 
@@ -48,34 +48,34 @@ The following recommendations relate to capacity:
 
 - **Severity**: Medium  
 - **Refresh Frequency**: Weekly  
-- **Managed Environments**: Yes  
+- **Managed environments only**: Yes  
 
 ### Optimize Dataverse storage for workflows and async plugins
 
 - **Severity**: Medium  
 - **Refresh Frequency**: Weekly  
-- **Managed Environments**: Yes  
+- **Managed environments only**: Yes  
 
 ### Optimize Dataverse storage for Smart Matching
 
 - **Severity**: Medium  
 - **Refresh Frequency**: Weekly  
-- **Managed Environments**: Yes  
+- **Managed environments only**: Yes  
 
 ### Optimize Dataverse storage for plugin logging
 
 - **Severity**: Medium  
 - **Refresh Frequency**: Weekly  
-- **Managed Environments**: Yes  
+- **Managed environments only**: Yes  
 
 ### Optimize Dataverse storage for table stale mailbox subscriptions
 
 - **Severity**: Medium  
 - **Refresh Frequency**: Weekly  
-- **Managed Environments**: Yes  
+- **Managed environments only**: Yes  
 
 ### Optimize Dataverse storage for server-side sync logs
 
 - **Severity**: Medium  
 - **Refresh Frequency**: Weekly  
-- **Managed Environments**: Yes  
+- **Managed environments only**: Yes  
