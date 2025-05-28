@@ -26,7 +26,9 @@ By implementing the strategies outlined in this article, enterprises can reduce 
 Effective storage management in Dataverse and Dynamics 365 provides several key benefits that address common, customer pain points and enhance overall operational efficiency.
 
 - **Increased compliance with LTR**: Effective storage management ensures that data is stored in compliance with LTR policies. This not only helps in meeting regulatory requirements, but also ensures that critical data is preserved and accessible when needed.
+  
 - **Improved performance**: By optimizing storage management, organizations can significantly enhance the performance of their systems. Efficient storage allocation and management reduce latency and improve the speed of data retrieval, leading to smoother and faster operations.
+  
 - **Driving cost efficiency**: Effective storage management empowers organizations to focus on high-value data by streamlining and decluttering their storage landscape. By retaining only what’s necessary, businesses can optimize their storage footprint, leading to smarter resource utilization and cost-effective scalability.
 
 ## Background
@@ -63,19 +65,19 @@ The real time nature of operational storage does make that relatively expensive 
 
 As a specialized category of operational use, data may be required to be replicated between multiple operational systems, including patterns such as:
 
-- Banking: Customer relationship management for front line customer interactions and replication to multiple banking systems. For example, you have current accounts, credit cards, mortgage, and credit check systems.
-- Manufacturing: Customer relationship management for front line order taking and and enterprise resource management system for supply chain management.
-- Police emergency handling: Customer relationship management for citizen interactions and a dispatch systems for police offer deployment management.
+- **Banking**: Customer relationship management for front line customer interactions and replication to multiple banking systems. For example, you have current accounts, credit cards, mortgage, and credit check systems.
+- **Manufacturing**: Customer relationship management for front line order taking and and enterprise resource management system for supply chain management.
+- **Police emergency handling**: Customer relationship management for citizen interactions and a dispatch systems for police offer deployment management.
 
 In these cases, while each system may have unique data it tracks, there is often common, master data that needs to be shared between the systems and kept in sync, leading to integration needs.
 
 ### Audit data
-A business typically has regulatory responsibility to keep data for extended periods (e.g. for 7 years on average) for audit purposes, whether internal or external, such as supporting financial auditing, regulatory disclosure or fraud review.
+A business typically has regulatory responsibility to keep data for extended periods&mdash;for example for seven years on average&mdash;for audit purposes, whether internal or external, such as supporting financial auditing, regulatory disclosure, or fraud review.
 
-This data would typically span both data needed for operational purposes and data that is no longer needed as it allows review across the data set from one place.
+This data would typically span both data needed for operational purposes and data that is no longer needed, as it allows review across the data set from one place.
 
 ### Analytics data
-Organizations also have a need to review and analyze the state of their business. They must measure and compare statistics over time, as well as spanning multiple or all parts of the business. 
+Organizations have a need to review and analyze the state of their business. They must measure and compare statistics over time, as well as spanning multiple or all parts of the business. 
 
 The large periods and breadth of data over which this analysis can occur leads to the need to replicate operational data into specialized, analytics tools. This avoids complex analytics from affecting the performance of operational systems, but also allows analysis across data sets that go beyond the period for which data is needed operationally. For example, you might need to compare data over seven years, rather than over one to two years. Differing analytics needs however may need the full data retention periods or only span the data retained in operational systems.
 
@@ -83,7 +85,7 @@ Analytics data typically allows for aggregation of data across multiple parts of
 
 ### Flow of data
 
-The data of these types typically flow over time as follows:
+The data of these types typically flow over time from operational data and then to transactional or historical data, as shown in the following image.
 
 :::image type="content" source="media/flow-of-data.png" alt-text="The flow of data." lightbox="media/flow-of-data.png":::
 
@@ -94,7 +96,7 @@ Dataverse organizes storage into three main categories, each with distinct usage
 
 | Storage type | Description | Common use cases|
 |-------------|--------------|-----------------|
-|Database storage | Stores structured data in tables (standard and custom). | Business records, metadata, relationships, and configurations |
+|Database storage | Stores structured data in tables&mdash;standard and custom. | Business records, metadata, relationships, and configurations |
 | File storage | Stores attachments and binary data. | Email attachments, images, documents uploaded through Power Apps | 
 | Log storage | Stores audit logs and plugin trace logs. | Change tracking, auditing, diagnostics, and compliance|
 
@@ -110,11 +112,11 @@ Finance and operations storage is managed separately, but is increasingly being 
 
 ### Shared and integrated storage scenarios
 
-1. Dual-write 2torage
-    - Enables real-time sync between Dataverse and finance and operations apps.
+- Dual-write storage
+    - Allows real-time sync between Dataverse and finance and operations apps.
     - Requires careful role and capacity management to avoid duplication or overuse.
 
-1. Long-term retention (LTR)
+- Long-term retention (LTR)
     - Moves historical data to a Managed Data Lake (MDL).
     - Reduces primary storage usage while maintaining compliance and analytics access.
     - Integrates with:
@@ -123,20 +125,20 @@ Finance and operations storage is managed separately, but is increasingly being 
       - Synapse Link (custom lake analytics)
 
 ## How your data grows over time
-As organizations scale their use of Microsoft Dataverse and the Dynamics 365 finance and operations platform, data growth becomes both a sign of success and a strategic challenge. What begins as a lean, transactional dataset can quickly evolve into a complex, multi-layered data estate. This section explores five key drivers of data growth and their implications for storage, performance, and governance.
+As organizations scale their use of Dataverse and the Dynamics 365 finance and operations platform, data growth becomes both a sign of success and a strategic challenge. What begins as a lean, transactional dataset can quickly evolve into a complex, multi-layered data estate. This section explores five key drivers of data growth and their implications for storage, performance, and governance.
 
 ### Using data warehousing on operational data
 To unlock insights from operational systems, many organizations use Azure Synapse Link, OneLake, or data export to replicate data from Dataverse and finance and operations apps into an analytical system. While this supports advanced reporting and AI workloads, it also introduces:
 
-- **Redundant storage** across operational and analytical layers.
+- **Redundant storage** across operational and analytical layers
 
     Data is often duplicated between the operational and analytical environments. This redundancy increases overall storage consumption and may lead to higher costs, especially if historical data is retained indefinitely in both systems.
 
-- **Schema duplication** and versioning overhead.
+- **Schema duplication** and versioning overhead
 
-    To maintain consistency between systems, organizations must replicate schema changes&mdash; for example, new fields and renamed columns&mdash;across both operational and analytical layers. This adds complexity to data governance and increases the risk of schema drift, which can break downstream reports or models.
+    To maintain consistency between systems, organizations must replicate schema changes&mdash;for example, new fields and renamed columns&mdash;across both operational and analytical layers. This adds complexity to data governance and increases the risk of schema drift, which can break downstream reports or models.
 
-- **Increased retention** of historical data for trend analysis.
+- **Increased retention** of historical data for trend analysis
 
     Analytical systems typically retain data for longer periods to support trend analysis, forecasting, and regulatory reporting. While valuable, this long-term retention can lead to bloated datasets if not managed with proper archival and tiering strategies.
 
@@ -145,15 +147,15 @@ Data warehousing is essential for analytics, but without lifecycle policies, it 
 ### Using search on the data
 Features like Dataverse search, Copilot indexing, and relevance search require indexing large volumes of structured and unstructured data. These indexes often:
 
-- Consume log and database storage.
+- Consume log and database storage
 
     Search indexes are stored in both log and database storage. As more tables and fields are marked as searchable, the index size grows proportionally. This can significantly impact overall storage usage, especially in environments with large volumes of records or frequent schema changes.
 
-- Persist even for unused or deprecated tables.
+- Persist even for unused or deprecated tables
 
     Even when certain tables are deprecated or no longer actively used, their associated search indexes may persist unless explicitly removed. This leads to unnecessary storage consumption and can complicate capacity planning.
 
-- Are often duplicated across environments, such as development, test, and production environments.
+- Are often duplicated across environments, such as development, test, and production environments
 
     Search indexes are typically replicated across development, test, and production environments. While this ensures consistent search behaviour, it also multiplies the storage footprint, particularly when environments are cloned or refreshed frequently.
 
@@ -174,7 +176,7 @@ Audit logs, plug-in trace logs, and telemetry are critical for compliance, debug
   
 - **Retention defaults** are often too generous such as 90 days or more.
 
-    By default, many logging features retain data for extended periods, such as 90 days or more). While this supports long-term traceability, it can result in unnecessary storage consumption, especially when logs aren't actively reviewed or exported.
+    By default, many logging features retain data for extended periods, such as 90 days or more. While this supports long-term traceability, it can result in unnecessary storage consumption, especially when logs aren't actively reviewed or exported.
   
 - **System-generated logs** are billed to the customer in Dataverse.
 
@@ -220,12 +222,12 @@ While these improve responsiveness, they also:
 
 Query optimization is essential for scale but must be balanced with storage hygiene and telemetry-driven tuning.
 
-### Indexes and their impact on storage
+## Indexes and their impact on storage
 Indexes are essential for improving query performance and using fast data retrieval in large datasets. In both Dataverse and Dynamics 365 finance and operations apps, indexes are automatically created for primary keys and frequently queried fields, and additional custom indexes can be defined to support specific, business scenarios.
 
 While indexes are critical for performance, they also have a direct impact on storage consumption, often underestimated during solution design.
 
-#### How indexes consume storage
+### How indexes consume storage
 
 - **Physical duplication of data**
   Each index stores a copy of the indexed columns, along with pointers to the corresponding rows. The more columns and rows indexed, the larger the index size.
@@ -238,7 +240,7 @@ While indexes are critical for performance, they also have a direct impact on st
 - **System-generated indexes**
   Some indexes are created automatically by the platform such as for lookup fields or relationships. These may persist even if the associated tables are deprecated, unless explicitly removed.
 
-#### Storage implications
+### Storage implications
 
 - **Increased database and log storage**: Indexes contribute to both database and log storage usage, which can affect licensing costs in Dataverse.
 - **Environment duplication**: When environments are copied or refreshed, all indexes are duplicated, amplifying storage usage across development, test, and production environments.
