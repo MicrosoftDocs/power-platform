@@ -59,6 +59,7 @@ The following diagram depicts the functions of the roles in the setup process fo
 
     > [!IMPORTANT]
     > - If there are two or more supported regions for the geo, such as the United States with **eastus** and  **westus**, two virtual networks in ***different*** regions are required to create the enterprise policy for [business continuity and disaster recovery] or failover scenarios.
+    > - If there is only one supported region for the geo, such as Sweden with **swedencentral**, only one virtual network is required to create the enterprise policy.
     > - Be sure that the subnet you create has been appropriately sized according to [Estimating subnet size for Power Platform environments](./vnet-support-overview.md#estimating-subnet-size-for-power-platform-environments).
     
     You can [reuse existing virtual networks](./vnet-support-overview.md#can-i-use-an-existing-virtual-network-for-power-platform) if desired. Subnets on the other hand, [can't be reused in multiple enterprise policies](./vnet-support-overview.md#can-i-reuse-the-same-delegated-subnet-in-multiple-enterprise-policies).
@@ -78,7 +79,7 @@ The following diagram depicts the functions of the roles in the setup process fo
 
 ### Create the enterprise policy
 
-1. Run the [CreateSubnetInjectionEnterprisePolicy.ps1 script](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/enterprisePolicies#2-create-subnet-injection-enterprise-policy), using the virtual networks and subnets you delegated. Remember two virtual networks in different regions are required for geos that support two or more regions.
+1. Run the [CreateSubnetInjectionEnterprisePolicy.ps1 script](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/enterprisePolicies#2-create-subnet-injection-enterprise-policy), using the virtual networks and subnets you delegated. Remember two virtual networks in different regions are required for geos that support two or more regions. If your geo only supports one Azure region then follow the documentation provided with the script to cater for this scenario.
    
     > [!IMPORTANT]
     > If you wish to delete the virtual network or subnet, or are getting errors like `InUseSubnetCannotBeDeleted` and `SubnetMissingRequiredDelegation`, you **must delete the enterprise policy** if it exists. You can delete the enterprise policy with the following command.
