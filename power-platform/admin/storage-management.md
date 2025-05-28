@@ -345,21 +345,25 @@ Finance and opertions apps provides flexible options for managing storage across
 
 ### Reduce storage size and costs
 
-#### Scenario 2: You Are Already in a Situation Where Reducing Storage Size and Cost Is Necessary
-1. Assess What’s Consuming Storage
-  - Use the Power Platform Admin Center (PPAC) and F&O Storage Reports to identify top-consuming tables, file types, and logs.
-  - Leverage telemetry (if available) to attribute usage to specific apps, users, or business units.
-1. Prioritize Cleanup Candidates
+#### Scenario 2: You're already in a situation where reducing storage size and cost is necessary
+
+**1. Assess what’s consuming storage**
+  - Use the Power Platform admin center and finance and operations storage reports to identify top-consuming tables, file types, and logs.
+  - Leverage telemetry, if available, to attribute usage to specific apps, users, or business units.
+
+**1. Prioritize clean-up candidates**
   - Focus on:
-    - Staging and integration tables (e.g., dual-write buffers)
-    - Audit logs: retain it in your own storage.
+    - Staging and integration tables, such as dual-write buffers
+    - Audit logs: Retain it in your own storage
     - Unused environments or sandboxes
     - Orphaned metadata and search indexes
-    - Delete what you don’t need -> bulk delete, and we have a bunch of retention policies (logs, jobs.)
-1. Use Synapse Link and OneLake for Analytical reporting
-  - Export the analytical data to Synapse Link
+    - Delete what you don’t need, for example bulk delete
+      
+**1. Use Synapse Link and OneLake for analytical reporting**
+  - Export the analytical data to Synapse Link.
   - Use OneLake to access the retained data and business data for reporting and analytical purposes.
-1. Apply Long-Term Retention (LTR)
+    
+1. Apply long-term retention (LTR)
   - Move historical data to a Managed Data Lake (MDL) using LTR policies.
   - Maintain search and analytics access via Quick Find, Synapse Link, or OneLake.
 
