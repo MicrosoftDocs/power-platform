@@ -268,57 +268,55 @@ As organizations grow, so does the need to extract insights from operational dat
 
 Here are two, powerful options to consider:
 
-**Option 1. Use Azure Synapse Link – bring your own lake**
-Azure Synapse Link allows you to connect Dataverse directly to your own Azure Data Lake or Synapse workspace. This enables near real-time replication of operational data into an analytical environment—without writing complex ETL pipelines.
+###### Option 1. Use Azure Synapse Link – bring your own lake
+Azure Synapse Link allows you to connect Dataverse directly to your own Azure Data Lake or Synapse workspace. This allows near real-time replication of operational data into an analytical environment, without writing complex ETL pipelines.
 
-Benefits:
-- Run advanced analytics and AI models on live or near-live data
-- Avoid performance impact on your production systems
-- Use familiar tools like T-SQL, Spark, or Power BI for reporting
+**Benefits:**
+- Run advanced analytics and AI models on live or near-live data.
+- Avoid performance impact on your production systems.
+- Use familiar tools like T-SQL, Spark, or Power BI for reporting.
 
-**Use Case Example:** A retail company uses Synapse Link to analyse customer purchase behaviour across regions, combining Dataverse CRM data with external market data in their own lake.
+**Use case example:** A retail company uses Synapse Link to analyse customer purchase behaviour across regions, combining Dataverse customer relationship management data with external, market data in their own lake.
 
-**Option 2. Use OneLake – Unified Analytics with Microsoft Fabric**
-OneLake, part of Microsoft Fabric, provides a unified data lake experience where you can store and analyse data from multiple sources—including Dataverse and F&O—without duplication.
+###### Option 2. Use OneLake – unified analytics with Microsoft Fabric
+OneLake, part of Microsoft Fabric, provides a unified data lake experience where you can store and analyse data from multiple sources, including Dataverse and finance and operations apps, without duplication.
 
-Benefits:
-- Centralized storage for all analytical workloads
-- Native integration with Power BI, Synapse, and AI services
-- Simplified governance and security across data domains
+**Benefits:**
+- Centralized storage for all analytical workloads.
+- Native integration with Power BI, Synapse, and AI services.
+- Simplified governance and security across data domains.
 
-**Use Case Example:** A financial services firm uses OneLake to consolidate operational data from F&O and Dataverse with external economic indicators, enabling real-time risk modelling and executive dashboards.
+**Use case example:** A financial services firm uses OneLake to consolidate operational data from finance and operations apps and Dataverse with external economic indicators, allowing real-time, risk modelling and executive dashboards. By doing this, you can decouple operational data from your core systems and allow scalable, cost-effective analytics by exporting that data to their own, analytical environments, without duplicating workloads or impacting performance.
 
-By doing this, you can decouple operational data from your core systems and enable scalable, cost-effective analytics by exporting that data to their own analytical environments—without duplicating workloads or impacting performance.
-
-#### Tools and techniques to reduce the storage
+##### Tools and techniques to reduce the storage
 Dataverse offers several built-in tools and strategies to help administrators manage storage efficiently and maintain system performance.
 
-##### Dataverse 
-**Environment and Data Cleanup**
-- [Delete Unused Environments](delete-environment.md): You can delete an environment to recover storage space and to remove Personally Identifiable Information (PII).
-- [Bulk Deletion Jobs](delete-bulk-records.md): You can delete following data in bulk:
-  - Stale data or Data that is irrelevant to the business.
+###### Dataverse 
+**Environment and data clean-up**
+- [Delete unused environments](delete-environment.md): You can delete an environment to recover storage space and to remove Personally Identifiable Information (PII).
+- [Bulk deletion jobs](delete-bulk-records.md): You can delete the following data in bulk:
+  - Stale data or data that is irrelevant to the business.
   - Unneeded test or sample data.
   - Data that is incorrectly imported from other systems.
   
-**File and Table Optimization**
-- [Reduce File Storage using Advance Find](free-storage-space.md#reduce-file-storage): This article gives you 15 methods to better manage your storage. Use one or more of these methods to control your total data storage usage. You can delete categories of data as the need arises or set up bulk deletion jobs to reoccur at set intervals. For example, you can delete notes, attachments, import history, and other data.
-- [Clean up records from System Job (AsyncOperationBase) and Process Log (WorkflowLogBase) tables](cleanup-asyncoperationbase-table.md): If your organization makes heavy use of workflows or business process flows, these tables (AsyncOperationBase, WorkflowLogBase) will grow over time and eventually become large enough to introduce performance issues and consume excessive storage in your organization database. For WorkflowLogBase, you can configure to [Automatically delete completed background workflow jobs](/power-automate/best-practices-workflow-processes#automatically-delete-completed-background-workflow-jobs).
+**File and table optimization**
+- [Reduce file storage using advance find](free-storage-space.md#reduce-file-storage): This article gives you 15 methods to better manage your storage. Use one or more of these methods to control your total data storage usage. You can delete categories of data as the need arises or set up bulk deletion jobs to reoccur at set intervals. For example, you can delete notes, attachments, import history, and other data.
+- [Clean up records from system job (AsyncOperationBase) and process log (WorkflowLogBase) tables](cleanup-asyncoperationbase-table.md): If your organization makes heavy use of workflows or business process flows, these tables (AsyncOperationBase, WorkflowLogBase) grow over time and eventually become large enough to introduce performance issues and consume excessive storage in your organization database. For WorkflowLogBase, you can configure to [automatically delete completed background workflow jobs](/power-automate/best-practices-workflow-processes#automatically-delete-completed-background-workflow-jobs).
 
-**Long-Term Retention (LTR) and Archival**
-- [Data Archival: LTR](/power-apps/maker/data-platform/data-retention-overview): Microsoft Dataverse supports custom retention policies to securely retain unlimited data long term in a cost-efficient way. While Dataverse can support your business growth with no limit on active data, you might want to consider moving inactive data to the Dataverse long term retention store.
-- Clean up Dataverse Tables: If you want to retain the data, but remove it from the relational storage, go to [Dataverse long term data retention](/power-apps/maker/data-platform/data-retention-overview). Otherwise, to clean up the following tables.
-  - [ActivityPointerBase](manage-storage-activitypointer-base-table.md): You can follow the steps here to clean up the table.
-  - [AsyncOperationBase](manage-storage-asyncoperation-base-table.md): You can follow the steps here to clean up the table 
-  - [msdyn_copilotinteraction](manage-storage-msdyn-copilotinteraction-table.md): You can follow the steps here to clean up the table.
-  - [PrincipalObjectsAcces](manage-principalobjectaccess-storage.md): You can follow the steps here to clean up the table.
-  - [Subscription Tracking](subscription-tracking-deleted-object-retention.md): You can follow the steps here to clean up the table.
+**Long-term retention (LTR) and archival**
+- [Data archival: LTR](/power-apps/maker/data-platform/data-retention-overview): Dataverse supports custom retention policies to securely retain unlimited data long term in a cost-efficient way. While Dataverse can support your business growth with no limit on active data, you might want to consider moving inactive data to the Dataverse long-term retention store.
+- Clean up Dataverse tables: If you want to retain the data, but remove it from the relational storage, go to [Dataverse long term data retention](/power-apps/maker/data-platform/data-retention-overview). Otherwise, clean up the following tables:
+  - [ActivityPointerBase](manage-storage-activitypointer-base-table.md): You can follow the steps here to [clean up the table](manage-storage-activitypointer-base-table.md#table-clean-up).
+  - [AsyncOperationBase](manage-storage-asyncoperation-base-table.md): You can follow the steps here to [clean up the table](manage-storage-asyncoperation-base-table.md#table-cleanup).
+  - [msdyn_copilotinteraction](manage-storage-msdyn-copilotinteraction-table.md): You can follow the steps here to [clean up the table](manage-storage-msdyn-copilotinteraction-table.md#table-cleanup).
+  - [PrincipalObjectsAcces](manage-principalobjectaccess-storage.md): You can follow the steps here to [clean up the table](hmanage-principalobjectaccess-storage.md).
+  - [Subscription Tracking](subscription-tracking-deleted-object-retention.md): You can follow the steps here to [clean up the table](subscription-tracking-deleted-object-retention.md).
 
 **Search Index Optimization**
 - [Reduce Dataverse Search](capacity-storage.md): You can reduce the storage size by performing all the steps in [Dataverse capacity-based storage details](capacity-storage.md).
 - [Reduce the size of DataverseSearch table](capacity-storage.md): The DataverseSearch table is the cumulative storage used by the Dataverse search index. It includes the data from all searchable, retrievable, and filterable fields of the tables you indexed for your environment. You can reduce the table size by removing Find Columns, View Columns, and Filter conditions for one or more tables. You can turn off Dataverse search to remove all indexed data.
 
-##### Finance and operations
+###### Finance and operations
 Finance and opertions provides flexible options for managing storage across production and sandbox environments.
 
 **Environment Management**
