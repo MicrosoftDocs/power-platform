@@ -30,19 +30,19 @@ The following recommendations relate to apps:
 
 - **Severity**: High
 - **Refresh Frequency**: Weekly
-- **Managed Environments**: No
+- **Managed Environments only**: No
 
 ### Follow Application Lifecycle Management (ALM) best practices for high value apps
 
 - **Severity**: High
 - **Refresh Frequency**: Weekly
-- **Managed Environments**: Yes
+- **Managed environments only**: Yes  
 
 ### Maintain tenant hygiene by cleaning up quarantined apps
 
 - **Severity**: Medium
 - **Refresh Frequency**: Weekly
-- **Managed Environments**: Yes
+- **Managed environments only**: Yes  
 
 ### Maintain tenant hygiene by cleaning up unused apps
 
@@ -75,7 +75,7 @@ After you confirm the delete operation, the selected apps are deleted.
 
 - **Severity**: Medium
 - **Refresh Frequency**: Weekly
-- **Managed Environments**: Yes
+- **Managed environments only**: Yes  
 
 ## Sites
 
@@ -90,7 +90,7 @@ This recommendation lists trial websites that are expiring in the next seven day
 
 - **Severity**: High
 - **Refresh Frequency**: Daily
-- **Managed Environments**: Yes
+- **Managed environments only**: Yes  
 
 ### Review and shut down websites without any traffic
 
@@ -117,7 +117,7 @@ To shut down a site:
 
 - **Severity**: High
 - **Refresh Frequency**: Daily
-- **Managed Environments**: Yes
+- **Managed environments only**: Yes  
 
 ## Tenant settings
 
@@ -127,4 +127,4 @@ The following recommendations relate to tenant settings:
 
 - **Severity**: High
 - **Refresh Frequency**: Real time
-- **Managed Environments**: No
+- **Managed environments only**: No 
