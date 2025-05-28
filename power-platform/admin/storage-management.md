@@ -312,36 +312,36 @@ Dataverse offers several built-in tools and strategies to help administrators ma
   - [PrincipalObjectsAcces](manage-principalobjectaccess-storage.md): You can follow the steps here to [clean up the table](hmanage-principalobjectaccess-storage.md).
   - [Subscription Tracking](subscription-tracking-deleted-object-retention.md): You can follow the steps here to [clean up the table](subscription-tracking-deleted-object-retention.md).
 
-**Search Index Optimization**
-- [Reduce Dataverse Search](capacity-storage.md): You can reduce the storage size by performing all the steps in [Dataverse capacity-based storage details](capacity-storage.md).
-- [Reduce the size of DataverseSearch table](capacity-storage.md): The DataverseSearch table is the cumulative storage used by the Dataverse search index. It includes the data from all searchable, retrievable, and filterable fields of the tables you indexed for your environment. You can reduce the table size by removing Find Columns, View Columns, and Filter conditions for one or more tables. You can turn off Dataverse search to remove all indexed data.
+**Search index optimization**
+- [Reduce Dataverse search](capacity-storage.md): You can reduce the storage size by performing all the steps in [Dataverse capacity-based storage details](capacity-storage.md).
+- [Reduce the size of DataverseSearch table](capacity-storage.md): The **DataverseSearch** table is the cumulative storage used by the Dataverse search index. It includes the data from all searchable, retrievable, and filterable fields of the tables you indexed for your environment. You can reduce the table size by removing find columns, view columns, and filter conditions for one or more tables. You can turn off Dataverse search to remove all indexed data.
 
-###### Finance and operations
-Finance and opertions provides flexible options for managing storage across production and sandbox environments.
+###### Finance and operations apps
+Finance and opertions apps provides flexible options for managing storage across production and sandbox environments.
 
-**Environment Management**
-- Limit the number of full Production copies: You can reduce the overall storage consumption of F&O by removing full production copies in Sandbox environments. For example, if you have five copies of Production in Sandbox, your storage consumption will be the sum of Production plus five copies of Production in Sandbox.
-- Trim data in Sandbox environments: By trimming the data in the sandbox environment, you can reduce the overall storage footprint. You can follow the methods below to clean the data in the sandbox.
+**Environment management**
+- Limit the number of full production copies: You can reduce the overall storage consumption of finance and operations apps by removing full production copies in sandbox environments. For example, if you have five copies of production environmets in a sandbox, your storage consumption is the sum of production plus five copies of production environments in a sandbox.
+- Trim data in sandbox environments: By trimming the data in a sandbox environment, you can reduce the overall storage footprint. You can follow the methods below to clean the data in the sandbox.
   - Restore process provides an opening and trimming execution
   - Write T-SQL
   - Write X++
-- [Perform a transaction-less copy between environments](unified-experience/tutorial-perform-transactionless-copy.md): Environment copy for Finance and Operations apps has traditionally involved full database duplication—including configuration, master data, and transactions—which, while useful for debugging, significantly increases storage consumption across both F&O and Dataverse. 
+- [Perform a transaction-less copy between environments](unified-experience/tutorial-perform-transactionless-copy.md): Environment copy for finance and operations apps has traditionally involved full database duplication, including configuration, master data, and transactions, which, while useful for debugging, significantly increases storage consumption across both finance and operations and Dataverse. 
 
-**Custom Cleanup and Log Management**
-- Write custom cleanups as necessary: You can write custom cleanups routine as needed by your business to clean the unwanted data.
-- Avoid storing logs: You can move SysDatabaseLog to less transactional database to reduce the overall storage footprint.
+**Custom clean-up and log management**
+- **Write custom clean-up routines as necessary**: You can write custom clean-up routines as needed by your business to clean the unwanted data.
+- **Avoid storing logs**: You can move **SysDatabaseLog** to a less transactional database to reduce the overall storage footprint.
 
-**Archival and Long-Term Retention**
-- [Data Archival: LTR](/dynamics365/fin-ops-core/dev-itpro/sysadmin/archive-data): Finance and operations apps enable organizations to achieve the following benefits through archiving:
+**Archival and long-term retention**
+- [Data archival: LTR](/dynamics365/fin-ops-core/dev-itpro/sysadmin/archive-data): Finance and operations apps allow organizations to achieve the following benefits through archiving:
   - Secure historical, inactive application data for the long term to meet audit, legal, and regulatory requirements.
-  - Reduce the size of the application database and the capacity that is consumed, to potentially improve application performance that's associated with very large tables.
+  - Reduce the size of the application database and the capacity that's consumed, to potentially improve application performance that's associated with very large tables.
 - [Setup and manage archive data](/dynamics365/fin-ops-core/dev-itpro/sysadmin/archive-setup-manage?source=recommendations)
 - [Archive customization](/dynamics365/fin-ops-core/dev-itpro/sysadmin/archive-custom)
 - [Inventory transaction consolidation](/dynamics365/supply-chain/inventory/archive-inventory-transactions#view-archived-inventory-transactions)
 
-**Built-in Cleanup Routines**
-- Cleanup routines: In Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management, cleanup routines are available in various modules. [Cleanup routines](/dynamics365/fin-ops-core/dev-itpro/sysadmin/cleanuproutines) provides an overview of the routines that are currently available. After copying the sandbox database, run these cleanup routines proactively to remove unnecessary tables—such as batch history, logs, and retail transaction history—and to delete outdated or irrelevant data.
-- [Archive credit card transaction data](/dynamics365/commerce/dev-itpro/archive-cc-data): Describes an archival job in Microsoft Dynamics 365 Commerce that can help free up space in the database by archiving credit card payment tokens.
+**Built-in cleanup routines**
+- Clean-up routines: In Dynamics 365 Finance and Dynamics 365 Supply Chain Management, clean-up routines are available in various modules. [Clean-up routines](/dynamics365/fin-ops-core/dev-itpro/sysadmin/cleanuproutines) provides an overview of the routines that're currently available. After copying the sandbox database, run these clean-up routines proactively to remove unnecessary tables, such as batch history, logs, and retail transaction history. Delete outdated or irrelevant data.
+- [Archive credit card transaction data](/dynamics365/commerce/dev-itpro/archive-cc-data): Describes an archival job in Dynamics 365 Commerce that can help free up space in the database by archiving credit card payment tokens.
 
 ### Reduce storage size and costs
 
