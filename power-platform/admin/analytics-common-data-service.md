@@ -5,6 +5,7 @@ author: sericks007
 ms.topic: how-to
 ms.date: 03/26/2024
 ms.subservice: admin
+ms.custom: NewPPAC
 ms.author: sericks
 ms.reviewer: sericks
 ms.contriutors:
@@ -21,10 +22,17 @@ We've improved how you view metrics for your organization. You no longer need to
 
 To access these reports:
 
-1. Go to the navigation bar on the left side.
-2. Select **Analytics**.
-3. Select **Dataverse**.
-4. View the reports on the right side.
+### [Modern admin center](#tab/new)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, under **Products**, select **Dataverse**.
+1. View the reports on the right side. 
+   
+### [Classic admin center](#tab/classic)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, expand **Analytics**, then select **Dataverse**.
+1. View the reports on the right side. 
+---
 
 ## Who can view these reports?
 
