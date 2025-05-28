@@ -6,6 +6,7 @@ ms.component: pa-admin
 ms.topic: how-to
 ms.date: 04/17/2024
 ms.subservice: admin
+ms.custom: NewPPAC
 ms.author: matp
 search.audienceType: 
   - admin
@@ -26,8 +27,17 @@ With the new provisioning model, those users with the correct licenses can creat
 
 To restrict environment creation and management to admins from the Power Platform admin center, follow these steps:
 
-1. Sign in to the Microsoft Power Platform admin center at [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com), and select **Settings** on the left navigation pane.
-1. From the **Tenant settings** list, select from the following environment type creation settings:
+### [Modern admin center](#tab/new)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Tenant settings** to open the **Tenant settings** page.
+
+### [Classic admin center](#tab/classic)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Settings** to open the **Tenant settings** page.
+---
+
+In the **Tenant settings** page, select from the following environment type creation settings:
 
    - Developer environment assignments
    - Production environment assignments
@@ -35,8 +45,7 @@ To restrict environment creation and management to admins from the Power Platfor
 
 1. Select **Only specific admins**.
 1. Select **Save**.
-
-Repeat the steps for each environment type that you want to restrict.
+1. Repeat the steps for each environment type that you want to restrict.
 
 > [!NOTE]
 > Environments created prior to restriction can still be managed after restriction by those who created the environment. Restriction will prevent any new environments being created and managed. 
