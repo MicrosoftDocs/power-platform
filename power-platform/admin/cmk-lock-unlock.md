@@ -39,7 +39,7 @@ Key access revocation can be triggered by completing any of the following tasks:
 
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 
-To ensure the smooth operation of your customer-managed key environments, the health of the **enterprise policy** is continually monitored. When the Azure key access is revoked, the enterprise policy is flagged as unhealthy and all the environments that are associated with the enterprise policy are shut down automatically. Users can't use these locked-out environments until the Azure key access is restored.
+To ensure the smooth operation of your customer-managed key environments, the health of the *enterprise policy* is continually monitored. When the Azure key access is revoked, the enterprise policy is flagged as unhealthy and all the environments that are associated with the enterprise policy are shut down automatically. Users can't use these locked-out environments until the Azure key access is restored.
 
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
@@ -60,7 +60,7 @@ Reenable the environments to unlock them.
 1. Sign into the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. Select **Manage** in the navigation pane, and then on the **Manage** page, select **Environments**.
 1. On the **Environments** page, open an environment. **Details** about the environment are displayed.
-1. In the **Environment disabled** web part, select the **Re-enable environment** action.
+1. In the **Environment disabled** card, select the **Re-enable environment** action.
 1. Repeat this step for each environment that's associated with the enterprise policy to enable it.
 
     It can take up to five minutes to re-enable the environment.
