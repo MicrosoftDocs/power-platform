@@ -3,11 +3,11 @@ title: Lock and unlock environments through key vault access
 description: Learn how to lock and unlock self-managed key environments
 author: paulliew
 ms.author: paulliew
-ms.reviewer: sericks
+ms.reviewer: matp
 ms.topic: how-to 
-ms.date: 05/22/2025
+ms.date: 05/28/2025
 ms.custom: template-how-to
-
+contributors: sericks007
 ---
 # Lock and unlock environments through key vault access
 
@@ -36,35 +36,38 @@ Key access revocation can be triggered by completing any of the following tasks:
   > - Locked sandbox environments are deleted after seven days and production environments are deleted after 30 days if key access isn't restored.
 
 ## Enterprise policy status check (preview)
+
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 
-To ensure the smooth operation of your customer-managed key environments, the health of the **enterprise policy** is continually monitored. When the Azure key access is revoked, the enterprise policy is flagged as unhealthy and all the environments that are associated with the enterprise policy are shut down automatically. Users can't use these locked-out environments until the Azure key access is restored. 
+To ensure the smooth operation of your customer-managed key environments, the health of the **enterprise policy** is continually monitored. When the Azure key access is revoked, the enterprise policy is flagged as unhealthy and all the environments that are associated with the enterprise policy are shut down automatically. Users can't use these locked-out environments until the Azure key access is restored.
+
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
 When an environment is shut down due to unhealthy enterprise policy status, an **Environment disabled** message is displayed in the environment details page.
 
 :::image type="content" source="media/environment-disabled.png" alt-text="An environment is shut down." lightbox="media/environment-disabled.png":::
 
-[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
-
 ## Unlock environments (preview)
+
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 
-To unlock environments, all key access permissions must be restored for the original encryption key. The environments can only be turned on when the original Azure encryption key, used to encrypt the customer data, is restored. 
+To unlock environments, all key access permissions must be restored for the original encryption key. The environments can only be turned on when the original Azure encryption key, used to encrypt the customer data, is restored.
+
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
+
 Reenable the environments to unlock them.
 
 1. Sign into the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. Select **Manage** in the navigation pane.
-1. In the **Manage** page, select **Environments**.
-1. On the **Environments** page, select an environment. Details about the environment are displayed.
+1. Select **Manage** in the navigation pane, and then on the **Manage** page, select **Environments**.
+1. On the **Environments** page, open an environment. **Details** about the environment are displayed.
 1. In the **Environment disabled** web part, select the **Re-enable environment** action.
 1. Repeat this step for each environment that's associated with the enterprise policy to enable it.
 
     It can take up to five minutes to re-enable the environment.
 
 > [!IMPORTANT]
-> Locked environments can be enabled by an admin. The admin must have read access to the enterprise policy when the key access permissions are restored. Environments can be enabled independently by the Power Platform admin after the Azure key has been restored.
-
-[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
+> Locked environments can be enabled by an admin. The admin must have read access to the enterprise policy when the key access permissions are restored. Environments can be enabled independently by the Power Platform admin after the Azure key is restored.
 
 ## Related content
+
 [Manage your customer-managed encryption key](customer-managed-key.md)
