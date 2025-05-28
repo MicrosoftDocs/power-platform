@@ -4,7 +4,7 @@ description: Use Power Platform Advisor to identify and address potential risks 
 author: sidhartg
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/04/2025
+ms.date: 05/28/2025
 ms.subservice: admin
 ms.author: sidhartg
 ms.reviewer: sericks

@@ -4,7 +4,7 @@ description: Enhance your Power Platform tenant's performance with actionable re
 author: sidhartg
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/04/2025
+ms.date: 05/28/2025
 ms.subservice: admin
 ms.author: sidhartg
 ms.reviewer: sericks
