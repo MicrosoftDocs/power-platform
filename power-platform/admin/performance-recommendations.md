@@ -37,7 +37,7 @@ This recommendation lists production websites that aren't migrated to Bootstrap 
 
 - **Severity**: High
 - **Refresh frequency**: Daily
-- **Managed Environments**: Yes
+- **Managed environments only**: Yes  
 
 ### Review and move websites from standard data model to enhanced data model
 
@@ -48,7 +48,7 @@ This recommendation lists production websites that aren't migrated to the enhanc
 
 - **Severity**: High
 - **Refresh frequency**: Daily
-- **Managed environments**: Yes
+- **Managed environments only**: Yes  
 
 ### Enable Content Delivery Network (CDN) to improve website performance
 
@@ -59,4 +59,4 @@ This recommendation lists production websites that don't have Content Delivery N
 
 - **Severity**: High
 - **Refresh frequency**: Daily
-- **Managed environments**: Yes
+- **Managed environments only**: Yes  
