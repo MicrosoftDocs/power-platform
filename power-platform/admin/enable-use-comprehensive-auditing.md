@@ -133,9 +133,9 @@ On the **Audit settings** page:
 
 **Set table-level auditing**
 
-1. Sign in to [Power Apps Home Page](https://make.powerapps.com/).
-2. In the command bar, select **Settings**, then choose **Advanced settings**.
-3. Select **Customizations**, then select **Customize the System**.
+1. Sign in to [Power Apps Home Page](https://make.powerapps.com/). Be sure to turn on the modern experience.
+2. In the command bar, select **Settings**, then choose **Advanced settings** to go to Microsoft Dynamics 365.
+3. In settings, select **Customizations**, then select **Customize the System**.
 4. In the navigation pane, under **Components**, expand **Entities** and select the entity to audit (for example, **Account**).
 5. Scroll down to **Data Services**, then enable the check box for **Auditing**.
 6. Under **Auditing**, enable the following options:
