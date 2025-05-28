@@ -370,108 +370,108 @@ Finance and opertions apps provides flexible options for managing storage across
 ## Use cases
 Use cases for storage management in Dataverse and finance and operations environments are critical for optimizing database space, enhancing system performance, and meeting regulatory requirements. Below are some typical scenarios that demonstrate how these strategies can be applied:
 
-- Managing growth of historical data
-  **Scenario**: A business has been live on Dynamics 365 for several years and has accumulated large volumes of historical transactions, and attachments.
-  **Action**: Implement long-term retention strategies to retain inactive data, reduce primary database size, and maintain compliance with audit requirements.
+**- Managing growth of historical data**
+  - **Scenario**: A business has been live on Dynamics 365 for several years and has accumulated large volumes of historical transactions, and attachments.
+  - **Action**: Implement long-term retention strategies to retain inactive data, reduce primary database size, and maintain compliance with audit requirements.
    
-- Compliance-driven data retention:
-  **Scenario**: A regulated industry customer must retain financial or customer data for seven to ten years in a tamper-proof format.
-  **Action**: Use LTR to retain the immutable, read-only data in compliance with legal and regulatory requirements, while keeping business data lean without compromising on the analytics and reporting.
+**- Compliance-driven data retention:**
+  - **Scenario**: A regulated industry customer must retain financial or customer data for seven to ten years in a tamper-proof format.
+  - **Action**: Use LTR to retain the immutable, read-only data in compliance with legal and regulatory requirements, while keeping business data lean without compromising on the analytics and reporting.
   
-- Search and Copilot index pptimization
-  **Scenario**: Dataverse Search and Copilot indexing are enabled across all environments, including unused tables.
-  **Action**: Audit searchable fields and disable indexing for low-value or deprecated tables. Monitor the size of the DataverseSearch table and optimize configurations to reduce log and database storage.
+**- Search and Copilot index pptimization**
+  - **Scenario**: Dataverse Search and Copilot indexing are enabled across all environments, including unused tables.
+  - **Action**: Audit searchable fields and disable indexing for low-value or deprecated tables. Monitor the size of the DataverseSearch table and optimize configurations to reduce log and database storage.
   
-- Audit and telemetry management
-  **Scenario**: Plug-in trace logs and audit logs are growing rapidly, consuming storage and impacting performance.
-  **Action**: Export logs to external systems, like Azure Monitor, and automate clean-up of old entries to maintain visibility without bloating storage.
+**- Audit and telemetry management**
+  - **Scenario**: Plug-in trace logs and audit logs are growing rapidly, consuming storage and impacting performance.
+  - **Action**: Export logs to external systems, like Azure Monitor, and automate clean-up of old entries to maintain visibility without bloating storage.
    
-- Data warehousing and analytics integration
-  **Scenario**: The organization replicates operational data to Azure Synapse or OneLake for analytics, leading to duplicated storage.
-  **Action**: Use incremental exports, apply filters, and avoid full dataset replication to minimize redundancy while allowing rich insights.
+**- Data warehousing and analytics integration**
+  - **Scenario**: The organization replicates operational data to Azure Synapse or OneLake for analytics, leading to duplicated storage.
+  - **Action**: Use incremental exports, apply filters, and avoid full dataset replication to minimize redundancy while allowing rich insights.
   
-- Reducing storage overages
-  **Scenario**: A customer receives a notification about exceeding their Dataverse storage quota, leading to unexpected costs.
-  **Action**: Use capacity reports to identify top-consuming tables, clean up obsolete environments, and remove unused attachments or logs. Consider moving cold data to lower-cost storage tiers.
+**- Reducing storage overages**
+  - **Scenario**: A customer receives a notification about exceeding their Dataverse storage quota, leading to unexpected costs.
+  - **Action**: Use capacity reports to identify top-consuming tables, clean up obsolete environments, and remove unused attachments or logs. Consider moving cold data to lower-cost storage tiers.
 
-- Optimizing performance in large tables
-  **Scenario**: Business-critical processes are slowing down due to large tables.
-  **Action**: Archive old records, clean up system jobs, for example AsyncOperationBase and WorkflowLogBase.
+**- Optimizing performance in large tables**
+  - **Scenario**: Business-critical processes are slowing down due to large tables.
+  - **Action**: Archive old records, clean up system jobs, for example AsyncOperationBase and WorkflowLogBase.
 
-- Environment lifecycle management
-  **Scenario**: Development and test environments are cloned from production, duplicating all data and indexes.
-  **Action**: Trim sandbox environments after a refresh, disable unnecessary search indexing, and remove test data to reduce redundant storage consumption. Delete unused sandbox environments to save storage.
+**- Environment lifecycle management**
+  - **Scenario**: Development and test environments are cloned from production, duplicating all data and indexes.
+  - **Action**: Trim sandbox environments after a refresh, disable unnecessary search indexing, and remove test data to reduce redundant storage consumption. Delete unused sandbox environments to save storage.
 
 ## Case studies
-### Case Study 1: Reducing Storage Overages Through Index Cleanup
 
-**Customer Profile**: A global manufacturing company using Dynamics 365 for supply chain and finance operations.
+### Case study 1: Reducing storage overages through index clean-up
 
-**Challenge**: The customer was experiencing unexpected storage overages and performance degradation in their production environment. Investigation revealed that multiple custom indexes and materialized views—created during early implementation—were no longer in use but still consuming significant storage.
+**Customer profile**: A global manufacturing company using Dynamics 365 for supply chain and finance and operations apps.
+
+**Challenge**: The customer was experiencing unexpected storage overages and performance degradation in their production environment. Investigation revealed that multiple custom indexes and materialized views, created during early implementation, were no longer in use but still consuming significant storage.
 
 **Solution**: The team conducted a quarterly audit of all custom indexes and removed those not referenced by active queries or reports. They also implemented a governance policy to review new index requests before deployment.
 
 **Outcome:**
-- Reduced database storage by 28%
-- Improved query performance by 15%
-- Avoided a projected $12K/year in additional storage costs
+- Reduced database storage by 28%.
+- Improved query performance by 15%.
+- Avoided a projected $12,000 per year in additional storage costs.
 
-### Case Study 2: Archiving Historical Data to Meet Compliance and Performance Goals
+### Case study 2: Archiving historical data to meet compliance and performance goals
 
-**Customer Profile**: A financial services firm using Dataverse and Dynamics 365 for customer onboarding and case management.
+**Customer profile**: A financial services firm using Dataverse and Dynamics 365 for customer onboarding and case management functionality.
 
-**Challenge**: The firm needed to retain customer records for 7+ years to meet regulatory requirements, but the growing volume of inactive data was slowing down active workflows and increasing storage costs.
+**Challenge**: The firm needed to retain customer records for more than seven years to meet regulatory requirements, but the growing volume of inactive data was slowing down active workflows and increasing storage costs.
 
-**Solution**: The customer implemented a long-term retention (LTR) strategy using Dataverse’s archival capabilities. Inactive records were moved to a read-only, cost-optimized storage tier, while active data remained in high-performance storage.
-
-**Outcome**:
-
-- Archived over 1.2 million records
-- Reduced primary database size by 40%
-- Maintained full auditability and compliance with retention policies
-
-### Case Study 3: Streamlining Search Indexes Across Environments
-
-**Customer Profile**: A retail organization with multiple Dataverse environments (dev, test, prod) supporting a Copilot-enabled CRM solution.
-
-**Challenge**: Search indexes were enabled across all environments, including unused tables and test data. This led to bloated DataverseSearch tables and unnecessary storage consumption.
-
-**Solution**: The team reviewed searchable fields and disabled indexing on non-critical tables in dev/test environments. They also automated index cleanup during environment refreshes.
+**Solution**: The customer implemented a long-term retention strategy using Dataverse’s archival capabilities. Inactive records were moved to a read-only, cost-optimized storage tier, while active data remained in high-performance storage.
 
 **Outcome**:
+- Archived over 1.2 million records.
+- Reduced primary database size by 40%.
+- Maintained full auditability and compliance with retention policies.
 
-- Reduced search index storage by 35%
-- Improved environment refresh times by 20%
-- Lowered overall log and database storage usage
+### Case study 3: Streamlining search indexes across environments
 
-### Case Study 4: Leveraging Data Export for Analytics Without Duplicating Storage
+**Customer profile**: A retail organization with multiple Dataverse environments, including development, test, and production environments, supporting a Copilot-enabled customer relationship management solution.
 
-**Customer Profile**: A healthcare provider using Dynamics 365 and Dataverse for patient engagement and billing.
+**Challenge**: Search indexes were used across all environments, including unused tables and test data. This led to bloated **DataverseSearch** tables and unnecessary storage consumption.
+
+**Solution**: The team reviewed searchable fields and stopped using indexing on non-critical tables in develpment and test environments. They also automated index clean-up during environment refreshes.
+
+**Outcome**:
+- Reduced search index storage by 35%.
+- Improved environment refresh times by 20%.
+- Lowered overall log and database storage usage.
+
+### Case study 4: Using data export for analytics without duplicating storage
+
+**Customer profile**: A healthcare provider using Dynamics 365 and Dataverse for patient engagement and billing.
 
 **Challenge**: The analytics team needed access to operational data for trend analysis and AI modelling, but duplicating data into a separate warehouse was increasing storage costs and complexity.
 
-**Solution**: The customer enabled Azure Synapse Link with incremental export and tiered storage in OneLake. They retained only essential analytical data and applied retention policies to manage historical depth.
+**Solution**: The customer used Azure Synapse Link with incremental export and tiered storage in OneLake. They retained only essential analytical data and applied retention policies to manage historical depth.
 
 **Outcome**:
-- Enabled real-time analytics without impacting operational systems
-- Reduced redundant storage by 45%
-- Improved governance over analytical data lifecycle
+- Enabled real-time analytics without impacting operational systems.
+- Reduced redundant storage by 45%.
+- Improved governance over analytical data lifecycle.
 
 ## Conclusion
-Effective storage management is crucial for maintaining system performance and optimizing resource utilization in Microsoft Dynamics 365 environments. The cleanup routines and archival jobs outlined here provide robust solutions to free up valuable database space and streamline operations. By leveraging these tools like LTR and techniques, customers can address common storage challenges and create sustainable data management practices. Furthermore, real-world case studies demonstrate the efficacy of these approaches, offering insights into their practical applications. Adopting these strategies will empower organizations to proactively manage their storage needs and enhance overall efficiency.
+Effective storage management is crucial for maintaining system performance and optimizing resource utilization in Dynamics 365 environments. The clean-up routines and archival jobs outlined in this article provide robust solutions to free up valuable database space and streamline operations. By using these tools like LTR and similar techniques, customers can address common storage challenges and create sustainable data management practices. Furthermore, real-world case studies demonstrate the efficacy of these approaches, offering insights into their practical applications. Adopting these strategies empowers organizations to proactively manage their storage needs and enhance overall efficiency.
 
 ## References
-Storage Clean up Dataverse: 
+
+**Storage Clean up Dataverse:** 
 
 - [Free up storage space](free-storage-space.md)
 - [Clean up records from System Job (AsyncOperationBase) and Process Log (WorkflowLogBase) tables](cleanup-asyncoperationbase-table.md)
 
-Storage Clean up in finance and operations:
+**Storage Clean up in finance and operations:**
 - [Finance and operations storage capacity](finance-operations-storage-capacity.md)
 - [Cleanup routines in Dynamics 365 Finance and Dynamics 365 Supply Chain Management](/dynamics365/fin-ops-core/dev-itpro/sysadmin/cleanuproutines)
 - [Archive credit card transaction data - Commerce](/dynamics365/commerce/dev-itpro/archive-cc-data)
 
-Storage capacity:
+**Storage capacity:**
 - [Dataverse capacity-based storage details](capacity-storage.md)
 - [Finance and operations storage capacity](finance-operations-storage-capacity.md)
 
