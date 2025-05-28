@@ -309,7 +309,7 @@ Dataverse offers several built-in tools and strategies to help administrators ma
   - [ActivityPointerBase](manage-storage-activitypointer-base-table.md): You can follow the steps here to [clean up the table](manage-storage-activitypointer-base-table.md#table-clean-up).
   - [AsyncOperationBase](manage-storage-asyncoperation-base-table.md): You can follow the steps here to [clean up the table](manage-storage-asyncoperation-base-table.md#table-cleanup).
   - [msdyn_copilotinteraction](manage-storage-msdyn-copilotinteraction-table.md): You can follow the steps here to [clean up the table](manage-storage-msdyn-copilotinteraction-table.md#table-cleanup).
-  - [PrincipalObjectsAcces](manage-principalobjectaccess-storage.md): You can follow the steps here to [clean up the table](hmanage-principalobjectaccess-storage.md).
+  - [PrincipalObjectsAcces](manage-principalobjectaccess-storage.md): You can follow the steps here to [clean up the table](manage-principalobjectaccess-storage.md).
   - [Subscription Tracking](subscription-tracking-deleted-object-retention.md): You can follow the steps here to [clean up the table](subscription-tracking-deleted-object-retention.md).
 
 **Search index optimization**
