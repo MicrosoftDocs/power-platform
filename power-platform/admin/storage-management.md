@@ -363,7 +363,7 @@ Finance and opertions apps provides flexible options for managing storage across
   - Export the analytical data to Synapse Link.
   - Use OneLake to access the retained data and business data for reporting and analytical purposes.
     
-1. Apply long-term retention (LTR)
+**1. Apply long-term retention (LTR)**
   - Move historical data to a Managed Data Lake (MDL) using LTR policies.
   - Maintain search and analytics access via Quick Find, Synapse Link, or OneLake.
 
