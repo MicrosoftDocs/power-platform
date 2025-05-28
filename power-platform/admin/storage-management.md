@@ -41,7 +41,7 @@ By using the tools and strategies available in both platforms, organizations can
 This article outlines practical approaches to storage management that help customers align their data retention practices with business and regulatory needs. This improves system performance, reduces operational overhead, and ensures that compliance obligations are met without compromise.
 
 ## Why we store data
-To select and optimise the right data retention pattern for your data, it's valuable to reflect on the reasons and uses for which we store data.
+To select and optimize the right data retention pattern for your data, it's valuable to reflect on the reasons and uses for which we store data.
 
 ### Operational data
 With a business application, operational data is what is used to track sales or financial or supply chain actions. 
@@ -51,7 +51,7 @@ This data needs to be accessed in real time, supporting customer and internal op
 Over time, operational data may move from being actively used to infrequently used. The data might need to be accessible in near real time, to assist a customer with an order or in a support case. For example, consider the following scenarios:
 
 - A customer places an order, while another customer, who hasn't interacted with the business for some time, places an order.
-- Each order that has been placed and is being shipped, is being accessed constantly. There are also orders that are under a warranty period of three years that may need to be referenced for support and possibly requirr a refund.
+- Each order that has been placed and is being shipped, is being accessed constantly. There are also orders that are under a warranty period of three years that may need to be referenced for support and possibly require a refund.
 
 This may lead to phases of operational data access needs such as:
 
@@ -65,11 +65,11 @@ The real time nature of operational storage does make that relatively expensive 
 
 As a specialized category of operational use, data may be required to be replicated between multiple operational systems, including patterns such as:
 
-- **Banking**: Customer relationship management for front line customer interactions and replication to multiple banking systems. For example, you have current accounts, credit cards, mortgage, and credit check systems.
-- **Manufacturing**: Customer relationship management for front line order taking and and enterprise resource management system for supply chain management.
+- **Banking**: Customer relationship management for frontline customer interactions and replication to multiple banking systems. For example, you have current accounts, credit cards, mortgage, and credit check systems.
+- **Manufacturing**: Customer relationship management for frontline order taking and enterprise resource management system for supply chain management.
 - **Police emergency handling**: Customer relationship management for citizen interactions and a dispatch systems for police offer deployment management.
 
-In these cases, while each system may have unique data it tracks, there is often common, master data that needs to be shared between the systems and kept in sync, leading to integration needs.
+In these cases, while each system may have unique data it tracks, there's often common, master data that needs to be shared between the systems and kept in sync, leading to integration needs.
 
 ### Audit data
 A business typically has regulatory responsibility to keep data for extended periods&mdash;for example for seven years on average&mdash;for audit purposes, whether internal or external, such as supporting financial auditing, regulatory disclosure, or fraud review.
@@ -77,7 +77,7 @@ A business typically has regulatory responsibility to keep data for extended per
 This data would typically span both data needed for operational purposes and data that is no longer needed, as it allows review across the data set from one place.
 
 ### Analytics data
-Organizations have a need to review and analyze the state of their business. They must measure and compare statistics over time, as well as spanning multiple or all parts of the business. 
+Organizations have a need to review and analyze the state of their business. They must measure and compare statistics over time, and spanning multiple or all parts of the business. 
 
 The large periods and breadth of data over which this analysis can occur leads to the need to replicate operational data into specialized, analytics tools. This avoids complex analytics from affecting the performance of operational systems, but also allows analysis across data sets that go beyond the period for which data is needed operationally. For example, you might need to compare data over seven years, rather than over one to two years. Differing analytics needs however may need the full data retention periods or only span the data retained in operational systems.
 
@@ -157,7 +157,7 @@ Features like Dataverse search, Copilot indexing, and relevance search require i
 
 - Are often duplicated across environments, such as development, test, and production environments
 
-    Search indexes are typically replicated across development, test, and production environments. While this ensures consistent search behaviour, it also multiplies the storage footprint, particularly when environments are cloned or refreshed frequently.
+    Search indexes are typically replicated across development, test, and production environments. While this ensures consistent search behavior, it also multiplies the storage footprint, particularly when environments are cloned or refreshed frequently.
 
 Search improves usability and AI readiness, but index bloat is a silent contributor to storage overages.
 
@@ -188,7 +188,7 @@ Logging is non-negotiable for regulated industries, but must be paired with rete
 To support development, testing, training, and troubleshooting, customers often create sandbox or cloned environments. Each copy:
 
 - Replicates the full data and index footprint.
-- May include non-obvious dependencies like search indexes, audit logs, and metadata.
+- May include nonobvious dependencies like search indexes, audit logs, and metadata.
 - Is rarely cleaned up after use.
 
 Environment sprawl is a major driver of storage cost and complexity. Governance policies and automation are key to containment.
@@ -200,7 +200,7 @@ To improve performance, customers and ISVs often create:
 
 - **Custom indexes and materialized views**
 
-  These are used to accelerate query execution by precomputing joins or aggregations. They are particularly helpful in scenarios involving complex filters or large datasets.
+  These are used to accelerate query execution by precomputing joins or aggregations. They're helpful in scenarios involving complex filters or large datasets.
 
 - **Denormalized tables for reporting**
 
@@ -208,13 +208,13 @@ To improve performance, customers and ISVs often create:
 
 - **Caching layers or aggregates**
 
-  Frequently accessed data is sometimes pre-aggregated or cached in intermediate tables or external stores to reduce load on the primary database.
+  Frequently accessed data is sometimes preaggregated or cached in intermediate tables or external stores to reduce load on the primary database.
 
 While these improve responsiveness, they also:
 
-- Icrease storage usage
+- Increase storage usage
 
-  Each optimization layer introduces additional data structures, whether it's a copy of existing data in a denormalized format, a precomputed view, or a cache table. These structures often duplicate data already stored elsewhere, leading to a larger overall storage footprint. In environments with strict storage quotas or cost-based licensing models, like Dataverse, this can quickly escalate into avoidable overages.
+  Each optimization layer introduces more data structures, whether it's a copy of existing data in a denormalized format, a precomputed view, or a cache table. These structures often duplicate data already stored elsewhere, leading to a larger overall storage footprint. In environments with strict storage quotas or cost-based licensing models, like Dataverse, this can quickly escalate into avoidable overages.
 
 - Can become orphaned as apps evolve
 
@@ -223,7 +223,7 @@ While these improve responsiveness, they also:
 Query optimization is essential for scale but must be balanced with storage hygiene and telemetry-driven tuning.
 
 ## Indexes and their impact on storage
-Indexes are essential for improving query performance and using fast data retrieval in large datasets. In both Dataverse and Dynamics 365 finance and operations apps, indexes are automatically created for primary keys and frequently queried fields, and additional custom indexes can be defined to support specific, business scenarios.
+Indexes are essential for improving query performance and using fast data retrieval in large datasets. In both Dataverse and Dynamics 365 finance and operations apps, indexes are automatically created for primary keys and frequently queried fields, and other custom indexes can be defined to support specific, business scenarios.
 
 While indexes are critical for performance, they also have a direct impact on storage consumption, often underestimated during solution design.
 
@@ -236,10 +236,10 @@ While indexes are critical for performance, they also have a direct impact on st
   As the underlying table grows, so does the index. In high-transaction environments, indexes can grow rapidly, especially on large, denormalized tables or those with frequent inserts and updates.
   
 - **Multiple indexes per table**
-  It’s common for a single table to have multiple indexes, for example for search, filtering, sorting, and joins. Each additional index adds to the cumulative storage footprint.
+  It’s common for a single table to have multiple indexes, for example for search, filtering, sorting, and joins. Each other index adds to the cumulative storage footprint.
   
 - **Search indexes in Dataverse**
-  Features like Dataverse search and Copilot indexing create specialized indexes that span multiple fields and tables. These are stored in the **DataverseSearch** table and can consume significant space, especially when used across multiple environments such as development, test, and production enviroments.
+  Features like Dataverse search and Copilot indexing create specialized indexes that span multiple fields and tables. These are stored in the **DataverseSearch** table and can consume significant space, especially when used across multiple environments such as development, test, and production environments.
   
 - **System-generated indexes**
   Some indexes are created automatically by the platform such as for lookup fields or relationships. These may persist even if the associated tables are deprecated, unless explicitly removed.
@@ -276,17 +276,17 @@ Azure Synapse Link allows you to connect Dataverse directly to your own Azure Da
 - Avoid performance impact on your production systems.
 - Use familiar tools like T-SQL, Spark, or Power BI for reporting.
 
-**Use case example:** A retail company uses Synapse Link to analyse customer purchase behaviour across regions, combining Dataverse customer relationship management data with external, market data in their own lake.
+**Use case example:** A retail company uses Synapse Link to analyze customer purchase behavior across regions, combining Dataverse customer relationship management data with external, market data in their own lake.
 
 ###### Option 2. Use OneLake – unified analytics with Microsoft Fabric
-OneLake, part of Microsoft Fabric, provides a unified data lake experience where you can store and analyse data from multiple sources, including Dataverse and finance and operations apps, without duplication.
+OneLake, part of Microsoft Fabric, provides a unified data lake experience where you can store and analyze data from multiple sources, including Dataverse and finance and operations apps, without duplication.
 
 **Benefits:**
 - Centralized storage for all analytical workloads.
 - Native integration with Power BI, Synapse, and AI services.
 - Simplified governance and security across data domains.
 
-**Use case example:** A financial services firm uses OneLake to consolidate operational data from finance and operations apps and Dataverse with external economic indicators, allowing real-time, risk modelling and executive dashboards. By doing this, you can decouple operational data from your core systems and allow scalable, cost-effective analytics by exporting that data to their own, analytical environments, without duplicating workloads or impacting performance.
+**Use case example:** A financial services firm uses OneLake to consolidate operational data from finance and operations apps and Dataverse with external economic indicators, allowing real-time, risk modeling and executive dashboards. By doing this, you can decouple operational data from your core systems and allow scalable, cost-effective analytics by exporting that data to their own, analytical environments, without duplicating workloads or impacting performance.
 
 ##### Tools and techniques to reduce the storage
 Dataverse offers several built-in tools and strategies to help administrators manage storage efficiently and maintain system performance.
@@ -317,10 +317,10 @@ Dataverse offers several built-in tools and strategies to help administrators ma
 - [Reduce the size of DataverseSearch table](capacity-storage.md): The **DataverseSearch** table is the cumulative storage used by the Dataverse search index. It includes the data from all searchable, retrievable, and filterable fields of the tables you indexed for your environment. You can reduce the table size by removing find columns, view columns, and filter conditions for one or more tables. You can turn off Dataverse search to remove all indexed data.
 
 ###### Finance and operations apps
-Finance and opertions apps provides flexible options for managing storage across production and sandbox environments.
+Finance and operations apps provides flexible options for managing storage across production and sandbox environments.
 
 **Environment management**
-- Limit the number of full production copies: You can reduce the overall storage consumption of finance and operations apps by removing full production copies in sandbox environments. For example, if you have five copies of production environmets in a sandbox, your storage consumption is the sum of production plus five copies of production environments in a sandbox.
+- Limit the number of full production copies: You can reduce the overall storage consumption of finance and operations apps by removing full production copies in sandbox environments. For example, if you have five copies of production environments in a sandbox, your storage consumption is the sum of production plus five copies of production environments in a sandbox.
 - Trim data in sandbox environments: By trimming the data in a sandbox environment, you can reduce the overall storage footprint. You can follow the methods below to clean the data in the sandbox.
   - Restore process provides an opening and trimming execution
   - Write T-SQL
@@ -334,13 +334,13 @@ Finance and opertions apps provides flexible options for managing storage across
 **Archival and long-term retention**
 - [Data archival: LTR](/dynamics365/fin-ops-core/dev-itpro/sysadmin/archive-data): Finance and operations apps allow organizations to achieve the following benefits through archiving:
   - Secure historical, inactive application data for the long term to meet audit, legal, and regulatory requirements.
-  - Reduce the size of the application database and the capacity that's consumed, to potentially improve application performance that's associated with very large tables.
+  - Reduce the size of the application database and the capacity that's consumed, to potentially improve application performance that's associated with large tables.
 - [Setup and manage archive data](/dynamics365/fin-ops-core/dev-itpro/sysadmin/archive-setup-manage?source=recommendations)
 - [Archive customization](/dynamics365/fin-ops-core/dev-itpro/sysadmin/archive-custom)
 - [Inventory transaction consolidation](/dynamics365/supply-chain/inventory/archive-inventory-transactions#view-archived-inventory-transactions)
 
 **Built-in clean-up routines**
-- Clean-up routines: In Dynamics 365 Finance and Dynamics 365 Supply Chain Management, clean-up routines are available in various modules. [Clean-up routines](/dynamics365/fin-ops-core/dev-itpro/sysadmin/cleanuproutines) provides an overview of the routines that're currently available. After copying the sandbox database, run these clean-up routines proactively to remove unnecessary tables, such as batch history, logs, and retail transaction history. Delete outdated or irrelevant data.
+- Clean-up routines: In Dynamics 365 Finance and Dynamics 365 Supply Chain Management, clean-up routines are available in various modules. [Clean-up routines](/dynamics365/fin-ops-core/dev-itpro/sysadmin/cleanuproutines) provides an overview of the routines that are currently available. After copying the sandbox database, run these clean-up routines proactively to remove unnecessary tables, such as batch history, logs, and retail transaction history. Delete outdated or irrelevant data.
 - [Archive credit card transaction data](/dynamics365/commerce/dev-itpro/archive-cc-data): Describes an archival job in Dynamics 365 Commerce that can help free up space in the database by archiving credit card payment tokens.
 
 ### Reduce storage size and costs
@@ -349,7 +349,7 @@ Finance and opertions apps provides flexible options for managing storage across
 
 **1. Assess what’s consuming storage**
   - Use the Power Platform admin center and finance and operations storage reports to identify top-consuming tables, file types, and logs.
-  - Leverage telemetry, if available, to attribute usage to specific apps, users, or business units.
+  - Use telemetry, if available, to attribute usage to specific apps, users, or business units.
 
 **1. Prioritize clean-up candidates**
   - Focus on:
@@ -378,7 +378,7 @@ Use cases for storage management in Dataverse and finance and operations environ
   - **Scenario**: A regulated industry customer must retain financial or customer data for seven to ten years in a tamper-proof format.
   - **Action**: Use LTR to retain the immutable, read-only data in compliance with legal and regulatory requirements, while keeping business data lean without compromising on the analytics and reporting.
   
-**- Search and Copilot index pptimization**
+**- Search and Copilot index optimization**
   - **Scenario**: Dataverse Search and Copilot indexing are enabled across all environments, including unused tables.
   - **Action**: Audit searchable fields and disable indexing for low-value or deprecated tables. Monitor the size of the DataverseSearch table and optimize configurations to reduce log and database storage.
   
@@ -415,7 +415,7 @@ Use cases for storage management in Dataverse and finance and operations environ
 **Outcome:**
 - Reduced database storage by 28%.
 - Improved query performance by 15%.
-- Avoided a projected $12,000 per year in additional storage costs.
+- Avoided a projected $12,000 per year in other storage costs.
 
 ### Case study 2: Archiving historical data to meet compliance and performance goals
 
@@ -436,7 +436,7 @@ Use cases for storage management in Dataverse and finance and operations environ
 
 **Challenge**: Search indexes were used across all environments, including unused tables and test data. This led to bloated **DataverseSearch** tables and unnecessary storage consumption.
 
-**Solution**: The team reviewed searchable fields and stopped using indexing on non-critical tables in develpment and test environments. They also automated index clean-up during environment refreshes.
+**Solution**: The team reviewed searchable fields and stopped using indexing on noncritical tables in development and test environments. They also automated index clean-up during environment refreshes.
 
 **Outcome**:
 - Reduced search index storage by 35%.
@@ -447,7 +447,7 @@ Use cases for storage management in Dataverse and finance and operations environ
 
 **Customer profile**: A healthcare provider using Dynamics 365 and Dataverse for patient engagement and billing.
 
-**Challenge**: The analytics team needed access to operational data for trend analysis and AI modelling, but duplicating data into a separate warehouse was increasing storage costs and complexity.
+**Challenge**: The analytics team needed access to operational data for trend analysis and AI modeling, but duplicating data into a separate warehouse was increasing storage costs and complexity.
 
 **Solution**: The customer used Azure Synapse Link with incremental export and tiered storage in OneLake. They retained only essential analytical data and applied retention policies to manage historical depth.
 
