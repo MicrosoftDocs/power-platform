@@ -368,32 +368,39 @@ Finance and opertions apps provides flexible options for managing storage across
   - Maintain search and analytics access via Quick Find, Synapse Link, or OneLake.
 
 ## Use cases
-Use cases for storage management in Dataverse and Finance & Operations (F&O) environments are critical for optimizing database space, enhancing system performance, and meeting regulatory requirements. Below are some typical scenarios that demonstrate how these strategies can be applied:
+Use cases for storage management in Dataverse and finance and operations environments are critical for optimizing database space, enhancing system performance, and meeting regulatory requirements. Below are some typical scenarios that demonstrate how these strategies can be applied:
 
-1. Managing Growth of Historical Data
+- Managing growth of historical data
   **Scenario**: A business has been live on Dynamics 365 for several years and has accumulated large volumes of historical transactions, and attachments.
-  **Action**: Implement long-term retention (LTR) strategies to retain inactive data, reduce primary database size, and maintain compliance with audit requirements.
-1. Compliance-Driven Data Retention:
-  **Scenario**: A regulated industry customer must retain financial or customer data for 7–10 years in a tamper-proof format.
+  **Action**: Implement long-term retention strategies to retain inactive data, reduce primary database size, and maintain compliance with audit requirements.
+   
+- Compliance-driven data retention:
+  **Scenario**: A regulated industry customer must retain financial or customer data for seven to ten years in a tamper-proof format.
   **Action**: Use LTR to retain the immutable, read-only data in compliance with legal and regulatory requirements, while keeping business data lean without compromising on the analytics and reporting.
-1. Search and Copilot Index Optimization
+  
+- Search and Copilot index pptimization
   **Scenario**: Dataverse Search and Copilot indexing are enabled across all environments, including unused tables.
   **Action**: Audit searchable fields and disable indexing for low-value or deprecated tables. Monitor the size of the DataverseSearch table and optimize configurations to reduce log and database storage.
-1. Audit and Telemetry Management
-  **Scenario**: Plugin trace logs and audit logs are growing rapidly, consuming storage and impacting performance.
-  **Action**: Export logs to external systems (e.g., Azure Monitor), and automate cleanup of old entries to maintain visibility without bloating storage.
-1. Data Warehousing and Analytics Integration
-  **Scenario**: The organization replicates operational data to Synapse or OneLake for analytics, leading to duplicated storage.
-  **Action**: Use incremental exports, apply filters, and avoid full dataset replication to minimize redundancy while enabling rich insights.
-1. Reducing Storage Overages
+  
+- Audit and telemetry management
+  **Scenario**: Plug-in trace logs and audit logs are growing rapidly, consuming storage and impacting performance.
+  **Action**: Export logs to external systems, like Azure Monitor, and automate clean-up of old entries to maintain visibility without bloating storage.
+   
+- Data warehousing and analytics integration
+  **Scenario**: The organization replicates operational data to Azure Synapse or OneLake for analytics, leading to duplicated storage.
+  **Action**: Use incremental exports, apply filters, and avoid full dataset replication to minimize redundancy while allowing rich insights.
+  
+- Reducing storage overages
   **Scenario**: A customer receives a notification about exceeding their Dataverse storage quota, leading to unexpected costs.
   **Action**: Use capacity reports to identify top-consuming tables, clean up obsolete environments, and remove unused attachments or logs. Consider moving cold data to lower-cost storage tiers.
-1. Optimizing Performance in Large Tables
+
+- Optimizing performance in large tables
   **Scenario**: Business-critical processes are slowing down due to large tables.
-  **Action**: Archive old records, clean up system jobs (e.g., AsyncOperationBase, WorkflowLogBase).
-1. Environment Lifecycle Management
+  **Action**: Archive old records, clean up system jobs, for example AsyncOperationBase and WorkflowLogBase.
+
+- Environment lifecycle management
   **Scenario**: Development and test environments are cloned from production, duplicating all data and indexes.
-  **Action**: Trim sandbox environments post-refresh, disable unnecessary search indexing, and remove test data to reduce redundant storage consumption. Delete unused sandbox environments to save storage.
+  **Action**: Trim sandbox environments after a refresh, disable unnecessary search indexing, and remove test data to reduce redundant storage consumption. Delete unused sandbox environments to save storage.
 
 ## Case studies
 ### Case Study 1: Reducing Storage Overages Through Index Cleanup
