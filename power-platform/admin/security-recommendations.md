@@ -63,9 +63,7 @@ With multiple co-owners of an app, admins can promote one of the co-owners to ow
 
 - **Severity**: High  
 - **Refresh frequency**: Weekly  
-- **Managed environments**: Yes  
-- **Surface**:  
-- **Users**:  
+- **Managed environments only**: Yes  
 
 ### Secure high-value applications that are shared with ‘Everyone’, including guest users
 
@@ -79,9 +77,7 @@ This recommendation lists apps in all Managed Environments within your Power Pla
 
 - **Severity**: High  
 - **Refresh frequency**: Weekly  
-- **Managed environments**: Yes  
-- **Surface**:  
-- **Users**:  
+- **Managed environments only**: Yes  
 
 ## Sites
 
@@ -96,9 +92,7 @@ This recommendation lists production websites that have Web Application Firewall
 
 - **Severity**: High  
 - **Refresh frequency**: Daily  
-- **Managed environments**: Yes  
-- **Surface**:  
-- **Users**:  
+- **Managed environments only**: Yes  
 
 ### Enhance your websiteʼs security by renewing its SSL certificate
 
@@ -109,9 +103,7 @@ This recommendation lists production websites with SSL certificates that are exp
 
 - **Severity**: High  
 - **Refresh frequency**: Daily  
-- **Managed environments**: Yes  
-- **Surface**:  
-- **Users**:  
+- **Managed environments only**: Yes  
 
 ## Tenant settings
 
@@ -121,6 +113,4 @@ The following recommendations relate to tenant settings:
 
 - **Severity**: High  
 - **Refresh frequency**: Real time  
-- **Managed environments**: No  
-- **Surface**:  
-- **Users**:  
+- **Managed environments only**: No  
