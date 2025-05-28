@@ -48,7 +48,7 @@ In the **Tenant settings** page, select from the following environment type crea
 1. Repeat the steps for each environment type that you want to restrict.
 
 > [!NOTE]
-> Environments created prior to restriction can still be managed after restriction by those who created the environment. Restriction will prevent any new environments being created and managed. 
+> Environments created before the restriction remain manageable by their creators even after the restriction is applied. Restriction prevents any new environments being created and managed. 
 
 ## Developer environments
 
