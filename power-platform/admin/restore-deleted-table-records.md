@@ -39,7 +39,25 @@ To restore deleted Dataverse records, turn on the recycle bin in your environmen
 
 ### Turn on the recycle bin
 
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 admin or Microsoft Power Platform admin).
+Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 admin or Microsoft Power Platform admin) and complete the following steps depending on whether you're using the new admin center or the classic admin center.
+
+# [New admin center](#tab/new)
+
+1. Select **Environments** and open the environment you want.
+1. Select **Settings** > **Product** > **Features**.
+1. Scroll down to view the **Recycle Bin** settings.
+
+   - Turn **On** the **Recycle Bin** setting.
+   - Specify the time interval, to be able to restore table records. You can restore table records up to *30* days after the record was deleted.
+  
+1. Select **Save**.
+1. Allow 30 minutes for the system to configure the recycle bin.
+  
+   > [!Note]
+   > Only records deleted after the recycle bin feature has been turned on can be restored.
+
+# [Classic admin center](#tab/classic)
+
 1. Select **Environments** and open the environment you want.
 1. Select **Settings** > **Product** > **Features**.
 1. Scroll down to view the **Recycle Bin** settings.
@@ -59,9 +77,18 @@ Viewing and acting on the deleted records in the Power Apps user experience is o
 
 ### Power Platform admin center
 
-To restore deleted records from the admin center:
+To restore deleted records from the admin center, sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a user with the system administrator security role and complete the following steps depending on whether you're using the new admin center or the classic admin center.
 
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a user with the system administrator security role.
+# [New admin center](#tab/new)
+
+1. Select **Environments** and open the environment you want to view and restore deleted records.
+1. Go to **Settings** > **Data management** > **View Deleted Records**.
+1. You can view all the deleted records from all tables.
+1. Select one or more records you wish to restore, and then select **Restore** on the command bar.
+1. Select **OK** to confirm the action to restore.
+
+# [Classic admin center](#tab/classic)
+
 1. Select **Environments** and open the environment you want to view and restore deleted records.
 1. Go to **Settings** > **Data management** > **View Deleted Records**.
 1. You can view all the deleted records from all tables.
