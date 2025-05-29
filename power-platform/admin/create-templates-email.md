@@ -51,43 +51,49 @@ On the **Email Templates** page:
    >  If you select a specific record type, such as lead or opportunity, the template is available only for that record type. This setting can't be changed. To use the same content for another record type, create a new template.  
   
 On the **New Email Template** form:
-1. Enter the template title in the **Name** field.
-2. Provide a subject line in the **Subject** field.
-3. Add a description for the template (this isn't displayed to the recipient).  
-4. Type the text you want to send in this message. Use the **Formatting toolbar** to customize the text.  
+1. In the **Template** section, enter the **Name** of the template, and other required data field information.
+2. In the **Template editor** section, enter the **Subject** of the template.
+3. You can type a description for the template. This text is for internal reference and not visible to the recipient.  
+4. Type the text you want to send in this message. Use the Formatting toolbar to edit the text.  
   
    > [!TIP]
-   > - Although you can't insert images or HTML directly into email messages or email templates, you can use the copy feature in [!INCLUDE[pn_Internet_Explorer](../includes/pn-internet-explorer.md)] to copy an image from a website and paste it into the email message or email template.  The image is available as long as the website is accessible.  
-   > - To include a hyperlink in an email template, type the URL including the https://, for example, https://contoso.com. Don't include a period or comma or a space after the URL or the link will break. Select the link text and select **Make this a Hyperlink** (![Make this a Hyperlink.](../admin/media/make-this-hyperlink.png "Make this a Hyperlink")).  
-   > 
-   >    A link is automatically added to the  URL and the text is underlined and changed to blue.  
-   > - To  include data fields in a hyperlink:  
-   > 
-   >   1. Select the link text and data fields. For example: https://contoso.com/q?{!User : City;}  
-   >   2. Select **Make this a Hyperlink** (![Make this a Hyperlink.](../admin/media/make-this-hyperlink.png "Make this a Hyperlink")).  
-   > 
-   >      The text and data fields will be converted to a hyperlink. For example: \<a href="https://contoso.com/q?{!User : City;}">https://contoso.com/q?{!User : City;}\</a>.  
-   > 
-   >      The hyperlink text will appear as a link when the template is used in an email.  
-   > - There's no spell check built into customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation). There might be third-party solutions available. For more information, visit [Microsoft Dynamics Solution Finder](https://www.microsoft.com/dynamics365/partners).  
-   > - The Formatting toolbar has limited fonts and font sizes. However, you can copy and paste content from [!INCLUDE[pn_MS_Word_Full](../includes/pn-ms-word-full.md)]. This allows you to take advantage of features such as spell checking and some advanced text formatting. To single-space a line of text, at the end of the line press **Shift+Enter**.  
+   > - Although you can't insert images or HTML directly into email messages or email templates, you can use the copy feature in the browser to copy an image from a website and paste it into the email message or email template. The image is available as long as the website is accessible.
+   >   
+   > - To include a hyperlink in an email template:
+   >   - Type the URL, including the https://, such as https://contoso.com. Avoid adding a period, comma, or space after a URL, as this may cause the link to break.
+   >   - Select the text, then click **Link** from the Formatting tool bar to enter the hyperlink information.
+   >   - The link is automatically applied, underlined the text and changing its color to blue.
+   >   
+   > - To include data fields in a hyperlink:
+   >   - Select the link text and data fields. For example: https://contoso.com/q?{!User:City;}
+   >   - Click **Link** from the Formatting tool bar to enter the hyperlink information.
+   >   - The text and data fields convert to a hyperlink. For example: <a href="https://contoso.com/q?{!User:City;}">https://contoso.com/q?{!User:City;}</a>.
+   >   - The hyperlink text appears as a link when the template is used in an email.
+   >   
+   > - There's no spell check built into customer engagement apps. This applies to Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation. However, users can work around this limitation by copying and pasting content into [!INCLUDE[pn_MS_Word_Full](../includes/pn-ms-word-full.md)] to use spell checking.
+   >   
+   > - The Formatting toolbar offers a limited selection of fonts and font sizes. However, users can copy and paste content from [!INCLUDE[pn_MS_Word_Full](../includes/pn-ms-word-full.md)] to access spell checking and advanced text formatting.
+   >   
+   > - To single-space a line of text, press **Shift+Enter** at the end of the line.  
   
-5. To insert data fields to display information such as a customer's name or data from a quote, from a customer engagement apps record, select **Insert/Update**, and then in the **Data Field Values** dialog box, select **Add**.  
-  
-6. In the **Add Data Value** dialog box, select the **Record type** and **Field**, and then select **OK**.  
-  
-7. Select **OK** again to insert the data.  
-  
-8. To enter customers' first and last names, you'll need to repeat these three data-insertion steps; first and last names are separate data values. 
+5. To insert dynamic data fields to display customer information, such as names or quotes, from a customer engagement apps record:
+     - In the top command bar, select **Insert dynamic text**.
+     - In the **Edit dynamic text** dialog box:
+       - Select the **Record type** and **Field Name** values
+       - Click **Add data field** to insert additional fields.
+       - Enter the **Default text**, which appears when no data is available.
+       - Click **Insert** to apply the changes.
+ 
+6. To enter customers' first and last name, repeat the above data-insertion steps, as each name is stored as a separate data value. 
   
     > [!TIP]
     >  Use the **Default Text** box to define what text is displayed if the record doesn't have data for the field.  
   
-9. Select **Save** or **Save and Close** to apply the changes.  
+7. Select **Save** or **Save and Close** to apply the changes.  
   
 > [!NOTE]
 > - To change a shared template to a personal one or a personal template to a shared one, on the template form, on the **Actions**![action.](../admin/media/action-button.png "action") menu, select **Revert to Personal Template**, or select **Make Template Available to Organization**.  
-> - If you use an email template as a signature in another template, insert the signature template first. Otherwise, the Subject line will be overwritten.  
+> - If you use an email template as a signature in another template, insert the signature template first. Otherwise, the Subject line is  overwritten.  
 > - If you need to back up your templates, or export them for use in a different implementation, you can export them as part of exporting customizations. More information: [Export your customizations as a solution](/powerapps/maker/model-driven-apps/distribute-model-driven-app).  
   
 ### See also  
