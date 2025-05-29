@@ -1,6 +1,6 @@
 ---
 title: View performance recommendations
-description: Enhance your Power Platform tenant's performance with actionable recommendations from Power Platform Advisor.
+description: Enhance your Power Platform tenant's performance with actionable recommendations from the action center.
 author: sidhartg
 ms.component: pa-admin
 ms.topic: conceptual
@@ -20,7 +20,7 @@ ms.custom:
 
 # View performance recommendations
 
-Power Platform Advisor enhances your Power Platform tenant's performance with actionable recommendations. These recommendations improve website performance, optimize resource usage, and ensure efficient operations. You can view performance recommendations within [Power Platform Advisor](power-platform-advisor.md) in the Power Platform admin center.
+The action center enhances your Power Platform tenant's performance with actionable recommendations. These recommendations improve website performance, optimize resource usage, and ensure efficient operations. You can view performance recommendations within the [action center](power-platform-advisor.md) in the Power Platform admin center.
 
 The following recommendations are grouped by resource type:
 

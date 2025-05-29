@@ -1,5 +1,5 @@
 ---
-title: Use the action center
+title: Use the Action Center
 description: Optimize your Power Platform tenant with action center. Get tailored recommendations, automate actions, and track improvements easily.
 author: sidhartg
 ms.component: pa-admin
@@ -20,8 +20,6 @@ ms.custom:
 
 # Use the action center
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 The action center provides personalized recommendations to optimize your Power Platform tenant. It analyzes all managed environments and the apps in these environments within your tenant. It recommends solutions to improve security, reliability, and overall health.
 
 With the action center, administrators can:
@@ -30,6 +28,13 @@ With the action center, administrators can:
 - Improve the overall health of their Power Platform tenant.
 - Take inline actions
 - Take actions automatically using cloud flows or PowerShell using the Power Platform for Admin v2 connector actions.
+
+## View recommendations
+
+To view recommendations in the action center:
+
+1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. Select **Actions**.
 
 Contextual recommendations from the Power Platform action center are also available in:
 
@@ -48,7 +53,7 @@ Contextual recommendations from the Power Platform action center are also availa
 
 ### Summary card: Microsoft Teams
 
-Each week, Power Platform Advisor sends a summary card in Teams that highlights the top two recommendations for the admin to focus on. These highlights help admins invest their time on the most important recommendations.
+Each week, the action center sends a summary card in Teams that highlights the top two recommendations for the admin to focus on. These highlights help admins invest their time on the most important recommendations.
 
 To get the summary card, admins should install the **Power Apps** app in Teams.
 
@@ -59,7 +64,7 @@ Once installed, admins can view the summary cards in their Teams chats.
 Power Platform admins can view the top recommendations on the **Advisor** card. If the admin center home page isn't customized, this card is automatically pinned on the **Home** page. Your tenant is scanned for recommendations weekly.
 
 - Select **View details** on any recommendation to view its details.  
-- Select **View recommendations** to view all recommendations on the **Advisor** page.
+- Select **View recommendations** to view all recommendations on the **Recommendations** page within the action center.
 
 > [!TIP]  
 > If the home page is customized, you don't see the **Advisor** card, or you removed the card from the home page, you can select **+ Add cards** to add the card to the **Home** page.
@@ -133,7 +138,7 @@ Action history shows all actions you take manually from the action center page a
 
 ### Snooze recommendations
 
-Power Platform admins can snooze nonsecurity recommendations for up to two months to prioritize their work efficiently. To snooze a recommendation, hover on the recommendation to select the snooze action in the recommendation table and choose the snooze duration.
+Power Platform admins can snooze nonsecurity recommendations for up to two months to prioritize their work efficiently. To snooze a recommendation, hover over the recommendation to select the snooze action in the recommendation table and choose the snooze duration.
 
 When you snooze a recommendation, it moves from the active recommendations tab to the snoozed recommendations tab. Admins can see who snoozed the recommendation along with the duration and date when it was snoozed. The action center stops refreshing recommendations in their snoozed state.
 
@@ -141,7 +146,7 @@ Snoozed recommendations can be activated again manually by selecting undo snooze
 
 ### Dismiss recommendations
 
-Power Platform admins can dismiss security recommendations that aren't applicable for their organization. To dismiss a recommendation, hover on the recommendation to select the dismiss action in the recommendation table and choose the reason for dismissing the recommendation.
+Power Platform admins can dismiss security recommendations that aren't applicable for their organization. To dismiss a recommendation, hover over the recommendation to select the dismiss action in the recommendation table and choose the reason for dismissing the recommendation.
 
 When you dismiss a recommendation, it moves from the active recommendations tab to the dismissed recommendations tab. Admins can see the person dismissing the recommendation along with the reason and date when it was dismissed. The action center stops scanning dismissed recommendations.
 
