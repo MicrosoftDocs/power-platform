@@ -250,7 +250,18 @@ While indexes are critical for performance, they also have a direct impact on st
 - **Environment duplication**: When environments are copied or refreshed, all indexes are duplicated, amplifying storage usage across development, test, and production environments.
 - **Maintenance overhead**: Indexes must be updated as data changes, which can increase write latency and resource consumption.
 
-## How I can manage the ever-growing storage? 
+### Server-side synchronization impact on storage
+
+Server-side synchronization in Dataverse allows seamless integration of emails, appointments, and tasks between Microsoft Exchange and Dataverse. While it enhances productivity and automation, it also contributes to storage consumption in the following ways.
+
+- **Activity record creation**: Each synchronized email or appointment generates an activity record in Dataverse, which includes metadata, body content, and potentially attachments.
+- **Attachment storage**: If attachments aren't filtered or offloaded, they are stored directly in Dataverse, increasing storage usage.
+- **Compliance and retention**: Organizations using server-side synchronization for compliance tracking may retain more data than necessary, further inflating storage.
+- **Protected content**: Even Purview-protected emails, though limited in content visibility, still generate placeholder records that consume space.
+
+To manage this impact, enterprises should implement retention policies, consider offloading attachments, and monitor activity record volumes regularly.
+
+## How can I manage the ever-growing storage? 
 Whether you're already facing storage overages or aiming to stay ahead of them, managing data growth in Dataverse and the Dynamics 365 finance and operations platform requires a deliberate, policy-driven approach. This section outlines two strategic entry points: reactive remediation and proactive governance.
 
 There are two possible scenarios:
