@@ -48,7 +48,7 @@ The default environment is designed for personal productivity, but makers can cr
 
 Apps that don't follow a proper application lifecycle management are prone to business continuity risks. Moving high-value apps from the default environment to a Managed Environment lets you use premium security and governance capabilities.
 
-Use the [action center](../../admin/power-platform-advisor.md) to view recommendations for [high-value apps](../../admin/power-platform-advisor.md#high-value-apps-in-default-environment) in the default environment. Contact makers and develop a plan to migrate these apps out of the default environment into their own Managed Environment.
+Use the [action center](../../admin/power-platform-advisor.md) to view recommendations for [high-value apps](../../admin/operational-efficiency-recommendations.md#protect-high-value-apps-with-premium-security-and-governance-policies) in the default environment. Contact makers and develop a plan to migrate these apps out of the default environment into their own Managed Environment.
 
 Again, our recommendation is to use the [action center](../../admin/power-platform-advisor.md). For more custom processes, use the Power BI dashboard in the CoE Starter Kit to [identify widely shared apps and flows](../coe/power-bi-govern.md#identify-widely-shared-apps).
 
