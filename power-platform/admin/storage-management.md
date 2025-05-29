@@ -358,11 +358,11 @@ Finance and operations apps provides flexible options for managing storage acros
 
 #### Scenario 2: You're already in a situation where reducing storage size and cost is necessary
 
-**1. Assess what’s consuming storage**
+1. **Assess what’s consuming storage**
   - Use the Power Platform admin center and finance and operations storage reports to identify top-consuming tables, file types, and logs.
   - Use telemetry, if available, to attribute usage to specific apps, users, or business units.
 
-**1. Prioritize clean-up candidates**
+1. **Prioritize clean-up candidates**
   - Focus on:
     - Staging and integration tables, such as dual-write buffers
     - Audit logs: Retain it in your own storage
@@ -370,46 +370,46 @@ Finance and operations apps provides flexible options for managing storage acros
     - Orphaned metadata and search indexes
     - Delete what you don’t need, for example bulk delete
       
-**1. Use Synapse Link and OneLake for analytical reporting**
+1. **Use Synapse Link and OneLake for analytical reporting**
   - Export the analytical data to Synapse Link.
   - Use OneLake to access the retained data and business data for reporting and analytical purposes.
     
-**1. Apply long-term retention (LTR)**
+1. **Apply long-term retention (LTR)**
   - Move historical data to a Managed Data Lake (MDL) using LTR policies.
   - Maintain search and analytics access via Quick Find, Synapse Link, or OneLake.
 
 ## Use cases
 Use cases for storage management in Dataverse and finance and operations environments are critical for optimizing database space, enhancing system performance, and meeting regulatory requirements. Below are some typical scenarios that demonstrate how these strategies can be applied:
 
-**- Managing growth of historical data**
+- **Managing growth of historical data**
   - **Scenario**: A business has been live on Dynamics 365 for several years and has accumulated large volumes of historical transactions, and attachments.
   - **Action**: Implement long-term retention strategies to retain inactive data, reduce primary database size, and maintain compliance with audit requirements.
    
-**- Compliance-driven data retention:**
+- **Compliance-driven data retention**
   - **Scenario**: A regulated industry customer must retain financial or customer data for seven to ten years in a tamper-proof format.
   - **Action**: Use LTR to retain the immutable, read-only data in compliance with legal and regulatory requirements, while keeping business data lean without compromising on the analytics and reporting.
   
-**- Search and Copilot index optimization**
+- **Search and Copilot index optimization**
   - **Scenario**: Dataverse Search and Copilot indexing are enabled across all environments, including unused tables.
   - **Action**: Audit searchable fields and disable indexing for low-value or deprecated tables. Monitor the size of the DataverseSearch table and optimize configurations to reduce log and database storage.
   
-**- Audit and telemetry management**
+- **Audit and telemetry management**
   - **Scenario**: Plug-in trace logs and audit logs are growing rapidly, consuming storage and impacting performance.
   - **Action**: Export logs to external systems, like Azure Monitor, and automate clean-up of old entries to maintain visibility without bloating storage.
    
-**- Data warehousing and analytics integration**
+- **Data warehousing and analytics integration**
   - **Scenario**: The organization replicates operational data to Azure Synapse or OneLake for analytics, leading to duplicated storage.
   - **Action**: Use incremental exports, apply filters, and avoid full dataset replication to minimize redundancy while allowing rich insights.
   
-**- Reducing storage overages**
+- **Reducing storage overages**
   - **Scenario**: A customer receives a notification about exceeding their Dataverse storage quota, leading to unexpected costs.
   - **Action**: Use capacity reports to identify top-consuming tables, clean up obsolete environments, and remove unused attachments or logs. Consider moving cold data&mdash;typically historical or infrequently accessed records&mdash;to lower-cost storage tiers.
 
-**- Optimizing performance in large tables**
+- **Optimizing performance in large tables**
   - **Scenario**: Business-critical processes are slowing down due to large tables.
   - **Action**: Archive old records, clean up system jobs, for example AsyncOperationBase and WorkflowLogBase.
 
-**- Environment lifecycle management**
+- **Environment lifecycle management**
   - **Scenario**: Development and test environments are cloned from production, duplicating all data and indexes.
   - **Action**: Trim sandbox environments after a refresh, disable unnecessary search indexing, and remove test data to reduce redundant storage consumption. Delete unused sandbox environments to save storage.
 
