@@ -128,6 +128,20 @@
               href: api-request-limits-allocations.md
             - name: Power Platform licensing FAQs
               href: powerapps-flow-licensing-faq.md
+        - name: Action center
+          items:
+            - name: Overview
+              href: power-platform-advisor.md
+            - name: Recommendations
+              items:
+                - name: Security
+                  href: security-recommendations.md
+                - name: Operational efficiency
+                  href: operational-efficiency-recommendations.md
+                - name: Licensing and capacity
+                  href: licensing-and-capacity-recommendations.md
+                - name: Performance
+                  href: performance-recommendations.md
         - name: Deploy (preview)
           href: ../alm/admin-deployment-hub.md
         - name: Environments
@@ -190,20 +204,6 @@
                   href: managed-environment-solution-checker.md
                 - name: Licensing
                   href: managed-environment-licensing.md
-                - name: Action center
-                  items:
-                    - name: Overview
-                      href: power-platform-advisor.md
-                    - name: Recommendations
-                      items:
-                        - name: Security
-                          href: security-recommendations.md
-                        - name: Operational efficiency
-                          href: operational-efficiency-recommendations.md
-                        - name: Licensing and capacity
-                          href: licensing-and-capacity-recommendations.md
-                        - name: Performance
-                          href: performance-recommendations.md
             - name: Environment updates
               items:
                 - name: Opt in to early access updates
@@ -513,7 +513,7 @@
                     - name: DLP for Copilot Studio
                       href: /microsoft-copilot-studio/admin-data-loss-prevention
                 - name: Virtual Networks
-                  items: 
+                  items:
                     - name: Virtual Network support overview
                       href: vnet-support-overview.md
                     - name: Virtual Network support white paper
@@ -820,11 +820,11 @@
                   href: programmability-tutorial-create-daily-capacity-report.md
                 - name: Install an application to a target environment
                   href: programmability-tutorial-install-application-environment.md
-                - name: 'Tutorial: Allocate add-ons to environments'
+                - name: "Tutorial: Allocate add-ons to environments"
                   href: programmability-tutorial-allocate-capacity-addons.md
-                - name: 'Tutorial: Create cross tenant isolation reports'
+                - name: "Tutorial: Create cross tenant isolation reports"
                   href: programmability-tutorial-cross-tenant-reporting.md
-                - name: 'Tutorial: Create, update, and list Environment Management Settings'
+                - name: "Tutorial: Create, update, and list Environment Management Settings"
                   href: programmability-tutorial-environmentmanagement-settings.md
             - name: PowerShell
               items:
@@ -852,11 +852,11 @@
                   href: powerplatform-api-create-service-principal.md
                 - name: Reference
                   items:
-                    - name: '2024-10-01'
+                    - name: "2024-10-01"
                       href: /rest/api/power-platform
                     - name: 2022-03-01-preview
                       href: /rest/api/power-platform
-                    - name: '2020-10-01'
+                    - name: "2020-10-01"
                       items:
                         - name: Environments
                           items:
@@ -1012,7 +1012,7 @@
                           href: control-field-synchronization-outlook.md
                         - name: Field security best practices
                           href: how-field-security-affects-synchronization-between-outlook.md
-                        - name: 'Frequently asked questions: record synchronization'
+                        - name: "Frequently asked questions: record synchronization"
                           href: frequently-asked-questions-synchronizing-records-dynamics-365-and-outlook.yml
                     - name: Configure folder-level tracking
                       items:
@@ -1109,17 +1109,17 @@
               href: unified-experience/finance-operations-apps-overview.md
             - name: Administration for partners and systems implementers
               href: unified-experience/partners-systems-implementers.md
-            - name: 'Tutorial: Provision a new environment with an ERP-based template'
+            - name: "Tutorial: Provision a new environment with an ERP-based template"
               href: unified-experience/tutorial-deploy-new-environment-with-erp-template.md
-            - name: 'Tutorial: Install the Finance and Operations Provisioning apps'
+            - name: "Tutorial: Install the Finance and Operations Provisioning apps"
               href: unified-experience/tutorial-install-finance-operations-provisioning-app.md
-            - name: 'Tutorial: Update the Finance and Operations Provisioning app'
+            - name: "Tutorial: Update the Finance and Operations Provisioning app"
               href: unified-experience/tutorial-update-finance-operations-provisioning-app.md
-            - name: 'Tutorial: Copy a Lifecycle Services environment to a unified environment'
+            - name: "Tutorial: Copy a Lifecycle Services environment to a unified environment"
               href: unified-experience/tutorial-copy-lifecycle-services-environment-unified-environment.md
-            - name: 'Tutorial: Perform a transaction-less copy between environments'
+            - name: "Tutorial: Perform a transaction-less copy between environments"
               href: unified-experience/tutorial-perform-transactionless-copy.md
-            - name: 'Tutorial: Back up and restore unified environment'
+            - name: "Tutorial: Back up and restore unified environment"
               href: unified-experience/tutorial-backup-restore-unified-environment.md
             - name: Admin trials for finance and operations apps
               href: unified-experience/admin-trials.md
@@ -1188,7 +1188,7 @@
               href: add-partner-record-subscription.md
             - name: "For partners: Get credit when customers subscribe"
               href: partners-credit-when-customers-subscribe-dynamics-365.md
-            - name: 'For partners: Delegated Administrator'
+            - name: "For partners: Delegated Administrator"
               href: for-partners-delegated-administrator.md
         - name: Support
           items:
@@ -1208,9 +1208,9 @@
               href: determine-org-id-name.md
             - name: Manage email notifications to admins
               href: manage-email-notifications.md
-            - name: Policies and communications 
-              displayName: update, maintenance
+            - name: Policies and communications
               href: policies-communications.md
+              displayName: update, maintenance
             - name: Notifications explained
               href: notifications-explained.md
     - name: Administer customer engagement apps in Dynamics 365

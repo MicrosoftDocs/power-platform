@@ -114,3 +114,7 @@ The following recommendations relate to tenant settings:
 - **Severity**: High  
 - **Refresh frequency**: Real time  
 - **Managed environments only**: No  
+
+## Other security recommendations
+
+Learn about other security related recommendations in [Security overview](security/security-overview.md#conditions-that-trigger-feature-recommendations).
