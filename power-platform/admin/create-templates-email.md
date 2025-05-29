@@ -60,7 +60,7 @@ On the **New Email Template** form:
    > - Although you can't insert images or HTML directly into email messages or email templates, you can use the copy feature in the browser to copy an image from a website and paste it into the email message or email template. The image is available as long as the website is accessible.
    >   
    > - To include a hyperlink in an email template:
-   >   - Type the URL, including the https://, such as https://contoso.com. Avoid adding a period, comma, or space after a URL, as this may cause the link to break.
+   >   - Type the URL, including the https://, such as https://contoso.com. Avoid adding a period, comma, or space after a URL, as this formatting issue may cause the link to break.
    >   - Select the text, then click **Link** from the Formatting tool bar to enter the hyperlink information.
    >   - The link is automatically applied, underlined the text and changing its color to blue.
    >   
@@ -70,7 +70,7 @@ On the **New Email Template** form:
    >   - The text and data fields convert to a hyperlink. For example: <a href="https://contoso.com/q?{!User:City;}">https://contoso.com/q?{!User:City;}</a>.
    >   - The hyperlink text appears as a link when the template is used in an email.
    >   
-   > - There's no spell check built into customer engagement apps. This applies to Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation. However, users can work around this limitation by copying and pasting content into [!INCLUDE[pn_MS_Word_Full](../includes/pn-ms-word-full.md)] to use spell checking.
+   > - Customer engagement apps don't have built-in spell check functionality. This limitation applies to Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation. However, users can work around it by copying and pasting content into [!INCLUDE[pn_MS_Word_Full](../includes/pn-ms-word-full.md)] to take advantage of spell checking.
    >   
    > - The Formatting toolbar offers a limited selection of fonts and font sizes. However, users can copy and paste content from [!INCLUDE[pn_MS_Word_Full](../includes/pn-ms-word-full.md)] to access spell checking and advanced text formatting.
    >   
@@ -80,11 +80,11 @@ On the **New Email Template** form:
      - In the top command bar, select **Insert dynamic text**.
      - In the **Edit dynamic text** dialog box:
        - Select the **Record type** and **Field Name** values
-       - Click **Add data field** to insert additional fields.
+       - Click **Add data field** to insert another fields.
        - Enter the **Default text**, which appears when no data is available.
        - Click **Insert** to apply the changes.
  
-6. To enter customers' first and last name, repeat the above data-insertion steps, as each name is stored as a separate data value. 
+6. To enter customers' first and last name, repeat the data-insertion steps, as each name is stored as a separate data value. 
   
     > [!TIP]
     >  Use the **Default Text** box to define what text is displayed if the record doesn't have data for the field.  
