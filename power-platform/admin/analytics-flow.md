@@ -15,7 +15,7 @@ search.audienceType:
 
 [!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
-Environment admins can access analytics for Power Automate in the Microsoft [Power Platform admin center](https://admin.powerplatform.microsoft.com/analytics/flow). The reports provide insights into runs, usage, errors, types of flows created—such as automated, button, scheduled, approval and business process flows. They also include details on shared flows and connectors associated with each flow type. However, these reports don't include insights for desktop flows.
+Environment admins can access analytics for Power Automate in the Microsoft [Power Platform admin center](https://admin.powerplatform.microsoft.com/analytics/flow). The reports provide insights into runs, usage, errors, types of flows created—such as automated, button, scheduled, approval, and business process flows. They also include details on shared flows and connectors associated with each flow type. However, these reports don't include insights for desktop flows.
 
 To access these reports:
 
@@ -42,13 +42,13 @@ For more information on the different roles for managing your tenant across the 
 
 ## Data storage
 
-When a user creates an environment in a region, the environment is hosted in that region. All data for that environment resides within that region for a maximum period of 28 days. 
+When a user creates an environment in a region, it is hosted there, and all data remains within that region for up to 28 days. 
 
 The data refresh cycle is about 24 hours and you can find the last refresh time at the top right corner of the page.
 
 ## What are the available reports?
 
-The following tenant-level reports are available for tenant and environment admins. The reports within the **Runs**, **Usage**, **Created**, and **Errors** tabs provide insights for Cloud flows and Desktop flows.  By default, you see reports for the last viewed environment.
+The following tenant-level reports are available for tenant and environment admins. The reports within the **Runs**, **Usage**, **Created**, and **Errors** tabs provide insights for Cloud flows and Desktop flows. By default, you see reports for the last viewed environment.
 
 ### Runs report
 
