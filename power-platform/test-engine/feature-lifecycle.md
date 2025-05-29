@@ -48,7 +48,7 @@ Features that demonstrate value in the open source environment might progress to
 testSettings:
   extensionModules:
     enable: true
-    allowNamespaces:
+    allowPowerFxNamespaces:
       - Preview
 ```
 
