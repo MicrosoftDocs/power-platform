@@ -472,12 +472,11 @@ Effective storage management is crucial for maintaining system performance and o
 
 ## References
 
-**Storage Clean up Dataverse:** 
-
+**Storage clean-up in Dataverse:** 
 - [Free up storage space](free-storage-space.md)
 - [Clean up records from System Job (AsyncOperationBase) and Process Log (WorkflowLogBase) tables](cleanup-asyncoperationbase-table.md)
 
-**Storage Clean up in finance and operations:**
+**Storage clean-up in finance and operations:**
 - [Finance and operations storage capacity](finance-operations-storage-capacity.md)
 - [Cleanup routines in Dynamics 365 Finance and Dynamics 365 Supply Chain Management](/dynamics365/fin-ops-core/dev-itpro/sysadmin/cleanuproutines)
 - [Archive credit card transaction data - Commerce](/dynamics365/commerce/dev-itpro/archive-cc-data)
