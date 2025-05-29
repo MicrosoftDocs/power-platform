@@ -5,8 +5,9 @@ author: Zeffin
 ms.topic: how-to
 ms.date: 08/03/2023
 ms.subservice: admin
-ms.author: johnev
+ms.author: sericks
 ms.reviewer: sericks
+ms.custom: NewPPAC
 search.audienceType: 
   - admin
 ---
@@ -15,12 +16,19 @@ search.audienceType:
 [!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 Environment admins can access analytics for Power Automate in the Microsoft [Power Platform admin center](https://admin.powerplatform.microsoft.com/analytics/flow). The reports provide insights into runs, usage, errors, types of flows created, shared flows, and details on connectors associated with all the different flow types like automated flows, button flows, scheduled flows, approval flows, business process flows. These reports do not offer insights for desktop flows.
+
 To access these reports:
 
-1. Go to the navigation bar on the left side.
-2. Select **Analytics**.
-3. Select **Microsoft Power Automate**.
-4. View the reports on the right side.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, under **Products**, select **Power Automate**.
+1. View the reports on the right side. 
+
+### [Classic admin center](#tab/classic)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, expand **Analytics**, then select **Power Automate**.
+1. View the reports on the right side. 
+---
 
 ## Who can view these reports?
 
