@@ -84,7 +84,7 @@ The following table lists the features of Managed Environments that are availabl
 
 | **More visibility** | **More control** | **Less effort** |
 |-------------------------|-------------------------|-------------------------|
-| <em>Usage insights<br /></br>Admin digest<br /></br>License reports<br /></br>Data policy view</em></br>Export data to Azure Application Insights<br /></br><em>AI-generated descriptions for all apps</em> | <em>Sharing limits</em><br /></br>Data policies for desktop flows<br /></br><em>Solution checker<br /></br>Maker welcome content<br /></br>IP firewall<br /></br>IP cookie binding</em><br /></br>Customer-managed keys<br /></br>Customer Lockbox<br /></br>Extended back-ups | <em>Easy activation<br /></br>Power Platform pipelines<br /></br>Environment routing<br /></br>Environment groups and rules</em><br /></br>Action center |
+| <em>Usage insights<br /></br>Admin digest<br /></br>License reports<br /></br>Data policy view</em></br>Export data to Azure Application Insights<br /></br><em>AI-generated descriptions for all apps</em> | <em>Sharing limits</em><br /></br>Data policies for desktop flows<br /></br><em>Solution checker<br /></br>Maker welcome content<br /></br>IP firewall<br /></br>IP cookie binding</em><br /></br>Customer-managed keys<br /></br>Customer Lockbox<br /></br>Extended back-ups | <em>Easy activation<br /></br>Power Platform pipelines<br /></br>Environment routing<br /></br>Environment groups and rules</em><br /></br>Actions page |
 
 ### License auto-claim
 

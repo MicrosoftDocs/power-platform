@@ -1,6 +1,6 @@
 ---
 title: View licensing and capacity recommendations
-description: Learn how the action center helps admins manage licenses and capacity with weekly recommendations for better efficiency.
+description: Learn how the actions page helps admins manage licenses and capacity with weekly recommendations for better efficiency.
 author: sidhartg
 ms.component: pa-admin
 ms.topic: conceptual
@@ -20,7 +20,7 @@ ms.custom:
 
 # View licensing and capacity recommendations
 
-The action center helps you optimize and manage licensing and capacity for your Power Platform tenant with actionable recommendations. These recommendations highlight ways to improve resource allocation, governance, and cost efficiency. You can view licensing and capacity recommendations in the [action center](power-platform-advisor.md) in the Power Platform admin center.
+The actions page helps you optimize and manage licensing and capacity for your Power Platform tenant with actionable recommendations. These recommendations highlight ways to improve resource allocation, governance, and cost efficiency. You can view licensing and capacity recommendations in the [actions page](power-platform-advisor.md) in the Power Platform admin center.
 
 The following recommendations are grouped by type:
 

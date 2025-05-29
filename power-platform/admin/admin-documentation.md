@@ -68,7 +68,7 @@ The Power Platform admin center provides the following capabilities.
 
 |Feature area  |Description  | Learn more |
 |---------|---------|----------------|
-|Actions | View recommendations about your Power Platform implementation. The recommendations enhance security, reliability, and overall health of your implementation.  |[Use the action center](power-platform-advisor.md)|
+|Actions | View recommendations about your Power Platform implementation. The recommendations enhance security, reliability, and overall health of your implementation.  |[Use the actions page](power-platform-advisor.md)|
 | Manage |  Manage your environments, environment groups, and tenant settings.| <ul><li>[Power Platform environments overview](environments-overview.md)</li><li>[Environment groups](environment-groups.md)</li><li>[Tenant settings](tenant-settings.md)</li></ul> |
 | Monitor | Measure and improve operational health metrics of resources built or deployed in Power Platform, such as apps. | [Monitor page (preview)](monitoring/monitoring-overview.md) |
 |Security | Run your organizational workloads in the safest way possible with a wide set of security features available. | [Security page overview](security/security-overview.md) |
@@ -83,7 +83,7 @@ The Power Platform admin center provides the following capabilities.
 |---------|---------|----------------|
 |Environments | View, create, and manage your environments. Select an environment to see details and manage its setting. |[Manage environment settings](./admin-settings.md)|
 | Environment groups |  Similar to folders, _environment groups_ are designed to help administrators organize their flat list of environments into structured groups based on different criteria, such as business unit, project, and location | [Environment groups](environment-groups.md) |
-| Advisor | The action center is your guide to personalized recommendations to optimize your Power Platform tenant. Advisor analyzes all Managed Environments and the apps in these environments within your Power Platform tenant. Advisor offers solutions to enhance security, reliability, and overall health. | [Use the action center](power-platform-advisor.md) |
+| Advisor | The actions page is your guide to personalized recommendations to optimize your Power Platform tenant. Advisor analyzes all Managed Environments and the apps in these environments within your Power Platform tenant. Advisor offers solutions to enhance security, reliability, and overall health. | [Use the actions page](power-platform-advisor.md) |
 |Security | Run your organizational workloads in the safest way possible with a wide set of security features available. | [Security overview](security/security-overview.md) |
 |Analytics     | Get a detailed view of key metrics for Microsoft Power Platform apps. |[Microsoft Dataverse analytics](./analytics-common-data-service.md)    |
 |Billing  |  View a summary of environments in your tenant requiring licensing attention and license consumption for your environments. |[Business subscription and billing documentation](/microsoft-365/commerce) and [View license consumption](view-license-consumption-issues.md) |

@@ -1,6 +1,6 @@
 ---
-title: Use the Action Center
-description: Optimize your Power Platform tenant with action center. Get tailored recommendations, automate actions, and track improvements easily.
+title: Actions Overview
+description: Optimize your Power Platform tenant with actions page. Get tailored recommendations, automate actions, and track improvements easily.
 author: sidhartg
 ms.component: pa-admin
 ms.topic: concept-article
@@ -18,11 +18,11 @@ ms.custom:
   - ai-seo-date:05/28/2025
 ---
 
-# Use the action center
+# Actions overview
 
-The action center provides personalized recommendations to optimize your Power Platform tenant. It analyzes all managed environments and the apps in these environments within your tenant. It recommends solutions to improve security, reliability, and overall health.
+The actions page in the Power Platform admin center provides personalized recommendations to optimize your Power Platform tenant. It analyzes all managed environments and the apps in these environments within your tenant. It recommends solutions to improve security, reliability, and overall health.
 
-With the action center, administrators can:
+With the actions page, administrators can:
 
 - Provide proactive, best practice recommendations.
 - Improve the overall health of their Power Platform tenant.
@@ -31,12 +31,12 @@ With the action center, administrators can:
 
 ## View recommendations
 
-To view recommendations in the action center:
+To view recommendations in the actions page:
 
 1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. Select **Actions**.
 
-Contextual recommendations from the Power Platform action center are also available in:
+Contextual recommendations from the Power Platform actions page are also available in:
 
 - Power Platform admin center  
   - Security page  
@@ -52,7 +52,7 @@ Contextual recommendations from the Power Platform action center are also availa
 
 ### Summary card: Microsoft Teams
 
-Each week, the action center sends a summary card in Teams that highlights the top two recommendations for the admin to focus on. These highlights help admins invest their time on the most important recommendations.
+Each week, the actions pages sends a summary card in Teams that highlights the top two recommendations for the admin to focus on. These highlights help admins invest their time on the most important recommendations.
 
 To get the summary card, admins should install the **Power Apps** app in Teams.
 
@@ -63,23 +63,23 @@ Once installed, admins can view the summary cards in their Teams chats.
 Power Platform admins can view the top recommendations on the **Advisor** card. If the admin center home page isn't customized, this card is automatically pinned on the **Home** page. Your tenant is scanned for recommendations weekly.
 
 - Select **View details** on any recommendation to view its details.  
-- Select **View recommendations** to view all recommendations on the **Recommendations** page within the action center.
+- Select **View recommendations** to view all recommendations on the actions page.
 
 > [!TIP]  
 > If the home page is customized, you don't see the **Advisor** card, or you removed the card from the home page, you can select **+ Add cards** to add the card to the **Home** page.
 
 ### Managed vs non-managed environments
 
-The action center is part of the advanced management features in the admin center. All the recommendations, affected resource details, and actions are available for the managed environments in your tenant.
+The actions page is part of the advanced management features in the admin center. All the recommendations, affected resource details, and actions are available for the managed environments in your tenant.
 
-The action center shows a summary of recommendations for non-managed environments. The summary appears as a banner above the affected resources table in the recommendation panel or with a lock icon on the recommendations page. Admins can turn on managed environments from the action center to view the affected resources and act on them.
+The actions page shows a summary of recommendations for non-managed environments. The summary appears as a banner above the affected resources table in the recommendation panel or with a lock icon on the recommendations page. Admins can turn on managed environments from the actions page to view the affected resources and act on them.
 
 > [!NOTE]  
-> When you turn on managed environments, it might take up to 72 hours for the action center to show full details of the affected resources in that environment.
+> When you turn on managed environments, it might take up to 72 hours for the actions page to show full details of the affected resources in that environment.
 
 ### Capabilities
 
-The action center includes these capabilities:
+The actions page includes these capabilities:
 
 - **Snooze recommendations**: Pause non-security recommendations for up to two months and undo snoozing from the **Snoozed recommendations** tab, if needed sooner.
 
@@ -87,7 +87,7 @@ The action center includes these capabilities:
 
 - **Delegate or collaborate**: Share recommendations and resources with colleagues to resolve them collaboratively.
 
-- **Action history**: Track all actions performed using the action center or using the Admin V2 connector.
+- **Action history**: Track all actions performed using the actions page or using the Admin V2 connector.
 
 - **Trends**: View changes in affected resources over time with trend data.
 
@@ -95,9 +95,9 @@ The action center includes these capabilities:
 
 ### Types of actions
 
-The action center lets admins address recommendations through different types of actions:
+The actions page lets admins address recommendations through different types of actions:
 
-- **Inline actions**: Perform actions directly from the action center interface.
+- **Inline actions**: Perform actions directly from the actions page interface.
 
 - **Automated actions using Power Automate**: Use flows to automate remediation processes.
 
@@ -109,7 +109,7 @@ The action center lets admins address recommendations through different types of
 
 ### Inline actions
 
-1. Go to the **Recommendations** tab in the action center.
+1. Go to the **Recommendations** tab in the actions page.
 
 1. Review the list of recommendations along with their severity levels.
 
@@ -123,9 +123,9 @@ The action center lets admins address recommendations through different types of
 
 ### Automated actions
 
-The action center supports automated actions in the [Power Platform for Admin V2](/connectors/powerplatformadminv2/) connector. These actions are useful for building remediation processes. For example, instead of deleting an unused app, an admin can first send an email or message to the owner of the app. The message informs the owner about an impending action. If the admin doesn't receive a reply from the owner, the app can be deleted.
+The actions page supports automated actions in the [Power Platform for Admin V2](/connectors/powerplatformadminv2/) connector. These actions are useful for building remediation processes. For example, instead of deleting an unused app, an admin can first send an email or message to the owner of the app. The message informs the owner about an impending action. If the admin doesn't receive a reply from the owner, the app can be deleted.
 
-While building cloud flows or PowerShell scripts using the connector, you can get action center recommendations and actions:
+While building cloud flows or PowerShell scripts using the connector, you can get actions page recommendations and actions:
 
 - **Get recommendations**: Returns all the valid recommendations in the tenant.
 - **Get recommendation resources**: Returns all the resources for a specific recommendation.
@@ -133,13 +133,13 @@ While building cloud flows or PowerShell scripts using the connector, you can ge
 
 ### Action history
 
-Action history shows all actions you take manually from the action center page and actions you run using the automated actions in the Power Platform for Admin v2 connector. Power Platform admins can view actions taken by them or other admins (both tenant-level admins and environment/system admins), whereas environment admins can only view the history of their own actions.
+Action history shows all actions you take manually from the actions page page and actions you run using the automated actions in the Power Platform for Admin v2 connector. Power Platform admins can view actions taken by them or other admins (both tenant-level admins and environment/system admins), whereas environment admins can only view the history of their own actions.
 
 ### Snooze recommendations
 
 Power Platform admins can snooze nonsecurity recommendations for up to two months to prioritize their work efficiently. To snooze a recommendation, hover over the recommendation to select the snooze action in the recommendation table and choose the snooze duration.
 
-When you snooze a recommendation, it moves from the active recommendations tab to the snoozed recommendations tab. Admins can see who snoozed the recommendation along with the duration and date when it was snoozed. The action center stops refreshing recommendations in their snoozed state.
+When you snooze a recommendation, it moves from the active recommendations tab to the snoozed recommendations tab. Admins can see who snoozed the recommendation along with the duration and date when it was snoozed. The actions page stops refreshing recommendations in their snoozed state.
 
 Snoozed recommendations can be activated again manually by selecting undo snooze from the snoozed recommendation table. They’re automatically activated after the snoozed duration elapses.
 
@@ -147,13 +147,13 @@ Snoozed recommendations can be activated again manually by selecting undo snooze
 
 Power Platform admins can dismiss security recommendations that aren't applicable for their organization. To dismiss a recommendation, hover over the recommendation to select the dismiss action in the recommendation table and choose the reason for dismissing the recommendation.
 
-When you dismiss a recommendation, it moves from the active recommendations tab to the dismissed recommendations tab. Admins can see the person dismissing the recommendation along with the reason and date when it was dismissed. The action center stops scanning dismissed recommendations.
+When you dismiss a recommendation, it moves from the active recommendations tab to the dismissed recommendations tab. Admins can see the person dismissing the recommendation along with the reason and date when it was dismissed. The actions page stops scanning dismissed recommendations.
 
 Dismissed recommendations can be activated again manually by selecting activate from the dismissed recommendation table. Dismissed recommendations remain in that state until they're manually activated.
 
 ### Share recommendations
 
-All recommendations in the action center can be shared in Microsoft Teams with other users for team collaboration.
+All recommendations in the actions page can be shared in Microsoft Teams with other users for team collaboration.
 
 An admin can share the entire recommendation or share specific rows within the recommendation with another user by entering their name in the **Share to** textbox located in the **Share this recommendation** pane.
 
@@ -166,7 +166,7 @@ When an entire recommendation or multiple rows in the recommendation are shared,
 
 ### Export recommendations
 
-You can export the recommendation data displayed in the action center using the **Get Recommendation Resources** action in the [Power Platform for Admin V2](/connectors/powerplatformadminv2/) connector.
+You can export the recommendation data displayed in the actions page using the **Get Recommendation Resources** action in the [Power Platform for Admin V2](/connectors/powerplatformadminv2/) connector.
 
 To retrieve resources for each recommendation, create a PowerShell script, a cloud flow, or a scheduled cloud flow. Export them to an Excel file or send them by email using Excel Online or Office 365 Outlook connectors.
 
@@ -190,7 +190,7 @@ The recommendation details panel shows a detailed view with actionable insights.
 
 ### Recommendation categories
 
-The action center organizes recommendations into the following categories. Select a category to view all the recommendations associated with that category:
+The actions page organizes recommendations into the following categories. Select a category to view all the recommendations associated with that category:
 
 - [Security](security-recommendations.md)  
 - [Operational efficiency](operational-efficiency-recommendations.md)

@@ -1,6 +1,6 @@
 ---
 title: View operational efficiency recommendations
-description: Learn how the action center helps improve operational efficiency with recommendations for apps, sites, and tenant settings.
+description: Learn how the actions page helps improve operational efficiency with recommendations for apps, sites, and tenant settings.
 author: sidhartg
 ms.component: pa-admin
 ms.topic: conceptual
@@ -20,7 +20,7 @@ ms.custom:
 
 # View operational efficiency recommendations
 
-The action center helps you optimize the operational efficiency of your Power Platform tenant by providing actionable recommendations. These recommendations identify opportunities to improve performance, governance, and resource utilization. You can view operational efficiency recommendations within the [action center](power-platform-advisor.md) in the Power Platform admin center.
+The Actions page helps you optimize the operational efficiency of your Power Platform tenant by providing actionable recommendations. These recommendations identify opportunities to improve performance, governance, and resource utilization. You can view operational efficiency recommendations within the [actions page](power-platform-advisor.md) in the Power Platform admin center.
 
 ## Apps
 
@@ -78,7 +78,7 @@ After you confirm the delete operation, the selected apps are deleted.
 > [!NOTE]
 >
 > - Once an action is taken, it takes up to one week for the apps to be removed from the list.
-> - Quarantine and Delete actions fail if the app is already deleted outside the action center.
+> - Quarantine and Delete actions fail if the app is already deleted outside the actions page.
 
 - **Severity**: Medium
 - **Refresh Frequency**: Weekly
@@ -104,9 +104,11 @@ This recommendation lists trial websites that are expiring in the next seven day
 This recommendation lists websites that received no traffic in the last 30 days. This means some websites
 in your tenant had no visitors in the past month. These websites might be outdated, irrelevant, or redundant.
 
-To review these websites, select the recommendation to see a list of the websites, their URLs, environment names, and environment types. You can also visit the Power Pages admin center to get more insights into the traffic.
+To review these websites, select the recommendation to see a list of the websites, their URLs, environment names, and environment types. You can also visit the Power Platform admin center to get more insights into the traffic:
 
-1. Select **Resources** > **Power Pages sites** > **Analytics**.
+1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the left navigation, select **Manage**.
+1. Under **Products**, select **Power Pages** and then select **Analytics (preview)**.
 
 If a website isn't currently needed, you can shut it down. When a website is shut down, it's unavailable to users. You can always restart the websites later if you need them.
 

@@ -1,6 +1,6 @@
 ---
 title: View security recommendations
-description: Use the action center to identify and address potential risks across apps, sites, and tenant settings.
+description: Use the actions page to identify and address potential risks across apps, sites, and tenant settings.
 author: sidhartg
 ms.component: pa-admin
 ms.topic: conceptual
@@ -20,7 +20,7 @@ ms.custom:
 
 # View security recommendations
 
-The action center enhances the security and reliability of your Power Platform tenant with actionable recommendations. These recommendations identify potential risks and guide you on how to mitigate them. View security recommendations in the [action center](power-platform-advisor.md) in the Power Platform admin center.
+The actions page enhances the security and reliability of your Power Platform tenant with actionable recommendations. These recommendations identify potential risks and guide you on how to mitigate them. View security recommendations in the [actions page](power-platform-advisor.md) in the Power Platform admin center.
 
 The following recommendations are grouped by resource type:
 
@@ -57,7 +57,7 @@ With multiple co-owners of an app, admins can promote one of the co-owners to ow
 
 1. Select an app and select **Promote co-owner to owner**.
 
-   If you select multiple apps, the action center displays any shared co-owners for the selected apps.
+   If you select multiple apps, the actions page displays any shared co-owners for the selected apps.
 
 1. Select **Assign app** to promote the co-owner to owner for all selected apps.
 

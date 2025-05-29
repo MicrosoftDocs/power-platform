@@ -36,7 +36,7 @@ The [Power Platform admin center](/power-platform/admin/new-admin-center) is des
 
 - Use [tenant-level analytics](/power-platform/admin/tenant-level-analytics) to extract key service metrics based on user adoption across your environments.
 - Use the [Copilot page](/power-platform/admin/copilot/copilot-hub) to track usage, and access governance controls for Power Platform Copilots.
-- Use the [Action center](/power-platform/admin/power-platform-advisor) to monitor recommendations to optimize your tenant.
+- Use the [Actions page](/power-platform/admin/power-platform-advisor) to monitor recommendations to optimize your tenant.
 
 ### Monitor page
 

@@ -128,7 +128,7 @@
               href: api-request-limits-allocations.md
             - name: Power Platform licensing FAQs
               href: powerapps-flow-licensing-faq.md
-        - name: Action center
+        - name: Actions
           items:
             - name: Overview
               href: power-platform-advisor.md
