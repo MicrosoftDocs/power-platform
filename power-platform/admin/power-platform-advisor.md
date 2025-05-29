@@ -39,7 +39,6 @@ To view recommendations in the action center:
 Contextual recommendations from the Power Platform action center are also available in:
 
 - Power Platform admin center  
-  - Action center  
   - Security page  
   - Copilot page  
   - Monitor page  
@@ -49,7 +48,7 @@ Contextual recommendations from the Power Platform action center are also availa
   - Deployment page  
 
 - Power Automate maker portal  
-  - Automation Center page  
+  - Automation center page  
 
 ### Summary card: Microsoft Teams
 
