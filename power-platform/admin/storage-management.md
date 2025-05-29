@@ -4,7 +4,7 @@ description: Learn about storage management in Dataverse and finance and operati
 author: ritesp
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 05/28/2025
+ms.date: 05/29/2025
 ms.subservice: admin
 ms.author: ritesp
 ms.reviewer: sericks
@@ -67,7 +67,7 @@ As a specialized category of operational use, data may be required to be replica
 
 - **Banking**: Customer relationship management for frontline customer interactions and replication to multiple banking systems. For example, you have current accounts, credit cards, mortgage, and credit check systems.
 - **Manufacturing**: Customer relationship management for frontline order taking and enterprise resource management system for supply chain management.
-- **Police emergency handling**: Customer relationship management for citizen interactions and a dispatch systems for police offer deployment management.
+- **Police emergency handling**: Customer relationship management for citizen interactions and a dispatch systems for police departments offer deployment management.
 
 In these cases, while each system may have unique data it tracks, there's often common, master data that needs to be shared between the systems and kept in sync, leading to integration needs.
 
@@ -392,7 +392,7 @@ Use cases for storage management in Dataverse and finance and operations environ
   
 **- Reducing storage overages**
   - **Scenario**: A customer receives a notification about exceeding their Dataverse storage quota, leading to unexpected costs.
-  - **Action**: Use capacity reports to identify top-consuming tables, clean up obsolete environments, and remove unused attachments or logs. Consider moving cold data to lower-cost storage tiers.
+  - **Action**: Use capacity reports to identify top-consuming tables, clean up obsolete environments, and remove unused attachments or logs. Consider moving cold data&mdash;typically historical or infrequently accessed records&mdash;to lower-cost storage tiers.
 
 **- Optimizing performance in large tables**
   - **Scenario**: Business-critical processes are slowing down due to large tables.
