@@ -116,7 +116,7 @@ Once server-based SharePoint integration is enabled, you can also enable integra
 <a name="BKMK_UsingDocManage"></a>   
 
 ## Using Document Management  
- You're now ready to add document storage locations to the entities you enabled above and start managing documents. Begin by opening a document management-enabled record (for example, Contact).  
+ You're now ready to add document storage locations to the entities you enabled and start managing documents. Begin by opening a document management-enabled record (for example, Contact).  
   
 1. Browse to your web application.  
   
@@ -144,7 +144,7 @@ Once server-based SharePoint integration is enabled, you can also enable integra
  
 ## Known issue
 
-SharePoint Online has introduced a new feature that enables a SharePoint or global administrator in Microsoft 365 to block or limit access to SharePoint and OneDrive content from unmanaged devices. For more information, see [Control access from unmanaged devices](/sharepoint/control-access-from-unmanaged-devices).
+SharePoint Online introduced a new feature that enables a SharePoint or global administrator in Microsoft 365 to block or limit access to SharePoint and OneDrive content from unmanaged devices. For more information, see [Control access from unmanaged devices](/sharepoint/control-access-from-unmanaged-devices).
 
 You can set access at three levels:
 1. Allow full access  from desktop apps, mobile apps, and the web
