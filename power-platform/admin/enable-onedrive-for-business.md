@@ -1,6 +1,6 @@
 ---
 title: Enable and make available OneDrive for Business (online)
-description: Learn about licensing and other requirements for using OneDrive for Business, and how to enable it in your environment and control access in apps.
+description: Learn about OneDrive for Business licensing and other requirements, and how to enable it in your environment and control access in apps.
 author: sericks007
 contributors: 
   - yingchin
@@ -27,7 +27,7 @@ You can create and manage private documents with [!INCLUDE[pn_onedrive_for_busin
 ## Requirements  
 
 > [!IMPORTANT]
-> This topic applies to organizations deploying online versions of [!INCLUDE[pn_onedrive_for_business](../includes/pn-onedrive-for-business.md)] and customer engagement apps. [!INCLUDE[pn_onedrive_for_business](../includes/pn-onedrive-for-business.md)] relies on server-based SharePoint integration. To use this feature, your organization needs to have at least one active SharePoint site and your admin needs to enable server-based integration.
+> This article applies to organizations deploying online versions of [!INCLUDE[pn_onedrive_for_business](../includes/pn-onedrive-for-business.md)] and customer engagement apps. [!INCLUDE[pn_onedrive_for_business](../includes/pn-onedrive-for-business.md)] relies on server-based SharePoint integration. To use this feature, your organization needs to have at least one active SharePoint site and your admin needs to enable server-based integration.
 >
 > For information on integrating [!INCLUDE[pn_onedrive_for_business](../includes/pn-onedrive-for-business.md)] on-premises with Dynamics 365 apps, or an online/on-premises mix of these products, see: [Enable OneDrive for Business (on-premises)](../admin/connect-onedrive-business.md).  
 
@@ -45,7 +45,7 @@ Before you use [!INCLUDE[pn_onedrive_for_business](../includes/pn-onedrive-for-b
   
 ## Enable OneDrive for Business
 
-Take these steps to enable [!INCLUDE[pn_onedrive_for_business](../includes/pn-onedrive-for-business.md)].  
+To enable [!INCLUDE[pn_onedrive_for_business](../includes/pn-onedrive-for-business.md)], take these steps:  
 
 ### [Modern admin center](#tab/new)
 
