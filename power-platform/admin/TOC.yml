@@ -34,6 +34,8 @@
               href: quickly-navigate-office-365-app-launcher.md
             - name: Enable preview features
               href: what-are-preview-features-how-do-i-enable-them.md
+            - name: Search with the discovery agent
+              href: discovery-agent.md
             - name: Subscriptions, service health, and more
               items:
                 - name: How do I check my online service health?
@@ -126,6 +128,20 @@
               href: api-request-limits-allocations.md
             - name: Power Platform licensing FAQs
               href: powerapps-flow-licensing-faq.md
+        - name: Actions
+          items:
+            - name: Overview
+              href: power-platform-advisor.md
+            - name: Recommendations
+              items:
+                - name: Security
+                  href: security-recommendations.md
+                - name: Operational efficiency
+                  href: operational-efficiency-recommendations.md
+                - name: Licensing and capacity
+                  href: licensing-and-capacity-recommendations.md
+                - name: Performance
+                  href: performance-recommendations.md
         - name: Deploy (preview)
           href: ../alm/admin-deployment-hub.md
         - name: Environments
@@ -188,8 +204,6 @@
                   href: managed-environment-solution-checker.md
                 - name: Licensing
                   href: managed-environment-licensing.md
-                - name: Use Power Platform Advisor
-                  href: power-platform-advisor.md
             - name: Environment updates
               items:
                 - name: Opt in to early access updates
@@ -499,7 +513,7 @@
                     - name: DLP for Copilot Studio
                       href: /microsoft-copilot-studio/admin-data-loss-prevention
                 - name: Virtual Networks
-                  items: 
+                  items:
                     - name: Virtual Network support overview
                       href: vnet-support-overview.md
                     - name: Virtual Network support white paper
@@ -718,6 +732,8 @@
                   href: conversation-diagnostics-application-insights.md
         - name: Storage
           items:
+            - name: Storage management in Dataverse and finance and operations apps
+              href: storage-management.md
             - name: Add more Dataverse capacity
               href: add-storage.md
             - name: Dataverse capacity-based storage overview
@@ -840,7 +856,7 @@
                   items:
                     - name: "2024-10-01"
                       href: /rest/api/power-platform
-                    - name: "2022-03-01-preview"
+                    - name: 2022-03-01-preview
                       href: /rest/api/power-platform
                     - name: "2020-10-01"
                       items:
@@ -1022,9 +1038,6 @@
                           href: monitor-email-processing-errors.md
                         - name: Email in "Pending Send" status?
                           href: why-email-message-sent-have-pending-send-status.md
-              # Leave this commented out as this topic should not appear in the TOC. For context-sensitive help link.
-              #   - name: When would I want to use this check box?
-              #     href: when-would-want-use-check-box.md
         - name: Extend with integration and solutions
           items:
             - name: SharePoint integration
@@ -1060,7 +1073,7 @@
               href: manage-bing-maps-organization.md
             - name: Enable Power Automate integration
               href: enable-embedded-flow-in-your-organization.md
-            - name: "Live Assist powered by Café X (preview)"
+            - name: Live Assist powered by Café X (preview)
               href: /dynamics365/customer-engagement/live-assist/live-assist-microsoft-dynamics-365-powered-by-cafe-x
             - name: Use Power BI
               href: use-power-bi.md
@@ -1197,9 +1210,9 @@
               href: determine-org-id-name.md
             - name: Manage email notifications to admins
               href: manage-email-notifications.md
-            - name: Policies and communications 
-              displayName: update, maintenance
+            - name: Policies and communications
               href: policies-communications.md
+              displayName: update, maintenance
             - name: Notifications explained
               href: notifications-explained.md
     - name: Administer customer engagement apps in Dynamics 365
@@ -1222,4 +1235,3 @@
           href: ../developer/index.yml
         - name: Guidance documentation
           href: ../guidance/index.yml
-          displayName: CoE adoption guidance best practices
