@@ -32,7 +32,7 @@ ms.collection:
 
 # Move data across regions for Copilots and generative AI features
 
-However, Copilots and generative AI features aren't available in all regions and languages. In some cases, even where there is some in region capacity, data may still have to move outside of the region for availability reasons or because certain features depend on other capacity or Microsoft services. For this reason and depending on where your environment is hosted and what features you use, you might need to allow data movement across regions to use Copilots and generative AI features. This article explains how to do that.
+However, Copilots and generative AI features aren't available in all regions and languages. In some cases, even where there's some in region capacity, data may still have to move outside of the region for availability reasons or because certain features depend on other capacity or Microsoft services. For this reason and depending on where your environment is hosted and what features you use, you might need to allow data movement across regions to use Copilots and generative AI features. This article explains how to do that.
 
 > [!NOTE]
 > - Copilots and generative AI features that are generally available are turned on by default. However, you might need to allow data movement across regions to use all Copilot and generative AI features.
@@ -74,7 +74,7 @@ To turn on data movement across regions, Bing search, and Microsoft 365 services
 1. Review the terms of use and select the **Move data across regions** checkbox.
 
     > [!Note]
-    > The **Move data across regions** checkbox isn't displayed for US and govenment cloud regions.
+    > The **Move data across regions** checkbox isn't displayed for US and government cloud regions.
 
     When you use Copilots and generative AI features&mdash;and the **Move data across regions** checkbox is selected&mdash;your inputs (prompts) and outputs (results) might move outside of your region to the location where the generative AI feature is hosted, as described in the preceding table. Learn more in [Regions where data is processed for Copilots and generative AI features](#regions-where-data-is-processed-for-copilots-and-generative-ai-features).
 
@@ -170,7 +170,7 @@ Learn more about the languages that are supported in the [Copilot international 
 Yes, you can use the **Generative AI settings** environment rule to control this at scale. Learn more in [Rules](/power-platform/admin/environment-groups#rules).
 
 ### What features are turned off when you clear the “Move data across regions” checkbox?
-The **Move data across regions** checkbox isn't intended to turn off Copilots and generative AI features.  When you clear the **Move data across regions** checkbox, it may turn off some features that require data movement. As we add new capacities to new regions, these features may work with in region capacity at some point. Use feature-dedicated controls to turn off unwanted features.
+The **Move data across regions** checkbox isn't intended to turn off Copilots and generative AI features. When you clear the **Move data across regions** checkbox, it may turn off some features that require data movement. As we add new capacities to new regions, these features may work with in region capacity at some point. Use feature-dedicated controls to turn off unwanted features.
 
 ### Why do I need to select the “Move data across regions” checkbox if my environment has in region capacity? 
 Some regions may have limited capacity, or no capacity at all. To ensure availability of Copilots and generative AI features, we may need to move the data outside of the region for processing.
