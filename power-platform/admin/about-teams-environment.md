@@ -1,13 +1,14 @@
 ---
-title: "About the Microsoft Dataverse for Teams environment | MicrosoftDocs"
-description: Administer and manage Microsoft Dataverse for Teams environment
+title: About the Microsoft Dataverse for Teams environment
+description: Administer and manage a Microsoft Dataverse for Teams environment
 author: paulliew
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 05/04/2024
+ms.date: 05/30/2025
 ms.subservice: admin
 ms.custom: NewPPAC
 ms.author: matp
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -17,9 +18,9 @@ search.audienceType:
 
 <!-- fwlink 2143567 -->
 
-Introduced in September 2020, *Microsoft Dataverse for Teams* is a built-in, low-code data platform for Microsoft Teams that empowers users to build custom apps, bots, and flows in Microsoft Teams by using Power Apps, Microsoft Copilot Studio, and Power Automate. Dataverse for Teams—built on Microsoft Dataverse—provides relational data storage, rich data types, enterprise-grade governance, and one-click solution deployment to the Microsoft Teams app store. More information: [Dataverse for Teams overview](/powerapps/teams/overview-data-platform)
+Introduced in September 2020, *Microsoft Dataverse for Teams* is a built-in, low-code data platform for Microsoft Teams that empowers users to build custom apps, agents, and flows in Microsoft Teams by using Power Apps, Microsoft Copilot Studio, and Power Automate. Dataverse for Teams—built on Microsoft Dataverse—provides relational data storage, rich data types, enterprise-grade governance, and one-click solution deployment to the Microsoft Teams app store. More information: [Dataverse for Teams overview](/powerapps/teams/overview-data-platform)
 
-The Dataverse for Teams environment is automatically created for the selected team when you create an [app](/powerapps/teams/create-first-app) or [bot](/power-virtual-agents/teams/authoring-first-bot-teams#create-a-bot) in Microsoft Teams for the first time or install an app created using Power Apps from the app catalog for the first time. The Dataverse for Teams environment is used to store, manage, and share team-specific data, apps, and flows. Each team can have one environment, and all data, apps, bots, and flows created with the app created using Power Apps inside a team are available from that team's Dataverse for Teams database.  
+The Dataverse for Teams environment is automatically created for the selected team when you create an [app](/powerapps/teams/create-first-app) or [agent](/microsoft-copilot-studio/fundamentals-get-started-teams) in Microsoft Teams for the first time or install an app created using Power Apps from the app catalog for the first time. The Dataverse for Teams environment is used to store, manage, and share team-specific data, apps, and flows. Each team can have one environment, and all data, apps, agents, and flows created with the app created using Power Apps inside a team are available from that team's Dataverse for Teams database.  
 
 You can identify a Dataverse for Teams environment in the [Power Platform admin center](https://admin.powerplatform.microsoft.com) by checking the **Type** column in the list of environments. Environments where the **Type** is marked as **Microsoft Teams** are Dataverse for Teams environments.
 
@@ -33,11 +34,11 @@ Note the following regarding access to Microsoft Power Platform apps in Teams:
   - Apps created in Teams are not displayed in the list of apps in make.powerapps.com or Power Apps mobile app. The only way to run these apps is to launch them in a web browser from Teams using **Go to website** or **Open in browser** in the Power Apps mobile app.
   - When run outside of Teams, the Teams integration object’s values won’t be available.
 
-- For any standalone Power Apps or Power Automate usage, which includes Dataverse API access as well, the Dataverse for Teams environment will need to be upgraded to Dataverse.  
+- For any standalone Power Apps or Power Automate usage, which also includes Dataverse API access, the Dataverse for Teams environment needs to upgrade to Dataverse.  
 
-- Teams can invite guests who can access the apps, bots, flows, and data in the Dataverse for Teams database within their team. However, they won't be allowed to install, make, or edit apps. They can only discover and run apps in their team.
+- Teams can invite guests who can access the apps, agents, flows, and data in the Dataverse for Teams database within their team. However, they won't be allowed to install, make, or edit apps. They can only discover and run apps in their team.
 
-- No direct API access to Dataverse for Teams will be provided, and only apps, bots, and flows embedded within the Microsoft Teams client will be able to access the Dataverse for Teams runtime.
+- No direct API access to Dataverse for Teams is provided, and only apps, agents, and flows embedded within the Microsoft Teams client can access the Dataverse for Teams runtime.
 
 More information: [Dataverse for Teams licensing FAQ](powerapps-flow-licensing-faq.md#dataverse-for-teams)
 
@@ -77,9 +78,9 @@ This section summarizes user access to Dataverse for Teams environments and reso
 
 Every team in Microsoft Teams is linked 1:1 to a [Microsoft 365 group](/microsoft-365/admin/create-groups/office-365-groups?view=o365-worldwide&preserve-view=true).
 
-Microsoft 365 Groups supports two user membership types: owners and members. Members can be users from the customer's own tenant or from a guest tenant. Any user management (addition, removal, user type change) made in a team will be reflected in the Microsoft 365 group, and vice versa.
+Microsoft 365 Groups supports two user membership types: owners and members. Members can be users from the customer's own tenant or from a guest tenant. Any user management (addition, removal, user type change) made in a team is reflected in the Microsoft 365 group, and vice versa.
 
-Access to a Dataverse for Teams environment and its resources (apps, data) will be restricted to users in the team. The Microsoft 365 group linked to a team will be automatically associated with the Dataverse for Teams environment, restricting access to users of that group. This Microsoft 365 Group association with the Dataverse for Teams environment won't be editable until the environment is upgraded to Dataverse.
+Access to a Dataverse for Teams environment and its resources (apps, data) is restricted to users in the team. The Microsoft 365 group linked to a team is automatically associated with the Dataverse for Teams environment, restricting access to users of that group. This Microsoft 365 Group association with the Dataverse for Teams environment is not editable until the environment is upgraded to Dataverse.
 
 There's a difference in the models for adding users to an environment with a Dataverse database and adding them to Dataverse for Teams environments. The following table describes the differences.
 
@@ -143,14 +144,14 @@ To change settings for a Dataverse for Teams environment, follow these steps:
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
-1. On the Environments page, select an environment where the Type is marked as Microsoft Teams.
+1. On the Environments page, select an environment where the Type is marked as **Microsoft Teams**.
 1. In the command bar, select **Settings**. 
 1. Expand **Integration**, then select **Teams integration settings**.
    
 #### [Classic admin center](#tab/classic)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Environments**.
-1. On the Environments page, select an environment where the Type is marked as Microsoft Teams.
+1. On the Environments page, select an environment where the Type is marked as **Microsoft Teams**.
 1. In the command bar, select **Settings**.  
 1. Expand **Integration**, then select **Teams integration settings**.
 ---
@@ -160,7 +161,7 @@ In the **Microsoft Teams collaboration and chat** settings, choose one of the fo
 - **Turn on for all Dynamics 365 apps** – Enables Teams chat for all supported Dynamics 365 apps in your organization, including any that you add in the future.
 - **Turn on for selected Dynamics 365 apps** – Enables Teams chat for the apps you choose. If your organization already uses Teams, the selection you made previously remains. If you didn't previously set up Teams, it's on by default for the Copilot Service workspace and Customer Service Hub apps.
 
-Click **Save** to apply the changes.
+Select **Save** to apply the changes.
 
 ### Users + permissions
 <!-- fwlink 2123134 2127762 -->
@@ -175,8 +176,8 @@ You can specify users in an environment to provide access to Dataverse for Teams
 1. In the command bar, select **Settings**. 
 1. Expand **Users + permissions**, then select **Users**.
 1. In the command bar, select **Add user**.
-1. Enter a name or email address of a user who meets the user access requirements to be added to the Dataverse for Teams environment.
-1. Click **Add** to save the changes.
+1. Enter a name or email address of a user who meets the necessary user-access requirements to be added to the Dataverse for Teams environment.
+1. Select **Add** to save the changes.
    
 #### [Classic admin center](#tab/classic)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
@@ -185,11 +186,11 @@ You can specify users in an environment to provide access to Dataverse for Teams
 1. In the command bar, select **Settings**.  
 1. Expand **Users + permissions**, then select **Users**.
 1. In the command bar, select **Add user**.
-1. Enter a name or email address of a user who meets the user access requirements to be added to the Dataverse for Teams environment.
-1. Click **Add** to save the changes.
+1. Enter a name or email address of a user who meets the necessary user-access requirements to be added to the Dataverse for Teams environment.
+1. Select **Add** to save the changes.
 ---
 
-In the top command bar, click Refresh to update the list and view the newly added user.
+In the top command bar, select **Refresh** to update the list and view the newly added user.
 
 The list displays users with enabled and disabled statuses who are members of the Dataverse for Teams environment. You can select a user to run diagnostics, check their access details, and review their status.
 
@@ -203,14 +204,14 @@ To delete a Dataverse for Teams environment, follow these steps:
 1. In the **Manage** pane, select **Environments**.
 1. On the **Environments** page, select an environment where the **Type** is marked as **Microsoft Teams**.
 1. In the command bar, select **Delete**. 
-1. Confirm to delete the environement.
+1. Enter the environment name and select **Confirm** to delete the environement.
    
 #### [Classic admin center](#tab/classic)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Environments**.
 1. On the **Environments** page, select an environment where the **Type** is marked as **Microsoft Teams**.
 1. In the command bar, select **Delete**. 
-1. Confirm to delete the environement.
+1. Enter the environment name and select **Confirm** to delete the environement.
 ---
 
 ### Upgrade a Dataverse for Teams environment to production
@@ -219,11 +220,11 @@ Select **Upgrade to production**. More information: [Upgrade process](#upgrade-p
 
 ## Capacity limits
 
-The consumption of capacity by Dataverse for Teams environments won't count towards the tenant's capacity limits. Instead, we'll provide a pool of capacity for Dataverse for Teams environments, which will be separate from the tenant's Microsoft Power Platform Dataverse capacity pool. Capacity won't be transferable between these two pools.  
+The consumption of capacity by Dataverse for Teams environments won't count toward the tenant's capacity limits. Instead, we provide a pool of capacity for Dataverse for Teams environments, which is separate from the tenant's Microsoft Power Platform Dataverse capacity pool. Capacity isn't transferable between these two pools.  
 
 **Per-environment limits on Dataverse for Teams environments**: Each Dataverse for Teams environment provides 2 GB of combined database and file storage, with a portion of this amount reserved for system use. 
 
-To see the consumption of each Dataverse for Teams environment in a tenant, follow these steps:
+To see the consumption of each Dataverse for Teams environment in a tenant, take these steps:
 
 #### [Modern admin center](#tab/new)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
@@ -237,7 +238,7 @@ To see the consumption of each Dataverse for Teams environment in a tenant, foll
 1. On the **Capacity** page, select the **Microsoft Teams** tab to view consumption details.
 ---
 
-**Tenant-wide limits on Dataverse for Teams environments**: Each tenant will also have limits related to Dataverse for Teams environments defined in the following table. 
+**Tenant-wide limits on Dataverse for Teams environments**: Each tenant also has limits related to Dataverse for Teams environments defined in this table. 
 
 |Unit  |Service limit  |
 |---------|---------|
@@ -247,19 +248,19 @@ To see the consumption of each Dataverse for Teams environment in a tenant, foll
 
 ### Enforcement
 
-The following actions will be taken when customers approach and exceed the environment-level or tenant-wide Microsoft Teams limits. 
+The following actions are taken when customers approach and exceed the environment-level or tenant-wide Microsoft Teams limits. 
 
 #### Environment-level enforcement actions  
 
-When a Dataverse for Teams environment in a team approaches or reaches the 2 GB capacity limit, the following actions will be taken: 
-- At 80 percent of the limit, the Microsoft Teams users will see in the Microsoft Teams maker experience a message informing them the capacity limit is about to be reached. At this point, customers are encouraged to either reduce storage usage or contact their admin for other options.  
-- At 100 percent of the limit, any existing apps, chatbots, and flows will continue to work and existing apps can be updated. However, new apps, bots, flows, and tables can't be created or installed as a result of having reached the capacity limit. 
+When a Dataverse for Teams environment in a team approaches or reaches the 2 GB capacity limit, the following actions are taken: 
+- At 80 percent of the limit, the Microsoft Teams users see in the Microsoft Teams maker experience a message informing them the capacity limit is about to be reached. At this point, customers are encouraged to either reduce storage usage or contact their admin for other options.  
+- At 100 percent of the limit, any existing apps, agents, and flows will continue to work and existing apps can be updated. However, new apps, agents, flows, and tables can't be created or installed as a result of having reached the capacity limit. 
 
 #### Tenant-level enforcement  
 
-When a tenant approaches or reaches their tenant-wide Microsoft Teams limits described earlier, the following actions will be taken: 
-- At 80 percent of the limit, a notification that capacity is reaching its limit will be sent to the tenant admin (Microsoft 365 Global admin, Power Platform admin, Dynamics 365 admin). The admin will be encouraged to consider reducing storage usage or upgrading some of the Dataverse for Teams environments.
-- At 100 percent of the limit, the creation of new Dataverse for Teams environments will be blocked. Any users attempting to create a new Dataverse for Teams environment will be prompted to contact the tenant admin as the result of the capacity limit being reached. Additionally, new apps, chatbots, flows, and tables won't be allowed to be created or installed in any existing Dataverse for Teams environment.  
+When a tenant approaches or reaches their tenant-wide Microsoft Teams limits described earlier, the following actions are taken: 
+- At 80 percent of the limit, a notification that capacity is reaching its limit is sent to the tenant admin (Microsoft 365 Global admin, Power Platform admin, Dynamics 365 admin). The admin is encouraged to consider reducing storage usage or upgrading some of the Dataverse for Teams environments.
+- At 100 percent of the limit, the creation of new Dataverse for Teams environments is blocked. Any users attempting to create a new Dataverse for Teams environment are prompted to contact the tenant admin as the result of the capacity limit being reached. Additionally, new apps, agents, flows, and tables won't be allowed to be created or installed in any existing Dataverse for Teams environment.  
 
 As mentioned for the environment-level enforcement, any existing apps will still be able to function as expected.  
 
@@ -275,44 +276,44 @@ A tenant admin will be allowed to upgrade a Dataverse for Teams environment to a
 
 1. Within a team, the Microsoft Teams user chooses to create an app by using the new integrated app created using Power Apps creation experience in Microsoft Teams, or by installing an existing Dataverse for Teams environment&ndash;based app. At this point, a Dataverse for Teams environment is provisioned for that team.  
 
-2. Over time, the data stored in the Dataverse for Teams environment will grow and eventually reach the capacity limit that these environments have (2 GB). At this point, existing apps will continue to operate but new applications won't be allowed to be created or installed. Customers will be directed to contact a tenant admin to upgrade the Dataverse for Teams environments to Dataverse and obtain more capacity. Alternatively, a Microsoft Teams user can request that the admin upgrade the environment because they want to use a certain feature in Dataverse.  
+2. Over time, the data stored in the Dataverse for Teams environment grows and eventually reaches the set environment-capacity limits (2 GB). At this point, existing apps continue to operate but users are not allowed to create or install new applications. At this point, users are directed to contact a tenant admin to upgrade the Dataverse for Teams environments to Dataverse and obtain more capacity. Alternatively, Microsoft Teams users can request that the admin upgrade the environment because they want to use a certain feature in Dataverse.  
 
-3. Admins will review the request from the Microsoft Teams user and make the decision to upgrade the environment from Microsoft Teams to Dataverse. At this point, the admin will go to the Power Platform admin center environments view to execute the upgrade.
+3. Admins review the request from the Microsoft Teams user and make the decision to upgrade the environment from Microsoft Teams to Dataverse. At this point, the admin goes to the Power Platform admin center environments view to execute the upgrade.
 
    > [!NOTE]
-   > To successfully carry out the upgrade, the tenant must have at least as much available capacity as the size of the Dataverse for Teams environment that's being upgraded. After its upgrade, the consumed capacity of the upgraded Dataverse for Teams environment will start counting towards the tenant's capacity. If an attempt is made to upgrade a Dataverse for Teams environment when the tenant doesn't have enough capacity, the upgrade operation will be blocked and an error message will be displayed.
+   > To successfully carry out the upgrade, the tenant must have at least as much available capacity as the size of the Dataverse for Teams environment that's being upgraded. After its upgrade, the consumed capacity of the upgraded Dataverse for Teams environment starts counting toward the tenant's capacity. If an attempt is made to upgrade a Dataverse for Teams environment when the tenant doesn't have enough capacity, the upgrade operation is blocked and an error message is displayed.
 
-4. Admins will be given a message with the implications of upgrading and asked to confirm the action.  
+4. Admins are given a message with the implications of upgrading and asked to confirm the action.  
 
-5. If the admin confirms, the upgrade will go forward. As the upgrade progresses, various notifications will be provided as the operation transitions through the various states.  
+5. If the admin confirms, the upgrade goes forward. As the upgrade progresses, various notifications are provided as the operation transitions through the various states.  
 
 After upgrade, the following applies to the newly upgraded environment:  
-- To find and edit apps and flows, app makers will need to go to the [Power Apps](https://make.powerapps.com) portal.
-- The upgraded environment's lifecycle will no longer be tied to the lifecycle of that team. If the team is deleted, the upgraded environment remains. 
-- Any apps running on the environment will require Microsoft Power Platform (Power Apps, Power Automate) licenses to be accessed. 
+- To find and edit apps and flows, app makers need to go to the [Power Apps](https://make.powerapps.com) portal.
+- The upgraded environment's lifecycle is no longer tied to the lifecycle of that team. If the team is deleted, the upgraded environment remains. 
+- Any apps running on the environment require Microsoft Power Platform (Power Apps, Power Automate) licenses to be accessed. 
 - The apps can run inside and outside of Microsoft Teams. 
-- All existing apps will be associated with the upgraded environment (Dataverse) and can take advantage of the extended set of tables. 
-- The upgraded environment capacity will start counting against the tenant's Dataverse capacity. 
-- The Microsoft 365 Groups association will become editable. 
-- Team owners are assigned the System Admin roles on their environment and can access the environment by using the Power Platform admin center. 
-- Adding a new Microsoft Teams Template app to the former team won't create a new Dataverse for Teams environment for the team. 
+- All existing apps are associated with the upgraded environment (Dataverse) and can take advantage of the extended set of tables. 
+- The upgraded environment capacity starts counting against the tenant's Dataverse capacity. 
+- The Microsoft 365 Groups association becomes editable. 
+- Team owners are assigned the System Admin roles on their environment and can access the environment by using the [Power Platform admin center](https://admin.powerplatform.microsoft.com). 
+- Adding a new Microsoft Teams Template app to the former team doesn't create a new Dataverse for Teams environment for the team. 
 
 ## Ability to govern Dataverse for Teams
 
-The ability to create apps or bots with the new Power Apps and Microsoft Copilot Studio apps is enabled by default in Microsoft Teams. Admins can enable or disable it for specific users by using the Microsoft Teams apps permission policies in Microsoft Teams.
+The ability to create apps or agents with the new Power Apps and Microsoft Copilot Studio apps is enabled by default in Microsoft Teams. Admins can enable or disable it for specific users by using the Microsoft Teams apps permission policies in Microsoft Teams.
 
 In your Microsoft Teams admin center, you can use **Power Apps** and **Microsoft Copilot Studio** applications available under **Microsoft Apps** to enable or disable these new capabilities for specific users. More information: [Manage app permission policies in Microsoft Teams](/microsoftteams/teams-app-permission-policies)
 
-In addition to the new experience of creating apps or bots with Power Apps and Microsoft Copilot Studio, users can use sample apps to instantiate Microsoft Teams apps (and associated Dataverse for Teams environments). Available sample apps are listed [here](/powerapps/teams/use-sample-apps-from-teams-store). You can enable or disable these apps for specific users by using the Microsoft Teams apps permissions policies. For example, for app permissions policies under **Microsoft Apps** in the Microsoft Teams admin center, you'll find **Employee Ideas**, **Inspection**, and **Issue Reporting** sample apps.
+In addition to the new experience of creating apps or agents with Power Apps and Microsoft Copilot Studio, users can use sample apps to instantiate Microsoft Teams apps (and associated Dataverse for Teams environments). Available sample apps are listed [here](/powerapps/teams/use-sample-apps-from-teams-store). You can enable or disable these apps for specific users by using the Microsoft Teams apps permissions policies. For example, for app permissions policies under **Microsoft Apps** in the Microsoft Teams admin center, you'll find **Employee Ideas**, **Inspection**, and **Issue Reporting** sample apps.
 
-Note that when the app created using Power Apps is disabled, users won't have access to any standalone apps that you pinned in their Microsoft Teams channels with the app created using Power Apps. For users to continue using standalone apps in the Microsoft Teams experience even after the Power Apps maker experience has been turned off for them, you can use the new **Built by your colleagues** catalog entry point to pin standalone apps to Microsoft Teams channels or a user's personal scope. This action only needs to be performed once: it updates the experience for all members of the team, allowing them to use existing apps they already had access to. We recommend that if you choose to disable Power Apps for any user in your tenant, you advise them that they can use the **Built by your colleagues** catalog to restore the standalone apps they were using before in Microsoft Teams channels. For more information about this entry point and corresponding controls, go to [Manage Microsoft Power Platform apps in the Microsoft Teams admin center](/microsoftteams/manage-power-platform-apps).
+Note that when you disable an app created using Power Apps, users won't have access to any standalone apps that you pinned in their Microsoft Teams channels with the app created using Power Apps. For users to continue using standalone apps in the Microsoft Teams experience even after the Power Apps maker experience has been turned off for them, you can use the new **Built by your colleagues** catalog entry point to pin standalone apps to Microsoft Teams channels or a user's personal scope. This action only needs to be performed once: it updates the experience for all members of the team, allowing them to use existing apps they already had access to. We recommend that if you choose to disable Power Apps for any user in your tenant, you advise them that they can use the **Built by your colleagues** catalog to restore the standalone apps they were using before in Microsoft Teams channels. For more information about this entry point and corresponding controls, go to [Manage Microsoft Power Platform apps in the Microsoft Teams admin center](/microsoftteams/manage-power-platform-apps).
 
-The **Built by your colleagues** catalog intentionally filters out **Shared with Everyone** apps. These apps can be added to the Microsoft Teams app catalog by using the **Upload a custom app** capability in Microsoft Teams. More information: [Publish a custom app by uploading an app package](/microsoftteams/upload-custom-apps)
+The **Built by your colleagues** catalog intentionally filters out **Shared with Everyone** apps. You can add these apps to the Microsoft Teams app catalog by using the **Upload a custom app** capability in Microsoft Teams. More information: [Publish a custom app by uploading an app package](/microsoftteams/upload-custom-apps)
 
 > [!NOTE]
-> Disabling the Power Apps and Microsoft Copilot Studio in Teams prevents users from creating new apps and bots but does not prevent the creation of Dataverse for Teams environments. There are other apps (Inspection, Employee Ideas, and Issue reporting) that will create a Dataverse for Teams environment if you add one of those apps to a team. To prevent Dataverse for Teams environments from being created with these apps, these apps need to be blocked.
+> Disabling Power Apps and Microsoft Copilot Studio in Teams prevents users from creating new apps and agents but does not prevent the creation of Dataverse for Teams environments. There are other apps (Inspection, Employee Ideas, and Issue reporting) that can create a Dataverse for Teams environment if you add one of those apps to a team. To prevent Dataverse for Teams environments from being created with these apps, these apps need to be blocked.
 >
-> Microsoft Power Platform data governance policies like data loss prevention and tenant isolation apply to Microsoft Teams and Dataverse for Teams environments, similar to other environment types.
+> Microsoft Power Platform data governance policies like data loss prevention (DLP) and tenant isolation apply to Microsoft Teams and Dataverse for Teams environments, similar to other environment types.
 
 ## Applying a data policy to all Dataverse for Teams environments 
 
@@ -321,10 +322,10 @@ Microsoft offers a solution that applies a data policy to all Teams environments
 Follow these steps to apply a DLP policy:
 
 1. Choose or create the policy that you want applied to your Teams environments. This policy must be marked to apply to specific environments, which can be done as follows: 
-   - In [PowerShell](powerapps-powershell.md#create-a-dlp-policy), make sure its environmentType is "OnlyEnvironments," or 
+   - In [PowerShell](powerapps-powershell.md#create-a-dlp-policy), make sure its `environmenType` is `OnlyEnvironments`. 
    - In the [web app](prevent-data-loss.md), make sure the scope is set to multiple environments. 
 
-   You will need to add at least one environment to save your policy. Any environments you add now will be overridden by the PowerShell function below, which will automatically add the Teams environments to the policy. 
+You need to add at least one environment to save your policy. Any environments you add now get overridden by the PowerShell function, which automatically adds the Teams environments to the policy. 
 
 2. Import the necessary modules using this command: 
 
@@ -332,37 +333,37 @@ Follow these steps to apply a DLP policy:
    Install-Module -Name Microsoft.PowerApps.Administration.PowerShell -Force 
    ```
 
-3. Run the [UpdatePolicyEnvironmentsForTeams](https://github.com/microsoft/PowerApps-Samples/blob/master/powershell/admin-center/Microsoft.PowerApps.Administration.PowerShell.Samples.psm1#L1270-L1401) function (available in the [DLP SDK](data-loss-prevention-sdk.md)). This will identify the Teams environments in the tenant and add them to the given policy. 
+3. Run the [UpdatePolicyEnvironmentsForTeams](https://github.com/microsoft/PowerApps-Samples/blob/master/powershell/admin-center/Microsoft.PowerApps.Administration.PowerShell.Samples.psm1#L1270-L1401) function (available in the [DLP SDK](data-loss-prevention-sdk.md)). This identifies the Teams environments in the tenant and adds them to the given policy. 
 
    > [!div class="mx-imgBorder"] 
    > ![UpdatePolicyEnvironmentsForTeams function.](media/update-policy-environments-teams.png "UpdatePolicyEnvironmentsForTeams function")
 
-   1. Both the name and display name of the policy are required. If the policy name and display name don’t match, the policy will not be updated.   
-      1. OnlyEnvironmentsPolicyName – the name (guid) of the policy 
-      2. OnlyEnvironmentsPolicyDisplayName – the display name of the policy 
-   2. (Optional) Additionally, you can exclude these Teams environments from another policy. This policy must be scoped to apply to “Exclude certain environments”.  
-      1. ExceptEnvironmentsPolicyDisplayName – the display name of the policy 
-      2. ExceptEnvironmentsPolicyName - the name (guid) of the policy 
-      3. ExceptionEnvironmentIds - a list of environment IDs that should also be included in this ExceptEnvironments policy in addition to the Teams environments. We recommend generating this list from a text file. 
+   1. Both the name and display name of the policy are required. If the policy name and display name don’t match, the policy isn't updated.   
+      1. `OnlyEnvironmentsPolicyName` – the name (guid) of the policy 
+      2. `OnlyEnvironmentsPolicyDisplayName` – the display name of the policy 
+   2. (Optional) Additionally, you can exclude these Teams environments from another policy. This policy must be scoped to apply to *Exclude certain environments*.  
+      1. `ExceptEnvironmentsPolicyDisplayName` – the display name of the policy 
+      2. `ExceptEnvironmentsPolicyName` - the name (guid) of the policy 
+      3. `ExceptionEnvironmentIds` - a list of environment IDs that should also be included in this *Except Environments* policy in addition to the Teams environments. We recommend generating this list from a text file. 
  
    You can either use none of these parameters or b.i. and b.iii. together or b.i., b.ii., and b.iii. together. 
 
-   For example, you can specify a default policy for all environments except Teams environments using parameters b.i. and b.ii. This will replace all the environments in the exclusion list of the default policy with all the Teams environments. In addition to the Teams environments, if you want to exclude other environments from this default policy, you can use the b.iii. parameter. If an environment is added to the exclusion list of this default policy (through the DLP UI or another PowerShell script), but not included in the "environmentIds" text file, it will be removed the next time the script is run. 
+For example, you can specify a default policy for all environments except Teams environments using parameters b.i. and b.ii. This replaces all the environments in the exclusion list of the default policy with all the Teams environments. In addition to the Teams environments, if you want to exclude other environments from this default policy, you can use the b.iii. parameter. If an environment is added to the exclusion list of this default policy (through the DLP UI or another PowerShell script), but is not included in the `environmentIds` text file, it gets removed the next time the script runs. 
 
    > [!div class="mx-imgBorder"] 
    > ![Replace environments in exclusion list.](media/get-content-teams-environments.png "Replace environments in exclusion list")
 
 > [!NOTE]
-> Each time the function runs, it replaces the existing list of environments in each given policy with a new list of environments. Because the function immediately updates the policy, it requires both the policy name and the policy display name as parameters to ensure that you're targeting the correct policy. If the display name doesn't match the given policy name, the policy will not be modified.  
+> Each time the function runs, it replaces the existing list of environments in each given policy with a new list of environments. Because the function immediately updates the policy, it requires both the policy name and the policy display name as parameters to ensure that you're targeting the correct policy. If the display name doesn't match the given policy name, the policy is not modified.  
 >
 > [!div class="mx-imgBorder"] 
 > ![Display name mismatch.](media/display-name-mismatch.png "Display name mismatch")
 >
-> We recommend that this script is run on a schedule to ensure that the DLP policy will always apply to the most recent list of Teams environments. If a Teams environment is created after this script is run, it will not be governed by the policy until the policy's environments are updated, either by rerunning the script or manually adding the new environment to the policy. If a non-Teams environment is added to the "OnlyEnvironments" policy, it will be removed next time the script is run. 
+> We recommend that this script is run on a schedule to ensure that the DLP policy always applies to the most recent list of Teams environments. If a Teams environment is created after this script is run, it's not governed by the policy until the policy's environments are updated, either by rerunning the script or manually adding the new environment to the policy. If a non-Teams environment is added to the *OnlyEnvironments* policy, it's removed next time the script runs. 
 
 ## Known issues
 
-- The **Run diagnostics** feature in the Power Platform admin center for team owners, members, and guests who don't have Microsoft Entra admin roles like Global Admin, or Power Platform Admin assigned, will show an alert that no security roles have been assigned directly to them. Security roles are automatically assigned by the system for Microsoft Teams personas, so this alert can be ignored.
+- The **Run diagnostics** feature in the Power Platform admin center for team owners, members, and guests who don't have Microsoft Entra admin roles like Global Admin, or Power Platform Admin assigned, shows an alert that no security roles have been assigned directly to them. Security roles are automatically assigned by the system for Microsoft Teams personas, so this alert can be ignored.
 
 ### See also
 [Automatic deletion of inactive Microsoft Dataverse for Teams environments (preview)](inactive-teams-environment.md) <br />
@@ -371,8 +372,5 @@ Follow these steps to apply a DLP policy:
 [Microsoft Copilot Studio and Teams](/power-virtual-agents/teams/fundamentals-what-is-power-virtual-agents-teams)<br />
 [Manage your apps in the Microsoft Teams admin center](/MicrosoftTeams/manage-apps) <br />
 [Get started with Microsoft Dataverse for Teams](/training/modules/get-started-dataverse-teams/)
-
-
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
