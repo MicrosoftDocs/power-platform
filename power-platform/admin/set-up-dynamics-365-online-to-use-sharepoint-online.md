@@ -57,7 +57,7 @@ For more information about SharePoint permissions, see [Introduction: Control us
 <a name="BKMK_ConfigureDocManage"></a>  
  
 ## Configure customer engagement apps for SharePoint document management  
- If you're a new organization and haven't yet deployed document management, see [Configure a new organization](../admin/set-up-dynamics-365-online-to-use-sharepoint-online.md#BKMK_ConfigNewOrg).  
+ If your organization is new and doesn't deploy document management, see [Configure a new organization](../admin/set-up-dynamics-365-online-to-use-sharepoint-online.md#BKMK_ConfigNewOrg).  
   
  If your organization is already using document management with [!INCLUDE[pn_list_component_short](../includes/pn-list-component-short.md)], you must switch to server-based SharePoint integration. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Switching from the list component or changing the deployment](switching-list-component-changing-deployment.md)  
   
@@ -71,7 +71,7 @@ For more information about SharePoint permissions, see [Introduction: Control us
 <a name="BKMK_ConfigNewOrg"></a>   
 
 ### Configure a new organization  
-If your organization hasn't deployed document management, an alert message appears when a System Administrator logs in, prompting them to enable server-based SharePoint integration.  
+If your organization doesn't deploy document management, an alert message appears when a System Administrator logs in, prompting them to enable server-based SharePoint integration.  
   
  ![Enable Server-Based SharePoint Integration alert.](../admin/media/crm-and-sharepoint-online-enable-now.png "Enable Server-Based SharePoint Integration alert")  
   
@@ -104,14 +104,14 @@ In the **Enable Server-based SharePoint Integration** dialog:
    > [!TIP]
    >  To see your SharePoint site collections, in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)], select **Admin centers** > **SharePoint**, and then select **site collections**. 
   
-   The URL will be checked for being a valid SharePoint online site and for existing in the same [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] tenant as your organization. Once server-based SharePoint integration is enabled, you can't go back to the previous client-side integration.
+   The URL is checked for being a valid SharePoint online site and for existing in the same [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] tenant as your organization. Once server-based SharePoint integration is enabled, you can't go back to the previous client-side integration.
    
 1. Click **Finish** to apply the changes.
 
 ### Next steps  
-Once server-based SharePoint integration is enabled you'll need to enable the entities you want available for document management integration. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Enable document management on entities](enable-sharepoint-document-management-specific-entities.md)    
+Once server-based SharePoint integration is enabled, you need to enable the entities you want available for document management integration. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Enable document management on entities](enable-sharepoint-document-management-specific-entities.md)    
 
-Once server-based SharePoint integration is enabled you can also enable integration with OneNote and OneDrive. More information: [Set up OneNote integration](set-up-onenote-integration-in-dynamics-365.md) and [Enable OneDrive for Business (online)](enable-onedrive-for-business.md)
+Once server-based SharePoint integration is enabled, you can also enable integration with OneNote and OneDrive. More information: [Set up OneNote integration](set-up-onenote-integration-in-dynamics-365.md) and [Enable OneDrive for Business (online)](enable-onedrive-for-business.md)
 
 <a name="BKMK_UsingDocManage"></a>   
 
@@ -132,7 +132,7 @@ Once server-based SharePoint integration is enabled you can also enable integrat
   
 5. Select a folder location, and then select **Ok**.  
   
-6. To see the document in your [!INCLUDE[pn_MS_Office_365](../includes/pn-ms-office-365.md)] SharePoint Online Team site, select to the left of the document name (you'll see a check mark), and then select **Open Location**.  
+6. To see the document in your [!INCLUDE[pn_MS_Office_365](../includes/pn-ms-office-365.md)] SharePoint Online Team site, select to the left of the document name (you see a check mark), and then select **Open Location**.  
   
 ![Microsoft 365 Team Site shared document.](../admin/media/crm-itpro-crmo365tg-teamdocshare.png "Microsoft 365 Team Site shared document")  
   
