@@ -105,9 +105,7 @@ For more information on the different roles for managing your tenant across the 
 > |         Number of Deletes by Entity         |                         How many delete operations are performed on different entities by the selected user in the environment with a Dataverse database for the selected time period.                         | 
 > |         Total Operations Over Time          |                                        The total operations performed by the selected user in the environment with a Dataverse database over the selected time period.                                         | 
 > |         Total Operations by Entity          |                              The total operations performed on different entities by the selected user in the environment with a Dataverse database for the selected time period.                              | 
-> |          Active Users by Entities           |                                                                            Show the active users distributed over different entities                                                                            | 
-> |           Active Users by Client            |                                                                                   The active users distributed by client type                                                                                  | 
-> |   Active Users Using More than One Client   |                                                      The number of active users using more than one client, distributed over different client combinations                                                       | 
+> |          Active Users by Entities           |                                                                            Show the active users distributed over different entities                                                                               | 
 
 > [!NOTE]
 > **Retrieve** and **RetrieveMultiple** SDK calls are reported as **Reads**.  
