@@ -10,8 +10,7 @@ ms.topic: how-to
 search.audienceType: 
   - developer
 contributors:
- - JimDaly
- - singhguru2001us
+ - skotapalle
 ---
 # Retrieve data about the catalog in Power Platform
 
