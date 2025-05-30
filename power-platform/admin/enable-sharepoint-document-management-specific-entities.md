@@ -1,14 +1,14 @@
 ---
-title: "Enable SharePoint document management for specific entities   | MicrosoftDocs"
-description: Enable SharePoint document management for specific entities
+title: Enable SharePoint document management for specific entities
+description: Learn how you, as an admin, can enable SharePoint document management for specific entities
 author: Mattp123
-
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 09/04/2020
+ms.date: 05/30/2025
 ms.subservice: admin
 ms.custom: NewPPAC
 ms.author: matp
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -36,7 +36,7 @@ Enable document management for specific entities to store related records in Sha
 1. On the **Document Management** page, select **Document management settings**.
 1. Choose the entities to use for managing SharePoint documents.
    - If a SharePoint site URL isn't already specified, enter the URL for storing documents. 
-1. Click **Next** to finalize and apply the changes. 
+1. Select **Next** to finalize and apply the changes. 
  
 ### [Classic admin center](#tab/classic)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
@@ -47,7 +47,7 @@ Enable document management for specific entities to store related records in Sha
 1. On the **Document Management** page, select **Document management settings**.
 1. Choose the entities to use for managing SharePoint documents.
    - If a SharePoint site URL isn't already specified, enter the URL for storing documents. 
-1. Click **Next** to finalize and apply the changes. 
+1. Select **Next** to finalize and apply the changes. 
 ---
  
 > [!IMPORTANT]
