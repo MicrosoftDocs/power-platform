@@ -70,31 +70,42 @@ For more information about [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepo
 <a name="BKMK_ConfigNewOrg"></a>   
 
 ### Configure a new organization  
- If your organization has not deployed document management, when a System Administrator logs in an alert message will be displayed to enable server-based [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] integration.  
+If your organization has not deployed document management, an alert message appears when a System Administrator logs in, prompting them to enable server-based SharePoint integration.  
   
  ![Enable Server-Based SharePoint Integration alert.](../admin/media/crm-and-sharepoint-online-enable-now.png "Enable Server-Based SharePoint Integration alert")  
   
 > [!NOTE]
->  If you don't see the alert and have not previously enabled server-based [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] integration, clear your browser cache or open customer engagement apps using [!INCLUDE[pn_Internet_Explorer](../includes/pn-internet-explorer.md)] with InPrivate browsing to have the alert display again. Once you configure server-based integration, the alert will no longer appear.  
-  
-1. In the Power Platform admin center, select an environment. 
+>  If the alert doesn't appear and server-based SharePoint integration has not been enabled, clear your browser cache or open customer engagement apps in an InPrivate browsing window to trigger the alert again. Once server-based integration is configured, the alert no longer appears.  
 
-2. Select **Settings** > **Integration** > **Document management settings**, and then select **Enable server-based SharePoint integration**.
+#### [Modern admin center](#tab/new)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. On the **Environments** page, select an environment.
+1. In the command bar, select **Settings**. 
+1. Expand **Integration**, then select **Document management settings**.
+1. On the **Document management** page, select **Enable server-based SharePoint integration**.
+   
+#### [Classic admin center](#tab/classic)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Environments**.
+1. On the **Environments** page, select an environment.
+1. In the command bar, select **Settings**.  
+1. Expand **Integration**, then select **Document management settings**.
+1. On the **Document management** page, select **Enable server-based SharePoint integration**.
+---
 
-3. In the Enable Server-based SharePoint Integration alert select **Next**.  
-  
-4. Choose **Online** for where your [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] sites are located, and then choose **Next**.  
-  
-   ![Select Online as the SharePoint sites location.](../admin/media/crmandsharepointonlineenablestep2.png "Select Online as the SharePoint sites location")  
-  
-5. If your customer engagement apps are not connected to a [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] online site, enter the URL (for example <https://contoso.sharepoint.com>) of your [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] site that you will use for auto folder creation, and then choose **Next**.  
+In the **Enable Server-based SharePoint Integration** dialog:
+1. Click **Next**.  
+1. Choose **Online** for where your SharePoint sites are located, then click **Next**.  
+1. Enter the SharePoint site URL to use with server-based integration, then click **Next**.   
   
    > [!TIP]
-   >  To see your [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] site collections, in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)], select **Admin centers** > **SharePoint**, and then select **site collections**.  
+   >  To see your SharePoint site collections, in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)], select **Admin centers** > **SharePoint**, and then select **site collections**. 
   
-   ![Enter the URL of the SharePoint site.](../admin/media/crmandsharepointonlineenablestep3.png "Enter the URL of the SharePoint site")  
-  
-6. The URL will be checked for being a valid [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] online site and for existing in the same [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] tenant as your organization. After enabling server-based [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] integration you can't go back to the previous client-side integration. Choose **Enable**.  
+   The URL will be checked for being a valid SharePoint online site and for existing in the same [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] tenant as your organization. Once server-based SharePoint integration is enabled, you can't go back to the previous client-side integration.
+   
+1. Click **Finish** to apply the changes.
 
 ### Next steps  
 Once server-based [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] integration is enabled you will need to enable the entities you want available for document management integration. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Enable document management on entities](enable-sharepoint-document-management-specific-entities.md)    
