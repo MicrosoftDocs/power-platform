@@ -4,7 +4,7 @@ description: Learn about storage management in Dataverse and finance and operati
 author: ritesp
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 05/29/2025
+ms.date: 05/30/2025
 ms.subservice: admin
 ms.author: ritesp
 ms.reviewer: sericks
@@ -212,11 +212,11 @@ To improve performance, customers and ISVs often create:
 
 While these improve responsiveness, they also:
 
-- Increase storage usage
+- **Increase storage usage**
 
   Each optimization layer introduces more data structures, whether it's a copy of existing data in a denormalized format, a precomputed view, or a cache table. These structures often duplicate data already stored elsewhere, leading to a larger overall storage footprint. In environments with strict storage quotas or cost-based licensing models, like Dataverse, this can quickly escalate into avoidable overages.
 
-- Can become orphaned as apps evolve
+- **Can become orphaned as apps evolve**
 
   As applications evolve, some optimization artifacts may no longer be referenced by active reports, dashboards, or integrations. These _orphaned_ objects continue to consume storage and may even slow down system operations, for example, during backups or indexing, if not identified and removed. Without regular audits, they can accumulate unnoticed, undermining the very performance gains they were created to support.
 
@@ -230,19 +230,19 @@ While indexes are critical for performance, they also have a direct impact on st
 ### How indexes consume storage
 
 - **Physical duplication of data**
-  Each index stores a copy of the indexed columns, along with pointers to the corresponding rows. The more columns and rows indexed, the larger the index size.
+    Each index stores a copy of the indexed columns, along with pointers to the corresponding rows. The more columns and rows indexed, the larger the index size.
   
 - **Growth with data volume**
-  As the underlying table grows, so does the index. In high-transaction environments, indexes can grow rapidly, especially on large, denormalized tables or those with frequent inserts and updates.
+    As the underlying table grows, so does the index. In high-transaction environments, indexes can grow rapidly, especially on large, denormalized tables or those with frequent inserts and updates.
   
 - **Multiple indexes per table**
-  It’s common for a single table to have multiple indexes, for example for search, filtering, sorting, and joins. Each other index adds to the cumulative storage footprint.
+    It’s common for a single table to have multiple indexes, for example for search, filtering, sorting, and joins. Each other index adds to the cumulative storage footprint.
   
 - **Search indexes in Dataverse**
-  Features like Dataverse search and Copilot indexing create specialized indexes that span multiple fields and tables. These are stored in the **DataverseSearch** table and can consume significant space, especially when used across multiple environments such as development, test, and production environments.
+    Features like Dataverse search and Copilot indexing create specialized indexes that span multiple fields and tables. These are stored in the **DataverseSearch** table and can consume significant space, especially when used across multiple environments such as development, test, and production environments.
   
 - **System-generated indexes**
-  Some indexes are created automatically by the platform such as for lookup fields or relationships. These may persist even if the associated tables are deprecated, unless explicitly removed.
+    Some indexes are created automatically by the platform such as for lookup fields or relationships. These may persist even if the associated tables are deprecated, unless explicitly removed.
 
 ### Storage implications
 
@@ -358,11 +358,11 @@ Finance and operations apps provides flexible options for managing storage acros
 
 #### Scenario 2: You're already in a situation where reducing storage size and cost is necessary
 
-1. **Assess what’s consuming storage**
+**Assess what’s consuming storage**
   - Use the Power Platform admin center and finance and operations storage reports to identify top-consuming tables, file types, and logs.
   - Use telemetry, if available, to attribute usage to specific apps, users, or business units.
 
-1. **Prioritize clean-up candidates**
+**Prioritize clean-up candidates**
   - Focus on:
     - Staging and integration tables, such as dual-write buffers
     - Audit logs: Retain it in your own storage
@@ -370,11 +370,11 @@ Finance and operations apps provides flexible options for managing storage acros
     - Orphaned metadata and search indexes
     - Delete what you don’t need, for example bulk delete
       
-1. **Use Synapse Link and OneLake for analytical reporting**
+**Use Synapse Link and OneLake for analytical reporting**
   - Export the analytical data to Synapse Link.
   - Use OneLake to access the retained data and business data for reporting and analytical purposes.
     
-1. **Apply long-term retention (LTR)**
+**Apply long-term retention (LTR)**
   - Move historical data to a Managed Data Lake (MDL) using LTR policies.
   - Maintain search and analytics access via Quick Find, Synapse Link, or OneLake.
 
