@@ -229,19 +229,19 @@ While indexes are critical for performance, they also have a direct impact on st
 
 ### How indexes consume storage
 
-- **Physical duplication of data**
+- **Physical duplication of data**:
     Each index stores a copy of the indexed columns, along with pointers to the corresponding rows. The more columns and rows indexed, the larger the index size.
   
-- **Growth with data volume**
+- **Growth with data volume**:
     As the underlying table grows, so does the index. In high-transaction environments, indexes can grow rapidly, especially on large, denormalized tables or those with frequent inserts and updates.
   
-- **Multiple indexes per table**
+- **Multiple indexes per table**:
     It’s common for a single table to have multiple indexes, for example for search, filtering, sorting, and joins. Each other index adds to the cumulative storage footprint.
   
-- **Search indexes in Dataverse**
+- **Search indexes in Dataverse**:
     Features like Dataverse search and Copilot indexing create specialized indexes that span multiple fields and tables. These are stored in the **DataverseSearch** table and can consume significant space, especially when used across multiple environments such as development, test, and production environments.
   
-- **System-generated indexes**
+- **System-generated indexes**:
     Some indexes are created automatically by the platform such as for lookup fields or relationships. These may persist even if the associated tables are deprecated, unless explicitly removed.
 
 ### Storage implications
