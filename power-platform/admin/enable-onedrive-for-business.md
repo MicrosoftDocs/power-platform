@@ -16,12 +16,20 @@ search.audienceType:
 ---
 # Enable OneDrive for Business (online)
 
-You can create and manage private documents with [!INCLUDE[pn_onedrive_for_business](../includes/pn-onedrive-for-business.md)]. The documents can be accessed in customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), after your system administrator enables [!INCLUDE[pn_onedrive_for_business](../includes/pn-onedrive-for-business.md)].  
+You can create and manage private documents with [!INCLUDE[pn_onedrive_for_business](../includes/pn-onedrive-for-business.md)] and access the documents in these customer engagement apps:
+
+- Dynamics 365 Sales
+- Dynamics 365 Customer Service
+- Dynamics 365 Field Service
+- Dynamics 365 Marketing
+- Dynamics 365 Project Service Automation
   
 ## Requirements  
 
 > [!IMPORTANT]
-> This topic applies to organizations deploying online versions of [!INCLUDE[pn_onedrive_for_business](../includes/pn-onedrive-for-business.md)] and customer engagement apps. [!INCLUDE[pn_onedrive_for_business](../includes/pn-onedrive-for-business.md)] relies on server-based SharePoint integration. To use this feature, your organization needs to have at least one active SharePoint site and your admin needs to enable server-based integration. For information on integrating [!INCLUDE[pn_onedrive_for_business](../includes/pn-onedrive-for-business.md)] on-premises with Dynamics 365 apps, or an online/on-premises mix of these products, see: [Enable OneDrive for Business (on-premises)](../admin/connect-onedrive-business.md).  
+> This topic applies to organizations deploying online versions of [!INCLUDE[pn_onedrive_for_business](../includes/pn-onedrive-for-business.md)] and customer engagement apps. [!INCLUDE[pn_onedrive_for_business](../includes/pn-onedrive-for-business.md)] relies on server-based SharePoint integration. To use this feature, your organization needs to have at least one active SharePoint site and your admin needs to enable server-based integration.
+>
+> For information on integrating [!INCLUDE[pn_onedrive_for_business](../includes/pn-onedrive-for-business.md)] on-premises with Dynamics 365 apps, or an online/on-premises mix of these products, see: [Enable OneDrive for Business (on-premises)](../admin/connect-onedrive-business.md).  
 
 Before you use [!INCLUDE[pn_onedrive_for_business](../includes/pn-onedrive-for-business.md)] in customer engagement apps, be sure to meet these requirements:  
   
@@ -37,7 +45,7 @@ Before you use [!INCLUDE[pn_onedrive_for_business](../includes/pn-onedrive-for-b
   
 ## Enable OneDrive for Business
 
-You can enable [!INCLUDE[pn_onedrive_for_business](../includes/pn-onedrive-for-business.md)] as follows.  
+Take these steps to enable [!INCLUDE[pn_onedrive_for_business](../includes/pn-onedrive-for-business.md)].  
 
 ### [Modern admin center](#tab/new)
 
