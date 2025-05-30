@@ -1,10 +1,10 @@
 ---
-title: "About Power Apps per app plans  | MicrosoftDocs"
+title: About Power Apps per app plans
 description: About Power Apps per app plans 
 author: alaug
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 12/01/2023
+ms.date: 05/29/2025
 ms.subservice: admin
 ms.author: alaug
 ms.reviewer: sericks
