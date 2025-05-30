@@ -271,7 +271,7 @@ There are two possible scenarios:
 
 ### Apply best practices to manage storage size and costs
 
-#### Scenario 1: You Want to proactively apply best practices to manage storage
+#### Scenario 1: You want to proactively apply best practices to manage storage
 If you're not yet in crisis mode, now is the time apply tools and techniques to manage the storage proactively.
 
 ##### Configure analytics for your data
