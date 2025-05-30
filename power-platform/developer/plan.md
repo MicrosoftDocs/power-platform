@@ -4,7 +4,7 @@ description: "Details about the Power Apps Developer Plan"
 author: MKBajwa-PM
 ms.subservice: developer
 ms.author: mbajwa
-ms.date: 04/17/2024
+ms.date: 05/28/2025
 ms.reviewer: jdaly
 ms.topic: concept-article
 contributors:
@@ -18,11 +18,8 @@ contributors:
 The Power Apps Developer Plan gives you a free development environment to build and test with Power Apps, Power Automate, and Microsoft Dataverse. It enables you to:
 
 - Create apps and flows without writing code, with full-featured Power Apps and Power Automate development tools. Easily share and collaborate on these solutions with others.
-
 - Connect to any data source by using [Power Platform connectors](/connectors/connector-reference/) or by creating your own custom connectors.
-
 - Use a fully managed, scalable data platform with Dataverse, including support for common business application actions. Use out-of-the-box common tables or build your own data schema.
-
 - Export the solutions you create in your developer environment, and publish them on Microsoft AppSource so your customers can test-drive them.
 
 ## Who can sign up for the Power Apps Developer Plan?
@@ -34,7 +31,6 @@ Anyone with a [work or school email address](/power-apps/maker/signup-for-power
 You can get the plan using one of the following ways:
 
 - Sign up on the Power Apps Developer Plan [website](https://www.microsoft.com/power-platform/products/power-apps/free).
-
 - Get the Power Apps Developer Plan with Visual Studio Dev Essentials. If you're a Visual Studio Dev Essentials user, the Power Apps Developer Plan is included in your benefits. Visit [My
 benefits](https://my.visualstudio.com/benefits) and select the Power Apps tile to sign up for the Power Apps Developer Plan.
 
@@ -44,40 +40,39 @@ benefits](https://my.visualstudio.com/benefits) and select the Power Apps tile 
 
 With the developer environment, you get the following functionality:
 
-| **Functionalities**                                                                                              | **Developer environment**                                            |
-| - | - |
-| **Key features**                                                                                                 |                                                                      |
-| Create and test apps                                                                                             | Yes. You can create unlimited apps for development and test purposes. |
-| Share apps                                                                                                       | Yes                                                                  |
-| Use Dataverse                                                                                                    | Yes                                                                  |
-| Model your data using Dataverse                                                                                  | Yes                                                                  |
-| Enterprise-grade administration of the environment and user policies                                             | Yes                                                                  |
-| **Connectivity**                                                                                                 |                                                                      |
-| Connect to Office 365, Dynamics 365, and other connectors                                                        | Yes                                                                  |
-| Connect to cloud-based services like Azure SQL, Dropbox, Twitter, and many more                                  | Yes                                                                  |
-| Use premium connectors like Salesforce, DB2 and many more                                                        | Yes                                                                  |
-| Access on‐premises data using an on-premises gateway                                                             | Yes                                                                  |
-| Create custom connectors to connect to your own systems                                                          | Yes                                                                  |
-| **Dataverse**                                                                                                    |                                                                      |
-| Create and run applications In Power Platform, Dynamics 365, Teams, or Standalone using the .Net SDK or OData API | Yes                                                                  |
-| Model your data in Dataverse                                                                                     | Yes                                                                  |
-| Create a database in Dataverse                                                                                   | Yes                                                                  |
-| Create and use dataflows                                                                                         | No                                                                   |
-| **Management**                                                                                                 |                                                                      |
-| Add coworkers as environment makers and admins                                                                  | Yes                                                                   |
-| Add coworkers to the database roles                                                                             | Yes                                                                   |
-| Supports data policies established by the Office 365 administrator                                               | Yes                                                                  |
-| Establish data policies for the developer environment                                                           | Yes                                                                  |
+| **Functionalities**| **Developer environment**|
+| --- | --- |
+| **Key features**||
+| Create and test apps| Yes. You can create unlimited apps for development and test purposes. |
+| Share apps| Yes|
+| Use Dataverse| Yes|
+| Model your data using Dataverse| Yes|
+| Enterprise-grade administration of the environment and user policies| Yes|
+| **Connectivity**||
+| Connect to Office 365, Dynamics 365, and other connectors| Yes|
+| Connect to cloud-based services like Azure SQL, Dropbox, Twitter, and many more| Yes|
+| Use premium connectors like Salesforce, DB2 and many more| Yes|
+| Access on‐premises data using an on-premises gateway| Yes|
+| Create custom connectors to connect to your own systems| Yes|
+| **Dataverse**||
+| Create and run applications In Power Platform, Dynamics 365, Teams, or Standalone using the .NET SDK or OData Web API | Yes|
+| Model your data in Dataverse| Yes|
+| Create a database in Dataverse| Yes|
+| Create and use dataflows| No|
+| **Management**||
+| Add coworkers as environment makers and admins| Yes|
+| Add coworkers to the database roles| Yes|
+| Supports data policies established by the Office 365 administrator| Yes|
+| Establish data policies for the developer environment| Yes|
 
 ## What are the capacity limits for the developer environment?
 
 The following capacity limits apply to the developer environments:
 
-| **Capacity**                                                    | **Limits** |
-| - | - |
-| Flow runs/month                                                 | 750        |
-| Database size                                                   | 2 GB        |
-|                                                                 |            |
+| **Capacity**| **Limits** |
+| --- | --- |
+| Flow runs/month| 750|
+| Database size| 2 GB|
 
 You can't increase capacity by applying add-ons to the quantities we include. If you hit capacity limits, we recommend purchasing the Power Apps Per User Plan. Learn more from the [Power Apps pricing page](https://powerapps.microsoft.com/pricing/).
 
@@ -97,10 +92,10 @@ The following section lists frequently asked questions relevant to the Power App
 
 There's a limited capacity provided because this environment is meant for development and test purposes, not for production use. The capacity limits are:
 
-| **Capacity**                                                          | **Limits** |
-| - | - |
-| Flow runs/month                                                       | 750        |
-| Database size                                                         | 2 GB       |
+| **Capacity**| **Limits** |
+| --- | --- |
+| Flow runs/month| 750|
+| Database size| 2 GB|
 
 If you reach one or more capacity limits, we recommend you purchase a plan that
 supports production use. Learn more about our plans on the [Power Apps pricing
@@ -206,13 +201,14 @@ Key changes include:
 > [!NOTE]
 > Existing Power Apps Community Plan users will also get all of these updates.
 
-### Next step
+### Next steps
+
 > [!div class="nextstepaction"]
 > [Create a developer environment with the Power Apps Developer Plan](create-developer-environment.md)
 
 ### See also
 
-[Power Platform for developers](get-started.md)<br/>
-[Fusion Development](fusion-development.md)<br/>
+[Power Platform for developers](get-started.md)  
+[Fusion Development](fusion-development.md)  
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
