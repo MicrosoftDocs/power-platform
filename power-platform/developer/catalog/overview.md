@@ -10,8 +10,7 @@ ms.topic: article
 search.audienceType: 
   - developer
 contributors:
- - JimDaly
- - singhguru2001us
+ - skotapalle
 ---
 # Catalog in Power Platform for developers
 
