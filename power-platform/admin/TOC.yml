@@ -732,6 +732,8 @@
                   href: conversation-diagnostics-application-insights.md
         - name: Storage
           items:
+            - name: Storage management in Dataverse and finance and operations apps
+              href: storage-management.md
             - name: Add more Dataverse capacity
               href: add-storage.md
             - name: Dataverse capacity-based storage overview
