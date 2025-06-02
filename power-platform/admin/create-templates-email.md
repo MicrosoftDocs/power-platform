@@ -2,13 +2,14 @@
 title: "Create templates for email  | MicrosoftDocs"
 description: Create templates for email
 author: sericks007
-
+contributor: yingchin
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 09/16/2020
+ms.date: 06/02/2025
 ms.subservice: admin
 ms.custom: NewPPAC
 ms.author: sericks
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -18,7 +19,7 @@ search.audienceType:
 
 Save time when creating multiple email messages by making email templates. Email templates contain predefined content, eliminating the need to repeatedly enter the same information.
 
-An email template is attached to an email activity after the activity is created. Typically, each type of email activity has its own email template type; for example, an email activity created from a case record would use a case email template.
+An email template is attached to an email activity after the activity is created. Typically, each type of email activity has its own email template type; for example, if you create an email activity from a case record it uses a case email template.
 
 Additionally, you can create:
 - Global templates, which are available for any record type.
@@ -66,7 +67,7 @@ On the **New Email Template** form:
    >   
    > - To include data fields in a hyperlink:
    >   - Select the link text and data fields. For example: https://contoso.com/q?{!User:City;}
-   >   - Click **Link** from the Formatting tool bar to enter the hyperlink information.
+   >   - Select **Link** from the Formatting tool bar to enter the hyperlink information.
    >   - The text and data fields convert to a hyperlink. For example: <a href="https://contoso.com/q?{!User:City;}">https://contoso.com/q?{!User:City;}</a>.
    >   - The hyperlink text appears as a link when the template is used in an email.
    >   
@@ -80,9 +81,9 @@ On the **New Email Template** form:
      - In the top command bar, select **Insert dynamic text**.
      - In the **Edit dynamic text** dialog box:
        - Select the **Record type** and **Field Name** values
-       - Click **Add data field** to insert another fields.
+       - Select **Add data field** to insert another fields.
        - Enter the **Default text**, which appears when no data is available.
-       - Click **Insert** to apply the changes.
+       - Select **Insert** to apply the changes.
  
 6. To enter customers' first and last name, repeat the data-insertion steps, as each name is stored as a separate data value. 
   
@@ -97,7 +98,5 @@ On the **New Email Template** form:
 > - If you need to back up your templates, or export them for use in a different implementation, you can export them as part of exporting customizations. More information: [Export your customizations as a solution](/powerapps/maker/model-driven-apps/distribute-model-driven-app).  
   
 ### See also  
-
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
