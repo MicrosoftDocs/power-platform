@@ -22,15 +22,15 @@ Reactive governance focuses on responding to recommendations and optimizing perf
 - **Business continuity risks:**
     - **Ownerless resources**: Resources owned by individuals who leave the organization create business continuity risks.
     - **High-value resources in the default environment**: Resources in the default environment might not follow application lifecycle management (ALM) best practices, posing a business continuity risk. 
-    - **Use [Power Platform Advisor](../../admin/power-platform-advisor.md)** to identify and take action on resources that pose business continuity risks.
+    - **Use the [Actions page](../../admin/power-platform-advisor.md)** to identify and take action on resources that pose business continuity risks.
 
 - **Tenant hygiene:**
     - **Overshared resources**: Overshared resources can lead to security vulnerabilities and inefficiencies. 
     - **Inactive resources**: Resources not used with a specified time frame require review and potential deletion to free resources and maintain a clean environment. 
-    - **Use [Power Platform Advisor](../../admin/power-platform-advisor.md)** to identify and take action on resources that pose business continuity risks.
+    - **Use the [Actions page](../../admin/power-platform-advisor.md)** to identify and take action on resources that pose business continuity risks.
 
 - **Licenses:**
-    - **Pending license requests**: Manage pending license requests promptly to ensure users have the necessary access to perform their tasks efficiently. Use [Power Platform Advisor](../../admin/power-platform-advisor.md) to identify and take action on resources that pose business continuity risks. 
+    - **Pending license requests**: Manage pending license requests promptly to ensure users have the necessary access to perform their tasks efficiently. Use the [Actions page](../../admin/power-platform-advisor.md) to identify and take action on resources that pose business continuity risks. 
     - **Intelligent licensing recommendations**: Review [recommendations](../../admin/get-recommendations-licensing.md) about who in your organization would benefit from having a Power Apps premium license.
 
 - **Change requests and approvals:**
@@ -44,7 +44,7 @@ Reactive governance focuses on responding to recommendations and optimizing perf
 
 ## Tools for reactive governance 
 
-**[Power Platform Advisor](../../admin/power-platform-advisor.md)** provides insights and recommendations to optimize Power Platform usage and performance. By regularly reviewing Power Advisor's suggestions, organizations can identify best practices, performance improvements, and security enhancements. These recommendations help in addressing issues proactively and refining governance practices to ensure the platform operates efficiently and securely.
+The **[Actions page](../../admin/power-platform-advisor.md)** provides insights and recommendations to optimize Power Platform usage and performance. By regularly reviewing Power Advisor's suggestions, organizations can identify best practices, performance improvements, and security enhancements. These recommendations help in addressing issues proactively and refining governance practices to ensure the platform operates efficiently and securely.
 
 The **[CoE Starter Kit](../coe/starter-kit.md)** is a comprehensive set of tools and templates designed to help organizations establish and maintain a Center of Excellence for Power Platform. It includes components for monitoring, reporting, and managing environments, apps, and flows. The CoE Starter Kit implements sample reactive governance processes that you can learn from and amend to your own requirements.
 

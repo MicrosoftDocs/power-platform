@@ -2,15 +2,15 @@
 title: Microsoft Power Platform CLI | Microsoft Docs
 description: "Install Microsoft Power Platform CLI to create, debug, and deploy code components by using Power Apps component framework."
 keywords: Microsoft Power Platform CLI, code components, component framework, CLI
-ms.author: marcsc
-author: devkeydet
+ms.author: laswenka
+author: laneswenka
 ms.reviewer: jdaly
-ms.date: 05/15/2024
+ms.date: 05/28/2025
 ms.topic: overview
 ---
 # What is Microsoft Power Platform CLI?
 
-Microsoft Power Platform CLI is a simple, one-stop developer CLI that empowers developers and ISVs to perform various operations in Microsoft Power Platform related to:
+Microsoft Power Platform CLI is a simple, one-stop developer CLI that empowers developers and independent software vendors (ISVs) to perform various operations in Microsoft Power Platform related to:
 
 - Environment lifecycle
 - [Authentication](#manage-auth-profiles)
@@ -30,7 +30,7 @@ There are three ways to install the Power Platform CLI. You can use multiple ins
 
 |Method|OS Support|Description|
 |---------|---------|---------|
-|[Install the Visual Studio Code extension](../howto/install-vs-code-extension.md)|Windows, Linux, macOS|Enables use of commands within a PowerShell terminal within Visual Studio Code on Windows 10, Windows 11, Linux, and macOS.<br /><br />When you install using ONLY this method, by default PAC CLI will only be available within a Visual Studio Code terminal unless you [enable PAC CLI in Command Prompt (CMD) and PowerShell terminals for Windows](../howto/install-vs-code-extension.md#enable-pac-cli-in-command-prompt-cmd-and-powershell-terminals-for-windows)|
+|[Install the Visual Studio Code extension](../howto/install-vs-code-extension.md)|Windows, Linux, macOS|Enables use of commands within a PowerShell terminal within Visual Studio Code on Windows 10, Windows 11, Linux, and macOS.<br /><br />When you install using ONLY this method, by default PAC CLI is only available within a Visual Studio Code terminal unless you [enable PAC CLI in Command Prompt (CMD) and PowerShell terminals for Windows](../howto/install-vs-code-extension.md#enable-pac-cli-in-command-prompt-cmd-and-powershell-terminals-for-windows)|
 |[Install with .NET Tool](../howto/install-cli-net-tool.md)|Windows, Linux, macOS|Enables use of commands within a PowerShell, CMD, or Bash shell on Windows 10, Windows 11, Linux, and macOS.<br /><br />This installation method doesn't enable use of [pac data](reference/data.md) or certain [pac package](reference/package.md) commands ([deploy](reference/package.md#pac-package-deploy) and [show](reference/package.md#pac-package-show)) that are only available for Windows.|
 |[Install with Windows MSI](../howto/install-cli-msi.md)|Windows only|Enables use of commands within a PowerShell terminal within Visual Studio Code on Windows only. You can [manage installed versions](../howto/install-cli-msi.md#manage-versions) with this installation method.|
 
@@ -56,8 +56,8 @@ How to determine whether the Power Platform CLI is installed depends on your ope
 
 1. Open a PowerShell terminal:
 
-   - If you ONLY installed the [Visual Studio Code extension](../howto/install-vs-code-extension.md), open a Visual Studio Code Powershell terminal window.
-   - If you installed using the [.NET Tool](../howto/install-cli-net-tool.md), open a Visual Studio Code Powershell terminal OR a Powershell terminal.
+   - If you ONLY installed the [Visual Studio Code extension](../howto/install-vs-code-extension.md), open a Visual Studio Code PowerShell terminal window.
+   - If you installed using the [.NET Tool](../howto/install-cli-net-tool.md), open a Visual Studio Code PowerShell terminal OR a PowerShell terminal.
 
 1. Type `Get-Command pac | Format-List` at the prompt, and press **Enter**.
 
@@ -84,7 +84,7 @@ FileVersionInfo : File:             C:\Users\you\.dotnet\tools\pac.exe
                   Language:         Language Neutral
 ```
 
-When Power Platform CLI isn't installed, you'll get this error:
+When Power Platform CLI isn't installed, you get this error:
 
 ```powershell
 Get-Command: The term 'pac' is not recognized as a name of a cmdlet, function, script file, or executable program.
@@ -116,7 +116,7 @@ Version: 1.30.3+g0f0e0b9
 
 ## Manage auth profiles
 
-Most PAC CLI commands require authenticated access to resources. You'll need to create and use auth profiles.
+Most PAC CLI commands require authenticated access to resources. You need to create and use auth profiles.
 
 > [!NOTE]
 > With the Visual Studio Code extension, [you can view and manage authentication profiles](../howto/install-vs-code-extension.md#authentication-profile-management).
@@ -127,7 +127,7 @@ Most PAC CLI commands require authenticated access to resources. You'll need to 
 
 Power Platform CLI has a `pac complete` command similar to the [.NET CLI complete command](/dotnet/core/tools/enable-tab-autocomplete).
 
-When configured using the instructions below, you can type just the beginning of a command and then use the <kbd>Tab</kbd> key to complete the input entered.
+When configured using the following instructions, you can type just the beginning of a command and then use the <kbd>Tab</kbd> key to complete the input entered.
 
 To add tab completion to **PowerShell** for the PAC CLI, create or edit the profile stored in the variable `$PROFILE`. For more information, see [How to create your profile](/powershell/module/microsoft.powershell.core/about/about_profiles#how-to-create-a-profile) and [Profiles and execution policy](/powershell/module/microsoft.powershell.core/about/about_profiles#profiles-and-execution-policy).
 
@@ -147,8 +147,7 @@ Register-ArgumentCompleter -Native -CommandName pac -ScriptBlock $scriptblock
 
 ### Other Shells
 
-You can also use this with [bash, zsh, fish, and nushell](/dotnet/core/tools/enable-tab-autocomplete#bash). Instead of `dotnet complete` use `pac complete`
-
+You can also use tab completion with [bash, zsh, fish, and nushell](/dotnet/core/tools/enable-tab-autocomplete#bash). Instead of `dotnet complete` use `pac complete`
 
 ## US Sovereign cloud availability
 
