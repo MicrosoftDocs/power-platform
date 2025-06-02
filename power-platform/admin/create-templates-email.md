@@ -19,7 +19,7 @@ search.audienceType:
 
 Save time when creating multiple email messages by making email templates. Email templates contain predefined content, eliminating the need to repeatedly enter the same information.
 
-An email template is attached to an email activity after the activity is created. Typically, each type of email activity has its own email template type; for example, if you create an email activity from a case record it uses a case email template.
+An email template is attached to an email activity after the activity is created. Typically, each type of email activity has its own email template type. For example, if you create an email activity from a case record it uses a case email template.
 
 Additionally, you can create:
 - Global templates, which are available for any record type.
@@ -54,15 +54,15 @@ On the **Email Templates** page:
 On the **New Email Template** form:
 1. In the **Template** section, enter the **Name** of the template, and other required data field information.
 2. In the **Template editor** section, enter the **Subject** of the template.
-3. You can type a description for the template. This text is for internal reference and not visible to the recipient.  
-4. Type the text you want to send in this message. Use the Formatting toolbar to edit the text.  
+3. You can also type a description for the template. This text is for internal reference and not visible to the recipient.  
+4. Type the text you want to send in this message. Use the **Formatting toolbar** to edit the text.  
   
    > [!TIP]
    > - Although you can't insert images or HTML directly into email messages or email templates, you can use the copy feature in the browser to copy an image from a website and paste it into the email message or email template. The image is available as long as the website is accessible.
    >   
    > - To include a hyperlink in an email template:
    >   - Type the URL, including the https://, such as https://contoso.com. Avoid adding a period, comma, or space after a URL, as this formatting issue may cause the link to break.
-   >   - Select the text, then click **Link** from the Formatting tool bar to enter the hyperlink information.
+   >   - Select the text, then select **Link** from the Formatting tool bar to enter the hyperlink information.
    >   - The link is automatically applied, underlined the text and changing its color to blue.
    >   
    > - To include data fields in a hyperlink:
@@ -85,7 +85,7 @@ On the **New Email Template** form:
        - Enter the **Default text**, which appears when no data is available.
        - Select **Insert** to apply the changes.
  
-6. To enter customers' first and last name, repeat the data-insertion steps, as each name is stored as a separate data value. 
+6. To enter customers' first and family/last name, repeat the data-insertion steps, as each name is stored as a separate data value. 
   
     > [!TIP]
     >  Use the **Default Text** box to define what text is displayed if the record doesn't have data for the field.  
