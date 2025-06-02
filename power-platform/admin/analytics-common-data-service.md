@@ -3,7 +3,7 @@ title: View and download Dataverse analytics
 description: Access Dataverse analytics from the Power Platform admin center to view and download metrics such as active users, API calls, and executions.
 author: sericks007 
 ms.topic: how-to
-ms.date: 05/30/2025
+ms.date: 06/02/2025
 ms.subservice: admin
 ms.custom: NewPPAC
 ms.author: sericks
@@ -58,13 +58,11 @@ For more information on the different roles for managing your tenant across the 
 
 <a name="BKMK_Home"></a>
 
-## Home (default)
+## Home (default) dashboard
+
+ The home (default) dashboard shows you information on the number of active Dataverse users, storage usage, the most active workflows, and more.
 
 :::image type="content" source="media/analytics-common-data-service/organization-insights-home-section.png" alt-text="Image of the Dataverse analytics home page." lightbox="media/analytics-common-data-service/organization-insights-home-section.png":::
- 
-### About the home dashboard
-
- Use the default dashboard to see information on the number of active Dataverse users, storage usage, the most active workflows, and more.  
 
 ### What's included in the home dashboard  
 
@@ -80,13 +78,11 @@ For more information on the different roles for managing your tenant across the 
 > | Most Active Users Performing Operations | List of most active users who performed an operation that caused a `Create`, `Update`, `Read`, or `Delete` SDK call in the [!INCLUDE[pn_crm_shortest](../includes/pn-crm-shortest.md)] environment over the selected time period. |
 > |        Top Plug-ins by Failures         |                                            This chart shows top 10 most failing plug-in in the environment with a Dataverse database over the specified time.                                             |
 
-## Active Users  
+## Active users dashboard
+
+The Active users dashboard shows you how many [!INCLUDE[pn_dyn_365](../includes/pn-dyn-365.md)] users there are, how many licenses are in use, what custom entities are used most frequently, and more.
 
 :::image type="content" source="media/analytics-common-data-service/organization-insights-active-usage-section.png" alt-text="Image of Dataverse analytics Active users metrics page" lightbox="media/analytics-common-data-service/organization-insights-active-usage-section.png":::
- 
-### About the active users dashboard
-
- Use this dashboard to find out how many [!INCLUDE[pn_dyn_365](../includes/pn-dyn-365.md)] users there are, how many licenses are in use, what custom entities are used most frequently, and more.  
 
 ### What's included in the active users dashboard
 
@@ -141,17 +137,13 @@ For more information on the different roles for managing your tenant across the 
 |Active Users|24 hours|  
 |Most Active Users Performing Operations|24 hours|  
 |Most Used Custom Entities|24 hours|  
-|Most Used OOB Entities|24 hours|  
+|Most Used OOB Entities|24 hours|
 
-<a name="BKMK_SystemJobs"></a>
+## System Jobs dashboard
 
-## System Jobs  
+ This dashboard helps you monitor and troubleshoot workflows.
 
 :::image type="content" source="media/analytics-common-data-service/organization-insights-system-jobs-section.png" alt-text="Image of the the Dataverse analytics system jobs metrics page." lightbox="media/analytics-common-data-service/organization-insights-system-jobs-section.png":::
-
-### About the system jobs dashboard
-
- Use this dashboard to monitor and troubleshoot workflows.  
 
 ### What's included in the system jobs dashboard
 
@@ -179,15 +171,11 @@ For more information on the different roles for managing your tenant across the 
 |System Jobs Executions and Backlog|24 hours|  
 |Top Workflows by Failures|24 hours|  
 
-<a name="BKMK_Plugins"></a>
+## Plug-ins dashboard
 
-## Plug-ins  
+This dashboard helps you monitor and troubleshoot plug-ins.
 
-:::image type="content" source="media/analytics-common-data-service/organization-insights-plugins-section.png" alt-text="Image of Dataverse analytics plug-in metrics page." lightbox="media/analytics-common-data-service/organization-insights-plugins-section.png":::  
-
-### About the plug-in dashboard
-
- Use this dashboard to monitor and troubleshoot plug-ins.  
+:::image type="content" source="media/analytics-common-data-service/organization-insights-plugins-section.png" alt-text="Image of Dataverse analytics plug-in metrics page." lightbox="media/analytics-common-data-service/organization-insights-plugins-section.png":::
 
 ### What's included in the plug-in dashboard  
 
@@ -211,19 +199,15 @@ For more information on the different roles for managing your tenant across the 
 |Most Active Plug-ins|24 hours|  
 |Plug-in Executions|24 hours|  
 |Average Plug-in Execution Time|24 hours|  
-|Top Plug-ins by Failures|24 hours|  
+|Top Plug-ins by Failures|24 hours|
 
-<a name="BKMK_APICallStats"></a>
+## API calls statistics dashboard
 
-## API Call Statistics  
+This dashboard helps you monitor and troubleshoot API calls.
 
 :::image type="content" source="media/analytics-common-data-service/organization-insights-api-call-statistics-section.png" alt-text="Image of the Dataverse analytics API call metrics page." lightbox="media/analytics-common-data-service/organization-insights-api-call-statistics-section.png":::
 
-### About the API call statistics dashboard
-
- Use this dashboard to monitor and troubleshoot API calls.  
-
-### What's included in the API call statistics dashboard  
+### What's included in the API calls statistics dashboard  
 
 > [!div class="mx-tableFixed"]
 > |Chart element|Description|
@@ -236,9 +220,9 @@ For more information on the different roles for managing your tenant across the 
 > |      API Calls      | This chart shows how many API calls have been made over time in the environment with a Dataverse database over the specified time. Adding up the individual counts will equal the Total API Calls count.  |
 > |      API peak call rate      | This chart shows capacity consumption relative to the API call limit. More information: [API peak call rate report](#api-peak-call-rate-report-preview)   |
 
-### API call statistics chart update frequency
+### API calls statistics chart update frequency
 
- This table details the frequency of API call statistics chart updates:  
+ This table details the frequency of API calls statistics chart updates:  
 
 |Chart|Update frequency|  
 |-----------|----------------------|  
@@ -271,7 +255,7 @@ To help interpret and act on the capacity, the graph shows the API peak limit. T
   
 You can also have a direct view of where your actual use of capacity is relative to the limit so you can be sure that you are within the limit.
 
-When the graph shows that your requests per user/app are beyond the peak limit (identified with a red line), it means that you have reached a peak and your requests are being throttled. Report shows data using a single unit of measure to make it easy to get an overview of API utilization.
+When the graph shows that your requests per user/app are beyond the peak limit (identified with a red line), it means that you have reached a peak and your requests are being throttled. The report shows data using a single unit of measure to make it easy to get an overview of API utilization.
 
 API peak call rate is calculated as the maximum of one of the following:
 
@@ -306,33 +290,26 @@ The usage graph can help you identify what users/applications are approaching or
 
 To optimize limit, consider reducing the number of API requests by user/app or increase the limit by adding more capacity and bring the peak limit (identified with a red line) higher.
 
-<a name="BKMK_MailboxUsage"></a>
+## Mailbox Usage dashboard
 
-## Mailbox Usage  
+This dashboard helps you monitor email mailbox usage.
 
-> [!div class="mx-imgBorder"] 
-> ![Dataverse analytics Mailbox Usage Section.](./media/organization-insights-mailbox-usage-section.png "Dataverse analytics Mailbox Usage Section")  
- 
-### About the mailbox usage dashboard
-
- Use this dashboard to monitor email mailbox usage.  
+:::image type="content" source="media/analytics-common-data-service/organization-insights-mailbox-usage-section.png" alt-text="Shows Dataverse analytics Mailbox usage details screen." lightbox="media/analytics-common-data-service/organization-insights-mailbox-usage-section.png":::
 
 ### What's included in the mailbox usage dashboard
 
-> [!div class="mx-tableFixed"]
-> |Chart element|Description|
->
-> |--------------|-----------------|  
-> |         Mailbox Details by GEO         | This chart shows mailbox details like:<br /><ul><li>the number of server-side synch configured mailboxes</li><li>the number of server-side synch enabled mailboxes</li><li>the number of server-side synch Appointments, Contacts, and Tasks enabled mailboxes</li><li>the number of server-side synch incoming enabled mailboxes</li><li>the number of server-side synch outgoing enabled mailboxes categorized by the geo location the mailbox is hosted in</li></ul> |
-> |        Mailboxes by Server Type |  This chart shows the mailbox distribution by server type.  |
-> |  Active Email Server Profiles by Geo   | This chart shows active server-side synch enabled mailboxes distributed over the geo location they are hosted in.  |
-> |  Mailboxes by Exchange Configuration  |  This chart shows the number of mailboxes categorized by their [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] configuration.  |
-> | Number of Mailbox Configuration Errors | This chart shows the number of mailboxes configuration errors which occurred over the user-selected time frame. |
-> | Mailbox Usage  |  This chart shows the number of server-side synch mailboxes over the time range selected by the user. |
-> |      Number of Outlook Mailboxes       |   This chart shows the number of [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] mailboxes configured for the organization.  |
-> | Number of Active Email Server Profiles |  This chart shows the number of active email server profiles for the time range configured by the user.   |
+|Chart element|Description|
+|--------------|-----------------|  
+|         Mailbox Details by GEO         | This chart shows mailbox details like:<br /><ul><li>the number of server-side synch configured mailboxes.</li><li>the number of server-side synch enabled mailboxes.</li><li>the number of server-side synch Appointments, Contacts, and Tasks enabled mailboxes.</li><li>the number of server-side synch incoming enabled mailboxes.</li><li>the number of server-side synch outgoing enabled mailboxes categorized by the geo location the mailbox is hosted in.</li></ul> |
+|        Mailboxes by Server Type |  This chart shows the mailbox distribution by server type.  |
+|  Active Email Server Profiles by Geo   | This chart shows active server-side synch enabled mailboxes distributed over the geo location they are hosted in.  |
+|  Mailboxes by Exchange Configuration  |  This chart shows the number of mailboxes categorized by their [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] configuration.  |
+| Number of Mailbox Configuration Errors | This chart shows the number of mailboxes configuration errors which occurred over the user-selected time frame. |
+| Mailbox Usage  |  This chart shows the number of server-side synch mailboxes over the time range selected by the user. |
+|      Number of Outlook Mailboxes       |   This chart shows the number of [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] mailboxes configured for the organization.  |
+| Number of Active Email Server Profiles |  This chart shows the number of active email server profiles for the time range configured by the user.   |
 
-### Mailbox usage update frequency
+### Mailbox usage chart update frequency
 
  This table details the frequency of mailbox usage chart updates:  
 
@@ -345,56 +322,44 @@ To optimize limit, consider reducing the number of API requests by user/app or i
 |Number of Mailbox Configuration Errors|24 hours|  
 |Number of Active Email Server Profiles|24 hours|  
 |Number of Outlook Mailboxes|24 hours|  
-|Mailboxes by Exchange Configuration|24 hours|  
+|Mailboxes by Exchange Configuration|24 hours|
 
-## Download Reports
+## Download reports
 
 Select **Download** to view available downloads and then select any of the reports to download them into Microsoft Excel.
 
-All the download reports, except "Active Dynamics 365 Customer Engagement Plan Users by Application", show data:
-
-- for an environment <br />
-  and <br />
-- per the timeline in the filters for the out-of-box Dataverse analytics reports. If you select a certain date range for the out-of-box Dataverse reports, the same time filter applies to the downloads.  
-- The maximum duration for data availability is 30 days.
+All the download reports, except *Active Dynamics 365 Customer Engagement Plan Users by Application*, show data for an environment and per the timeline in the filters for the out-of-box Dataverse analytics reports. If you select a certain date range for the out-of-box Dataverse reports, the same time filter applies to the downloads. The maximum duration for data availability is 30 days.
 
 The *Active Dynamics 365 Customer Engagement Plan Users by Application* report always shows the last 30 days of data at the tenant level.
 
-> [!div class="mx-imgBorder"] 
-> ![Dataverse analytics Download Section.](./media/organization-insights-download-section.png "Dataverse analytics Download Section")  
+:::image type="content" source="media/analytics-common-data-service/organization-insights-download-section.png" alt-text="Shows where to select the Download dropdown on the Dataverse analytics page to see download reports." lightbox="media/analytics-common-data-service/organization-insights-download-section.png":::
 
 ### What's included in the download reports dashboard
 
-> [!div class="mx-tableFixed"]
-> |Chart element|Description|
->
-> |--------------|-----------------|  
-> | Active users by device type  | List of active users by device type used to access [!INCLUDE [pn-dyn-365](../includes/pn-dyn-365.md)].  |
-> | Active users by business unit  | List of active users by their business unit.<br><br>**NOTE**: This is not specific to UI calls, and will include system calls in the context of the user.  |
-> | Active users by security role  | List of active users by their security roles.<br><br>**NOTE**: This is not specific to UI calls, and will include system calls in the context of the user. |
-> | Active users by client  | List of active users, by client type used to access [!INCLUDE [pn-dyn-365](../includes/pn-dyn-365.md)].  |
-> | Active users by entities | List of active users distributed by entity.   |
-> | Most active users performing operations | List of  most active users (unique users) over time who performed an operation that caused one of these SDK calls:<br /> `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and `Update`. |
-> | Most used custom entities |  List of custom entities which had the most<br /> `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and <br />`Update SDK Calls`. |
-> | Most used OOB entities  |  List of out-of-box entities which had the most<br /> `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and <br />`Update SDK Calls`. |
-> | Most active workflows | List of top 10 most executed workflows in the environment with a Dataverse database over the specified time.   |
-> | Most active plug-ins | List of top 10 most executed plug-ins in the environment with a Dataverse database over the specified time.  |
-> | Most used API  | List of top 10 most executed API calls in the Dataverse environment database.   |
-> | Active Dynamics 365 Customer Engagement Plan Users by Application | Active Dynamics 365 Customer Engagement plan users by application. Helps customers to know usage across different apps so that when it is time to renew their subscription, they can chose the individual apps to be bought (for example Dynamics 365 for Sales, Dynamics 365 for Customer Service, etc.). The Customer Engagement plan which was a suite of all Customer Engagement applications is no longer being sold and people need to choose the individual apps to be bought.    |
-> | Non-conformant usage by users with Team Member license   | Shows customers how their users (with team member licenses) are using the product in ways that are deemed to be not conformant with the use rights entitled to this license, as per licensing guide.   |
+|Chart element|Description|
+|--------------|-----------------|  
+| Active users by device type  | List of active users by device type used to access [!INCLUDE [pn-dyn-365](../includes/pn-dyn-365.md)].  |
+| Active users by business unit  | List of active users by their business unit.<br><br>**NOTE**: This is not specific to UI calls, and will include system calls in the context of the user.  |
+| Active users by security role  | List of active users by their security roles.<br><br>**NOTE**: This is not specific to UI calls, and will include system calls in the context of the user. |
+| Active users by client  | List of active users, by client type used to access [!INCLUDE [pn-dyn-365](../includes/pn-dyn-365.md)].  |
+| Active users by entities | List of active users distributed by entity.   |
+| Most active users performing operations | List of  most active users (unique users) over time who performed an operation that caused one of these SDK calls:<br /> `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and `Update`. |
+| Most used custom entities |  List of custom entities which had the most<br /> `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and <br />`Update SDK Calls`. |
+| Most used OOB entities  |  List of out-of-box entities which had the most<br /> `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and <br />`Update SDK Calls`. |
+| Most active workflows | List of top 10 most executed workflows in the environment with a Dataverse database over the specified time.   |
+| Most active plug-ins | List of top 10 most executed plug-ins in the environment with a Dataverse database over the specified time.  |
+| Most used API  | List of top 10 most executed API calls in the Dataverse environment database. |
+| Active Dynamics 365 Customer Engagement Plan Users by Application | Active Dynamics 365 Customer Engagement plan users by application. Helps customers to know usage across different apps so that when it is time to renew their subscription, they can chose the individual apps to be bought (for example Dynamics 365 for Sales, Dynamics 365 for Customer Service, etc.). The Customer Engagement plan which was a suite of all Customer Engagement applications is no longer being sold and people need to choose the individual apps to be bought.    |
+| Non-conformant usage by users with Team Member license   | Shows customers how their users (with team-member licenses) are using the product in ways that are deemed to be not conformant with the use rights entitled to this license, as per licensing guide.   |
 
-<a name="BKMK_ViewData"></a>
+## Environment and date-time range data
 
-## View data for different environments and date-time ranges
+You can view data for different environment and date-time ranges. Take these steps to get started:
 
-Select **Change filters**.  
+1. Select **Change filters**.
+1. Select the desired **environment** and **time-period** from the drop-down lists.
+1. Select **Apply** to save the changes. All Dataverse analytics reports are available using this selection process.
 
-> [!div class="mx-imgBorder"] 
-> ![Dataverse analytics change filters.](./media/organization-insights-change-filters.png "Dataverse analytics change filters")  
-
-Select the environment and time-period from the drop-down lists, and then select **Apply** to save the changes. All the Dataverse analytics reports are available using this selection.
-
-> [!div class="mx-imgBorder"]
-> ![Dataverse analytics change filters apply.](./media/organization-insights-change-filters-apply.png "Dataverse analytics change filters apply")  
+:::image type="content" source="media/analytics-common-data-service/organization-insights-change-filters-apply.png" alt-text="Shows the filters panel appear when the Change filters button is selected on the Dataverse analytics page." lightbox="media/analytics-common-data-service/organization-insights-change-filters.png":::
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
