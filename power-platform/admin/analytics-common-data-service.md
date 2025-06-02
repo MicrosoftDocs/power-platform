@@ -37,7 +37,7 @@ To access these reports:
 
 ---
 
-## Who can view these reports?
+## Required roles to view the reports
 
 Admins with these roles and a [license](pricing-billing-skus.md) can view the reports in Dataverse analytics:
 
@@ -56,27 +56,24 @@ For more information on the different roles for managing your tenant across the 
 
 - **Troubleshoot effectively**: Drill down into the details of your top failing workflows and API calls to quickly diagnose and troubleshoot errors.
 
-<a name="BKMK_Home"></a>
-
 ## Home (default) dashboard
 
  The home (default) dashboard shows you information on the number of active Dataverse users, storage usage, the most active workflows, and more.
 
 :::image type="content" source="media/analytics-common-data-service/organization-insights-home-section.png" alt-text="Image of the Dataverse analytics home page." lightbox="media/analytics-common-data-service/organization-insights-home-section.png":::
 
-### What's included in the home dashboard  
+### Home dashboard details
 
-> [!div class="mx-tableFixed"]
-> |Chart element|Description|
->
-> |--------------|-----------------|  
-> |           Active Users            |                         Number of active users (unique users) who performed an operation that caused one of these SDK calls:<br /> `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and `Update`.                          |
-> |             API Calls             |                                            Number of API calls that were made by the environment with a Dataverse database for the selected time period.                                            |
-> |            API Pass Rate             |                        This chart shows the API pass rate as percentage of total API calls that were made in the environment with a Dataverse database over the specified time.                        |
-> |           Executions            |                                        This chart shows how many plug-ins have been executed in the environment with a Dataverse database over the specified time.                                        |
-> |            Total Operations             |                         This chart shows how many operations (create, update, deletes, reads) have occurred in the environment with a Dataverse database over the specified time.                         |
-> | Most Active Users Performing Operations | List of most active users who performed an operation that caused a `Create`, `Update`, `Read`, or `Delete` SDK call in the [!INCLUDE[pn_crm_shortest](../includes/pn-crm-shortest.md)] environment over the selected time period. |
-> |        Top Plug-ins by Failures         |                                            This chart shows top 10 most failing plug-in in the environment with a Dataverse database over the specified time.                                             |
+|Chart element|Description|
+
+|--------------|-----------------|  
+|           Active Users            |                         Number of active users (unique users) who performed an operation that caused one of these SDK calls:<br /> `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and `Update`.                          |
+|             API Calls             |                                            Number of API calls that were made by the environment with a Dataverse database for the selected time period.                                            |
+|            API Pass Rate             |                        This chart shows the API pass rate as percentage of total API calls that were made in the environment with a Dataverse database over the specified time.                        |
+|           Executions            |                                        This chart shows how many plug-ins have been executed in the environment with a Dataverse database over the specified time.                                        |
+|            Total Operations             |                         This chart shows how many operations (create, update, deletes, reads) have occurred in the environment with a Dataverse database over the specified time.                         |
+| Most Active Users Performing Operations | List of most active users who performed an operation that caused a `Create`, `Update`, `Read`, or `Delete` SDK call in the [!INCLUDE[pn_crm_shortest](../includes/pn-crm-shortest.md)] environment over the selected time period. |
+|        Top Plug-ins by Failures         |                                            This chart shows top 10 most failing plug-in in the environment with a Dataverse database over the specified time.                                             |
 
 ## Active users dashboard
 
@@ -84,38 +81,36 @@ The Active users dashboard shows you how many [!INCLUDE[pn_dyn_365](../includes/
 
 :::image type="content" source="media/analytics-common-data-service/organization-insights-active-usage-section.png" alt-text="Image of Dataverse analytics Active users metrics page" lightbox="media/analytics-common-data-service/organization-insights-active-usage-section.png":::
 
-### What's included in the active users dashboard
+### Active users dashboard details
 
 > [!NOTE]
 > Exports are limited to a maximum of 3000 records.
 
-> [!div class="mx-tableFixed"]
->
-> |Chart element|Description|  
-> |--------------|-----------------|  
-> |             Total Active Users              |   Total number of active users (unique users) who performed an operation that caused one of these SDK calls:<br /> `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and `Update`.   |
-> |             Most Used  Entities             |  Ten Entities which had the most<br /> `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and <br />`Update SDK Calls`.  | 
-> |             Total Page Requests             | The number of page load requests for forms, dashboards, and reports. This is the count of requests received by the [!INCLUDE[pn_dyn_365](../includes/pn-dyn-365.md)] server. Pages that are cached while browsing won't be counted. | 
-> |              Total Operations               |  This chart shows how many operations (create, update, deletes, reads) have occurred in the environment with a Dataverse database for the selected time period. |
-> | Active Users Performing Specific Operations |  Total number of active users (unique users) over time who performed an operation that caused one of these SDK calls:<br /> `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and `Update`.                       |
-> |                Active Users                 |Number of active users (unique users) in your environment who performed an operation that caused one of these SDK calls:<br /> `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and `Update` over time.                  |
-> |   Most Active Users Performing Operations   |                        List of  most active users (unique users) over time who performed an operation that caused one of these SDK calls:<br /> `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and `Update`.                        |
-> |          Most Used Custom Entities          |   List of custom entities which had the most<br /> `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and <br />`Update SDK Calls`.                                                       |
-> |           Most Used OOB Entities            |  List of out-of-box entities which had the most<br /> `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and <br />`Update SDK Calls`.                                                     |
-> |          Usage Active Users by OS           |   The number of active users by operating system.      |
-> |         Active Users by Device Type         |                                                                                             The number of active users by device type.                                                                                              |
-> |           Active Users by Browser           |                                                                                               The number of active users by browser.                                                                                                |
-> |       Active Users by Security Roles        |                                                                                            The number of active users by security roles.                                                                                            |
-> |           Users by Business Unit            | The number of active users by business unit.    |
-> |         Number of Creates by Entity         |   How many create operations are performed by the selected user in the environment with a Dataverse database for the selected time period.                                    |
-> |         Number of Updates by Entity         |                         How many update operations are performed on different entities by the selected user in the environment with a Dataverse database for the selected time period.                         |
-> |          Number of Reads by Entity          |                          How many read operations are performed on different entities by the selected user in the environment with a Dataverse database for the selected time period.                          |
-> |         Number of Deletes by Entity         |                         How many delete operations are performed on different entities by the selected user in the environment with a Dataverse database for the selected time period.                         |
-> |         Total Operations Over Time          |                                        The total operations performed by the selected user in the environment with a Dataverse database over the selected time period.                                         |
-> |         Total Operations by Entity          |                              The total operations performed on different entities by the selected user in the environment with a Dataverse database for the selected time period.                              |
-> |          Active Users by Entities           |                                                                            Show the active users distributed over different entities                                                                            |
-> |           Active Users by Client            |                                                                                   The active users distributed by client type                                                                                  |
-> |   Active Users Using More than One Client   |                                                      The number of active users using more than one client, distributed over different client combinations                                                       |
+|Chart element|Description|  
+|--------------|-----------------|  
+|             Total Active Users              |   Total number of active users (unique users) who performed an operation that caused one of these SDK calls:<br /> `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and `Update`.   |
+|             Most Used  Entities             |  Ten Entities which had the most<br /> `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and <br />`Update SDK Calls`.  |
+|             Total Page Requests             | The number of page load requests for forms, dashboards, and reports. This is the count of requests received by the [!INCLUDE[pn_dyn_365](../includes/pn-dyn-365.md)] server. Pages that are cached while browsing won't be counted. | 
+|              Total Operations               |  This chart shows how many operations (create, update, deletes, reads) have occurred in the environment with a Dataverse database for the selected time period. |
+| Active Users Performing Specific Operations |  Total number of active users (unique users) over time who performed an operation that caused one of these SDK calls:<br /> `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and `Update`.                       |
+|                Active Users                 |Number of active users (unique users) in your environment who performed an operation that caused one of these SDK calls:<br /> `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and `Update` over time.                  |
+|   Most Active Users Performing Operations   |                        List of  most active users (unique users) over time who performed an operation that caused one of these SDK calls:<br /> `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and `Update`.                        |
+|          Most Used Custom Entities          |   List of custom entities which had the most<br /> `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and <br />`Update SDK Calls`.                                                       |
+|           Most Used OOB Entities            |  List of out-of-box entities which had the most<br /> `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and <br />`Update SDK Calls`.                                                     |
+|          Usage Active Users by OS           |   The number of active users by operating system.      |
+|         Active Users by Device Type         |                                                                                             The number of active users by device type.                                                                                              |
+|           Active Users by Browser           |                                                                                               The number of active users by browser.                                                                                                |
+|       Active Users by Security Roles        |                                                                                            The number of active users by security roles.                                                                                            |
+|           Users by Business Unit            | The number of active users by business unit.    |
+|         Number of Creates by Entity         |   How many create operations are performed by the selected user in the environment with a Dataverse database for the selected time period.                                    |
+|         Number of Updates by Entity         |                         How many update operations are performed on different entities by the selected user in the environment with a Dataverse database for the selected time period.                         |
+|          Number of Reads by Entity          |                          How many read operations are performed on different entities by the selected user in the environment with a Dataverse database for the selected time period.                          |
+|         Number of Deletes by Entity         |                         How many delete operations are performed on different entities by the selected user in the environment with a Dataverse database for the selected time period.                         |
+|         Total Operations Over Time          |                                        The total operations performed by the selected user in the environment with a Dataverse database over the selected time period.                                         |
+|         Total Operations by Entity          |                              The total operations performed on different entities by the selected user in the environment with a Dataverse database for the selected time period.                              |
+|          Active Users by Entities           |                                                                            Show the active users distributed over different entities                                                                            |
+|           Active Users by Client            |                                                                                   The active users distributed by client type                                                                                  |
+|   Active Users Using More than One Client   |                                                      The number of active users using more than one client, distributed over different client combinations                                                       |
 
 > [!NOTE]
 > **Retrieve** and **RetrieveMultiple** SDK calls are reported as **Reads**.  
@@ -145,7 +140,7 @@ The Active users dashboard shows you how many [!INCLUDE[pn_dyn_365](../includes/
 
 :::image type="content" source="media/analytics-common-data-service/organization-insights-system-jobs-section.png" alt-text="Image of the the Dataverse analytics system jobs metrics page." lightbox="media/analytics-common-data-service/organization-insights-system-jobs-section.png":::
 
-### What's included in the system jobs dashboard
+### System jobs dashboard details
 
 > [!div class="mx-tableFixed"]
 > |Chart element|Description|
@@ -169,7 +164,7 @@ The Active users dashboard shows you how many [!INCLUDE[pn_dyn_365](../includes/
 |System Jobs Throughput / Hour|24 hours|  
 |Most Active Workflows|24 hours|  
 |System Jobs Executions and Backlog|24 hours|  
-|Top Workflows by Failures|24 hours|  
+|Top Workflows by Failures|24 hours|
 
 ## Plug-ins dashboard
 
@@ -177,17 +172,15 @@ This dashboard helps you monitor and troubleshoot plug-ins.
 
 :::image type="content" source="media/analytics-common-data-service/organization-insights-plugins-section.png" alt-text="Image of Dataverse analytics plug-in metrics page." lightbox="media/analytics-common-data-service/organization-insights-plugins-section.png":::
 
-### What's included in the plug-in dashboard  
+### Plug-in dashboard details
 
-> [!div class="mx-tableFixed"]
-> |Chart element|Description|
->
-> |--------------|-----------------|  
-> |      Plug-in Success Rate      | This chart shows the plug-in pass rate as percentage of total plug-in executions that were executed in the environment with a Dataverse database over the specified time. |
-> |       Plug-in Executions       |                        This chart shows how many plug-ins have been executed in the environment with a Dataverse database over the specified time.                        |
-> | Average Plug-in Execution Time |                This chart shows average time taken to successfully execute a plug-in in the environment with a Dataverse database over the specified time.                |
-> |      Most Active Plug-ins      |                           This chart shows top 10 most executed plug-ins in the environment with a Dataverse database over the specified time.                            |
-> |    Top Plug-ins by Failures    |                            This chart shows top 10 most failing plug-ins in the environment with a Dataverse database over the specified time.                            |
+|Chart element|Description|
+|--------------|-----------------|  
+|      Plug-in Success Rate      | This chart shows the plug-in pass rate as percentage of total plug-in executions that were executed in the environment with a Dataverse database over the specified time. |
+|       Plug-in Executions       |                        This chart shows how many plug-ins have been executed in the environment with a Dataverse database over the specified time.                        |
+| Average Plug-in Execution Time |                This chart shows average time taken to successfully execute a plug-in in the environment with a Dataverse database over the specified time.                |
+|      Most Active Plug-ins      |                           This chart shows top 10 most executed plug-ins in the environment with a Dataverse database over the specified time.                            |
+|    Top Plug-ins by Failures    |                            This chart shows top 10 most failing plug-ins in the environment with a Dataverse database over the specified time.                            |
 
 ### Plug-in chart update frequency
 
@@ -207,18 +200,16 @@ This dashboard helps you monitor and troubleshoot API calls.
 
 :::image type="content" source="media/analytics-common-data-service/organization-insights-api-call-statistics-section.png" alt-text="Image of the Dataverse analytics API call metrics page." lightbox="media/analytics-common-data-service/organization-insights-api-call-statistics-section.png":::
 
-### What's included in the API calls statistics dashboard  
+### API calls statistics dashboard details
 
-> [!div class="mx-tableFixed"]
-> |Chart element|Description|
->
-> |--------------|-----------------|  
-> |  API Success Rate   | This chart shows the API success rate as percentage of total API calls that were made in the environment with a Dataverse database over the specified time. |
-> | Top API by Failures |  This chart shows top 10 failing API calls in the environment with a Dataverse database over the specified time.  |
-> |   Total API Calls   | This chart shows how many API calls have been made in total in the environment with a Dataverse database over the specified time.     |
-> |    Most Used API    | This chart shows top 10 most executed API calls in the environment with a Dataverse database database. Adding the individual counts here will provide the total of the top 10 API calls. This will not be the same as the all up Total API Calls metric above.       |
-> |      API Calls      | This chart shows how many API calls have been made over time in the environment with a Dataverse database over the specified time. Adding up the individual counts will equal the Total API Calls count.  |
-> |      API peak call rate      | This chart shows capacity consumption relative to the API call limit. More information: [API peak call rate report](#api-peak-call-rate-report-preview)   |
+|Chart element|Description|
+|--------------|-----------------|  
+|  API Success Rate   | This chart shows the API success rate as percentage of total API calls that were made in the environment with a Dataverse database over the specified time. |
+| Top API by Failures |  This chart shows top 10 failing API calls in the environment with a Dataverse database over the specified time.  |
+|   Total API Calls   | This chart shows how many API calls have been made in total in the environment with a Dataverse database over the specified time.     |
+|    Most Used API    | This chart shows top 10 most executed API calls in the environment with a Dataverse database database. Adding the individual counts here will provide the total of the top 10 API calls. This will not be the same as the all up Total API Calls metric above.       |
+|      API Calls      | This chart shows how many API calls have been made over time in the environment with a Dataverse database over the specified time. Adding up the individual counts will equal the Total API Calls count.  |
+|      API peak call rate      | This chart shows capacity consumption relative to the API call limit. More information: [API peak call rate report](#api-peak-call-rate-report-preview)   |
 
 ### API calls statistics chart update frequency
 
@@ -296,7 +287,7 @@ This dashboard helps you monitor email mailbox usage.
 
 :::image type="content" source="media/analytics-common-data-service/organization-insights-mailbox-usage-section.png" alt-text="Shows Dataverse analytics Mailbox usage details screen." lightbox="media/analytics-common-data-service/organization-insights-mailbox-usage-section.png":::
 
-### What's included in the mailbox usage dashboard
+### Mailbox usage dashboard details
 
 |Chart element|Description|
 |--------------|-----------------|  
@@ -334,7 +325,7 @@ The *Active Dynamics 365 Customer Engagement Plan Users by Application* report a
 
 :::image type="content" source="media/analytics-common-data-service/organization-insights-download-section.png" alt-text="Shows where to select the Download dropdown on the Dataverse analytics page to see download reports." lightbox="media/analytics-common-data-service/organization-insights-download-section.png":::
 
-### What's included in the download reports dashboard
+### Download reports dashboard details
 
 |Chart element|Description|
 |--------------|-----------------|  
