@@ -65,7 +65,6 @@ For more information on the different roles for managing your tenant across the 
 ### Home dashboard details
 
 |Chart element|Description|
-
 |--------------|-----------------|  
 |           Active Users            |                         Number of active users (unique users) who performed an operation that caused one of these SDK calls:<br /> `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and `Update`.                          |
 |             API Calls             |                                            Number of API calls that were made by the environment with a Dataverse database for the selected time period.                                            |
@@ -142,16 +141,14 @@ The Active users dashboard shows you how many [!INCLUDE[pn_dyn_365](../includes/
 
 ### System jobs dashboard details
 
-> [!div class="mx-tableFixed"]
-> |Chart element|Description|
->
-> |--------------|-----------------|  
-> |      Workflow Executions      | This chart shows how many workflows have been executed in the environment with a Dataverse database over the specified time. |
-> |     System Jobs Pass Rate     | This chart shows the system job's pass rate as percentage of system jobs that were executed in the environment with a Dataverse database over the specified time.  |
-> | System Jobs Throughput/Minute | This chart shows the average system jobs that have been executed per hour in the environment with a Dataverse database over the specified time. |
-> |    Executions and Backlog     |  This chart shows the number of executions and the backlog for system jobs in the environment with a Dataverse database over the specified time.   |
-> |     Most Active Workflows     |  This chart shows top 10 most executed workflows in the environment with a Dataverse database over the specified time.  |
-> |   Top Workflows by Failures   | This chart shows top 10 most failing workflows in the environment with a Dataverse database over the specified time. Select a workflow to see the failures and their number of occurrences. |
+|Chart element|Description|
+|--------------|-----------------|  
+|      Workflow Executions      | This chart shows how many workflows have been executed in the environment with a Dataverse database over the specified time. |
+|     System Jobs Pass Rate     | This chart shows the system job's pass rate as percentage of system jobs that were executed in the environment with a Dataverse database over the specified time.  |
+| System Jobs Throughput/Minute | This chart shows the average system jobs that have been executed per hour in the environment with a Dataverse database over the specified time. |
+|    Executions and Backlog     |  This chart shows the number of executions and the backlog for system jobs in the environment with a Dataverse database over the specified time.   |
+|     Most Active Workflows     |  This chart shows top 10 most executed workflows in the environment with a Dataverse database over the specified time.  |
+|   Top Workflows by Failures   | This chart shows top 10 most failing workflows in the environment with a Dataverse database over the specified time. Select a workflow to see the failures and their number of occurrences. |
 
 ### System jobs chart update frequency
 
@@ -235,8 +232,8 @@ The API peak call rate report shows API usage graph with the number of requests 
 
 :::image type="content" source="media\analytics-common-data-service\api-peak-call-rate.png" alt-text="Image of API peak call rate graph"  lightbox="media/analytics-common-data-service/api-peak-call-rate.png":::
 
-| Chart    element | Description |
-| - | - |
+| Chart element | Description |
+| --- | ---|
 | SDSService and OData|    The bars show the max number of API requests by app/users within 5-min interval. The maximum is the number of requests per user per five minutes that is based on your licenses and capacity add-ons. |
 | API Peak limit | The peak requests per second recorded by the request count API limit. This is a measure of request count per unit time. |
 
@@ -255,7 +252,7 @@ API peak call rate is calculated as the maximum of one of the following:
 
 For more information about the API count and time limits, refer to [service protection API limits](/power-apps/developer/data-platform/api-limits).
 
-##### Example scenarios
+##### API peak call rate example scenarios
 
 API peak call rate is based on either the number of requests or execution time measured by the service protection limits, whichever is greater. One request is equivalent to 150ms of execution time measured by the time limit.
 
