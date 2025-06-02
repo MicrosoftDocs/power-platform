@@ -8,6 +8,8 @@ ms.date: 11/05/2024
 ms.reviewer: jdaly
 search.audienceType: 
   - developer
+contributors:
+ - skotapalle
 ---
 # Catalog in Power Platform table/entity reference
 
