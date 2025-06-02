@@ -10,8 +10,7 @@ ms.topic: install-set-up-deploy
 search.audienceType: 
   - developer
 contributors:
- - JimDaly
- - singhguru2001us  
+ - skotapalle
 ---
 # Install items from the catalog in Power Platform using code
 
