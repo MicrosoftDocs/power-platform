@@ -36,7 +36,7 @@ To access these reports:
 
 ---
 
-:::image type="content" source="media/analytics-powerapps/powerapps-analytics-menu.png" alt-text="Shows the menu on the Power Apps analytics page." lightbox="media/analytics-powerapps/powerapps-analytics-menu.png":::
+:::image type="content" source="media/powerapps-analytics-menu.png" alt-text="Shows the menu on the Power Apps analytics page." lightbox="media/powerapps-analytics-menu.png":::
 
 ## Who can view these reports?
 
@@ -59,11 +59,11 @@ There are six reports available for Power Apps admins. The last viewed environme
 
 **Usage** report is the default report available to environment admins. It provides total app launches and daily active users across all apps in the environment. As an admin, you can filter the view with attributes like device platform, player version, country/region, state, and city.
 
-:::image type="content" source="media/analytics-powerapps/powerapps-analytics-usage.png" alt-text="Shows the Power Apps usage report." lightbox="media/analytics-powerapps/powerapps-analytics-usage.png":::
+:::image type="content" source="media/powerapps-analytics-usage.png" alt-text="Shows the Power Apps usage report." lightbox="media/powerapps-analytics-usage.png":::
 
 **Toast Errors** report provides insights into the toast error trends, types, and counts per app to help drive improvements in app quality. The toast errors are errors displayed to the end users of the app.
 
-:::image type="content" source="media/analytics-powerapps/powerapps-analytics-toast-errors.png" alt-text="Shows the Power Apps error report." lightbox="media/analytics-powerapps/powerapps-analytics-toast-errors.png":::
+:::image type="content" source="media/powerapps-analytics-toast-errors.png" alt-text="Shows the Power Apps error report." lightbox="media/powerapps-analytics-toast-errors.png":::
 
 **Service Performance** report provides details of all standard and custom connectors to understand performance bottlenecks and client versus service API issues. As an environment admin, you get insights into:  
 
@@ -76,7 +76,7 @@ There are six reports available for Power Apps admins. The last viewed environme
 
 Service performance KPIs are filterable by attributes such as service, connector, device platform, player version, and location (country, state, or city) to enhance API analysis.
 
-:::image type="content" source="media/analytics-powerapps/powerapps-analytics-service-performance.png" alt-text="Shows the Power Apps analytics service performance report." lightbox="media/analytics-powerapps/powerapps-analytics-service-performance.png":::
+:::image type="content" source="media/powerapps-analytics-service-performance.png" alt-text="Shows the Power Apps analytics service performance report." lightbox="media/powerapps-analytics-service-performance.png":::
 
 **Connectors report** provides visibility into the standard and custom connectors used by canvas apps. The last 28 days of data are visible at the environment level.  
 
@@ -86,23 +86,23 @@ As an admin, you can analyze the number of connectors linked to each app, the sp
 
 The current iteration of this specific report doesn't have a download report feature.
 
-:::image type="content" source="media/analytics-powerapps/powerapps-analytics-connector.png" alt-text="Shows the Power Apps analytics connector report." lightbox="media/analytics-powerapps/powerapps-analytics-connector.png":::
+:::image type="content" source="media/powerapps-analytics-connector.png" alt-text="Shows the Power Apps analytics connector report." lightbox="media/powerapps-analytics-connector.png":::
 
 ## How can I download the reports?
 
 The reports are built on Power BI. To download a report, select the ellipsis (…) of the specific KPI and select **Export data**.
 
-:::image type="content" source="media/analytics-powerapps/powerapps-analytics-export-data.png" alt-text="Shows the Power Apps analytics export data page." lightbox="media/analytics-powerapps/powerapps-analytics-export-data.png":::
+:::image type="content" source="media/powerapps-analytics-export-data.png" alt-text="Shows the Power Apps analytics export data page." lightbox="media/powerapps-analytics-export-data.png":::
 
 ## How do I change environments?
 
 You can change environments by selecting **Change Filter** on the page.
 
-:::image type="content" source="media/analytics-powerapps/powerapps-analytics-filter.png" alt-text="Shows how to select change filter or Filter in Power Apps analytics." lightbox="media/analytics-powerapps/powerapps-analytics-filter.png":::
+:::image type="content" source="media/powerapps-analytics-filter.png" alt-text="Shows how to select change filter or Filter in Power Apps analytics." lightbox="media/powerapps-analytics-filter.png":::
 
 Select the environment and time period from the drop-down lists, and then select **Apply** to save the changes. All Power Apps analytics reports now reflect this selection.
 
-:::image type="content" source="media/analytics-powerapps/powerapps-analytics-change-environments.png" alt-text="Shows how to view and change environments in Power Apps analytics." lightbox="media/analytics-powerapps/powerapps-analytics-change-environments.png":::
+:::image type="content" source="media/powerapps-analytics-change-environments.png" alt-text="Shows how to view and change environments in Power Apps analytics." lightbox="media/powerapps-analytics-change-environments.png":::
 
 ### Why are some apps missing in my report?
 
