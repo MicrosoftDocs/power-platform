@@ -21,7 +21,7 @@ Analytics for the environment admin is available at the Microsoft Power Platform
 
 To access these reports:
 
-### [Modern admin center](#tab/new)
+### [New admin center](#tab/new)
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
