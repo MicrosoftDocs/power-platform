@@ -33,20 +33,16 @@ A user can have multiple security roles. Security role privileges are cumulative
 
 # [New admin center](#tab/new)
 
-1. Sign in to the [Power Platform admin center](https://aka.ms/ppac) as an admin (Dynamics 365 admin or Microsoft Power Platform admin).
-
-1. In the navigation pane, select **Manage**.
-
-1. In the **Manage** pane, select **Environments**, and then select an environment.
-
-1. Select **Settings** > **Users + permissions** > **Security roles**.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. Select **Manage** in the navigation pane.
+1. In the **Manage** pane, select **Environments**. Then select an environment.
+1. Select **Settings** in the command bar. The **Settings** page for that environment is displayed.
+1. Select **Users + Permissions** > **Security roles**.
 
 # [Classic admin center](#tab/classic)
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-
 1. Select **Environments** in the navigation pane, and then select an environment.
-
 1. Select **Settings** > **Users + permissions** > **Security roles**.
 
 ---
@@ -132,6 +128,7 @@ For each table, select the appropriate type for each privilege. Select **Save** 
 ### Copy table permissions
 
 Setting the privileges for each table in your app can be time-consuming and tedious. To make it easier, you can copy the permissions from one table to one or more others.
+
 > [!TIP] 
 > Create your new security roles by copying the [predefined template security roles](database-security.md) in an environment.
 > - Use **App Opener** role which has the minimum privileges to run an app.
@@ -183,6 +180,7 @@ The following table describes the permission setting groups that you can assign.
 1. Select **Save**.
 
 ### Add users to a security role
+
 You can add users to a security role through the modern UI. Follow these steps to add users to a security role.
 
 # [New admin center](#tab/new)
@@ -213,6 +211,7 @@ You can add users to a security role through the modern UI. Follow these steps t
 ---
 
 ### Remove users from a security role
+
 You can remove users from a security role through the modern UI. Follow these steps to remove users from a security role.
 
 # [New admin center](#tab/new)
@@ -251,8 +250,7 @@ A user can have multiple security roles. Security role privileges are cumulative
 ### View a list of security roles in an environment (legacy UI)
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select **Environments** in the navigation pane, and then select an environment.
-
-1. Select **Settings** > **Users + Permissions** > **Security roles**.
+1. Select **Settings** > **Users + permissions** > **Security roles**.
 
 ### Define the privileges and properties of a security role (legacy UI)
 
@@ -333,6 +331,7 @@ You can only select Basic-level privileges in the member's privilege inheritance
 > Since July 2024, the **Team member's privilege inheritance** attribute of a role is no longer a [managed property](../alm/use-managed-properties.md). When you import a solution that has security roles, this attribute isn't included. 
 
 ### Related information
+
 - [Video: Administer application users, security roles, teams, and users in the Power Platform admin center](https://learn-video.azurefd.net/vod/player?id=5799c67e-f283-4cbd-aafa-bc38a3f53276)  
 - [Video: Check Access feature](https://youtu.be/rigZ1FvrgSY)  
 - [Predefined security roles](database-security.md#predefined-security-roles)
