@@ -71,7 +71,7 @@ To use Solution Checker, go to your solution in the Power Apps portal, select **
 
 Sometimes, a performance issue can be spread across services or buried deep within service calls, making it hard to trace and only happening intermittently with no clear pattern. Implement distributed tracing so when issues happen, you have the telemetry you need to find and fix the problem.
 
-Learn more about implementing a [distributed tracing pattern](power-platform/architecture/key-concepts/distributed-tracing).
+Learn more about implementing a [distributed tracing pattern](/power-platform/architecture/key-concepts/distributed-tracing).
 
 ## Recommendations across solution complexity
 
