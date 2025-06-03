@@ -7,36 +7,53 @@ ms.author: paulliew
 ms.reviewer: sericks
 ms.custom: bap-template, NEWPPAC
 ms.topic: concept-article
-ms.date: 02/19/2025
+ms.date: 06/03/2025
+ms.contributors:
+  - lsuresh
 contributors:
   - srpoduri 
   - shahzorkhan123
+  - lavanyapg
 
 ---
 
 # Security roles and privileges
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 To control who can access restricted or sensitive data and resources and what they can do with them, assign users to security roles. This article provides an overview of security roles and their associated privileges.
 
-You can assign security roles using the [new, modern UI](#security-roles-and-the-new-modern-ui) or the [legacy UI](#security-roles-and-the-legacy-ui).
+You can assign security roles using the [new, modern UI](#security-roles-and-the-new-modern-ui), or the [legacy UI](#security-roles-and-the-legacy-ui).
 
 ## Security roles and the new, modern UI
 
-Security roles define how different users access different types of records. To control access to data and resources, you can create or modify security roles and change the security roles that are assigned to your users.
+Security roles define how different users access different types of records. To control access to data and resources, you can create or modify security roles and change the security roles that are assigned to users.
 
-A user can have multiple security roles. Security role privileges are cumulative. Users are granted the privileges that are available in each role that's assigned to them.
+A user can have multiple security roles. Security role privileges are cumulative. Users are granted the privileges that are available in each role assigned to them.
 
 ### View a list of security roles in an environment
 
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select **Environments** in the navigation pane, and then select an environment.
+# [New admin center](#tab/new)
 
-1. Select **Settings** > **Users + Permissions** > **Security roles**.
+1. Sign in to the [Power Platform admin center](https://aka.ms/ppac) as an admin (Dynamics 365 admin or Microsoft Power Platform admin).
+
+1. In the navigation pane, select **Manage**.
+
+1. In the **Manage** pane, select **Environments**, and then select an environment.
+
+1. Select **Settings** > **Users + permissions** > **Security roles**.
+
+# [Classic admin center](#tab/classic)
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+
+1. Select **Environments** in the navigation pane, and then select an environment.
+
+1. Select **Settings** > **Users + permissions** > **Security roles**.
+
+---
 
 ### Define the privileges and properties of a security role
 
-After you've [created a security role](create-edit-security-role.md#create-a-security-role) or while you're [editing one](create-edit-security-role.md#edit-a-security-role), set the **Member's privilege inheritance** option:
+After you [created a security role](create-edit-security-role.md#create-a-security-role) or while you're [editing one](create-edit-security-role.md#edit-a-security-role), set the **Member's privilege inheritance** option:
 
 - **Team privileges only**: A user is granted these privileges as a member of a team. Team members who don't have user privileges of their own can create records with the team as the owner. They can access records that the team owns if they're given the **User** access level for Create and Read privileges.
 
@@ -81,7 +98,7 @@ To quickly find a specific table or privilege, enter its name in the search box 
 
 You can only edit one table at a time, but you can copy settings from one table to multiple tables in a single action.
 
-When you configure a security role, you need to determine the privileges it should grant for each table that's related to the application.
+When you configure a security role, you need to determine the privileges it should grant for each table related to the application.
 
 The following table describes the table privileges you can grant in a security role. In all cases, which records a privilege applies to depends on the access level of the permission defined in the security role.
 
@@ -91,7 +108,7 @@ The following table describes the table privileges you can grant in a security r
 | Read | Required to open a record to view the contents |
 | Write | Required to make changes to a record |
 | Delete | Required to permanently remove a record |
-| Append | Required to associate the current record with another record; for example, if users have Append rights on a note, they can attach the note to an opportunity<br/>In the case of many-to-many relationships, a user must have Append privilege for both tables being associated or disassociated. |
+| Append | Required to associate the current record with another record; for example, if users have Append rights on a note, they can attach the note to an opportunity<br/> For many-to-many relationships, a user must have Append privilege for both tables being associated or disassociated. |
 | Append to | Required to associate a record with the current record; for example, if users have Append To rights on an opportunity, they can add a note to the opportunity |
 | Assign | Required to give ownership of a record to another user |
 | Share | Required to give access to a record to another user while keeping your own access |
@@ -104,10 +121,10 @@ The following table describes the levels of access. For organization-owned table
 
 | **Type** | **Description** |
 |----------|-----------------|
-| Organization | Users can access all records in the organization, regardless of the business unit hierarchical level they or the environment belong to. Users with organization access automatically have all other types of access as well.<br/>Because this level gives access to information throughout the organization, it should be restricted to match the organization's data security plan. This level of access is usually reserved for managers with authority over the organization. |
-| Parent: Child Business Unit | Users can access records in their business unit and all business units subordinate to it.<br/>Users with this access automatically have business unit and user access.<br/>Because this level gives access to information throughout the business unit and subordinate business units, it should be restricted to match the organization's data security plan. This level of access is usually reserved for managers with authority over the business units. |
-| Business Unit | Users can access records in their business unit.<br/>Users with business unit access automatically have user access.<br/>Because this access level gives access to information throughout the business unit, it should be restricted to match the organization's data security plan. This level of access is usually reserved for managers with authority over the business unit. |
-| User | Users can access records they own, objects that are shared with the organization, objects that are shared with them, and objects that are shared with a team that they're a member of.<br/>This is the typical level of access for sales and service representatives. |
+| Organization | Users can access all records in the organization, regardless of the business unit hierarchical level they or the environment belong to. Users with organization access automatically have all other types of access as well.<br/>Because this level gives access to information throughout the organization, it should be restricted to match the organization's data security plan. This level of access is reserved for managers with authority over the organization. |
+| Parent: Child Business Unit | Users can access records in their business unit and all business units subordinate to it.<br/>Users with this access automatically have business unit and user access.<br/>Because this level gives access to information throughout the business unit and subordinate business units, it should be restricted to match the organization's data security plan. This level of access is reserved for managers with authority over the business units. |
+| Business Unit | Users can access records in their business unit.<br/>Users with business unit access automatically have user access.<br/>Because this access level gives access to information throughout the business unit, it should be restricted to match the organization's data security plan. This level of access is reserved for managers with authority over the business unit. |
+| User | Users can access records they own, objects that are shared with the organization, objects that are shared with them, and objects that are shared with a team that they're a member of.<br/>This level of access is typical for sales and service representatives. |
 | None | No access is allowed. |
 
 For each table, select the appropriate type for each privilege. Select **Save** when you're finished.
@@ -128,7 +145,7 @@ Setting the privileges for each table in your app can be time-consuming and tedi
 
 1. Select **Save**.
 
-Let's take a closer look at how copy table permissions works with privileges and access levels.
+Let's take a closer look at how copy table permissions work with privileges and access levels.
 
 - For permissions that exist in both the source table and the target tables:
 
@@ -138,7 +155,7 @@ Let's take a closer look at how copy table permissions works with privileges and
 
 - For permissions that only exist in either the source table or the target tables:
 
-  - If the permission exists in the source but not in the target, then it's ignored in the target. The copy for the remaining permissions is successful.
+  - If the permission exists in the source but not in the target, then the permission is ignored in the target. The copy for the remaining permissions is successful.
 
   - If the permission **doesn't** exist in the source but does exist in the target, then the depth of the permission is retained in the target. The copy for the remaining permissions is successful.
 
@@ -173,7 +190,7 @@ You can add users to a security role through the modern UI. Follow these steps t
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. Select **Manage** in the navigation pane.
 1. In the **Manage** pane, select **Environments**. Then select an environment.
-1. Select **Settings** in the command bar. The **Settings** page for that environment is dispalyed.
+1. Select **Settings** in the command bar. The **Settings** page for that environment is displayed.
 1. Select **Users + Permissions** > **Security roles**.
 1. Select a security role and then select the **More actions** (**...**) icon.
 1. Select **Members** in the menu that appears.
@@ -185,7 +202,7 @@ You can add users to a security role through the modern UI. Follow these steps t
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. Select **Environments** in the navigation pane, and then select an environment.
-1. Select **Settings** in the command bar. The **Settings** page for that environment is dispalyed.
+1. Select **Settings** in the command bar. The **Settings** page for that environment is displayed.
 1. Select **Users + Permissions** > **Security roles**.
 1. Select a security role and then select the **More actions** (**...**) icon.
 1. Select **Members** in the menu that appears.
@@ -203,7 +220,7 @@ You can remove users from a security role through the modern UI. Follow these st
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. Select **Manage** in the navigation pane.
 1. In the **Manage** pane, select **Environments**. Then select an environment.
-1. Select **Settings** in the command bar. The **Settings** page for that environment is dispalyed.
+1. Select **Settings** in the command bar. The **Settings** page for that environment is displayed.
 1. Select **Users + Permissions** > **Security roles**.
 1. Select a security role and then select the **More actions** (**...**) icon.
 1. Select **Members** in the menu that appears.
@@ -215,7 +232,7 @@ You can remove users from a security role through the modern UI. Follow these st
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. Select **Environments** in the navigation pane, and then select an environment.
-1. Select **Settings** in the command bar. The **Settings** page for that environment is dispalyed.
+1. Select **Settings** in the command bar. The **Settings** page for that environment is displayed.
 1. Select **Users + Permissions** > **Security roles**.
 1. Select a security role and then select the **More actions** (**...**) icon.
 1. Select **Members** in the menu that appears.
@@ -229,7 +246,7 @@ You can remove users from a security role through the modern UI. Follow these st
 
 Security roles define how different users access different types of records. To control access to data and resources, you can create or modify security roles and change the security roles that are assigned to your users.
 
-A user can have multiple security roles. Security role privileges are cumulative. Users are granted the privileges that are available in each role that's assigned to them.
+A user can have multiple security roles. Security role privileges are cumulative. Users are granted the privileges that are available in each role assigned to them.
 
 ### View a list of security roles in an environment (legacy UI)
 
@@ -239,7 +256,7 @@ A user can have multiple security roles. Security role privileges are cumulative
 
 ### Define the privileges and properties of a security role (legacy UI)
 
-After you've [created a security role](create-edit-security-role.md#create-a-security-role) or while you're [editing one](create-edit-security-role.md#edit-a-security-role), set the privileges associated with it.
+After you [created a security role](create-edit-security-role.md#create-a-security-role) or while you're [editing one](create-edit-security-role.md#edit-a-security-role), set the privileges associated with it.
 
 A security role consists of record-level privileges and task-based privileges.
 
@@ -253,9 +270,9 @@ The following table describes the levels of access.
 
 | Icon | Description |
 | --- |--- |
-| ![Access level global.](../admin/media/access-level-global.png "Access level global") | **Global**. Users can access all records in the organization, regardless of the business unit hierarchical level they or the environment belong to. Users who have Global access automatically have Deep, Local, and Basic access.<br/>Because this level gives access to information throughout the organization, it should be restricted to match the organization's data security plan. This level of access is usually reserved for managers with authority over the organization.<br/>The application refers to this access level as **Organization**. |
-| ![Access level deep.](../admin/media/access-deep.png "Access level deep") | **Deep**. Users can access records in their business unit and all business units subordinate to it.<br/>Users who have Deep access automatically have Local and Basic access.<br/>Because this level gives access to information throughout the business unit and subordinate business units, it should be restricted to match the organization's data security plan. This level of access is usually reserved for managers with authority over the business units.<br/>The application refers to this access level as **Parent: Child Business Units**. |
-| ![Access level local.](../admin/media/access-local.png "Access level local") | **Local**. Users can access records in the user's business unit.<br/>Users who have Local access automatically have Basic access.<br/>Because this access level gives access to information throughout the business unit, it should be restricted to match the organization's data security plan. This level of access is usually reserved for managers with authority over the business unit.<br/>The application refers to this access level as **Business Unit**. |
+| ![Access level global.](../admin/media/access-level-global.png "Access level global") | **Global**. Users can access all records in the organization, regardless of the business unit hierarchical level they or the environment belong to. Users who have Global access automatically have Deep, Local, and Basic access.<br/>Because this level gives access to information throughout the organization, it should be restricted to match the organization's data security plan. This level of access is reserved for managers with authority over the organization.<br/>The application refers to this access level as **Organization**. |
+| ![Access level deep.](../admin/media/access-deep.png "Access level deep") | **Deep**. Users can access records in their business unit and all business units subordinate to it.<br/>Users who have Deep access automatically have Local and Basic access.<br/>Because this level gives access to information throughout the business unit and subordinate business units, it should be restricted to match the organization's data security plan. This level of access is reserved for managers with authority over the business units.<br/>The application refers to this access level as **Parent: Child Business Units**. |
+| ![Access level local.](../admin/media/access-local.png "Access level local") | **Local**. Users can access records in the user's business unit.<br/>Users who have Local access automatically have Basic access.<br/>Because this access level gives access to information throughout the business unit, it should be restricted to match the organization's data security plan. This level of access is reserved for managers with authority over the business unit.<br/>The application refers to this access level as **Business Unit**. |
 | ![Access level basic.](../admin/media/access-level-basic.png "Access level basic") | **Basic**. Users can access records they own, objects that are shared with the organization, objects that are shared with them, and objects that are shared with a team that they're a member of.<br/>This is the typical level of access for sales and service representatives.<br/>The application refers to this access level as **User**. |
 | ![Access level none.](../admin/media/access-level-none.png "Access level none") | **None**. No access is allowed. |
 
@@ -266,7 +283,7 @@ The following table describes the levels of access.
 
 Power Apps and Dynamics 365 customer engagement apps use record-level privileges to determine the level of access a user has to a specific record or record type.
 
-The following table describes the record-level privileges you can grant in a security role. In all cases, which records a privilege applies to depends on the access level of the permission defined in the security role.
+The following table describes the record-level privileges you can grant in a security role. In all cases, the records a privilege applies to depends on the access level of the permission defined in the security role.
 
 | Privilege | Description |
 |-----------|-------------|
@@ -279,7 +296,7 @@ The following table describes the record-level privileges you can grant in a sec
 | Assign | Required to give ownership of a record to another user |
 | Share\* | Required to give access to a record to another user while keeping your own access |
 
-\*The owner of a record or a person who has the Share privilege on a record can share it with other users or teams. Sharing can add Read, Write, Delete, Append, Assign, and Share privileges for specific records. Teams are used primarily for sharing records that team members ordinarily can't access. [Learn more about security, users, and teams](manage-teams.md).
+\*The owner of a record or a person who has the Share privilege on a record can share it with other users or teams. Sharing can add Read, Write, Delete, Append, Assign, and Share privileges for specific records. Microsoft Teams is used primarily for sharing records that team members ordinarily can't access. [Learn more about security, users, and teams](manage-teams.md).
 
 It's not possible to remove access for a particular record. Any change to a security role privilege applies to all records of that type.  
 
@@ -310,7 +327,7 @@ A security role can be set to provide team members with direct Basic-level acces
 
    To change the access level for a privilege, keep selecting the access level symbol until you see the one you want. The access levels available depend on whether the record type is organization-owned or user-owned.
 
-You can only select Basic-level privileges in the member's privilege inheritance. If you need to provide access to a child business unit, elevate the privilege to Deep. For example, you need to assign a security role to the Group team and you want the members of the group to be able to Append to Account. Set up the security role with a Basic-level member's privilege inheritance. Set the Append to Account privilege to Deep. This is because Basic privileges apply only to the user's business unit.
+You can only select Basic-level privileges in the member's privilege inheritance. If you need to provide, access to a child business unit, elevate the privilege to Deep. For example, you need to assign a security role to the Group team and you want the members of the group to be able to Append to Account. Set up the security role with a Basic-level member's privilege inheritance. Set the Append to Account privilege to Deep since Basic privileges apply only to the user's business unit.
 
 > [!NOTE]
 > Since July 2024, the **Team member's privilege inheritance** attribute of a role is no longer a [managed property](../alm/use-managed-properties.md). When you import a solution that has security roles, this attribute isn't included. 
