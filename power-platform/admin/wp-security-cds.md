@@ -7,6 +7,10 @@ author: paulliew
 ms.subservice: admin
 ms.author: paulliew
 ms.reviewer: sericks
+ms.contributors:
+    - paulliew
+    - sericks
+    - syalandur    
 ms.custom: "admin-security"
 search.audienceType: 
   - admin
