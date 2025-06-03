@@ -68,6 +68,7 @@ Sign in to the [Power Platform admin center](https://admin.powerplatform.microso
 1. Allow 30 minutes for the system to configure the recycle bin.
   
 ---
+
 > [!NOTE]
 > Only records deleted after the recycle bin feature has been turned on can be restored.
 
