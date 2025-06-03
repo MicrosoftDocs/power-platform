@@ -3,6 +3,7 @@ title: "About trial environments: standard and subscription-based"
 description: "There are two types of Power Platform trial environments. Decide which one is right for you and learn how to create it in the Power Platform admin center."
 author: meeramahabala
 ms.subservice: admin
+ms.custom: NewPPAC
 ms.author: meeram
 ms.reviewer: sericks
 ms.component: pa-admin
@@ -22,7 +23,8 @@ Using the Microsoft Power Platform admin center, you can create environments of 
 
 Not all companies and admins approach trials the same way. This is especially true when it comes to deciding whether to allow users to try new capabilities. Some companies let users try features in a self-serve manner. Others want admins to completely control what's being tried and who's licensed to use the environment. The two types of trial environments provide this level of control.
 
-- **Trial (standard)**: This is the type of trial environment that companies can use to allow users and department managers to try new features and quickly build low-code and no-code applications and processes. Organization (tenant) admins can enable all users to create trials, or only tenant admins. If allowed for users, any user from that organization who has [a suitable license](create-environment.md#who-can-create-environments) can create a 30-day trial environment. After 30 days, the environment is disabled and deleted. 
+- **Trial (standard)**: This is the type of trial environment that companies can use to allow users and department managers to try new features and quickly build low-code and no-code applications and processes. Organization (tenant) admins can enable all users to create trials, or only tenant admins. If allowed for users, any user from that organization who has [a suitable license](create-environment.md#who-can-create-environments) can create a 30-day trial environment. After 30 days, the environment is disabled and deleted.
+  
 - **Trial (subscription-based)**: This is the type of trial environment that companies can use to develop larger, multiuser and multiple-department solutions and perform proof-of-concept reviews. Tenant admins can add a trial (subscription-based) environment to their tenant, or new customers can sign up for a new tenant and become the administrator of the tenant. For new customers, an admin-managed subscription is created with a set number of licenses (usually 25); admins control which other users get licenses assigned to them. An admin-managed subscription has an end date that can be extended. 
 
 Neither type of environment consumes paid capacity. You can convert either type of trial environment to a production environment by switching it to consume from paid capacity, which will keep it from being disabled and deleted. After it becomes a production environment, it will follow the paid license lifecycle.
@@ -40,14 +42,18 @@ The type of trial environment you create depends on where you start and your ten
 
 ## Create a trial (standard) environment in the Power Platform admin center
 
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) with admin credentials.
+### [New admin center](#tab/new)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) with admin credentials.
+1. In the navigation pane, select **Manage**, then in the **Manage** pane, select **Environments**.
+1. On the **Environments** page, click **New** in the command bar.
+   
+### [Classic admin center](#tab/classic)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) with admin credentials.
+1. In the navigation pane, select **Environments**.
+1. On the **Environments** page, click **New** in the command bar.
+---
 
-2. Go to **Environments**, and then select **+ New**.
-
-   > [!div class="mx-imgBorder"] 
-   > ![Create a new trial (standard) environment.](media/new-environment.png "Create a new trial (standard) environment")
-
-3. Enter the following, and then select **Next**.
+4. Enter the following settings:
    
    |Setting  |Description  |
    |---------|---------|
@@ -57,10 +63,9 @@ The type of trial environment you create depends on where you start and your ten
    |Purpose     | A description of the environment.         |
    |Create a database for this environment? | Select **Yes** to add a Microsoft Dataverse database to the trial (standard) environment. |
 
-   > [!div class="mx-imgBorder"] 
-   > ![Create a new trial (standard) environment, page two.](./media/trial-subscription-standard.png "Create a new trial (standard) environment, page two")
+5. Click **Next**.
 
-4. Enter the following, and then select **Save**.
+6. Enter the following settings:
 
    |Setting  |Description  |
    |---------|---------|
@@ -70,32 +75,34 @@ The type of trial environment you create depends on where you start and your ten
    |Deploy sample apps and data     | This setting is preset to **No** and can't be changed.      |
    |Security group | Select a security group to restrict access to this environment. |
 
-   > [!div class="mx-imgBorder"] 
-   > ![Create a new environment settings, page two.](./media/trial-subscription-standard-page2.png "Create a new environment settings, page two")
-
+7. Click **Save** to apply the changes.
+ 
 ## Create a trial (subscription-based) environment in the Power Platform admin center
 
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) with admin credentials.
+### [New admin center](#tab/new)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) with admin credentials.
+1. In the navigation pane, select **Manage**, then in the **Manage** pane, select **Environments**.
+1. On the **Environments** page, click **New** in the command bar.
+   
+### [Classic admin center](#tab/classic)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) with admin credentials.
+1. In the navigation pane, select **Environments**.
+1. On the **Environments** page, click **New** in the command bar.
+---
 
-2. Go to **Environments**, and then select **New**. 
-
-   > [!div class="mx-imgBorder"] 
-   > ![Create a new trial (subscription-based) environment.](media/new-environment.png "Create a new trial (subscription-based) environment")
-
-3. For **Type**, select **Trial (subscription-based)**, and then fill in and select other settings. Select **Next**.
+4. Enter the following settings:
 
    |Setting  |Description  |
    |---------|---------|
    |Name     | The name of your environment.        |
-   |Type     | **Trial (subscription-based)**.      |
-   |Region     | A region for the environment.        |
+   |Type     | Choose **Trial (subscription-based)**.      |
+   |Region     | Choose a region for the environment.        |
    |Purpose     | A description of the environment.         |
    |Create a database for this environment | This setting is preset to **Yes** and can't be changed, because a Dataverse database must be created for a trial (subscription-based) environment.
 
-   > [!div class="mx-imgBorder"] 
-   > ![Create a new trial (subscription-based) environment, page two.](media/trial-subscription-based.png "Create a new trial (subscription-based) environment, page two")
+5. Click **Next**.
 
-4. Specify the following settings, and then select **Save**. 
+6. Enter the following settings:
 
    |Setting  |Description  |
    |---------|---------|
@@ -107,17 +114,22 @@ The type of trial environment you create depends on where you start and your ten
    |Security group | Select a security group to restrict access to this environment. |
    |Deploy sample apps and data  | This setting appears if you set **Enable Dynamics 365 apps** to **No**.<br>Select **Yes** to include sample apps and data. Sample data gives you something to experiment with as you learn. |
 
-   > [!div class="mx-imgBorder"] 
-   > ![Create new environment database settings.](media/new-environment-add-database.png "Create new environment database settings")
+7. Click **Save** to apply the changes.
 
 ## Check the expiration date for a trial (standard) environment
 
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) with admin credentials.
-
-2. Go to **Environments** > [select a trial environment] > **See all**. Check out **Day(s) remain**.
-
-   > [!div class="mx-imgBorder"] 
-   > ![Trial days remaining.](media/trial-expiration.png "Trial days remaining")
+### [New admin center](#tab/new)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) using admin credentials.
+1. In the navigation pane, select **Manage**, then in the **Manage** pane, select **Environments**.
+1. On the **Environments** page, select a trial environment.
+1. In the **Details** pane, click **See all** to view **Day(s) remain** in the **Details** side pane.
+   
+### [Classic admin center](#tab/classic)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) using admin credentials.
+1. In the navigation pane, select **Environments**.
+1. On the **Environments** page, select a trial environment.
+1. In the **Details** pane, click **See all** to view **Day(s) remain** in the **Details** side pane.
+---
 
 ## Check the expiration date for a trial (subscription-based) environment
 
@@ -141,18 +153,20 @@ Note the following:
 
 **To extend a standard trial:**
 
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) with admin credentials.
-
-2. Go to **Environments**, and then select an expiring environment that has the **Extend trial** option. The **Extend trial** option appears when there are 7 days or less remaining before the environment expires.
-
-   > [!div class="mx-imgBorder"] 
-   > ![Extend a trial.](media/extend-trial.png "Extend a trial")
-
-3. Select **Extend trial**
-
-4. Read the notification and then select **Extend trial**. 
-
-Your trial will be extended 30 days from the original expiration date.
+### [New admin center](#tab/new)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) using admin credentials.
+1. In the navigation pane, select **Manage**, then in the **Manage** pane, select **Environments**.
+1. On the **Environments** page, select an expiring environment with the **Extend trial** option.
+1. The **Extend trial** option become available when 7 days or fewer remain before the environment expires.
+1. Read the notification, then click **Extend trial** to extend the trial environment by 30 days from the original expiration date.
+   
+### [Classic admin center](#tab/classic)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) using admin credentials.
+1. In the navigation pane, select **Environments**.
+1. On the **Environments** page, select an expiring environment with the **Extend trial** option.
+1. The **Extend trial** option become available when 7 days or fewer remain before the environment expires.
+1. Read the notification, then click **Extend trial** to extend the trial environment by 30 days from the original expiration date.
+---
 
 ## Extend a trial (subscription-based) environment
 
@@ -166,16 +180,20 @@ There is only one self-service extension allowed per offer-based trial environme
 
 ## Convert either type of trial environment to a production environment
 
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) with admin credentials.
-
-2. Go to **Environments** > [select a trial environment] > **Convert to production**.
-
-    > [!div class="mx-imgBorder"] 
-    > ![Select Convert to production.](media/trial-convert.png "Select Convert to production")
-
-3. Select **Continue**.
-
-It might take several hours to convert to a production environment.
+### [New admin center](#tab/new)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) using admin credentials.
+1. In the navigation pane, select **Manage**, then in the **Manage** pane, select **Environments**.
+1. On the **Environments** page, select a trial environment.
+1. In the command bar, click **Convert to production**.
+1. Click **Continue**. The conversion to a production environment may take several hours.
+   
+### [Classic admin center](#tab/classic)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) using admin credentials.
+1. In the navigation pane, select **Environments**.
+1. On the **Environments** page, select a trial environment.
+1. In the command bar, click **Convert to production**.
+1. Click **Continue**. The conversion to a production environment may take several hours.
+---
 
 ## Frequently asked questions
 
