@@ -55,9 +55,6 @@ Sign in to the [Power Platform admin center](https://admin.powerplatform.microso
 1. Select **Save**.
 1. Allow 30 minutes for the system to configure the recycle bin.
   
-> [!NOTE]
-> Only records deleted after the recycle bin feature has been turned on can be restored.
-
 # [Classic admin center](#tab/classic)
 
 1. Select **Environments** and open the environment you want.
@@ -70,6 +67,7 @@ Sign in to the [Power Platform admin center](https://admin.powerplatform.microso
 1. Select **Save**.
 1. Allow 30 minutes for the system to configure the recycle bin.
   
+---
 > [!NOTE]
 > Only records deleted after the recycle bin feature has been turned on can be restored.
 
@@ -96,6 +94,8 @@ To restore deleted records from the admin center, sign in to the [Power Platform
 1. You can view all the deleted records from all tables.
 1. Select one or more records you wish to restore, and then select **Restore** on the command bar.
 1. Select **OK** to confirm the action to restore.
+
+---
 
 ### Power Platform Environment Settings app
 
