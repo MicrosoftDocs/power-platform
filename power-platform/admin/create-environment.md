@@ -23,7 +23,7 @@ contributors:
 
 [!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
-An environment is a space to store, manage, and share your organization's business data, apps, and flows. An environment is a container to separate apps that might have different roles, security requirements, or target audiences. Power Apps creates a single default environment for each tenant that's shared by all users in that tenant.
+An environment is a space to store, manage, and share your organization's business data, apps, and flows. An environment is a container to separate apps that might have different roles, security requirements, or target audiences. Power Apps creates a single default environment for each tenant, and all users in that tenant share it.
 
 ## Who can create environments?
 
@@ -93,7 +93,7 @@ Foe more information about Dataverse, see [What is Dataverse?](/power-apps/maker
 
 #### Why create an environment without a database?
 
-If you don't need Dynamics 365 apps or need Dataverse, and you're creating canvas apps with Power Apps or flows with Power Automate using other data sources, create the environment _without_ the Dataverse database.
+If you don't need Dynamics 365 apps or Dataverse and are creating canvas apps with Power Apps or flows with Power Automate using other data sources, create the environment _without_ the Dataverse database.
 
 #### Enabling Dynamics 365 apps isn't reversible
 
@@ -154,9 +154,9 @@ For Dynamics 365 finance and operations apps, you need at least:
    |Setting  |Description  |
    |---------|---------|
    |Language     | The default language for this environment. For more information, see [Dataverse language collations](language-collations.md).    |
-   | URL         | Enter your organization name. Organization URLs must be unique. If your organization name is already reserved in the destination datacenter, it won't be available. |
+   | URL         | Enter your organization name. Organization URLs must be unique. If your organization name is already reserved in the destination datacenter, it isn't available. |
    |Currency     | The base currency used for reporting.         |
-   |Enable Dynamics 365 apps | Select **Yes** and make a selection to automatically deploy apps such as Dynamics 365 Sales or Dynamics 365 Supply Chain Management. You must have an appropriate Dynamics 365 license to select **Yes**. If you don't select **Yes** at the time of database provisioning, you won’t be able to make this change later nor be able to install Dynamics 365 apps on this environment. |
+   |Enable Dynamics 365 apps | Select **Yes** and make a selection to automatically deploy apps such as Dynamics 365 Sales or Dynamics 365 Supply Chain Management. You must have an appropriate Dynamics 365 license to select **Yes**. If you don't select **Yes** at the time of database provisioning, you aren't be able to make this change later nor be able to install Dynamics 365 apps on this environment. |
    |Deploy sample apps and data     | Select **Yes** to include sample apps and data. Sample data gives you something to experiment with as you learn. You must select **No** for **Enable Dynamics 365 apps** for this setting to appear.        |
    |Security group | Select a security group to restrict access to this environment. For open access, select **None**.<br><br>This field is now required.|
 
@@ -255,7 +255,7 @@ Users can access resources in an environment if they have:
 
 ### Why do I no longer see Preview (United states) region?
 
-This region is no longer available as a choice. It has been replaced with the **Get new features early** setting when the United States region is selected.
+This region is no longer available as a choice. It is now replaced with the **Get new features early** setting when the United States region is selected.
 
 Preview or early release cycle capabilities are available for environments in other regions, in addition to the United States.
 
