@@ -27,7 +27,7 @@ Companies and admins approach trials differently, especially when deciding wheth
   
 - **Trial (subscription-based)**: This type of trial environment allows companies to develop larger, multiuser, and multiple-department solutions and perform proof-of-concept reviews. Tenant admins can add a trial (subscription-based) environment to their tenant, or new customers can sign up for a new tenant and become the administrator of the tenant. For new customers, an admin-managed subscription is created with a set number of licenses (usually 25); admins control which other users get licenses assigned to them. An admin-managed subscription has an end date that can be extended. 
 
-Neither type of environment consumes paid capacity. You can convert either type of trial environment to a production environment by switching it to consume from paid capacity, which will keep it from being disabled and deleted. After it becomes a production environment, it will follow the paid license lifecycle.
+Neither type of environment consumes paid capacity. You can convert a trial environment to a production environment by switching it to consume from paid capacity, preventing it from being disabled or deleted. Once converted, it follows the paid license lifecycle.
 
 ## Multiple ways to start a trial
 
@@ -109,7 +109,7 @@ The type of trial environment you create depends on where you start and your ten
    |Language     | The default language for this environment.        |
    |URL | The environment name to include in the URL.     |
    |Currency     | The base currency used for reporting.         |
-   |Enable Dynamics 365 apps | <ul><li>Select **Yes** to display the **Automatically deploy these apps** setting, described in the following row of this table.</li><li>Select **No** to provision an environment with no apps included. You are able to create trials for low-code and no-code apps and flows, but not the full Dynamics 365 applications platform.</li></ul>  |
+   |Enable Dynamics 365 apps | <ul><li>Select **Yes** to display the **Automatically deploy these apps** setting, described in the following row of this table.</li><li>Select **No** to provision an environment with no apps included. You're able to create trials for low-code and no-code apps and flows, but not the full Dynamics 365 applications platform.</li></ul>  |
    |Automatically deploy these apps  | This setting appears if you set **Enable Dynamics 365 apps** to **Yes**.<ul><li>Select **All enterprise applications**, **Customer Service Pro**, or **Sales Pro** to deploy and try Dynamics 365 apps.</li><li>Select **None** to provision an environment with no apps included.</li></ul>|
    |Security group | Select a security group to restrict access to this environment. |
    |Deploy sample apps and data  | This setting appears if you set **Enable Dynamics 365 apps** to **No**.<br>Select **Yes** to include sample apps and data. Sample data gives you something to experiment with as you learn. |
@@ -148,7 +148,7 @@ A trial (subscription-based) environment lasts as long as the subscription is ac
 
 Note the following:
 
-- Within the last 7 days before the standard trial environment is set to expire, the trial environment admin can do a self-service extension of the expiring environment. This adds an additional 30 days from the original expiration date.
+- Within the last seven days before the standard trial environment is set to expire, the trial environment admin can do a self-service extension of the expiring environment. This adds an extra 30 days from the original expiration date.
 - There's only one self-service extension allowed per standard trial environment. To further retain the environment, it must be [converted to production](#convert-either-type-of-trial-environment-to-a-production-environment).
 
 **To extend a standard trial:**
@@ -199,10 +199,10 @@ There's only one self-service extension allowed per offer-based trial environmen
 
 ### What type of account can create a free trial environment?
 
-For the best trial experience, we recommend you use your work or school email address that's managed by [Microsoft Entra ID.](https://azure.microsoft.com/services/active-directory/#overview)
-If you create a standard trial environment from [https://trials.dynamics.com/](https://trials.dynamics.com/), some products may support consumer email account that's not managed by Microsoft Entra ID. 
+For the best trial experience, we recommend you use your work or school email address, which [Microsoft Entra ID.](https://azure.microsoft.com/services/active-directory/#overview) manages.
+When you create a standard trial environment from [https://trials.dynamics.com/](https://trials.dynamics.com/), some products may support consumer email accounts that Microsoft Entra ID doesn't manage. 
 > [!NOTE]
-> If you use a consumer email account to create a trial environment, there will be limitations in your trial experience, such as: 
+> If you use a consumer email account to create a trial environment, there are limitations in your trial experience, such as: 
 > - You can't access the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) to manage the trial environment, extend the trial, or manage environment users. 
 > - You can't access the [Microsoft 365 admin center](https://admin.microsoft.com/) to manage tenant users.
    
