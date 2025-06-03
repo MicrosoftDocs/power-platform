@@ -19,7 +19,7 @@ ms.custom:
 
 This article gives an overview of key tools for monitoring and optimizing Power Platform solution performance. Each tool has unique features that help you diagnose issues, analyze usage patterns, and make sure your apps, flows, and data services run efficiently. Depending on the business criticality or risk of a solution, you use a different mix of tools to help prevent potential issues. Learn more examples in the `Recommendations across solution complexity` section below.
 
-## Monitoring and reporting tools
+## Monitoring and reporting tools and processes
 
 Use these essential tools to monitor and report on the performance of your Power Platform solutions.
 
@@ -27,7 +27,7 @@ Use these essential tools to monitor and report on the performance of your Power
 
 Power Apps Checker is a built-in tool in Power Apps Studio that identifies potential performance, accessibility, and formula issues in canvas apps. It gives immediate feedback on areas that can affect app responsiveness or user experience, so you fix problems before deployment.
 
-To use Power App Checker, open your app in Power Apps Studio and select the **App Checker** icon (stethoscope icon) from the toolbar. The tool shows a list of issues by severity, with explanations and recommendations for fixing each issue. Regularly review and address these findings to keep your apps fast and user friendly.
+To use Power Apps Checker, open your app in Power Apps Studio and select the **Apps Checker** icon (stethoscope icon) from the toolbar. The tool shows a list of issues by severity, with explanations and recommendations for fixing each issue. Regularly review and address these findings to keep your apps fast and user friendly.
 
 ### Power Apps Monitor
 
@@ -86,7 +86,7 @@ When trying to implement any standards across every app and solution in your ten
 
 Determine what items that are flagged by the Power Apps Checker that are OK to ignore and which should be cleared, document those recommendations, and promote that knowledge within your internal Power Platform community.
 
-We recommend ensuring that Inefficient delay loading within the App Checker is cleared entirely. Inefficient delay loading means that your app has cross-screen references, most likely with a control property, referring to a control on another screen. This most often occurs when copying and pasting a control from one screen to another. When this happens, this causes Power Apps to load that second screen in order to show the current screen. If that second screen has a similar issue, then it may need to load a third screen, and so on.
+We recommend ensuring that Inefficient delay loading within the Apps Checker is cleared entirely. Inefficient delay loading means that your app has cross-screen references, most likely with a control property, referring to a control on another screen. This most often occurs when copying and pasting a control from one screen to another. When this happens, this causes Power Apps to load that second screen in order to show the current screen. If that second screen has a similar issue, then it may need to load a third screen, and so on.
 
 This can quickly become a tangled web of references that are hard to undo if they aren't handled as you go. To remedy these issues, insure that any shared values between screens are stored as variables, collections, or named functions.
 
