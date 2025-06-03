@@ -31,7 +31,7 @@ If the flow is set to the Power Automate Premium user plan, then it gets the pla
 
 The user license plan for Power Automate is the Power Automate Premium plan, but users have a range of other license plan options. Users with the free plan or one of the Microsoft 365 license plans can only access standard connectors, but most of the other license plans and trials provide access to premium connectors.
 
-Learn more about license plans that include Power Automate capabilities in [Types of Power Automate licenses](/power-platform/admin/power-automate-licensing/types) and the [Power Platform Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130). Learn more about the limits and performance profile of license plans in [Limits of automated, scheduled, and instant flows](/power-automate/limits-and-config).
+Learn more about license plans that include Power Automate capabilities in [Types of Power Automate licenses](/power-platform/admin/power-automate-licensing/types) and the [Power Platform Licensing Guide](https://go.microsoft.com/fwlink/p/?linkid=2085130). Learn more about the limits and performance profile of license plans in [Limits of automated, scheduled, and instant flows](/power-automate/limits-and-config).
 
 ### Which Power Automate licenses do I need?
 
