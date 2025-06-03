@@ -119,9 +119,6 @@ Or, purchase and assign per-app passes: [About Power Apps per app plans](about-p
 
     The security group is associated with the environment.
 
-> [!NOTE]
-> Users running canvas apps when a security group is associated with the environment of the app must be members of the security group to be able to run the canvas app, regardless of whether the app has been shared with them. Otherwise, users will see this error message: "You can't open apps in this environment. You aren't a member of the environment's security group." If your Power Platform admin has [set governance details](powerapps-powershell.md) for your organization, you will see a governance contact that you may reach out to for security group membership.
-
 #### [Classic admin center](#tab/classic)
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 admin or Microsoft Power Platform admin).
@@ -142,10 +139,10 @@ Or, purchase and assign per-app passes: [About Power Apps per app plans](about-p
 
     The security group is associated with the environment.
 
+---
+
 > [!NOTE]
 > Users running canvas apps when a security group is associated with the environment of the app must be members of the security group to be able to run the canvas app, regardless of whether the app has been shared with them. Otherwise, users will see this error message: "You can't open apps in this environment. You aren't a member of the environment's security group." If your Power Platform admin has [set governance details](powerapps-powershell.md) for your organization, you will see a governance contact that you may reach out to for security group membership.
-
----
 
 ### See also
 
