@@ -16,7 +16,7 @@ search.audienceType:
 
 [!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
-Using the Microsoft Power Platform admin center, you can create environments of multiple types. Using trial environments, companies and customers can try out new features and solutions. There are two types of trial environments: trial (standard) and trial (subscription-based).
+In the Microsoft Power Platform admin center, you can create various types of environments. Trial environments allow companies and customers to explore new features and solutions. There are two types of trial environments: standard and subscription-based.
 
 > [!NOTE]
 > The term "trial," as used in all other topics and the user interface, refers to the standard type of trial environment rather than the subscription-based type.
@@ -170,7 +170,7 @@ Note the following:
 
 ## Extend a trial (subscription-based) environment
 
-The expiration of subscription-based trial (also known as an admin trial) environments is tied to the expiration of the subscription. Therefore, subscription-based trial environments can't be independently extended. There are limited options for extending admin trial subscriptions which affect extending the expiration of any associated trial environments.
+The expiration of subscription-based trial (also known as an admin trial) environments is tied to the subscription's expiration. Therefore, subscription-based trial environments can't be independently extended. Limited options for extending admin trial subscriptions affect the ability to extend the expiration of associated trial environments.
 
 **To extend a subscription-based (admin) trial:**
 
