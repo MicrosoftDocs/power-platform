@@ -64,24 +64,26 @@ User A can be associated with any of the business units, including the root busi
 > [!NOTE]
 > Before you enable this feature, you must publish all your customizations to enable all your new unpublished tables for the feature. If you find that you have unpublished tables that aren't working with this feature after you have turned it on, you can set the **RecomputeOwnershipAcrossBusinessUnits** setting using the [OrgDBOrgSettings tool for Microsoft Dynamics CRM](https://support.microsoft.com/help/2691237/orgdborgsettings-tool-for-microsoft-dynamics-crm). Setting **RecomputeOwnershipAcrossBusinessUnits** to true allows the [Owning Business Unit](#owning-business-unit) field to be set and updated.
 
-###### [Modern admin center](#tab/modern)
+###### [New admin center](#tab/new)
 
 1. Sign in to the [Power Platform admin center](https://aka.ms/ppac) as an admin (Dynamics 365 admin or Microsoft Power Platform admin).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**, and then choose the environment that you want to enable this feature for.
 1. Select **Settings** > **Product** > **Features**.
 1. Turn **On** the **Record ownership across business units** switch.
+1. Select **Save**.
 
 ###### [Classic admin center](#tab/classic)
 
 1. Sign in to the [Power Platform admin center](https://aka.ms/ppac) as an admin (Dynamics 365 admin or Microsoft Power Platform admin). 
 2. Select **Environments**, and then choose the environment that you want to enable this feature for. 
 3. Select **Settings** > **Product** > **Features**. 
-4. Turn **On** the **Record ownership across business units** switch. 
+4. Turn **On** the **Record ownership across business units** switch.
+5. Select **Save**.
 
 ---
 
-Once this feature switch is turned on, you can select Business unit when you [assign a security role to a user](assign-security-roles.md). This allows you to assign security role from different business units to a user. The user also requires a security role from the business unit that the user is assigned to with [user settings privileges](assign-security-roles.md#user-settings-privileges-for-record-ownership-across-business-units) to run model-driven apps. You can refer to the [Basic User](database-security.md#predefined-security-roles) security role to find how these user settings privileges are enabled. 
+After this feature switch is turned on, you can select Business unit when you [assign a security role to a user](assign-security-roles.md). This allows you to assign security role from different business units to a user. The user also requires a security role from the business unit that the user is assigned to with [user settings privileges](assign-security-roles.md#user-settings-privileges-for-record-ownership-across-business-units) to run model-driven apps. You can refer to the [Basic User](database-security.md#predefined-security-roles) security role to find how these user settings privileges are enabled. 
 
 You can assign a user as record owner in any business unit without the need to assign a security role in the record's owning business unit as long as the user has a security role that has Read privilege to the record table. See [Record Ownership in Modernized Business Units](wp-security-cds.md#record-ownership-in-modernized-business-units). 
 
