@@ -137,7 +137,7 @@ Setting the privileges for each table in your app can be time-consuming and tedi
 > - Use **App Opener** role which has the minimum privileges to run an app.
 > - Use **Basic User** role for the minimum privileges and including privileges to the core business tables.
 
-1. Select a table, and then select **Copy table permissions**
+1. Select a table, and then select **Copy table permissions**.
 
 1. Search for and select the table or tables you want to copy the permissions to.
 
