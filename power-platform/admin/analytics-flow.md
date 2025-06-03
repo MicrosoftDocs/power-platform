@@ -19,7 +19,7 @@ Environment admins can access analytics for Power Automate in the Microsoft [Pow
 
 To access these reports:
 
-### [New admin center](#tab/modern)
+### [New admin center](#tab/new)
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
