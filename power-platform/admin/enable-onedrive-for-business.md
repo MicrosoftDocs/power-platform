@@ -47,7 +47,7 @@ Before you use [!INCLUDE[pn_onedrive_for_business](../includes/pn-onedrive-for-b
 
 To enable [!INCLUDE[pn_onedrive_for_business](../includes/pn-onedrive-for-business.md)], take these steps:  
 
-### [Modern admin center](#tab/new)
+### [New admin center](#tab/new)
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
@@ -74,7 +74,7 @@ To enable [!INCLUDE[pn_onedrive_for_business](../includes/pn-onedrive-for-busine
 
 You can toggle availability of [!INCLUDE[pn_onedrive](../includes/pn-onedrive.md)] in customer engagement apps for end users through the **OneDrive for Business** privilege.  
 
-### [Modern admin center](#tab/new)
+### [New admin center](#tab/new)
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
