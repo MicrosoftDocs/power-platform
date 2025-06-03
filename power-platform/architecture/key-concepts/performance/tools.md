@@ -98,11 +98,13 @@ In addition to the items in the "all" category, medium risk solutions need to ke
 
 Tools like **Power Apps Monitor**, **Power Automate Analytics**, and **Dataverse Analytics** will best help provide valuable insights that help you clearly see how your Power Platform solutions are performing.
 
-- **Power Apps Monitor** allows you to observe your canvas apps in real-time, capturing detailed information about how users interact with the app. It logs events such as control rendering times, data retrieval operations, formula execution, and network requests. By examining these logs, you can quickly identify exactly where slowdowns or errors occur, whether they're due to inefficient formulas, slow data source connections, or network latency. This detailed visibility helps you pinpoint specific areas for optimization, ensuring a smoother user experience.
 
-- **Power Automate Analytics** provides comprehensive dashboards and reports that illustrate how your cloud flows perform over time. It tracks key metrics such as the number of successful and failed runs, average execution durations, and detailed error information. By analyzing these metrics, you can identify recurring issues, slow-running steps, or bottlenecks within your flows. This insight enables you to refine your automation logic, improve reliability, and ensure your workflows consistently meet business requirements.
 
-- **Dataverse Analytics** offers deep insights into the performance and usage of the underlying data platform powering many Power Platform solutions. It provides metrics on data storage consumption, API call volumes, query performance, and data operation efficiency. By reviewing these analytics, you can detect slow or inefficient queries, excessive data operations, or potential capacity constraints. This allows you to proactively optimize data interactions, manage data growth effectively, and maintain high performance as your solution scales.
+[Learn more Power Apps Monitor](#power-apps-monitor)
+
+[Learn more Power Automate Analytics](#power-automate-analytics)
+
+[Learn more Dataverse Analytics](#dataverse-analytics)
 
 Together, these tools help you pinpoint what's working well and where improvements can be made, enabling you to proactively optimize your solutions for better performance, reliability, and user satisfaction.
 
@@ -110,17 +112,19 @@ Together, these tools help you pinpoint what's working well and where improvemen
 
 In addition to the tools in the low and medium-risk sections, high risk and/or high business criticality solutions need to enable the teams that support these apps, the developers that react quickly to fix issues that pop up, and enable your organization to reach their business goals with data and reporting metrics to support them. Performance plays a key role in this process, as any app that is perceived as slow, as taking too long, or otherwise as a roadblock to a business process will quickly find itself disused and abandoned by its user base.
 
-- **Azure Application Insights** provides a powerful way to monitor the overall health and performance of your Power Platform solutions, especially when they involve custom integrations or complex interactions with other services. It collects detailed information about how users interact with your apps, how quickly the apps respond, and where errors or slowdowns occur. By visualizing this data through easy-to-understand dashboards, developers can quickly spot issues, understand their root causes, and take targeted actions to improve the user experience. For business-critical solutions, this proactive monitoring helps ensure reliability, responsiveness, and user satisfaction, ultimately supporting the organization's goals and productivity.
+[Learn more Azure Application Insights](#azure-application-insights)
 
-- **Performance testing and benchmarking** involves regularly checking how your Power Platform solutions perform under realistic conditions, such as heavy user traffic or large amounts of data. By simulating these scenarios, developers can identify potential bottlenecks or areas where the solution might slow down or fail. Benchmarking allows you to compare current performance against previous versions or established standards, clearly showing improvements or regressions. For solutions that are critical to business operations, this practice ensures that performance remains consistent and reliable, helping developers maintain user trust and confidence in the solution's ability to support essential business processes.
+[Learn more Performance testing and benchmarking](#performance-testing-and-benchmarking)
 
-  > [!CAUTION]
-  > Avoid traditional load-testing methods that rapidly send large numbers of requests directly to Power Platform services, as this can trigger platform throttling and negatively impact your testing results. Instead, consider approaches such as:
-  > - Gradually ramping up user interactions to simulate realistic usage patterns.
-  > - Using multiple test accounts or identities to distribute load evenly.
-  > - Leveraging automated UI testing tools that mimic actual user behavior at realistic intervals.
-  >
-  > These methods help ensure accurate performance insights without violating platform usage policies or encountering throttling limits.
+
+
+> [!CAUTION]
+> Avoid traditional load-testing methods that rapidly send large numbers of requests directly to Power Platform services, as this can trigger platform throttling and negatively impact your testing results. Instead, consider approaches such as:
+> - Gradually ramping up user interactions to simulate realistic usage patterns.
+> - Using multiple test accounts or identities to distribute load evenly.
+> - Leveraging automated UI testing tools that mimic actual user behavior at realistic intervals.
+>
+> These methods help ensure accurate performance insights without violating platform usage policies or encountering throttling limits.
 
 ## Next step
 
