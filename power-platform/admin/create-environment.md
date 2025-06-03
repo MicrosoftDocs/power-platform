@@ -255,7 +255,7 @@ Users can access resources in an environment if they have:
 
 ### Why do I no longer see Preview (United states) region?
 
-This region is no longer available as a choice. It's now replaced with the **Get new features early** setting when the United States region is selected.
+This region is no longer available as a choice. It is now replaced with the **Get new features early** setting when the United States region is selected.
 
 Preview or early release cycle capabilities are available for environments in other regions, in addition to the United States.
 
