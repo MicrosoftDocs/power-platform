@@ -9,8 +9,8 @@ contributors:
   - v-aangie
 ms.component: pa-admin
 ms.topic: faq
-ms.date: 07/31/2023
-ms.author: tapanm
+ms.date: 06/03/2025
+ms.author: cvassallo
 ms.reviewer: angieandrews
 search.audienceType: 
   - admin
