@@ -101,7 +101,7 @@ Or, purchase and assign per-app passes: [About Power Apps per app plans](about-p
   
 #### [New admin center](#tab/new)
 
-1. Sign in to the [Power Platform admin center](https://aka.ms/ppac) as an admin (Dynamics 365 admin or Microsoft Power Platform admin).
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.com) as an admin (Dynamics 365 admin or Microsoft Power Platform admin).
 
 1. In the navigation pane, select **Manage**.
 
@@ -121,7 +121,7 @@ Or, purchase and assign per-app passes: [About Power Apps per app plans](about-p
 
 #### [Classic admin center](#tab/classic)
 
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 admin or Microsoft Power Platform admin).
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.com) as an admin (Dynamics 365 admin or Microsoft Power Platform admin).
 
 1. In the navigation pane, select **Environments**.
 
