@@ -47,7 +47,7 @@ To access these analytics, go to your flow in Power Automate and select **Analyt
 
 Dataverse Analytics gives insights into the underlying data platform used by many Power Platform solutions. It shows metrics on data storage, API usage, and query performance, helping you see how your solution interacts with its data sources. This helps you find slow queries, excessive data operations, or potential capacity issues.
 
-Access Dataverse Analytics in the Power Platform Admin Center by selecting your environment and going to the **Analytics** section under Dataverse. You find dashboards and reports that break down usage patterns and performance statistics. Monitoring these metrics lets you address issues before they affect users, like optimizing queries or managing data growth.
+Access Dataverse Analytics in the Power Platform admin center by selecting your environment and going to the **Analytics** section under Dataverse. You find dashboards and reports that break down usage patterns and performance statistics. Monitoring these metrics lets you address issues before they affect users, like optimizing queries or managing data growth.
 
 ### Azure Application Insights
 
