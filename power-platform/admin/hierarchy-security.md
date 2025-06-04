@@ -117,6 +117,9 @@ The hierarchy security is disabled by default. To enable hierarchy security, com
 
     :::image type="content" source="media/sales-vp-access.png" alt-text="Screenshot that shows Read access for VP of Sales and other positions.":::
 
+    > [!NOTE]
+    > While, the hierarchy security grants the VP of Sales access to the records in the red rectangle, additional access can be available based on the security role that the VP of Sales has.
+
 #### [Classic admin center](#tab/classic)
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.com) as an admin (Dynamics 365 admin or Microsoft Power Platform admin).
@@ -139,11 +142,11 @@ The hierarchy security is disabled by default. To enable hierarchy security, com
     For example, if the depth equals to 2, a manager can only access their own accounts and the accounts of the reports two levels deep. In our example, if you sign in to customer engagement apps as a nonadministrator VP of Sales, you only see the active accounts of the users as shown:  
 
     :::image type="content" source="media/sales-vp-access.png" alt-text="Screenshot that shows Read access for VP of Sales and other positions.":::
-  
----
 
     > [!NOTE]
-    >  While, the hierarchy security grants the VP of Sales access to the records in the red rectangle, additional access can be available based on the security role that the VP of Sales has.  
+    > While, the hierarchy security grants the VP of Sales access to the records in the red rectangle, additional access can be available based on the security role that the VP of Sales has.  
+  
+---
 
 ## Set up manager and position hierarchies
 
