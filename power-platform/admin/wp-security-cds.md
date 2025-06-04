@@ -68,7 +68,7 @@ User A can be associated with any of the business units, including the root busi
 
 ###### [New admin center](#tab/new)
 
-1. Sign in to the [Power Platform admin center](https://aka.ms/ppac) as an admin (Dynamics 365 admin or Microsoft Power Platform admin).
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.com) as an admin (Dynamics 365 admin or Microsoft Power Platform admin).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**, and then choose the environment that you want to enable this feature for.
 1. Select **Settings** > **Product** > **Features**.
@@ -77,7 +77,7 @@ User A can be associated with any of the business units, including the root busi
 
 ###### [Classic admin center](#tab/classic)
 
-1. Sign in to the [Power Platform admin center](https://aka.ms/ppac) as an admin (Dynamics 365 admin or Microsoft Power Platform admin). 
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.com) as an admin (Dynamics 365 admin or Microsoft Power Platform admin). 
 2. Select **Environments**, and then choose the environment that you want to enable this feature for. 
 3. Select **Settings** > **Product** > **Features**. 
 4. Turn **On** the **Record ownership across business units** switch.
