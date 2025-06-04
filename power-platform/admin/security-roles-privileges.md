@@ -181,7 +181,7 @@ The following table describes the permission setting groups that you can assign.
 
 ### Add users to a security role
 
-You can add users to a security role through the modern UI. Follow these steps to add users to a security role.
+Follow these steps to add users to a security role.
 
 # [New admin center](#tab/new)
 
@@ -189,10 +189,10 @@ You can add users to a security role through the modern UI. Follow these steps t
 1. Select **Manage** in the navigation pane.
 1. In the **Manage** pane, select **Environments**. Then select an environment.
 1. Select **Settings** in the command bar. The **Settings** page for that environment is displayed.
-1. Select **Users + Permissions** > **Security roles**.
+1. Select **Users + permissions** > **Security roles**.
 1. Select a security role and then select the **More actions** (**...**) icon.
 1. Select **Members** in the menu that appears.
-1. In the **Members** page, select the **+ Add people** option at the top of the page.
+1. In the **Members** page, select the **+ Add people**.
 1. In the **Add people** pane, enter a name, email address, or team name to search for the users you want to add to the security role.
 1. Select **Add** to add those users to the security role.
 
@@ -201,10 +201,10 @@ You can add users to a security role through the modern UI. Follow these steps t
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. Select **Environments** in the navigation pane, and then select an environment.
 1. Select **Settings** in the command bar. The **Settings** page for that environment is displayed.
-1. Select **Users + Permissions** > **Security roles**.
+1. Select **Users + permissions** > **Security roles**.
 1. Select a security role and then select the **More actions** (**...**) icon.
 1. Select **Members** in the menu that appears.
-1. In the **Members** page, select the **+ Add people** option at the top of the page.
+1. In the **Members** page, select **+ Add people**.
 1. In the **Add people** pane, enter a name, email address, or team name to search for the users you want to add to the security role.
 1. Select **Add** to add those users to the security role.
 
@@ -220,7 +220,7 @@ You can remove users from a security role through the modern UI. Follow these st
 1. Select **Manage** in the navigation pane.
 1. In the **Manage** pane, select **Environments**. Then select an environment.
 1. Select **Settings** in the command bar. The **Settings** page for that environment is displayed.
-1. Select **Users + Permissions** > **Security roles**.
+1. Select **Users + permissions** > **Security roles**.
 1. Select a security role and then select the **More actions** (**...**) icon.
 1. Select **Members** in the menu that appears.
 1. In the **Members** page, select the users you want to remove from the security role.
@@ -232,7 +232,7 @@ You can remove users from a security role through the modern UI. Follow these st
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. Select **Environments** in the navigation pane, and then select an environment.
 1. Select **Settings** in the command bar. The **Settings** page for that environment is displayed.
-1. Select **Users + Permissions** > **Security roles**.
+1. Select **Users + permissions** > **Security roles**.
 1. Select a security role and then select the **More actions** (**...**) icon.
 1. Select **Members** in the menu that appears.
 1. In the **Members** page, select the users you want to remove from the security role.
@@ -311,19 +311,29 @@ You can determine how privileges are inherited when a user is granted them as a 
 
 A security role can be set to provide team members with direct Basic-level access privileges. When a privilege inheritance security role is assigned to a user, the user gets all the privileges directly, just like a security role without privilege inheritance. The team members can create records with themselves as the owner and records with the team as the owner when Basic access level for Create is given to them. When the Basic access level for Read is given to them, they can access records that are owned by both themselves and by the team. This privilege inheritance role applies to [Owner](manage-teams.md#types-of-teams) and Microsoft Entra ID [group teams](manage-group-teams.md).
 
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select **Environments** in the navigation pane, and then select an environment.
+# [New admin center](#tab/new)
 
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. Select **Manage** in the navigation pane.
+1. In the **Manage** pane, select **Environments**. Then select an environment.
 1. Select **Settings** > **Users + permissions** > **Security roles**.
-
-1. Select **New**.
-
-1. Enter the name of the new security role.
-
-1. Select the **Member's privilege inheritance** list, and then select **Direct User/Basic access level and Team privileges**.
-
+1. Select **+New role**.
+1. In the Create New Role page, enter the name of the new security role and its Business Unit.
+1. Select the **Member's privilege inheritance** list, and then select **Direct User(Basic) access level and Team privileges**.
 1. Go to each tab and set the appropriate privileges on each table.
 
-   To change the access level for a privilege, keep selecting the access level symbol until you see the one you want. The access levels available depend on whether the record type is organization-owned or user-owned.
+# [Classic admin center](#tab/classic)
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select **Environments** in the navigation pane, and then select an environment.
+1. Select **Settings** > **Users + permissions** > **Security roles**.
+1. Select **+New role**.
+1. In the Create New Role page, enter the name of the new security role and its Business Unit.
+1. Select the **Member's privilege inheritance** list, and then select **Direct User(Basic) access level and Team privileges**.
+1. Go to each tab and set the appropriate privileges on each table.
+
+---
+
+To change the access level for a privilege, keep selecting the access level symbol until you see the one you want. The access levels available depend on whether the record type is organization-owned or user-owned.
 
 You can only select Basic-level privileges in the member's privilege inheritance. If you need to provide, access to a child business unit, elevate the privilege to Deep. For example, you need to assign a security role to the Group team and you want the members of the group to be able to Append to Account. Set up the security role with a Basic-level member's privilege inheritance. Set the Append to Account privilege to Deep since Basic privileges apply only to the user's business unit.
 
