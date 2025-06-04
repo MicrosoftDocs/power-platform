@@ -26,7 +26,7 @@ Enable document management for specific entities to store related records in Sha
   
 [!INCLUDE[proc_permissions_system_admin](../includes/proc-permissions-system-admin.md)] To check your security role, see [View your user profile](/powerapps/user/view-your-user-profile). If you don’t have the correct permissions, contact your system administrator.
 
-### [Modern admin center](#tab/new)
+### [New admin center](#tab/new)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
