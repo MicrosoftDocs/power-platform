@@ -10,8 +10,7 @@ ms.topic: reference
 search.audienceType: 
   - developer
 contributors:
- - JimDaly
- - singhguru2001us
+ - skotapalle
 ---
 # Catalog item submission document reference
 
