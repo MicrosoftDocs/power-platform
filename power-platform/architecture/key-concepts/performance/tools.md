@@ -1,5 +1,5 @@
 ---
-title: Measure and Maintain Power Platform solution performance
+title: Measure and maintain Power Platform solution performance
 description: Discover tools and best practices to monitor, analyze, and optimize your solutions. Improve reliability and user experience today.
 #customer intent: As a Power Platform user, I want to monitor and optimize solution performance so that I can ensure reliability and a positive user experience.
 author: manuelap-msft
