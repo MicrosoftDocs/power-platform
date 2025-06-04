@@ -1,11 +1,14 @@
 ---
 title: Power Apps Test Engine features (preview)
 description: Summary of Power Apps Test Engine features.
-author: grant-archibald-ms
-ms.author: grarchib
+author: pvillads
+ms.author: pvillads
+ms.subservice: test-engine
 ms.date: 05/19/2025
 ms.reviewer: jdaly
 ms.topic: article
+contributors:
+- grant-archibald-ms
 ---
 
 # Power Apps Test Engine features (preview)
