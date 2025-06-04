@@ -10,7 +10,7 @@ ms.topic: article
 contributors:
  - JimDaly
  - pvillads
- - grant-archibald-ms 
+ - grant-archibald-ms
 ---
 
 # Test model-driven applications with Test Engine (preview)
