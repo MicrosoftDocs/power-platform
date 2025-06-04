@@ -105,7 +105,7 @@ Or, purchase and assign per-app passes: [About Power Apps per app plans](about-p
 
 1. In the navigation pane, select **Manage**.
 
-1. In the **Manage** pane, select **Environments**, and then choose the environment to which you want to associate the security group.
+1. In the **Manage** pane, select **Environments**, and then choose the environment with which you want to associate the security group.
 
 1. Select **Edit**.
 
