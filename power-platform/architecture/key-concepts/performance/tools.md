@@ -17,7 +17,7 @@ ms.custom:
 
 # Measure and maintain Power Platform solution performance
 
-This article gives an overview of key tools for monitoring and optimizing Power Platform solution performance. Each tool has unique features that help you diagnose issues, analyze usage patterns, and make sure your apps, flows, and data services run efficiently. Depending on the business criticality or risk of a solution, you use a different mix of tools to help prevent potential issues. Learn more examples in the `Recommendations across solution complexity` section below.
+This article gives an overview of key tools for monitoring and optimizing Power Platform solution performance. Each tool has unique features that help you diagnose issues, analyze usage patterns, and make sure your apps, flows, and data services run efficiently. Depending on the business criticality or risk of a solution, you use a different mix of tools to help prevent potential issues. Learn more examples in the **[Recommendations across solution complexity](#recommendations-across-solution-complexity)** section.
 
 ## Monitoring and reporting tools and processes
 
@@ -134,4 +134,4 @@ In addition to the tools in the low and medium-risk sections, high risk and/or h
 ## Next step
 
 > [!div class="nextstepaction"]
-> [Power Platform performance monitoring tools](tools.md)
+> [Identify and mitigate canvas apps performance issues](ux-strategies.md)
