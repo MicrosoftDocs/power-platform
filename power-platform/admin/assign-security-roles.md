@@ -8,11 +8,15 @@ ms.author: paulliew
 ms.custom: "admin-security"
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 01/02/2025
+ms.date: 6/4/2025
 search.audienceType: 
   - admin
 contributors:
   - jordanchodakWork
+ms.contributors:
+  - paulliew
+  - sericks
+  - syalandur
 
 ---
 # Assign a security role to a user  
@@ -42,7 +46,7 @@ For more information about the difference between [!INCLUDE[pn_MS_Online_Service
   
 Follow these steps to assign a security role.
 
-### [New admin center](#tab/classic)
+### [New admin center](#tab/new)
 
 1. Sign in to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com) as a System Administrator. 
 
