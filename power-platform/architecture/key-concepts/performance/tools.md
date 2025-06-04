@@ -100,11 +100,11 @@ Tools like **Power Apps Monitor**, **Power Automate Analytics**, and **Dataverse
 
 
 
-[Learn more Power Apps Monitor](#power-apps-monitor)
+[Learn more about Power Apps Monitor](#power-apps-monitor)
 
-[Learn more Power Automate Analytics](#power-automate-analytics)
+[Learn more about Power Automate Analytics](#power-automate-analytics)
 
-[Learn more Dataverse Analytics](#dataverse-analytics)
+[Learn more about Dataverse Analytics](#dataverse-analytics)
 
 Together, these tools help you pinpoint what's working well and where improvements can be made, enabling you to proactively optimize your solutions for better performance, reliability, and user satisfaction.
 
@@ -112,9 +112,9 @@ Together, these tools help you pinpoint what's working well and where improvemen
 
 In addition to the tools in the low and medium-risk sections, high risk and/or high business criticality solutions need to enable the teams that support these apps, the developers that react quickly to fix issues that pop up, and enable your organization to reach their business goals with data and reporting metrics to support them. Performance plays a key role in this process, as any app that is perceived as slow, as taking too long, or otherwise as a roadblock to a business process will quickly find itself disused and abandoned by its user base.
 
-[Learn more Azure Application Insights](#azure-application-insights)
+[Learn more about Azure Application Insights](#azure-application-insights)
 
-[Learn more Performance testing and benchmarking](#performance-testing-and-benchmarking)
+[Learn more about Performance testing and benchmarking](#performance-testing-and-benchmarking)
 
 
 
