@@ -11,7 +11,7 @@ ms.date: 06/03/2025
 ms.custom:
   - ai-gen-docs-bap
   - ai-gen-description
-  - ai-seo-date:04/02/2025
+  - ai-seo-date:06/03/2025
 ---
 
 # Identify and mitigate canvas apps performance issues
