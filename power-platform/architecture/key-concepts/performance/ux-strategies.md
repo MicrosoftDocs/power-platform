@@ -15,38 +15,37 @@ ms.custom:
 ---
 # User experience strategies for mitigating performance concerns
 
-Canvas-based Power Apps provide a flexible way to build custom applications. However, performance issues can arise if apps aren't optimized properly. This guide outlines practical strategies to enhance user experience by mitigating common performance concerns.
+Canvas-based Power Apps let you build custom applications flexibly. But performance issues can happen if you don't optimize your app. This article gives practical strategies to improve user experience and address common performance concerns.
 
-When determining what standards you should use for the responsiveness of your apps, keep
-the following table in mind, which outlines user perception of response times in applications:
+When you set standards for app responsiveness, use the following table. It shows how users perceive response times in applications:
 
 | Response time | User perception                             |
 |---------------|---------------------------------------------|
-| 0–100 ms      | Instantaneous; user perceives no delay      |
+| 0–100 ms      | Instantaneous; the user doesn't notice any delay      |
 | 100–300 ms    | Slight perceptible delay; feels responsive  |
 | 300 ms–1 sec  | Noticeable delay; user perceives slight lag |
 | 1–5 sec       | Acceptable delay; user remains engaged      |
 | 5–10 sec      | Noticeable wait; user attention may wander  |
 | 10 sec or more| Significant delay; user may become frustrated or abandon task |
 
-*[Source: Nielsen Norman Group - Response Times: The 3 Important Limits](https://www.nngroup.com/articles/response-times-3-important-limits/)*
+*[Source: Nielsen Norman Group - Response Times: The three Important Limits](https://www.nngroup.com/articles/response-times-3-important-limits/)*
 
 ## Set performance targets
 
-If you ask 5 people their opinion on what consitutes good app performance, you'll get 5 different answers. In order to ensure that your solutions start and stay performant, your best bet is to set your performance goals as early in the development cycle as possible:
+Good app performance means different things to different people. Set your performance goals early in the development cycle to make sure your solution starts and stays fast:
 
-- **Benchmark the current process**: If your solution is going to replace an old app or process, first aim to improve upon the status quo in one way or another. If replacing an app, ensure that your new app loads as quickly as before, and allows the user to get their tasks done more quickly as before. At a minimum, app performance should be maintained.
-- **Don't cause new problems**: If replacing a business process, your benchmark should focus on the timing of the full cycle and ensure that your solution is clearing bottlenecks to allow your users to get work done more quickly, while not creating new bottlenecks with the new process. Ensure that it is easy for users to understand how your new solution fits into their existing processes.
+- **Benchmark the current process**: If your solution replaces an old app or process, aim to improve on the current experience. If you're replacing an app, make sure your new app loads as quickly as the old one and lets users finish tasks faster. At a minimum, keep app performance the same.
+- **Don't cause new problems**: If you're replacing a business process, focus your benchmark on the timing of the full cycle. Make sure your solution removes bottlenecks so users finish work faster, and doesn't create new ones. Make it easy for users to see how your new solution fits into their existing process.
 
 Learn more about [defining performance targets](/power-platform/well-architected/performance-efficiency/performance-targets).
 
 ## Perform regular performance audits
 
-During the solution development process ensure that there are performance tests and/or checks throughout, so that any potential issues are caught before too much rework will be required:
+During solution development, run performance tests and checks throughout, so you catch potential issues before you need to do too much rework:
 
-- **Match the production data size**: As closely as possible, ensure that your development data sources properly reflect the size and scope of production data. If a close match is not possible, test your solution with a small amount of data to test functionality and measure the performance of your solution with varying levels of data, 100 rows, 1000 rows, and 10,000 rows for example, and compare the performance of your solution at each data size. If the performance of your solution is trending upwards with data size, extrapolate how that performance would be at true production size, and ensure that stays within your agreed upon paramters.
-- **Track your solution performance over time**: Track your performance test results, and compare results across testing runs. If you are running these tests often, you will be better able to trace what changes were made since the last test, and therefore where fixes should be made. Big performance changes caused by solution changes in either direction (good or bad) should be tracked, and included as a part of "lessons learned"/"best practices" guidnace for future solutions.
-- **Test on target devices**: Regularly test your app on actual user devices to ensure consistent performance across different platforms and network conditions.
+- **Match the production data size**: Make your development data sources reflect the size and scope of production data as closely as possible. If you can't match production data, test your solution with small data sets to check functionality. Measure performance with different data sizes, like 100, 1,000, and 10,000 rows, and compare results. If performance increases with data size, estimate how it performs at production scale and make sure it stays within your agreed parameters.
+- **Track your solution performance over time**: Track your performance test results and compare them across test runs. If you run these tests often, trace what changed since the last test and where to make fixes. Track big performance changes, whether good or bad, and include them in your lessons learned or best practices for future solutions.
+- **Test on target devices**: Regularly test your app on actual user devices to make sure it performs consistently across different platforms and network conditions.
 
 Learn more about [continuous performance optimization](/power-platform/well-architected/performance-efficiency/continuous-performance-optimize).
 
@@ -54,14 +53,14 @@ Learn more about [continuous performance optimization](/power-platform/well-arch
 
 Loading large amounts of data can significantly slow down your app:
 
-- **Limit data retrieval**: Loading more data than your user needs at one time can slow down your app and overwhelm the user with unnecessary information. Instead, show a clear, manageable amount of data by default, and let users easily search or filter to find exactly what they're looking for. This approach keeps your app fast, user-friendly, and focused on what's actually useful.
-- **Avoid delegation warnings**: Ensure that the row limit for delegation warnings in any canvas app is set very low, to 5 or 10. This will ensure that any data call that cannot be delegated is flagged in the formula bar, allowing the app developer to be purposeful on allowing potentially non-delegated queries, and not be unaware of the issue because the amount of data returned from the development data source is not enough to trigger the default warning limit value.
+- **Limit data retrieval**: Loading more data than your user needs at one time can slow down your app and overwhelm the user with unnecessary information. Instead, show a clear, manageable amount of data by default, and let users easily search or filter to find exactly what they're looking for. This approach keeps your app fast, user-friendly, and focused on what's useful.
+- **Avoid delegation warnings**: Ensure that the row limit for delegation warnings in any canvas app is set low, to five or ten. This ensures that any data call that can't be delegated is flagged in the formula bar, allowing the app developer to be purposeful on allowing potentially non-delegated queries, and not be unaware of the issue because the amount of data returned from the development data source isn't enough to trigger the default warning limit value.
 
-  Non-delegated queries can be acceptable if there is a constant, small amount of data to be returned, as in configuration data or other small data sets.
+  Non-delegated queries can be acceptable if there's a constant, small amount of data to be returned, as in configuration data or other small data sets.
 
 Learn more about [optimizing your solution's logic](/power-platform/well-architected/performance-efficiency/optimize-code).
 
 ## Next step
 
 > [!div class="nextstepaction"]
-> [Identifying and Mitigating Canvas App Performance Issues](top-issues.md)
+> [Identifying and mitigating canvas app performance issues](top-issues.md)
