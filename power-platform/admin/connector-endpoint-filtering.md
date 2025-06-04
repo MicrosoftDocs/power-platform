@@ -3,7 +3,7 @@ title: Connector endpoint filtering (preview)
 description: Learn how to configure connector endpoint filtering in DLP policies to control app, flow, and chatbot connections.
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 04/29/2025
+ms.date: 06/04/2025
 ms.subservice: admin
 author: mikferland-msft
 ms.author: miferlan
@@ -39,7 +39,8 @@ Connector endpoint filtering allows admins to govern which specific endpoints ma
 - SQL Server (includes using SQL Server Connector to access Azure Synapse data warehouse)
 - Azure Blob Storage
 - SMTP
-- DesktopFlow - Browser Automation
+- Browser Automation
+- UI automation
 
 When a maker tries to connect their app, flow, or chatbot to a blocked endpoint, they encounter a DLP error message.
 
@@ -175,7 +176,7 @@ Allow access to only the Azure subscriptions page within `https://management.azu
 2. Deny `https://management.azure.com/*`
 3. Deny `*`
 
-### DesktopFlow - Browser Automation
+### Browser Automation
 
 This feature lets you control which web pages a desktop flow accesses in Power Automate for desktop. The endpoints are represented in either URL format or web page name format, and you can use wildcards for dynamic URL or page name matching. Validation occurs during "Launch Web Browser" or "Go to web page" actions before a desktop flow proceeds with browser interactions.
 
@@ -188,6 +189,21 @@ Allow access to all web pages except for the URL `https://www.microsoft.com/` an
 
 1. Deny `https://www.microsoft.com/`
 1. Deny `*powerplatform*`
+1. Allow `*`
+
+### UI Automation
+
+This feature allows you to define which applications and screens a desktop flow can interact with in Power Automate for desktop. Endpoints can be specified using either the application's process name or its display name, and wildcards are supported for flexible matching. Validation is triggered during any action within the UI automation group, before the desktop flow proceeds with screen interactions. It checks the Process and/or Name attributes in the selector of the targeted UI elements.
+
+> [!NOTE]
+> Endpoint filtering is not enforced if the relevant attributes (Process or Name) are missing from the selector.
+
+The following is an example scenario:
+
+To allow access to all applications and screens except those where the Process or Name attribute is either exactly `Calculator` or contains the string `Java`, you would configure the following rules:
+
+1. Deny `Calculator`
+1. Deny `*Java*`
 1. Allow `*`
 
 ## PowerShell support for endpoint filtering
