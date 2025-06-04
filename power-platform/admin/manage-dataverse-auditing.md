@@ -99,7 +99,7 @@ You must have System Administrator or System Customizer role or equivalent permi
 
 Auditing can be configured manually through the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) and the [Power Apps portal](https://make.powerapps.com/). Auditing can also be configured programmatically. Learn more at [Auditing overview](/power-apps/developer/data-platform/auditing/overview).
 
-To meet your external and internal auditing, compliance, security, and governance policies that are common to many enterprises, auditing for the following tables are turned on automatically when you turn on auditing through the [**Compliance** page](security/compliance.md) page. You must be assigned to the Power Platform or Dynamics 365 admin role to turn on or off auditing through the **Compliance** page.
+To meet your external and internal auditing, compliance, security, and governance policies that are common to many enterprises, auditing for the following tables are turned on automatically when you turn on auditing through the [Compliance page](security/compliance.md). You must be assigned to the Power Platform or Dynamics 365 admin role to turn on or off auditing through the **Compliance** page.
 
 You can audit other tables, where applicable, but note that there are some core tables that audit is turned on by default. 
 
@@ -148,7 +148,7 @@ You can audit other tables, where applicable, but note that there are some core 
 
 ### Turn on auditing
 
-The following steps describe how to turn on auditing for an environment. 
+The following steps describe how to turn on auditing for an environment:
 
 # [New admin center](#tab/new)
  
@@ -163,7 +163,7 @@ The following steps describe how to turn on auditing for an environment.
 
 # [Classic admin center](#tab/classic)
  
-1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. From the left-side menu, select **Security > Compliance**.
 1. Select the **Auditing** tile.
 1. Select the environment that you want to turn on auditing.
