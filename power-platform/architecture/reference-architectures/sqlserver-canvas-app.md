@@ -47,7 +47,10 @@ Many previous implementations of Power Apps with SQL Server use a gateway, but t
 
 ## Use cases  
 
-Power Apps lets organizations create custom user experiences. If you're building a new app and storage, consider using Dataverse because it has features that make building an enterprise-grade app easy. If you have data in SQL Server that can't be moved, or your organization requires SQL Server, Power Apps over SQL Server can be a good choice. Use Power Apps over SQL Server if the data can't be moved, existing apps still depend on that data, and you need to move those apps to the cloud to modernize them.  
+Power Apps lets organizations create custom user experiences. 
+- If you're building a new app and storage, consider using Dataverse because it has features that make building an enterprise-grade app easy.
+- If you have data in SQL Server that can't be moved, or your organization requires SQL Server, Power Apps over SQL Server can be a good choice. 
+- If the data can't be moved, use Power Apps over SQL Server , existing apps still depend on that data, and you need to move those apps to the cloud to modernize them.  
 
 ## Considerations  
 
@@ -88,7 +91,7 @@ Power Apps:
 - [Understanding delegation](/power-apps/maker/canvas-apps/delegation-overview)  
 - [SQL data types and delegation](/power-apps/maker/canvas-apps/connections/sql-connection-overview#power-apps-functions-and-operations-delegable-to-sql-server)  
 
-Connectors
+Connectors:
 
 - [Microsoft SQL Server connector documentation](/connectors/sql/)  
 - [Private virtual network](/power-platform/admin/vnet-support-overview)
