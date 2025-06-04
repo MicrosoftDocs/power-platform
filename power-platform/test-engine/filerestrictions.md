@@ -3,9 +3,12 @@ title: "File access restrictions for Test Engine (preview)"
 description: "Learn about the file restrictions for Test Engine in different operating systems"
 author: snamilikonda
 ms.author: snamilikonda
+ms.subservice: test-engine
 ms.date: 05/19/2025
 ms.reviewer: jdaly
 ms.topic: reference
+contributors:
+- grant-archibald-ms
 ---
 
 # File access restrictions for Test Engine (preview)
