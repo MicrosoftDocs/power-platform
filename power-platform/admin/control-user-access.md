@@ -10,6 +10,12 @@ ms.contributors:
   - pmantha
   - paulliew
   - sericks
+  - syalandur
+contributors:
+  - praveenmantha
+  - paulliew
+  - sericks007
+  - syalandur24
 ms.custom: "admin-security"
 ms.component: pa-admin
 ms.topic: how-to
