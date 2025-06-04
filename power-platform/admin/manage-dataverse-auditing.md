@@ -99,11 +99,9 @@ You must have System Administrator or System Customizer role or equivalent permi
 
 Auditing can be configured manually through the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) and the [Power Apps portal](https://make.powerapps.com/). Auditing can also be configured programmatically. Learn more at [Auditing overview](/power-apps/developer/data-platform/auditing/overview).
 
-### Turn on auditing
+To meet your external and internal auditing, compliance, security, and governance policies that are common to many enterprises, auditing for the following tables are turned on automatically when you turn on auditing through the [**Compliance** page](security/compliance.md) page. You must be assigned to the Power Platform or Dynamics 365 admin role to turn on or off auditing through the **Compliance** page.
 
-You must be assigned to the Power Platform or Dynamics 365 admin role to turn on or off auditing through the [**Compliance** page](security/compliance.md).
-
-To meet your external and internal auditing, compliance, security, and governance policies that are common to many enterprises, auditing for the following tables are turned on automatically when you turn on auditing through the **Compliance** page. You can audit other tables, where applicable, but note that there are some core tables that audit is turned on by default. 
+You can audit other tables, where applicable, but note that there are some core tables that audit is turned on by default. 
 
 |Category  |Table  |
 |-----------|-----------|
@@ -148,6 +146,10 @@ To meet your external and internal auditing, compliance, security, and governanc
 |Security|fieldsecurityprofile|
 |Security|businessunit|
 
+### Turn on auditing
+
+The following steps describe how to turn on auditing for an environment. 
+
 # [New admin center](#tab/new)
  
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
@@ -158,7 +160,6 @@ To meet your external and internal auditing, compliance, security, and governanc
 1. Review the list of Dataverse data and Dynamics 365 apps entities.
 1. Review and update the **Event log retention** by selecting the dropdown.
 1. Select the period that meets your data retention policy.
-
 
 # [Classic admin center](#tab/classic)
  
@@ -220,7 +221,7 @@ This task requires the System Administrator or System Customizer role or equival
 ---
 
 > [!NOTE]
-> It's recommended that you use the Security page auditing option to set the retention policy. This provides the flexibility to apply the retention policy to existing logs. 
+> We recommend that you use the Security page auditing option to set the retention policy. This provides the flexibility to apply the retention policy to existing logs. 
 
 Learn more in the [Configure organization settings](/power-apps/developer/data-platform/auditing/configure#configure-organization-settings).
 
@@ -228,7 +229,7 @@ Learn more in the [Configure organization settings](/power-apps/developer/data-p
 
 This task requires the System Administrator or System Customizer role or equivalent permissions.
 
-This feature allows you to quickly turn on auditing for multiple tables (entities) simultaneously. The grouping of tables corresponds to a Dynamics 365 application, for example Sales tables correspond to the Sales Hub app.
+This feature allows you to quickly turn on auditing for multiple tables (entities) simultaneously. The grouping of tables corresponds to a Dynamics 365 application for example, Sales tables correspond to the Sales Hub app.
 
 1. In the web app, go to **Settings** (![Settings.](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
 
@@ -329,7 +330,7 @@ System administrators or customizers can change the default audit settings for t
 
 1. Select **Save**.
 
-    If you have turned on the **Read Logs** in the environment's audit settings, you need to turn on the **Single record auditing. Log a record when opened** and **Multiple record auditing. Log all records displayed on an opened page** auditing settings to see the read audit logs from this table. Learn more at [Activity logging](/power-platform/admin/enable-use-comprehensive-auditing).
+    If you turned on the **Read Logs** in the environment's audit settings, you need to turn on the **Single record auditing. Log a record when opened** and **Multiple record auditing. Log all records displayed on an opened page** auditing settings to see the read audit logs from this table. Learn more at [Activity logging](/power-platform/admin/enable-use-comprehensive-auditing).
 
 1. Publish the customization. To publish for a single table, choose the table, such as Account, and then select **Publish** on the toolbar. 
 
@@ -398,7 +399,7 @@ Learn more in [Dataverse developer guide: Retrieve the history of audited data c
 
 ### Delete the change history for a record
 
-Dataverse auditing supports the deletion of a single record's entire audit history. This is useful when responding to a customer's request to delete their data.
+Dataverse auditing supports the deletion of a single record's entire audit history. This feature is useful when responding to a customer's request to delete their data.
 
 Users must have the **Delete Audit Record Change History** privilege to perform this action.
 
@@ -455,7 +456,7 @@ The following table describes the options available to delete audit logs.
 
    |Delete logs  |Description  |System job name   |
    |---------|---------|---------|
-   |By table      | Select one or more tables for which you want to delete audit logs. By default, all tables in the environment will be shown, whether they contain audit data or not.         | Delete logs for [number of] tables.         |
+   |By table      | Select one or more tables for which you want to delete audit logs. By default, all tables in the environment is shown, whether they contain audit data or not.         | Delete logs for [number of] tables.         |
    |Access logs, by people and systems      | Delete all access logs. This deletes all logs for all users and systems.         | Delete access logs.         |
    |All logs up to and including the selected date      | Delete logs including the date selected.             | Delete all logs before and including [timestamp].         |
 
@@ -525,15 +526,15 @@ If there's a problem with a system job, you can cancel, postpone, pause, or resu
   
 > [!TIP]
 >
-> 1. If a system job fails, you can view the details about what steps failed and what the problems were.First, open the system job record. To display details about system job failures, move your pointer over the warning symbols.
+> 1. If a system job fails, you can view the details about what steps failed and what the problems were. First, open the system job record. To display details about system job failures, move your pointer over the warning symbols.
 > 2. To view system job failures in a format that you can print or copy and paste, select the **Print** button.
 
 > [!NOTE]
-> You can't make changes to the status of a system job that has been completed or canceled.
+> You can't make changes to the status of a system job that is completed or canceled.
 
 ## Monitor the status of audit delete jobs
 
-To monitor the status of audit delete jobs, you can use the **Bulk Record Deletion** view in the Power Platform admin center. 
+To monitor the status of audit delete jobs, you can use the **Bulk deletion** view in the Power Platform admin center. 
 
 # [New admin center](#tab/new)
  
