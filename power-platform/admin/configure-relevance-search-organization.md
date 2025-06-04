@@ -4,7 +4,7 @@ description: Configure Dataverse search for your environment to improve search r
 author: marianaraujo 
 ms.component: pa-admin
 ms.topic: get-started
-ms.date: 04/24/2025
+ms.date: 05/29/2025
 ms.subservice: admin
 ms.custom: NewPPAC
 ms.author: maaraujo
@@ -27,16 +27,11 @@ With Dataverse search enabled, a search box is always available at the top of ev
 
 ## Learn about the benefits of Dataverse search
 
-Dataverse search helps you quickly find what you're looking for in model-driven apps. As part of its search capabilities, indexed data is used across generative AI experiences&mdash;such as Copilot experiences&mdash;to fetch records and use them as answers. Dataverse search is how Microsoft allows rich search and AI-powered experiences across different products that use Dataverse as one of the data sources, subject to Copilot feature availability.
+Dataverse search helps you quickly find what you're looking for in model-driven apps. 
 
 Dataverse search has these benefits:
 
 - **Fast and accurate search**. Provides a precise and quick search experience for model-driven apps, and performance that's superior to [categorized search](/power-apps/user/quick-find#multiple-table-quick-find-categorized-search).
-
-- **Generative AI experiences**. Provides generative AI-powered search and work experiences using Copilot when Dataverse tables and files are uploaded in Microsoft Copilot Studio,
-
-    > [!NOTE]
-    > Searching across images isn't supported.
 
 - **Suggested results as you type**. Finds what you're looking for and shows you the top results, as you type.
 
@@ -56,12 +51,6 @@ Dataverse search has these benefits:
   
 For more information about Dataverse search, see [Search for tables and rows by using Dataverse search](/powerapps/user/relevance-search).
 
-### Dataverse search composition
-
-Dataverse search consists of two separate indexes that power different experiences:
-
-- **Dataverse search structured index** is the index powering experiences across structured or tabular data stored in Dataverse. Examples of this index include search indexes over tables Dataverse like Accounts, Contact, custom tables, Dataverse relevance search, and others.
-- **Dataverse search unstructured index** is the index powering experiences across unstructured data stored in Dataverse. Examples of this index include search indexes over files uploaded in Microsoft Copilot Studio custom agents, customer service agents, and others.
 
 ### Availability and language support
 
@@ -77,26 +66,16 @@ Dataverse search consists of two separate indexes that power different experienc
 
 ## Enable Dataverse search
 
-Dataverse search is an opt-out feature, set to **On** for all new production environments or **Default** for all other new environment types by default. We recommend turning on Dataverse search so users have a superior search experience in model-driven apps, and to allow generative AI-powered experiences like Copilot.
+Dataverse search is an opt-out feature, set to **On** for all new production environments. We recommend turning on Dataverse search so users have a superior search experience in model-driven apps.
 
-- When set to **On**, you see the search bar in the header of all model-driven apps in the environment enabling your users to have a global-search experience and enjoy the benefits of searching and working with AI.
-- When set to **Default**, you don't see the search bar in the header of all model-driven apps in the environment. However, generative-AI experiences using Dataverse data remain available.
-- When set to **Off**, you don't see the search bar in the header of all model-driven apps in the environment and generative-AI experiences using Dataverse data are limited.
+- When set to **On**, you see the search bar in the header of all model-driven apps in the environment allowing your users to have a global-search experience.
+- When set to **Off**, you don't see the search bar in the header of all model-driven apps in the environment.
 
-Note: The enablement of these AI experiences can occur via the following methods:
-
-- Turning on the Copilot feature in Power Platform admin center
-- Adding a Dataverse table or uploading a File onto a Microsoft Copilot Studio agent
-- Creating a Microsoft Copilot Studio skill
-- Prompting a Microsoft Copilot Studio agent requiring files or Dataverse knowledge
-
-Dataverse search storage consumption is only reported when there's indexed data.
 
 Individual users aren't able to switch to [Quick Find search, formerly known as categorized search](/powerapps/user/quick-find). Tables must be included in the application you're using with Dataverse search. Be sure that any table you want users to search on are included in your application.
 
 > [!IMPORTANT]
-> Dataverse search is automatically allowed (turned **On**) to ensure business continuity if you already use Dataverse search or any of the related AI-powered experiences. If you're using your own encryption key, you can turn off Dataverse search after enabling early access of 2021 release wave 2 in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-> Dataverse search is set to **Default** if you aren't currently using Dataverse search or any of the related AI-powered experiences. When set to default, you only trigger data indexing when you turn on the Copilot setting, create a Microsoft Copilot Studio skill, or upload a Dataverse table or a file to an agent.
+> If you're using your own encryption key, you can turn off Dataverse search after allowing early access of 2021 release wave 2 in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 
 > [!NOTE]
 > Dataverse search doesn't support lifecycle operations such as create, delete, backup, recover, copy, and reset. If such an operation, be sure to turn on Dataverse search again.
@@ -123,7 +102,7 @@ Take these steps to turn on Dataverse search:
 1. Select **Save** to apply the change.
 ---
 
-Turning on Dataverse search enables global-search and generative-AI experiences in all of your model-driven apps within that environment. You can't turn it off in specific apps.
+Turning on Dataverse search allows global-search in all of your model-driven apps within that environment. You can't turn it off in specific apps.
 
 When you provision a Dataverse search index, an indication that provisioning is in progress is visible. Once index provisioning is complete, it may take anywhere between an hour or more to complete a full sync for average size organizations, to a couple of days for large organizations.
 
@@ -136,7 +115,7 @@ Setting up Dataverse search after turning it on in the Power Platform admin cent
 
 1. Select the _searchable tables_ for Dataverse search.
 
-2. Review the columns that will be searched, the columns that will be displayed, and the filter conditions that will be applied in model-driven Power Apps as detailed in the [_Select searchable fields and filters for each table_](#select-searchable-fields-and-filters-for-each-table) section.
+2. Review the columns that will be searched, the columns that are displayed, and the filter conditions that are applied in model-driven Power Apps as detailed in the [_Select searchable fields and filters for each table_](#select-searchable-fields-and-filters-for-each-table) section.
 
 3. Be sure to include the tables allowed for Dataverse search in the model-driven app. Use the app designer to verify table inclusion in an app's components. For more information, go to [Add or edit model-driven app components](/powerapps/maker/model-driven-apps/add-edit-app-components#add-a-component).
 
@@ -189,7 +168,7 @@ The table's Quick Find view drives the searchable table fields and filters used 
 
 - The **Find columns** on a Quick Find view define the searchable fields in the Dataverse search index. Text fields such as _Single Line of Text_ and _Multiple Lines of Text_, _Lookups_, and _Option Sets_ are searchable. **Find columns** of all other data types are ignored.
   > [!NOTE]
-  > Currency fields must be added to the **Find Columns** so the currency symbol that is visible on the record will be returned in the search results. If the currency field isn't added to the search index, users see the currency symbol localized according to their language settings.
+  > Currency fields must be added to the **Find Columns** so the currency symbol that is visible on the record are returned in the search results. If the currency field isn't added to the search index, users see the currency symbol localized according to their language settings.
 
 - The **View columns** on a Quick Find view define the fields that are displayed in model-driven apps' search results page when the matched results are returned.
 
@@ -234,7 +213,7 @@ To edit the searchable fields of a table:
 
 > [!NOTE]
 >
-> - Changes made to the Dataverse search configuration or to the searchable data may take up to 15 minutes to appear in the search service. It may take up to an hour or more to complete a full sync for average size organizations, and a couple of days for very large size organizations.
+> - Changes made to the Dataverse search configuration or to the searchable data may take up to 15 minutes to appear in the search service. It may take up to an hour or more to complete a full sync for average size organizations, and a couple of days for large size organizations.
 >
 > - The maximum search-term size is 1,024 characters.
 >
@@ -242,7 +221,7 @@ To edit the searchable fields of a table:
 >
 > - If you change the length of text in a table column and the column is set to **Simple Search view**, the import may not be successful and you may see this error: _Length isn't valid because this is an indexed attribute and hence cannot have size greater than 1,700_.
 >
-> - The indexed attribute can't extend beyond 1700 bytes. If the corresponding column is registered in the **Quick Find view**, remove the corresponding column from the **Quick Find view** and try to re-export after a time interval. If you change or delete a **Quick Find view** setting, it may take up to 24 hours to be reflected in the index, as it's a once-a-day maintenance job for the on-premises product. For more information, go to [Maximum capacity specifications for SQL Server](/sql/sql-server/maximum-capacity-specifications-for-sql-server?view=sql-server-ver16&preserve-view=true).
+> - The indexed attribute can't extend beyond 1,700 bytes. If the corresponding column is registered in the **Quick Find view**, remove the corresponding column from the **Quick Find view** and try to re-export after a time interval. If you change or delete a **Quick Find view** setting, it may take up to 24 hours to be reflected in the index, as it's a once-a-day maintenance job for the on-premises product. For more information, go to [Maximum capacity specifications for SQL Server](/sql/sql-server/maximum-capacity-specifications-for-sql-server?view=sql-server-ver16&preserve-view=true).
 >
 > - Updates to calculated fields and lookups don't automatically sync in Dataverse search. Data is refreshed whenever a field configured for Dataverse search is updated in a record.
 >
@@ -330,12 +309,7 @@ This section provides answers to frequently asked questions about Dataverse sear
 
 ### How can I find out how much storage Dataverse search consumes?
 
-In the past, a table called, _RelevanceSearch_ reported on the storage consumed by Dataverse search at the environment level. Now, two new reporting tables are available for both Database and file storage consumption. The two new tables are:
-
-- **DataverseSearch-StructuredIndex** for Database storage indexing.
-- **DataverseSearch-UnstructuredIndex** for Files storage indexing.
-
-Respectively, Dataverse search is reported as part of database and files storage consumption in the **Summary** tab. You can also view Dataverse search in the **Environment** report in Power Platform admin center or **Capacity** report:
+There's a table called **RelevanceSearch** that reports on the storage consumed by Dataverse search at the environment level. Respectively, Dataverse search is reported as part of database storage consumption in the **Summary** tab. You can also view Dataverse search in the **Environment** report in Power Platform admin center or **Capacity** report:
 
 ## [New admin center](#tab/new)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
@@ -348,115 +322,17 @@ Respectively, Dataverse search is reported as part of database and files storage
 ## [Classic admin center](#tab/classic)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, expand **Resources**, and then select **Capacity**.
-1. On the **Capacity** page, go to the **Dataverse** tab, select an environment, and then seelct the **Chart** icon for details.
+1. On the **Capacity** page, go to the **Dataverse** tab, select an environment, and then select the **Chart** icon for details.
 1. In the navigation pane, expand **Billing**, then select **Licenses**.
 1. On the **Licenses** page, go to the **Environments** tab, then select an environment to view.
 ---
 
-### What entitlements are consumed by Dataverse search?
-
-Dataverse search consumes against the [Dataverse entitlements available within your tenant](whats-new-storage.md).
-
-- Dataverse search structured index consumption counts towards Dataverse database capacity.
-- Dataverse search unstructured index consumption counts towards Dataverse file capacity.
-
-### How do I manage Dataverse search
-
-Dataverse search storage is already reported and charged at the environment level as a table called _RelevanceSearch_ and charged by its GB capacity.
-
-There are three states associated with this setting:
-
-#### On
-
-- All experiences are allowed.
-- All respective data is indexed immediately.
-- Dataverse search storage consumption reflects reported indexed data.
-
-#### Default
-
-- All experiences are allowed except the global search bar in model-driven applications.
-- Respective data is only indexed when triggered:
-
-  - On Power Platform admin center Copilot setting being turned on
-  - On adding a Dataverse table or uploading a file into a Microsoft Copilot Studio agent
-  - On Microsoft Copilot Studio skill creation
-  - On first Copilot query call (submitted prompt)
-
-- Dataverse search storage consumption is only reflected once there's reported indexed data.
-
-#### Off
-
-When you turn off Dataverse search:
-
-- You limit all the turned-on experiences.
-- You allow your respective indexed data to get deleted after 12 hours.
-- You don't have any Dataverse search storage consumption.
-
-> [!NOTE]
->
-> Dataverse search is turned **On** if you happen to use any of the above features in the existing environment (and for any new production environment) and **Default** by default for any other scenario or new environment.
-
-We recommend turning on Dataverse search so users can enjoy a better search experience in model-driven apps and appreciate the benefits of generative AI capabilities. As an Environment admin, you can opt out of this feature for the purpose of managing your environments by selecting the option **Off**.
-
-### How much will Dataverse search cost?
-
-Dataverse search is charged at the same rate as _Database Capacity_ and _File Capacity_, respectively, based on content-storage consumption. Content-storage consumption doesn't include the storage for the Dataverse indexed data.
-
-Dataverse search = Database capacity + Files Capacity (Measured in gigabytes)
-
-### When does Dataverse search start getting consumed against my storage entitlements?
-
-Starting April 7, 2025, Dataverse search starts drawing from Dataverse storage entitlements as detailed in this article.
+We recommend turning on Dataverse search so users can enjoy a better search experience in model-driven apps. As an environment admin, you can opt out of this feature bu managing your environments by selecting the option **Off**.
 
 > [!IMPORTANT]
 > Dataverse search counts towards the different storage entitlements you have in the tenant.
 
-### What happens if Dataverse search is turned off?
-
-If you turn off Dataverse search for longer than 12 hours, all indexed Dataverse data gets deleted, and the global-search and generative-AI experiences that depend on it are limited or unusable for all users in the environment.
-
-Environment admins have 12 hours to turn the feature back on with no implications.
-
-- During 12 hours:
-
-  - All Dataverse indexed data is stored.
-  - Dataverse search consumption is reported.
-
-- After 12 hours:
-
-  - All Dataverse indexed data is deleted.
-  - No Dataverse search consumption is reported.
-  - Dependent experiences, such as published agents and published model-driven applications, are limited.
-
-### How do I re-enable Dataverse search?
-
-If you turn off Dataverse search and want to re-enable it, you have two options:
-
-- Select **On** if you wan to immediately retrigger indexes across all enabled experiences for them to work accordingly and to resume Dataverse search consumption reporting.
-- Select **Default** if you want Dataverse search consumption only reported when indexes are triggered.
-
-### What's the impact of turning Dataverse search off across dependent experiences?
-
-|Feature   |Maker experience  |End-User experience  |
-|----------|------------------|---------------------|
-|Microsoft Copilot Studio agent – add knowledge     | <ul><li> Can't upload files. </li><li>Can't select Dataverse tables. </li><li>Agent doesn't provide results until Dataverse is enabled for the environment (Warning banner with call to action for environment's admin to enable it).  | <ul><li>Agent doesn't provide results until Dataverse is enabled for the environment (default to fallback answer).   |
-|Microsoft Copilot Studio agent – Copilot chat  | <ul><li>Agent doesn't provide results until Dataverse is enabled for the environment (Warning banner with call to action to connect with environment's admin to enable it).  |<ul><li>Agent doesn't provide results until Dataverse is enabled for the environment (default to fallback answer).  |
-|Model-driven applications – Dataverse search  | <ul><li>Search bar isn't visible in model-driven applications.  | <ul><li>Same as maker experience. |
-|Model-driven applications – Copilot chat  |<ul><li> Can use model-driven app for record management (add, edit, delete, etc.). </li><li> Agent doesn't provide results until Dataverse is enabled for the environment (Warning banner with call to action to connect with environment's admin to enable it).  |<ul><li>Same as maker experience.|
-|Prompt actions with AI Builder/Custom AI prompts in Power Apps, Microsoft Copilot Studio, and Power Automate  | <ul><li>If enabled in the settings, prompts aren't grounded with Dataverse knowledge.|<ul><li> N/A|
-
-### What actions can admins take?
-
-To ensure optimal operations for the organization, admins with the proper permissions can either increase capacity storage or reduce Dataverse search by performing these steps:
-
-1. Go to the Power Platform admin center and turn off Copilot experiences in model-driven apps
-2. Disable Copilot experiences in Microsoft Copilot Studio
-3. Remove knowledge in Microsoft Copilot Studio
-4. Disable Copilot in Dynamics 365 applications
-5. Disable AI prompts
-6. Go to the Power Platform admin center and turn Dataverse search _Off_. It's strongly recommended to NOT turn off Dataverse search because it negatively impacts all dependent generative-AI experiences in your different applications, and all users using them.
-
-### See also  
+### Related content
 
 - [Search for tables and rows by using Dataverse search](/powerapps/user/relevance-search)
 - [Configure facets and filters](/power-apps/user/facets-and-filters)

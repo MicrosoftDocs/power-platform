@@ -1,7 +1,7 @@
 ---
 title: Tenant-to-tenant migrations 
 description: Learn about the impact of migrating an environment from one tenant to another. 
-ms.date: 02/11/2025
+ms.date: 05/21/2025
 ms.topic: concept-article
 author: matapg007
 contributors:
@@ -207,51 +207,18 @@ TenantToTenant-ManageMigrationRequest -MigrationId {MigrationId from above comma
 ```
 Once a request is approved, the admin of the destination tenant can notify the admin of the source tenant to proceed with the next step of the migration.
 
-### Generate a shared access signature (SAS) URL (source admin)
-This step involves creating the SAS URL, which is used later for uploading the user mapping file. Run the following PowerShell command, substituting **EnvironmentId** with the actual environment ID.
-
-```PowerShell
-GenerateResourceStorage-PowerAppEnvironment –EnvironmentName {EnvironmentId}
-```
-
-> [!Important]
-> Make sure that the environment is **not** in **Admin Mode** and the user has the **Basic User** role assigned in the environment.
-
-#### Sample output
-
-```PowerShell
-Code        :
-Description :
-Headers     :
-Error       :
-Errors      :
-Internal    : @{sharedAccessSignature=https://dynamics.blob.core.windows.net/20240604t000000z73e18df430fe40059290dsddc25d783?sv=2018-03-28&sr=c&si=SASpolicyXXRRRX}
-```
-
 ### Upload the user mapping file (source admin)
-The next step involves transferring the user mapping file to the previously established SAS URL. To accomplish this, run the following commands in Windows PowerShell ISE, ensuring that the parameters **SASUri** and **FileToUpload** contain the appropriate information about your environment. This step is crucial for accurately uploading mapping of the users in the system.
+This step involves creating the SAS URL, which is used later for uploading the user mapping file. Run the following PowerShell command, substituting **EnvironmentId** with the actual environment ID and **FileLocation** with the actual file location.
 
 > [!Note]
-> The installation of the Azure module is required to run the script mentioned. Complete the following steps with Windows PowerShell ISE.
+> While passing the **FileLocation** value, you must provide the parameter with the usermapping file name (usermapping.csv):
+> `C:\Filelocation\usermapping.csv`.
 
-```Windows PowerShell ISE
-$SASUri ="Update the SAS Uri from previous step”
-$Uri = [System.Uri] $SASUri
- 
-$storageAccountName = $uri.DnsSafeHost.Split(".")[0]
-$container = $uri.LocalPath.Substring(1)
-$sasToken = $uri.Query
- 
-# File to upload
-# Note that the file name should be usermapping.csv (case sensitive) with comma separated values.
-$fileToUpload = 'C:\filelocation\usermapping.csv'
- 
-# Create a storage context
-$storageContext = New-AzStorageContext -StorageAccountName $storageAccountName -SasToken $sasToken
- 
-# Upload the file to Azure Blob Storage
-Set-AzStorageBlobContent -File $fileToUpload -Container $container -Context $storageContext -Force
+```PowerShell
+TenantToTenant-UploadUserMappingFile –EnvironmentName {EnvironmentId} -UserMappingFilePath {FileLocation}
 ```
+
+Be sure to copy the value of the **Read Only UserMapping File ContainerUri** returned by the command. This SAS URI is required as the **-ReadOnlyUserMappingFileContainerUri** parameter in the **TenantToTenant-PrepareMigration** command.
 
 ### Prepare the environment migration (source admin)
 The following step involves conducting comprehensive validations to ensure that every user listed in the user mapping file is verified and currently active within the target tenant. 
@@ -266,8 +233,7 @@ TenantToTenant-PrepareMigration
 ```
 
 > [!Note]
-> While passing the **SASUri** value, you must provide the parameter like this:
-> `https://dynamics.blob.core.windows.net/20240604t000000z73e18df430fe40059290dsddc25d783`.
+> The **SASUri** value must be provided from the output of the **TenantToTenant-UploadUserMappingFile** command.
 
 #### Sample output
 
@@ -298,7 +264,7 @@ TenantToTenant-GetMigrationStatus -MigrationId {MigrationId}
 After fixing user mapping errors, you need to reupload the user mapping file using the same SAS URI.
   
 ### Download the error report (source admin)
-If any errors are in the user mapping file, there's an option to download an error report. This can be done by directly copying and pasting the **SasUrl** provided in the **Tenant-To-Tenant-GetMigrationStatus** command or by using the following commands that use the SAS URI from the previous step to check status and the desired location to download the error report.
+If any errors are in the user mapping file, there's an option to download an error report. This can be done by directly copying and pasting the **SasUrl** provided in the **Tenant-To-Tenant-GetMigrationStatus** command to your internet browser or by using the following commands that use the SAS URI from the previous step to check status and the desired location to download the error report.
 
 Complete the following steps:
 
@@ -329,6 +295,7 @@ The **MigrationId** can be viewed using the **TenantToTenant-ViewMigrationReques
 TenantToTenant-MigratePowerAppEnvironment
 -MigrationId {MigrationId}
 -TargetTenantId {TargetTenantId}
+-SecurityGroupId {SecurityGroupId}
 ```
 ### Get status (source admin)
 
@@ -391,14 +358,39 @@ The following steps must be completed for each website in the environment.
 After completing all of the above steps and the migration, you may validate the environment in the target tenant. Later, you can delete the source environment in the Power Platform admin center.
 
 ### Frequently asked questions
-**Are background operations enabled during tenant-to-tenant migration?**
+
+#### Are background operations enabled during tenant-to-tenant migration?
 
 Administration mode is enabled during tenant-to-tenant migration, therefore background operations don't run. Learn more in [Administration mode](admin-mode.md).
 
-**Can we migrate all users of the Dataverse organization?**
+#### Can we migrate all users of the Dataverse organization?
 
 We can migrate all users of the Dataverse organization only if users exist in the destination tenant. For example:
 
 `user001@source.com`, `user001@destination.com`
 
 `user002@source.com`, `user002@destination.com`
+
+#### What environments are supported for migration?
+
+Only production and sandbox environments are supported. Default, developer, trial, and Teams environments aren't supported.
+
+#### Will the environment physically move to the new tenant?
+
+No. The environment remains in place, but the Dataverse organization is moved to the destination tenant. It's no longer part of the source tenant and is managed under the new environment in the destination tenant.
+
+#### Are there any components that aren't fully supported?
+
+Leaern more in [Before you get started](#before-you-get-started) to understand which components are supported and which components aren't supported.
+
+#### What happens to mailbox configurations?
+
+If the mapped user (mentioned in the user mapping file) has a mailbox in the destination tenant, it's automatically configured. Otherwise, manual reconfiguration is required.
+
+#### How do I initiate a migration?
+
+The source tenant’s Dynamics 365 or Power Platform admin must submit a request using PowerShell commands with the environment name, ID, and tenant ID. Refer to the commands above.
+
+#### Is there a self-serve UI option?
+
+No, currently we don't support the Power Platform admin center UI for tenant-to-tenant migration. It can only be done by PowerShell.

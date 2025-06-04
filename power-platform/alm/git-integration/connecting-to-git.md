@@ -119,6 +119,6 @@ Now you can synchronize changes across multiple environments.
 
 ## Next steps
 
-After your environments and solutions are connected to Git, you can start making changes to your solutions and committing those changes to the repository. For more information about source control operations, go to [Source control repository operations (preview)](source-control-operations.md).
+After your environments and solutions are connected to Git, you can start making changes to your solutions and committing those changes to the repository. For more information about source control operations, go to [Source control repository operations](source-control-operations.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

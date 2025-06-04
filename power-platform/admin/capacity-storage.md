@@ -1,7 +1,7 @@
 ---
 title: Dataverse capacity-based storage details  
 description: Learn about the Microsoft Dataverse capacity-based storage model.
-ms.date: 03/21/2025
+ms.date: 05/29/2025
 ms.topic: concept-article
 author: marianaraujo 
 ms.subservice: admin
@@ -78,8 +78,8 @@ All tables of Dataverse, including system tables, are included in the storage ca
 
 |Number  |Description |
 |---------|---------|
-|(1)   |**Storage capacity usage**  <ul><li>**File and database**: The following tables store data in file and database storage: <ul><li>Attachment</li><li>AnnotationBase</li><li>Any custom or out-of-the-box table that has columns of datatype file or image (full size)</li><li>Any table that is used by one or more installed Insights applications and [ends in *- Analytics*](#what-are-tables-ending-in---analytics-in-my-capacity-report) </li> </ul></li><ul><li>WebResourceBase</li></ul><ul><li>RibbonClientMetadataBase</li></ul><li>**Log**: The following tables are used: <ul><li>AuditBase</li><li>PlugInTraceLogBase</li><li>Elastic tables</li></ul><li>**Database only**: All other tables are counted for your database including the Dataverse search index</li></ul>  |
-|(2)    |**Storage capacity, by source** <ul><li>**Org (tenant) default**: The default capacity given at the time of sign up </li><li>**User licenses**: More capacity added for every user license purchased</li><li>**Additional storage**: Any extra storage you bought </li><li>**Total**: Total storage available </li><li>**View self-service sources**: Learn more at [View self-service license amounts and storage capacity](view-self-service-capacity.md)</li></ul>      |
+|(1)   |**Storage capacity usage**  <ul><li>**File and database**: The following tables store data in file and database storage: <ul><li>Attachment</li><li>AnnotationBase</li><li>Any custom or out-of-the-box table that has columns of datatype file or image (full size)</li><li>Any table that is used by one or more installed Insights applications and [ends in *- Analytics*](#what-are-tables-ending-in---analytics-in-my-capacity-report) </li> </ul></li><ul><li>WebResourceBase</li></ul><ul><li>RibbonClientMetadataBase</li></ul><li>**Log**: The following tables are used: <ul><li>AuditBase</li><li>PlugInTraceLogBase</li><li>Elastic tables</li></ul><li>**Database only**: All other tables are counted for your database</li></ul>  |
+|(2)    |**Storage capacity, by source** <ul><li>**Org (tenant) default**: The default capacity given at the time of sign-up </li><li>**User licenses**: More capacity added for every user license purchased</li><li>**Additional storage**: Any extra storage you bought </li><li>**Total**: Total storage available </li><li>**View self-service sources**: Learn more at [View self-service license amounts and storage capacity](view-self-service-capacity.md)</li></ul>      |
 |(3)     |**Top storage usage, by environment**: The environments that consume the most capacity        |
 |(4)  |  **Add-ons**:  Your organization's add-on usage details. Learn more at [View capacity add-ons in Power Platform admin center](capacity-add-on.md#view-capacity-add-ons-in-power-platform-admin-center). |
 
@@ -214,27 +214,6 @@ In the **Usage per storage type** tile, you can view the consumption of your dat
 #### Consumption per table 
 In the **Consumption per table** section, you can view the amount of storage consumed by each Dataverse table. To see table consumption for a specific storage type, select **Database**, **File**, or **Log** in the **Usage per storage type tile**. Select the  table name for the consumption trend, with the option to track daily usage trends for up to the past three months. 
 
-## Dataverse search consumption
-
-Storage consumed by Dataverse search was already reported at the environment level as a table called **RelevanceSearch**. This table is available for both database and file storage consumption and renamed to match accordingly:
-
-- **DataverseSearch-StructuredIndex** for database storage indexing 
--	**DataverseSearch-UnstructuredIndex** for files storage indexing
- 
-Respectively, Dataverse search is reported as part of database and files storage consumption in the **Summary** tab. Dataverse search can also be viewed in the **Environment** report in Power Platform admin center or **Capacity** report:
-
--	New admin center: **Licensing** > **Capacity add-ons** > **Dataverse** tab (Select **Chart** icon)
--	Classic admin center: **Resources** > **Capacity** > **Dataverse** tab 
--	New admin center: **Licensing** > **Dataverse** > **Environments** tab (Table view in main page) 
--	Classic admin center: **Billing** > **Licenses** > **Dataverse** > **Environment** tab 
-
-## Dataverse search entitlements
-
-Dataverse search consumes against the [Dataverse entitlements available within your tenant](whats-new-storage.md):
-
-- Dataverse search structured index consumption counts toward Dataverse database capacity.
--	Dataverse search unstructured index consumption counts toward Dataverse file capacity.
-
 ### Allocate capacity for an environment 
 
 In the **Dataverse** tab, you can allocate capacity to a specific environment. Once capacity is allocated, you can view the status of your environments to determine whether they are within capacity or in an overage state.
@@ -259,11 +238,11 @@ We're making changes for what happens when an organization's storage capacity is
 
 Notifications for capacity approaching storage limits are triggered when any of the three storage capacities (database, file, or log) have less than 15% of space available. Another warning notification that admin operations could be impacted is sent when any of the three storage capacities have less than 5% of space available. The final tier of notification triggers when the tenant is "in overage" (storage usage exceeds capacity entitlements), which alerts the admin that the following operations are no longer available until the overage is resolved:
 
-- Create a new environment (requires minimum 1 GB capacity available)
+- Create a new environment (requires minimum 1-GB capacity available)
 - Copy an environment
 - Restore an environment
-- Convert a trial environment to paid (requires minimum 1 GB capacity available)
-- Recover an environment (requires minimum 1 GB capacity available)
+- Convert a trial environment to paid (requires minimum 1-GB capacity available)
+- Recover an environment (requires minimum 1-GB capacity available)
 - Add Dataverse database to an environment
 
 > [!NOTE]
@@ -292,7 +271,7 @@ You should be within limits for your entitled capacity for database, log, and fi
 |**Log**     |  10 GB       | 5 GB        |
 |**File**     | 400 GB        | 200 GB        |
 
-This tenant is 10 GB over in database usage. Despite having 200 GB excess file storage, the tenant is considered to be in deficit. This tenant should free up storage or purchase more capacity.
+This tenant is 10 GB over in database usage. Despite having 200-GB excess file storage, the tenant is considered to be in deficit. This tenant should free up storage or purchase more capacity.
 
 ### Scenario 2: Log storage is over capacity, overage enforcement
 
@@ -312,7 +291,7 @@ This tenant is 10 GB over in log usage and has only 5 GB available in database c
 |**Log**     |  10 GB       | 5 GB        |
 |**File**     | 200 GB        | 290 GB        |
 
-This tenant is 90 GB over in file usage. Despite having 85 GB available (80 GB database + 5 GB log) in storage capacity, the tenant is considered to be in deficit. This tenant should free up storage or purchase more capacity.
+This tenant is 90 GB over in file usage. Despite having 85 GB available (80-GB database + 5-GB log) in storage capacity, the tenant is considered to be in deficit. This tenant should free up storage or purchase more capacity.
 
 ## Example storage capacity scenario, no overage
 
@@ -344,11 +323,9 @@ We're constantly optimizing Dataverse for ease of use, performance, and efficien
 As part of moving file-type data such as “Annotation” and “Attachment” out from database and into file storage, we periodically reclaim the freed database space. This leads to decreased usage of database capacity, while the table and file data size computations remain unchanged.
 
 
-
-
 ### Do indexes affect database storage usage?
 
-Database storage includes both the database rows and index files used to improve search performance. Indexes, such as Dataverse search, are created and optimized for peak performance and are updated frequently by the system by analyzing data use patterns. No user action is needed to optimize the indexes, as all Dataverse stores have tuning enabled by default. A fluctuation in database storage can be represented by an increased or decreased number of indexes on the database. Dataverse is continually being tuned to increase efficiency and incorporate new technologies that improve user experience and optimize storage capacity.  Common causes for an increase in index size are:
+Database storage includes both the database rows and index files used to improve search performance. Indexes are created and optimized for peak performance and are updated frequently by the system by analyzing data use patterns. No user action is needed to optimize the indexes, as all Dataverse stores have tuning enabled by default. A fluctuation in database storage can be represented by an increased or decreased number of indexes on the database. Dataverse is continually being tuned to increase efficiency and incorporate new technologies that improve user experience and optimize storage capacity.  Common causes for an increase in index size are:
 
 - An organization making use of new functionality (this can be custom, out-of-the-box, or part of an update or solution installation).
 - Data volume or complexity changes.
@@ -365,22 +342,9 @@ Because custom Quick Find lookups are created by an admin in the org, these can 
 - Removing unneeded columns or tables.
 - Eliminating multiline text columns from inclusion.
 
-### What actions can admins take?
-To ensure optimal operations for the organization, admins with the proper permissions can either: increase capacity storage or reduce Dataverse search by performing all the steps below.
+### What is the RelevanceSearch table and how can I reduce it?
 
-1. Go to the Power Platform admin center and turn off Copilot experiences in model-driven apps. Learn more in [Enable Copilot for model-driven apps in your environment](/power-apps/maker/model-driven-apps/add-ai-copilot#enable-copilot-for-model-driven-apps-in-your-environment).
-1. Turn off Copilot experiences in Microsoft Copilot Studio. Learn more in [Create and delete agents](/microsoft-copilot-studio/authoring-first-bot?tabs=web).
-1. Delete knowledge in Microsoft Copilot Studio. Learn more in [Edit, view, or delete knowledge sources](/microsoft-copilot-studio/knowledge-edit-source).
-1. Turn off Copilot in Dynamics 365 applications. Learn more in [Uninstall a Copilot for Finance add-in by using Microsoft 365 admin center](/copilot/finance/get-started/disable-finance-addin#uninstall-a-copilot-for-finance-add-in-by-using-microsoft-365-admin-center), [Uninstall the Microsoft 365 Copilot for Sales app](/microsoft-sales-copilot/disable-viva-sales), and [Turn on AI features in Copilot for Service](/microsoft-copilot-service/copilot-admin-teams).
-1. Turn off AI prompts. Learn more in [Administer AI Builder](/ai-builder/administer).
-1. Go to the Power Platform Admin Center and turn Dataverse search **Off**. Learn more in [Enable Dataverse search](configure-relevance-search-organization.md#enable-dataverse-search).
- 
-    > [!Note]
-    > We strongly recommended that you do NOT perform this step as it directly impacts all dependent generative AI experiences in your different applications, and all users using them. 
-
-### What is the DataverseSearch table and how can I reduce it?
-
-The DataverseSearch table is the cumulative storage used by the Dataverse search index. It includes the data from all searchable, retrievable, and filterable fields of the tables you  indexed for your environment. Learn more in [Configure Dataverse search to improve search results and performance](configure-relevance-search-organization.md). You can reduce the table size by removing Find Columns, View Columns, and Filter conditions for one or more tables. You can turn off Dataverse search to remove all indexed data. It might take up to 24 hours after reducing the number of indexed columns or turning off Dataverse search.
+The **RelevanceSearch** table is the cumulative storage used by the global search. It includes the data from all searchable, retrievable, and filterable fields of the tables you indexed for your environment. Learn more in [Configure Dataverse search to improve search results and performance](configure-relevance-search-organization.md). You can reduce the table size by removing find columns, view columns, and filter conditions for one or more tables.
 
 ### I just bought the new capacity-based licenses. How do I provision an environment by using this model?
 
