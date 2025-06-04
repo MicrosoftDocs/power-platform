@@ -13,7 +13,11 @@ search.audienceType:
   - admin
 contributors:
   - jordanchodakWork
+  - paulliew
+  - sericks007
+  - syalandur24
 ms.contributors:
+  - jordanchodak
   - paulliew
   - sericks
   - syalandur
