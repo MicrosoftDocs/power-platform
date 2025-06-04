@@ -55,17 +55,20 @@ Azure Application Insights is a monitoring service that integrates with Power Pl
 
 To set up Application Insights, create an instance in the Azure portal. Then, configure your Power Platform solution or related components to send telemetry data to it—this can involve adding instrumentation code or setting up connectors. After setup, use the Application Insights dashboard to visualize trends, set up alerts, and drill into specific issues. This helps you keep your app performing well and quickly fix problems.
 
-### Performance testing and benchmarking
-
-Performance testing simulates real-world usage of your Power Platform solution to see how it behaves under different conditions, like multiple users or large data volumes. This helps you find how your solution scales and where it can struggle as demand increases. Benchmarking compares your solution's performance against predefined standards or previous versions to measure improvements or regressions.
-
-Run performance testing manually by having users do typical tasks and measuring response times, or use automated tools to simulate load and capture metrics. Regular testing and benchmarking help keep your solution responsive and reliable as it evolves, and provide concrete data to guide optimization.
 
 ### Solution Checker
 
 Solution Checker is a built-in tool in Power Platform that scans your solutions for common performance, reliability, and security issues. It analyzes your customizations like plugins, workflows, and configurations and gives a report with actionable recommendations to improve efficiency and compliance with best practices.
 
 To use Solution Checker, go to your solution in the Power Apps portal, select **Solution Checker**, and run the analysis. The tool generates a detailed report highlighting issues and suggesting fixes, like optimizing queries or refactoring code. Regularly run Solution Checker to catch potential problems early and keep your solutions of high quality.
+
+### Performance testing and benchmarking
+
+Performance testing simulates real-world usage of your Power Platform solution to see how it behaves under different conditions, like multiple users or large data volumes. This helps you find how your solution scales and where it can struggle as demand increases. Benchmarking compares your solution's performance against predefined standards or previous versions to measure improvements or regressions.
+
+Run performance testing manually by having users do typical tasks and measuring response times, or use automated tools to simulate load and capture metrics. Regular testing and benchmarking help keep your solution responsive and reliable as it evolves, and provide concrete data to guide optimization.
+
+
 
 ### Distributed tracing
 
@@ -91,6 +94,8 @@ We recommend ensuring that Inefficient delay loading within the Apps Checker is 
 This can quickly become a tangled web of references that are hard to undo if they aren't handled as you go. To remedy these issues, insure that any shared values between screens are stored as variables, collections, or named functions.
 
 In addition, any instances of delegated queries or accessibility issues should be considered and minimized where possible to ensure that your app will continue to run, even as data use and your userbase changes over time.
+
+[Learn more about Power Apps Checker](#power-apps-checker)
 
 ### Medium-risk solutions
 

@@ -1,20 +1,26 @@
 ---
-title: User Experience Strategies for Mitigating Performance Concerns
-description: Exploring UX patterns that can help mitigate the impact of performance issues
-author: ghurlman
-ms.author: grhurl
-ms.date: '4/23/2025'
-ms.topic: best-practice
+title:  User experience strategies for mitigating performance concerns
+description: Discover practical ways to improve Power Apps performance and keep your apps responsive. Learn how to set targets and optimize data.
+#customer intent: As a Power Platform user, I want to learn strategies to improve app performance so that my apps stay responsive and users have a better experience.
+author: manuelap-msft
+ms.author: mapichle
+ms.reviewer: jhaskett-msft
 ms.subservice: architecture-center
+ms.topic: overview
+ms.date: 06/04/2025
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-description
+  - ai-seo-date:04/02/2025
 ---
-# User Experience Strategies for Mitigating Performance Concerns
+# User experience strategies for mitigating performance concerns
 
 Canvas-based Power Apps provide a flexible way to build custom applications. However, performance issues can arise if apps aren't optimized properly. This guide outlines practical strategies to enhance user experience by mitigating common performance concerns.
 
 When determining what standards you should use for the responsiveness of your apps, keep
 the following table in mind, which outlines user perception of response times in applications:
 
-| Response Time | User Perception                             |
+| Response time | User perception                             |
 |---------------|---------------------------------------------|
 | 0–100 ms      | Instantaneous; user perceives no delay      |
 | 100–300 ms    | Slight perceptible delay; feels responsive  |
@@ -25,7 +31,7 @@ the following table in mind, which outlines user perception of response times in
 
 *[Source: Nielsen Norman Group - Response Times: The 3 Important Limits](https://www.nngroup.com/articles/response-times-3-important-limits/)*
 
-## Set Performance Targets
+## Set performance targets
 
 If you ask 5 people their opinion on what consitutes good app performance, you'll get 5 different answers. In order to ensure that your solutions start and stay performant, your best bet is to set your performance goals as early in the development cycle as possible:
 
@@ -44,7 +50,7 @@ During the solution development process ensure that there are performance tests 
 
 Learn more about [continuous performance optimization](/power-platform/well-architected/performance-efficiency/continuous-performance-optimize).
 
-## Reduce Data Load
+## Reduce data load
 
 Loading large amounts of data can significantly slow down your app:
 
