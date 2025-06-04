@@ -95,6 +95,9 @@ There are three levels where auditing can be configured: an environment, table, 
 
 To turn on user access auditing (log access) or activity logging (Read logs), auditing must be turned on at the environment-level. The option to turn on activity logging is only visible when the minimum Office licensing requirements are met.
 
+> [!NOTE]
+> User access or activity logging is sent to Purview for production environments only.
+
 You must have System Administrator or System Customizer role or equivalent permissions to turn on or off auditing.
 
 Auditing can be configured manually through the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) and the [Power Apps portal](https://make.powerapps.com/). Auditing can also be configured programmatically. Learn more at [Auditing overview](/power-apps/developer/data-platform/auditing/overview).
@@ -199,7 +202,7 @@ This task requires the System Administrator or System Customizer role or equival
    |--------------------|---------------------|
    | Start Auditing   | Start or stop auditing.    |
    | Log access | Log whenever the system is accessed, generally by signing in.  |
-   | Read logs  | Logs are sent to the [Microsoft Purview portal](https://compliance.microsoft.com/auditlogsearch). User access or activity logging is sent to Purview for production environments only.|
+   | Read logs  | Logs are sent to the [Microsoft Purview compliance portal](https://compliance.microsoft.com/auditlogsearch).|
 
 
 # [New admin center](#tab/new)
@@ -362,21 +365,21 @@ Users must have the View Audit History privilege to see the Audit History of a r
 
    :::image type="content" source="media/dataverse-audit-select-filter.png" alt-text="Use the filter to select what to see history for":::
 
-## Use the Audit summary view
+## Use the Audit Summary view
 
-The Audit summary view is a comprehensive list of all audit logs in an environment. By filtering on various columns, users of the Audit summary view can understand what happened in the environment over time. It helps to answer questions such as "What actions did a user perform and when?", "Who deleted a particular record?", or "Who changed a user's role?".
+The Audit Summary view is a comprehensive list of all audit logs in an environment. By filtering on various columns, users of the Audit Summary view can understand what happened in the environment over time. It helps to answer questions such as "What actions did a user perform and when?", "Who deleted a particular record?", or "Who changed a user's role?".
 
-Users must have the View Audit summary privilege to see the Audit summary view.
+Users must have the View Audit Summary privilege to see the Audit Summary view.
 
-There are two ways to get to the **Audit summary** page:
+There are two ways to get to the **Audit Summary** page:
 
 - From the environment's **Apps** menu, select the **Power Platform Environment Settings** app.
-- From the app, select the **Settings** icon on the banner, select **Advanced Settings**, and select **System > Auditing > Audit summary view**.
+- From the app, select the **Settings** icon on the banner, select **Advanced Settings**, and select **System > Auditing > Audit Summary view**.
 
   > [!NOTE]
   > The **Record** column filter doesn't work and will be removed in the future. The filter options **Equals** and **Does not equal** of the **Entity** column filter don't show any table values. To filter by entity, you can use the **Contains** option and enter the table name. 
 
-### Delete audit logs 
+## Delete audit logs 
 
 1. In the Auditing card, select **Delete Logs**.
 
@@ -397,13 +400,13 @@ There are two ways to get to the **Audit summary** page:
 
 Learn more in [Dataverse developer guide: Retrieve the history of audited data changes](/power-apps/developer/data-platform/auditing/retrieve-audit-data).
 
-### Delete the change history for a record
+## Delete the change history for a record
 
 Dataverse auditing supports the deletion of a single record's entire audit history. This feature is useful when responding to a customer's request to delete their data.
 
 Users must have the **Delete Audit Record Change History** privilege to perform this action.
 
-The deletion of a record's audit history can be done in a model-driven application's Audit History and in the environment's **Audit summary** view.
+The deletion of a record's audit history can be done in a model-driven application's Audit History and in the environment's **Audit Summary** view.
 
 ### Delete the change history for a record in the Audit History tab of a record 
 
@@ -433,7 +436,7 @@ The deletion of a record's audit history can be done in a model-driven applicati
 
 1. Select **Delete** to confirm.
 
-### Reduce log storage: Delete audit logs – legacy process
+## Reduce log storage: Delete audit logs – legacy process
 
 When you turn on Dataverse auditing, your apps create audit logs to store changes to the records and user access. You can delete audit logs when they're no longer needed to free up log capacity space.
 
@@ -448,7 +451,7 @@ When you turn on Dataverse auditing, your apps create audit logs to store change
 > [!NOTE]
 > You can only delete the oldest audit log in the system. To delete more than one audit log, repeat delete the oldest available audit log until you have deleted enough logs.
 
-### Reduce log storage: Delete audit logs – new process
+## Reduce log storage: Delete audit logs – new process
 
 When you turn on Dataverse auditing, your apps create audit logs to store changes to the records and user access. You can delete audit logs when they're no longer needed to free up log capacity space.
 
@@ -462,6 +465,8 @@ The following table describes the options available to delete audit logs.
 
 > [!WARNING]
 > When you delete audit logs, you can no longer view the audit history for the tables, user access, period covered by that audit log.
+
+For Unified Interface, in the upper-right corner, select **Settings** (![Settings.](media/settings-gear-icon.png "Settings")) > **Advanced Settings** > **Settings**.
 
 # [New admin center](#tab/new)
 
@@ -486,11 +491,13 @@ The following table describes the options available to delete audit logs.
    >
    > To monitor the status of audit delete jobs, see the next section.
 
-## Monitor system jobs 
+## Monitoring system jobs 
 
 <!-- this content is copied from monitor-manage-system-jobs topic -->
 
 Several features use system jobs to perform tasks automatically, including workflows, import, and duplicate detection, running independently or in the background. You can monitor them to ensure that they run smoothly or complete successfully.
+
+For Unified Interface, in the upper-right corner, select **Settings** (![Settings.](media/settings-gear-icon.png "Settings")) > **Advanced Settings** > **Settings**.
 
 # [New admin center](#tab/new)
  
