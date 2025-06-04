@@ -3,18 +3,20 @@ title: Manage Dataverse auditing
 description: Configure Dataverse auditing to log changes to customer records, user access, operations on records, and security roles. This feature meets external and internal auditing, compliance, security, and governance policies.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 03/31/2025
+ms.date: 06/04/2025
 author: paulliew 
 ms.subservice: admin
 ms.author: paulliew 
 ms.reviewer: sericks 
+ms.contributors:
+  - lsuresh
+contributors:
+  - lavanyapg
 search.audienceType: 
   - admin
 ---
 
 # Manage Dataverse auditing
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 The Dataverse auditing feature is designed to meet the external and internal auditing, compliance, security, and governance policies that are common to many enterprises. Dataverse auditing logs changes that are made to customer records in an environment with a Dataverse database. Dataverse auditing also logs user access through an app or through the SDK in an environment.
 
@@ -149,15 +151,28 @@ To meet your external and internal auditing, compliance, security, and governanc
 |Security|fieldsecurityprofile|
 |Security|businessunit|
 
+# [New admin center](#tab/new)
+ 
+1. Sign in to the [Power Platform admin center](https://aka.ms/ppac) as an admin (Dynamics 365 admin or Microsoft Power Platform admin).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**, and then choose the environment that you want to enable this feature for.
+1. Select **Settings** > **Product** > **Features**.
+1. Turn **On** the **Record ownership across business units** switch.
+1. Select **Save**.
+
+
+# [Classic admin center](#tab/classic)
+ 
 1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. From the left-side menu, select **Security**.
+1. From the left-side menu, select **Security > Compliance**.
 1. Select the **Auditing** tile.
 1. Select the environment that you want to turn on auditing.
-1. Select the **Turn on auditing** switch.
+1. Select **Set up auditing**. In the **Auditing** dialog box, select **Turn on auditing**.
 1. Review the list of Dataverse data and Dynamics 365 apps entities.
 1. Review and update the **Event log retention** by selecting the dropdown.
 1. Select the period that meets your data retention policy.
 
+---
       > [!NOTE]
       > When the audit retention period is set to **Forever**, logs aren't deleted. When the audit retention period is set to any other value, logs are deleted continuously starting at the time an audit record exceeds the time defined in the retention policy.
       >
@@ -198,7 +213,7 @@ This task requires the System Administrator or System Customizer role or equival
       >
       > Each audit log is stamped with the currently active retention period. **Changing the retention period here doesn't change the retention period for already existing records.** The new retention period is applied to all new records created after the retention policy was changed. For example, assume the retention period is changed from 30 days to 90 days. Audit records that were created prior to the change are deleted in the background after 30 days. Audit records that were created after the change are deleted in the background after 90 days.
 
-5. Select **Save**.
+4. Select **Save**.
 
 Learn more in the [Configure organization settings](/power-apps/developer/data-platform/auditing/configure#configure-organization-settings).
 
@@ -280,24 +295,24 @@ System administrators or customizers can change the default audit settings for t
   
 1. Sign in to [Power Apps](https://make.powerapps.com) using your System Administrator or System Customizer credentials.
 
-2. Select the environment for which you want to configure auditing.
+1. Select the environment for which you want to configure auditing.
 
    > [!NOTE]
    > We recommend that you manage the audit configuration as part of a solution. This allows you to easily find your customizations, apply your own solution published prefix, and export your solution for distribution to other environments. Learn more about solutions in [Use a solution to customize](../alm/use-solutions-for-your-customizations.md). When using a solution, add all tables you want to configure for auditing to your solution, then perform steps 3-8 before saving and publishing your solution.
 
-3. Select **Dataverse** > **Tables**.
+1. Select **Dataverse** > **Tables**.
 
-4. Select a table.
+1. Select a table.
 
    :::image type="content" source="media/field-security-tables-contact.png" alt-text="Select the Contact table.":::
 
-5. On the command bar, select **Edit**.
+1. On the command bar, select **Edit**.
 
-6. On the command bar, select **Edit table properties**.
+1. On the command bar, select **Edit table properties**.
 
-7. Expand **Advanced options**.
+1. Expand **Advanced options**.
 
-8. Select the **Audit changes to its data** checkbox to turn on auditing for the table.
+1. Select the **Audit changes to its data** checkbox to turn on auditing for the table.
 
    :::image type="content" source="media/dataverse-audit-changes-to-data.png" alt-text="Select Audit changes to its data":::
 
@@ -305,21 +320,21 @@ System administrators or customizers can change the default audit settings for t
   
     Clear the **Audit changes to its data** checkbox to turn off auditing for the table.
 
-10. Select **Save**.
+1. Select **Save**.
 
     If you have turned on the **Read Logs** in the environment's audit settings, you need to turn on the **Single record auditing. Log a record when opened** and **Multiple record auditing. Log all records displayed on an opened page** auditing settings to see the read audit logs from this table. Learn more at [Activity logging](/power-platform/admin/enable-use-comprehensive-auditing).
    
-11. Publish the customization. To publish for a single table, choose the table, such as Account, and then select **Publish** on the toolbar.  
+1. Publish the customization. To publish for a single table, choose the table, such as Account, and then select **Publish** on the toolbar.  
   
 ### Turn on or off auditing for a specific column on a table
   
 1. Under the table for which you want to turn on auditing with specific columns, select **Columns**.  
   
-2. To turn on or off auditing for a single column, open the column and expand the **Advanced options** in the **General** section, and then select or clear the **Enable auditing** option.   
+1. To turn on or off auditing for a single column, open the column and expand the **Advanced options** in the **General** section, and then select or clear the **Enable auditing** option.   
   
-3. Select **Save**.  
+1. Select **Save**.  
   
-4. Publish the customization. To publish for a single table, choose the table, such as Account, and then select **Publish** on the toolbar.  
+1. Publish the customization. To publish for a single table, choose the table, such as Account, and then select **Publish** on the toolbar.  
 
 Learn more in [Dataverse developer guide: Configure auditing > Configure tables and columns](/power-apps/developer/data-platform/auditing/configure#configure-tables-and-columns).
 
@@ -331,11 +346,11 @@ Users must have the View Audit History privilege to see the Audit History of a r
 
 1. Select a record in a model-driven application.
 
-2. Select the **Related** tab and select **Audit History**.
+1. Select the **Related** tab and select **Audit History**.
 
    :::image type="content" source="media/dataverse-audit-select-audit-history.png" alt-text="Select Audit History":::
 
-3. Choose a field in **Filter on** to filter results by a field you want to see the change history.
+1. Choose a field in **Filter on** to filter results by a field you want to see the change history.
 
    :::image type="content" source="media/dataverse-audit-select-filter.png" alt-text="Use the filter to select what to see history for":::
 
@@ -346,6 +361,7 @@ The Audit Summary view is a comprehensive list of all audit logs in an environme
  Users must have the View Audit Summary privilege to see the Audit Summary view.
 
 There are two ways to get to the **Audit Summary** page:
+
 - From the environment's **Apps** menu, select the **Power Platform Environment Settings** app
 - From the app, select the **Settings** icon on the banner, select **Advanced Settings**, and select **System > Auditing > Audit Summary view**.
 
@@ -385,31 +401,31 @@ The deletion of a record's audit history can be done in a model-driven applicati
 
 1. Select a record in a model-driven application.
 
-2. Select the **Related** tab, and then select **Audit History**.
+1. Select the **Related** tab, and then select **Audit History**.
 
    :::image type="content" source="media/dataverse-audit-select-audit-history.png" alt-text="Select Audit History":::
 
-3. In **Filter on**, choose **All fields**, and then select **Delete Change History** to delete all logs pertaining to the selected record.
+1. In **Filter on**, choose **All fields**, and then select **Delete Change History** to delete all logs pertaining to the selected record.
 
    :::image type="content" source="media/dataverse-audit-select-delete-change-history.png" alt-text="Select Delete change history to delete all logs pertaining to the selected record.":::
 
-4. Select **Delete** to confirm.
+1. Select **Delete** to confirm.
 
 ### Delete the change history for a record in the Audit Summary view
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com), and then select an environment.
 
-2. In the Auditing card, select **Delete logs**.
+1. In the Auditing card, select **Delete logs**.
 
-3. Select **View Audit Logs**.
+1. Select **View Audit Logs**.
 
    :::image type="content" source="media/dataverse-audit-select-view-audit-logs.png" alt-text="Select Delete logs":::
 
-4. Select a row in the audit history, and then select **Delete Change History** to delete all logs pertaining to the selected record.
+1. Select a row in the audit history, and then select **Delete Change History** to delete all logs pertaining to the selected record.
 
    :::image type="content" source="media/dataverse-audit-select-delete-change-history-environment.png" alt-text="Select Delete Change History to delete all logs for the selected record.":::
 
-5. Select **Delete** to confirm.
+1. Select **Delete** to confirm.
 
 ## Reduce log storage: Delete audit logs – legacy process
 
@@ -420,11 +436,11 @@ When you turn on Dataverse auditing, your apps create audit logs to store change
 
 1. In the upper-right corner of an app, select **Settings** (![Settings.](media/settings-gear-icon.png "Settings")) > **Advanced Settings** > **Settings** > **Auditing**.
 
-2. Select **Audit Log Management**, and then select **View Audit Logs**.
+1. Select **Audit Log Management**, and then select **View Audit Logs**.
 
-3. Select the oldest audit log, then select **Delete Logs**.
+1. Select the oldest audit log, then select **Delete Logs**.
 
-4. Select **OK** to confirm.
+1. Select **OK** to confirm.
 
 > [!NOTE]
 > You can only delete the oldest audit log in the system. To delete more than one audit log, repeat delete the oldest available audit log until you have deleted enough logs.
@@ -438,9 +454,9 @@ When you turn on Dataverse auditing, your apps create audit logs to store change
 
 1. Sign in to the Power Platform admin center, and then select an environment.
 
-2. Under Auditing, select **Delete logs**.
+1. Under Auditing, select **Delete logs**.
 
-3. Choose how to select logs to delete.
+1. Choose how to select logs to delete.
 
    |Delete logs  |Description  |System job name   |
    |---------|---------|---------|
@@ -450,7 +466,7 @@ When you turn on Dataverse auditing, your apps create audit logs to store change
 
    :::image type="content" source="media/dataverse-audit-select-delete-log-selection.png" alt-text="Select a method to select logs to delete.":::
 
-4. Select **Delete**, and then confirm.
+1. Select **Delete**, and then confirm.
 
    > [!NOTE]
    > Audit logs are deleted in an asynchronous background system job. The duration of the deletion depends on the amount of audit records to be deleted. The current rate is approximately 100 million records per day, or approximately 4 million records per hour.
@@ -467,7 +483,7 @@ Several features use system jobs to perform tasks automatically, including workf
 
    For Unified Interface, in the upper-right corner, select **Settings** (![Settings.](media/settings-gear-icon.png "Settings")) > **Advanced Settings** > **Settings**.
 
-2. Select **Settings** > **Audit and logs** > **System Jobs** to see a grid view of system jobs.
+1. Select **Settings** > **Audit and logs** > **System Jobs** to see a grid view of system jobs.
 
  If there's a problem with a system job, you can cancel, postpone, pause, or resume it. Select a job and then select the **Actions** menu.
   
@@ -497,13 +513,26 @@ Several features use system jobs to perform tasks automatically, including workf
 
 ## Monitor the status of audit delete jobs
 
+To monitor the status of audit delete jobs, you can use the **Bulk Record Deletion** view in the Power Platform admin center. 
+
+# [New admin center](#tab/new)
+ 
+1. Sign in to the [Power Platform admin center](https://aka.ms/ppac) as an admin (Dynamics 365 admin or Microsoft Power Platform admin).
+1. In the navigation pane, select **Manage**.
+1. 
+
+# [Classic admin center](#tab/classic)
+
 1. In the Power Platform admin center, select an environment.
 
-   For Unified Interface, in the upper-right corner, select **Settings** (![Settings.](media/settings-gear-icon.png "Settings")) > **Advanced Settings** > **Settings**.
+1. Select **Settings** > **Data management** > **Bulk deletion**.
 
-2. Select **Settings** > **Data management** > **Bulk deletion**.
+1. Select the system job name to open details about your delete job.
 
-    Select the system job name to open details about your delete job.
+---
+
+> [!NOTE]
+> For Unified Interface, in the upper-right corner, select **Settings** (![Settings.](media/settings-gear-icon.png "Settings")) > **Advanced Settings** > **Settings**.
 
 ## Access audit data using Azure Synapse Link for Dataverse
 
