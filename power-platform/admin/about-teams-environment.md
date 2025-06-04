@@ -140,7 +140,7 @@ Access requires sufficient permissions, such as System Administrator or System C
 
 To change settings for a Dataverse for Teams environment, follow these steps:
 
-#### [Modern admin center](#tab/new)
+#### [New admin center](#tab/new)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
@@ -168,7 +168,7 @@ Select **Save** to apply the changes.
 
 You can specify users in an environment to provide access to Dataverse for Teams environment apps, bots, and data.
 
-#### [Modern admin center](#tab/new)
+#### [New admin center](#tab/new)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
@@ -198,7 +198,7 @@ The list displays users with enabled and disabled statuses who are members of th
 
 To delete a Dataverse for Teams environment, follow these steps:
 
-#### [Modern admin center](#tab/new)
+#### [New admin center](#tab/new)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
@@ -226,7 +226,7 @@ The consumption of capacity by Dataverse for Teams environments won't count towa
 
 To see the consumption of each Dataverse for Teams environment in a tenant, take these steps:
 
-#### [Modern admin center](#tab/new)
+#### [New admin center](#tab/new)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Licensing**.
 1. In the **Licensing** pane, select **Capacity add-ons**.

@@ -16,6 +16,7 @@ contributors:
 ms.contributors:
 - erjost
 ---
+
 # Restore deleted Microsoft Dataverse table records (preview)
 
 [!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
@@ -45,9 +46,7 @@ Sign in to the [Power Platform admin center](https://admin.powerplatform.microso
 # [New admin center](#tab/new)
 
 1. Select **Environments** and open the environment you want.
-1. Select **Settings**.
-1. Select **Product**.
-1. Select **Features**.
+1. Select **Settings** > **Product** > **Features**.
 1. Scroll down to view the **Recycle Bin** settings.
 
    - Turn **On** the **Recycle Bin** setting.
@@ -56,9 +55,6 @@ Sign in to the [Power Platform admin center](https://admin.powerplatform.microso
 1. Select **Save**.
 1. Allow 30 minutes for the system to configure the recycle bin.
   
-   > [!Note]
-   > Only records deleted after the recycle bin feature has been turned on can be restored.
-
 # [Classic admin center](#tab/classic)
 
 1. Select **Environments** and open the environment you want.
@@ -71,8 +67,10 @@ Sign in to the [Power Platform admin center](https://admin.powerplatform.microso
 1. Select **Save**.
 1. Allow 30 minutes for the system to configure the recycle bin.
   
-   > [!Note]
-   > Only records deleted after the recycle bin feature has been turned on can be restored.
+---
+
+> [!NOTE]
+> Only records deleted after the recycle bin feature has been turned on can be restored.
 
 ## View and restore the deleted records in Power Apps
 
@@ -98,6 +96,8 @@ To restore deleted records from the admin center, sign in to the [Power Platform
 1. Select one or more records you wish to restore, and then select **Restore** on the command bar.
 1. Select **OK** to confirm the action to restore.
 
+---
+
 ### Power Platform Environment Settings app
 
 To restore deleted records from the Power Platform Environment Settings app:
@@ -114,7 +114,7 @@ To restore deleted records from the Power Platform Environment Settings app:
 To turn off the recycle bin for a table:
 
 1. Sign in to [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) as a user with the system administrator security role and verify the correct environment is selected.
-1. Select **Tables** and open the table you want. If Tables isn’t in the side panel, select […More](/power-apps/maker/canvas-apps/intro-maker-portal#1--left-navigation-pane) and then select it.
+1. Select **Tables** and open the table you want. If Tables isn't in the side panel, select […More](/power-apps/maker/canvas-apps/intro-maker-portal#1--left-navigation-pane) and then select it.
 1. Select **Properties**, expand **Advanced options**, and clear **Enable recycle bin**. If the check box appears disabled, it means you don't have the permissions to enable the table for recycle bin, or the feature isn't turned on for the environment.
 1. **Config Interval** represents the number of days data is persisted in the Recycle Bin for the table. Setting this value to **-1** uses the environment-default value for this table.
 
