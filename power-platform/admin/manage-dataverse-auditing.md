@@ -370,7 +370,7 @@ Users must have the View Audit summary privilege to see the Audit summary view.
 
 There are two ways to get to the **Audit summary** page:
 
-- From the environment's **Apps** menu, select the **Power Platform Environment Settings** app
+- From the environment's **Apps** menu, select the **Power Platform Environment Settings** app.
 - From the app, select the **Settings** icon on the banner, select **Advanced Settings**, and select **System > Auditing > Audit summary view**.
 
   > [!NOTE]
@@ -486,7 +486,7 @@ The following table describes the options available to delete audit logs.
    >
    > To monitor the status of audit delete jobs, see the next section.
 
-## Monitoring system jobs 
+## Monitor system jobs 
 
 <!-- this content is copied from monitor-manage-system-jobs topic -->
 
