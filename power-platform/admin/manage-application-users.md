@@ -212,3 +212,7 @@ In each of your environments, there's a set of [system-provided application user
 1. Select an application user.
 1. Select **Details** from the command bar to view details of the platform, application user.
 1. Select **Close** to return to the application user list.
+
+---
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
