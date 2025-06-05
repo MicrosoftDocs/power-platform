@@ -2,7 +2,7 @@
 title: Use an autonomous agent in Copilot Studio for document processing
 description: Learn how to use an autonomous agent in Copilot Studio that uses generative AI for document processing.
 #customer intent: As a Copilot Studio maker, I want to use an autonomous agent to process documents.
-author: mapichle  
+author: manuelap-msft 
 ms.subservice: architecture-center  
 ms.topic: example-scenario
 ms.date: 06/05/2025
