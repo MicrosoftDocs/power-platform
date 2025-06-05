@@ -79,7 +79,7 @@ To learn more about **Editor** and **Viewer** permissions on agents, go to [Copi
 > 
 > After sharing rules are set in the Power Platform admin center, it may take up to an hour for them to start getting enforced.
 >
-> Sharing rules in Dataverse for Teams environments do not impact sharing to a Team when you select **Publish to Teams**. However, when a user attempts to share with individuals or groups in a Team other than the one bound to the environment, the sharing limits are enforced. 
+> Sharing rules in Dataverse for Teams environments don't impact sharing to a Team when you select **Publish to Teams**. However, when a user attempts to share with individuals or groups in a Team other than the one bound to the environment, the sharing limits are enforced. 
 
 If a user tries to share a canvas app, solution-aware cloud flow, or agent that contradicts the sharing rules, they're informed as shown.
 
