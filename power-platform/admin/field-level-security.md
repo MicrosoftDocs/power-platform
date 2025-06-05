@@ -38,7 +38,6 @@ Column-level security is available [for most columns](#which-columns-can-be-secu
 1. Optionally, select a [masking rule](create-manage-masking-rules.md).  
 1. [Associate one more existing security profiles](#add-teams-or-users-to-a-column-security-profile-to-control-access), or create one or more new security profiles to grant the appropriate access to specific users or teams.
  
-  
 ## Enable column security
 
 Use the following steps to secure a column:
