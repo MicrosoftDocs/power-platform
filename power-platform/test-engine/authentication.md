@@ -1,14 +1,15 @@
 ---
 title: "Authentication in Power Apps Test Engine (preview)"
 description: "Simple guide to authentication options in Test Engine"
-author: grant-archibald-ms
-ms.author: grarchib
+author: pvillads
+ms.author: pvillads
+ms.subservice: test-engine
 ms.date: 05/19/2025
 ms.reviewer: jdaly
 ms.topic: article
 contributors:
  - JimDaly
- - pvillads
+ - grant-archibald-ms
 ---
 
 # Authentication in Power Apps Test Engine (preview)
