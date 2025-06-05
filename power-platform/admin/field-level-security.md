@@ -84,12 +84,28 @@ Configure a combination of these four permissions to determine the user privileg
 
 ### Add a column and set permissions for a column security profile
 
+To add a column and set permissions for a column security profile, use the following steps:
+
+# [New admin center](#tab/new)
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. Select **Manage** in the navigation pane.
+1. In the **Manage** pane, select **Environments**. Then select an environment.
+1. Select **Settings** > **Users + permissions** > **Column security profiles**. 
+1. Select an existing profile, or select **New Profile**, enter a name, enter a description, and then select **Save**.  
+1. Select the **Teams** or **Users** tab, select **+ Add Teams** or **+ Add Users**, select the teams or users that you want to control access, and then select **Add**.
+1. Select the **Column Permission** tab, in the **Name** column select one or more columns, and then select **Edit**. Configure the four properties for the desired access. These permissions control whether people in this security profile can read or set column values.
+1. Select **Save**.
+
+# [Classic admin center](#tab/classic)
+
+
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) using an account that is assigned the System Administrator security role.
 1. Select the environment to configure security profiles for. 
 1. Select **Settings** > **Users + permissions** > **Column security profiles**. 
 1. Select an existing profile, or select **New Profile**, enter a name, enter a description, and then select **Save**.  
 1. Select the **Teams** or **Users** tab, select **+ Add Teams** or **+ Add Users**, select the teams or users that you want to control access, and then select **Add**.
-1. Select the **Column Permission** tab, in the **Name** column select one or more columns, and then select **Edit**. Configure the four properties for the desired access.  These permissions control whether people in this security profile can read or set column values.
+1. Select the **Column Permission** tab, in the **Name** column select one or more columns, and then select **Edit**. Configure the four properties for the desired access. These permissions control whether people in this security profile can read or set column values.
 1. Select **Save**.
 
 ## Which columns can be secured?  
