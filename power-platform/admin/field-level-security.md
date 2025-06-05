@@ -3,21 +3,22 @@ title: Column-level security
 description: Overview of column-level security using an example.
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 05/07/2025
+ms.date: 06/05/2025
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
 ms.reviewer: sericks
+ms.contributors:
+  - lsuresh
 contributors:
   - fafuxa-ms
   - srpoduri
+  - lavanyapg
 ms.custom: "admin-security"
 search.audienceType: 
   - admin
 ---
 # Column-level security to control access
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 Manage access to records at the table level using [privileges associated with security roles](how-record-access-determined.md). Some columns in a table might contain data that is more sensitive than others. Use column-level security to manage access to data in specific columns. Column-level security configurations are organization-wide and apply to all data access requests.
 
