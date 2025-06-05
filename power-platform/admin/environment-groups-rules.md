@@ -15,6 +15,7 @@ contributors:
   - JesseParsons
   - arjunmayur
   - ASheehi1
+  - steph-kent-ms
 ---
 
 # Rules for environment groups
