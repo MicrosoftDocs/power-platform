@@ -151,7 +151,7 @@ You can audit other tables, where applicable, but note that there are some core 
 
 ### Turn on auditing
 
-The following steps describe how to turn on auditing for an environment:
+The following steps describe how to turn on auditing for an environment. This task requires the System Administrator or System Customizer role or equivalent permissions.
 
 # [New admin center](#tab/new)
  
