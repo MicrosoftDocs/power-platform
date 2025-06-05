@@ -7,15 +7,17 @@ ms.author: paulliew
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 12/04/2024
+ms.date: 06/05/2025
 search.audienceType: 
   - admin
 contributors:
   - abhijananddv
+  - lavanyapg
+ms.contributors:
+  - lsuresh
+  - 
 ---
 # Manage application users in the Power Platform admin center
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 We're in the process of moving application user management from the legacy web client, as documented in [Enable or disable application users](create-users.md#enable-or-disable-user-accounts). Follow these steps to manage application users in the Power Platform admin center.
 
@@ -29,11 +31,8 @@ We're in the process of moving application user management from the legacy web c
 On the **Application users** page, you can view and manage application users. The **Custom** app type is your local app registration, as created in Microsoft Entra ID.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a System Administrator.
-
 1. Select **Environments**, and then select an environment from the list.
-
 1. Select **Settings**.
-
 1. Select **Users + permissions**, and then select **Application users**.
 
 ## Create an application user
@@ -43,13 +42,9 @@ You can create an unlicensed application user in your environment. This applicat
 In an environment, you can only have one application user for each Microsoft Entra&ndash;registered application.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a System Administrator.
-
 1. Select **Environments**, and then select an environment from the list.
-
 1. Select **Settings**.
-
 1. Select **Users + permissions**, and then select **Application users**.
-
 1. Select **+ New app user** to open the **Create a new app user** page.
 
    :::image type="content" source="media/create-new-app-user.png" alt-text="Screenshot of Create a new application user.":::
@@ -74,13 +69,9 @@ In an environment, you can only have one application user for each Microsoft Ent
 ## View or edit the details of an application user
 
 1. Sign in to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com) as a System Administrator.
-
 1. Select **Environments**, and then select an environment from the list.
-
 1. Select **Settings**.
-
 1. Select **Users + permissions**, and then select **Application users**.
-
 1. Select an application user, and then select **Details**.
 
     The **Details** page shows the following properties for the application user:
@@ -137,6 +128,7 @@ To delete an inactive application user, complete the following steps.
 In each of your environments, there's a set of [system-provided application users](system-application-users.md#application-users). You can now view these application users from the Power Platform admin center.
 
 1. Sign in to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com) as a system administrator.
+
 1. Select **Environments**, and then select an environment from the list.
 1. Select **Settings**.
 1. Select **Users + permissions** > **Application users**.
