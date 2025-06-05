@@ -202,7 +202,7 @@ Endpoint filtering rules do not apply to variables or dynamically bound endpoint
   - All dynamic values are blocked by default, ensuring stricter enforcement.
 
 > [!NOTE]
-> - Endpoint filtering is not enforced if the relevant attributes (Process or Name) are missing from the selector.
+> - Endpoint filtering is not enforced if the relevant attributes (Process or Name) are not part of the selector.
 > - Endpoint filtering is not supported for certain Windows OS UI elements, including desktop icons, taskbar buttons, and components within the Start menu.
 
 The following is an example scenario:
