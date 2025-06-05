@@ -193,10 +193,17 @@ Allow access to all web pages except for the URL `https://www.microsoft.com/` an
 
 ### UI Automation
 
-This feature allows you to define which applications and screens a desktop flow can interact with in Power Automate for desktop. Endpoints can be specified using either the application's process name or its display name, and wildcards are supported for flexible matching. Validation is triggered during any action within the UI automation group, before the desktop flow proceeds with screen interactions. It checks the Process and/or Name attributes in the selector of the targeted UI elements.
+This feature enables you to define which applications and screens a desktop flow can interact with in Power Automate for desktop. Endpoints are specified using the application's process name. If the process name is not unique, the window display name is used instead. Wildcards are supported for flexible matching. Validation occurs during any action within the UI automation group, before the flow interacts with the screen. It checks the Process and/or Name attributes in the selector of the targeted UI elements to determine if the interaction is permitted.
+
+Endpoint filtering rules do not apply to variables or dynamically bound endpoints. If an expression includes anything other than a literal string, filtering is bypassed—potentially allowing access to restricted connector arguments. The default policy behavior is all endpoint filtering policies include a core rule (Allow * or Deny *), defaulting to Allow * (Allow All).
+- When Allow * is enabled:
+  - Dynamic values are not filtered. Any dynamic expression will bypass endpoint filtering, even if specific applications are restricted.
+- When Deny * is enabled:
+  - All dynamic values are blocked by default, ensuring stricter enforcement.
 
 > [!NOTE]
-> Endpoint filtering is not enforced if the relevant attributes (Process or Name) are missing from the selector.
+> - Endpoint filtering is not enforced if the relevant attributes (Process or Name) are missing from the selector.
+> - Endpoint filtering is not supported for certain Windows OS UI elements, including desktop icons, taskbar buttons, and components within the Start menu.
 
 The following is an example scenario:
 
@@ -205,6 +212,7 @@ To allow access to all applications and screens except those where the Process o
 1. Deny `Calculator`
 1. Deny `*Java*`
 1. Allow `*`
+
 
 ## PowerShell support for endpoint filtering
 
