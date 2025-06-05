@@ -43,9 +43,9 @@ This section outlines the step-by-step process followed in the Cardio Triage AI 
     - When the lab report is submitted successfully, a Power Automate flow starts automatically.
     - This flow activates the Triage Master Agent, an autonomous AI agent designed using Copilot Studio, which starts the triage evaluation.
 1. **AI-powered data evaluation and triage decisioning**:
-    - The Triage Master Agent evaluates the patient’s lab data by referencing the following:
-    - Intelligent Cardiac Triage Guidelines – to assess criticality and risk.
-    - Intelligent Clinic Scheduling Guidelines – to determine if a consultation is necessary and what expertise is required.
+    - The triage master agent evaluates the patient’s lab data by referencing the following:
+    - Intelligent cardiac triage guidelines – to assess criticality and risk.
+    - Intelligent clinic scheduling guidelines – to determine if a consultation is necessary and what expertise is required.
     - The agent can also call the Microsoft Graph API to get physician availability and contextual data (like prior appointments).
     - Based on the outcome, the case is categorized as critical, non-critical with follow-up, or monitor-only.
 1. **Automated appointment scheduling**:
