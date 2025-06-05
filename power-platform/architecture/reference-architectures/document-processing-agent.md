@@ -50,7 +50,7 @@ There are two important workflows related to the agent:
 The document processing flow works like a state machine. The agent acts as an orchestrator, and the current state is stored in the Data Processing Events table in Dataverse. Here’s how the process works:
 
 1. A trigger identifies when a new document is ready for processing. This shows in the **Data sources** area in the architecture diagram. [Agent flows](/microsoft-copilot-studio/flows-overview) scan directories like Outlook mailboxes or SharePoint folders. When a document is added to any directory, the agent flow stores the document in the Data Processing Events table with status New and sends a message to the agent: `Process the document: {ID}.`
-    1. All attempts to add documents or update statuses in the `Data Processing Events` table follow the `Default` configuration in Power Automate. The flow retries up to four times with an exponential interval on requests that return statuses 408, 429, or 5xx, and on any connectivity exceptions.
+    1. All attempts to add documents or update statuses in the Data Processing Events table follow the `Default` configuration in Power Automate. The flow retries up to four times with an exponential interval on requests that return statuses 408, 429, or 5xx, and on any connectivity exceptions.
     1. If all retry attempts fail, debug and check the run history in Power Automate for the action that didn't run.
 
 1. The agent instructions tell it to call the `Document Extraction` action when it’s asked to process a document. The action runs, and the message ID is passed through.
