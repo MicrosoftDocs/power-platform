@@ -70,7 +70,7 @@ The document processing flow works like a state machine. The agent acts as an or
     1. Gets the extracted data stored in Dataverse.
     1. Sends it to an AI prompt in AI Builder to validate. This prompt uses GPT 4.o to:
         1. Check the extracted JSON against format rules like `dates must be in X format`.
-        1. Check the extracted JSON against business rules like `the author of the document must be in the **Accounts** table in Dataverse`.
+        1. Check the extracted JSON against business rules like `the author of the document must be in the Accounts table in Dataverse`.
     1. If validation succeeds, it updates the status of the document to `Validated`.
     1. Otherwise, it updates the status of the document to `Manual Review`.
 
