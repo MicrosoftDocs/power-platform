@@ -15,7 +15,7 @@ contributors:
   - lavanyapg
 ms.contributors:
   - lsuresh
-  - 
+  
 ---
 # Manage application users in the Power Platform admin center
 
