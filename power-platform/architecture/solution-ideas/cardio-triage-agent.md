@@ -5,7 +5,7 @@ description: Streamline cardiac triage and appointment scheduling with Power Pla
 author: manuelap-msft
 ms.subservice: architecture-center
 ms.topic: solution-idea
-ms.date: 04/17/2025
+ms.date: 06/05/2025
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
 contributors:
