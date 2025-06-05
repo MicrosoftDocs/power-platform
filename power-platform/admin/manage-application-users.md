@@ -155,7 +155,7 @@ When an application user is first created, the username is the same as the name 
 
 ## Manage roles for an application user
 
-In addition to using the entry point on the **Details** page to manage roles, you can select **Edit security Roles** on the menu bar on the **Application users** page. If the application user has roles assigned already, those roles appear as selected on the page.
+In addition to using the entry point on the **Details** page to manage roles, you can select **Edit security roles** on the menu bar on the **Application users** page. If the application user has roles assigned already, those roles appear as selected on the page.
 
 You can select or deselect roles, and then select **Save**. All selected roles become the current assigned roles for the application user. Any unselected roles aren't assigned.
 
@@ -168,9 +168,9 @@ To activate or deactivate an application user, complete the following steps:
 
 1. Go to the **Application user** page. 
 
-  - To activate an application user, select **Activate** on the menu bar, and then select **Activate** in the confirmation dialog.  
+    - To activate an application user, select **Activate** on the menu bar, and then select **Activate** in the confirmation dialog.  
 
-  - To deactivate an application user, select **Deactivate** on the menu bar, and then select **Deactivate** in the confirmation dialog.
+    - To deactivate an application user, select **Deactivate** on the menu bar, and then select **Deactivate** in the confirmation dialog.
 
 ## Delete an inactive, application user 
 
