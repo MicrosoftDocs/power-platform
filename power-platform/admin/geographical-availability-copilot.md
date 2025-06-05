@@ -4,7 +4,7 @@ description: Learn how to turn on data movement across regions for Copilots and 
 author: amchern
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 05/19/2025
+ms.date: 06/04/2025
 ms.subservice: admin
 ms.author: amchern
 ms.reviewer: sericks
@@ -20,6 +20,7 @@ contributors:
   - sericks007
   - prvenka
   - caitlinshaw1
+  - steph-kent-ms
 ms.custom:
   - NewPPAC
   - ai-gen-docs-bap
