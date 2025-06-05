@@ -68,7 +68,7 @@ Make sure you have the System Administrator security role or equivalent permissi
 
 ## Copilot Studio agents
 
-### Sharing Copilot Studio agent data with Viva Insights
+### Sharing Copilot Studio agent data with Viva Insights (preview)
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
