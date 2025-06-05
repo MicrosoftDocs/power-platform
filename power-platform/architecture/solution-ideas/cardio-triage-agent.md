@@ -32,7 +32,7 @@ For a demo and more information about the Cardio Triage AI solution, visit [GitH
 This section outlines the step-by-step process followed in the Cardio Triage AI workflow.
 
 1. **Patient registration and check-in**:
-    - A Front Desk Interactive Agent (built using Microsoft Copilot Studio) guides the front desk staff or patient through registration.
+    - A front desk interactive agent (built using Microsoft Copilot Studio) guides the front desk staff or patient through registration.
     - At check-in, the agent generates an Outpatient (OP) ticket and records patient information in Microsoft Dataverse.
     - This starts the triage process and creates a unique case identifier for tracking.
 1. **Lab report submission and data extraction**:
