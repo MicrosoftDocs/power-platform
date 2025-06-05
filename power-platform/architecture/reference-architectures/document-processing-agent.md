@@ -50,41 +50,41 @@ There are two important workflows related to the agent:
 The document processing flow works like a state machine. The agent acts as an orchestrator, and the current state is stored in the Data Processing Events table in Dataverse. Here’s how the process works:
 
 1. A trigger identifies when a new document is ready for processing. This shows in the **Data sources** area in the architecture diagram. [Agent flows](/microsoft-copilot-studio/flows-overview) scan directories like Outlook mailboxes or SharePoint folders. When a document is added to any directory, the agent flow stores the document in the Data Processing Events table with status New and sends a message to the agent: `Process the document: {ID}.`
-    1. All attempts to add documents or update statuses in the Data Processing Events table follow the `Default` configuration in Power Automate. The flow retries up to four times with an exponential interval on requests that return statuses 408, 429, or 5xx, and on any connectivity exceptions.
-    1. If all retry attempts fail, debug and check the run history in Power Automate for the action that didn't run.
+    - All attempts to add documents or update statuses in the Data Processing Events table follow the `Default` configuration in Power Automate. The flow retries up to four times with an exponential interval on requests that return statuses 408, 429, or 5xx, and on any connectivity exceptions.
+    - If all retry attempts fail, debug and check the run history in Power Automate for the action that didn't run.
 
 1. The agent instructions tell it to call the `Document Extraction` action when it’s asked to process a document. The action runs, and the message ID is passed through.
 1. The `Document Extraction` action is an agent flow that receives a Data Processing Event ID as input and:
-    1. Gets the document stored in Dataverse.
-    1. Sends it to an AI prompt in AI Builder to process. This prompt uses GPT 4.o to:
-        1. Extract all relevant information from the document.
-        1. Format this information as a JSON document.
-    1. Stores the extracted information in the same Data Processing Event row.
-    1. Updates the status of the document to `Processed`.
+    - Gets the document stored in Dataverse.
+    - Sends it to an AI prompt in AI Builder to process. This prompt uses GPT 4.o to:
+        - Extract all relevant information from the document.
+        - Format this information as a JSON document.
+    - Stores the extracted information in the same Data Processing Event row.
+    - Updates the status of the document to `Processed`.
 
 1. A Dataverse trigger (agent flow) monitors the status of all documents in Data Processing Events and notifies the agent when a status changes with the message: `The status of document {ID} changed to {Status}`
 
 1. The agent instructions tell it to call the `Document Validation` action when the status of a document changes to *Processed*. The action runs, and the message ID is passed through.
 
 1. The `Document Validation` action is an agent flow that receives a Data Processing Event ID as input and:
-    1. Gets the extracted data stored in Dataverse.
-    1. Sends it to an AI prompt in AI Builder to validate. This prompt uses GPT 4.o to:
-        1. Check the extracted JSON against format rules like `dates must be in X format`.
-        1. Check the extracted JSON against business rules like `the author of the document must be in the Accounts table in Dataverse`.
-    1. If validation succeeds, it updates the status of the document to `Validated`.
-    1. Otherwise, it updates the status of the document to `Manual Review`.
+    - Gets the extracted data stored in Dataverse.
+    - Sends it to an AI prompt in AI Builder to validate. This prompt uses GPT 4.o to:
+        - Check the extracted JSON against format rules like `dates must be in X format`.
+        - Check the extracted JSON against business rules like `the author of the document must be in the Accounts table in Dataverse`.
+    - If validation succeeds, it updates the status of the document to `Validated`.
+    - Otherwise, it updates the status of the document to `Manual Review`.
 
 1. If the status of the document changes to `Validated`, the instructions tell the agent to call the `Document Export` action. The action runs, and the message ID is passed through.
 
 1. The Document Export action is an agent flow that receives a Data Processing Event ID as input and:
-    1. Gets the extracted data stored in Dataverse.
-    1. Exports this data to the target system, like the Invoices table in Dataverse.
+    - Gets the extracted data stored in Dataverse.
+    - Exports this data to the target system, like the Invoices table in Dataverse.
 
 1. If the status of the document changes to `Manual Review`, the instructions tell the agent to call the `Manual Review` action. The action runs, and the message ID is passed through.
 
 1. The `Manual Review` action is an agent flow that receives a Data Processing Event ID as input and:
-    1. Gets the extracted data stored in Dataverse.
-    1. Creates an Approvals request for the agent admin, sharing a link to a Validation Station app where the user can edit extracted data and validate manually. This manual validation sets the status of the document to `Validated`.
+    - Gets the extracted data stored in Dataverse.
+    - Creates an Approvals request for the agent admin, sharing a link to a Validation Station app where the user can edit extracted data and validate manually. This manual validation sets the status of the document to `Validated`.
 
 1. After manual review, if the status of the document is `Validated`, step 7 runs.
 
@@ -92,21 +92,21 @@ Users can also manually submit documents for the agent to process using the chat
 
 #### When you do this:
 
-1. The document is uploaded to the Data Processing Events table.
-1. The agent notifies itself that a new document was imported.
-1. The extraction prompt runs to give you a preview of what is exported in the chat pane.
-1. The document is processed as described in this flow, starting from step 2.
+- The document is uploaded to the Data Processing Events table.
+- The agent notifies itself that a new document was imported.
+- The extraction prompt runs to give you a preview of what is exported in the chat pane.
+- The document is processed as described in this flow, starting from step 2.
 
 ## Configuration workflow
 
 The agent needs several configurations to operate autonomously. To make this easier, there's a comprehensive configuration experience. Here are the steps:
 
 1. Install the Document Processing Agent in Copilot Studio. The agent solution has:
-    1. A Document Processing Configuration table.
-    1. A Validation Station Canvas App for monitoring.
-    1. Connection references used by the agent (Dataverse, Copilot Studio, PowerApps for Admins).
-    1. Connection references used by the triggers that start the agent workflow (Outlook, SharePoint).
-    1. Environment variables used by the triggers.
+    - A Document Processing Configuration table.
+    - A Validation Station Canvas App for monitoring.
+    - Connection references used by the agent (Dataverse, Copilot Studio, PowerApps for Admins).
+    - Connection references used by the triggers that start the agent workflow (Outlook, SharePoint).
+    - Environment variables used by the triggers.
 1. Launch the agent configuration wizard. This is the last step of the installation wizard in Copilot Studio. It guides you through this flow:
     1. Upload a sample document.
     1. The system sends the uploaded document to the agent's extraction prompt.
