@@ -1,11 +1,14 @@
 ---
 title: "Test Engine extensibility (preview)"
 description: Understanding the extensibility model for Test Engine and the role of Microsoft-signed components
-author: grant-archibald-ms
-ms.author: grarchib
+author: pvillads
+ms.author: pvillads
+ms.subservice: test-engine
 ms.date: 05/19/2025
 ms.reviewer: jdaly
 ms.topic: article
+contributors:
+ - grant-archibald-ms
 ---
 # Test Engine extensibility (preview)
 
