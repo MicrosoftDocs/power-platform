@@ -1,7 +1,7 @@
 ---
-title: Revolutionize vehicle inspections with EVVIE
-description: Discover how the Enterprise Visual Vehicle Inspection Engine uses AI and Power Platform to automate vehicle inspections, saving time and improving accuracy.
-#customer intent: As a Power Platform user, I want to understand the workflow of EVVIE so that I can design a similar solution.
+title: Cardio Triage AI workflow with Power Platform
+description: Streamline cardiac triage and appointment scheduling with Power Platform, AI Builder, and Copilot Agents. See how it works.
+#customer intent: As a Power Platform user, I want to automate cardiac triage and appointment scheduling so that I can reduce manual work and improve patient care.
 author: manuelap-msft
 ms.subservice: architecture-center
 ms.topic: solution-idea
@@ -15,7 +15,7 @@ search.audienceType:
   - flowmaker
 ---
 
-# Cardio Triage AI
+# Cardio Triage AI workflow with Power Platform
 
 
 
@@ -28,6 +28,8 @@ For a demo and more information about the Cardio Triage AI solution, visit [GitH
 :::image type="content" source="media/cardio-triage/cardio-triage.png" alt-text="Architecture diagram of the Cardio Triage AI solution." border="true" lightbox="media/cardio-triage/cardio-triage.png":::
 
 ## Workflow
+
+This section outlines the step-by-step process followed in the Cardio Triage AI workflow.
 
 1. **Patient registration and check-in**:
     - A Front Desk Interactive Agent (built using Microsoft Copilot Studio) guides the front desk staff or patient through the registration process.
@@ -57,12 +59,14 @@ For a demo and more information about the Cardio Triage AI solution, visit [GitH
 
 ## Components
 
+Here are the main components that make up the Cardio Triage AI workflow solution.
+
 ### Microsoft Power Platform:
 
-- Power Apps: Power Apps is a user-friendly platform that allows anyone to build custom apps with minimal coding. It helps create intuitive, front-end interfaces that connect to various data sources. In a solution design, Power Apps can be used to create easy-to-use applications for tasks like managing patient data or interacting with healthcare systems, all without requiring complex development skills. 
-- Power Automate: Power Automate is a tool that helps automate repetitive tasks and workflows. It connects different services and apps to perform tasks automatically, saving time and reducing the chance of human error. In a technical solution, Power Automate can be used to streamline processes like scheduling patient appointments or syncing data across systems, making operations more efficient.
-- Dataverse: Dataverse is a secure, scalable database solution that stores and organizes data from various sources. It’s designed to handle large amounts of structured and unstructured data, making it easy to store and retrieve information in a consistent way. For a healthcare solution, Dataverse would store patient records, appointment data, and other critical information, ensuring data is secure and easily accessible.
-- AI Builders: AI Builder is a tool that lets you add artificial intelligence to your apps without needing deep technical knowledge. It can help build features like predictive analytics or automated insights. In a healthcare solution, AI Builders could assist in assessing patient conditions, predicting future health risks, or helping staff make data-driven decisions quickly.
+- **Power Apps**: Power Apps is a user-friendly platform that allows anyone to build custom apps with minimal coding. It helps create intuitive, front-end interfaces that connect to various data sources. In a solution design, Power Apps can be used to create easy-to-use applications for tasks like managing patient data or interacting with healthcare systems, all without requiring complex development skills. 
+- **Power Automate**: Power Automate is a tool that helps automate repetitive tasks and workflows. It connects different services and apps to perform tasks automatically, saving time and reducing the chance of human error. In a technical solution, Power Automate can be used to streamline processes like scheduling patient appointments or syncing data across systems, making operations more efficient.
+- **Dataverse**: Dataverse is a secure, scalable database solution that stores and organizes data from various sources. It’s designed to handle large amounts of structured and unstructured data, making it easy to store and retrieve information in a consistent way. For a healthcare solution, Dataverse would store patient records, appointment data, and other critical information, ensuring data is secure and easily accessible.
+- **AI Builders**: AI Builder is a tool that lets you add artificial intelligence to your apps without needing deep technical knowledge. It can help build features like predictive analytics or automated insights. In a healthcare solution, AI Builders could assist in assessing patient conditions, predicting future health risks, or helping staff make data-driven decisions quickly.
 
 ### Copilot Agents
 
@@ -85,8 +89,9 @@ Azure App Registrations allows you to register apps within Azure Active Director
 Azure Key Vault is a service that stores sensitive data, such as passwords, API keys, and encryption keys, securely. It helps keep your most important information safe while allowing authorized apps or users to access it when needed. Azure Key Vault is being used to securely store secrets, such as database passwords or connection strings, ensuring everything is protected and accessible only by the right people or systems. 
 
 ## Scenario details
+This section describes the specific scenario, including the workflow, participants, and goals of the Cardio Triage AI solution.
 
-### Business Problem
+### Business problem
 
 Cardiology departments in hospitals and clinics face significant challenges in prioritizing and managing patients based on the severity of their cardiac conditions. Traditional triage processes are largely manual, dependent on the subjective judgment of administrative staff or the availability of clinical resources. This often leads to:
 
@@ -97,7 +102,7 @@ Cardiology departments in hospitals and clinics face significant challenges in p
 
 There is a growing need for an intelligent, automated triage system that can reduce manual intervention, improve the accuracy of risk assessments, and optimize scheduling workflows—especially in resource-constrained or high-volume healthcare environments.
 
-### Use Case Overview
+### Use case overview
 
 CardioTriage-AI is a Power Platform-based AI solution designed to address these issues by leveraging AI Builder, Copilot Custom Agents, Microsoft 365 integrations, and Azure services to:
 
@@ -110,7 +115,7 @@ CardioTriage-AI is a Power Platform-based AI solution designed to address these 
 - Trigger automated workflows using Power Automate to notify doctors, book slots, and update records.
 - Securely manage patient data using Dataverse, Key Vault, and private endpoints within Azure.
 
-### Business Value and Outcomes
+### Business value and outcomes
 
 CardioTriage-AI delivers measurable improvements in both clinical outcomes and operational efficiency, including:
 
