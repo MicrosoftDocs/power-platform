@@ -5,7 +5,7 @@ description: Discover how to use Copilot Studio and Power Platform to automate t
 author: manuelap-msft
 ms.subservice: architecture-center
 ms.topic: solution-idea
-ms.date: 04/17/2025
+ms.date: 06/05/2025
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
 contributors:
@@ -17,7 +17,7 @@ search.audienceType:
 
 # Automate the bug reporting processes in software development with Auto AI Triage
 
-This document outlines the Auto Triage AI Agent, which automates the bug reporting and updating processes in software development. It highlights the efficiency gained through two agents that handle bug creation and follow-up, significantly improving the user experience and operational speed.
+This article outlines the Auto Triage AI Agent, which automates the bug reporting and updating processes in software development. It highlights the efficiency gained through two agents that handle bug creation and follow-up, significantly improving the user experience and operational speed.
 
 For a demo and more information about this solution, visit [Auto AI Triage on GitHub](https://github.com/Shrusti13/TriageAutonomousAgent?tab=readme-ov-file).
 
