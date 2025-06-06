@@ -98,11 +98,12 @@ Copy and paste the script into a PowerShell console.
 ```powershell
 # Set your environment ID
 $environmentId = "<your environment id>"
+$clientId = "<client id of your Microsoft Entra ID application registration>"
 
 Import-Module MSAL.PS
 
 # Authenticate
-$AuthResult = Get-MsalToken -ClientId '49676daf-ff23-4aac-adcc-55472d4e2ce0' -Scope 'https://api.powerplatform.com/.default' 
+$AuthResult = Get-MsalToken -ClientId $clientId -Scope 'https://api.powerplatform.com/.default'
 
 
 $Headers = @{
