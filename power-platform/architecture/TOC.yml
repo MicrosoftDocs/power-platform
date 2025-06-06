@@ -59,6 +59,8 @@
         href: reference-architectures/dataverse-canvas-app.md
       - name: Reduce infrastructure challenges with Hosted RPA in Power Automate​
         href: reference-architectures/rpa-scale-operations.md
+      - name: Use an autonomous agent in Copilot Studio for document processing
+        href: reference-architectures/document-processing-agent.md
     - name: Solution ideas
       items:
         - name: Overview
