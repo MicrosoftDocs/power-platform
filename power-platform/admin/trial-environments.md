@@ -1,5 +1,5 @@
 ---
-title: About trial environments: standard and subscription-based
+title: "About trial environments: standard and subscription-based"
 description: There are two types of Power Platform trial environments. Decide which one is right for you and learn how to create it in the Power Platform admin center.
 author: meeramahabala
 ms.subservice: admin
