@@ -20,7 +20,7 @@ Get the latest info about what's new and what's changed in the Power Platform  a
 
 ## June 2025
 
-New reference architectures:
+New reference architecture:
 
 - [Use an autonomous agent in Copilot Studio for document processing](reference-architectures/document-processing-agent.md)
 
