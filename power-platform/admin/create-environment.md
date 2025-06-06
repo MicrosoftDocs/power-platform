@@ -4,14 +4,15 @@ description: Learn how to create and manage environments in the Power Platform a
 author: sericks007
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 02/12/2025
+ms.date: 06/06/2025
 ms.subservice: admin
 ms.custom: NewPPAC
 ms.author: mbajwa
-ms.reviewer: sericks
+ms.reviewer: ellenwehrle
 ms.contributors:
 - pmantha
 - mbajwa
+- yingchin
 search.audienceType: 
   - admin 
 contributors:
@@ -124,15 +125,17 @@ For Dynamics 365 finance and operations apps, you need at least:
 
 ### Steps
 
-### [Modern admin center](#tab/new)
+### [New admin center](#tab/new)
+
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a Dynamics 365 or Power Platform admin.
 1. In the navigation pane, select **Manage**, then in the **Manage** pane, select **Environments**.
-1. On the **Environments** page, click **New** in the command bar.
+1. On the **Environments** page, select **New** in the command bar.
    
 ### [Classic admin center](#tab/classic)
+
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a Dynamics 365 or Power Platform admin.
 1. In the navigation pane, select **Environments**.
-1. On the **Environments** page, click **New** in the command bar.
+1. On the **Environments** page, select **New** in the command bar.
 ---
 
 4. Enter the following settings:
@@ -147,7 +150,7 @@ For Dynamics 365 finance and operations apps, you need at least:
    |Add a Dataverse data store | Select **Yes**. |
    |Pay-as-you-go with Azure | Select **Yes** to link this environment to an Azure subscription to pay for select Power Platform services such as Dataverse and Power Apps. |
 
-5. Click **Next**.
+5. Select **Next**.
 
 6. Enter the following settings:
 
@@ -160,7 +163,7 @@ For Dynamics 365 finance and operations apps, you need at least:
    |Deploy sample apps and data     | Select **Yes** to include sample apps and data. Sample data gives you something to experiment with as you learn. You must select **No** for **Enable Dynamics 365 apps** for this setting to appear.        |
    |Security group | Select a security group to restrict access to this environment. For open access, select **None**.<br><br>This field is now required.|
 
-7. Click **Save** to apply the changes.
+7. Select **Save** to apply the changes.
 
 ## Create an environment without a database
 
@@ -172,15 +175,17 @@ You need 1 GB of available database capacity.
 
 ### Steps
 
-### [Modern admin center](#tab/new)
+### [New admin center](#tab/new)
+
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a Dynamics 365 or Power Platform admin.
 1. In the navigation pane, select **Manage**, then in the **Manage** pane, select **Environments**.
-1. On the **Environments** page, click **New** in the command bar.
+1. On the **Environments** page, select **New** in the command bar.
    
 ### [Classic admin center](#tab/classic)
+
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a Dynamics 365 or Power Platform admin.
 1. In the navigation pane, select **Environments**.
-1. On the **Environments** page, click **New** in the command bar.
+1. On the **Environments** page, select **New** in the command bar.
 ---
 
 4. Enter the following settings:
@@ -195,7 +200,7 @@ You need 1 GB of available database capacity.
    |Add a Dataverse data store | Select **No**. |
    |Pay-as-you-go with Azure | Select **Yes** to link this environment to an Azure subscription to pay for select Power Platform services such as Dataverse and Power Apps. |
 
-5. Click **Save** to apply the changes.
+5. Select **Save** to apply the changes.
 
 ## Setting an environment refresh cadence
 
@@ -209,20 +214,22 @@ You can indicate how often you prefer an environment to receive updates and feat
 ### Set refresh cadence
 
 ### [Modern admin center](#tab/new)
+
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a Dynamics 365 or Power Platform admin.
 1. In the navigation pane, select **Manage**, then in the **Manage** pane, select **Environments**.
 1. On the **Environments** page, choose an environment.
 1. Select **Edit**.
 1. Under **Refresh cadence**, select the desired cadence type.
-1. Click **Save** to apply the changes.
+1. Select **Save** to apply the changes.
    
 ### [Classic admin center](#tab/classic)
+
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a Dynamics 365 or Power Platform admin.
 1. In the navigation pane, select **Environments**.
 1. On the **Environments** page, choose an environment.
 1. Select **Edit**.
 1. Under **Refresh cadence**, select the desired cadence type.
-1. Click **Save** to apply the changes.
+1. Select **Save** to apply the changes.
 ---
 
 The refresh cadence doesn't change when you receive updates for:
