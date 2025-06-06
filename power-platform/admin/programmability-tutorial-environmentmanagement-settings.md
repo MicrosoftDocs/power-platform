@@ -33,7 +33,7 @@ Use the following PowerShell script to authenticate using Power Platform API.
 
 ```PowerShell
 Import-Module "MSAL.PS"
-$AuthResult = Get-MsalToken -ClientId '49676daf-ff23-4aac-adcc-55472d4e2ce0' -Scope 'https://api.powerplatform.com/.default'
+$AuthResult = Get-MsalToken -ClientId '<client id of your Microsoft Entra ID application registration>' -Scope 'https://api.powerplatform.com/.default'
 $Headers = @{Authorization = "Bearer $($AuthResult.AccessToken)"}
 ```
 
