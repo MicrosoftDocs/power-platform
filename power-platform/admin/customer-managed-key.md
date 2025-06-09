@@ -476,6 +476,7 @@ To change your encryption key, create a new key and a new enterprise policy. You
  > To rotate the encryption key, we recommend using the Key vaults' [**New version** or setting a **Rotation policy**](customer-managed-key.md#rotate-the-environments-encryption-key-with-a-new-key-version).
 
 1. In [Azure portal](https://ms.portal.azure.com/), create a new key and a new enterprise policy. More information:  [Create encryption key and grant access](#create-encryption-key-and-grant-access) and [Create an enterprise policy](#create-enterprise-policy)
+1. Grant the new enterprise policy [access to the old key](customer-managed-key.md#grant-enterprise-policy-permissions-to-access-key-vault). 
 1. Once the new key and enterprise policy are created, go to **Policies** > **Enterprise policies**.
 1. Select the **Environment with policies** tab, and then find the environment you want to remove from customer-managed key.
 1. Select the **All policies** tab, select the environment you verified in step 2, and then select **Edit policy** on the command bar.
@@ -485,7 +486,7 @@ To change your encryption key, create a new key and a new enterprise policy. You
 1. Repeat steps 2-6 until all environments in the enterprise policy have been removed.
 
   > [!IMPORTANT]
-  > The environment is disabled when it's removed from the enterprise policy to revert the data encryption to the Microsoft-managed key. **Do not delete or disable the key, delete or disable the key vault, or remove the enterprise policy's permissions to the key vault**. The key and key vault's access is necessary to support database restoration. You may delete and remove the enterprise policy's permissions after 30 days.
+  > The environment is disabled when it's removed from the enterprise policy to revert the data encryption to the Microsoft-managed key. **Do not delete or disable the key, delete or disable the key vault, or remove the enterprise policy's permissions to the key vault**. **Grant the new enterprise policy to the old key vault**. The key and key vault's access is necessary to support database restoration. You may delete and remove the enterprise policy's permissions after 30 days.
 
 1. Once all the environments are removed, from the Power Platform admin center go to **Enterprise policies**.
 1. Select the new enterprise policy, and then select **Edit policy**.
