@@ -430,7 +430,9 @@ The key vault admin notifies the Power Platform admin that an encryption key and
 ### Add an environment to the enterprise policy to encrypt data
 
 > [!IMPORTANT]
-> The environment is disabled when it's added to the enterprise policy for data encryption.
+> The environment is disabled when it's added to the enterprise policy for data encryption. The duration of the system downtime is dependent on the size of the database. It is recommended that you do a test run by making a copy of the target environment into a test environment to determine the estimated system downtime.
+> The system downtime can be determined by checking the [environment's encryption status](#review-the-encryption-status-from-enterprise-policies). The system downtime is between the **Encrypting** and **Encrypting - online** statuses.
+> To reduce the system downtime, we change the encryption status to **Encrypting - online** when all the core encryption steps that required the system to be down are complete. The system can be used by your users while the remaining storage services, eg Search and Copilot index continue to encrypt the data with your customer managed key.   
 
 ##### [New admin center](#tab/new)
 
@@ -518,6 +520,8 @@ Follow these steps if you want to return to a Microsoft managed encryption key.
    > [!NOTE]
    > The environment's encryption status can be:
    >
+   > - **Encrypting** - The customer managed key encryption process is running.
+   > - **Encrypting - online** - All core services encryption that required system downtime is complete and system is enabled for online use. 
    > - **Encrypted** - The Enterprise policy encryption key is active and the environment is encrypted with your key.
    > - **Failed** - The Enterprise policy encryption key is not used by **all** Dataverse storage services. They require more time to process and you can re-run the **Add environment** operation. Contact Support if the re-run fails.
    >
