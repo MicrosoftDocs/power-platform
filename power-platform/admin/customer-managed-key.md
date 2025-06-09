@@ -5,7 +5,7 @@ author: paulliew
 ms.author: paulliew
 ms.reviewer: sericks, matp, ratrtile
 ms.topic: how-to
-ms.date: 04/16/2025
+ms.date: 6/9/2025
 ms.custom: template-how-to
 ms.contributors:
   - paulliew
@@ -24,8 +24,6 @@ contributors
 
 ---
 # Manage your customer-managed encryption key
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 Customers have data privacy and compliance requirements to secure their data by encrypting their data at-rest. This secures the data from exposure in an event where a copy of the database is stolen. With data encryption at-rest, the stolen database data is protected from being restored to a different server without the encryption key.
 
