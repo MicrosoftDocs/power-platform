@@ -3,18 +3,24 @@ title: Teams in Dataverse
 description: Understand the different types of teams and how to view and manage settings.
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 01/06/2025
+ms.date: 6/9/2025
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
 ms.reviewer: sericks
+ms.contributors:
+  - paulliew
+  - sericks
+  - syalandur
+contributors
+  - paulliew
+  - sericks007
+  - syalandur24
 ms.custom: "admin-security"
 search.audienceType: 
   - admin
 ---
 # Microsoft Dataverse teams management
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 Using Microsoft Dataverse teams is optional. However, teams provide an easy way to share business objects and let you collaborate with other people across business units. Although a team belongs to one business unit, it can include users from other business units. You can associate a user with more than one team. This topic discusses the different types of teams and their various operations.
 
