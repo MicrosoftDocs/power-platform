@@ -4,13 +4,15 @@ description: Learn how to create and manage environments in the Power Platform a
 author: sericks007
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 02/12/2025
+ms.date: 06/06/2025
 ms.subservice: admin
+ms.custom: NewPPAC
 ms.author: mbajwa
-ms.reviewer: sericks
+ms.reviewer: ellenwehrle
 ms.contributors:
 - pmantha
 - mbajwa
+- yingchin
 search.audienceType: 
   - admin 
 contributors:
@@ -22,7 +24,7 @@ contributors:
 
 [!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
-An environment is a space to store, manage, and share your organization's business data, apps, and flows. An environment is a container to separate apps that might have different roles, security requirements, or target audiences. Power Apps creates a single default environment for each tenant that's shared by all users in that tenant.
+An environment is a space to store, manage, and share your organization's business data, apps, and flows. An environment is a container to separate apps that might have different roles, security requirements, or target audiences. Power Apps creates a single default environment for each tenant, and all users in that tenant share it.
 
 ## Who can create environments?
 
@@ -92,7 +94,7 @@ Foe more information about Dataverse, see [What is Dataverse?](/power-apps/maker
 
 #### Why create an environment without a database?
 
-If you don't need Dynamics 365 apps or need Dataverse, and you're creating canvas apps with Power Apps or flows with Power Automate using other data sources, create the environment _without_ the Dataverse database.
+If you don't need Dynamics 365 apps or Dataverse and are creating canvas apps with Power Apps or flows with Power Automate using other data sources, create the environment _without_ the Dataverse database.
 
 #### Enabling Dynamics 365 apps isn't reversible
 
@@ -123,11 +125,20 @@ For Dynamics 365 finance and operations apps, you need at least:
 
 ### Steps
 
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a Dynamics 365 admin or Power Platform admin.
+### [New admin center](#tab/new)
 
-1. In the navigation pane, select **Environments**, and then select **New**.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a Dynamics 365 or Power Platform admin.
+1. In the navigation pane, select **Manage**, then in the **Manage** pane, select **Environments**.
+1. On the **Environments** page, select **New** in the command bar.
+   
+### [Classic admin center](#tab/classic)
 
-1. Enter the following settings:
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a Dynamics 365 or Power Platform admin.
+1. In the navigation pane, select **Environments**.
+1. On the **Environments** page, select **New** in the command bar.
+---
+
+4. Enter the following settings:
 
    |Setting  |Description  |
    |---------|---------|
@@ -139,20 +150,20 @@ For Dynamics 365 finance and operations apps, you need at least:
    |Add a Dataverse data store | Select **Yes**. |
    |Pay-as-you-go with Azure | Select **Yes** to link this environment to an Azure subscription to pay for select Power Platform services such as Dataverse and Power Apps. |
 
-1. Select **Next**.
+5. Select **Next**.
 
-1. Enter the following settings:
+6. Enter the following settings:
 
    |Setting  |Description  |
    |---------|---------|
    |Language     | The default language for this environment. For more information, see [Dataverse language collations](language-collations.md).    |
-   | URL         | Enter your organization name. Organization URLs must be unique. If your organization name is already reserved in the destination datacenter, it won't be available. |
+   | URL         | Enter your organization name. Organization URLs must be unique. If your organization name is already reserved in the destination datacenter, it isn't available. |
    |Currency     | The base currency used for reporting.         |
-   |Enable Dynamics 365 apps | Select **Yes** and make a selection to automatically deploy apps such as Dynamics 365 Sales or Dynamics 365 Supply Chain Management. You must have an appropriate Dynamics 365 license to select **Yes**. If you don't select **Yes** at the time of database provisioning, you won’t be able to make this change later nor be able to install Dynamics 365 apps on this environment. |
+   |Enable Dynamics 365 apps | Select **Yes** and make a selection to automatically deploy apps such as Dynamics 365 Sales or Dynamics 365 Supply Chain Management. You must have an appropriate Dynamics 365 license to select **Yes**. If you don't select **Yes** at the time of database provisioning, you aren't able to make this change later nor be able to install Dynamics 365 apps on this environment. |
    |Deploy sample apps and data     | Select **Yes** to include sample apps and data. Sample data gives you something to experiment with as you learn. You must select **No** for **Enable Dynamics 365 apps** for this setting to appear.        |
    |Security group | Select a security group to restrict access to this environment. For open access, select **None**.<br><br>This field is now required.|
 
-1. Select **Save**.
+7. Select **Save** to apply the changes.
 
 ## Create an environment without a database
 
@@ -164,11 +175,20 @@ You need 1 GB of available database capacity.
 
 ### Steps
 
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a Dynamics 365 admin or Power Platform admin.
+### [New admin center](#tab/new)
 
-1. In the navigation pane, select **Environments**, and then select **New**.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a Dynamics 365 or Power Platform admin.
+1. In the navigation pane, select **Manage**, then in the **Manage** pane, select **Environments**.
+1. On the **Environments** page, select **New** in the command bar.
+   
+### [Classic admin center](#tab/classic)
 
-1. Enter the following settings:
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a Dynamics 365 or Power Platform admin.
+1. In the navigation pane, select **Environments**.
+1. On the **Environments** page, select **New** in the command bar.
+---
+
+4. Enter the following settings:
 
    |Setting  |Description  |
    |---------|---------|
@@ -180,7 +200,7 @@ You need 1 GB of available database capacity.
    |Add a Dataverse data store | Select **No**. |
    |Pay-as-you-go with Azure | Select **Yes** to link this environment to an Azure subscription to pay for select Power Platform services such as Dataverse and Power Apps. |
 
-1. Select **Save**.
+5. Select **Save** to apply the changes.
 
 ## Setting an environment refresh cadence
 
@@ -193,15 +213,24 @@ You can indicate how often you prefer an environment to receive updates and feat
 
 ### Set refresh cadence
 
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a Dynamics 365 admin or Power Platform admin.
+### [Modern admin center](#tab/new)
 
-2. In the navigation pane, select **Environments**, and then select an environment.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a Dynamics 365 or Power Platform admin.
+1. In the navigation pane, select **Manage**, then in the **Manage** pane, select **Environments**.
+1. On the **Environments** page, choose an environment.
+1. Select **Edit**.
+1. Under **Refresh cadence**, select the desired cadence type.
+1. Select **Save** to apply the changes.
+   
+### [Classic admin center](#tab/classic)
 
-3. Select **Edit**.
-
-4. Under **Refresh cadence**, choose the cadence type.
-
-5. Select **Save**.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a Dynamics 365 or Power Platform admin.
+1. In the navigation pane, select **Environments**.
+1. On the **Environments** page, choose an environment.
+1. Select **Edit**.
+1. Under **Refresh cadence**, select the desired cadence type.
+1. Select **Save** to apply the changes.
+---
 
 The refresh cadence doesn't change when you receive updates for:
 
@@ -233,7 +262,7 @@ Users can access resources in an environment if they have:
 
 ### Why do I no longer see Preview (United states) region?
 
-This region is no longer available as a choice. It has been replaced with the **Get new features early** setting when the United States region is selected.
+This region is no longer available as a choice. It is now replaced with the **Get new features early** setting when the United States region is selected.
 
 Preview or early release cycle capabilities are available for environments in other regions, in addition to the United States.
 
