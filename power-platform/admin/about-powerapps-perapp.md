@@ -16,7 +16,7 @@ search.audienceType:
 
 [!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
-Power Apps per app plan allows individual users to run one application or one portal for a specific business scenario in a **specific environment** based on the full capabilities of Power Apps. This plan provides an easy way for users to get started with Power Apps before broader scale adoption. These per app plans are available to purchase from the Office admin center and you can allocate add-ons in the [Capacity](https://admin.powerplatform.microsoft.com/resources/capacity) area in the Microsoft Power Platform admin center. More information: [Capacity add-ons](capacity-add-on.md).
+Power Apps per app plan allows individual users to run one application or one portal for a specific business scenario in a **specific environment** based on the full capabilities of Power Apps. This plan provides an easy way for users to get started with Power Apps before broader scale adoption. The per app plans are available to purchase from the Office admin center and you can allocate add-ons in the [Capacity](https://admin.powerplatform.microsoft.com/resources/capacity) area in the Microsoft Power Platform admin center. More information: [Capacity add-ons](capacity-add-on.md).
 
 > [!IMPORTANT]
 > - Power Apps per app plans don't appear on the **Billing > Licenses** page in the [Microsoft 365 admin center](https://admin.microsoft.com). Admins should allocate Power Apps per app plans in the [Power Platform admin center](https://admin.powerplatform.microsoft.com). After per app plans are allocated to an environment, they're assigned when apps are shared with users in the environment.
@@ -184,7 +184,7 @@ If you allocate per app capacity to an environment and later reduce per app capa
 
 ### Has per app licensing changed? I thought that each app pass granted a user access to two apps and one portal?  
 
-Yes. Before October 2021 each app pass granted a user access to two apps and one portal. In order to simplify the Per App model, starting in October 2021 each app pass grants a user access to one app or portal.  
+Yes. Before October 2021, each app pass granted a user access to two apps and one portal. In order to simplify the Per App model, starting in October 2021 each app pass grants a user access to one app or portal.  
 
 Customers with existing per app plan subscriptions purchased before October 1, 2021 will maintain the current entitlement during their agreement term. Each existing per app plan license now receive a total of three app passes, entitling users to continue accessing up to two apps and one portal. These app passes are available for allocation to an environment and assignment to users beginning in October 2021. Power Apps per app plan subscriptions purchased after October 1, 2021 will receive one app pass for each license, entitling assigned users to access one app or one portal.  
 
