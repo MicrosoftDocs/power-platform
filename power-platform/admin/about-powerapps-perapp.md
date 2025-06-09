@@ -16,7 +16,7 @@ search.audienceType:
 
 [!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
-Power Apps per app plan allows individual users to run one application or one portal for a specific business scenario in a **specific environment** based on the full capabilities of Power Apps. This plan provides an easy way for users to get started with Power Apps before broader scale adoption. These are available to purchase from the Office admin center and you can allocate add-ons in the [Capacity](https://admin.powerplatform.microsoft.com/resources/capacity) area in the Microsoft Power Platform admin center. More information: [Capacity add-ons](capacity-add-on.md).
+Power Apps per app plan allows individual users to run one application or one portal for a specific business scenario in a **specific environment** based on the full capabilities of Power Apps. This plan provides an easy way for users to get started with Power Apps before broader scale adoption. These per app plans are available to purchase from the Office admin center and you can allocate add-ons in the [Capacity](https://admin.powerplatform.microsoft.com/resources/capacity) area in the Microsoft Power Platform admin center. More information: [Capacity add-ons](capacity-add-on.md).
 
 > [!IMPORTANT]
 > - Power Apps per app plans don't appear on the **Billing > Licenses** page in the [Microsoft 365 admin center](https://admin.microsoft.com). Admins should allocate Power Apps per app plans in the [Power Platform admin center](https://admin.powerplatform.microsoft.com). After per app plans are allocated to an environment, they're assigned when apps are shared with users in the environment.
@@ -55,7 +55,7 @@ After purchase, you allocate per app plans to environments. If you have multiple
 1. In the navigation pane, select **Resources**, then select **Capacity**.
 ---
 
-If your organization purchases add-ons that includes per app plans, an **Add-ons** tile appears on the **Capacity** screen displaying summary information about the capacity add-ons that your organization has.
+If your organization purchases add-ons that include per app plans, an **Add-ons** tile appears on the **Capacity** screen displaying summary information about the capacity add-ons that your organization has.
 
 ![Example of purchased capacity in the admin center.](media/manage-add-on.png "Example of purchased capacity in the admin center")
 
@@ -118,7 +118,7 @@ After completing the first three steps, you can now share apps.
 Share the model-driven app. See [Share a model-driven app with Power Apps](/powerapps/maker/model-driven-apps/share-model-driven-app). 
 
 > [!IMPORTANT]
-> When the user launches the app, we create the user in the required environment. Users won't get added at the time of app sharing.
+> When the user launches the app, we create the user in the required environment. Users don't get added at the time of app sharing.
 
 ### Sharing canvas apps
 To share canvas apps, see [Share a canvas app in Power Apps](/powerapps/maker/canvas-apps/share-app).  
@@ -178,13 +178,13 @@ The per app license gives a user access to one Power Apps or one portal for a si
 ## Known issues
 
 ### Reducing per app capacity to zero
-If you allocate per app capacity to an environment and later reduce per app capacity to zero, users that were added to Dataverse while per app capacity was greater than zero will **not** get disabled in Dataverse. However, these users won’t be able to launch apps since there's no per app capacity allocated to the environment. Admins should remove the role of the user they don't intend to access the platform.
+If you allocate per app capacity to an environment and later reduce per app capacity to zero, users that were added to Dataverse while per app capacity was greater than zero do **not** get disabled in Dataverse. However, these users aren't able to launch apps since there's no per app capacity allocated to the environment. Admins should remove the role of the user they don't intend to access the platform.
 
 ## FAQ
 
 ### Has per app licensing changed? I thought that each app pass granted a user access to two apps and one portal?  
 
-Yes. before October 2021 each app pass granted a user access to two apps and one portal. In order to simplify the Per App model, starting in October 2021 each app pass grants a user access to one app or portal.  
+Yes. Before October 2021 each app pass granted a user access to two apps and one portal. In order to simplify the Per App model, starting in October 2021 each app pass grants a user access to one app or portal.  
 
 Customers with existing per app plan subscriptions purchased before October 1, 2021 will maintain the current entitlement during their agreement term. Each existing per app plan license now receive a total of three app passes, entitling users to continue accessing up to two apps and one portal. These app passes are available for allocation to an environment and assignment to users beginning in October 2021. Power Apps per app plan subscriptions purchased after October 1, 2021 will receive one app pass for each license, entitling assigned users to access one app or one portal.  
 
@@ -201,7 +201,7 @@ The Power Apps per app plan assignment report is available in [license consumpti
 Power Apps per user plan is a user license assigned by admins from https://admin.microsoft.com. Once the user has this license, they can access any number of apps created using Power Apps. However, the Power Apps per app plan provides a capacity to run apps and the management experience for this license is in the Power Platform admin center. The license is assigned to users when apps in the environment are shared with them. Admins allocate the capacity of per app to an environment and the makers share the app with users. This sharing consumes the per app capacity. Once the reporting is available, admins can see the users who are consuming capacity in the Power Platform admin center and not in the Microsoft 365 admin center.
 
 ### Can I assign Power Apps per app plans in the Microsoft 365 admin center (admin.microsoft.com)? 
-No. Although after purchasing Power Apps per app plans they appear in [https://admin.microsoft.com](https://admin.microsoft.com), they shouldn't be assigned to users in this website. Power Apps per app plans are to be allocated to an environment by an admin in [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com). After per app plans are allocated to an environment, the plans are assigned to users when apps are shared with users in the environment.
+No. Although after purchasing Power Apps per app plans they appear in [https://admin.microsoft.com](https://admin.microsoft.com), they shouldn't be assigned to users in this website. Admin allocates Power Apps per app plans to an environment in [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com). After per app plans are allocated to an environment, the plans are assigned to users when apps are shared with users in the environment.
 
 ### Why are makers prompted to start a trial when creating a premium connection using gateways? 
 This is an artifact of previous, but no longer required, licenses being assigned to Power Apps makers. This license check and prompt to start a trial will eventually be removed. 
@@ -218,6 +218,6 @@ Yes. If a user account is disabled in an environment, there are three different 
 3. Add per app capacity to an environment, use [this Power Automate flow template](https://us.flow.microsoft.com/galleries/public/templates/6e4162ca7afc48479e3ad1caadc6c1e6/force-sync-azure-active-directory-group-members-to-specified-cds-instance/) to enable many disabled users in an environment which an admin can run to force the sync operation to enable users. 
 
 ### Power Automate capabilities included with Per App plans
-A Power Apps Per App plan assignment doesn't give user the ability to create or own Power Automate flows that user Premium features. Creating and owning flows using Premium features requires assignment of a Power Apps Per User or Power Automate Per User license. This doesn't apply for flows [associated to an app](/power-platform/admin/powerapps-powershell#associate-in-context-flows-to-an-app).
+A Power Apps Per App plan assignment doesn't give user the ability to create or own Power Automate flows that user Premium features. Creating and owning flows using Premium features requires assignment of a Power Apps Per User or Power Automate Per User license. This requirement doesn't apply for flows [associated to an app](/power-platform/admin/powerapps-powershell#associate-in-context-flows-to-an-app).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
