@@ -3,21 +3,23 @@ title: "Manage group teams  | MicrosoftDocs"
 description: About managing group teams 
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 03/21/2024
+ms.date: 06/09/2025
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
 ms.reviewer: sericks
+ms.contributors:
+  - lsuresh
+contributors:
+  - lavanyapg
 search.audienceType: 
   - admin
 ---
 # Manage group teams
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 ## About group teams
 
-A Microsoft Entra *group* team. Similar to *owner* team, a Microsoft Entra group team can own records and can have security roles assigned to the team. There are two *group* team types, and they correspond directly to the Microsoft Entra group types – Security and Microsoft 365. The *group* security role can be just for the team or for team member with User privileges [member's privilege inheritance](security-roles-privileges.md#team-members-privilege-inheritance). Team members are dynamically derived (added and removed) when they access the environment based on their Microsoft Entra group membership. 
+A Microsoft Entra *group* team is similar to *owner* team. A Microsoft Entra group team can own records and can have security roles assigned to the team. There are two *group* team types, and they correspond directly to the Microsoft Entra group types – Security and Microsoft 365. The *group* security role can be just for the team or for team member with User privileges [member's privilege inheritance](security-roles-privileges.md#team-members-privilege-inheritance). Team members are dynamically derived (added and removed) when they access the environment based on their Microsoft Entra group membership. 
 
 ### Using Microsoft Entra groups to manage a user's app and data access 
 
@@ -44,12 +46,27 @@ When users are deleted or disabled in Microsoft Entra ID or removed from the Mic
 > [!NOTE]
 > The deleted or disabled group user remains in the Power Platform Dataverse environment if the user didn't access the environment.
 
-To remove the user from the Dataverse group team:
+To remove the user from a Dataverse group team, perform the following steps:
 
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com). 
+# [New admin center](#tab/new)
+ 
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. Select **Manage** in the navigation pane.
+1. In the **Manage** pane, select **Environments**. 
 1. Select an environment, and then select **Settings** > **Users + permissions** > **Users**.
 1. Search and select the user.
-1. On the User form, click on the **...** command.
+1. On the User form, click on the **...** menu.
+1. Select the **Manage user in Dynamics 365** option.
+1. On the **User** page, select the Dataverse group team you want to remove the user from.
+1. Select the **Delete** button.
+
+# [Classic admin center](#tab/classic)
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com). 
+1. Go to **Environments**.
+1. Select an environment, and then select **Settings** > **Users + permissions** > **Users**.
+1. Search and select the user.
+1. On the User form, click on the **...** menu.
 1. Select the **Manage user in Dynamics 365** option.
 1. On the **User** page, select the Dataverse group team you want to remove the user from.
 1. Select the **Delete** button.
@@ -84,37 +101,51 @@ For more information, see [Assign a record to a user or team](/powerapps/user/as
 
 ## Create a group team
 
+### Pre-requisites to create a group team 
+
 1. Make sure that you have the System Administrator, Sales Manager, Vice President of Sales, Vice President of Marketing, or CEO-Business Manager security role or equivalent permissions.
 
    Check your security role:
    - Follow the steps in [View your user profile](/powerapps/user/view-your-user-profile).
    - Don't have the correct permissions? Contact your system administrator.
 
-   Prerequisites:
-   1. A Microsoft Entra Group is required for each group team.
-   2. Obtain the Microsoft Entra Group's **ObjectID** from your https://portal.azure.com site.
-   3. Create a custom security role that contains privileges per your team's collaboration requirement. See the discussion of [member's inherited privileges](security-roles-privileges.md#team-members-privilege-inheritance) if you need to extend the team member's privileges directly to a user.
+1. A Microsoft Entra Group is required for each group team.
+1. Obtain the Microsoft Entra Group's **ObjectID** from your https://portal.azure.com site.
+1. Create a custom security role that contains privileges per your team's collaboration requirement. See the discussion of [member's inherited privileges](security-roles-privileges.md#team-members-privilege-inheritance) if you need to extend the team member's privileges directly to a user.
 
-2. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com). 
+### Create a group team in Power Platform admin center
 
-3. Select an environment, and then select **Settings** > **Users + permissions** > **Teams**.
+To create a group team in the Power Platform admin center. perform the following steps:
 
-4. Select **+ Create team**.
+# [New admin center](#tab/new)
+ 
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. Select **Manage** in the navigation pane.
+1. In the **Manage** pane, select **Environments**. 
+1. Select an environment, and then select **Settings** > **Users + permissions** > **Teams**.
+1. Select **+ Create team**.
 
-5. Specify the following fields:   
+# [Classic admin center](#tab/classic)
+
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com). 
+1. Select an environment.
+1. Select **Settings** > **Users + permissions** > **Teams**.
+1. Select **+ Create team**.
+
+---
+
+You'll need to specify the following fields:   
 
    - **Team name:** Be sure this name is unique within a business unit.
    - **Description:** Enter a description of the team.
    - **Business unit:** Select the business unit from the dropdown list.
    - **Administrator:** Search for users in the organization. Start entering characters.
-   - **Team type:** Select the team type from the dropdown list.
+   - **Team type:** Select the team type from the dropdown list. A team can be either the Owner, Access, Microsoft Entra Security group, or the Microsoft Entra Office group type. 
 
    :::image type="content" source="media/dataverse-team-manage-new-team.png" alt-text="Screenshot of settings for a new Dataverse team.":::
    
-   > [!NOTE]
-   > A team can be one of the following types: Owner, Access, Microsoft Entra Security group, or Microsoft Entra Office group. 
-
-6. If the team type is Microsoft Entra Security group or Microsoft Entra Office group, you must also enter these fields:
+If the team type is Microsoft Entra Security group or Microsoft Entra Office group, you must also enter these fields:
 
    - **Group name:** Start entering text to select an existing Microsoft Entra group name. These groups are precreated in Microsoft Entra ID.
    - **Membership type:** Select the membership type from the dropdown list. See [How Microsoft Entra security group members match to Dataverse group team members](#how-microsoft-entra-security-group-members-match-to-dataverse-group-team-members).
