@@ -2,13 +2,14 @@
 title: "Set up customer engagement apps to use SharePoint Online  | MicrosoftDocs"
 description: Set up customer engagement apps to use SharePoint Online
 author: Mattp123
-
+contributor: yingchin
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 03/30/2020
+ms.date: 06/09/2025
 ms.subservice: admin
 ms.custom: NewPPAC
 ms.author: matp
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -27,12 +28,10 @@ When you use SharePoint Online with customer engagement apps—including Dynamic
 > [!IMPORTANT]
 >  This topic is for organizations who wish to deploy for the first time or upgrade to server-based SharePoint integration. After you enable server-based SharePoint integration, you can't revert to the previous client-based authentication method.  
 
-To set up customer engagement apps to use SharePoint Online, complete the following steps.  
-  
-<a name="BKMK_AssignPermission"></a>   
+To set up customer engagement apps to use SharePoint Online, complete the following steps.     
 
 ## Assign user permissions to the Team SharePoint site  
- Your customer engagement apps and [!INCLUDE[pn_MS_Office_365](../includes/pn-ms-office-365.md)] users aren't automatically allowed access to your SharePoint sites. You must work within the SharePoint site to assign specific permission levels to individual users or groups.  
+Your customer engagement apps and [!INCLUDE[pn_MS_Office_365](../includes/pn-ms-office-365.md)] users aren't automatically allowed access to your SharePoint sites. You must work within the SharePoint site to assign specific permission levels to individual users or groups.  
   
 #### Assign users to the Team site  
   
@@ -54,21 +53,17 @@ To set up customer engagement apps to use SharePoint Online, complete the follow
   
 For more information about SharePoint permissions, see [Introduction: Control user access with permissions](https://support.office.com/Article/Introduction-Control-user-access-with-permissions-ab2d1ab1-07cf-4c69-bdd9-390bfd787b26)  
   
-<a name="BKMK_ConfigureDocManage"></a>  
- 
 ## Configure customer engagement apps for SharePoint document management  
- If your organization is new and doesn't deploy document management, see [Configure a new organization](../admin/set-up-dynamics-365-online-to-use-sharepoint-online.md#BKMK_ConfigNewOrg).  
+If your organization is new and doesn't deploy document management, see [Configure a new organization](../admin/set-up-dynamics-365-online-to-use-sharepoint-online.md#BKMK_ConfigNewOrg).  
   
- If your organization is already using document management with [!INCLUDE[pn_list_component_short](../includes/pn-list-component-short.md)], you must switch to server-based SharePoint integration. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Switching from the list component or changing the deployment](switching-list-component-changing-deployment.md)  
+If your organization is already using document management with [!INCLUDE[pn_list_component_short](../includes/pn-list-component-short.md)], you must switch to server-based SharePoint integration. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Switching from the list component or changing the deployment](switching-list-component-changing-deployment.md)  
   
 > [!IMPORTANT]
 >  Server-based SharePoint integration uses the entity display name to build the SharePoint library. When you upgrade to server-based SharePoint integration, be sure to check that the display names in your document library on SharePoint match the entity display names. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] ["Validation Error" when you try to configure server-based SharePoint integration for Microsoft Dynamics CRM Online and SharePoint Online](https://go.microsoft.com/fwlink/p/?LinkID=402112).  
   
  ![SharePoint library name and entity display name.](../admin/media/crm-itpro-crmo365tg-sharepointname.png "SharePoint library name and entity display name")  
   
- These names should match.  
-  
-<a name="BKMK_ConfigNewOrg"></a>   
+These names should match.   
 
 ### Configure a new organization  
 If your organization doesn't deploy document management, an alert message appears when a System Administrator logs in, prompting them to enable server-based SharePoint integration.  
@@ -78,7 +73,8 @@ If your organization doesn't deploy document management, an alert message appear
 > [!NOTE]
 > If you don't see the alert and haven't enabled server-based SharePoint integration, clear your browser cache or open customer engagement apps in an InPrivate browsing window to trigger the alert again. Once server-based integration is configured, the alert no longer appears.  
 
-#### [Modern admin center](#tab/new)
+#### [New admin center](#tab/new)
+
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
@@ -88,6 +84,7 @@ If your organization doesn't deploy document management, an alert message appear
 1. On the **Document management** page, select **Enable server-based SharePoint integration**.
    
 #### [Classic admin center](#tab/classic)
+
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Environments**.
 1. On the **Environments** page, select an environment.
@@ -97,23 +94,21 @@ If your organization doesn't deploy document management, an alert message appear
 ---
 
 In the **Enable Server-based SharePoint Integration** dialog:
-1. Click **Next**.  
-1. Choose **Online** for where your SharePoint sites are located, then click **Next**.  
-1. Enter the SharePoint site URL to use with server-based integration, then click **Next**.   
+1. Select **Next**.  
+1. Choose **Online** for where your SharePoint sites are located, then select **Next**.  
+1. Enter the SharePoint site URL to use with server-based integration, then select **Next**.   
   
    > [!TIP]
    >  To see your SharePoint site collections, in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)], select **Admin centers** > **SharePoint**, and then select **site collections**. 
   
-   The URL is checked for being a valid SharePoint online site and for existing in the same [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] tenant as your organization. Once server-based SharePoint integration is enabled, you can't go back to the previous client-side integration.
+The URL is checked for being a valid SharePoint online site and for existing in the same [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] tenant as your organization. Once server-based SharePoint integration is enabled, you can't go back to the previous client-side integration.
    
-1. Click **Finish** to apply the changes.
+1. Select **Finish** to apply the changes.
 
 ### Next steps  
 Once server-based SharePoint integration is enabled, you need to enable the entities you want available for document management integration. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Enable document management on entities](enable-sharepoint-document-management-specific-entities.md)    
 
-Once server-based SharePoint integration is enabled, you can also enable integration with OneNote and OneDrive. More information: [Set up OneNote integration](set-up-onenote-integration-in-dynamics-365.md) and [Enable OneDrive for Business (online)](enable-onedrive-for-business.md)
-
-<a name="BKMK_UsingDocManage"></a>   
+Once server-based SharePoint integration is enabled, you can also enable integration with OneNote and OneDrive. More information: [Set up OneNote integration](set-up-onenote-integration-in-dynamics-365.md) and [Enable OneDrive for Business (online)](enable-onedrive-for-business.md)   
 
 ## Using Document Management  
  You're now ready to add document storage locations to the entities you enabled and start managing documents. Begin by opening a document management-enabled record (for example, Contact).  
@@ -173,9 +168,7 @@ As a workaround, you can set the unmanaged devices policy to "Allow full access 
    > [!div class="mx-imgBorder"] 
    > ![SharePoint unmanaged devices allow full accessl.](media/sharepoint-unmanaged-devices-allow-full-access.png "SharePoint unmanaged devices allow full access")
 
-5. Select **Ok**.
-
-<a name="BKMK_info_trans_CRMtoSP"></a>   
+5. Select **Ok**.   
 
 ## Information transmitted between customer engagement apps and SharePoint when you use server-based SharePoint integration  
  When you use the document management feature in customer engagement apps by using server-based SharePoint integration, the following information is transmitted between customer engagement apps and SharePoint:  
@@ -184,8 +177,5 @@ As a workaround, you can set the unmanaged devices policy to "Allow full access 
 
 ### See also  
  [Manage your documents using SharePoint](manage-documents-using-sharepoint.md)   
-
-
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
