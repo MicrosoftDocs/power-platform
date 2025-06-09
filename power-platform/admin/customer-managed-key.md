@@ -564,43 +564,43 @@ To change your encryption key, create a new key and a new enterprise policy. You
 ##### [New admin center](#tab/new)
 
 1. In [Azure portal](https://ms.portal.azure.com/), create a new key and a new enterprise policy. More information:  [Create encryption key and grant access](#create-encryption-key-and-grant-access) and [Create an enterprise policy](#create-enterprise-policy)
-1. Grant the new enterprise policy [access to the old key](customer-managed-key.md#grant-enterprise-policy-permissions-to-access-key-vault).
-1. After the new key and enterprise policy are created, Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-1. In the navigation pane, select **Security**.
-1. In the **Security** pane, select **Data and Privacy** under **Settings**.
-1. Select **Customer-managed encryption key** to go to the Enterprise Policies page.
-1. Select the **Environment with policies** tab, and then find the environment you want to remove from customer-managed key.
-1. Select the **All policies** tab, select the environment you verified in step 2, and then select **Edit policy** on the command bar.
+2. Grant the new enterprise policy [access to the old key](customer-managed-key.md#grant-enterprise-policy-permissions-to-access-key-vault).
+3. After the new key and enterprise policy are created, Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+4. In the navigation pane, select **Security**.
+5. In the **Security** pane, select **Data and Privacy** under **Settings**.
+6. Select **Customer-managed encryption key** to go to the Enterprise Policies page.
+7. Select the **Environment with policies** tab, and then find the environment you want to remove from customer-managed key.
+8. Select the **All policies** tab, select the environment you verified in step 2, and then select **Edit policy** on the command bar.
    <image>
-1. Select **Remove environment** on the command bar, select the environment you want to remove, and then select **Continue**.
-1. Select **Save**.
-1. Repeat steps 2-10 until all environments in the enterprise policy have been removed.
+9. Select **Remove environment** on the command bar, select the environment you want to remove, and then select **Continue**.
+10. Select **Save**.
+11. Repeat steps 2-10 until all environments in the enterprise policy have been removed.
 
   > [!IMPORTANT]
   > The environment is disabled when it's removed from the enterprise policy to revert the data encryption to the Microsoft-managed key. **Do not delete or disable the key, delete or disable the key vault, or remove the enterprise policy's permissions to the key vault**. **Grant the new enterprise policy to the old key vault**. The key and key vault's access is necessary to support database restoration. You may delete and remove the enterprise policy's permissions after 30 days.
 
-1. After all the environments are removed, from the Power Platform admin center, go to the Enterprise Policies page.
-1. Select the new enterprise policy, and then select **Edit policy**.
-1. Select **Add environment**, select the environments that you want to add, and then select **Continue**.
+12. After all the environments are removed, from the Power Platform admin center, go to the Enterprise Policies page.
+13. Select the new enterprise policy, and then select **Edit policy**.
+14. Select **Add environment**, select the environments that you want to add, and then select **Continue**.
 
 ##### [Classic admin center](#tab/classic)
 
 1. In [Azure portal](https://ms.portal.azure.com/), create a new key and a new enterprise policy. More information:  [Create encryption key and grant access](#create-encryption-key-and-grant-access) and [Create an enterprise policy](#create-enterprise-policy)
-1. Grant the new enterprise policy [access to the old key](customer-managed-key.md#grant-enterprise-policy-permissions-to-access-key-vault).
-1. After the new key and enterprise policy are created, go to **Policies** > **Enterprise policies**.
-1. Select the **Environment with policies** tab, and then find the environment you want to remove from customer-managed key.
-1. Select the **All policies** tab, select the environment you verified in step 2, and then select **Edit policy** on the command bar.
+2. Grant the new enterprise policy [access to the old key](customer-managed-key.md#grant-enterprise-policy-permissions-to-access-key-vault).
+3. After the new key and enterprise policy are created, go to **Policies** > **Enterprise policies**.
+4. Select the **Environment with policies** tab, and then find the environment you want to remove from customer-managed key.
+5. Select the **All policies** tab, select the environment you verified in step 2, and then select **Edit policy** on the command bar.
    :::image type="content" source="media/cmk-ppac-remove-env-policy.png" alt-text="Remove an environment from customer-managed key":::
-1. Select **Remove environment** on the command bar, select the environment you want to remove, and then select **Continue**.
-1. Select **Save**.
-1. Repeat steps 2-6 until all environments in the enterprise policy have been removed.
+6. Select **Remove environment** on the command bar, select the environment you want to remove, and then select **Continue**.
+7. Select **Save**.
+8. Repeat steps 2-7 until all environments in the enterprise policy have been removed.
 
   > [!IMPORTANT]
   > The environment is disabled when it's removed from the enterprise policy to revert the data encryption to the Microsoft-managed key. **Do not delete or disable the key, delete or disable the key vault, or remove the enterprise policy's permissions to the key vault**. **Grant the new enterprise policy to the old key vault**. The key and key vault's access is necessary to support database restoration. You may delete and remove the enterprise policy's permissions after 30 days.
 
-1. After all the environments are removed, from the Power Platform admin center, go to **Enterprise policies**.
-1. Select the new enterprise policy, and then select **Edit policy**.
-1. Select **Add environment**, select the environments that you want to add, and then select **Continue**.
+9. After all the environments are removed, from the Power Platform admin center, go to **Enterprise policies**.
+10. Select the new enterprise policy, and then select **Edit policy**.
+11. Select **Add environment**, select the environments that you want to add, and then select **Continue**.
 
 ---
 
