@@ -71,6 +71,9 @@ To remove the user from a Dataverse group team, perform the following steps:
 1. On the **User** page, select the Dataverse group team you want to remove the user from.
 1. Select the **Delete** button.
 
+
+---
+
 Note that if you accidentally deleted an active group user, the group user will be added back to the Dataverse group team the next time the user accesses the environment.
    
 #### Remove user access at run time 
