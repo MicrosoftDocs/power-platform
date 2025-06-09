@@ -106,15 +106,15 @@ For more information, see [Assign a record to a user or team](/powerapps/user/as
 
 ### Pre-requisites to create a group team 
 
-1. Make sure that you have the System Administrator, Sales Manager, Vice President of Sales, Vice President of Marketing, or CEO-Business Manager security role or equivalent permissions.
+- Make sure that you have the System Administrator, Sales Manager, Vice President of Sales, Vice President of Marketing, or CEO-Business Manager security role or equivalent permissions.
 
    Check your security role:
    - Follow the steps in [View your user profile](/powerapps/user/view-your-user-profile).
    - Don't have the correct permissions? Contact your system administrator.
 
-1. A Microsoft Entra Group is required for each group team.
-1. Obtain the Microsoft Entra Group's **ObjectID** from your https://portal.azure.com site.
-1. Create a custom security role that contains privileges per your team's collaboration requirement. See the discussion of [member's inherited privileges](security-roles-privileges.md#team-members-privilege-inheritance) if you need to extend the team member's privileges directly to a user.
+- A Microsoft Entra Group is required for each group team.
+- Obtain the Microsoft Entra Group's **ObjectID** from your https://portal.azure.com site.
+- Create a custom security role that contains privileges per your team's collaboration requirement. See the discussion of [member's inherited privileges](security-roles-privileges.md#team-members-privilege-inheritance) if you need to extend the team member's privileges directly to a user.
 
 ### Create a group team in Power Platform admin center
 
