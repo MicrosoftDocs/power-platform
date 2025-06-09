@@ -520,9 +520,12 @@ Follow these steps if you want to return to a Microsoft managed encryption key.
    > [!NOTE]
    > The environment's encryption status can be:
    >
-   > - **Encrypting** - The customer managed key encryption process is running.
-   > - **Encrypting - online** - All core services encryption that required system downtime is complete and system is enabled for online use. 
+   > - **Encrypting** - The customer managed key encryption process is running and the system is disabled for online use. 
+   > - **Encrypting - online** - All core services encryption that required system downtime is complete and system is enabled for online use.
    > - **Encrypted** - The Enterprise policy encryption key is active and the environment is encrypted with your key.
+   > - **Reverting** - The encryption key is being changed from customer managed key to Microsoft managed key and the system is disabled for online use.
+   > - **Reverting - online** - All core services encrytion that required system downtime have reverted the key and the system is enabled for online use.
+   > - **Microsoft Managed key** - The Microsoft managed key encryption is active.  
    > - **Failed** - The Enterprise policy encryption key is not used by **all** Dataverse storage services. They require more time to process and you can re-run the **Add environment** operation. Contact Support if the re-run fails.
    >
    >      A **Failed** encryption status doesn't impact your environment data and its operations. This means that some of the Dataverse storage services are encrypting your data with your key and some continue to use the Microsoft-managed key. A revert isn't recommended as when you re-run the **Add environment** operation, the service resumes from where it left off.
