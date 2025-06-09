@@ -5,8 +5,9 @@ author: srpoduri
 ms.subservice: admin
 ms.author: sripod
 ms.reviewer: sericks
-ms.custom: "admin-security"
-
+ms.custom: 
+  - "admin-security"
+  - NewPPAC
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 07/23/2024
@@ -42,22 +43,34 @@ When an environment is created with a Dataverse database or a Dataverse database
 
 **To add users to an environment that has a Dataverse database**
 
-1. From the Microsoft [Power Platform admin center](https://admin.powerplatform.microsoft.com), select the environment to which you want to add users. 
+#### [New admin center](#tab/new)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. on the **Environments** page, select the environment where you want to add users.
+1. In the command bar, select **Settings**. 
+1. Expand **Users + permissions**, then select **Users**.
+   
+#### [Classic admin center](#tab/classic)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Environments**.
+1. on the **Environments** page, select the environment where you want to add users.
+1. In the command bar, select **Settings**.  
+1. Expand **Users + permissions**, then select **Users**. 
+---
 
-2. Select **Settings** > **Users + permissions** > **Users**. 
+On the **Users** page:
+- View the list of users already added to the environment, including those with enabled and disabled status. More information: [Enable or disable users](create-users.md#enable-or-disable-user-accounts)
+  
+- Search the user list to check if the user you want to add is already present, as automatic user addition may have added them. If the user is not found, click **Add user** in the command bar. 
 
-   You'll see the list of users that have already been added to the environment. This user list includes users with enabled and disabled status. More information: [Enable or disable users](create-users.md#enable-or-disable-user-accounts) 
+- In the **Add user** side pane:
+  - Enter the user's name or email address and select it.
+  - Click **Add** to add them to the environment. Ensure the requirements for successfully adding a user are met—see [enable a user in an environment](create-users.md#enable-or-disable-user-accounts) for details. 
 
-3. Check to see whether the user you want to add might already be present in the environment by doing a search (because automatic user addition might have added the user already). If you don't find the user in the environment yet, select **Add user**. 
+- On the **Users** page, select **Refresh** to update the list and see the added user. 
 
-   > [!div class="mx-imgBorder"] 
-   > ![Add user.](media/add-user.png "Add user")
-
-4. In the **Add user** pane, enter the user's name or email address, select it, and add them to the environment. Note the requirements for successfully adding a user, and see [enable a user in an environment](create-users.md#enable-or-disable-user-accounts) for details about how to ensure the requirements are met. 
-
-5. Select **Refresh** to see the added user in the list.
-
-6. After a user is added to the environment, [assign a security role to the user](database-security.md) to configure their access to resources in the environment. 
+- Once a user is added to the environment, [assign a security role to the user](database-security.md) to define their access to resources. 
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
