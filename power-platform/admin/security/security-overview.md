@@ -94,7 +94,7 @@ As an admin, you can now view the percentage of environments in your tenant that
 
 If you prefer to take this action later, select **Not now** to dismiss the prompt and revisit when ready.
 
-By using environment management, you’re taking a proactive step toward stronger, more consistent security across your organization.
+By using [environment management](../admin/environment-management-overview.md), you’re taking a proactive step toward stronger, more consistent security across your organization.
 
 ## Reactive governance through recommendations
 
