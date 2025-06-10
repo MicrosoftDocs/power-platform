@@ -2,13 +2,16 @@
 title: About Power Apps per app plans
 description: About Power Apps per app plans 
 author: alaug
+contributors: 
+  - yingchin
+  - sericks
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 05/29/2025
+ms.date: 06/09/2025
 ms.subservice: admin
 ms.custom: NewPPAC
 ms.author: alaug
-ms.reviewer: sericks
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -19,23 +22,24 @@ search.audienceType:
 Power Apps per app plan allows individual users to run one application or one portal for a specific business scenario in a **specific environment** based on the full capabilities of Power Apps. This plan provides an easy way for users to get started with Power Apps before broader scale adoption. The per app plans are available to purchase from the Office admin center and you can allocate add-ons in the [Capacity](https://admin.powerplatform.microsoft.com/resources/capacity) area in the Microsoft Power Platform admin center. More information: [Capacity add-ons](capacity-add-on.md).
 
 > [!IMPORTANT]
-> - Power Apps per app plans don't appear on the **Billing > Licenses** page in the [Microsoft 365 admin center](https://admin.microsoft.com). Admins should allocate Power Apps per app plans in the [Power Platform admin center](https://admin.powerplatform.microsoft.com). After per app plans are allocated to an environment, they're assigned when apps are shared with users in the environment.
+> Power Apps per app plans don't appear on the **Billing > Licenses** page in the [Microsoft 365 admin center](https://admin.microsoft.com).
+>
+> As an admin, you should allocate Power Apps per app plans in the [Power Platform admin center](https://admin.powerplatform.microsoft.com). After per app plans are allocated to an environment, they're assigned when apps are shared with users in the environment.
 
-## Steps for using per app plans 
+## Steps for using per app plans
 
-There are three steps to follow to use a per app plan:
+Take these steps to use a per app plan:
 
 1. Purchase Power Apps per app plans
-2. Allocate per app plans to environments
-3. Set up apps to use per app plans
-4. Share the app
+1. Allocate per app plans to environments
+1. Set up apps to use per app plans
+1. Share the app
 
-## Step 1: Purchase per app plans
+### Step 1: Purchase per app plans
 
 You can purchase per app plans from your sales channel or in the [Microsoft 365 admin center](https://admin.microsoft.com).
 
-> [!div class="mx-imgBorder"] 
-> ![Power Apps per app plan.](media/per-app-plan-tile.png "Power Apps per app plan")
+:::image type="content" source="media/powerapps-per-app-plans/per-app-plan-tile.png" alt-text="Power Apps per app plan." lightbox="media/powerapps-per-app-plans/per-app-plan-tile.png":::
 
 You can see your purchased plan in the Microsoft 365 admin center (**Billing** > **Your products**).
 
@@ -46,18 +50,21 @@ Once you made your purchase, there are no further actions needed in the Microsof
 After purchase, you allocate per app plans to environments. If you have multiple environments like test and production, you need to allocate per app plans capacity to all these environments appropriately.
 
 ### [New admin center](#tab/new)
+
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Licensing**.
 1. In the **Licensing** pane, select **Capacity add-ons**.
-   
+
 ### [Classic admin center](#tab/classic)
+
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Resources**, then select **Capacity**.
+
 ---
 
 If your organization purchases add-ons that include per app plans, an **Add-ons** tile appears on the **Capacity** screen displaying summary information about the capacity add-ons that your organization has.
 
-![Example of purchased capacity in the admin center.](media/manage-add-on.png "Example of purchased capacity in the admin center")
+:::image type="content" source="media/powerapps-per-app-plans/manage-add-on.png" alt-text="Example of purchased capacity in the admin center." lightbox="media/powerapps-per-app-plans/manage-add-on.png":::
 
 To allocate add-ons, select **Manage**. For detailed information, see [Allocate or change capacity in an environment](capacity-add-on.md#allocate-or-change-capacity-in-an-environment).
 
@@ -65,67 +72,71 @@ To allocate add-ons, select **Manage**. For detailed information, see [Allocate 
 > As an admin, you can restrict who can allocate add-on capacity to environments. More information: [Control who can allocate add-on capacity](capacity-add-on.md#control-who-can-allocate-add-on-capacity)
 >
 > If there are users who want to transition to per app, follow the two steps in order:
+>
 > 1. Allocate capacity of the per app licenses to the required environment.
 > 2. Remove any user license from the user.
 
 ## Step 3: Set up apps to use per app plans
 
-After an admin allocates Power Apps per app plan to an environment, they're assigned to unlicensed users when an app in that environment is shared with them. 
+After an admin allocates Power Apps per app plan to an environment, they're assigned to unlicensed users when an app in that environment is shared with them.
 
 Follow these steps to turn on assigning per app plans for users when an app is shared with them:
 
 1. Choose the app in [Power Apps](https://make.powerapps.com).
 
-2. Select **...** > **Settings**.
+1. Select **...** > **Settings**.
 
-   ![App settings.](media/app-settings2.png "App settings")
+    :::image type="content" source="media/powerapps-per-app-plans/app-settings2.png" alt-text="App settings." lightbox="media/powerapps-per-app-plans/app-settings2.png":::
 
-3. Under **Per-app licensing**, change the toggle to **On**. The toggle appears in all app setting.
+1. Under **Per-app licensing**, change the toggle to **On**. The toggle appears in all app setting.
    > [!NOTE]
    > In the default environment, go to app settings > **Pass Assignment** and set the **Auto assign per app passes​** toggle to **Yes**.
 
-   ![Per app licensing.](media/per-app-licensing.png "Per app licensing")
+  :::image type="content" source="media/powerapps-per-app-plans/per-app-licensing.png" alt-text="Per app licensing with toggle set to yes." lightbox="media/powerapps-per-app-plans/per-app-licensing.png":::
 
 > [!IMPORTANT]
-> If per app plans aren't allocated to the environment the app is installed in, the toggle is disabled. 
-> 
-> If per app plans are allocated to the environment, the toggle is enabled and defaults to on for apps created after October 1, 2020. 
+> If you allocate per app plans to the environment the app is installed in, this action, by default, enables the toggle to *on* for apps created after October 1, 2020.
+>
+>If you don't allocate per app plans to the environment the app is installed in, this action disables the toggle.
 
 ### Check capacity
+
 Check the **App passes** capacity for the environment with the app you're sharing. Make sure you have sufficient app passes assigned for the number of users using the app.
 
 ### [New admin center](#tab/new)
+
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Licensing**.
 1. In the **Licensing** pane, select **Capacity add-ons**.
-1. Click the **Add-ons** tab.
-   
+1. Select the **Add-ons** tab.
+
 ### [Classic admin center](#tab/classic)
+
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Resources**, then select **Capacity**.
-1. Click the **Add-ons** tab.
----
+1. Select the **Add-ons** tab.
 
-> [!div class="mx-imgBorder"] 
-> ![Add-on capacity assignment.](media/add-on-assignment.png "Add-on capacity assignment")
+---
+:::image type="content" source="media/powerapps-per-app-plans/add-on-assignment.png" alt-text="Display of add-on capacity assignment in Power Platform admin center" lightbox="media/powerapps-per-app-plans/add-on-assignment.png":::
 
 ## Step 4: Share the app
 
-After completing the first three steps, you can now share apps. 
+After completing the first three steps outlined in this article, you are ready to share both model-driven and canvas apps.
 
-### Sharing model-driven apps
+### Share model-driven apps
 
-Share the model-driven app. See [Share a model-driven app with Power Apps](/powerapps/maker/model-driven-apps/share-model-driven-app). 
+To share model-driven apps, see [Share a model-driven app with Power Apps](/powerapps/maker/model-driven-apps/share-model-driven-app).
 
 > [!IMPORTANT]
 > When the user launches the app, we create the user in the required environment. Users don't get added at the time of app sharing.
 
-### Sharing canvas apps
+### Share canvas apps
+
 To share canvas apps, see [Share a canvas app in Power Apps](/powerapps/maker/canvas-apps/share-app).  
 
 ## Consumption of per app licensing
 
-The per app license gives a user access to one Power Apps or one portal for a single environment. See the table for an example of the consumption of licenses by the number of applications and the environments used. 
+The per app license gives a user access to one Power Apps or one portal for a single environment. See the table for an example of the consumption of licenses by the number of applications and the environments used.
 
 <table>
 <thead>
@@ -171,16 +182,19 @@ The per app license gives a user access to one Power Apps or one portal for a si
 </table>
 
 > [!NOTE]
-> - Sharing an app with a user consumes the per app capacity. 
-> - Each user is required to have a license to run an app. 
-> - The consumption reporting for the per app license is a work in progress. Check back for more details once the reporting is launched. 
+>
+> - Sharing an app with a user consumes the per app capacity.
+> - Each user is required to have a license to run an app.
+> - The consumption reporting for the per app license is a work in progress. Check back for more details once the reporting is launched.
 
-## Known issues
-
-### Reducing per app capacity to zero
-If you allocate per app capacity to an environment and later reduce per app capacity to zero, users that were added to Dataverse while per app capacity was greater than zero do **not** get disabled in Dataverse. However, these users aren't able to launch apps since there's no per app capacity allocated to the environment. Admins should remove the role of the user they don't intend to access the platform.
+> [!IMPORTANT]
+>If you allocate per app capacity to an environment and **later reduce per app capacity to zero**, users that were added to Dataverse while per app capacity was greater than zero do **not** get disabled in Dataverse. However, these users aren't able to launch apps since there's no per app capacity allocated to the environment.
+>
+> **As an admin, it's important that you remove the roles of users who are no longer intended to have platform access.**
 
 ## FAQ
+
+This section addresses the most frequently asked questions about Power Apps per app plans.
 
 ### Has per app licensing changed? I thought that each app pass granted a user access to two apps and one portal?  
 
@@ -192,7 +206,7 @@ Customers with existing per app plan subscriptions purchased before October 1, 2
 As of October 2020, the baseline access license is no longer required. Ensure that the per app capacity is allocated to the environment. After this step, you can remove the baseline access license from the user using [these instructions](/microsoft-365/admin/manage/remove-licenses-from-users?&preserve-view=trueview=o365-worldwide). 
 
 ### What happens if I assign a user the Power Apps per user license when earlier they were using apps with the per app license? 
-Once the user is allocated a Power Apps per user license, per app license consumption reports show per app licenses aren’t being consumed.
+Once the user is allocated a Power Apps per user license, per app license consumption reports show per app licenses aren't being consumed.
 
 ### When can I see the list of users who are using the Power Apps per app license?
 The Power Apps per app plan assignment report is available in [license consumption reports](view-license-consumption-issues.md) in Power Platform admin center. 
