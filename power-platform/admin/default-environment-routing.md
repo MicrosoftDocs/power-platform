@@ -15,8 +15,6 @@ search.audienceType:
 
 # Environment routing
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 Environment routing is a premium governance feature. This feature allows Power Platform admins to automatically direct new or existing makers into their own personal developer environments when they visit [make.powerapps.com](https://make.powerapps.com/) or [copilotstudio.microsoft.com](https://copilotstudio.microsoft.com). Environment routing offers makers a personal, safe space to build with Microsoft Dataverse without the fear of others accessing their apps or data.
 
 > [!VIDEO 4e944970-757a-4c21-9349-83bf52672583]
@@ -51,7 +49,7 @@ Environment routing is a tenant-level admin setting. Understand that:
 
 - By default, all developer environments created through environment routing are managed.
 
-## Enable the environment routing setting
+## Turn on the environment routing setting
 
 The **Environment routing** setting is turned off by default and must be turned on using the Power Platform admin center&mdash;both the new admin center or the classic admin center&mdash;or you can use PowerShell.
 
@@ -124,7 +122,7 @@ The **Environment routing** setting is turned off by default and must be turned 
    Set-TenantSettings -RequestBody $tenantSettings
    ```
 
-**How to disable environment routing for your tenant using PowerShell** 
+**How to turn off environment routing for your tenant using PowerShell** 
 ```powershell
 tenantSettings = Get-TenantSettings  
 
@@ -136,6 +134,17 @@ Set-TenantSettings -RequestBody $tenantSettings
 For more information about using PowerShell in Power Apps, see the [Overview](/powershell/powerapps/overview).
 
 ---
+
+## Multi-rule environment routing
+Multi-rule environment routing is an advanced governance feature in Power Platform that allows tenant administrators to define multiple routing rules to control how makers are directed to development environments across various portals, such as Power Apps, Power Automate, and Copilot Studio. 
+
+This capability builds on the original environment routing feature, which routed makers to a single environment group. The multi-rule enhancement introduces flexibility by allowing routing to multiple environment groups based on rule logic. This feature is especially useful for organizations where governance, security, and scalability are critical. It allows: 
+
+- Fine-grained control over where makers build. 
+- Consistent policy enforcement across environments. 
+- Reduced risk of conflicts in shared or default environments.
+
+### How it works
 
 ## Frequently asked questions (FAQs)
 
