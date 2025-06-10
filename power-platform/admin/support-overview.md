@@ -91,8 +91,8 @@ Data may become corrupt due to a variety of reasons, such as malfunctioning soft
 In scenarios where a problem isn't able to be reproduced in a standard non-modified Dynamics installation, the Microsoft Dynamics support team invests best effort support up to four hours of time on a break-fix case to assist. If after four hours, we haven't yet identified the repro steps of an issue, consulting a partner or the community forums is recommended for further investigation and the technical support incident is closed.
 
 ### Can a support incident be reopened?
-- If the software and hardware remains the same&mdash;for example, the product build number&mdash;no new security updates or patches have been installed or no new hotfixes have been installed. If the build is different, submit a new support incident.
-- If the error or problem occurring is the same as the original incident, and it occurs on the same environment/machine/document as the original incident. If the error occurs on a new machine/for a different user/different document, submit a new support incident.
+- If the software and hardware remains the same&mdash;for example, if the product build number is the same and no new security updates or patches have been installed or no new hotfixes have been installed&mdash; then a support incident can be reopened. If the build is different, submit a new support incident.
+- If the error or problem occurring is the same as the original incident, and it occurs on the same environment/machine/document as the original incident, then a support incident can be reopened. If the error occurs on a new machine/for a different user/different document, submit a new support incident.
 - If a new error occurs after installing a hotfix or trying some suggestions from the original incident, it's treated as a new error and hence needs a new support incident.
 - If a case has been closed three or more months, it's recommended to submit a new support incident as the details have likely changed in that time frame.
 
