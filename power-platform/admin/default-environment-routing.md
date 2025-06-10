@@ -146,7 +146,7 @@ This capability builds on the original environment routing feature, which routed
 
 ### How it works
 
-#### [New admin center](#tab/new)
+# [New admin center](#tab/new)
 1. Select which portals&mdash;such as Power Apps or Copilot Studio&mdash;should apply routing. 
     1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).    
     1. In the navigation pane, select **Manage**.   
@@ -185,7 +185,11 @@ This capability builds on the original environment routing feature, which routed
 
 1. Governance Enforcement: 
 
-    1. All routed environments are managed environments, meaning they inherit standardized policies like data retention, AI feature enablement, and ALM settings defined by the admin via environment groups. 
+    1. All routed environments are managed environments, meaning they inherit standardized policies like data retention, AI feature enablement, and ALM settings defined by the admin via environment groups.
+  
+# [Classic admin center](#tab/classic)
+1. Do this.
+1. Do this.
 
 ## Frequently asked questions (FAQs)
 
