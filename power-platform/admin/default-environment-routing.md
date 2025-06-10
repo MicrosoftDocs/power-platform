@@ -158,40 +158,39 @@ This capability builds on the original environment routing feature, which routed
         
     1. In the Set up environment routing pane, in the Turn on environment routing for section, select the product portals for which you want to allow routing. 
 
-Rule Definition: 
+1. Rule Definition: 
 
-Each rule includes a name, target environment group, and audience (either “Everyone” or specific security groups). 
+    1. Each rule includes a name, target environment group, and audience (either “Everyone” or specific security groups). 
+    
+    1. Rules are created through a multi-step panel in the Power Platform Admin Center. 
 
-Rules are created through a multi-step panel in the Power Platform Admin Center. 
+        1. Select “New rule” 
+        
+        1. In the “Create a new routing rule” to panel, select Everyone or select a specific security group: 
 
-Select “New rule” 
+            1. (Note) Selecting Everyone routes all makers into existing or new personal developer environments. 
+            
+            1. Admins can select a security group to limit routing only to the member makers of the configured security group. Learn more in Configure security groups. 
 
-In the “Create a new routing rule” to panel, select Everyone or select a specific security group: 
+    1. (Recommended) Select an environment group to which the newly created developer environments are automatically assigned. This environment group inherits all the defined environment group rules. Learn more in Environment groups. 
 
-(Note) Selecting Everyone routes all makers into existing or new personal developer environments. 
+1. Priority-Based Evaluation: 
 
-Admins can select a security group to limit routing only to the member makers of the configured security group. Learn more in Configure security groups. 
+    1. Rules are ordered by priority. 
 
-(Recommended) Select an environment group to which the newly created developer environments are automatically assigned. This environment group inherits all the defined environment group rules. Learn more in Environment groups. 
+        1. Admins can use the arrows to change the priority of the rules. 
 
-Priority-Based Evaluation: 
+    1. When a maker accesses a portal, the system evaluates the rules in order and applies the first matching rule. 
 
-Rules are ordered by priority. 
+1. Environment Provisioning: 
 
-Admins can use the arrows to change the priority of the rules. 
+    1. If a matching rule is found, the maker is routed to an existing or newly provisioned developer environment. 
+    
+    1. If no rule matches or routing is disabled, the maker is routed to the default environment. 
 
-When a maker accesses a portal, the system evaluates the rules in order and applies the first matching rule. 
+1. Governance Enforcement: 
 
-Environment Provisioning: 
-
-If a matching rule is found, the maker is routed to an existing or newly provisioned developer environment. 
-
-If no rule matches or routing is disabled, the maker is routed to the default environment. 
-
-Governance Enforcement: 
-
-All routed environments are managed environments, meaning they inherit standardized policies like data retention, AI feature enablement, and ALM settings defined by the admin via environment groups. 
-
+    1. All routed environments are managed environments, meaning they inherit standardized policies like data retention, AI feature enablement, and ALM settings defined by the admin via environment groups. 
 
 ## Frequently asked questions (FAQs)
 
