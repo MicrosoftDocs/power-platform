@@ -47,8 +47,6 @@ To access the **Security** > **Overview** page, you must have Microsoft Entra ID
 >
 >     :::image type="content" source="media/managed-environments-icon.png" alt-text="Symbol that indicates that a Managed Environment is required.":::
 
-## Key capabilities
-
 ## Security score (preview)
 
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
@@ -82,6 +80,21 @@ In this case, your total score is 2 &plus; 10 &plus; 5 = 17, and the total possi
 > - The security score is updated every 24 hours. Therefore, any action that is taken might take up to 24 hours to reflect the updated score.
 > - The score calculation considers all environments, both Managed Environments and non-Managed Environments.
 > - If there are no Managed Environments that you can take action on in the recommendation pane, no environments are listed.
+
+## Turn on environment management to unlock full security benefits
+
+To ensure your organization benefits from the complete suite of managed security features, each environment must be configured as a managed environment.
+
+As an admin, you can now view the percentage of environments in your tenant that are currently unmanaged. This new experience allows you to convert environments from unmanaged to managed at scale—with just a few clicks.
+
+1.	Select **Get started** to begin the conversion process. The **Get enhanced secrity features** pane appears.
+1.	Select environments from the **Recommended environments** tab, which prioritizes environments based on data volume. Alternatively, switch to the **All eligible environments** tab to manually select environments you want to convert.
+1.	Review and accept the terms and conditions.
+1.	Select **Turn on environment management** to complete the conversion.
+
+If you prefer to take this action later, select **Not now** to dismiss the prompt and revisit when ready.
+
+By using environment management, you’re taking a proactive step toward stronger, more consistent security across your organization.
 
 ## Reactive governance through recommendations
 
