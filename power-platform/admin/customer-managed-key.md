@@ -15,7 +15,7 @@ ms.contributors:
   - lauravasiliums
   - sericks
   - syalandur
-contributors":
+contributors:
   - paulliew
   - kavehkazms
   - lauravasiliums
