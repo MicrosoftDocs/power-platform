@@ -146,19 +146,14 @@ This capability builds on the original environment routing feature, which routed
 
 ### How it works
 
+#### [New admin center](#tab/new)
 1. Select which portals&mdash;such as Power Apps or Copilot Studio&mdash;should apply routing. 
-
-    1. Go to the Power Platform admin center. 
-        
-    1. In the navigation pane, select Manage. 
-        
-    1. In the Manage pane, select Tenant settings. 
-        
-    1. On the Tenant settings page, select Environment routing. 
-        
-    1. In the Set up environment routing pane, in the Turn on environment routing for section, select the product portals for which you want to allow routing. 
-
-1. Rule Definition: 
+    1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).    
+    1. In the navigation pane, select **Manage**.   
+    1. In the **Manage** pane, select **Tenant settings**.   
+    1. In the **Tenant settings** page, select **Environment routing**.      
+    1. In the **Set up environment routing** pane, in the **Turn on environment routing for** section, select the product portals for which you want to allow routing. 
+1. Define rules using the following steps:
 
     1. Each rule includes a name, target environment group, and audience (either “Everyone” or specific security groups). 
     
