@@ -22,10 +22,10 @@ You can use security enhancements to better secure the customer engagement apps 
 
 ## User session timeout management
 
-The maximum user session timeout of 24 hours is removed. This means that a user isn't forced to sign in with their credentials to use the customer engagement apps and other Microsoft service apps like Outlook that were opened in the same browser session every 24 hours. 
+The 24-hour maximum user session timeout is removed. As a result, users are no longer required to sign in with their credentials every 24 hours to continue using the customer engagement apps and other Microsoft service apps, such as Outlook, within the same browser session. 
 
 ### Honor Microsoft Entra session policy 
-By default, the customer engagement apps leverage the Microsoft Entra [session policy](/azure/active-directory/develop/active-directory-configurable-token-lifetimes) to manage the user session timeout. Customer engagement apps use the Microsoft Entra ID Token with a Policy Check Interval (PCI) claims. Every hour a new Microsoft Entra ID Token is fetched silently in the background and the Microsoft Entra instant policy is enforced (by Microsoft Entra ID). For example, if an administrator disables or deletes a user account, blocks the user from signing in, and an administrator or user revokes the refresh token, the Microsoft Entra session policy is enforced. 
+By default, the customer engagement apps use the Microsoft Entra [session policy](/azure/active-directory/develop/active-directory-configurable-token-lifetimes) to manage the user session timeout. Customer engagement apps use the Microsoft Entra ID Token with a Policy Check Interval (PCI) claims. Every hour a new Microsoft Entra ID Token is fetched silently in the background and the Microsoft Entra instant policy is enforced (by Microsoft Entra ID). For example, if an administrator disables or deletes a user account, blocks the user from signing in, and an administrator or user revokes the refresh token, the Microsoft Entra session policy is enforced. 
 
 This Microsoft Entra ID token refresh cycle continues in the background based on the Microsoft Entra token lifetime policy configurations. Users continue to access the customer engagement apps/Microsoft Dataverse data without the needs to reauthenticate until the Microsoft Entra token lifetime policy expires. 
 
@@ -41,17 +41,17 @@ This Microsoft Entra ID token refresh cycle continues in the background based on
 
 
 ### Resilience to Microsoft Entra outages 
-In the event that there are intermittent Microsoft Entra outages, authenticated users can continue to access the customer engagement apps/Dataverse data if the PCI claims haven't expired or the user has opted in the 'Stay signed in' during authentication. 
+If there are intermittent Microsoft Entra outages, authenticated users can still access the customer engagement apps/Dataverse data if the PCI claims haven't expired or the user has opted in the 'Stay signed in' during authentication. 
 
 ### Set Custom Session timeout for individual environment 
-For environments that require different session timeout values, administrators can continue to set the session timeout and/or inactivity timeout in the System Settings.  These settings override the default Microsoft Entra session policy and users will be directed to Microsoft Entra ID reauthentication when these settings expired.   
+For environments that require different session timeout values, administrators can continue to set the session timeout and/or inactivity timeout in the System Settings. These settings override the default Microsoft Entra session policy and users are directed to Microsoft Entra ID reauthentication when these settings expired.   
 
 ### To change this behavior
 
-- To enforce users to reauthenticate after a predetermined period of time, admins can set a session timeout for their individual environments. Users can only remain signed in the application for the duration of session. The application signs out the user when the session expires. Users need to sign in with their credentials to return to customer engagement apps.
+- To enforce users to reauthenticate after a predetermined period of time, admins can set a session timeout for their individual environments. Users can only remain signed in the application during session. The application signs out the user when the session expires. Users need to sign in with their credentials to return to customer engagement apps.
 
 > [!NOTE]
-> User session timeout isn't enforced in the following:
+> User session timeout isn't enforced in the following apps:
 > 1. [!INCLUDE [pn-oc-online-short](../includes/pn-oc-online-short.md)]
 > 2. [!INCLUDE [pn-dyn-365-phones](../includes/pn-dyn-365-phones.md)] and [!INCLUDE [pn-dyn-365-tablets](../includes/pn-dyn-365-tablets.md)]
 > 3. [!INCLUDE [pn-unified-service-desk](../includes/pn-unified-service-desk.md)] client using [WPF](/dotnet/framework/wpf/) browser (Internet Explorer is supported)
@@ -134,10 +134,10 @@ The Dynamics 365 portal has its own settings to manage its session timeout and i
 
 ## Access management
 
-Customer engagement apps use Microsoft Entra ID as the identity provider. To secure the user's access to customer engagement apps, the following were implemented:
+Customer engagement apps use Microsoft Entra ID as the identity provider. To secure the user's access to customer engagement apps, the following measures were implemented:
 
 - To enforce users to reauthenticate, users are required to sign in with their credentials after they signed out within the application. 
-- To prevent users from sharing credentials to access customer engagement apps, the user access token is validated to ensure that the user who was given access by the identity provider is the same user who is accessing customer engagement apps.
+- To prevent users from sharing credentials to access customer engagement apps, the system validates the user access token to ensure that the identity provider granted access to the same user who is accessing the apps.
 
 
 
