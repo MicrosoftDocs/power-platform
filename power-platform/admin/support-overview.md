@@ -1,7 +1,7 @@
 ---
 title: Support for Microsoft Power Platform and Dynamics 365 apps
 description: Learn more about support options for Microsoft Power Platform and Dynamics 365 apps.
-ms.date: 05/30/2025
+ms.date: 06/10/2025
 ms.reviewer: sericks
 ms.topic: overview
 ms.custom: admin-security
@@ -33,6 +33,12 @@ Initial Response Time is the period from when you submit your support request to
 | Severity A | **Critical business impact**<br><br>Customer’s business has significant loss or degradation of services, and requires immediate attention.| Standard: Less than one hour<br><br>ProDirect: Less than one hour<br><br>Unified enterprise: Less than one hour<br><br>24x7 access| When you select Severity A you confirm that the issue has critical business impact, with severe loss and degradation of services.<br><br>The issue demands an immediate response, and you commit to continuous, 24x7 operation, every day with the Microsoft team until resolution, otherwise, Microsoft may at its discretion decrease the Severity to level B.<br><br>You also ensure that Microsoft has your accurate contact information.|
 | Severity B | **Moderate business impact**<br><br>Customer’s business has moderate loss or degradation of services but work can reasonably continue in an impaired manner.| Standard: Less than four hours<br><br>ProDirect: Less than two hours<br><br>Unified enterprise: Less than two hours<br><br>Business hours access (24x7 access available)| When you select Severity B you confirm that the issue has moderate impact to your business with loss and degradation of services, but workarounds enable reasonable, albeit temporary, business continuity.<br><br>The issue demands an urgent response. If you chose 24x7 when you submit the support request, you commit to a continuous, 24x7 operation, every day with the Microsoft team until resolution, otherwise, Microsoft may at its discretion decrease the severity to level C. If you chose business-hours support when you submit a Severity B incident, Microsoft will contact you during business hours only.<br><br>You also ensure that Microsoft has your accurate contact information.|
 | Severity C | **Minimum business impact**<br><br>Customer’s business is functioning with minor impediments of services.| Standard: Less than eight hours<br><br>ProDirect: Less than four hours<br><br>Unified enterprise: Less than four hours<br><br>Business hours access| When you select Severity C you confirm that the issue has minimum impact to your business with minor impediment of service.<br><br>For a Severity C incident, Microsoft will contact you during business hours only.<br><br>You also ensure that Microsoft has your accurate contact information.|
+
+Keep the following information in mind:
+
+- Based on 24x7 in English for Severity A and B.  For other languages and severities, local language support provided during local business hours. Local languages available are: English, Spanish, French, German, Italian, Portuguese, Traditional Chinese, Simplified Chinese, and Japanese. Translation services may be available for other languages outside of business hours.
+- Microsoft may downgrade the severity level if the customer isn't able to provide adequate resources or responses to enable Microsoft to continue with problem resolution efforts. Other situations where Microsoft may downgrade severity include, but are not limited to, requests for RCA (Root Cause Analysis), issues regarding customized processes or code, tickets with resolutions proposed that are pending customer action.
+- For most countries, business hours are from 9:00 AM to 5:00 PM during week days (weekends and holidays excluded). For North America, business hours are 6:00 AM to 6:00 PM Pacific time, Monday through Friday excluding holidays. In Japan, business hours are from 9:00 AM to 5:30 PM weekdays.
 
 ## Resources
 
