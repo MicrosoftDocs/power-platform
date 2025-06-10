@@ -1,11 +1,14 @@
 ---
 title: Test Engine and Playwright Integration (preview)
 description: Learn how Test Engine applies Playwright to provide robust browser automation capabilities.
-author: grant-archibald-ms
-ms.author: grarchib
+author: pvillads
+ms.author: pvillads
+ms.subservice: test-engine
 ms.date: 05/19/2025
 ms.reviewer: jdaly
 ms.topic: article
+contributors:
+- grant-archibald-ms
 ---
 
 # Test Engine and Playwright integration (preview)

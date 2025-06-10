@@ -1,11 +1,14 @@
 ---
 title: Test Engine module functions reference (preview)
 description: Find available test engine module functions you can use.
-author: grant-archibald-ms
-ms.author: grarchib
+author: pvillads
+ms.author: pvillads
+ms.subservice: test-engine
 ms.date: 05/19/2025
 ms.reviewer: jdaly
 ms.topic: reference
+contributors:
+- grant-archibald-ms
 ---
 
 # Test Engine module functions reference (preview)
