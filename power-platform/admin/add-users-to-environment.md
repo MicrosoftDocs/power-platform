@@ -26,15 +26,15 @@ You don't have to add users to environments that have no Dataverse database, bec
 
 ## Add users to an environment that has a Dataverse database 
 
-When an environment is created with a Dataverse database or a Dataverse database is added to an existing environment, all users in the organization are added automatically to the environment unless a security group is selected as an access filter. Review the following on automatic user addition to environments. 
+When you create an environment with a Dataverse database or add a Dataverse database to an existing environment, the system automatically adds all users in the organization—unless you select a security group as an access filter. Review the following details on automatic user addition to environments. 
 
-- For a user to be successfully added to an environment that has a Dataverse database, the user must meet certain criteria. This same criteria applies to [enabling a user who is already present in an environment](create-users.md#enable-or-disable-user-accounts).  
+- To successfully add a user to an environment with a Dataverse database, the user must meet certain criteria. This same criteria apply to [enabling a user who is already present in an environment](create-users.md#enable-or-disable-user-accounts).  
 
 - Automatic user addition to an environment takes time, especially if your organization is large and access to the environment isn't restricted to any security group. As a best practice, we recommend that you restrict access to your environment to a specific set of users by [associating your environment to a security group](control-user-access.md).
 
 - The system also supports just-in-time (JIT) user provisioning. In this scenario, when users access an environment URL, access requirements are checked at the time of sign-in and qualified users are added to the environment. 
 
-- Adding users to an environment only gives users access to the environment itself, not to any resources (apps and data) in the environment. You need to configure access to resources by [assigning security roles to users](database-security.md). Users with certain Dynamics 365 app licenses will be assigned some security roles by default that only give them read access to the environment's resources.
+- Adding users to an environment only gives users access to the environment itself, not to any resources (apps and data) in the environment. You need to configure access to resources by [assigning security roles to users](database-security.md). Users with certain Dynamics 365 app licenses are assigned default security roles that grant them read-only access to the environment's resources.
 
 - Because it can take a long time to automatically add users to an environment, you can use the following procedure to add specific users to the environment sooner.
 
@@ -60,11 +60,11 @@ When an environment is created with a Dataverse database or a Dataverse database
 ---
 
 On the **Users** page:
-- View the list of users already added to the environment, including those with enabled and disabled status. More information: [Enable or disable users](create-users.md#enable-or-disable-user-accounts)
+- View the list of users already added to the environment, including those users with enabled and disabled status. More information: [Enable or disable users](create-users.md#enable-or-disable-user-accounts)
   
-- Search the user list to check if the user you want to add is already present, as automatic user addition may have added them. If the user is not found, click **Add user** in the command bar. 
+- Search the user list to check if the user you want to add is already present, as automatic user addition may add them. If the user isn't found, click **Add user** in the command bar. 
 
-- In the **Add user** side pane:
+- In the **Add user** pane:
   - Enter the user's name or email address and select it.
   - Click **Add** to add them to the environment. Ensure the requirements for successfully adding a user are met—see [enable a user in an environment](create-users.md#enable-or-disable-user-accounts) for details. 
 
