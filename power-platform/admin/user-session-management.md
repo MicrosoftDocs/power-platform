@@ -7,6 +7,7 @@ ms.topic: concept-article
 ms.date: 05/01/2023
 author: alaug 
 ms.subservice: admin
+ms.custom: NewPPAC
 ms.author: alaug
 ms.reviewer: sericks
 ms.custom: "admin-security"
@@ -58,11 +59,24 @@ For environments that require different session timeout values, administrators c
 > 5. Power Apps canvas apps 
 
 ## Configure session timeout 
-1. In the Power Platform admin center, select an environment. 
 
-2. Select **Settings** > **Product** > **Privacy + Security**.  
-
-3. Set **Session Expiration** and **Inactivity timeout**. These settings apply to all users.
+#### [New admin center](#tab/new)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. On the **Environments** page, select an environment.
+1. In the command bar, select **Settings**. 
+1. Expand **Product**, then select **Privacy + Security**.
+1. Turn on the toggle for **Session Expiration** and enter session timeout values. These settings apply to all users.
+   
+#### [Classic admin center](#tab/classic)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Environments**.
+1. On the **Environments** page, select an environment.
+1. In the command bar, select **Settings**.  
+1. Expand **Product**, then select **Privacy + Security**.
+1. Turn on the toggle for **Session Expiration** and enter session timeout values. These settings apply to all users.
+---
 
 > [!NOTE]
 > **Session timeout** is a server side feature where life time of all sessions are enforced.
@@ -92,11 +106,23 @@ The Dynamics 365 portal has its own settings to manage its session timeout and i
 
 ## Configure inactivity timeout
 
-1. In the Power Platform admin center, select an environment. 
-
-2. Select **Settings** > **Product** > **Privacy + Security**.  
-
-3. Set **Session Expiration** and **Inactivity timeout**. These settings apply to all users.
+#### [New admin center](#tab/new)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. On the **Environments** page, select an environment.
+1. In the command bar, select **Settings**. 
+1. Expand **Product**, then select **Privacy + Security**.
+1. Turn on the toggle for **Inactivity timeout** and set inactivity timeout values. These settings apply to all users.
+   
+#### [Classic admin center](#tab/classic)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Environments**.
+1. On the **Environments** page, select an environment.
+1. In the command bar, select **Settings**.  
+1. Expand **Product**, then select **Privacy + Security**.
+1. Turn on the toggle for **Inactivity timeout** and set inactivity timeout values. These settings apply to all users.
+---
 
 > [!NOTE]
 >  **Inactivity timeout** is a client side feature where client is making decision to primitively sign out based on the inactivity.
