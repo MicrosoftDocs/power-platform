@@ -146,6 +146,53 @@ This capability builds on the original environment routing feature, which routed
 
 ### How it works
 
+1. Select which portals&mdash;such as Power Apps or Copilot Studio&mdash;should apply routing. 
+
+    1. Go to the Power Platform admin center. 
+        
+    1. In the navigation pane, select Manage. 
+        
+    1. In the Manage pane, select Tenant settings. 
+        
+    1. On the Tenant settings page, select Environment routing. 
+        
+    1. In the Set up environment routing pane, in the Turn on environment routing for section, select the product portals for which you want to allow routing. 
+
+Rule Definition: 
+
+Each rule includes a name, target environment group, and audience (either “Everyone” or specific security groups). 
+
+Rules are created through a multi-step panel in the Power Platform Admin Center. 
+
+Select “New rule” 
+
+In the “Create a new routing rule” to panel, select Everyone or select a specific security group: 
+
+(Note) Selecting Everyone routes all makers into existing or new personal developer environments. 
+
+Admins can select a security group to limit routing only to the member makers of the configured security group. Learn more in Configure security groups. 
+
+(Recommended) Select an environment group to which the newly created developer environments are automatically assigned. This environment group inherits all the defined environment group rules. Learn more in Environment groups. 
+
+Priority-Based Evaluation: 
+
+Rules are ordered by priority. 
+
+Admins can use the arrows to change the priority of the rules. 
+
+When a maker accesses a portal, the system evaluates the rules in order and applies the first matching rule. 
+
+Environment Provisioning: 
+
+If a matching rule is found, the maker is routed to an existing or newly provisioned developer environment. 
+
+If no rule matches or routing is disabled, the maker is routed to the default environment. 
+
+Governance Enforcement: 
+
+All routed environments are managed environments, meaning they inherit standardized policies like data retention, AI feature enablement, and ALM settings defined by the admin via environment groups. 
+
+
 ## Frequently asked questions (FAQs)
 
 ### Are the developer environments managed?
