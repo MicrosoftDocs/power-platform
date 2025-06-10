@@ -74,7 +74,7 @@ To allocate add-ons, select **Manage**. For detailed information, see [Allocate 
 > If there are users who want to transition to per app, follow the two steps in order:
 >
 > 1. Allocate capacity of the per app licenses to the required environment.
-> 2. Remove any user license from the user.
+> 1. Remove any user license from the user.
 
 ## Step 3: Set up apps to use per app plans
 
@@ -92,7 +92,7 @@ Follow these steps to turn on assigning per app plans for users when an app is s
    > [!NOTE]
    > In the default environment, go to app settings > **Pass Assignment** and set the **Auto assign per app passes​** toggle to **Yes**.
 
-  :::image type="content" source="media/powerapps-per-app-plans/per-app-licensing.png" alt-text="Per app licensing with toggle set to yes." lightbox="media/powerapps-per-app-plans/per-app-licensing.png":::
+      :::image type="content" source="media/powerapps-per-app-plans/per-app-licensing.png" alt-text="Per app licensing with toggle set to yes." lightbox="media/powerapps-per-app-plans/per-app-licensing.png":::
 
 > [!IMPORTANT]
 > If you allocate per app plans to the environment the app is installed in, this action, by default, enables the toggle to *on* for apps created after October 1, 2020.
