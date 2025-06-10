@@ -21,7 +21,6 @@ contributors
   - lauravasiliums
   - sericks007
   - syalandur24
-
 ---
 # Manage your customer-managed encryption key
 
