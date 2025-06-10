@@ -13,8 +13,6 @@ ms.contributors:
 ---
 # Support for Microsoft Power Platform and Dynamics 365 apps
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 Support is available in markets where Microsoft Power Platform or Dynamics 365 services are offered. Some specific services might not be covered in all regions immediately after general availability.
 
 Support for billing and subscription management-related issues and technical break-fix issues is available at all support levels. Advisory, escalation, and account management services are available at the Professional Direct and Microsoft Unified Support levels.
@@ -43,7 +41,7 @@ Keep the following information in mind:
 ## Resources
 
 ## Technical support vs. advisory services
-- Technical support, _Break-fix_ issues are technical problems you experience while using services. _Break-fix_ is an industry term that refers to _work involved in supporting a technology when it fails in the normal course of its function, which requires intervention by a support organization to be restored to working order_.
+- Technical support, _break-fix_ issues are technical problems you experience while using services. _Break-fix_ is an industry term that refers to _work involved in supporting a technology when it fails in the normal course of its function, which requires intervention by a support organization to be restored to working order_.
 - How functionality works isn't considered a break-fix issue but is more closely related to training. These _how-to_ questions, or advisory services, involve a transfer of knowledge and can often be answered by reviewing product documentation, raising a question in online community forums, or contacting a knowledgeable individual such as a partner. While there might be some elements of knowledge transfer involved in solving a break-fix issue, in general, assisted training isn't included in support plans.
 
 ### What is a preview (beta) service or feature?
