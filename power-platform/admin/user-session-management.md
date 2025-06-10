@@ -18,14 +18,14 @@ search.audienceType:
 
 [!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
-You can use security enhancements to better secure the customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation). 
+You can use security enhancements to protect the customer engagement apps, such as Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation. 
 
 ## User session timeout management
 
 The 24-hour maximum user session timeout is removed. As a result, users are no longer required to sign in with their credentials every 24 hours to continue using the customer engagement apps and other Microsoft service apps, such as Outlook, within the same browser session. 
 
 ### Honor Microsoft Entra session policy 
-By default, the customer engagement apps use the Microsoft Entra [session policy](/azure/active-directory/develop/active-directory-configurable-token-lifetimes) to manage the user session timeout. Customer engagement apps use the Microsoft Entra ID Token with a Policy Check Interval (PCI) claims. Every hour a new Microsoft Entra ID Token is fetched silently in the background and the Microsoft Entra instant policy is enforced (by Microsoft Entra ID). For example, if an administrator disables or deletes a user account, blocks the user from signing in, and an administrator or user revokes the refresh token, the Microsoft Entra session policy is enforced. 
+By default, the customer engagement apps use the Microsoft Entra [session policy](/azure/active-directory/develop/active-directory-configurable-token-lifetimes) to manage the user session timeout. Customer engagement apps use the Microsoft Entra ID Token with a Policy Check Interval (PCI) claims. Every hour a new Microsoft Entra ID Token is fetched silently in the background and the Microsoft Entra instant policy is enforced (by Microsoft Entra ID). For example, when an administrator disables or deletes a user account, blocks the user from signing in, and an administrator or user revokes the refresh token, the system enforces the Microsoft Entra session policy. 
 
 This Microsoft Entra ID token refresh cycle continues in the background based on the Microsoft Entra token lifetime policy configurations. Users continue to access the customer engagement apps/Microsoft Dataverse data without the needs to reauthenticate until the Microsoft Entra token lifetime policy expires. 
 
@@ -41,7 +41,7 @@ This Microsoft Entra ID token refresh cycle continues in the background based on
 
 
 ### Resilience to Microsoft Entra outages 
-If there are intermittent Microsoft Entra outages, authenticated users can still access the customer engagement apps/Dataverse data if the PCI claims haven't expired or the user has opted in the 'Stay signed in' during authentication. 
+If intermittent Microsoft Entra outages occur, authenticated users can still access customer engagement apps and Dataverse data if their PCI claims remain valid or they opt into 'Stay signed in' during authentication. 
 
 ### Set Custom Session timeout for individual environment 
 For environments that require different session timeout values, administrators can continue to set the session timeout and/or inactivity timeout in the System Settings. These settings override the default Microsoft Entra session policy and users are directed to Microsoft Entra ID reauthentication when these settings expired.   
@@ -93,7 +93,7 @@ By default, customer engagement apps don't enforce an inactivity session timeout
 - To enforce users to automatically be signed out after a predetermined period of inactivity, admins can set an inactivity timeout period for each of their environments. The application signs out the user when the inactivity session expires.
 
 > [!NOTE]
-> Inactivity session timeout isn't enforced in the following:
+> Inactivity session timeout isn't enforced in the following apps:
 > 1. [!INCLUDE [pn-oc-online-short](../includes/pn-oc-online-short.md)]
 > 2. [!INCLUDE [pn-dyn-365-phones](../includes/pn-dyn-365-phones.md)] and [!INCLUDE [pn-dyn-365-tablets](../includes/pn-dyn-365-tablets.md)]
 > 3. [!INCLUDE [pn-unified-service-desk](../includes/pn-unified-service-desk.md)] client using [WPF](/dotnet/framework/wpf/) browser (Internet Explorer is supported)
