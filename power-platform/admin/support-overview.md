@@ -15,18 +15,18 @@ ms.contributors:
 
 [!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
-Support is available in markets where Microsoft Power Platform or Dynamics 365 services are offered. Some specific services might not be covered in all regions immediately after general availability (GA).
+Support is available in markets where Microsoft Power Platform or Dynamics 365 services are offered. Some specific services might not be covered in all regions immediately after general availability.
 
-Support for billing and subscription management-related issues and technical break-fix issues is available at all support levels. Advisory, escalation, and account management services are available at the Professional Direct and Microsoft Unified support levels.
+Support for billing and subscription management-related issues and technical break-fix issues is available at all support levels. Advisory, escalation, and account management services are available at the Professional Direct and Microsoft Unified Support levels.
 
 Products and services covered include:
 
-- Microsoft Dynamics 365 and Power Platform services released to General Availability and purchased from Microsoft are covered by all support plans.
-- Microsoft Dynamics 365 and Power Platform Public previews are covered by all support plans.
+- Microsoft Dynamics 365 and Power Platform services released to general availability and purchased from Microsoft are covered by all support plans.
+- Microsoft Dynamics 365 and Power Platform public previews are covered by all support plans.
 - Support for services purchased through another channel (other than purchased online, for example, Enterprise Agreement) are governed by the agreement terms for that purchase.
 
 ## Severity and responsiveness
-Initial Response Time is the period from when you submit your support request to when a Microsoft Support Engineer contacts you and starts working on your support request. The Initial Response Time varies with both the support plan and the Business Impact of the request (also known as Severity). The Initial Response Times for Unified Support plans can be found in [Unified Enterprise Plan Details](https://www.microsoft.com/microsoft-unified/plan-details).
+_Initial response time_ is the period from when you submit your support request to when a Microsoft Support engineer contacts you and starts working on your support request. The initial response time varies with both the support plan and the business impact of the request (also known as _severity_). The initial response times for Unified Support plans can be found in [Unified Enterprise Plan Details](https://www.microsoft.com/microsoft-unified/plan-details).
 
 | Severity level | Customer's situation | Initial response time | Expected custoemr response | 
 |----------------|----------------------|-----------------------|----------------------------|
