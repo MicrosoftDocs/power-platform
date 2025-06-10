@@ -4,7 +4,7 @@ description: Learn how to manage security in the Power Platform admin center by 
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 05/08/2025
+ms.date: 06/10/2025
 ms.custom: NewPPAC
 author: matapg007
 ms.author: matgupta
