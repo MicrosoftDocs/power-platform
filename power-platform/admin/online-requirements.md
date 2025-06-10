@@ -4,7 +4,7 @@ description: Provides information about URLs and IP addresses to be added to the
 author: sericks007
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 02/27/2025
+ms.date: 06/20/2025
 ms.subservice: admin
 ms.author: sericks
 contributors:
@@ -92,6 +92,7 @@ Please add the IP address values for the following service tags.
 | `AzureCloud` | Needed for all Power Platform and Dynamics 365 services. |
 | `MicrosoftAzureFluidRelay` | Needed for real-time collaboration features. |
 | `OneDsCollector` | Needed for gathering telemetry. |
+| `PowerPlatformPlex` | Needed to access external web services from Dataverse sandbox plug-ins. |
 
 The service tags also have a regional scope to define the IP addresses required per Azure datacenter region. For example, to find out the required IP address values for accessing services in the **Australia** region, use the [Azure IP Ranges and Service Tags – Public Cloud](https://www.microsoft.com/download/details.aspx?id=56519) file, and search for `AzureCloud.Australia`. 
 
