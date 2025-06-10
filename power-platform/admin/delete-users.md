@@ -365,11 +365,24 @@ Users with a disabled status can be deleted, in bulk, using the [Remove a large 
    
 ### Review the status of bulk delete job
 
+# [New admin center](#tab/new)
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) and then select an environment.
+1. Select **Manage** in the navigation pane.
+1. In the **Manage** pane, select **Environments**. 
+1. Select a specific environment.
+1. Select **Settings > Audit and logs > System jobs**.
+1. Select the bulk delete job and review the results. The results show records in the **Successes** row that should match the number of records from your previous system job that contained soft deletion. Review a deleted user in the audit log.
+
+# [Classic admin center](#tab/classic)
+
 1. Go to the Power [Platform admin center](https://admin.powerplatform.microsoft.com).
 1. In the navigation pane, select **Environments**.
 1. Select a specific environment.
 1. Select **Settings > Audit and logs > System jobs**.
 1. Select the bulk delete job and review the results. The results show records in the **Successes** row that should match the number of records from your previous system job that contained soft deletion. Review a deleted user in the audit log.
+
+---
 
 If you enabled Dataverse auditing in the environment and in the **User** table, you can see the list of deleted users in the **Audit Summary view**.
 
