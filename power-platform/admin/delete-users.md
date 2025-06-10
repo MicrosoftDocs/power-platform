@@ -223,6 +223,7 @@ There are two ways to soft delete users.
 1. From the drop-down menu, select **Disabled users**.
 1. Select a user from the list.
 1. On the User Form, choose the **Delete** button.
+1. Confirm the deletion by selecting **Delete** in the confirmation dialog.
 
 # [Classic admin center](#tab/classic)
 
@@ -234,30 +235,13 @@ There are two ways to soft delete users.
 1. From the drop-down menu, select **Disabled users**.
 1. Select a user from the list.
 1. On the User Form, choose the **Delete** button.
+1. Confirm the deletion by selecting **Delete** in the confirmation dialog.
 
 ---
 
 The user still exists in the environment as disabled and continues to show in the Disabled Users list. To permanently delete from the environment, go to [Permanently delete users in Power Platform](#permanently-delete-users-in-power-platform) later in this article.
 
 #### Option B: View and soft delete disabled users who were permanently deleted from Microsoft Entra ID
-
-# [New admin center](#tab/new)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) and then select an environment.
-1. Select **Manage** in the navigation pane.
-1. In the **Manage** pane, select **Environments**. 
-1. Select a specific environment.
-1. Select **Settings** > **Users + permissions** > **Users**.
-1. From the command bar, select **Filter**.
-
-   :::image type="content" source="media/filteruser.png" alt-text="Select Filter from the top menu.":::
-
-1. From the drop-down menu, select **Users not in AAD but exist in the environment**.
-1. Select the disabled user you want to delete.
-1. On the User Form, select **Delete**.
-1. Select **Refresh list** to update the list and confirm deletion.
-
-# [Classic admin center](#tab/classic)
 
 1. Go to the Power [Platform admin center](https://admin.powerplatform.microsoft.com).
 1. In the navigation pane, select **Environments**.
@@ -306,23 +290,6 @@ You can delete and remove users with disabled status in Power Platform. You may 
 
 #### Permanently delete users
 
-# [New admin center](#tab/new)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) and then select an environment.
-1. Select **Manage** in the navigation pane.
-1. In the **Manage** pane, select **Environments**. 
-1. Select a specific environment.
-1. Select **Settings** > **Users + permissions** > **Users**.
-1. From the command bar, select **Filter**.
-
-   :::image type="content" source="media/filteruser.png" alt-text="Select Filter from the top menu.":::
-
-1. From the drop-down menu, select **Users not in AAD and soft deleted in the environment**.
-1. Select a soft deleted user to delete the user permanently in the Power Platform environment. Only users who were soft deleted can be deleted permanently.
-1. On the user form, select **Delete**.
-1. Select **Refresh list** to update the list and confirm deletion.
-
-# [Classic admin center](#tab/classic)
 
 1. Go to the Power [Platform admin center](https://admin.powerplatform.microsoft.com).
 1. In the navigation pane, select **Environments**.
@@ -337,8 +304,6 @@ You can delete and remove users with disabled status in Power Platform. You may 
 1. On the user form, select **Delete**.
 1. Select **Refresh list** to update the list and confirm deletion.
 
-
----
 
 > [!NOTE]
 > After users are permanently deleted in Entra ID, any new user record created with the details of a deleted user is a new user object in Entra ID. Such user IDs can't be updated to gain access to the deleted user records in Dataverse. You can [re-assign records](/power-apps/user/assign-or-share-records) from the deleted user to the new user. 
@@ -361,8 +326,6 @@ Users with a disabled status can be deleted, in bulk, using the [Remove a large 
 > In the video, it shows you how to use bulk delete through the bulk deletion process. This is replaced by a **bulk delete** action on the **Settings > Users + permissions > Users** page. 
 
 ### Soft delete users in Power Platform in bulk
-
-
 
 
 1. Go to the Power [Platform admin center](https://admin.powerplatform.microsoft.com).
