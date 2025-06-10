@@ -39,6 +39,11 @@ Keep the following information in mind:
 - For most countries, business hours are from 9:00 AM to 5:00 PM during week days (weekends and holidays excluded). For North America, business hours are 6:00 AM to 6:00 PM Pacific time, Monday through Friday excluding holidays. In Japan, business hours are from 9:00 AM to 5:30 PM weekdays.
 
 ## Resources
+- [Support plans](https://www.microsoft.com/en-us/dynamics-365/)
+- [Dynamics 365 support](https://www.microsoft.com/en-us/dynamics-365/support)
+- [On-premises support](https://support.serviceshub.microsoft.com/supportforbusiness/onboarding?origin=/supportforbusiness/create)
+- [Get support for Microsoft 365 for business](/microsoft-365/admin/get-help-support?view=o365-worldwide)
+- [Volumne licensing information](https://www.microsoft.com/licensing/servicecenter/home.aspx)
 
 ## Technical support vs. advisory services
 - Technical support, _break-fix_ issues are technical problems you experience while using services. _Break-fix_ is an industry term that refers to _work involved in supporting a technology when it fails in the normal course of its function, which requires intervention by a support organization to be restored to working order_.
