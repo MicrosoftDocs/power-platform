@@ -574,7 +574,7 @@ To change your encryption key, create a new key and a new enterprise policy. You
 10. Select **Save**.
 11. Repeat steps 2-10 until all environments in the enterprise policy have been removed.
 
-  > [!IMPORTANT]
+  > [!WARNING]
   > The environment is disabled when it's removed from the enterprise policy to revert the data encryption to the Microsoft-managed key. **Do not delete or disable the key, delete or disable the key vault, or remove the enterprise policy's permissions to the key vault**. **Grant the new enterprise policy to the old key vault**. The key and key vault's access is necessary to support database restoration. You may delete and remove the enterprise policy's permissions after 30 days.
 
 12. After all the environments are removed, from the Power Platform admin center, go to the Enterprise Policies page.
