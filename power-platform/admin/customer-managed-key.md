@@ -587,14 +587,12 @@ A customer tenant can have environments that are encrypted using the Microsoft m
 - [Restore](backup-restore-environments.md)
    The environment to overwrite (the restored to environment) is restricted to the same environment that the backup was taken from or to another environment that is encrypted with the same customer managed key.
 
-   > [!div class="mx-imgBorder"]
-   > ![Restore backup.](media/cmk-restore-backup.png "Restore backup")
+   :::image type="content" source="media/customer-managed-key/cmk-restore-backup.png" alt-text="Restore backup":::
 
 - [Copy](copy-environment.md)
    The environment to overwrite (the copied to environment) is restricted to another environment that is encrypted with the same customer managed key.
 
-   > [!div class="mx-imgBorder"]
-   > ![Copy environment.](media/cmk-copy-environment.png "Copy environment")
+   :::image type="content" source="media/customer-managed-key/cmk-copy-environment.png" alt-text="Copy environment":::
 
    > [!NOTE]
    > If a Support Investigation environment was created to resolve support issue in a customer managed environment, the encryption key for the Support Investigation environment must be changed to customer managed key before the Copy environment operation can be performed.
