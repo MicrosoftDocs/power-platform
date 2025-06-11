@@ -15,8 +15,9 @@ search.audienceType:
 
 # View tenant-wide agent inventory
 
-The Power Platform admin center now offers an enhanced, agent inventory experience, providing IT administrators with comprehensive visibility into all Copilot Studio agents created across their tenant. With this new agent inventory page, administrators can effortlessly discover, search, filter, and sort the entire inventory of agents by owner, creation date, region, and other key attributes—streamlining common administrative tasks.
-This inventory capability enables administrators to:
+The Power Platform admin center now offers an enhanced, agent inventory experience that provides IT administrators with comprehensive visibility into all Copilot Studio agents created across their tenant. With this new, agent inventory page, administrators can effortlessly discover, search, filter, and sort the entire inventory of agents by owner, creation date, region, and other key attributes, streamlining common administrative tasks.
+
+The inventory allows administrators to:
 
 - **Accelerate support**: Quickly locate agents referenced in support tickets to improve response times.
 - **Prevent orphaned agents**: Identify agents owned by departing users to proactively transfer ownership and maintain continuity.
@@ -27,10 +28,11 @@ You must [turn on tenant-level analytics](tenant-level-analytics.md) to acce
 
 ## View your tenant inventory
 To view your inventory of custom agents:
-1.	Sign in to the Power Platform admin center using your tenant administrative credentials.
-1.	Select **New admin center** in the command bar
-1.	Navigate to the Manage page, then Copilot Studio sub-page
-1.	You will see a table view displaying custom agents created by makers within your tenant.
+
+1.	Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a tenant administrator.
+1.	Be sure that **New admin center** is selected in the title bar.
+1.	Select **Manage** in the navigation pane.
+1.	In the **Manage** pane, select **Copilot Studio**. The **Copilot Studio** page appears, listing custom agents that were created by makers within your tenant.
 
 ## Apply filters and sorts
 You can filter by:
@@ -41,18 +43,18 @@ You can filter by:
   
 You can also sort by creation date. Select the **Created on** column and select **Sort descending**. You see the user's most recently created agents, in the default environment, for the year 2024.
 
-Remember, you can apply filters and sorts on any column, offering numerous possibilities.
+You can apply filters and sorts on any column, offering numerous possibilities.
 
 ## Search the inventory
 At any time, you can see how many agents correspond to your search, filter, and sort criteria. You might see more than 500 results if there are more than 500 agents. You can add more filters to narrow down your results, if needed.
 
-Once you narrow the list to fewer than 500 agents, you can search for keywords across all entries in the table, like the name of the agent. The search box will only search across all agents that have been loaded into the UI.
+When you narrow the list to fewer than 500 agents, you can search for keywords across all entries on the page, like the name of the agent. The search box only searches across all agents that have been loaded into the UI.
 
 ## Display additional columns
- The inventory table provides the option to display additional columns to help you better manage your custom agents. To customize displayed columns:
+ The inventory page provides the option to display additional columns to help you better manage your custom agents. To customize displayed columns:
  
-1.	Click the **column chooser** icon located next to the search box at the top of the table.
-1.	Select or deselect columns you wish to display or hide.
+1.	Click the **column chooser** icon located next to the search box at the top of the page.
+1.	Select the columns you wish to display or hide.
 
 ## View agent or environment details
 - Select an item, then select the **Details** option in the command bar.
