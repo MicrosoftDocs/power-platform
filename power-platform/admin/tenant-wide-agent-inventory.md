@@ -48,21 +48,23 @@ You can apply filters and sorts on any column, offering numerous possibilities.
 ## Search the inventory
 At any time, you can see how many agents correspond to your search, filter, and sort criteria. You might see more than 500 results if there are more than 500 agents. You can add more filters to narrow down your results, if needed.
 
-When you narrow the list to fewer than 500 agents, you can search for keywords across all entries on the page, like the name of the agent. The search box only searches across all agents that have been loaded into the UI.
+When you narrow the list to fewer than 500 agents, you can search for keywords across all entries on the page, like the name of the agent. The search box only searches across all agents that have been displayed on the page.
 
 ## Display additional columns
- The inventory page provides the option to display additional columns to help you better manage your custom agents. To customize displayed columns:
+The inventory page provides the option to display additional columns to help you better manage your custom agents. To customize displayed columns:
  
-1.	Click the **column chooser** icon located next to the search box at the top of the page.
+1.	Click the **column chooser** icon, located next to the search box at the top of the page.
 1.	Select the columns you wish to display or hide.
 
 ## View agent or environment details
 - Select an item, then select the **Details** option in the command bar.
-- Select the agent’s display name to be redirected to its details page in the Copilot Studio portal. Warning: You must have edit permissions on the selected agent to access its details page. If you do not have sufficient permissions, you will see a "This link is broken" error.
+- Select the agent’s display name to be redirected to its details page in the Copilot Studio portal.
+    > [!Note]
+    > You must have edit permissions on the selected agent to access its details page. If you do not have sufficient permissions, you will see a "This link is broken" error.
 - Select the environment name to view the environment details.
 
-## Reset all searches, filters and sorts
-To clear all filters and sorts, select any column and choose **Clear all filters**.
+## Reset all searches, filters, and sorts
+To clear all filters and sorts, select any column and select **Clear all filters**.
 
 ## Known limitations
 - **Limited scope**: This experience supports only agents built directly in Copilot Studio. Agents that are created in Copilot Studio agent builder, in the Microsoft 365 Copilot app, aren't supported in this release.
