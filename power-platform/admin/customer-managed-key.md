@@ -71,7 +71,7 @@ Currently, all your customer data stored *only* in the following apps and servic
 
 Environments with finance and operations apps where [Power Platform integration is enabled](/dynamics365/fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration) can also be encrypted. Finance and operations environments without Power Platform integration will continue to use the default Microsoft managed key to encrypt data. More information: [Encryption in finance and operations apps](/dynamics365/fin-ops-core/dev-itpro/sysadmin/customer-managed-keys)
 
-:::image type="content" source="media/customer-managed-key/cmk-power-platform-diagram.png" alt-text="Customer-managed encryption key in the Power Platform":::
+:::image type="content" source="media/customer-managed-key/power-platform-diagram.png" alt-text="Customer-managed encryption key in the Power Platform":::
 
 ## Introduction to customer-managed key
 
@@ -438,7 +438,7 @@ The key vault admin notifies the Power Platform admin that an encryption key and
 1. Select **Customer-managed encryption key** to go to the Enterprise Policies page.
 1. Select a policy and then select **Edit policy**.
 1. Select **Add environments**, select the environment you want, and then select **Continue**.
-   :::image type="content" source="media/customer-managed-key/cmk-add-environments-enterprise-policy2.png" alt-text="Add an environment to an enterprise policy":::
+   :::image type="content" source="media/customer-managed-key/add-environment.png" alt-text="Add an environment to an enterprise policy":::
 1. Select **Save**, and then select **Confirm**.
 
 ##### [Classic admin center](#tab/classic)
@@ -446,7 +446,7 @@ The key vault admin notifies the Power Platform admin that an encryption key and
 1. Sign into the [Power Platform admin center](https://admin.powerplatform.microsoft.com), and go to **Policies** > **Enterprise policies**.
 1. Select a policy, and then on the command bar, select **Edit**.
 1. Select **Add environments**, select the environment you want, and then select **Continue**.
-   :::image type="content" source="media/customer-managed-key/cmk-add-environments-enterprise-policy.png" alt-text="Add an environment to an enterprise policy on the Power Platform admin center":::
+   :::image type="content" source="media/customer-managed-key/add-environments-enterprise-policy.png" alt-text="Add an environment to an enterprise policy on the Power Platform admin center":::
 1. Select **Save**, and then select **Confirm**.
 
 ---
@@ -483,7 +483,7 @@ Follow these steps if you want to return to a Microsoft managed encryption key.
 1. Sign into the [Power Platform admin center](https://admin.powerplatform.microsoft.com), and go to **Policies** > **Enterprise policies**.
 1. Select the **Environment with policies** tab, and then find the environment you want to remove from customer-managed key.
 1. Select the **All policies** tab, select the environment you verified in step 2, and then select **Edit policy** on the command bar.
-   :::image type="content" source="media/customer-managed-key/cmk-ppac-remove-env-policy.png" alt-text="Remove an environment from customer-managed key":::
+   :::image type="content" source="media/customer-managed-key/remove-environment-policy.png" alt-text="Remove an environment from customer-managed key":::
 1. Select **Remove environment** on the command bar, select the environment you want to remove, and then select **Continue**.
 1. Select **Save**.
 
@@ -536,7 +536,7 @@ To change your encryption key, create a new key and a new enterprise policy. You
 1. Once the new key and enterprise policy are created, go to **Policies** > **Enterprise policies**.
 1. Select the **Environment with policies** tab, and then find the environment you want to remove from customer-managed key.
 1. Select the **All policies** tab, select the environment you verified in step 2, and then select **Edit policy** on the command bar.
-   :::image type="content" source="media/customer-managed-key/cmk-ppac-remove-env-policy.png" alt-text="Remove an environment from customer-managed key":::
+   :::image type="content" source="media/customer-managed-key/remove-environment-policy.png" alt-text="Remove an environment from customer-managed key":::
 1. Select **Remove environment** on the command bar, select the environment you want to remove, and then select **Continue**.
 1. Select **Save**.
 1. Repeat steps 2-6 until all environments in the enterprise policy have been removed.
@@ -587,12 +587,12 @@ A customer tenant can have environments that are encrypted using the Microsoft m
 - [Restore](backup-restore-environments.md)
    The environment to overwrite (the restored to environment) is restricted to the same environment that the backup was taken from or to another environment that is encrypted with the same customer managed key.
 
-   :::image type="content" source="media/customer-managed-key/cmk-restore-backup.png" alt-text="Restore backup":::
+   :::image type="content" source="media/customer-managed-key/restore-backup.png" alt-text="Restore backup":::
 
 - [Copy](copy-environment.md)
    The environment to overwrite (the copied to environment) is restricted to another environment that is encrypted with the same customer managed key.
 
-   :::image type="content" source="media/customer-managed-key/cmk-copy-environment.png" alt-text="Copy environment":::
+   :::image type="content" source="media/customer-managed-key/copy-environment.png" alt-text="Copy environment":::
 
    > [!NOTE]
    > If a Support Investigation environment was created to resolve support issue in a customer managed environment, the encryption key for the Support Investigation environment must be changed to customer managed key before the Copy environment operation can be performed.
