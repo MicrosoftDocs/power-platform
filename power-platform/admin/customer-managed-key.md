@@ -7,9 +7,8 @@ ms.reviewer: sericks
 ms.topic: how-to
 ms.date: 06/11/2025
 ms.custom: template-how-to
-contributors:
+ms.contributors:
   - samathur
-  - v-aangie
   - kakazemi
   - lauravasiliums
   - sericks
