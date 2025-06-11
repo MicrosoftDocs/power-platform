@@ -1,7 +1,7 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "Microsoft Power Platform REST API - usermanagement",
+    "title": "Microsoft Power Platform REST API - powervirtualagents",
     "description": "Unified API for all administrative capabilities in Microsoft Power Platform.",
     "version": "2022-03-01-preview"
   },
@@ -10,21 +10,26 @@
     "https"
   ],
   "paths": {
-    "/usermanagement/environments/{environmentId}/syncReport": {
+    "/powervirtualagents/environments/{EnvironmentId}/bots/{BotId}/api/botQuarantine": {
       "get": {
-        "tags": [
-          "Environments"
-        ],
-        "summary": "Get the user sync report for the requested environment.",
-        "operationId": "GetSyncReport",
+        "summary": "Get Bot Quarantine Status.",
+        "description": "Retrieve the quarantine status of a bot.",
+        "operationId": "getBotQuarantineStatus",
         "produces": [
           "application/json"
         ],
         "parameters": [
           {
             "in": "path",
-            "name": "environmentId",
+            "name": "EnvironmentId",
             "description": "The environment ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "BotId",
+            "description": "The bot ID.",
             "required": true,
             "type": "string"
           },
@@ -39,26 +44,34 @@
         ],
         "responses": {
           "200": {
-            "description": "Success",
+            "description": "Successful response",
             "schema": {
-              "$ref": "#/definitions/SyncReport"
+              "$ref": "#/definitions/BotQuarantineStatus"
             }
           }
         }
       }
     },
-    "/usermanagement/environments/{environmentId}/user/applyAdminRole": {
+    "/powervirtualagents/environments/{EnvironmentId}/bots/{BotId}/api/botQuarantine/SetAsQuarantined": {
       "post": {
-        "tags": [
-          "Users"
+        "summary": "Set Bot as Quarantined.",
+        "description": "Set the quarantine status of a bot to true.",
+        "operationId": "setBotAsQuarantined",
+        "produces": [
+          "application/json"
         ],
-        "summary": "Apply the system administrator role to the selected user.",
-        "operationId": "ApplyAdminRole",
         "parameters": [
           {
             "in": "path",
-            "name": "environmentId",
+            "name": "EnvironmentId",
             "description": "The environment ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "BotId",
+            "description": "The bot ID.",
             "required": true,
             "type": "string"
           },
@@ -73,33 +86,36 @@
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "Successful response",
+            "schema": {
+              "$ref": "#/definitions/BotQuarantineStatus"
+            }
           }
         }
       }
     },
-    "/usermanagement/environments/{environmentId}/users/{userObjectId}/applyUser": {
+    "/powervirtualagents/environments/{EnvironmentId}/bots/{BotId}/api/botQuarantine/SetAsUnquarantined": {
       "post": {
-        "tags": [
-          "Environments"
+        "summary": "Set Bot as Unquarantined.",
+        "description": "Set the quarantine status of a bot to false.",
+        "operationId": "setBotAsUnquarantined",
+        "produces": [
+          "application/json"
         ],
-        "summary": "Apply the user to the target environment.",
-        "operationId": "ApplyUser",
         "parameters": [
           {
             "in": "path",
-            "name": "environmentId",
+            "name": "EnvironmentId",
             "description": "The environment ID.",
             "required": true,
             "type": "string"
           },
           {
             "in": "path",
-            "name": "userObjectId",
-            "description": "The user object ID.",
+            "name": "BotId",
+            "description": "The bot ID.",
             "required": true,
-            "type": "string",
-            "format": "uuid"
+            "type": "string"
           },
           {
             "in": "query",
@@ -112,63 +128,29 @@
         ],
         "responses": {
           "200": {
-            "description": "Success"
-          }
-        }
-      }
-    },
-    "/usermanagement/environments/{environmentId}/users/{userObjectId}/tryApplyUser": {
-      "post": {
-        "tags": [
-          "Environments"
-        ],
-        "summary": "Apply user validation to the target environment.",
-        "operationId": "TryApplyUser",
-        "parameters": [
-          {
-            "in": "path",
-            "name": "environmentId",
-            "description": "The environment ID.",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "in": "path",
-            "name": "userObjectId",
-            "description": "The user object ID.",
-            "required": true,
-            "type": "string",
-            "format": "uuid"
-          },
-          {
-            "in": "query",
-            "name": "api-version",
-            "description": "The API version.",
-            "required": true,
-            "type": "string",
-            "default": "2022-03-01-preview"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Success"
+            "description": "Successful response",
+            "schema": {
+              "$ref": "#/definitions/BotQuarantineStatus"
+            }
           }
         }
       }
     }
   },
   "definitions": {
-    "SyncReport": {
-      "description": "Organization Sync report contains last sync information from kepler",
+    "BotQuarantineStatus": {
       "type": "object",
       "properties": {
-        "lastSyncTime": {
-          "description": "Last sync time for the org",
-          "type": "string",
-          "example": ""
+        "isBotQuarantined": {
+          "description": "Indicates whether the bot is quarantined.",
+          "type": "boolean"
+        },
+        "lastUpdateTimeUtc": {
+          "format": "date-time",
+          "description": "The last update time in UTC.",
+          "type": "string"
         }
-      },
-      "additionalProperties": false
+      }
     }
   },
   "securityDefinitions": {

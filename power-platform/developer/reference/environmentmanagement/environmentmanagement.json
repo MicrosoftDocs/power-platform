@@ -107,7 +107,7 @@
         "tags": [
           "EnvironmentManagementSettings"
         ],
-        "summary": "Gets Environment Management Setting by ID. Only columns provided in the $select queryOption will be returned.\r\nA list of selectable properties is defined in the Microsoft.Dynamics.Artemis.Infrastructure.Models.EnvironmentManagementSetting typeGets environment management setting by ID. Only columns provided in the $select queryOption will be returned.\r\nA list of selectable properties is defined in the Microsoft.Dynamics.Artemis.Infrastructure.Models.EnvironmentManagementSetting type.",
+        "summary": "Get environment management setting by ID.",
         "operationId": "ListEnvironmentManagementSettings",
         "produces": [
           "application/json;odata.metadata=minimal;odata.streaming=true",
@@ -187,7 +187,7 @@
         "tags": [
           "EnvironmentManagementSettings"
         ],
-        "summary": "Updates fields on the EnvironmentManagementSetting. This API currently doesn't return any entity data in the response body.",
+        "summary": "Update fields on the environment management setting.",
         "operationId": "UpdateEnvironmentManagementSettings",
         "consumes": [
           "application/json;odata.metadata=minimal;odata.streaming=true",
@@ -757,7 +757,7 @@
         "tags": [
           "Environments"
         ],
-        "summary": "Retrieve a list of environments.",
+        "summary": "Retrieve a list of environments (preview).",
         "description": "Returns a list of environments available for the authenticated user.",
         "operationId": "ListEnvironmentsForUser",
         "produces": [
@@ -788,7 +788,7 @@
         "tags": [
           "Environments"
         ],
-        "summary": "Retrieves a single environment by ID.",
+        "summary": "Retrieves a single environment by ID (preview).",
         "operationId": "GetEnvironmentByIdForUser",
         "produces": [
           "application/json"
@@ -823,7 +823,7 @@
         "tags": [
           "Environments"
         ],
-        "summary": "Delete the environment by ID.",
+        "summary": "Delete the environment by ID (Preview).",
         "description": "Delete the environment specified by ID.",
         "operationId": "DeleteEnvironmentByID",
         "produces": [
@@ -832,13 +832,6 @@
           "text/json"
         ],
         "parameters": [
-          {
-            "in": "path",
-            "name": "tenantId",
-            "description": "The tenant ID.",
-            "required": true,
-            "type": "string"
-          },
           {
             "in": "path",
             "name": "environmentId",
