@@ -74,6 +74,43 @@ Power Apps creates a platform-owned agent named **Copilot in Power Apps** in eac
 
 This is similar to other standard, pre-installed model-driven apps such as the Power Platform Environment Settings.
 
+### Why can't I find an agent in the Maker Inventory page?
+Occasionally, you might not be able to locate a specific agent in your inventory list. Use the following steps to resolve the issue.
+
+Step 1: Clear All Filters and Sorts
+You may inadvertently have filters or sorts applied that are hiding the agent.
+1.	Select any column header.
+2.	Click Clear all filters.
+3.	Reapply appropriate filters and sorts to help locate your agent.
+
+Step 2: Check the Inventory Refresh Date
+The agent inventory refreshes once every 24 hours. Keep in mind:
+•	Newly created agents may take up to 24 hours to appear.
+•	Deleted agents may remain visible for up to 48 hours after deletion.
+
+Check the inventory refresh timestamp at the top-right corner of the inventory table:
+o	If your agent was created after the last refresh, please wait until the next refresh cycle completes.
+o	If your agent was created before the last refresh and is still not visible, proceed to Step 3.
+o	If you're uncertain of the creation time, wait for the next refresh cycle before proceeding further.
+
+Step 3: Verify the Agent Exists in Copilot Studio Portal
+Confirm the agent’s existence and your access permissions by verifying directly in the Copilot Studio portal:
+1.	Navigate to the Copilot Studio portal.
+2.	Select the appropriate environment where the agent should exist.
+3.	Ensure you have appropriate permissions to view the agent:
+o	If you see the agent in Copilot Studio, but it's still missing from the admin center inventory after the refresh cycle, please open a support ticket.
+o	If you cannot see the agent in Copilot Studio (and you have verified permissions), it likely no longer exists.
+
+Next Steps
+If you have completed these troubleshooting steps and are still unable to locate your agent, please contact Microsoft Support for further assistance.
+
+
+
+
+
+
+
+
 
 
 
