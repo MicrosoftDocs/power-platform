@@ -430,9 +430,9 @@ The key vault admin notifies the Power Platform admin that an encryption key and
 ### Add an environment to the enterprise policy to encrypt data
 
 > [!IMPORTANT]
-> The environment is disabled when it's added to the enterprise policy for data encryption. The duration of the system downtime is dependent on the size of the database. It is recommended that you do a test run by making a copy of the target environment into a test environment to determine the estimated system downtime.
+> The environment is disabled when it's added to the enterprise policy for data encryption. The duration of the system downtime is dependent on the size of the database. We recommended that you do a test run by making a copy of the target environment into a test environment to determine the estimated system downtime.
 > The system downtime can be determined by checking the [environment's encryption status](#review-the-encryption-status-from-enterprise-policies). The system downtime is between the **Encrypting** and **Encrypting - online** statuses.
-> To reduce the system downtime, we change the encryption status to **Encrypting - online** when all the core encryption steps that required the system to be down are complete. The system can be used by your users while the remaining storage services, eg Search and Copilot index continue to encrypt the data with your customer managed key.   
+> To reduce the system downtime, we change the encryption status to **Encrypting - online** when all the core encryption steps that required the system to be down are complete. The system can be used by your users while the remaining storage services, such as search and Copilot index, continue to encrypt the data with your customer-managed key.   
 
 ##### [New admin center](#tab/new)
 
@@ -520,18 +520,17 @@ Follow these steps if you want to return to a Microsoft managed encryption key.
    > [!NOTE]
    > The environment's encryption status can be:
    >
-   > - **Encrypting** - The customer managed key encryption process is running and the system is disabled for online use. 
+   > - **Encrypting** - The customer-managed key encryption process is running and the system is disabled for online use. 
    > - **Encrypting - online** - All core services encryption that required system downtime is complete and system is enabled for online use.
-   > - **Encrypted** - The Enterprise policy encryption key is active and the environment is encrypted with your key.
-   > - **Reverting** - The encryption key is being changed from customer managed key to Microsoft managed key and the system is disabled for online use.
+   > - **Encrypted** - The enterprise policy encryption key is active and the environment is encrypted with your key.
+   > - **Reverting** - The encryption key is being changed from customer-managed key to Microsoft-managed key and the system is disabled for online use.
    > - **Reverting - online** - All core services encrytion that required system downtime have reverted the key and the system is enabled for online use.
-   > - **Microsoft Managed key** - The Microsoft managed key encryption is active.  
-   > - **Failed** - The Enterprise policy encryption key is not used by **all** Dataverse storage services. They require more time to process and you can re-run the **Add environment** operation. Contact Support if the re-run fails.
+   > - **Microsoft Managed key** - The Microsoft-managed key encryption is active.  
+   > - **Failed** - The enterprise policy encryption key isn't used by **all** Dataverse storage services. They require more time to process and you can rerun the **Add environment** operation. Contact Support if the rerun operation fails.
    >
    >      A **Failed** encryption status doesn't impact your environment data and its operations. This means that some of the Dataverse storage services are encrypting your data with your key and some continue to use the Microsoft-managed key. A revert isn't recommended as when you re-run the **Add environment** operation, the service resumes from where it left off.
    >
-   > - **Warning** - The Enterprise policy encryption key is active and one of the service's data continues to be encrypted with the Microsoft-managed key. Learn more: [Power Automate CMK application warning messages](/power-automate/customer-managed-keys#power-automate-cmk-application-warning-messages)
-   >
+   > - **Warning** - The Enterprise policy encryption key is active and one of the service's data continues to be encrypted with the Microsoft-managed key. Learn more in [Power Automate CMK application warning messages](/power-automate/customer-managed-keys#power-automate-cmk-application-warning-messages).
 
 #### Review the encryption status from the Environment History page
 
