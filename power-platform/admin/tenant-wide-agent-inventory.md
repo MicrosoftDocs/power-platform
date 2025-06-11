@@ -95,10 +95,10 @@ The agent inventory refreshes once every 24 hours. Keep in mind:
 
     Check the inventory refresh timestamp at the top-right corner of the page.
     - If your agent was created after the last refresh, please wait until the next refresh cycle completes.
-    - If your agent was created before the last refresh and is still not visible, proceed to step 3.
+    - If your agent was created before the last refresh and is still not visible, proceed to [step 3](#step-3-verify-that-the-agent-exists-in-the-copilot-studio-portal).
     - If you're uncertain of the creation time, wait for the next refresh cycle before proceeding.
 
-### Step 3: Verify that the agent exists in the Copilot Studio portal.
+#### Step 3: Verify that the agent exists in the Copilot Studio portal.
 Confirm the agent’s existence and your access permissions by verifying directly in the Copilot Studio portal:
 
 1. Navigate to the Copilot Studio portal.
