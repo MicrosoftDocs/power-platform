@@ -7,7 +7,7 @@ ms.reviewer: sericks, matp, ratrtile
 ms.topic: how-to
 ms.date: 6/11/2025
 ms.custom: template-how-to
-contributors
+contributors:
   - paulliew
   - kavehkazms
   - lauravasiliums
