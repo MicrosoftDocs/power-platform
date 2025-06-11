@@ -62,15 +62,18 @@ Once you narrow the list to fewer than 500 agents, you can search for keywords a
 ## Reset all searches, filters and sorts
 To clear all filters and sorts, select any column and choose **Clear all filters**.
 
-
-
-
-
-
 ## Known limitations
 - **Limited scope**: This experience supports only agents built directly in Copilot Studio. Agents that are created in Copilot Studio agent builder, in the Microsoft 365 Copilot app, aren't supported in this release.
 - **Data refresh frequency**: Inventory data updates once every 24 hours. Newly created agents might take up to 24 hours to appear, and deleted agents might remain visible for up to 48 hours after removal.
 - **Item display limit**: The inventory page displays a maximum of 500 agents at one time. If more than 500 agents match your search or filter criteria, only the first 500 are displayed. Use additional filters to narrow down your results. The primary search box, above the table, only searches across those 500 agents.
+
+## Frequently asked questions
+
+### Why am I seeing multiple agents with identical names (e.g., "Copilot in Power Apps") across different environments?
+Power Apps creates a platform-owned agent named **Copilot in Power Apps** in each environment. This agent is only editable by a Power Platform admin and isn’t published to any channels by default. Although this agent can be viewed in Microsoft Copilot Studio, this agent shouldn't be edited since it is not used by model-driven apps. Learn more in [Customize Copilot chat using Copilot Studio](/power-apps/maker/model-driven-apps/customize-copilot-chat).
+
+This is similar to other standard, pre-installed model-driven apps such as the Power Platform Environment Settings.
+
 
 
 
