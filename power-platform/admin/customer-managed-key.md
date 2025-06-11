@@ -21,8 +21,8 @@ contributors
   - lauravasiliums
   - sericks007
   - syalandur24
-
 ---
+
 # Manage your customer-managed encryption key
 
 Customers have data privacy and compliance requirements to secure their data by encrypting their data at-rest. This secures the data from exposure in an event where a copy of the database is stolen. With data encryption at-rest, the stolen database data is protected from being restored to a different server without the encryption key.
