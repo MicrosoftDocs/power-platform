@@ -407,21 +407,49 @@ The key vault admin notifies the Power Platform admin that an encryption key and
 
 ### Enable Managed environment to be added to the enterprise policy
 
-1. Sign into the [Power Platform admin center](https://admin.powerplatform.microsoft.com), and locate the environment.
-1. Select and check the environment on the environments list.
-1. Select the **Enable Managed Environments** icon on the action bar.
+##### [New admin center](#tab/new)
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.com).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**, and then seleect an environment from the available list of environments.
+1. Select **Enable Managed Environments**.
 1. Select **Enable**.
+
+##### [Classic admin center](#tab/classic)
+
+1. Sign into the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. In the navigation pane, select **Environments** .
+1. Select an environment from the available list of environments.
+1. Select **Enable Managed Environments**.
+1. Select **Enable**.
+
+---
 
 ### Add an environment to the enterprise policy to encrypt data
 
 > [!IMPORTANT]
 > The environment is disabled when it's added to the enterprise policy for data encryption.
 
+##### [New admin center](#tab/new)
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.com).
+1. In the navigation pane, select **Security**.
+1. In the **Security** pane, select **Data and Privacy** under **Settings**.
+1. Select **Customer-managed encryption key** to go to the Enterprise Policies page.
+1. Select a policy and then select **Edit policy**.
+1. Select **Add environments**, select the environment you want, and then select **Continue**.
+    :::image type="content" source="media/cmk-add-environments-enterprise-policy-new.png" alt-text="Add an environment to an enterprise policy on Power Platform admin center":::
+1. Select **Save**, and then select **Confirm**.
+
+##### [Classic admin center](#tab/classic)
+
 1. Sign into the [Power Platform admin center](https://admin.powerplatform.microsoft.com), and go to **Policies** > **Enterprise policies**.
-1. Select a policy, and then on the command bar select **Edit**.
+1. Select a policy, and then on the command bar, select **Edit**.
 1. Select **Add environments**, select the environment you want, and then select **Continue**.
    :::image type="content" source="media/cmk-add-environments-enterprise-policy.png" alt-text="Add environment to enterprise policy on Power Platform admin center":::
 1. Select **Save**, and then select **Confirm**.
+
+---
 
 > [!IMPORTANT]
 >
@@ -438,6 +466,19 @@ Follow these steps if you want to return to a Microsoft managed encryption key.
 
 > [!IMPORTANT]
 > The environment is disabled when it's removed from the enterprise policy to return data encryption using the Microsoft managed key.
+
+##### [New admin center](#tab/new)
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.com).
+1. In the navigation pane, select **Security**.
+1. In the **Security** pane, select **Data and Privacy** under **Settings**.
+1. Select **Customer-managed encryption key** to go to the Enterprise Policies page.
+1. Select the **Environment with policies** tab, and then find the environment you want to remove from customer-managed key.
+1. Select the **All policies** tab, select the environment you verified in step 2, and then select **Edit policy** on the command bar.
+1. Select **Remove environment** on the command bar, select the environment you want to remove, and then select **Continue**.
+1. Select **Save**.
+
+##### [Classic admin center](#tab/classic)
 
 1. Sign into the [Power Platform admin center](https://admin.powerplatform.microsoft.com), and go to **Policies** > **Enterprise policies**.
 1. Select the **Environment with policies** tab, and then find the environment you want to remove from customer-managed key.
