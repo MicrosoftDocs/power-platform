@@ -36,29 +36,51 @@ Using Microsoft Dataverse teams is optional. However, teams provide an easy way 
 **Microsoft Entra group team:** Similar to owner teams, a *Microsoft Entra group team* can own records and can have security roles assigned to the team. Security and Office are two group team types, and they correspond directly to Microsoft Entra group types. Group security roles can be assigned only for a specific team or for a team member with user privileges that include [members' privilege inheritance](security-roles-privileges.md#team-members-privilege-inheritance). Team members are dynamically derived (added and removed) when they access an environment based on their Microsoft Entra group membership. More information: [Manage group teams](manage-group-teams.md)
 
 > [!NOTE]
-> You can assign security roles directly to owner teams and Microsoft Entra group teams and users. The environment picker only recognizes users who are members of Microsoft Entra group teams and users who have security roles assigned to them directly. 
+> You can assign security roles directly to owner teams and Microsoft Entra group teams and users. The environment picker only recognizes users who are members of Microsoft Entra group teams and users who have security roles assigned to them directly.
 
 ## Team operations
 
 ### Access your team's page
 
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com). 
+###### [New admin center](#tab/new)
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.com).
+
+2. In the navigation pane, select **Manage**.
+
+3. In the **Manage** pane, select **Environments**.
+
+4. Select an environment, and then select **Settings** > **Users + permissions** > **Teams**.
+
+    By default, a list of all of the teams in the environment is displayed.
+
+    :::image type="content" source="media/dataverse-team-manage-list-new.png" alt-text="List of teams in a particular environment":::
+
+5. If needed, you can filter the list of teams by selecting a team type from the dropdown list.
+
+###### [Classic admin center](#tab/classic)
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
 2. Select an environment, and then select **Settings** > **Users + permissions** > **Teams**.
 
 A list of all of the teams in the environment is displayed.
 
-![Screenshot of a list of teams in an environment.](media/dataverse-team-manage-list.png "List of teams in environment")
+:::image type="content" source="media/dataverse-team-manage-list.png" alt-text="List of teams in environment":::
 
 ### Create a new team
 
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com). 
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.com).
 
-2. Select an environment, and then select **Settings** > **Users + permissions** > **Teams**.
+2. In the navigation pane, select **Manage**.
 
-3. Select **+ Create team**.
+3. In the **Manage** pane, select **Environments**.
 
-4. Specify the following fields:   
+4. Select an environment, and then select **Settings** > **Users + permissions** > **Teams**.
+
+5. Select **+ Create team**.
+
+6. Specify the following fields:
 
    - **Team name:** Be sure this name is unique within a business unit.
    - **Description:** Enter a description of the team.
@@ -73,7 +95,43 @@ A list of all of the teams in the environment is displayed.
 
      > [!NOTE]
      > A team can be one of the following types: Owner, Access, Microsoft Entra Security group, or Microsoft Entra Office group.
-   
+
+7. If the team type is Microsoft Entra Security group or Microsoft Entra Office group, you must also enter these fields:
+
+   - **Group name:** Start entering text to select an existing Microsoft Entra group name.These groups are pre-created in Microsoft Entra ID.
+   - **Membership type:** Select the membership type from the dropdown list.
+
+   <image>
+
+After you create the team, you can add team members and select corresponding security roles. This step is optional, but recommended.
+
+> [!NOTE]
+> A default security role is automatically assigned to team records that have been created through data import. The **Salesperson** security role is assigned in a Dynamics 365 Sales environment and the **Basic User** security role is assigned in other environments.
+
+###### [Classic admin center](#tab/classic)
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+
+2. Select an environment, and then select **Settings** > **Users + permissions** > **Teams**.
+
+3. Select **+ Create team**.
+
+4. Specify the following fields:
+
+   - **Team name:** Be sure this name is unique within a business unit.
+   - **Description:** Enter a description of the team.
+   - **Business unit:** Select the business unit from the dropdown list.
+   - **Administrator:** Search for users in the organization. Start entering characters.
+   > [!NOTE]
+   > The **Administrator** field is only for reference and it doesn't have any special processing. You can use this field to restrict who can add and remove team members by registering a [plug-in](/power-apps/developer/data-platform/plug-ins) on the [AddMembersTeam](/power-apps/developer/data-platform/webapi/reference/addmembersteam) API for the **teammembership_association** relationship. These actions can be enforced when the user is the administrator of the team. For more information, see the community [sample code](https://community.dynamics.com/crm/b/mylifemicrosoftdynamiccrm/posts/ms-dynamics-crm-associate-disassociate-message-plugin).
+
+   - **Team type:** Select the team type from the dropdown list.
+
+     :::image type="content" source="media/dataverse-team-manage-new-team.png" alt-text="Screenshot of settings for a new Dataverse team.":::
+
+     > [!NOTE]
+     > A team can be one of the following types: Owner, Access, Microsoft Entra Security group, or Microsoft Entra Office group.
+
 6. If the team type is Microsoft Entra Security group or Microsoft Entra Office group, you must also enter these fields:
 
    - **Group name:** Start entering text to select an existing Microsoft Entra group name.These groups are pre-created in Microsoft Entra ID.
@@ -88,7 +146,7 @@ After you create the team, you can add team members and select corresponding sec
 
 ### Edit a team
 
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com). 
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
 2. Select an environment, and then select **Settings** > **Users + permissions** > **Teams**.
 
@@ -109,7 +167,7 @@ You can add and delete members from a team.
 > [!NOTE]
 > Managing team members is allowed only for the Owner and Access team types. For Microsoft Entra group teams, managing team members must be performed by a Microsoft Entra admin.
 
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com). 
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
 2. Select an environment, and then select **Settings** > **Users + permissions** > **Teams**.
 
@@ -117,7 +175,7 @@ You can add and delete members from a team.
 
    :::image type="content" source="media/select-team.png" alt-text="Screenshot selecting a team.":::
 
-4. Select **Manage team members**. 
+4. Select **Manage team members**.
 
 5. Do one of the following:
 
@@ -137,7 +195,7 @@ You can add and delete members from a team.
 
    :::image type="content" source="media/select-team.png" alt-text="Screenshot selecting a team.":::
 
-2. Select **Manage security roles**. 
+2. Select **Manage security roles**.
 
 3. Select the role or roles you want, and then select **Save**.
 
@@ -145,7 +203,7 @@ You can add and delete members from a team.
 
 ### Delete a team
 
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com). 
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
 2. Select an environment, and then select **Settings** > **Users + permissions** > **Teams**.
 
@@ -157,13 +215,13 @@ You can add and delete members from a team.
 
 ### Convert owner teams to access teams
 
-You can convert _owner_ teams to become _access_ teams. 
+You can convert *owner* teams to become *access* teams.
 
 > [!NOTE]
 > Each business unit has its own owner team. These owner teams are managed by the system and if you convert these teams to access teams, they will no longer be able to own records. Once you convert these business unit owner teams to access teams, they can't be changed back to owner teams. You can't convert the Microsoft Entra group teams or access teams to another access team.
 > All records owned by the owner team must first be reassigned to another user or team before you can convert it into an access team. The security role assignments of the owner team are removed when it's converted into an access team.
 
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com). 
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. In the navigation pane, select **Environments**.
 1. Select a specific environment.
 1. Select **Settings** > **Users + permissions** > **Teams**.
@@ -171,7 +229,7 @@ You can convert _owner_ teams to become _access_ teams.
 
    :::image type="content" source="media/select-team.png" alt-text="Screenshot selecting a team.":::
 
-1. Select **Convert Owner team to Access Team** from the command bar. 
+1. Select **Convert Owner team to Access Team** from the command bar.
 1. Select **OK** to complete the action.
 
 ### Reassign team's records
@@ -189,22 +247,23 @@ You can reassign the owner team's records to another user or team.
 
    :::image type="content" source="media/select-team.png" alt-text="Screenshot selecting a team.":::
 
-1. Select **Reassign records** from the command bar. 
+1. Select **Reassign records** from the command bar.
 1. Select **Assign to me** to reassign all the Team's records to yourself or to another owner team.
 1. Select **Assign to another user or team**.
 1. Select **OK** to save.
 
 ## Change the business unit for a team  
+
 See [Change the business unit for a team](create-edit-business-units.md#change-the-business-unit-for-a-team).
 
 ### See also
- [Change the business unit for a team](create-edit-business-units.md#change-the-business-unit-for-a-team)
- [Create a team template and add to an entity form](create-team-template-add-entity-form.md)   
- [Manage group teams](manage-group-teams.md)   
- [About team templates](../admin/about-team-templates.md)   
- [Add teams or users to a column security profile to control access](field-level-security.md#add-teams-or-users-to-a-column-security-profile-to-control-access)
- [About team templates](about-team-templates.md)   
- [Entity relationship behavior](/powerapps/maker/common-data-service/create-edit-entity-relationships#entity-relationship-behavior)
 
+ [Change the business unit for a team](create-edit-business-units.md#change-the-business-unit-for-a-team)
+ [Create a team template and add to an entity form](create-team-template-add-entity-form.md)
+ [Manage group teams](manage-group-teams.md)
+ [About team templates](../admin/about-team-templates.md)
+ [Add teams or users to a column security profile to control access](field-level-security.md#add-teams-or-users-to-a-column-security-profile-to-control-access)
+ [About team templates](about-team-templates.md)
+ [Entity relationship behavior](/powerapps/maker/common-data-service/create-edit-entity-relationships#entity-relationship-behavior)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
