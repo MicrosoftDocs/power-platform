@@ -67,7 +67,7 @@ To clear all filters and sorts, select any column and choose **Clear all filters
 ## Known limitations
 - **Limited scope**: This experience supports only agents built directly in Copilot Studio. Agents that are created in Copilot Studio agent builder, in the Microsoft 365 Copilot app, aren't supported in this release.
 - **Data refresh frequency**: Inventory data updates once every 24 hours. Newly created agents might take up to 24 hours to appear, and deleted agents might remain visible for up to 48 hours after removal.
-- **Item display limit**: The inventory page displays a maximum of 500 agents at one time. If more than 500 agents match your search or filter criteria, only the first 500 are displayed. Use additional filters to narrow down your results. The primary search box, above the table, only searches across those 500 agents.
+- **Item display limit**: The inventory page displays a maximum of 500 agents at one time. If more than 500 agents match your search or filter criteria, only the first 500 are displayed. Use additional filters to narrow down your results. The primary search box, at the top of the page, only searches across those 500 agents.
 
 ## Frequently asked questions
 
@@ -90,7 +90,7 @@ The agent inventory refreshes once every 24 hours. Keep in mind:
 •	Newly created agents may take up to 24 hours to appear.
 •	Deleted agents may remain visible for up to 48 hours after deletion.
 
-Check the inventory refresh timestamp at the top-right corner of the inventory table:
+Check the inventory refresh timestamp at the top-right corner of the inventory page:
 o	If your agent was created after the last refresh, please wait until the next refresh cycle completes.
 o	If your agent was created before the last refresh and is still not visible, proceed to Step 3.
 o	If you're uncertain of the creation time, wait for the next refresh cycle before proceeding further.
