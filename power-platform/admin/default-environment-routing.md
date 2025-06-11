@@ -155,7 +155,13 @@ This capability builds on the original environment routing feature, which routed
     1. In the **Set up environment routing** pane, in the **Turn on environment routing for** section, select the product portals for which you want to allow routing. 
 1. Define rules using the following steps:
 
-    1. Each rule includes a name, target environment group, and audience (either “Everyone” or specific security groups). 
+    1. Each rule includes a name, target environment group, and audience (either “Everyone” or specific security groups).
+  
+    1. 1. Sign in to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com/) as a [Power Platform tenant administrator](use-service-admin-role-manage-tenant.md).
+    1. Select **Manage** in the navigation pane.
+    1. In the **Manage** pane, select **Environment groups**.
+    1. On the **Environment groups** page, select **New group**.
+    1. In the **Create group** pane that appears:
     
     1. Rules are created through a multi-step panel in the Power Platform Admin Center. 
 
