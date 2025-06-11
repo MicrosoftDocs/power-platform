@@ -438,7 +438,7 @@ The key vault admin notifies the Power Platform admin that an encryption key and
 1. Select **Customer-managed encryption key** to go to the Enterprise Policies page.
 1. Select a policy and then select **Edit policy**.
 1. Select **Add environments**, select the environment you want, and then select **Continue**.
-    :::image type="content" source="media/cmk-add-environments-enterprise-policy-new.png" alt-text="Add an environment to an enterprise policy on Power Platform admin center":::
+   :::image type="content" source="media/cmk-add-environments-enterprise-policy2.png" alt-text="Add an environment to an enterprise policy on Power Platform admin center":::
 1. Select **Save**, and then select **Confirm**.
 
 ##### [Classic admin center](#tab/classic)
