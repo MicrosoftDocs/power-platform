@@ -1,11 +1,14 @@
 ---
 title: Generative AI capabilities in Power Apps Test Engine (preview)
 description: Overview of Generative AI features in Power Apps Test Engine, including authoring assistance, Model Context Protocol, and nondeterministic AI testing
-author: grant-archibald-ms
-ms.author: grarchib
+author: pvillads
+ms.author: pvillads
+ms.subservice: test-engine
 ms.date: 05/19/2025
 ms.reviewer: jdaly
 ms.topic: overview
+contributors:
+ - grant-archibald-ms
 ---
 
 # Generative AI capabilities in Power Apps Test Engine (preview)
