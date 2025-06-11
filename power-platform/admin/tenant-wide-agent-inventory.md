@@ -1,6 +1,6 @@
 ---
 title: View tenant-wide agent inventory
-description: Learn how to get visibility into all Copilot Studio agents created across your tenant.
+description: Learn how to get visibility into all Microsoft Copilot Studio agents created across your tenant.
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: concept-article
@@ -15,7 +15,7 @@ search.audienceType:
 
 # View tenant-wide agent inventory
 
-The Power Platform admin center now offers an enhanced, agent inventory experience that provides IT administrators with comprehensive visibility into all Copilot Studio agents created across their tenant. With this new, agent inventory page, administrators can effortlessly discover, search, filter, and sort the entire inventory of agents by owner, creation date, region, and other key attributes, streamlining common administrative tasks.
+The Power Platform admin center now offers an enhanced, agent inventory experience that provides IT administrators with comprehensive visibility into all Microsoft Copilot Studio agents created across their tenant. With this new, agent inventory page, administrators can effortlessly discover, search, filter, and sort the entire inventory of agents by owner, creation date, region, and other key attributes, streamlining common administrative tasks.
 
 The inventory allows administrators to:
 
@@ -73,48 +73,39 @@ To clear all filters and sorts, select any column and select **Clear all filters
 
 ## Frequently asked questions
 
-### Why am I seeing multiple agents with identical names (e.g., "Copilot in Power Apps") across different environments?
-Power Apps creates a platform-owned agent named **Copilot in Power Apps** in each environment. This agent is only editable by a Power Platform admin and isn’t published to any channels by default. Although this agent can be viewed in Microsoft Copilot Studio, this agent shouldn't be edited since it is not used by model-driven apps. Learn more in [Customize Copilot chat using Copilot Studio](/power-apps/maker/model-driven-apps/customize-copilot-chat).
+### Why am I seeing multiple agents with identical names&mdash;for example, _Copilot in Power Apps_&mdash;across different environments?
+Power Apps creates a platform-owned agent named **Copilot in Power Apps** in each environment. This agent is only editable by a Power Platform admin and isn’t published to any channels by default. Although this agent can be viewed in Copilot Studio, this agent shouldn't be edited since it's not used by model-driven apps. Learn more in [Customize Copilot chat using Copilot Studio](/power-apps/maker/model-driven-apps/customize-copilot-chat).
 
-This is similar to other standard, pre-installed model-driven apps such as the Power Platform Environment Settings.
+This is similar to other standard, pre-installed, model-driven apps such as the Power Platform Environment Settings.
 
-### Why can't I find an agent in the Maker Inventory page?
+### Why can't I find an agent on the Copilot Studio inventory page?
 Occasionally, you might not be able to locate a specific agent in your inventory list. Use the following steps to resolve the issue.
 
-Step 1: Clear All Filters and Sorts
+#### Step 1: Clear all filters and sorts
 You may inadvertently have filters or sorts applied that are hiding the agent.
-1.	Select any column header.
-2.	Click Clear all filters.
-3.	Reapply appropriate filters and sorts to help locate your agent.
 
-Step 2: Check the Inventory Refresh Date
+1. Select any column header.
+1. Click **Clear all filters**.
+1. Reapply appropriate filters and sorts to help locate your agent.
+
+#### Step 2: Check the inventory refresh date
 The agent inventory refreshes once every 24 hours. Keep in mind:
-•	Newly created agents may take up to 24 hours to appear.
-•	Deleted agents may remain visible for up to 48 hours after deletion.
+- Newly created agents may take up to 24 hours to appear.
+- Deleted agents may remain visible for up to 48 hours after deletion.
 
-Check the inventory refresh timestamp at the top-right corner of the inventory page:
-o	If your agent was created after the last refresh, please wait until the next refresh cycle completes.
-o	If your agent was created before the last refresh and is still not visible, proceed to Step 3.
-o	If you're uncertain of the creation time, wait for the next refresh cycle before proceeding further.
+    Check the inventory refresh timestamp at the top-right corner of the page.
+    - If your agent was created after the last refresh, please wait until the next refresh cycle completes.
+    - If your agent was created before the last refresh and is still not visible, proceed to step 3.
+    - If you're uncertain of the creation time, wait for the next refresh cycle before proceeding.
 
-Step 3: Verify the Agent Exists in Copilot Studio Portal
+### Step 3: Verify that the agent exists in the Copilot Studio portal.
 Confirm the agent’s existence and your access permissions by verifying directly in the Copilot Studio portal:
-1.	Navigate to the Copilot Studio portal.
-2.	Select the appropriate environment where the agent should exist.
-3.	Ensure you have appropriate permissions to view the agent:
-o	If you see the agent in Copilot Studio, but it's still missing from the admin center inventory after the refresh cycle, please open a support ticket.
-o	If you cannot see the agent in Copilot Studio (and you have verified permissions), it likely no longer exists.
 
-Next Steps
+1. Navigate to the Copilot Studio portal.
+1. Select the appropriate environment where the agent should exist.
+1. Ensure you have appropriate permissions to view the agent:
+    - If you see the agent in Copilot Studio, but it's still missing from the admin center inventory after the refresh cycle, please open a support ticket.
+    - If you cannot see the agent in Copilot Studio (and you have verified permissions), it likely no longer exists.
+
+#### Next steps
 If you have completed these troubleshooting steps and are still unable to locate your agent, please contact Microsoft Support for further assistance.
-
-
-
-
-
-
-
-
-
-
-
