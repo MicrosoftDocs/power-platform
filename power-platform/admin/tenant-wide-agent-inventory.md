@@ -21,7 +21,7 @@ The inventory allows administrators to:
 
 - **Accelerate support**: Quickly locate agents referenced in support tickets to improve response times.
 - **Prevent orphaned agents**: Identify agents owned by departing users to proactively transfer ownership and maintain continuity.
-- **Enforce compliance standards**: Easily detect agents created in non-approved regions, ensuring adherence to organizational compliance policies.
+- **Enforce compliance standards**: Easily detect agents created in nonapproved regions, ensuring adherence to organizational compliance policies.
 
 ## Prerequisites 
 You must [turn on tenant-level analytics](tenant-level-analytics.md) to access the inventory.
@@ -50,8 +50,8 @@ At any time, you can see how many agents correspond to your search, filter, and 
 
 When you narrow the list to fewer than 500 agents, you can search for keywords across all entries on the page, like the name of the agent. The search box only searches across all agents that have been displayed on the page.
 
-## Display additional columns
-The inventory page provides the option to display additional columns to help you better manage your custom agents. To customize displayed columns:
+## Display more columns
+The inventory page provides the option to display more columns to help you better manage your custom agents. To customize displayed columns:
  
 1.	Click the **column chooser** icon, located next to the search box at the top of the page.
 1.	Select the columns you wish to display or hide.
@@ -69,14 +69,14 @@ To clear all filters and sorts, select any column and select **Clear all filters
 ## Known limitations
 - **Limited scope**: This experience supports only agents built directly in Copilot Studio. Agents that are created in Copilot Studio agent builder, in the Microsoft 365 Copilot app, aren't supported in this release.
 - **Data refresh frequency**: Inventory data updates once every 24 hours. Newly created agents might take up to 24 hours to appear, and deleted agents might remain visible for up to 48 hours after removal.
-- **Item display limit**: The inventory page displays a maximum of 500 agents at one time. If more than 500 agents match your search or filter criteria, only the first 500 are displayed. Use additional filters to narrow down your results. The primary search box, at the top of the page, only searches across those 500 agents.
+- **Item display limit**: The inventory page displays a maximum of 500 agents at one time. If more than 500 agents match your search or filter criteria, only the first 500 are displayed. Use more filters to narrow down your results. The primary search box, at the top of the page, only searches across those 500 agents.
 
 ## Frequently asked questions
 
 ### Why am I seeing multiple agents with identical names&mdash;for example, _Copilot in Power Apps_&mdash;across different environments?
 Power Apps creates a platform-owned agent named **Copilot in Power Apps** in each environment. This agent is only editable by a Power Platform admin and isn’t published to any channels by default. Although this agent can be viewed in Copilot Studio, this agent shouldn't be edited since it's not used by model-driven apps. Learn more in [Customize Copilot chat using Copilot Studio](/power-apps/maker/model-driven-apps/customize-copilot-chat).
 
-This is similar to other standard, pre-installed, model-driven apps such as the Power Platform Environment Settings.
+This is similar to other standard, preinstalled, model-driven apps such as the Power Platform Environment Settings.
 
 ### Why can't I find an agent on the Copilot Studio inventory page?
 Occasionally, you might not be able to locate a specific agent in your inventory list. Use the following steps to resolve the issue.
@@ -94,7 +94,7 @@ The agent inventory refreshes once every 24 hours. Keep in mind:
 - Deleted agents may remain visible for up to 48 hours after deletion.
 
     Check the inventory refresh timestamp at the top-right corner of the page.
-    - If your agent was created after the last refresh, please wait until the next refresh cycle completes.
+    - If your agent was created after the last refresh, wait until the next refresh cycle completes.
     - If your agent was created before the last refresh and is still not visible, proceed to [step 3](#step-3-verify-that-the-agent-exists-in-the-copilot-studio-portal).
     - If you're uncertain of the creation time, wait for the next refresh cycle before proceeding.
 
@@ -104,8 +104,8 @@ Confirm the agent’s existence and your access permissions by verifying directl
 1. Navigate to the Copilot Studio portal.
 1. Select the appropriate environment where the agent should exist.
 1. Ensure you have appropriate permissions to view the agent:
-    - If you see the agent in Copilot Studio, but it's still missing from the admin center inventory after the refresh cycle, please open a support ticket.
-    - If you cannot see the agent in Copilot Studio (and you have verified permissions), it likely no longer exists.
+    - If you see the agent in Copilot Studio, but it's still missing from the admin center inventory after the refresh cycle, open a support ticket.
+    - If you can't see the agent in Copilot Studio (and you have verified permissions), it likely no longer exists.
 
 #### Next steps
-If you have completed these troubleshooting steps and are still unable to locate your agent, please contact Microsoft Support for further assistance.
+If you have completed these troubleshooting steps and are still unable to locate your agent, contact Microsoft Support for further assistance.
