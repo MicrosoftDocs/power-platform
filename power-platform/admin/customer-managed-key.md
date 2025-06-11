@@ -462,7 +462,7 @@ Follow these steps if you want to return to a Microsoft managed encryption key.
    > - **Encrypting - online** - All core services encryption that required system downtime is complete and system is enabled for online use.
    > - **Encrypted** - The enterprise policy encryption key is active and the environment is encrypted with your key.
    > - **Reverting** - The encryption key is being changed from customer-managed key to Microsoft-managed key and the system is disabled for online use.
-   > - **Reverting - online** - All core services encrytion that required system downtime have reverted the key and the system is enabled for online use.
+   > - **Reverting - online** - All core services encryption that required system downtime have reverted the key and the system is enabled for online use.
    > - **Microsoft Managed key** - The Microsoft-managed key encryption is active.  
    > - **Failed** - The enterprise policy encryption key isn't used by **all** Dataverse storage services. They require more time to process and you can rerun the **Add environment** operation. Contact Support if the rerun operation fails.
    >
