@@ -448,7 +448,7 @@
                   href: monitoring/monitor-power-automate.md
         - name: Copilot
           items:
-            - name: Track, manage, and scale Copilot adoption in the Power Platform
+            - name: Track, manage, and scale Copilot adoption
               href: copilot/copilot-hub.md
             - name: View tenant-wide agent inventory
               href: tenant-wide-agent-inventory.md
