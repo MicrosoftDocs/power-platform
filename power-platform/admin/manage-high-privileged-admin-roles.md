@@ -47,8 +47,8 @@ These admins can't perform activities that require direct access to Dataverse da
 
 ## Known limitations
 
-- When using the API, if a system administrator makes a self-elevate call, it returns a success instead of indicating that they are already a system administrator.
-
+- When using the API, if the caller is a system administrator, the self-elevate call returns a success instead of indicating that they are already exit.
+  
 - The user making the call must have the tenant admin role assigned. For a full list of users who meet the tenant admin criteria, see [Changes to feature support](#changes-to-feature-support)
 
 - If you're a Dynamics 365 administrator and the environment is protected by a security group, you must be a member of the security group. This rule doesn't apply to users with the global administrator or Power Platform administrator roles.
