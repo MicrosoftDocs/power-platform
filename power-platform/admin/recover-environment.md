@@ -6,7 +6,7 @@ ms.component: pa-admin
 ms.topic: how-to
 ms.date: 04/02/2024
 ms.subservice: admin
-author: ChrisGarty
+ms.custom: NewPPAC
 ms.author: cgarty
 ms.reviewer: sericks
 search.audienceType: 
@@ -31,25 +31,27 @@ You can recover a recently deleted environment ([within seven days of deletion](
 
 ## Power Platform admin center
 
-An administrator can recover a recently deleted environment by using the Power Platform admin center.
+An administrator can recover a recently deleted environment by following these steps:
 
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 admin or Power Platform admin).
-2. In the navigation pane, select **Environments**, and then select **Recover deleted environments**.
+#### [New admin center](#tab/new)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. On the **Environments** page,  select **Recover deleted environments** in the command bar.
+1. On the **Deleted** page, select the environment you want to recover.
+1. Select **Continue** to confirm the recovery.
+1. Select **Ok** to proceed with the recovery.
+   
+#### [Classic admin center](#tab/classic)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Environments**.
+1. On the **Environments** page,  select **Recover deleted environments** in the command bar.
+1. On the **Deleted** page, select the environment you want to recover.
+1. Select **Continue** to confirm the recovery.
+1. Select **Ok** to proceed with the recovery.
+---
 
-    > [!div class="mx-imgBorder"] 
-    > ![Restore deleted environments.](media/restore-delete-alert.png "Restore deleted environments")
-
-3. Select an environment to recover, and then select **Recover**.
-
-    > [!div class="mx-imgBorder"] 
-    > ![Select Recover.](media/restore-delete-select-environment.png "Select Recover")
-
-4. Select **Continue** to confirm the recovery. 
-
-    > [!div class="mx-imgBorder"] 
-    > ![Select Continue.](media/restore-delete-select-continue.png "Select Continue")
-
-It could take several hours for the environment to be recovered. During this period, the environment to be recovered will continue to show in the list of deleted environments. Once recovered, you'll see the environment in the **Environments** page.
+It may take several hours for the environment to be restored. During this period, the environment remains visible in the list of deleted environments. Once recovery is complete, the environment reappear on the **Environments** page.
 
 ## PowerShell
 
