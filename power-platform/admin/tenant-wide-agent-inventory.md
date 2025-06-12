@@ -79,17 +79,17 @@ Power Apps creates a platform-owned agent named **Copilot in Power Apps** in eac
 
 This is similar to other standard, preinstalled, model-driven apps such as the Power Platform Environment Settings.
 
-### Why can't I find an agent on the Copilot Studio inventory page?
-Occasionally, you might not be able to locate a specific agent in your inventory list. Use the following steps to resolve the issue.
+### Why can't I find an agent on the Copilot Studio page?
+Occasionally, you might not be able to locate a specific agent in your on the **Copilot Studio** page. Use the following steps to resolve the issue.
 
 #### Step 1: Clear all filters and sorts
 You may inadvertently have filters or sorts applied that are hiding the agent.
 
 1. Select any column header.
-1. Click **Clear all filters**.
+1. Select **Clear all filters**.
 1. Reapply appropriate filters and sorts to help locate your agent.
 
-#### Step 2: Check the inventory refresh date
+#### Step 2: Check the refresh date
 The agent inventory refreshes once every 24 hours. Keep in mind:
 - Newly created agents may take up to 24 hours to appear.
 - Deleted agents may remain visible for up to 48 hours after deletion.
@@ -105,7 +105,7 @@ Confirm the agent’s existence and your access permissions by verifying directl
 1. Navigate to the Copilot Studio portal.
 1. Select the appropriate environment where the agent should exist.
 1. Ensure you have appropriate permissions to view the agent:
-    - If you see the agent in Copilot Studio, but it's still missing from the admin center inventory after the refresh cycle, open a support ticket.
+    - If you see the agent in Copilot Studio, but it's still missing from the Power Platform **Copilot Studio** page after the refresh cycle, open a support ticket.
     - If you can't see the agent in Copilot Studio (and you have verified permissions), it likely no longer exists.
 
 #### Next steps
