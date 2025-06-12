@@ -19,7 +19,7 @@ contributors:
 
 [!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
-You can recover a recently deleted environment ([within seven days of deletion](backup-restore-environments.md#how-long-are-my-manual-on-demand-backups-and-system-backups-retained)) by using the Microsoft Power Platform admin center or the [Recover-AdminPowerAppEnvironment](/powershell/module/microsoft.powerapps.administration.powershell/recover-adminpowerappenvironment?view=pa-ps-latest) Power Apps cmdlet. Production environments with Dynamics 365 applications will be available for up to 28 days.
+You can recover a recently deleted environment ([within seven days of deletion](backup-restore-environments.md#how-long-are-my-manual-on-demand-backups-and-system-backups-retained)) by using the Microsoft Power Platform admin center or the [Recover-AdminPowerAppEnvironment](/powershell/module/microsoft.powerapps.administration.powershell/recover-adminpowerappenvironment?view=pa-ps-latest) Power Apps cmdlet. Production environments with Dynamics 365 applications are available for up to 28 days.
 
 > [!NOTE]
 > Available storage capacity might be required in order to successfully recover an environment depending on the type of environment being recovered. For information on viewing your current storage capacity, see [Microsoft Dataverse storage capacity](capacity-storage.md). 
@@ -69,7 +69,7 @@ To learn more on using PowerShell cmdlets for environments, see [Power Apps cmdl
 
 ## Next steps after recovering an environment
 
-- **Flows** – Solution flows will be disabled so enable flows as needed.
+- **Flows** – Solution flows are disabled so enable flows as needed.
 
 ### See also 
 
