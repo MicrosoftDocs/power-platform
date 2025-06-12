@@ -53,7 +53,6 @@ Add the following URLs to the allow list to use Dynamics 365 apps such as Dynami
 |---|---|
 | http://login.microsoftonline-p.com  | Required for Microsoft Cloud Authentication. Includes business-to-consumer (B2C) and guest scenarios.   |
 | https://login.live.com  |  |
-| https://secure.aadcdn.microsoftonline-p.com  |   |
 | https://auth.gfx.ms  |   |
 | https://*.windows.net  |    |
 | http://*.passport.net  |    |
