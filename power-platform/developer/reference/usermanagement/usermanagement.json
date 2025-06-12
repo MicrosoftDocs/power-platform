@@ -1,7 +1,7 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "Microsoft Power Platform REST API - usermanagement",
+    "title": "Microsoft Power Platform REST API - user management",
     "description": "Unified API for all administrative capabilities in Microsoft Power Platform.",
     "version": "2022-03-01-preview"
   },
@@ -159,11 +159,11 @@
   },
   "definitions": {
     "SyncReport": {
-      "description": "Organization Sync report contains last sync information from kepler",
+      "description": "Organization sync report contains last sync information from kepler",
       "type": "object",
       "properties": {
         "lastSyncTime": {
-          "description": "Last sync time for the org",
+          "description": "Last sync time for the organization",
           "type": "string",
           "example": ""
         }
