@@ -3,7 +3,7 @@ title: Overview of the Power Platform admin center
 description: The Power Platform admin center is a unified portal for administrators to manage environments and settings.
 author: sericks007
 ms.topic: overview
-ms.date: 05/21/2025
+ms.date: 06/12/2025
 ms.author: sericks
 ms.custom: NewPPAC
 
@@ -11,10 +11,10 @@ ms.custom: NewPPAC
 
 # Overview of the Power Platform admin center
 
-The [Power Platform admin center](https://admin.powerplatform.microsoft.com) provides a unified portal for administrators to manage environments and settings for Power Apps, Power Automate, Power Pages, and Microsoft Copilot Studio. The Power Platform admin center is also used by administrators of some Dynamics 365 apps, such as Dynamics 365 Sales, Dynamics 365 Customer Service, and Dynamics 365 Marketing, to manage environments and settings.
+The [Power Platform admin center](https://admin.powerplatform.microsoft.com) provides a unified portal for administrators to manage environments and settings for Power Apps, Power Automate, Power Pages, Microsoft Copilot Studio, and some Dynamics 365 apps.
 
 ## Understand the user interface (UI)
-[The new and improved Power Platform admin center](new-admin-center.md) is designed with an outcome-driven approach, where all functionality is intuitively organized in pages based on administrative tasks. The new admin center isn't just task-oriented, it also helps you achieve specific outcomes and goals. The design focuses on providing an optimal user experience, catering to a wide range of stakeholders with varying needs.
+[The new and improved Power Platform admin center](new-admin-center.md) is designed with an outcome-driven approach, where all functionality is intuitively organized in pages based on administrative tasks. The new admin center isn't just task-oriented, it also helps you achieve specific outcomes and goals.
 
 The classic Power Platform admin center is available and pages are organized according to functions.
 
