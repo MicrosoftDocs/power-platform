@@ -37,11 +37,11 @@ To view your inventory of custom agents:
 ## Apply filters and sorts
 You can filter by:
 
-- **Environment type**: Select the **Environment type** column and select the “Default”. You see all custom agents in the default environment.
+- **Environment type**: Select the **Environment type** column and select the default environment. You see all custom agents in the default environment.
 - **Owner**: Select the **Owner** column and type the name of the person who created the custom agent. You see all agents owned by this person in the default environment.
 - **Creation date**: Select the **Created on** column and apply the date filters of your choice. For example, you can filter from January 2024 to today’s date. You see all agents owned by this person, in the default environment, that they created in the year 2024.
   
-You can also sort by creation date. Select the **Created on** column and select **Sort descending**. You see the user's most recently created agents, in the default environment, for the year 2024.
+    You can also sort by creation date. Select the **Created on** column and select the **Sort descending** sort order. You see the user's most recently created agents, in the default environment, for the year 2024.
 
 You can apply filters and sorts on any column, offering numerous possibilities.
 
@@ -51,10 +51,11 @@ At any time, you can see how many agents correspond to your search, filter, and 
 When you narrow the list to fewer than 500 agents, you can search for keywords across all entries on the page, like the name of the agent. The search box only searches across all agents that have been displayed on the page.
 
 ## Display more columns
-The inventory page provides the option to display more columns to help you better manage your custom agents. To customize displayed columns:
+The **Copilot Studio** page provides the option to display more columns to help you better manage your custom agents. To customize displayed columns:
  
-1.	Click the **column chooser** icon, located next to the search box at the top of the page.
-1.	Select the columns you wish to display or hide.
+1. Select the **column chooser** icon, located next to the search box on the right side of the page.
+1. Select the columns you wish to display or hide.
+1. Select **Save**. 
 
 ## View agent or environment details
 - Select an item, then select the **Details** option in the command bar.
