@@ -144,54 +144,32 @@ This capability builds on the original environment routing feature, which routed
 - Consistent policy enforcement across environments. 
 - Reduced risk of conflicts in shared or default environments.
 
-### How it works
+All routed environments are Managed Environments, meaning they inherit standardized policies like data retention, AI features, and application lifecyle management (ALM) settings defined by the admin through environment groups.
+
+### Create and manage environment routing rules
 
 #### [New admin center](#tab/new)
-1. Select which portals&mdash;such as Power Apps or Copilot Studio&mdash;should apply routing. 
-    1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).    
-    1. In the navigation pane, select **Manage**.   
-    1. In the **Manage** pane, select **Tenant settings**.   
-    1. In the **Tenant settings** page, select **Environment routing**.      
-    1. In the **Set up environment routing** pane, in the **Turn on environment routing for** section, select the product portals for which you want to allow routing. 
-1. Define rules using the following steps:
+1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).    
+1. In the navigation pane, select **Manage**.   
+1. In the **Manage** pane, select **Tenant settings**.   
+1. In the **Tenant settings** page, select **Environment routing**. The **Create and manage environment routing rules** pane is displayed.   
+1. In the **Turn on environment routing for** section, select the product portals for which you want to allow routing.      
+1. Click **New rule** to define a new rule. The **Create a new routing rule** pane appears. Do the following:
+    1. In the **Name** field, enter a name for the rule.
+    1. Apply the routing rule to **Everyone** or specific security groups.
 
-    1. Each rule includes a name, target environment group, and audience (either “Everyone” or specific security groups).
-  
-    1. 1. Sign in to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com/) as a [Power Platform tenant administrator](use-service-admin-role-manage-tenant.md).
-    1. Select **Manage** in the navigation pane.
-    1. In the **Manage** pane, select **Environment groups**.
-    1. On the **Environment groups** page, select **New group**.
-    1. In the **Create group** pane that appears:
-    
-    1. Rules are created through a multi-step panel in the Power Platform Admin Center. 
+        Selecting **Everyone** routes all makers into existing or new personal developer environments. Selecting a security group to limit routing only to the member makers of the configured security group.
 
-        1. Select “New rule” 
-        
-        1. In the “Create a new routing rule” to panel, select Everyone or select a specific security group: 
+    1. Select an environment group to which the newly created developer environments are automatically assigned. This environment group inherits all the defined, environment group rules. Learn more in [Environment groups](environment-groups.md).
+    1. Click **Save**. The **Create and manage environment routing rules** pane is displayed again.
+1. Use the arrow icons to change the priority of the rules. 
 
-            1. (Note) Selecting Everyone routes all makers into existing or new personal developer environments. 
-            
-            1. Admins can select a security group to limit routing only to the member makers of the configured security group. Learn more in Configure security groups. 
+    When a maker accesses a portal, the system evaluates the rules in order and applies the first matching rule.
 
-    1. (Recommended) Select an environment group to which the newly created developer environments are automatically assigned. This environment group inherits all the defined environment group rules. Learn more in Environment groups. 
+    - If a matching rule is found, the maker is routed to an existing or newly provisioned developer environment. 
+    - If no rule matches, or if environment routing is not turned on, the maker is routed to the default environment. 
 
-1. Priority-Based Evaluation: 
-
-    1. Rules are ordered by priority. 
-
-        1. Admins can use the arrows to change the priority of the rules. 
-
-    1. When a maker accesses a portal, the system evaluates the rules in order and applies the first matching rule. 
-
-1. Environment Provisioning: 
-
-    1. If a matching rule is found, the maker is routed to an existing or newly provisioned developer environment. 
-    
-    1. If no rule matches or routing is disabled, the maker is routed to the default environment. 
-
-1. Governance Enforcement: 
-
-    1. All routed environments are managed environments, meaning they inherit standardized policies like data retention, AI feature enablement, and ALM settings defined by the admin via environment groups.
+1. Click **Save**.
   
 #### [Classic admin center](#tab/classic)
 1. Do this.
