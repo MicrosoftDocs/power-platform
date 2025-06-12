@@ -20,7 +20,7 @@ search.audienceType:
 Power Platform provides a cleanup mechanism that automatically removes [Microsoft Dataverse for Teams environments](about-teams-environment.md) from your tenant that are left inactive. An environment is first disabled after 90 days of inactivity. And then, deleted if administrators don't take any action and the environment is left disabled for 30 days. Administrators have seven days to recover deleted environments.
 
 > [!NOTE]
-> To understand automatic deletion of Power Platform environments that are not Dataverse for Teams environments, go to [Automatic deletion of inactive Power Platform environments](automatic-environment-cleanup.md).
+> To understand automatic deletion of Power Platform environments that aren't Dataverse for Teams environments, go to [Automatic deletion of inactive Power Platform environments](automatic-environment-cleanup.md).
 
 A disabled or deleted environment doesn't affect any other Microsoft Teams assets (Teams, channels, SharePoint sites, Teams-connected sites, and so on) and applies only to Dataverse integrations. This cleanup process is automatic. If you no longer need an inactive Dataverse for Teams environment, you don't need to do anything.
 
@@ -53,7 +53,7 @@ The following users receive email notifications on the schedule described in the
 - The creator of the environment.
 - If environment administrators are no longer part of the tenant, then the tenant administrators are notified.
 
-Additionally, users and makers are notified on the Environment's list page and Environment page when the Dataverse for Teams environment is disabled.
+Additionally, users and makers aren't notified on the Environment's list page and Environment page when the Dataverse for Teams environment is disabled.
 
 ## Timeline for inactive Dataverse for Teams environments
 
@@ -68,16 +68,16 @@ The following table describes the schedule of notifications and actions for Data
 | 117 days after no user activity | Send a warning that the environment will be deleted. Update the disabled environment state on the Environments list page<sup>1</sup> and the Environment page<sup>3</sup>. |
 | 120 days after no user activity | Delete the environment. Send a notice that the environment has been deleted. |
 
-<sup>1</sup> **Environment state on the Environments list page in Power Platform admin center**
+<sup>1 </sup> **Environment state on the Environments list page in Power Platform admin center**
 :::image type="content" source="media/inactive-environment-state.png" alt-text="Screenshot of the Environments list page in Power Platform admin center, with the environment state column highlighted.":::
 
-<sup>2</sup>**Inactive environment alert on the Environment page in Power Platform admin center**
+<sup>2 </sup>**Inactive environment alert on the Environment page in Power Platform admin center**
 :::image type="content" source="media/inactive-environment-state-box.png" alt-text="Screenshot of the inactive environment alert on the Environment page, with the Trigger environment activity checkbox highlighted.":::
 
 > [!NOTE]
 > The **Environment inactive** warning tile only displays if the Dataverse for Teams environment is <= 7 days until disablement.
 
-<sup>3</sup>**Disabled environment alert on the Environment page in Power Platform admin center**
+<sup>3 </sup>**Disabled environment alert on the Environment page in Power Platform admin center**
 
 > [!NOTE]
 > The **Environment disabled** tile displays anytime a Dataverse for Teams environment is disabled due to inactivity.
