@@ -19,7 +19,7 @@ search.audienceType: admin
 
 [!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
-Use Microsoft Entra Privileged Identity Management (PIM) to manage high-privileged admin roles in the Power Platform admin center.
+Manage high-privileged admin roles in the Power Platform admin center using Microsoft Entra Privileged Identity Management (PIM).
 
 ## Prerequisites
 
@@ -47,13 +47,13 @@ These admins can't perform activities that require direct access to Dataverse da
 
 ## Known limitations
 
-- When using the API, you notice that if the caller is a system administrator, the self-elevate call returns a success rather than notifying the caller that the system administrator already exists.
+- When using the API, if a system administrator makes a self-elevate call, it returns a success instead of indicating that they are already a system administrator.
 
 - The user making the call must have the tenant admin role assigned. For a full list of users who meet the tenant admin criteria, see [Changes to feature support](#changes-to-feature-support)
 
 - If you're a Dynamics 365 administrator and the environment is protected by a security group, you must be a member of the security group. This rule doesn't apply to users with the global administrator or Power Platform administrator roles.
 
-- The elevation API can only be invoked by the user who needs to elevate their status. It doesn't support making API calls on behalf of another user for elevation purposes.
+- The user who needs to elevate their status must invoke the elevation API. It does not allow API calls to elevate another user's status.
 
 - A workaround is available for customers using the Microsoft Power Platform CoE Starter Kit. See [PIM Issue and Workaround #8119](https://github.com/microsoft/coe-starter-kit/issues/8119) for more information and details.
 
@@ -84,7 +84,7 @@ In this PowerShell script, you:
 
 - Authenticate, using the Power Platform API.
 - Build an `http` query with your environment ID.
-- Call the API endpoint to request elevation.
+- Request elevation, using the Power Platform API.
 
 ##### Add your environment ID
 
@@ -207,12 +207,12 @@ Remove-RoleAssignmentFromUsers
 1. In the **Manage** pane, select **Environments**.
 1. On the **Environments** page, choose the environment you want to modify.
 1. In the command bar, select **Membership** to request self-elevation.
-1. In the **System Administrators** pane, select ""ADD me** to add yourself to the system administrator role.
+1. In the **System Administrators** pane, select ""Add me** to add yourself to the system administrator role.
 
 ##### [Classic admin center](#tab/classic)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Environments**.
 1. On the **Environments** page, choose the environment you want to modify.
 1. In the command bar, select **Membership** to request self-elevation.
-1. In the **System Administrators** pane, select ""ADD me** to add yourself to the system administrator role.
+1. In the **System Administrators** pane, select ""Add me** to add yourself to the system administrator role.
 ---
