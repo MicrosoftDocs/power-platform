@@ -187,7 +187,7 @@ We'd love to know your thoughts on the new outage reporting process. Or, if you'
 
 For some support requests, you’ll be asked to request a support environment. Currently, support environments can’t be created for the Power Apps or Power Automate product options in the **What product where you using when the issue occurred?** field. To create a support request which includes a support environment for Power Platform issues, select the **Microsoft Dataverse** product for that field.
 
-    :::image type="content" source="media/support-environment-select.png" alt-text="Screenshot shows the product options needing support environments.":::
+  :::image type="content" source="media/support-environment-select.png" alt-text="Screenshot shows the product options needing support environments.":::
 
 ### See also
 
