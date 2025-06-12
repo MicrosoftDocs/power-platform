@@ -65,7 +65,6 @@ Add the following URLs to the allow list to use Dynamics 365 apps such as Dynami
 | https://crl.microsoft.com/pki/crl/products/microsoftrootcert.crl  | Required for Certification Revocation List checks.    |
 | https://dynamics.microsoft.com |    |
 | https://*.api.powerplatform.com, https://\*.powerplatform.com, https://\*.api.powerplatformusercontent.com, and https://\*.powerplatformusercontent.com  | Required for Power Platform API connectivity and used internally by Microsoft products and admin automation scenarios as described in [Programmability and extensibility overview](programmability-extensibility-overview.md). |
-| https://mem.gfx.ms  | Me Control is a Microsoft feature that provides a consistent way for users to do core authentication functions like signing in, switching between accounts and more.    |
 | https://www.d365ccafpi.com |  d365ccafpi service exposes a controller endpoint for token change to achieve client side first party integration with external service from PCF control  |
 | https://api.admin.powerplatform.microsoft.com | Required to call Power Platform admin center service in public cloud.|
 | https://eu-mobile.events.data.microsoft.com/Collector/3.0 (Europe)<br/>https://browser.pipe.aria.microsoft.com (Rest of the world) | Required for model-driven apps telemetry information.|
