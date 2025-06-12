@@ -4,7 +4,7 @@ description: Provides information about URLs and IP addresses to be added to the
 author: sericks007
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 06/20/2025
+ms.date: 06/12/2025
 ms.subservice: admin
 ms.author: sericks
 contributors:
