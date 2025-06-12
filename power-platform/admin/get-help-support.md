@@ -69,13 +69,13 @@ An example of solutions provided for Dynamics 365 App for Outlook issues:
 
 1. Select **Support** > **Support requests** and then select **Get support**.
 
-1. The **Support agent (Preview)** opens. This is a chat-based experience that provides self-help solutions and allows you to create a support request if needed. Select the **Technical** section to find solutions to your issue.
+1. The **Support agent PREVIEW** pane opens. This is a chat-based experience that provides self-help solutions and allows you to create a support request if needed. Select the **Technical** section to find solutions to your issue.
 
    :::image type="content" source="media/support-agent-new.png" alt-text="Screenshot shows the Support agent in the Power Platform admin center.":::
 
-1. In the text box, describe the issue you're facing. The Support agent (Preview) will provide a list of possible solutions based on the information you provided.
+1. In the text box, describe the issue you're facing. The Support agent will provide a list of possible solutions based on the information you provided.
 
-   ::::image type="content" source="media/support-agent-technical-result.png" alt-text="Screenshot shows the Technical section in the Support agent.":::   
+   :::image type="content" source="media/support-agent-technical-result.png" alt-text="Screenshot shows the Technical section in the Support agent.":::   
 
 1. Select either **Yes** or **No** to indicate if the solution suggested by the Support agent (Preview) was helpful. 
     - If you select **Yes**, the support request is closed, and you can provide feedback on the solution.
@@ -87,9 +87,11 @@ An example of solutions provided for Dynamics 365 App for Outlook issues:
 
 1. Select **Support** > **Support requests** and then select **Get support**.
 
-1. To switch to the old **Support** experience, select the **...** (ellipsis) icon in the top right corner, and then select **Switch to old experience**.
+1. To switch to the old **Support** experience instead of the Support agent experience, select the **...** (ellipsis) icon in the top right corner, and then select **Switch to old experience**.
 
 1. Select **Proceed** to continue to the old experience. The **How can we help?** page opens.
+
+### Problem tab 
 
 1. In the **Problem** tab, select the product that you need help with. The product options are based on your licenses and the products you have access to. 
 
@@ -105,24 +107,38 @@ An example of solutions provided for Dynamics 365 App for Outlook issues:
       > 
       > This change won't have any impact on your licenses.
 
-
-     :::image type="content" source="media/support-problem-tab.png" alt-text="Screenshot shows the Problem tab in the support page.":::
-
 1. Next, describe the exact error or describe the issue you're facing and then select the problem type. Scroll down and select **Get solutions** to view the possible solutions based on the product and problem type.
 
-1. In the **Copilot (Preview)** tab, you'll see a list of suggested solutions based on the information you provided. If you find a solution that seems relevant, select it to view more details.
+:::image type="content" source="media/support-problem-tab.png" alt-text="Screenshot shows the Problem tab in the support page.":::
 
-    :::image type="content" source="media/support-copilot-tab.png" alt-text="Screenshot shows the Copilot (Preview) tab in the support page.":::
+
+### Copilot (Preview) tab 
+
+This tab appears only after you select a product in the previous tab.
+
+1. In the **Copilot (Preview)** tab, you'll see a list of suggested solutions based on the information you provided.  If you find a solution that seems relevant, select it to view more details.
 
 1. Select either **Yes** or **No** to indicate if the solution suggested by Copilot (Preview) was helpful. 
     - If you select **Yes**, the support request is closed, and you can provide feedback on the solution.
     - If you select **No**, you'll be prompted to provide follow up questions your issue. Select **Next** to continue.
 
-1. In the **Solutions** tab, you'll see a list of recommended solutions to your issue based on the information you provided. If the guidance doesn't resolve your issue, scroll down and select **Next**.
+:::image type="content" source="media/support-copilot-tab.png" alt-text="Screenshot shows the Copilot (Preview) tab in the support page.":::
 
-     :::image type="content" source="media/support-solutions-tab.png" alt-text="Screenshot shows the Solutions tab in the support page.":::
 
-1. In the **Support** tab, you can create a support request. Enter your **Premier access ID** and the **Contract ID/password**. 
+### Solutions tab 
+
+1. In the **Solutions** tab, you'll see a list of recommended solutions to your issue based on the information you provided. 
+
+1. If the guidance doesn't resolve your issue, scroll down and select **Next**.
+
+:::image type="content" source="media/support-solutions-tab.png" alt-text="Screenshot shows the Solutions tab in the support page.":::
+
+
+### Support tab
+
+1. In the **Support** tab, you can create a support request. 
+
+1. Enter your **Premier access ID** and the **Contract ID/password**. 
 
    > [!NOTE]
    > - For **Contract ID/password**, enter your Unified or Premier contract ID. 
@@ -133,6 +149,11 @@ An example of solutions provided for Dynamics 365 App for Outlook issues:
 
    > [!NOTE]
    > If you have one of the plans listed in [Prerequisites](#prerequisites), you can set the severity to a higher level than **Minimal**.
+
+### Contact tab
+
+
+## View list of of support requests
 
 After you submit your request it will appear in the list of support requests. You can check the status and edit your request on this page.
 
@@ -166,7 +187,7 @@ We'd love to know your thoughts on the new outage reporting process. Or, if you'
 
 For some support requests, you’ll be asked to request a support environment. Currently, support environments can’t be created for the Power Apps or Power Automate product options in the **What product where you using when the issue occurred?** field. To create a support request which includes a support environment for Power Platform issues, select the **Microsoft Dataverse** product for that field.
 
-:::image type="content" source="media/how-can-we-help.png" alt-text="Select Dynamics 365 Sales as the product.":::
+:::image type="content" source="media/support-environment-select.png" alt-text="Screenshot shows the product options needing support environments.":::
 
 ### See also
 
