@@ -515,17 +515,17 @@ Follow these steps if you want to return to a Microsoft managed encryption key.
 
 ---
 
-    > [!NOTE]
-    >
-    > The environment's encryption status can be:
-    >
-    > - **Encrypted** - The Enterprise policy encryption key is active and the environment is encrypted with your key.
-    > - **Failed** - The Enterprise policy encryption key is not used by **all** Dataverse storage services. They require more time to process and you can re-run the **Add environment** operation. Contact Support if the re-run fails.
-    >
-    >      A **Failed** encryption status doesn't impact your environment data and its operations. This means that some of the Dataverse storage services are encrypting your data with your key and some continue to use the Microsoft-managed key. A revert isn't recommended as when you re-run the **Add environment** operation, the service resumes from where it left off.
-    >
-    > - **Warning** - The Enterprise policy encryption key is active and one of the service's data continues to be encrypted with the Microsoft-managed key. Learn more: [Power Automate CMK application warning messages](/power-automate/customer-managed-keys#power-automate-cmk-application-warning-messages)
-    >
+   > [!NOTE]
+   >
+   > The environment's encryption status can be:
+   >
+   > - **Encrypted** - The Enterprise policy encryption key is active and the environment is encrypted with your key.
+   > - **Failed** - The Enterprise policy encryption key is not used by **all** Dataverse storage services. They require more time to process and you can re-run the **Add environment** operation. Contact Support if the re-run fails.
+   >
+   >      A **Failed** encryption status doesn't impact your environment data and its operations. This means that some of the Dataverse storage services are encrypting your data with your key and some continue to use the Microsoft-managed key. A revert isn't recommended as when you re-run the **Add environment** operation, the service resumes from where it left off.
+   >
+   > - **Warning** - The Enterprise policy encryption key is active and one of the service's data continues to be encrypted with the Microsoft-managed key. Learn more: [Power Automate CMK application warning messages](/power-automate/customer-managed-keys#power-automate-cmk-application-warning-messages)
+   >
 
 #### Review the encryption status from the Environment History page
 
@@ -548,18 +548,18 @@ You can see the [environment history](environments-overview.md#environment-histo
 
 ---
 
-    > [!NOTE]
-    >
-    > The **Status** shows **Running** when the encryption is in progress. It shows **Succeeded** when the encryption is complete. The status shows **Failed** when there's some problem with one of the services not able to apply the encryption key.
-    >
-    > A **Failed** state can be a **warning** and you don't need to re-run the **Add environment** option. You can confirm if it's a [warning](customer-managed-key.md#review-the-encryption-status-from-enterprise-policies).
+   > [!NOTE]
+   >
+   > The **Status** shows **Running** when the encryption is in progress. It shows **Succeeded** when the encryption is complete. The status shows **Failed** when there's some problem with one of the services not able to apply the encryption key.
+   >
+   > A **Failed** state can be a **warning** and you don't need to re-run the **Add environment** option. You can confirm if it's a [warning](customer-managed-key.md#review-the-encryption-status-from-enterprise-policies).
 
 ### Change the environment's encryption key with a new enterprise policy and key
 
 To change your encryption key, create a new key and a new enterprise policy. You can then change the enterprise policy by removing the environments and then adding the environments to the new enterprise policy. The system is down two times when changing to a new enterprise policy - 1) to revert the encryption to Microsoft Managed key and 2) to apply the new enterprise policy.
 
- > [!Tip]
- > To rotate the encryption key, we recommend using the Key vaults' [**New version** or setting a **Rotation policy**](customer-managed-key.md#rotate-the-environments-encryption-key-with-a-new-key-version).
+> [!Tip]
+> To rotate the encryption key, we recommend using the Key vaults' [**New version** or setting a **Rotation policy**](customer-managed-key.md#rotate-the-environments-encryption-key-with-a-new-key-version).
 
 ##### [New admin center](#tab/new)
 
@@ -583,9 +583,6 @@ To change your encryption key, create a new key and a new enterprise policy. You
 13. Select the new enterprise policy, and then select **Edit policy**.
 14. Select **Add environment**, select the environments that you want to add, and then select **Continue**.
 
-> [!IMPORTANT]
-> The environment is disabled when it's added to the new enterprise policy.
-
 ##### [Classic admin center](#tab/classic)
 
 1. In the [Azure portal](https://ms.portal.azure.com/), create a new key and a new enterprise policy. More information:  [Create encryption key and grant access](#create-encryption-key-and-grant-access) and [Create an enterprise policy](#create-enterprise-policy)
@@ -604,6 +601,8 @@ To change your encryption key, create a new key and a new enterprise policy. You
 9. Once all the environments are removed, from the Power Platform admin center go to **Enterprise policies**.
 10. Select the new enterprise policy, and then select **Edit policy**.
 11. Select **Add environment**, select the environments that you want to add, and then select **Continue**.
+
+---
 
 > [!IMPORTANT]
 > The environment is disabled when it's added to the new enterprise policy.
