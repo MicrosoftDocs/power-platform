@@ -78,18 +78,27 @@ Admins should use the Power Platform admin center to set up the data export. Bef
 
 Follow these steps to set up your data lake:
 
-1. Sign in to the Power Platform admin center as a Microsoft Entra Global Admin, select **Export to Azure Data Lake**, and then select either **Power Apps** or **Power Automate**.  
+1. Sign in to the Power Platform admin center as a Microsoft Entra Global Admin, expand **Analytics** menu and select **Data export**, and then select either **Power Apps** or **Power Automate**.  
     The Global Admin user must have specific roles described in [First-time setup of data export](#first-time-setup-of-a-data-export).
 
-2. Set **Enable tenant-level analytics** to **On**.
+   ![image](https://github.com/MicrosoftDocs/power-platform/assets/110391372/acc8d8b0-8faf-4fd0-a70c-2fc7976583eb)
 
-3. Choose a subscription to associate with the Azure storage account.
 
-4. In the list of resource groups under this subscription, select a resource group.
+3. Set **Enable tenant-level analytics** to **On**.
 
-5. Select the Azure storage account, in the list of storage accounts under the selected resource group.
+4. Choose a subscription to associate with the Azure storage account.
 
-6. Select **Create** to set up the connection to Data Lake Storage Gen2.
+5. In the list of resource groups under this subscription, select a resource group.
+
+6. Select the Azure storage account, in the list of storage accounts under the selected resource group.
+
+![image](https://github.com/MicrosoftDocs/power-platform/assets/110391372/7ab1350d-d5bd-4d62-b2ff-1af64904f08c)
+
+
+7. Select **Next** to review your configuration selections and then select **Create** to set up the connection to Data Lake Storage Gen2.
+
+![image](https://github.com/MicrosoftDocs/power-platform/assets/110391372/719bb27b-e1fa-4ffa-b279-7cd79c686cf9)
+
 
 Allow up to 12 hours after you set up the data export for resource inventory and 30 days of historical usage data to be exported to the Azure Data Lake Storage account.
 
