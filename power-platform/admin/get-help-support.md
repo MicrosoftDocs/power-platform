@@ -1,6 +1,6 @@
 ---
-title: "Get Help + Support in Power Platform  | MicrosoftDocs"
-description: Use the Help + support experience to contact a Microsoft support representative to get resolution for your issue.
+title: Get Support in Power Platform
+description: Use the Support experience to contact a Microsoft support representative to get resolution for your issue.
 author: sericks007
 ms.component: pa-admin
 ms.topic: how-to
@@ -16,9 +16,9 @@ contributors:
 - lavanyapg
 
 ---
-# Get Help + Support
+# Get Support
 
-Admins can use the **Help + support** experience in the [Power Platform admin center](admin-documentation.md) to get self-help solutions in real-time for their issue. If the issue can't be resolved through self-help, you can use the same **Help + support** experience to contact a Microsoft support representative.
+Admins can use the **Support** experience in the [Power Platform admin center](admin-documentation.md) to get self-help solutions in real-time for their issue. If the issue can't be resolved through self-help, you can use the same **Support** experience to contact a Microsoft support representative.
 
 An example of solutions provided for Dynamics 365 App for Outlook issues:
 
@@ -63,37 +63,56 @@ An example of solutions provided for Dynamics 365 App for Outlook issues:
 >   - If you have a Unified or Premier Support plan, please contact your Incident Manager or Customer Success Account Manager (CSAM).
 >   - If you have a non-Unified/Premier Support plan, please verify the plan is active. For support information, see [Community forums](https://community.dynamics.com/forums/thread/).
 
-
 ## View solutions or create a support request using the Support agent
-
-
-## View solutions or create a support request using the **Help + support** experience
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) with your admin credentials.
 
-1. Select **Help + support** and then select **+ Get Help + support**.
+1. Select **Support** > **Support requests** and then select **Get support**.
 
-1. To switch to the old **Help + support** experience, select the **...** (ellipsis) icon in the top right corner, and then select **Switch to old experience**.
+1. The **Support agent (Preview)** opens. This is a chat-based experience that provides self-help solutions and allows you to create a support request if needed. Select the **Technical** section to find solutions to your issue.
+
+   :::image type="content" source="media/support-agent-new.png" alt-text="Screenshot shows the Support agent in the Power Platform admin center.":::
+
+1. In the text box, describe the issue you're facing. The Support agent (Preview) will provide a list of possible solutions based on the information you provided.
+
+   ::::image type="content" source="media/support-agent-technical-result.png" alt-text="Screenshot shows the Technical section in the Support agent.":::   
+
+1. Select either **Yes** or **No** to indicate if the solution suggested by the Support agent (Preview) was helpful. 
+    - If you select **Yes**, the support request is closed, and you can provide feedback on the solution.
+    - If you select **No**, you'll be prompted to create a support request. You can create a support request only if you have a valid support plan. If you don't have a support contract, you'll be prompted to add one or ask about a new topic.
+
+## View solutions or create a support request using the **Support** experience
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) with your admin credentials.
+
+1. Select **Support** > **Support requests** and then select **Get support**.
+
+1. To switch to the old **Support** experience, select the **...** (ellipsis) icon in the top right corner, and then select **Switch to old experience**.
 
 1. Select **Proceed** to continue to the old experience. The **How can we help?** page opens.
 
 1. In the **Problem** tab, select the product that you need help with. The product options are based on your licenses and the products you have access to. 
 
-    > [!NOTE]
-    > We've made changes to the product listing when creating a new support request. The following products are now available from the menu:
-    > 
-    > - Dynamics 365 Sales
-    > - Dynamics 365 Marketing
-    > - Dynamics 365 Customer Service
-    > - Dynamics 365 Omnichannel for Customer Service
-    > - Microsoft Dataverse
-    > - Power Platform Administration
-    > 
-    > This change won't have any impact on your licenses.
+      > [!NOTE]
+      > We've made changes to the product listing when creating a new support request. The following products are now available from the menu:
+      > 
+      > - Dynamics 365 Sales
+      > - Dynamics 365 Marketing
+      > - Dynamics 365 Customer Service
+      > - Dynamics 365 Omnichannel for Customer Service
+      > - Microsoft Dataverse
+      > - Power Platform Administration
+      > 
+      > This change won't have any impact on your licenses.
+
+
+     :::image type="content" source="media/support-problem-tab.png" alt-text="Screenshot shows the Problem tab in the support page.":::
 
 1. Next, describe the exact error or describe the issue you're facing and then select the problem type. Scroll down and select **Get solutions** to view the possible solutions based on the product and problem type.
 
 1. In the **Copilot (Preview)** tab, you'll see a list of suggested solutions based on the information you provided. If you find a solution that seems relevant, select it to view more details.
+
+    :::image type="content" source="media/support-copilot-tab.png" alt-text="Screenshot shows the Copilot (Preview) tab in the support page.":::
 
 1. Select either **Yes** or **No** to indicate if the solution suggested by Copilot (Preview) was helpful. 
     - If you select **Yes**, the support request is closed, and you can provide feedback on the solution.
@@ -101,31 +120,24 @@ An example of solutions provided for Dynamics 365 App for Outlook issues:
 
 1. In the **Solutions** tab, you'll see a list of recommended solutions to your issue based on the information you provided. If the guidance doesn't resolve your issue, scroll down and select **Next**.
 
-   > [!div class="mx-imgBorder"] 
-   > ![See solutions.](media/create-support-ticket.png "See solutions")
-
-   > [!div class="mx-imgBorder"] 
-   > ![New support request screen.](media/create-support-ticket2.png "Solutions")
+     :::image type="content" source="media/support-solutions-tab.png" alt-text="Screenshot shows the Solutions tab in the support page.":::
 
 1. In the **Support** tab, you can create a support request. Enter your **Premier access ID** and the **Contract ID/password**. 
 
-> [!NOTE]
-> - For **Contract ID/password**, enter your Unified or Premier contract ID. 
-> - The **Contract ID/Password** defaults to the Unified or Premier contract ID. If you have changed the password when registering online in the Unified/Premier portal, you should use the updated password instead of the contract ID.
+   > [!NOTE]
+   > - For **Contract ID/password**, enter your Unified or Premier contract ID. 
+   > - The **Contract ID/password** defaults to the Unified or Premier contract ID. If you have changed the password when registering online in the Unified/Premier portal, you should use the updated password instead of the contract ID.
 
-> [!IMPORTANT]
-> If you don't know your access or contract ID, contact your service admin or Incident Manager or Customer Success Account Manager (CSAM).
+   > [!IMPORTANT]
+   > If you don't know your access or contract ID, contact your service admin or Incident Manager or Customer Success Account Manager (CSAM).
 
    > [!NOTE]
    > If you have one of the plans listed in [Prerequisites](#prerequisites), you can set the severity to a higher level than **Minimal**.
 
 After you submit your request it will appear in the list of support requests. You can check the status and edit your request on this page.
 
-> [!div class="mx-imgBorder"]
-> ![List of support requests.](media/support-ticket-list.png "List of support requests")
-
-   > [!NOTE]
-   > Depending on availability, you might be able to use live chat option to converse with support engineers from Microsoft after creating a support request. More information: [Use live chat with persistence for support requests](live-chat-support.md)
+  > [!NOTE]
+  > Depending on availability, you might be able to use live chat option to converse with support engineers from Microsoft after creating a support request. More information: [Use live chat with persistence for support requests](live-chat-support.md)
 
 ## Advisory services and premium support plan
 
