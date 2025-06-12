@@ -1,7 +1,7 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "Microsoft Power Platform REST API -Power Pages",
+    "title": "Microsoft Power Platform REST API - Power Pages",
     "description": "Unified API for all administrative capabilities in Microsoft Power Platform.",
     "version": "2022-03-01-preview"
   },
@@ -271,7 +271,7 @@
     "/powerpages/environments/{environmentId}/websites/{id}/addAllowedIpAddresses": {
       "put": {
         "summary": "Add allowed ip addresses on a Power Pages website.",
-        "description": "Add allowed ip addressed on the given website.",
+        "description": "Add allowed IP addressed on the given website.",
         "operationId": "AddAllowedIpAddresses",
         "consumes": [
           "application/json"
@@ -342,7 +342,7 @@
     "/powerpages/environments/{environmentId}/websites/{id}/createWafRules": {
       "put": {
         "summary": "Create Web Application Firewall rules on a Power Pages website.",
-        "description": "Create Web Application Firewall rules on the given website.",
+        "description": "Create web application firewall rules on the given website.",
         "operationId": "CreateWafRules",
         "consumes": [
           "application/json"
@@ -410,7 +410,7 @@
     "/powerpages/environments/{environmentId}/websites/{id}/disableWaf": {
       "post": {
         "summary": "Disable Web Application Firewall on a Power Pages website.",
-        "description": "Disable Web Application Firewall on the given website.",
+        "description": "Disable the web application firewall on the given website.",
         "operationId": "DisableWaf",
         "produces": [
           "application/json"
@@ -544,8 +544,8 @@
         "tags": [
           "Websites"
         ],
-        "summary": "Get the Web Application Firewall rules.",
-        "description": "Get the Web Application Firewall rules associated with the given website.",
+        "summary": "Get the web application firewall rules.",
+        "description": "Get the web application firewall rules associated with the given website.",
         "operationId": "GetWAFRules",
         "produces": [
           "application/json"
@@ -568,7 +568,7 @@
           {
             "in": "query",
             "name": "ruleType",
-            "description": "Type of WAF rules to retrieve.",
+            "description": "Type of web application firewall rules to retrieve.",
             "type": "string",
             "enum": [
               "managed",
@@ -738,7 +738,7 @@
     "/powerpages/environments/{environmentId}/websites/{id}/scan/deep/getLatestCompletedReport": {
       "get": {
         "summary": "Get deep scan report for a Power Pages website.",
-        "description": "Get deep scan report for a Power Pages website.",
+        "description": "Get the deep scan report for a Power Pages website.",
         "operationId": "GetSecurityScanReport",
         "produces": [
           "application/json"
@@ -798,7 +798,7 @@
     "/powerpages/environments/{environmentId}/websites/{id}/scan/deep/getSecurityScore": {
       "get": {
         "summary": "Get deep scan score for a Power Pages website.",
-        "description": "Get deep scan score for a Power Pages website.",
+        "description": "Get the deep scan score for a Power Pages website.",
         "operationId": "GetSecurityScanScore",
         "produces": [
           "application/json"
@@ -858,7 +858,7 @@
     "/powerpages/environments/{environmentId}/websites/{id}/scan/deep/start": {
       "post": {
         "summary": "Start deep scan for a Power Pages website.",
-        "description": "Start deep scan for a Power Pages website.",
+        "description": "Start a deep scan for a Power Pages website.",
         "operationId": "StartDeepScan",
         "produces": [
           "application/json"
@@ -915,7 +915,7 @@
     "/powerpages/environments/{environmentId}/websites/{id}/scan/quick/execute": {
       "post": {
         "summary": "Execute quick scan for a Power Pages website.",
-        "description": "Execute quick scan for a Power Pages website.",
+        "description": "Execute a quick scan for a Power Pages website.",
         "operationId": "StartQuickScan",
         "produces": [
           "application/json"
@@ -1235,7 +1235,7 @@
           "Websites"
         ],
         "summary": "Update security group for site visibility for a website.",
-        "description": "Update security group for site visibility for a website.",
+        "description": "Update the security group for website site visibility.",
         "operationId": "UpdatePortalSecurityGroup",
         "produces": [
           "application/json"
