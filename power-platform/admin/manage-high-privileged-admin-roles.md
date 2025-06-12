@@ -3,6 +3,7 @@ title: Use Entra Privileged Identity Management in Power Platform admin center t
 description: Use Microsoft Entra Privileged Identity Management to manage high-privileged admin roles.
 author: srpoduri 
 ms.subservice: admin
+ms.custom: NewPPAC
 ms.author: sripod 
 ms.reviewer: sericks
 ms.custom: "admin-security"
@@ -87,9 +88,21 @@ In this PowerShell script, you:
 
 ##### Add your environment ID
 
-1. Get your **Environment ID** from the **Environments** tab of the [Power Platform Admin Center](https://admin.powerplatform.microsoft.com/).
-
+##### [New admin center](#tab/new)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. On the **Environments** page, choose the environment you want to modify.
+1. Locate the **Environment ID** in the **Details** pane.
 1. Add your unique `<environment id>` to the script.
+
+##### [Classic admin center](#tab/classic)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Environments**.
+1. On the **Environments** page, choose the environment you want to modify.
+1. Locate the **Environment ID** in the **Details** pane.
+1. Add your unique `<environment id>` to the script.
+---
 
 ##### Run the script
 
@@ -188,10 +201,18 @@ Remove-RoleAssignmentFromUsers
 
 ### Self-elevate through Power Platform admin center
 
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-1. In the left side panel, select **Environments**.
-1. Select the checkmark next to your environment.
-1. Select **Membership** in the command bar to request self-elevation.
-1. The **System Administrators** pane is displayed. Add yourself to the system administrator role by selecting **Add me**.
+##### [New admin center](#tab/new)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. On the **Environments** page, choose the environment you want to modify.
+1. In the command bar, select **Membership** to request self-elevation.
+1. In the **System Administrators** pane, select ""ADD me** to add yourself to the system administrator role.
 
-   :::image type="content" source="media/self-elevate-membership-menu.png" alt-text="Use the Membership menu option to request self-elevation.":::
+##### [Classic admin center](#tab/classic)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Environments**.
+1. On the **Environments** page, choose the environment you want to modify.
+1. In the command bar, select **Membership** to request self-elevation.
+1. In the **System Administrators** pane, select ""ADD me** to add yourself to the system administrator role.
+---
