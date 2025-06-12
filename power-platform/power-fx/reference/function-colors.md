@@ -65,9 +65,9 @@ If you specify a **Color** enumeration value or you build a **ColorValue** formu
 
 - _CSSColor_ - Required. A Cascading Style Sheet (CSS) color definition. You can specify either a name, such as **OliveDrab**, or a hex value, such as **#6b8e23** or **#7fffd420**. Hex values can take the form of either #_rrggbb_ or #_rrggbbaa_.
 
-**ColorValue**( _Untyped_ )
+**ColorValue**( _Dynamic_ )
 
-- _Untyped_ - Required. An Untyped object containing a string that represents a Cascading Style Sheet (CSS) color definition.
+- _Dynamic_ - Required. A **Dynamic** value containing a string that represents a Cascading Style Sheet (CSS) color definition.
 
 **RGBA**( _Red_, _Green_, _Blue_, _Alpha_ )
 

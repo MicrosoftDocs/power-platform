@@ -85,19 +85,19 @@ For both functions, specify the type through the name of the data source connect
 
 If the record reference is _blank_, **IsType** returns FALSE, and **AsType** returns _blank_. All fields of a _blank_ record are also _blank_.
 
-### Untyped Objects
+### Dynamic values
 
 > [!IMPORTANT]
-> - Using **AsType** and **IsType** with untyped objects is an experimental feature.
+> - Using **AsType** and **IsType** with **Dynamic** values is an experimental feature.
 > - Experimental features aren't meant for production use and may not be complete. These features are available before an official release so that you can get early access and provide feedback. More information: [**Understand experimental, preview, and retired features in canvas apps**](/power-apps/maker/canvas-apps/working-with-experimental-preview)
 > - The behavior that this article describes is available only when the **User-defined types** experimental feature in [**Settings &gt; Upcoming features &gt; Experimental**](/power-apps/maker/canvas-apps/working-with-experimental-preview#controlling-which-features-are-enabled) is turned on (it's off by default).
 > - Your feedback is valuable to us. Let us know what you think in the [**Power Apps experimental features community forum**](https://community.powerplatform.com/forums/thread/details/?threadid=c8824a08-8198-ef11-8a69-7c1e52494f33).
 
-An untyped object from a web API or the [**ParseJSON** function] needs to be converted to a typed object before it can be used in Power Fx. Options to do this include:
+A **Dynamic** value from a web API or the [**ParseJSON** function] needs to be converted to a specific typed value before it can be used in Power Fx. Options to do this include:
 1. Implicitly type the field at the point it's used. For example, an object is converted to a number if it's used with the `+` operator, if it can be converted to a number. This option can have unexpected conversions and can't convert records and tables as a whole.
 1. Explicitly type each field individually with the **Decimal**, **Text**, **DateTime**, **GUID**, and other type constructor functions. This is the most invasive to your formulas as each field must be done separately.
-1. Explicitly type JSON with the second argument to the **ParseJSON** function. This is an easy option that avoids needing the untyped object.
-1. Explicitly type an untyped object using the **AsType** function. You can also test type before attempting the conversion with the **IsType** function.
+1. Explicitly type JSON with the second argument to the **ParseJSON** function. This is an easy option that avoids needing the **Dynamic** value.
+1. Explicitly type a **Dynamic** value using the **AsType** function. You can also test type before attempting the conversion with the **IsType** function.
 
 ## Syntax
 
@@ -106,9 +106,9 @@ An untyped object from a web API or the [**ParseJSON** function] needs to be con
 - _RecordReference_ - Required. A record reference, often a lookup field that can refer to a record in any of multiple tables.
 - _TableType_ - Required. The specific table to which the record should be cast.
  
-**AsType**( _UntypedObject_, _TypeSpecification_ )
+**AsType**( _DynamicValue_, _TypeSpecification_ )
 
-- _UntypedObject_ - Required. A record reference, often a lookup field that can refer to a record in any of multiple tables.
+- _DynamicValue_ - Required. A record reference, often a lookup field that can refer to a record in any of multiple tables.
 - _TypeSpecification_ - Required. A type name or type specification defined with the [**Type** function](function-type.md).
 
 **IsType**( _RecordReference_, _TableType_ )
@@ -116,9 +116,9 @@ An untyped object from a web API or the [**ParseJSON** function] needs to be con
 - _RecordReference_ - Required. A record reference, often a lookup field that can refer to a record in any of multiple tables.
 - _TableType_ - Required. The specific table for which to test.
 
-**IsType**( _UntypedObject_, _TypeSpecification_ )
+**IsType**( _DynamicValue_, _TypeSpecification_ )
 
-- _UntypedObject_ - Required. A record reference, often a lookup field that can refer to a record in any of multiple tables.
+- _DynamicValue_ - Required. A record reference, often a lookup field that can refer to a record in any of multiple tables.
 - _TypeSpecification_ - Required. A type name or type specification defined with the [**Type** function](function-type.md).
 
 ## Examples
@@ -178,7 +178,7 @@ An untyped object from a web API or the [**ParseJSON** function] needs to be con
 
    Your results might differ because the sample data might have been modified to show more types of results.
 
-### Untyped Objects
+### Dynamic values
 
 The following examples show a simple JSON record interpreted in various ways by **ParseJSON**, **AsType**, and **IsType** in the [Pac CLI Power Fx REPL](../../developer/cli/reference/power-fx.md).
 
@@ -186,7 +186,7 @@ In this first example, no type information is provided to **ParseJSON**, so it r
 
 ```powerapps-dot
 >> Set( rec, ParseJSON( "{""a"":1}" ) )
-rec: <Untyped: Use Value, Text, Boolean, or other functions to establish the type>
+rec: <Dynamic: Use Value, Text, Boolean, or other functions to establish the type>
 ```
 
 The field is implicitly converted to a number when used in a numerical context.

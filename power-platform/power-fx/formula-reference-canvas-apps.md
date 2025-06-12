@@ -81,7 +81,7 @@ Other elements include:
 
 **[Blank](reference/function-isblank-isempty.md)** – Returns a _blank_ value that can be used to insert a NULL value in a data source.
 
-**[Boolean](reference/function-boolean.md)** – Converts a text string, number, or untyped value to a Boolean value.
+**[Boolean](reference/function-boolean.md)** – Converts a text string, number, or dynamic value to a Boolean value.
 
 ## C
 
@@ -109,9 +109,9 @@ Other elements include:
 
 **[ColorValue](reference/function-colors.md)** – Translates a CSS color name or a hex code to a color value.
 
-**[Column](reference/function-columnnames-column.md)** – Retrieves column names and values from an [Untyped object data type](untyped-object.md).
+**[Column](reference/function-columnnames-column.md)** – Retrieves column names and values from a [Dynamic value](untyped-object.md).
 
-**[ColumnNames](reference/function-columnnames-column.md)** – Retrieves column names and values from an [Untyped object data type](untyped-object.md).
+**[ColumnNames](reference/function-columnnames-column.md)** – Retrieves column names and values from a [Dynamic value](untyped-object.md).
 
 **[Compass](reference/signals.md)** – Returns your compass heading.
 
@@ -324,7 +324,7 @@ Other elements include:
 
 **[Parent](reference/operators.md#self-and-parent-operators)** – Provides access to a container control's properties.
 
-**[ParseJSON](reference/function-parsejson.md)** – Converts JSON document represented as text to an [Untyped object](untyped-object.md) value.
+**[ParseJSON](reference/function-parsejson.md)** – Converts JSON document represented as text to a [Dynamic value](untyped-object.md) value.
 
 **[Patch](reference/function-patch.md)** – Modifies or creates a record in a data source, or merges records outside of a data source.
 
