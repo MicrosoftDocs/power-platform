@@ -3,7 +3,7 @@ title: Rules for environment groups
 description: Learn how to govern your Managed Environments with rules in bulk.
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 06/04/2025
+ms.date: 06/11/2025
 author: mikferland-msft
 ms.author: miferlan
 ms.reviewer: sericks
@@ -41,7 +41,7 @@ The following [rules](environment-groups.md#rules) can be applied to [environmen
 | 13 | [Sharing agents with Viewer permissions (preview)](managed-environment-sharing-limits.md#agent-sharing-rules-preview) |
 | 14 | [Sharing controls for canvas apps](managed-environment-sharing-limits.md#canvas-app-sharing-rules) |
 | 15 | [Sharing controls for solution-aware cloud flows](managed-environment-sharing-limits.md#solution-aware-cloud-flow-sharing-rules) |
-| 16 | [Sharing data between Copilot Studio and Viva Insights (preview)](settings-features.md?&tabs=new#sharing-copilot-studio-agent-data-with-viva-insights) |
+| 16 | [Sharing data between Copilot Studio and Viva Insights (preview)](settings-features.md?&tabs=new#sharing-copilot-studio-agent-data-with-viva-insights-preview) |
 | 17 | [Solution checker enforcement](managed-environment-solution-checker.md) |
 | 18 | [Unmanaged customizations](../alm/block-unmanaged-customizations.md) |
 | 19 | [Usage insights](managed-environment-usage-insights.md) |
