@@ -58,7 +58,7 @@ The **Copilot Studio** page provides the option to display more columns to help 
 1. Select **Save**. 
 
 ## View agent or environment details
-- Select an item, then select the **Details** option in the command bar.
+- Select an item, then select the **Details** option, under the page name.
 - Select the agent’s display name to be redirected to its details page in the Copilot Studio portal.
     > [!Note]
     > You must have edit permissions on the selected agent to access its details page. If you do not have sufficient permissions, you will see a "This link is broken" error.
