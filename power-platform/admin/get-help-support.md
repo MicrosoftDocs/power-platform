@@ -114,7 +114,7 @@ An example of solutions provided for Dynamics 365 App for Outlook issues:
 
 #### Copilot (Preview) tab 
 
-This tab appears only after you select a product in the previous tab.
+This tab appears only for select products after you select it in the previous tab.
 
 1. In the **Copilot (Preview)** tab, you'll see a list of suggested solutions based on the information you provided.  If you find a solution that seems relevant, select it to view more details.
 
@@ -134,7 +134,7 @@ This tab appears only after you select a product in the previous tab.
       :::image type="content" source="media/support-solutions-tab.png" alt-text="Screenshot shows the Solutions tab in the support page.":::
 
 
-#### Support tab <---need to update and add screenshot---> 
+#### Support tab 
 
 1. In the **Support** tab, you can create a support request. 
 
@@ -150,7 +150,9 @@ This tab appears only after you select a product in the previous tab.
    > [!NOTE]
    > If you have one of the plans listed in [Prerequisites](#prerequisites), you can set the severity to a higher level than **Minimal**.
 
-#### Contact tab  <---need to update and add screenshot---> 
+#### Contact tab  
+
+In the **Contact** tab, enter your contact information. This information is used to contact you about the support request.
 
 
 ## View list of of support requests
@@ -187,7 +189,7 @@ We'd love to know your thoughts on the new outage reporting process. Or, if you'
 
 For some support requests, you’ll be asked to request a support environment. Currently, support environments can’t be created for the Power Apps or Power Automate product options in the **What product where you using when the issue occurred?** field. To create a support request which includes a support environment for Power Platform issues, select the **Microsoft Dataverse** product for that field.
 
-  :::image type="content" source="media/support-environment-select.png" alt-text="Screenshot shows the product options needing support environments.":::
+:::image type="content" source="media/support-environment-select.png" alt-text="Screenshot shows the product options needing support environments.":::
 
 ### See also
 
