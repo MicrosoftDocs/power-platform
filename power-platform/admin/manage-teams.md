@@ -70,6 +70,8 @@ A list of all of the teams in the environment is displayed.
 
 ### Create a new team
 
+###### [New admin center](#tab/new)
+
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.com).
 
 2. In the navigation pane, select **Manage**.
@@ -129,8 +131,8 @@ After you create the team, you can add team members and select corresponding sec
 
      :::image type="content" source="media/dataverse-team-manage-new-team.png" alt-text="Screenshot of settings for a new Dataverse team.":::
 
-     > [!NOTE]
-     > A team can be one of the following types: Owner, Access, Microsoft Entra Security group, or Microsoft Entra Office group.
+   > [!NOTE]
+   > A team can be one of the following types: Owner, Access, Microsoft Entra Security group, or Microsoft Entra Office group.
 
 6. If the team type is Microsoft Entra Security group or Microsoft Entra Office group, you must also enter these fields:
 
@@ -145,6 +147,28 @@ After you create the team, you can add team members and select corresponding sec
 > A default security role is automatically assigned to team records that have been created through data import. The **Salesperson** security role is assigned in a Dynamics 365 Sales environment and the **Basic User** security role is assigned in other environments.
 
 ### Edit a team
+
+###### [New admin center](#tab/new)
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+
+2. In the navigation pane, select **Manage**.
+
+3. In the **Manage** pane, select **Environments**.
+
+4. Select an environment, and then select **Settings** > **Users + permissions** > **Teams**.
+
+3. Select a team and select its corresponding vertical ellipsis.  
+
+   :::image type="content" source="media/edit-team.png" alt-text="Screenshot of selecting the edit option for a team.":::
+
+4. Select **Edit team**. **Team name**, **Description**, and **Administrator** are available for editing. To edit **Business unit**, see [Change the business unit for a team](create-edit-business-units.md#change-the-business-unit-for-a-team).
+
+5. Update the fields as required, and then select **Update**.
+
+   :::image type="content" source="media/dataverse-team-manage-edit-new.png" alt-text="Screenshot of editing a team.":::
+
+###### [Classic admin center](#tab/classic)
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
@@ -166,6 +190,13 @@ You can add and delete members from a team.
 
 > [!NOTE]
 > Managing team members is allowed only for the Owner and Access team types. For Microsoft Entra group teams, managing team members must be performed by a Microsoft Entra admin.
+
+###### [New admin center](#tab/new)
+
+
+
+
+###### [Classic admin center](#tab/classic)
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
