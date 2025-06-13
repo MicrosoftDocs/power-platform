@@ -4,13 +4,13 @@ description: Use Microsoft Entra Privileged Identity Management to manage high-p
 author: srpoduri 
 ms.subservice: admin
 ms.custom: NewPPAC
-ms.author: sripod 
-ms.reviewer: sericks
-ms.custom: "admin-security"
+ms.author: sripod
+contributor: yingchin
+ms.reviewer: ellenwehrle
 ms.component: pa-admin
 contributors: srpoduri
 ms.topic: how-to
-ms.date: 04/24/2025
+ms.date: 06134/2025
 search.audienceType: admin
 
 ---
