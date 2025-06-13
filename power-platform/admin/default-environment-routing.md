@@ -112,7 +112,7 @@ The **Environment routing** setting is turned off by default and must be turned 
 1. Click **Save**.
 ---
 
-## Turn on environment routing with PowerShell
+## Turn on environment routing using PowerShell
 
 1. Sign in to your tenant account.
 
