@@ -68,6 +68,8 @@ A list of all of the teams in the environment is displayed.
 
 :::image type="content" source="media/dataverse-team-manage-list.png" alt-text="List of teams in environment":::
 
+---
+
 ### Create a new team
 
 ###### [New admin center](#tab/new)
@@ -102,8 +104,6 @@ A list of all of the teams in the environment is displayed.
 
    - **Group name:** Start entering text to select an existing Microsoft Entra group name.These groups are pre-created in Microsoft Entra ID.
    - **Membership type:** Select the membership type from the dropdown list.
-
-   <image>
 
 After you create the team, you can add team members and select corresponding security roles. This step is optional, but recommended.
 
@@ -146,6 +146,8 @@ After you create the team, you can add team members and select corresponding sec
 > [!NOTE]
 > A default security role is automatically assigned to team records that have been created through data import. The **Salesperson** security role is assigned in a Dynamics 365 Sales environment and the **Basic User** security role is assigned in other environments.
 
+---
+
 ### Edit a team
 
 ###### [New admin center](#tab/new)
@@ -158,13 +160,13 @@ After you create the team, you can add team members and select corresponding sec
 
 4. Select an environment, and then select **Settings** > **Users + permissions** > **Teams**.
 
-3. Select a team and select its corresponding vertical ellipsis.  
+5. Select a team and select its corresponding vertical ellipsis. Select **Edit team**.
 
    :::image type="content" source="media/edit-team.png" alt-text="Screenshot of selecting the edit option for a team.":::
 
-4. Select **Edit team**. **Team name**, **Description**, and **Administrator** are available for editing. To edit **Business unit**, see [Change the business unit for a team](create-edit-business-units.md#change-the-business-unit-for-a-team).
+6. You can edit the **Team name**, **Description**, and **Administrator** fields. To edit **Business unit**, see [Change the business unit for a team](create-edit-business-units.md#change-the-business-unit-for-a-team).
 
-5. Update the fields as required, and then select **Update**.
+7. Update the fields as required, and then select **Update**.
 
    :::image type="content" source="media/dataverse-team-manage-edit-new.png" alt-text="Screenshot of editing a team.":::
 
@@ -184,6 +186,8 @@ After you create the team, you can add team members and select corresponding sec
 
    :::image type="content" source="media/dataverse-team-manage-edit.png" alt-text="Screenshot of editing a team.":::
 
+---
+
 ### Manage team members
 
 You can add and delete members from a team.
@@ -193,8 +197,22 @@ You can add and delete members from a team.
 
 ###### [New admin center](#tab/new)
 
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
+2. In the navigation pane, select **Manage**.
 
+3. In the **Manage** pane, select **Environments**.
+
+4. Select an environment, and then select **Settings** > **Users + permissions** > **Teams**.
+
+5. Select a team and select its corresponding vertical ellipsis. Select **Manage team members**.
+
+   :::image type="content" source="media/manage-team-members.png" alt-text="Screenshot of managing team members.":::
+
+6. Do one of the following:
+
+   - To add new team members, select **+ Add team members** and then specify users.
+   - To delete a team member, select the user and then select **Remove**.
 
 ###### [Classic admin center](#tab/classic)
 
@@ -213,6 +231,8 @@ You can add and delete members from a team.
    - To add new team members, select **+ Add team members** and then specify users.
    - To delete a team member, select the user and then select **Remove**.
 
+---
+
 > [!NOTE]
 > Privilege requirement: To add or remove a team member from an owner team, the user needs to have more than or equal to the privileges that the team has. For example, if the team is assigned with a System Customizer security role, the user will need a System Customizer or a System Administrator security role.
 
@@ -222,7 +242,27 @@ You can add and delete members from a team.
 
 ### Manage the security roles of a team
 
-1. Select the checkbox for a team name.  
+###### [New admin center](#tab/new)
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+
+2. In the navigation pane, select **Manage**.
+
+3. In the **Manage** pane, select **Environments**.
+
+4. Select an environment, and then select **Settings** > **Users + permissions** > **Teams**.
+
+5. Select a team and select its corresponding vertical ellipsis. Select **Manage security roles**.
+
+   :::image type="content" source="media/manage-security-roles.png" alt-text="Screenshot of managing security roles.":::
+
+6. Select the role or roles you want, and then select **Save** twice to confirm.
+
+   :::image type="content" source="media/dataverse-team-manage-security-roles-new.png" alt-text="Screenshot of selecting security roles.":::
+
+###### [Classic admin center](#tab/classic)
+
+1. Select the checkbox for a team name.
 
    :::image type="content" source="media/select-team.png" alt-text="Screenshot selecting a team.":::
 
@@ -230,9 +270,29 @@ You can add and delete members from a team.
 
 3. Select the role or roles you want, and then select **Save**.
 
-   :::image type="content" source="media/dataverse-team-manage-security-roles.png" alt-text="Screenshot of managing security roles.":::
+   :::image type="content" source="media/dataverse-team-manage-security-roles.png" alt-text="Screenshot of selecting security roles.":::
+
+---
 
 ### Delete a team
+
+###### [New admin center](#tab/new)
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+
+2. In the navigation pane, select **Manage**.
+
+3. In the **Manage** pane, select **Environments**.
+
+4. Select an environment, and then select **Settings** > **Users + permissions** > **Teams**.
+
+5. Select a team and select its corresponding vertical ellipsis. Select **Delete**.
+
+   :::image type="content" source="media/delete-team.png" alt-text="Screenshot of deleting a team.":::
+
+6. Select **Delete** twice to confirm. Note that this action can't be undone.
+
+###### [Classic admin center](#tab/classic)
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
@@ -244,6 +304,8 @@ You can add and delete members from a team.
 
 4. Select **Delete** twice to confirm. Note that this action can't be undone.
 
+---
+
 ### Convert owner teams to access teams
 
 You can convert *owner* teams to become *access* teams.
@@ -251,6 +313,20 @@ You can convert *owner* teams to become *access* teams.
 > [!NOTE]
 > Each business unit has its own owner team. These owner teams are managed by the system and if you convert these teams to access teams, they will no longer be able to own records. Once you convert these business unit owner teams to access teams, they can't be changed back to owner teams. You can't convert the Microsoft Entra group teams or access teams to another access team.
 > All records owned by the owner team must first be reassigned to another user or team before you can convert it into an access team. The security role assignments of the owner team are removed when it's converted into an access team.
+
+###### [New admin center](#tab/new)
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+2. In the navigation pane, select **Manage**.
+3. In the **Manage** pane, select **Environments**.
+4. Select an environment, and then select **Settings** > **Users + permissions** > **Teams**.
+5. Select a team and select its corresponding vertical ellipsis. Select **Convert Owner team to Access Team**.
+
+   :::image type="content" source="media/convert-owner-to-access.png" alt-text="Screenshot of converting an owner team to access team.":::
+
+6. Select **OK** to complete the action.
+
+###### [Classic admin center](#tab/classic)
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. In the navigation pane, select **Environments**.
@@ -263,6 +339,8 @@ You can convert *owner* teams to become *access* teams.
 1. Select **Convert Owner team to Access Team** from the command bar.
 1. Select **OK** to complete the action.
 
+---
+
 ### Reassign team's records
 
 You can reassign the owner team's records to another user or team.  
@@ -270,18 +348,37 @@ You can reassign the owner team's records to another user or team.
 > [!NOTE]
 > Only owner and Microsoft Entra group teams can own records as they can be assigned with a security role.
 
+###### [New admin center](#tab/new)
+
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-1. In the navigation pane, select **Environments**.
-1. Select a specific environment.
-1. Select **Settings** > **Users + permissions** > **Teams**.
-1. Select the checkbox for a team name.  
+2. In the navigation pane, select **Manage**.
+3. In the **Manage** pane, select **Environments**.
+4. Select an environment, and then select **Settings** > **Users + permissions** > **Teams**.
+5. Select a team and select its corresponding vertical ellipsis. Select **Reassign records**.
+
+   :::image type="content" source="media/reassign-records.png" alt-text="Screenshot of reassigning records.":::
+
+6. Select **Reassign records** from the command bar.
+7. Select **Assign to me** to reassign all the Team's records to yourself or to another owner team.
+8. Select **Assign to another user or team**.
+9. Select **OK** to save.
+
+###### [Classic admin center](#tab/classic)
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+2. In the navigation pane, select **Environments**.
+3. Select a specific environment.
+4. Select **Settings** > **Users + permissions** > **Teams**.
+5. Select the checkbox for a team name.  
 
    :::image type="content" source="media/select-team.png" alt-text="Screenshot selecting a team.":::
 
-1. Select **Reassign records** from the command bar.
-1. Select **Assign to me** to reassign all the Team's records to yourself or to another owner team.
-1. Select **Assign to another user or team**.
-1. Select **OK** to save.
+6. Select **Reassign records** from the command bar.
+7. Select **Assign to me** to reassign all the Team's records to yourself or to another owner team.
+8. Select **Assign to another user or team**.
+9. Select **OK** to save.
+
+---
 
 ## Change the business unit for a team  
 
