@@ -39,16 +39,16 @@ An administrator can recover a recently deleted environment by following these s
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
 1. On the **Environments** page,  select **Recently deleted environments** in the command bar.
-1. On the **Deleted** page, select the environment you want to recover.
-1. Select **Continue** to confirm the recovery.
+1. On the **Deleted** page, select the ellipsis (...) next to the environment you want to recover.
+1. Select **Continue** from the dropdown selection to confirm the recovery.
 1. Select **Ok** to proceed with the recovery.
    
 #### [Classic admin center](#tab/classic)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Environments**.
 1. On the **Environments** page,  select **Recently deleted environments** in the command bar.
-1. On the **Deleted** page, select the environment you want to recover.
-1. Select **Continue** to confirm the recovery.
+1. On the **Deleted** page, select the the ellipsis (...) next to the environment you want to recover.
+1. Select **Continue** from the dropdown selection to confirm the recovery.
 1. Select **Ok** to proceed with the recovery.
 ---
 
