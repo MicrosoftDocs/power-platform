@@ -57,11 +57,11 @@ An example of solutions provided for Dynamics 365 App for Outlook issues:
 
 > [!NOTE]
 > In the following cases, you might not be able to create a support request or we can't provide relevant solutions: 
-> - There is an issue with your Unified or Premier Support contract. Please contact your Incident Manager or Customer Success Account Manager (CSAM).
-> - Your Support subscription has expired. Please renew.
+> - There's an issue with your Unified or Premier Support contract. Contact your Incident Manager or Customer Success Account Manager (CSAM).
+> - Your Support subscription has expired. Renew.
 > - We couldn't find your support plan. 
->   - If you have a Unified or Premier Support plan, please contact your Incident Manager or Customer Success Account Manager (CSAM).
->   - If you have a non-Unified/Premier Support plan, please verify the plan is active. For support information, see [Community forums](https://community.dynamics.com/forums/thread/).
+>   - If you have a Unified or Premier Support plan, contact your Incident Manager or Customer Success Account Manager (CSAM).
+>   - If you have a non-Unified/Premier Support plan, verify the plan is active. For support information, see [Community forums](https://community.dynamics.com/forums/thread/).
 
 ## View solutions or create a support request using the Support agent
 
@@ -73,13 +73,13 @@ An example of solutions provided for Dynamics 365 App for Outlook issues:
 
    :::image type="content" source="media/support-agent-new.png" alt-text="Screenshot shows the Support agent in the Power Platform admin center.":::
 
-1. In the text box, describe the issue you're facing. The Support agent will provide a list of possible solutions based on the information you provided.
+1. In the text box, describe the issue you're facing. The Support agent provides a list of possible solutions based on the information you provided.
 
    :::image type="content" source="media/support-agent-technical-result.png" alt-text="Screenshot shows the Technical section in the Support agent.":::   
 
 1. Select either **Yes** or **No** to indicate if the solution suggested by the Support agent (Preview) was helpful. 
     - If you select **Yes**, the support request is closed, and you can provide feedback on the solution.
-    - If you select **No**, you'll be prompted to create a support request. You can create a support request only if you have a valid support plan. If you don't have a support contract, you'll be prompted to add one or ask about a new topic.
+    - If you select **No**, you're prompted to create a support request. You can create a support request only if you have a valid support plan. If you don't have a support contract, you're prompted to add one or ask about a new topic.
 
 ## View solutions or create a support request using the **Support** experience
 
@@ -105,7 +105,7 @@ An example of solutions provided for Dynamics 365 App for Outlook issues:
       > - Microsoft Dataverse
       > - Power Platform Administration
       > 
-      > This change won't have any impact on your licenses.
+      > This change doesn't impact on your licenses.
 
 1. Next, describe the exact error or describe the issue you're facing and then select the problem type. Scroll down and select **Get solutions** to view the possible solutions based on the product and problem type.
 
@@ -116,18 +116,18 @@ An example of solutions provided for Dynamics 365 App for Outlook issues:
 
 This tab appears only for select products after you select it in the previous tab.
 
-1. In the **Copilot (Preview)** tab, you'll see a list of suggested solutions based on the information you provided.  If you find a solution that seems relevant, select it to view more details.
+1. In the **Copilot (Preview)** tab, you see a list of suggested solutions based on the information you provided.  If you find a solution that seems relevant, select it to view more details.
 
 1. Select either **Yes** or **No** to indicate if the solution suggested by Copilot (Preview) was helpful. 
     - If you select **Yes**, the support request is closed, and you can provide feedback on the solution.
-    - If you select **No**, you'll be prompted to provide follow up questions your issue. Select **Next** to continue.
+    - If you select **No**, you're prompted to provide follow-up questions your issue. Select **Next** to continue.
 
        :::image type="content" source="media/support-copilot-tab.png" alt-text="Screenshot shows the Copilot (Preview) tab in the support page.":::
 
 
 #### Solutions tab 
 
-1. In the **Solutions** tab, you'll see a list of recommended solutions to your issue based on the information you provided. 
+1. In the **Solutions** tab, you see a list of recommended solutions to your issue based on the information you provided. 
 
 1. If the guidance doesn't resolve your issue, scroll down and select **Next**.
 
@@ -155,9 +155,9 @@ This tab appears only for select products after you select it in the previous ta
 In the **Contact** tab, enter your contact information. This information is used to contact you about the support request.
 
 
-## View list of of support requests
+## View list of support requests
 
-After you submit your request it will appear in the list of support requests. You can check the status and edit your request on this page.
+After you submit your request, it appears in the list of support requests. You can check the status and edit your request on this page.
 
   > [!NOTE]
   > Depending on availability, you might be able to use live chat option to converse with support engineers from Microsoft after creating a support request. More information: [Use live chat with persistence for support requests](live-chat-support.md)
@@ -166,7 +166,7 @@ After you submit your request it will appear in the list of support requests. Yo
 
 A [premium support plan](https://dynamics.microsoft.com/support) includes advisory services. You can submit a request to get answers relative to recommendations, best practices, general advice or guidance on the usage of the products.
 
-Without a premium support plan, you can only submit request on technical issues. Progressively, such restriction will be enforced and you won't be able to create a support request for advisory services unless you have a premium support plan.
+Without a premium support plan, you can only submit request on technical issues. Progressively, such restriction is enforced and you can't create a support request for advisory services unless you have a premium support plan.
 
 ## Limited preview: Report outage  <---dont see this in any screen now--->
 
@@ -183,11 +183,11 @@ Fill out the pages and then submit to have your support request receive an exped
 > [!div class="mx-imgBorder"]
 > ![Fill in outage info.](media/report-outage-page-one.png "Fill in outage info")
 
-We'd love to know your thoughts on the new outage reporting process. Or, if you'd like to be considered for this limited preview, please fill out this [form](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR-5Axi2KMXdNi_1eF9P36tZUN1FUQkJLNVBZVVlOSVk0T0tIQTBIMk9VOC4u).
+We'd love to know your thoughts on the new outage reporting process. Or, if you'd like to be considered for this limited preview, fill out this [form](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR-5Axi2KMXdNi_1eF9P36tZUN1FUQkJLNVBZVVlOSVk0T0tIQTBIMk9VOC4u).
 
 ## Model-driven apps and support environments
 
-For some support requests, you’ll be asked to request a support environment. Currently, support environments can’t be created for the Power Apps or Power Automate product options in the **What product where you using when the issue occurred?** field. To create a support request which includes a support environment for Power Platform issues, select the **Microsoft Dataverse** product for that field.
+For some support requests, you're asked to request a support environment. Currently, support environments can’t be created for the Power Apps or Power Automate product options in the **What product where you using when the issue occurred?** field. To create a support request which includes a support environment for Power Platform issues, select the **Microsoft Dataverse** product for that field.
 
 :::image type="content" source="media/support-environment-select.png" alt-text="Screenshot shows the product options needing support environments.":::
 
