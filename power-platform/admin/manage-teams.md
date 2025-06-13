@@ -52,9 +52,9 @@ Using Microsoft Dataverse teams is optional. However, teams provide an easy way 
 
 4. Select an environment, and then select **Settings** > **Users + permissions** > **Teams**.
 
-    By default, a list of all of the teams in the environment is displayed.
+   By default, a list of all of the teams in the environment is displayed.
 
-    :::image type="content" source="media/dataverse-team-manage-list-new.png" alt-text="List of teams in a particular environment":::
+   :::image type="content" source="media/dataverse-team-manage-list-new.png" alt-text="List of teams in a particular environment":::
 
 5. If needed, you can filter the list of teams by selecting a team type from the dropdown list.
 
@@ -94,8 +94,6 @@ A list of all of the teams in the environment is displayed.
    > The **Administrator** field is only for reference and it doesn't have any special processing. You can use this field to restrict who can add and remove team members by registering a [plug-in](/power-apps/developer/data-platform/plug-ins) on the [AddMembersTeam](/power-apps/developer/data-platform/webapi/reference/addmembersteam) API for the **teammembership_association** relationship. These actions can be enforced when the user is the administrator of the team. For more information, see the community [sample code](https://community.dynamics.com/crm/b/mylifemicrosoftdynamiccrm/posts/ms-dynamics-crm-associate-disassociate-message-plugin).
 
    - **Team type:** Select the team type from the dropdown list.
-
-     :::image type="content" source="media/dataverse-team-manage-new-team.png" alt-text="Screenshot of settings for a new Dataverse team.":::
 
      > [!NOTE]
      > A team can be one of the following types: Owner, Access, Microsoft Entra Security group, or Microsoft Entra Office group.
@@ -167,8 +165,6 @@ After you create the team, you can add team members and select corresponding sec
 6. You can edit the **Team name**, **Description**, and **Administrator** fields. To edit **Business unit**, see [Change the business unit for a team](create-edit-business-units.md#change-the-business-unit-for-a-team).
 
 7. Update the fields as required, and then select **Update**.
-
-   :::image type="content" source="media/dataverse-team-manage-edit-new.png" alt-text="Screenshot of editing a team.":::
 
 ###### [Classic admin center](#tab/classic)
 
