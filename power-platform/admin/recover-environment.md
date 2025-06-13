@@ -4,11 +4,12 @@ description: Learn how to restore a recently deleted environment by using Micros
 
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 04/02/2024
+ms.date: 06/13/2024
 ms.subservice: admin
 ms.custom: NewPPAC
-ms.author: cgarty
-ms.reviewer: sericks
+ms.author: sericks
+contributor: yingchin
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 contributors:
@@ -37,7 +38,7 @@ An administrator can recover a recently deleted environment by following these s
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
-1. On the **Environments** page,  select **Recover deleted environments** in the command bar.
+1. On the **Environments** page,  select **Recently deleted environments** in the command bar.
 1. On the **Deleted** page, select the environment you want to recover.
 1. Select **Continue** to confirm the recovery.
 1. Select **Ok** to proceed with the recovery.
@@ -45,7 +46,7 @@ An administrator can recover a recently deleted environment by following these s
 #### [Classic admin center](#tab/classic)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Environments**.
-1. On the **Environments** page,  select **Recover deleted environments** in the command bar.
+1. On the **Environments** page,  select **Recently deleted environments** in the command bar.
 1. On the **Deleted** page, select the environment you want to recover.
 1. Select **Continue** to confirm the recovery.
 1. Select **Ok** to proceed with the recovery.
