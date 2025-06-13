@@ -70,7 +70,7 @@ To learn more on using PowerShell cmdlets for environments, see [Power Apps cmdl
 
 ## Next steps after recovering an environment
 
-- **Flows** – Solution flows are disabled so enable flows as needed.
+- **Flows** – Solution flows are disabled so be sure to enable flows as needed.
 
 ### See also 
 
