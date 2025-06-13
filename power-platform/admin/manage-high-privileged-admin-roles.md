@@ -86,7 +86,7 @@ In this PowerShell script, you:
 - Build an `http` query with your environment ID.
 - Request elevation, using the Power Platform API.
 
-##### Add your environment ID
+##### Locate and add your environment ID
 
 ##### [New admin center](#tab/new)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
