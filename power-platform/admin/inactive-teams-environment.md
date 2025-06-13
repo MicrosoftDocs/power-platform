@@ -2,13 +2,16 @@
 title: Automatic deletion of inactive Dataverse for Teams environments
 description: Admins can configure an automatic cleanup process that removes inactive Dataverse for Teams environments from their tenants.
 author: matapg007
+contributors:
+  - yingchin
+  - sericks
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 02/21/2024
+ms.date: 06/13/2025
 ms.subservice: admin
 ms.custom: NewPPAC
 ms.author: matgupta 
-ms.reviewer: sericks
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -61,70 +64,74 @@ The following table describes the schedule of notifications and actions for Data
 
 | State of Dataverse for Teams | Power Platform action |
 | --- | --- |
-| 83 days after no [user activity](#definition-of-user-activity) | Send a warning that the environment will be disabled. Update the environment state on the Environments list page<sup>1</sup> and the Environment page<sup>2</sup>. |
-| 87 days after no user activity | Send a warning that the environment will be disabled. Update the inactive environment state on the Environments list page<sup>1</sup> and the Environment page<sup>2</sup>. |
-| 90 days after no user activity | Disable the environment. Send a notice that the environment has been disabled. Update the disabled environment state on the Environments list page<sup>1</sup> and the Environment page<sup>3</sup>. |
-| 113 days after no user activity | Send a warning that the environment will be deleted. Update the disabled environment state on the Environments list page<sup>1</sup> and the Environment page<sup>3</sup>. |
-| 117 days after no user activity | Send a warning that the environment will be deleted. Update the disabled environment state on the Environments list page<sup>1</sup> and the Environment page<sup>3</sup>. |
+| 83 days after no [user activity](#definition-of-user-activity) | Send a warning that the environment will be disabled. Update the environment state on the Environments list page and the Environment page. |
+| 87 days after no user activity | Send a warning that the environment will be disabled. Update the inactive environment state on the Environments list pages and the Environment page. |
+| 90 days after no user activity | Disable the environment. Send a notice that the environment has been disabled. Update the disabled environment state on the Environments list page and the Environment page. |
+| 113 days after no user activity | Send a warning that the environment will be deleted. Update the disabled environment state on the Environments list page and the Environment page. |
+| 117 days after no user activity | Send a warning that the environment will be deleted. Update the disabled environment state on the Environments list page and the Environment page. |
 | 120 days after no user activity | Delete the environment. Send a notice that the environment has been deleted. |
 
-<sup>1 </sup> **Environment state on the Environments list page in Power Platform admin center**
-:::image type="content" source="media/inactive-environment-state.png" alt-text="Screenshot of the Environments list page in Power Platform admin center, with the environment state column highlighted.":::
+**Environment state on the Environments list page in Power Platform admin center**
+:::image type="content" source="media/inactive-teams-environment/inactive-environment-state.png" alt-text="Screenshot of the Environments list page in Power Platform admin center, with the environment state column highlighted.":::
 
-<sup>2 </sup>**Inactive environment alert on the Environment page in Power Platform admin center**
-:::image type="content" source="media/inactive-environment-state-box.png" alt-text="Screenshot of the inactive environment alert on the Environment page, with the Trigger environment activity checkbox highlighted.":::
+**Inactive environment alert on the Environment page in Power Platform admin center**
+:::image type="content" source="media/inactive-teams-environment/inactive-environment-state-box.png" alt-text="Screenshot of the inactive environment alert on the Environment page, with the Trigger environment activity checkbox highlighted.":::
 
 > [!NOTE]
 > The **Environment inactive** warning tile only displays if the Dataverse for Teams environment is <= 7 days until disablement.
-
-<sup>3 </sup>**Disabled environment alert on the Environment page in Power Platform admin center**
-
-> [!NOTE]
+>
 > The **Environment disabled** tile displays anytime a Dataverse for Teams environment is disabled due to inactivity.
 
 ## Trigger activity, re-enable, and recover a Dataverse for Teams environment
 
 By default, administrators have 30 days to re-enable an environment. An environment disabled for 30 days is automatically deleted. Administrators have seven days to recover a deleted environment. See [Recover a deleted Dataverse for Teams environment](#recover-a-deleted-dataverse-for-teams-environment).
 
-## Trigger activity for an inactive Dataverse for Teams environment 
+## Trigger activity for an inactive Dataverse for Teams environment
 
 #### [New admin center](#tab/new)
+
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
 1. On the **Environments** list page, choose an inactive environment.
 1. On the **Environment** page, in the **Environment inactive** pane, select **Trigger environment activity**.
-   
+
 #### [Classic admin center](#tab/classic)
+
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Environments**.
 1. On the **Environments** list page, choose an inactive environment.
 1. On the **Environment** page, in the **Environment inactive** pane, select **Trigger environment activity**.
+
 ---
 
 ## Re-enable a disabled Dataverse for Teams environment
 
 #### [New admin center](#tab/new)
+
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
 1. On the **Environments** list page, choose a disabled environment.
-1. In the **Details** pane, click **Edit**.
+1. In the **Details** pane, select **Edit**.
 1. In the **Edit details** pane, under **Administration mode**, toggle the setting to **Enabled**.
 1. Select **Save** to apply the changes.
-   
+
 #### [Classic admin center](#tab/classic)
+
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Environments**.
 1. On the **Environments** list page, choose a disabled environment.
-1. In the **Details** pane, click **Edit**.
+1. In the **Details** pane, select **Edit**.
 1. In the **Edit details** pane, under **Administration mode**, toggle the setting to **Enabled**.
 1. Select **Save** to apply the changes.
+
 ---
 
 ## Recover a deleted Dataverse for Teams environment
 
 #### [New admin center](#tab/new)
+
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
@@ -132,25 +139,24 @@ By default, administrators have 30 days to re-enable an environment. An environm
 1. On the **Deleted** page, select the environment you want to recover.
 1. Select **Continue** to confirm the recovery.
 1. Select **Ok** to proceed with the recovery.
-   
+
 #### [Classic admin center](#tab/classic)
+
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Environments**.
 1. On the **Environments** list page,  select **Recover deleted environments** in the command bar.
 1. On the **Deleted** page, select the environment you want to recover.
 1. Select **Continue** to confirm the recovery.
 1. Select **Ok** to proceed with the recovery.
+
 ---
 
-For more information, see [recover environment](recover-environment.md).
+For more information about recovering environments, see [recover environment](recover-environment.md).
 
 ### See also
 
 [Microsoft Dataverse for Teams environments](about-teams-environment.md)<br />
 [Recover environment](recover-environment.md)  <br />
 [Automatic environment cleanup](automatic-environment-cleanup.md)
-
-
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
