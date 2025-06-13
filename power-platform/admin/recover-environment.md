@@ -7,6 +7,7 @@ ms.topic: how-to
 ms.date: 06/13/2024
 ms.subservice: admin
 ms.custom: NewPPAC
+author: sericks007
 ms.author: sericks
 contributor: yingchin
 ms.reviewer: ellenwehrle
@@ -20,7 +21,7 @@ contributors:
 
 [!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
-You can recover a recently deleted environment ([within seven days of deletion](backup-restore-environments.md#how-long-are-my-manual-on-demand-backups-and-system-backups-retained)) by using the Microsoft Power Platform admin center or the [Recover-AdminPowerAppEnvironment](/powershell/module/microsoft.powerapps.administration.powershell/recover-adminpowerappenvironment?view=pa-ps-latest) Power Apps cmdlet. Production environments with Dynamics 365 applications are available for up to 28 days.
+You can recover a recently deleted environment ([within seven days of deletion](backup-restore-environments.md) by using the Microsoft Power Platform admin center or the [Recover-AdminPowerAppEnvironment](/powershell/module/microsoft.powerapps.administration.powershell/recover-adminpowerappenvironment?view=pa-ps-latest) Power Apps cmdlet. Production environments with Dynamics 365 applications are available for up to 28 days.
 
 > [!NOTE]
 > Available storage capacity might be required in order to successfully recover an environment depending on the type of environment being recovered. For information on viewing your current storage capacity, see [Microsoft Dataverse storage capacity](capacity-storage.md). 
@@ -78,7 +79,7 @@ To learn more on using PowerShell cmdlets for environments, see [Power Apps cmdl
 [Automatic environment cleanup](automatic-environment-cleanup.md)<br>
 [Manage sandbox environments](sandbox-environments.md)<br>
 [Environments overview](environments-overview.md)<br>
-[Microsoft.PowerApps.Administration.PowerShell](/powershell/module/microsoft.powerapps.administration.powershell/?view=pa-ps-latest)<br>
+[Microsoft.PowerApps.Administration.PowerShell](/powershell/module/microsoft.powerapps.administration.powershell/?view=pa-ps-latest&preserve-view=true)<br>
 [Licensing overview for Microsoft Power Platform](pricing-billing-skus.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
