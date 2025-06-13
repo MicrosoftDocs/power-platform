@@ -3,7 +3,7 @@ title: Teams in Dataverse
 description: Understand the different types of teams and how to view and manage settings.
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 6/9/2025
+ms.date: 6/12/2025
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
@@ -12,7 +12,7 @@ ms.contributors:
   - paulliew
   - sericks
   - syalandur
-contributors
+contributors:
   - paulliew
   - sericks007
   - syalandur24
