@@ -177,19 +177,19 @@ Here's a sample of a detailed usage report:
 
 The [Non-licensed User](api-request-limits-allocations.md#non-licensed-user-request-limits) report shows the Power Platform request usage per day for non-licensed users and the total entitlement for non-licensed users for that tenant. The downloadable report contains the following fields:
 
-| Field    | Description | 
+| Field	| Description | 
 |-----------------------------------------------------------------|-----------------------------------------------------------------------------------------|
-| Power platform request entitlement for this tenant    | The total daily entitlement for non-licensed power platform requests for this tenant. |
-| Environment ID    | The unique Power Platform environment identifier. |
-| Environment Name    | The display name of environment. |
-| Caller ID    | The unique identifier of the calling identity. This can be null or empty. |
-| Caller Type    | The type of caller identity. Applicable values are System, Non-Interactive/Application.   |
-| Resource Type    | The type of resource. Applicable values are Dataverse, Power Apps, and Power Automate. |
-| Resource ID    | The unique resource identifier. Based on the Resource Type, this could be an app ID, Dataverse Organization ID, or Power Automate Flow ID. This can be null or empty. |
-| Meter Category    | The top level meter in this case Power Platform request.    |
-| Meter Subcategory  |     The detailed classification of what generated the request. This can be Dataverse, Power Apps, or Power Automate. |
-| Usage Datetime |     The date and time of when the usage was captured (UTC). |
-| Consumed Quantity |     Usage of Power Platform requests.  |
+| Power platform request entitlement for this tenant	| The total daily entitlement for non-licensed power platform requests for this tenant. |
+| Environment ID	| The unique Power Platform environment identifier. |
+| Environment Name	| The display name of environment. |
+| Caller ID	| The unique identifier of the calling identity. This can be null or empty. |
+| Caller Type	| The type of caller identity. Applicable values are System, Non-Interactive/Application.   |
+| Resource Type	| The type of resource. Applicable values are Dataverse, Power Apps, and Power Automate. |
+| Resource ID	| The unique resource identifier. Based on the Resource Type, this could be an app ID, Dataverse Organization ID, or Power Automate Flow ID. This can be null or empty. |
+| Meter Category	| The top level meter in this case Power Platform request.    |
+| Meter Subcategory  | 	The detailed classification of what generated the request. This can be Dataverse, Power Apps, or Power Automate. |
+| Usage Datetime | 	The date and time of when the usage was captured (UTC). |
+| Consumed Quantity | 	Usage of Power Platform requests.  |
 
 Here's a sample of a detailed usage report:
 
@@ -199,16 +199,16 @@ Here's a sample of a detailed usage report:
 
 The Per Flow Licensed Flows downloadable report contains the following fields:
 
-| Field    | Description |
+| Field	| Description |
 |-----------------------------------------------------------------|-----------------------------------------------------------------------------------------|
-| Environment ID    | The unique Power Platform environment identifier. |
-| Environment Name    | The display name of environment. |
-| Environment Region    | Not available during preview. |
-| Caller ID    | The unique identifier of the Flow. This can be null or empty.  |
-| Caller Type    | The type of caller identity. Applicable values are Flow. |
-| Usage Datetime    | The date and time of when the usage was captured (UTC). |
-| Entitled Quantity    | The value of any included entitlement for the flow.  |
-| Consumed Quantity    | Usage of Power Platform requests.  |
+| Environment ID	| The unique Power Platform environment identifier. |
+| Environment Name	| The display name of environment. |
+| Environment Region	| Not available during preview. |
+| Caller ID	| The unique identifier of the Flow. This can be null or empty.  |
+| Caller Type	| The type of caller identity. Applicable values are Flow. |
+| Usage Datetime	| The date and time of when the usage was captured (UTC). |
+| Entitled Quantity	| The value of any included entitlement for the flow.  |
+| Consumed Quantity	| Usage of Power Platform requests.  |
 
 Here's a sample of a detailed usage report:
 
