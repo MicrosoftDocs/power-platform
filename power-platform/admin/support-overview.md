@@ -1,17 +1,20 @@
 ---
-title: "Support for Microsoft Power Platform and Dynamics 365 apps | MicrosoftDocs"
+title: Support for Microsoft Power Platform and Dynamics 365 apps
 description: "Information on support for Microsoft Power Platform and Dynamics 365 apps including languages in which Microsoft provides support for Power Platform and Dynamics 365, support hours, what support is included with a support plan, how to contact support."
-ms.date: 11/25/2024
+ms.date: 06/15/2025
 ms.reviewer: "sericks"
 ms.topic: overview
 ms.custom: "admin-security"
 ms.collection: get-started
 author: "sericks007"
-ms.author: "sericks"
+ms.author: johhar 
+ms.contributors:
+  - lsuresh
+contributors:
+- lavanyapg
+
 ---
 # Support for Microsoft Power Platform and Dynamics 365 apps
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 Support is available in markets where Microsoft Power Platform or Dynamics 365 services are offered. Some specific services might not be covered in all regions immediately after general availability (GA).
 
@@ -19,7 +22,7 @@ Support is available in markets where Microsoft Power Platform or Dynamics 365 s
 
 ### For which languages does Microsoft provide support?
 
-Microsoft provides support in English globally and in additional languages (Japanese, Spanish, French, German, Italian, Portuguese, Traditional Chinese, and Simplified Chinese) within certain regions.  
+Microsoft provides support in English globally and in additional languages (Japanese, Spanish, French, German, Italian, Portuguese, Traditional Chinese, and Simplified Chinese) within certain regions.
 
 |English <sup>*</sup>  |Japanese <sup>**</sup>  |Spanish, French, German, Italian, Portuguese <sup>**</sup> |Traditional Chinese, Simplified Chinese <sup>**</sup>  |
 |---------|---------|---------|---------|
@@ -106,7 +109,7 @@ We have designed our support plans to meet different business needs:
 <table>
   <tr>
     <td>Professional Direct Support </td>
-    <td>Provides a cohesive support experience with exceptional tools and resources to accommodate customer needs during all stages of the customer lifecycle. One-hour response times for critical issues, around the clock problem resolution, escalation services, proactive advisory services, and ask-the-experts webinars.  </td>
+    <td>Provides a cohesive support experience with exceptional tools and resources to accommodate customer needs during all stages of the customer lifecycle. One-hour response times for critical issues, around the clock problem resolution, escalation services, proactive advisory services, and ask-the-experts webinars. </td>
   </tr><tr>
     <td>Premier/Unified Support</td>
     <td>A comprehensive support solution for all Microsoft enterprise technologies, including Microsoft Dynamics 365, Microsoft Azure, and Microsoft 365 across the cloud, hybrid, and on-premises. Includes around the clock problem resolution, proactive advisory services, onsite support, and add-on services to customize your support experience.</td>
@@ -200,7 +203,7 @@ Initial Response Time is the period from when you submit your support request to
 
 ### How quickly will you resolve my support request?
 
-Microsoft is committed to assist you in resolving your issue as soon as possible. Sometimes that means focusing efforts on reducing the business impact and mitigating any negative impact to your operation, before moving to a full solution. Therefore, we make a commitment to Initial Response Time and working with you until the impact of your issue is mitigated, having no direct SLA for support request resolution. The time it takes to troubleshoot and resolve a support request varies greatly based on the specifics of the issue. We'll work with you to get the issue resolved as fast as possible. This applies to all levels of support.
+Microsoft is committed to assist you in resolving your issue as soon as possible. Sometimes that means focusing efforts on reducing the business impact and mitigating any negative impact to your operation, before moving to a full solution. Therefore, we make a commitment to Initial Response Time and working with you until the impact of your issue is mitigated, having no direct SLA for support request resolution. The time it takes to troubleshoot and resolve a support request varies greatly based on the specifics of the issue. We work with you to get the issue resolved as fast as possible. This applies to all levels of support.
 
 ### I'm running a non-Microsoft technology with Dynamics 365 apps or a custom application built using Open Source Software (OSS). Does my plan support it?
 
@@ -219,13 +222,13 @@ Technical support doesn't conduct RCAs as part of any support experience. If any
 
 ### How is support provided for Performance issues?
 
-**Premier/Unified Support**:  Depending on the situation, performance issues may be handled via a normal reactive break fix support case or could require an advisory service at the discretion of the Microsoft Dynamics support team. For performance issues having impact in multiple areas of the business, an advisory service is required to investigate at a broader level. For isolated performance issues impacting a specific business function (that is, Posting Sales Orders), these scenarios start as a break-fix support case to troubleshoot to determine the cause. The Microsoft Dynamics support team invests up to 4 hours of time on a break fix case to assist. If after 4 hours, we haven't yet resolved the issue, an advisory case, consulting a partner or the community forums will be recommended for further investigation and the technical support incident will be closed.  If at any point it's determined that the cause points to custom code, partner or ISV software, something environmental or anything else outside of core Microsoft code, the Microsoft Dynamics Support team provides evidence that supports this in order for the Customer/Partner to proceed with further investigation and resolution of the problem.
+**Premier/Unified Support**: Depending on the situation, performance issues may be handled via a normal reactive break fix support case or could require an advisory service at the discretion of the Microsoft Dynamics support team. For performance issues having impact in multiple areas of the business, an advisory service is required to investigate at a broader level. For isolated performance issues impacting a specific business function (that is, Posting Sales Orders), these scenarios start as a break-fix support case to troubleshoot to determine the cause. The Microsoft Dynamics support team invests up to 4 hours of time on a break fix case to assist. If after 4 hours we haven't yet resolved the issue, an advisory case, consulting a partner or the community forums will be recommended for further investigation and the technical support incident will be closed. If at any point it's determined that the cause points to custom code, partner or ISV software, something environmental or anything else outside of core Microsoft code, the Microsoft Dynamics Support team provides evidence that supports this in order for the Customer/Partner to proceed with further investigation and resolution of the problem.
 
-**Non-premier**: Advisory services aren't included in support plans outside of Premier or Unified.  We recommend that you consult a partner or the community forums for additional assistance.
+**Non-premier**: Advisory services aren't included in support plans outside of Premier or Unified. We recommend that you consult a partner or the community forums for additional assistance.
 
 ### Does Microsoft provide support for Data Corruption?
 
-Data may become corrupt due to various reasons (malfunctioning software, custom code, partner, or ISV software, power outages, etc.). Microsoft doesn't provide assistance for correcting damaged data.  Per the Service Provider License Agreement (SPLA), Microsoft doesn't have a legal obligation to change or correct data being corrupted due to malfunctioning software.  Microsoft may execute scripts provided by partners/customers in the production environment if the script was tested in the UAT environment by the partner/customer prior.
+Data may become corrupt due to various reasons (malfunctioning software, custom code, partner, or ISV software, power outages, etc.). Microsoft doesn't provide assistance for correcting damaged data. Per the Service Provider License Agreement (SPLA), Microsoft doesn't have a legal obligation to change or correct data being corrupted due to malfunctioning software. Microsoft may execute scripts provided by partners/customers in the production environment if the script was tested in the UAT environment by the partner/customer prior.
 
 ### What happens if the issue can't be reproduced or has to do with customized databases?
 
@@ -236,11 +239,11 @@ In scenarios where a problem isn't able to be reproduced in a standard non-modif
 ### How do I purchase Support?
 
 - Support plans may be purchased either online or through an Enterprise Agreement. The Professional Direct support plan is available online through the [Microsoft 365 admin center](https://admin.microsoft.com/). More information: [Ways to contact support for business products](/microsoft-365/admin/contact-support-for-business-products) 
-- If you purchase Dynamics 365 apps through an Enterprise Agreement (EA), you can add a Professional Direct  support plan to your Enterprise Agreement by contacting your Large Account Reseller (LAR). 
+- If you purchase Dynamics 365 apps through an Enterprise Agreement (EA), you can add a Professional Direct support plan to your Enterprise Agreement by contacting your Large Account Reseller (LAR). 
 
 ### When will I be billed for Support?
 
-When you purchase a Support plan online, you'll be charged immediately for the first month. You'll be charged the monthly amount on the first day of each subsequent billing cycle. Enterprise Agreement (EA) purchases follow the agreement billing cycle.
+When you purchase a Support plan online, you are charged immediately for the first month. You are charged the monthly amount on the first day of each subsequent billing cycle. Enterprise Agreement (EA) purchases follow the agreement billing cycle.
 
 ### What happens at the end of the term?
 
@@ -251,7 +254,7 @@ At the end of your term, your plan will automatically renew to the same Support 
 Manage your support plan subscriptions through the [Microsoft 365 admin center](https://admin.microsoft.com/).
 
 - To change your support plan, first cancel your existing support plan, and then purchase a new support plan.
-- To cancel your support plan, select the support plan subscription that you want to cancel, and then select **Cancel subscription**.   [Learn more](/office365/admin/subscriptions-and-billing/cancel-your-subscription) by reviewing this article.
+- To cancel your support plan, select the support plan subscription that you want to cancel, and then select **Cancel subscription**. [Learn more](/office365/admin/subscriptions-and-billing/cancel-your-subscription) by reviewing this article.
 
 If you still have questions, open a new support request with the Billing team in the [Microsoft 365 admin center](https://admin.microsoft.com/). 
 
@@ -260,7 +263,7 @@ Support requires commitment during the subscription term. Cancellation won't res
 ### Can a support incident be reopened?
 
 1. If the Software and Hardware remains the same – example product build number, no new security updates or patches have been installed or no new hotfixes have been installed. If the build is different, submit a new support incident.
-2. If the error/Problem occurring is the same as the original incident and it occurs on the same environment/machine/document as the original incident. If the error occurs on a new machine/for a different user/different document – submit a  new support incident.
+2. If the error/Problem occurring is the same as the original incident and it occurs on the same environment/machine/document as the original incident. If the error occurs on a new machine/for a different user/different document – submit a new support incident.
 3. If a new error occurs after installing a hotfix or trying some suggestions from the original incident, it will be treated as a new error and hence needs a new support incident.
 4. If a case has been closed three or more months, it's recommended to submit a new support incident as the details have likely changed in that time frame.
 
@@ -327,8 +330,3 @@ Support depends on how you purchased your licenses.
 
 Yes, if you're eligible for these benefits and have activated your support access on the [Visual Studio subscription](https://my.visualstudio.com/) portal. If you have these benefits, then from [New support request](https://support.microsoft.com/supportforbusiness/productselection), select **Add contract** under the **Support Plan – Add or purchase a support plan** step, and enter your access ID and contract ID information to proceed.
 
-
-### See also
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
