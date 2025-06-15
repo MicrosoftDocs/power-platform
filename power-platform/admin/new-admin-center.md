@@ -54,7 +54,7 @@ Most of the pages from the classic admin center are available in the new one, ei
 | 15          | Resources > Catalogs | Deployment > Catalogs |
 | 16          | Resources > Dynamics 365 apps | Manage > Products > Dynamics 365 apps |
 | 17          | Resources > Power Pages sites | Manage > Products > Power Pages sites<br><br>**Note:** The security data of pages will be moved to Security > Products > Power Pages. |
-| 18          | Support       | Support         |
+| 18          | Help + support       | Support         |
 | 19          | Data integration     | Manage > Data > Data integration  |
 | 20          | Data (Preview)       | Manage > Data > Data (Preview) |
 | 21          | Policies > Data policies | Security > Settings > Data and privacy > Data policies |
