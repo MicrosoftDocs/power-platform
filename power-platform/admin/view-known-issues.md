@@ -40,7 +40,7 @@ Customer trust and transparency are important to us. You can now view existing p
 
 ## View known issues when creating a support request
 
-1. When [creating a support request](get-help-support.md#view-solutions-or-create-a-support-request), if a known issue is applicable to the search query, it displays at the top of the **Solutions** tab.
+1. When [creating a support request through Power Platform admin center](get-help-support.md#view-solutions-or-create-a-support-request-using-the-support-agent), if a known issue is applicable to the search query, it displays at the top of the **Solutions** tab.
 
 1. Select the title of the known issue to view details.
      
