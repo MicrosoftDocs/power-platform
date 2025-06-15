@@ -54,7 +54,7 @@ Yes, you need a support plan to receive one-on-one technical support. Some subsc
 
 The following table outlines the best way to submit a new support request based on your product or service and customer support plan. Microsoft partners should use the [Partner Center portal](https://partner.microsoft.com/support) or the support option listed in the table, as applicable.
 
-<table style="width:100%">
+<table>
   <tr>
     <th>Product</th>
     <th>Subscription (included)</th>
@@ -103,7 +103,7 @@ We have designed our support plans to meet different business needs:
 
 ### How does Professional Direct support compare to Premier/Unified support? 
 
-<table style="width:100%">
+<table>
   <tr>
     <td>Professional Direct Support </td>
     <td>Provides a cohesive support experience with exceptional tools and resources to accommodate customer needs during all stages of the customer lifecycle. One-hour response times for critical issues, around the clock problem resolution, escalation services, proactive advisory services, and ask-the-experts webinars.  </td>
