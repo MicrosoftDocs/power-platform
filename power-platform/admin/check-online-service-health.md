@@ -1,7 +1,7 @@
 ---
 title: How do I check my online service health?
 description: Learn how to quickly get the real-time status of your Microsoft Power Platform, Microsoft Dynamics 365, and Microsoft 365 services.
-ms.date: 02/11/2025
+ms.date: 06/15/2025
 ms.reviewer: sericks
 ms.topic: concept-article
 author: karacortez
@@ -12,10 +12,12 @@ search.audienceType:
 ms.contributors:
   - grbarker
   - yukom
+  - lsuresh
+contributors:
+- lavanyapg 
+
 ---
 # How do I check my online service health?
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 You can quickly get the real-time status of your Microsoft Power Platform, Microsoft Dynamics 365, and Microsoft 365 services.
 

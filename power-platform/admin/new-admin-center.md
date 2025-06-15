@@ -4,7 +4,7 @@ description: Learn how to use the updated Power Platform admin center's new UI a
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 05/19/2025
+ms.date: 06/15/2025
 ms.custom: 
   - NewPPAC
   - ignite-2024
@@ -13,6 +13,10 @@ ai-usage: ai-assisted
 author: praveenmantha
 ms.author: pmantha
 ms.reviewer: sericks
+ms.contributors:
+  - lsuresh
+contributors:
+- lavanyapg
 search.audienceType: 
   - admin
 ---
@@ -40,7 +44,7 @@ Most of the pages from the classic admin center are available in the new one, ei
 | 5           | Security             | Security         |
 | 6           | Analytics > Dataverse       | Manage > Products > Dataverse |
 | 7           | Analytics > Power Automate | Manage > Products > Power Automate |
-| 8           | Analytics > Power Apps| Manage > Prodcuts > Power Apps |
+| 8           | Analytics > Power Apps| Manage > Products > Power Apps |
 | 9           | Analytics > Data export | Manage  > Products > Data export |
 | 10          | Billing > Licenses   | Licensing > Products > Power Apps |
 | 11          | Billing > Billing plans      | Licensing > Billing plans |
