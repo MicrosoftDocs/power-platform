@@ -94,7 +94,7 @@ We have designed our support plans to meet different business needs:
 
 - All support plans provide access to technical support for break-fix issues. 
 - Higher tiers of support plans offer access to advisory services, and other benefits like technical support on an all day, every day basis with faster initial response times. You can find more information about the existing support plans at [Support Plans](https://dynamics.microsoft.com/support/plans/).
-- Customer engagement finance and operations apps, Power Apps and Power Automate are covered by the subscription, professional direct, premier, and unified support plans.
+- Customer engagement finance and operations apps, Power Apps, and Power Automate are covered by the subscription, professional direct, premier, and unified support plans.
 
 ### What's the difference between technical support and advisory services?
 
@@ -152,7 +152,7 @@ Submitting support requests online allows us to deliver fast and deep technical 
 
 ### Is there a phone number I can call to contact Support?
 
-Contacting Support over the phone won't speed up the processing of your request, and you'll get a better and faster experience by contacting support via the correct support portals listed earlier in this article. If you can't submit a request online, you can find a local support number from our list of regional [Global Customer Service Centers](/microsoft-365/admin/contact-support-for-business-products).
+Contacting Support over the phone won't speed up the processing of your request, and you get a better and faster experience by contacting support via the correct support portals listed earlier in this article. If you can't submit a request online, you can find a local support number from our list of regional [Global Customer Service Centers](/microsoft-365/admin/contact-support-for-business-products).
 
 ### How do I submit a request for technical support or advisory services?
 
@@ -169,17 +169,17 @@ If you can't submit a support request online, you can find a local support phone
 
 ### How do I get support if I don't have a subscription yet, and I get an error message while creating one?
 
-You can open a Subscription Management support request through the [Microsoft 365 Admin Portal](https://portal.office.com/), as long as you have a Power Platform admin sign-in credential to the portal. To open a Subscription Management support request, sign in to the [Microsoft 365 Admin Portal](https://portal.office.com/), select the Admin app, and select the **Support – New Support Request** option from the left navigation. This provides access to the **Need Help?** pane, where you can type your Subscription Management question. If the recommended articles do not address your issue, select the **Contact Support** link at the bottom of the **Need Help?** pane, and provide the additional information needed to submit the support request.
+You can open a Subscription Management support request through the [Microsoft 365 Admin Portal](https://portal.office.com/), as long as you have a Power Platform admin sign-in credential to the portal. To open a Subscription Management support request, sign in to the [Microsoft 365 Admin Portal](https://portal.office.com/), select the Admin app, and select the **Support – New Support Request** option from the left navigation. This provides access to the **Need Help?** pane, where you can type your Subscription Management question. If the recommended articles don't address your issue, select the **Contact Support** link at the bottom of the **Need Help?** pane, and provide the additional information needed to submit the support request.
 
 ### Who can submit a support request in the Power Platform admin center?
 
-Any users with the Power Platform admin roles on the tenant containing the subscriptions can submit a support request. End users are not enabled for opening a support request and will need to have their permissions elevated within the tenant to accomplish this task. There is no alternative to this experience.
+Any users with the Power Platform admin roles on the tenant containing the subscriptions can submit a support request. End users aren't enabled for opening a support request and will need to have their permissions elevated within the tenant to accomplish this task. There's no alternative to this experience.
 
 ### How do I authorize another person to submit support requests for a particular subscription in the Power Platform admin center?
 
-To grant permission, you must have a Power Platform admin role on the tenant that contains the subscription. Assign the Service Administrator role to all users who want to create and manage support requests for that given tenant but do not require other permissions. [Learn more](/office365/admin/add-users/about-admin-roles) about role assignments in the portal.
+To grant permission, you must have a Power Platform admin role on the tenant that contains the subscription. Assign the Service Administrator role to all users who want to create and manage support requests for that given tenant but don't require other permissions. [Learn more](/office365/admin/add-users/about-admin-roles) about role assignments in the portal.
 
-### I am developing applications on behalf of my client or assisting my client who is running customer engagement apps. How do I get support in the Power Platform admin center?
+### I'm developing applications on behalf of my client or assisting my client who is running customer engagement apps. How do I get support in the Power Platform admin center?
 
 You can get support in two ways:
 
@@ -188,7 +188,7 @@ You can get support in two ways:
 
 ### What is Initial Response Time, and how quickly can I expect to hear back from someone after submitting my support request? 
 
-Initial Response Time is the period from when you submit your support request to when a Microsoft Support Engineer contacts you and starts working on your support request. The Initial Response Time varies with both the support plan and the Business Impact of the request (also known as Severity). Initial Response Times are calculated using business-hours support for subscription-based support. Elevated support plans will contain non–business hours response times.
+Initial Response Time is the period from when you submit your support request to when a Microsoft Support Engineer contacts you and starts working on your support request. The Initial Response Time varies with both the support plan and the Business Impact of the request (also known as Severity). Initial Response Times are calculated using business-hours support for subscription-based support. Elevated support plans contain non–business hours response times.
 
 |Severity level  |Customer's situation  |Initial Response Time  |
 |---------|---------|---------|
@@ -200,36 +200,36 @@ Initial Response Time is the period from when you submit your support request to
 
 ### How quickly will you resolve my support request?
 
-Microsoft is committed to assist you in resolving your issue as soon as possible. Sometimes that means focusing efforts on reducing the business impact and mitigating any negative impact to your operation, before moving to a full solution. Therefore, we make a commitment to Initial Response Time and working with you until the impact of your issue is mitigated, having no direct SLA for support request resolution. The time it takes to troubleshoot and resolve a support request varies greatly based on the specifics of the issue. We will work with you to get the issue resolved as fast as possible. This applies to all levels of support.
+Microsoft is committed to assist you in resolving your issue as soon as possible. Sometimes that means focusing efforts on reducing the business impact and mitigating any negative impact to your operation, before moving to a full solution. Therefore, we make a commitment to Initial Response Time and working with you until the impact of your issue is mitigated, having no direct SLA for support request resolution. The time it takes to troubleshoot and resolve a support request varies greatly based on the specifics of the issue. We'll work with you to get the issue resolved as fast as possible. This applies to all levels of support.
 
 ### I'm running a non-Microsoft technology with Dynamics 365 apps or a custom application built using Open Source Software (OSS). Does my plan support it?
 
 - Microsoft offers customers the ability to run non-Microsoft technologies along with Dynamics 365 apps. For all scenarios that are eligible for support through a Support plan, Microsoft Support will help in isolating the issue between the environment and your custom application.
-- Full technical support will be provided if the issue is determined to be caused by a service or platform. Commercially reasonable support will be provided to all other scenarios. When an adequate solution to your issue is not achieved, you might be referred to other support channels that are available for the non-Microsoft software.
+- Full technical support is provided if the issue is determined to be caused by a service or platform. Commercially reasonable support is provided to all other scenarios. When an adequate solution to your issue isn't achieved, you might be referred to other support channels that are available for the non-Microsoft software.
 
 ### How do I get support during an outage or Service Interruption Event (SIE)?
 
 - View the service health in Microsoft 365 at a glance. You can also check out more details and the service health history. 
 - Use Message center in Microsoft 365 to keep track of upcoming changes to features and services. We post announcements there with information that helps you plan for changes and understand how they might affect users.
-- Finally, if service health and Message center do not show any active or recent service issues, contact support using your technical support plan.
+- Finally, if service health and Message center don't show any active or recent service issues, contact support using your technical support plan.
 
 ### Which support plan do I need in order to request a Root-Cause Analysis (RCA)?
 
-Technical support does not conduct RCAs as part of any support experience. If any RCA is conducted, the engineering team will conduct the RCA. RCAs are only provided to published service-related incidents when multiple customers or services are not available. Any RCA created will be published through the Microsoft 365 Message center and will not be emailed directly to Power Platform admins. These published RCAs are only available in English. Any other request for an RCA to a specific scenario impacting your tenant will not be honored by the engineering team.
+Technical support doesn't conduct RCAs as part of any support experience. If any RCA is conducted, the engineering team conducts the RCA. RCAs are only provided to published service-related incidents when multiple customers or services aren't available. Any RCA created will be published through the Microsoft 365 Message center and won't be emailed directly to Power Platform admins. These published RCAs are only available in English. Any other request for an RCA to a specific scenario impacting your tenant won't be honored by the engineering team.
 
 ### How is support provided for Performance issues?
 
-**Premier/Unified Support**:  Depending on the situation, performance issues may be handled via a normal reactive break fix support case or could require an advisory service at the discretion of the Microsoft Dynamics support team. For performance issues having impact in multiple areas of the business, an advisory service is required to investigate at a broader level. For isolated performance issues impacting a specific business function (i.e. Posting Sales Orders), these scenarios will start as a break-fix support case to troubleshoot to determine the cause. The Microsoft Dynamics support team will invest up to 4 hours of time on a break fix case to assist. If after 4 hours, we have not yet resolved the issue, an advisory case, consulting a partner or the community forums will be recommended for further investigation and the technical support incident will be closed.  If at any point it is determined that the cause points to custom code, partner or ISV software, something environmental or anything else outside of core Microsoft code, the Microsoft Dynamics Support team will provide evidence that supports this in order for the Customer/Partner to proceed with further investigation and resolution of the problem.
+**Premier/Unified Support**:  Depending on the situation, performance issues may be handled via a normal reactive break fix support case or could require an advisory service at the discretion of the Microsoft Dynamics support team. For performance issues having impact in multiple areas of the business, an advisory service is required to investigate at a broader level. For isolated performance issues impacting a specific business function (that is, Posting Sales Orders), these scenarios start as a break-fix support case to troubleshoot to determine the cause. The Microsoft Dynamics support team invests up to 4 hours of time on a break fix case to assist. If after 4 hours, we haven't yet resolved the issue, an advisory case, consulting a partner or the community forums will be recommended for further investigation and the technical support incident will be closed.  If at any point it's determined that the cause points to custom code, partner or ISV software, something environmental or anything else outside of core Microsoft code, the Microsoft Dynamics Support team provides evidence that supports this in order for the Customer/Partner to proceed with further investigation and resolution of the problem.
 
-**Non-premier**: Advisory services are not included in support plans outside of Premier or Unified.  We recommend that you consult a partner or the community forums for additional assistance.
+**Non-premier**: Advisory services aren't included in support plans outside of Premier or Unified.  We recommend that you consult a partner or the community forums for additional assistance.
 
 ### Does Microsoft provide support for Data Corruption?
 
-Data may become corrupt due to a variety of reasons (malfunctioning software, custom code, partner or ISV software, power outages, etc.). Microsoft does not provide assistance for correcting damaged data.  Note that per the Service Provider License Agreement (SPLA), Microsoft does not have a legal obligation to change or correct data being corrupted due to malfunctioning software.  Microsoft may execute scripts provided by partners/customers in the production environment if the script was tested in the UAT environment by the partner/customer prior.
+Data may become corrupt due to various reasons (malfunctioning software, custom code, partner, or ISV software, power outages, etc.). Microsoft doesn't provide assistance for correcting damaged data.  Per the Service Provider License Agreement (SPLA), Microsoft doesn't have a legal obligation to change or correct data being corrupted due to malfunctioning software.  Microsoft may execute scripts provided by partners/customers in the production environment if the script was tested in the UAT environment by the partner/customer prior.
 
 ### What happens if the issue can't be reproduced or has to do with customized databases?
 
-In scenarios where a problem is not able to be reproduced in a standard non-modified Dynamics installation, the Microsoft Dynamics support team will invest best effort support up to 4 hours of time on a break fix case to assist. If after 4 hours, we have not yet identified the repro steps of an issue, consulting a partner or the community forums will be recommended for further investigation and the technical support incident will be closed.
+In scenarios where a problem isn't able to be reproduced in a standard non-modified Dynamics installation, the Microsoft Dynamics support team invests best effort support up to 4 hours of time on a break fix case to assist. If after 4 hours, we haven't yet identified the repro steps of an issue, consulting a partner or the community forums will be recommended for further investigation and the technical support incident will be closed.
 
 ## Purchasing and billing
 
@@ -240,7 +240,7 @@ In scenarios where a problem is not able to be reproduced in a standard non-modi
 
 ### When will I be billed for Support?
 
-When you purchase a Support plan online, you will be charged immediately for the first month. You will be charged the monthly amount on the first day of each subsequent billing cycle. Enterprise Agreement (EA) purchases will follow the agreement billing cycle.
+When you purchase a Support plan online, you'll be charged immediately for the first month. You'll be charged the monthly amount on the first day of each subsequent billing cycle. Enterprise Agreement (EA) purchases follow the agreement billing cycle.
 
 ### What happens at the end of the term?
 
@@ -255,14 +255,14 @@ Manage your support plan subscriptions through the [Microsoft 365 admin center](
 
 If you still have questions, open a new support request with the Billing team in the [Microsoft 365 admin center](https://admin.microsoft.com/). 
 
-Support requires commitment for the duration of the subscription term. Cancellation will not result in a prorated refund.
+Support requires commitment during the subscription term. Cancellation won't result in a prorated refund.
 
 ### Can a support incident be reopened?
 
 1. If the Software and Hardware remains the same – example product build number, no new security updates or patches have been installed or no new hotfixes have been installed. If the build is different, submit a new support incident.
 2. If the error/Problem occurring is the same as the original incident and it occurs on the same environment/machine/document as the original incident. If the error occurs on a new machine/for a different user/different document – submit a  new support incident.
 3. If a new error occurs after installing a hotfix or trying some suggestions from the original incident, it will be treated as a new error and hence needs a new support incident.
-4. If a case has been closed three or more months it is recommended to submit a new support incident as the details have likely changed in that time frame.
+4. If a case has been closed three or more months, it's recommended to submit a new support incident as the details have likely changed in that time frame.
 
 ## Support for Enterprise Agreement (EA)
 
@@ -276,7 +276,7 @@ Enterprise Agreement (EA) customers can purchase an upgrade to move from Subscri
 
 ### I have multiple EA enrollments. Do I need a support plan for each EA enrollment?
 
-Yes, each EA enrollment requires a separate support plan. If you have one Support plan and multiple EA enrollments, then support is only covered under the enrollment the support plan is tied to. Please note that if you have multiple subscriptions under a single EA enrollment with a support plan, then all those subscriptions will have access to Technical Support.
+Yes, each EA enrollment requires a separate support plan. If you have one Support plan and multiple EA enrollments, then support is only covered under the enrollment the support plan is tied to. If you have multiple subscriptions under a single EA enrollment with a support plan, then all those subscriptions have access to Technical Support.
 
 ## Support for Premier
 
@@ -284,22 +284,22 @@ Yes, each EA enrollment requires a separate support plan. If you have one Suppor
 
 Power Platform admin center and the Lifecycle Services (LCS) are designed to recognize and entitle Premier and Unified Access IDs.
 
-- In **Power Platform admin center**: You can link your Premier contract to your account by entering your Premier Access ID and Contract ID information in the Power Platform admin center, which you can do by selecting **Support** and turning on the Premier support toggle in the new incident submission experience. This is a one-time process, and your Premier contract information will be saved with your account, being accessible from all subscriptions where you have Owner/Administrator privileges. 
+- In **Power Platform admin center**: You can link your Premier contract to your account by entering your Premier Access ID and Contract ID information in the Power Platform admin center, which you can do by selecting **Support** and turning on the Premier support toggle in the new incident submission experience. This is a one-time process, and your Premier contract information is saved with your account, being accessible from all subscriptions where you have Owner/Administrator privileges. 
 
-- In **LCS**: You can link your Premier contract to your account by selecting a project within LCS. Select the **Support** option from the drop-down menu, and then select **Manage Contracts**. This is a one-time process, and your Premier contract information will be saved for use with any support incident you create in LCS.
+- In **LCS**: You can link your Premier contract to your account by selecting a project within LCS. Select the **Support** option from the drop-down menu, and then select **Manage Contracts**. This is a one-time process, and your Premier contract information is saved for use with any support incident you create in LCS.
 
 Contact your Technical Account Manager if you don't have your access ID and contract ID information.
 
-Although Premier customers can continue to use the [Microsoft Premier Online](https://support.microsoft.com/premier) portal or phone channels to submit a support request, using the Power Platform admin center or Lifecycle Services has a number of significant advantages, including:
+Although Premier customers can continue to use the [Microsoft Premier Online](https://support.microsoft.com/premier) portal or phone channels to submit a support request, using the Power Platform admin center or Lifecycle Services has many significant advantages, including:
 
 - Self-help content to find answers to known issues quickly.
-- Faster resolution, thanks to a Dynamics 365–specific submission experience.
+- Faster resolution with a Dynamics 365–specific submission experience.
 - Ability to create Severity A/1 cases online.
 - Providing you with in-context help regarding the issue you're facing.
 
 ### How do I purchase a Premier support contract?
 
-To purchase Premier support, you should contact your Microsoft Account Manager. If you are not sure who to contact, please submit a request through the [Premier contact form](https://enterprise.microsoft.com/services/).
+To purchase Premier support, you should contact your Microsoft Account Manager. If you aren't sure who to contact, submit a request through the [Premier contact form](https://enterprise.microsoft.com/services/).
 
 ### What if I already have a Premier contract, and I want to learn more about how to get the most from it?
 
@@ -307,7 +307,7 @@ Contact your Technical Account Manager to discuss options for best using your ex
 
 ### Can Partners use the Premier Support for Partner (PSfP) contract for Support?
 
-Yes, Partners with Premier Support for Partners (PSfP) contracts are able to use their benefits to get Support for their internal needs, as well as to assist their customers, as long as the Partner has been delegated admin/owner access to their customer's subscription. See the FAQ earlier in this section on how to submit a support request using your Premier contract.
+Yes, Partners with Premier Support for Partners (PSfP) contracts are able to use their benefits to get Support for their internal needs, and to assist their customers, as long as the Partner has been delegated admin/owner access to their customer's subscription. See the FAQ earlier in this section on how to submit a support request using your Premier contract.
 
 ## Licensing Support
 
@@ -317,15 +317,15 @@ Support depends on how you purchased your licenses.
 
 | &nbsp;  | &nbsp; |
 |---------|---------|
-|Direct Online Subscription, Enhanced and ProDirect Customers     | Microsoft 365 admin center        |
+|Direct Online Subscription, Enhanced, and ProDirect Customers     | Microsoft 365 admin center        |
 |Volume Licensing: MPSA/Enterprise agreements and Open     | Volume Licensing Service Center (VLSC)        |
 |Cloud Solution Provider (CSP)      | Contact your partner.        |
 
 ## Support for Partner
 
-### I have a Microsoft plan (such as MSDN, BizSpark or TechNet) that includes as a benefit a number of technical support requests. Can I use those for on-premises technical support?
+### I have a Microsoft plan (such as MSDN, BizSpark, or TechNet) that includes as a benefit many technical support requests. Can I use those for on-premises technical support?
 
-Yes, if you are eligible for these benefits and have activated your support access on the [Visual Studio subscription](https://my.visualstudio.com/) portal. If you have these benefits, then from [New support request](https://support.microsoft.com/supportforbusiness/productselection), select **Add contract** under the **Support Plan – Add or purchase a support plan** step, and enter your access ID and contract ID information to proceed.
+Yes, if you're eligible for these benefits and have activated your support access on the [Visual Studio subscription](https://my.visualstudio.com/) portal. If you have these benefits, then from [New support request](https://support.microsoft.com/supportforbusiness/productselection), select **Add contract** under the **Support Plan – Add or purchase a support plan** step, and enter your access ID and contract ID information to proceed.
 
 
 ### See also
