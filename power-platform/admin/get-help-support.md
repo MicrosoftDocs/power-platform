@@ -63,7 +63,12 @@ An example of solutions provided for Dynamics 365 App for Outlook issues:
 >   - If you have a Unified or Premier Support plan, contact your Incident Manager or Customer Success Account Manager (CSAM).
 >   - If you have a non-Unified/Premier Support plan, verify the plan is active. For support information, see [Community forums](https://community.dynamics.com/forums/thread/).
 
-## View solutions or create a support request using the Support agent
+## View solutions or create a support request using the Support agent (Preview)
+
+> [!IMPORTANT]
+>
+> - This is a preview feature.
+> - Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) with your admin credentials.
 
