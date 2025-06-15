@@ -23,7 +23,7 @@ You can quickly get the real-time status of your Microsoft Power Platform, Micro
 
 You can view service health information in the Power Platform admin center.
 
-To view all service health issues from the past 30 days, sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/home), and select **Help + support** \> **Service health**.
+To view all service health issues from the past 30 days, sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/home), and select **Support** \> **Service health**.
 
 Learn more in [View service health](view-service-health.md).
 
@@ -61,7 +61,7 @@ To view and track upcoming service changes, select **Health** \> **Message cente
 
 ## Related information
 
-[Get Help + Support](get-help-support.md)<br>
+[Get Support](get-help-support.md)<br>
 [View service health](view-service-health.md)<br>
 [Microsoft Dataverse analytics](analytics-common-data-service.md)
 

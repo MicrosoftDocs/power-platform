@@ -44,7 +44,7 @@ Sometimes, Microsoft might have to notify you about issues that are occurring in
 
 ## Service health in the Power Platform admin center
 
-In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), admins can view service health issues for the last 30 days from the **Service health** tab of the **Help + support** page. Learn more in [View service health](view-service-health.md).
+In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), admins can view service health issues for the last 30 days from the **Service health** tab of the **Support** page. Learn more in [View service health](view-service-health.md).
 
 ## Ad-hoc email service notifications
 

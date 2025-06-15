@@ -65,7 +65,7 @@ Consent lasts as long as the support request is open or until you revoke it.
 A change in consent takes effect immediately.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-1. In the navigation pane, select **Help + Support**.
+1. In the navigation pane, select **Support**.
 1. Select the support request.
 1. Select **Edit**.
 1. Select a consent option, and then select **Save**.

@@ -157,7 +157,7 @@ Contacting Support over the phone won't speed up the processing of your request,
 ### How do I submit a request for technical support or advisory services?
 
 - Access to technical support is provided through one of the [support plans included with Dynamics 365 apps or through one of the premium support plans](https://dynamics.microsoft.com/support/plans/). Submit a technical support request from the correct support portal for the product or service for which you need assistance (see the table earlier in this article). To begin the support-request submission process:
-  - From the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), select **Help + support** from the left navigation pane and then **New support request** from the top navigation.
+  - From the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), select **Support** from the left navigation pane and then **New support request** from the top navigation.
   - From the [Lifecycle Services portal](https://lcs.dynamics.com/), choose a project, select **Support** from the option list, and then select **Submit an incident**.
   - From [Support for Business](https://support.microsoft.com/supportforbusiness/productselection), select the Dynamics 365 product family followed by the specific Dynamics 365 product or service for which you need help.
   - From the [Premier Portal](https://support.microsoft.com/premier), select **New support request** from the Support requests page navigation, enter your access ID and password or select your associated access ID, and proceed with your submission.
@@ -284,7 +284,7 @@ Yes, each EA enrollment requires a separate support plan. If you have one Suppor
 
 Power Platform admin center and the Lifecycle Services (LCS) are designed to recognize and entitle Premier and Unified Access IDs.
 
-- In **Power Platform admin center**: You can link your Premier contract to your account by entering your Premier Access ID and Contract ID information in the Power Platform admin center, which you can do by selecting **Help + Support** and turning on the Premier support toggle in the new incident submission experience. This is a one-time process, and your Premier contract information will be saved with your account, being accessible from all subscriptions where you have Owner/Administrator privileges. 
+- In **Power Platform admin center**: You can link your Premier contract to your account by entering your Premier Access ID and Contract ID information in the Power Platform admin center, which you can do by selecting **Support** and turning on the Premier support toggle in the new incident submission experience. This is a one-time process, and your Premier contract information will be saved with your account, being accessible from all subscriptions where you have Owner/Administrator privileges. 
 
 - In **LCS**: You can link your Premier contract to your account by selecting a project within LCS. Select the **Support** option from the drop-down menu, and then select **Manage Contracts**. This is a one-time process, and your Premier contract information will be saved for use with any support incident you create in LCS.
 

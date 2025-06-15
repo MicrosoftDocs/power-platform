@@ -20,7 +20,7 @@ ms.contributors:
 You can view service health information for Dynamics 365 and Power Platform products in the Power Platform admin center.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a Dynamics 365 admin or Power Platform admin.
-1. In the navigation pane, select **Help + Support**. The **Help + support** page is displayed.
+1. In the navigation pane, select **Support**. The **Support** page is displayed.
 1. Select the **Service health** tab.
 1. From the **Product category** list, select the product that you want to check.
 1. From the **Issue type** list, select if you want to view all issues, advisory issues, or incident issues.
