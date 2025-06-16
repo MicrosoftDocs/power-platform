@@ -447,11 +447,7 @@
                 - name: For Power Automate (preview)
                   href: monitoring/monitor-power-automate.md
         - name: Copilot
-          items:
-            - name: Track, manage, and scale Copilot adoption
-              href: copilot/copilot-hub.md
-            - name: View agent inventory
-              href: tenant-wide-agent-inventory.md
+          href: copilot/copilot-hub.md
         - name: Security
           items:
             - name: Security overview
