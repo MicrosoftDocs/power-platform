@@ -62,11 +62,11 @@ When you create an environment with a Dataverse database or add a Dataverse data
 On the **Users** page:
 - View the list of users already added to the environment, including those users with enabled and disabled status. Learn more in [Enable or disable users](create-users.md#enable-or-disable-user-accounts).
   
-- Search the user list to check if the user you want to add is already present, as automatic user addition may add them. If the user isn't found, click **Add user** in the command bar. 
+- Search the user list to check if the user you want to add is already present, as automatic user addition may add them. If the user isn't found, select **Add user** in the command bar. 
 
 - In the **Add user** pane:
   - Enter the user's name or email address and select it.
-  - Click **Add** to add them to the environment. Ensure the requirements for successfully adding a user are met. Learn more in [enable a user in an environment](create-users.md#enable-or-disable-user-accounts). 
+  - Select **Add** to add them to the environment. Ensure the requirements for successfully adding a user are met. Learn more in [enable a user in an environment](create-users.md#enable-or-disable-user-accounts). 
 
 - On the **Users** page, select **Refresh** to update the list and see the added user. 
 
