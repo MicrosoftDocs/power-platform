@@ -15,7 +15,7 @@ search.audienceType:
 
 # View agent inventory
 
-The Power Platform admin center now offers an enhanced, agent inventory experience that provides IT administrators with comprehensive visibility into all Microsoft Copilot Studio agents created across their tenant. With this new, agent inventory page, administrators can effortlessly discover, search, filter, and sort the entire inventory of agents by owner, creation date, region, and other key attributes, streamlining common administrative tasks.
+The Power Platform admin center now offers an enhanced, agent inventory experience that provides IT administrators with comprehensive visibility into all Microsoft Copilot Studio agents created across their tenant. With this new agent inventory page, administrators can effortlessly discover, search, filter, and sort the entire inventory of agents by owner, creation date, region, and other key attributes, streamlining common administrative tasks.
 
 The inventory allows administrators to:
 
@@ -46,7 +46,7 @@ You can filter by:
 You can apply filters and sorts on any column, offering numerous possibilities.
 
 ## Search the inventory
-At any time, you can see how many agents correspond to your search, filter, and sort criteria. You might see more than 500 results if there are more than 500 agents. You can add more filters to narrow down your results, if needed.
+You can search, filter, and sort the agent inventory. You can search across the records that have been displayed in the user interface (UI). For example, if you apply a filter and get 400 records returned, the search operation searches across those 400 records. If you apply a filter that returns 700 records&mdash;but only 500 records are displayed in the UI&mdash;the search operation searches across those 500 recordd. You can add more filters to narrow down your results, if needed.
 
 When you narrow the list to fewer than 500 agents, you can search for keywords across all entries on the page, like the name of the agent. The search box only searches across all agents that have been displayed on the page.
 
