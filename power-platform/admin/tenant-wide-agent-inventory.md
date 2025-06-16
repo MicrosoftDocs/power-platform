@@ -48,7 +48,7 @@ You can apply filters and sorts on any column, offering numerous possibilities.
 ## Search the inventory
 You can search, filter, and sort the agent inventory. Keep in mind that you search across the records that have been displayed in the user interface (UI). For example, consider the following scenarios:
 - If you apply a filter and get 400 records returned, the search operation searches across those 400 records.
-- If you apply a filter that returns more than 500 records, you only see 500 records displayed in the UI at this time due to a [limitation](#known-limitations). The search operation searches across just those 500 records.
+- If you apply a filter that returns more than 500 records, you only see 500 records displayed in the UI at this time due to a [known limitation](#known-limitations). The search operation searches across just those 500 records.
 
 You can add more filters to narrow down your results, if needed.
 
