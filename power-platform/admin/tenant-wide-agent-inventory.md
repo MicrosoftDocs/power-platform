@@ -1,5 +1,5 @@
 ---
-title: View tenant-wide agent inventory
+title: View agent inventory
 description: Learn how to get visibility into all Microsoft Copilot Studio agents created across your tenant.
 ms.subservice: admin
 ms.component: pa-admin
@@ -13,7 +13,7 @@ search.audienceType:
   - admin
 ---
 
-# View tenant-wide agent inventory
+# View agent inventory
 
 The Power Platform admin center now offers an enhanced, agent inventory experience that provides IT administrators with comprehensive visibility into all Microsoft Copilot Studio agents created across their tenant. With this new, agent inventory page, administrators can effortlessly discover, search, filter, and sort the entire inventory of agents by owner, creation date, region, and other key attributes, streamlining common administrative tasks.
 
