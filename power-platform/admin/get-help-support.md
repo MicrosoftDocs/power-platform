@@ -7,6 +7,7 @@ ms.topic: how-to
 ms.date: 06/11/2025
 ms.subservice: admin
 ms.author: johhar 
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ms.contributors:
@@ -202,4 +203,4 @@ For some support requests, you're asked to request a support environment. Curren
 - [Support overview](support-overview.md)
 - [How do I check my online service health?](check-online-service-health.md)
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+
