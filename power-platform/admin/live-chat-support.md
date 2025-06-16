@@ -27,7 +27,7 @@ This feature improves the support experience by allowing customers to continue t
 
 ## What is live chat with persistence?
 
-Live chat with persistence builds on Microsoft's existing live chat offering, enabling users to return to their previous chat sessions. If you created a [support request through Power Platform admin center](get-help-support.md#view-solutions-or-create-a-support-request-using-the-support-agent), you can revisit the chat at any time to add more information or check for updates.
+Live chat with persistence builds on Microsoft's existing live chat offering, enabling users to return to their previous chat sessions. If you created a [support request through Power Platform admin center](get-help-support.md#view-solutions-or-create-a-support-request-using-the-support-agent-preview), you can revisit the chat at any time to add more information or check for updates.
 
 ### Key benefits
 
@@ -48,7 +48,7 @@ Follow this step-by-step guide to help you get started.
 
    :::image type="content" source="media/live-chat-support/support-requests.png" alt-text="Screenshot that shows the Get support button under the Support requests section.":::
 
-1. Once your support request is ready to be submitted, you see an option to initiate a live chat with one of our support engineers. Toggle this option on to start your conversation immediately after you submit a support ticket.
+1. After your support request is ready to be submitted, you see an option to initiate a live chat with one of our support engineers. Toggle this option on to start your conversation immediately after you submit a support ticket.
 
    :::image type="content" source="media/live-chat-support/start-live-chat.png" alt-text="Screenshot that shows the Live Chat toggle to start a live chat immediately after submitting a ticket.":::
 
