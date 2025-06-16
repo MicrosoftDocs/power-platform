@@ -64,7 +64,7 @@ No, a fix is in progress and an update will be shared on the known issue details
 
 ### What does a known issue's Status (Active/Resolved) mean?
 
-Status signifies the progress of the issue. Issues being worked on are in the **Active** state, while issues that have been fixed, but not necessarily deployed, are in the **Resolved** state.
+Status signifies the progress of the issue. Issues being worked on are in the **Active** state, while issues that are fixed, but not necessarily deployed, are in the **Resolved** state.
 
 ### While Microsoft works on a fix, is there any interim solution?
 
@@ -74,6 +74,6 @@ When available, a workaround will be shared in the **Workaround** field of the k
 
 When available, more information on the release schedule will be shared in the **Workaround** field of the known issue details page.
 
-### How do I know if there has been any update on the issue?
+### How do I know if there's any update on the issue?
 
 We recommend bookmarking the URL on issue information page and revisiting to see the updated information.
