@@ -20,24 +20,23 @@ ms.contributors:
 ---
 # Opt in to early access updates 
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 Microsoft Power Platform and customer engagement apps teams deliver two [major releases](policies-communications.md#major-release-events) per year (April and October) that offer new capabilities and functionality.
 
 Each major release includes features that may affect the user experience. You may opt in for early access to update to the new release. Use the early enrollment period to validate the new functionality.
 
 > [!TIP]
-> Check out the early access features for Microsoft [Power Platform](/power-platform-release-plan/2021wave1/features-ready-early-access) and [Dynamics 365](/dynamics365-release-plan/2021wave1/features-ready-early-access) to know the features that will roll out to the users automatically when you opt in for an update.
+> Check out the early access features for Microsoft [Power Platform](/power-platform-release-plan/2021wave1/features-ready-early-access) and [Dynamics 365](/dynamics365-release-plan/2021wave1/features-ready-early-access) to know the features that roll out to the users automatically when you opt in for an update.
 
 ## Early access availability
 
 Early access begins approximately two months before general availability of each release wave in your region.
 
 **Release wave 1**
+
 - Early access: First Monday of February
 - Sovereign early access: Second Monday of February
 
-## Deployment schedule  
+## Deployment schedule 
 
 |Region  | Deployment schedule for 2025 wave 1 early access |
 |---------|---------|
@@ -61,6 +60,7 @@ Early access begins approximately two months before general availability of each
 | North America                | February 3, 2025 |
 
 **Release wave 2**
+
 - Early access: Second Monday of August
 - Sovereign early access: Second Monday of August
 
@@ -79,14 +79,14 @@ The following image is an example of an early update availability timeline.
 :::image type="content" source="media/opt-in-2020-timeline.png" alt-text="Opt in timeline example for 2020.":::
 
 > [!NOTE]
-> Once a release wave is generally available, the updates status in your environments become **On** to automatically receive all planned features and updates throughout the release.  
+> Once a release wave is generally available, the updates status in your environments become **On** to automatically receive all planned features and updates throughout the release. 
 >
 > To learn more, see [release schedule and early access](/dynamics365/get-started/release-schedule).
 
 ## Environments available for early access updates 
 The early access updates are available for all types of environments, including trial, sandbox, and production. However, the best practice is to enable the updates in **trial** or **sandbox** environments before production environments.
  
-[Tenant to tenant migration](move-environment-tenant.md) is not supported for early access updates.  
+[Tenant to tenant migration](move-environment-tenant.md) isn't supported for early access updates.  
 
 > [!IMPORTANT]
 > Although you can get early access updates in a production environment, we highly recommend that you create a copy of your production environment as a sandbox environment to try out the new features first. The updates can't be reverted after they've been deployed; therefore, if you test and validate the updates in a sandbox environment before enabling them in a production environment, you can determine the impact they'll have on users in your organization.
@@ -104,17 +104,18 @@ The early access updates are available for all types of environments, including 
 
 3. Under **Updates**, the new release wave is available. Select **Manage**. 
 
-4. Select **Update now**, and then proceed through the confirmation dialog boxes to get the new features and capabilities of the release wave.  
+4. Select **Update now**, and then proceed through the confirmation dialog boxes to get the new features and capabilities of the release wave. 
 
-5. After the update is complete, all early access features will be turned on for your model-driven apps in your environment.  
+5. After the update is complete, all early access features will be turned on for your model-driven apps in your environment. 
 
 > [!NOTE]
 > - All available updates to your environment initiate at once. 
-> - After they're deployed, the updates can't be reverted. Be sure to update your sandbox or trial environment before updating the production environment.  
-> - Only the apps that you currently have licenses for update. Applications that haven't been installed before do not update. 
+> - After they're deployed, the updates can't be reverted. Be sure to update your sandbox or trial environment before updating the production environment. 
+> - Only the apps that you currently have licenses for update. Applications that haven't been installed before don't update. 
 > - It might take a few hours to complete the updates. All applications in the environment are still available during the update, though you might experience slightly reduced performance.
 
-## Other requirements to get early access updates  
+## Other requirements to get early access updates 
+
 Some apps require more steps to turn on early access features. If you have any of the following apps, after enabling the early access updates in the Power Platform admin center, you must complete the following manual steps.
 
 |Early access apps  |Description of manual steps  |
@@ -131,15 +132,17 @@ Some apps require more steps to turn on early access features. If you have any o
 To check the update status, sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) and select the environment. From **Updates**, you see the update process of each of the applications. 
 
 ### Retry 
-If an application update failed during the opt in update, you can use the **Retry** button to restart the update for the failed application.
+
+If an application update failed during the opt-in update, you can use the **Retry** button to restart the update for the failed application.
  
-The retry restarts the update for the failed application. If multiple applications failed during the update, you need to retry for each of the failed updates individually.  
+The retry restarts the update for the failed application. If multiple applications failed during the update, you need to retry for each of the failed updates individually. 
 The updates might take a few hours. If multiple retry attempts fail after 24 hours, contact [Support](https://dynamics.microsoft.com/support/) for assistance. 
 
 > [!NOTE]
-> The retry experience is only available for early access updates. The retry experience doesn't apply to general availability updates.  
+> The retry experience is only available for early access updates. The retry experience doesn't apply to general availability updates. 
 
-### Confirm update complete  
+### Confirm update complete 
+
 To verify that a release wave is deployed, open the environment, go to **Settings** (![Settings.](media/settings-gear-icon.png "Settings")) > **About** to see the release wave that's deployed.
 
 |In Unified Interface  |In the web client interface  | 
@@ -151,7 +154,8 @@ To verify that a release wave is deployed, open the environment, go to **Setting
 >
 > The server version won't be updated to the next version after a release wave is deployed. 
 
-## Features available in the early access updates  
+## Features available in the early access updates 
+
 Each release wave includes features and functionality that are available for different types of users. They're categorized as the following three types of features:
 
 - **Users, automatically**: These features include changes to the user experience for users and are available automatically.
@@ -160,7 +164,8 @@ Each release wave includes features and functionality that are available for dif
 
 By opting in for early access updates, you get features that are mandatory changes that are automatically available for users. For more details, check the **Enabled for** column in [Dynamics 365](/dynamics365-release-plan/2021wave1/) and Microsoft [Power Platform](/power-platform-release-plan/2021wave1/) release plans.
 
-## Prepare for a release wave  
+## Prepare for a release wave 
+
 The following checklist provides the general guidelines to help you prepare for a release wave. 
 
 1. Review the [release plans](/dynamics365/release-plans/) as soon as the early access updates are available to learn about upcoming features.
@@ -170,7 +175,7 @@ The following checklist provides the general guidelines to help you prepare for 
    > [!NOTE]
    > If you don't have a sandbox copy of your production environment, you can [create a copy](copy-environment.md) in the Power Platform admin center. 
 
-3. Opt in to the early access updates from the Power Platform admin center to use the new release wave in the sandbox environment.    
+3. Opt in to the early access updates from the Power Platform admin center to use the new release wave in the sandbox environment.
 
 4. Validate that key scenarios work as expected in the sandbox environment after the update is completed. 
    - Update the customizations in your applications, if any, to respond to the new capabilities as needed. 
@@ -182,36 +187,45 @@ The following checklist provides the general guidelines to help you prepare for 
 ## Early access updates FAQ 
 
 ### Will an environment that previously opted in for the early access updates automatically get the early access update of the new releases?
-An environment opted in for the previous early access will not be automatically opted in for the next early access release.  Each early access release will need to be opted in explicitly. When a release becomes generally available, all environments will be automatically updated to the latest release throughout the release wave. 
+
+An environment opted in for the previous early access isn't automatically opted in for the next early access release. Each early access release needs to be opted in explicitly. When a release becomes generally available, all environments are automatically updated to the latest release throughout the release wave. 
 
 ### After updating to a new release wave, can I export solutions? 
+
 Yes, you can export solutions to other environments that have also been updated to the same release wave. 
 
 ### Will the version number be updated with each release wave? 
-No, the version number is not necessarily going to change with a release wave.
+
+No, the version number isn't necessarily going to change with a release wave.
 
 ### Will Microsoft provide a free sandbox environment at no charge for testing updates? 
+
 No. You're responsible for creating a sandbox environment from a copy of the production environment for testing and validation, at your own cost.
 
 ### When will the updates be available for testing in the sandbox environment? 
+
 See [Early access availability](#early-access-availability).
 
 ### How do I report issues with updates? 
+
 Create a [support ticket](https://dynamics.microsoft.com/support/). 
 
 ### Can I skip or postpone an update? 
+
 No. To ensure you get the best quality of the new features and capabilities, all customers are required to update to the latest release as scheduled. 
 
 ### What happens to the environments after a release wave becomes generally available? 
+
 If you've turned on the early access updates in your environments, you continue to get updates throughout the release wave. 
 
-If you didn't opt in for the early access updates in your environments, after a release wave is generally available, all environments will be automatically turned on to receive mandatory updates of the release wave.  For regional deployment, see [General availability deployment](./general-availability-deployment.md)
+If you didn't opt in for the early access updates in your environments, after a release wave is generally available, all environments will be automatically turned on to receive mandatory updates of the release wave. For regional deployment, see [General availability deployment](./general-availability-deployment.md)
  
-Throughout a release wave, your environments will be updated during one of the [maintenance windows](policies-communications.md#maintenance-timeline) over a weekend based on your environments' region. The specific dates when the updates will occur will be published to the [Message Center](/office365/admin/manage/message-center?view=o365-worldwide&preserve-view=true). Each notification will include the dates, the maintenance window, and the Release Plan reference for the list of optimizations, fixes, and enhancements. Each environment should see the new features and build numbers by Monday morning, local time.
+Throughout a release wave, your environments are updated during one of the [maintenance windows](policies-communications.md#maintenance-timeline) over a weekend based on your environments' region. The specific dates when the updates occur are published to the [Message Center](/office365/admin/manage/message-center?view=o365-worldwide&preserve-view=true). Each notification includes the dates, the maintenance window, and the Release Plan reference for the list of optimizations, fixes, and enhancements. Each environment should see the new features and build numbers by Monday morning, local time.
 
 See [Policies and communications](policies-communications.md#scheduled-system-updates-and-maintenance). 
 
 ### See also
+
 [Dynamics 365 release schedule and early access ](/dynamics365/get-started/release-schedule)<br />
 [Dynamics 365 and Microsoft Power Platform Release Plans ](/dynamics365/release-plans/)<br />
 [Policies and communications](./policies-communications.md)
