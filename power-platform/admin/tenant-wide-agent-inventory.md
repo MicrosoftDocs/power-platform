@@ -4,7 +4,7 @@ description: Learn how to get visibility into all Microsoft Copilot Studio agent
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 06/11/2025
+ms.date: 06/16/2025
 ms.custom: NewPPAC
 author: mikferland-msft
 ms.author: miferlan
@@ -26,7 +26,7 @@ The inventory allows administrators to:
 ## Prerequisites 
 You must [turn on tenant-level analytics](tenant-level-analytics.md) to access the inventory.
 
-## View your tenant inventory
+## View your tenant-wide, agent inventory
 To view your inventory of custom agents:
 
 1.	Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a tenant administrator.
