@@ -46,9 +46,11 @@ You can filter by:
 You can apply filters and sorts on any column, offering numerous possibilities.
 
 ## Search the inventory
-You can search, filter, and sort the agent inventory. You can search across the records that have been displayed in the user interface (UI). For example, if you apply a filter and get 400 records returned, the search operation searches across those 400 records. If you apply a filter that returns 700 records&mdash;but only 500 records are displayed in the UI&mdash;the search operation searches across those 500 recordd. You can add more filters to narrow down your results, if needed.
+You can search, filter, and sort the agent inventory. Keep in mind that you search across the records that have been displayed in the user interface (UI). For example, consider the following scenarios:
+- If you apply a filter and get 400 records returned, the search operation searches across those 400 records.
+- If you apply a filter that returns more than 500 records, you only see 500 records displayed in the UI at this time due to a [limitation](#known-limitations). The search operation searches across just those 500 records.
 
-When you narrow the list to fewer than 500 agents, you can search for keywords across all entries on the page, like the name of the agent. The search box only searches across all agents that have been displayed on the page.
+You can add more filters to narrow down your results, if needed.
 
 ## Display more columns
 The **Copilot Studio** page provides the option to display more columns to help you better manage your custom agents. To customize displayed columns:
@@ -58,11 +60,13 @@ The **Copilot Studio** page provides the option to display more columns to help 
 1. Select **Save**. 
 
 ## View agent or environment details
+To view details about an agent:
 - Select an item, then select the **Details** option, under the page name.
 - Select the agent’s display name to be redirected to its details page in the Copilot Studio portal.
     > [!Note]
     > You must have edit permissions on the selected agent to access its details page. If you do not have sufficient permissions, you will see a "This link is broken" error.
-- Select the environment name to view the environment details.
+
+To view details about an environment, select the environment name to view the environment details.
 
 ## Reset all searches, filters, and sorts
 To clear all filters and sorts, select any column and select **Clear all filters**.
@@ -94,10 +98,10 @@ The agent inventory refreshes once every 24 hours. Keep in mind:
 - Newly created agents may take up to 24 hours to appear.
 - Deleted agents may remain visible for up to 48 hours after deletion.
 
-    Check the inventory refresh timestamp at the top-right corner of the page.
-    - If your agent was created after the last refresh, wait until the next refresh cycle completes.
-    - If your agent was created before the last refresh and is still not visible, proceed to [step 3](#step-3-verify-that-the-agent-exists-in-the-copilot-studio-portal).
-    - If you're uncertain of the creation time, wait for the next refresh cycle before proceeding.
+Check the inventory refresh timestamp at the top-right corner of the page.
+- If your agent was created after the last refresh, wait until the next refresh cycle completes.
+- If your agent was created before the last refresh and is still not visible, proceed to [step 3](#step-3-verify-that-the-agent-exists-in-the-copilot-studio-portal).
+- If you're uncertain of the creation time, wait for the next refresh cycle before proceeding.
 
 #### Step 3: Verify that the agent exists in the Copilot Studio portal.
 Confirm the agent’s existence and your access permissions by verifying directly in the Copilot Studio portal:
