@@ -7,16 +7,15 @@ ms.author: samathur
 ms.reviewer: sericks
 ms.topic: how-to
 ms.date: 06/04/2025
-ms.contributors:
-  - lsuresh
-contributors:
-  - lavanyapg
 search.audienceType: 
   - admin
+contributors:
+  - lavanyapg
 ms.contributors:
 - lekha27
 - swatim
 - matleon
+- lsuresh
 ---
 # Opt in to early access updates 
 
@@ -190,7 +189,7 @@ The following checklist provides the general guidelines to help you prepare for 
 
 An environment opted in for the previous early access isn't automatically opted in for the next early access release. Each early access release needs to be opted in explicitly. When a release becomes generally available, all environments are automatically updated to the latest release throughout the release wave. 
 
-### After updating to a new release wave, can I export solutions? 
+### After I update to a new release wave, can I export solutions? 
 
 Yes, you can export solutions to other environments that have also been updated to the same release wave. 
 
@@ -216,7 +215,7 @@ No. To ensure you get the best quality of the new features and capabilities, all
 
 ### What happens to the environments after a release wave becomes generally available? 
 
-If you've turned on the early access updates in your environments, you continue to get updates throughout the release wave. 
+If you turned on the early access updates in your environments, you continue to get updates throughout the release wave. 
 
 If you didn't opt in for the early access updates in your environments, after a release wave is generally available, all environments will be automatically turned on to receive mandatory updates of the release wave. For regional deployment, see [General availability deployment](./general-availability-deployment.md)
  
