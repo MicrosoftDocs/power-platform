@@ -21,8 +21,9 @@ Microsoft regularly communicates work done to maintain and update Microsoft Powe
 
 For each of these scenarios, communication is provided through the Microsoft 365 admin center in the [Message Center](/microsoft-365/admin/manage/message-center), and the [Service health dashboard](/microsoft-365/enterprise/view-service-health). The Microsoft 365 admin center also has the ability to send email for a weekly digest of all messages, emails for major updates only, and emails for data privacy messages. You can opt in to this communication stream by following the instructions in [Preferences](/microsoft-365/admin/manage/message-center#preferences).
 
-> [!NOTE]
-> Microsoft may also send direct email to users assigned to the Power Platform administrator or Dynamics 365 administrator role in an impacted tenant. If you’re not sure who your admin is, learn more in [Find your administrator or support person](/powerapps/user/find-admin). To assign a service admin role to a user, follow the instructions in [Assign a service admin role to a user](use-service-admin-role-manage-tenant.md#assign-a-service-admin-role-to-a-user).
+You can view service health information for Dynamics 365 and Power Platform products in the Power Platform admin center. For more information, please see [How do I check my online service health?](https://learn.microsoft.com/en-us/power-platform/admin/check-online-service-health).
+
+Microsoft may also send direct email to users assigned to the Power Platform administrator or Dynamics 365 administrator role in an impacted tenant. If you’re not sure who your admin is, learn more in [Find your administrator or support person](/powerapps/user/find-admin). To assign a service admin role to a user, follow the instructions in [Assign a service admin role to a user](use-service-admin-role-manage-tenant.md#assign-a-service-admin-role-to-a-user).
   
 ## Scheduled system updates and maintenance
 
@@ -124,11 +125,12 @@ A service incident is a term used to refer to an event (or series of events) tha
 
 **How do I find out about service incidents?**  
 
-Check the [Service health dashboard](/office365/enterprise/view-service-health) to view the status of the service, details about existing service incidents, and up to 30 days’ worth of history. Service Health (within the Microsoft 365 admin center) knows which tenants you manage, so it shows a much more accurate view of any known issues impacting your services than non-authenticated sources of information. If you are experiencing an issue that is not displayed in the Service health dashboard, contact Microsoft support by creating a ticket in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+Check the [Service health dashboard](/office365/enterprise/view-service-health) to view the status of the service, details about existing service incidents, and up to 30 days’ worth of history. The Power Platform admin center offers a view of service health information in the Support page. Service health knows which tenants you manage, so it shows a much more accurate view of any known issues impacting your services than non-authenticated sources of information. If you are experiencing an issue that is not displayed in the Service health dashboard, contact Microsoft support by creating a ticket in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 
 If there is a broad customer impact during a service incident, we may also provide status updates on one of several service-specific support pages, including the [Power Apps support page](https://powerapps.microsoft.com/support/), [Power Automate support page](https://flow.microsoft.com/support/), or the [Power BI support page](https://powerbi.microsoft.com/support/). 
 
-If the Microsoft 365 admin portal is unavailable, we will provide status updates through our [backup status site](https://status.office.com/). 
+If the Power Platform or Microsoft 365 admin portal are unavailable or experiencing issues, we will provide status updates through the unauthenticated [Service Health Status
+](https://status.cloud.microsoft/) page. 
 
 **What information is provided about service incidents?**
 
@@ -148,6 +150,7 @@ This report summarizes the following details:
 
 Because of the critical nature of service notifications and communications, there are additional methods of connecting to Service Communications. 
 
+- Sign up for email notifications for new incidents that affect your tenant and status changes for an active incident
 - Download and install the [Microsoft 365 Admin mobile app](https://products.office.com/business/manage-office-365-admin-app) on your mobile device to view service updates and incident notifications 
 - Connect directly to our Service Communications using an externally accessible [Service Communication API](/office/office-365-management-api/office-365-service-communications-api-reference)
 - [Track your message center tasks](/office365/planner/track-message-center-tasks-planner) in Planner 
