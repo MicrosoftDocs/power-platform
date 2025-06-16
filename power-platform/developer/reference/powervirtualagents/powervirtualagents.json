@@ -12,6 +12,9 @@
   "paths": {
     "/powervirtualagents/environments/{EnvironmentId}/bots/{BotId}/api/botQuarantine": {
       "get": {
+        "tags": [
+          "Bots"
+        ],
         "summary": "Get Bot Quarantine Status.",
         "description": "Retrieve the quarantine status of a bot.",
         "operationId": "getBotQuarantineStatus",
@@ -54,6 +57,9 @@
     },
     "/powervirtualagents/environments/{EnvironmentId}/bots/{BotId}/api/botQuarantine/SetAsQuarantined": {
       "post": {
+        "tags": [
+          "Bots"
+        ],
         "summary": "Set Bot as Quarantined.",
         "description": "Set the quarantine status of a bot to true.",
         "operationId": "setBotAsQuarantined",
@@ -96,6 +102,9 @@
     },
     "/powervirtualagents/environments/{EnvironmentId}/bots/{BotId}/api/botQuarantine/SetAsUnquarantined": {
       "post": {
+        "tags": [
+          "Bots"
+        ],
         "summary": "Set Bot as Unquarantined.",
         "description": "Set the quarantine status of a bot to false.",
         "operationId": "setBotAsUnquarantined",
