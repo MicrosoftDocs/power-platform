@@ -24,6 +24,10 @@ Customer trust and transparency are important to us. You can now view existing p
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. Select **Support** in the navigation pane.
 1. Select the **Known issues** tab.
+
+     :::image type="content" source="media/support-known-issues.png" alt-text="Screenshot that shows the Known issues tab in Power Platform admin center.":::
+
+
 1. Narrow your search for a known issue by using the available filters and search.
 
     - **Product category**: Choose one or multiple products. By default, all products with a known issue are selected.

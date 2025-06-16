@@ -21,8 +21,6 @@ ms.contributors:
 
 # Use live chat with persistence for support requests
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 This feature improves the support experience by allowing customers to continue their conversation with Microsoft support engineers directly from the portal.
 
 ## What is live chat with persistence?
