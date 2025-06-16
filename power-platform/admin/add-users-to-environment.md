@@ -18,15 +18,15 @@ search.audienceType:
 
 [!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
-Environments can have zero or one Microsoft Dataverse database. The process for adding users to environments that have no Dataverse database differs from the process for environments that have one Dataverse database. For an overview of environments, see [Environments overview](environments-overview.md). 
+Environments can have zero or one Microsoft Dataverse database. The process for adding users to environments that have no Dataverse database differs from the process for environments that have one Dataverse database. For an overview of environments, go to [Environments overview](environments-overview.md). 
 
 ## Add users to an environment that has no Dataverse database 
 
-You don't have to add users to environments that have no Dataverse database, because all users in the organization are present in these environments by default. However, for a user to get access to an environment's resources, a security role needs to be assigned to them. For information about assigning a security role to users in an environment, see [Configure user security to resources in an environment](database-security.md). 
+You don't have to add users to environments that have no Dataverse database, because all users in the organization are present in these environments by default. However, for a user to get access to an environment's resources, a security role needs to be assigned to them. For information about assigning a security role to users in an environment, go to [Configure user security to resources in an environment](database-security.md). 
 
 ## Add users to an environment that has a Dataverse database 
 
-When you create an environment with a Dataverse database or add a Dataverse database to an existing environment, the system automatically adds all users in the organization—unless you select a security group as an access filter. Review the following details on automatic user addition to environments. 
+When you create an environment with a Dataverse database or add a Dataverse database to an existing environment, the system automatically adds all users in the organization&mdash;unless you select a security group as an access filter. Review the following details on automatic user addition to environments. 
 
 - To successfully add a user to an environment with a Dataverse database, the user must meet certain criteria. This same criteria apply to [enabling a user who is already present in an environment](create-users.md#enable-or-disable-user-accounts).  
 
