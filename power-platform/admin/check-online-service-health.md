@@ -20,7 +20,7 @@ ms.contributors:
 If you're experiencing problems with a cloud service, you can check the service health to determine whether this is a known issue with a resolution in progress before you call support or spend time troubleshooting. 
 ## Service health in the Power Platform admin center
 
-You can view service health notifications by sigining into the [Power Platform admin center](https://admin.powerplatform.microsoft.com/home) by using one of the Power Platform admin roles that include service health monitoring. 
+You can view service health notifications by sigining into the [Power Platform admin center](https://admin.powerplatform.microsoft.com/home) with an admin account.
 
 ### View a snapshot of service health
 
@@ -36,7 +36,7 @@ The dashboard in the Microsoft 365 admin center provides a comprehensive view of
 
 ### View a snapshot of service health
 
-To view the issues and health status of all services that are available with your current subscriptions, sign in to the [Microsoft 365 admin center](https://admin.microsoft.com/) by using one of the Microsoft 365 admin roles that include service health monitoring. Learn more in [About admin roles in the Microsoft 365 admin center](/microsoft-365/admin/add-users/about-admin-roles).
+To view the issues and health status of all services that are available with your current subscriptions, sign in to the [Microsoft 365 admin center](https://admin.microsoft.com/) with an admin account. Learn more in [About admin roles in the Microsoft 365 admin center](/microsoft-365/admin/add-users/about-admin-roles).
 
 Navigate to **Health** \> **Service health** on the menu.
 
