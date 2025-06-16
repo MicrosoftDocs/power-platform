@@ -8,12 +8,15 @@ ms.custom:
 ms.collection: 
 author: sericks
 ms.author: nivkumar
+contributors:
+- lavanyapg
 ms.contributors:
  - v-terbrosche
  - jonamsden
  - kkidder
  - kalaco
  - vallid
+ - lsuresh
 ---
 
 # Use live chat with persistence for support requests
@@ -44,17 +47,18 @@ Follow this step-by-step guide to help you get started.
 1. Provide all relevant details to ensure our support team can assist you effectively.
 
    :::image type="content" source="media/live-chat-support/support-requests.png" alt-text="Screenshot that shows the Get support button under the Support requests section.":::
+
 1. Once your support request is ready to be submitted, you see an option to initiate a live chat with one of our support engineers. Toggle this option on to start your conversation immediately after you submit a support ticket.
 
    :::image type="content" source="media/live-chat-support/start-live-chat.png" alt-text="Screenshot that shows the Live Chat toggle to start a live chat immediately after submitting a ticket.":::
 
-### Return to your chat
+### Return to your chat <<< - this image is outdated, need a new one>>>
 
 If you need to add more information or check the status of your issue, open your issue in the Power Platform admin center.
 
 Select the relevant issue and choose **Open Chat** to open the chat window and continue your conversation.
 
-:::image type="content" source="media/live-chat-support/open-chat.png" alt-text="Screenshot that shows where you can select Open Chat.":::
+   :::image type="content" source="media/live-chat-support/open-chat.png" alt-text="Screenshot that shows where you can select Open Chat.":::
 
 ### Keep your information updated
 

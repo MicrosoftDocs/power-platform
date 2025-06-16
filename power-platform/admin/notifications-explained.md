@@ -13,26 +13,30 @@ search.audienceType:
 ---
 # Notifications for Business & Industry Copilot services
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 Microsoft regularly sends communications about service changes, maintenance, retirement, and customer action that is required. These communications primarily take the form of posts to the Microsoft 365 Service health dashboard and the Message center. Occasionally, we also use direct email communications to provide status, updates, or information about the service.
 
 ## Message center
+
 Admins can use the [Microsoft 365 Message center](/office365/admin/manage/message-center?view=o365-worldwide&preserve-view=true) to learn about official service announcements and feature changes. Email notifications can be sent for Message center posts.
 
 ### Prerequisites
+
 Before you begin, be sure that you have sufficient permissions. Most users who have been assigned any admin role in Microsoft 365 can view Message center posts. Here's [a list](/microsoft-365/admin/manage/message-center?view=o365-worldwide&preserve-view=true#admin-roles-that-dont-have-access-to-the-message-center) of admin roles that **don't** have access to the Message center. The **Message center reader role** can be assigned to users who should be able to read and share Message center posts without having any other admin privileges.
 
 ### Set up a weekly digest mail of Message center changes and notifications
-1. Log in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-2. In the navigation pane, select **Admin centers**.
-3. Select **Microsoft 365**.
-4. Expand **Health** and select **Message Center**.
-5. On the page that loads, select **Preferences**.
-6. A flyout appears on the right, select the **Email** tab.
-7. Make sure the email notification settings are as expected. You can select **Other e-mail addresses** if you want the digest to be sent to different users or a shared mailbox.
-8. Select the **Send me a weekly digest about services I select** box, and select the services you wish to receive information about.
-9. Press **Save**.
+
+1. Sign-in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Admin centers**.
+1. Select **Microsoft 365**.
+1. Expand **Health** and select **Message Center**.
+1. On the Message center page that loads, select **Preferences**.
+1. On the Preferences pane, select the **Email** tab.
+
+   :::image type="content" source="media/live-chat-support/email-preferences-admin-center.png" alt-text="Screenshot that shows how to set up weekly digest mail in Message center.":::
+
+1. Make sure the email notification settings are as expected. You can select **Other e-mail addresses** if you want the digest to be sent to different users or a shared mailbox.
+1. Select the **Send me a weekly digest about services I select** box, and select the services you wish to receive information about.
+1. Press **Save**.
 
 ## Service health dashboard
 

@@ -160,7 +160,7 @@ Contacting Support over the phone won't speed up the processing of your request,
 ### How do I submit a request for technical support or advisory services?
 
 - Access to technical support is provided through one of the [support plans included with Dynamics 365 apps or through one of the premium support plans](https://dynamics.microsoft.com/support/plans/). Submit a technical support request from the correct support portal for the product or service for which you need assistance (see the table earlier in this article). To begin the support-request submission process:
-  - From the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), select **Support** from the left navigation pane and then **New support request** from the top navigation.
+  - From the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), select **Support** from the left navigation pane, select **Support requests** and then select **Get support**.
   - From the [Lifecycle Services portal](https://lcs.dynamics.com/), choose a project, select **Support** from the option list, and then select **Submit an incident**.
   - From [Support for Business](https://support.microsoft.com/supportforbusiness/productselection), select the Dynamics 365 product family followed by the specific Dynamics 365 product or service for which you need help.
   - From the [Premier Portal](https://support.microsoft.com/premier), select **New support request** from the Support requests page navigation, enter your access ID and password or select your associated access ID, and proceed with your submission.

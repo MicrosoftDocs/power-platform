@@ -22,13 +22,12 @@ search.audienceType:
 
 # Support environments and consent to access customer data
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 Microsoft may need to access customer data in your tenant or environment to investigate and troubleshoot issues for which you've requested support.  We may also need to replicate the environment in your tenant, with or without data, for testing purposes. We can reproduce an issue or evaluate a solution in a replicated [support environment](#what-are-support-environments) without affecting your production environment. 
 
 Microsoft respects your privacy and puts you in control of the level of consent you grant as part of receiving support. We'll never access your customer data or replicate your environment without your consent. You can give your consent at the time you request support directly onto the support ticket which will help eliminate delays in the issue resolution time and/or help expedite the issue resolution.  Your consent is temporary, and you can revoke it at any time. This consent does not grant [lockbox](about-lockbox.md) request approval and/or revoke it.  
 
-## Consent information
+## Consent information <this image needs to be updated>
 
 You may grant a varying degree of consent or deny consent altogether when you submit a support request.
 
@@ -60,7 +59,7 @@ The support environment expires seven days after you revoke consent or when the 
 
 Consent lasts as long as the support request is open or until you revoke it.
 
-### How do I grant or revoke consent after I create a support request?
+### How do I grant or revoke consent after I create a support request? <this image needs to be updated>
 
 A change in consent takes effect immediately.
 

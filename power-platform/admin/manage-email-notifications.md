@@ -13,8 +13,6 @@ search.audienceType:
 ---
 # Manage email notifications to admins
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 Occasionally, we send direct email service notifications. 
 
 As of January 17, 2025, only users assigned to the Dynamics 365 administrator or Power Platform administrator role in the Microsoft 365 admin center or Microsoft Entra admin center receive these email service notifications. 
