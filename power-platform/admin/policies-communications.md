@@ -28,21 +28,22 @@ There are also two major service update events in April (Wave 1) and October (Wa
 
 ### Minor service updates
 
-Minor service updates contain customization changes to support new features, product improvements, and bug fixes. They are deployed on a weekly basis, region-by-region, according to a “Safe Deployment Process” we have defined. Each week, every region gets: 
+Minor service updates contain customization changes to support new features, product improvements, and bug fixes. They're deployed on a weekly basis, region-by-region, according to a **Safe Deployment Process** we have defined. Each week, every region gets: 
 
 - An updated deployment, starting with our “First Release” region 
 
-- A Message Center notification is published with the date that the deployment will begin to be applied to the infrastructure 
+- A Message Center notification is published with the date that the deployment begins to be applied to the infrastructure 
 
 - A link to the Weekly Release Notes that contain the list of fixes that are included 
 
-**Please note**: The date the deployment is applied to the infrastructure is not the date the update will be applied to the environment. The environment and any apps are updated by an asynchronous process that runs during subsequent Regional Maintenance Windows. Although there is no expected degradation to service performance or availability, during this maintenance window users may see short, intermittent impact such as transient SQL errors or a redirect to the login screen.  
+> [!NOTE]
+> The date the deployment is applied to the infrastructure isn't the date the update will be applied to the environment. The environment and any apps are updated by an asynchronous process that runs during subsequent Regional Maintenance Windows. Although there's no expected degradation to service performance or availability, during this maintenance window users may see short, intermittent impact such as transient SQL errors or a redirect to the sign in screen.  
 
 You can verify that the update was completed successfully by checking the version number on the About page of the environment, or looking at the environment details on the [Power Platform admin center](https://admin.powerplatform.microsoft.com/). A list of service updates can be found on our [Released Versions](/business-applications-release-notes/dynamics/released-versions/dynamics-365ce) page. 
 
 ### Major release events
 
-We deliver two major release events per year with one in April (Wave 1) and the second in October (Wave 2), offering new capabilities and functionality. These updates are backward compatible, so your apps and customizations will continue to work post update. New features with major, disruptive changes to the user experience are off by default which means administrators will be able to first test then enable these features for their organization. Additionally, administrators will have the opportunity to enable the new features using an [“Opt-in” feature](opt-in-early-access-updates.md) to get early access to the changes. 
+We deliver two major release events per year with one in April (Wave 1) and the second in October (Wave 2), offering new capabilities and functionality. These updates are backward compatible, so your apps and customizations continue to work post update. New features with major, disruptive changes to the user experience are off by default, which means administrators are able to first test then enable these features for their organization. Additionally, administrators have the opportunity to enable the new features using an [“Opt-in” feature](opt-in-early-access-updates.md) to get early access to the changes. 
 
 Notifications about when the major release events are scheduled and links to the [Dynamics 365 and Microsoft Power Platform](/dynamics365/release-plans/) release plans are published in the Microsoft 365 admin portal’s Message Center. 
 
@@ -58,7 +59,7 @@ These teams also identify and track any identified issues and take swift action 
   
 **How do I find out about security updates?**  
   
-Because the Service teams strive to apply risk mitigations in a way that doesn’t require service downtime, administrators usually don’t see Message Center notifications for security updates. If a security update does require service impact, it is considered planned maintenance, and will be posted with the estimated impact duration, and the window when the work will occur.
+Because the Service teams strive to apply risk mitigations in a way that doesn’t require service downtime, administrators usually don’t see Message Center notifications for security updates. If a security update does require service impact, it's considered planned maintenance, and is posted with the estimated impact duration, and the window when the work will occur.
   
 For more information about security, see [Trust Center](https://www.microsoft.com/TrustCenter/CloudServices/Dynamics365).
 
@@ -75,7 +76,7 @@ These changes can include:
  
 ### Unplanned maintenance 
 
-The Power Platform services and the Dynamics 365 apps (Sales, Customer Service, Supply Chain Management, etc.) may encounter issues that require unplanned changes to protect availability. Microsoft strives to provide as much notification as possible during these events, but because they can’t be predicted, they are not considered planned maintenance. 
+The Power Platform services and the Dynamics 365 apps (Sales, Customer Service, Supply Chain Management, etc.) may encounter issues that require unplanned changes to protect availability. Microsoft strives to provide as much notification as possible during these events, but because they can’t be predicted, they aren't considered planned maintenance. 
 
 When this happens, your organization receives an “Unplanned Maintenance” notification in the Message Center. We also attempt to send an email to all System Administrators in the environment that is affected by the unplanned maintenance. You can see the status of current unplanned maintenance activities in the Message Center.  
 
@@ -120,15 +121,15 @@ A service incident is a term used to refer to an event (or series of events) tha
 
 **How do I find out about service incidents?**  
 
-Check the [Service health dashboard](/office365/enterprise/view-service-health) to view the status of the service, details about existing service incidents, and up to 30 days’ worth of history. Service Health (within the Microsoft 365 admin center) knows which tenants you manage, so it shows a much more accurate view of any known issues impacting your services than non-authenticated sources of information. If you are experiencing an issue that is not displayed in the Service health dashboard, contact Microsoft support by creating a ticket in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+Check the [Service health dashboard](/office365/enterprise/view-service-health) to view the status of the service, details about existing service incidents, and up to 30 days’ worth of history. Service Health (within the Microsoft 365 admin center) knows which tenants you manage, so it shows a much more accurate view of any known issues impacting your services than non-authenticated sources of information. If you're experiencing an issue that isn't displayed in the Service health dashboard, contact Microsoft support by creating a ticket in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 
-If there is a broad customer impact during a service incident, we may also provide status updates on one of several service-specific support pages, including the [Power Apps support page](https://powerapps.microsoft.com/support/), [Power Automate support page](https://flow.microsoft.com/support/), or the [Power BI support page](https://powerbi.microsoft.com/support/). 
+If there's a broad customer impact during a service incident, we may also provide status updates on one of several service-specific support pages, including the [Power Apps support page](https://powerapps.microsoft.com/support/), [Power Automate support page](https://flow.microsoft.com/support/), or the [Power BI support page](https://powerbi.microsoft.com/support/). 
 
-If the Microsoft 365 admin portal is unavailable, we will provide status updates through our [backup status site](https://status.office.com/). 
+If the Microsoft 365 admin portal is unavailable, we provide status updates through our [backup status site](https://status.office.com/). 
 
 **What information is provided about service incidents?**
 
-During the event, we include information that is related to the user impact, duration, any feasible workaround, and preliminary root cause. Our goal is to provide status updates on an hourly cadence, although this guideline may be reduced for substantive new information or extended based on waiting on recovery activities. At the restoration of the service to optimal operation, we will publish a final status update and determine if additional post incident report will be provided based on the breadth and type of impact to customers. 
+During the event, we include information that is related to the user impact, duration, any feasible workaround, and preliminary root cause. Our goal is to provide status updates on an hourly cadence, although this guideline may be reduced for substantive new information or extended based on waiting on recovery activities. At the restoration of the service to optimal operation, we publish a final status update and determine if additional post incident report is provided based on the breadth and type of impact to customers. 
 
 A post incident report (PIR) may be published after five business days on the Microsoft 365 Service health dashboard for certain events. 
 
@@ -148,7 +149,8 @@ Because of the critical nature of service notifications and communications, ther
 - Connect directly to our Service Communications using an externally accessible [Service Communication API](/office/office-365-management-api/office-365-service-communications-api-reference)
 - [Track your message center tasks](/office365/planner/track-message-center-tasks-planner) in Planner 
   
-### Notice about online policies
+### Notice about online policies <<<< link outdated  >>>>
+
 Review [Notice About Online Policies and Similar Documents](https://www.microsoft.com/legal/intellectualproperty/mtl/onlinedisclaimer.aspx).
 
 
