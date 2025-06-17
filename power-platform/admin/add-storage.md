@@ -64,4 +64,21 @@ After you determine how much storage you're using, you can add or remove storage
 
    :::image type="content" source="media/storage-file-capacity-purchase.png" alt-text="Buy Dataverse File capacity storage add-on." lightbox="media/storage-file-capacity-purchase.png"::::::
 
-After completing the purchase process, the extra storage capacity will appear in the Power Platform admin center **Capacity** page (**Resources** > **Capacity** > **Summary**).
+After completing the purchase process, the extra storage capacity will appear in the Power Platform admin center **Capacity** page.
+
+Follow these steps to access the Capacity page:
+
+#### [New admin center](#tab/new)
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.com).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**, and then select an environment.
+1. In the navigation pane, select **Licensing**.
+1. Under **Licensing**, select **Capacity add-ons**.
+
+#### [Classic admin center](#tab/classic)
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.com).
+1. Select **Resources** > **Capacity** > **Summary**.
+
+---
