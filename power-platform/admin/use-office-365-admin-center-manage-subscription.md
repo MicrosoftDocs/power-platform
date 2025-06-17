@@ -43,7 +43,7 @@ Each user signs in to customer engagement apps with a Microsoft 365 user ID&mdas
 You use the Microsoft 365 admin center to add, edit, and delete users and to reset passwords.
   
 > [!NOTE]
-> Customer engagement apps use [Microsoft Entra ID](/azure/active-directory/active-directory-whatis) as its identity provider. You access customer engagement apps through a Microsoft Entra ID user ID that is created and managed in the Microsoft 365 admin center. For simplicity, we'll refer to the Microsoft Entra ID user ID as the Microsoft 365 user ID in this documentation.
+> Customer engagement apps use [Microsoft Entra ID](/azure/active-directory/active-directory-whatis) as its identity provider. You access customer engagement apps through a Microsoft Entra ID user ID that is created and managed in the Microsoft 365 admin center. For simplicity, we refer to the Microsoft Entra ID user ID as the Microsoft 365 user ID in this documentation.
   
 If your company uses on-premises Active Directory for user identity, you have options that can simplify user management such as providing a single sign-on experience for your users. Learn more in [Manage user account synchronization](manage-user-account-synchronization.md). 
   
@@ -54,7 +54,7 @@ If your company uses on-premises Active Directory for user identity, you have op
 If you have a Microsoft Entra ID Basic or Premium subscription, you can set it up so users can do their own password reset. You can access Microsoft Entra ID configuration from the Microsoft 365 admin center. Learn more in [Enable self-service password reset](/azure/active-directory/authentication/tutorial-enable-sspr#enable-self-service-password-reset).  
 
 > [!TIP]
->  Note the information on this page about users doing their own password reset. To allow your users to be able to reset their passwords themselves, you'll need to purchase a Microsoft Entra ID subscription and configure it for password self-service. Learn more in [Self-service password reset in Microsoft Entra ID: how to enable, configure, and test self-service password reset](/azure/active-directory/authentication/quickstart-sspr#enable-self-service-password-reset).  
+>  Note the information on this page about users doing their own password reset. To allow your users to be able to reset their passwords themselves, you need to purchase a Microsoft Entra ID subscription and configure it for password self-service. Learn more in [Self-service password reset in Microsoft Entra ID: how to enable, configure, and test self-service password reset](/azure/active-directory/authentication/quickstart-sspr#enable-self-service-password-reset).  
   
 On the left-side menu of the Microsoft 365 admin center, choose **Admin centers** > **Microsoft Entra**. Select your subscription in Azure and then choose **Configure**.  
   
