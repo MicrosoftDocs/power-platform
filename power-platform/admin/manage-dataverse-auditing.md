@@ -355,9 +355,7 @@ By default, the current label description of the **choice** data type is shown i
 If you want to show the original label in the audit logs, you can enable this auditsetting **{\"StoreLabelNameforPicklistAudits\":true}**. See how to [enable auditsettings](https://learn.microsoft.com/power-apps/developer/data-platform/auditing/configure?tabs=webapi#change-auditsettings).
 
 > [!NOTE]
-> 
-
-
+> When this **StoreLabelNameforPicklistAudits** is set to true, the new audit user experience on viewing the audit records can be found in the [audit summary view](new#use-the-audit-summary-view). The [audit history in model-driven app](#use-the-audit-history-in-a-model-driven-app) continues to show the by default behavior.
 
 ## Use the Audit History in a model-driven app
 
