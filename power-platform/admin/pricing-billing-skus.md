@@ -28,7 +28,7 @@ Power Apps, Power Automate, Microsoft Copilot Studio, and Power Pages provide li
 - Learn more about [Power Automate licensing](/power-platform/admin/power-automate-licensing/types)
 - Learn more about [Power Apps licensing](/power-platform/admin/signup-for-powerapps-admin)
 - Learn more about [Power BI licensing](https://powerbi.microsoft.com/en-us/pricing/)
-- Learn more about [Copilot Studio Licensing](https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/final/en-us/microsoft-brand/documents/Microsoft-Copilot-Studio-Licensing-Guide-June-2025.pdf)
+- Learn more about [Copilot Studio licensing](https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/final/en-us/microsoft-brand/documents/Microsoft-Copilot-Studio-Licensing-Guide-June-2025.pdf)
 
 > [!Note]
 > [AI Builder](https://go.microsoft.com/fwlink/?linkid=2103071) proposes AI features which can be used in Power Apps, Power Automate, and Microsoft Copilot Studio.
