@@ -1,13 +1,13 @@
 ---
-title: "Use the Microsoft 365 admin center to manage your subscription  | MicrosoftDocs"
+title: Use the Microsoft 365 admin center to manage your subscription
 description: Use the Microsoft 365 admin center to manage your subscription
-author: sericks007
-
+author: karacortez 
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 06/16/2025
+ms.date: 06/17/2025
 ms.subservice: admin
 ms.author: kacortez
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
@@ -15,7 +15,7 @@ search.audienceType:
 
 [!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
-[The Microsoft 365 admin center](https://learn.microsoft.com/en-us/microsoft-365/admin/admin-overview/admin-center-overview?view=o365-worldwide) is a portal site rich in features for the administrator. Microsoft 365, Power Platform and Dynamics 365 admins can take advantage of the features on this site to simplify and consolidate management of user accounts, billing, licensing, and more.  
+[The Microsoft 365 admin center](/microsoft-365/admin/admin-overview/admin-center-overview?view=o365-worldwide) is a portal site rich in features for the administrator. Microsoft 365, Power Platform and Dynamics 365 admins can take advantage of the features on this site to simplify and consolidate management of user accounts, billing, licensing, and more.  
 
 > [!NOTE]
 >  You must have the Global admin role to fully access the Microsoft 365 admin center.
@@ -23,19 +23,19 @@ search.audienceType:
 ## Check your service health  
 You can view the health of your Microsoft services, including Office on the web, Microsoft Teams, Exchange Online, and Microsoft Dynamics 365 on the Service health page in the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339). 
   
-More information: [How to check Microsoft 365 service health](https://learn.microsoft.com/en-us/microsoft-365/enterprise/view-service-health?view=o365-worldwide).  
+More information: [How to check Microsoft 365 service health](/microsoft-365/enterprise/view-service-health?view=o365-worldwide).  
 
 ## Review your messages  
  Check out the Message center to keep track of upcoming changes, including new and changed features, planned maintenance, or other important announcements.
   
  Click **Health** > **Message center**, and select messages to get more information.  
 
-More information: [Message center](https://learn.microsoft.com/en-us/microsoft-365/admin/manage/message-center?view=o365-worldwide#preferences).
+More information: [Message center](/microsoft-365/admin/manage/message-center?view=o365-worldwide#preferences).
 
 ## Request support  
 Having a problem with your service? You can create a support request to get the issue resolved.  
   
-More information: [Contact Support](https://learn.microsoft.com/en-us/microsoft-365/admin/get-help-support?view=o365-worldwide).
+More information: [Contact Support](/microsoft-365/admin/get-help-support?view=o365-worldwide).
 
 ## Manage users  
 Each user signs in to customer engagement apps with an Microsoft 365 user ID (more precisely, an Microsoft Entra ID user ID, see the following Note). Access to customer engagement apps is controlled through the Microsoft 365 user ID.
@@ -43,9 +43,9 @@ Each user signs in to customer engagement apps with an Microsoft 365 user ID (mo
 You use the Microsoft 365 admin center to add, edit, and delete users and to reset passwords.
   
 > [!NOTE]
-> Customer engagement apps use [Microsoft Entra ID](https://learn.microsoft.com/en-us/azure/active-directory/active-directory-whatis) as its identity provider. You access customer engagement apps through an Microsoft Entra ID user ID that is created and managed in the Microsoft 365 admin center. For simplicity, we'll refer to the Microsoft Entra ID user ID as the Microsoft 365 user ID in this documentation.
+> Customer engagement apps use [Microsoft Entra ID](/azure/active-directory/active-directory-whatis) as its identity provider. You access customer engagement apps through an Microsoft Entra ID user ID that is created and managed in the Microsoft 365 admin center. For simplicity, we'll refer to the Microsoft Entra ID user ID as the Microsoft 365 user ID in this documentation.
   
-If your company uses on-premises Active Directory for user identity, you have options that can simplify user management such as providing a single sign-on experience for your users. More information: [Manage user account synchronization](https://learn.microsoft.com/en-us/power-platform/admin/manage-user-account-synchronization)  
+If your company uses on-premises Active Directory for user identity, you have options that can simplify user management such as providing a single sign-on experience for your users. More information: [Manage user account synchronization](manage-user-account-synchronization.md)  
   
 ## Manage subscriptions  
  Use the Billing  page to adjust licenses, view your bill, add a partner of record, and lots more.  
@@ -64,7 +64,7 @@ Use the Manage domains page to add your domain to your subscription. When you ad
 ## Purchase products  
  On the left-side menu of the Microsoft 365 admin center, click **Billing** > **Purchase products** to add licenses or purchase new online services.  
   
-### See also  
+### Related content
  [About the Microsoft 365 admin center](https://support.office.com/article/About-the-Office-365-admin-center-758befc4-0888-4009-9f14-0d147402fd23)  
  [Set an individual user's password to never expire](https://support.office.com/article/Set-an-individual-user-s-password-to-never-expire-f493e3af-e1d8-4668-9211-230c245a0466)
 
