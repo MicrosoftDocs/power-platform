@@ -39,7 +39,7 @@ You can view service health information for Dynamics 365 and Power Platform prod
     The page lists the type of issues that you selected. To reset the filters, repeat steps 4-6.
 ---
 
-To sign up for email notificiations for an issue, or to download Post-Incident Reports, you will need to go to service health in the [M365 admin center](https://admin.microsoft.com/).
+To sign up for email notifications for an issue, or to download Post-Incident Reports, you need to go to service health in the [M365 admin center](https://admin.microsoft.com/).
 
 ###  Microsoft 365 admin center
 The dashboard in the Microsoft 365 admin center provides a comprehensive view of the service health of all services that are available with your current subscriptions. For more information, go to [How to check Microsoft 365 service health](/microsoft-365/enterprise/view-service-health?view=o365-worldwide).
