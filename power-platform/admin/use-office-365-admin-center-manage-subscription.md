@@ -23,14 +23,14 @@ search.audienceType:
 ## Check your service health  
 You can view the health of your Microsoft services, including Office on the web, Microsoft Teams, Exchange Online, and Microsoft Dynamics 365 on the Service health page in the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339). 
   
-More information: [How to check Microsoft 365 service health](/microsoft-365/enterprise/view-service-health).  
+Learn more in [How to check Microsoft 365 service health](/microsoft-365/enterprise/view-service-health).  
 
 ## Review your messages  
 Check out the Message center to keep track of upcoming changes, including new and changed features, planned maintenance, or other important announcements.
   
 Click **Health** > **Message center**, and select messages to get more information.  
 
-More information: [Message center](/microsoft-365/admin/manage/message-center#preferences).
+Learn more in [Message center](/microsoft-365/admin/manage/message-center#preferences).
 
 ## Request support  
 Having a problem with your service? You can create a support request to get the issue resolved.  
