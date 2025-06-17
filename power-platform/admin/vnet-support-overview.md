@@ -124,8 +124,6 @@ The following table lists the services that support Azure subnet delegation for 
 | Connectors | <ul><li>[SQL Server](/connectors/sql/)</li><li>[Azure SQL Data Warehouse](/connectors/sqldw/)</li><li>[Azure Queues](/connectors/azurequeues/)</li><li>[Custom connectors](/connectors/custom-connectors/)</li><li>[Azure Key Vault](/connectors/keyvault/)</li><li>[Azure File Storage](/connectors/azurefile/)</li><li>[Azure Blob Storage](/connectors/azureblob/)</li><li>[HTTP with Microsoft Entra ID (preauthorized)](/connectors/webcontents/)</li></ul> | Generally available |
 | Connectors | <ul><li>[Snowflake](/connectors/snowflakeip/)</li><li>[Databricks](/connectors/databricks/)</li><li>[AI search](/microsoft-copilot-studio/knowledge-azure-ai-search)</li></ul> | Preview |
 
-Updates
-
 ## Considerations to enable Virtual Network support for Power Platform Environment
 
 When you use Virtual Network support in a Power Platform environment, all supported services, like Dataverse plug-ins and connectors, execute requests at runtime in your delegated subnet and are subject to your network policies. The calls to publicly available resources would start to break.
