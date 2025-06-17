@@ -1,7 +1,7 @@
 ---
 title: View service health
 description: Learn how to check service health in the Power Platform admin center.
-ms.date: 06/16/25
+ms.date: 06/16/2025
 ms.reviewer: sericks
 ms.topic: how-to
 author: kacortez
@@ -34,12 +34,12 @@ You can view service health information for Dynamics 365 and Power Platform prod
 To sign up for email notificiations for an issue, or to download Post-Incident Reports, you will need to go to service health in the [M365 admin center](https://admin.microsoft.com/).
 
 ###  Microsoft 365 admin center
-The dashboard in the Microsoft 365 admin center provides a comprehensive view of the service health of all services that are available with your current subscriptions. For more information, go to [How to check Microsoft 365 service health](https://learn.microsoft.com/en-us/microsoft-365/enterprise/view-service-health?view=o365-worldwide).
+The dashboard in the Microsoft 365 admin center provides a comprehensive view of the service health of all services that are available with your current subscriptions. For more information, go to [How to check Microsoft 365 service health](/microsoft-365/enterprise/view-service-health?view=o365-worldwide).
 
 ![image](https://github.com/user-attachments/assets/3bba2e82-c74b-41c4-b30a-83259dfcf88b)
 
 
-### Related information
-[How do I check my online service health?](https://learn.microsoft.com/en-us/power-platform/admin/check-online-service-health)<br>
-[Use service admin roles to manage your tenant](https://learn.microsoft.com/en-us/power-platform/admin/use-service-admin-role-manage-tenant)
+### Related content
+[How do I check my online service health?](check-online-service-health.md)<br>
+[Use service admin roles to manage your tenant](use-service-admin-role-manage-tenant.md)
 
