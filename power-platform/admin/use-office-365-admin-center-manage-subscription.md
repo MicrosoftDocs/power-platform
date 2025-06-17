@@ -15,7 +15,7 @@ search.audienceType:
 
 [!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
-[The Microsoft 365 admin center](/microsoft-365/admin/admin-overview/admin-center-overview?view=o365-worldwide) is a portal site rich in features for the administrator. Microsoft 365, Power Platform and Dynamics 365 admins can take advantage of the features on this site to simplify and consolidate management of user accounts, billing, licensing, and more.  
+[The Microsoft 365 admin center](/microsoft-365/admin/admin-overview/admin-center-overview) is a portal site rich in features for the administrator. Microsoft 365, Power Platform and Dynamics 365 admins can take advantage of the features on this site to simplify and consolidate management of user accounts, billing, licensing, and more.  
 
 > [!NOTE]
 >  You must have the Global admin role to fully access the Microsoft 365 admin center.
@@ -23,19 +23,19 @@ search.audienceType:
 ## Check your service health  
 You can view the health of your Microsoft services, including Office on the web, Microsoft Teams, Exchange Online, and Microsoft Dynamics 365 on the Service health page in the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339). 
   
-More information: [How to check Microsoft 365 service health](/microsoft-365/enterprise/view-service-health?view=o365-worldwide).  
+More information: [How to check Microsoft 365 service health](/microsoft-365/enterprise/view-service-health).  
 
 ## Review your messages  
  Check out the Message center to keep track of upcoming changes, including new and changed features, planned maintenance, or other important announcements.
   
  Click **Health** > **Message center**, and select messages to get more information.  
 
-More information: [Message center](/microsoft-365/admin/manage/message-center?view=o365-worldwide#preferences).
+More information: [Message center](/microsoft-365/admin/manage/message-center#preferences).
 
 ## Request support  
 Having a problem with your service? You can create a support request to get the issue resolved.  
   
-More information: [Contact Support](/microsoft-365/admin/get-help-support?view=o365-worldwide).
+More information: [Contact Support](/microsoft-365/admin/get-help-support).
 
 ## Manage users  
 Each user signs in to customer engagement apps with an Microsoft 365 user ID (more precisely, an Microsoft Entra ID user ID, see the following Note). Access to customer engagement apps is controlled through the Microsoft 365 user ID.
