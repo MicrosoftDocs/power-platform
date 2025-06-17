@@ -15,8 +15,6 @@ search.audienceType:
 
 [!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
-## Introduction
-
 Microsoft regularly communicates work done to maintain and update Microsoft Power Platform (Power Apps, Power Automate, Microsoft Copilot Studio, and other services), and Microsoft Dynamics 365 apps (Sales, Customer Service, Supply Chain Management, and others) to ensure security, performance, availability, and to provide new features and functionality. Microsoft also communicates details of service incidents including the potential user experience, the start and end times of the incident, and any workaround that may be available.
 
 For each of these scenarios, communication is provided through the Microsoft 365 admin center in the [Message Center](/microsoft-365/admin/manage/message-center), and the [Service health dashboard](/microsoft-365/enterprise/view-service-health). The Microsoft 365 admin center also has the ability to send email for a weekly digest of all messages, emails for major updates only, and emails for data privacy messages. You can opt in to this communication stream by following the instructions in [Preferences](/microsoft-365/admin/manage/message-center#preferences).
@@ -36,14 +34,13 @@ There are also two major service update events in April (Wave 1) and October (Wa
 Minor service updates contain customization changes to support new features, product improvements, and bug fixes. They're deployed on a weekly basis, region-by-region, according to a “Safe Deployment Process” we have defined. Each week, every region gets: 
 
 - An updated deployment, starting with our “First Release” region 
-
 - A Message Center notification is published with the date that the deployment begins to be applied to the infrastructure 
+- A link to the weekly release notes that contain the list of fixes that are included 
 
-- A link to the Weekly Release Notes that contain the list of fixes that are included 
+> [!Note]
+> The date the deployment is applied to the infrastructure isn't the date the update is applied to the environment. The environment and any apps are updated by an asynchronous process that runs during subsequent regional maintenance windows. Although there's no expected degradation to service performance or availability, during this maintenance window users may see short, intermittent impact such as transient SQL errors or a redirect to the login screen.  
 
-**Please note**: The date the deployment is applied to the infrastructure isn't the date the update is applied to the environment. The environment and any apps are updated by an asynchronous process that runs during subsequent Regional Maintenance Windows. Although there's no expected degradation to service performance or availability, during this maintenance window users may see short, intermittent impact such as transient SQL errors or a redirect to the login screen.  
-
-You can verify that the update was completed successfully by checking the version number on the About page of the environment, or looking at the environment details on the [Power Platform admin center](https://admin.powerplatform.microsoft.com/). A list of service updates can be found on our [Released Versions](/business-applications-release-notes/dynamics/released-versions/dynamics-365ce) page. 
+You can verify that the update was completed successfully by checking the version number on the **About** page of the environment, or looking at the environment details on the [Power Platform admin center](https://admin.powerplatform.microsoft.com/). A list of service updates can be found on our [Released Versions](/business-applications-release-notes/dynamics/released-versions/dynamics-365ce) page. 
 
 ### Major release events
 
@@ -61,11 +58,11 @@ The Service teams regularly perform the following to ensure the security of the 
   
 These teams also identify and track any identified issues and take swift action to mitigate risks when necessary.  
   
-**How do I find out about security updates?**  
+#### How do I find out about security updates?
   
 Because the Service teams strive to apply risk mitigations in a way that doesn’t require service downtime, administrators usually don’t see Message Center notifications for security updates. If a security update does require service impact, it's considered planned maintenance, and is posted with the estimated impact duration, and the window when the work will occur.
   
-For more information about security, see [Trust Center](https://www.microsoft.com/TrustCenter/CloudServices/Dynamics365).
+For more information about security, go to [Trust Center](https://www.microsoft.com/TrustCenter/CloudServices/Dynamics365).
 
 ### Planned maintenance
 
@@ -76,7 +73,7 @@ These changes can include:
 - Hardware or infrastructure updates  
 - Integrated services, such as a new version of [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] or [!INCLUDE[pn_Windows_Azure](../includes/pn-windows-azure.md)]  
 - Service changes and software updates  
-- Minor service updates that occur several times per year. See [Service updates](https://support.microsoft.com/help/2925359/microsoft-dynamics-crm-online-releases).  
+- Minor service updates that occur several times per year. Learn more in [Service updates](https://support.microsoft.com/help/2925359/microsoft-dynamics-crm-online-releases).  
  
 ### Unplanned maintenance 
 
@@ -123,7 +120,7 @@ A _service incident_ is a term used to refer to an event, or series of events, t
 - Slow performance in apps or Dataverse queries 
 - Error messages or unexpected blank pages 
 
-**How do I find out about service incidents?**  
+### How do I find out about service incidents?  
 
 Check the [Service health dashboard](/office365/enterprise/view-service-health) to view the status of the service, details about existing service incidents, and up to 30 days’ worth of history. The Power Platform admin center offers a view of service health information in the Support page. Service health knows which tenants you manage, so it shows a much more accurate view of any known issues impacting your services than non-authenticated sources of information. If you're experiencing an issue that's not displayed in the Service health dashboard, contact Microsoft support by creating a ticket in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 
@@ -131,7 +128,7 @@ If there's a broad customer impact during a service incident, we may also provid
 
 If the Power Platform or Microsoft 365 admin portal are unavailable or experiencing issues, we provide status updates through the unauthenticated [Service Health Status}(https://status.cloud.microsoft/) page. 
 
-**What information is provided about service incidents?**
+### What information is provided about service incidents?
 
 During the event, we include information that is related to the user impact, duration, any feasible workaround, and preliminary root cause. Our goal is to provide status updates on an hourly cadence, although this guideline may be reduced for substantive new information or extended based on waiting on recovery activities. At the restoration of the service to optimal operation, we publish a final status update and determine if other, post-incident reports will be provided based on the breadth and type of impact to customers. 
 
@@ -153,9 +150,6 @@ Because of the critical nature of service notifications and communications, ther
 - Download and install the [Microsoft 365 Admin mobile app](https://products.office.com/business/manage-office-365-admin-app) on your mobile device to view service updates and incident notifications. 
 - Connect directly to our service communications using an externally accessible [Service Communication API](/office/office-365-management-api/office-365-service-communications-api-reference).
 - [Track your message center tasks](/office365/planner/track-message-center-tasks-planner) in Planner. 
-  
-### Notice about online policies
-Review [Notice About Online Policies and Similar Documents](https://www.microsoft.com/legal/intellectualproperty/mtl/onlinedisclaimer.aspx).
 
 
 
