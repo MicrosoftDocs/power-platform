@@ -349,6 +349,16 @@ System administrators or customizers can change the default audit settings for t
 
 Learn more in [Dataverse developer guide: Configure auditing > Configure tables and columns](/power-apps/developer/data-platform/auditing/configure#configure-tables-and-columns).
 
+### Turn on or off auditing for Choice data type's original label  (Preview)
+By default, the current label description of the **choice** data type is shown in the audit logs, for example if you have a choice column for **color** and the label description can be 'red', 'white' and 'blue'. When a user selected 'red' and updated the record, the audit record would show that 'red' was selected. If the label description is later changed to 'pink' in the choice data type, the audit record would display 'pink'.
+
+If you want to show the original label in the audit logs, you can enable this auditsetting **{\"StoreLabelNameforPicklistAudits\":true}**. See how to [enable auditsettings](https://learn.microsoft.com/power-apps/developer/data-platform/auditing/configure?tabs=webapi#change-auditsettings).
+
+> [!NOTE]
+> 
+
+
+
 ## Use the Audit History in a model-driven app
 
 Audit History is a valuable resource for users to understand the update history of a single record. It answers questions such as "When was this record created and by whom?", "Who changed a particular field and what was the previous value?", "Who shared the record with another user?".
