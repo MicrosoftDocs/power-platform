@@ -119,7 +119,7 @@ Power Apps and Power Automate capabilities for Dynamics 365 enable users to exte
 
 To learn about capabilities included with the Power Automate for Dynamics 365 plan, see [Power Automate seeded license for Dynamics 365](/power-platform/admin/power-automate-licensing/deep-dive-on-specific-license).
 
-More information on [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/p/?LinkId=866544).
+Learn more in [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/p/?LinkId=866544).
 
 ## Power Apps Developer Plan
 
@@ -127,7 +127,7 @@ In addition to the trial plans, there's also a *free* Power Apps Developer Plan.
 
 ## Pay-as-you-go plan
 
-Pay-as-you-go is a way to pay for Power Apps and Power Automate using an Azure subscription, which allows you to get started building and sharing apps without any license commitment or upfront purchasing. More information: [Pay-as-you-go plan](pay-as-you-go-overview.md)
+Pay-as-you-go is a way to pay for Power Apps and Power Automate using an Azure subscription, which allows you to get started building and sharing apps without any license commitment or upfront purchasing. Learn more in [Pay-as-you-go plan](pay-as-you-go-overview.md).
 
 ## Tenant-level special licenses
 
