@@ -78,7 +78,7 @@ The following image is an example of an early update availability timeline.
 :::image type="content" source="media/opt-in-2020-timeline.png" alt-text="Opt in timeline example for 2020.":::
 
 > [!NOTE]
-> Once a release wave is generally available, the updates status in your environments become **On** to automatically receive all planned features and updates throughout the release. 
+> After a release wave is generally available, the updates status in your environments become **On** to automatically receive all planned features and updates throughout the release. 
 >
 > To learn more, see [release schedule and early access](/dynamics365/get-started/release-schedule).
 
@@ -98,15 +98,31 @@ The early access updates are available for all types of environments, including 
 
 ## How to get early access updates 
 
+# [New admin center](#tab/new)
+ 
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+
+1. Select **Manage** in the navigation pane.
+
+1. In the **Manage** pane, select **Environments**. Then select an environment.
+
+1. Under **Updates**, the new release wave is available. Select **Manage**. 
+
+1. Select **Update now**, and then proceed through the confirmation dialog boxes to get the new features and capabilities of the release wave. 
+
+# [Classic admin center](#tab/classic)
+
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/). 
 
-2. Select the environment to update. 
+1. Select the environment to update. 
 
-3. Under **Updates**, the new release wave is available. Select **Manage**. 
+1. Under **Updates**, the new release wave is available. Select **Manage**. 
 
-4. Select **Update now**, and then proceed through the confirmation dialog boxes to get the new features and capabilities of the release wave. 
+1. Select **Update now**, and then proceed through the confirmation dialog boxes to get the new features and capabilities of the release wave. 
 
-5. After the update is complete, all early access features will be turned on for your model-driven apps in your environment. 
+---
+
+After the update is complete, all early access features will be turned on for your model-driven apps in your environment. 
 
 > [!NOTE]
 > - All available updates to your environment initiate at once. 
@@ -183,7 +199,7 @@ The following checklist provides the general guidelines to help you prepare for 
 
 5. Allow the early access updates in your production environment. We recommend allowing the updates in your production environment during business downtime.
 
-## Early access updates FAQ 
+## Early access updates FAQ
 
 ### Will an environment that previously opted in for the early access updates automatically get the early access update of the new releases?
 
