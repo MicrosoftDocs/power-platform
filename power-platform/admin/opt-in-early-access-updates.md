@@ -83,6 +83,7 @@ The following image is an example of an early update availability timeline.
 > To learn more, see [release schedule and early access](/dynamics365/get-started/release-schedule).
 
 ## Environments available for early access updates 
+
 The early access updates are available for all types of environments, including trial, sandbox, and production. However, the best practice is to enable the updates in **trial** or **sandbox** environments before production environments.
  
 [Tenant to tenant migration](move-environment-tenant.md) isn't supported for early access updates.  
@@ -124,7 +125,6 @@ Some apps require more steps to turn on early access features. If you have any o
 
 > [!IMPORTANT]
 > Be sure to turn on the early access updates in the Power Platform admin center first. If you run the Dynamics 365 Marketing setup wizard to update your Marketing app to a new release wave before activating the early access updates in the Power Platform admin center, you must [run the Dynamics 365 Marketing setup wizard again](/dynamics365/customer-engagement/marketing/re-run-setup) after opting in to install and deploy the early access features. 
-
 
 ## Update status and Retry 
 
