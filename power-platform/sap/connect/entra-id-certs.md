@@ -15,7 +15,7 @@ contributors:
   - EllenWehrle
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 06/09/2025
+ms.date: 06/17/2025
 ms.custom: ignite-2024
 ms.service: power-platform
 ms.subservice: sap
@@ -25,6 +25,9 @@ ms.subservice: sap
 # Set up Microsoft Entra ID with certificates for SSO
 
 This guide walks you through setting up the SAP ERP connector so your users can access SAP data and run Remote Function Calls (RFCs) in Microsoft Power Platform using their Microsoft Entra ID for authentication. T​he process involves configuring both public and private certificates for secure communication.
+
+> [!NOTE]
+> While the example in this article uses self-generated public key infrastructure that isn't recommended, ensure settings and certificates align with your business requirements and your [Microsoft partner](https://partner.microsoft.com/partnership/find-a-partner).
 
 ## Prerequisites
 
