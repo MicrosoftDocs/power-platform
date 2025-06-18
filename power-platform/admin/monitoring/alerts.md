@@ -54,7 +54,7 @@ Keep the following principles in mind:
 1. In the **Severity** list, select **Low**, **Medium**, or **High**.
 1. In the **Notification type** list, select which notification type you’d like this alert to have: **None** or **Email**.
     - If you select **None**, you won’t get an email and will have to come back to the Monitor area of the admin center to check on the status of your alert.
-    - If you select **Email**, you and up to four other recipients&mdash;that you specify in the **Recipient(s)** field&mdash;will get an email when the alert is triggered. The email will come from **PowerPlat-noreply@microsoft.com**.
+    - If you select **Email**, you and up to four other recipients&mdash;that you specify in the **Recipient(s)** field&mdash;will get an email when the alert is triggered. The email will come from `PowerPlat-noreply@microsoft.com`.
 1. Select **Save**.
 
 After you’ve created your alert, the system does an on-demand evaluation and scans all the applicable resources under its scope. 
