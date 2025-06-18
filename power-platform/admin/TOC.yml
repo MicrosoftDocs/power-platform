@@ -440,14 +440,14 @@
               href: monitoring/monitoring-overview.md
             - name: View event logs and error logs (preview)
               href: monitoring/logs.md
+            - name: Create alerts for your resources (preview)
+              href: monitoring/alerts.md
             - name: Metrics and recommendations
               items:
                 - name: For Power Apps (preview)
                   href: monitoring/monitor-power-apps.md
                 - name: For Power Automate (preview)
                   href: monitoring/monitor-power-automate.md
-            - name: Create alerts for your resources (preview)
-              href: monitoring/alerts.md
         - name: Copilot
           href: copilot/copilot-hub.md
         - name: Security
