@@ -96,7 +96,7 @@ Make sure you have the System Administrator security role or equivalent permissi
 
 ## AI form fill assistance
 
-:::image type="content" source="media/settingsfeatures-aiformfillassistance.png" alt-text="AI Form Fill assistance settings in Power Platform admin center":::
+:::image type="content" source="media/settings-features/settingsfeatures-aiformfillassistance.png" alt-text="AI Form Fill assistance settings in Power Platform admin center":::
 
 > [!NOTE]
 > Users might need to clear the cache and refresh the browser twice for the setting change to take effect.
