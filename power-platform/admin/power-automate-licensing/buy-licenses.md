@@ -16,8 +16,6 @@ search.audienceType:
 
 # Buy Power Automate licenses
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 ## I'm an admin
 
 Power Platform admins can purchase licenses for Power Automate and then manage those licenses in their organization.
@@ -52,6 +50,7 @@ Follow these steps to assign Hosted Process capacity to an environment:
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. Select **Licensing** in the navigation pane.
 1. In the **Licensing** pane, select **Capacity add-ons**. 
+1. Select **Add-ons**
 1. Select the edit button on an environment.
 1. Enter the amount of each add-on you would like to allocate to each environment.
 
@@ -64,7 +63,7 @@ Follow these steps to assign Hosted Process capacity to an environment:
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. Select **Resources** > **Capacity** on the left side of the screen.
-1. Select **Add-ons** > in the capacity page.
+1. Select **Add-ons**.
 1. Select the edit button on an environment.
 1. Enter the amount of each add-on you would like to allocate to each environment.
 
@@ -97,7 +96,7 @@ Follow these steps to assign Process capacity to an environment.
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. Select **Licensing** in the navigation pane.
 1. In the **Licensing** pane, select **Capacity add-ons**. 
-1. Select **Add-ons** > in the capacity page.
+1. Select **Add-ons**.
 1. Select the edit button on an environment.
 1. Enter the amount of each add-on you would like to allocate to each environment.
 
@@ -116,7 +115,7 @@ Follow these steps to assign Process capacity to an environment.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. Select **Resources** > **Capacity** on the left side of the screen.
-1. Select **Add-ons** > in the capacity page.
+1. Select **Add-ons**.
 1. Select the edit button on an environment.
 1. Enter the amount of each add-on you would like to allocate to each environment.
 
@@ -131,7 +130,6 @@ Follow these steps to assign Process capacity to an environment.
    ![An image that displays the steps needed to assign a license to an environment.](../media/power-automate-licensing/assign-process-license-environment.png)
 
 ---
-
 
 After you assign the Process licenses to an environment, you can choose which flows can use the Process licenses.
 
@@ -209,7 +207,7 @@ Follow these steps to allocate add-ons to an environment.
 
 ---
 
-   After you assign a per flow plan add-on to an environment, you can choose which flows can use that add-on.
+After you assign a per flow plan add-on to an environment, you can choose which flows can use that add-on.
 
 1. In [Power Automate](https://flow.microsoft.com/), choose the flow to which you want to add the license. Owners, co-owners of the flow and admins can assign a per flow license to a flow.
 
