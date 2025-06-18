@@ -5,7 +5,7 @@ author: carlosff
 
 ms.topic: reference
 ms.custom: canvas
-ms.date: 3/22/2024
+ms.date: 06/18/2025
 ms.subservice: power-fx
 ms.author: carlosff
 search.audienceType: 
@@ -53,7 +53,7 @@ Given the following JSON string in a variable named `JsonString`
     ```power-fx
     Value( Column( ParseJSON( JsonString ), "population" ) )
     ```
-    2.1. Notice that this is similar to the `.` operator for [dynamic records](../untyped-object.md#record-types), but the column name doesn't have to be known beforehand.
+    - Notice that this is similar to the `.` operator for [dynamic records](../untyped-object.md#record-types), but the column name doesn't have to be known beforehand.
 
 3. The following formula returns the text value `"name: Seattle, population: 737000"`:
     ```power-fx
