@@ -48,7 +48,7 @@ You can also view the history of incidents and advisories that were resolved in 
 
 To keep track of upcoming changes, including new and changed features, planned maintenance, or other important announcements, select **Health** \> **Message center** from the navigation menu in the Microsoft 365 admin center. 
 
-Learn more about Message center in [Track new and changed features in the Microsoft 365 Message center](/microsoft-365/admin/manage/message-center?view=o365-worldwide).
+Learn more about Message center in [Track new and changed features in the Microsoft 365 Message center](/microsoft-365/admin/manage/message-center).
 
 ## Related information
 
