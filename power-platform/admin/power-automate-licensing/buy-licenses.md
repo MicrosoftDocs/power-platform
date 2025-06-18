@@ -237,7 +237,8 @@ After you update your flow, anyone will be able to use that flow, even if it use
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. Select **Resources** > **Capacity** on the left side of the screen.
 1. Select **Add-ons** > **Manage** in the add-on section.
-1. 
+
+---
 
 ![An image that displays how to assign unattended add-ons.](../media/power-automate-licensing/assign-unattended-add-on.png)
 
@@ -312,7 +313,7 @@ Power Automate allows you to create data groups for business and non-business da
 ![An image that displays a sample data loss prevention configuration.](../media/power-automate-licensing/data-loss-prevention-policy.png)
 
 
-## I am a maker
+## I'm a maker
 
 ### What is my license?
 
