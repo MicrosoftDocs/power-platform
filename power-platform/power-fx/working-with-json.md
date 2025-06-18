@@ -106,7 +106,7 @@ Finally, **JSON** supports nested records. Converting such **JSON** to a **Dynam
 }
 ```
 
-When converting this **JSON** string to an **Dynamic** variable named `jsonObject`, the fields can be accessed using the dot notation.
+When converting this **JSON** string to a **Dynamic** variable named `jsonObject`, the fields can be accessed using the dot notation.
 
 ```power-fx
 Set( jsonObject, ParseJSON( jsonStringVariable ) );
@@ -139,7 +139,7 @@ If any of the fields in the dot notation expression don't exist, **Blank()** wil
 }
 ```
 
-This **JSON** contains a record with a field named `OrderLines` which contains an array of records. Each record has two fields: `Item` and `Quantity`. If the **JSON** is converted into an **Dynamic** value using the **ParseJSON** function and set to a variable named `jsonOrder`, we can access the individual order lines in several ways.
+This **JSON** contains a record with a field named `OrderLines` which contains an array of records. Each record has two fields: `Item` and `Quantity`. If the **JSON** is converted into a **Dynamic** value using the **ParseJSON** function and set to a variable named `jsonOrder`, we can access the individual order lines in several ways.
 
 ```power-fx
 Set( jsonOrder, ParseJSON( jsonStringVariable ) );

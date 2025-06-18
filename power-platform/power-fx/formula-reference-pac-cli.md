@@ -63,9 +63,9 @@ Use these commands to interact with data in Dataverse using a command line or sc
 
 **[ColorValue](reference/function-colors.md)** – Translates a CSS color name or a hex code to a color value.
 
-**[Column](reference/function-columnnames-column.md)** – Retrieves column names and values from a [Dynamic data type](untyped-object.md).
+**[Column](reference/function-columnnames-column.md)** – Retrieves column names and values from a [Dynamic value](untyped-object.md).
 
-**[ColumnNames](reference/function-columnnames-column.md)** – Retrieves column names and values from a [Dynamic data type](untyped-object.md).
+**[ColumnNames](reference/function-columnnames-column.md)** – Retrieves column names and values from a [Dynamic value](untyped-object.md).
 
 **[Concat](reference/function-concatenate.md)** – Concatenates strings in a data source.
 
@@ -234,7 +234,7 @@ Use these commands to interact with data in Dataverse using a command line or sc
 
 ## P
 
-**[ParseJSON](reference/function-parsejson.md)** – Converts JSON document represented as text to a [Dynamic](untyped-object.md) value.
+**[ParseJSON](reference/function-parsejson.md)** – Converts JSON document represented as text to a [Dynamic value](untyped-object.md).
 
 **[Patch](reference/function-patch.md)** – Modifies or creates a record in a data source, or merges records outside of a data source.
 

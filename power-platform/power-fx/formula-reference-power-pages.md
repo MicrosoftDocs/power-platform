@@ -220,7 +220,7 @@ In this article, learn about all the functions available in Power Pages.
 
 ## P
 
-**[ParseJSON](reference/function-parsejson.md)** – Converts JSON document represented as text to a [Dynamic](untyped-object.md) value.
+**[ParseJSON](reference/function-parsejson.md)** – Converts JSON document represented as text to a [Dynamic value](untyped-object.md).
 
 **[Pi](reference/function-trig.md)** – Returns the number &pi;.
 

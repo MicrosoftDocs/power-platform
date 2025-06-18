@@ -20,7 +20,7 @@ contributors:
 
 
 
-Interprets a JSON string and returns a [Dynamic](../untyped-object.md) or statically typed value if a type is provided.
+Interprets a JSON string and returns a [Dynamic value](../untyped-object.md) or a specific typed value if a type is provided.
 
 > [!IMPORTANT]
 > - Using the second argument to **ParseJSON** to convert to a typed object is an experimental feature.
@@ -42,10 +42,10 @@ The ParseJSON function can return errors if the text isn't valid JSON according 
 **ParseJSON**( *JSONString* [ , *Type* ] )
 
 - *JSONString* – Required. The JSON structure represented as text.
-- *Type* - Optional. The Power Fx type definition for the JSON structure. Without this argument, **ParseJSON** returns a dynamic value; with it the function returns a statically typed value.
+- *Type* - Optional. The Power Fx type definition for the JSON structure. Without this argument, **ParseJSON** returns a dynamic value; with it the function returns a specific typed value.
 
 ## Converting Dynamic values
-Without the second argument, ParseJSON returns a [Dynamic](../untyped-object.md) value which requires explicit conversion of field values in supported data types. The following table lists the [data types](../data-types.md) in Power Apps and a corresponding JSON data type and how to convert it.
+Without the second argument, ParseJSON returns a [Dynamic value](../untyped-object.md) which requires explicit conversion of field values in supported data types. The following table lists the [data types](../data-types.md) in Power Apps and a corresponding JSON data type and how to convert it.
 
 | Data type | JSON examples | Description  | Example conversion |
 | --- | --- | --- | --- |
@@ -129,7 +129,7 @@ Given the following JSON string in a variable named `JsonString`
     ] }
 ```
 
-1. Converting to a typed table of records directly with **ForAll()** can be done by using `ThisRecord.[fieldname]` to access **dynamic** fields and convert them to static types:
+1. Converting to a typed table of records directly with **ForAll()** can be done by using `ThisRecord.[fieldname]` to access **dynamic** fields and convert them to specific types:
 
     ```power-fx
     ForAll( ParseJSON( JsonString ).array, { id: Value(ThisRecord.id), name: Text(ThisRecord.name) })

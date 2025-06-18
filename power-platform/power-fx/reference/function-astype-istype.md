@@ -108,7 +108,7 @@ A **Dynamic** value from a web API or the [**ParseJSON** function] needs to be c
  
 **AsType**( _DynamicValue_, _TypeSpecification_ )
 
-- _DynamicValue_ - Required. A record reference, often a lookup field that can refer to a record in any of multiple tables.
+- _DynamicValue_ - Required. A dynamic value from the [**ParseJSON** function](function-parsejson.md) or an API call.
 - _TypeSpecification_ - Required. A type name or type specification defined with the [**Type** function](function-type.md).
 
 **IsType**( _RecordReference_, _TableType_ )
@@ -118,7 +118,7 @@ A **Dynamic** value from a web API or the [**ParseJSON** function] needs to be c
 
 **IsType**( _DynamicValue_, _TypeSpecification_ )
 
-- _DynamicValue_ - Required. A record reference, often a lookup field that can refer to a record in any of multiple tables.
+- _DynamicValue_ - Required. A dynamic value from the [**ParseJSON** function](function-parsejson.md) or an API call.
 - _TypeSpecification_ - Required. A type name or type specification defined with the [**Type** function](function-type.md).
 
 ## Examples
