@@ -4,7 +4,7 @@ description: Learn about enhancements for Dataverse capacity-based storage that 
 author: ianceicys-msft
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 04/07/2025
+ms.date: 6/18/2025
 ms.subservice: admin
 ms.author: ceian
 ms.reviewer: sericks
@@ -12,11 +12,12 @@ search.audienceType:
   - admin
 contributors:
 - ianceicys-msft
-- dasussMS 
+- dasussMS
+ms.contributors:
+- ceian
+- dasuss 
 ---
 # Dataverse capacity-based storage overview
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 Key enhancements to the admin experience for the Microsoft Power Platform admin center include:
 
@@ -29,7 +30,7 @@ These features are being rolled out now, so check back if your user experience v
 
 In April 2019, we introduced Microsoft Dataverse capacity storage that's optimized for relational data (database), attachments (file), and audit logs (log). New customers of Power Apps, Power Automate, and customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation) receive a tenant-wide default entitlement for each of these three storage types. They also receive more per-user subscription license entitlements. More storage can be purchased in 1-GB increments. Existing customers aren't affected until the end of their current Power Apps or Dynamics 365 subscription, when renewal is required.
 
-![Evolution of data management.](media/storage-model-evolution.png "Evolution of data management")
+:::image type="content" source="media/storage-model-evolution.png" alt-text="Evolution of data management":::
 
 Some of the benefits of this change include:
 
@@ -71,7 +72,8 @@ More information:
 
 The [Universal License Terms for Online Services](https://www.microsoft.com/licensing/terms/product/ForOnlineServices/EAEAS) apply to your organization’s use of the online service, including consumption that exceeds the online service’s documented entitlements or usage limits.
 
-Your organization must have the right licenses for the storage you use: 
+Your organization must have the right licenses for the storage you use:
+
 - If you use more than your documented entitlements or usage limits, you must buy more licenses.
 - If your storage consumption exceeds the documented entitlements or usage limits, we might suspend use of the online service. Microsoft provides reasonable notice before suspending your online service.
 
@@ -79,14 +81,31 @@ If the storage consumption goes over the entitled limit, we encourage you to man
 
 ### Request a temporary extension
 
-If your database storage is over capacity, admins can't copy or restore any of their environments. 
+If your database storage is over capacity, admins can't copy or restore any of their environments.
 
-> [!div class="mx-imgBorder"] 
-> ![Capacity overage.](media/capacity-overage.png "Overage")
+:::image type="content" source="media/capacity-overage.png" alt-text="Storage exceeding capacity.":::
+
+<Require a similar image in green PPAC>
 
 You can request a temporary (30-day) extension that allows copy and restore operations during the extension. To do so, follow these steps.
 
 #### Extension request for copy
+
+###### [New admin center](#tab/new)
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.com) as a tenant admin.
+2. In the navigation pane, select **Manage**.
+3. In the **Manage** pane, select **Environments**.
+4. Select an environment from the list.
+5. Select **Copy** from the command bar.
+6. Select and enter the various copy options, and then select **Copy**.
+7. Select **Confirm**.
+8. The **Copy environment** page appears where you can select **Request an extension**.
+
+<Require a proper image to request an extension in green PPAC>
+
+
+###### [Classic admin center](#tab/old)
 
 1. Sign in as a tenant admin to the [Power Platform admin center](https://admin.powerplatform.microsoft.com), and then select an environment.
 2. Select **Copy** from the command bar.
@@ -94,10 +113,13 @@ You can request a temporary (30-day) extension that allows copy and restore oper
 4. Select **Confirm**.
 5. The **Copy environment** page appears where you can select **Request an extension**.
 
-    > [!div class="mx-imgBorder"] 
-    > ![Request extension.](media/capacity-request-extension.png "Request extension")
+:::image type="content" source="media/capacity-request-extension.png" alt-text="Request extension.":::
+
+---
 
 #### Extension request for Restore
+
+###### [New admin center](#tab/new)
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/resources/capacity).
 
@@ -105,25 +127,58 @@ You can request a temporary (30-day) extension that allows copy and restore oper
    > - Be sure to select the correct tenant to extend the storage capacity for 30 days. 
    > - You can extend capacity on your account a maximum of three times.
 
-1. In the navigation pane, select **Resources** > **Capacity**.
+2. If you're running low on storage capacity, you see the following banner. In the banner at the top of the page, select **Enable capacity extension**.
 
-1. If you're running low on storage capacity, you see the following banner. In the banner at the top of the page, select **Enable capacity extension**.
-   
+<Require a proper image for this step in green PPAC>
+
+3. Review the details of the capacity overage. The 25% capacity is calculated based on capacity used and applies to each capacity type (database, file, and log). Select **Enable capacity extension**.
+
+<Require a proper image for this step in green PPAC>
+
+4. Review the details of the capacity overage. The 25% capacity is calculated based on capacity used and applies to each capacity type (database, file, and log). Select **Enable capacity extension**.
+
+<Require a proper image for this step in green PPAC>
+
+5. Select **Confirm**.
+
+6. A banner displays the temporary capacity extension is now active.
+
+   <Require a proper image for this step in green PPAC>
+
+   After turning on the extension, for the next 30 days the extra capacity appears in the Power Platform admin center **Capacity** page (**Resources** > **Capacity** > **Summary**).
+
+   <Require a proper image for this step in green PPAC>  
+
+
+###### [Classic admin center](#tab/old)
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/resources/capacity).
+
+   > [!Note]
+   > - Be sure to select the correct tenant to extend the storage capacity for 30 days. 
+   > - You can extend capacity on your account a maximum of three times.
+
+2. In the navigation pane, select **Resources** > **Capacity**.
+
+3. If you're running low on storage capacity, you see the following banner. In the banner at the top of the page, select **Enable capacity extension**.
+
    :::image type="content" source="media/storage-extend-capacity-banner.png" alt-text="Extend capacity in Power Platform admin center." lightbox="media/storage-extend-capacity-banner.png":::
 
-1. Review the details of the capacity overage. The 25% capacity is calculated based on capacity used and applies to each capacity type (database, file, and log). Select **Enable capacity extension**.
+4. Review the details of the capacity overage. The 25% capacity is calculated based on capacity used and applies to each capacity type (database, file, and log). Select **Enable capacity extension**.
 
    :::image type="content" source="media/storage-extend-capacity-details.png" alt-text="Extend capacity details." lightbox="media/storage-extend-capacity-details.png":::
 
-1. Select **Confirm**.
+5. Select **Confirm**.
 
-1. A banner displays the temporary capacity extension is now active. 
+6. A banner displays the temporary capacity extension is now active.
 
    :::image type="content" source="media/storage-extend-capacity-success.png" alt-text="Successfully tenant capacity extension." lightbox="media/storage-extend-capacity-success.png"::::::
 
     After turning on the extension, for the next 30 days the extra capacity appears in the Power Platform admin center **Capacity** page (**Resources** > **Capacity** > **Summary**).
 
    :::image type="content" source="media/storage-extend-capacity-banner-30-days.png" alt-text="Tenant capacity extension in admin center." lightbox="media/storage-extend-capacity-banner-30-days.png":::
+
+---
 
 #### About extensions
 
