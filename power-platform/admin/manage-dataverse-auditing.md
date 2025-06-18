@@ -358,6 +358,8 @@ If you want to show the original label in the audit logs, you can allow this aud
 > [!NOTE]
 > When the **StoreLabelNameforPicklistAudits** is set to true, the new audit user experience on viewing the audit records can be found in the [Audit Summary view](#use-the-audit-summary-view). The [audit history in model-driven app](#use-the-audit-history-in-a-model-driven-app) continues to show the _by default_ behavior.
 
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
+
 ## Use the Audit History in a model-driven app
 
 Audit History is a valuable resource for users to understand the update history of a single record. It answers questions such as "When was this record created and by whom?", "Who changed a particular field and what was the previous value?", "Who shared the record with another user?".
