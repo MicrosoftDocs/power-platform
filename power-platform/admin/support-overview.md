@@ -1,7 +1,7 @@
 ---
 title: Support for Microsoft Power Platform and Dynamics 365 apps
 description: Learn more about support options for Microsoft Power Platform and Dynamics 365 apps.
-ms.date: 06/10/2025
+ms.date: 06/18/2025
 ms.reviewer: sericks
 ms.topic: overview
 ms.custom: admin-security
@@ -42,7 +42,7 @@ Keep the following information in mind:
 - [Support plans](https://www.microsoft.com/en-us/dynamics-365/)
 - [Dynamics 365 support](https://www.microsoft.com/en-us/dynamics-365/support)
 - [On-premises support](https://support.serviceshub.microsoft.com/supportforbusiness/onboarding?origin=/supportforbusiness/create)
-- [Get support for Microsoft 365 for business](/microsoft-365/admin/get-help-support?view=o365-worldwide)
+- [Get support for Microsoft 365 for business](/microsoft-365/admin/get-help-support)
 - [Volumne licensing information](https://www.microsoft.com/licensing/servicecenter/home.aspx)
 
 ## Technical support vs. advisory services
@@ -71,7 +71,7 @@ You can open a Subscription Management support request through the [Microsoft 36
 Any users with the Power Platform admin roles, on the tenant containing the subscriptions, can submit a support request. End users aren't allowed to open support requests and must have their permissions elevated within the tenant to accomplish this task. There's no alternative to this experience.
 
 ### How do I authorize another person to submit support requests for a particular subscription in the Power Platform admin center?
-To grant permission, you must have a Power Platform admin role on the tenant that contains the subscription. Assign the Service Administrator role to all users who want to create and manage support requests for that given tenant, but don't require other permissions. [Learn more](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide) about role assignments in the portal.
+To grant permission, you must have a Power Platform admin role on the tenant that contains the subscription. Assign the Service Administrator role to all users who want to create and manage support requests for that given tenant, but don't require other permissions. [Learn more](/microsoft-365/admin/add-users/about-admin-roles) about role assignments in the portal.
 
 ### I'm developing applications on behalf of my client or assisting my client who is running customer engagement apps. How do I get support in the Power Platform admin center?
 You can get support in two ways:
