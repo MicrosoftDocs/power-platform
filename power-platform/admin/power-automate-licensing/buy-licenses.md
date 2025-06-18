@@ -4,8 +4,12 @@ description: "Buy Power Automate licenses."
 author: PriyaKodukula
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 05/09/2022
+ms.date: 06/18/2025
 ms.author: prkoduku
+ms.contributors:
+  - lsuresh
+contributors:
+  - lavanyapg
 search.audienceType: 
   - admin
 ---
@@ -43,17 +47,35 @@ It's easy and scalable to assign the Hosted Process licenses you purchased to th
 
 Follow these steps to assign Hosted Process capacity to an environment:
 
+# [New admin center](#tab/new)
+ 
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. Select **Licensing** in the navigation pane.
+1. In the **Licensing** pane, select **Capacity add-ons**. 
+1. Select the edit button on an environment.
+1. Enter the amount of each add-on you would like to allocate to each environment.
+
+   > [!NOTE]
+   > The Hosted Process is environment specific. So, if you have multiple environments that need hosted RPA capabilities, you need to assign the Hosted Process license in each environment.
+
+1. Select **Save**.
+
+# [Classic admin center](#tab/classic)
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. Select **Resources** > **Capacity** on the left side of the screen.
 1. Select **Add-ons** > in the capacity page.
 1. Select the edit button on an environment.
 1. Enter the amount of each add-on you would like to allocate to each environment.
 
    > [!NOTE]
-   > The Hosted Process is environment specific. So, if you have multiple environments that needs hosted RPA capabilities, you need to assign the Hosted Process license in each environment.
+   > The Hosted Process is environment specific. So, if you have multiple environments that need hosted RPA capabilities, you need to assign the Hosted Process license in each environment.
 
 1. Select **Save**.
 
-   After you assign the Hosted Process licenses to an environment, you can create hosted machines and/or hosted machine group in that environment.
+---
+
+After you assign the Hosted Process licenses to an environment, you can create hosted machines and/or hosted machine group in that environment.
 
 ### Assign Process license
 
@@ -64,12 +86,35 @@ Here are the two steps you must take if you want to assign a Process license.
 1. Assign a Process license to a flow.
 
    > [!NOTE]
-   > To run unattended desktop flows in an environment, you need to assign one Process license per machine that is used for unattended desktop flows. If you need to run multiple unattended desktop flows in parallel on a machine, you will also need to assign one Process license for each additional Desktop Flow you want to run concurrently on the machine.
+   > To run unattended desktop flows in an environment, you need to assign one Process license per machine that is used for unattended desktop flows. If you need to run multiple unattended desktop flows in parallel on a machine, you also need to assign one Process license for each additional Desktop Flow you want to run concurrently on the machine.
 
 It's easy and scalable to assign the Process licenses you purchased to the environments that need the licenses. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) under capacity, you see a new section appears if your organization purchased the licenses.
 
 Follow these steps to assign Process capacity to an environment.
 
+# [New admin center](#tab/new)
+ 
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. Select **Licensing** in the navigation pane.
+1. In the **Licensing** pane, select **Capacity add-ons**. 
+1. Select **Add-ons** > in the capacity page.
+1. Select the edit button on an environment.
+1. Enter the amount of each add-on you would like to allocate to each environment.
+
+   > [!TIP]
+   > Power Automate Process is the same as Process license.
+   
+   > [!NOTE]
+   > The Process license is environment specific. So, if you have multiple environments that need to run a flow and/or unattended desktop flow, you need to assign the Process license in each environment.
+
+1. Select **Save**.
+
+   ![An image that displays the steps needed to assign a license to an environment.](../media/power-automate-licensing/assign-process-license-environment.png)
+
+
+# [Classic admin center](#tab/classic)
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. Select **Resources** > **Capacity** on the left side of the screen.
 1. Select **Add-ons** > in the capacity page.
 1. Select the edit button on an environment.
@@ -81,18 +126,20 @@ Follow these steps to assign Process capacity to an environment.
    > [!NOTE]
    > The Process license is environment specific. So, if you have multiple environments that need to run a flow and/or unattended desktop flow, you need to assign the Process license in each environment.
 
-  
 1. Select **Save**.
 
    ![An image that displays the steps needed to assign a license to an environment.](../media/power-automate-licensing/assign-process-license-environment.png)
 
-   After you assign the Process licenses to an environment, you can choose which flows can use the Process licenses.
+---
+
+
+After you assign the Process licenses to an environment, you can choose which flows can use the Process licenses.
 
 1. In [Power Automate](https://flow.microsoft.com/), choose the flow to which you want to add the license. Owners, co-owners of the flow and admins can assign a Process license to a flow.
 
    When you select a flow, you see a new section in the details pane that tells you if the flow is assigned to a user, or if it's part of the Process license. The default for a flow is to use the license of the user.
 
-1. To have a flow use the Process license, select  **Edit** in the details panel. You'll then see the **Name**, **Description, and **Plan** that the flow uses. If your environment has the Process license assigned, you can move that flow to use the Process license. Otherwise, you need to assign capacity.
+1. To have a flow use the Process license, select **Edit** in the details panel. You then see the **Name**, **Description, and **Plan** that the flow uses. If your environment has the Process license assigned, you can move that flow to use the Process license. Otherwise, you need to assign capacity.
 
    ![Image that shows that not per flow capacity is available.](../media/power-automate-licensing/per-flow-plan-capacity-needed.png)
 
@@ -104,7 +151,7 @@ After you update your flow, anyone will be able to use that flow, even if it use
 
    ![Image displays active users selected.](../media/power-automate-licensing/active-users.png)
 
-1. Select the user to whom you'll assign the license.
+1. Select the user to whom you assign the license.
 1. Select **Licenses and apps**.
 
 1. Select the checkbox for the license you want to assign to the user, and then save your changes.
@@ -126,6 +173,26 @@ It's easy and scalable to allocate the per flow add-ons you purchased to the env
 
 Follow these steps to allocate add-ons to an environment.
 
+# [New admin center](#tab/new)
+ 
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. Select **Licensing** in the navigation pane.
+1. In the **Licensing** pane, select **Capacity add-ons**. 
+1. Select **Add-ons** > **Manage** in the add-on section.
+1. Select an environment.
+1. Enter the amount of each add-on you would like to allocate to each environment.
+
+   > [!TIP]
+   > Flow per business process is same as per flow license.
+   > [!NOTE]
+   > The per flow plan is environment specific. So, if you have multiple environments that need to run a flow, you need to assign per flow license to the flow in each environment.
+1. Select **Save**.
+
+   ![An image that displays the steps needed to assign a license to an environment and manage add-ons.](../media/power-automate-licensing/assign-license-environment.png)
+
+# [Classic admin center](#tab/classic)
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. Select **Resources** > **Capacity** on the left side of the screen.
 1. Select **Add-ons** > **Manage** in the add-on section.
 1. Select an environment.
@@ -139,15 +206,18 @@ Follow these steps to allocate add-ons to an environment.
 
    ![An image that displays the steps needed to assign a license to an environment and manage add-ons.](../media/power-automate-licensing/assign-license-environment.png)
 
+
+---
+
    After you assign a per flow plan add-on to an environment, you can choose which flows can use that add-on.
 
 1. In [Power Automate](https://flow.microsoft.com/), choose the flow to which you want to add the license. Owners, co-owners of the flow and admins can assign a per flow license to a flow.
 
-   When you select a flow, you'll now see a new section in the details pane that tells you if the flow is assigned to a user, or if it's part of the per-flow plan. The default for a flow is to use the license of the user.
+   When you select a flow, you see a new section in the details pane that tells you if the flow is assigned to a user, or if it's part of the per-flow plan. The default for a flow is to use the license of the user.
 
    ![An image that displays that a flow uses per user plan by default.](../media/power-automate-licensing/per-user-plan-assigned.png)
 
-1. To have a flow use the per-flow plan, select **Edit** in the details panel. You'll then see the **Name**, **Description**, and **Plan** that the flow uses. If your environment has the per flow add-on allocated, you can move that flow to use the per flow plan. Otherwise, you need to allocate capacity.
+1. To have a flow use the per-flow plan, select **Edit** in the details panel. You then see the **Name**, **Description**, and **Plan** that the flow uses. If your environment has the per flow add-on allocated, you can move that flow to use the per flow plan. Otherwise, you need to allocate capacity.
 
    ![Image that shows that not per flow capacity is available.](../media/power-automate-licensing/per-flow-plan-capacity-needed.png)
 
@@ -155,7 +225,21 @@ After you update your flow, anyone will be able to use that flow, even if it use
 
 ### Assign unattended RPA add-on to an environment
 
-In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), select **Resources** > **Capacity** > **Manage** in add-ons to assign add-ons.
+# [New admin center](#tab/new)
+ 
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. Select **Licensing** in the navigation pane.
+1. In the **Licensing** pane, select **Capacity add-ons**. 
+1. Select **Add-ons** > **Manage** in the add-on section.
+
+![An image that displays how to assign unattended add-ons.](../media/power-automate-licensing/assign-unattended-add-on.png)
+
+# [Classic admin center](#tab/classic)
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. Select **Resources** > **Capacity** on the left side of the screen.
+1. Select **Add-ons** > **Manage** in the add-on section.
+1. 
 
 ![An image that displays how to assign unattended add-ons.](../media/power-automate-licensing/assign-unattended-add-on.png)
 
@@ -191,10 +275,10 @@ It might take up to a week for all the downstream systems to receive updates. To
 If a user was assigned a Power Automate license, you can take the following steps to remove the license for that user. This action removes the Power Automate icon from the app launcher.
 
 1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com/).
-2. In the left navigation bar, select  **Users**  >   **Active Users**.
+2. In the left navigation bar, select **Users** > **Active Users**.
 3. Find the user for whom you want to remove the license, and then select their name.
-4. On the user details pane, select the **Licenses and Apps**  tab, and then uncheck the license for Power Automate.
-5. At the bottom, select  **Save changes**.
+4. On the user details pane, select the **Licenses and Apps** tab, and then uncheck the license for Power Automate.
+5. At the bottom, select **Save changes**.
 
 It's also possible to do a bulk removal of licenses through PowerShell. See [Remove licenses from user accounts with Microsoft 365 PowerShell](/microsoft-365/enterprise/remove-licenses-from-user-accounts-with-microsoft-365-powershell) for a detailed example.
 
@@ -205,11 +289,11 @@ Additional guidance about bulk removal of services within a license can be found
 
 #### Why did 10,000 licenses for Power Automate show up in my Microsoft 365 tenant?
 
-Any person can try out Power Automate free for 90 days, and these trial licenses represent the available capacity for new Power Automate users in your tenant. There is no charge for these licenses.
+Any person can try out Power Automate free for 90 days, and these trial licenses represent the available capacity for new Power Automate users in your tenant. There's no charge for these licenses.
 
-If at least one user in your tenant has signed up for a Microsoft Power Automate free license, you will see 10,000 licenses (minus any assigned licenses) under **Billing** > **Licenses**  for your organization.
+If at least one user in your tenant has signed up for a Microsoft Power Automate free license, you see 10,000 licenses (minus any assigned licenses) under **Billing** > **Licenses** for your organization.
 
-You can choose to assign additional licenses to users yourself through the Microsoft 365 admin center but note that these are trial licenses for Power Automate, and they will expire 90 days after you assigned them to a user.
+You can choose to assign additional licenses to users yourself through the Microsoft 365 admin center but note that these are trial licenses for Power Automate, and they'll expire 90 days after you assigned them to a user.
 
 #### Is trial free? Will I be charged for these licenses?
 
@@ -217,15 +301,15 @@ No user can incur any cost to your organization without your express consent, so
 
 #### I removed the Power Automate free license and users can still access it
 
-The Power Automate free license is included only for tracking purposes. It's not possible to prevent another person from using Power Automate for individual purposes. Thus, the presence of a Power Automate free license does not actually grant or remove any capabilities.
+The Power Automate free license is included only for tracking purposes. It's not possible to prevent another person from using Power Automate for individual purposes. Thus, the presence of a Power Automate free license doesn't actually grant or remove any capabilities.
 
 #### Why can't I see all Power Automate licenses in the Microsoft 365 admin center?
 
-Users can use Power Automate either as individuals or as a part of their organization. Licenses at the organizational level will always be visible in the Microsoft 365 admin center. However, if a user signs up for a trial as an individual then that is not managed by their Microsoft 365 admin and will it won't  display in the Microsoft 365 admin center.
+Users can use Power Automate either as individuals or as a part of their organization. Licenses at the organizational level will always be visible in the Microsoft 365 admin center. However, if a user signs up for a trial as an individual then that isn't managed by their Microsoft 365 admin and it won't display in the Microsoft 365 admin center.
 
 #### How can I restrict my users' ability to access my organization's business data?
 
-Power Automate allows you to create data groups for business and non-business data. After you implement these data loss prevention policies, users cannot design nor run flows that combine business and non-business data. For more details, See [Data loss prevention (DLP) policies](/power-automate/prevent-data-loss).
+Power Automate allows you to create data groups for business and non-business data. After you implement these data loss prevention policies, users can't design nor run flows that combine business and non-business data. For more details, See [Data loss prevention (DLP) policies](/power-automate/prevent-data-loss).
 
 ![An image that displays a sample data loss prevention configuration.](../media/power-automate-licensing/data-loss-prevention-policy.png)
 
@@ -236,11 +320,11 @@ Power Automate allows you to create data groups for business and non-business da
 
 1. Sign in to [Power Automate](https://powerautomate.com/).
 2. Select your profile picture in the top right corner of the screen.
-3. Select  **View account**.
-4. Select the  **View** on the **Subscriptions**  tile.
-5. Search for  **Power Automate**  under the  **Licenses**  section.
+3. Select **View account**.
+4. Select the **View** on the **Subscriptions** tile.
+5. Search for **Power Automate** under the **Licenses** section.
 
-You will see the license(s) that you have for Power Automate.
+You see the licenses that you have for Power Automate.
 
 Alternatively, see your [subscription page](https://portal.office.com/account/#subscriptions) to see licenses and trials assigned to you.
 
@@ -251,7 +335,7 @@ Yes. To get started, use the [self-service purchase](/microsoft-365/commerce/sub
 > [!IMPORTANT]
 > This capability isn't available to government, non-profit, or education tenants in the United States.
 
-Customers can make a self-service purchase from Power Automate. To do this, they first provide their email address to confirm if they are a user in an existing Microsoft Entra tenant. Next, they need to log in by using their Microsoft Entra credentials. After signing in, they need to indicate the number subscriptions they want to purchase and provide a credit card for payment. When the purchase is complete, they can start using their subscription. The purchaser can also access a limited view of the Microsoft 365 admin center where they can enable other people in their organization to use the product.
+Customers can make a self-service purchase from Power Automate. To do this, they first provide their email address to confirm if they're a user in an existing Microsoft Entra tenant. Next, they need to sign in by using their Microsoft Entra credentials. After customers sign-in, they need to indicate the number subscriptions they want to purchase and provide a credit card for payment. When the purchase is complete, they can start using their subscription. The purchaser can also access a limited view of the Microsoft 365 admin center where they can enable other people in their organization to use the product.
 
 ![This image displays the self service get started screen with all the necessary steps](../media/power-automate-licensing/get-started-self-service.png)
 
@@ -263,7 +347,7 @@ You can find more [FAQs on self service purchases](/microsoft-365/commerce/subsc
 
 ### Where does the self-service purchaser see and manage their purchases?
 
-Self-service purchasers can manage their purchases in the limited view of the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339). Self-service  purchasers can always get to the admin center from the  **Admin**  tile in the app launcher that's built into all Microsoft 365 and Dynamics online apps. Self-service  purchasers can view the purchases they've made, buy additional subscriptions to the same service, and assign licenses for those subscriptions to other users in their organization. Additionally, purchasers can view and pay their bill, update their payment method, and cancel their subscription.
+Self-service purchasers can manage their purchases in the limited view of the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339). Self-service purchasers can always get to the admin center from the **Admin** tile in the app launcher built into all Microsoft 365 and Dynamics online apps. Self-service purchasers can view the purchases they made, buy additional subscriptions to the same service, and assign licenses for those subscriptions to other users in their organization. Additionally, purchasers can view and pay their bill, update their payment method, and cancel their subscription.
 
 ### FAQ
 
