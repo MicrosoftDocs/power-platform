@@ -6,7 +6,7 @@ author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 1/14/2025
+ms.date: 06/18/2025
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
@@ -45,13 +45,13 @@ Microsoft Dataverse also supports polymorphic lookup fields, which can refer to 
 | **Customer**  | **Accounts** or **Contacts**                             |
 | **Regarding** | **Accounts**, **Contacts**, **Knowledge Articles**, etc. |
 
-In canvas-app formulas, use record references to work with polymorphic lookups. Because a record reference can refer to different tables, it's unclear which fields are available at runtime when writing a formula. The _Record.Field_ notation isn't available. Those formulas must adapt to the records that the app encounters when it runs.
+In canvas-app formulas, use record references to work with polymorphic lookups. Because a record reference can refer to different tables, you can't know which fields are available at runtime when you write a formula. The _Record.Field_ notation isn't available. These formulas need to adapt to the records that the app encounters when it runs.
 
-The **IsType** function tests if a record reference refers to a specific table type. The function returns a Boolean TRUE or FALSE.
+The **IsType** function checks if a record reference refers to a specific table type. The function returns a Boolean TRUE or FALSE.
 
-The **AsType** function treats a record reference as a specific table type, also known as _casting_. You can use the result as if it were a record of the table and again use the _Record.Field_ notation to access all of the fields of that record. An error occurs if the reference isn't of the specific type.
+The **AsType** function treats a record reference as a specific table type, also called _casting_. You use the result as if it's a record of the table and use the _Record.Field_ notation to access all the fields of that record. If the reference isn't of the specific type, an error occurs.
 
-Use these functions together to first test the table type of a record and then treat it as a record of that type so that the fields are available:
+Use these functions together to first check the table type of a record and then treat it as a record of that type so the fields are available:
 
 ```power-fx
 If( IsType( First( Accounts ).Owner, Users ),
@@ -60,7 +60,7 @@ If( IsType( First( Accounts ).Owner, Users ),
 )
 ```
 
-These functions are needed only if accessing the fields of a record reference. For example, you can use record references in the [**Filter**](function-filter-lookup.md) function without **IsType** or **AsType**:
+You need these functions only if you access the fields of a record reference. For example, you use record references in the [**Filter**](function-filter-lookup.md) function without **IsType** or **AsType**:
 
 ```power-fx
 Filter( Accounts, Owner = First( Users ) )
@@ -72,7 +72,7 @@ Similarly, you can use record references with the [**Patch**](function-patch.md)
 Patch( Accounts, First( Accounts ), { Owner: First( Teams ) } )
 ```
 
-When used in a record context, such as within a [**Gallery**](/power-apps/maker/canvas-apps/controls/control-gallery) or [**Edit form**](/power-apps/maker/canvas-apps/controls/control-form-detail) control, the [global disambiguation operator](operators.md#disambiguation-operator) might be needed to reference the table type. For example, this formula would be effective for a gallery that's displaying a list of contacts where **Company Name** is a **Customer** lookup:
+When you use these functions in a record context, such as within a [**Gallery**](/power-apps/maker/canvas-apps/controls/control-gallery) or [**Edit form**](/power-apps/maker/canvas-apps/controls/control-form-detail) control, you might need the [global disambiguation operator](operators.md#disambiguation-operator) to reference the table type. For example, this formula works for a gallery that displays a list of contacts where **Company Name** is a **Customer** lookup:
 
 ```power-fx
 If( IsType( ThisItem.'Company Name', Accounts ),
@@ -81,7 +81,7 @@ If( IsType( ThisItem.'Company Name', Accounts ),
 )
 ```
 
-For both functions, specify the type through the name of the data source connected to the table. For the formula to work, you must also add a data source to the app for any types that you want to test or cast. For example, you must add the **Users** table as a data source if you want to use **IsType** and **AsType** with an **Owner** lookup and records from that table. You can add only the data sources that you actually use in your app; you don't need to add all the tables that a lookup could reference.
+For both functions, specify the type by using the name of the data source connected to the table. For the formula to work, add a data source to the app for any types you want to check or cast. For example, add the **Users** table as a data source if you want to use **IsType** and **AsType** with an **Owner** lookup and records from that table. Add only the data sources you use in your app; you don't need to add all the tables that a lookup could reference.
 
 If the record reference is _blank_, **IsType** returns FALSE, and **AsType** returns _blank_. All fields of a _blank_ record are also _blank_.
 
@@ -89,32 +89,32 @@ If the record reference is _blank_, **IsType** returns FALSE, and **AsType** ret
 
 > [!IMPORTANT]
 > - Using **AsType** and **IsType** with **Dynamic** values is an experimental feature.
-> - Experimental features aren't meant for production use and may not be complete. These features are available before an official release so that you can get early access and provide feedback. More information: [**Understand experimental, preview, and retired features in canvas apps**](/power-apps/maker/canvas-apps/working-with-experimental-preview)
+> - Experimental features aren't meant for production use and might not be complete. These features are available before an official release so that you can get early access and provide feedback. More information: [**Understand experimental, preview, and retired features in canvas apps**](/power-apps/maker/canvas-apps/working-with-experimental-preview)
 > - The behavior that this article describes is available only when the **User-defined types** experimental feature in [**Settings &gt; Upcoming features &gt; Experimental**](/power-apps/maker/canvas-apps/working-with-experimental-preview#controlling-which-features-are-enabled) is turned on (it's off by default).
 > - Your feedback is valuable to us. Let us know what you think in the [**Power Apps experimental features community forum**](https://community.powerplatform.com/forums/thread/details/?threadid=c8824a08-8198-ef11-8a69-7c1e52494f33).
 
-A **Dynamic** value from a web API or the [**ParseJSON** function] needs to be converted to a specific typed value before it can be used in Power Fx. Options to do this include:
-1. Implicitly type the field at the point it's used. For example, an object is converted to a number if it's used with the `+` operator, if it can be converted to a number. This option can have unexpected conversions and can't convert records and tables as a whole.
-1. Explicitly type each field individually with the **Decimal**, **Text**, **DateTime**, **GUID**, and other type constructor functions. This is the most invasive to your formulas as each field must be done separately.
-1. Explicitly type JSON with the second argument to the **ParseJSON** function. This is an easy option that avoids needing the **Dynamic** value.
-1. Explicitly type a **Dynamic** value using the **AsType** function. You can also test type before attempting the conversion with the **IsType** function.
+A **Dynamic** value from a web API or the [**ParseJSON** function] needs to be converted to a specific typed value before you can use it in Power Fx. Here are some options:
+1. Implicitly type the field at the point you use it. For example, an object converts to a number if you use it with the `+` operator, if it can be converted to a number. This option can cause unexpected conversions and can't convert records and tables as a whole.
+1. Explicitly type each field individually with the **Decimal**, **Text**, **DateTime**, **GUID**, and other type constructor functions. This option is the most invasive to your formulas because you need to do each field separately.
+1. Explicitly type JSON with the second argument to the **ParseJSON** function. This option is easy and avoids needing the **Dynamic** value.
+1. Explicitly type a **Dynamic** value using the **AsType** function. You can also check the type before you try the conversion with the **IsType** function.
 
 ## Syntax
 
 **AsType**( _RecordReference_, _TableType_ )
 
-- _RecordReference_ - Required. A record reference, often a lookup field that can refer to a record in any of multiple tables.
-- _TableType_ - Required. The specific table to which the record should be cast.
+- _RecordReference_ - Required. A record reference, often a lookup field that refers to a record in any of several tables.
+- _TableType_ - Required. The specific table to cast the record to.
  
 **AsType**( _DynamicValue_, _TypeSpecification_ )
 
-- _DynamicValue_ - Required. A dynamic value from the [**ParseJSON** function](function-parsejson.md) or an API call.
-- _TypeSpecification_ - Required. A type name or type specification defined with the [**Type** function](function-type.md).
+- _DynamicValue_ - Required. A dynamic value from the [**ParseJSON** function](function-parsejson.md) or API call.
+- _TypeSpecification_ - Required. A type name or type specification you define with the [**Type** function](function-type.md).
 
 **IsType**( _RecordReference_, _TableType_ )
 
 - _RecordReference_ - Required. A record reference, often a lookup field that can refer to a record in any of multiple tables.
-- _TableType_ - Required. The specific table for which to test.
+- _TableType_ - Required. The specific table to test for.
 
 **IsType**( _DynamicValue_, _TypeSpecification_ )
 
@@ -129,17 +129,17 @@ A **Dynamic** value from a web API or the [**ParseJSON** function] needs to be c
 
 1. Create a blank canvas app for tablets.
 
-1. On the left-pane, select **Data** > **Add data**. And then, add **Accounts** and **Contacts** tables.
+1. On the left pane, select **Data** > **Add data**, and then add **Accounts** and **Contacts** tables.
 
    ![Blank app with two data sources: accounts and contacts.](media/function-astype-istype/contacts-add-datasources.png)
 
-1. On the left-pane, select **+** (Insert) > **Layout** > **Blank vertical gallery**.
+1. On the left pane, select **+** (Insert) > **Layout** > **Blank vertical gallery**.
 
    ![Insert a gallery control with a blank vertical layout.](media/function-astype-istype/contacts-customer-gallery.png)
 
 1. Select **Connect to data**, and then select **Contacts** as the data source.
 
-1. Set the gallery's layout to **Title and subtitle**.
+1. Set the gallery layout to **Title and subtitle**.
 
     > [!div class="mx-imgBorder"] 
     > ![Open the layout picker from the properties pane.](media/function-astype-istype/contacts-customer-layout.png)
@@ -172,11 +172,11 @@ A **Dynamic** value from a web API or the [**ParseJSON** function] needs to be c
 
    The subtitle in the gallery shows these values:
 
-   - "--" if the **'Company Name'** is _blank_.
-   - "Account: " and then the **Account Name** field from the **Accounts** table if the **Company Name** field refers to an account.
-   - "Contact: " and then the **Full Name** field from the **Contacts** table if the **Company Name** field refers to a contact.
+      - "--" if the **'Company Name'** is blank.
+   - "Account: " and the **Account Name** field from the **Accounts** table if the **Company Name** field refers to an account.
+   - "Contact: " and the **Full Name** field from the **Contacts** table if the **Company Name** field refers to a contact.
 
-   Your results might differ because the sample data might have been modified to show more types of results.
+   Your results can differ because the sample data can be modified to show more types of results.
 
 ### Dynamic values
 
@@ -210,7 +210,7 @@ And another alternative, this example explicitly converts the record to a typed 
 {a:1}
 ```
 
-Finally, if we weren't sure, this example tests the type before converting it with the **IsType** function.
+Finally, if you aren't sure, this example tests the type before converting it with the **IsType** function.
 
 ```powerapps-dot
 >> IsType( ParseJSON( "{""a"":1}" ), Type( {a: Number} ) )

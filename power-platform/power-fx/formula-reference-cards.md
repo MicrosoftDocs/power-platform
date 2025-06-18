@@ -6,7 +6,7 @@ author: devkeydet
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur-msft
-ms.date: 3/3/2025
+ms.date: 06/18/2025
 ms.subservice: power-fx
 search.audienceType:
   - developer

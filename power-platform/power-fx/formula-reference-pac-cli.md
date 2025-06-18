@@ -5,7 +5,7 @@ ms.author: marcsc
 author: devkeydet
 ms.reviewer: jdaly
 ms.topic: reference
-ms.date: 3/22/2024
+ms.date: 06/18/2025
 ms.subservice: power-fx
 search.audienceType:
   - developer

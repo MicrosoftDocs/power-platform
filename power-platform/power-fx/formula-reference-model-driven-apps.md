@@ -4,7 +4,7 @@ description: Reference information for functions, signals, and enumerations avai
 author: gregli-msft
 ms.topic: reference
 ms.reviewer: matp
-ms.date: 6/25/2024
+ms.date: 06/18/2025
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
