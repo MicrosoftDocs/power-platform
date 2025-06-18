@@ -81,7 +81,7 @@ For resources that are available in the Monitor experience, you can learn more a
 | Product | Resource | Availability in the Power Platform admin center | Availability in the maker experience |
 |---|---|---|---|
 | Power Apps | Canvas app | Preview | Preview |
-| Power Apps | Model-driven apps | Not yet available | Not yet available |
+| Power Apps | Model-driven apps | Preview | Preview |
 | Power Automate | Cloud flows | Preview | Not available. Use the [Automation center](/power-automate/automation-center-overview) for a similar experience. |
 | Power Automate | Desktop flows | Preview | Not available. Use the [Automation center](/power-automate/automation-center-overview) for a similar experience. |
 | Power Automate | Work queue | Not yet available| Not available. Use the [Automation center](/power-automate/automation-center-overview) for a similar experience. |
