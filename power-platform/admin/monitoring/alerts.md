@@ -16,23 +16,24 @@ search.audienceType:
 # Create alerts for your resources (preview)
 
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner.md)]
+
+Tenant and environment administrators in Power Platform can use _alerts_ to track the operational health of their resources. Admins can set up custom thresholds and receive notifications when metrics of their resources passes those thresholds. Alerts can be created on any metrics in the Monitor area of the Power Platform admin center.
+
+Keep the following definitions in mind:
+
+- Alert rules are alerts that admins create to monitor their resources. You can edit, delete, and turn an alert rule on or off. Alert rules can be placed on an environment or an individual resource 
+- A triggered alert is when one or more of the resources that are being monitored by an alert rule passes the threshold defined by the admin who configured the alert rule. You can select the triggered alert to find what resources triggered the alert rule, and recommendations for how to improve the resources if it’s in a managed environment. 
+
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
-## Overview
-Tenant and environment administrators in Power Platform Monitor can use alerts to track the operational health of their resources by setting custom thresholds and receive notifications when metrics of their resources passes those thresholds. Alerts can be created on any metrics in Monitor. The alert feature is only available in the Power Platform admin center.  
+## Use cases for alerts
+- Teams and admins can use alerts to discover resources with more than their expected use. For example, an administrator can create an alert to let them know if apps in the default environment exceed 50 launches a day.
+- Trams can use alerts to find resources with degraded health to engage their makers to fix.
+- For operations, they can create alerts to let them know if apps in their production environment are slow to open for end-users. 
 
-There are multiple use cases for Power Platform Monitor alerts:
-1.	Center of enablement teams and administrators can use alerts to discover resources with more than their expected use. For example, an administrator can create an alert to let them know if apps in the default environment exceed 50 launches a day.
-3.	Center of enablement teams can also use alerts to find resources with degraded health to engage their makers to fix
-4.	For operations, they can create alerts to let them know if apps in their production environment are slow to open for end-users. 
-
-### Definitions:
-1.	Alert rules are alerts that admins create to monitor their resources. You can edit, delete, and turn an alert rule on or off. Alert rules can be placed on an environment or an individual resource 
-2.	A triggered alert is when one or more of the resources that are being monitored by an alert rule passes the threshold defined by the administrator who configured the alert rule. You can click into the triggered alert to find what resource(s) triggered the alert rule, and recommendations for how to improve the resource(s) if it’s in a Managed Environment. 
-
-### Pre-requisites
--	You must be a tenant administrator or an environment administrator to access Alerts 
--	Alerts can only be placed on a Managed Environment or a resource in a Managed Environment
+## Prerequisites
+-	You must be a tenant administrator or an environment administrator to access alerts. 
+-	Alerts can only be placed on a managed environment, or a resource in a managed environment
 
 ## How to create an alert 
 First, go to Monitor in PPAC and then click on “Alerts” in the left navigation:
@@ -72,8 +73,8 @@ You can click on any of the resources in this triggered alert to bring out a pan
 
 
 ### Notes:
--	You can have 25 alerts enabled at a time, but can create an unlimited amount of alerts. Consider deleting or disabling any existing alert if you’ve reached the maximum
--	Alerts are evaluated after new metrics are produced. Currently, all metrics are 24 hour aggregates, which means an alert rule in Monitor will be evaluated every 24 hours after the newest 24 hour aggregates are produced. The alert rule will also do an on demand evaluation upon its creation. 
+-	You can have 25 alerts used at a time. However, you can create an unlimited amount of alerts. Consider deleting or turning off any existing alert if you’ve reached the maximum.
+-	Alerts are evaluated after new metrics are produced. Currently, all metrics are 24 hour aggregates, which means an alert rule in the Monitor area is evaluated every 24 hours after the newest 24 hour aggregates are produced. The alert rule does an on-demand evaluation upon its creation. 
 
 
 
