@@ -50,7 +50,7 @@ Follow these steps to assign Hosted Process capacity to an environment:
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. Select **Licensing** in the navigation pane.
 1. In the **Licensing** pane, select **Capacity add-ons**. 
-1. Select **Add-ons**
+1. Select **Add-ons**.
 1. Select the edit button on an environment.
 1. Enter the amount of each add-on you would like to allocate to each environment.
 
@@ -137,7 +137,7 @@ After you assign the Process licenses to an environment, you can choose which fl
 
    When you select a flow, you see a new section in the details pane that tells you if the flow is assigned to a user, or if it's part of the Process license. The default for a flow is to use the license of the user.
 
-1. To have a flow use the Process license, select **Edit** in the details panel. You then see the **Name**, **Description, and **Plan** that the flow uses. If your environment has the Process license assigned, you can move that flow to use the Process license. Otherwise, you need to assign capacity.
+1. To have a flow use the Process license, select **Edit** in the details panel. You then see the **Name**, **Description**, and **Plan** that the flow uses. If your environment has the Process license assigned, you can move that flow to use the Process license. Otherwise, you need to assign capacity.
 
    ![Image that shows that not per flow capacity is available.](../media/power-automate-licensing/per-flow-plan-capacity-needed.png)
 
