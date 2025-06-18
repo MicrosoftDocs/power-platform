@@ -17,6 +17,7 @@ ms.contributors:
 - ceian
 - dasuss 
 ---
+
 # Dataverse capacity-based storage overview
 
 Key enhancements to the admin experience for the Microsoft Power Platform admin center include:
@@ -85,7 +86,7 @@ If your database storage is over capacity, admins can't copy or restore any of t
 
 :::image type="content" source="media/capacity-overage.png" alt-text="Storage exceeding capacity.":::
 
-<Require a similar image in green PPAC>
+**Request:** Require a similar image in green PPAC
 
 You can request a temporary (30-day) extension that allows copy and restore operations during the extension. To do so, follow these steps.
 
@@ -102,8 +103,7 @@ You can request a temporary (30-day) extension that allows copy and restore oper
 7. Select **Confirm**.
 8. The **Copy environment** page appears where you can select **Request an extension**.
 
-<Require a proper image to request an extension in green PPAC>
-
+**Request:** Require a proper image to request an extension in green PPAC
 
 ###### [Classic admin center](#tab/old)
 
@@ -129,25 +129,25 @@ You can request a temporary (30-day) extension that allows copy and restore oper
 
 2. If you're running low on storage capacity, you see the following banner. In the banner at the top of the page, select **Enable capacity extension**.
 
-<Require a proper image for this step in green PPAC>
+**Request:** Require a proper image for this step in green PPAC
 
 3. Review the details of the capacity overage. The 25% capacity is calculated based on capacity used and applies to each capacity type (database, file, and log). Select **Enable capacity extension**.
 
-<Require a proper image for this step in green PPAC>
+**Request:** Require a proper image for this step in green PPAC
 
 4. Review the details of the capacity overage. The 25% capacity is calculated based on capacity used and applies to each capacity type (database, file, and log). Select **Enable capacity extension**.
 
-<Require a proper image for this step in green PPAC>
+**Request:** Require a proper image for this step in green PPAC
 
 5. Select **Confirm**.
 
 6. A banner displays the temporary capacity extension is now active.
 
-   <Require a proper image for this step in green PPAC>
+   **Request:** Require a proper image for this step in green PPAC
 
    After turning on the extension, for the next 30 days the extra capacity appears in the Power Platform admin center **Capacity** page (**Resources** > **Capacity** > **Summary**).
 
-   <Require a proper image for this step in green PPAC>  
+   **Request:** Require a proper image for this step in green PPAC  
 
 
 ###### [Classic admin center](#tab/old)
@@ -202,6 +202,7 @@ You can request a temporary (30-day) extension that allows copy and restore oper
 | April 2025 | We are making internal adjustments to how Web Resources are stored in a Dataverse organization. Web Resources continue to be reported as file store, however, customers may see the size of *WebResourceBase* fluctuate as storage is transitioned internally. Dataverse doesn't expect storage to significantly increase for *WebResourceBase*, but may temporarily drop as files are transitioned. |
 
 ### Related information
+
 [Legacy storage capacity](legacy-capacity-storage.md)<br>
 [Dataverse storage capacity](capacity-storage.md)<br>
 [Free up storage space](free-storage-space.md)<br>
