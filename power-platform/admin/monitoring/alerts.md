@@ -36,12 +36,14 @@ There are multiple use cases for Power Platform Monitor alerts:
 
 ## How to create an alert 
 First, go to Monitor in PPAC and then click on “Alerts” in the left navigation:
-[!INCLUDE [file-name](~/../)]
+
+:::image type="content" source="media/Alert rules page.png" alt-text="Screenshot of the Alert rules page in Power Platform Monitor.":::
 
 You can manage your existing alert rules in the “Alert rules” tab. Use the three dot menu to see options for editing or deleting your alert rule. Additionally, turn your alert rule on or off by using the toggle in the Status column.
 
 Click on “+ Alert rule” to create your new alert rule
-[!INCLUDE [file-name](~/../)]
+
+:::image type="content" source="media/Alert configuration panel description.png" alt-text="Screenshot of the alert rule configuration panel with numbers corresponding to the list below, describing what each field in the panel is for.":::
 
 In the panel, you’ll need to configure the following information:
 1.	The name of your alert
@@ -58,11 +60,13 @@ In the panel, you’ll need to configure the following information:
 
 Once you’ve created your alert, it’ll do an on-demand evaluation and scan all the applicable resources under its scope. If you selected “Email” and any resource triggers the alert, you’ll get an email notifying you that your alert was triggered. 
 
-[!INCLUDE [file-name](~/../)]
+:::image type="content" source="media/Alert email.png" alt-text="Screenshot of an email notification that your Power Platform Monitor alert was triggered.":::
 
 Clicking on “Go to Alert” will bring you to this page, where you can see information on the triggered alert and what resources triggered it:
-[!INCLUDE [file-name](~/../)]
-[!INCLUDE [file-name](~/../)]
+
+:::image type="content" source="media/triggered alert page.png" alt-text="Screenshot of triggered alert tab in Power Platform Monitor.":::
+
+:::image type="content" source="media/inside triggered alert.png" alt-text="Screenshot of a triggered alert in Power Platform Monitor.":::
 
 You can click on any of the resources in this triggered alert to bring out a panel that shows timeseries information for all applicable metrics for that resource, and recommendations for how to improve the metric if it’s suboptimal.
 
