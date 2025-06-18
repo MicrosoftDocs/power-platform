@@ -1,7 +1,7 @@
 ---
 title: How do I check my online service health?
 description: Learn how to quickly get the real-time status of your Microsoft Power Platform, Microsoft Dynamics 365, and Microsoft 365 services.
-ms.date: 06/16/2025
+ms.date: 06/18/2025
 ms.reviewer: sericks
 ms.topic: concept-article
 author: karacortez
@@ -17,7 +17,7 @@ ms.contributors:
 
 [!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
-If you're experiencing problems with a cloud service, you can check the service health to determine whether this is a known issue with a resolution in progress before you call support or spend time troubleshooting. 
+If you're experiencing problems with a cloud service, you can check the service health to determine whether this is a known issue&mdash;with a resolution in progress&mdash;before you call support or spend time troubleshooting. 
 
 ## Service health in the Power Platform admin center
 
@@ -25,19 +25,13 @@ You can view service health notifications by sigining into the [Power Platform a
 
 ### View a snapshot of service health
 
-From the Home page dashboard, you can add Service health and Message center cards for a quicker view of active issues, or unread messgaes. 
+From the **Home** page, you can add **Service health** and **Message center** cards for a quicker view of active issues, or unread messgaes. 
 
-![image](https://github.com/user-attachments/assets/f58d81c4-c5c0-4762-a4d3-30e17e01b924)
-
-To view all service health issues affecting your tenant in the last 30 days, select **Support** \> **Service health**. 
-
-![image](https://github.com/user-attachments/assets/b140c78e-73ca-473a-b3d2-9e50d19fa865)
-
-Learn more in [View service health](view-service-health.md).
+To view all service health issues affecting your tenant in the last 30 days, go to [View service health](view-service-health.md).
 
 ## Service health in the Microsoft 365 admin center
 
-The dashboard in the Microsoft 365 admin center provides a comprehensive view of the service health of your online services. Learn more [here](https://learn.microsoft.com/en-us/microsoft-365/enterprise/view-service-health?view=o365-worldwide).
+The dashboard in the Microsoft 365 admin center provides a comprehensive view of the service health of your online services. Learn more in [How to check Microsoft 365 service health](/microsoft-365/enterprise/view-service-health).
 
 ### View a snapshot of service health
 
@@ -54,7 +48,7 @@ You can also view the history of incidents and advisories that were resolved in 
 
 To keep track of upcoming changes, including new and changed features, planned maintenance, or other important announcements, select **Health** \> **Message center** from the navigation menu in the Microsoft 365 admin center. 
 
-Learn more about Message center [here](https://learn.microsoft.com/en-us/microsoft-365/admin/manage/message-center?view=o365-worldwide).
+Learn more about Message center in [Track new and changed features in the Microsoft 365 Message center](/microsoft-365/admin/manage/message-center?view=o365-worldwide).
 
 ## Related information
 
