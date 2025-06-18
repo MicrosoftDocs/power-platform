@@ -20,7 +20,7 @@
           href: global.md
         - name: Regular expressions
           href: regular-expressions.md
-        - name: Dynamic data type
+        - name: Dynamic values
           href: untyped-object.md
         - name: Working with JSON
           href: working-with-json.md
