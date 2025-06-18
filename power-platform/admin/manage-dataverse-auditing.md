@@ -350,12 +350,13 @@ System administrators or customizers can change the default audit settings for t
 Learn more in [Dataverse developer guide: Configure auditing > Configure tables and columns](/power-apps/developer/data-platform/auditing/configure#configure-tables-and-columns).
 
 ### Turn on or off auditing for Choice data type's original label  (Preview)
-By default, the current label description of the **choice** data type is shown in the audit logs, for example if you have a choice column for **color** and the label description can be 'red', 'white' and 'blue'. When a user selected 'red' and updated the record, the audit record would show that 'red' was selected. If the label description is later changed to 'pink' in the choice data type, the audit record would display 'pink'.
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
+By default, the current label description of the **Choice** data type is shown in the audit logs. For example, suppose you have a choice column for **color** and the label description can be _red_, _white_, and _blue_. When a user selects _red_ and updates the record, the audit record shows that _red_ was selected. If the label description is later changed to _pink_ in the choice data type, the audit record displays _pink_.
 
-If you want to show the original label in the audit logs, you can enable this auditsetting **{\"StoreLabelNameforPicklistAudits\":true}**. See how to [enable auditsettings](https://learn.microsoft.com/power-apps/developer/data-platform/auditing/configure?tabs=webapi#change-auditsettings).
+If you want to show the original label in the audit logs, you can allow this auditsetting **{\"StoreLabelNameforPicklistAudits\":true}**. Learn how to [enable auditsettings](/power-apps/developer/data-platform/auditing/configure?tabs=webapi#change-auditsettings).
 
 > [!NOTE]
-> When this **StoreLabelNameforPicklistAudits** is set to true, the new audit user experience on viewing the audit records can be found in the [audit summary view](new#use-the-audit-summary-view). The [audit history in model-driven app](#use-the-audit-history-in-a-model-driven-app) continues to show the by default behavior.
+> When the **StoreLabelNameforPicklistAudits** is set to true, the new audit user experience on viewing the audit records can be found in the [Audit Summary view](#use-the-audit-summary-view). The [audit history in model-driven app](#use-the-audit-history-in-a-model-driven-app) continues to show the _by default_ behavior.
 
 ## Use the Audit History in a model-driven app
 
