@@ -21,11 +21,11 @@ If you're experiencing problems with a cloud service, you can check the service 
 
 ## Service health in the Power Platform admin center
 
-You can view service health notifications by sigining into the [Power Platform admin center](https://admin.powerplatform.microsoft.com/home) with an admin account.
+You can view service health notifications by signing into the [Power Platform admin center](https://admin.powerplatform.microsoft.com/home) with an admin account.
 
 ### View a snapshot of service health
 
-From the **Home** page, you can add **Service health** and **Message center** cards for a quicker view of active issues, or unread messgaes. 
+From the **Home** page, you can add **Service health** and **Message center** cards for a quicker view of active issues, or unread messages. 
 
 To view all service health issues affecting your tenant in the last 30 days, go to [View service health](view-service-health.md).
 
@@ -42,7 +42,7 @@ Select **Health** \> **Service health** from the navigation menu.
 You can also view the history of incidents and advisories that were resolved in the past 7 to 30 days by selecting the **Issue history** tab.
 
 > [!NOTE]
-> If the Power Platform or Microsoft 365 admin portals are unavailable or experiencing issues, we will provide status updates through the unauthenticated [Service Health Status](https://status.cloud.microsoft) page. 
+> If the Power Platform or Microsoft 365 admin portals are unavailable or experiencing issues, we provide status updates through the unauthenticated [Service Health Status](https://status.cloud.microsoft) page. 
 
 ### View and track service changes
 
