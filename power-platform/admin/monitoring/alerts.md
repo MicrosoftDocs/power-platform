@@ -4,8 +4,7 @@ description: Learn more about how to create alerts to monitor your resources in 
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/17/2025
-ms.custom: NewPPAC
+ms.date: 06/18/2025
 author: arjunmayur
 ms.author: arjunmayur
 ms.reviewer: sericks
