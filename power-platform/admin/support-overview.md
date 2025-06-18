@@ -21,7 +21,7 @@ Products and services covered include:
 
 - Microsoft Dynamics 365 and Power Platform services released to general availability and purchased from Microsoft are covered by all support plans.
 - Microsoft Dynamics 365 and Power Platform public previews are covered by all support plans.
-- Support for services purchased through another channel (other than purchased online, for example, Enterprise Agreement) are governed by the agreement terms for that purchase.
+- Support for services purchased through another channel (other than purchased online, for example, Enterprise Agreement) is governed by the agreement terms for that purchase.
 
 ## Severity and responsiveness
 _Initial response time_ is the period from when you submit your support request to when a Microsoft Support engineer contacts you and starts working on your support request. The initial response time varies with both the support plan and the business impact of the request (also known as _severity_). The initial response times for Unified Support plans can be found in [Unified Enterprise Plan Details](https://www.microsoft.com/microsoft-unified/plan-details).
@@ -43,7 +43,7 @@ Keep the following information in mind:
 - [Dynamics 365 support](https://www.microsoft.com/en-us/dynamics-365/support)
 - [On-premises support](https://support.serviceshub.microsoft.com/supportforbusiness/onboarding?origin=/supportforbusiness/create)
 - [Get support for Microsoft 365 for business](/microsoft-365/admin/get-help-support)
-- [Volumne licensing information](https://www.microsoft.com/licensing/servicecenter/home.aspx)
+- [Volume licensing information](https://www.microsoft.com/licensing/servicecenter/home.aspx)
 
 ## Technical support vs. advisory services
 - Technical support, _break-fix_ issues are technical problems you experience while using services. _Break-fix_ is an industry term that refers to _work involved in supporting a technology when it fails in the normal course of its function, which requires intervention by a support organization to be restored to working order_.
