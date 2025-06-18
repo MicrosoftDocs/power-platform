@@ -232,7 +232,7 @@ Learn more in the [Configure organization settings](/power-apps/developer/data-p
 
 This task requires the System Administrator or System Customizer role or equivalent permissions.
 
-This feature allows you to quickly turn on auditing for multiple tables (entities) simultaneously. The grouping of tables corresponds to a Dynamics 365 application for example, Sales tables correspond to the Sales Hub app.
+This feature allows you to quickly turn on auditing for multiple tables (entities) simultaneously. The grouping of tables corresponds to a Dynamics 365 application, for example, Sales tables correspond to the Sales Hub app.
 
 1. In the web app, go to **Settings** (![Settings.](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
 
