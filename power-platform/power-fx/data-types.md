@@ -1,6 +1,6 @@
 ---
 title: Data types
-description: description: Discover the different data types in Power Fx, how they work, and how to use them effectively in your apps. Learn more and get started today.
+description: Discover the different data types in Power Fx, how they work, and how to use them effectively in your apps. Learn more and get started today.
 author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
@@ -15,7 +15,6 @@ contributors:
   - mduelae
   - gregli
 ---
-
 # Data types
 
 Information flows through Power Fx in small, discrete values, like the cells of a spreadsheet. For example, data in a **Birthday** field and an **Anniversary** field both flow through as a **Date** value that includes the year, month, and day. Power Fx formats these values, constrains input to what's appropriate for each, and shares the values with a database. Birthdays and anniversaries might differ to people, but the system handles them in the same way. In this case, **Date** is an example of a [data type](https://en.wikipedia.org/wiki/Data_type).
