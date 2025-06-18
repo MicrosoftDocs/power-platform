@@ -5,7 +5,7 @@ author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur-msft
-ms.date: 3/22/2024
+ms.date: 06/18/2025
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
@@ -18,14 +18,14 @@ contributors:
 
 # Formula reference - canvas apps
 
-In this article, learn about all the functions available in canvas apps.
+This article explains all the functions you can use in canvas apps.
 
-Formulas in canvas apps combine many elements. Listed below are:
+Formulas in canvas apps combine several elements. Here are the main types:
 
-- **Functions** take parameters, perform an operation, and return a value. For example, **Sqrt(25)** returns **5**. Functions are modeled after Microsoft Excel functions. Some functions have side effects, such as **SubmitForm**, which are appropriate only in a [behavior formula](/power-apps/maker/canvas-apps/working-with-formulas-in-depth) such as **Button.OnSelect**.
+- **Functions** take parameters, perform an operation, and return a value. For example, **Sqrt(25)** returns **5**. Functions are similar to Microsoft Excel functions. Some functions can have side effects, like **SubmitForm**, which you use only in a [behavior formula](/power-apps/maker/canvas-apps/working-with-formulas-in-depth) such as **Button.OnSelect**.
 - **Signals** return information about the environment. For example, **[Location](reference/signals.md)** returns the device's current GPS coordinates. Signals don't take parameters or have side effects.
-- **Enumerations** return a pre-defined constant value. For example, **[Color](reference/function-colors.md)** is an enumeration that has pre-defined values for **Color.Red**, **Color.Blue**, and so forth. Common enumerations are included here; function-specific enumerations are described with the function.
-- **Named operators**, such as **[ThisItem](reference/operators.md#thisitem-thisrecord-and-as-operators)** and **[Self](reference/operators.md#self-and-parent-operators)**, provide access to information from within a container.
+- **Enumerations** return a predefined constant value. For example, **[Color](reference/function-colors.md)** is an enumeration with predefined values like **Color.Red** and **Color.Blue**. Common enumerations are included here, and function-specific enumerations are described with the function.
+- **Named operators**, like **[ThisItem](reference/operators.md#thisitem-thisrecord-and-as-operators)** and **[Self](reference/operators.md#self-and-parent-operators)**, let you access information from within a container.
 
 Other elements include:
 
@@ -35,7 +35,7 @@ Other elements include:
 
 ## <a id="-a"></a> A
 
-**[Abs](reference/function-numericals.md)** – Absolute value of a number.
+**[Abs](reference/function-numericals.md)** – Returns the absolute value of a number.
 
 **[Acceleration](reference/signals.md)** – Reads the acceleration sensor in your device.
 
@@ -43,13 +43,13 @@ Other elements include:
 
 **[Acot](reference/function-trig.md)** – Returns the arccotangent of a number, in radians.
 
-**[AddColumns](reference/function-table-shaping.md)** – Returns a table with [columns](/power-apps/maker/canvas-apps/working-with-tables#columns) added.
+**[AddColumns](reference/function-table-shaping.md)** – Returns a table with additional [columns](/power-apps/maker/canvas-apps/working-with-tables#columns).
 
 **[And](reference/function-logicals.md)** – Boolean logic AND. Returns **true** if all arguments are **true**. You can also use the [**&&** operator](reference/operators.md).
 
-**[AIClassify](reference/function-ai.md)** – Classifies text into one or more of categories.
+**[AIClassify](reference/function-ai.md)** – Classifies text into one or more categories.
 
-**[AIExtract](reference/function-ai.md)** – Extracts specified entities such as registration numbers, phone numbers, or names of people.
+**[AIExtract](reference/function-ai.md)** – Extracts specified entities like registration numbers, phone numbers, or people’s names.
 
 **[AIReply](reference/function-ai.md)** – Drafts a reply to the message that you provide.
 
@@ -57,15 +57,15 @@ Other elements include:
 
 **[AISummarize](reference/function-ai.md)** – Summarizes the text that you provide.
 
-**[AITranslate](reference/function-ai.md)** – Translates text from another language.
+**[AITranslate](reference/function-ai.md)** – Translates text from one language to another.
 
-**[App](reference/object-app.md)** – Provides information about the currently running app and control over the app's behavior.
+**[App](reference/object-app.md)** – Provides information about the currently running app and lets you control the app's behavior.
 
 **[Asin](reference/function-trig.md)** – Returns the arcsine of a number, in radians.
 
 **[Assert](reference/function-assert.md)** – Evaluates to true or false in a test.
 
-**[As](reference/operators.md#thisitem-thisrecord-and-as-operators)** – Names the current record in gallery, form, and record scope functions such as **ForAll**, **With**, and **Sum**.
+**[As](reference/operators.md#thisitem-thisrecord-and-as-operators)** – Names the current record in gallery, form, and record scope functions like **ForAll**, **With**, and **Sum**.
 
 **[AsType](reference/function-astype-istype.md)** – Treats a record reference as a specific table type.
 
@@ -77,9 +77,9 @@ Other elements include:
 
 ## B
 
-**[Back](reference/function-navigate.md)** – Displays the previous screen.
+**[Back](reference/function-navigate.md)** – Shows the previous screen.
 
-**[Blank](reference/function-isblank-isempty.md)** – Returns a _blank_ value that can be used to insert a NULL value in a data source.
+**[Blank](reference/function-isblank-isempty.md)** – Returns a _blank_ value you can use to insert a NULL value in a data source.
 
 **[Boolean](reference/function-boolean.md)** – Converts a text string, number, or dynamic value to a Boolean value.
 
