@@ -1,6 +1,6 @@
 ---
-title: Dynamic data type
-description: Reference information about the Dynamic type in Power Fx.
+title: Dynamic values
+description: Reference information about Dynamic values in Power Fx.
 author: gregli
 
 ms.topic: reference
@@ -15,7 +15,7 @@ contributors:
   - gregli
   - mduelae
 ---
-# Dynamic data type
+# Dynamic values
 
 **Dynamic** is a data type in Power Fx that can hold any data structure, complex or simple. It can't be used directly and conversion to another data type at runtime, either explicitly or implicitly. Fields of records in a **Dynamic** can be accessed using the dot notation, and existence of fields is only verified at runtime.
 
