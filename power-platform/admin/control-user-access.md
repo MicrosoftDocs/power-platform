@@ -12,6 +12,7 @@ ms.contributors:
   - sericks
   - syalandur
 contributors:
+  - thomasjeffries11 
   - iscohen-microsoft 
   - praveenmantha
   - paulliew
@@ -20,7 +21,7 @@ contributors:
 ms.custom: "admin-security"
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 06/16/2025
+ms.date: 06/18/2025
 search.audienceType: 
   - admin
 ---
