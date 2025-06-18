@@ -17,19 +17,19 @@ search.audienceType:
 
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-Tenant and environment administrators in Power Platform can use _alerts_ to track the operational health of their resources. Admins can set up custom thresholds and receive notifications when metrics of their resources passes those thresholds. Alerts can be created on any metrics in the Monitor area of the Power Platform admin center.
+Tenant and environment administrators in Power Platform can use _alerts_ to track the operational health of their resources. Admins can set up custom thresholds and receive notifications when metrics for their resources pass specific thresholds. Alerts can be created on any metrics in the Monitor area of the Power Platform admin center.
 
 Keep the following principles in mind:
 
 - Alert rules are alerts that admins create to monitor their resources. You can edit, delete, and turn an alert rule on or off. Alert rules can be placed on an environment or an individual resource.
-- A triggered alert is when one or more of the resources that are being monitored by an alert rule passes the threshold defined by the admin who configured the alert rule. You can select the triggered alert to find what resources triggered the alert rule, and recommendations for how to improve the resources if it’s in a managed environment. 
+- A triggered alert is when one or more of the resources that are being monitored by an alert rule pass specific thresholds defined by the admin who configured the alert rule. You can select the triggered alert to learn what resources triggered the alert rule, and get recommendations for how to improve the resources if it’s in a managed environment. 
 
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
 ## Use cases for alerts
-- Teams and admins can use alerts to discover resources with more than their expected use. For example, an administrator can create an alert to let them know if apps in the default environment exceed 50 launches a day.
-- Trams can use alerts to find resources with degraded health to engage their makers to fix.
-- For operations, they can create alerts to let them know if apps in their production environment are slow to open for end-users. 
+- Teams and admins can use alerts to discover resources that are used more than expected. For example, an administrator can create an alert to let them know if apps in the default environment exceed 50 launches a day.
+- Teams can use alerts to find resources with degraded health&mdash;and engage with their makers to find resolutions.
+- For operations, admins can create alerts to let them know if apps in their production environment are slow to open for end-users. 
 
 ## Prerequisites
 -	You must be a tenant administrator or an environment administrator to access alerts. 
