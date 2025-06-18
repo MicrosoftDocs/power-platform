@@ -51,7 +51,7 @@ Note the following information about security groups:
 
   An example of this scenario: you assigned a security group for the environment when the environment was created. During the lifecycle of the environment, you want to add members to the environment that are managed by security groups. You create a security group in Microsoft Entra ID—managers, for example—and assign all your managers to the group. You then add this security group as a child of the environment security group, create a [Dataverse group team](manage-group-teams.md#create-a-group-team), and assign a security role to the group team. Your managers can now access Dataverse immediately.   
   
-  A member of a nested security group is also added into the environment at run time when the member accesses the environment the first time. But the member won't be able to run any application and access any data until a security role is assigned.   
+  A member of a nested security group is also added into the environment at run time when the member accesses the environment the first time. But the member won't be able to run model-driven apps or access Dataverse data until a security role is assigned.   
   
 - When users are added to the security group, they're added to the environment.  
 - When users are removed from the group, they're disabled in the environment.  
