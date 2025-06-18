@@ -3,7 +3,7 @@ title: Manage Dataverse auditing
 description: Configure Dataverse auditing to log changes to customer records, user access, operations on records, and security roles. This feature meets external and internal auditing, compliance, security, and governance policies.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 06/04/2025
+ms.date: 06/18/2025
 author: paulliew 
 ms.subservice: admin
 ms.author: paulliew 
@@ -348,6 +348,14 @@ System administrators or customizers can change the default audit settings for t
 1. Publish the customization. To publish for a single table, choose the table, such as Account, and then select **Publish** on the toolbar. 
 
 Learn more in [Dataverse developer guide: Configure auditing > Configure tables and columns](/power-apps/developer/data-platform/auditing/configure#configure-tables-and-columns).
+
+### Turn on or off auditing for Choice data type's original label  (Preview)
+By default, the current label description of the **choice** data type is shown in the audit logs, for example if you have a choice column for **color** and the label description can be 'red', 'white' and 'blue'. When a user selected 'red' and updated the record, the audit record would show that 'red' was selected. If the label description is later changed to 'pink' in the choice data type, the audit record would display 'pink'.
+
+If you want to show the original label in the audit logs, you can enable this auditsetting **{\"StoreLabelNameforPicklistAudits\":true}**. See how to [enable auditsettings](https://learn.microsoft.com/power-apps/developer/data-platform/auditing/configure?tabs=webapi#change-auditsettings).
+
+> [!NOTE]
+> When this **StoreLabelNameforPicklistAudits** is set to true, the new audit user experience on viewing the audit records can be found in the [audit summary view](new#use-the-audit-summary-view). The [audit history in model-driven app](#use-the-audit-history-in-a-model-driven-app) continues to show the by default behavior.
 
 ## Use the Audit History in a model-driven app
 
