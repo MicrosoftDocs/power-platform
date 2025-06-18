@@ -17,7 +17,7 @@
         ],
         "summary": "Get Bot Quarantine Status.",
         "description": "Retrieve the quarantine status of a bot.",
-        "operationId": "getBotQuarantineStatus",
+        "operationId": "GetBotQuarantineStatus",
         "produces": [
           "application/json"
         ],
@@ -62,7 +62,7 @@
         ],
         "summary": "Set Bot as Quarantined.",
         "description": "Set the quarantine status of a bot to true.",
-        "operationId": "setBotAsQuarantined",
+        "operationId": "SetBotAsQuarantined",
         "produces": [
           "application/json"
         ],
@@ -107,7 +107,7 @@
         ],
         "summary": "Set Bot as Unquarantined.",
         "description": "Set the quarantine status of a bot to false.",
-        "operationId": "setBotAsUnquarantined",
+        "operationId": "SetBotAsUnquarantined",
         "produces": [
           "application/json"
         ],

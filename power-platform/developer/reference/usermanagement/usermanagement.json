@@ -13,7 +13,7 @@
     "/usermanagement/environments/{environmentId}/syncReport": {
       "get": {
         "tags": [
-          "Environments"
+          "Users"
         ],
         "summary": "Get the user sync report for the requested environment.",
         "operationId": "GetSyncReport",
@@ -81,7 +81,7 @@
     "/usermanagement/environments/{environmentId}/users/{userObjectId}/applyUser": {
       "post": {
         "tags": [
-          "Environments"
+          "Users"
         ],
         "summary": "Apply the user to the target environment.",
         "operationId": "ApplyUser",
@@ -120,7 +120,7 @@
     "/usermanagement/environments/{environmentId}/users/{userObjectId}/tryApplyUser": {
       "post": {
         "tags": [
-          "Environments"
+          "Users"
         ],
         "summary": "Apply user validation to the target environment.",
         "operationId": "TryApplyUser",
