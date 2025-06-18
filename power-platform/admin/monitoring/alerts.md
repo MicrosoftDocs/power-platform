@@ -19,9 +19,9 @@ search.audienceType:
 
 Tenant and environment administrators in Power Platform can use _alerts_ to track the operational health of their resources. Admins can set up custom thresholds and receive notifications when metrics of their resources passes those thresholds. Alerts can be created on any metrics in the Monitor area of the Power Platform admin center.
 
-Keep the following definitions in mind:
+Keep the following principles in mind:
 
-- Alert rules are alerts that admins create to monitor their resources. You can edit, delete, and turn an alert rule on or off. Alert rules can be placed on an environment or an individual resource 
+- Alert rules are alerts that admins create to monitor their resources. You can edit, delete, and turn an alert rule on or off. Alert rules can be placed on an environment or an individual resource.
 - A triggered alert is when one or more of the resources that are being monitored by an alert rule passes the threshold defined by the admin who configured the alert rule. You can select the triggered alert to find what resources triggered the alert rule, and recommendations for how to improve the resources if it’s in a managed environment. 
 
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
@@ -36,48 +36,37 @@ Keep the following definitions in mind:
 -	Alerts can only be placed on a managed environment, or a resource in a managed environment.
 -	You must be using the [new and improved Power Platform admin center](../new-admin-center.md).
 
-## How to create an alert 
-First, go to Monitor in PPAC and then click on “Alerts” in the left navigation:
+## Create an alert 
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Monitor**.
+1. In the **Monitor** pane, select **Alerts**. The **Alerts** page is displayed.
+    > [!Note]
+    > You can manage your existing alert rules in the **Alert rules** tab. Use the **More user actions** icon to see options for editing or deleting your alert rule. You can also turn your alert rule on or off by using the toggle in the **Status** column.
+1. Select **+ Alert rule** to create your new alert rule. The **New alert rule** pane is displayed.
+1. In the **Alert rule name** field, enter the name of your alert.
+1. In the **Product** list, select the product you want to monitor with the alert, **Power Apps** or **Power Automate**.
+1. In the **Product type** list, select what you're going to monitor with the alert. For example, select **Canvas app** or **Model-driven app** for Power Apps, or **Cloud flow** or **Desktop flow** for Power Automate.
+1. In the **Scope** list, select the resource you're going to monitor with the alert. You can either place an alert on an **environment** to monitor all items of a specific type&mdash;such as all canvas apps in my production environment&mdash;or place it on an individual resource.
+1. In the **Id** field, enter the environment or resource ID that want to monitor with the alert.
+1. In the **Metric** list, select the metric that you would like to create your custom threshold against. The available metrics that alerts support and what they mean can be found in [Metrics and recommendations for Power Apps](monitor-power-apps.md) and [Metrics and recommendations for Power Automate](monitor-power-automate.md).
+1. In the **Operator** list, select an operator to define your threshold. The options are **Is Under**, **Is Over**, or **Equals**.
+1. In the **Select value** list, use the arrow icons to increase or decrease the value.
+1. In the **Severity** list, select **Low**, **Medium**, or **High**.
+1. In the **Notification type** list, select which notification type you’d like this alert to have: **None** or **Email**.
+    - If you select **None**, you won’t get an email and will have to come back to the Monitor area of the admin center to check on the status of your alert.
+    - If you select **Email**, you and up to four other recipients&mdash;that you specify in the **Recipient(s)** field&mdash;will get an email when the alert is triggered. The email will come from **PowerPlat-noreply@microsoft.com**.
+1. Select **Save**.
 
-:::image type="content" source="media/Alert rules page.png" alt-text="Screenshot of the Alert rules page in Power Platform Monitor.":::
+After you’ve created your alert, the system does an on-demand evaluation and scans all the applicable resources under its scope. 
 
-You can manage your existing alert rules in the “Alert rules” tab. Use the three dot menu to see options for editing or deleting your alert rule. Additionally, turn your alert rule on or off by using the toggle in the Status column.
+## When an alert is triggered
+If you selected to receive email notifications when any resource triggers an alert, you get an email notification sent to you.
 
-Click on “+ Alert rule” to create your new alert rule
-
-:::image type="content" source="media/Alert configuration panel description.png" alt-text="Screenshot of the alert rule configuration panel with numbers corresponding to the list below, describing what each field in the panel is for.":::
-
-In the panel, you’ll need to configure the following information:
-1.	The name of your alert
-2.	The product (Power Apps or Power Automate)
-3.	The specific type (Canvas app or Model-driven app for Power Apps, or Cloud flow or Desktop flow for Power Automate)
-4.	The scope of your alert. You can either place an alert on an environment to monitor all items of a specific type (e.g. All canvas apps in my production environment) or place it on an individual resource.
-5.	Input the environment or resource ID that you would like to place your alert on
-6.	Select the metric that you would like to create your custom threshold against. The available metrics that alerts support and what they mean can be found here: Power Apps metrics or Power Automate metrics
-7.	Select an operator to define your threshold. The options are “Is Under”, “Is Over” or “Equals”
-8.	Select the value to finalize defining your threshold
-9.	Next, select the severity of the alert. 
-10.	Finally, select which notification type you’d like this alert to have: Email or None. If you select Email, you and up to 4 other recipients that you enter will get an email when the alert is triggered. The email will come from PowerPlat-noreply@microsoft.com.  If you select None, you won’t get an email and will have to come back to Monitor to check in on the status of your alert. 
-11.	Enter the email address of any recipient that you’d like to be notified when the alert is triggered
-
-Once you’ve created your alert, it’ll do an on-demand evaluation and scan all the applicable resources under its scope. If you selected “Email” and any resource triggers the alert, you’ll get an email notifying you that your alert was triggered. 
-
-:::image type="content" source="media/Alert email.png" alt-text="Screenshot of an email notification that your Power Platform Monitor alert was triggered.":::
-
-Clicking on “Go to Alert” will bring you to this page, where you can see information on the triggered alert and what resources triggered it:
-
-:::image type="content" source="media/triggered alert page.png" alt-text="Screenshot of triggered alert tab in Power Platform Monitor.":::
-
-:::image type="content" source="media/inside triggered alert.png" alt-text="Screenshot of a triggered alert in Power Platform Monitor.":::
-
-You can click on any of the resources in this triggered alert to bring out a panel that shows timeseries information for all applicable metrics for that resource, and recommendations for how to improve the metric if it’s suboptimal.
-
+In the email notification, select **Go to Alert** to open a Power Platform page listing the triggered alerts, where you can see information on the triggered alert and what resources triggered it. When you select any of the resources in the triggered alert, a pane is displayed that shows timeseries information for all applicable metrics for that resource, and recommendations for how to improve the metric if it’s suboptimal.
 
 ### Notes:
 -	You can have 25 alerts used at a time. However, you can create an unlimited amount of alerts. Consider deleting or turning off any existing alert if you’ve reached the maximum.
--	Alerts are evaluated after new metrics are produced. Currently, all metrics are 24 hour aggregates, which means an alert rule in the Monitor area is evaluated every 24 hours after the newest 24 hour aggregates are produced. The alert rule does an on-demand evaluation upon its creation. 
-
-
+-	Alerts are evaluated after new metrics are produced. Currently, all metrics are 24-hour aggregates, which means an alert rule in the Monitor area is evaluated every 24 hours after the newest 24 hour aggregates are produced. The alert rule does an on-demand evaluation upon its creation. 
 
 
 
