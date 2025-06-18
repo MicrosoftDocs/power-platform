@@ -25,8 +25,6 @@ contributors:
 
 Saves and reloads a [collection](/power-apps/maker/canvas-apps/working-with-data-sources#collections) from the app host's storage.
 
-> [!NOTE]
-> These functions can now be used when playing an app in a web browser as an [experimental feature](/power-apps/maker/canvas-apps/working-with-experimental-preview). This feature is disabled by default. To enable, navigate to **Settings** > **Upcoming features** > **Experimental** > **Enabled SaveData, LoadData, ClearData on web player.**" and turn the switch on. To submit feedback regarding this experimental feature, go to [Power Apps community forum](https://powerusers.microsoft.com/t5/Power-Apps-Community/ct-p/PowerApps1).
 
 ## Description
 

@@ -40,9 +40,9 @@ You can also create a single-column table with the **[ value1, value2, ... ]** s
 
 - _RecordOrTable(s)_ - Required. The records or table to add to the result table. If a table is provided, the records of the table are added to the resulting table as if they had been individually added.
 
-**Table**( _Untyped_ )
+**Table**( _Dynamic_ )
 
-- _Untyped_ - Required. [**Untyped object**](../untyped-object.md) that represents a table or array. Acceptable values are dependent on the untyped provider. For [**JSON**](function-parsejson.md), the untyped object is expected to be a JSON array. Regardless of the content type of the Untyped array, the resulting table is a single-column table of Untyped objects.
+- _Dynamic_ - Required. [**Dynamic**](../untyped-object.md) value that represents a table or array. Acceptable values are dependent on the untyped provider. For [**JSON**](function-parsejson.md), the dynamic value is expected to be a JSON array. Regardless of the content type of the Untyped array, the resulting table is a single-column table of dynamic values.
 
 ## Examples
 

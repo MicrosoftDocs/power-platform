@@ -45,7 +45,7 @@ In this article, learn about all the functions available in Power Pages.
 
 ## B
 
-**[Boolean](reference/function-boolean.md)** – Converts a text string, number, or untyped value to a Boolean value.
+**[Boolean](reference/function-boolean.md)** – Converts a text string, number, or dynamic value to a Boolean value.
 
 ## C
 
@@ -220,7 +220,7 @@ In this article, learn about all the functions available in Power Pages.
 
 ## P
 
-**[ParseJSON](reference/function-parsejson.md)** – Converts JSON document represented as text to an [Untyped object](untyped-object.md) value.
+**[ParseJSON](reference/function-parsejson.md)** – Converts JSON document represented as text to a [Dynamic](untyped-object.md) value.
 
 **[Pi](reference/function-trig.md)** – Returns the number &pi;.
 

@@ -29,7 +29,7 @@ Checks if a record reference is a specific table type (**IsType**) and treats th
 
 ## Description
 
-The **AsType** and **IsType** functions can be used to convert record references (for example polymorphic lookups in Dataverse) and untyped objects to typed objects that can be used directly.
+The **AsType** and **IsType** functions can be used to convert record references (for example polymorphic lookups in Dataverse) and dynamic values to typed values that can be used directly.
 
 ### Record References
 
@@ -182,7 +182,7 @@ A **Dynamic** value from a web API or the [**ParseJSON** function] needs to be c
 
 The following examples show a simple JSON record interpreted in various ways by **ParseJSON**, **AsType**, and **IsType** in the [Pac CLI Power Fx REPL](../../developer/cli/reference/power-fx.md).
 
-In this first example, no type information is provided to **ParseJSON**, so it returns an untyped object.
+In this first example, no type information is provided to **ParseJSON**, so it returns a dynamic value.
 
 ```powerapps-dot
 >> Set( rec, ParseJSON( "{""a"":1}" ) )

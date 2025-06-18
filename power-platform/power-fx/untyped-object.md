@@ -21,6 +21,9 @@ contributors:
 
 **Dynamic** is the return type of specific dynamic providers. Currently, only the [ParseJSON()](./reference/function-parsejson.md) function returns **Dynamic**.
 
+> [!NOTE]
+> **Dynamic** was formerly called **UntypedObject**. Only the name has changed, there is no change in the semantics. The only place where the name would have appeared in a formula is in the experimental versions of User Defined Functions and User Defined Types.
+
 ## Simple Types
 
 The value of a variable of type **Dynamic** can't be used directly. You always have to correctly type it using the corresponding type constructor.

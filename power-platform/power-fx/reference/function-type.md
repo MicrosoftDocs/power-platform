@@ -36,7 +36,7 @@ Every function in Power Fx defines the types of values that can be passed in as 
 
 When creating your own user defined functions, you need to specify the input and output types. For simple types like [**Decimal**](../data-types.md) or [**Text**](../data-types.md), this is easy as these basic types are predefined. For more complex types, such as records or tables, use the **Type** function to create the type.
 
-The **Type** function also makes untyped objects easier to work with. With [**ParseJSON**](function-parsejson.md), [**IsType**](function-astype-istype.md), and [**AsType**](function-astype-istype.md) functions, an untyped object can be converted to a typed object in which columns no longer need to be individually typed at the point of usage.
+The **Type** function also makes dynamic values easier to work with. With [**ParseJSON**](function-parsejson.md), [**IsType**](function-astype-istype.md), and [**AsType**](function-astype-istype.md) functions, a dynamic value can be converted to a typed object in which columns no longer need to be individually typed at the point of usage.
 
 The **Type** function takes a *TypeSpecification* as its only argument. The simplest type specification is to reference an existing type, for example `Type( Text )`. A type specification for a record or table is similar to defining a record or table with literal values, where the values are replaced by type names. For example, `{Name: "Jane"}` would be typed with `Type( {Name: Text} )`. Tables are specified with square brackets, not the [**Table**](function-table.md) function, and only one record can be provided. For example, `[1,2,3]` would be typed with `Type( [Number] )`.
 
