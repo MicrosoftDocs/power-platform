@@ -15,8 +15,6 @@ ms.contributors:
 ---
 # How do I check my online service health?
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 If you're experiencing problems with a cloud service, you can check the service health to determine whether this is a known issue&mdash;with a resolution in progress&mdash;before you call support or spend time troubleshooting. 
 
 ## Service health in the Power Platform admin center
@@ -50,7 +48,7 @@ To keep track of upcoming changes, including new and changed features, planned m
 
 Learn more about Message center in [Track new and changed features in the Microsoft 365 Message center](/microsoft-365/admin/manage/message-center).
 
-## Related information
+## Related content
 
 [View service health](view-service-health.md)<br>
 [Microsoft Dataverse analytics](analytics-common-data-service.md)
