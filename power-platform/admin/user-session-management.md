@@ -102,11 +102,11 @@ To enforce users to automatically be signed out after a predetermined period of 
 
 > [!NOTE]
 > Inactivity session timeout isn't enforced in the following apps:
-> 1. [!INCLUDE [pn-oc-online-short](../includes/pn-oc-online-short.md)]
-> 2. [!INCLUDE [pn-dyn-365-phones](../includes/pn-dyn-365-phones.md)] and [!INCLUDE [pn-dyn-365-tablets](../includes/pn-dyn-365-tablets.md)]
-> 3. [!INCLUDE [pn-unified-service-desk](../includes/pn-unified-service-desk.md)] client using [WPF](/dotnet/framework/wpf/) browser (Internet Explorer is supported)
-> 4. Live Assist (Chat)
-> 5. Power Apps canvas apps 
+> - [!INCLUDE [pn-oc-online-short](../includes/pn-oc-online-short.md)]
+> - [!INCLUDE [pn-dyn-365-phones](../includes/pn-dyn-365-phones.md)] and [!INCLUDE [pn-dyn-365-tablets](../includes/pn-dyn-365-tablets.md)]
+> - [!INCLUDE [pn-unified-service-desk](../includes/pn-unified-service-desk.md)] client using [WPF](/dotnet/framework/wpf/) browser (Internet Explorer is supported)
+> - Live Assist (Chat)
+> - Power Apps canvas apps 
 
 To enforce the inactivity session timeout for Web Resources, Web Resources need to include the ClientGlobalContext.js.aspx file in their solution.
 
