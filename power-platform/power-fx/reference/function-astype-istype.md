@@ -172,7 +172,7 @@ A **Dynamic** value from a web API or the [**ParseJSON** function] needs to be c
 
    The subtitle in the gallery shows these values:
 
-      - "--" if the **'Company Name'** is blank.
+      - "--" if the **'Company Name'** is _blank_.
    - "Account: " and the **Account Name** field from the **Accounts** table if the **Company Name** field refers to an account.
    - "Contact: " and the **Full Name** field from the **Contacts** table if the **Company Name** field refers to a contact.
 
