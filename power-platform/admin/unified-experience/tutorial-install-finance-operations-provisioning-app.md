@@ -41,14 +41,15 @@ For example, a customer who already purchased other Dynamics 365 apps wants to a
     - Dynamics 365 Operations Application Partner Sandbox for partners and ISVs
 
 - Your license administrator must assign the license to your user account in Microsoft Entra. You can review the licenses currently assigned to you from the [Subscriptions](https://portal.office.com/account/?ref=MeControl#subscriptions) page.
-- Have at least 1 GB of available Operations and Dataverse database capacities. For more information, see [Manage storage and capacity](../finance-operations-storage-capacity.md).
+
+- You must have at least 1 GB of available Operations and Dataverse database capacities. For more information, see [Manage storage and capacity](../finance-operations-storage-capacity.md).
+
 - You must use an environment of type **Sandbox** or **Trial (subscription-based)** where the **Enable Dynamics 365 apps** option was turned on when the environment was created. This option is a prerequisite for all Dynamics 365 apps, including Sales, Customer Service, Field Service, and all finance and operations apps.
 
     > [!IMPORTANT]
     > If you try to install without turning on the **Enable Dynamics 365 apps** option, you receive an error message that says, _Dynamics 365 Finance and Operations Provisioning App isn't supported on SchemaType: Standard_. The schema isn't a visible property in the Power Platform admin center and can't be changed after the environment is created. You can try to install finance and operations apps in another environment, or you can [create an environment by using an ERP template](./tutorial-deploy-new-environment-with-ERP-template.md).
-    > Support for environments of type **Production** isn't available. However, support is planned for the future.
+    > Support for environments of type **Production** isn't available. 
     
-
 - You must install the platform tools app before you install the provisioning app. Detailed steps are given in the [Install on an environment](#install-on-an-environment) section.
 
     > [!IMPORTANT]
@@ -62,9 +63,7 @@ Installation of the provisioning app has the following known limitations:
 - **Environment URL length**: The hostname of your Dataverse environment URL must be less than or equal to 19 characters in length. Otherwise, installation of the Finance and Operations Provisioning app fails. To bypass this limitation, edit the URL of your environment so that it's the required length.
 - **Finance and operations URL missing**: After the installation is successful, the finance and operations URL might not be shown on the environment details page in the Power Platform admin center. To bypass this limitation, edit the environment, and change a field such as **Description** to a new value. This edit operation synchronizes the new URL value and shows it on the screen.
 
-## Step-by-step installation guide
-
-### Install on an environment
+## Step-by-step installation guide 
 
 # [New admin center](#tab/new)
  

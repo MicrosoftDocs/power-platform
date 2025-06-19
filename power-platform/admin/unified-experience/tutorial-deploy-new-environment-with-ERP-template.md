@@ -59,11 +59,15 @@ Be sure to check out the latest known limitations available in the overview arti
 
 To create a new environment where finance and operations apps are preinstalled, perform the following steps:
 
-1. Open your PowerShell console application, and run the following commands to generate the environment. Your environment name must be **globally unique and less than 20 characters** because that derives the environment URL. 
+Open your PowerShell console application, and run the following commands to generate the environment. 
 
-1. Note the variables, so that you can change the input values as required. If you want to use a service principal, follow the instructions in [Creating a service principal application using PowerShell](../powershell-create-service-principal.md).
+ - Your environment name must be **globally unique and less than 20 characters** because that derives the environment URL. 
 
-1. In the following script, the **DevToolsEnabled** parameter determines whether your sandbox environment is provisioned with support for X++ development, or whether it becomes a traditional sandbox environment for user acceptance testing (UAT) and training purposes. If you set the value to **true**, you can do development. If you set the value to **false** or omit the parameter, you receive a traditional sandbox environment that has finance and operations apps installed.
+ - Note the variables, so that you can change the input values as required. 
+ 
+ - If you want to use a service principal, follow the instructions in [Creating a service principal application using PowerShell](../powershell-create-service-principal.md).
+
+ - The **DevToolsEnabled** parameter determines whether your sandbox environment is provisioned with support for X++ development, or whether it becomes a traditional sandbox environment for user acceptance testing (UAT) and training purposes. If you set the value to **true**, you can do development. If you set the value to **false** or omit the parameter, you receive a traditional sandbox environment that has finance and operations apps installed.
 
 ```powershell
 #Install the module
@@ -92,7 +96,7 @@ New-AdminPowerAppEnvironment -DisplayName "MyUniqueNameHere" -EnvironmentSku San
 ```
 
 > [!IMPORTANT]
-> If you require the UI, follow the steps in [Tutorial: Install the Finance and Operations Provisioning App](./tutorial-install-finance-operations-provisioning-app.md). You can't currently use the user interface (UI) to create new sandbox and production environments that have finance and operations apps. 
+> If you require the user interface (UI), follow the steps in [Tutorial: Install the Finance and Operations Provisioning App](./tutorial-install-finance-operations-provisioning-app.md). You can't currently use the UI to create new sandbox and production environments that have finance and operations apps. 
 
 ## Delete the environment
 
@@ -103,13 +107,13 @@ In this step, delete the environment you previously created. Deleting an environ
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. Select **Manage** in the navigation pane.
 1. In the **Manage** pane, select **Environments**. 
-1. Select the environment that you created earlier, and then select the **Delete** button in the action bar at the top of the page. Confirm that you want to delete the environment and proceed.
+1. Select an appropriate environment, and then select the **Delete** button in the action bar at the top of the page. Confirm that you want to delete the environment and proceed.
 
 # [Classic admin center](#tab/classic)
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) using administrator credentials.
 1. Go to **Environments**. 
-1. Select the environment that you created earlier, and then select the **Delete** button in the action bar at the top of the page. Confirm that you want to delete the environment and proceed.
+1. Select an appropriate environment, and then select the **Delete** button in the action bar at the top of the page. Confirm that you want to delete the environment and proceed.
 
 # [PowerShell](#tab/PowerShell)
 
