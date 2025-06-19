@@ -18,7 +18,7 @@ search.audienceType:
 
 # Tutorial: Provision a new environment with an ERP-based template
 
-Finance and operations apps have been reimagined as an application hosted by Microsoft Dataverse. No longer do customers need to provision their enterprise resource planning (ERP) system separately from their low-code and other Dynamics 365 platform applications. Additionally, most administrative actions in Power Platform are available through the admin center and an API-based experience.
+Finance and operations apps are reimagined as an application hosted by Microsoft Dataverse. No longer do customers need to provision their enterprise resource planning (ERP) system separately from their low-code and other Dynamics 365 platform applications. Additionally, most administrative actions in Power Platform are available through the admin center and an API-based experience.
 
 In this tutorial, learn how to:
 
@@ -30,7 +30,7 @@ As an example of this scenario, a customer who operates their finance and operat
 
 ## Environment provisioning
 
-The easiest way to get finance and operations apps up and running in Power Platform is to create a new environment using a template. A template is simply an efficiency in terms of creating a Dataverse-based Power Platform environment with several applications preinstalled. In this scenario, the finance and operations ERP application is installed automatically upon environment creation.
+The easiest way to get finance and operations apps up and running in Power Platform is to create a new environment using a template. A template is simply an efficiency in terms of creating a Dataverse-based Power Platform environment with several applications preinstalled. In this scenario, the finance and operations ERP application are installed automatically upon environment creation.
 
 ### Before you begin
 
@@ -56,7 +56,7 @@ Be sure to check out the latest known limitations available in the overview arti
 
 ## Step-by-step provisioning guide
 
-To create a new environment where finance and operations apps are pre-installed, perform the following steps:
+To create a new environment where finance and operations apps are preinstalled, perform the following steps:
 
 Open your PowerShell console application, and run the following commands to generate the environment. Note the variables, so that you can change the input values as required. If you want to use a service principal, follow the instructions in [Creating a service principal application using PowerShell](../powershell-create-service-principal.md).
 
@@ -88,7 +88,7 @@ $jsonObject= @"
 New-AdminPowerAppEnvironment -DisplayName "MyUniqueNameHere" -EnvironmentSku Sandbox -Templates "D365_FinOps_Finance" -TemplateMetadata $jsonObject -LocationName "Canada" -ProvisionDatabase
 ```
 
-In the above example, we used the **Finance** environment template. See above in this article for a table reference of all templates available by license. Also note that your environment name must be **globally unique and less than 20 characters** because that derives the environment URL. There are plans to add upfront validation in the future.
+In the given example, we used the **Finance** environment template. See the table reference given earlier for all templates available by license. Also note that your environment name must be **globally unique and less than 20 characters** because that derives the environment URL. There are plans to add upfront validation in the future.
 
 > [!IMPORTANT]
 > If you require the UI, follow the steps in [Tutorial: Install the Finance and Operations Provisioning App](./tutorial-install-finance-operations-provisioning-app.md). 
