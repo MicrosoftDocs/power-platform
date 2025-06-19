@@ -5,7 +5,7 @@ author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 4/16/2025
+ms.date: 06/18/2025
 ms.author: gregli
 search.audienceType: 
   - maker
@@ -19,76 +19,72 @@ ms.contributors:
 # App object in Power Apps
 [!INCLUDE[object-app-applies-to](includes/object-app-applies-to.md)]
 
-
-
-Provides information about the currently running app and control over the app's behavior.
+Get information about the currently running app and control the app's behavior.
 
 ## Description
 
-Like a control, the **App** object provides properties that identify which screen is showing and that prompt the user to save changes so that they're not lost. Every app has an **App** object.
+Like a control, the **App** object has properties that identify which screen is showing and prompt you to save changes so they aren't lost. Every app has an **App** object.
 
-You can write formulas for some properties of the **App** object. At the top of the **Tree view** pane, select the **App** object as you would any other control or screen. View and edit one of the object's properties by selecting it in the drop-down list to the left of the formula bar.
+Write formulas for some properties of the **App** object. At the top of the **Tree view** pane, select the **App** object as you would any other control or screen. To view or edit one of the object's properties, select it in the drop-down list to the left of the formula bar.
 
 > [!div class="mx-imgBorder"]
-> ![The App object in the Tree view pane.](media/object-app/appobject.png)
+> ![Screenshot of the App object selected in the Tree view pane. The properties pane is visible.](media/object-app/appobject.png)
 
 ## ActiveScreen property
 
-The **ActiveScreen** property identifies the screen that's showing.
+The **ActiveScreen** property shows the screen that's currently displayed.
 
-This property returns a screen object. Use it to reference properties of the currently displayed screen, such as the name with the formula **App.ActiveScreen.Name**. You can also compare this property to another screen object, such as with the comparison formula **App.ActiveScreen = Screen2** to test if **Screen2** is the currently displayed screen.
+This property returns a screen object. Use it to reference properties of the current screen, like the name with the formula **App.ActiveScreen.Name**. You can also compare this property to another screen object, like with the comparison formula **App.ActiveScreen = Screen2** to check if **Screen2** is the current screen.
 
-Use the **[Back](function-navigate.md)** or **[Navigate](function-navigate.md)** function to change the screen that's showing.
+Use the **[Back](function-navigate.md)** or **[Navigate](function-navigate.md)** function to switch the screen that's displayed.
 
 ## BackEnabled property
 
-The **BackEnabled** property changes how the app responds to the device back gesture (swipe or use the hardware back button on Android devices, swipe from left on iOS devices) when running in [Power Apps mobile](/power-apps/mobile/run-powerapps-on-mobile). When enabled, the device back gesture navigates back to the screen that was most recently displayed, which is similar to the [**Back**](function-navigate.md#back) formula. When disabled, the device back gesture returns the user to the app list. 
+The **BackEnabled** property changes how the app responds to the device back gesture (swipe or use the hardware back button on Android devices, or swipe from the left on iOS devices) when running in [Power Apps mobile](/power-apps/mobile/run-powerapps-on-mobile). When enabled, the device back gesture goes back to the screen that was most recently shown, which is similar to the [**Back**](function-navigate.md#back) formula. When disabled, the device back gesture takes the user to the app list. 
 
 ## ConfirmExit properties
 
-Nobody wants to lose unsaved changes. Use the **ConfirmExit** and **ConfirmExitMessage** properties to warn the user before they close your app.
+Nobody wants to lose unsaved changes. Use the **ConfirmExit** and **ConfirmExitMessage** properties to warn the user before closing your app.
 
 > [!NOTE]
-> - **ConfirmExit** doesn't work in apps that are embedded in, for example, Power BI and SharePoint.
-> - **ConfirmExit** is not supported in custom pages. 
-> - Now, these properties can reference controls on only the first screen if the **Delayed load** preview feature is enabled (which it is by default for new apps). If references are made, Power Apps Studio doesn't show an error, but the resulting published app doesn't open in Power Apps Mobile or a browser. We're actively working to lift this limitation. In the meantime, you can turn off **Delayed load** in **Settings** > **Upcoming features** (under **Preview**).
+> - **ConfirmExit** doesn't work in apps embedded in, for example, Power BI and SharePoint.
+> - **ConfirmExit** isn't supported in custom pages. 
+> - Now, these properties can reference controls only on the first screen if the **Delayed load** preview feature is enabled (which it is by default for new apps). If you reference other screens, Power Apps Studio doesn't show an error, but the published app doesn't open in Power Apps Mobile or a browser. We're working to lift this limitation. In the meantime, turn off **Delayed load** in **Settings** > **Upcoming features** (under **Preview**).
 
 ### ConfirmExit
 
-**ConfirmExit** is a Boolean property that, when *true*, opens a confirmation dialog box before the app is closed. By default, this property is *false*, and no dialog box appears.
+**ConfirmExit** is a Boolean property that, when *true*, opens a confirmation dialog box before the app closes. By default, this property is *false*, and no dialog box appears.
 
-In situations where the user may have unsaved changes in the app, use this property to show a confirmation dialog box before exiting the app. Use a formula that can check variables and control properties (for example, the **Unsaved** property of the [**Edit form**](/power-apps/maker/canvas-apps/controls/control-form-detail) control).
+When the user might have unsaved changes in the app, use this property to show a confirmation dialog box before exiting the app. Use a formula that checks variables and control properties (for example, the **Unsaved** property of the [**Edit form**](/power-apps/maker/canvas-apps/controls/control-form-detail) control).
 
-The confirmation dialog box appears in any situation where data could be lost, as in these examples:
+The confirmation dialog box appears in any situation where data can be lost, such as:
 
-- Running the [**Exit**](function-exit.md) function.
-- If the app is running in a browser:
-  - Closing the browser or the browser tab in which the app is running.
-  - Selecting the browser's back button.
-  - Running the [**Launch**](function-param.md) function with a *LaunchTarget* of **Self**.
-- If the app is running in Power Apps Mobile (iOS or Android):
-  - Swiping to switch to a different app in Power Apps Mobile.
-  - Selecting the back button on an Android device.
-  - Running the [**Launch**](function-param.md) function to launch another canvas app.
+- Run the [**Exit**](function-exit.md) function.
+- If the app runs in a browser:
+  - Close the browser or the browser tab where the app runs.
+  - Select the browser's back button.
+  - Run the [**Launch**](function-param.md) function with a *LaunchTarget* of **Self**.
+- If the app runs in Power Apps Mobile (iOS or Android):
+  - Swipe to switch to a different app in Power Apps Mobile.
+  - Select the back button on an Android device.
+  - Run the [**Launch**](function-param.md) function to launch another canvas app.
 
-The exact look of the confirmation dialog box might vary across devices and versions of Power Apps.
+The exact look of the confirmation dialog box can vary across devices and versions of Power Apps.
 
-The confirmation dialog box doesn't appear in Power Apps Studio.
+The confirmation dialog box doesn't show in Power Apps Studio.
 
 ### ConfirmExitMessage
 
-By default, the confirmation dialog box shows a generic message, such as **"You may have unsaved changes."** in the user's language.
+By default, the confirmation dialog box shows a generic message, such as **"You might have unsaved changes."** in the user's language.
 
-Use **ConfirmExitMessage** to provide a custom message in the confirmation dialog box. If this property is *blank*, the default value is used. Custom messages are truncated as necessary to fit within the confirmation dialog box, so keep the message to a few lines at most.
+Use **ConfirmExitMessage** to provide a custom message in the confirmation dialog box. If this property is *blank*, the default value is used. Custom messages are truncated as needed to fit within the confirmation dialog box, so keep the message to a few lines at most.
 
-In a browser, the confirmation dialog box might appear with a generic message from the browser.
+In a browser, the confirmation dialog box can show a generic message from the browser.
 
 > [!NOTE]
-> App object has two more properties `OnMessage` and `BackEnabled` that are experimental. These properties will be removed from the app object eventually. We recommend that you don't use these properties in your production environment.
+> The App object has two more properties, `OnMessage` and `BackEnabled`, that are experimental. These properties are removed from the app object eventually. Don't use these properties in your production environment.
 
 ### Example
-
-1. Create an app that contains two form controls, **AccountForm** and **ContactForm**.
 
 1. Set the **App** object's **ConfirmExit** property to this expression:
 
@@ -96,12 +92,9 @@ In a browser, the confirmation dialog box might appear with a generic message fr
     AccountForm.Unsaved Or ContactForm.Unsaved
     ```
 
-    This dialog box appears if the user changes data in either form and then tries to close the app without saving those changes.
+    The dialog box shows if the user changes data in either form and then tries to close the app without saving those changes.e user changes data in either form and then tries to close the app without saving those changes.
 
-    > [!div class="mx-imgBorder"]
-    > ![Generic confirmation dialog box.](media/object-app/confirm-native.png)
-
-1. Set the **App** object's **ConfirmExitMessage** property to this formula:
+    > [!div clas1. Set the **App** object's **ConfirmExitMessage** property to this formula:
 
     ```power-fx
     If( AccountsForm.Unsaved,
@@ -110,20 +103,20 @@ In a browser, the confirmation dialog box might appear with a generic message fr
     )
     ```
 
-    This dialog box appears if the user changes data in the Account form and then tries to close the app without saving those changes.
+    The dialog box shows if the user changes data in the Account form and then tries to close the app without saving those changes.
 
     > [!div class="mx-imgBorder"]
     > ![Form-specific confirmation dialog box.](media/object-app/confirm-native-custom.png)
 
-## Set up Connection string for Application Insights
+## Set up connection string for Application Insights
 
-To export system-generated application logs to [Application Insights](/power-apps/maker/canvas-apps/application-insights), you need to set up the **Connection string** for your canvas app. 
+To export system-generated application logs to [Application Insights](/power-apps/maker/canvas-apps/application-insights), set up the **Connection string** for your canvas app.
 
 1. Open your app for [editing](/power-apps/maker/canvas-apps/edit-app) in Power Apps Studio.
-2. Select the **App** object in the left navigation tree view.
-3. Enter the **Connection string** in the properties pane.
+1. Select the **App** object in the left navigation tree view.
+1. Enter the **Connection string** in the properties pane.
 
-If data isn't sent to App Insights, contact your Power Platform administrator and verify if **App Insights** is disabled at the tenant level. 
+If data isn't sent to Application Insights, contact your Power Platform admin and check if **App Insights** is disabled at the tenant level. 
 
 ## Formulas property
 
@@ -185,7 +178,7 @@ Some limitations of named formulas:
 ### User defined functions
 
 > [!IMPORTANT]
-> - User defined functions is a preview feature.
+> - User defined functions are a preview feature.
 > - Preview features aren't meant for production use and may not be complete. These features are available before an official release so that you can get early access and provide feedback. More information: [**Understand experimental, preview, and retired features in canvas apps**](/power-apps/maker/canvas-apps/working-with-experimental-preview)
 > - The behavior that this article describes is available only when the **User-defined functions** preview feature in [**Settings &gt; Upcoming features &gt; Experimental**](/power-apps/maker/canvas-apps/working-with-experimental-preview#controlling-which-features-are-enabled) is turned on (it's off by default).
 > - Your feedback is valuable to us. Let us know what you think in the [**Power Apps experimental features community forum**](https://community.powerplatform.com/forums/thread/details/?threadid=c8824a08-8198-ef11-8a69-7c1e52494f33).
@@ -279,13 +272,13 @@ Use **OnError** to take action when an error happens anywhere in the app. It pro
 
 In Canvas apps, the result of every formula evaluation is checked for an error. If an error is encountered, **OnError** is evaluated with the same **FirstError** and **AllErrors** scope variables that would have been used if the entire formula had been wrapped in an [**IfError** function](function-iferror.md).
 
-If **OnError** is empty, a default error banner is shown with the **FirstError.Message** of the error. Defining an **OnError** formula overrides this behavior enabling the maker to handle the error reporting as they see fit. The default behavior can be requested in the **OnError** by rethrowing the error with the [**Error** function](function-iferror.md). Use the rethrowing approach if some errors are to be filtered out or handled in a different manner, while others are to be passed through.
+If **OnError** is empty, a default error banner shows the **FirstError.Message** of the error. Defining an **OnError** formula overrides this behavior, so the maker can handle error reporting as needed. You can request the default behavior in **OnError** by rethrowing the error with the [**Error** function](function-iferror.md). Use the rethrowing approach if you want to filter out or handle some errors differently, but let others pass through.
 
 **OnError** can't replace an error in calculations the way that **IfError** can. If **OnError** is invoked, the error has already happened and it has already been processed through formula calculations like **IfError**; **OnError** controls error reporting only.
 
-**OnError** formulas are evaluated concurrently and it's possible that their evaluation may overlap with the processing of other errors. For example, if you set a global variable at the top of an **OnError** and read it later on in the same formula, the value may have changed. Use the [**With** function](function-with.md) to create a named value that is local to the formula.
+**OnError** formulas are evaluated concurrently and it's possible that their evaluation might overlap with the processing of other errors. For example, if you set a global variable at the top of an **OnError** and read it later on in the same formula, the value might have changed. Use the [**With** function](function-with.md) to create a named value that is local to the formula.
 
-Although each error is processed individually by **OnError**, the default error banner may not appear for each error individually. To avoid having too many error banners displayed at the same time, the same error banner won't be displayed again if it has recently been shown.
+Although each error is processed individually by **OnError**, the default error banner might not appear for each error individually. To avoid having too many error banners displayed at the same time, the same error banner won't be displayed again if it has recently been shown.
 
 ### Example
 
@@ -309,9 +302,9 @@ Let's look at what happened in detail:
 1. **Label1.Text** can't show anything for this error, so it shows a *blank* state.
 1. **OnError** is invoked. Since there's no handler, the standard error banner is displayed with error information.
 
-If necessary, we could also modify the formula to `Label1.Text = IfError( 1/Slider1.Value, 0 )`. Using **IfError** will result in no error or error banner. We can't change the value of an error from **OnError** since at that point the error has already happened, it's only a question of how it will be reported.
+If needed, you can also change the formula to `Label1.Text = IfError( 1/Slider1.Value, 0 )`. Using **IfError** means there's no error or error banner. You can't change the value of an error from **OnError** because the error already happened—**OnError** only controls how it's reported.
 
-If we add an **OnError** handler, it has no impact before step 5, but it can impact how the error is reported:
+If you add an **OnError** handler, it doesn't affect steps before step 5, but it does change how the error is reported:
 
 ```power-fx
 Trace( $"Error {FirstError.Message} in {FirstError.Source}" )
@@ -319,11 +312,11 @@ Trace( $"Error {FirstError.Message} in {FirstError.Source}" )
 
 :::image type="content" source="media/object-app/onerror-trace-formula.png" alt-text="App.OnError formula set to generate a Trace.":::
 
-With this **OnError** handler in place, from the app user's perspective, there won't be any error. But the error will be added to the Monitor's trace, complete with the source of the error information from **FirstError**:
+With this **OnError** handler, the app user doesn't see any error. But the error is added to the Monitor's trace, including the source of the error information from **FirstError**:
 
 :::image type="content" source="media/object-app/onerror-trace.png" alt-text="Slider control moved to 0, resulting in a division by zero error, but no error banner.":::
 
-If we also wanted to have the same default error banner displayed in addition to the trace, we can rethrow the error with the **Error** function after the **Trace** call just as it did if the **Trace** wasn't there:
+If you also want to show the default error banner along with the trace, rethrow the error with the **Error** function after the **Trace** call, as if the **Trace** wasn't there:
 
 ```power-fx
 Trace( $"Error {FirstError.Message} in {FirstError.Source}" );
@@ -333,42 +326,42 @@ Error( FirstError )
 ## OnStart property
 
 > [!NOTE]
-> The use of **OnStart** property can cause performance problems when loading an app. We're in the process of creating alternatives for the top two reasons for using property&mdash;caching data and setting up global variables. We've already created an alternative for defining the first screen to be shown with [**Navigate**](function-navigate.md). Depending on your context, this property may be disabled by default. If you don't see it, and you need to use it, check the app's Advanced settings for a switch to enable it. The **OnVisible** property of a screen can also be used. By default, when the non-blocking **OnStart** rule is enabled, it allows the **OnStart** function to run simultaneously with other app rules. So, if variables referenced in other app rules are initialized within the **OnStart** function, they may not be fully initialized yet. Additionally, there is a possibility that a screen can render and become interactive before either the **Screen.OnVisible** or **App.OnStart** functions finish executing, especially if they take a long time to complete.
+> Using the **OnStart** property can cause performance problems when loading an app. We're creating alternatives for the top two reasons to use this property—caching data and setting up global variables. There's already an alternative for defining the first screen to show with [**Navigate**](function-navigate.md). Depending on your context, this property can be disabled by default. If you don't see it and need to use it, check the app's Advanced settings for a switch to enable it. You can also use the **OnVisible** property of a screen. By default, when the nonblocking **OnStart** rule is enabled, it lets the **OnStart** function run at the same time as other app rules. So, if variables referenced in other app rules are initialized within the **OnStart** function, they might not be fully initialized yet. Also, a screen can render and become interactive before either the **Screen.OnVisible** or **App.OnStart** functions finish running, especially if they take a long time to finish.
 
-The **OnStart** property runs when the user starts the app. This property is often used to perform the following tasks:
+The **OnStart** property runs when the user starts the app. This property is often used to:
 
-- Retrieve and cache data into collections by using the **[Collect](function-clear-collect-clearcollect.md)** function.
+- Retrieve and cache data in collections by using the **[Collect](function-clear-collect-clearcollect.md)** function.
 - Set up global variables by using the **[Set](function-set.md)** function.
 
-This formula is evaluated before the first screen appears. No screen is loaded, so you can't set context variables with the **[UpdateContext](function-updatecontext.md)** function. However, you can pass context variables with the **Navigate** function.
+This formula runs before the first screen appears. No screen is loaded, so you can't set context variables with the **[UpdateContext](function-updatecontext.md)** function. But you can pass context variables with the **Navigate** function.
 
-After you change the **OnStart** property, test it by hovering over the **App** object in the **Tree view** pane, selecting ellipsis (...), and then selecting **Run OnStart**. Unlike when the app is loaded for the first time, existing collections and variables will already be set. To start with empty collections, use the **[ClearCollect](function-clear-collect-clearcollect.md)** function instead of the **Collect** function.
+After you change the **OnStart** property, test it by hovering over the **App** object in the **Tree view** pane, selecting the ellipsis (...), and then selecting **Run OnStart**. Unlike when the app loads for the first time, existing collections and variables are already set. To start with empty collections, use the **[ClearCollect](function-clear-collect-clearcollect.md)** function instead of the **Collect** function.
 
 > [!div class="mx-imgBorder"]
 > ![App-item shortcut menu for Run OnStart](media/object-app/appobject-runonstart.png "App-item shortcut menu for Run OnStart")
 
 > [!NOTE]
-> - Using the [**Navigate**](function-navigate.md) function in the **OnStart** property has been retired. Existing apps will continue to work. For a limited time, you can still enable it in the app settings (available under **Retired**). However, using **Navigate** in this manner can lead to app load delays as it forces the system to complete evaluation of **OnStart** before displaying the first screen. Use the **StartScreen** property instead to calculate the first screen displayed.
-> - The retired switch will be off for apps created before March 2021 where you added **Navigate** to **OnStart** between March 2021 and now. When you edit such apps in Power Apps Studio, you may see an error. Turn the retired switch on to clear this error.
+> - Using the [**Navigate**](function-navigate.md) function in the **OnStart** property is retired. Existing apps still work. For a limited time, you can enable it in the app settings (under **Retired**). But using **Navigate** this way can cause app load delays because it forces the system to finish running **OnStart** before showing the first screen. Use the **StartScreen** property instead to set the first screen displayed.
+> - The retired switch is off for apps created before March 2021 where you added **Navigate** to **OnStart** between March 2021 and now. When you edit these apps in Power Apps Studio, you can see an error. Turn the retired switch on to clear this error.
 
 ## StartScreen property
 
-The **StartScreen** property determines which screen will be displayed first. It's evaluated once when the app is loaded and returns the screen object to be displayed. By default, this property is empty, and the first screen in the Studio Tree view is shown first.
+The **StartScreen** property sets which screen shows first. It's evaluated once when the app loads and returns the screen object to show. By default, this property is empty, and the first screen in the Studio Tree view shows first.
 
-**StartScreen** is a data flow property that can't contain behavior functions. All data flow functions are available, in particular use these functions and signals to determine which screen to show first:
+**StartScreen** is a data flow property that can't contain behavior functions. All data flow functions are available. Use these functions and signals to decide which screen to show first:
 
 - [**Param**](function-param.md) function to read parameters used to start the app.
 - [**User**](function-user.md) function to read information about the current user.
 - [**LookUp**](function-filter-lookup.md), [**Filter**](function-filter-lookup.md), [**CountRows**](function-table-counts.md), [**Max**](function-aggregates.md), and other functions that read from a data source.
-- Any API calls through a connector, but be careful that it returns quickly.
+- API calls through a connector. Make sure the call returns quickly.
 - Signals such as [**Connection**](signals.md#connection), [**Compass**](signals.md#compass), and **App**.
 
 > [!NOTE]
-> Global variables and collections, including those created in **OnStart**, are not available in **StartScreen**. Named formulas are available and are often a better alternative for formula reuse across the app.
+> Global variables and collections, including those created in **OnStart**, aren't available in **StartScreen**. Named formulas are available and are often a better alternative for formula reuse across the app.
 
-If **StartScreen** returns an error, the first screen in the Studio Tree view will be shown as if **StartScreen** hadn't been set. Use the **IfError** function to catch any errors and redirect to an appropriate error screen.
+If **StartScreen** returns an error, the first screen in the Studio Tree view shows as if **StartScreen** isn't set. Use the **IfError** function to catch any errors and redirect to an error screen.
 
-After changing **StartScreen** in Studio, test it by hovering over the **App** object in the **Tree view** pane, selecting the ellipsis (...), and then selecting **Navigate to StartScreen**. The screen will change as if the app had just been loaded.
+After you change **StartScreen** in Studio, test it by hovering over the **App** object in the **Tree view** pane, selecting the ellipsis (...), and then selecting **Navigate to StartScreen**. The screen changes as if the app just loaded.
 
 > [!div class="mx-imgBorder"]
 > ![Navigate to StartScreen](media/object-app/appobject-runstartscreen.png "Navigate to StartScreen")
@@ -378,17 +371,17 @@ After changing **StartScreen** in Studio, test it by hovering over the **App** o
 ```power-fx
 Screen9
 ```
-Indicates that `Screen9` should be shown first whenever the app starts.
+`Screen9` shows first whenever the app starts.
 
 ```power-fx
 If( Param( "admin-mode" ) = 1, HomeScreen, AdminScreen )
 ```
-Checks if the Param "admin-mode" has been set by the user and uses it to decide if the HomeScreen or AdminScreen should be displayed first.
+Checks if the Param "admin-mode" is set and uses it to decide if HomeScreen or AdminScreen shows first.
 
 ```power-fx
 If( LookUp( Attendees, User = User().Email ).Staff, StaffPortal, HomeScreen )
 ```
-Checks if an attendee to a conference is a staff member and directs them to the proper screen on startup.
+Checks if an attendee is a staff member and directs them to the correct screen on startup.
 
 ```power-fx
 IfError( If( CustomConnector.APICall() = "Forest", 
@@ -398,13 +391,13 @@ IfError( If( CustomConnector.APICall() = "Forest",
          ErrorScreen 
 )
 ```
-Directs the app based on an API call to either `ForestScreen` or `OceanScreen`. If the API fails for any reason, the `ErrorScreen` is used instead.
+Directs the app based on an API call to either `ForestScreen` or `OceanScreen`. If the API fails, the app uses `ErrorScreen` instead.
 
 ## StudioVersion property
 
-Use the **StudioVersion** property to display or log the version of Power Apps Studio that was used to publish an app. This can be useful when debugging and to ensure your app has been republished with a recent version of Power Apps Studio.
+Use the **StudioVersion** property to show or log the version of Power Apps Studio used to publish an app. This property helps when you're debugging and checking that your app is republished with a recent version of Power Apps Studio.
 
-**StudioVersion** is returned as text. The format of the text may change over time and should be treated as a whole; avoid extracting individual portions.
+**StudioVersion** returns text. The format of this text can change over time, so treat it as a whole and don't extract individual parts.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
 
