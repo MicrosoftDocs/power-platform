@@ -32,7 +32,7 @@ Write formulas for some properties of the **App** object. At the top of the **Tr
 
 ## ActiveScreen property
 
-The **ActiveScreen** property shows the screen that's currently displayed.
+The **ActiveScreen** property identifies the screen that's currently displayed.
 
 This property returns a screen object. Use it to reference properties of the current screen, like the name with the formula **App.ActiveScreen.Name**. You can also compare this property to another screen object, like with the comparison formula **App.ActiveScreen = Screen2** to check if **Screen2** is the current screen.
 
@@ -75,7 +75,7 @@ The confirmation dialog box doesn't show in Power Apps Studio.
 
 ### ConfirmExitMessage
 
-By default, the confirmation dialog box shows a generic message, such as **"You might have unsaved changes."** in the user's language.
+By default, the confirmation dialog box shows a generic message, such as **"You may have unsaved changes."** in the user's language.
 
 Use **ConfirmExitMessage** to provide a custom message in the confirmation dialog box. If this property is *blank*, the default value is used. Custom messages are truncated as needed to fit within the confirmation dialog box, so keep the message to a few lines at most.
 

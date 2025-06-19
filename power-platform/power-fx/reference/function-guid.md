@@ -41,9 +41,9 @@ When generating a new GUID, the function uses pseudo-random numbers to create a 
 
 ## Volatile functions
 
-**GUID** is a volatile function when used without an argument. Each time the function runs, it returns a different value.
+**GUID** is a volatile function when used without an argument. Each time the function is evaluated, it returns a different value.
 
-When you use a volatile function in a data-flow formula, it returns a different value only if the formula is reevaluated. If nothing else changes in the formula, it keeps the same value while your app runs.
+When you use a volatile function in a data-flow formula, it returns a different value only if the formula is reevaluated. If nothing else changes in the formula, it keeps the same value while your app is open.
 
 For example, if you set the **Text** property of a label control to **GUID()**, it doesn't change while your app is active. You get a different value only when you close and reopen the app.
 
@@ -51,11 +51,11 @@ The function is reevaluated if it's part of a formula where something else chang
 
 **TextInput1.Text & " " & GUID()**
 
-When you use **GUID** in a [behavior formula](/power-apps/maker/canvas-apps/working-with-formulas-in-depth), it's evaluated each time the formula runs. For more information, see the examples later in this topic.
+When you use **GUID** in a [behavior formula](/power-apps/maker/canvas-apps/working-with-formulas-in-depth), it's evaluated each time the formula is evaluated. For more information, see the examples later in this topic.
 
 ## Syntax
 
-**GUID**( [ *GUIDString* ] )
+**GUID**( [ _GUIDString_ ] )
 
 - _GUIDString_ – Optional. A text string that has the hexadecimal representation of a GUID. If you don't supply a string, the function creates a new GUID.
 
