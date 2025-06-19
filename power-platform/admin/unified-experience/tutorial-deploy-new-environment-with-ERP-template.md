@@ -34,9 +34,10 @@ The easiest way to get finance and operations apps up and running in Power Platf
 
 ### Before you begin
 
-You can't provision finance and operations apps in Power Platform unless you have a license assigned that grants this permission. An example license is Dynamics 365 Finance or Dynamics 365 Supply Chain Management for customers, and Dynamics 365 Operations Application Partner Sandbox for partners and ISVs. This must be assigned by your license administrator to your user account in Microsoft Entra. You can review the licenses currently assigned to you in the Subscription table on the [MyAccount](https://portal.office.com/account/?ref=MeControl) page.
+- You can't provision finance and operations apps in Power Platform unless you have a license assigned that grants this permission. An example license is Dynamics 365 Finance or Dynamics 365 Supply Chain Management for customers, and Dynamics 365 Operations Application Partner Sandbox for partners and ISVs. This must be assigned by your license administrator to your user account in Microsoft Entra. Review the licenses currently assigned to you in the Subscription table on the [MyAccount](https://portal.office.com/account/?ref=MeControl) page.
 
-You also must have at least 1 gigabyte of available Operations and Dataverse database capacities. For more information, see [Manage storage and capacity](../finance-operations-storage-capacity.md).
+- You must have at least 1 gigabyte of available Operations and Dataverse database capacities. For more information, see [Manage storage and capacity](../finance-operations-storage-capacity.md).
+
 
 ### Knowing which template to provision
 
@@ -58,9 +59,11 @@ Be sure to check out the latest known limitations available in the overview arti
 
 To create a new environment where finance and operations apps are preinstalled, perform the following steps:
 
-Open your PowerShell console application, and run the following commands to generate the environment. Note the variables, so that you can change the input values as required. If you want to use a service principal, follow the instructions in [Creating a service principal application using PowerShell](../powershell-create-service-principal.md).
+1. Open your PowerShell console application, and run the following commands to generate the environment. Your environment name must be **globally unique and less than 20 characters** because that derives the environment URL. 
 
-In the following script, the **DevToolsEnabled** parameter determines whether your sandbox environment is provisioned with support for X++ development, or whether it becomes a traditional sandbox environment for user acceptance testing (UAT) and training purposes. If you set the value to **true**, you can do development. If you set the value to **false** or omit the parameter, you receive a traditional sandbox environment that has finance and operations apps installed.
+1. Note the variables, so that you can change the input values as required. If you want to use a service principal, follow the instructions in [Creating a service principal application using PowerShell](../powershell-create-service-principal.md).
+
+1. In the following script, the **DevToolsEnabled** parameter determines whether your sandbox environment is provisioned with support for X++ development, or whether it becomes a traditional sandbox environment for user acceptance testing (UAT) and training purposes. If you set the value to **true**, you can do development. If you set the value to **false** or omit the parameter, you receive a traditional sandbox environment that has finance and operations apps installed.
 
 ```powershell
 #Install the module
@@ -88,30 +91,25 @@ $jsonObject= @"
 New-AdminPowerAppEnvironment -DisplayName "MyUniqueNameHere" -EnvironmentSku Sandbox -Templates "D365_FinOps_Finance" -TemplateMetadata $jsonObject -LocationName "Canada" -ProvisionDatabase
 ```
 
-In the given example, we used the **Finance** environment template. See the table reference given earlier for all templates available by license. Also note that your environment name must be **globally unique and less than 20 characters** because that derives the environment URL. There are plans to add upfront validation in the future.
-
 > [!IMPORTANT]
-> If you require the UI, follow the steps in [Tutorial: Install the Finance and Operations Provisioning App](./tutorial-install-finance-operations-provisioning-app.md). 
-
-> [!IMPORTANT]
-> You can't currently use the user interface (UI) to create new sandbox and production environments that have finance and operations apps. However, this capability is planned for a future release.
+> If you require the UI, follow the steps in [Tutorial: Install the Finance and Operations Provisioning App](./tutorial-install-finance-operations-provisioning-app.md). You can't currently use the user interface (UI) to create new sandbox and production environments that have finance and operations apps. 
 
 ## Delete the environment
 
-In this step, delete the environment you previously created. Deleting an environment is an action commonly done by admins who want to reclaim capacity for other purposes. An environment can be deleted using the Power Platform admin center, or PowerShell as follows.
+In this step, delete the environment you previously created. Deleting an environment is an action commonly done by admins who want to free up the Dataverse and Operations storage consumed by this environment for other needs. An environment can be deleted using the Power Platform admin center, or PowerShell as follows: 
 
 # [New admin center](#tab/new)
  
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. Select **Manage** in the navigation pane.
 1. In the **Manage** pane, select **Environments**. 
-1. Select a specific environment, and then select the **Delete** button in the action bar at the top of the page. Confirm that you want to delete the environment and proceed.
+1. Select the environment that you created earlier, and then select the **Delete** button in the action bar at the top of the page. Confirm that you want to delete the environment and proceed.
 
 # [Classic admin center](#tab/classic)
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) using administrator credentials.
 1. Go to **Environments**. 
-1. Select a specific environment, and then select the **Delete** button in the action bar at the top of the page. Confirm that you want to delete the environment and proceed.
+1. Select the environment that you created earlier, and then select the **Delete** button in the action bar at the top of the page. Confirm that you want to delete the environment and proceed.
 
 # [PowerShell](#tab/PowerShell)
 
@@ -121,7 +119,8 @@ Use the following script to delete the previously created environment. Set the *
 #Remove the previously created environment by ID
 Remove-AdminPowerAppEnvironment -EnvironmentName [Guid]
 ```
-
-This operation starts the deletion process and frees up the Dataverse and Operations storage consumed by this environment for other needs.
-
 ---
+
+
+
+
