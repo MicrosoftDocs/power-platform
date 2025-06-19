@@ -15,6 +15,11 @@ contributors:
 - ianceicys-msft 
 - amiyapatr-zz
 - pnghub
+- marianaraujo
+ms.contributors:
+- ceian
+- ampatra
+- maraujo
 ---
 
 # Dataverse capacity-based storage details
@@ -166,9 +171,6 @@ To view this page, select **Resources** > **Capacity** > **Trials** tab.
 |Search     | Use **Search** to search by the environment name and the environment type.         |
 
 
-
-
-
 ## Dataverse page in Licenses (preview)
 
 > [!IMPORTANT]
@@ -178,7 +180,8 @@ To view this page, select **Resources** > **Capacity** > **Trials** tab.
 > - This feature is being gradually rolled out across regions and might not be available in your region yet.
 
 ### Track tenant usage
-You can track and manage Dataverse capacity in the **Licenses** section of Power Platform admin center. 
+
+You can track and manage Dataverse capacity in the **Licenses** section of Power Platform admin center.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. In the navigation pane, select **Billing** > **Licenses** > **Dataverse**.
@@ -205,13 +208,16 @@ In the **Top environments consuming storage** tile, select **See all environment
 - Database, file, and log consumption
 
 ### Track environment usage
+
 1. In the **Dataverse** page, select **Environment** and choose an environment from the list. 
 1. Alternatively in the **Top environment consuming storage** tile, select **See all environments** and select an environment name.
 
 #### Usage per storage type
-In the **Usage per storage type** tile, you can view the consumption of your database, log, and file storage. This section displays your prepaid allocated capacity, if any, along with the corresponding usage. Additionally, it indicates if any part of your Dataverse usage is billed under a pay-as-you-go plan. 
 
-#### Consumption per table 
+In the **Usage per storage type** tile, you can view the consumption of your database, log, and file storage. This section displays your prepaid allocated capacity, if any, along with the corresponding usage. Additionally, it indicates if any part of your Dataverse usage is billed under a pay-as-you-go plan.
+
+#### Consumption per table
+
 In the **Consumption per table** section, you can view the amount of storage consumed by each Dataverse table. To see table consumption for a specific storage type, select **Database**, **File**, or **Log** in the **Usage per storage type tile**. Select the  table name for the consumption trend, with the option to track daily usage trends for up to the past three months. 
 
 ### Allocate capacity for an environment 
@@ -227,8 +233,10 @@ In the **Dataverse** tab, you can allocate capacity to a specific environment. O
 1. Opt in to receive daily email alerts sent to tenant and environment admins when the consumed capacity (database, log, or file) reaches a set percentage of the allocated capacity.
 1. Select **Save** to apply the changes.
 
-### Managing capacity overage 
-When an environment's capacity consumption exceeds the preallocated capacity, you have two options to manage the overage:   
+### Managing capacity overage
+
+When an environment's capacity consumption exceeds the preallocated capacity, you have two options to manage the overage:
+
 1. In the **Manage capacity** pane you can utilize capacity available from the tenant's overall capacity pool.
 1. Alternatively, in the **Manage capacity** pane you can link the environment to a pay-as-you-go billing plan, where any overage is charged to the associated Azure subscription. 
 
@@ -309,9 +317,6 @@ This tenant is 10 GB over in log usage but has 20 GB available in database capac
 
 You can always [free up storage](free-storage-space.md), [delete unwanted environments](delete-environment.md), or buy more capacity to be compliant with storage usage. To learn more about capacity add-ons, go to the [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/p/?LinkId=866544) or the ["Add-ons" section of the Power Apps and Power Automate Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130). You can work through your organization's standard procurement process to purchase [capacity add-ons](capacity-add-on.md).
 
-
-
-
 ## FAQ
 
 ### Why is my storage consumption decreasing in database and growing in file?
@@ -391,32 +396,38 @@ Tables ending in “– Analytics” are tables used by one or more Insights app
 This is due to a change that occurred in April 2023, after which only users with the tenant admin, Power Platform admin, or Dynamics 365 admin roles can see the **Summary** tab in the capacity report. Users, such as environment admins, no longer see this tab and are redirected to the **Dataverse** tab when accessing the report. If you have a user that requires access to the **Summary** tab, assign one of the required roles. 
 
 **More information:**
+
 - [Sales Insights ](/dynamics365/ai/sales/help-hub#get-started)
-- [Field Service and resource scheduling optimization (RSO)](/dynamics365/field-service/scheduling-analytics-reports)                                                                                             
+- [Field Service and resource scheduling optimization (RSO)](/dynamics365/field-service/scheduling-analytics-reports)
 - [Customer Service Insights](/dynamics365/customer-service/customer-service-analytics-insights-csh) 
 - [Field Service](/dynamics365/field-service/reports)
 
 ### Who can allocate capacity?
+
 Users with global admin, Power Platform admin, and Dynamics 365 admin roles can allocate Dataverse capacity.
 
 ### Does this impact my total available capacity in my tenant?
+
 There's no impact on the overall capacity available at the tenant level. Admins can optionally preallocate capacity from the tenant pool to an environment. Preallocated capacity is reduced from the tenant level's total available capacity for use by other environments.
 
 ### What happens if capacity consumption goes beyond the allocated capacity?
+
 Currently, only _soft enforcement_ through email notification is turned on. Admins (Power Platform admins and environment admins) start receiving notifications when capacity usage exceeds 85% of the allocated capacity.
 
 ### What types of Dataverse capacity can be allocated?
+
 Database, file, and log capacity can be allocated.
 
 ### Do I need to allocate capacity to every environment like other supported currencies?
+
 No, admins can select specific environments to allocate capacity.
 
 ### Related information
+
 [Add Microsoft Dataverse storage capacity](add-storage.md) <br />
 [Capacity add-ons](capacity-add-on.md)<br />
 [Automatic tuning in Azure SQL Database](/azure/sql-database/sql-database-automatic-tuning) <br />
 [What's new in storage](whats-new-storage.md) <br />
 [Free up storage space](free-storage-space.md) <br />
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
