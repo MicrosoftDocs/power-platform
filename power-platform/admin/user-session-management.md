@@ -67,7 +67,12 @@ For environments that require different session timeout values, administrators c
 1. On the **Environments** page, select an environment.
 1. In the command bar, select **Settings**. 
 1. Expand **Product**, then select **Privacy + Security**.
-1. Turn on the toggle for **Session Expiration** and enter session timeout values. These settings apply to all users.
+1. Turn on the **Session Expiration** setting.
+1. Enter values in the following fields:
+    - **Enter maximum session length**
+    - **How long before the session expires do you want to show  timeout warning?**
+
+These settings apply to all users.
    
 #### [Classic admin center](#tab/classic)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
@@ -75,7 +80,13 @@ For environments that require different session timeout values, administrators c
 1. On the **Environments** page, select an environment.
 1. In the command bar, select **Settings**.  
 1. Expand **Product**, then select **Privacy + Security**.
-1. Turn on the toggle for **Session Expiration** and enter session timeout values. These settings apply to all users.
+1. Turn on the **Session Expiration** setting.
+1. Enter values in the following fields:
+    - **Enter maximum session length**
+    - **How long before the session expires do you want to show  timeout warning?**
+
+These settings apply to all users.
+
 ---
 
 > [!NOTE]
