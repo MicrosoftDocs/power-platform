@@ -1,16 +1,16 @@
 ---
-title: "Security enhancements: User session and access management  | MicrosoftDocs"
-description: "Security enhancements: User session and access management"
-
+title: Security enhancements: User session and access management 
+description: Security enhancements: User session and access management
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 05/01/2023
+ms.date: 06/19/2025
 author: alaug 
 ms.subservice: admin
-ms.custom: NewPPAC
+ms.custom: 
+  - NewPPAC
+  - admin-security
 ms.author: alaug
 ms.reviewer: sericks
-ms.custom: "admin-security"
 search.audienceType: 
   - admin
 ---
