@@ -36,7 +36,7 @@ This Microsoft Entra ID token refresh cycle continues in the background based on
 >   - In the same browser session, open a version 9.1.0.3647 or higher environment and then open a version earlier 9.1.0.3647. <br/>
 >     **To workaround** the policy bypass and user duration change, open the second environment in a separate browser session.
 >
-> To determine your version, sign in to customer engagement apps, and in the upper-right side of the screen, select the **Settings** button (![User profile Settings button.](media/user-profile-settings-button.png)) > **About**. 
+> To determine your version, sign in to customer engagement apps, and in the upper-right side of the screen, select the **Settings** button > **About**. 
 
 ### Resilience to Microsoft Entra outages 
 If intermittent Microsoft Entra outages occur, authenticated users can still access customer engagement apps and Dataverse data if their PCI claims remain valid or they opt into 'Stay signed in' during authentication. 
