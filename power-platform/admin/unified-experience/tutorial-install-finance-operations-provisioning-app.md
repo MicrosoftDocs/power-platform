@@ -5,16 +5,18 @@ author: laneswenka
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 03/25/2025
+ms.date: 06/19/2025
 ms.subservice: admin
 ms.author: laswenka
+ms.contributors:
+  - lsuresh
+contributors:
+  - lavanyapg
 search.audienceType: 
   - admin
 ---
 
 # Tutorial: Install the Finance and Operations Provisioning app 
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 Finance and operations apps are reimagined as an application hosted by Microsoft Dataverse. Customers don't need to provision their enterprise resource planning (ERP) system separately from their low-code and other Dynamics 365 platform applications. Most administrative actions in Power Platform are available through the admin center and an API-based experience.
 
@@ -55,6 +57,7 @@ For example, a customer who already purchased other Dynamics 365 apps wants to a
 ## Known limitations
 
 Installation of the provisioning app has the following known limitations:
+
 - **Reusing the domain of a deleted environment**: The environment, domain name for a unified environment isn't reusable for up to seven days from when the environment was deleted.
 - **Environment URL length**: The hostname of your Dataverse environment URL must be less than or equal to 19 characters in length. Otherwise, installation of the Finance and Operations Provisioning app fails. To bypass this limitation, edit the URL of your environment so that it's the required length.
 - **Finance and operations URL missing**: After the installation is successful, the finance and operations URL might not be shown on the environment details page in the Power Platform admin center. To bypass this limitation, edit the environment, and change a field such as **Description** to a new value. This edit operation synchronizes the new URL value and shows it on the screen.
@@ -62,6 +65,37 @@ Installation of the provisioning app has the following known limitations:
 ## Step-by-step installation guide
 
 ### Install on an environment
+
+# [New admin center](#tab/new)
+ 
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. Select **Manage** in the navigation pane.
+1. In the **Manage** pane, select **Environments**. 
+1. Select an environment that meets the prerequisite criteria.
+1. On the environment details page, on the **Resources** card, select **Dynamics 365 apps**.
+1. Select **Install app**.
+1. Select **Dynamics 365 Finance and Operations Platform Tools**. This app provides platform support for installing ERP-based applications. It must be installed before you move on to the next step. If you have more than one license that provides access to this app, there might be multiple entries for the same app. In this case, select any entry that has a status of **Enabled**. Then select **Next**.
+
+    :::image type="content" source="media/tutorial-install-app-platformTools.png" alt-text="Screenshot where an entry for Dynamics 365 Finance and Operations Platform Tools that has a status of Enabled is selected for installation.":::
+
+1. Agree to the terms and conditions, and then select **Install** to start the installation. Wait for the installation to be completed before you move on to the next step. When the installation is completed, the value in the **Status** column changes from **Installing** to **Installed**.
+1. Select **Install app**.
+1. Select **Dynamics 365 Finance and Operations Provisioning App**. This app provides the finance and operations apps capabilities for Dynamics 365 Finance, Supply Chain Management, Project Operations, Human Resources, and Commerce workloads. If you have more than one license that provides access to this app, there might be multiple entries for the same app. In this case, select any entry that has a status of **Configured**. Then select **Next**.
+
+    :::image type="content" source="media/tutorial-install-app1.png" alt-text="Screenshot where an entry for Dynamics 365 Finance and Operations Provisioning App that has a status of Configured is selected for installation.":::
+
+1. Select **OK** to open the installation configuration page for the provisioning app.
+1. On the **Dynamics 365 Finance and Operations Provisioning App** page, set the following fields to configure the app:
+
+    - **Enable Developer Tools for Finance and Operations**: Select this checkbox to get a developer-enabled sandbox environment where you can connect Visual Studio and make X++ changes. If you leave this checkbox cleared, you get a standard sandbox or production environment.
+    - **Enable Demo Data for Finance and Operations**: Select this checkbox to deploy the standard Contoso demo data with your app.
+    - **Select the version of the product to be installed**: You can select any of the available supported versions for installation.
+
+    :::image type="content" source="media/tutorial-install-app2.png" alt-text="Screenshot of the installation configuration page for the provisioning app.":::
+
+1. Agree to the terms and conditions, and then select **Install** to start the installation. 
+
+# [Classic admin center](#tab/classic)
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. On the navigation pane, select **Environments**. The **Environments** list page is shown.
@@ -87,7 +121,11 @@ Installation of the provisioning app has the following known limitations:
 
     :::image type="content" source="media/tutorial-install-app2.png" alt-text="Screenshot of the installation configuration page for the provisioning app.":::
 
-1. Agree to the terms and conditions, and then select **Install** to start the installation. The installation takes about an hour to be completed. While the installation is still in progress, the status of the Finance and Operations Provisioning app is shown as **Installing**.
+1. Agree to the terms and conditions, and then select **Install** to start the installation. 
+
+---
+
+The installation takes about an hour to be completed. While the installation is still in progress, the status of the Finance and Operations Provisioning app is shown as **Installing**.
 
 ## Application versions
 

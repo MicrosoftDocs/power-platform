@@ -5,16 +5,18 @@ author: laneswenka
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 06/06/2024
+ms.date: 06/19/2025
 ms.subservice: admin
 ms.author: laswenka
+ms.contributors:
+  - lsuresh
+contributors:
+  - lavanyapg
 search.audienceType: 
   - admin
 ---
 
 # Tutorial: Provision a new environment with an ERP-based template
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 Finance and operations apps have been reimagined as an application hosted by Microsoft Dataverse. No longer do customers need to provision their enterprise resource planning (ERP) system separately from their low-code and other Dynamics 365 platform applications. Additionally, most administrative actions in Power Platform are available through the admin center and an API-based experience.
 
@@ -54,18 +56,7 @@ Be sure to check out the latest known limitations available in the overview arti
 
 ## Step-by-step provisioning guide
 
-# [Power Platform admin center](#tab/PPAC)
-
-### Create an environment
-
-> [!IMPORTANT]
-> You can't currently use the user interface (UI) to create new sandbox and production environments that have finance and operations apps. However, this capability is planned for a future release.
-
-If you want to create a new environment where finance and operations apps are pre-installed, you can use the information on the "PowerShell" tab to complete this task in a single action. If you require the UI, follow the steps in [Tutorial: Install the Finance and Operations Provisioning App](./tutorial-install-finance-operations-provisioning-app.md).
-
-# [PowerShell](#tab/PowerShell)
-
-### Create an environment
+To create a new environment where finance and operations apps are pre-installed, perform the following steps:
 
 Open your PowerShell console application, and run the following commands to generate the environment. Note the variables, so that you can change the input values as required. If you want to use a service principal, follow the instructions in [Creating a service principal application using PowerShell](../powershell-create-service-principal.md).
 
@@ -96,18 +87,31 @@ $jsonObject= @"
 # IMPORTANT - This has to be a single line, after the copy & paste the command
 New-AdminPowerAppEnvironment -DisplayName "MyUniqueNameHere" -EnvironmentSku Sandbox -Templates "D365_FinOps_Finance" -TemplateMetadata $jsonObject -LocationName "Canada" -ProvisionDatabase
 ```
----
 
 In the above example, we used the **Finance** environment template. See above in this article for a table reference of all templates available by license. Also note that your environment name must be **globally unique and less than 20 characters** because that derives the environment URL. There are plans to add upfront validation in the future.
 
+> [!IMPORTANT]
+> If you require the UI, follow the steps in [Tutorial: Install the Finance and Operations Provisioning App](./tutorial-install-finance-operations-provisioning-app.md). 
+
+> [!IMPORTANT]
+> You can't currently use the user interface (UI) to create new sandbox and production environments that have finance and operations apps. However, this capability is planned for a future release.
+
 ## Delete the environment
+
 In this step, delete the environment you previously created. Deleting an environment is an action commonly done by admins who want to reclaim capacity for other purposes. An environment can be deleted using the Power Platform admin center, or PowerShell as follows.
 
-# [Power Platform admin center](#tab/PPAC)
+# [New admin center](#tab/new)
+ 
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. Select **Manage** in the navigation pane.
+1. In the **Manage** pane, select **Environments**. 
+1. Select a specific environment, and then select the **Delete** button in the action bar at the top of the page. Confirm that you want to delete the environment and proceed.
 
-Select a specific environment, and then select the **Delete** button in the action bar at the top of the page.
+# [Classic admin center](#tab/classic)
 
-Confirm that you want to delete the environment and proceed. This operation starts the deletion process and frees up the Dataverse and Operations storage consumed by this environment for other needs.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) using administrator credentials.
+1. Go to **Environments**. 
+1. Select a specific environment, and then select the **Delete** button in the action bar at the top of the page. Confirm that you want to delete the environment and proceed.
 
 # [PowerShell](#tab/PowerShell)
 
@@ -117,4 +121,7 @@ Use the following script to delete the previously created environment. Set the *
 #Remove the previously created environment by ID
 Remove-AdminPowerAppEnvironment -EnvironmentName [Guid]
 ```
+
+This operation starts the deletion process and frees up the Dataverse and Operations storage consumed by this environment for other needs.
+
 ---
