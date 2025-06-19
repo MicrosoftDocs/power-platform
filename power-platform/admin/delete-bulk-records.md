@@ -24,7 +24,7 @@ The *bulk deletion* feature helps you to maintain data quality and manage the co
 - Unneeded test or sample data.  
 - Data that is incorrectly imported from other systems.  
   
-With bulk deletion you can perform the following operations:  
+With bulk deletion, you can perform the following operations:  
   
 - Delete data across multiple tables.   
 - Delete records for a specified table.   
@@ -33,7 +33,7 @@ With bulk deletion you can perform the following operations:
 - Schedule the start time of a recurring bulk delete.   
 - Retrieve the information about the failures that occurred during a bulk deletion.  
 
-These settings can be found in the Microsoft Power Platform admin center. Make sure you have the System Administrator permission to update the setting. To check your security role, see [View your user profile](/powerapps/user/view-your-user-profile). If you don’t have the correct permissions, contact your system administrator.
+You can find these settings in the Microsoft Power Platform admin center. To update them, ensure you have the System Administrator permission. To verify your security role, see [View your user profile](/powerapps/user/view-your-user-profile). If you lack the necessary permissions, contact your system administrator.
   
 ## Delete bulk data 
 
@@ -62,7 +62,7 @@ Restoring the deleted records in the Power Apps user experience is only availabl
 
 Learn more about how to restore deleted records using the recycle bin in [Turn on recycle bin](restore-deleted-table-records.md).
    
-If the recycle bin is not available, learn more in [Back up and restore environments](backup-restore-environments.md).
+If the recycle bin isn't available, learn more in [Back up and restore environments](backup-restore-environments.md).
 
 ### Restore all records deleted by a bulk delete job
 
