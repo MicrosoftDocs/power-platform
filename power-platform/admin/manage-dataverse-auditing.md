@@ -454,7 +454,7 @@ When you turn on Dataverse auditing, your apps create audit logs to store change
 > [!WARNING]
 > When you delete audit logs, you can no longer view the audit history for the period covered by that audit log.
 
-1. In the upper-right corner of an app, select **Settings** (![Settings.](media/settings-gear-icon.png "Settings")) > **Advanced Settings** > **Settings** > **Auditing**.
+1. In the upper-right corner of an app, select **Settings** > **Advanced Settings** > **Settings** > **Auditing**.
 1. Select **Audit Log Management**, and then select **View Audit Logs**.
 1. Select the oldest audit log, then select **Delete Logs**.
 1. Select **OK** to confirm.
@@ -477,7 +477,7 @@ The following table describes the options available to delete audit logs.
 > [!WARNING]
 > When you delete audit logs, you can no longer view the audit history for the tables, user access, period covered by that audit log.
 
-For Unified Interface, in the upper-right corner, select **Settings** (![Settings.](media/settings-gear-icon.png "Settings")) > **Advanced Settings** > **Settings**.
+For Unified Interface, in the upper-right corner, select **Settings** > **Advanced Settings** > **Settings**.
 
 # [New admin center](#tab/new)
 
@@ -508,7 +508,7 @@ For Unified Interface, in the upper-right corner, select **Settings** (![Setting
 
 Several features use system jobs to perform tasks automatically, including workflows, import, and duplicate detection, running independently or in the background. You can monitor them to ensure that they run smoothly or complete successfully.
 
-For Unified Interface, in the upper-right corner, select **Settings** (![Settings.](media/settings-gear-icon.png "Settings")) > **Advanced Settings** > **Settings**.
+For Unified Interface, in the upper-right corner, select **Settings** > **Advanced Settings** > **Settings**.
 
 # [New admin center](#tab/new)
  
