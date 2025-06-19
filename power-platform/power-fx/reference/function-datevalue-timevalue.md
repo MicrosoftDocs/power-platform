@@ -6,7 +6,7 @@ author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 6/10/2024
+ms.date: 06/18/2025
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
@@ -26,18 +26,18 @@ Converts date, time, or both in a _string_ to a _date/time_ value.
 
 ## Description
 
-- **DateValue** function converts a _date string_ (for example, "10/01/2014") to a _date/time_ value.
+- **DateValue** function converts a _date string_ (like "10/01/2014") to a _date/time_ value.
 
-- **TimeValue** function converts a _time string_ (for example, "12:15 PM") to a _date/time_ value.
+- **TimeValue** function converts a _time string_ (like "12:15 PM") to a _date/time_ value.
 
-- **DateTimeValue** function converts a _date and time string_ (for example, "January 10, 2013 12:13 AM") to a _date/time_ value.
+- **DateTimeValue** function converts a _date and time string_ (like "January 10, 2013 12:13 AM") to a _date/time_ value.
 
-**DateValue** function ignores any time information in the date string, and the **TimeValue** function ignores any date information in the time string.
+**DateValue** function ignores any time information in the date string, and **TimeValue** function ignores any date information in the time string.
 
 > [!NOTE]
 > The DateValue, TimeValue, and DateTimeValue functions by default use the language from the current user's settings. You can override it to ensure that strings are interpreted properly. For example, "10/1/1920" is interpreted as _October 1<sup>st</sup>_ in "_en_" and as _January 10<sup>th</sup>_ in "_fr_".
 
-Dates must be in one of these formats:
+Dates must use one of these formats:
 
 - MM/DD/YYYY or MM-DD-YYYY
 - DD/MM/YYYY or DD-MM-YYYY
@@ -50,10 +50,10 @@ Dates must be in one of these formats:
 To convert from numeric date, month and year components, read [Date](function-date-time.md). <br>
 To convert from numeric hour, minute and second components, read [Time](function-date-time.md).
 
-For more information, read:
+For more information, see:
 
-- [Working with date and time](/power-apps/maker/canvas-apps/show-text-dates-times).
-- [Date/time and data types](../data-types.md#date-time-and-datetime).
+- [Working with date and time](/power-apps/maker/canvas-apps/show-text-dates-times)
+- [Date/time and data types](../data-types.md#date-time-and-datetime)
 
 ## Syntax
 
@@ -95,7 +95,7 @@ If you type **10/11/2014** into a text-input control named **Startdate**, and th
 
   Device set to **en** locale shows the label as **Monday, November 10, 2014**.
 
-If you typed **October 20, 2014** instead:
+If you enter **October 20, 2014** instead:
 
 - Convert a date from a string in the user's locale and calculate the difference between two days, in days
 
