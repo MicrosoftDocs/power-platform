@@ -1,6 +1,6 @@
 ---
-title: "Security enhancements: User session and access management"
-description: "Security enhancements: User session and access management"
+title: Security enhancements for user sessions and access management
+description: Learn how to set options that govern user sessions and access management
 ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 06/19/2025
@@ -14,9 +14,8 @@ ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
-# Security enhancements: User session and access management 
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+# Security enhancements for user sessions and access management
 
 You can use security enhancements to protect the customer engagement apps, such as Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation. 
 
@@ -39,7 +38,6 @@ This Microsoft Entra ID token refresh cycle continues in the background based on
 >
 > To determine your version, sign in to customer engagement apps, and in the upper-right side of the screen, select the **Settings** button (![User profile Settings button.](media/user-profile-settings-button.png)) > **About**. 
 
-
 ### Resilience to Microsoft Entra outages 
 If intermittent Microsoft Entra outages occur, authenticated users can still access customer engagement apps and Dataverse data if their PCI claims remain valid or they opt into 'Stay signed in' during authentication. 
 
@@ -47,8 +45,7 @@ If intermittent Microsoft Entra outages occur, authenticated users can still acc
 For environments that require different session timeout values, administrators can continue to set the session timeout and/or inactivity timeout in the System Settings. These settings override the default Microsoft Entra session policy and users are directed to Microsoft Entra ID reauthentication when these settings expired.   
 
 ### To change this behavior
-
-- To enforce users to reauthenticate after a predetermined period of time, admins can set a session timeout for their individual environments. Users can only remain signed in the application during session. The application signs out the user when the session expires. Users need to sign in with their credentials to return to customer engagement apps.
+To enforce users to reauthenticate after a predetermined period of time, admins can set a session timeout for their individual environments. Users can only remain signed in the application during session. The application signs out the user when the session expires. Users need to sign in with their credentials to return to customer engagement apps.
 
 > [!NOTE]
 > User session timeout isn't enforced in the following apps:
@@ -72,7 +69,8 @@ For environments that require different session timeout values, administrators c
     - **Enter maximum session length**
     - **How long before the session expires do you want to show  timeout warning?**
 
-These settings apply to all users.
+    These settings apply to all users.
+1. Select **Save**.
    
 #### [Classic admin center](#tab/classic)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
@@ -85,23 +83,22 @@ These settings apply to all users.
     - **Enter maximum session length**
     - **How long before the session expires do you want to show  timeout warning?**
 
-These settings apply to all users.
-
+    These settings apply to all users.
+1. Select **Save**.
 ---
 
 > [!NOTE]
-> **Session timeout** is a server side feature where life time of all sessions is enforced.
-> Default values are:
+> **Session timeout** is a server side feature where life time of all sessions is enforced. Default values are:
 > - Maximum Session Length: 1,440 minutes
 > - Minimum Session Length: 60 minutes
 > - How long before session expires before showing timeout warning: 20 minutes
-
-> - The updated settings will be effective the next time the user signs in to the application.
+> 
+> The updated settings will be effective the next time the user signs in to the application.
 
 ## Inactivity timeout
 By default, customer engagement apps don't enforce an inactivity session timeout. A user can remain logged in the application until the session timeout expires. You can change this behavior.
 
-- To enforce users to automatically be signed out after a predetermined period of inactivity, admins can set an inactivity timeout period for each of their environments. The application signs out the user when the inactivity session expires.
+To enforce users to automatically be signed out after a predetermined period of inactivity, admins can set an inactivity timeout period for each of their environments. The application signs out the user when the inactivity session expires.
 
 > [!NOTE]
 > Inactivity session timeout isn't enforced in the following apps:
@@ -124,7 +121,13 @@ The Dynamics 365 portal has its own settings to manage its session timeout and i
 1. On the **Environments** page, select an environment.
 1. In the command bar, select **Settings**. 
 1. Expand **Product**, then select **Privacy + Security**.
-1. Turn on the toggle for **Inactivity timeout** and set inactivity timeout values. These settings apply to all users.
+1. Turn on the **Inactivity timeout** setting.
+1. Enter values in the following fields:
+    - **Duration of inactivity before timeout**
+    - **How long before the session expires do you want to show an inactivity warning?**
+
+    These settings apply to all users.
+1. Select **Save**.
    
 #### [Classic admin center](#tab/classic)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
@@ -132,16 +135,21 @@ The Dynamics 365 portal has its own settings to manage its session timeout and i
 1. On the **Environments** page, select an environment.
 1. In the command bar, select **Settings**.  
 1. Expand **Product**, then select **Privacy + Security**.
-1. Turn on the toggle for **Inactivity timeout** and set inactivity timeout values. These settings apply to all users.
+1. Turn on the **Inactivity timeout** setting.
+1. Enter values in the following fields:
+    - **Duration of inactivity before timeout**
+    - **How long before the session expires do you want to show an inactivity warning?**
+
+    These settings apply to all users.
+1. Select **Save**.
 ---
 
 > [!NOTE]
->  **Inactivity timeout** is a client side feature where client is making decision to primitively sign out based on the inactivity.
-> Default values are:
+>  **Inactivity timeout** is a client side feature where client is making decision to primitively sign out based on the inactivity. Default values are:
 > - Minimum Duration of Inactivity: 5 minutes
 > - Maximum Duration of Inactivity: less than Maximum Session length or 1,440 minutes
-
-> - The updated settings will be effective the next time the user signs in to the application. 
+>   
+> The updated settings will be effective the next time the user signs in to the application. 
 
 ## Access management
 
@@ -149,7 +157,5 @@ Customer engagement apps use Microsoft Entra ID as the identity provider. To sec
 
 - To enforce users to reauthenticate, users are required to sign in with their credentials after they signed out within the application. 
 - To prevent users from sharing credentials to access customer engagement apps, the system validates the user access token to ensure that the identity provider granted access to the same user who is accessing the apps.
-
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
