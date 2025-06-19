@@ -19,7 +19,6 @@ contributors:
 # Monitor the health of your resources (preview)
 
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner.md)]
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 Your organization can use the **Monitor** area of the Power Platform admin center to measure and improve operational health metrics of resources that are built or deployed. Those resources include apps and flows. 
 
