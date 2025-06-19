@@ -707,6 +707,7 @@ steps:
     OverrideFriendlyName: true
     FriendlyName: 'Contoso Test'
     SkipAuditData: true
+    MaxAsyncWaitTime: 60
 ```
 
 #### Parameters (Copy-env)
@@ -721,6 +722,7 @@ steps:
 | `OverrideFriendlyName`<br/>Override friendly name | Change the target environment's friendly name to another name (true\|false). |
 | `FriendlyName`<br/>Friendly name | The friendly name of the target environment. |
 | `SkipAuditData`<br/>SkipAuditData | Whether to skip audit data during copy operation. (true\|false). |
+| `MaxAsyncWaitTime`<br/>Maximum wait time | Maximum wait time in minutes for the asynchronous operation; default is 60 min (1 hr), same as Azure DevOps default for tasks.|
 
 ### Power Platform Restore Environment
 
