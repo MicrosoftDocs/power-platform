@@ -34,14 +34,14 @@ The easiest way to get finance and operations apps up and running in Power Platf
 
 ### Before you begin
 
-- You can't provision finance and operations apps in Power Platform unless you have a license assigned that grants this permission. An example license is Dynamics 365 Finance or Dynamics 365 Supply Chain Management for customers, and Dynamics 365 Operations Application Partner Sandbox for partners and ISVs. This must be assigned by your license administrator to your user account in Microsoft Entra. Review the licenses currently assigned to you in the Subscription table on the [MyAccount](https://portal.office.com/account/?ref=MeControl) page.
+- You can't provision finance and operations apps in Power Platform unless you have a license assigned that grants this permission. An example license is Dynamics 365 Finance or Dynamics 365 Supply Chain Management for customers, and Dynamics 365 Operations Application Partner Sandbox for partners and ISVs. This license must be assigned by your license administrator to your user account in Microsoft Entra. Review the licenses currently assigned to you in the Subscription table on the [MyAccount](https://portal.office.com/account/?ref=MeControl) page.
 
 - You must have at least 1 gigabyte of available Operations and Dataverse database capacities. For more information, see [Manage storage and capacity](../finance-operations-storage-capacity.md).
 
 
 ### Knowing which template to provision
 
-All Dynamics 365 environment templates are associated with their related full user licenses. This means that the admin user in the Power Platform admin center must have a full license assigned to them to be able to create one of these environments, and the same holds true when using tools like PowerShell as well. The following table shows the mapping between various finance and operations apps licenses and their template details.
+All Dynamics 365 environment templates are associated with their related full user licenses, which means that the admin user in the Power Platform admin center must have a full license assigned to them to be able to create one of these environments, and the same holds true when using tools like PowerShell as well. The following table shows the mapping between various finance and operations apps licenses and their template details.
 
 | License | Template name | Template ID | Comments |
 | ----------- | ----------- |----------- |----------- |
@@ -59,7 +59,7 @@ Be sure to check out the latest known limitations available in the overview arti
 
 To create a new environment where finance and operations apps are preinstalled, perform the following steps:
 
-Open your PowerShell console application, and run the following commands to generate the environment. 
+Open your PowerShell console application, and run the following commands to generate the environment.
 
  - Your environment name must be **globally unique and less than 20 characters** because that derives the environment URL. 
 
