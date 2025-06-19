@@ -61,6 +61,8 @@ After you’ve created your alert, the system does an on-demand evaluation and s
 ## When an alert is triggered
 If you selected to receive email notifications when any resource triggers an alert, you get an email notification sent to you.
 
+:::image type="content" source="media/alert-email.png" alt-text="If you selected to receive email notifications when any resource triggers an alert, you get an email notification sent to you.." lightbox="media/alert-email.png":::
+
 In the email notification, select **Go to Alert** to open a Power Platform page listing the triggered alerts, where you can see information on the triggered alert and what resources triggered it. When you select any of the resources in the triggered alert, a pane is displayed that shows timeseries information for all applicable metrics for that resource, and recommendations for how to improve the metric if it’s suboptimal.
 
 ### Notes:
