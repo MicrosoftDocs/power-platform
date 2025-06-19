@@ -1,6 +1,6 @@
 ---
-title: Security enhancements: User session and access management 
-description: Security enhancements: User session and access management
+title: "Security enhancements: User session and access management"
+description: "Security enhancements: User session and access management"
 ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 06/19/2025
