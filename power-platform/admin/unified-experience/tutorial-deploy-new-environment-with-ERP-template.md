@@ -38,7 +38,6 @@ The easiest way to get finance and operations apps up and running in Power Platf
 
 - You must have at least 1 gigabyte of available Operations and Dataverse database capacities. For more information, see [Manage storage and capacity](../finance-operations-storage-capacity.md).
 
-
 ### Knowing which template to provision
 
 All Dynamics 365 environment templates are associated with their related full user licenses, which means that the admin user in the Power Platform admin center must have a full license assigned to them to be able to create one of these environments, and the same holds true when using tools like PowerShell as well. The following table shows the mapping between various finance and operations apps licenses and their template details.
@@ -61,9 +60,9 @@ To create a new environment where finance and operations apps are preinstalled, 
 
 Open your PowerShell console application, and run the following commands to generate the environment.
 
- - Your environment name must be **globally unique and less than 20 characters** because that derives the environment URL. 
+ - Your environment name must be **globally unique and less than 20 characters** because that derives the environment URL.
 
- - Note the variables, so that you can change the input values as required. 
+ - Note the variables, so that you can change the input values as required.
  
  - If you want to use a service principal, follow the instructions in [Creating a service principal application using PowerShell](../powershell-create-service-principal.md).
 
@@ -96,7 +95,7 @@ New-AdminPowerAppEnvironment -DisplayName "MyUniqueNameHere" -EnvironmentSku San
 ```
 
 > [!IMPORTANT]
-> If you require the user interface (UI), follow the steps in [Tutorial: Install the Finance and Operations Provisioning App](./tutorial-install-finance-operations-provisioning-app.md). You can't currently use the UI to create new sandbox and production environments that have finance and operations apps. 
+> If you require the user interface (UI), follow the steps in [Tutorial: Install the Finance and Operations Provisioning App](./tutorial-install-finance-operations-provisioning-app.md). You can't currently use the UI to create new sandbox and production environments that have finance and operations apps.
 
 ## Delete the environment
 
@@ -106,13 +105,13 @@ In this step, delete the environment you previously created. Deleting an environ
  
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. Select **Manage** in the navigation pane.
-1. In the **Manage** pane, select **Environments**. 
+1. In the **Manage** pane, select **Environments**.
 1. Select an appropriate environment, and then select the **Delete** button in the action bar at the top of the page. Confirm that you want to delete the environment and proceed.
 
 # [Classic admin center](#tab/classic)
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) using administrator credentials.
-1. Go to **Environments**. 
+1. Go to **Environments**.
 1. Select an appropriate environment, and then select the **Delete** button in the action bar at the top of the page. Confirm that you want to delete the environment and proceed.
 
 # [PowerShell](#tab/PowerShell)
@@ -124,7 +123,4 @@ Use the following script to delete the previously created environment. Set the *
 Remove-AdminPowerAppEnvironment -EnvironmentName [Guid]
 ```
 ---
-
-
-
 

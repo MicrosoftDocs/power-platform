@@ -65,6 +65,8 @@ Installation of the provisioning app has the following known limitations:
 
 ## Step-by-step installation guide 
 
+### Install on an environment
+
 # [New admin center](#tab/new)
  
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
