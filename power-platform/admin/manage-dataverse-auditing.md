@@ -3,7 +3,7 @@ title: Manage Dataverse auditing
 description: Configure Dataverse auditing to log changes to customer records, user access, operations on records, and security roles. This feature meets external and internal auditing, compliance, security, and governance policies.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 06/18/2025
+ms.date: 06/19/2025
 author: paulliew 
 ms.subservice: admin
 ms.author: paulliew 
@@ -234,7 +234,7 @@ This task requires the System Administrator or System Customizer role or equival
 
 This feature allows you to quickly turn on auditing for multiple tables (entities) simultaneously. The grouping of tables corresponds to a Dynamics 365 application, for example, Sales tables correspond to the Sales Hub app.
 
-1. In the web app, go to **Settings** (![Settings.](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
+1. In the web app, go to **Settings** > **Advanced Settings**.
 
 1. Select **System** > **Administration**.
 
