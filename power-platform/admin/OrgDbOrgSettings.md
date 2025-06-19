@@ -4,7 +4,7 @@ description: This topic covers the default options available in OrgDBOrgSettings
 author: DerekBraunMSFT
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 04/01/2024
+ms.date: 06/19/2025
 ms.subservice: admin
 ms.author: debrau
 ms.reviewer: sericks
@@ -46,7 +46,7 @@ This topic covers the default values of OrgDBOrgSettings that are specific to se
 | RestrictIRMEmailItems | false | When enabled, server-side synchronization won't automatically track emails that are marked as restricted permission in Outlook by using Information Rights Management (IRM). The default value is set to false to preserve existing behavior. This setting does not prevent users from manually tracking a restricted email using Dynamics 365 App for Outlook or category tracking.|
 | SSSCreateAdditionalQueueItemsForAlreadyTrackedEmail | false | When enabled, server-side synchronization will create a queue item for the synchronizing queue if an email has already been created by server-side synchronization and the queue item doesn't exist in the synchronizing queue. The default value is false. |
 | SSSForceFilteringMethodForUserMailboxes | -1 | Overrides the incoming email filtering method for all user mailboxes by the following values: -1 (Disabled), 0 (All Email Messages), 1 (Email messages in response to Dynamics 365 email), 2 (Email messages from Dynamics 365 Leads, Contacts and Accounts), 3 (Email messages from Dynamics 365 records that are email enabled), and 4 (No email messages). |
-| SSSPropagateAppointmentCancellationsToExchange | false | When enabled, canceled appointments in Dynamics 365 will propagate to the Exchange organizer's mailbox as a delete. This will result in a cancellation message to all recipients if the appointment has attendees and is scheduled in the future. **Note**: The email address of the meeting organizer in Exchange must match the email address of the organizer's mailbox record in Dataverse. |
+| SSSPropagateAppointmentCancellationsToExchange | false | When enabled, canceled appointments in Dynamics 365 propagate to the Exchange organizer's mailbox as a delete. This results in a cancellation message to all recipients if the appointment has attendees and is scheduled in the future. **Note**: The email address of the meeting organizer in Exchange must match the email address of the organizer's mailbox record in Dataverse. |
 | SSSSaveOutgoingEmailToExchangeSentFolder | true | When enabled, emails sent from Dynamics 365 will be saved to the sent items folder in Exchange for the mailbox they're sent from. <br> **Note**: this will cause the Sent Items folder to increase in size over time, and can result in Exchange throttling if quota limitations are surpassed. |
 | SSSTagAlreadyTrackedEmails | true | Allows server-side synchronization to apply the **Tracked to Dynamics 365** category flag to emails in Dynamics 365 recipient mailboxes if the email being evaluated is already a row in Dynamics 365.
 | SSSTaskDeletionSyncBehaviorFromExchange | 0 | 	Specifies how task deletions in Exchange are synchronized to their linked Dynamics 365 activity record. <br> 0: Tasks deleted in Exchange are deleted in Dynamics (default). <br> 1: Tasks deleted in Exchange are deleted in Dynamics if they are not Completed. <br>2: Tasks deleted in Exchange are never deleted in Dynamics.|
