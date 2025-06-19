@@ -1055,7 +1055,7 @@
         "tags": [
           "TemporaryCurrencyEntitlement"
         ],
-        "summary": "Gets the number of temporary currency entitlements that have been requested this month, and the maximum allowed per month, for the provided currency type.",
+        "summary": "Get the temporary currency count and limit for the month by type.",
         "operationId": "RetrieveTemporaryCurrencyEntitlementCount",
         "produces": [
           "application/json"
