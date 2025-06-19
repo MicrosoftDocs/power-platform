@@ -78,7 +78,7 @@ Admins should use the Power Platform admin center to set up the data export. Bef
 
 Follow these steps to set up your data lake:
 
-1. Sign in to the Power Platform admin center as a Microsoft Entra Global Admin, select **Export to Azure Data Lake**, and then select either **Power Apps** or **Power Automate**.  
+1. Sign in to the Power Platform admin center as a Microsoft Entra Global Admin. Under **Analytics** > **Data Export** select **New data export**, and then select either **Power Apps** or **Power Automate**.  
     The Global Admin user must have specific roles described in [First-time setup of data export](#first-time-setup-of-a-data-export).
 
 2. Set **Enable tenant-level analytics** to **On**.
