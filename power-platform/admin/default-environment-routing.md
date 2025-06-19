@@ -3,7 +3,7 @@ title: Environment routing
 description: Learn how to use the environment routing governance feature. 
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 06/10/2025
+ms.date: 06/19/2025
 author: akadrno
 ms.custom: NewPPAC
 ms.author: kauguillard 
@@ -15,7 +15,7 @@ search.audienceType:
 
 # Environment routing
 
-Environment routing is a premium governance feature. This feature allows Power Platform admins to automatically direct new or existing makers into their own personal developer environments when they visit [make.powerapps.com](https://make.powerapps.com/), [copilotstudio.microsoft.com](https://copilotstudio.microsoft.com), or [make.powerautomate.com](https://make.powerautomate.com/). Environment routing offers makers a personal, safe space to build with Microsoft Dataverse without the fear of others accessing their apps or data.
+Environment routing is a premium governance feature. This feature allows Power Platform admins to automatically direct new or existing makers into their own personal developer environments when they visit [copilotstudio.microsoft.com](https://copilotstudio.microsoft.com), [make.powerapps.com](https://make.powerapps.com/), or [make.powerautomate.com](https://make.powerautomate.com/). Environment routing offers makers a personal, safe space to build with Microsoft Dataverse without the fear of others accessing their apps or data.
 
 > [!VIDEO 4e944970-757a-4c21-9349-83bf52672583]
 
