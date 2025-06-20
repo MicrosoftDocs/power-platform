@@ -5,6 +5,7 @@ ms.date: 01/06/2025
 ms.topic: how-to
 author: JesseParsons
 ms.subservice: admin
+ms.custom: NewPPAC
 ms.author: jeparson
 ms.reviewer: sericks
 ms.custom: "admin-security"
@@ -41,7 +42,24 @@ This results in a default CSP of `script-src * 'unsafe-inline' 'unsafe-eval'; wo
 
 CSP can be toggled and configured through the Power Platform admin center. **It's important to enable on a dev/test environment first** since enabling CSP could start blocking scenarios if the policy is violated. We also support a "report-only mode" to allow for easier ramp-up in production.
 
-To configure CSP, navigate to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) -> **Environments** -> **Settings** -> **Privacy + Security**. The following image shows the default state of the settings:
+To configure CSP:
+
+### [New admin center](#tab/new)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**, then in the **Manage** pane, select **Environments**.
+1. On the **Environments** page, select an environment.
+1. In the command bar, select **Settings**. 
+1. Expand **Product**, then select **Privacy + Security**.
+   
+### [Classic admin center](#tab/classic)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Environments**.
+1. On the **Environments** page, select an environment.
+1. In the command bar, select **Settings**.  
+1. Expand **Product**, then select **Privacy + Security**.
+---
+
+The following image shows the default state of the settings:
 
 ![Content security policy default settings](media/csp-default-settings.png "Content security policy default settings")
 
