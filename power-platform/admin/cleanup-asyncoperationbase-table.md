@@ -78,28 +78,28 @@ To unblock customers that have significant asyncoperation size, we introduced a 
 
 - Bulk delete priority applies only to newly created, nonrecurring bulk delete jobs for entity asyncoperation.
 - To maximize effectiveness of this feature and get optimal job performance, create jobs with varying filter conditions, such as jobs with different date ranges, system job types, status codes, or any other criteria.
-- Organizations can create up to five priority jobs. After those jobs have been created, new jobs are created with default preference.
+- Organizations can create up to five priority jobs. After those jobs are created, new jobs are created with default preference.
 - Regardless of the number of nonasyncoperation entity jobs in the queue, one asyncoperation job can always be created with priority.
-- There is no change with respect to creation steps for bulk, delete jobs.
+- There's no change with respect to creation steps for bulk, delete jobs.
 
 ## Best practices for designing workflows
 
 After you delete unneeded records in your workflow tables, there are a few steps you can take in your workflow design to prevent the tables from growing as fast in the future.
 
-For asynchronous workflows, we recommend enabling **Automatically delete completed workflow jobs (to save disk space)** in the workflow editor. This allows the system to delete workflow logs for successful executions to save space. Logs from failed workflow executions are always saved for troubleshooting.
+For asynchronous workflows, we recommend enabling **Automatically delete completed workflow jobs (to save disk space)** in the workflow editor. This setting allows the system to automatically delete logs for successful completed jobs, conserving storage space. Logs from failed workflow executions are always retained for troubleshooting purpose.
 
 :::image type="content" source="media/bulk-deletion-automatically-delete.png" alt-text="Set Workflow Job Retention to automatically delete completed workflow jobs.":::
 
-For synchronous workflows, we recommend enabling **Keep logs for workflow jobs that encountered errors** in the workflow editor. This allows logs from failed workflow executions to be saved for troubleshooting. Logs from successful workflow executions will always be deleted to save space.
+For synchronous workflows, we recommend enabling **Keep logs for workflow jobs that encountered errors** in the workflow editor. This setting ensures that logs from failed executions are retained for troubleshooting, while logs from successful run are automatically deleted to save space.
 
 :::image type="content" source="media/bulk-deletion-keep-logs.png" alt-text="Set Workflow Log Retention to keep logs for workflow jobs that encountered errors.":::
 
 ## AsyncOperation file capacity usage
 
-Historically, the entire async operation context used to be serialized directly in the AsyncOperation table [Data property](/power-apps/developer/data-platform/reference/entities/asyncoperation#BKMK_Data), leading to quick growth in size if there are asynchronous plug-in registrations on large records (such as attachment). Since early 2021, the data portion of async operations is moved to file store. As a result, async operation data size is partially counted in database capacity and partially in file capacity. This helps reduce the cost (since file capacity is charged at a lower rate than database capacity) and improves overall performance (since queries against the AsyncOperation table are more performant).
+Historically, the entire async operation context used to be serialized directly in the AsyncOperation table [Data property](/power-apps/developer/data-platform/reference/entities/asyncoperation#BKMK_Data), leading to quick growth in size if there are asynchronous plug-in registrations on large records (such as attachment). Since early 2021, the data portion of async operations is moved to file store. As a result, async operation data size is partially counted in database capacity and partially in file capacity. This shift helps reduce the costs—since file capacity is charged at a lower rate than database capacity—and improves overall performance by enabling more efficient queries against the AsyncOperation table.
 
 > [!NOTE]
-> Files related to AsyncOperation records cannot be deleted directly. In order to reclaim file capacity please review retention and cleanup policies of AsyncOperation records described in this article. When AsyncOperation records are deleted their corresponding files get deleted as well.
+> Files related to AsyncOperation records can't be deleted directly. In order to reclaim file capacity, please review retention and cleanup policies of AsyncOperation records described in this article. When AsyncOperation records are deleted, their corresponding files get deleted as well.
 
 For more information on Dataverse storage model and reporting, see [New Microsoft Dataverse storage capacity](capacity-storage.md).
 
