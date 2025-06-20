@@ -52,22 +52,47 @@ To check whether you have any of these licenses, sign in to the Microsoft 365 ad
 
 ## Verifying your Microsoft Dataverse capacity-based storage model
 
-1. Sign in to the Power Platform admin center and then select an environment. 
+#### [New admin center](#tab/new)
 
-1. Select **Resources** > **Capacity** > **Summary** tab.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 
-1. View the data on the **Summary** page.
+2. In the navigation pane, select **Licensing**.
+
+3. In the Licensing pane, select **Capacity add-ons** and then select **Summary**.
+
+4. View the data on the **Summary** page.
 
    For the **Summary** page to display, the user needs to have one of the following roles: 
     - Tenant administrator
     - Power Platform administrator
     - Dynamics 365 administrator 
 
-    Alternatively, a user with any of the above-mentioned roles can grant permissions to the environment administrator to view the **Capacity summary** tab within the **Tenant setting** page. 
+    Alternatively, a user with any of the above-mentioned roles can grant permissions to the environment administrator to view the **Capacity summary** tab within the **Tenant setting** page.
 
-    The new licensing storage model looks like the following image. 
+    The new licensing storage model looks like the following image.
+
+    **Request**: Require a similar image in green PPAC
+
+#### [Classic admin center](#tab/classic)
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+
+2. Select **Resources** > **Capacity** > **Summary**.
+
+3. View the data on the **Summary** page.
+
+   For the **Summary** page to display, the user needs to have one of the following roles: 
+    - Tenant administrator
+    - Power Platform administrator
+    - Dynamics 365 administrator 
+
+    Alternatively, a user with any of the above-mentioned roles can grant permissions to the environment administrator to view the **Capacity summary** tab within the **Tenant setting** page.
+
+    The new licensing storage model looks like the following image.
 
     :::image type="content" source="media/capacity-new-license-model.png" alt-text="Screenshot of the new licensing storage model.":::
+
+---
 
 ## Capacity page details
 
@@ -75,9 +100,27 @@ To check whether you have any of these licenses, sign in to the Microsoft 365 ad
 
 This page provides a tenant-level view of where your organization is using storage capacity.
 
-To view the **Summary** page, select **Resources** > **Capacity** > **Summary** tab.
+Follow these steps to view the **Summary** page:
+
+##### [New admin center](#tab/new)
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+
+1. In the navigation pane, select **Licensing**.
+
+2. In the Licensing pane, select **Capacity add-ons** and then select **Summary**.
+
+**Request**: Require an image of the Summary page in the green PPAC
+
+##### [Classic admin center](#tab/classic)
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+
+2. Select **Resources** > **Capacity** > **Summary**.
 
 :::image type="content" source="media/storage-data-capacity-page-review.png" alt-text="Screenshot of the Capacity page Summary tab.":::
+
+---
 
 All tables of Dataverse, including system tables, are included in the storage capacity reports.
 
@@ -97,7 +140,29 @@ This page provides similar information as the **Summary** tab, but with an envir
 > [!NOTE]
 > There's no technical limit on the size of a Dataverse environment. Limits mentioned on this page are entitlement limits based on product licenses purchased.
 
-To view the **Storage capacity** page, select **Resources** > **Capacity** > **Dataverse** tab. 
+Follow these steps to view the **Dataverse** tab:
+
+##### [New admin center](#tab/new)
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+
+1. In the navigation pane, select **Licensing**.
+
+2. In the Licensing pane, select **Capacity add-ons** and then select **Summary**.
+
+3. Select the **Dataverse** tab.
+
+**Request**: Require an image of the Dataverse tab in the green PPAC
+
+##### [Classic admin center](#tab/classic)
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+
+2. Select **Resources** > **Capacity** > **Summary**.
+
+:::image type="content" source="media/storage-data-capacity-page-review.png" alt-text="Screenshot of the Capacity page Summary tab.":::
+
+---
 
 Note the following features:
 
@@ -111,6 +176,7 @@ Note the following features:
 :::image type="content" source="media/storage-data-per-environment2.png" alt-text="Screenshot of storage data per environment details button.":::
 
 > [!NOTE]
+>
 > - The following environments don't count against capacity and are shown as 0 GB:
 >   - Microsoft Teams
 >   - Trial
@@ -121,7 +187,6 @@ Note the following features:
 > - You can select an environment that's showing 0 GB and then go to its environment capacity analytics page to see the actual consumption.
 > - For the default environment, the list view shows the amount of capacity consumed beyond the included quota. Select the **Details** button (![Storage data details button.](media/storage-data-details-button.png "Storage data details button")) to see usage.
 > - The capacity check&mdash;conducted before creating new environments&mdash;excludes the default environment's included storage capacity when calculating whether you have sufficient capacity to create a new environment.
-
 
 #### Environment storage capacity details
 
@@ -169,7 +234,6 @@ To view this page, select **Resources** > **Capacity** > **Trials** tab.
 |---------|---------|
 |Download     | Select **Download** above the list of environments to download an Excel .CSV file with high-level storage information for each environment that the signed-in admin has permission to see in the Power Platform admin center.        |
 |Search     | Use **Search** to search by the environment name and the environment type.         |
-
 
 ## Dataverse page in Licenses (preview)
 
