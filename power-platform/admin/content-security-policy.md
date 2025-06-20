@@ -1,6 +1,6 @@
 ---
 title: Content security policy
-description: Use content security policy to prevent click jacking in Power Apps. 
+description: Use content security policy to prevent clickjacking attacks in Power Apps. 
 ms.date: 01/06/2025
 ms.topic: how-to
 author: JesseParsons
@@ -33,7 +33,7 @@ Each component of the CSP header value controls the assets that can be downloade
 | [font-src](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/font-src) | `* data:` | No |
 | [frame-ancestors](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/frame-ancestors) | `'self' https://*.powerapps.com` | Yes |
 
-This results in a default CSP of `script-src * 'unsafe-inline' 'unsafe-eval'; worker-src 'self' blob:; style-src * 'unsafe-inline'; font-src * data:; frame-ancestors 'self' https://*.powerapps.com;`. In our roadmap, we have the ability to modify currently noncustomizable headers.
+This configuration results in a default CSP of `script-src * 'unsafe-inline' 'unsafe-eval'; worker-src 'self' blob:; style-src * 'unsafe-inline'; font-src * data:; frame-ancestors 'self' https://*.powerapps.com;`. In our roadmap, we have the ability to modify currently noncustomizable headers.
 
 ### Prerequisites
 - For Dynamics 365 customer engagement apps and other model-driven apps, CSP is only available in online environments and in organizations with Dynamics 365 customer engagement (on-premises), version 9.1 or later version.
@@ -84,7 +84,7 @@ This section allows you to control individual directives within the policy. Curr
 
 ![Configure CSP directives](media/csp-directives.png "Configure CSP directives")
 
-Leaving the default directive toggled on uses the default value specified in the table shown earlier in this article. Turning off the toggle allows admins to specify custom values for the directive and append them to the default value. The example below sets custom values for `frame-ancestors`. The directive would be set to `frame-ancestors: 'self' https://*.powerapps.com https://www.foo.com https://www.bar.com` in this example, meaning the app could be hosted in the same origin, `https://*.powerapps.com`, `https://www.foo.com` and `https://www.bar.com`, but not in other origins. Use the Add button to add entries to the list and the delete icon to remove them.
+Leaving the default directive toggled on uses the default value specified in the table shown earlier in this article. Turning off the toggle allows admins to specify custom values for the directive and append them to the default value. The example below sets custom values for `frame-ancestors`. The directive would be set to `frame-ancestors: 'self' https://*.powerapps.com https://www.foo.com https://www.bar.com` in this example, meaning the app could be hosted in the same origin, `https://*.powerapps.com`, `https://www.foo.com` and `https://www.bar.com`, but not in other origins. Use the **Add** button to add entries to the list and the **Delete** icon to remove them.
 
 ![Setting custom CSP directives](media/csp-default-directive.png "Setting custom CSP directives")
 
@@ -146,7 +146,7 @@ CSP can be configured without using the UI by modifying the following organizati
 
 - [IsContentSecurityPolicyEnabled](/powerapps/developer/data-platform/reference/entities/organization#BKMK_IsContentSecurityPolicyEnabled) controls whether the Content-Security-Policy header is sent in model-driven apps.
 
-- [ContentSecurityPolicyConfiguration](/powerapps/developer/data-platform/reference/entities/organization#BKMK_ContentSecurityPolicyConfiguration) controls the value of the frame-ancestors portion (as seen above, it's set to `'self'` if `ContentSecurityPolicyConfiguration` is not set). This setting is represented by a JSON object with the following structure – `{ "Frame-Ancestor": { "sources": [ { "source": "foo" }, { "source": "bar" } ] } }`. This would translate into `script-src * 'unsafe-inline' 'unsafe-eval'; worker-src 'self' blob:; style-src * 'unsafe-inline'; font-src * data:; frame-ancestors 'foo' 'bar';`
+- [ContentSecurityPolicyConfiguration](/powerapps/developer/data-platform/reference/entities/organization#BKMK_ContentSecurityPolicyConfiguration) controls the value of the frame-ancestors portion (as seen above, it's set to `'self'` if `ContentSecurityPolicyConfiguration` is not set). This setting is defined using a JSON object with the following structure – `{ "Frame-Ancestor": { "sources": [ { "source": "foo" }, { "source": "bar" } ] } }`. This configuration translates into `script-src * 'unsafe-inline' 'unsafe-eval'; worker-src 'self' blob:; style-src * 'unsafe-inline'; font-src * data:; frame-ancestors 'foo' 'bar';`
   - (From MDN) The HTTP Content-Security-Policy (CSP) frame-ancestors directive specifies valid parents that may embed a page using `<frame>`, `<iframe>`, `<object>`, `<embed>`, or `<applet>`.
 
 - [IsContentSecurityPolicyEnabledForCanvas](/powerapps/developer/data-platform/reference/entities/organization#BKMK_IsContentSecurityPolicyEnabledForCanvas) controls whether the Content-Security-Policy header is sent in canvas apps.
