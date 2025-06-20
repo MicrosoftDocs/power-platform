@@ -4,7 +4,7 @@ description: Reference information for functions, signals, and enumerations avai
 author: gregli-msft
 ms.topic: reference
 ms.reviewer: matp
-ms.date: 6/25/2024
+ms.date: 06/18/2025
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
@@ -57,7 +57,7 @@ In this article, learn about all the formulas available with [functions](/power-
 
 **[Blank](reference/function-isblank-isempty.md)** – Returns a _blank_ value that can be used to insert a NULL value in a data source.
 
-**[Boolean](reference/function-boolean.md)** – Converts a text string, number, or untyped value to a Boolean value.
+**[Boolean](reference/function-boolean.md)** – Converts a text string, number, or dynamic value to a Boolean value.
 
 ## C
 
@@ -75,9 +75,9 @@ In this article, learn about all the formulas available with [functions](/power-
 
 **[ColorValue](reference/function-colors.md)** – Translates a CSS color name or a hex code to a color value.
 
-**[Column](reference/function-columnnames-column.md)** – Retrieves column names and values from an [Untyped object data type](untyped-object.md).
+**[Column](reference/function-columnnames-column.md)** – Retrieves column names and values from a [Dynamic value](untyped-object.md).
 
-**[ColumnNames](reference/function-columnnames-column.md)** – Retrieves column names and values from an [Untyped object data type](untyped-object.md).
+**[ColumnNames](reference/function-columnnames-column.md)** – Retrieves column names and values from a [Dynamic value](untyped-object.md).
 
 **[Concat](reference/function-concatenate.md)** – Concatenates strings in a data source.
 
@@ -247,7 +247,7 @@ In this article, learn about all the formulas available with [functions](/power-
 
 **[Parent](reference/operators.md#self-and-parent-operators)** – Provides access to a container control's properties.
 
-**[ParseJSON](reference/function-parsejson.md)** – Converts JSON document represented as text to an [Untyped object](untyped-object.md) value.
+**[ParseJSON](reference/function-parsejson.md)** – Converts JSON document represented as text to a [Dynamic value](untyped-object.md).
 
 **[Patch](reference/function-patch.md)** – Modifies or creates a record in a data source, or merges records outside of a data source.
 
