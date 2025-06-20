@@ -6,6 +6,7 @@ ms.topic: how-to
 ms.date: 07/18/2024
 author: swylezol
 ms.subservice: admin
+ms.custom: NewPPAC
 ms.author: swylezol
 ms.reviewer: sericks 
 contributors:
@@ -30,39 +31,46 @@ All environments are configured with an out-of-the-box bulk deletion job to dele
 
 You can use the bulk deletion system jobs to delete unneeded records from both AsyncOperation and WorkflowLog tables. To view the bulk deletion system jobs:
 
+### [New admin center](#tab/new)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-2. Select **Environments** in the left navigation pane, select your environment, and then select **Settings** on the top menu bar.
-3. Select **Data management** > **Bulk deletion**.
+1. In the navigation pane, select **Manage**, then in the **Manage** pane, select **Environments**.
+1. On the **Environments** page, select an environment.
+1. In the command bar, select **Settings**. 
+1. Expand **Data management**, then select **Bulk deletion**.
+   
+### [Classic admin center](#tab/classic)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Environments**.
+1. On the **Environments** page, select an environment.
+1. In the command bar, select **Settings**.  
+1. Expand **Data management**, then select **Bulk deletion**.
+---
 
-:::image type="content" source="media/recurring-bulk-deletion-system-jobs.png" alt-text="The Recurring Bulk Deletion System Jobs view.":::
+From the **Bulk Deletion** grid, use the view selector to show the completed, in-progress, pending, and recurring bulk deletion system jobs. 
 
-From the **Bulk Record Deletion** grid, you can use the view selector to view the completed, in-progress, pending, and recurring bulk deletion system jobs. The **Recurring Bulk Deletion System Jobs** view shows the job definitions for the bulk deletion system jobs that are included out of the box.
+The **Recurring Bulk Deletion System Jobs** view shows the out-of-the-box job definitions for the recurring bulk deletion system jobs.
 
-If you open one of these recurring bulk deletion system job records, you can see the query the job uses to identify which records to delete and the schedule the job runs on. For these out-of-the-box system jobs, you can't modify the query used by the system job, but you can modify the schedule the job runs on. If you update the view selector to show jobs that have already been scheduled, are in progress, or executed: you can cancel, resume, or postpone the job. You can find these options in the **Actions** menu when you open the record.
+When you open one of these system job records, you can see the query uses to identify which records to delete and the schedule the job runs on. For these out-of-the-box system jobs, you can't modify the query used by the system job, but you can modify the schedule the job runs on. 
 
-:::image type="content" source="media/bulk-deletion-operation-actions.png" alt-text="Bulk deletion operation Action menu.":::
+If you switch the view to display jobs that are scheduled, in progress, or completed, you can cancel, resume, or postpone the job using the options available in the **Actions** menu when viewing the record.
 
 ## Create your own bulk deletion jobs
 
-If the out-of-the-box system bulk deletion jobs don't meet your organization's needs, you can create your own bulk deletion job. From the **Bulk Record Deletion** grid, select **New** on the command bar. This opens the Bulk Deletion wizard that allows you to define a query for the records you want deleted. The wizard also lets you preview the set of records the query picks up for deletion to allow you to test that you constructed your query correctly.
+If the out-of-the-box system bulk deletion jobs don't meet your organization's needs, you can create your own bulk deletion job.
 
-:::image type="content" source="media/bulk-deletion-new-operation.png" alt-text="Create a new bulk deletion operation.":::
+From the **Bulk Deletion** grid, select **New** on the command bar. This opens the Bulk Deletion wizard that allows you to define a query for the records you want deleted. The wizard also lets you preview the set of records the query picks up for deletion to allow you to test that you constructed your query correctly.
 
-To clean up workflow records from the AsyncOperation table, you need to select the **System Jobs** table and select **[new]** in **Use Saved View** to create your own query. You can only delete completed workflows. Workflows waiting to run or currently in progress can't (and shouldn't be) deleted by your system job.
+To clean up workflow records from the AsyncOperation table, in the **Look for** entity dropdown, select the **System Jobs** table; in the **Use saved view** dropdown, select **[new]** to create your own query. You can only delete completed workflows. Workflows waiting to run or currently in progress can't (and shouldn't be) deleted by your system job.
 
 Add the following conditions to your query:
 
-- **System Job Type Equals Workflow** — target workflow records.
-- **Status Equals Completed** — only completed workflows are valid to complete.
-- [Optional] Filter on the **StatusCodes** (succeeded/failed/canceled) that are valid for completed StateCode.
+- **System Job Type** Equals **Workflow** — target workflow records.
+- **Status** Equals **Completed** — only completed workflows are valid to complete.
+- [Optional] Filter on the **Status Reason** Equals **Succeeded/Failed/Canceled** - valid for completed status.
 - [Optional] Filter on **Completed On** field to only delete older workflows.
 - [Optional] Any more filters you want to apply.
 
-:::image type="content" source="media/bulk-deletion-define-search-criteria.png" alt-text="The Define Search Criteria window.":::
-
-On the next page of the wizard, you can set the frequency your bulk deletion job will run at. You can create a one-time bulk deletion job or define a schedule to allow your job to run at set intervals.
-
-:::image type="content" source="media/bulk-deletion-job-duration.png" alt-text="Set duration of bulk deletion job.":::
+Next you set the frequency of the bulk deletion job to run at. You can create a one-time bulk deletion job or define a schedule to allow your job to run at set intervals.
 
 ## Priority-based, bulk delete jobs for asyncoperation
 
