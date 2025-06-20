@@ -19,7 +19,7 @@ search.audienceType:
 
 [!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
-The [System Job (AsyncOperation) table](/power-apps/developer/data-platform/reference/entities/asyncoperation) stores system jobs. The name of the actual database table is `AsyncOperationBase`. System jobs represent asynchronous operations, including registered workflows, plug-ins, and background operations such as bulk deletion, bulk import, and rollup operations. After the system triggers an event and executes all synchronous extensions, the platform serializes the context for any asynchronous extensions and stores it in the database as an AsyncOperation record.
+The [System Job (AsyncOperation) table](/power-apps/developer/data-platform/reference/entities/asyncoperation) stores system jobs. The name of the actual database table is `AsyncOperationBase`. System jobs represent asynchronous operations, including registered workflows, plug-ins, and background operations such as bulk deletion, bulk import, and rollup operations. After the system triggers an event, it executes all synchronous extensions. Then, it serializes the context for any asynchronous extensions and stores it in the database as an AsyncOperation record.
 
 When an asynchronous workflow is triggered in your Dataverse organization, a record is created in the AsyncOperation table to track the processing of the async job. More records also are created in the [Process Log (WorkflowLog) table](/power-apps/developer/data-platform/reference/entities/workflowlog) to maintain logs for the workflow execution. The name of the actual database table is `WorkflowLogBase`. [Business process flows](/power-automate/business-process-flows-overview) (BPF) also store BPF stage transition and action logs for the BPF in the WorkflowLog table.
 
@@ -78,10 +78,10 @@ Next you set the frequency of the bulk deletion job to run at. You can create a 
 
 To unblock customers that have significant asyncoperation size, we introduced a **priority-based bulk delete** feature for asyncoperation cleanup. This feature is available by default for all organizations. Here are some key points to note:
 
-- Bulk delete priority applies only to newly created, nonrecurring bulk delete jobs for entity asyncoperation.
-- To maximize effectiveness of this feature and get optimal job performance, create jobs with varying filter conditions, such as jobs with different date ranges, system job types, status codes, or any other criteria.
-- Organizations can create up to five priority jobs. After those jobs are created, new jobs are created with default preference.
-- Regardless of the number of nonasyncoperation entity jobs in the queue, one asyncoperation job can always be created with priority.
+- Bulk delete priority applies only to newly created, nonrecurring bulk delete jobs for the AsyncOperation entity.
+- To maximize this feature's effectiveness and optimize job performance, create jobs with varying filter conditions—such as different date ranges, system job types, status codes, or other criteria.
+- Organizations can define up to five priority jobs. Any additional jobs are created with default priority.
+- Regardless of the number of jobs for other entities in the queue, one AsyncOperation job can always be created with priority.
 - There's no change with respect to creation steps for bulk, delete jobs.
 
 ## Best practices for designing workflows
@@ -101,7 +101,7 @@ For synchronous workflows, we recommend enabling **Keep logs for workflow jobs t
 Historically, the entire async operation context used to be serialized directly in the AsyncOperation table [Data property](/power-apps/developer/data-platform/reference/entities/asyncoperation#BKMK_Data), leading to quick growth in size if there are asynchronous plug-in registrations on large records (such as attachment). Since early 2021, the data portion of async operations is moved to file store. As a result, async operation data size is partially counted in database capacity and partially in file capacity. This shift helps reduce the costs—since file capacity is charged at a lower rate than database capacity—and improves overall performance by enabling more efficient queries against the AsyncOperation table.
 
 > [!NOTE]
-> Files related to AsyncOperation records can't be deleted directly. In order to reclaim file capacity, please review retention and cleanup policies of AsyncOperation records described in this article. When AsyncOperation records are deleted, their corresponding files get deleted as well.
+> Files related to AsyncOperation records can't be deleted directly. To reclaim file capacity, review the retention and cleanup policies for AsyncOperation records described in this article. When AsyncOperation records are deleted, their corresponding files get deleted as well.
 
 For more information on Dataverse storage model and reporting, see [New Microsoft Dataverse storage capacity](capacity-storage.md).
 
