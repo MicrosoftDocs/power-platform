@@ -6,7 +6,7 @@ author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 6/10/2024
+ms.date: 06/20/2025
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
@@ -34,7 +34,14 @@ The return value is a Boolean **true** or **false**.
 
 **IsNumeric**( _Value_ )
 
-- _Value_ – Required. Value to test.
+## Examples
+
+| Formula | Description | Result |
+| **IsNumeric(1)** | Evaluates if the number 1 is a number | _true_ |
+| **IsNumeric("1")** | Evaluates if the text "1" is a number | _true_ |
+| **IsNumeric("A")** | Evaluates if the text A is a number | _false_ |
+| **IsNumeric(1+1)** | Evaluates if the outcome of 1+1 is a number | _true_ |
+| **IsNumeric("1+1")** | Evaluates if the text 1+1 is a number | _false_ |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
 
