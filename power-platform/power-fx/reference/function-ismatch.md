@@ -5,7 +5,7 @@ author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 5/1/2025
+ms.date: 06/20/2025
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
@@ -148,7 +148,7 @@ Using **MatchAll** is the same as using the standard "g" modifier for regular ex
 **IsMatch**( _Text_, _Pattern_ [, *Options* ] )
 
 - _Text_ – Required. The text string to test.
-- _Pattern_ – Required. The pattern to test as a text string. Concatenate predefined patterns that the **Match** enum defines or provide a regular expression. _Pattern_ must be a constant formula without variables, data sources, or other dynamic references that change as the app runs.
+- _Pattern_ – Required. The pattern to test as a text string. Concatenate predefined patterns that the **Match** enum defines or provide a regular expression. _Pattern_ must be a constant formula without variables, data sources, or other dynamic references that change as the app runs. Note, that the formula must be expressed as "Match.PredefinedPattern" e.g. Match.Email
 - _Options_ – Optional. A text-string combination of **MatchOptions** enum values. By default, **MatchOptions.Complete** is used. _Options_ must be a constant formula without variables, data sources, or other dynamic references that change as the app runs.
 
 **Match**( _Text_, _Pattern_ [, *Options* ] )
