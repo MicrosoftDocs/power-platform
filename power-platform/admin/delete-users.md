@@ -251,9 +251,9 @@ The user still exists in the environment as disabled and continues to show in th
 1. Select **Settings** > **Users + permissions** > **Users**.
 1. From the command bar, select **Filter**.
 
-   :::image type="content" source="media/filteruser.png" alt-text="Select Filter from the top menu.":::
+   :::image type="content" source="media/filter-user-exist.png" alt-text="Select Filter from the top menu for users in Entra.":::
 
-1. From the drop-down menu, select **Users not in AAD but exist in the environment**.
+1. From the drop-down menu, select **Users not in Microsoft Entra ID but exist in the environment**.
 1. Select the disabled user you want to delete.
 1. On the User Form, select **Delete**.
 1. Select **Refresh list** to update the list and confirm deletion.
@@ -296,9 +296,9 @@ You can delete and remove users with disabled status in Power Platform. You may 
 1. Select **Settings** > **Users + permissions** > **Users**.
 1. From the command bar, select **Filter**.
 
-   :::image type="content" source="media/filteruser.png" alt-text="Select Filter from the top menu.":::
+   :::image type="content" source="media/filter-user-not-exist.png" alt-text="Select Filter from the top menu for users not in Entra.":::
 
-1. From the drop-down menu, select **Users not in AAD and soft deleted in the environment**.
+1. From the drop-down menu, select **Users not in Microsoft Entra ID and soft deleted in the environment**.
 1. Select a soft deleted user to delete the user permanently in the Power Platform environment. Only users who were soft deleted can be deleted permanently.
 1. On the user form, select **Delete**.
 1. Select **Refresh list** to update the list and confirm deletion.
@@ -325,6 +325,23 @@ Users with a disabled status can be deleted, in bulk, using the [Remove a large 
 
 ### Soft delete users in Power Platform in bulk
 
+# [New admin center](#tab/new)
+ 
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. Select **Manage** in the navigation pane.
+1. In the **Manage** pane, select **Environments**. Then select an environment.
+1. Select **Settings** > **Users + permissions** > **Users**.
+1. Select **Bulk delete** from the action bar.
+1. The Define search criteria pane opens. In the **Use saved view** field, select **Users deleted in tenant but exist in the environment** view.
+1. Select **Next**.
+1. Review the list of users and select **Next**.
+1. Enter a job **name** and select a **date and time** to schedule the deletion system job. Select **Next**.
+1. Select the email notification checkbox if you want to be notified when the job completes. Select **Next**.
+1. Verify the query and the number of records to be deleted, and then select **Run bulk delete**.
+
+
+# [Classic admin center](#tab/classic)
+
 1. Go to the Power [Platform admin center](https://admin.powerplatform.microsoft.com).
 1. In the navigation pane, select **Environments**.
 1. Select a specific environment.
@@ -337,12 +354,34 @@ Users with a disabled status can be deleted, in bulk, using the [Remove a large 
 1. Select the email notification checkbox if you want to be notified when the job completes. Select **Next**.
 1. Verify the query and the number of records to be deleted, and then select **Run bulk delete**.
 
-   > [!Note]
-   > You can create your own, equivalent view to meet your record retention policy. For example, you can add other filter conditions, such as the **Azure Deleted On** date and specify **Older than X months** with a value of **3** months to soft delete any users who were deleted from the tenant more than three months ago. Note that this **Azure Deleted On** date is a newer column created in 2022, which means that the value is *null* for users deleted in the tenant prior to 2022. 
-   >
-   > We recommend that you set a schedule to soft delete your users by setting the job **frequency** of **90** days. You save most of your storage costs by soft deleting disabled status users frequently.
+---
+> [!Note]
+> You can create your own, equivalent view to meet your record retention policy. For example, you can add other filter conditions, such as the **Azure Deleted On** date and specify **Older than X months** with a value of **3** months to soft delete any users who were deleted from the tenant more than three months ago. Note that this **Azure Deleted On** date is a newer column created in 2022, which means that the value is *null* for users deleted in the tenant prior to 2022. 
+>
+> We recommend that you set a schedule to soft delete your users by setting the job **frequency** of **90** days. You save most of your storage costs by soft deleting disabled status users frequently.
     
 ### Permanently delete users in Power Platform in bulk
+
+# [New admin center](#tab/new)
+ 
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. Select **Manage** in the navigation pane.
+1. In the **Manage** pane, select **Environments**. Then select an environment.
+1. Select **Settings** > **Users + permissions** > **Users**.
+1. Select **Bulk delete** from the action bar.
+1. The Define search criteria pane opens. In the **Use saved view** field, select **Soft Deleted Users** view.
+   > [!Note]
+   > You can create your own, equivalent view to meet your record retention policy.
+   
+1. Select **Next** and review the list of records to be permanently deleted.
+1. Select **Next** again.
+1. Enter a job **name** and select a **data and time** to schedule the deletion system job. Select **Next**.
+1. Select the email notification checkbox if you want to be notified when the job completes. Select **Next**.
+1. Verify the query and the number of records to be deleted, and then select **Run bulk delete**.
+
+
+# [Classic admin center](#tab/classic)
+
 
 1. Go to the Power [Platform admin center](https://admin.powerplatform.microsoft.com).
 1. In the navigation pane, select **Environments**.
@@ -360,8 +399,10 @@ Users with a disabled status can be deleted, in bulk, using the [Remove a large 
 1. Select the email notification checkbox if you want to be notified when the job completes. Select **Next**.
 1. Verify the query and the number of records to be deleted, and then select **Run bulk delete**.
     
-   > [!Note]
-   > We recommend that you set a schedule by setting the job **frequency** based on your record retention policy.
+---
+
+> [!Note]
+> We recommend that you set a schedule by setting the job **frequency** based on your record retention policy.
    
 ### Review the status of bulk delete job
 
