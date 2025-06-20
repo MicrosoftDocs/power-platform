@@ -106,9 +106,9 @@ Follow these steps to view the **Summary** page:
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 
-1. In the navigation pane, select **Licensing**.
+2. In the navigation pane, select **Licensing**.
 
-2. In the Licensing pane, select **Capacity add-ons** and then select **Summary**.
+3. In the Licensing pane, select **Capacity add-ons**, and then select **Summary**.
 
 **Request**: Require an image of the Summary page in the green PPAC
 
@@ -140,25 +140,23 @@ This page provides similar information as the **Summary** tab, but with an envir
 > [!NOTE]
 > There's no technical limit on the size of a Dataverse environment. Limits mentioned on this page are entitlement limits based on product licenses purchased.
 
-Follow these steps to view the **Dataverse** tab:
+Follow these steps to view the page:
 
 ##### [New admin center](#tab/new)
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 
-1. In the navigation pane, select **Licensing**.
+2. In the navigation pane, select **Licensing**.
 
-2. In the Licensing pane, select **Capacity add-ons** and then select **Summary**.
+3. In the Licensing pane, select **Capacity add-ons** and then select **Dataverse**.
 
-3. Select the **Dataverse** tab.
-
-**Request**: Require an image of the Dataverse tab in the green PPAC
+**Request**: Require an image of the **Dataverse** tab in the green PPAC
 
 ##### [Classic admin center](#tab/classic)
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 
-2. Select **Resources** > **Capacity** > **Summary**.
+2. Select **Resources** > **Capacity** > **Dataverse**.
 
 :::image type="content" source="media/storage-data-capacity-page-review.png" alt-text="Screenshot of the Capacity page Summary tab.":::
 
@@ -174,6 +172,8 @@ Note the following features:
 | Default environment tip | The calculated storage usage in this view only displays what is **above** the default environment’s included capacity. Tool tips indicate how to view actual usage in the **Details** section. |
 
 :::image type="content" source="media/storage-data-per-environment2.png" alt-text="Screenshot of storage data per environment details button.":::
+
+**Request**: Require an equivalent version of the above image in the green PPAC
 
 > [!NOTE]
 >
@@ -194,6 +194,8 @@ Select the **Details** button (![Storage data details button.](media/storage-dat
 
 :::image type="content" source="media/storage-data-capacity-details.png" alt-text="Screenshot of an environment's capacity analytics":::
 
+**Request**: Require an equivalent version of the above image in the green PPAC
+
 The following details are provided:
 
 - Actual database usage
@@ -210,7 +212,23 @@ The following details are provided:
 
 This page provides a view of the capacity storage used by your Microsoft Teams environments. Teams environment capacity usage doesn't count towards your organization's Dataverse usage.
 
-To view this page, select **Resources** > **Capacity** > **Microsoft Teams** tab. 
+Follow these steps to view the page:
+
+##### [New admin center](#tab/new)
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+
+2. In the navigation pane, select **Licensing**.
+
+3. In the Licensing pane, select **Capacity add-ons** and then select **Microsoft Teams**.
+
+##### [Classic admin center](#tab/classic)
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+
+2. Select **Resources** > **Capacity** > **Microsoft Teams**.
+
+---
 
 |Feature  |Description  |
 |---------|---------|
@@ -228,7 +246,23 @@ Use this page to view your organization's add-on usage details and to assign add
 
 This page provides a view of the capacity storage used by your trial environments. Trial environment capacity usage doesn't count towards your organization's Dataverse usage.
 
-To view this page, select **Resources** > **Capacity** > **Trials** tab. 
+Follow these steps to view the page:
+
+##### [New admin center](#tab/new)
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+
+2. In the navigation pane, select **Licensing**.
+
+3. In the Licensing pane, select **Capacity add-ons** and then select **Trial**.
+
+##### [Classic admin center](#tab/classic)
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+
+2. Select **Resources** > **Capacity** > **Trial**.
+
+---
 
 |Feature  |Description  |
 |---------|---------|
@@ -247,14 +281,27 @@ To view this page, select **Resources** > **Capacity** > **Trials** tab.
 
 You can track and manage Dataverse capacity in the **Licenses** section of Power Platform admin center.
 
+##### [New admin center](#tab/new)
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+
+2. In the navigation pane, select **Licensing**.
+
+3. In the Licensing pane, select **Dataverse** under **Products**.
+
+##### [Classic admin center](#tab/classic)
+
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-1. In the navigation pane, select **Billing** > **Licenses** > **Dataverse**.
+
+2. In the navigation pane, select **Billing** > **Licenses** > **Dataverse**.
+
+---
 
 #### Usage per storage type
 
 In the **Usage per storage type** tile, you can view the consumption of your database, log, and file storage. This section displays your prepaid entitled capacity along with the corresponding usage. Additionally, it indicates if any part of your Dataverse usage is billed under a pay-as-you-go plan.
 
-#### Top environment consuming storage 
+#### Top environment consuming storage
 
 The **Top environment consuming storage** tile displays the environments using the most capacity. It also indicates whether any of these top-consuming environments are in overage and provides a breakdown of prepaid versus pay-as-you-go usage. You can select **Database**, **File**, or **Log** to view the corresponding consumption details.
 
@@ -288,6 +335,20 @@ In the **Consumption per table** section, you can view the amount of storage con
 
 In the **Dataverse** tab, you can allocate capacity to a specific environment. Once capacity is allocated, you can view the status of your environments to determine whether they are within capacity or in an overage state.
 
+##### [New admin center](#tab/new)
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. In the navigation pane, select **Licensing**.
+1. In the Licensing pane, select **Dataverse** under **Products**.
+1. On the **Summary** page, select **Manage Capacity**. The **Manage capacity** pane is displayed on the right side of the page.
+1. Select the environment for which you want to allocate capacity.
+1. In the **Manage capacity** pane, view the currently allocated and consumed capacity for the environment.
+1. Allocate capacity by entering the desired value in the **Database**, **File**, and **Log** fields. Ensure the capacity values are positive integers and don't exceed the available capacity displayed at the top of the panel.
+1. Opt in to receive daily email alerts sent to tenant and environment admins when the consumed capacity (database, log, or file) reaches a set percentage of the allocated capacity.
+1. Select **Save** to apply the changes.
+
+##### [Classic admin center](#tab/classic)
+
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. On the navigation pane, select **Billing** > **Licenses**.
 1. On the **Summary** page, select the **Dataverse** tab and then select **Manage Capacity**. The **Manage capacity** pane is displayed on the right side of the page.
@@ -297,12 +358,14 @@ In the **Dataverse** tab, you can allocate capacity to a specific environment. O
 1. Opt in to receive daily email alerts sent to tenant and environment admins when the consumed capacity (database, log, or file) reaches a set percentage of the allocated capacity.
 1. Select **Save** to apply the changes.
 
+---
+
 ### Managing capacity overage
 
 When an environment's capacity consumption exceeds the preallocated capacity, you have two options to manage the overage:
 
 1. In the **Manage capacity** pane you can utilize capacity available from the tenant's overall capacity pool.
-1. Alternatively, in the **Manage capacity** pane you can link the environment to a pay-as-you-go billing plan, where any overage is charged to the associated Azure subscription. 
+1. Alternatively, in the **Manage capacity** pane you can link the environment to a pay-as-you-go billing plan, where any overage is charged to the associated Azure subscription.
 
 ## Changes for exceeding storage capacity entitlements
 
