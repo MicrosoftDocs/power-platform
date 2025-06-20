@@ -19,15 +19,17 @@ search.audienceType:
 
 [!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
-The [System Job (AsyncOperation) table](/power-apps/developer/data-platform/reference/entities/asyncoperation) stores system jobs. The name of the actual database table is `AsyncOperationBase`. System jobs represent asynchronous extensions, such as asynchronous registered workflows and plug-ins, and other background operations such as bulk deletion, bulk import, and rollup operations. After an event occurs and any synchronous extensions are processed, the platform serializes the context for any asynchronous extensions and saves it to the database as an AsyncOperation record.
+The [System Job (AsyncOperation) table](/power-apps/developer/data-platform/reference/entities/asyncoperation) stores system jobs. The name of the actual database table is `AsyncOperationBase`. System jobs represent asynchronous operations, including registered workflows, plug-ins, and background operations such as bulk deletion, bulk import, and rollup operations. After the system triggers an event and executes all synchronous extensions, the platform serializes the context for any asynchronous extensions and stores it in the database as an AsyncOperation record.
 
 When an asynchronous workflow is triggered in your Dataverse organization, a record is created in the AsyncOperation table to track the processing of the async job. More records also are created in the [Process Log (WorkflowLog) table](/power-apps/developer/data-platform/reference/entities/workflowlog) to maintain logs for the workflow execution. The name of the actual database table is `WorkflowLogBase`. [Business process flows](/power-automate/business-process-flows-overview) (BPF) also store BPF stage transition and action logs for the BPF in the WorkflowLog table.
 
-If your organization makes heavy use of workflows or business process flows, these tables will grow over time and eventually become large enough to introduce performance issues and consume excessive storage in your organization database.
+If your organization relies heavily on workflows or business process flows, the associated tables can grow significantly over time, potentially leading to performance degradation and excessive database storage consumption.
 
 ## Bulk deletion jobs
 
 All environments are configured with an out-of-the-box bulk deletion job to delete successfully completed workflow system jobs older than 30 days. Customers can configure other bulk deletion jobs to delete AsyncOperation records. We recommend that you configure a job that deletes any completed system job (regardless of type or result) older than 30 days so that completed jobs don't accumulate in the AsyncOperation table.
+
+All environments include a built-in bulk deletion job that removes successfully completed workflow system jobs older than 30 days. Customers can create additional bulk deletion jobs to delete AsyncOperation records. We recommend configuring a job that deletes any completed system job—regardless of type or result—older than 30 days to prevent unnecessary buildup in the AsyncOperation table.
 
 You can use the bulk deletion system jobs to delete unneeded records from both AsyncOperation and WorkflowLog tables. To view the bulk deletion system jobs:
 
@@ -84,7 +86,7 @@ To unblock customers that have significant asyncoperation size, we introduced a 
 
 ## Best practices for designing workflows
 
-After you delete unneeded records in your workflow tables, there are a few steps you can take in your workflow design to prevent the tables from growing as fast in the future.
+After removing unnecessary records from your workflow tables, consider refining your workflow design to help slow future table growth
 
 For asynchronous workflows, we recommend enabling **Automatically delete completed workflow jobs (to save disk space)** in the workflow editor. This setting allows the system to automatically delete logs for successful completed jobs, conserving storage space. Logs from failed workflow executions are always retained for troubleshooting purpose.
 
