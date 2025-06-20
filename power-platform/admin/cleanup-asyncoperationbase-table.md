@@ -27,9 +27,9 @@ If your organization relies heavily on workflows or business process flows, the 
 
 ## Bulk deletion jobs
 
-All environments are configured with an out-of-the-box bulk deletion job to delete successfully completed workflow system jobs older than 30 days. Customers can configure other bulk deletion jobs to delete AsyncOperation records. We recommend that you configure a job that deletes any completed system job (regardless of type or result) older than 30 days so that completed jobs don't accumulate in the AsyncOperation table.
+All environments are configured with an out-of-the-box bulk deletion job to delete successfully completed workflow system jobs older than 30 days. Customers can configure other bulk deletion jobs to delete AsyncOperation records. We recommend setting up a job to delete completed system jobs—regardless of type or outcome—that are older than 30 days. This job helps prevent the AsyncOperation table from accumulating excess records. 
 
-All environments include a built-in bulk deletion job that removes successfully completed workflow system jobs older than 30 days. Customers can create additional bulk deletion jobs to delete AsyncOperation records. We recommend configuring a job that deletes any completed system job—regardless of type or result—older than 30 days to prevent unnecessary buildup in the AsyncOperation table.
+All environments include a built-in bulk deletion job that removes successfully completed workflow system jobs older than 30 days. Customers can create more bulk deletion jobs to delete AsyncOperation records. We recommend configuring a job that deletes any completed system job—regardless of type or result—older than 30 days to prevent unnecessary buildup in the AsyncOperation table.
 
 You can use the bulk deletion system jobs to delete unneeded records from both AsyncOperation and WorkflowLog tables. To view the bulk deletion system jobs:
 
@@ -60,7 +60,7 @@ If you switch the view to display jobs that are scheduled, in progress, or compl
 
 If the out-of-the-box system bulk deletion jobs don't meet your organization's needs, you can create your own bulk deletion job.
 
-From the **Bulk Deletion** grid, select **New** on the command bar. This opens the Bulk Deletion wizard that allows you to define a query for the records you want deleted. The wizard also lets you preview the set of records the query picks up for deletion to allow you to test that you constructed your query correctly.
+From the **Bulk Deletion** grid, select **New** on the command bar to define a query for the records you want to delete. Use the preview feature to review the records the query returns and verify that it captures the intended data set.
 
 To clean up workflow records from the AsyncOperation table, in the **Look for** entity dropdown, select the **System Jobs** table; in the **Use saved view** dropdown, select **[new]** to create your own query. You can only delete completed workflows. Workflows waiting to run or currently in progress can't (and shouldn't be) deleted by your system job.
 
