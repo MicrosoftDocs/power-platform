@@ -66,8 +66,8 @@ To clean up workflow records from the AsyncOperation table, in the **Look for** 
 
 Add the following conditions to your query:
 
-- **System Job Type** Equals **Workflow** — target workflow records.
-- **Status** Equals **Completed** — only completed workflows are valid to complete.
+- **System Job Type** Equals **Workflow** - target workflow records.
+- **Status** Equals **Completed** - only completed workflows are valid to complete.
 - [Optional] Filter on the **Status Reason** Equals **Succeeded/Failed/Canceled** - valid for completed status.
 - [Optional] Filter on **Completed On** field to only delete older workflows.
 - [Optional] Any more filters you want to apply.
@@ -80,7 +80,7 @@ To unblock customers that have significant asyncoperation size, we introduced a 
 
 - Bulk delete priority applies only to newly created, nonrecurring bulk delete jobs for the AsyncOperation entity.
 - To maximize this feature's effectiveness and optimize job performance, create jobs with varying filter conditions—such as different date ranges, system job types, status codes, or other criteria.
-- Organizations can define up to five priority jobs. Any additional jobs are created with default priority.
+- Organizations can define up to five priority jobs. Any more jobs are created with default priority.
 - Regardless of the number of jobs for other entities in the queue, one AsyncOperation job can always be created with priority.
 - There's no change with respect to creation steps for bulk, delete jobs.
 
