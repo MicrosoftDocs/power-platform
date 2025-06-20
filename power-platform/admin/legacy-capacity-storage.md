@@ -1,7 +1,7 @@
 ---
 title: Legacy storage capacity
 description: Learn more about the legacy storage model details.
-ms.date: 08/01/2024
+ms.date: 6/20/2025
 ms.reviewer: sericks
 ms.topic: concept-article
 author: sericks007
@@ -11,11 +11,13 @@ search.audienceType:
   - admin
 contributors:
 - ianceicys-msft 
+- sericks007
+ms.contributors:
+- ceian
+- sericks
 ---
 
 # Legacy storage capacity
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 In April 2019, we introduced Microsoft Dataverse capacity storage that is optimized for relational data, attachments, and audit logs. If you purchased storage before April 2019, you're using the legacy licensing model for storage discussed in this article.
 
@@ -34,7 +36,6 @@ To see whether you have any of these licenses, sign in to the Microsoft 365 admi
 
 > [!NOTE]
 > If you have a mix of the abovementioned legacy model licenses and [new model licenses](capacity-storage.md#licenses-for-microsoft-dataverse-capacity-based-storage-model), you'll see the [new model report](capacity-storage.md).
-> 
 > If you have none of the abovementioned legacy model licenses nor the [new model licenses](capacity-storage.md#licenses-for-microsoft-dataverse-capacity-based-storage-model), you'll see the [new model report](capacity-storage.md).
 
 ## Verifying your legacy storage model
@@ -47,8 +48,7 @@ To see whether you have any of these licenses, sign in to the Microsoft 365 admi
 
 The legacy licensing storage model looks like the following image.
 
-> [!div class="mx-imgBorder"] 
-> ![Legacy licensing storage model.](media/capacity-old-license-model.png "Legacy licensing storage model")
+:::image type="content" source="media/capacity-old-license-model.png" alt-text="Legacy licensing storage model":::
 
 The report displays available storage capacity by source in addition to overall storage capacity usage. To help customers transition to the new licensing model, current usage is also shown by database, file, and log capacity.
 
@@ -63,8 +63,7 @@ This page provides a tenant-level view of where your organization is using stora
 
 To view the **Summary** page, select **Resources** > **Capacity** > **Summary** tab.
 
-> [!div class="mx-imgBorder"] 
-> ![Capacity storage details.](media/capacity-old-license-model-explained.png "Capacity storage details")
+:::image type="content" source="media/capacity-old-license-model-explained.png" alt-text="Capacity storage details":::
 
 All tables of Dataverse, including system tables, are included in the storage capacity reports.
 
@@ -89,13 +88,13 @@ Note the following features:
 |Search     | Use **Search** to search by the environment name and the environment type.         |
 |Details  | See the next section for using the **Details** button (![Storage data details button.](media/storage-data-details-button.png "Storage data details button")) to see environment capacity analytics.   |
 
-> [!div class="mx-imgBorder"] 
-> ![Dataverse capacity tab.](media/capacity-old-license-model-storage-tab.png "Dataverse capacity tab")
+:::image type="content" source="media/capacity-old-license-model-storage-tab.png" alt-text="Dataverse capacity tab":::
 
 > [!NOTE]
+>
 > - The following environments don't count against capacity and are shown as 0 GB:
 >   - Microsoft Teams
->   - Trial 
+>   - Trial
 >   - Preview
 >   - Support
 >   - Developer
@@ -103,10 +102,9 @@ Note the following features:
 
 #### Environment storage capacity details
 
-Select the **Details** button (![Storage data details button.](media/storage-data-details-button.png "Storage data details button")) on the **Summary** tab view to see  an environment-level detailed view of where your organization is using capacity, in addition to the three types of capacity consumption. 
+Select the **Details** button (![Storage data details button.](media/storage-data-details-button.png "Storage data details button")) on the **Summary** tab view to see  an environment-level detailed view of where your organization is using capacity, in addition to the three types of capacity consumption.
 
-> [!div class="mx-imgBorder"] 
-> ![Environment capacity analytics.](media/capacity-old-license-model-storage-details.png "Environment capacity analytics")
+:::image type="content" source="media/capacity-old-license-model-storage-details.png" alt-text="Environment capacity analytics":::
 
 The following details are provided:
 
@@ -121,7 +119,7 @@ The following details are provided:
 
 This page provides a view of the capacity storage used by your Microsoft Teams environments. Teams environment capacity usage doesn't count towards your organization's Dataverse usage.
 
-To view this page, select **Resources** > **Capacity** > **Microsoft Teams** tab. 
+To view this page, select **Resources** > **Capacity** > **Microsoft Teams** tab.
 
 |Feature  |Description  |
 |---------|---------|
@@ -197,7 +195,7 @@ Provisioning a new environment requires that you not be delinquent in storage ca
 
 ### I have storage licenses from the legacy licensing model, and I also purchased new model storage licenses. Which report will I see?
 
-You see the [Microsoft Dataverse capacity-based storage](capacity-storage.md) report. 
+You see the [Microsoft Dataverse capacity-based storage](capacity-storage.md) report.
 
 ### Do I get notified through email when my organization is over capacity?
 
@@ -212,8 +210,9 @@ Tables ending in "– Analytics" are tables used by one or more Insights applica
 Resource scheduling and optimization analytics dashboards generate predictive insights and require data that is synched from Dataverse tables. 
 
 For more documentation covering the installed Insights applications and the "– Analytics" tables used to create insights and dashboards learn more in:
+
 - [Sales Insights ](/dynamics365/ai/sales/help-hub#get-started)
-- [Field Service and resource scheduling optimization (RSO)](/dynamics365/field-service/scheduling-analytics-reports)                                                                                          
+- [Field Service and resource scheduling optimization (RSO)](/dynamics365/field-service/scheduling-analytics-reports)
 - [Customer Service Hub](/dynamics365/customer-service/customer-service-analytics-insights-csh) 
 - [Field Service](/dynamics365/field-service/reports) 
 
@@ -223,7 +222,6 @@ For more documentation covering the installed Insights applications and the "–
 [What's new in storage](whats-new-storage.md) <br />
 [Free up storage space](free-storage-space.md) <br />
 [Capacity add-ons](capacity-add-on.md)
-
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
