@@ -6,7 +6,7 @@ author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 6/10/2024
+ms.date: 06/18/2025
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
@@ -22,62 +22,62 @@ contributors:
 
 
 
-Use built-in color values, define custom colors, and use the alpha channel.
+Use built-in color values, define custom colors, and use the alpha channel to control transparency.
 
 > [!NOTE]
-> [PAC CLI pac power-fx commands](/power-platform/developer/cli/reference/power-fx) do not support the **Color** enumeration.
+> [PAC CLI pac power-fx commands](/power-platform/developer/cli/reference/power-fx) don't support the **Color** enumeration.
 
 ## Description
 
-By using the **Color** enumeration, you can easily access the colors that are defined by HTML's Cascading Style Sheets (CSS). For example, **Color.Red** returns pure red. You can find a list of these colors at the end of this topic.
+Use the **Color** enumeration to access colors defined by HTML's Cascading Style Sheets (CSS). For example, **Color.Red** returns pure red. A list of these colors appears at the end of this article.
 
-The **ColorValue** function returns a color based on a color string in a CSS. The string can take any of these forms:
+The **ColorValue** function returns a color based on a CSS color string. The string can be in any of these forms:
 
-- **CSS color name:** **"RoxyBrown"** and **"OliveDrab"** are examples. These names don't include spaces. The list of supported colors appears later in this topic.
-- **6-digit hex value:** As an example **"#ffd700"** is the same as **"Gold"**. The string is in the format "#_rrggbb_" where _rr_ is the red portion in two hexadecimal digits, _gg_ is the green, and _bb_ is the blue.
-- **8-digit hex value:** As an example, **"#ff7f5080"** is the same as **"Coral"** with a 50% alpha channel. The string is in the format "#_rrggbbaa_" where _rr_, _gg_, and _bb_ are identical to the 6-digit form. The alpha channel is represented by _aa_: **00** represents fully transparent, and **ff** represents fully opaque.
+- **CSS color name:** **"RoxyBrown"** and **"OliveDrab"** are examples. These names don't include spaces. The list of supported colors appears later in this article.
+- **6-digit hex value:** For example, **"#ffd700"** is the same as **"Gold"**. The string uses the format "#_rrggbb_", where _rr_ is the red portion in two hexadecimal digits, _gg_ is the green, and _bb_ is the blue.
+- **8-digit hex value:** For example, **"#ff7f5080"** is the same as **"Coral"** with a 50% alpha channel. The string uses the format "#_rrggbbaa_", where _rr_, _gg_, and _bb_ are identical to the 6-digit form. The alpha channel is represented by _aa_: **00** means fully transparent, and **ff** means fully opaque.
 
-The **RGBA** function returns a color based on red, green, and blue components. The function also includes an alpha channel for mixing colors of controls that are layered in front of one another. An alpha channel varies from 0 or 0% (which is fully transparent and invisible) to 1 or 100% (which is fully opaque and completely blocks out any layers behind a control).
+The **RGBA** function returns a color based on red, green, and blue components. The function also includes an alpha channel for mixing colors of controls layered in front of each other. The alpha channel ranges from 0% or 0% (fully transparent and invisible) to 1% or 100% (fully opaque and completely blocks any layers behind a control).
 
-The **ColorFade** function returns a brighter or darker version of a color. The amount of fade varies from -1 (which fully darkens a color to black) to 0 (which doesn't affect the color) to 1 (which fully brightens a color to white).
+The **ColorFade** function returns a brighter or darker version of a color. The amount of fade ranges from -1 (fully darkens a color to black), to 0 (doesn't affect the color), to 1 (fully brightens a color to white).
 
 ## Alpha channel
 
-In a canvas app, you can layer controls in front of one another and specify the transparency of a control to any controls that are behind it. As a result, colors will blend through the layers. For example, this diagram shows how the three primary colors mix with an alpha setting of 50%:
+In a canvas app, you layer controls in front of one another and set the transparency of a control to any controls behind it. As a result, colors blend through the layers. For example, this diagram shows how the three primary colors mix with an alpha setting of 50 percent:
 
 > [!div class="mx-imgBorder"]
 > ![Three primary colors with an alpha setting of 50%.](media/function-colors/alpha-primary.png)
 
-You can also blend images in file formats that support alpha channels. For example, you can't blend .jpeg files, but you can blend .png files. The next graphic shows the same red, green, and blue colors from the previous example, but the red color appears as a squiggle (instead of a circle) in a .png file with a 50% alpha channel:
+You can also blend images in file formats that support alpha channels. For example, you can't blend .jpeg files, but you can blend .png files. The next graphic shows the same red, green, and blue colors from the previous example, but the red color appears as a squiggle (instead of a circle) in a .png file with a 50 percent alpha channel:
 
 > [!div class="mx-imgBorder"]
 > ![Red squiggle with an alpha setting of 50% in front of blue and green circles.](media/function-colors/alpha-image.png)
 
-If you specify a **Color** enumeration value or you build a **ColorValue** formula with a color name or a 6-digit hexadecimal value, the alpha setting is 100%, which is fully opaque.
+If you specify a **Color** enumeration value or build a **ColorValue** formula with a color name or a 6-digit hexadecimal value, the alpha setting is 100 percent, which is fully opaque.
 
 ## Syntax
 
 **Color**._ColorName_
 
-- _ColorName_ - Required. A Cascading Style Sheet (CSS) color name. The list of possible enumeration values appears at the end of this topic.
+- _ColorName_ - Required. A Cascading Style Sheet (CSS) color name. The list of possible enumeration values is at the end of this article.
 
 **ColorValue**( _CSSColor_ )
 
-- _CSSColor_ - Required. A Cascading Style Sheet (CSS) color definition. You can specify either a name, such as **OliveDrab**, or a hex value, such as **#6b8e23** or **#7fffd420**. Hex values can take the form of either #_rrggbb_ or #_rrggbbaa_.
+- _CSSColor_ - Required. A Cascading Style Sheet (CSS) color definition. S name, OliveDralike a hex value, like **#6b8e23** olikeffd420**. Hex values can use either #_rrggbb__usgormat. format
 
-**ColorValue**( _Untyped_ )
+**ColorValue**( _Dynamic_ )
 
-- _Untyped_ - Required. An Untyped object containing a string that represents a Cascading Style Sheet (CSS) color definition.
+- _Dynamic_ - Required. A **Dynamic** value with a string that represents a Cascading Style Sheet (CSS) color definition.
 
 **RGBA**( _Red_, _Green_, _Blue_, _Alpha_ )
 
-- _Red_, _Green_, _Blue_ - Required. Color-component values, which range from 0 (no saturation) to 255 (full saturation).
-- _Alpha_ - Required. Alpha component, which ranges from 0 (fully transparent) to 1 (fully opaque). You can also use a percentage, 0% to 100%.
+- _Red_, _Green_, _Blue_ - Required. Color component values that range from 0 (no saturation) to 255 (full saturation).
+- _Alpha_ - Required. Alpha component that ranges from 0 (fully transparent) to 1 (fully opaque). You can also use a percentage, 0% to 100%.
 
 **ColorFade**( _Color_, _FadeAmount_ )
 
-- _Color_ - Required. A color value such as **Color.Red** or the output from **ColorValue** or **RGBA**.
-- _FadeAmount_ - Required. A number between -1 and 1. -1 fully darkens a color to black, 0 doesn't affect the color, and 1 fully brightens a color to white. You can also use a percentage from -100% to 100%.
+- _Color_ - Required. A color value like **Color.Red** or the output from **ColorValue** or **RGBA**.
+- _FadeAmount_ - Required. A number between -1 and 1. -1 fully darkens a color to black, 0 doesn't affect the color, and 1 fully brightens a color to white. You can also use a percentage, from -100% to 100%.
 
 ## Built-in colors
 
