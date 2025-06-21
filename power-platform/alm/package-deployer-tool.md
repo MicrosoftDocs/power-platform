@@ -5,7 +5,7 @@ keywords:
 author: marcelbf
 ms.author: marcelbf
 ms.subservice: alm
-ms.date: 06/10/2024
+ms.date: 06/20/2025
 ms.reviewer: pehecke
 ms.topic: how-to
 search.audienceType: 
@@ -201,18 +201,30 @@ You can add custom code that executes before, during, and after the package is i
         | `oldSolutionId` |     GUID of the old solution.      |
         | `newSolutionId` |     GUID of the new solution.      |
 
+   4. Override the method `OverrideSolutionImportDecision` to return a [UserRequestedImportAction](/dotnet/api/microsoft.xrm.tooling.packagedeployment.crmpackageextentionbase.userrequestedimportaction) enum controlling whether the import of a solution will be skipped, updated or upgraded (the default).
 
-   4. Enter custom code to execute before the solution import completes in the override definition of the `BeforeImportStage` method. The sample data and some flat files for solutions specified in the `ImportConfig.xml` file are imported before the solution import completes.  
+      ```csharp
+      public override UserRequestedImportAction OverrideSolutionImportDecision(string solutionUniqueName, Version organizationVersion, Version packageSolutionVersion, Version inboundSolutionVersion, Version deployedSolutionVersion, ImportAction systemSelectedImportAction)
+      {
+          return systemSelectedImportAction == ImportAction.Import
+              ? UserRequestedImportAction.ForceUpdate
+              : base.OverrideSolutionImportDecision(solutionUniqueName, organizationVersion, packageSolutionVersion,
+                  inboundSolutionVersion, deployedSolutionVersion, systemSelectedImportAction);
 
-   5. Override the currently selected language for configuration data import using the override method definition of `OverrideConfigurationDataFileLanguage`. If the specified locale ID (LCID) of the specified language isn't found in the list of available languages in the package, the default data file is imported.  
+      }
+      ```
+      
+   5. Enter custom code to execute before the solution import completes in the override definition of the `BeforeImportStage` method. The sample data and some flat files for solutions specified in the `ImportConfig.xml` file are imported before the solution import completes.  
+
+   6. Override the currently selected language for configuration data import using the override method definition of `OverrideConfigurationDataFileLanguage`. If the specified locale ID (LCID) of the specified language isn't found in the list of available languages in the package, the default data file is imported.  
 
        You specify the available languages for the configuration data in the `<cmtdatafiles>` node in the `ImportConfig.xml` file. The default configuration data import file is specified in the `crmmigdataimportfile` attribute in the `ImportConfig.xml` file.  
 
        Skipping data checks (<xref:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.IImportExtensions2.OverrideDataImportSafetyChecks> = true) can be effective here if you're sure that the target Dataverse instance doesn't contain any data.  
 
-   6. Enter custom code to execute after the import completes in the override definition of `AfterPrimaryImport`>method. The remaining flat files that weren't imported earlier, before the solution import started, are imported now.  
+   7. Enter custom code to execute after the import completes in the override definition of `AfterPrimaryImport`>method. The remaining flat files that weren't imported earlier, before the solution import started, are imported now.  
 
-   7. Change the default name of your package folder to the package name that you want. To do so, rename the `PkgFolder` (or **PkgAssets**) folder in the **Solution Explorer** pane, and then edit the return value under the `GetImportPackageDataFolderName` property.  
+   8. Change the default name of your package folder to the package name that you want. To do so, rename the `PkgFolder` (or **PkgAssets**) folder in the **Solution Explorer** pane, and then edit the return value under the `GetImportPackageDataFolderName` property.  
 
       ```csharp  
       public override string GetImportPackageDataFolderName  
@@ -226,7 +238,7 @@ You can add custom code that executes before, during, and after the package is i
       }  
       ```  
 
-   8. Change the package name by editing the return value under the `GetNameOfImport` property.  
+   9. Change the package name by editing the return value under the `GetNameOfImport` property.  
 
       ```csharp  
       public override string GetNameOfImport(bool plural)  
@@ -237,7 +249,7 @@ You can add custom code that executes before, during, and after the package is i
 
        This returned value is the name of your package that appears on the package selection page in the Dynamics 365 Package Deployer wizard.  
 
-   9. Change the package description by editing the return value under the `GetImportPackageDescriptionText` property.  
+   10. Change the package description by editing the return value under the `GetImportPackageDescriptionText` property.  
 
        ```csharp  
 
@@ -250,7 +262,7 @@ You can add custom code that executes before, during, and after the package is i
 
         This returned value is the package description that appears alongside the package name on the package selection page in the Package Deployer wizard.  
 
-   10. Change the package long name by editing the return value under the `GetLongNameOfImport` property.  
+   11. Change the package long name by editing the return value under the `GetLongNameOfImport` property.  
 
        ```csharp  
 
