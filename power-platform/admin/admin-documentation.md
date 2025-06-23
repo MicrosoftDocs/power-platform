@@ -15,12 +15,12 @@ The [Power Platform admin center](https://admin.powerplatform.microsoft.com) pro
 
 Learn more about the Power Platform admin center in the following sections:
 
-- [Feature areas of the new admin center](#feature-areas-of-the-new-admin-center)
-- [Feature areas of the classic admin center](#feature-areas-of-the-classic-admin-center)
-- [The user interface of the new admin center](#the-user-interface-of-the-new-admin-center)
-- [The user interface of the classic admin center](#the-user-interface-of-the-classic-admin-center)
+- [Find feature areas of the new admin center](#find-feature-areas-of-the-new-admin-center)
+- [Find feature areas of the classic admin center](#find-feature-areas-of-the-classic-admin-center)
+- [Understand the user interface of the new admin center](#understand-the-user-interface-of-the-new-admin-center)
+- [Understand the user interface of the classic admin center](#understand-the-user-interface-of-the-classic-admin-center)
 
-## Feature areas of the new admin center
+## Find feature areas of the new admin center
 
 The new Power Platform admin center provides the following capabilities.
 
@@ -35,7 +35,7 @@ The new Power Platform admin center provides the following capabilities.
 | Copilot | Access educational resources, track usage, and access governance controls about Copilot features. | [Manage Copilot](copilot/copilot-hub.md) |
 |Support     | <p>Get a list of self-help solutions or create a support ticket for technical support.</p><p>**Note**: Although you administer Power BI using the Power BI admin portal, you request support for Power BI through support in the Power Platform admin center.</p> | [Get Help + Support](./get-help-support.md)  |
 
-## Feature areas of the classic admin center
+## Find feature areas of the classic admin center
 
 The classic Power Platform admin center provides the following capabilities.
 
@@ -55,7 +55,7 @@ The classic Power Platform admin center provides the following capabilities.
 |Data| Manage your cloud and data gateway connections.| [Set up data transfer between on-premises data and cloud services](onpremises-data-gateway-management.md) |
 |Policies     | View and manage various policies for your tenant and environments. | <ul><li>[Manage data policies](prevent-data-loss.md)</li><li>[Tenant isolation policy](cross-tenant-restrictions.md)</li><li>[Customer Lockbox policy](about-lockbox.md)</li><li>[Enterprise policies](customer-managed-key.md)</li><li>[Billing policies](pay-as-you-go-overview.md)</li></ul>|
 
-## The user interface of the new admin center
+## Understand the user interface of the new admin center
 [The new and improved Power Platform admin center](new-admin-center.md) is designed with an outcome-driven approach, where all functionality is intuitively organized in pages based on administrative tasks. The new admin center isn't just task-oriented, it also helps you achieve specific outcomes and goals.
 
 :::image type="content" source="media/new-ppac-callouts.png" alt-text="Screenshot of the new and improved Power Platform admin center.":::
@@ -78,7 +78,7 @@ Easily navigate to related admin centers, such as the [Microsoft 365 admin cente
 ### 4. Power Platform page
 Complete administrative functions on each Power Platform page.
 
-## The user interface of the classic admin center
+## Understand the user interface of the classic admin center
 The classic Power Platform admin center is available and pages are organized according to functions.
 
 :::image type="content" source="media/classic-ppac-callouts.png" alt-text="Screenshot of the classic Power Platform admin center.":::
