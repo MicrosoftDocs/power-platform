@@ -23,37 +23,22 @@ ms.custom:
 
 # Integration pattern using Power Automate cloud flows
 
-This whitepaper explores various integration patterns using Power
-Automate Cloud Flows, focusing on considerations for building effective
-integrations for each pattern, the challenges faced, and the decision
-making process for achieving the desired goals.
+This whitepaper explores various integration patterns using Power Automate Cloud Flows, focusing on considerations for building effective integrations for each pattern, the challenges faced, and the decision making process for achieving the desired goals.
 
-There’s no one approach to build integrations that is always superior to
-all others, much like there’s many ways to build a house, the approach
-depends on the requirements set forth. With that in mind, this
-whitepaper will be guided by posing a hypothetical problem and guide you
-through the process of identifying the appropriate solution.
+There’s no one approach to build integrations that is always superior to all others, much like there’s many ways to build a house, the approach depends on the requirements set forth. With that in mind, this
+whitepaper will be guided by posing a hypothetical problem and guide you through the process of identifying the appropriate solution.
 
-The primary audience would be Enterprise Architects looking to design
-new integrations or augment existing ones with modern low-code
-solutions. There will be limited focus on technical solutions, however
+The primary audience would be Enterprise Architects looking to design new integrations or augment existing ones with modern low-code solutions. There will be limited focus on technical solutions, however
 links to relevant documentation will be provided where applicable.
 
 ## Introduction
 
-Integration is a critical aspect of modern business processes, enabling
-seamless data flow and automation across different systems. This paper
-discusses the importance of choosing the right integration patterns and
-the factors to consider when designing integrations with Power Automate.
+Integration is a critical aspect of modern business processes, enabling seamless data flow and automation across different systems. This paper discusses the importance of choosing the right integration patterns and the factors to consider when designing integrations with Power Automate.
 
-We’ll begin by analyzing the key considerations for any integration and
-what they could mean for us when building an architecture. We’ll then
-proceed to dissect common integration patterns, how they work in Power
-Automate, and real-world examples where such patterns can be applied.
+We begin by analyzing the key considerations for any integration and what they could mean for us when building an architecture. We’ll then proceed to dissect common integration patterns, how they work in Power Automate, and real-world examples where such patterns can be applied.
 
-Finally, we will look beyond Power Automate to understand what can be
-done in case the tools that we have or just not enough to do the job
-right.
+Finally, we'll look beyond Power Automate to understand what can be
+done in case the tools that we have or not enough to do the job right.
 
 **By the end of this white paper, you will learn:**
 
@@ -72,166 +57,98 @@ right.
 
 - General technics for robust integrations
 
-## The Requirements of an Integration
+## The requirements of an integration
 
-Before we go into the patterns, let’s start by looking at the
-requirements of an integration. We can start from high-level goal, like
-connect SAP to Dataverse or send a notification every time there’s an
+Before we go into the patterns, let’s start by looking at the requirements of an integration. We can start from high-level goal, like connect SAP to Dataverse or send a notification every time there’s an
 update in a case a user works on.
 
-These are examples of how a business user may look at an integration
-problem and is also the starting point where an architect takes over.
-What follow up questions do you need to ask when being tasked with
-connecting system A to system B and who are the people to answer these
-questions?
+These are examples of how a business user may look at an integration problem and is also the starting point where an architect takes over.
+What follow-up questions do you need to ask when being tasked with connecting system A to system B and who are the people to answer these questions?
 
-When we need to create any flow of information, the first question we
-need to ask is:  
+When we need to create any flow of information, the first question we need to ask is:  
 How much data is being sent and how often?  
-**Volume and Frequency** is the first major component in our decision
-making process that will determine the kinds of tools we’ll need to use
+**Volume and Frequency** is the first major component in our decision making process that will determine the kinds of tools we need to use
 to implement the business requirement.
 
-The next component would be the **Directionality**, or where does data
-flow from and to.  
-Finding that out will inform how we configure the pattern for a
+The next component would be the **Directionality**, or where does data flow from and to. Finding that out informs how we configure the pattern for a
 successful integration.
 
-And lastly, we need to consider **Capability**, or the ability of each
-system involved to receive, process and send data. Using the “weakest
-link” approach, evaluation of capabilities will inform us of the
-limitations and possibilities. Sure, the business user may want
-everything-all-at-once-in-real-time, but if that that IBM Mainframe just
-can’t do it, the capability analysis will flag that from the get go.
+And lastly, we need to consider **Capability**, or the ability of each system involved to receive, process and send data. Using the “weakest
+link” approach, evaluation of capabilities inform us of the limitations and possibilities. Sure, the business user may want everything-all-at-once-in-real-time, but if that that IBM Mainframe just can’t do it, the capability analysis will flag that from the get go.
 
 Let’s review each component, starting with Volume and Frequency.
 
-### Volume and Frequency
+### Volume and frequency
 
-The amount of data and the frequency of integration tasks significantly
-impact the choice of integration patterns. While we can think of an
-obvious example, like the difference between sending 10 record and a
+The amount of data and the frequency of integration tasks significantly impact the choice of integration patterns. While we can think of an obvious example, like the difference between sending 10 record and a
 million records, the difference can also be more subtle.
 
-What if you had a requirement to send 60,000 records every hour and a
-requirement to send 1000 records every minute. Does that mean you can
+What if you had a requirement to send 60,000 records every hour and a requirement to send 1000 records every minute. Does that mean you can
 use the same solution for both requirements? Not necessarily.
 
-While the volume is same, 60,000 records per hour, the expectation when
-the data arrives is different, or the frequency requirement is
-different. It may be the case that one solution would work for both, but
-only if you can demonstrate if you can do 1000 records per minute, not
-60,000 records per hour.
+While the volume is same, 60,000 records per hour, the expectation when the data arrives is different, or the frequency requirement is different. It may be the case that one solution would work for both, but
+only if you can demonstrate if you can do 1000 records per minute, not 60,000 records per hour.
 
-So that’s it, right? Just find a common denominator and build one
-solution that works for both? No… not always.
+So that’s it, right? Just find a common denominator and build one solution that works for both? No… not always.
 
-In some cases you might want to build separate solutions for these two
-requirements because always running at higher frequencies might not be a
-process that is used very often but it is much more resource intensive
-towards one (or more) of the integrated systems.
+In some cases you might want to build separate solutions for these two requirements because always running at higher frequencies might not be a
+process that is used often but it's more resource intensive towards one (or more) of the integrated systems.
 
-While it may sound like a waste of resources to build multiple
-integration solutions for the same integration, the cost/benefit
-equation may sometimes result in a need to do just that.
+While it may sound like a waste of resources to build multiple integration solutions for the same integration, the cost/benefit equation may sometimes result in a need to do just that.
 
-- Triggers
+- **Triggers**
 
-Volume and frequency is often affected by how an integration is
-triggered.  
-A **Scheduled Trigger** (also known as **Batch**) is probably the
-simplest one, because it’s easy to predict the conditions of the
-integration, assuming we know the growth trajectory of the data
-involved.
+    Volume and frequency is often affected by how an integration is triggered. A **Scheduled Trigger** (also known as **Batch**) is probably the
+    simplest one, because it’s easy to predict the conditions of the integration, assuming we know the growth trajectory of the data involved.
 
-**Event-Driven** triggers are affected by many factors and ultimately it
-can be much harder to predict how often an integration is launched. An
-event can be a button click, a change in a record in one of the systems
-or an API call.  
-For an enterprise app, like Power Apps, events like a button click are
-easier to predict, since you are ultimately limited by the population of
-employees.
+    **Event-Driven** triggers are affected by many factors and ultimately it can be harder to predict how often an integration is launched. An
+    event can be a button click, a change in a record in one of the systems or an API call. For an enterprise app, like Power Apps, events like a button click are
+    easier to predict, since you're ultimately limited by the population of employees.
 
-Events triggered by a publicly accessible system, like a public services
-Power Pages website open to millions of citizens, can fluctuate by
-orders of magnitude.
+    Events triggered by a publicly accessible system, like a public services Power Pages website open to millions of citizens, can fluctuate by orders of magnitude.
 
-### **⚫** Seasonality
+- **Seasonality**
 
-Much like the changing of the seasons, volumes of data can change wildly
-depending on how the business operates. Think of a services provider
-that bills their customers monthly or quarterly, there might be needed
-for a guaranteed large volume of data to pass through in a very short
-time.
+    Much like the changing of the seasons, volumes of data can change wildly depending on how the business operates. Think of a services provider that bills their customers monthly or quarterly, there might be needed for a guaranteed large volume of data to pass through in a short time.
 
-Seasonality is more severely affected by Event-Driven integrations,
-because you don’t know how much data will be moved during certain
-seasons. However, you can be aware that of these waves and implement
-safeguards in your solution to prevent the integration from processing
-an amount of data that you know will be beyond its capabilities (more on
-that later).
+    Seasonality is more severely affected by Event-Driven integrations, because you don’t know how much data will be moved during certain seasons. However, you can be aware that of these waves and implement safeguards in your solution to prevent the integration from processing an amount of data that you know will be beyond its capabilities (more on that later).
 
-Scheduled integrations can also be affected by seasonality in cases when
-the size of the data batch is significantly affected time based events
-in the business life cycle.  
-An accounting firm for example could experience increased data volumes
-during tax season.
+    Scheduled integrations can also be affected by seasonality in cases when the size of the data batch is affected time based events
+    in the business life cycle. An accounting firm, for example,  could experience increased data volumes during tax season.
 
-### **⚫** Stakeholders
+- **Stakeholders**
 
-The conversation about Volume and Frequency is one that should always be
-discussed with **Process Owners**, or the key business users that
-provide the initial business requirements. Make sure that whatever was
-indicated in the requirements correlates to how the process actually
-works.
+    The conversation about Volume and Frequency is one that should always be discussed with **Process Owners**, or the key business users that
+    provide the initial business requirements. Make sure that whatever was indicated in the requirements correlates to how the process actually works.
 
-Business users may not always know the entire process so it’s up to you
-as the architect to follow the leads and discover how things actually
-supposed to work.
+    Business users may not always know the entire process so it’s up to you as the architect to follow the leads and discover how things supposed to work.
 
-### **⚫** Plan for the Future
+- **Plan for the future**
 
-We can’t predict the future, but as architects, we have to try.  
-When you build an integration solution for a growing business, you are
-building something with an expiration date. There’s no way around it.
-
-When building a critical integration solution, you clearly indicate the
-conditions it is designed to work under and create long term plans for
-its scalability.  
-If there’s enough information, you can also indicate the expected date
-when the solution will require scaling.
-
-Regardless, for critical integrations there should be a monitoring
-solution in place that will give the IT staff advance notice when
-volumes approach the limits of the integration overall.
+    We can’t predict the future, but as architects, we have to try. When you build an integration solution for a growing business, you're building something with an expiration date. There’s no way around it.
+    
+    When building a critical integration solution, you clearly indicate the conditions it's designed to work under and create long term plans for its scalability. If there’s enough information, you can also indicate the expected date when the solution will require scaling.
+    
+    Regardless, for critical integrations there should be a monitoring solution in place that will give the IT staff advance notice when volumes approach the limits of the integration overall.
 
 ### Directionality
 
 Directionality involves understanding the source and destination of data
-in an integration process. It is essential to consider the availability
+in an integration process. It's essential to consider the availability
 of systems, compliance requirements, and security measures when
 determining the directionality of data flow. For instance, the data
-might be coming from a private system that is not always available, or
+might be coming from a private system that isn't always available, or
 it might be subject to strict compliance and security regulations.
 
-### **⚫** Stakeholders
+- **Stakeholders**
 
-Compliance is paramount when dealing with data integration and can be
-different for every system involved, ultimately affecting the flow of
-data. It is necessary to consult with **Infrastructure Architects** and
-**Security Officers** to ensure that the connection to the systems is
-secure and meets all regulatory requirements set forth by the
-organization.
+    Compliance is paramount when dealing with data integration and can be
+    different for every system involved, ultimately affecting the flow of data. It's necessary to consult with **Infrastructure Architects** and
+    **Security Officers** to ensure that the connection to the systems is secure and meets all regulatory requirements set forth by the organization.
 
-High-security organizations often have stringent requirements that must
-be met to access data, which can significantly impact the integration
-design.
+    High-security organizations often have stringent requirements that must be met to access data, which can significantly impact the integration design.
 
-In cases where integration with legacy on-premises systems is required,
-a common security requirement is to avoid inbound connections. So even
-though the business asked for a cloud app to fetch data from the legacy
-system, you’ll have to design the integration the opposite way, with the
-legacy system reaching out to the cloud app.
+    In cases where integration with legacy on-premises systems is required, a common security requirement is to avoid inbound connections. So even though the business asked for a cloud app to fetch data from the legacy system, you’ll have to design the integration the opposite way, with the legacy system reaching out to the cloud app.
 
 
 ### Capability
@@ -244,74 +161,50 @@ Together with the previous components, we need to be aware how
 capability of the systems involved maps to the business requirements and
 if there’s anything we need to do to increase a capability.
 
-For instance, if a system is not capable of processing large volumes of
+For instance, if a system isn't capable of processing large volumes of
 data efficiently, it may become a bottleneck, leading to delays and
-potential failures in the integration process. This is particularly
-important when dealing with high-frequency data transfers or large
+potential failures in the integration process. This is important when dealing with high-frequency data transfers or large
 datasets.
 
-### **⚫** Capability and Frequency
+- **Capability and frequency**
 
-Frequency of data transfers is also a major concern when evaluating
-capability. Systems must be able to handle the rate at which data is
-being sent and received. For example, a system that can process data
-efficiently once a day may struggle with the same volume if it needs to
-process it multiple times a day.
+    Frequency of data transfers is also a major concern when evaluating capability. Systems must be able to handle the rate at which data is being sent and received. For example, a system that can process data efficiently once a day may struggle with the same volume if it needs to process it multiple times a day.
 
-### **⚫** Caching
+- **Caching**
 
-By far, a caching layer is the most common solution when data access is
-required to a system that can’t handle the business requirement. In case
-of Dataverse, [**Synapse
-Link**](/power-apps/maker/data-platform/export-to-data-lake)
-can be used for that purpose, offering fast replication of selected data
-into a hyper-scalable data storage service.
+    By far, a caching layer is the most common solution when data access is required to a system that can’t handle the business requirement. In case of Dataverse, [**Synapse
+    Link**](/power-apps/maker/data-platform/export-to-data-lake) can be used for that purpose, offering fast replication of selected data into a hyper-scalable data storage service.
 
-Other systems may offer similar solutions that’s worth exploring.
+    Other systems may offer similar solutions that’s worth exploring.
 
-Using caching creates a new balance that the architect need to consider:
-while response times for the end user of the integration are reduced,
-the data received may be outdated, depending on the process involved.
+    Using caching creates a new balance that the architect needs to consider: while response times for the end user of the integration are reduced,
+    the data received may be outdated, depending on the process involved.
 
-For processes where near real time data is needed for critical
-calculations or data consolidation, the integration process needs to
-ensure that the data provided is not “expired”, adding more complexity
-to the integration process.
+    For processes where near real time data is needed for critical calculations or data consolidation, the integration process needs to ensure that the data provided isn't “expired”, adding more complexity to the integration process.
 
-### **⚫** Transformation & Business Logic
+- **Transformation and business logic**
 
-The final consideration for the capability of every system and the
-integration process itself, is the need to perform business logic for
-the integration to satisfy business requirements.
+    The final consideration for the capability of every system and the integration process itself, is the need to perform business logic for the integration to satisfy business requirements.
 
-When evaluating the capabilities of a system, it should be in the
-context of not just what the system can do, but what it can do with the
-transformations you need it to do prior to sending the data, the logic
-you need to perform in a flow before sending it to the target system,
-and the logic the target needs to perform before the data becomes
-operational.
+    When evaluating the capabilities of a system, it should be in the context of not just what the system can do, but what it can do with the transformations you need it to do prior to sending the data, the logic
+    you need to perform in a flow before sending it to the target system, and the logic the target needs to perform before the data becomes
+    operational.
 
-A classic example is when you need to take out a table from an SQL
-Database, and write it to Dataverse. The requirement is super simple…
-but… you find out the table in SQL is not actually a table, but a view
-relying on a dozen stored procedures, the data still need to be adapted
-to Dataverse format mid-flight and when finally arriving there, there’s
-a bunch of plugins that also need to do something.
+    A classic example is when you need to take out a table from an SQL Database, and write it to Dataverse. The requirement is super simple
+    but you find out the table in SQL isn't actually a table, but a view relying on a dozen stored procedures, the data still need to be adapted
+    to Dataverse format mid-flight and when finally arriving there, there’s a bunch of plugins that also need to do something.
 
-Now imagine it’s not just an integration, it’s a massive batch import
+    Now imagine it’s not just an integration, it’s a massive batch import
 
-### **⚫** Stakeholders
+- **Stakeholders**
 
-Critical systems have **System Administrators** that can usually provide
-all the information you need about capability. Sometimes it’s a
-centralized IT team, sometimes it’s a more decentralized arrangement.
-Either way, you’ll need to evaluate each system’s capabilities before
-you choose the right pattern.
+    Critical systems have **System Administrators** that can usually provide all the information you need about capability. Sometimes it’s a centralized IT team, sometimes it’s a more decentralized arrangement.
+    Either way, you’ll need to evaluate each system’s capabilities before you choose the right pattern.
 
 ## How it comes together
 
 We looked into the 3 major components of an integration:  
-**Volume and Frequency**, **Directionality**, and **Capability**.
+**Volume and frequency**, **Directionality**, and **Capability**.
 
 Volume and frequency refer to the total amount of data being
 transferred. Directionality involves understanding the source and
@@ -319,7 +212,7 @@ destination of data, which is important for ensuring compliance, and
 securing data flow. Capability assesses each system's performance and
 ability to process data, identifying any potential bottlenecks.
 
-For each component we discussed how they are connected to initial
+For each component we discussed how they're connected to initial
 business requirements, what analysis one must perform to factor in their
 impact on the integration process overall, and who are the stakeholders
 to help perform the analysis.
@@ -339,7 +232,7 @@ service engineers who work on cases.
 Customers can add comments to a case through a website, while engineers
 can add case information through a Power App.
 
-Let’s look at the first component, Volume and Frequency.  
+Let’s look at the first component, Volume, and Frequency.  
 The case creation is primarily driven by customers, meaning that the
 volume would depend on how many customers the company has and the
 expected growth trajectory.
@@ -354,35 +247,35 @@ This number should then be plotted on a chart with the expected growth,
 so if we expect a 10M/year updates today and an average growth of
 20%/year, the chart will look like this:
 
-:::image type="content" source="./media/image3.emf" alt-text="Screenshot of a chart showing requests over time analysis.":::
+:::image type="content" source="media/integration-pattern-with-power-automate/requestovertime.png" alt-text="Screenshot of a chart showing requests over time for integration patterns in Power Automate." lightbox="media/integration-pattern-with-power-automate/requestovertime.png":::
 
 *Fig. 1: Requests over time analysis*
 
-Assuming we want to build something that lasts at least 5 years, a
+Assuming we want to build something that lasts at least five years, a
 typical timeframe for information systems ROI, we must build an
 integration that can handle at least 25M requests per year.
 
-The frequency part of it is the ability of the systems involved to
+The frequency part of it's the ability of the systems involved to
 handle information within a year. Again, we can chart historical data to
 understand how frequency will apply here:
 
-:::image type="content" source="./media/image4.emf" alt-text="Screenshot of a chart showing request density over a year.":::
+:::image type="content" source="media/integration-pattern-with-power-automate/requestdensity.png" alt-text="Screenshot of a chart showing request density over a year for integration patterns in Power Automate." lightbox="media/integration-pattern-with-power-automate/requestdensity.png":::
 
 *Fig. 2: Request density over a year*
 
 Looking at this data we now know that even today, our integration must
 withstand a total of 3.2M requests per month. Taking the 20% growth over
-5 years, assuming the same yearly peaks, the integration we build today
+five years, assuming the same yearly peaks, the integration we build today
 must handle 8M requests per month.
 
 Now let’s analyze the directionality.  
-Hiding in the business requirement is actually 4 data streams: a data
+Hiding in the business requirement is actually four data streams: a data
 stream from the website to write case updates into Dataverse, another
 stream for the website to read updates from Dataverse, a third data
 stream where engineers write updates into Dataverse from Power App, and
 finally a fourth to read updates in the Power App.
 
-:::image type="content" source="./media/image5.emf" alt-text="Screenshot of a diagram showing website integration, direct pattern.":::
+:::image type="content" source="media/integration-pattern-with-power-automate/websiteintegration.png" alt-text="Screenshot of a diagram showing direct website integration pattern in Power Automate." lightbox="media/integration-pattern-with-power-automate/websiteintegration.png":::
 
 *Fig. 3: Website integration, direct pattern*
 
@@ -412,7 +305,7 @@ However, we must also consider the [**capabilities of the cloud
 flow**](/power-automate/limits-and-config)
 that will handle these requests and Dataverse, which is the final
 destination.  
-These are not the same and we should consult with [**current
+These aren't the same and we should consult with [**current
 documentation**](https://microsofteur-my.sharepoint.com/personal/ifain_microsoft_com/Documents/Power%20CAT/PAuto%20Integrations%20Patterns/Analysis.vsdx)
 to understand if the number of requests we expect to handle is in line
 with the capabilities of both services.
@@ -420,13 +313,13 @@ with the capabilities of both services.
 If we discover that Dataverse is already handling a lot of requests,
 which can be done through [**Dataverse
 Analytics**](/power-platform/admin/analytics-common-data-service),
-and cannot handle the projected request load, we’ll need to consider
+and can't handle the projected request load, we’ll need to consider
 adding a protective buffer in the form of [**Azure Data
 Lake**](/power-apps/maker/data-platform/azure-synapse-link-data-lake).
 
 In this case, the integration will result in the following setup:
 
-:::image type="content" source="./media/image6.emf" alt-text="Screenshot of a diagram showing website integration, decoupled read pattern.":::
+:::image type="content" source="media/integration-pattern-with-power-automate/decoupled.png" alt-text="Screenshot of a diagram showing website integration, decoupled read pattern in Power Automate." lightbox="media/integration-pattern-with-power-automate/decoupled.png":::
 
 *Fig. 4: Website integration, decoupled read pattern*
 
@@ -437,7 +330,7 @@ website using a Queuing service, like [**Azure Service
 Bus**](/azure/service-bus-messaging/service-bus-queues-topics-subscriptions).
 This will result in this (even cooler) integration:
 
-:::image type="content" source="./media/image7.emf" alt-text="Screenshot of a diagram showing website integration, fully decoupled pattern.":::
+:::image type="content" source="media/integration-pattern-with-power-automate/fullydecoupled.png" alt-text="Screenshot of a diagram showing website integration, fully decoupled pattern in Power Automate." lightbox="media/integration-pattern-with-power-automate/fullydecoupled.png":::
 
 *Fig. 5: Website integration, fully decoupled pattern*
 
@@ -452,10 +345,10 @@ about it ever again?
 
 Because of cost.  
 Not only will we be investing more time and money in the initial
-development, we will invest more time and money to pay for licensing and
+development, we'll invest more time and money to pay for licensing and
 maintenance of each component we add.
 
-This is not a case of compromising quality for cost, it’s a case of
+This isn't a case of compromising quality for cost, it’s a case of
 building according to what is needed, while not being wasteful.
 
 When choosing an integration pattern and its components, you want to
@@ -466,19 +359,19 @@ technically the most capable.
 With the analysis part done, let’s look at examples of integration
 patterns and how they can be used, in the next chapter.
 
-# Integration Patterns
+## Integration patterns
 
 In the previous chapter we talked about what should you think about when
-planning an integration using Power Automate and how perform an analysis
+planning an integration using Power Automate and how to perform an analysis
 to understand which pattern would work best for you. With that
 information, I think it’s high time we get to the part you’ve been
 waiting for and look into different kinds of integrations available.
 
 This list is by no means definitive, however there’s a good chance that
-a big chunk of business requirements will end up using one or a
+a significant chunk of business requirements will end up using one or a
 combination of these patterns.
 
-## Instant User Action
+### Instant user action
 
 Let’s start with the simplest pattern, a user driven action, or
 **Instant** as it’s known in the Power Platform world. This pattern
@@ -486,13 +379,13 @@ perhaps the most intuitive one because it’s how most people interact
 with devices. You press a button and expect a predefined series of
 actions to happen in response.
 
-Let’s review a example:
+Let’s review an example:
 
 You’re building a Power App for product managers, which will allow users
 to review customer feedback for products and create an action plan to
 improve these products based on comments and suggestions.
 
-The problem is that some technical specs for the product is stored in
+The problem is that some technical specs for the product are stored in
 Oracle’s Product Lifecycle Management solution. You don’t always need to
 look at those so copying the entire dataset to Dataverse doesn’t make
 sense but having a button to load the data on request is handy.
@@ -503,18 +396,18 @@ there:
 Bad user experience (Oracle being what it is, doesn’t make it better),
 security concerns, or licensing costs.
 
-Considering how cost-effective it is to build integrations with Power
+Considering how cost-effective it's to build integrations with Power
 Platform, any one of these reasons qualifies as a “good enough” reason
 in the eyes of most managers to approve the costs for such an
 integration.
 
 To start, we’ll use an Instant cloud flow that will be called upon
-pressing a button in the app. The flow itself can be as simple as a 3
+pressing a button in the app. The flow itself can be as simple as a three
 step process to call Oracle using the parameters provided by the app
 (like Product ID), getting the data, and writing it to Dataverse, which
 will be reflected in the Power App.
 
-:::image type="content" source="./media/image8.emf" alt-text="Screenshot of a diagram showing user driven, Instant trigger.":::
+:::image type="content" source="media/integration-pattern-with-power-automate/instanttrigger.png" alt-text="Screenshot of a diagram showing user driven, Instant trigger pattern in Power Automate." lightbox="media/integration-pattern-with-power-automate/instanttrigger.png":::
 
 *Fig. 6: User driven, Instant trigger*
 
@@ -538,12 +431,12 @@ Regardless, an integration can fail for many reasons and the last thing
 anyone likes about their user experience is clicking a button to sit
 there not knowing if something is happening or not.
 
-## Pattern 2: Event-Driven, aka Automatic
+### Pattern 2: Event-driven, aka automatic
 
-Architects love event-driven architectures because things seems to just
+Architects love event-driven architectures because things seem to just
 fall into place like magic. It’s so intuitive because that’s similar to
 how our brain works.  
-There’s two 2 sides to this of course, much like a research on Nuclear
+There’s two two sides to this of course, much like a research on Nuclear
 Fission can end up with you reading a Wikipedia article about the Ford
 Nucleon, Event-Driven patterns can get you places you never intended to
 go.
@@ -555,7 +448,7 @@ customers whenever a rep makes updates to the case. Not every update
 needs to go to the customer, only when a note is added or the status of
 the case has changed.
 
-This one looks pretty simple and it’s something we all experienced in
+This one looks simple and it’s something we all experienced in
 our daily lives.  
 Implementing this In Power Automate requires and **Automatic** trigger,
 one that responds to events happening in a given system.
@@ -579,14 +472,13 @@ Columns** parameter.
 
 As a result, we’ll get a cloud flow with the pattern below:
 
-:::image type="content" source="./media/image9.emf" alt-text="Screenshot of a diagram showing event-driven, Automatic trigger.":::
+:::image type="content" source="media/integration-pattern-with-power-automate/autotrigger.png" alt-text="Screenshot of a diagram showing event-driven, Automatic trigger pattern in Power Automate." lightbox="media/integration-pattern-with-power-automate/autotrigger.png":::
 
 *Fig. 7: Event-driven, Automatic trigger*
 
 A few nuances to consider here.  
 First, there’s a good chance that we don’t actually need to respond to
-every status update, only to those that concern the customer. It’s very
-likely that there are intermediate case status updates that are meant
+every status update, only to those that concern the customer. It’s likely that there are intermediate case status updates that are meant
 for internal use only.
 
 Fortunately, we can achieve that by specifying the **Filter Rows**
@@ -611,17 +503,17 @@ Lastly, let’s think about one of the analysis components that can be
 particularly sensitive here, **Volume and Frequency**.
 
 Sending out notifications by itself is simple enough, unless we end up
-in a situation when we are trying to send out more notifications than
+in a situation when we're trying to send out more notifications than
 our communication channel can handle. Every e-mail service has its own
 limitations on how many emails can be sent out in a given period of
-time, same can be said for SMS services, instant messages and others.
+time, same can be said for SMS services, instant messages, and others.
 
 Make sure you have a clear understanding of the expected volume that is
 going to be generated by the events of the flow, have a plan in place to
 limit the event when it’s executed more often than expected, and have a
 mitigation plan for when that happens.
 
-## Pattern 3: Data Consolidation Pattern
+### Pattern 3: Data consolidation pattern
 
 Data Consolidation is a necessity for every organization that is large
 enough to have multiple management systems and the wise enough to
@@ -629,7 +521,7 @@ understand that they need to have a complete picture of the data across
 those systems.
 
 Often this requirement comes from the need to create reports, in which
-case organizations will typically implement some what kind of a master
+case organizations will typically implement somewhat kind of a master
 data management solution like Data Lake. However, collecting data from
 different systems into one is sometimes needed for day-to-day
 operations, like HR, customer service, sales, and others.
@@ -667,7 +559,7 @@ Depending on the size of the sales staff and how often they would
 interact with each customer, we can define the frequency off the
 schedule for the flow, Resulting in a pattern that will look like this:
 
-:::image type="content" source="./media/image10.emf" alt-text="Screenshot of a diagram showing data consolidation pattern, scheduled trigger.":::
+:::image type="content" source="media/integration-pattern-with-power-automate/scheduledtrigger.png" alt-text="Screenshot of a diagram showing data consolidation pattern, Scheduled trigger in Power Automate." lightbox="media/integration-pattern-with-power-automate/scheduledtrigger.png":::
 
 *Fig. 8: Data Consolidation Pattern, Scheduled trigger*
 
@@ -695,14 +587,14 @@ noticed until at least some damage was done.
 Insights**](/power-platform/admin/app-insights-cloud-flow)
 is one way to handle this monitoring.
 
-## Pattern 4: Service Oriented Architecture
+### Pattern 4: Service oriented architecture
 
-Very large organizations will have a lot of different systems handling
+Large organizations will have a lot of different systems handling
 different parts of their business, that would evolve over time to
 acquire pieces of information from other systems to complete their
 respective business processes.
 
-The idea here is to let each system do what it does best and have the
+The idea here's to let each system do what it does best and have the
 integration layer worry about creating the bridge between them. The
 problem of course is that it creates a situation where there's no one
 source of truth and the approach itself creates a high level of
@@ -726,7 +618,7 @@ on schedules events or manual user actions.
 
 There's no one flow that can be built to respond to each one of those
 triggers and serve every purpose any kind of business process would
-require. Essentially, the solution here is to create multiple flows for
+require. Essentially, the solution here's to create multiple flows for
 each point in each business process for each kind of trigger that might
 be needed.
 
@@ -734,41 +626,39 @@ Even if it were possible to create one flow that would serve all
 functions together, it would not have been practical from the point of
 view of performance, security, or even just maintenance.
 
-Dealing with landscape that has hundreds of flows is not easy but it is
+Dealing with landscape that has hundreds of flows isn't easy but it's
 scalable with the right resources. Dealing with one huge flow that does
-it all, is not.
+it all, isn't.
 
 What we’ll get in the end is a pattern that connects every service to
 every service in a Service Oriented Architecture, also known as the
 Spaghetti Oriented Architecture, given the result below:
 
-:::image type="content" source="./media/image11.emf" alt-text="Screenshot of a diagram showing event-driven, Automatic trigger.":::
+:::image type="content" source="media/integration-pattern-with-power-automate/eventdriventrigger.png" alt-text="Screenshot of a diagram showing event-driven, Automatic trigger pattern in Power Automate." lightbox="media/integration-pattern-with-power-automate/eventdriventrigger.png":::
 
 *Fig. 9: Event-driven, Automatic trigger*
 
 Along with all the best practices we already covered, what’s important
-here is to think about this systematically, so you can capitalize on
+here's to think about this systematically, so you can capitalize on
 opportunities to optimize cross system processes. Let’s say you have a
 requirement to send a document from SharePoint to SAP and Oracle during
 the same event.
 
 Why not create one flow that does that?  
-You’ll still need to write the file to 2 systems but you’ll need to read
+You’ll still need to write the file to two systems but you’ll need to read
 it only once.
 
 Also think about how rigid is the logic you’re creating. In a large
-landscape it’s very likely that changes to how business processes work
+landscape it’s likely that changes to how business processes work
 across systems will happen as often as any change to any of these
 systems.
 
 That’s also the reason why over consolidation of logic in one flow will
 hurt your ability to maintain the IT landscape.
 
-##
+### Pattern 5: Synchronization
 
-## Pattern 5: Synchronization
-
-In this last pattern we’ll look at data synchronization. A situation
+In this last pattern, we’ll look at data synchronization. A situation
 when data is stored in the same type of system but in different
 databases.
 
@@ -781,7 +671,7 @@ The first case is Performance.
 It’s less of an issue in the 21<sup>st</sup> century with high speed
 connectivity but there’s more than a few industries where it’s still
 very important, just ask your stock broker. Ultimately, we’re limited by
-the speed of light, so data located in a data center near you will
+the speed of light, so data located in a data center near you'll
 always be more available than a data center one across the pond.
 
 Another reason to synchronize data is The Law.  
@@ -809,19 +699,19 @@ and shipping in every instance.
 
 This pattern will require us to implement an **Automatic** flow that
 would trigger on every update of the Account record, representing
-customers. Fields relating to medical data will not be copied but basic
+customers. Fields relating to medical data won't be copied but basic
 contact information, orders, and shipping will be kept in sync.
 
-In the flow we can use standard filters to make sure we only respond to
-changes in the fields we are allowed to synchronize, resulting in the
+In the flow, we can use standard filters to make sure we only respond to
+changes in the fields we're allowed to synchronize, resulting in the
 following pattern:
 
-:::image type="content" source="./media/image12.emf" alt-text="Screenshot of a diagram showing event-driven, Automatic trigger for synchronization.":::
+:::image type="content" source="media/integration-pattern-with-power-automate/eventdrivenautotrigger.png" alt-text="Screenshot of a diagram showing event-driven, Automatic trigger for synchronization in Power Automate." lightbox="media/integration-pattern-with-power-automate/eventdrivenautotrigger.png":::
 
 *Fig. 10: Event-driven, Automatic trigger*
 
 In addition to everything we talked about Automatic triggers, a key
-point here is the expected response time. It is possible that business
+point here's the expected response time. It's possible that business
 users have an expectation that data will appear in both systems at the
 same time, or at least quicker that it actually would. We must get ahead
 of this conversation and build the right expectations.
@@ -833,20 +723,20 @@ that the process to synchronize is expected to perform beyond the
 capabilities of Power Automate, this needs to be considered as part of
 the implementation plan.
 
-Let me just say that it is very common to hear business users request
+Let me just say that it's common to hear business users request
 real-time data access but it’s also uncommon for this request to have a
 good reason. Before taking extreme measures, make sure that you, the
 architect, understands the business process and the need to data
 transfer speed to be what they are.
 
-If you do find yourself in a situation where you need a little bit more
+If you do find yourself in a situation where you need slightly more
 oomph, the next chapter is for you.
 
-# Beyond Cloud Flows
+## Beyond cloud flows
 
 I had a few conversations with customers where I was asked about what
 tool should they use for an integration. Should it be Power Automate,
-Data Factory, Service Bus, or just custom code in Azure Functions?
+Data Factory, Service Bus, or custom code in Azure Functions?
 
 And my answer is always this:  
 Your default choice is always Power Automate.  
@@ -857,12 +747,11 @@ components of an integration we talked about in this paper, you
 understand that an integration is initial investment and ongoing
 maintenance costs.
 
-Those ongoing costs can be, and historically have been, very high.  
+Those ongoing costs can be, and historically have been, high.  
 Power Automate is second to none in cost effectiveness both to build and
 maintain.
 
-If you decide to just write everything in custom code (that’s how mom
-and dad did it), then you’ll need to justify this decision to however
+If you decide to just write everything in custom code (that’s how parents did it), then you’ll need to justify this decision to however
 approves the budget.
 
 This is the reason why I’m asking the question.  
@@ -881,15 +770,15 @@ Following an evaluation, the complexity of the calculations was deemed
 too slow or impossible using cloud flows.
 
 We could say that the solution is in the problem statement itself. They
-looked into cloud flow and it’s just not possible.
+looked into cloud flow and it’s not possible.
 
 Upon closer inspection, what is impossible is the calculation, not
 gathering the data across different systems. So in this case the choice
 doesn’t have to be cloud flows or custom code, it’s both.
 
 We can use Power Automate’s strength by collecting the initial data we
-need using connectors which are likely available out of the box. Writing
-these connections as custom code will not address the limiting factor
+need using connectors, which are likely available out of the box. Writing
+these connections as custom code won't address the limiting factor
 but will most definitely introduce higher costs.
 
 The complex calculations can be encapsulated in custom code running as
@@ -899,25 +788,20 @@ connector for Power Automate.
 The diagram below shows an example of the tools one might use for
 integrations and how it affects the scalability and costs:
 
-However, you should not think of it as one or another. You take the best
+:::image type="content" source="media/integration-pattern-with-power-automate/integration.png" alt-text="Screenshot of a diagram showing integration tools and scalability options in Power Automate." lightbox="media/integration-pattern-with-power-automate/integration.png":::
+
+However, you shouldn't think of it as one or another. You take the best
 parts of each to get the job done in the most efficient way possible.
 
-# Final thoughts
+## Final thoughts
 
-This paper is meant to be a guide for architects looking to leverage
-Power Automate for integration solutions. It is based on documented best
-practices and years of experience in the role. We highlighted the
-critical considerations when building integrations and the various
-patterns that can be utilized to achieve this goal.
+This paper is meant to be a guide for architects looking to leverage Power Automate for integration solutions. It's based on documented best practices and years of experience in the role. We highlighted the critical considerations when building integrations and the various patterns that can be utilized to achieve this goal.
 
-It is not an exhaustive guide for Power Automate, nor it’s an
-instruction on what to do, the goal was to establish a thinking
-framework that would help you solve problems.
+It isn't an exhaustive guide for Power Automate, nor it’s an instruction on what to do, the goal was to establish a thinking framework that would help you solve problems.
 
-I encourage you to learn more about the practical aspects of building
-cloud flows, especially if you’re aspiring to be a developer as well.
+I encourage you to learn more about the practical aspects of building cloud flows, especially if you’re aspiring to be a developer as well.
 
-Here’s some great places to learn more:
+## Related resources
 
 - [Power Automate coding guidelines](/power-automate/guidance/coding-guidelines/)
 
