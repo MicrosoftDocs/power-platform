@@ -15,14 +15,61 @@ The [Power Platform admin center](https://admin.powerplatform.microsoft.com) pro
 
 Learn more about the Power Platform admin center in the following sections:
 
-- [Manage your environments and settings](#manage-your-environments-and-settings)
 - [Understand the user interface (UI)](#understand-the-user-interface-ui)
+- [Manage your environments and settings](#manage-your-environments-and-settings)
+
+
+## Understand the user interface (UI)
+[The new and improved Power Platform admin center](new-admin-center.md) is designed with an outcome-driven approach, where all functionality is intuitively organized in pages based on administrative tasks. The new admin center isn't just task-oriented, it also helps you achieve specific outcomes and goals.
+
+The classic Power Platform admin center is available and pages are organized according to functions.
+
+### The user interface of the new admin center
+:::image type="content" source="media/new-ppac-callouts.png" alt-text="Screenshot of the new and improved Power Platform admin center.":::
+
+Legend:
+1. [Navigation pane](#1-navigation-pane)
+2. [Settings icon](#2-settings-icon)
+3. [Admin center links](#3-admin-center-links)
+4. [Power Platform page](#4-power-platform-page)
+
+#### 1. Navigation pane
+Find what you need with the left navigation pane. You can easily navigate to Power Platform pages that help you deploy, manage, and secure you Power Platform implementation.
+
+#### 2. Settings icon
+Select the gear icon to perform tasks such as managing tenant settings, view your session details, and change the theme of the user interface.
+
+#### 3. Admin center links
+Easily navigate to related admin centers, such as the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home#/homepage), [Microsoft Entra admin center](https://entra.microsoft.com/#home), and [Power BI admin portal](https://dxt.powerbi.com/admin-portal/capacities?experience=power-bi). 
+
+#### 4. Power Platform page
+Complete administrative functions on each Power Platform page.
+
+### The user interface of the classic admin center
+
+:::image type="content" source="media/classic-ppac-callouts.png" alt-text="Screenshot of the classic Power Platform admin center.":::
+
+Legend:
+1. [Navigation pane](#1-navigation-pane-1)
+2. [Settings icon](#2-settings-icon-1)
+3. [Power Platform page](#3-power-platform-page)
+
+#### 1. Navigation pane
+Find what you need with the left navigation pane. You can easily navigate to Power Platform pages that help you deploy, manage, and secure you Power Platform implementation.
+
+#### 2. Settings icon
+Select the gear icon to perform tasks such as managing tenant settings, view your session details, and change the theme of the user interface.
+
+#### 3. Power Platform page
+Complete administrative functions on each Power Platform page.
+
+---
 
 ## Manage your environments and settings
 
 The Power Platform admin center provides the following capabilities.
 
-# [New admin center](#tab/new)
+### Capabilities in the new admin center
 
 |Feature area  |Description  | Learn more |
 |---------|---------|----------------|
@@ -35,7 +82,7 @@ The Power Platform admin center provides the following capabilities.
 | Copilot | Access educational resources, track usage, and access governance controls about Copilot features. | [Manage Copilot](copilot/copilot-hub.md) |
 |Support     | <p>Get a list of self-help solutions or create a support ticket for technical support.</p><p>**Note**: Although you administer Power BI using the Power BI admin portal, you request support for Power BI through support in the Power Platform admin center.</p> | [Get Help + Support](./get-help-support.md)  |
 
-# [Classic admin center](#tab/classic)
+### Capabilities in the new classic center
 
 |Feature area  |Description  | Learn more |
 |---------|---------|----------------|
@@ -53,54 +100,6 @@ The Power Platform admin center provides the following capabilities.
 |Data| Manage your cloud and data gateway connections.| [Set up data transfer between on-premises data and cloud services](onpremises-data-gateway-management.md) |
 |Policies     | View and manage various policies for your tenant and environments. | <ul><li>[Manage data policies](prevent-data-loss.md)</li><li>[Tenant isolation policy](cross-tenant-restrictions.md)</li><li>[Customer Lockbox policy](about-lockbox.md)</li><li>[Enterprise policies](customer-managed-key.md)</li><li>[Billing policies](pay-as-you-go-overview.md)</li></ul>|
 
----
-
-## Understand the user interface (UI)
-[The new and improved Power Platform admin center](new-admin-center.md) is designed with an outcome-driven approach, where all functionality is intuitively organized in pages based on administrative tasks. The new admin center isn't just task-oriented, it also helps you achieve specific outcomes and goals.
-
-The classic Power Platform admin center is available and pages are organized according to functions.
-
-# [New admin center](#tab/new)
-
-:::image type="content" source="media/new-ppac-callouts.png" alt-text="Screenshot of the new and improved Power Platform admin center.":::
-
-Legend:
-1. [Navigation pane](#1-navigation-pane)
-2. [Settings icon](#2-settings-icon)
-3. [Admin center links](#3-admin-center-links)
-4. [Power Platform page](#4-power-platform-page)
-
-### 1. Navigation pane
-Find what you need with the left navigation pane. You can easily navigate to Power Platform pages that help you deploy, manage, and secure you Power Platform implementation.
-
-### 2. Settings icon
-Select the gear icon to perform tasks such as managing tenant settings, view your session details, and change the theme of the user interface.
-
-### 3. Admin center links
-Easily navigate to related admin centers, such as the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home#/homepage), [Microsoft Entra admin center](https://entra.microsoft.com/#home), and [Power BI admin portal](https://dxt.powerbi.com/admin-portal/capacities?experience=power-bi). 
-
-### 4. Power Platform page
-Complete administrative functions on each Power Platform page.
-
-# [Classic admin center](#tab/classic)
-
-:::image type="content" source="media/classic-ppac-callouts.png" alt-text="Screenshot of the classic Power Platform admin center.":::
-
-Legend:
-1. [Navigation pane](#1-navigation-pane-1)
-2. [Settings icon](#2-settings-icon-1)
-3. [Power Platform page](#3-power-platform-page)
-
-## 1. Navigation pane
-Find what you need with the left navigation pane. You can easily navigate to Power Platform pages that help you deploy, manage, and secure you Power Platform implementation.
-
-## 2. Settings icon
-Select the gear icon to perform tasks such as managing tenant settings, view your session details, and change the theme of the user interface.
-
-## 3. Power Platform page
-Complete administrative functions on each Power Platform page.
-
----
 
 ### Related content
 [Training: Microsoft Power Platform Fundamentals](/training/paths/power-plat-fundamentals)
