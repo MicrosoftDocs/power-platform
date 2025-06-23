@@ -16,7 +16,7 @@ The [Power Platform admin center](https://admin.powerplatform.microsoft.com) pro
 Learn more about the Power Platform admin center in the following sections:
 
 - [Manage your environments and settings](#manage-your-environments-and-settings)
-- [Understand the user interface (UI)](#understand-the-user-interface-UI)
+- [Understand the user interface (UI)](#understand-the-user-interface-ui)
 
 ## Manage your environments and settings
 
