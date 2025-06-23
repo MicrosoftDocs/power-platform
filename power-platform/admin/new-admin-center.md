@@ -34,18 +34,18 @@ Most of the pages from the classic admin center are available in the new one, ei
 | Item number | Classic admin center | New admin center | Learn more |
 | ------------| -------------------- | -----------------|--------------|
 | 1           | Home                 | Home             | [Overview of the Power Platform admin center](admin-documentation.md) |
-| 2           | Environments         | Manage > Environments | |
-| 3           | Environment groups   | Manage > Environment groups |    |
+| 2           | Environments         | Manage > Environments | [Power Platform environments overview](environments-overview.md)|
+| 3           | Environment groups   | Manage > Environment groups | [Environment groups](environment-groups.md)   |
 | 4           | Advisor              | Action > Recommendations | [Use the actions page](power-platform-advisor.md)   |
-| 5           | Security             | Security         |    |
-| 6           | Analytics > Dataverse       | Manage > Products > Dataverse |    |
-| 7           | Analytics > Power Automate | Manage > Products > Power Automate |    |
-| 8           | Analytics > Power Apps| Manage > Prodcuts > Power Apps |    |
+| 5           | Security             | Security         | [Security overview](security/security-overview.md)   |
+| 6           | Analytics > Dataverse       | Manage > Products > Dataverse | [View and download Microsoft Dataverse analytics](analytics-common-data-service.md) |
+| 7           | Analytics > Power Automate | Manage > Products > Power Automate | [View analytics for cloud flows](analytics-flow.md)<br>[View analytics for desktop flows](analytics-ui-flow.md)  |
+| 8           | Analytics > Power Apps| Manage > Prodcuts > Power Apps |[Admin Analytics for Power Apps](analytics-powerapps.md)|
 | 9           | Analytics > Data export | Manage  > Products > Data export |     |
 | 10          | Billing > Licenses   | Licensing > Products > Power Apps |     |
 | 11          | Billing > Billing plans      | Licensing > Billing plans |    |
-| 12          | Settings             | Manage > Tenant settings |    |
-| 13          | Copilot              | Copilot          |    |
+| 12          | Settings             | Manage > Tenant settings | [Tenant settings](tenant-settings.md)   |
+| 13          | Copilot              | Copilot          |[Track, manage, and scale Copilot adoption in the Power Platform](copilot/copilot-hub.md)    |
 | 14          | Resources > Capacity | Licensing > Capacity add-ons |     |
 | 15          | Resources > Catalogs | Deployment > Catalogs |    |
 | 16          | Resources > Dynamics 365 apps | Manage > Products > Dynamics 365 apps |    |
