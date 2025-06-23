@@ -15,10 +15,45 @@ The [Power Platform admin center](https://admin.powerplatform.microsoft.com) pro
 
 Learn more about the Power Platform admin center in the following sections:
 
-- [The user interface of the new admin center](#the-user-interface-of-the-new-admin-center)
-- [The user interface of the classic admin center](#the-user-interface-of-the-classic-admin-center)
 - [Feature areas of the new admin center](#feature-areas-of-the-new-admin-center)
 - [Feature areas of the classic admin center](#feature-areas-of-the-classic-admin-center)
+- [The user interface of the new admin center](#the-user-interface-of-the-new-admin-center)
+- [The user interface of the classic admin center](#the-user-interface-of-the-classic-admin-center)
+
+## Feature areas of the new admin center
+
+The new Power Platform admin center provides the following capabilities.
+
+|Feature area  |Description  | Learn more |
+|---------|---------|----------------|
+|Actions | View recommendations about your Power Platform implementation. The recommendations enhance security, reliability, and overall health of your implementation.  |[Use the actions page](power-platform-advisor.md)|
+| Manage |  Manage your environments, environment groups, and tenant settings.| <ul><li>[Power Platform environments overview](environments-overview.md)</li><li>[Environment groups](environment-groups.md)</li><li>[Tenant settings](tenant-settings.md)</li></ul> |
+| Monitor | Measure and improve operational health metrics of resources built or deployed in Power Platform, such as apps. | [Monitor page (preview)](monitoring/monitoring-overview.md) |
+|Security | Run your organizational workloads in the safest way possible with a wide set of security features available. | [Security page overview](security/security-overview.md) |
+|Deployment     | The Deployment page in the Power Platform admin center provides a streamlined experience to help administrators navigate the complexities of managing Power Platform application lifecycle management (ALM) workloads, including managing pipelines deployments at enterprise scale. Admins have visibility to all the deployments in their tenant and can approve deployment requests and troubleshoot issues.| [Admin deployment page (preview)](../alm/admin-deployment-hub.md) |
+|Licensing  |  View a summary of environments in your tenant requiring licensing attention and license consumption for your environments. |[View license consumption](view-license-consumption-issues.md) |
+| Copilot | Access educational resources, track usage, and access governance controls about Copilot features. | [Manage Copilot](copilot/copilot-hub.md) |
+|Support     | <p>Get a list of self-help solutions or create a support ticket for technical support.</p><p>**Note**: Although you administer Power BI using the Power BI admin portal, you request support for Power BI through support in the Power Platform admin center.</p> | [Get Help + Support](./get-help-support.md)  |
+
+## Feature areas of the classic admin center
+
+The classic Power Platform admin center provides the following capabilities.
+
+|Feature area  |Description  | Learn more |
+|---------|---------|----------------|
+|Environments | View, create, and manage your environments. Select an environment to see details and manage its setting. |[Manage environment settings](./admin-settings.md)|
+| Environment groups |  Similar to folders, _environment groups_ are designed to help administrators organize their flat list of environments into structured groups based on different criteria, such as business unit, project, and location | [Environment groups](environment-groups.md) |
+| Advisor | The actions page is your guide to personalized recommendations to optimize your Power Platform tenant. Advisor analyzes all Managed Environments and the apps in these environments within your Power Platform tenant. Advisor offers solutions to enhance security, reliability, and overall health. | [Use the actions page](power-platform-advisor.md) |
+|Security | Run your organizational workloads in the safest way possible with a wide set of security features available. | [Security overview](security/security-overview.md) |
+|Analytics     | Get a detailed view of key metrics for Microsoft Power Platform apps. |[Microsoft Dataverse analytics](./analytics-common-data-service.md)    |
+|Billing  |  View a summary of environments in your tenant requiring licensing attention and license consumption for your environments. |[Business subscription and billing documentation](/microsoft-365/commerce) and [View license consumption](view-license-consumption-issues.md) |
+|Settings  |  Manage settings for all environments in your tenant.|[Tenant settings](tenant-settings.md) |
+| Copilot | Access educational resources, track usage, and access governance controls about Copilot features. | [Manage Copilot](copilot/copilot-hub.md) |
+|Resources  |  View and manage resources in your tenant and environments. |[View and manage resources](view-manage-resources.md)  |
+|Help + support     | <p>Get a list of self-help solutions or create a support ticket for technical support.</p><p>**Note**: Although you administer Power BI using the Power BI admin portal, you request support for Power BI through Help + support in the Power Platform admin center.</p> | [Get Help + Support](./get-help-support.md)  |
+|Data integration| The Data Integrator (for Admins) is a point-to-point integration service used to integrate data into Dataverse. | [Integrate data into Dataverse](data-integrator.md)|
+|Data| Manage your cloud and data gateway connections.| [Set up data transfer between on-premises data and cloud services](onpremises-data-gateway-management.md) |
+|Policies     | View and manage various policies for your tenant and environments. | <ul><li>[Manage data policies](prevent-data-loss.md)</li><li>[Tenant isolation policy](cross-tenant-restrictions.md)</li><li>[Customer Lockbox policy](about-lockbox.md)</li><li>[Enterprise policies](customer-managed-key.md)</li><li>[Billing policies](pay-as-you-go-overview.md)</li></ul>|
 
 ## The user interface of the new admin center
 [The new and improved Power Platform admin center](new-admin-center.md) is designed with an outcome-driven approach, where all functionality is intuitively organized in pages based on administrative tasks. The new admin center isn't just task-oriented, it also helps you achieve specific outcomes and goals.
@@ -61,44 +96,6 @@ Select the gear icon to perform tasks such as managing tenant settings, view you
 
 #### 3. Power Platform page
 Complete administrative functions on each Power Platform page.
-
----
-
-## Feature areas of the new admin center
-
-The new Power Platform admin center provides the following capabilities.
-
-|Feature area  |Description  | Learn more |
-|---------|---------|----------------|
-|Actions | View recommendations about your Power Platform implementation. The recommendations enhance security, reliability, and overall health of your implementation.  |[Use the actions page](power-platform-advisor.md)|
-| Manage |  Manage your environments, environment groups, and tenant settings.| <ul><li>[Power Platform environments overview](environments-overview.md)</li><li>[Environment groups](environment-groups.md)</li><li>[Tenant settings](tenant-settings.md)</li></ul> |
-| Monitor | Measure and improve operational health metrics of resources built or deployed in Power Platform, such as apps. | [Monitor page (preview)](monitoring/monitoring-overview.md) |
-|Security | Run your organizational workloads in the safest way possible with a wide set of security features available. | [Security page overview](security/security-overview.md) |
-|Deployment     | The Deployment page in the Power Platform admin center provides a streamlined experience to help administrators navigate the complexities of managing Power Platform application lifecycle management (ALM) workloads, including managing pipelines deployments at enterprise scale. Admins have visibility to all the deployments in their tenant and can approve deployment requests and troubleshoot issues.| [Admin deployment page (preview)](../alm/admin-deployment-hub.md) |
-|Licensing  |  View a summary of environments in your tenant requiring licensing attention and license consumption for your environments. |[View license consumption](view-license-consumption-issues.md) |
-| Copilot | Access educational resources, track usage, and access governance controls about Copilot features. | [Manage Copilot](copilot/copilot-hub.md) |
-|Support     | <p>Get a list of self-help solutions or create a support ticket for technical support.</p><p>**Note**: Although you administer Power BI using the Power BI admin portal, you request support for Power BI through support in the Power Platform admin center.</p> | [Get Help + Support](./get-help-support.md)  |
-
-## Feature areas of the classic admin center
-
-The classic Power Platform admin center provides the following capabilities.
-
-|Feature area  |Description  | Learn more |
-|---------|---------|----------------|
-|Environments | View, create, and manage your environments. Select an environment to see details and manage its setting. |[Manage environment settings](./admin-settings.md)|
-| Environment groups |  Similar to folders, _environment groups_ are designed to help administrators organize their flat list of environments into structured groups based on different criteria, such as business unit, project, and location | [Environment groups](environment-groups.md) |
-| Advisor | The actions page is your guide to personalized recommendations to optimize your Power Platform tenant. Advisor analyzes all Managed Environments and the apps in these environments within your Power Platform tenant. Advisor offers solutions to enhance security, reliability, and overall health. | [Use the actions page](power-platform-advisor.md) |
-|Security | Run your organizational workloads in the safest way possible with a wide set of security features available. | [Security overview](security/security-overview.md) |
-|Analytics     | Get a detailed view of key metrics for Microsoft Power Platform apps. |[Microsoft Dataverse analytics](./analytics-common-data-service.md)    |
-|Billing  |  View a summary of environments in your tenant requiring licensing attention and license consumption for your environments. |[Business subscription and billing documentation](/microsoft-365/commerce) and [View license consumption](view-license-consumption-issues.md) |
-|Settings  |  Manage settings for all environments in your tenant.|[Tenant settings](tenant-settings.md) |
-| Copilot | Access educational resources, track usage, and access governance controls about Copilot features. | [Manage Copilot](copilot/copilot-hub.md) |
-|Resources  |  View and manage resources in your tenant and environments. |[View and manage resources](view-manage-resources.md)  |
-|Help + support     | <p>Get a list of self-help solutions or create a support ticket for technical support.</p><p>**Note**: Although you administer Power BI using the Power BI admin portal, you request support for Power BI through Help + support in the Power Platform admin center.</p> | [Get Help + Support](./get-help-support.md)  |
-|Data integration| The Data Integrator (for Admins) is a point-to-point integration service used to integrate data into Dataverse. | [Integrate data into Dataverse](data-integrator.md)|
-|Data| Manage your cloud and data gateway connections.| [Set up data transfer between on-premises data and cloud services](onpremises-data-gateway-management.md) |
-|Policies     | View and manage various policies for your tenant and environments. | <ul><li>[Manage data policies](prevent-data-loss.md)</li><li>[Tenant isolation policy](cross-tenant-restrictions.md)</li><li>[Customer Lockbox policy](about-lockbox.md)</li><li>[Enterprise policies](customer-managed-key.md)</li><li>[Billing policies](pay-as-you-go-overview.md)</li></ul>|
-
 
 ### Related content
 [Training: Microsoft Power Platform Fundamentals](/training/paths/power-plat-fundamentals)
