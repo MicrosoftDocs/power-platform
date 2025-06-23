@@ -15,16 +15,12 @@ The [Power Platform admin center](https://admin.powerplatform.microsoft.com) pro
 
 Learn more about the Power Platform admin center in the following sections:
 
-- [Understand the user interface (UI)](#understand-the-user-interface-ui)
-- [Manage your environments and settings](#manage-your-environments-and-settings)
+- 
+- 
 
-
-## Understand the user interface (UI)
+## The user interface of the new admin center
 [The new and improved Power Platform admin center](new-admin-center.md) is designed with an outcome-driven approach, where all functionality is intuitively organized in pages based on administrative tasks. The new admin center isn't just task-oriented, it also helps you achieve specific outcomes and goals.
 
-The classic Power Platform admin center is available and pages are organized according to functions.
-
-### The user interface of the new admin center
 :::image type="content" source="media/new-ppac-callouts.png" alt-text="Screenshot of the new and improved Power Platform admin center.":::
 
 Legend:
@@ -33,19 +29,20 @@ Legend:
 3. [Admin center links](#3-admin-center-links)
 4. [Power Platform page](#4-power-platform-page)
 
-#### 1. Navigation pane
+### 1. Navigation pane
 Find what you need with the left navigation pane. You can easily navigate to Power Platform pages that help you deploy, manage, and secure you Power Platform implementation.
 
-#### 2. Settings icon
+### 2. Settings icon
 Select the gear icon to perform tasks such as managing tenant settings, view your session details, and change the theme of the user interface.
 
-#### 3. Admin center links
+### 3. Admin center links
 Easily navigate to related admin centers, such as the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home#/homepage), [Microsoft Entra admin center](https://entra.microsoft.com/#home), and [Power BI admin portal](https://dxt.powerbi.com/admin-portal/capacities?experience=power-bi). 
 
-#### 4. Power Platform page
+### 4. Power Platform page
 Complete administrative functions on each Power Platform page.
 
-### The user interface of the classic admin center
+## The user interface of the classic admin center
+The classic Power Platform admin center is available and pages are organized according to functions.
 
 :::image type="content" source="media/classic-ppac-callouts.png" alt-text="Screenshot of the classic Power Platform admin center.":::
 
