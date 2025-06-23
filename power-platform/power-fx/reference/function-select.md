@@ -6,7 +6,7 @@ author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 3/22/2024
+ms.date: 06/20/2025
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
@@ -110,7 +110,7 @@ The select function can also be used with a gallery. For example, it can be used
 
 4. Set the **OnSelect** property of the image control to this formula:
 
-   **Notify( "Image Selected", Success )**
+   **Notify( "Image Selected", NotificationType.Success )**
 
 5. While holding down the Alt key, click or tap the various elements of the gallery.
 
