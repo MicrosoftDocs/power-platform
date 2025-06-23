@@ -634,7 +634,7 @@ What we’ll get in the end is a pattern that connects every service to
 every service in a Service Oriented Architecture, also known as the
 Spaghetti Oriented Architecture, given the result below:
 
-:::image type="content" source="media/integration-pattern-with-power-automate/eventdriventrigger.png" alt-text="Screenshot of a diagram showing event-driven, Automatic trigger pattern in Power Automate." lightbox="media/integration-pattern-with-power-automate/eventdriventrigger.png":::
+:::image type="content" source="media/integration-pattern-with-power-automate/eventdriventrigger.png" alt-text="Screenshot of a diagram showing event-driven, trigger pattern in Power Automate." lightbox="media/integration-pattern-with-power-automate/eventdriventrigger.png":::
 
 *Fig. 9: Event-driven, Automatic trigger*
 
