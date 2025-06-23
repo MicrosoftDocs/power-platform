@@ -219,8 +219,9 @@ In addition to the DB and File storage, Dataverse search includes the indexes th
 Storage consumed by Dataverse search was previously reported at the Environment level as a table called “RelevanceSearch” and is now reported as “DataverseSearch”.
  
 **Dataverse search can also be monitored at the Dataverse Environment report in Power Platform Admin Center:**
-•	Legacy PPAC: Billing > Licenses > Dataverse > Environment tab (consumption per table reporting) 
-•	New PPAC: Licensing > Dataverse > Environments tab (consumption per table reporting) 
+
+- Legacy PPAC: Billing > Licenses > Dataverse > Environment tab (consumption per table reporting)
+- New PPAC: Licensing > Dataverse > Environments tab (consumption per table reporting) 
 
 **How much does the indexed Dataverse search data cost?**
 All Dataverse indexes are reported at the Dataverse Database Capacity rate. This is applicable only to Dataverse search and does not turn on any other setting of the experiences that is enabled by Dataverse search. For more details about Dataverse search and the experiences it enables see [What is Dataverse search]([url]https://learn.microsoft.com/en-us/power-apps/user/relevance-search-benefits).
@@ -354,10 +355,10 @@ Because custom Quick Find lookups are created by an admin in the org, these can 
 - Removing unneeded columns or tables.
 - Eliminating multiline text columns from inclusion.
 
-!Note
+>[!NOTE]
 The Dataverse search indexed data is the data that allows generative AI experiences to interpret the content using natural language. This index accrues to the overall Dataverse search consumption.
 
-### What is the DataverseSearch table and how can I reduce it?
+### What is the "DataverseSearch" table and how can I reduce it?
 
 The **DataverseSearch** table (previously known as "RelevanceSearch") is the cumulative storage used by the global search, as well as generative AI experiences that are enabled by it. It includes the data from all searchable, retrievable, and filterable fields of the tables you indexed for your environment, as well as Copilot semantic indexes. 
 
@@ -375,11 +376,11 @@ An Admin can manage Dataverse search through the 3 states associated with this s
 **Off:**
 - When Dataverse Search is disabled, the search bar is hidden, and Generative AI experiences using Dataverse data are limited.
 
-[!Notes]
-- Dataverse search is set to “On” if you currently happen to use any of the above features (Dataverse search (previously known as RelevanceSearch) OR Copilot indexes in the existing environment. 
-  - Dataverse search will be set to “On” for any new Production, Sandbox or Default environment type and will be set to “Default” for any new other type of environment.
-- Existing environments prior to June that had Dataverse search set to “Off” will be set to “Default” where search bar remains to be hidden and Generative AI experiences using Dataverse data remain available.
-- No other setting is turned on if Dataverse search is turned "On" or "Default".
+>[!NOTE]
+- Dataverse search is set to “**On**” if you currently happen to use any of the above features (Dataverse search (previously known as RelevanceSearch) OR Copilot indexes in the existing environment. 
+  - Dataverse search will be set to “**On**” for any new Production, Sandbox or Default environment type and will be set to “Default” for any new other type of environment.
+- Existing environments prior to June 2025 that had Dataverse search set to “**Off**” will be automatically set to “**Default**” where search bar remains to be hidden and Generative AI experiences using Dataverse data remain available.
+- No other setting is turned on if Dataverse search is turned "**On**" or "**Default**".
 
 ### What actions can Admins take?
 To ensure optimal operations for the organization, Admins with the proper permissions can either: increase capacity storage or reduce Dataverse search by performing all the below
@@ -391,30 +392,29 @@ To ensure optimal operations for the organization, Admins with the proper permis
 6.	Go to the Power Platform Admin Center and turn Dataverse search “Off”. It is strongly recommended to NOT perform this as this would directly impact all dependent generative AI experiences in your different applications, and all users using them.
 
 ### Turning Dataverse search off
-If Dataverse search is manually set to "Off", all indexed Dataverse data will be deleted, and the experiences that depend on it will be limited or unusable for all users of those experiences, which includes search and generative AI conversational capabilities.
+If Dataverse search is manually set to "**Off**", its Dataverse indexed data will be deleted, and the experiences that depend on it will be limited or unusable for all users of those experiences, which includes search and generative AI conversational capabilities.
 Environment Admins will have 12 hours to turn the feature back on without indexed data loss.
 
 **During 12 hours:** 
-- Dataverse search can be turned back on without indexed data loss. 
+- Dataverse search can be turned back on without indexed data loss.
 
 **After 12 hours:**
 - All indexed Dataverse data will be permanently deleted.
 - Turning Dataverse search back on will re-trigger the indexing of Dataverse data.
 
-[! Note]
-When Dataverse search is manually turned off, depending on the amount of indexed data, it may take more than 12h to delete all Dataverse idnexed data.
+> [!IMPORTANT]
+> Turning off Dataverse search deprovisions and removes the index within a period of 12 hours. If you turn on Dataverse search after its been off for 12 hours, it provisions a fresh index that needs to go through a full sync. Syncing may take up to an hour or more for average size organizations, and a couple of days for large organizations. Be sure to consider these implications when you turn off Dataverse search temporarily.
 
 ### What happens if Dataverse serach is turned off?
-All experiences that are enabled by Dataverse search are limited. For more details see [url](/power-apps/user/relevance-faq)
+All experiences that are enabled by Dataverse search are limited. For more details see [Frequently asked questions about Dataverse search]([url](/power-apps/user/relevance-faq)).
 
 
 ### Re-enabling Dataverse search
-**Selecting “On”**
-Once Dataverse search is set back “On” after being set to “Off”, all indexes are immediately re-triggered across all enabled experiences for them to work accordingly, and Dataverse search costs will resume.
+**Selecting “On"**
+Once Dataverse search is set back “**On**” after being set to “**Off**”, all indexes are immediately re-triggered across all enabled experiences for them to work accordingly, and Dataverse search costs will resume.
 
 **Selecting “Default”**
-Once Dataverse search is set to “Default” after being set to “Off”, the indexes are only re-triggered when a Microsoft Copilot Studio skill is created, when an agent uses a File or Dataverse table, or if a prompt is submitted to an Agent or Copilot. Only when the indexes are triggered Dataverse search costs will resume.
-
+Once Dataverse search is set to “**Default**” after being set to “**Off**”, the indexes are only re-triggered when a Microsoft Copilot Studio skill is created, when an agent uses a File (uploaded from Desktop, OneDrive or Sharepoint) or Dataverse table, or if a prompt is submitted to an Agent or Copilot. Only when the indexes are triggered Dataverse search costs will resume.
 
 ### I just bought the new capacity-based licenses. How do I provision an environment by using this model?
 
