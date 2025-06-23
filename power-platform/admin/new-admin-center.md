@@ -29,7 +29,7 @@ Learn more about the new admin center using the following sections in this artic
 
 - [Where are pages from the classic admin center in the new one?](#where-are-pages-from-the-classic-admin-center-in-the-new-one)
 - [What else is included in the new admin center?](#what-else-is-included-in-the-new-admin-center)
-- [Watch a video about the newe admin center](#watch-a-video-about-the-new-admin-center)
+- [Watch a video about the new admin center](#watch-a-video-about-the-new-admin-center)
 
 ## Where are pages from the classic admin center in the new one?  
 
