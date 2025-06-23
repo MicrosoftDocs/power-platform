@@ -15,8 +15,9 @@ The [Power Platform admin center](https://admin.powerplatform.microsoft.com) pro
 
 Learn more about the Power Platform admin center in the following sections:
 
-- The user interface of the new admin center(#the-user-interface-of-the-new-admin-center)
-- The user interface of the classic admin center(#the-user-interface-of-the-classic-admin-center)
+- [The user interface of the new admin center](#the-user-interface-of-the-new-admin-center)
+- [The user interface of the classic admin center](#the-user-interface-of-the-classic-admin-center)
+- [Manage your environments and settings](#manage-your-environments-and-settings)
 
 ## The user interface of the new admin center
 [The new and improved Power Platform admin center](new-admin-center.md) is designed with an outcome-driven approach, where all functionality is intuitively organized in pages based on administrative tasks. The new admin center isn't just task-oriented, it also helps you achieve specific outcomes and goals.
