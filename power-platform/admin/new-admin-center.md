@@ -61,6 +61,6 @@ Most of the pages from the classic admin center are available in the new one, ei
 
 ## What else is included in the new admin center?
 
-In addition to reorganized pages based on admin tasks, we're introducing a new *monitoring pages* experience. Monitoring pages allow admins and makers to track performance statistics in their tenant, helping them identify app accessibility problems or slow-loading Power Pages sites.  
+In addition to reorganized pages based on admin tasks, we're introducing a new [*monitoring pages* experience](monitoring/monitoring-overview.md). Monitoring pages allow admins and makers to track performance statistics in their tenant, helping them identify app accessibility problems or slow-loading Power Pages sites.  
 
 These new experiences help you measure and improve the operational health of your organizational resources such as apps. They provide insights into overall operational health in a tenant or specific environments. Metrics are derived from aggregated event logs of runtime activities, with recommendations based on these logs or static analysis of resource properties. Event logs used for metric calculations are available for review and download for further analysis.
