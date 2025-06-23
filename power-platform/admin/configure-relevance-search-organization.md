@@ -68,7 +68,7 @@ For more information about Dataverse search, see [Search for tables and rows by
 
 ## Managing Dataverse search
 
-Dataverse search is an opt-out feature, set to **On** for all new production and "Default" environments. We recommend turning on Dataverse search so users have a superior search experience in model-driven apps.
+Dataverse search is an opt-out feature, set to "**On**" for all new production and "**Default**" environments. We recommend turning on Dataverse search so users have a superior search experience in model-driven apps.
 
 - When set to "**On**", the search bar in the header of all model-driven apps in the environment is visible, allowing users to have a global-search experience, and generative AI experiences may be or are enabled.
 - When set to "**Default**", the search bar in the header of all model-driven apps in the environment is hidden, and generative AI experiences may be enabled.
@@ -337,6 +337,8 @@ We recommend turning on Dataverse search so users can enjoy a better search expe
 
 > [!IMPORTANT]
 > Dataverse search counts towards the different storage entitlements you have in the tenant.
+
+For all FAQ about Dataverse search see [Frequently asked questions about Dataverse search](https://learn.microsoft.com/en-us/power-apps/user/relevance-faq).
 
 ### Related content
 
