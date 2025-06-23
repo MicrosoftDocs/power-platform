@@ -33,8 +33,7 @@ Most of the pages from the classic admin center are available in the new one, ei
 
 | Item number | Classic admin center | New admin center | Learn more |
 | ------------| -------------------- | -----------------|--------------|
-| 1           | Home                 | Home             | [Overview of the Power Platform admin center](admin-documentation.md
-) |
+| 1           | Home                 | Home             | [Overview of the Power Platform admin center](admin-documentation.md) |
 | 2           | Environments         | Manage > Environments | |
 | 3           | Environment groups   | Manage > Environment groups |    |
 | 4           | Advisor              | Action > Recommendations | [Use the actions page](power-platform-advisor.md)   |
