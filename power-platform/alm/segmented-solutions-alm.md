@@ -32,7 +32,6 @@ you add an existing table to the solution:
 > [!WARNING]
 > Don't add components to the solution that aren't new or changed components. When your update is imported to the target environment, a solution with unintended components can cause unexpected behavior to the existing components that now lay below the layer you introduced with your solution update. For example, if you add a view for a table that isn't updated and the view in the existing layer has customizations, the existing customizations might become inactive. More information: [Solution layers](solution-layers-alm.md)
 >
-> More information: [Create segmented solutions](/powerapps/maker/common-data-service/use-segmented-solutions-patches-simplify-updates)
 
 ### See also
 
