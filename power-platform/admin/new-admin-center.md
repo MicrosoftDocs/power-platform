@@ -41,16 +41,16 @@ Most of the pages from the classic admin center are available in the new one, ei
 | 6           | Analytics > Dataverse       | Manage > Products > Dataverse | [View and download Microsoft Dataverse analytics](analytics-common-data-service.md) |
 | 7           | Analytics > Power Automate | Manage > Products > Power Automate | [View analytics for cloud flows](analytics-flow.md)<br>[View analytics for desktop flows](analytics-ui-flow.md)  |
 | 8           | Analytics > Power Apps| Manage > Prodcuts > Power Apps |[Admin Analytics for Power Apps](analytics-powerapps.md)|
-| 9           | Analytics > Data export | Manage  > Products > Data export |     |
-| 10          | Billing > Licenses   | Licensing > Products > Power Apps |     |
-| 11          | Billing > Billing plans      | Licensing > Billing plans |    |
+| 9           | Analytics > Data export | Manage  > Products > Data export |[Set up Microsoft Power Platform self-service analytics to export inventory and usage data (preview)](self-service-analytics.md)    |
+| 10          | Billing > Licenses   | Licensing > Products > Power Apps | [Manage Power Apps licenses in your organization](signup-question-and-answer.md)    |
+| 11          | Billing > Billing plans      | Licensing > Billing plans | [Pay-as-you-go plan](pay-as-you-go-overview.md)  |
 | 12          | Settings             | Manage > Tenant settings | [Tenant settings](tenant-settings.md)   |
 | 13          | Copilot              | Copilot          |[Track, manage, and scale Copilot adoption in the Power Platform](copilot/copilot-hub.md)    |
-| 14          | Resources > Capacity | Licensing > Capacity add-ons |     |
-| 15          | Resources > Catalogs | Deployment > Catalogs |    |
-| 16          | Resources > Dynamics 365 apps | Manage > Products > Dynamics 365 apps |    |
-| 17          | Resources > Power Pages sites | Manage > Products > Power Pages sites<br><br>**Note:** The security data of pages will be moved to Security > Products > Power Pages. |   |
-| 18          | Help + Support       | Support         |    |
+| 14          | Resources > Capacity | Licensing > Capacity add-ons |[Dataverse capacity-based storage overview](whats-new-storage.md)     |
+| 15          | Resources > Catalogs | Deployment > Catalogs |[Administer the catalog](administer-catalog.md)   |
+| 16          | Resources > Dynamics 365 apps | Manage > Products > Dynamics 365 apps | [Manage Dynamics 365 apps](manage-apps.md)  |
+| 17          | Resources > Power Pages sites | Manage > Products > Power Pages sites<br><br>**Note:** The security data of pages will be moved to Security > Products > Power Pages. | [What is Power Pages?](/power-pages/introduction)  |
+| 18          | Help + Support       | Support         | [Get Help + Support](get-help-support.md) |
 | 19          | Data integration     | Manage > Data > Data integration  |     |
 | 20          | Data (Preview)       | Manage > Data > Data (Preview) |    |
 | 21          | Policies > Data policies | Security > Settings > Data and privacy > Data policies |     |
