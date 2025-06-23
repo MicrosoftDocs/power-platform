@@ -31,32 +31,33 @@ All customers can access the new Power Platform admin center. It's turned on by 
 
 Most of the pages from the classic admin center are available in the new one, either in their original form or with improved functionality. The following table outlines where to find them in the updated layout.
 
-| Item number | Classic admin center | New admin center |
-| ------------| -------------------- | -----------------|
-| 1           | Home                 | Home             |
-| 2           | Environments         | Manage > Environments |
-| 3           | Environment groups   | Manage > Environment groups |
-| 4           | Advisor              | Action > Recommendations |
-| 5           | Security             | Security         |
-| 6           | Analytics > Dataverse       | Manage > Products > Dataverse |
-| 7           | Analytics > Power Automate | Manage > Products > Power Automate |
-| 8           | Analytics > Power Apps| Manage > Prodcuts > Power Apps |
-| 9           | Analytics > Data export | Manage  > Products > Data export |
-| 10          | Billing > Licenses   | Licensing > Products > Power Apps |
-| 11          | Billing > Billing plans      | Licensing > Billing plans |
-| 12          | Settings             | Manage > Tenant settings |
-| 13          | Copilot              | Copilot          |
-| 14          | Resources > Capacity | Licensing > Capacity add-ons |
-| 15          | Resources > Catalogs | Deployment > Catalogs |
-| 16          | Resources > Dynamics 365 apps | Manage > Products > Dynamics 365 apps |
-| 17          | Resources > Power Pages sites | Manage > Products > Power Pages sites<br><br>**Note:** The security data of pages will be moved to Security > Products > Power Pages. |
-| 18          | Help + Support       | Support         |
-| 19          | Data integration     | Manage > Data > Data integration  |
-| 20          | Data (Preview)       | Manage > Data > Data (Preview) |
-| 21          | Policies > Data policies | Security > Settings > Data and privacy > Data policies |
-| 22          | Policies > Tenant isolation | Security > Settings > Identity and access > Tenant isolation |
-| 23          | Policies > Customer Lockbox | Security > Settings > Compliance > Customer Lockbox |
-| 24          | Policies > Enterprise policies | Security > Settings > Data and privacy > Enterprise policies |
+| Item number | Classic admin center | New admin center | Learn more |
+| ------------| -------------------- | -----------------|--------------|
+| 1           | Home                 | Home             | [Overview of the Power Platform admin center](admin-documentation.md
+) |
+| 2           | Environments         | Manage > Environments | |
+| 3           | Environment groups   | Manage > Environment groups |    |
+| 4           | Advisor              | Action > Recommendations | [Use the actions page](power-platform-advisor.md)   |
+| 5           | Security             | Security         |    |
+| 6           | Analytics > Dataverse       | Manage > Products > Dataverse |    |
+| 7           | Analytics > Power Automate | Manage > Products > Power Automate |    |
+| 8           | Analytics > Power Apps| Manage > Prodcuts > Power Apps |    |
+| 9           | Analytics > Data export | Manage  > Products > Data export |     |
+| 10          | Billing > Licenses   | Licensing > Products > Power Apps |     |
+| 11          | Billing > Billing plans      | Licensing > Billing plans |    |
+| 12          | Settings             | Manage > Tenant settings |    |
+| 13          | Copilot              | Copilot          |    |
+| 14          | Resources > Capacity | Licensing > Capacity add-ons |     |
+| 15          | Resources > Catalogs | Deployment > Catalogs |    |
+| 16          | Resources > Dynamics 365 apps | Manage > Products > Dynamics 365 apps |    |
+| 17          | Resources > Power Pages sites | Manage > Products > Power Pages sites<br><br>**Note:** The security data of pages will be moved to Security > Products > Power Pages. |   |
+| 18          | Help + Support       | Support         |    |
+| 19          | Data integration     | Manage > Data > Data integration  |     |
+| 20          | Data (Preview)       | Manage > Data > Data (Preview) |    |
+| 21          | Policies > Data policies | Security > Settings > Data and privacy > Data policies |     |
+| 22          | Policies > Tenant isolation | Security > Settings > Identity and access > Tenant isolation |     |
+| 23          | Policies > Customer Lockbox | Security > Settings > Compliance > Customer Lockbox |    |
+| 24          | Policies > Enterprise policies | Security > Settings > Data and privacy > Enterprise policies |     |
 | 25          | Admin Centers        | Admin Centers   |
 
 ## What else is included in the new admin center?
