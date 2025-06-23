@@ -32,7 +32,7 @@ Keep the following principles in mind:
 
 ## Prerequisites
 -	You must be a tenant administrator or an environment administrator to access alerts. 
--	Alerts can only be placed on a managed environment, or a resource in a managed environment.
+-	Alerts can only be placed on a managed environment.
 -	You must be using the [new and improved Power Platform admin center](../new-admin-center.md).
 
 ## Create an alert 
