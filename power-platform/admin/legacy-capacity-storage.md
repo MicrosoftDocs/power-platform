@@ -253,7 +253,7 @@ Notifications for capacity approaching storage limits are triggered when any of 
 
 These notifications are sent out to tenant admins on a weekly basis. 
 
-At this time, there's no option for the tenants to opt-out of these notifications or delegate these notifications to someone else. 
+At this time, there's no option for the tenants to opt-out of these notifications or delegate these notifications to someone else.
 
 All tenant admins for a tenant automatically receive these notifications.
 
