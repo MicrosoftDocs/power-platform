@@ -11,14 +11,19 @@ ms.reviewer: sericks
 contributors:
   - DanaMartens
   - IanCeicys
-  - meesposi 
+  - meesposi
+  - sericks007
+  - syalandur24
+ms.contributors:
+  - ceian
+  - dmartens
+  - sericks
+  - syalandur 
 search.audienceType: 
   - admin
 ---
 
 # Free up storage space
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 You can reduce the amount of storage space used by removing or deleting information from Dynamics 365 apps, such as:
 
@@ -79,7 +84,37 @@ Use the following methods to free up storage for each of the capacity types.
 ### Method 3: Remove email attachments using Advanced Find  
   
 > [!WARNING]
-> If you delete this data, attachments are no longer available in customer engagement apps. However, if you saved attachments in [!INCLUDE[pn_MS_Outlook_Full](../includes/pn-ms-outlook-full.md)], they're still there.  
+> If you delete this data, attachments are no longer available in customer engagement apps. However, if you saved attachments in [!INCLUDE[pn_MS_Outlook_Full](../includes/pn-ms-outlook-full.md)], they're still there.
+
+##### [New admin center](#tab/new)
+
+1. Sign in to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com).
+
+2. In the navigation pane, select **Manage**.
+
+3. In the **Manage** pane, select **Environments**.
+
+4. Select an environment from the list and then select **Open**.
+
+5. In the upper-right corner, select **Advanced Find** (![Advanced find button.](media/advanced-find-button2.png)).  
+  
+6. In the **Look for** list, select **Email Messages**.  
+  
+7. In the search criteria area, add criteria, for example:  
+  
+   **Attachments (Item)**  
+  
+   **File Size (Bytes)** – **Is Greater Than** - In the text box, type a byte value, such as 1,048,576 (binary for 1 MB).  
+
+   :::image type="content" source="media/free-storage-method3a.png" alt-text="Screenshot that shows where you can find attachments in an Advanced Find." lightbox="media/free-storage-method3a.png":::
+
+8. Choose **Results**.  
+  
+9. You now have a list of email messages that have attachments that are larger than 'X' bytes. Review the emails and delete the attachments as needed.  
+  
+   :::image type="content" source="media/free-storage-method3b.png" alt-text="Screenshot that shows the selected emails list based on a search criteria." lightbox="media/free-storage-method3b.png" :::
+
+##### [Classic admin center](#tab/classic) 
 
 1. Sign in to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com).
 
@@ -103,10 +138,62 @@ Use the following methods to free up storage for each of the capacity types.
   
    :::image type="content" source="media/free-storage-method3b.png" alt-text="Screenshot that shows the selected emails list based on a search criteria." lightbox="media/free-storage-method3b.png" :::
 
+---
+
 ### Method 4: Remove email messages with attachments using a bulk deletion job  
   
 > [!WARNING]
-> If you delete this data, attachments are no longer available in customer engagement apps. However, if you saved attachments in [!INCLUDE[pn_MS_Outlook_Full](../includes/pn-ms-outlook-full.md)], they're still there.  
+> If you delete this data, attachments are no longer available in customer engagement apps. However, if you saved attachments in [!INCLUDE[pn_MS_Outlook_Full](../includes/pn-ms-outlook-full.md)], they're still there.
+
+##### [New admin center](#tab/new)
+
+1. Sign in to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com).
+
+2. In the navigation pane, select **Manage**.
+
+3. In the **Manage** pane, select **Environments**, and then select an environment.
+
+4. Select **Settings** > **Data management** > **Bulk deletion**. In the menu bar, select **New**. The Bulk Deletion Wizard opens.  
+
+   :::image type="content" source="media/free-storage-method9a-1.png" alt-text="Screenshot that shows where the New button is located in an environment." lightbox="media/free-storage-method9a-1.png":::
+  
+5. Choose **Next**.  
+  
+6. In the **Look for** list, select **Email Messages**.  
+  
+7. In the search criteria area, add similar criteria, for example:  
+  
+   **Status Reason** – **Equals** – **Sent** or **Received**
+  
+   **Actual End** – **Older Than X Months** – 1  
+  
+   **Attachments (Item)**  
+  
+   **File Size (Bytes)** – **Is Greater Than** – In the text box, type a byte value, such as 1,048,576 (binary for 1 MB).  
+  
+8. Group the first two criteria rows:  
+  
+   1. Choose the arrow next to each criteria row, and then choose **Select Row**.  
+  
+   1. With both rows selected, choose **Group AND**.  
+  
+      :::image type="content" source="media/free-storage-method4a.png" alt-text="Screenshot that shows the `Group AND` and `Group OR` options in the Define Search Criteria window." lightbox="media/free-storage-method4a.png" :::
+
+9. Choose **Next**.  
+  
+10. In the **Name** text box, type a name for the bulk deletion job.  
+  
+11. Select a date and time for the job start time; preferably a time when users aren't in customer engagement apps.  
+  
+12. Select the **Run this job after every** check box, and then in the **days** list, select the frequency you want the job to run.
+
+   :::image type="content" source="media/free-storage-method6b.png" alt-text="Screenshot that shows where the Run this job every check box is located." lightbox="media/free-storage-method6b.png":::
+  
+13. If you want a notification e-mail sent, select the **Send an email to me (myemail@domain.com) when this job is finished** check box.  
+
+14. Choose **Next**, review the bulk deletion job, and then choose **Submit** to create the recurring job.  
+
+##### [Classic admin center](#tab/classic) 
   
 1. In the [Power Platform Admin center](https://admin.powerplatform.microsoft.com), select an environment.
 
@@ -148,7 +235,9 @@ Use the following methods to free up storage for each of the capacity types.
   
 1. If you want a notification e-mail sent, select the **Send an email to me (myemail@domain.com) when this job is finished** check box.  
 
-1. Choose **Next**, review the bulk deletion job, and then choose **Submit** to create the recurring job.  
+1. Choose **Next**, review the bulk deletion job, and then choose **Submit** to create the recurring job.
+
+---
   
 ### Method 5: Remove notes with attachments using Advanced Find  
   
