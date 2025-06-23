@@ -55,9 +55,6 @@ The Power Platform admin center provides the following capabilities.
 
 ---
 
-> [!Note]
-> Power BI administrators use the [Power BI admin portal](https://app.powerbi.com) to manage a Power BI tenant including the configuration of governance policies, usage monitoring, and provisioning of licenses, capacities, and organizational resources. Learn more about Power BI admin portal in [What is Power BI administration?](/power-bi/service-admin-administering-power-bi-in-your-organization).
-
 ## Understand the user interface (UI)
 [The new and improved Power Platform admin center](new-admin-center.md) is designed with an outcome-driven approach, where all functionality is intuitively organized in pages based on administrative tasks. The new admin center isn't just task-oriented, it also helps you achieve specific outcomes and goals.
 
@@ -104,8 +101,6 @@ Select the gear icon to perform tasks such as managing tenant settings, view you
 Complete administrative functions on each Power Platform page.
 
 ---
-
-
 
 ### Related content
 [Training: Microsoft Power Platform Fundamentals](/training/paths/power-plat-fundamentals)
