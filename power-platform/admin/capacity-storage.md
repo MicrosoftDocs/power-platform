@@ -444,9 +444,9 @@ This tenant is 10 GB over in log usage but has 20 GB available in database capac
 
 You can always [free up storage](free-storage-space.md), [delete unwanted environments](delete-environment.md), or buy more capacity to be compliant with storage usage. To learn more about capacity add-ons, go to the [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/p/?LinkId=866544) or the ["Add-ons" section of the Power Apps and Power Automate Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
 
-**Request**: Need the proper link because this fwlink is not working.
+**Request**: Need the proper link because this fwlink is not working. </br>
 
-You can work through your organization's standard procurement process to purchase [capacity add-ons](capacity-add-on.md).
+</br>You can work through your organization's standard procurement process to purchase [capacity add-ons](capacity-add-on.md).
 
 ## FAQ
 
