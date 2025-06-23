@@ -58,7 +58,7 @@ Most of the pages from the classic admin center are available in the new one, ei
 | 22          | Policies > Tenant isolation | Security > Settings > Identity and access > Tenant isolation |     |
 | 23          | Policies > Customer Lockbox | Security > Settings > Compliance > Customer Lockbox |    |
 | 24          | Policies > Enterprise policies | Security > Settings > Data and privacy > Enterprise policies |     |
-| 25          | Admin Centers        | Admin Centers   |
+| 25          | Admin Centers        | Admin Centers   |  |
 
 ## What else is included in the new admin center?
 
