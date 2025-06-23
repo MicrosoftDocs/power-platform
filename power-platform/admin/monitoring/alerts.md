@@ -66,7 +66,7 @@ If you selected to receive email notifications when any resource triggers an ale
 In the email notification, select **Go to Alert** to open a Power Platform page listing the triggered alerts, where you can see information on the triggered alert and what resources triggered it. When you select any of the resources in the triggered alert, a pane is displayed that shows timeseries information for all applicable metrics for that resource, and recommendations for how to improve the metric if it’s suboptimal.
 
 ### Notes to be aware of
--	You can have 25 alerts turned on at a time. However, you can create an unlimited amount of alerts. Consider deleting or turning off any existing alert if you’ve reached the maximum.
+-	You can have 25 alerts rules turned on at one time. However, you can create an unlimited amount of alert rules. Consider deleting or turning off any existing alert rule if you’ve reached the maximum.
 -	Alerts are evaluated after new metrics are produced. Currently, all metrics are 24-hour aggregates, which means an alert rule in the Monitor area is evaluated every 24 hours after the newest 24 hour aggregates are produced. The alert rule does an on-demand evaluation upon its creation. 
 
 
