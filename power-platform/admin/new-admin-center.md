@@ -28,8 +28,8 @@ All customers can access the new Power Platform admin center. It's turned on by 
 Learn more about the new admin center using the following sections in this article:
 
 - [Where are pages from the classic admin center in the new one?](#where-are-pages-from-the-classic-admin-center-in-the-new-one)
-- [What does the new admin center look like?](#what-does-the-new-admin-center-look-like)
 - [What else is included in the new admin center?](#what-else-is-included-in-the-new-admin-center)
+- [Watch a video about the newe admin center](#watch-a-video-about-the-new-admin-center)
 
 ## Where are pages from the classic admin center in the new one?  
 
@@ -63,12 +63,12 @@ Most of the pages from the classic admin center are available in the new one, ei
 | 24          | Policies > Enterprise policies | Security > Settings > Data and privacy > Enterprise policies |[About the Power Apps Developer Plan](../developer/plan.md)    |
 | 25          | Admin Centers        | Admin Centers   | [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home#/homepage)<br>[Microsoft Entra admin center](https://entra.microsoft.com/#home)<br>[Power BI admin portal](https://dxt.powerbi.com/admin-portal/capacities?experience=power-bi)|
 
-## What does the new admin center look like?
-
- > [!VIDEO 1d442a39-f7ce-438f-a53e-b7c23ce33e25]
-
 ## What else is included in the new admin center?
 
 In addition to reorganized pages based on admin tasks, we're introducing a new [*monitoring pages* experience](monitoring/monitoring-overview.md). Monitoring pages allow admins and makers to track performance statistics in their tenant, helping them identify app accessibility problems or slow-loading Power Pages sites.  
 
 These new experiences help you measure and improve the operational health of your organizational resources such as apps. They provide insights into overall operational health in a tenant or specific environments. Metrics are derived from aggregated event logs of runtime activities, with recommendations based on these logs or static analysis of resource properties. Event logs used for metric calculations are available for review and download for further analysis.
+
+## Watch a video about the new admin center
+
+ > [!VIDEO 1d442a39-f7ce-438f-a53e-b7c23ce33e25]
