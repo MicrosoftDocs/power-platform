@@ -17,7 +17,8 @@ Learn more about the Power Platform admin center in the following sections:
 
 - [The user interface of the new admin center](#the-user-interface-of-the-new-admin-center)
 - [The user interface of the classic admin center](#the-user-interface-of-the-classic-admin-center)
-- [Manage your environments and settings](#manage-your-environments-and-settings)
+- [Feature areas of the new admin center](#feature-areas-of-the-new-admin-center)
+- [Feature areas of the classic admin center](#feature-areas-of-the-classic-admin-center)
 
 ## The user interface of the new admin center
 [The new and improved Power Platform admin center](new-admin-center.md) is designed with an outcome-driven approach, where all functionality is intuitively organized in pages based on administrative tasks. The new admin center isn't just task-oriented, it also helps you achieve specific outcomes and goals.
@@ -63,11 +64,9 @@ Complete administrative functions on each Power Platform page.
 
 ---
 
-## Manage your environments and settings
+## Feature areas of the new admin center
 
-The Power Platform admin center provides the following capabilities.
-
-### Capabilities in the new admin center
+The new Power Platform admin center provides the following capabilities.
 
 |Feature area  |Description  | Learn more |
 |---------|---------|----------------|
@@ -80,7 +79,9 @@ The Power Platform admin center provides the following capabilities.
 | Copilot | Access educational resources, track usage, and access governance controls about Copilot features. | [Manage Copilot](copilot/copilot-hub.md) |
 |Support     | <p>Get a list of self-help solutions or create a support ticket for technical support.</p><p>**Note**: Although you administer Power BI using the Power BI admin portal, you request support for Power BI through support in the Power Platform admin center.</p> | [Get Help + Support](./get-help-support.md)  |
 
-### Capabilities in the new classic center
+## Feature areas of the classic admin center
+
+The classic Power Platform admin center provides the following capabilities.
 
 |Feature area  |Description  | Learn more |
 |---------|---------|----------------|
