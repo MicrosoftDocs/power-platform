@@ -27,9 +27,9 @@ All customers can access the new Power Platform admin center. It's turned on by 
 
 Learn more about the new admin center using the following sections in this article:
 
-- [Where are pages from the classic admin center in the new one?](
-- [What does the new admin center look like?](
-- [What else is included in the new admin center?](
+- [Where are pages from the classic admin center in the new one?](#where-are-pages-from-the-classic-admin-center-in-the-new-one)
+- [What does the new admin center look like?](#what-does-the-new-admin-center-look-like)
+- [What else is included in the new admin center?](#what-else-is-included-in-the-new-admin-center)
 
 ## Where are pages from the classic admin center in the new one?  
 
