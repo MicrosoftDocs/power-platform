@@ -52,11 +52,11 @@ Most of the pages from the classic admin center are available in the new one, ei
 | 17          | Resources > Power Pages sites | Manage > Products > Power Pages sites<br><br>**Note:** The security data of pages will be moved to Security > Products > Power Pages. | [What is Power Pages?](/power-pages/introduction)  |
 | 18          | Help + Support       | Support         | [Get Help + Support](get-help-support.md) |
 | 19          | Data integration     | Manage > Data > Data integration  | [Integrate data into Microsoft Dataverse](data-integrator.md) |
-| 20          | Data (Preview)       | Manage > Data > Data (Preview) |    |
+| 20          | Data (Preview)       | Manage > Data > Data (Preview) |  [On-premises data gateway management](onpremises-data-gateway-management.md) |
 | 21          | Policies > Data policies | Security > Settings > Data and privacy > Data policies | [Data loss prevention (DLP) policies](wp-data-loss-prevention.md)    |
 | 22          | Policies > Tenant isolation | Security > Settings > Identity and access > Tenant isolation | [Cross-tenant inbound and outbound restrictions](cross-tenant-restrictions.md)   |
 | 23          | Policies > Customer Lockbox | Security > Settings > Compliance > Customer Lockbox | [Securely access customer data using Customer Lockbox in Power Platform and Dynamics 365](about-lockbox.md)   |
-| 24          | Policies > Enterprise policies | Security > Settings > Data and privacy > Enterprise policies |     |
+| 24          | Policies > Enterprise policies | Security > Settings > Data and privacy > Enterprise policies |[About the Power Apps Developer Plan](../developer/plan.md)    |
 | 25          | Admin Centers        | Admin Centers   | [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home#/homepage)<br>[Microsoft Entra admin center](https://entra.microsoft.com/#home)<br>[Power BI admin portal](https://dxt.powerbi.com/admin-portal/capacities?experience=power-bi)|
 
 ## What else is included in the new admin center?
