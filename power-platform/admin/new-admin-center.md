@@ -21,11 +21,15 @@ search.audienceType:
 
 We're happy to announce the general availability of the new and improved Power Platform admin center! We designed the new admin center to be easier to use, with task-oriented navigation that helps you achieve specific outcomes faster.
 
- > [!VIDEO 1d442a39-f7ce-438f-a53e-b7c23ce33e25]
-
 The new Power Platform admin center is designed with an outcome-driven approach, where all functionality is intuitively organized in pages based on administrative tasks. The new admin center isn't just task-oriented, it also helps you achieve specific outcomes and goals. The design focuses on providing an optimal user experience, catering to a wide range of stakeholders with varying needs.
 
 All customers can access the new Power Platform admin center. It's turned on by default when you access the admin center. To revert to the classic admin center, turn off the **Try the new admin center** toggle in the upper-right corner of the admin center.
+
+Learn more about the new admin center using the following sections in this article:
+
+- [Where are pages from the classic admin center in the new one?](
+- [What does the new admin center look like?](
+- [What else is included in the new admin center?](
 
 ## Where are pages from the classic admin center in the new one?  
 
@@ -58,6 +62,10 @@ Most of the pages from the classic admin center are available in the new one, ei
 | 23          | Policies > Customer Lockbox | Security > Settings > Compliance > Customer Lockbox | [Securely access customer data using Customer Lockbox in Power Platform and Dynamics 365](about-lockbox.md)   |
 | 24          | Policies > Enterprise policies | Security > Settings > Data and privacy > Enterprise policies |[About the Power Apps Developer Plan](../developer/plan.md)    |
 | 25          | Admin Centers        | Admin Centers   | [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home#/homepage)<br>[Microsoft Entra admin center](https://entra.microsoft.com/#home)<br>[Power BI admin portal](https://dxt.powerbi.com/admin-portal/capacities?experience=power-bi)|
+
+## What does the new admin center look like?
+
+ > [!VIDEO 1d442a39-f7ce-438f-a53e-b7c23ce33e25]
 
 ## What else is included in the new admin center?
 
