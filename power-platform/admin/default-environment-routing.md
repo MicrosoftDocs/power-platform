@@ -3,7 +3,7 @@ title: Environment routing
 description: Learn how to use the environment routing governance feature. 
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 06/19/2025
+ms.date: 06/24/2025
 author: akadrno
 ms.custom: NewPPAC
 ms.author: kauguillard 
@@ -60,7 +60,7 @@ Environment routing is a tenant-level admin setting. Understand that:
 
 - By default, all developer environments created through environment routing are managed.
 
-## Turn on the environment routing in the admin center
+## Turn on environment routing in the admin center
 
 The **Environment routing** setting is turned off by default and must be turned on using the Power Platform admin center&mdash;both the new admin center or the classic admin center&mdash.
 
