@@ -366,7 +366,7 @@ You can use a manual or programmatic processes to approve a mailbox.
 
 ##### Approve a mailbox programmatically
   
-Email addresses can't be approved using plug-ins or workflows. External applications can programmatically invoke email address approval by including the _emailrouteraccessapproval_ attribute in the SDK request, provided the record is not already approved and the caller meets the required authorization criteria.
+Email addresses can't be approved using plug-ins or workflows. External applications can programmatically invoke email address approval by including the _emailrouteraccessapproval_ attribute in the SDK request, provided the record isn't already approved and the caller meets the required authorization criteria.
    
 ### Remove the requirement to approve mailboxes
 
