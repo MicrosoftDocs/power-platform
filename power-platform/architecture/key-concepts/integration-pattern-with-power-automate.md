@@ -23,37 +23,28 @@ ms.custom:
 
 # Integration pattern using Power Automate cloud flows
 
-This whitepaper explores various integration patterns using Power Automate cloud flows, focusing on considerations for building effective integrations for each pattern, the challenges faced, and the decision making process for achieving the desired goals.
+This article explores different integration patterns using Power Automate cloud flows. It covers considerations for building effective integrations for each pattern, the challenges you face, and the decision-making process for achieving your goals.
 
-There’s no one approach to build integrations that is always superior to all others, much like there are many ways to build a house, the approach depends on the requirements set forth. With that in mind, this
-whitepaper will be guided by posing a hypothetical problem and guide you through the process of identifying the appropriate solution.
+There isn’t one approach to building integrations that’s always best. Like building a house, the approach depends on your requirements. This article uses a hypothetical problem to guide you through finding the right solution.
 
-The primary audience would be enterprise architects looking to design new integrations or augment existing ones with modern low-code solutions. There will be limited focus on technical solutions, however
-links to relevant documentation will be provided where applicable.
+The primary audience is enterprise architects who want to design new integrations or enhance existing ones with modern low-code solutions. This article focuses less on technical solutions, but provides links to relevant documentation where needed.
 
 ## Introduction
 
-Integration is a critical aspect of modern business processes, enabling seamless data flow and automation across different systems. This paper discusses the importance of choosing the right integration patterns and the factors to consider when designing integrations with Power Automate.
+Integration is a critical part of modern business processes. It lets data and automation flow across different systems. This article explains how to choose the right integration patterns and what to consider when designing integrations with Power Automate.
 
-We begin by analyzing the key considerations for any integration and what they could mean for us when building an architecture. We’ll then proceed to dissect common integration patterns, how they work in Power Automate, and real-world examples where such patterns can be applied.
+First, learn about the key considerations for any integration and what they mean when you build an architecture. Then, explore common integration patterns, how they work in Power Automate, and see real-world examples where you can use these patterns.
 
-Finally, we'll look beyond Power Automate to understand what can be
-done in case the tools that we have or not enough to do the job right.
+Finally, learn what to do if Power Automate doesn't have the tools you need.
 
-By the end of this white paper, you will learn:
+By the end of this article, you learn:
 
-- How to deconstruct the requirements into the key components of an integration.
-
-- Who are the stakeholders to be included in the decision making process?
-
-- How to decide which pattern would be best for your goals.
-
-- Balancing scalability and performance
-
-- Leveraging the strengths of cloud flows and addressing the
-  shortcomings
-
-- General technics for robust integrations
+- How to break requirements into the key parts of an integration
+- Who to include as stakeholders in the decision making process
+- How to choose the best pattern for your goals
+- How to balance scalability and performance
+- How to use the strengths of cloud flows and address their shortcomings
+- Techniques for robust integrations
 
 ## The requirements of an integration
 
@@ -217,7 +208,7 @@ initial requirements, while infrastructure architects and security
 officers ensure compliance and security. System administrators help
 evaluate the capabilities of each system involved.
 
-#### Let's review an example 
+#### Example 
   
 The business requirement is to create an integration process that keeps case information in sync between an external customer and internal service engineers who work on cases. Customers can add comments to a case through a website, while engineers can add case information through a Power App.
 
@@ -316,7 +307,7 @@ This list is by no means definitive, however there’s a good chance that a sign
 Let’s start with the simplest pattern, a user driven action, or Instant as it’s known in the Power Platform world. This pattern perhaps the most intuitive one because it’s how most people interact
 with devices. You press a button and expect a predefined series of actions to happen in response.
 
-#### Let’s review an example
+#### Example
 
 You’re building a Power App for product managers, which will allow users
 to review customer feedback for products and create an action plan to
@@ -361,7 +352,7 @@ there not knowing if something is happening or not.
 Architects love event-driven architectures because things seem to just fall into place like magic. It’s so intuitive because that’s similar to
 how our brain works. There’s two two sides to this of course, much like a research on nuclear fission can end up with you reading a wikipedia article about the ford nucleon, event-driven patterns can get you places you never intended to go.
 
-#### Let’s review an example
+#### Example
 
 The customer service department wants to send automatic updates to customers whenever a representative makes updates to the case. Not every update needs to go to the customer, only when a note is added or the status of the case has changed.
 
@@ -423,7 +414,7 @@ take all the data from all systems and use it as the foundation to build
 different kinds of reports. For operational purposes the point is to
 take only the data that is needed to complete the business process.
 
-#### Let's review an example
+#### Example
 
 A company has three legacy systems to manage different parts of the business. SAP is used for orders and accounts receivables, Oracle is
 used for product inventory management, and IBM is used for content management where customer related documents are stored.
@@ -473,7 +464,7 @@ development and maintenance costs.
 
 This pattern is essentially the combination of all the previous patterns you talked about before.
 
-#### Let's review an example
+#### Example
 
 Continuing with the previous story, you have SAP handling orders and account receivables, Oracle handling product inventory, IBM is used to
 storing internal financial documentation, Dataverse is used to run apps for sales customer service and product management.
@@ -525,7 +516,7 @@ Depending on the country you live and the data you store, you’ll need to compl
 located. In these cases organizations will just deploy a local copy the database and apps with a synchronization process for data that can be copied
 elsewhere.
 
-#### Let’s review an example
+#### Example
 
 A medical devices company operates across several countries in Europe, in cooperation with local medical institutions. The laws of each country
 are clear about medical data, it must be stored within the borders of each country.
@@ -556,45 +547,41 @@ transfer speed to be what they are.
 
 ## Beyond cloud flows
 
-Several conversations with customers included questions about which tool should be used for an integration. Should it be Power Automate, Data Factory, Service Bus, or custom code in Azure Functions?
+Customers often ask which tool to use for integration: Power Automate, Data Factory, Service Bus, or custom code in Azure Functions.
 
-And the answer is always this:  
-Your default choice is always Power Automate and you’ll need to convince me why it’s not the case.
+The default choice is Power Automate. You need a strong reason to choose something else.
 
-If you’re looking at all the components of an integration you talked about in this paper, you
-understand that an integration is initial investment and ongoing maintenance costs.
+Integration involves both an initial investment and ongoing maintenance costs.
 
-Those ongoing costs can be, and historically have been, high. Power Automate is second to none in cost effectiveness both to build and maintain.
+Ongoing costs can be high. Power Automate is cost effective to build and maintain.
 
-If you decide to just write everything in custom code (that’s how parents did it), then you’ll need to justify this decision to however approves the budget. This is the reason why this question arises. Can you justify paying more for what you’re going to do?
+If you choose to write everything in custom code, you need to justify this decision to whoever approves the budget. The question is whether you can justify paying more for the same outcome.
 
-#### Let’s review an example 
+#### Example
 
-An online banking service would like to improve their lending process by being able to qualify people for loans in seconds while they fill in an
-online form or talk to a representative over the phone.
+An online banking service wants to improve its lending process by qualifying people for loans in seconds while they fill out an online form or talk to a representative.
 
-The qualification process is complex, requiring getting information from several systems and perform calculations for a final risk score. Following an evaluation, the complexity of the calculations was deemed too slow or impossible using cloud flows.
+The qualification process is complex. It requires getting information from several systems and performing calculations for a final risk score. After evaluation, the calculations are too slow or not possible using cloud flows.
 
-You could say that the solution is in the problem statement itself. They looked into cloud flow and it’s not possible. Upon closer inspection, what is impossible is the calculation, not gathering the data across different systems. So in this case the choice doesn’t have to be cloud flows or custom code, it’s both.
+The solution is in the problem statement. Cloud flows can't handle the calculation, but they can gather data across different systems. In this case, use both cloud flows and custom code.
 
-You can use Power Automate’s strength by collecting the initial data you need using connectors, which are likely available out of the box. Writing these connections as custom code won't address the limiting factor but will most definitely introduce higher costs.
+Use Power Automate to collect initial data with built-in connectors. Writing custom code for these connections doesn't solve the main issue and increases costs.
 
-The complex calculations can be encapsulated in custom code running as an Azure Function, which can be independently scaled, or even a custom connector for Power Automate.
+Encapsulate complex calculations in custom code running as an Azure Function, which can scale independently, or use a custom connector for Power Automate.
 
-The diagram below shows an example of the tools one might use for integrations and how it affects the scalability and costs:
+The following diagram shows example tools for integration and how they affect scalability and costs:
 
 :::image type="content" source="media/integration-pattern-with-power-automate/integration.png" alt-text="Screenshot of a diagram showing integration tools and scalability options in Power Automate." lightbox="media/integration-pattern-with-power-automate/integration.png":::
 
-However, you shouldn't think of it as one or another. You take the best
-parts of each to get the job done in the most efficient way possible.
+Don't think of it as one or the other. Use the best parts of each tool to get the job done efficiently.
 
 ## Final thoughts
 
-This paper is meant to be a guide for architects looking to leverage Power Automate for integration solutions. It's based on documented best practices and years of experience in the role. The critical considerations when building integrations and the various patterns that can be utilized to achieve this goal were highlighted.
+This article is a guide for architects who want to use Power Automate for integration solutions. It's based on documented best practices and years of experience in the role. This article highlights the critical considerations when building integrations and the different patterns you can use to achieve this goal.
 
-It isn't an exhaustive guide for Power Automate, nor it’s an instruction on what to do, the goal was to establish a thinking framework that would help you solve problems.
+This article isn't an exhaustive guide for Power Automate, and it isn't an instruction on what to do. The goal is to establish a thinking framework that helps you solve problems.
 
-You are encouraged to learn more about the practical aspects of building cloud flows, especially if you’re aspiring to be a developer as well.
+Learn more about the practical aspects of building cloud flows, especially if you want to be a developer too.
 
 ## Related resources
 
