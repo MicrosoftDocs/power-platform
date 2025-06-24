@@ -147,7 +147,7 @@ After modifying and enabling some of the plug-ins, the developer sandbox environ
    > [!div class="mx-imgBorder"]
    > ![Select the desired copy over level.](media/copy-environment1.png "Select the desired copy over level.")
 
-5. If you selected **Everything** to copy, select whether to copy over audit logs. See the [Copying audit logs](#copying-audit-logs) section.
+5. If you selected **Everything** to copy, select whether to copy over audit logs. See the [How to copy audit logs](#how-to-copy-audit-logs) section.
 
 6. Select a target environment.
   
