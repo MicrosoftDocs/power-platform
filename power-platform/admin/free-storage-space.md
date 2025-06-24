@@ -401,14 +401,14 @@ Microsoft is migrating audit logs to a new storage location. Environments whose 
 
 In the new Power Platform Admin Center, the Auditing card for an environment looks as shown in the following image:
 
-:::image type="content" source="media/audit-log-new-storage-sign2.png" alt-text="Screenshot that shows where an Auditing tile appears for new storage." lightbox="media/audit-log-new-storage-sign2.png":::
+:::image type="content" source="media/audit-log-new-storage-sign-new.png" alt-text="Screenshot that shows where an Auditing tile appears for new storage in the new admin center." lightbox="media/audit-log-new-storage-sign-new.png":::
 
 ### Method 10: Delete audit logs - legacy process
 
  When you enable auditing, customer engagement apps create audit logs to store the audit history of the records. You can delete audit logs to free space when they're no longer needed.  
   
 > [!WARNING]
-> When you delete an audit log, you can no longer view the audit history for the period covered by that audit log. 
+> When you delete an audit log, you can no longer view the audit history for the period covered by that audit log.
 
 ##### [New admin center](#tab/new)
 
@@ -525,7 +525,7 @@ To monitor the status of audit delete jobs, see the next section.
 
 4. Select **Settings** > **Data management** > **Bulk deletion**.
 
-   :::image type="content" source="media/free-storage-method8a-1-new.png" alt-text="Screenshot that shows where the Bulk deletion option is located in an environment." lightbox="media/free-storage-method8a-1-new.png":::
+   :::image type="content" source="media/free-storage-method8a-2.png" alt-text="Screenshot that shows where the Bulk deletion option is located in an environment." lightbox="media/free-storage-method8a-2.png":::
 
 6. Review the system job and the **Status Reason** column for details about the status of your job.
 
@@ -735,7 +735,7 @@ For example, if you have 100 duplicate records, every time that you run a duplic
 
 4. Select **Settings** > **Data management** > **Duplicate Detection Jobs**.  
 
-   :::image type="content" source="media/free-storage-method7a-1-new.png" alt-text="Screenshot that shows where the Duplicate detection jobs option is located in the Settings of an environment." lightbox="media/free-storage-method7a-1-new.png":::
+   :::image type="content" source="media/free-storage-method7a-2.png" alt-text="Screenshot that shows where the Duplicate detection jobs option is located in the Settings of an environment." lightbox="media/free-storage-method7a-2.png":::
   
 5. Select the duplicate detection job instances you want to delete and then choose **Delete** (X).  
   
@@ -774,15 +774,15 @@ For example, if you have 100 duplicate records, every time that you run a duplic
 
 3. In the **Manage** pane, select **Environments**, and then select an environment from the list.
 
-2.	Select **Settings** > **Data management** > **Bulk deletion**. In the menu bar, select **New**. The Bulk Deletion Wizard opens.  
+4.	Select **Settings** > **Data management** > **Bulk deletion**. In the menu bar, select **New**. The Bulk Deletion Wizard opens.  
 
-   :::image type="content" source="media/free-storage-method8a-1-new.png" alt-text="Screenshot that shows where the Bulk deletion option is located in the Settings of an environment." lightbox="media/free-storage-method8a-1-new.png":::
+   :::image type="content" source="media/free-storage-method8a-2.png" alt-text="Screenshot that shows where the Bulk deletion option is located in the Settings of an environment." lightbox="media/free-storage-method8a-2.png":::
   
-3. Choose **Next**.  
+5. Choose **Next**.  
   
-4. In the **Look for** list, select **System Jobs**.  
+6. In the **Look for** list, select **System Jobs**.  
   
-5. In the search criteria area, add similar criteria, for example:  
+7. In the search criteria area, add similar criteria, for example:  
   
    **System Job Type** – **Equals** – **Import**  
   
@@ -790,7 +790,7 @@ For example, if you have 100 duplicate records, every time that you run a duplic
   
    **Completed On** – **Older Than X Months** – 1  
   
-6. Group the three criteria rows:  
+8. Group the three criteria rows:  
   
    1. Choose the arrow next to each criteria row, and then choose **Select Row**.  
   
@@ -798,19 +798,19 @@ For example, if you have 100 duplicate records, every time that you run a duplic
 
       :::image type="content" source="media/free-storage-method8a.png" alt-text="Screenshot that shows where the Group AND option is located in the Define Search Criteria window. Method 8." lightbox="media/free-storage-method8a.png":::
 
-7. Choose **Next**.  
+9. Choose **Next**.  
   
-8. In the **Name** text box, type a name for the bulk deletion job.  
+10. In the **Name** text box, type a name for the bulk deletion job.  
   
-9. Select a date and time for the job start time; preferably a time when users aren't in customer engagement apps.  
+11. Select a date and time for the job start time; preferably a time when users aren't in customer engagement apps.  
   
-10. Select the **Run this job after every** check box, and then in the **days** list, select the frequency you want the job to run.  
+12. Select the **Run this job after every** check box, and then in the **days** list, select the frequency you want the job to run.  
   
     :::image type="content" source="media/free-storage-method6b.png" alt-text="Screenshot that shows where the Run this job every check box is located." lightbox="media/free-storage-method6b.png":::
 
-11. If you want a notification e-mail sent, select the **Send an email to me (myemail@domain.com) when this job is finished** check box.  
+13. If you want a notification e-mail sent, select the **Send an email to me (myemail@domain.com) when this job is finished** check box.  
 
-12. Choose **Next**, review the bulk deletion job, and then choose **Submit** to create the recurring job.    
+14. Choose **Next**, review the bulk deletion job, and then choose **Submit** to create the recurring job.
 
 ##### [Classic admin center](#tab/classic)
   
