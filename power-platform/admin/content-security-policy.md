@@ -7,12 +7,12 @@ author: JesseParsons
 ms.subservice: admin
 ms.custom: NewPPAC
 ms.author: jeparson
-ms.reviewer: sericks
-ms.custom: "admin-security"
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 contributors:
 - ZinanZhang
+- sericks
 ---
 # Content security policy
 
