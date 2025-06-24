@@ -3,7 +3,7 @@ title: Notifications for Business & Industry Copilot services
 description: Learn about the different ways that you can receive notifications for Business & Industry Copilot services. 
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 06/18/2025
+ms.date: 06/24/2025
 ms.subservice: admin
 ms.author: kacortez
 author: kacortez
@@ -18,7 +18,7 @@ search.audienceType:
 Microsoft regularly sends communications about upcoming changes, including new and changed features, planned maintenance, or other important announcements. These communications primarily go through the Microsoft 365 Service health dashboard and Message center. Occasionally, we send direct email communications to admins.
 
 ## Message center
-Admins can use the Microsoft 365 [Message center](/office365/admin/manage/message-center?view=o365-worldwide&preserve-view=true) to keep track of upcoming changes, including new and changed features, planned maintenance, or other important announcements. Admins can set [email preferences](https://learn.microsoft.com/en-us/microsoft-365/admin/manage/message-center?view=o365-worldwide&preserve-view=true#preferences) for Message center posts.
+Admins can use the Microsoft 365 [Message center](/office365/admin/manage/message-center?view=o365-worldwide&preserve-view=true) to keep track of upcoming changes, including new and changed features, planned maintenance, or other important announcements. Admins can set [email preferences](/microsoft-365/admin/manage/message-center?view=o365-worldwide&preserve-view=true#preferences) for Message center posts.
 
 ### Prerequisites
 Before you begin, be sure that you have sufficient permissions. Most users who have been assigned any admin role in Microsoft 365 can view Message center posts. Here's [a list](/microsoft-365/admin/manage/message-center?view=o365-worldwide&preserve-view=true#admin-roles-that-dont-have-access-to-the-message-center) of admin roles that **don't** have access to the Message center. The **Message center reader role** can be assigned to users who should be able to read and share Message center posts without having any other admin privileges.
@@ -36,7 +36,7 @@ Before you begin, be sure that you have sufficient permissions. Most users who h
 
 ## Service health dashboard
 
-The [Service health dashboard](/office365/enterprise/view-service-health) shows the health status of your Microsoft cloud services. Learn how to open the Service health dashboard in [Microsoft 365 admin center](https://learn.microsoft.com/en-us/power-platform/admin/check-online-service-health#view-service-health-information-in-the-microsoft-365-admin-center).
+The [Service health dashboard](/office365/enterprise/view-service-health) shows the health status of your Microsoft cloud services. Learn how to open the Service health dashboard in [Microsoft 365 admin center](check-online-service-health.md#view-service-health-information-in-the-microsoft-365-admin-center).
 
 Service health communications in the Microsoft 365 admin center are limited to specific admin roles. [Assign admin roles](/microsoft-365/admin/add-users/assign-admin-roles?view=o365-worldwide&preserve-view=true) that have permission to view service health, and review them regularly to stay current about the latest service health information.
 
