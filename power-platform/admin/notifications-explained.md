@@ -13,8 +13,6 @@ search.audienceType:
 ---
 # Notifications for Business & Industry Copilot services
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 Microsoft regularly sends communications about upcoming changes, including new and changed features, planned maintenance, or other important announcements. These communications primarily go through the Microsoft 365 Service health dashboard and Message center. Occasionally, we send direct email communications to admins.
 
 ## Message center
