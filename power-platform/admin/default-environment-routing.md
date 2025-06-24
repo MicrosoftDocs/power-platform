@@ -42,7 +42,7 @@ This capability builds on the original environment routing feature, which routed
 - Consistent policy enforcement across environments. 
 - Reduced risk of conflicts in shared or default environments.
 
-All routed environments are Managed Environments, meaning they inherit standardized policies like data retention, AI features, and application lifecyle management (ALM) settings defined by the admin through environment groups.
+All routed environments are Managed Environments, meaning they inherit standardized policies like data retention, AI features, and application lifecycle management (ALM) settings defined by the admin through environment groups.
 
 ## Prerequisites
 
@@ -54,9 +54,9 @@ Environment routing is a tenant-level admin setting. Understand that:
 
 - A personal developer environment is automatically created for new or existing makers (depending on the configured user type) when accessing a supported product's maker portal.
 
-- Routed makers will land into their existing developer environment if they already have a developer environment that they own.
+- Routed makers land in their existing developer environment if they already have a developer environment that they own.
 
-- Makers are assigned the admin role in their newly created developer environments.
+- Makers are assigned to the admin role in their newly created developer environments.
 
 - By default, all developer environments created through environment routing are managed.
 
@@ -71,7 +71,7 @@ The **Environment routing** setting is turned off by default and must be turned 
 1. In the **Manage** pane, select **Tenant settings**.   
 1. In the **Tenant settings** page, select **Environment routing**. The **Create and manage environment routing rules** pane is displayed.   
 1. In the **Turn on environment routing for** section, select the product portals for which you want to allow routing.      
-1. Click **New rule** to define a new rule. The **Create a new routing rule** pane appears. Do the following:
+1. Click **New rule** to define a new rule. The **Create a new routing rule** pane appears. Take the following action:
     1. In the **Name** field, enter a name for the rule.
     1. Apply the routing rule to **Everyone** or specific security groups.
 
@@ -84,7 +84,7 @@ The **Environment routing** setting is turned off by default and must be turned 
     When a maker accesses a portal, the system evaluates the rules in order and applies the first matching rule.
 
     - If a matching rule is found, the maker is routed to an existing or newly provisioned developer environment. 
-    - If no rule matches, or if environment routing is not turned on, the maker is routed to the default environment. 
+    - If no rule matches, or if environment routing isn't turned on, the maker is routed to the default environment. 
 
 1. Click **Save**.
 
@@ -107,7 +107,7 @@ The **Environment routing** setting is turned off by default and must be turned 
     When a maker accesses a portal, the system evaluates the rules in order and applies the first matching rule.
 
     - If a matching rule is found, the maker is routed to an existing or newly provisioned developer environment. 
-    - If no rule matches, or if environment routing is not turned on, the maker is routed to the default environment. 
+    - If no rule matches, or if environment routing isn't turned on, the maker is routed to the default environment. 
 
 1. Click **Save**.
 ---
