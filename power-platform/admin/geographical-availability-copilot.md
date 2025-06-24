@@ -4,7 +4,7 @@ description: Learn how to turn on data movement across regions for Copilots and 
 author: amchern
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 05/30/2025
+ms.date: 06/30/2025
 ms.subservice: admin
 ms.author: amchern
 ms.reviewer: sericks
@@ -20,6 +20,7 @@ contributors:
   - sericks007
   - prvenka
   - caitlinshaw1
+  - steph-kent-ms
 ms.custom:
   - NewPPAC
   - ai-gen-docs-bap
@@ -92,7 +93,7 @@ To turn on data movement across regions, Bing search, and Microsoft 365 services
 
     When the **Microsoft 365 services** feature is turned on, users can use features powered by Microsoft 365 services.
 
-    To learn more about how the **Microsoft 365 services** feature impacts Copilot Studio, go to [Manage activity data powered by Microsoft 365 services](/microsoft-copilot-studio/manage-activity-data-m365) and [Review agent activity](/microsoft-copilot-studio/authoring-review-activity). For information about data locations, go to [Data locations in Copilot Studio](/microsoft-copilot-studio/data-location).
+    To learn more about how the **Microsoft 365 services** feature affects Copilot Studio, go to [Manage activity data powered by Microsoft 365 services](/microsoft-copilot-studio/manage-activity-data-m365), [Review agent activity](/microsoft-copilot-studio/authoring-review-activity), and [View advanced analytics in Microsoft Viva Insights](/microsoft-copilot-studio/analytics-viva-insights). For information about data locations, go to [Data locations in Copilot Studio](/microsoft-copilot-studio/data-location).
 
     > [!NOTE]
     > If the **Move data across regions** checkbox is displayed in the **Generative AI features** pane, you must have it already selected in order to select the **Microsoft 365 services** checkbox.
@@ -126,7 +127,7 @@ To turn on data movement across regions, Bing search, and Microsoft 365 services
 
     When the **Microsoft 365 services** feature is turned on, users can use features powered by Microsoft 365 services.
 
-    To learn more about how the **Microsoft 365 services** feature impacts Copilot Studio, go to [Manage activity data powered by Microsoft 365 services](/microsoft-copilot-studio/manage-activity-data-m365) and [Review agent activity](/microsoft-copilot-studio/authoring-review-activity). For information about data locations, go to [Data locations in Copilot Studio](/microsoft-copilot-studio/data-location).
+    To learn more about how the **Microsoft 365 services** feature affects Copilot Studio, go to [Manage activity data powered by Microsoft 365 services](/microsoft-copilot-studio/manage-activity-data-m365), [Review agent activity](/microsoft-copilot-studio/authoring-review-activity), and [View advanced analytics in Microsoft Viva Insights](/microsoft-copilot-studio/analytics-viva-insights). For information about data locations, go to [Data locations in Copilot Studio](/microsoft-copilot-studio/data-location).
 
     > [!NOTE]
     > If the **Move data across regions** checkbox is displayed in the **Generative AI features** pane, you must have it already selected in order to select the **Microsoft 365 services** checkbox.
