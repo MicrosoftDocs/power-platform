@@ -88,10 +88,10 @@ To ensure your organization benefits from the complete suite of managed security
 
 As an admin, you can now view the percentage of environments in your tenant that are currently unmanaged. This new experience allows you to convert environments from unmanaged to managed at scale—with just a few clicks.
 
-1.	Select **Get started** to begin the conversion process. The **Get enhanced security features** pane appears.
-1.	Select environments from the **Recommended environments** tab, which prioritizes environments based on data volume. Alternatively, switch to the **All eligible environments** tab to manually select environments you want to convert.
-1.	Review and accept the terms and conditions.
-1.	Select **Turn on environment management** to complete the conversion.
+1. Select **Get started** to begin the conversion process. The **Get enhanced security features** pane appears.
+1. Select environments from the **Recommended environments** tab, which prioritizes environments based on data volume. Alternatively, switch to the **All eligible environments** tab to manually select environments you want to convert.
+1. Review and accept the terms and conditions.
+1. Select **Turn on environment management** to complete the conversion.
 
 If you prefer to turn on environment management later, select **Not now** to dismiss the prompt and revisit when ready.
 
