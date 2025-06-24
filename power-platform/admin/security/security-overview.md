@@ -90,7 +90,7 @@ To ensure your organization benefits from the complete suite of managed security
 
 As an admin, you can now view the percentage of environments in your tenant that are currently unmanaged. This new experience allows you to convert environments from unmanaged to managed at scale—with just a few clicks.
 
-1.	Select **Get started** to begin the conversion process. The **Get enhanced secrity features** pane appears.
+1.	Select **Get started** to begin the conversion process. The **Get enhanced security features** pane appears.
 1.	Select environments from the **Recommended environments** tab, which prioritizes environments based on data volume. Alternatively, switch to the **All eligible environments** tab to manually select environments you want to convert.
 1.	Review and accept the terms and conditions.
 1.	Select **Turn on environment management** to complete the conversion.
@@ -171,7 +171,7 @@ To make a recommendation active again, complete the following steps.
 ## Manage security settings at an environment group-level
 Managing Power Platform at scale presents challenges for IT teams overseeing numerous environments. To streamline security governance, administrators can configure security settings at the *environment group* level, ensuring uniform enforcement of policies across all environments within a group.
 
-Currently, security management at the environment group-level is available for **Sharing** features, with plans to extend support to additional security capabilities in the near future. This structured approach simplifies administration, enhances security, and optimizes large-scale environment management for both startups and enterprises.
+Currently, security management at the environment group-level is available for **Sharing** features, with plans to extend support to other security capabilities soon. This structured approach simplifies administration, enhances security, and optimizes large-scale environment management for both startups and enterprises.
 
 To configure security settings at the environment group-level, complete the following steps.
 
