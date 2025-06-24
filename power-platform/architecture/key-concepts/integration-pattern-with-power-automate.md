@@ -21,7 +21,7 @@ ms.custom:
   - ai-seo-date:06/24/2025
 ---
 
-# Integration pattern using Power Automate cloud flows
+# Use integration pattern in Power Automate cloud flows
 
 This article explores different integration patterns using Power Automate cloud flows. It covers considerations for building effective integrations for each pattern, the challenges you might face, and the decision-making process for achieving your goals.
 
@@ -46,24 +46,25 @@ By the end of this article, you learn:
 - How to use the strengths of cloud flows and address their shortcomings
 - Techniques for robust integrations
 
-## The requirements of an integration
+## Requirements in integration
 
 Before discussing the patterns, start by looking at the requirements of an integration. Begin with a high-level goal, such as connecting SAP to Dataverse or sending a notification every time there’s an update in a case a user works on.
 
 These are examples of how a business user may look at an integration problem and is also the starting point where an architect takes over.
 What follow-up questions do you need to ask when being tasked with connecting system A to system B and who are the people to answer these questions?
 
-When we need to create any flow of information, the first question we need to ask is: How much data is being sent and how often?  
+When we need to create any flow of information, the first question we need to ask is: How much data is being sent and how often?
 
 
-- **Volume and frequency** is the first major component in our decision making process that will determine the kinds of tools we need to use
-to implement the business requirement.
+- [Volume and frequency](#volume-and-frequency) is the first major component in our decision making process that will determine the kinds of tools we need to use
+  to implement the business requirement.
 
-- The next component would be the **Directionality**, or where does data flow from and to. Finding that out informs how we configure the pattern for a
-successful integration.
+- The next component would be the [directionality](#directionality), or where does data flow from and to. Finding that out informs how we configure the pattern for a
+  successful integration.
 
-- And lastly, we need to consider **Capability**, or the ability of each system involved to receive, process and send data. Using the `weakest
-link` approach, evaluation of capabilities inform us of the limitations and possibilities. Sure, the business user may want everything-all-at-once-in-real-time, but if that IBM Mainframe just can’t do it, the capability analysis will flag that from the get go.
+- And lastly, we need to consider [capability](#capability), or the ability of each system involved to receive, process and send data. Using the `weakest
+  link` approach, evaluation of capabilities inform us of the limitations and possibilities. Sure, the business user may want everything-all-at-once-in-real-time, but if that IBM Mainframe just can’t do it, the capability analysis
+  will flag that from the get go.
 
 Let’s review each component, starting with Volume and frequency.
 
@@ -189,10 +190,10 @@ datasets.
 
 ## How it comes together
 
-We looked into the 3 major components of an integration:  
-- **Volume and frequency**
-- **Directionality**
-- **Capability**
+We looked into the three major components of an integration:  
+- Volume and frequency
+- Directionality
+- Capability
 
 Volume and frequency refer to the total amount of data being
 transferred. Directionality involves understanding the source and
@@ -286,6 +287,7 @@ integration design that can handle anything.
 So why can’t we just build it this way from the start and not worry about it ever again?
 
 Because of cost.  
+
 Not only will you be investing more time and money in the initial development, you'll invest more time and money to pay for licensing and maintenance of each component we add.
 
 This isn't a case of compromising quality for cost, it’s a case of building according to what is needed, while not being wasteful.
@@ -507,12 +509,10 @@ In this last pattern, you’ll look at data synchronization. A situation when da
 
 It’s a pattern architects tend to dislike because it feels like such a waste storing the same data twice in identical systems, but there are some use cases for that. There’re two that are perhaps the most common for enterprise applications.
 
-The first case is Performance.  
-It’s less of an issue in the 21st century with high speed connectivity but there’s more than a few industries where it’s still very important, just ask your stock broker. Ultimately, we’re limited by
+The first case is performance. It’s less of an issue in the 21st century with high speed connectivity but there’s more than a few industries where it’s still very important, just ask your stock broker. Ultimately, we’re limited by
 the speed of light, so data located in a data center near you'll always be more available than a data center one across the pond.
 
-Another reason to synchronize data is The Law.  
-Depending on the country you live and the data you store, you’ll need to comply with regulations regarding where the original data is physically
+Another reason to synchronize data is the law. Depending on the country you live and the data you store, you’ll need to comply with regulations regarding where the original data is physically
 located. In these cases organizations will just deploy a local copy the database and apps with a synchronization process for data that can be copied
 elsewhere.
 
@@ -537,7 +537,7 @@ In addition to everything talked about automatic triggers, a key point here's th
 It worth getting back to the foundation of how Power Automate works. The service is asynchronous with no guaranteed response times like in a real-time system. This means that if through our analysis you understand that the process to synchronize is expected to perform beyond the capabilities of Power Automate, this needs to be considered as part of
 the implementation plan.
 
-Let me just say that it's common to hear business users request
+It's common to hear business users request
 real-time data access but it’s also uncommon for this request to have a
 good reason. Before taking extreme measures, make sure that you, the
 architect, understands the business process and the need to data
@@ -586,5 +586,4 @@ Learn more about building cloud flows if you want to be a developer too.
 ## Related resources
 
 - [Power Automate coding guidelines](/power-automate/guidance/coding-guidelines/)
-
 - [Power Automate on Microsoft Learn](/training/powerplatform/power-automate)
