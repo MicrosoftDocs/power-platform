@@ -1,0 +1,183 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Microsoft Power Platform REST API - Power Virtual Agents",
+    "description": "Unified API for all administrative capabilities in Microsoft Power Platform.",
+    "version": "2022-03-01-preview"
+  },
+  "host": "api.powerplatform.com",
+  "schemes": [
+    "https"
+  ],
+  "paths": {
+    "/powervirtualagents/environments/{EnvironmentId}/bots/{BotId}/api/botQuarantine": {
+      "get": {
+        "tags": [
+          "Bots"
+        ],
+        "summary": "Get Bot Quarantine Status.",
+        "description": "Retrieve the quarantine status of a bot.",
+        "operationId": "GetBotQuarantineStatus",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "EnvironmentId",
+            "description": "The environment ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "BotId",
+            "description": "The bot ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "schema": {
+              "$ref": "#/definitions/BotQuarantineStatus"
+            }
+          }
+        }
+      }
+    },
+    "/powervirtualagents/environments/{EnvironmentId}/bots/{BotId}/api/botQuarantine/SetAsQuarantined": {
+      "post": {
+        "tags": [
+          "Bots"
+        ],
+        "summary": "Set Bot as Quarantined.",
+        "description": "Set the quarantine status of a bot to true.",
+        "operationId": "SetBotAsQuarantined",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "EnvironmentId",
+            "description": "The environment ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "BotId",
+            "description": "The bot ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "schema": {
+              "$ref": "#/definitions/BotQuarantineStatus"
+            }
+          }
+        }
+      }
+    },
+    "/powervirtualagents/environments/{EnvironmentId}/bots/{BotId}/api/botQuarantine/SetAsUnquarantined": {
+      "post": {
+        "tags": [
+          "Bots"
+        ],
+        "summary": "Set Bot as Unquarantined.",
+        "description": "Set the quarantine status of a bot to false.",
+        "operationId": "SetBotAsUnquarantined",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "EnvironmentId",
+            "description": "The environment ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "BotId",
+            "description": "The bot ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "schema": {
+              "$ref": "#/definitions/BotQuarantineStatus"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "BotQuarantineStatus": {
+      "type": "object",
+      "properties": {
+        "isBotQuarantined": {
+          "description": "Indicates whether the bot is quarantined.",
+          "type": "boolean"
+        },
+        "lastUpdateTimeUtc": {
+          "format": "date-time",
+          "description": "The last update time in UTC.",
+          "type": "string"
+        }
+      }
+    }
+  },
+  "securityDefinitions": {
+    "oauth2": {
+      "type": "oauth2",
+      "flow": "implicit",
+      "authorizationUrl": "https://login.microsoftonline.com/common/oauth2/authorize?resource=https://api.powerplatform.com",
+      "scopes": {
+        ".default": ".default"
+      },
+      "description": "Microsoft Entra ID OAuth2"
+    }
+  },
+  "security": [
+    {
+      "oauth2": [
+        ".default"
+      ]
+    }
+  ]
+}
