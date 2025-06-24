@@ -44,7 +44,6 @@ Early access begins approximately two months before general availability of each
 | Canada                       | July 23, 2025  |
 | South America                | July 23, 2025  |
 | India                        | July 23, 2025  |
-| Italy                        | July 23, 2025  |
 | France                       | July 23, 2025  |
 | South Africa                 | July 23, 2025  |
 | Germany                      | July 23, 2025  |
