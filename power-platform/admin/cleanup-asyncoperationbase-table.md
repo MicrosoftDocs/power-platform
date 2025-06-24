@@ -3,15 +3,16 @@ title: "Clean up records from System Job (AsyncOperationBase) and Process Log (W
 description: "Learn how to clean up records from System Job (AsyncOperationBase) and Process Log (WorkflowLogBase) tables."
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 07/18/2024
+ms.date: 06/24/2025
 author: swylezol
 ms.subservice: admin
 ms.custom: NewPPAC
 ms.author: swylezol
-ms.reviewer: sericks 
+ms.reviewer: ellenwehrle 
 contributors:
   - dhsinms 
   - MicroSri
+  - sericks
 search.audienceType: 
   - admin
 ---
@@ -34,6 +35,7 @@ All environments include a built-in bulk deletion job that removes successfully 
 You can use the bulk deletion system jobs to delete unneeded records from both AsyncOperation and WorkflowLog tables. To view the bulk deletion system jobs:
 
 ### [New admin center](#tab/new)
+
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**, then in the **Manage** pane, select **Environments**.
 1. On the **Environments** page, select an environment.
@@ -41,11 +43,13 @@ You can use the bulk deletion system jobs to delete unneeded records from both A
 1. Expand **Data management**, then select **Bulk deletion**.
    
 ### [Classic admin center](#tab/classic)
+
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Environments**.
 1. On the **Environments** page, select an environment.
 1. In the command bar, select **Settings**.  
 1. Expand **Data management**, then select **Bulk deletion**.
+
 ---
 
 From the **Bulk Deletion** grid, use the view selector to show the completed, in-progress, pending, and recurring bulk deletion system jobs. 
