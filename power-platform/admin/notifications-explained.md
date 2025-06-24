@@ -21,7 +21,7 @@ Microsoft regularly sends communications about upcoming changes, including new a
 Admins can use the Microsoft 365 [Message center](/office365/admin/manage/message-center?view=o365-worldwide&preserve-view=true) to keep track of upcoming changes, including new and changed features, planned maintenance, or other important announcements. Admins can set [email preferences](/microsoft-365/admin/manage/message-center?view=o365-worldwide&preserve-view=true#preferences) for Message center posts.
 
 ### Prerequisites
-Before you begin, be sure that you have sufficient permissions. Most users who have been assigned any admin role in Microsoft 365 can view Message center posts. Here's [a list](/microsoft-365/admin/manage/message-center?view=o365-worldwide&preserve-view=true#admin-roles-that-dont-have-access-to-the-message-center) of admin roles that **don't** have access to the Message center. The **Message center reader role** can be assigned to users who should be able to read and share Message center posts without having any other admin privileges.
+Before you begin, be sure that you have sufficient permissions. Most users, who are assigned to any admin role in Microsoft 365, can view Message center posts. Here's [a list](/microsoft-365/admin/manage/message-center?view=o365-worldwide&preserve-view=true#admin-roles-that-dont-have-access-to-the-message-center) of admin roles that **don't** have access to the Message center. The **Message center reader role** can be assigned to users who should be able to read and share Message center posts without having any other admin privileges.
 
 ### Set up a weekly digest email for Message center notifications
 1. Log in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
@@ -40,7 +40,7 @@ The [Service health dashboard](/office365/enterprise/view-service-health) shows 
 
 Service health communications in the Microsoft 365 admin center are limited to specific admin roles. [Assign admin roles](/microsoft-365/admin/add-users/assign-admin-roles?view=o365-worldwide&preserve-view=true) that have permission to view service health, and review them regularly to stay current about the latest service health information.
 
-Sometimes, Microsoft might have to notify you about issues that're occurring in your Managed Environment, when action by an admin or user in your organization is required to fix those issues. These communications appear in the **Issues in your environment that require action** section of the **Service health** page. [Learn about Microsoft 365 monitoring](/microsoft-365/enterprise/microsoft-365-monitoring?view=o365-worldwide&preserve-view=true).
+Sometimes, Microsoft might have to notify you about issues that are occurring in your Managed Environment, when action by an admin or user in your organization is required to fix those issues. These communications appear in the **Issues in your environment that require action** section of the **Service health** page. [Learn about Microsoft 365 monitoring](/microsoft-365/enterprise/microsoft-365-monitoring?view=o365-worldwide&preserve-view=true).
 
 ## Service health in the Power Platform admin center
 
