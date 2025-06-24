@@ -4,7 +4,7 @@ description: Learn how to manage security in the Power Platform admin center by 
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 06/10/2025
+ms.date: 06/24/2025
 ms.custom: NewPPAC
 author: matapg007
 ms.author: matgupta
@@ -18,9 +18,6 @@ search.audienceType:
 [!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 The **Security** > **Overview** page in the Power Platform admin center is designed to enhance your organization's security and streamline management. It provides a centralized location where you can view and manage security recommendations, assess your security score, and implement proactive policies to safeguard your organization.
-
-> [!Note]
-> This feature is in the process of rolling out and might not be available in your region yet.
 
 Administrators can complete these tasks:
 
@@ -85,6 +82,9 @@ In this case, your total score is 2 &plus; 10 &plus; 5 = 17, and the total possi
 > - If there are no Managed Environments that you can take action on in the recommendation pane, no environments are listed.
 
 ## Turn on environment management to unlock full security benefits
+
+> [!Note]
+> This feature is in the process of rolling out and might not be available in your region yet.
 
 To ensure your organization benefits from the complete suite of managed security features, each environment must be configured as a managed environment.
 
