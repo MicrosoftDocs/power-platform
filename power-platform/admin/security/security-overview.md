@@ -15,8 +15,6 @@ search.audienceType:
 
 # Security overview
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 The **Security** > **Overview** page in the Power Platform admin center is designed to enhance your organization's security and streamline management. It provides a centralized location where you can view and manage security recommendations, assess your security score, and implement proactive policies to safeguard your organization.
 
 Administrators can complete these tasks:
