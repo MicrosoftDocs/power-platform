@@ -4,7 +4,7 @@ description: Learn how to manage feature settings to adjust how features appear 
 author: sericks007
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 05/28/2025
+ms.date: 06/11/2025
 ms.subservice: admin
 ms.custom: NewPPAC
 ms.author: sericks
@@ -15,6 +15,7 @@ contributors:
     - V-Camille
     - jasongr
     - v-aangie
+    - steph-kent-ms
 ms.Contributors:
     - v-linhvovan
 search.audienceType: 
@@ -65,6 +66,15 @@ Make sure you have the System Administrator security role or equivalent permissi
 | Enable new AI-powered Copilot features for people who make apps. | When **On**, lets preview Copilot features that help create apps, tables apps, tables, edit apps, generate formulas, answering how-to questions and AI Builder GPT experiences. Learn more in [AI Copilot overview ](/power-apps/maker/canvas-apps/ai-overview). <br><br>**Note**: [Generally available](general-availability-deployment.md) Copilot features are turned on by default and can't be turned off. To turn them off, a tenant admin must [contact support](get-help-support.md).| On |
 | Allow users to analyze data using an AI-powered chat experience in canvas and model-driven apps. <br><br>**Note**: For model-driven apps, this environment needs to be set to the monthly release channel.| When **On**, lets Copilot in canvas apps, model-driven apps, and Dynamics 365 Sales apps for users to ask questions and have a natural language conversation about data in the app. Learn more in [Add Copilot control to a canvas app ](/power-apps/maker/canvas-apps/add-ai-copilot), [Add Copilot to model-driven apps](/power-apps/maker/model-driven-apps/add-ai-copilot), and [Enable and configure Copilot in Dynamics 365 Sales](/dynamics365/sales/enable-setup-copilot).<br><br>When set to **Default**, only [Copilot in Dynamics 365 Sales apps](/dynamics365/sales/enable-setup-copilot) is turned on. | Default |
 | Allow canvas editors to insert the Copilot answer component, which allows users to receive an AI-powered answer to a predefined data query.| When **On**, lets makers add a Copilot answer control that allows users to receive an AI-powered answer to a predefined question set by a maker. Learn more in [Use Copilot answer control for canvas apps (preview)](/power-apps/maker/canvas-apps/copilot-answer-control-overview).| Off |
+
+## Copilot Studio agents
+
+### Sharing Copilot Studio agent data with Viva Insights (preview)
+
+| Setting | Description | Default value |
+|---------|-------------|---------------|
+| Allow Copilot Studio to share data with Viva Insights | When **On**, enables Copilot Studio data to flow to Microsoft Viva Insights for [analytical reports](/microsoft-copilot-studio/analytics-viva-insights). Also requires [Microsoft 365 services](geographical-availability-copilot.md?tabs=new#copilots-and-generative-ai-features-that-are-available-when-you-allow-data-movement-across-regions) to be turned on. For information on what data is shared with Viva Insights, see [View advanced analytics in Microsoft Viva Insights](/microsoft-copilot-studio/analytics-viva-insights). | On |
+| Allow cross-geo boundary sharing of aggregated analytics data of your tenant preferred data location for Viva Insights is different than the location of your Copilot Studio environment | For tenants with Power Platform environments across [multiple geos](/power-platform/admin/geographical-availability-copilot#turn-on-data-movement-bing-search-and-microsoft-365-services-for-copilots-and-generative-ai-features). When **On**, Microsoft Copilot Studio is sent and stored in the base location of the tenant in Viva Insights, even when crossing geo boundaries. Requires turning on **Allow Copilot Studio to share data with Viva Insights**.  | Off |
 
 ## Microsoft 365 Copilot
 
