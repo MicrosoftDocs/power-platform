@@ -53,7 +53,7 @@ To configure CSP:
 1. On the **Environments** page, select an environment.
 1. In the command bar, select **Settings**.
 1. Expand **Product**, then select **Privacy + Security**.
-   
+
 ### [Classic admin center](#tab/classic)
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
@@ -70,9 +70,9 @@ The following image shows the default state of the settings:
 
 ### Reporting
 
-The "Enable reporting" toggle controls whether model-driven and canvas apps send violation reports. You're required to specify an endpoint to enabling it. Violation reports are sent to this endpoint regardless of whether CSP is enforced or not (using report-only mode if CSP isn't enforced). For more information, see [reporting documentation](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy-Report-Only).
+The _Enable reporting_ toggle controls whether model-driven and canvas apps send violation reports. You're required to specify an endpoint to enabling it. Violation reports are sent to this endpoint regardless of whether CSP is enforced or not (using report-only mode if CSP isn't enforced). For more information, see [reporting documentation](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy-Report-Only).
 
-:::image type="content" source="media/content-security-policy/csp-reporting.png" alt-text="Enabling reporting endpoint.":::
+:::image type="content" source="media/content-security-policy/csp-reporting.png" alt-text="Enable the reporting toggle to on.":::
 
 ### Enforcement
 
