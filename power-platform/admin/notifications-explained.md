@@ -36,7 +36,7 @@ Before you begin, be sure that you have sufficient permissions. Most users, who 
 
 ## Service health dashboard
 
-The [Service health dashboard](/office365/enterprise/view-service-health) shows the health status of your Microsoft cloud services. Learn how to open the Service health dashboard in the [Microsoft 365 admin center](check-online-service-health.md#view-service-health-information-in-the-microsoft-365-admin-center).
+The [Service health dashboard](/office365/enterprise/view-service-health) shows the health status of your Microsoft cloud services. Learn more about service health in [View service health](view-service-health.md).
 
 Service health communications in the Microsoft 365 admin center are limited to specific admin roles. [Assign admin roles](/microsoft-365/admin/add-users/assign-admin-roles?view=o365-worldwide&preserve-view=true) that have permission to view service health, and review them regularly to stay current about the latest service health information.
 
