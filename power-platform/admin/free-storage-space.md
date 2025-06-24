@@ -525,7 +525,7 @@ To monitor the status of audit delete jobs, see the next section.
 
 4. Select **Settings** > **Data management** > **Bulk deletion**.
 
-   :::image type="content" source="media/free-storage-method8a2.png" alt-text="Screenshot that shows where the Bulk deletion option is located in an environment." lightbox="media/free-storage-method8a2.png":::
+   :::image type="content" source="media/free-storage-method8a-new.png" alt-text="Screenshot that shows where the Bulk deletion option is located in an environment." lightbox="media/free-storage-method8a-new.png":::
 
 6. Review the system job and the **Status Reason** column for details about the status of your job.
 
@@ -735,7 +735,7 @@ For example, if you have 100 duplicate records, every time that you run a duplic
 
 4. Select **Settings** > **Data management** > **Duplicate Detection Jobs**.  
 
-   :::image type="content" source="media/free-storage-method7a2.png" alt-text="Screenshot that shows where the Duplicate detection jobs option is located in the Settings of an environment." lightbox="media/free-storage-method7a2.png":::
+   :::image type="content" source="media/free-storage-method7a-new.png" alt-text="Screenshot that shows where the Duplicate detection jobs option is located in the Settings of an environment." lightbox="media/free-storage-method7a-new.png":::
   
 5. Select the duplicate detection job instances you want to delete and then choose **Delete** (X).  
   
@@ -743,7 +743,7 @@ For example, if you have 100 duplicate records, every time that you run a duplic
 
    :::image type="content" source="media/free-storage-method7a.png" alt-text="Screenshot that shows where the X icon is located in the Duplicate Detection Jobs window of Dynamic 365." lightbox="media/free-storage-method7a.png":::
 
-##### [Classic admin center](#tab/classic)  
+##### [Classic admin center](#tab/classic)
   
 1. In the [Power Platform Admin center](https://admin.powerplatform.microsoft.com), select an environment.
 
@@ -776,7 +776,7 @@ For example, if you have 100 duplicate records, every time that you run a duplic
 
 4.	Select **Settings** > **Data management** > **Bulk deletion**. In the menu bar, select **New**. The Bulk Deletion Wizard opens.  
 
-   :::image type="content" source="media/free-storage-method8a2.png" alt-text="Screenshot that shows where the Bulk deletion option is located in the Settings of an environment." lightbox="media/free-storage-method8a2.png":::
+   :::image type="content" source="media/free-storage-method8a-new.png" alt-text="Screenshot that shows where the Bulk deletion option is located in the Settings of an environment." lightbox="media/free-storage-method8a-new.png":::
   
 5. Choose **Next**.  
   
