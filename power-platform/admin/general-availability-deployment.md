@@ -51,33 +51,37 @@ The exact duration and timing of each release wave can't be predetermined. The d
 
 You receive release wave updates as part of your Dataverse weekly updates. This depends on the region where your environment has been created.
 
+The generally available platform version will be **9.2.25093.0** or higher.
+
 For each region listed, deployment begins as early as the Friday dark hours before the listed date.
 
-|Region  | Deployment schedule for 2025 wave 1 general availability |
+Environment Database version may not be updated until a few days after the schedule below. 
+
+|Region  | Deployment schedule for 2025 wave 2 general availability |
 |---------|---------|
-| First release                | March 24, 2025 |
-| Canada                       | March 31, 2025  |
-| South America                | March 31, 2025  |
-| India                        | March 31, 2025  |
-| France                       | March 31, 2025  |
-| South Africa                 | March 31, 2025  |
-| Germany                      | March 31, 2025  |
-| Switzerland                  | March 31, 2025  |
-| Norway                       | March 31, 2025  |
-| Korea                        | March 31, 2025  |
-| Singapore                    | March 31, 2025  |
-| Sweden                       | March 31, 2025  |
-| United Arab Emirates         | April 7, 2025  |
-| Japan                        | April 7, 2025  |
-| Asia Pacific                 | April 7, 2025  |
-| Great Britain                | April 7, 2025  |
-| Australia                    | April 7, 2025  |
-| GCC High\*                   | April 7, 2025  |
-| Europe                       | April 14, 2025 |
-| North America                | April 21, 2025 |
-| GCC\*                        | April 28, 2025 |
-| DoD\*                        | April 28, 2025 |
-| China\**                      | April 28, 2025 |
+| First release                | September 22, 2025  |
+| Canada                       | September 29, 2025  |
+| South America                | September 29, 2025  |
+| India                        | September 29, 2025  |
+| France                       | September 29, 2025  |
+| South Africa                 | September 29, 2025  |
+| Germany                      | September 29, 2025  |
+| Switzerland                  | September 29, 2025  |
+| Norway                       | September 29, 2025  |
+| Korea                        | September 29, 2025  |
+| Singapore                    | September 29, 2025  |
+| Sweden                       | September 29, 2025  |
+| United Arab Emirates         | September 29, 2025  |
+| Japan                        | October 6, 2025  |
+| Asia Pacific                 | October 6, 2025  |
+| Great Britain                | October 6, 2025  |
+| Australia                    | October 6, 2025  |
+| GCC High\*                   | October 6, 2025  |
+| Europe                       | October 13, 2025  |
+| North America                | October 20, 2025  |
+| GCC\*                        | October 27, 2025  |
+| DoD\*                        | October 27, 2025  |
+| China\**                     | October 27, 2025  |
 
 \*For more information about GCC, GCC High, and DoD, see [Dynamics 365 US Government](microsoft-dynamics-365-government.md).
 \**For more information about environments in China, see [Power Platform and Dynamics 365 apps operated by 21Vianet in China](about-microsoft-cloud-china.md).
