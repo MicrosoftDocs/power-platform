@@ -525,7 +525,7 @@ To monitor the status of audit delete jobs, see the next section.
 
 4. Select **Settings** > **Data management** > **Bulk deletion**.
 
-   :::image type="content" source="media/free-storage-method8a-new.png" alt-text="Screenshot that shows where the Bulk deletion option is located in an environment." lightbox="media/free-storage-method8a-new.png":::
+   :::image type="content" source="media/free-new-storage-method.png" alt-text="Screenshot that shows where the Bulk deletion option is located in an environment." lightbox="media/free-new-storage-method.png":::
 
 6. Review the system job and the **Status Reason** column for details about the status of your job.
 
@@ -735,7 +735,7 @@ For example, if you have 100 duplicate records, every time that you run a duplic
 
 4. Select **Settings** > **Data management** > **Duplicate Detection Jobs**.  
 
-   :::image type="content" source="media/free-storage-method7a-new.png" alt-text="Screenshot that shows where the Duplicate detection jobs option is located in the Settings of an environment." lightbox="media/free-storage-method7a-new.png":::
+   :::image type="content" source="media/free-storage-method-new.png" alt-text="Screenshot that shows where the Duplicate detection jobs option is located in the Settings of an environment." lightbox="media/free-storage-method-new.png":::
   
 5. Select the duplicate detection job instances you want to delete and then choose **Delete** (X).  
   
@@ -776,7 +776,7 @@ For example, if you have 100 duplicate records, every time that you run a duplic
 
 4.	Select **Settings** > **Data management** > **Bulk deletion**. In the menu bar, select **New**. The Bulk Deletion Wizard opens.  
 
-   :::image type="content" source="media/free-storage-method8a-new.png" alt-text="Screenshot that shows where the Bulk deletion option is located in the Settings of an environment." lightbox="media/free-storage-method8a-new.png":::
+   :::image type="content" source="media/free-new-storage-method.png" alt-text="Screenshot that shows where the Bulk deletion option is located in the Settings of an environment." lightbox="media/free-new-storage-method.png":::
   
 5. Choose **Next**.  
   
@@ -860,8 +860,6 @@ For example, if you have 100 duplicate records, every time that you run a duplic
   
 > [!WARNING]
 > After you delete these jobs, you will lose the history of the prior bulk deletion jobs that you've run.
-
-##### [New admin center](#tab/new)
 
 ##### [New admin center](#tab/new)
 
