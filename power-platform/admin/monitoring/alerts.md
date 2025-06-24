@@ -4,7 +4,7 @@ description: Learn more about how to create alerts to monitor your resources in 
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/18/2025
+ms.date: 06/24/2025
 author: arjunmayur
 ms.author: arjunmayur
 ms.reviewer: sericks
@@ -45,7 +45,7 @@ Keep the following principles in mind:
 1. In the **Alert rule name** field, enter the name of your alert.
 1. In the **Product** list, select the product you want to monitor with the alert, **Power Apps** or **Power Automate**.
 1. In the **Product type** list, select what you're going to monitor with the alert. For example, select **Canvas app** or **Model-driven app** for Power Apps, or **Cloud flow** or **Desktop flow** for Power Automate.
-1. In the **Scope** list, you can select **Environment** to monitor all items of a specific type&mdash;such as all canvas apps in my production environment.
+1. In the **Scope** list, select **Environment** to monitor all items of a specific type&mdash;such as all canvas apps in my production environment.
 1. In the **Id** field, select the environment that you want to monitor with an alert.
 1. In the **Metric** list, select the metric that you would like to create your custom threshold against. The available metrics that alerts support and what they mean can be found in [Metrics and recommendations for Power Apps](monitor-power-apps.md) and [Metrics and recommendations for Power Automate](monitor-power-automate.md).
 1. In the **Operator** list, select an operator to define your threshold. The options are **Is Under**, **Is Over**, or **Equals**.
