@@ -241,7 +241,7 @@ The following table describes the permissions required to approve emails.
 > [!NOTE]
 > For more information about the Global and Exchange admin roles, see [Commonly used Microsoft 365 admin center roles](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide&preserve-view=true#commonly-used-microsoft-365-admin-center-roles) 
 
-- **Delegated Mailbox Approver**: Dynamics 365 security role that can be assigned by a Global admin or Exchange admin. A user with this role can approve mailboxes without being a Global or Exchange admin. For more details, refer to the section titled **Delegate mailbox approval**.
+- **Delegated Mailbox Approver**: Dynamics 365 security role that is assigned by a Global admin or Exchange admin. A user with this role can approve mailboxes without being a Global or Exchange admin. For more information, see to the section titled **Delegate mailbox approval**.
 
 > [!NOTE]
 > This permissions model rolls out gradually and becomes available once deployed in your region. Check the version number provided in the following table for when the change are provided. 
@@ -313,7 +313,7 @@ Follow these steps to approve email addresses for users and queues. By default, 
 
 #### Add the Approve Email Addresses for Users or Queues privilege
 
-To approve emails, a Dynamics 365 user requires the **Approve Email Addresses for Users or Queues** privilege.  A system admin can assign the **Approve Email Addresses for Users or Queues** privilege to any security role and assign the security role to any user. 
+To approve emails, a Dynamics 365 user requires the **Approve Email Addresses for Users or Queues** privilege. A system admin can assign the **Approve Email Addresses for Users or Queues** privilege to any security role and assign the security role to any user. 
 
 **To manually assign the Approve Email Addresses for Users or Queues privilege to a security role:**
 
@@ -366,7 +366,7 @@ You can use a manual or programmatic processes to approve a mailbox.
 
 ##### Approve a mailbox programmatically
   
-Email addresses can't be approved using plug-ins or workflows. External applications can programmatically invoke email address approval by including the _emailrouteraccessapproval_ attribute in the SDK request, as long as the record hasn’t already been approved and the caller meets the required authorization criteria.
+Email addresses can't be approved using plug-ins or workflows. External applications can programmatically invoke email address approval by including the _emailrouteraccessapproval_ attribute in the SDK request, provided the record is not already approved and the caller meets the required authorization criteria.
    
 ### Remove the requirement to approve mailboxes
 
