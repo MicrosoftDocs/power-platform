@@ -53,7 +53,7 @@ Keep the following principles in mind:
 1. In the **Severity** list, select **Low**, **Medium**, or **High**.
 1. In the **Notification type** list, select which notification type you’d like this alert to have: **None** or **Email**.
     - If you select **None**, you won’t get an email and will have to come back to the Monitor area of the admin center to check on the status of your alert.
-    - If you select **Email**, you and up to four other recipients&mdash;that you specify in the **Recipient(s)** field&mdash;will get an email when the alert is triggered. The email will come from `PowerPlat-noreply@microsoft.com`.
+    - If you select **Email**, you and up to four other recipients&mdash;that you specify in the **Recipient(s)** field&mdash;will get an email when the alert is triggered. The email comes from `PowerPlat-noreply@microsoft.com`.
 1. Select **Save**.
 
 After you’ve created your alert, the system does an on-demand evaluation and scans all the applicable resources under its scope. 
@@ -63,10 +63,10 @@ If you selected to receive email notifications when any resource triggers an ale
 
 :::image type="content" source="media/alert-email.png" alt-text="If you selected to receive email notifications when any resource triggers an alert, you get an email notification sent to you.." lightbox="media/alert-email.png":::
 
-In the email notification, select **Go to Alert** to open a Power Platform page listing the triggered alerts, where you can see information on the triggered alert and what resources triggered it. When you select any of the resources in the triggered alert, a pane is displayed that shows timeseries information for all applicable metrics for that resource, and recommendations for how to improve the metric if it’s suboptimal.
+In the email notification, select **Go to Alert** to open a Power Platform page listing the triggered alerts, where you can see information on the triggered alert and what resources triggered it. When you select any of the resources in the triggered alert, a pane is displayed that shows time series information for all applicable metrics for that resource, and recommendations for how to improve the metric if it’s suboptimal.
 
 ### Notes to be aware of
--	A tenant can have 25 alerts rules turned on at one time. However, you can create an unlimited amount of alert rules. Consider deleting or turning off any existing alert rule if you’ve reached the maximum.
+-	A tenant can have 25 alerts rules turned on at one time. However, you can create an unlimited number of alert rules. Consider deleting or turning off any existing alert rule if you’ve reached the maximum.
 -	Alerts are evaluated after new metrics are produced. Currently, all metrics are 24-hour aggregates, which means an alert rule in the Monitor area is evaluated every 24 hours after the newest 24 hour aggregates are produced. The alert rule does an on-demand evaluation upon its creation. 
 
 
