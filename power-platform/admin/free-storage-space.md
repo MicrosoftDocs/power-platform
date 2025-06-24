@@ -853,6 +853,8 @@ For example, if you have 100 duplicate records, every time that you run a duplic
 1. If you want a notification e-mail sent, select the **Send an email to me (myemail@domain.com) when this job is finished** check box.  
 
 1. Choose **Next**, review the bulk deletion job, and then choose **Submit** to create the recurring job.  
+
+---
   
 ### Method 9: Delete bulk deletion job instances using a bulk deletion job  
 
