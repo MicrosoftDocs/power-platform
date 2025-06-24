@@ -36,11 +36,11 @@ Before you begin, be sure that you have sufficient permissions. Most users who h
 
 ## Service health dashboard
 
-The [Service health dashboard](/office365/enterprise/view-service-health) shows the health status of your Microsoft cloud services. Learn how to open the Service health dashboard in [Microsoft 365 admin center](check-online-service-health.md#view-service-health-information-in-the-microsoft-365-admin-center).
+The [Service health dashboard](/office365/enterprise/view-service-health) shows the health status of your Microsoft cloud services. Learn how to open the Service health dashboard in the [Microsoft 365 admin center](check-online-service-health.md#view-service-health-information-in-the-microsoft-365-admin-center).
 
 Service health communications in the Microsoft 365 admin center are limited to specific admin roles. [Assign admin roles](/microsoft-365/admin/add-users/assign-admin-roles?view=o365-worldwide&preserve-view=true) that have permission to view service health, and review them regularly to stay current about the latest service health information.
 
-Sometimes, Microsoft might have to notify you about issues that are occurring in your Managed Environment, when action by an admin or user in your organization is required to fix those issues. These communications appear in the **Issues in your environment that require action** section of the **Service health** page. [Learn about Microsoft 365 monitoring](/microsoft-365/enterprise/microsoft-365-monitoring?view=o365-worldwide&preserve-view=true).
+Sometimes, Microsoft might have to notify you about issues that're occurring in your Managed Environment, when action by an admin or user in your organization is required to fix those issues. These communications appear in the **Issues in your environment that require action** section of the **Service health** page. [Learn about Microsoft 365 monitoring](/microsoft-365/enterprise/microsoft-365-monitoring?view=o365-worldwide&preserve-view=true).
 
 ## Service health in the Power Platform admin center
 
@@ -55,6 +55,7 @@ You can view service health information for Dynamics 365 and Power Platform prod
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a Dynamics 365 admin or Power Platform admin.
 1. In the navigation pane, select **Help + support**. 
 1. Select the **Service health** tab.
+---
 
 Learn more in [View service health](view-service-health.md).
 
