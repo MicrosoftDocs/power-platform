@@ -19,6 +19,9 @@ search.audienceType:
 
 The **Security** > **Overview** page in the Power Platform admin center is designed to enhance your organization's security and streamline management. It provides a centralized location where you can view and manage security recommendations, assess your security score, and implement proactive policies to safeguard your organization.
 
+> [!Note]
+> This feature is in the process of rolling out and might not be available in your region yet.
+
 Administrators can complete these tasks:
 
 - **Assess your security score**: Use the security score to understand and improve your organization's security policies. The security score is shown on a qualitative scale (**Low**, **Medium**, or **High**). It helps you measure your organizational security position for Microsoft Power Platform and Dynamics 365 workloads.
