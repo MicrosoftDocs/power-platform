@@ -199,16 +199,16 @@ You can approve your own user mailbox if all of these conditions are met:
 
 - The mailbox isn't a queue mailbox.
 
-If **RequirePrivilegeToSelfApproveEmailAddress** is disabled (default) and you don't have the **Approve Email Addresses for Users or Queues** privilege, the **Approve Email** button doesn't appear. However, if you select **Test & Enable Mailbox** and the conditions mentioned are met, the email address in your mailbox are approved as part of the test and enable process.
+If **RequirePrivilegeToSelfApproveEmailAddress** is disabled (default) and you don't have the **Approve Email Addresses for Users or Queues** privilege, the **Approve Email** button doesn't appear. However, if you select **Test & Enable Mailbox** and the conditions mentioned are met, the email address in your mailbox is approved as part of the test and enable process.
 
 ### Delegate mailbox approval
 
 A user with the Global or Exchange admin role can delegate the mailbox approval process to another user by assigning the **Delegated Mailbox Approver** security role in Dynamics 365. A user with the **Delegated Mailbox Approver** role can approve mailboxes in the environment without being a Global or Exchange admin. As mentioned in the [permission model](connect-exchange-online.md#permissions-model) section, the user also needs to have the **System Administrator** security role. This new role is available in Dynamics 365 online version 9.2.22104.00170 or later.
 
 > [!IMPORTANT] 
-> You can't assign the **Delegated Mailbox Approver** role unless you have the Global or Exchange admin role. If you try to assign this role but aren't a Global or Exchange admin, you'll receive an error: "You must be an Office 365 Global Administrator or an Exchange Administrator to assign the Delegated Mailbox Approver role." You may also see the error code 0x80090904.
+> You can't assign the **Delegated Mailbox Approver** role unless you have the Global or Exchange admin role. If you try to assign this role but aren't a Global or Exchange admin, you receive an error: "You must be an Office 365 Global Administrator or an Exchange Administrator to assign the Delegated Mailbox Approver role." You may also see the error code 0x80090904.
 > 
-> The **Delegated Mailbox Approver** role isn'tcurrently supported for assigning to a team. If you try to assign this role to a team, you'll receive an error: "The Delegated Mailbox Approver role can'tbe assigned to a team." You may also see error code 0x80090905 or the message "Failed to add role Delegated Mailbox Approver: CannotAssignDelegatedMailboxApproverRoleToTeam".
+> The **Delegated Mailbox Approver** role isn'tcurrently supported for assigning to a team. If you try to assign this role to a team, you receive an error: "The Delegated Mailbox Approver role can'tbe assigned to a team." You may also see error code 0x80090905 or the message "Failed to add role Delegated Mailbox Approver: CannotAssignDelegatedMailboxApproverRoleToTeam".
 > 
 > Because this is a Dynamics 365 security role, the role is assigned per environment. The role can be assigned to one or more users per environment.
 
@@ -222,7 +222,7 @@ A user with the Global or Exchange admin role can delegate the mailbox approval 
 Decide which approach you want your organization to follow for mailbox approval.
 
 :::image type="complex" source="media/approval-flow-chart.png" alt-text="Flowchart for deciding on your mailbox approval approach.":::
-   Flowchart with the starting condition "You must be an Office 365 Global admin + Dynamics 365 System admin OR an Exchange admin + Dynamics 365 System admin OR a Dynamics 365 Delegated Mailbox Approver + Dynamics 365 System admin.." The first decision point is "Do you want to require mailbox approval?" The "No" path leads to "See 'Remove requirement to approve mailboxes'". The "Yes" path leads to "See Permissions model."
+   Flowchart with the starting condition "You must be an Office 365 Global admin + Dynamics 365 System admin OR an Exchange admin + Dynamics 365 System admin OR a Dynamics 365 Delegated Mailbox Approver + Dynamics 365 System admin." The first decision point is "Do you want to require mailbox approval?" The "No" path leads to "See 'Remove requirement to approve mailboxes'". The "Yes" path leads to "See Permissions model."
 :::image-end:::
 
 ### Permissions model
@@ -241,10 +241,10 @@ The following table describes the permissions required to approve emails.
 > [!NOTE]
 > For more information about the Global and Exchange admin roles, see [Commonly used Microsoft 365 admin center roles](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide&preserve-view=true#commonly-used-microsoft-365-admin-center-roles) 
 
-- **Delegated Mailbox Approver**: Dynamics 365 security role which can be assigned by a Global admin or Exchange admin. A user with this role can approve mailboxes without being a Global or Exchange admin. For more details, refer to the section above titled **Delegate mailbox approval**.
+- **Delegated Mailbox Approver**: Dynamics 365 security role that can be assigned by a Global admin or Exchange admin. A user with this role can approve mailboxes without being a Global or Exchange admin. For more details, refer to the section titled **Delegate mailbox approval**.
 
 > [!NOTE]
-> This permissions model is being gradually rolled out and is available as soon as it's deployed to your region. Check the version number provided in the following table for when the change are provided. 
+> This permissions model rolls out gradually and becomes available once deployed in your region. Check the version number provided in the following table for when the change are provided. 
 
 <table>
   <tr>
