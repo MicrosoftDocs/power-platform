@@ -5,7 +5,7 @@ author: laneswenka
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 06/19/2025
+ms.date: 06/24/2025
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
@@ -21,8 +21,8 @@ Learn about the latest changes and new capabilities for Power Platform API and a
 | Item | Type | Description |
 |------|------|-------------|
 | Microsoft.PowerApps.CLI | SDK | [Monthly release](https://www.nuget.org/packages/Microsoft.PowerApps.CLI/1.43.6#releasenotes-body-tab) |
-| Power Platform for Admins V2 | Connector | [Monthly release](https://learn.microsoft.com/en-us/connectors/powerplatformadminv2/) |
-| Microsoft.PowerPlatform.Management | SDK | [Initial Release](https://www.nuget.org/packages/Microsoft.PowerPlatform.Management/2.0.3060.142#readme-body-tab) |
+| Power Platform for Admins V2 | Connector | [Monthly release](/connectors/powerplatformadminv2/) |
+| Microsoft.PowerPlatform.Management | SDK | [Initial release](https://www.nuget.org/packages/Microsoft.PowerPlatform.Management/2.0.3060.142#readme-body-tab) |
 
 ## April 2025
 
@@ -32,7 +32,7 @@ Learn about the latest changes and new capabilities for Power Platform API and a
 | Set Bot As Quarantined | API | New endpoint: [Set Bot As Quarantined](/rest/api/power-platform/powervirtualagents/bots/set-bot-as-quarantined) |
 | Set Bot As Unquarantined | API | New endpoint: [Set Bot As Unquarantined](/rest/api/power-platform/powervirtualagents/bots/set-bot-as-unquarantined) |
 | Microsoft.PowerApps.CLI | SDK | [Monthly release](https://www.nuget.org/packages/Microsoft.PowerApps.CLI/1.42.1#releasenotes-body-tab) |
-| Power Platform for Admins V2 | Connector | [Monthly release](https://learn.microsoft.com/en-us/connectors/powerplatformadminv2/) |
+| Power Platform for Admins V2 | Connector | [Monthly release](/connectors/powerplatformadminv2/) |
 
 ## March 2025
 
