@@ -114,7 +114,7 @@ While it may sound like a waste of resources to build multiple integration solut
 
 - **Plan for the future**
 
-    The future can’t be predicted, but as architects, it is necessary to try. When building an integration solution for a growing business, the result is something with an expiration date. There’s no way around it.
+    The future can’t be predicted, but as architects, it's necessary to try. When building an integration solution for a growing business, the result is something with an expiration date. There’s no way around it.
     
     When building a critical integration solution, you clearly indicate the conditions it's designed to work under and create long term plans for its scalability. If there’s enough information, you can also indicate the expected date when the solution will require scaling.
     
@@ -173,7 +173,7 @@ datasets.
 
 - **Transformation and business logic**
 
-    The final consideration for the capability of every system and the integration process itself, is the need to perform business logic for the integration to satisfy business requirements.
+    The final consideration for the capability of every system and the integration process itself is the need to perform business logic for the integration to satisfy business requirements.
 
     When evaluating the capabilities of a system, it should be in the context of not just what the system can do, but what it can do with the transformations you need it to do prior to sending the data, the logic you need to perform in a flow before sending it to the target system, and the logic the target needs to perform before the data becomes operational.
 
@@ -201,7 +201,7 @@ destination of data, which is important for ensuring compliance, and
 securing data flow. Capability assesses each system's performance and
 ability to process data, identifying any potential bottlenecks.
 
-For each component, the discussion covers how they are connected to initial business requirements, what analysis must be performed to factor in their impact on the integration process overall, and who the stakeholders are to help perform the analysis.
+For each component, the discussion covers how they're connected to initial business requirements, what analysis must be performed to factor in their impact on the integration process overall, and who the stakeholders are to help perform the analysis.
 
 Input from the stakeholders during analysis can entirely change our
 approach in the integration design process. Process owners provide
@@ -223,7 +223,7 @@ For an existing organization, getting the values for this calculation should be 
 
 Assuming the goal is to build something that lasts at least five years, a typical timeframe for information systems ROI, the integration must be able to handle at least 25M requests per year.
 
-The frequency part concerns the ability of the systems involved to handle information within a year. Historical data can be charted to understand how frequency will apply in this context:
+The frequency part concerns the ability of the systems involved handling information within a year. Historical data can be charted to understand how frequency will apply in this context:
 
 :::image type="content" source="media/integration-pattern-with-power-automate/requestdensity.png" alt-text="Screenshot of a chart showing request density over a year for integration patterns in Power Automate." lightbox="media/integration-pattern-with-power-automate/requestdensity.png":::
 
@@ -300,7 +300,7 @@ patterns and how they can be used.
 
 ## Integration patterns
 
-The discussion covered what to consider when planning an integration using Power Automate and how to perform an analysis to determine which pattern would work best. With that information, it is time to explore the different kinds of integrations available.
+The discussion covered what to consider when planning an integration using Power Automate and how to perform an analysis to determine which pattern would work best. With that information, it's time to explore the different kinds of integrations available.
 
 This list is by no means definitive, however there’s a good chance that a significant chunk of business requirements will end up using one or a combination of these patterns.
 
@@ -320,7 +320,7 @@ Oracle’s Product Lifecycle Management solution. You don’t always need to
 look at those so copying the entire dataset to Dataverse doesn’t make
 sense but having a button to load the data on request is handy.
 
-There’re several reasons why implementing an integration here might be
+There are several reasons why implementing an integration here might be
 better than just having people go to Oracle and get the information from
 there: bad user experience (Oracle being what it is, doesn’t make it better),
 security concerns, or licensing costs.
@@ -338,7 +338,7 @@ Realistically, the data model between Oracle and Dataverse would be
 entirely different so some transformation might be required, resulting
 in extra steps.
 
-Despite the name, it’s worth noting that Instant triggers are not
+Despite the name, it’s worth noting that Instant triggers aren't
 instant. The time it will take the execute the entire flow depends on
 the availability and Oracle, Dataverse, and the time it takes to perform
 all the transformations you need.
@@ -352,7 +352,7 @@ there not knowing if something is happening or not.
 ### Pattern 2: Event-driven, aka automatic
 
 Architects love event-driven architectures because things seem to just fall into place like magic. It’s so intuitive because that’s similar to
-how our brain works. There’s two two sides to this of course, much like a research on nuclear fission can end up with you reading a wikipedia article about the ford nucleon, event-driven patterns can get you places you never intended to go.
+how our brain works. There are two sides to this of course much like a research on nuclear fission can end up with you reading a wikipedia article about the ford nucleon, event-driven patterns can get you places you never intended to go.
 
 #### Example
 
@@ -411,7 +411,7 @@ Data consolidation is a necessity for every organization that is large enough to
 Often this requirement comes from the need to create reports, in which case organizations will typically implement some kind of a master data management solution like Data Lake. However, collecting data from
 different systems into one is sometimes needed for day-to-day operations, like HR, customer service, sales, and others.
 
-The difference is that for the purposes of analytics it is common to
+The difference is that for the purposes of analytics it's common to
 take all the data from all systems and use it as the foundation to build
 different kinds of reports. For operational purposes the point is to
 take only the data that is needed to complete the business process.
@@ -429,7 +429,7 @@ The app will need to collect relevant data across all three systems use that to 
 
 From the requirements you can see that there's no need to collect all the data across all systems but only information that would be relevant to the process of creating an action plan. There's also apparently no need to update the data in real time or any kind of event-driven pattern.
 
-With that in mind, ypu can imagine a scheduled process that would collect the necessary data from all three systems, consolidate the data into a data format understandable to Dataverse and let AI do its thing from there.
+With that in mind, you can imagine a scheduled process that would collect the necessary data from all three systems, consolidate the data into a data format understandable to Dataverse and let AI do its thing from there.
 
 Depending on the size of the sales staff and how often they would interact with each customer, you can define the frequency off the schedule for the flow, resulting in a pattern that will look like this:
 
@@ -453,7 +453,7 @@ is one way to handle this monitoring.
 ### Pattern 4: Service oriented architecture
 
 Large organizations will have a lot of different systems handling
-different parts of their business, that would evolve over time to
+different parts of their business that would evolve over time to
 acquire pieces of information from other systems to complete their
 respective business processes.
 
