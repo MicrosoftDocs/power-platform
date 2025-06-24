@@ -1,6 +1,6 @@
 ---
 title: Delete bulk records 
-description: Learn what steps to take to delete bulk records.
+description: Learn what steps you need to take to remove a large amount of specific, targeted data with bulk deletion.
 author: bhgoswam 
 ms.component: pa-admin
 ms.topic: how-to
@@ -39,7 +39,7 @@ You can find these settings in the Microsoft Power Platform admin center. To upd
   
 ## Delete bulk data 
 
-Take these steps to delete bulk data.
+To delete bulk data, take these steps:
 
 ### [New admin center](#tab/new)
 
@@ -73,7 +73,7 @@ If the recycle bin isn't available, learn more in [Back up and restore environme
 
 ### Restore all records deleted by a bulk delete job
 
-Take theses steps to restore deleted records:
+To restore deleted records, take these steps:
 
 ### [New admin center](#tab/new)
 
@@ -99,7 +99,7 @@ Take theses steps to restore deleted records:
 
 ## Restore individual records
 
-Take these steps to restore deleted records:
+To restore deleted records, take these steps:
 
 ### [New admin center](#tab/new)
 
