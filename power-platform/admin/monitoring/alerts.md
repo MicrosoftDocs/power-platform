@@ -25,7 +25,7 @@ Keep the following principles in mind:
 
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
-## Use cases for alerts
+## When to use alerts
 - Teams and admins can use alerts to discover resources that are used more than expected. For example, an administrator can create an alert to let them know if apps in the default environment exceed 50 launches a day.
 - Teams can use alerts to find resources with degraded health&mdash;and engage with their makers to find resolutions.
 - For operations, admins can create alerts to let them know if apps in their production environment are slow to open for end-users. 
