@@ -35,6 +35,8 @@
               href: key-concepts/distributed-tracing.md
             - name: Implement distributed tracing
               href: key-concepts/distributed-tracing-details.md
+        - name: Cloud flow integration patterns
+          items:
             - name: Integration pattern with power automate
               href: key-concepts/integration-pattern-with-power-automate.md
     - name: Reference architectures
