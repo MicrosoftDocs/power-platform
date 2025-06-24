@@ -6,6 +6,7 @@ ms.topic: how-to
 ms.date: 03/12/2024
 author: rahulmital 
 ms.subservice: admin
+ms.custom: NewPPAC
 ms.author: rahulmital
 ms.reviewer: sericks
 search.audienceType: 
@@ -34,75 +35,95 @@ With both [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-excha
 > 
 > For ports required, see [Network ports for clients and mail flow in Exchange](/exchange/plan-and-deploy/deployment-ref/network-ports?view=exchserver-2019&preserve-view=true).
 
-
 ## Create an email server profile for Exchange Online
 
-1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment. 
+Make sure you have the System Administrator security role or equivalent permissions in Microsoft Dynamics 365. To check your security role, see [View your user profile](/powerapps/user/view-your-user-profile). If you don’t have the correct permissions, contact your system administrator.
 
-2. On the command bar, select **Settings** > **Email** > **Server profiles**.  
+#### [New admin center](#tab/new)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**, then in the **Manage** pane, select **Environments**.
+1. On the **Environments** page, select an environment.
+1. In the command bar, select **Settings**. 
+1. Expand **Email**, then select **Server profiles**.
+   
+#### [Classic admin center](#tab/classic)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Environments**.
+1. On the **Environments** page, select an environment.
+1. In the command bar, select **Settings**.  
+1. Expand **Email**, then select **Server profiles**.
+---
 
-   > [!div class="mx-imgBorder"] 
-   > ![Screenshot of mail server profile setting.](media/server-profile-settings.png "Email server profile setting")
-
-3. On the command bar, select **New server profile**.
-
-   > [!div class="mx-imgBorder"] 
-   > ![Screenshot of creating a new server profile.](media/new-server-profile.png "Create a new server profile")
-
-4. For **Email Server Type**, select **Exchange Online**, and then enter a meaningful **Name** for the profile.
+6. On the command bar, select **New server profile**.
+7. For **Email Server Type**, select **Exchange Online**, and then enter a meaningful **Name** for the profile.
 
    > [!div class="mx-imgBorder"] 
    > ![Screenshot of selecting the Exchange Online server profile.](media/exchange-online-server-profile.png "Select Exchange Online server profile]")
 
-5. If you want to use this server profile as the default profile for new mailboxes, turn on **Set as default profile for new mailboxes**.
+8. If you want to use this server profile as the default profile for new mailboxes, turn on **Set as default profile for new mailboxes**.
 
-6. For **Authentication Type**, choose one of the following:
+9. For **Authentication Type**, choose one of the following:
 
-    - **S2S auth (Same Tenant)**: Use this option when Exchange resides in the same tenant as Dynamics 365. More information: [Build web applications using server-to-server (S2S) authentication](/powerapps/developer/data-platform/build-web-applications-server-server-s2s-authentication)
+    - **Server-to-Server Authentication (Same Tenant)**: Use this option when Exchange resides in the same tenant as Dynamics 365. More information: [Build web applications using server-to-server (S2S) authentication](/powerapps/developer/data-platform/build-web-applications-server-server-s2s-authentication)
 
     - **Oauth (Cross Tenant)**: Use this option when Exchange resides in a different tenant than Dynamics 365. To get the information for this option, follow the steps in [Exchange Online cross-tenant authentication](connect-exchange-online-server-profile-oauth.md). Note that the **Locations and ports** fields are automatically populated.
 
-7. Expand the **Advanced** section, and then use the tooltips to choose your email processing options. 
+10. Expand the **Advanced** section, and then use the tooltips to choose your email processing options. 
 
-8. When you're done, select **Save**.
+11. When you're done, select **Save** to apply the changes.
 
 ## Verify that you have the profile Microsoft Exchange Online
 
- If you have an [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)] subscription in the same tenant as your subscription, customer engagement apps create a default profile named **Microsoft Exchange Online** for the email connection. To verify that you have this profile, do the following:  
-  
-1. Do one of the following: 
+If you have an [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)] subscription in the same tenant as your subscription, customer engagement apps create a default profile named **Microsoft Exchange Online** for the email connection. 
+ 
+To verify that you have this profile:  
 
-   - In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment.    
-   - In the legacy web client in the upper-right corner, select ![Gear icon.](media/selection-rule-gear-button.png), and then select **Advanced settings**. 
-
-2. Select **Settings** > **Email** > **Server profiles**.  
+#### [New admin center](#tab/new)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**, then in the **Manage** pane, select **Environments**.
+1. On the **Environments** page, select an environment.
+1. In the command bar, select **Settings**. 
+1. Expand **Email**, then select **Server profiles**.
+   
+#### [Classic admin center](#tab/classic)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Environments**.
+1. On the **Environments** page, select an environment.
+1. In the command bar, select **Settings**.  
+1. Expand **Email**, then select **Server profiles**.
+---
   
-3. Select **Active Email Server Profiles**, and verify that the **Microsoft Exchange Online** profile is in the list. If the [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] profile is missing, verify that you have an [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)] subscription and that it exists in the same tenant as your subscription.  
+6. Verify that the **Microsoft Exchange Online** profile is in the list. If the [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] profile is missing, verify that you have an [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)] subscription and that it exists in the same tenant as your subscription.  
   
-4. If there are multiple profiles, select the **Microsoft Exchange Online** profile and set it as default.  
+7. If there are multiple profiles, select the **Microsoft Exchange Online** profile and set it as default.  
 
 ## Configure default email processing and synchronization
 
 Set server-side synchronization to be the default configuration method for newly created users.  
-  
-1. Do one of the following: 
 
-   - In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment.    
-   - In the legacy web client in the upper-right corner, select ![Gear icon.](media/selection-rule-gear-button.png), and then select **Advanced settings**. 
+#### [New admin center](#tab/new)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**, then in the **Manage** pane, select **Environments**.
+1. On the **Environments** page, select an environment.
+1. In the command bar, select **Settings**. 
+1. Expand **Email**, then select **Email settings**.
+   
+#### [Classic admin center](#tab/classic)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Environments**.
+1. On the **Environments** page, select an environment.
+1. In the command bar, select **Settings**.  
+1. Expand **Email**, then select **Email settings**.
+---
 
-2. Select **Settings** > **Email** > **Email settings**.  
-  
-3. Set the processing and synchronization columns as follows:  
+6. Set the **Synchronization methods** columns as follows:  
   
    - **Server Profile**: [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)]  
-  
    - **Incoming Email**: Server-Side Synchronization or Email Router  
-  
    - **Outgoing Email**: Server-Side Synchronization or Email Router  
-  
    - **Appointments, Contacts, and Tasks**: Server-Side Synchronization
   
-4. Select **Save**.  
+7. Select **Save** to apply the changes.  
   
 All new users will have these settings applied to their mailbox.  
 
@@ -112,45 +133,52 @@ New users will have their mailboxes configured automatically with the settings y
   
 In addition to administrator permissions, you must have Read and Write privileges on the Mailbox table to set the delivery method for the mailbox.  
   
-Choose *one* of the following methods: set mailboxes to the default profile, or edit mailboxes to set profile and delivery methods.
+#### [New admin center](#tab/new)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**, then in the **Manage** pane, select **Environments**.
+1. On the **Environments** page, select an environment.
+1. In the command bar, select **Settings**. 
+1. Expand **Email**, then select **Mailboxes**.
+   
+#### [Classic admin center](#tab/classic)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Environments**.
+1. On the **Environments** page, select an environment.
+1. In the command bar, select **Settings**.  
+1. Expand **Email**, then select **Mailboxes**.
+---
 
-**To set mailboxes to the default profile**
-
-1. Do one of the following: 
-
-   - In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment.    
-   - In the legacy web client in the upper-right corner, select ![Gear icon.](media/selection-rule-gear-button.png), and then select **Advanced settings**.  
-
-2. Select **Settings** > **Email** > **Mailboxes**.  
+6. Select **Active Mailboxes** from the grid view selection list. 
+7. Select all the mailboxes that you want to associate with the [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] profile.
+8. click **Apply Default Email Settings** in the top command bar, verify the settings, then select **OK**.  
   
-3. Select **Active Mailboxes**.  
+By default, the mailbox configuration will be tested and the mailboxes enabled when you select **OK**.  
   
-4. Select all the mailboxes that you want to associate with the [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] profile, select **Apply Default Email Settings**, verify the settings, and then select **OK**.  
+**To edit mailboxes to set the profile and delivery methods:**
   
-   ![Screenshot of applying default email settings.](../admin/media/apply-default-email-settings.png "Apply default email settings")  
-  
-   By default, the mailbox configuration will be tested and the mailboxes enabled when you select **OK**.  
-  
-**To edit mailboxes to set the profile and delivery methods**
-  
-1. Do one of the following: 
-
-   - In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment.    
-   - In the legacy web client in the upper-right corner, select ![Gear icon.](media/selection-rule-gear-button.png), and then select **Advanced settings**. 
-
-2. Select **Settings** > **Email** > **Mailboxes**.  
-  
-3. Select **Active Mailboxes**.  
-  
-4. Select the mailboxes that you want to configure, and then select **Edit**.  
-  
-5. In the **Change Multiple Records** form, under **Synchronization Method**, set **Server Profile** to **Microsoft Exchange Online**.  
-  
-6. Set **Incoming** and **Outgoing** **Email** to **Server-Side Synchronization or Email Router**.  
-  
-7. Set **Appointments, Contacts, and Tasks** to **Server-Side Synchronization**.  
-  
-8. Select **Change**.  
+#### [New admin center](#tab/new)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**, then in the **Manage** pane, select **Environments**.
+1. On the **Environments** page, select an environment.
+1. In the command bar, select **Settings**. 
+1. Expand **Email**, then select **Mailboxes**.
+   
+#### [Classic admin center](#tab/classic)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Environments**.
+1. On the **Environments** page, select an environment.
+1. In the command bar, select **Settings**.  
+1. Expand **Email**, then select **Mailboxes**.
+---
+ 
+6. Select **Active Mailboxes** from the grid view selection list.  
+7. Select the mailboxes that you want to configure, then select **Edit** in the top command bar.  
+8. Under the **General** tab, set the **Synchronization methods** columns as follows:  
+   - **Server Profile**: [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)]  
+   - **Incoming Email**: Server-Side Synchronization or Email Router  
+   - **Outgoing Email**: Server-Side Synchronization or Email Router   
+   - **Appointments, Contacts, and Tasks**: Server-Side Synchronization
+9. Select **Save** in the command bar to apply your changes.
   
 ## Approve email  
 
@@ -287,18 +315,26 @@ Follow these steps to approve email addresses for users and queues. By default, 
 
 To approve emails, a Dynamics 365 user requires the **Approve Email Addresses for Users or Queues** privilege.  A system admin can assign the **Approve Email Addresses for Users or Queues** privilege to any security role and assign the security role to any user. 
 
-**To manually assign the Approve Email Addresses for Users or Queues privilege to a security role**
+**To manually assign the Approve Email Addresses for Users or Queues privilege to a security role:**
 
-1. Do one of the following: 
+#### [New admin center](#tab/new)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**, then in the **Manage** pane, select **Environments**.
+1. On the **Environments** page, select an environment.
+1. In the command bar, select **Settings**. 
+1. Expand **Users + permissions**, then select **Security roles**.
+   
+#### [Classic admin center](#tab/classic)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Environments**.
+1. On the **Environments** page, select an environment.
+1. In the command bar, select **Settings**.  
+1. Expand **Users + permissions**, then select **Security roles**.
+---
 
-   - In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment.    
-   - In the legacy web client in the upper-right corner, select ![Gear icon.](media/selection-rule-gear-button.png), and then select **Advanced settings**. 
-
-2. Select **Settings** > **Users + permissions** > **Security roles**.  
-
-3. Select a security role, and then select the **Business Management** tab. 
-
-4. Under **Miscellaneous Privileges**, set the privilege level for **Approve Email Addresses for Users or Queues**.
+6. Select a security role, then go to the **Miscellaneous Privileges** tab.
+7. Select the **Show only unassigned priviledges** view.
+8. Select **Approve Email Addresses for Users or Queues** and set the **priviledge** level .
   
 > [!div class="mx-imgBorder"] 
 > ![Screenshot showing the Approve Email Address for User or Queues privilege.](media/approve-email-address-for-user-queues.png "Approve Email Address for User or Queues")
@@ -309,18 +345,24 @@ You can use a manual or programmatic processes to approve a mailbox.
 
 ##### Approve a mailbox manually
 
-1. Do one of the following: 
-
-   - In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment.    
-   - In the legacy web client in the upper-right corner, select ![Gear icon.](media/selection-rule-gear-button.png), and then select **Advanced settings**. 
-
-2. Select **Settings** > **Email** > **Mailboxes**.  
-  
-3. Select **Active Mailboxes**.  
-  
-4. Select the mailboxes that you want to approve, and then select **More Commands** (**…**) > **Approve Email**.  
-  
-5. Select **OK**.
+#### [New admin center](#tab/new)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**, then in the **Manage** pane, select **Environments**.
+1. On the **Environments** page, select an environment.
+1. In the command bar, select **Settings**. 
+1. Expand **Email**, then select **Mailboxes**.
+   
+#### [Classic admin center](#tab/classic)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Environments**.
+1. On the **Environments** page, select an environment.
+1. In the command bar, select **Settings**.  
+1. Expand **Email**, then select **Mailboxes**.
+--- 
+ 
+6. Select the **Active Mailboxes** grid view to show the list of mailboxes.  
+7. Select the mailboxes that you want to approve, then select **Approve Email** from the command bar.  
+8. Select **OK** to apply the changes.
 
 ##### Approve a mailbox programmatically
   
@@ -330,29 +372,44 @@ Email addresses can't be approved using plug-ins or workflows. External applicat
 
 Admins, as described in the preceding permissions model table, can change the settings so that mailbox approval isn't required.
 
-1. Do one of the following: 
+#### [New admin center](#tab/new)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**, then in the **Manage** pane, select **Environments**.
+1. On the **Environments** page, select an environment.
+1. In the command bar, select **Settings**. 
+1. Expand **Email**, then select **Email settings**.
+   
+#### [Classic admin center](#tab/classic)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Environments**.
+1. On the **Environments** page, select an environment.
+1. In the command bar, select **Settings**.  
+1. Expand **Email**, then select **Email settings**.
+---
 
-   - In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment.    
-   - In the legacy web client in the upper-right corner, select ![Gear icon.](media/selection-rule-gear-button.png), and then select **Advanced settings**. 
+6. Under **Security and permissions**, turn off **Process emails only for approved users** and **Process emails only for approved queues**. (These settings are enabled by default.)
 
-2. Select **Settings** > **Email** > **Email settings**.  
-
-3. Under **Security and permissions**, turn off **Process emails only for approved users** and **Process emails only for approved queues**. (These settings are enabled by default.)
-
-4. Select **Save**.
+7. Select **Save** to apply the changes
 
 ## Test the configuration of mailboxes  
 
-1. Do one of the following: 
+#### [New admin center](#tab/new)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**, then in the **Manage** pane, select **Environments**.
+1. On the **Environments** page, select an environment.
+1. In the command bar, select **Settings**. 
+1. Expand **Email**, then select **Mailboxes**.
+   
+#### [Classic admin center](#tab/classic)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Environments**.
+1. On the **Environments** page, select an environment.
+1. In the command bar, select **Settings**.  
+1. Expand **Email**, then select **Mailboxes**.
+---
 
-   - In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment.    
-   - In the legacy web client in the upper-right corner, select ![Gear icon.](media/selection-rule-gear-button.png), and then select **Advanced settings**. 
-
-2. Select **Settings** > **Email** > **Mailboxes**.  
-  
-3. Select **Active Mailboxes**.  
-  
-4. Select the mailboxes you want to test, and then select **Test & Enable Mailbox**.  
+6. Select the **Active Mailboxes** grid view to show the list of mailboxes.  
+7. Select the mailboxes you want to test, then click **Test & Enable Mailbox** from the command bar.  
   
 This tests the incoming and outgoing email configuration of the selected mailboxes and enables them for email processing. If an error occurs in a mailbox, an alert is shown on the **Alerts** wall of the mailbox and the profile owner. Depending on the nature of the error, customer engagement apps try to process the email again after some time or disable the mailbox for email processing.  
   
@@ -366,22 +423,6 @@ Make sure you've got a good connection to [!INCLUDE[pn_Exchange_Online](../inclu
   
 > [!TIP]
 >  If you're unable to synchronize contacts, appointments, and tasks for a mailbox, you might want to select the **Sync items with Exchange from this org only, even if Exchange was set to sync with a different org** checkbox. More information: [When would I want to use this check box?](when-would-want-use-check-box.md)
-  
-## Test email configuration for all mailboxes associated with an email server profile 
-
-1. Do one of the following: 
-
-   - In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment.    
-   - In the legacy web client in the upper-right corner, select ![Gear icon.](media/selection-rule-gear-button.png), and then select **Advanced settings**. 
-
-2. Select **Settings** > **Email** > **Server profiles**.  
-  
-3. Select the [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] profile, and then select **Test & Enable Mailboxes**.  
-  
-    When you test the email configuration, an asynchronous job runs in the background. It might take a few minutes for the test to be completed. Customer engagement apps test the email configuration of all the mailboxes associated with the [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] profile. For the mailboxes configured with server-side synchronization for synchronizing appointments, tasks, and contacts, it also checks to make sure that they're configured properly.  
-  
-> [!TIP]
-> If you're unable to synchronize contacts, appointments, and tasks for a mailbox, you might want to select the **Sync items with Exchange from this org only, even if Exchange was set to sync with a different org** checkbox. More information: [When would I want to use this check box?](when-would-want-use-check-box.md)
   
 ## Enable server-side synchronization functionality for Exchange Online in China
 
