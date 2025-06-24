@@ -66,7 +66,7 @@ Make sure you have the System Administrator security role or equivalent permissi
 
     - **Server-to-Server Authentication (Same Tenant)**: Use this option when Exchange resides in the same tenant as Dynamics 365. More information: [Build web applications using server-to-server (S2S) authentication](/powerapps/developer/data-platform/build-web-applications-server-server-s2s-authentication)
 
-    - **Oauth (Cross Tenant)**: Use this option when Exchange resides in a different tenant than Dynamics 365. To get the information for this option, follow the steps in [Exchange Online cross-tenant authentication](connect-exchange-online-server-profile-oauth.md). Note that the **Locations and ports** fields are automatically populated.
+    - **Oauth (Cross Tenant)**: Use this option when Exchange resides in a different tenant than Dynamics 365. To get the information for this option, follow the steps in [Exchange Online cross-tenant authentication](connect-exchange-online-server-profile-oauth.md). The **Locations and ports** fields are automatically populated.
 
 10. Expand the **Advanced** section, and then use the tooltips to choose your email processing options. 
 
@@ -76,7 +76,7 @@ Make sure you have the System Administrator security role or equivalent permissi
 
 If you have an [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)] subscription in the same tenant as your subscription, customer engagement apps create a default profile named **Microsoft Exchange Online** for the email connection. 
  
-To verify that you have this profile:  
+To verify you have this profile:  
 
 #### [New admin center](#tab/new)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
@@ -125,11 +125,11 @@ Set server-side synchronization to be the default configuration method for newly
   
 7. Select **Save** to apply the changes.  
   
-All new users will have these settings applied to their mailbox.  
+All new users have these settings applied to their mailbox.  
 
 ## Configure mailboxes
 
-New users will have their mailboxes configured automatically with the settings you made in the prior section. For existing users who were added before you made these above settings, you must set the server profile and the delivery method for email, appointments, contacts, and tasks.  
+New users have their mailboxes configured automatically with the settings you made in the prior section. For existing users who were added before you made these above settings, you must set the server profile and the delivery method for email, appointments, contacts, and tasks.  
   
 In addition to administrator permissions, you must have Read and Write privileges on the Mailbox table to set the delivery method for the mailbox.  
   
@@ -152,7 +152,7 @@ In addition to administrator permissions, you must have Read and Write privilege
 7. Select all the mailboxes that you want to associate with the [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] profile.
 8. click **Apply Default Email Settings** in the top command bar, verify the settings, then select **OK**.  
   
-By default, the mailbox configuration will be tested and the mailboxes enabled when you select **OK**.  
+By default, the mailbox configuration is tested and the mailboxes enabled when you select **OK**.  
   
 **To edit mailboxes to set the profile and delivery methods:**
   
@@ -197,18 +197,18 @@ You can approve your own user mailbox if all of these conditions are met:
 
 - You have a minimum of User-level Write privileges on the Mailbox table.   
 
-- The mailbox is not a queue mailbox.
+- The mailbox isn't a queue mailbox.
 
-If **RequirePrivilegeToSelfApproveEmailAddress** is disabled (default) and you do not have the **Approve Email Addresses for Users or Queues** privilege, the **Approve Email** button does not appear. However, if you select **Test & Enable Mailbox** and the conditions mentioned above are met, the email address in your mailbox will be approved as part of the test and enable process.
+If **RequirePrivilegeToSelfApproveEmailAddress** is disabled (default) and you don't have the **Approve Email Addresses for Users or Queues** privilege, the **Approve Email** button doesn't appear. However, if you select **Test & Enable Mailbox** and the conditions mentioned are met, the email address in your mailbox are approved as part of the test and enable process.
 
 ### Delegate mailbox approval
 
-A user with the Global or Exchange admin role can delegate the mailbox approval process to another user by assigning the **Delegated Mailbox Approver** security role in Dynamics 365. A user with the **Delegated Mailbox Approver** role can approve mailboxes in the environment without being a Global or Exchange admin. As mentioned below in the [permission model](connect-exchange-online.md#permissions-model) section, the user also needs to have the **System Administrator** security role. This is a new role available in Dynamics 365 online version 9.2.22104.00170 or later.
+A user with the Global or Exchange admin role can delegate the mailbox approval process to another user by assigning the **Delegated Mailbox Approver** security role in Dynamics 365. A user with the **Delegated Mailbox Approver** role can approve mailboxes in the environment without being a Global or Exchange admin. As mentioned in the [permission model](connect-exchange-online.md#permissions-model) section, the user also needs to have the **System Administrator** security role. This new role is available in Dynamics 365 online version 9.2.22104.00170 or later.
 
 > [!IMPORTANT] 
-> You cannot assign the **Delegated Mailbox Approver** role unless you have the Global or Exchange admin role. If you try to assign this role but are not a Global or Exchange admin, you will receive an error: "You must be an Office 365 Global Administrator or an Exchange Administrator to assign the Delegated Mailbox Approver role." You may also see the error code 0x80090904.
+> You can't assign the **Delegated Mailbox Approver** role unless you have the Global or Exchange admin role. If you try to assign this role but aren't a Global or Exchange admin, you'll receive an error: "You must be an Office 365 Global Administrator or an Exchange Administrator to assign the Delegated Mailbox Approver role." You may also see the error code 0x80090904.
 > 
-> The **Delegated Mailbox Approver** role is not currently supported for assigning to a team. If you try to assign this role to a team, you will receive an error: "The Delegated Mailbox Approver role cannot be assigned to a team." You may also see error code 0x80090905 or the message "Failed to add role Delegated Mailbox Approver : CannotAssignDelegatedMailboxApproverRoleToTeam".
+> The **Delegated Mailbox Approver** role isn'tcurrently supported for assigning to a team. If you try to assign this role to a team, you'll receive an error: "The Delegated Mailbox Approver role can'tbe assigned to a team." You may also see error code 0x80090905 or the message "Failed to add role Delegated Mailbox Approver: CannotAssignDelegatedMailboxApproverRoleToTeam".
 > 
 > Because this is a Dynamics 365 security role, the role is assigned per environment. The role can be assigned to one or more users per environment.
 
@@ -241,10 +241,10 @@ The following table describes the permissions required to approve emails.
 > [!NOTE]
 > For more information about the Global and Exchange admin roles, see [Commonly used Microsoft 365 admin center roles](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide&preserve-view=true#commonly-used-microsoft-365-admin-center-roles) 
 
-- **Delegated Mailbox Approver**: Dynamics 365 security role which can be assigned by a Global admin or Exchange admin. A user with this role can approve mailboxes without being a Global or Exchange admin. For additional details, refer to the section above titled **Delegate mailbox approval**.
+- **Delegated Mailbox Approver**: Dynamics 365 security role which can be assigned by a Global admin or Exchange admin. A user with this role can approve mailboxes without being a Global or Exchange admin. For more details, refer to the section above titled **Delegate mailbox approval**.
 
 > [!NOTE]
-> This permissions model is being gradually rolled out and will be available as soon as it's deployed to your region. Check the version number provided in the following table for when the change will be provided. 
+> This permissions model is being gradually rolled out and is available as soon as it's deployed to your region. Check the version number provided in the following table for when the change are provided. 
 
 <table>
   <tr>
@@ -333,8 +333,8 @@ To approve emails, a Dynamics 365 user requires the **Approve Email Addresses fo
 ---
 
 6. Select a security role, then go to the **Miscellaneous Privileges** tab.
-7. Select the **Show only unassigned priviledges** view.
-8. Select **Approve Email Addresses for Users or Queues** and set the **priviledge** level .
+7. Select the **Show only unassigned privileges** view.
+8. Select **Approve Email Addresses for Users or Queues** and set the **privilege** level.
   
 > [!div class="mx-imgBorder"] 
 > ![Screenshot showing the Approve Email Address for User or Queues privilege.](media/approve-email-address-for-user-queues.png "Approve Email Address for User or Queues")
@@ -366,7 +366,7 @@ You can use a manual or programmatic processes to approve a mailbox.
 
 ##### Approve a mailbox programmatically
   
-Email addresses can't be approved using plug-ins or workflows. External applications can programmatically invoke email address approval by passing the _emailrouteraccessapproval_ attribute in the SDK request if the row is not already approved and if the caller is authorized per the above requirements. If the request includes additional attributes, the row’s email address may not be approved.
+Email addresses can't be approved using plug-ins or workflows. External applications can programmatically invoke email address approval by including the _emailrouteraccessapproval_ attribute in the SDK request, as long as the record hasn’t already been approved and the caller meets the required authorization criteria.
    
 ### Remove the requirement to approve mailboxes
 
@@ -411,7 +411,7 @@ Admins, as described in the preceding permissions model table, can change the se
 6. Select the **Active Mailboxes** grid view to show the list of mailboxes.  
 7. Select the mailboxes you want to test, then click **Test & Enable Mailbox** from the command bar.  
   
-This tests the incoming and outgoing email configuration of the selected mailboxes and enables them for email processing. If an error occurs in a mailbox, an alert is shown on the **Alerts** wall of the mailbox and the profile owner. Depending on the nature of the error, customer engagement apps try to process the email again after some time or disable the mailbox for email processing.  
+This process tests the incoming and outgoing email configuration of the selected mailboxes and enables them for email processing. If an error occurs in a mailbox, an alert is shown on the **Alerts** wall of the mailbox and the profile owner. Depending on the nature of the error, customer engagement apps try to process the email again after some time or disable the mailbox for email processing.  
   
 To see alerts for an individual mailbox, open the mailbox, and then under **Common**, select **Alerts**.  
   
