@@ -217,7 +217,7 @@ In the **Consumption per table** section, you can view the amount of storage con
 ### Dataverse search consumption and reporting
 In addition to database and file storage, Dataverse search includes the indexes that power different experiences. These indexes support search and generative AI across structured or tabular data and unstructured data stored in Dataverse, such as files.
 
-Storage consumed by Dataverse search is reported at the Environment level as a table called “DataverseSearch”, previously reported as “RelevanceSearch”.
+Storage consumed by Dataverse search is reported at the environment-level as a table called **DataverseSearch**. It was previously named **RelevanceSearch**.
  
 #### Dataverse search can also be monitored at the Dataverse Environment report in the Power Platform admin center:
 
@@ -225,7 +225,7 @@ Storage consumed by Dataverse search is reported at the Environment level as a t
 - Classic admin center: Billing > Licenses > Dataverse > Environments tab (consumption per table reporting)
 
 #### How much does the indexed Dataverse search data cost?
-All Dataverse indexes are reported at the Dataverse database capacity rate. Enabling Dataverse search will not turn on any other experience automatically. Learn more in [What is Dataverse search?](/power-apps/user/relevance-search-benefits)
+All Dataverse indexes are reported at the Dataverse database capacity rate. Turning on Dataverse search doesn't turn on any other experience automatically. Learn more in [What is Dataverse search?](/power-apps/user/relevance-search-benefits)
 
 ### Allocate capacity for an environment 
 
@@ -415,7 +415,7 @@ All experiences that are used by Dataverse search are limited. Learn more in [Fr
     When Dataverse search is set to **Default** after being set to **Off**, the indexes are only re-generated when triggered. Examples inlcude when a Copilot Studio agent uses a file&mdash; such as a local file, OneDrive file, or SharePoint file or Dataverse table&mdash;or if a prompt is submitted to an agent or Copilot. When the indexes are triggered, Dataverse search costs resume.
 
 > [!NOTE]
-> Dataverse search cannot be turned "On" or "Off" for different applications in the same environment. The enablement or disablement of the setting applies to all.
+> Dataverse search can't be turned **On** or **Off** for different applications in the same environment. The status of the setting applies to all applications in the environment.
 
 ### I just bought the new capacity-based licenses. How do I provision an environment by using this model?
 
