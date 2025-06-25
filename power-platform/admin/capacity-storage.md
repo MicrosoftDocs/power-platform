@@ -361,7 +361,7 @@ The **DataverseSearch** table (previously known as **RelevanceSearch**) is the c
 An admin can manage Dataverse search through the three states associated with this setting:
 
 **On:**
-- When Dataverse search is used, the search bar becomes visible.
+- When Dataverse search is turned on, the search bar becomes visible.
 - Generative AI experiences using Dataverse data are available. 
 
 **Default:**
