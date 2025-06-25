@@ -212,20 +212,20 @@ In the **Top environments consuming storage** tile, select **See all environment
 In the **Usage per storage type** tile, you can view the consumption of your database, log, and file storage. This section displays your prepaid allocated capacity, if any, along with the corresponding usage. Additionally, it indicates if any part of your Dataverse usage is billed under a pay-as-you-go plan. 
 
 #### Consumption per table 
-In the **Consumption per table** section, you can view the amount of storage consumed by each Dataverse table. To see table consumption for a specific storage type, select **Database**, **File**, or **Log** in the **Usage per storage type tile**. Select the  table name for the consumption trend, with the option to track daily usage trends for up to the past three months.
+In the **Consumption per table** section, you can view the amount of storage consumed by each Dataverse table. To see table consumption for a specific storage type, select **Database**, **File**, or **Log** in the **Usage per storage type** tile. Select the table name for the consumption trend, with the option to track daily usage trends, for up to the past three months.
 
 ### Dataverse search consumption and reporting
-In addition to the DB and File storage, Dataverse search includes the indexes that power different experiences. These indexes support search and generative AI across structured or tabular, as well as unstructured data stored in Dataverse (i.e. files).
-Storage consumed by Dataverse search was previously reported at the Environment level as a table called “RelevanceSearch” and is now reported as “DataverseSearch”.
+In addition to database and file storage, Dataverse search includes the indexes that power different experiences. These indexes support search and generative AI across structured or tabular data, as well as unstructured data stored in Dataverse, such as files.
+
+Storage consumed by Dataverse search was previously reported at the environment level as a table called **RelevanceSearch** and is now reported as **DataverseSearch**.
  
-**Dataverse search can also be monitored at the Dataverse Environment report in Power Platform Admin Center:**
+#### Dataverse search can also be monitored at the Dataverse Environment report in the Power Platform admin center:
 
-- Legacy PPAC: Billing > Licenses > Dataverse > Environment tab (consumption per table reporting)
-- New PPAC: Licensing > Dataverse > Environments tab (consumption per table reporting) 
+- New admin center: Licensing > Dataverse > Environments tab (consumption per table reporting) 
+- Classic admin center: Billing > Licenses > Dataverse > Environments tab (consumption per table reporting)
 
-**How much does the indexed Dataverse search data cost?**
-All Dataverse indexes are reported at the Dataverse Database Capacity rate. This is applicable only to Dataverse search and does not turn on any other setting of the experiences that is enabled by Dataverse search. For more details about Dataverse search and the experiences it enables see [What is Dataverse search?](/power-apps/user/relevance-search-benefits)
-
+#### How much does the indexed Dataverse search data cost?
+All Dataverse indexes are reported at the Dataverse database capacity rate. This is applicable only to Dataverse search and doesn't turn on any other setting of the experiences that's used by Dataverse search. Learn more in [What is Dataverse search?](/power-apps/user/relevance-search-benefits)
 
 ### Allocate capacity for an environment 
 
@@ -322,10 +322,7 @@ This tenant is 10 GB over in log usage but has 20 GB available in database capac
 
 You can always [free up storage](free-storage-space.md), [delete unwanted environments](delete-environment.md), or buy more capacity to be compliant with storage usage. To learn more about capacity add-ons, go to the [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/p/?LinkId=866544) or the ["Add-ons" section of the Power Apps and Power Automate Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130). You can work through your organization's standard procurement process to purchase [capacity add-ons](capacity-add-on.md).
 
-
-
-
-## FAQ
+## Frequently asked questions (FAQ)
 
 ### Why is my storage consumption decreasing in database and growing in file?
 
@@ -335,9 +332,7 @@ We're constantly optimizing Dataverse for ease of use, performance, and efficien
 
 As part of moving file-type data such as “Annotation” and “Attachment” out from database and into file storage, we periodically reclaim the freed database space. This leads to decreased usage of database capacity, while the table and file data size computations remain unchanged.
 
-
 ### Do indexes affect database storage usage?
-
 Database storage includes both the database rows and index files used to improve search performance. Indexes are created and optimized for peak performance and are updated frequently by the system by analyzing data use patterns. No user action is needed to optimize the indexes, as all Dataverse stores have tuning enabled by default. A fluctuation in database storage can be represented by an increased or decreased number of indexes on the database. Dataverse is continually being tuned to increase efficiency and incorporate new technologies that improve user experience and optimize storage capacity.  Common causes for an increase in index size are:
 
 - An organization making use of new functionality (this can be custom, out-of-the-box, or part of an update or solution installation).
@@ -355,65 +350,71 @@ Because custom Quick Find lookups are created by an admin in the org, these can 
 - Removing unneeded columns or tables.
 - Eliminating multiline text columns from inclusion.
 
->[!NOTE]
-The Dataverse search indexed data is the data that allows generative AI experiences to interpret the content using natural language. This index accrues to the overall Dataverse search consumption.
+> [!NOTE]
+> The Dataverse search indexed data is the data that allows generative AI experiences to interpret the content using natural language. This index accrues to the overall Dataverse search consumption.
 
 ### What is the "DataverseSearch" table and how can I reduce it?
 
-The **DataverseSearch** table (previously known as "RelevanceSearch") is the cumulative storage used by the global search, as well as generative AI experiences that are enabled by it. It includes the data from all searchable, retrievable, and filterable fields of the tables you indexed for your environment, as well as Copilot semantic indexes. 
+The **DataverseSearch** table (previously known as **RelevanceSearch**) is the cumulative storage used by the global search and generative AI experiences that are used by it. It includes the data from all searchable, retrievable, and filterable fields of the tables you indexed for your environment and Copilot semantic indexes. 
 
 ### Can Dataverse search be managed?
-An Admin can manage Dataverse search through the 3 states associated with this setting:
+An admin can manage Dataverse search through the three states associated with this setting:
 
 **On:**
-- When Dataverse Search is enabled, the search bar becomes visible.
-- Additionally, Generative AI experiences using Dataverse data are available 
+- When Dataverse search is used, the search bar becomes visible.
+- Generative AI experiences using Dataverse data are available. 
 
 **Default:**
-- When Dataverse Search is set to Default, the search bar is hidden.  
-- Generative AI experiences using Dataverse data remain available
+- When Dataverse search is set to **Default**, the search bar is hidden.  
+- Generative AI experiences using Dataverse data remain available.
 
 **Off:**
-- When Dataverse Search is disabled, the search bar is hidden, and Generative AI experiences using Dataverse data are limited.
+- When Dataverse search is turned off, the search bar is hidden.
+- Generative AI experiences using Dataverse data are limited.
 
->[!NOTE]
-- Dataverse search is set to “**On**” if you currently happen to use any of the above features (Dataverse search (previously known as RelevanceSearch) OR Copilot indexes in the existing environment. 
-  - Dataverse search will be set to “**On**” for any new Production, Sandbox or Default environment type and will be set to “Default” for any new other type of environment.
-- Existing environments prior to June 2025 that had Dataverse search set to “**Off**” will be automatically set to “**Default**” where search bar remains to be hidden and Generative AI experiences using Dataverse data remain available.
-- No other setting is turned on if Dataverse search is turned "**On**" or "**Default**".
+> [!NOTE]
+> - Dataverse search is set to **On** if you currently use Dataverse search or Copilot indexes in the existing environment.
+> - Dataverse search is set to **On** for any new production, sandbox, or default environment type and is set to **Default** for any new other type of environment.
+> - Existing environments, prior to June 2025 that had Dataverse search set to **Off**, are automatically set to **Default** where the search bar is hidden and generative AI experiences using Dataverse data remain available.
+> - No other setting is turned on if Dataverse search is turned **On** or **Default**.
 
-### What actions can Admins take?
-To ensure optimal operations for the organization, Admins with the proper permissions can either: increase capacity storage or reduce Dataverse search by performing all the below
-1.	Go to the Power Platform Admin Center and turn off Copilot experiences in model-driven apps 
-2.	Disable Copilot experiences in Microsoft Copilot Studio
-3.	Removing knowledge in Microsoft Copilot Studio
-4.	Disable Copilot in Dynamics 365 applications
-5.	Disable AI Prompts
-6.	Go to the Power Platform Admin Center and turn Dataverse search “Off”. It is strongly recommended to NOT perform this as this would directly impact all dependent generative AI experiences in your different applications, and all users using them.
+### What actions can admins take?
+To ensure optimal operations for the organization, admins with the proper permissions can either increase capacity storage or reduce Dataverse search by performing all the following actions:
+
+- Go to the Power Platform admin center and turn off Copilot experiences in model-driven apps. 
+- Turn off Copilot experiences in Microsoft Copilot Studio.
+- Removing knowledge in Copilot Studio.
+- Turn off Copilot in Dynamics 365 applications.
+- Turn off AI prompts.
+- Go to the Power Platform admin center and turn Dataverse search off.
+    > [!IMPORTANT]
+    > We don't recommended that you perform this action as this would directly impact all dependent generative AI experiences in your different applications, and all users using them.
 
 ### Turning Dataverse search off
-If Dataverse search is manually set to "**Off**", its Dataverse indexed data will be deleted, and the experiences that depend on it will be limited or unusable for all users of those experiences, which includes search and generative AI conversational capabilities.
-Environment Admins will have 12 hours to turn the feature back on without indexed data loss.
+If Dataverse search is manually set to **Off**, its Dataverse indexed data is deleted, and the experiences that depend on it are limited or unusable for all users of those experiences, which includes search and generative AI conversational capabilities.
+
+Environment admins have 12 hours to turn the feature back on without indexed data loss.
 
 **During 12 hours:** 
 - Dataverse search can be turned back on without indexed data loss.
 
 **After 12 hours:**
-- All indexed Dataverse data will be permanently deleted.
+- All indexed Dataverse data is permanently deleted.
 - Turning Dataverse search back on will re-trigger the indexing of Dataverse data.
 
 > [!IMPORTANT]
 > Turning off Dataverse search deprovisions and removes the index within a period of 12 hours. If you turn on Dataverse search after its been off for 12 hours, it provisions a fresh index that needs to go through a full sync. Syncing may take up to an hour or more for average size organizations, and a couple of days for large organizations. Be sure to consider these implications when you turn off Dataverse search temporarily.
 
 ### What happens if Dataverse serach is turned off?
-All experiences that are enabled by Dataverse search are limited. Learn more in [Frequently asked questions about Dataverse search](/power-apps/user/relevance-faq).
+All experiences that are used by Dataverse search are limited. Learn more in [Frequently asked questions about Dataverse search](/power-apps/user/relevance-faq).
 
-### Re-enabling Dataverse search
-**Selecting “On"**
-Once Dataverse search is set back “**On**” after being set to “**Off**”, all indexes are immediately re-triggered across all enabled experiences for them to work accordingly, and Dataverse search costs will resume.
+### Turning on Dataverse search again
 
-**Selecting “Default”**
-Once Dataverse search is set to “**Default**” after being set to “**Off**”, the indexes are only re-triggered when a Microsoft Copilot Studio skill is created, when an agent uses a File (uploaded from Desktop, OneDrive or Sharepoint) or Dataverse table, or if a prompt is submitted to an Agent or Copilot. Only when the indexes are triggered Dataverse search costs will resume.
+- **Selecting “On"**
+    When Dataverse search is set back to **On** after being set to **Off**, all indexes are immediately re-triggered across all enabled experiences for them to work accordingly, and Dataverse search costs resume.
+
+- **Selecting “Default”**
+    When Dataverse search is set to **Default** after being set to **Off**, the indexes are only re-triggered when a Copilot Studio skill is created, when an agent uses a file (uploaded from Desktop, OneDrive, or Sharepoint) or Dataverse table, or if a prompt is submitted to an agent or Copilot. When the indexes are triggered, Dataverse search costs resume.
 
 ### I just bought the new capacity-based licenses. How do I provision an environment by using this model?
 
