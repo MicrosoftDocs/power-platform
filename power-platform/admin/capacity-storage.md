@@ -217,7 +217,7 @@ In the **Consumption per table** section, you can view the amount of storage con
 ### Dataverse search consumption and reporting
 In addition to database and file storage, Dataverse search includes the indexes that power different experiences. These indexes support search and generative AI across structured or tabular data and unstructured data stored in Dataverse, such as files.
 
-Storage consumed by Dataverse search was previously reported at the environment level as a table called **RelevanceSearch** and is now reported as **DataverseSearch**.
+Storage consumed by Dataverse search is reported at the Environment level as a table called “DataverseSearch”, previously reported as “RelevanceSearch”.
  
 #### Dataverse search can also be monitored at the Dataverse Environment report in the Power Platform admin center:
 
@@ -225,7 +225,7 @@ Storage consumed by Dataverse search was previously reported at the environment 
 - Classic admin center: Billing > Licenses > Dataverse > Environments tab (consumption per table reporting)
 
 #### How much does the indexed Dataverse search data cost?
-All Dataverse indexes are reported at the Dataverse database capacity rate. This is applicable only to Dataverse search and doesn't turn on any other setting of the experiences that's used by Dataverse search. Learn more in [What is Dataverse search?](/power-apps/user/relevance-search-benefits)
+All Dataverse indexes are reported at the Dataverse database capacity rate. Enabling Dataverse search will not turn on any other experience automatically. Learn more in [What is Dataverse search?](/power-apps/user/relevance-search-benefits)
 
 ### Allocate capacity for an environment 
 
@@ -373,9 +373,7 @@ An admin can manage Dataverse search through the three states associated with th
 - Generative AI experiences using Dataverse data are limited.
 
 > [!NOTE]
-> - Dataverse search is set to **On** if you currently use Dataverse search or Copilot indexes in the existing environment.
 > - Dataverse search is set to **On** for any new production, sandbox, or default environment type and is set to **Default** for any new other type of environment.
-> - Existing environments, prior to June 2025 that had Dataverse search set to **Off**, are automatically set to **Default** where the search bar is hidden and generative AI experiences using Dataverse data remain available.
 > - No other setting is turned on if Dataverse search is turned **On** or **Default**.
 
 ### What actions can admins take?
@@ -414,7 +412,10 @@ All experiences that are used by Dataverse search are limited. Learn more in [Fr
     When Dataverse search is set back to **On** after being set to **Off**, all indexes are immediately re-triggered across all enabled experiences for them to work accordingly, and Dataverse search costs resume.
 
 - **Selecting “Default”**
-    When Dataverse search is set to **Default** after being set to **Off**, the indexes are only re-triggered when a Copilot Studio skill is created, when an agent uses a file (uploaded from Desktop, OneDrive, or SharePoint) or Dataverse table, or if a prompt is submitted to an agent or Copilot. When the indexes are triggered, Dataverse search costs resume.
+    When Dataverse search is set to **Default** after being set to **Off** the indexes are only re-generated when triggered. Examples inlcude when a Copilot Studio agent uses a file (locally uploaded, OneDrive, or SharePoint) or Dataverse table, or if a prompt is submitted to an agent or Copilot. When the indexes are triggered, Dataverse search costs resume.
+
+> [!NOTE]
+> Dataverse search cannot be turned "On" or "Off" for different applications in the same environment. The enablement or disablement of the setting applies to all.
 
 ### I just bought the new capacity-based licenses. How do I provision an environment by using this model?
 
