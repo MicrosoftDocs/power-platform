@@ -1,7 +1,7 @@
 ---
 title: Dataverse capacity-based storage details  
 description: Learn about the Microsoft Dataverse capacity-based storage model.
-ms.date: 05/29/2025
+ms.date: 06/25/2025
 ms.topic: concept-article
 author: marianaraujo 
 ms.subservice: admin
@@ -224,7 +224,7 @@ Storage consumed by Dataverse search was previously reported at the Environment 
 - New PPAC: Licensing > Dataverse > Environments tab (consumption per table reporting) 
 
 **How much does the indexed Dataverse search data cost?**
-All Dataverse indexes are reported at the Dataverse Database Capacity rate. This is applicable only to Dataverse search and does not turn on any other setting of the experiences that is enabled by Dataverse search. For more details about Dataverse search and the experiences it enables see [What is Dataverse search]([url]https://learn.microsoft.com/en-us/power-apps/user/relevance-search-benefits).
+All Dataverse indexes are reported at the Dataverse Database Capacity rate. This is applicable only to Dataverse search and does not turn on any other setting of the experiences that is enabled by Dataverse search. For more details about Dataverse search and the experiences it enables see [What is Dataverse search?](/power-apps/user/relevance-search-benefits)
 
 
 ### Allocate capacity for an environment 
@@ -406,8 +406,7 @@ Environment Admins will have 12 hours to turn the feature back on without indexe
 > Turning off Dataverse search deprovisions and removes the index within a period of 12 hours. If you turn on Dataverse search after its been off for 12 hours, it provisions a fresh index that needs to go through a full sync. Syncing may take up to an hour or more for average size organizations, and a couple of days for large organizations. Be sure to consider these implications when you turn off Dataverse search temporarily.
 
 ### What happens if Dataverse serach is turned off?
-All experiences that are enabled by Dataverse search are limited. For more details see [Frequently asked questions about Dataverse search]([url](/power-apps/user/relevance-faq)).
-
+All experiences that are enabled by Dataverse search are limited. Learn more in [Frequently asked questions about Dataverse search](/power-apps/user/relevance-faq).
 
 ### Re-enabling Dataverse search
 **Selecting “On"**
