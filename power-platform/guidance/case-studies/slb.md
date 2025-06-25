@@ -102,7 +102,7 @@ This empowers employees from different regions and facilities to connect, share 
 disrupting the user experience. “Each of these tools is powerful on its own, but together they form a seamless, unified platform. This tight integration not only amplified the capabilities of our AI-powered solution but also significantly accelerated our development timeline.
 >
 > - Mitanshu Garg
-### 
+
 
 The recommendations have transformed how users think about projects, providing the following benefits:
 
