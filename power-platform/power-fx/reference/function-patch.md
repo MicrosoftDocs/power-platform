@@ -6,7 +6,7 @@ author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 3/19/2025
+ms.date: 06/20/2025
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
@@ -37,7 +37,7 @@ Watch this video to learn how to use the Patch function:
 
 Use the **Patch** function to modify one or more records of a data source. The values of specific [fields](/power-apps/maker/canvas-apps/working-with-tables#elements-of-a-table) are modified without affecting other properties. For example, this formula changes the phone number for a customer named Contoso:
 
-`Patch( Customers, First( Filter( Customers, Name = "Contoso" ) ), { Phone: "1-212-555-1234" } )`
+`Patch( Customers, LookUp( Customers, Name = "Contoso" ), { Phone: "1-212-555-1234" } )`
 
 Use **Patch** with the **[Defaults](function-defaults.md)** function to create records. Use this behavior to build a [single screen](/power-apps/maker/canvas-apps/working-with-data-sources) for both creating and editing records. For example, this formula creates a record for a customer named Contoso:
 

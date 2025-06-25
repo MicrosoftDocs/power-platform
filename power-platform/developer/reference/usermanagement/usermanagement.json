@@ -10,12 +10,49 @@
     "https"
   ],
   "paths": {
+    "/usermanagement/environments/{environmentId}/syncReport": {
+      "get": {
+        "tags": [
+          "Users"
+        ],
+        "summary": "Get the user sync report for the requested environment.",
+        "operationId": "GetSyncReport",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The environment ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/SyncReport"
+            }
+          }
+        }
+      }
+    },
     "/usermanagement/environments/{environmentId}/user/applyAdminRole": {
       "post": {
         "tags": [
           "Users"
         ],
-        "summary": "Grants requesting tenant administrator the system administrator role within Dataverse in the environment.",
+        "summary": "Apply the system administrator role to the selected user.",
         "operationId": "ApplyAdminRole",
         "parameters": [
           {
@@ -40,6 +77,98 @@
           }
         }
       }
+    },
+    "/usermanagement/environments/{environmentId}/users/{userObjectId}/applyUser": {
+      "post": {
+        "tags": [
+          "Users"
+        ],
+        "summary": "Apply the user to the target environment.",
+        "operationId": "ApplyUser",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The environment ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "userObjectId",
+            "description": "The user object ID.",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/usermanagement/environments/{environmentId}/users/{userObjectId}/tryApplyUser": {
+      "post": {
+        "tags": [
+          "Users"
+        ],
+        "summary": "Apply user validation to the target environment.",
+        "operationId": "TryApplyUser",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The environment ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "userObjectId",
+            "description": "The user object ID.",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "SyncReport": {
+      "description": "Organization sync report contains last sync information from kepler",
+      "type": "object",
+      "properties": {
+        "lastSyncTime": {
+          "description": "Last sync time for the organization",
+          "type": "string",
+          "example": ""
+        }
+      },
+      "additionalProperties": false
     }
   },
   "securityDefinitions": {

@@ -36,7 +36,7 @@
           items:
             - name: Organize solutions
               href: organize-solutions.md
-            - name: Use segmented solutions
+            - name: Use table segmentation in solutions
               href: segmented-solutions-alm.md
     - name: Tools and apps used
       href: tools-apps-used-alm.md
