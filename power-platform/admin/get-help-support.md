@@ -181,8 +181,7 @@ Without a premium support plan, you can only submit request on technical issues.
 
 If you're experiencing a service outage, select the **Report outage** link to report the outage so that we can timely review and act on it.
 
-> [!div class="mx-imgBorder"]
-> ![Report outage.](media/new-report-outage.png "Report outage")
+   :::image type="content" source="media/live-chat-support/support-requests.png" alt-text="Screenshot that shows the Get support button under the Support requests section.":::
 
 Fill out the pages and then submit to have your support request receive an expedited review.
 
