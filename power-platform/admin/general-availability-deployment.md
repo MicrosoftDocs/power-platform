@@ -1,13 +1,13 @@
 ---
 title: General availability deployment 
 description: Learn about general availability deployment.
-author: samathur
+author: paulda64
 ms.subservice: admin
-ms.author: samathur 
+ms.author: paulda 
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 05/29/2025
+ms.date: 06/25/2025
 search.audienceType: 
   - admin
 ms.contributors:
@@ -55,7 +55,7 @@ The generally available platform version will be **9.2.25093.0** or higher.
 
 For each region listed, deployment begins as early as the Friday dark hours before the listed date.
 
-Environment Database version may not be updated until a few days after the schedule below. 
+Environment database version may not be updated until a few days after the schedule below. 
 
 |Region  | Deployment schedule for 2025 wave 2 general availability |
 |---------|---------|
