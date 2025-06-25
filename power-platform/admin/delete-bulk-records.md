@@ -69,7 +69,7 @@ As a system administrator, you can retrieve deleted records within a specified t
 
 You can learn more about how to restore deleted records using the recycle bin in [Turn on recycle bin](restore-deleted-table-records.md).
 
-If the recycle bin isn't available, learn more in [Back up and restore environments](backup-restore-environments.md).
+If the recycle bin isn't available, you can learn to [Back up and restore environments](backup-restore-environments.md).
 
 ### Restore all records deleted by a bulk delete job
 
