@@ -21,8 +21,6 @@ contributors:
 ---
 # General availability deployment
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 Each release wave becomes _generally available_ twice a year. Your environments automatically receive these mandatory updates.
 
 To test the upcoming updates, [opt in to early access updates](opt-in-early-access-updates.md).
