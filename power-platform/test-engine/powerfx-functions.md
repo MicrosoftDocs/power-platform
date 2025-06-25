@@ -1,11 +1,14 @@
 ---
 title: "Power Apps Test Engine Power Fx Functions (preview)"
 description: "Describes Power Fx functions you can use with Power Apps Test Engine."
-author: grant-archibald-ms
-ms.author: grarchib
-ms.date: 05/19/2025
+author: pvillads
+ms.author: pvillads
+ms.subservice: test-engine
+ms.date: 05/27/2025
 ms.reviewer: jdaly
 ms.topic: article
+contributors:
+- grant-archibald-ms
 ---
 
 # Power Apps Test Engine Power Fx Functions (preview)
@@ -69,7 +72,7 @@ This function waits for the property of the control to equal the specified value
 
 ## Preview functions
 
-The following functions can optionally be included in tests when the Power Fx Preview namespace by adding it to the allowlist in the testSettings section
+The following functions can optionally be included in tests when the Power Fx Preview namespace by adding `Preview` to the `allowPowerFxNamespaces` list in the [extensionModules](yaml.md#extensionmodules) property of the [testSettings](yaml.md#testsettings).
 
 > [!NOTE]
 >

@@ -1,15 +1,17 @@
 ---
 title: "Power Apps Test Engine YAML format (preview)"
 description: Describes the YAML format for test following the same guidelines as Power Fx.
-author: grant-archibald-ms
-ms.author: grarchib
-ms.date: 05/19/2025
+author: pvillads
+ms.author: pvillads
+ms.subservice: test-engine
+ms.date: 05/27/2025
 ms.reviewer: jdaly
 ms.topic: reference
 contributors:
  - JimDaly
  - jt000
  - FrankDahl
+ - grant-archibald-ms
 ---
 
 # Power Apps Test Engine YAML format (preview)
@@ -124,6 +126,7 @@ Used to define settings for the tests in the test plan.
 | Property | Type | Description |
 |---|---|---|
 | `browserConfigurations` | [BrowserConfiguration](#browserconfiguration)[] |Required. A list of browser configurations to be tested. At least one browser must be specified. |
+|`extensionModules`|[extensionModules](#extensionmodules)|Optional. Contains data about extensions to enable.|
 | `filePath` | string |Optional. The file path to a separate yaml file with all the test settings. If provided, it will **override** all the test settings in the test plan. |
 | `headless` | boolean |Optional. Default is true. If set to false, the browser shows up during test execution. |
 | `locale` | string |Optional. The locale/culture syntax in which the test cases or test steps are written in. If unspecified, `CultureInfo.CurrentCulture` is used for the locale by default for parsing the test steps. See [Region and language considerations](#region-and-language-considerations) |
@@ -131,6 +134,28 @@ Used to define settings for the tests in the test plan.
 | `timeout` | integer |Optional. Timeout value in milliseconds. Default is 30,000 milliseconds (30s). If any operation takes longer than the timeout limit, it ends the test in a failure. |
 |`powerFxTestTypes`|`name` `value` pair|Optional. A list of type name and Power Fx type definitions. See [powerFxTestTypes example](#powerfxtesttypes-example)|
 | `testFunctions` | `description` `code` pair |Optional. A list of description and Power Fx function definitions. See [testFunctions example](#testfunctions-example)|
+
+### extensionModules
+
+Contains data about extensions to enable.
+
+| Property | Type | Description |
+|---|---|---|
+|`enable`|bool|Whether or not extension modules are enabled.|
+|`allowPowerFxNamespaces`|list| List of the PowerFx namespaces to enable.|
+|`parameters`| key value pairs| Properties with values to control extension modules. At this time, only the boolean `enableDataverseFunctions` parameter is valid for this.|
+
+This example shows how to enable the PowerFx `Preview` namespace:
+
+```yaml
+testSettings:
+  extensionModules:
+    enable: true
+    allowPowerFxNamespaces:
+    - Preview
+```
+
+[Learn more about preview functions](powerfx-functions.md#preview-functions)
 
 ### Region and language considerations
 

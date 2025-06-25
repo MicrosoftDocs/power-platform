@@ -1,8 +1,8 @@
 ---
 title: "Retrieve data about the catalog in Power Platform"
 description: "Learn about APIs to use to retrieve data about the catalog in Power Platform using code."
-author: MattB-msft
-ms.author: mbarbour
+author: isaacwinoto
+ms.author: isaacwinoto
 ms.subservice: developer
 ms.date: 11/05/2024
 ms.reviewer: jdaly
@@ -10,8 +10,7 @@ ms.topic: how-to
 search.audienceType: 
   - developer
 contributors:
- - JimDaly
- - singhguru2001us
+ - skotapalle
 ---
 # Retrieve data about the catalog in Power Platform
 

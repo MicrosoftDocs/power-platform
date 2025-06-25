@@ -6,7 +6,7 @@ author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 4/3/2025
+ms.date: 06/20/2025
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
@@ -60,7 +60,7 @@ These functions do not delegate to a data source. However, **UpdateIf** and **Re
 **UpdateIf**(DataSource_, _Condition1_, _ChangeRecord1_ [, *Condition2*, *ChangeRecord2*, ... ] )
 
 - _DataSource_ – Required. The data source that contains the record or records that you want to modify.
-- _Conditions_ – Required. A formula that evaluates to **true** for the record or records that you want to modify. You can use column names of _DataSource_ in the formula.
+- _Conditions_ – Required. A formula that evaluates to **true** for the record or records that you want to modify. You can use column names of _DataSource_ in the formula. In case multiple _Conditions_ are passed, only the _ChangeRecord_ related to the first _Condition_ that evaluates to **true** is applied.
 - _ChangeRecord(s)_ - Required. For each corresponding condition, a change record of new property values to apply to records of _DataSource_ that satisfy the condition. If you provide the record inline using curly braces, property values of the existing record can be used in the property formulas.
 
 ## Examples
@@ -71,10 +71,10 @@ In these examples, you'll replace or modify records in a data source that's name
 
 | Formula                                                                                                                                                                                        | Description                                                                                                                                                       | Result                                                                                                                                                       |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Update(&nbsp;IceCream,<br>First(&nbsp;Filter(&nbsp;IceCream,&nbsp;Flavor="Chocolate"&nbsp;)&nbsp;), {&nbsp;ID:&nbsp;1,&nbsp;Flavor:&nbsp;"Mint&nbsp;Chocolate",&nbsp;Quantity:150&nbsp;} )** | Replaces a record from the data source.                                                                                                                           | ![Replace a record.](media/function-update-updateif/icecream-mint.png)<br><br>The **IceCream** data source has been modified.                                |
+|  **Update(&nbsp;IceCream,<br>LookUp(&nbsp;IceCream,&nbsp;Flavor="Chocolate"&nbsp;), {&nbsp;ID:&nbsp;1,&nbsp;Flavor:&nbsp;"Mint&nbsp;Chocolate",&nbsp;Quantity:150&nbsp;} )** | Replaces a record from the data source.                                                                                                                           | ![Replace a record.](media/function-update-updateif/icecream-mint.png)<br><br>The **IceCream** data source has been modified.                                |
 | **UpdateIf(&nbsp;IceCream, Quantity > 175, {&nbsp;Quantity:&nbsp;Quantity&nbsp;+&nbsp;10&nbsp;} )**                                                                                            | Modifies records that have a **Quantity** that is greater than **175**. The **Quantity** field is incremented by 10, and no other fields are modified.            | ![Modify records.](media/function-update-updateif/icecream-mint-plus10.png)<br><br>The **IceCream** data source has been modified.                           |
-| **Update(&nbsp;IceCream,<br>First(&nbsp;Filter(&nbsp;IceCream, Flavor="Strawberry"&nbsp;)&nbsp;),<br>{&nbsp;ID:&nbsp;3, Flavor:&nbsp;"Strawberry Swirl"} )**                                   | Replaces a record from the data source. The **Quantity** property hasn't been supplied in the replacement record, so that property will be _blank_ in the result. | ![Replace record when quantity not supplied.](media/function-update-updateif/icecream-mint-swirl.png)<br><br>The **IceCream** data source has been modified. |
-| **UpdateIf(&nbsp;IceCream, true, {&nbsp;Quantity:&nbsp;0&nbsp;} )**                                                                                                                            | Sets the value of the **Quantity** property for all records in the data source to 0.                                                                              | ![Set quantity for all to 0.](./media/function-update-updateif/icecream-mint-zero.png)<br> <br>The **IceCream** data source has been modified.               |
+| **Update(&nbsp;IceCream,<br>LookUp(&nbsp;IceCream, Flavor="Strawberry"&nbsp;),<br>{&nbsp;ID:&nbsp;3, Flavor:&nbsp;"Strawberry Swirl"} )**                                   | Replaces a record from the data source. The **Quantity** property hasn't been supplied in the replacement record, so that property will be _blank_ in the result. | ![Replace record when quantity not supplied.](media/function-update-updateif/icecream-mint-swirl.png)<br><br>The **IceCream** data source has been modified. |
+| **UpdateIf(&nbsp;IceCream, true, {&nbsp;Quantity:&nbsp;0&nbsp;} )**                                                                                                                            | Sets the value of the **Quantity** property for all records in the data source to 0.                                                                              | ![Set quantity for all to 0.](./media/function-update-updateif/icecream-mint-zero.png)<br> <br>The **IceCream** data source has been modified.       |
 
 ### Step by step
 

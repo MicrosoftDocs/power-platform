@@ -22,7 +22,7 @@ This article provides some best practices for using the data you gather from the
 
 ## Enable managed environments
 
-Maintain robust security and governance by making use of managed environment features in the default environment. Managed environment features provide advanced capabilities, such as monitoring, compliance, and security controls that are important for protecting your data. By enabling this feature, you can configure [sharing limits](/power-platform/admin/managed-environment-sharing-limits), gain more [usage insights](/power-platform/admin/managed-environment-usage-insights), [limiting user access to Microsoft Dataverse](/power-platform/admin/ip-firewall) from only allowed IP locations, and use [Power Platform Advisor](/power-platform/admin/power-platform-advisor) to get personalized recommendations to optimize the environment. Evaluate the current managed environments features and stay up to date with the product roadmap to maintain a secure, compliant, and well-governed default environment.
+Maintain robust security and governance by making use of managed environment features in the default environment. Managed environment features provide advanced capabilities, such as monitoring, compliance, and security controls that are important for protecting your data. By enabling this feature, you can configure [sharing limits](/power-platform/admin/managed-environment-sharing-limits), gain more [usage insights](/power-platform/admin/managed-environment-usage-insights), [limiting user access to Microsoft Dataverse](/power-platform/admin/ip-firewall) from only allowed IP locations, and use the [actions page](/power-platform/admin/power-platform-advisor) to get personalized recommendations to optimize the environment. Evaluate the current managed environments features and stay up to date with the product roadmap to maintain a secure, compliant, and well-governed default environment.
 
 ## Track connectors
 
@@ -38,9 +38,9 @@ As Power Platform adoption in your organization grows, you're likely to have own
 
 To maintain environment hygiene, establish processes and procedures to clean up orphaned and unused flows and apps. These processes are especially important for the default environment, where all users are potential makers.
 
-Use [Power Platform Advisor](../../admin/power-platform-advisor.md) to view recommendations for apps without valid owners and apps that haven't been used in the last 60 days. You can take action for each recommendation in the recommendation pane, or you can use the [Power Platform for Admin V2 connector](/connectors/powerplatformadminv2/) to automate tasks.
+Use the [actions page](../../admin/power-platform-advisor.md) to view recommendations for apps without valid owners and apps that haven't been used in the last 60 days. You can take action for each recommendation in the recommendation pane, or you can use the [Power Platform for Admin V2 connector](/connectors/powerplatformadminv2/) to automate tasks.
 
-Our recommendation is to use [Power Platform Advisor](../../admin/power-platform-advisor.md). For more custom processes, evaluate the [CoE Starter Kit](../coe/overview.md) to [set up clean-up for orphaned objects](../coe/setup-orphan-components.md) and [set up inactivity processes](../coe/setup-archive-components.md). You can use these processes as-is or modify them to suit the needs of your organization.
+Our recommendation is to use the [actions page](../../admin/power-platform-advisor.md). For more custom processes, evaluate the [CoE Starter Kit](../coe/overview.md) to [set up clean-up for orphaned objects](../coe/setup-orphan-components.md) and [set up inactivity processes](../coe/setup-archive-components.md). You can use these processes as-is or modify them to suit the needs of your organization.
 
 ## Discover highly used apps and flows
 
@@ -48,9 +48,9 @@ The default environment is designed for personal productivity, but makers can cr
 
 Apps that don't follow a proper application lifecycle management are prone to business continuity risks. Moving high-value apps from the default environment to a Managed Environment lets you use premium security and governance capabilities.
 
-Use [Power Platform Advisor](../../admin/power-platform-advisor.md) to view recommendations for [high-value apps](../../admin/power-platform-advisor.md#high-value-apps-in-default-environment) in the default environment. Contact makers and develop a plan to migrate these apps out of the default environment into their own Managed Environment.
+Use the [actions page](../../admin/power-platform-advisor.md) to view recommendations for [high-value apps](../../admin/operational-efficiency-recommendations.md#protect-high-value-apps-with-premium-security-and-governance-policies) in the default environment. Contact makers and develop a plan to migrate these apps out of the default environment into their own Managed Environment.
 
-Again, our recommendation is to use [Power Platform Advisor](../../admin/power-platform-advisor.md). For more custom processes, use the Power BI dashboard in the CoE Starter Kit to [identify widely shared apps and flows](../coe/power-bi-govern.md#identify-widely-shared-apps).
+Again, our recommendation is to use the [actions page](../../admin/power-platform-advisor.md). For more custom processes, use the Power BI dashboard in the CoE Starter Kit to [identify widely shared apps and flows](../coe/power-bi-govern.md#identify-widely-shared-apps).
 
 ## Discover highly shared apps
 

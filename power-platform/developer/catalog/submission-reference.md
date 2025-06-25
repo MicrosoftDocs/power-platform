@@ -1,8 +1,8 @@
 ---
 title: "Catalog item submission document reference"
 description: "Find details about the structure of the JSON data that must be included when submitting an item to the catalog in Power Platform"
-author: MattB-msft
-ms.author: mbarbour
+author: isaacwinoto
+ms.author: isaacwinoto
 ms.subservice: developer
 ms.date: 11/05/2024
 ms.reviewer: jdaly
@@ -10,8 +10,7 @@ ms.topic: reference
 search.audienceType: 
   - developer
 contributors:
- - JimDaly
- - singhguru2001us
+ - skotapalle
 ---
 # Catalog item submission document reference
 

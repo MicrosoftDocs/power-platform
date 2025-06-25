@@ -1,14 +1,15 @@
 ---
 title: "Test Engine feature lifecycle (preview)"
 description: "Describes how Test Engine features progress from open source to preview to general availability"
-author: grant-archibald-ms
-ms.author: grarchib
+author: pvillads
+ms.author: pvillads
+ms.subservice: test-engine
 ms.date: 05/19/2025
 ms.reviewer: jdaly
 ms.topic: article
 contributors:
  - JimDaly
- - pvillads
+ - grant-archibald-ms
 ---
 
 # Test Engine feature lifecycle (preview)
@@ -48,7 +49,7 @@ Features that demonstrate value in the open source environment might progress to
 testSettings:
   extensionModules:
     enable: true
-    allowNamespaces:
+    allowPowerFxNamespaces:
       - Preview
 ```
 

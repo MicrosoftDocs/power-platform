@@ -32,6 +32,12 @@ Understanding Copilot Studio architecture concepts and exploring solution ideas 
 | [**Guidance for using instructions in generative mode**](/microsoft-copilot-studio/guidance/generative-mode-guidance) | Learn how to write the best instructions for your agent when it's using generative orchestration. |
 | [**Introduction to conversational experiences**](/microsoft-copilot-studio/guidance/cux-overview)| Design ideal conversational user experiences. |
 
+## Reference architectures
+
+| Title | Description |
+| --- | --- |
+| **[Use an autonomous agent in Copilot Studio for document processing](../reference-architectures/document-processing-agent.md)** | Learn how to build an autonomous agent in Copilot Studio for document processing. |
+
 ## Solution ideas
 
 | Title | Description |

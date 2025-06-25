@@ -1,11 +1,14 @@
 ---
 title: Testing nondeterministic AI in Power Apps (preview)
 description: Learn how to test AI components and verify nondeterministic outputs in Power Platform applications
-author: grant-archibald-ms
-ms.author: grarchib
+author: pvillads
+ms.author: pvillads
+ms.subservice: test-engine
 ms.date: 05/19/2025
 ms.reviewer: jdaly
 ms.topic: how-to
+contributors:
+ - grant-archibald-ms
 ---
 
 # Testing nondeterministic AI in Power Apps (preview)
