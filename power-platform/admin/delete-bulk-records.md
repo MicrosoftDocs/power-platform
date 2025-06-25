@@ -35,7 +35,7 @@ With bulk deletion, you can perform the following operations:
 - Schedule the start time of a recurring bulk delete.
 - Retrieve the information about the failures that occurred during a bulk deletion.  
 
-You can access bulk delete settings in the Microsoft Power Platform admin center. To update the settings, ensure you have the System Administrator permission. To verify your security role, see [View your user profile](/powerapps/user/view-your-user-profile). If you lack the necessary permissions, contact your system administrator.
+You can access bulk delete settings in the Microsoft Power Platform admin center. To update the settings, ensure you have System Administrator permissions. To verify your security role, see [View your user profile](/powerapps/user/view-your-user-profile). If you lack the necessary permissions, contact your system administrator.
   
 ## Delete bulk data
 
