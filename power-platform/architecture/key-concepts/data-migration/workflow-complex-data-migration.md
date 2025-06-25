@@ -13,7 +13,7 @@ ms.date: 05/23/2025
 
 # Suggested workflow for a complex data migration
 
-This article suggests a step-by-step process for migrating large amounts of data. When transferring data from a powerful cloud-based CRM, it's important to plan carefully because of its complex setup—like custom objects, links between data, and unique record IDs. You need to think through both the technical steps and how the migration will work in practice.
+This article suggests a step-by-step process for migrating large amounts of data. When transferring data from a powerful cloud-based CRM, it's important to plan carefully because of its complex setup—like custom objects, links between data, and unique record IDs. You need to think through both the technical steps and how the migration works in practice.
 
 - **Technical approach**: Covers key migration steps—extracting, transforming, and loading data into Dataverse—while ensuring integrity, preserving relationships, and optimizing performance through validation and error handling.
 - **Functional approach**: Covers functional migration tasks like data segmentation and archiving, and highlights the need to involve business stakeholders to ensure the data meets their needs.
@@ -28,7 +28,7 @@ Ensure a smooth migration by following a structured approach—extract, transfor
 
 ### Extract data from source to staging database
 
-For complex data migrations, we recommended to stage data in a separate database (for example, SQL Server). This staging area captures a snapshot of the source system without disrupting ongoing business operations.
+For complex data migrations, we recommended staging data in a separate database (for example, SQL Server). This staging area captures a snapshot of the source system without disrupting ongoing business operations.
 
 **Key considerations**:
 
@@ -45,7 +45,7 @@ After extracting data from the source system, transform it into a target staging
 **Key transformation steps:**
 
 - **Field mapping:** Map source columns to target Dataverse columns. Use scripts to join and merge tables where needed.
-- **Optionset conversion:** Convert text-based optionset values to Dataverse integers using a mapping table (e.g. OptionSetMapping) and bulk update queries. Create a to standardize and automate the transformation of optionset values from source to target systems.
+- **Optionset conversion:** Convert text-based optionset values to Dataverse integers using a mapping table (for example, OptionSetMapping) and bulk update queries. Create a table to standardize and automate the transformation of optionset values from source to target systems.
 
     **Table**: OptionSetMapping:
     | Column name | Data type |
@@ -68,13 +68,13 @@ After extracting data from the source system, transform it into a target staging
 
 - **Avoid custom GUIDs:** Let Dataverse generate GUIDs to prevent fragmentation and performance issues.
 - **String length checks:** Ensure string values fit Dataverse limits. Trim or adjust as needed.
-- **Calculated fields:** Add derived fields (e.g. Name for lookups) if missing in the source.
+- **Calculated fields:** Add derived fields (for example, Name for lookups) if missing in the source.
 - **Other consideration**: When designing tables to match the Dataverse schema, consider the following key columns and supporting tables.
   - **DataMigration_CreatedDateTime**: Autopopulated timestamp for tracking data load batches.
   - **Action flag**:  Indicates Insert (I), Update (U), or Delete (D).
   - **Processing flag**: Tracks status—Processed (P), Unprocessed (U), Error (E), or Success (S).
-  - **Unique column**: Use a unique ID (e.g. the unique ID from the source system) to map records.
-  - **Success/Error tables**: Maintain separate tables (e.g. Contact_Success, Contact_Error) to log outcomes and support retries.
+  - **Unique column**: Use a unique ID (for example, the unique ID from the source system) to map records.
+  - **Success/Error tables**: Maintain separate tables (for example, Contact_Success, Contact_Error) to log outcomes and support retries.
 
 ### Sequence tables and preload lookups
 
@@ -90,7 +90,7 @@ This approach defines the sequence of data migration load and works well in most
 
 - Use a unique identifier (for example, importsequencenumber) to match records between staging and Dataverse when GUIDs are generated during insert.
 - Separate success and error logs to avoid locking issues and improve performance.
-- Pre-load lookup GUIDs from already migrated tables to resolve references during insert.
+- Preload lookup GUIDs from already migrated tables to resolve references during insert.
 - Handle cyclic dependencies by:
   - Inserting records without dependent lookups.
   - Updating those lookups after related records are loaded.
@@ -106,9 +106,9 @@ The next step is to determine and implement your approach to loading data into D
     - Scribe
     - XrmToolBox’s Data Transporter
 1. **Key considerations (tool-agnostic)**:
-    - **Handle cyclic dependencies**: Sequence table loads to minimise circular lookups. Insert records without dependent lookups, then update them later.
-    - **Track record IDs**: Capture Dataverse GUIDs in a success table, then update the main table using a unique identifier (e.g. importsequencenumber).
-    - **Optimise batch size and number of threads**: To maximize performance, use []`ExecuteMultipleRequests`](/power-apps/developer/data-platform/org-service/execute-multiple-requests) which can execute 1,000 requests per batch and up to 52 parallel threads. Consider the [Service Protection API
+    - **Handle cyclic dependencies**: Sequence table loads to minimize circular lookups. Insert records without dependent lookups, then update them later.
+    - **Track record IDs**: Capture Dataverse GUIDs in a success table, then update the main table using a unique identifier (for example, importsequencenumber).
+    - **Optimize batch size and number of threads**: To maximize performance, use []`ExecuteMultipleRequests`](/power-apps/developer/data-platform/org-service/execute-multiple-requests) which can execute 1,000 requests per batch and up to 52 parallel threads. Consider the [Service Protection API
   limits](/power-apps/developer/data-platform/api-limits?tabs=sdk#how-service-protection-api-limits-are-enforced)
 
     | **Measure**                   | **Description**                                               | **Limit per web server**                                      |
@@ -118,32 +118,32 @@ The next step is to determine and implement your approach to loading data into D
     | Number of concurrent requests | The number of concurrent requests made by the user            | 52 or higher                                                  |
 
     To achieve optimal performance, tune batch size and thread count based on table complexity:
-    - **Out-of-the-box (OOB) tables** (for example, Contact, Account, Lead): These are slower due to built-in plugins and jobs. Recommended: Batch size 200–300, up to 30 threads (if ≤10 lookups and 50–70 columns).
+    - **Out-of-the-box (OOB) tables** (for example, Contact, Account, Lead): These tables are slower due to built-in plugins and jobs. Recommended: Batch size 200–300, up to 30 threads (if ≤10 lookups and 50–70 columns).
     - **Simple tables** (few or no lookups): Recommended: Batch size ≤10, up to 50 threads.
     - **Moderately complex custom tables** (some lookups): Recommended: Batch size ≤100, up to 30 threads.
     - **Large/complex tables** (>100 columns, >20 lookups): Recommended: Batch size 10–20, up to 10–20 threads to reduce errors.
 
-1. **Infrastructure tips**: To maximize data migration performance, run your migration from a virtual machine (VM) located in the same region as your Dataverse environment. This significantly reduces latency and speeds up the entire process. Learn more: [Find the region for your Dataverse environment](/power-platform/admin/regions-overview?tabs=new#using-power-platform-admin-center)
+1. **Infrastructure tips**: To maximize data migration performance, run your migration from a virtual machine (VM) located in the same region as your Dataverse environment. This approach significantly reduces latency and speeds up the entire process. Learn more: [Find the region for your Dataverse environment](/power-platform/admin/regions-overview?tabs=new#using-power-platform-admin-center)
 
-1. **Error handling**: Don’t ignore errors—resolve them to prevent cascading failures. Use defaults (e.g. blank lookups, default optionset values) to insert placeholder records and capture GUIDs.
+1. **Error handling**: Don’t ignore errors—resolve them to prevent cascading failures. Use defaults (for example, blank lookups, default optionset values) to insert placeholder records and capture GUIDs.
 1. **Status updates**: Only set the active status during initial record insertion. For inactive records or custom state/status codes, update them after data validation. For most custom tables, status updates can follow immediately after insert. However, for special tables like Case, Opportunity, or Lead, delay status updates until the end of the migration. Once these records are closed, they can’t be modified unless reopened—a time-consuming process that risks data integrity.
-1. **Ownership and security**: Set the correct record owner during data insertion, as both user-level and business unit (BU) security in Dataverse are tied to the owner’s BU. Assigning the right BU at creation is critical—never update it afterward, as this removes all security roles.
+1. **Ownership and security**: Set the correct record owner during data insertion, as both user-level and business unit (BU) security in Dataverse are tied to the owner’s BU. Assigning the right BU at creation is critical—updating it afterwards removes all security roles.
     - **Use stub users**: 
-        - Dataverse supports stub users (non-licensed), which are useful for large or historical migrations. Stub users are automatically assigned the Salesperson security role—do not rename or modify this role. Stub users can own records if they have user-level read access to the relevant tables.
+        - Dataverse supports stub users (nonlicensed), which are useful for large or historical migrations. Stub users are automatically assigned the Salesperson security role—don't rename or modify this role. Stub users can own records if they have user-level read access to the relevant tables.
     - **Recommendations**:
-        - Create all non-licensed users during migration with the correct BU set at insert time.
-        - Do not change the BU after creation—doing so removes all roles, including Salesperson.
+        - Create all nonlicensed users during migration with the correct BU set at insert time.
+        - Don't change the BU after creation—doing so removes all roles, including Salesperson.
         - Ensure the Salesperson role has read access to all migration-eligible tables.
         - Even users disabled in the Dataverse environment with this role can own records.
 
-1. **Currency handling**: Set exchange rates during insert using a pre-validation plugin, as Dataverse doesn’t support historical rates.
+1. **Currency handling**: Set exchange rates during insert using a prevalidation plugin, as Dataverse doesn’t support historical rates.
 
 ### Post data load into Dataverse
 
-After loading data into Dataverse, follow these steps to ensure data integrity and minimise downstream issues:
+After loading data into Dataverse, follow these steps to ensure data integrity and minimize downstream issues:
 
 1. **Update the main table with GUIDs**:
-    - After a successful load, copy the Dataverse record GUIDs from the Success Table into the Main Table using a unique identifier (e.g. importsequencenumber).
+    - After a successful load, copy the Dataverse record GUIDs from the Success Table into the Main Table using a unique identifier (for example, importsequencenumber).
     - Update the Processing Flag to mark records as:
         - P – Processed
         - E – Errored
@@ -167,7 +167,7 @@ Data segmentation is a key step in migrating from one CRM system to Dataverse. O
 
 #### Tables segmentation
 
-Start by listing all tables eligible for migration, grouped by business area (e.g., sales, marketing, service). Then:
+Start by listing all tables eligible for migration, grouped by business area (for example, sales, marketing, service). Then:
 
 - Document the schema in Excel or a similar tool.
 - Run basic queries in the source system to check column usage.
@@ -177,15 +177,15 @@ This simple analysis can significantly reduce migration scope. In long-running C
 
 #### Columns relevancy
 
-Some source system columns may map directly to Dataverse, while others may become calculated fields. Separate these and consult business stakeholders to decide if migration jobs are needed.
+Some source system columns might map directly to Dataverse, while others might become calculated fields. Separate these columns and consult business stakeholders to decide if migration jobs are needed.
 
 Ignore columns that are only relevant in the source system or not meaningful in the target. This includes many out-of-the-box fields like Created By, Modified By, or Row Version Number, unless they serve a specific purpose in your migration.
 
 #### File type data
 
-If your source system includes file-type data, flag these early and plan a separate migration strategy. Consider the following:
+If your source system includes file-type data, flag these fields early and plan a separate migration strategy. Consider the following file types:
 - **Office documents (for example, Word, Excel, PowerPoint)**: For up to 20,000 files, migrate to a collaborative platform like SharePoint to enable multi-user access.
-- **Multimedia files (for example, images, videos)**: Choose a platform that supports playback—options may include SharePoint, streaming services, or other media-friendly storage solutions.
+- **Multimedia files (for example, images, videos)**: Choose a platform that supports playback—options might include SharePoint, streaming services, or other media-friendly storage solutions.
 - **Large volumes or file sizes**: If storage cost is a concern, use Azure Blob Storage or the native file column in Dataverse, which uses Azure Blob behind the scenes.
 - **Malware protection**: Run files through a malware detection tool (for example, Azure Advanced Threat Protection) before migration to ensure security.
 
@@ -199,13 +199,13 @@ Some data—like old emails, closed cases, or disqualified leads—remains impor
 
 Common candidates include:
 
-- Emails older than 3 years
+- Emails older than three years
 - Closed cases
 - Lost opportunities
 - Disqualified leads
 - Marketing emails, posts, and audit logs
 
-Review your system to identify additional tables that can be archived.
+Review your system to identify other tables that can be archived.
 
 #### Step 2: Choose an archival approach
 
@@ -218,7 +218,7 @@ Review your system to identify additional tables that can be archived.
 To ensure fast and reliable data migration into Dataverse:
 
 - Use a virtual machine (VM) in the same region as your Dataverse environment. This reduces latency and significantly improves migration speed.
-- Choose a high-performance VM. At minimum, use a D4 VM with 8 cores, 28 GB RAM, and 500 GB storage to handle large data volumes efficiently.
+- Choose a high-performance VM. At minimum, use a D4 VM with 8 cores, 28-GB RAM, and 500-GB storage to handle large data volumes efficiently.
 - Prefer a local database on the VM. Avoid remote connections during migration. If using Azure Data Factory, deploy it in the same region as your Dataverse environment for optimal performance.
 
 ## Next step
