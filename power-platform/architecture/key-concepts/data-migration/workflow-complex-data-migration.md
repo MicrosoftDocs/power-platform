@@ -13,9 +13,9 @@ ms.date: 05/23/2025
 
 # Suggested workflow for a complex data migration
 
-This article provides a suggested workflow for managing large-scale data migrations. Migrating data from a robust cloud-based CRM such as Salesforce requires careful planning due to its complex data structures, including custom objects, relationships, and unique record IDs. It's important to plan both  the technical aspects of the migration, as well as the functional approach. 
+This article provides a suggested workflow for managing large-scale data migrations. Migrating data from a robust cloud-based CRM such as Salesforce requires careful planning due to its complex data structures, including custom objects, relationships, and unique record IDs. It's essential to plan both the technical aspects of the migration and the functional approach.
 
-- **Technical approach**: Technical steps for data migration, such as extracting, transforming, and loading data into Dataverse, while maintaining data integrity and relationships. Includes error handling, data validation, and performance optimization.
+- **Technical approach**: Technical steps for data migration, such as extracting, transforming, and loading data into Dataverse while maintaining data integrity and relationships. Includes error handling, data validation, and performance optimization.
 - **Functional approach**: Functional aspects of data migration, such as data segmentation and archival strategies. Covers the importance of involving business stakeholders in the migration process to ensure that the migrated data meets their needs.
 
 ## Technical approach for data migration
@@ -28,27 +28,27 @@ To ensure a successful migration, follow a structured technical approach that in
 
 ### Extract data from source to staging database
 
-For complex data migrations, it's recommended to bring data into a staging database (for example, SQL Server). The staging database represents a snapshot of data at a specific point in time, and business continuity continues on the source system without impacting the staging database.
+For complex data migrations, a key recommendation is to stage the data in a staging database (for example, SQL Server). The staging database represents a snapshot of data at a specific point in time, and business continuity continues on the source system without impacting the staging database.
 
 Here are some considerations for bringing data into a staging database:
 
-- **Full vs. delta load**: Phase data as a full load vs. delta load by segregating data in the intermediate database. You can keep the data coming from the source system and auto-generate columns for date and time to keep track of when the data arrived in the staging database. At the time of migration, you can easily determine the delta based on these dates and load only the delta data.
+- **Full vs. delta load**: Phase data as a full load vs. delta load by segregating data in the intermediate database. You can keep the data coming from the source system and auto-generate columns for date and time to track when the data arrived in the staging database. During migration, you can easily determine the delta based on these dates and load only the delta data.
 
-- **Failover mechanism**: Continue after encountering failed records and minimize the loading of subsequent data records. When migrating data, some records may fail due to genuine reasons, such as field length exceeding limits, option set values not matching, or lookup values not existing in the target system. You can continue past these failures, and before the next run, try to resolve as many issues as possible and then rerun the migration.
+- **Failover mechanism**: It is essential to be able to continue after encountering failed records and minimize the impact of loading of subsequent data records. When migrating data, some records may fail due to genuine reasons, such as field length exceeding limits, option set values not matching, or lookup values not existing in the target system. You can continue past these failures for the current run; however, you should resolve as many issues as possible and then rerun the migration.
 
-- **Mapping of fields**: Easily create mapping for optionset text to integer value in Dataverse. In the source systems like Salesforce, the optionset values may come in the form of text, and you can match their text from the Dataverse optionset value text and do a transformation to appropriate value, so that all such transformations are preloaded in the database itself.
+- **Mapping of fields**: Mapping field values to the target data type and value ranges in the staging database before migrating the data to Dataverse can improve efficiency. For example, in a source system like Salesforce, the optionset values may come in the form of text, and you can match their text from the Dataverse optionset value text and do a bulk transformation to the appropriate integer value in the staging database.
 
-- **Data validations**: Run prevalidation queries on the retrieved data to check its integrity. In most cases, if the data is coming from a well-defined SaaS platform like Salesforce, it shouldn't have integrity problems, such as a contact record referencing an account that doesn't exist in the account table. However, these issues can occur in practice. When dealing with large datasets, data extraction can take anywhere from a few hours to a few days, and new data is continuously generated in the source system since it remains active. For example, if you extract the account table in one hour and then retrieve the contact table the next hour, new contact and account combinations may have been created in the meantime. As a result, you might retrieve a contact without retrieving the corresponding account record. A staging database can help in such scenarios by allowing you to easily eliminate such records beforehand. In the next extraction, based on the start date and time, you can retrieve all records that are fully integrated.
+- **Data validations**: Run prevalidation queries on the retrieved data to check its integrity. In most cases, if the data originates from a well-defined SaaS platform like Salesforce, it shouldn't have integrity issues, such as a contact record referencing an account that doesn't exist in the account table. However, these issues can occur in practice. When dealing with large datasets, data extraction can take anywhere from a few hours to a few days. New data is continuously generated in the source system since it remains active. For example, the query may retrieve a new row from one table but not a related row from another table it depends on. A staging database can help in such scenarios by allowing you to eliminate such records beforehand. In the subsequent extraction, based on the start date and time, you can retrieve all fully integrated records..
 
 - **Data visualization**: Visualization of all data in the database is easier when it comes to taking record counts, summing opportunity values, or using any other numeric or financial fields to cross-audit the records.
 
 ### Transform data into target staging database
 
-After you extract data from the source system, transform it into a database with tables that match Dataverse tables and contain values you can update directly in Dataverse. This database is called the target staging database. Consider the following transformations for this process:
+After you extract data from the source system, transform it into a database with tables that match Dataverse tables and contain values you can update directly in Dataverse. This database is the target staging database. Consider the following transformations for this process:
 
-- **Create mappings from source table column names to target** (Dataverse) column names and write scripts to send data from source table to target table. In some cases, data from multiple tables may come to a single table. You need to write join queries to bring the combined data.
+- **Create mappings from source table column names to target** (Dataverse) column names and write scripts to send data from source table to target table. In some cases, data from multiple tables may combined into a single table. You need to write join queries to bring the combined data.
 
-- **Option set mapping for transformation**: For optionset values, if source system has those text values, you can write the mapping from text to optionset value in Dataverse and write queries to resolve them. Creating a table like this is recomended:
+- **Option set mapping for transformation**: For optionset values, if the source system has those as text values, you can map them from text to optionset value in Dataverse and write queries to resolve them. Creating a table like this is recommended:
 
   OptionSetMapping:
 
@@ -59,79 +59,65 @@ After you extract data from the source system, transform it into a database with
     - Target Text (string)
     - Target Value (string)
 
-  And now, you must update all the optionset values in a table named contact in target, where you have two columns for optionset text and value.
-
-  You can write below query:
+Using this mapping table approach, you can bulk update the data with the target optionset values using an Update statement. For example, if you need to update all optionset values in a table named contact in target, where you have two columns for optionset text and value, you could use the following example Update statement:
 
   `Update C.\<OptionsetValue\> = M.\<TargetValue\> FROM Contact C JOIN OptionsetMapping M ON C.OptionsetText = M.TargetText AND M.TargetTableName = 'Contact'`
 
-- **Do not generate GUIDs for Dataverse**: Dataverse uses GUID as primary key. You can either supply a GUID during insert or let Dataverse generate it. You must not generate the GUIDs, if the source system isn't Dataverse. The reason is whatever algorithms you use for generating GUIDs, it might not be same which Dataverse uses internally to generate the GUIDs, and random GUIDs cause a heavy page fragmentation in Dataverse table which will reduce the performance of those tables and that won't be a good scenario. So, you should always let Dataverse generate the GUIDs, as they're coming from another Dataverse instance.
+- **Do not generate GUIDs for Dataverse**: Dataverse uses GUID as the primary key. You can either supply a GUID during insert or let Dataverse generate it. You should avoid generating the GUIDs if the source system isn't Dataverse. The reason is that the algorithms you use for generating GUIDs may not be the same as those Dataverse uses internally to generate GUIDs. Random GUIDs can cause heavy page fragmentation in Dataverse tables, which reduces the performance of those tables and is not a desirable scenario. 
 
-- **String lengths**: Check all string column lengths carefully and match them with the Dataverse column lengths. If the data exceeds the allowed length, take appropriate corrective actions such as trimming the data or reducing its length to match the Dataverse column requirements.
+- **String lengths**: Check all string column lengths carefully and match them with the Dataverse column lengths. If the data exceeds the allowed length, take appropriate corrective actions, such as trimming the data to match the Dataverse column requirements or increasing the Dataverse column length to accommodate the data.
+  
+- **Transformation**: Other transformations might be necessary, such as creating calculated columns. For example, in Dataverse, Name columns are shown in lookup values. If this field wasn't part of the source system, you can calculate the Name column and add those transformations in your staging database.
+  
+- **Additional column consideration**: When creating tables equivalent to the Dataverse schema, consider the following additional tables and columns.
 
-- **Transformation**: Any other transformations, such as creating calculated columns, may also be required. For example, in Dataverse, Name fields are shown in lookup values. If this field wasn't part of the source system, you can calculate the Name column and add those transformations in your staging database.
+  - **DM_CreatedDateTime**: This column should be auto-populated with the current date and time. This approach helps resolve conflicts or issues, such as when someone else is supplying the data from the source, allowing you to determine when you created each row. It also helps in deciding whether data should be part of a full load or an incremental delta load. You won't add this column for import into Dataverse, but it is still helpful to segregate data that came in different batches from the source system.
 
-- **Additional fields consideration**: When you create the tables equivalent to Dataverse schema, you should consider following additional tables and fields.
-
-  - **DM_CreatedDateTime**: This field should be auto-populated with the current date and time. This helps in resolving conflicts or issues, especially when someone else is supplying the data from the source, as you can determine when each row was received. It also helps in deciding whether data should be part of a full load or an incremental delta load. You won't add this field for import, but it would still help us to segregate data that came in different loads.
-
-  - **Action flag**: You can keep this as a one-character field and define characters such as 'I', 'U', and 'D' to indicate whether a particular record should be inserted, updated, or deleted. Using queries, you can then process records easily based on these values.
-
+  - **Action flag**: You can keep this as a one-character column and define characters such as 'I', 'U', and 'D' to indicate whether you need to insert, update or delete a particular row. Using queries, you can then process records easily based on these values.
+    
   - **Processing flag**: This field can be set to 'P', 'U', 'E', or 'S', representing Processed, Unprocessed, Error, or Success, to indicate the state of the record. You should update this field after the complete data load run based on the success table, not during the per-page data load.
 
-  - **Unique column**: You should keep one unique column depending on the source data. For example, Salesforce has a Salesforce ID in every table, which is a hexadecimal unique ID. You can create a similar schema in all migration-eligible Dataverse tables to help map rows from Salesforce to Dataverse. If there is no clearly defined unique column in the source tables, you can use the out-of-the-box importsequencenumber column.
+  - **Unique column**: Keep one unique column, depending on the source data. For example, Salesforce has a Salesforce ID in every table, which is a hexadecimal unique ID. You can create a similar schema in all migration-eligible Dataverse tables to help map rows from Salesforce to Dataverse. If there is no clearly defined unique column in the source tables, you can use the out-of-the-box importsequencenumber column.
 
-  - **Success / error tables**: You should keep two separate tables for recording errors and successes for every migrated table. For example, you can create Contact_Error and Contact_Success tables for the contact table migration. In the Error table, you should include columns such as unique column, error column, error message, and Dataverse Record ID. In the Success table, you can include the unique column, Dataverse Record ID, operation, and message columns.
+  - **Success/Error tables**: Maintain two separate tables to track errors and successes for every migrated table. For example, you can create Contact_Error and Contact_Success tables for the contact table migration. In the Error table, you should include columns such as unique column, error column, error message, and Dataverse Record ID. In the Success table, you can include the unique column, Dataverse Record ID, operation, and message columns.
 
 ### Sequence tables and pre-load lookups
 
-Now next important task after static transformations is to sequence the tables in such a way that you have minimum cyclic dependencies (when two or more tables have lookup to each other in such a way that you can't import a single table without having reference from other table). You can do this easily by this way.
+After static transformations, you should sequence the tables in such a way that you have a minimum of cyclic dependencies (when two or more tables have a lookup to each other, making it impossible to import a single table without a reference from another table). You can accomplish this using the following approach:
 
-- List down all the tables which are eligible for data migration
+- List down all the tables that are eligible for data migration
 
-- Note the number of unique table lookups that are eligible for migration. For example, if the Contact table has two Account lookups, count it as one since both point to a single table. You can ignore out-of-the-box (OOB) lookups like Created By or Modified By if they aren't eligible for migration in your scenario. Also, ignore any table lookups that you aren't migrating.
+- Note the number of unique table lookups that are eligible for migration. For example, if the Contact table has two Account lookups, count it as one since both point to a single table. You can ignore out-of-the-box (OOB) lookups, such as Created By or Modified By, if they aren't eligible for migration in your scenario. Also, ignore any table lookups that you aren't migrating.
 
-- Put the tables in the ascending order of no. of unique lookups.
+- Put the tables in ascending order by the number of unique lookups.
 
 - You can also include N:N relationship tables in this sequence, considering two lookups in those tables for the two related tables.
 
-- You can ignore multi table lookups like regarding objectid for this calculation.
+- You can ignore multi-table lookups, such as those related to special "regarding" column rows, for this calculation.
 
-This defines the sequence of data migration load, this may not be the best in some complicated scenarios, but it would be the best
-sequence in most of the cases.
+This approach would define the sequence of data migration load. This approach may not be the best in some complex scenarios, but it is the best sequence in most cases. The following are some additional strategies you can implement for other complex scenarios:
 
-- **Use a unique column, like import sequence number**: When loading data into Dataverse, store the inserted or updated records in a success table and include both the record GUIDs and a unique identifier. If a unique identifier does not exist, create an auto-generated integer column, such as importsequencenumber. Since GUIDs are generated by Dataverse, match rows between the success table and the main table using this column, and then transfer the record GUIDs to the main table.
-
-- **Keep error and success tables separate**: It's important to use separate tables for recording errors and successes during the data migration process. This separation prevents locking issues that can occur when reading and writing data simultaneously in the same table. Using separate tables help maintain performance and efficiency during the migration.
-
-- **Pre-load lookup GUIDs from the already migrated tables**: Once the migration process has commenced, you can begin populating the available lookup GUIDs from the previously migrated tables. This approach facilitates the resolution of these GUIDs during the record insertion phase.
-
-- **Plan to update lookups for cyclic dependencies**: In cases where there are cyclic dependencies, such as when a contact has an account lookup and an account has a contact lookup, it's necessary to load one entity before the other. Initially, the record should be inserted without the dependent lookup. Subsequently, while loading the second table, the previously loaded record's GUID can be inserted.
+- **Use a unique column, such as an import sequence number**: When loading data into Dataverse, store the inserted or updated records in a success table and include both the record GUIDs and a unique identifier. If a unique identifier does not exist, create an auto-generated integer column, such as importsequencenumber. Since GUIDs are generated by Dataverse, match rows between the success table and the main table using this column and then transfer the record GUIDs to the main table.
+- 
+- **Keep error and success tables separate**: It's essential to use separate tables for recording errors and successes during the data migration process. This separation prevents locking issues that can occur when reading and writing data simultaneously in the same table. Using separate tables helps maintain performance and efficiency during the migration.
+- 
+- **Pre-load lookup GUIDs from the already migrated tables**: Once the migration process has commenced, you can begin populating the available lookup GUIDs from the previously migrated tables. This approach facilitates the resolution of these GUIDs during the row insertion phase.
+- 
+- **Plan to update lookups for cyclic dependencies**: In cases where there are cyclic dependencies, such as when a contact has an account lookup and an account has a contact lookup, it's necessary to load one table before the other. Initially, you should insert the row without the dependent lookup. Subsequently, when loading the second table, you can use the GUID of the previously loaded row.
 
 ### Load data into Dataverse
 
-Now you can start the data loading into Dataverse. There are many tools available in the market which can be utilized, like SDK configuration
-migration tool, Azure Data Factory, Scribe, Xrm Toolbox's Data Transporter etc. Depending on size you can choose the tool wisely.
-But with almost every tool you should consider following things:
+The next step is to determine and implement your approach to loading data into Dataverse. There are several options for tools that can be utilized, including the Dataverse configuration migration tools, Azure Data Factory, KingswaySoft, Scribe, Xrm Toolbox's Data Transporter, and others. By reviewing each tool's capabilities against your size and complexity, you can identify which would be best for your migration.
+Regardless of the tool, the following are some considerations:
 
-- **Plan to update lookups for cyclic dependencies**: In cases where
-  there are cyclic dependencies, such as when a contact has an account
-  lookup, and an account has a contact lookup, you can load fewer lookups
-  object first and lookup of not loaded table can be updated later
-  instead of during insertion. To reduce these updates to minimal, you
-  should plan to load the objects in a sequence of no. of unique lookups
-  in a table as explained previously.
+- **Plan to update lookups for cyclic dependencies**: To minimize these updates, plan to load the objects in a sequence of unique lookups in a table, as explained previously. Check the tool that you are using to see if it has explicit support for this situation, where it handles the deferred updating of the value automatically.
 
-- **Update main table with record IDs**: During the data load you should
-  always bring the Dataverse record GUID in a separate success table and
-  after the load for that table has been completed, you should bring the
-  record GUIDs in the main table by using another unique column or
-  importsequencenumber type columns.
+- **Update main table with record IDs**: After the data load, you should always bring the Dataverse record GUID in a separate success table after the load of each table. You should also populate the row GUIDs in the main table using another unique column or an importsequencenumber type column.
 
 - **Optimize batch size and number of threads**: To
   maximize the speed of Dataverse operations, you need to be able to use
-  ExecuteMultiple requests which can have 1000 requests in a single
-  batch and you can execute upto 52 parallel threads. These are some of
+  ExecuteMultiple requests, which can have 1000 requests in a single
+  batch, and you can execute up to 52 parallel threads.  These are some of
   the [Service Protection API
   limits](/power-apps/developer/data-platform/api-limits?tabs=sdk#how-service-protection-api-limits-are-enforced)
 
@@ -141,59 +127,20 @@ But with almost every tool you should consider following things:
 | Execution time                | The combined execution time of all requests made by the user. | 20 minutes (1,200 seconds) within the five-minute sliding window |
 | Number of concurrent requests | The number of concurrent requests made by the user            | 52 or higher                                                  |
 
-Now the science lies in making the optimal combinations of these so that
-you get best performance. Here are some of the considerations which are recommended:
+To get the best performance, you must identify the optimal combinations of these options. Here are some of the considerations to identify where to start:
 
-- For out of the box tables like contact, account, lead, etc. no matter
-   what you do, speed of migration would be comparatively lower. The reason is there are many platform jobs and plugins which run for
-   these records, but if you aren't using too many lookups
-   during insertion like up to 10 lookup fields and total 50-70 columns
-   then batch size of 200-300 and the max parallel threads 30 give optimal speed.
+- For out-of-the-box tables, including common tables such as contact, account, and lead, no matter what combinations you start with, the speed of migration will be comparatively lower than the custom tables you create. The reason is that many platform jobs and plugins run for create of rows in these tables. However, if you aren't using too many lookups during insertion, such as up to 10 lookup fields and a total of 50-70 columns, then a batch size of 200-300 and a maximum of 30 parallel threads will typically give optimal speed.
 
-- For simpler tables with no lookups or few lookups, small
-   batch sizes like 10 or less and max parallel threads 50 also don't
-   create exception in no. of concurrent requests and exceptionally
-   speed up the migration.
+- For simpler tables with no lookups or few lookups, small batch sizes of 10 or less and a maximum of 50 parallel threads are a good starting point.
 
-- For any other custom table with decent number of lookups max batch
-   size 100 and max parallel threads of 30 give optimal speed.
+- For any other custom table with a decent number of lookups, a maximum batch size of 100 and a maximum of 30 parallel threads should give optimal speed.
 
-- For large and complex tables with more than 100 columns and
-   more than 20 lookups, you should keep batch size low like 10-20
-   and max parallel threads should be 10-20 only. This ensures that
-   data migration isn't failing in between, although speed of
-   migration will be low.
+- For large and complex tables with more than 100 columns and more than 20 lookups, you should keep batch size low, like 10-20 and max parallel threads should be 10-20 only. This approach reduces errors in processing, although the speed of migration will be slower.
 
-- Another important factor for migration speed is data centre
-   location. You should run the data migration from a VM in the same
-   region that speed up the whole operation exponentially. To find the
-   data center for your Dataverse environment, you can follow these
-   steps:
+- Another factor influencing migration speed is the location of the data you are importing in relation to the region of the Dataverse environment. You should run the data migration from an Azure virtual machine in the same region as the Dataverse environment that you are targeting. This approach will significantly accelerate the entire migration process. 
 
-   1. **Power Platform Admin Center**:
-
-      - Sign in to the Power Platform Admin Center.
-
-      - Navigate to the environment you want to check.
-
-      - Look for the `Region` or `Azure Region` information, which
-        indicates the data center's location.
-
-   1. **Ping the environment URL**:
-
-      - Use the environment's URL (for example, xxx.crm4.dynamics.com) and run a
-        ping command in your command prompt or terminal.
-
-      - The response includes a region hint, such as crm4 for Europe
-        or crm8 for India.
-
-   1. **PowerShell script**:
-
-      - If you manage multiple environments, you can use PowerShell to
-        retrieve the Azure region for each environment. A script can loop
-        through environments and output the azureRegionHint property
-
-   1. **Do not ignore errors for the end**: If there are errors in a load, you shouldn't just ignore them and move on, because this creates a ripple effect. For example, one account insertion failure may cause ten contact record insertions to fail, and those contact records may, in turn, cause failures in many other table records. Depending on the error type—such as string length issues, option set mismatches, lookup values not available, or owners not available in the organization—you should always have a default strategy for each type of error. You can reduce string lengths to insert the records, use a default option set value, or leave a lookup blank. This way, you get the GUID of the record being inserted and the ripple effect won't occur. You can keep track of these additional steps somewhere, perhaps in a separate column in the main table itself.
+  
+   1. **Do not ignore errors for the end**: If there are errors in a load, you shouldn't just ignore them and move on because this creates a ripple effect. For example, one account insertion failure may cause ten contact record insertions to fail, and those contact records, in turn, may cause failures in many other table records. Depending on the error type—such as string length issues, option set mismatches, lookup values not available, or owners not available in the organization—you should always have a default strategy for each type of error. You can reduce string lengths to insert the rows, use a default option set value, or leave a lookup blank. This way, you obtain the GUID of the row being inserted, and the ripple effect is avoided. You can keep track of this additional data in a separate column within the main table itself.
 
    1. **Delay loading status to the end**: You can update only the active status during record insertion, but for inactive records or any other custom state code, the status code needs to be updated later. For custom tables, you can immediately update the status code and state code after insertion. However, for special tables where state and status code play a crucial role—for example, case closure, opportunity closure, or lead qualification—you should delay the status update until the very end, even after data validation. This is because once cases or opportunities are closed, it's impossible to update them until you reopen them, which is a time-consuming process. If you miss any column updates, it also becomes a problem. Therefore, you should always delay such complex table status updates. Additionally, many tools might provide only CRUD operations and not these complex operations as part of their toolkit, so you might have to develop code-based tools for CaseClosure, OpportunityClose requests, or leadQualification requests.
 
@@ -236,11 +183,8 @@ After the data load has been completed for any table, you should immediately che
   - Reset to blank or some default lookup field value in case of some
     lookups aren't able to resolve.
 
-By following the above steps, you can ensure a smooth and efficient data
-migration process, minimizing the risk of errors and ensuring that all
-records in the main table are correctly updated with their respective
-Dataverse GUIDs. This methodical approach is important when
-dealing with large volumes of data and complex migration scenarios.
+By following the above approach, you can ensure a smooth and efficient data migration process, minimizing the risk of errors and ensuring that all records in the main table are correctly updated with their respective
+Dataverse GUIDs. This methodical approach is important when dealing with large volumes of data and complex migration scenarios.
 
 ## Functional data segmentation and archival framework
 
