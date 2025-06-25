@@ -26,7 +26,7 @@ Data volume continues to grow exponentially, as businesses advance their digital
 We're rolling out this feature now so check back if your user experience varies from the following content.
 
 > [!NOTE]
-> For licensing information, go to the [Power Apps and Power Automate licensing guide](https://go.microsoft.com/fwlink/p/?linkid=2085130).
+> For licensing information, go to the [Power Platform Licensing Guide](https://go.microsoft.com/fwlink/p/?linkid=2085130).
 >
 > If you purchased your Dynamics 365 subscription through a Microsoft partner, contact them to manage storage capacity. The following steps don't apply to partner-based subscriptions.
 
