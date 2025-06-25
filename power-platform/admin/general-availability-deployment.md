@@ -88,8 +88,7 @@ Environment database version may not be updated until a few days after the sched
 
 For frequency asked questions about early access, see [Early access updates FAQ](opt-in-early-access-updates.md#early-access-updates-faq) 
 
-### See also
-
+### Related content
 [Dynamics 365 release schedule](/dynamics365/get-started/release-schedule) <br />
 [Dynamics 365 and Power Platform Release Plans](/dynamics365/release-plans/) <br />
 [Policies and communications](policies-communications.md)
