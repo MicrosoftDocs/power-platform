@@ -140,7 +140,7 @@ To get the best performance, you must identify the optimal combinations of these
 - Another factor influencing migration speed is the location of the data you are importing in relation to the region of the Dataverse environment. You should run the data migration from an Azure virtual machine in the same region as the Dataverse environment that you are targeting. This approach will significantly accelerate the entire migration process. 
 
   
-   1. **Do not ignore errors for the end**: If there are errors in a load, you shouldn't just ignore them and move on, because this creates a ripple effect. For example, one account insertion failure may cause ten contact record insertions to fail, and those contact records may, in turn, cause failures in many other table records. Depending on the error type—such as string length issues, option set mismatches, lookup values not available, or owners not available in the organization—you should always have a default strategy for each type of error. You can reduce string lengths to insert the records, use a default option set value, or leave a lookup blank. This way, you get the GUID of the record being inserted and the ripple effect won't occur. You can keep track of these additional steps somewhere, perhaps in a separate column in the main table itself.
+   1. **Do not ignore errors for the end**: If there are errors in a load, you shouldn't just ignore them and move on because this creates a ripple effect. For example, one account insertion failure may cause ten contact record insertions to fail, and those contact records, in turn, may cause failures in many other table records. Depending on the error type—such as string length issues, option set mismatches, lookup values not available, or owners not available in the organization—you should always have a default strategy for each type of error. You can reduce string lengths to insert the rows, use a default option set value, or leave a lookup blank. This way, you obtain the GUID of the row being inserted, and the ripple effect is avoided. You can keep track of this additional data in a separate column within the main table itself.
 
    1. **Delay loading status to the end**: You can update only the active status during record insertion, but for inactive records or any other custom state code, the status code needs to be updated later. For custom tables, you can immediately update the status code and state code after insertion. However, for special tables where state and status code play a crucial role—for example, case closure, opportunity closure, or lead qualification—you should delay the status update until the very end, even after data validation. This is because once cases or opportunities are closed, it's impossible to update them until you reopen them, which is a time-consuming process. If you miss any column updates, it also becomes a problem. Therefore, you should always delay such complex table status updates. Additionally, many tools might provide only CRUD operations and not these complex operations as part of their toolkit, so you might have to develop code-based tools for CaseClosure, OpportunityClose requests, or leadQualification requests.
 
@@ -183,11 +183,8 @@ After the data load has been completed for any table, you should immediately che
   - Reset to blank or some default lookup field value in case of some
     lookups aren't able to resolve.
 
-By following the above steps, you can ensure a smooth and efficient data
-migration process, minimizing the risk of errors and ensuring that all
-records in the main table are correctly updated with their respective
-Dataverse GUIDs. This methodical approach is important when
-dealing with large volumes of data and complex migration scenarios.
+By following the above approach, you can ensure a smooth and efficient data migration process, minimizing the risk of errors and ensuring that all records in the main table are correctly updated with their respective
+Dataverse GUIDs. This methodical approach is important when dealing with large volumes of data and complex migration scenarios.
 
 ## Functional data segmentation and archival framework
 
