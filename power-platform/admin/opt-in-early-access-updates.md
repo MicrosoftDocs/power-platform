@@ -205,7 +205,7 @@ Throughout a release wave, your environments will be updated during one of the [
 
 See [Policies and communications](policies-communications.md#scheduled-system-updates-and-maintenance). 
 
-### See also
+### Related content
 [Dynamics 365 release schedule and early access ](/dynamics365/get-started/release-schedule)<br />
 [Dynamics 365 and Microsoft Power Platform Release Plans ](/dynamics365/release-plans/)<br />
 [Policies and communications](./policies-communications.md)
