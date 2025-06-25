@@ -44,11 +44,11 @@ Here are some considerations for bringing data into a staging database:
 
 ### Transform data into target staging database
 
-After you extract data from the source system, transform it into a database with tables that match Dataverse tables and contain values you can update directly in Dataverse. This database is called the target staging database. Consider the following transformations for this process:
+After you extract data from the source system, transform it into a database with tables that match Dataverse tables and contain values you can update directly in Dataverse. This database is the target staging database. Consider the following transformations for this process:
 
-- **Create mappings from source table column names to target** (Dataverse) column names and write scripts to send data from source table to target table. In some cases, data from multiple tables may come to a single table. You need to write join queries to bring the combined data.
+- **Create mappings from source table column names to target** (Dataverse) column names and write scripts to send data from source table to target table. In some cases, data from multiple tables may combined into a single table. You need to write join queries to bring the combined data.
 
-- **Option set mapping for transformation**: For optionset values, if source system has those text values, you can write the mapping from text to optionset value in Dataverse and write queries to resolve them. Creating a table like this is recomended:
+- **Option set mapping for transformation**: For optionset values, if the source system has those as text values, you can map them from text to optionset value in Dataverse and write queries to resolve them. Creating a table like this is recommended:
 
   OptionSetMapping:
 
@@ -59,29 +59,27 @@ After you extract data from the source system, transform it into a database with
     - Target Text (string)
     - Target Value (string)
 
-  And now, you must update all the optionset values in a table named contact in target, where you have two columns for optionset text and value.
-
-  You can write below query:
+Using this mapping table approach, you can bulk update the data with the target optionset values using an Update statement. For example, if you need to update all optionset values in a table named contact in target, where you have two columns for optionset text and value, you could use the following example Update statement:
 
   `Update C.\<OptionsetValue\> = M.\<TargetValue\> FROM Contact C JOIN OptionsetMapping M ON C.OptionsetText = M.TargetText AND M.TargetTableName = 'Contact'`
 
-- **Do not generate GUIDs for Dataverse**: Dataverse uses GUID as primary key. You can either supply a GUID during insert or let Dataverse generate it. You must not generate the GUIDs, if the source system isn't Dataverse. The reason is whatever algorithms you use for generating GUIDs, it might not be same which Dataverse uses internally to generate the GUIDs, and random GUIDs cause a heavy page fragmentation in Dataverse table which will reduce the performance of those tables and that won't be a good scenario. So, you should always let Dataverse generate the GUIDs, as they're coming from another Dataverse instance.
+- **Do not generate GUIDs for Dataverse**: Dataverse uses GUID as the primary key. You can either supply a GUID during insert or let Dataverse generate it. You should avoid generating the GUIDs if the source system isn't Dataverse. The reason is that the algorithms you use for generating GUIDs may not be the same as those Dataverse uses internally to generate GUIDs. Random GUIDs can cause heavy page fragmentation in Dataverse tables, which reduces the performance of those tables and is not a desirable scenario. 
 
-- **String lengths**: Check all string column lengths carefully and match them with the Dataverse column lengths. If the data exceeds the allowed length, take appropriate corrective actions such as trimming the data or reducing its length to match the Dataverse column requirements.
+- **String lengths**: Check all string column lengths carefully and match them with the Dataverse column lengths. If the data exceeds the allowed length, take appropriate corrective actions, such as trimming the data to match the Dataverse column requirements or increasing the Dataverse column length to accommodate the data.
+  
+- **Transformation**: Other transformations might be necessary, such as creating calculated columns. For example, in Dataverse, Name columns are shown in lookup values. If this field wasn't part of the source system, you can calculate the Name column and add those transformations in your staging database.
+  
+- **Additional column consideration**: When creating tables equivalent to the Dataverse schema, consider the following additional tables and columns.
 
-- **Transformation**: Any other transformations, such as creating calculated columns, may also be required. For example, in Dataverse, Name fields are shown in lookup values. If this field wasn't part of the source system, you can calculate the Name column and add those transformations in your staging database.
+  - **DM_CreatedDateTime**: This column should be auto-populated with the current date and time. This approach helps resolve conflicts or issues, such as when someone else is supplying the data from the source, allowing you to determine when you created each row. It also helps in deciding whether data should be part of a full load or an incremental delta load. You won't add this column for import into Dataverse, but it is still helpful to segregate data that came in different batches from the source system.
 
-- **Additional fields consideration**: When you create the tables equivalent to Dataverse schema, you should consider following additional tables and fields.
-
-  - **DM_CreatedDateTime**: This field should be auto-populated with the current date and time. This helps in resolving conflicts or issues, especially when someone else is supplying the data from the source, as you can determine when each row was received. It also helps in deciding whether data should be part of a full load or an incremental delta load. You won't add this field for import, but it would still help us to segregate data that came in different loads.
-
-  - **Action flag**: You can keep this as a one-character field and define characters such as 'I', 'U', and 'D' to indicate whether a particular record should be inserted, updated, or deleted. Using queries, you can then process records easily based on these values.
-
+  - **Action flag**: You can keep this as a one-character column and define characters such as 'I', 'U', and 'D' to indicate whether you need to insert, update or delete a particular row. Using queries, you can then process records easily based on these values.
+    
   - **Processing flag**: This field can be set to 'P', 'U', 'E', or 'S', representing Processed, Unprocessed, Error, or Success, to indicate the state of the record. You should update this field after the complete data load run based on the success table, not during the per-page data load.
 
-  - **Unique column**: You should keep one unique column depending on the source data. For example, Salesforce has a Salesforce ID in every table, which is a hexadecimal unique ID. You can create a similar schema in all migration-eligible Dataverse tables to help map rows from Salesforce to Dataverse. If there is no clearly defined unique column in the source tables, you can use the out-of-the-box importsequencenumber column.
+  - **Unique column**: Keep one unique column, depending on the source data. For example, Salesforce has a Salesforce ID in every table, which is a hexadecimal unique ID. You can create a similar schema in all migration-eligible Dataverse tables to help map rows from Salesforce to Dataverse. If there is no clearly defined unique column in the source tables, you can use the out-of-the-box importsequencenumber column.
 
-  - **Success / error tables**: You should keep two separate tables for recording errors and successes for every migrated table. For example, you can create Contact_Error and Contact_Success tables for the contact table migration. In the Error table, you should include columns such as unique column, error column, error message, and Dataverse Record ID. In the Success table, you can include the unique column, Dataverse Record ID, operation, and message columns.
+  - **Success/Error tables**: Maintain two separate tables to track errors and successes for every migrated table. For example, you can create Contact_Error and Contact_Success tables for the contact table migration. In the Error table, you should include columns such as unique column, error column, error message, and Dataverse Record ID. In the Success table, you can include the unique column, Dataverse Record ID, operation, and message columns.
 
 ### Sequence tables and pre-load lookups
 
