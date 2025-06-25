@@ -414,7 +414,7 @@ All experiences that are used by Dataverse search are limited. Learn more in [Fr
     When Dataverse search is set back to **On** after being set to **Off**, all indexes are immediately re-triggered across all enabled experiences for them to work accordingly, and Dataverse search costs resume.
 
 - **Selecting “Default”**
-    When Dataverse search is set to **Default** after being set to **Off**, the indexes are only re-triggered when a Copilot Studio skill is created, when an agent uses a file (uploaded from Desktop, OneDrive, or Sharepoint) or Dataverse table, or if a prompt is submitted to an agent or Copilot. When the indexes are triggered, Dataverse search costs resume.
+    When Dataverse search is set to **Default** after being set to **Off**, the indexes are only re-triggered when a Copilot Studio skill is created, when an agent uses a file (uploaded from Desktop, OneDrive, or SharePoint) or Dataverse table, or if a prompt is submitted to an agent or Copilot. When the indexes are triggered, Dataverse search costs resume.
 
 ### I just bought the new capacity-based licenses. How do I provision an environment by using this model?
 
