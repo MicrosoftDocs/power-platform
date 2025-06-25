@@ -184,6 +184,7 @@ Ignore columns that are only relevant in the source system or not meaningful in 
 #### File type data
 
 If your source system includes file-type data, flag these fields early and plan a separate migration strategy. Consider the following file types:
+
 - **Office documents (for example, Word, Excel, PowerPoint)**: For up to 20,000 files, migrate to a collaborative platform like SharePoint to enable multi-user access.
 - **Multimedia files (for example, images, videos)**: Choose a platform that supports playback—options might include SharePoint, streaming services, or other media-friendly storage solutions.
 - **Large volumes or file sizes**: If storage cost is a concern, use Azure Blob Storage or the native file column in Dataverse, which uses Azure Blob behind the scenes.
@@ -218,7 +219,7 @@ Review your system to identify other tables that can be archived.
 To ensure fast and reliable data migration into Dataverse:
 
 - Use a virtual machine (VM) in the same region as your Dataverse environment. This reduces latency and significantly improves migration speed.
-- Choose a high-performance VM. At minimum, use a D4 VM with 8 cores, 28-GB RAM, and 500-GB storage to handle large data volumes efficiently.
+- Choose a high-performance VM. At minimum, use a D4 VM with eight cores, 28-GB RAM, and 500-GB storage to handle large data volumes efficiently.
 - Prefer a local database on the VM. Avoid remote connections during migration. If using Azure Data Factory, deploy it in the same region as your Dataverse environment for optimal performance.
 
 ## Next step

@@ -13,7 +13,7 @@ ms.date: 05/22/2025
 
 # Data migration approaches
 
-Migrating data from an external customer relationship management (CRM) system to Microsoft Dataverse is a key step in modernizing your business applications. The right migration approach depends on the size and complexity of your data. This article explains simple, medium, and complex migration strategies, recommends tools for each scenario, and shares best practices to help you plan and execute a successful migration.
+The right approach for migrating data from an external CRM system to Microsoft Dataverse depends on your data’s size and complexity. This guide outlines simple, medium, and complex migration strategies, recommends tools for each scenario, and shares best practices to help you plan and execute a successful migration.
 
 ## Simple data migration
 
@@ -24,10 +24,10 @@ Migrating data from an external customer relationship management (CRM) system to
 
 **Approach**:
 
-- **Data assessment**: Identify tables and columns for migration and do basic data quality checks.
-- **Export and transform**: Use simple tools like Excel or CSV exports for data extraction. Do basic transformations using Power Query.
-- **Import to Dataverse**: Use Dataverse's built-in data import wizards for small-scale data imports.
-- **Verification**: Perform spot checks to ensure data integrity and functionality are maintained.
+- **Data assessment**: Identify relevant tables and columns for migration; perform basic data quality checks.
+- **Export and transform**: Use tools like Excel or CSV exports; apply basic transformations with Power Query.
+- **Import to Dataverse**: Use Dataverse’s built-in import wizard.
+- **Verification**: Perform spot checks to confirm data integrity and functionality.
 
 ## Medium data migration
 
@@ -38,44 +38,38 @@ Migrating data from an external customer relationship management (CRM) system to
 
 **Approach**:
 
-- **Detailed data assessment**: Assess source system schemas, validate relationships, and find data quality issues.
-- **ETL tools**: Use Extract, Transform, Load (ETL) tools such as Azure Data Factory to handle transformations and mappings.
+- **Detailed data assessment**: Review schema, validate relationships, and identify data quality issues.
+- **Transform**: Use Extract, Transform, Load (ETL) tools such as Azure Data Factory for transformations and mappings.
 - **Batch migration**: Run migration in batches to reduce downtime and system strain.
-- **Testing and validation**: Perform extensive test runs in a staging environment to check data accuracy and confirm relational integrity.
-- **Monitoring**: Use telemetry to track migration performance and resolve errors promptly.
+- **Testing and validation**: Run test migrations in a staging environment to validate accuracy and relationships.
+- **Monitoring**: Use telemetry to track performance and resolve issues quickly.
 
 ## Complex data migration
 
 **Definition**:
 
 - **Data volume**: More than 50 GB or more than 500,000 records.
-- **Data complexity**: High complexity with intricate relationships, custom tables, and interdependent workflows.
+- **Data complexity**: High—includes custom tables, complex relationships, and interdependent workflows.
 
 **Approach**:
 
-- **Comprehensive analysis**: Analyze schema, dependencies, and customizations in the source CRM.
-- **Specialized tools**: Use advanced tools like Azure Data Factory, SSIS (SQL Server Integration Services), Azure Synapse Analytics, Microsoft Fabric, or custom migration solutions for scalable data handling.
-- **Custom development**: Create custom scripts or apps to manage unique migration needs, including APIs for complex relationships and workflows.
-- **Phased migration**: Break the migration into logical phases to minimize disruption. Run pilot migrations before full-scale execution.
-- **Continuous validation**: Test at each stage of migration to ensure data fidelity and business functionality.
+- **Comprehensive analysis**: Review source schema, dependencies, and customizations thoroughly.
+- **Specialized tools**: Use scalable solutions like like Azure Data Factory, SSIS (SQL Server Integration Services), Azure Synapse Analytics, Microsoft Fabric, or custom migration solutions for scalable data handling.
+- **Custom development**: Build scripts or apps to handle APIs, complex relationships, and workflow logic.
+- **Phased migration**: Break migration into stages; run pilots before full rollout to reduce risk.
+- **Continuous validation**: Test at each phase to ensure data accuracy and business continuity.
 - **Post-migration optimization**: Optimize Dataverse configurations, workflows, and relationships after migration to achieve improved performance.
 
-## Workflow for complex data migration
+## Next step
 
-The next article, [Suggested workflow for a complex data migration](workflow-complex-data-migration.md), introduces a proven methodology for handling complex data migrations. The biggest challenge with large data migrations is managing errors, retrials, and tracking what is loaded and what is not. Migrations can often take a significant amount of time, ranging from a few days to a few weeks. Use a phased migration strategy so you only migrate delta data during production cutover.
+The next article outlines the strategic role of a staging database in large-scale and complex data migrations. Rather than transferring data directly from the source system to the target environment, the process introduces an intermediate staging layer. This pattern enhances data quality, ensures integrity, and reduces the likelihood of errors during the migration process.
 
-## Architecture diagram
-
-This diagram illustrates the importance of using a staging database for large and complex data migrations. Note that the source system isn't directly connected to the target system. Instead, you first stage the data into a temporary migration staging database, where it's transformed and validated before being loaded into Dataverse. This approach helps ensure data integrity and minimizes the risk of errors during the migration process.
-
-:::image type="content" source="media/data-migration-architecture.svg" alt-text="Architecture diagram showing the workflow for a complex data migration from a CRM system such as Salesforce or Sibel to Microsoft Dataverse." lightbox="media/data-migration-architecture2.svg":::
+> [!div class="nextstepaction"]
+> [Use a staging database for data migration](staging-database-approach.md)
 
 ## Related information
 
 - [Ingest exported Dataverse data with Azure Data Factory](/power-apps/maker/data-platform/export-to-data-lake-data-adf)
 - [Link your Dataverse environment to Microsoft Fabric and unlock deep insights](/power-apps/maker/data-platform/azure-synapse-link-view-in-fabric)
 
-## Next step
 
-> [!div class="nextstepaction"]
-> [Suggested workflow for a complex data migration](workflow-complex-data-migration.md)

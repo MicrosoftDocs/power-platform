@@ -18,9 +18,11 @@ ms.custom:
 
 # Data migration planning for go-live
 
-Many organizations struggle to plan the cutover for going live after complex data migration. Careful cutover planning helps avoid negative impact to the business. Here are some important things to consider when you plan the process.
+Cutover planning is often a challenge after complex data migrations. A well-structured approach helps prevent business disruption. Key considerations include timing, communication, validation, rollback strategy, and post-go-live monitoring.
 
 ## Assess the duration for migration
+
+Developers often build migration jobs for dev or UAT environments without accounting for production data volumes. Always measure CRUD throughput (records/sec) and estimate expected production load. Include a 20–30% buffer for monitoring overhead to better predict full migration duration.
 
 Developers often build data migration jobs for development or UAT (user acceptance testing) environments without knowing the actual data volume. Always assess the speed of CRUD (create, read, update, or delete) operations in records per second, and estimate how many operations are likely in production. Add a 20 to 30 percent buffer for monitoring jobs. This approach gives you a good idea of how long a full data migration takes.
 
