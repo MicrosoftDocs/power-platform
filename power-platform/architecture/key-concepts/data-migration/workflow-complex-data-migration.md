@@ -13,9 +13,9 @@ ms.date: 05/23/2025
 
 # Suggested workflow for a complex data migration
 
-This article provides a suggested workflow for managing large-scale data migrations. Migrating data from a robust cloud-based CRM such as Salesforce requires careful planning due to its complex data structures, including custom objects, relationships, and unique record IDs. It's important to plan both  the technical aspects of the migration, as well as the functional approach. 
+This article provides a suggested workflow for managing large-scale data migrations. Migrating data from a robust cloud-based CRM such as Salesforce requires careful planning due to its complex data structures, including custom objects, relationships, and unique record IDs. It's essential to plan both the technical aspects of the migration and the functional approach.
 
-- **Technical approach**: Technical steps for data migration, such as extracting, transforming, and loading data into Dataverse, while maintaining data integrity and relationships. Includes error handling, data validation, and performance optimization.
+- **Technical approach**: Technical steps for data migration, such as extracting, transforming, and loading data into Dataverse while maintaining data integrity and relationships. Includes error handling, data validation, and performance optimization.
 - **Functional approach**: Functional aspects of data migration, such as data segmentation and archival strategies. Covers the importance of involving business stakeholders in the migration process to ensure that the migrated data meets their needs.
 
 ## Technical approach for data migration
@@ -28,13 +28,13 @@ To ensure a successful migration, follow a structured technical approach that in
 
 ### Extract data from source to staging database
 
-For complex data migrations, it's recommended to bring data into a staging database (for example, SQL Server). The staging database represents a snapshot of data at a specific point in time, and business continuity continues on the source system without impacting the staging database.
+For complex data migrations, a key recommendation is to stage the data in a staging database (for example, SQL Server). The staging database represents a snapshot of data at a specific point in time, and business continuity continues on the source system without impacting the staging database.
 
 Here are some considerations for bringing data into a staging database:
 
-- **Full vs. delta load**: Phase data as a full load vs. delta load by segregating data in the intermediate database. You can keep the data coming from the source system and auto-generate columns for date and time to keep track of when the data arrived in the staging database. At the time of migration, you can easily determine the delta based on these dates and load only the delta data.
+- **Full vs. delta load**: Phase data as a full load vs. delta load by segregating data in the intermediate database. You can keep the data coming from the source system and auto-generate columns for date and time to track when the data arrived in the staging database. During migration, you can easily determine the delta based on these dates and load only the delta data.
 
-- **Failover mechanism**: Continue after encountering failed records and minimize the loading of subsequent data records. When migrating data, some records may fail due to genuine reasons, such as field length exceeding limits, option set values not matching, or lookup values not existing in the target system. You can continue past these failures, and before the next run, try to resolve as many issues as possible and then rerun the migration.
+- **Failover mechanism**: It is essential to be able to continue after encountering failed records and minimize the impact of loading of subsequent data records. When migrating data, some records may fail due to genuine reasons, such as field length exceeding limits, option set values not matching, or lookup values not existing in the target system. You can continue past these failures for the current run; however, you should resolve as many issues as possible and then rerun the migration.
 
 - **Mapping of fields**: Easily create mapping for optionset text to integer value in Dataverse. In the source systems like Salesforce, the optionset values may come in the form of text, and you can match their text from the Dataverse optionset value text and do a transformation to appropriate value, so that all such transformations are preloaded in the database itself.
 
