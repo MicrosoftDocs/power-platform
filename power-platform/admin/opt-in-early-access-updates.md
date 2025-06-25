@@ -16,8 +16,6 @@ ms.contributors:
 ---
 # Opt in to early access updates 
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 Microsoft Power Platform and customer engagement apps teams deliver two [major releases](policies-communications.md#major-release-events) per year (April and October) that offer new capabilities and functionality.
 
 Each major release includes features that may affect the user experience. You may opt in for early access to update to the new release. Use the early enrollment period to validate the new functionality.
