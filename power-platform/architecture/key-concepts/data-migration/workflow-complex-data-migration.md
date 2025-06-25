@@ -107,28 +107,17 @@ This approach would define the sequence of data migration load. This approach ma
 
 ### Load data into Dataverse
 
-Now you can start the data loading into Dataverse. There are many tools available in the market which can be utilized, like SDK configuration
-migration tool, Azure Data Factory, Scribe, Xrm Toolbox's Data Transporter etc. Depending on size you can choose the tool wisely.
-But with almost every tool you should consider following things:
+The next step is to determine and implement your approach to loading data into Dataverse. There are several options for tools that can be utilized, including the Dataverse configuration migration tools, Azure Data Factory, KingswaySoft, Scribe, Xrm Toolbox's Data Transporter, and others. By reviewing each tool's capabilities against your size and complexity, you can identify which would be best for your migration.
+Regardless of the tool, the following are some considerations:
 
-- **Plan to update lookups for cyclic dependencies**: In cases where
-  there are cyclic dependencies, such as when a contact has an account
-  lookup, and an account has a contact lookup, you can load fewer lookups
-  object first and lookup of not loaded table can be updated later
-  instead of during insertion. To reduce these updates to minimal, you
-  should plan to load the objects in a sequence of no. of unique lookups
-  in a table as explained previously.
+- **Plan to update lookups for cyclic dependencies**: To minimize these updates, plan to load the objects in a sequence of unique lookups in a table, as explained previously. Check the tool that you are using to see if it has explicit support for this situation, where it handles the deferred updating of the value automatically.
 
-- **Update main table with record IDs**: During the data load you should
-  always bring the Dataverse record GUID in a separate success table and
-  after the load for that table has been completed, you should bring the
-  record GUIDs in the main table by using another unique column or
-  importsequencenumber type columns.
+- **Update main table with record IDs**: After the data load, you should always bring the Dataverse record GUID in a separate success table after the load of each table. You should also populate the row GUIDs in the main table using another unique column or an importsequencenumber type column.
 
 - **Optimize batch size and number of threads**: To
   maximize the speed of Dataverse operations, you need to be able to use
-  ExecuteMultiple requests which can have 1000 requests in a single
-  batch and you can execute upto 52 parallel threads. These are some of
+  ExecuteMultiple requests, which can have 1000 requests in a single
+  batch, and you can execute up to 52 parallel threads.  These are some of
   the [Service Protection API
   limits](/power-apps/developer/data-platform/api-limits?tabs=sdk#how-service-protection-api-limits-are-enforced)
 
@@ -138,58 +127,19 @@ But with almost every tool you should consider following things:
 | Execution time                | The combined execution time of all requests made by the user. | 20 minutes (1,200 seconds) within the five-minute sliding window |
 | Number of concurrent requests | The number of concurrent requests made by the user            | 52 or higher                                                  |
 
-Now the science lies in making the optimal combinations of these so that
-you get best performance. Here are some of the considerations which are recommended:
+To get the best performance, you must identify the optimal combinations of these options. Here are some of the considerations to identify where to start:
 
-- For out of the box tables like contact, account, lead, etc. no matter
-   what you do, speed of migration would be comparatively lower. The reason is there are many platform jobs and plugins which run for
-   these records, but if you aren't using too many lookups
-   during insertion like up to 10 lookup fields and total 50-70 columns
-   then batch size of 200-300 and the max parallel threads 30 give optimal speed.
+- For out-of-the-box tables, including common tables such as contact, account, and lead, no matter what combinations you start with, the speed of migration will be comparatively lower than the custom tables you create. The reason is that many platform jobs and plugins run for create of rows in these tables. However, if you aren't using too many lookups during insertion, such as up to 10 lookup fields and a total of 50-70 columns, then a batch size of 200-300 and a maximum of 30 parallel threads will typically give optimal speed.
 
-- For simpler tables with no lookups or few lookups, small
-   batch sizes like 10 or less and max parallel threads 50 also don't
-   create exception in no. of concurrent requests and exceptionally
-   speed up the migration.
+- For simpler tables with no lookups or few lookups, small batch sizes of 10 or less and a maximum of 50 parallel threads are a good starting point.
 
-- For any other custom table with decent number of lookups max batch
-   size 100 and max parallel threads of 30 give optimal speed.
+- For any other custom table with a decent number of lookups, a maximum batch size of 100 and a maximum of 30 parallel threads should give optimal speed.
 
-- For large and complex tables with more than 100 columns and
-   more than 20 lookups, you should keep batch size low like 10-20
-   and max parallel threads should be 10-20 only. This ensures that
-   data migration isn't failing in between, although speed of
-   migration will be low.
+- For large and complex tables with more than 100 columns and more than 20 lookups, you should keep batch size low, like 10-20 and max parallel threads should be 10-20 only. This approach reduces errors in processing, although the speed of migration will be slower.
 
-- Another important factor for migration speed is data centre
-   location. You should run the data migration from a VM in the same
-   region that speed up the whole operation exponentially. To find the
-   data center for your Dataverse environment, you can follow these
-   steps:
+- Another factor influencing migration speed is the location of the data you are importing in relation to the region of the Dataverse environment. You should run the data migration from an Azure virtual machine in the same region as the Dataverse environment that you are targeting. This approach will significantly accelerate the entire migration process. 
 
-   1. **Power Platform Admin Center**:
-
-      - Sign in to the Power Platform Admin Center.
-
-      - Navigate to the environment you want to check.
-
-      - Look for the `Region` or `Azure Region` information, which
-        indicates the data center's location.
-
-   1. **Ping the environment URL**:
-
-      - Use the environment's URL (for example, xxx.crm4.dynamics.com) and run a
-        ping command in your command prompt or terminal.
-
-      - The response includes a region hint, such as crm4 for Europe
-        or crm8 for India.
-
-   1. **PowerShell script**:
-
-      - If you manage multiple environments, you can use PowerShell to
-        retrieve the Azure region for each environment. A script can loop
-        through environments and output the azureRegionHint property
-
+  
    1. **Do not ignore errors for the end**: If there are errors in a load, you shouldn't just ignore them and move on, because this creates a ripple effect. For example, one account insertion failure may cause ten contact record insertions to fail, and those contact records may, in turn, cause failures in many other table records. Depending on the error type—such as string length issues, option set mismatches, lookup values not available, or owners not available in the organization—you should always have a default strategy for each type of error. You can reduce string lengths to insert the records, use a default option set value, or leave a lookup blank. This way, you get the GUID of the record being inserted and the ripple effect won't occur. You can keep track of these additional steps somewhere, perhaps in a separate column in the main table itself.
 
    1. **Delay loading status to the end**: You can update only the active status during record insertion, but for inactive records or any other custom state code, the status code needs to be updated later. For custom tables, you can immediately update the status code and state code after insertion. However, for special tables where state and status code play a crucial role—for example, case closure, opportunity closure, or lead qualification—you should delay the status update until the very end, even after data validation. This is because once cases or opportunities are closed, it's impossible to update them until you reopen them, which is a time-consuming process. If you miss any column updates, it also becomes a problem. Therefore, you should always delay such complex table status updates. Additionally, many tools might provide only CRUD operations and not these complex operations as part of their toolkit, so you might have to develop code-based tools for CaseClosure, OpportunityClose requests, or leadQualification requests.
