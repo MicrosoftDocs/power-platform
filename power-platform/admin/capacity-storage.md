@@ -412,7 +412,7 @@ All experiences that are used by Dataverse search are limited. Learn more in [Fr
     When Dataverse search is set back to **On** after being set to **Off**, all indexes are immediately re-triggered across all enabled experiences for them to work accordingly, and Dataverse search costs resume.
 
 - **Selecting “Default”**:
-    When Dataverse search is set to **Default** after being set to **Off** the indexes are only re-generated when triggered. Examples inlcude when a Copilot Studio agent uses a file&mdash; such as a local file, OneDrive file, or SharePoint file or Dataverse table&mdash;or if a prompt is submitted to an agent or Copilot. When the indexes are triggered, Dataverse search costs resume.
+    When Dataverse search is set to **Default** after being set to **Off**, the indexes are only re-generated when triggered. Examples inlcude when a Copilot Studio agent uses a file&mdash; such as a local file, OneDrive file, or SharePoint file or Dataverse table&mdash;or if a prompt is submitted to an agent or Copilot. When the indexes are triggered, Dataverse search costs resume.
 
 > [!NOTE]
 > Dataverse search cannot be turned "On" or "Off" for different applications in the same environment. The enablement or disablement of the setting applies to all.
