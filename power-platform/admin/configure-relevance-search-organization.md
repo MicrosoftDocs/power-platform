@@ -4,11 +4,11 @@ description: Configure Dataverse search for your environment to improve search r
 author: marianaraujo 
 ms.component: pa-admin
 ms.topic: get-started
-ms.date: 05/29/2025
+ms.date: 06/25/2025
 ms.subservice: admin
 ms.custom: NewPPAC
 ms.author: maaraujo
-ms.reviewer: EllenWehrle
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 contributors:
@@ -72,7 +72,7 @@ Dataverse search is an opt-out feature, set to "**On**" for all new production 
 
 - When set to "**On**", the search bar in the header of all model-driven apps in the environment is visible, allowing users to have a global-search experience, and generative AI experiences may be or are enabled.
 - When set to "**Default**", the search bar in the header of all model-driven apps in the environment is hidden, and generative AI experiences may be enabled.
-- When set to "**Off**", the search bar in the header of all model-driven apps in the environment is hidden and generative AI experiences [are limited]([url](https://learn.microsoft.com/en-us/power-apps/user/relevance-search-benefits)).
+- When set to "**Off**", the search bar in the header of all model-driven apps in the environment is hidden and generative AI experiences are limited. Learn more in [What is Dataverse search?](/power-apps/user/relevance-search-benefits).
 
 Individual users aren't able to switch to [Quick Find search, formerly known as categorized search](/powerapps/user/quick-find). Tables must be included in the application you're using with Dataverse search. Be sure that any table you want users to search on are included in your application.
 
@@ -338,7 +338,7 @@ We recommend turning on Dataverse search so users can enjoy a better search expe
 > [!IMPORTANT]
 > Dataverse search counts towards the different storage entitlements you have in the tenant.
 
-For all FAQ about Dataverse search see [Frequently asked questions about Dataverse search](https://learn.microsoft.com/en-us/power-apps/user/relevance-faq).
+For all FAQ about Dataverse search see [Frequently asked questions about Dataverse search](/power-apps/user/relevance-faq).
 
 ### Related content
 
