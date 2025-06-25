@@ -49,7 +49,7 @@ Dataverse search has these benefits:
   
 - **Search across documents in Microsoft Dataverse**. Search for and find information contained in PDF, Microsoft Office document, HTML, XML, ZIP, EML, plain text, and JSON file formats. It also searches text in notes and attachments.
   
-- **Allows generative AI experiences**: Provides superior knowledge experience for search and agents for data in Dataverse tables and Files uploaded in Microsoft Copilot Studio.
+- **Allows generative AI experiences**: Process and organize data so that agents can provide more accurate and relevant answers and insights.
   
 For more information about Dataverse search, see [Search for tables and rows by using Dataverse search](/powerapps/user/relevance-search).
 
@@ -68,11 +68,11 @@ For more information about Dataverse search, see [Search for tables and rows by
 
 ## Managing Dataverse search
 
-Dataverse search is an opt-out feature, set to **On** for all new production and default environments. We recommend turning on Dataverse search so users have a search experience in model-driven apps.
+Dataverse search is an opt-out feature, set to **On** for all new production and default environments. We recommend using Dataverse search so users have a search experience in model-driven apps.
 
-- When set to "**On**", the search bar in the header of all model-driven apps in the environment is visible, allowing users to have a global, search experience, and generative AI experiences may be or are enabled.
-- When set to **Default**, the search bar in the header of all model-driven apps in the environment is hidden, and generative AI experiences may be enabled.
-- When set to **Off**, the search bar in the header of all model-driven apps in the environment is hidden and generative AI experiences are limited. Learn more in [What is Dataverse search?](/power-apps/user/relevance-search-benefits).
+- When set to **On**: The search bar, in the header of all model-driven apps in the environment, is visible, allowing users to have a global, search experience. Generative AI experiences may be available if they are turned on.
+- When set to **Default**: The search bar, in the header of all model-driven apps in the environment, is hidden. Generative AI experiences available if they are turned on.
+- When set to **Off**: The search bar, in the header of all model-driven apps in the environment, is hidden. Generative AI experiences are limited. Learn more in [What is Dataverse search?](/power-apps/user/relevance-search-benefits).
 
 Individual users aren't able to switch to [Quick Find search, formerly known as categorized search](/powerapps/user/quick-find). Tables must be included in the application you're using with Dataverse search. Be sure that any table you want users to search on are included in your application.
 
@@ -108,7 +108,7 @@ Turning on Dataverse search allows global search in all model-driven apps in tha
 
 > [!NOTE]
 - You can't turn off Dataverse search in specific apps.
-- Dataverse search doesn't allow any other feature automatically.
+- Dataverse search doesn't turn on any other feature automatically.
 
 When you provision a Dataverse search index, an indication that provisioning is in progress is visible. Once index provisioning is complete, it may take anywhere between an hour or more to complete a full sync for average size organizations, to a couple of days for large organizations.
 
