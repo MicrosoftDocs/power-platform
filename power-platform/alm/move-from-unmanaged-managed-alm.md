@@ -45,7 +45,7 @@ Except for your development environment, you should only have managed solutions 
     1. Import the *single* managed solution into your target environment. More information: [Export solutions](/powerapps/maker/data-platform/import-update-export-solutions). 
 4. Validate the target environment.
     1. There are various types of tests you can use to check whether specific functions or features of your app are working correctly. Some of these tests include unit tests, end-to-end, and user acceptance tests (UAT).
-    2. Upon importing the managed solution, all unmanaged components have been converted to managed. The objective is to eliminate active layers in your target environment. Check if there are any components with an active layer. If you find any, it may be because you forgot to include them in the unmanaged solution in your development environment. In that case, return to your development environment, add the missing components, and redeploy the managed solution.
+    2. Upon importing the managed solution, all unmanaged components have been converted to managed. The objective is to eliminate active layers in your target environment. Check if there are any components with an active layer. If you find any, it may be because you missed to include them in the unmanaged solution in your development environment. In that case, return to your development environment, add the missing components, and redeploy the managed solution.
 
 ## Next steps
 
