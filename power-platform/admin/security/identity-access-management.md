@@ -66,7 +66,7 @@ To ensure data security and compliance in the Power Platform ecosystem, it's cru
 
 ### Improve your security score and act on recommendations
 
-Restriction of guest access is a key way to improve your tenant's security posture. You can also take direct action by selecting the **Restrict guest user access** recommendation on the main **Security** page or in the action center in the Power Platform admin center. After you configure guest access restrictions, your tenant's security score improves, based on the number of environments that are configured.
+Restriction of guest access is a key way to improve your tenant's security posture. You can also take direct action by selecting the **Restrict guest user access** recommendation on the main **Security** page or in the actions page in the Power Platform admin center. After you configure guest access restrictions, your tenant's security score improves, based on the number of environments that are configured.
 
 ### Latency considerations
 
