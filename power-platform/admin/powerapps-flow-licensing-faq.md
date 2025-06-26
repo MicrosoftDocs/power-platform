@@ -778,19 +778,13 @@ Use the [Power Platform actions page](licensing-and-capacity-recommendations.md#
 
 #### How do I identify apps and flows that are using specific connectors that were under the extended use rights?
 
-The following inventory reports are available in the Power Platform admin center to help you identify your apps and flows with the connectors being used -  
+You can access inventory reports in the[Power Platform admin center](<https://admin.powerplatform.microsoft.com/home>) to help you identify your apps and flows that are using specific connectors.
 
-- [Power Apps inventory report](/power-platform/admin/powerapps-analytics-reports#power-apps---inventory-report) - Available at Power Platform admin center > **Analytics** > **Power Apps** > **Overview** tab > **App Inventory** tab. You can view the connectors list in the drill through the report. Right-click on the app with the connections and in the menu that opens, select **Drill-through** > **App Connectors**
+- [Power Apps inventory report](/power-platform/admin/powerapps-analytics-reports#power-apps---inventory-report)
 
-    :::image type="content" source="media/powerapps-flow-licensing-faq/inventory-reports-power-apps.png" alt-text="A screenshot of Power Apps Inventory report":::
+- [Power Automate Inventory report](/power-platform/admin/power-automate-analytics-reports#power-automate---inventory-report)
 
-    This takes you to the Connectors used by the app.
-
-    :::image type="content" source="media/powerapps-flow-licensing-faq/app-inventory.png" alt-text="A screenshot of details about connectors in Power Apps Inventory report":::
-
-- [Power Automate Inventory report](/power-platform/admin/power-automate-analytics-reports#power-automate---inventory-report) - Available at Power Platform admin center > **Analytics** > **Power Automate** > **Overview** tab > **Inventory** tab. Steps to view the connectors list in the drill through **Flow connectors** report are similar to the steps described above for Power Apps. 
-
-#### Can licenses be automatically assigned to ensure these apps and flows continue to function for users? 
+#### Can licenses be automatically assigned to ensure these apps and flows continue to function for users?
 
 Yes, we highly recommend that you enable auto-claim policy to help you automatically assign licenses to users and avoid any disruption. Similar to how [auto-claim policy is enabled by default for managed environments](/power-platform/admin/auto-claim-licensing#auto-claim-policy-enabled-by-default), starting January 2025 auto-claim policy will also be enabled for all customers who were in an extended transition period. More information: [Manage auto-claim policies in the Microsoft 365 admin center](/microsoft-365/commerce/licenses/manage-auto-claim-policies#auto-claim-policies-for-microsoft-power-apps)  
 
@@ -810,9 +804,9 @@ Yes, you can use the finance and operations apps connector to build canvas apps 
 
 ## Power Platform security and governance licensing requirements
 
-### Managed Environments 
+### Managed Environments
 
-Managed Environments is included as an entitlement with: 
+Managed Environments is included as an entitlement with:
 
 - Power Apps Premium
 - Power Apps per app
@@ -839,7 +833,7 @@ Customer Managed Key policy will only be enforced in environments that are activ
 - Microsoft 365 F5 Security & Compliance
 - Microsoft 365 E5/F5/G5 Information Protection and Governance
 
-For more information, see [Licensing requirements for Customer Managed Key](/power-platform/admin/customer-managed-key#licensing-requirements-for-customer-managed-key). 
+For more information, see [Licensing requirements for Customer Managed Key](/power-platform/admin/customer-managed-key#licensing-requirements-for-customer-managed-key).
 
 #### Customer Lockbox
 
@@ -850,11 +844,12 @@ Enabling Customer Lockbox enforces the policy only for environments that are act
 - Microsoft 365 F5 Security & Compliance
 - Microsoft 365 E5/F5/G5 Insider Risk Management
 
-Note: Customer Lockbox is available in public clouds and US Government Community Cloud (GCC), GCC High, and Department of Defense (DoD) regions.
+> [!NOTE]
+> Customer Lockbox is available in public clouds and US Government Community Cloud (GCC), GCC High, and Department of Defense (DoD) regions.
 
-For more information, see [Licensing requirements for Customer Lockbox](/power-platform/admin/about-lockbox#licensing-requirements-for-customer-lockbox). 
+For more information, see [Licensing requirements for Customer Lockbox](/power-platform/admin/about-lockbox#licensing-requirements-for-customer-lockbox).
 
-#### Azure Virtual Network (vNet) 
+#### Azure Virtual Network (vNet)
 
 To enable Virtual Network support for Power Platform, environments must be Managed Environments. In addition, access to using Virtual Network support for Power platform requires users in the environments where the Virtual Network is enabled to have one of these subscriptions:
 
@@ -865,6 +860,6 @@ To enable Virtual Network support for Power Platform, environments must be Manag
 - Microsoft 365 E5/F5/G5 Insider Risk Management
 - Organization must have an Azure subscription with permissions to create a virtual network, subnet, and the enterprise policy resources.
 
-For more information, see Set up [Virtual Network support for Power Platform](/power-platform/admin/vnet-support-setup-configure). 
+For more information, see Set up [Virtual Network support for Power Platform](/power-platform/admin/vnet-support-setup-configure).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
