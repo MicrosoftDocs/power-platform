@@ -50,7 +50,7 @@ Follow this step-by-step guide to help you get started.
 
    :::image type="content" source="media/live-chat-support/start-live-chat.png" alt-text="Screenshot that shows the Live Chat toggle to start a live chat immediately after submitting a ticket.":::
 
-### Return to your chat <<< - this image is outdated, need a new one>>>
+### Return to your chat 
 
 If you need to add more information or check the status of your issue, open your issue in the Power Platform admin center.
 

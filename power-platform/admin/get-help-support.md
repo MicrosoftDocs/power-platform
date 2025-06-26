@@ -174,7 +174,7 @@ A [premium support plan](https://dynamics.microsoft.com/support) includes adviso
 
 Without a premium support plan, you can only submit request on technical issues. Progressively, such restriction is enforced and you can't create a support request for advisory services unless you have a premium support plan.
 
-## Limited preview: Report outage  <---dont see this in any screen now--->
+## Limited preview: Report outage  
 
 > [!NOTE]
 > This is a preview feature available only to a limited set of customers to try out. If you don't see the **Report Outage** link, don't worry! We'll be bringing this feature to all customers in the future.
@@ -184,9 +184,6 @@ If you're experiencing a service outage, select the **Report outage** link to re
    :::image type="content" source="media/live-chat-support/support-requests.png" alt-text="Screenshot that shows the Get support button under the Support requests section.":::
 
 Fill out the pages and then submit to have your support request receive an expedited review.
-
-> [!div class="mx-imgBorder"]
-> ![Fill in outage info.](media/report-outage-page-one.png "Fill in outage info")
 
 We'd love to know your thoughts on the new outage reporting process. Or, if you'd like to be considered for this limited preview, fill out this [form](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR-5Axi2KMXdNi_1eF9P36tZUN1FUQkJLNVBZVVlOSVk0T0tIQTBIMk9VOC4u).
 
