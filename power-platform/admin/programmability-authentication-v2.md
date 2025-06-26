@@ -4,16 +4,14 @@ description: Overview of Microsoft Entra setup for calling Power Platform API an
 author: laneswenka
 ms.reviewer: sericks
 ms.topic: reference
-ms.date: 03/07/2025
+ms.date: 06/26/2025
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
   - admin
 ---
 
-# Authentication (preview)
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+# Authentication
 
 This article provides an overview of the Microsoft Entra setup for calling Power Platform API (preview).  To access resources available via Power Platform API, you must get a bearer token from Microsoft Entra and send it as a header along with each request.  Depending on the identity type you're supporting (user vs service principal) there are different flows to obtain this bearer token, as described in this article.
 
