@@ -15,27 +15,27 @@ ms.date: 05/13/2025
 
 SLB, one of the world’s largest oilfield services and equipment suppliers, boosts process and employee productivity by using Microsoft Power Platform tools like Power Apps, AI Builder, Power Automate, and Dataverse, along with SharePoint and key Microsoft Azure services.
 
-This article highlights four solutions developed by SLB employees to increase global productivity and impact.
+This article highlights four solutions SLB employees developed to increase global productivity and impact.
 
-1. Mitanshu Garg, a Digital Cell Lead at SLB, uses Power Apps and Power Automate to let teams discover projects with AI. The solution connects global teams to scale innovation across SLB and streamlines the project lifecycle from validation to review. The system unites the global SLB workforce for project discovery, helping employees find and collaborate on similar projects. This increases productivity in project consolidation, collaboration, and implementation.
+1. Mitanshu Garg, a Digital Cell Lead at SLB, uses Power Apps and Power Automate to let teams discover projects with AI. The solution connects global teams to scale innovation across SLB and streamlines the project lifecycle from validation to review. The system unites the global SLB workforce for project discovery and helps employees find and collaborate on similar projects. This approach increases productivity in project consolidation, collaboration, and implementation.
 
-1. Dipankar Sutradhar, a Software Architect at SLB, uses AI Builder and Power Automate to automate document processing by extracting shipment details and associating the information with existing orders and entities. This solution creates an automated workflow to handle shipping documents stored in SharePoint. SLB automates the process without extensive coding.
+1. Dipankar Sutradhar, a Software Architect at SLB, uses AI Builder and Power Automate to automate document processing by extracting shipment details and associating the information with existing orders and entities. This solution creates an automated workflow to handle shipping documents stored in SharePoint. SLB automates the process without extensive code.
 
-1. Rushi Patel, a Lead Architect at SLB, uses Power Automate and AI Builder to create the Flight Airline Automation Bot. This chatbot extracts flight invoice details and tax information for the tax team, replacing a time-consuming manual process. The solution saves the team valuable time every month.
+1. Rushi Patel, a Lead Architect at SLB, uses Power Automate and AI Builder to create the Flight Airline Automation Bot. This chatbot extracts flight invoice details and tax information for the tax team, replacing a time-consuming manual process. The solution saves the team time every month.
 
-1. Teena Bindal, a Solution Architect at SLB, uses Power Apps and Power Automate flows to create a canvas app called SAHL. This app maps data from the Drilling and Workover Integrated Logistics & Invoicing Platform (DILIP) system to the Field Delivery Platform (FDP) system. The solution extracts data from PDF files and streamlines the process by eliminating double data entry.
+1. Teena Bindal, a Solution Architect at SLB, uses Power Apps and Power Automate flows to create a canvas app called SAHL. This app maps data from the Drilling and Workover Integrated Logistics and Invoicing Platform (DILIP) system to the Field Delivery Platform (FDP) system. The solution extracts data from PDF files and streamlines the process by eliminating double data entry.
 
 ## Introduction
 
 In this technical case study, you learn how to:
 
-- Increase global productivity using Power Apps and Power Automate.
-- Use Power Apps, AI Builder, and Power Automate to unify a global workforce around project recommendations and collaboration.
-- Automate documentation processing and link the extracted data to orders and entities.
-- Create a chat bot that extracts invoice details and associated tax information.
-- Avoid double data entry by extracting and mapping data from one data system to another.
+- Increase global productivity with Power Apps and Power Automate.
+- Use Power Apps, AI Builder, and Power Automate to unify a global workforce for project recommendations and collaboration.
+- Automate documentation processing and link extracted data to orders and entities.
+- Create a chat bot that extracts invoice details and tax information.
+- Avoid double data entry by extracting and mapping data from one system to another.
 
-> By combining the strengths of Power Apps, Power Automate, Dataverse, and Azure Functions, we created a tightly integrated solution where AI works behind the scenes.
+> By combining the strengths of Power Apps, Power Automate, Dataverse, and Azure Functions, our team created a tightly integrated solution where AI works behind the scenes.
 >
 > - Mitanshu Garg, SLB Digital Cell Lead
 
@@ -111,14 +111,14 @@ The AI-powered project discovery tool has redefined how SLB’s globally distrib
 
 Within the first 28 days of launch:
 
-- 800+ AI-powered matches were generated: Users actively utilized the system, discovering previously hidden synergies.
+- 800+ AI-powered matches were generated: Users actively utilized the system, discovered previously hidden synergies.
 
 - 150 similar projects were inspired: Facilities worldwide initiated projects inspired by matches, leading to a wave of cross-facility innovation.
 
 
 ### Document processing to associate data
 
-In the ever-evolving world of oilfield services, SLB faced the challenge of tracking a large volume of shipping Duty data and documents for tools and parts across multiple countries. To streamline this process, SLB leveraged AI Builder, a powerful component of the Microsoft Power
+In the ever-evolving world of oilfield services, SLB faced the challenge of tracking a large volume of shipping duty data and documents for tools and parts across multiple countries. To streamline this process, SLB leveraged AI Builder, a powerful component of the Microsoft Power
 Platform, in combination with Power Automate. This innovative approach resulted in a low-code solution that not only automated document processing but also significantly boosted efficiency and financial recovery.
 
 #### Challenges
@@ -127,7 +127,7 @@ SLB required an efficient method to process shipping documents from various part
 
 #### Solution
 
-By integrating AI Builder with Power Automate, SLB created a seamless, automated workflow for handling shipping documents stored in repositories like SharePoint. The AI Builder module was trained to accurately extract shipment details, which were then associated with the relevant SAP orders. This low-code solution allowed SLB to automate the entire process without the need for extensive coding skills.
+By integrating AI Builder with Power Automate, SLB created a seamless, automated workflow for handling shipping documents stored in repositories like SharePoint. The AI Builder module was trained to accurately extract shipment details, which was then associated with the relevant SAP orders. This low-code solution allowed SLB to automate the entire process without the need for extensive coding skills.
 
 The following diagram shows the automated document processing workflow at SLB using AI Builder and Power Automate:
 
@@ -135,7 +135,7 @@ The following diagram shows the automated document processing workflow at SLB us
 
 The above diagram demonstrates the following workflow:
 
-1.  Microsoft Entra ID provides user authentication to the softwarecomponents.
+1.  Microsoft Entra ID provides user authentication to the software components.
 
 2.  An SLB user shares a shipment document or invoice in the SharePoint document library.
 
@@ -189,7 +189,7 @@ improvements in efficiency and accuracy.
 
 ### Chat bot to associate tax information
 
-The Flight Airline Automation Bot has been successfully implemented to optimize the extraction of flight invoice details and associated tax information for the tax team. This process, previously manual and labor-intensive, involved individuals reading and extracting data from
+The Flight Airline Automation Bot has been successfully implemented to optimize the extraction of flight invoice details and associated tax information for the tax team. This process was previously manual and labor-intensive, involved individuals reading and extracting data from
 each invoice manually. The new automated solution streamlines this workflow by retrieving invoices from emails, extracting essential details, and compiling them into an Excel sheet for efficient processing by the tax team. This automation enhances operational efficiency,
 reduces manual labor, and minimizes data handling errors.
 
@@ -239,7 +239,7 @@ The tax-association chat bot provides SLB with the following benefits:
 
 ### Extracting and mapping data between systems
 
-SAHL (which means “*ease”* in Arabic) is an application built with Power Apps that uses Power Automate and Dataverse to integrate Drilling and Workover Integrated Logistic & Invoicing Platform (DILIP) eTickets with Field Delivery Platform (FDP), which streamlines the process and
+SAHL (which means ease in Arabic) is an application built with Power Apps that uses Power Automate and Dataverse to integrate Drilling and Workover Integrated Logistic and Invoicing Platform (DILIP) eTickets with Field Delivery Platform (FDP), which streamlines the process and
 eliminates the need for double data entry and manual effort, while still ensuring data consistency across both systems.
 
 The current billing system in Kingdom of Saudi Arabia (KSA) requires redundant data entry and manual effort to record financial costs in both DILIP and FDP. The new solution aims to automate this process, ensuring data integrity between the internal business system and the client's external business system.
@@ -252,24 +252,14 @@ The current KSA billing system requires redundant data entry and manual efforts 
 
 By developing a canvas app that automates the data extraction and mapping process between DILIP and FDP, SLB eliminated the need for manual double-entry by Product and Service Delivery (PSD) personnel.
 
-The following high-level tasks are performed by the SAHL app:
 
-- The user uploads the DILIP e-Ticket.
-
-- Power Automate flows read the ticket in the background.
-
-- Data is integrated with Siebel to extract the Price Book details
-
-- from the Price Book Module (PBM).
-
-- Once the mappings are validated, the ticket is moved into FDP.
-
-- This process provides a digital solution.
 
 The following diagram shows the detailed architecture of the
 technologies used to build SLB’s SAHL application.
 
 :::image type="content" source="media/slb/sahl.png" alt-text="Screenshot of a diagram showing the detailed architecture of the SAHL application at SLB, integrating DILIP and FDP systems using Power Platform tools." lightbox="media/slb/sahl.png":::
+
+The following high-level tasks are performed by the SAHL app:
 
 1.  An engineer uploads the e-Ticket into DILIP, which is then uploaded into the Power Apps SAHL application.
 
@@ -322,29 +312,26 @@ The canvas app provides SLB with the following benefits:
 
 ## Technologies used
 
-The development and implementation of different SLB solutions uses these Microsoft technologies:
+Development and implementation of different SLB solutions use these Microsoft technologies:
 
-- Power Apps: Builds the project discovery app and integrates multiple data entry platforms.
+- Power Apps: Builds the project discovery app and integrates different data entry platforms.
 
-- AI Builder: Builds project recommendations and accurately extracts shipment details.
+- AI Builder: Builds project recommendations and extracts shipment details.
 
 - Power Automate: Moves information and files between tools and solutions.
 
 
-- Dataverse: Stores data used by the apps and chatbot.
+- Dataverse: Stores data for the apps and chatbot.
+- SharePoint: Stores shipping information files.
 
 
-- SharePoint: Stores files with shipping information.
-
-
-- Microsoft Azure: Azure Functions process HTTP requests. Azure Blob Storage stores information from Python code and Dataverse. Azure Key Vault manages secrets securely.
-
-
+- Microsoft Azure: Azure Functions process HTTP requests. Azure Blob Storage stores information from Python code and Dataverse. Azure Key Vault manages secrets.
 - Microsoft Excel: Power Automate flows compile information into Excel files for the tax team.
 
 ## Key takeaways
 
-The case study of SLB’s productivity apps and tools shows how Power Apps, AI Builder, and Power Automate help set up a project discovery and collaboration app, and different data extraction workflows. Here are some key takeaways for IT professionals who want to implement similar solutions in their organization:
+This case study of SLB’s productivity apps and tools shows how Power Apps, AI Builder, and Power Automate help set up a project discovery and collaboration app, and different data extraction workflows. Here are some key takeaways for IT professionals who want to implement similar solutions in their organization:
+
 
 - Share project information: Use Power Apps, AI Builder, and Power Automate to build an app that collects project information from a global team.
 
@@ -362,8 +349,7 @@ The case study of SLB’s productivity apps and tools shows how Power Apps, AI B
 
 By building solutions with Microsoft Power Platform, SLB gets these key benefits:
 
-
-- 800+ AI-powered matches: Users actively use the system and discover hidden synergies.
+- 800+ AI-powered matches: Users use the system and discover hidden synergies.
 
 - 150 similar projects: Facilities worldwide start projects inspired by matches, leading to cross-facility innovation.
 
@@ -381,9 +367,9 @@ By building solutions with Microsoft Power Platform, SLB gets these key benefits
 
 ## Looking ahead
 
-SLB benefits from the project discovery application, which drives global employee collaboration and leads to similar projects each month. Many projects use automation solutions built on Power Platform, like the examples above. SLB focuses on scaling adoption of Power Platform to affect all aspects of its business.
+SLB uses the project discovery application to drive global employee collaboration and create similar projects each month. Many projects use automation solutions built on Power Platform, like the examples above. SLB focuses on scaling adoption of Power Platform to affect every part of its business.
 
-SLB revolutionizes employee productivity with Power Platform in the oilfield services and equipment industry.
+SLB boosts employee productivity with Power Platform in the oilfield services and equipment industry.
 
 ## Related information
 
