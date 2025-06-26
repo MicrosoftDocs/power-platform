@@ -61,7 +61,7 @@ This architecture is applicable in scenarios where:
 
 ## Considerations
 
-[!INCLUDE [pp-arch-ppwa-link](../../includes/pp-arch-ppwa-link.md)]
+[!INCLUDE [pp-arch-ppwa-link](../../../includes/pp-arch-ppwa-link.md)]
 
 ### Reliability
 
