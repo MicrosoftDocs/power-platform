@@ -72,7 +72,8 @@ For canvas apps, an [existing capability](https://powerapps.microsoft.com/blog/l
 
 Dataverse includes all the requests made on the server. You'll be able to see how the requests are processed within the web server. You won't get detailed information from the database itself, except for the duration of time spent processing the operation. You also won't have telemetry related to the physical resources of the server, such as memory consumption. More information: [Telemetry events for Dataverse](telemetry-events-dataverse.md)
 
-
+> [!NOTE]
+> Application Insights telemetry is designed to provide broad and reliable visibility into your application behavior. However, due to sampling and pipeline-specific constraints, some signals may not be captured. Minor data gaps are expected and do not indicate a system issue.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
 
