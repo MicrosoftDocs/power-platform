@@ -66,7 +66,7 @@ management team.
 
   - Facilities working on similar problems remained isolated. The team was unable to combine their efforts into larger, more impactful centrally-driven projects.
 
-  - Facilities could not easily find successful projects at other locations to replicate or adapt innovative ideas. This stifled creativity and prevented knowledge sharing.
+  - Facilities couldn't easily find successful projects at other locations to replicate or adapt innovative ideas. This stifled creativity and prevented knowledge sharing.
 
 #### Solution
 
@@ -127,7 +127,7 @@ Platform, in combination with Power Automate. This innovative approach resulted 
 
 #### Challenges
 
-SLB required an efficient method to process shipping documents from various partners and to seamlessly integrate the extracted data with SAP orders and entities. The manual handling of these documents was not only time-consuming but also prone to errors, which affected the company's ability to accurately recover export duties.
+SLB required an efficient method to process shipping documents from various partners and to seamlessly integrate the extracted data with SAP orders and entities. The manual handling of these documents wasn't only time-consuming but also prone to errors, which affected the company's ability to accurately recover export duties.
 
 #### Solution
 
@@ -153,9 +153,9 @@ The above diagram demonstrates the following workflow:
 
 7.  Azure App Insights monitors the completed solution and reports the results in the Azure portal.
 
-8.  A failure report is also compiled and sent to the process owner team, who then choose to either manually process the unprocessed documents (which could be due to issues with the file itself) or assign them to a new template that was not identified earlier. Once there are a sizable number of documents of the new template, this information is trained into the AI Builder model so that further documents matching the new template can be read successfully.
+8.  A failure report is also compiled and sent to the process owner team, who then choose to either manually process the unprocessed documents (which could be due to issues with the file itself) or assign them to a new template that wasn't identified earlier. Once there are a sizable number of documents of the new template, this information is trained into the AI Builder model so that further documents matching the new template can be read successfully.
 
-The data points to be extracted from these documents have been extensively researched and finalized. The models would need to be completely retrained if new fields were added.
+The data points to be extracted from these documents have been extensively researched and finalized. The models would need to be retrained if new fields were added.
 
 #### Takeaways
 
@@ -199,7 +199,7 @@ reduces manual labor, and minimizes data handling errors.
 
 #### Challenges
 
-The manual process was not only time-consuming but also prone to errors, such as incorrect tax amounts, missing details, and misclassification of invoices, all of which could impact financial reporting. As the volume
+The manual process wasn't only time-consuming but also prone to errors, such as incorrect tax amounts, missing details, and misclassification of invoices, all of which could impact financial reporting. As the volume
 of invoices increased, managing the process became increasingly challenging without additional resources. The lack of standardization across airline invoices further complicated data extraction, making the process inefficient and inconsistent.
 
 #### Solution
@@ -345,8 +345,7 @@ The development and implementation of the various SLB solutions uses the followi
 
 ## Key takeaways
 
-The case study of SLB’s productivity apps and tools demonstrates the potential of using Power Apps, AI Builder, and Power Automate to set up a project-discovery and collaboration application, as well as a variety
-of data extraction workflows. Here are some key takeaways for IT professionals who are looking to implement similar solutions in their own organizations:
+The case study of SLB’s productivity apps and tools demonstrates the potential of using Power Apps, AI Builder, and Power Automate to set up a project-discovery and collaboration application, as well as various data extraction workflows. Here are some key takeaways for IT professionals who are looking to implement similar solutions in their own organizations:
 
 - Share project information: Use Power Apps, AI Builder, and Power Automate to build an app that collects project information from a globally distributed team.
 
