@@ -7,7 +7,7 @@ ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
 ms.component: canvas
-ms.date: 6/10/2024
+ms.date: 06/18/2025
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
@@ -35,9 +35,6 @@ Any property or calculated value in Power Apps can be _blank_. For example, a Bo
 _Empty string_ refers to a string that contains no characters. The [**Len** function](function-len.md) returns zero for such a string and it can be written in a formulas as two double quotes with nothing in between `""`. Some controls and data sources use an empty string to indicate a "no value" condition. To simplify app creation, the **IsBlank** and **Coalesce** functions test for both _blank_ values or empty strings.
 
 In the context of the **IsEmpty** function, _empty_ is specific to tables that contain no records. The table structure may be intact, complete with [column](/power-apps/maker/canvas-apps/working-with-tables#columns) names, but no data is in the table. A table may start as empty, take on records and no longer be empty, and then have the records removed and again be empty.
-
-> [!NOTE]
-> We are in a period of transition. Until now, _blank_ has also been used to report errors, making it impossible to differentiate a valid "no value" from an error. For this reason, at this time, storing _blank_ values is supported only for local collections. You can store _blank_ values in other data sources if you turn on the **Formula-level error management** experimental feature under **Settings** > **Upcoming features** > **Experimental**. We are actively working to finish this feature and complete the proper separation of _blank_ values from errors.
 
 ## Blank
 
@@ -92,9 +89,6 @@ The return value for **IsEmpty** is a Boolean **true** or **false**.
 ## Examples
 
 ### Blank
-
-> [!NOTE]
-> At this time, the following example only works for local collections. You can store _blank_ values in other data sources if you turn on the **Formula-level error management** experimental feature under **Settings** > **Upcoming features** > **Experimental**. We are actively working to finish this feature and complete the separation of _blank_ values from errors.
 
 1. Create an app from scratch, and add a **Button** control.
 2. Set the button's **[OnSelect](/power-apps/maker/canvas-apps/controls/properties-core)** property to this formula:
