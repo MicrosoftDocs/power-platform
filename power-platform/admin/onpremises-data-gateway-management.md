@@ -3,18 +3,20 @@ title: "View and manage on-premises data gateways | MicrosoftDocs"
 description: View and manage on-premises gateways. 
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 05/22/2024
+ms.date: 06/26/2025
 author: arthiriyer
 ms.subservice: admin
 ms.author: arthii
 ms.reviewer: sericks
+ms.contributors:
+  - lsuresh
+contributors:
+  - lavanyapg
 search.audienceType: 
   - admin
 ---
 
 # On-premises data gateway management
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 The on-premises data gateway acts as a bridge, providing quick and secure data transfer between on-premises data (data that is not in the cloud) and the Power BI, Power Automate, Logic Apps, and Power Apps services. More information: [What is an on-premises data gateway?](/data-integration/gateway/service-gateway-onprem)
 
@@ -115,6 +117,7 @@ Use **Remove** to remove a gateway cluster. This operation is available for data
 For more information, go to [Remove or delete an on-premises data gateway](/data-integration/gateway/service-gateway-manage#remove-or-delete-an-on-premises-data-gateway).
 
 ## Get help
+
 For faster troubleshooting and assistance, select **Get help** to open a Get Help panel. Include the session ID in a customer support ticket for any issues on the Data Gateways feature in the Power Platform admin center.
 
 > [!div class="mx-imgBorder"] 
@@ -182,6 +185,7 @@ If a person who doesn't have access to install gateways tries to install one, th
 > ![Error message.](media/manage-gateway-error-message.png "Error message")
 
 ### See also
+
 [On-premises data gateway](/data-integration/gateway/service-gateway-onprem)<br/>
 [Connecting to on-premises data sources with On-premises Data Gateway](/azure/analysis-services/analysis-services-gateway)<br/>
 
