@@ -35,7 +35,7 @@ In this technical case study, you learn how to:
 - Create a chat bot that extracts invoice details and associated tax information.
 - Avoid double data entry by extracting and mapping data from one data system to another.
 
-> By combining the strengths of Power Apps, Power Automate, Dataverse, and Azure Functions, we created a tightly integrated solution where AI works behind the scenes.”*
+> By combining the strengths of Power Apps, Power Automate, Dataverse, and Azure Functions, we created a tightly integrated solution where AI works behind the scenes.
 >
 > - Mitanshu Garg, SLB Digital Cell Lead
 
