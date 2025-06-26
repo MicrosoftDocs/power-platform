@@ -66,7 +66,6 @@ This architecture is applicable in scenarios where:
 ### Reliability
 
 - Design the staging and migration process to be resilient to failures. Implement retry logic and checkpointing in ETL pipelines to handle transient errors.
-- Use transactional control in the staging database to ensure data consistency during transformation and validation.
 - Validate data completeness and integrity before loading into Dataverse to avoid partial or corrupt migrations.
 
 ### Security
@@ -85,7 +84,7 @@ Monitor performance metrics of the staging environment and adjust compute resour
 
 - Document the migration process, including data mappings, transformation rules, and validation logic.
 - Implement automated testing and validation scripts to ensure repeatability and reduce human error.
-- Use orchestration tools like Azure Data Factory or Power Automate to manage and monitor the end-to-end migration workflow.
+- Use orchestration tools like Azure Data Factory to manage and monitor the end-to-end migration workflow.
 
 ## Next step
 
