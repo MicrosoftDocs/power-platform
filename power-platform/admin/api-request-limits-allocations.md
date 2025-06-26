@@ -7,7 +7,8 @@ contributors:
   - cvassallo
   - v-aangie
   - ShawnNandiMSFT 
-  - PriyaKodukula 
+  - PriyaKodukula
+  - EllenWehrle 
 ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 06/12/2025
@@ -21,7 +22,7 @@ search.audienceType:
 
 [!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
-Power Platform requests limits exist to help ensure service levels, availability, and quality of the platform. There are limits to the number of requests users can make each day across Power Apps, Power Automate, Microsoft Copilot Studio, and Dynamics 365 applications.
+Power Platform API requests limits exist to help ensure service levels, availability, and quality of the platform. There are limits to the number of requests users can make each day across Power Apps, Power Automate, Microsoft Copilot Studio, and Dynamics 365 applications.
 
 ## What is a Microsoft Power Platform request?
 
@@ -50,9 +51,9 @@ All the users of Microsoft Power Platform have limits on the number of requests 
 
 <sup>1</sup> This category includes paid licenses for Power Apps per user plan (which includes the previous Power Apps Plan 1 and Power Apps Plan 2 licenses), Power Automate per user plan (which includes the previous Flow Plan 1 and Flow Plan 2 licenses), Dynamics 365 Sales Premium, Dynamics 365 Sales Enterprise, Dynamics 365 Sales Professional, Dynamics 365 Customer Service Enterprise, Dynamics 365 Customer Service Professional, Dynamics 365 Field Service, Microsoft Relationship Sales, Microsoft Industry Cloud, Dynamics 365 Project Service Automation, Dynamics 365 Commerce, Dynamics 365 Human Resources, Dynamics 365 Finance, Dynamics 365 Project Operations, Dynamics 365 Supply Chain Management, Dynamics 365 Customer Engagement plan, Dynamics 365 Unified Ops plan, Dynamics 365 Plan, Dynamics 365 for Operations Device, Dynamics 365 for Operations Activity, Dynamics AX Online Device, Dynamics AX Online Task, Dynamics CRM Online Enterprise, and Dynamics CRM Online Professional.
 
-<sup>2</sup> This category includes the Power Apps pay-as-you-go plan, and paid licenses Power Apps per app plan, Dynamics 365 Team Member, Dynamics CRM Online Basic, Dynamics CRM Online Essential, Dynamics AX Self-Serve, Microsoft 365 licenses, and Microsoft Project Online (Plan 1, Plan 3, and Plan 5). Learn more in **Appendix B** in the [Power Platform Licensing Guide](https://go.microsoft.com/fwlink/p/?linkid=2085130) for Microsoft 365 licenses that include Power Apps and Power Automate capabilities.
+<sup>2</sup> This category includes the Power Apps pay-as-you-go plan, and paid licenses Power Apps per app plan, Dynamics 365 Team Member, Dynamics CRM Online Basic, Dynamics CRM Online Essential, Dynamics AX Self-Serve, Microsoft 365 licenses, and Microsoft Project Online (Plan 1, Plan 3, and Plan 5). Learn more in **Appendix B** in the [Power Platform Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130) for Microsoft 365 licenses that include Power Apps and Power Automate capabilities.
 
-<sup>3</sup> The Power Automate per flow plan allows capacity to be specifically reserved for a single flow, irrespective of the owner of the flow. This plan doesn't use the non-licensed user request limits at the tenant level.
+<sup>3</sup> The Power Automate per-flow plan allows capacity to be specifically reserved for a single flow, irrespective of the owner of the flow. This plan doesn't use the non-licensed user request limits at the tenant level.
 
 <sup>4</sup> Microsoft Copilot Studio requests are counted from Power Automate flows triggered from a Microsoft Copilot Studio chatbot.  Microsoft Copilot Studio initial sessions pack and additional sessions pack both receive the same daily Power Platform Request limits.
 
