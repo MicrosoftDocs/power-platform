@@ -8,7 +8,7 @@ ms.topic: concept-article
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
-ms.date: 05/22/2025
+ms.date: 06/26/2025
 ---
 
 # Data migration approaches
@@ -17,12 +17,12 @@ The right approach for migrating data from an external CRM system to Microsoft D
 
 ## Simple data migration
 
-**Definition**:
+Definition:
 
 - **Data volume**: Up to 1 GB or fewer than 50,000 records.
 - **Data complexity**: Minimal complexity with flat data structures and no intricate relationships between tables.
 
-**Approach**:
+Approach:
 
 - **Data assessment**: Identify relevant tables and columns for migration; perform basic data quality checks.
 - **Export and transform**: Use tools like Excel or CSV exports; apply basic transformations with Power Query.
@@ -31,12 +31,12 @@ The right approach for migrating data from an external CRM system to Microsoft D
 
 ## Medium data migration
 
-**Definition**:
+Definition:
 
 - **Data volume**: Between 1 GB and 50 GB or 50,000 to 500,000 records.
 - **Data complexity**: Moderate complexity with hierarchical or relational data (for example, accounts with associated contacts and opportunities).
 
-**Approach**:
+Approach:
 
 - **Detailed data assessment**: Review schema, validate relationships, and identify data quality issues.
 - **Transform**: Use Extract, Transform, Load (ETL) tools such as Azure Data Factory for transformations and mappings.
@@ -46,15 +46,15 @@ The right approach for migrating data from an external CRM system to Microsoft D
 
 ## Complex data migration
 
-**Definition**:
+Definition:
 
 - **Data volume**: More than 50 GB or more than 500,000 records.
 - **Data complexity**: High—includes custom tables, complex relationships, and interdependent workflows.
 
-**Approach**:
+Approach:
 
 - **Comprehensive analysis**: Review source schema, dependencies, and customizations thoroughly.
-- **Specialized tools**: Use scalable solutions like like Azure Data Factory, SSIS (SQL Server Integration Services), Azure Synapse Analytics, Microsoft Fabric, or custom migration solutions for scalable data handling.
+- **Specialized tools**: Use scalable solutions like Azure Data Factory, SSIS (SQL Server Integration Services), Azure Synapse Analytics, Microsoft Fabric, or custom migration solutions for scalable data handling.
 - **Custom development**: Build scripts or apps to handle APIs, complex relationships, and workflow logic.
 - **Phased migration**: Break migration into stages; run pilots before full rollout to reduce risk.
 - **Continuous validation**: Test at each phase to ensure data accuracy and business continuity.

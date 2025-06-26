@@ -8,7 +8,7 @@ ms.topic: concept-article
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
-ms.date: 05/22/2025
+ms.date: 06/26/2025
 ms.custom:
   - ai-gen-docs-bap
   - ai-gen-description
@@ -24,7 +24,7 @@ Data migration is a critical step in modernizing business systems and ensuring s
 This architecture ensures reliability through several key infrastructure choices:
 
 - **Regional proximity**: Hosting the virtual machine (VM) in the same region as Dataverse reduces latency and improves data transfer speeds, enabling efficient and stable migrations.
-- **High-capacity virtual machine (VM)**: A D4-series VM (8 cores, 28-GB RAM, 500-GB storage) supports high-volume data processing without performance degradation.
+- **High-capacity virtual machine**: A D4-series VM (8 cores, 28-GB RAM, 500-GB storage) supports high-volume data processing without performance degradation.
 - **Local database**: Using a local database instead of an Azure-hosted one reduces reliance on external services, minimizing the risk of connectivity issues or service outages.
 - **Co-located Azure Data Factory**: Deploying Azure Data Factory in the same region as Dataverse ensures consistent, high-throughput data processing.
 
@@ -58,7 +58,7 @@ Security is foundational to data migration. This architecture incorporates multi
 - **Core security practices**:
     - **Encryption**: Use strong encryption for data in transit and at rest to safeguard sensitive information.
     - **Access control**: Apply least-privilege access principles. Grant permissions only to authorized personnel to reduce internal risk.
-    - **Monitoring and auditing**: Enable real-time monitoring and alerts to detect suspicious    activity. Conduct regular security audits and vulnerability assessments.
+    - **Monitoring and auditing**: Enable real-time monitoring and alerts to detect suspicious activity. Conduct regular security audits and vulnerability assessments.
     - **Compliance**: Follow industry standards and best practices to protect against internal and external threats.
 
 - **Security readiness**
@@ -97,7 +97,7 @@ Operational Excellence in data migration is achieved through strategic planning,
 
 - **Deploy with confidence**: This architecture supports a reliable deployment process through rigorous testing and validation. Unit, integration, and user acceptance testing ensure that migrated data is accurate, complete, and functional in the target environment. Thorough predeployment validation minimizes post-migration issues and enables a smooth transition for end users. This disciplined approach builds stakeholder confidence and helps ensure a successful, on-time migration.
 
-- **Automate for efficiency**: Automation enhances efficiency and reduces human error in data migration. Scripts and workflows handle repetitive tasks such as ETL, validation, and testing—ensuring speed, consistency, and accuracy. This frees up resources for higher-value activities like optimization and stakeholder engagement. Automation also simplifies scaling for large or complex migrations, making the process more manageable and reliable.
+- **Automate for efficiency**: Automation enhances efficiency and reduces human error in data migration. Scripts and workflows handle repetitive tasks such as ETL (Extract, Transform, Load), validation, and testing—ensuring speed, consistency, and accuracy. This frees up resources for higher-value activities like optimization and stakeholder engagement. Automation also simplifies scaling for large or complex migrations, making the process more manageable and reliable.
 
 - **Adopt safe deployment practices**: Safe deployment practices protect data integrity and security throughout the migration. Key strategies include:
     - **Backup and recovery**: Implement robust backup procedures and recovery plans to safeguard against data loss.
@@ -123,7 +123,7 @@ Advanced monitoring and automation tools enhance the speed, reliability, and eff
 
 Optimizing the migration experience focuses on making the process intuitive, efficient, and productive for both developers and end users. Apply a user-centric design and use modern tools for the architecture to reduce disruption and enhance satisfaction.
 
-- **Design for the developer and end user**: A structured approach to Dataverse migration gives developers clarity—from data extraction and staging to transformation and loading. Designing with both developers and end users in mind ensures a smoother, more effective process.
+- **Design for the developer and end user**: A structured approach to Dataverse migration gives developers clarity, from data extraction and staging to transformation and loading. Designing with both developers and end users in mind ensures a smoother, more effective process.
 
     Key elements include:
 
@@ -131,11 +131,11 @@ Optimizing the migration experience focuses on making the process intuitive, eff
 
     - **Comprehensive documentation:** Provide well-organized, accessible documentation to support self-service and build confidence.
 
-    - **Scalable solutions:** Design for flexibility—whether handling small or large datasets—using techniques like load balancing and parallel processing to maintain performance.
+    - **Scalable solutions:** Design for flexibility, whether handling small or large datasets, using techniques like load balancing and parallel processing to maintain performance.
 
 - **Design for simplicity**: Simplified workflows and automation reduce complexity and errors. Modular architecture and clear documentation make components easier to understand, maintain, and scale. Prioritizing simplicity shortens the learning curve and accelerates adoption across teams.
 
 ## Next step
 
 > [!div class="nextstepaction"]
-> [Data migration planning for go-live](cut-over-planning.md)
+> [Plan cutover to go live](cut-over-planning.md)

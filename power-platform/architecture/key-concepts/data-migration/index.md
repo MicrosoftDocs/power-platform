@@ -8,7 +8,7 @@ ms.topic: overview
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
-ms.date: 05/23/2025
+ms.date: 06/26/2025
 ms.custom:
   - ai-gen-docs-bap
   - ai-gen-title
@@ -19,7 +19,7 @@ ms.custom:
 
 Migrating data from external customer relationship management (CRM) systems to Microsoft Dataverse can range from simple to highly complex, depending on the source data. Success depends on thorough planning and preparation to address common challenges such as schema mismatches, data volume, relationship complexity, and system dependencies. Maintaining data integrity, consistency, and security is essential to ensure business continuity.
 
-**Common migration challenges to address**:
+Common migration challenges to address include:
 
 - **Data mapping and transformation**: Source and target schemas often differ. Allocate time for mapping, transformation, and validation. Identify and exclude nonessential data early.
 - **Data volume**: Large datasets can strain performance. Plan for scalable processing and consider segmenting data.
@@ -33,4 +33,4 @@ Choose your migration strategy based on data size and complexity. This guide cat
 ## Next step
 
 > [!div class="nextstepaction"]
-> [Data migration approaches](data-migration-approaches.md)
+> [Choose the right approach](data-migration-approaches.md)

@@ -8,7 +8,7 @@ ms.topic: concept-article
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
-ms.date: 05/22/2025
+ms.date: 06/26/2025
 ---
 
 # Use a staging database for data migration
@@ -35,11 +35,11 @@ This reference architecture emphasizes the strategic role of a staging database 
 - **ETL/ELT process**: Extract, Transform, and Load (or Extract, Load, Transform) pipelines that move data from the source to the staging database, apply business rules, and prepare it for Dataverse.
 - **Reference data**: Used to validate and enrich master data during migration. For example, Excel master data templates.
 - **Dataverse**: The target system where the cleansed and validated data is ultimately loaded for use in Power Platform applications.
-- **File storage**: Storage for unstructured data such as attachments and documents. For example, Azure Blob Storage / SharePoint
+- **File storage**: Storage for unstructured data such as attachments and documents. For example, Azure Blob Storage/SharePoint.
 
 ## Scenario details
 
-This architecture is applicable in scenarios where:
+This architecture is applicable to scenarios where:
 
 - The source system contains large volumes of data or complex relational structures that require transformation before ingestion into Dataverse.
 - Direct migration isn't feasible due to data quality issues, schema mismatches, or the need for business rule enforcement.
@@ -50,7 +50,7 @@ This architecture is applicable in scenarios where:
 
 - Migrating customer and transaction data from an on-premises ERP system to Dataverse for use in Power Apps and Power Automate.
 - Consolidating data from multiple legacy systems into a unified Dataverse environment.
-- Performing pre-load data enrichment, such as geocoding addresses or mapping legacy codes to new taxonomies.
+- Performing preload data enrichment, such as geocoding addresses or mapping legacy codes to new taxonomies.
 
 ### Key benefits
 
@@ -78,7 +78,7 @@ This architecture is applicable in scenarios where:
 
 - Optimize data extraction and transformation logic to minimize processing time and resource consumption.
 - Use batch processing and parallelism where appropriate to handle large data volumes efficiently.
-Monitor performance metrics of the staging environment and adjust compute resources as needed.
+- Monitor performance metrics of the staging environment and adjust compute resources as needed.
 
 ### Operational Excellence
 
@@ -88,7 +88,7 @@ Monitor performance metrics of the staging environment and adjust compute resour
 
 ## Next step
 
-The next article outlines a proven approach for managing large-scale migrations. One of the biggest challenges in complex migrations is tracking what’s loaded, handling errors, and retrying failed records. Since these migrations can span days or even weeks, a phased strategy is recommended—migrating only delta data during the final production cutover to minimize disruption.
+The next article outlines a proven approach for managing large-scale migrations. One of the biggest challenges in complex migrations is tracking what's loaded, handling errors, and retrying failed records. Since these migrations can span days or even weeks, a phased strategy is recommended—migrating only delta data during the final production cutover to minimize disruption.
 
 > [!div class="nextstepaction"]
-> [Suggested workflow for a complex data migration](workflow-complex-data-migration.md)
+> [Plan a phased migration](workflow-complex-data-migration.md)
