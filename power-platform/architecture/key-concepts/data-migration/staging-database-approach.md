@@ -13,7 +13,7 @@ ms.date: 05/22/2025
 
 # Use a staging database for data migration
 
-This reference architecture emphasizes the strategic role of a staging database in large-scale and complex data migrations. Rather than transferring data directly from the source system to the target environment, the process introduces an intermediate staging layer. Data is first ingested into a temporary migration staging database, where it undergoes transformation and validation. Only after these steps is the data loaded into Dataverse. This pattern enhances data quality, ensures integrity, and reduces the likelihood of errors during the migration process.
+This reference architecture emphasizes the strategic role of a staging database in large-scale and complex data migrations. Rather than transferring data directly from the source system to the target environment, the process introduces an intermediate staging layer. Data is first ingested into a temporary migration staging database, where it undergoes transformation and validation. Only after these steps are completed, the data is loaded into Dataverse. This pattern enhances data quality, ensures integrity, and reduces the likelihood of errors during the migration process.
 
 ## Architecture diagram
 
@@ -30,7 +30,7 @@ This reference architecture emphasizes the strategic role of a staging database 
 
 ## Components
 
-- **Source system**: The original data source, which may include legacy databases, ERP systems, or non-Microsoft applications.
+- **Source system**: The original data source, which might include legacy databases, ERP systems, or non-Microsoft applications.
 - **Staging database**: A temporary, intermediate data store used to ingest, transform, and validate data before final migration. This layer decouples the source and target systems, allowing for controlled and auditable data preparation.
 - **ETL/ELT process**: Extract, Transform, and Load (or Extract, Load, Transform) pipelines that move data from the source to the staging database, apply business rules, and prepare it for Dataverse.
 - **Reference data**: Used to validate and enrich master data during migration. For example, Excel master data templates.
@@ -42,7 +42,7 @@ This reference architecture emphasizes the strategic role of a staging database 
 This architecture is applicable in scenarios where:
 
 - The source system contains large volumes of data or complex relational structures that require transformation before ingestion into Dataverse.
-- Direct migration is not feasible due to data quality issues, schema mismatches, or the need for business rule enforcement.
+- Direct migration isn't feasible due to data quality issues, schema mismatches, or the need for business rule enforcement.
 - The migration process must be auditable, repeatable, and support rollback or reprocessing of specific data segments.
 - The organization requires a phased or incremental migration approach, such as during a system modernization or cloud transition project.
 
@@ -72,7 +72,7 @@ This architecture is applicable in scenarios where:
 ### Security
 
 - Apply role-based access control (RBAC) to restrict access to the staging database and migration tools.
-- Encrypt data at rest and in transit, especially when handling sensitive or personally identifiable information (PII).
+- Encrypt data at rest and in transit, especially when handling sensitive or personal data (personal data).
 - Log and monitor access to the staging environment and Dataverse to support audit and compliance requirements.
 
 ### Performance Efficiency
@@ -89,7 +89,7 @@ Monitor performance metrics of the staging environment and adjust compute resour
 
 ## Next step
 
-The next article outlines a proven approach for managing large-scale migrations. One of the biggest challenges in complex migrations is tracking what’s been loaded, handling errors, and retrying failed records. Since these migrations can span days or even weeks, a phased strategy is recommended—migrating only delta data during the final production cutover to minimize disruption.
+The next article outlines a proven approach for managing large-scale migrations. One of the biggest challenges in complex migrations is tracking what’s loaded, handling errors, and retrying failed records. Since these migrations can span days or even weeks, a phased strategy is recommended—migrating only delta data during the final production cutover to minimize disruption.
 
 > [!div class="nextstepaction"]
 > [Suggested workflow for a complex data migration](workflow-complex-data-migration.md)

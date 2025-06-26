@@ -24,7 +24,7 @@ Data migration is a critical step in modernizing business systems and ensuring s
 This architecture ensures reliability through several key infrastructure choices:
 
 - **Regional proximity**: Hosting the virtual machine (VM) in the same region as Dataverse reduces latency and improves data transfer speeds, enabling efficient and stable migrations.
-- **High-capacity virtual machine (VM)**: A D4-series VM (8 cores, 28 GB RAM, 500 GB storage) supports high-volume data processing without performance degradation.
+- **High-capacity virtual machine (VM)**: A D4-series VM (8 cores, 28-GB RAM, 500-GB storage) supports high-volume data processing without performance degradation.
 - **Local database**: Using a local database instead of an Azure-hosted one reduces reliance on external services, minimizing the risk of connectivity issues or service outages.
 - **Co-located Azure Data Factory**: Deploying Azure Data Factory in the same region as Dataverse ensures consistent, high-throughput data processing.
 
@@ -95,7 +95,7 @@ Operational Excellence in data migration is achieved through strategic planning,
 
 - **Improve operations with monitoring and insights**: Advanced monitoring and analytics provide real-time visibility into the migration process. These tools track key performance indicators (KPIs), generate detailed progress reports, and help detect issues early—minimizing downtime and disruption. Continuous monitoring supports proactive resolution and informs future migrations, driving ongoing improvement and process optimization.
 
-- **Deploy with confidence**: This architecture supports a reliable deployment process through rigorous testing and validation. Unit, integration, and user acceptance testing ensure that migrated data is accurate, complete, and functional in the target environment. Thorough pre-deployment validation minimizes post-migration issues and enables a smooth transition for end users. This disciplined approach builds stakeholder confidence and helps ensure a successful, on-time migration.
+- **Deploy with confidence**: This architecture supports a reliable deployment process through rigorous testing and validation. Unit, integration, and user acceptance testing ensure that migrated data is accurate, complete, and functional in the target environment. Thorough predeployment validation minimizes post-migration issues and enables a smooth transition for end users. This disciplined approach builds stakeholder confidence and helps ensure a successful, on-time migration.
 
 - **Automate for efficiency**: Automation enhances efficiency and reduces human error in data migration. Scripts and workflows handle repetitive tasks such as ETL, validation, and testing—ensuring speed, consistency, and accuracy. This frees up resources for higher-value activities like optimization and stakeholder engagement. Automation also simplifies scaling for large or complex migrations, making the process more manageable and reliable.
 
@@ -121,7 +121,7 @@ Advanced monitoring and automation tools enhance the speed, reliability, and eff
 
 ## Experience Optimization
 
-Optimizing the migration experience focuses on making the process intuitive, efficient, and productive for both developers and end users. By applying user-centric design and leveraging modern tools, the architecture reduces disruption and enhances satisfaction.
+Optimizing the migration experience focuses on making the process intuitive, efficient, and productive for both developers and end users. Apply a user-centric design and use modern tools for the architecture to reduce disruption and enhance satisfaction.
 
 - **Design for the developer and end user**: A structured approach to Dataverse migration gives developers clarity—from data extraction and staging to transformation and loading. Designing with both developers and end users in mind ensures a smoother, more effective process.
 

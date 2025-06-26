@@ -21,7 +21,7 @@ Migrating data from external customer relationship management (CRM) systems to M
 
 **Common migration challenges to address**:
 
-- **Data mapping and transformation**: Source and target schemas often differ. Allocate time for mapping, transformation, and validation. Identify and exclude non-essential data early.
+- **Data mapping and transformation**: Source and target schemas often differ. Allocate time for mapping, transformation, and validation. Identify and exclude nonessential data early.
 - **Data volume**: Large datasets can strain performance. Plan for scalable processing and consider segmenting data.
 - **Data quality**: Incomplete, inconsistent, or duplicate data can compromise integrity. Include validation and cleansing steps in your migration workflow.
 - **Relationship dependencies**: Carefully manage lookups and table relationships to preserve functionality in Dataverse.
