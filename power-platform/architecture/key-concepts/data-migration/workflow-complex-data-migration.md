@@ -47,16 +47,17 @@ After extracting data from the source system, transform it into a target staging
 - **Field mapping:** Map source columns to target Dataverse columns. Use scripts to join and merge tables where needed.
 - **Optionset conversion:** Convert text-based optionset values to Dataverse integers using a mapping table (for example, OptionSetMapping) and bulk update queries. Create a table to standardize and automate the transformation of optionset values from source to target systems.
 
-    **Table**: OptionSetMapping:
-    | Column name | Data type |
-    | --- | --- | 
-    | Source table name | string |
-    | Target table name | string |
-    | Source text | string |
-    | Target text | string | 
-    | Target value | string |
+   **Table**: OptionSetMapping:
 
-    Use the OptionSetMapping table to efficiently transform and update optionset values in bulk. For example, to update all optionset values in the Contact table based on matching text values:
+  | Column name | Data type |
+  | --- | --- | 
+  | Source table name | string |
+  | Target table name | string |
+  | Source text | string |
+  | Target text | string | 
+  | Target value | string |
+
+  Use the OptionSetMapping table to efficiently transform and update optionset values in bulk. For example, to update all optionset values in the Contact table based on matching text values:
 
     `
     Update C.\<OptionsetValue\> = M.\<TargetValue\> 
