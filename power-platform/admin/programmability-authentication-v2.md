@@ -4,16 +4,14 @@ description: Overview of Microsoft Entra setup for calling Power Platform API an
 author: laneswenka
 ms.reviewer: sericks
 ms.topic: reference
-ms.date: 03/07/2025
+ms.date: 06/26/2025
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
   - admin
 ---
 
-# Authentication (preview)
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+# Authentication
 
 This article provides an overview of the Microsoft Entra setup for calling Power Platform API (preview).  To access resources available via Power Platform API, you must get a bearer token from Microsoft Entra and send it as a header along with each request.  Depending on the identity type you're supporting (user vs service principal) there are different flows to obtain this bearer token, as described in this article.
 
@@ -33,11 +31,11 @@ Within your new app registration, navigate to the **Manage - API Permissions** t
 If you don't see Power Platform API showing up in the list when searching by GUID, it's possible that you still have access to it but the visibility isn't refreshed. To force a refresh, run the following PowerShell script:
 
 ```powershell
-#Install the Microsoft Entra the module
-Install-Module AzureAD
+#Install the Microsoft Graph PowerShell SDK module
+Install-Module Microsoft.Graph -Scope CurrentUser -Repository PSGallery -Force
 
-Connect-AzureAD
-New-AzureADServicePrincipal -AppId 8578e004-a5c6-46e7-913e-12f58912df43 -DisplayName "Power Platform API"
+Connect-MgGraph
+New-MgServicePrincipal -AppId 8578e004-a5c6-46e7-913e-12f58912df43 -DisplayName "Power Platform API"
 ```
 
 From here, you must select the permissions you require. These are grouped by [**Namespaces** ](/rest/api/power-platform). Within a namespace, you see resource types and actions for example *AppManagement.ApplicationPackages.Read* which give read permissions for application packages. For more information, see our [Permission reference](programmability-permission-reference.md) article.
