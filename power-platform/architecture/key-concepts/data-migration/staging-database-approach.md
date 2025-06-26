@@ -17,7 +17,7 @@ This reference architecture emphasizes the strategic role of a staging database 
 
 ## Architecture diagram
 
-:::image type="content" source="media/data-migration-architecture.svg" alt-text="Architecture diagram showing the workflow for a complex data migration from a CRM system such as Salesforce or Sibel to Microsoft Dataverse." lightbox="media/data-migration-architecture2.svg":::
+:::image type="content" source="media/data-migration-architecture.svg" alt-text="Architecture diagram showing the workflow for a complex data migration from a CRM system such as Salesforce or Sibel to Microsoft Dataverse." lightbox="media/data-migration-architecture.svg":::
 
 ## Dataflow
 
