@@ -143,7 +143,7 @@ To view the consumption of Power Platform requests for licensed users, non-licen
 
 4. On the **Summary** tab, scroll down to the *Add-ons* section and select **Download reports**.
 
-   :::image type="content" source="media/api-request-limits-allocations/grn-ppac-download-reports.png" alt-text="Screenshot that shows the Capacity page in the Power Platform admin center and highlights the link to download reports." lightbox="media/api-request-limits-allocations/grn-ppac-download-reports.png":::
+   :::image type="content" source="media/api-request-limits-allocations/green-ppac-download-reports.png" alt-text="Screenshot that shows the Capacity page in the Power Platform admin center and highlights the link to download reports." lightbox="media/api-request-limits-allocations/grn-ppac-download-reports.png":::
 
 5. On the *Downloadable Reports* page, select **New** from the command bar.
 6. Expand the **Choose a report** box and select **Microsoft Power Platform requests**.
@@ -184,7 +184,7 @@ The [Licensed User](api-request-limits-allocations.md#licensed-user-request-limi
 
 Here's a sample of a detailed usage report:
 
-:::image type="content" source="media/api-request-limits-allocations/ppr-licensed-user-report2.png" alt-text="Image showing an example of the licensed user report." lightbox="media/api-request-limits-allocations/ppr-licensed-user-report2.png":::
+:::image type="content" source="media/api-request-limits-allocations/ppr-licensed-user-report.png" alt-text="Image showing an example of the licensed user report." lightbox="media/api-request-limits-allocations/ppr-licensed-user-report.png":::
 
 ### Non-licensed User report
 
