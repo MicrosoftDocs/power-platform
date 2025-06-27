@@ -75,7 +75,7 @@ To clear all filters and sorts, select any column and select **Clear all filters
 - **Limited scope**: This experience supports only agents built directly in Copilot Studio. Agents that are created in Copilot Studio agent builder, in the Microsoft 365 Copilot app, aren't supported in this release.
 - **Data refresh frequency**: Inventory data updates once every 24 hours. Newly created agents might take up to 24 hours to appear, and deleted agents might remain visible for up to 48 hours after removal.
 - **Item display limit**: The inventory page displays a maximum of 500 agents at one time. If more than 500 agents match your search or filter criteria, only the first 500 are displayed. Use more filters to narrow down your results. The primary search box, at the top of the page, only searches across those 500 agents.
-- **Teams environments**: Custom agents that are created in Microsoft Teams environments aren't yet supported.
+- **Teams environments**: Currently, it's not possible to filter agents created in Microsoft Teams environments. These agents still appear in the inventory list; however, the **Environment Type** column is blank. This issue will be resolved shortly.
 
 ## Frequently asked questions
 
