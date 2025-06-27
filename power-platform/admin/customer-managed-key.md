@@ -3,22 +3,22 @@ title: Manage your customer-managed encryption key
 description: Learn how to manage your encryption key. 
 author: paulliew
 ms.author: paulliew
-ms.reviewer: sericks, matp, ratrtile
+ms.reviewer: sericks
 ms.topic: how-to
-ms.date: 6/11/2025
+ms.date: 06/11/2025
 ms.custom: template-how-to
+ms.contributors:
+  - samathur
+  - kakazemi
+  - lauravasiliums
+  - sericks
+  - syalandur
 contributors:
   - paulliew
   - kavehkazms
   - lauravasiliums
   - sericks007
   - syalandur24
-ms.contributors:
-  - paulliew
-  - samathur
-  - lauravas
-  - sericks
-  - syalandur
 ---
 
 # Manage your customer-managed encryption key
@@ -27,7 +27,7 @@ Customers have data privacy and compliance requirements to secure their data by 
 
 All customer data stored in Power Platform is encrypted at-rest with strong Microsoft-managed encryption keys by default. Microsoft stores and manages the database encryption key for all your data so you don't have to. However, Power Platform provides this customer-managed encryption key (CMK) for your added data protection control where you can self-manage the database encryption key that is associated with your Microsoft Dataverse environment. This allows you to rotate or swap the encryption key on demand, and also allows you to prevent Microsoft's access to your customer data when you revoke the key access to our services at any time.
 
-To learn more about customer managed key in Power Platform, watch the customer-managed key video.
+To learn more about customer-managed key in Power Platform, watch the customer-managed key video.
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=6b5742f5-2ff6-4a26-9ab6-ce983b092c42]
 
@@ -69,7 +69,7 @@ Currently, all your customer data stored *only* in the following apps and servic
 > - Power Apps display names, descriptions, and connection metadata continue to be encrypted with a Microsoft-managed key.
 > - The download results link and other data produced by solution checker enforcement during a solution check continues to be encrypted with a Microsoft-managed key.
 
-Environments with finance and operations apps where [Power Platform integration is enabled](/dynamics365/fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration) can also be encrypted. Finance and operations environments without Power Platform integration will continue to use the default Microsoft managed key to encrypt data. More information: [Encryption in finance and operations apps](/dynamics365/fin-ops-core/dev-itpro/sysadmin/customer-managed-keys)
+Environments with finance and operations apps where [Power Platform integration is enabled](/dynamics365/fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration) can also be encrypted. Finance and operations environments without Power Platform integration continue to use the default Microsoft-managed key to encrypt data. Learn more in [Encryption in finance and operations apps](/dynamics365/fin-ops-core/dev-itpro/sysadmin/customer-managed-keys).
 
 :::image type="content" source="media/customer-managed-key/power-platform-diagram.png" alt-text="Customer-managed encryption key in the Power Platform":::
 
@@ -90,11 +90,11 @@ To simplify the key management tasks, the tasks are broken down into three main 
 > [!WARNING]
 > When environments are locked, they can't be accessed by anyone, including Microsoft support. Environments that are locked become disabled and data loss can occur.
 
-## Licensing requirements for customer managed key
+## Licensing requirements for customer-managed key
 
-Customer managed key policy is only enforced on environments that are activated for Managed Environments. Managed Environments are included as an entitlement in standalone Power Apps, Power Automate, Microsoft Copilot Studio, Power Pages, and Dynamics 365 licenses that give premium usage rights. Learn more about [Managed Environment licensing](managed-environment-licensing.md), with the [Licensing overview for Microsoft Power Platform](pricing-billing-skus.md).
+Customer-managed key policy is only enforced on environments that are activated for Managed Environments. Managed Environments are included as an entitlement in standalone Power Apps, Power Automate, Microsoft Copilot Studio, Power Pages, and Dynamics 365 licenses that give premium usage rights. Learn more about [Managed Environment licensing](managed-environment-licensing.md), with the [Licensing overview for Microsoft Power Platform](pricing-billing-skus.md).
 
-In addition, access to using customer managed key for Microsoft Power Platform and Dynamics 365 requires users in the environments where the encryption key policy is enforced to have one of these subscriptions:
+In addition, access to using customer-managed key for Microsoft Power Platform and Dynamics 365 requires users in the environments where the encryption key policy is enforced to have one of these subscriptions:
 
 - Microsoft 365 or Office 365 A5/E5/G5
 - Microsoft 365 A5/E5/F5/G5 Compliance
@@ -157,9 +157,9 @@ Power Platform administrator must be assigned to either the Power Platform or Dy
 The Power Platform administrator manages customer-managed key tasks related to the environment in Power Platform admin center.
 
 1. Add the Power Platform environments to the enterprise policy to encrypt data with the customer-managed key. More information: [Add an environment to the enterprise policy to encrypt data](#add-an-environment-to-the-enterprise-policy-to-encrypt-data)
-1. Remove environments from enterprise policy to return encryption to Microsoft managed key. More information: [Remove environments from policy to return to Microsoft managed key](#remove-environments-from-policy-to-return-to-microsoft-managed-key)
+1. Remove environments from enterprise policy to return encryption to Microsoft-managed key. More information: [Remove environments from policy to return to Microsoft managed key](#remove-environments-from-policy-to-return-to-microsoft-managed-key)
 1. Change the key by removing environments from the old enterprise policy and adding environments to a new enterprise policy. More information: [Create encryption key and grant access](#change-the-environments-encryption-key-with-a-new-enterprise-policy-and-key)
-1. Migrate from BYOK. If you're using the earlier self-managed encryption key feature, you can migrate your key to customer managed key. More information: [Migrate bring-your-own-key environments to customer-managed key](cmk-migrate-from-byok.md)
+1. Migrate from BYOK. If you're using the earlier self-managed encryption key feature, you can migrate your key to customer-managed key. Learn more in [Migrate bring-your-own-key environments to customer-managed key](cmk-migrate-from-byok.md).
 
 ## Create encryption key and grant access
 
@@ -428,7 +428,9 @@ The key vault admin notifies the Power Platform admin that an encryption key and
 ### Add an environment to the enterprise policy to encrypt data
 
 > [!IMPORTANT]
-> The environment is disabled when it's added to the enterprise policy for data encryption.
+> The environment is disabled when it's added to the enterprise policy for data encryption. The duration of the system downtime is dependent on the size of the database. We recommended that you do a test run by making a copy of the target environment into a test environment to determine the estimated system downtime.
+> The system downtime can be determined by checking the [environment's encryption status](#review-the-encryption-status-from-enterprise-policies). The system downtime is between the **Encrypting** and **Encrypting - online** statuses.
+> To reduce the system downtime, we change the encryption status to **Encrypting - online** when all the core encryption steps that required the system to be down are complete. The system can be used by your users while the remaining storage services, such as search and Copilot index, continue to encrypt the data with your customer-managed key.   
 
 ##### [New admin center](#tab/new)
 
@@ -455,17 +457,17 @@ The key vault admin notifies the Power Platform admin that an encryption key and
 >
 > - Only environments that are in the same region as the enterprise policy are displayed in the **Add environments** list.
 > - The encryption can take up to four days to complete, but the environment might be enabled before the **Add environments** operation completes.
-> - The operation might not complete and if it fails, your data continues to be encrypted with Microsoft managed key. You can rerun the **Add environments** operation again.
+> - The operation might not complete and if it fails, your data continues to be encrypted with Microsoft-managed key. You can rerun the **Add environments** operation again.
 
 > [!NOTE]
 > You can only add environments that are enabled as Managed Environments. Trial and Teams environment types can't be added to the enterprise policy.
 
-### Remove environments from policy to return to Microsoft managed key
+### Remove environments from policy to return to Microsoft-managed key
 
-Follow these steps if you want to return to a Microsoft managed encryption key.
+Follow these steps if you want to return to a Microsoft-managed encryption key.
 
 > [!IMPORTANT]
-> The environment is disabled when it's removed from the enterprise policy to return data encryption using the Microsoft managed key.
+> The environment is disabled when it's removed from the enterprise policy to return data encryption using the Microsoft-managed key.
 
 ##### [New admin center](#tab/new)
 
@@ -516,16 +518,19 @@ Follow these steps if you want to return to a Microsoft managed encryption key.
 ---
 
    > [!NOTE]
-   >
    > The environment's encryption status can be:
    >
-   > - **Encrypted** - The Enterprise policy encryption key is active and the environment is encrypted with your key.
-   > - **Failed** - The Enterprise policy encryption key is not used by **all** Dataverse storage services. They require more time to process and you can re-run the **Add environment** operation. Contact Support if the re-run fails.
+   > - **Encrypting** - The customer-managed key encryption process is running and the system is disabled for online use. 
+   > - **Encrypting - online** - All core services encryption that required system downtime is complete and system is enabled for online use.
+   > - **Encrypted** - The enterprise policy encryption key is active and the environment is encrypted with your key.
+   > - **Reverting** - The encryption key is being changed from customer-managed key to Microsoft-managed key and the system is disabled for online use.
+   > - **Reverting - online** - All core services encryption that required system downtime have reverted the key and the system is enabled for online use.
+   > - **Microsoft Managed key** - The Microsoft-managed key encryption is active.  
+   > - **Failed** - The enterprise policy encryption key isn't used by **all** Dataverse storage services. They require more time to process and you can rerun the **Add environment** operation. Contact Support if the rerun operation fails.
    >
-   >      A **Failed** encryption status doesn't impact your environment data and its operations. This means that some of the Dataverse storage services are encrypting your data with your key and some continue to use the Microsoft-managed key. A revert isn't recommended as when you re-run the **Add environment** operation, the service resumes from where it left off.
+   >     A **Failed** encryption status doesn't impact your environment data and its operations. This means that some of the Dataverse storage services are encrypting your data with your key and some continue to use the Microsoft-managed key. A revert isn't recommended as when you re-run the **Add environment** operation, the service resumes from where it left off.
    >
-   > - **Warning** - The Enterprise policy encryption key is active and one of the service's data continues to be encrypted with the Microsoft-managed key. Learn more: [Power Automate CMK application warning messages](/power-automate/customer-managed-keys#power-automate-cmk-application-warning-messages)
-   >
+   > - **Warning** - The enterprise policy encryption key is active and one of the service's data continues to be encrypted with the Microsoft-managed key. Learn more in [Power Automate CMK application warning messages](/power-automate/customer-managed-keys#power-automate-cmk-application-warning-messages).
 
 #### Review the encryption status from the Environment History page
 
@@ -556,7 +561,7 @@ You can see the [environment history](environments-overview.md#environment-histo
 
 ### Change the environment's encryption key with a new enterprise policy and key
 
-To change your encryption key, create a new key and a new enterprise policy. You can then change the enterprise policy by removing the environments and then adding the environments to the new enterprise policy. The system is down two times when changing to a new enterprise policy - 1) to revert the encryption to Microsoft Managed key and 2) to apply the new enterprise policy.
+To change your encryption key, create a new key and a new enterprise policy. You can then change the enterprise policy by removing the environments and then adding the environments to the new enterprise policy. The system is down two times when changing to a new enterprise policy - 1) to revert the encryption to Microsoft-managed key and 2) to apply the new enterprise policy.
 
 > [!Tip]
 > To rotate the encryption key, we recommend using the Key vaults' [**New version** or setting a **Rotation policy**](customer-managed-key.md#rotate-the-environments-encryption-key-with-a-new-key-version).
@@ -650,23 +655,24 @@ To rotate the encryption key by creating a new key version, use the following st
 
 ## Environment database operations
 
-A customer tenant can have environments that are encrypted using the Microsoft managed key and environments that are encrypted with the customer managed key. To maintain data integrity and data protection, the following controls are available when managing environment database operations.
+A customer tenant can have environments that are encrypted using the Microsoft-managed key and environments that are encrypted with the customer-managed key. To maintain data integrity and data protection, the following controls are available when managing environment database operations.
 
-- [Restore](backup-restore-environments.md)
-   The environment to overwrite (the restored to environment) is restricted to the same environment that the backup was taken from or to another environment that is encrypted with the same customer managed key.
+- [Restore](backup-restore-environments.md) 
+   The environment to overwrite (the restored to environment) is restricted to the same environment that the backup was taken from or to another environment that is encrypted with the same customer-managed key. 
 
    :::image type="content" source="media/customer-managed-key/restore-backup.png" alt-text="Restore backup":::
 
 - [Copy](copy-environment.md)
-   The environment to overwrite (the copied to environment) is restricted to another environment that is encrypted with the same customer managed key.
+
+   The environment to overwrite (the copied to environment) is restricted to another environment that is encrypted with the same customer-managed key. 
 
    :::image type="content" source="media/customer-managed-key/copy-environment.png" alt-text="Copy environment":::
 
    > [!NOTE]
-   > If a Support Investigation environment was created to resolve support issue in a customer managed environment, the encryption key for the Support Investigation environment must be changed to customer managed key before the Copy environment operation can be performed.
+   > If a Support Investigation environment was created to resolve support issue in a customer-managed environment, the encryption key for the Support Investigation environment must be changed to customer-managed key before the Copy environment operation can be performed. 
 
 - [Reset](sandbox-environments.md#reset-a-sandbox-environment)
-   The environment's encrypted data is deleted including backups. After the environment is reset, the environment encryption will revert back to the Microsoft managed key.
+   The environment's encrypted data is deleted including backups. After the environment is reset, the environment encryption will revert back to the Microsoft-managed key. 
 
 ## Next steps
 
