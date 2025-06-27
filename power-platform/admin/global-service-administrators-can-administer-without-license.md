@@ -43,7 +43,7 @@ To give these administrators access to additional areas, such as the Sales, Mark
 > 
 > Unlicensed administrators who need to work with Power Apps for Admins PowerShell module or management connectors need to sign into the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) at least once before invoking these administrative commands.
 > 
-> For tenants with special capabilities, such as pay-as-you-go plans, per app plans, or [special licenses](pricing-billing-skus.md#tenant-level-special-licenses), all users except administrators have read/write access set by default. Microsoft 365 global admins, Power Platform admins, or Dynamics 365 admins need a license added in order to be assigned read/write permission in the access mode. Learn more in [Assign Microsoft 365 licenses to users](/microsoft-365/admin/manage/assign-licenses-to-users). 
+> For tenants with special capabilities, such as pay-as-you-go plans, per app plans, or [special licenses](pricing-billing-skus.md#tenant-level-special-licenses), all users except administrators have read/write access set by default. Microsoft 365 global admins, Power Platform admins, or Dynamics 365 admins need a "per user" license (Power Apps Premium or Power Apps Basic or Power Apps use rights included with Dynamics 365 licenses) added in order to be assigned read/write permission in the access mode. Learn more in [Assign Microsoft 365 licenses to users](/microsoft-365/admin/manage/assign-licenses-to-users). 
 
 ### Related content
 
