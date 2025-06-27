@@ -30,7 +30,7 @@ On the **Data** page of the [Power Platform admin center](https://admin.powerpla
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. Select **Manage** in the navigation pane.
 1. In the **Manage** pane, under **Data** section, select **Data (preview)**. 
-**
+
 # [Classic admin center](#tab/classic)
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
@@ -174,9 +174,12 @@ As either a Microsoft Entra Global administrator (which includes Global admins) 
 1. Select **Manage gateway installers**.
 
    > [!div class="mx-imgBorder"] 
-   > ![Manage gateway installers.](media/manage-gateway-installers.png "Manage gateway installers")
+   > ![Manage gateway installers.](media/manage-gateway-installers.png "Manage gateway installers.")
 
 1. Enable **Restrict Users in your organization from installing gateways**. This option is off by default, allowing anyone in your organization to install a gateway.
+
+   > [!div class="mx-imgBorder"] 
+   > ![Manage gateway installers.](media/manage-gateway-installers-users.png "Manage gateway installers users.")
 
 1. Add users who can install gateways, and then select **Add**.
 
