@@ -1,6 +1,6 @@
 ---
 title: Requests limits and allocations
-description: Power Platform requests limits and allocations
+description: Learn about Power Platform requests limits and allocations and how to download reports from the Power Platform admin center.
 author: samathur
 contributors:
   - samathur
@@ -11,7 +11,7 @@ contributors:
   - EllenWehrle 
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 06/12/2025
+ms.date: 06/27/2025
 ms.subservice: admin
 ms.author: samathur
 ms.reviewer: angieandrews
@@ -30,7 +30,7 @@ Requests in Microsoft Power Platform consist of various actions that a user make
 
 - **Power Apps**: All API requests to connectors and Microsoft Dataverse.
 - **Power Automate**: All API requests to connectors, process advisor analysis, HTTP actions, and built-in actions from initializing variables to a simple compose action. Both succeeded and failed actions count towards these limits. Additionally, retries and other requests from pagination count as action executions. Learn more in [What counts as Power Platform request?](power-automate-licensing/faqs.md#what-counts-as-power-platform-request)
-- **Microsoft Copilot Studio**: API requests (or calls) to Power Automate flows from within a chatbot conversation.
+- **Microsoft Copilot Studio**: API requests (or calls) to Power Automate flows.
 - **Dataverse**: All create, read, update, and delete (CRUD), assign, and share operations including user-driven and internal system requests required to complete CRUD transactions, and special operations like share or assign. These operations can be from any client or application (including Dynamics 365) and using any endpoint (SOAP or REST). These operations include, but aren't limited to, plug-ins, classic workflows, and custom controls making the earlier-mentioned operations.
 
 > [!NOTE]
@@ -40,7 +40,7 @@ The following sections describe the request types and the limits established for
 
 ## Licensed user request limits
 
-All the users of Microsoft Power Platform have limits on the number of requests based on the license they're assigned. The following table defines the number of requests a user can make in a 24-hour period:
+All Microsoft Power Platform users have limits on the number of requests based on the license they're assigned. The following table defines the number of requests a user can make in a 24-hour period:
 
 | Products | Requests per paid license per 24 hours |
 |--------------|-------------------|
@@ -53,7 +53,7 @@ All the users of Microsoft Power Platform have limits on the number of requests 
 
 <sup>2</sup> This category includes the Power Apps pay-as-you-go plan, and paid licenses Power Apps per app plan, Dynamics 365 Team Member, Dynamics CRM Online Basic, Dynamics CRM Online Essential, Dynamics AX Self-Serve, Microsoft 365 licenses, and Microsoft Project Online (Plan 1, Plan 3, and Plan 5). Learn more in **Appendix B** in the [Power Platform Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130) for Microsoft 365 licenses that include Power Apps and Power Automate capabilities.
 
-<sup>3</sup> The Power Automate per-flow plan allows capacity to be specifically reserved for a single flow, irrespective of the owner of the flow. This plan doesn't use the non-licensed user request limits at the tenant level.
+<sup>3</sup> The Power Automate per flow plan allows capacity to be specifically reserved for a single flow, irrespective of the owner of the flow. This plan doesn't use the non-licensed user request limits at the tenant level.
 
 <sup>4</sup> Microsoft Copilot Studio requests are counted from Power Automate flows triggered from a Microsoft Copilot Studio chatbot.  Microsoft Copilot Studio initial sessions pack and additional sessions pack both receive the same daily Power Platform Request limits.
 
@@ -63,7 +63,7 @@ Power Platform Request limits are only included with paid base licenses in the D
 
 If a user has multiple paid licenses assigned to them, the total number of requests allowed is the sum of requests allowed for each license. For example, if a user has both a Dynamics 365 Customer Service Enterprise base license and a Power Apps per user license then that user has a total of 40,000 + 40,000 = 80,000 requests available per 24 hours.
 
-Microsoft Copilot Studio requests are counted from Power Automate flows triggered from a Microsoft Copilot Studio chatbot. Microsoft Copilot Studio initial sessions pack and additional sessions pack both receive the same daily Power Platform Request limits.
+Microsoft Copilot Studio requests are counted from Power Automate flows triggered from a Microsoft Copilot Studio chatbot or agent. Microsoft Copilot Studio initial sessions pack and additional sessions pack both receive the same daily Power Platform Request limits.
 
 ## Non-licensed user request limits
 
@@ -127,25 +127,37 @@ Review the following resources for information about *current* service protect
 
 To view the consumption of Power Platform requests for licensed users, non-licensed users, and per flow licensed flow runs.
 
-1. Sign in to [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+### [New admin center](#tab/new)
 
-2. On the navigation menu to the left, select **Capacity**.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Licensing**.
+1. In the **Licensing** pane, select **Capacity add-ons** to view the *Capacity* page.
 
-3. On the **Summary** tab, select **Download reports** in the **Add-ons** section.
+### [Classic admin center](#tab/classic)
 
-   :::image type="content" source="media/ppac-downloadreports.png" alt-text="Screenshot that shows the Capacity page in the Power Platform admin center and highlights the link to download reports.":::
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. On the navigation pane, expand *Resources*.
+1. Select **Capacity** to view the *Capacity* page.
 
-4. Select **New** from the menu.
+---
 
-   :::image type="content" source="media/download-report-new.png" alt-text="Screenshot that shows the Download Reports page in the Power Platform admin center and highlights the button to create a new download report.":::
+4. On the **Summary** tab, scroll down to the *Add-ons* section and select **Download reports**.
 
-5. Select **Microsoft Power Platform requests** in the **Choose a report** box.
+   :::image type="content" source="media/api-request-limits-allocations/grn-ppac-download-reports.png" alt-text="Screenshot that shows the Capacity page in the Power Platform admin center and highlights the link to download reports." lightbox="media/api-request-limits-allocations/grn-ppac-download-reports.png":::
 
-   :::image type="content" source="media/request-download-report.png" alt-text="Screenshot that shows the dropdown menu for the Power Platform requests reports.":::
+5. On the *Downloadable Reports* page, select **New** from the command bar.
+6. Expand the **Choose a report** box and select **Microsoft Power Platform requests**.
 
-6. Select the required type of report, and then select **Submit**.
+    :::image type="content" source="media/api-request-limits-allocations/select-requests-report.png" alt-text="Screenshot that shows a side panel that contains the dropdown menu for the Power Platform requests reports.":::
 
-7. Once the report is ready, select **Download** to download the report as an Excel CSV file.
+7. Select the required scope of the report:
+
+    1. Licensed User
+    1. Non-licensed User
+    1. Per Flow Licensed Flows
+
+8. Select **Submit**.
+9. Once the report is ready, select **Download** to download the report as an Excel CSV file.
 
 > [!NOTE]
 > These reports are currently in preview. There are two limitations with the Licensed User preview report.
@@ -172,7 +184,7 @@ The [Licensed User](api-request-limits-allocations.md#licensed-user-request-limi
 
 Here's a sample of a detailed usage report:
 
-:::image type="content" source="media/ppr-licensed-user-report.png" alt-text="Image showing an example of the licensed user report." lightbox="media/ppr-licensed-user-report.png":::
+:::image type="content" source="media/api-request-limits-allocations/ppr-licensed-user-report2.png" alt-text="Image showing an example of the licensed user report." lightbox="media/api-request-limits-allocations/ppr-licensed-user-report2.png":::
 
 ### Non-licensed User report
 
@@ -194,7 +206,7 @@ The [Non-licensed User](api-request-limits-allocations.md#non-licensed-user-requ
 
 Here's a sample of a detailed usage report:
 
-:::image type="content" source="media/non-licensed-user-report.png" alt-text="Image showing an example of the non-licensed user report." lightbox="media/non-licensed-user-report.png":::
+:::image type="content" source="media/api-request-limits-allocations/non-licensed-user-report.png" alt-text="Image showing an example of the non-licensed user report." lightbox="media/api-request-limits-allocations/non-licensed-user-report.png":::
 
 ### Per Flow report
 
@@ -205,30 +217,30 @@ The Per Flow Licensed Flows downloadable report contains the following fields:
 | Environment ID    | The unique Power Platform environment identifier. |
 | Environment Name    | The display name of environment. |
 | Environment Region    | Not available during preview. |
-| Caller ID    | The unique identifier of the Flow. This can be null or empty.  |
-| Caller Type    | The type of caller identity. Applicable values are Flow. |
+| Caller ID    | The unique identifier of the flow. This can be null or empty.  |
+| Caller Type    | The type of caller identity. Applicable values are *Flow*. |
 | Usage Datetime    | The date and time of when the usage was captured (UTC). |
 | Entitled Quantity    | The value of any included entitlement for the flow.  |
 | Consumed Quantity    | Usage of Power Platform requests.  |
 
 Here's a sample of a detailed usage report:
 
-:::image type="content" source="media/ppr-per-flow-licensed-flows.png" alt-text="Image showing an example of the per flow-licensed report.":::
+:::image type="content" source="media/api-request-limits-allocations/ppr-per-flow-licensed-flows.png" alt-text="Image showing an example of the per flow-licensed report." lightbox="media/api-request-limits-allocations/ppr-per-flow-licensed-flows.png":::
 
 ## Request limits in Power Automate
 
 > [!IMPORTANT]
 > Desktop flow executions don't consume Power Platform requests
 
-To ensure Power Automate service availability and quality, there are limits to the number of Power Platform requests (PPR) users can make across their cloud flows. Those limits are set against normal flow usage patterns in both five minutes and per 24 hour intervals.
+To ensure Power Automate service availability and quality, there are limits to the number of Power Platform requests (PPR) users can make across their cloud flows. Those limits are set against normal flow usage patterns in both five minutes and per 24-hour intervals.
 
-The 24 hour limit is based on the user license or on the Process / Per-flow plan license allocated to a cloud flow:
+The 24-hour limit is based on the user license or on the Process / per flow plan license allocated to a cloud flow:
 
-- If a user has a Power Automate Premium license, they can make 40,000 Power Platform requests across all of their cloud flows in a tenant within a 24 hour period. This limit includes requests the platform makes to third party connectors too.
-- If a cloud flow has a Process license, the flow, its child flows, and its associated flows can make 250,000 Power Platform requests across all users of the flow in a 24 hour period.
-- If a cloud flow has a Per-flow plan (legacy), the flow can make 250,000 Power Platform requests across all users of the flow in a 24 hour period.
+- If a user has a Power Automate Premium license, they can make 40,000 Power Platform requests across all of their cloud flows in a tenant within a 24-hour period. This limit includes requests the platform makes to third party connectors too.
+- If a cloud flow has a Process license, the flow, its child flows, and its associated flows can make 250,000 Power Platform requests across all users of the flow in a 24-hour period.
+- If a cloud flow has a per flow plan (legacy), the flow can make 250,000 Power Platform requests across all users of the flow in a 24-hour period.
 
-To prevent a usage-heavy flow or user from impacting other users, this capacity is tracked based on consumption at an individual user or flow level and it can't be pooled at any other level like environment or tenant levels. The 24 hours is a sliding window, meaning that anytime a cloud flow runs, the system looks at the requests in the past 24 hours to determine if the user is at their limit. For example, two users in a tenant might have Premium licenses, and each user gets 40,000 requests per 24 hour period. If the first person uses more than 40,000 requests 24 hour period, their flows slow down and don't impact the second user who only used 20,000 requests and still has 20,000 requests remaining.
+To prevent a usage-heavy flow or user from impacting other users, this capacity is tracked based on consumption at an individual user or flow level and it can't be pooled at any other level like environment or tenant levels. The 24 hours is a sliding window, meaning that anytime a cloud flow runs, the system looks at the requests in the past 24 hours to determine if the user is at their limit. For example, two users in a tenant might have Premium licenses, and each user gets 40,000 requests per 24-hour period. If the first person uses more than 40,000 requests 24-hour period, their flows slow down and don't impact the second user who only used 20,000 requests and still has 20,000 requests remaining.
 
 Currently all organizations are in [a transition period](/power-platform/admin/power-automate-licensing/types#transition-period) during which higher transition period limits apply. Once transition period ends, the official limits are applicable. Build your cloud flows based on official limits.
 The five-minute limit is 100,000 requests and it's independent of a user's license. For example, flows with a Process license can make 250,000 requests in 24 hours but they can't make more than 100,000 requests within five minutes.
@@ -264,7 +276,7 @@ Here are a few things to be aware of during the transition period:
 
 1. The transition period doesn't mean that there are no daily limits. It means that the currently enforced limits are more generous than the official limits to prevent potential unintended impact on your apps or flows.
 
-2. These transition period limits are applied at the cloud flow level during the transition period. Additionally, a separate per user level limit of 1,000,000 cloud flow actions is applied during the transition period to ensure users don't exceed 1M actions across all their flow runs in a day. After the transition period ends, the actual limits will be applied at user level for Premium licenses and cloud flow level for Process / Per flow-plan licenses.
+2. These transition period limits are applied at the cloud flow level during the transition period. Additionally, a separate per user level limit of 1,000,000 cloud flow actions is applied during the transition period to ensure users don't exceed 1M actions across all their flow runs in a day. After the transition period ends, the actual limits will be applied at user level for Premium licenses and cloud flow level for Process / per flow-plan licenses.
 
 3. During the transition period, manual cloud flows don't use the flow owners/flow invokers limits. Every manual cloud flow has a performance profile of Medium (100,000 requests/flow/24 hours). After the transition period, manual cloud flows will use the request limits of invoking user.
 
@@ -282,7 +294,7 @@ Reporting for Power Platform Request usage in preview is available in the Power 
 
 ### What are the timelines for Power Platform Request limits?
 
-The concept of limits was first introduced in late 2019 and documented limits were substantially increased in late 2021. Public preview reporting for Power Platform Requests rolled out in June 2022. Following a public preview period, the reports move to general availability. There's no current ETA for when GA  happens. Any potential high usage enforcement won't start until at least six months after reports are generally available. However, Power Automate continues to throttle at transition limits until enforcement. Learn more in [FAQs](power-automate-licensing/faqs.md#power-platform-requests-questions).
+The concept of limits was first introduced in late 2019 and documented limits were substantially increased in late 2021. Public preview reporting for Power Platform Requests rolled out in June 2022. Following a public preview period, the reports move to general availability. There's no current ETA for when GA happens. Any potential high usage enforcement won't start until at least six months after reports are generally available. However, Power Automate continues to throttle at transition limits until enforcement. Learn more in [FAQs](power-automate-licensing/faqs.md#power-platform-requests-questions).
 
 ### What account's limits are used for classic workflows or Power Automate flows?
 
