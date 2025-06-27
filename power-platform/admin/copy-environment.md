@@ -80,7 +80,7 @@ After modifying and enabling some of the plug-ins, the developer sandbox environ
 | BusinessProcessFlowInstance | ListMember | Task |
 | BusinessUnitNewsArticle | MailboxStatistics | TeamProfiles |
 | Campaign | MonthlyFiscalCalendar | TeamRoles |
-| CampaignActivity | Notification | Territory
+| CampaignActivity | Notification | Territory |
 | CampaignActivityItem | Opportunity | TimeZoneLocalizedName |
 | CampaignItem | OpportunityClose | Topic |
 | CampaignResponse | OpportunityCompetitors | TopicHistory |
