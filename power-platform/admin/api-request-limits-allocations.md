@@ -67,7 +67,7 @@ Microsoft Copilot Studio requests are counted from Power Automate flows triggere
 
 ## Non-licensed user request limits
 
-A separate limit is established for certain activities(for example: A background process that migrates data between databases) that don't require a user to interact with the service. These limits are defined and pooled at the tenant level. Dataverse enables you to have identities that don't require any user to interact with the service. These include:
+A separate limit is established for certain activities (for example: A background process that migrates data between databases) that don't require a user to interact with the service. These limits are defined and pooled at the tenant level. Dataverse enables you to have identities that don't require any user to interact with the service. These include:
 
 - [Application users](create-users.md#create-an-application-user)
 - [Non-interactive users](create-users.md#create-a-non-interactive-user-account)
