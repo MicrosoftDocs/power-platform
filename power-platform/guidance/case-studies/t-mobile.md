@@ -33,7 +33,7 @@ technical details, switching between several applications on an
 iPad. This way of working isn't efficient or good for the environment. They need to move away from this paper-heavy and
 time-consuming process.
 
-Brian Hodel, solution architect and developer at T-Mobile in Bellevue, WA, built this solution. With a professional developer background, Brian streamlines business operations and automates processes across the organization using tools in Power Platform. After the success with the [Orbit app](/power-platform/blog/power-apps/tmobile/),
+Brian Hodel, solution architect and developer at T-Mobile in Bellevue, WA, built this solution. With a professional developer background, Brian streamlines business operations and automates processes across the organization using tools in Power Platform. After the success with the [Orbit app](/https://www.microsoft.com/en-us/power-platform/blog/power-apps/tmobile/),
 Brian develops this solution to help make the
 retail department more efficient.
 
