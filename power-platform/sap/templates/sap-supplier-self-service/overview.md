@@ -7,7 +7,7 @@ contributor:
 ms.author: sandhan
 ms.reviewer: ellenwehrle
 ms.topic: overview
-ms.date: 08/14/2024
+ms.date: 06/27/2025
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -37,5 +37,5 @@ The SAP Supplier Self Service template's solutions work with the SAP Procurement
 
 The template uses third-party libraries to show data in forms and lists from cloud flows. Please ensure you review and agree to the terms of use for these licenses:
 
-- **Form.io**: https://cdn.form.io/js/formio.embed.js ([License information](https://github.com/formio/formio.js/blob/4.19.x/LICENSE.txt))
-- **Data tables**: https://cdn.datatables.net/2.0.8/js/dataTables.min.js ([License information](https://datatables.net/license/mit))
+- [**Form.io** License information](https://github.com/formio/formio.js/blob/4.19.x/LICENSE.txt)
+- [**Data tables** License information](https://datatables.net/license/mit)
