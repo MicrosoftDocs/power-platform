@@ -29,5 +29,5 @@ The following table describes the key concepts of Power Platform and Copilot Stu
 | --- | --- |
 | **[ExpressRoute and Power Platform](expressroute/overview.md)** | Learn how to use Microsoft Azure ExpressRoute to connect your on-premises network to Microsoft cloud services by using private connectivity. |
 | **[Dataverse auditing](dataverse-auditing.md)** | Learn how to track and record changes to data, user activities, and system events with Dataverse auditing. |
-| **[CRM migration to Dataverse: Key insights and best practices](key-concepts/data-migration/index.md)** | Learn how to move data from external customer relationship management (CRM) systems to Microsoft Dataverse, overcome common challenges, and ensure business continuity. |
+| **[CRM migration to Dataverse: Key insights and best practices](data-migration/index.md)** | Learn how to move data from external customer relationship management (CRM) systems to Microsoft Dataverse, overcome common challenges, and ensure business continuity. |
 | **[Distributed tracing across multiple services](distributed-tracing.md)** | Learn how to achieve comprehensive observability across services like Power Platform, Azure, and Dynamics 365. |
