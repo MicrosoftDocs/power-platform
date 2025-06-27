@@ -18,12 +18,25 @@ search.audienceType:
 
 # On-premises data gateway management
 
-The on-premises data gateway acts as a bridge, providing quick and secure data transfer between on-premises data (data that is not in the cloud) and the Power BI, Power Automate, Logic Apps, and Power Apps services. More information: [What is an on-premises data gateway?](/data-integration/gateway/service-gateway-onprem)
+The on-premises data gateway acts as a bridge, providing quick and secure data transfer between on-premises data (data that is not in the cloud) and the Power BI, Power Automate, Logic Apps, and Power Apps services. More information, see [What is an on-premises data gateway?](/data-integration/gateway/service-gateway-onprem).
 
 > [!NOTE]
 > The gateway management feature in the Power Platform admin center isn’t supported on mobile or smaller screens with a resolution lower or equal to 320 x 256. 
 
 On the **Data** page of the [Power Platform admin center](https://admin.powerplatform.microsoft.com), you can view and manage on-premises data gateways.
+
+# [New admin center](#tab/new)
+ 
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. Select **Manage** in the navigation pane.
+1. In the **Manage** pane, under **Data** section, select **Data (preview)**. 
+**
+# [Classic admin center](#tab/classic)
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. Select **Data(preview)** in the left-side menu.
+
+---
 
 Users who are part of the Microsoft Entra Global administrator role (which includes Global admins), Power BI service administrators, and Gateway administrators will have access to data gateway management on the Power Platform admin center. However, there might be differences in the features available and the operations that can be performed by each of these roles.
 
@@ -39,7 +52,7 @@ You can switch between these two views using this toggle in the upper-right corn
 
 ## Data gateways
 
-The **Data** page lists all on-premises data gateway clusters installed. In addition, you can review the following information about these clusters:
+The **Data (preview)** page lists all on-premises data gateway clusters installed. In addition, you can review the following information about these clusters:
 
 - **Gateway cluster name**: The name of the gateway cluster.
 - **Contact info**: Admin contact information for the gateway cluster. 
@@ -121,7 +134,7 @@ For more information, go to [Remove or delete an on-premises data gateway](/data
 For faster troubleshooting and assistance, select **Get help** to open a Get Help panel. Include the session ID in a customer support ticket for any issues on the Data Gateways feature in the Power Platform admin center.
 
 > [!div class="mx-imgBorder"] 
-> ![Get help.](media/get-help.png "Get help")
+> ![Get help.](media/get-help-gateway.png "Get help")
 
 ## Manage gateways by region
 
@@ -135,14 +148,14 @@ Select the region drop-down list to see the gateway regions. When you select one
 Select the gateway type drop-down list to filter by gateway type. By default, you'll see all data gateways running in standard mode. Use the filter to see data gateways in personal mode or all gateways. For more information, see [Types of gateways](/power-bi/service-gateway-onprem#types-of-gateways).
 
 > [!div class="mx-imgBorder"] 
-> ![Filter by type.](media/filter-by-type.png "Filter by type")
+> ![Filter by type.](media/manage-gateway-by-type.png "Filter by type")
 
 ## Search
 
 Use **Search** to find gateway clusters and see their details. You can search for gateway cluster names and contact info, but not administrators.
 
 > [!div class="mx-imgBorder"] 
-> ![Search.](media/manage-search.png "Search")
+> ![Search.](media/manage-gateway-search.png "Search")
 
 ## Status
 
@@ -158,23 +171,19 @@ As either a Microsoft Entra Global administrator (which includes Global admins) 
 > [!NOTE]
 > This feature does not apply to on-premises data gateways (personal mode).
 
-1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-
-2. Select **Data** from the left-side menu.
-
-3. Select **Manage gateway installers**.
+1. Select **Manage gateway installers**.
 
    > [!div class="mx-imgBorder"] 
    > ![Manage gateway installers.](media/manage-gateway-installers.png "Manage gateway installers")
 
-4. Enable **Restrict Users in your organization from installing gateways**. This option is off by default, allowing anyone in your organization to install a gateway.
+1. Enable **Restrict Users in your organization from installing gateways**. This option is off by default, allowing anyone in your organization to install a gateway.
 
-5. Add users who can install gateways, and then select **Add**.
+1. Add users who can install gateways, and then select **Add**.
 
    > [!NOTE]
    > Currently, we do not support groups for Manage Installers; you can add individual users. 
 
-6. To remove users who have permission to install gateways, select **Remove installer** (![Remove installer.](media/nb-ua-r1-trashbin.png)), and then select **Confirm**.
+1. To remove users who have permission to install gateways, select **Remove installer** (![Remove installer.](media/nb-ua-r1-trashbin.png)), and then select **Confirm**.
 
    > [!NOTE]
    > This does not impact gateways that are already installed. This feature only allows or restricts users from installing gateways going forward.
