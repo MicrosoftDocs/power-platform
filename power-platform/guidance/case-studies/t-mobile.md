@@ -7,21 +7,21 @@ ms.author: mapichle
 ms.reviewer: pankajsharma2087
 ms.subservice: guidance
 ms.topic: overview
-ms.date: 06/27/2025
+ms.date: 06/30/2025
 ---
 
 # T-Mobile empowers customer service representatives using Power Apps and Copilot Studio
 
-T-Mobile leads the U.S. wireless industry and operates the second largest network in the country. The company serves more than 130 million customers. In this article, you learn how T-Mobile empowers customer service representatives (CSRs) with the PromoGenius app. Power Apps and Copilot Studio bring information from different sources together in one place, so CSRs can use natural language queries to get answers quickly.
+T-Mobile leads the U.S. wireless industry and operates the second largest network in the country. The company serves more than 130 million customers. This article shows how T-Mobile empowers customer service representatives (CSRs) with the PromoGenius app. Power Apps and Copilot Studio bring information from different sources together in one place, so CSRs use natural language queries to get answers quickly.
 
 ## Challenges
 
 T-Mobile frontline retail employees need instant access to promotional
 offers and other key sales information. They need data about new
-devices, discounts, trade-in offers, and technical details on devices.
+devices, discounts, trade-in offers, and technical details about devices.
 
-Some information is in internal data sources. But technical
-details on devices are spread across device manufacturers’
+Some information is in internal data sources, but technical
+details about devices are spread across device manufacturers’
 websites. Finding the right information on these sites can take time, especially if the customer wants to compare
 products across multiple sites.
 
@@ -30,11 +30,11 @@ format with the latest updates on devices and available offers. Over
 time, the document becomes more complex and harder to search.
 They print the document for quick reference. CSRs also go into multiple systems to find
 technical details, switching between several applications on an
-iPad. This way of working isn't efficient or good for the environment. They need to move away from this paper-heavy and
+iPad. This way of working isn't efficient or environmentally friendly. They need to move away from this paper-heavy and
 time-consuming process.
 
-Brian Hodel, solution architect and developer at T-Mobile in Bellevue, WA, built this solution. With a professional developer background, Brian streamlines business operations and automates processes across the organization using tools in Power Platform. After the success with the [Orbit app](https://www.microsoft.com/en-us/power-platform/blog/power-apps/tmobile/),
-Brian develops this solution to help make the
+Brian Hodel, solution architect and developer at T-Mobile in Bellevue, WA, builds this solution. With a professional developer background, Brian streamlines business operations and automates processes across the organization using tools in Power Platform. After the success with the [Orbit app](https://www.microsoft.com/en-us/power-platform/blog/power-apps/tmobile/),
+Brian creates this solution to help make the
 retail department more efficient.
 
 ## Solutions
@@ -224,116 +224,88 @@ different values are needed in the different environments.
 
 ## Technologies used
 
-The solution is made up of the following components:
+The solution includes these components:
 
 - Power Apps (canvas app)
 - Copilot Studio agent
 - Microsoft Fabric to load promotional data into Dataverse
 
-A Copilot Studio agent is embedded in a canvas app, which is launched
-from either an iPad or from the web. The latest promotional data for
-devices, offers, and services are stored in different data sources.
-Through Microsoft Fabric, the data is loaded into Microsoft Dataverse.
-The agent uses Dataverse as one of the knowledge sources. The agent also
-uses external web sites as knowledge sources, for accessing device
+A Copilot Studio agent is embedded in a canvas app, which you launch
+from an iPad or the web. The latest promotional data for
+devices, offers, and services is stored in different data sources.
+Microsoft Fabric loads the data into Microsoft Dataverse.
+The agent uses Dataverse as a knowledge source. The agent also
+uses external websites as knowledge sources to get device
 details from manufacturers.
 
 ## Architecture
 
-The users interact with a canvas app with an embedded custom agent on an
-iPad. Dataverse is used as one of the data sources. Microsoft Fabric
-pipelines run nightly for data transformations and loading promotional
-data into Dataverse. Sources are Oracle, SAP, and an Excel file with
-trading values that they get from a third-party system.
+Users interact with a canvas app that has an embedded custom agent on an iPad. Dataverse is one of the data sources. Microsoft Fabric pipelines run nightly to transform data and load promotional data into Dataverse. Sources include Oracle, SAP, and an Excel file with trading values from a third-party system.
 
-The Copilot Studio agent uses external web sites as additional data
-sources, and Bing Custom Search is used within topics, for more precise
-answers.
+The Copilot Studio agent uses external websites as additional data sources, and Bing Custom Search within topics for more precise answers.
 
-The following image shows what parts make up the solution.
+The following image shows the parts that make up the solution.
 
 :::image type="content" source="media/t-mobile/arch.png" alt-text="Screenshot of PromoGenius solution architecture diagram showing app, Dataverse, Fabric, and Copilot Studio agent." lightbox="media/t-mobile/arch.png":::
 
-The following workflow corresponds to the previous diagram:
+The following workflow matches the previous diagram:
 
-1.  A CSR needs access to promotional data and detailed product
-    information in order to be able to help customers.
-1.  A Power Apps canvas app is available to the CSR from iPad on the
-    retail floor and on the web in the call center.
-1.  Microsoft Dataverse is used as the knowledge source and stores
-    promotional data made available through data pipelines and
-    transformations.
-1.  A Copilot Studio agent is embedded in the canvas app and can be used
-    in addition to the filtering options in the app. Users either start
-    from filtering data or by using natural language to query the agent.
-1.  Different websites are both registered as knowledge sources. In
-    addition, Custom Bing Search is utilized.
-1.  Promotional data and trading values are provided by different
-    sources, such as SAP, Oracle database, and Excel.
-1.  Data is transferred nightly to Dataverse using Microsoft Fabric.
+1.  A CSR needs to use promotional data and detailed product information to help customers.
+1.  A Power Apps canvas app is available to the CSR on an iPad on the retail floor and on the web in the call center.
+1.  Microsoft Dataverse is the knowledge source and stores promotional data from data pipelines and transformations.
+1.  A Copilot Studio agent is embedded in the canvas app and can be used along with the app's filtering options. Users start by filtering data or by using natural language to query the agent.
+1.  Different websites are registered as knowledge sources. Custom Bing Search is also used.
+1.  Promotional data and trading values come from different sources, like SAP, Oracle database, and Excel.
+1.  Data moves nightly to Dataverse using Microsoft Fabric.
 
 ## Key takeaways
 
-The case study of T-Mobile’s PromoGenius app demonstrates the potential
-of using Power Apps and Copilot Studio combined to set up a solution
-providing natural language assistance for a process which earlier relied
-on going into multiple applications to find answers. The following key
-takeaways are for IT professionals who are looking to implement a
-similar solution in their own organizations:
+The case study of T-Mobile’s PromoGenius app shows the potential
+of using Power Apps and Copilot Studio together to set up a solution
+that gives natural language assistance for a process that used to require
+using multiple applications to find answers. Here are key
+takeaways for IT professionals who want to set up a
+similar solution in their organization:
 
-- Custom Bing Search can be used for prioritizing data sources and
-  excluding data
-- Data located in other sources can be added to Dataverse through Fabric
-  pipelines if heavy data transformations are needed.
-- The presentation layer can be optimized by using general instructions
+- Use Custom Bing Search to prioritize data sources and
+  exclude data.
+- Add data from other sources to Dataverse through Fabric
+  pipelines if you need heavy data transformations.
+- Optimize the presentation layer by using general instructions
   and telling the agent how to respond.
 
-Since the PromoGenius app was released, T-Mobile has received the
-following key benefits:
+Since releasing the PromoGenius app, T-Mobile gets these key benefits:
 
 - Enhanced customer shopping experience. Answers are available
   instantly.
-- Increased customer satisfaction with customers getting help faster.
-- More effective sales experiences overall. CSRs no longer need to leave
+- Increased customer satisfaction because customers get help faster.
+- More effective sales experiences overall. CSRs don't need to leave
   a customer conversation to check data resources.
 
-Being the second most popular app at T-Mobile, it supports all T-Mobile
-retail outlets and call centers, with over 83,000 unique users and
+As the second most popular app at T-Mobile, it supports all T-Mobile
+retail outlets and call centers, with more than 83,000 unique users and
 500,000 launches a month.
 
-Brian highlights that key learnings from this project include the
-importance of involving the end users in the process of developing the
-solution, getting users onboard early.
+Brian highlights that key lessons from this project include the
+importance of involving end users in developing the
+solution and getting users onboard early.
 
-> One of the key lessons is the importance of engaging directly with the people who will be using the solution. Speaking with them about the user interface and functionality helps create a better experience. This
-platform makes that possible, offering speed and efficiency. Unlike traditional development tools, which don’t allow for real-time collaboration on interface design, this platform empowers you to sit with users and refine the experience together.
+> One of the key lessons is the importance of engaging directly with the people who use the solution. Talking with them about the user interface and functionality helps create a better experience. This
+platform makes that possible, offering speed and efficiency. Unlike traditional development tools, which don't let you collaborate on interface design in real time, this platform lets you sit with users and refine the experience together.
 >
 > - Brian
 
 ## Looking ahead
 
-T-Mobile is looking to make PromoGenius even better. For example,
+T-Mobile plans to make PromoGenius even better. For example,
 the [PDF in function in Power Apps](/power-apps/maker/canvas-apps/how-to/pdf-function) 
-to enable CSRs to generate a PDF report of data sourced for a customer
-and have it sent automatically to a customer via email using a Power
-Automate flow. Adding voice capabilities to the AI agent will enable
-even faster access to data.
+lets CSRs generate a PDF report of customer data and send it automatically to the customer by email using a Power Automate flow. Adding voice capabilities to the AI agent lets users access data even faster.
 
-Continually refining and improving the consolidation of data is another
-area of interest. For instance, T-Mobile is looking into creating a
-direct connection between Dataverse and the source systems using the
-pre-built connectors available with Power Platform.
+T-Mobile also focuses on refining and improving data consolidation. For example, T-Mobile explores creating a direct connection between Dataverse and source systems by using the prebuilt connectors in Power Platform.
 
-More AI agents are planned for both new and existing Power Platform
-solutions across the company. For instance, an AI agent for the Orbit
-app will be used for a wide range of functions, including summarizing
-long text fields within the app, providing faster, more contextual
-search, and more.
+T-Mobile plans to add more AI agents to new and existing Power Platform solutions. For example, an AI agent for the Orbit app summarizes long text fields, provides faster and more contextual search, and more.
 
-A multi-agent architecture is being planned. Instead of having lots of
-different topics, T-Mobile plans to have different agents dedicated to
-one specific task. They even plan on having the application utilize its
-own AI model.
+T-Mobile plans a multi-agent architecture. Instead of many different topics, each agent focuses on a specific task. The application also uses its own AI model.
 
 ## Related information
 
