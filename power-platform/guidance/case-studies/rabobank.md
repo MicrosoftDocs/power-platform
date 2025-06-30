@@ -13,29 +13,29 @@ ms.date: 05/13/2025
 
 # Rabobank conversational banking with Copilot Studio
 
-Rabobank is a multinational banking and financial services company based in the Netherlands. As part of its mission to grow a better world together, Rabobank focuses on conversational banking. The company delivers friendly, efficient customer service on demand, in line with its principles of cooperation and putting people first.
+Rabobank is a multinational banking and financial services company based in the Netherlands. As part of its mission to grow a better world together, Rabobank focuses on conversational banking. The company delivers friendly, efficient customer service on demand, following its principles of cooperation and putting people first.
 
 In this case study, you learn how to:
 
-- Use Copilot Studio to assist bank customers
-- Continuously optimize intent recognition
+- Use Copilot Studio to help bank customers
+- Continuously improve intent recognition
 - Anonymize customer conversations for testing
 - Use Gen AI features and stay compliant
 - Integrate Azure AI Speech service with Copilot Studio
 
 ## Challenges
 
-Rabobank explores chatbot functionality for customer self-service to improve efficiency and lower operational costs. With rising customer expectations and many inquiries, they need a chatbot that can answer common questions.
+Rabobank explores chatbot functionality for customer self-service to improve efficiency and lower operational costs. With rising customer expectations and many inquiries, Rabobank needs a chatbot that answers common questions.
 
-Rabobank sets up text- and voice-enabled chatbot functionality on another platform, partly on-premises. They rely on vendors for implementation and maintenance. However, the solution isn't efficient and causes several challenges.
+Rabobank sets up text- and voice-enabled chatbot functionality on another platform, partly on-premises. Rabobank relies on vendors for implementation and maintenance. But the solution isn't efficient and causes several challenges.
 
-- The systems for chat and voice support need updates with new conversations and logic separately, even though they often use the same information and models. That isn't efficient.
+- The systems for chat and voice support need updates with new conversations and logic separately, even though they often use the same information and models. This approach isn't efficient.
 
-- The platform needs specialized developer support. It slows innovation, and Rabobank wants to speed up time to market.
+- The platform needs specialized developer support. This requirement slows innovation, and Rabobank wants to speed up time to market.
 
-- The chatbot is hard to integrate with external systems and their APIs, which is needed to get the right output for agent conversations and make agents actionable, supporting end-to-end processes.
+- The chatbot is hard to integrate with external systems and their APIs, which Rabobank needs to get the right output for agent conversations and make agents actionable, supporting end-to-end processes.
 
-> We need a flexible platform that can integrate with external APIs, transforming our chatbot into a true financial assistant. We want one conversational platform to manage all chatbots and to optimize it ourselves.
+> We need a flexible platform that can integrate with external APIs, transforming our chatbot into a true financial assistant. We want one conversational platform to manage all chatbots and optimize it ourselves.
 >
 > - Chris den Arend, Solution Architect, Rabobank
 
@@ -157,54 +157,49 @@ This article uses these technologies:
 
 ## Architecture
 
-Rabobank's conversational AI architecture integrates multiple Microsoft technologies to streamline customer interactions across chat and voice channels. Using Genesys Cloud, initial contacts via chat can escalate to live agents, while voice interactions use Azure Speech for text-to-speech and speech-to-text functionalities.
+Rabobank's conversational AI architecture uses multiple Microsoft technologies to streamline customer interactions across chat and voice channels. Genesys Cloud lets initial contacts via chat escalate to live agents, while voice interactions use Azure Speech for text-to-speech and speech-to-text features.
 
-Microsoft Copilot Studio manages both text and voice virtual agents, providing 24/7 self-service and IVR capabilities for authentication and intent recognition. Power BI offers unified analytics, tracking conversation transcripts and business metrics to ensure efficient and high-quality customer service.
+Microsoft Copilot Studio manages both text and voice virtual agents, offering 24/7 self-service and IVR features for authentication and intent recognition. Power BI provides unified analytics, tracking conversation transcripts and business metrics to help deliver efficient, high-quality customer service.
 
-:::image type="content" source="media/rabobank/arch.png" alt-text="Screenshot of Rabobank's conversational AI architecture diagram showing integration of Genesys Cloud, Copilot Studio, Azure Speech, and Power BI." lightbox="media/rabobank/arch.png":::
+:::image type="content" source="media/rabobank/arch.png" alt-text="Screenshot of Rabobank's conversational AI architecture diagram that shows integration of Genesys Cloud, Copilot Studio, Azure Speech, and Power BI." lightbox="media/rabobank/arch.png":::
 
-The following corresponds to the previous diagram:
+The following steps correspond to the previous diagram:
 
-1. A customer calls in and the call lands in Genesys Cloud.
+1. A customer calls and the call lands in Genesys Cloud.
 
-1. The conversation is redirected to the Copilot Studio agent. AudioCodes manages translations.
+1. The conversation redirects to the Copilot Studio agent. AudioCodes manages translations.
 
-1. Azure Speech-to-Text is used for translating the message
-Speech-to-Text.
+1. Azure Speech-to-Text translates the message.
 
-1. The Copilot Studio agent authenticates the customer and manages intent recognition. The conversation is intent labeled.
+1. The Copilot Studio agent authenticates the customer and recognizes intent. The conversation is labeled by intent.
 
-1. The text output from the agent is converted into speech using Azure Text-to-Speech before delivered to the customer.
+1. The agent's text output is converted to speech using Azure Text-to-Speech before it's delivered to the customer.
 
-1. In Genesys Cloud, Pega business rules decide based on parameters (such as business area and intent in the external intent catalog) to what live agent queue it should redirect the conversation.
+1. In Genesys Cloud, Pega business rules use parameters (like business area and intent in the external intent catalog) to decide which live agent queue to redirect the conversation to.
 
 For text-enabled interaction:
 
 1. A customer starts a chat and it lands in Genesys Cloud.
 
-1. The chat is redirected to one of the Copilot Studio agents, which consists of topics for intent recognition and management of end-to-end processes. Fallback topics uses generative AI to better answer customer inquiries.
+1. The chat redirects to a Copilot Studio agent, which uses topics for intent recognition and manages end-to-end processes. Fallback topics use generative AI to better answer customer questions.
 
 ## Takeaways
 
-The case study of Rabobank’s transition to Microsoft Copilot Studio demonstrates the potential of using Copilot Studio and other Microsoft technologies to set up agents for chat and voice-enabled scenarios. Here are some key takeaways for IT professionals who are looking to implement a similar solution in their own organizations:
+Rabobank’s transition to Microsoft Copilot Studio shows how you can use Copilot Studio and other Microsoft technologies to set up agents for chat and voice scenarios. Here are some key takeaways for IT professionals who want to implement a similar solution:
 
-- Set up a process for improving the intent recognition of your agents.
+- Set up a process to improve intent recognition for your agents.
 
-- Establish a robust test strategy, you can use anonymized user queries.
+- Establish a robust test strategy. Use anonymized user queries.
 
-- Alternative approaches while going though approvals for using
-  generative AI in SAAS products.
+- Consider alternative approaches while going through approvals for using generative AI in SaaS products.
 
-The agents have had the following key benefits.
+The agents provide these key benefits:
 
 - 20,000 daily calls and 7,000 daily chats
 
-- 62% in self-service rate for chats (for example- not escalated to live
-  agents).
+- 62 percent self-service rate for chats (for example, not escalated to live agents)
 
-
-Rabobank can now manage and update their virtual agents without external help.
-
+Rabobank manages and updates its virtual agents without external help.
 
 > We wanted a complete solution with the control, openness, and flexibility to tune it to our detailed needs and differentiate ourselves from virtual assistants in the market, and we found that.
 >
@@ -212,29 +207,21 @@ Rabobank can now manage and update their virtual agents without external help.
 
 ## Looking ahead
 
-Rabobank will look into transitioning to using the built-in features for generative AI, alongside examining how to stay compliant. That includes:
+Rabobank plans to transition to built-in features for generative AI and check compliance. This work includes:
 
-- Test generative orchestration and verify if it improves recognition.
+- Testing generative orchestration and checking if it improves recognition.
+- Providing generative answers to questions using Rabobank’s knowledge bases.
+- Connecting generative actions with the bank’s systems and APIs.
+- Exploring future options in Copilot Studio, like bringing in your own model.
 
-- Generative answers for questions leveraging Rabobank’s knowledge bases.
+Other improvement areas include:
 
-- Generative actions connected with the bank’s systems and APIs.
-
-- Explore future possibilities within Copilot Studio, such as bringing in your own model.
-
-Other improvements areas include:
-
-- Azure AI Search as knowledge source in the agent instead of Azure Function.
-
+- Using Azure AI Search as a knowledge source in the agent instead of Azure Function.
 - Adding more knowledge sources.
-
-- Exploring adding an own voice for the voice-enabled chatbot.
-
+- Adding a custom voice for the voice-enabled chatbot.
 - Adding real-time monitoring of all conversations.
-
-- Making the chatbot easier to reach on their website.
-
-- First-party voice and IVR capabilities to remove the dependency on AudioCodes. 
+- Making the chatbot easier to reach on the website.
+- Adding first-party voice and IVR capabilities to remove the dependency on AudioCodes. 
 
 ## Related information
 
