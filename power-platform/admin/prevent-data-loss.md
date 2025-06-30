@@ -23,7 +23,7 @@ ms.contributors:
 
 # Manage data policies
 
-An organization's data is critical to its success. Its data needs to be readily available for decision making, but the data needs to be protected so that it isn't shared with audiences who shouldn't have access to it. To protect this data, you can use Power Apps to create and enforce data policies that define the consumer connectors that specific business data can be shared with. For example, an organization that uses Power Apps might not want the business data that's stored in SharePoint to be automatically published to its Twitter feed.
+An organization's data is critical to its success. Its data needs to be readily available for decision making, but the data needs to be protected so that it isn't shared with audiences who shouldn't have access to it. To protect this data, you can use Power Apps to create and enforce data policies that define the consumer connectors that specific business data can be shared with. For example, an organization that uses Power Apps might not want the business data stored in SharePoint to be automatically published to its Twitter feed.
 
 To create, edit, or delete data policies, you must have either Environment Admin or Power Platform admin permissions. 
 
@@ -31,18 +31,18 @@ To create, edit, or delete data policies, you must have either Environment Admin
 
 ### Tenant-level policies 
 
-Tenant-level policies can be defined to include or exclude specific environments. To follow the steps described in this article for tenant-level policies, log in as a user with the Power Platform Administrator role. Learn more about the Power Platform Administrator role at [Use service admin roles to manage your tenant](use-service-admin-role-manage-tenant.md).
+Tenant-level policies can be defined to include or exclude specific environments. To follow the steps described in this article for tenant-level policies, sign in as a user with the Power Platform Administrator role. Learn more about the Power Platform Administrator role at [Use service admin roles to manage your tenant](use-service-admin-role-manage-tenant.md).
 
 ### Environment-level policies
 
 To follow the steps for environment-level policies, you need to have Power Apps Environment Admin permissions. For environments with a Dataverse database, you need to be assigned the System Administrator role instead. 
 
 > [!NOTE] 
-> If using the **SingleEnvironment** EnvironmentType parameter when using PowerShell to create a data policy, the user account used to create the policy **MUST** have **Environment-level** and **MUST NOT** have **Tenant-level** permissions as described above, or a Bad Request error is returned and the policy isn't created.
+> If using the **SingleEnvironment** EnvironmentType parameter when using PowerShell to create a data policy, the user account used to create the policy **MUST** have **Environment-level** and **MUST NOT** have **Tenant-level** permissions as described earlier, or a Bad Request error is returned and the policy isn't created.
 
-## The data policy process
+## Data policy process
 
-To create a data policy, complete the following steps.
+To create a data policy, complete the following steps:
 
 1. Assign the policy a name.
 2. Classify connectors.
@@ -65,7 +65,7 @@ After this policy is saved, any Power Apps or Power Automate maker, who is part 
 
 1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select **Policies** > **Data policies** > **New policy**.
 
-    If no policies exist in the tenant, you'll see the following page.
+    If no policies exist in the tenant, you see the following page.
    
     :::image type="content" source="media/dlp-view-no-policies.png" alt-text="No policies view":::
 
@@ -168,23 +168,23 @@ After this policy is saved, any Power Apps or Power Automate maker, who is part 
 
    Connectors can reside in only one data group at a time. By moving the SharePoint and Salesforce connectors to the **Business** data group, you're preventing users from creating flows and apps that combine these two connectors with any of the connectors in the **Non-Business** or **Blocked** groups.
 
-   For connectors like SharePoint that are not blockable, the **Block** action isn't available and a warning appears.
+   For connectors like SharePoint that aren't blockable, the **Block** action isn't available and a warning appears.
 
-1. Review and change the default group setting for new connectors, if needed. We recommend keeping the default setting as **Non-Business** to map any new connectors added to Power Platform by default. **Non-Business** connectors can be manually assigned to **Business** or **Blocked** later by editing the data policy, after you've had a chance to review and assign them. If the new connector setting is **Blocked**, any new connectors that are blockable are mapped to **Blocked**, as expected. However, any new connectors that are unblockable are mapped to **Non-Business** because by design they can't be blocked. 
+1. Review and change the default group setting for new connectors, if needed. We recommend keeping the default setting as **Non-Business** to map any new connectors added to Power Platform by default. **Non-Business** connectors can be manually assigned to **Business** or **Blocked** later by editing the data policy, after you had a chance to review and assign them. If the new connector setting is **Blocked**, any new connectors that are blockable are mapped to **Blocked**, as expected. However, any new connectors that are unblockable are mapped to **Non-Business** because by design they can't be blocked. 
 
    In the upper-right corner, select **Set default group**.
 
    :::image type="content" source="media/dlp-edit-default-group.png" alt-text="Set default group":::
 
-   After you've completed all the connector assignments across the **Business**/**Non-Business**/**Blocked** groups and set the default group for new connectors, select **Next**.
+   After you complete all the connector assignments across the **Business**/**Non-Business**/**Blocked** groups and set the default group for new connectors, select **Next**.
 
 1. Choose the scope of the data policy. This step isn't available for environment-level policies, because they're always meant for a single environment.
 
    :::image type="content" source="media/dlp-define-scope.png" alt-text="Define scope":::
 
-   For the purpose of this walkthrough, you exclude test environments from this policy. Select **Exclude certain environments**, and on the **Add Environments** page, select **Next**.
+   For this walkthrough, you exclude test environments from this policy. Select **Exclude certain environments**, and on the **Add Environments** page, select **Next**.
   
-1. Review the various attributes and settings on the **Add Environments** page. For tenant-level policies, this list shows the tenant-level admin all the environments in the tenant. For environment-level policies, this list only shows the subset of environments in the tenant that are managed by the user who has signed in as an Environment Admin or as a System Administrator for environments with Dataverse database. 
+1. Review the various attributes and settings on the **Add Environments** page. For tenant-level policies, this list shows the tenant-level admin all the environments in the tenant. For environment-level policies, this list only shows the subset of environments in the tenant managed by the user who signed in as an Environment Admin or as a System Administrator for environments with Dataverse database. 
 
    :::image type="content" source="media/dlp-add-environments2.png" alt-text="Add environments":::
 
@@ -256,7 +256,7 @@ After this policy is saved, any Power Apps or Power Automate maker, who is part 
    > [!div class="mx-imgBorder"] 
    > ![Assign policy.](media/dlp-assign-policy-environments.png "Assign policy")
 
-   Because the policy scope was initially selected as **Exclude certain environments**, these test environments are now excluded from the policy scope and the data policy settings are applied to all the remaining (**Available**) environments. For environment-level policy, you can only select a single environment from the list of available environments.
+   Because the policy scope was initially selected as **Exclude certain environments**, these test environments are now excluded from the policy scope, and the data policy settings are applied to all the remaining (**Available**) environments. For environment-level policy, you can only select a single environment from the list of available environments.
 
    After making selections for environments, select **Next**.
 
@@ -279,7 +279,7 @@ This table describes how the data policy you created affects data connections in
 |Facebook (Blocked)     |  Denied       | Denied        |  Denied       |  Denied       |  Denied       |
 |Twitter (Blocked)     |  Denied       | Denied        | Denied        | Denied        |  Denied       |
 
-Because no data policy has been applied to test environments, apps and flows can use any set of connectors together in these environments.
+Because no data policy is applied to test environments, apps and flows can use any set of connectors together in these environments.
 
 ## Find and view data policies
 
@@ -325,7 +325,7 @@ Because no data policy has been applied to test environments, apps and flows can
 4. (Optional) If necessary, consider enforcing data policies on connections. Learn more: [Enforce data policy for violating connections](powerapps-powershell.md#enforce-dlp-policy-for-violating-connections---environment)
 
    > [!NOTE]
-   >  Enforcing data policies will disable existing connections that violate any data policies and enable any previously disabled connections that no longer violate any data policies.
+   >  Enforcing data policies disable existing connections that violate any data policies and enable any previously disabled connections that no longer violate any data policies.
 
 ## Delete a data policy
 
@@ -337,7 +337,7 @@ Because no data policy has been applied to test environments, apps and flows can
    > ![Delete a data policy.](media/dlp-delete-policy.png "Delete a data policy")
 
    > [!NOTE]
-   > Environment admins can't delete policies that were created by the tenant admin.
+   > Environment admins can't delete policies created by the tenant admin.
 
 3. In the confirmation dialog box, select **Delete**.
 
@@ -364,9 +364,10 @@ Because no data policy has been applied to test environments, apps and flows can
 
 1. Select **Next** as needed to close the **Edit Policy** process.
 
-The data group you chose will be the default group to automatically classify any new connectors added to Power Platform after your policy has been created. 
+The data group you chose will be the default group to automatically classify any new connectors added to Power Platform after your policy is created. 
 
 ## Use PowerShell commands
+
 See [data policies policy commands](powerapps-powershell.md#data-loss-prevention-dlp-policy-commands).
 
 ### See also
