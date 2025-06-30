@@ -3,13 +3,14 @@ title: Manage data policies
 description: Learn how to create, edit, and delete data policies, including the default data group for new connectors.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 07/24/2024
+ms.date: 06/30/2025
 author: mikferland-msft
 ms.author: miferlan
 ms.reviewer: sericks
 contributors:
   - mikferland-msft
   - mihaelablendea
+  - lavanyapg
 ms.subservice: admin
 ms.custom: "admin-security"
 search.audienceType: 
@@ -17,11 +18,10 @@ search.audienceType:
 ms.contributors:
  - jopanchal
  - amijh
+ - lsuresh
 ---
 
 # Manage data policies
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 An organization's data is critical to its success. Its data needs to be readily available for decision making, but the data needs to be protected so that it isn't shared with audiences who shouldn't have access to it. To protect this data, you can use Power Apps to create and enforce data policies that define the consumer connectors that specific business data can be shared with. For example, an organization that uses Power Apps might not want the business data that's stored in SharePoint to be automatically published to its Twitter feed.
 
