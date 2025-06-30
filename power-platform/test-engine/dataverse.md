@@ -1,11 +1,14 @@
 ---
 title: "Test Dataverse extensions with Test Engine (preview)"
 description: "Describes how to perform integration testing of Dataverse extensions with Test Engine."
-author: grant-archibald-ms
-ms.author: grarchib
-ms.date: 05/19/2025
+author: pvillads
+ms.author: pvillads
+ms.subservice: test-engine
+ms.date: 05/27/2025
 ms.reviewer: jdaly
 ms.topic: article
+contributors:
+- grant-archibald-ms
 ---
 
 # Test Dataverse extensions with Test Engine (preview)
@@ -15,10 +18,11 @@ ms.topic: article
 
 This article explains how to create integration tests with Dataverse. This functionality applies the Power Fx capability to connect with Dataverse tables.
 
-<!-- The following section is duplicated in two other articles -->
+
+
 ## Connecting to Dataverse
 
-To enable Dataverse integration, add the `enableDataverseFunctions` parameter in your test settings:
+To enable Dataverse integration, add the `enableDataverseFunctions` parameter in your [testSettings](yaml.md#testsettings) [extensionModules](yaml.md#extensionmodules) :
 
 ```yaml
 testSettings:
@@ -31,6 +35,20 @@ testSettings:
 When you enable Dataverse integration, you're required to open Azure CLI with a user or service principal that has rights to the Dataverse environment. You can use the command: [az login](/cli/azure/reference-index#az-login) More information: [Sign in with Azure CLI](/cli/azure/authenticate-azure-cli).
 
 The Dataverse API URL used for integration is obtained either from the host domain name of the [pac test run](../developer/cli/reference/test.md#pac-test-run) `--domain` parameter or by defining an [PowerShell environment variable](/powershell/module/microsoft.powershell.core/about/about_environment_variables) named `DATAVERSE_URL`.
+
+## Enable preview
+
+Currently, all Dataverse extension testing capabilities require using [Preview functions](powerfx-functions.md#preview-functions). To enable these, add `Preview` to the `allowPowerFxNamespaces` list in [extensionModules](yaml.md#extensionmodules).
+
+```yaml
+testSettings:
+  extensionModules:
+    enable: true
+    allowPowerFxNamespaces:
+    - Preview
+    parameters:
+      enableDataverseFunctions: true
+```
 
 ## Resetting the current state
 

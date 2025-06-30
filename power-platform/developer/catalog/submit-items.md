@@ -1,8 +1,8 @@
 ---
 title: "Submit and approve catalog items"
 description: "Learn how to submit items to your organization's catalog of templates and components."
-author: MattB-msft
-ms.author: mbarbour
+author: isaacwinoto
+ms.author: isaacwinoto
 ms.subservice: developer
 ms.date: 11/05/2024
 ms.reviewer: jdaly
@@ -10,8 +10,7 @@ ms.topic: how-to
 search.audienceType:
   - developer
 contributors:
- - JimDaly
- - singhguru2001us
+ - skotapalle
 ---
 
 # Submit and approve catalog items

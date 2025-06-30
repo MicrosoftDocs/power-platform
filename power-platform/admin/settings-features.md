@@ -4,7 +4,7 @@ description: Learn how to manage feature settings to adjust how features appear 
 author: sericks007
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 04/30/2025
+ms.date: 06/30/2025
 ms.subservice: admin
 ms.custom: NewPPAC
 ms.author: sericks
@@ -15,6 +15,9 @@ contributors:
     - V-Camille
     - jasongr
     - v-aangie
+    - steph-kent-ms
+ms.Contributors:
+    - v-linhvovan
 search.audienceType: 
   - admin
 ms.collection: 
@@ -63,6 +66,15 @@ Make sure you have the System Administrator security role or equivalent permissi
 | Enable new AI-powered Copilot features for people who make apps. | When **On**, lets preview Copilot features that help create apps, tables apps, tables, edit apps, generate formulas, answering how-to questions and AI Builder GPT experiences. Learn more in [AI Copilot overview ](/power-apps/maker/canvas-apps/ai-overview). <br><br>**Note**: [Generally available](general-availability-deployment.md) Copilot features are turned on by default and can't be turned off. To turn them off, a tenant admin must [contact support](get-help-support.md).| On |
 | Allow users to analyze data using an AI-powered chat experience in canvas and model-driven apps. <br><br>**Note**: For model-driven apps, this environment needs to be set to the monthly release channel.| When **On**, lets Copilot in canvas apps, model-driven apps, and Dynamics 365 Sales apps for users to ask questions and have a natural language conversation about data in the app. Learn more in [Add Copilot control to a canvas app ](/power-apps/maker/canvas-apps/add-ai-copilot), [Add Copilot to model-driven apps](/power-apps/maker/model-driven-apps/add-ai-copilot), and [Enable and configure Copilot in Dynamics 365 Sales](/dynamics365/sales/enable-setup-copilot).<br><br>When set to **Default**, only [Copilot in Dynamics 365 Sales apps](/dynamics365/sales/enable-setup-copilot) is turned on. | Default |
 | Allow canvas editors to insert the Copilot answer component, which allows users to receive an AI-powered answer to a predefined data query.| When **On**, lets makers add a Copilot answer control that allows users to receive an AI-powered answer to a predefined question set by a maker. Learn more in [Use Copilot answer control for canvas apps (preview)](/power-apps/maker/canvas-apps/copilot-answer-control-overview).| Off |
+
+## Copilot Studio agents
+
+### Sharing Copilot Studio agent data with Viva Insights (preview)
+
+| Setting | Description | Default value |
+|---------|-------------|---------------|
+| Allow Copilot Studio to share data with Viva Insights | When **On**, enables Copilot Studio data to flow to Microsoft Viva Insights for [analytical reports](/microsoft-copilot-studio/analytics-viva-insights). Also requires [Microsoft 365 services](geographical-availability-copilot.md#copilots-and-generative-ai-features-that-depend-on-data-movement-across-regions) to be turned on. For information on what data is shared with Viva Insights, see [View advanced analytics in Microsoft Viva Insights](/microsoft-copilot-studio/analytics-viva-insights). | On |
+| Allow cross-geo boundary sharing of aggregated analytics data of your tenant preferred data location for Viva Insights is different than the location of your Copilot Studio environment | For tenants with Power Platform environments across [multiple geos](/power-platform/admin/geographical-availability-copilot#turn-on-data-movement-bing-search-and-microsoft-365-services-for-copilots-and-generative-ai-features). When **On**, Microsoft Copilot Studio is sent and stored in the base location of the tenant in Viva Insights, even when crossing geo boundaries. Requires turning on **Allow Copilot Studio to share data with Viva Insights**.  | Off |
 
 ## Microsoft 365 Copilot
 
@@ -163,6 +175,16 @@ Makers can learn more about form fill assistance in [Manage model-driven app set
 | Activation status of run action logs.| Defines when desktop flow run action logs should be captured and even allows you to turn them off completely. Learn more in [Desktop flow action logs configuration](/power-automate/desktop-flows/configure-desktop-flow-logs). | Enabled |
 | Action logs version.| The Action logs version allows you to choose V1, V2, or both. Learn more in [Configure desktop flow action log version](/power-automate/desktop-flows/configure-desktop-flow-logs#configure-desktop-flow-action-log-version).   | V1 |
 | FlowLogs entity time to live in minutes | Determines how long action logs should be retained in the Flow Logs elastic table. Dataverse automatically deletes records that are older than the specified time-frame. Learn more in [Configure desktop flow action log version](/power-automate/desktop-flows/configure-desktop-flow-logs#configure-desktop-flow-action-log-version). | 40320 |
+
+## Savings (preview)
+
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
+
+| Setting | Description | Default value |
+|---------|-------------|---------------| 
+| Disable money saving rules |  When **On**, prevents makers from creating money savings rules and track money savings generated by their Power Automate automation. Any pre-existing money saving rule at time of enforcement stops generating new money saving records, but pre-existing money saving records remain. Learn more in [Savings in Power Automate (preview)](/power-automate/savings) for makers.| Off |
+| Time to live (in days) of savings events in Flow Aggregation entity | Determines how long savings records (not savings rules) should be retained in the Flow Aggregation entity. Dataverse automatically deletes records that are older than the specified time-frame. Set the value to `-1` to never delete them. Learn more in [Savings in Power Automate (preview)](/power-automate/savings) for makers.| 365 days |
 
 ## Grids and views
 
@@ -274,7 +296,7 @@ Makers can learn more about form fill assistance in [Manage model-driven app set
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-|Allow publishing of canvas apps with code components| Enables the Power Apps component framework feature that lets you run code not generated by Microsoft when you add code components to an app. Make sure that the code component solution is from a trusted source. Learn more in [Code components for canvas apps](/powerapps/developer/component-framework/component-framework-for-canvas-apps). | Off |
+|Allow publishing of canvas apps with code components| In Power Apps, when importing a solution that includes a Power Apps component framework component, it's essential that the target environment has the **Allow publishing of canvas apps with code components** setting turned on. This setting must be turned on prior to deployment, otherwise the component framework component doesn't function properly within canvas apps.<br><br>After the setting is turned on, and the solution is successfully imported and published. The component becomes part of the app's runtime. As a result, even if the setting is turned off afterwards, the Power Apps component framework continues to work as expected. However, if you need to make further updates or republish the app with changes to the component framework, you must turn on the setting again to ensure continued support for code components.<br><br>This setting is particularly critical for environments that use custom controls or UI enhancements built with the component framework inside canvas apps.  | Off |
 
 ## Delete disabled users
 

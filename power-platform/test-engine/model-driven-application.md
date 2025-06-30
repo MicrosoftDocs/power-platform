@@ -1,14 +1,15 @@
 ---
 title: "Test model-driven applications with Test Engine (preview)"
 description: "Explains how to test a Power Apps Model Driven application using Test Engine."
-author: grant-archibald-ms
-ms.author: grarchib
-ms.date: 05/19/2025
+author: pvillads
+ms.author: pvillads
+ms.subservice: test-engine
+ms.date: 05/27/2025
 ms.reviewer: jdaly
 ms.topic: article
 contributors:
  - JimDaly
- - pvillads
+ - grant-archibald-ms 
 ---
 
 # Test model-driven applications with Test Engine (preview)
@@ -29,6 +30,21 @@ Create a yaml file using the test plan schema explained in [Power Apps Test Engi
 
 > [!TIP]
 > Review [available sample](samples.md#available-samples) plans in the GitHub repository.
+
+## Enable preview
+
+Currently, all model-driven app extension testing capabilities require using [Preview functions](powerfx-functions.md#preview-functions). To enable these, add `Preview` to the `allowPowerFxNamespaces` list in [extensionModules](yaml.md#extensionmodules) of your [testSettings](yaml.md#testsettings). 
+
+This example shows you how to add this:
+
+```yaml
+testSettings:
+  extensionModules:
+    enable: true
+    allowPowerFxNamespaces:
+    - Preview
+```
+
 
 ## Set up your user
 
@@ -99,15 +115,17 @@ pac test run `
    --environment-id your-environmentid-guid-value `
    --domain "https://contoso.crm.dynamics.com/main.aspx?appid=00001111-aaaa-2222-bbbb-3333cccc4444&pagetype=entityrecord&etn=account&id=72e0e163-df1c-ed11-9db0-000d3a991110"
 ```
-<!-- The following section is duplicated in two other articles -->
+
 ### Dataverse Integration
 
-To enable Dataverse integration with your model-driven app tests, add the `enableDataverseFunctions` parameter in your test settings:
+To enable Dataverse integration with your model-driven app tests, add the `enableDataverseFunctions` parameter in your [testSettings](yaml.md#testsettings):
 
 ```yaml
 testSettings:
   extensionModules:
     enable: true
+    allowPowerFxNamespaces:
+    - Preview
     parameters:
       enableDataverseFunctions: true
 ```

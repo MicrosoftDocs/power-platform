@@ -4,7 +4,7 @@ description: "Sign up for the Power Apps Developer Plan and create a developer e
 author: marcelbf
 ms.subservice: developer
 ms.author: marcelbf
-ms.date: 12/17/2024
+ms.date: 05/28/2025
 ms.reviewer: jdaly
 ms.topic: how-to
 search.audienceType: 
