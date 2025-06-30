@@ -440,6 +440,8 @@
               href: monitoring/monitoring-overview.md
             - name: View event logs and error logs (preview)
               href: monitoring/logs.md
+            - name: Create alerts for your resources (preview)
+              href: monitoring/alerts.md
             - name: Metrics and recommendations
               items:
                 - name: For Power Apps (preview)
@@ -447,7 +449,11 @@
                 - name: For Power Automate (preview)
                   href: monitoring/monitor-power-automate.md
         - name: Copilot
-          href: copilot/copilot-hub.md
+          items:
+            - name: Track, manage, and scale Copilot adoption
+              href: copilot/copilot-hub.md
+            - name: View agent inventory
+              href: tenant-wide-agent-inventory.md
         - name: Security
           items:
             - name: Security overview
