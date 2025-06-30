@@ -3,31 +3,54 @@ title: Tenant settings
 description: Review and configure tenant-level settings linked from this page.
 author: amiyapatr-zz
 ms.topic: overview
-ms.date: 05/29/2025
+ms.date: 6/30/2025
 ms.author: ampatra
 ms.reviewer: sericks
 contributors:
   - marcelbf
+  - sericks007
+  - syalandur24
 ms.collection: 
-    - bap-ai-copilot
+  - bap-ai-copilot
 ms.contributors:
-- abhijp
+  - abhijp
+  - sericks
+  - syalandur    
 ---
 
 # Tenant settings
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+Use the **Tenant settings** page to review and manage tenant-level settings.
 
-Use the Tenant settings page to review and manage tenant-level settings.
+### [New admin center](#tab/new)
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+
+1. In the navigation pane, select **Manage**.
+
+1. In the **Manage** pane, select **Tenant settings**.
+
+### [Classic admin center](#tab/classic)
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 
 2. Select **Settings** > **Tenant settings** in the left-side navigation pane.
 
+---
+
 The following settings apply to all environments within your tenant.
 
 |Name  |Description  |
 |---------|---------|
+|Additional Copilot feedback |**Request:** Need description|
+|AI Builder credits |**Request:** Need description|
+|Auto-claim policies for Power Apps|**Request:** Need description|
+|Auto-claim policies for Power Automate|**Request:** Need description|
+|Copilot help assistance in Power Automate via Bing| **Request:** Need description| 
+|Basic Copilot Feedback|**Request:** Need description|
+|Copilot in Power Apps (preview)|**Request:** Need description|
+|Copilot Studio authors (preview)|**Request:** Need description|
+|Desktop flow actions in DLP|**Request:** Need description|
 |[Copilot](/power-apps/maker/canvas-apps/ai-overview)     | Allow canvas app makers and admins to get AI-powered answers to how-to questions.        |
 | Copilot feedback | When using Copilot in Power Apps, allow users to submit feedback to Microsoft. |
 |[Weekly digest](managed-environment-usage-insights.md)*     | Manage more recipients for the weekly digest email for Managed Environments.        |
