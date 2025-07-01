@@ -42,17 +42,21 @@ The following settings apply to all environments within your tenant.
 
 |Name  |Description  |
 |---------|---------|
-|Additional Copilot feedback |**Request:** Need description|
-|AI Builder credits |**Request:** Need description|
-|Auto-claim policies for Power Apps|**Request:** Need description|
-|Auto-claim policies for Power Automate|**Request:** Need description|
-|Copilot help assistance in Power Automate via Bing| **Request:** Need description| 
-|Basic Copilot Feedback|**Request:** Need description|
-|Copilot in Power Apps (preview)|**Request:** Need description|
-|Copilot Studio authors (preview)|**Request:** Need description|
-|Desktop flow actions in DLP|**Request:** Need description|
-|[Copilot](/power-apps/maker/canvas-apps/ai-overview)     | Allow canvas app makers and admins to get AI-powered answers to how-to questions.        |
-| Copilot feedback | When using Copilot in Power Apps, allow users to submit feedback to Microsoft. |
+|Additional Copilot feedback | **Request:** *Please review this description* </br> When using Copilot and generative Al capabilities in the Power Platform, allow your users to share additional feedback data with Microsoft.|
+|AI Builder credits |**Request:** *Please review this description* </br> Allow environments without assigned AI Builder credits to use tenant unassigned credits and perform AI Builder actions.|
+|Auto-claim policies for Power Apps|**Request:** *Please review this description* </br> Control where license the auto-claim policies for Power Apps should be applied.|
+|Auto-claim policies for Power Automate|**Request:** *Please review this description* </br> Control where the license auto-claim policies for Power Automate should be applied.|
+|[Copilot help assistance in Power Automate via Bing](/power-automate/desktop-flows/copilot-in-power-automate-for-desktop)| **Request:** *Please review this description* </br> Allow the Copilot-enhanced help feature within Power Automate to enhance answers on product documentation through Bing Search.|
+|[Copilot in Power Apps (preview)](/power-apps/maker/canvas-apps/ai-overview)|**Request:** *Please review this description* </br> Enable Copilot preview features for people who make apps. |
+|[Copilot Studio authors (preview)](/microsoft-copilot-studio/billing-licensing)|**Request:** *Please review this description* </br> Select a security group that might use Copilot Studio.|
+|[Desktop flow actions in DLP](/power-automate/prevent-data-loss#data-loss-prevention-for-desktop-flows-preview)|**Request:** *Please review this description* </br> When enabled, desktop flow action groups are visible when creating or editing DLP policies.|
+|[Power Automate flow run resubmission](/power-automate/how-tos-bulk-resubmit#resubmit-flow-runs)|**Request:** *Please review this description* </br> Allow users to resubmit previous flow runs that were initiated by other users. |
+|[Product Feedback](/power-platform/admin/list-tenantsettings)|**Request:** *Please review this description* </br> Provides the ability to manage feedback prompts within Power Platform products. |
+|[Publish Copilots with AI features](/microsoft-copilot-studio/security-and-governance)|**Request:** *Please review this description* </br> Allow Copilot authors to publish from Copilot Studio when AI features are enabled.|
+|Sales Research Agent (Preview)|**Request:** *Please review this description* </br> Select who can access Sales Research Agents.|
+|[Support Bing search solutions](/power-platform/admin/tenant-settings)|**Request:** *Please review this description* </br> When enabled, use Bing search to provide self-help solutions. |
+|Tenant licensing summary view| **Request:** *Please review this description* </br> Control who can view the tenant licensing summary.|
+|Basic Copilot feedback | When using Copilot in Power Apps, allow users to submit feedback to Microsoft. |
 |[Weekly digest](managed-environment-usage-insights.md)*     | Manage more recipients for the weekly digest email for Managed Environments.        |
 |[Canvas app insights](/power-apps/maker/canvas-apps/application-insights) | Allow canvas app users to collect insights for their app. |
 |[Developer environment assignments](control-environment-creation.md)   | Control who can create and manage developer environments.  |
@@ -62,10 +66,8 @@ The following settings apply to all environments within your tenant.
 |[Add-on capacity assignments](capacity-add-on.md#control-who-can-allocate-add-on-capacity)    | Control who can allocate add-on capacity to an environment.        |
 |[Analytics](tenant-level-analytics.md)   | Enable tenant-level analytics.        |
 |[Customer Lockbox](about-lockbox.md#enable-the-lockbox-policy)*   | Enable the Customer Lockbox policy for Managed Environments.        |
-|[Data sharing for Dynamics 365 Copilot and Power Platform Copilot AI Features](../transparency-note-copilot-data-sharing.md)   | Enable Microsoft to capture and human review inputs, outputs, telemetry from Dynamics 365 Copilot and Power Platform Copilot AI features to build, improve, and validate Microsoft's machine leaning models, features, services, and related systems.<br/>By default, this setting is disabled.       |
-| [Environment routing (Preview)](default-environment-routing.md) | Allow Power Platform admins to automatically direct new or existing makers into their own personal developer environments. |
+| [Environment routing](default-environment-routing.md)* | Allow Power Platform admins to automatically direct new or existing makers into their own personal developer environments. |
 | Catalog Assignments  | This setting is reserved for future use. No enforcement is driven by this setting at the current time.       |
-| Copilot feedback data | When using Copilot in Power Apps, allow users to share their prompts, questions, and requests with Microsoft. |
 | Support requests visibility | Allows users, who already have access to the **Help + Support** page in the Power Platform admin center, to see support requests created by other users in the tenant.  |
 
 *This setting applies only to Managed Environments.
