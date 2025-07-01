@@ -7,7 +7,7 @@ contributor:
 ms.author: sandhan
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 08/14/2024
+ms.date: 06/27/2025
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -16,9 +16,9 @@ ms.collection: bap-ai-copilot
 
 # Install and set up the SAP Supplier Self Service template
 
-Enterprise templates for Power Platform are solutions designed to digitally transform broad, complex business scenarios for specific lines of business or enterprise wide.
+The SAP Supplier Self Service template is a customizable Power Pages site designed to complement the [SAP Procurement](/power-platform/enterprise-templates/finance/sap-procurement/overview) solution.
 
-The SAP solutions are enterprise-ready and therefore need to be customized, deployed, and managed by a [centralized team](/power-platform/guidance/adoption/delivery-models#centralized) to [maintain governance and security](/power-platform/guidance/adoption/admin-best-practices).
+The SAP solutions are enterprise-ready and require a [centralized team](/power-platform/guidance/adoption/delivery-models#centralized) of administrators and developers to customize, deploy, and manage the solutions to [maintain governance and security](/power-platform/guidance/adoption/admin-best-practices).
 
 ## Prerequisites
 
@@ -37,7 +37,7 @@ Take these steps to install and set up the SAP Procurement template:
 - [Configure environment variables](/power-platform/enterprise-templates/finance/sap-procurement/administer/configure-environment-variables).
 - [Set up connections for SAP and Dataverse](/power-platform/enterprise-templates/finance/sap-procurement/administer/set-up-connections).
 - [Set up SAP List of Values](/power-platform/enterprise-templates/finance/sap-procurement/administer/apply-seed-data#apply-saps-list-of-values). The SAP *List of Values* must be populated, otherwise the SAP Procurement and SAP Supplier Self Service solutions will not work properly.
-- Enable Javascript (JS) files as attachments in your environment. Follow steps for [**Setting blocked file extensions for attachments**](/dynamics365/customer-service/administer/enable-file-attachments#configure-file-size-limit-and-file-extensions) to ensure Supplier Self Service Portal solutions do not fail during import
+- Enable Javascript (JS) files as attachments in your environment. Follow steps for [**Setting blocked file extensions for attachments**](/dynamics365/customer-service/administer/enable-file-attachments#configure-file-size-limit-and-file-extensions) to ensure Supplier Self Service Portal solutions do not fail during import.
 
 ### More information
 
