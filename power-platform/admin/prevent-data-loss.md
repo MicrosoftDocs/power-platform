@@ -69,9 +69,9 @@ After this policy is saved, any Power Apps or Power Automate maker, who is part 
    
     :::image type="content" source="media/dlp-view-no-policies.png" alt-text="No policies view":::
 
-1. Enter a policy name, and then select **Next**.
+1. In the Policy name page, enter a policy name, and then select **Next**.
 
-1. Review the various attributes and settings you can make on the **Assign Connectors** page. 
+1. In the Pre-built connectors page, review the various attributes and settings you can make on the **Assign Connectors** screen. 
 
    :::image type="content" source="media/dlp-assign-connectors.png" alt-text="Assign connectors":::
 
@@ -84,15 +84,19 @@ After this policy is saved, any Power Apps or Power Automate maker, who is part 
    </tr>
    <tr>
    <td width="20%"> Name</td>
-   <td width="80%"> The name of the connector. </td>
+   <td width="80%"> The name of the connector. You have alphabetical sort capability across individual columns. </td>
    </tr>
    <tr>
    <td width="20%"> Blockable</td>
    <td width="80%"> Connectors that can be blocked. Learn more: <a href="dlp-connector-classification.md#list-of-connectors-that-cant-be-blocked">List of connectors that can't be blocked</a>  </td> 
    </tr>
    <tr> 
-   <td width="20%"> Type</td>
-   <td width="80%"> Whether connector usage requires a Premium license or is it included in the base/Standard license for Power Platform.    </td>
+   <td width="20%"> Endpoint configuration</td>
+   <td width="80%"> xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx    </td>
+   </tr>
+   <tr> 
+   <td width="20%"> Class</td>
+   <td width="80%"> Whether connector usage requires a Premium license or is it included in the Built-in/Standard license for Power Platform.    </td>
    </tr>
    <tr>
    <td width="20%"> Publisher</td>
@@ -117,7 +121,7 @@ After this policy is saved, any Power Apps or Power Automate maker, who is part 
    </tr>
    <tr>
    <td width="20%"> Non-Business/<br />Default </td>
-   <td width="80%"> Connectors for non-business data, such as personal use data. Connectors in this group can't share data with connectors in other groups. </td>
+   <td width="80%"> Connectors for non-business data, such as personal use data. Connectors in this group can't share data with connectors in other groups. Unassigned connectors will show up here by default. </td>
    </tr>
    <tr>
    <td width="20%"> Blocked     </td>
@@ -137,36 +141,16 @@ After this policy is saved, any Power Apps or Power Automate maker, who is part 
    <td width="80%"> The group that maps any new connectors added by Power Platform <i>after</i> your data policy is created. Learn more: <a href="dlp-connector-classification.md#list-of-connectors-that-cant-be-blocked">Default data group for new connectors</a>      </td>
    </tr>
    <tr>
-   <td width="20%"> Search Connectors </td>
+   <td width="20%"> Search connectors </td>
    <td width="80%"> Search a long list of connectors to find specific connectors to classify. You can search on any field in the connector list view, such as <b>Name</b>, <b>Blockable</b>, <b>Type</b>, or <b>Publisher</b>.    </td>
    </tr>
    </table>
 
-
-   You can take the following actions:
-
-   :::image type="content" source="media/dlp-assign-connectors-actions.png" alt-text="Assign connectors actions.":::
-
-   |     |Description  |
-   |-----|-------------|
-   |**1**|Assign one or more connectors across connector classification groups|
-   |**2**|Connector classification group pivot tables|
-   |**3**|Search bar to find connectors across properties like **Name**, **Blockable**, **Type**, or **Publisher**|
-   |**4**|Connector classification group that maps any new connectors added by Power Platform *after* your data policy is created.|
-   |**5**|Select, multi-select, or bulk-select connectors to move across groups|
-   |**6**|Alphabetical sort capability across individual columns|
-   |**7**|Action buttons to assign individual connectors across connector classification groups|
-
-
-1. Select one or more connectors. For this walkthrough, select the SalesForce and SharePoint connectors, and then select **Move to Business** from the top menu bar. You can also use the ellipsis (![ellipses.](./media/vertical-ellipses.png)) to the right of the connector name. 
-
-    :::image type="content" source="media/dlp-assign-connectors-multiple.png" alt-text="Assign multiple connectors.":::
-
-   The connectors appear in the **Business** data group.
+1. Select one or more pre-built connectors. For this walkthrough, select the Salesforce and SharePoint connectors, and then select **Move to Business** from the top menu bar. You can also use the ellipsis (![ellipses.](./media/vertical-ellipses.png)) to the right of the connector name. The connectors appear in the **Business** data group.
 
    :::image type="content" source="media/dlp-business-data-group.png" alt-text="Business data group":::
 
-   Connectors can reside in only one data group at a time. By moving the SharePoint and Salesforce connectors to the **Business** data group, you're preventing users from creating flows and apps that combine these two connectors with any of the connectors in the **Non-Business** or **Blocked** groups.
+   Connectors can reside in only one data group at a time. By moving the Salesforce and SharePoint connectors to the **Business** data group, you're preventing users from creating flows and apps that combine these two connectors with any of the connectors in the **Non-Business** or **Blocked** groups.
 
    For connectors like SharePoint that aren't blockable, the **Block** action isn't available and a warning appears.
 
@@ -176,17 +160,19 @@ After this policy is saved, any Power Apps or Power Automate maker, who is part 
 
    :::image type="content" source="media/dlp-edit-default-group.png" alt-text="Set default group":::
 
-   After you complete all the connector assignments across the **Business**/**Non-Business**/**Blocked** groups and set the default group for new connectors, select **Next**.
+1. After you complete all the connector assignments across the **Business**/**Non-Business**/**Blocked** groups and set the default group for new connectors, select **Next**.
 
-1. Choose the scope of the data policy. This step isn't available for environment-level policies, because they're always meant for a single environment.
+1. In the Custom connectors page, xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx . Select **Next** to continue.
 
-   :::image type="content" source="media/dlp-define-scope.png" alt-text="Define scope":::
+1. In the Scope page, choose the scope of the data policy. This step isn't available for environment-level policies, because they're always meant for a single environment.
+
+   :::image type="content" source="media/dlp-define-scope.png" alt-text="Define scope.":::
 
    For this walkthrough, you exclude test environments from this policy. Select **Exclude certain environments**, and on the **Add Environments** page, select **Next**.
   
-1. Review the various attributes and settings on the **Add Environments** page. For tenant-level policies, this list shows the tenant-level admin all the environments in the tenant. For environment-level policies, this list only shows the subset of environments in the tenant managed by the user who signed in as an Environment Admin or as a System Administrator for environments with Dataverse database. 
+1. In the Environments page, review the various attributes and settings on the **Exclude environments** page. For tenant-level policies, this list shows the tenant-level admin all the environments in the tenant. For environment-level policies, this list only shows the subset of environments in the tenant managed by the user who signed in as an Environment Admin or as a System Administrator for environments with Dataverse database. 
 
-   :::image type="content" source="media/dlp-add-environments2.png" alt-text="Add environments":::
+   :::image type="content" source="media/dlp-exclude-environments.png" alt-text="Exclude environments.":::
 
    **Attributes** <br /><br />
 
@@ -198,6 +184,10 @@ After this policy is saved, any Power Apps or Power Automate maker, who is part 
    <tr>
    <td width="20%"> Name</td>
    <td width="80%"> The name of the environment. </td>
+   </tr>
+   <tr>
+   <td width="20%"> ID</td>
+   <td width="80%"> The ID of the environment.   </td>
    </tr>
    <tr>
    <td width="20%"> Type</td>
@@ -229,8 +219,8 @@ After this policy is saved, any Power Apps or Power Automate maker, who is part 
    <td width="80%"> Environments that aren't explicitly included or excluded in the policy scope. For environment-level policy and tenant-level policies with scope defined as <b>Add multiple environments</b>, this list represents the subset of environments that aren't included in the policy scope. For tenant-level policies with scope defined as <b>Exclude certain environments</b>, this pivot represents the set of environments that are included within the policy scope.   </td>
    </tr>
    <tr>
-   <td width="20%"> Added to policy     </td>
-   <td width="80%">  For environment-level policy and tenant-level policies with scope defined as <b>Add multiple environments</b>, this pivot represents the subset of environments that are within the policy scope. For tenant-level policies with scope defined as <b>Exclude certain environments</b>, this pivot represents the subset of environments that are excluded from the policy scope.   </td>
+   <td width="20%"> Excluded from policy     </td>
+   <td width="80%">  ***************For environment-level policy and tenant-level policies with scope defined as <b>Add multiple environments</b>, this pivot represents the subset of environments that are excluded from the policy scope. For tenant-level policies with scope defined as <b>Exclude certain environments</b>, this pivot represents the subset of environments that are excluded from the policy scope. ********************  </td>
    </tr>
    </table>
 
@@ -243,24 +233,22 @@ After this policy is saved, any Power Apps or Power Automate maker, who is part 
    </tr>
    <tr>
    <td width="20%"> Add to policy   </td>
-   <td width="80%"> Environments in the <b>Available</b> category can be moved to the <b>Added to policy</b> category by using this action. </td>
+   <td width="80%"> Environments in the <b>Available</b> category can be moved to the <b>Excluded from policy</b> category by using this action. </td>
    </tr>
    <tr>
    <td width="20%"> Remove from policy  </td>
-   <td width="80%">  Environments in the <b>Added to policy</b> category can be moved to the <b>Available</b> category by using this action.  </td>
+   <td width="80%">  Environments in the <b>Excluded from policy</b> category can be moved to the <b>Available</b> category by using this action.  </td>
    </tr>
    </table>
 
-1. Select one or more environments. You can use the search bar to quickly find the environments of interest. For this walkthrough, search for test environments - type sandbox. After we select the sandbox environments, we assign them to the policy scope by using **Add to policy** from the top menu bar. 
+1. Select one or more environments. You can use the search bar to quickly find the environments of interest. For this walkthrough, search for test environments - type sandbox. After we select the sandbox environments, we assign them to the policy scope by using **Exclude from policy** from the top menu bar. 
 
    > [!div class="mx-imgBorder"] 
    > ![Assign policy.](media/dlp-assign-policy-environments.png "Assign policy")
 
-   Because the policy scope was initially selected as **Exclude certain environments**, these test environments are now excluded from the policy scope, and the data policy settings are applied to all the remaining (**Available**) environments. For environment-level policy, you can only select a single environment from the list of available environments.
+1. Because the policy scope was initially selected as **Exclude certain environments**, these test environments are now excluded from the policy scope, and the data policy settings are applied to all the remaining (**Available**) environments. For environment-level policy, you can only select a single environment from the list of available environments. After making selections for environments, select **Next**.
 
-   After making selections for environments, select **Next**.
-
-1. Review the policy settings, and then select **Create Policy**.
+1. In the Review page, review the policy settings, and then select **Create policy**.
 
    > [!div class="mx-imgBorder"] 
    > ![Review new policy.](media/dlp-new-policy-review.png "Review new policy")
@@ -285,7 +273,7 @@ Because no data policy is applied to test environments, apps and flows can use a
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
-2. In the navigation pane, select **Data policies**. If you have a long list of policies, use the **Search** box to find specific data policies.
+2. In the navigation pane, select **Policies> Data policies**. If you have a long list of policies, use the **Search** box to find specific data policies.
 
    > [!div class="mx-imgBorder"] 
    > ![data policy list.](media/dlp-policy-list-view.png "data policy list")
@@ -306,7 +294,7 @@ Because no data policy is applied to test environments, apps and flows can use a
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
-2. From the list of data policies, select an environment, and then select **Edit Policy**. If you have a long list of policies, use the **Search** box to find specific environments.
+2. From the list of data policies, select a policy, and then select **Edit Policy**. If you have a long list of policies, use the **Search** box to find specific environments.
 
    > [!div class="mx-imgBorder"] 
    > ![Edit a data policy.](media/dlp-edit-policy.png "Edit a data policy")
@@ -318,9 +306,6 @@ Because no data policy is applied to test environments, apps and flows can use a
 
    > [!NOTE]
    > Environment-level data policies can't override tenant-wide data policies.
-
-   > [!div class="mx-imgBorder"] 
-   > ![Edit data policy review.](media/dlp-edit-policy-review.png "Edit data policy review")
 
 4. (Optional) If necessary, consider enforcing data policies on connections. Learn more: [Enforce data policy for violating connections](powerapps-powershell.md#enforce-dlp-policy-for-violating-connections---environment)
 
@@ -345,7 +330,7 @@ Because no data policy is applied to test environments, apps and flows can use a
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a [Power Platform admin](use-service-admin-role-manage-tenant.md#power-platform-administrator).
 
-1. From the list of data policies, select an environment, and then select **Edit Policy**. If you have a long list of policies, use the **Search** box to find specific environments.
+1. From the list of data policies, select a policy, and then select **Edit Policy**. If you have a long list of policies, use the **Search** box to find specific environments.
 
    > [!div class="mx-imgBorder"] 
    > ![Edit a data policy.](media/dlp-edit-policy.png "Edit a data policy")
@@ -353,7 +338,7 @@ Because no data policy is applied to test environments, apps and flows can use a
    > [!NOTE]
    > Environment admins can't edit policies created by the tenant admin.
 
-1. Select the **Connectors** step in the **Edit Policy** process.
+1. Select the **Prebuilt connectors** step in the **Edit Policy** process.
 
 1. In the upper-right corner, select **Set default group**.
 
