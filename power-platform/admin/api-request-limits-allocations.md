@@ -130,8 +130,8 @@ To view the consumption of Power Platform requests for licensed users, non-licen
 ### [New admin center](#tab/new)
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Licensing**.
-1. In the **Licensing** pane, select **Capacity add-ons** to view the *Capacity* page.
+1. On the navigation pane, select **Licensing**.
+1. On the **Licensing** pane, select **Capacity add-ons** to view the *Capacity* page.
 
 ### [Classic admin center](#tab/classic)
 
