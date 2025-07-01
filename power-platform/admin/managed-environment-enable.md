@@ -3,7 +3,7 @@ title: Enable Managed Environments
 description: Learn how to enable Managed Environments for Power Platform in the admin center or PowerShell.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 06/27/2025
+ms.date: 07/01/2025
 author: mikferland-msft
 ms.author: miferlan
 ms.contributor: ellenwehrle
@@ -19,28 +19,37 @@ search.audienceType:
 
 <!-- https://go.microsoft.com/fwlink/?linkid=2194805 and 2211456 -->
 
-Admins can enable, disable, and edit Managed Environments in the Power Platform admin center. Admins can also use PowerShell to disable Managed Environments.
+Admins enable, disable, and edit Managed Environments in the Power Platform admin center. Admins can also use PowerShell to disable Managed Environments. This article explains the permissions you need to manage environments and the steps to get started in the Microsoft Power Platform admin center or with PowerShell.
 
 ## Permissions
 
-- You must be an admin to enable or edit Managed Environments. That is, you must have the Power Platform Administrator or Dynamics 365 Administrator role in Microsoft Entra ID. Learn more about these roles at [Use service admin roles to manage your tenant](use-service-admin-role-manage-tenant.md).
-- Any user with permission to see environment details can view the Managed Environments property for an environment.  
-- Users with the Delegated Admin role or the Environment Admin security role aren't allowed to change the Managed Environments property in an environment.
+To enable or edit Managed Environments, you need the Power Platform Administrator or Dynamics 365 Administrator role in Microsoft Entra ID. Learn more about these roles in [Use service admin roles to manage your tenant](use-service-admin-role-manage-tenant.md).
+
+- Any user with permission to view environment details can see the Managed Environments property for an environment.
+- Users with the Delegated Admin role or the Environment Admin security role can't change the Managed Environments property in an environment.
 
 > [!IMPORTANT]
 > Copy and restore environment lifecycle operations require the Managed Environments property to be the same in the source and destination before the operation can start.
 
 ## Enable or edit Managed Environments in the admin center
 
-1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), in the left panel, select **Environments**.
+### [New admin center](#tab/new)
 
-2. Select the check mark to the left of an environment.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage** and then in the manage pane, select **Environments**.
 
-3. On the command bar, select **Enable Managed Environments**. If the environment is already managed, select **Edit Managed Environments**. 
+### [Classic admin center](#tab/classic)
 
-4. Configure the settings, and then select **Enable** or **Save**.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Environments**.
 
-:::image type="content" source="media/managed-environment-enable.png" alt-text="Screenshot of the Enable Managed Environments screen.":::
+3. Select the check mark to the left of an environment.
+
+4. On the command bar, select **Enable Managed Environments**. If the environment is already managed, select **Edit Managed Environments**. 
+
+5. Configure the settings, and then select **Enable** or **Save**.
+
+:::image type="content" source="media/managed-environment-enable/managed-environments-enable.png" alt-text="Screenshot of the Enable Managed Environments screen.":::
 
 Use the following settings to increase visibility and control for the selected environment.
 
