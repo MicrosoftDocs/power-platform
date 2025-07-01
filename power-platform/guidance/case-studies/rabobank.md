@@ -13,7 +13,7 @@ ms.date: 05/13/2025
 
 # Rabobank conversational banking with Copilot Studio
 
-Rabobank is a multinational banking and financial services company based in the Netherlands. As part of its mission to grow a better world together, Rabobank focuses on conversational banking. The company delivers friendly, efficient customer service on demand, following its principles of cooperation and putting people first.
+Rabobank is a multinational banking and financial services company based in the Netherlands. As part of its mission to grow a better world together, Rabobank focuses on conversational banking. The company delivers friendly, efficient customer service on demand, and follows its principles of cooperation and putting people first.
 
 In this case study, you learn how to:
 
@@ -27,11 +27,11 @@ In this case study, you learn how to:
 
 Rabobank explores chatbot functionality for customer self-service to improve efficiency and lower operational costs. With rising customer expectations and many inquiries, Rabobank needs a chatbot that answers common questions.
 
-Rabobank sets up text- and voice-enabled chatbot functionality on another platform, partly on-premises. Rabobank relies on vendors for implementation and maintenance. But the solution isn't efficient and causes several challenges.
+Rabobank sets up text- and voice-enabled chatbot functionality on another platform, partly on-premises. Rabobank relies on vendors for implementation and maintenance, but the solution isn't efficient and causes several challenges.
 
 - The systems for chat and voice support need updates with new conversations and logic separately, even though they often use the same information and models. This approach isn't efficient.
 
-- The platform needs specialized developer support. This requirement slows innovation, and Rabobank wants to speed up time to market.
+- The platform needs specialized developer support, which slows innovation, and Rabobank wants to speed up time to market.
 
 - The chatbot is hard to integrate with external systems and their APIs, which Rabobank needs to get the right output for agent conversations and make agents actionable, supporting end-to-end processes.
 
@@ -76,7 +76,7 @@ The intent recognition process includes:
 
 - Copilot Studio topics and specified trigger phrases
 
-- Escalation to the right live agents’ queue for the voice enabled chatbot.
+- Escalation to the right live agents’ queue for the voice enabled chatbot
 
 All calls and text inquiries start in Genesys Cloud. The voice-enabled agent helps identify the intent for calls and the conversation gets routed to the correct live agent. The main purpose of the voice-enabled agent is intent recognition to be able to route the call to the correct
 team, whereas the text-based agent can solve more end-to-end processes.
@@ -108,7 +108,7 @@ Rabobank uses generative AI in their fallback topics. If the agent can't answer 
 
 They have used Azure AI Foundry to deploy AI models, within their own Azure subscription. For compliance, that was important for Rabobank. There are certain approvals they need to go through to use generative AI in SaaS products and deploying models in their own Azure subscription was the quicker way to use generative AI.
 
-An Azure Function is called from the agent’s fallback topic, through an HTTP call, including the conversation ID and bot ID. It:
+An Azure Function is called from the agent’s fallback topic, through an HTTP call, including the conversation ID and bot ID. It performs the following functions:
 
 - Retrieves the transcript.
 
@@ -157,9 +157,9 @@ This article uses these technologies:
 
 ## Architecture
 
-Rabobank's conversational AI architecture uses multiple Microsoft technologies to streamline customer interactions across chat and voice channels. Genesys Cloud lets initial contacts via chat escalate to live agents, while voice interactions use Azure Speech for text-to-speech and speech-to-text features.
+Rabobank's conversational AI architecture uses several Microsoft technologies to streamline customer interactions across chat and voice channels. Genesys Cloud lets initial contacts via chat escalate to live agents, and voice interactions use Azure Speech for text-to-speech and speech-to-text features.
 
-Microsoft Copilot Studio manages both text and voice virtual agents, offering 24/7 self-service and IVR features for authentication and intent recognition. Power BI provides unified analytics, tracking conversation transcripts and business metrics to help deliver efficient, high-quality customer service.
+Microsoft Copilot Studio manages both text and voice virtual agents, offering 24/7 self-service and IVR features for authentication and intent recognition. Power BI gives unified analytics, tracking conversation transcripts and business metrics to help deliver efficient, high-quality customer service.
 
 :::image type="content" source="media/rabobank/arch.png" alt-text="Screenshot of Rabobank's conversational AI architecture diagram that shows integration of Genesys Cloud, Copilot Studio, Azure Speech, and Power BI." lightbox="media/rabobank/arch.png":::
 

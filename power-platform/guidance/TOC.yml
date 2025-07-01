@@ -24,7 +24,7 @@
             - name: Define vision, metrics, and goals
               href: adoption/vision.md
             - name: Common goals
-              items: 
+              items:
                 - name: Overview of common goals
                   href: adoption/common-vision/index.md
                 - name: Establish a Center of Excellence with governance patterns and practices
@@ -43,12 +43,12 @@
                   href: adoption/common-vision/improve-employee-ex.md
             - name: Measure business value
               items:
-              - name: Measure and communicate business value
-                href: adoption/business-value.md
-              - name: Choose methods and tools
-                href: adoption/business-value-methods.md
-              - name: Use business value plays
-                href: adoption/value-plays.md
+                - name: Measure and communicate business value
+                  href: adoption/business-value.md
+                - name: Choose methods and tools
+                  href: adoption/business-value-methods.md
+                - name: Use business value plays
+                  href: adoption/value-plays.md
             - name: Get executive sponsorship
               href: adoption/executive-sponsorship.md
             - name: Establish a Center of Excellence
@@ -99,7 +99,7 @@
               href: adoption/admin-best-practices.md
             - name: Designate a Power Platform admin
               href: adoption/pp-admin.md
-            - name: Manage adoption at scale 
+            - name: Manage adoption at scale
               href: adoption/govern-at-scale.md
             - name: Develop a tenant environment strategy
               href: adoption/environment-strategy.md
@@ -108,7 +108,7 @@
             - name: Manage Dataverse for Teams environments
               href: adoption/teams-environment-strategy.md
             - name: Manage and govern the default environment
-              href: adoption/manage-default-environment.md 
+              href: adoption/manage-default-environment.md
         - name: Operations
           items:
             - name: Overview
@@ -120,7 +120,7 @@
             - name: Report on resource usage
               href: adoption/resource-usage.md
             - name: Monitor license and capacity consumption
-              href: adoption/cds-usage.md         
+              href: adoption/cds-usage.md
             - name: Ensure data retention and mobility
               href: adoption/data-retention.md
             - name: Define your support process
@@ -136,16 +136,16 @@
             - name: Manage resistance and avoid anti-patterns
               href: adoption/manage-resistance.md
         - name: Availability
-          items: 
+          items:
             - name: Overview
               href: adoption/availability-overview.md
             - name: Plan mission critical workloads
-              href: adoption/plan-mission-critical.md         
+              href: adoption/plan-mission-critical.md
             - name: Build a disaster recovery plan
               href: adoption/plan-disaster-recovery.md
         - name: Readiness
-          items: 
-            - name: Overview 
+          items:
+            - name: Overview
               href: adoption/ready-overview.md
             - name: Establish a training and upskilling strategy
               href: adoption/training-strategy.md
@@ -154,14 +154,14 @@
             - name: Set up tools to support your community
               href: adoption/wiki-community.md
             - name: Get started with a SharePoint site template
-              href: adoption/sharepoint-site-template.md          
+              href: adoption/sharepoint-site-template.md
             - name: Share templates and reusable components
               href: adoption/reusable.md
             - name: Envision and uncover high-value use cases
               href: adoption/solution-envisioning.md
         - name: Community
-          items: 
-            - name: Overview 
+          items:
+            - name: Overview
               href: adoption/nurture-best-practices.md
             - name: Define community purpose and goals
               href: adoption/community-goals.md
@@ -205,6 +205,8 @@
           href: case-studies/engineering-time-tracking.md
         - name: Teck automates data extraction
           href: case-studies/teck-automates-data-extraction.md
+        - name: Rabobank
+          href: case-studies/rabobank.md
     - name: White papers
       items:
         - name: Power Platform white papers
@@ -220,9 +222,8 @@
         - name: Icons
           href: icons.md
         - name: Automation adoption best practices
-          href: /power-automate/guidance/automation-coe/overview      
+          href: /power-automate/guidance/automation-coe/overview
         - name: Microsoft Power Platform Well-Architected
           href: /power-platform/well-architected/
         - name: Microsoft Power Platform Training
           href: /training/browse/?products=power-platform
-        
