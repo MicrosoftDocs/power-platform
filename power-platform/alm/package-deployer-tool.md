@@ -200,7 +200,19 @@ You can add custom code that executes before, during, and after the package is i
         |  `newVersion`   | Version number of the new solution |
         | `oldSolutionId` |     GUID of the old solution.      |
         | `newSolutionId` |     GUID of the new solution.      |
+        
+   4. Override the method `OverrideSolutionImportDecision` to return a [UserRequestedImportAction](/dotnet/api/microsoft.xrm.tooling.packagedeployment.crmpackageextentionbase.userrequestedimportaction) enum controlling whether the import of a solution will be skipped, updated or upgraded (the default).
 
+      ```csharp
+      public override UserRequestedImportAction OverrideSolutionImportDecision(string solutionUniqueName, Version organizationVersion, Version packageSolutionVersion, Version inboundSolutionVersion, Version deployedSolutionVersion, ImportAction systemSelectedImportAction)
+      {
+          return systemSelectedImportAction == ImportAction.Import
+              ? UserRequestedImportAction.ForceUpdate
+              : base.OverrideSolutionImportDecision(solutionUniqueName, organizationVersion, packageSolutionVersion,
+                  inboundSolutionVersion, deployedSolutionVersion, systemSelectedImportAction);
+
+      }
+      ```
 
    4. Enter custom code to execute before the solution import completes in the override definition of the `BeforeImportStage` method. The sample data and some flat files for solutions specified in the `ImportConfig.xml` file are imported before the solution import completes.  
 
