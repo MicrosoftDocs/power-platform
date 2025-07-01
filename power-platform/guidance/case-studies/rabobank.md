@@ -142,7 +142,7 @@ Using Power BI, they analyze transcripts and find out what needs to be optimized
 
 For validation, they use real conversations. The validation process consists of taking a list of customer inputs (questions), anonymizing it, and using those real conversations to try out the changes to see if the intent recognition was improved.
 
-Testing is done in multiple ways, one of the tools being a self-built testing tool. This tool was designed to verify the accuracy of virtual agents. It accepts large sets of trigger phrases and tests whether the correct topics/intents are triggered as well as whether the desired responses were generated.
+Testing is done in multiple ways, one of the tools being a self-built testing tool. This tool was designed to verify the accuracy of virtual agents. It accepts large sets of trigger phrases and tests whether the correct topics are triggered as well as whether the desired responses were generated.
 
 ## Technologies used
 
