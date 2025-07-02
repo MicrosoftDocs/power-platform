@@ -33,3 +33,7 @@ When you create an environment and select a region, you see the option to create
 Early release cycle environments can be managed similarly to other environments in the Power platform admin center.  You can identify early release cycle environments if they have the **Early** value in the **Release cycle** column.
 
 :::image type="content" source="media/blur-release-cycle.png" alt-text="Early release cycle environments have **Early** in the **Release Cycle** column.":::
+
+## Move existing environments to early release cycle
+
+To move environments to early release cycle, please [create](https://learn.microsoft.com/en-us/power-platform/admin/early-release?source=docs#create-early-release-cycle-environments) a new sandbox environment in early release and then [copy](https://learn.microsoft.com/en-us/power-platform/admin/copy-environment) from the environment to the newly created environment in early release. This will effectively move the environment to first release after the copy is completed. The original environment which is not in early release can then be deleted if it is not needed anymore and then it's environment name and url can be used for the copied-over environment in early release if required by [editing](https://learn.microsoft.com/en-us/power-platform/admin/edit-properties-environment#edit-an-environment) environment properties.
