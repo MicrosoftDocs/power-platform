@@ -24,7 +24,7 @@ search.audienceType:
  After you create and import [!INCLUDE[pn_MS_Word_Full](../includes/pn-ms-word-full.md)] templates into customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), with one click users can generate standardized documents automatically populated with data. This feature has some special considerations you should know about to successfully create [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] templates.  
 
 > [!WARNING]
-> There's a known issue when creating templates in [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)]. This topic contains information on how to prevent interactions that could potentially destabilize [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)]. See [Important! A known issue and how to avoid it](../admin/using-word-templates-dynamics-365.md#BKMK_Important) to learn more.
+> There's a known issue when creating templates in [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)]. This topic contains information on how to prevent interactions that could potentially destabilize [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)]. See [Important! A known issue and how to avoid it](#important-a-known-issue-and-how-to-avoid-it) to learn more.
 
  The following are the supported versions of [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)].  
 
@@ -143,7 +143,7 @@ To see and add customer engagement apps XML data, you need to enable the [!INCLU
 
 ### Important! A known issue and how to avoid it
 
- There's a known issue with customer engagement apps apps-generated [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] templates and [!INCLUDE[pn_MS_Word_Full](../includes/pn-ms-word-full.md)]. Follow the guidance in this section to prevent issues with control fields before you proceed to [Step 3: Define the Word template](#step-3-define-the-word-template), where you add XML content control fields to the [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template.
+ There's a known issue with customer engagement apps apps-generated [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] templates and [!INCLUDE[pn_MS_Word_Full](../includes/pn-ms-word-full.md)]. Follow the guidance in this section to prevent issues with control fields before you proceed to step three in this article, where you add XML content control fields to the [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template.
 
 > [!WARNING]
 > A few things  can cause [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] to freeze, requiring you to use [!INCLUDE[pn_ms_TaskManager_short](../includes/pn-ms-taskmanager-short.md)] to stop [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)]:  
