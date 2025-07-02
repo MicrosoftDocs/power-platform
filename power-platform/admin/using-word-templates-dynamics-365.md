@@ -38,21 +38,42 @@ search.audienceType:
 
  Follow the steps in this topic to successfully create and use [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] templates in customer engagement apps.  
 
-<a name="BKMK_AboutSelectEntity"></a>
-
 ## Step 1: Create a [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template  
 
 ### Where you can create a template
 
- There are three places in customer engagement apps where you can create a [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template:  
+There are two places in customer engagement apps where you can create a [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template:
 
-- **From the Settings page**. Go to **Settings** > **Templates** > **Document Templates** > **New**(![New or Add button.](../admin/media/nb-ua-r1-plus.png "New or Add button")). You'll need sufficient permissions to access to the Settings page, such as System Administrator or System Customizer.  
+- **From [Power Platform admin center](https://admin.powerplatform.microsoft.com/)**.
 
-- **From a record**. Open a record such as an account in Sales. Go to **Sales** > **Client_Accounts** > **My Active Accounts**. Click an account to open it, and then click **More** (**…**) > **Word Templates** > **Create Word Template**. Templates created here are personal and available only to the user creating the template.  
+    Access requires sufficient permissions, such as System Administrator or System Customizer role. To check your security role, see [View your user profile](/powerapps/user/view-your-user-profile). If you don't have the correct permissions, contact your system administrator.
 
-- **From a list of records**. For example, go to **Sales** > **Client_Accounts** > **My Active Accounts**. Select a single account, and then click **More** (**…**) > **Word Templates** > **Create Word Template**.  
+    #### [New admin center](#tab/new)
 
-  ![Create a Word template from an entity.](../admin/media/word-template-create-from-entity.png "Create a Word template from an entity")  
+    1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+    1. In the navigation pane, select **Manage**.
+    1. In the **Manage** pane, select **Environments** and choose an environment.
+
+    #### [Classic admin center](#tab/classic)
+
+    1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+    1. In the navigation pane, select **Environments**.
+    1. On the **Environments** page, choose an environment.
+
+    ---
+
+    4. On the Environments page, go to the command bar and select **Settings**.
+    1. Expand **Templates**, then select **Document templates**.
+    1. In Microsoft Dynamics 365, go to the command bar and select **New** to open the *Create template from CRM data* dialog box.
+
+- **From a list of records**. For example:
+
+    1. Sign in to the **Sales Hub** app.
+    1. In the navigation pane, select **Opportunities**.
+    1. From the grid view selector in the command bar, select **My Open Opportunities** to display a list of records.
+    1. In the list, select **[!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] Templates**, then select **Create [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] Template** to open the *Create template from CRM data* dialog box.
+
+   ![Create a Word template from an entity.](../admin/media/word-template-create-from-entity.png "Create a Word template from an entity")  
 
 > [!TIP]
 > To delete personal document templates, do the following:  
@@ -64,11 +85,15 @@ search.audienceType:
 >
 > To update templates, delete the template and then upload an updated version of that template.
 
- After selecting **Create Word Template**, choose an entity to filter with, and then select **Word Template** > **Select Entity**.  
+In the *Create template from CRM data* dialog box:
+
+1. Select **[!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] Template**.
+1. Choose an entity to filter with.
+1. Select **Select Entity** to open the *Select Entity* dialog box.  
 
  ![Choose Word Template and select entity.](../admin/media/word-template-select-entity.png "Choose Word Template and select entity")  
 
- The relationship selection page appears.  
+ In the *Select Entity* dialog box you configure the entity relationships.
 
  ![Select entities for the Word template.](../admin/media/word-template-select-entities.png "Select entities for the Word template")  
 
