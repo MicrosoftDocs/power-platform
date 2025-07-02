@@ -36,6 +36,6 @@ Early release cycle environments can be managed similarly to other environments 
 
 ## Move existing environments to early release cycle
 
-To move environments to early release cycle, please [create](early-release.md) a new sandbox environment in early release. Then you can [copy](copy-environment.md) from the environment to the newly created environment in early release. This will effectively move the environment to first release after the copy is completed. 
+To move an environment to early release cycle, please [create](early-release.md) a new sandbox environment in early release. Then you can [copy](copy-environment.md) from the environment to this newly created environment in early release. This will effectively move the environment to first release after the copy is completed.
 
-After the copy is completed, the original environment which is not in early release can then be deleted if it is not needed anymore. The environment url of the original environment can then be used for the environment in early release if it is required by [editing](edit-properties-environment.md) the environment properties.
+The original environment which is not in early release can be deleted if it is not needed anymore. The url of the original environment can reused for the environment in early release by [editing](edit-properties-environment.md) the environment properties.
