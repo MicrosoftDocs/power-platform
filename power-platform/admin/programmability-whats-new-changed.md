@@ -20,7 +20,7 @@ Learn about the latest changes and new capabilities for Power Platform API and a
 
 | Item | Type | Description |
 |------|------|-------------|
-| Microsoft.PowerPlatform.Management | SDK | [API reference](/dotnet/api/?view=power-platform-latest) published |
+| Microsoft.PowerPlatform.Management | SDK | [.NET API reference](/dotnet/api/?view=power-platform-latest) published |
 
 ## May 2025
 
@@ -28,7 +28,7 @@ Learn about the latest changes and new capabilities for Power Platform API and a
 |------|------|-------------|
 | Microsoft.PowerApps.CLI | SDK | [Monthly release](https://www.nuget.org/packages/Microsoft.PowerApps.CLI/1.43.6#releasenotes-body-tab) |
 | Power Platform for Admins V2 | Connector | [Monthly release](/connectors/powerplatformadminv2/) |
-| Microsoft.PowerPlatform.Management | SDK | [Initial NuGet package release](https://www.nuget.org/packages/Microsoft.PowerPlatform.Management/2.0.3060.142#readme-body-tab) |
+| Microsoft.PowerPlatform.Management | SDK | [Initial NuGet package release](https://www.nuget.org/packages/Microsoft.PowerPlatform.Management/2.0.3060.142) |
 
 ## April 2025
 
