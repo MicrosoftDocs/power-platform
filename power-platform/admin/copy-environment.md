@@ -166,7 +166,7 @@ After modifying and enabling some of the plug-ins, the developer sandbox environ
 
 9. Edit the details for the copied environment, and then select **Copy**.
 
-    :::image type="content" source="media/copy-environment/copy-environment-new-admin-center2.png" alt-text="Select Copy in the new admin center.":::
+    :::image type="content" source="media/copy-environment/copy-environment-admin-center-new.png" alt-text="Select Copy in the new admin center.":::
 
 10. Select **Confirm** to overwrite the target environment.
 
