@@ -71,7 +71,7 @@ After this policy is saved, any Power Apps or Power Automate maker, who is part 
 
 1. In the Policy name page, enter a policy name, and then select **Next**.
 
-1. In the Pre-built connectors page, review the various attributes and settings you can make on the **Assign Connectors** screen. 
+1. In the Pre-built connectors page, review the various attributes and settings you can make on the **Assign connectors** screen. 
 
    :::image type="content" source="media/dlp-assign-connectors.png" alt-text="Assign connectors":::
 
@@ -88,7 +88,7 @@ After this policy is saved, any Power Apps or Power Automate maker, who is part 
    </tr>
    <tr>
    <td width="20%"> Blockable</td>
-   <td width="80%"> Connectors that can be blocked. Learn more: <a href="dlp-connector-classification.md#list-of-connectors-that-cant-be-blocked">List of connectors that can't be blocked</a>  </td> 
+   <td width="80%"> Indicates if the connectors can be blocked or not. For list of connectors that can't be blocked, see <a href="dlp-connector-classification.md#list-of-connectors-that-cant-be-blocked"></a>  </td> 
    </tr>
    <tr> 
    <td width="20%"> Endpoint configuration</td>
@@ -96,11 +96,11 @@ After this policy is saved, any Power Apps or Power Automate maker, who is part 
    </tr>
    <tr> 
    <td width="20%"> Class</td>
-   <td width="80%"> Whether connector usage requires a Premium license or is it included in the Built-in/Standard license for Power Platform.    </td>
+   <td width="80%"> Indicates whether connector usage requires a Premium license or is it included in the Built-in/Standard license for Power Platform.    </td>
    </tr>
    <tr>
    <td width="20%"> Publisher</td>
-   <td width="80%">  The company that publishes the connector. This value can be different from the service owner. For example, Microsoft can be the publisher of the Salesforce connector, but the underlying service is owned by Salesforce, not Microsoft.  </td>
+   <td width="80%">  Displays the company that publishes the connector. This value can be different from the service owner. For example, Microsoft can be the publisher of the Salesforce connector, but the underlying service is owned by Salesforce, not Microsoft.  </td>
    </tr>
    <tr>
    <td width="20%"> About</td>
@@ -168,9 +168,9 @@ After this policy is saved, any Power Apps or Power Automate maker, who is part 
 
    :::image type="content" source="media/dlp-define-scope.png" alt-text="Define scope.":::
 
-   For this walkthrough, you exclude test environments from this policy. Select **Exclude certain environments**, and on the **Add Environments** page, select **Next**.
+   For this walkthrough, you exclude test environments from this policy. Select **Exclude certain environments** and select **Next**.
   
-1. In the Environments page, review the various attributes and settings on the **Exclude environments** page. For tenant-level policies, this list shows the tenant-level admin all the environments in the tenant. For environment-level policies, this list only shows the subset of environments in the tenant managed by the user who signed in as an Environment Admin or as a System Administrator for environments with Dataverse database. 
+1. In the Environments page, review the various attributes and settings on the **Exclude environments** screen. For tenant-level policies, this list shows the tenant-level admin all the environments in the tenant. For environment-level policies, this list only shows the subset of environments in the tenant managed by the user who signed in as an Environment Admin or as a System Administrator for environments with Dataverse database. 
 
    :::image type="content" source="media/dlp-exclude-environments.png" alt-text="Exclude environments.":::
 
@@ -220,7 +220,7 @@ After this policy is saved, any Power Apps or Power Automate maker, who is part 
    </tr>
    <tr>
    <td width="20%"> Excluded from policy     </td>
-   <td width="80%">  ***************For environment-level policy and tenant-level policies with scope defined as <b>Add multiple environments</b>, this pivot represents the subset of environments that are excluded from the policy scope. For tenant-level policies with scope defined as <b>Exclude certain environments</b>, this pivot represents the subset of environments that are excluded from the policy scope. ********************  </td>
+   <td width="80%">  ***************For environment-level policy and tenant-level policies with scope defined as <b>Add multiple environments</b>, this pivot represents the subset of environments that are excluded from the policy scope. For tenant-level policies with scope defined as <b>Exclude certain environments</b>, this pivot represents the subset of environments that are excluded from the policy scope**********. ********************  </td>
    </tr>
    </table>
 
@@ -241,10 +241,14 @@ After this policy is saved, any Power Apps or Power Automate maker, who is part 
    </tr>
    </table>
 
+************ 
+
 1. Select one or more environments. You can use the search bar to quickly find the environments of interest. For this walkthrough, search for test environments - type sandbox. After we select the sandbox environments, we assign them to the policy scope by using **Exclude from policy** from the top menu bar. 
 
    > [!div class="mx-imgBorder"] 
    > ![Assign policy.](media/dlp-assign-policy-environments.png "Assign policy")
+
+***************
 
 1. Because the policy scope was initially selected as **Exclude certain environments**, these test environments are now excluded from the policy scope, and the data policy settings are applied to all the remaining (**Available**) environments. For environment-level policy, you can only select a single environment from the list of available environments. After making selections for environments, select **Next**.
 
@@ -283,7 +287,7 @@ Because no data policy is applied to test environments, apps and flows can use a
    | Attribute | Description |
    | --------- | ----------- |
    | Name | The name of the policy. |
-   | Scope | The type of policy, such as environment-level or tenant-level |
+   | Scope | The type of policy, such as environment-level or tenant-level. |
    | Applied to | The environment scope associated with the policy.<br>For an environment-level policy, this is single environment name associated with the policy. <br> For a tenant-level policy, this can be one of the following values:<br>- All environments<br>- All environments, except (_n_)<br>- (_n_) environments<br>- A single environment name |
    | Created by | The user who created the policy. |
    | Created (On) | The date on which the policy was created. |
