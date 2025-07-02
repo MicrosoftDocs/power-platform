@@ -2,7 +2,7 @@
 title: Copy an environment
 description: Learn how to copy apps and data from an environment. Review next steps for administrators in the target environment.
 ms.topic: how-to
-ms.date: 06/24/2025
+ms.date: 2/7/2025
 author: ChrisGarty
 ms.author: cgarty
 contributors:
@@ -11,8 +11,6 @@ contributors:
 ms.reviewer: sericks
 ---
 # Copy an environment
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 You can use the **Copy** option in the Microsoft Power Platform admin center to copy data between environments. You can select two levels of copy: **Everything** or **Customizations and schemas only**.  
 
