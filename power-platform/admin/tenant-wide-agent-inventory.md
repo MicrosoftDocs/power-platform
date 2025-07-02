@@ -67,7 +67,7 @@ The **Copilot Studio** page provides the option to display more columns to help 
 
 1. Select the **column chooser** icon, located next to the search box on the right side of the page.
 1. Select the columns you wish to display or hide.
-1. Select **Save**. 
+1. Select **Save**.
 
 ## View agent or environment details
 
@@ -94,6 +94,7 @@ To clear all filters and sorts, select any column and select **Clear all filters
 ## Frequently asked questions
 
 ### Why am I seeing multiple agents with identical names&mdash;for example, _Copilot in Power Apps_&mdash;across different environments?
+
 Power Apps creates a platform-owned agent named **Copilot in Power Apps** in each environment. This agent is only editable by a Power Platform admin and isn't published to any channels by default. Although this agent can be viewed in Copilot Studio, this agent shouldn't be edited since it's not used by model-driven apps. Learn more in [Customize Copilot chat using Copilot Studio](/power-apps/maker/model-driven-apps/customize-copilot-chat).
 
 This is similar to other standard, preinstalled, model-driven apps such as the Power Platform Environment Settings.
@@ -124,6 +125,7 @@ Check the inventory refresh timestamp at the top-right corner of the page.
 - If you're uncertain of the creation time, wait for the next refresh cycle before proceeding.
 
 #### Step 3: Verify that the agent exists in the Copilot Studio portal.
+
 Confirm the agent's existence and your access permissions by verifying directly in the Copilot Studio portal:
 
 1. Navigate to the Copilot Studio portal.
