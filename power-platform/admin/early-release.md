@@ -36,6 +36,6 @@ Early release cycle environments can be managed similarly to other environments 
 
 ## Move existing environments to early release cycle
 
-To move environments to early release cycle, please [create](https://learn.microsoft.com/en-us/power-platform/admin/early-release?source=docs#create-early-release-cycle-environments) a new sandbox environment in early release. Then you can [copy](https://learn.microsoft.com/en-us/power-platform/admin/copy-environment) from the environment to the newly created environment in early release. This will effectively move the environment to first release after the copy is completed. 
+To move environments to early release cycle, please [create](/power-platform/admin/early-release.md) a new sandbox environment in early release. Then you can [copy](/power-platform/admin/copy-environment.md) from the environment to the newly created environment in early release. This will effectively move the environment to first release after the copy is completed. 
 
-After the copy is completed, the original environment which is not in early release can then be deleted if it is not needed anymore. The environment url of the original environment can then be used for the environment in early release if it is required by [editing](https://learn.microsoft.com/en-us/power-platform/admin/edit-properties-environment#edit-an-environment) the environment properties.
+After the copy is completed, the original environment which is not in early release can then be deleted if it is not needed anymore. The environment url of the original environment can then be used for the environment in early release if it is required by [editing](/power-platform/admin/edit-properties-environment.md) the environment properties.
