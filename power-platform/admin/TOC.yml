@@ -452,7 +452,7 @@
           items:
             - name: Track, manage, and scale Copilot adoption
               href: copilot/copilot-hub.md
-            - name: View agent inventory
+            - name: View agent inventory (preview)
               href: tenant-wide-agent-inventory.md
         - name: Security
           items:
