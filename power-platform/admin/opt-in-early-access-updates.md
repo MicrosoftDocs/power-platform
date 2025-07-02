@@ -1,12 +1,12 @@
 ---
 title: Opt in to early access updates 
 description: Opt in to early access updates in Microsoft Power Platform and Dynamics 365. 
-author: samathur
+author: paulda64
 ms.subservice: admin
-ms.author: samathur
+ms.author: paulda
 ms.reviewer: sericks
 ms.topic: how-to
-ms.date: 01/14/2025
+ms.date: 06/25/2025
 search.audienceType: 
   - admin
 ms.contributors:
@@ -15,8 +15,6 @@ ms.contributors:
 - matleon
 ---
 # Opt in to early access updates 
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 Microsoft Power Platform and customer engagement apps teams deliver two [major releases](policies-communications.md#major-release-events) per year (April and October) that offer new capabilities and functionality.
 
@@ -33,32 +31,32 @@ Early access begins approximately two months before general availability of each
 - Early access: First Monday of February
 - Sovereign early access: Second Monday of February
 
+**Release wave 2**
+- Early access: First Monday of August
+- Sovereign early access: Second Monday of August
+
 ## Deployment schedule  
 
-|Region  | Deployment schedule for 2025 wave 1 early access |
+|Region  | Deployment schedule for 2025 wave 2 early access |
 |---------|---------|
-| Canada                       | January 22, 2025  |
-| South America                | January 22, 2025  |
-| India                        | January 22, 2025  |
-| France                       | January 22, 2025  |
-| South Africa                 | January 22, 2025  |
-| Germany                      | January 22, 2025  |
-| Switzerland                  | January 22, 2025  |
-| Norway                       | January 22, 2025  |
-| Korea                        | January 22, 2025  |
-| Singapore                    | January 22, 2025  |
-| Sweden                       | January 22, 2025  |
-| United Arab Emirates         | January 27, 2025  |
-| Japan                        | January 27, 2025  |
-| Asia Pacific                 | January 27, 2025  |
-| England                      | January 27, 2025  |
-| Australia                    | January 27, 2025  |
-| Europe                       | January 29, 2025 |
-| North America                | February 3, 2025 |
-
-**Release wave 2**
-- Early access: Second Monday of August
-- Sovereign early access: Second Monday of August
+| Canada                       | July 23, 2025  |
+| South America                | July 23, 2025  |
+| India                        | July 23, 2025  |
+| France                       | July 23, 2025  |
+| South Africa                 | July 23, 2025  |
+| Germany                      | July 23, 2025  |
+| Switzerland                  | July 23, 2025  |
+| Norway                       | July 23, 2025  |
+| Korea                        | July 23, 2025  |
+| Sweden                       | July 23, 2025  |
+| Singapore                    | July 28, 2025  |
+| United Arab Emirates         | July 28, 2025  |
+| Japan                        | July 28, 2025  |
+| Asia Pacific                 | July 28, 2025  |
+| England                      | July 28, 2025  |
+| Australia                    | July 28, 2025  |
+| Europe                       | July 30, 2025  |
+| North America                | August 4, 2025 |
 
 > [!NOTE]
 > Sovereign regions begin early access one week after production regions.
@@ -207,7 +205,7 @@ Throughout a release wave, your environments will be updated during one of the [
 
 See [Policies and communications](policies-communications.md#scheduled-system-updates-and-maintenance). 
 
-### See also
+### Related content
 [Dynamics 365 release schedule and early access ](/dynamics365/get-started/release-schedule)<br />
 [Dynamics 365 and Microsoft Power Platform Release Plans ](/dynamics365/release-plans/)<br />
 [Policies and communications](./policies-communications.md)
