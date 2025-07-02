@@ -63,6 +63,16 @@ Use this example walkthrough to create a tenant-level data policy. In this walkt
 
 After this policy is saved, any Power Apps or Power Automate maker, who is part of the data policy's environment, can create an app or a flow that shares data between SharePoint or Salesforce. Any Power Apps or Power Automate resource that includes an existing connection with a connector in the **Non-business** data group, isn't allowed to establish connections with SharePoint or Salesforce connectors. These makers can't add Facebook or Twitter connectors to any Power Apps or Power Automate resource.
 
+# [New admin center](#tab/new)
+ 
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. Select **Security** in the navigation pane.
+1. In the **Security** pane, under Settings, select **Data and privacy**. 
+1. In the Data protection and privacy screen, select **Data policy**. 
+
+# [Classic admin center](#tab/classic)
+
+
 1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select **Policies** > **Data policies** > **New policy**.
 
     If no policies exist in the tenant, you see the following page.
@@ -275,12 +285,26 @@ Because no data policy is applied to test environments, apps and flows can use a
 
 ## Find and view data policies
 
+# [New admin center](#tab/new)
+ 
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+
+1. In the Data protection and privacy screen, select **Data policy**. If you have a long list of policies, use the **Search** box to find specific data policies.
+
+   > [!div class="mx-imgBorder"] 
+   > ![Data policies in the Power Platform admin center.](media/dlp-policy-list-view-new.png "Data policies in the Power Platform admin center.")
+
+# [Classic admin center](#tab/classic)
+
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
-2. In the navigation pane, select **Policies> Data policies**. If you have a long list of policies, use the **Search** box to find specific data policies.
+2. In the navigation pane, select **Policies > Data policies**. If you have a long list of policies, use the **Search** box to find specific data policies.
 
    > [!div class="mx-imgBorder"] 
    > ![data policy list.](media/dlp-policy-list-view.png "data policy list")
+
+
+---
 
    The list view shows the following attributes:
 
@@ -296,9 +320,29 @@ Because no data policy is applied to test environments, apps and flows can use a
 
 ## Edit a data policy
 
+# [New admin center](#tab/new)
+ 
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+
+1. From the list of data policies, select a policy, and then select **Edit Policy**. If you have a long list of policies, use the **Search** box to find specific data policies.
+
+   > [!div class="mx-imgBorder"] 
+   > ![Edit a data policy.](media/dlp-edit-policy-new.png "Edit a data policy")
+
+   > [!NOTE]
+   > Environment admins can't edit policies that were created by the tenant admin.
+
+1. Proceed through the steps described in [Walkthrough: Create a data policy](#walkthrough-create-a-data-policy), and then select **Update Policy**.
+
+   > [!NOTE]
+   > Environment-level data policies can't override tenant-wide data policies.
+
+# [Classic admin center](#tab/classic)
+
+
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
-2. From the list of data policies, select a policy, and then select **Edit Policy**. If you have a long list of policies, use the **Search** box to find specific environments.
+1. From the list of data policies, select a policy, and then select **Edit Policy**. If you have a long list of policies, use the **Search** box to find specific environments.
 
    > [!div class="mx-imgBorder"] 
    > ![Edit a data policy.](media/dlp-edit-policy.png "Edit a data policy")
@@ -306,21 +350,39 @@ Because no data policy is applied to test environments, apps and flows can use a
    > [!NOTE]
    > Environment admins can't edit policies that were created by the tenant admin.
 
-3. Proceed through the steps described in [Walkthrough: Create a data policy](#walkthrough-create-a-data-policy), and then select **Update Policy**.
+1. Proceed through the steps described in [Walkthrough: Create a data policy](#walkthrough-create-a-data-policy), and then select **Update Policy**.
 
    > [!NOTE]
    > Environment-level data policies can't override tenant-wide data policies.
 
-4. (Optional) If necessary, consider enforcing data policies on connections. Learn more: [Enforce data policy for violating connections](powerapps-powershell.md#enforce-dlp-policy-for-violating-connections---environment)
+---
+
+(Optional) If necessary, consider enforcing data policies on connections. Learn more: [Enforce data policy for violating connections](powerapps-powershell.md#enforce-dlp-policy-for-violating-connections---environment)
 
    > [!NOTE]
    >  Enforcing data policies disable existing connections that violate any data policies and enable any previously disabled connections that no longer violate any data policies.
 
 ## Delete a data policy
 
+# [New admin center](#tab/new)
+ 
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+
+1. From the list of data policies, select a policy, and then select **Delete Policy**. If you have a long list of policies, use the **Search** box to find specific data policies.
+
+   > [!div class="mx-imgBorder"] 
+   > ![Delete a data policy.](media/dlp-delete-policy-new.png "Delete a data policy")
+
+   > [!NOTE]
+   > Environment admins can't delete policies created by the tenant admin.
+
+1. In the confirmation dialog box, select **Delete**.
+
+# [Classic admin center](#tab/classic)
+
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
-2. From the list of data policies, select an environment, and then select **Delete Policy**. If you have a long list of policies, use the **Search** box to find specific environments.
+2. From the list of data policies, select a policy, and then select **Delete Policy**. If you have a long list of policies, use the **Search** box to find specific environments.
 
    > [!div class="mx-imgBorder"] 
    > ![Delete a data policy.](media/dlp-delete-policy.png "Delete a data policy")
