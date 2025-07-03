@@ -116,7 +116,7 @@ In the *Create template from CRM data* dialog box:
 
 ### Download the template
 
- Select **Download Template** on the **Select Entity** page to create a [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] file on your local computer with the exported entity included as XML data.  
+Select **Download Template** on the **Select Entity** page to create a [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] file on your local computer with the exported entity included as XML data.  
 
 > [!IMPORTANT]
 > Document template downloaded from one environment can only be used within that environment. environment to environment migration for Word or Excel templates isn't currently supported.
@@ -143,7 +143,7 @@ To see and add customer engagement apps XML data, you need to enable the [!INCLU
 
 ### Important! A known issue and how to avoid it
 
- There's a known issue with customer engagement apps apps-generated [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] templates and [!INCLUDE[pn_MS_Word_Full](../includes/pn-ms-word-full.md)]. Follow the guidance in this section to prevent issues with control fields before you proceed to step three in this article, where you add XML content control fields to the [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template.
+ There's a known issue with customer engagement apps apps-generated [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] templates and [!INCLUDE[pn_MS_Word_Full](../includes/pn-ms-word-full.md)]. Be sure to follow the guidance in this section to prevent issues with control fields before going to step three where you add XML content control fields to the [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template.
 
 > [!WARNING]
 > A few things  can cause [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] to freeze, requiring you to use [!INCLUDE[pn_ms_TaskManager_short](../includes/pn-ms-taskmanager-short.md)] to stop [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)]:  
