@@ -5,7 +5,7 @@ author: danamartens
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/19/2024
+ms.date: 07/03/2025
 ms.subservice: admin
 ms.author: dmartens
 ms.reviewer: sericks
@@ -92,7 +92,7 @@ If an appointment organizer is changed in Dynamics 365 after it has been synchro
   - None of the following properties changed: Subject, Body, Location, IsAllDayEvent, ScheduledStart, ScheduledEnd, RequiredAttendees, OptionalAttendees, Organizer, AppointmentStatus, PriorityCode, RecurrencePattern.
 
 > [!NOTE]
-> The system does not check for scheduling conflicts in Exchange before synchronizing appointments from Dynamics 365. You can use [Scheduling tools](https://learn.microsoft.com/en-us/dynamics365/customerengagement/on-premises/developer/schedule-appointment-entities?view=op-9-1) in Dynamics 365 to centrally manage appointment bookings to help prevent conflicts.
+> The system does not check for scheduling conflicts in Exchange before synchronizing appointments from Dynamics 365. You can use [Scheduling tools](/dynamics365/customerengagement/on-premises/developer/schedule-appointment-entities?view=op-9-1) in Dynamics 365 to centrally manage appointment bookings to help prevent conflicts.
 
 #### Syncing canceled and deleted appointments from Dynamics 365 to Exchange
 
