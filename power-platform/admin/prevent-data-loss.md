@@ -398,9 +398,6 @@ Because no data policy is applied to test environments, apps and flows can use a
 
 1. From the list of data policies, select a policy, and then select **Edit Policy**. If you have a long list of policies, use the **Search** box to find specific environments.
 
-   > [!div class="mx-imgBorder"] 
-   > ![Edit a data policy.](media/dlp-edit-policy.png "Edit a data policy")
-
    > [!NOTE]
    > Environment admins can't edit policies created by the tenant admin.
 
