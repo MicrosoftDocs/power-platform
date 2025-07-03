@@ -68,7 +68,7 @@ After this policy is saved, any Power Apps or Power Automate maker, who is part 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. Select **Security** in the navigation pane.
 1. In the **Security** pane, under Settings, select **Data and privacy**. 
-1. In the Data protection and privacy screen, select **Data policy**. 
+1. In the Data protection and privacy screen, select the **Data policy** section. Select **+ New Policy**.
 
     If no policies exist in the tenant, you see the following page.
    
@@ -122,15 +122,15 @@ After this policy is saved, any Power Apps or Power Automate maker, who is part 
    </tr>
    <tr>
    <td width="20%"> Business  </td>
-   <td width="80%"> Connectors for business-sensitive data. Connectors in this group can't share data with connectors in other groups.  </td>
+   <td width="80%"> Connectors for sensitive data. Connectors in this group can't share data with connectors in other groups.  </td>
    </tr>
    <tr>
-   <td width="20%"> Non-Business/<br />Default </td>
-   <td width="80%"> Connectors for non-business data, such as personal use data. Connectors in this group can't share data with connectors in other groups. Unassigned connectors will show up here by default. </td>
+   <td width="20%"> Non-business/<br />Default </td>
+   <td width="80%"> Connectors for non-sensitive data. Connectors in this group can't share data with connectors in other groups. Unassigned connectors will show up here by default. </td>
    </tr>
    <tr>
    <td width="20%"> Blocked     </td>
-   <td width="80%"> Blocked connectors can't be used where this policy is applied.    </td>
+   <td width="80%"> Blocked connectors can't be used where this policy is applied. Unblockable connectors will be in Non-business by default.  </td>
    </tr>
    </table>
 
@@ -151,15 +151,15 @@ After this policy is saved, any Power Apps or Power Automate maker, who is part 
    </tr>
    </table>
 
-1. Select one or more pre-built connectors. For this walkthrough, select the Salesforce and SharePoint connectors, and then select **Move to Business** from the top menu bar. You can also use the ellipsis (![ellipses.](./media/vertical-ellipses.png)) to the right of the connector name. The connectors appear in the **Business** data group.
+1. Select one or more pre-built connectors. For this walkthrough, select the **Salesforce** and **SharePoint** connectors, and then select **Move to Business** from the top menu bar. You can also use the ellipsis (![ellipses.](./media/vertical-ellipses.png)) to the right of the connector name. The connectors now appear in the **Business** data group.
 
    :::image type="content" source="media/dlp-business-data-group-new.png" alt-text="Business data group":::
 
-   Connectors can reside in only one data group at a time. By moving the Salesforce and SharePoint connectors to the **Business** data group, you're preventing users from creating flows and apps that combine these two connectors with any of the connectors in the **Non-Business** or **Blocked** groups.
+   Connectors can reside in only one data group at a time. By moving the Salesforce and SharePoint connectors to the **Business** data group, you're preventing users from creating flows and apps that combine these two connectors with any of the connectors in the **Non-business** or **Blocked** groups.
 
    For connectors like SharePoint that aren't blockable, the **Block** action isn't available and a warning appears.
 
-1. Review and change the default group setting for new connectors, if needed. We recommend keeping the default setting as **Non-Business** to map any new connectors added to Power Platform by default. **Non-Business** connectors can be manually assigned to **Business** or **Blocked** later by editing the data policy, after you had a chance to review and assign them. If the new connector setting is **Blocked**, any new connectors that are blockable are mapped to **Blocked**, as expected. However, any new connectors that are unblockable are mapped to **Non-Business** because by design they can't be blocked. 
+1. Review and change the default group setting for new connectors, if needed. We recommend keeping the default setting as **Non-business** to map any new connectors added to Power Platform by default. **Non-business** connectors can be manually assigned to **Business** or **Blocked** later by editing the data policy, after you had a chance to review and assign them. If the new connector setting is **Blocked**, any new connectors that are blockable are mapped to **Blocked**, as expected. However, any new connectors that are unblockable are mapped to **Non-business** because by design they can't be blocked. 
 
    In the upper-right corner, select **Set default group**.
 
@@ -343,7 +343,7 @@ After this policy is saved, any Power Apps or Power Automate maker, who is part 
    </tr>
    </table>
 
-1. Select one or more pre-built connectors. For this walkthrough, select the Salesforce and SharePoint connectors, and then select **Move to Business** from the top menu bar. You can also use the ellipsis (![ellipses.](./media/vertical-ellipses.png)) to the right of the connector name. The connectors appear in the **Business** data group.
+1. Select one or more pre-built connectors. For this walkthrough, select the **Salesforce** and **SharePoint** connectors, and then select **Move to Business** from the top menu bar. You can also use the ellipsis (![ellipses.](./media/vertical-ellipses.png)) to the right of the connector name. The connectors now appear in the **Business** data group.
 
    :::image type="content" source="media/dlp-business-data-group.png" alt-text="Business data group":::
 
@@ -351,13 +351,13 @@ After this policy is saved, any Power Apps or Power Automate maker, who is part 
 
    For connectors like SharePoint that aren't blockable, the **Block** action isn't available and a warning appears.
 
-1. Review and change the default group setting for new connectors, if needed. We recommend keeping the default setting as **Non-Business** to map any new connectors added to Power Platform by default. **Non-Business** connectors can be manually assigned to **Business** or **Blocked** later by editing the data policy, after you had a chance to review and assign them. If the new connector setting is **Blocked**, any new connectors that are blockable are mapped to **Blocked**, as expected. However, any new connectors that are unblockable are mapped to **Non-Business** because by design they can't be blocked. 
+1. Review and change the default group setting for new connectors, if needed. We recommend keeping the default setting as **Non-business** to map any new connectors added to Power Platform by default. **Non-business** connectors can be manually assigned to **Business** or **Blocked** later by editing the data policy, after you had a chance to review and assign them. If the new connector setting is **Blocked**, any new connectors that are blockable are mapped to **Blocked**, as expected. However, any new connectors that are unblockable are mapped to **Non-business** because by design they can't be blocked. 
 
    In the upper-right corner, select **Set default group**.
 
    :::image type="content" source="media/dlp-edit-default-group.png" alt-text="Set default group":::
 
-1. After you complete all the connector assignments across the **Business**/**Non-Business**/**Blocked** groups and set the default group for new connectors, select **Next**.
+1. After you complete all the connector assignments across the **Business**/**Non-business**/**Blocked** groups and set the default group for new connectors, select **Next**.
 
 1. In the Custom connectors page, xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx . Select **Next** to continue.
 
@@ -438,14 +438,10 @@ After this policy is saved, any Power Apps or Power Automate maker, who is part 
    </tr>
    </table>
 
-************ 
-
-1. Select one or more environments. You can use the search bar to quickly find the environments of interest. For this walkthrough, search for test environments - type sandbox. After we select the sandbox environments, we assign them to the policy scope by using **Exclude from policy** from the top menu bar. 
+1. ** Select one or more environments. You can use the search bar to quickly find the environments of interest. For this walkthrough, search for test environments - type sandbox. After we select the sandbox environments, we assign them to the policy scope by using **Exclude from policy** from the top menu bar. ***** 
 
    > [!div class="mx-imgBorder"] 
    > ![Assign policy.](media/dlp-assign-policy-environments.png "Assign policy")
-
-***************
 
 1. Because the policy scope was initially selected as **Exclude certain environments**, these test environments are now excluded from the policy scope, and the data policy settings are applied to all the remaining (**Available**) environments. For environment-level policy, you can only select a single environment from the list of available environments. After making selections for environments, select **Next**.
 
