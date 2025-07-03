@@ -392,7 +392,32 @@ Because no data policy is applied to test environments, apps and flows can use a
 
 3. In the confirmation dialog box, select **Delete**.
 
+---
+
 ## Change the default data group
+
+# [New admin center](#tab/new)
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a [Power Platform admin](use-service-admin-role-manage-tenant.md#power-platform-administrator).
+
+1. From the list of data policies, select a policy, and then select **Edit Policy**. If you have a long list of policies, use the **Search** box to find specific environments.
+
+   > [!NOTE]
+   > Environment admins can't edit policies created by the tenant admin.
+
+1. Select the **Prebuilt connectors** step in the **Edit Policy** process.
+
+1. In the upper-right corner, select **Set default group**.
+
+   > [!div class="mx-imgBorder"] 
+   > ![Set default group.](media/dlp-edit-default-group-new.png "Set default group for a data policy.")
+
+1. Choose a default group, and then select **Apply**. Learn more: [Connector classification](dlp-connector-classification.md) and [Default data group for new connectors](dlp-connector-classification.md#default-data-group-for-new-connectors)
+
+1. Select **Next** as needed to close the **Edit Policy** process.
+
+# [Classic admin center](#tab/classic)
+
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a [Power Platform admin](use-service-admin-role-manage-tenant.md#power-platform-administrator).
 
@@ -411,6 +436,9 @@ Because no data policy is applied to test environments, apps and flows can use a
 1. Choose a default group, and then select **Apply**. Learn more: [Connector classification](dlp-connector-classification.md) and [Default data group for new connectors](dlp-connector-classification.md#default-data-group-for-new-connectors)
 
 1. Select **Next** as needed to close the **Edit Policy** process.
+
+
+---
 
 The data group you chose will be the default group to automatically classify any new connectors added to Power Platform after your policy is created. 
 
