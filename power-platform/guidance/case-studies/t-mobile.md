@@ -25,19 +25,19 @@ details about devices are spread across device manufacturers’
 websites. Finding the right information on these sites can take time, especially if the customer wants to compare
 products across multiple sites.
 
-To address this challenge, CSRs get a daily report in PDF
+To address this challenge, CSR gets a daily report in PDF
 format with the latest updates on devices and available offers. Over
-time, the document becomes more complex and harder to search.
-They print the document for quick reference. CSRs also go into multiple systems to find
+time, the document became more complex and harder to search.
+They printed the document for quick reference. CSRs also went into multiple systems to find
 technical details, switching between several applications on an
-iPad. This way of working isn't efficient or environmentally friendly. They need to move away from this paper-heavy and
+iPad. This way of working wasn't efficient or environmentally friendly. They needed to move away from this paper-heavy and
 time-consuming process.
 
-Brian Hodel, solution architect and developer at T-Mobile in Bellevue, WA, builds this solution. With a professional developer background, Brian streamlines business operations and automates processes across the organization using tools in Power Platform. After the success with the [Orbit app](https://www.microsoft.com/en-us/power-platform/blog/power-apps/tmobile/),
-Brian creates this solution to help make the
+Brian Hodel, solution architect and developer at T-Mobile in Bellevue, WA, built this solution. With a professional developer background, Brian streamlines business operations and automates processes across the organization using tools in Power Platform. After the success with the [Orbit app](https://www.microsoft.com/en-us/power-platform/blog/power-apps/tmobile/),
+Brian created this solution to help make the
 retail department more efficient.
 
-## Solutions
+## Solution
 
 The PromoGenius app is a Power Apps canvas app with an embedded Copilot
 Studio agent. It's designed with a series of drop-down menus to
@@ -83,7 +83,7 @@ eye opener around how AI can help support business processes.
 > The solution has been highly successful. I intentionally designed it to leverage generative AI capabilities, aiming
 for a more conversational approach to obtaining answers. As a result, the organization has started to rethink how information can be consolidated, gaining new insights into the potential of generative AI.
 >
-> - Brian
+> - Brian Hodel
 
 ### Implementation approach
 
@@ -293,7 +293,7 @@ solution and getting users onboard early.
 > One of the key lessons is the importance of engaging directly with the people who use the solution. Talking with them about the user interface and functionality helps create a better experience. This
 platform makes that possible, offering speed and efficiency. Unlike traditional development tools, which don't let you collaborate on interface design in real time, this platform lets you sit with users and refine the experience together.
 >
-> - Brian
+> - Brian Hodel
 
 ## Looking ahead
 
