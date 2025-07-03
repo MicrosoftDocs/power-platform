@@ -13,7 +13,7 @@ ms.date: 05/13/2025
 
 # Rabobank conversational banking with Copilot Studio
 
-Rabobank is a multinational banking and financial services company based in the Netherlands. As part of its mission to grow a better world together, Rabobank focuses on conversational banking. The company delivers friendly, efficient customer service on demand, and follows its principles of cooperation and putting people first.
+Rabobank is a multinational banking and financial services company based in the Netherlands. As part of its mission to grow a better world together, Rabobank aspires to conversational banking; prioritizing friendly, efficient customer service on demand, in alignment with the company’s principles of cooperation and putting people first.  
 
 In this case study, you learn how to:
 
@@ -39,7 +39,7 @@ Rabobank sets up text- and voice-enabled chatbot functionality on another platfo
 >
 > - Chris den Arend, Solution Architect, Rabobank
 
-## Solutions
+## Solution
 
 Rabobank transitioned to Microsoft Copilot Studio, creating three Copilot Studio agents for customer self-service; one voice-enabled and two text-based agents. The text-based are split on business banking and retail customers.
 
@@ -163,7 +163,7 @@ Microsoft Copilot Studio manages both text and voice virtual agents, offering 24
 
 :::image type="content" source="media/rabobank/arch.png" alt-text="Screenshot of Rabobank's conversational AI architecture diagram that shows integration of Genesys Cloud, Copilot Studio, Azure Speech, and Power BI." lightbox="media/rabobank/arch.png":::
 
-The following steps correspond to the previous diagram:
+For voice-enabled interaction:
 
 1. A customer calls and the call lands in Genesys Cloud.
 
@@ -179,9 +179,9 @@ The following steps correspond to the previous diagram:
 
 For text-enabled interaction:
 
-1. A customer starts a chat and it lands in Genesys Cloud.
+A. A customer starts a chat and it lands in Genesys Cloud.
 
-1. The chat redirects to a Copilot Studio agent, which uses topics for intent recognition and manages end-to-end processes. Fallback topics use generative AI to better answer customer questions.
+B. The chat redirects to a Copilot Studio agent, which uses topics for intent recognition and manages end-to-end processes. Fallback topics use generative AI to better answer customer questions.
 
 ## Takeaways
 
@@ -195,9 +195,9 @@ Rabobank’s transition to Microsoft Copilot Studio shows how you can use Copilo
 
 The agents provide these key benefits:
 
-- 20,000 daily calls and 7,000 daily chats
+- 20,000 daily calls and 7,000 daily chats.
 
-- 62 percent self-service rate for chats (for example, not escalated to live agents)
+- 62 percent self-service rate for chats (for example, not escalated to live agents).
 
 Rabobank manages and updates its virtual agents without external help.
 
