@@ -72,13 +72,13 @@ After this policy is saved, any Power Apps or Power Automate maker, who is part 
 
     If no policies exist in the tenant, you see the following page.
    
-    :::image type="content" source="media/dlp-view-no-policies.png" alt-text="No policies view":::
+    :::image type="content" source="media/dlp-view-no-policies-new.png" alt-text="No policies view":::
 
 1. In the Policy name page, enter a policy name, and then select **Next**.
 
 1. In the Pre-built connectors page, review the various attributes and settings you can make on the **Assign connectors** screen. 
 
-   :::image type="content" source="media/dlp-assign-connectors.png" alt-text="Assign connectors":::
+   :::image type="content" source="media/dlp-assign-connectors-new.png" alt-text="Assign connectors":::
 
    **Attributes** <br /><br />
 
@@ -153,7 +153,7 @@ After this policy is saved, any Power Apps or Power Automate maker, who is part 
 
 1. Select one or more pre-built connectors. For this walkthrough, select the Salesforce and SharePoint connectors, and then select **Move to Business** from the top menu bar. You can also use the ellipsis (![ellipses.](./media/vertical-ellipses.png)) to the right of the connector name. The connectors appear in the **Business** data group.
 
-   :::image type="content" source="media/dlp-business-data-group.png" alt-text="Business data group":::
+   :::image type="content" source="media/dlp-business-data-group-new.png" alt-text="Business data group":::
 
    Connectors can reside in only one data group at a time. By moving the Salesforce and SharePoint connectors to the **Business** data group, you're preventing users from creating flows and apps that combine these two connectors with any of the connectors in the **Non-Business** or **Blocked** groups.
 
@@ -163,7 +163,7 @@ After this policy is saved, any Power Apps or Power Automate maker, who is part 
 
    In the upper-right corner, select **Set default group**.
 
-   :::image type="content" source="media/dlp-edit-default-group.png" alt-text="Set default group":::
+   :::image type="content" source="media/dlp-edit-default-group-new.png" alt-text="Set default group":::
 
 1. After you complete all the connector assignments across the **Business**/**Non-Business**/**Blocked** groups and set the default group for new connectors, select **Next**.
 
@@ -171,13 +171,13 @@ After this policy is saved, any Power Apps or Power Automate maker, who is part 
 
 1. In the Scope page, choose the scope of the data policy. This step isn't available for environment-level policies, because they're always meant for a single environment.
 
-   :::image type="content" source="media/dlp-define-scope.png" alt-text="Define scope.":::
+   :::image type="content" source="media/dlp-define-scope-new.png" alt-text="Define scope.":::
 
    For this walkthrough, you exclude test environments from this policy. Select **Exclude certain environments** and select **Next**.
   
 1. In the Environments page, review the various attributes and settings on the **Exclude environments** screen. For tenant-level policies, this list shows the tenant-level admin all the environments in the tenant. For environment-level policies, this list only shows the subset of environments in the tenant managed by the user who signed in as an Environment Admin or as a System Administrator for environments with Dataverse database. 
 
-   :::image type="content" source="media/dlp-exclude-environments.png" alt-text="Exclude environments.":::
+   :::image type="content" source="media/dlp-exclude-environments-new.png" alt-text="Exclude environments.":::
 
    **Attributes** <br /><br />
 
@@ -246,21 +246,17 @@ After this policy is saved, any Power Apps or Power Automate maker, who is part 
    </tr>
    </table>
 
-************ 
-
-1. Select one or more environments. You can use the search bar to quickly find the environments of interest. For this walkthrough, search for test environments - type sandbox. After we select the sandbox environments, we assign them to the policy scope by using **Exclude from policy** from the top menu bar. 
+1. **** Select one or more environments. You can use the search bar to quickly find the environments of interest. For this walkthrough, search for test environments - type sandbox. After we select the sandbox environments, we assign them to the policy scope by using **Exclude from policy** from the top menu bar.**** 
 
    > [!div class="mx-imgBorder"] 
    > ![Assign policy.](media/dlp-assign-policy-environments.png "Assign policy")
-
-***************
 
 1. Because the policy scope was initially selected as **Exclude certain environments**, these test environments are now excluded from the policy scope, and the data policy settings are applied to all the remaining (**Available**) environments. For environment-level policy, you can only select a single environment from the list of available environments. After making selections for environments, select **Next**.
 
 1. In the Review page, review the policy settings, and then select **Create policy**.
 
    > [!div class="mx-imgBorder"] 
-   > ![Review new policy.](media/dlp-new-policy-review.png "Review new policy")
+   > ![Review new policy.](media/dlp-new-policy-review-new.png "Review new policy")
 
 # [Classic admin center](#tab/classic)
 
