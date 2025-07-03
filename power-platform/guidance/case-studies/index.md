@@ -1,12 +1,13 @@
 ---
 title: Power Platform real-world case studies
 description: Explore real-world Power Platform case studies to see how customers create innovative solutions, improve processes, and achieve goals.
+#customer intent: As a business leader, I want to learn how organizations use Power Platform so that I can identify solutions for my own challenges.
 author: robstand
 ms.author: rstand
 ms.reviewer: jhaskett-msft
 ms.subservice: guidance
 ms.topic: overview
-ms.date: 05/13/2025
+ms.date: 07/03/2025
 ---
 
 # Real-world case studies
@@ -39,4 +40,6 @@ Case studies are detailed accounts of real-world applications and implementation
 | [EY automates payment processing](global-finance.md) | This case study covers how the Global Finance team at Ernst & Young used Power Automate, AI Builder, and Dataverse to automate customer payment processing. |
 | [Holland America Line transforms customer experience with Copilot Studio](holland-america-customer-experience.md) | This case study covers how Holland America Line used Copilot Studio to create a sophisticated virtual agent to act as a digital concierge on their website. |
 | [John Cockerill streamlines enterprise business processes](engineering-time-tracking.md) | This case study covers how international engineering company John Cockerill uses Power Platform to develop enterprise apps. |
+| [SLB enhances productivity with Power Platform and AI](slb-enhances-productivity.md) | This case study covers how SLB enhanced process and employee productivity using Power Apps, AI Builder, Power Automate, and Dataverse. |
 | [Teck automates data extraction with Power Automate and AI Builder](teck-automates-data-extraction.md) | This case study covers how Teck uses Power Automate and AI Builder to automate data extraction processes. |
+| [T-Mobile empowers customer service representatives using Power Apps and Copilot Studio](tmobile-empowers-customer-service.md) | This case study covers how T-Mobile empowers its customer service representatives with an app designed to provide quick, accurate device information and improve customer support. |
