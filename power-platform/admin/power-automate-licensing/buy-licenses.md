@@ -108,8 +108,7 @@ Follow these steps to assign Process capacity to an environment.
 
 1. Select **Save**.
 
-   ![An image that displays the steps needed to assign a license to an environment.](../media/power-automate-licensing/assign-process-license-environment.png)
-
+   ![An image that displays the steps needed to assign a license to an environment.](../media/power-automate-licensing/assign-process-license-environment-new.png)
 
 # [Classic admin center](#tab/classic)
 
@@ -130,6 +129,8 @@ Follow these steps to assign Process capacity to an environment.
    ![An image that displays the steps needed to assign a license to an environment.](../media/power-automate-licensing/assign-process-license-environment.png)
 
 ---
+
+### Update flow for Process licenses
 
 After you assign the Process licenses to an environment, you can choose which flows can use the Process licenses.
 
@@ -186,7 +187,7 @@ Follow these steps to allocate add-ons to an environment.
    > The per flow plan is environment specific. So, if you have multiple environments that need to run a flow, you need to assign per flow license to the flow in each environment.
 1. Select **Save**.
 
-   ![An image that displays the steps needed to assign a license to an environment and manage add-ons.](../media/power-automate-licensing/assign-license-environment.png)
+   ![An image that displays the steps needed to assign a license to an environment and manage add-ons.](../media/power-automate-licensing/assign-license-environment-new.png)
 
 # [Classic admin center](#tab/classic)
 
@@ -206,6 +207,7 @@ Follow these steps to allocate add-ons to an environment.
 
 
 ---
+### Update per flow add-on
 
 After you assign a per flow plan add-on to an environment, you can choose which flows can use that add-on.
 
@@ -230,7 +232,7 @@ After you update your flow, anyone will be able to use that flow, even if it use
 1. In the **Licensing** pane, select **Capacity add-ons**. 
 1. Select **Add-ons** > **Manage** in the add-on section.
 
-![An image that displays how to assign unattended add-ons.](../media/power-automate-licensing/assign-unattended-add-on.png)
+![An image that displays how to assign unattended add-ons.](../media/power-automate-licensing/assign-unattended-add-on-new.png)
 
 # [Classic admin center](#tab/classic)
 
@@ -238,9 +240,9 @@ After you update your flow, anyone will be able to use that flow, even if it use
 1. Select **Resources** > **Capacity** on the left side of the screen.
 1. Select **Add-ons** > **Manage** in the add-on section.
 
----
-
 ![An image that displays how to assign unattended add-ons.](../media/power-automate-licensing/assign-unattended-add-on.png)
+
+---
 
 Users can now run unattended desktop flows within the environment that has the unattended capacity.
 
