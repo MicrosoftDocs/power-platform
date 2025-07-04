@@ -38,12 +38,6 @@ Understanding Copilot Studio architecture concepts and exploring solution ideas 
 | --- | --- |
 | **[Use an autonomous agent in Copilot Studio for document processing](../reference-architectures/document-processing-agent.md)** | Learn how to build an autonomous agent in Copilot Studio for document processing. |
 
-## Reference architectures
-
-| Title | Description |
-| --- | --- |
-| **[Use an autonomous agent in Copilot Studio for document processing](../reference-architectures/document-processing-agent.md)** | Learn how to build an autonomous agent in Copilot Studio for document processing. |
-
 ## Solution ideas
 
 | Title | Description |
