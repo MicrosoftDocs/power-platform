@@ -3,7 +3,7 @@ title: View service health
 description: Learn how to check service health in the Power Platform admin center.
 ms.date: 12/06/2024
 ms.reviewer: sericks
-ms.topic: conceptual
+ms.topic: how-to
 author: sericks007
 ms.subservice: admin
 ms.author: sericks

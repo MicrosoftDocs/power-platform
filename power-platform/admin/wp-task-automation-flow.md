@@ -4,7 +4,7 @@ description: Automation of tasks with Power Automate
 author: sericks007
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 03/12/2020
 ms.subservice: admin
 ms.author: sericks

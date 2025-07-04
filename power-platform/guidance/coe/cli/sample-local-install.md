@@ -7,7 +7,7 @@ ms.author: grarchib
 ms.custom: ""
 ms.date: 05/23/2023
 
-ms.topic: "article"
+ms.topic: install-set-up-deploy
 ms.reviewer: sericks
 search.audienceType: 
   - admin

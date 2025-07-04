@@ -7,7 +7,7 @@ ms.author: grarchib
 ms.custom: ""
 ms.date: 09/26/2024
 
-ms.topic: "article"
+ms.topic: concept-article
 ms.reviewer: sericks
 search.audienceType: 
   - admin

@@ -4,7 +4,7 @@ description: Work with mail merge templates
 author: sericks007
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 05/18/2021
 ms.subservice: admin
 ms.author: sericks

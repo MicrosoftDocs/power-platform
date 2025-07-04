@@ -1,4 +1,4 @@
----
+﻿---
 title: PDF function (experimental)
 description: Reference information including syntax and examples for the PDF function.
 author: TashasEv
@@ -15,9 +15,11 @@ contributors:
   - mduelae
 ---
 
-# PDF function(experimental)
+# PDF function (experimental)
+[!INCLUDE[function-pdf-applies-to](includes/function-pdf-applies-to.md)]
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps 
+
+
 
 [This article is prerelease documentation and is subject to change.]
 
@@ -63,7 +65,7 @@ Different configuration options enable different outcomes for the resulting gene
 | **Formula**                                                           | **Description**                                                                                                                                  | **Result**                                                                                                                                      |
 |-----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
 | **PDF(Screen1)**                                                      | Generates a PDF object with the default settings.                                                                                                | A PDF object is created from the visible contents of Screen1.                                                                                   |
-| **PDF(Container1, {Size: A3})**                                       | Generates a PDF object with the paper size set to A3.                                                                                            | An A3-sized PDF object is created from the visible contents of Container1.                                                                      |
+| **PDF(Container1, {Size: "A3"})**                                       | Generates a PDF object with the paper size set to A3.                                                                                            | An A3-sized PDF object is created from the visible contents of Container1.                                                                      |
 | **PDF(Screen1, {DPI: 72, Margin: "25mm", Orientation: "Landscape"})** | Generates a PDF object with the resolution (DPI) set to 72, the margin set to 25 millimeters, and the orientation set to landscape (horizontal). | A PDF with the specified DPI, margin, and orientation is created in the default size (dependent on locale) from the visible content on Screen1. |
 | **PDF(Screen1, {ExpandContainers: true})**                            | Generates a PDF object with applicable controls expanded.                                                                                        | A PDF is created where any containers/galleries with more content than is visible are expanded to show all content in the generated PDF.        |
 
@@ -76,3 +78,138 @@ Different configuration options enable different outcomes for the resulting gene
 - Non-Latin script types and font weights and styles such as bold and italic may not appear in the generated PDF for some fonts.
 
 - Creation of fillable PDFs isn't supported.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

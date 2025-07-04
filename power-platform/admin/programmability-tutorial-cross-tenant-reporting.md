@@ -46,7 +46,7 @@ Use the following PowerShell script to create the report.
 
 ```PowerShell
 Import-Module "MSAL.PS"
-$AuthResult = Get-MsalToken -ClientId '49676daf-ff23-4aac-adcc-55472d4e2ce0' -Scope 'https://api.powerplatform.com/.default'
+$AuthResult = Get-MsalToken -ClientId '<client id of your Microsoft Entra ID application registration>' -Scope 'https://api.powerplatform.com/.default'
 $Headers = @{Authorization = "Bearer $($AuthResult.AccessToken)"}
 
 try 
@@ -89,7 +89,7 @@ Use the following PowerShell script to list all of the available reports for you
 
 ```PowerShell
 Import-Module "MSAL.PS"
-$AuthResult = Get-MsalToken -ClientId '49676daf-ff23-4aac-adcc-55472d4e2ce0' -Scope 'https://api.powerplatform.com/.default'
+$AuthResult = Get-MsalToken -ClientId '<client id of your Microsoft Entra ID application registration>' -Scope 'https://api.powerplatform.com/.default'
 $Headers = @{Authorization = "Bearer $($AuthResult.AccessToken)"}
 
 try 
@@ -130,7 +130,7 @@ Use the following PowerShell script to fetch a single report for your tenant abo
 
 ```PowerShell
 Import-Module "MSAL.PS"
-$AuthResult = Get-MsalToken -ClientId '49676daf-ff23-4aac-adcc-55472d4e2ce0' -Scope 'https://api.powerplatform.com/.default'
+$AuthResult = Get-MsalToken -ClientId '<client id of your Microsoft Entra ID application registration>' -Scope 'https://api.powerplatform.com/.default'
 $Headers = @{Authorization = "Bearer $($AuthResult.AccessToken)"}
 
 try 

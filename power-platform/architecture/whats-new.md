@@ -7,7 +7,7 @@ ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: architecture-center
 ms.topic: whats-new
-ms.date: 04/17/2025
+ms.date: 06/06/2025
 ms.custom:
   - ai-gen-docs-bap
   - ai-gen-description
@@ -18,7 +18,7 @@ ms.custom:
 
 Get the latest info about what's new and what's changed in the Power Platform  and Copilot Studio Architecture Center.
 
-## May 2025
+## July 2025
 
 New key concepts:
 
@@ -27,11 +27,16 @@ New key concepts:
 New reference architectures:
 
 - [Use SQL with canvas apps](reference-architectures/sqlserver-canvas-app.md)
-- [Use an autonomous agent in Copilot Studio for document processing](reference-architectures/document-processing-agent.md)
 
 Other updates:
 
 - [Contributors guide](contribute.md) for external contributions
+
+## June 2025
+
+New reference architecture:
+
+- [Use an autonomous agent in Copilot Studio for document processing](reference-architectures/document-processing-agent.md)
 
 ## April 2025
 

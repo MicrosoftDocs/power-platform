@@ -2,8 +2,8 @@
 title: Environment groups
 description: Learn how to organize your Managed Environments into groups and govern them in bulk.
 ms.component: pa-admin
-ms.topic: conceptual
-ms.date: 04/03/2025
+ms.topic: concept-article
+ms.date: 04/17/2025
 author: mikferland-msft
 ms.author: miferlan
 ms.reviewer: sericks
@@ -14,6 +14,7 @@ search.audienceType:
 contributors:
   - JesseParsons
   - arjunmayur
+  - ASheehi1
 ---
 
 # Environment groups
@@ -23,8 +24,14 @@ contributors:
 Managing the Power Platform on a large scale across numerous environments, ranging from hundreds to tens of thousands, poses a significant challenge for both startup and enterprise IT teams. To address these complexities, environment groups offer a premium governance solution designed to streamline management tasks by organizing environments into logical collections and enforcing uniform policies and configurations.
 
 Think of an environment group as a "folder" for your environments. Administrators can cluster a flat list of environments into structured groups based on criteria such as business unit, project, geographic region, or purpose. By creating these logical collections, IT teams gain the ability to manage multiple environments simultaneously and efficiently implement security, governance, and compliance policies on a large scale through centrally managed rules. This centralized approach eliminates the need to configure each environment one-by-one, ensures consistency, significantly reduces administrative overhead, and prevents issues such as configuration drift and chaotic management practices common in extensive deployments.
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
+Managing Power Platform on a large scale across numerous environments, ranging from hundreds to tens of thousands, poses a significant challenge for both startup and enterprise IT teams. To address these complexities, environment groups offer a premium governance solution designed to streamline management tasks by organizing environments into logical collections and enforcing uniform policies and configurations.
+
+Think of an environment group as a *folder* for your environments. Administrators can cluster a flat list of environments into structured groups based on criteria such as business unit, project, geographic region, or purpose. By creating these logical collections, IT teams gain the ability to manage multiple environments simultaneously and efficiently implement security, governance, and compliance policies on a large scale through centrally managed rules. This centralized approach eliminates the need to configure each environment one-by-one, ensures consistency, significantly reduces administrative overhead, and prevents issues such as configuration drift and chaotic management practices common in extensive deployments.
 
 > [!NOTE]
+>
 > - Environment groups can only contain Managed Environments.
 > - Each environment can belong to only one group, and groups can't overlap or be nested.
 > - Environments in a group can span different regions and types as long as each is managed.
@@ -252,6 +259,9 @@ If an environment group is no longer needed, administrators can delete it to avo
 
 > [!IMPORTANT]
 > When you delete a group, first remove all of its environments and ensure no developer environments are routed to it. If a group still has environments, you see a warning that prevents you from deleting the group.
+
+## Known limitation
+If you've published any of the following rules within your environment group, the corresponding settings at the environment level are overridden when added added to the group: sharing limits, maker welcome content, solution checker, usage insights, backup retention, and generative AI settings. For example, if you've published sharing limits in your environment group, but already had maker welcome content and sharing limits set at the environment level, upon adding the environment to the group, the sharing limits are updated to match the group's sharing limits and the maker welcome content is reset.
 
 ## Related content
 

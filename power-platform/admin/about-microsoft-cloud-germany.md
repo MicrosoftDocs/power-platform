@@ -3,7 +3,7 @@ title: "About Microsoft Cloud Germany datacenter"
 description: "Learn about Microsoft Cloud Germany datacenter, including residency and trustee for customer data, service delivery, compliance, privacy, and mapping functions."
 author: sericks007
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 09/22/2022
 ms.subservice: admin
 ms.author: sericks

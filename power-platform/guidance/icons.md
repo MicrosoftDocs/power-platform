@@ -2,8 +2,8 @@
 title: "Microsoft Power Platform icons | MicrosoftDocs"
 description: "Official icons for use in building architecture diagrams and illustrations for Microsoft Power Platform (Power Platform, Power Apps, Power Automate, Power BI, Power Pages, Microsoft Copilot Studio, Dataverse, AI Builder, and Power Fx)."
 author: sericks007
-ms.topic: article
-ms.date: 04/17/2025
+ms.topic: concept-article
+ms.date: 05/29/2025
 ms.subservice: guidance
 ms.author: sericks
 ms.reviewer: sericks

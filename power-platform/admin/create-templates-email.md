@@ -2,12 +2,14 @@
 title: "Create templates for email  | MicrosoftDocs"
 description: Create templates for email
 author: sericks007
-
+contributor: yingchin
 ms.component: pa-admin
-ms.topic: conceptual
-ms.date: 09/16/2020
+ms.topic: how-to
+ms.date: 06/02/2025
 ms.subservice: admin
+ms.custom: NewPPAC
 ms.author: sericks
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -15,71 +17,86 @@ search.audienceType:
 
 [!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
-Save time when creating multiple email messages by making email templates. Email templates contain prefilled data that you specify, so you don't have to re-enter the same information for each article.  
-  
-An email template is attached to an email activity after the activity is created. Typically, each type of email activity has its own email template type; for example, an email activity created from a case record would use a case email template. You can also create global templates that are available for any record type, or personal templates available only to you, or organizational templates available to anyone in your organization.  
-  
-1. [!INCLUDE[proc_permissions_system_admin](../includes/proc-permissions-system-admin.md)]  
-  
-    Check your security role  
-  
-   - [!INCLUDE[proc_follow_steps_in_link](../includes/proc-follow-steps-in-link.md)]  
-  
-   - [!INCLUDE[proc_dont_have_correct_permissions](../includes/proc-dont-have-correct-permissions.md)]  
-  
-2. In the Microsoft Power Platform admin center, select an environment. 
+Save time when creating multiple email messages by making email templates. Email templates contain predefined content, eliminating the need to repeatedly enter the same information.
 
-3. Select **Settings** > **Templates** > **Email templates**.  
+An email template is attached to an email activity after the activity is created. Typically, each type of email activity has its own email template type. For example, if you create an email activity from a case record it uses a case email template.
+
+Additionally, you can create:
+- Global templates, which are available for any record type.
+- Personal templates, accessible only to you.
+- Organizational templates, available to all users within your organization.
+
+Make sure you have the System Administrator security role or equivalent permissions in Microsoft Dynamics 365. To check your security role, see [View your user profile](/powerapps/user/view-your-user-profile). If you don’t have the correct permissions, contact your system administrator.
+
+### [New admin center](#tab/new)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. On the **Environments** page, select an environment.
+1. In the command bar, select **Settings**. 
+1. Expand **Templates**, then select **Email templates**.
   
-4. On the Actions toolbar, select **New**.  
+### [Classic admin center](#tab/classic)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Environments**.
+1. On the **Environments** page, select an environment.
+1. In the command bar, select **Settings**.  
+1. Expand **Templates**, then select **Email templates**.
+---
   
-5. In the **Email Template Type** dialog box, in the **Template Type** list, select the type, and then select **OK**.  
+On the **Email Templates** page:
+1. In the top command bar, select **New**.
+1. In the **Email Template Type** dialog box, choose a **Template Type**, then select **OK**.  
   
    > [!IMPORTANT]
-   >  If you select a specific record type, such as lead or opportunity, the template is available only for that record type. This cannot be changed. To use the same content for another record type, create a new template.  
+   >  If you select a specific record type, such as lead or opportunity, the template is available only for that record type. This setting can't be changed. To use the same content for another record type, create a new template.  
   
-6. On the **Email Templates** form, enter a **Title** and a **Subject**.  
-  
-7. You can type a description of the template. This is not displayed to the recipient.  
-  
-8. Type the text you want to send in this message. Use the Formatting toolbar to edit the text.  
+On the **New Email Template** form:
+1. In the **Template** section, enter the **Name** of the template, and other required data field information.
+2. In the **Template editor** section, enter the **Subject** of the template.
+3. You can also type a description for the template. This text is for internal reference and not visible to the recipient.  
+4. Type the text you want to send in this message. Use the **Formatting toolbar** to edit the text.  
   
    > [!TIP]
-   > - Although you cannot insert images or HTML directly into email messages or email templates, you can use the copy feature in [!INCLUDE[pn_Internet_Explorer](../includes/pn-internet-explorer.md)] to copy an image from a website and paste it into the email message or email template.  The image is available as long as the website is accessible.  
-   > - To include a hyperlink in an email template, type the URL including the https://, for example, https://contoso.com. Do not include a period or comma or a space after the URL or the link will break. Select the link text and select **Make this a Hyperlink** (![Make this a Hyperlink.](../admin/media/make-this-hyperlink.png "Make this a Hyperlink")).  
-   > 
-   >    A link is automatically added to the  URL and the text is underlined and changed to blue.  
-   > - To  include data fields in a hyperlink:  
-   > 
-   >   1. Select the link text and data fields. For example: https://contoso.com/q?{!User : City;}  
-   >   2. Select **Make this a Hyperlink** (![Make this a Hyperlink.](../admin/media/make-this-hyperlink.png "Make this a Hyperlink")).  
-   > 
-   >      The text and data fields will be converted to a hyperlink. For example: \<a href="https://contoso.com/q?{!User : City;}">https://contoso.com/q?{!User : City;}\</a>.  
-   > 
-   >      The hyperlink text will appear as a link when the template is used in an email.  
-   > - There is no spell check built into customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation). There might be third-party solutions available. For more information, visit [Microsoft Dynamics Solution Finder](https://www.microsoft.com/dynamics365/partners).  
-   > - The Formatting toolbar has limited fonts and font sizes. However, you can copy and paste content from [!INCLUDE[pn_MS_Word_Full](../includes/pn-ms-word-full.md)]. This allows you to take advantage of features such as spell checking and some advanced text formatting. To single-space a line of text, at the end of the line press **Shift+Enter**.  
+   > - Although you can't insert images or HTML directly into email messages or email templates, you can use the copy feature in the browser to copy an image from a website and paste it into the email message or email template. The image is available as long as the website is accessible.
+   >   
+   > - To include a hyperlink in an email template:
+   >   - Type the URL, including the https://, such as https://contoso.com. Avoid adding a period, comma, or space after a URL, as this formatting issue may cause the link to break.
+   >   - Select the text, then select **Link** from the Formatting tool bar to enter the hyperlink information.
+   >   - The link is automatically applied, underlined the text and changing its color to blue.
+   >   
+   > - To include data fields in a hyperlink:
+   >   - Select the link text and data fields. For example: https://contoso.com/q?{!User:City;}
+   >   - Select **Link** from the Formatting tool bar to enter the hyperlink information.
+   >   - The text and data fields convert to a hyperlink. For example: <a href="https://contoso.com/q?{!User:City;}">https://contoso.com/q?{!User:City;}</a>.
+   >   - The hyperlink text appears as a link when the template is used in an email.
+   >   
+   > - Customer engagement apps don't have built-in spell check functionality. This limitation applies to Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation. However, users can work around it by copying and pasting content into [!INCLUDE[pn_MS_Word_Full](../includes/pn-ms-word-full.md)] to take advantage of spell checking.
+   >   
+   > - The Formatting toolbar offers a limited selection of fonts and font sizes. However, users can copy and paste content from [!INCLUDE[pn_MS_Word_Full](../includes/pn-ms-word-full.md)] to access spell checking and advanced text formatting.
+   >   
+   > - To single-space a line of text, press **Shift+Enter** at the end of the line.  
   
-9. To insert data fields to display information such as a customer's name or data from a quote, from a customer engagement apps record, select **Insert/Update**, and then in the **Data Field Values** dialog box, select **Add**.  
-  
-10. In the **Add Data Value** dialog box, select the **Record type** and **Field**, and then select **OK**.  
-  
-11. Select **OK** again to insert the data.  
-  
-12. To enter customers' first and last names, you'll need to repeat these three data-insertion steps; first and last names are separate data values.  
+5. To insert dynamic data fields to display customer information, such as names or quotes, from a customer engagement apps record:
+     - In the top command bar, select **Insert dynamic text**.
+     - In the **Edit dynamic text** dialog box:
+       - Select the **Record type** and **Field Name** values
+       - Select **Add data field** to insert another fields.
+       - Enter the **Default text**, which appears when no data is available.
+       - Select **Insert** to apply the changes.
+ 
+6. To enter customers' first and family/last name, repeat the data-insertion steps, as each name is stored as a separate data value. 
   
     > [!TIP]
-    >  Use the **Default Text** box to define what text is displayed if the record does not have data for the field.  
+    >  Use the **Default Text** box to define what text is displayed if the record doesn't have data for the field.  
   
-13. Select **Save** or **Save and Close**.  
+7. Select **Save** or **Save and Close** to apply the changes.  
   
 > [!NOTE]
 > - To change a shared template to a personal one or a personal template to a shared one, on the template form, on the **Actions**![action.](../admin/media/action-button.png "action") menu, select **Revert to Personal Template**, or select **Make Template Available to Organization**.  
-> - If you use an email template as a signature in another template, insert the signature template first. Otherwise, the Subject line will be overwritten.  
+> - If you use an email template as a signature in another template, insert the signature template first. Otherwise, the Subject line is  overwritten.  
 > - If you need to back up your templates, or export them for use in a different implementation, you can export them as part of exporting customizations. More information: [Export your customizations as a solution](/powerapps/maker/model-driven-apps/distribute-model-driven-app).  
   
 ### See also  
-
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

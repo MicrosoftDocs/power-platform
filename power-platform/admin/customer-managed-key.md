@@ -1,5 +1,5 @@
 ---
-title: Manage your customer-managed encryption key in Power Platform 
+title: Manage your customer-managed encryption key
 description: Learn how to manage your encryption key. 
 author: paulliew
 ms.author: paulliew
@@ -22,7 +22,8 @@ Customers have data privacy and compliance requirements to secure their data by 
 
 All customer data stored in Power Platform is encrypted at-rest with strong Microsoft-managed encryption keys by default. Microsoft stores and manages the database encryption key for all your data so you don't have to. However, Power Platform provides this customer-managed encryption key (CMK) for your added data protection control where you can self-manage the database encryption key that is associated with your Microsoft Dataverse environment. This allows you to rotate or swap the encryption key on demand, and also allows you to prevent Microsoft's access to your customer data when you revoke the key access to our services at any time.
 
-To learn more about customer managed key in Power Platform, watch the customer-managed key video.<p/>
+To learn more about customer managed key in Power Platform, watch the customer-managed key video.
+
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=6b5742f5-2ff6-4a26-9ab6-ce983b092c42]
 
 These encryption key operations are available with customer-managed key (CMK):
@@ -106,7 +107,6 @@ Consider the following sequence of events.
 The malicious key vault administrator creates a key and an enterprise policy on the Azure portal. The Azure Key Vault administrator goes to Power Platform admin center, and adds environments to the enterprise policy. The malicious administrator then returns to the Azure portal and revokes key access to the enterprise policy thus locking all the environments. This causes business interruptions as all the environments become inaccessible, and if this event isn't resolved, that is, the key access restored, the environment data can be potentially lost.
 
 > [!NOTE]
->
 > - Azure Key Vault has built-in safeguards that help restoring the key, which require the **Soft Delete** and **Purge protection** key vault settings enabled.
 > - Another safeguard to be considered is to make sure that there's separation of tasks where the Azure Key Vault administrator isn't granted access to the Power Platform admin center.
 
@@ -143,7 +143,7 @@ The Azure Key Vault administrator performs these tasks in Azure.
 
 ##### Prerequisite
 
-- Power Platform administrator must be assigned to either the Power Platform or Dynamics 365 Service administrator Microsoft Entra role.
+Power Platform administrator must be assigned to either the Power Platform or Dynamics 365 Service administrator Microsoft Entra role.
 
 ##### Manage environment's encryption in Power Platform admin center
 
@@ -167,6 +167,7 @@ In Azure, perform the following steps:
    > Create or use a resource group that has a location, for example, Central US, that matches the Power Platform environment's region, such as United States.
    
 1. Create a key vault using the paid subscription that includes soft-delete and purge protection with the resource group you created in the previous step.
+   
    > [!IMPORTANT]
    > To ensure that your environment is protected from accidental deletion of the encryption key, the key vault must have soft-delete and purge protection enabled. You won’t be able to encrypt your environment with your own key without enabling these settings. More information: [Azure Key Vault soft-delete overview](/azure/key-vault/general/soft-delete-overview) More information: [Create a key vault using Azure portal](/azure/key-vault/general/quick-create-portal)
 
@@ -193,7 +194,6 @@ In Azure, perform the following steps:
    > [!Important]
    > If you set an **expiration date** in your key and the key expired, all the environments that're encrypted with this key will be down. Set [an alert to monitor expiry certificates](/azure/key-vault/general/alert#example-log-query-alert-for-near-expiry-certificates) with email notifications for your local Power Platform admin and Azure key vault admin as a reminder to renew the expiration date. This is important to prevent any unplanned system outages.  
    
-
 #### Import protected keys for Hardware Security Modules (HSM)
 You can use your protected keys for hardware security modules (HSM) to encrypt your Power Platform Dataverse environments. Your [HSM-protected keys must be imported into the key vault](/azure/key-vault/keys/hsm-protected-keys) so an Enterprise policy can be created. For more information, see [Supported HSMs](/azure/key-vault/keys/hsm-protected-keys#supported-hsms) [Import HSM-protected keys to Key Vault (BYOK)](/azure/key-vault/keys/hsm-protected-keys-byok?tabs=azure-cli). 
 
@@ -270,7 +270,6 @@ Register Power Platform as a resource provider. You only need to do this task on
 1. Select **Review + create**, and then select **Create**.
 
 A deployment is started. When it's done, the enterprise policy is created.
-
 
 ### Enterprise policy json template
 
@@ -350,17 +349,16 @@ Once the enterprise policy is created, the key vault administrator grants the en
 1. Select the enterprise policy, and then choose **Select**.
 1. Select **Review + assign**.
 
-> [!NOTE]
-> The above permission setting is based on your key vault's **Permission model** of **Azure role-based access control**. If your key vault is set to **Vault access policy**, it's recommended that you migrate to the role-based model. To grant your enterprise policy access to the key vault using **Vault access policy**, create an Access policy, select **Get** on *Key management operations* and **Unwrap key** and **Wrap key** on *Cryptographic Operations*.
+The above permission setting is based on your key vault's **Permission model** of **Azure role-based access control**. If your key vault is set to **Vault access policy**, it's recommended that you migrate to the role-based model. To grant your enterprise policy access to the key vault using **Vault access policy**, create an Access policy, select **Get** on *Key management operations* and **Unwrap key** and **Wrap key** on *Cryptographic Operations*.
 
-   > [!Note]
-   > To prevent any unplanned system outages, it's important that the enterprise policy has access to the key. Make sure that:
-   > - The key vault is active.
-   > - The key is active and not expired.
-   > - The key isn't deleted.
-   > - The above key permissions aren't revoked.
-   >   
-   > The environments which are using this key are disabled when the encryption key isn't accessible.   
+> [!Note]
+> To prevent any unplanned system outages, it's important that the enterprise policy has access to the key. Make sure that:
+> - The key vault is active.
+> - The key is active and not expired.
+> - The key isn't deleted.
+> - The above key permissions aren't revoked.
+>   
+> The environments which are using this key are disabled when the encryption key isn't accessible.   
    
 ### Grant the Power Platform admin privilege to read enterprise policy
 
@@ -478,6 +476,7 @@ To change your encryption key, create a new key and a new enterprise policy. You
  > To rotate the encryption key, we recommend using the Key vaults' [**New version** or setting a **Rotation policy**](customer-managed-key.md#rotate-the-environments-encryption-key-with-a-new-key-version).
 
 1. In [Azure portal](https://ms.portal.azure.com/), create a new key and a new enterprise policy. More information:  [Create encryption key and grant access](#create-encryption-key-and-grant-access) and [Create an enterprise policy](#create-enterprise-policy)
+1. Grant the new enterprise policy [access to the old key](customer-managed-key.md#grant-enterprise-policy-permissions-to-access-key-vault). 
 1. Once the new key and enterprise policy are created, go to **Policies** > **Enterprise policies**.
 1. Select the **Environment with policies** tab, and then find the environment you want to remove from customer-managed key.
 1. Select the **All policies** tab, select the environment you verified in step 2, and then select **Edit policy** on the command bar.
@@ -487,7 +486,7 @@ To change your encryption key, create a new key and a new enterprise policy. You
 1. Repeat steps 2-6 until all environments in the enterprise policy have been removed.
 
   > [!IMPORTANT]
-  > The environment is disabled when it's removed from the enterprise policy to revert the data encryption to the Microsoft-managed key. **Do not delete or disable the key, delete or disable the key vault, or remove the enterprise policy's permissions to the key vault**. The key and key vault's access is necessary to support database restoration. You may delete and remove the enterprise policy's permissions after 30 days.
+  > The environment is disabled when it's removed from the enterprise policy to revert the data encryption to the Microsoft-managed key. **Do not delete or disable the key, delete or disable the key vault, or remove the enterprise policy's permissions to the key vault**. **Grant the new enterprise policy to the old key vault**. The key and key vault's access is necessary to support database restoration. You may delete and remove the enterprise policy's permissions after 30 days.
 
 1. Once all the environments are removed, from the Power Platform admin center go to **Enterprise policies**.
 1. Select the new enterprise policy, and then select **Edit policy**.

@@ -6,7 +6,7 @@ ms.author: marcelbf
 ms.subservice: alm
 ms.date: 12/23/2022
 ms.reviewer: pehecke
-ms.topic: article
+ms.topic: concept-article
 search.audienceType: 
   - developer
 ---

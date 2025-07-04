@@ -1,0 +1,15 @@
+sequenceDiagram
+    participant TestEngine
+    participant DPAPI as Windows DPAPI
+    participant FileSystem
+    
+    TestEngine->>DPAPI: Encrypt storage state with user/machine key
+    DPAPI->>TestEngine: Return encrypted data
+    TestEngine->>FileSystem: Save encrypted JSON file
+    
+    Note over TestEngine,FileSystem: Later, when needed
+    
+    TestEngine->>FileSystem: Read encrypted JSON file
+    TestEngine->>DPAPI: Decrypt data
+    DPAPI->>TestEngine: Return decrypted storage state
+    TestEngine->>TestEngine: Apply state to browser context

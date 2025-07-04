@@ -1,5 +1,5 @@
 ---
-title: Lock self-managed key environments with Power Platform
+title: Lock and unlock environments through key vault access
 description: Learn how to lock and unlock self-managed key environments
 author: paulliew
 ms.author: paulliew
@@ -8,7 +8,7 @@ ms.topic: how-to
 ms.date: 06/02/2023
 ms.custom: template-how-to
 ---
-# Lock environments by revoking key vault and/or key permission access
+# Lock and unlock environments through key vault access
 
 [!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 

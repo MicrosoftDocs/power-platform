@@ -7,17 +7,23 @@ ms.subservice: admin
 ms.author: paulliew
 ms.custom: "admin-security"
 ms.component: pa-admin
-ms.topic: conceptual
-ms.date: 01/02/2025
+ms.topic: how-to
+ms.date: 6/4/2025
 search.audienceType: 
   - admin
 contributors:
   - jordanchodakWork
+  - paulliew
+  - sericks007
+  - syalandur24
+ms.contributors:
+  - jordanchodak
+  - paulliew
+  - sericks
+  - syalandur
 
 ---
 # Assign a security role to a user  
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 Consider the following information about security roles:
 
@@ -42,6 +48,24 @@ For more information about the difference between [!INCLUDE[pn_MS_Online_Service
   
 Follow these steps to assign a security role.
 
+### [New admin center](#tab/new)
+
+1. Sign in to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com) as a System Administrator. 
+
+2. In the navigation pane, select **Manage**.
+
+3. In the **Manage** pane, select **Environments**, and then select an environment from the list.
+
+3. Select **Settings**.
+
+4. Select **Users + permissions**, and then select **Users**.
+
+5. On the **Users** page select a user, and then select **Manage security roles**.
+
+6. Select or deselect security roles. When finished, select **Save**.  After saving, all selected roles become the current assigned roles for the user.  Unselected roles aren't assigned.
+
+### [Classic admin center](#tab/classic)
+
 1. Sign in to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com) as a System Administrator. 
 
 2. Select **Environments**, and then select an environment from the list.
@@ -52,15 +76,17 @@ Follow these steps to assign a security role.
 
 5. On the **Users** page select a user, and then select **Manage security roles**.
 
-6. Select or deselect security roles. When finished, select **Save**.  After saving, all selected roles become the current assigned roles for the user.  Unselected roles aren't assigned. 
+6. Select or deselect security roles. When finished, select **Save**.  After saving, all selected roles become the current assigned roles for the user.  Unselected roles aren't assigned.
 
-When the [allow record ownership across business units](wp-security-cds.md#enable-the-matrix-data-access-structure) is enabled, you can select security roles from different business unit. 
+---
+
+When the [allow record ownership across business units](wp-security-cds.md#enable-the-matrix-data-access-structure) is enabled, you can select security roles from different business units. 
 
 > [!IMPORTANT] 
 > You must assign at least one security role to every user either directly or indirectly as a member of a [group team](manage-group-teams.md). The service doesn't allow access to users who don't have at least one security role.
 
 > [!NOTE]
-> The panel shown above shows and manages only direct role assignments for the user. [Manage group teams](manage-group-teams.md) explains how to see and manage roles assigned as a member of a [group team](manage-group-teams.md).
+> The specified steps help you manage only direct role assignments for the user. [Manage group teams](manage-group-teams.md) explains how to see and manage roles assigned as a member of a [group team](manage-group-teams.md).
 
 ## User settings privileges for record ownership across business units
   

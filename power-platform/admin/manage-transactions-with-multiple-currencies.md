@@ -4,7 +4,7 @@ description: Manage transactions with multiple currencies
 author: sericks007
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 07/16/2021
 ms.subservice: admin
 ms.author: sericks

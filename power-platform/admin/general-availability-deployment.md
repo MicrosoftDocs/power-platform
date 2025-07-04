@@ -6,8 +6,8 @@ ms.subservice: admin
 ms.author: samathur 
 ms.reviewer: sericks
 ms.component: pa-admin
-ms.topic: conceptual
-ms.date: 12/04/2024
+ms.topic: concept-article
+ms.date: 05/29/2025
 search.audienceType: 
   - admin
 ms.contributors:

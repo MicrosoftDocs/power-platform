@@ -3,7 +3,7 @@ title: Geo-to-geo migrations
 description: Move your environment in a single tenant from one region to another with the Geo Migration feature.
 author: matapg007
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 12/01/2024
 ms.subservice: admin
 ms.author: matgupta 
@@ -28,7 +28,7 @@ The Geo Migration feature allows customers to move their environments in a singl
 > [!IMPORTANT]
 > - Support for geo migration is limited and generally not available.
 > - To request a regional migration, contact your account manager or go to [Technical Support](get-help-support.md).
-> - After making a request, expect at least 10 days for the migration process complete.  
+> - After making a request, expect at least 10 days for the migration process to complete.  
 > - Geo migrations aren't supported into or out of US GCC, US GCC High, or China.
 > - Geo migrations are restricted into or out of OCE or IND.
 > - There are important and critical preparation steps mentioned in the [Geo-to-geo migration steps](#geo-to-geo-migration-steps) section that need to be performed for Power Apps or Power Automate prior to the geo migration. If these steps are missed, it's difficult to recover Power Apps or Power Automate solutions.

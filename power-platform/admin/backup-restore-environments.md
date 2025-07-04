@@ -1,8 +1,8 @@
 ---
 title: Back up and restore environments
 description: Learn how to back up and restore Power Platform environments.
-ms.topic: conceptual
-ms.date: 04/02/2025
+ms.topic: how-to
+ms.date: 06/11/2025
 ms.subservice: admin
 author: matapg007
 ms.author: matgupta
@@ -22,7 +22,7 @@ contributors:
 
 It's important to protect your data on Microsoft Power Platform and in Dataverse and to provide continuous availability of service through system or manual backups.
 
-System backups are automatically created for environments that have a database. System backups of production environments that have a database and Dynamics 365 applications are retained for up to 28 days. By default, backups of production environments without Dynamics 365 applications and other nonproduction environments are retained for seven days. However, for managed production environments without Dynamics 365 applications, the retention period can be extended up to 28 days using PowerShell. However, for managed production environments that don't have Dynamics 365 applications, you can extend the retention period beyond seven days.
+System backups are automatically created for environments that have a database. System backups of production environments that have a database and Dynamics 365 applications are retained for up to 28 days. By default, backups of production environments without Dynamics 365 applications and other nonproduction environments are retained for seven days. However, for managed production environments without Dynamics 365 applications, the retention period can be extended up to 28 days using PowerShell.
 
 Manual backups are backups that the user initiates. It's recommended to create manual backups before performing major customizations, applying a version update, or making significant changes to the environment. You can create these backups for production and sandbox environments, but not for the default environment. Manual backups of production environments that have Dynamics 365 applications are kept for up to 28 days. Backups of environments that don't have Dynamics 365 applications are kept for seven days.
 
@@ -41,7 +41,7 @@ Manual backups are backups that the user initiates. It's recommended to create m
 
 \* For managed production environments that don't have Dynamics 365 applications, we allow you to extend the retention period beyond seven days, to a maximum of 28 days, through PowerShell. Learn more in [Change the backup retention period for production environments without Dynamics 365 applications](#change-the-backup-retention-period-for-production-environments-without-dynamics-365-applications).
 
-\*\* We don't support restoring a system backup of the default environment through the Power Platform admin center. Learn more in [Backup and restoration of the default environment](../guidance/adoption/manage-default-environment.md#backup-and-restoration-of-the-default-environment).
+\*\* We don't support restoring a system backup of the default environment through the Power Platform admin center. Learn more in [Backup and restoration of the default environment](../guidance/adoption/manage-default-environment.md#back-up-and-restore-the-default-environment).
 
 System backup and restore operations aren't supported for trial-type environments. To use the full set of features, including system backup and restore options, go to [Convert either type of trial environment to a production environment](trial-environments.md#convert-either-type-of-trial-environment-to-a-production-environment).
 

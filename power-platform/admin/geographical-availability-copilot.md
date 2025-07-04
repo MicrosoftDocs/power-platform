@@ -3,14 +3,15 @@ title: Move data across regions for Copilots and generative AI features
 description: Learn how to turn on data movement across regions for Copilots and generative AI features.
 author: amchern
 ms.component: pa-admin
-ms.topic: conceptual
-ms.date: 03/20/2025
+ms.topic: how-to
+ms.date: 06/11/2025
 ms.subservice: admin
 ms.author: amchern
 ms.reviewer: sericks
 search.audienceType:
   - admin
 contributors:
+  - v-aangie
   - CedrickBellarosa 
   - antoinecellerier 
   - JesseParsons
@@ -19,6 +20,7 @@ contributors:
   - sericks007
   - prvenka
   - caitlinshaw1
+  - steph-kent-ms
 ms.custom:
   - NewPPAC
   - ai-gen-docs-bap
@@ -93,7 +95,7 @@ To turn on data movement across regions, Bing search, and Microsoft 365 services
 
     When the **Microsoft 365 services** feature is turned on, users can use features powered by Microsoft 365 services.
 
-    To learn more about how the **Microsoft 365 services** feature impacts Copilot Studio, go to [Manage activity data powered by Microsoft 365 services](/microsoft-copilot-studio/manage-activity-data-m365) and [Review agent activity](/microsoft-copilot-studio/authoring-review-activity). For information about data locations, go to [Data locations in Copilot Studio](/microsoft-copilot-studio/data-location).
+    To learn more about how the **Microsoft 365 services** feature affects Copilot Studio, go to [Manage activity data powered by Microsoft 365 services](/microsoft-copilot-studio/manage-activity-data-m365), [Review agent activity](/microsoft-copilot-studio/authoring-review-activity), and [View advanced analytics in Microsoft Viva Insights](/microsoft-copilot-studio/analytics-viva-insights). For information about data locations, go to [Data locations in Copilot Studio](/microsoft-copilot-studio/data-location).
 
     > [!NOTE]
     > If the **Move data across regions** checkbox is displayed in the **Generative AI features** pane, you must have it already selected in order to select the **Microsoft 365 services** checkbox.
@@ -127,7 +129,7 @@ To turn on data movement across regions, Bing search, and Microsoft 365 services
 
     When the **Microsoft 365 services** feature is turned on, users can use features powered by Microsoft 365 services.
 
-    To learn more about how the **Microsoft 365 services** feature impacts Copilot Studio, go to [Manage activity data powered by Microsoft 365 services](/microsoft-copilot-studio/manage-activity-data-m365) and [Review agent activity](/microsoft-copilot-studio/authoring-review-activity). For information about data locations, go to [Data locations in Copilot Studio](/microsoft-copilot-studio/data-location).
+    To learn more about how the **Microsoft 365 services** feature affects Copilot Studio, go to [Manage activity data powered by Microsoft 365 services](/microsoft-copilot-studio/manage-activity-data-m365), [Review agent activity](/microsoft-copilot-studio/authoring-review-activity), and [View advanced analytics in Microsoft Viva Insights](/microsoft-copilot-studio/analytics-viva-insights). For information about data locations, go to [Data locations in Copilot Studio](/microsoft-copilot-studio/data-location).
 
     > [!NOTE]
     > If the **Move data across regions** checkbox is displayed in the **Generative AI features** pane, you must have it already selected in order to select the **Microsoft 365 services** checkbox.
@@ -150,8 +152,7 @@ More Copilots and generative AI features will be available in the future.
 | Microsoft Dataverse | Excel to table for new makers | No | [Upload an Excel file (preview)](/power-apps/maker/data-platform/create-edit-entities-portal#upload-an-excel-file-preview) |
 | Power Apps | Build apps through conversation | No | [Build apps through conversation](/power-apps/maker/canvas-apps/ai-conversations-create-app) |
 | Power Apps | Describe a new table | No | [Describe the new table](/power-apps/maker/data-platform/create-edit-entities-portal#describe-the-new-table) |
-| Power Apps | Draft with Copilot | No | [Draft with Copilot](/power-apps/user/well-written-input-text-copilot) |
-| Power Automate | Power Automate designer Copilot | No | [Get started with Copilot in cloud flows (preview)](/power-automate/get-started-with-copilot) |
+| Power Automate | Power Automate designer Copilot | Yes | [Get started with Copilot in cloud flows](/power-automate/get-started-with-copilot) |
 | Power Pages | Copilot | No | [Overview of AI-powered and Copilot features in Power Pages (preview)](/power-pages/configure/ai-copilot-overview) |
 | AI Builder | AI Prompts | Yes | [Overview of Prompts](/ai-builder/prompts-overview) |
 

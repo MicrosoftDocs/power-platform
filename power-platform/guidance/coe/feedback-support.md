@@ -4,7 +4,7 @@ description: "Report issues and feedback for Center of Excellence (CoE) Starter 
 author: manuelap-msft
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 04/10/2020
 ms.subservice: guidance-toolkit
 ms.author: mapichle

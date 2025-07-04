@@ -4,8 +4,8 @@ description: Provides information about how to purchase Power Apps plans.
 author: sericks007
 ms.reviewer: sericks
 ms.component: pa-admin
-ms.topic: conceptual
-ms.date: 11/02/2020
+ms.topic: how-to
+ms.date: 05/29/2025
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 

@@ -1,7 +1,7 @@
 ---
 title: Power Platform licensing FAQs
 description: Learn FAQs for licensing Power Apps, Power Automate, Copilot Studio, Power Pages, Dataverse, Dataverse for Teams, and AI Builder.
-ms.topic: conceptual
+ms.topic: faq
 ms.date: 03/31/2025
 author: chrisgarty
 contributors:
@@ -780,7 +780,7 @@ The period for extended use rights concludes on October 1, 2024 and users are re
 
 #### How do I identify users using apps with premium connectors under extended use rights?
 
-Use the [Power Platform Advisor](power-platform-advisor.md#users-using-apps-with-premium-connectors-under-extended-use-rights) recommendation that lists users actively using Power Apps applications with Microsoft 365 under extended use rights. Learn more in [How to access Power Platform Advisor](power-platform-advisor.md#access-power-platform-advisor).
+Use the [Power Platform actions page](licensing-and-capacity-recommendations.md#assign-licenses-to-active-users-using-premium-apps-with-standard-licenses) recommendation that lists users actively using Power Apps applications with Microsoft 365 under extended use rights. Learn more in [Use the actions page](power-platform-advisor.md#view-recommendations).
 
 #### How do I identify apps and flows that are using specific connectors that were under the extended use rights? 
 

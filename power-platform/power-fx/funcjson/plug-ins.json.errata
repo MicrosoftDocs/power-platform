@@ -1,0 +1,13 @@
+
+# to be deprecated
+- XCreateSidePaneActionForDashboard
+- XCreateSidePaneActionForEntity
+- XCreateSidePaneActionForEntityList
+- XCreateTeamsChatAction
+- XCreateUrlAction
+- XSendAppNotification
+- XSendAppNotificationFunctionWithOptionalParams
+- XSendEmailFromTemplate
+
+# needs reference doc
+- AISummarizeRecord
