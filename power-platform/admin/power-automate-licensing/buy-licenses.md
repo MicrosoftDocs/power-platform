@@ -80,14 +80,16 @@ After you assign the Hosted Process licenses to an environment, you can create h
 
 Here are the two steps you must take if you want to assign a Process license.
 
-1. Allocate the Process license to an environment in the Power Platform admin center.
+1. [Allocate the Process license to an environment in the Power Platform admin center.](#allocate-the-process-license-to-an-environment)
 
-1. Assign a Process license to a flow.
+1. [Assign a Process license to a flow.](#assign-a-process-license-to-a-flow)
 
    > [!NOTE]
    > To run unattended desktop flows in an environment, you need to assign one Process license per machine that is used for unattended desktop flows. If you need to run multiple unattended desktop flows in parallel on a machine, you also need to assign one Process license for each additional Desktop Flow you want to run concurrently on the machine.
 
 It's easy and scalable to assign the Process licenses you purchased to the environments that need the licenses. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) under capacity, you see a new section appears if your organization purchased the licenses.
+
+#### Allocate the Process license to an environment
 
 Follow these steps to assign Process capacity to an environment.
 
@@ -130,7 +132,7 @@ Follow these steps to assign Process capacity to an environment.
 
 ---
 
-### Update flow for Process licenses
+#### Assign a Process license to a flow.
 
 After you assign the Process licenses to an environment, you can choose which flows can use the Process licenses.
 
@@ -151,6 +153,7 @@ After you update your flow, anyone will be able to use that flow, even if it use
    ![Image displays active users selected.](../media/power-automate-licensing/active-users.png)
 
 1. Select the user to whom you assign the license.
+
 1. Select **Licenses and apps**.
 
 1. Select the checkbox for the license you want to assign to the user, and then save your changes.
@@ -161,14 +164,16 @@ After you update your flow, anyone will be able to use that flow, even if it use
 
 Here are the two steps you must take if you want to assign a per flow license.
 
-1. Allocate the per flow license to an environment in the Power Platform admin center.
+1. [Allocate the per flow license to an environment in the Power Platform admin center.](#allocate-the-per-flow-license-to-an-environment)
 
-1. Assign a per flow license to a flow.
+1. [Assign a per flow license to a flow.](#assign-a-per-flow-license-to-a-flow)
 
 It's easy and scalable to allocate the per flow add-ons you purchased to the environments that need add-ons. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) under capacity, you see a new section appears if your organization purchased add-ons.
 
 > [!TIP]
 > To learn more about how to allocate the per flow license to an environment in the Power Platform admin center, see [capacity add-ons for Power Apps and Power Automate](../capacity-add-on.md) section.
+
+#### Allocate the per flow license to an environment
 
 Follow these steps to allocate add-ons to an environment.
 
@@ -207,7 +212,7 @@ Follow these steps to allocate add-ons to an environment.
 
 
 ---
-### Update per flow add-on
+#### Assign a per flow license to a flow
 
 After you assign a per flow plan add-on to an environment, you can choose which flows can use that add-on.
 
