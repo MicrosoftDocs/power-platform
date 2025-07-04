@@ -42,7 +42,7 @@ Contribute architectural guidance, like solution ideas and design patterns. If y
 
 The Contributors section lists key contributors by name and links to their LinkedIn profiles. The following screenshot shows an anonymized version of the *Contributors* section in an [Azure Architecture Center article](/azure/architecture/guide/multitenant/approaches/governance-compliance#contributors). If you provide your LinkedIn profile when you submit a contribution, you're listed as a contributor.
 
-:::image type="content" source="media/contributors_azure.png" alt-text="Screenshot of an example Contributors section. The section shows the principal author and three contributors, each with a link to their LinkedIn profile." border="true" lightbox="media/contributors_azure.png" :::
+:::image type="content" source="media/contributors-azure.png" alt-text="Screenshot of an example Contributors section. The section shows the principal author and three contributors, each with a link to their LinkedIn profile." border="true" lightbox="media/contributors_azure.png" :::
 
 ## Related information
 
