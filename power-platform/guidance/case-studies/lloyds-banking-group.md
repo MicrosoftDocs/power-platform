@@ -92,7 +92,7 @@ components that work together to deliver seamless translation services:
   gives a user-friendly interface for bank employees. Power Apps
   lets teams develop and deploy apps quickly, so the app rolls out fast across multiple branches.
 
-- Azure AI Services: The app uses Azure AI Services,
+- Azure AI services: The app uses Azure AI Services,
   specifically Azure AI Language and Speech, to handle translation
   tasks. Language Studio has tools for building and integrating
   language features, while Speech Studio offers speech-to-text and
