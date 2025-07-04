@@ -58,6 +58,7 @@ Understanding reference architectures and exploring solution ideas can help you 
 | [**Custom contact center solution with Copilot Studio agent**](../solution-ideas/agent-custom-contact-center.md) | Enhance customer service efficiency through integrated platforms and technologies. |
 | [**Travel concierge using generative AI with Copilot Studio**](../solution-ideas/agent-travel-customer.md) | Employ an AI-driven solution to enhance customer interactions and streamline information access. |
 | [**Ticket management system with Copilot Studio agents**](../solution-ideas/agent-ticket-and-refund.md) | Improve ticket refund and management processes by deploying both a user-based and autonomous agent to integrate with legacy systems. |
+| [**Cardio Triage AI workflow with Power Platform**](../solution-ideas/cardio-triage-agent.md) | Automate and enhance the triage process for cardiology patients by using AI Builder, Copilot Studio, and Microsoft 365 integrations. |
 
 ## Related resources
 

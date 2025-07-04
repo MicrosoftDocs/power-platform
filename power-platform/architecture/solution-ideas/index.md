@@ -31,3 +31,5 @@ Solution ideas are practical examples that showcase the versatility and power of
 | [**Custom contact center solution with Copilot Studio agent**](agent-custom-contact-center.md) | Enhances customer service efficiency through integrated platforms and technologies. |
 | [**Travel concierge using generative AI with Copilot Studio**](agent-travel-customer.md) | Employs AI-driven solutions to enhance customer interactions and streamline information access. |
 | [**Ticket management system with Copilot Studio agents**](agent-ticket-and-refund.md) | Improves ticket refund and management processes by deploying both a user-based and autonomous agent to integrate with legacy systems. |
+| [**Automate the bug reporting process in software development with Auto AI Triage**](auto-ai-triage.md) | Automate bug reporting in software development with two agents that handle bug creation and follow-up, which improves user experience and operational speed.  |
+| [**Cardio Triage AI workflow with Power Platform**](cardio-triage-agent.md) | Automate and enhance the triage process for cardiology patients by using AI Builder, Copilot Studio, and Microsoft 365 integrations. |

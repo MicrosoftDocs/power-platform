@@ -17,7 +17,7 @@ search.audienceType:
 
 # Cardio Triage AI workflow with Power Platform
 
-
+CardioTriage-AI is a Power Platform-based AI solution designed to automate and enhance the triage process for cardiology patients by using AI Builder, Copilot Studio, and Microsoft 365 integrations. This solution aims to improve patient prioritization, reduce delays in treatment, optimize appointment scheduling, and support clinical decision-making while ensuring data security and compliance.
 
 For a demo and more information about the Cardio Triage AI solution, visit [GitHub](https://github.com/microsoft/Powerful-Devs-Hack-Together/issues/34).
 

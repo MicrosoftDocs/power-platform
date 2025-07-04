@@ -49,6 +49,8 @@ Understanding reference architectures and exploring solution ideas can help you 
 | [**Property rental portal with AI-driven search and payment processing**](../solution-ideas/agent-rental-portal.md) | Build a comprehensive rental portal that uses AI-driven search capabilities and seamless payment processing. |
 | [**Travel concierge using generative AI with Copilot Studio**](../solution-ideas/agent-travel-customer.md) | Employ an AI-driven solution to enhance customer interactions and streamline information access. |
 | [**Ticket management system with Copilot Studio agents**](../solution-ideas/agent-ticket-and-refund.md) | Improve ticket refund and management processes by deploying both a user-based and autonomous agent to integrate with legacy systems. |
+| [**Automate the bug reporting process in software development with Auto AI Triage**](../solution-ideas/auto-ai-triage.md) | Automate bug reporting in software development with two agents that handle bug creation and follow-up, which improves user experience and operational speed.  |
+| [**Cardio Triage AI workflow with Power Platform**](../solution-ideas/cardio-triage-agent.md) | Automate and enhance the triage process for cardiology patients by using AI Builder, Copilot Studio, and Microsoft 365 integrations. |
 
 ## Related resources
 

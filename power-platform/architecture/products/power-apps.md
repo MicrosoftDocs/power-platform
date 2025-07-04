@@ -64,6 +64,7 @@ Understanding Power Apps reference architectures and exploring solution ideas ca
 | [**Healthcare Patient Support Agent**](../solution-ideas/agent-healthcare-patient-support.md) | Streamline patient interactions and reduce administrative burdens for healthcare providers. |
 | [**Property rental portal with AI-driven search and payment processing**](../solution-ideas/agent-rental-portal.md) | Build a comprehensive rental portal that uses AI-driven search capabilities and seamless payment processing. |
 | [**Revolutionize vehicle inspections with EVVIE**](../solution-ideas/app-evvie.md) | Inspect vehicles and assess damage using generative AI and Power Platform. |
+| [**Cardio Triage AI workflow with Power Platform**](../solution-ideas/cardio-triage-agent.md) | Automate and enhance the triage process for cardiology patients by using AI Builder, Copilot Studio, and Microsoft 365 integrations. |
 
 ## Related resources
 
