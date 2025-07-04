@@ -62,7 +62,7 @@ inclusivity, accessibility, and customer satisfaction.
 To support the widespread adoption and effective use of Power Platform,
 Lloyds Banking Group established a Center of Excellence, using the
 [Center of Excellence (CoE)
-Kit](https://learn.microsoft.com/en-us/power-platform/guidance/coe/starter-kit)
+Kit](/power-platform/guidance/coe/starter-kit)
 for optimal governance. This center comprises over 12 specialists and 65
 Power Hubs across various functions within the group. These hubs empower
 over 1,400 business developers to work on the platform, which fosters a
@@ -240,8 +240,8 @@ its operations while enabling employees to shape the future of the
 financial industry.
 
 > The advancement of AI, [Copilot in Power
-Apps](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/ai-overview), and [Power
-Automate](https://learn.microsoft.com/en-gb/power-platform/release-plan/2024wave1/power-automate/planned-features#copilot-for-power-automate) is becoming increasingly important in the banking industry. Looking
+Apps](/power-apps/maker/canvas-apps/ai-overview), and [Power
+Automate](/power-platform/release-plan/2024wave1/power-automate/planned-features#copilot-for-power-automate) is becoming increasingly important in the banking industry. Looking
 ahead, it will be important to provide the right technology and capabilities, ensuring all colleagues are included in the journey.
 >
 > - Jo Brown, Modern Workplace Director at Lloyds Banking Group
