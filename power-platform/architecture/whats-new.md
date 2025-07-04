@@ -28,6 +28,11 @@ New reference architectures:
 
 - [Use SQL with canvas apps](reference-architectures/sqlserver-canvas-app.md)
 
+New solution ideas:
+
+- [Automate the bug reporting process in software development with Auto AI Triage](solution-ideas/auto-ai-triage.md)
+- [Cardio Triage AI workflow with Power Platform](solution-ideas/cardio-triage-agent.md)
+
 Other updates:
 
 - [Contributors guide](contribute.md) for external contributions
